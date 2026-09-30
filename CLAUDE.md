@@ -9,7 +9,8 @@
 - 安装依赖：`pip install pypdf pillow edge-tts`
 - 启动：`python -m http.server 8765 --directory site`，打开 http://localhost:8765 （不能直接双击 HTML，fetch 会被拦）
 - 全量测试：`python pipeline/validate.py`（校验所有课的数据）
-- 生成一课：见 `docs/plans/demo-u7l1.md` 的工作流表
+- 批量生成课程：用项目技能 `make-lesson`（`.claude/skills/make-lesson/SKILL.md`），子代理在 `.claude/agents/`（抽取 Sonnet、释义 Haiku）
+- 查进度：`python pipeline/lessons.py --todo 8 10`
 - 部署：先 `python pipeline/publish_audio.py` 推音频，再推主仓库 `main`，自动部署（`.github/workflows/deploy.yml`：校验 → 检查音频已上线 → 目录索引 → GitHub Pages）。线上地址 https://owenwoow.github.io/cet4-vocab-courseware/
 - 本地预览要起两个服务：课件 8765（`site/`）、音频 8766（`audio-store/`），见 `.claude/launch.json`
 - 新电脑上恢复音频目录：`git clone https://github.com/Owenwoow/cet4-vocab-audio.git audio-store`

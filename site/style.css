@@ -77,6 +77,14 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .fab{width:44px;height:44px;border-radius:50%;padding:0;font-size:15px;font-weight:700;box-shadow:0 3px 12px rgba(0,0,0,.18)}
 .fab.main{width:54px;height:54px;font-size:22px;background:var(--accent);color:#fff;border-color:var(--accent)}
 .fab.main.on{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+@media (max-width:600px){
+  body{padding-bottom:64px}
+  .fabs{left:0;right:0;bottom:0;flex-direction:row;justify-content:center;gap:12px;padding:8px 16px calc(8px + env(safe-area-inset-bottom));background:var(--bg);border-top:1px solid var(--line)}
+  .fab,.fab.main{width:auto;height:40px;border-radius:20px;padding:0 18px;font-size:15px;box-shadow:none;flex:1;max-width:180px}
+  #maskFab::after{content:" 背诵遮挡";font-weight:400}
+  #playAll::after{content:" 磨耳朵"}
+  #playAll.on::after{content:" 停止"}
+}
 
 /* 设置页 */
 .settings[hidden]{display:none}
@@ -132,20 +140,29 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .mm li:first-child::after{top:50%}
 .mm li:last-child::after{bottom:50%}
 .mm li:only-child::after{display:none}
+.rel{color:var(--accent)}
 .mm .rel{position:absolute;left:6px;top:50%;transform:translateY(-110%);font-size:10px;line-height:1;color:var(--accent);background:var(--card);padding:1px 2px}
-.mm .rel.r-近义,.mm .rel.r-同根{color:var(--t-xy)}
-.mm .rel.r-反义{color:var(--pink)}
-.mm .rel.r-形近,.mm .rel.r-加s{color:var(--t-dz)}
-.mm .rel.r-相关{color:var(--t-lx)}
-/* 手机上导图改为竖向大纲，避免横向拖动 */
+.rel.r-近义,.rel.r-同根{color:var(--t-xy)}
+.rel.r-反义{color:var(--pink)}
+.rel.r-形近,.rel.r-加s{color:var(--t-dz)}
+.rel.r-相关{color:var(--t-lx)}
+/* 手机版导图（.mmc）：单线串联写在一行，只在分叉处缩进；桌面仍用横向树（.mm） */
+.mmc{display:none}
 @media (max-width:600px){
-  .mapbox{padding:12px 12px 12px 10px}
-  .mm{display:block;min-width:0}
-  .mm ul{display:block;margin:2px 0 2px 12px;padding-left:12px;border-left:1.5px solid var(--line2)}
-  .mm ul::before,.mm li::after{display:none}
-  .mm li,.mm li.has-rel{display:block;padding:2px 0}
-  .mm li::before,.mm li.has-rel::before{left:-12px;top:15px;width:10px}
-  .mm .rel{position:static;transform:none;margin-right:4px;padding:0}
+  .mapbox{padding:10px 12px;overflow:visible}
+  .mm{display:none}
+  .mmc,.mmc ul{list-style:none;margin:0;padding:0}
+  .mmc{display:block}
+  .mmc>li{padding:7px 0;border-top:1px solid var(--line)}
+  .mmc>li:first-child{border-top:none}
+  .mmc ul{margin:4px 0 0 6px;padding-left:10px;border-left:2px solid var(--accent-soft)}
+  .mmc ul li{padding:3px 0}
+  .mmc .line{display:flex;flex-wrap:wrap;align-items:center;gap:4px 2px;line-height:1.3}
+  .mmc .node{font-size:14px;padding:2px 7px}
+  .mmc .node.ext{border-bottom:none;border-radius:6px;background:var(--bg)}
+  .mmc .rel{position:static;transform:none;font-size:11px;line-height:1.4;padding:0 5px;border-radius:8px;border:1px solid currentColor;background:none;margin-left:2px}
+  .mmc .arr{color:var(--sub);font-size:12px;margin:0 1px}
+  .mmc .mseg{display:inline-flex;align-items:center;gap:2px;white-space:nowrap}
 }
 .node{white-space:nowrap;font-size:14px;padding:2px 8px;border-radius:6px;cursor:pointer;border:1px solid transparent;background:none}
 .node.entry{font-weight:700;border-color:var(--blue);background:var(--blue-soft)}

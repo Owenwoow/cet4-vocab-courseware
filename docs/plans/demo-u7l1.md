@@ -44,11 +44,15 @@
 ## 下一步（待定）
 
 - [ ] 用户验收 demo，提改动意见
-- [ ] 用 Sonnet 子代理（或便宜视觉模型）按提示词跑 Unit 7 Lesson 2，对比人工结果，测出准确率
-- [ ] 把工作流固化成项目技能 `.claude/skills/make-lesson/`
+- [x] 三轮实测 Unit 7 Lesson 2~4，定下模型分工，固化成技能 `.claude/skills/make-lesson/`（2026-09-30）。实测数据和结论见技能文件。Unit 7 与单元小结五项对数一致
+- [ ] 新会话按 make-lesson 并行 3 跑 Unit 8~10
 - [x] 部署：GitHub Actions → GitHub Pages，https://owenwoow.github.io/cet4-vocab-courseware/（2026-09-30）
   - 线上生成音频被限流、缓存会过期 → 音频改为本地生成，放独立仓库 https://owenwoow.github.io/cet4-vocab-audio/
   - Pages 缓存 10 分钟：部署时给 app.js / style.css 加版本号
   - 容量：全书音频估计约 600MB，单个音频仓库装得下；`publish_audio.py` 每次会报总量，接近 1GB 时再拆
+- [x] 手机端思维导图不舒服（用户 2026-09-30 真机截图反馈）→ 已改：单线串联写在一行、只在分叉处缩进、关系标签按类型上色；悬浮按钮在手机上改成底部工具栏：
+  - 竖向大纲太长，13 个词占满一屏，要翻很久才到词卡
+  - 连线细、层层缩进，链式关系（passport → visa）看不出谁连谁
+  - 右下角悬浮按钮压住词卡的考频和「标为已会」
 - [ ] Part 02（词以序记）版式不同，需要另一套 schema 和模板
 - [ ] 复习功能：书末艾宾浩斯打卡表

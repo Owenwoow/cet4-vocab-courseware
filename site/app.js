@@ -174,6 +174,20 @@ function mapHTML(node, root) {
          `${node.children ? `<ul>${node.children.map(c => mapHTML(c)).join("")}</ul>` : ""}</li>`;
 }
 
+/* 手机版导图：单线串联的关系写在同一行（A → 相关 B → 形近 C），只在分叉处换行缩进 */
+function nodeChip(node) {
+  const hit = WORDMAP.get(node.w);
+  const cls = hit ? (hit.ext ? "ext" : "entry") + (!hit.ext && known.has(node.w) ? " known" : "") : "ext";
+  return `${node.rel ? `<span class="rel r-${esc(node.rel)}">${esc(node.rel)}</span>` : ""}<button class="node ${cls}" data-goto="${esc(node.w)}">${esc(node.w)}</button>`;
+}
+function mapCompactLine(node) {
+  let h = nodeChip(node), cur = node;
+  while (cur.children && cur.children.length === 1) { cur = cur.children[0]; h += `<span class="mseg"><span class="arr">→</span>${nodeChip(cur)}</span>`; }
+  const kids = cur.children && cur.children.length > 1 ? `<ul>${cur.children.map(c => `<li>${mapCompactLine(c)}</li>`).join("")}</ul>` : "";
+  return `<span class="line">${h}</span>${kids}`;
+}
+const mapCompact = root => `<ul class="mmc">${(root.children || []).map(c => `<li>${mapCompactLine(c)}</li>`).join("")}</ul>`;
+
 /* ---------- 词卡 ---------- */
 const allEntries = () => L.groups.flatMap(g => g.entries);
 const entryOf = card => WORDMAP.get(card.dataset.word).entry;
@@ -217,7 +231,7 @@ function renderLesson() {
   $("#groups").innerHTML = L.groups.map(g => `<section class="group" id="g${g.no}" data-g="${g.no}">
       <div class="ghead"><span class="gno">词以群记 ${g.no}</span><span class="gtitle">${esc(g.title)}</span>
         ${BOOK.hasPages ? `<button class="src-btn" data-pages="${g.pages[0]}-${g.pages[1]}">📖 看原书</button>` : ""}</div>
-      <div class="mapbox">${mapHTML(g.map, true)}</div>
+      <div class="mapbox">${mapHTML(g.map, true)}${mapCompact(g.map)}</div>
       ${g.entries.map(cardHTML).join("")}
     </section>`).join("");
   updateProgress();

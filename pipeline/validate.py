@@ -32,6 +32,8 @@ class Report:
 def check_ipa(r, where, ipa):
     if not ipa:
         r.err(where, "缺少音标")
+    elif "uːə" in ipa:
+        r.warn(where, f"音标 {ipa} 里的 uːə 多半应为 ʊə（如 /ɪnˈʃʊə(r)/）")
     elif not IPA_OK.match(ipa):
         bad = "".join(sorted({c for c in ipa.strip("/") if not IPA_OK.match(f"/{c}/")}))
         r.warn(where, f"音标含可疑字符 {bad!r}：{ipa}")
@@ -74,6 +76,9 @@ def validate(path):
     r = Report(d.get("id", path.stem))
     for m in unsure_marks(d):
         r.warn("认不清", m)
+    us = d.get("unit_summary")
+    if us is not None and set(us) != {"groups", "words", "ext", "zhen", "li"}:
+        r.err("单元小结", f"字段应为 groups/words/ext/zhen/li，实际 {sorted(us)}")
     expect_no = 1
     seen = set()
     for g in d["groups"]:
@@ -109,6 +114,8 @@ def validate(path):
                     r.err(w, "真题例句缺少年份")
                 if not ex.get("en") or not ex.get("zh"):
                     r.err(w, "例句或译文为空")
+                if re.search("[‘’“”]", ex.get("en", "")):
+                    r.err(w, "英文例句里有弯引号，撇号/引号要用直的 ' \"（否则网页点读会把 wasn’t 拆成两个词）")
                 for k in ex.get("key", []):
                     if not phrase_in(ex["en"], k):
                         r.err(w, f"重点词 {k!r} 不在例句中")
@@ -124,11 +131,13 @@ def validate(path):
         # 思维导图与词条互相核对
         nodes = map_words(g["map"], [])[1:]
         for word, rel in nodes:
-            if rel not in REL:
-                r.warn(gw, f"导图关系 {rel!r} 未登记")
+            # 书上也有「pet相关」「去et」这类临时标签，短标签都放行，只拦明显抄错的长串
+            if rel not in REL and len(rel) > 6:
+                r.warn(gw, f"导图关系 {rel!r} 过长，确认是否抄错")
         names = {n for n, _ in nodes}
+        root = g["map"]["w"]
         for e in g["entries"]:
-            if e["word"] not in names:
+            if e["word"] not in names and e["word"] not in root:   # 根节点可能就是词条，如「device 相关」
                 r.warn(gw, f"词条 {e['word']} 不在导图里")
         for n in names - in_group:
             r.warn(gw, f"导图词 {n} 在本词群找不到词条/扩展词")
