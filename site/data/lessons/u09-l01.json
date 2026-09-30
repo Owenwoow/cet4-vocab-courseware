@@ -1,0 +1,521 @@
+{
+  "id": "u09-l01",
+  "part": 1,
+  "unit": 9,
+  "lesson": 1,
+  "pages": [248, 253],
+  "groups": [
+    {
+      "no": 1,
+      "title": "“包裹”相关",
+      "pages": [248, 249],
+      "map": {
+        "w": "“包裹”相关",
+        "children": [
+          {"w": "packet", "children": [
+            {"w": "parcel", "rel": "近义", "children": [
+              {"w": "package", "children": [{"w": "pack", "rel": "扩"}]}
+            ]},
+            {"w": "wrap", "rel": "相关", "children": [
+              {"w": "wrapping", "rel": "扩"},
+              {"w": "towel", "rel": "相关", "children": [{"w": "tower", "rel": "形近"}]},
+              {"w": "veil", "rel": "相关", "children": [{"w": "unveil", "rel": "反义"}]},
+              {"w": "mask", "rel": "相关", "children": [{"w": "naked", "rel": "相关"}]},
+              {"w": "tissue", "children": [{"w": "issue", "rel": "形近"}]}
+            ]}
+          ]},
+          {"w": "baggage", "children": [
+            {"w": "burden", "rel": "相关", "children": [
+              {"w": "afford", "rel": "相关", "children": [
+                {"w": "affordable", "rel": "扩"},
+                {"w": "affordability", "rel": "扩"}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "pack", "freq": 2, "page": 248,
+          "prons": [{"ipa": "/pæk/", "senses": [
+            {"pos": "v.", "mean": "[[打包，收拾（行李）]]；装（箱）"},
+            {"pos": "n.", "mean": "（商品的）[[纸包，纸盒]]，包装盒"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“派客”→他的工作是给客户“打包”并派送包裹。"},
+          "ex": {"type": "真", "year": 2017, "en": "One had to quit abruptly on a given day, going from about a pack a day to zero.", "zh": "吸烟者必须在某一天突然戒烟，从每天一包到零包。", "key": ["pack"]},
+          "ext": [{"word": "package", "ipa": "/ˈpækɪdʒ/", "senses": [
+            {"pos": "n.", "mean": "小包，包装"},
+            {"pos": "v.", "mean": "把……打包，包装"}
+          ]}]
+        },
+        {
+          "no": 2, "word": "packet", "freq": 1, "page": 248,
+          "prons": [{"ipa": "/ˈpækɪt/", "senses": [{"pos": "n.", "mean": "（商品的）[[小包装纸袋]]；（邮政）[[小件包裹]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“派个他”→派他去送“小件包裹”。"},
+          "ex": {"type": "例", "en": "He claims a packet of chips now contains less salt.", "zh": "他声称，现在一袋薯片的含盐量更少了。", "key": ["packet"]},
+          "ext": []
+        },
+        {
+          "no": 3, "word": "parcel", "freq": 1, "page": 248,
+          "prons": [{"ipa": "/ˈpɑːsl/", "senses": [
+            {"pos": "n.", "mean": "[[包裹]]，邮包"},
+            {"pos": "v.", "mean": "[[包]]，打包"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“怕馊”→妈妈怕饭馊了，用袋子把饭“包”起来放入冰箱。"},
+          "ex": {"type": "真", "year": 2019, "en": "It can be hard to identify which parcels are carrying crucial items.", "zh": "很难确定哪些包裹里装的是关键物品。", "key": ["parcels"]},
+          "ext": []
+        },
+        {
+          "no": 4, "word": "wrap", "freq": 2, "page": 248,
+          "prons": [{"ipa": "/ræp/", "senses": [
+            {"pos": "v.", "mean": "[[包，用……绕住]]；使文字换行"},
+            {"pos": "n.", "mean": "披肩，[[围巾]]；包裹物"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“外婆”→冬天外婆总是用“围巾”“包”着头，防止受风寒。"},
+          "ex": {"type": "例", "en": "Each apple was wrapped in paper.", "zh": "每个苹果都用纸包着。", "key": ["wrapped"]},
+          "ext": [{"word": "wrapping", "ipa": "/ˈræpɪŋ/", "senses": [{"pos": "n.", "mean": "包装材料；包装纸"}]}]
+        },
+        {
+          "no": 5, "word": "towel", "freq": 1, "page": 248,
+          "prons": [{"ipa": "/ˈtaʊəl/", "senses": [{"pos": "n.", "mean": "[[毛巾]]，手巾"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“头”→他洗完头发，在头上包了条“毛巾”。"},
+          "ex": {"type": "例", "en": "If you're going on a trip, it's a good idea to bring your own towel.", "zh": "如果你要去旅行，最好自己带条毛巾。", "key": ["towel"]},
+          "ext": []
+        },
+        {
+          "no": 6, "word": "tower", "freq": 1, "page": 248,
+          "prons": [{"ipa": "/ˈtaʊə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[塔]]"},
+            {"pos": "v.", "mean": "高于，超过"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“塔窝”→塔"},
+          "ex": {"type": "例", "en": "There is a tower at each corner of the castle.", "zh": "城堡的每个角各有一个塔楼。", "key": ["tower"]},
+          "ext": []
+        },
+        {
+          "no": 7, "word": "veil", "freq": 1, "page": 249,
+          "prons": [{"ipa": "/veɪl/", "senses": [
+            {"pos": "n.", "mean": "（尤指女用的）[[面纱，面罩]]"},
+            {"pos": "v.", "mean": "戴面纱；[[掩饰]]；[[掩盖]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "v（形似罗马数字 5）+ e（联想“鹅”）+ il（联想 ill）→五只鹅生病了，要戴“面罩”，防止传染。"},
+          "ex": {"type": "真", "year": 2016, "en": "They see a benefit to successfully veiling their contempt for you.", "zh": "他们认为成功地掩饰他们对你的蔑视是有好处的。", "key": ["veiling"]},
+          "ext": [{"word": "unveil", "ipa": "/ˌʌnˈveɪl/", "senses": [{"pos": "v.", "mean": "揭露，揭示"}]}]
+        },
+        {
+          "no": 8, "word": "mask", "freq": 1, "page": 249,
+          "prons": [{"ipa": "/mɑːsk/", "senses": [
+            {"pos": "n.", "mean": "[[面具]]；[[面罩]]；伪装"},
+            {"pos": "v.", "mean": "[[掩饰，掩盖]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "m（联想“妹”）+ ask（问）→妹妹很害羞，每次问问题都“掩盖”着嘴。"},
+          "ex": {"type": "例", "en": "National data masks the variation in the performance of individual universities.", "zh": "国家数据掩盖了个别大学表现的差异。", "key": ["masks"]},
+          "ext": []
+        },
+        {
+          "no": 9, "word": "naked", "freq": 1, "page": 249,
+          "prons": [{"ipa": "/ˈneɪkɪd/", "senses": [{"pos": "adj.", "mean": "[[裸体的]]；[[裸露的]]；直白的"}]}],
+          "tip": {"type": "联想", "text": "na（联想“那”）+ ked（联想“磕的”）→那磕到的伤口要保持“裸露的”状态。"},
+          "ex": {"type": "例", "en": "They found him half naked and bleeding to death.", "zh": "他们发现他身体半裸，流着血，快不行了。", "key": ["naked"]},
+          "ext": []
+        },
+        {
+          "no": 10, "word": "tissue", "freq": 1, "page": 249,
+          "prons": [{"ipa": "/ˈtɪʃuː/", "senses": [{"pos": "n.", "mean": "[[纸巾，面巾纸]]，薄织物"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“提漱”→他拿出一提“纸巾”，准备去洗漱。"},
+          "ex": {"type": "例", "en": "They try to limit their usage of facial tissue to save money.", "zh": "他们试图限制纸巾的使用，以节省开支。", "key": ["tissue"]},
+          "ext": []
+        },
+        {
+          "no": 11, "word": "issue", "freq": 3, "page": 249,
+          "prons": [{"ipa": "/ˈɪʃuː/", "senses": [
+            {"pos": "n.", "mean": "[[问题]]；发行"},
+            {"pos": "v.", "mean": "[[发表]]；分发"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“一休”→聪明的一休很会解决“问题”。"},
+          "ex": {"type": "例", "en": "Increasingly states and companies are starting to take up the issue.", "zh": "越来越多的州和公司开始关注这个问题。", "key": ["issue"]},
+          "ext": []
+        },
+        {
+          "no": 12, "word": "baggage", "freq": 1, "page": 249,
+          "prons": [{"ipa": "/ˈbæɡɪdʒ/", "senses": [{"pos": "n.", "mean": "[[行李]]"}]}],
+          "tip": {"type": "联想", "text": "bag（包）+ ga（音似“给”）+ ge（联想“哥”）→这包是给哥哥准备的“行李”。"},
+          "ex": {"type": "例", "en": "Remember no more than 10 ounces of carry-on baggage are allowed.", "zh": "记住随身携带的行李不能超过 10 盎司。", "key": ["baggage"]},
+          "ext": []
+        },
+        {
+          "no": 13, "word": "burden", "freq": 1, "page": 249,
+          "prons": [{"ipa": "/ˈbɜːdn/", "senses": [
+            {"pos": "n.", "mean": "[[负担，重担]]"},
+            {"pos": "v.", "mean": "[[担负]]；负重"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“笨蛋”→身边有个笨蛋是他的“负担”。"},
+          "ex": {"type": "真", "year": 2023, "en": "He has been burdened with excessive work.", "zh": "他的工作负担过重。", "key": ["burdened"]},
+          "ext": []
+        },
+        {
+          "no": 14, "word": "afford", "freq": 1, "page": 249,
+          "prons": [{"ipa": "/əˈfɔːd/", "senses": [{"pos": "v.", "mean": "[[买得起]]；提供"}]}],
+          "tip": {"type": "联想", "text": "af-（一再地）+ ford（联想“福特”）→他一再地看福特车是因为“买得起”。"},
+          "ex": {"type": "真", "year": 2023, "en": "They find it increasingly difficult to afford a place to live.", "zh": "他们发现越来越难以负担住处。", "key": ["afford"]},
+          "ext": [
+            {"word": "affordable", "ipa": "/əˈfɔːdəbl/", "senses": [{"pos": "adj.", "mean": "便宜的；负担得起的，买得起的"}]},
+            {"word": "affordability", "ipa": "/əˌfɔːdəˈbɪləti/", "senses": [{"pos": "n.", "mean": "负担能力"}]}
+          ]
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "title": "“纺织”相关",
+      "pages": [250, 251],
+      "map": {
+        "w": "“纺织”相关",
+        "children": [
+          {"w": "knit", "children": [
+            {"w": "textile", "rel": "相关", "children": [
+              {"w": "fabric", "rel": "近义", "children": [
+                {"w": "rag", "rel": "相关", "children": [
+                  {"w": "ragged", "rel": "扩"},
+                  {"w": "raggedly", "rel": "扩"}
+                ]}
+              ]}
+            ]},
+            {"w": "weave", "rel": "近义", "children": [
+              {"w": "wave", "rel": "形近", "children": [
+                {"w": "wavy", "rel": "扩"},
+                {"w": "microwave", "rel": "合成", "children": [{"w": "microwavable", "rel": "扩"}]},
+                {"w": "tide", "rel": "相关", "children": [
+                  {"w": "tidal", "rel": "扩"},
+                  {"w": "tidy", "rel": "形近"}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"w": "fibre", "children": [
+            {"w": "nutrition", "rel": "相关", "children": [
+              {"w": "nutrient", "rel": "扩"},
+              {"w": "vitamin", "rel": "相关", "children": [{"w": "protein"}]}
+            ]},
+            {"w": "nuisance", "rel": "相关"}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 15, "word": "fabric", "freq": 2, "page": 250,
+          "prons": [{"ipa": "/ˈfæbrɪk/", "senses": [{"pos": "n.", "mean": "[[织物，布料]]；结构"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“帆布”→帆布属于一种“布料”。"},
+          "ex": {"type": "例", "en": "It's so hard to create fabric.", "zh": "制作布料很困难。", "key": ["fabric"]},
+          "ext": []
+        },
+        {
+          "no": 16, "word": "rag", "freq": 1, "page": 250,
+          "prons": [{"ipa": "/ræɡ/", "senses": [{"pos": "n.", "mean": "[[破布，抹布]]；（pl.）破衣烂衫"}]}],
+          "tip": {"type": "联想", "text": "ra（联想“让”）+ g（联想“哥”）→他让哥哥拿块“抹布”。"},
+          "ex": {"type": "例", "en": "I wiped the window with a damp rag.", "zh": "我用湿抹布擦窗户。", "key": ["rag"]},
+          "ext": [
+            {"word": "ragged", "ipa": "/ˈræɡɪd/", "senses": [{"pos": "adj.", "mean": "破旧的；褴褛的；粗糙的"}]},
+            {"word": "raggedly", "ipa": "/ˈræɡɪdli/", "senses": [{"pos": "adv.", "mean": "破衣烂衫地；粗糙地"}]}
+          ]
+        },
+        {
+          "no": 17, "word": "textile", "freq": 1, "page": 250,
+          "prons": [{"ipa": "/ˈtekstaɪl/", "senses": [{"pos": "n.", "mean": "[[纺织品]]，织物；[[纺织业]]"}]}],
+          "tip": {"type": "联想", "text": "text（课文）+ i（我）+ le（联想“了”）→通过这篇课文，我了解了“纺织业”的发展史。"},
+          "ex": {"type": "例", "en": "He got a job in textiles.", "zh": "他在纺织行业找到一份工作。", "key": ["textiles"]},
+          "ext": []
+        },
+        {
+          "no": 18, "word": "knit", "freq": 2, "page": 250,
+          "prons": [{"ipa": "/nɪt/", "senses": [{"pos": "v.", "mean": "[[编织]]；（折骨）[[愈合]]；（使）[[紧密结合]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“你他”→你和他联合完成了任务→紧密结合"},
+          "ex": {"type": "例", "en": "The bone failed to knit correctly.", "zh": "骨头愈合得不好。", "key": ["knit"]},
+          "ext": []
+        },
+        {
+          "no": 19, "word": "weave", "freq": 1, "page": 250,
+          "prons": [{"ipa": "/wiːv/", "senses": [{"pos": "v.", "mean": "[[织，编]]；纺织"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“为我”→妈妈为我“织”了件毛衣。"},
+          "ex": {"type": "例", "en": "A bird must weave these materials into a nest.", "zh": "鸟必须把这些材料编织成巢。", "key": ["weave"]},
+          "ext": []
+        },
+        {
+          "no": 20, "word": "wave", "freq": 1, "page": 250,
+          "prons": [{"ipa": "/weɪv/", "senses": [
+            {"pos": "n.", "mean": "[[波，波浪]]"},
+            {"pos": "v.", "mean": "（挥手）[[示意，致意]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“喂，我”→有人在跟我打招呼→（挥手）示意，致意"},
+          "ex": {"type": "例", "en": "The people on the bus waved and we waved back.", "zh": "公共汽车上的人挥手致意，我们也向他们挥手。", "key": ["waved"]},
+          "ext": [{"word": "wavy", "ipa": "/ˈweɪvi/", "senses": [{"pos": "adj.", "mean": "起伏不平的；波浪形的；拳曲的"}]}]
+        },
+        {
+          "no": 21, "word": "microwave", "freq": 2, "page": 250,
+          "prons": [{"ipa": "/ˈmaɪkrəweɪv/", "senses": [{"pos": "n.", "mean": "[[微波炉]]，[[微波]]"}]}],
+          "tip": {"type": "构词", "text": "micro-（微小）+ wave（波）→微波"},
+          "ex": {"type": "真", "year": 2020, "en": "The microwave and fast-food chains were the biggest catalysts.", "zh": "微波炉和快餐连锁店是最大的催化剂。", "key": ["microwave"]},
+          "ext": [{"word": "microwavable", "ipa": "/ˈmaɪkrəweɪvəbl/", "senses": [{"pos": "adj.", "mean": "可于微波炉中加热的"}]}]
+        },
+        {
+          "no": 22, "word": "tide", "freq": 1, "page": 250,
+          "prons": [{"ipa": "/taɪd/", "senses": [{"pos": "n.", "mean": "[[潮汐，潮水]]；潮水般的人流"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The tide swept in quickly at the beach.", "zh": "潮水很快冲上了海滩。", "key": ["tide"]},
+          "ext": [{"word": "tidal", "ipa": "/ˈtaɪdl/", "senses": [{"pos": "adj.", "mean": "潮汐的；有潮的"}]}]
+        },
+        {
+          "no": 23, "word": "tidy", "freq": 1, "page": 251,
+          "prons": [{"ipa": "/ˈtaɪdi/", "senses": [
+            {"pos": "adj.", "mean": "[[整齐的，整洁的]]"},
+            {"pos": "v.", "mean": "[[整理]]；收拾"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“泰迪”→他的那只泰迪犬是“整洁的”。"},
+          "ex": {"type": "例", "en": "I keep our streets clean and tidy every day.", "zh": "我每天保持我们的街道干净整洁。", "key": ["tidy"]},
+          "ext": []
+        },
+        {
+          "no": 24, "word": "fibre", "alt": "-ber", "freq": 1, "page": 251,
+          "prons": [{"ipa": "/ˈfaɪbə(r)/", "senses": [{"pos": "n.", "mean": "（食物的）[[纤维]]，（布绳的）[[纤维]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“饭钵”→我饭钵里的饭“纤维素”含量很高。"},
+          "ex": {"type": "真", "year": 2019, "en": "Breakfast foods are often higher in fibre and nutrients.", "zh": "早餐食品的纤维含量和营养成分通常都较高。", "key": ["fibre"]},
+          "ext": []
+        },
+        {
+          "no": 25, "word": "vitamin", "freq": 2, "page": 251,
+          "prons": [{"ipa": "/ˈvɪtəmɪn/", "senses": [{"pos": "n.", "mean": "[[维生素]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“维他命”→维他命是“维生素”的旧称。"},
+          "ex": {"type": "例", "en": "Vitamins are complex substances that the body requires in very small amounts.", "zh": "维生素是人体需要的极少量的复杂物质。", "key": ["Vitamins"]},
+          "ext": []
+        },
+        {
+          "no": 26, "word": "protein", "freq": 3, "page": 251,
+          "prons": [{"ipa": "/ˈprəʊtiːn/", "senses": [{"pos": "n.", "mean": "[[蛋白质]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“脯肉疼”→他胸脯上的肉疼，可能缺乏“蛋白质”。"},
+          "ex": {"type": "真", "year": 2022, "en": "Vegetarian protein may be easier to absorb.", "zh": "素食蛋白可能更容易吸收。", "key": ["protein"]},
+          "ext": []
+        },
+        {
+          "no": 27, "word": "nutrition", "freq": 2, "page": 251,
+          "prons": [{"ipa": "/njuˈtrɪʃn/", "senses": [{"pos": "n.", "mean": "[[营养，营养学]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“牛吹神”→“营养”品再牛也不能被吹成神药。"},
+          "ex": {"type": "例", "en": "Nutrition information is now provided on the back of most food products.", "zh": "现在大多数食品的背面都有营养信息。", "key": ["Nutrition"]},
+          "ext": [{"word": "nutrient", "ipa": "/ˈnjuːtriənt/", "senses": [{"pos": "n.", "mean": "营养素，营养物"}]}]
+        },
+        {
+          "no": 28, "word": "nuisance", "freq": 1, "page": 251,
+          "prons": [{"ipa": "/ˈnjuːsns/", "senses": [{"pos": "n.", "mean": "[[令人讨厌的人或事物]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“牛绅士”→这个“令人讨厌的人”假扮成一个很牛的绅士。"},
+          "ex": {"type": "例", "en": "I don't want to be a nuisance, so tell me if you want to be alone.", "zh": "我不想讨人嫌，所以你要是想一个人待着就说一声。", "key": ["nuisance"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "title": "reputation 相关",
+      "pages": [251, 252],
+      "map": {
+        "w": "reputation",
+        "children": [
+          {"w": "fame", "children": [{"w": "famous", "rel": "扩"}]},
+          {"w": "image", "children": [
+            {"w": "imaging", "rel": "扩"},
+            {"w": "imagine", "rel": "形近", "children": [
+              {"w": "imagination", "rel": "扩"},
+              {"w": "imaginative", "rel": "扩"},
+              {"w": "imaginary", "rel": "扩"}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 29, "word": "reputation", "freq": 3, "page": 251,
+          "prons": [{"ipa": "/ˌrepjuˈteɪʃn/", "senses": [{"pos": "n.", "mean": "[[名誉，名声]]"}]}],
+          "tip": {"type": "联想", "text": "re-（一再地）+ put（放）+ -ation（名词后缀）→一再把一个人的名字放到前面，说明这个人“名声”很大。"},
+          "ex": {"type": "真", "year": 2018, "en": "Since the 1940s, southern California has had a reputation for smog.", "zh": "自 20 世纪 40 年代以来，南加州一直因雾霾闻名。", "key": ["had a reputation for"]},
+          "ext": []
+        },
+        {
+          "no": 30, "word": "fame", "freq": 2, "page": 251,
+          "prons": [{"ipa": "/feɪm/", "senses": [{"pos": "n.", "mean": "[[名气]]；[[名声]]；[[声誉]]"}]}],
+          "tip": {"type": "对照", "text": "famous adj. 著名的→fame n."},
+          "ex": {"type": "例", "en": "Its fame in high technology is incomparable.", "zh": "它在高科技领域的名气是无与伦比的。", "key": ["fame"]},
+          "ext": [{"word": "famous", "ipa": "/ˈfeɪməs/", "senses": [{"pos": "adj.", "mean": "著名的；出名的"}]}]
+        },
+        {
+          "no": 31, "word": "image", "freq": 3, "page": 252,
+          "prons": [{"ipa": "/ˈɪmɪdʒ/", "senses": [{"pos": "n.", "mean": "[[形象，样子]]；[[印象]]；[[声誉]]"}]}],
+          "tip": {"type": "联想", "text": "i（我）+ m（联想“妈”）+ age（年龄）→我妈妈各个年龄段的“形象”都让我终生难忘。"},
+          "ex": {"type": "例", "en": "The advertisements are intended to improve the company's image.", "zh": "这些广告旨在提高公司的形象。", "key": ["image"]},
+          "ext": [{"word": "imaging", "ipa": "/ˈɪmɪdʒɪŋ/", "senses": [{"pos": "n.", "mean": "成像"}]}]
+        },
+        {
+          "no": 32, "word": "imagine", "freq": 1, "page": 252,
+          "prons": [{"ipa": "/ɪˈmædʒɪn/", "senses": [{"pos": "v.", "mean": "[[想象]]；[[设想]]，胡乱猜想；猜测"}]}],
+          "tip": {"type": "对照", "text": "他试图把妈妈的形象（image）想象（imagine）出来。"},
+          "ex": {"type": "真", "year": 2016, "en": "I can imagine how many difficulties and obstacles you've conquered.", "zh": "我可以想象你克服了多少困难和障碍。", "key": ["imagine"]},
+          "ext": [
+            {"word": "imagination", "ipa": "/ɪˌmædʒɪˈneɪʃn/", "senses": [{"pos": "n.", "mean": "想象力；想象"}]},
+            {"word": "imaginative", "ipa": "/ɪˈmædʒɪnətɪv/", "senses": [{"pos": "adj.", "mean": "富有想象力的；爱想象的"}]},
+            {"word": "imaginary", "ipa": "/ɪˈmædʒɪnəri/", "senses": [{"pos": "adj.", "mean": "想象的，虚构的"}]}
+          ]
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "title": "“信赖、皇家”相关",
+      "pages": [252, 253],
+      "map": {
+        "w": "“信赖、皇家”相关",
+        "children": [
+          {"w": "reliable", "children": [
+            {"w": "rely", "rel": "扩", "children": [
+              {"w": "reliance", "rel": "扩"},
+              {"w": "reply", "rel": "形近"},
+              {"w": "relay", "rel": "形近"}
+            ]},
+            {"w": "liable", "rel": "去re", "children": [{"w": "liability", "rel": "扩"}]},
+            {"w": "credible", "rel": "近义", "children": [
+              {"w": "creditable", "rel": "相关", "children": [{"w": "credit", "rel": "扩"}]}
+            ]},
+            {"w": "faithful", "rel": "近义", "children": [
+              {"w": "faith", "rel": "扩", "children": [
+                {"w": "loyalty", "rel": "近义", "children": [{"w": "loyal", "rel": "扩"}]}
+              ]}
+            ]}
+          ]},
+          {"w": "royal", "children": [
+            {"w": "royalty", "rel": "扩"},
+            {"w": "noble", "rel": "相关", "children": [
+              {"w": "nobility", "rel": "扩"},
+              {"w": "crown", "children": [
+                {"w": "queen", "children": [{"w": "queue", "rel": "形近"}]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 33, "word": "reply", "freq": 1, "page": 252,
+          "prons": [{"ipa": "/rɪˈplaɪ/", "senses": [
+            {"pos": "v.", "mean": "[[回答]]；[[回应]]；作出反应"},
+            {"pos": "n.", "mean": "[[回答]]；答复"}
+          ]}],
+          "tip": {"type": "联想", "text": "re（字母音“阿姨”）+ ply（音似“不辣”）→吃火锅时，我问阿姨辣不辣，阿姨“回答”说不辣。"},
+          "ex": {"type": "例", "en": "He hasn't replied to any of my text messages.", "zh": "他还没有回复我的任何短信。", "key": ["replied to"]},
+          "ext": []
+        },
+        {
+          "no": 34, "word": "relay", "freq": 1, "page": 252,
+          "prons": [
+            {"ipa": "/ˈriːleɪ; rɪˈleɪ/", "senses": [{"pos": "v.", "mean": "[[转发，转送]]；播放，转播（电视或广播信号）"}]},
+            {"ipa": "/ˈriːleɪ/", "senses": [{"pos": "n.", "mean": "[[接力赛]]"}]}
+          ],
+          "tip": {"type": "联想", "text": "re（字母音“阿姨”）+ lay（躺）→阿姨跑完“接力赛”，累得躺下了。"},
+          "ex": {"type": "例", "en": "Patients are using new devices to relay their vital signs to their doctors.", "zh": "患者正在使用新的设备将他们的生命体征传给医生。", "key": ["relay"]},
+          "ext": []
+        },
+        {
+          "no": 35, "word": "rely", "freq": 3, "page": 252,
+          "prons": [{"ipa": "/rɪˈlaɪ/", "senses": [{"pos": "v.", "mean": "[[依靠，依赖]]；[[信赖]]"}]}],
+          "tip": {"type": "联想", "text": "re-（回）+ ly（联想 lying）→他回家后就躺在沙发上→依靠，依赖"},
+          "ex": {"type": "例", "en": "It would be rash to rely on such evidence.", "zh": "依靠这样的证据太轻率了。", "key": ["rely on"]},
+          "ext": [{"word": "reliance", "ipa": "/rɪˈlaɪəns/", "senses": [{"pos": "n.", "mean": "依靠，依赖"}]}]
+        },
+        {
+          "no": 36, "word": "reliable", "freq": 2, "page": 252,
+          "prons": [{"ipa": "/rɪˈlaɪəbl/", "senses": [{"pos": "adj.", "mean": "[[可信赖的]]；[[可依靠的]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "We are looking for someone who is reliable and hard-working.", "zh": "我们在物色可靠而又勤奋的人。", "key": ["reliable"]},
+          "ext": []
+        },
+        {
+          "no": 37, "word": "liable", "freq": 1, "page": 252,
+          "prons": [{"ipa": "/ˈlaɪəbl/", "senses": [{"pos": "adj.", "mean": "（法律上）[[有责任的，有义务的]]；[[可能（做某事），倾向于]]"}]}],
+          "tip": {"type": "联想", "text": "li（音似 lie，躺）+ able（音似“饿饱”）→“饿了站起来，饱了就躺下”的“可能”只有筷子。"},
+          "ex": {"type": "例", "en": "You will be liable for any damage caused.", "zh": "你必须对造成的任何损失负赔偿责任。", "key": ["liable"]},
+          "ext": [{"word": "liability", "ipa": "/ˌlaɪəˈbɪləti/", "senses": [{"pos": "n.", "mean": "责任，义务；欠债"}]}]
+        },
+        {
+          "no": 38, "word": "credit", "freq": 1, "page": 253,
+          "prons": [{"ipa": "/ˈkredɪt/", "senses": [
+            {"pos": "n.", "mean": "[[信用，信誉]]；贷款；学分"},
+            {"pos": "v.", "mean": "[[信任]]；把……归于"}
+          ]}],
+          "tip": {"type": "联想", "text": "credit card（信用卡）→credit（信誉）"},
+          "ex": {"type": "例", "en": "They use credit cards for their daily purchases.", "zh": "他们使用信用卡进行日常购物。", "key": ["credit"]},
+          "ext": [{"word": "creditable", "ipa": "/ˈkredɪtəbl/", "senses": [{"pos": "adj.", "mean": "值得赞扬的；高尚的"}]}]
+        },
+        {
+          "no": 39, "word": "credible", "freq": 1, "page": 253,
+          "prons": [{"ipa": "/ˈkredəbl/", "senses": [{"pos": "adj.", "mean": "[[可信的]]；[[可靠的]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "It is just not credible that she would cheat.", "zh": "她会行骗简直难以置信。", "key": ["credible"]},
+          "ext": []
+        },
+        {
+          "no": 40, "word": "faithful", "freq": 1, "page": 253,
+          "prons": [{"ipa": "/ˈfeɪθfl/", "senses": [{"pos": "adj.", "mean": "[[忠诚的，忠贞的]]；[[可信任的，可信赖的]]"}]}],
+          "tip": {"type": "联想", "text": "faith（音似 face）+ -ful（形容词后缀）→看他的脸就知道他是个“可信赖的”人。"},
+          "ex": {"type": "例", "en": "Friends should always be faithful to each other.", "zh": "朋友应该永远对彼此忠诚。", "key": ["faithful to"]},
+          "ext": [{"word": "faith", "ipa": "/feɪθ/", "senses": [{"pos": "n.", "mean": "信念；信任；忠诚"}]}]
+        },
+        {
+          "no": 41, "word": "loyal", "freq": 1, "page": 253,
+          "prons": [{"ipa": "/ˈlɔɪəl/", "senses": [{"pos": "adj.", "mean": "[[忠诚的]]；[[忠实的]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“老友”→老朋友是对我们“忠诚的”人。"},
+          "ex": {"type": "真", "year": 2017, "en": "Consumers are loyal to certain brands.", "zh": "消费者对某些品牌很忠诚。", "key": ["loyal to"]},
+          "ext": [{"word": "loyalty", "ipa": "/ˈlɔɪəlti/", "senses": [{"pos": "n.", "mean": "忠诚；忠实；忠心耿耿"}]}]
+        },
+        {
+          "no": 42, "word": "royal", "freq": 2, "page": 253,
+          "prons": [{"ipa": "/ˈrɔɪəl/", "senses": [
+            {"pos": "adj.", "mean": "[[皇家的，王室的]]"},
+            {"pos": "n.", "mean": "[[王室成员]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2018, "en": "He regards his royal duties as a burden.", "zh": "他认为王室职责是一种负担。", "key": ["royal"]},
+          "ext": [{"word": "royalty", "ipa": "/ˈrɔɪəlti/", "senses": [{"pos": "n.", "mean": "王室成员；版税"}]}]
+        },
+        {
+          "no": 43, "word": "noble", "freq": 1, "page": 253,
+          "prons": [{"ipa": "/ˈnəʊbl/", "senses": [
+            {"pos": "n.", "mean": "[[贵族成员]]"},
+            {"pos": "adj.", "mean": "[[贵族的]]；[[高贵的]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "no（不）+ ble（音似“抱”）→不抱谄媚之心，坚守“高贵的”尊严。"},
+          "ex": {"type": "例", "en": "He was not a noble, but the son of a leather trader.", "zh": "他不是一个贵族，而是一个皮革商人的儿子。", "key": ["noble"]},
+          "ext": [{"word": "nobility", "ipa": "/nəʊˈbɪləti/", "senses": [{"pos": "n.", "mean": "贵族；高贵的品质"}]}]
+        },
+        {
+          "no": 44, "word": "crown", "freq": 1, "page": 253,
+          "prons": [{"ipa": "/kraʊn/", "senses": [{"pos": "n.", "mean": "[[皇冠，王冠，冕]]；花冠"}]}],
+          "tip": {"type": "联想", "text": "cr（联想“超人”）+ own（拥有）→超人拥有自己的“王冠”。"},
+          "ex": {"type": "例", "en": "The king in the picture is wearing a crown.", "zh": "照片中的国王戴着一顶王冠。", "key": ["crown"]},
+          "ext": []
+        },
+        {
+          "no": 45, "word": "queen", "freq": 1, "page": 253,
+          "prons": [{"ipa": "/kwiːn/", "senses": [{"pos": "n.", "mean": "[[女王，女首领]]；王后"}]}],
+          "tip": {"type": "联想", "text": "扑克牌中的 Q 就是 queen，代表“女王”。"},
+          "ex": {"type": "例", "en": "She became queen at the age of fifteen.", "zh": "她 15 岁时成为女王。", "key": ["queen"]},
+          "ext": []
+        },
+        {
+          "no": 46, "word": "queue", "freq": 1, "page": 253,
+          "prons": [{"ipa": "/kjuː/", "senses": [
+            {"pos": "n.", "mean": "[[队]]，行列"},
+            {"pos": "v.", "mean": "[[排队]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "女王（queen）出门也会排队（queue），以示亲民。"},
+          "ex": {"type": "例", "en": "There were long queues at polling stations.", "zh": "投票站排起了长队。", "key": ["queues"]},
+          "ext": []
+        }
+      ]
+    }
+  ]
+}

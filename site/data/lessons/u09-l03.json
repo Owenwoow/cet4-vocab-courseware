@@ -1,0 +1,503 @@
+{
+  "id": "u09-l03",
+  "part": 1,
+  "unit": 9,
+  "lesson": 3,
+  "pages": [262, 267],
+  "groups": [
+    {
+      "no": 9,
+      "title": "apply 相关",
+      "pages": [262, 263],
+      "map": {
+        "w": "apply",
+        "children": [
+          {"w": "application", "children": [{"w": "applicant", "children": [{"w": "applicable"}]}]},
+          {"w": "utilise", "children": [{"w": "utilisation", "rel": "扩", "children": [{"w": "utility"}]}]},
+          {"w": "appliance", "children": [
+            {"w": "implement", "rel": "近义", "children": [{"w": "implementation", "rel": "扩"}]}
+          ]},
+          {"w": "supply", "children": [
+            {"w": "supplier", "rel": "扩"},
+            {"w": "supplement", "rel": "相关", "children": [{"w": "supplementary", "rel": "扩"}]},
+            {"w": "provide", "rel": "近义", "children": [
+              {"w": "provision", "rel": "扩"},
+              {"w": "provided", "rel": "加d"}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "apply", "freq": 3, "page": 262,
+          "prons": [{"ipa": "/əˈplaɪ/", "senses": [{"pos": "v.", "mean": "[[申请]]；[[应用，适用]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2016, "en": "They learned about the growth mindset and how to apply it to schoolwork.", "zh": "他们学习了成长型思维模式，以及如何将其应用到学校作业中。", "key": ["apply", "to"]},
+          "ext": [
+            {"word": "application", "ipa": "/ˌæplɪˈkeɪʃn/", "senses": [{"pos": "n.", "mean": "申请；应用"}]},
+            {"word": "applicant", "ipa": "/ˈæplɪkənt/", "senses": [{"pos": "n.", "mean": "申请人"}]}
+          ]
+        },
+        {
+          "no": 2, "word": "utilise", "alt": "-ize", "freq": 1, "page": 262,
+          "prons": [{"ipa": "/ˈjuːtəlaɪz/", "senses": [{"pos": "v.", "mean": "[[利用，使用]]"}]}],
+          "tip": {"type": "联想", "text": "u（联想 use）+ ti（音似“特”）+ l + -ise/-ize（动词后缀）→ 特别使用 → 利用，使用"},
+          "ex": {"type": "例", "en": "Languages that exist today vary dramatically in how they utilise numbers.", "zh": "现存的语言在使用数字的方式上有着巨大的差异。", "key": ["utilise"]},
+          "ext": [
+            {"word": "utilisation", "alt": "-ization", "ipa": "/ˌjuːtəlaɪˈzeɪʃn/", "senses": [{"pos": "n.", "mean": "利用，使用"}]},
+            {"word": "utility", "ipa": "/juːˈtɪləti/", "senses": [{"pos": "n.", "mean": "公共事业，公共服务；实用，有用"}]}
+          ]
+        },
+        {
+          "no": 3, "word": "applicable", "freq": 1, "page": 262,
+          "prons": [{"ipa": "/əˈplɪkəbl; ˈæplɪkəbl/", "senses": [{"pos": "adj.", "mean": "[[适用的]]；合适的"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "It is obvious that this new rule is applicable to everyone without exception.", "zh": "很明显，这条新规则适用于每个人，无一例外。", "key": ["applicable"]},
+          "ext": []
+        },
+        {
+          "no": 4, "word": "appliance", "freq": 2, "page": 262,
+          "prons": [{"ipa": "/əˈplaɪəns/", "senses": [{"pos": "n.", "mean": "[[（家用）电器，器具]]"}]}],
+          "tip": {"type": "对照", "text": "apply v.运用 → appliance n."},
+          "ex": {"type": "例", "en": "Consumers could use appliances in a more efficient way by adjusting the time of cooking.", "zh": "消费者可以调整烹饪时间，从而更有效地使用电器。", "key": ["appliances"]},
+          "ext": []
+        },
+        {
+          "no": 5, "word": "implement", "freq": 2, "page": 262,
+          "prons": [
+            {"ipa": "/ˈɪmplɪment/", "senses": [{"pos": "v.", "mean": "[[实施，执行]]"}]},
+            {"ipa": "/ˈɪmplɪmənt/", "senses": [{"pos": "n.", "mean": "[[工具，器具]]"}]}
+          ],
+          "tip": {"type": "联想", "text": "i（我）+ m（联想“妹”）+ plemen（联想“破了门”）+ t（联想“他”）→ 我妹妹破门而入抓捕他，是在“执行”任务。"},
+          "ex": {"type": "例", "en": "Managers should implement solutions.", "zh": "管理者应该实施解决方案。", "key": ["implement"]},
+          "ext": [{"word": "implementation", "ipa": "/ˌɪmplɪmenˈteɪʃn/", "senses": [{"pos": "n.", "mean": "实施，履行"}]}]
+        },
+        {
+          "no": 6, "word": "supply", "freq": 3, "page": 262,
+          "prons": [{"ipa": "/səˈplaɪ/", "senses": [
+            {"pos": "v.", "mean": "[[供应]]；满足（需要）；[[提供，供给]]"},
+            {"pos": "n.", "mean": "[[供应]]；[[存货]]；必需品"}
+          ]}],
+          "tip": {"type": "对照", "text": "这家餐厅经常提供（supply）免费晚饭（supper）。"},
+          "ex": {"type": "例", "en": "Advances in agriculture increased the food supply.", "zh": "农业的进步增加了粮食供应。", "key": ["supply"]},
+          "ext": [{"word": "supplier", "ipa": "/səˈplaɪə(r)/", "senses": [{"pos": "n.", "mean": "供应者；供货商；供货方"}]}]
+        },
+        {
+          "no": 7, "word": "supplement", "freq": 1, "page": 262,
+          "prons": [
+            {"ipa": "/ˈsʌplɪmənt/", "senses": [{"pos": "n.", "mean": "[[补充（物）]]；[[添加物]]"}]},
+            {"ipa": "/ˈsʌplɪment/", "senses": [{"pos": "v.", "mean": "[[增补]]；[[补充]]"}]}
+          ],
+          "tip": {"type": "对照", "text": "supply v.供应 → supplement n."},
+          "ex": {"type": "例", "en": "He used a potent ingredient in a food supplement.", "zh": "他在食品补充剂中使用了一种强效成分。", "key": ["supplement"]},
+          "ext": [{"word": "supplementary", "ipa": "/ˌsʌplɪˈmentri/", "senses": [{"pos": "adj.", "mean": "增补的，附加的"}]}]
+        },
+        {
+          "no": 8, "word": "provide", "freq": 1, "page": 263,
+          "prons": [{"ipa": "/prəˈvaɪd/", "senses": [{"pos": "v.", "mean": "[[提供，供给]]；给予；规定"}]}],
+          "tip": {"type": "联想", "text": "pro-（提前）+ vi（形似罗马数字 6）+ de（联想“的”）→ 我们六个提前去那个人的家，给他“提供”了一些食物。"},
+          "ex": {"type": "真", "year": 2019, "en": "They provide shelter for the farmers.", "zh": "他们为农民提供住所。", "key": ["provide"]},
+          "ext": [{"word": "provision", "ipa": "/prəˈvɪʒn/", "senses": [{"pos": "n.", "mean": "供给；供应品；规定；条款"}]}]
+        },
+        {
+          "no": 9, "word": "provided", "freq": 1, "page": 263,
+          "prons": [{"ipa": "/prəˈvaɪdɪd/", "senses": [{"pos": "conj.", "mean": "[[如果，假如]]，只要"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "We'll buy everything you produce, provided of course the price is right.", "zh": "当然如果价格合适的话，我们将采购你方生产的全部产品。", "key": ["provided"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 10,
+      "title": "tend 相关",
+      "pages": [263, 265],
+      "map": {
+        "w": "tend",
+        "children": [
+          {"w": "tendency", "children": [{"w": "trend", "rel": "近义"}]},
+          {"w": "attend", "children": [{"w": "attendance", "rel": "扩", "children": [{"w": "attendant"}]}]},
+          {"w": "contend"},
+          {"w": "intend", "children": [{"w": "intent", "rel": "扩", "children": [{"w": "intention", "children": [{"w": "intentional"}]}]}]},
+          {"w": "extend", "children": [
+            {"w": "extension", "rel": "扩"},
+            {"w": "extended", "rel": "扩"},
+            {"w": "extensive", "rel": "扩"},
+            {"w": "stretch", "rel": "近义"},
+            {"w": "extent", "rel": "形近"}
+          ]},
+          {"w": "pretend", "children": [
+            {"w": "pretence", "rel": "扩"},
+            {"w": "disguise", "rel": "近义"},
+            {"w": "fake", "rel": "近义", "children": [{"w": "imitate", "rel": "近义", "children": [
+              {"w": "imitation", "rel": "扩"},
+              {"w": "imitative", "rel": "扩"}
+            ]}]},
+            {"w": "simulate", "rel": "近义", "children": [
+              {"w": "stimulate", "rel": "形近", "children": [
+                {"w": "stimulant", "rel": "扩"},
+                {"w": "stimulation", "rel": "扩"},
+                {"w": "stimulus", "rel": "扩"},
+                {"w": "spur", "rel": "近义"}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 10, "word": "tend", "freq": 1, "page": 263,
+          "prons": [{"ipa": "/tend/", "senses": [{"pos": "v.", "mean": "[[趋向于]]；往往会"}]}],
+          "tip": {"type": "对照", "text": "我们做不到十（ten）全十美，只能趋向于（tend）完美。"},
+          "ex": {"type": "真", "year": 2019, "en": "People who prioritise breakfasts tend to have lower calorie but higher nutritional intake.", "zh": "优先吃早餐的人往往摄入的热量较低，但营养较高。", "key": ["tend"]},
+          "ext": []
+        },
+        {
+          "no": 11, "word": "tendency", "freq": 2, "page": 263,
+          "prons": [{"ipa": "/ˈtendənsi/", "senses": [{"pos": "n.", "mean": "[[倾向]]，偏好；[[趋势]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2022, "en": "Great benefit and great harm can come from the same human tendency.", "zh": "同样的人类倾向可能带来巨大的利益，也可能带来巨大的危害。", "key": ["tendency"]},
+          "ext": []
+        },
+        {
+          "no": 12, "word": "trend", "freq": 3, "page": 263,
+          "prons": [{"ipa": "/trend/", "senses": [{"pos": "n.", "mean": "倾向，[[趋势]]"}]}],
+          "tip": {"type": "联想", "text": "tren（音似“穿”）+ d（联想“搭”）→ 潮人会按照流行“趋势”来穿搭。"},
+          "ex": {"type": "例", "en": "This is not necessarily a new trend, but it is a somewhat puzzling one.", "zh": "这未必是一种新趋势，但多少有点令人费解。", "key": ["trend"]},
+          "ext": []
+        },
+        {
+          "no": 13, "word": "extend", "freq": 2, "page": 263,
+          "prons": [{"ipa": "/ɪkˈstend/", "senses": [{"pos": "v.", "mean": "[[延长，延伸]]，伸展"}]}],
+          "tip": {"type": "构词", "text": "ex-（外）+ tend（伸）→ 往外延伸 → 延长，伸展"},
+          "ex": {"type": "例", "en": "Their average lifespan has been considerably extended.", "zh": "它们的平均寿命大大延长。", "key": ["extended"]},
+          "ext": [
+            {"word": "extension", "ipa": "/ɪkˈstenʃn/", "senses": [{"pos": "n.", "mean": "伸展，延伸；扩建部分"}]},
+            {"word": "extended", "ipa": "/ɪkˈstendɪd/", "senses": [{"pos": "adj.", "mean": "延长了的；扩展了的"}]},
+            {"word": "extensive", "ipa": "/ɪkˈstensɪv/", "senses": [{"pos": "adj.", "mean": "广阔的；大量的；广泛的"}]}
+          ]
+        },
+        {
+          "no": 14, "word": "stretch", "freq": 2, "page": 263,
+          "prons": [{"ipa": "/stretʃ/", "senses": [
+            {"pos": "v.", "mean": "[[伸展]]；[[延伸]]"},
+            {"pos": "n.", "mean": "[[伸展]]；弹性"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“死拽扯”→ 他伸出手臂死死地扯拽对方 → 伸展"},
+          "ex": {"type": "例", "en": "She stretched up to reach the top shelf.", "zh": "她伸手向上去够顶层架子。", "key": ["stretched"]},
+          "ext": []
+        },
+        {
+          "no": 15, "word": "extent", "freq": 3, "page": 264,
+          "prons": [{"ipa": "/ɪkˈstent/", "senses": [{"pos": "n.", "mean": "[[广度，宽度，长度]]；[[程度]]；[[范围]]"}]}],
+          "tip": {"type": "构词", "text": "ex-（出）+ tent（= tend，伸）→ 程度；范围"},
+          "ex": {"type": "例", "en": "I do agree with him to an extent.", "zh": "我在一定程度上确实同意他的意见。", "key": ["to an extent"]},
+          "ext": []
+        },
+        {
+          "no": 16, "word": "attend", "freq": 1, "page": 264,
+          "prons": [{"ipa": "/əˈtend/", "senses": [{"pos": "v.", "mean": "[[出席，参加]]；照顾；[[注意，专心]]"}]}],
+          "tip": {"type": "构词", "text": "at-（表加强）+ tend（伸）→（身体）延伸至某处 → 参加"},
+          "ex": {"type": "真", "year": 2022, "en": "Offering online classes certainly helps students who would otherwise not be able to attend classroom sessions.", "zh": "提供在线课程当然可以帮助那些无法参加课堂教学的学生。", "key": ["attend"]},
+          "ext": [
+            {"word": "attendance", "ipa": "/əˈtendəns/", "senses": [{"pos": "n.", "mean": "出席，参加；照顾"}]},
+            {"word": "attendant", "ipa": "/əˈtendənt/", "senses": [{"pos": "n.", "mean": "随从；服务员"}, {"pos": "adj.", "mean": "伴随的"}]}
+          ]
+        },
+        {
+          "no": 17, "word": "contend", "freq": 1, "page": 264,
+          "prons": [{"ipa": "/kənˈtend/", "senses": [{"pos": "v.", "mean": "[[主张，认为]]；[[竞争]]"}]}],
+          "tip": {"type": "构词", "text": "con-（共同）+ tend（伸）→ 共同伸向 → 主张"},
+          "ex": {"type": "例", "en": "I would contend that the minister's thinking is flawed on this point.", "zh": "我倒认为部长的想法在这一点上有漏洞。", "key": ["contend"]},
+          "ext": []
+        },
+        {
+          "no": 18, "word": "intend", "freq": 1, "page": 264,
+          "prons": [{"ipa": "/ɪnˈtend/", "senses": [{"pos": "v.", "mean": "[[打算，想要]]；意指"}]}],
+          "tip": {"type": "构词", "text": "in（里面）+ tend（伸）→（想法）在里面（内心）延伸 → 打算"},
+          "ex": {"type": "例", "en": "It intends to keep its traditional diet.", "zh": "它打算保持传统饮食。", "key": ["intends"]},
+          "ext": []
+        },
+        {
+          "no": 19, "word": "intention", "freq": 3, "page": 264,
+          "prons": [{"ipa": "/ɪnˈtenʃn/", "senses": [{"pos": "n.", "mean": "[[打算，意图]]，目的"}]}],
+          "tip": {"type": "对照", "text": "intend v.打算，想要 → intention n."},
+          "ex": {"type": "真", "year": 2020, "en": "The intention to put a home-cooked meal on the table was pretty much universal.", "zh": "把家常菜摆上餐桌的意图几乎是普遍的。", "key": ["intention"]},
+          "ext": [
+            {"word": "intent", "ipa": "/ɪnˈtent/", "senses": [{"pos": "n.", "mean": "意图，目的"}, {"pos": "adj.", "mean": "热切的；专注的"}]},
+            {"word": "intentional", "ipa": "/ɪnˈtenʃənl/", "senses": [{"pos": "adj.", "mean": "有意的，故意的"}]}
+          ]
+        },
+        {
+          "no": 20, "word": "pretend", "freq": 1, "page": 264,
+          "prons": [{"ipa": "/prɪˈtend/", "senses": [{"pos": "v.", "mean": "[[假装，佯装]]；模拟；自认为"}]}],
+          "tip": {"type": "构词", "text": "pre-（提前）+ tend（伸）→ 提前伸展，行为超出实际 → 假装"},
+          "ex": {"type": "例", "en": "He pretended not to notice.", "zh": "他假装没注意。", "key": ["pretended"]},
+          "ext": [{"word": "pretence", "alt": "-se", "ipa": "/prɪˈtens/", "senses": [{"pos": "n.", "mean": "假象；伪装；自称"}]}]
+        },
+        {
+          "no": 21, "word": "disguise", "freq": 1, "page": 264,
+          "prons": [{"ipa": "/dɪsˈɡaɪz/", "senses": [
+            {"pos": "v.", "mean": "[[假扮]]；装扮；伪装"},
+            {"pos": "n.", "mean": "伪装物"}
+          ]}],
+          "tip": {"type": "联想", "text": "dis（音似“弟似”）+ gui（联想“鬼”）+ se（联想“色”）→ 万圣节弟弟“装扮”得好似个鬼，把我吓得脸色苍白。"},
+          "ex": {"type": "例", "en": "She disguised herself as a boy.", "zh": "她女扮男装。", "key": ["disguised"]},
+          "ext": []
+        },
+        {
+          "no": 22, "word": "fake", "freq": 1, "page": 264,
+          "prons": [{"ipa": "/feɪk/", "senses": [
+            {"pos": "adj.", "mean": "[[假的]]；伪造的"},
+            {"pos": "n.", "mean": "假货"},
+            {"pos": "v.", "mean": "伪造；冒充；假装，伪装"}
+          ]}],
+          "tip": {"type": "联想", "text": "fa（联想 father）+ ke（联想“磕”）→ 爸爸“假装”磕到了，想吸引儿女注意。"},
+          "ex": {"type": "真", "year": 2022, "en": "The fake websites have authentic-sounding names involving a mix of keywords.", "zh": "这些假冒网站的名字听起来很真实，其中包含多个关键字。", "key": ["fake"]},
+          "ext": []
+        },
+        {
+          "no": 23, "word": "simulate", "freq": 1, "page": 264,
+          "prons": [{"ipa": "/ˈsɪmjuleɪt/", "senses": [{"pos": "v.", "mean": "[[模仿，模拟]]；假装"}]}],
+          "tip": {"type": "联想", "text": "simu（联想“四目”）+ late（迟到）→ 班长“假装”有四只眼睛，能抓住从各个方向跑来的迟到者。"},
+          "ex": {"type": "真", "year": 2019, "en": "Over the centuries, they have simulated dialogues in a number of ways.", "zh": "几个世纪以来，他们以多种方式模拟对话。", "key": ["simulated"]},
+          "ext": []
+        },
+        {
+          "no": 24, "word": "stimulate", "freq": 2, "page": 265,
+          "prons": [{"ipa": "/ˈstɪmjuleɪt/", "senses": [{"pos": "v.", "mean": "[[促进]]；[[激发]]；激励；[[刺激]]"}]}],
+          "tip": {"type": "对照", "text": "同桌一个劲地模仿（simulate）他（t），他就受刺激（stimulate）了。"},
+          "ex": {"type": "例", "en": "The teacher is able to stimulate students' curiosity.", "zh": "这位老师能激发学生的好奇心。", "key": ["stimulate"]},
+          "ext": [
+            {"word": "stimulant", "ipa": "/ˈstɪmjələnt/", "senses": [{"pos": "n.", "mean": "兴奋剂"}]},
+            {"word": "stimulation", "ipa": "/ˌstɪmjuˈleɪʃn/", "senses": [{"pos": "n.", "mean": "刺激；激发；启发；促进"}]},
+            {"word": "stimulus", "ipa": "/ˈstɪmjələs/", "senses": [{"pos": "n.", "mean": "刺激；激励；刺激物"}]}
+          ]
+        },
+        {
+          "no": 25, "word": "spur", "freq": 2, "page": 265,
+          "prons": [{"ipa": "/spɜː(r)/", "senses": [
+            {"pos": "v.", "mean": "[[鞭策]]；[[激励]]；[[刺激]]"},
+            {"pos": "n.", "mean": "马刺；[[鞭策]]；[[激励]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“死破”→ 尽管他的衣服很破，但他坚持“鞭策”自己努力学习。"},
+          "ex": {"type": "例", "en": "Let the cheers from the crowd spur you on.", "zh": "让人群的欢呼声激励你前进。", "key": ["spur"]},
+          "ext": []
+        },
+        {
+          "no": 26, "word": "imitate", "freq": 2, "page": 265,
+          "prons": [{"ipa": "/ˈɪmɪteɪt/", "senses": [{"pos": "v.", "mean": "[[模仿，仿制]]"}]}],
+          "tip": {"type": "联想", "text": "i（我）+ m（联想“门”）+ it（联想“它”）+ ate（eat 的过去式）→ 我小时候会“模仿”门外的它（小动物）吃东西。"},
+          "ex": {"type": "真", "year": 2023, "en": "The dancers move in harmony as they imitate the animal's natural movements in the wild.", "zh": "舞者们在模仿野生动物的自然动作时，动作很和谐。", "key": ["imitate"]},
+          "ext": [
+            {"word": "imitation", "ipa": "/ˌɪmɪˈteɪʃn/", "senses": [{"pos": "n.", "mean": "模仿；仿制品"}]},
+            {"word": "imitative", "ipa": "/ˈɪmɪtətɪv/", "senses": [{"pos": "adj.", "mean": "模仿的；仿制的；仿效的"}]}
+          ]
+        }
+      ]
+    },
+    {
+      "no": 11,
+      "title": "“方便”相关",
+      "pages": [265, 266],
+      "map": {
+        "w": "“方便”相关",
+        "children": [
+          {"w": "convenience"},
+          {"w": "handy", "children": [{"w": "handwriting", "rel": "相关"}]},
+          {"w": "convince", "children": [
+            {"w": "convincing", "rel": "扩", "children": [
+              {"w": "lobby", "rel": "相关", "children": [{"w": "lobbyist", "rel": "扩"}]},
+              {"w": "doubtful", "rel": "相关", "children": [
+                {"w": "doubt", "rel": "扩"},
+                {"w": "doubtless", "rel": "扩"},
+                {"w": "undoubtedly", "rel": "扩"}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 27, "word": "convenience", "freq": 2, "page": 265,
+          "prons": [{"ipa": "/kənˈviːniəns/", "senses": [{"pos": "n.", "mean": "[[方便，便利]]；方便的东西"}]}],
+          "tip": {"type": "联想", "text": "con-（都）+ venien（音似“为您”）+ ce → 他做这一切都是为了您的“方便”。"},
+          "ex": {"type": "例", "en": "A growing number of bike riders are attracted to electric bikes for convenience.", "zh": "越来越多的自行车爱好者被电动自行车所吸引，因为它们方便。", "key": ["convenience"]},
+          "ext": [{"word": "convenient", "ipa": "/kənˈviːniənt/", "senses": [{"pos": "adj.", "mean": "方便的"}]}]
+        },
+        {
+          "no": 28, "word": "handy", "freq": 1, "page": 265,
+          "prons": [{"ipa": "/ˈhændi/", "senses": [{"pos": "adj.", "mean": "[[手边的]]；[[便于使用的，方便的]]"}]}],
+          "tip": {"type": "对照", "text": "那本书就在你的手（hand）边，非常方便（handy）拿取。"},
+          "ex": {"type": "例", "en": "Always keep a first-aid kit handy.", "zh": "手边要常备急救箱。", "key": ["handy"]},
+          "ext": []
+        },
+        {
+          "no": 29, "word": "handwriting", "freq": 2, "page": 265,
+          "prons": [{"ipa": "/ˈhændraɪtɪŋ/", "senses": [{"pos": "n.", "mean": "[[手写，书写]]；笔迹；[[书法]]"}]}],
+          "tip": {"type": "构词", "text": "hand（手）+ writing（写）→ 手写"},
+          "ex": {"type": "例", "en": "His handwriting has a unique style.", "zh": "他的书法风格独特。", "key": ["handwriting"]},
+          "ext": []
+        },
+        {
+          "no": 30, "word": "convince", "freq": 2, "page": 265,
+          "prons": [{"ipa": "/kənˈvɪns/", "senses": [{"pos": "v.", "mean": "[[使确信]]；[[使相信]]；使信服；说服"}]}],
+          "tip": {"type": "构词", "text": "con-（一起，共同）+ vinc(e)（征服）→ 使相信"},
+          "ex": {"type": "例", "en": "It convinced the public that fashionable clothes should be made durable.", "zh": "它使公众相信，时尚的衣服应该经久耐穿。", "key": ["convinced"]},
+          "ext": [{"word": "convincing", "ipa": "/kənˈvɪnsɪŋ/", "senses": [{"pos": "adj.", "mean": "令人信服的；有说服力的"}]}]
+        },
+        {
+          "no": 31, "word": "lobby", "freq": 2, "page": 266,
+          "prons": [{"ipa": "/ˈlɒbi/", "senses": [
+            {"pos": "v.", "mean": "[[游说]]"},
+            {"pos": "n.", "mean": "游说团体；[[大厅]]；（英国议会中的）民众接待厅"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“老辈”→ 有些老一辈的人经常“游说”年轻人。"},
+          "ex": {"type": "例", "en": "Farmers will lobby Congress for higher subsidies.", "zh": "农民将游说国会提高补贴。", "key": ["lobby"]},
+          "ext": [{"word": "lobbyist", "ipa": "/ˈlɒbiɪst/", "senses": [{"pos": "n.", "mean": "说客"}]}]
+        },
+        {
+          "no": 32, "word": "doubtful", "freq": 2, "page": 266,
+          "prons": [{"ipa": "/ˈdaʊtfl/", "senses": [{"pos": "adj.", "mean": "拿不定主意的；[[不确定的]]；[[怀疑的]]"}]}],
+          "tip": {"type": "构词", "text": "doubt（怀疑）+ -ful（形容词后缀）→ 不确定的；怀疑的"},
+          "ex": {"type": "真", "year": 2019, "en": "Americans are less doubtful when it comes to politics.", "zh": "美国人在政治问题上没有那么多疑。", "key": ["doubtful"]},
+          "ext": [
+            {"word": "doubt", "ipa": "/daʊt/", "senses": [{"pos": "n.", "mean": "疑惑；不确定"}, {"pos": "v.", "mean": "怀疑"}]},
+            {"word": "doubtless", "ipa": "/ˈdaʊtləs/", "senses": [{"pos": "adv.", "mean": "无疑地，肯定地"}]},
+            {"word": "undoubtedly", "ipa": "/ʌnˈdaʊtɪdli/", "senses": [{"pos": "adv.", "mean": "无疑地，肯定地"}]}
+          ]
+        }
+      ]
+    },
+    {
+      "no": 12,
+      "title": "disaster 相关",
+      "pages": [266, 267],
+      "map": {
+        "w": "disaster",
+        "children": [
+          {"w": "disastrous"},
+          {"w": "famine", "children": [
+            {"w": "vague", "rel": "相关", "children": [
+              {"w": "dim", "rel": "近义", "children": [{"w": "blur", "rel": "相关"}]}
+            ]}
+          ]},
+          {"w": "volcano", "children": [
+            {"w": "volcanic", "rel": "扩"},
+            {"w": "district", "rel": "相关", "children": [
+              {"w": "disgust", "rel": "dis", "children": [{"w": "disgusting", "rel": "扩"}]},
+              {"w": "disturb", "rel": "dis", "children": [{"w": "disturbance", "rel": "扩"}]}
+            ]},
+            {"w": "dimension", "rel": "相关", "children": [
+              {"w": "dimensional", "rel": "扩"},
+              {"w": "column", "rel": "相关", "children": [{"w": "columnist", "rel": "扩"}]},
+              {"w": "anchor", "rel": "相关", "children": [{"w": "ankle", "rel": "音近"}]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 33, "word": "disaster", "freq": 1, "page": 266,
+          "prons": [{"ipa": "/dɪˈzɑːstə(r)/", "senses": [{"pos": "n.", "mean": "[[灾难]]，灾祸"}]}],
+          "tip": {"type": "构词", "text": "dis-（表否定）+ aster（= star）→ 以前的人认为，星位不正预示着可能有“灾难”。"},
+          "ex": {"type": "例", "en": "Natural disasters can wreck a community's infrastructure.", "zh": "自然灾害可以摧毁一个社区的基础设施。", "key": ["disasters"]},
+          "ext": [{"word": "disastrous", "ipa": "/dɪˈzɑːstrəs/", "senses": [{"pos": "adj.", "mean": "极糟糕的；灾难性的；完全失败的"}]}]
+        },
+        {
+          "no": 34, "word": "famine", "freq": 1, "page": 266,
+          "prons": [{"ipa": "/ˈfæmɪn/", "senses": [{"pos": "n.", "mean": "[[饥荒]]，饥饿"}]}],
+          "tip": {"type": "联想", "text": "fa（联想“发”）+ mi（联想“米”）+ ne（联想“呢”）→ 这里闹“饥荒”了，政府在发米呢。"},
+          "ex": {"type": "例", "en": "Occurrences of shortages and droughts are causing famine and distress in some areas.", "zh": "（粮食）短缺和干旱的发生正在一些地区造成饥荒和灾难。", "key": ["famine"]},
+          "ext": []
+        },
+        {
+          "no": 35, "word": "volcano", "freq": 1, "page": 266,
+          "prons": [{"ipa": "/vɒlˈkeɪnəʊ/", "senses": [{"pos": "n.", "mean": "[[火山]]"}]}],
+          "tip": {"type": "联想", "text": "vol（音似“我”）+ can（能）+ o（形似圈）→ 我能圈出地图上的“火山”。"},
+          "ex": {"type": "例", "en": "They nest on the volcano's slopes.", "zh": "它们在火山的斜坡上筑巢。", "key": ["volcano's"]},
+          "ext": [{"word": "volcanic", "ipa": "/vɒlˈkænɪk/", "senses": [{"pos": "adj.", "mean": "火山的；火山引起的；火山产生的"}]}]
+        },
+        {
+          "no": 36, "word": "vague", "freq": 1, "page": 266,
+          "prons": [{"ipa": "/veɪɡ/", "senses": [{"pos": "adj.", "mean": "[[模糊的]]，不清楚的"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“喂，哥”→ 他打电话时一直喊“喂，哥！”，因为电话听不清楚 → 模糊的，不清楚的"},
+          "ex": {"type": "真", "year": 2021, "en": "Most people will be able to give a vague description of their main meals.", "zh": "大多数人都能对他们的主餐进行一个模糊的描述。", "key": ["vague"]},
+          "ext": []
+        },
+        {
+          "no": 37, "word": "blur", "freq": 1, "page": 267,
+          "prons": [{"ipa": "/blɜː(r)/", "senses": [
+            {"pos": "n.", "mean": "[[模糊的记忆]]"},
+            {"pos": "v.", "mean": "[[（使）变得模糊不清]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“不乐”→ 这个老人不太快乐，因为他看东西有点模糊 → （使）变得模糊不清"},
+          "ex": {"type": "例", "en": "Tears blurred her eyes.", "zh": "泪水模糊了她的视线。", "key": ["blurred"]},
+          "ext": []
+        },
+        {
+          "no": 38, "word": "dim", "freq": 1, "page": 267,
+          "prons": [{"ipa": "/dɪm/", "senses": [{"pos": "adj.", "mean": "[[昏暗的]]；朦胧的；[[模糊的，不清楚的]]"}]}],
+          "tip": {"type": "联想", "text": "di-（= bi-，两个）+ m（联想“妹”）→ “昏暗的”夜色下，我把一个妹妹看成两个了。"},
+          "ex": {"type": "例", "en": "This light is too dim to read by.", "zh": "这光线太暗，看不了书。", "key": ["dim"]},
+          "ext": []
+        },
+        {
+          "no": 39, "word": "district", "freq": 1, "page": 267,
+          "prons": [{"ipa": "/ˈdɪstrɪkt/", "senses": [{"pos": "n.", "mean": "[[区]]；[[地区]]，区域"}]}],
+          "tip": {"type": "联想", "text": "di-（两个）+ strict（严格）→ 重庆和北京两个“地区”的安检都很严格。"},
+          "ex": {"type": "例", "en": "The school district was facing a crisis.", "zh": "这个学区正面临危机。", "key": ["district"]},
+          "ext": []
+        },
+        {
+          "no": 40, "word": "disgust", "freq": 1, "page": 267,
+          "prons": [{"ipa": "/dɪsˈɡʌst/", "senses": [
+            {"pos": "n.", "mean": "[[厌恶，恶心，反感]]"},
+            {"pos": "v.", "mean": "[[使人厌恶，使人作呕]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "dis-（不）+ gu（联想“姑”）+ st（联想 street）→ 姑姑从不在街上吃小吃，她认为那样不文雅 → 厌恶，反感"},
+          "ex": {"type": "例", "en": "He walked away in disgust.", "zh": "他厌恶地走开了。", "key": ["disgust"]},
+          "ext": [{"word": "disgusting", "ipa": "/dɪsˈɡʌstɪŋ/", "senses": [{"pos": "adj.", "mean": "使人厌恶的，令人作呕的"}]}]
+        },
+        {
+          "no": 41, "word": "disturb", "freq": 2, "page": 267,
+          "prons": [{"ipa": "/dɪˈstɜːb/", "senses": [{"pos": "v.", "mean": "[[打扰]]；使烦恼"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“弟是特不”→ 弟弟真是特别不懂事，总是“打扰”别人。"},
+          "ex": {"type": "例", "en": "If you get up early, try not to disturb everyone else.", "zh": "如果你起得早，尽量不要打扰别人。", "key": ["disturb"]},
+          "ext": [{"word": "disturbance", "ipa": "/dɪˈstɜːbəns/", "senses": [{"pos": "n.", "mean": "（受）干扰；骚乱"}]}]
+        },
+        {
+          "no": 42, "word": "dimension", "freq": 1, "page": 267,
+          "prons": [{"ipa": "/daɪˈmenʃn; dɪˈmenʃn/", "senses": [{"pos": "n.", "mean": "[[维度，范围，规模，尺寸]]"}]}],
+          "tip": {"type": "联想", "text": "di-（两个）+ mension（音似“门神”）→ 春节时我家门上要贴两个“尺寸”一样的门神。"},
+          "ex": {"type": "例", "en": "We measured the dimensions of the kitchen.", "zh": "我们量了厨房的尺寸。", "key": ["dimensions"]},
+          "ext": [{"word": "dimensional", "ipa": "/daɪˈmenʃənl/", "senses": [{"pos": "adj.", "mean": "尺寸的；维度的"}]}]
+        },
+        {
+          "no": 43, "word": "column", "freq": 2, "page": 267,
+          "prons": [{"ipa": "/ˈkɒləm/", "senses": [{"pos": "n.", "mean": "[[柱，圆柱]]；[[专栏]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“靠了门”→ 靠在门两边的柱子，通常都是“圆柱”。"},
+          "ex": {"type": "例", "en": "She might close his Monday column.", "zh": "她可能会关闭他周一的专栏。", "key": ["column"]},
+          "ext": [{"word": "columnist", "ipa": "/ˈkɒləmnɪst/", "senses": [{"pos": "n.", "mean": "专栏作家"}]}]
+        },
+        {
+          "no": 44, "word": "anchor", "freq": 1, "page": 267,
+          "prons": [{"ipa": "/ˈæŋkə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[锚]]；支柱"},
+            {"pos": "v.", "mean": "[[抛锚]]；使固定"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“安个”→ 安装个“锚”，可以让船停靠得更稳定。"},
+          "ex": {"type": "例", "en": "They cast anchor at nightfall.", "zh": "他们傍晚抛锚停泊。", "key": ["anchor"]},
+          "ext": []
+        },
+        {
+          "no": 45, "word": "ankle", "freq": 1, "page": 267,
+          "prons": [{"ipa": "/ˈæŋkl/", "senses": [{"pos": "n.", "mean": "[[踝，踝关节]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“俺磕”→ 俺磕到脚“踝”了。"},
+          "ex": {"type": "例", "en": "She broke her ankle.", "zh": "她摔断了踝关节。", "key": ["ankle"]},
+          "ext": []
+        }
+      ]
+    }
+  ]
+}

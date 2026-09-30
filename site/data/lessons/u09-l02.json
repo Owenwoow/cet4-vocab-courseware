@@ -1,0 +1,2912 @@
+{
+ "id": "u09-l02",
+ "part": 1,
+ "unit": 9,
+ "lesson": 2,
+ "pages": [
+  254,
+  261
+ ],
+ "groups": [
+  {
+   "no": 5,
+   "title": "“人类品质”相关",
+   "pages": [
+    254,
+    256
+   ],
+   "map": {
+    "w": "“人类品质”相关",
+    "children": [
+     {
+      "w": "considerate",
+      "children": [
+       {
+        "w": "consider",
+        "rel": "扩",
+        "children": [
+         {
+          "w": "considering",
+          "children": [
+           {
+            "w": "considerable",
+            "children": [
+             {
+              "w": "consideration"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "w": "diligent",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "diligence",
+          "rel": "扩"
+         },
+         {
+          "w": "labour",
+          "rel": "相关"
+         }
+        ]
+       },
+       {
+        "w": "frank",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "honesty",
+          "rel": "相关"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "ethic",
+      "children": [
+       {
+        "w": "ethics",
+        "rel": "扩",
+        "children": [
+         {
+          "w": "ethnic",
+          "rel": "形近",
+          "children": [
+           {
+            "w": "racial",
+            "rel": "近义",
+            "children": [
+             {
+              "w": "racist",
+              "rel": "扩"
+             },
+             {
+              "w": "race",
+              "rel": "扩"
+             },
+             {
+              "w": "racism",
+              "rel": "扩"
+             }
+            ]
+           },
+           {
+            "w": "radical",
+            "rel": "相关",
+            "children": [
+             {
+              "w": "radically",
+              "rel": "扩"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "w": "moral",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "morality",
+          "rel": "扩"
+         },
+         {
+          "w": "oral",
+          "rel": "去m"
+         },
+         {
+          "w": "merit",
+          "rel": "相关",
+          "children": [
+           {
+            "w": "meritorious",
+            "rel": "扩"
+           },
+           {
+            "w": "virtue",
+            "rel": "近义",
+            "children": [
+             {
+              "w": "virtuous",
+              "rel": "扩"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "w": "obey",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "obedient",
+          "rel": "扩"
+         },
+         {
+          "w": "obedience",
+          "rel": "扩"
+         },
+         {
+          "w": "violate",
+          "rel": "反义",
+          "children": [
+           {
+            "w": "violation",
+            "rel": "扩"
+           },
+           {
+            "w": "defy",
+            "rel": "近义",
+            "children": [
+             {
+              "w": "defiance",
+              "rel": "扩"
+             },
+             {
+              "w": "defiant",
+              "rel": "扩"
+             }
+            ]
+           },
+           {
+            "w": "isolate",
+            "rel": "相关",
+            "children": [
+             {
+              "w": "isolation",
+              "rel": "扩"
+             }
+            ]
+           },
+           {
+            "w": "via",
+            "rel": "音似"
+           },
+           {
+            "w": "violent",
+            "rel": "音似",
+            "children": [
+             {
+              "w": "violence",
+              "rel": "扩"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "entries": [
+    {
+     "no": 1,
+     "word": "considerate",
+     "freq": 1,
+     "page": 254,
+     "prons": [
+      {
+       "ipa": "/kənˈsɪdərət/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[考虑周到的]]；为（他人）着想的；[[体贴的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "consider（考虑）+ ate（eat 的过去式）→ 连吃都考虑到了 → 考虑周到的；体贴的"
+     },
+     "ex": {
+      "type": "例",
+      "en": "It was very considerate of him to wait.",
+      "zh": "他一直在等候着，真是体贴。",
+      "key": [
+       "considerate"
+      ]
+     },
+     "ext": [
+      {
+       "word": "consider",
+       "ipa": "/kənˈsɪdə(r)/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "仔细考虑；认为；觉得"
+        }
+       ]
+      },
+      {
+       "word": "considering",
+       "ipa": "/kənˈsɪdərɪŋ/",
+       "senses": [
+        {
+         "pos": "prep. & conj.",
+         "mean": "考虑到；就……而言；鉴于"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "word": "considerable",
+     "freq": 2,
+     "page": 254,
+     "prons": [
+      {
+       "ipa": "/kənˈsɪdərəbl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[相当多的]]；[[相当大的]]；[[可以考虑的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "consider（考虑）+ -able（能够……的）→ 可以考虑的"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The project wasted a considerable amount of time and money.",
+      "zh": "那项工程耗费了相当多的时间和资金。",
+      "key": [
+       "considerable"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 3,
+     "word": "consideration",
+     "freq": 2,
+     "page": 254,
+     "prons": [
+      {
+       "ipa": "/kənˌsɪdəˈreɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[仔细考虑]]；[[斟酌]]；必须考虑的事"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "consider（考虑）+ -ation（名词后缀）→ 仔细考虑；斟酌"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Her ideas are worthy of serious consideration.",
+      "zh": "她的想法值得仔细考虑。",
+      "key": [
+       "consideration"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 4,
+     "word": "diligent",
+     "freq": 1,
+     "page": 254,
+     "prons": [
+      {
+       "ipa": "/ˈdɪlɪdʒənt/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[勤劳的，勤奋的]]；细致的；潜心的"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "di（音似“弟”）+ ligen（音似“历尽”）+ t（联想“他”）→ “勤奋的”弟弟历尽艰辛，终于考进了他理想的大学。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Such a brilliant and diligent girl! She deserves it.",
+      "zh": "多么聪明、勤奋的女孩！她值得。",
+      "key": [
+       "diligent"
+      ]
+     },
+     "ext": [
+      {
+       "word": "diligence",
+       "ipa": "/ˈdɪlɪdʒəns/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "勤劳，勤奋，用功"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "word": "labour",
+     "alt": "labor",
+     "freq": 1,
+     "page": 254,
+     "prons": [
+      {
+       "ipa": "/ˈleɪbə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "劳动；工作；[[劳动力]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“累不”→ 正在“劳动”的你累不累？"
+     },
+     "ex": {
+      "type": "例",
+      "en": "It created a pool of labour for factories.",
+      "zh": "它为工厂创造了大量劳动力。",
+      "key": [
+       "labour"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 6,
+     "word": "frank",
+     "freq": 1,
+     "page": 254,
+     "prons": [
+      {
+       "ipa": "/fræŋk/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[坦白的，直率的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "弗兰克（Frank）是一个直率的（frank）孩子。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "What is needed is a frank exchange of views.",
+      "zh": "（我们）需要的是坦诚的意见交换。",
+      "key": [
+       "frank"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 7,
+     "word": "honesty",
+     "freq": 1,
+     "page": 255,
+     "prons": [
+      {
+       "ipa": "/ˈɒnəsti/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[诚实]]；[[老实]]；[[正直]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "honest adj.诚实的 → honesty n."
+     },
+     "ex": {
+      "type": "例",
+      "en": "She answered all my questions with her usual honesty.",
+      "zh": "她像平常一样老老实实地回答了我的所有问题。",
+      "key": [
+       "honesty"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 8,
+     "word": "moral",
+     "freq": 1,
+     "page": 255,
+     "prons": [
+      {
+       "ipa": "/ˈmɒrəl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[道德的]]；[[品行端正的]]；[[有道德的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "m（联想“妈”）+ oral（口头的）→ 妈妈口头上教育我们要做“品行端正的”人。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "They make sensible decisions when facing moral dilemmas.",
+      "zh": "面对道德困境时，他们会做出明智的决定。",
+      "key": [
+       "moral"
+      ]
+     },
+     "ext": [
+      {
+       "word": "morality",
+       "ipa": "/məˈræləti/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "道德；道义；道德规范"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "word": "oral",
+     "freq": 1,
+     "page": 255,
+     "prons": [
+      {
+       "ipa": "/ˈɔːrəl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[口腔的]]；[[口头的]]"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "例",
+      "en": "Particular emphasis will be placed on oral language training.",
+      "zh": "口语训练将被予以非同寻常的重视。",
+      "key": [
+       "oral"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 10,
+     "word": "ethic",
+     "freq": 1,
+     "page": 255,
+     "prons": [
+      {
+       "ipa": "/ˈeθɪk/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "道德体系；行为准则；[[道德]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“爱思考”→ 他爱思考“道德”问题。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "This is a code of ethics.",
+      "zh": "这是一项道德规范。",
+      "key": [
+       "ethics"
+      ]
+     },
+     "ext": [
+      {
+       "word": "ethics",
+       "ipa": "/ˈeθɪks/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "道德准则；伦理学；行为准则"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "word": "ethnic",
+     "freq": 2,
+     "page": 255,
+     "prons": [
+      {
+       "ipa": "/ˈeθnɪk/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[种族的]]；[[民族的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“爱死尼克”→ 她特别爱尼克（人名），甚至专门去了解了他们“民族的”习俗。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2023,
+      "en": "They have the same ethnic background.",
+      "zh": "他们有相同的种族背景。",
+      "key": [
+       "ethnic"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 12,
+     "word": "racial",
+     "freq": 2,
+     "page": 255,
+     "prons": [
+      {
+       "ipa": "/ˈreɪʃl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[人种的，种族的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "rac(e)（人种，种族）+ -ial（形容词后缀）→ 人种的，种族的"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Teachers don't have to share the same racial or ethnic background as their students.",
+      "zh": "老师和学生不必有相同的种族或民族背景。",
+      "key": [
+       "racial"
+      ]
+     },
+     "ext": [
+      {
+       "word": "racist",
+       "ipa": "/ˈreɪsɪst/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "种族主义者"
+        }
+       ]
+      },
+      {
+       "word": "race",
+       "ipa": "/reɪs/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "赛跑；竞争；种族"
+        },
+        {
+         "pos": "v.",
+         "mean": "比赛"
+        }
+       ]
+      },
+      {
+       "word": "racism",
+       "ipa": "/ˈreɪsɪzəm/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "种族歧视；种族主义"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 13,
+     "word": "radical",
+     "freq": 2,
+     "page": 255,
+     "prons": [
+      {
+       "ipa": "/ˈrædɪkl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[根本的]]；[[彻底的]]；[[激进的，极端的]]"
+        },
+        {
+         "pos": "n.",
+         "mean": "激进分子；游离基"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "ra（联想“让”）+ dical（音似“弟扣”）→ 让那么小的弟弟学扣篮，太激进了 → 激进的，极端的"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2018,
+      "en": "A new technology has the potential to change modern society in radical ways.",
+      "zh": "一项新技术有可能彻底改变现代社会。",
+      "key": [
+       "radical"
+      ]
+     },
+     "ext": [
+      {
+       "word": "radically",
+       "ipa": "/ˈrædɪkli/",
+       "senses": [
+        {
+         "pos": "adv.",
+         "mean": "重大地；彻底地"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "word": "merit",
+     "freq": 1,
+     "page": 255,
+     "prons": [
+      {
+       "ipa": "/ˈmerɪt/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[优点]]；[[美德]]；[[价值]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "me（我）+ r（形似花）+ it（它）→ 我知道这种花有很多“优点”，所以养了它。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The plan is entirely without merit.",
+      "zh": "这个计划毫无价值。",
+      "key": [
+       "merit"
+      ]
+     },
+     "ext": [
+      {
+       "word": "meritorious",
+       "ipa": "/ˌmerɪˈtɔːriəs/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "值得赞扬的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "word": "virtue",
+     "freq": 1,
+     "page": 255,
+     "prons": [
+      {
+       "ipa": "/ˈvɜːtʃuː/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[正直的品性]]；[[优点]]；[[美德]]；良好习惯"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "vi（形似罗马数字 6）+ r（形似花）+ tue（联想 true）→ 他得到六朵小红花，说明他的“优点”真的很多。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "He always emphasised the virtues of compromise and conciliation.",
+      "zh": "他总是强调妥协与和解的优点。",
+      "key": [
+       "virtues"
+      ]
+     },
+     "ext": [
+      {
+       "word": "virtuous",
+       "ipa": "/ˈvɜːtʃuəs/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "品行端正的，有德行的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 16,
+     "word": "violent",
+     "freq": 1,
+     "page": 256,
+     "prons": [
+      {
+       "ipa": "/ˈvaɪələnt/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[暴力的]]；猛烈的"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "vi（形似罗马数字 6）+ o（形似圈）+ lent（借）→ 六个人把他围在圈中间借钱，这是一种“暴力的”威胁。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Do violent video games lead to violence?",
+      "zh": "暴力电子游戏会导致暴力吗？",
+      "key": [
+       "violent",
+       "violence"
+      ]
+     },
+     "ext": [
+      {
+       "word": "violence",
+       "ipa": "/ˈvaɪələns/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "暴力；暴行；狂热；激情"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 17,
+     "word": "violate",
+     "freq": 1,
+     "page": 256,
+     "prons": [
+      {
+       "ipa": "/ˈvaɪəleɪt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[违反，违背]]；[[侵犯]]；妨碍；亵渎"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "vi（形似罗马数字 6）+ o（形似球）+ late（迟到）→ 六个人因为打球上课迟到，“违反”了学校的纪律。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "She accused the press photographers of violating her privacy.",
+      "zh": "她指责新闻摄影记者侵犯了她的隐私。",
+      "key": [
+       "violating"
+      ]
+     },
+     "ext": [
+      {
+       "word": "violation",
+       "ipa": "/ˌvaɪəˈleɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "违反，违背；侵犯（隐私等）；使人不得安宁；搅扰"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 18,
+     "word": "defy",
+     "freq": 1,
+     "page": 256,
+     "prons": [
+      {
+       "ipa": "/dɪˈfaɪ/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[违抗]]；[[违反，违背]]；蔑视；经受住"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“抵法”→ 抵制法律实施是“违反”法律的行为。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "I wouldn't have dared to defy my teachers.",
+      "zh": "我可不敢违背老师的话。",
+      "key": [
+       "defy"
+      ]
+     },
+     "ext": [
+      {
+       "word": "defiance",
+       "ipa": "/dɪˈfaɪəns/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "反抗，违抗，拒绝服从"
+        }
+       ]
+      },
+      {
+       "word": "defiant",
+       "ipa": "/dɪˈfaɪənt/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "公然违抗的，反抗的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 19,
+     "word": "obey",
+     "freq": 1,
+     "page": 256,
+     "prons": [
+      {
+       "ipa": "/əˈbeɪ/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[遵守，服从，听从]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“我辈”→ 我辈新青年，都要“遵守”法律。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Dogs can be trained to obey orders.",
+      "zh": "狗可以被训练听从命令。",
+      "key": [
+       "obey"
+      ]
+     },
+     "ext": [
+      {
+       "word": "obedient",
+       "ipa": "/əˈbiːdiənt/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "顺从的，服从的"
+        }
+       ]
+      },
+      {
+       "word": "obedience",
+       "ipa": "/əˈbiːdiəns/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "顺从，服从；遵守"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 20,
+     "word": "isolate",
+     "freq": 1,
+     "page": 256,
+     "prons": [
+      {
+       "ipa": "/ˈaɪsəleɪt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[（使）隔离，孤独，孤立，脱离]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "i（我）+ so（如此）+ late（晚）→ 我来得如此晚，是因为我被“隔离”了。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Patients with the disease should be isolated.",
+      "zh": "这种病的患者应予以隔离。",
+      "key": [
+       "isolated"
+      ]
+     },
+     "ext": [
+      {
+       "word": "isolation",
+       "ipa": "/ˌaɪsəˈleɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "隔离；隔离状态；孤立状态"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 21,
+     "word": "via",
+     "freq": 3,
+     "page": 256,
+     "prons": [
+      {
+       "ipa": "/ˈvaɪə; ˈviːə/",
+       "senses": [
+        {
+         "pos": "prep.",
+         "mean": "[[经由，经过]]；[[通过，凭借]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "vi（形似罗马数字 6）+ a（形似小乌龟）→ 六只小乌龟“经由”此处过了河。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2016,
+      "en": "Emergency workers have made contact with the miners via a radio.",
+      "zh": "紧急救援人员通过无线电与矿工取得了联系。",
+      "key": [
+       "via"
+      ]
+     },
+     "ext": []
+    }
+   ]
+  },
+  {
+   "no": 6,
+   "title": "fin 相关",
+   "pages": [
+    256,
+    258
+   ],
+   "map": {
+    "w": "fin 相关",
+    "children": [
+     {
+      "w": "infinite",
+      "children": [
+       {
+        "w": "infinity",
+        "rel": "扩",
+        "children": [
+         {
+          "w": "infinitive"
+         }
+        ]
+       },
+       {
+        "w": "definite",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "definitely",
+          "rel": "扩"
+         },
+         {
+          "w": "define",
+          "rel": "扩"
+         },
+         {
+          "w": "definition",
+          "rel": "扩"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "refine",
+      "children": [
+       {
+        "w": "refinement",
+        "rel": "扩",
+        "children": [
+         {
+          "w": "refinery"
+         }
+        ]
+       },
+       {
+        "w": "fine",
+        "rel": "去re",
+        "children": [
+         {
+          "w": "confine",
+          "children": [
+           {
+            "w": "confinement",
+            "rel": "扩"
+           },
+           {
+            "w": "limit",
+            "rel": "近义",
+            "children": [
+             {
+              "w": "limitation",
+              "rel": "扩"
+             },
+             {
+              "w": "limited",
+              "rel": "扩"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "w": "emphasise",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "emphasis",
+          "rel": "扩"
+         },
+         {
+          "w": "emphatic",
+          "rel": "扩"
+         },
+         {
+          "w": "analyse",
+          "rel": "相关",
+          "children": [
+           {
+            "w": "analysis",
+            "rel": "扩"
+           },
+           {
+            "w": "analyst",
+            "rel": "扩"
+           },
+           {
+            "w": "analytical",
+            "rel": "扩"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "entries": [
+    {
+     "no": 22,
+     "word": "limit",
+     "freq": 3,
+     "page": 257,
+     "prons": [
+      {
+       "ipa": "/ˈlɪmɪt/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[限度，限制]]；界限，边界"
+        },
+        {
+         "pos": "v.",
+         "mean": "限制"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“立美她”→ 他想尽一切办法立刻美化她，没有任何“限制”。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "They imposed a strict spending limit.",
+      "zh": "他们实施了严格的开支限制。",
+      "key": [
+       "limit"
+      ]
+     },
+     "ext": [
+      {
+       "word": "limitation",
+       "ipa": "/ˌlɪmɪˈteɪʃ(ə)n/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "限制；局限性"
+        }
+       ]
+      },
+      {
+       "word": "limited",
+       "ipa": "/ˈlɪmɪtɪd/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "有限的，受限的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 23,
+     "word": "infinite",
+     "freq": 1,
+     "page": 257,
+     "prons": [
+      {
+       "ipa": "/ˈɪnfɪnət/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[无限的，无穷的]]；极大的，极多的"
+        },
+        {
+         "pos": "n.",
+         "mean": "无限的事物"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "in-（无）+ fin（范围）+ -ite（形容词后缀）→ 没有范围的 → 无限的"
+     },
+     "ex": {
+      "type": "例",
+      "en": "A teacher must be capable of infinite patience.",
+      "zh": "教师必须具有无限的耐心。",
+      "key": [
+       "infinite"
+      ]
+     },
+     "ext": [
+      {
+       "word": "infinity",
+       "ipa": "/ɪnˈfɪnəti/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "无限；无穷"
+        }
+       ]
+      },
+      {
+       "word": "infinitive",
+       "ipa": "/ɪnˈfɪnətɪv/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "不定式"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 24,
+     "word": "define",
+     "freq": 2,
+     "page": 257,
+     "prons": [
+      {
+       "ipa": "/dɪˈfaɪn/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[给（词语）下定义，解释]]；阐明"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "de-（分开）+ fin(e)（范围）→ 把不同的范围分开 → 给（词语）下定义，解释"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The term \"mental illness\" is difficult to define.",
+      "zh": "\"精神病\"这个词很难下定义。",
+      "key": [
+       "define"
+      ]
+     },
+     "ext": [
+      {
+       "word": "definition",
+       "ipa": "/ˌdefɪˈnɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "定义；解释"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 25,
+     "word": "definite",
+     "freq": 2,
+     "page": 257,
+     "prons": [
+      {
+       "ipa": "/ˈdefɪnət/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[清楚的，明确的]]；确定的"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "defin(e)（下定义）+ -ite（形容词后缀）→（已经）下定义的 → 明确的"
+     },
+     "ex": {
+      "type": "例",
+      "en": "No definite conclusions can be drawn from this study.",
+      "zh": "从这项研究中不能得出明确的结论。",
+      "key": [
+       "definite"
+      ]
+     },
+     "ext": [
+      {
+       "word": "definitely",
+       "ipa": "/ˈdefɪnətli/",
+       "senses": [
+        {
+         "pos": "adv.",
+         "mean": "一定，确定"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 26,
+     "word": "confine",
+     "freq": 1,
+     "page": 257,
+     "prons": [
+      {
+       "ipa": "/kənˈfaɪn/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[约束，限制]]，局限"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "con-（一起）+ fin(e)（范围）→ 一起划定范围 → 约束；限制"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The dominance of television was not confined to our living rooms.",
+      "zh": "电视的主导地位并不局限于我们的客厅。",
+      "key": [
+       "confined"
+      ]
+     },
+     "ext": [
+      {
+       "word": "confinement",
+       "ipa": "/kənˈfaɪnmənt/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "禁闭，监禁，关押"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 27,
+     "word": "refine",
+     "freq": 2,
+     "page": 257,
+     "prons": [
+      {
+       "ipa": "/rɪˈfaɪn/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[精炼]]；[[提纯]]；改进；改善"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "re-（再）+ fine（好的）→ 好上加好 → 精炼；改进"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2019,
+      "en": "Groups like these will help you refine your analytical skills and enable you to express yourself better.",
+      "zh": "像这样的小组将帮助你改善分析能力，让你更好地表达自己。",
+      "key": [
+       "refine"
+      ]
+     },
+     "ext": [
+      {
+       "word": "refinement",
+       "ipa": "/rɪˈfaɪnmənt/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "精炼；提炼；提纯；（精细的）改进，改善"
+        }
+       ]
+      },
+      {
+       "word": "refinery",
+       "ipa": "/rɪˈfaɪnəri/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "炼油厂；提炼厂；精炼厂"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 28,
+     "word": "fine",
+     "freq": 1,
+     "page": 257,
+     "prons": [
+      {
+       "ipa": "/faɪn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[罚金，罚款]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "罚款"
+        },
+        {
+         "pos": "adj.",
+         "mean": "[[很好的]]；不错的，身体好的；精致的；晴朗的"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“罚”→ 罚款"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2020,
+      "en": "If you do not, you could be fined up to £50.",
+      "zh": "如果你不这样做，你可能会被处以最高 50 英镑的罚款。",
+      "key": [
+       "fined"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 29,
+     "word": "emphasise",
+     "alt": "-ize",
+     "freq": 2,
+     "page": 257,
+     "prons": [
+      {
+       "ipa": "/ˈemfəsaɪz/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[强调]]；重视；使突出"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "em-（= en-，使）+ pha（音似“佛”）+ size（尺寸）→ 他“强调”要使佛像的尺寸合适。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2021,
+      "en": "The author emphasises being anumeric does not affect one's cognitive ability.",
+      "zh": "作者强调不识数并不影响一个人的认知能力。",
+      "key": [
+       "emphasises"
+      ]
+     },
+     "ext": [
+      {
+       "word": "emphasis",
+       "ipa": "/ˈemfəsɪs/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "强调；重视"
+        }
+       ]
+      },
+      {
+       "word": "emphatic",
+       "ipa": "/ɪmˈfætɪk/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "强调的；有力的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 30,
+     "word": "analyse",
+     "alt": "-yze",
+     "freq": 1,
+     "page": 258,
+     "prons": [
+      {
+       "ipa": "/ˈænəlaɪz/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[分析，分解]]，解析"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "a(n)（音似“俺”）+ na（联想“奶”）+ ly（联想 lying）+ se（联想“色”）→ 俺奶躺在绿色的床上“分析”我晚到的原因。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The researcher studied the videotapes to analyse the matches in detail.",
+      "zh": "研究人员研究了录像以便详细分析比赛。",
+      "key": [
+       "analyse"
+      ]
+     },
+     "ext": [
+      {
+       "word": "analysis",
+       "ipa": "/əˈnæləsɪs/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "分析，分解，解析"
+        }
+       ]
+      },
+      {
+       "word": "analyst",
+       "ipa": "/ˈænəlɪst/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "分析者，化验员"
+        }
+       ]
+      },
+      {
+       "word": "analytical",
+       "alt": "analytic",
+       "ipa": "/ˌænəˈlɪtɪk(l)/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "分析的；解析的"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "no": 7,
+   "title": "profession 相关",
+   "pages": [
+    258,
+    259
+   ],
+   "map": {
+    "w": "profession",
+    "children": [
+     {
+      "w": "professional",
+      "children": [
+       {
+        "w": "amateur",
+        "rel": "反义"
+       }
+      ]
+     },
+     {
+      "w": "confess",
+      "children": [
+       {
+        "w": "confession",
+        "rel": "扩"
+       }
+      ]
+     },
+     {
+      "w": "occupation",
+      "children": [
+       {
+        "w": "occupational",
+        "rel": "扩",
+        "children": [
+         {
+          "w": "occupy",
+          "children": [
+           {
+            "w": "occupancy",
+            "children": [
+             {
+              "w": "occupant"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "philosopher",
+      "children": [
+       {
+        "w": "philosophy",
+        "rel": "扩",
+        "children": [
+         {
+          "w": "philosophical"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "barber",
+      "children": [
+       {
+        "w": "veteran",
+        "children": [
+         {
+          "w": "sophisticated",
+          "rel": "相关",
+          "children": [
+           {
+            "w": "sophistication",
+            "rel": "扩"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "entries": [
+    {
+     "no": 31,
+     "word": "professional",
+     "freq": 3,
+     "page": 258,
+     "prons": [
+      {
+       "ipa": "/prəˈfeʃənl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[职业的]]；[[专业的]]"
+        },
+        {
+         "pos": "n.",
+         "mean": "专家"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "教授（professor）就是在某个学科领域特别专业的（professional）人。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2017,
+      "en": "With this comprehensive knowledge of the history of art, he has since become a professional painter.",
+      "zh": "凭借对艺术史的全面了解，他从此成了一名专业画家。",
+      "key": [
+       "professional"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 32,
+     "word": "profession",
+     "freq": 1,
+     "page": 258,
+     "prons": [
+      {
+       "ipa": "/prəˈfeʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[职业]]；[[专业]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "职业（profession）发展往往需要专业的（professional）知识。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2016,
+      "en": "It is necessary to use terms other than gamification for some professions.",
+      "zh": "对于某些职业，有必要使用游戏化以外的术语。",
+      "key": [
+       "professions"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 33,
+     "word": "confess",
+     "freq": 1,
+     "page": 258,
+     "prons": [
+      {
+       "ipa": "/kənˈfes/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[承认，坦白]]；忏悔"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "con-（都）+ fess（说，承认）→ 把做过的事都说了 → 承认，坦白"
+     },
+     "ex": {
+      "type": "例",
+      "en": "I confessed that I was wrong.",
+      "zh": "我承认我错了。",
+      "key": [
+       "confessed"
+      ]
+     },
+     "ext": [
+      {
+       "word": "confession",
+       "ipa": "/kənˈfeʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "承认，坦白"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 34,
+     "word": "occupy",
+     "freq": 1,
+     "page": 258,
+     "prons": [
+      {
+       "ipa": "/ˈɒkjupaɪ/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[使用，占用]]；忙着（做某事）"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "真",
+      "year": 2020,
+      "en": "People occupy valuable table space in quiet times.",
+      "zh": "在淡季的时候，人们占用宝贵的餐桌空间。",
+      "key": [
+       "occupy"
+      ]
+     },
+     "ext": [
+      {
+       "word": "occupancy",
+       "ipa": "/ˈɒkjəpənsi/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "占用，使用，居住"
+        }
+       ]
+      },
+      {
+       "word": "occupant",
+       "ipa": "/ˈɒkjəpənt/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "使用者，居住者；乘坐者"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 35,
+     "word": "occupation",
+     "freq": 1,
+     "page": 258,
+     "prons": [
+      {
+       "ipa": "/ˌɒkjuˈpeɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[职业，工作]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "occup(y)（占用）+ -ation（名词后缀）→ 每天占用我们很多时间的就是“工作”。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "It's commonly known that certain diseases are linked with occupations.",
+      "zh": "众所周知，某些疾病与职业有关。",
+      "key": [
+       "occupations"
+      ]
+     },
+     "ext": [
+      {
+       "word": "occupational",
+       "ipa": "/ˌɒkjuˈpeɪʃənl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "职业的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 36,
+     "word": "philosophy",
+     "freq": 2,
+     "page": 258,
+     "prons": [
+      {
+       "ipa": "/fəˈlɒsəfi/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[哲学，哲理]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“费老师费”→ 费老师花费时间教他“哲学”。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2022,
+      "en": "This philosophy applies in many areas of life.",
+      "zh": "这种哲学在生活的许多领域适用。",
+      "key": [
+       "philosophy"
+      ]
+     },
+     "ext": [
+      {
+       "word": "philosophical",
+       "ipa": "/ˌfɪləˈsɒfɪkl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "哲学的；达观的"
+        }
+       ]
+      },
+      {
+       "word": "philosopher",
+       "ipa": "/fəˈlɒsəfə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "哲学家；深思的人；善于思考的人"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 37,
+     "word": "barber",
+     "freq": 1,
+     "page": 259,
+     "prons": [
+      {
+       "ipa": "/ˈbɑːbə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[理发师]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“叭叭”→ 那个“理发师”叭叭地向客户推销理发卡。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "They collected 200 hair samples from 65 barber shops.",
+      "zh": "他们从 65 家理发店收集了 200 份头发样本。",
+      "key": [
+       "barber"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 38,
+     "word": "amateur",
+     "freq": 1,
+     "page": 259,
+     "prons": [
+      {
+       "ipa": "/ˈæmətə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[业余爱好者]]；[[外行]]"
+        },
+        {
+         "pos": "adj.",
+         "mean": "[[业余的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“爱莫他”→ 他爱莫能助，因为他是“业余的”。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The amateur tradition in music criticism has been in headlong retreat.",
+      "zh": "音乐评论的业余传统已在迅猛衰退。",
+      "key": [
+       "amateur"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 39,
+     "word": "veteran",
+     "freq": 1,
+     "page": 259,
+     "prons": [
+      {
+       "ipa": "/ˈvetərən/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[老兵]]，退伍军人；[[老手]]；经验丰富的人"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "v（形似罗马数字 5）+ ete（形似人脸）+ ran（run 的过去式）→ 五个“老兵”通过变脸化妆逃跑了。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "It's creating some tension between newcomers and veterans.",
+      "zh": "它在新人和老手之间制造了一些紧张。",
+      "key": [
+       "veterans"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 40,
+     "word": "sophisticated",
+     "freq": 3,
+     "page": 259,
+     "prons": [
+      {
+       "ipa": "/səˈfɪstɪkeɪtɪd/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[见多识广的]]；[[老练的]]；[[精密的]]；先进的"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "大二学生（sophomore）在学校待了两年，变成老练的（sophisticated）人了。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2019,
+      "en": "USPS has sophisticated emergency plans for natural disasters.",
+      "zh": "美国邮政有针对自然灾害的精密应急计划。",
+      "key": [
+       "sophisticated"
+      ]
+     },
+     "ext": [
+      {
+       "word": "sophistication",
+       "ipa": "/səˌfɪstɪˈkeɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "老练；世故；复杂巧妙；高水平"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "no": 8,
+   "title": "“澄清、说明”相关",
+   "pages": [
+    259,
+    261
+   ],
+   "map": {
+    "w": "“澄清、说明”相关",
+    "children": [
+     {
+      "w": "clarify",
+      "children": [
+       {
+        "w": "clarification",
+        "rel": "扩",
+        "children": [
+         {
+          "w": "clarity"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "affirm",
+      "children": [
+       {
+        "w": "confirm",
+        "rel": "近义",
+        "children": [
+         {
+          "w": "confirmation",
+          "rel": "扩"
+         },
+         {
+          "w": "firm",
+          "rel": "去con"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "claim",
+      "children": [
+       {
+        "w": "proclaim",
+        "rel": "加pro",
+        "children": [
+         {
+          "w": "proclamation",
+          "rel": "扩"
+         },
+         {
+          "w": "acclaim",
+          "rel": "相关"
+         },
+         {
+          "w": "exclaim",
+          "rel": "相关",
+          "children": [
+           {
+            "w": "exclamation",
+            "rel": "扩"
+           },
+           {
+            "w": "exclamatory",
+            "rel": "扩"
+           },
+           {
+            "w": "whisper",
+            "rel": "相关"
+           },
+           {
+            "w": "whistle",
+            "rel": "相关"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "declare",
+      "children": [
+       {
+        "w": "declarative",
+        "rel": "扩",
+        "children": [
+         {
+          "w": "declaration"
+         }
+        ]
+       },
+       {
+        "w": "announce",
+        "rel": "近义",
+        "children": [
+         {
+          "w": "announcement",
+          "rel": "扩"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "admire",
+      "children": [
+       {
+        "w": "admiration",
+        "rel": "扩",
+        "children": [
+         {
+          "w": "admirable"
+         }
+        ]
+       },
+       {
+        "w": "adore",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "worship",
+          "rel": "近义"
+         }
+        ]
+       },
+       {
+        "w": "envy",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "envious",
+          "rel": "扩"
+         },
+         {
+          "w": "jealous",
+          "rel": "近义",
+          "children": [
+           {
+            "w": "jealousy",
+            "rel": "扩"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "entries": [
+    {
+     "no": 41,
+     "word": "clarify",
+     "freq": 1,
+     "page": 259,
+     "prons": [
+      {
+       "ipa": "/ˈklærəfaɪ/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[澄清，阐明]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "clar（清楚，明白）+ -ify（使……化）→ 澄清，阐明"
+     },
+     "ex": {
+      "type": "例",
+      "en": "It is an attempt to clarify misunderstanding about the origin of language.",
+      "zh": "它试图澄清对语言起源的误解。",
+      "key": [
+       "clarify"
+      ]
+     },
+     "ext": [
+      {
+       "word": "clarification",
+       "ipa": "/ˌklærəfɪˈkeɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "澄清，阐明"
+        }
+       ]
+      },
+      {
+       "word": "clarity",
+       "ipa": "/ˈklærəti/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "清楚，明晰"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 42,
+     "word": "confirm",
+     "freq": 2,
+     "page": 260,
+     "prons": [
+      {
+       "ipa": "/kənˈfɜːm/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[证实，证明]]；批准"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "con-（表加强）+ firm（坚固）→ 使（观点）坚固 → 证实，证明"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The authorities refused to confirm any details.",
+      "zh": "当局拒绝证实任何细节。",
+      "key": [
+       "confirm"
+      ]
+     },
+     "ext": [
+      {
+       "word": "confirmation",
+       "ipa": "/ˌkɒnfəˈmeɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "证实；确认书"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 43,
+     "word": "firm",
+     "freq": 1,
+     "page": 260,
+     "prons": [
+      {
+       "ipa": "/fɜːm/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[商行]]；商号；公司"
+        },
+        {
+         "pos": "adj.",
+         "mean": "[[坚固的]]；[[结实的]]；牢固的"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "这家公司（firm）的形式（form）很特别。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "He doesn't feel at ease in the firm.",
+      "zh": "他在公司里感到不自在。",
+      "key": [
+       "firm"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 44,
+     "word": "affirm",
+     "freq": 1,
+     "page": 260,
+     "prons": [
+      {
+       "ipa": "/əˈfɜːm/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[证实]]；[[确认]]；肯定，[[断言]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "af-（表加强）+ firm（坚固的）→ 使（观点）变得坚固 → 证实；断言"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The state affirms its supreme power over the individuals within its own borders.",
+      "zh": "该国确认其对自己境内的个人有最高领导权。",
+      "key": [
+       "affirms"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 45,
+     "word": "claim",
+     "freq": 3,
+     "page": 260,
+     "prons": [
+      {
+       "ipa": "/kleɪm/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[声称]]；[[索取]]"
+        },
+        {
+         "pos": "n.",
+         "mean": "[[声称，主张]]；[[索赔]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "c（音似“可”）+ laim（联想“拉妹”）→ 姐姐“声称”可以拉住妹妹，不让她乱跑。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "She claimed to hate all art.",
+      "zh": "她声称讨厌所有艺术。",
+      "key": [
+       "claimed"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 46,
+     "word": "proclaim",
+     "freq": 1,
+     "page": 260,
+     "prons": [
+      {
+       "ipa": "/prəˈkleɪm/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[宣告，公布]]；声明"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "pro-（向前）+ claim（声称）→ 向前面（的人）声称 → 宣告，公布"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The president proclaimed a state of emergency.",
+      "zh": "总统宣告了紧急状态。",
+      "key": [
+       "proclaimed"
+      ]
+     },
+     "ext": [
+      {
+       "word": "proclamation",
+       "ipa": "/ˌprɒkləˈmeɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "宣言；公告；声明"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 47,
+     "word": "acclaim",
+     "freq": 1,
+     "page": 260,
+     "prons": [
+      {
+       "ipa": "/əˈkleɪm/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[赞扬，高度评价]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "给予高度评价"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "ac-（= to，对）+ claim（声称）→ 赞扬"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The film met with considerable critical and public acclaim.",
+      "zh": "这部电影得到了评论和公众的广泛赞扬。",
+      "key": [
+       "acclaim"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 48,
+     "word": "exclaim",
+     "freq": 1,
+     "page": 260,
+     "prons": [
+      {
+       "ipa": "/ɪkˈskleɪm/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[呼喊，呼叫，大声说]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "ex-（外）+ claim（声称）→ 呼喊，呼叫"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The player proceeded to rub his gloves and then exclaimed.",
+      "zh": "这名球员继续揉搓他的手套，然后呼喊起来。",
+      "key": [
+       "exclaimed"
+      ]
+     },
+     "ext": [
+      {
+       "word": "exclamation",
+       "ipa": "/ˌekskləˈmeɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "感叹；感叹词"
+        }
+       ]
+      },
+      {
+       "word": "exclamatory",
+       "ipa": "/ɪkˈsklæmətri/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "表示感叹的；惊叹的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 49,
+     "word": "whisper",
+     "freq": 1,
+     "page": 260,
+     "prons": [
+      {
+       "ipa": "/ˈwɪspə(r)/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[耳语，低语，小声说]]"
+        },
+        {
+         "pos": "n.",
+         "mean": "[[耳语（声）]]；低语（声）"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "whi（音似 we）+ sper（音似“撕破”）→ 我们撕破脸了，这种事要“小声说”。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2017,
+      "en": "Pay attention to the whispers so you won't have to hear the screams.",
+      "zh": "留心于低声细语，便听不见嘶吼声。",
+      "key": [
+       "whispers"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 50,
+     "word": "whistle",
+     "freq": 1,
+     "page": 260,
+     "prons": [
+      {
+       "ipa": "/ˈwɪsl/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[口哨]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[吹口哨]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "whi（音似 we）+ stle（音似“哨”）→ 我们一起“吹口哨”。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "He kept shouting, blowing his whistle to stop the excited players.",
+      "zh": "他不停地喊着，吹着哨子阻止那些兴奋的球员。",
+      "key": [
+       "whistle"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 51,
+     "word": "declare",
+     "freq": 1,
+     "page": 260,
+     "prons": [
+      {
+       "ipa": "/dɪˈkleə(r)/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[公布]]；[[宣布]]；[[声称，宣称]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "dec（音似“弟可”）+ la（联想“拉”）+ re（字母音似“阿姨”）→ 弟弟“宣布”他可算拉住阿姨了。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "\"Play is not silly behaviour,\" the academy's report declares.",
+      "zh": "该学院的报告宣称，\"玩耍不是愚蠢的行为。\"",
+      "key": [
+       "declares"
+      ]
+     },
+     "ext": [
+      {
+       "word": "declarative",
+       "ipa": "/dɪˈklærətɪv/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "陈述的"
+        }
+       ]
+      },
+      {
+       "word": "declaration",
+       "ipa": "/ˌdekləˈreɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "公告；宣告；宣言"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 52,
+     "word": "announce",
+     "freq": 3,
+     "page": 261,
+     "prons": [
+      {
+       "ipa": "/əˈnaʊns/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[宣布]]；通知；声称"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "例",
+      "en": "They will announce their engagement.",
+      "zh": "他们将宣布订婚。",
+      "key": [
+       "announce"
+      ]
+     },
+     "ext": [
+      {
+       "word": "announcement",
+       "ipa": "/əˈnaʊnsmənt/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "通知，公告；（指行动）宣布；通告"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 53,
+     "word": "admire",
+     "freq": 1,
+     "page": 261,
+     "prons": [
+      {
+       "ipa": "/ədˈmaɪə(r)/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[赞美，赞赏，钦佩]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "ad-（一再地）+ m（联想“妹”）+ i（我）+ re（字母音似“阿姨”）→ 我和妹妹一再地围着阿姨，因为我们“钦佩”她。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "They admire the courage of space explorers.",
+      "zh": "他们钦佩太空探险者的勇气。",
+      "key": [
+       "admire"
+      ]
+     },
+     "ext": [
+      {
+       "word": "admiration",
+       "ipa": "/ˌædməˈreɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "钦佩，赞赏，羡慕"
+        }
+       ]
+      },
+      {
+       "word": "admirable",
+       "ipa": "/ˈædmərəbl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "可钦佩的；值得赞赏的；令人羡慕的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 54,
+     "word": "adore",
+     "freq": 1,
+     "page": 261,
+     "prons": [
+      {
+       "ipa": "/əˈdɔː(r)/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[崇拜]]，爱慕；非常喜欢"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "ad-（一再地）+ o（形似圈）+ re（字母音似“阿姨”）→ 孩子们一再地在阿姨周围围成一个圈，因为他们都“非常喜欢”阿姨。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "All the children adored the girl as their elder sister.",
+      "zh": "所有孩子都非常喜欢这个女孩，把她当作他们的大姐姐。",
+      "key": [
+       "adored"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 55,
+     "word": "worship",
+     "freq": 1,
+     "page": 261,
+     "prons": [
+      {
+       "ipa": "/ˈwɜːʃɪp/",
+       "senses": [
+        {
+         "pos": "n. & v.",
+         "mean": "[[崇拜，敬仰]]；礼拜"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "wor（音似“哇”）+ ship（船）→ “哇！船！”孩子们“崇拜”地看着大船喊。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "In ancient times, many nations worshipped different gods.",
+      "zh": "在古代，很多民族崇拜不同的神灵。",
+      "key": [
+       "worshipped"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 56,
+     "word": "envy",
+     "freq": 1,
+     "page": 261,
+     "prons": [
+      {
+       "ipa": "/ˈenvi/",
+       "senses": [
+        {
+         "pos": "n. & v.",
+         "mean": "[[羡慕]]；忌妒"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“恩威”→ 他“羡慕”那个杀伐果断、恩威并施、受人爱戴的君主。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2021,
+      "en": "Being an information technology, or IT, worker is not a job I envy.",
+      "zh": "我并不羡慕从事信息技术（IT）工作的人。",
+      "key": [
+       "envy"
+      ]
+     },
+     "ext": [
+      {
+       "word": "envious",
+       "ipa": "/ˈenviəs/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "羡慕的；忌妒的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 57,
+     "word": "jealous",
+     "freq": 1,
+     "page": 261,
+     "prons": [
+      {
+       "ipa": "/ˈdʒeləs/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[妒忌的]]；猜疑的；爱惜的"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“姐乐思”→ 姐姐说，遇到乐事时不要张扬，免得让其他人起了“妒忌”的心思。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "She's jealous of my success.",
+      "zh": "她忌妒我的成功。",
+      "key": [
+       "jealous"
+      ]
+     },
+     "ext": [
+      {
+       "word": "jealousy",
+       "ipa": "/ˈdʒeləsi/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "嫉妒，羡慕"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
