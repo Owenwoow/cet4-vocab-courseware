@@ -1,0 +1,29 @@
+# ===== 必需（协作规范依赖，已有 .gitignore 时只补这一段缺的行）=====
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.log
+*.sqlite
+*.sqlite3
+*.db
+.claude/settings.local.json
+.claude/worktrees/
+CLAUDE.local.md
+
+# ===== 常见依赖与构建产物 =====
+node_modules/
+.venv/
+venv/
+__pycache__/
+dist/
+build/
+coverage/
+
+# ===== 系统与编辑器 =====
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
