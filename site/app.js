@@ -12,10 +12,25 @@ const store = {
 const known = new Set(store.get("known", []));
 const saveKnown = () => store.set("known", [...known]);
 
+/* ---------- 设置：集中存放，设置页修改，全站生效 ---------- */
+const VOICE_NAMES = {ava: "Ava", andrew: "Andrew", sonia: "Sonia", ryan: "Ryan"};
+const VOICE_DESC = {ava: "美式 · 女声", andrew: "美式 · 男声", sonia: "英式 · 女声", ryan: "英式 · 男声"};
+const DEFAULTS = {voice: "ava", rate: 1, mask: false, hideKnown: false, scope: "group", withZh: true, loop: false, theme: "auto"};
+const S = {...DEFAULTS, ...store.get("settings", {})};
+function setS(k, v) { S[k] = v; store.set("settings", S); applySettings(); }
+function applySettings() {
+  document.body.classList.toggle("mask", S.mask);
+  document.body.classList.toggle("hideKnown", S.hideKnown);
+  if (S.theme === "auto") document.documentElement.removeAttribute("data-theme");
+  else document.documentElement.dataset.theme = S.theme;
+  $("#maskFab").classList.toggle("on", S.mask);
+}
+
 /* ---------- 状态 ---------- */
 let BOOK = null, L = null, GLOSS = {}, AUD = {w: {}, s: {}, z: {}, voices: []};
 const WORDMAP = new Map();   // 本课词条/扩展词 → {word, senses, no, ext}
-const fetchJSON = url => fetch(url).then(r => { if (!r.ok) throw new Error(url + " " + r.status); return r.json(); });
+/* no-cache：每次向服务器确认，重新生成数据后不会读到旧缓存 */
+const fetchJSON = url => fetch(url, {cache: "no-cache"}).then(r => { if (!r.ok) throw new Error(url + " " + r.status); return r.json(); });
 
 /* ---------- 文本工具 ---------- */
 const meanHTML = m => esc(m).replace(/\[\[(.+?)\]\]/g, "<u>$1</u>");
@@ -63,7 +78,9 @@ function pickSysVoice() {
 }
 if (synth) { pickSysVoice(); synth.onvoiceschanged = pickSysVoice; }
 const audioURL = key => `data/audio/files/${key}.mp3`;
-const rate = () => +$("#rate").value;
+const rate = () => +S.rate;
+/* 选中的声音本课没生成时，退回本课第一种 */
+const pickVoice = rec => rec && (rec[S.voice] || Object.values(rec)[0]);
 
 function stopAll() { player.pause(); player.ontimeupdate = player.onended = player.onerror = null; synth && synth.cancel(); }
 function playFile(key, onEnd, r = rate()) {
@@ -84,7 +101,7 @@ function speakTTS(text, lang, onEnd) {
 }
 function speak(text, onEnd) {
   const w = AUD.w[text] || AUD.w[text.toLowerCase()];
-  const key = w && (w[$("#voice").value] || Object.values(w)[0]);
+  const key = pickVoice(w);
   key ? playFile(key, onEnd) : speakTTS(text, "en", onEnd);
 }
 function speakZh(text, onEnd) {
@@ -94,7 +111,7 @@ function speakZh(text, onEnd) {
 function playSentence(card, onEnd, r = rate()) {
   const e = entryOf(card), spans = $$(".sent .w", card);
   const clear = () => spans.forEach(s => s.classList.remove("reading"));
-  const s = AUD.s[e.ex.en], rec = s && (s[$("#voice").value] || Object.values(s)[0]);
+  const rec = pickVoice(AUD.s[e.ex.en]);
   if (!rec) { speakTTS(e.ex.en, "en", onEnd); return; }
   /* 语音的逐词时间点按顺序对到句中单词，用于朗读高亮 */
   const norm = x => x.toLowerCase().replace(/[^a-z']/g, "");
@@ -225,20 +242,30 @@ async function loadLesson(id) {
     WORDMAP.set(e.word, {word: e.word, senses: e.prons.flatMap(p => p.senses), ipa: e.prons.map(p => p.ipa).join(" "), no: e.no, entry: e, ext: false});
     for (const x of e.ext || []) if (!WORDMAP.has(x.word)) WORDMAP.set(x.word, {word: x.word, senses: x.senses, ipa: x.ipa, no: e.no, entry: e, ext: true});
   }
-  const names = {ava: "Ava（美式女声）", andrew: "Andrew（美式男声）", sonia: "Sonia（英式女声）", ryan: "Ryan（英式男声）"};
-  const saved = store.get("voice", null);
-  $("#voice").innerHTML = (AUD.voices.length ? AUD.voices : ["tts"]).map(v => `<option value="${v}"${v === saved ? " selected" : ""}>${names[v] || "浏览器语音"}</option>`).join("");
-  store.set("last", id);
   renderLesson();
 }
 
-/* ---------- 路由：#/u07-l01、#/u07-l01/g2、#/u07-l01/w/margin ---------- */
+/* ---------- 路由：#/u07-l01、#/u07-l01/g2、#/u07-l01/w/margin、#/settings ---------- */
 async function route() {
-  const m = location.hash.match(/^#\/(u\d\d-l\d\d)(?:\/(g\d+|w\/.+))?$/);
   const ready = BOOK.parts.flatMap(p => p.units.flatMap(u => u.lessons)).filter(l => l.ready);
   if (!ready.length) { $("#groups").innerHTML = `<p class="empty">还没有生成任何课。</p>`; return; }
-  const id = m && ready.some(l => l.id === m[1]) ? m[1] : (ready.some(l => l.id === store.get("last")) ? store.get("last") : ready[0].id);
+  const last = ready.some(l => l.id === store.get("last")) ? store.get("last") : ready[0].id;
+  const isSettings = location.hash === "#/settings";
+  $("#lessonView").hidden = isSettings; $("#fabs").hidden = isSettings; $("#settingsView").hidden = !isSettings;
+  $("#setBtn").classList.toggle("on", isSettings);
+  if (isSettings) {
+    stopMarathon(); pop.style.display = "none";
+    if (!L) await loadLesson(last);   // 设置页试听要用到本课音频
+    renderSettings(); scrollTo(0, 0);
+    $("#crumb").textContent = "设置"; document.title = "设置 · 四级词汇";
+    return;
+  }
+  const m = location.hash.match(/^#\/(u\d\d-l\d\d)(?:\/(g\d+|w\/.+))?$/);
+  const id = m && ready.some(l => l.id === m[1]) ? m[1] : last;
+  const reuse = L && L.id === id;
   await loadLesson(id);
+  store.set("last", id);
+  if (reuse) renderLesson();   // 从设置页返回时重画，标题和进度跟上
   const t = m && m[2];
   if (t && t[0] === "g") document.getElementById(t)?.scrollIntoView();
   else if (t) gotoWord(decodeURIComponent(t.slice(2)));
@@ -296,7 +323,7 @@ $("#viewerClose").onclick = () => { $("#viewer").hidden = true; };
 /* ---------- 点击事件 ---------- */
 document.addEventListener("click", e => {
   const t = e.target;
-  if (t.closest(".top,.drawer,.bar,.viewer")) { if (!t.closest(".search")) $("#qres").style.display = "none"; return; }
+  if (t.closest(".top,.drawer,.fabs,.settings,.viewer")) { if (!t.closest(".search")) $("#qres").style.display = "none"; return; }
   if (t.dataset.say || t.classList.contains("play") || t.classList.contains("w")) stopMarathon();
   if (t.dataset.say) { speak(t.dataset.say); return; }
   if (t.classList.contains("play")) { playSentence(t.closest(".card"), null, t.dataset.slow ? 0.75 : rate()); return; }
@@ -322,19 +349,70 @@ document.addEventListener("touchend", e => setTimeout(() => {
   if (s.toString().trim().includes(" ") && e.target.closest && e.target.closest(".sent")) lookup(s.toString(), s.getRangeAt(0).getBoundingClientRect());
 }, 300));
 
-/* ---------- 工具栏 ---------- */
-$("#voice").onchange = () => store.set("voice", $("#voice").value);
-$("#maskBtn").onclick = function () {
-  document.body.classList.toggle("mask"); this.classList.toggle("on");
-  $$(".show").forEach(x => x.classList.remove("show"));
-};
-$("#hideKnown").onclick = function () { document.body.classList.toggle("hideKnown"); this.classList.toggle("on"); };
+/* ---------- 设置页 ---------- */
+const seg = (key, opts) => `<div class="seg">${opts.map(([v, label]) =>
+  `<button data-set="${key}" data-val="${v}" class="${String(S[key]) === String(v) ? "on" : ""}">${label}</button>`).join("")}</div>`;
+const sw = (key, title, desc) => `<label class="row sw"><span><b>${title}</b><small>${desc}</small></span>
+  <input type="checkbox" data-set="${key}"${S[key] ? " checked" : ""}><i></i></label>`;
+function renderSettings() {
+  const have = AUD.voices || [];
+  const sample = L ? allEntries()[0].word : "hello";
+  const back = L ? `#/${L.id}` : "#/";
+  $("#settingsView").innerHTML = `
+    <a class="back" href="${back}">← 返回${L ? ` Unit ${L.unit} · Lesson ${L.lesson}` : ""}</a>
+    <h1>设置</h1>
+    <section class="panel"><h2>发音</h2>
+      <div class="voices">${Object.keys(VOICE_NAMES).map(v => `
+        <button class="voice${S.voice === v ? " on" : ""}" data-set="voice" data-val="${v}"${have.includes(v) ? "" : " disabled"}>
+          <b>${VOICE_NAMES[v]}</b><small>${have.includes(v) ? VOICE_DESC[v] : "本课未生成"}</small>
+          <span class="try" data-try="${v}" title="试听">🔊</span></button>`).join("")}</div>
+      <div class="row"><span><b>语速</b><small>单词、例句都按这个速度播放；例句旁的 🐢 始终是慢速</small></span>
+        ${seg("rate", [[0.75, "慢"], [0.9, "较慢"], [1, "常速"]])}</div>
+      <p class="hint">试听词：${esc(sample)}</p>
+    </section>
+    <section class="panel"><h2>学习</h2>
+      ${sw("mask", "背诵模式", "遮住释义、记忆法和译文，点一下显示。课文页右下角「遮」也能随手切换")}
+      ${sw("hideKnown", "隐藏已会", "标为「已会」的词卡不显示，磨耳朵也跳过它们")}
+    </section>
+    <section class="panel"><h2>磨耳朵</h2>
+      <div class="row"><span><b>播放范围</b><small>从右下角 🎧 开始</small></span>${seg("scope", [["group", "当前词群"], ["lesson", "整课"]])}</div>
+      ${sw("withZh", "读中文", "单词后读释义，例句后读译文")}
+      ${sw("loop", "循环播放", "播完从头再来")}
+    </section>
+    <section class="panel"><h2>外观</h2>
+      <div class="row"><span><b>主题</b><small>自动跟随系统深浅色</small></span>${seg("theme", [["auto", "自动"], ["light", "浅色"], ["dark", "深色"]])}</div>
+    </section>
+    <section class="panel"><h2>数据</h2>
+      <div class="row"><span><b>「已会」记录</b><small>共 ${known.size} 个词，只存在这台设备的浏览器里</small></span>
+        <button class="danger" id="clearKnown"${known.size ? "" : " disabled"}>清空</button></div>
+    </section>`;
+}
+$("#settingsView").addEventListener("click", e => {
+  const t = e.target;
+  const tryBtn = t.closest("[data-try]");
+  if (tryBtn) {
+    e.preventDefault();
+    const w = L ? allEntries()[0].word : null, rec = w && AUD.w[w] && AUD.w[w][tryBtn.dataset.try];
+    rec ? playFile(rec) : speakTTS("hello", "en");
+    return;
+  }
+  const b = t.closest("button[data-set]");
+  if (b) { const k = b.dataset.set, v = b.dataset.val; setS(k, k === "rate" ? +v : v); renderSettings(); if (k === "voice") speak(allEntries()[0].word); return; }
+  if (t.id === "clearKnown" && confirm(`清空 ${known.size} 个「已会」记录？`)) { known.clear(); saveKnown(); renderSettings(); }
+});
+$("#settingsView").addEventListener("change", e => {
+  const t = e.target;
+  if (t.type === "checkbox" && t.dataset.set) setS(t.dataset.set, t.checked);
+});
+
+/* ---------- 右下角快捷按钮 ---------- */
+$("#maskFab").onclick = () => { setS("mask", !S.mask); $$(".show").forEach(x => x.classList.remove("show")); };
 
 /* ---------- 磨耳朵：单词×2 → 释义 → 例句 → 译文 → 扩展词 ---------- */
 let runId = 0;
 function stopMarathon() {
   runId++; stopAll();
-  $("#playAll").classList.remove("on"); $("#playAll").textContent = "🎧 磨耳朵";
+  $("#playAll").classList.remove("on"); $("#playAll").textContent = "🎧";
   $$(".now,.now-part").forEach(x => x.classList.remove("now", "now-part"));
 }
 function currentGroup() {
@@ -343,8 +421,8 @@ function currentGroup() {
   return cur;
 }
 function buildSteps() {
-  const zh = $("#withZh").checked, steps = [];
-  const scope = $("#scope").value === "group" ? $$(".card", currentGroup()) : $$(".card");
+  const zh = S.withZh, steps = [];
+  const scope = S.scope === "group" ? $$(".card", currentGroup()) : $$(".card");
   for (const card of scope) {
     if (card.offsetParent === null) continue;   // 被「隐藏已会」藏起来的跳过
     const e = entryOf(card), q = s => card.querySelector(s);
@@ -370,10 +448,10 @@ $("#playAll").onclick = function () {
   stopMarathon();
   const my = runId, steps = buildSteps(); let i = 0;
   if (!steps.length) return;
-  this.classList.add("on"); this.textContent = "⏹ 停止";
+  this.classList.add("on"); this.textContent = "⏹";
   const next = () => {
     if (my !== runId) return;
-    if (i >= steps.length) { if ($("#loop").checked) i = 0; else { stopMarathon(); return; } }
+    if (i >= steps.length) { if (S.loop) i = 0; else { stopMarathon(); return; } }
     const st = steps[i++];
     $$(".now,.now-part").forEach(x => x.classList.remove("now", "now-part"));
     st.card.classList.add("now"); st.el && st.el.classList.add("now-part");
@@ -399,6 +477,7 @@ $("#q").addEventListener("keydown", e => { if (e.key === "Enter") { const a = qr
 qres.addEventListener("click", () => { qres.style.display = "none"; $("#q").blur(); });
 
 /* ---------- 启动 ---------- */
+applySettings();
 window.addEventListener("hashchange", route);
 fetchJSON("data/book.json").then(b => { BOOK = b; renderDrawer(); return route(); })
   .catch(err => { $("#groups").innerHTML = `<p class="empty">数据加载失败：${esc(err.message)}<br>请用本地服务器打开（见 README），不要直接双击 HTML。</p>`; });

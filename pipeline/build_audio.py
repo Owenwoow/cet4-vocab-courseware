@@ -113,6 +113,6 @@ async def main(lid, voice_keys):
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("lesson")
-    ap.add_argument("--voices", default="ava,ryan")
+    ap.add_argument("--voices", default="ava,andrew,sonia,ryan")
     a = ap.parse_args()
     asyncio.run(main(a.lesson, a.voices.split(",")))
