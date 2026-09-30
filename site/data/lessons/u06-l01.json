@@ -1,0 +1,552 @@
+{
+  "id": "u06-l01",
+  "part": 1,
+  "unit": 6,
+  "lesson": 1,
+  "pages": [156, 162],
+  "groups": [
+    {
+      "no": 1,
+      "title": "“混合、复杂”相关",
+      "pages": [156, 157],
+      "map": {
+        "w": "“混合、复杂”相关",
+        "children": [
+          {"w": "paste", "children": [
+            {"w": "portable", "rel": "相关", "children": [{"w": "port", "rel": "扩"}, {"w": "porter", "rel": "扩"}]}
+          ]},
+          {"w": "compound", "children": [{"w": "pond", "rel": "形近"}]},
+          {"w": "complex", "children": [{"w": "complexity", "rel": "扩"}, {"w": "collapse", "rel": "相关"}]},
+          {"w": "complicate", "children": [{"w": "complicated", "rel": "扩"}, {"w": "complication", "rel": "扩"}]},
+          {"w": "confuse", "children": [{"w": "confusion", "rel": "扩"}]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "paste", "freq": 1, "page": 156,
+          "prons": [{"ipa": "/peɪst/", "senses": [{"pos": "n.", "mean": "[[酱]]；[[膏]]；[[糊糊]]"}, {"pos": "v.", "mean": "[[粘贴]]"}]}],
+          "tip": {"type": "对照", "text": "刷牙用的牙膏（toothpaste）就是膏（paste）体。"},
+          "ex": {"type": "真", "year": 2017, "en": "Nigeria is dependent on $1 billion worth of tomato paste imports every year.", "zh": "尼日利亚每年依赖价值10亿美元的番茄酱进口。", "key": ["paste"]},
+          "ext": []
+        },
+        {
+          "no": 2, "word": "portable", "freq": 1, "page": 156,
+          "prons": [{"ipa": "/ˈpɔːtəbl/", "senses": [{"pos": "adj.", "mean": "[[便携式的]]；[[手提的]]；[[轻便的]]"}]}],
+          "tip": {"type": "联想", "text": "port（音似“泡它”）+ -able（形容词后缀）→ 她减肥时吃的冲泡代餐都是“便携式的”。"},
+          "ex": {"type": "例", "en": "The device is said to be the world's first portable transistor.", "zh": "据说这种装置是世界上第一个便携式晶体管。", "key": ["portable"]},
+          "ext": [
+            {"word": "port", "ipa": "/pɔːt/", "senses": [{"pos": "n.", "mean": "港口，避风港；港口城市，口岸城市"}, {"pos": "v.", "mean": "移植（软件）"}]},
+            {"word": "porter", "ipa": "/ˈpɔːtə(r)/", "senses": [{"pos": "n.", "mean": "行李员，搬运工；护工；门卫"}]}
+          ]
+        },
+        {
+          "no": 3, "word": "compound", "freq": 1, "page": 156,
+          "prons": [
+            {"ipa": "/ˈkɒmpaʊnd/", "senses": [{"pos": "n.", "mean": "[[混合物]]，[[化合物]]；[[复合词]]"}, {"pos": "adj.", "mean": "[[复合的]]"}]},
+            {"ipa": "/kəmˈpaʊnd/", "senses": [{"pos": "v.", "mean": "[[使加重]]，[[使恶化]]"}]}
+          ],
+          "tip": {"type": "联想", "text": "com-（所有的，一起）+ pound（音似“泡的”）→ 把牛奶、坚果和麦片泡在一起作早餐，这样的“混合物”很健康。"},
+          "ex": {"type": "例", "en": "A compound sentence contains two or more clauses.", "zh": "复合句包含两个或多个从句。", "key": ["compound"]},
+          "ext": []
+        },
+        {
+          "no": 4, "word": "pond", "freq": 1, "page": 156,
+          "prons": [{"ipa": "/pɒnd/", "senses": [{"pos": "n.", "mean": "[[池塘]]；[[水池（尤指人工的）]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“泡的”→ 他们在“池塘”泡澡。"},
+          "ex": {"type": "例", "en": "The wrong name is invariably fished out from the same relationship pond.", "zh": "“错误”的名字总是从同一个关系池中找到的。", "key": ["pond"]},
+          "ext": []
+        },
+        {
+          "no": 5, "word": "complex", "freq": 3, "page": 156,
+          "prons": [{"ipa": "/ˈkɒmpleks/", "senses": [{"pos": "n.", "mean": "[[建筑群]]；[[情结]]"}, {"pos": "adj.", "mean": "[[复杂的]]；[[复合的]]"}]}],
+          "tip": {"type": "联想", "text": "com-（所有的）+ plex（联想“扑来”）→ 所有人都扑过来，反倒使事情更复杂了 → 复杂的"},
+          "ex": {"type": "例", "en": "It helps people to understand complex issues.", "zh": "它帮助人们理解复杂的问题。", "key": ["complex"]},
+          "ext": [{"word": "complexity", "ipa": "/kɒmˈpleksəti/", "senses": [{"pos": "n.", "mean": "复杂性；复杂之处"}]}]
+        },
+        {
+          "no": 6, "word": "collapse", "freq": 2, "page": 156,
+          "prons": [{"ipa": "/kəˈlæps/", "senses": [{"pos": "v.", "mean": "[[（突然）倒塌]]，[[坍塌]]"}, {"pos": "n.", "mean": "[[（突然的）倒塌]]，[[塌陷]]"}]}],
+          "tip": {"type": "联想", "text": "col-（所有的）+ lap（音似“来扑”）+ se → 所有人都向一张桌子扑来，它就“坍塌”了。"},
+          "ex": {"type": "真", "year": 2018, "en": "A man was pulled to safety after a building collapse.", "zh": "一幢建筑物倒塌后，一名男子被拉到安全地带。", "key": ["collapse"]},
+          "ext": []
+        },
+        {
+          "no": 7, "word": "complicate", "freq": 1, "page": 156,
+          "prons": [{"ipa": "/ˈkɒmplɪkeɪt/", "senses": [{"pos": "v.", "mean": "[[使复杂化]]"}]}],
+          "tip": {"type": "联想", "text": "com-（所有的）+ pli（联想“扑来”）+ cate（音似“剋他”）→ 所有人都扑过来剋（打）他，使事情变得复杂了 → 使复杂化"},
+          "ex": {"type": "例", "en": "I do not wish to complicate the task more than is necessary.", "zh": "我不想使这项任务不必要地复杂化。", "key": ["complicate"]},
+          "ext": [
+            {"word": "complicated", "ipa": "/ˈkɒmplɪkeɪtɪd/", "senses": [{"pos": "adj.", "mean": "复杂的，难懂的"}]},
+            {"word": "complication", "ipa": "/ˌkɒmplɪˈkeɪʃn/", "senses": [{"pos": "n.", "mean": "使复杂化的问题（情况）；并发症"}]}
+          ]
+        },
+        {
+          "no": 8, "word": "confuse", "freq": 3, "page": 157,
+          "prons": [{"ipa": "/kənˈfjuːz/", "senses": [{"pos": "v.", "mean": "[[使糊涂]]，[[使迷惑]]；[[混淆]]"}]}],
+          "tip": {"type": "构词", "text": "con-（一起）+ fuse（流）→ 流到一起 → 混合，混淆 → 混淆"},
+          "ex": {"type": "真", "year": 2024, "en": "Their loud claps can be confused with explosions.", "zh": "他们响亮的掌声可能与爆炸声相混淆。", "key": ["be confused with"]},
+          "ext": [{"word": "confusion", "ipa": "/kənˈfjuːʒn/", "senses": [{"pos": "n.", "mean": "不确定，困惑；混淆"}]}]
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "title": "request 相关",
+      "pages": [157, 158],
+      "map": {
+        "w": "request 相关",
+        "children": [
+          {"w": "require", "children": [
+            {"w": "requirement", "rel": "扩"},
+            {"w": "acquire", "rel": "形近", "children": [{"w": "acquisition", "rel": "扩"}]},
+            {"w": "inquire", "rel": "形近", "children": [{"w": "inquiry", "rel": "扩"}, {"w": "inquisitive", "rel": "扩"}]}
+          ]},
+          {"w": "demand", "children": [{"w": "demanding", "rel": "扩"}]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 9, "word": "request", "freq": 3, "page": 157,
+          "prons": [{"ipa": "/rɪˈkwest/", "senses": [{"pos": "n. & v.", "mean": "[[要求，请求]]"}]}],
+          "tip": {"type": "构词", "text": "re-（重复）+ quest（寻找，追求）→ 重复地寻找或追求 → 要求，请求"},
+          "ex": {"type": "真", "year": 2018, "en": "As for the organisation itself, it declined a request for an interview.", "zh": "至于该组织本身，它拒绝了采访请求。", "key": ["request for"]},
+          "ext": []
+        },
+        {
+          "no": 10, "word": "require", "freq": 1, "page": 157,
+          "prons": [{"ipa": "/rɪˈkwaɪə(r)/", "senses": [{"pos": "v.", "mean": "[[需要]]；[[要求]]，[[规定]]"}]}],
+          "tip": {"type": "构词", "text": "re-（再，又）+ quire（= ask）→ 又问 → 需要，要求"},
+          "ex": {"type": "真", "year": 2018, "en": "As what happened with tobacco, this will require a cultural shift, but that can happen.", "zh": "正如烟草的情况一样，这虽需要文化转变，但也可能会发生。", "key": ["require"]},
+          "ext": [{"word": "requirement", "ipa": "/rɪˈkwaɪəmənt/", "senses": [{"pos": "n.", "mean": "要求；必备条件"}]}]
+        },
+        {
+          "no": 11, "word": "demand", "freq": 3, "page": 157,
+          "prons": [{"ipa": "/dɪˈmɑːnd/", "senses": [
+            {"pos": "n.", "mean": "[[（坚决的）要求]]，[[需求]]；[[所需之物]]"},
+            {"pos": "v.", "mean": "[[强烈要求]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "de（音似“弟”）+ ma（联想“妈”）+ nd（联想“的”）→ 妈妈满足了弟弟买玩具的“要求”。"},
+          "ex": {"type": "真", "year": 2023, "en": "They take up a lot of our fresh water demands across the world.", "zh": "它们占用了我们在世界各地的大量淡水需求。", "key": ["demands"]},
+          "ext": []
+        },
+        {
+          "no": 12, "word": "demanding", "freq": 1, "page": 157,
+          "prons": [{"ipa": "/dɪˈmɑːndɪŋ/", "senses": [{"pos": "adj.", "mean": "[[要求高的]]；[[苛求的]]"}]}],
+          "tip": {"type": "对照", "text": "demand n.要求 → demanding adj."},
+          "ex": {"type": "真", "year": 2023, "en": "They find these exercises too demanding.", "zh": "他们发现这些练习要求太高了。", "key": ["demanding"]},
+          "ext": []
+        },
+        {
+          "no": 13, "word": "acquire", "freq": 1, "page": 157,
+          "prons": [{"ipa": "/əˈkwaɪə(r)/", "senses": [{"pos": "v.", "mean": "[[获得]]，[[得到]]；[[购得]]；[[养成（习惯）]]"}]}],
+          "tip": {"type": "联想", "text": "ac-（一再地）+ quire（询问）→ 经过一再地询问，他最终“得到”了答案。"},
+          "ex": {"type": "真", "year": 2016, "en": "It can be acquired through persistent practice.", "zh": "它可以通过坚持练习获得。", "key": ["acquired"]},
+          "ext": [{"word": "acquisition", "ipa": "/ˌækwɪˈzɪʃn/", "senses": [{"pos": "n.", "mean": "获得；获得物"}]}]
+        },
+        {
+          "no": 14, "word": "inquire", "alt": "enquire", "freq": 2, "page": 157,
+          "prons": [{"ipa": "/ɪnˈkwaɪə(r)/", "senses": [{"pos": "v.", "mean": "[[询问]]；[[查究]]；[[研究]]"}]}],
+          "tip": {"type": "联想", "text": "in（入）+ quire（询问）→ 询问到很深入的境界，就需要“研究”了。"},
+          "ex": {"type": "真", "year": 2021, "en": "He inquired about his client's family background.", "zh": "他询问了客户的家庭背景。", "key": ["inquired about"]},
+          "ext": [
+            {"word": "inquiry", "alt": "enquiry", "ipa": "/ɪnˈkwaɪəri/", "senses": [{"pos": "n.", "mean": "调查；查究；查问"}]},
+            {"word": "inquisitive", "ipa": "/ɪnˈkwɪzətɪv/", "senses": [{"pos": "adj.", "mean": "过分好奇的；爱打听的"}]}
+          ]
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "title": "“精神”相关",
+      "pages": [158, 160],
+      "map": {
+        "w": "“精神”相关",
+        "children": [
+          {"w": "encourage", "children": [
+            {"w": "encouragement", "rel": "扩", "children": [{"w": "encouraging"}]},
+            {"w": "courage", "rel": "形近", "children": [{"w": "courageous", "rel": "扩"}]},
+            {"w": "discourage", "rel": "反义", "children": [
+              {"w": "frustrate", "rel": "近义", "children": [{"w": "frustration", "rel": "扩"}, {"w": "frustrating", "rel": "扩"}]},
+              {"w": "provoke", "rel": "相关", "children": [
+                {"w": "provocation", "rel": "扩"},
+                {"w": "provocative", "rel": "扩"},
+                {"w": "choke", "rel": "相关"}
+              ]}
+            ]},
+            {"w": "advocate", "rel": "近义", "children": [
+              {"w": "advocacy", "rel": "扩"},
+              {"w": "sponsor", "rel": "相关", "children": [
+                {"w": "sponsorship", "rel": "扩"},
+                {"w": "spontaneous", "rel": "同根", "children": [{"w": "spontaneity"}]}
+              ]}
+            ]}
+          ]},
+          {"w": "spirit", "children": [
+            {"w": "spiritual", "rel": "扩"},
+            {"w": "inspire", "rel": "同根", "children": [
+              {"w": "inspiration", "rel": "扩"},
+              {"w": "inspirational", "rel": "扩"}
+            ]},
+            {"w": "aspire", "rel": "同根", "children": [
+              {"w": "eager", "rel": "相关", "children": [{"w": "eagle", "rel": "形近"}]},
+              {"w": "cease", "rel": "相关", "children": [
+                {"w": "halt", "rel": "近义"},
+                {"w": "suspend", "rel": "近义", "children": [{"w": "suspense", "rel": "扩"}, {"w": "suspension", "rel": "扩"}]}
+              ]},
+              {"w": "thirst", "rel": "近义", "children": [{"w": "thirsty", "rel": "扩"}]},
+              {"w": "desire", "rel": "近义", "children": [
+                {"w": "desirable", "rel": "扩"},
+                {"w": "desirability", "rel": "扩"},
+                {"w": "desirous", "rel": "扩"}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 15, "word": "courage", "freq": 1, "page": 158,
+          "prons": [{"ipa": "/ˈkʌrɪdʒ/", "senses": [{"pos": "n.", "mean": "[[勇气]]；[[勇敢]]；[[胆量]]；[[无畏]]"}]}],
+          "tip": {"type": "联想", "text": "c + our（我们的）+ age（时代）→ 我们这个时代需要“勇气”去拼搏。"},
+          "ex": {"type": "例", "en": "Her courage is an example to all of us.", "zh": "她的勇气是我们大家的榜样。", "key": ["courage"]},
+          "ext": [{"word": "courageous", "ipa": "/kəˈreɪdʒəs/", "senses": [{"pos": "adj.", "mean": "勇敢的；无畏的"}]}]
+        },
+        {
+          "no": 16, "word": "encourage", "freq": 1, "page": 158,
+          "prons": [{"ipa": "/ɪnˈkʌrɪdʒ/", "senses": [{"pos": "v.", "mean": "[[支持]]；[[鼓励]]，[[激励]]；[[刺激]]"}]}],
+          "tip": {"type": "构词", "text": "en-（使）+ courage（勇气）→ 鼓励"},
+          "ex": {"type": "真", "year": 2020, "en": "Parents should encourage their child to take the risks needed to learn and grow.", "zh": "父母应该鼓励他们的孩子承担学习和成长中必要的风险。", "key": ["encourage"]},
+          "ext": [
+            {"word": "encouragement", "ipa": "/ɪnˈkʌrɪdʒmənt/", "senses": [{"pos": "n.", "mean": "鼓舞，鼓励"}]},
+            {"word": "encouraging", "ipa": "/ɪnˈkʌrɪdʒɪŋ/", "senses": [{"pos": "adj.", "mean": "鼓励的，激励的"}]}
+          ]
+        },
+        {
+          "no": 17, "word": "discourage", "freq": 2, "page": 158,
+          "prons": [{"ipa": "/dɪsˈkʌrɪdʒ/", "senses": [{"pos": "v.", "mean": "[[使气馁]]，[[使灰心]]；[[阻止]]"}]}],
+          "tip": {"type": "构词", "text": "dis-（不）+ courage（勇气）→ 使气馁，使灰心"},
+          "ex": {"type": "真", "year": 2020, "en": "Playing with digital devices discourages kids from active discovery.", "zh": "玩数字设备会阻碍孩子们积极探索。", "key": ["discourages", "from"]},
+          "ext": []
+        },
+        {
+          "no": 18, "word": "frustrate", "freq": 3, "page": 158,
+          "prons": [{"ipa": "/frʌˈstreɪt/", "senses": [{"pos": "v.", "mean": "[[使懊恼]]；[[使气馁]]，[[使沮丧]]"}]}],
+          "tip": {"type": "联想", "text": "fru（联想“妇孺”）+ st（联想 street）+ rat（老鼠）+ e → 一群妇孺在街上追老鼠却没追上，感到沮丧 → 使沮丧"},
+          "ex": {"type": "真", "year": 2020, "en": "Gender inequality continues to frustrate a lot of female employees.", "zh": "性别不平等仍令许多女性员工沮丧。", "key": ["frustrate"]},
+          "ext": [
+            {"word": "frustration", "ipa": "/frʌˈstreɪʃn/", "senses": [{"pos": "n.", "mean": "气馁，沮丧；挫败"}]},
+            {"word": "frustrating", "ipa": "/frʌˈstreɪtɪŋ/", "senses": [{"pos": "adj.", "mean": "令人懊恼的，令人沮丧的"}]}
+          ]
+        },
+        {
+          "no": 19, "word": "provoke", "freq": 2, "page": 158,
+          "prons": [{"ipa": "/prəˈvəʊk/", "senses": [{"pos": "v.", "mean": "[[激起]]，[[引发]]；[[挑衅]]，[[激怒]]"}]}],
+          "tip": {"type": "联想", "text": "pro-（提前）+ voke（音似“我剋”）→ 拳击比赛还没开始，我就剋（打）了对手一拳，“激怒”了他。"},
+          "ex": {"type": "例", "en": "The article was intended to provoke discussion.", "zh": "这篇文章旨在引发讨论。", "key": ["provoke"]},
+          "ext": [
+            {"word": "provocation", "ipa": "/ˌprɒvəˈkeɪʃn/", "senses": [{"pos": "n.", "mean": "挑衅，激怒"}]},
+            {"word": "provocative", "ipa": "/prəˈvɒkətɪv/", "senses": [{"pos": "adj.", "mean": "挑衅的，激起争端的"}]}
+          ]
+        },
+        {
+          "no": 20, "word": "advocate", "freq": 1, "page": 159,
+          "prons": [
+            {"ipa": "/ˈædvəkət/", "senses": [{"pos": "n.", "mean": "[[拥护者]]，[[支持者]]；[[辩护律师]]"}]},
+            {"ipa": "/ˈædvəkeɪt/", "senses": [{"pos": "v.", "mean": "[[拥护]]；[[支持]]；[[提倡]]"}]}
+          ],
+          "tip": {"type": "构词", "text": "ad-（= to）+ voc（说）+ -ate（后缀）→ 对……说 → 支持；提倡"},
+          "ex": {"type": "例", "en": "It is evident that the writer advocates the idea of returning to nature.", "zh": "很明显，作者提倡回归自然的思想。", "key": ["advocates"]},
+          "ext": [{"word": "advocacy", "ipa": "/ˈædvəkəsi/", "senses": [{"pos": "n.", "mean": "拥护；支持；提倡"}]}]
+        },
+        {
+          "no": 21, "word": "choke", "freq": 2, "page": 159,
+          "prons": [{"ipa": "/tʃəʊk/", "senses": [{"pos": "v.", "mean": "[[（使）窒息]]；[[噎住]]；哽咽"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“撬开”→ 他吃饭时“噎住”了，她立刻撬开他的嘴，以防“窒息”。"},
+          "ex": {"type": "例", "en": "Very small toys can choke a baby.", "zh": "很小的玩具可使婴儿窒息。", "key": ["choke"]},
+          "ext": []
+        },
+        {
+          "no": 22, "word": "sponsor", "freq": 2, "page": 159,
+          "prons": [{"ipa": "/ˈspɒnsə(r)/", "senses": [{"pos": "v.", "mean": "[[主办]]；[[赞助]]"}, {"pos": "n.", "mean": "[[发起人]]，[[赞助者]]"}]}],
+          "tip": {"type": "联想", "text": "s（联想“美女”）+ pon（音似“帮”）+ sor（音似 sir）→ 美女帮助了一位先生，成了他的“赞助者”。"},
+          "ex": {"type": "例", "en": "It refused to sponsor the 1984 Olympics.", "zh": "它拒绝赞助1984年的奥运会。", "key": ["sponsor"]},
+          "ext": [{"word": "sponsorship", "ipa": "/ˈspɒnsəʃɪp/", "senses": [{"pos": "n.", "mean": "资助；倡议"}]}]
+        },
+        {
+          "no": 23, "word": "spontaneous", "freq": 1, "page": 159,
+          "prons": [{"ipa": "/spɒnˈteɪniəs/", "senses": [{"pos": "adj.", "mean": "[[自发的]]；[[自然的]]"}]}],
+          "tip": {"type": "联想", "text": "sponta（音似“死帮他”）+ neous → 他努力帮助那位先生的行为是“自发的”。"},
+          "ex": {"type": "例", "en": "He found many lies are spontaneous responses to an unexpected demand.", "zh": "他发现，许多谎言都是对意外需求的自发反应。", "key": ["spontaneous"]},
+          "ext": [{"word": "spontaneity", "ipa": "/ˌspɒntəˈneɪəti/", "senses": [{"pos": "n.", "mean": "自发性；自然"}]}]
+        },
+        {
+          "no": 24, "word": "spirit", "freq": 1, "page": 159,
+          "prons": [{"ipa": "/ˈspɪrɪt/", "senses": [{"pos": "n.", "mean": "[[精神]]；[[心灵]]；[[本质]]"}]}],
+          "tip": {"type": "对照", "text": "我喝完雪碧（Sprite）瞬间有了精神（spirit）。"},
+          "ex": {"type": "真", "year": 2022, "en": "They had a strong community spirit.", "zh": "他们有强烈的集体精神。", "key": ["spirit"]},
+          "ext": [{"word": "spiritual", "ipa": "/ˈspɪrɪtʃuəl/", "senses": [{"pos": "adj.", "mean": "精神的；心灵的；宗教的"}]}]
+        },
+        {
+          "no": 25, "word": "inspire", "freq": 2, "page": 159,
+          "prons": [{"ipa": "/ɪnˈspaɪə(r)/", "senses": [{"pos": "v.", "mean": "[[激励]]，[[鼓舞]]；[[赋予灵感]]"}]}],
+          "tip": {"type": "构词", "text": "in-（入）+ spire（= spirit）→ 注入精神力量 → 激励，鼓舞；赋予灵感"},
+          "ex": {"type": "真", "year": 2017, "en": "Our philosophy is to inspire kids at a young age to understand that engineering is a great career.", "zh": "我们的理念是在孩子们很小的时候就启迪他们，让他们明白工程学是一个伟大的职业。", "key": ["inspire"]},
+          "ext": []
+        },
+        {
+          "no": 26, "word": "inspiration", "freq": 2, "page": 159,
+          "prons": [{"ipa": "/ˌɪnspəˈreɪʃn/", "senses": [{"pos": "n.", "mean": "[[灵感]]；鼓舞人心的人或事物；好主意"}]}],
+          "tip": {"type": "对照", "text": "inspire v. 激励；赋予灵感 → inspiration n."},
+          "ex": {"type": "例", "en": "Music gives me inspiration.", "zh": "音乐给我灵感。", "key": ["inspiration"]},
+          "ext": [{"word": "inspirational", "ipa": "/ˌɪnspəˈreɪʃənl/", "senses": [{"pos": "adj.", "mean": "启发灵感的；鼓舞人心的"}]}]
+        },
+        {
+          "no": 27, "word": "aspire", "freq": 1, "page": 159,
+          "prons": [{"ipa": "/əˈspaɪə(r)/", "senses": [{"pos": "v.", "mean": "[[渴望]]，[[有志于]]"}]}],
+          "tip": {"type": "构词", "text": "a-（= to）+ spire（= spirit）→ 对……有精神 → 渴望，有志于"},
+          "ex": {"type": "例", "en": "He aspired to be their next leader.", "zh": "他渴望成为他们的下一届领导。", "key": ["aspired to"]},
+          "ext": []
+        },
+        {
+          "no": 28, "word": "eager", "freq": 3, "page": 159,
+          "prons": [{"ipa": "/ˈiːɡə(r)/", "senses": [{"pos": "adj.", "mean": "[[热切的]]，[[渴望的]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“一哥”→ 很多人都想成为某个行业的“一哥”→ 渴望的"},
+          "ex": {"type": "真", "year": 2021, "en": "They were more eager to enjoy a movie.", "zh": "他们更渴望看电影。", "key": ["were", "eager to"]},
+          "ext": []
+        },
+        {
+          "no": 29, "word": "eagle", "freq": 1, "page": 160,
+          "prons": [{"ipa": "/ˈiːɡl/", "senses": [{"pos": "n.", "mean": "[[鹰]]"}]}],
+          "tip": {"type": "对照", "text": "这只鹰（eagle）渴望（eager）成为鸟界一哥。"},
+          "ex": {"type": "真", "year": 2021, "en": "They fell victim to eagles.", "zh": "他们沦为老鹰的受害者。", "key": ["eagles"]},
+          "ext": []
+        },
+        {
+          "no": 30, "word": "thirst", "freq": 2, "page": 160,
+          "prons": [{"ipa": "/θɜːst/", "senses": [{"pos": "v.", "mean": "[[渴望]]，[[渴求]]"}, {"pos": "n.", "mean": "[[渴望]]；[[口渴]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Thousands are dying of thirst.", "zh": "成千上万的人都干渴得奄奄一息。", "key": ["thirst"]},
+          "ext": [{"word": "thirsty", "ipa": "/ˈθɜːsti/", "senses": [{"pos": "adj.", "mean": "渴的，口渴的"}]}]
+        },
+        {
+          "no": 31, "word": "desire", "freq": 3, "page": 160,
+          "prons": [{"ipa": "/dɪˈzaɪə(r)/", "senses": [{"pos": "n.", "mean": "[[愿望]]，[[欲望]]；[[渴望]]"}, {"pos": "v.", "mean": "[[渴望]]；[[期望]]"}]}],
+          "tip": {"type": "联想", "text": "de（音似“弟”）+ sir（先生）+ e（联想“鹅”）→ 弟弟“渴望”先生讲鹅的故事。"},
+          "ex": {"type": "真", "year": 2017, "en": "I have no desire to make millions of dollars.", "zh": "我不想赚数百万美元。", "key": ["desire to"]},
+          "ext": [
+            {"word": "desirable", "ipa": "/dɪˈzaɪərəbl/", "senses": [{"pos": "adj.", "mean": "向往的；可取的；值得拥有的"}]},
+            {"word": "desirability", "ipa": "/dɪˌzaɪərəˈbɪləti/", "senses": [{"pos": "n.", "mean": "愿望；欲求；性感"}]},
+            {"word": "desirous", "ipa": "/dɪˈzaɪərəs/", "senses": [{"pos": "adj.", "mean": "渴望的，希望的"}]}
+          ]
+        },
+        {
+          "no": 32, "word": "cease", "freq": 1, "page": 160,
+          "prons": [{"ipa": "/siːs/", "senses": [{"pos": "v.", "mean": "[[停止]]，[[终止]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“谁死”→ 停止，终止"},
+          "ex": {"type": "真", "year": 2019, "en": "The close link between age and stage may cease to exist in a multi-stage life.", "zh": "在多阶段的人生中，年龄和所处阶段之间的密切联系可能不复存在。", "key": ["cease to"]},
+          "ext": []
+        },
+        {
+          "no": 33, "word": "suspend", "freq": 2, "page": 160,
+          "prons": [{"ipa": "/səˈspend/", "senses": [{"pos": "v.", "mean": "[[悬，挂]]；[[暂停]]，[[中止]]"}]}],
+          "tip": {"type": "联想", "text": "sus-（下面）+ pen（钢笔）+ d（联想“袋”）→ 他身着中山装，钢笔则朝下“挂”在口袋上。"},
+          "ex": {"type": "真", "year": 2016, "en": "They suspend import of necessities from overseas.", "zh": "他们暂停从海外进口必需品。", "key": ["suspend"]},
+          "ext": [
+            {"word": "suspense", "ipa": "/səˈspens/", "senses": [{"pos": "n.", "mean": "担心，焦虑；兴奋；悬念"}]},
+            {"word": "suspension", "ipa": "/səˈspenʃn/", "senses": [{"pos": "n.", "mean": "暂令停职（或停学、停赛等）；暂缓；推迟"}]}
+          ]
+        },
+        {
+          "no": 34, "word": "halt", "freq": 3, "page": 160,
+          "prons": [{"ipa": "/hɔːlt; hɒlt/", "senses": [{"pos": "v.", "mean": "[[（使）停止]]，[[停下]]"}, {"pos": "n.", "mean": "[[停止]]；[[阻止]]；[[暂停]]"}]}],
+          "tip": {"type": "联想", "text": "ha（联想“哈”）+ l（联想“了”）+ t（联想“他”）→ 他哈（吓）了一跳，目瞪口呆地停在那里 → 停止；暂停"},
+          "ex": {"type": "例", "en": "The eyes of a very good reader move quickly, taking long jumps and making very short halts.", "zh": "一个优秀的阅读者眼睛移动得很快，跳得很远，停顿很短。", "key": ["halts"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "title": "“描述、技术”相关",
+      "pages": [160, 162],
+      "map": {
+        "w": "“描述、技术”相关",
+        "children": [
+          {"w": "describe", "children": [
+            {"w": "description", "rel": "扩"},
+            {"w": "descriptive", "rel": "扩"},
+            {"w": "prescribe", "rel": "相关", "children": [{"w": "prescription", "rel": "扩"}]},
+            {"w": "script", "rel": "相关", "children": [{"w": "scripture", "rel": "扩"}]}
+          ]},
+          {"w": "technique", "children": [
+            {"w": "technical", "rel": "扩"},
+            {"w": "technology", "rel": "相关", "children": [
+              {"w": "technological", "rel": "扩"},
+              {"w": "technician", "rel": "扩"}
+            ]},
+            {"w": "mechanic", "rel": "相关", "children": [
+              {"w": "mechanics", "rel": "扩"},
+              {"w": "mechanical", "rel": "扩"},
+              {"w": "mechanise", "rel": "扩"},
+              {"w": "mechanisation", "rel": "扩"},
+              {"w": "mechanism", "rel": "扩", "children": [
+                {"w": "machinery", "rel": "相关"},
+                {"w": "machine", "rel": "相关"}
+              ]}
+            ]}
+          ]},
+          {"w": "skill", "children": [{"w": "skillful", "children": [{"w": "skilled"}]}]},
+          {"w": "high-tech", "children": [
+            {"w": "biotechnology", "rel": "相关", "children": [
+              {"w": "clone", "rel": "相关"},
+              {"w": "gene", "rel": "相关", "children": [
+                {"w": "genetic", "rel": "扩"},
+                {"w": "genetically", "rel": "扩"}
+              ]}
+            ]}
+          ]},
+          {"w": "hardware", "children": [
+            {"w": "radar", "children": [
+              {"w": "radiation", "rel": "相关", "children": [{"w": "radiate", "rel": "扩"}]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 35, "word": "describe", "freq": 1, "page": 161,
+          "prons": [{"ipa": "/dɪˈskraɪb/", "senses": [{"pos": "v.", "mean": "[[形容]]，[[描述]]"}]}],
+          "tip": {"type": "构词", "text": "de-（往下）+ scribe（写）→ 写下来 → 描述"},
+          "ex": {"type": "真", "year": 2022, "en": "What three words would you use to describe the culture here?", "zh": "你会用哪三个词来描述这里的文化？", "key": ["describe"]},
+          "ext": [
+            {"word": "description", "ipa": "/dɪˈskrɪpʃn/", "senses": [{"pos": "n.", "mean": "描述；说明；类型"}]},
+            {"word": "descriptive", "ipa": "/dɪˈskrɪptɪv/", "senses": [{"pos": "adj.", "mean": "描写的，叙述的，说明的"}]}
+          ]
+        },
+        {
+          "no": 36, "word": "script", "freq": 1, "page": 161,
+          "prons": [{"ipa": "/skrɪpt/", "senses": [{"pos": "n.", "mean": "[[手迹]]，[[笔迹]]；[[剧本]]"}]}],
+          "tip": {"type": "对照", "text": "这个抄写员（scribe）的笔迹（script）很容易辨认。"},
+          "ex": {"type": "例", "en": "Page 55 is missing from the woman's scripts.", "zh": "这位女士的剧本中少了第55页。", "key": ["scripts"]},
+          "ext": [{"word": "scripture", "ipa": "/ˈskrɪptʃə(r)/", "senses": [{"pos": "n.", "mean": "（某一宗教的）经文，经籍，圣书；(Scripture)《圣经》"}]}]
+        },
+        {
+          "no": 37, "word": "prescribe", "freq": 1, "page": 161,
+          "prons": [{"ipa": "/prɪˈskraɪb/", "senses": [{"pos": "v.", "mean": "[[开处方]]；[[规定]]"}]}],
+          "tip": {"type": "构词", "text": "pre-（提前）+ scribe（写）→ 拿药前，医生会提前写好处方 → 开处方"},
+          "ex": {"type": "例", "en": "Police regulations prescribe that an officer's number must be clearly visible.", "zh": "警政制度规定，警察的编号必须清晰可见。", "key": ["prescribe"]},
+          "ext": [{"word": "prescription", "ipa": "/prɪˈskrɪpʃn/", "senses": [{"pos": "n.", "mean": "处方，药方；（医生开的）处方药；解决方法"}]}]
+        },
+        {
+          "no": 38, "word": "skill", "freq": 1, "page": 161,
+          "prons": [{"ipa": "/skɪl/", "senses": [{"pos": "n.", "mean": "[[技巧]]；[[技艺]]，[[技术]]，[[技能]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2015, "en": "Cooking skills can be improved with practice.", "zh": "烹饪技巧可以通过练习来提高。", "key": ["skills"]},
+          "ext": [
+            {"word": "skillful", "alt": "skilful", "ipa": "/ˈskɪlfl/", "senses": [{"pos": "adj.", "mean": "熟练的；制作精良的"}]},
+            {"word": "skilled", "ipa": "/skɪld/", "senses": [{"pos": "adj.", "mean": "有技能的；熟练的"}]}
+          ]
+        },
+        {
+          "no": 39, "word": "technique", "freq": 2, "page": 161,
+          "prons": [{"ipa": "/tekˈniːk/", "senses": [{"pos": "n.", "mean": "[[技巧]]，[[技艺]]，[[工艺]]；[[技能]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“泰克尼克”→ 泰克认为泰坦尼克号发生事故的原因之一可能是建造“技艺”不成熟。"},
+          "ex": {"type": "真", "year": 2019, "en": "They learned the techniques of collaborative writing.", "zh": "他们学习了协同写作的技巧。", "key": ["techniques"]},
+          "ext": [{"word": "technical", "ipa": "/ˈteknɪkl/", "senses": [{"pos": "adj.", "mean": "技术的，技能的；专业的"}]}]
+        },
+        {
+          "no": 40, "word": "technology", "freq": 2, "page": 161,
+          "prons": [{"ipa": "/tekˈnɒlədʒi/", "senses": [{"pos": "n.", "mean": "[[科技]]；[[工艺]]；[[工程技术]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The era of personal technology is in many ways just beginning.", "zh": "从很多方面来说，个人技术的时代才刚刚开始。", "key": ["technology"]},
+          "ext": [{"word": "technological", "ipa": "/ˌteknəˈlɒdʒɪkl/", "senses": [{"pos": "adj.", "mean": "技术的；科技的；工艺的"}]}]
+        },
+        {
+          "no": 41, "word": "high-tech", "alt": "hi-tech", "freq": 1, "page": 161,
+          "prons": [{"ipa": "/ˌhaɪ ˈtek/", "senses": [{"pos": "adj.", "mean": "[[高科技的（尤指电子方面）]]；[[样式新颖的]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2021, "en": "Hi-tech products can boost people's integrative thinking.", "zh": "高科技产品可以提高人们的综合思维。", "key": ["Hi-tech"]},
+          "ext": []
+        },
+        {
+          "no": 42, "word": "biotechnology", "freq": 1, "page": 161,
+          "prons": [{"ipa": "/ˌbaɪəʊtekˈnɒlədʒi/", "senses": [{"pos": "n.", "mean": "[[生物科技]]"}]}],
+          "tip": {"type": "构词", "text": "bio-（生物）+ technology（科技）→ 生物科技"},
+          "ex": {"type": "例", "en": "On balance, biotechnology should be good news for developing countries.", "zh": "总的来说，生物技术对发展中国家应该是好消息。", "key": ["biotechnology"]},
+          "ext": []
+        },
+        {
+          "no": 43, "word": "clone", "freq": 1, "page": 161,
+          "prons": [{"ipa": "/kləʊn/", "senses": [{"pos": "n.", "mean": "[[克隆动物（或植物）]]"}, {"pos": "v.", "mean": "[[克隆]]，[[复制]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2024, "en": "Genetic researchers in China have made a clone of a star police dog.", "zh": "中国的基因研究人员克隆了一只明星警犬。", "key": ["clone"]},
+          "ext": []
+        },
+        {
+          "no": 44, "word": "genetic", "freq": 1, "page": 161,
+          "prons": [{"ipa": "/dʒəˈnetɪk/", "senses": [{"pos": "adj.", "mean": "[[基因的]]，[[遗传学的]]"}]}],
+          "tip": {"type": "对照", "text": "gene n.基因 → genetic adj."},
+          "ex": {"type": "例", "en": "There are about 4,000 inherited human genetic diseases.", "zh": "人类遗传性疾病约有4,000种。", "key": ["genetic"]},
+          "ext": [
+            {"word": "gene", "ipa": "/dʒiːn/", "senses": [{"pos": "n.", "mean": "基因"}]},
+            {"word": "genetically", "ipa": "/dʒəˈnetɪkli/", "senses": [{"pos": "adv.", "mean": "从遗传学角度；从基因方面"}]}
+          ]
+        },
+        {
+          "no": 45, "word": "technician", "freq": 2, "page": 162,
+          "prons": [{"ipa": "/tekˈnɪʃn/", "senses": [{"pos": "n.", "mean": "[[技术员]]；[[技师]]"}]}],
+          "tip": {"type": "构词", "text": "technic（技术）+ -ian（表示人的后缀）→ 技术员"},
+          "ex": {"type": "真", "year": 2016, "en": "He asked a technician to fix the broken production line.", "zh": "他请技术员修理坏了的生产线。", "key": ["technician"]},
+          "ext": []
+        },
+        {
+          "no": 46, "word": "mechanic", "freq": 3, "page": 162,
+          "prons": [{"ipa": "/məˈkænɪk/", "senses": [{"pos": "n.", "mean": "[[机械师]]，[[机械修理工]]；[[技工]]"}]}],
+          "tip": {"type": "联想", "text": "mechan（联想 machine）+ -ic（表示人的后缀）→ 修机器的人 → 机械师；技工"},
+          "ex": {"type": "例", "en": "Buying that second-hand car without having it checked by a mechanic first cost us dear.", "zh": "购买那辆二手车时没有先请技师检查，让我们损失惨重。", "key": ["mechanic"]},
+          "ext": [
+            {"word": "mechanics", "ipa": "/məˈkænɪks/", "senses": [{"pos": "n.", "mean": "机械学"}]},
+            {"word": "mechanical", "ipa": "/məˈkænɪkl/", "senses": [{"pos": "adj.", "mean": "机动的，机械的；无思想的"}]},
+            {"word": "mechanise", "alt": "-ize", "ipa": "/ˈmekənaɪz/", "senses": [{"pos": "v.", "mean": "（使）机械化"}]},
+            {"word": "mechanisation", "alt": "-ization", "ipa": "/ˌmekənaɪˈzeɪʃn/", "senses": [{"pos": "n.", "mean": "机械化"}]}
+          ]
+        },
+        {
+          "no": 47, "word": "mechanism", "freq": 2, "page": 162,
+          "prons": [{"ipa": "/ˈmekənɪzəm/", "senses": [{"pos": "n.", "mean": "[[机械装置]]，[[机件]]；[[方法]]；[[（生物体内的）机制]]"}]}],
+          "tip": {"type": "联想", "text": "mechan（联想 machine）+ -ism（名词后缀）→ 机械装置"},
+          "ex": {"type": "例", "en": "There is no mechanism to ensure that they make the required effort.", "zh": "没有任何机制可以确保他们做出必要的努力。", "key": ["mechanism"]},
+          "ext": []
+        },
+        {
+          "no": 48, "word": "machinery", "freq": 1, "page": 162,
+          "prons": [{"ipa": "/məˈʃiːnəri/", "senses": [{"pos": "n.", "mean": "[[机器]]，[[机械]]；[[体系]]；[[（使机器运转的）部件]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2016, "en": "It accompanies all machinery involving high technology.", "zh": "它伴随着所有涉及高科技的机器。", "key": ["machinery"]},
+          "ext": [{"word": "machine", "ipa": "/məˈʃiːn/", "senses": [{"pos": "n.", "mean": "机器"}]}]
+        },
+        {
+          "no": 49, "word": "radar", "freq": 1, "page": 162,
+          "prons": [{"ipa": "/ˈreɪdɑː(r)/", "senses": [{"pos": "n.", "mean": "[[雷达]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“雷达”。"},
+          "ex": {"type": "例", "en": "By moving the radar beam around slowly in circles, we can explore the surroundings.", "zh": "通过让雷达波绕着圆圈慢慢移动，我们可以探索周围的环境。", "key": ["radar"]},
+          "ext": []
+        },
+        {
+          "no": 50, "word": "radiation", "freq": 2, "page": 162,
+          "prons": [{"ipa": "/ˌreɪdiˈeɪʃn/", "senses": [{"pos": "n.", "mean": "[[辐射]]；[[放射线]]；[[放射疗法]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Enormous quantities of radiation from the sun are screened off.", "zh": "来自太阳的大量辐射被屏蔽掉。", "key": ["radiation"]},
+          "ext": [{"word": "radiate", "ipa": "/ˈreɪdieɪt/", "senses": [{"pos": "v.", "mean": "辐射，放射"}]}]
+        },
+        {
+          "no": 51, "word": "hardware", "freq": 1, "page": 162,
+          "prons": [{"ipa": "/ˈhɑːdweə(r)/", "senses": [{"pos": "n.", "mean": "[[硬件]]；[[工具]]，[[设备]]，[[机器]]"}]}],
+          "tip": {"type": "联想", "text": "hard（硬的）+ wa（音似“挖”）+ re（重复）→ 用硬东西重复地挖 → 工具，设备"},
+          "ex": {"type": "例", "en": "For the consumer, it's a matter of paying now for the hardware to save later on the utilities.", "zh": "对于消费者来说，现在支付硬件费用可以节省以后的水电费。", "key": ["hardware"]},
+          "ext": []
+        }
+      ]
+    }
+  ]
+}

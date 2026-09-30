@@ -1,0 +1,908 @@
+{
+  "id": "u06-l03",
+  "part": 1,
+  "unit": 6,
+  "lesson": 3,
+  "pages": [172, 181],
+  "groups": [
+    {
+      "no": 11,
+      "title": "“原因”相关",
+      "pages": [172, 172],
+      "map": {"w": "“原因”相关", "children": [
+        {"w": "cause", "children": [
+          {"w": "due", "rel": "相关", "children": [
+            {"w": "duly", "rel": "扩"},
+            {"w": "given", "rel": "相关"},
+            {"w": "sake", "rel": "相关"}
+          ]}
+        ]},
+        {"w": "ingredient", "children": [
+          {"w": "factor", "rel": "相关", "children": [
+            {"w": "element", "children": [{"w": "elementary", "rel": "扩"}]}
+          ]}
+        ]}
+      ]},
+      "entries": [
+        {
+          "no": 1, "word": "cause", "freq": 1, "page": 172,
+          "prons": [{"ipa": "/kɔːz/", "senses": [
+            {"pos": "n.", "mean": "[[起因]]；理由；事业"},
+            {"pos": "v.", "mean": "[[导致]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2023, "en": "A lot of times, though, the act of keeping your name is still something that causes concern.", "zh": "然而，很多时候，保留你的名字的行为仍然令人担忧。", "key": ["causes"]},
+          "ext": []
+        },
+        {
+          "no": 2, "word": "due", "freq": 1, "page": 172,
+          "prons": [{"ipa": "/djuː/", "senses": [
+            {"pos": "adj.", "mean": "[[由于]]；预期的；[[应得的]]"},
+            {"pos": "n.", "mean": "[[应付款]]；[[应得之物]]"},
+            {"pos": "adv.", "mean": "[[正向]]，正对着"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“丢”→ 他“由于”弄丢了手表，没有在“预期的”时间内到达目的地。"},
+          "ex": {"type": "真", "year": 2024, "en": "This is partly due to a lack of necessary evidence.", "zh": "部分原因是缺乏必要的证据。", "key": ["due", "to"]},
+          "ext": [{"word": "duly", "ipa": "/ˈdjuːli/", "senses": [{"pos": "adv.", "mean": "适当地，恰当地"}]}]
+        },
+        {
+          "no": 3, "word": "given", "freq": 3, "page": 172,
+          "prons": [{"ipa": "/ˈɡɪvn/", "senses": [
+            {"pos": "adj.", "mean": "[[规定的]]；[[特定的]]"},
+            {"pos": "prep.", "mean": "[[考虑到]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Given his age, he's remarkably active.", "zh": "考虑到他的年龄，他已是相当活跃的了。", "key": ["Given"]},
+          "ext": []
+        },
+        {
+          "no": 4, "word": "ingredient", "freq": 3, "page": 172,
+          "prons": [{"ipa": "/ɪnˈɡriːdiənt/", "senses": [{"pos": "n.", "mean": "[[成分]]；(尤指烹饪)[[材料]]；(成功的)因素，要素"}]}],
+          "tip": {"type": "联想", "text": "in（里面）+ gredi（联想“搁点”）+ ent → 做饭时要往锅里搁点“材料”。"},
+          "ex": {"type": "真", "year": 2015, "en": "But innovation, broadly defined, is the crucial ingredient in all economic progress.", "zh": "但广义上说，创新是所有经济进步的关键因素。", "key": ["ingredient"]},
+          "ext": []
+        },
+        {
+          "no": 5, "word": "element", "freq": 2, "page": 172,
+          "prons": [{"ipa": "/ˈelɪmənt/", "senses": [{"pos": "n.", "mean": "[[要素，因素]]；(学科的)基本原理，[[基础]]，纲要"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2020, "en": "Credit cards and loans will be a central element.", "zh": "信用卡和贷款将是核心要素。", "key": ["element"]},
+          "ext": [{"word": "elementary", "ipa": "/ˌelɪˈmentri/", "senses": [{"pos": "adj.", "mean": "基本的，初级的"}]}]
+        },
+        {
+          "no": 6, "word": "factor", "freq": 3, "page": 172,
+          "prons": [{"ipa": "/ˈfæktə(r)/", "senses": [{"pos": "n.", "mean": "[[因素，要素]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2016, "en": "It is a chief factor affecting students' learning.", "zh": "它是影响学生学习的主要因素。", "key": ["factor"]},
+          "ext": []
+        },
+        {
+          "no": 7, "word": "sake", "freq": 2, "page": 172,
+          "prons": [{"ipa": "/seɪk/", "senses": [{"pos": "n.", "mean": "[[缘故]]，[[为了……起见]]"}]}],
+          "tip": {"type": "对照", "text": "他一直在寻找（seek）是何缘故（sake）。"},
+          "ex": {"type": "例", "en": "They stayed together for the sake of the children.", "zh": "为了孩子，他们还待在一起。", "key": ["for the sake of"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 12,
+      "title": "“言语冲突”相关",
+      "pages": [172, 174],
+      "map": {"w": "“言语冲突”相关", "children": [
+        {"w": "curse", "children": [
+          {"w": "accuse", "rel": "形近", "children": [{"w": "accusation", "rel": "扩"}]},
+          {"w": "excuse", "rel": "形近", "children": [
+            {"w": "forgive", "rel": "近义", "children": [{"w": "forgiving", "rel": "扩"}]}
+          ]},
+          {"w": "insult", "rel": "相关", "children": [
+            {"w": "consult", "rel": "形近", "children": [
+              {"w": "consultation", "rel": "扩"},
+              {"w": "consultative", "rel": "扩"},
+              {"w": "consultant", "rel": "扩"}
+            ]}
+          ]}
+        ]},
+        {"w": "scold", "children": [
+          {"w": "blame", "rel": "相关", "children": [
+            {"w": "tame", "rel": "形近", "children": [{"w": "melt", "rel": "相关"}]}
+          ]},
+          {"w": "criticise", "rel": "相关", "children": [
+            {"w": "critic", "rel": "扩"},
+            {"w": "criticism", "rel": "扩"},
+            {"w": "critical", "rel": "扩"},
+            {"w": "criterion", "rel": "形近"}
+          ]}
+        ]},
+        {"w": "quarrel", "children": [{"w": "quarrelsome", "rel": "扩"}]}
+      ]},
+      "entries": [
+        {
+          "no": 8, "word": "forgive", "freq": 1, "page": 173,
+          "prons": [{"ipa": "/fəˈɡɪv/", "senses": [{"pos": "v.", "mean": "[[原谅]]；[[免除(债务)]]"}]}],
+          "tip": {"type": "联想", "text": "for（因为）+ give（给）→ 因为他给了我礼物，所以我“原谅”他了。"},
+          "ex": {"type": "真", "year": 2023, "en": "The society fails to forgive them for their mistakes.", "zh": "社会未能原谅他们的错误。", "key": ["forgive", "for"]},
+          "ext": [{"word": "forgiving", "ipa": "/fəˈɡɪvɪŋ/", "senses": [{"pos": "adj.", "mean": "宽宏大量的，宽容的"}]}]
+        },
+        {
+          "no": 9, "word": "curse", "freq": 1, "page": 173,
+          "prons": [{"ipa": "/kɜːs/", "senses": [
+            {"pos": "v.", "mean": "[[诅咒]]，[[咒骂]]"},
+            {"pos": "n.", "mean": "[[咒骂]]，[[咒语]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“克死”→ 诅咒"},
+          "ex": {"type": "真", "year": 2018, "en": "They seemed cursed to suffer disastrous fates.", "zh": "他们似乎被诅咒了，要遭受灾难性的命运。", "key": ["cursed"]},
+          "ext": []
+        },
+        {
+          "no": 10, "word": "scold", "freq": 1, "page": 173,
+          "prons": [{"ipa": "/skəʊld/", "senses": [{"pos": "v.", "mean": "[[责骂]]，[[训斥]]"}]}],
+          "tip": {"type": "对照", "text": "他们入住的酒店太冷（cold）了，酒店经理训斥（scold）员工失职。"},
+          "ex": {"type": "例", "en": "He scolded them for arriving late.", "zh": "他斥责他们迟到了。", "key": ["scolded", "for"]},
+          "ext": []
+        },
+        {
+          "no": 11, "word": "accuse", "freq": 1, "page": 173,
+          "prons": [{"ipa": "/əˈkjuːz/", "senses": [{"pos": "v.", "mean": "[[控诉]]，[[控告]]；[[谴责]]"}]}],
+          "tip": {"type": "联想", "text": "ac-（一再地）+ cuse（联想 curse）→ 他一再地诅咒别人，这种行为应该被“谴责”。"},
+          "ex": {"type": "例", "en": "He was accused of causing a fire.", "zh": "他被控告纵火。", "key": ["accused", "of"]},
+          "ext": [{"word": "accusation", "ipa": "/ˌækjuˈzeɪʃn/", "senses": [{"pos": "n.", "mean": "控告；谴责"}]}]
+        },
+        {
+          "no": 12, "word": "excuse", "freq": 1, "page": 173,
+          "prons": [
+            {"ipa": "/ɪkˈskjuːz/", "senses": [{"pos": "v.", "mean": "[[原谅]]；[[免除]]"}]},
+            {"ipa": "/ɪkˈskjuːs/", "senses": [{"pos": "n.", "mean": "[[借口]]"}]}
+          ],
+          "tip": {"type": "联想", "text": "ex（联想“前任”）+ cuse（音似“求死”）→ 前任找“借口”求“原谅”。"},
+          "ex": {"type": "例", "en": "To forbid a thing one day and excuse it the next is no foundation for morality.", "zh": "第一天禁止一件事，第二天又原谅它，这是没有道德基础的。", "key": ["excuse"]},
+          "ext": []
+        },
+        {
+          "no": 13, "word": "quarrel", "freq": 1, "page": 173,
+          "prons": [{"ipa": "/ˈkwɒrəl/", "senses": [{"pos": "v. & n.", "mean": "[[争吵]]，[[吵架]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“口哟”→ 争吵，吵架"},
+          "ex": {"type": "真", "year": 2019, "en": "He has just quarreled with his girlfriend.", "zh": "他刚和女朋友吵了一架。", "key": ["quarreled", "with"]},
+          "ext": [{"word": "quarrelsome", "ipa": "/ˈkwɒrəlsəm/", "senses": [{"pos": "adj.", "mean": "爱争吵的，好口角的"}]}]
+        },
+        {
+          "no": 14, "word": "insult", "freq": 2, "page": 173,
+          "prons": [
+            {"ipa": "/ˈɪnsʌlt/", "senses": [{"pos": "n.", "mean": "[[辱骂]]；[[侮辱]]；[[冒犯]]"}]},
+            {"ipa": "/ɪnˈsʌlt/", "senses": [{"pos": "v.", "mean": "[[侮辱]]；[[冒犯]]"}]}
+          ],
+          "tip": {"type": "联想", "text": "in（音似“言”）+ sult（联想 result）→ 用语言“侮辱”别人不会得到好的结果。"},
+          "ex": {"type": "例", "en": "The questions were an insult to our intelligence.", "zh": "那些问题有辱我们的智力。", "key": ["insult"]},
+          "ext": []
+        },
+        {
+          "no": 15, "word": "consult", "freq": 2, "page": 173,
+          "prons": [{"ipa": "/kənˈsʌlt/", "senses": [{"pos": "v.", "mean": "[[咨询]]，[[请教]]；[[查阅]]"}]}],
+          "tip": {"type": "联想", "text": "con-（所有）+ sult（联想 result）→ 请放心，通过“咨询”，所有事项都会有结果的。"},
+          "ex": {"type": "例", "en": "She had not consulted the government before the visit.", "zh": "她在访问前没有咨询过政府。", "key": ["consulted"]},
+          "ext": [
+            {"word": "consultation", "ipa": "/ˌkɒnslˈteɪʃn/", "senses": [{"pos": "n.", "mean": "咨询，商讨"}]},
+            {"word": "consultative", "ipa": "/kənˈsʌltətɪv/", "senses": [{"pos": "adj.", "mean": "咨询的；顾问的"}]},
+            {"word": "consultant", "ipa": "/kənˈsʌltənt/", "senses": [{"pos": "n.", "mean": "顾问"}]}
+          ]
+        },
+        {
+          "no": 16, "word": "blame", "freq": 1, "page": 173,
+          "prons": [{"ipa": "/bleɪm/", "senses": [
+            {"pos": "v.", "mean": "[[责备，责怪]]"},
+            {"pos": "n.", "mean": "[[责备]]；[[责任]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "b（联想“不”）+ la（联想“拉”）+ me（我）→ 我腿脚不灵活，跑步时他还不拉我一把，我忍不住“责备”了他。"},
+          "ex": {"type": "真", "year": 2017, "en": "But not everything is to be blamed on technology.", "zh": "但并不是所有的事情都要归咎于科技。", "key": ["blamed"]},
+          "ext": []
+        },
+        {
+          "no": 17, "word": "tame", "freq": 1, "page": 173,
+          "prons": [{"ipa": "/teɪm/", "senses": [
+            {"pos": "v.", "mean": "[[驯服，制服]]"},
+            {"pos": "adj.", "mean": "(动物)[[驯服的]]；温顺的"}
+          ]}],
+          "tip": {"type": "联想", "text": "ta（联想“她”）+ me（我）→ 我曾是一个桀骜不驯的人，遇见她之后就被“驯服”了。"},
+          "ex": {"type": "真", "year": 2019, "en": "They are quite easy to tame.", "zh": "它们很容易驯服。", "key": ["tame"]},
+          "ext": []
+        },
+        {
+          "no": 18, "word": "melt", "freq": 1, "page": 173,
+          "prons": [{"ipa": "/melt/", "senses": [{"pos": "v.", "mean": "(使)[[融化]]"}]}],
+          "tip": {"type": "联想", "text": "me（我）+ l（联想“了”）+ t（联想“他”）→ 我“融化”了他的内心。"},
+          "ex": {"type": "例", "en": "The sun had melted the snow.", "zh": "阳光融化了积雪。", "key": ["melted"]},
+          "ext": []
+        },
+        {
+          "no": 19, "word": "critic", "freq": 3, "page": 174,
+          "prons": [{"ipa": "/ˈkrɪtɪk/", "senses": [{"pos": "n.", "mean": "[[批评家，评论家]]"}]}],
+          "tip": {"type": "联想", "text": "cr（联想“超人”）+ i（字母音似“爱”）+ tic（音似“提个”）→ 超人爱提个棍到处批评人 → 批评家"},
+          "ex": {"type": "真", "year": 2016, "en": "Some critics say it is a luxury and shouldn't be free to families able to pay.", "zh": "一些批评家表示，它是一种奢侈品，不应该免费提供给有能力支付的家庭。", "key": ["critics"]},
+          "ext": []
+        },
+        {
+          "no": 20, "word": "criticise", "alt": "-ize", "freq": 3, "page": 174,
+          "prons": [{"ipa": "/ˈkrɪtɪsaɪz/", "senses": [{"pos": "v.", "mean": "[[批评]]；[[评论]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2019, "en": "The ads criticised the measure, characterizing it as a \"grocery tax\".", "zh": "广告批评了这项措施，称其为“杂货税”。", "key": ["criticised"]},
+          "ext": []
+        },
+        {
+          "no": 21, "word": "criticism", "freq": 2, "page": 174,
+          "prons": [{"ipa": "/ˈkrɪtɪsɪzəm/", "senses": [{"pos": "n.", "mean": "[[批评，批判]]；[[评论]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2015, "en": "It has drawn a lot of criticism from overseas.", "zh": "招致了海外的大量批评。", "key": ["criticism"]},
+          "ext": []
+        },
+        {
+          "no": 22, "word": "critical", "freq": 3, "page": 174,
+          "prons": [{"ipa": "/ˈkrɪtɪkl/", "senses": [{"pos": "adj.", "mean": "[[决定性的，关键的]]；[[严重的]]；[[批判性的]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2017, "en": "It is likely to be a critical turning point in one's life.", "zh": "它可能是一个人一生中的关键转折点。", "key": ["critical"]},
+          "ext": []
+        },
+        {
+          "no": 23, "word": "criterion", "freq": 1, "page": 174,
+          "prons": [{"ipa": "/kraɪˈtɪəriən/", "senses": [{"pos": "n.", "mean": "[[标准，准则]]；[[原则]]"}]}],
+          "tip": {"type": "对照", "text": "评判一个人是需要标准（criterion）的，不能随意批判（criticise）别人。"},
+          "ex": {"type": "真", "year": 2024, "en": "The criterion for a snow day is primarily the inability of school buses.", "zh": "雪休日的标准主要是校车无法通行。", "key": ["criterion"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 13,
+      "title": "sist“站”相关",
+      "pages": [174, 175],
+      "map": {"w": "sist 相关", "children": [
+        {"w": "assist", "children": [
+          {"w": "assistance", "rel": "扩", "children": [{"w": "assistant"}]}
+        ]},
+        {"w": "resist", "children": [{"w": "resistance", "rel": "扩"}]},
+        {"w": "insist", "children": [
+          {"w": "insistence", "rel": "扩", "children": [{"w": "insistent"}]}
+        ]},
+        {"w": "persist", "children": [
+          {"w": "persistence", "rel": "扩", "children": [{"w": "persistent"}]}
+        ]},
+        {"w": "consist", "children": [
+          {"w": "comprise", "rel": "近义", "children": [{"w": "praise", "rel": "形近"}]}
+        ]}
+      ]},
+      "entries": [
+        {
+          "no": 24, "word": "assist", "freq": 1, "page": 174,
+          "prons": [{"ipa": "/əˈsɪst/", "senses": [{"pos": "v.", "mean": "[[帮助]]，[[促进]]"}]}],
+          "tip": {"type": "联想", "text": "as-（一再地）+ sist（站）→ 她一再地站在你旁边是为了“帮助”你。"},
+          "ex": {"type": "例", "en": "He assists the professor with his teaching.", "zh": "他协助教授进行教学。", "key": ["assists", "with"]},
+          "ext": [
+            {"word": "assistance", "ipa": "/əˈsɪstəns/", "senses": [{"pos": "n.", "mean": "帮助，援助"}]},
+            {"word": "assistant", "ipa": "/əˈsɪstənt/", "senses": [{"pos": "n.", "mean": "助手，助理"}]}
+          ]
+        },
+        {
+          "no": 25, "word": "resist", "freq": 1, "page": 174,
+          "prons": [{"ipa": "/rɪˈzɪst/", "senses": [{"pos": "v.", "mean": "[[抵抗，抵制]]；[[阻挡]]"}]}],
+          "tip": {"type": "构词", "text": "re-（回）+ sist（站）→ 往回站 → 抵抗，抵制"},
+          "ex": {"type": "真", "year": 2016, "en": "Neither children nor adults could resist the temptation of a free toy.", "zh": "孩子和大人都无法抗拒免费玩具的诱惑。", "key": ["resist"]},
+          "ext": [{"word": "resistance", "ipa": "/rɪˈzɪstəns/", "senses": [{"pos": "n.", "mean": "阻力；电阻；抵抗"}]}]
+        },
+        {
+          "no": 26, "word": "insist", "freq": 3, "page": 174,
+          "prons": [{"ipa": "/ɪnˈsɪst/", "senses": [{"pos": "v.", "mean": "[[坚决要求，坚持]]；[[坚称]]"}]}],
+          "tip": {"type": "构词", "text": "in-（向内）+ sist（站）→ 向内站在自己的立场里 → 坚持；坚称"},
+          "ex": {"type": "真", "year": 2018, "en": "The textbook industry insists the online systems represent a better deal for students.", "zh": "教材行业坚称，在线系统对学生来说是更好的选择。", "key": ["insists"]},
+          "ext": [
+            {"word": "insistence", "ipa": "/ɪnˈsɪstəns/", "senses": [{"pos": "n.", "mean": "坚决要求；坚持；固执"}]},
+            {"word": "insistent", "ipa": "/ɪnˈsɪstənt/", "senses": [{"pos": "adj.", "mean": "坚持的"}]}
+          ]
+        },
+        {
+          "no": 27, "word": "persist", "freq": 2, "page": 174,
+          "prons": [{"ipa": "/pəˈsɪst/", "senses": [{"pos": "v.", "mean": "[[坚持]]；[[继续存在]]"}]}],
+          "tip": {"type": "联想", "text": "per（每一）+ sist（站）→ 每一天都站着 → 坚持"},
+          "ex": {"type": "例", "en": "If our findings persist, we may be faced with a financial crisis.", "zh": "如果我们的发现持续下去，我们可能会面临一场金融危机。", "key": ["persist"]},
+          "ext": [
+            {"word": "persistence", "ipa": "/pəˈsɪstəns/", "senses": [{"pos": "n.", "mean": "坚持，锲而不舍"}]},
+            {"word": "persistent", "ipa": "/pəˈsɪstənt/", "senses": [{"pos": "adj.", "mean": "坚持的；持续的"}]}
+          ]
+        },
+        {
+          "no": 28, "word": "consist", "freq": 1, "page": 175,
+          "prons": [{"ipa": "/kənˈsɪst/", "senses": [{"pos": "v.", "mean": "[[由……组成]]，[[构成]]"}]}],
+          "tip": {"type": "构词", "text": "con-（一起）+ sist（站）→ 站在一起 → 由……组成，构成"},
+          "ex": {"type": "例", "en": "The large bowl consisted of two equal parts.", "zh": "大碗由两个相等的部分组成。", "key": ["consisted", "of"]},
+          "ext": []
+        },
+        {
+          "no": 29, "word": "comprise", "freq": 1, "page": 175,
+          "prons": [{"ipa": "/kəmˈpraɪz/", "senses": [{"pos": "v.", "mean": "[[包括]]；[[由……组成]]"}]}],
+          "tip": {"type": "联想", "text": "com-（一起）+ prise（联想 prize）→ “包括”他在内的所有成员一起得到了奖品。"},
+          "ex": {"type": "例", "en": "Teenagers comprise about half of the group.", "zh": "青少年约占团体的一半。", "key": ["comprise"]},
+          "ext": []
+        },
+        {
+          "no": 30, "word": "praise", "freq": 1, "page": 175,
+          "prons": [{"ipa": "/preɪz/", "senses": [{"pos": "v. & n.", "mean": "[[表扬]]，[[赞美]]"}]}],
+          "tip": {"type": "联想", "text": "p（联想“趴”）+ raise（举起，竖起）→ 人们竖起大拇指“表扬”累趴在地上的搜救犬。"},
+          "ex": {"type": "真", "year": 2023, "en": "A lifetime of praise leads smart people to develop too much faith in their intelligence and abilities.", "zh": "一生的赞美会使聪明人对自己的智力和能力产生过度的信心。", "key": ["praise"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 14,
+      "title": "“公司”相关",
+      "pages": [175, 176],
+      "map": {"w": "“公司”相关", "children": [
+        {"w": "enterprise", "children": [
+          {"w": "enterprising", "rel": "扩"},
+          {"w": "entrepreneur", "rel": "相关", "children": [
+            {"w": "entrepreneurial", "rel": "扩"},
+            {"w": "empire", "rel": "相关", "children": [
+              {"w": "emperor", "rel": "扩"},
+              {"w": "empress", "rel": "扩"}
+            ]}
+          ]}
+        ]},
+        {"w": "corporation", "children": [{"w": "corporate", "rel": "扩"}]},
+        {"w": "accompany", "children": [
+          {"w": "companion", "rel": "扩", "children": [{"w": "companionship"}]}
+        ]}
+      ]},
+      "entries": [
+        {
+          "no": 31, "word": "enterprise", "freq": 2, "page": 175,
+          "prons": [{"ipa": "/ˈentəpraɪz/", "senses": [{"pos": "n.", "mean": "[[企业]]；规划，[[事业]]"}]}],
+          "tip": {"type": "联想", "text": "enter（进入）+ prise（联想 praise）→ “企业”领导走进办公室，表扬他出色的工作。"},
+          "ex": {"type": "真", "year": 2021, "en": "These platforms create a bridge between traditional enterprises and this emerging economy.", "zh": "这些平台在传统企业和这个新兴经济体之间架起了一座桥梁。", "key": ["enterprises"]},
+          "ext": [{"word": "enterprising", "ipa": "/ˈentəpraɪzɪŋ/", "senses": [{"pos": "adj.", "mean": "有事业心的"}]}]
+        },
+        {
+          "no": 32, "word": "entrepreneur", "freq": 1, "page": 175,
+          "prons": [{"ipa": "/ˌɒntrəprəˈnɜː(r)/", "senses": [{"pos": "n.", "mean": "[[企业家]]"}]}],
+          "tip": {"type": "联想", "text": "entre（联想 enter）+ pre-（提前）+ ne（联想 new）+ ur（联想 -or）→ 提前进入新领域的人是富有远见和冒险精神的“企业家”。"},
+          "ex": {"type": "真", "year": 2024, "en": "People often wonder why some entrepreneurs have greater success than others.", "zh": "人们经常想知道为什么有些企业家比其他人更成功。", "key": ["entrepreneurs"]},
+          "ext": [{"word": "entrepreneurial", "ipa": "/ˌɒntrəprəˈnɜːriəl/", "senses": [{"pos": "adj.", "mean": "创业的"}]}]
+        },
+        {
+          "no": 33, "word": "corporation", "freq": 3, "page": 175,
+          "prons": [{"ipa": "/ˌkɔːpəˈreɪʃn/", "senses": [{"pos": "n.", "mean": "[[公司]]；[[法人]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“靠谱为生”→“公司”要靠谱才能生存。"},
+          "ex": {"type": "真", "year": 2022, "en": "Employers attach great importance to their corporations' diversity.", "zh": "雇主非常重视公司的多元化。", "key": ["corporations'"]},
+          "ext": [{"word": "corporate", "ipa": "/ˈkɔːpərət/", "senses": [{"pos": "adj.", "mean": "公司的；法人的；全体的"}]}]
+        },
+        {
+          "no": 34, "word": "empire", "freq": 2, "page": 176,
+          "prons": [{"ipa": "/ˈempaɪə(r)/", "senses": [{"pos": "n.", "mean": "[[帝国]]；[[大企业]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“俺妹怕”→ 我妹妹怕“帝国”的威严。"},
+          "ex": {"type": "例", "en": "He has built a huge business empire from humble beginnings.", "zh": "他白手起家创建了庞大的商业帝国。", "key": ["empire"]},
+          "ext": [
+            {"word": "emperor", "ipa": "/ˈempərə(r)/", "senses": [{"pos": "n.", "mean": "皇帝"}]},
+            {"word": "empress", "ipa": "/ˈemprəs/", "senses": [{"pos": "n.", "mean": "女皇"}]}
+          ]
+        },
+        {
+          "no": 35, "word": "accompany", "freq": 1, "page": 176,
+          "prons": [{"ipa": "/əˈkʌmpəni/", "senses": [{"pos": "v.", "mean": "[[陪伴]]，[[伴随]]"}]}],
+          "tip": {"type": "构词", "text": "ac-（= to）+ company（陪伴）→ 陪伴，伴随"},
+          "ex": {"type": "真", "year": 2023, "en": "What are entrepreneurs advised to do to avoid traps that often accompany rivalry?", "zh": "建议企业家们采取哪些措施来避免竞争中常出现的陷阱呢？", "key": ["accompany"]},
+          "ext": [
+            {"word": "companion", "ipa": "/kəmˈpænjən/", "senses": [{"pos": "n.", "mean": "同伴，朋友"}]},
+            {"word": "companionship", "ipa": "/kəmˈpænjənʃɪp/", "senses": [{"pos": "n.", "mean": "友情；交谊，友谊"}]}
+          ]
+        }
+      ]
+    },
+    {
+      "no": 15,
+      "title": "“管理、竞争”相关",
+      "pages": [176, 177],
+      "map": {"w": "“管理、竞争”相关", "children": [
+        {"w": "manage", "children": [
+          {"w": "management", "rel": "扩", "children": [
+            {"w": "managerial", "children": [
+              {"w": "manager", "children": [
+                {"w": "chair", "rel": "相关", "children": [{"w": "chairman", "rel": "合成"}]},
+                {"w": "president", "rel": "相关", "children": [
+                  {"w": "presidency", "rel": "扩"},
+                  {"w": "presidential", "rel": "扩"}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"w": "harness", "rel": "相关", "children": [{"w": "control"}]}
+        ]},
+        {"w": "compete", "children": [
+          {"w": "competitor", "rel": "扩", "children": [
+            {"w": "competitive", "children": [{"w": "competition"}]}
+          ]},
+          {"w": "competent", "rel": "形近", "children": [
+            {"w": "complete", "children": [{"w": "completion", "rel": "扩"}]}
+          ]},
+          {"w": "versus", "rel": "相关", "children": [{"w": "crisis", "rel": "相关"}]}
+        ]}
+      ]},
+      "entries": [
+        {
+          "no": 36, "word": "manage", "freq": 1, "page": 176,
+          "prons": [{"ipa": "/ˈmænɪdʒ/", "senses": [{"pos": "v.", "mean": "[[完成]]；[[解决]]；[[管理]]"}]}],
+          "tip": {"type": "联想", "text": "man（人）+ age（年代）→ 有人的年代就有“管理”。"},
+          "ex": {"type": "真", "year": 2021, "en": "Women are more likely than men to take charge of their stress and manage it.", "zh": "女性比男性更有可能掌控自己的压力并加以管理。", "key": ["manage"]},
+          "ext": [
+            {"word": "management", "ipa": "/ˈmænɪdʒmənt/", "senses": [{"pos": "n.", "mean": "经营，管理；(成功的)处理手段"}]},
+            {"word": "manager", "ipa": "/ˈmænɪdʒə(r)/", "senses": [{"pos": "n.", "mean": "管理人员，经理"}]},
+            {"word": "managerial", "ipa": "/ˌmænəˈdʒɪəriəl/", "senses": [{"pos": "adj.", "mean": "经理的，管理的"}]}
+          ]
+        },
+        {
+          "no": 37, "word": "chair", "freq": 1, "page": 176,
+          "prons": [{"ipa": "/tʃeə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[椅子]]；[[主席]]"},
+            {"pos": "v.", "mean": "[[主持]]；使……就任要职"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "\"We didn't do any global consideration,\" says the board's chair.", "zh": "董事会主席说：“我们没有做任何全球性的考虑。”", "key": ["chair"]},
+          "ext": [{"word": "chairman", "ipa": "/ˈtʃeəmən/", "senses": [{"pos": "n.", "mean": "主席；议长，会长"}]}]
+        },
+        {
+          "no": 38, "word": "president", "freq": 1, "page": 176,
+          "prons": [{"ipa": "/ˈprezɪdənt/", "senses": [{"pos": "n.", "mean": "[[总统，主席]]；[[董事长]]；[[总经理]]；(大学)[[校长]]"}]}],
+          "tip": {"type": "联想", "text": "pre-（前面）+ sid（联想 side）+ ent（联想 enter）→ 从前面侧门进来的人是“总经理”。"},
+          "ex": {"type": "真", "year": 2015, "en": "It was suggested by the firm's vice president.", "zh": "这是公司副总裁提出的建议。", "key": ["president"]},
+          "ext": [
+            {"word": "presidency", "ipa": "/ˈprezɪdənsi/", "senses": [{"pos": "n.", "mean": "总统(或主席)的职位；总统(或主席)任期"}]},
+            {"word": "presidential", "ipa": "/ˌprezɪˈdenʃl/", "senses": [{"pos": "adj.", "mean": "总统的；国家主席的"}]}
+          ]
+        },
+        {
+          "no": 39, "word": "harness", "freq": 1, "page": 176,
+          "prons": [{"ipa": "/ˈhɑːnɪs/", "senses": [
+            {"pos": "v.", "mean": "[[控制]]；[[利用]]"},
+            {"pos": "n.", "mean": "[[马具]]，挽具"}
+          ]}],
+          "tip": {"type": "联想", "text": "harne（音似 honey）+ ss（联想“死”）→ 这个公司的决策者去世了，他亲爱的配偶“控制”了整个公司。"},
+          "ex": {"type": "真", "year": 2020, "en": "So executives hit on an idea that would harness the new-found popularity of television.", "zh": "因此，高管们想出了一个主意，可以利用最近流行起来的电视。", "key": ["harness"]},
+          "ext": []
+        },
+        {
+          "no": 40, "word": "control", "freq": 1, "page": 177,
+          "prons": [{"ipa": "/kənˈtrəʊl/", "senses": [
+            {"pos": "v.", "mean": "[[指挥]]；[[控制]]；掌管"},
+            {"pos": "n.", "mean": "管理权，支配权；控制(或操纵)能力"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2017, "en": "Some people find that craftwork helps them control their weight.", "zh": "有些人发现，手工(活动)可以帮助他们控制体重。", "key": ["control"]},
+          "ext": []
+        },
+        {
+          "no": 41, "word": "compete", "freq": 3, "page": 177,
+          "prons": [{"ipa": "/kəmˈpiːt/", "senses": [{"pos": "v.", "mean": "[[参加比赛]]；[[竞争]]"}]}],
+          "tip": {"type": "联想", "text": "com（联想 company）+ pete（联想 PK）→ 公司之间 PK，就是“竞争”。"},
+          "ex": {"type": "真", "year": 2015, "en": "It is well positioned to compete with the giants.", "zh": "它处于与巨头竞争的有利位置。", "key": ["compete", "with"]},
+          "ext": [
+            {"word": "competitor", "ipa": "/kəmˈpetɪtə(r)/", "senses": [{"pos": "n.", "mean": "竞争者，对手"}]},
+            {"word": "competitive", "ipa": "/kəmˈpetətɪv/", "senses": [{"pos": "adj.", "mean": "竞争的；有竞争力的；好胜的"}]}
+          ]
+        },
+        {
+          "no": 42, "word": "competition", "freq": 1, "page": 177,
+          "prons": [{"ipa": "/ˌkɒmpəˈtɪʃn/", "senses": [{"pos": "n.", "mean": "[[竞争]]；[[比赛]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2015, "en": "There will be more competition in the job market.", "zh": "就业市场上的竞争将更加激烈。", "key": ["competition"]},
+          "ext": []
+        },
+        {
+          "no": 43, "word": "competent", "freq": 2, "page": 177,
+          "prons": [{"ipa": "/ˈkɒmpɪtənt/", "senses": [{"pos": "adj.", "mean": "[[有能力的]]；[[称职的]]"}]}],
+          "tip": {"type": "对照", "text": "我的竞争对手（competitor）是一个有能力的（competent）人。"},
+          "ex": {"type": "真", "year": 2023, "en": "But what makes you a competent lion dancer is that there's a sense of imagination involved.", "zh": "但让你成为一个称职的舞狮者的是，其中蕴含着一种想象力。", "key": ["competent"]},
+          "ext": []
+        },
+        {
+          "no": 44, "word": "complete", "freq": 1, "page": 177,
+          "prons": [{"ipa": "/kəmˈpliːt/", "senses": [
+            {"pos": "v.", "mean": "[[完成]]；[[填写(表格)]]"},
+            {"pos": "adj.", "mean": "[[完成的]]；[[彻底的]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "compete（竞争）+ l（联想“了”）→ 竞争结束了 → 完成"},
+          "ex": {"type": "真", "year": 2023, "en": "One spouse wants a complete name change.", "zh": "配偶的一方希望彻底改名。", "key": ["complete"]},
+          "ext": [{"word": "completion", "ipa": "/kəmˈpliːʃn/", "senses": [{"pos": "n.", "mean": "完成，结束；完成交易"}]}]
+        },
+        {
+          "no": 45, "word": "versus", "freq": 1, "page": 177,
+          "prons": [{"ipa": "/ˈvɜːsəs/", "senses": [{"pos": "prep.", "mean": "(表示两队或双方对阵)[[对抗]]；[[与……相对]]"}]}],
+          "tip": {"type": "联想", "text": "单词的缩写形式是 VS，表示“对抗”。"},
+          "ex": {"type": "例", "en": "It is France versus Brazil in the final.", "zh": "决赛是法国队对巴西队。", "key": ["versus"]},
+          "ext": []
+        },
+        {
+          "no": 46, "word": "crisis", "freq": 3, "page": 177,
+          "prons": [{"ipa": "/ˈkraɪsɪs/", "senses": [{"pos": "n.", "mean": "[[危机]]；[[危急关头]]"}]}],
+          "tip": {"type": "联想", "text": "cri（联想 cry）+ sis（联想“死”）→ 这次“危机”让他哭得死去活来。"},
+          "ex": {"type": "真", "year": 2018, "en": "New research has found deep water reserves under the state which could help solve their drought crisis.", "zh": "新的研究发现，该州的深水储备可能有助于解决干旱危机。", "key": ["crisis"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 16,
+      "title": "“商贸”相关",
+      "pages": [177, 179],
+      "map": {"w": "“商贸”相关", "children": [
+        {"w": "finance", "children": [
+          {"w": "financial", "rel": "扩"},
+          {"w": "funding", "rel": "相关", "children": [{"w": "fund", "rel": "扩"}]},
+          {"w": "budget", "rel": "相关", "children": [
+            {"w": "budgetary", "rel": "扩"},
+            {"w": "gadget", "rel": "形近", "children": [
+              {"w": "gadgetry", "rel": "扩"},
+              {"w": "target", "rel": "形近", "children": [{"w": "destination", "rel": "相关"}]}
+            ]}
+          ]}
+        ]},
+        {"w": "commerce", "children": [
+          {"w": "commercial", "rel": "扩", "children": [{"w": "commercialise"}]}
+        ]},
+        {"w": "commodity", "children": [
+          {"w": "goods", "rel": "近义", "children": [
+            {"w": "stock", "rel": "相关"},
+            {"w": "storage", "rel": "相关"}
+          ]}
+        ]},
+        {"w": "merchant", "children": [
+          {"w": "trade", "rel": "相关", "children": [{"w": "trademark", "rel": "合成"}]}
+        ]}
+      ]},
+      "entries": [
+        {
+          "no": 47, "word": "finance", "freq": 3, "page": 178,
+          "prons": [{"ipa": "/ˈfaɪnæns/", "senses": [
+            {"pos": "n.", "mean": "[[资金]]；[[财政，金融]]"},
+            {"pos": "v.", "mean": "[[提供资金]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“犯难死”→ 当西方发生“金融”危机的时候，破产者犯难死了。"},
+          "ex": {"type": "真", "year": 2016, "en": "She started an ice-cream business to finance her daughter's education.", "zh": "她开了一家冰淇淋店来资助女儿的教育。", "key": ["finance"]},
+          "ext": [{"word": "financial", "ipa": "/faɪˈnænʃl/", "senses": [{"pos": "adj.", "mean": "财政的，金融的"}]}]
+        },
+        {
+          "no": 48, "word": "funding", "freq": 1, "page": 178,
+          "prons": [{"ipa": "/ˈfʌndɪŋ/", "senses": [{"pos": "n.", "mean": "[[专款，资金]]；[[提供资金]]"}]}],
+          "tip": {"type": "对照", "text": "fund n. 专款，资金 → funding n."},
+          "ex": {"type": "真", "year": 2024, "en": "Funding for science has changed with the times.", "zh": "科学资助随着时代而变化。", "key": ["Funding"]},
+          "ext": [{"word": "fund", "ipa": "/fʌnd/", "senses": [
+            {"pos": "n.", "mean": "基金，专款，资金"},
+            {"pos": "v.", "mean": "为……提供资金，拨款给……"}
+          ]}]
+        },
+        {
+          "no": 49, "word": "commerce", "freq": 2, "page": 178,
+          "prons": [{"ipa": "/ˈkɒmɜːs/", "senses": [{"pos": "n.", "mean": "(尤指国际的)[[贸易]]，[[商业]]"}]}],
+          "tip": {"type": "联想", "text": "com-（所有的）+ merce（音似“没死”）→ 商海如战场，稍有不慎所有人就会被淹没 → 贸易，商业"},
+          "ex": {"type": "例", "en": "International commerce plays a vital role in global economic growth.", "zh": "国际贸易在全球经济增长中发挥着至关重要的作用。", "key": ["commerce"]},
+          "ext": [
+            {"word": "commercial", "ipa": "/kəˈmɜːʃl/", "senses": [
+              {"pos": "adj.", "mean": "贸易的；赢利的"},
+              {"pos": "n.", "mean": "(电台或电视播放的)广告"}
+            ]},
+            {"word": "commercialise", "alt": "-ize", "ipa": "/kəˈmɜːʃəlaɪz/", "senses": [{"pos": "v.", "mean": "利用……牟利；商业化"}]}
+          ]
+        },
+        {
+          "no": 50, "word": "commodity", "freq": 1, "page": 178,
+          "prons": [{"ipa": "/kəˈmɒdəti/", "senses": [{"pos": "n.", "mean": "[[商品]]；有用的东西"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2020, "en": "How do we assess the value of a commodity?", "zh": "我们如何评估一件商品的价值？", "key": ["commodity"]},
+          "ext": []
+        },
+        {
+          "no": 51, "word": "goods", "freq": 1, "page": 178,
+          "prons": [{"ipa": "/ɡʊdz/", "senses": [{"pos": "n.", "mean": "[[商品]]；动产；私人财产"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“谷子”→ 谷子就是他的“商品”。"},
+          "ex": {"type": "例", "en": "The other sections you should get to know are the frozen foods and the durable goods.", "zh": "你应该了解的其他部分是冷冻食品和耐用商品。", "key": ["goods"]},
+          "ext": []
+        },
+        {
+          "no": 52, "word": "merchant", "freq": 1, "page": 178,
+          "prons": [{"ipa": "/ˈmɜːtʃənt/", "senses": [{"pos": "n.", "mean": "[[商人]]；批发商"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“摸钱他”→ 他是个每天摸钱，和钱打交道的“商人”。"},
+          "ex": {"type": "例", "en": "The family was forced to live on credit from local merchants.", "zh": "这家人不得不靠向当地商人赊账生活。", "key": ["merchants"]},
+          "ext": []
+        },
+        {
+          "no": 53, "word": "stock", "freq": 2, "page": 178,
+          "prons": [{"ipa": "/stɒk/", "senses": [
+            {"pos": "n.", "mean": "[[库存]]；[[股票]]"},
+            {"pos": "v.", "mean": "[[存货]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "这个商店（store）里面摆满了各种库存（stock）商品。"},
+          "ex": {"type": "例", "en": "That particular model is not currently in stock.", "zh": "那种特定型号目前没货。", "key": ["in stock"]},
+          "ext": []
+        },
+        {
+          "no": 54, "word": "storage", "freq": 2, "page": 178,
+          "prons": [{"ipa": "/ˈstɔːrɪdʒ/", "senses": [{"pos": "n.", "mean": "[[贮存]]，[[贮藏(空间)]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "There's a lot of storage space in the loft.", "zh": "阁楼上有很大的存储空间。", "key": ["storage"]},
+          "ext": []
+        },
+        {
+          "no": 55, "word": "trade", "freq": 1, "page": 178,
+          "prons": [{"ipa": "/treɪd/", "senses": [
+            {"pos": "n.", "mean": "[[贸易]]；[[交易(量)]]"},
+            {"pos": "v.", "mean": "[[做生意，从事贸易]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“槌的”→ 拍卖的时候，敲木槌确定“交易”完成。"},
+          "ex": {"type": "真", "year": 2023, "en": "It will help many African countries reduce trade deficits.", "zh": "它将帮助许多非洲国家减少贸易逆差。", "key": ["trade"]},
+          "ext": []
+        },
+        {
+          "no": 56, "word": "trademark", "freq": 1, "page": 178,
+          "prons": [{"ipa": "/ˈtreɪdmɑːk/", "senses": [{"pos": "n.", "mean": "[[商标]]，[[标志]]"}]}],
+          "tip": {"type": "构词", "text": "trade（交易）+ mark（标记）→ 商标"},
+          "ex": {"type": "例", "en": "If you don't register your trademark yourself, there's a good chance that it will be squatted by others.", "zh": "如果你不注册自己的商标，那么很有可能它会被别人占用。", "key": ["trademark"]},
+          "ext": []
+        },
+        {
+          "no": 57, "word": "budget", "freq": 3, "page": 179,
+          "prons": [{"ipa": "/ˈbʌdʒɪt/", "senses": [
+            {"pos": "n.", "mean": "[[预算]]"},
+            {"pos": "v.", "mean": "[[做预算]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "bud（音似“爸的”）+ get（得到）→ 爸爸得到了很多的“预算”。"},
+          "ex": {"type": "真", "year": 2016, "en": "They are under growing pressure to balance their national budgets.", "zh": "他们承受着越来越大的平衡国家预算的压力。", "key": ["budgets"]},
+          "ext": [{"word": "budgetary", "ipa": "/ˈbʌdʒɪtəri/", "senses": [{"pos": "adj.", "mean": "预算的"}]}]
+        },
+        {
+          "no": 58, "word": "gadget", "freq": 1, "page": 179,
+          "prons": [{"ipa": "/ˈɡædʒɪt/", "senses": [{"pos": "n.", "mean": "[[小玩意]]，[[小装置]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2018, "en": "A relatively harmless gadget may be turning friends away from your home.", "zh": "一个相对无害的小玩意可能会让朋友远离你的家。", "key": ["gadget"]},
+          "ext": [{"word": "gadgetry", "ipa": "/ˈɡædʒɪtri/", "senses": [{"pos": "n.", "mean": "小器具，小装置"}]}]
+        },
+        {
+          "no": 59, "word": "target", "freq": 2, "page": 179,
+          "prons": [{"ipa": "/ˈtɑːɡɪt/", "senses": [
+            {"pos": "n.", "mean": "[[目标]]；(射击的)[[靶子]]"},
+            {"pos": "v.", "mean": "[[瞄准]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "tar（音似“它”）+ get（得到）→ 得到它就是我们的“目标”！"},
+          "ex": {"type": "真", "year": 2021, "en": "Scotland will reach the national target in carbon emissions reduction ahead of schedule.", "zh": "苏格兰将提前实现全国碳减排目标。", "key": ["target"]},
+          "ext": []
+        },
+        {
+          "no": 60, "word": "destination", "freq": 2, "page": 179,
+          "prons": [{"ipa": "/ˌdestɪˈneɪʃn/", "senses": [{"pos": "n.", "mean": "[[目的地]]，[[终点]]；[[目标]]"}]}],
+          "tip": {"type": "联想", "text": "desti（联想“的士”）+ nation（国家）→ 在任何一个国家坐的士，都要告诉司机“目的地”。"},
+          "ex": {"type": "真", "year": 2018, "en": "Venice is one of the hottest tourist destinations in the world.", "zh": "威尼斯是世界上最热门的旅游胜地之一。", "key": ["destinations"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 17,
+      "title": "“经济、收入”相关",
+      "pages": [179, 180],
+      "map": {"w": "“经济、收入”相关", "children": [
+        {"w": "revenue", "children": [
+          {"w": "avenue", "rel": "形近"},
+          {"w": "income", "rel": "近义", "children": [{"w": "gross", "rel": "相关"}]}
+        ]},
+        {"w": "economy", "children": [
+          {"w": "economic", "rel": "扩", "children": [
+            {"w": "economics", "children": [
+              {"w": "economist", "children": [{"w": "economical"}]}
+            ]}
+          ]},
+          {"w": "scientific", "rel": "相关", "children": [
+            {"w": "science", "rel": "扩"},
+            {"w": "scientist", "rel": "扩"},
+            {"w": "evil", "rel": "相关"}
+          ]}
+        ]}
+      ]},
+      "entries": [
+        {
+          "no": 61, "word": "revenue", "freq": 3, "page": 179,
+          "prons": [{"ipa": "/ˈrevənjuː/", "senses": [{"pos": "n.", "mean": "[[收入]]，[[收益]]；(政府的)[[税收]]"}]}],
+          "tip": {"type": "联想", "text": "re（字母音似“阿姨”）+ venue（联想 Venus）→ 阿姨把一部分“收入”捐献给贫困学生，学生们夸她像维纳斯一样美丽。"},
+          "ex": {"type": "例", "en": "Most of their revenues come from the government.", "zh": "他们的大部分收入来自政府。", "key": ["revenues"]},
+          "ext": []
+        },
+        {
+          "no": 62, "word": "avenue", "freq": 2, "page": 179,
+          "prons": [{"ipa": "/ˈævənjuː/", "senses": [{"pos": "n.", "mean": "[[大街]]，林荫道；[[途径]]，手段"}]}],
+          "tip": {"type": "联想", "text": "a（一）+ venue（联想 Venus）→ 他今天在“大街”上遇见了一个像维纳斯一样美丽的人。"},
+          "ex": {"type": "例", "en": "She aims to open up fresh avenues for women post-doctors to join in research work.", "zh": "她力求为女性博士后参与研究工作开辟新的途径。", "key": ["avenues"]},
+          "ext": []
+        },
+        {
+          "no": 63, "word": "income", "freq": 3, "page": 179,
+          "prons": [{"ipa": "/ˈɪnkʌm/", "senses": [{"pos": "n.", "mean": "[[收入]]，[[收益]]"}]}],
+          "tip": {"type": "联想", "text": "in（里面）+ come（来）→ 钱进到家里，就变成了“收入”。"},
+          "ex": {"type": "例", "en": "It started when people's income was relatively high.", "zh": "它始于人们收入相对较高的时候。", "key": ["income"]},
+          "ext": []
+        },
+        {
+          "no": 64, "word": "gross", "freq": 1, "page": 179,
+          "prons": [{"ipa": "/ɡrəʊs/", "senses": [
+            {"pos": "adj.", "mean": "[[总的，毛的]]；[[严重的]]"},
+            {"pos": "v.", "mean": "[[总收入为]]；[[总共赚得]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“割肉丝”→ 他割了块肉切成了肉丝，毛重 1 千克 → 总的，毛的"},
+          "ex": {"type": "真", "year": 2015, "en": "The main measure of economic progress is the gross national product (GNP).", "zh": "衡量经济发展的主要标准是国民生产总值。", "key": ["gross"]},
+          "ext": []
+        },
+        {
+          "no": 65, "word": "economy", "freq": 3, "page": 180,
+          "prons": [{"ipa": "/ɪˈkɒnəmi/", "senses": [{"pos": "n.", "mean": "[[经济]]；(就经济体制而言)[[国家]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "They organise a series of seminars on world economy.", "zh": "他们组织了一系列关于世界经济的研讨会。", "key": ["economy"]},
+          "ext": [{"word": "economic", "ipa": "/ˌiːkəˈnɒmɪk/", "senses": [{"pos": "adj.", "mean": "经济学的；可赚钱的；合算的"}]}]
+        },
+        {
+          "no": 66, "word": "economics", "freq": 1, "page": 180,
+          "prons": [{"ipa": "/ˌiːkəˈnɒmɪks/", "senses": [{"pos": "n.", "mean": "[[经济学]]；[[经济情况]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2018, "en": "She rented her economics and statistics textbooks for about $20 each.", "zh": "她租的经济学和统计学课本每本大约 20 美元。", "key": ["economics"]},
+          "ext": []
+        },
+        {
+          "no": 67, "word": "economist", "freq": 3, "page": 180,
+          "prons": [{"ipa": "/ɪˈkɒnəmɪst/", "senses": [{"pos": "n.", "mean": "[[经济学家]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2015, "en": "It is the concern of contemporary economists.", "zh": "这是当代经济学家关注的问题。", "key": ["economists"]},
+          "ext": []
+        },
+        {
+          "no": 68, "word": "economical", "freq": 2, "page": 180,
+          "prons": [{"ipa": "/ˌiːkəˈnɒmɪkl/", "senses": [{"pos": "adj.", "mean": "[[经济的]]；[[节俭的]]，[[节约的]]；简洁的"}]}],
+          "tip": {"type": "联想", "text": "economi（联想 economy）+ cal（音似“抠”）→ 他在经济方面是很“节俭的”，甚至有点儿抠门。"},
+          "ex": {"type": "例", "en": "It should become more economical.", "zh": "它应该变得更经济。", "key": ["economical"]},
+          "ext": []
+        },
+        {
+          "no": 69, "word": "scientific", "freq": 3, "page": 180,
+          "prons": [{"ipa": "/ˌsaɪənˈtɪfɪk/", "senses": [{"pos": "adj.", "mean": "[[科学(上)的]]；[[细致严谨的]]"}]}],
+          "tip": {"type": "对照", "text": "science n. 科学 → scientific adj."},
+          "ex": {"type": "真", "year": 2024, "en": "These groups provide invaluable funding for scientific research.", "zh": "这些团体为科学研究提供了宝贵的资金。", "key": ["scientific"]},
+          "ext": [
+            {"word": "science", "ipa": "/ˈsaɪəns/", "senses": [{"pos": "n.", "mean": "科学；(尤指人文、社会)学科"}]},
+            {"word": "scientist", "ipa": "/ˈsaɪəntɪst/", "senses": [{"pos": "n.", "mean": "科学家"}]}
+          ]
+        },
+        {
+          "no": 70, "word": "evil", "freq": 2, "page": 180,
+          "prons": [{"ipa": "/ˈiːvl; ˈiːvɪl/", "senses": [
+            {"pos": "adj.", "mean": "[[恶毒的]]，[[邪恶的]]"},
+            {"pos": "n.", "mean": "[[邪恶]]；[[恶行]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "有些人生活（live）的另一面就是邪恶的（evil）魔鬼。"},
+          "ex": {"type": "例", "en": "I suppose that's what these films are all about—good triumphing over evil.", "zh": "我想那就是这些电影的主题——正义战胜邪恶。", "key": ["evil"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 18,
+      "title": "“生产”相关",
+      "pages": [180, 181],
+      "map": {"w": "“生产”相关", "children": [
+        {"w": "produce", "children": [
+          {"w": "product", "rel": "扩", "children": [
+            {"w": "production", "children": [
+              {"w": "productive", "children": [{"w": "productivity"}]}
+            ]}
+          ]},
+          {"w": "reproduce", "rel": "加re", "children": [
+            {"w": "reproduction", "rel": "扩"},
+            {"w": "reproductive", "rel": "扩"}
+          ]}
+        ]},
+        {"w": "industry", "children": [
+          {"w": "industrial", "rel": "扩", "children": [
+            {"w": "industrialise", "children": [{"w": "industrious"}]}
+          ]}
+        ]},
+        {"w": "operate", "children": [
+          {"w": "operator", "rel": "扩", "children": [
+            {"w": "operation", "children": [{"w": "operational"}]}
+          ]},
+          {"w": "manipulate", "rel": "近义", "children": [
+            {"w": "manipulation", "rel": "扩"},
+            {"w": "manipulative", "rel": "扩"}
+          ]},
+          {"w": "cooperate", "rel": "加co", "children": [
+            {"w": "cooperation", "rel": "扩"},
+            {"w": "cooperative", "rel": "扩"},
+            {"w": "collaborate", "rel": "近义", "children": [
+              {"w": "collaboration", "rel": "扩"},
+              {"w": "collaborative", "rel": "扩"}
+            ]}
+          ]}
+        ]}
+      ]},
+      "entries": [
+        {
+          "no": 71, "word": "produce", "freq": 1, "page": 180,
+          "prons": [
+            {"ipa": "/prəˈdjuːs/", "senses": [{"pos": "v.", "mean": "[[生产]]，[[制造]]；[[展现]]"}]},
+            {"ipa": "/ˈprɒdjuːs/", "senses": [{"pos": "n.", "mean": "[[产品]]，(尤指)[[农产品]]"}]}
+          ],
+          "tip": null,
+          "ex": {"type": "真", "year": 2016, "en": "A quarter of this year's American grain harvest will be used to produce bio-fuel for cars.", "zh": "今年美国谷物收成的四分之一将用于生产汽车生物燃料。", "key": ["produce"]},
+          "ext": [
+            {"word": "product", "ipa": "/ˈprɒdʌkt/", "senses": [{"pos": "n.", "mean": "产品，产物"}]},
+            {"word": "production", "ipa": "/prəˈdʌkʃn/", "senses": [{"pos": "n.", "mean": "生产，制造，制作；产量"}]},
+            {"word": "productive", "ipa": "/prəˈdʌktɪv/", "senses": [{"pos": "adj.", "mean": "生产的；(尤指)多产的；有效益的，富有成效的"}]},
+            {"word": "reproduce", "ipa": "/ˌriːprəˈdjuːs/", "senses": [{"pos": "v.", "mean": "复制；再生产；繁殖"}]},
+            {"word": "reproduction", "ipa": "/ˌriːprəˈdʌkʃn/", "senses": [{"pos": "n.", "mean": "生殖，繁殖；复制"}]},
+            {"word": "reproductive", "ipa": "/ˌriːprəˈdʌktɪv/", "senses": [{"pos": "adj.", "mean": "生殖的，繁殖的"}]}
+          ]
+        },
+        {
+          "no": 72, "word": "productivity", "freq": 1, "page": 181,
+          "prons": [{"ipa": "/ˌprɒdʌkˈtɪvəti/", "senses": [{"pos": "n.", "mean": "[[生产率]]；[[生产力]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The unions will try to increase productivity.", "zh": "工会将努力提高生产力。", "key": ["productivity"]},
+          "ext": []
+        },
+        {
+          "no": 73, "word": "industry", "freq": 1, "page": 181,
+          "prons": [{"ipa": "/ˈɪndəstri/", "senses": [{"pos": "n.", "mean": "[[工业]]，[[行业]]；[[勤奋]]，[[勤劳]]"}]}],
+          "tip": {"type": "联想", "text": "indu（联想“印度”）+ st（联想 street）+ ry（联想“人员”）→ 印度的大街上有各个“行业”的人员，大家都很“勤劳”。"},
+          "ex": {"type": "真", "year": 2021, "en": "The food industry plays a major role in fighting obesity.", "zh": "食品行业在对抗肥胖方面扮演着重要角色。", "key": ["industry"]},
+          "ext": [
+            {"word": "industrial", "ipa": "/ɪnˈdʌstriəl/", "senses": [{"pos": "adj.", "mean": "工业的；产业的；用于工业的"}]},
+            {"word": "industrialise", "alt": "-ize", "ipa": "/ɪnˈdʌstriəlaɪz/", "senses": [{"pos": "v.", "mean": "(使国家或地区)工业化"}]},
+            {"word": "industrious", "ipa": "/ɪnˈdʌstriəs/", "senses": [{"pos": "adj.", "mean": "勤奋的，勤劳的；忙碌的"}]}
+          ]
+        },
+        {
+          "no": 74, "word": "manipulate", "freq": 1, "page": 181,
+          "prons": [{"ipa": "/məˈnɪpjuleɪt/", "senses": [{"pos": "v.", "mean": "(熟练地)[[操作]]；[[操纵]]；[[影响]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“摸你扑了它”→ 工作的时候，你一会儿摸摸这台机器，一会儿扑向那台机器，熟练地“操作”着它们。"},
+          "ex": {"type": "真", "year": 2022, "en": "Several studies have implied that emotional intelligence can be used to manipulate others for personal gains.", "zh": "几项研究表明，情商可以用来操纵他人以谋取个人利益。", "key": ["manipulate"]},
+          "ext": [
+            {"word": "manipulation", "ipa": "/məˌnɪpjuˈleɪʃn/", "senses": [{"pos": "n.", "mean": "(暗中)控制，操纵"}]},
+            {"word": "manipulative", "ipa": "/məˈnɪpjələtɪv/", "senses": [{"pos": "adj.", "mean": "善于操纵的，会控制的"}]}
+          ]
+        },
+        {
+          "no": 75, "word": "operate", "freq": 1, "page": 181,
+          "prons": [{"ipa": "/ˈɒpəreɪt/", "senses": [{"pos": "v.", "mean": "[[运转]]，[[工作]]；[[操作]]，[[控制]]；[[动手术]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Those who want to use computers should know how computers operate.", "zh": "那些想要使用电脑的人应该知道电脑是如何运转的。", "key": ["operate"]},
+          "ext": [
+            {"word": "operator", "ipa": "/ˈɒpəreɪtə(r)/", "senses": [{"pos": "n.", "mean": "操作人员；接线员"}]},
+            {"word": "operation", "ipa": "/ˌɒpəˈreɪʃn/", "senses": [{"pos": "n.", "mean": "手术；(有组织的)活动；运作"}]},
+            {"word": "operational", "ipa": "/ˌɒpəˈreɪʃənl/", "senses": [{"pos": "adj.", "mean": "操作的，运转的，运营的；业务的"}]}
+          ]
+        },
+        {
+          "no": 76, "word": "cooperate", "freq": 1, "page": 181,
+          "prons": [{"ipa": "/kəʊˈɒpəreɪt/", "senses": [{"pos": "v.", "mean": "[[合作]]，[[协作]]"}]}],
+          "tip": {"type": "构词", "text": "co-（= con-，一起）+ operate（操作）→ 合作"},
+          "ex": {"type": "真", "year": 2022, "en": "They cooperated well with the police.", "zh": "他们与警方合作得很好。", "key": ["cooperated", "with"]},
+          "ext": [
+            {"word": "cooperation", "ipa": "/kəʊˌɒpəˈreɪʃn/", "senses": [{"pos": "n.", "mean": "合作，协作，协助；配合"}]},
+            {"word": "cooperative", "ipa": "/kəʊˈɒpərətɪv/", "senses": [
+              {"pos": "n.", "mean": "合作企业；合作性组织"},
+              {"pos": "adj.", "mean": "合作的，同心协力的；协助的，配合的"}
+            ]}
+          ]
+        },
+        {
+          "no": 77, "word": "collaborate", "freq": 1, "page": 181,
+          "prons": [{"ipa": "/kəˈlæbəreɪt/", "senses": [{"pos": "v.", "mean": "[[合作]]，[[协作]]"}]}],
+          "tip": {"type": "构词", "text": "col-（= con-，一起）+ labor（劳动）+ -ate（动词后缀）→ 合作"},
+          "ex": {"type": "例", "en": "They collaborated on building the first space coffee machine.", "zh": "他们合作开发了第一台太空咖啡机。", "key": ["collaborated", "on"]},
+          "ext": [
+            {"word": "collaboration", "ipa": "/kəˌlæbəˈreɪʃn/", "senses": [{"pos": "n.", "mean": "合作，协作"}]},
+            {"word": "collaborative", "ipa": "/kəˈlæbərətɪv/", "senses": [{"pos": "adj.", "mean": "合作的，协作的，协力的"}]}
+          ]
+        }
+      ]
+    }
+  ]
+}

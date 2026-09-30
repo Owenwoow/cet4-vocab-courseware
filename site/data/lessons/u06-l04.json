@@ -1,0 +1,765 @@
+{
+  "id": "u06-l04",
+  "part": 1,
+  "unit": 6,
+  "lesson": 4,
+  "pages": [182, 190],
+  "groups": [
+    {
+      "no": 19,
+      "title": "“钱”相关",
+      "pages": [182, 184],
+      "map": {
+        "w": "“钱”相关",
+        "children": [
+          {"w": "profit", "children": [
+            {"w": "profitable", "rel": "加able"},
+            {"w": "benefit", "rel": "近义", "children": [{"w": "beneficial", "rel": "扩"}, {"w": "beneficiary", "rel": "扩"}]},
+            {"w": "salary", "rel": "相关", "children": [
+              {"w": "earnings", "rel": "近义", "children": [{"w": "earn", "rel": "扩"}]},
+              {"w": "wage", "rel": "近义", "children": [
+                {"w": "pension", "rel": "相关", "children": [{"w": "pensioner", "rel": "扩"}]},
+                {"w": "allowance", "rel": "相关", "children": [{"w": "allow", "rel": "扩"}]}
+              ]}
+            ]},
+            {"w": "reward", "rel": "相关", "children": [
+              {"w": "rewarding", "rel": "扩"},
+              {"w": "bonus", "rel": "近义"},
+              {"w": "award", "rel": "近义", "children": [{"w": "awkward", "rel": "形近"}]},
+              {"w": "awe", "rel": "相关", "children": [{"w": "awful", "rel": "扩"}, {"w": "awesome", "rel": "扩"}]}
+            ]}
+          ]},
+          {"w": "fee", "children": [
+            {"w": "fare", "rel": "近义", "children": [
+              {"w": "farewell", "rel": "合成", "children": [{"w": "welfare", "rel": "形近"}]}
+            ]},
+            {"w": "retail", "rel": "相关", "children": [
+              {"w": "retailer", "rel": "扩", "children": [{"w": "tailor", "rel": "形近"}]},
+              {"w": "detail", "rel": "r变d", "children": [{"w": "detailed", "rel": "扩"}]},
+              {"w": "advertise", "rel": "相关", "children": [{"w": "advertisement", "rel": "扩"}, {"w": "advertising", "rel": "扩"}]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "profit", "freq": 3, "page": 182,
+          "prons": [{"ipa": "/ˈprɒfɪt/", "senses": [
+            {"pos": "n.", "mean": "利润；[[利益，好处]]"},
+            {"pos": "v.", "mean": "得利，有益于……"}
+          ]}],
+          "tip": {"type": "联想", "text": "pro-（提前）+ fit（音似“肥他”）→ 他提前得到了一份有很多“好处”的肥差。"},
+          "ex": {"type": "真", "year": 2016, "en": "I'm not sure whether I can gain any profit from the investment.", "zh": "我不确定我是否能从这次投资中获利。", "key": ["profit"]},
+          "ext": [{"word": "profitable", "ipa": "/ˈprɒfɪtəbl/", "senses": [{"pos": "adj.", "mean": "有利可图的；有益的"}]}]
+        },
+        {
+          "no": 2, "word": "benefit", "freq": 3, "page": 182,
+          "prons": [{"ipa": "/ˈbenɪfɪt/", "senses": [
+            {"pos": "n.", "mean": "[[利益]]；[[津贴]]"},
+            {"pos": "v.", "mean": "[[使受益]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“比你肥的”→ 他找的差事比你肥（好），“利益”颇丰。"},
+          "ex": {"type": "真", "year": 2016, "en": "Tips benefit the boss rather than the employees.", "zh": "小费使老板受益，而不是使雇员受益。", "key": ["benefit"]},
+          "ext": [
+            {"word": "beneficial", "ipa": "/ˌbenɪˈfɪʃl/", "senses": [{"pos": "adj.", "mean": "有益的，有利的"}]},
+            {"word": "beneficiary", "ipa": "/ˌbenɪˈfɪʃəri/", "senses": [{"pos": "n.", "mean": "受益者，受惠人；遗产继承人"}]}
+          ]
+        },
+        {
+          "no": 3, "word": "salary", "freq": 2, "page": 182,
+          "prons": [{"ipa": "/ˈsæləri/", "senses": [{"pos": "n.", "mean": "[[薪水]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2016, "en": "His salary was too low for his responsibility.", "zh": "与他承担的责任相比，他的薪水太低。", "key": ["salary"]},
+          "ext": []
+        },
+        {
+          "no": 4, "word": "earnings", "freq": 1, "page": 182,
+          "prons": [{"ipa": "/ˈɜːnɪŋz/", "senses": [{"pos": "n.", "mean": "[[薪水]]；利润"}]}],
+          "tip": {"type": "对照", "text": "earn v.挣得；挣钱 → earnings n."},
+          "ex": {"type": "真", "year": 2020, "en": "What have researchers found out about people's earnings?", "zh": "研究人员对人们的收入有什么发现？", "key": ["earnings"]},
+          "ext": [{"word": "earn", "ipa": "/ɜːn/", "senses": [{"pos": "v.", "mean": "挣得；博得；获得；挣钱"}]}]
+        },
+        {
+          "no": 5, "word": "wage", "freq": 1, "page": 182,
+          "prons": [{"ipa": "/weɪdʒ/", "senses": [
+            {"pos": "n.", "mean": "[[工资]]"},
+            {"pos": "v.", "mean": "开展，发动"}
+          ]}],
+          "tip": {"type": "联想", "text": "wa（联想“哇”）+ ge（联想“哥”）→ 哇！哥哥的“工资”真高。"},
+          "ex": {"type": "真", "year": 2016, "en": "He is always complaining about low wages.", "zh": "他总是抱怨工资低。", "key": ["wages"]},
+          "ext": []
+        },
+        {
+          "no": 6, "word": "fee", "freq": 1, "page": 182,
+          "prons": [{"ipa": "/fiː/", "senses": [{"pos": "n.", "mean": "[[费用]]；酬金"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“费”。"},
+          "ex": {"type": "真", "year": 2018, "en": "A fee should be charged on used containers for recycling.", "zh": "对回收的旧容器应收取费用。", "key": ["fee"]},
+          "ext": []
+        },
+        {
+          "no": 7, "word": "fare", "freq": 1, "page": 183,
+          "prons": [{"ipa": "/feə(r)/", "senses": [
+            {"pos": "n.", "mean": "（车或船的）[[费用，票（价）]]"},
+            {"pos": "v.", "mean": "成功"}
+          ]}],
+          "tip": {"type": "联想", "text": "far（远）+ e（字母音似“姨”）→ 阿姨住得很远，坐车去她家需要一笔不小的“费用”。"},
+          "ex": {"type": "例", "en": "Children travel at half fare.", "zh": "儿童交通费减半。", "key": ["fare"]},
+          "ext": []
+        },
+        {
+          "no": 8, "word": "farewell", "freq": 1, "page": 183,
+          "prons": [{"ipa": "/ˌfeəˈwel/", "senses": [{"pos": "n.", "mean": "[[告别]]"}]}],
+          "tip": {"type": "联想", "text": "far（远）+ e（字母音似“姨”）+ well（好）→ 住在远方的阿姨要启程回去了，我要跟她好好地“告别”。"},
+          "ex": {"type": "例", "en": "You should bid farewell to guilt and regret.", "zh": "你应当告别内疚和遗憾。", "key": ["bid farewell to"]},
+          "ext": []
+        },
+        {
+          "no": 9, "word": "welfare", "freq": 2, "page": 183,
+          "prons": [{"ipa": "/ˈwelfeə(r)/", "senses": [{"pos": "n.", "mean": "[[福利，救济]]；幸福"}]}],
+          "tip": {"type": "联想", "text": "wel（联想 well）+ far（远）+ e（字母音似“姨”）→ 他想好好地去看望远方的阿姨，但是路费只能靠“救济”。"},
+          "ex": {"type": "例", "en": "They live on charity and social welfare.", "zh": "他们靠慈善和社会福利生活。", "key": ["welfare"]},
+          "ext": []
+        },
+        {
+          "no": 10, "word": "pension", "freq": 2, "page": 183,
+          "prons": [{"ipa": "/ˈpenʃn/", "senses": [{"pos": "n.", "mean": "[[养老金]]；抚恤金"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“陪心”→ 人老的时候，除了陪伴，能让他安心的就是“养老金”。"},
+          "ex": {"type": "真", "year": 2015, "en": "People may be able to enjoy generous defined-benefits from pension plans.", "zh": "人们也许可以享受养老金计划带来的丰厚的固定福利。", "key": ["pension"]},
+          "ext": [{"word": "pensioner", "ipa": "/ˈpenʃənə(r)/", "senses": [{"pos": "n.", "mean": "领养老金（或退休金、抚恤金）者"}]}]
+        },
+        {
+          "no": 11, "word": "allowance", "freq": 1, "page": 183,
+          "prons": [{"ipa": "/əˈlaʊəns/", "senses": [{"pos": "n.", "mean": "[[津贴]]，补助"}]}],
+          "tip": {"type": "联想", "text": "allow（允许）+ ance（音似“恩赐”）→ 允许给的恩赐→津贴"},
+          "ex": {"type": "例", "en": "They give me a really generous allowance.", "zh": "他们给了我一笔非常丰厚的津贴。", "key": ["allowance"]},
+          "ext": [{"word": "allow", "ipa": "/əˈlaʊ/", "senses": [{"pos": "v.", "mean": "允许，准许；承认；给予"}]}]
+        },
+        {
+          "no": 12, "word": "bonus", "freq": 1, "page": 183,
+          "prons": [{"ipa": "/ˈbəʊnəs/", "senses": [{"pos": "n.", "mean": "[[奖金]]；意外收获"}]}],
+          "tip": {"type": "联想", "text": "bo（形似 60）+ nus（联想 nut）→ 公司发了 60 袋坚果作为“奖金”。"},
+          "ex": {"type": "真", "year": 2019, "en": "She received a bonus unexpectedly.", "zh": "她意外地收到了一笔奖金。", "key": ["bonus"]},
+          "ext": []
+        },
+        {
+          "no": 13, "word": "award", "freq": 3, "page": 183,
+          "prons": [{"ipa": "/əˈwɔːd/", "senses": [
+            {"pos": "v.", "mean": "[[授予]]；给予奖励"},
+            {"pos": "n.", "mean": "奖品，[[奖金]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "a（—）+ ward（音似 word）→ 快要下课了，老师给认真听课的同学发单词卡作为“奖品”。"},
+          "ex": {"type": "例", "en": "The three students were awarded scholarships totaling $21,000.", "zh": "这三名学生获得了总计 2.1 万美元的奖学金。", "key": ["awarded"]},
+          "ext": []
+        },
+        {
+          "no": 14, "word": "reward", "freq": 3, "page": 183,
+          "prons": [{"ipa": "/rɪˈwɔːd/", "senses": [
+            {"pos": "n.", "mean": "[[报酬]]；赏金；[[回报]]"},
+            {"pos": "v.", "mean": "奖励；奖赏"}
+          ]}],
+          "tip": {"type": "联想", "text": "re-（回）+ ward（音似 word）→ 作为“回报”，学生给老师讲了个单词。"},
+          "ex": {"type": "真", "year": 2023, "en": "Big houses are advertised as a reward for hard work and diligence.", "zh": "大房子被宣传为对努力工作和勤奋的奖赏。", "key": ["reward"]},
+          "ext": [{"word": "rewarding", "ipa": "/rɪˈwɔːdɪŋ/", "senses": [{"pos": "adj.", "mean": "值得做的，有益的"}]}]
+        },
+        {
+          "no": 15, "word": "awkward", "freq": 1, "page": 183,
+          "prons": [{"ipa": "/ˈɔːkwəd/", "senses": [{"pos": "adj.", "mean": "[[令人尴尬的]]，难对付的，笨拙的"}]}],
+          "tip": {"type": "联想", "text": "awk（音似“拗口”）+ ward（音似 word）→ 他在很多人面前反复读错一个拗口的单词，感觉是“令人尴尬的”。"},
+          "ex": {"type": "例", "en": "Some of them find it awkward when hugging children.", "zh": "他们中的一些人觉得拥抱孩子很尴尬。", "key": ["awkward"]},
+          "ext": []
+        },
+        {
+          "no": 16, "word": "awe", "freq": 1, "page": 183,
+          "prons": [{"ipa": "/ɔː/", "senses": [
+            {"pos": "n.", "mean": "[[敬畏]]"},
+            {"pos": "v.", "mean": "使敬畏"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“哦”→ 当你对某件事心怀“敬畏”时，只能连连发出“哦”的声音。"},
+          "ex": {"type": "例", "en": "Children looked up in awe and delight.", "zh": "孩子们都怀着敬畏和喜悦的心情抬起头来。", "key": ["awe"]},
+          "ext": [{"word": "awful", "ipa": "/ˈɔːfl/", "senses": [{"pos": "adj.", "mean": "可怕的；极坏的；非常的"}]}]
+        },
+        {
+          "no": 17, "word": "awesome", "freq": 2, "page": 184,
+          "prons": [{"ipa": "/ˈɔːsəm/", "senses": [{"pos": "adj.", "mean": "[[令人惊叹的，使人惊惧的]]；很好的"}]}],
+          "tip": {"type": "构词", "text": "awe（使敬畏）+ -some（形容词后缀，具有……倾向的）→ 令人惊叹的"},
+          "ex": {"type": "例", "en": "The show was just awesome.", "zh": "演出实在棒极了。", "key": ["awesome"]},
+          "ext": []
+        },
+        {
+          "no": 18, "word": "retail", "freq": 2, "page": 184,
+          "prons": [
+            {"ipa": "/ˈriːteɪl/", "senses": [{"pos": "n. & v.", "mean": "[[零售]]"}]},
+            {"ipa": "/rɪˈteɪl/", "senses": [{"pos": "v.", "mean": "详说，述说"}]}
+          ],
+          "tip": {"type": "构词", "text": "re-（再）+ tail（切）→ 一再地切割（单卖）→ 零售"},
+          "ex": {"type": "真", "year": 2015, "en": "He owned a small retail business in Michigan years ago.", "zh": "几年前，他在密歇根州拥有一家小型零售公司。", "key": ["retail"]},
+          "ext": [{"word": "retailer", "ipa": "/ˈriːteɪlə(r)/", "senses": [{"pos": "n.", "mean": "零售商"}]}]
+        },
+        {
+          "no": 19, "word": "tailor", "freq": 1, "page": 184,
+          "prons": [{"ipa": "/ˈteɪlə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[裁缝]]"},
+            {"pos": "v.", "mean": "[[专门制作]]；定做"}
+          ]}],
+          "tip": {"type": "构词", "text": "tail（切）+ -or（名词后缀）→ 负责裁切的人→裁缝"},
+          "ex": {"type": "例", "en": "Treatment is tailored to the needs of each patient.", "zh": "治疗方案是针对各个病人的需要而制订的。", "key": ["tailored", "to"]},
+          "ext": []
+        },
+        {
+          "no": 20, "word": "detail", "freq": 3, "page": 184,
+          "prons": [{"ipa": "/ˈdiːteɪl/", "senses": [{"pos": "n.", "mean": "[[细节]]，详情"}]}],
+          "tip": {"type": "构词", "text": "de-（分开）+ tail（切）→ 分开切，切成很小的一份→细节"},
+          "ex": {"type": "真", "year": 2017, "en": "She can add multiple details to the design to communicate her idea.", "zh": "她可以在设计中添加多个细节来传达她的想法。", "key": ["details"]},
+          "ext": [{"word": "detailed", "ipa": "/ˈdiːteɪld/", "senses": [{"pos": "adj.", "mean": "详细的，细致的；精细的"}]}]
+        },
+        {
+          "no": 21, "word": "advertise", "freq": 1, "page": 184,
+          "prons": [{"ipa": "/ˈædvətaɪz/", "senses": [{"pos": "v.", "mean": "[[（为……）做广告]]；宣传"}]}],
+          "tip": {"type": "联想", "text": "ad-（向）+ ver（音似“我”）+ ti（联想“提”）+ se → 他们向我提那个产品，是在为它“做广告”。"},
+          "ex": {"type": "真", "year": 2022, "en": "They are advertised as a way for adults to finish their education.", "zh": "它们被宣传为成年人完成教育的一种方式。", "key": ["advertised"]},
+          "ext": [
+            {"word": "advertisement", "ipa": "/ədˈvɜːtɪsmənt/", "senses": [{"pos": "n.", "mean": "广告（活动）；启事"}]},
+            {"word": "advertising", "ipa": "/ˈædvətaɪzɪŋ/", "senses": [{"pos": "n.", "mean": "广告活动；广告业"}]}
+          ]
+        }
+      ]
+    },
+    {
+      "no": 20,
+      "title": "bar 相关",
+      "pages": [184, 185],
+      "map": {
+        "w": "bar 相关",
+        "children": [
+          {"w": "barrier"},
+          {"w": "barrel", "children": [{"w": "bucket", "rel": "近义"}]},
+          {"w": "bargain", "children": [
+            {"w": "gain", "rel": "相关"},
+            {"w": "embarrass", "rel": "相关", "children": [{"w": "embarrassment", "rel": "扩"}]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 22, "word": "bar", "freq": 1, "page": 184,
+          "prons": [{"ipa": "/bɑː(r)/", "senses": [
+            {"pos": "n.", "mean": "[[酒吧]]；（长方形）[[条，棒]]"},
+            {"pos": "v.", "mean": "（用铁条或木条）堵；阻挡；禁止"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "They stopped the car at a bar.", "zh": "他们把车停在一家酒吧前面。", "key": ["bar"]},
+          "ext": []
+        },
+        {
+          "no": 23, "word": "barrier", "freq": 2, "page": 184,
+          "prons": [{"ipa": "/ˈbæriə(r)/", "senses": [{"pos": "n.", "mean": "[[障碍物]]；阻力；分界线"}]}],
+          "tip": {"type": "构词", "text": "bar(r)（棒）+ -ier（名词后缀）→ 用木棒做的东西→障碍物"},
+          "ex": {"type": "真", "year": 2023, "en": "Language barriers can be a big obstacle.", "zh": "语言障碍是一个很大的阻碍。", "key": ["barriers"]},
+          "ext": []
+        },
+        {
+          "no": 24, "word": "barrel", "freq": 1, "page": 184,
+          "prons": [{"ipa": "/ˈbærəl/", "senses": [{"pos": "n.", "mean": "[[桶]]；一桶（的量）"}]}],
+          "tip": {"type": "构词", "text": "bar(r)（棒）+ -el（后缀）→ 把木棒箍起来做的东西→桶"},
+          "ex": {"type": "例", "en": "They got through two barrels of beer.", "zh": "他们喝了两桶啤酒。", "key": ["barrels"]},
+          "ext": []
+        },
+        {
+          "no": 25, "word": "bucket", "freq": 1, "page": 185,
+          "prons": [{"ipa": "/ˈbʌkɪt/", "senses": [{"pos": "n.", "mean": "（有提梁的）[[桶]]；一桶（的量）；大量"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“巴克它”→ 电影《野性的呼唤》里的犬王巴克体形很大，一顿能吃“一桶”饭。"},
+          "ex": {"type": "例", "en": "We used two buckets of paint to paint the room.", "zh": "我们用了两桶漆来粉刷房间。", "key": ["buckets"]},
+          "ext": []
+        },
+        {
+          "no": 26, "word": "bargain", "freq": 2, "page": 185,
+          "prons": [{"ipa": "/ˈbɑːɡən/", "senses": [
+            {"pos": "n.", "mean": "[[便宜货]]；交易"},
+            {"pos": "v.", "mean": "[[讨价还价]]；谈判"}
+          ]}],
+          "tip": {"type": "联想", "text": "bar（条，棒）+ gain（获得）→ 买东西时，他跟老板“讨价还价”，用木棒换得了一个“便宜货”。"},
+          "ex": {"type": "例", "en": "He said he wasn't prepared to bargain.", "zh": "他说他不愿讨价还价。", "key": ["bargain"]},
+          "ext": []
+        },
+        {
+          "no": 27, "word": "gain", "freq": 3, "page": 185,
+          "prons": [{"ipa": "/ɡeɪn/", "senses": [
+            {"pos": "v.", "mean": "[[获得，受益]]；增加"},
+            {"pos": "n.", "mean": "[[增加]]；好处，收益"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2020, "en": "She might not gain more experience.", "zh": "她可能不会获得更多的经验。", "key": ["gain"]},
+          "ext": []
+        },
+        {
+          "no": 28, "word": "embarrass", "freq": 1, "page": 185,
+          "prons": [{"ipa": "/ɪmˈbærəs/", "senses": [{"pos": "v.", "mean": "[[使窘迫，使尴尬]]"}]}],
+          "tip": {"type": "联想", "text": "em-（使）+ bar（棍子）+ r（字母音似“啊”）+ ass（屁股）→ 妈妈拿着棍子，到处追着他打啊打，他很尴尬→使尴尬"},
+          "ex": {"type": "例", "en": "He didn't want to embarrass her by asking questions.", "zh": "他不想通过提问题让她尴尬。", "key": ["embarrass"]},
+          "ext": [{"word": "embarrassment", "ipa": "/ɪmˈbærəsmənt/", "senses": [{"pos": "n.", "mean": "尴尬；困境"}]}]
+        }
+      ]
+    },
+    {
+      "no": 21,
+      "title": "fici 相关",
+      "pages": [185, 186],
+      "map": {
+        "w": "fici 相关",
+        "children": [
+          {"w": "deficient", "children": [
+            {"w": "deficiency", "rel": "扩"},
+            {"w": "sufficient", "rel": "反义"}
+          ]},
+          {"w": "artificial", "children": [{"w": "superficial", "rel": "形近"}]},
+          {"w": "proficient", "children": [
+            {"w": "proficiency", "rel": "扩"},
+            {"w": "efficient", "rel": "形近", "children": [{"w": "efficiency", "rel": "扩"}]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 29, "word": "deficient", "freq": 1, "page": 185,
+          "prons": [{"ipa": "/dɪˈfɪʃnt/", "senses": [{"pos": "adj.", "mean": "[[缺乏的，不足的]]；[[有缺点的，有缺陷的]]"}]}],
+          "tip": {"type": "谐音", "text": "发音“弟弟费心的”→ 弟弟做什么都不费心思，做的事总是“有缺点的”。"},
+          "ex": {"type": "例", "en": "They failed to meet the deadline because their time was deficient.", "zh": "因为缺少时间，他们没能如期完成（任务）。", "key": ["deficient"]},
+          "ext": [{"word": "deficiency", "ipa": "/dɪˈfɪʃnsi/", "senses": [{"pos": "n.", "mean": "缺乏；缺点"}]}]
+        },
+        {
+          "no": 30, "word": "artificial", "freq": 1, "page": 185,
+          "prons": [{"ipa": "/ˌɑːtɪˈfɪʃl/", "senses": [{"pos": "adj.", "mean": "[[人工的，人造的]]；虚假的"}]}],
+          "tip": {"type": "联想", "text": "art(i)（艺术）+ fici（音似“费心”）+ -al（形容词后缀）→ 艺术是人费心创造出来的→人工的，人造的"},
+          "ex": {"type": "真", "year": 2024, "en": "Millions of jobs will be threatened by robotics and artificial intelligence.", "zh": "数百万个工作岗位将受到机器人技术和人工智能的威胁。", "key": ["artificial intelligence"]},
+          "ext": []
+        },
+        {
+          "no": 31, "word": "proficient", "freq": 1, "page": 185,
+          "prons": [{"ipa": "/prəˈfɪʃnt/", "senses": [{"pos": "adj.", "mean": "[[熟练的]]，精通的"}]}],
+          "tip": {"type": "联想", "text": "pro-（提前）+ fici（音似“费心”）+ -ent（形容词后缀）→ 你提前费心准备单词考试，达到了“熟练的”掌握程度。"},
+          "ex": {"type": "真", "year": 2021, "en": "For instance, many babies are perfectly proficient crawlers.", "zh": "例如，许多婴儿都是非常熟练的爬行者。", "key": ["proficient"]},
+          "ext": [{"word": "proficiency", "ipa": "/prəˈfɪʃnsi/", "senses": [{"pos": "n.", "mean": "精通，熟练"}]}]
+        },
+        {
+          "no": 32, "word": "efficient", "freq": 3, "page": 185,
+          "prons": [{"ipa": "/ɪˈfɪʃnt/", "senses": [{"pos": "adj.", "mean": "[[效率高的]]，能干的"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“一飞身的”→ 别人爬楼梯来上课，他一飞身就上来了→效率高的"},
+          "ex": {"type": "真", "year": 2019, "en": "It's not necessarily an efficient way to learn.", "zh": "它并不是一种有效的学习方式。", "key": ["efficient"]},
+          "ext": [{"word": "efficiency", "ipa": "/ɪˈfɪʃnsi/", "senses": [{"pos": "n.", "mean": "效率，效能"}]}]
+        },
+        {
+          "no": 33, "word": "sufficient", "freq": 2, "page": 186,
+          "prons": [{"ipa": "/səˈfɪʃnt/", "senses": [{"pos": "adj.", "mean": "[[充足的]]，足够的"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“歇费心他”→ 他做这件事歇（很）费心，因为他想做得足够好→充足的，足够的"},
+          "ex": {"type": "真", "year": 2022, "en": "It has ensured a sufficient food supply to millions.", "zh": "它确保了数百万人的充足粮食供应。", "key": ["sufficient"]},
+          "ext": []
+        },
+        {
+          "no": 34, "word": "superficial", "freq": 1, "page": 186,
+          "prons": [{"ipa": "/ˌsuːpəˈfɪʃl/", "senses": [{"pos": "adj.", "mean": "[[肤浅的，表面的]]"}]}],
+          "tip": {"type": "联想", "text": "super（上面）+ fici（音似“费心”）+ -al（形容词后缀）→ 费的心思只浮在表面上没有深入→肤浅的，表面的"},
+          "ex": {"type": "例", "en": "The book shows only a superficial understanding of the historical context.", "zh": "这本书只表现出对历史背景肤浅的理解。", "key": ["superficial"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 22,
+      "title": "low 相关",
+      "pages": [186, 187],
+      "map": {
+        "w": "low 相关",
+        "children": [
+          {"w": "shallow", "children": [{"w": "shadow", "rel": "形近"}]},
+          {"w": "lower", "children": [{"w": "low", "rel": "扩"}]},
+          {"w": "swallow"},
+          {"w": "hollow"},
+          {"w": "pillow", "children": [{"w": "pillar", "rel": "形近"}]},
+          {"w": "follow", "children": [{"w": "following", "rel": "扩"}]},
+          {"w": "fellow", "children": [{"w": "fellowship", "rel": "扩"}]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 35, "word": "shallow", "freq": 1, "page": 186,
+          "prons": [{"ipa": "/ˈʃæləʊ/", "senses": [
+            {"pos": "n.", "mean": "浅滩"},
+            {"pos": "adj.", "mean": "[[浅的]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "sha（音似“山”）+（l）low（低的）→ 山下的“浅滩”水位很低。"},
+          "ex": {"type": "例", "en": "These fish are found in shallow waters around the coast.", "zh": "这些鱼生长在海边浅水水域。", "key": ["shallow"]},
+          "ext": []
+        },
+        {
+          "no": 36, "word": "shadow", "freq": 1, "page": 186,
+          "prons": [{"ipa": "/ˈʃædəʊ/", "senses": [{"pos": "n.", "mean": "[[影子]]，阴影；影响"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“歇逗”→ 孩童追逐自己“影子”的场景歇（很）逗。"},
+          "ex": {"type": "例", "en": "A shadow fell across her face.", "zh": "一片阴影掠过她的脸庞。", "key": ["shadow"]},
+          "ext": []
+        },
+        {
+          "no": 37, "word": "lower", "freq": 3, "page": 186,
+          "prons": [{"ipa": "/ˈləʊə(r)/", "senses": [
+            {"pos": "adj.", "mean": "[[更低的]]；下面的"},
+            {"pos": "v.", "mean": "把……放低，[[降低]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2019, "en": "The energy used by microwaves is lower than any other form of cooking.", "zh": "微波炉所消耗的能量比其他任何烹饪方式都更低。", "key": ["lower"]},
+          "ext": [{"word": "low", "ipa": "/ləʊ/", "senses": [
+            {"pos": "adj.", "mean": "低的，矮的；低级的，下层的；卑贱的；低下⟨?⟩"},
+            {"pos": "adv.", "mean": "向下；低声地"}
+          ]}]
+        },
+        {
+          "no": 38, "word": "swallow", "freq": 1, "page": 186,
+          "prons": [{"ipa": "/ˈswɒləʊ/", "senses": [
+            {"pos": "n.", "mean": "[[燕子]]"},
+            {"pos": "v.", "mean": "[[吞下]]，咽下"}
+          ]}],
+          "tip": {"type": "联想", "text": "s（联想“蛇”）+ wal（联想 wall）+ low（低的）→ 在低矮的墙上有一条蛇，它想要“吞下”那只“燕子”。"},
+          "ex": {"type": "例", "en": "Their homes will be swallowed up by the hungry sea.", "zh": "他们的家园将会被饥饿的大海吞没。", "key": ["swallowed up"]},
+          "ext": []
+        },
+        {
+          "no": 39, "word": "hollow", "freq": 1, "page": 186,
+          "prons": [{"ipa": "/ˈhɒləʊ/", "senses": [
+            {"pos": "n.", "mean": "[[山谷]]；洼地"},
+            {"pos": "adj.", "mean": "[[空的]]；空虚的"}
+          ]}],
+          "tip": {"type": "联想", "text": "hol（联想 hole）+ low（低的）→ “山谷”的低处有一个洞，洞是“空的”。"},
+          "ex": {"type": "真", "year": 2019, "en": "To some of the residents, Songdo feels hollow.", "zh": "对一些居民来说，松岛空荡荡的。", "key": ["hollow"]},
+          "ext": []
+        },
+        {
+          "no": 40, "word": "pillow", "freq": 1, "page": 187,
+          "prons": [{"ipa": "/ˈpɪləʊ/", "senses": [
+            {"pos": "n.", "mean": "[[枕头]]"},
+            {"pos": "v.", "mean": "枕着"}
+          ]}],
+          "tip": {"type": "联想", "text": "pil（联想 pill）+ low（低的）→ 她吃了几粒药片，就“枕着”低低的“枕头”睡下了。"},
+          "ex": {"type": "例", "en": "She lay back against the pillows.", "zh": "她半躺半坐靠在枕头上。", "key": ["pillows"]},
+          "ext": []
+        },
+        {
+          "no": 41, "word": "pillar", "freq": 1, "page": 187,
+          "prons": [{"ipa": "/ˈpɪlə(r)/", "senses": [{"pos": "n.", "mean": "[[支柱]]；柱子；栋梁；富有某种素质的人"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“劈了”→ 他不小心把“柱子”给劈了。"},
+          "ex": {"type": "例", "en": "She is a pillar of strength in a crisis.", "zh": "她在危难中表现非常坚强。", "key": ["pillar"]},
+          "ext": []
+        },
+        {
+          "no": 42, "word": "follow", "freq": 1, "page": 187,
+          "prons": [{"ipa": "/ˈfɒləʊ/", "senses": [{"pos": "v.", "mean": "[[跟随]]；遵循；密切注意"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2024, "en": "It proves crucial in making others follow one's course of action.", "zh": "事实证明，这对于让别人遵循自己的行动方针至关重要。", "key": ["follow"]},
+          "ext": [{"word": "following", "ipa": "/ˈfɒləʊɪŋ/", "senses": [
+            {"pos": "adj.", "mean": "下述的，下列的"},
+            {"pos": "prep.", "mean": "在（某事）以后；由于"}
+          ]}]
+        },
+        {
+          "no": 43, "word": "fellow", "freq": 1, "page": 187,
+          "prons": [{"ipa": "/ˈfeləʊ/", "senses": [
+            {"pos": "n.", "mean": "[[人，家伙]]；伙伴，同事"},
+            {"pos": "adj.", "mean": "同伴的，同事的"}
+          ]}],
+          "tip": {"type": "对照", "text": "有一只鹅（e）一直跟随（follow）着这个家伙（fellow）。"},
+          "ex": {"type": "真", "year": 2017, "en": "Our fellow students have just come out of high school.", "zh": "我们的同学刚从高中毕业。", "key": ["fellow"]},
+          "ext": [{"word": "fellowship", "ipa": "/ˈfeləʊʃɪp/", "senses": [{"pos": "n.", "mean": "伙伴关系；友谊；交情"}]}]
+        }
+      ]
+    },
+    {
+      "no": 23,
+      "title": "“看”相关(1)",
+      "pages": [187, 188],
+      "map": {
+        "w": "“看”相关(1)",
+        "children": [
+          {"w": "spy"},
+          {"w": "aspect"},
+          {"w": "spin"},
+          {"w": "suspect", "children": [
+            {"w": "suspicion", "rel": "扩", "children": [{"w": "suspicious"}]}
+          ]},
+          {"w": "inspect", "children": [
+            {"w": "inspection", "rel": "扩", "children": [{"w": "inspector"}]},
+            {"w": "check", "rel": "相关", "children": [{"w": "cheque", "rel": "同音"}]},
+            {"w": "examine", "rel": "近义", "children": [
+              {"w": "examination", "rel": "扩"},
+              {"w": "examinee", "rel": "扩"},
+              {"w": "examiner", "rel": "扩"},
+              {"w": "monitor", "rel": "相关"}
+            ]}
+          ]},
+          {"w": "respect", "children": [
+            {"w": "respectable", "rel": "扩"},
+            {"w": "respectful", "rel": "扩"},
+            {"w": "respective", "rel": "扩", "children": [{"w": "respectively", "rel": "扩"}]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 44, "word": "spy", "freq": 1, "page": 187,
+          "prons": [{"ipa": "/spaɪ/", "senses": [
+            {"pos": "n.", "mean": "[[间谍]]"},
+            {"pos": "v.", "mean": "从事间谍活动；认出；查明"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "No spy agency or criminal organization could actively gather the type of data.", "zh": "没有任何间谍机构或犯罪组织能够主动收集此类数据。", "key": ["spy"]},
+          "ext": []
+        },
+        {
+          "no": 45, "word": "aspect", "freq": 2, "page": 187,
+          "prons": [{"ipa": "/ˈæspekt/", "senses": [{"pos": "n.", "mean": "[[方面]]；外貌"}]}],
+          "tip": {"type": "联想", "text": "a（—）+ spect（看）→ 只看一眼，了解的只是事物的一个“方面”。"},
+          "ex": {"type": "真", "year": 2019, "en": "The most researched aspect of breakfast and breakfast-skipping has been its links to obesity.", "zh": "关于吃早餐和不吃早餐的研究最多的方面是它与肥胖的关系。", "key": ["aspect"]},
+          "ext": []
+        },
+        {
+          "no": 46, "word": "spin", "freq": 1, "page": 187,
+          "prons": [{"ipa": "/spɪn/", "senses": [{"pos": "v.", "mean": "（使）[[快速旋转]]；纺纱"}]}],
+          "tip": {"type": "联想", "text": "sp（看）+ in（里面）→ 我看见了教室里小女孩转的舞姿→（使）快速旋转"},
+          "ex": {"type": "例", "en": "The plane was spinning out of control.", "zh": "飞机失去控制，进入尾旋状态。", "key": ["spinning"]},
+          "ext": []
+        },
+        {
+          "no": 47, "word": "suspect", "freq": 3, "page": 187,
+          "prons": [
+            {"ipa": "/səˈspekt/", "senses": [{"pos": "v.", "mean": "[[怀疑]]"}]},
+            {"ipa": "/ˈsʌspekt/", "senses": [
+              {"pos": "n.", "mean": "[[嫌疑分子]]"},
+              {"pos": "adj.", "mean": "可疑的"}
+            ]}
+          ],
+          "tip": {"type": "构词", "text": "sus-（下面）+ pect（看）→ 往下面看→怀疑"},
+          "ex": {"type": "真", "year": 2023, "en": "Police suspect the eggs came from a freighter that lost part of its cargo.", "zh": "警方怀疑这些鸡蛋来自一艘丢失部分货物的货船。", "key": ["suspect"]},
+          "ext": [{"word": "suspicion", "ipa": "/səˈspɪʃn/", "senses": [{"pos": "n.", "mean": "猜疑，怀疑"}]}]
+        },
+        {
+          "no": 48, "word": "suspicious", "freq": 1, "page": 188,
+          "prons": [{"ipa": "/səˈspɪʃəs/", "senses": [{"pos": "adj.", "mean": "[[可疑的]]，猜疑的"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "They became suspicious of his behaviour and contacted the police.", "zh": "他们觉得他行为可疑，便报了警。", "key": ["suspicious of"]},
+          "ext": []
+        },
+        {
+          "no": 49, "word": "inspect", "freq": 1, "page": 188,
+          "prons": [{"ipa": "/ɪnˈspekt/", "senses": [{"pos": "v.", "mean": "[[调查]]；[[检查]]"}]}],
+          "tip": {"type": "构词", "text": "in（里面）+ spect（看）→ 往里面看→调查；检查"},
+          "ex": {"type": "例", "en": "I'll inspect the product before we put it in the container.", "zh": "在我们把产品装进集装箱之前，我会先检查一下。", "key": ["inspect"]},
+          "ext": [
+            {"word": "inspection", "ipa": "/ɪnˈspekʃn/", "senses": [{"pos": "n.", "mean": "检查，视察"}]},
+            {"word": "inspector", "ipa": "/ɪnˈspektə(r)/", "senses": [{"pos": "n.", "mean": "检查员，视察员，巡视员；（警察）巡官"}]}
+          ]
+        },
+        {
+          "no": 50, "word": "check", "freq": 1, "page": 188,
+          "prons": [{"ipa": "/tʃek/", "senses": [
+            {"pos": "v.", "mean": "[[检查，核对]]；制止"},
+            {"pos": "n.", "mean": "[[支票]]，结账单"}
+          ]}],
+          "tip": {"type": "联想", "text": "che（联想“车”）+ ck（联想品牌 CK）→ 安检人员要“检查”车上是否有 CK 品牌的商品。"},
+          "ex": {"type": "真", "year": 2020, "en": "She checked all the items with the man.", "zh": "她和那个人核对了所有项目。", "key": ["checked"]},
+          "ext": []
+        },
+        {
+          "no": 51, "word": "cheque", "freq": 1, "page": 188,
+          "prons": [{"ipa": "/tʃek/", "senses": [{"pos": "n.", "mean": "[[支票]]"}]}],
+          "tip": {"type": "对照", "text": "请检查（check）好支票（cheque）。"},
+          "ex": {"type": "例", "en": "I had just posted the letter when I remembered that hadn't enclosed the cheque.", "zh": "我刚把信寄出去，就想起了信里面没有附上支票。", "key": ["cheque"]},
+          "ext": []
+        },
+        {
+          "no": 52, "word": "examine", "freq": 1, "page": 188,
+          "prons": [{"ipa": "/ɪɡˈzæmɪn/", "senses": [{"pos": "v.", "mean": "审查；（仔细地）[[检查]]；测验"}]}],
+          "tip": {"type": "联想", "text": "exam（考试）+（m）ine（我的）→ 考试是为了“检查”我的学习情况。"},
+          "ex": {"type": "真", "year": 2024, "en": "Meanwhile, it pays to examine studies funded by industry or special interest groups with extra care.", "zh": "与此同时，仔细检查由行业或特殊利益集团资助的研究是值得的。", "key": ["examine"]},
+          "ext": [
+            {"word": "examination", "ipa": "/ɪɡˌzæmɪˈneɪʃn/", "senses": [{"pos": "n.", "mean": "（笔头、口头或操作）考试；审查，调查"}]},
+            {"word": "examinee", "ipa": "/ɪɡˌzæmɪˈniː/", "senses": [{"pos": "n.", "mean": "应试者；受审查者，受检查者"}]},
+            {"word": "examiner", "ipa": "/ɪɡˈzæmɪnə(r)/", "senses": [{"pos": "n.", "mean": "主考人，考官；审查人，检查人"}]}
+          ]
+        },
+        {
+          "no": 53, "word": "monitor", "freq": 1, "page": 188,
+          "prons": [{"ipa": "/ˈmɒnɪtə(r)/", "senses": [
+            {"pos": "n.", "mean": "显示屏；[[监视器]]；班长；[[监督员]]"},
+            {"pos": "v.", "mean": "[[监视，监测]]；跟踪调查"}
+          ]}],
+          "tip": {"type": "构词", "text": "monit（监视，警告）+ -or（表示人或物的后缀）→ 班长；监督员；监视器→监视"},
+          "ex": {"type": "真", "year": 2017, "en": "She monitored the brain activity of participants sleeping in a new environment.", "zh": "她监测了在新环境中睡觉的参与者的大脑活动。", "key": ["monitored"]},
+          "ext": []
+        },
+        {
+          "no": 54, "word": "respect", "freq": 3, "page": 188,
+          "prons": [{"ipa": "/rɪˈspekt/", "senses": [
+            {"pos": "v.", "mean": "[[尊重]]；重视"},
+            {"pos": "n.", "mean": "尊敬；[[方面]]"}
+          ]}],
+          "tip": {"type": "构词", "text": "re-（重复）+ spect（看）→ 说话时重复（一直）看别人的眼睛，是对别人的“尊重”。"},
+          "ex": {"type": "例", "en": "The people who live there respect the land.", "zh": "住在那里的人尊重那片土地。", "key": ["respect"]},
+          "ext": [
+            {"word": "respectable", "ipa": "/rɪˈspektəbl/", "senses": [{"pos": "adj.", "mean": "体面的；值得尊敬的"}]},
+            {"word": "respectful", "ipa": "/rɪˈspektfl/", "senses": [{"pos": "adj.", "mean": "有礼貌的，恭敬的"}]}
+          ]
+        },
+        {
+          "no": 55, "word": "respective", "freq": 1, "page": 188,
+          "prons": [{"ipa": "/rɪˈspektɪv/", "senses": [{"pos": "adj.", "mean": "[[分别的，各自的]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "We should respect our respective aspects.", "zh": "我们应该尊重我们各自的方面。", "key": ["respective"]},
+          "ext": [{"word": "respectively", "ipa": "/rɪˈspektɪvli/", "senses": [{"pos": "adv.", "mean": "各自地；依次地"}]}]
+        }
+      ]
+    },
+    {
+      "no": 24,
+      "title": "“看”相关(2)",
+      "pages": [189, 190],
+      "map": {
+        "w": "“看”相关(2)",
+        "children": [
+          {"w": "prospect", "children": [{"w": "prospective", "rel": "扩"}]},
+          {"w": "speculate", "children": [
+            {"w": "speculation", "rel": "扩", "children": [{"w": "speculative"}]}
+          ]},
+          {"w": "perspective", "children": [
+            {"w": "standpoint", "rel": "近义", "children": [
+              {"w": "statement", "rel": "近义"},
+              {"w": "point", "rel": "拆分", "children": [
+                {"w": "pointless", "rel": "扩"},
+                {"w": "notion", "rel": "相关", "children": [
+                  {"w": "notional", "rel": "扩"},
+                  {"w": "concept", "rel": "近义", "children": [{"w": "conceptual", "rel": "扩"}]}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"w": "telescope", "children": [{"w": "telescopic", "rel": "扩"}]},
+          {"w": "expect", "children": [
+            {"w": "expectation", "rel": "扩", "children": [{"w": "expectancy"}]},
+            {"w": "anticipate", "rel": "近义", "children": [
+              {"w": "anticipation", "rel": "扩"},
+              {"w": "antique", "rel": "形近"},
+              {"w": "participate", "rel": "形近", "children": [
+                {"w": "participant", "rel": "扩"},
+                {"w": "participation", "rel": "扩"}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 56, "word": "prospect", "freq": 3, "page": 189,
+          "prons": [{"ipa": "/ˈprɒspekt/", "senses": [{"pos": "n.", "mean": "[[前途，前景]]；[[预期，展望]]；设想"}]}],
+          "tip": {"type": "构词", "text": "pro-（向前）+ spect（看）→ 向前看到的→前途"},
+          "ex": {"type": "真", "year": 2021, "en": "So is there any evidence that setbacks might actually improve our career prospects?", "zh": "那么，有没有证据表明挫折实际上会改善我们的职业前景呢？", "key": ["prospects"]},
+          "ext": [{"word": "prospective", "ipa": "/prəˈspektɪv/", "senses": [{"pos": "adj.", "mean": "有前途的，预期的"}]}]
+        },
+        {
+          "no": 57, "word": "speculate", "freq": 1, "page": 189,
+          "prons": [{"ipa": "/ˈspekjuleɪt/", "senses": [{"pos": "v.", "mean": "[[推测]]；投机"}]}],
+          "tip": {"type": "联想", "text": "spec（看）+ u（字母音似 you）+ late（联想 later）→ 他看了你一会儿，随后“推测”出你过得很幸福。"},
+          "ex": {"type": "真", "year": 2017, "en": "The researchers speculate that craft activities promote the development of nerve pathways in the brain.", "zh": "研究人员推测，手工艺活动促进了大脑神经通路的发展。", "key": ["speculate"]},
+          "ext": [
+            {"word": "speculation", "ipa": "/ˌspekjuˈleɪʃn/", "senses": [{"pos": "n.", "mean": "推测；投机买卖"}]},
+            {"word": "speculative", "ipa": "/ˈspekjələtɪv/", "senses": [{"pos": "adj.", "mean": "猜测的；投机的"}]}
+          ]
+        },
+        {
+          "no": 58, "word": "perspective", "freq": 3, "page": 189,
+          "prons": [{"ipa": "/pəˈspektɪv/", "senses": [{"pos": "n.", "mean": "[[看法，观点]]"}]}],
+          "tip": {"type": "构词", "text": "per-（透过）+ spect（看）+ -ive（名词后缀）→ 看穿后得出“看法”。"},
+          "ex": {"type": "真", "year": 2015, "en": "It's nice to have people agree, but you need conflicting perspectives to dig out the truth.", "zh": "人们意见一致是件好事，但你需要相互矛盾的观点来挖掘真相。", "key": ["perspectives"]},
+          "ext": []
+        },
+        {
+          "no": 59, "word": "standpoint", "freq": 1, "page": 189,
+          "prons": [{"ipa": "/ˈstændpɔɪnt/", "senses": [{"pos": "n.", "mean": "[[立场]]；观点"}]}],
+          "tip": {"type": "构词", "text": "stand（站）+ point（点）→ 立足点→立场；观点"},
+          "ex": {"type": "例", "en": "We must approach the problem from a different standpoint.", "zh": "我们必须换一种角度来处理这个问题。", "key": ["from a", "standpoint"]},
+          "ext": []
+        },
+        {
+          "no": 60, "word": "statement", "freq": 2, "page": 189,
+          "prons": [{"ipa": "/ˈsteɪtmənt/", "senses": [{"pos": "n.", "mean": "[[声明]]；观点；[[陈述]]"}]}],
+          "tip": {"type": "构词", "text": "state（声明；陈述）+ -ment（名词后缀）→ 声明；陈述"},
+          "ex": {"type": "例", "en": "The article contained several false statements.", "zh": "这篇文章包含几个错误的陈述。", "key": ["statements"]},
+          "ext": []
+        },
+        {
+          "no": 61, "word": "point", "freq": 1, "page": 189,
+          "prons": [{"ipa": "/pɔɪnt/", "senses": [
+            {"pos": "n.", "mean": "[[观点]]；[[重点]]；核心问题；[[得分，点]]；地点"},
+            {"pos": "v.", "mean": "指；对着，朝着"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2017, "en": "But is there a point where it reaches capacity?", "zh": "但是，是否存在一个达到容量极限的临界点呢？", "key": ["point"]},
+          "ext": [{"word": "pointless", "ipa": "/ˈpɔɪntləs/", "senses": [{"pos": "adj.", "mean": "无意义的；无目标的"}]}]
+        },
+        {
+          "no": 62, "word": "notion", "freq": 1, "page": 189,
+          "prons": [{"ipa": "/ˈnəʊʃn/", "senses": [{"pos": "n.", "mean": "[[观念]]；信念；理解"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“闹心”→ 她女儿的这种“观念”让她很闹心。"},
+          "ex": {"type": "例", "en": "She had only a vague notion of what might happen.", "zh": "对于可能发生的事她只有一个模糊的概念。", "key": ["notion"]},
+          "ext": [{"word": "notional", "ipa": "/ˈnəʊʃənl/", "senses": [{"pos": "adj.", "mean": "猜测的；理论上的"}]}]
+        },
+        {
+          "no": 63, "word": "concept", "freq": 3, "page": 190,
+          "prons": [{"ipa": "/ˈkɒnsept/", "senses": [{"pos": "n.", "mean": "[[观念]]；概念"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2024, "en": "The concept is often presented as something to achieve, or a goal to reach.", "zh": "这个概念通常被呈现为要实现的东西或要达到的目标。", "key": ["concept"]},
+          "ext": [{"word": "conceptual", "ipa": "/kənˈseptʃuəl/", "senses": [{"pos": "adj.", "mean": "观念（上）的；概念（上）的"}]}]
+        },
+        {
+          "no": 64, "word": "telescope", "freq": 1, "page": 190,
+          "prons": [{"ipa": "/ˈtelɪskəʊp/", "senses": [{"pos": "n.", "mean": "[[望远镜]]"}]}],
+          "tip": {"type": "构词", "text": "tele-（远）+ scope（看，观察）→ 能看到远处的工具→望远镜"},
+          "ex": {"type": "例", "en": "Buy $50 million worth of new telescopes right now.", "zh": "现在就购买价值 5,000 万美元的新望远镜。", "key": ["telescopes"]},
+          "ext": [{"word": "telescopic", "ipa": "/ˌtelɪˈskɒpɪk/", "senses": [{"pos": "adj.", "mean": "望远镜的；望远的；放大的；伸缩的；套叠的，套筒的"}]}]
+        },
+        {
+          "no": 65, "word": "expect", "freq": 1, "page": 190,
+          "prons": [{"ipa": "/ɪkˈspekt/", "senses": [{"pos": "v.", "mean": "[[期待]]，预料；猜想"}]}],
+          "tip": {"type": "构词", "text": "ex-（向外）+ pect（看）→ 向外看→喜出望外→期待"},
+          "ex": {"type": "真", "year": 2023, "en": "When you look at today's digital activity, the facts are much more positive than you might expect.", "zh": "当你审视当今的数字活动时，事实比你预料的要积极得多。", "key": ["expect"]},
+          "ext": [
+            {"word": "expectation", "ipa": "/ˌekspekˈteɪʃn/", "senses": [{"pos": "n.", "mean": "期望，希望"}]},
+            {"word": "expectancy", "ipa": "/ɪkˈspektənsi/", "senses": [{"pos": "n.", "mean": "预期；期待，期望"}]}
+          ]
+        },
+        {
+          "no": 66, "word": "anticipate", "freq": 1, "page": 190,
+          "prons": [{"ipa": "/ænˈtɪsɪpeɪt/", "senses": [{"pos": "v.", "mean": "[[预料，预计]]（并做准备）；期望"}]}],
+          "tip": {"type": "联想", "text": "an（联想“俺”）+ ti（联想“提”）+ ci（联想“喜之郎 cici 果冻”）+ pate（音似“陪她”）→ 俺提着 cici 果冻去陪她，“期望”她喜欢。"},
+          "ex": {"type": "例", "en": "My financial aid did not anticipate any of these costs.", "zh": "我的经济援助没有预计到这些费用。", "key": ["anticipate"]},
+          "ext": [{"word": "anticipation", "ipa": "/ænˌtɪsɪˈpeɪʃn/", "senses": [{"pos": "n.", "mean": "预期，预料"}]}]
+        },
+        {
+          "no": 67, "word": "participate", "freq": 3, "page": 190,
+          "prons": [{"ipa": "/pɑːˈtɪsɪpeɪt/", "senses": [{"pos": "v.", "mean": "[[参加]]，参与"}]}],
+          "tip": {"type": "联想", "text": "parti（音似“怕他”）+ ci(p)（抓）+ pate（音似“陪他”）→ 我怕他被坏人抓去，于是主动陪他“参加”活动。"},
+          "ex": {"type": "例", "en": "She had participated in the Berkeley study.", "zh": "她参与了伯克利的研究。", "key": ["participated in"]},
+          "ext": [
+            {"word": "participant", "ipa": "/pɑːˈtɪsɪpənt/", "senses": [{"pos": "n.", "mean": "参与者"}]},
+            {"word": "participation", "ipa": "/pɑːˌtɪsɪˈpeɪʃn/", "senses": [{"pos": "n.", "mean": "参加"}]}
+          ]
+        },
+        {
+          "no": 68, "word": "antique", "freq": 1, "page": 190,
+          "prons": [{"ipa": "/ænˈtiːk/", "senses": [
+            {"pos": "n.", "mean": "文物，[[古董]]"},
+            {"pos": "adj.", "mean": "[[古老的]]；古董的"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“俺提个”→ 俺提个“古董”送给爷爷。"},
+          "ex": {"type": "真", "year": 2018, "en": "It stores lots of priceless antiques.", "zh": "它储存着许多无价的古董。", "key": ["antiques"]},
+          "ext": []
+        }
+      ]
+    }
+  ],
+  "unit_summary": {"groups": 24, "words": 263, "ext": 186, "zhen": 142, "li": 121}
+}
