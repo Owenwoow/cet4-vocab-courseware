@@ -1,0 +1,720 @@
+{
+  "id": "u05-l04",
+  "part": 1,
+  "unit": 5,
+  "lesson": 4,
+  "pages": [148, 155],
+  "groups": [
+    {
+      "no": 17,
+      "title": "“学术”相关",
+      "pages": [148, 149],
+      "map": {
+        "w": "“学术”相关",
+        "children": [
+          {"w": "tutor", "children": [{"w": "tutorial", "rel": "扩"}]},
+          {"w": "educator", "children": [
+            {"w": "educate", "rel": "扩", "children": [
+              {"w": "education", "children": [{"w": "educational"}]}
+            ]}
+          ]},
+          {"w": "academic", "children": [
+            {"w": "academician", "rel": "扩"},
+            {"w": "academy", "rel": "相关"},
+            {"w": "scholar", "rel": "近义", "children": [
+              {"w": "scholarly", "rel": "扩"},
+              {"w": "scholarship", "rel": "扩"},
+              {"w": "scholastic", "rel": "扩"}
+            ]}
+          ]},
+          {"w": "seminar", "children": [
+            {"w": "forum", "rel": "相关", "children": [{"w": "tuition"}]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "tutor", "freq": 2, "page": 148,
+          "prons": [{"ipa": "/ˈtjuːtə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[导师]]；[[家庭教师，私人教师]]"},
+            {"pos": "v.", "mean": "[[指导]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“土特”→ 我们工作后有时会带着土特产看望“导师”。"},
+          "ex": {"type": "例", "en": "Activities all take place under the guidance of an experienced tutor.", "zh": "所有活动都在经验丰富的导师的指导下进行。", "key": ["tutor"]},
+          "ext": [{"word": "tutorial", "ipa": "/tjuːˈtɔːriəl/", "senses": [
+            {"pos": "n.", "mean": "个别辅导时间，辅导课"},
+            {"pos": "adj.", "mean": "导师的；私人教师的；辅导的"}
+          ]}]
+        },
+        {
+          "no": 2, "word": "educator", "freq": 1, "page": 148,
+          "prons": [{"ipa": "/ˈedʒukeɪtə(r)/", "senses": [{"pos": "n.", "mean": "[[教育工作者]]；[[教师]]"}]}],
+          "tip": {"type": "对照", "text": "educate v.教育 → educator n."},
+          "ex": {"type": "真", "year": 2021, "en": "Educators and business leaders have more in common than it may seem.", "zh": "教育工作者和商界领袖有着比表面上看起来更多的共同点。", "key": ["Educators"]},
+          "ext": [
+            {"word": "educate", "ipa": "/ˈedʒukeɪt/", "senses": [{"pos": "v.", "mean": "教育；教导；训练"}]},
+            {"word": "education", "ipa": "/ˌedʒuˈkeɪʃn/", "senses": [{"pos": "n.", "mean": "教育"}]},
+            {"word": "educational", "ipa": "/ˌedʒuˈkeɪʃənl/", "senses": [{"pos": "adj.", "mean": "教育的"}]}
+          ]
+        },
+        {
+          "no": 3, "word": "academic", "freq": 1, "page": 148,
+          "prons": [{"ipa": "/ˌækəˈdemɪk/", "senses": [
+            {"pos": "n.", "mean": "[[大学教师，学者]]"},
+            {"pos": "adj.", "mean": "[[学业的，学术的]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "aca（音似“挨个”）+ dem（音似“点名”）+ -ic（词缀）→ 这个“大学老师”一上课就开始挨个点名。"},
+          "ex": {"type": "真", "year": 2016, "en": "It is essential to a person's future academic success.", "zh": "这对一个人未来的学业成功至关重要。", "key": ["academic"]},
+          "ext": [{"word": "academician", "ipa": "/əˌkædəˈmɪʃn/", "senses": [{"pos": "n.", "mean": "院士；学会会员"}]}]
+        },
+        {
+          "no": 4, "word": "academy", "freq": 2, "page": 148,
+          "prons": [{"ipa": "/əˈkædəmi/", "senses": [{"pos": "n.", "mean": "（高等）[[专科院校]]；[[研究院]]；[[学会]]"}]}],
+          "tip": {"type": "联想", "text": "a(c)-（一再地）+ cade（音似“开的”）+ my（我的）→ 我一再努力学习，因为我的梦想是打开“研究院”的大门。"},
+          "ex": {"type": "例", "en": "I don't hear people in the academy saying it.", "zh": "我没有听到学院里的人说过它。", "key": ["academy"]},
+          "ext": []
+        },
+        {
+          "no": 5, "word": "scholar", "freq": 1, "page": 148,
+          "prons": [{"ipa": "/ˈskɒlə(r)/", "senses": [{"pos": "n.", "mean": "[[学者]]；[[奖学金获得者]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“四告乐”→ 他们四个快乐地告诉我，他们对那个“学者”的报告很感兴趣。"},
+          "ex": {"type": "例", "en": "Scholars have different opinions about it.", "zh": "学者对此有不同的看法。", "key": ["Scholars"]},
+          "ext": [
+            {"word": "scholarly", "ipa": "/ˈskɒləli/", "senses": [{"pos": "adj.", "mean": "学者气质的，学者风度的"}]},
+            {"word": "scholarship", "ipa": "/ˈskɒləʃɪp/", "senses": [{"pos": "n.", "mean": "奖学金"}]},
+            {"word": "scholastic", "ipa": "/skəˈlæstɪk/", "senses": [{"pos": "adj.", "mean": "学校的；教育的；学业的"}]}
+          ]
+        },
+        {
+          "no": 6, "word": "seminar", "freq": 2, "page": 148,
+          "prons": [{"ipa": "/ˈsemɪnɑː(r)/", "senses": [{"pos": "n.", "mean": "[[研讨会]]；[[培训班]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“思秘那”→ 他们在“研讨会”上思考、讨论那些神秘的东西。"},
+          "ex": {"type": "例", "en": "I attended practically every seminar when I was a student.", "zh": "上学时，我几乎参加了每一场研讨会。", "key": ["seminar"]},
+          "ext": []
+        },
+        {
+          "no": 7, "word": "forum", "freq": 2, "page": 148,
+          "prons": [{"ipa": "/ˈfɔːrəm/", "senses": [{"pos": "n.", "mean": "[[论坛]]；[[讨论会]]"}]}],
+          "tip": {"type": "联想", "text": "fo（联想 for）+ rum（音似 room）→ 为了租个好房间，他去学校的“论坛”查看合租信息。"},
+          "ex": {"type": "真", "year": 2019, "en": "Goel and his team sourced the online discussion forum to find all 40,000 questions.", "zh": "戈尔和他的团队在在线论坛上找到了所有的4万个问题。", "key": ["forum"]},
+          "ext": []
+        },
+        {
+          "no": 8, "word": "tuition", "freq": 1, "page": 149,
+          "prons": [{"ipa": "/tjuˈɪʃn/", "senses": [{"pos": "n.", "mean": "[[教学]]；[[学费]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“推身”→ 她推着朋友的身体询问特长班的“学费”价格。"},
+          "ex": {"type": "例", "en": "The tuition they charge has been rising considerably.", "zh": "他们收取的学费一直大幅上涨。", "key": ["tuition"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 18,
+      "title": "“教职工”相关",
+      "pages": [149, 150],
+      "map": {
+        "w": "“教职工”相关",
+        "children": [
+          {"w": "faculty", "children": [{"w": "dean"}]},
+          {"w": "expert", "children": [
+            {"w": "expertise", "rel": "扩"},
+            {"w": "experiment", "rel": "相关", "children": [{"w": "experimental", "rel": "扩"}]},
+            {"w": "discipline", "rel": "相关", "children": [
+              {"w": "disciplined", "rel": "扩"},
+              {"w": "disciplinary", "rel": "扩"}
+            ]}
+          ]},
+          {"w": "principal", "children": [
+            {"w": "principle", "rel": "形近", "children": [
+              {"w": "theory", "rel": "相关", "children": [{"w": "theoretical", "rel": "扩"}]},
+              {"w": "policy", "rel": "相关", "children": [
+                {"w": "political", "rel": "形近", "children": [
+                  {"w": "politician", "rel": "扩"},
+                  {"w": "politics", "rel": "扩"}
+                ]}
+              ]},
+              {"w": "prince", "rel": "形近", "children": [
+                {"w": "princess", "rel": "相关"},
+                {"w": "palace", "rel": "相关"}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 9, "word": "faculty", "freq": 2, "page": 149,
+          "prons": [{"ipa": "/ˈfæklti/", "senses": [{"pos": "n.", "mean": "[[全体教师]]；[[（高等院校的）系，院]]"}]}],
+          "tip": {"type": "联想", "text": "fa（联想“发”）+ cu（联想“醋”）+ l（联想“利”）+ -ty（名词后缀）→ 过节时，学校给“全体教师”发了醋作为福利。"},
+          "ex": {"type": "例", "en": "They will bring with them more international faculty.", "zh": "他们将带来更多国际化的师资。", "key": ["faculty"]},
+          "ext": []
+        },
+        {
+          "no": 10, "word": "dean", "freq": 1, "page": 149,
+          "prons": [{"ipa": "/diːn/", "senses": [{"pos": "n.", "mean": "[[系主任]]；[[（大学的）学院院长]]"}]}],
+          "tip": {"type": "对照", "text": "《憨豆先生》（Mr. Bean）中的主角是个不折不扣的高材生，以他的学术水平当个双一流高校的系主任（dean）是绰绰有余的！"},
+          "ex": {"type": "真", "year": 2016, "en": "They are set by the dean of the graduate school.", "zh": "它们是由研究生院院长定的。", "key": ["dean"]},
+          "ext": []
+        },
+        {
+          "no": 11, "word": "expert", "freq": 1, "page": 149,
+          "prons": [{"ipa": "/ˈekspɜːt/", "senses": [
+            {"pos": "n.", "mean": "[[专家]]"},
+            {"pos": "adj.", "mean": "[[专家的]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "ex-（出去）+ per（音似“破”）+ t（联想“它”）→ 出去破它（炸弹）的人是个“专家”。"},
+          "ex": {"type": "真", "year": 2023, "en": "What is the argument against the experts' idea of a long summer vacation?", "zh": "反对专家们提出的长暑假想法的理由是什么？", "key": ["experts'"]},
+          "ext": [{"word": "expertise", "ipa": "/ˌekspɜːˈtiːz/", "senses": [{"pos": "n.", "mean": "专长，专门技能"}]}]
+        },
+        {
+          "no": 12, "word": "experiment", "freq": 1, "page": 149,
+          "prons": [
+            {"ipa": "/ɪkˈsperɪmənt/", "senses": [{"pos": "n.", "mean": "[[实验]]"}]},
+            {"ipa": "/ɪkˈsperɪment/", "senses": [{"pos": "v.", "mean": "[[进行实验]]；[[试用]]"}]}
+          ],
+          "tip": {"type": "构词", "text": "ex-（出去）+ peri（尝试）+ -ment（后缀）→ 出去不断尝试 → 实验"},
+          "ex": {"type": "真", "year": 2017, "en": "What did Dr. Sasaki do when she first did her experiment?", "zh": "佐佐木博士第一次做实验时做了什么？", "key": ["experiment"]},
+          "ext": [{"word": "experimental", "ipa": "/ɪkˌsperɪˈmentl/", "senses": [{"pos": "adj.", "mean": "实验的；试验性的；根据经验的"}]}]
+        },
+        {
+          "no": 13, "word": "discipline", "freq": 3, "page": 149,
+          "prons": [{"ipa": "/ˈdɪsəplɪn/", "senses": [{"pos": "n.", "mean": "[[纪律]]；[[学科]]；[[训练]]"}]}],
+          "tip": {"type": "联想", "text": "dis-（不）+ cip（抓，拿）+ line（线）→ 遵守学校的“纪律”，不旷课，是他要牢牢抓住的底线。"},
+          "ex": {"type": "例", "en": "She keeps good discipline in class.", "zh": "她严格执行课堂纪律。", "key": ["discipline"]},
+          "ext": [
+            {"word": "disciplined", "ipa": "/ˈdɪsəplɪnd/", "senses": [{"pos": "adj.", "mean": "受过训练的，遵守纪律的"}]},
+            {"word": "disciplinary", "ipa": "/ˌdɪsəˈplɪnəri/", "senses": [{"pos": "adj.", "mean": "有关纪律的；惩戒性的"}]}
+          ]
+        },
+        {
+          "no": 14, "word": "principal", "freq": 1, "page": 150,
+          "prons": [{"ipa": "/ˈprɪnsəpl/", "senses": [
+            {"pos": "n.", "mean": "[[校长]]；[[首长]]"},
+            {"pos": "adj.", "mean": "[[最重要的，主要的]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "princi（形似 prince）+ pal（联想“怕了”）→ 让王子都怕了的人 → 校长；首长"},
+          "ex": {"type": "例", "en": "The principal reason for this omission is lack of time.", "zh": "跳过它的主要原因是时间不足。", "key": ["principal"]},
+          "ext": []
+        },
+        {
+          "no": 15, "word": "principle", "freq": 3, "page": 150,
+          "prons": [{"ipa": "/ˈprɪnsəpl/", "senses": [{"pos": "n.", "mean": "[[法则，原则]]"}]}],
+          "tip": {"type": "联想", "text": "princi（形似 prince）+（ci）p（抓）+ le（联想“了”）→ 由于违背了“法则”，王子被抓了。"},
+          "ex": {"type": "真", "year": 2022, "en": "It is a moral principle to guide people's behaviour.", "zh": "这是引导人们行为的一项道德准则。", "key": ["principle"]},
+          "ext": []
+        },
+        {
+          "no": 16, "word": "theory", "freq": 2, "page": 150,
+          "prons": [{"ipa": "/ˈθɪəri/", "senses": [{"pos": "n.", "mean": "[[理论，原理]]；[[假设]]"}]}],
+          "tip": {"type": "联想", "text": "theo（音似“谁饿”）+ -ry（名词后缀）→ “理论”上，现在没人挨饿了。"},
+          "ex": {"type": "真", "year": 2024, "en": "This is a theory that appeals to many economists.", "zh": "这是一个吸引许多经济学家的理论。", "key": ["theory"]},
+          "ext": [{"word": "theoretical", "ipa": "/ˌθɪəˈretɪkl/", "senses": [{"pos": "adj.", "mean": "理论上的"}]}]
+        },
+        {
+          "no": 17, "word": "policy", "freq": 1, "page": 150,
+          "prons": [{"ipa": "/ˈpɒləsi/", "senses": [{"pos": "n.", "mean": "[[政策]]；[[方针]]；[[原则]]"}]}],
+          "tip": {"type": "联想", "text": "poli（联想“魄力”）+ cy（联想“才有”）→ 要有魄力才有能力将“政策”推行下去。"},
+          "ex": {"type": "真", "year": 2018, "en": "We don't really have a missed assignment policy.", "zh": "我们其实没有一个漏交作业的规定。", "key": ["policy"]},
+          "ext": []
+        },
+        {
+          "no": 18, "word": "political", "freq": 1, "page": 150,
+          "prons": [{"ipa": "/pəˈlɪtɪkl/", "senses": [{"pos": "adj.", "mean": "[[政治的]]；[[政府的]]；[[政党的]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2024, "en": "He reviews books on political affairs.", "zh": "他审查政治事务方面的书籍。", "key": ["political"]},
+          "ext": [
+            {"word": "politician", "ipa": "/ˌpɒləˈtɪʃn/", "senses": [{"pos": "n.", "mean": "从政者，政治家；政客"}]},
+            {"word": "politics", "ipa": "/ˈpɒlətɪks/", "senses": [{"pos": "n.", "mean": "政治；政治观点；政治学"}]}
+          ]
+        },
+        {
+          "no": 19, "word": "prince", "freq": 1, "page": 150,
+          "prons": [{"ipa": "/prɪns/", "senses": [{"pos": "n.", "mean": "[[王子]]；[[亲王]]"}]}],
+          "tip": {"type": "联想", "text": "pr（联想“仆人”）+ in（里面）+ ce（联想“侧”）→ 仆人在“王子”家里面侧立待命。"},
+          "ex": {"type": "真", "year": 2016, "en": "Its ruler Prince Rainier married an American actress.", "zh": "其统治者雷尼尔王子娶了一位美国女演员。", "key": ["Prince"]},
+          "ext": []
+        },
+        {
+          "no": 20, "word": "princess", "freq": 1, "page": 150,
+          "prons": [{"ipa": "/ˈprɪnses/", "senses": [{"pos": "n.", "mean": "[[公主]]；[[王妃]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Angry politicians launched an attack on the Princess in the press.", "zh": "愤怒的政客们在新闻媒体上攻击公主。", "key": ["Princess"]},
+          "ext": []
+        },
+        {
+          "no": 21, "word": "palace", "freq": 1, "page": 150,
+          "prons": [{"ipa": "/ˈpæləs/", "senses": [{"pos": "n.", "mean": "[[宫]]，[[宫殿]]"}]}],
+          "tip": {"type": "联想", "text": "Summer Palace 颐和园"},
+          "ex": {"type": "例", "en": "One day, he received an invitation to dinner at the ruler's palace.", "zh": "有一天，他收到了在统治者的宫殿享用晚餐的邀请。", "key": ["palace"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 19,
+      "title": "campus 相关",
+      "pages": [150, 152],
+      "map": {
+        "w": "campus 相关",
+        "children": [
+          {"w": "camp", "children": [
+            {"w": "campaign", "rel": "同根", "children": [
+              {"w": "champion", "rel": "相关", "children": [{"w": "championship", "rel": "扩"}]}
+            ]}
+          ]},
+          {"w": "dormitory", "children": [
+            {"w": "graduate", "children": [
+              {"w": "graduation", "rel": "扩"},
+              {"w": "undergraduate", "rel": "合成"}
+            ]}
+          ]},
+          {"w": "freshman", "children": [
+            {"w": "junior", "rel": "相关", "children": [
+              {"w": "senior", "children": [
+                {"w": "seniority", "rel": "扩"},
+                {"w": "bachelor", "rel": "相关"},
+                {"w": "master", "rel": "相关", "children": [
+                  {"w": "mastery", "rel": "扩"},
+                  {"w": "masterpiece", "rel": "合成"}
+                ]}
+              ]}
+            ]},
+            {"w": "dropout", "rel": "相关", "children": [{"w": "drop", "rel": "拆分"}]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 22, "word": "camp", "freq": 1, "page": 151,
+          "prons": [{"ipa": "/kæmp/", "senses": [
+            {"pos": "n.", "mean": "[[营地]]"},
+            {"pos": "v.", "mean": "[[宿营]]；[[露营]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "ca（音似“开”）+ m（联想“门”）+ p（联想“坡”）→ 他在野外“露营”的时候，拉开帐篷门，外面就是一个坡。"},
+          "ex": {"type": "例", "en": "I used to attend a summer music camp for five weeks.", "zh": "我曾经参加过一个为期五周的音乐夏令营。", "key": ["camp"]},
+          "ext": []
+        },
+        {
+          "no": 23, "word": "campus", "freq": 3, "page": 151,
+          "prons": [{"ipa": "/ˈkæmpəs/", "senses": [{"pos": "n.", "mean": "[[校园]]"}]}],
+          "tip": {"type": "联想", "text": "camp（露营）+ us（我们）→ 我们一起在大学“校园”里露营吧。"},
+          "ex": {"type": "例", "en": "She lives on campus.", "zh": "她住在校园内。", "key": ["campus"]},
+          "ext": []
+        },
+        {
+          "no": 24, "word": "campaign", "freq": 2, "page": 151,
+          "prons": [{"ipa": "/kæmˈpeɪn/", "senses": [{"pos": "n.", "mean": "[[运动]]；[[活动]]"}]}],
+          "tip": {"type": "联想", "text": "camp（露营）+ aign（联想 gain）→ 他们推出的露营“活动”得到了大学生的支持。"},
+          "ex": {"type": "真", "year": 2020, "en": "The artist merely continued his campaign on the other side.", "zh": "这位艺术家只是在另一边继续他的活动。", "key": ["campaign"]},
+          "ext": []
+        },
+        {
+          "no": 25, "word": "champion", "freq": 2, "page": 151,
+          "prons": [{"ipa": "/ˈtʃæmpiən/", "senses": [{"pos": "n.", "mean": "[[冠军]]；[[第一名]]；[[优胜者]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2019, "en": "Many have become national chess champions.", "zh": "许多人已经成为全国象棋冠军。", "key": ["champions"]},
+          "ext": [{"word": "championship", "ipa": "/ˈtʃæmpiənʃɪp/", "senses": [{"pos": "n.", "mean": "锦标赛；冠军地位"}]}]
+        },
+        {
+          "no": 26, "word": "dormitory", "freq": 1, "page": 151,
+          "prons": [{"ipa": "/ˈdɔːmətri/", "senses": [{"pos": "n.", "mean": "[[集体寝室]]；[[宿舍]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“捣米锤”→ 他的“宿舍”里有一个捣米锤。"},
+          "ex": {"type": "例", "en": "Many colleges now have wired dormitories.", "zh": "现在许多大学的学生宿舍已经联网。", "key": ["dormitories"]},
+          "ext": []
+        },
+        {
+          "no": 27, "word": "graduate", "freq": 1, "page": 151,
+          "prons": [{"ipa": "/ˈɡrædʒuət/", "senses": [{"pos": "n.", "mean": "[[大学毕业生]]；[[学士学位获得者]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2024, "en": "It is a special offer to recent college graduates working in offices.", "zh": "这是给在办公室工作的应届大学毕业生的特别优惠。", "key": ["graduates"]},
+          "ext": [{"word": "graduation", "ipa": "/ˌɡrædʒuˈeɪʃn/", "senses": [{"pos": "n.", "mean": "（大学或美国高中的）毕业；毕业典礼"}]}]
+        },
+        {
+          "no": 28, "word": "undergraduate", "freq": 1, "page": 151,
+          "prons": [{"ipa": "/ˌʌndəˈɡrædʒuət/", "senses": [{"pos": "n.", "mean": "[[本科生]]"}]}],
+          "tip": {"type": "构词", "text": "under（下面）+ graduate（毕业）→ 在毕业下面 → 还没有毕业 → 本科生"},
+          "ex": {"type": "真", "year": 2022, "en": "This fall, thousands of college students from across the country will begin their undergraduate studies.", "zh": "今年秋天，来自全国各地的数千名大学生将开始他们的本科学习。", "key": ["undergraduate"]},
+          "ext": []
+        },
+        {
+          "no": 29, "word": "freshman", "freq": 1, "page": 151,
+          "prons": [{"ipa": "/ˈfreʃmən/", "senses": [{"pos": "n.", "mean": "[[（大学）一年级新生]]"}]}],
+          "tip": {"type": "构词", "text": "fresh（新的）+ man（人）→ 新来大学的人 → （大学）一年级新生"},
+          "ex": {"type": "真", "year": 2018, "en": "But as a scared freshman looking at their grades, it's not fun.", "zh": "但是作为一个恐慌地关注着自己成绩的新生，这并不好玩。", "key": ["freshman"]},
+          "ext": []
+        },
+        {
+          "no": 30, "word": "junior", "freq": 2, "page": 151,
+          "prons": [{"ipa": "/ˈdʒuːniə(r)/", "senses": [
+            {"pos": "adj.", "mean": "[[年少的]]"},
+            {"pos": "n.", "mean": "[[晚辈]]；[[下属]]；[[三年级学生]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“拘泥”→ 那个大学“三年级学生”还是很拘泥。"},
+          "ex": {"type": "例", "en": "He's a member of the club's junior team.", "zh": "他是俱乐部青年队的成员。", "key": ["junior"]},
+          "ext": []
+        },
+        {
+          "no": 31, "word": "senior", "freq": 3, "page": 151,
+          "prons": [{"ipa": "/ˈsiːniə(r)/", "senses": [
+            {"pos": "adj.", "mean": "[[长辈的]]；[[高级的]]"},
+            {"pos": "n.", "mean": "[[长辈]]；[[上司]]；[[毕业班的学生]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "At the very top are the senior executives.", "zh": "位于最高层的正是高管们。", "key": ["senior"]},
+          "ext": [{"word": "seniority", "ipa": "/ˌsiːniˈɒrəti/", "senses": [{"pos": "n.", "mean": "资历；年长；级别高"}]}]
+        },
+        {
+          "no": 32, "word": "bachelor", "freq": 2, "page": 151,
+          "prons": [{"ipa": "/ˈbætʃələ(r)/", "senses": [{"pos": "n.", "mean": "[[单身汉]]；[[学士]]"}]}],
+          "tip": {"type": "联想", "text": "ba（联想“爸”）+ che（联想“车”）+ l（联想“了”）+ -or（人）→ 爸爸车里面只坐了一个人，他是个“单身汉”。"},
+          "ex": {"type": "例", "en": "Students earn their bachelor of science in nursing in a year.", "zh": "学生们在一年内获得护理学学士学位。", "key": ["bachelor"]},
+          "ext": []
+        },
+        {
+          "no": 33, "word": "master", "freq": 1, "page": 151,
+          "prons": [{"ipa": "/ˈmɑːstə(r)/", "senses": [
+            {"pos": "n.", "mean": "（男）[[主人]]，[[雇主]]；[[大师]]；[[硕士学位]]"},
+            {"pos": "v.", "mean": "[[精通]]；[[掌握，控制]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“马斯特（人名）”→ 马斯特是这匹马的“主人”。"},
+          "ex": {"type": "真", "year": 2022, "en": "It's a good problem to have, but it can be a tough skill to master.", "zh": "这是一个很好的问题，但它可能是一个很难掌握的技能。", "key": ["master"]},
+          "ext": [{"word": "mastery", "ipa": "/ˈmɑːstəri/", "senses": [{"pos": "n.", "mean": "精通；熟练掌握"}]}]
+        },
+        {
+          "no": 34, "word": "masterpiece", "freq": 1, "page": 152,
+          "prons": [{"ipa": "/ˈmɑːstəpiːs/", "senses": [{"pos": "n.", "mean": "[[代表作]]；[[杰作]]；[[名著]]"}]}],
+          "tip": {"type": "构词", "text": "master（大师）+ piece（件）→ 大师的一件作品 → 杰作；名著"},
+          "ex": {"type": "例", "en": "Her work is a masterpiece of simplicity.", "zh": "她的作品是朴实的典范。", "key": ["masterpiece"]},
+          "ext": []
+        },
+        {
+          "no": 35, "word": "drop", "freq": 1, "page": 152,
+          "prons": [{"ipa": "/drɒp/", "senses": [
+            {"pos": "v.", "mean": "（使）[[变弱]]，[[降低]]；（意外地）[[落下]]；[[放弃]]"},
+            {"pos": "n.", "mean": "[[下降]]；[[滴]]；[[减少]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "dro（音似“着”）+ p（联想“拍”）→ 沙包从空中“落下”着地，拍在地上。"},
+          "ex": {"type": "真", "year": 2019, "en": "Children may be tempted to drop litter.", "zh": "孩子们可能会忍不住乱扔垃圾。", "key": ["drop"]},
+          "ext": []
+        },
+        {
+          "no": 36, "word": "dropout", "freq": 2, "page": 152,
+          "prons": [{"ipa": "/ˈdrɒpaʊt/", "senses": [{"pos": "n.", "mean": "[[辍学者]]；[[退学者]]"}]}],
+          "tip": {"type": "构词", "text": "drop（落下）+ out（出）→ 被落下、排除出去的人 → 辍学者"},
+          "ex": {"type": "例", "en": "He's a dropout who doesn't have a steady job.", "zh": "他是个辍学者，没有稳定工作。", "key": ["dropout"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 20,
+      "title": "“培养、养育”相关",
+      "pages": [152, 153],
+      "map": {
+        "w": "“培养、养育”相关",
+        "children": [
+          {"w": "nourish", "children": [{"w": "nourishment", "rel": "扩"}]},
+          {"w": "cultivate", "children": [
+            {"w": "cultivation", "rel": "扩", "children": [{"w": "cultivated"}]}
+          ]},
+          {"w": "rear", "children": [
+            {"w": "breed", "children": [
+              {"w": "intelligent", "rel": "相关", "children": [
+                {"w": "intelligence", "rel": "扩"},
+                {"w": "intellectual", "rel": "扩"},
+                {"w": "sharp", "rel": "相关", "children": [
+                  {"w": "sharpen", "rel": "扩"},
+                  {"w": "shape", "rel": "形近"}
+                ]},
+                {"w": "acknowledge", "rel": "相关", "children": [{"w": "acknowledgement", "rel": "扩"}]}
+              ]},
+              {"w": "pioneer", "rel": "相关", "children": [
+                {"w": "peer", "rel": "相关", "children": [
+                  {"w": "compatible", "rel": "相关", "children": [{"w": "compatibility", "rel": "扩"}]}
+                ]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 37, "word": "nourish", "freq": 1, "page": 152,
+          "prons": [{"ipa": "/ˈnʌrɪʃ/", "senses": [{"pos": "v.", "mean": "[[滋养]]，[[养育]]，[[培养]]"}]}],
+          "tip": {"type": "对照", "text": "护士（nurse）像养花一样养育（nourish）他。"},
+          "ex": {"type": "例", "en": "By investing in education, we nourish the talents of our children.", "zh": "我们通过教育投资培养孩子们的才能。", "key": ["nourish"]},
+          "ext": [{"word": "nourishment", "ipa": "/ˈnʌrɪʃmənt/", "senses": [{"pos": "n.", "mean": "营养；滋养品"}]}]
+        },
+        {
+          "no": 38, "word": "cultivate", "freq": 3, "page": 152,
+          "prons": [{"ipa": "/ˈkʌltɪveɪt/", "senses": [{"pos": "v.", "mean": "[[培育，培养]]；[[开垦，耕作]]"}]}],
+          "tip": {"type": "联想", "text": "cultiv（联想 culture）+ -ate（动词后缀）→ 为了使你有文化，需要“培养”你。"},
+          "ex": {"type": "真", "year": 2024, "en": "People may either be born with it or be able to cultivate it.", "zh": "人们要么天生就有这种能力，要么能够培养它。", "key": ["cultivate"]},
+          "ext": [
+            {"word": "cultivation", "ipa": "/ˌkʌltɪˈveɪʃn/", "senses": [{"pos": "n.", "mean": "培养；耕作"}]},
+            {"word": "cultivated", "ipa": "/ˈkʌltɪveɪtɪd/", "senses": [{"pos": "adj.", "mean": "耕种的；有教养的"}]}
+          ]
+        },
+        {
+          "no": 39, "word": "rear", "freq": 1, "page": 152,
+          "prons": [{"ipa": "/rɪə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[后面，背部]]"},
+            {"pos": "v.", "mean": "[[抚养，栽培]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "rea（联想 real）+ r（形似花）→ 她衣服“后面”真的有个花的刺绣。"},
+          "ex": {"type": "例", "en": "There are toilets at both front and rear of the plane.", "zh": "飞机前后舱都有洗手间。", "key": ["rear"]},
+          "ext": []
+        },
+        {
+          "no": 40, "word": "breed", "freq": 2, "page": 152,
+          "prons": [{"ipa": "/briːd/", "senses": [{"pos": "v.", "mean": "[[饲养，繁殖]]；[[培养，养育]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“哺育的”→ 饲养；养育"},
+          "ex": {"type": "例", "en": "Hard times breed hard feelings.", "zh": "艰难时期会酿成怨气。", "key": ["breed"]},
+          "ext": []
+        },
+        {
+          "no": 41, "word": "intelligent", "freq": 3, "page": 153,
+          "prons": [{"ipa": "/ɪnˈtelɪdʒənt/", "senses": [{"pos": "adj.", "mean": "[[有才智的，聪明的]]"}]}],
+          "tip": {"type": "联想", "text": "intel（联想“英特尔”）+ li（联想“立”）+ gent（音似“进他”）→ 英特尔公司立刻通知那个“聪明的”人，让他进公司上班。"},
+          "ex": {"type": "真", "year": 2018, "en": "Some studies have found that first-born children are more intelligent than their later-born siblings.", "zh": "一些研究发现，头胎的孩子比后生的孩子更聪明。", "key": ["intelligent"]},
+          "ext": [{"word": "intelligence", "ipa": "/ɪnˈtelɪdʒəns/", "senses": [{"pos": "n.", "mean": "智力；才智；情报"}]}]
+        },
+        {
+          "no": 42, "word": "intellectual", "freq": 2, "page": 153,
+          "prons": [{"ipa": "/ˌɪntəˈlektʃuəl/", "senses": [
+            {"pos": "adj.", "mean": "[[智力的]]；[[聪明的]]；[[理智的]]"},
+            {"pos": "n.", "mean": "[[知识分子]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "intel（联想“英特尔”）+ lect（选择）+ -ual（后缀）→ 选择进入英特尔公司上班的是“聪明的”人。"},
+          "ex": {"type": "例", "en": "He was a leading intellectual of his day.", "zh": "他是那个时代杰出的知识分子。", "key": ["intellectual"]},
+          "ext": []
+        },
+        {
+          "no": 43, "word": "sharp", "freq": 1, "page": 153,
+          "prons": [{"ipa": "/ʃɑːp/", "senses": [{"pos": "adj.", "mean": "[[锋利的]]；[[清晰的]]；[[急转的]]"}]}],
+          "tip": {"type": "联想", "text": "有一家电器公司叫夏普，它的英文名是 Sharp。"},
+          "ex": {"type": "真", "year": 2018, "en": "It made a series of sharp turns in the sky.", "zh": "它在空中做出了一系列的急转弯。", "key": ["sharp"]},
+          "ext": [{"word": "sharpen", "ipa": "/ˈʃɑːpən/", "senses": [{"pos": "v.", "mean": "（使）变锐利，削尖"}]}]
+        },
+        {
+          "no": 44, "word": "shape", "freq": 1, "page": 153,
+          "prons": [{"ipa": "/ʃeɪp/", "senses": [
+            {"pos": "n.", "mean": "[[形状]]；[[外形]]；[[身材]]；[[状况]]"},
+            {"pos": "v.", "mean": "[[形成]]，[[塑造]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“沙皮”→ 这只沙皮狗的“外形”有点胖。"},
+          "ex": {"type": "真", "year": 2017, "en": "Eggs have an oval shape appealing to artists.", "zh": "鸡蛋呈椭圆形，对艺术家很有吸引力。", "key": ["shape"]},
+          "ext": []
+        },
+        {
+          "no": 45, "word": "acknowledge", "freq": 1, "page": 153,
+          "prons": [{"ipa": "/əkˈnɒlɪdʒ/", "senses": [{"pos": "v.", "mean": "[[承认]]；[[认可]]；[[致谢]]"}]}],
+          "tip": {"type": "联想", "text": "ac-（一再地）+ knowledge（知识）→ 我一再地“承认”他有知识，是个博学多才的人。"},
+          "ex": {"type": "真", "year": 2020, "en": "I also acknowledge that we have a work-life problem.", "zh": "我也承认我们有工作与生活的问题。", "key": ["acknowledge"]},
+          "ext": [{"word": "acknowledgement", "ipa": "/əkˈnɒlɪdʒmənt/", "senses": [{"pos": "n.", "mean": "承认；感谢，谢礼"}]}]
+        },
+        {
+          "no": 46, "word": "pioneer", "freq": 1, "page": 153,
+          "prons": [{"ipa": "/ˌpaɪəˈnɪə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[先锋]]；[[先驱]]"},
+            {"pos": "v.", "mean": "[[当开拓者]]，[[倡导]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "pi（联想“披”）+ on（在上面）+ -eer（人）→ 披挂上阵的人 → 先锋；先驱"},
+          "ex": {"type": "真", "year": 2024, "en": "These pioneers reflected on the challenges they faced.", "zh": "这些先驱反思了他们所面临的挑战。", "key": ["pioneers"]},
+          "ext": []
+        },
+        {
+          "no": 47, "word": "peer", "freq": 3, "page": 153,
+          "prons": [{"ipa": "/pɪə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[同龄人]]；[[同等的人]]"},
+            {"pos": "v.", "mean": "[[仔细看]]，[[端详]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "pe（联想“拍”）+ -er（表示人的后缀）→ 能拍着彼此肩膀的人 → 同龄人"},
+          "ex": {"type": "真", "year": 2020, "en": "Students prefer to rely on peers to relieve stress and anxiety.", "zh": "学生更喜欢依靠同伴来缓解压力和焦虑。", "key": ["peers"]},
+          "ext": []
+        },
+        {
+          "no": 48, "word": "compatible", "freq": 1, "page": 153,
+          "prons": [{"ipa": "/kəmˈpætəbl/", "senses": [{"pos": "adj.", "mean": "[[可共用的]]；[[兼容的]]；[[关系好的，和睦相处的]]"}]}],
+          "tip": {"type": "联想", "text": "com-（所有）+ pat（联想“拍他”）+ -ible（形容词后缀）→ 所有人都喜欢拍他 → 关系好的"},
+          "ex": {"type": "例", "en": "The new system will be compatible with existing equipment.", "zh": "新的系统将与现有的设备相互兼容。", "key": ["be compatible with"]},
+          "ext": [{"word": "compatibility", "ipa": "/kəmˌpætəˈbɪləti/", "senses": [{"pos": "n.", "mean": "兼容性；共存，和睦相处"}]}]
+        }
+      ]
+    },
+    {
+      "no": 21,
+      "title": "“课程”相关",
+      "pages": [154, 155],
+      "map": {
+        "w": "“课程”相关",
+        "children": [
+          {"w": "chemistry", "children": [
+            {"w": "chemical", "rel": "扩"},
+            {"w": "chemist", "rel": "扩"}
+          ]},
+          {"w": "geometry", "children": [
+            {"w": "geometric", "rel": "扩"},
+            {"w": "geometrically", "rel": "扩"},
+            {"w": "triangle", "rel": "相关", "children": [
+              {"w": "triangular", "rel": "扩"},
+              {"w": "trifle", "rel": "相关"}
+            ]}
+          ]},
+          {"w": "mathematics", "children": [{"w": "mathematical", "rel": "扩"}]},
+          {"w": "sociology", "children": [
+            {"w": "sociologist", "rel": "扩"},
+            {"w": "biology", "rel": "扩", "children": [
+              {"w": "ecology", "children": [{"w": "geology"}]}
+            ]}
+          ]},
+          {"w": "psychology", "children": [
+            {"w": "psychological", "rel": "扩", "children": [{"w": "psychologist"}]}
+          ]},
+          {"w": "art", "children": [
+            {"w": "artist", "rel": "扩", "children": [
+              {"w": "artistic", "rel": "扩"},
+              {"w": "artistically", "rel": "扩"}
+            ]},
+            {"w": "architecture", "rel": "相关", "children": [
+              {"w": "architect", "rel": "扩"},
+              {"w": "construct", "children": [{"w": "construction", "rel": "扩"}]},
+              {"w": "structure", "rel": "相关", "children": [
+                {"w": "structural", "rel": "扩"},
+                {"w": "infrastructure", "rel": "扩"}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 49, "word": "curriculum", "freq": 2, "page": 154,
+          "prons": [{"ipa": "/kəˈrɪkjələm/", "senses": [{"pos": "n.", "mean": "[[课程]]"}]}],
+          "tip": {"type": "联想", "text": "cur（音似“课”）+ ri（联想“日”）+ culu（音似“可乐”）+ m（联想 me）→ 我每天上课都感到很快乐 → 课程"},
+          "ex": {"type": "真", "year": 2019, "en": "Students of ethnic backgrounds learn better from a multicultural curriculum.", "zh": "有种族背景的学生能在多元文化课程中学得更好。", "key": ["curriculum"]},
+          "ext": []
+        },
+        {
+          "no": 50, "word": "chemical", "freq": 1, "page": 154,
+          "prons": [{"ipa": "/ˈkemɪkl/", "senses": [
+            {"pos": "n.", "mean": "[[化学制品]]；[[化学品]]"},
+            {"pos": "adj.", "mean": "[[与化学有关的]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“开煤科”→ 把煤打开研究里面是什么成分，这是“与化学有关的”科学。"},
+          "ex": {"type": "例", "en": "Toy manufacturers have been banned from using the chemicals.", "zh": "玩具制造商被禁止使用这些化学物质。", "key": ["chemicals"]},
+          "ext": [
+            {"word": "chemistry", "ipa": "/ˈkemɪstri/", "senses": [{"pos": "n.", "mean": "化学；化学组成"}]},
+            {"word": "chemist", "ipa": "/ˈkemɪst/", "senses": [{"pos": "n.", "mean": "药剂师；药店"}]}
+          ]
+        },
+        {
+          "no": 51, "word": "geometry", "freq": 1, "page": 154,
+          "prons": [{"ipa": "/dʒiˈɒmətri/", "senses": [{"pos": "n.", "mean": "[[几何（学）]]；[[几何图形]]"}]}],
+          "tip": {"type": "联想", "text": "ge（联想“哥”）+ o（形似圆）+ me（我）+ try（尝试）→ 哥哥和我尝试画一个圆，我们在研究“几何学”。"},
+          "ex": {"type": "例", "en": "We feel that geometry is a difficult subject.", "zh": "我们认为几何是一门很难的课程。", "key": ["geometry"]},
+          "ext": [
+            {"word": "geometric", "ipa": "/ˌdʒiːəˈmetrɪk/", "senses": [{"pos": "adj.", "mean": "几何（学）的；几何图形的"}]},
+            {"word": "geometrically", "ipa": "/ˌdʒiːəˈmetrɪkli/", "senses": [{"pos": "adv.", "mean": "几何上"}]}
+          ]
+        },
+        {
+          "no": 52, "word": "triangle", "freq": 1, "page": 154,
+          "prons": [{"ipa": "/ˈtraɪæŋɡl/", "senses": [{"pos": "n.", "mean": "[[三角形]]"}]}],
+          "tip": {"type": "构词", "text": "tri-（三）+ angle（角，角度）→ 三角形"},
+          "ex": {"type": "例", "en": "Everything you learned in elementary school about triangles is pretty basic.", "zh": "你在小学学到的所有关于三角形的东西都是很基础的。", "key": ["triangles"]},
+          "ext": [{"word": "triangular", "ipa": "/traɪˈæŋɡjələ(r)/", "senses": [{"pos": "adj.", "mean": "三角的；三角形的；三组的；三方面的"}]}]
+        },
+        {
+          "no": 53, "word": "trifle", "freq": 1, "page": 154,
+          "prons": [{"ipa": "/ˈtraɪfl/", "senses": [
+            {"pos": "n.", "mean": "[[琐事]]；[[少量]]"},
+            {"pos": "v.", "mean": "[[怠慢]]，[[小看]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "tri-（三）+ fle（音似“伏”）→ 三伏天，他热得只能做“少量”的工作。"},
+          "ex": {"type": "真", "year": 2024, "en": "You will probably never think of fashion as a trifle again.", "zh": "你可能再也不会认为时尚是琐事了。", "key": ["trifle"]},
+          "ext": []
+        },
+        {
+          "no": 54, "word": "mathematics", "freq": 1, "page": 154,
+          "prons": [{"ipa": "/ˌmæθəˈmætɪks/", "senses": [{"pos": "n.", "mean": "[[数学]]；[[计算]]；[[运算]]（= math，maths）"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Her proof is a remarkable piece of mathematics.", "zh": "她的证明是一个了不起的数学作品。", "key": ["mathematics"]},
+          "ext": [{"word": "mathematical", "ipa": "/ˌmæθəˈmætɪkl/", "senses": [{"pos": "adj.", "mean": "数学的"}]}]
+        },
+        {
+          "no": 55, "word": "sociology", "freq": 1, "page": 154,
+          "prons": [{"ipa": "/ˌsəʊsiˈɒlədʒi/", "senses": [{"pos": "n.", "mean": "[[社会学]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "I don't study sociology or political theory.", "zh": "我不学习社会学或政治理论。", "key": ["sociology"]},
+          "ext": [
+            {"word": "sociologist", "ipa": "/ˌsəʊsiˈɒlədʒɪst/", "senses": [{"pos": "n.", "mean": "社会学家"}]},
+            {"word": "biology", "ipa": "/baɪˈɒlədʒi/", "senses": [{"pos": "n.", "mean": "生物学"}]},
+            {"word": "ecology", "ipa": "/iˈkɒlədʒi/", "senses": [{"pos": "n.", "mean": "生态学"}]},
+            {"word": "geology", "ipa": "/dʒiˈɒlədʒi/", "senses": [{"pos": "n.", "mean": "地质学"}]}
+          ]
+        },
+        {
+          "no": 56, "word": "psychology", "freq": 2, "page": 155,
+          "prons": [{"ipa": "/saɪˈkɒlədʒi/", "senses": [{"pos": "n.", "mean": "[[心理学]]；[[心理影响]]"}]}],
+          "tip": {"type": "谐音", "text": "单词前半部分发音类似“思考”→ 心理学"},
+          "ex": {"type": "真", "year": 2020, "en": "There does appear to be some psychology behind it.", "zh": "这背后似乎确实有某种心理因素。", "key": ["psychology"]},
+          "ext": [
+            {"word": "psychological", "ipa": "/ˌsaɪkəˈlɒdʒɪkl/", "senses": [{"pos": "adj.", "mean": "心理的；精神上的；心理学的"}]},
+            {"word": "psychologist", "ipa": "/saɪˈkɒlədʒɪst/", "senses": [{"pos": "n.", "mean": "心理学家；心理学研究者"}]}
+          ]
+        },
+        {
+          "no": 57, "word": "art", "freq": 1, "page": 155,
+          "prons": [{"ipa": "/ɑːt/", "senses": [{"pos": "n.", "mean": "[[艺术]]；[[文科（如语言、历史、文学）]]；[[技能]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2017, "en": "They are favored as a form of art.", "zh": "它们作为一种艺术形式备受青睐。", "key": ["art"]},
+          "ext": [
+            {"word": "artist", "ipa": "/ˈɑːtɪst/", "senses": [{"pos": "n.", "mean": "艺术家；美术家（尤指画家）；大师"}]},
+            {"word": "artistic", "ipa": "/ɑːˈtɪstɪk/", "senses": [{"pos": "adj.", "mean": "艺术的；艺术家的"}]},
+            {"word": "artistically", "ipa": "/ɑːˈtɪstɪkli/", "senses": [{"pos": "adv.", "mean": "有艺术地，在艺术上"}]}
+          ]
+        },
+        {
+          "no": 58, "word": "architecture", "freq": 2, "page": 155,
+          "prons": [{"ipa": "/ˈɑːkɪtektʃə(r)/", "senses": [{"pos": "n.", "mean": "[[建筑学]]；[[建筑设计]]；[[结构]]"}]}],
+          "tip": {"type": "联想", "text": "archi（联想 art）+ tecture（联想 structure）→ 充满艺术的结构 → 建筑学"},
+          "ex": {"type": "例", "en": "The architecture of these buildings is in the Greek style.", "zh": "这些楼房的建筑设计是希腊风格的。", "key": ["architecture"]},
+          "ext": []
+        },
+        {
+          "no": 59, "word": "architect", "freq": 1, "page": 155,
+          "prons": [{"ipa": "/ˈɑːkɪtekt/", "senses": [{"pos": "n.", "mean": "[[建筑师]]；[[设计师]]；[[创造者]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2021, "en": "They are copies built to the architect's designs.", "zh": "它是按照建筑师的设计建造的复制品。", "key": ["architect's"]},
+          "ext": []
+        },
+        {
+          "no": 60, "word": "construct", "freq": 2, "page": 155,
+          "prons": [{"ipa": "/kənˈstrʌkt/", "senses": [{"pos": "v.", "mean": "[[修建，建造]]；[[组成]]；[[编制]]"}]}],
+          "tip": {"type": "联想", "text": "con-（所有的）+ struct（联想 structure）→ 所有的结构都是“建造”的。"},
+          "ex": {"type": "例", "en": "The building was constructed in 1993.", "zh": "这座建筑建于1993年。", "key": ["constructed"]},
+          "ext": [{"word": "construction", "ipa": "/kənˈstrʌkʃn/", "senses": [{"pos": "n.", "mean": "建筑；创造；建立"}]}]
+        },
+        {
+          "no": 61, "word": "structure", "freq": 2, "page": 155,
+          "prons": [{"ipa": "/ˈstrʌktʃə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[结构]]；[[体系]]；[[建筑物]]"},
+            {"pos": "v.", "mean": "[[组织]]，[[安排]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "I admire the structure of the building.", "zh": "我欣赏这座建筑物的结构。", "key": ["structure"]},
+          "ext": [{"word": "structural", "ipa": "/ˈstrʌktʃərəl/", "senses": [{"pos": "adj.", "mean": "结构（或构造）上的"}]}]
+        },
+        {
+          "no": 62, "word": "infrastructure", "freq": 1, "page": 155,
+          "prons": [{"ipa": "/ˈɪnfrəstrʌktʃə(r)/", "senses": [{"pos": "n.", "mean": "（国家或机构的）[[基础设施]]，[[基础建设]]"}]}],
+          "tip": {"type": "联想", "text": "in（里面的）+ fra（音似“服我”）+ structure（结构）→ 里面的结构框架是为我们提供服务的“基础设施”。"},
+          "ex": {"type": "真", "year": 2021, "en": "It will force cities to transform their infrastructure.", "zh": "它将迫使城市改造其基础设施。", "key": ["infrastructure"]},
+          "ext": []
+        }
+      ]
+    }
+  ],
+  "unit_summary": {"groups": 21, "words": 254, "ext": 183, "zhen": 113, "li": 141}
+}

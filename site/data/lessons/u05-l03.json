@@ -1,0 +1,810 @@
+{
+  "id": "u05-l03",
+  "part": 1,
+  "unit": 5,
+  "lesson": 3,
+  "pages": [139, 147],
+  "groups": [
+    {
+      "no": 11,
+      "title": "“专注”相关",
+      "pages": [139, 140],
+      "map": {
+        "w": "“专注”相关",
+        "children": [
+          {"w": "addict", "children": [
+            {"w": "addiction", "rel": "扩", "children": [{"w": "addictive"}]},
+            {"w": "dictate", "rel": "同根", "children": [
+              {"w": "dictator", "rel": "扩", "children": [{"w": "dictation"}]},
+              {"w": "dictionary", "rel": "形近"},
+              {"w": "indicate", "rel": "形近", "children": [
+                {"w": "indication", "rel": "扩", "children": [{"w": "indicative", "children": [{"w": "indicator"}]}]}
+              ]}
+            ]},
+            {"w": "contradict", "rel": "同根", "children": [
+              {"w": "contradiction", "rel": "扩", "children": [{"w": "contradictory"}]},
+              {"w": "deny", "rel": "近义", "children": [{"w": "denial", "rel": "扩"}]}
+            ]},
+            {"w": "predict", "rel": "同根", "children": [
+              {"w": "prediction", "rel": "扩", "children": [{"w": "predictable"}]}
+            ]}
+          ]},
+          {"w": "concentrate", "children": [
+            {"w": "concentration", "rel": "扩"},
+            {"w": "focus", "rel": "近义"},
+            {"w": "central", "rel": "同根", "children": [{"w": "centralise"}]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "concentrate", "freq": 3, "page": 139,
+          "prons": [{"ipa": "/ˈkɒnsntreɪt/", "senses": [
+            {"pos": "v.", "mean": "[[集中（注意力），专心]]；聚精会神"},
+            {"pos": "n.", "mean": "浓缩物"}
+          ]}],
+          "tip": {"type": "联想", "text": "con-（所有）+ centr（联想 centre）+ -ate（动词后缀）→ 所有人都以某物为中心 → 集中（注意力），专心"},
+          "ex": {"type": "例", "en": "She tried to concentrate on reading her book but couldn't.", "zh": "她试图集中精力看书，但没能做到。", "key": ["concentrate"]},
+          "ext": [{"word": "concentration", "ipa": "/ˌkɒnsnˈtreɪʃn/", "senses": [{"pos": "n.", "mean": "专心；重视；浓度"}]}]
+        },
+        {
+          "no": 2, "word": "central", "freq": 1, "page": 139,
+          "prons": [{"ipa": "/ˈsentrəl/", "senses": [{"pos": "adj.", "mean": "[[最重要的，首要的]]；[[在中心的]]"}]}],
+          "tip": {"type": "对照", "text": "center n.中心 → central adj."},
+          "ex": {"type": "真", "year": 2018, "en": "Fresno, in the central valley, comes top of the list in America for year-round pollution.", "zh": "位于中央谷地的弗雷斯诺是美国全年污染最严重的地区。", "key": ["central"]},
+          "ext": [{"word": "centralise", "alt": "-ize", "ipa": "/ˈsentrəlaɪz/", "senses": [{"pos": "v.", "mean": "使……处于中央的控制之下，集权控制"}]}]
+        },
+        {
+          "no": 3, "word": "focus", "freq": 3, "page": 139,
+          "prons": [{"ipa": "/ˈfəʊkəs/", "senses": [
+            {"pos": "n.", "mean": "[[焦点]]；中心"},
+            {"pos": "v.", "mean": "[[使聚焦]]；[[集中（注意力、精力等）]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "他的福克斯（Focus，福特的一款车）是大家的焦点（focus）。"},
+          "ex": {"type": "真", "year": 2024, "en": "When most of us set goals, we focus on long-term results we want to see.", "zh": "当我们大多数人设定目标时，我们关注的是我们想要看到的长期结果。", "key": ["focus on"]},
+          "ext": []
+        },
+        {
+          "no": 4, "word": "addict", "freq": 1, "page": 139,
+          "prons": [{"ipa": "/ˈædɪkt/", "senses": [{"pos": "n.", "mean": "入迷的人；[[成瘾的人]]"}]}],
+          "tip": {"type": "联想", "text": "ad-（一再地）+ dict（说）→ 祥林嫂一再地说她的阿毛死了，已经成瘾了 → 成瘾的人"},
+          "ex": {"type": "例", "en": "I used to be a video game addict.", "zh": "我过去是个电子游戏迷。", "key": ["addict"]},
+          "ext": [
+            {"word": "addiction", "ipa": "/əˈdɪkʃn/", "senses": [{"pos": "n.", "mean": "瘾；入迷；嗜好"}]},
+            {"word": "addictive", "ipa": "/əˈdɪktɪv/", "senses": [{"pos": "adj.", "mean": "使人上瘾的"}]}
+          ]
+        },
+        {
+          "no": 5, "word": "dictate", "freq": 2, "page": 139,
+          "prons": [{"ipa": "/dɪkˈteɪt/", "senses": [{"pos": "v.", "mean": "[[口述]]；[[强行规定]]；支配；命令"}]}],
+          "tip": {"type": "构词", "text": "dict（说；命令）+ -ate（动词后缀）→ 口述；命令"},
+          "ex": {"type": "真", "year": 2023, "en": "Now they can dictate notes on a patient's health condition and treatment.", "zh": "现在他们可以口述关于病人的健康状况和治疗情况的记录。", "key": ["dictate"]},
+          "ext": [
+            {"word": "dictation", "ipa": "/dɪkˈteɪʃn/", "senses": [{"pos": "n.", "mean": "听写；口述"}]},
+            {"word": "dictator", "ipa": "/dɪkˈteɪtə(r)/", "senses": [{"pos": "n.", "mean": "发命令者；独裁者"}]}
+          ]
+        },
+        {
+          "no": 6, "word": "dictionary", "freq": 1, "page": 139,
+          "prons": [{"ipa": "/ˈdɪkʃənri/", "senses": [{"pos": "n.", "mean": "[[字典]]"}]}],
+          "tip": {"type": "构词", "text": "diction（措辞）+ -ary（名词后缀）→ 存放措辞的地方 → 字典"},
+          "ex": {"type": "真", "year": 2021, "en": "Its dictionary definition should be updated.", "zh": "它的字典定义应该更新。", "key": ["dictionary"]},
+          "ext": []
+        },
+        {
+          "no": 7, "word": "contradict", "freq": 2, "page": 140,
+          "prons": [{"ipa": "/ˌkɒntrəˈdɪkt/", "senses": [{"pos": "v.", "mean": "[[反驳]]，否认；相抵触"}]}],
+          "tip": {"type": "构词", "text": "contra-（反）+ dict（说）→ 反驳"},
+          "ex": {"type": "例", "en": "The two stories contradict each other.", "zh": "这两种说法相互矛盾。", "key": ["contradict"]},
+          "ext": [
+            {"word": "contradiction", "ipa": "/ˌkɒntrəˈdɪkʃn/", "senses": [{"pos": "n.", "mean": "矛盾，不一致；反驳"}]},
+            {"word": "contradictory", "ipa": "/ˌkɒntrəˈdɪktəri/", "senses": [{"pos": "adj.", "mean": "矛盾的；抵触的"}]}
+          ]
+        },
+        {
+          "no": 8, "word": "deny", "freq": 3, "page": 140,
+          "prons": [{"ipa": "/dɪˈnaɪ/", "senses": [{"pos": "v.", "mean": "[[否认]]；拒绝"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“抵赖”→ 抵赖就是“否认”。"},
+          "ex": {"type": "例", "en": "There is no denying that mobile phones have brought much convenience.", "zh": "不可否认，手机带来了很多便利。", "key": ["There is no denying that"]},
+          "ext": [{"word": "denial", "ipa": "/dɪˈnaɪəl/", "senses": [{"pos": "n.", "mean": "否认，否定"}]}]
+        },
+        {
+          "no": 9, "word": "predict", "freq": 3, "page": 140,
+          "prons": [{"ipa": "/prɪˈdɪkt/", "senses": [{"pos": "v.", "mean": "[[预言]]；[[预测]]；预告"}]}],
+          "tip": {"type": "构词", "text": "pre-（在前）+ dict（说）→ 预言"},
+          "ex": {"type": "真", "year": 2019, "en": "In other words, when it comes to cities—or anything else—it is hard to predict the future.", "zh": "换句话说，当提到城市或其他任何事物时，很难预测未来。", "key": ["predict"]},
+          "ext": [
+            {"word": "prediction", "ipa": "/prɪˈdɪkʃn/", "senses": [{"pos": "n.", "mean": "预言；预告"}]},
+            {"word": "predictable", "ipa": "/prɪˈdɪktəbl/", "senses": [{"pos": "adj.", "mean": "可预见的"}]}
+          ]
+        },
+        {
+          "no": 10, "word": "indicate", "freq": 3, "page": 140,
+          "prons": [{"ipa": "/ˈɪndɪkeɪt/", "senses": [{"pos": "v.", "mean": "[[暗示]]；表明"}]}],
+          "tip": {"type": "构词", "text": "in-（在内）+ dic（说）+ -ate（动词后缀）→ 在内心说，没有明示 → 暗示；表明"},
+          "ex": {"type": "例", "en": "The saying indicates the importance of lifelong learning.", "zh": "这句话表明了终身学习的重要性。", "key": ["indicates"]},
+          "ext": [
+            {"word": "indication", "ipa": "/ˌɪndɪˈkeɪʃn/", "senses": [{"pos": "n.", "mean": "表明，显示；象征"}]},
+            {"word": "indicative", "ipa": "/ɪnˈdɪkətɪv/", "senses": [{"pos": "adj.", "mean": "象征的；表明的，指示的"}, {"pos": "n.", "mean": "（动词的）陈述语气"}]},
+            {"word": "indicator", "ipa": "/ˈɪndɪkeɪtə(r)/", "senses": [{"pos": "n.", "mean": "指示物；指示者；指针；（汽车的）转向指示灯"}]}
+          ]
+        }
+      ]
+    },
+    {
+      "no": 12,
+      "title": "fac(t)/fect“做”相关",
+      "pages": [140, 142],
+      "map": {
+        "w": "fac(t)/fect“做”相关",
+        "children": [
+          {"w": "facility", "children": [{"w": "facilitate", "rel": "扩", "children": [{"w": "facilitation"}]}]},
+          {"w": "effect", "children": [
+            {"w": "effective", "rel": "扩"},
+            {"w": "affect", "rel": "形近", "children": [{"w": "affection", "rel": "扩", "children": [{"w": "affectionate", "rel": "扩"}]}]},
+            {"w": "infect", "rel": "形近", "children": [{"w": "infection", "rel": "扩", "children": [{"w": "infectious"}]}]}
+          ]},
+          {"w": "defect", "children": [{"w": "defective", "rel": "扩", "children": [{"w": "defection"}]}]},
+          {"w": "manufacture", "children": [
+            {"w": "manufacturer", "rel": "扩"},
+            {"w": "manual", "rel": "相关"}
+          ]},
+          {"w": "perfect", "children": [
+            {"w": "perfectly", "rel": "扩", "children": [{"w": "perfection"}]},
+            {"w": "ideal", "rel": "近义", "children": [
+              {"w": "idealistic", "rel": "扩", "children": [{"w": "idealism"}]},
+              {"w": "thought", "rel": "相关", "children": [
+                {"w": "thoughtful", "rel": "扩"},
+                {"w": "thorough", "rel": "形近", "children": [
+                  {"w": "entire", "rel": "近义", "children": [{"w": "entirety", "rel": "扩"}]},
+                  {"w": "whole", "rel": "近义", "children": [
+                    {"w": "wholly", "rel": "扩", "children": [
+                      {"w": "deadly", "rel": "相关", "children": [{"w": "dead"}, {"w": "death"}]}
+                    ]}
+                  ]}
+                ]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 11, "word": "facility", "freq": 3, "page": 140,
+          "prons": [{"ipa": "/fəˈsɪləti/", "senses": [{"pos": "n.", "mean": "[[设施，设备]]；天赋，才能"}]}],
+          "tip": {"type": "联想", "text": "fac（联想 fact）+ -ility（名词后缀）→ 做实事的东西 → 设施，设备"},
+          "ex": {"type": "例", "en": "They provide facilities management services to corporations, hospitals and universities.", "zh": "他们为公司、医院和大学提供设施管理服务。", "key": ["facilities"]},
+          "ext": [
+            {"word": "facilitate", "ipa": "/fəˈsɪlɪteɪt/", "senses": [{"pos": "v.", "mean": "促进；促使；使便利"}]},
+            {"word": "facilitation", "ipa": "/fəˌsɪlɪˈteɪʃn/", "senses": [{"pos": "n.", "mean": "促进"}]}
+          ]
+        },
+        {
+          "no": 12, "word": "defect", "freq": 1, "page": 140,
+          "prons": [{"ipa": "/ˈdiːfekt/", "senses": [{"pos": "n.", "mean": "[[缺点，缺陷]]"}]}],
+          "tip": {"type": "联想", "text": "de（音似“弟”）+ fect（联想 fact）→ 事实上，弟弟做事总有“缺点”。"},
+          "ex": {"type": "例", "en": "The creative aspects of advertisement often cover up the defects or problems in products.", "zh": "广告的创意往往掩盖了产品的缺陷或问题。", "key": ["defects"]},
+          "ext": [
+            {"word": "defective", "ipa": "/dɪˈfektɪv/", "senses": [{"pos": "adj.", "mean": "有缺陷的"}]},
+            {"word": "defection", "ipa": "/dɪˈfekʃn/", "senses": [{"pos": "n.", "mean": "背叛，叛变，投敌"}]}
+          ]
+        },
+        {
+          "no": 13, "word": "effect", "freq": 3, "page": 141,
+          "prons": [{"ipa": "/ɪˈfekt/", "senses": [{"pos": "n.", "mean": "[[效果，影响]]"}]}],
+          "tip": {"type": "构词", "text": "ef-（向外）+ fect（做）→ 做出来的事会产生一些“影响”。"},
+          "ex": {"type": "真", "year": 2016, "en": "Such personality characteristics as self-discipline have no effect on longevity.", "zh": "自律等这些人格特征对长寿没有影响。", "key": ["have no effect on"]},
+          "ext": [{"word": "effective", "ipa": "/ɪˈfektɪv/", "senses": [{"pos": "adj.", "mean": "有影响的，有效果的"}]}]
+        },
+        {
+          "no": 14, "word": "affect", "freq": 1, "page": 141,
+          "prons": [{"ipa": "/əˈfekt/", "senses": [{"pos": "v.", "mean": "[[影响]]；侵袭，（使）感染"}]}],
+          "tip": {"type": "联想", "text": "af-（一再地）+ fect（做）→ 一再地做事会产生一些“影响”。"},
+          "ex": {"type": "真", "year": 2016, "en": "Mothers' negative personality characteristics may affect their children's lifespans.", "zh": "母亲的消极人格特征可能会影响孩子的寿命。", "key": ["affect"]},
+          "ext": []
+        },
+        {
+          "no": 15, "word": "affection", "freq": 1, "page": 141,
+          "prons": [{"ipa": "/əˈfekʃn/", "senses": [{"pos": "n.", "mean": "感情；影响；[[喜爱，钟爱]]"}]}],
+          "tip": {"type": "构词", "text": "affect（影响）+ -ion（名词后缀）→ 受到影响后产生的心理状态 → 感情；喜爱"},
+          "ex": {"type": "真", "year": 2021, "en": "People of different ages and genders show affection in different ways.", "zh": "不同年龄、不同性别的人以不同的方式表达感情。", "key": ["affection"]},
+          "ext": [{"word": "affectionate", "ipa": "/əˈfekʃənət/", "senses": [{"pos": "adj.", "mean": "表示关爱的"}]}]
+        },
+        {
+          "no": 16, "word": "infect", "freq": 1, "page": 141,
+          "prons": [{"ipa": "/ɪnˈfekt/", "senses": [{"pos": "v.", "mean": "[[传染]]；[[感染]]；使携带病菌"}]}],
+          "tip": {"type": "构词", "text": "in（里面）+ fect（做）→ 病菌进入身体里面做（坏事）→ 传染；使感染"},
+          "ex": {"type": "真", "year": 2018, "en": "Two million bees were infected with disease.", "zh": "200万只蜜蜂感染了疾病。", "key": ["infected with"]},
+          "ext": [
+            {"word": "infection", "ipa": "/ɪnˈfekʃn/", "senses": [{"pos": "n.", "mean": "传染；感染；传染病"}]},
+            {"word": "infectious", "ipa": "/ɪnˈfekʃəs/", "senses": [{"pos": "adj.", "mean": "传染性的；有感染力的"}]}
+          ]
+        },
+        {
+          "no": 17, "word": "manufacture", "freq": 2, "page": 141,
+          "prons": [{"ipa": "/ˌmænjuˈfæktʃə(r)/", "senses": [
+            {"pos": "v.", "mean": "[[生产，制造]]"},
+            {"pos": "n.", "mean": "[[大量制造，批量生产]]"}
+          ]}],
+          "tip": {"type": "构词", "text": "manu-（手）+ fact（做）+ -ure（后缀）→ 生产，制造"},
+          "ex": {"type": "真", "year": 2016, "en": "They were profitable to manufacture.", "zh": "大量生产它们是有利可图的。", "key": ["manufacture"]},
+          "ext": [{"word": "manufacturer", "ipa": "/ˌmænjuˈfæktʃərə(r)/", "senses": [{"pos": "n.", "mean": "生产商；制造商"}]}]
+        },
+        {
+          "no": 18, "word": "manual", "freq": 1, "page": 141,
+          "prons": [{"ipa": "/ˈmænjuəl/", "senses": [
+            {"pos": "adj.", "mean": "[[体力的]]；[[手工的]]"},
+            {"pos": "n.", "mean": "[[使用手册]]；指南"}
+          ]}],
+          "tip": {"type": "构词", "text": "manu（手）+ -al（后缀）→ 手工的；使用手册"},
+          "ex": {"type": "例", "en": "Why don't you read the manual?", "zh": "你为什么不看使用手册？", "key": ["manual"]},
+          "ext": []
+        },
+        {
+          "no": 19, "word": "perfect", "freq": 1, "page": 141,
+          "prons": [
+            {"ipa": "/ˈpɜːfɪkt/", "senses": [{"pos": "adj.", "mean": "[[完美的]]；最佳的"}]},
+            {"ipa": "/pəˈfekt/", "senses": [{"pos": "v.", "mean": "[[使完善]]，[[使完美]]"}]}
+          ],
+          "tip": null,
+          "ex": {"type": "例", "en": "The new restaurant is a perfect place for dating.", "zh": "那家新餐馆是约会的完美场所。", "key": ["perfect"]},
+          "ext": [
+            {"word": "perfectly", "ipa": "/ˈpɜːfɪktli/", "senses": [{"pos": "adv.", "mean": "完全地，非常；完美地"}]},
+            {"word": "perfection", "ipa": "/pəˈfekʃn/", "senses": [{"pos": "n.", "mean": "完善，完美"}]}
+          ]
+        },
+        {
+          "no": 20, "word": "ideal", "freq": 3, "page": 141,
+          "prons": [{"ipa": "/aɪˈdiːəl/", "senses": [
+            {"pos": "adj.", "mean": "[[完美的]]；[[理想的]]"},
+            {"pos": "n.", "mean": "[[理想的人或物]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2021, "en": "Create an ideal study environment for them.", "zh": "为他们创造理想的学习环境。", "key": ["ideal"]},
+          "ext": [
+            {"word": "idealistic", "ipa": "/ˌaɪdiəˈlɪstɪk/", "senses": [{"pos": "adj.", "mean": "理想主义的；空想的"}]},
+            {"word": "idealism", "ipa": "/aɪˈdiːəlɪzəm/", "senses": [{"pos": "n.", "mean": "理想主义；唯心主义"}]}
+          ]
+        },
+        {
+          "no": 21, "word": "thoughtful", "freq": 1, "page": 141,
+          "prons": [{"ipa": "/ˈθɔːtfl/", "senses": [{"pos": "adj.", "mean": "[[沉思的]]，思考的；[[体贴的]]，关心的"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The hotel manager was very kind and thoughtful.", "zh": "酒店经理非常亲切、体贴。", "key": ["thoughtful"]},
+          "ext": [{"word": "thought", "ipa": "/θɔːt/", "senses": [{"pos": "n.", "mean": "想法；思想；意图"}]}]
+        },
+        {
+          "no": 22, "word": "thorough", "freq": 1, "page": 141,
+          "prons": [{"ipa": "/ˈθʌrə/", "senses": [{"pos": "adj.", "mean": "[[彻底的，完全的]]，深入的"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“仨肉”→ 他们仨把盘子里的肉全吃完了 → 彻底的，完全的"},
+          "ex": {"type": "例", "en": "The doctor gave him a thorough check-up.", "zh": "医生给他做了一次全面的体检。", "key": ["thorough"]},
+          "ext": []
+        },
+        {
+          "no": 23, "word": "entire", "freq": 3, "page": 142,
+          "prons": [{"ipa": "/ɪnˈtaɪə(r)/", "senses": [{"pos": "adj.", "mean": "[[全部的]]；[[整个的]]；[[完全的]]"}]}],
+          "tip": {"type": "联想", "text": "en-（使……）+ tire（劳累）→ 什么使他如此劳累？他做了“全部的”工作。"},
+          "ex": {"type": "真", "year": 2023, "en": "They must be used in combination for an entire collective.", "zh": "它们必须结合起来用于整个集体。", "key": ["entire"]},
+          "ext": [{"word": "entirety", "ipa": "/ɪnˈtaɪərəti/", "senses": [{"pos": "n.", "mean": "全部，全体，整体"}]}]
+        },
+        {
+          "no": 24, "word": "whole", "freq": 1, "page": 142,
+          "prons": [{"ipa": "/həʊl/", "senses": [
+            {"pos": "n.", "mean": "[[整个]]；[[全部，全体]]"},
+            {"pos": "adj.", "mean": "[[全部的]]；[[完整的]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "who（音似“糊”）+ le（联想“了”）→ 粥是不是“全部”糊了？"},
+          "ex": {"type": "真", "year": 2016, "en": "It contributes greatly to the advance of society as a whole.", "zh": "它对整个社会的进步做出了巨大贡献。", "key": ["as a whole"]},
+          "ext": [{"word": "wholly", "ipa": "/ˈhəʊlli/", "senses": [{"pos": "adv.", "mean": "完全地；全面地；整体地"}]}]
+        },
+        {
+          "no": 25, "word": "deadly", "freq": 1, "page": 142,
+          "prons": [{"ipa": "/ˈdedli/", "senses": [
+            {"pos": "adj.", "mean": "[[（可能）致命的]]；[[彻底的，十足的]]"},
+            {"pos": "adv.", "mean": "极其；非常"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2020, "en": "A deadly fish has been spotted in the Mediterranean waters.", "zh": "在地中海水域发现了一种致命的鱼。", "key": ["deadly"]},
+          "ext": [
+            {"word": "dead", "ipa": "/ded/", "senses": [{"pos": "adj.", "mean": "死的；枯萎的；不工作的"}, {"pos": "n.", "mean": "死者"}, {"pos": "adv.", "mean": "非常"}]},
+            {"word": "death", "ipa": "/deθ/", "senses": [{"pos": "n.", "mean": "死亡；毁灭；死神"}]}
+          ]
+        }
+      ]
+    },
+    {
+      "no": 13,
+      "title": "ory/ery 相关",
+      "pages": [142, 144],
+      "map": {
+        "w": "ory/ery 相关",
+        "children": [
+          {"w": "factory", "children": [{"w": "mill", "rel": "近义"}]},
+          {"w": "territory", "children": [{"w": "territorial", "rel": "扩"}]},
+          {"w": "laboratory", "children": [
+            {"w": "lavatory", "rel": "变labor", "children": [{"w": "laundry", "rel": "相关"}]}
+          ]},
+          {"w": "nursery", "children": [
+            {"w": "gallery", "children": [
+              {"w": "corridor", "rel": "相关", "children": [
+                {"w": "aisle", "children": [
+                  {"w": "lane", "rel": "相关"},
+                  {"w": "alley", "rel": "相关", "children": [
+                    {"w": "pave", "rel": "相关", "children": [{"w": "pavement", "rel": "扩"}]}
+                  ]}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"w": "grocery", "children": [{"w": "grocer", "rel": "扩"}]},
+          {"w": "scenery", "children": [
+            {"w": "scenic", "rel": "扩"},
+            {"w": "scene", "rel": "近义", "children": [
+              {"w": "landscape", "children": [
+                {"w": "landlord", "rel": "land 相关", "children": [{"w": "landlady"}]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 26, "word": "factory", "freq": 1, "page": 142,
+          "prons": [{"ipa": "/ˈfæktri/", "senses": [{"pos": "n.", "mean": "[[工厂]]；制造厂"}]}],
+          "tip": {"type": "构词", "text": "fact（做）+ -ory（名词后缀）→ 做东西的地方 → 工厂"},
+          "ex": {"type": "例", "en": "They work in shifts in a factory.", "zh": "他们在工厂轮班工作。", "key": ["factory"]},
+          "ext": []
+        },
+        {
+          "no": 27, "word": "mill", "freq": 1, "page": 142,
+          "prons": [{"ipa": "/mɪl/", "senses": [
+            {"pos": "n.", "mean": "[[工厂]]；磨坊"},
+            {"pos": "v.", "mean": "用磨碾碎"}
+          ]}],
+          "tip": {"type": "联想", "text": "mi（联想“米”）+ ll → 磨大米的地方就是“磨坊”。"},
+          "ex": {"type": "例", "en": "The old mill is now little more than a ruin.", "zh": "老磨坊现在只剩下一点残垣断壁了。", "key": ["mill"]},
+          "ext": []
+        },
+        {
+          "no": 28, "word": "territory", "freq": 2, "page": 142,
+          "prons": [{"ipa": "/ˈterətri/", "senses": [{"pos": "n.", "mean": "[[领土]]，领地；[[领域]]，范围"}]}],
+          "tip": {"type": "联想", "text": "te（联想“特”）+（r）ri（联想“日”）+ t（联想“提”）+ -ory（名词后缀）→ 他在这个特别的日子里提到要保卫我们的“领土”。"},
+          "ex": {"type": "真", "year": 2018, "en": "It's certainly new territory, especially as home security cameras become easier to install.", "zh": "这当然是一个新领域，尤其是在家庭安全摄像头变得更容易安装的情况下。", "key": ["territory"]},
+          "ext": [{"word": "territorial", "ipa": "/ˌterəˈtɔːriəl/", "senses": [{"pos": "adj.", "mean": "领土的；领域性的"}]}]
+        },
+        {
+          "no": 29, "word": "laboratory", "freq": 1, "page": 142,
+          "prons": [{"ipa": "/ləˈbɒrətri/", "senses": [{"pos": "n.", "mean": "[[实验室]]"}]}],
+          "tip": {"type": "构词", "text": "labor（劳动）+ -atory（名词后缀）→ 进行劳动的场所 → 实验室"},
+          "ex": {"type": "真", "year": 2021, "en": "In this study, students came into the laboratory and were asked to give a public speech.", "zh": "在这项研究中，学生们进入实验室，并被要求发表一个公开的演讲。", "key": ["laboratory"]},
+          "ext": []
+        },
+        {
+          "no": 30, "word": "lavatory", "freq": 1, "page": 143,
+          "prons": [{"ipa": "/ˈlævətri/", "senses": [{"pos": "n.", "mean": "[[盥洗室]]"}]}],
+          "tip": {"type": "联想", "text": "la（联想“拉”）+ va（音似“我”）+ t（联想“吐”）+ -ory（名词后缀）→ 拉着我去能吐的地方 → 盥洗室"},
+          "ex": {"type": "例", "en": "Is there any lavatory in this room?", "zh": "这个房间里有盥洗室吗？", "key": ["lavatory"]},
+          "ext": []
+        },
+        {
+          "no": 31, "word": "laundry", "freq": 1, "page": 143,
+          "prons": [{"ipa": "/ˈlɔːndri/", "senses": [{"pos": "n.", "mean": "[[待洗衣物]]；[[洗衣店]]"}]}],
+          "tip": {"type": "联想", "text": "laun（音似“捞”）+ dry（干）→ 洗洗、捞捞再沥干，这通常是“洗衣店”的日常事务。"},
+          "ex": {"type": "例", "en": "He worked in the laundry at a prison.", "zh": "他曾在一所监狱的洗衣房工作。", "key": ["laundry"]},
+          "ext": []
+        },
+        {
+          "no": 32, "word": "gallery", "freq": 2, "page": 143,
+          "prons": [{"ipa": "/ˈɡæləri/", "senses": [{"pos": "n.", "mean": "[[美术馆，画廊]]；（大厅的）楼座，楼上旁听席"}]}],
+          "tip": {"type": "联想", "text": "galle（音似“盖了”）+ -(e)ry（名词后缀）→ 盖了一个地方，用作“画廊”。"},
+          "ex": {"type": "真", "year": 2017, "en": "In his spare time, he visited the local art galleries.", "zh": "在业余时间，他参观了当地的艺术画廊。", "key": ["galleries"]},
+          "ext": []
+        },
+        {
+          "no": 33, "word": "corridor", "freq": 2, "page": 143,
+          "prons": [{"ipa": "/ˈkɒrɪdɔː(r)/", "senses": [{"pos": "n.", "mean": "[[走廊，通道]]，（建筑物内的）过道"}]}],
+          "tip": {"type": "联想", "text": "cor-（联想 con-，都）+ ri（联想“日”）+ dor（联想 door）→ 每天都要经过这道门，并穿过“走廊”。"},
+          "ex": {"type": "例", "en": "There's a door at either end of the corridor.", "zh": "走廊两端各有一道门。", "key": ["corridor"]},
+          "ext": []
+        },
+        {
+          "no": 34, "word": "aisle", "freq": 1, "page": 143,
+          "prons": [{"ipa": "/aɪl/", "senses": [{"pos": "n.", "mean": "[[走道，过道]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“挨哦”→ 备考的学生在“过道”里可以挨着坐哦，方便一起学习。"},
+          "ex": {"type": "例", "en": "Coffee and tea are in the next aisle.", "zh": "下一个过道处有咖啡和茶。", "key": ["aisle"]},
+          "ext": []
+        },
+        {
+          "no": 35, "word": "lane", "freq": 1, "page": 143,
+          "prons": [{"ipa": "/leɪn/", "senses": [{"pos": "n.", "mean": "[[（乡间）小路，小巷]]；[[车道]]；航线"}]}],
+          "tip": {"type": "联想", "text": "la（联想“拉”）+ ne（联想“呢”）→ 牛在农村的“小路”上拉车呢。"},
+          "ex": {"type": "例", "en": "The highways have wide lanes and shoulders.", "zh": "公路有宽阔的车道和路肩。", "key": ["lanes"]},
+          "ext": []
+        },
+        {
+          "no": 36, "word": "alley", "freq": 1, "page": 143,
+          "prons": [{"ipa": "/ˈæli/", "senses": [{"pos": "n.", "mean": "[[小巷，小街]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“哎累”→ 住在这条“小巷”的人们每天都感叹：“哎！累！”"},
+          "ex": {"type": "例", "en": "When he saw the police arrive, he ran down an alley.", "zh": "他看见警察来了，便跑进了一条小巷。", "key": ["alley"]},
+          "ext": []
+        },
+        {
+          "no": 37, "word": "pave", "freq": 1, "page": 143,
+          "prons": [{"ipa": "/peɪv/", "senses": [{"pos": "v.", "mean": "[[（用砖石）铺（地）]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“陪我”→ 我的父母提前为我的未来“铺”路，是想更好地陪伴我。"},
+          "ex": {"type": "例", "en": "The city centre streets are paved with dark local stone.", "zh": "市中心的街道用当地的深色石块铺砌而成。", "key": ["paved with"]},
+          "ext": [{"word": "pavement", "ipa": "/ˈpeɪvmənt/", "senses": [{"pos": "n.", "mean": "人行道；石板铺的地面；路面"}]}]
+        },
+        {
+          "no": 38, "word": "grocery", "freq": 1, "page": 143,
+          "prons": [{"ipa": "/ˈɡrəʊsəri/", "senses": [{"pos": "n.", "mean": "[[杂货店]]；食品杂货（店）"}]}],
+          "tip": {"type": "联想", "text": "gro（音似“割肉”）+ c + -ery（名词后缀）→ 哥哥常去割（买）肉的地方 → 杂货店"},
+          "ex": {"type": "例", "en": "There is plenty of decent food in the grocery stores.", "zh": "杂货店里有很多像样的食物。", "key": ["grocery"]},
+          "ext": [{"word": "grocer", "ipa": "/ˈɡrəʊsə(r)/", "senses": [{"pos": "n.", "mean": "食物杂货商；食物杂货店"}]}]
+        },
+        {
+          "no": 39, "word": "nursery", "freq": 1, "page": 143,
+          "prons": [{"ipa": "/ˈnɜːsəri/", "senses": [{"pos": "n.", "mean": "[[托儿所，幼儿园]]；儿童房；[[婴儿室]]"}]}],
+          "tip": {"type": "构词", "text": "nurs(e)（护理，照看）+ -ery（名词后缀）→ 托儿所；婴儿室"},
+          "ex": {"type": "例", "en": "Her youngest child is at nursery now.", "zh": "她最小的孩子现在上幼儿园。", "key": ["nursery"]},
+          "ext": []
+        },
+        {
+          "no": 40, "word": "scenery", "freq": 2, "page": 144,
+          "prons": [{"ipa": "/ˈsiːnəri/", "senses": [{"pos": "n.", "mean": "[[风景，景色]]；舞台布景"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“新挪威”→ 这个新舞台布景表现的是挪威的“风景”。"},
+          "ex": {"type": "例", "en": "He doesn't know how to describe the beautiful country scenery.", "zh": "他不知道如何形容那美丽的乡村风景。", "key": ["scenery"]},
+          "ext": [{"word": "scenic", "ipa": "/ˈsiːnɪk/", "senses": [{"pos": "adj.", "mean": "风景优美的"}]}]
+        },
+        {
+          "no": 41, "word": "scene", "freq": 2, "page": 144,
+          "prons": [{"ipa": "/siːn/", "senses": [{"pos": "n.", "mean": "[[（戏剧）场景]]；[[景色，情景]]；[[地点，现场]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2022, "en": "It has been the scene of several fatal accidents recently.", "zh": "这里是最近几起致命事故的现场。", "key": ["scene"]},
+          "ext": []
+        },
+        {
+          "no": 42, "word": "landscape", "freq": 2, "page": 144,
+          "prons": [{"ipa": "/ˈlændskeɪp/", "senses": [{"pos": "n.", "mean": "[[风景，景色]]"}]}],
+          "tip": {"type": "联想", "text": "land（陆地）+ sc（音似“死看”）+ ape（猿猴）→ 她在陆地上死盯着一只猿猴看，觉得这也算一道特别的“风景”。"},
+          "ex": {"type": "例", "en": "This pattern of woods and fields is typical of the English landscape.", "zh": "这是具有典型英格兰风景特征的森林与田野。", "key": ["landscape"]},
+          "ext": []
+        },
+        {
+          "no": 43, "word": "landlord", "freq": 1, "page": 144,
+          "prons": [{"ipa": "/ˈlændlɔːd/", "senses": [{"pos": "n.", "mean": "[[业主]]；[[地主]]；[[房东]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“懒得劳的”→ 这个“房东”说自己懒得劳动，收租就够了。"},
+          "ex": {"type": "例", "en": "Landlords had to wait 60 days to get rid of problem tenants.", "zh": "房东必须等60天才能清除有问题的租户。", "key": ["Landlords"]},
+          "ext": [{"word": "landlady", "ipa": "/ˈlændleɪdi/", "senses": [{"pos": "n.", "mean": "女房东；（小旅店的）女店主"}]}]
+        }
+      ]
+    },
+    {
+      "no": 14,
+      "title": "“入侵”相关",
+      "pages": [144, 145],
+      "map": {
+        "w": "“入侵”相关",
+        "children": [
+          {"w": "invade", "children": [
+            {"w": "invasion", "rel": "扩", "children": [{"w": "invader", "children": [{"w": "invasive"}]}]}
+          ]},
+          {"w": "intrude", "children": [
+            {"w": "intrusion", "rel": "扩", "children": [{"w": "intruder"}]}
+          ]},
+          {"w": "attack", "children": [
+            {"w": "conquer", "rel": "相关", "children": [
+              {"w": "conqueror", "rel": "扩", "children": [{"w": "conquest"}]},
+              {"w": "colony", "rel": "相关", "children": [
+                {"w": "colonial", "rel": "扩", "children": [{"w": "colonialism", "children": [{"w": "colonise"}]}]}
+              ]}
+            ]},
+            {"w": "retreat", "rel": "相关", "children": [
+              {"w": "treaty", "rel": "相关", "children": [
+                {"w": "defeat", "children": [
+                  {"w": "triumph", "rel": "相关", "children": [{"w": "triumphant", "rel": "扩"}]},
+                  {"w": "victory", "rel": "相关", "children": [{"w": "victorious", "rel": "扩"}]}
+                ]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 44, "word": "invade", "freq": 1, "page": 144,
+          "prons": [{"ipa": "/ɪnˈveɪd/", "senses": [{"pos": "v.", "mean": "[[侵犯，侵略，入侵]]"}]}],
+          "tip": {"type": "联想", "text": "in（里面）+ vade（联想“洼的”）→ 当下雨的时候，洼的地方容易被水“入侵”。"},
+          "ex": {"type": "真", "year": 2021, "en": "It invades employees' privacy.", "zh": "它侵犯了员工的隐私。", "key": ["invades"]},
+          "ext": [
+            {"word": "invasion", "ipa": "/ɪnˈveɪʒn/", "senses": [{"pos": "n.", "mean": "入侵，侵略，侵犯"}]},
+            {"word": "invader", "ipa": "/ɪnˈveɪdə(r)/", "senses": [{"pos": "n.", "mean": "武装入侵的军队（或国家）；侵略者"}]},
+            {"word": "invasive", "ipa": "/ɪnˈveɪsɪv/", "senses": [{"pos": "adj.", "mean": "侵入的；侵袭的"}]}
+          ]
+        },
+        {
+          "no": 45, "word": "intrude", "freq": 1, "page": 144,
+          "prons": [{"ipa": "/ɪnˈtruːd/", "senses": [{"pos": "v.", "mean": "[[侵入，打扰，闯入]]"}]}],
+          "tip": {"type": "联想", "text": "in（里面）+ tru（音似 true）+ de（联想“德”）→ 里面真的“闯入”了一个德国人。"},
+          "ex": {"type": "真", "year": 2018, "en": "The security camera installed may intrude into their privacy.", "zh": "安装的安全摄像头可能会侵犯他们的隐私。", "key": ["intrude"]},
+          "ext": [
+            {"word": "intrusion", "ipa": "/ɪnˈtruːʒn/", "senses": [{"pos": "n.", "mean": "侵入，闯入"}]},
+            {"word": "intruder", "ipa": "/ɪnˈtruːdə(r)/", "senses": [{"pos": "n.", "mean": "闯入者，侵入者"}]}
+          ]
+        },
+        {
+          "no": 46, "word": "attack", "freq": 1, "page": 144,
+          "prons": [{"ipa": "/əˈtæk/", "senses": [
+            {"pos": "v.", "mean": "[[攻击，袭击]]；批评"},
+            {"pos": "n.", "mean": "[[袭击，抨击]]；批评"}
+          ]}],
+          "tip": {"type": "联想", "text": "a（一）+ ttack（音似“坦克”）→ 一辆坦克正在“袭击”敌人。"},
+          "ex": {"type": "真", "year": 2016, "en": "It is possible for burglars to make jamming attacks with the necessary equipment and skill.", "zh": "窃贼有可能利用必要的设备和技巧进行干扰攻击。", "key": ["attacks"]},
+          "ext": []
+        },
+        {
+          "no": 47, "word": "conquer", "freq": 1, "page": 144,
+          "prons": [{"ipa": "/ˈkɒŋkə(r)/", "senses": [{"pos": "v.", "mean": "[[征服，占领]]；击败"}]}],
+          "tip": {"type": "联想", "text": "con-（所有的）+ quer（音似“克”）→ 所有的都攻克了 → 征服"},
+          "ex": {"type": "例", "en": "The only way to conquer a fear is to face it.", "zh": "克服恐惧的唯一方法就是正视恐惧。", "key": ["conquer"]},
+          "ext": [
+            {"word": "conqueror", "ipa": "/ˈkɒŋkərə(r)/", "senses": [{"pos": "n.", "mean": "征服者；占领者；胜利者"}]},
+            {"word": "conquest", "ipa": "/ˈkɒŋkwest/", "senses": [{"pos": "n.", "mean": "征服；占领；占领的地区"}]}
+          ]
+        },
+        {
+          "no": 48, "word": "colony", "freq": 1, "page": 145,
+          "prons": [{"ipa": "/ˈkɒləni/", "senses": [{"pos": "n.", "mean": "[[殖民地]]；群体；[[群]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“靠了你”→ 那“群”人靠你才逃离了那个地方。"},
+          "ex": {"type": "例", "en": "The colony of ants are busy moving upward because it will rain heavily.", "zh": "这群蚂蚁正忙着向上迁移，因为要下大雨了。", "key": ["colony"]},
+          "ext": [
+            {"word": "colonial", "ipa": "/kəˈləʊniəl/", "senses": [{"pos": "adj.", "mean": "殖民的；殖民国家的"}]},
+            {"word": "colonialism", "ipa": "/kəˈləʊniəlɪzəm/", "senses": [{"pos": "n.", "mean": "殖民主义"}]},
+            {"word": "colonise", "alt": "-ize", "ipa": "/ˈkɒlənaɪz/", "senses": [{"pos": "v.", "mean": "在（某国家或地区）建立殖民地；移民于殖民地"}]}
+          ]
+        },
+        {
+          "no": 49, "word": "retreat", "freq": 1, "page": 145,
+          "prons": [{"ipa": "/rɪˈtriːt/", "senses": [{"pos": "v. & n.", "mean": "[[撤退]]；[[退却]]；[[逃避]]"}]}],
+          "tip": {"type": "构词", "text": "re-（回）+ treat（拖）→ 拖回去 → 撤退"},
+          "ex": {"type": "例", "en": "Is watching television a retreat from reality?", "zh": "看电视是对现实的一种逃避吗？", "key": ["retreat"]},
+          "ext": []
+        },
+        {
+          "no": 50, "word": "treaty", "freq": 1, "page": 145,
+          "prons": [{"ipa": "/ˈtriːti/", "senses": [{"pos": "n.", "mean": "[[（国家之间的）条约，协定]]"}]}],
+          "tip": {"type": "对照", "text": "晚清时期，西方国家对待（treat）中国很不公平，签订了各种不平等条约（treaty）。"},
+          "ex": {"type": "例", "en": "The treaty banning mining here comes up for review.", "zh": "禁止在这里采矿的条约将进行审查。", "key": ["treaty"]},
+          "ext": []
+        },
+        {
+          "no": 51, "word": "defeat", "freq": 2, "page": 145,
+          "prons": [{"ipa": "/dɪˈfiːt/", "senses": [
+            {"pos": "v.", "mean": "[[击败]]；战胜"},
+            {"pos": "n.", "mean": "[[失败]]；击败"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“弟废他”→ 弟弟必须“击败”他，废了他的武功。"},
+          "ex": {"type": "真", "year": 2018, "en": "AlphaGo's victory and Taylor's defeat happened at about the same time.", "zh": "阿尔法狗的胜利和泰勒的失败几乎同时发生。", "key": ["defeat"]},
+          "ext": []
+        },
+        {
+          "no": 52, "word": "triumph", "freq": 1, "page": 145,
+          "prons": [{"ipa": "/ˈtraɪʌmf/", "senses": [
+            {"pos": "v.", "mean": "[[打败，战胜]]"},
+            {"pos": "n.", "mean": "[[巨大成功]]；喜悦"}
+          ]}],
+          "tip": {"type": "对照", "text": "特朗普（Trump）期望取得成功（triumph）。"},
+          "ex": {"type": "例", "en": "They triumphed ultimately over evil in the battle.", "zh": "他们最终在战斗中战胜了邪恶势力。", "key": ["triumphed"]},
+          "ext": [{"word": "triumphant", "ipa": "/traɪˈʌmfənt/", "senses": [{"pos": "adj.", "mean": "欢欣鼓舞的；耀武扬威的；大获全胜的"}]}]
+        },
+        {
+          "no": 53, "word": "victory", "freq": 1, "page": 145,
+          "prons": [{"ipa": "/ˈvɪktəri/", "senses": [{"pos": "n.", "mean": "[[胜利，成功]]"}]}],
+          "tip": {"type": "构词", "text": "vict（征服）+ -ory（名词后缀）→ 胜利，成功"},
+          "ex": {"type": "例", "en": "She is confident of victory in Saturday's final.", "zh": "她对在星期六决赛中取得胜利充满信心。", "key": ["victory"]},
+          "ext": [{"word": "victorious", "ipa": "/vɪkˈtɔːriəs/", "senses": [{"pos": "adj.", "mean": "胜利的；获胜的"}]}]
+        }
+      ]
+    },
+    {
+      "no": 15,
+      "title": "inter 相关",
+      "pages": [145, 146],
+      "map": {
+        "w": "inter 相关",
+        "children": [
+          {"w": "interact", "children": [
+            {"w": "interaction", "rel": "扩"},
+            {"w": "interactive", "rel": "扩"}
+          ]},
+          {"w": "interfere", "children": [{"w": "interference", "rel": "扩"}]},
+          {"w": "interval"},
+          {"w": "interpret", "children": [
+            {"w": "interpretation", "rel": "扩", "children": [{"w": "interpreter"}]}
+          ]},
+          {"w": "interview", "children": [
+            {"w": "interviewer", "rel": "扩", "children": [{"w": "interviewee"}]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 54, "word": "interact", "freq": 2, "page": 145,
+          "prons": [{"ipa": "/ˌɪntərˈækt/", "senses": [{"pos": "v.", "mean": "[[相互影响，相互作用]]"}]}],
+          "tip": {"type": "构词", "text": "inter-（中间）+ act（行动，起作用）→ 在中间起作用 → 相互影响，相互作用"},
+          "ex": {"type": "真", "year": 2022, "en": "It has much to do with whom employees interact with.", "zh": "这与员工和谁互动有很大关系。", "key": ["interact with"]},
+          "ext": [
+            {"word": "interaction", "ipa": "/ˌɪntərˈækʃn/", "senses": [{"pos": "n.", "mean": "互动；相互影响"}]},
+            {"word": "interactive", "ipa": "/ˌɪntərˈæktɪv/", "senses": [{"pos": "adj.", "mean": "交互的；合作的；相互影响的"}]}
+          ]
+        },
+        {
+          "no": 55, "word": "interfere", "freq": 1, "page": 146,
+          "prons": [{"ipa": "/ˌɪntəˈfɪə(r)/", "senses": [{"pos": "v.", "mean": "[[干涉，阻碍]]；弄坏"}]}],
+          "tip": {"type": "联想", "text": "inter-（中间）+ fere（音似“飞”）→ 他学习时，有只苍蝇来回地飞，“干涉”他的学习。"},
+          "ex": {"type": "真", "year": 2017, "en": "Most of us may sometimes feel the frustration of having old memories interfere with new, relevant memories.", "zh": "我们大多数人有时会因为旧记忆干扰新的相关记忆而感到沮丧。", "key": ["interfere with"]},
+          "ext": [{"word": "interference", "ipa": "/ˌɪntəˈfɪərəns/", "senses": [{"pos": "n.", "mean": "干扰，冲突；干涉"}]}]
+        },
+        {
+          "no": 56, "word": "interval", "freq": 1, "page": 146,
+          "prons": [{"ipa": "/ˈɪntəvl/", "senses": [{"pos": "n.", "mean": "[[间隔]]；幕间休息"}]}],
+          "tip": {"type": "联想", "text": "inter-（中间）+ val（音似“我”）→ 我到达的时候在他俩中间 → 间隔"},
+          "ex": {"type": "例", "en": "The interval between major earthquakes might be 200 years.", "zh": "大地震的间隔时间可能有200年。", "key": ["interval"]},
+          "ext": []
+        },
+        {
+          "no": 57, "word": "interpret", "freq": 2, "page": 146,
+          "prons": [{"ipa": "/ɪnˈtɜːprət/", "senses": [{"pos": "v.", "mean": "[[解释，说明]]；口译"}]}],
+          "tip": {"type": "联想", "text": "inter-（中间）+ pre-（提前）+ t（联想“他”）→ 我们谈话时，要提前让他在中间进行“口译”。"},
+          "ex": {"type": "真", "year": 2022, "en": "It is interpreted differently in different times.", "zh": "它在不同的时代有不同的解释。", "key": ["interpreted"]},
+          "ext": [
+            {"word": "interpretation", "ipa": "/ɪnˌtɜːprəˈteɪʃn/", "senses": [{"pos": "n.", "mean": "解释；口译"}]},
+            {"word": "interpreter", "ipa": "/ɪnˈtɜːprətə(r)/", "senses": [{"pos": "n.", "mean": "口译工作者；口译译员；传译者"}]}
+          ]
+        },
+        {
+          "no": 58, "word": "interview", "freq": 1, "page": 146,
+          "prons": [{"ipa": "/ˈɪntəvjuː/", "senses": [
+            {"pos": "n.", "mean": "[[面试，面谈]]；采访"},
+            {"pos": "v.", "mean": "[[面试，面谈]]；接见"}
+          ]}],
+          "tip": {"type": "构词", "text": "inter-（中间）+ view（看）→ 相互之间来回地看 → 面试；采访"},
+          "ex": {"type": "例", "en": "The interview didn't go as well as he expected.", "zh": "面试没有他预期的那么顺利。", "key": ["interview"]},
+          "ext": [
+            {"word": "interviewer", "ipa": "/ˈɪntəvjuːə(r)/", "senses": [{"pos": "n.", "mean": "采访者；记者；面试官"}]},
+            {"word": "interviewee", "ipa": "/ˌɪntəvjuːˈiː/", "senses": [{"pos": "n.", "mean": "参加面试者；被采访者"}]}
+          ]
+        }
+      ]
+    },
+    {
+      "no": 16,
+      "title": "journal 相关",
+      "pages": [146, 147],
+      "map": {
+        "w": "journal 相关",
+        "children": [
+          {"w": "journalist", "children": [
+            {"w": "journalism", "children": [
+              {"w": "print", "children": [
+                {"w": "printer", "rel": "扩", "children": [{"w": "printing"}]},
+                {"w": "blueprint", "rel": "合成", "children": [
+                  {"w": "fingerprint", "children": [{"w": "finger", "rel": "拆分"}]}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"w": "pirate", "children": [{"w": "piracy", "rel": "扩"}]},
+          {"w": "publish", "children": [
+            {"w": "publication", "rel": "相关", "children": [
+              {"w": "public", "rel": "去后缀", "children": [
+                {"w": "publicise", "rel": "扩", "children": [{"w": "publicly", "children": [{"w": "publicity"}]}]},
+                {"w": "republic", "rel": "加re", "children": [{"w": "republican", "rel": "扩"}]}
+              ]}
+            ]}
+          ]},
+          {"w": "version", "children": [
+            {"w": "edit", "children": [
+              {"w": "editor", "rel": "扩", "children": [{"w": "editorial", "children": [{"w": "edition"}]}]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 59, "word": "journal", "freq": 2, "page": 146,
+          "prons": [{"ipa": "/ˈdʒɜːnl/", "senses": [{"pos": "n.", "mean": "[[期刊，日报]]；日记"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“姐能”→ 姐姐很有能力，自己主办了一个“期刊”。"},
+          "ex": {"type": "真", "year": 2017, "en": "The findings are in the journal Nature Geoscience.", "zh": "研究结果发表在《自然·地球科学》期刊上。", "key": ["journal"]},
+          "ext": [
+            {"word": "journalist", "ipa": "/ˈdʒɜːnəlɪst/", "senses": [{"pos": "n.", "mean": "记者"}]},
+            {"word": "journalism", "ipa": "/ˈdʒɜːnəlɪzəm/", "senses": [{"pos": "n.", "mean": "新闻业；新闻工作"}]}
+          ]
+        },
+        {
+          "no": 60, "word": "print", "freq": 1, "page": 146,
+          "prons": [{"ipa": "/prɪnt/", "senses": [
+            {"pos": "n.", "mean": "[[印刷业]]；[[印刷字体]]"},
+            {"pos": "v.", "mean": "[[打印]]；[[印刷]]；刊登；发表"}
+          ]}],
+          "tip": {"type": "联想", "text": "p（联想“派”）+ r（联想“人”）+ in（音似“印”）+ t（联想“它”）→ 派人印它 → 印刷"},
+          "ex": {"type": "真", "year": 2019, "en": "More readers choose the digital over the print edition.", "zh": "更多的读者选择数字版而不是印刷版。", "key": ["print"]},
+          "ext": [
+            {"word": "printer", "ipa": "/ˈprɪntə(r)/", "senses": [{"pos": "n.", "mean": "打印机；印刷商；印刷工人；印刷公司"}]},
+            {"word": "printing", "ipa": "/ˈprɪntɪŋ/", "senses": [{"pos": "n.", "mean": "印刷；印刷术"}]}
+          ]
+        },
+        {
+          "no": 61, "word": "fingerprint", "freq": 1, "page": 147,
+          "prons": [{"ipa": "/ˈfɪŋɡəprɪnt/", "senses": [{"pos": "n.", "mean": "[[指纹]]；指印"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Faces, like fingerprints, are unique.", "zh": "人脸和指纹一样，都是独一无二的。", "key": ["fingerprints"]},
+          "ext": [{"word": "finger", "ipa": "/ˈfɪŋɡə(r)/", "senses": [{"pos": "n.", "mean": "手指"}, {"pos": "v.", "mean": "用手指触摸"}]}]
+        },
+        {
+          "no": 62, "word": "blueprint", "freq": 1, "page": 147,
+          "prons": [{"ipa": "/ˈbluːprɪnt/", "senses": [{"pos": "n.", "mean": "[[蓝图]]；行动方案；模型，型板"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2021, "en": "He studied the blueprints of other famous buildings.", "zh": "他研究了其他著名建筑的蓝图。", "key": ["blueprints"]},
+          "ext": []
+        },
+        {
+          "no": 63, "word": "pirate", "freq": 1, "page": 147,
+          "prons": [{"ipa": "/ˈpaɪrət/", "senses": [
+            {"pos": "n.", "mean": "（尤指旧时的）海盗；[[盗版者]]"},
+            {"pos": "v.", "mean": "[[盗印]]；窃用"}
+          ]}],
+          "tip": {"type": "联想", "text": "pi（音似“派”）+ rate（速度）→ “盗版者”派人“盗印”别人书籍的速度很快。"},
+          "ex": {"type": "例", "en": "The area is frequented by pirates.", "zh": "这个地区经常有海盗出没。", "key": ["pirates"]},
+          "ext": [{"word": "piracy", "ipa": "/ˈpaɪrəsi/", "senses": [{"pos": "n.", "mean": "海盗行为；盗版行为"}]}]
+        },
+        {
+          "no": 64, "word": "publish", "freq": 3, "page": 147,
+          "prons": [{"ipa": "/ˈpʌblɪʃ/", "senses": [{"pos": "v.", "mean": "[[出版，发行]]；刊登；发布"}]}],
+          "tip": {"type": "对照", "text": "让某本书公开（public）面世就是让它出版（publish）。"},
+          "ex": {"type": "例", "en": "It is first published in Washington and then in Paris.", "zh": "它首先在华盛顿出版，然后在巴黎出版。", "key": ["published"]},
+          "ext": [{"word": "publication", "ipa": "/ˌpʌblɪˈkeɪʃn/", "senses": [{"pos": "n.", "mean": "（书刊等的）出版；出版物；发表；公布"}]}]
+        },
+        {
+          "no": 65, "word": "public", "freq": 1, "page": 147,
+          "prons": [{"ipa": "/ˈpʌblɪk/", "senses": [
+            {"pos": "adj.", "mean": "[[公共的]]；[[公开的]]"},
+            {"pos": "n.", "mean": "[[民众]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2015, "en": "It doesn't run counter to the goals of public education.", "zh": "这并不违背公共教育的目标。", "key": ["public"]},
+          "ext": [
+            {"word": "publicise", "alt": "-ize", "ipa": "/ˈpʌblɪsaɪz/", "senses": [{"pos": "v.", "mean": "宣传；推广"}]},
+            {"word": "publicly", "ipa": "/ˈpʌblɪkli/", "senses": [{"pos": "adv.", "mean": "公开地"}]},
+            {"word": "publicity", "ipa": "/pʌbˈlɪsəti/", "senses": [{"pos": "n.", "mean": "（媒体的）关注，宣传，报道"}]}
+          ]
+        },
+        {
+          "no": 66, "word": "republic", "freq": 1, "page": 147,
+          "prons": [{"ipa": "/rɪˈpʌblɪk/", "senses": [{"pos": "n.", "mean": "[[共和国，共和政体]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Mary McAleese was the President of the Republic of Ireland.", "zh": "玛丽·麦卡利斯曾是爱尔兰共和国的总统。", "key": ["Republic"]},
+          "ext": [{"word": "republican", "ipa": "/rɪˈpʌblɪkən/", "senses": [{"pos": "n.", "mean": "拥护共和政体的人；共和主义者"}]}]
+        },
+        {
+          "no": 67, "word": "edit", "freq": 1, "page": 147,
+          "prons": [{"ipa": "/ˈedɪt/", "senses": [{"pos": "v.", "mean": "[[编辑]]；剪辑；[[主编]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“爱抵他”→ 他在“编辑”一本关于爱国抵抗侵略的故事书。"},
+          "ex": {"type": "真", "year": 2017, "en": "You have time to edit and do more research.", "zh": "你有时间去编辑和做更多的研究。", "key": ["edit"]},
+          "ext": [
+            {"word": "editor", "ipa": "/ˈedɪtə(r)/", "senses": [{"pos": "n.", "mean": "编辑；社论撰写人"}]},
+            {"word": "editorial", "ipa": "/ˌedɪˈtɔːriəl/", "senses": [{"pos": "adj.", "mean": "编辑的"}, {"pos": "n.", "mean": "（报刊的）社论"}]},
+            {"word": "edition", "ipa": "/ɪˈdɪʃn/", "senses": [{"pos": "n.", "mean": "版本"}]}
+          ]
+        },
+        {
+          "no": 68, "word": "version", "freq": 1, "page": 147,
+          "prons": [{"ipa": "/ˈvɜːʃn/", "senses": [{"pos": "n.", "mean": "[[变体]]；变种；[[版本]]"}]}],
+          "tip": {"type": "联想", "text": "ver（音似“我”）+ s（联想“撕”）+ -ion（名词后缀）→ 我不小心撕坏了那个“版本”的书。"},
+          "ex": {"type": "真", "year": 2021, "en": "He submitted the unedited version to a more respected journal and got accepted.", "zh": "他把未经编辑的版本提交给一家更受尊敬的杂志，并被接受了。", "key": ["version"]},
+          "ext": []
+        }
+      ]
+    }
+  ]
+}

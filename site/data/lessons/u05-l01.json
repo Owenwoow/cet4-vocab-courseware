@@ -1,0 +1,726 @@
+{
+  "id": "u05-l01",
+  "part": 1,
+  "unit": 5,
+  "lesson": 1,
+  "pages": [123, 130],
+  "groups": [
+    {
+      "no": 1,
+      "title": "“指挥”相关",
+      "pages": [123, 125],
+      "map": {
+        "w": "“指挥”相关",
+        "children": [
+          {"w": "conduct", "children": [{"w": "conductor", "rel": "扩"}]},
+          {"w": "instruct", "children": [
+            {"w": "instruction", "rel": "扩", "children": [
+              {"w": "instructor", "children": [{"w": "instructive"}]}
+            ]}
+          ]},
+          {"w": "command", "children": [
+            {"w": "commander", "rel": "扩", "children": [
+              {"w": "military", "rel": "相关", "children": [{"w": "enemy"}]}
+            ]}
+          ]},
+          {"w": "direct", "children": [
+            {"w": "director", "rel": "扩"},
+            {"w": "direction", "rel": "扩"}
+          ]},
+          {"w": "forth", "children": [
+            {"w": "forthcoming", "rel": "合成"},
+            {"w": "forever", "rel": "变th", "children": [
+              {"w": "foremost", "rel": "变ever"},
+              {"w": "foresee", "rel": "变ever", "children": [
+                {"w": "foreseeable", "rel": "扩", "children": [{"w": "foresight"}]},
+                {"w": "oversee", "rel": "变fore", "children": [{"w": "overhead", "rel": "变see"}]}
+              ]},
+              {"w": "forecast", "rel": "变ever", "children": [
+                {"w": "cast", "rel": "拆分", "children": [
+                  {"w": "toss", "rel": "近义"},
+                  {"w": "broadcast", "rel": "合成"}
+                ]}
+              ]}
+            ]},
+            {"w": "forward", "rel": "近义"}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "conduct", "freq": 3, "page": 123,
+          "prons": [
+            {"ipa": "/ˈkɒndʌkt/", "senses": [{"pos": "n.", "mean": "[[行为]]，举止"}]},
+            {"ipa": "/kənˈdʌkt/", "senses": [{"pos": "v.", "mean": "[[执行]]；[[指挥]]；引导；传导（热，电）"}]}
+          ],
+          "tip": {"type": "联想", "text": "con-（都）+ duct（音似“搭客特”）→ 他“指挥”众人都搭上了那辆客车，特别有秩序。"},
+          "ex": {"type": "真", "year": 2022, "en": "It is a code of conduct based on laws and ethics.", "zh": "它是基于法律和道德的行为准则。", "key": ["conduct"]},
+          "ext": [{"word": "conductor", "ipa": "/kənˈdʌktə(r)/", "senses": [{"pos": "n.", "mean": "指挥；列车长；售票员；导体"}]}]
+        },
+        {
+          "no": 2, "word": "direct", "freq": 1, "page": 123,
+          "prons": [{"ipa": "/dəˈrekt; daɪˈrekt/", "senses": [
+            {"pos": "adj.", "mean": "[[直接的]]"},
+            {"pos": "v.", "mean": "[[管理，指导]]；[[指挥]]；把……对准"}
+          ]}],
+          "tip": {"type": "联想", "text": "di（联想“弟”）+ re（字母音似“阿姨”）+ ct（音似“渴特”）→ 弟弟“指导”阿姨跳舞，说话说得特别渴。"},
+          "ex": {"type": "真", "year": 2016, "en": "The food industry has, in general, been firmly opposed to such direct government action.", "zh": "总的来说，食品行业一直坚决反对这种直接行动。", "key": ["direct"]},
+          "ext": [{"word": "director", "ipa": "/dəˈrektə(r); daɪˈrektə(r)/", "senses": [{"pos": "n.", "mean": "导演；董事；负责人，经理"}]}]
+        },
+        {
+          "no": 3, "word": "direction", "freq": 1, "page": 123,
+          "prons": [{"ipa": "/dəˈrekʃn; daɪˈrekʃn/", "senses": [{"pos": "n.", "mean": "[[方向，方位]]；指示"}]}],
+          "tip": {"type": "构词", "text": "direct（指导）+ -ion（名词后缀）→ 方向，方位；指示"},
+          "ex": {"type": "真", "year": 2021, "en": "This research provides a useful direction for organisations.", "zh": "本研究为组织提供有益的指示。", "key": ["direction"]},
+          "ext": []
+        },
+        {
+          "no": 4, "word": "instruct", "freq": 3, "page": 123,
+          "prons": [{"ipa": "/ɪnˈstrʌkt/", "senses": [{"pos": "v.", "mean": "[[命令，指示]]；[[告知]]；传授"}]}],
+          "tip": {"type": "联想", "text": "in（里面）+ struct（音似“死抓个他”）→ 他们在里面死抓着他，“命令”他交出证据。"},
+          "ex": {"type": "例", "en": "You will be instructed where to go when the plane is ready.", "zh": "飞机准备好时，会通知你去何处。", "key": ["instructed"]},
+          "ext": [
+            {"word": "instruction", "ipa": "/ɪnˈstrʌkʃn/", "senses": [{"pos": "n.", "mean": "指示；命令；吩咐"}]},
+            {"word": "instructor", "ipa": "/ɪnˈstrʌktə(r)/", "senses": [{"pos": "n.", "mean": "教练；导师"}]},
+            {"word": "instructive", "ipa": "/ɪnˈstrʌktɪv/", "senses": [{"pos": "adj.", "mean": "富有教益的；增长知识的"}]}
+          ]
+        },
+        {
+          "no": 5, "word": "command", "freq": 2, "page": 123,
+          "prons": [{"ipa": "/kəˈmɑːnd/", "senses": [
+            {"pos": "v.", "mean": "[[指挥]]；[[命令]]；控制"},
+            {"pos": "n.", "mean": "[[指挥]]；命令；指示"}
+          ]}],
+          "tip": {"type": "联想", "text": "com-（所有）+ mand（音似“慢的”）→ 所有速度慢的车都在听他“指挥”。"},
+          "ex": {"type": "例", "en": "He commanded his men to retreat.", "zh": "他命令手下撤退。", "key": ["commanded"]},
+          "ext": [{"word": "commander", "ipa": "/kəˈmɑːndə(r)/", "senses": [{"pos": "n.", "mean": "指挥官；司令官"}]}]
+        },
+        {
+          "no": 6, "word": "military", "freq": 3, "page": 124,
+          "prons": [{"ipa": "/ˈmɪlətri/", "senses": [
+            {"pos": "n.", "mean": "[[军方]]"},
+            {"pos": "adj.", "mean": "[[军事的]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "mili（音似“迷了”）+ tary（音似 tree）→ 他在外面迷了路，发现树下有辆“军方”的车。"},
+          "ex": {"type": "真", "year": 2024, "en": "They told him the military exercise was over.", "zh": "他们告诉他军事演习结束了。", "key": ["military"]},
+          "ext": []
+        },
+        {
+          "no": 7, "word": "enemy", "freq": 1, "page": 124,
+          "prons": [{"ipa": "/ˈenəmi/", "senses": [{"pos": "n.", "mean": "[[敌人]]；敌军；危害物"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“俺的米”→ 俺的米被“敌人”洗劫一空。"},
+          "ex": {"type": "例", "en": "Boredom is the enemy of learning.", "zh": "厌学是学习的大敌。", "key": ["enemy"]},
+          "ext": []
+        },
+        {
+          "no": 8, "word": "forth", "freq": 2, "page": 124,
+          "prons": [{"ipa": "/fɔːθ/", "senses": [{"pos": "adv.", "mean": "[[向前]]"}]}],
+          "tip": {"type": "对照", "text": "fore n.前部，前面 → forth adv."},
+          "ex": {"type": "真", "year": 2016, "en": "Closing post offices is one of several proposals the Postal Service has put forth recently to cut costs.", "zh": "关闭邮局是邮政服务最近为了降低成本提出的几个建议之一。", "key": ["forth"]},
+          "ext": []
+        },
+        {
+          "no": 9, "word": "forthcoming", "freq": 1, "page": 124,
+          "prons": [{"ipa": "/ˌfɔːθˈkʌmɪŋ/", "senses": [{"pos": "adj.", "mean": "[[即将到来的]]；现成；随要随有"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Keep an eye on the noticeboards for forthcoming events.", "zh": "注意布告牌上的活动预告。", "key": ["forthcoming"]},
+          "ext": []
+        },
+        {
+          "no": 10, "word": "forward", "freq": 1, "page": 124,
+          "prons": [{"ipa": "/ˈfɔːwəd/", "senses": [
+            {"pos": "adv.", "mean": "[[向前]]"},
+            {"pos": "adj.", "mean": "[[向前的]]"},
+            {"pos": "v.", "mean": "发送，促进"}
+          ]}],
+          "tip": {"type": "构词", "text": "for(e)（前）+ -ward（表示方向的后缀）→ 向前（的）"},
+          "ex": {"type": "真", "year": 2021, "en": "It is the force that pushes human society forward.", "zh": "它是推动人类社会前进的力量。", "key": ["forward"]},
+          "ext": []
+        },
+        {
+          "no": 11, "word": "forever", "freq": 1, "page": 124,
+          "prons": [{"ipa": "/fərˈevə(r)/", "senses": [{"pos": "adv.", "mean": "[[永远]]；不断地；长久地"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Just keep telling yourself that it won't last forever.", "zh": "要不停地提醒自己，不会一直都是这样的。", "key": ["forever"]},
+          "ext": []
+        },
+        {
+          "no": 12, "word": "foremost", "freq": 1, "page": 124,
+          "prons": [{"ipa": "/ˈfɔːməʊst/", "senses": [
+            {"pos": "adj.", "mean": "[[最先的]]；最重要的"},
+            {"pos": "adv.", "mean": "首先"}
+          ]}],
+          "tip": {"type": "构词", "text": "fore（前）+ most（最）→ 最前面的 → 最先的；最重要的"},
+          "ex": {"type": "例", "en": "I'd like to introduce you to the world's foremost authority on the subject.", "zh": "我想把你介绍给该学科全世界首屈一指的专家。", "key": ["foremost"]},
+          "ext": []
+        },
+        {
+          "no": 13, "word": "foresee", "freq": 1, "page": 124,
+          "prons": [{"ipa": "/fɔːˈsiː/", "senses": [{"pos": "v.", "mean": "[[预见]]，预知"}]}],
+          "tip": {"type": "构词", "text": "fore（前）+ see（看见）→ 提前看见 → 预见"},
+          "ex": {"type": "例", "en": "It is impossible to foresee how life will work out.", "zh": "预知生命将如何发展是不可能的。", "key": ["foresee"]},
+          "ext": [
+            {"word": "foreseeable", "ipa": "/fɔːˈsiːəbl/", "senses": [{"pos": "adj.", "mean": "可预见的；可预知的"}]},
+            {"word": "foresight", "ipa": "/ˈfɔːsaɪt/", "senses": [{"pos": "n.", "mean": "先见之明，预见"}]}
+          ]
+        },
+        {
+          "no": 14, "word": "oversee", "freq": 1, "page": 124,
+          "prons": [{"ipa": "/ˌəʊvəˈsiː/", "senses": [{"pos": "v.", "mean": "[[监督]]；监视"}]}],
+          "tip": {"type": "构词", "text": "over（在上面）+ see（看见）→ 在上面看 → 监督"},
+          "ex": {"type": "例", "en": "United Nations observers oversaw the elections.", "zh": "联合国观察员监督了选举。", "key": ["oversaw"]},
+          "ext": []
+        },
+        {
+          "no": 15, "word": "overhead", "freq": 1, "page": 124,
+          "prons": [
+            {"ipa": "/ˌəʊvəˈhed/", "senses": [
+              {"pos": "adv.", "mean": "[[在头顶上]]"},
+              {"pos": "adj.", "mean": "[[头上方的]]；地面上的"}
+            ]},
+            {"ipa": "/ˈəʊvəhed/", "senses": [{"pos": "n.", "mean": "[[经常性开支]]"}]}
+          ],
+          "tip": {"type": "构词", "text": "over（在上面）+ head（头）→ 在头顶上"},
+          "ex": {"type": "例", "en": "Planes flew overhead constantly.", "zh": "飞机不断从头顶上飞过。", "key": ["overhead"]},
+          "ext": []
+        },
+        {
+          "no": 16, "word": "forecast", "freq": 1, "page": 124,
+          "prons": [{"ipa": "/ˈfɔːkɑːst/", "senses": [{"pos": "v. & n.", "mean": "[[预测]]；预报"}]}],
+          "tip": {"type": "构词", "text": "fore（前）+ cast（投；抛）→ 在事情发生前投出来 → 预测"},
+          "ex": {"type": "例", "en": "The forecast assumes continued improvements in yields.", "zh": "这一预测假设收益会持续提高。", "key": ["forecast"]},
+          "ext": []
+        },
+        {
+          "no": 17, "word": "cast", "freq": 1, "page": 125,
+          "prons": [{"ipa": "/kɑːst/", "senses": [
+            {"pos": "v.", "mean": "[[投]]；[[抛]]；[[投射（光等）]]"},
+            {"pos": "n.", "mean": "投；抛；全体演员"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Someone was standing in the dark shadow cast by the light.", "zh": "有人站在灯光投下的阴影中。", "key": ["cast"]},
+          "ext": []
+        },
+        {
+          "no": 18, "word": "toss", "freq": 1, "page": 125,
+          "prons": [{"ipa": "/tɒs/", "senses": [
+            {"pos": "v.", "mean": "[[扔，抛]]；使摇摆"},
+            {"pos": "n.", "mean": "掷硬币决定；猛抬头"}
+          ]}],
+          "tip": {"type": "对照", "text": "他们掷硬币决定（toss）谁做老板（boss）。"},
+          "ex": {"type": "真", "year": 2019, "en": "How can you predict where the ball you tossed will land?", "zh": "你怎么能预测你扔出的球会落在哪里？", "key": ["tossed"]},
+          "ext": []
+        },
+        {
+          "no": 19, "word": "broadcast", "freq": 2, "page": 125,
+          "prons": [{"ipa": "/ˈbrɔːdkɑːst/", "senses": [
+            {"pos": "v.", "mean": "播送（电视或无线电节目）；[[广播]]；[[散布]]，传播（信息等）"},
+            {"pos": "n.", "mean": "[[广播节目]]；[[电视节目]]"}
+          ]}],
+          "tip": {"type": "构词", "text": "broad（广阔的）+ cast（投）→ 在广阔的地方投放 → 广播；散布；广播节目；电视节目"},
+          "ex": {"type": "真", "year": 2023, "en": "Chase Carey used to serve as a top advisor for a major broadcasting company.", "zh": "蔡斯·凯里曾是一家大型广播公司的首席顾问。", "key": ["broadcasting"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "title": "“雕像、自由”相关",
+      "pages": [125, 126],
+      "map": {
+        "w": "“雕像、自由”相关",
+        "children": [
+          {"w": "statue", "children": [{"w": "status", "rel": "形近"}]},
+          {"w": "liberty", "children": [
+            {"w": "liberate", "rel": "扩", "children": [
+              {"w": "liberation", "rel": "扩", "children": [{"w": "liberal"}]},
+              {"w": "deliberate", "rel": "加de", "children": [{"w": "deliberation", "rel": "扩"}]}
+            ]}
+          ]},
+          {"w": "generous", "children": [
+            {"w": "generosity", "rel": "扩"},
+            {"w": "mean", "rel": "反义", "children": [
+              {"w": "meaning", "rel": "扩", "children": [{"w": "meaningful", "rel": "扩"}]},
+              {"w": "means", "rel": "加s"}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 20, "word": "status", "freq": 2, "page": 125,
+          "prons": [{"ipa": "/ˈsteɪtəs/", "senses": [{"pos": "n.", "mean": "[[法律地位（或身份）]]；地位；职位"}]}],
+          "tip": {"type": "联想", "text": "stat（联想 state）+ us（我们）→ 在我们国家，人人“地位”平等。"},
+          "ex": {"type": "真", "year": 2020, "en": "People's earnings are closely related to people's social status.", "zh": "人们的收入与其社会地位密切相关。", "key": ["status"]},
+          "ext": []
+        },
+        {
+          "no": 21, "word": "statue", "freq": 1, "page": 125,
+          "prons": [{"ipa": "/ˈstætʃuː/", "senses": [{"pos": "n.", "mean": "[[雕像]]，雕塑"}]}],
+          "tip": {"type": "联想", "text": "sta（联想 stay）+ tue（联想 true）→ 那个“雕像”真的一直待在那儿。"},
+          "ex": {"type": "例", "en": "The Statue of Liberty stands above the harbour of New York.", "zh": "自由女神像耸立在纽约港的上空。", "key": ["Statue"]},
+          "ext": []
+        },
+        {
+          "no": 22, "word": "liberty", "freq": 1, "page": 125,
+          "prons": [{"ipa": "/ˈlɪbəti/", "senses": [{"pos": "n.", "mean": "[[自由]]"}]}],
+          "tip": {"type": "联想", "text": "liber（音似“隶搏”）+ -ty（名词后缀）→ 奴隶拼搏是为了“自由”。"},
+          "ex": {"type": "例", "en": "The prisoner was deprived of his civil liberty for three years.", "zh": "该囚犯被剥夺公民自由长达三年。", "key": ["liberty"]},
+          "ext": []
+        },
+        {
+          "no": 23, "word": "liberate", "freq": 1, "page": 125,
+          "prons": [{"ipa": "/ˈlɪbəreɪt/", "senses": [{"pos": "v.", "mean": "[[使自由]]；[[解放]]；使摆脱约束（或限制）"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Writing poetry liberated her from the routine of everyday life.", "zh": "写诗使她从日常生活的例行公事中解放出来。", "key": ["liberated"]},
+          "ext": [{"word": "liberation", "ipa": "/ˌlɪbəˈreɪʃn/", "senses": [{"pos": "n.", "mean": "释放，解放"}]}]
+        },
+        {
+          "no": 24, "word": "liberal", "freq": 3, "page": 125,
+          "prons": [{"ipa": "/ˈlɪbərəl/", "senses": [
+            {"pos": "adj.", "mean": "[[自由的，开明的]]；慷慨的；丰富的"},
+            {"pos": "n.", "mean": "开明人士"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "I had quite liberal parents.", "zh": "我的父母思想很开明。", "key": ["liberal"]},
+          "ext": []
+        },
+        {
+          "no": 25, "word": "deliberate", "freq": 2, "page": 125,
+          "prons": [
+            {"ipa": "/dɪˈlɪbərət/", "senses": [{"pos": "adj.", "mean": "[[故意的]]；[[深思熟虑的]]"}]},
+            {"ipa": "/dɪˈlɪbəreɪt/", "senses": [{"pos": "v.", "mean": "[[仔细考虑，深思熟虑]]"}]}
+          ],
+          "tip": {"type": "联想", "text": "de（联想“弟”）+ liberate（使自由）→ 弟弟经过“深思熟虑”，决定还那只小鸟自由。"},
+          "ex": {"type": "例", "en": "See if there was a deliberate cover-up of the problem.", "zh": "看看是否有人故意掩盖问题。", "key": ["deliberate"]},
+          "ext": [{"word": "deliberation", "ipa": "/dɪˌlɪbəˈreɪʃn/", "senses": [{"pos": "n.", "mean": "细想，考虑；从容"}]}]
+        },
+        {
+          "no": 26, "word": "generous", "freq": 3, "page": 126,
+          "prons": [{"ipa": "/ˈdʒenərəs/", "senses": [{"pos": "adj.", "mean": "[[慷慨的]]，大方的；丰富的"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“姐弄肉丝”→ 我去姐姐家做客，“慷慨的”她炒了一大盘鱼香肉丝。"},
+          "ex": {"type": "真", "year": 2022, "en": "Oh, and they'd give me two months of paid vacation with a very generous salary.", "zh": "哦，他们还会给我两个月的带薪假期，薪水很丰厚。", "key": ["generous"]},
+          "ext": [{"word": "generosity", "ipa": "/ˌdʒenəˈrɒsəti/", "senses": [{"pos": "n.", "mean": "慷慨；大方"}]}]
+        },
+        {
+          "no": 27, "word": "mean", "freq": 1, "page": 126,
+          "prons": [{"ipa": "/miːn/", "senses": [
+            {"pos": "v.", "mean": "原意为；意味"},
+            {"pos": "adj.", "mean": "[[吝啬的]]；[[卑鄙的，不善良的]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "me（音似“米”）+ an（一）→ 她说我只请她吃了一碗米饭，是个“吝啬的”人。"},
+          "ex": {"type": "例", "en": "It doesn't mean it's all good news for future food.", "zh": "这并不意味着这对未来的食品来说都是好消息。", "key": ["mean"]},
+          "ext": [
+            {"word": "meaning", "ipa": "/ˈmiːnɪŋ/", "senses": [{"pos": "n.", "mean": "意思，意义"}]},
+            {"word": "meaningful", "ipa": "/ˈmiːnɪŋfl/", "senses": [{"pos": "adj.", "mean": "有意义的；重要的；意味深长的"}]}
+          ]
+        },
+        {
+          "no": 28, "word": "means", "freq": 1, "page": 126,
+          "prons": [{"ipa": "/miːnz/", "senses": [{"pos": "n.", "mean": "[[方式]]；[[方法]]；手段；途径"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "There are various means the consumers may use to gain satisfaction.", "zh": "消费者可以使用各种方式来获得满足。", "key": ["means"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "title": "“作者”相关",
+      "pages": [126, 127],
+      "map": {
+        "w": "“作者”相关",
+        "children": [
+          {"w": "authority", "children": [
+            {"w": "authoritative", "rel": "扩"},
+            {"w": "authorise", "rel": "扩"},
+            {"w": "authorisation", "rel": "扩"}
+          ]},
+          {"w": "authentic", "children": [
+            {"w": "authenticity", "rel": "扩"},
+            {"w": "sincere", "rel": "相关", "children": [
+              {"w": "sincerely", "rel": "扩", "children": [{"w": "sincerity"}]}
+            ]},
+            {"w": "genuine", "rel": "相关", "children": [
+              {"w": "genius", "rel": "同根", "children": [{"w": "elite", "rel": "相关"}]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 29, "word": "author", "freq": 1, "page": 126,
+          "prons": [{"ipa": "/ˈɔːθə(r)/", "senses": [{"pos": "n.", "mean": "[[作家，作者]]；创造者，发起人"}]}],
+          "tip": {"type": "联想", "text": "au（音似“傲”）+ thor（音似 sir）→ 那位骄傲的先生是个“作家”。"},
+          "ex": {"type": "例", "en": "The criticism the author received from his readers changed him.", "zh": "作者从读者那里受到的批评改变了他。", "key": ["author"]},
+          "ext": []
+        },
+        {
+          "no": 30, "word": "authority", "freq": 1, "page": 126,
+          "prons": [{"ipa": "/ɔːˈθɒrəti/", "senses": [{"pos": "n.", "mean": "[[专家]]；[[权威]]；[[许可，授权]]；当局"}]}],
+          "tip": {"type": "对照", "text": "作家（author）就是自己作品的创造者，也是权威（authority）。"},
+          "ex": {"type": "真", "year": 2017, "en": "Decentralisation of authority was also found to be more effective in military operations.", "zh": "权力下放也被发现在军事行动中更为有效。", "key": ["authority"]},
+          "ext": [
+            {"word": "authoritative", "ipa": "/ɔːˈθɒrətətɪv/", "senses": [{"pos": "adj.", "mean": "命令式的；权威性的"}]},
+            {"word": "authorise", "alt": "-ize", "ipa": "/ˈɔːθəraɪz/", "senses": [{"pos": "v.", "mean": "批准，许可，授权"}]},
+            {"word": "authorisation", "alt": "-ization", "ipa": "/ˌɔːθəraɪˈzeɪʃn/", "senses": [{"pos": "n.", "mean": "批准；授权"}]}
+          ]
+        },
+        {
+          "no": 31, "word": "authentic", "freq": 2, "page": 126,
+          "prons": [{"ipa": "/ɔːˈθentɪk/", "senses": [{"pos": "adj.", "mean": "[[真正的，真实的]]；[[可靠的]]"}]}],
+          "tip": {"type": "对照", "text": "关于作品的中心思想，原作者（author）的观点才是真实的、可靠的（authentic）。"},
+          "ex": {"type": "真", "year": 2021, "en": "But sharing our experiences in an authentic way to connect with other people is what makes us interesting.", "zh": "但是以一种真实的方式分享我们的经历以便与他人建立联系，可以让我们变得有趣。", "key": ["authentic"]},
+          "ext": [{"word": "authenticity", "ipa": "/ˌɔːθenˈtɪsəti/", "senses": [{"pos": "n.", "mean": "真实性；确实性"}]}]
+        },
+        {
+          "no": 32, "word": "sincere", "freq": 2, "page": 127,
+          "prons": [{"ipa": "/sɪnˈsɪə(r)/", "senses": [{"pos": "adj.", "mean": "[[诚挚的，真诚的]]，诚恳的"}]}],
+          "tip": {"type": "联想", "text": "since（自从）+ re（字母音似“阿姨”）→ 自从遇见这位阿姨，这个小孩变成一个“真诚的”人了。"},
+          "ex": {"type": "真", "year": 2021, "en": "He wanted to make a sincere apology to Jimmy.", "zh": "他想向吉米真诚地道歉。", "key": ["sincere"]},
+          "ext": [
+            {"word": "sincerely", "ipa": "/sɪnˈsɪəli/", "senses": [{"pos": "adv.", "mean": "真诚地；诚实地"}]},
+            {"word": "sincerity", "ipa": "/sɪnˈserəti/", "senses": [{"pos": "n.", "mean": "真诚，诚实"}]}
+          ]
+        },
+        {
+          "no": 33, "word": "genuine", "freq": 2, "page": 127,
+          "prons": [{"ipa": "/ˈdʒenjuɪn/", "senses": [{"pos": "adj.", "mean": "[[真正的]]；真诚的，真挚的"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“姐牛”→ 姐姐很专业，是“真正的”牛人。"},
+          "ex": {"type": "真", "year": 2021, "en": "It may prevent people from developing a genuine sense of community.", "zh": "它可能会阻碍人们形成真正的社区意识。", "key": ["genuine"]},
+          "ext": []
+        },
+        {
+          "no": 34, "word": "genius", "freq": 1, "page": 127,
+          "prons": [{"ipa": "/ˈdʒiːniəs/", "senses": [{"pos": "n.", "mean": "[[天才]]；[[天赋]]；才能，本领"}]}],
+          "tip": {"type": "联想", "text": "ge（联想“哥”）+ nius（音似“牛死”）→ 哥哥是个非常厉害的牛人，人称“天才”。"},
+          "ex": {"type": "例", "en": "I had heard that genius could show itself at an early age.", "zh": "我听说天赋在很小的时候就能表现出来。", "key": ["genius"]},
+          "ext": []
+        },
+        {
+          "no": 35, "word": "elite", "freq": 1, "page": 127,
+          "prons": [{"ipa": "/eɪˈliːt; ɪˈliːt/", "senses": [
+            {"pos": "n.", "mean": "[[精英]]；上层人士"},
+            {"pos": "adj.", "mean": "[[杰出的]]；精英的"}
+          ]}],
+          "tip": {"type": "联想", "text": "e-（向外，出）+ lite（音似“离他”）→ 他走出去离开父母，努力拼搏，成了“精英”。"},
+          "ex": {"type": "例", "en": "Students in elite school districts have gained attention in recent years.", "zh": "近年来，精英学区的学生受到了关注。", "key": ["elite"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "title": "pre/super 相关",
+      "pages": [127, 128],
+      "map": {
+        "w": "pre/super 相关",
+        "children": [
+          {"w": "previous", "children": [
+            {"w": "prior", "rel": "近义", "children": [{"w": "priority", "rel": "扩"}]}
+          ]},
+          {"w": "super", "children": [
+            {"w": "superior", "rel": "加ior", "children": [
+              {"w": "superiority", "rel": "扩"},
+              {"w": "inferior", "rel": "反义", "children": [{"w": "inferiority", "rel": "扩"}]}
+            ]},
+            {"w": "superb", "rel": "加b"},
+            {"w": "supreme", "rel": "变er", "children": [{"w": "supremacy", "rel": "扩"}]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 36, "word": "previous", "freq": 3, "page": 127,
+          "prons": [{"ipa": "/ˈpriːviəs/", "senses": [{"pos": "adj.", "mean": "[[先前的，以往的]]；（时间上）稍前的"}]}],
+          "tip": {"type": "构词", "text": "pre-（前面）+ vi（= way）+ -ous（形容词后缀）→ 走在前面的 → 先前的，以往的"},
+          "ex": {"type": "真", "year": 2017, "en": "The majority of previous research has focused on how we learn and remember new information.", "zh": "大部分之前的研究侧重于我们如何学习和记忆新信息。", "key": ["previous"]},
+          "ext": []
+        },
+        {
+          "no": 37, "word": "prior", "freq": 3, "page": 127,
+          "prons": [{"ipa": "/ˈpraɪə(r)/", "senses": [{"pos": "adj.", "mean": "[[先前的]]；[[较早的]]；[[优先的]]；[[较重要的]]"}]}],
+          "tip": {"type": "联想", "text": "pri（联想 pre-，前面）+ -or（后缀）→ 先前的；较早的"},
+          "ex": {"type": "真", "year": 2024, "en": "Absorbing new information is helpful in making better decisions prior to action.", "zh": "吸收新信息有助于在行动前做出更好的决定。", "key": ["prior"]},
+          "ext": []
+        },
+        {
+          "no": 38, "word": "priority", "freq": 3, "page": 127,
+          "prons": [{"ipa": "/praɪˈɒrəti/", "senses": [{"pos": "n.", "mean": "[[优先，优先权]]；优先事项"}]}],
+          "tip": {"type": "构词", "text": "prior（优先的）+ -ity（名词后缀）→ 优先，优先权"},
+          "ex": {"type": "真", "year": 2019, "en": "After mail service stops due to weather, the agency's top priority is ensuring that employees are safe.", "zh": "因天气原因暂停邮政服务后，该机构的首要任务是确保员工的安全。", "key": ["priority"]},
+          "ext": []
+        },
+        {
+          "no": 39, "word": "inferior", "freq": 1, "page": 127,
+          "prons": [{"ipa": "/ɪnˈfɪəriə(r)/", "senses": [{"pos": "adj.", "mean": "[[差的]]；[[劣等的]]；下级的"}]}],
+          "tip": {"type": "联想", "text": "in（里面）+ fer（音似“废”）+ -ior（形容词后缀）→ 一个人内在是颓废，那精神状态就是“差的”。"},
+          "ex": {"type": "例", "en": "Modern music is often considered inferior to that of the past.", "zh": "现代音乐常被认为不如过去的。", "key": ["inferior"]},
+          "ext": []
+        },
+        {
+          "no": 40, "word": "inferiority", "freq": 1, "page": 128,
+          "prons": [{"ipa": "/ɪnˌfɪəriˈɒrəti/", "senses": [{"pos": "n.", "mean": "[[低等]]；[[劣等]]；[[劣势]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The enemy forces were reduced to absolute inferiority.", "zh": "敌军已处于绝对劣势。", "key": ["inferiority"]},
+          "ext": []
+        },
+        {
+          "no": 41, "word": "super", "freq": 2, "page": 128,
+          "prons": [{"ipa": "/ˈsuːpə(r)/", "senses": [
+            {"pos": "adj.", "mean": "[[极好的]]，[[超级的]]"},
+            {"pos": "adv.", "mean": "特别"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "We had a super time in Italy.", "zh": "我们在意大利过得十分惬意。", "key": ["super"]},
+          "ext": []
+        },
+        {
+          "no": 42, "word": "superior", "freq": 2, "page": 128,
+          "prons": [{"ipa": "/suːˈpɪəriə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[级别（或地位、职位）更高的人，上级]]"},
+            {"pos": "adj.", "mean": "[[更高级的]]；更好的"}
+          ]}],
+          "tip": {"type": "构词", "text": "super（在……上 → 超越）+ -ior（后缀）→ 上级；更高级的"},
+          "ex": {"type": "真", "year": 2017, "en": "They feel superior in science and technology.", "zh": "他们觉得自己在科学技术上更胜一筹。", "key": ["superior"]},
+          "ext": []
+        },
+        {
+          "no": 43, "word": "superiority", "freq": 1, "page": 128,
+          "prons": [{"ipa": "/suːˌpɪəriˈɒrəti/", "senses": [{"pos": "n.", "mean": "[[优势]]；优越性"}]}],
+          "tip": {"type": "构词", "text": "superior（更好的）+ -ity（名词后缀）→ 优势；优越性"},
+          "ex": {"type": "例", "en": "They tend to have a sense of superiority over their peers.", "zh": "他们往往比同龄人更有优越感。", "key": ["superiority"]},
+          "ext": []
+        },
+        {
+          "no": 44, "word": "superb", "freq": 1, "page": 128,
+          "prons": [{"ipa": "/suːˈpɜːb/", "senses": [{"pos": "adj.", "mean": "[[极佳的，卓越的]]；质量极高的"}]}],
+          "tip": {"type": "联想", "text": "super（超越）+ b（音似“不”）→ 不能再超越了 → 极佳的，卓越的"},
+          "ex": {"type": "例", "en": "His artistic taste is superb.", "zh": "他的艺术品位极好。", "key": ["superb"]},
+          "ext": []
+        },
+        {
+          "no": 45, "word": "supreme", "freq": 2, "page": 128,
+          "prons": [{"ipa": "/suˈpriːm/", "senses": [{"pos": "adj.", "mean": "[[最高的]]，[[至高无上的]]；最大的"}]}],
+          "tip": {"type": "联想", "text": "supre（联想 super，极好的）+ me（我）→ 极好的我要向“最高的”目标迈进。"},
+          "ex": {"type": "例", "en": "The Supreme Court has delivered its opinion in a controversial case.", "zh": "最高法院对一个有争议的案件发表了意见。", "key": ["Supreme"]},
+          "ext": [{"word": "supremacy", "ipa": "/suˈpreməsi/", "senses": [{"pos": "n.", "mean": "至高无上；最大权力；最高地位"}]}]
+        }
+      ]
+    },
+    {
+      "no": 5,
+      "title": "“交流、联系”相关",
+      "pages": [128, 130],
+      "map": {
+        "w": "“交流、联系”相关",
+        "children": [
+          {"w": "communicate", "children": [
+            {"w": "communicative", "rel": "扩", "children": [
+              {"w": "communication", "children": [{"w": "telecommunications", "rel": "相关"}]}
+            ]},
+            {"w": "mutual", "rel": "相关", "children": [
+              {"w": "message", "children": [{"w": "messenger", "rel": "扩"}]}
+            ]},
+            {"w": "community", "rel": "形近", "children": [
+              {"w": "block", "rel": "相关", "children": [
+                {"w": "neighbourhood", "children": [{"w": "neighbour", "rel": "扩"}]}
+              ]}
+            ]},
+            {"w": "commune", "rel": "形近", "children": [
+              {"w": "communist", "rel": "扩", "children": [{"w": "communism"}]},
+              {"w": "commute", "rel": "形近", "children": [{"w": "commuter", "rel": "扩"}]}
+            ]}
+          ]},
+          {"w": "associate", "children": [
+            {"w": "association", "rel": "扩"},
+            {"w": "ally", "rel": "相关", "children": [
+              {"w": "alliance", "rel": "扩"},
+              {"w": "rally", "rel": "加r"}
+            ]},
+            {"w": "sociable", "rel": "相关", "children": [
+              {"w": "society", "rel": "扩", "children": [
+                {"w": "social", "children": [
+                  {"w": "socialise", "children": [
+                    {"w": "socialism", "children": [{"w": "socialist"}]}
+                  ]}
+                ]}
+              ]},
+              {"w": "easy-going", "rel": "相关"},
+              {"w": "network", "children": [
+                {"w": "networking", "rel": "扩"},
+                {"w": "cyberspace", "rel": "相关", "children": [{"w": "hack"}]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 46, "word": "communicate", "freq": 2, "page": 129,
+          "prons": [{"ipa": "/kəˈmjuːnɪkeɪt/", "senses": [{"pos": "v.", "mean": "[[交流，沟通]]；相通"}]}],
+          "tip": {"type": "对照", "text": "我们通过联通（united communications）与大家沟通（communicate）。"},
+          "ex": {"type": "例", "en": "This is a family who can't communicate with each other.", "zh": "这是一个成员间彼此无法沟通的家庭。", "key": ["communicate"]},
+          "ext": [
+            {"word": "communication", "ipa": "/kəˌmjuːnɪˈkeɪʃn/", "senses": [{"pos": "n.", "mean": "传达；交流；信息；交通联系，通信"}]},
+            {"word": "communicative", "ipa": "/kəˈmjuːnɪkətɪv/", "senses": [{"pos": "adj.", "mean": "乐意沟通的；语言交际能力的"}]}
+          ]
+        },
+        {
+          "no": 47, "word": "mutual", "freq": 1, "page": 129,
+          "prons": [{"ipa": "/ˈmjuːtʃuəl/", "senses": [{"pos": "adj.", "mean": "[[相互的，彼此的]]；共有的，共同的"}]}],
+          "tip": {"type": "联想", "text": "mu（联想“木”）+ tu（联想“土”）+ -al（形容词后缀）→ 木克土 → “五行学说”研究事物之间“相互的”关系。"},
+          "ex": {"type": "真", "year": 2015, "en": "They shared mutual friends in school.", "zh": "他们在学校有共同的朋友。", "key": ["mutual"]},
+          "ext": []
+        },
+        {
+          "no": 48, "word": "telecommunications", "freq": 1, "page": 129,
+          "prons": [{"ipa": "/ˌtelikəˌmjuːnɪˈkeɪʃnz/", "senses": [{"pos": "n.", "mean": "[[电信]]；电讯"}]}],
+          "tip": {"type": "构词", "text": "tele-（电）+ communications（通信）→ 电信；电讯"},
+          "ex": {"type": "例", "en": "Mobile telecommunications capacity is expected to double in Shanghai this year.", "zh": "今年，上海的移动通信容量预计将翻一番。", "key": ["telecommunications"]},
+          "ext": []
+        },
+        {
+          "no": 49, "word": "message", "freq": 1, "page": 129,
+          "prons": [{"ipa": "/ˈmesɪdʒ/", "senses": [
+            {"pos": "n.", "mean": "（书面或口头的）[[信息，消息]]"},
+            {"pos": "v.", "mean": "向（某人）传送（电子信息）"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2016, "en": "He called the woman and left her a message.", "zh": "他打电话给那个女人，给她留了个信息。", "key": ["message"]},
+          "ext": [{"word": "messenger", "ipa": "/ˈmesɪndʒə(r)/", "senses": [{"pos": "n.", "mean": "送信人；邮递员"}]}]
+        },
+        {
+          "no": 50, "word": "community", "freq": 1, "page": 129,
+          "prons": [{"ipa": "/kəˈmjuːnəti/", "senses": [{"pos": "n.", "mean": "[[社区]]；社会；群体；界"}]}],
+          "tip": {"type": "对照", "text": "交流（communication）常在一个社区（community）中进行。"},
+          "ex": {"type": "例", "en": "Since then, she has formed a new community of people.", "zh": "从那以后，她建立了一个新的社群。", "key": ["community"]},
+          "ext": []
+        },
+        {
+          "no": 51, "word": "commune", "freq": 1, "page": 129,
+          "prons": [
+            {"ipa": "/ˈkɒmjuːn/", "senses": [{"pos": "n.", "mean": "[[群体]]；[[公社]]"}]},
+            {"ipa": "/kəˈmjuːn/", "senses": [{"pos": "v.", "mean": "[[亲密交谈]]"}]}
+          ],
+          "tip": {"type": "对照", "text": "community n.社区；群体 → commune n. & v."},
+          "ex": {"type": "例", "en": "Mack lived in a commune.", "zh": "麦克生活在一个群体里。", "key": ["commune"]},
+          "ext": [
+            {"word": "communist", "ipa": "/ˈkɒmjənɪst/", "senses": [
+              {"pos": "n.", "mean": "共产主义者；共产党党员"},
+              {"pos": "adj.", "mean": "共产党的；共产主义者的"}
+            ]},
+            {"word": "communism", "ipa": "/ˈkɒmjənɪzəm/", "senses": [{"pos": "n.", "mean": "共产主义"}]}
+          ]
+        },
+        {
+          "no": 52, "word": "commute", "freq": 2, "page": 129,
+          "prons": [{"ipa": "/kəˈmjuːt/", "senses": [
+            {"pos": "v.", "mean": "[[通勤]]，[[上下班往返]]"},
+            {"pos": "n.", "mean": "上下班路程"}
+          ]}],
+          "tip": {"type": "联想", "text": "com-（所有）+ mu（联想“母”）+ te（音似“他”）→ 所有的母亲和他都需要“通勤”。"},
+          "ex": {"type": "真", "year": 2016, "en": "He commutes by subway.", "zh": "他乘地铁上下班。", "key": ["commutes"]},
+          "ext": [{"word": "commuter", "ipa": "/kəˈmjuːtə(r)/", "senses": [{"pos": "n.", "mean": "（远距离）上下班往返的人"}]}]
+        },
+        {
+          "no": 53, "word": "neighbourhood", "alt": "neighborhood", "freq": 1, "page": 129,
+          "prons": [{"ipa": "/ˈneɪbəhʊd/", "senses": [{"pos": "n.", "mean": "[[街坊，四邻]]；[[街道]]；[[附近地区]]，邻近"}]}],
+          "tip": {"type": "构词", "text": "neighbo(u)r（邻居）+ -hood（名词后缀）→ 街坊；附近地区"},
+          "ex": {"type": "例", "en": "You can walk in parks or in your neighbourhood.", "zh": "你可以在公园里或附近地区散步。", "key": ["neighbourhood"]},
+          "ext": [{"word": "neighbour", "alt": "neighbor", "ipa": "/ˈneɪbə(r)/", "senses": [{"pos": "n.", "mean": "邻居"}]}]
+        },
+        {
+          "no": 54, "word": "block", "freq": 1, "page": 129,
+          "prons": [{"ipa": "/blɒk/", "senses": [
+            {"pos": "n.", "mean": "[[木块]]；[[街区]]；[[障碍物]]"},
+            {"pos": "v.", "mean": "[[妨碍，阻塞]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“不唠嗑”→ 他俩不唠嗑了，因为有人“妨碍”他们交流。"},
+          "ex": {"type": "真", "year": 2018, "en": "Japan says fear of disease is its main reason to block fresh imports.", "zh": "日本表示，对疾病的恐惧是其阻止生鲜进口的主要原因。", "key": ["block"]},
+          "ext": []
+        },
+        {
+          "no": 55, "word": "associate", "freq": 3, "page": 129,
+          "prons": [
+            {"ipa": "/əˈsəʊʃieɪt/", "senses": [{"pos": "v.", "mean": "[[联想]]；[[联系]]；交往"}]},
+            {"ipa": "/əˈsəʊʃiət/", "senses": [{"pos": "n.", "mean": "[[同事]]；[[伙伴]]；合伙人"}]}
+          ],
+          "tip": {"type": "联想", "text": "as-（一再地）+ so（如此）+ ci（音似“吸”）+ -ate（后缀）→ 一再地如此吸在一起 → 联系"},
+          "ex": {"type": "例", "en": "Blue is associated with the positive qualities of trust, quietness and calm.", "zh": "蓝色与信任、安静和冷静等积极的品质有关。", "key": ["associated", "with"]},
+          "ext": [{"word": "association", "ipa": "/əˌsəʊʃiˈeɪʃn/", "senses": [{"pos": "n.", "mean": "协会；联系"}]}]
+        },
+        {
+          "no": 56, "word": "sociable", "freq": 1, "page": 130,
+          "prons": [{"ipa": "/ˈsəʊʃəbl/", "senses": [{"pos": "adj.", "mean": "[[好交际的]]，友善的"}]}],
+          "tip": {"type": "对照", "text": "好交际的（sociable）人会熟知很多有关社会（society）的规则。"},
+          "ex": {"type": "例", "en": "Being sociable looks like a good way to add years to your life.", "zh": "善于交际似乎是延长寿命的好方法。", "key": ["sociable"]},
+          "ext": [
+            {"word": "society", "ipa": "/səˈsaɪəti/", "senses": [{"pos": "n.", "mean": "社会；团体，协会"}]},
+            {"word": "social", "ipa": "/ˈsəʊʃl/", "senses": [
+              {"pos": "adj.", "mean": "社交的；社会的；群居的；合群的"},
+              {"pos": "n.", "mean": "社交；联欢会"}
+            ]},
+            {"word": "socialise", "alt": "-ize", "ipa": "/ˈsəʊʃəlaɪz/", "senses": [{"pos": "v.", "mean": "交往，交际"}]},
+            {"word": "socialism", "ipa": "/ˈsəʊʃəlɪzəm/", "senses": [{"pos": "n.", "mean": "社会主义"}]},
+            {"word": "socialist", "ipa": "/ˈsəʊʃəlɪst/", "senses": [
+              {"pos": "adj.", "mean": "社会主义的；社会党的"},
+              {"pos": "n.", "mean": "社会主义者；社会党党员"}
+            ]}
+          ]
+        },
+        {
+          "no": 57, "word": "easy-going", "freq": 1, "page": 130,
+          "prons": [{"ipa": "/ˌiːzi ˈɡəʊɪŋ/", "senses": [{"pos": "adj.", "mean": "悠闲的；[[随和的]]；不慌不忙的"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Frankly, Mary is not what I'd call \"easy-going\".", "zh": "坦率地说，玛丽不是我所称的“随和的”人。", "key": ["easy-going"]},
+          "ext": []
+        },
+        {
+          "no": 58, "word": "ally", "freq": 1, "page": 130,
+          "prons": [
+            {"ipa": "/ˈælaɪ/", "senses": [{"pos": "n.", "mean": "同盟国；[[盟友]]，伙伴"}]},
+            {"ipa": "/əˈlaɪ; ˈælaɪ/", "senses": [{"pos": "v.", "mean": "（使）[[联盟]]，（使）联合"}]}
+          ],
+          "tip": {"type": "谐音", "text": "单词发音类似“艾丽”→ 艾丽是我的“盟友”。"},
+          "ex": {"type": "例", "en": "He had no choice but to ally himself with the new movement.", "zh": "他除了与新运动结盟别无选择。", "key": ["ally"]},
+          "ext": [{"word": "alliance", "ipa": "/əˈlaɪəns/", "senses": [{"pos": "n.", "mean": "（国家、政党等的）结盟，联盟，同盟"}]}]
+        },
+        {
+          "no": 59, "word": "rally", "freq": 1, "page": 130,
+          "prons": [{"ipa": "/ˈræli/", "senses": [
+            {"pos": "v.", "mean": "[[集合]]，重新振作"},
+            {"pos": "n.", "mean": "[[集会]]；公路汽车赛"}
+          ]}],
+          "tip": {"type": "对照", "text": "他让盟友（ally）集合（rally）起来。"},
+          "ex": {"type": "例", "en": "He will join the team at the rally next week.", "zh": "他将在下周的集会上加入该队。", "key": ["rally"]},
+          "ext": []
+        },
+        {
+          "no": 60, "word": "network", "freq": 1, "page": 130,
+          "prons": [{"ipa": "/ˈnetwɜːk/", "senses": [
+            {"pos": "n.", "mean": "[[网络]]；[[关系网]]；广播网；电视网"},
+            {"pos": "v.", "mean": "将……连接成网络"}
+          ]}],
+          "tip": {"type": "对照", "text": "Internet n.因特网 → net n.网 → network n. & v."},
+          "ex": {"type": "真", "year": 2019, "en": "But having a large network and some promotional skills may be more crucial.", "zh": "但拥有一个庞大的网络和一些促销技巧可能更为重要。", "key": ["network"]},
+          "ext": [{"word": "networking", "ipa": "/ˈnetwɜːkɪŋ/", "senses": [{"pos": "n.", "mean": "人际关系网"}]}]
+        },
+        {
+          "no": 61, "word": "cyberspace", "freq": 1, "page": 130,
+          "prons": [{"ipa": "/ˈsaɪbəspeɪs/", "senses": [{"pos": "n.", "mean": "[[网络空间]]"}]}],
+          "tip": {"type": "联想", "text": "cyber（音似“赛博”）+ space（空间）→ 互联网上常说的赛博空间即“网络空间”。"},
+          "ex": {"type": "例", "en": "Students are discovering the endless amount of information in cyberspace.", "zh": "学生正在网络空间里探索无穷尽的信息。", "key": ["cyberspace"]},
+          "ext": []
+        },
+        {
+          "no": 62, "word": "hack", "freq": 1, "page": 130,
+          "prons": [{"ipa": "/hæk/", "senses": [{"pos": "v.", "mean": "[[劈，砍]]；[[非法侵入（他人计算机系统）]]"}]}],
+          "tip": {"type": "对照", "text": "计算机黑客（hacker）非法侵入（hack）了他的电脑。"},
+          "ex": {"type": "例", "en": "The order asks them to hack their own devices.", "zh": "该命令要求他们入侵自己的设备。", "key": ["hack"]},
+          "ext": []
+        }
+      ]
+    }
+  ]
+}

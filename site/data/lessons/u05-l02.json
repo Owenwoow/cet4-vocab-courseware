@@ -1,0 +1,675 @@
+{
+  "id": "u05-l02",
+  "part": 1,
+  "unit": 5,
+  "lesson": 2,
+  "pages": [131, 138],
+  "groups": [
+    {
+      "no": 6,
+      "title": "rat 相关",
+      "pages": [131, 132],
+      "map": {"w": "rat 相关", "children": [
+        {"w": "democratic", "children": [{"w": "democracy", "rel": "扩", "children": [{"w": "democrat"}]}]},
+        {"w": "generate", "children": [
+          {"w": "generator", "rel": "扩", "children": [{"w": "generation"}]},
+          {"w": "general", "rel": "te变l", "children": [
+            {"w": "generally", "rel": "扩", "children": [{"w": "generalise"}]},
+            {"w": "strategy", "rel": "相关", "children": [{"w": "strategic", "rel": "扩"}]}
+          ]}
+        ]},
+        {"w": "scratch", "children": [
+          {"w": "sketch", "rel": "音近", "children": [{"w": "sketchy", "rel": "扩"}]},
+          {"w": "pinch", "rel": "相关"},
+          {"w": "claw", "rel": "近义", "children": [{"w": "flaw", "rel": "形近", "children": [{"w": "flawless", "rel": "扩"}]}]}
+        ]}
+      ]},
+      "entries": [
+        {
+          "no": 1, "word": "democratic", "freq": 2, "page": 131,
+          "prons": [{"ipa": "/ˌdeməˈkrætɪk/", "senses": [{"pos": "adj.", "mean": "[[民主的]]；有民主精神的"}]}],
+          "tip": {"type": "联想", "text": "demo（音似“戴帽”）+ c（联想“可”）+ rat（老鼠）+ ic（联想“IC 卡”）→ 动画片里，戴帽子的老鼠可以刷 IC 卡坐公交车，这是个多么“民主的”社会啊！"},
+          "ex": {"type": "例", "en": "He is a member of the Democratic Party.", "zh": "他是民主党的成员。", "key": ["Democratic"]},
+          "ext": [
+            {"word": "democracy", "ipa": "/dɪˈmɒkrəsi/", "senses": [{"pos": "n.", "mean": "民主"}]},
+            {"word": "democrat", "ipa": "/ˈdeməkræt/", "senses": [{"pos": "n.", "mean": "（美国）民主党党员，民主党人，民主党支持者"}]}
+          ]
+        },
+        {
+          "no": 2, "word": "generate", "freq": 3, "page": 131,
+          "prons": [{"ipa": "/ˈdʒenəreɪt/", "senses": [{"pos": "v.", "mean": "[[产生]]；[[生产]]；[[引起]]"}]}],
+          "tip": {"type": "联想", "text": "gene（基因）+ rat（老鼠）+ e → 老鼠的基因使它“生产”后代的能力很强。"},
+          "ex": {"type": "真", "year": 2021, "en": "It generates a great deal of electronic garbage.", "zh": "它会产生大量的电子垃圾。", "key": ["generates"]},
+          "ext": [{"word": "generator", "ipa": "/ˈdʒenəreɪtə(r)/", "senses": [{"pos": "n.", "mean": "发电机；电力公司"}]}]
+        },
+        {
+          "no": 3, "word": "generation", "freq": 1, "page": 131,
+          "prons": [{"ipa": "/ˌdʒenəˈreɪʃn/", "senses": [{"pos": "n.", "mean": "[[一代，一代人]]；[[产生]]"}]}],
+          "tip": {"type": "对照", "text": "每一代人（generation）都是由上一代产生（generate）出来的。"},
+          "ex": {"type": "真", "year": 2023, "en": "Lion dance should be handed down to future generations as part of Chinese culture.", "zh": "舞狮应该作为中国文化的一部分传承给子孙后代。", "key": ["generations"]},
+          "ext": []
+        },
+        {
+          "no": 4, "word": "general", "freq": 1, "page": 131,
+          "prons": [{"ipa": "/ˈdʒenrəl/", "senses": [
+            {"pos": "adj.", "mean": "[[普通的；一般的]]"},
+            {"pos": "n.", "mean": "将军"}
+          ]}],
+          "tip": {"type": "联想", "text": "gene（基因）+ r（联想“人”）+ al（联想 all）→ 所有人都有的基因是很“普通的”。"},
+          "ex": {"type": "真", "year": 2023, "en": "General farm management can go a long way toward easing changes.", "zh": "一般的农场管理可以在很大程度上缓解变化。", "key": ["General"]},
+          "ext": [
+            {"word": "generally", "ipa": "/ˈdʒenrəli/", "senses": [{"pos": "adv.", "mean": "一般地；通常地"}]},
+            {"word": "generalise", "alt": "-ize", "ipa": "/ˈdʒenrəlaɪz/", "senses": [{"pos": "v.", "mean": "概括；普及"}]}
+          ]
+        },
+        {
+          "no": 5, "word": "strategy", "freq": 3, "page": 131,
+          "prons": [{"ipa": "/ˈstrætədʒi/", "senses": [{"pos": "n.", "mean": "[[策略]]；行动计划；战略"}]}],
+          "tip": {"type": "联想", "text": "st（联想 street）+ rat（老鼠）+ egy → 对付街上的老鼠是需要“策略”的。"},
+          "ex": {"type": "例", "en": "One strategy is called market modification.", "zh": "一种策略被称为市场调整。", "key": ["strategy"]},
+          "ext": [{"word": "strategic", "ipa": "/strəˈtiːdʒɪk/", "senses": [{"pos": "adj.", "mean": "战略性的；战略上的"}]}]
+        },
+        {
+          "no": 6, "word": "scratch", "freq": 1, "page": 131,
+          "prons": [{"ipa": "/skrætʃ/", "senses": [
+            {"pos": "v.", "mean": "[[挠，搔（痒处）]]；[[划伤，抓伤（皮肤）]]"},
+            {"pos": "n.", "mean": "[[划伤]]；[[挠痒]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "sc（音似“四个”）+ rat（老鼠）+ ch（音似“吃”）→ 那四个老鼠边“挠”边吃。"},
+          "ex": {"type": "真", "year": 2023, "en": "He apologised for scratching an athlete's gold medal.", "zh": "他为划伤运动员的金牌而道歉。", "key": ["scratching"]},
+          "ext": []
+        },
+        {
+          "no": 7, "word": "sketch", "freq": 1, "page": 132,
+          "prons": [{"ipa": "/sketʃ/", "senses": [
+            {"pos": "n.", "mean": "[[素描，速写]]；[[概述]]"},
+            {"pos": "v.", "mean": "[[（给……）画素描；概述]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The artist is making sketches for his next painting.", "zh": "画家正为他的下一幅作品画素描。", "key": ["sketches"]},
+          "ext": [{"word": "sketchy", "ipa": "/ˈsketʃi/", "senses": [{"pos": "adj.", "mean": "粗略的；概略的；不完备的"}]}]
+        },
+        {
+          "no": 8, "word": "pinch", "freq": 1, "page": 132,
+          "prons": [{"ipa": "/pɪntʃ/", "senses": [{"pos": "v.", "mean": "[[捏，拧，掐]]；[[使经济拮据]]"}]}],
+          "tip": {"type": "对照", "text": "他说桃子（peach）不能捏（pinch）。"},
+          "ex": {"type": "例", "en": "His administration is financially pinched.", "zh": "他的政府财政拮据。", "key": ["pinched"]},
+          "ext": []
+        },
+        {
+          "no": 9, "word": "claw", "freq": 1, "page": 132,
+          "prons": [{"ipa": "/klɔː/", "senses": [
+            {"pos": "n.", "mean": "[[爪]]"},
+            {"pos": "v.", "mean": "[[抓]]；[[挠]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“可捞”→ 猴子可以用“爪”捞井中的月亮。"},
+          "ex": {"type": "例", "en": "His hands clawed the air.", "zh": "他的双手在空中乱抓。", "key": ["clawed"]},
+          "ext": []
+        },
+        {
+          "no": 10, "word": "flaw", "freq": 1, "page": 132,
+          "prons": [{"ipa": "/flɔː/", "senses": [
+            {"pos": "n.", "mean": "[[瑕疵]]；[[缺点]]"},
+            {"pos": "v.", "mean": "[[使有瑕疵]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“飞喽”→ 笼子里的鸟飞了，说明笼子有“瑕疵”。"},
+          "ex": {"type": "真", "year": 2017, "en": "Their extraordinary minds are still using the same flawed tools that the rest of us rely on.", "zh": "他们非凡的大脑仍然在使用有瑕疵的工具，和我们其他人用的一样。", "key": ["flawed"]},
+          "ext": [{"word": "flawless", "ipa": "/ˈflɔːləs/", "senses": [{"pos": "adj.", "mean": "完美的；无瑕的"}]}]
+        }
+      ]
+    },
+    {
+      "no": 7,
+      "title": "cat 相关",
+      "pages": [132, 133],
+      "map": {"w": "cat 相关", "children": [
+        {"w": "cater", "children": [
+          {"w": "category", "rel": "变r"},
+          {"w": "feed", "rel": "相关", "children": [{"w": "diet", "children": [{"w": "dietary", "rel": "扩"}]}]}
+        ]},
+        {"w": "catalogue", "children": [
+          {"w": "dialogue", "rel": "形近", "children": [{"w": "chat", "rel": "相关", "children": [{"w": "scatter", "rel": "相关"}]}]},
+          {"w": "index", "rel": "相关", "children": [{"w": "log", "children": [{"w": "logic", "rel": "加ic", "children": [{"w": "logical", "rel": "扩"}]}]}]}
+        ]}
+      ]},
+      "entries": [
+        {
+          "no": 11, "word": "cater", "freq": 1, "page": 132,
+          "prons": [{"ipa": "/ˈkeɪtə(r)/", "senses": [{"pos": "v.", "mean": "[[提供饮食及服务]]；[[满足需要]]；[[迎合]]"}]}],
+          "tip": {"type": "联想", "text": "cat（猫）+ -er（表示人的后缀）→ 有些猫很喜欢“迎合”人。"},
+          "ex": {"type": "真", "year": 2020, "en": "It cannot cater to personal needs.", "zh": "它无法满足个人需求。", "key": ["cater to"]},
+          "ext": []
+        },
+        {
+          "no": 12, "word": "category", "freq": 2, "page": 132,
+          "prons": [{"ipa": "/ˈkætəɡəri/", "senses": [{"pos": "n.", "mean": "[[类别]]；种类"}]}],
+          "tip": {"type": "联想", "text": "cat（猫）+ e（音似“鹅”）+ gory（音似“果仁”）→ 猫和鹅喜欢吃的果仁不是同一个“类别”。"},
+          "ex": {"type": "真", "year": 2016, "en": "Sales people often fall into this category.", "zh": "销售人员通常属于这一类。", "key": ["category"]},
+          "ext": []
+        },
+        {
+          "no": 13, "word": "feed", "freq": 1, "page": 132,
+          "prons": [{"ipa": "/fiːd/", "senses": [{"pos": "v.", "mean": "[[喂养]]；[[供给]]；[[养活]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“肥的”→ 这只很肥的猫是他“喂养”的。"},
+          "ex": {"type": "真", "year": 2022, "en": "By 2050, the world will need to feed an estimated 9.7 billion people.", "zh": "到 2050 年，世界估计将需要养活 97 亿人。", "key": ["feed"]},
+          "ext": []
+        },
+        {
+          "no": 14, "word": "diet", "freq": 1, "page": 132,
+          "prons": [{"ipa": "/ˈdaɪət/", "senses": [
+            {"pos": "n.", "mean": "[[日常饮食]]"},
+            {"pos": "v.", "mean": "[[节食]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“得饿他”→ 医生说他太胖了，得饿饿他，让他适度“节食”。"},
+          "ex": {"type": "真", "year": 2023, "en": "One possible solution to the food security problem is diversification of diet.", "zh": "解决粮食安全问题的一个可能办法是饮食多样化。", "key": ["diet"]},
+          "ext": [{"word": "dietary", "ipa": "/ˈdaɪətəri/", "senses": [{"pos": "adj.", "mean": "饮食的；饮食中的"}]}]
+        },
+        {
+          "no": 15, "word": "catalogue", "alt": "catalog", "freq": 2, "page": 132,
+          "prons": [{"ipa": "/ˈkætəlɒɡ/", "senses": [
+            {"pos": "n.", "mean": "[[目录]]"},
+            {"pos": "v.", "mean": "[[将……编入目录]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "cat（猫）+ a（一）+ log（原木）→“目录”上有幅插图，是一只猫抱着一根原木。"},
+          "ex": {"type": "真", "year": 2023, "en": "They can apply for fully funded access to Coursera's course catalogue.", "zh": "他们可以申请全额资助访问 Coursera 的课程目录。", "key": ["catalogue"]},
+          "ext": []
+        },
+        {
+          "no": 16, "word": "dialogue", "alt": "dialog", "freq": 1, "page": 133,
+          "prons": [{"ipa": "/ˈdaɪəlɒɡ/", "senses": [{"pos": "n.", "mean": "[[对话]]；[[对白]]"}]}],
+          "tip": {"type": "联想", "text": "di-（两个）+ a（形似乌龟）+ logue（音似“唠嗑”）→ 两只小乌龟在唠嗑 → 对话；对白"},
+          "ex": {"type": "真", "year": 2019, "en": "Over the centuries, they have simulated dialogues in a number of ways.", "zh": "几个世纪以来，它们用多种方式模拟了对话。", "key": ["dialogues"]},
+          "ext": []
+        },
+        {
+          "no": 17, "word": "log", "freq": 2, "page": 133,
+          "prons": [{"ipa": "/lɒɡ/", "senses": [
+            {"pos": "n.", "mean": "[[日志]]；[[正式记录]]；[[原木]]"},
+            {"pos": "v.", "mean": "[[正式记录]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“捞个”→ 他在河里捞了个“原木”。"},
+          "ex": {"type": "例", "en": "I checked the server's error logs.", "zh": "我查验了服务器的错误日志。", "key": ["logs"]},
+          "ext": []
+        },
+        {
+          "no": 18, "word": "logic", "freq": 2, "page": 133,
+          "prons": [{"ipa": "/ˈlɒdʒɪk/", "senses": [{"pos": "n.", "mean": "[[思维方式]]；[[逻辑，逻辑学]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“逻辑”。"},
+          "ex": {"type": "例", "en": "Statistics and logic are both challenging subjects.", "zh": "统计学和逻辑学都是具有挑战性的学科。", "key": ["logic"]},
+          "ext": [{"word": "logical", "ipa": "/ˈlɒdʒɪkl/", "senses": [{"pos": "adj.", "mean": "必然的；合乎情理的；符合逻辑的"}]}]
+        },
+        {
+          "no": 19, "word": "index", "freq": 1, "page": 133,
+          "prons": [{"ipa": "/ˈɪndeks/", "senses": [
+            {"pos": "n.", "mean": "[[索引]]；（物价和工资等的）[[指数]]；标志；[[指标]]"},
+            {"pos": "v.", "mean": "[[为……编索引]]；将……编入索引；[[使指数化]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "in（在……里面）+ dex（音似“德克士”）→ 他在德克士里看到了菜单上的“索引”。"},
+          "ex": {"type": "真", "year": 2020, "en": "Researchers have shown that body mass index is related to wages and income.", "zh": "研究人员表明，体重指数与工资和收入有关。", "key": ["index"]},
+          "ext": []
+        },
+        {
+          "no": 20, "word": "chat", "freq": 1, "page": 133,
+          "prons": [{"ipa": "/tʃæt/", "senses": [{"pos": "v. & n.", "mean": "[[聊天]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“拆台”→ 大家不喜欢和他“聊天”，因为他总是喜欢拆台。"},
+          "ex": {"type": "例", "en": "My kids spend hours chatting on the phone to their friends.", "zh": "我的孩子在电话里和他们的朋友聊天，聊了几个小时。", "key": ["chatting"]},
+          "ext": []
+        },
+        {
+          "no": 21, "word": "scatter", "freq": 1, "page": 133,
+          "prons": [{"ipa": "/ˈskætə(r)/", "senses": [{"pos": "v.", "mean": "[[撒播]]；[[散开]]"}]}],
+          "tip": {"type": "联想", "text": "s（音似“四”）+ cat（猫）+ ter（音似“特”）→ 那四只猫特别精，闯了祸就“散开”了。"},
+          "ex": {"type": "例", "en": "At the first gunshot, the crowd scattered.", "zh": "枪声一响，人群便逃散了。", "key": ["scattered"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 8,
+      "title": "ex 相关",
+      "pages": [133, 135],
+      "map": {"w": "ex 相关", "children": [
+        {"w": "exile"},
+        {"w": "expel", "children": [
+          {"w": "compel", "rel": "同根", "children": [
+            {"w": "compelling", "rel": "扩"},
+            {"w": "force", "rel": "近义", "children": [
+              {"w": "forceful", "rel": "扩"},
+              {"w": "enforce", "rel": "加en", "children": [
+                {"w": "enforcement", "rel": "扩"},
+                {"w": "reinforce", "rel": "变en", "children": [
+                  {"w": "reinforcement", "rel": "扩"},
+                  {"w": "backup", "rel": "相关"}
+                ]}
+              ]},
+              {"w": "workforce", "rel": "合成", "children": [{"w": "workshop", "rel": "相关"}]},
+              {"w": "strength", "rel": "近义", "children": [{"w": "strong", "rel": "扩", "children": [{"w": "strengthen"}]}]},
+              {"w": "power", "rel": "近义", "children": [
+                {"w": "powerful", "rel": "扩"},
+                {"w": "willpower", "rel": "合成", "children": [
+                  {"w": "willing", "rel": "相关", "children": [
+                    {"w": "will", "rel": "扩", "children": [{"w": "willingness"}]},
+                    {"w": "voluntary", "rel": "近义", "children": [{"w": "volunteer", "rel": "扩"}]},
+                    {"w": "reluctant", "rel": "反义", "children": [{"w": "reluctance", "rel": "扩"}]}
+                  ]}
+                ]}
+              ]},
+              {"w": "strain", "rel": "近义"}
+            ]}
+          ]}
+        ]},
+        {"w": "exchange"}
+      ]},
+      "entries": [
+        {
+          "no": 22, "word": "exile", "freq": 1, "page": 134,
+          "prons": [{"ipa": "/ˈeksaɪl; ˈeɡzaɪl/", "senses": [{"pos": "v. & n.", "mean": "[[流放]]；[[流亡]]"}]}],
+          "tip": {"type": "联想", "text": "ex-（往外）+ i（我）+ le（联想“了”）→ 使我往外走了 → 流放"},
+          "ex": {"type": "例", "en": "His years in exile resulted in an innovation discount.", "zh": "他的流亡岁月导致了创新力下降。", "key": ["exile"]},
+          "ext": []
+        },
+        {
+          "no": 23, "word": "exchange", "freq": 3, "page": 134,
+          "prons": [{"ipa": "/ɪksˈtʃeɪndʒ/", "senses": [{"pos": "n. & v.", "mean": "[[交换]]；[[互换]]；[[兑换]]"}]}],
+          "tip": {"type": "构词", "text": "ex-（出）+ change（改变，变换）→ 拿出去以变换 → 交换"},
+          "ex": {"type": "真", "year": 2018, "en": "At 8 years old, he worked as a kitchen boy for a restaurant in Paris in exchange for room and board.", "zh": "8 岁时，他在巴黎的一家餐馆当厨房帮工，以换取食宿。", "key": ["exchange"]},
+          "ext": []
+        },
+        {
+          "no": 24, "word": "expel", "freq": 1, "page": 134,
+          "prons": [{"ipa": "/ɪkˈspel/", "senses": [{"pos": "v.", "mean": "[[把……开除（或除名）]]；[[驱逐出境]]；[[排出]]"}]}],
+          "tip": {"type": "联想", "text": "ex-（往外）+ pel（音似“排”）→ 把……往外排 → 驱逐出境；排出"},
+          "ex": {"type": "例", "en": "Cultivating positive interpersonal relationships helped him expel solitary feelings.", "zh": "培养积极的人际关系帮他摆脱了孤独感。", "key": ["expel"]},
+          "ext": []
+        },
+        {
+          "no": 25, "word": "compel", "freq": 2, "page": 134,
+          "prons": [{"ipa": "/kəmˈpel/", "senses": [{"pos": "v.", "mean": "[[强迫]]，[[迫使]]；使必须"}]}],
+          "tip": {"type": "联想", "text": "com-（所有）+ pel（音似“排”）→ 所有人都排斥你，“强迫”你出去。"},
+          "ex": {"type": "真", "year": 2018, "en": "The agents' questions compel student tutors to think and explain the materials in different ways.", "zh": "代理的问题迫使学生家教以不同的方式思考和解释这些材料。", "key": ["compel"]},
+          "ext": [{"word": "compelling", "ipa": "/kəmˈpelɪŋ/", "senses": [{"pos": "adj.", "mean": "引人入胜的；令人信服的"}]}]
+        },
+        {
+          "no": 26, "word": "force", "freq": 1, "page": 134,
+          "prons": [{"ipa": "/fɔːs/", "senses": [
+            {"pos": "n.", "mean": "[[力量]]，[[暴力]]；武装部队；有影响力的人"},
+            {"pos": "v.", "mean": "[[强迫]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "一股力量（force）推着他继续向前（forth）。"},
+          "ex": {"type": "真", "year": 2016, "en": "It forces the customer to compensate the waiter.", "zh": "它迫使顾客赔偿服务员。", "key": ["forces"]},
+          "ext": [{"word": "forceful", "ipa": "/ˈfɔːsfl/", "senses": [{"pos": "adj.", "mean": "强有力的；有说服力的；坚强的"}]}]
+        },
+        {
+          "no": 27, "word": "workforce", "freq": 3, "page": 134,
+          "prons": [{"ipa": "/ˈwɜːkfɔːs/", "senses": [{"pos": "n.", "mean": "（国家或行业等的）[[劳动力]]，[[劳动大军]]，[[劳动人口]]"}]}],
+          "tip": {"type": "构词", "text": "work（工作）+ force（力量）→ 劳动力"},
+          "ex": {"type": "例", "en": "More than 15% of the workforce are jobless or underemployed.", "zh": "超过 15% 的劳动力处于失业或未充分就业状态。", "key": ["workforce"]},
+          "ext": []
+        },
+        {
+          "no": 28, "word": "workshop", "freq": 1, "page": 134,
+          "prons": [{"ipa": "/ˈwɜːkʃɒp/", "senses": [{"pos": "n.", "mean": "[[车间]]；[[工场]]；[[作坊]]；[[研讨会]]"}]}],
+          "tip": {"type": "构词", "text": "work（工作）+ shop（工坊）→ 车间"},
+          "ex": {"type": "例", "en": "She equipped a small workshop.", "zh": "她配备了一个小车间。", "key": ["workshop"]},
+          "ext": []
+        },
+        {
+          "no": 29, "word": "enforce", "freq": 1, "page": 134,
+          "prons": [{"ipa": "/ɪnˈfɔːs/", "senses": [{"pos": "v.", "mean": "[[强迫]]，强制执行（法律）"}]}],
+          "tip": {"type": "构词", "text": "en-（使）+ force（强迫）→ 使强迫 → 强迫，强制执行"},
+          "ex": {"type": "例", "en": "United Nations troops enforced a ceasefire in the area.", "zh": "联合国军队在该地区强迫停火。", "key": ["enforced"]},
+          "ext": [{"word": "enforcement", "ipa": "/ɪnˈfɔːsmənt/", "senses": [{"pos": "n.", "mean": "执行"}]}]
+        },
+        {
+          "no": 30, "word": "reinforce", "freq": 2, "page": 134,
+          "prons": [{"ipa": "/ˌriːɪnˈfɔːs/", "senses": [{"pos": "v.", "mean": "[[加强]]，[[加固]]；给……加强力量，增援"}]}],
+          "tip": {"type": "联想", "text": "re-（重复）+ in（里面）+ force（力量）→ 重复往里面增加力量 → 加强，加固"},
+          "ex": {"type": "真", "year": 2020, "en": "Our job as designers is to reinforce the airline's brand.", "zh": "作为设计师，我们的工作是强化航空公司的品牌。", "key": ["reinforce"]},
+          "ext": [{"word": "reinforcement", "ipa": "/ˌriːɪnˈfɔːsmənt/", "senses": [{"pos": "n.", "mean": "巩固，加强；援军"}]}]
+        },
+        {
+          "no": 31, "word": "backup", "freq": 1, "page": 134,
+          "prons": [{"ipa": "/ˈbækʌp/", "senses": [{"pos": "n.", "mean": "[[后援]]，[[支援]]；（文件等的）[[备份]]"}]}],
+          "tip": {"type": "联想", "text": "back（背）+ up（向上）→ 让你的后背向上直起来 → 后援，支援"},
+          "ex": {"type": "例", "en": "The old technology remains as a backup.", "zh": "旧的技术仍然是一种备份。", "key": ["backup"]},
+          "ext": []
+        },
+        {
+          "no": 32, "word": "strength", "freq": 2, "page": 135,
+          "prons": [{"ipa": "/streŋ(k)θ/", "senses": [{"pos": "n.", "mean": "[[力量]]；[[强度]]；[[毅力]]；[[优势]]"}]}],
+          "tip": {"type": "对照", "text": "strong adj. 强壮的 → strength n."},
+          "ex": {"type": "真", "year": 2024, "en": "But the greatest strength of this book (on fashion) is its intellectual profoundness.", "zh": "但这本书（关于时尚）最大的优势在于它的思想深度。", "key": ["strength"]},
+          "ext": [
+            {"word": "strong", "ipa": "/strɒŋ/", "senses": [{"pos": "adj.", "mean": "强壮的；强烈的"}]},
+            {"word": "strengthen", "ipa": "/ˈstreŋ(k)θn/", "senses": [{"pos": "v.", "mean": "加强；增强；巩固"}]}
+          ]
+        },
+        {
+          "no": 33, "word": "power", "freq": 1, "page": 135,
+          "prons": [{"ipa": "/ˈpaʊə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[权力]]；[[能力]]；[[力量]]；[[政权]]；[[强国]]"},
+            {"pos": "v.", "mean": "[[驱动]]，[[推动]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“怕我”→ 他们怕我是因为我有“权力”。"},
+          "ex": {"type": "例", "en": "Like swords, books have symbolic power.", "zh": "就像刀剑一样，书籍也具有象征性的力量。", "key": ["power"]},
+          "ext": [{"word": "powerful", "ipa": "/ˈpaʊəfl/", "senses": [{"pos": "adj.", "mean": "有权势的；力量大的"}]}]
+        },
+        {
+          "no": 34, "word": "willpower", "freq": 1, "page": 135,
+          "prons": [{"ipa": "/ˈwɪlpaʊə(r)/", "senses": [{"pos": "n.", "mean": "[[意志力]]"}]}],
+          "tip": {"type": "构词", "text": "will（意志）+ power（力量）→ 意志力"},
+          "ex": {"type": "真", "year": 2018, "en": "Your feelings about your willpower affect the way you behave.", "zh": "你对意志力的感觉会影响你的行为方式。", "key": ["willpower"]},
+          "ext": []
+        },
+        {
+          "no": 35, "word": "willing", "freq": 3, "page": 135,
+          "prons": [{"ipa": "/ˈwɪlɪŋ/", "senses": [{"pos": "adj.", "mean": "[[愿意的]]，[[自愿的]]"}]}],
+          "tip": {"type": "对照", "text": "我将要（will）帮助你，我是自愿的（willing）。"},
+          "ex": {"type": "例", "en": "Consumers must be willing to pay for these solutions.", "zh": "消费者必须愿意为这些解决方案付费。", "key": ["willing"]},
+          "ext": [
+            {"word": "will", "ipa": "/wɪl/", "senses": [
+              {"pos": "modal v.", "mean": "将要；会，愿"},
+              {"pos": "v.", "mean": "愿意"},
+              {"pos": "n.", "mean": "意志；心愿"}
+            ]},
+            {"word": "willingness", "ipa": "/ˈwɪlɪŋnəs/", "senses": [{"pos": "n.", "mean": "愿意"}]}
+          ]
+        },
+        {
+          "no": 36, "word": "volunteer", "freq": 3, "page": 135,
+          "prons": [{"ipa": "/ˌvɒlənˈtɪə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[志愿者]]；[[志愿兵]]"},
+            {"pos": "v.", "mean": "[[自愿做]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "She now helps in a local school as a volunteer.", "zh": "她现在作为一名志愿者在当地一所学校帮忙。", "key": ["volunteer"]},
+          "ext": [{"word": "voluntary", "ipa": "/ˈvɒləntri/", "senses": [{"pos": "adj.", "mean": "自愿的，志愿的"}]}]
+        },
+        {
+          "no": 37, "word": "reluctant", "freq": 2, "page": 135,
+          "prons": [{"ipa": "/rɪˈlʌktənt/", "senses": [{"pos": "adj.", "mean": "[[不情愿的]]，[[勉强的]]"}]}],
+          "tip": {"type": "联想", "text": "re（字母音似“阿姨”）+ luc（音似“拉客”）+ tant（音似“忐忑”）→ 阿姨刚开面馆时，拉客人进来吃面内心忐忑，怕他们是“不情愿的”。"},
+          "ex": {"type": "真", "year": 2021, "en": "Most people surveyed were reluctant to reveal what they ate.", "zh": "大多数被调查者不愿透露他们吃了什么。", "key": ["reluctant"]},
+          "ext": [{"word": "reluctance", "ipa": "/rɪˈlʌktəns/", "senses": [{"pos": "n.", "mean": "勉强，不情愿"}]}]
+        },
+        {
+          "no": 38, "word": "strain", "freq": 2, "page": 135,
+          "prons": [{"ipa": "/streɪn/", "senses": [
+            {"pos": "n.", "mean": "[[压力]]；重负；[[类型]]"},
+            {"pos": "v.", "mean": "用力推（或拉）；[[拉紧]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "st（联想 street）+ rain（雨）→ 一个寒冷的冬天，街上下着雨，我“拉紧”了衣服领子。"},
+          "ex": {"type": "真", "year": 2018, "en": "Some strains of bacteria are so harmful that a tiny few can have deadly consequences.", "zh": "有些细菌类型危害极大，以至于极少量细菌就能带来致命的后果。", "key": ["strains"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 9,
+      "title": "“衣服”相关",
+      "pages": [135, 136],
+      "map": {"w": "“衣服”相关", "children": [
+        {"w": "clothe", "children": [{"w": "cloth", "rel": "扩", "children": [{"w": "clothes", "children": [{"w": "clothing"}]}]}]},
+        {"w": "strip", "children": [
+          {"w": "stripe", "rel": "形近", "children": [{"w": "rip", "children": [{"w": "grip", "rel": "加g"}]}]},
+          {"w": "ribbon", "rel": "近义"},
+          {"w": "string", "rel": "相关", "children": [
+            {"w": "thread", "rel": "近义"},
+            {"w": "bait", "rel": "相关", "children": [{"w": "trap"}]}
+          ]}
+        ]}
+      ]},
+      "entries": [
+        {
+          "no": 39, "word": "clothe", "freq": 1, "page": 136,
+          "prons": [{"ipa": "/kləʊð/", "senses": [{"pos": "v.", "mean": "给……穿衣"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "They clothe their children in the latest fashions.", "zh": "他们给他们的孩子穿最时髦的服装。", "key": ["clothe"]},
+          "ext": [
+            {"word": "cloth", "ipa": "/klɒθ/", "senses": [{"pos": "n.", "mean": "织物，布料；（一块）布；桌布"}]},
+            {"word": "clothes", "ipa": "/kləʊðz/", "senses": [{"pos": "n.", "mean": "衣服，服装"}]},
+            {"word": "clothing", "ipa": "/ˈkləʊðɪŋ/", "senses": [{"pos": "n.", "mean": "衣服，（尤指某种）服装"}]}
+          ]
+        },
+        {
+          "no": 40, "word": "strip", "freq": 2, "page": 136,
+          "prons": [{"ipa": "/strɪp/", "senses": [
+            {"pos": "v.", "mean": "[[脱光衣服]]；[[除去，剥]]"},
+            {"pos": "n.", "mean": "（纸、金属、织物等）[[条，带]]；[[商业街]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "st（联想 street）+ rip（撕扯）→ 在大街上撕扯衣服 → 除去，剥"},
+          "ex": {"type": "真", "year": 2015, "en": "He tied a metal key and a strip of silk to the kite line.", "zh": "他把一把金属钥匙和一条丝绸系在风筝线上。", "key": ["strip"]},
+          "ext": []
+        },
+        {
+          "no": 41, "word": "stripe", "freq": 1, "page": 136,
+          "prons": [{"ipa": "/straɪp/", "senses": [{"pos": "n.", "mean": "[[条纹]]；[[线条]]"}]}],
+          "tip": {"type": "联想", "text": "str（联想 street）+ ip（联想 IP）+ e（字母音似“衣”）→ 他在街上点开了一个 IP 网址，发现是卖“条纹”衣服的。"},
+          "ex": {"type": "例", "en": "He wears a shirt with black and white stripes.", "zh": "他穿着一件黑白条纹的衬衫。", "key": ["stripes"]},
+          "ext": []
+        },
+        {
+          "no": 42, "word": "ribbon", "freq": 1, "page": 136,
+          "prons": [{"ipa": "/ˈrɪbən/", "senses": [{"pos": "n.", "mean": "[[丝带，绸带]]，[[带状物]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“瑞本”→ 一个叫“瑞本”的人腰间系着一条“丝带”。"},
+          "ex": {"type": "真", "year": 2023, "en": "Justin Le, aged 18, tied a red ribbon around his waist to practice jumping.", "zh": "18 岁的贾斯汀·乐在腰间系了一条红丝带，以便练习跳跃。", "key": ["ribbon"]},
+          "ext": []
+        },
+        {
+          "no": 43, "word": "rip", "freq": 1, "page": 136,
+          "prons": [{"ipa": "/rɪp/", "senses": [{"pos": "v.", "mean": "[[撕开]]，[[裂开]]"}]}],
+          "tip": {"type": "联想", "text": "单词的发音像撕裂衣服的声音。"},
+          "ex": {"type": "例", "en": "I ripped the package open.", "zh": "我撕开了包裹。", "key": ["ripped"]},
+          "ext": []
+        },
+        {
+          "no": 44, "word": "grip", "freq": 1, "page": 136,
+          "prons": [{"ipa": "/ɡrɪp/", "senses": [{"pos": "n. & v.", "mean": "[[紧握]]，[[紧抓]]，[[掌控]]"}]}],
+          "tip": {"type": "联想", "text": "g（联想“哥”）+ rip（撕开）→ 哥哥撕开包装袋前，得先“紧握”它。"},
+          "ex": {"type": "例", "en": "She tried to get a grip on the icy rock.", "zh": "她尽力抓住那块冰冷的岩石。", "key": ["grip"]},
+          "ext": []
+        },
+        {
+          "no": 45, "word": "string", "freq": 3, "page": 136,
+          "prons": [{"ipa": "/strɪŋ/", "senses": [
+            {"pos": "n.", "mean": "[[线]]；[[弦]]；一连串"},
+            {"pos": "v.", "mean": "[[用线穿起来]]；[[悬挂]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "st（联想 street）+ ring（戒指）→ 他在街上捡了一个用“线”穿起来的戒指。"},
+          "ex": {"type": "例", "en": "He went off to change a guitar string.", "zh": "他离开去换一根吉他弦了。", "key": ["string"]},
+          "ext": []
+        },
+        {
+          "no": 46, "word": "thread", "freq": 1, "page": 136,
+          "prons": [{"ipa": "/θred/", "senses": [
+            {"pos": "n.", "mean": "[[线]]；[[思路]]，[[线索]]；[[主线]]；[[螺纹]]"},
+            {"pos": "v.", "mean": "[[穿线于]]；装好（胶卷或磁带）"}
+          ]}],
+          "tip": {"type": "联想", "text": "th（音似“思”）+ read（读）→ 边读书边思考才能找到书中的“线索”。"},
+          "ex": {"type": "例", "en": "A common thread runs through these discussions.", "zh": "这些讨论都贯穿着一条共同的主线。", "key": ["thread"]},
+          "ext": []
+        },
+        {
+          "no": 47, "word": "trap", "freq": 3, "page": 136,
+          "prons": [{"ipa": "/træp/", "senses": [
+            {"pos": "v.", "mean": "[[使陷入困境]]"},
+            {"pos": "n.", "mean": "（捕捉动物的）[[陷阱]]；[[圈套]]；[[诡计]]；[[困境]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“踹扑”→ 狐狸走着走着，被踹了一脚，扑进了“陷阱”里。"},
+          "ex": {"type": "真", "year": 2022, "en": "My co-workers would all be friendly with one another, without ever falling into the office gossip trap.", "zh": "我的同事们彼此之间都很友好，不会落入办公室八卦的陷阱。", "key": ["trap"]},
+          "ext": []
+        },
+        {
+          "no": 48, "word": "bait", "freq": 1, "page": 136,
+          "prons": [{"ipa": "/beɪt/", "senses": [
+            {"pos": "n.", "mean": "[[饵]]；[[诱饵]]"},
+            {"pos": "v.", "mean": "[[下诱饵]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“贝特”→ 海钓时，贝壳肉特别适合作“诱饵”。"},
+          "ex": {"type": "例", "en": "A trap was laid, with fresh bait.", "zh": "陷阱布置好了，还投放了新鲜诱饵。", "key": ["bait"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 10,
+      "title": "fair 相关",
+      "pages": [137, 138],
+      "map": {"w": "fair 相关", "children": [
+        {"w": "fair", "children": [
+          {"w": "fairly", "rel": "扩"},
+          {"w": "entitle", "rel": "相关", "children": [
+            {"w": "qualify", "rel": "近义", "children": [
+              {"w": "qualification", "rel": "扩"},
+              {"w": "quality", "rel": "形近", "children": [{"w": "qualitative", "rel": "扩"}]}
+            ]}
+          ]}
+        ]},
+        {"w": "affair", "children": [
+          {"w": "business", "rel": "近义", "children": [
+            {"w": "businessman", "rel": "扩"},
+            {"w": "recruit", "rel": "相关", "children": [{"w": "recruitment", "rel": "扩"}]},
+            {"w": "register", "rel": "相关", "children": [{"w": "registration", "rel": "扩", "children": [{"w": "registrar"}]}]},
+            {"w": "payroll", "rel": "相关", "children": [{"w": "trolley", "rel": "roll形近", "children": [{"w": "toll"}]}]}
+          ]}
+        ]},
+        {"w": "continuous", "children": [
+          {"w": "continue", "rel": "扩", "children": [{"w": "continual", "children": [{"w": "continuation"}]}]},
+          {"w": "renew", "rel": "相关", "children": [{"w": "renewal", "rel": "扩", "children": [{"w": "renewable"}]}]}
+        ]}
+      ]},
+      "entries": [
+        {
+          "no": 49, "word": "fair", "freq": 1, "page": 137,
+          "prons": [{"ipa": "/feə(r)/", "senses": [
+            {"pos": "adj.", "mean": "合理的，[[公平的]]"},
+            {"pos": "adv.", "mean": "公平合理地"},
+            {"pos": "n.", "mean": "[[集市]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Can they be honest and fair?", "zh": "他们能诚实和公平吗？", "key": ["fair"]},
+          "ext": []
+        },
+        {
+          "no": 50, "word": "fairly", "freq": 1, "page": 137,
+          "prons": [{"ipa": "/ˈfeəli/", "senses": [{"pos": "adv.", "mean": "[[公平地]]；[[一定地]]；[[相当地]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2015, "en": "We get a fairly large portion of calories from fast food and snacks.", "zh": "我们从快餐和零食中获得相当大一部分的卡路里。", "key": ["fairly"]},
+          "ext": []
+        },
+        {
+          "no": 51, "word": "affair", "freq": 1, "page": 137,
+          "prons": [{"ipa": "/əˈfeə(r)/", "senses": [{"pos": "n.", "mean": "[[事务]]；[[事情]]；[[事件]]"}]}],
+          "tip": {"type": "联想", "text": "af-（一再地）+ fair（公平地）→ 一再公平地对待“事情”。"},
+          "ex": {"type": "真", "year": 2017, "en": "These teams are gaining more power to run their own affairs.", "zh": "这些团队正在获得更多的权力来管理他们自己的事务。", "key": ["affairs"]},
+          "ext": []
+        },
+        {
+          "no": 52, "word": "business", "freq": 1, "page": 137,
+          "prons": [{"ipa": "/ˈbɪznəs/", "senses": [{"pos": "n.", "mean": "[[商业]]；[[生意，交易]]；[[事情]]；[[工作]]"}]}],
+          "tip": {"type": "构词", "text": "busi（= busy，忙的）+ -ness（名词后缀）→ 忙着做的事 → 生意，交易"},
+          "ex": {"type": "真", "year": 2016, "en": "Not all your business partners are your soul mates.", "zh": "并不是所有的商业伙伴都是你的灵魂伴侣。", "key": ["business"]},
+          "ext": [{"word": "businessman", "ipa": "/ˈbɪznəsmæn/", "senses": [{"pos": "n.", "mean": "商人；企业家"}]}]
+        },
+        {
+          "no": 53, "word": "payroll", "freq": 1, "page": 137,
+          "prons": [{"ipa": "/ˈpeɪrəʊl/", "senses": [{"pos": "n.", "mean": "（公司员工的）[[工资名单]]；（公司的）[[工资总支出]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The firm is growing fast with a monthly payroll of $1 million.", "zh": "这家企业快速成长，月度工资总额达到了 100 万美元。", "key": ["payroll"]},
+          "ext": []
+        },
+        {
+          "no": 54, "word": "trolley", "freq": 1, "page": 137,
+          "prons": [{"ipa": "/ˈtrɒli/", "senses": [{"pos": "n.", "mean": "[[手推车]]；手拉车"}]}],
+          "tip": {"type": "联想", "text": "t（联想“他”）+ roll（滚动）+ -ey（名词后缀）→ 他推着超市的“手推车”，轮子在滚动。"},
+          "ex": {"type": "例", "en": "Don't forget to return the trolley after you finish shopping.", "zh": "购物结束后别忘了归还手推车。", "key": ["trolley"]},
+          "ext": []
+        },
+        {
+          "no": 55, "word": "toll", "freq": 2, "page": 137,
+          "prons": [{"ipa": "/təʊl/", "senses": [
+            {"pos": "n.", "mean": "[[过路费]]；[[严重的不良影响]]"},
+            {"pos": "v.", "mean": "（为丧者）[[敲（钟）]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“偷”→ 很多车辆偷偷从旁边的小路走，以节省“过路费”。"},
+          "ex": {"type": "例", "en": "Years of smoking have taken their toll on his health.", "zh": "多年吸烟已严重损害他的健康。", "key": ["toll"]},
+          "ext": []
+        },
+        {
+          "no": 56, "word": "recruit", "freq": 3, "page": 137,
+          "prons": [{"ipa": "/rɪˈkruːt/", "senses": [
+            {"pos": "v.", "mean": "[[招聘]]，[[吸收（新成员）]]；劝说"},
+            {"pos": "n.", "mean": "[[新成员]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "re（字母音似“阿姨”）+ cruit（音似“可入他”）→ 阿姨可以“招聘”一些“新成员”加入公司。"},
+          "ex": {"type": "真", "year": 2022, "en": "New teachers and staff have to be recruited.", "zh": "必须招聘新的教师和工作人员。", "key": ["recruited"]},
+          "ext": [{"word": "recruitment", "ipa": "/rɪˈkruːtmənt/", "senses": [{"pos": "n.", "mean": "吸收（新成员）；征募（新兵）"}]}]
+        },
+        {
+          "no": 57, "word": "renew", "freq": 2, "page": 138,
+          "prons": [{"ipa": "/rɪˈnjuː/", "senses": [{"pos": "v.", "mean": "[[重新开始]]，继续；[[更新]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2019, "en": "It has renewed her passion for life.", "zh": "它重燃了她对生活的热情。", "key": ["renewed"]},
+          "ext": [
+            {"word": "renewal", "ipa": "/rɪˈnjuːəl/", "senses": [{"pos": "n.", "mean": "恢复；更新；重新开始"}]},
+            {"word": "renewable", "ipa": "/rɪˈnjuːəbl/", "senses": [
+              {"pos": "n.", "mean": "可再生能源"},
+              {"pos": "adj.", "mean": "可更新的，可再生的"}
+            ]}
+          ]
+        },
+        {
+          "no": 58, "word": "continuous", "freq": 2, "page": 138,
+          "prons": [{"ipa": "/kənˈtɪnjuəs/", "senses": [{"pos": "adj.", "mean": "[[不断的]]；[[持续的]]；[[连续的]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "There was continuous firing throughout the night.", "zh": "整夜枪炮不息。", "key": ["continuous"]},
+          "ext": [
+            {"word": "continue", "ipa": "/kənˈtɪnjuː/", "senses": [
+              {"pos": "v.", "mean": "继续；再开始；延伸"},
+              {"pos": "n.", "mean": "持续，不断发生"}
+            ]},
+            {"word": "continual", "ipa": "/kənˈtɪnjuəl/", "senses": [{"pos": "adj.", "mean": "（令人厌烦地）多次重复的，频繁的；接连不断的"}]},
+            {"word": "continuation", "ipa": "/kənˌtɪnjuˈeɪʃn/", "senses": [{"pos": "n.", "mean": "继续；连续；持续"}]}
+          ]
+        },
+        {
+          "no": 59, "word": "entitle", "freq": 2, "page": 138,
+          "prons": [{"ipa": "/ɪnˈtaɪtl/", "senses": [{"pos": "v.", "mean": "[[给……权利或资格]]；[[给……命名（或题名）]]"}]}],
+          "tip": {"type": "构词", "text": "en-（使……）+ title（名称）→ 使……有名称 → 给……命名"},
+          "ex": {"type": "例", "en": "Everyone's entitled to their own opinion.", "zh": "人人都有权发表自己的意见。", "key": ["entitled"]},
+          "ext": []
+        },
+        {
+          "no": 60, "word": "qualify", "freq": 3, "page": 138,
+          "prons": [{"ipa": "/ˈkwɒlɪfaɪ/", "senses": [{"pos": "v.", "mean": "[[取得资格（或学历）]]；[[使合格]]；[[达标]]"}]}],
+          "tip": {"type": "对照", "text": "产品要保证质量（quality）才能达标（qualify）。"},
+          "ex": {"type": "例", "en": "He qualified as a doctor last year.", "zh": "他去年获得了医生资格。", "key": ["qualified"]},
+          "ext": [{"word": "qualification", "ipa": "/ˌkwɒlɪfɪˈkeɪʃn/", "senses": [{"pos": "n.", "mean": "资格；学历；资历"}]}]
+        },
+        {
+          "no": 61, "word": "quality", "freq": 2, "page": 138,
+          "prons": [{"ipa": "/ˈkwɒləti/", "senses": [
+            {"pos": "n.", "mean": "[[质量]]；品质；素质"},
+            {"pos": "adj.", "mean": "[[优质的]]；高质量的"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The food is fresh and of good quality.", "zh": "食物新鲜，质量好。", "key": ["quality"]},
+          "ext": [{"word": "qualitative", "ipa": "/ˈkwɒlɪtətɪv/", "senses": [{"pos": "adj.", "mean": "质量的；定性的；性质的"}]}]
+        },
+        {
+          "no": 62, "word": "register", "freq": 3, "page": 138,
+          "prons": [{"ipa": "/ˈredʒɪstə(r)/", "senses": [
+            {"pos": "v.", "mean": "[[登记]]；[[注册]]；[[注意到]]"},
+            {"pos": "n.", "mean": "[[登记表]]，[[注册簿]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "re-（回）+ g（联想“哥”）+ ister（联想 sister）→ 哥哥和姐姐找回了曾经“注册”的账号。"},
+          "ex": {"type": "例", "en": "The site has 114 million registered users.", "zh": "该网站拥有 1.14 亿注册用户。", "key": ["registered"]},
+          "ext": [
+            {"word": "registration", "ipa": "/ˌredʒɪˈstreɪʃn/", "senses": [{"pos": "n.", "mean": "登记；注册"}]},
+            {"word": "registrar", "ipa": "/ˌredʒɪˈstrɑː(r)/", "senses": [{"pos": "n.", "mean": "登记员；户籍管理员"}]}
+          ]
+        }
+      ]
+    }
+  ]
+}
