@@ -1,0 +1,877 @@
+{
+  "id": "u02-l04",
+  "part": 1,
+  "unit": 2,
+  "lesson": 4,
+  "pages": [50, 59],
+  "groups": [
+    {
+      "no": 17,
+      "title": "ge/g 相关",
+      "pages": [50, 52],
+      "map": {
+        "w": "ge/g 相关",
+        "children": [
+          {"w": "engage", "children": [
+            {"w": "engagement", "rel": "扩"},
+            {"w": "pregnant", "children": [{"w": "pregnancy", "rel": "扩"}]},
+            {"w": "couple", "children": [
+              {"w": "double", "rel": "形近"},
+              {"w": "spouse", "rel": "近义"}
+            ]},
+            {"w": "divorce", "children": [
+              {"w": "single", "children": [
+                {"w": "singular", "rel": "扩", "children": [{"w": "singularity"}]}
+              ]}
+            ]}
+          ]},
+          {"w": "gesture", "children": [{"w": "mortgage"}]},
+          {"w": "recognise", "children": [{"w": "recognition", "rel": "扩"}]},
+          {"w": "challenge", "children": [
+            {"w": "challenging", "rel": "扩"},
+            {"w": "flag", "rel": "相关"}
+          ]},
+          {"w": "surge", "children": [{"w": "leap", "rel": "近义"}]},
+          {"w": "global", "children": [{"w": "globe", "rel": "扩"}]},
+          {"w": "grain", "children": [
+            {"w": "cereal", "rel": "相关"},
+            {"w": "wheat", "rel": "相关"}
+          ]},
+          {"w": "glow", "children": [
+            {"w": "sparkle", "rel": "近义", "children": [
+              {"w": "spark", "rel": "去le"},
+              {"w": "wrinkle", "rel": "形近"}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "engage", "freq": 3, "page": 50,
+          "prons": [{"ipa": "/ɪnˈɡeɪdʒ/", "senses": [{"pos": "v.", "mean": "[[吸引（注意力）]]；[[使从事]]；[[使订婚]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“姻给之”→ 给之婚姻 → 使订婚"},
+          "ex": {"type": "真", "year": 2019, "en": "More and more women actively engaged in politics.", "zh": "越来越多的女性积极从政。", "key": ["engaged"]},
+          "ext": [{"word": "engagement", "ipa": "/ɪnˈɡeɪdʒmənt/", "senses": [{"pos": "n.", "mean": "订婚；约会，约定"}]}]
+        },
+        {
+          "no": 2, "word": "pregnant", "freq": 1, "page": 50,
+          "prons": [{"ipa": "/ˈpreɡnənt/", "senses": [{"pos": "adj.", "mean": "[[怀孕的]]，妊娠的；[[意义重大的]]"}]}],
+          "tip": {"type": "联想", "text": "pre-（前面）+ g（音似“哥”）+ nant（联想“难他”）→ 前面的哥哥照顾“怀孕的”妻子很顺手，一点也难不住他。"},
+          "ex": {"type": "例", "en": "Pregnant employees struggled to keep up.", "zh": "怀孕的员工努力跟上进度。", "key": ["Pregnant"]},
+          "ext": [{"word": "pregnancy", "ipa": "/ˈpreɡnənsi/", "senses": [{"pos": "n.", "mean": "妊娠；怀孕"}]}]
+        },
+        {
+          "no": 3, "word": "couple", "freq": 1, "page": 50,
+          "prons": [{"ipa": "/ˈkʌpl/", "senses": [
+            {"pos": "v.", "mean": "[[连接]]；[[结合]]"},
+            {"pos": "n.", "mean": "[[一对]]；几个；[[夫妻]]；[[情侣]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "这两只杯子（cup）是一对（couple）。"},
+          "ex": {"type": "真", "year": 2023, "en": "There are a couple of ways to compromise on the issue.", "zh": "在这个问题上有几种折中的方法。", "key": ["couple"]},
+          "ext": []
+        },
+        {
+          "no": 4, "word": "double", "freq": 1, "page": 50,
+          "prons": [{"ipa": "/ˈdʌbl/", "senses": [
+            {"pos": "adj.", "mean": "[[两倍的]]；[[双重的]]"},
+            {"pos": "adv.", "mean": "[[成双地]]"},
+            {"pos": "v.", "mean": "[[（使）加倍]]；[[对折]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2016, "en": "As a result, wheat prices elsewhere more than doubled, pulling rice and corn prices up with them.", "zh": "结果，其他地区的小麦价格翻了一倍多，带动了大米和玉米价格的上涨。", "key": ["doubled"]},
+          "ext": []
+        },
+        {
+          "no": 5, "word": "spouse", "freq": 2, "page": 50,
+          "prons": [{"ipa": "/spaʊs；spaʊz/", "senses": [{"pos": "n.", "mean": "配偶"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“死抱着”→ 他死死地抱着生病的“配偶”不肯撒手。"},
+          "ex": {"type": "真", "year": 2022, "en": "One spouse wants a complete name change.", "zh": "配偶的一方希望彻底改名。", "key": ["spouse"]},
+          "ext": []
+        },
+        {
+          "no": 6, "word": "divorce", "freq": 1, "page": 50,
+          "prons": [{"ipa": "/dɪˈvɔːs/", "senses": [{"pos": "n. & v.", "mean": "[[离婚]]；[[分离]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“敌我死”→ 夫妻俩的生活如同“敌死我活”，所以“离婚”了。"},
+          "ex": {"type": "真", "year": 2023, "en": "The divorce rate in the county has been on a steady rise.", "zh": "这个县的离婚率一直在稳步上升。", "key": ["divorce"]},
+          "ext": []
+        },
+        {
+          "no": 7, "word": "single", "freq": 1, "page": 50,
+          "prons": [{"ipa": "/ˈsɪŋɡl/", "senses": [{"pos": "adj.", "mean": "[[单一的]]；[[单身的]]；[[仅，唯一的]]"}]}],
+          "tip": {"type": "联想", "text": "sing（唱歌）+ le（联想“了”）→ 那个“单身的”人唱了首歌。"},
+          "ex": {"type": "真", "year": 2019, "en": "Young men are less likely to end up as single parents than young women.", "zh": "年轻男性比年轻女性更不可能成为单亲父母。", "key": ["single"]},
+          "ext": []
+        },
+        {
+          "no": 8, "word": "singular", "freq": 2, "page": 51,
+          "prons": [{"ipa": "/ˈsɪŋɡjələ(r)/", "senses": [{"pos": "adj.", "mean": "[[单数（形式）的]]；[[非凡的]]；[[奇特的]]"}]}],
+          "tip": {"type": "联想", "text": "sing（唱歌）+ u（字母音似 you）+ lar（音似“了”）→ 该你唱了，唱歌时的你是“非凡的”。"},
+          "ex": {"type": "例", "en": "Jobs, of course, has enjoyed singular success.", "zh": "当然，乔布斯取得了非凡的成就。", "key": ["singular"]},
+          "ext": [{"word": "singularity", "ipa": "/ˌsɪŋɡjuˈlærəti/", "senses": [{"pos": "n.", "mean": "奇特；奇怪；异常"}]}]
+        },
+        {
+          "no": 9, "word": "gesture", "freq": 2, "page": 51,
+          "prons": [{"ipa": "/ˈdʒestʃə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[手势]]；[[姿势]]"},
+            {"pos": "v.", "mean": "[[做手势]]；[[用动作示意]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "ge（联想“哥”）+ s（联想“摔”）+ ture（联想 true）→ 我哥哥摔跤的“姿势”真的很帅。"},
+          "ex": {"type": "例", "en": "Substitutions of one gesture for the other often create humorous moment.", "zh": "用一种手势代替另一种手势通常会带来幽默的时刻。", "key": ["gesture"]},
+          "ext": []
+        },
+        {
+          "no": 10, "word": "mortgage", "freq": 1, "page": 51,
+          "prons": [{"ipa": "/ˈmɔːɡɪdʒ/", "senses": [
+            {"pos": "n.", "mean": "[[按揭（由银行等提供房产抵押借款）]]"},
+            {"pos": "v.", "mean": "[[（向银行等）抵押（房产）]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "mort（联想“摩托”）+ ga（音似“给”）+ ge（联想“哥”）→ 把你最爱的摩托“抵押”给哥哥。"},
+          "ex": {"type": "例", "en": "Today a similar mortgage would claim more than twice that share of his monthly earnings.", "zh": "如今，类似的房贷月供将占据他月收入的两倍以上。", "key": ["mortgage"]},
+          "ext": []
+        },
+        {
+          "no": 11, "word": "recognise", "alt": "-ize", "freq": 3, "page": 51,
+          "prons": [{"ipa": "/ˈrekəɡnaɪz/", "senses": [{"pos": "v.", "mean": "[[认出]]，[[辨别出]]；[[承认]]；[[意识到]]"}]}],
+          "tip": {"type": "联想", "text": "re（字母音似“阿姨”）+ cog（音似“靠哥”）+ nise → 阿姨靠着哥哥的提醒“认出”了我。"},
+          "ex": {"type": "例", "en": "The importance of using PowerPoint in education should be recognised by all of us.", "zh": "我们所有人都应该认识到在教育中使用演示文稿的重要性。", "key": ["recognised"]},
+          "ext": [{"word": "recognition", "ipa": "/ˌrekəɡˈnɪʃn/", "senses": [{"pos": "n.", "mean": "认出；识别；认可"}]}]
+        },
+        {
+          "no": 12, "word": "challenge", "freq": 3, "page": 51,
+          "prons": [{"ipa": "/ˈtʃælɪndʒ/", "senses": [
+            {"pos": "n.", "mean": "[[挑战]]；[[艰巨任务]]"},
+            {"pos": "v.", "mean": "[[挑战]]；[[对……怀疑（或质疑）]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "cha（联想“插”）+ llen（音似“林”）+ ge（联想“哥”）→ 他用叉子插坏了林哥的蛋糕，向他发出“挑战”。"},
+          "ex": {"type": "真", "year": 2016, "en": "We can live a peaceful life despite the various challenges of the modern world.", "zh": "尽管现代世界有各种挑战，我们仍然可以过上和平的生活。", "key": ["challenges"]},
+          "ext": [{"word": "challenging", "ipa": "/ˈtʃælɪndʒɪŋ/", "senses": [{"pos": "adj.", "mean": "挑战性的；挑起争论的"}]}]
+        },
+        {
+          "no": 13, "word": "flag", "freq": 1, "page": 51,
+          "prons": [{"ipa": "/flæɡ/", "senses": [
+            {"pos": "n.", "mean": "[[旗帜]]"},
+            {"pos": "v.", "mean": "[[标示]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "fl（联想“飞来”）+ a（一）+ g（联想“哥”）→ 从屋外飞奔进来一个哥哥，手里举着“旗帜”。"},
+          "ex": {"type": "例", "en": "Hundreds of people cheered and waved flags.", "zh": "数百人欢呼并挥舞旗帜。", "key": ["flags"]},
+          "ext": []
+        },
+        {
+          "no": 14, "word": "surge", "freq": 1, "page": 51,
+          "prons": [{"ipa": "/sɜːdʒ/", "senses": [
+            {"pos": "n.", "mean": "[[突然增加]]"},
+            {"pos": "v.", "mean": "[[使强烈地感到]]；[[突然增加]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "sur-（= over，超）+ ge（联想“哥”）→ 当你的成绩超过哥哥时，哥哥的压力就像“突然增加”了。"},
+          "ex": {"type": "例", "en": "We are having trouble keeping up with the recent surge in demand.", "zh": "对于近来出现的需求猛增，我们难以应对。", "key": ["surge"]},
+          "ext": []
+        },
+        {
+          "no": 15, "word": "leap", "freq": 1, "page": 51,
+          "prons": [{"ipa": "/liːp/", "senses": [{"pos": "n. & v.", "mean": "[[跳跃]]；[[剧增]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“立扑”→ 孩子看到妈妈，立刻欢呼“跳跃”着扑向她。"},
+          "ex": {"type": "真", "year": 2017, "en": "The run has been taken; now is the time to leap.", "zh": "跑步已经结束；现在是跳跃的时候了。", "key": ["leap"]},
+          "ext": []
+        },
+        {
+          "no": 16, "word": "global", "freq": 3, "page": 52,
+          "prons": [{"ipa": "/ˈɡləʊbl/", "senses": [{"pos": "adj.", "mean": "[[全球的]]，[[全世界的]]"}]}],
+          "tip": {"type": "联想", "text": "g（联想“哥”）+ lo（音似“搂”）+ bal（联想 ball）→ 哥哥搂抱着一个地球仪 → 全球的"},
+          "ex": {"type": "真", "year": 2016, "en": "Environmental problems must be solved to ease the current global food shortage.", "zh": "环境问题必须解决，以缓解目前的全球粮食短缺。", "key": ["global"]},
+          "ext": [{"word": "globe", "ipa": "/ɡləʊb/", "senses": [{"pos": "n.", "mean": "地球；地球仪；球体"}]}]
+        },
+        {
+          "no": 17, "word": "grain", "freq": 3, "page": 52,
+          "prons": [{"ipa": "/ɡreɪn/", "senses": [{"pos": "n.", "mean": "[[谷物]]；[[颗粒]]"}]}],
+          "tip": {"type": "对照", "text": "雨（rain）中的哥哥（g）忙着收谷物（grain）。"},
+          "ex": {"type": "例", "en": "Corn and soya beans are more important as feed grains.", "zh": "玉米和大豆作为饲料谷物更为重要。", "key": ["grains"]},
+          "ext": []
+        },
+        {
+          "no": 18, "word": "cereal", "freq": 2, "page": 52,
+          "prons": [{"ipa": "/ˈsɪəriəl/", "senses": [{"pos": "n.", "mean": "[[谷物]]；[[麦片]]；[[谷类食品]]"}]}],
+          "tip": {"type": "联想", "text": "ce（音似“塞”）+ real（真的）→ 肚子里塞满了“麦片”，我真的吃饱了。"},
+          "ex": {"type": "真", "year": 2022, "en": "They consume plenty of cereal for breakfast.", "zh": "他们早餐吃了很多麦片。", "key": ["cereal"]},
+          "ext": []
+        },
+        {
+          "no": 19, "word": "wheat", "freq": 1, "page": 52,
+          "prons": [{"ipa": "/wiːt/", "senses": [{"pos": "n.", "mean": "[[小麦]]"}]}],
+          "tip": {"type": "联想", "text": "wh（联想 when）+ eat（吃）→ 吃饭时，我们常吃“小麦”制品。"},
+          "ex": {"type": "例", "en": "They grew wheat and corn on a small farm.", "zh": "他们在一个小农场里种植小麦和玉米。", "key": ["wheat"]},
+          "ext": []
+        },
+        {
+          "no": 20, "word": "glow", "freq": 1, "page": 52,
+          "prons": [{"ipa": "/ɡləʊ/", "senses": [
+            {"pos": "v.", "mean": "[[发光]]，[[发热]]"},
+            {"pos": "n.", "mean": "[[亮光]]；[[脸红]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "g（联想“哥”）+ low（低）→ 哥哥看到低处的我“脸红”了。"},
+          "ex": {"type": "真", "year": 2018, "en": "They fill these tubes with gases that glow when electrified.", "zh": "他们向这些管子充入通电发光气体。", "key": ["glow"]},
+          "ext": []
+        },
+        {
+          "no": 21, "word": "spark", "freq": 2, "page": 52,
+          "prons": [{"ipa": "/spɑːk/", "senses": [
+            {"pos": "v.", "mean": "[[产生火花]]；[[引发]]"},
+            {"pos": "n.", "mean": "[[火花]]；[[原因]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "s（音似“嘶”）+ park（公园）→“嘶嘶”的声音从公园里传出，还能看到“火花”。"},
+          "ex": {"type": "真", "year": 2017, "en": "Her energy sparked a period of experimentation and renewal.", "zh": "她的活力激发了一段实验和更新（的热潮）。", "key": ["sparked"]},
+          "ext": []
+        },
+        {
+          "no": 22, "word": "sparkle", "freq": 1, "page": 52,
+          "prons": [{"ipa": "/ˈspɑːkl/", "senses": [
+            {"pos": "n.", "mean": "[[闪烁]]；[[闪耀]]"},
+            {"pos": "v.", "mean": "[[发光]]；[[闪烁]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "spark（火花）+ le（联想“了”）→ 我看到有火花在“闪烁”了！"},
+          "ex": {"type": "例", "en": "The sky sparkled with brilliant stars.", "zh": "天空闪耀着灿烂的星星。", "key": ["sparkled"]},
+          "ext": []
+        },
+        {
+          "no": 23, "word": "wrinkle", "freq": 1, "page": 52,
+          "prons": [{"ipa": "/ˈrɪŋkl/", "senses": [
+            {"pos": "n.", "mean": "[[皱纹]]"},
+            {"pos": "v.", "mean": "[[（使）起皱纹]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "wr（联想 write）+ ink（墨水）+ le（联想“了”）→ 他写字时，墨水使纸起了“皱纹”。"},
+          "ex": {"type": "例", "en": "There were fine wrinkles around her eyes.", "zh": "她眼周出现了细纹。", "key": ["wrinkles"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 18,
+      "title": "“优雅、荣耀”相关",
+      "pages": [52, 54],
+      "map": {
+        "w": "“优雅、荣耀”相关",
+        "children": [
+          {"w": "glory", "children": [{"w": "glorious", "rel": "扩"}]},
+          {"w": "fond", "children": [
+            {"w": "favour", "rel": "相关", "children": [
+              {"w": "favourable", "rel": "扩"},
+              {"w": "favourite", "rel": "扩"},
+              {"w": "flavour", "rel": "形近"}
+            ]}
+          ]},
+          {"w": "grace", "children": [
+            {"w": "gracious", "rel": "扩"},
+            {"w": "graceful", "rel": "扩", "children": [
+              {"w": "elegant", "rel": "近义", "children": [{"w": "elegance", "rel": "扩"}]}
+            ]},
+            {"w": "charm", "rel": "相关", "children": [{"w": "charming", "rel": "扩"}]}
+          ]},
+          {"w": "honour", "children": [
+            {"w": "honourable", "rel": "扩", "children": [{"w": "honorary"}]},
+            {"w": "privilege", "rel": "近义", "children": [{"w": "privileged", "rel": "扩"}]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 24, "word": "grace", "freq": 2, "page": 53,
+          "prons": [{"ipa": "/ɡreɪs/", "senses": [
+            {"pos": "n.", "mean": "[[优美]]，[[优雅]]"},
+            {"pos": "v.", "mean": "[[使荣耀]]；[[装饰]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "g（联想“哥”）+ race（比赛）→ 比赛中的哥哥动作“优雅”。"},
+          "ex": {"type": "真", "year": 2023, "en": "Red Rum's spirit and grace had already begun to charm the leagues of Grand National fans.", "zh": "红朗姆的精神和优雅已经开始吸引（英国）国家障碍大赛联盟的赛马迷。", "key": ["grace"]},
+          "ext": [
+            {"word": "graceful", "ipa": "/ˈɡreɪsfl/", "senses": [{"pos": "adj.", "mean": "优美的，得体的"}]},
+            {"word": "gracious", "ipa": "/ˈɡreɪʃəs/", "senses": [{"pos": "adj.", "mean": "和蔼的，慈祥的，有礼貌的，宽厚的"}]}
+          ]
+        },
+        {
+          "no": 25, "word": "elegant", "freq": 1, "page": 53,
+          "prons": [{"ipa": "/ˈelɪɡənt/", "senses": [{"pos": "adj.", "mean": "[[优雅的]]；[[简洁的]]；[[漂亮致的]]"}]}],
+          "tip": {"type": "联想", "text": "e-（出）+ leg（腿）+ ant（蚂蚁）→ 蚂蚁伸出腿做了个“优雅”的动作。"},
+          "ex": {"type": "真", "year": 2016, "en": "I have seen this place—it is elegant, inside and out.", "zh": "我看过这个地方——它里里外外都很雅致。", "key": ["elegant"]},
+          "ext": [{"word": "elegance", "ipa": "/ˈelɪɡəns/", "senses": [{"pos": "n.", "mean": "优雅；雅致"}]}]
+        },
+        {
+          "no": 26, "word": "charm", "freq": 2, "page": 53,
+          "prons": [{"ipa": "/tʃɑːm/", "senses": [
+            {"pos": "n.", "mean": "[[魅力]]；[[吸引力]]；[[护身符]]"},
+            {"pos": "v.", "mean": "[[吸引]]；[[迷住]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "char（音似“诧”）+ m（联想“妹”）→ 他惊诧于妹妹的“魅力”。"},
+          "ex": {"type": "真", "year": 2020, "en": "His good luck charm sank into the sea.", "zh": "他的幸运符沉入了海里。", "key": ["charm"]},
+          "ext": [{"word": "charming", "ipa": "/ˈtʃɑːmɪŋ/", "senses": [{"pos": "adj.", "mean": "迷人的；有魅力的"}]}]
+        },
+        {
+          "no": 27, "word": "honour", "alt": "honor", "freq": 1, "page": 53,
+          "prons": [{"ipa": "/ˈɒnə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[荣誉]]；[[荣幸]]"},
+            {"pos": "v.", "mean": "[[尊敬]]；[[给……荣誉]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "荣耀手机的英文名就是 HONOR。"},
+          "ex": {"type": "真", "year": 2017, "en": "It can bring wealth and honor to them.", "zh": "它可以给他们带来财富和荣誉。", "key": ["honor"]},
+          "ext": [
+            {"word": "honourable", "alt": "honorable", "ipa": "/ˈɒnərəbl/", "senses": [{"pos": "adj.", "mean": "可敬的；荣誉的，光荣的；体面的"}]},
+            {"word": "honorary", "ipa": "/ˈɒnərəri/", "senses": [{"pos": "adj.", "mean": "名誉的，荣誉的"}]}
+          ]
+        },
+        {
+          "no": 28, "word": "privilege", "freq": 1, "page": 53,
+          "prons": [{"ipa": "/ˈprɪvəlɪdʒ/", "senses": [{"pos": "n.", "mean": "[[特权]]；[[荣幸]]"}]}],
+          "tip": {"type": "联想", "text": "pri-（提前）+ vile（音似“为了”）+ ge（联想“哥”）→ 他利用手中的“特权”提前为哥哥着想。"},
+          "ex": {"type": "真", "year": 2022, "en": "But it's also true that saying \"no\" is not merely a privilege reserved for the successful.", "zh": "但说“不”并不仅仅是成功人士的特权，这也是事实。", "key": ["privilege"]},
+          "ext": [{"word": "privileged", "ipa": "/ˈprɪvəlɪdʒd/", "senses": [{"pos": "adj.", "mean": "有特权的；荣幸的，幸运的"}]}]
+        },
+        {
+          "no": 29, "word": "glory", "freq": 1, "page": 53,
+          "prons": [{"ipa": "/ˈɡlɔːri/", "senses": [{"pos": "n.", "mean": "[[荣誉]]；[[荣耀]]；[[赞美]]；[[辉煌]]"}]}],
+          "tip": {"type": "联想", "text": "g（联想“哥”）+ lory（联想“捞日”）→ 哥哥要是能把太阳打捞上来，那可是无上的“荣誉”。"},
+          "ex": {"type": "例", "en": "What was a significant contributor to the past glory of public schools?", "zh": "公立学校过去辉煌的重要因素是什么？", "key": ["glory"]},
+          "ext": [{"word": "glorious", "ipa": "/ˈɡlɔːriəs/", "senses": [{"pos": "adj.", "mean": "光荣的；荣耀的；壮丽的；极好的"}]}]
+        },
+        {
+          "no": 30, "word": "fond", "freq": 1, "page": 53,
+          "prons": [{"ipa": "/fɒnd/", "senses": [{"pos": "adj.", "mean": "（～of）[[喜爱]]；[[喜欢]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2023, "en": "He is fond of luxury cat food.", "zh": "他喜欢奢侈的猫粮。", "key": ["fond"]},
+          "ext": []
+        },
+        {
+          "no": 31, "word": "favour", "alt": "favor", "freq": 1, "page": 53,
+          "prons": [{"ipa": "/ˈfeɪvə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[喜爱]]；[[恩惠]]；[[支持]]"},
+            {"pos": "v.", "mean": "[[偏爱]]；[[支持]]；[[更喜欢]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“非我”→“偏爱”他人非我莫属。"},
+          "ex": {"type": "真", "year": 2015, "en": "It is said, that menu-labeling could favour chains that have more healthy offerings.", "zh": "据说，菜单标签可能有利于提供更多健康食品的连锁店。", "key": ["favour"]},
+          "ext": [
+            {"word": "favourable", "alt": "favorable", "ipa": "/ˈfeɪvərəbl/", "senses": [{"pos": "adj.", "mean": "有利的；适宜的"}]},
+            {"word": "favourite", "alt": "favorite", "ipa": "/ˈfeɪvərɪt/", "senses": [
+              {"pos": "adj.", "mean": "特别受喜爱的"},
+              {"pos": "n.", "mean": "特别喜爱的人（或事物）"},
+              {"pos": "v.", "mean": "把……添加到收藏夹"}
+            ]}
+          ]
+        },
+        {
+          "no": 32, "word": "flavour", "alt": "flavor", "freq": 1, "page": 53,
+          "prons": [{"ipa": "/ˈfleɪvə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[味（道）]]；[[特色]]；[[概述]]"},
+            {"pos": "v.", "mean": "[[给……调味]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "这是我更喜欢（favour）的味道（flavour）。"},
+          "ex": {"type": "例", "en": "Moutai has mild flavour and a special fragrance.", "zh": "茅台味道温和，香味独特。", "key": ["flavour"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 19,
+      "title": "“与众不同”相关",
+      "pages": [54, 55],
+      "map": {
+        "w": "“与众不同”相关",
+        "children": [
+          {"w": "extraordinary", "children": [
+            {"w": "eminent", "rel": "近义", "children": [
+              {"w": "prominent", "rel": "形近", "children": [{"w": "prominence", "rel": "扩"}]}
+            ]},
+            {"w": "outstanding", "rel": "近义", "children": [
+              {"w": "brilliant", "children": [{"w": "brilliance", "rel": "扩"}]}
+            ]},
+            {"w": "typical", "rel": "反义"}
+          ]},
+          {"w": "mark", "children": [
+            {"w": "remark", "rel": "加前缀", "children": [{"w": "remarkable", "rel": "扩"}]},
+            {"w": "comment", "rel": "相关", "children": [
+              {"w": "commentary", "rel": "扩"},
+              {"w": "commentator", "rel": "扩"},
+              {"w": "commence", "rel": "形近", "children": [{"w": "commencement", "rel": "扩"}]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 33, "word": "typical", "freq": 3, "page": 54,
+          "prons": [{"ipa": "/ˈtɪpɪk(ə)l/", "senses": [{"pos": "adj.", "mean": "[[典型的]]；[[一贯的]]，[[平常的]]"}]}],
+          "tip": {"type": "对照", "text": "type n.种类；类型 → typical adj."},
+          "ex": {"type": "真", "year": 2017, "en": "Leah was a typical successful woman before she changed her career.", "zh": "利亚在转行之前是一个典型的成功女性。", "key": ["typical"]},
+          "ext": []
+        },
+        {
+          "no": 34, "word": "extraordinary", "freq": 2, "page": 54,
+          "prons": [{"ipa": "/ɪkˈstrɔːdnri/", "senses": [{"pos": "adj.", "mean": "[[非凡的]]；[[不平常的]]"}]}],
+          "tip": {"type": "构词", "text": "extra（额外的）+ ordinary（一般的）→ 超出一般的 → 非凡的；不平常的"},
+          "ex": {"type": "例", "en": "The response from the public has been quite extraordinary.", "zh": "公众的反应相当不同寻常。", "key": ["extraordinary"]},
+          "ext": []
+        },
+        {
+          "no": 35, "word": "eminent", "freq": 1, "page": 54,
+          "prons": [{"ipa": "/ˈemɪnənt/", "senses": [{"pos": "adj.", "mean": "[[明显的]]；[[杰出的]]，[[著名的]]"}]}],
+          "tip": {"type": "联想", "text": "e-（出）+ min（联想“民”）+ ent（联想 enter）→ 外出打工的民众希望进入一家“著名的”企业。"},
+          "ex": {"type": "例", "en": "This description even fits the majority of eminent scholars.", "zh": "这种描述甚至符合大多数著名的学者。", "key": ["eminent"]},
+          "ext": []
+        },
+        {
+          "no": 36, "word": "prominent", "freq": 2, "page": 54,
+          "prons": [{"ipa": "/ˈprɒmɪnənt/", "senses": [{"pos": "adj.", "mean": "[[突出的]]；[[卓越的]]，[[重要的]]，[[著名的]]"}]}],
+          "tip": {"type": "对照", "text": "这位著名的（eminent）科学家为国家做出了突出的（prominent）贡献。"},
+          "ex": {"type": "例", "en": "In the past few years, prominent schools around the world have joined the trend.", "zh": "在过去的几年里，世界各地的知名学校加入了这一潮流。", "key": ["prominent"]},
+          "ext": [{"word": "prominence", "ipa": "/ˈprɒmɪnəns/", "senses": [{"pos": "n.", "mean": "重要；突出"}]}]
+        },
+        {
+          "no": 37, "word": "outstanding", "freq": 2, "page": 54,
+          "prons": [{"ipa": "/aʊtˈstændɪŋ/", "senses": [{"pos": "adj.", "mean": "[[优秀的]]，[[杰出的]]，[[突出的]]"}]}],
+          "tip": {"type": "构词", "text": "out（外面）+ stand（站）+ -ing（形容词后缀）→ 站在外面的 → 突出的"},
+          "ex": {"type": "真", "year": 2021, "en": "They feel proud of being an outstanding problem solver.", "zh": "他们为自己是优秀的问题解决者感到自豪。", "key": ["outstanding"]},
+          "ext": []
+        },
+        {
+          "no": 38, "word": "mark", "freq": 1, "page": 54,
+          "prons": [{"ipa": "/mɑːk/", "senses": [
+            {"pos": "n.", "mean": "[[成绩]]；[[等级]]"},
+            {"pos": "v.", "mean": "[[做记号]]；[[标记]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "马克笔（marker）就是用来做记号（mark）的笔。"},
+          "ex": {"type": "例", "en": "A student who earns good marks is generally a good student.", "zh": "一个成绩好的学生通常是个好学生。", "key": ["marks"]},
+          "ext": []
+        },
+        {
+          "no": 39, "word": "remark", "freq": 2, "page": 54,
+          "prons": [{"ipa": "/rɪˈmɑːk/", "senses": [
+            {"pos": "n.", "mean": "[[言论]]；[[评述]]"},
+            {"pos": "v.", "mean": "[[说起]]；[[评论]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "re（字母音似“阿姨”）+ mark（标记）→ 阿姨在标记处写了“评论”。"},
+          "ex": {"type": "例", "en": "How did people feel when they learned of her remarks?", "zh": "当人们得知她的言论时，感觉如何？", "key": ["remarks"]},
+          "ext": [{"word": "remarkable", "ipa": "/rɪˈmɑːkəbl/", "senses": [{"pos": "adj.", "mean": "非凡的；引人注目的"}]}]
+        },
+        {
+          "no": 40, "word": "comment", "freq": 3, "page": 54,
+          "prons": [{"ipa": "/ˈkɒment/", "senses": [
+            {"pos": "n.", "mean": "[[议论]]；[[评论]]；[[解释]]"},
+            {"pos": "v.", "mean": "[[表达意见]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "com-（所有的）+ men（男人）+ t（联想“他”）→ 所有的男人都“评论”了他。"},
+          "ex": {"type": "例", "en": "Such comments often seem quite reasonable.", "zh": "这样的评论往往看似很合理。", "key": ["comments"]},
+          "ext": [
+            {"word": "commentary", "ipa": "/ˈkɒmentri/", "senses": [{"pos": "n.", "mean": "评论；现场解说"}]},
+            {"word": "commentator", "ipa": "/ˈkɒmenteɪtə(r)/", "senses": [{"pos": "n.", "mean": "评论员；实况解说员"}]}
+          ]
+        },
+        {
+          "no": 41, "word": "commence", "freq": 1, "page": 55,
+          "prons": [{"ipa": "/kəˈmens/", "senses": [{"pos": "v.", "mean": "[[开始]]；[[着手]]"}]}],
+          "tip": {"type": "联想", "text": "com-（所有的）+ mence（音似“闷死”）→ 养殖户“着手”清理所有因天气太热而闷死鸡。"},
+          "ex": {"type": "例", "en": "The meeting is scheduled to commence at noon.", "zh": "会议定于午间召开。", "key": ["commence"]},
+          "ext": [{"word": "commencement", "ipa": "/kəˈmensmənt/", "senses": [{"pos": "n.", "mean": "开始；开端；毕业典礼"}]}]
+        },
+        {
+          "no": 42, "word": "brilliant", "freq": 2, "page": 55,
+          "prons": [{"ipa": "/ˈbrɪliənt/", "senses": [{"pos": "adj.", "mean": "[[明亮的]]；[[杰出的]]；[[聪颖的]]；[[巧妙的]]"}]}],
+          "tip": {"type": "联想", "text": "bri（联想 bright）+ llian（联想“脸”）+ t（联想“他”）→ 他“明亮的”脸上映着光。"},
+          "ex": {"type": "例", "en": "She has one of the most brilliant minds in the country.", "zh": "她是全国最有才气的人之一。", "key": ["brilliant"]},
+          "ext": [{"word": "brilliance", "ipa": "/ˈbrɪliəns/", "senses": [{"pos": "n.", "mean": "聪明；才华；亮度"}]}]
+        }
+      ]
+    },
+    {
+      "no": 20,
+      "title": "“宏伟的、极好的”相关",
+      "pages": [55, 56],
+      "map": {
+        "w": "“宏伟的、极好的”相关",
+        "children": [
+          {"w": "terrific"},
+          {"w": "splendid", "children": [{"w": "splendour", "rel": "扩"}]},
+          {"w": "grand"},
+          {"w": "wonder", "children": [
+            {"w": "wonderful", "rel": "扩"},
+            {"w": "miracle", "rel": "近义", "children": [
+              {"w": "miraculous", "rel": "扩"},
+              {"w": "magic", "rel": "相关", "children": [{"w": "magical", "rel": "扩"}]},
+              {"w": "magnetic", "rel": "相关", "children": [{"w": "magnet", "rel": "扩"}]}
+            ]}
+          ]},
+          {"w": "magnificent", "children": [{"w": "magnificence", "rel": "扩"}]},
+          {"w": "marvellous", "children": [{"w": "marvel", "rel": "扩"}]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 43, "word": "terrific", "freq": 1, "page": 55,
+          "prons": [{"ipa": "/təˈrɪfɪk/", "senses": [{"pos": "adj.", "mean": "[[极好的]]，[[了不起的]]；[[惊人的]]"}]}],
+          "tip": {"type": "联想", "text": "te（联想“特”）+（r）ri（联想“日”）+ fic（音似“非可”）→ 特别的日子里非提不可的就是大家做过的“了不起的”事情。"},
+          "ex": {"type": "例", "en": "She is known to have a terrific figure.", "zh": "大家都知道她的身材很好。", "key": ["terrific"]},
+          "ext": []
+        },
+        {
+          "no": 44, "word": "magnificent", "freq": 1, "page": 55,
+          "prons": [{"ipa": "/mæɡˈnɪfɪsnt/", "senses": [{"pos": "adj.", "mean": "[[宏伟的]]，[[壮丽的]]；[[值得赞扬的]]"}]}],
+          "tip": {"type": "联想", "text": "ma（联想“妈”）+ gni（音似“哥你”）+ ficent（音似“飞身”）→ 妈妈、哥哥和你都飞身而入“宏伟的”殿堂。"},
+          "ex": {"type": "例", "en": "We visited the magnificent libraries.", "zh": "我们参观了宏伟的图书馆。", "key": ["magnificent"]},
+          "ext": [{"word": "magnificence", "ipa": "/mæɡˈnɪfɪsns/", "senses": [{"pos": "n.", "mean": "宏伟；富丽堂皇；壮丽"}]}]
+        },
+        {
+          "no": 45, "word": "splendid", "freq": 1, "page": 55,
+          "prons": [{"ipa": "/ˈsplendɪd/", "senses": [{"pos": "adj.", "mean": "[[极好的]]；[[壮丽的]]，[[灿烂的]]"}]}],
+          "tip": {"type": "对照", "text": "花费（spend）了（l）我们很多时间和精力做（did）的事情，一定是极好的（splendid）。"},
+          "ex": {"type": "例", "en": "The book includes a wealth of splendid photographs.", "zh": "这本书有大量极好的照片。", "key": ["splendid"]},
+          "ext": [{"word": "splendour", "alt": "splendor", "ipa": "/ˈsplendə(r)/", "senses": [{"pos": "n.", "mean": "壮丽；雄伟；华丽"}]}]
+        },
+        {
+          "no": 46, "word": "marvellous", "alt": "marvelous", "freq": 2, "page": 55,
+          "prons": [{"ipa": "/ˈmɑːvələs/", "senses": [{"pos": "adj.", "mean": "[[极好的]]；[[非凡的]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“妈我乐死”→ 看那部“极好的”喜剧片时，妈妈和我都快乐死了。"},
+          "ex": {"type": "例", "en": "It's marvellous what modern technology can do.", "zh": "现代技术所能做的真是太了不起了。", "key": ["marvellous"]},
+          "ext": []
+        },
+        {
+          "no": 47, "word": "marvel", "freq": 1, "page": 55,
+          "prons": [{"ipa": "/ˈmɑːvl/", "senses": [
+            {"pos": "n.", "mean": "[[奇迹]]"},
+            {"pos": "v.", "mean": "[[感到惊奇]]；[[大为赞叹]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "All in all, the Olympic class ships were marvels of sea engineering.", "zh": "总之，奥林匹克级舰艇是海洋工程的奇迹。", "key": ["marvels"]},
+          "ext": []
+        },
+        {
+          "no": 48, "word": "grand", "freq": 1, "page": 56,
+          "prons": [{"ipa": "/ɡrænd/", "senses": [{"pos": "adj.", "mean": "[[宏伟的]]；[[（重）大的]]，[[壮丽的]]"}]}],
+          "tip": {"type": "对照", "text": "小时候觉得父母（parents）是无所不能的超人，祖父母（grandparents）是更大的（grand）父母。"},
+          "ex": {"type": "例", "en": "The book dares to take on grand themes in the grand manner.", "zh": "这本书敢于以宏大的方式呈现宏大的主题。", "key": ["grand", "grand"]},
+          "ext": []
+        },
+        {
+          "no": 49, "word": "wonder", "freq": 1, "page": 56,
+          "prons": [{"ipa": "/ˈwʌndə(r)/", "senses": [
+            {"pos": "v.", "mean": "[[想知道]]；[[惊讶]]"},
+            {"pos": "n.", "mean": "[[惊异]]；[[奇迹]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2024, "en": "People often wonder why some entrepreneurs have greater success than others.", "zh": "人们经常想知道为什么有些企业家比其他人更成功。", "key": ["wonder"]},
+          "ext": [{"word": "wonderful", "ipa": "/ˈwʌndəfl/", "senses": [{"pos": "adj.", "mean": "精彩的；绝妙的；使人愉快的"}]}]
+        },
+        {
+          "no": 50, "word": "miracle", "freq": 1, "page": 56,
+          "prons": [{"ipa": "/ˈmɪrəkl/", "senses": [{"pos": "n.", "mean": "[[神迹]]；[[奇迹]]"}]}],
+          "tip": {"type": "对照", "text": "照了魔镜（mirror）就会有奇迹（miracle）发生。"},
+          "ex": {"type": "例", "en": "It's a miracle that nobody was killed in the crash.", "zh": "撞车事故中没人丧生，这真是奇迹。", "key": ["miracle"]},
+          "ext": [{"word": "miraculous", "ipa": "/mɪˈrækjələs/", "senses": [{"pos": "adj.", "mean": "奇迹般的；不可思议的；不平凡的"}]}]
+        },
+        {
+          "no": 51, "word": "magic", "freq": 1, "page": 56,
+          "prons": [{"ipa": "/ˈmædʒɪk/", "senses": [
+            {"pos": "n.", "mean": "[[魔法，魔术]]"},
+            {"pos": "adj.", "mean": "[[魔术的，有魔力的]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "ma（联想“妈”）+ g（联想“给”）+ ic（联想“IC 卡”）→ 妈妈给的 IC 卡好像有“魔法”，怎么都用不完。"},
+          "ex": {"type": "真", "year": 2023, "en": "We have long feared that this \"revolution in distribution\" uses corporate black magic on our appetite.", "zh": "长期以来，我们一直担心，这种“分销革命”会利用企业黑魔法影响我们的胃口。", "key": ["magic"]},
+          "ext": [{"word": "magical", "ipa": "/ˈmædʒɪkl/", "senses": [{"pos": "adj.", "mean": "有魔力的；用于巫术的；奇妙的"}]}]
+        },
+        {
+          "no": 52, "word": "magnetic", "freq": 1, "page": 56,
+          "prons": [{"ipa": "/mæɡˈnetɪk/", "senses": [{"pos": "adj.", "mean": "[[有磁性的]]；[[有吸引力的]]，[[有魅力的]]"}]}],
+          "tip": {"type": "联想", "text": "ma（联想“妈”）+ gne（音似“哥奶”）+ t（联想“他”）+ ic（联想“IC 卡”）→ 妈妈、哥哥、奶奶和他都喜欢用有防磁功能的 IC 卡乘坐公交车，因为“有磁性的”公交卡容易消磁。"},
+          "ex": {"type": "例", "en": "The magnetic pull of the city was hard to resist.", "zh": "都市的强大魅力令人难以抗拒。", "key": ["magnetic"]},
+          "ext": []
+        },
+        {
+          "no": 53, "word": "magnet", "freq": 1, "page": 56,
+          "prons": [{"ipa": "/ˈmæɡnət/", "senses": [{"pos": "n.", "mean": "[[磁铁]]；[[有吸引力的人（或事物）]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The scent of flowers acts as a magnet to bees.", "zh": "花的香味像磁铁一样吸引着蜜蜂。", "key": ["magnet"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 21,
+      "title": "“政府机构”相关",
+      "pages": [56, 58],
+      "map": {
+        "w": "“政府机构”相关",
+        "children": [
+          {"w": "parliament", "children": [
+            {"w": "parliamentary", "rel": "扩"},
+            {"w": "delegate", "rel": "相关", "children": [
+              {"w": "delegation", "rel": "扩"},
+              {"w": "delete", "rel": "形近", "children": [{"w": "deletion", "rel": "扩"}]}
+            ]},
+            {"w": "senator", "rel": "相关", "children": [{"w": "senate", "rel": "扩"}]},
+            {"w": "council", "rel": "相关", "children": [{"w": "councillor", "rel": "扩"}]}
+          ]},
+          {"w": "bureau", "children": [
+            {"w": "federal", "children": [{"w": "federation", "rel": "扩"}]}
+          ]},
+          {"w": "govern", "children": [
+            {"w": "government", "rel": "扩", "children": [{"w": "governor"}]},
+            {"w": "administer", "rel": "近义", "children": [
+              {"w": "administration", "rel": "扩", "children": [{"w": "administrative"}]}
+            ]}
+          ]},
+          {"w": "official", "children": [
+            {"w": "officer", "rel": "扩", "children": [
+              {"w": "minister", "rel": "相关", "children": [
+                {"w": "ministry", "children": [{"w": "ministerial", "rel": "扩"}]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 54, "word": "parliament", "freq": 1, "page": 57,
+          "prons": [{"ipa": "/ˈpɑːləmənt/", "senses": [{"pos": "n.", "mean": "[[议会]]；[[国会]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“怕了没”→“议会”是最高的立法机关，你怕了没？"},
+          "ex": {"type": "例", "en": "Later Parliament increased the speed limit to 14 miles per hour.", "zh": "后来议会将限速提高到每小时 14 英里。", "key": ["Parliament"]},
+          "ext": [{"word": "parliamentary", "ipa": "/ˌpɑːləˈmentri/", "senses": [{"pos": "adj.", "mean": "议会的，国会的"}]}]
+        },
+        {
+          "no": 55, "word": "delegate", "freq": 1, "page": 57,
+          "prons": [
+            {"ipa": "/ˈdelɪɡət/", "senses": [{"pos": "n.", "mean": "[[代表]]"}]},
+            {"ipa": "/ˈdelɪɡeɪt/", "senses": [{"pos": "v.", "mean": "[[授（权）]]"}]}
+          ],
+          "tip": {"type": "联想", "text": "dele（联想 delete）+ gate（门）→ 我删除了录入的指纹，想开门锁需要重新“授权”。"},
+          "ex": {"type": "例", "en": "Congress delegates rejected the proposals.", "zh": "国会代表拒绝了这些提议。", "key": ["delegates"]},
+          "ext": [{"word": "delegation", "ipa": "/ˌdelɪˈɡeɪʃn/", "senses": [{"pos": "n.", "mean": "代表团；授权；委托"}]}]
+        },
+        {
+          "no": 56, "word": "delete", "freq": 2, "page": 57,
+          "prons": [{"ipa": "/dɪˈliːt/", "senses": [{"pos": "v.", "mean": "[[删除]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2017, "en": "They deleted all information about gender.", "zh": "他们删除了所有关于性别的信息。", "key": ["deleted"]},
+          "ext": [{"word": "deletion", "ipa": "/dɪˈliːʃn/", "senses": [{"pos": "n.", "mean": "删去；删除"}]}]
+        },
+        {
+          "no": 57, "word": "senator", "freq": 1, "page": 57,
+          "prons": [{"ipa": "/ˈsenətə(r)/", "senses": [{"pos": "n.", "mean": "[[参议员]]"}]}],
+          "tip": {"type": "联想", "text": "sen（联想 send）+ ator（联想 actor）→ 他们派遣了一个演员做“参议员”。"},
+          "ex": {"type": "例", "en": "The senator called on Facebook to change its privacy policy.", "zh": "那个参议员呼吁脸书改其隐私政策。", "key": ["senator"]},
+          "ext": [{"word": "senate", "ipa": "/ˈsenət/", "senses": [{"pos": "n.", "mean": "参议院"}]}]
+        },
+        {
+          "no": 58, "word": "council", "freq": 3, "page": 57,
+          "prons": [{"ipa": "/ˈkaʊnsl/", "senses": [{"pos": "n.", "mean": "[[理事会]]，[[委员会]]，[[地方议会]]"}]}],
+          "tip": {"type": "联想", "text": "coun（联想 count）+ cil（联想 pencil）→ 那个“理事会”成员不干实事，上班数铅笔。"},
+          "ex": {"type": "例", "en": "The decision still has to be ratified by the full council.", "zh": "该决定仍需得到整个委员会的批准。", "key": ["council"]},
+          "ext": [{"word": "councillor", "alt": "councilor", "ipa": "/ˈkaʊnsələ(r)/", "senses": [{"pos": "n.", "mean": "市议员；政务委员会委员"}]}]
+        },
+        {
+          "no": 59, "word": "bureau", "freq": 3, "page": 57,
+          "prons": [{"ipa": "/ˈbjʊərəʊ/", "senses": [{"pos": "n.", "mean": "[[局]]；[[科]]；[[处]]；[[办事处]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“不弱”→ 只要能为人民服务，在“办事处”里的工作也不弱。"},
+          "ex": {"type": "真", "year": 2020, "en": "According to the Census Bureau, 38 million people in the U.S. are living below the official poverty thresholds.", "zh": "根据人口普查局的数据，美国有 3,800 万人生活在官方贫困线以下。", "key": ["Bureau"]},
+          "ext": []
+        },
+        {
+          "no": 60, "word": "federal", "freq": 3, "page": 57,
+          "prons": [{"ipa": "/ˈfedərəl/", "senses": [{"pos": "adj.", "mean": "[[联邦制的]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2019, "en": "I think we're unique as a federal agency.", "zh": "我认为我们作为联邦机构是独一无二的。", "key": ["federal"]},
+          "ext": [{"word": "federation", "ipa": "/ˌfedəˈreɪʃn/", "senses": [{"pos": "n.", "mean": "联邦；联盟；联邦政府"}]}]
+        },
+        {
+          "no": 61, "word": "govern", "freq": 2, "page": 57,
+          "prons": [{"ipa": "/ˈɡʌvn/", "senses": [{"pos": "v.", "mean": "[[统治]]；[[控制]]；[[支配]]"}]}],
+          "tip": {"type": "对照", "text": "政府（government）就是统治（govern）国家的机关。"},
+          "ex": {"type": "真", "year": 2015, "en": "Human lives are governed by the desire to experience joy.", "zh": "人类的生活被体验快乐的欲望所支配。", "key": ["governed"]},
+          "ext": [
+            {"word": "government", "ipa": "/ˈɡʌvənmənt/", "senses": [{"pos": "n.", "mean": "政府；政体；国家体制；统治"}]},
+            {"word": "governor", "ipa": "/ˈɡʌvənə(r)/", "senses": [{"pos": "n.", "mean": "统治者；管辖者；总督"}]}
+          ]
+        },
+        {
+          "no": 62, "word": "administer", "freq": 1, "page": 57,
+          "prons": [{"ipa": "/ədˈmɪnɪstə(r)/", "senses": [{"pos": "v.", "mean": "[[管理，治理]]；[[执行，实施]]"}]}],
+          "tip": {"type": "构词", "text": "ad-（= to）+ minister（部长）→ 部长做的 → 管理，治理"},
+          "ex": {"type": "例", "en": "The pension funds are administered by commercial banks.", "zh": "养老基金由商业银行管理。", "key": ["administered"]},
+          "ext": [
+            {"word": "administration", "ipa": "/ədˌmɪnɪˈstreɪʃn/", "senses": [{"pos": "n.", "mean": "管理；实施；行政机构"}]},
+            {"word": "administrative", "ipa": "/ədˈmɪnɪstrətɪv/", "senses": [{"pos": "adj.", "mean": "管理的，行政的"}]}
+          ]
+        },
+        {
+          "no": 63, "word": "official", "freq": 1, "page": 58,
+          "prons": [{"ipa": "/əˈfɪʃl/", "senses": [
+            {"pos": "adj.", "mean": "[[正式的]]；[[官方的]]"},
+            {"pos": "n.", "mean": "[[官员]]；[[高级职员]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "office n.办公室 → official adj. & n."},
+          "ex": {"type": "例", "en": "The film's official website is also very informative.", "zh": "电影官网也很有信息量。", "key": ["official"]},
+          "ext": []
+        },
+        {
+          "no": 64, "word": "officer", "freq": 1, "page": 58,
+          "prons": [{"ipa": "/ˈɒfɪsə(r)/", "senses": [{"pos": "n.", "mean": "[[军官]]；[[官员]]；[[高级职员]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2019, "en": "It was shot to death by a police officer.", "zh": "它被一名警官开枪击毙。", "key": ["officer"]},
+          "ext": []
+        },
+        {
+          "no": 65, "word": "minister", "freq": 2, "page": 58,
+          "prons": [{"ipa": "/ˈmɪnɪstə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[大臣，部长]]；[[牧师]]"},
+            {"pos": "v.", "mean": "[[当牧师]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "mini（小的）+ -(e)st（最高级词尾）+ -er（表示人的后缀）→ 在古代，在皇帝面前自称“小人（微臣）”的人通常是“大臣”。"},
+          "ex": {"type": "例", "en": "She became minister of education in 2016.", "zh": "她于 2016 年成为教育部长。", "key": ["minister"]},
+          "ext": []
+        },
+        {
+          "no": 66, "word": "ministry", "freq": 1, "page": 58,
+          "prons": [{"ipa": "/ˈmɪnɪstri/", "senses": [{"pos": "n.", "mean": "[[（政府的）部]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The Ministry of Transport maintains that speed limits reduce accidents.", "zh": "交通运输部认为限速可以减少交通事故。", "key": ["Ministry"]},
+          "ext": [{"word": "ministerial", "ipa": "/ˌmɪnɪˈstɪəriəl/", "senses": [{"pos": "adj.", "mean": "部长的；大臣的"}]}]
+        }
+      ]
+    },
+    {
+      "no": 22,
+      "title": "mi(s)相关",
+      "pages": [58, 59],
+      "map": {
+        "w": "mi(s)相关",
+        "children": [
+          {"w": "minor", "children": [
+            {"w": "minority", "rel": "扩"},
+            {"w": "minus", "rel": "音近"}
+          ]},
+          {"w": "mislead", "children": [
+            {"w": "misleading", "rel": "扩"},
+            {"w": "lead", "rel": "去前缀", "children": [
+              {"w": "leader", "rel": "扩"},
+              {"w": "leadership", "rel": "扩"},
+              {"w": "leading", "rel": "扩"},
+              {"w": "guide", "rel": "近义", "children": [
+                {"w": "guidance", "rel": "扩"},
+                {"w": "guideline", "rel": "合成"},
+                {"w": "compass", "rel": "相关"}
+              ]}
+            ]}
+          ]},
+          {"w": "misunderstand", "children": [{"w": "misunderstanding", "rel": "扩"}]},
+          {"w": "misfortune", "children": [
+            {"w": "doom", "rel": "近义", "children": [{"w": "fate", "rel": "相关"}]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 67, "word": "minor", "freq": 3, "page": 58,
+          "prons": [{"ipa": "/ˈmaɪnə(r)/", "senses": [
+            {"pos": "adj.", "mean": "[[较小的]]，[[次要的]]"},
+            {"pos": "n.", "mean": "[[未成年人]]；[[辅修课程]]"},
+            {"pos": "v.", "mean": "[[辅修]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2017, "en": "He received a minor injury in the Iditarod Race.", "zh": "他在艾迪塔罗德比赛中受了轻伤。", "key": ["minor"]},
+          "ext": [{"word": "minority", "ipa": "/maɪˈnɒrəti/", "senses": [{"pos": "n.", "mean": "少数；少数派；少数民族"}]}]
+        },
+        {
+          "no": 68, "word": "minus", "freq": 1, "page": 58,
+          "prons": [{"ipa": "/ˈmaɪnəs/", "senses": [
+            {"pos": "adj.", "mean": "[[负的]]；[[负面的]]，[[不利的]]"},
+            {"pos": "prep.", "mean": "[[减]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Seven minus three is four.", "zh": "7 减 3 等于 4。", "key": ["minus"]},
+          "ext": []
+        },
+        {
+          "no": 69, "word": "lead", "freq": 1, "page": 58,
+          "prons": [
+            {"ipa": "/liːd/", "senses": [
+              {"pos": "v.", "mean": "[[引领]]，[[引导]]；[[带路]]；[[导致]]；[[过（生活）]]"},
+              {"pos": "n.", "mean": "[[领先地位]]；[[实例]]"}
+            ]},
+            {"ipa": "/led/", "senses": [{"pos": "n.", "mean": "[[铅]]；[[铅笔芯]]"}]}
+          ],
+          "tip": null,
+          "ex": {"type": "真", "year": 2016, "en": "It often leads to innovations in other related fields.", "zh": "它往往会促成其他相关领域的创新。", "key": ["leads"]},
+          "ext": [
+            {"word": "leader", "ipa": "/ˈliːdə(r)/", "senses": [{"pos": "n.", "mean": "领导人，首领"}]},
+            {"word": "leadership", "ipa": "/ˈliːdəʃɪp/", "senses": [{"pos": "n.", "mean": "领导；领导地位"}]}
+          ]
+        },
+        {
+          "no": 70, "word": "leading", "freq": 1, "page": 58,
+          "prons": [
+            {"ipa": "/ˈliːdɪŋ/", "senses": [{"pos": "adj.", "mean": "[[最重要的]]；[[一流的]]；[[领先的]]"}]},
+            {"ipa": "/ˈledɪŋ/", "senses": [{"pos": "n.", "mean": "[[行距（印刷文本两行之间的距离）]]"}]}
+          ],
+          "tip": null,
+          "ex": {"type": "例", "en": "She started the last lap just behind the leading group.", "zh": "她开始跑最后一圈时紧跟在领先的一组人后面。", "key": ["leading"]},
+          "ext": []
+        },
+        {
+          "no": 71, "word": "mislead", "freq": 1, "page": 58,
+          "prons": [{"ipa": "/ˌmɪsˈliːd/", "senses": [{"pos": "v.", "mean": "[[误导]]；[[引入歧途]]；[[使误信]]"}]}],
+          "tip": {"type": "构词", "text": "mis-（错误，坏）+ lead（引导）→ 误导"},
+          "ex": {"type": "例", "en": "It misleads people to rely on sunscreen for protection.", "zh": "它误导人们依赖防晒霜来防护。", "key": ["misleads"]},
+          "ext": [{"word": "misleading", "ipa": "/ˌmɪsˈliːdɪŋ/", "senses": [{"pos": "adj.", "mean": "令人误解的；引入歧途的"}]}]
+        },
+        {
+          "no": 72, "word": "misunderstand", "freq": 1, "page": 59,
+          "prons": [{"ipa": "/ˌmɪsʌndəˈstænd/", "senses": [{"pos": "v.", "mean": "[[误解]]；[[误会]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Don't misunderstand me—I am grateful for all you've done.", "zh": "别误解我的意思，我对你所做的一切都很感激。", "key": ["misunderstand"]},
+          "ext": [{"word": "misunderstanding", "ipa": "/ˌmɪsʌndəˈstændɪŋ/", "senses": [{"pos": "n.", "mean": "误解；误会；不和"}]}]
+        },
+        {
+          "no": 73, "word": "misfortune", "freq": 1, "page": 59,
+          "prons": [{"ipa": "/mɪsˈfɔːtʃuːn/", "senses": [{"pos": "n.", "mean": "[[厄运，不幸]]；[[不幸的事故（或情况、事件）]]"}]}],
+          "tip": {"type": "构词", "text": "mis-（错误，坏）+ fortune（运气）→ 厄运，不幸"},
+          "ex": {"type": "例", "en": "They all experienced terrible misfortunes.", "zh": "他们都经历了可怕的不幸事件。", "key": ["misfortunes"]},
+          "ext": []
+        },
+        {
+          "no": 74, "word": "doom", "freq": 1, "page": 59,
+          "prons": [{"ipa": "/duːm/", "senses": [
+            {"pos": "n.", "mean": "[[毁灭]]；[[厄运]]"},
+            {"pos": "v.", "mean": "[[注定（失败、毁灭等）]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "doo（音似“赌”）+ m（联想“命”）→ 赌徒赌命，“注定”最后会被“毁灭”。"},
+          "ex": {"type": "例", "en": "Despite these poor figures, it's not all doom and gloom.", "zh": "尽管这些数字很糟糕，但还不至于说一点希望都没有。", "key": ["doom"]},
+          "ext": []
+        },
+        {
+          "no": 75, "word": "fate", "freq": 2, "page": 59,
+          "prons": [{"ipa": "/feɪt/", "senses": [{"pos": "n.", "mean": "[[命运]]；[[天意]]；[[定数]]"}]}],
+          "tip": {"type": "对照", "text": "肥（fat）鹅（e）的命运（fate）就是更快地被端上餐桌。"},
+          "ex": {"type": "真", "year": 2021, "en": "We regard these disappointments as a fate.", "zh": "我们把这些失望视为命运。", "key": ["fate"]},
+          "ext": []
+        },
+        {
+          "no": 76, "word": "guide", "freq": 1, "page": 59,
+          "prons": [{"ipa": "/ɡaɪd/", "senses": [
+            {"pos": "n.", "mean": "[[指南]]；[[导游]]；[[指导者]]"},
+            {"pos": "v.", "mean": "[[给某人领路（或导游）]]；[[指引]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "gui（联想“贵”）+ de（联想“的”）→ 有些“导游”的收费还是很贵的。"},
+          "ex": {"type": "真", "year": 2021, "en": "He is a tour guide.", "zh": "他是一个导游。", "key": ["guide"]},
+          "ext": [{"word": "guidance", "ipa": "/ˈɡaɪdns/", "senses": [{"pos": "n.", "mean": "指导；咨询；导航"}]}]
+        },
+        {
+          "no": 77, "word": "guideline", "freq": 2, "page": 59,
+          "prons": [{"ipa": "/ˈɡaɪdlaɪn/", "senses": [{"pos": "n.", "mean": "[[指导方针]]；[[行动纲领]]；[[准则]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2016, "en": "Those guidelines are outdated and extremely inadequate.", "zh": "那些指导方针已经过时，而且极不完备。", "key": ["guidelines"]},
+          "ext": []
+        },
+        {
+          "no": 78, "word": "compass", "freq": 1, "page": 59,
+          "prons": [{"ipa": "/ˈkʌmpəs/", "senses": [{"pos": "n.", "mean": "[[指南针]]；[[圆规]]；[[界限]]"}]}],
+          "tip": {"type": "联想", "text": "com（联想 come）+ pass（通过）→ 来这里要穿过森林，很容易迷路，所以需要“指南针”。"},
+          "ex": {"type": "例", "en": "We had to rely on a compass and a lot of luck to get there.", "zh": "我们只得依靠指南针和很大的运气才能到那儿。", "key": ["compass"]},
+          "ext": []
+        }
+      ]
+    }
+  ],
+  "unit_summary": {"groups": 22, "words": 228, "ext": 146, "zhen": 90, "li": 138}
+}

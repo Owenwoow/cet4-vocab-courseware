@@ -1,0 +1,2286 @@
+{
+  "id": "u02-l01",
+  "part": 1,
+  "unit": 2,
+  "lesson": 1,
+  "pages": [
+    30,
+    35
+  ],
+  "groups": [
+    {
+      "no": 1,
+      "title": "“梦想实现”相关",
+      "pages": [
+        30,
+        31
+      ],
+      "map": {
+        "w": "“梦想实现”相关",
+        "children": [
+          {
+            "w": "ambition",
+            "children": [
+              {
+                "w": "ambitious",
+                "rel": "扩"
+              }
+            ]
+          },
+          {
+            "w": "accomplish",
+            "children": [
+              {
+                "w": "accomplishment",
+                "rel": "扩"
+              },
+              {
+                "w": "fulfill",
+                "rel": "近义",
+                "children": [
+                  {
+                    "w": "fulfillment",
+                    "rel": "扩",
+                    "children": [
+                      {
+                        "w": "full",
+                        "rel": "相关",
+                        "children": [
+                          {
+                            "w": "empty",
+                            "rel": "反义",
+                            "children": [
+                              {
+                                "w": "emptiness",
+                                "rel": "扩"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "w": "fill",
+                        "rel": "相关",
+                        "children": [
+                          {
+                            "w": "filling",
+                            "rel": "扩"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "w": "achieve",
+            "children": [
+              {
+                "w": "achievement",
+                "rel": "扩"
+              },
+              {
+                "w": "realise",
+                "rel": "近义",
+                "children": [
+                  {
+                    "w": "realisation",
+                    "rel": "扩"
+                  },
+                  {
+                    "w": "realistic"
+                  },
+                  {
+                    "w": "realism"
+                  },
+                  {
+                    "w": "realm",
+                    "rel": "形近"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "w": "content",
+            "children": [
+              {
+                "w": "contented",
+                "rel": "扩",
+                "children": [
+                  {
+                    "w": "contentious",
+                    "children": [
+                      {
+                        "w": "contention"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "w": "satisfy",
+                "rel": "近义",
+                "children": [
+                  {
+                    "w": "satisfaction",
+                    "rel": "扩"
+                  },
+                  {
+                    "w": "satisfactory"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "entries": [
+        {
+          "no": 1,
+          "word": "ambition",
+          "freq": 1,
+          "page": 30,
+          "prons": [
+            {
+              "ipa": "/æmˈbɪʃn/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[野心]]；[[雄心]]；志向"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "谐音",
+            "text": "单词发音类似“俺必胜”→ 野心；雄心；志向"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2023,
+            "en": "In fact, in some cases, extreme ambition may end up doing more harm than good.",
+            "zh": "事实上，在某些情况下，极端的野心最终可能弊大于利。",
+            "key": [
+              "ambition"
+            ]
+          },
+          "ext": [
+            {
+              "word": "ambitious",
+              "ipa": "/æmˈbɪʃəs/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "有野心的；费力的；耗时的"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 2,
+          "word": "accomplish",
+          "freq": 1,
+          "page": 30,
+          "prons": [
+            {
+              "ipa": "/əˈkʌmplɪʃ/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[完成]]；[[达到]]；[[实现]]"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "ac-（一再地）+ complish（音似“看破历史”）→ 当你完全看透历史的时候，你的人生就“达到”了一个新的境界。"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2021,
+            "en": "Curiosity is one of the tools humans have found to accomplish that gigantic task.",
+            "zh": "好奇心是人类发现的完成那项艰巨任务的工具之一。",
+            "key": [
+              "accomplish"
+            ]
+          },
+          "ext": [
+            {
+              "word": "accomplishment",
+              "ipa": "/əˈkʌmplɪʃmənt/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "成就；完成"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 3,
+          "word": "achieve",
+          "freq": 1,
+          "page": 30,
+          "prons": [
+            {
+              "ipa": "/əˈtʃiːv/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[达到]]；[[实现]]；成功"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "a（一）+ chieve（音似“妻屋”）→ 古代有些人认为，“成功”就是有一妻、一屋。"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2022,
+            "en": "It is bound to help us achieve greater success.",
+            "zh": "它必将帮助我们取得更大的成功。",
+            "key": [
+              "achieve"
+            ]
+          },
+          "ext": [
+            {
+              "word": "achievement",
+              "ipa": "/əˈtʃiːvmənt/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "成就，功绩；达到"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 4,
+          "word": "fulfill",
+          "alt": "fulfil",
+          "freq": 1,
+          "page": 30,
+          "prons": [
+            {
+              "ipa": "/fʊlˈfɪl/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[实现，履行]]"
+                }
+              ]
+            }
+          ],
+          "tip": null,
+          "ex": {
+            "type": "真",
+            "year": 2019,
+            "en": "They think it more urgent to fulfil their social obligations.",
+            "zh": "他们认为履行社会责任更加紧迫。",
+            "key": [
+              "fulfil"
+            ]
+          },
+          "ext": [
+            {
+              "word": "fulfillment",
+              "alt": "fulfilment",
+              "ipa": "/fʊlˈfɪlmənt/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "成就感；实现"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 5,
+          "word": "full",
+          "freq": 1,
+          "page": 30,
+          "prons": [
+            {
+              "ipa": "/fʊl/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "[[充满的]]；大量的；饱的；完全的"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "fu（音似“服”）+ ll（形似两根大油条）→ 服务员吃了两根大油条，所以是“饱的”。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "My suitcase was full of books.",
+            "zh": "我的手提箱装满了书。",
+            "key": [
+              "was full of"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 6,
+          "word": "fill",
+          "freq": 1,
+          "page": 30,
+          "prons": [
+            {
+              "ipa": "/fɪl/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[（使）充满]]；满足"
+                },
+                {
+                  "pos": "n.",
+                  "mean": "[[填满……的量]]"
+                }
+              ]
+            }
+          ],
+          "tip": null,
+          "ex": {
+            "type": "真",
+            "year": 2020,
+            "en": "Factories are being digitalised, filled with new sensors and new computers to make them quicker.",
+            "zh": "工厂正在被数字化，充满了新的传感器和新的计算机，以加快生产速度。",
+            "key": [
+              "filled with"
+            ]
+          },
+          "ext": [
+            {
+              "word": "filling",
+              "ipa": "/ˈfɪlɪŋ/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "（补牙的）填料"
+                },
+                {
+                  "pos": "adj.",
+                  "mean": "能填饱肚子的"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 7,
+          "word": "content",
+          "freq": 1,
+          "page": 31,
+          "prons": [
+            {
+              "ipa": "/ˈkɒntent/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[内容]]；含量；主题"
+                }
+              ]
+            },
+            {
+              "ipa": "/kənˈtent/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "[[满意的]]"
+                },
+                {
+                  "pos": "v.",
+                  "mean": "[[使满意]]"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "con-（所有的）+ tent（帐篷）→ 所有的帐篷都是令人“满意的”。"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2017,
+            "en": "Leah easily could have fallen into a trap of feeling content.",
+            "zh": "利亚很容易陷入满足感的陷阱。",
+            "key": [
+              "content"
+            ]
+          },
+          "ext": [
+            {
+              "word": "contented",
+              "ipa": "/kənˈtentɪd/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "知足的；（尤指因生活好而）满意的"
+                }
+              ]
+            },
+            {
+              "word": "contentious",
+              "ipa": "/kənˈtenʃəs/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "引起争论的；爱争论的"
+                }
+              ]
+            },
+            {
+              "word": "contention",
+              "ipa": "/kənˈtenʃn/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "争吵，争执；看法，观点"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 8,
+          "word": "satisfy",
+          "freq": 1,
+          "page": 31,
+          "prons": [
+            {
+              "ipa": "/ˈsætɪsfaɪ/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[使满意]]；[[使满足]]"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "谐音",
+            "text": "单词发音类似“塞万提斯”→ 西班牙小说家“塞万提斯”的作品使读者满意 → 使满意"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2022,
+            "en": "The office maintained a well-stocked kitchen that would satisfy my every snack desire.",
+            "zh": "办公室里有一个储备充足的厨房，可以满足我对零食的每一种渴望。",
+            "key": [
+              "satisfy"
+            ]
+          },
+          "ext": [
+            {
+              "word": "satisfaction",
+              "ipa": "/ˌsætɪsˈfækʃn/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "满足；满意"
+                }
+              ]
+            },
+            {
+              "word": "satisfactory",
+              "ipa": "/ˌsætɪsˈfæktəri/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "令人满意的；够好的；可以的"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 9,
+          "word": "empty",
+          "freq": 1,
+          "page": 31,
+          "prons": [
+            {
+              "ipa": "/ˈempti/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "[[空的]]；[[空虚的]]"
+                },
+                {
+                  "pos": "v.",
+                  "mean": "[[使变空]]"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "em（联想“俺妹”）+ pt（联想“扑腾”）+ -y（后缀）→ 俺妹在一个“空的”床上扑腾。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "It gets one into the habit of making empty promises.",
+            "zh": "这会让人养成许下空头承诺的习惯。",
+            "key": [
+              "empty"
+            ]
+          },
+          "ext": [
+            {
+              "word": "emptiness",
+              "ipa": "/ˈemptinəs/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "空虚；空无；空旷；空地"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 10,
+          "word": "realistic",
+          "freq": 2,
+          "page": 31,
+          "prons": [
+            {
+              "ipa": "/ˌriːəˈlɪstɪk/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "[[现实的]]；[[实际的]]；明智的；逼真的"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "构词",
+            "text": "real（真的）+ -istic（形容词后缀）→ 现实的；实际的"
+          },
+          "ex": {
+            "type": "例",
+            "en": "You should try to restrain your ambition and be more realistic.",
+            "zh": "你应该努力抑制你的野心，而且要更现实一些。",
+            "key": [
+              "realistic"
+            ]
+          },
+          "ext": [
+            {
+              "word": "realism",
+              "ipa": "/ˈriːəlɪzəm/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "务实作风；现实主义方式；现实性；现实主义"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 11,
+          "word": "realise",
+          "alt": "-ize",
+          "freq": 3,
+          "page": 31,
+          "prons": [
+            {
+              "ipa": "/ˈriːəlaɪz/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[实现]]；[[理解，意识到]]"
+                }
+              ]
+            }
+          ],
+          "tip": null,
+          "ex": {
+            "type": "真",
+            "year": 2022,
+            "en": "I came to realise online classes were merely a means to fulfil course requirements.",
+            "zh": "我开始意识到网络课程仅仅是满足课程要求的一种手段。",
+            "key": [
+              "realise"
+            ]
+          },
+          "ext": [
+            {
+              "word": "realisation",
+              "alt": "-ization",
+              "ipa": "/ˌriːəlaɪˈzeɪʃn/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "认识，领会，领悟；实现；变卖，兑换成现金"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 12,
+          "word": "realm",
+          "freq": 1,
+          "page": 31,
+          "prons": [
+            {
+              "ipa": "/relm/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[领域，场所]]；[[王国]]"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "real（真的）+ m（联想 man）→ 真正的男人会在某个“领域”做出成绩。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "The precise function of sleep remains largely in the realm of assumption.",
+            "zh": "睡眠的确切功能在很大程度上仍属于假设的领域。",
+            "key": [
+              "realm"
+            ]
+          },
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "title": "“堆、积”相关",
+      "pages": [
+        31,
+        32
+      ],
+      "map": {
+        "w": "“堆、积”相关",
+        "children": [
+          {
+            "w": "stack",
+            "children": [
+              {
+                "w": "pile",
+                "rel": "近义"
+              }
+            ]
+          },
+          {
+            "w": "accumulate",
+            "children": [
+              {
+                "w": "accumulative",
+                "rel": "扩"
+              },
+              {
+                "w": "calculate",
+                "rel": "相关",
+                "children": [
+                  {
+                    "w": "calculation",
+                    "rel": "扩"
+                  },
+                  {
+                    "w": "calculator"
+                  },
+                  {
+                    "w": "calculating"
+                  },
+                  {
+                    "w": "calendar",
+                    "rel": "形近"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "entries": [
+        {
+          "no": 13,
+          "word": "stack",
+          "freq": 2,
+          "page": 32,
+          "prons": [
+            {
+              "ipa": "/stæk/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[（使）整齐地堆起]]"
+                },
+                {
+                  "pos": "n.",
+                  "mean": "[[一堆]]"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "st（联想 street）+ a（一）+ ck（联想 CK 品牌）→ 街上有“一堆”CK 品牌的衣服。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "A stack of files awaited me on my desk.",
+            "zh": "我桌上有一堆文件正待我去处理。",
+            "key": [
+              "stack"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 14,
+          "word": "pile",
+          "freq": 1,
+          "page": 32,
+          "prons": [
+            {
+              "ipa": "/paɪl/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[一堆，一叠]]"
+                },
+                {
+                  "pos": "v.",
+                  "mean": "[[堆起，堆积]]"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "谐音",
+            "text": "单词发音类似“怕了”→ 看到那一堆待处理的文件，我都怕了。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "I found it in a pile of documents on his desk.",
+            "zh": "我在他桌子上的一堆文件中找到了它。",
+            "key": [
+              "pile"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 15,
+          "word": "accumulate",
+          "freq": 1,
+          "page": 32,
+          "prons": [
+            {
+              "ipa": "/əˈkjuːmjəleɪt/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[积累]]；[[堆积]]"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "ac-（表加强）+ cumu（音似“可莫”）+ late（晚）→ 考试可莫准备晚了，要早“积累”词汇。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "His goal was to accumulate wealth.",
+            "zh": "他的目标是积累财富。",
+            "key": [
+              "accumulate"
+            ]
+          },
+          "ext": [
+            {
+              "word": "accumulative",
+              "ipa": "/əˈkjuːmjələtɪv/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "累积的"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 16,
+          "word": "calculate",
+          "freq": 2,
+          "page": 32,
+          "prons": [
+            {
+              "ipa": "/ˈkælkjuleɪt/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[计算]]；[[估计]]；推测"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "calcu（音似“开可”）+ late（晚）→ 电脑开得可晚了，因为他“计算”错时间了。"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2016,
+            "en": "Restaurants should calculate the tips for customers.",
+            "zh": "餐馆应该为顾客计算小费。",
+            "key": [
+              "calculate"
+            ]
+          },
+          "ext": [
+            {
+              "word": "calculation",
+              "ipa": "/ˌkælkjuˈleɪʃn/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "计算"
+                }
+              ]
+            },
+            {
+              "word": "calculator",
+              "ipa": "/ˈkælkjuleɪtə(r)/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "计算器"
+                }
+              ]
+            },
+            {
+              "word": "calculating",
+              "ipa": "/ˈkælkjuleɪtɪŋ/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "精明的，精于算计的"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 17,
+          "word": "calendar",
+          "freq": 1,
+          "page": 32,
+          "prons": [
+            {
+              "ipa": "/ˈkælɪndə(r)/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[日历]]；历法"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "对照",
+            "text": "日历（calendar）就是用来计算（calculate）日期的。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "Chinese New Year is one of the most celebrated holidays on the Chinese calendar.",
+            "zh": "中国新年是中国历法中最受欢迎的节日之一。",
+            "key": [
+              "calendar"
+            ]
+          },
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "title": "“认为”相关",
+      "pages": [
+        32,
+        34
+      ],
+      "map": {
+        "w": "“认为”相关",
+        "children": [
+          {
+            "w": "assume",
+            "children": [
+              {
+                "w": "assumption",
+                "rel": "扩"
+              },
+              {
+                "w": "resume",
+                "rel": "同根",
+                "children": [
+                  {
+                    "w": "résumé",
+                    "rel": "扩"
+                  },
+                  {
+                    "w": "resumption",
+                    "rel": "扩"
+                  }
+                ]
+              },
+              {
+                "w": "consume",
+                "rel": "同根",
+                "children": [
+                  {
+                    "w": "consumption",
+                    "rel": "扩"
+                  },
+                  {
+                    "w": "consumer",
+                    "rel": "扩"
+                  },
+                  {
+                    "w": "customer",
+                    "rel": "形近",
+                    "children": [
+                      {
+                        "w": "custom",
+                        "children": [
+                          {
+                            "w": "customs",
+                            "rel": "扩"
+                          },
+                          {
+                            "w": "customary",
+                            "rel": "扩"
+                          },
+                          {
+                            "w": "accustom",
+                            "rel": "扩"
+                          },
+                          {
+                            "w": "accustomed",
+                            "rel": "扩"
+                          },
+                          {
+                            "w": "convention",
+                            "rel": "近义",
+                            "children": [
+                              {
+                                "w": "conventional",
+                                "rel": "扩"
+                              }
+                            ]
+                          },
+                          {
+                            "w": "tradition",
+                            "rel": "近义",
+                            "children": [
+                              {
+                                "w": "traditional",
+                                "rel": "扩"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "w": "client",
+                        "rel": "相关"
+                      },
+                      {
+                        "w": "agent",
+                        "rel": "相关",
+                        "children": [
+                          {
+                            "w": "agency",
+                            "rel": "扩"
+                          },
+                          {
+                            "w": "deputy",
+                            "rel": "相关"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "w": "deem"
+          }
+        ]
+      },
+      "entries": [
+        {
+          "no": 18,
+          "word": "deem",
+          "freq": 1,
+          "page": 32,
+          "prons": [
+            {
+              "ipa": "/diːm/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[认为]]；[[视为]]；相信"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "dee（音似“弟”）+ m（联想“妹”）→ 弟弟妹妹都把我“视为”最值得“相信”的亲人。"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2023,
+            "en": "They deem these exercises counter-productive.",
+            "zh": "他们认为这些练习适得其反。",
+            "key": [
+              "deem"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 19,
+          "word": "assume",
+          "freq": 3,
+          "page": 32,
+          "prons": [
+            {
+              "ipa": "/əˈsjuːm/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[假设]]；[[认为]]；承担（责任）"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "as-（一再地）+ su（联想“诉”）+ me（我）→ 他一再地向我诉苦，想让我帮他“承担责任”。"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2023,
+            "en": "Sleep may be more important than people assumed.",
+            "zh": "睡眠可能比人们想象的更重要。",
+            "key": [
+              "assumed"
+            ]
+          },
+          "ext": [
+            {
+              "word": "assumption",
+              "ipa": "/əˈsʌmpʃn/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "假定；承担；（权力的）获得"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 20,
+          "word": "resume",
+          "freq": 2,
+          "page": 32,
+          "prons": [
+            {
+              "ipa": "/rɪˈzjuːm/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[重新开始]]；（中断后）继续"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "re（字母音似“阿姨”）+ su（联想“诉”）+ me（我）→ 阿姨告诉我要准备一份简历，“重新开始”找工作。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "She resumed her career after an interval of six years.",
+            "zh": "时隔六年之后她又开始了自己的职业生涯。",
+            "key": [
+              "resumed"
+            ]
+          },
+          "ext": [
+            {
+              "word": "résumé",
+              "ipa": "/ˈrezjumeɪ/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "摘要；个人简历"
+                }
+              ]
+            },
+            {
+              "word": "resumption",
+              "ipa": "/rɪˈzʌmpʃn/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "重新开始；继续进行；恢复"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 21,
+          "word": "consume",
+          "freq": 3,
+          "page": 33,
+          "prons": [
+            {
+              "ipa": "/kənˈsjuːm/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[消耗]]；[[消费]]；吃；喝"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "con-（都）+ su（联想“诉”）+ me（我）→ 大家都告诉我要多“消耗”一下体力。"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2022,
+            "en": "More affluent and educated people tend to consume higher quality diets.",
+            "zh": "更富裕和受教育程度更高的人倾向于食用更高质量的饮食。",
+            "key": [
+              "consume"
+            ]
+          },
+          "ext": [
+            {
+              "word": "consumption",
+              "ipa": "/kənˈsʌmpʃn/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "消费；消耗量"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 22,
+          "word": "consumer",
+          "freq": 3,
+          "page": 33,
+          "prons": [
+            {
+              "ipa": "/kənˈsjuːmə(r)/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[消费者]]"
+                }
+              ]
+            }
+          ],
+          "tip": null,
+          "ex": {
+            "type": "例",
+            "en": "That was great for the consumer, not so much for the manufacturer.",
+            "zh": "那对消费者来说很好，对制造商来说则不然。",
+            "key": [
+              "consumer"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 23,
+          "word": "custom",
+          "freq": 1,
+          "page": 33,
+          "prons": [
+            {
+              "ipa": "/ˈkʌstəm/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "风俗，传统，习俗；光顾，惠顾"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "谐音",
+            "text": "单词发音类似“卡死它们”→ 货物进出海关要缴税，这是“传统”；而走私的货物，海关会卡死它们。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "She grew up with Chinese customs and traditions.",
+            "zh": "她在中国的习俗和传统中长大。",
+            "key": [
+              "customs"
+            ]
+          },
+          "ext": [
+            {
+              "word": "customs",
+              "ipa": "/ˈkʌstəmz/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "海关；关税"
+                }
+              ]
+            },
+            {
+              "word": "customary",
+              "ipa": "/ˈkʌstəməri/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "习俗的；习惯的"
+                }
+              ]
+            },
+            {
+              "word": "accustom",
+              "ipa": "/əˈkʌstəm/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "使习惯；使适应"
+                }
+              ]
+            },
+            {
+              "word": "accustomed",
+              "ipa": "/əˈkʌstəmd/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "惯例的；习惯的"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 24,
+          "word": "traditional",
+          "freq": 1,
+          "page": 33,
+          "prons": [
+            {
+              "ipa": "/trəˈdɪʃənl/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "[[传统的]]；习俗的；惯例的"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "tradition（音似“戳地心”）+ -al（形容词后缀）→ “传统的”农业社会中，农民靠戳地心（种地）生存。"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2022,
+            "en": "Moreover, schools should be more than simple institutions of traditional learning.",
+            "zh": "此外，学校不应该是简单的传统学习机构。",
+            "key": [
+              "traditional"
+            ]
+          },
+          "ext": [
+            {
+              "word": "tradition",
+              "ipa": "/trəˈdɪʃn/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "传统"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 25,
+          "word": "convention",
+          "freq": 1,
+          "page": 33,
+          "prons": [
+            {
+              "ipa": "/kənˈvenʃn/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "惯例；习俗；公约；大会"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "con-（所有的）+ vention（音似“文身”）→ 此地的“习俗”是所有人都文身。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "It is important to distinguish between the rules of grammar and the conventions of written language.",
+            "zh": "区分语法规则和书面语言的惯例很重要。",
+            "key": [
+              "conventions"
+            ]
+          },
+          "ext": [
+            {
+              "word": "conventional",
+              "ipa": "/kənˈvenʃənl/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "习惯的，风俗的；传统的"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 26,
+          "word": "customer",
+          "freq": 1,
+          "page": 33,
+          "prons": [
+            {
+              "ipa": "/ˈkʌstəmə(r)/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "顾客"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "对照",
+            "text": "custom n.光顾 → customer n."
+          },
+          "ex": {
+            "type": "例",
+            "en": "Some hired flag wavers to direct customers to empty parking spaces.",
+            "zh": "一些（公司）雇用挥舞旗帜的人引导顾客去空置的停车位。",
+            "key": [
+              "customers"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 27,
+          "word": "client",
+          "freq": 3,
+          "page": 33,
+          "prons": [
+            {
+              "ipa": "/ˈklaɪənt/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[客户]]；委托人"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "clien（音似“可来了”）+ t（联想“他”）→ 傍晚时，我等的“客户”可（终于）来了。"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2021,
+            "en": "He inquired about his client's family background.",
+            "zh": "他询问了客户的家庭背景。",
+            "key": [
+              "client's"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 28,
+          "word": "agent",
+          "freq": 3,
+          "page": 33,
+          "prons": [
+            {
+              "ipa": "/ˈeɪdʒənt/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[代理人]]，经纪人"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "a-（一）+ gent（联想 gentleman）→ 有一个绅士是我们的“代理人”。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "The agents were able to utilise their full potential and experience.",
+            "zh": "代理人能够充分利用他们的潜力和经验。",
+            "key": [
+              "agents"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 29,
+          "word": "agency",
+          "freq": 3,
+          "page": 33,
+          "prons": [
+            {
+              "ipa": "/ˈeɪdʒənsi/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "服务机构；（尤指）代理机构；（政府的）专门机构"
+                }
+              ]
+            }
+          ],
+          "tip": null,
+          "ex": {
+            "type": "例",
+            "en": "Within 10 minutes, I had impressed the interviewer enough to be offered a job with the agency.",
+            "zh": "不到 10 分钟，我就给面试官留下了深刻的印象，得到了该机构的工作机会。",
+            "key": [
+              "agency"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 30,
+          "word": "deputy",
+          "freq": 1,
+          "page": 33,
+          "prons": [
+            {
+              "ipa": "/ˈdepjuti/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "副手；代理；警官"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "de-（往下）+ put（放）+ -y（名词后缀）→ 老板要把部分工作下放给“副手”去做。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "Deputy chiefs may be more willing to make the jump without a net.",
+            "zh": "副局长们可能更愿意裸辞。",
+            "key": [
+              "Deputy"
+            ]
+          },
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "title": "“居住”相关",
+      "pages": [
+        34,
+        34
+      ],
+      "map": {
+        "w": "“居住”相关",
+        "children": [
+          {
+            "w": "inhabit",
+            "children": [
+              {
+                "w": "inhabitant",
+                "rel": "扩"
+              },
+              {
+                "w": "habitat",
+                "rel": "形近"
+              }
+            ]
+          },
+          {
+            "w": "reside",
+            "children": [
+              {
+                "w": "residence",
+                "rel": "扩",
+                "children": [
+                  {
+                    "w": "resident",
+                    "children": [
+                      {
+                        "w": "residential"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "w": "live",
+            "children": [
+              {
+                "w": "living",
+                "rel": "扩",
+                "children": [
+                  {
+                    "w": "livelihood",
+                    "children": [
+                      {
+                        "w": "lively"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "w": "alive",
+                "rel": "形近"
+              }
+            ]
+          }
+        ]
+      },
+      "entries": [
+        {
+          "no": 31,
+          "word": "inhabit",
+          "freq": 1,
+          "page": 34,
+          "prons": [
+            {
+              "ipa": "/ɪnˈhæbɪt/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[栖居于]]；[[居住于]]"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "in（里面）+ habit（习惯）→ 习惯在里面居住 → 栖居于；居住于"
+          },
+          "ex": {
+            "type": "例",
+            "en": "Blocks of flats built in the past there were mostly inhabited by people who did not earn much.",
+            "zh": "那里过去建造的公寓楼大多住着收入不高的人。",
+            "key": [
+              "inhabited"
+            ]
+          },
+          "ext": [
+            {
+              "word": "inhabitant",
+              "ipa": "/ɪnˈhæbɪtənt/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "（某地的）居民；栖息动物"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 32,
+          "word": "habitat",
+          "freq": 3,
+          "page": 34,
+          "prons": [
+            {
+              "ipa": "/ˈhæbɪtæt/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[（动植物的）栖息地]]；[[居住地]]"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "habit（习惯）+ at（在）→ “栖息地”是动物习惯在那里生活的地方。"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2024,
+            "en": "The natural habitat of wildlife there would be ruined.",
+            "zh": "那里的野生动物自然栖息地会遭到破坏。",
+            "key": [
+              "habitat"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 33,
+          "word": "reside",
+          "freq": 1,
+          "page": 34,
+          "prons": [
+            {
+              "ipa": "/rɪˈzaɪd/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[居住在]]；定居于"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "re（字母音似“阿姨”）+ side（面）→ 阿姨“居住在”我家的另一面。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "They reside in our minds, shaping our thoughts.",
+            "zh": "它们存在于我们的头脑中，塑造着我们的想法。",
+            "key": [
+              "reside"
+            ]
+          },
+          "ext": [
+            {
+              "word": "residence",
+              "ipa": "/ˈrezɪdəns/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "住所；住房；定居"
+                }
+              ]
+            },
+            {
+              "word": "resident",
+              "ipa": "/ˈrezɪdənt/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "居民"
+                }
+              ]
+            },
+            {
+              "word": "residential",
+              "ipa": "/ˌrezɪˈdenʃl/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "住宅的"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 34,
+          "word": "living",
+          "freq": 3,
+          "page": 34,
+          "prons": [
+            {
+              "ipa": "/ˈlɪvɪŋ/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "[[活着的]]"
+                },
+                {
+                  "pos": "n.",
+                  "mean": "[[生计]]；谋生；收入"
+                }
+              ]
+            }
+          ],
+          "tip": null,
+          "ex": {
+            "type": "真",
+            "year": 2018,
+            "en": "Numerous professional drivers would have to find new ways of earning a living.",
+            "zh": "许多职业司机必须找到新的谋生方式。",
+            "key": [
+              "living"
+            ]
+          },
+          "ext": [
+            {
+              "word": "live",
+              "ipa": "/lɪv/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "活着，生活；居住"
+                },
+                {
+                  "pos": "adj.",
+                  "mean": "活的；直播的"
+                }
+              ]
+            },
+            {
+              "word": "livelihood",
+              "ipa": "/ˈlaɪvlihʊd/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "生计"
+                }
+              ]
+            },
+            {
+              "word": "lively",
+              "ipa": "/ˈlaɪvli/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "活泼的，活跃的；充满趣味的"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 35,
+          "word": "alive",
+          "freq": 1,
+          "page": 34,
+          "prons": [
+            {
+              "ipa": "/əˈlaɪv/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "[[活着的]]；继续存在的"
+                }
+              ]
+            }
+          ],
+          "tip": null,
+          "ex": {
+            "type": "真",
+            "year": 2017,
+            "en": "It remains alive among the majority of American people.",
+            "zh": "它在大多数美国人中仍然存在。",
+            "key": [
+              "alive"
+            ]
+          },
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 5,
+      "title": "“惊恐不安”相关",
+      "pages": [
+        34,
+        35
+      ],
+      "map": {
+        "w": "“惊恐不安”相关",
+        "children": [
+          {
+            "w": "alarm",
+            "children": [
+              {
+                "w": "panic",
+                "rel": "近义"
+              }
+            ]
+          },
+          {
+            "w": "fear",
+            "children": [
+              {
+                "w": "fearful",
+                "rel": "扩"
+              },
+              {
+                "w": "fierce",
+                "rel": "音近"
+              }
+            ]
+          },
+          {
+            "w": "threat",
+            "children": [
+              {
+                "w": "threaten",
+                "rel": "扩",
+                "children": [
+                  {
+                    "w": "frighten",
+                    "rel": "近义",
+                    "children": [
+                      {
+                        "w": "fright",
+                        "rel": "扩"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "w": "uneasy",
+            "children": [
+              {
+                "w": "ease",
+                "rel": "相关",
+                "children": [
+                  {
+                    "w": "disease",
+                    "rel": "加dis"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "w": "anxious",
+            "children": [
+              {
+                "w": "anxiety",
+                "rel": "扩"
+              }
+            ]
+          }
+        ]
+      },
+      "entries": [
+        {
+          "no": 36,
+          "word": "alarm",
+          "freq": 3,
+          "page": 35,
+          "prons": [
+            {
+              "ipa": "/əˈlɑːm/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[使不安，使恐慌]]"
+                },
+                {
+                  "pos": "n.",
+                  "mean": "[[惊恐]]；忧虑；警报"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "a（一）+ larm（音似“辣妹”）→ 他一见到辣妹，就局促“不安”。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "It alarms me that nobody takes this problem seriously.",
+            "zh": "谁都不认真对待这个问题，我非常不安。",
+            "key": [
+              "alarms"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 37,
+          "word": "fear",
+          "freq": 1,
+          "page": 35,
+          "prons": [
+            {
+              "ipa": "/fɪə(r)/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[恐惧，害怕]]"
+                },
+                {
+                  "pos": "v.",
+                  "mean": "害怕，畏惧；为……担心"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "谐音",
+            "text": "单词发音类似“飞蛾”→ 有的人看见飞蛾会“害怕”。"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2016,
+            "en": "The daughter feared her mother would be ignored there.",
+            "zh": "女儿害怕她的母亲在那里会被忽视。",
+            "key": [
+              "feared"
+            ]
+          },
+          "ext": [
+            {
+              "word": "fearful",
+              "ipa": "/ˈfɪəfl/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "害怕的，可怕的；极坏的"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 38,
+          "word": "fierce",
+          "freq": 1,
+          "page": 35,
+          "prons": [
+            {
+              "ipa": "/fɪəs/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "[[凶猛的]]；狂热的；[[猛烈的]]；[[强烈的]]"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "谐音",
+            "text": "单词发音类似“飞蛾死”→ 飞蛾扑火而死的时候是很“狂热的”。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "It launched a fierce attack against that state.",
+            "zh": "它对那个国家发动了猛烈的攻击。",
+            "key": [
+              "fierce"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 39,
+          "word": "threat",
+          "freq": 2,
+          "page": 35,
+          "prons": [
+            {
+              "ipa": "/θret/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[恐吓，威胁]]；凶兆"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "threa（联想 throw）+ t（联想“他”）→ 她向坏人扔石头“威胁”他。"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2016,
+            "en": "There are growing concerns that robots could become a threat.",
+            "zh": "人们越来越担心机器人可能成为威胁。",
+            "key": [
+              "threat"
+            ]
+          },
+          "ext": [
+            {
+              "word": "threaten",
+              "ipa": "/ˈθretn/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "恐吓；对……构成威胁"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 40,
+          "word": "frighten",
+          "freq": 1,
+          "page": 35,
+          "prons": [
+            {
+              "ipa": "/ˈfraɪtn/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[使惊吓，使惊恐]]；威胁"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "对照",
+            "text": "你用花打（fight）她，使她受了惊吓（frighten）。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "The editor is frightened by this news.",
+            "zh": "编辑被这个消息吓坏了。",
+            "key": [
+              "frightened"
+            ]
+          },
+          "ext": [
+            {
+              "word": "fright",
+              "ipa": "/fraɪt/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "惊吓；恐怖"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 41,
+          "word": "panic",
+          "freq": 2,
+          "page": 35,
+          "prons": [
+            {
+              "ipa": "/ˈpænɪk/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[惊恐，恐慌]]"
+                },
+                {
+                  "pos": "v.",
+                  "mean": "[[（使）惊慌，惊慌失措]]"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "谐音",
+            "text": "单词发音类似“怕你磕”→ 小时候你一摔倒，父母就会“惊慌”，怕你磕坏哪里。"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2019,
+            "en": "They are spreading panic in the soda industry.",
+            "zh": "他们正在苏打水行业散布恐慌。",
+            "key": [
+              "panic"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 42,
+          "word": "uneasy",
+          "freq": 2,
+          "page": 35,
+          "prons": [
+            {
+              "ipa": "/ʌnˈiːzi/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "[[心神不安的]]，[[焦虑的]]，[[不安的]]；担心的"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "构词",
+            "text": "un-（不）+ easy（容易 → 舒适）→ 你在做不容易的事情时，一定是“不安的”。"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2020,
+            "en": "But across society, the abstraction of the idea of cash makes me uneasy.",
+            "zh": "但在整个社会中，现金概念的抽象化让我感到不安。",
+            "key": [
+              "uneasy"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 43,
+          "word": "ease",
+          "freq": 3,
+          "page": 35,
+          "prons": [
+            {
+              "ipa": "/iːz/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[舒适，轻松]]"
+                },
+                {
+                  "pos": "v.",
+                  "mean": "[[减轻，缓和]]"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "对照",
+            "text": "easy adj.容易的；舒适的 → ease n.& v."
+          },
+          "ex": {
+            "type": "例",
+            "en": "He doesn't feel at ease in the firm.",
+            "zh": "他在公司里感到不舒适。",
+            "key": [
+              "at ease"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 44,
+          "word": "disease",
+          "freq": 1,
+          "page": 35,
+          "prons": [
+            {
+              "ipa": "/dɪˈziːz/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[疾病]]；弊端"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "构词",
+            "text": "dis-（不）+ ease（舒适）→ 疾病"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2023,
+            "en": "Overuse of electronic devices may cause heart disease.",
+            "zh": "过度使用电子设备可能会导致心脏病。",
+            "key": [
+              "disease"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 45,
+          "word": "anxious",
+          "freq": 3,
+          "page": 35,
+          "prons": [
+            {
+              "ipa": "/ˈæŋkʃəs/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "[[忧虑的]]，[[焦虑的]]；渴望的"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "谐音",
+            "text": "单词发音类似“俺可笑死”→ 俺都笑死了，因为俺一点也不焦虑 → 焦虑的"
+          },
+          "ex": {
+            "type": "例",
+            "en": "The girl appeared anxious, had lost weight and was not sleeping well.",
+            "zh": "那个女孩显得很焦虑，体重降了，觉也睡不好。",
+            "key": [
+              "anxious"
+            ]
+          },
+          "ext": [
+            {
+              "word": "anxiety",
+              "ipa": "/æŋˈzaɪəti/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "担忧，焦虑"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

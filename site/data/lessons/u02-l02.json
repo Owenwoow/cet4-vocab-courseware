@@ -1,0 +1,565 @@
+{
+  "id": "u02-l02",
+  "part": 1,
+  "unit": 2,
+  "lesson": 2,
+  "pages": [36, 41],
+  "groups": [
+    {
+      "no": 6,
+      "title": "sign 相关",
+      "pages": [36, 37],
+      "map": {
+        "w": "sign 相关",
+        "children": [
+          {"w": "signature", "children": [
+            {"w": "signal", "children": [
+              {"w": "significant", "children": [{"w": "significance", "rel": "扩"}]}
+            ]}
+          ]},
+          {"w": "token"},
+          {"w": "design", "children": [{"w": "designer", "rel": "扩"}]},
+          {"w": "resign", "children": [
+            {"w": "resignation", "rel": "扩"},
+            {"w": "quit", "rel": "近义"}
+          ]},
+          {"w": "assign", "children": [
+            {"w": "assignment", "rel": "扩"},
+            {"w": "despatch", "rel": "相关"}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "sign", "freq": 1, "page": 36,
+          "prons": [{"ipa": "/saɪn/", "senses": [
+            {"pos": "n.", "mean": "迹象；[[标志]]；手势"},
+            {"pos": "v.", "mean": "签（名）；[[签字]]；签约；示意"}
+          ]}],
+          "tip": {"type": "联想", "text": "sig（联想“四个”）+ n（形似门）→ 这四个门上都有“标志”。"},
+          "ex": {"type": "例", "en": "That's the first sign to them that life is starting to return to normal.", "zh": "对他们来说，那是生活开始回归正常的第一个迹象。", "key": ["sign"]},
+          "ext": []
+        },
+        {
+          "no": 2, "word": "token", "freq": 1, "page": 36,
+          "prons": [{"ipa": "/ˈtəʊkən/", "senses": [
+            {"pos": "n.", "mean": "[[标志]]；代金券"},
+            {"pos": "adj.", "mean": "象征性的；装模作样的"}
+          ]}],
+          "tip": {"type": "对照", "text": "我带了（taken）有身份标志（token）的号码牌参赛。"},
+          "ex": {"type": "例", "en": "Please accept this small gift as a token of our gratitude.", "zh": "区区薄礼，以表谢忱，敬请笑纳。", "key": ["token"]},
+          "ext": []
+        },
+        {
+          "no": 3, "word": "signature", "freq": 1, "page": 36,
+          "prons": [{"ipa": "/ˈsɪɡnətʃə(r)/", "senses": [{"pos": "n.", "mean": "[[署名]]；[[签字]]"}]}],
+          "tip": {"type": "对照", "text": "sign v.签（名）；签字 → signature n."},
+          "ex": {"type": "例", "en": "Someone had forged her signature on the cheque.", "zh": "有人在支票上伪造了她的签名。", "key": ["signature"]},
+          "ext": []
+        },
+        {
+          "no": 4, "word": "signal", "freq": 3, "page": 36,
+          "prons": [{"ipa": "/ˈsɪɡnəl/", "senses": [
+            {"pos": "n.", "mean": "[[信号]]；[[标志]]"},
+            {"pos": "v.", "mean": "发信号；表明"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "He thought he had heard the referee's signal to proceed.", "zh": "他认为他听到了裁判发出的继续进行的信号。", "key": ["signal"]},
+          "ext": []
+        },
+        {
+          "no": 5, "word": "assign", "freq": 3, "page": 36,
+          "prons": [{"ipa": "/əˈsaɪn/", "senses": [{"pos": "v.", "mean": "[[分配（某物）]]；[[指派]]；委派"}]}],
+          "tip": {"type": "构词", "text": "as-（= to）+ sign（签字；示意）→ 分配；指派；委派"},
+          "ex": {"type": "真", "year": 2017, "en": "In her study, participants were randomly assigned to two groups.", "zh": "在她的研究中，参与者被随机分配到两组。", "key": ["assigned"]},
+          "ext": [{"word": "assignment", "ipa": "/əˈsaɪnmənt/", "senses": [{"pos": "n.", "mean": "（分派的）工作，任务；（工作等的）分派，布置"}]}]
+        },
+        {
+          "no": 6, "word": "design", "freq": 1, "page": 36,
+          "prons": [{"ipa": "/dɪˈzaɪn/", "senses": [
+            {"pos": "v.", "mean": "[[设计]]；制造"},
+            {"pos": "n.", "mean": "[[设计]]；图案"}
+          ]}],
+          "tip": {"type": "联想", "text": "de（音似“弟”）+ sign（签名）→ 弟弟的签名是经过“设计”的。"},
+          "ex": {"type": "真", "year": 2020, "en": "She is well informed about the design business.", "zh": "她对设计行业了如指掌。", "key": ["design"]},
+          "ext": [{"word": "designer", "ipa": "/dɪˈzaɪnə(r)/", "senses": [
+            {"pos": "n.", "mean": "设计师"},
+            {"pos": "adj.", "mean": "名牌的"}
+          ]}]
+        },
+        {
+          "no": 7, "word": "despatch", "alt": "dispatch", "freq": 1, "page": 36,
+          "prons": [{"ipa": "/dɪˈspætʃ/", "senses": [
+            {"pos": "v.", "mean": "[[发送]]；派遣，发运"},
+            {"pos": "n.", "mean": "派遣；[[发送]]；急件"}
+          ]}],
+          "tip": {"type": "联想", "text": "de-（往下）+ s（音似“饲”）+ patch（音似“派吃”）→ 派人往下给饲养的动物“发送”吃的。"},
+          "ex": {"type": "例", "en": "He feels we should act with despatch.", "zh": "他觉得我们应该迅速行动。", "key": ["with despatch"]},
+          "ext": []
+        },
+        {
+          "no": 8, "word": "resign", "freq": 2, "page": 36,
+          "prons": [{"ipa": "/rɪˈzaɪn/", "senses": [{"pos": "v.", "mean": "[[辞职]]；辞去（某职务）"}]}],
+          "tip": {"type": "构词", "text": "re-（离开）+ sign（签字；示意）→ 签字离开；示意离开 → 辞职"},
+          "ex": {"type": "例", "en": "The following year, things got worse and he was forced to resign.", "zh": "第二年，情况变得更糟，他被迫辞职。", "key": ["resign"]},
+          "ext": [{"word": "resignation", "ipa": "/ˌrezɪɡˈneɪʃn/", "senses": [{"pos": "n.", "mean": "辞职；辞职信"}]}]
+        },
+        {
+          "no": 9, "word": "quit", "freq": 3, "page": 36,
+          "prons": [{"ipa": "/kwɪt/", "senses": [{"pos": "v.", "mean": "[[离开]]；停止做；[[离职]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“快他”→ 你催他快点“离开”。"},
+          "ex": {"type": "例", "en": "If they don't get more money they'll quit.", "zh": "不给他们加薪他们就要辞职。", "key": ["quit"]},
+          "ext": []
+        },
+        {
+          "no": 10, "word": "significant", "freq": 3, "page": 37,
+          "prons": [{"ipa": "/sɪɡˈnɪfɪkənt/", "senses": [{"pos": "adj.", "mean": "有重大意义的，[[重要的]]；显著的"}]}],
+          "tip": {"type": "联想", "text": "sig（联想 sign）+ nifi（音似“你非”）+ cant → 你非要对“重要的”事情做标记，这是正确的。"},
+          "ex": {"type": "真", "year": 2024, "en": "It witnessed a significant increase in women engineers in the 1970s.", "zh": "20 世纪 70 年代，女性工程师的数量大幅增加。", "key": ["significant"]},
+          "ext": [{"word": "significance", "ipa": "/sɪɡˈnɪfɪkəns/", "senses": [{"pos": "n.", "mean": "重要性，意义；含义"}]}]
+        }
+      ]
+    },
+    {
+      "no": 7,
+      "title": "“必须”相关",
+      "pages": [37, 37],
+      "map": {
+        "w": "“必须”相关",
+        "children": [
+          {"w": "essential", "children": [{"w": "essence", "rel": "扩"}]},
+          {"w": "indispensable", "children": [
+            {"w": "inevitable", "children": [
+              {"w": "avoid", "rel": "相关", "children": [{"w": "avoidance", "rel": "扩"}]}
+            ]}
+          ]},
+          {"w": "necessary", "children": [
+            {"w": "necessarily", "rel": "扩", "children": [
+              {"w": "necessity", "children": [{"w": "necessitate"}]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 11, "word": "essential", "freq": 3, "page": 37,
+          "prons": [{"ipa": "/ɪˈsenʃl/", "senses": [
+            {"pos": "n.", "mean": "[[必需品]]；要素"},
+            {"pos": "adj.", "mean": "[[必不可少的]]；[[重要的]]；本质的"}
+          ]}],
+          "tip": {"type": "对照", "text": "essence n.本质；精华 → essential n. & adj."},
+          "ex": {"type": "例", "en": "They cannot measure the essentials of effective written communication.", "zh": "他们无法衡量有效书面沟通的要素。", "key": ["essentials"]},
+          "ext": [{"word": "essence", "ipa": "/ˈesns/", "senses": [{"pos": "n.", "mean": "本质；精髓；精油；精华"}]}]
+        },
+        {
+          "no": 12, "word": "indispensable", "freq": 2, "page": 37,
+          "prons": [{"ipa": "/ˌɪndɪˈspensəbl/", "senses": [{"pos": "adj.", "mean": "不可或缺的；[[必不可少的]]"}]}],
+          "tip": {"type": "联想", "text": "in-（不）+ dis-（不→没有）+ pens（钢笔）+ able（能够）→ 不能够没有钢笔的 → 不可或缺的；必不可少的"},
+          "ex": {"type": "例", "en": "Higher education is indispensable if you want to go far in both your studies and life.", "zh": "如果你想在学习和生活中走得更远，高等教育是必不可少的。", "key": ["indispensable"]},
+          "ext": []
+        },
+        {
+          "no": 13, "word": "necessary", "freq": 1, "page": 37,
+          "prons": [{"ipa": "/ˈnesəsəri/", "senses": [{"pos": "adj.", "mean": "[[必需的]]；[[必要的]]；必然的"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Fast technological change makes it necessary for one to constantly upgrade their skills.", "zh": "快速的技术变革使人们有必要不断地提高自己的技能。", "key": ["necessary"]},
+          "ext": [{"word": "necessarily", "ipa": "/ˌnesəˈserəli/", "senses": [{"pos": "adv.", "mean": "必然地；不可避免地"}]}]
+        },
+        {
+          "no": 14, "word": "necessity", "freq": 2, "page": 37,
+          "prons": [{"ipa": "/nəˈsesəti/", "senses": [{"pos": "n.", "mean": "[[必要]]；必然性；[[必需品]]"}]}],
+          "tip": {"type": "对照", "text": "necessary adj.必需的；必要的 → necessity n."},
+          "ex": {"type": "例", "en": "We recognize the necessity for a written agreement.", "zh": "我们认为有必要签订一份书面协议。", "key": ["necessity"]},
+          "ext": [{"word": "necessitate", "ipa": "/nəˈsesɪteɪt/", "senses": [{"pos": "v.", "mean": "使成为必要"}]}]
+        },
+        {
+          "no": 15, "word": "inevitable", "freq": 2, "page": 37,
+          "prons": [{"ipa": "/ɪnˈevɪtəbl/", "senses": [{"pos": "adj.", "mean": "[[不可避免的]]；不能防止的"}]}],
+          "tip": {"type": "联想", "text": "in-（不）+ evi（音似“俺为”）+ table（桌子）→ 俺为了买桌子转遍了商场，劳累是“不可避免的”。"},
+          "ex": {"type": "真", "year": 2023, "en": "Remember, failure is inevitable, and every failure you survive is a learning experience.", "zh": "记住，失败是不可避免的，你经历的每一次失败都是一次学习的体验。", "key": ["inevitable"]},
+          "ext": []
+        },
+        {
+          "no": 16, "word": "avoid", "freq": 1, "page": 37,
+          "prons": [{"ipa": "/əˈvɔɪd/", "senses": [{"pos": "v.", "mean": "[[避免]]；回避"}]}],
+          "tip": {"type": "联想", "text": "a-（一再地）+ voi（音似“我”）+ d（联想“的”）→ 我一再地“回避”他的眼神。"},
+          "ex": {"type": "真", "year": 2022, "en": "It helps us avoid making mistakes.", "zh": "它有助于我们避免犯错。", "key": ["avoid"]},
+          "ext": [{"word": "avoidance", "ipa": "/əˈvɔɪdns/", "senses": [{"pos": "n.", "mean": "避免；防止；避开"}]}]
+        }
+      ]
+    },
+    {
+      "no": 8,
+      "title": "“适应”相关",
+      "pages": [38, 38],
+      "map": {
+        "w": "“适应”相关",
+        "children": [
+          {"w": "adapt", "children": [
+            {"w": "adaptation", "rel": "扩", "children": [{"w": "adaptive"}]},
+            {"w": "adopt", "rel": "相关", "children": [{"w": "adoption", "rel": "扩"}]},
+            {"w": "appoint", "rel": "相关", "children": [
+              {"w": "appointment", "rel": "扩"},
+              {"w": "disappoint", "rel": "反义", "children": [
+                {"w": "disappointment", "rel": "扩"},
+                {"w": "disappointed", "rel": "扩"},
+                {"w": "disappointing", "rel": "扩"}
+              ]}
+            ]}
+          ]},
+          {"w": "accommodate", "children": [{"w": "accommodation", "rel": "扩"}]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 17, "word": "appoint", "freq": 1, "page": 38,
+          "prons": [{"ipa": "/əˈpɔɪnt/", "senses": [{"pos": "v.", "mean": "[[任命]]；[[安排]]；分配；指派"}]}],
+          "tip": {"type": "构词", "text": "ap-（= to，给）+ point（指）→ 指派给 → 任命；安排；分配；指派"},
+          "ex": {"type": "例", "en": "Last year Britain even appointed a minister for loneliness.", "zh": "去年，英国甚至任命了一位孤独部长。", "key": ["appointed"]},
+          "ext": [{"word": "appointment", "ipa": "/əˈpɔɪntmənt/", "senses": [{"pos": "n.", "mean": "约会；预约；职务"}]}]
+        },
+        {
+          "no": 18, "word": "disappoint", "freq": 1, "page": 38,
+          "prons": [{"ipa": "/ˌdɪsəˈpɔɪnt/", "senses": [{"pos": "v.", "mean": "[[使失望]]；使破灭"}]}],
+          "tip": {"type": "构词", "text": "dis-（不）+ appoint（指派）→ 不被（领导）指派 → 使失望"},
+          "ex": {"type": "例", "en": "I hate to disappoint you, but I'm just not interested.", "zh": "我不想使你扫兴，但我确实不感兴趣。", "key": ["disappoint"]},
+          "ext": [
+            {"word": "disappointment", "ipa": "/ˌdɪsəˈpɔɪntmənt/", "senses": [{"pos": "n.", "mean": "失望；沮丧"}]},
+            {"word": "disappointed", "ipa": "/ˌdɪsəˈpɔɪntɪd/", "senses": [{"pos": "adj.", "mean": "失望的；沮丧的"}]},
+            {"word": "disappointing", "ipa": "/ˌdɪsəˈpɔɪntɪŋ/", "senses": [{"pos": "adj.", "mean": "令人失望的"}]}
+          ]
+        },
+        {
+          "no": 19, "word": "accommodate", "freq": 1, "page": 38,
+          "prons": [{"ipa": "/əˈkɒmədeɪt/", "senses": [{"pos": "v.", "mean": "[[为（某人）提供住宿（或膳宿、座位等）]]；[[适应]]；容纳"}]}],
+          "tip": {"type": "联想", "text": "ac-（一再地）+ commo（联想 come）+ date（约会）→ 我经常来和朋友约会，朋友为我提供住宿 → 为（某人）提供住宿"},
+          "ex": {"type": "真", "year": 2022, "en": "They are given to accommodate students' needs.", "zh": "它们是为了满足学生的需求而提供的。", "key": ["accommodate"]},
+          "ext": [{"word": "accommodation", "ipa": "/əˌkɒməˈdeɪʃn/", "senses": [{"pos": "n.", "mean": "住处；办公处；住宿"}]}]
+        },
+        {
+          "no": 20, "word": "adapt", "freq": 1, "page": 38,
+          "prons": [{"ipa": "/əˈdæpt/", "senses": [{"pos": "v.", "mean": "[[（使）适应]]；[[使适合]]"}]}],
+          "tip": {"type": "构词", "text": "ad-（= to，到）+ apt（适合的）→ 使适应；使适合"},
+          "ex": {"type": "真", "year": 2023, "en": "They have difficulty adapting to climate change.", "zh": "他们很难适应气候变化。", "key": ["adapting", "to"]},
+          "ext": [
+            {"word": "adaptation", "ipa": "/ˌædæpˈteɪʃn/", "senses": [{"pos": "n.", "mean": "适应；改编本"}]},
+            {"word": "adaptive", "ipa": "/əˈdæptɪv/", "senses": [{"pos": "adj.", "mean": "适应的；有适应能力的"}]}
+          ]
+        },
+        {
+          "no": 21, "word": "adopt", "freq": 1, "page": 38,
+          "prons": [{"ipa": "/əˈdɒpt/", "senses": [{"pos": "v.", "mean": "[[收养]]；[[采纳]]；接受"}]}],
+          "tip": {"type": "联想", "text": "a（一）+ d（联想“地”）+ o（形似洞口）+ pt → 他在一个地洞口发现了一个小孩，“采纳”了家族的意见，“收养”了他。"},
+          "ex": {"type": "真", "year": 2023, "en": "A bride will in most cases adopt a name that combines the couple's last names.", "zh": "在大多数情况下，新娘会采用一个结合夫妻姓氏的名字。", "key": ["adopt"]},
+          "ext": [{"word": "adoption", "ipa": "/əˈdɒpʃn/", "senses": [{"pos": "n.", "mean": "收养；采用"}]}]
+        }
+      ]
+    },
+    {
+      "no": 9,
+      "title": "“娱乐”相关",
+      "pages": [38, 39],
+      "map": {
+        "w": "“娱乐”相关",
+        "children": [
+          {"w": "amuse", "children": [
+            {"w": "amusement", "rel": "扩"},
+            {"w": "amaze", "rel": "形近", "children": [
+              {"w": "amazement", "rel": "扩"},
+              {"w": "amazing", "rel": "扩"},
+              {"w": "startle", "rel": "近义"}
+            ]},
+            {"w": "leisure", "rel": "相关", "children": [{"w": "leisurely", "rel": "扩"}]}
+          ]},
+          {"w": "recreation", "children": [
+            {"w": "recreational", "rel": "扩"},
+            {"w": "pastime", "rel": "近义"}
+          ]},
+          {"w": "arbitrary", "children": [{"w": "arbitrarily", "rel": "扩"}]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 22, "word": "amuse", "freq": 2, "page": 38,
+          "prons": [{"ipa": "/əˈmjuːz/", "senses": [{"pos": "v.", "mean": "[[娱乐]]；逗乐"}]}],
+          "tip": {"type": "联想", "text": "a-（表加强）+ muse（音似“缪斯”）→ 缪斯是希腊神话中主管艺术与科学的神 → 娱乐"},
+          "ex": {"type": "例", "en": "At yesterday's party, Elizabeth's boyfriend amused us by imitating Charlie Chaplin.", "zh": "在昨天的聚会上，伊丽莎白的男朋友模仿查理·卓别林逗我们开心。", "key": ["amused"]},
+          "ext": [{"word": "amusement", "ipa": "/əˈmjuːzmənt/", "senses": [{"pos": "n.", "mean": "娱乐活动"}]}]
+        },
+        {
+          "no": 23, "word": "amaze", "freq": 1, "page": 39,
+          "prons": [{"ipa": "/əˈmeɪz/", "senses": [{"pos": "v.", "mean": "[[使吃惊]]；使惊讶"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“啊妹子”→ 啊，妹子上大学后变化好大啊 → 使惊讶"},
+          "ex": {"type": "例", "en": "He spoke perfect Korean—I was really amazed.", "zh": "他韩语说得很好——我真的很惊讶。", "key": ["amazed"]},
+          "ext": [
+            {"word": "amazement", "ipa": "/əˈmeɪzmənt/", "senses": [{"pos": "n.", "mean": "惊奇；惊愕"}]},
+            {"word": "amazing", "ipa": "/əˈmeɪzɪŋ/", "senses": [{"pos": "adj.", "mean": "令人惊异的；了不起的"}]}
+          ]
+        },
+        {
+          "no": 24, "word": "startle", "freq": 1, "page": 39,
+          "prons": [{"ipa": "/ˈstɑːtl/", "senses": [{"pos": "v.", "mean": "[[使惊吓]]；使吓一跳"}]}],
+          "tip": {"type": "联想", "text": "start（开始）+ le（联想“了”）→ 他刚到学校，老师就说考试马上就开始了，使他吓了一跳 → 使惊吓；使吓一跳"},
+          "ex": {"type": "例", "en": "The sound of the explosion startled me.", "zh": "爆炸声把我吓了一跳。", "key": ["startled"]},
+          "ext": []
+        },
+        {
+          "no": 25, "word": "leisure", "freq": 2, "page": 39,
+          "prons": [{"ipa": "/ˈleʒə/", "senses": [{"pos": "n.", "mean": "[[空闲]]，闲暇"}]}],
+          "tip": {"type": "联想", "text": "lei（联想“累”）+ sure（的确）→ 你的确累了的话，就找个“空闲”放松一下。"},
+          "ex": {"type": "真", "year": 2018, "en": "They greatly enrich people's leisure life.", "zh": "它们极大地丰富了人们的休闲生活。", "key": ["leisure"]},
+          "ext": [{"word": "leisurely", "ipa": "/ˈleʒəli/", "senses": [
+            {"pos": "adj.", "mean": "慢悠悠的"},
+            {"pos": "adv.", "mean": "从容地，闲适地"}
+          ]}]
+        },
+        {
+          "no": 26, "word": "pastime", "freq": 1, "page": 39,
+          "prons": [{"ipa": "/ˈpɑːstaɪm/", "senses": [{"pos": "n.", "mean": "[[消遣]]；休闲活动"}]}],
+          "tip": {"type": "构词", "text": "pas(t)（过去）+ time（时间）→ 让时间过去的活动 → 消遣；休闲活动"},
+          "ex": {"type": "例", "en": "By nature, Americans are enthusiastic and energetic about hobbies or pastimes.", "zh": "美国人天生对爱好和休闲活动充满热情和活力。", "key": ["pastimes"]},
+          "ext": []
+        },
+        {
+          "no": 27, "word": "recreation", "freq": 1, "page": 39,
+          "prons": [{"ipa": "/ˌrekriˈeɪʃn/", "senses": [{"pos": "n.", "mean": "[[娱乐]]，消遣"}]}],
+          "tip": {"type": "构词", "text": "re-（重复）+ creat(e)（创造）+ -ion（名词后缀）→ “娱乐”可以使人重新焕发创造力。"},
+          "ex": {"type": "真", "year": 2023, "en": "But the club also acts as a recreation center and safe haven for teenagers, with video games readily available.", "zh": "但俱乐部同时也是青少年的娱乐中心和避风港，（在那里）他们随时可以玩电子游戏。", "key": ["recreation"]},
+          "ext": [{"word": "recreational", "ipa": "/ˌrekriˈeɪʃənl/", "senses": [{"pos": "adj.", "mean": "娱乐的，消遣的"}]}]
+        },
+        {
+          "no": 28, "word": "arbitrary", "freq": 1, "page": 39,
+          "prons": [{"ipa": "/ˈɑːbɪtrəri/", "senses": [{"pos": "adj.", "mean": "[[武断的]]，[[任意的]]，随心所欲的；专横的"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“啊，别吹”→ 啊，别吹牛了，你说在家很专横，我可不信 → 专横的"},
+          "ex": {"type": "例", "en": "The choice of players for the team seemed arbitrary.", "zh": "看来这个队的队员是随意选定的", "key": ["arbitrary"]},
+          "ext": [{"word": "arbitrarily", "ipa": "/ˌɑːbɪˈtrerəli/", "senses": [{"pos": "adv.", "mean": "任意地；武断地；反复无常地"}]}]
+        }
+      ]
+    },
+    {
+      "no": 10,
+      "title": "“改变”相关",
+      "pages": [39, 40],
+      "map": {
+        "w": "“改变”相关",
+        "children": [
+          {"w": "alter", "children": [
+            {"w": "alteration", "rel": "扩", "children": [{"w": "alternative"}]}
+          ]},
+          {"w": "shift", "children": [
+            {"w": "swift", "rel": "形近", "children": [
+              {"w": "switch", "rel": "形近", "children": [{"w": "plug", "rel": "相关"}]}
+            ]}
+          ]},
+          {"w": "vary", "children": [
+            {"w": "variation", "rel": "扩", "children": [
+              {"w": "variable", "children": [
+                {"w": "variant", "children": [
+                  {"w": "various", "children": [
+                    {"w": "variety", "children": [{"w": "invariably"}]}
+                  ]}
+                ]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 29, "word": "alter", "freq": 2, "page": 39,
+          "prons": [{"ipa": "/ˈɔːltə(r)/", "senses": [{"pos": "v.", "mean": "[[改变]]，改动"}]}],
+          "tip": {"type": "联想", "text": "al（联想 all）+ ter（音似“特”）→ 所有的都进行了特别的“改动”。"},
+          "ex": {"type": "例", "en": "His actions that day altered my perception of him.", "zh": "他那天的行为改变了我对他的看法。", "key": ["altered"]},
+          "ext": [{"word": "alteration", "ipa": "/ˌɔːltəˈreɪʃn/", "senses": [{"pos": "n.", "mean": "变更；改造"}]}]
+        },
+        {
+          "no": 30, "word": "alternative", "freq": 2, "page": 39,
+          "prons": [{"ipa": "/ɔːlˈtɜːnətɪv/", "senses": [
+            {"pos": "n.", "mean": "[[可供选择的事物]]"},
+            {"pos": "adj.", "mean": "[[可供选择的；备选的]]；另类的"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2018, "en": "When I apologise, I usually choose in-person first, or a phone conversation as my top alternative, and maybe a handwritten note next.", "zh": "当我道歉时，我通常会首选面对面或电话交谈，其次可能是手写便条。", "key": ["alternative"]},
+          "ext": []
+        },
+        {
+          "no": 31, "word": "shift", "freq": 3, "page": 40,
+          "prons": [{"ipa": "/ʃɪft/", "senses": [
+            {"pos": "v.", "mean": "[[转移]]；[[改变]]"},
+            {"pos": "n.", "mean": "转变；轮班"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“洗福特”→ 洗那辆福特车要“改变”下位置。"},
+          "ex": {"type": "例", "en": "That doesn't control the cost of education; it just shifts it to taxpayers.", "zh": "那不能控制教育的成本；它只是把它转移给了纳税人。", "key": ["shifts"]},
+          "ext": []
+        },
+        {
+          "no": 32, "word": "swift", "freq": 1, "page": 40,
+          "prons": [{"ipa": "/swɪft/", "senses": [{"pos": "adj.", "mean": "[[快速的]]，敏捷的；迅即发生的"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“四维福特”→ 那辆四维福特的运动是“快速的”。"},
+          "ex": {"type": "例", "en": "Thank you for your swift reply.", "zh": "感谢您的迅速回复。", "key": ["swift"]},
+          "ext": []
+        },
+        {
+          "no": 33, "word": "switch", "freq": 2, "page": 40,
+          "prons": [{"ipa": "/swɪtʃ/", "senses": [
+            {"pos": "n.", "mean": "[[开关]]；转变"},
+            {"pos": "v.", "mean": "转变；调换"}
+          ]}],
+          "tip": {"type": "联想", "text": "s（联想“蛇”）+ witch（巫婆）→ 蛇“转变”成了巫婆，被“开关”电死了。"},
+          "ex": {"type": "真", "year": 2017, "en": "Leah shed the safety of her accounting job and made the switch complete.", "zh": "利亚毅然放弃了安稳的会计工作，彻底完成了职业转型。", "key": ["switch"]},
+          "ext": []
+        },
+        {
+          "no": 34, "word": "plug", "freq": 1, "page": 40,
+          "prons": [{"ipa": "/plʌɡ/", "senses": [
+            {"pos": "v.", "mean": "把……塞住；推广"},
+            {"pos": "n.", "mean": "[[插头]]；塞子"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“扑拉哥”→ 妈妈扑过去拉住哥哥，阻止他摸“插头”。"},
+          "ex": {"type": "例", "en": "He plugged the hole in the pipe with an old rag.", "zh": "他用一块旧布把管子上的那个洞塞住了。", "key": ["plugged"]},
+          "ext": []
+        },
+        {
+          "no": 35, "word": "vary", "freq": 3, "page": 40,
+          "prons": [{"ipa": "/ˈveəri/", "senses": [{"pos": "v.", "mean": "[[改变]]；[[变化]]；使多样化；不同"}]}],
+          "tip": {"type": "对照", "text": "通过努力学习，你的改变（vary）非常（very）大。"},
+          "ex": {"type": "真", "year": 2017, "en": "Students' test-form preferences vary, too, often depending on the subject and course difficulty.", "zh": "学生对测试形式的偏好也会有所不同，通常取决于科目和课程的难度。", "key": ["vary"]},
+          "ext": [
+            {"word": "variation", "ipa": "/ˌveəriˈeɪʃn/", "senses": [{"pos": "n.", "mean": "变化"}]},
+            {"word": "variable", "ipa": "/ˈveəriəbl/", "senses": [
+              {"pos": "n.", "mean": "变量，可变因素"},
+              {"pos": "adj.", "mean": "可变的；易变的，多变的"}
+            ]},
+            {"word": "variant", "ipa": "/ˈveəriənt/", "senses": [
+              {"pos": "n.", "mean": "变种；变体；变形"},
+              {"pos": "adj.", "mean": "不同的，变体的，变种的"}
+            ]},
+            {"word": "various", "ipa": "/ˈveəriəs/", "senses": [{"pos": "adj.", "mean": "各种各样的，不同的；具有多种特征的"}]}
+          ]
+        },
+        {
+          "no": 36, "word": "variety", "freq": 3, "page": 40,
+          "prons": [{"ipa": "/vəˈraɪəti/", "senses": [{"pos": "n.", "mean": "[[多样化]]；[[种类]]；变种"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2023, "en": "Jeans are available in a greater variety in America.", "zh": "在美国，牛仔裤有很多种类。", "key": ["variety"]},
+          "ext": []
+        },
+        {
+          "no": 37, "word": "invariably", "freq": 1, "page": 40,
+          "prons": [{"ipa": "/ɪnˈveəriəbli/", "senses": [{"pos": "adv.", "mean": "[[不变地]]；[[始终如一地]]；一贯地"}]}],
+          "tip": {"type": "对照", "text": "vary v.变化 → variable adj.可变的 → invariable adj.不变的 → invariably adv."},
+          "ex": {"type": "例", "en": "Children's personality characteristics are invariably determined by their mothers.", "zh": "孩子的性格特点总是由其母亲决定。", "key": ["invariably"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 11,
+      "title": "“模式”相关",
+      "pages": [40, 41],
+      "map": {
+        "w": "“模式”相关",
+        "children": [
+          {"w": "style", "children": [{"w": "stylish", "rel": "扩"}]},
+          {"w": "mode", "children": [
+            {"w": "modify", "rel": "变e", "children": [
+              {"w": "modification", "rel": "扩"},
+              {"w": "modifier", "rel": "扩"}
+            ]},
+            {"w": "model", "rel": "加l"},
+            {"w": "modest", "rel": "加st", "children": [
+              {"w": "modesty", "rel": "扩"},
+              {"w": "moderate", "rel": "变st", "children": [
+                {"w": "moderation", "rel": "扩"},
+                {"w": "moderator", "rel": "扩"},
+                {"w": "tolerate", "rel": "形近", "children": [
+                  {"w": "tolerance", "rel": "扩"},
+                  {"w": "tolerant", "rel": "扩"},
+                  {"w": "tolerable", "rel": "扩"}
+                ]}
+              ]},
+              {"w": "earnest", "rel": "相关"}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 38, "word": "style", "freq": 2, "page": 40,
+          "prons": [{"ipa": "/staɪl/", "senses": [
+            {"pos": "n.", "mean": "[[风格]]；款式；方式"},
+            {"pos": "v.", "mean": "设计"}
+          ]}],
+          "tip": {"type": "联想", "text": "《江南 Style》这首歌展示了独特的“风格”。"},
+          "ex": {"type": "真", "year": 2020, "en": "Each artist has their own individual style but all artists share a common aim.", "zh": "每个艺术家都有自己的个人风格，但所有的艺术家都有一个共同的目标。", "key": ["style"]},
+          "ext": [{"word": "stylish", "ipa": "/ˈstaɪlɪʃ/", "senses": [{"pos": "adj.", "mean": "时髦的；新潮的；高雅的；雅致的"}]}]
+        },
+        {
+          "no": 39, "word": "mode", "freq": 1, "page": 41,
+          "prons": [{"ipa": "/məʊd/", "senses": [{"pos": "n.", "mean": "[[模式]]；方式，方法；状态；形式"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“模的”→ 模式；方式"},
+          "ex": {"type": "例", "en": "The operation should be done only once for each mode.", "zh": "每种模式仅需操作一次。", "key": ["mode"]},
+          "ext": []
+        },
+        {
+          "no": 40, "word": "model", "freq": 1, "page": 41,
+          "prons": [{"ipa": "/ˈmɒdl/", "senses": [
+            {"pos": "n.", "mean": "[[模型]]，样式；[[模特儿]]；模范"},
+            {"pos": "v.", "mean": "做模特儿；将……做成模型"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2020, "en": "Trying to live up to the images of \"perfect\" models and movie heroes has a dark side.", "zh": "试图追求“完美”模范和电影英雄的形象有其阴暗面。", "key": ["models"]},
+          "ext": []
+        },
+        {
+          "no": 41, "word": "modify", "freq": 1, "page": 41,
+          "prons": [{"ipa": "/ˈmɒdɪfaɪ/", "senses": [{"pos": "v.", "mean": "[[调整]]；修改；使更适合"}]}],
+          "tip": {"type": "联想", "text": "mod（联想 mode）+ -ify（动词后缀）→ 文章不能太过模式化，要适当进行“调整”和“修改”。"},
+          "ex": {"type": "例", "en": "She modified her article.", "zh": "她修改了她的文章。", "key": ["modified"]},
+          "ext": [
+            {"word": "modification", "ipa": "/ˌmɒdɪfɪˈkeɪʃn/", "senses": [{"pos": "n.", "mean": "修改，修正；改变"}]},
+            {"word": "modifier", "ipa": "/ˈmɒdɪfaɪə(r)/", "senses": [{"pos": "n.", "mean": "修饰语"}]}
+          ]
+        },
+        {
+          "no": 42, "word": "modest", "freq": 2, "page": 41,
+          "prons": [{"ipa": "/ˈmɒdɪst/", "senses": [{"pos": "adj.", "mean": "[[适中的]]；谦虚的；保守的"}]}],
+          "tip": {"type": "联想", "text": "mod（联想 mode）+ -est（最）→ 做人最好的模式是“谦虚的”。"},
+          "ex": {"type": "真", "year": 2019, "en": "They did not raise much due to modest targets.", "zh": "由于目标保守，他们没有筹集太多资金。", "key": ["modest"]},
+          "ext": [{"word": "modesty", "ipa": "/ˈmɒdəsti/", "senses": [{"pos": "n.", "mean": "谦虚"}]}]
+        },
+        {
+          "no": 43, "word": "earnest", "freq": 1, "page": 41,
+          "prons": [{"ipa": "/ˈɜːnɪst/", "senses": [{"pos": "adj.", "mean": "[[认真的]]，诚挚的"}]}],
+          "tip": {"type": "联想", "text": "earn（挣钱）+ -est（最）→ 想挣钱就要用最“认真的”态度做事。"},
+          "ex": {"type": "例", "en": "The majority of earnest people are trying to get on in life.", "zh": "大多数认真的人都在努力生活。", "key": ["earnest"]},
+          "ext": []
+        },
+        {
+          "no": 44, "word": "moderate", "freq": 3, "page": 41,
+          "prons": [
+            {"ipa": "/ˈmɒdəreɪt/", "senses": [{"pos": "v.", "mean": "缓和；使适中"}]},
+            {"ipa": "/ˈmɒdərət/", "senses": [{"pos": "adj.", "mean": "[[适度的]]；中等的"}]}
+          ],
+          "tip": {"type": "联想", "text": "mode（联想 model）+ rate（速度）→ 模特走路的速度是“适度的”。"},
+          "ex": {"type": "例", "en": "The team enjoyed only moderate success last season.", "zh": "上个赛季，这支球队只取得了中等成绩。", "key": ["moderate"]},
+          "ext": [
+            {"word": "moderation", "ipa": "/ˌmɒdəˈreɪʃn/", "senses": [{"pos": "n.", "mean": "适度；适中"}]},
+            {"word": "moderator", "ipa": "/ˈmɒdəreɪtə(r)/", "senses": [{"pos": "n.", "mean": "调解人；调停人"}]}
+          ]
+        },
+        {
+          "no": 45, "word": "tolerate", "freq": 1, "page": 41,
+          "prons": [{"ipa": "/ˈtɒləreɪt/", "senses": [{"pos": "v.", "mean": "[[容忍]]；[[忍受]]；容许"}]}],
+          "tip": {"type": "联想", "text": "tole（音似“逃了”）+ rate（速度）→ 他“忍受”不了那种煎熬，以很快的速度逃跑了。"},
+          "ex": {"type": "例", "en": "This sort of behaviour will not be tolerated.", "zh": "这种行为是不能容许的。", "key": ["tolerated"]},
+          "ext": [
+            {"word": "tolerance", "ipa": "/ˈtɒlərəns/", "senses": [{"pos": "n.", "mean": "宽容"}]},
+            {"word": "tolerant", "ipa": "/ˈtɒlərənt/", "senses": [{"pos": "adj.", "mean": "容忍的；宽容的"}]},
+            {"word": "tolerable", "ipa": "/ˈtɒlərəbl/", "senses": [{"pos": "adj.", "mean": "可接受的；可忍受的"}]}
+          ]
+        }
+      ]
+    }
+  ]
+}

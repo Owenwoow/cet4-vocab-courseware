@@ -1,0 +1,702 @@
+{
+  "id": "u02-l03",
+  "part": 1,
+  "unit": 2,
+  "lesson": 3,
+  "pages": [42, 49],
+  "groups": [
+    {
+      "no": 12,
+      "title": "“光”相关",
+      "pages": [42, 43],
+      "map": {
+        "w": "“光”相关",
+        "children": [
+          {"w": "beam", "children": [
+            {"w": "bright", "rel": "相关", "children": [{"w": "brighten", "rel": "扩"}]}
+          ]},
+          {"w": "light", "children": [
+            {"w": "lighting", "rel": "扩"},
+            {"w": "slight", "rel": "加s", "children": [{"w": "slightly", "rel": "扩"}]},
+            {"w": "enlighten", "rel": "加前后缀", "children": [
+              {"w": "enlightenment", "rel": "扩"},
+              {"w": "enlightening", "rel": "扩"}
+            ]},
+            {"w": "lightning", "rel": "加ning", "children": [
+              {"w": "thunder", "rel": "相关", "children": [
+                {"w": "thunderous", "rel": "扩"},
+                {"w": "thumb", "rel": "形近"}
+              ]}
+            ]},
+            {"w": "delight", "rel": "加前缀", "children": [
+              {"w": "delighted", "rel": "扩"},
+              {"w": "delightful", "rel": "扩"}
+            ]},
+            {"w": "highlight", "rel": "合成"}
+          ]},
+          {"w": "solar", "children": [
+            {"w": "sunlight", "rel": "相关", "children": [
+              {"w": "sunset", "rel": "相关", "children": [
+                {"w": "outset", "rel": "形近"},
+                {"w": "dusk", "rel": "相关", "children": [{"w": "dawn", "rel": "反义"}]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "beam", "freq": 1, "page": 42,
+          "prons": [{"ipa": "/biːm/", "senses": [{"pos": "n.", "mean": "[[光线]]；[[梁，横梁]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“闭目”→ 他闭目养神，缓解“光线”对眼睛的刺激。"},
+          "ex": {"type": "真", "year": 2018, "en": "A beam about ten feet long collapsed to the ground.", "zh": "一根约十英尺长的横梁倒塌在地。", "key": ["beam"]},
+          "ext": []
+        },
+        {
+          "no": 2, "word": "bright", "freq": 1, "page": 42,
+          "prons": [{"ipa": "/braɪt/", "senses": [{"pos": "adj.", "mean": "明亮的；聪明的；愉快的"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2020, "en": "Given this, the future for the region's poor doesn't look nearly as bright as it once did.", "zh": "鉴于此，该地区穷人的未来看起来不像以前那么光明。", "key": ["bright"]},
+          "ext": [{"word": "brighten", "ipa": "/ˈbraɪtn/", "senses": [{"pos": "v.", "mean": "照亮；（使）更加明亮，色彩鲜艳"}]}]
+        },
+        {
+          "no": 3, "word": "light", "freq": 1, "page": 42,
+          "prons": [{"ipa": "/laɪt/", "senses": [
+            {"pos": "n.", "mean": "[[光线]]；[[电灯]]"},
+            {"pos": "adj.", "mean": "充满光的；程度轻的"},
+            {"pos": "v.", "mean": "使明亮；点燃"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“拉它”→ 有些“电灯”要拉它的灯绳进行开关。"},
+          "ex": {"type": "例", "en": "For his part, Wang said that in his own experience, losing did light a motivating fire.", "zh": "王（先生）说，从他自己的经历来看，失败确实点燃了一束激励人心的火焰。", "key": ["light"]},
+          "ext": [{"word": "lighting", "ipa": "/ˈlaɪtɪŋ/", "senses": [{"pos": "n.", "mean": "照明；灯光；布光"}]}]
+        },
+        {
+          "no": 4, "word": "slight", "freq": 2, "page": 42,
+          "prons": [{"ipa": "/slaɪt/", "senses": [{"pos": "adj.", "mean": "[[轻微的，少量的]]"}]}],
+          "tip": {"type": "联想", "text": "s（音似“丝”）+ light（光线）→ 一丝光线 → 轻微的，少量的"},
+          "ex": {"type": "例", "en": "The picture was at a slight angle.", "zh": "这幅画稍微有点歪。", "key": ["slight"]},
+          "ext": [{"word": "slightly", "ipa": "/ˈslaɪtli/", "senses": [{"pos": "adv.", "mean": "略微；稍微"}]}]
+        },
+        {
+          "no": 5, "word": "enlighten", "freq": 2, "page": 42,
+          "prons": [{"ipa": "/ɪnˈlaɪtn/", "senses": [{"pos": "v.", "mean": "[[启发]]；[[教导]]；[[启迪]]"}]}],
+          "tip": {"type": "构词", "text": "en-（使）+ light（照亮 → 明白）+ -en（后缀）→ 使明白 → 启发；教导；启迪"},
+          "ex": {"type": "例", "en": "A few dedicated doctors have fought for years to enlighten the profession.", "zh": "几位富有献身精神的医生为启蒙这一行业奋斗多年。", "key": ["enlighten"]},
+          "ext": [
+            {"word": "enlightenment", "ipa": "/ɪnˈlaɪtnmənt/", "senses": [{"pos": "n.", "mean": "启迪；启蒙运动；教化"}]},
+            {"word": "enlightening", "ipa": "/ɪnˈlaɪtnɪŋ/", "senses": [{"pos": "adj.", "mean": "有启迪的，使人感悟的"}]}
+          ]
+        },
+        {
+          "no": 6, "word": "lightning", "freq": 1, "page": 42,
+          "prons": [{"ipa": "/ˈlaɪtnɪŋ/", "senses": [
+            {"pos": "n.", "mean": "[[闪电]]"},
+            {"pos": "adj.", "mean": "闪电般的；飞快的"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "He took shelter under a tree and was struck by lightning.", "zh": "他躲在一棵树下，被闪电击中了。", "key": ["lightning"]},
+          "ext": []
+        },
+        {
+          "no": 7, "word": "thunder", "freq": 1, "page": 43,
+          "prons": [{"ipa": "/ˈθʌndə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[雷声，轰隆声]]"},
+            {"pos": "v.", "mean": "[[打雷]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "thun（音似“仨”）+ der（联想“打呼噜”）→ 他们仨睡觉都打呼噜，呼噜声像“打雷”一样响。"},
+          "ex": {"type": "真", "year": 2019, "en": "It has never seen thunder and lightning.", "zh": "它从未见过电闪雷鸣。", "key": ["thunder"]},
+          "ext": [{"word": "thunderous", "ipa": "/ˈθʌndərəs/", "senses": [{"pos": "adj.", "mean": "雷鸣般的；声音很大的；怒容满面的；怒气冲冲的"}]}]
+        },
+        {
+          "no": 8, "word": "thumb", "freq": 2, "page": 43,
+          "prons": [{"ipa": "/θʌm/", "senses": [
+            {"pos": "n.", "mean": "[[拇指]]"},
+            {"pos": "v.", "mean": "[[快速翻阅]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "thu（音似“仨”）+ m（联想“妹”）+ b → 三个妹妹看书看得特别快 → 快速翻阅"},
+          "ex": {"type": "例", "en": "He caught his thumb in the door.", "zh": "他的拇指被门夹住了。", "key": ["thumb"]},
+          "ext": []
+        },
+        {
+          "no": 9, "word": "delight", "freq": 3, "page": 43,
+          "prons": [{"ipa": "/dɪˈlaɪt/", "senses": [
+            {"pos": "n.", "mean": "[[高兴]]"},
+            {"pos": "v.", "mean": "（使）[[高兴]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "de（音似“弟”）+ light（光）→ 弟弟在黑暗中看到一束光，非常“高兴”。"},
+          "ex": {"type": "例", "en": "He looked up at his father, his features overflowing with energy and delight.", "zh": "他抬头看着父亲，脸上洋溢着活力和喜悦。", "key": ["delight"]},
+          "ext": [
+            {"word": "delighted", "ipa": "/dɪˈlaɪtɪd/", "senses": [{"pos": "adj.", "mean": "高兴的"}]},
+            {"word": "delightful", "ipa": "/dɪˈlaɪtfl/", "senses": [{"pos": "adj.", "mean": "使人快乐的；令人愉快的；宜人的"}]}
+          ]
+        },
+        {
+          "no": 10, "word": "highlight", "freq": 2, "page": 43,
+          "prons": [{"ipa": "/ˈhaɪlaɪt/", "senses": [
+            {"pos": "v.", "mean": "[[突出，使显著]]"},
+            {"pos": "n.", "mean": "[[高光时刻]]；[[最精彩的部分]]"}
+          ]}],
+          "tip": {"type": "构词", "text": "high（高）+ light（光）→ 高光时刻"},
+          "ex": {"type": "真", "year": 2017, "en": "It may highlight your inability to delegate effectively.", "zh": "这可能会突出你无法有效地委派任务。", "key": ["highlight"]},
+          "ext": []
+        },
+        {
+          "no": 11, "word": "solar", "freq": 3, "page": 43,
+          "prons": [{"ipa": "/ˈsəʊlə(r)/", "senses": [{"pos": "adj.", "mean": "太阳的；日光的"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“馊了”→ 东西都馊了，拿到太阳底下晒晒吧 → 太阳的；日光的"},
+          "ex": {"type": "例", "en": "The rest of the energy savings comes from the solar units.", "zh": "其余的能源节约来自太阳能装置。", "key": ["solar"]},
+          "ext": []
+        },
+        {
+          "no": 12, "word": "sunlight", "freq": 1, "page": 43,
+          "prons": [{"ipa": "/ˈsʌnlaɪt/", "senses": [{"pos": "n.", "mean": "[[阳光]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2019, "en": "One converts sunlight into energy and the other has to eat food to make its energy.", "zh": "一种将阳光转化为能量，另一种必须吃食物来产生能量。", "key": ["sunlight"]},
+          "ext": []
+        },
+        {
+          "no": 13, "word": "sunset", "freq": 1, "page": 43,
+          "prons": [{"ipa": "/ˈsʌnset/", "senses": [{"pos": "n.", "mean": "[[日落]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "From sunrise to sunset, my father, my younger brother and I cut the weeds in the very large yards.", "zh": "从日出到日落，我和我的父亲、弟弟在非常大的院子里除草。", "key": ["sunset"]},
+          "ext": []
+        },
+        {
+          "no": 14, "word": "outset", "freq": 1, "page": 43,
+          "prons": [{"ipa": "/ˈaʊtset/", "senses": [{"pos": "n.", "mean": "[[开始]]；[[开端]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "You should have made that clear right at the outset.", "zh": "你应该一开始就说清楚。", "key": ["outset"]},
+          "ext": []
+        },
+        {
+          "no": 15, "word": "dawn", "freq": 1, "page": 43,
+          "prons": [{"ipa": "/dɔːn/", "senses": [
+            {"pos": "n.", "mean": "[[黎明]]；[[开端]]"},
+            {"pos": "v.", "mean": "[[破晓]]；[[开始]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "黎明（dawn）时他的心才真正沉下来（down）。"},
+          "ex": {"type": "例", "en": "At dawn on July 16, 1945, the atomic bomb was set off.", "zh": "1945 年 7 月 16 日黎明时分，原子弹爆炸了。", "key": ["dawn"]},
+          "ext": []
+        },
+        {
+          "no": 16, "word": "dusk", "freq": 1, "page": 43,
+          "prons": [{"ipa": "/dʌsk/", "senses": [{"pos": "n.", "mean": "[[黄昏]]；傍晚"}]}],
+          "tip": {"type": "对照", "text": "黄昏（dusk）时天色渐渐暗（dark）了下来。"},
+          "ex": {"type": "例", "en": "The street lights go on at dusk.", "zh": "街灯在黄昏时亮起来。", "key": ["dusk"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 13,
+      "title": "“流”相关",
+      "pages": [44, 44],
+      "map": {
+        "w": "“流”相关",
+        "children": [
+          {"w": "shed", "children": [
+            {"w": "tear", "children": [
+              {"w": "crystal", "rel": "相关", "children": [
+                {"w": "dizzy", "rel": "相关", "children": [{"w": "faint", "rel": "近义"}]}
+              ]}
+            ]}
+          ]},
+          {"w": "candle", "children": [
+            {"w": "cancel", "rel": "音近", "children": [
+              {"w": "cancellation", "rel": "扩"},
+              {"w": "canteen", "rel": "形近"}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 17, "word": "shed", "freq": 1, "page": 44,
+          "prons": [{"ipa": "/ʃed/", "senses": [
+            {"pos": "n.", "mean": "简易房；[[棚]]"},
+            {"pos": "v.", "mean": "散发出光；[[流，洒]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "she（她）+ d（联想“的”）→ 她的眼泪“流”了出来。"},
+          "ex": {"type": "例", "en": "He put all his belongings in the shed.", "zh": "他把他所有的东西都放在棚里。", "key": ["shed"]},
+          "ext": []
+        },
+        {
+          "no": 18, "word": "tear", "freq": 1, "page": 44,
+          "prons": [
+            {"ipa": "/teə(r)/", "senses": [{"pos": "v.", "mean": "[[撕裂]]；戳破"}]},
+            {"ipa": "/tɪə(r)/", "senses": [{"pos": "n.", "mean": "[[眼泪]]"}]}
+          ],
+          "tip": {"type": "谐音", "text": "单词发音类似“太饿”→ 我太饿了，“撕裂”食物的包装袋就吃了起来。"},
+          "ex": {"type": "例", "en": "Cultural differences often tear apart a family built on romantic love.", "zh": "文化差异常常使建立在浪漫爱情基础上的家庭破裂。", "key": ["tear"]},
+          "ext": []
+        },
+        {
+          "no": 19, "word": "crystal", "freq": 1, "page": 44,
+          "prons": [{"ipa": "/ˈkrɪstl/", "senses": [{"pos": "n.", "mean": "[[水晶]]；晶粒"}]}],
+          "tip": {"type": "联想", "text": "cry（哭）+ st（联想 street）+ al（联想 all）→ 动漫里，女孩在街上哭了，所有的眼泪变成了“水晶”在空中飘。"},
+          "ex": {"type": "例", "en": "Every table had been set with fine china and crystal.", "zh": "每张桌子上都摆放着精美的瓷器和水晶。", "key": ["crystal"]},
+          "ext": []
+        },
+        {
+          "no": 20, "word": "candle", "freq": 1, "page": 44,
+          "prons": [{"ipa": "/ˈkændl/", "senses": [{"pos": "n.", "mean": "[[蜡烛]]；烛形物；烛光"}]}],
+          "tip": {"type": "联想", "text": "can（可以）+ d（联想“的”）+ le（联想“了”）→ 家里停电了，我去点根“蜡烛”，这样写作业是可以的。"},
+          "ex": {"type": "例", "en": "She keeps a supply of candles in the house in case of power failure.", "zh": "她在家里预备了一些蜡烛以防停电。", "key": ["candles"]},
+          "ext": []
+        },
+        {
+          "no": 21, "word": "cancel", "freq": 1, "page": 44,
+          "prons": [{"ipa": "/ˈkænsl/", "senses": [{"pos": "v.", "mean": "[[取消，废除]]；[[删除]]"}]}],
+          "tip": {"type": "联想", "text": "can（可以）+ cel（音似 sell）→ 卖东西的订单也可以“取消”。"},
+          "ex": {"type": "真", "year": 2019, "en": "Schools, restaurants, and businesses closed, and more than 1,000 flights were canceled.", "zh": "学校、餐馆和企业关闭了，超过 1,000 个航班被取消了。", "key": ["canceled"]},
+          "ext": [{"word": "cancellation", "alt": "cancelation", "ipa": "/ˌkænsəˈleɪʃn/", "senses": [{"pos": "n.", "mean": "取消，撤销"}]}]
+        },
+        {
+          "no": 22, "word": "canteen", "freq": 1, "page": 44,
+          "prons": [{"ipa": "/kænˈtiːn/", "senses": [{"pos": "n.", "mean": "[[餐厅]]；[[食堂]]"}]}],
+          "tip": {"type": "联想", "text": "can（可以）+ teen（联想 ten）→ 这个商场里可以开十家“餐厅”。"},
+          "ex": {"type": "例", "en": "There is a heated debate regarding whether the university's canteens should be open to the public.", "zh": "关于大学食堂是否应该向公众开放，人们展开了激烈的争论。", "key": ["canteens"]},
+          "ext": []
+        },
+        {
+          "no": 23, "word": "dizzy", "freq": 1, "page": 44,
+          "prons": [{"ipa": "/ˈdɪzi/", "senses": [{"pos": "adj.", "mean": "[[头晕目眩的]]；傻乎乎的，愚蠢的"}]}],
+          "tip": {"type": "联想", "text": "di（音似“弟”）+ zz（联想“睡觉”）+ y → 弟弟都快睡着了，感觉“头晕目眩的”。"},
+          "ex": {"type": "例", "en": "She went to the doctor complaining of dizzy spells.", "zh": "她去找医生看病，说自己一阵一阵地头晕。", "key": ["dizzy"]},
+          "ext": []
+        },
+        {
+          "no": 24, "word": "faint", "freq": 1, "page": 44,
+          "prons": [{"ipa": "/feɪnt/", "senses": [
+            {"pos": "adj.", "mean": "（光、声、味）[[微弱的]]；[[昏厥的]]"},
+            {"pos": "v.", "mean": "[[昏厥]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“粉他”→ 他的粉丝看见他激动地“昏厥”了。"},
+          "ex": {"type": "例", "en": "It carries faint noises from a patient's chest to a doctor's ear.", "zh": "它将微弱的声音从病人的胸部传到医生的耳朵。", "key": ["faint"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 14,
+      "title": "“固体/液体”相关",
+      "pages": [45, 46],
+      "map": {
+        "w": "“固体/液体”相关",
+        "children": [
+          {"w": "solid", "children": [
+            {"w": "solidity", "rel": "扩", "children": [{"w": "solidify"}]},
+            {"w": "consolidate", "rel": "加前后缀", "children": [{"w": "consolidation", "rel": "扩"}]}
+          ]},
+          {"w": "fluid", "children": [{"w": "liquid", "rel": "近义"}]},
+          {"w": "volume", "children": [
+            {"w": "voluminous", "rel": "扩"},
+            {"w": "bulk", "rel": "近义", "children": [
+              {"w": "bulky", "rel": "扩"},
+              {"w": "batch", "rel": "相关", "children": [{"w": "patch", "rel": "b变p"}]},
+              {"w": "minimum", "rel": "相关", "children": [
+                {"w": "minimise", "rel": "扩"},
+                {"w": "minimal", "rel": "扩"}
+              ]},
+              {"w": "maximum", "rel": "相关", "children": [
+                {"w": "maximise", "rel": "扩"},
+                {"w": "maximal", "rel": "扩"},
+                {"w": "climax", "rel": "近义"}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 25, "word": "solid", "freq": 1, "page": 45,
+          "prons": [{"ipa": "/ˈsɒlɪd/", "senses": [
+            {"pos": "n.", "mean": "[[固体]]"},
+            {"pos": "adj.", "mean": "固体的；[[坚固的]]；[[可靠的]]；[[相当好的]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“扫立的”→ 打扫立在地上的“固体”需要用力。"},
+          "ex": {"type": "真", "year": 2017, "en": "The candidate was productive, or intelligent, or a solid scientist or something that's clearly solid praise.", "zh": "候选人要么是多产的，要么是聪明的，要么是一个可靠的科学家，或者是有一些明显值得高度称赞的东西。", "key": ["solid", "solid"]},
+          "ext": [
+            {"word": "solidity", "ipa": "/səˈlɪdəti/", "senses": [{"pos": "n.", "mean": "固态；坚固性"}]},
+            {"word": "solidify", "ipa": "/səˈlɪdɪfaɪ/", "senses": [{"pos": "v.", "mean": "巩固"}]}
+          ]
+        },
+        {
+          "no": 26, "word": "consolidate", "freq": 1, "page": 45,
+          "prons": [{"ipa": "/kənˈsɒlɪdeɪt/", "senses": [{"pos": "v.", "mean": "[[使巩固]]；[[使加强]]；合并"}]}],
+          "tip": {"type": "构词", "text": "con-（所有的）+ solid（坚固的）+ -ate（动词后缀）→ 使所有的东西都很坚固 → 使巩固；使加强"},
+          "ex": {"type": "例", "en": "Small schools consolidated into larger ones, meaning more students were farther away from home.", "zh": "小的学校合并成更大的学校，这意味着更多的学生离家更远。", "key": ["consolidated"]},
+          "ext": [{"word": "consolidation", "ipa": "/kənˌsɒlɪˈdeɪʃn/", "senses": [{"pos": "n.", "mean": "巩固；合并"}]}]
+        },
+        {
+          "no": 27, "word": "fluid", "freq": 1, "page": 45,
+          "prons": [{"ipa": "/ˈfluːɪd/", "senses": [
+            {"pos": "adj.", "mean": "[[流动的]]"},
+            {"pos": "n.", "mean": "[[液体]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "flui（音似“飞流一”）+ d（联想“地”）→ 屋里飞流一地的是些“液体”。"},
+          "ex": {"type": "真", "year": 2019, "en": "A dry mouth may reduce taste sensitivity, but taste is restored by drinking fluids.", "zh": "口干可能会降低味觉的敏感度，但通过饮用液体可以恢复味觉。", "key": ["fluids"]},
+          "ext": []
+        },
+        {
+          "no": 28, "word": "liquid", "freq": 2, "page": 45,
+          "prons": [{"ipa": "/ˈlɪkwɪd/", "senses": [
+            {"pos": "n.", "mean": "[[液体]]"},
+            {"pos": "adj.", "mean": "[[液体的，液态的]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“立溃的”→ 看到洒了一地的“液体”，他立刻崩溃了。"},
+          "ex": {"type": "例", "en": "The difference lies in what's in the globules and what's in the surrounding liquid.", "zh": "区别在于液滴中的物质和周围液体中的物质。", "key": ["liquid"]},
+          "ext": []
+        },
+        {
+          "no": 29, "word": "volume", "freq": 2, "page": 45,
+          "prons": [{"ipa": "/ˈvɒljuːm/", "senses": [{"pos": "n.", "mean": "[[体积]]；[[容积]]；[[音量]]；[[一卷]]"}]}],
+          "tip": {"type": "联想", "text": "vo（音似“我”）+ lu（联想“路”）+ m（联想“妹”）+ e → 我在路对面看见了妹妹，提高“音量”喊她。"},
+          "ex": {"type": "例", "en": "The song has been recorded at a low volume.", "zh": "这首歌是以低音量录制的。", "key": ["volume"]},
+          "ext": [{"word": "voluminous", "ipa": "/vəˈluːmɪnəs/", "senses": [{"pos": "adj.", "mean": "肥大的；宽松的；长篇的；冗长的"}]}]
+        },
+        {
+          "no": 30, "word": "bulk", "freq": 1, "page": 46,
+          "prons": [{"ipa": "/bʌlk/", "senses": [{"pos": "n.", "mean": "[[体积]]；[[大块]]；[[大部分]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“巴克”→《野性的呼唤》主角巴克的“体积”很大。"},
+          "ex": {"type": "真", "year": 2021, "en": "The bulk of the world's languages use base-10, base-20 or base-5 number systems.", "zh": "世界上大部分语言使用以 10、20 或 5 为基数的数字系统。", "key": ["bulk"]},
+          "ext": [{"word": "bulky", "ipa": "/ˈbʌlki/", "senses": [{"pos": "adj.", "mean": "庞大的；笨重的"}]}]
+        },
+        {
+          "no": 31, "word": "batch", "freq": 1, "page": 46,
+          "prons": [{"ipa": "/bætʃ/", "senses": [{"pos": "n.", "mean": "[[一批]]；（食物、药物等）一批生产的量"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“爸吃”→ 我家囤了“一批”爸爸喜欢吃的食物。"},
+          "ex": {"type": "真", "year": 2018, "en": "A new batch of young women has been entering the workforce for the past decade.", "zh": "在过去的十年里，一批新的年轻女性加入了劳动大军。", "key": ["batch"]},
+          "ext": []
+        },
+        {
+          "no": 32, "word": "patch", "freq": 1, "page": 46,
+          "prons": [{"ipa": "/pætʃ/", "senses": [
+            {"pos": "v.", "mean": "打补丁"},
+            {"pos": "n.", "mean": "[[补丁]]；斑；小块土地；戒烟贴片"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“派吃”→ 派送一些吃的给衣服打“补丁”的穷人。"},
+          "ex": {"type": "真", "year": 2017, "en": "People in both groups used nicotine patches before they quit.", "zh": "两组人在戒烟前都使用了尼古丁戒烟贴片。", "key": ["patches"]},
+          "ext": []
+        },
+        {
+          "no": 33, "word": "minimum", "freq": 2, "page": 46,
+          "prons": [{"ipa": "/ˈmɪnɪməm/", "senses": [
+            {"pos": "n.", "mean": "[[最小值]]；最低限度"},
+            {"pos": "adj.", "mean": "最小的；最低限度的"}
+          ]}],
+          "tip": {"type": "构词", "text": "mini（小）+（i）m（拉丁语最高级）+ um（……的量）→ 最小值；最小的"},
+          "ex": {"type": "真", "year": 2017, "en": "They have their weight reduced to minimum.", "zh": "它们的重量被减到最小。", "key": ["minimum"]},
+          "ext": [
+            {"word": "minimise", "alt": "-ize", "ipa": "/ˈmɪnɪmaɪz/", "senses": [{"pos": "v.", "mean": "把……减至最低数量（或程度）"}]},
+            {"word": "minimal", "ipa": "/ˈmɪnɪml/", "senses": [{"pos": "adj.", "mean": "极小的；极少的"}]}
+          ]
+        },
+        {
+          "no": 34, "word": "maximum", "freq": 1, "page": 46,
+          "prons": [{"ipa": "/ˈmæksɪməm/", "senses": [
+            {"pos": "n.", "mean": "[[最大值]]；最大限度"},
+            {"pos": "adj.", "mean": "最多的；最大极限的"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "What is the absolute maximum you can afford to pay?", "zh": "你最多能出多少钱？", "key": ["maximum"]},
+          "ext": [
+            {"word": "maximise", "alt": "-ize", "ipa": "/ˈmæksɪmaɪz/", "senses": [{"pos": "v.", "mean": "最大化"}]},
+            {"word": "maximal", "ipa": "/ˈmæksɪml/", "senses": [{"pos": "adj.", "mean": "最大的；最高的"}]}
+          ]
+        },
+        {
+          "no": 35, "word": "climax", "freq": 1, "page": 46,
+          "prons": [{"ipa": "/ˈklaɪmæks/", "senses": [
+            {"pos": "n.", "mean": "高潮，[[顶点]]"},
+            {"pos": "v.", "mean": "达到极点"}
+          ]}],
+          "tip": {"type": "联想", "text": "c（音似“可”）+ li（联想“立”）+ max（最大值）→ 可站立的高度最大的地方 → 高潮，顶点"},
+          "ex": {"type": "例", "en": "The climax of his career was director.", "zh": "他职业生涯的顶点就是导演。", "key": ["climax"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 15,
+      "title": "“洪水”相关",
+      "pages": [46, 48],
+      "map": {
+        "w": "“洪水”相关",
+        "children": [
+          {"w": "vessel", "children": [
+            {"w": "pulse", "rel": "相关", "children": [
+              {"w": "impulse", "rel": "加前缀", "children": [{"w": "impulsive", "rel": "扩"}]}
+            ]}
+          ]},
+          {"w": "flood", "children": [
+            {"w": "fluctuate", "rel": "相关", "children": [{"w": "fluctuation", "rel": "扩"}]},
+            {"w": "blood", "rel": "形近", "children": [{"w": "bleed", "rel": "扩"}]}
+          ]},
+          {"w": "dry", "children": [
+            {"w": "drought", "rel": "扩", "children": [{"w": "dryer"}]},
+            {"w": "drain", "rel": "相关", "children": [{"w": "drainage", "rel": "扩"}]}
+          ]},
+          {"w": "bubble", "children": [
+            {"w": "bulb", "rel": "“泡”相关", "children": [
+              {"w": "soak", "children": [
+                {"w": "penetrate", "rel": "相关", "children": [{"w": "penetration", "rel": "扩"}]},
+                {"w": "filter", "rel": "相关"}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 36, "word": "vessel", "freq": 2, "page": 46,
+          "prons": [{"ipa": "/ˈvesl/", "senses": [{"pos": "n.", "mean": "[[船]]；[[容器]]；[[脉管]]；导管"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“歪艘”→ 一艘“船”歪了。"},
+          "ex": {"type": "例", "en": "A smaller vessel would have capsized.", "zh": "小一点的船可能会倾覆。", "key": ["vessel"]},
+          "ext": []
+        },
+        {
+          "no": 37, "word": "pulse", "freq": 1, "page": 47,
+          "prons": [{"ipa": "/pʌls/", "senses": [
+            {"pos": "n.", "mean": "[[脉搏]]；[[脉率]]；[[脉冲]]"},
+            {"pos": "v.", "mean": "[[搏动]]；[[跳动]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "pul（联想“噗”）+ se（联想“声”）→ 心脏跳动是“噗噗”的声音，与“脉搏”同频。"},
+          "ex": {"type": "例", "en": "The Chinese doctor took my pulse and asked to see my tongue.", "zh": "中医给我把了脉，要求看我的舌头。", "key": ["pulse"]},
+          "ext": []
+        },
+        {
+          "no": 38, "word": "impulse", "freq": 2, "page": 47,
+          "prons": [{"ipa": "/ˈɪmpʌls/", "senses": [{"pos": "n.", "mean": "[[冲动]]；心血来潮；推动力；刺激"}]}],
+          "tip": {"type": "构词", "text": "im-（= in，里）+ pulse（跳动）→ 内心的跳动 → 冲动"},
+          "ex": {"type": "例", "en": "Many of them buy things on impulse.", "zh": "他们中的许多人会冲动购物。", "key": ["on impulse"]},
+          "ext": [{"word": "impulsive", "ipa": "/ɪmˈpʌlsɪv/", "senses": [{"pos": "adj.", "mean": "凭冲动行事的；易冲动的"}]}]
+        },
+        {
+          "no": 39, "word": "flood", "freq": 1, "page": 47,
+          "prons": [{"ipa": "/flʌd/", "senses": [
+            {"pos": "n.", "mean": "[[洪水]]；[[水灾]]"},
+            {"pos": "v.", "mean": "（使）[[灌满水]]；[[淹没]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "fl（联想“飞流”）+ oo（形似水翻滚）+ d（联想“的”）→ 洪水；水灾"},
+          "ex": {"type": "例", "en": "The heavy rain has caused floods in many parts of the country.", "zh": "大雨使全国许多地方洪水泛滥。", "key": ["floods"]},
+          "ext": []
+        },
+        {
+          "no": 40, "word": "fluctuate", "freq": 1, "page": 47,
+          "prons": [{"ipa": "/ˈflʌktʃueɪt/", "senses": [{"pos": "v.", "mean": "（大小、数量、质量等）[[波动]]；（在……之间）[[起伏]]，[[不定]]"}]}],
+          "tip": {"type": "构词", "text": "fluct（流动，波动）+ -(u)ate（动词后缀）→ 使流动 → 波动"},
+          "ex": {"type": "例", "en": "Prices fluctuate in response to harvests.", "zh": "价格随收成的变化而波动。", "key": ["fluctuate"]},
+          "ext": [{"word": "fluctuation", "ipa": "/ˌflʌktʃuˈeɪʃn/", "senses": [{"pos": "n.", "mean": "波动；起伏"}]}]
+        },
+        {
+          "no": 41, "word": "bleed", "freq": 1, "page": 47,
+          "prons": [{"ipa": "/bliːd/", "senses": [{"pos": "v.", "mean": "[[出血，流血]]"}]}],
+          "tip": {"type": "对照", "text": "blood n. 血；血统 → bleed v."},
+          "ex": {"type": "例", "en": "She was bleeding from her face and hands.", "zh": "她的脸和手都在流血。", "key": ["bleeding"]},
+          "ext": [{"word": "blood", "ipa": "/blʌd/", "senses": [{"pos": "n.", "mean": "血液，血；血统"}]}]
+        },
+        {
+          "no": 42, "word": "dry", "freq": 1, "page": 47,
+          "prons": [{"ipa": "/draɪ/", "senses": [
+            {"pos": "adj.", "mean": "[[干的]]；[[干燥的]]"},
+            {"pos": "v.", "mean": "（使）[[变干]]；（把……）[[弄干]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“抓”→ 短头发湿了，抓几下就“变干”了。"},
+          "ex": {"type": "例", "en": "Is my shirt dry yet?", "zh": "我的衬衣干了吗？", "key": ["dry"]},
+          "ext": [
+            {"word": "drought", "ipa": "/draʊt/", "senses": [{"pos": "n.", "mean": "干旱；旱灾"}]},
+            {"word": "dryer", "ipa": "/ˈdraɪə(r)/", "senses": [{"pos": "n.", "mean": "烘干机；脱水机；干燥机"}]}
+          ]
+        },
+        {
+          "no": 43, "word": "drain", "freq": 2, "page": 47,
+          "prons": [{"ipa": "/dreɪn/", "senses": [
+            {"pos": "n.", "mean": "[[下水道]]；耗竭"},
+            {"pos": "v.", "mean": "[[排水]]；[[排空]]；流出；耗尽"}
+          ]}],
+          "tip": {"type": "联想", "text": "d（联想“滴”）+ rain（雨）→ 雨水滴下来，通过“下水道”“流出”。"},
+          "ex": {"type": "例", "en": "Leave the dishes to drain.", "zh": "把碟子控干。", "key": ["drain"]},
+          "ext": [{"word": "drainage", "ipa": "/ˈdreɪnɪdʒ/", "senses": [{"pos": "n.", "mean": "排水；排水系统；放水"}]}]
+        },
+        {
+          "no": 44, "word": "bubble", "freq": 1, "page": 47,
+          "prons": [{"ipa": "/ˈbʌbl/", "senses": [
+            {"pos": "n.", "mean": "[[泡]]；[[泡沫]]；（很可能持续不长的）好景，好运"},
+            {"pos": "v.", "mean": "起泡；冒泡"}
+          ]}],
+          "tip": {"type": "联想", "text": "单词发音类似气“泡”爆破时发出的噼噼啪啪的声音。"},
+          "ex": {"type": "例", "en": "When the bubble burst, demand collapsed.", "zh": "当泡沫破裂时，需求就崩溃了。", "key": ["bubble"]},
+          "ext": []
+        },
+        {
+          "no": 45, "word": "bulb", "freq": 1, "page": 47,
+          "prons": [{"ipa": "/bʌlb/", "senses": [{"pos": "n.", "mean": "[[电灯泡]]；[[球状物]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“包”→ “电灯泡”就像个大包一样。"},
+          "ex": {"type": "例", "en": "Don't we have a brighter bulb somewhere?", "zh": "我们不是有一个更亮的电灯泡放在某个地方吗？", "key": ["bulb"]},
+          "ext": []
+        },
+        {
+          "no": 46, "word": "soak", "freq": 1, "page": 47,
+          "prons": [{"ipa": "/səʊk/", "senses": [
+            {"pos": "v.", "mean": "[[浸泡]]；[[浸湿]]"},
+            {"pos": "n.", "mean": "[[浸泡]]；泡澡"}
+          ]}],
+          "tip": {"type": "联想", "text": "soa（音似 so）+ k（音似“渴”）→ 他那么渴，看到水恨不得“浸泡”在里面喝个够。"},
+          "ex": {"type": "例", "en": "Leave the apricots to soak for 20 minutes.", "zh": "把杏子浸泡 20 分钟。", "key": ["soak"]},
+          "ext": []
+        },
+        {
+          "no": 47, "word": "penetrate", "freq": 1, "page": 48,
+          "prons": [{"ipa": "/ˈpenətreɪt/", "senses": [{"pos": "v.", "mean": "进入；[[渗透]]，打入（组织、团体等）"}]}],
+          "tip": {"type": "联想", "text": "pe（音似“拍”）+ net（网络）+ rate（速度）→ 拍打电脑并不能加快“进入”网络的速度。"},
+          "ex": {"type": "例", "en": "The experience of using IT penetrates almost the entire work field.", "zh": "使用 IT 的经验几乎可以渗透到整个工作领域。", "key": ["penetrates"]},
+          "ext": [{"word": "penetration", "ipa": "/ˌpenəˈtreɪʃn/", "senses": [{"pos": "n.", "mean": "穿透；渗透；进入"}]}]
+        },
+        {
+          "no": 48, "word": "filter", "freq": 2, "page": 48,
+          "prons": [{"ipa": "/ˈfɪltə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[过滤器]]"},
+            {"pos": "v.", "mean": "过滤，渗入"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“飞了它”→ 灰尘从“过滤器”里飞了出来。"},
+          "ex": {"type": "真", "year": 2017, "en": "The different shapes of the containers suggest they were used to brew, filter, and store beer.", "zh": "容器的不同形状表明它们被用来酿造、过滤和储存啤酒。", "key": ["filter"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 16,
+      "title": "“饮料”相关",
+      "pages": [48, 49],
+      "map": {
+        "w": "“饮料”相关",
+        "children": [
+          {"w": "alcohol", "children": [
+            {"w": "alcoholic", "rel": "扩"},
+            {"w": "liquor", "rel": "相关", "children": [
+              {"w": "beer", "children": [
+                {"w": "drunk", "children": [
+                  {"w": "drunkard", "rel": "扩"},
+                  {"w": "drunken", "rel": "扩"}
+                ]}
+              ]}
+            ]},
+            {"w": "tobacco", "rel": "相关"}
+          ]},
+          {"w": "soda"},
+          {"w": "beverage", "children": [
+            {"w": "average", "rel": "形近", "children": [
+              {"w": "common", "rel": "近义", "children": [{"w": "commonplace", "rel": "合成"}]}
+            ]},
+            {"w": "kettle", "rel": "相关", "children": [{"w": "basin"}]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 49, "word": "alcohol", "freq": 3, "page": 48,
+          "prons": [{"ipa": "/ˈælkəhɒl/", "senses": [{"pos": "n.", "mean": "[[酒精]]，乙醇；[[酒]]"}]}],
+          "tip": {"type": "联想", "text": "a（—）+ l（形似 1）+ cohol（音似“口喝”）→ “感情深，一口闷（喝）”是他劝“酒”时常说的。"},
+          "ex": {"type": "例", "en": "To help prevent headaches, drink plenty of water, and avoid alcohol and coffee.", "zh": "为了帮助预防头疼，要喝大量的水，不要喝酒和咖啡。", "key": ["alcohol"]},
+          "ext": [{"word": "alcoholic", "ipa": "/ˌælkəˈhɒlɪk/", "senses": [
+            {"pos": "adj.", "mean": "含酒精的"},
+            {"pos": "n.", "mean": "酒鬼"}
+          ]}]
+        },
+        {
+          "no": 50, "word": "liquor", "freq": 1, "page": 48,
+          "prons": [{"ipa": "/ˈlɪkə(r)/", "senses": [{"pos": "n.", "mean": "[[烈性酒]]；含酒精饮料"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“立刻”→ 他一喝“烈性酒”，立刻就醉倒了。"},
+          "ex": {"type": "例", "en": "The liquor is not for sale in many countries.", "zh": "很多国家是不销售烈性酒的。", "key": ["liquor"]},
+          "ext": []
+        },
+        {
+          "no": 51, "word": "drunk", "freq": 1, "page": 48,
+          "prons": [{"ipa": "/drʌŋk/", "senses": [
+            {"pos": "adj.", "mean": "[[醉的]]；陶醉的"},
+            {"pos": "n.", "mean": "[[醉汉]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "drink v. 喝，饮 → drunk adj. & n."},
+          "ex": {"type": "例", "en": "People should pay more attention to the danger of drunk driving.", "zh": "人们应该更加注意酒驾的危险。", "key": ["drunk"]},
+          "ext": [
+            {"word": "drunkard", "ipa": "/ˈdrʌŋkəd/", "senses": [{"pos": "n.", "mean": "酒鬼；醉鬼"}]},
+            {"word": "drunken", "ipa": "/ˈdrʌŋkən/", "senses": [{"pos": "adj.", "mean": "醉的；常醉的；酗酒的"}]}
+          ]
+        },
+        {
+          "no": 52, "word": "beer", "freq": 1, "page": 48,
+          "prons": [{"ipa": "/bɪə(r)/", "senses": [{"pos": "n.", "mean": "[[啤酒]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“啤呢” → 啤酒"},
+          "ex": {"type": "真", "year": 2017, "en": "The method for making beer has changed over time.", "zh": "酿造啤酒的方法随着时间的推移而改变。", "key": ["beer"]},
+          "ext": []
+        },
+        {
+          "no": 53, "word": "soda", "freq": 2, "page": 48,
+          "prons": [{"ipa": "/ˈsəʊdə/", "senses": [{"pos": "n.", "mean": "[[苏打汽水]]；[[苏打]]；纯碱"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2019, "en": "It may influence the marketing strategies of the soda business.", "zh": "它可能会影响苏打水业务的营销策略。", "key": ["soda"]},
+          "ext": []
+        },
+        {
+          "no": 54, "word": "tobacco", "freq": 1, "page": 49,
+          "prons": [{"ipa": "/təˈbækəʊ/", "senses": [{"pos": "n.", "mean": "[[烟草，烟叶]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“吐百口”→ 有些吸烟的人会从口中吐出很多烟圈 → 烟草"},
+          "ex": {"type": "真", "year": 2016, "en": "Most countries impose some sort of tax on alcohol and tobacco.", "zh": "大多数国家对酒精和烟草征收某种税。", "key": ["tobacco"]},
+          "ext": []
+        },
+        {
+          "no": 55, "word": "beverage", "freq": 1, "page": 49,
+          "prons": [{"ipa": "/ˈbevərɪdʒ/", "senses": [{"pos": "n.", "mean": "（除水以外的）[[饮料]]"}]}],
+          "tip": {"type": "联想", "text": "be（是）+ ver（音似“我”）+ age（年龄）→ 这是我这个年龄喝的“饮料”。"},
+          "ex": {"type": "例", "en": "Alcoholic beverages are served in the hotel lounge.", "zh": "酒店的公共休息室提供含酒精的饮料。", "key": ["beverages"]},
+          "ext": []
+        },
+        {
+          "no": 56, "word": "average", "freq": 3, "page": 49,
+          "prons": [{"ipa": "/ˈævərɪdʒ/", "senses": [
+            {"pos": "adj.", "mean": "[[平均的]]，[[正常的]]，[[普通的]]"},
+            {"pos": "n.", "mean": "[[平均数]]；平均水平"}
+          ]}],
+          "tip": {"type": "联想", "text": "a（音似“按”）+ ver（音似“我”）+ age（年龄）→ 请按我的年龄来算，因为我的年龄是这群人中的“平均数”。"},
+          "ex": {"type": "真", "year": 2017, "en": "I definitely feel things more strongly than the average person.", "zh": "我对事物的感受肯定比普通人更强烈。", "key": ["average"]},
+          "ext": []
+        },
+        {
+          "no": 57, "word": "common", "freq": 1, "page": 49,
+          "prons": [{"ipa": "/ˈkɒmən/", "senses": [
+            {"pos": "adj.", "mean": "[[常见的]]；普遍的；共有的"},
+            {"pos": "n.", "mean": "公共用地；公共食堂"}
+          ]}],
+          "tip": {"type": "联想", "text": "com-（所有的）+ mon（音似“门”）→ 所有的门都是“常见的”样式。"},
+          "ex": {"type": "真", "year": 2021, "en": "They will find they have something in common.", "zh": "他们会发现他们有一些共同点。", "key": ["in common"]},
+          "ext": []
+        },
+        {
+          "no": 58, "word": "commonplace", "freq": 1, "page": 49,
+          "prons": [{"ipa": "/ˈkɒmənpleɪs/", "senses": [
+            {"pos": "adj.", "mean": "[[平凡的]]，[[普通的]]"},
+            {"pos": "n.", "mean": "[[常见的事]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "This technology is now commonplace in schools.", "zh": "这项技术现在在学校很常见。", "key": ["commonplace"]},
+          "ext": []
+        },
+        {
+          "no": 59, "word": "kettle", "freq": 1, "page": 49,
+          "prons": [{"ipa": "/ˈketl/", "senses": [{"pos": "n.", "mean": "[[水壶]]；锅"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“开透”→ 水开透了，才能倒进“水壶”里。"},
+          "ex": {"type": "例", "en": "I'll put the kettle on and make some tea.", "zh": "我要烧壶水沏茶。", "key": ["kettle"]},
+          "ext": []
+        },
+        {
+          "no": 60, "word": "basin", "freq": 1, "page": 49,
+          "prons": [{"ipa": "/ˈbeɪsn/", "senses": [{"pos": "n.", "mean": "[[盆]]；盆地"}]}],
+          "tip": {"type": "联想", "text": "bas（音似 bath）+ in（里面）→ 他给小宠物在“盆”里洗澡。"},
+          "ex": {"type": "例", "en": "He washed his hands in the basin.", "zh": "他在盆里洗手。", "key": ["basin"]},
+          "ext": []
+        }
+      ]
+    }
+  ]
+}
