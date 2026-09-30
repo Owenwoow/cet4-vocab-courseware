@@ -1,0 +1,2874 @@
+{
+ "id": "u08-l03",
+ "part": 1,
+ "unit": 8,
+ "lesson": 3,
+ "pages": [
+  232,
+  239
+ ],
+ "groups": [
+  {
+   "no": 10,
+   "title": "“痛苦、绝望”相关",
+   "pages": [
+    232,
+    234
+   ],
+   "map": {
+    "w": "“痛苦、绝望”相关",
+    "children": [
+     {
+      "w": "bitter",
+      "children": [
+       {
+        "w": "bit",
+        "rel": "去ter"
+       }
+      ]
+     },
+     {
+      "w": "distress",
+      "children": [
+       {
+        "w": "distressful",
+        "rel": "扩"
+       },
+       {
+        "w": "stress",
+        "rel": "去dis",
+        "children": [
+         {
+          "w": "stressful",
+          "rel": "扩"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "sorrow",
+      "children": [
+       {
+        "w": "sorrowful",
+        "rel": "扩",
+        "children": [
+         {
+          "w": "painful",
+          "rel": "近义"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "misery",
+      "children": [
+       {
+        "w": "miserable",
+        "rel": "扩"
+       }
+      ]
+     },
+     {
+      "w": "hardship",
+      "children": [
+       {
+        "w": "hell",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "poverty",
+          "children": [
+           {
+            "w": "poor",
+            "rel": "扩"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "tough",
+      "children": [
+       {
+        "w": "rough",
+        "rel": "形近",
+        "children": [
+         {
+          "w": "roughly",
+          "rel": "扩"
+         },
+         {
+          "w": "harsh",
+          "rel": "近义",
+          "children": [
+           {
+            "w": "brutal",
+            "rel": "近义",
+            "children": [
+             {
+              "w": "brutality",
+              "rel": "扩"
+             },
+             {
+              "w": "cruel",
+              "rel": "近义",
+              "children": [
+               {
+                "w": "cruelty",
+                "rel": "扩"
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "w": "stiff",
+            "rel": "近义",
+            "children": [
+             {
+              "w": "stiffen",
+              "rel": "扩"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "w": "flexible",
+        "rel": "反义",
+        "children": [
+         {
+          "w": "flexibility",
+          "rel": "扩",
+          "children": [
+           {
+            "w": "reflect",
+            "rel": "相关",
+            "children": [
+             {
+              "w": "reflection",
+              "rel": "扩"
+             },
+             {
+              "w": "reflective",
+              "rel": "扩"
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "w": "clumsy",
+          "rel": "反义"
+         }
+        ]
+       },
+       {
+        "w": "tender",
+        "rel": "反义",
+        "children": [
+         {
+          "w": "mild",
+          "rel": "近义"
+         },
+         {
+          "w": "vulnerable",
+          "rel": "近义",
+          "children": [
+           {
+            "w": "vulnerability",
+            "rel": "扩"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "entries": [
+    {
+     "no": 1,
+     "word": "bitter",
+     "freq": 1,
+     "page": 232,
+     "prons": [
+      {
+       "ipa": "/ˈbɪtə(r)/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "激烈而不愉快的；[[严寒的]]；[[味苦的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "黄油（butter）香，咖啡苦（bitter）。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2019,
+      "en": "On Wednesday, a polar wind brought bitter cold to the Midwest.",
+      "zh": "周三，一股极地风给中西部带来了刺骨的寒冷。",
+      "key": [
+       "bitter"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 2,
+     "word": "bit",
+     "freq": 1,
+     "page": 232,
+     "prons": [
+      {
+       "ipa": "/bɪt/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[一点]]；[[少量]]；一部分"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "例",
+      "en": "I learned a little bit of Spanish.",
+      "zh": "我学了一点西班牙语。",
+      "key": [
+       "a",
+       "bit of"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 3,
+     "word": "misery",
+     "freq": 1,
+     "page": 232,
+     "prons": [
+      {
+       "ipa": "/ˈmɪzəri/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[痛苦]]；悲惨；不痛快的人"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“没滋味”→ 生活没滋味还真是一件“痛苦”的事。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Fame brought her nothing but misery.",
+      "zh": "名声只给她带来了痛苦。",
+      "key": [
+       "misery"
+      ]
+     },
+     "ext": [
+      {
+       "word": "miserable",
+       "ipa": "/ˈmɪzrəbl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "痛苦的；可怜的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "word": "hardship",
+     "freq": 1,
+     "page": 232,
+     "prons": [
+      {
+       "ipa": "/ˈhɑːdʃɪp/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[艰难，困苦]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "hard（困难的）+ ship（船）→ 他乘船经历一段非常困难的旅程 → 艰难，困苦"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Most people will experience some form of financial hardship at some point in their lives.",
+      "zh": "大多数人在他们生命中的某个时候都会经历某种形式的经济困难。",
+      "key": [
+       "hardship"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 5,
+     "word": "distress",
+     "freq": 2,
+     "page": 232,
+     "prons": [
+      {
+       "ipa": "/dɪˈstres/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[悲痛，痛苦]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[使痛苦，使悲伤]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "di-（两）+ stress（压力）→ 两份压力 → 一份压力催人奋进，两份压力就使人“痛苦”了。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The baby was clearly in distress.",
+      "zh": "婴儿显然很痛苦。",
+      "key": [
+       "distress"
+      ]
+     },
+     "ext": [
+      {
+       "word": "distressful",
+       "ipa": "/dɪˈstresfəl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "苦恼的，不幸的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "word": "stress",
+     "freq": 3,
+     "page": 232,
+     "prons": [
+      {
+       "ipa": "/stres/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[精神压力，紧张]]；重音；强调"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[强调]]；重读"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "stre（音似“死拽”）+ ss（联想“丝”）→ 死死地拽着头发丝 → 他“头悬梁，锥刺股”，保持“紧张”的状态学习。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2020,
+      "en": "There're three main types of financial stress people encounter.",
+      "zh": "人们遇到的财务压力主要有三种类型。",
+      "key": [
+       "stress"
+      ]
+     },
+     "ext": [
+      {
+       "word": "stressful",
+       "ipa": "/ˈstresfl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "压力重的；紧张的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "word": "hell",
+     "freq": 1,
+     "page": 232,
+     "prons": [
+      {
+       "ipa": "/hel/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "地狱；悲惨的境况；该死"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "he（他）+ ll（形似罗马数字 2）→ 他独自抚养两个年幼的孩子，处境艰难 → 悲惨的境况"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The last three months have been hell.",
+      "zh": "过去的三个月真受罪。",
+      "key": [
+       "hell"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 8,
+     "word": "poverty",
+     "freq": 3,
+     "page": 233,
+     "prons": [
+      {
+       "ipa": "/ˈpɒvəti/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[贫穷，贫困]]；[[短缺]]；劣质"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "pover（联想 poor）+ -ty（名词后缀）→ 贫穷"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2020,
+      "en": "It is impossible for Americans to lift themselves out of poverty entirely on their own.",
+      "zh": "美国人不可能完全靠自己摆脱贫困。",
+      "key": [
+       "poverty"
+      ]
+     },
+     "ext": [
+      {
+       "word": "poor",
+       "ipa": "/pɔː(r)/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "贫穷的；可怜的；劣质的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "word": "sorrow",
+     "freq": 1,
+     "page": 233,
+     "prons": [
+      {
+       "ipa": "/ˈsɒrəʊ/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[悲伤]]；伤心事"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[感到悲伤]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“缩肉”→ 过度“悲伤”会使人体消瘦。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "They have their own joys and sorrows.",
+      "zh": "他们有自己的欢乐和悲伤。",
+      "key": [
+       "sorrows"
+      ]
+     },
+     "ext": [
+      {
+       "word": "sorrowful",
+       "ipa": "/ˈsɒrəʊfl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "悲伤的，悲痛的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "word": "painful",
+     "freq": 1,
+     "page": 233,
+     "prons": [
+      {
+       "ipa": "/ˈpeɪnfl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[痛苦的]]；困难的"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "pain n.痛苦 → painful adj."
+     },
+     "ex": {
+      "type": "例",
+      "en": "It was a difficult and painful operation.",
+      "zh": "这是一次艰难而痛苦的手术。",
+      "key": [
+       "painful"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 11,
+     "word": "tough",
+     "freq": 3,
+     "page": 233,
+     "prons": [
+      {
+       "ipa": "/tʌf/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[艰难的]]；[[坚韧的]]；[[强硬的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“他服”→ 他很佩服你熬过了那段“艰难的”日子。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2022,
+      "en": "It's a good problem to have, but it can be a tough skill to master.",
+      "zh": "这是一个很好的问题，但它可能是一个很难掌握的技能。",
+      "key": [
+       "tough"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 12,
+     "word": "rough",
+     "freq": 2,
+     "page": 233,
+     "prons": [
+      {
+       "ipa": "/rʌf/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "粗糙的；不平的；粗暴的；艰难的；粗略的"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "如果路面不平（rough），人走起来是很艰难的（tough）。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Cathy did a rough calculation.",
+      "zh": "凯茜作了一个粗略的计算。",
+      "key": [
+       "rough"
+      ]
+     },
+     "ext": [
+      {
+       "word": "roughly",
+       "ipa": "/ˈrʌfli/",
+       "senses": [
+        {
+         "pos": "adv.",
+         "mean": "大约；大致"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 13,
+     "word": "harsh",
+     "freq": 1,
+     "page": 233,
+     "prons": [
+      {
+       "ipa": "/hɑːʃ/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[严酷的，残酷的]]；恶劣的；艰苦的"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "har（联想 hard）+ sh（音似“事”）→ 艰难的事 → 残酷的"
+     },
+     "ex": {
+      "type": "例",
+      "en": "We had to face up to the harsh realities of life sooner or later.",
+      "zh": "我们迟早都得正视生活的严酷现实。",
+      "key": [
+       "harsh"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 14,
+     "word": "cruel",
+     "freq": 1,
+     "page": 233,
+     "prons": [
+      {
+       "ipa": "/ˈkruːəl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[残酷的]]；[[残忍的]]；引起痛苦的"
+        },
+        {
+         "pos": "v.",
+         "mean": "搞糟；使机会丧失"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "例",
+      "en": "Hunting foxes with dogs is considered cruel and violent.",
+      "zh": "用狗猎狐狸被认为是残忍且暴力的。",
+      "key": [
+       "cruel"
+      ]
+     },
+     "ext": [
+      {
+       "word": "cruelty",
+       "ipa": "/ˈkruːəlti/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "（尤指蓄意的）残酷，残忍，残暴；残暴的行为；不公；虐待"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "word": "brutal",
+     "freq": 1,
+     "page": 233,
+     "prons": [
+      {
+       "ipa": "/ˈbruːtl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[野蛮的]]；[[凶残的]]；直截了当的"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“不如逃”→ 他是个“凶残的”人，我们不如快点逃走。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The number of people opposed to fox hunting, because they think it is brutal, has risen sharply.",
+      "zh": "反对猎狐的人数急剧上升，因为他们认为这是残忍的。",
+      "key": [
+       "brutal"
+      ]
+     },
+     "ext": [
+      {
+       "word": "brutality",
+       "ipa": "/bruːˈtæləti/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "野蛮行为；野蛮事件"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 16,
+     "word": "stiff",
+     "freq": 1,
+     "page": 233,
+     "prons": [
+      {
+       "ipa": "/stɪf/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[僵硬的]]；稠的；艰难的；激烈的"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "st（联想 stand）+ iff（联想 cliff）→ 站在悬崖边上，他身体僵硬不敢动 → 僵硬的"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Her hands are now less stiff and painful.",
+      "zh": "她的手现在不那么僵硬和疼痛了。",
+      "key": [
+       "stiff"
+      ]
+     },
+     "ext": [
+      {
+       "word": "stiffen",
+       "ipa": "/ˈstɪfn/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "变僵硬，变僵直，绷紧"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 17,
+     "word": "clumsy",
+     "freq": 1,
+     "page": 234,
+     "prons": [
+      {
+       "ipa": "/ˈklʌmzi/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[笨拙的]]，不得体的；不灵活的"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "clum（音似“哥拉妹”）+ sy → 哥哥第一次拉妹妹出去玩，他“笨拙的”动作说明他很紧张。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "She took her clumsy shoe off her left foot, and put on the golden slipper.",
+      "zh": "她脱下左脚上笨重的鞋子，然后穿上金色的拖鞋。",
+      "key": [
+       "clumsy"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 18,
+     "word": "flexible",
+     "freq": 3,
+     "page": 234,
+     "prons": [
+      {
+       "ipa": "/ˈfleksəbl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "能适应新情况的；[[灵活的]]；[[柔韧的]]；有弹性的；可弯曲的"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "fl（联想 fly）+ ex（向外）+ -ible（形容词后缀）→ 这只小鸟以“灵活的”姿态向外飞出了房间。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2023,
+      "en": "This might mean thinking of non-financial ways to reward employees, like unpaid time off or flexible work schedules.",
+      "zh": "这可能意味着考虑非经济方式来奖励员工，比如无薪休假或灵活的工作时间表。",
+      "key": [
+       "flexible"
+      ]
+     },
+     "ext": [
+      {
+       "word": "flexibility",
+       "ipa": "/ˌfleksəˈbɪləti/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "灵活性；柔韧性"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 19,
+     "word": "reflect",
+     "freq": 2,
+     "page": 234,
+     "prons": [
+      {
+       "ipa": "/rɪˈflekt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[反射]]；[[反映]]；反省"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "re-（回）+ flect（弯曲）→ 弯曲回来，折回来 → 反射"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2021,
+      "en": "The national statistics did not reflect the actual calorie consumption.",
+      "zh": "国家统计数据并没有反映出实际的卡路里消耗。",
+      "key": [
+       "reflect"
+      ]
+     },
+     "ext": [
+      {
+       "word": "reflection",
+       "ipa": "/rɪˈflekʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "反射；反映；映像"
+        }
+       ]
+      },
+      {
+       "word": "reflective",
+       "ipa": "/rɪˈflektɪv/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "沉思的；深思的；反射热的，反光的；典型的；代表性的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 20,
+     "word": "vulnerable",
+     "freq": 2,
+     "page": 234,
+     "prons": [
+      {
+       "ipa": "/ˈvʌlnərəbl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[易受……伤害的]]，（身体上或感情上）[[脆弱的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“哇！你弱爆”→ 哇！你弱爆了，太脆弱了 → 脆弱的"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2019,
+      "en": "They can become increasingly vulnerable to serious illnesses.",
+      "zh": "他们可能变得越来越容易受到严重疾病的影响。",
+      "key": [
+       "vulnerable"
+      ]
+     },
+     "ext": [
+      {
+       "word": "vulnerability",
+       "ipa": "/ˌvʌlnərəˈbɪləti/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "易损性；弱点"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 21,
+     "word": "tender",
+     "freq": 2,
+     "page": 234,
+     "prons": [
+      {
+       "ipa": "/ˈtendə(r)/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "温柔的；柔软的；[[疼痛的]]；易坏的；[[脆弱的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“疼的”→ 别人稍微碰他一下，他就喊疼 → 脆弱的"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Boil the beans until they are tender.",
+      "zh": "把豆子煮到变软。",
+      "key": [
+       "tender"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 22,
+     "word": "mild",
+     "freq": 1,
+     "page": 234,
+     "prons": [
+      {
+       "ipa": "/maɪld/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "温暖的；和善的；[[温和的]]；轻微的"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“妹爱的”→ 妹妹喜爱跟“和善的”人交往。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2019,
+      "en": "It has mild weather both in summer and in winter.",
+      "zh": "夏天和冬天的天气都很温和。",
+      "key": [
+       "mild"
+      ]
+     },
+     "ext": []
+    }
+   ]
+  },
+  {
+   "no": 11,
+   "title": "“颤抖”相关",
+   "pages": [
+    234,
+    235
+   ],
+   "map": {
+    "w": "“颤抖”相关",
+    "children": [
+     {
+      "w": "tremble",
+      "children": [
+       {
+        "w": "quake"
+       }
+      ]
+     },
+     {
+      "w": "shiver",
+      "children": [
+       {
+        "w": "despair",
+        "rel": "相关"
+       },
+       {
+        "w": "fuss",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "chaos",
+          "children": [
+           {
+            "w": "chaotic",
+            "rel": "扩"
+           },
+           {
+            "w": "mess",
+            "rel": "近义",
+            "children": [
+             {
+              "w": "messy",
+              "rel": "扩"
+             },
+             {
+              "w": "dilemma",
+              "rel": "近义"
+             }
+            ]
+           },
+           {
+            "w": "disorder",
+            "rel": "近义",
+            "children": [
+             {
+              "w": "order",
+              "rel": "扩",
+              "children": [
+               {
+                "w": "orderly",
+                "rel": "扩"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "desperate",
+      "children": [
+       {
+        "w": "accelerate",
+        "rel": "rate相关",
+        "children": [
+         {
+          "w": "acceleration",
+          "rel": "扩"
+         },
+         {
+          "w": "decelerate",
+          "rel": "反义",
+          "children": [
+           {
+            "w": "weaken",
+            "rel": "相关",
+            "children": [
+             {
+              "w": "weakness",
+              "rel": "扩"
+             },
+             {
+              "w": "weak",
+              "rel": "扩"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "w": "exaggerate",
+        "rel": "rate相关",
+        "children": [
+         {
+          "w": "exaggeration",
+          "rel": "扩"
+         },
+         {
+          "w": "compare",
+          "rel": "相关",
+          "children": [
+           {
+            "w": "comparable",
+            "rel": "扩"
+           },
+           {
+            "w": "comparative",
+            "rel": "扩"
+           },
+           {
+            "w": "comparison",
+            "rel": "扩"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "entries": [
+    {
+     "no": 23,
+     "word": "tremble",
+     "freq": 1,
+     "page": 235,
+     "prons": [
+      {
+       "ipa": "/ˈtrembl/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[发抖]]；焦虑；[[摇晃]]"
+        },
+        {
+         "pos": "n.",
+         "mean": "[[颤抖]]；[[摇晃]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“穿薄”→ 他穿得很薄，冷风一吹，就“发抖”。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "My legs were trembling with fear.",
+      "zh": "我吓得双腿直发抖。",
+      "key": [
+       "trembling"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 24,
+     "word": "shiver",
+     "freq": 1,
+     "page": 235,
+     "prons": [
+      {
+       "ipa": "/ˈʃɪvə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[颤抖]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[发抖]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“洗我”→ 冬天洗完澡，刚出浴室的我冻得直“发抖”。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "He felt a cold shiver of fear run through him.",
+      "zh": "他吓得打了一个寒战。",
+      "key": [
+       "shiver"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 25,
+     "word": "quake",
+     "freq": 1,
+     "page": 235,
+     "prons": [
+      {
+       "ipa": "/kweɪk/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "（因恐惧而）[[颤抖]]；（大地、建筑物等）[[震动]]"
+        },
+        {
+         "pos": "n.",
+         "mean": "地震"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "例",
+      "en": "The ground quaked as the bomb exploded.",
+      "zh": "炸弹爆炸时，地面都震动了。",
+      "key": [
+       "quaked"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 26,
+     "word": "despair",
+     "freq": 1,
+     "page": 235,
+     "prons": [
+      {
+       "ipa": "/dɪˈspeə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[绝望]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[绝望]]；丧失信心"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "de（音似“弟”）+ s + pair（一双）→ 弟弟丢了一双限量款鞋子，他非常“绝望”。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Consumers say they're not in despair.",
+      "zh": "消费者表示，他们并没有感到绝望。",
+      "key": [
+       "in despair"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 27,
+     "word": "compare",
+     "freq": 1,
+     "page": 235,
+     "prons": [
+      {
+       "ipa": "/kəmˈpeə(r)/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[比较]]；[[比作]]；与……类似；比喻"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "com-（所有）+ pare（联想 pair）→ 把所有成对的物品都“比较”一下。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2024,
+      "en": "Let's compare a theoretical financial education subject to the standard compulsory English class.",
+      "zh": "让我们将理论金融教育科目与标准必修英语课进行比较。",
+      "key": [
+       "compare",
+       "to"
+      ]
+     },
+     "ext": [
+      {
+       "word": "comparable",
+       "ipa": "/ˈkɒmpərəbl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "类似的；可比较的"
+        }
+       ]
+      },
+      {
+       "word": "comparative",
+       "ipa": "/kəmˈpærətɪv/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "比较而言的；相对的；比较的；相比的"
+        }
+       ]
+      },
+      {
+       "word": "comparison",
+       "ipa": "/kəmˈpærɪsn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "比较；对比；相比"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 28,
+     "word": "mess",
+     "freq": 1,
+     "page": 235,
+     "prons": [
+      {
+       "ipa": "/mes/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[肮脏，杂乱]]；[[麻烦，困境]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[弄脏，弄乱]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "me（我）+ ss（音似“死”）→ 我回到家看到一堆“杂乱”的文件，烦得要死。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "He has made a mess of his midterm exam.",
+      "zh": "他把期中考试搞得一团糟。",
+      "key": [
+       "mess"
+      ]
+     },
+     "ext": [
+      {
+       "word": "messy",
+       "ipa": "/ˈmesi/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "乱七八糟的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 29,
+     "word": "fuss",
+     "freq": 2,
+     "page": 235,
+     "prons": [
+      {
+       "ipa": "/fʌs/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[大惊小怪]]；反对，抗议"
+        },
+        {
+         "pos": "v.",
+         "mean": "瞎操心；打扰"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“发丝”→ 有些人发丝有点干枯，就“大惊小怪”地认为自己得病了。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2022,
+      "en": "He loves them but does not want to make a fuss.",
+      "zh": "他爱他们，但不想大惊小怪。",
+      "key": [
+       "fuss"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 30,
+     "word": "dilemma",
+     "freq": 2,
+     "page": 235,
+     "prons": [
+      {
+       "ipa": "/dɪˈlemə/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[困境]]；（进退两难的）窘境"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“弟来吗”→ 我不确定弟弟到底来不来，所以陷入了“困境”。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2023,
+      "en": "The solution to this dilemma is using data and instincts in conjunction.",
+      "zh": "解决这一困境的办法是结合使用数据和直觉。",
+      "key": [
+       "dilemma"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 31,
+     "word": "chaos",
+     "freq": 1,
+     "page": 235,
+     "prons": [
+      {
+       "ipa": "/ˈkeɪɒs/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[混乱]]，混沌"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "chao（联想“吵”）+ s（音似“死”）→ 他的家里每天都吵死了，屋内永远“混乱”不堪。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Heavy snow has caused total chaos on the roads.",
+      "zh": "大雪导致道路上交通一片混乱。",
+      "key": [
+       "chaos"
+      ]
+     },
+     "ext": [
+      {
+       "word": "chaotic",
+       "ipa": "/keɪˈɒtɪk/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "混乱的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 32,
+     "word": "disorder",
+     "freq": 2,
+     "page": 235,
+     "prons": [
+      {
+       "ipa": "/dɪsˈɔːdə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[失调]]，紊乱；混乱；疾病"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "dis-（否定前缀）+ order（顺序）→ 没有顺序 → 混乱"
+     },
+     "ex": {
+      "type": "例",
+      "en": "This is a rare disorder of the liver.",
+      "zh": "这是一种罕见的肝病。",
+      "key": [
+       "disorder"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 33,
+     "word": "orderly",
+     "freq": 1,
+     "page": 236,
+     "prons": [
+      {
+       "ipa": "/ˈɔːdəli/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[有秩序的]]；整洁的"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "例",
+      "en": "It was a civilised and orderly society.",
+      "zh": "那是个文明有序的社会。",
+      "key": [
+       "orderly"
+      ]
+     },
+     "ext": [
+      {
+       "word": "order",
+       "ipa": "/ˈɔːdə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "次序；条理；秩序"
+        },
+        {
+         "pos": "v. & n.",
+         "mean": "命令；订购；点菜"
+        },
+        {
+         "pos": "v.",
+         "mean": "组织，整理"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 34,
+     "word": "desperate",
+     "freq": 1,
+     "page": 236,
+     "prons": [
+      {
+       "ipa": "/ˈdespərət/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[拼命的，不顾一切的]]；[[绝望的]]；渴望的；极严重的"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "de（联想“弟”）+ spe（音似“撕破”）+ rate（速度）→ 运动会上，弟弟撕（打）破速度的极限，以“拼命的”态度冲向终点。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Doctors were fighting a desperate battle to save the little girl's life.",
+      "zh": "医生们不惜一切地奋力抢救小女孩的生命。",
+      "key": [
+       "desperate"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 35,
+     "word": "accelerate",
+     "freq": 2,
+     "page": 236,
+     "prons": [
+      {
+       "ipa": "/əkˈseləreɪt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "（使）[[加速，加快]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "ac-（加强）+ cele（音似“赛了”）+ rate（速度）→ 他“加快”了比赛速度。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2022,
+      "en": "It accelerates the exhaustion of rare minerals.",
+      "zh": "它加速了稀有矿物的枯竭。",
+      "key": [
+       "accelerates"
+      ]
+     },
+     "ext": [
+      {
+       "word": "acceleration",
+       "ipa": "/əkˌseləˈreɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "加速，加快"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 36,
+     "word": "decelerate",
+     "freq": 1,
+     "page": 236,
+     "prons": [
+      {
+       "ipa": "/ˌdiːˈseləreɪt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[减速]]，降低速度"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "de-（否定前缀）+ cele（音似“赛了”）+ rate（速度）→ 比赛时不加速就是在“减速”。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The car decelerated because of the sudden change in the weather.",
+      "zh": "由于天气的突然变化，汽车减速了。",
+      "key": [
+       "decelerated"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 37,
+     "word": "exaggerate",
+     "freq": 1,
+     "page": 236,
+     "prons": [
+      {
+       "ipa": "/ɪɡˈzædʒəreɪt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[夸张，夸大]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "ex-（向外）+ agg(e)（联想 egg）+ rate（速度）→ 这只鸡向外下蛋的速度被“夸大”了。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "They provide objective information without exaggerating.",
+      "zh": "他们提供客观的信息，不夸大其词。",
+      "key": [
+       "exaggerating"
+      ]
+     },
+     "ext": [
+      {
+       "word": "exaggeration",
+       "ipa": "/ɪɡˌzædʒəˈreɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "夸张，夸大"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 38,
+     "word": "weaken",
+     "freq": 2,
+     "page": 236,
+     "prons": [
+      {
+       "ipa": "/ˈwiːkən/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[削弱]]；变弱"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "weak（虚弱的）+ -en（动词后缀）→ 使变得虚弱 → 削弱"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Stress will weaken the body's defense against germs.",
+      "zh": "压力会削弱身体对病菌的防御能力。",
+      "key": [
+       "weaken"
+      ]
+     },
+     "ext": [
+      {
+       "word": "weakness",
+       "ipa": "/ˈwiːknəs/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "虚弱，软弱；弱点"
+        }
+       ]
+      },
+      {
+       "word": "weak",
+       "ipa": "/wiːk/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "虚弱的；不牢固的；懦弱的"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "no": 12,
+   "title": "“缺点、限制”相关",
+   "pages": [
+    236,
+    238
+   ],
+   "map": {
+    "w": "“缺点、限制”相关",
+    "children": [
+     {
+      "w": "shortcoming",
+      "children": [
+       {
+        "w": "shortage",
+        "rel": "近义",
+        "children": [
+         {
+          "w": "short",
+          "rel": "扩"
+         },
+         {
+          "w": "shorts",
+          "rel": "扩"
+         },
+         {
+          "w": "shortly",
+          "rel": "扩"
+         }
+        ]
+       },
+       {
+        "w": "fault",
+        "rel": "近义",
+        "children": [
+         {
+          "w": "faulty",
+          "rel": "扩"
+         }
+        ]
+       },
+       {
+        "w": "advantage",
+        "rel": "反义",
+        "children": [
+         {
+          "w": "advantageous",
+          "rel": "扩"
+         },
+         {
+          "w": "disadvantage",
+          "rel": "扩"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "restrain",
+      "children": [
+       {
+        "w": "restraint",
+        "rel": "扩",
+        "children": [
+         {
+          "w": "restriction",
+          "rel": "近义",
+          "children": [
+           {
+            "w": "restrict",
+            "rel": "扩"
+           },
+           {
+            "w": "restrictive",
+            "rel": "扩"
+           }
+          ]
+         },
+         {
+          "w": "haste",
+          "rel": "相关",
+          "children": [
+           {
+            "w": "hasty",
+            "rel": "扩"
+           },
+           {
+            "w": "hasten",
+            "rel": "扩"
+           },
+           {
+            "w": "hate",
+            "rel": "形近",
+            "children": [
+             {
+              "w": "hateful",
+              "rel": "扩"
+             },
+             {
+              "w": "hatred",
+              "rel": "扩"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "w": "hinder",
+        "rel": "近义",
+        "children": [
+         {
+          "w": "hindrance",
+          "rel": "扩"
+         },
+         {
+          "w": "setback",
+          "rel": "相关"
+         },
+         {
+          "w": "obstacle",
+          "rel": "相关"
+         }
+        ]
+       },
+       {
+        "w": "coordinate",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "coordination",
+          "rel": "扩",
+          "children": [
+           {
+            "w": "harmony",
+            "rel": "相关",
+            "children": [
+             {
+              "w": "harmonious",
+              "rel": "扩"
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "w": "coordinator",
+          "rel": "扩"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "entries": [
+    {
+     "no": 39,
+     "word": "shortcoming",
+     "freq": 2,
+     "page": 236,
+     "prons": [
+      {
+       "ipa": "/ˈʃɔːtkʌmɪŋ/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[缺点，缺陷]]"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "例",
+      "en": "Humility leads to an honest view of one's own advantages and shortcomings.",
+      "zh": "谦逊会让人们诚实地看待自己的优点和缺点。",
+      "key": [
+       "shortcomings"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 40,
+     "word": "shortage",
+     "freq": 2,
+     "page": 237,
+     "prons": [
+      {
+       "ipa": "/ˈʃɔːtɪdʒ/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[不足]]；缺少；短缺"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "真",
+      "year": 2019,
+      "en": "There is a growing shortage of medical personnel.",
+      "zh": "医务人员日益短缺。",
+      "key": [
+       "shortage"
+      ]
+     },
+     "ext": [
+      {
+       "word": "short",
+       "ipa": "/ʃɔːt/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "短的；个子矮的；缺乏的"
+        }
+       ]
+      },
+      {
+       "word": "shorts",
+       "ipa": "/ʃɔːts/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "短裤"
+        }
+       ]
+      },
+      {
+       "word": "shortly",
+       "ipa": "/ˈʃɔːtli/",
+       "senses": [
+        {
+         "pos": "adv.",
+         "mean": "立刻，不久；简略地，简言之"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 41,
+     "word": "advantage",
+     "freq": 1,
+     "page": 237,
+     "prons": [
+      {
+       "ipa": "/ədˈvɑːntɪdʒ/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[有利条件]]；[[优势]]；[[优点]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "ad-（一再地）+ van（音似“玩”）+ tage（联想“她哥”）→ 玩耍时，大家一再地发现她哥哥的“优点”。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "She had the advantage of a good education.",
+      "zh": "她具有受过良好教育的有利条件。",
+      "key": [
+       "advantage"
+      ]
+     },
+     "ext": [
+      {
+       "word": "disadvantage",
+       "ipa": "/ˌdɪsədˈvɑːntɪdʒ/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "不利因素；障碍；不便之处"
+        }
+       ]
+      },
+      {
+       "word": "advantageous",
+       "ipa": "/ˌædvənˈteɪdʒəs/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "有利的；有好处的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 42,
+     "word": "fault",
+     "freq": 1,
+     "page": 237,
+     "prons": [
+      {
+       "ipa": "/fɔːlt/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[缺点]]；过错；责任；故障"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "fau（音似 for）+ l（联想“了”）+ t（联想“他”）→ 为了他，我曾犯下许多“过错”。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2021,
+      "en": "It is not an individual's fault if they develop obesity.",
+      "zh": "如果他们患上肥胖症，这不是个人的错。",
+      "key": [
+       "fault"
+      ]
+     },
+     "ext": [
+      {
+       "word": "faulty",
+       "ipa": "/ˈfɔːlti/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "不完美的；有错误的；有缺陷的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 43,
+     "word": "setback",
+     "freq": 2,
+     "page": 237,
+     "prons": [
+      {
+       "ipa": "/ˈsetbæk/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[挫折]]；[[阻碍]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "set（设置）+ back（后退）→ 游戏中设置让玩家后退的是“阻碍”。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2021,
+      "en": "But curiosity can also be dangerous, leading to setbacks or even downfalls.",
+      "zh": "但好奇心也可能是危险的，它会导致挫折甚至失败。",
+      "key": [
+       "setbacks"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 44,
+     "word": "obstacle",
+     "freq": 2,
+     "page": 237,
+     "prons": [
+      {
+       "ipa": "/ˈɒbstəkl/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[障碍]]；干扰；阻碍；绊脚石"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“哦，不是特抠”→ 我不是特别抠，我只是面临经济“障碍”。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2023,
+      "en": "Though there are plans to add translations, language barriers can be a big obstacle.",
+      "zh": "虽然有增加翻译的计划，但语言障碍可能是一个很大的阻碍。",
+      "key": [
+       "obstacle"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 45,
+     "word": "hinder",
+     "freq": 2,
+     "page": 237,
+     "prons": [
+      {
+       "ipa": "/ˈhɪndə(r)/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[阻碍]]；[[妨碍]]；阻挡"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "hind（后面的）+ -er（后缀）→ 拉后腿 → 阻碍；妨碍"
+     },
+     "ex": {
+      "type": "例",
+      "en": "A fixed mindset can also hinder communication and progress in the workplace.",
+      "zh": "思维定势也会阻碍职场中的沟通和进步。",
+      "key": [
+       "hinder"
+      ]
+     },
+     "ext": [
+      {
+       "word": "hindrance",
+       "ipa": "/ˈhɪndrəns/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "妨碍；造成妨碍的人或物"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 46,
+     "word": "restrain",
+     "freq": 1,
+     "page": 237,
+     "prons": [
+      {
+       "ipa": "/rɪˈstreɪn/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "（尤指用武力）制止，[[阻止]]；[[约束]]，控制"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "re（字母音“阿姨”）+ s（联想“蛇”）+ train（火车）→ 阿姨要带蛇上火车，安检人员赶紧“阻止”了她。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Do not try to restrain me from beating him.",
+      "zh": "不要试图阻止我打他。",
+      "key": [
+       "restrain"
+      ]
+     },
+     "ext": [
+      {
+       "word": "restraint",
+       "ipa": "/rɪˈstreɪnt/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "约束力；限制；克制"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 47,
+     "word": "restrict",
+     "freq": 2,
+     "page": 237,
+     "prons": [
+      {
+       "ipa": "/rɪˈstrɪkt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[限制，限定（数量、范围等）]]；[[束缚]]；阻碍"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "re-（再）+ strict（严格的）→ 她再次严格控制自己的饮食，并“限制”自己每天只喝一杯咖啡。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2015,
+      "en": "Laws can restrict or ban voting, access to public housing, and professional and business licensing.",
+      "zh": "法律可对选举权、公共住房获取权、职业及商业许可权实施限制或禁令。",
+      "key": [
+       "restrict"
+      ]
+     },
+     "ext": [
+      {
+       "word": "restriction",
+       "ipa": "/rɪˈstrɪkʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "限制规定；限制"
+        }
+       ]
+      },
+      {
+       "word": "restrictive",
+       "ipa": "/rɪˈstrɪktɪv/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "限制性的；约束的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 48,
+     "word": "haste",
+     "freq": 1,
+     "page": 237,
+     "prons": [
+      {
+       "ipa": "/heɪst/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[匆忙]]，急忙；赶紧；催促"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“恨死他”→ 她被骗后恨死他了，随后“匆忙”离开了他。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The letter had clearly been written in haste.",
+      "zh": "这封信明显是在匆忙中写的。",
+      "key": [
+       "haste"
+      ]
+     },
+     "ext": [
+      {
+       "word": "hasty",
+       "ipa": "/ˈheɪsti/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "匆忙的，草率的"
+        }
+       ]
+      },
+      {
+       "word": "hasten",
+       "ipa": "/ˈheɪsn/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "急忙进行，赶紧说（或做）；促进，使加快"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 49,
+     "word": "hate",
+     "freq": 1,
+     "page": 238,
+     "prons": [
+      {
+       "ipa": "/heɪt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[厌恶]]，讨厌，憎恶（某事物）"
+        },
+        {
+         "pos": "n.",
+         "mean": "[[憎恨]]；厌恶；憎恨的人"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "真",
+      "year": 2016,
+      "en": "I hate it because it's an obligation disguised as an option.",
+      "zh": "我讨厌它，因为它是一个伪装成自由选择的义务。",
+      "key": [
+       "hate"
+      ]
+     },
+     "ext": [
+      {
+       "word": "hateful",
+       "ipa": "/ˈheɪtfl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "可恨的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 50,
+     "word": "hatred",
+     "freq": 1,
+     "page": 238,
+     "prons": [
+      {
+       "ipa": "/ˈheɪtrɪd/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[憎恶]]，[[憎恨]]，仇恨"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "hate v. & n.讨厌，憎恨 → hatred n."
+     },
+     "ex": {
+      "type": "例",
+      "en": "Philosophers believe that desire, hatred and envy are \"negative emotions\".",
+      "zh": "哲学家认为，欲望、仇恨和忌妒都是“负面情绪”。",
+      "key": [
+       "hatred"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 51,
+     "word": "harmony",
+     "freq": 1,
+     "page": 238,
+     "prons": [
+      {
+       "ipa": "/ˈhɑːməni/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[调和]]；[[协调]]；[[和谐]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "harm（伤害）+ on（联想 no）+ y（联想 you）→ 你与大家“和谐”共处，没有任何人会伤害你。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "They are built in harmony with the environment.",
+      "zh": "它们是以与环境协调的方式建造的。",
+      "key": [
+       "harmony"
+      ]
+     },
+     "ext": [
+      {
+       "word": "harmonious",
+       "ipa": "/hɑːˈməʊniəs/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "和谐的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 52,
+     "word": "coordinate",
+     "freq": 1,
+     "page": 238,
+     "prons": [
+      {
+       "ipa": "/kəʊˈɔːdɪneɪt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[使协调]]；[[使相配合]]；（衣服、家具等）[[搭配]]，协调"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "我们都是普通（ordinary）人，要一起配合（coordinate）才能把工作做好。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "They will coordinate with the Social Security Administration.",
+      "zh": "他们将与社会保障局进行协调。",
+      "key": [
+       "coordinate",
+       "with"
+      ]
+     },
+     "ext": [
+      {
+       "word": "coordination",
+       "ipa": "/kəʊˌɔːdɪˈneɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "协作；协调；配合"
+        }
+       ]
+      },
+      {
+       "word": "coordinator",
+       "ipa": "/kəʊˈɔːdɪneɪtə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "协调者"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "no": 13,
+   "title": "“层级”相关",
+   "pages": [
+    238,
+    239
+   ],
+   "map": {
+    "w": "“层级”相关",
+    "children": [
+     {
+      "w": "classic",
+      "children": [
+       {
+        "w": "classical",
+        "rel": "扩"
+       }
+      ]
+     },
+     {
+      "w": "classify",
+      "children": [
+       {
+        "w": "classification",
+        "rel": "扩",
+        "children": [
+         {
+          "w": "classified"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "middle-class",
+      "children": [
+       {
+        "w": "layer",
+        "children": [
+         {
+          "w": "upgrade",
+          "rel": "相关"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "rank",
+      "children": [
+       {
+        "w": "degree",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "scale"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "entries": [
+    {
+     "no": 53,
+     "word": "classic",
+     "freq": 2,
+     "page": 238,
+     "prons": [
+      {
+       "ipa": "/ˈklæsɪk/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[最优秀的]]；[[典型的]]"
+        },
+        {
+         "pos": "n.",
+         "mean": "（书、电影或歌曲的）[[经典作品]]，杰作"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "class（等级）+ -ic（后缀）→ 最优秀的；经典作品"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2019,
+      "en": "In the classic marriage vow, couples promise to stay together in sickness and in health.",
+      "zh": "在经典的婚姻誓约中，夫妻俩承诺无论疾病还是健康都会在一起。",
+      "key": [
+       "classic"
+      ]
+     },
+     "ext": [
+      {
+       "word": "classical",
+       "ipa": "/ˈklæsɪkl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "古典的；经典的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 54,
+     "word": "classify",
+     "freq": 1,
+     "page": 238,
+     "prons": [
+      {
+       "ipa": "/ˈklæsɪfaɪ/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[分类]]；[[归类]]；划分"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "class（种类）+ -ify（动词后缀）→ 分类；归类"
+     },
+     "ex": {
+      "type": "例",
+      "en": "There is not enough evidence to classify it as a disease.",
+      "zh": "目前还没有足够的证据将它归类为一种疾病。",
+      "key": [
+       "classify"
+      ]
+     },
+     "ext": [
+      {
+       "word": "classification",
+       "ipa": "/ˌklæsɪfɪˈkeɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "分类；归类；分级"
+        }
+       ]
+      },
+      {
+       "word": "classified",
+       "ipa": "/ˈklæsɪfaɪd/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "分类的；归类的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 55,
+     "word": "middle-class",
+     "freq": 1,
+     "page": 239,
+     "prons": [
+      {
+       "ipa": "/ˌmɪdl ˈklɑːs/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[中产阶级的]]；古板的"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "例",
+      "en": "A good education has been the most important thing for middle-class households.",
+      "zh": "良好的教育对中产阶级家庭来说是最重要的事情。",
+      "key": [
+       "middle-class"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 56,
+     "word": "layer",
+     "freq": 3,
+     "page": 239,
+     "prons": [
+      {
+       "ipa": "/ˈleɪə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[层]]；表层；[[层次]]；阶层"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "lay（放）+ -er（名词后缀）→ 被放置后呈现的状态 → 层；层次"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The earth is composed of several layers.",
+      "zh": "地球由几层组成。",
+      "key": [
+       "layers"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 57,
+     "word": "upgrade",
+     "freq": 1,
+     "page": 239,
+     "prons": [
+      {
+       "ipa": "/ˌʌpˈɡreɪd/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "（使机器、计算机系统等）升级；[[改进]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "up（向上）+ grade（等级）→ 等级向上走 → 使升级；改进"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Fast technological change makes it necessary for one to constantly upgrade their skills.",
+      "zh": "快速的技术变革使人们有必要不断地提高自己的技能。",
+      "key": [
+       "upgrade"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 58,
+     "word": "rank",
+     "freq": 1,
+     "page": 239,
+     "prons": [
+      {
+       "ipa": "/ræŋk/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "（尤指较高的）[[地位，级别]]；[[等级]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "把……分等级；名列"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "ran（run 的过去式）+ k（联想“课”）→ 他经常跑着去上课，且上课态度积极，为的是能够在班上“名列”前茅。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Promotion will mean that I'm immediately above him in rank.",
+      "zh": "升职后我会比他高一级。",
+      "key": [
+       "rank"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 59,
+     "word": "degree",
+     "freq": 1,
+     "page": 239,
+     "prons": [
+      {
+       "ipa": "/dɪˈɡriː/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[程度]]，度数；（大学）[[学位]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "de（音似“弟”）+ gree（联想 green）→ 弟弟对绿色的喜爱“程度”特别深。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Today foreign students earn 30 percent of the doctoral degrees awarded in the United States.",
+      "zh": "如今，在美国获得博士学位的学生中，外国学生占30%。",
+      "key": [
+       "degrees"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 60,
+     "word": "scale",
+     "freq": 3,
+     "page": 239,
+     "prons": [
+      {
+       "ipa": "/skeɪl/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[规模]]；范围；[[程度]]；等级"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "sca（联想 scar）+ le（联想“了”）→ 他受伤“程度”严重，后期留下了伤疤。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "On a global scale, 77 percent of energy is created from fossil fuels.",
+      "zh": "在全球范围内，77%的能源来自化石燃料。",
+      "key": [
+       "scale"
+      ]
+     },
+     "ext": []
+    }
+   ]
+  }
+ ]
+}

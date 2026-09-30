@@ -1,0 +1,742 @@
+{
+  "id": "u08-l02",
+  "part": 1,
+  "unit": 8,
+  "lesson": 2,
+  "pages": [223, 231],
+  "groups": [
+    {
+      "no": 5,
+      "title": "“联系、连接”相关",
+      "pages": [223, 224],
+      "map": {
+        "w": "“联系、连接”相关",
+        "children": [
+          {"w": "link", "children": [{"w": "linkage", "rel": "扩"}]},
+          {"w": "combine", "children": [
+            {"w": "combination", "rel": "扩", "children": [{"w": "conjunction", "rel": "近义"}]}
+          ]},
+          {"w": "connect", "children": [
+            {"w": "connection", "rel": "扩", "children": [
+              {"w": "contact", "rel": "近义", "children": [{"w": "intact", "rel": "形近"}]}
+            ]}
+          ]},
+          {"w": "joint", "children": [{"w": "knot", "rel": "相关"}]},
+          {"w": "coherent", "children": [
+            {"w": "coherence", "rel": "扩", "children": [
+              {"w": "cohesion", "rel": "形近", "children": [{"w": "cohesive", "rel": "扩"}]}
+            ]}
+          ]},
+          {"w": "integrate", "children": [
+            {"w": "integration", "rel": "扩", "children": [
+              {"w": "disintegration", "rel": "反义", "children": [{"w": "disintegrate", "rel": "扩"}]},
+              {"w": "tangible", "rel": "相关", "children": [{"w": "intangible", "rel": "扩"}]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "combine", "freq": 3, "page": 223,
+          "prons": [
+            {"ipa": "/kəmˈbaɪn/", "senses": [{"pos": "v.", "mean": "[[（使）结合]]；[[联合]]；兼备"}]},
+            {"ipa": "/ˈkɒmbaɪn/", "senses": [{"pos": "n.", "mean": "[[集团，联合企业]]"}]}
+          ],
+          "tip": {"type": "联想", "text": "com（联想 company）+ bine（联想“并”）→ 公司合并 →（使）结合；联合"},
+          "ex": {"type": "真", "year": 2016, "en": "They often fail to combine teaching with research.", "zh": "他们常常不能把教学与研究结合起来。", "key": ["combine"]},
+          "ext": [{"word": "combination", "ipa": "/ˌkɒmbɪˈneɪʃn/", "senses": [{"pos": "n.", "mean": "结合；联合；混合"}]}]
+        },
+        {
+          "no": 2, "word": "link", "freq": 1, "page": 223,
+          "prons": [{"ipa": "/lɪŋk/", "senses": [
+            {"pos": "n.", "mean": "[[联系]]；[[连接]]"},
+            {"pos": "v.", "mean": "把（物体、机器、地方等）[[连接起来]]；[[联系]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“拎课”→ 他拎出一条线索，“联系”起课文情节。"},
+          "ex": {"type": "真", "year": 2019, "en": "The close link between age and stage may cease to exist in a multi-stage life.", "zh": "在多阶段生活中，年龄和阶段之间的密切联系可能不再存在。", "key": ["link"]},
+          "ext": [{"word": "linkage", "ipa": "/ˈlɪŋkɪdʒ/", "senses": [{"pos": "n.", "mean": "连接；联系；连锁"}]}]
+        },
+        {
+          "no": 3, "word": "connect", "freq": 1, "page": 223,
+          "prons": [{"ipa": "/kəˈnekt/", "senses": [{"pos": "v.", "mean": "[[连接]]；[[联系]]"}]}],
+          "tip": {"type": "联想", "text": "con-（所有的）+ ne（音似“奶”）+ ct（联想“剋他”）→ 所有的奶奶们“联系”好去剋（打）他。"},
+          "ex": {"type": "例", "en": "Great innovators are good at connecting concepts from various academic fields.", "zh": "伟大的创新者善于将各个学术领域的概念联系起来。", "key": ["connecting"]},
+          "ext": [{"word": "connection", "ipa": "/kəˈnekʃn/", "senses": [{"pos": "n.", "mean": "连接，联系"}]}]
+        },
+        {
+          "no": 4, "word": "coherent", "freq": 2, "page": 223,
+          "prons": [{"ipa": "/kəʊˈhɪərənt/", "senses": [{"pos": "adj.", "mean": "[[连贯的]]；[[合乎逻辑的]]；有条理的"}]}],
+          "tip": {"type": "联想", "text": "co-（= con-，都）+ her(e)（在这里）+ -ent（形容词后缀）→ 关键信息都在这里，构成了“连贯的”体系。"},
+          "ex": {"type": "例", "en": "The subjects of the curriculum form a coherent whole.", "zh": "课程中的科目构成了一个连贯的整体。", "key": ["coherent"]},
+          "ext": [{"word": "coherence", "ipa": "/kəʊˈhɪərəns/", "senses": [{"pos": "n.", "mean": "连贯性；条理性"}]}]
+        },
+        {
+          "no": 5, "word": "cohesion", "freq": 1, "page": 223,
+          "prons": [{"ipa": "/kəʊˈhiːʒn/", "senses": [{"pos": "n.", "mean": "[[黏合]]；[[结合]]；[[凝聚力]]"}]}],
+          "tip": {"type": "联想", "text": "co-（= con-，都）+ hesion（联想“核心”）→ 大家都认为他是团队核心，很有“凝聚力”。"},
+          "ex": {"type": "真", "year": 2023, "en": "All this is done with the aim of improving workplace efficiency, collaboration and cohesion.", "zh": "所有这些都是为了提高工作效率、协作能力和凝聚力。", "key": ["cohesion"]},
+          "ext": [{"word": "cohesive", "ipa": "/kəʊˈhiːsɪv/", "senses": [{"pos": "adj.", "mean": "使结合的；使凝结的；有凝聚力的"}]}]
+        },
+        {
+          "no": 6, "word": "conjunction", "freq": 1, "page": 223,
+          "prons": [{"ipa": "/kənˈdʒʌŋkʃn/", "senses": [{"pos": "n.", "mean": "[[连词]]；[[结合，同时发生]]"}]}],
+          "tip": {"type": "联想", "text": "conj.是 conjunction 的缩写。"},
+          "ex": {"type": "真", "year": 2021, "en": "They work in conjunction with the environment.", "zh": "它们与环境相结合。", "key": ["conjunction"]},
+          "ext": []
+        },
+        {
+          "no": 7, "word": "joint", "freq": 2, "page": 224,
+          "prons": [{"ipa": "/dʒɔɪnt/", "senses": [
+            {"pos": "n.", "mean": "[[关节]]，接头"},
+            {"pos": "adj.", "mean": "[[联合的]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "两个骨头连接（join）的地方就是关节（joint）。"},
+          "ex": {"type": "例", "en": "Training can help to make muscles stronger and keeping joints lubricated.", "zh": "训练有助于使肌肉更强壮并保持关节的润滑。", "key": ["joints"]},
+          "ext": []
+        },
+        {
+          "no": 8, "word": "knot", "freq": 1, "page": 224,
+          "prons": [{"ipa": "/nɒt/", "senses": [
+            {"pos": "n.", "mean": "[[结]]；一小群人"},
+            {"pos": "v.", "mean": "[[打结]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "k（联想“开”）+ not（不）→ 绳子打了“结”，解不开。"},
+          "ex": {"type": "例", "en": "She tied a knot in a cherry stem.", "zh": "她在樱桃梗上打了个结。", "key": ["knot"]},
+          "ext": []
+        },
+        {
+          "no": 9, "word": "integrate", "freq": 1, "page": 224,
+          "prons": [{"ipa": "/ˈɪntɪɡreɪt/", "senses": [{"pos": "v.", "mean": "[[（使）合并，成为一体]]；（使）加入；（使）融入"}]}],
+          "tip": {"type": "联想", "text": "inte（音似“音体”）+ grate（音似 great）→ 该校推出的音乐、体育一体化教学，让学生获得了非常棒的体验发展 → 成为一体"},
+          "ex": {"type": "真", "year": 2016, "en": "But not many are able to integrate innovation into their business.", "zh": "但能够将创新融入业务的企业并不多。", "key": ["integrate"]},
+          "ext": [{"word": "integration", "ipa": "/ˌɪntɪˈɡreɪʃn/", "senses": [{"pos": "n.", "mean": "一体化；结合；混合"}]}]
+        },
+        {
+          "no": 10, "word": "disintegrate", "freq": 1, "page": 224,
+          "prons": [{"ipa": "/dɪsˈɪntɪɡreɪt/", "senses": [{"pos": "v.", "mean": "[[解体]]；[[崩溃，瓦解]]；破裂"}]}],
+          "tip": {"type": "构词", "text": "dis-（不，非）+ integrate（使合并）→ 解体；崩溃"},
+          "ex": {"type": "真", "year": 2016, "en": "When governments lose their control on power, law and order begin to disintegrate.", "zh": "当政府失去对权力的控制时，法律和秩序就开始瓦解。", "key": ["disintegrate"]},
+          "ext": [{"word": "disintegration", "ipa": "/dɪsˌɪntɪˈɡreɪʃn/", "senses": [{"pos": "n.", "mean": "崩溃；分解"}]}]
+        },
+        {
+          "no": 11, "word": "tangible", "freq": 1, "page": 224,
+          "prons": [{"ipa": "/ˈtændʒəbl/", "senses": [{"pos": "adj.", "mean": "[[有形的]]；[[真实的]]；[[可触知的]]；[[可感知的]]"}]}],
+          "tip": {"type": "联想", "text": "tan（音似“弹”）+ g + -ible（形容词后缀，可以……的）→ 可以弹的 → 可触知的"},
+          "ex": {"type": "例", "en": "Craft activities result in tangible and often useful products.", "zh": "手工活动产生有形的，并且通常是有用的产品。", "key": ["tangible"]},
+          "ext": [{"word": "intangible", "ipa": "/ɪnˈtændʒəbl/", "senses": [{"pos": "adj.", "mean": "难以形容（或理解）的；无形的"}]}]
+        },
+        {
+          "no": 12, "word": "contact", "freq": 3, "page": 224,
+          "prons": [{"ipa": "/ˈkɒntækt/", "senses": [
+            {"pos": "n.", "mean": "[[（尤指经常的）联系]]；[[接触]]"},
+            {"pos": "v.", "mean": "[[联系]]"},
+            {"pos": "adj.", "mean": "[[供联系的]]"}
+          ]}],
+          "tip": {"type": "构词", "text": "con-（共同）+ tact（触摸）→ 共同触摸 → 联系；接触"},
+          "ex": {"type": "真", "year": 2016, "en": "However, merely having contact with children does not guarantee happiness in old age.", "zh": "然而，仅仅和孩子接触并不能保证老年幸福。", "key": ["contact"]},
+          "ext": []
+        },
+        {
+          "no": 13, "word": "intact", "freq": 1, "page": 224,
+          "prons": [{"ipa": "/ɪnˈtækt/", "senses": [{"pos": "adj.", "mean": "[[完整的]]；[[完好无损的]]"}]}],
+          "tip": {"type": "构词", "text": "in-（没有）+ tact（触摸）→ 没有被触摸过的 → 完整的"},
+          "ex": {"type": "例", "en": "It wants to keep its own environment intact.", "zh": "它想保持自己环境的完整。", "key": ["intact"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 6,
+      "title": "“粘、贴”相关",
+      "pages": [224, 226],
+      "map": {
+        "w": "“粘、贴”相关",
+        "children": [
+          {"w": "attach", "children": [{"w": "attachment", "rel": "扩"}]},
+          {"w": "cling", "children": [{"w": "collar", "rel": "相关"}]},
+          {"w": "stick", "children": [
+            {"w": "sticky", "rel": "扩"},
+            {"w": "branch", "rel": "近义", "children": [
+              {"w": "drum", "rel": "相关"},
+              {"w": "trunk", "rel": "相关"}
+            ]},
+            {"w": "cement", "rel": "近义", "children": [
+              {"w": "glue", "rel": "近义", "children": [
+                {"w": "clue", "rel": "形近", "children": [{"w": "cue", "rel": "扩"}]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 14, "word": "attach", "freq": 3, "page": 225,
+          "prons": [{"ipa": "/əˈtætʃ/", "senses": [{"pos": "v.", "mean": "[[贴上]]；把……固定，（使）与……有联系；[[重视]]"}]}],
+          "tip": {"type": "联想", "text": "at-（一再地）+ tach（音似 touch）→ 一再触摸 → 贴上"},
+          "ex": {"type": "例", "en": "It does not attach enough importance to task-based practice.", "zh": "它对任务型实践的重视不够。", "key": ["attach"]},
+          "ext": [{"word": "attachment", "ipa": "/əˈtætʃmənt/", "senses": [{"pos": "n.", "mean": "依恋；忠诚；附属物"}]}]
+        },
+        {
+          "no": 15, "word": "cling", "freq": 2, "page": 225,
+          "prons": [{"ipa": "/klɪŋ/", "senses": [{"pos": "v.", "mean": "[[紧紧抓住]]；[[粘住]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“可怜”→ 那个可怜的孩子“紧紧抓住”母亲的衣角。"},
+          "ex": {"type": "例", "en": "He had one last hope to cling on to.", "zh": "他还抱着最后的一线希望。", "key": ["cling on to"]},
+          "ext": []
+        },
+        {
+          "no": 16, "word": "collar", "freq": 1, "page": 225,
+          "prons": [{"ipa": "/ˈkɒlə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[衣领]]；颈圈"},
+            {"pos": "v.", "mean": "[[抓住]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“扣了”→“衣领”最上面的扣子扣了吗？"},
+          "ex": {"type": "例", "en": "She flicked the dust off her collar.", "zh": "她轻轻掸掉了衣领上的灰尘。", "key": ["collar"]},
+          "ext": []
+        },
+        {
+          "no": 17, "word": "stick", "freq": 1, "page": 225,
+          "prons": [{"ipa": "/stɪk/", "senses": [
+            {"pos": "n.", "mean": "[[枝条]]；[[条状物]]"},
+            {"pos": "v.", "mean": "（~with）[[坚持]]；[[刺，插入]]；[[粘着]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "粘（stick）好照片后，在空白处打钩（tick）确认。"},
+          "ex": {"type": "真", "year": 2021, "en": "We love to establish a routine and stick with it.", "zh": "我们喜欢建立一个常规并坚持下去。", "key": ["stick with"]},
+          "ext": [{"word": "sticky", "ipa": "/ˈstɪki/", "senses": [{"pos": "adj.", "mean": "黏（性）的；闷热的；棘手的"}]}]
+        },
+        {
+          "no": 18, "word": "drum", "freq": 1, "page": 225,
+          "prons": [{"ipa": "/drʌm/", "senses": [{"pos": "n.", "mean": "[[鼓]]；[[鼓状物，圆桶]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“抓木”→ 鼓手抓紧木槌，奋力敲“鼓”。"},
+          "ex": {"type": "例", "en": "I used to play drums in a band.", "zh": "我以前在乐队里打鼓。", "key": ["drums"]},
+          "ext": []
+        },
+        {
+          "no": 19, "word": "branch", "freq": 2, "page": 225,
+          "prons": [{"ipa": "/brɑːntʃ/", "senses": [{"pos": "n.", "mean": "[[树枝]]；[[分支]]；[[支流]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“不让骑”→ 爬树的时候，父母不让他骑在“树枝”上，以免发生危险。"},
+          "ex": {"type": "真", "year": 2022, "en": "Taijiquan, stemming from ancient China, is an important branch of Chinese martial arts.", "zh": "太极拳源于中国古代，是中国武术的一个重要分支。", "key": ["branch"]},
+          "ext": []
+        },
+        {
+          "no": 20, "word": "trunk", "freq": 1, "page": 225,
+          "prons": [{"ipa": "/trʌŋk/", "senses": [{"pos": "n.", "mean": "[[树干]]；（人的）[[躯干]]；[[后备箱]]；[[象鼻]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“撞开”→ 大象用“象鼻”把人撞开。"},
+          "ex": {"type": "例", "en": "She popped the trunk and we tossed the stuff inside.", "zh": "她打开后备箱，我们把东西扔了进去。", "key": ["trunk"]},
+          "ext": []
+        },
+        {
+          "no": 21, "word": "cement", "freq": 1, "page": 225,
+          "prons": [{"ipa": "/sɪˈment/", "senses": [
+            {"pos": "n.", "mean": "[[水泥]]；[[胶合剂]]；[[纽带]]"},
+            {"pos": "v.", "mean": "[[黏结]]；[[加强，巩固]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“塞门它”→ 往门缝下塞“水泥”能填补好缝隙。"},
+          "ex": {"type": "例", "en": "Mix the sand and cement together.", "zh": "把沙子和水泥混合在一起。", "key": ["cement"]},
+          "ext": []
+        },
+        {
+          "no": 22, "word": "glue", "freq": 1, "page": 225,
+          "prons": [{"ipa": "/ɡluː/", "senses": [
+            {"pos": "n.", "mean": "[[胶]]；[[胶水]]"},
+            {"pos": "v.", "mean": "[[黏合，粘贴]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "g（联想“哥”）+ lu（联想“鹿”）+ e → 哥哥用“胶水”黏起了小鹿玩具。"},
+          "ex": {"type": "例", "en": "There is some glue on the envelope.", "zh": "信封上有一些胶水。", "key": ["glue"]},
+          "ext": []
+        },
+        {
+          "no": 23, "word": "clue", "freq": 3, "page": 225,
+          "prons": [{"ipa": "/kluː/", "senses": [{"pos": "n.", "mean": "[[线索]]；[[提示]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“可鹿”→ 根据“线索”可以找到鹿的踪迹。"},
+          "ex": {"type": "真", "year": 2022, "en": "They would run around looking for clues and at the end unmask the bad guy.", "zh": "他们会四处找线索，最后揭开坏人的真面目。", "key": ["clues"]},
+          "ext": []
+        },
+        {
+          "no": 24, "word": "cue", "freq": 2, "page": 225,
+          "prons": [{"ipa": "/kjuː/", "senses": [
+            {"pos": "n.", "mean": "[[暗示]]；[[提示]]"},
+            {"pos": "v.", "mean": "[[给（某人）暗示（或提示）]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "我们根据线索（clue）的暗示（cue）找到了真相。"},
+          "ex": {"type": "例", "en": "I think that's my cue to explain why I'm here.", "zh": "我想，现在该轮到我解释一下我来这里的原因了。", "key": ["cue"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 7,
+      "title": "re 相关",
+      "pages": [226, 228],
+      "map": {
+        "w": "re 相关",
+        "children": [
+          {"w": "relax", "children": [
+            {"w": "relaxation", "rel": "扩"},
+            {"w": "recommend", "rel": "相关", "children": [
+              {"w": "recommendation", "rel": "扩"},
+              {"w": "suggest", "rel": "近义", "children": [
+                {"w": "suggestion", "rel": "扩"},
+                {"w": "suggestive", "rel": "扩"}
+              ]}
+            ]},
+            {"w": "nerve", "rel": "相关", "children": [
+              {"w": "nervous", "rel": "扩"},
+              {"w": "calm", "rel": "反义"}
+            ]}
+          ]},
+          {"w": "religion", "children": [
+            {"w": "religious", "rel": "扩"},
+            {"w": "church", "rel": "相关", "children": [
+              {"w": "saint", "rel": "相关", "children": [
+                {"w": "holy", "children": [
+                  {"w": "holiness", "rel": "扩"},
+                  {"w": "solemn", "rel": "相关", "children": [{"w": "solemnity", "rel": "扩"}]}
+                ]}
+              ]},
+              {"w": "bless", "rel": "相关", "children": [
+                {"w": "blessing", "rel": "扩"},
+                {"w": "celebrate", "rel": "相关", "children": [
+                  {"w": "celebration", "rel": "扩", "children": [{"w": "banquet", "rel": "相关"}]}
+                ]}
+              ]}
+            ]},
+            {"w": "ceremony", "rel": "相关", "children": [
+              {"w": "ceremonial", "rel": "扩"},
+              {"w": "funeral", "rel": "相关"}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 25, "word": "recommend", "freq": 3, "page": 226,
+          "prons": [{"ipa": "/ˌrekəˈmend/", "senses": [{"pos": "v.", "mean": "[[推荐]]；[[介绍]]；[[劝告]]；[[建议]]"}]}],
+          "tip": {"type": "联想", "text": "re（字母音似“阿姨”）+ com（音似“可”）+ mend（音似“闷的”）→ 阿姨是个可（很）闷的人，不爱与人交流，给她“推荐”个朋友吧。"},
+          "ex": {"type": "真", "year": 2020, "en": "Of the nearly 100 Americans recommended to be studied, 77% were white.", "zh": "在被推荐研究的近100名美国人中，77%是白人。", "key": ["recommended"]},
+          "ext": [{"word": "recommendation", "ipa": "/ˌrekəmenˈdeɪʃn/", "senses": [{"pos": "n.", "mean": "正式建议；提议；推荐；介绍；推荐信"}]}]
+        },
+        {
+          "no": 26, "word": "suggest", "freq": 1, "page": 226,
+          "prons": [{"ipa": "/səˈdʒest/", "senses": [{"pos": "v.", "mean": "[[建议]]；[[推荐]]；[[表明]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2018, "en": "This suggests their higher IQs result from the time they spend teaching their siblings.", "zh": "这表明他们智商更高是因为花时间教兄弟姐妹。", "key": ["suggests"]},
+          "ext": [
+            {"word": "suggestion", "ipa": "/səˈdʒestʃən/", "senses": [{"pos": "n.", "mean": "建议；暗示；迹象"}]},
+            {"word": "suggestive", "ipa": "/səˈdʒestɪv/", "senses": [{"pos": "adj.", "mean": "使人想起……的；引起联想的"}]}
+          ]
+        },
+        {
+          "no": 27, "word": "relax", "freq": 1, "page": 226,
+          "prons": [{"ipa": "/rɪˈlæks/", "senses": [{"pos": "v.", "mean": "[[放松]]，[[休息]]"}]}],
+          "tip": {"type": "联想", "text": "re（字母音似“阿姨”）+ la（音似“来”）+ x（联想“某地”）→ 阿姨来某地“放松”。"},
+          "ex": {"type": "真", "year": 2023, "en": "But don't kids need time to relax?", "zh": "但是孩子们不需要时间放松吗？", "key": ["relax"]},
+          "ext": [{"word": "relaxation", "ipa": "/ˌriːlækˈseɪʃn/", "senses": [{"pos": "n.", "mean": "放松，休息；消遣；用于放松消遣的时间"}]}]
+        },
+        {
+          "no": 28, "word": "nerve", "freq": 2, "page": 226,
+          "prons": [{"ipa": "/nɜːv/", "senses": [{"pos": "n.", "mean": "[[神经]]；神经质；[[勇气]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2022, "en": "Pain is the only feeling to which the nerves in that layer respond.", "zh": "疼痛是这一层神经所能反应的唯一感觉。", "key": ["nerves"]},
+          "ext": [{"word": "nervous", "ipa": "/ˈnɜːvəs/", "senses": [{"pos": "adj.", "mean": "紧张的；焦虑的；神经质的；神经系统的"}]}]
+        },
+        {
+          "no": 29, "word": "calm", "freq": 1, "page": 226,
+          "prons": [{"ipa": "/kɑːm/", "senses": [
+            {"pos": "v.", "mean": "[[使平静]]"},
+            {"pos": "adj.", "mean": "[[沉着的]]；[[平静的]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "cal（联想 call）+ m（联想“妈妈”）→ 他心情不好时就给妈妈打电话，妈妈的安慰会让他“平静”。"},
+          "ex": {"type": "例", "en": "Sit down and try to calm yourself.", "zh": "坐下，试着让自己平静下来。", "key": ["calm"]},
+          "ext": []
+        },
+        {
+          "no": 30, "word": "religion", "freq": 1, "page": 227,
+          "prons": [{"ipa": "/rɪˈlɪdʒən/", "senses": [{"pos": "n.", "mean": "[[宗教]]，[[宗教信仰]]"}]}],
+          "tip": {"type": "联想", "text": "re（字母音似“阿姨”）+ ligion（音似“历尽”）→ 阿姨历尽沧桑之后开始研究“宗教”。"},
+          "ex": {"type": "真", "year": 2022, "en": "It is mainly based on a society's religion.", "zh": "这主要基于一个社会的宗教信仰。", "key": ["religion"]},
+          "ext": [{"word": "religious", "ipa": "/rɪˈlɪdʒəs/", "senses": [{"pos": "adj.", "mean": "宗教的；虔诚的"}]}]
+        },
+        {
+          "no": 31, "word": "saint", "freq": 1, "page": 227,
+          "prons": [{"ipa": "/seɪnt/", "senses": [{"pos": "n.", "mean": "[[圣人]]，[[圣徒]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“神他”→ 孔子既有神人之慧，又有“圣人”之德。"},
+          "ex": {"type": "例", "en": "She mainly drew on stories of ancient saints.", "zh": "她主要借鉴了古代圣人的故事。", "key": ["saints"]},
+          "ext": []
+        },
+        {
+          "no": 32, "word": "holy", "freq": 1, "page": 227,
+          "prons": [{"ipa": "/ˈhəʊli/", "senses": [{"pos": "adj.", "mean": "[[神圣的]]，[[圣洁的]]"}]}],
+          "tip": {"type": "对照", "text": "好莱坞（Hollywood）是电影人心目中神圣的（holy）逐梦乐园。"},
+          "ex": {"type": "例", "en": "The place is considered holy by the local people.", "zh": "当地人认为这个地方是神圣的。", "key": ["holy"]},
+          "ext": [{"word": "holiness", "ipa": "/ˈhəʊlinəs/", "senses": [{"pos": "n.", "mean": "神圣；圣座"}]}]
+        },
+        {
+          "no": 33, "word": "solemn", "freq": 1, "page": 227,
+          "prons": [{"ipa": "/ˈsɒləm/", "senses": [{"pos": "adj.", "mean": "[[庄严的]]，[[隆重的]]；（表情）[[严肃的]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“所罗门”（古以色列王国的王）→ 国王用“严肃的”表情扫视四周。"},
+          "ex": {"type": "例", "en": "Her face grew solemn.", "zh": "她的脸变得严肃起来。", "key": ["solemn"]},
+          "ext": [{"word": "solemnity", "ipa": "/səˈlemnəti/", "senses": [{"pos": "n.", "mean": "庄严；庄重"}]}]
+        },
+        {
+          "no": 34, "word": "church", "freq": 1, "page": 227,
+          "prons": [{"ipa": "/tʃɜːtʃ/", "senses": [{"pos": "n.", "mean": "[[教堂]]，[[教会]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“撤吃”→ 在战争时期，难民撤入“教堂”后才吃得到一些食物。"},
+          "ex": {"type": "真", "year": 2017, "en": "The tradition, dating back to 300 B.C., was later incorporated into the Christian church.", "zh": "这一传统可以追溯到公元前300年，后来被纳入基督教会。", "key": ["church"]},
+          "ext": []
+        },
+        {
+          "no": 35, "word": "bless", "freq": 1, "page": 227,
+          "prons": [{"ipa": "/bles/", "senses": [{"pos": "v.", "mean": "[[祝福]]；[[保佑]]"}]}],
+          "tip": {"type": "联想", "text": "b（音似“不”）+ less（少的）→ 过年时，“祝福”的话一句都不能少。"},
+          "ex": {"type": "真", "year": 2023, "en": "Most of us in the entrepreneurial community are blessed—or cursed—with higher-than-average ambition.", "zh": "在企业家群体中，大多数人都有高于平均水平的雄心壮志，这或是祝福，或是诅咒。", "key": ["blessed"]},
+          "ext": [{"word": "blessing", "ipa": "/ˈblesɪŋ/", "senses": [{"pos": "n.", "mean": "祷告；祝福；幸事"}]}]
+        },
+        {
+          "no": 36, "word": "celebrate", "freq": 1, "page": 227,
+          "prons": [{"ipa": "/ˈselɪbreɪt/", "senses": [{"pos": "v.", "mean": "[[庆祝]]；[[庆贺]]；[[赞美]]"}]}],
+          "tip": {"type": "联想", "text": "ce（音似“赛”）+ le（联想“了”）+ br（联想“必然”）+ ate（eat 的过去式）→ 比赛结束了，大家必然要吃饭“庆祝”一下。"},
+          "ex": {"type": "真", "year": 2017, "en": "So it's no surprise that cultures around the world celebrate spring by honouring the egg.", "zh": "因此，世界各地的文化通过纪念鸡蛋来庆祝春天也就不足为奇了。", "key": ["celebrate"]},
+          "ext": [{"word": "celebration", "ipa": "/ˌselɪˈbreɪʃn/", "senses": [{"pos": "n.", "mean": "庆祝；庆祝会"}]}]
+        },
+        {
+          "no": 37, "word": "banquet", "freq": 1, "page": 227,
+          "prons": [{"ipa": "/ˈbæŋkwɪt/", "senses": [{"pos": "n.", "mean": "[[宴会]]；[[筵席]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“办亏特”→ 举办非常豪华的“宴会”是特别有可能亏钱的。"},
+          "ex": {"type": "例", "en": "A state banquet was held in honour of the visiting president.", "zh": "为欢迎来访总统，特设国宴以示礼遇。", "key": ["banquet"]},
+          "ext": []
+        },
+        {
+          "no": 38, "word": "ceremony", "freq": 2, "page": 227,
+          "prons": [{"ipa": "/ˈserəməni/", "senses": [{"pos": "n.", "mean": "[[仪式]]，[[典礼]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“赛罗蒙你”→ 赛罗（人名）说为你举行一个“仪式”，结果蒙（骗）了你。"},
+          "ex": {"type": "真", "year": 2020, "en": "He attended his graduation ceremony.", "zh": "他参加了毕业典礼。", "key": ["ceremony"]},
+          "ext": [{"word": "ceremonial", "ipa": "/ˌserɪˈməʊniəl/", "senses": [{"pos": "adj.", "mean": "礼仪的；礼节的"}]}]
+        },
+        {
+          "no": 39, "word": "funeral", "freq": 1, "page": 228,
+          "prons": [{"ipa": "/ˈfjuːnərəl/", "senses": [{"pos": "n.", "mean": "[[葬礼]]"}]}],
+          "tip": {"type": "联想", "text": "fune（联想 fuel）+ r + al（联想 all）→ 身体的燃料（能量）全部用尽时，“葬礼”将送走过往。"},
+          "ex": {"type": "例", "en": "Many people attended her funeral.", "zh": "许多人参加了她的葬礼。", "key": ["funeral"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 8,
+      "title": "“能源”相关",
+      "pages": [228, 229],
+      "map": {
+        "w": "“能源”相关",
+        "children": [
+          {"w": "fuel", "children": [
+            {"w": "gas", "rel": "相关", "children": [
+              {"w": "gasoline", "rel": "扩"},
+              {"w": "carbon", "children": [
+                {"w": "silicon", "children": [
+                  {"w": "bury", "rel": "相关", "children": [{"w": "burial", "rel": "扩"}]}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"w": "electricity", "children": [
+            {"w": "electrical", "rel": "扩", "children": [{"w": "electrician"}]},
+            {"w": "electron", "rel": "相关", "children": [
+              {"w": "electronic", "rel": "扩"},
+              {"w": "electronics", "rel": "扩"},
+              {"w": "electronically", "rel": "扩"},
+              {"w": "atom", "rel": "相关", "children": [
+                {"w": "atomic", "rel": "扩"},
+                {"w": "nuclear", "rel": "相关", "children": [{"w": "nucleus", "rel": "扩"}]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 40, "word": "fuel", "freq": 1, "page": 228,
+          "prons": [{"ipa": "/ˈfjuːəl/", "senses": [
+            {"pos": "n.", "mean": "[[燃料]]"},
+            {"pos": "v.", "mean": "[[给……提供燃料]]；增加；刺激"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“费油”→ 汽车费油，即消耗很多“燃料”。"},
+          "ex": {"type": "真", "year": 2018, "en": "It does produce much less pollution than that caused by energy production through fossil fuels.", "zh": "它产生的污染的确比化石燃料能源生产产生的污染要少得多。", "key": ["fuels"]},
+          "ext": []
+        },
+        {
+          "no": 41, "word": "gas", "freq": 1, "page": 228,
+          "prons": [{"ipa": "/ɡæs/", "senses": [{"pos": "n.", "mean": "[[气体]]；[[天然气]]；[[汽油]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“该死”→ 该死！“汽油”又涨价了。"},
+          "ex": {"type": "例", "en": "The road was covered with spilled gas.", "zh": "路上满是溢出的汽油。", "key": ["gas"]},
+          "ext": [{"word": "gasoline", "ipa": "/ˈɡæsəliːn/", "senses": [{"pos": "n.", "mean": "（= petrol）汽油"}]}]
+        },
+        {
+          "no": 42, "word": "carbon", "freq": 1, "page": 228,
+          "prons": [{"ipa": "/ˈkɑːbən/", "senses": [{"pos": "n.", "mean": "[[碳]]"}]}],
+          "tip": {"type": "联想", "text": "car（车）+ bon（联想 born）→ 小轿车会产生“碳”排放。"},
+          "ex": {"type": "真", "year": 2021, "en": "Scotland will reach the national target in carbon emissions reduction ahead of schedule.", "zh": "苏格兰将提前实现国家碳减排目标。", "key": ["carbon"]},
+          "ext": []
+        },
+        {
+          "no": 43, "word": "silicon", "freq": 2, "page": 228,
+          "prons": [{"ipa": "/ˈsɪlɪkən/", "senses": [{"pos": "n.", "mean": "[[硅]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“死力啃”→ 要死力（拼命）啃（读）书才能到“硅”谷发展。"},
+          "ex": {"type": "真", "year": 2019, "en": "The personal computing revolution and philosophy of disruptive innovation of Silicon Valley grew.", "zh": "个人计算机革命和硅谷的颠覆性创新理念蓬勃发展。", "key": ["Silicon"]},
+          "ext": []
+        },
+        {
+          "no": 44, "word": "nuclear", "freq": 1, "page": 228,
+          "prons": [{"ipa": "/ˈnjuːkliə(r)/", "senses": [{"pos": "adj.", "mean": "[[原子能的]]；[[核能的]]"}]}],
+          "tip": {"type": "联想", "text": "nu（联想 new）+ clear（清洁的）→ 新的清洁能源 → 原子能的；核能的"},
+          "ex": {"type": "例", "en": "They argued in favour of keeping a nuclear deterrent.", "zh": "他们主张保留核威慑力量。", "key": ["nuclear"]},
+          "ext": [{"word": "nucleus", "ipa": "/ˈnjuːkliəs/", "senses": [{"pos": "n.", "mean": "核，核心；（原子）核"}]}]
+        },
+        {
+          "no": 45, "word": "atom", "freq": 1, "page": 228,
+          "prons": [{"ipa": "/ˈætəm/", "senses": [{"pos": "n.", "mean": "[[原子]]，[[微粒]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“阿童木”→ 阿童木又名“原子”小金刚。"},
+          "ex": {"type": "例", "en": "Two atoms of hydrogen combine with one atom of oxygen to form a molecule of water.", "zh": "两个氢原子和一个氧原子结合组成一个水分子。", "key": ["atoms", "atom"]},
+          "ext": [{"word": "atomic", "ipa": "/əˈtɒmɪk/", "senses": [{"pos": "adj.", "mean": "原子的；原子能的"}]}]
+        },
+        {
+          "no": 46, "word": "electron", "freq": 1, "page": 229,
+          "prons": [{"ipa": "/ɪˈlektrɒn/", "senses": [{"pos": "n.", "mean": "[[电子]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“一来可愁”→“电子”时代一来临，父母担心孩子们玩游戏、上网会影响学习。"},
+          "ex": {"type": "例", "en": "The former have atoms that contain more free electrons than the latter.", "zh": "前者的原子比后者含有更多的自由电子。", "key": ["electrons"]},
+          "ext": [
+            {"word": "electronic", "ipa": "/ˌɪlekˈtrɒnɪk/", "senses": [{"pos": "adj.", "mean": "电子的"}]},
+            {"word": "electronics", "ipa": "/ˌɪlekˈtrɒnɪks/", "senses": [{"pos": "n.", "mean": "电子学"}]},
+            {"word": "electronically", "ipa": "/ˌɪlekˈtrɒnɪkli/", "senses": [{"pos": "adv.", "mean": "电子地"}]}
+          ]
+        },
+        {
+          "no": 47, "word": "electricity", "freq": 1, "page": 229,
+          "prons": [{"ipa": "/ɪˌlekˈtrɪsəti/", "senses": [{"pos": "n.", "mean": "[[电力]]；[[电流]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Try to imagine what it is like to live without electricity.", "zh": "试着想象一下没有电的生活是什么样子。", "key": ["electricity"]},
+          "ext": [
+            {"word": "electrical", "alt": "electric", "ipa": "/ɪˈlektrɪk(l)/", "senses": [{"pos": "adj.", "mean": "电的；用电的；发电的"}]},
+            {"word": "electrician", "ipa": "/ɪˌlekˈtrɪʃn/", "senses": [{"pos": "n.", "mean": "电工；电气技师"}]}
+          ]
+        },
+        {
+          "no": 48, "word": "bury", "freq": 1, "page": 229,
+          "prons": [{"ipa": "/ˈberi/", "senses": [{"pos": "v.", "mean": "[[埋葬]]；[[隐藏]]"}]}],
+          "tip": {"type": "联想", "text": "bu（联想“不”）+ ry（联想“如意”）→ 把不如意“埋葬”，让希望破土成长。"},
+          "ex": {"type": "例", "en": "Capture carbon dioxide and bury it under the sea.", "zh": "捕获二氧化碳并将其埋在海底。", "key": ["bury"]},
+          "ext": [{"word": "burial", "ipa": "/ˈberiəl/", "senses": [{"pos": "n.", "mean": "埋葬；葬礼"}]}]
+        }
+      ]
+    },
+    {
+      "no": 9,
+      "title": "“愉快”相关",
+      "pages": [229, 231],
+      "map": {
+        "w": "“愉快”相关",
+        "children": [
+          {"w": "cheer", "children": [
+            {"w": "cheerful", "rel": "扩"},
+            {"w": "pleasure", "rel": "相关", "children": [
+              {"w": "please", "rel": "扩"},
+              {"w": "pleasing", "rel": "扩"},
+              {"w": "pleasant", "rel": "扩", "children": [
+                {"w": "comfortable", "rel": "相关", "children": [{"w": "comfort", "rel": "扩"}]}
+              ]}
+            ]},
+            {"w": "joy", "rel": "相关", "children": [
+              {"w": "joyous", "rel": "扩"},
+              {"w": "joyful", "rel": "扩", "children": [{"w": "cheek", "rel": "相关"}]}
+            ]}
+          ]},
+          {"w": "lift", "children": [
+            {"w": "rise", "rel": "近义", "children": [
+              {"w": "arise", "rel": "形近", "children": [
+                {"w": "arouse", "rel": "i变ou", "children": [
+                  {"w": "arousal", "rel": "扩"},
+                  {"w": "rouse", "rel": "近义", "children": [
+                    {"w": "waken", "children": [
+                      {"w": "wake", "rel": "扩", "children": [{"w": "awake", "rel": "同根"}]}
+                    ]}
+                  ]}
+                ]}
+              ]}
+            ]},
+            {"w": "raise", "rel": "近义", "children": [
+              {"w": "elevate", "rel": "近义", "children": [
+                {"w": "elevator", "rel": "扩"},
+                {"w": "elevation", "rel": "扩"}
+              ]}
+            ]},
+            {"w": "drag", "rel": "相关", "children": [
+              {"w": "dragon", "rel": "加on"},
+              {"w": "haul", "rel": "近义", "children": [{"w": "roar", "rel": "相关"}]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 49, "word": "cheer", "freq": 1, "page": 229,
+          "prons": [{"ipa": "/tʃɪə(r)/", "senses": [
+            {"pos": "v.", "mean": "使振作；鼓舞"},
+            {"pos": "n.", "mean": "[[欢呼声]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "We gave out a cheer when the red roof of the cottage came into view.", "zh": "当小屋的红色屋顶映入眼帘时，我们发出了欢呼声。", "key": ["cheer"]},
+          "ext": [{"word": "cheerful", "ipa": "/ˈtʃɪəfl/", "senses": [{"pos": "adj.", "mean": "快乐的，愉快的"}]}]
+        },
+        {
+          "no": 50, "word": "pleasure", "freq": 1, "page": 229,
+          "prons": [{"ipa": "/ˈpleʒə(r)/", "senses": [{"pos": "n.", "mean": "[[愉快]]，[[快乐]]；乐事"}]}],
+          "tip": {"type": "联想", "text": "pleas（联想 please）+ ure → 常说“请”字懂礼貌，心情“愉快”没烦恼。"},
+          "ex": {"type": "真", "year": 2017, "en": "She always derives great pleasure from designing something new.", "zh": "她总是从设计新东西中获得极大的乐趣。", "key": ["pleasure"]},
+          "ext": [
+            {"word": "please", "ipa": "/pliːz/", "senses": [{"pos": "exclam.", "mean": "请"}, {"pos": "v.", "mean": "使高兴；喜欢"}]},
+            {"word": "pleasing", "ipa": "/ˈpliːzɪŋ/", "senses": [{"pos": "adj.", "mean": "令人高兴的；令人满意的"}]},
+            {"word": "pleasant", "ipa": "/ˈpleznt/", "senses": [{"pos": "adj.", "mean": "令人愉快的；舒适的"}]}
+          ]
+        },
+        {
+          "no": 51, "word": "joy", "freq": 1, "page": 229,
+          "prons": [{"ipa": "/dʒɔɪ/", "senses": [{"pos": "n.", "mean": "[[高兴]]，[[喜悦]]；[[乐趣]]；满足"}]}],
+          "tip": {"type": "对照", "text": "当你享受（enjoy）一件事的时候，一定是高兴（joy）的。"},
+          "ex": {"type": "真", "year": 2020, "en": "We do work that gives us bursts of joy each new day.", "zh": "我们所做的工作每一天都给我们带来阵阵喜悦。", "key": ["joy"]},
+          "ext": [
+            {"word": "joyous", "ipa": "/ˈdʒɔɪəs/", "senses": [{"pos": "adj.", "mean": "高兴的；令人愉快的"}]},
+            {"word": "joyful", "ipa": "/ˈdʒɔɪfl/", "senses": [{"pos": "adj.", "mean": "高兴的；快乐的；令人愉快的"}]}
+          ]
+        },
+        {
+          "no": 52, "word": "comfortable", "freq": 1, "page": 230,
+          "prons": [{"ipa": "/ˈkʌmftəbl/", "senses": [{"pos": "adj.", "mean": "[[舒适的]]；[[自在的]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2020, "en": "Students are more comfortable seeking counselling in school.", "zh": "学生在学校寻求心理咨询更为自在。", "key": ["comfortable"]},
+          "ext": [{"word": "comfort", "ipa": "/ˈkʌmfət/", "senses": [{"pos": "n.", "mean": "舒适；安慰"}, {"pos": "v.", "mean": "安慰"}]}]
+        },
+        {
+          "no": 53, "word": "cheek", "freq": 1, "page": 230,
+          "prons": [{"ipa": "/tʃiːk/", "senses": [{"pos": "n.", "mean": "[[脸颊]]"}]}],
+          "tip": {"type": "联想", "text": "ch（联想“吃”）+ ee（联想“两只鹅”）+ k（联想 king）→ 国王吃完两只鹅，“脸颊”变得红润了。"},
+          "ex": {"type": "例", "en": "One common French custom of greetings is cheek-kissing.", "zh": "法国人的一个常见的问候习惯是亲吻脸颊。", "key": ["cheek"]},
+          "ext": []
+        },
+        {
+          "no": 54, "word": "elevate", "freq": 2, "page": 230,
+          "prons": [{"ipa": "/ˈelɪveɪt/", "senses": [{"pos": "v.", "mean": "[[举起]]；[[晋升]]；[[使情绪高昂]]"}]}],
+          "tip": {"type": "谐音", "text": "ele（联想人名“爱丽”）+ vate（音似“喂她”）→ 爱丽长得很高，喂她吃饭时必须踮起脚尖，“举起”手臂。"},
+          "ex": {"type": "例", "en": "Smoking often elevates blood pressure.", "zh": "抽烟常常使血压升高。", "key": ["elevates"]},
+          "ext": [
+            {"word": "elevator", "ipa": "/ˈelɪveɪtə(r)/", "senses": [{"pos": "n.", "mean": "电梯"}]},
+            {"word": "elevation", "ipa": "/ˌelɪˈveɪʃn/", "senses": [{"pos": "n.", "mean": "升高；提拔；提升"}]}
+          ]
+        },
+        {
+          "no": 55, "word": "lift", "freq": 1, "page": 230,
+          "prons": [{"ipa": "/lɪft/", "senses": [
+            {"pos": "n.", "mean": "[[电梯]]；[[提]]；[[上升]]；[[搭便车]]"},
+            {"pos": "v.", "mean": "（被）[[举起]]；[[鼓舞]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Medical Association offers a picture of how risky it is to get a lift from a teenage driver.", "zh": "医学协会提供了一张图片，展示了从十几岁的司机那里搭便车有多危险。", "key": ["lift"]},
+          "ext": []
+        },
+        {
+          "no": 56, "word": "rise", "freq": 1, "page": 230,
+          "prons": [{"ipa": "/raɪz/", "senses": [
+            {"pos": "n.", "mean": "[[上涨]]，[[提高]]；[[增强]]"},
+            {"pos": "v.", "mean": "[[上升]]；[[起身]]；[[起义]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "ri（联想“日”）+ s（联想“复数”）+ e（往外）→ 在后羿射日的故事中，十个太阳都想往外升起 → 上升"},
+          "ex": {"type": "真", "year": 2017, "en": "Leslie worries that the rise of the Internet has reduced our appetite for aimless adventures.", "zh": "莱斯利担心互联网的兴起已经减少了我们对漫无目的冒险的兴趣。", "key": ["rise"]},
+          "ext": []
+        },
+        {
+          "no": 57, "word": "arise", "freq": 2, "page": 230,
+          "prons": [{"ipa": "/əˈraɪz/", "senses": [{"pos": "v.", "mean": "[[起来]]；[[出现]]"}]}],
+          "tip": {"type": "联想", "text": "a-（一再地）+ rise（升起）→ 出现"},
+          "ex": {"type": "真", "year": 2022, "en": "What problem may arise if classes go online?", "zh": "如果把课程放到网上可能会出现什么问题？", "key": ["arise"]},
+          "ext": []
+        },
+        {
+          "no": 58, "word": "arouse", "freq": 2, "page": 230,
+          "prons": [{"ipa": "/əˈraʊz/", "senses": [{"pos": "v.", "mean": "[[唤醒]]；[[引起]]"}]}],
+          "tip": {"type": "联想", "text": "a-（一再地）+ rouse（音似“热死”）→ 十个太阳同时出现后，一再地热死人，“引起”了大家的反感。"},
+          "ex": {"type": "真", "year": 2023, "en": "Most stores open with flowers, fruit and vegetables at the front as a breath of freshness to arouse our appetite.", "zh": "大多数商店都把鲜花、水果和蔬菜放在最前面，给人一种新鲜的感觉，唤起我们的食欲。", "key": ["arouse"]},
+          "ext": [{"word": "arousal", "ipa": "/əˈraʊzl/", "senses": [{"pos": "n.", "mean": "激起，引起（感情、态度）"}]}]
+        },
+        {
+          "no": 59, "word": "rouse", "freq": 1, "page": 230,
+          "prons": [{"ipa": "/raʊz/", "senses": [{"pos": "v.", "mean": "[[唤醒]]；[[使醒来]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The telephone roused me from my sleep at 6 a.m.", "zh": "早晨6点钟，电话铃声就把我从睡梦中吵醒了。", "key": ["roused"]},
+          "ext": []
+        },
+        {
+          "no": 60, "word": "raise", "freq": 1, "page": 230,
+          "prons": [{"ipa": "/reɪz/", "senses": [
+            {"pos": "n.", "mean": "[[加薪]]"},
+            {"pos": "v.", "mean": "[[举起]]；[[升起]]；[[引起]]；[[提出]]；[[抚养]]；[[组建]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "十个太阳再次升起（rise），后羿举（raise）手表示要去射下其中九个。"},
+          "ex": {"type": "真", "year": 2023, "en": "This has already raised privacy concerns.", "zh": "这已经引起了人们对隐私的担忧。", "key": ["raised"]},
+          "ext": []
+        },
+        {
+          "no": 61, "word": "waken", "freq": 1, "page": 230,
+          "prons": [{"ipa": "/ˈweɪkən/", "senses": [{"pos": "v.", "mean": "[[醒来]]，[[唤醒]]"}]}],
+          "tip": {"type": "联想", "text": "wa（联想“哇”）+ ken（联想“肯”，人名）→ 哇，沉睡几天的肯终于“醒来”了。"},
+          "ex": {"type": "例", "en": "They are wakened several times during the night.", "zh": "他们在夜间被弄醒了好几次。", "key": ["wakened"]},
+          "ext": [{"word": "wake", "ipa": "/weɪk/", "senses": [{"pos": "v.", "mean": "醒，醒来，唤醒"}]}]
+        },
+        {
+          "no": 62, "word": "awake", "freq": 1, "page": 231,
+          "prons": [{"ipa": "/əˈweɪk/", "senses": [
+            {"pos": "adj.", "mean": "[[醒着的]]"},
+            {"pos": "v.", "mean": "[[唤醒]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "I was barely able to stay awake.", "zh": "我几乎无法保持醒着。", "key": ["awake"]},
+          "ext": []
+        },
+        {
+          "no": 63, "word": "drag", "freq": 2, "page": 231,
+          "prons": [{"ipa": "/dræɡ/", "senses": [
+            {"pos": "v.", "mean": "[[拖，拽]]"},
+            {"pos": "n.", "mean": "[[累赘]]；无聊的事"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“拽个”→ 拖，拽"},
+          "ex": {"type": "例", "en": "I dragged the chair over to the window.", "zh": "我把椅子拖到了窗子那边。", "key": ["dragged"]},
+          "ext": []
+        },
+        {
+          "no": 64, "word": "dragon", "freq": 1, "page": 231,
+          "prons": [{"ipa": "/ˈdræɡən/", "senses": [{"pos": "n.", "mean": "[[龙]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“拽根”→ 一条“龙”拽着树根盘踞在原地。"},
+          "ex": {"type": "例", "en": "You should check the toy dragon one more time before playing.", "zh": "你在玩之前应该再检查一次这个玩具龙。", "key": ["dragon"]},
+          "ext": []
+        },
+        {
+          "no": 65, "word": "haul", "freq": 1, "page": 231,
+          "prons": [{"ipa": "/hɔːl/", "senses": [
+            {"pos": "v.", "mean": "（用力）[[拖，拉，拽]]"},
+            {"pos": "n.", "mean": "[[拖，拉]]；旅程"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“嚎”→ 纤夫拉船时发出的声音像“嚎”，拖得很长 → 拖，拉，拽"},
+          "ex": {"type": "真", "year": 2020, "en": "These people are usually unable or unprepared to endure the long haul.", "zh": "这些人通常无法或没有准备好忍受长期的考验。", "key": ["haul"]},
+          "ext": []
+        },
+        {
+          "no": 66, "word": "roar", "freq": 1, "page": 231,
+          "prons": [{"ipa": "/rɔː(r)/", "senses": [
+            {"pos": "n.", "mean": "[[咆哮]]；（机器的）[[隆隆声]]"},
+            {"pos": "v.", "mean": "[[咆哮]]；[[放声大笑]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "野猪（boar）发出咆哮（roar）声。"},
+          "ex": {"type": "例", "en": "I could hear nothing but the roar of the airplane engines.", "zh": "除了飞机引擎的轰鸣声，我什么也听不到。", "key": ["roar"]},
+          "ext": []
+        }
+      ]
+    }
+  ]
+}

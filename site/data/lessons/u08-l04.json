@@ -1,0 +1,675 @@
+{
+  "id": "u08-l04",
+  "part": 1,
+  "unit": 8,
+  "lesson": 4,
+  "pages": [240, 247],
+  "groups": [
+    {
+      "no": 14,
+      "title": "“打”相关",
+      "pages": [240, 242],
+      "map": {
+        "w": "“打”相关",
+        "children": [
+          {"w": "tap", "children": [
+            {"w": "pat", "children": [
+              {"w": "passion", "rel": "相关", "children": [
+                {"w": "passionate", "rel": "扩"},
+                {"w": "enthusiasm", "rel": "近义", "children": [
+                  {"w": "enthusiast", "rel": "扩"},
+                  {"w": "enthusiastic", "rel": "扩"},
+                  {"w": "enthusiastically", "rel": "扩"}
+                ]},
+                {"w": "keen", "rel": "相关"}
+              ]}
+            ]}
+          ]},
+          {"w": "beat", "children": [{"w": "beast", "rel": "形近"}]},
+          {"w": "battle", "children": [
+            {"w": "fight", "children": [
+              {"w": "struggle", "children": [
+                {"w": "combat", "children": [{"w": "combative", "rel": "扩"}]}
+              ]}
+            ]}
+          ]},
+          {"w": "whip", "children": [
+            {"w": "conflict", "children": [
+              {"w": "confront", "children": [{"w": "confrontation", "rel": "扩"}]}
+            ]}
+          ]},
+          {"w": "hit", "children": [
+            {"w": "stroke", "children": [
+              {"w": "strike", "children": [
+                {"w": "striking", "rel": "扩", "children": [{"w": "strikingly"}]}
+              ]}
+            ]}
+          ]},
+          {"w": "hammer", "children": [
+            {"w": "punch", "children": [{"w": "brunch", "rel": "形近"}]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "tap", "freq": 1, "page": 240,
+          "prons": [{"ipa": "/tæp/", "senses": [
+            {"pos": "n.", "mean": "[[水龙头]]；旋塞；[[轻拍]]"},
+            {"pos": "v.", "mean": "[[轻敲，轻拍]]；[[开发，利用]]（资源、形势）"}
+          ]}],
+          "tip": {"type": "联想", "text": "ta（联想“他”）+ p（联想“拍”）→ “水龙头”不出水了，他“轻拍”了一下。"},
+          "ex": {"type": "真", "year": 2019, "en": "Scientists have tried to tap Internet donors, too, with mixed success.", "zh": "科学家们也试图利用互联网捐助者，但结果喜忧参半。", "key": ["tap"]},
+          "ext": []
+        },
+        {
+          "no": 2, "word": "pat", "freq": 1, "page": 240,
+          "prons": [{"ipa": "/pæt/", "senses": [{"pos": "v.", "mean": "[[轻拍，爱抚]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“拍它”→ 轻拍"},
+          "ex": {"type": "例", "en": "She patted the dog on the head.", "zh": "她轻轻地拍着狗的头。", "key": ["patted"]},
+          "ext": []
+        },
+        {
+          "no": 3, "word": "passion", "freq": 1, "page": 240,
+          "prons": [{"ipa": "/ˈpæʃn/", "senses": [{"pos": "n.", "mean": "[[激情，热情]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“拍心”→ 演讲者“激情”澎湃，说到动情处拍心（胸脯）表示诚意。"},
+          "ex": {"type": "例", "en": "I admire the passion and commitment shown by the players.", "zh": "我钦佩运动员们表现出的激情和承诺。", "key": ["passion"]},
+          "ext": [{"word": "passionate", "ipa": "/ˈpæʃənət/", "senses": [{"pos": "adj.", "mean": "易动情的；热烈的，激昂的"}]}]
+        },
+        {
+          "no": 4, "word": "enthusiasm", "freq": 1, "page": 240,
+          "prons": [{"ipa": "/ɪnˈθjuːziæzəm/", "senses": [{"pos": "n.", "mean": "[[热情]]；[[热忱]]；[[热心]]"}]}],
+          "tip": {"type": "构词", "text": "en-（进入某种状态）+ thus（神）+ -iasm（名词后缀）→ 完全入神，全情投入 → 热情"},
+          "ex": {"type": "真", "year": 2022, "en": "It breeds long-term passion and enthusiasm.", "zh": "它培养了长期的激情和热情。", "key": ["enthusiasm"]},
+          "ext": [
+            {"word": "enthusiast", "ipa": "/ɪnˈθjuːziæst/", "senses": [{"pos": "n.", "mean": "爱好者；狂热爱好者；热心者"}]},
+            {"word": "enthusiastic", "ipa": "/ɪnˌθjuːziˈæstɪk/", "senses": [{"pos": "adj.", "mean": "热情的；热心的；热烈的"}]},
+            {"word": "enthusiastically", "ipa": "/ɪnˌθjuːziˈæstɪkli/", "senses": [{"pos": "adv.", "mean": "热情地；热心地"}]}
+          ]
+        },
+        {
+          "no": 5, "word": "keen", "freq": 2, "page": 240,
+          "prons": [{"ipa": "/kiːn/", "senses": [{"pos": "adj.", "mean": "[[渴望的]]；[[热切的]]；热情的；强烈的"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“凯恩”→ 凯恩是英格兰著名足球运动员，球迷“渴望”见到他上场。"},
+          "ex": {"type": "真", "year": 2017, "en": "They are keen on high technology.", "zh": "他们热衷于高科技。", "key": ["keen on"]},
+          "ext": []
+        },
+        {
+          "no": 6, "word": "beat", "freq": 1, "page": 240,
+          "prons": [{"ipa": "/biːt/", "senses": [{"pos": "v.", "mean": "[[打]]；[[打败]]；[[赢]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“逼他”→ 成功的欲望逼他“打败”了对手。"},
+          "ex": {"type": "真", "year": 2018, "en": "Their children must excel and beat their white peers in academic settings so they have the same chances to excel later.", "zh": "他们的孩子必须在学业上超越并打败他们的白人同龄人，这样他们以后才有同样的机会出类拔萃。", "key": ["beat"]},
+          "ext": []
+        },
+        {
+          "no": 7, "word": "beast", "freq": 1, "page": 241,
+          "prons": [{"ipa": "/biːst/", "senses": [{"pos": "n.", "mean": "[[野兽]]；牲畜"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“逼死他”→ 把别人逼死了，是“野兽”的行径。"},
+          "ex": {"type": "真", "year": 2023, "en": "The villagers finally banded together and scared the beast away with firecrackers and drums.", "zh": "村民们最终团结起来，用爆竹和鼓把野兽吓跑了。", "key": ["beast"]},
+          "ext": []
+        },
+        {
+          "no": 8, "word": "battle", "freq": 1, "page": 241,
+          "prons": [{"ipa": "/ˈbætl/", "senses": [
+            {"pos": "n.", "mean": "[[战役]]；[[战斗]]"},
+            {"pos": "v.", "mean": "[[争论]]；[[斗争]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "bat（联想 beat）+ t（联想“他”）+ le（联想“了”）→ 打他了 → 战斗；斗争"},
+          "ex": {"type": "真", "year": 2021, "en": "In the battle against weight gain, people should pay more attention to exercise and less to what they eat and drink.", "zh": "在对抗体重增加的战斗中，人们应该多注意锻炼，少注意饮食。", "key": ["battle"]},
+          "ext": []
+        },
+        {
+          "no": 9, "word": "fight", "freq": 1, "page": 241,
+          "prons": [{"ipa": "/faɪt/", "senses": [{"pos": "v.", "mean": "[[打架]]；[[与……作斗争]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“罚他”→ 如果他“打架”，他妈妈就会惩罚他。"},
+          "ex": {"type": "真", "year": 2019, "en": "Online programs to fight depression are already commercially available.", "zh": "对抗抑郁症的在线程序已经上市了。", "key": ["fight"]},
+          "ext": []
+        },
+        {
+          "no": 10, "word": "struggle", "freq": 1, "page": 241,
+          "prons": [{"ipa": "/ˈstrʌɡl/", "senses": [
+            {"pos": "n.", "mean": "[[奋斗，努力]]"},
+            {"pos": "v.", "mean": "[[奋斗，努力]]；[[抗争]]；争夺"}
+          ]}],
+          "tip": {"type": "联想", "text": "stru（音似“死抓”）+ gg（联想“哥哥”）+ le（联想“了”）→ 他死死抓住哥哥的手，鼓励他与病魔“抗争”。"},
+          "ex": {"type": "真", "year": 2017, "en": "They struggle to satisfy the demands of both work and home.", "zh": "他们努力满足工作和家庭的需求。", "key": ["struggle"]},
+          "ext": []
+        },
+        {
+          "no": 11, "word": "combat", "freq": 2, "page": 241,
+          "prons": [{"ipa": "/ˈkɒmbæt/", "senses": [
+            {"pos": "v.", "mean": "[[防止]]；减轻；[[战斗]]"},
+            {"pos": "n.", "mean": "[[战斗，打仗]]"}
+          ]}],
+          "tip": {"type": "构词", "text": "com-（一起，都）+ bat（打）→ 战斗"},
+          "ex": {"type": "例", "en": "He was killed in combat.", "zh": "他在战斗中阵亡。", "key": ["combat"]},
+          "ext": [{"word": "combative", "ipa": "/ˈkɒmbətɪv/", "senses": [{"pos": "adj.", "mean": "好战的；好争论的"}]}]
+        },
+        {
+          "no": 12, "word": "whip", "freq": 1, "page": 241,
+          "prons": [{"ipa": "/wɪp/", "senses": [
+            {"pos": "n.", "mean": "[[鞭子]]"},
+            {"pos": "v.", "mean": "[[鞭策]]；[[鞭打]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "whi（音似 we）+ p（联想“扑”）→ 我们扑上去，把他手中的“鞭子”夺了过来，阻止他继续“鞭打”别人。"},
+          "ex": {"type": "例", "en": "In a Los Angeles Times article, one employee referred to the board as a \"digital whip\".", "zh": "在《洛杉矶时报》的一篇文章中，一名员工称该董事会为“数字鞭子”。", "key": ["whip"]},
+          "ext": []
+        },
+        {
+          "no": 13, "word": "conflict", "freq": 3, "page": 241,
+          "prons": [
+            {"ipa": "/ˈkɒnflɪkt/", "senses": [{"pos": "n.", "mean": "[[冲突]]，[[争执]]；[[战斗]]"}]},
+            {"ipa": "/kənˈflɪkt/", "senses": [{"pos": "v.", "mean": "[[冲突]]；[[抵触]]"}]}
+          ],
+          "tip": {"type": "联想", "text": "con-（都）+ fli（联想 fly）+ ct（音似“剋”）→ 所有人都飞奔过来剋（打）他，从而引发了肢体“冲突”。"},
+          "ex": {"type": "真", "year": 2023, "en": "In order to learn the art of persuasion at the workplace, you need to understand how to handle conflicts and reach agreements.", "zh": "为了在工作场所学习说服的艺术，你需要了解如何处理冲突和达成一致。", "key": ["conflicts"]},
+          "ext": []
+        },
+        {
+          "no": 14, "word": "confront", "freq": 2, "page": 241,
+          "prons": [{"ipa": "/kənˈfrʌnt/", "senses": [{"pos": "v.", "mean": "[[面临，面对]]；[[对抗]]；[[解决]]（问题或困境）"}]}],
+          "tip": {"type": "构词", "text": "con-（一起）+ front（面对）→ 一起面对 → 面对"},
+          "ex": {"type": "例", "en": "Most people when confronted with a horse will pat it.", "zh": "大多数人遇见马时都会轻轻地拍拍它。", "key": ["confronted with"]},
+          "ext": [{"word": "confrontation", "ipa": "/ˌkɒnfrʌnˈteɪʃn/", "senses": [{"pos": "n.", "mean": "对抗；冲突；对峙"}]}]
+        },
+        {
+          "no": 15, "word": "hit", "freq": 1, "page": 241,
+          "prons": [{"ipa": "/hɪt/", "senses": [
+            {"pos": "v.", "mean": "（用手或器具）[[打]]；[[撞到]]；[[达到]]"},
+            {"pos": "n.", "mean": "[[打]]；很受欢迎的人或事物"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The Britannic hit a naval mine in 1916 and subsequently sank as well.", "zh": "“不列颠尼克号”在1916年撞上了一枚水雷，随后也沉没了。", "key": ["hit"]},
+          "ext": []
+        },
+        {
+          "no": 16, "word": "strike", "freq": 2, "page": 241,
+          "prons": [{"ipa": "/straɪk/", "senses": [
+            {"pos": "v.", "mean": "[[打]]，[[击]]；[[突然发生]]；[[罢工]]"},
+            {"pos": "n.", "mean": "[[罢工]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "st（联想 street）+ rike（联想 rock）→ 摇滚乐队的鼓手在街上“击”鼓。"},
+          "ex": {"type": "真", "year": 2024, "en": "Its crew members went on strike.", "zh": "乘务组罢工了。", "key": ["strike"]},
+          "ext": []
+        },
+        {
+          "no": 17, "word": "striking", "freq": 2, "page": 242,
+          "prons": [{"ipa": "/ˈstraɪkɪŋ/", "senses": [{"pos": "adj.", "mean": "[[引人注目的]]；[[异乎寻常的]]；[[显著的]]"}]}],
+          "tip": {"type": "构词", "text": "strik（= strike）+ -ing（形容词后缀）→ 引人注目的"},
+          "ex": {"type": "例", "en": "The similarities between the two cases are striking.", "zh": "这两个案例之间的相似之处是惊人的。", "key": ["striking"]},
+          "ext": [{"word": "strikingly", "ipa": "/ˈstraɪkɪŋli/", "senses": [{"pos": "adv.", "mean": "引人注目地，醒目地"}]}]
+        },
+        {
+          "no": 18, "word": "stroke", "freq": 1, "page": 242,
+          "prons": [{"ipa": "/strəʊk/", "senses": [
+            {"pos": "v.", "mean": "[[抚摸]]；[[击球，击打]]"},
+            {"pos": "n.", "mean": "[[抚摸]]；[[中风]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "吸烟（smoke）会增加中风（stroke）的风险。"},
+          "ex": {"type": "例", "en": "What a beautiful stroke!", "zh": "多漂亮的击球动作啊！", "key": ["stroke"]},
+          "ext": []
+        },
+        {
+          "no": 19, "word": "hammer", "freq": 1, "page": 242,
+          "prons": [{"ipa": "/ˈhæmə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[锤子]]，榔头"},
+            {"pos": "v.", "mean": "[[锤打]]；敲打"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“海摸”→ 他赶海的时候，在海里摸到一把“锤子”。"},
+          "ex": {"type": "例", "en": "Smash the car window with a hammer when in danger.", "zh": "在有危险时，要用锤子砸碎车窗。", "key": ["hammer"]},
+          "ext": []
+        },
+        {
+          "no": 20, "word": "punch", "freq": 1, "page": 242,
+          "prons": [{"ipa": "/pʌntʃ/", "senses": [
+            {"pos": "n.", "mean": "[[重拳击打]]"},
+            {"pos": "v.", "mean": "[[拳打]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“乓啧”→“重拳击打”到麻袋上会发出类似“乓啧”的声音。"},
+          "ex": {"type": "例", "en": "He also figured out a new way to make a punch look real.", "zh": "他还想出一个新办法，让出拳看起来像真的一样。", "key": ["punch"]},
+          "ext": []
+        },
+        {
+          "no": 21, "word": "brunch", "freq": 1, "page": 242,
+          "prons": [{"ipa": "/brʌntʃ/", "senses": [{"pos": "n.", "mean": "[[早午餐]]"}]}],
+          "tip": {"type": "构词", "text": "br（= breakfast）+ unch（= lunch）→ 早午餐"},
+          "ex": {"type": "例", "en": "What did you have for your brunch?", "zh": "你早午餐吃了些什么？", "key": ["brunch"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 15,
+      "title": "“争论、说明”相关",
+      "pages": [242, 244],
+      "map": {
+        "w": "“争论、说明”相关",
+        "children": [
+          {"w": "debate", "children": [
+            {"w": "argument", "children": [
+              {"w": "dispute", "children": [{"w": "disputable", "rel": "扩"}]}
+            ]}
+          ]},
+          {"w": "hint", "children": [
+            {"w": "demonstrate", "children": [
+              {"w": "demonstrative", "rel": "扩", "children": [{"w": "demonstration"}]},
+              {"w": "demo", "rel": "相关"}
+            ]}
+          ]},
+          {"w": "explain", "children": [
+            {"w": "explanation", "rel": "扩", "children": [{"w": "explanatory"}]}
+          ]},
+          {"w": "illustrate", "children": [
+            {"w": "illustration", "rel": "扩", "children": [{"w": "illustrative"}]}
+          ]},
+          {"w": "imply", "children": [
+            {"w": "implication", "rel": "扩"},
+            {"w": "implicit", "rel": "相关", "children": [
+              {"w": "explicit", "rel": "反义", "children": [
+                {"w": "convey", "rel": "相关", "children": [
+                  {"w": "conveyance", "rel": "扩"},
+                  {"w": "survey", "rel": "相关", "children": [
+                    {"w": "statistic", "rel": "相关", "children": [{"w": "statistical", "rel": "扩"}]},
+                    {"w": "data", "rel": "相关", "children": [
+                      {"w": "datum", "rel": "扩"},
+                      {"w": "database", "rel": "扩"}
+                    ]},
+                    {"w": "finding", "rel": "相关", "children": [{"w": "find", "rel": "扩"}]},
+                    {"w": "investigate", "rel": "近义", "children": [
+                      {"w": "investigation", "rel": "扩"},
+                      {"w": "invest", "rel": "相关", "children": [{"w": "investment", "rel": "扩"}]}
+                    ]}
+                  ]}
+                ]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 22, "word": "debate", "freq": 3, "page": 242,
+          "prons": [{"ipa": "/dɪˈbeɪt/", "senses": [
+            {"pos": "n.", "mean": "（各自发表不同意见的）[[争论]]；讨论"},
+            {"pos": "v.", "mean": "（尤指正式）讨论，[[辩论]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "de-（往下）+ bate（联想 beat）→ 把对手往下打 → 争论；辩论"},
+          "ex": {"type": "真", "year": 2022, "en": "In the age of the Internet, there's no such thing as a private debate.", "zh": "在互联网时代，没有所谓的私人辩论。", "key": ["debate"]},
+          "ext": []
+        },
+        {
+          "no": 23, "word": "dispute", "freq": 3, "page": 243,
+          "prons": [
+            {"ipa": "/dɪˈspjuːt; ˈdɪspjuːt/", "senses": [{"pos": "n.", "mean": "[[争论，辩论]]；争端"}]},
+            {"ipa": "/dɪˈspjuːt/", "senses": [{"pos": "v.", "mean": "[[对……提出质询]]；[[对……表示异议（或怀疑）]]"}]}
+          ],
+          "tip": {"type": "构词", "text": "dis-（分开）+ pute（考虑）→ 想法不一；各执己见 → 争论"},
+          "ex": {"type": "真", "year": 2017, "en": "Men are more likely to face that dispute from the perspective of what benefits them most.", "zh": "从对他们最有利的角度来看，男性更有可能面对那种争论。", "key": ["dispute"]},
+          "ext": [{"word": "disputable", "ipa": "/dɪˈspjuːtəbl/", "senses": [{"pos": "adj.", "mean": "可质疑的；可商榷的"}]}]
+        },
+        {
+          "no": 24, "word": "argument", "freq": 1, "page": 243,
+          "prons": [{"ipa": "/ˈɑːɡjumənt/", "senses": [{"pos": "n.", "mean": "[[争论]]；[[辩论]]；论据"}]}],
+          "tip": {"type": "联想", "text": "argu（联想“阿哥”）+ -ment（名词后缀）→ 阿哥喜欢“辩论”。"},
+          "ex": {"type": "真", "year": 2023, "en": "The problem with this argument is that most children aren't playing outside or even spending time with other kids.", "zh": "这个论点的问题是，大多数孩子都没有在外面玩，甚至没有花时间和其他孩子在一起。", "key": ["argument"]},
+          "ext": []
+        },
+        {
+          "no": 25, "word": "hint", "freq": 1, "page": 243,
+          "prons": [{"ipa": "/hɪnt/", "senses": [{"pos": "n. & v.", "mean": "[[暗示，提示]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“恨他”→ 她的眼神“暗示”她很恨他。"},
+          "ex": {"type": "例", "en": "Should I drop a hint to Matt?", "zh": "我应该给马特一点暗示吗？", "key": ["hint"]},
+          "ext": []
+        },
+        {
+          "no": 26, "word": "demonstrate", "freq": 2, "page": 243,
+          "prons": [{"ipa": "/ˈdemənstreɪt/", "senses": [{"pos": "v.", "mean": "[[证明]]；[[论证]]；[[说明]]；[[表现]]"}]}],
+          "tip": {"type": "联想", "text": "demon（精力充沛的人）+ st（联想 street）+ rate（速度）→ 一群精力充沛的人在街上以很快的速度奔跑，“证明”自己的能力。"},
+          "ex": {"type": "真", "year": 2020, "en": "New research demonstrates why playing with blocks might have been time better spent.", "zh": "新的研究证明了为什么玩积木或许可以更好地消磨时间。", "key": ["demonstrates"]},
+          "ext": [
+            {"word": "demonstrative", "ipa": "/dɪˈmɒnstrətɪv/", "senses": [{"pos": "adj.", "mean": "感情外露的；指示的"}, {"pos": "n.", "mean": "指示代词；限定词"}]},
+            {"word": "demonstration", "ipa": "/ˌdemənˈstreɪʃn/", "senses": [{"pos": "n.", "mean": "论证；示范；游行示威；表示"}]}
+          ]
+        },
+        {
+          "no": 27, "word": "demo", "freq": 1, "page": 243,
+          "prons": [{"ipa": "/ˈdeməʊ/", "senses": [
+            {"pos": "n.", "mean": "游行示威；[[示范，演示]]；样品"},
+            {"pos": "v.", "mean": "试用；[[演示]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "He demoed the new program he had just created.", "zh": "他演示了他刚编写的新程序。", "key": ["demoed"]},
+          "ext": []
+        },
+        {
+          "no": 28, "word": "explain", "freq": 1, "page": 243,
+          "prons": [{"ipa": "/ɪkˈspleɪn/", "senses": [{"pos": "v.", "mean": "[[解释]]；[[说明]]；阐明"}]}],
+          "tip": {"type": "构词", "text": "ex-（出来）+ plain（清晰的）→ 清晰地说出来 → 解释"},
+          "ex": {"type": "例", "en": "First, I'll explain the rules of the game.", "zh": "首先，我要说明一下游戏规则。", "key": ["explain"]},
+          "ext": [
+            {"word": "explanation", "ipa": "/ˌekspləˈneɪʃn/", "senses": [{"pos": "n.", "mean": "解释；说明；阐述"}]},
+            {"word": "explanatory", "ipa": "/ɪkˈsplænətri/", "senses": [{"pos": "adj.", "mean": "解释的；说明的；阐述的"}]}
+          ]
+        },
+        {
+          "no": 29, "word": "illustrate", "freq": 2, "page": 243,
+          "prons": [{"ipa": "/ˈɪləstreɪt/", "senses": [{"pos": "v.", "mean": "（用示例、图画等）[[说明，解释]]"}]}],
+          "tip": {"type": "联想", "text": "ill（有病的）+ us（我们）+ trate（联想 trait）→ 他向我们举例“说明”有这种病的人的特征。"},
+          "ex": {"type": "例", "en": "His success clearly illustrates the emergence of a huge sharing economy.", "zh": "他的成功清楚地说明了一种巨大的共享经济的出现。", "key": ["illustrates"]},
+          "ext": [
+            {"word": "illustration", "ipa": "/ˌɪləˈstreɪʃn/", "senses": [{"pos": "n.", "mean": "图解；图示；例释；插图"}]},
+            {"word": "illustrative", "ipa": "/ˈɪləstrətɪv/", "senses": [{"pos": "adj.", "mean": "说明的；解释性的"}]}
+          ]
+        },
+        {
+          "no": 30, "word": "imply", "freq": 3, "page": 243,
+          "prons": [{"ipa": "/ɪmˈplaɪ/", "senses": [{"pos": "v.", "mean": "[[暗示]]；[[表明]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "What does the author imply about the classes at present?", "zh": "关于目前的课程，作者暗示了什么？", "key": ["imply"]},
+          "ext": [{"word": "implication", "ipa": "/ˌɪmplɪˈkeɪʃn/", "senses": [{"pos": "n.", "mean": "含意；可能的影响（或作用、结果）"}]}]
+        },
+        {
+          "no": 31, "word": "implicit", "freq": 1, "page": 244,
+          "prons": [{"ipa": "/ɪmˈplɪsɪt/", "senses": [{"pos": "adj.", "mean": "[[含蓄的，不直接的]]；内含的；完全的"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The point is to use the results of this study to open up meaningful dialogues on implicit gender bias.", "zh": "关键在于利用这项研究的结果，就隐含的性别偏见展开有意义的对话。", "key": ["implicit"]},
+          "ext": []
+        },
+        {
+          "no": 32, "word": "explicit", "freq": 1, "page": 244,
+          "prons": [{"ipa": "/ɪkˈsplɪsɪt/", "senses": [{"pos": "adj.", "mean": "[[明确的]]；[[清楚的]]"}]}],
+          "tip": {"type": "联想", "text": "ex-（向外）+ plicit（联想 implicit）→ 不含蓄的 → 明确的；清楚的"},
+          "ex": {"type": "例", "en": "Parents and teachers can help children by providing explicit instruction.", "zh": "父母和老师可以通过提供明确的指导来帮助孩子。", "key": ["explicit"]},
+          "ext": []
+        },
+        {
+          "no": 33, "word": "convey", "freq": 2, "page": 244,
+          "prons": [{"ipa": "/kənˈveɪ/", "senses": [{"pos": "v.", "mean": "[[表达]]，[[传递]]；[[运送]]，[[输送]]"}]}],
+          "tip": {"type": "联想", "text": "con-（所有的）+ vey（联想 way）→ 所有的东西都已在路上“运送”了。"},
+          "ex": {"type": "真", "year": 2016, "en": "This is your chance to convey boundless enthusiasm for the subject.", "zh": "这是你表达对这门学科无限热情的机会。", "key": ["convey"]},
+          "ext": [{"word": "conveyance", "ipa": "/kənˈveɪəns/", "senses": [{"pos": "n.", "mean": "传送；运送"}]}]
+        },
+        {
+          "no": 34, "word": "survey", "freq": 2, "page": 244,
+          "prons": [
+            {"ipa": "/ˈsɜːveɪ/", "senses": [{"pos": "n.", "mean": "[[民意调查]]；总体研究"}]},
+            {"ipa": "/səˈveɪ/", "senses": [{"pos": "v.", "mean": "[[审视]]；[[调查]]"}]}
+          ],
+          "tip": {"type": "联想", "text": "sur-（上面）+ vey（联想 way）→ 他们正在路上“调查”真相。"},
+          "ex": {"type": "真", "year": 2021, "en": "The survey allowed for reading materials on a digital device.", "zh": "这项调查允许在数字设备上阅读材料。", "key": ["survey"]},
+          "ext": []
+        },
+        {
+          "no": 35, "word": "invest", "freq": 3, "page": 244,
+          "prons": [{"ipa": "/ɪnˈvest/", "senses": [{"pos": "v.", "mean": "[[投资]]；授予"}]}],
+          "tip": {"type": "联想", "text": "in-（进入）+ vest（联想 west）→ 深入推进西部大开发需要大量“投资”。"},
+          "ex": {"type": "真", "year": 2022, "en": "They need to invest more in hospital staff and facilities.", "zh": "他们需要在医院人员和设施方面加大投资。", "key": ["invest"]},
+          "ext": [{"word": "investment", "ipa": "/ɪnˈvestmənt/", "senses": [{"pos": "n.", "mean": "投资；投资额；（时间、精力的）投入"}]}]
+        },
+        {
+          "no": 36, "word": "investigate", "freq": 1, "page": 244,
+          "prons": [{"ipa": "/ɪnˈvestɪɡeɪt/", "senses": [{"pos": "v.", "mean": "[[调查]]；[[研究]]"}]}],
+          "tip": {"type": "联想", "text": "invest（投资）+ i（我）+ gate（门）→ 我投资前会先在对方门口做“调查”。"},
+          "ex": {"type": "例", "en": "The report calls for a commission to investigate the matter further.", "zh": "该报告呼吁成立一个委员会来进一步调查此事。", "key": ["investigate"]},
+          "ext": [{"word": "investigation", "ipa": "/ɪnˌvestɪˈɡeɪʃn/", "senses": [{"pos": "n.", "mean": "调查；研究"}]}]
+        },
+        {
+          "no": 37, "word": "statistic", "freq": 2, "page": 244,
+          "prons": [{"ipa": "/stəˈtɪstɪk/", "senses": [{"pos": "n.", "mean": "[[统计数字]]；[[统计学]]；（一项）[[统计数据]]"}]}],
+          "tip": {"type": "联想", "text": "sta（联想 star）+ ti（联想“踢”）+ stic（联想 stick）→ 那个人即使踢到了木棍，依然仰望星空，因为他试图统计星星的数量 → 统计学"},
+          "ex": {"type": "例", "en": "A man who can recite sports statistics from 30 years ago, may not remember to drop a letter in the mailbox.", "zh": "一个能背诵30年前体育统计数据的人，可能不记得要往邮箱里投一封信。", "key": ["statistics"]},
+          "ext": [{"word": "statistical", "ipa": "/stəˈtɪstɪkl/", "senses": [{"pos": "adj.", "mean": "统计的；统计学的"}]}]
+        },
+        {
+          "no": 38, "word": "data", "freq": 3, "page": 244,
+          "prons": [{"ipa": "/ˈdeɪtə/", "senses": [{"pos": "n.", "mean": "[[资料]]；[[数据]]（datum 的复数）"}]}],
+          "tip": {"type": "对照", "text": "把数据（data）按照日期（date）顺序保存起来。"},
+          "ex": {"type": "真", "year": 2021, "en": "Coca-cola also released data detailing its funding.", "zh": "可口可乐还公布了详细的资金数据。", "key": ["data"]},
+          "ext": [
+            {"word": "datum", "ipa": "/ˈdeɪtəm/", "senses": [{"pos": "n.", "mean": "数据；资料"}]},
+            {"word": "database", "ipa": "/ˈdeɪtəbeɪs/", "senses": [{"pos": "n.", "mean": "（储存在计算机中的）数据库"}]}
+          ]
+        },
+        {
+          "no": 39, "word": "finding", "freq": 3, "page": 244,
+          "prons": [{"ipa": "/ˈfaɪndɪŋ/", "senses": [{"pos": "n.", "mean": "[[调查发现]]；[[调研结果]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "These findings suggest that there is no direct link between unemployment and crime.", "zh": "这些调研结果表明失业和犯罪之间没有直接联系。", "key": ["findings"]},
+          "ext": [{"word": "find", "ipa": "/faɪnd/", "senses": [{"pos": "v.", "mean": "发现；找到；查明；感到；发觉"}, {"pos": "n.", "mean": "发现物；被发现的人"}]}]
+        }
+      ]
+    },
+    {
+      "no": 16,
+      "title": "sent 相关",
+      "pages": [245, 247],
+      "map": {
+        "w": "sent 相关",
+        "children": [
+          {"w": "consent", "children": [
+            {"w": "resent", "children": [{"w": "resentment", "rel": "扩"}]}
+          ]},
+          {"w": "present", "children": [
+            {"w": "presence", "rel": "扩", "children": [
+              {"w": "presentation", "children": [{"w": "presently"}]}
+            ]}
+          ]},
+          {"w": "represent", "children": [
+            {"w": "representation", "rel": "扩", "children": [{"w": "representative"}]},
+            {"w": "behalf", "rel": "相关"}
+          ]},
+          {"w": "absent", "children": [
+            {"w": "absence", "rel": "扩"},
+            {"w": "missing", "rel": "相关"},
+            {"w": "exist", "rel": "相关", "children": [
+              {"w": "existence", "rel": "扩"},
+              {"w": "existing", "rel": "扩"}
+            ]},
+            {"w": "punctual", "rel": "相关", "children": [
+              {"w": "punctuality", "rel": "扩"},
+              {"w": "postpone", "rel": "相关", "children": [
+                {"w": "postponement", "rel": "扩"},
+                {"w": "post", "rel": "拆分", "children": [
+                  {"w": "postage", "rel": "扩"},
+                  {"w": "poster", "rel": "扩"},
+                  {"w": "postman", "rel": "扩"},
+                  {"w": "postcard", "rel": "合成"}
+                ]},
+                {"w": "delay", "rel": "近义"},
+                {"w": "certificate", "rel": "相关", "children": [
+                  {"w": "certain", "rel": "相关", "children": [
+                    {"w": "certainly", "rel": "扩"},
+                    {"w": "certainty", "rel": "扩"}
+                  ]},
+                  {"w": "licence", "rel": "相关"},
+                  {"w": "diploma", "rel": "相关", "children": [
+                    {"w": "diplomat", "rel": "形近", "children": [
+                      {"w": "diplomatic", "rel": "扩"},
+                      {"w": "diplomacy", "rel": "扩"},
+                      {"w": "embassy", "rel": "相关", "children": [{"w": "ambassador"}]}
+                    ]}
+                  ]}
+                ]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 40, "word": "consent", "freq": 1, "page": 245,
+          "prons": [{"ipa": "/kənˈsent/", "senses": [{"pos": "n. & v.", "mean": "[[同意]]；[[准许]]"}]}],
+          "tip": {"type": "联想", "text": "con-（都）+ sent（send 的过去式）→ 我问他能否把所有玩具都送给我，他“同意”了。"},
+          "ex": {"type": "例", "en": "You should not be afraid to show it or drastically change your behaviors—just ask for consent beforehand!", "zh": "你不应该害怕表现出来或彻底改变你的行为——只要事先征得同意就行了！", "key": ["consent"]},
+          "ext": []
+        },
+        {
+          "no": 41, "word": "resent", "freq": 1, "page": 245,
+          "prons": [{"ipa": "/rɪˈzent/", "senses": [{"pos": "v.", "mean": "[[怨恨]]；[[感到气愤]]"}]}],
+          "tip": {"type": "联想", "text": "re-（重复）+ sent（send 的过去式）→ 这个网站反复给我推送广告，真是让人生气 → 感到气愤"},
+          "ex": {"type": "例", "en": "It is only natural that he should resent you.", "zh": "他怨恨你是很自然的事。", "key": ["resent"]},
+          "ext": [{"word": "resentment", "ipa": "/rɪˈzentmənt/", "senses": [{"pos": "n.", "mean": "愤恨，怨恨，不满"}]}]
+        },
+        {
+          "no": 42, "word": "present", "freq": 1, "page": 245,
+          "prons": [
+            {"ipa": "/prɪˈzent/", "senses": [{"pos": "v.", "mean": "[[提出]]；[[颁发]]；[[展示]]"}]},
+            {"ipa": "/ˈpreznt/", "senses": [
+              {"pos": "adj.", "mean": "[[出席的]]；[[现在的]]；[[存在的]]"},
+              {"pos": "n.", "mean": "[[礼物]]；[[现在]]"}
+            ]}
+          ],
+          "tip": {"type": "联想", "text": "pre-（提前）+ sent（send 的过去式）→ 提前“出席的”人获得了举办方送的“礼物”。"},
+          "ex": {"type": "真", "year": 2015, "en": "They present their views clearly and explicitly.", "zh": "他们清楚而明确地提出自己的观点。", "key": ["present"]},
+          "ext": [
+            {"word": "presence", "ipa": "/ˈprezns/", "senses": [{"pos": "n.", "mean": "在场；出席；出现；存在"}]},
+            {"word": "presentation", "ipa": "/ˌpreznˈteɪʃn/", "senses": [{"pos": "n.", "mean": "介绍会；发布会；提交；授予；颁发；出示；幻灯片演示"}]},
+            {"word": "presently", "ipa": "/ˈprezntli/", "senses": [{"pos": "adv.", "mean": "此刻；现在；眼下"}]}
+          ]
+        },
+        {
+          "no": 43, "word": "represent", "freq": 3, "page": 245,
+          "prons": [{"ipa": "/ˌreprɪˈzent/", "senses": [{"pos": "v.", "mean": "[[代表]]；[[作为……的代言人]]；[[维护……的利益]]"}]}],
+          "tip": {"type": "构词", "text": "re-（重复）+ present（展示）→ 重复展示 → 代表；作为……的代言人"},
+          "ex": {"type": "真", "year": 2016, "en": "Red, however, does not always represent good luck and happiness.", "zh": "然而，红色并不总是代表好运和幸福。", "key": ["represent"]},
+          "ext": [
+            {"word": "representation", "ipa": "/ˌreprɪzenˈteɪʃn/", "senses": [{"pos": "n.", "mean": "代表；描述"}]},
+            {"word": "representative", "ipa": "/ˌreprɪˈzentətɪv/", "senses": [{"pos": "n.", "mean": "代表，代理人"}, {"pos": "adj.", "mean": "典型的，有代表性的"}]}
+          ]
+        },
+        {
+          "no": 44, "word": "behalf", "freq": 1, "page": 245,
+          "prons": [{"ipa": "/bɪˈhɑːf/", "senses": [{"pos": "n.", "mean": "[[代表]]；[[利益]]"}]}],
+          "tip": {"type": "联想", "text": "be（是）+ half（一半）→ 我是一半群体的“代表”。"},
+          "ex": {"type": "真", "year": 2021, "en": "It has ignored campaigns on behalf of the left-handed.", "zh": "它忽视了左利手的权益运动。", "key": ["on behalf of"]},
+          "ext": []
+        },
+        {
+          "no": 45, "word": "absent", "freq": 1, "page": 246,
+          "prons": [{"ipa": "/ˈæbsənt/", "senses": [{"pos": "adj.", "mean": "[[缺席的]]；不存在的"}]}],
+          "tip": {"type": "联想", "text": "ab-（否定前缀）+ sent（send 的过去式）→ 因为我今天没送孩子去上学，所以她缺席了 → 缺席的"},
+          "ex": {"type": "例", "en": "The man was absent from the weekly meeting.", "zh": "这个人缺席了周会。", "key": ["absent"]},
+          "ext": [{"word": "absence", "ipa": "/ˈæbsəns/", "senses": [{"pos": "n.", "mean": "缺席"}]}]
+        },
+        {
+          "no": 46, "word": "missing", "freq": 1, "page": 246,
+          "prons": [{"ipa": "/ˈmɪsɪŋ/", "senses": [{"pos": "adj.", "mean": "[[不在的]]；[[丢失的]]；缺少的"}]}],
+          "tip": {"type": "构词", "text": "miss（不在，错过）+ -ing（形容词后缀）→ 不在的"},
+          "ex": {"type": "真", "year": 2021, "en": "He found the 60 pounds in his pocket missing.", "zh": "他发现口袋里的60英镑不见了。", "key": ["missing"]},
+          "ext": []
+        },
+        {
+          "no": 47, "word": "exist", "freq": 1, "page": 246,
+          "prons": [{"ipa": "/ɪɡˈzɪst/", "senses": [{"pos": "v.", "mean": "[[存在]]；（尤指在困境或贫困中）[[生存]]；生活"}]}],
+          "tip": {"type": "联想", "text": "ex-（出）+ ist（联想 sist，站立）→ 站出来，出现 → 存在"},
+          "ex": {"type": "真", "year": 2023, "en": "They still existed six months after the course ended.", "zh": "课程结束六个月后，它们仍然存在。", "key": ["existed"]},
+          "ext": [
+            {"word": "existence", "ipa": "/ɪɡˈzɪstəns/", "senses": [{"pos": "n.", "mean": "存在；（尤指艰难或无聊的）生活；生活方式"}]},
+            {"word": "existing", "ipa": "/ɪɡˈzɪstɪŋ/", "senses": [{"pos": "adj.", "mean": "现行的；现存的"}]}
+          ]
+        },
+        {
+          "no": 48, "word": "punctual", "freq": 1, "page": 246,
+          "prons": [{"ipa": "/ˈpʌŋktʃuəl/", "senses": [{"pos": "adj.", "mean": "[[准时的]]；[[守时的]]"}]}],
+          "tip": {"type": "联想", "text": "punct（联想“怕个糗”）+ -ual（形容词后缀）→ 上课“准时的”人不怕迟到出糗。"},
+          "ex": {"type": "例", "en": "They should make sure their children are always punctual for school.", "zh": "他们应该确保他们的孩子总是准时上学。", "key": ["punctual"]},
+          "ext": [{"word": "punctuality", "ipa": "/ˌpʌŋktʃuˈæləti/", "senses": [{"pos": "n.", "mean": "准时"}]}]
+        },
+        {
+          "no": 49, "word": "postpone", "freq": 2, "page": 246,
+          "prons": [{"ipa": "/pəˈspəʊn/", "senses": [{"pos": "v.", "mean": "[[延迟]]；延期"}]}],
+          "tip": {"type": "联想", "text": "post（邮寄）+ pone（联想 phone）→ 别人邮寄给我的手机因故“延迟”送达。"},
+          "ex": {"type": "例", "en": "Millennials seem to be extending this phase of life as they postpone marriage.", "zh": "千禧一代似乎通过推迟结婚来延长这一人生阶段。", "key": ["postpone"]},
+          "ext": [
+            {"word": "postponement", "ipa": "/pəˈspəʊnmənt/", "senses": [{"pos": "n.", "mean": "推迟"}]},
+            {"word": "post", "ipa": "/pəʊst/", "senses": [{"pos": "n.", "mean": "邮政；邮件；哨所，岗位"}, {"pos": "v.", "mean": "邮寄；张贴"}]},
+            {"word": "poster", "ipa": "/ˈpəʊstə(r)/", "senses": [{"pos": "n.", "mean": "招贴画，海报"}]},
+            {"word": "postman", "ipa": "/ˈpəʊstmən/", "senses": [{"pos": "n.", "mean": "邮递员；邮差"}]}
+          ]
+        },
+        {
+          "no": 50, "word": "postage", "freq": 1, "page": 246,
+          "prons": [{"ipa": "/ˈpəʊstɪdʒ/", "senses": [{"pos": "n.", "mean": "[[邮费]]；[[邮寄]]"}]}],
+          "tip": {"type": "联想", "text": "post（邮寄）+ age（年代）→ 那个年代，“邮寄”东西的“邮费”很低。"},
+          "ex": {"type": "例", "en": "The virtues of physical fitness are shown on magazine covers, postage stamps, and television ads.", "zh": "杂志封面、邮票、电视广告里都展示了健身的优点。", "key": ["postage"]},
+          "ext": []
+        },
+        {
+          "no": 51, "word": "postcard", "freq": 1, "page": 246,
+          "prons": [{"ipa": "/ˈpəʊstkɑːd/", "senses": [{"pos": "n.", "mean": "[[明信片]]"}]}],
+          "tip": {"type": "构词", "text": "post（邮寄）+ card（卡片）→ 可以邮寄的卡片 → 明信片"},
+          "ex": {"type": "例", "en": "Send your answers on a postcard to the above address.", "zh": "把答案写在明信片上，寄到上述地址。", "key": ["postcard"]},
+          "ext": []
+        },
+        {
+          "no": 52, "word": "delay", "freq": 3, "page": 246,
+          "prons": [{"ipa": "/dɪˈleɪ/", "senses": [
+            {"pos": "n.", "mean": "[[延期]]，延误"},
+            {"pos": "v.", "mean": "[[延期]]；[[推迟]]"}
+          ]}],
+          "tip": {"type": "构词", "text": "de-（往下）+ lay（放）→ 把一件事情往下放 → 延期；推迟"},
+          "ex": {"type": "真", "year": 2015, "en": "They should learn to delay gratification so that they can pursue abstract goals, like going to college.", "zh": "他们应该学会延迟满足，这样他们就可以追求抽象的目标，比如上大学。", "key": ["delay"]},
+          "ext": []
+        },
+        {
+          "no": 53, "word": "certificate", "freq": 2, "page": 247,
+          "prons": [{"ipa": "/səˈtɪfɪkət/", "senses": [{"pos": "n.", "mean": "[[证书，证明书]]"}]}],
+          "tip": {"type": "对照", "text": "他需要一个证书（certificate）来证明（certify）他的专业能力。"},
+          "ex": {"type": "真", "year": 2023, "en": "They can take all of the platform's classes and obtain professional certificates for free.", "zh": "他们可以免费参加该平台的所有课程，并获得专业证书。", "key": ["certificates"]},
+          "ext": []
+        },
+        {
+          "no": 54, "word": "certain", "freq": 1, "page": 247,
+          "prons": [{"ipa": "/ˈsɜːtn/", "senses": [
+            {"pos": "adj.", "mean": "[[某一]]；[[确定的]]"},
+            {"pos": "pron.", "mean": "[[某些]]"}
+          ]}],
+          "tip": {"type": "构词", "text": "cert（确定）+ -ain（后缀）→ 确定的"},
+          "ex": {"type": "真", "year": 2023, "en": "Sometimes, rational analysis and data are impractical to be employed in certain situations.", "zh": "有时，在某些情况下，理性分析和数据是不切实际的。", "key": ["certain"]},
+          "ext": [
+            {"word": "certainly", "ipa": "/ˈsɜːtnli/", "senses": [{"pos": "adv.", "mean": "当然；肯定；无疑"}]},
+            {"word": "certainty", "ipa": "/ˈsɜːtnti/", "senses": [{"pos": "n.", "mean": "确信；确实；确定性；确实的事；必然的事"}]}
+          ]
+        },
+        {
+          "no": 55, "word": "licence", "alt": "-se", "freq": 1, "page": 247,
+          "prons": [{"ipa": "/ˈlaɪsns/", "senses": [{"pos": "n.", "mean": "[[执照]]，[[许可证]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“来审视”→ 驾照和“执照”都需要定期接受审查。"},
+          "ex": {"type": "真", "year": 2023, "en": "You also have to take the time to apply for your marriage licence.", "zh": "你还得花点时间去申请结婚证。", "key": ["licence"]},
+          "ext": []
+        },
+        {
+          "no": 56, "word": "diploma", "freq": 1, "page": 247,
+          "prons": [{"ipa": "/dɪˈpləʊmə/", "senses": [{"pos": "n.", "mean": "[[毕业文凭]]；[[学位证书]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“弟扑了妈”→ 弟弟拿到“毕业文凭”后，激动地扑向了妈妈。"},
+          "ex": {"type": "例", "en": "She is taking a diploma in management studies.", "zh": "她在攻读管理学文凭课程。", "key": ["diploma"]},
+          "ext": []
+        },
+        {
+          "no": 57, "word": "diplomat", "freq": 2, "page": 247,
+          "prons": [{"ipa": "/ˈdɪpləmæt/", "senses": [{"pos": "n.", "mean": "[[外交官]]"}]}],
+          "tip": {"type": "联想", "text": "diploma（毕业文凭）+ t（联想“他”）→ 他拿到毕业文凭以后成为一名“外交官”。"},
+          "ex": {"type": "例", "en": "His creations soon captured the discriminating eye of a French diplomat.", "zh": "他的作品很快就吸引了一位有鉴赏力的法国外交官的注意。", "key": ["diplomat"]},
+          "ext": [
+            {"word": "diplomatic", "ipa": "/ˌdɪpləˈmætɪk/", "senses": [{"pos": "adj.", "mean": "外交的；老练的"}]},
+            {"word": "diplomacy", "ipa": "/dɪˈpləʊməsi/", "senses": [{"pos": "n.", "mean": "外交；外交技巧；外交手腕"}]}
+          ]
+        },
+        {
+          "no": 58, "word": "embassy", "freq": 1, "page": 247,
+          "prons": [{"ipa": "/ˈembəsi/", "senses": [{"pos": "n.", "mean": "[[大使馆]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“俺办事”→ 我办理领事认证的地方是“大使馆”。"},
+          "ex": {"type": "例", "en": "He drove past the embassy the other day.", "zh": "前几天他开车经过大使馆。", "key": ["embassy"]},
+          "ext": []
+        },
+        {
+          "no": 59, "word": "ambassador", "freq": 1, "page": 247,
+          "prons": [{"ipa": "/æmˈbæsədə(r)/", "senses": [{"pos": "n.", "mean": "[[大使]]"}]}],
+          "tip": {"type": "对照", "text": "大使馆（embassy）里面有大使（ambassador）。"},
+          "ex": {"type": "真", "year": 2017, "en": "It was donated by a U.S. ambassador.", "zh": "它是由一位美国大使捐赠的。", "key": ["ambassador"]},
+          "ext": []
+        }
+      ]
+    }
+  ],
+  "unit_summary": {"groups": 16, "words": 241, "ext": 164, "zhen": 111, "li": 130}
+}
