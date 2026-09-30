@@ -1,0 +1,737 @@
+{
+  "id": "u01-l03",
+  "part": 1,
+  "unit": 1,
+  "lesson": 3,
+  "pages": [14, 21],
+  "groups": [
+    {
+      "no": 8,
+      "title": "ce 相关",
+      "pages": [14, 15],
+      "map": {
+        "w": "ce 相关",
+        "children": [
+          {"w": "ancestor", "children": [
+            {"w": "ancestry", "rel": "扩"},
+            {"w": "ancient", "rel": "相关", "children": [{"w": "consensus"}]}
+          ]},
+          {"w": "proceed", "children": [
+            {"w": "proceeding", "rel": "扩"},
+            {"w": "procession", "rel": "相关", "children": [{"w": "troop", "rel": "相关"}]}
+          ]},
+          {"w": "process", "children": [
+            {"w": "processor", "rel": "扩", "children": [{"w": "procedure", "rel": "相关"}]}
+          ]},
+          {"w": "access", "children": [
+            {"w": "accessible", "rel": "扩"},
+            {"w": "assess", "rel": "形近", "children": [{"w": "assessment", "rel": "扩"}]}
+          ]},
+          {"w": "exceed", "children": [
+            {"w": "exceedingly", "rel": "扩", "children": [
+              {"w": "beyond", "rel": "相关", "children": [
+                {"w": "surplus", "children": [{"w": "extra", "rel": "近义"}]}
+              ]}
+            ]}
+          ]},
+          {"w": "excess", "children": [{"w": "excessive", "rel": "扩"}]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "ancestor", "freq": 2, "page": 14,
+          "prons": [{"ipa": "/ˈænsestə(r)/", "senses": [{"pos": "n.", "mean": "[[祖先]]；原型"}]}],
+          "tip": {"type": "联想", "text": "an（一）+ cest（走）+ -or（名词后缀）→ 一个走在前面的人 → 祖先"},
+          "ex": {"type": "例", "en": "His ancestors had come to America from Ireland.", "zh": "他的祖先从爱尔兰来到美国。", "key": ["ancestors"]},
+          "ext": [{"word": "ancestry", "ipa": "/ˈænsestri/", "senses": [{"pos": "n.", "mean": "祖先"}]}]
+        },
+        {
+          "no": 2, "word": "ancient", "freq": 1, "page": 14,
+          "prons": [{"ipa": "/ˈeɪnʃənt/", "senses": [{"pos": "adj.", "mean": "[[古代的]]；[[古老的]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“俺神他”→ 俺喜欢的那个神仙，他住在一座“古老的”建筑中。"},
+          "ex": {"type": "真", "year": 2015, "en": "Li Jiang, an ancient town in Yunnan Province, is one of the most famous tourist attractions in China.", "zh": "丽江，云南省的一个古镇，是中国最著名的旅游景点之一。", "key": ["ancient"]},
+          "ext": []
+        },
+        {
+          "no": 3, "word": "consensus", "freq": 1, "page": 14,
+          "prons": [{"ipa": "/kənˈsensəs/", "senses": [{"pos": "n.", "mean": "[[一致的意见，共识]]"}]}],
+          "tip": {"type": "构词", "text": "con-（共同）+ sens（感觉）+ -us（名词后缀）→ 共同的感觉 → 一致的意见，共识"},
+          "ex": {"type": "例", "en": "There is a growing consensus of opinion on this issue.", "zh": "对这个问题的看法日趋一致。", "key": ["consensus"]},
+          "ext": []
+        },
+        {
+          "no": 4, "word": "proceed", "freq": 1, "page": 14,
+          "prons": [{"ipa": "/prəˈsiːd/", "senses": [{"pos": "v.", "mean": "[[进行]]，继续下去，[[前进]]"}]}],
+          "tip": {"type": "构词", "text": "pro-（往前）+ ceed（走）→ 进行，前进"},
+          "ex": {"type": "例", "en": "Work is proceeding slowly.", "zh": "工作进展缓慢。", "key": ["proceeding"]},
+          "ext": [{"word": "proceeding", "ipa": "/prəˈsiːdɪŋ/", "senses": [{"pos": "n.", "mean": "诉讼；（pl.）事件；（会议）记录"}]}]
+        },
+        {
+          "no": 5, "word": "procession", "freq": 1, "page": 14,
+          "prons": [{"ipa": "/prəˈseʃn/", "senses": [{"pos": "n.", "mean": "[[队伍，行列]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Our procession proceeds to the sun.", "zh": "我们的队伍向太阳前进。", "key": ["procession"]},
+          "ext": []
+        },
+        {
+          "no": 6, "word": "troop", "freq": 1, "page": 14,
+          "prons": [{"ipa": "/truːp/", "senses": [
+            {"pos": "n.", "mean": "[[军队，士兵]]"},
+            {"pos": "v.", "mean": "[[列队行进]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "troo（音似 true）+ p（联想“趴”）→ 他真的看见一群蚂蚁趴在地上“列队行进”。"},
+          "ex": {"type": "例", "en": "The president decided to send in the troops.", "zh": "总统决定派驻军队。", "key": ["troops"]},
+          "ext": []
+        },
+        {
+          "no": 7, "word": "process", "freq": 3, "page": 14,
+          "prons": [{"ipa": "/ˈprəʊses/", "senses": [
+            {"pos": "n.", "mean": "[[过程]]"},
+            {"pos": "v.", "mean": "[[加工]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "She was involved in the production process.", "zh": "她参与了生产过程。", "key": ["process"]},
+          "ext": [{"word": "processor", "ipa": "/ˈprəʊsesə(r)/", "senses": [{"pos": "n.", "mean": "加工者；处理器"}]}]
+        },
+        {
+          "no": 8, "word": "procedure", "freq": 2, "page": 15,
+          "prons": [{"ipa": "/prəˈsiːdʒə(r)/", "senses": [{"pos": "n.", "mean": "[[程序，步骤]]"}]}],
+          "tip": {"type": "联想", "text": "proceed（联想 proceed）+ -ure（名词后缀）→ 前进要按“步骤”来。"},
+          "ex": {"type": "真", "year": 2021, "en": "The proposal may include the topic, aim, procedure and selection of contestants.", "zh": "提案可能包括主题、目标、程序和选手的选拔。", "key": ["procedure"]},
+          "ext": []
+        },
+        {
+          "no": 9, "word": "access", "freq": 1, "page": 15,
+          "prons": [{"ipa": "/ˈækses/", "senses": [
+            {"pos": "v.", "mean": "[[接近]]；[[进入]]；使用"},
+            {"pos": "n.", "mean": "[[通道]]，（使用或见到的）[[机会]]；权利"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2022, "en": "They must make efforts to increase women's access to health care.", "zh": "他们必须努力增加妇女获得医疗服务的机会。", "key": ["access"]},
+          "ext": [{"word": "accessible", "ipa": "/əkˈsesəbl/", "senses": [{"pos": "adj.", "mean": "可到达的；可进入的；可使用的；易懂的"}]}]
+        },
+        {
+          "no": 10, "word": "assess", "freq": 1, "page": 15,
+          "prons": [{"ipa": "/əˈses/", "senses": [{"pos": "v.", "mean": "[[评估]]；[[估算]]"}]}],
+          "tip": {"type": "联想", "text": "a（—）+ ss（联想两个美女）+ e-（出）+ ss（联想两个美女）→ 出口处的两边各有两个美女在“估算”有多少人进出。"},
+          "ex": {"type": "真", "year": 2020, "en": "The trial assessed the effectiveness of an early mathematics intervention aimed at preschoolers.", "zh": "该试验评估了针对学龄前儿童的早期数学干预的有效性。", "key": ["assessed"]},
+          "ext": [{"word": "assessment", "ipa": "/əˈsesmənt/", "senses": [{"pos": "n.", "mean": "评估；评定；判定"}]}]
+        },
+        {
+          "no": 11, "word": "exceed", "freq": 1, "page": 15,
+          "prons": [{"ipa": "/ɪkˈsiːd/", "senses": [{"pos": "v.", "mean": "[[超过]]，[[胜过]]"}]}],
+          "tip": {"type": "构词", "text": "ex-（出）+ ceed（走）→ 青出于蓝而胜于蓝 → 超过，胜过"},
+          "ex": {"type": "例", "en": "The amount raised has far exceeded our wildest expectations.", "zh": "筹集的资金远远超出了我们最大的期望。", "key": ["exceeded"]},
+          "ext": [{"word": "exceedingly", "ipa": "/ɪkˈsiːdɪŋli/", "senses": [{"pos": "adv.", "mean": "极其；非常；很"}]}]
+        },
+        {
+          "no": 12, "word": "beyond", "freq": 1, "page": 15,
+          "prons": [{"ipa": "/bɪˈjɒnd/", "senses": [
+            {"pos": "prep.", "mean": "[[超出]]，在……的那边"},
+            {"pos": "adv.", "mean": "在另一边"}
+          ]}],
+          "tip": {"type": "联想", "text": "Beyond 乐队队名的意思就是“超出”。"},
+          "ex": {"type": "真", "year": 2017, "en": "They tend to push themselves beyond the limits of their ability.", "zh": "他们倾向于把自己逼到能力极限之外。", "key": ["beyond"]},
+          "ext": []
+        },
+        {
+          "no": 13, "word": "surplus", "freq": 2, "page": 15,
+          "prons": [{"ipa": "/ˈsɜːpləs/", "senses": [
+            {"pos": "n.", "mean": "[[过剩]]，[[盈余]]"},
+            {"pos": "adj.", "mean": "[[过剩的]]，多余的"}
+          ]}],
+          "tip": {"type": "联想", "text": "surp（音似“蛇扑”）+ lu（联想“鹿”）+ s（音似“死”）→ 蛇扑向一头鹿并杀死了它，吃了很久还有剩余 → 过剩"},
+          "ex": {"type": "例", "en": "Wheat was in surplus that year.", "zh": "那一年小麦过剩。", "key": ["in surplus"]},
+          "ext": []
+        },
+        {
+          "no": 14, "word": "extra", "freq": 1, "page": 15,
+          "prons": [{"ipa": "/ˈekstrə/", "senses": [
+            {"pos": "n.", "mean": "额外的事物"},
+            {"pos": "adj.", "mean": "[[额外的]]；[[外加的]]"},
+            {"pos": "adv.", "mean": "特别；额外"}
+          ]}],
+          "tip": {"type": "联想", "text": "ex-（往外）+ tra（音似“戳”）→ 往外戳，把“额外的”东西赶出去。"},
+          "ex": {"type": "真", "year": 2024, "en": "They make extra efforts to research their own products.", "zh": "他们更加努力地研究自己的产品。", "key": ["extra"]},
+          "ext": []
+        },
+        {
+          "no": 15, "word": "excess", "freq": 2, "page": 15,
+          "prons": [
+            {"ipa": "/ɪkˈses/", "senses": [{"pos": "n.", "mean": "[[超过]]；[[过度]]；超过的量"}]},
+            {"ipa": "/ˈekses/", "senses": [{"pos": "adj.", "mean": "[[额外的]]；[[过量的]]"}]}
+          ],
+          "tip": {"type": "对照", "text": "exceed v.超过 → excess n. & adj."},
+          "ex": {"type": "例", "en": "We cover costs up to 600 pounds and then you pay the excess.", "zh": "我们最多支付 600 英镑的费用，超出的部分由你支付。", "key": ["excess"]},
+          "ext": [{"word": "excessive", "ipa": "/ɪkˈsesɪv/", "senses": [{"pos": "adj.", "mean": "过分的；过度的"}]}]
+        }
+      ]
+    },
+    {
+      "no": 9,
+      "title": "“走”相关",
+      "pages": [16, 17],
+      "map": {
+        "w": "“走”相关",
+        "children": [
+          {"w": "success", "children": [
+            {"w": "successful", "rel": "扩", "children": [
+              {"w": "succeed", "children": [
+                {"w": "succession", "rel": "扩"},
+                {"w": "successive", "rel": "扩"},
+                {"w": "successor", "rel": "扩"}
+              ]}
+            ]}
+          ]},
+          {"w": "excel", "children": [
+            {"w": "excellent", "rel": "扩", "children": [{"w": "excellence"}]}
+          ]},
+          {"w": "stride", "children": [
+            {"w": "wander", "children": [
+              {"w": "crawl", "children": [{"w": "climb", "rel": "近义"}]}
+            ]}
+          ]},
+          {"w": "progress", "children": [
+            {"w": "progressive", "rel": "扩", "children": [{"w": "progression"}]},
+            {"w": "congress", "rel": "形近", "children": [{"w": "congressional", "rel": "扩"}]},
+            {"w": "aggressive", "rel": "相关", "children": [{"w": "aggression", "rel": "扩"}]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 16, "word": "success", "freq": 1, "page": 16,
+          "prons": [{"ipa": "/səkˈses/", "senses": [{"pos": "n.", "mean": "[[成功，胜利]]；成功的人（或事物）"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2016, "en": "Her way to success was full of pains and frustrations.", "zh": "她的成功之路充满了痛苦和沮丧。", "key": ["success"]},
+          "ext": [{"word": "successful", "ipa": "/səkˈsesfl/", "senses": [{"pos": "adj.", "mean": "达到目的的；获得成功的；有成就的"}]}]
+        },
+        {
+          "no": 17, "word": "succeed", "freq": 1, "page": 16,
+          "prons": [{"ipa": "/səkˈsiːd/", "senses": [{"pos": "v.", "mean": "[[成功]]；[[继任]]；随后出现"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2018, "en": "Immigrant parents believe that academic excellence will allow their children equal chances to succeed in the future.", "zh": "移民父母认为，优秀的学术成绩将使他们的孩子在未来拥有平等的成功机会。", "key": ["succeed"]},
+          "ext": [
+            {"word": "succession", "ipa": "/səkˈseʃn/", "senses": [{"pos": "n.", "mean": "连续的人（或事物）；一连串，一系列；继任；交替"}]},
+            {"word": "successive", "ipa": "/səkˈsesɪv/", "senses": [{"pos": "adj.", "mean": "接连的，连续的"}]}
+          ]
+        },
+        {
+          "no": 18, "word": "successor", "freq": 1, "page": 16,
+          "prons": [{"ipa": "/səkˈsesə(r)/", "senses": [{"pos": "n.", "mean": "[[继承者]]，[[接任者]]"}]}],
+          "tip": {"type": "联想", "text": "success（成功）+ -or（表示人的后缀）→ 继承成功的人 → 继承者，接任者"},
+          "ex": {"type": "例", "en": "He chose a relative newcomer to the organisation as his successor.", "zh": "他选择了一个相对新加入这个组织的人作为他的继任者。", "key": ["successor"]},
+          "ext": []
+        },
+        {
+          "no": 19, "word": "excel", "freq": 1, "page": 16,
+          "prons": [{"ipa": "/ɪkˈsel/", "senses": [{"pos": "v.", "mean": "[[擅长]]；[[突出]]；胜过平时"}]}],
+          "tip": {"type": "构词", "text": "ex-（外）+ cel（突出）→ 向外突出 → 擅长；另一联想：用 excel 程序做表格，优势很“突出”。"},
+          "ex": {"type": "例", "en": "The team excels at turning defence into attack.", "zh": "这个队善于打防守反攻。", "key": ["excels at"]},
+          "ext": [
+            {"word": "excellent", "ipa": "/ˈeksələnt/", "senses": [{"pos": "adj.", "mean": "优秀的，杰出的"}]},
+            {"word": "excellence", "ipa": "/ˈeksələns/", "senses": [{"pos": "n.", "mean": "杰出，卓越"}]}
+          ]
+        },
+        {
+          "no": 20, "word": "stride", "freq": 1, "page": 16,
+          "prons": [{"ipa": "/straɪd/", "senses": [
+            {"pos": "v.", "mean": "[[大步走]]；[[跨过]]"},
+            {"pos": "n.", "mean": "大步；[[进展]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“死跩的”→ 他一跩一跩地“大步走”。"},
+          "ex": {"type": "例", "en": "She came striding along to meet me.", "zh": "她大步走上前来迎接我。", "key": ["striding"]},
+          "ext": []
+        },
+        {
+          "no": 21, "word": "wander", "freq": 1, "page": 16,
+          "prons": [{"ipa": "/ˈwɒndə(r)/", "senses": [{"pos": "v.", "mean": "[[漫游，闲逛]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“万达”→ 周末没事，去万达广场“闲逛”吧。"},
+          "ex": {"type": "真", "year": 2017, "en": "No longer have we the inclination to let ourselves wander through fields of knowledges, ready to be surprised.", "zh": "我们不再倾向于让自己在知识的领域漫游，准备好接受惊喜。", "key": ["wander"]},
+          "ext": []
+        },
+        {
+          "no": 22, "word": "crawl", "freq": 2, "page": 16,
+          "prons": [{"ipa": "/krɔːl/", "senses": [{"pos": "v. & n.", "mean": "[[爬行]]；[[缓慢行进]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“可弱”→ 他身体可弱了，走路只能“缓慢行进”。"},
+          "ex": {"type": "例", "en": "A man was crawling away from the burning wreckage.", "zh": "一个男人正爬离燃烧着的残骸。", "key": ["crawling"]},
+          "ext": []
+        },
+        {
+          "no": 23, "word": "climb", "freq": 1, "page": 16,
+          "prons": [{"ipa": "/klaɪm/", "senses": [{"pos": "v. & n.", "mean": "[[爬]]；[[攀登]]"}]}],
+          "tip": {"type": "联想", "text": "c（音似“可”）+ li（音似“拉”）+ mb（联想“妹包”）→“爬”山的时候可要拉住妹妹的包，别掉下去。"},
+          "ex": {"type": "真", "year": 2019, "en": "A raccoon can climb much higher than a cat.", "zh": "浣熊能爬得比猫高得多。", "key": ["climb"]},
+          "ext": []
+        },
+        {
+          "no": 24, "word": "progress", "freq": 1, "page": 17,
+          "prons": [
+            {"ipa": "/ˈprəʊɡres/", "senses": [{"pos": "n.", "mean": "[[进步]]；进展"}]},
+            {"ipa": "/prəˈɡres/", "senses": [{"pos": "v.", "mean": "[[进步]]，[[改进]]"}]}
+          ],
+          "tip": {"type": "构词", "text": "pro-（往前）+ gress（走）→ 进步；进展"},
+          "ex": {"type": "真", "year": 2015, "en": "But innovation, broadly defined, is the crucial ingredient in all economic progress.", "zh": "但广义上的创新是所有经济发展的关键因素。", "key": ["progress"]},
+          "ext": [
+            {"word": "progressive", "ipa": "/prəˈɡresɪv/", "senses": [{"pos": "adj.", "mean": "进步的；逐步的"}, {"pos": "n.", "mean": "进步人士；改革派"}]},
+            {"word": "progression", "ipa": "/prəˈɡreʃn/", "senses": [{"pos": "n.", "mean": "（进入另一阶段的）发展；前进；进程；系列；序列；连续"}]}
+          ]
+        },
+        {
+          "no": 25, "word": "congress", "freq": 2, "page": 17,
+          "prons": [{"ipa": "/ˈkɒŋɡres/", "senses": [{"pos": "n.", "mean": "[[国会]]，[[代表大会]]"}]}],
+          "tip": {"type": "构词", "text": "con-（一起）+ gress（走）→ 走到一起来（组成）→ 国会，代表大会"},
+          "ex": {"type": "例", "en": "Congress will vote on the proposals tomorrow.", "zh": "国会明天将对提案进行投票表决。", "key": ["Congress"]},
+          "ext": [{"word": "congressional", "ipa": "/kənˈɡreʃənl/", "senses": [{"pos": "adj.", "mean": "国会的；代表大会的"}]}]
+        },
+        {
+          "no": 26, "word": "aggressive", "freq": 3, "page": 17,
+          "prons": [{"ipa": "/əˈɡresɪv/", "senses": [{"pos": "adj.", "mean": "[[好斗的]]，[[侵略的]]；[[富于攻击性的]]；[[有上进心的]]"}]}],
+          "tip": {"type": "构词", "text": "ag-（= to）+ gress（走）+ -ive（形容词后缀）→ 走向（对方）的 → 好斗的；侵略的"},
+          "ex": {"type": "真", "year": 2022, "en": "They tend to be a lot more aggressive than right-handed people.", "zh": "他们往往比右利手的人更具有攻击性。", "key": ["aggressive"]},
+          "ext": [{"word": "aggression", "ipa": "/əˈɡreʃn/", "senses": [{"pos": "n.", "mean": "进攻，侵略"}]}]
+        }
+      ]
+    },
+    {
+      "no": 10,
+      "title": "move 相关",
+      "pages": [17, 18],
+      "map": {
+        "w": "move 相关",
+        "children": [
+          {"w": "movement", "children": [
+            {"w": "remove", "children": [
+              {"w": "removal", "rel": "扩"},
+              {"w": "remote", "rel": "形近", "children": [
+                {"w": "promote", "rel": "同根", "children": [{"w": "promotion", "rel": "扩"}]}
+              ]}
+            ]}
+          ]},
+          {"w": "motion", "children": [
+            {"w": "mobile", "rel": "相关", "children": [{"w": "static", "rel": "反义"}]},
+            {"w": "motive", "rel": "同根", "children": [
+              {"w": "motivate", "rel": "扩", "children": [{"w": "motivation"}]}
+            ]},
+            {"w": "emotion", "rel": "加e", "children": [
+              {"w": "emotional", "rel": "扩", "children": [
+                {"w": "rational", "rel": "相关", "children": [
+                  {"w": "irrational", "rel": "反义"},
+                  {"w": "ratio", "rel": "形近", "children": [
+                    {"w": "rate", "rel": "近义", "children": [
+                      {"w": "rating", "rel": "扩"},
+                      {"w": "percentage", "rel": "相关", "children": [{"w": "percent", "rel": "扩"}]}
+                    ]}
+                  ]}
+                ]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 27, "word": "move", "freq": 1, "page": 17,
+          "prons": [{"ipa": "/muːv/", "senses": [
+            {"pos": "n.", "mean": "[[行动]]；改变"},
+            {"pos": "v.", "mean": "[[移动]]；[[进步]]；[[感动]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2018, "en": "This is how society moves forward.", "zh": "这就是社会进步的方式。", "key": ["moves"]},
+          "ext": [{"word": "movement", "ipa": "/ˈmuːvmənt/", "senses": [{"pos": "n.", "mean": "运动，活动；移动，迁移；乐章"}]}]
+        },
+        {
+          "no": 28, "word": "motion", "freq": 1, "page": 17,
+          "prons": [{"ipa": "/ˈməʊʃn/", "senses": [
+            {"pos": "n.", "mean": "[[运动]]；[[移动]]"},
+            {"pos": "v.", "mean": "（以头或手）做动作，示意"}
+          ]}],
+          "tip": {"type": "构词", "text": "mot（= move）+ -ion（名词后缀）→ 运动；移动"},
+          "ex": {"type": "例", "en": "The shaking is caused by the motion of two plates.", "zh": "震动是由两个板块的运动引起的。", "key": ["motion"]},
+          "ext": []
+        },
+        {
+          "no": 29, "word": "mobile", "freq": 3, "page": 17,
+          "prons": [{"ipa": "/ˈməʊbaɪl/", "senses": [
+            {"pos": "adj.", "mean": "[[可移动的]]"},
+            {"pos": "n.", "mean": "[[移动电话]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Our bombers have knocked out the mobile launchers.", "zh": "我们的轰炸机已经破坏了那些移动发射台。", "key": ["mobile"]},
+          "ext": []
+        },
+        {
+          "no": 30, "word": "static", "freq": 1, "page": 17,
+          "prons": [{"ipa": "/ˈstætɪk/", "senses": [
+            {"pos": "adj.", "mean": "[[静止的]]，静态的；不变化的"},
+            {"pos": "n.", "mean": "静电"}
+          ]}],
+          "tip": {"type": "联想", "text": "sta（联想 stay）+ t（联想“他”）+ -ic（后缀）→ 待在那里的他，仿佛是“静止的”。"},
+          "ex": {"type": "例", "en": "The population of this animal has remained static in recent years.", "zh": "近年来，这种动物的数量保持不变。", "key": ["static"]},
+          "ext": []
+        },
+        {
+          "no": 31, "word": "motive", "freq": 1, "page": 18,
+          "prons": [{"ipa": "/ˈməʊtɪv/", "senses": [{"pos": "n.", "mean": "[[动机]]；原因；[[目的]]"}]}],
+          "tip": {"type": "对照", "text": "他的动机（motive）是想让你行动（move）起来。"},
+          "ex": {"type": "例", "en": "You have drawn hostile conclusions about unseen people and their motives.", "zh": "你对看不见的人及其动机得出了充满敌意的结论。", "key": ["motives"]},
+          "ext": []
+        },
+        {
+          "no": 32, "word": "motivate", "freq": 3, "page": 18,
+          "prons": [{"ipa": "/ˈməʊtɪveɪt/", "senses": [{"pos": "v.", "mean": "[[激发]]；[[激励]]；成为……的动机"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2021, "en": "Effective measures should be taken to motivate employees to set up offices at home.", "zh": "应采取有效措施激励员工居家办公。", "key": ["motivate"]},
+          "ext": [{"word": "motivation", "ipa": "/ˌməʊtɪˈveɪʃn/", "senses": [{"pos": "n.", "mean": "动机，动力；原因"}]}]
+        },
+        {
+          "no": 33, "word": "remove", "freq": 3, "page": 18,
+          "prons": [{"ipa": "/rɪˈmuːv/", "senses": [{"pos": "v.", "mean": "[[移开]]；[[排除]]（污渍、不愉快的事物等）；摘下；[[解除]]（职务等）"}]}],
+          "tip": {"type": "构词", "text": "re-（= off）+ move（移动）→ 移开；排除"},
+          "ex": {"type": "真", "year": 2021, "en": "How boundaries can be removed between arts and science disciplines?", "zh": "如何消除艺术和科学学科之间的界限？", "key": ["removed"]},
+          "ext": [{"word": "removal", "ipa": "/rɪˈmuːvl/", "senses": [{"pos": "n.", "mean": "移动；消除；免职；搬迁"}]}]
+        },
+        {
+          "no": 34, "word": "emotion", "freq": 3, "page": 18,
+          "prons": [{"ipa": "/ɪˈməʊʃn/", "senses": [{"pos": "n.", "mean": "[[情感]]；情绪"}]}],
+          "tip": {"type": "构词", "text": "e-（出）+ motion（移动）→ 从内心移动（表达）出去 → 内情外露 → 情感；情绪"},
+          "ex": {"type": "真", "year": 2018, "en": "Above all, it's the emotions one experiences in teaching that facilitate learning.", "zh": "最重要的是，人们在教学中体验到的情感促进了学习。", "key": ["emotions"]},
+          "ext": [{"word": "emotional", "ipa": "/ɪˈməʊʃənl/", "senses": [{"pos": "adj.", "mean": "情绪化的，易激动的；感动人的"}]}]
+        },
+        {
+          "no": 35, "word": "rational", "freq": 2, "page": 18,
+          "prons": [{"ipa": "/ˈræʃnəl/", "senses": [{"pos": "adj.", "mean": "[[合理的]]；[[理性的]]；明智的"}]}],
+          "tip": {"type": "对照", "text": "他拿比例（ratio）作依据，是很理性的（rational）。"},
+          "ex": {"type": "例", "en": "There is no rational explanation for his actions.", "zh": "对他的所作所为无法作出合理的解释。", "key": ["rational"]},
+          "ext": [{"word": "irrational", "ipa": "/ɪˈræʃənl/", "senses": [{"pos": "adj.", "mean": "不合逻辑的；没有道理的"}]}]
+        },
+        {
+          "no": 36, "word": "ratio", "freq": 1, "page": 18,
+          "prons": [{"ipa": "/ˈreɪʃiəʊ/", "senses": [{"pos": "n.", "mean": "[[比]]；[[比率]]；[[比例]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似人名“瑞秋”→ 瑞秋写文章注重核实“比例”。"},
+          "ex": {"type": "例", "en": "The ratio of the hottest position can arrive at 50 : 1.", "zh": "最热门职位的（报录）比例可以达到 50 : 1。", "key": ["ratio"]},
+          "ext": []
+        },
+        {
+          "no": 37, "word": "rate", "freq": 3, "page": 18,
+          "prons": [{"ipa": "/reɪt/", "senses": [
+            {"pos": "n.", "mean": "[[速度]]；[[比率]]；[[价格]]"},
+            {"pos": "v.", "mean": "[[评价]]；被列为"}
+          ]}],
+          "tip": {"type": "对照", "text": "老鼠（rat）出去以后看到四周无人，逃窜的速度（rate）很快。"},
+          "ex": {"type": "真", "year": 2017, "en": "Once you get beyond the initial learning curve, knitting and crocheting can lower heart rate and blood pressure.", "zh": "一旦你超越了最初的学习曲线，针织和钩编就可以降低心率和血压。", "key": ["rate"]},
+          "ext": [{"word": "rating", "ipa": "/ˈreɪtɪŋ/", "senses": [{"pos": "n.", "mean": "等级；评分"}]}]
+        },
+        {
+          "no": 38, "word": "percentage", "freq": 2, "page": 18,
+          "prons": [{"ipa": "/pəˈsentɪdʒ/", "senses": [{"pos": "n.", "mean": "[[百分率]]；[[百分比]]；提成"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2024, "en": "In 1970, the percentage of women majoring in engineering was less than 1%.", "zh": "1970 年，主修工程学的女性比例不到 1%。", "key": ["percentage"]},
+          "ext": [{"word": "percent", "ipa": "/pəˈsent/", "senses": [{"pos": "n.", "mean": "百分之……"}, {"pos": "adj. & adv.", "mean": "每一百中"}]}]
+        },
+        {
+          "no": 39, "word": "remote", "freq": 2, "page": 18,
+          "prons": [{"ipa": "/rɪˈməʊt/", "senses": [{"pos": "adj.", "mean": "[[遥远的]]；[[远程的]]；[[偏远的]]"}]}],
+          "tip": {"type": "构词", "text": "re-（回）+ mote（= move）→ 往回移动 → 遥远的；远程的"},
+          "ex": {"type": "真", "year": 2022, "en": "Your university is selecting some students to teach kids in remote rural areas during the coming vacation.", "zh": "你们大学正在选拔一些学生，在即将到来的假期去偏远的农村地区教孩子们。", "key": ["remote"]},
+          "ext": []
+        },
+        {
+          "no": 40, "word": "promote", "freq": 3, "page": 18,
+          "prons": [{"ipa": "/prəˈməʊt/", "senses": [{"pos": "v.", "mean": "[[促进]]，[[提升]]；[[促销]]；[[推动]]"}]}],
+          "tip": {"type": "构词", "text": "pro-（前）+ mote（= move）→ 往前移动 → 促进，提升"},
+          "ex": {"type": "例", "en": "More universities will be seeking heads with international experience to promote international programs.", "zh": "更多大学将寻找具有国际经验的负责人来推广国际项目。", "key": ["promote"]},
+          "ext": [{"word": "promotion", "ipa": "/prəˈməʊʃn/", "senses": [{"pos": "n.", "mean": "晋升；推销，促销"}]}]
+        }
+      ]
+    },
+    {
+      "no": 11,
+      "title": "act 相关",
+      "pages": [19, 20],
+      "map": {
+        "w": "act 相关",
+        "children": [
+          {"w": "action", "children": [
+            {"w": "acting", "rel": "扩", "children": [{"w": "actor"}]},
+            {"w": "actress", "rel": "扩"},
+            {"w": "deed", "rel": "近义", "children": [
+              {"w": "behaviour", "children": [
+                {"w": "behavioural", "rel": "扩", "children": [{"w": "behave"}]}
+              ]}
+            ]},
+            {"w": "active", "rel": "相关", "children": [
+              {"w": "activity", "rel": "扩", "children": [{"w": "activist"}]}
+            ]}
+          ]},
+          {"w": "exact", "children": [
+            {"w": "react", "children": [
+              {"w": "reaction", "rel": "扩", "children": [{"w": "reactionary"}]}
+            ]}
+          ]},
+          {"w": "actual", "children": [
+            {"w": "actually", "rel": "扩"},
+            {"w": "practical", "rel": "近义", "children": [{"w": "practicality", "rel": "扩"}]},
+            {"w": "virtual", "children": [{"w": "virtually", "rel": "扩"}]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 41, "word": "action", "freq": 1, "page": 19,
+          "prons": [{"ipa": "/ˈækʃn/", "senses": [{"pos": "n.", "mean": "[[行为，行动]]；功能，作用"}]}],
+          "tip": {"type": "联想", "text": "act（音似“爱个她”）+ -ion（名词后缀）→ 既然爱她，就要付出“行动”。"},
+          "ex": {"type": "真", "year": 2018, "en": "Watching the agent solve problems allows them to see their knowledge put into action.", "zh": "观看代理人解决问题，使他们得以见证其知识付诸行动。", "key": ["action"]},
+          "ext": [
+            {"word": "act", "ipa": "/ækt/", "senses": [{"pos": "v.", "mean": "扮演；行动；起作用"}, {"pos": "n.", "mean": "行为，法令；（戏剧等的）一幕"}]},
+            {"word": "acting", "ipa": "/ˈæktɪŋ/", "senses": [{"pos": "n.", "mean": "（戏剧、电影等中的）表演；演艺业"}, {"pos": "adj.", "mean": "临时代理的"}]},
+            {"word": "actor", "ipa": "/ˈæktə(r)/", "senses": [{"pos": "n.", "mean": "演员；参与者"}]},
+            {"word": "actress", "ipa": "/ˈæktrəs/", "senses": [{"pos": "n.", "mean": "女演员"}]}
+          ]
+        },
+        {
+          "no": 42, "word": "deed", "freq": 1, "page": 19,
+          "prons": [{"ipa": "/diːd/", "senses": [{"pos": "n.", "mean": "行为；行动"}]}],
+          "tip": {"type": "对照", "text": "音近词 did → 她的行为（deed）相当于给其他同学做了（did）一个示范。"},
+          "ex": {"type": "真", "year": 2023, "en": "The tourists' good deed was not noticed by the locals.", "zh": "当地人没有注意到游客善意的行为。", "key": ["deed"]},
+          "ext": []
+        },
+        {
+          "no": 43, "word": "behave", "freq": 3, "page": 19,
+          "prons": [{"ipa": "/bɪˈheɪv/", "senses": [{"pos": "v.", "mean": "表现，举止"}]}],
+          "tip": {"type": "联想", "text": "be（是）+ have（持有）→ 一个人的行为会“表现”其原本就拥有的品质。"},
+          "ex": {"type": "真", "year": 2020, "en": "They continued to behave as they did in the beginning.", "zh": "他们继续像一开始那样表现。", "key": ["behave"]},
+          "ext": [
+            {"word": "behaviour", "alt": "behavior", "ipa": "/bɪˈheɪvjə(r)/", "senses": [{"pos": "n.", "mean": "行为，举止；态度"}]},
+            {"word": "behavioural", "alt": "behavioral", "ipa": "/bɪˈheɪvjərəl/", "senses": [{"pos": "adj.", "mean": "行为的"}]}
+          ]
+        },
+        {
+          "no": 44, "word": "active", "freq": 1, "page": 19,
+          "prons": [{"ipa": "/ˈæktɪv/", "senses": [{"pos": "adj.", "mean": "[[积极的]]；忙碌的；[[活跃的]]"}]}],
+          "tip": {"type": "构词", "text": "act（行动）+ -ive（形容词后缀）→（一直在）行动的 → 积极的；忙碌的；活跃的"},
+          "ex": {"type": "例", "en": "Although he's nearly 80, he is still very active.", "zh": "尽管快 80 岁了，他还是十分活跃。", "key": ["active"]},
+          "ext": [
+            {"word": "activity", "ipa": "/ækˈtɪvəti/", "senses": [{"pos": "n.", "mean": "活动；行动；活跃"}]},
+            {"word": "activist", "ipa": "/ˈæktɪvɪst/", "senses": [{"pos": "n.", "mean": "积极分子；活动家"}]}
+          ]
+        },
+        {
+          "no": 45, "word": "react", "freq": 2, "page": 19,
+          "prons": [{"ipa": "/riˈækt/", "senses": [{"pos": "v.", "mean": "[[回应，反应]]"}]}],
+          "tip": {"type": "构词", "text": "re-（回）+ act（行动）→ 回应行动 → 回应，反应"},
+          "ex": {"type": "例", "en": "You can't tell how the person on the line is reacting.", "zh": "你不知道电话里的人作何反应。", "key": ["reacting"]},
+          "ext": [
+            {"word": "reaction", "ipa": "/riˈækʃn/", "senses": [{"pos": "n.", "mean": "反应；反作用"}]},
+            {"word": "reactionary", "ipa": "/riˈækʃənri/", "senses": [{"pos": "n.", "mean": "反动分子；反对政治（或社会）变革者"}]}
+          ]
+        },
+        {
+          "no": 46, "word": "exact", "freq": 1, "page": 19,
+          "prons": [{"ipa": "/ɪɡˈzækt/", "senses": [
+            {"pos": "adj.", "mean": "[[准确的]]，[[精确的]]；严谨的；[[确切的]]"},
+            {"pos": "v.", "mean": "要求；迫使"}
+          ]}],
+          "tip": {"type": "构词", "text": "ex-（出）+ act（行动的结果 → 事实）→ 从事实中得出的 → 准确的，精确的"},
+          "ex": {"type": "真", "year": 2015, "en": "He is not familiar with the exact details of the goods.", "zh": "他不熟悉商品的确切细节。", "key": ["exact"]},
+          "ext": []
+        },
+        {
+          "no": 47, "word": "actual", "freq": 1, "page": 19,
+          "prons": [{"ipa": "/ˈæktʃuəl/", "senses": [{"pos": "adj.", "mean": "[[实际的]]；[[真正的]]"}]}],
+          "tip": {"type": "构词", "text": "act（事实）+ -ual（形容词后缀）→ 事实的 → 实际的；真正的"},
+          "ex": {"type": "例", "en": "It calls for people's actual action to reduce the waste.", "zh": "这需要人们采取实际行动减少浪费。", "key": ["actual"]},
+          "ext": [{"word": "actually", "ipa": "/ˈæktʃuəli/", "senses": [{"pos": "adv.", "mean": "事实上，实际上"}]}]
+        },
+        {
+          "no": 48, "word": "practical", "freq": 1, "page": 19,
+          "prons": [{"ipa": "/ˈpræktɪkl/", "senses": [{"pos": "adj.", "mean": "[[实际的]]；[[真实的]]；客观存在的"}]}],
+          "tip": {"type": "对照", "text": "practice n.实际行动 → practical adj."},
+          "ex": {"type": "真", "year": 2024, "en": "Taken in a practical way, saving for post-work years is like giving money away to others.", "zh": "从实际的角度来看，为退休后的生活存钱就像给别人钱一样。", "key": ["practical"]},
+          "ext": [{"word": "practicality", "ipa": "/ˌpræktɪˈkæləti/", "senses": [{"pos": "n.", "mean": "实用性；实际情况；可行性"}]}]
+        },
+        {
+          "no": 49, "word": "virtual", "freq": 2, "page": 20,
+          "prons": [{"ipa": "/ˈvɜːtʃuəl/", "senses": [{"pos": "adj.", "mean": "[[事实上的]]，[[实际上的]]；[[虚拟的]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“龌龊”→他看起来有点龌龊，事实上很正经→事实上的，实际上的；虚拟的⟨?⟩"},
+          "ex": {"type": "真", "year": 2019, "en": "The virtual assistant became so advanced and realistic that the students didn't know she was a computer.", "zh": "这个虚拟助手变得如此先进和逼真，以至于学生们都不知道它是一台电脑。", "key": ["virtual"]},
+          "ext": [{"word": "virtually", "ipa": "/ˈvɜːtʃuəli/", "senses": [{"pos": "adv.", "mean": "几乎；事实上"}]}]
+        }
+      ]
+    },
+    {
+      "no": 12,
+      "title": "fr 相关",
+      "pages": [20, 21],
+      "map": {
+        "w": "fr 相关",
+        "children": [
+          {"w": "fragment", "children": [
+            {"w": "fragmentary", "rel": "扩", "children": [{"w": "fragmentation"}]},
+            {"w": "fraction", "rel": "近义"},
+            {"w": "portion", "rel": "近义", "children": [
+              {"w": "proportion", "rel": "加前缀", "children": [
+                {"w": "proportional", "rel": "扩", "children": [{"w": "somewhat", "rel": "相关"}]}
+              ]}
+            ]}
+          ]},
+          {"w": "frame", "children": [
+            {"w": "framework", "rel": "近义", "children": [{"w": "skeleton"}]},
+            {"w": "flame", "rel": "形近", "children": [
+              {"w": "burn", "rel": "近义"},
+              {"w": "flash", "rel": "相关", "children": [
+                {"w": "flesh", "rel": "形近", "children": [
+                  {"w": "fresh", "rel": "形近", "children": [
+                    {"w": "refresh", "rel": "加re", "children": [{"w": "refreshment", "rel": "扩"}]}
+                  ]}
+                ]}
+              ]},
+              {"w": "flourish", "rel": "相关", "children": [
+                {"w": "flour", "rel": "形近", "children": [{"w": "powder", "rel": "近义"}]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 50, "word": "fragment", "freq": 1, "page": 20,
+          "prons": [
+            {"ipa": "/ˈfræɡmənt/", "senses": [{"pos": "n.", "mean": "[[碎片]]；[[片段]]；[[部分]]"}]},
+            {"ipa": "/fræɡˈment/", "senses": [{"pos": "v.", "mean": "（使）破碎，分裂"}]}
+          ],
+          "tip": {"type": "联想", "text": "fr（联想“芙蓉”）+ ag（联想“阿哥”）+ -ment（名词后缀）→ 芙蓉（人名）把阿哥赶出了门，阿哥的心仿佛变成了“碎片”。"},
+          "ex": {"type": "例", "en": "Dreaming resembles fragments of science fiction.", "zh": "梦境类似于科幻小说的片段。", "key": ["fragments"]},
+          "ext": [
+            {"word": "fragmentary", "ipa": "/ˈfræɡməntri/", "senses": [{"pos": "adj.", "mean": "残缺不全的；不完整的"}]},
+            {"word": "fragmentation", "ipa": "/ˌfræɡmenˈteɪʃn/", "senses": [{"pos": "n.", "mean": "分裂，破裂"}]}
+          ]
+        },
+        {
+          "no": 51, "word": "somewhat", "freq": 2, "page": 20,
+          "prons": [{"ipa": "/ˈsʌmwɒt/", "senses": [{"pos": "adv.", "mean": "[[稍微]]，有点"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The situation has changed somewhat since we last met.", "zh": "自我们上次见面以来情况有点变化。", "key": ["somewhat"]},
+          "ext": []
+        },
+        {
+          "no": 52, "word": "fraction", "freq": 1, "page": 20,
+          "prons": [{"ipa": "/ˈfrækʃn/", "senses": [{"pos": "n.", "mean": "[[小部分]]；[[少量]]；一点儿"}]}],
+          "tip": {"type": "联想", "text": "fr（联想“芙蓉”）+ action（行为）→ 芙蓉的行为只有“小部分”人能接受。"},
+          "ex": {"type": "例", "en": "Only a tiny fraction of Americans change any behaviours in an effort to preserve their privacy.", "zh": "只有一小部分美国人为了保护自己的隐私而改变了一些行为。", "key": ["fraction"]},
+          "ext": []
+        },
+        {
+          "no": 53, "word": "portion", "freq": 3, "page": 20,
+          "prons": [{"ipa": "/ˈpɔːʃn/", "senses": [
+            {"pos": "n.", "mean": "[[部分]]；[[一份]]"},
+            {"pos": "v.", "mean": "把……分成若干份（或部分）"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“剖心”→“部分”人喜欢讲“比干剖心”的故事。"},
+          "ex": {"type": "真", "year": 2015, "en": "We get a fairly large portion of calories from fast food and snacks.", "zh": "我们从快餐和零食中摄取了相当大部分的卡路里。", "key": ["portion"]},
+          "ext": []
+        },
+        {
+          "no": 54, "word": "proportion", "freq": 2, "page": 20,
+          "prons": [{"ipa": "/prəˈpɔːʃn/", "senses": [{"pos": "n.", "mean": "[[部分]]；[[份额]]；[[比例]]；面积"}]}],
+          "tip": {"type": "联想", "text": "pro-（提前）+ portion（音似“剖心”）→ 剖心者少，提前剖心的更少 → 部分"},
+          "ex": {"type": "真", "year": 2017, "en": "As is now the case in many big firms, a large proportion of staff are temporary contractors.", "zh": "现在许多大公司的大部分员工都是临时合同工。", "key": ["proportion"]},
+          "ext": [{"word": "proportional", "ipa": "/prəˈpɔːʃənl/", "senses": [{"pos": "adj.", "mean": "相称的；成比例的"}]}]
+        },
+        {
+          "no": 55, "word": "skeleton", "freq": 1, "page": 20,
+          "prons": [{"ipa": "/ˈskelɪtn/", "senses": [{"pos": "n.", "mean": "[[骨骼]]，[[梗概]]；[[框架]]"}]}],
+          "tip": {"type": "联想", "text": "skele（音似“撕盖了”）+ ton（吨）→ 他撕开了盖子，发现约有一吨“骨骼”。"},
+          "ex": {"type": "例", "en": "The human skeleton consists of 206 bones.", "zh": "人的骨骼由 206 块骨头组成。", "key": ["skeleton"]},
+          "ext": []
+        },
+        {
+          "no": 56, "word": "frame", "freq": 2, "page": 21,
+          "prons": [{"ipa": "/freɪm/", "senses": [
+            {"pos": "n.", "mean": "[[框架]]；结构；体形，身材"},
+            {"pos": "v.", "mean": "给……做框；制订"}
+          ]}],
+          "tip": {"type": "联想", "text": "fr（联想“芙蓉”）+ ame（联想“阿妹”）→ 芙蓉和阿妹的“身材”差不多。"},
+          "ex": {"type": "例", "en": "She leaned against the frame of the door.", "zh": "她靠在门框上。", "key": ["frame"]},
+          "ext": []
+        },
+        {
+          "no": 57, "word": "framework", "freq": 1, "page": 21,
+          "prons": [{"ipa": "/ˈfreɪmwɜːk/", "senses": [{"pos": "n.", "mean": "[[框架]]；结构；机制；准则"}]}],
+          "tip": {"type": "构词", "text": "frame（框架）+ work（制作品）→ 框架；结构"},
+          "ex": {"type": "真", "year": 2022, "en": "Paint the wooden frameworks and walls the same colour.", "zh": "将木质框架和墙壁涂成同样的颜色。", "key": ["frameworks"]},
+          "ext": []
+        },
+        {
+          "no": 58, "word": "flame", "freq": 1, "page": 21,
+          "prons": [{"ipa": "/fleɪm/", "senses": [
+            {"pos": "n.", "mean": "[[火焰]]；鲜红色；强烈的感情"},
+            {"pos": "v.", "mean": "燃烧；变红"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The room was filled with smoke and flame.", "zh": "房间里烟雾弥漫，烈焰滚滚。", "key": ["flame"]},
+          "ext": []
+        },
+        {
+          "no": 59, "word": "burn", "freq": 1, "page": 21,
+          "prons": [{"ipa": "/bɜːn/", "senses": [{"pos": "v.", "mean": "[[燃烧]]；[[灼伤]]；激怒"}]}],
+          "tip": {"type": "联想", "text": "bu（联想“不”）+ r（形似花）+ n（形似门）→ 不要把干花放在门口，它遇火会“燃烧”，很危险。"},
+          "ex": {"type": "真", "year": 2018, "en": "It had burned for 45 minutes by the time firefighters arrived.", "zh": "消防员赶到时，大火已经燃烧了 45 分钟。", "key": ["burned"]},
+          "ext": []
+        },
+        {
+          "no": 60, "word": "flash", "freq": 2, "page": 21,
+          "prons": [{"ipa": "/flæʃ/", "senses": [
+            {"pos": "n.", "mean": "[[闪光]]；[[闪现]]"},
+            {"pos": "v.", "mean": "[[闪光]]，[[闪烁]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "网页 Flash 弹窗“闪现”推送广告。"},
+          "ex": {"type": "真", "year": 2018, "en": "The car keeps flashing its headlights.", "zh": "这辆车一直在闪烁前灯。", "key": ["flashing"]},
+          "ext": []
+        },
+        {
+          "no": 61, "word": "flesh", "freq": 1, "page": 21,
+          "prons": [{"ipa": "/fleʃ/", "senses": [{"pos": "n.", "mean": "[[肉]]；[[果肉]]"}]}],
+          "tip": {"type": "对照", "text": "水果的果肉（flesh）很新鲜（fresh）。"},
+          "ex": {"type": "例", "en": "The flesh of the fruit is white.", "zh": "这种水果的果肉是白色的。", "key": ["flesh"]},
+          "ext": []
+        },
+        {
+          "no": 62, "word": "fresh", "freq": 1, "page": 21,
+          "prons": [{"ipa": "/freʃ/", "senses": [{"pos": "adj.", "mean": "[[新鲜的]]；[[清凉的]]；淡的"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2016, "en": "The memory of the recent great recession is still fresh in their mind.", "zh": "他们对最近的大衰退记忆犹新。", "key": ["fresh"]},
+          "ext": []
+        },
+        {
+          "no": 63, "word": "refresh", "freq": 1, "page": 21,
+          "prons": [{"ipa": "/rɪˈfreʃ/", "senses": [{"pos": "v.", "mean": "[[使恢复精力]]；使凉爽；提醒"}]}],
+          "tip": {"type": "构词", "text": "re-（回）+ fresh（精力充沛的）→ 使回到精力充沛的状态 → 使恢复精力"},
+          "ex": {"type": "例", "en": "The long sleep had refreshed her.", "zh": "一场酣睡使她恢复了精神。", "key": ["refreshed"]},
+          "ext": [{"word": "refreshment", "ipa": "/rɪˈfreʃmənt/", "senses": [{"pos": "n.", "mean": "恢复活力，焕发精神；饮料；小食"}]}]
+        },
+        {
+          "no": 64, "word": "flourish", "freq": 1, "page": 21,
+          "prons": [{"ipa": "/ˈflʌrɪʃ/", "senses": [{"pos": "v.", "mean": "[[繁荣]]；[[茂盛]]；[[兴旺]]"}]}],
+          "tip": {"type": "联想", "text": "flour（音似 flower）+ -ish（动词后缀）→ 洛阳的牡丹花长势“茂盛”。"},
+          "ex": {"type": "例", "en": "The arts began to flourish at that time.", "zh": "艺术是从那时开始繁荣的。", "key": ["flourish"]},
+          "ext": []
+        },
+        {
+          "no": 65, "word": "flour", "freq": 1, "page": 21,
+          "prons": [{"ipa": "/ˈflaʊə(r)/", "senses": [{"pos": "n.", "mean": "[[面粉]]；[[粉状物]]"}]}],
+          "tip": {"type": "对照", "text": "花（flower）粉多为粉状物（flour）。"},
+          "ex": {"type": "例", "en": "He shaped delicious masterpieces out of flour, butter and sugar.", "zh": "他用面粉、黄油和糖塑造出了美味的杰作。", "key": ["flour"]},
+          "ext": []
+        },
+        {
+          "no": 66, "word": "powder", "freq": 1, "page": 21,
+          "prons": [{"ipa": "/ˈpaʊdə(r)/", "senses": [{"pos": "n.", "mean": "[[粉]]；[[药粉]]；[[火药]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“扑的”→ 她化妆时往脸上扑的是“粉”。"},
+          "ex": {"type": "例", "en": "The snow was like powder.", "zh": "雪像粉末一样。", "key": ["powder"]},
+          "ext": []
+        }
+      ]
+    }
+  ]
+}

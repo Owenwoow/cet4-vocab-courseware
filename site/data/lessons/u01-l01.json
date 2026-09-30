@@ -1,0 +1,632 @@
+{
+  "id": "u01-l01",
+  "part": 1,
+  "unit": 1,
+  "lesson": 1,
+  "pages": [2, 8],
+  "groups": [
+    {
+      "no": 1,
+      "title": "vers(e)相关",
+      "pages": [2, 4],
+      "map": {
+        "w": "vers(e)相关",
+        "children": [
+          {"w": "universe", "children": [
+            {"w": "universal", "rel": "扩"},
+            {"w": "space", "rel": "相关", "children": [
+              {"w": "spacious", "rel": "扩"},
+              {"w": "spatial", "rel": "扩"}
+            ]},
+            {"w": "unite", "rel": "相关", "children": [
+              {"w": "unity", "rel": "扩"},
+              {"w": "reunite", "rel": "形近", "children": [
+                {"w": "reunification", "rel": "扩"},
+                {"w": "union", "rel": "相关", "children": [{"w": "reunion", "rel": "扩"}]}
+              ]}
+            ]},
+            {"w": "astronaut", "rel": "相关", "children": [
+              {"w": "heaven", "rel": "相关"},
+              {"w": "satellite", "rel": "相关"},
+              {"w": "moon", "rel": "相关"}
+            ]}
+          ]},
+          {"w": "diverse", "children": [
+            {"w": "diversify", "rel": "扩", "children": [{"w": "diversity"}]},
+            {"w": "convert", "rel": "相关", "children": [
+              {"w": "conversion", "rel": "扩"},
+              {"w": "convertible", "rel": "扩"}
+            ]}
+          ]},
+          {"w": "reverse", "children": [
+            {"w": "reversal", "rel": "扩", "children": [{"w": "reversible"}]}
+          ]},
+          {"w": "anniversary", "children": [{"w": "annual", "rel": "相关"}]},
+          {"w": "controversy", "children": [
+            {"w": "controversial", "rel": "扩", "children": [
+              {"w": "contrary", "rel": "相关"},
+              {"w": "contrast", "rel": "相关"},
+              {"w": "nasty", "rel": "相关"}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "space", "freq": 1, "page": 2,
+          "prons": [{"ipa": "/speɪs/", "senses": [{"pos": "n.", "mean": "[[外层空间]]；[[太空]]；[[空间]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“四百四”→ 他家房子的面积是 440 平方米，“空间”很大。"},
+          "ex": {"type": "真", "year": 2020, "en": "They found the space in the cage too small to stay in.", "zh": "它们发现笼子里的空间太小，待不下去。", "key": ["space"]},
+          "ext": [
+            {"word": "spacious", "ipa": "/ˈspeɪʃəs/", "senses": [{"pos": "adj.", "mean": "宽敞的"}]},
+            {"word": "spatial", "ipa": "/ˈspeɪʃl/", "senses": [{"pos": "adj.", "mean": "空间的"}]}
+          ]
+        },
+        {
+          "no": 2, "word": "universe", "freq": 1, "page": 2,
+          "prons": [{"ipa": "/ˈjuːnɪvɜːs/", "senses": [{"pos": "n.", "mean": "[[宇宙]]；[[领域，体系]]"}]}],
+          "tip": {"type": "构词", "text": "uni-（统一）+ verse（转）→ 万物运转的统一整体 → 宇宙"},
+          "ex": {"type": "例", "en": "The idea of a parallel universe is hard to grasp.", "zh": "平行宇宙的概念是很难理解的。", "key": ["universe"]},
+          "ext": [{"word": "universal", "ipa": "/ˌjuːnɪˈvɜːsl/", "senses": [{"pos": "adj.", "mean": "普遍的；全世界的；共同的"}]}]
+        },
+        {
+          "no": 3, "word": "unite", "freq": 1, "page": 2,
+          "prons": [{"ipa": "/juˈnaɪt/", "senses": [{"pos": "v.", "mean": "[[联合]]；[[团结]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "We will unite in fighting crime.", "zh": "我们将联合打击犯罪。", "key": ["unite"]},
+          "ext": [{"word": "unity", "ipa": "/ˈjuːnəti/", "senses": [{"pos": "n.", "mean": "团结；一致；联合；统一"}]}]
+        },
+        {
+          "no": 4, "word": "reunite", "freq": 1, "page": 2,
+          "prons": [{"ipa": "/ˌriːjuːˈnaɪt/", "senses": [{"pos": "v.", "mean": "[[（使）重逢]]；[[再次相聚]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The family was reunited after the war.", "zh": "战争过后，这家人又相聚了。", "key": ["reunited"]},
+          "ext": [{"word": "reunification", "ipa": "/ˌriːjuːnɪfɪˈkeɪʃn/", "senses": [{"pos": "n.", "mean": "重新统一"}]}]
+        },
+        {
+          "no": 5, "word": "union", "freq": 1, "page": 2,
+          "prons": [{"ipa": "/ˈjuːniən/", "senses": [{"pos": "n.", "mean": "[[协会，联合会]]；[[工会]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "I have joined the union.", "zh": "我已经加入工会。", "key": ["union"]},
+          "ext": [{"word": "reunion", "ipa": "/ˌriːˈjuːniən/", "senses": [{"pos": "n.", "mean": "重逢；团聚；聚会"}]}]
+        },
+        {
+          "no": 6, "word": "diverse", "freq": 1, "page": 2,
+          "prons": [{"ipa": "/daɪˈvɜːs/", "senses": [{"pos": "adj.", "mean": "[[不同的]]；[[多种多样的]]"}]}],
+          "tip": {"type": "构词", "text": "di-（分开）+ verse（转）→ 转向不同方向 → 多种多样的"},
+          "ex": {"type": "真", "year": 2023, "en": "People from diverse backgrounds no longer socialise.", "zh": "来自不同背景的人不再社交。", "key": ["diverse"]},
+          "ext": [
+            {"word": "diversify", "ipa": "/daɪˈvɜːsɪfaɪ/", "senses": [{"pos": "v.", "mean": "（使）多样化，变化"}]},
+            {"word": "diversity", "ipa": "/daɪˈvɜːsəti/", "senses": [{"pos": "n.", "mean": "差异；不同；多样性"}]}
+          ]
+        },
+        {
+          "no": 7, "word": "convert", "freq": 1, "page": 3,
+          "prons": [
+            {"ipa": "/kənˈvɜːt/", "senses": [{"pos": "v.", "mean": "[[转变]]；[[转换]]"}]},
+            {"ipa": "/ˈkɒnvɜːt/", "senses": [{"pos": "n.", "mean": "[[改变信仰者]]"}]}
+          ],
+          "tip": {"type": "构词", "text": "con-（共同）+ vert（= verse，转变）→ 转变"},
+          "ex": {"type": "例", "en": "You need to ensure that you've converted the data properly.", "zh": "您需要确保已经正确转换了数据。", "key": ["converted"]},
+          "ext": [
+            {"word": "conversion", "ipa": "/kənˈvɜːʃn/", "senses": [{"pos": "n.", "mean": "转变，转换；转化"}]},
+            {"word": "convertible", "ipa": "/kənˈvɜːtəbl/", "senses": [{"pos": "adj.", "mean": "可变的；可转换的"}]}
+          ]
+        },
+        {
+          "no": 8, "word": "reverse", "freq": 2, "page": 3,
+          "prons": [{"ipa": "/rɪˈvɜːs/", "senses": [
+            {"pos": "v.", "mean": "[[逆转]]；[[彻底改变]]；[[撤销]]"},
+            {"pos": "adj.", "mean": "[[相反的]]；[[反向的]]；后面的"},
+            {"pos": "n.", "mean": "[[逆转]]；后面；损失；倒挡"}
+          ]}],
+          "tip": {"type": "构词", "text": "re-（往回）+ verse（转）→ 逆转"},
+          "ex": {"type": "真", "year": 2018, "en": "They are trying to prevent, limit or even reverse disease by changing what patients eat.", "zh": "他们正试图通过改变患者的饮食来预防、限制甚至逆转疾病。", "key": ["reverse"]},
+          "ext": [
+            {"word": "reversal", "ipa": "/rɪˈvɜːsl/", "senses": [{"pos": "n.", "mean": "颠倒；彻底转变；倒退"}]},
+            {"word": "reversible", "ipa": "/rɪˈvɜːsəbl/", "senses": [{"pos": "adj.", "mean": "可逆的；可翻转的；可两面穿的，正反两用的"}]}
+          ]
+        },
+        {
+          "no": 9, "word": "anniversary", "freq": 1, "page": 3,
+          "prons": [{"ipa": "/ˌænɪˈvɜːsəri/", "senses": [{"pos": "n.", "mean": "[[周年纪念日]]"}]}],
+          "tip": {"type": "联想", "text": "anni（颠倒顺序变成 nian，“年”的拼音）+ vers（转）+ -ary（名词后缀）→ 一年转一次 → 周年纪念日"},
+          "ex": {"type": "例", "en": "The company is celebrating its 100-year anniversary this year.", "zh": "该公司正庆祝今年成立 100 周年。", "key": ["anniversary"]},
+          "ext": []
+        },
+        {
+          "no": 10, "word": "annual", "freq": 2, "page": 3,
+          "prons": [{"ipa": "/ˈænjuəl/", "senses": [{"pos": "adj.", "mean": "[[每年的]]；[[年度的]]；一年一次的"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“俺牛了”→ 希望“每年的”年终复盘我都能自豪地说：“俺牛了。”"},
+          "ex": {"type": "例", "en": "Funding will be awarded on an annual basis.", "zh": "资金将按年度发放。", "key": ["annual"]},
+          "ext": []
+        },
+        {
+          "no": 11, "word": "controversy", "freq": 2, "page": 3,
+          "prons": [{"ipa": "/ˈkɒntrəvɜːsi/", "senses": [{"pos": "n.", "mean": "[[争议]]；（公开的）[[争论]]，[[论战]]"}]}],
+          "tip": {"type": "构词", "text": "contro-（相反的）+ vers（旋转）+ -y（名词后缀）→ 转向相反的方向 → 争议；争论"},
+          "ex": {"type": "例", "en": "The controversy surrounding his latest movie continues.", "zh": "围绕他最新电影的争议仍在继续。", "key": ["controversy"]},
+          "ext": [{"word": "controversial", "ipa": "/ˌkɒntrəˈvɜːʃl/", "senses": [{"pos": "adj.", "mean": "引起争论的；有争议的"}]}]
+        },
+        {
+          "no": 12, "word": "contrary", "freq": 1, "page": 3,
+          "prons": [
+            {"ipa": "/ˈkɒntrəri/", "senses": [
+              {"pos": "adj.", "mean": "[[相对立的]]，[[相反的]]"},
+              {"pos": "n.", "mean": "[[相反的事实]]（或情况）"}
+            ]},
+            {"ipa": "/kənˈtreəri/", "senses": [{"pos": "adj.", "mean": "[[乖戾的]]；逆反的"}]}
+          ],
+          "tip": {"type": "联想", "text": "con-（全部）+ tra（音似“戳”）+ -(a)ry（形容词后缀）→ 全部人都戳他，大家都是与他“相对立的”人。"},
+          "ex": {"type": "例", "en": "Contrary to popular belief, many cats dislike milk.", "zh": "与普遍的看法相反，许多猫不喜欢牛奶。", "key": ["Contrary to"]},
+          "ext": []
+        },
+        {
+          "no": 13, "word": "contrast", "freq": 2, "page": 3,
+          "prons": [
+            {"ipa": "/ˈkɒntrɑːst/", "senses": [{"pos": "n.", "mean": "[[明显的差异]]；[[对比]]，[[对照]]"}]},
+            {"ipa": "/kənˈtrɑːst/", "senses": [{"pos": "v.", "mean": "[[对比]]，[[对照]]"}]}
+          ],
+          "tip": {"type": "联想", "text": "contra-（相反的）+ st（联想 street）→ 这条繁华的街和那条街形成了“对比”。"},
+          "ex": {"type": "真", "year": 2016, "en": "In contrast, the recent surge in world grain prices is trend-driven.", "zh": "相比之下，最近全球粮食价格的飞涨是趋势造成的。", "key": ["In contrast"]},
+          "ext": []
+        },
+        {
+          "no": 14, "word": "nasty", "freq": 2, "page": 3,
+          "prons": [{"ipa": "/ˈnɑːsti/", "senses": [{"pos": "adj.", "mean": "[[令人厌恶的]]；令人不快的；[[严重的]]；[[无礼的]]；危险的"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“那试题”→ 临近期末了，还有那么多试题没有做，这真是一件“令人不快的”事。"},
+          "ex": {"type": "例", "en": "He had a nasty accident.", "zh": "他出了严重的事故。", "key": ["nasty"]},
+          "ext": []
+        },
+        {
+          "no": 15, "word": "astronaut", "freq": 1, "page": 3,
+          "prons": [{"ipa": "/ˈæstrənɔːt/", "senses": [{"pos": "n.", "mean": "[[宇航员]]，航天员"}]}],
+          "tip": {"type": "构词", "text": "astro（星星；天体）+ -naut（水手，航行家）→ 星际航行者 → 宇航员，航天员"},
+          "ex": {"type": "真", "year": 2017, "en": "They tried to meet astronauts' specific requirements.", "zh": "他们试图满足宇航员的特殊要求。", "key": ["astronauts'"]},
+          "ext": []
+        },
+        {
+          "no": 16, "word": "heaven", "freq": 1, "page": 4,
+          "prons": [{"ipa": "/ˈhevn/", "senses": [{"pos": "n.", "mean": "[[天堂]]；[[天空]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“骇闻”→ 某人去了“天堂”，这样的消息骇人听闻。"},
+          "ex": {"type": "例", "en": "The island is truly a heaven on earth.", "zh": "那个岛堪称人间天堂。", "key": ["heaven"]},
+          "ext": []
+        },
+        {
+          "no": 17, "word": "satellite", "freq": 1, "page": 4,
+          "prons": [{"ipa": "/ˈsætəlaɪt/", "senses": [{"pos": "n.", "mean": "[[卫星]]；[[人造卫星]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“赛他莱特”→ 赛过莱特兄弟发明的飞机的，就是“人造卫星”了。"},
+          "ex": {"type": "例", "en": "The interview came live by satellite from Hollywood.", "zh": "采访通过卫星从好莱坞实时传送。", "key": ["satellite"]},
+          "ext": []
+        },
+        {
+          "no": 18, "word": "moon", "freq": 1, "page": 4,
+          "prons": [{"ipa": "/muːn/", "senses": [{"pos": "n.", "mean": "[[月亮]]；[[月球]]；[[卫星]]"}]}],
+          "tip": {"type": "对照", "text": "月亮（moon）走，我也走（move）。"},
+          "ex": {"type": "例", "en": "It makes us wonder if scientists can send a man to the moon.", "zh": "这使我们想知道科学家能否把人送上月球。", "key": ["moon"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "title": "develop 相关",
+      "pages": [4, 5],
+      "map": {
+        "w": "develop 相关",
+        "children": [
+          {"w": "developer", "children": [
+            {"w": "development", "children": [{"w": "developmental"}]}
+          ]},
+          {"w": "evolve", "children": [
+            {"w": "evolution", "rel": "扩", "children": [{"w": "evolutionary"}]},
+            {"w": "revolve", "rel": "同根", "children": [
+              {"w": "revolution", "rel": "扩"},
+              {"w": "revolutionary", "rel": "扩"}
+            ]},
+            {"w": "involve", "rel": "同根", "children": [
+              {"w": "involvement", "rel": "扩"},
+              {"w": "involved", "rel": "扩"}
+            ]}
+          ]},
+          {"w": "advance", "children": [
+            {"w": "advanced", "rel": "扩"},
+            {"w": "ahead", "rel": "相关", "children": [{"w": "ongoing"}]}
+          ]},
+          {"w": "improve", "children": [
+            {"w": "improvement", "rel": "扩"},
+            {"w": "approve", "rel": "同根", "children": [
+              {"w": "approval", "rel": "扩"},
+              {"w": "disapprove", "rel": "扩"},
+              {"w": "disapproval", "rel": "扩"},
+              {"w": "prove", "rel": "相关", "children": [{"w": "proof", "rel": "扩"}]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 19, "word": "develop", "freq": 1, "page": 4,
+          "prons": [{"ipa": "/dɪˈveləp/", "senses": [{"pos": "v.", "mean": "[[开发]]；[[发展]]；[[成长]]；[[增强]]；[[发挥]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“地位落魄”→ 地位落魄时需要“发展”。"},
+          "ex": {"type": "例", "en": "It takes time to develop new technology.", "zh": "开发新技术需要时间。", "key": ["develop"]},
+          "ext": [
+            {"word": "developer", "ipa": "/dɪˈveləpə(r)/", "senses": [{"pos": "n.", "mean": "（新产品的）开发者；开发商"}]},
+            {"word": "development", "ipa": "/dɪˈveləpmənt/", "senses": [{"pos": "n.", "mean": "发展；开发"}]},
+            {"word": "developmental", "ipa": "/dɪˌveləpˈmentl/", "senses": [{"pos": "adj.", "mean": "发育中的；进化中的；开发中的"}]}
+          ]
+        },
+        {
+          "no": 20, "word": "evolve", "freq": 3, "page": 4,
+          "prons": [{"ipa": "/ɪˈvɒlv/", "senses": [{"pos": "v.", "mean": "（使）演变，[[（使）进化]]；[[（使）发展]]"}]}],
+          "tip": {"type": "构词", "text": "e-（出去）+ volve（旋转，卷）→ 旋转出去就是螺旋式上升 → 进化；发展"},
+          "ex": {"type": "真", "year": 2020, "en": "Lunch boxes have evolved along with the transformation of schools.", "zh": "随着学校的改革，午餐盒也在不断发展。", "key": ["evolved"]},
+          "ext": [
+            {"word": "evolution", "ipa": "/ˌiːvəˈluːʃn/", "senses": [{"pos": "n.", "mean": "进化；发展"}]},
+            {"word": "evolutionary", "ipa": "/ˌiːvəˈluːʃənri/", "senses": [{"pos": "adj.", "mean": "进化的；逐渐发展的"}]}
+          ]
+        },
+        {
+          "no": 21, "word": "revolve", "freq": 1, "page": 4,
+          "prons": [{"ipa": "/rɪˈvɒlv/", "senses": [{"pos": "v.", "mean": "[[旋转]]；[[环绕]]；[[转动]]"}]}],
+          "tip": {"type": "构词", "text": "re-（表加强）+ volve（旋转）→ 旋转；环绕；转动"},
+          "ex": {"type": "例", "en": "The fan revolved slowly.", "zh": "电扇缓慢地转动着。", "key": ["revolved"]},
+          "ext": [
+            {"word": "revolution", "ipa": "/ˌrevəˈluːʃn/", "senses": [{"pos": "n.", "mean": "旋转；彻底变革（革命）"}]},
+            {"word": "revolutionary", "ipa": "/ˌrevəˈluːʃənri/", "senses": [{"pos": "adj.", "mean": "革命的；突破性的"}]}
+          ]
+        },
+        {
+          "no": 22, "word": "involve", "freq": 3, "page": 5,
+          "prons": [{"ipa": "/ɪnˈvɒlv/", "senses": [{"pos": "v.", "mean": "[[涉及]]；[[包含]]；[[需要]]"}]}],
+          "tip": {"type": "构词", "text": "in-（入）+ volve（旋转，卷）→ 卷入 → 涉及；包含"},
+          "ex": {"type": "例", "en": "The job involves me travelling all over the country.", "zh": "这份工作需要我在全国各地奔跑。", "key": ["involves"]},
+          "ext": [
+            {"word": "involvement", "ipa": "/ɪnˈvɒlvmənt/", "senses": [{"pos": "n.", "mean": "参与；加入；插手"}]},
+            {"word": "involved", "ipa": "/ɪnˈvɒlvd/", "senses": [{"pos": "adj.", "mean": "卷入的；有关的；复杂的"}]}
+          ]
+        },
+        {
+          "no": 23, "word": "advance", "freq": 1, "page": 5,
+          "prons": [{"ipa": "/ədˈvɑːns/", "senses": [
+            {"pos": "n.", "mean": "[[进展]]，[[进步]]；[[预先]]"},
+            {"pos": "v.", "mean": "[[进步]]；[[前进]]；[[推动]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "ad-（一再）+ vance（联想人名“万斯”）→ 万斯一再“进步”。"},
+          "ex": {"type": "真", "year": 2016, "en": "It contributes greatly to the advance of society as a whole.", "zh": "它对整个社会的进步做出了巨大贡献。", "key": ["advance"]},
+          "ext": [{"word": "advanced", "ipa": "/ədˈvɑːnst/", "senses": [{"pos": "adj.", "mean": "先进的；高级的"}]}]
+        },
+        {
+          "no": 24, "word": "ahead", "freq": 1, "page": 5,
+          "prons": [{"ipa": "/əˈhed/", "senses": [{"pos": "adv.", "mean": "[[向前]]；[[提前]]；[[领先]]"}]}],
+          "tip": {"type": "构词", "text": "a-（在……上）+ head（头）→ 在头上 → 领先"},
+          "ex": {"type": "真", "year": 2018, "en": "When they look ahead, they see roadblocks to their success.", "zh": "当他们展望未来时，他们看到了阻碍成功的重重障碍。", "key": ["ahead"]},
+          "ext": []
+        },
+        {
+          "no": 25, "word": "ongoing", "freq": 2, "page": 5,
+          "prons": [{"ipa": "/ˈɒnɡəʊɪŋ/", "senses": [{"pos": "adj.", "mean": "[[继续进行的]]，[[不断发展的]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The police investigation is ongoing.", "zh": "警方的调查在持续进行中。", "key": ["ongoing"]},
+          "ext": []
+        },
+        {
+          "no": 26, "word": "improve", "freq": 1, "page": 5,
+          "prons": [{"ipa": "/ɪmˈpruːv/", "senses": [{"pos": "v.", "mean": "[[改进]]；[[改善]]"}]}],
+          "tip": {"type": "联想", "text": "i（我）+ m（联想“妹”）+ prove（证明）→ 我妹妹为了证明自己，开始努力“改进”。"},
+          "ex": {"type": "例", "en": "Rewards can improve performance at work and school.", "zh": "奖励可以改善在工作和学校中的表现。", "key": ["improve"]},
+          "ext": [{"word": "improvement", "ipa": "/ɪmˈpruːvmənt/", "senses": [{"pos": "n.", "mean": "改进；改善"}]}]
+        },
+        {
+          "no": 27, "word": "approve", "freq": 2, "page": 5,
+          "prons": [{"ipa": "/əˈpruːv/", "senses": [{"pos": "v.", "mean": "[[批准]]；[[赞成]]，[[同意]]；[[认可]]"}]}],
+          "tip": {"type": "构词", "text": "ap-（= to）+ prove（证明）→ 向……证明 → 赞成"},
+          "ex": {"type": "例", "en": "Do you approve of my idea?", "zh": "你同意我的想法吗？", "key": ["approve of"]},
+          "ext": [
+            {"word": "approval", "ipa": "/əˈpruːvl/", "senses": [{"pos": "n.", "mean": "赞成；批准"}]},
+            {"word": "disapprove", "ipa": "/ˌdɪsəˈpruːv/", "senses": [{"pos": "v.", "mean": "反对，否决"}]},
+            {"word": "disapproval", "ipa": "/ˌdɪsəˈpruːvl/", "senses": [{"pos": "n.", "mean": "不赞成；反对"}]}
+          ]
+        },
+        {
+          "no": 28, "word": "proof", "freq": 2, "page": 5,
+          "prons": [{"ipa": "/pruːf/", "senses": [
+            {"pos": "n.", "mean": "[[证据，证明]]"},
+            {"pos": "adj.", "mean": "能抵御的"}
+          ]}],
+          "tip": {"type": "对照", "text": "prove v.证明，证实 → proof n. & adj."},
+          "ex": {"type": "例", "en": "So far there has been no proof that the knife belonged to her.", "zh": "到目前为止，还没有证据证明那把刀子是她的。", "key": ["proof"]},
+          "ext": [{"word": "prove", "ipa": "/pruːv/", "senses": [{"pos": "v.", "mean": "证明，证实；显示"}]}]
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "title": "en 相关",
+      "pages": [5, 6],
+      "map": {
+        "w": "en 相关",
+        "children": [
+          {"w": "enhance", "children": [{"w": "enhancement", "rel": "扩"}]},
+          {"w": "enable", "children": [
+            {"w": "enlarge", "children": [{"w": "enrich"}]}
+          ]},
+          {"w": "fasten", "children": [{"w": "buckle", "rel": "近义"}]},
+          {"w": "tighten", "children": [
+            {"w": "tight", "rel": "扩", "children": [{"w": "watertight", "rel": "合成"}]}
+          ]},
+          {"w": "loosen", "children": [
+            {"w": "loose", "rel": "扩", "children": [{"w": "undo", "rel": "近义"}]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 29, "word": "enhance", "freq": 3, "page": 6,
+          "prons": [{"ipa": "/ɪnˈhɑːns/", "senses": [{"pos": "v.", "mean": "[[提高]]；[[增强]]"}]}],
+          "tip": {"type": "联想", "text": "en-（使）+ hance（联想人名“汉斯”）→ 努力学习使汉斯“提高”了自身能力。"},
+          "ex": {"type": "例", "en": "This is an opportunity to enhance the reputation of the company.", "zh": "这是一个提高公司声誉的机会。", "key": ["enhance"]},
+          "ext": [{"word": "enhancement", "ipa": "/ɪnˈhɑːnsmənt/", "senses": [{"pos": "n.", "mean": "增强"}]}]
+        },
+        {
+          "no": 30, "word": "enable", "freq": 3, "page": 6,
+          "prons": [{"ipa": "/ɪˈneɪbl/", "senses": [{"pos": "v.", "mean": "[[使能够]]；[[使成为可能]]"}]}],
+          "tip": {"type": "构词", "text": "en-（使）+ able（能够）→ 使能够"},
+          "ex": {"type": "真", "year": 2024, "en": "Self-control enables you to avoid behaviours that don't contribute to your success.", "zh": "自我控制使你能够避免无益于你成功的行为。", "key": ["enables"]},
+          "ext": []
+        },
+        {
+          "no": 31, "word": "enlarge", "freq": 2, "page": 6,
+          "prons": [{"ipa": "/ɪnˈlɑːdʒ/", "senses": [{"pos": "v.", "mean": "[[扩大，扩展]]；[[详述]]"}]}],
+          "tip": {"type": "构词", "text": "en-（使）+ large（大）→ 扩大，扩展"},
+          "ex": {"type": "例", "en": "Reading will enlarge your vocabulary.", "zh": "阅读能扩大你的词汇量。", "key": ["enlarge"]},
+          "ext": []
+        },
+        {
+          "no": 32, "word": "enrich", "freq": 3, "page": 6,
+          "prons": [{"ipa": "/ɪnˈrɪtʃ/", "senses": [{"pos": "v.", "mean": "[[充实]]；[[使丰富]]；[[使饱含]]（某物）"}]}],
+          "tip": {"type": "构词", "text": "en-（使）+ rich（富有的）→ 充实；使丰富"},
+          "ex": {"type": "例", "en": "The liberal arts in higher education help enrich students' spiritual life.", "zh": "高等教育中的文科有助于丰富学生的精神生活。", "key": ["enrich"]},
+          "ext": []
+        },
+        {
+          "no": 33, "word": "fasten", "freq": 1, "page": 6,
+          "prons": [{"ipa": "/ˈfɑːsn/", "senses": [{"pos": "v.", "mean": "[[扎牢，扣住]]，[[系牢]]"}]}],
+          "tip": {"type": "联想", "text": "fast（快）+ -en（使）→ “系牢”鞋带能使你跑得更快。"},
+          "ex": {"type": "例", "en": "If you do not fasten your safety belt, your chances of being hurt will be greater.", "zh": "如果你不系牢安全带，你受伤的概率就会更大。", "key": ["fasten"]},
+          "ext": []
+        },
+        {
+          "no": 34, "word": "tight", "freq": 1, "page": 6,
+          "prons": [{"ipa": "/taɪt/", "senses": [
+            {"pos": "adj.", "mean": "[[牢固的]]，[[紧的]]；[[严密的]]；防……的"},
+            {"pos": "adv.", "mean": "[[紧紧地]]；[[牢固地]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“太大”→ 他的鞋子太大，于是他把鞋带“紧紧地”系了起来。"},
+          "ex": {"type": "例", "en": "These shoes are much too tight.", "zh": "这双鞋太紧了。", "key": ["tight"]},
+          "ext": [{"word": "tighten", "ipa": "/ˈtaɪtn/", "senses": [{"pos": "v.", "mean": "（使）变紧，更加牢固"}]}]
+        },
+        {
+          "no": 35, "word": "buckle", "freq": 1, "page": 6,
+          "prons": [{"ipa": "/ˈbʌkl/", "senses": [
+            {"pos": "v.", "mean": "[[扣住]]，[[扣紧]]；（被）压垮"},
+            {"pos": "n.", "mean": "（皮带等的）[[搭扣]]；[[锁扣]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“把扣”→ 开车时务必要把安全带“扣紧”。"},
+          "ex": {"type": "例", "en": "He buckled on his sword.", "zh": "他把剑扣好。", "key": ["buckled"]},
+          "ext": []
+        },
+        {
+          "no": 36, "word": "watertight", "freq": 1, "page": 6,
+          "prons": [{"ipa": "/ˈwɔːtətaɪt/", "senses": [{"pos": "adj.", "mean": "[[不透水的]]；[[防水的]]；严密的"}]}],
+          "tip": {"type": "构词", "text": "water（水）+ tight（防……的）→ 防水的"},
+          "ex": {"type": "例", "en": "The roof has been made watertight.", "zh": "屋顶已经做了防水处理。", "key": ["watertight"]},
+          "ext": []
+        },
+        {
+          "no": 37, "word": "loose", "freq": 1, "page": 6,
+          "prons": [{"ipa": "/luːs/", "senses": [
+            {"pos": "v.", "mean": "[[释放]]；[[松开]]"},
+            {"pos": "adj.", "mean": "[[未固定牢的]]；自由的"}
+          ]}],
+          "tip": {"type": "对照", "text": "松（loose）去个 o 变丢（lose）。"},
+          "ex": {"type": "例", "en": "One of the bricks feels slightly loose.", "zh": "有块砖似乎有点儿松动。", "key": ["loose"]},
+          "ext": [{"word": "loosen", "ipa": "/ˈluːsn/", "senses": [{"pos": "v.", "mean": "解开，松开；放宽"}]}]
+        },
+        {
+          "no": 38, "word": "undo", "freq": 1, "page": 6,
+          "prons": [{"ipa": "/ʌnˈduː/", "senses": [{"pos": "v.", "mean": "[[打开，解开]]；[[消除]]，[[取消]]"}]}],
+          "tip": {"type": "构词", "text": "un-（否定前缀）+ do（做）→ 打开；取消"},
+          "ex": {"type": "例", "en": "I undid the package and took out the books.", "zh": "我打开包裹取出书来。", "key": ["undid"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "title": "form 相关",
+      "pages": [7, 8],
+      "map": {
+        "w": "form 相关",
+        "children": [
+          {"w": "formal", "children": [{"w": "formality", "rel": "扩"}]},
+          {"w": "uniform", "children": [{"w": "uniformity", "rel": "扩"}]},
+          {"w": "format", "children": [{"w": "formation", "rel": "加ion"}]},
+          {"w": "perform", "children": [
+            {"w": "performance", "rel": "扩", "children": [
+              {"w": "performer", "children": [{"w": "drill", "rel": "相关"}]}
+            ]}
+          ]},
+          {"w": "inform", "children": [
+            {"w": "information", "rel": "扩", "children": [
+              {"w": "informative", "children": [{"w": "informant"}]}
+            ]},
+            {"w": "notify", "rel": "近义", "children": [
+              {"w": "notification", "rel": "扩", "children": [
+                {"w": "noticeable", "rel": "相关", "children": [{"w": "notice", "rel": "扩"}]}
+              ]}
+            ]}
+          ]},
+          {"w": "reform", "children": [
+            {"w": "reformation", "rel": "扩", "children": [{"w": "reformist"}]}
+          ]},
+          {"w": "conform", "children": [
+            {"w": "conformity", "rel": "扩"},
+            {"w": "comply", "rel": "近义", "children": [{"w": "compliance", "rel": "扩"}]}
+          ]},
+          {"w": "formula", "children": [
+            {"w": "formulate", "rel": "加te", "children": [
+              {"w": "formulation", "rel": "扩"},
+              {"w": "programme", "rel": "相关"}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 39, "word": "form", "freq": 1, "page": 7,
+          "prons": [{"ipa": "/fɔːm/", "senses": [
+            {"pos": "n.", "mean": "[[形式]]；[[表格]]"},
+            {"pos": "v.", "mean": "[[组成]]；[[（使）形成]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "for（为了）+ m（联想“妈”）→ 为了妈妈，“形式”上也得过得去。"},
+          "ex": {"type": "真", "year": 2023, "en": "One form of socialising doesn't replace the other.", "zh": "一种社交形式并不能取代另一种。", "key": ["form"]},
+          "ext": []
+        },
+        {
+          "no": 40, "word": "formal", "freq": 3, "page": 7,
+          "prons": [{"ipa": "/ˈfɔːml/", "senses": [{"pos": "adj.", "mean": "[[正式的]]；[[庄重的]]；正规的"}]}],
+          "tip": {"type": "构词", "text": "form（形式）+ -al（……的）→ 形式上的 → 正式的"},
+          "ex": {"type": "真", "year": 2023, "en": "Students' ability to learn formal writing is unlikely to be affected by texting.", "zh": "学生学习正式写作的能力不太可能受到发短信的影响。", "key": ["formal"]},
+          "ext": [{"word": "formality", "ipa": "/fɔːˈmæləti/", "senses": [{"pos": "n.", "mean": "正式手续；例行公事"}]}]
+        },
+        {
+          "no": 41, "word": "uniform", "freq": 2, "page": 7,
+          "prons": [{"ipa": "/ˈjuːnɪfɔːm/", "senses": [
+            {"pos": "n.", "mean": "[[校服，制服]]"},
+            {"pos": "adj.", "mean": "[[统一的]]"}
+          ]}],
+          "tip": {"type": "构词", "text": "uni-（统一）+ form（形式）→ 统一形式的衣服 → 校服，制服"},
+          "ex": {"type": "例", "en": "The hat is part of the school uniform.", "zh": "这个帽子是校服的一部分。", "key": ["uniform"]},
+          "ext": [{"word": "uniformity", "ipa": "/ˌjuːnɪˈfɔːməti/", "senses": [{"pos": "n.", "mean": "一致；单调；无变化"}]}]
+        },
+        {
+          "no": 42, "word": "formation", "freq": 1, "page": 7,
+          "prons": [{"ipa": "/fɔːˈmeɪʃn/", "senses": [{"pos": "n.", "mean": "[[形成，组成]]；[[形成物，组成物]]"}]}],
+          "tip": {"type": "对照", "text": "form v.形成 → formation n."},
+          "ex": {"type": "例", "en": "The particles interfere with the formation of carbon-14 on earth.", "zh": "这些粒子干扰了地球上碳 14 的形成。", "key": ["formation"]},
+          "ext": []
+        },
+        {
+          "no": 43, "word": "reform", "freq": 2, "page": 7,
+          "prons": [{"ipa": "/rɪˈfɔːm/", "senses": [{"pos": "n. & v.", "mean": "[[改革，改善]]"}]}],
+          "tip": {"type": "构词", "text": "re-（再）+ form（形成；形式）→ 再形成（新形式）→ 改革"},
+          "ex": {"type": "真", "year": 2021, "en": "It may force companies to reform their business practice.", "zh": "它可能会迫使公司改革其商业惯例。", "key": ["reform"]},
+          "ext": [
+            {"word": "reformation", "ipa": "/ˌrefəˈmeɪʃn/", "senses": [{"pos": "n.", "mean": "改革；改进"}]},
+            {"word": "reformist", "ipa": "/rɪˈfɔːmɪst/", "senses": [
+              {"pos": "n.", "mean": "改良者，改革者"},
+              {"pos": "adj.", "mean": "主张改革的；改革派的；改良主义的"}
+            ]}
+          ]
+        },
+        {
+          "no": 44, "word": "format", "freq": 1, "page": 7,
+          "prons": [{"ipa": "/ˈfɔːmæt/", "senses": [
+            {"pos": "n.", "mean": "[[总体安排]]；[[计划]]；[[设计]]"},
+            {"pos": "v.", "mean": "[[格式化]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The format of the new quiz show has proved popular.", "zh": "新的智力竞赛节目的总体安排已被证明很受欢迎。", "key": ["format"]},
+          "ext": []
+        },
+        {
+          "no": 45, "word": "conform", "freq": 1, "page": 7,
+          "prons": [{"ipa": "/kənˈfɔːm/", "senses": [{"pos": "v.", "mean": "（～ to）[[遵守]]；[[顺从]]；[[相一致]]"}]}],
+          "tip": {"type": "构词", "text": "con-（共同）+ form（形式）→ 使形式统一 → 遵守；顺从；相一致"},
+          "ex": {"type": "真", "year": 2022, "en": "A behaviour that does not conform to social norms may be described as being deviant.", "zh": "不遵守社会规范的行为可能被描述为偏离常轨。", "key": ["conform to"]},
+          "ext": [{"word": "conformity", "ipa": "/kənˈfɔːməti/", "senses": [{"pos": "n.", "mean": "（对社会规则的）遵从，遵守"}]}]
+        },
+        {
+          "no": 46, "word": "comply", "freq": 1, "page": 8,
+          "prons": [{"ipa": "/kəmˈplaɪ/", "senses": [{"pos": "v.", "mean": "[[遵守]]；[[顺从]]"}]}],
+          "tip": {"type": "联想", "text": "com-（一起）+ ply（音似“扑来”）→ 他们“遵守”规定，一起扑来倒在地上。"},
+          "ex": {"type": "例", "en": "They refused to comply with the UN resolution.", "zh": "他们拒绝遵守联合国的决议。", "key": ["comply with"]},
+          "ext": [{"word": "compliance", "ipa": "/kəmˈplaɪəns/", "senses": [{"pos": "n.", "mean": "遵从；服从；顺从"}]}]
+        },
+        {
+          "no": 47, "word": "formulate", "freq": 1, "page": 8,
+          "prons": [{"ipa": "/ˈfɔːmjuleɪt/", "senses": [{"pos": "v.", "mean": "[[确切表达]]；[[认真阐述]]；[[制定]]；[[规划]]；[[构想]]"}]}],
+          "tip": {"type": "联想", "text": "for（音似 four）+ mu（联想“母”）+ late（迟到）→ 开家长会时，四个妈妈迟到了，她们“认真阐述”了理由。"},
+          "ex": {"type": "例", "en": "He struggled to formulate an answer.", "zh": "他努力想出一个答案。", "key": ["formulate"]},
+          "ext": [{"word": "formulation", "ipa": "/ˌfɔːmjuˈleɪʃn/", "senses": [{"pos": "n.", "mean": "制定；规划；构想；确切表达"}]}]
+        },
+        {
+          "no": 48, "word": "formula", "freq": 1, "page": 8,
+          "prons": [{"ipa": "/ˈfɔːmjələ/", "senses": [{"pos": "n.", "mean": "[[公式]]；[[方程式]]"}]}],
+          "tip": {"type": "对照", "text": "有了规划（formulate），就可以套公式（formula）了。"},
+          "ex": {"type": "真", "year": 2022, "en": "They copy formulas on their palms.", "zh": "他们把公式抄在手掌上。", "key": ["formulas"]},
+          "ext": []
+        },
+        {
+          "no": 49, "word": "programme", "alt": "program", "freq": 3, "page": 8,
+          "prons": [{"ipa": "/ˈprəʊɡræm/", "senses": [
+            {"pos": "n.", "mean": "[[计划]]；[[程序]]；[[节目]]；[[项目]]"},
+            {"pos": "v.", "mean": "（为计算机）[[编写程序]]；预设"}
+          ]}],
+          "tip": {"type": "联想", "text": "pro-（往前）+ gr（联想“官人”）+ amme（联想“阿妹”）→ 官人按“计划”追求阿妹。"},
+          "ex": {"type": "真", "year": 2024, "en": "In a pilot programme, students are given electronic devices to do assignments when schools are closed.", "zh": "在一个试点项目中，当学校停课时，学生们可以使用电子设备完成作业。", "key": ["programme"]},
+          "ext": []
+        },
+        {
+          "no": 50, "word": "perform", "freq": 3, "page": 8,
+          "prons": [{"ipa": "/pəˈfɔːm/", "senses": [{"pos": "v.", "mean": "[[做]]；[[执行]]；[[表演]]；[[工作]]；[[运转]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2023, "en": "Lion dancers need to have a little imagination to perform well.", "zh": "舞狮者需要有一点想象力才能表演好。", "key": ["perform"]},
+          "ext": [
+            {"word": "performance", "ipa": "/pəˈfɔːməns/", "senses": [{"pos": "n.", "mean": "表演；表现；业绩，成绩；执行"}]},
+            {"word": "performer", "ipa": "/pəˈfɔːmə(r)/", "senses": [{"pos": "n.", "mean": "表演者；演出者"}]}
+          ]
+        },
+        {
+          "no": 51, "word": "drill", "freq": 2, "page": 8,
+          "prons": [{"ipa": "/drɪl/", "senses": [
+            {"pos": "v.", "mean": "[[钻（孔）]]；[[训练]]；作……演习"},
+            {"pos": "n.", "mean": "[[钻头]]；（应对紧急情况的）[[演习]]，[[训练]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "dri（音似“锥”）+ ll（形似数字 11）→ 他用锥子在墙上“钻”了 11 个孔。"},
+          "ex": {"type": "例", "en": "The dentist started drilling my tooth.", "zh": "牙医开始钻我的牙。", "key": ["drilling"]},
+          "ext": []
+        },
+        {
+          "no": 52, "word": "inform", "freq": 3, "page": 8,
+          "prons": [{"ipa": "/ɪnˈfɔːm/", "senses": [{"pos": "v.", "mean": "[[通知，告知]]；[[了解，熟悉]]"}]}],
+          "tip": {"type": "对照", "text": "information n.信息 → inform v."},
+          "ex": {"type": "真", "year": 2020, "en": "She is well informed about the design business.", "zh": "她对设计业务很了解。", "key": ["informed"]},
+          "ext": [
+            {"word": "information", "ipa": "/ˌɪnfəˈmeɪʃn/", "senses": [{"pos": "n.", "mean": "信息；消息；情报；资料"}]},
+            {"word": "informative", "ipa": "/ɪnˈfɔːmətɪv/", "senses": [{"pos": "adj.", "mean": "提供有用信息的；给予知识的"}]},
+            {"word": "informant", "ipa": "/ɪnˈfɔːmənt/", "senses": [{"pos": "n.", "mean": "告密者；合作者"}]}
+          ]
+        },
+        {
+          "no": 53, "word": "notify", "freq": 1, "page": 8,
+          "prons": [{"ipa": "/ˈnəʊtɪfaɪ/", "senses": [{"pos": "v.", "mean": "（正式）[[通报，通知]]"}]}],
+          "tip": {"type": "对照", "text": "notice n.通知 → notify v."},
+          "ex": {"type": "真", "year": 2016, "en": "When the system thinks it's being jammed, it'll notify you via push alert.", "zh": "当系统认为自己被干扰时，它会通过推送警报通知你。", "key": ["notify"]},
+          "ext": [{"word": "notification", "ipa": "/ˌnəʊtɪfɪˈkeɪʃn/", "senses": [{"pos": "n.", "mean": "通知，通告，告示"}]}]
+        },
+        {
+          "no": 54, "word": "noticeable", "freq": 1, "page": 8,
+          "prons": [{"ipa": "/ˈnəʊtɪsəbl/", "senses": [{"pos": "adj.", "mean": "[[显著的]]；[[显而易见的]]"}]}],
+          "tip": {"type": "构词", "text": "notice（注意）+ -able（能够）→ 能够注意到的 → 显著的；显而易见的"},
+          "ex": {"type": "例", "en": "There is a noticeable difference between the two brands.", "zh": "这两个品牌有明显的区别。", "key": ["noticeable"]},
+          "ext": [{"word": "notice", "ipa": "/ˈnəʊtɪs/", "senses": [
+            {"pos": "n.", "mean": "通知；公告牌；注意；警告"},
+            {"pos": "v.", "mean": "注意到，留意"}
+          ]}]
+        }
+      ]
+    }
+  ]
+}

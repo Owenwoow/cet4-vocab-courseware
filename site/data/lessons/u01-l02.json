@@ -1,0 +1,463 @@
+{
+  "id": "u01-l02",
+  "part": 1,
+  "unit": 1,
+  "lesson": 2,
+  "pages": [9, 13],
+  "groups": [
+    {
+      "no": 5,
+      "title": "“大海”相关",
+      "pages": [9, 10],
+      "map": {
+        "w": "“大海”相关",
+        "children": [
+          {"w": "coast", "children": [
+            {"w": "coastal", "rel": "扩"},
+            {"w": "toast", "rel": "形近", "children": [{"w": "roast"}]}
+          ]},
+          {"w": "shore", "children": [
+            {"w": "bay", "children": [
+              {"w": "beach", "children": [
+                {"w": "bench", "rel": "形近"},
+                {"w": "island", "rel": "相关", "children": [{"w": "inland"}]}
+              ]}
+            ]}
+          ]},
+          {"w": "sail", "children": [
+            {"w": "sailing", "rel": "扩", "children": [{"w": "sailor"}]},
+            {"w": "harbour", "rel": "相关", "children": [
+              {"w": "embrace", "rel": "近义"},
+              {"w": "shelter", "rel": "近义", "children": [
+                {"w": "shade", "rel": "相关", "children": [
+                  {"w": "shady", "rel": "扩"},
+                  {"w": "shave", "rel": "形近", "children": [{"w": "shaver", "rel": "扩"}]}
+                ]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "coast", "freq": 1, "page": 9,
+          "prons": [{"ipa": "/kəʊst/", "senses": [{"pos": "n.", "mean": "[[海岸]]；海滨"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“靠死它” → 靠山吃山，靠“海岸”吃海。"},
+          "ex": {"type": "真", "year": 2024, "en": "One city on the west coast of America has banned single-use bottles from its property and events.", "zh": "美国西海岸的一个城市禁止在其公有财产处所和活动中使用一次性瓶子。", "key": ["coast"]},
+          "ext": [{"word": "coastal", "ipa": "/ˈkəʊstl/", "senses": [{"pos": "adj.", "mean": "沿海的，靠近海岸的"}]}]
+        },
+        {
+          "no": 2, "word": "toast", "freq": 1, "page": 9,
+          "prons": [{"ipa": "/təʊst/", "senses": [
+            {"pos": "v.", "mean": "为……干杯；[[烤]]"},
+            {"pos": "n.", "mean": "[[吐司]]；祝酒，敬酒"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“吐司” → “吐司”是“烤”的面包片。"},
+          "ex": {"type": "例", "en": "I usually have a piece of toast for breakfast every day.", "zh": "我通常每天早餐吃一片吐司。", "key": ["toast"]},
+          "ext": []
+        },
+        {
+          "no": 3, "word": "roast", "freq": 1, "page": 9,
+          "prons": [{"ipa": "/rəʊst/", "senses": [
+            {"pos": "v.", "mean": "[[烤]]；烘"},
+            {"pos": "n.", "mean": "[[烤肉]]；庆祝会"},
+            {"pos": "adj.", "mean": "[[烤的，焙的]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "他在海岸（coast）上吃烧烤（roast），一边干杯（toast），一边吹牛（boast）。"},
+          "ex": {"type": "例", "en": "The menu included roast grouse.", "zh": "菜单里有烤松鸡肉。", "key": ["roast"]},
+          "ext": []
+        },
+        {
+          "no": 4, "word": "sail", "freq": 1, "page": 9,
+          "prons": [{"ipa": "/seɪl/", "senses": [
+            {"pos": "v.", "mean": "[[航行]]；开船；在……上航行；驾驶（船）"},
+            {"pos": "n.", "mean": "[[帆]]；航行"}
+          ]}],
+          "tip": {"type": "对照", "text": "他扬帆（sail）在海（sea）上航行（sail）。"},
+          "ex": {"type": "例", "en": "People laughed when he said that he wanted to sail around the world.", "zh": "当他说他想环球航行时，人们都笑了。", "key": ["sail"]},
+          "ext": [
+            {"word": "sailing", "ipa": "/ˈseɪlɪŋ/", "senses": [{"pos": "n.", "mean": "航海"}]},
+            {"word": "sailor", "ipa": "/ˈseɪlə(r)/", "senses": [{"pos": "n.", "mean": "水手，海员"}]}
+          ]
+        },
+        {
+          "no": 5, "word": "shore", "freq": 1, "page": 9,
+          "prons": [{"ipa": "/ʃɔː(r)/", "senses": [{"pos": "n.", "mean": "[[岸，滨]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“首尔” → 首尔部分区域位于汉江两“岸”。"},
+          "ex": {"type": "例", "en": "We spent our vacation at the shore.", "zh": "我们的假期在海滨度过。", "key": ["shore"]},
+          "ext": []
+        },
+        {
+          "no": 6, "word": "island", "freq": 1, "page": 9,
+          "prons": [{"ipa": "/ˈaɪlənd/", "senses": [{"pos": "n.", "mean": "[[岛]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“爱尔兰” → 爱尔兰共和国位于爱尔兰“岛”。"},
+          "ex": {"type": "真", "year": 2017, "en": "They settled on a small island north of England.", "zh": "他们在英格兰北部的一个小岛上定居了。", "key": ["island"]},
+          "ext": []
+        },
+        {
+          "no": 7, "word": "inland", "freq": 1, "page": 9,
+          "prons": [
+            {"ipa": "/ˌɪnˈlænd/", "senses": [{"pos": "adv.", "mean": "[[向（或在）内陆]]"}]},
+            {"ipa": "/ˈɪnlænd/", "senses": [{"pos": "adj.", "mean": "[[内陆的]]"}]}
+          ],
+          "tip": null,
+          "ex": {"type": "例", "en": "We travelled further inland the next day.", "zh": "我们第二天继续向内陆行进。", "key": ["inland"]},
+          "ext": []
+        },
+        {
+          "no": 8, "word": "beach", "freq": 1, "page": 9,
+          "prons": [{"ipa": "/biːtʃ/", "senses": [{"pos": "n.", "mean": "[[海滩]]，沙滩，海滨"}]}],
+          "tip": {"type": "对照", "text": "他坐在沙滩（beach）上吃桃子（peach）。"},
+          "ex": {"type": "真", "year": 2019, "en": "He lost his way on a beach.", "zh": "他在海滩上迷了路。", "key": ["beach"]},
+          "ext": []
+        },
+        {
+          "no": 9, "word": "bench", "freq": 1, "page": 10,
+          "prons": [{"ipa": "/bentʃ/", "senses": [{"pos": "n.", "mean": "[[长凳]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“奔驰” → 奔驰车内部空间很大，座椅较长 → 长凳"},
+          "ex": {"type": "真", "year": 2017, "en": "I remember sitting on a bench with my aunt at a yoga studio.", "zh": "我记得我和阿姨一起坐在瑜伽工作室的长凳上。", "key": ["bench"]},
+          "ext": []
+        },
+        {
+          "no": 10, "word": "harbour", "alt": "harbor", "freq": 1, "page": 10,
+          "prons": [{"ipa": "/ˈhɑːbə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[港口]]"},
+            {"pos": "v.", "mean": "[[庇护]]；包含"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“哈勃” → 哈勃空间望远镜难以直接观测“港口”细节。"},
+          "ex": {"type": "例", "en": "Several boats lay at anchor in the harbour.", "zh": "港口停泊着几条船。", "key": ["harbour"]},
+          "ext": []
+        },
+        {
+          "no": 11, "word": "embrace", "freq": 2, "page": 10,
+          "prons": [{"ipa": "/ɪmˈbreɪs/", "senses": [
+            {"pos": "v.", "mean": "[[拥抱]]；包含"},
+            {"pos": "n.", "mean": "[[拥抱]]"}
+          ]}],
+          "tip": {"type": "构词", "text": "em-（入）+ brace（大括号） → 进入大括号中 → 拥抱；包含"},
+          "ex": {"type": "真", "year": 2022, "en": "Evil behavior is typically thought to embrace one or both forms.", "zh": "邪恶的行为通常被认为包含一种或两种形式。", "key": ["embrace"]},
+          "ext": []
+        },
+        {
+          "no": 12, "word": "bay", "freq": 1, "page": 10,
+          "prons": [{"ipa": "/beɪ/", "senses": [{"pos": "n.", "mean": "[[海湾]]；分隔间"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“贝” → “海湾”里有很多贝壳。"},
+          "ex": {"type": "真", "year": 2019, "en": "It is a place in Upper New York Bay formerly used for exiles.", "zh": "这是上纽约湾的一个地方，以前是流放者的所在地。", "key": ["Bay"]},
+          "ext": []
+        },
+        {
+          "no": 13, "word": "shelter", "freq": 1, "page": 10,
+          "prons": [{"ipa": "/ˈʃeltə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[掩蔽]]；[[避难所]]"},
+            {"pos": "v.", "mean": "[[提供庇护]]；[[躲避]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“歇了他” → 他实在太累了，在“避难所”歇下了。"},
+          "ex": {"type": "真", "year": 2017, "en": "They have to look for food and shelter underground.", "zh": "他们不得不在地下寻找食物和避难所。", "key": ["shelter"]},
+          "ext": []
+        },
+        {
+          "no": 14, "word": "shade", "freq": 1, "page": 10,
+          "prons": [{"ipa": "/ʃeɪd/", "senses": [
+            {"pos": "n.", "mean": "[[阴凉处，暗处]]"},
+            {"pos": "v.", "mean": "[[为……遮挡（光线）]]，[[遮蔽]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "sha（联想“沙”）+ de（联想“得”） → 他从“阴凉处”的沙地里淘得了一块金子。"},
+          "ex": {"type": "真", "year": 2021, "en": "Most animals seek shade when temperatures in the Sahara Desert soar to 120 degrees Fahrenheit.", "zh": "当撒哈拉沙漠的温度飙升到120华氏度时，大多数动物都会寻找阴凉的地方。", "key": ["shade"]},
+          "ext": [{"word": "shady", "ipa": "/ˈʃeɪdi/", "senses": [{"pos": "adj.", "mean": "背阴的；阴凉的；多阴的；成荫的；可疑的"}]}]
+        },
+        {
+          "no": 15, "word": "shave", "freq": 1, "page": 10,
+          "prons": [{"ipa": "/ʃeɪv/", "senses": [
+            {"pos": "v.", "mean": "[[剃，刮去（毛发）]]；削减，调低"},
+            {"pos": "n.", "mean": "[[刮脸，剃须]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“洗我” → 洗完脸，我又“刮去”了胡子。"},
+          "ex": {"type": "例", "en": "He has completely shaved his head.", "zh": "他剃了一个光头。", "key": ["shaved"]},
+          "ext": [{"word": "shaver", "ipa": "/ˈʃeɪvə(r)/", "senses": [{"pos": "n.", "mean": "电动剃须刀"}]}]
+        }
+      ]
+    },
+    {
+      "no": 6,
+      "title": "“绑”相关",
+      "pages": [10, 11],
+      "map": {
+        "w": "“绑”相关",
+        "children": [
+          {"w": "belt", "children": [
+            {"w": "bond", "children": [{"w": "bondage", "rel": "扩"}]}
+          ]},
+          {"w": "bind", "children": [
+            {"w": "blind", "rel": "形近", "children": [{"w": "deaf", "rel": "相关"}]},
+            {"w": "bend", "rel": "形近", "children": [
+              {"w": "twist", "rel": "近义"},
+              {"w": "blend", "rel": "形近", "children": [
+                {"w": "mix", "rel": "近义", "children": [
+                  {"w": "mixture", "rel": "扩", "children": [{"w": "mixer"}]},
+                  {"w": "stir", "rel": "相关"}
+                ]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 16, "word": "belt", "freq": 1, "page": 10,
+          "prons": [{"ipa": "/belt/", "senses": [
+            {"pos": "n.", "mean": "[[地带]]；腰带"},
+            {"pos": "v.", "mean": "猛击；用带子系住"}
+          ]}],
+          "tip": {"type": "联想", "text": "be（是）+ l（形似数字 1）+ t（联想“条”） → 这是一条“腰带”。"},
+          "ex": {"type": "例", "en": "New roads are cutting into the green belt.", "zh": "一条条新路在逐渐吞噬着绿化地带。", "key": ["belt"]},
+          "ext": []
+        },
+        {
+          "no": 17, "word": "bond", "freq": 1, "page": 11,
+          "prons": [{"ipa": "/bɒnd/", "senses": [
+            {"pos": "n.", "mean": "[[纽带]]；联系；债券"},
+            {"pos": "v.", "mean": "（使）牢固结合"}
+          ]}],
+          "tip": {"type": "联想", "text": "b + on（上面）+ d → b 在 d 上面，两者“牢固结合”在一起。"},
+          "ex": {"type": "例", "en": "It will help strengthen their emotional bonds.", "zh": "这将有助于加强他们的情感联系。", "key": ["bonds"]},
+          "ext": [{"word": "bondage", "ipa": "/ˈbɒndɪdʒ/", "senses": [{"pos": "n.", "mean": "奴役；束缚"}]}]
+        },
+        {
+          "no": 18, "word": "bind", "freq": 1, "page": 11,
+          "prons": [{"ipa": "/baɪnd/", "senses": [{"pos": "v.", "mean": "[[捆绑，系]]，（用长布条）缠绕；[[结合]]；[[约束]]"}]}],
+          "tip": {"type": "联想", "text": "b + in（里面）+ d → b 在 d 里面，两者被“系”在一起。"},
+          "ex": {"type": "例", "en": "The ties that bind us together are so feeble.", "zh": "把我们联系在一起的纽带是如此脆弱。", "key": ["bind"]},
+          "ext": []
+        },
+        {
+          "no": 19, "word": "blind", "freq": 1, "page": 11,
+          "prons": [{"ipa": "/blaɪnd/", "senses": [
+            {"pos": "adj.", "mean": "[[失明的]]；[[盲目的]]"},
+            {"pos": "v.", "mean": "[[使失明]]；使失去判断能力"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“不灵的” → 眼睛不灵的 → 失明的；盲目的"},
+          "ex": {"type": "真", "year": 2023, "en": "Intelligent people are more prone to silly mistakes because of blind spots in how they use logic.", "zh": "聪明的人更容易犯愚蠢的错误，因为他们在使用逻辑时存在盲点。", "key": ["blind"]},
+          "ext": []
+        },
+        {
+          "no": 20, "word": "deaf", "freq": 1, "page": 11,
+          "prons": [{"ipa": "/def/", "senses": [{"pos": "adj.", "mean": "[[聋的]]；[[失聪的]]；对……充耳不闻的"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“大夫” → 她一直叫大夫，大夫却听不见，因为她是个“失聪的”人。"},
+          "ex": {"type": "真", "year": 2022, "en": "He is a deaf person working in IT.", "zh": "他是一个在信息技术行业工作的失聪者。", "key": ["deaf"]},
+          "ext": []
+        },
+        {
+          "no": 21, "word": "bend", "freq": 2, "page": 11,
+          "prons": [{"ipa": "/bend/", "senses": [
+            {"pos": "v.", "mean": "[[使弯曲]]；[[折弯]]；[[偏向]]"},
+            {"pos": "n.", "mean": "[[弯道]]；[[弯曲]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "b + end（最后） → b 到最后“弯曲”成了 d。"},
+          "ex": {"type": "例", "en": "The doctor told me to avoid bending and stretching.", "zh": "医生告诉我要避免弯曲和拉伸。", "key": ["bending"]},
+          "ext": []
+        },
+        {
+          "no": 22, "word": "twist", "freq": 2, "page": 11,
+          "prons": [{"ipa": "/twɪst/", "senses": [
+            {"pos": "v.", "mean": "[[使弯曲]]；（使）[[扭曲变形]]；[[转动]]；[[歪曲]]"},
+            {"pos": "n.", "mean": "[[扭动]]；[[转弯处]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“推死他” → 他被人使劲推出去了，气得脸都“扭曲变形”了。"},
+          "ex": {"type": "例", "en": "Twist the wire to form a circle.", "zh": "把铁丝弯成一个环。", "key": ["Twist"]},
+          "ext": []
+        },
+        {
+          "no": 23, "word": "blend", "freq": 2, "page": 11,
+          "prons": [{"ipa": "/blend/", "senses": [{"pos": "v.", "mean": "[[混合，融合]]"}]}],
+          "tip": {"type": "联想", "text": "b（音似“不”）+ lend（借给） → 不要把书借给他，因为他会把书弄混的 → 混合"},
+          "ex": {"type": "例", "en": "Blend together the eggs, sugar and flour.", "zh": "把鸡蛋、糖和面粉混合到一起。", "key": ["Blend"]},
+          "ext": []
+        },
+        {
+          "no": 24, "word": "mix", "freq": 1, "page": 11,
+          "prons": [{"ipa": "/mɪks/", "senses": [
+            {"pos": "n.", "mean": "[[混合]]；混乱"},
+            {"pos": "v.", "mean": "（使）[[混合]]；配制"}
+          ]}],
+          "tip": {"type": "联想", "text": "mi（音似“米”）+ x（联想“线”） → 那个美国人以为把米和线“混合”起来是米线。"},
+          "ex": {"type": "例", "en": "If you mix blue and yellow, you get green.", "zh": "如果你把蓝色和黄色相混合，那你会得到绿色。", "key": ["mix"]},
+          "ext": [
+            {"word": "mixture", "ipa": "/ˈmɪkstʃə(r)/", "senses": [{"pos": "n.", "mean": "混合；混合物"}]},
+            {"word": "mixer", "ipa": "/ˈmɪksə(r)/", "senses": [{"pos": "n.", "mean": "搅拌器；混合器"}]}
+          ]
+        },
+        {
+          "no": 25, "word": "stir", "freq": 1, "page": 11,
+          "prons": [{"ipa": "/stɜː(r)/", "senses": [
+            {"pos": "n.", "mean": "（一些人感到的）[[激动，震动]]；[[搅动]]"},
+            {"pos": "v.", "mean": "[[搅和，搅拌]]；打动；[[激发]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "s（联想“美女”）+ tir（音似“特”） → 那个美女特爱“搅拌”面粉来做美食。"},
+          "ex": {"type": "例", "en": "It's a book that really stirs the imagination.", "zh": "这是一本能够真正激发想象力的书。", "key": ["stirs"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 7,
+      "title": "“大山”相关",
+      "pages": [12, 13],
+      "map": {
+        "w": "mountain",
+        "children": [
+          {"w": "mountainous", "children": [
+            {"w": "fountain", "children": [
+              {"w": "profound", "rel": "形近"},
+              {"w": "foundation", "rel": "形近", "children": [
+                {"w": "base", "rel": "近义", "children": [
+                  {"w": "basement", "rel": "扩"},
+                  {"w": "basic", "rel": "相关", "children": [{"w": "basically", "rel": "扩"}]},
+                  {"w": "basis", "rel": "相关"}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"w": "mount", "children": [
+            {"w": "mounting", "rel": "扩"},
+            {"w": "amount", "rel": "加a"},
+            {"w": "soar", "rel": "近义"},
+            {"w": "ascend", "rel": "近义", "children": [
+              {"w": "descend", "rel": "反义", "children": [
+                {"w": "descent", "rel": "扩", "children": [{"w": "descendant"}]}
+              ]},
+              {"w": "decline", "rel": "反义", "children": [
+                {"w": "incline", "rel": "形近", "children": [
+                  {"w": "inclination", "rel": "扩", "children": [{"w": "inclined"}]}
+                ]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 26, "word": "mountain", "freq": 1, "page": 12,
+          "prons": [{"ipa": "/ˈmaʊntən/", "senses": [{"pos": "n.", "mean": "[[山]]；高山"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2017, "en": "To enjoy the magnificence of a mountain, you have to look upwards in most cases.", "zh": "在大多数情况下，要欣赏大山的壮丽，你必须仰视。", "key": ["mountain"]},
+          "ext": [{"word": "mountainous", "ipa": "/ˈmaʊntənəs/", "senses": [{"pos": "adj.", "mean": "多山的"}]}]
+        },
+        {
+          "no": 27, "word": "fountain", "freq": 1, "page": 12,
+          "prons": [{"ipa": "/ˈfaʊntən/", "senses": [{"pos": "n.", "mean": "泉水；[[喷泉]]；源泉"}]}],
+          "tip": {"type": "联想", "text": "foun（联想 found，建立）+ tain（联想 mountain） → 他们建的假山在“喷泉”旁边。"},
+          "ex": {"type": "例", "en": "The new cream is marketed as the fountain of youth.", "zh": "这种新面霜被营销成青春源泉。", "key": ["fountain"]},
+          "ext": []
+        },
+        {
+          "no": 28, "word": "profound", "freq": 1, "page": 12,
+          "prons": [{"ipa": "/prəˈfaʊnd/", "senses": [{"pos": "adj.", "mean": "[[影响深远的]]；[[深切的]]；[[理解深刻的]]；[[深厚的]]"}]}],
+          "tip": {"type": "联想", "text": "pro-（前）+ found（建立） → 武侠片中，早前成立的大多是“影响深远的”门派。"},
+          "ex": {"type": "例", "en": "Beijing has a profound cultural background.", "zh": "北京有着深厚的文化底蕴。", "key": ["profound"]},
+          "ext": []
+        },
+        {
+          "no": 29, "word": "foundation", "freq": 2, "page": 12,
+          "prons": [{"ipa": "/faʊnˈdeɪʃn/", "senses": [{"pos": "n.", "mean": "[[地基]]；[[基础]]；[[根据]]"}]}],
+          "tip": {"type": "构词", "text": "found（建立）+ -ation（名词后缀） → 地基；基础；根据"},
+          "ex": {"type": "真", "year": 2021, "en": "Many people believe that passion and commitment are the foundations of strong romantic relationships.", "zh": "许多人认为，激情和承诺是牢固的恋爱关系的基础。", "key": ["foundations"]},
+          "ext": []
+        },
+        {
+          "no": 30, "word": "base", "freq": 1, "page": 12,
+          "prons": [{"ipa": "/beɪs/", "senses": [
+            {"pos": "n.", "mean": "[[基础]]；[[根据]]"},
+            {"pos": "v.", "mean": "以……为据点（或总部等）；[[把（总部等）设在]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“贝斯” → 贝斯通常是乐队中的“基础”乐器。"},
+          "ex": {"type": "真", "year": 2016, "en": "Then students select an adviser, based on shared academic interests.", "zh": "然后学生根据共同的学术兴趣选择导师。", "key": ["based on"]},
+          "ext": [{"word": "basement", "ipa": "/ˈbeɪsmənt/", "senses": [{"pos": "n.", "mean": "地下室"}]}]
+        },
+        {
+          "no": 31, "word": "basic", "freq": 1, "page": 12,
+          "prons": [{"ipa": "/ˈbeɪsɪk/", "senses": [{"pos": "adj.", "mean": "[[基本的]]；[[初级的]]；[[必需的]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The diving suit and a set of basic tools needed for skin-diving can be bought for 20 dollars.", "zh": "自由潜水所需的潜水衣和一套基本工具只需20美元。", "key": ["basic"]},
+          "ext": [{"word": "basically", "ipa": "/ˈbeɪsɪkli/", "senses": [{"pos": "adv.", "mean": "基本上；总的来说"}]}]
+        },
+        {
+          "no": 32, "word": "basis", "freq": 1, "page": 12,
+          "prons": [{"ipa": "/ˈbeɪsɪs/", "senses": [{"pos": "n.", "mean": "[[原因]]；[[基础]]；[[基准]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "All members of the committee work on a voluntary basis.", "zh": "委员会的所有成员都在自愿的基础上工作。", "key": ["basis"]},
+          "ext": []
+        },
+        {
+          "no": 33, "word": "mount", "freq": 3, "page": 12,
+          "prons": [{"ipa": "/maʊnt/", "senses": [
+            {"pos": "v.", "mean": "[[逐步增加]]；[[登上，爬上]]；[[安排]]"},
+            {"pos": "n.", "mean": "山峰；托架"}
+          ]}],
+          "tip": {"type": "对照", "text": "mountain n.山；高山 → mount v.& n."},
+          "ex": {"type": "例", "en": "As the popularity of exercise continues to mount, so does scientific evidence of its health benefits.", "zh": "随着运动的普及程度不断增加，科学证据也证明了运动对健康的益处。", "key": ["mount"]},
+          "ext": [{"word": "mounting", "ipa": "/ˈmaʊntɪŋ/", "senses": [
+            {"pos": "adj.", "mean": "上升的，增长的"},
+            {"pos": "n.", "mean": "托架；支撑架"}
+          ]}]
+        },
+        {
+          "no": 34, "word": "amount", "freq": 3, "page": 13,
+          "prons": [{"ipa": "/əˈmaʊnt/", "senses": [
+            {"pos": "n.", "mean": "[[数量]]"},
+            {"pos": "v.", "mean": "（～to）[[等于]]；[[总计]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "a（一）+ mount（山） → 一座座山连绵起伏，数不清具体的“数量”。"},
+          "ex": {"type": "例", "en": "During the course of trying various things, you will gain a large amount of social experience.", "zh": "在尝试各事物的过程中，你会获得大量的社会经验。", "key": ["amount"]},
+          "ext": []
+        },
+        {
+          "no": 35, "word": "soar", "freq": 1, "page": 13,
+          "prons": [{"ipa": "/sɔː(r)/", "senses": [{"pos": "v.", "mean": "[[急升，猛增]]；[[高飞]]；[[升空]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“嗖” → 烟花“嗖”的一声就“升空”了。"},
+          "ex": {"type": "例", "en": "The rocket soared (up) into the air.", "zh": "火箭升空了。", "key": ["soared"]},
+          "ext": []
+        },
+        {
+          "no": 36, "word": "ascend", "freq": 1, "page": 13,
+          "prons": [{"ipa": "/əˈsend/", "senses": [{"pos": "v.", "mean": "[[升高]]；[[攀登]]"}]}],
+          "tip": {"type": "联想", "text": "as-（一再）+ cend（音似 send，发送） → 一再地发送上去 → 升高；攀登"},
+          "ex": {"type": "例", "en": "The children cheered up when they saw the balloons ascending slowly into the sky.", "zh": "当孩子们看到那些气球缓缓升上天空时，他们欢呼起来。", "key": ["ascending"]},
+          "ext": []
+        },
+        {
+          "no": 37, "word": "descend", "freq": 1, "page": 13,
+          "prons": [{"ipa": "/dɪˈsend/", "senses": [{"pos": "v.", "mean": "[[下来，下降]]；[[下斜]]；（夜晚等）[[降临]]"}]}],
+          "tip": {"type": "联想", "text": "de-（往下）+ scend（音似 send，发送） → 下降"},
+          "ex": {"type": "例", "en": "We managed to reach the top of the mountain, and half an hour later we began to descend.", "zh": "我们成功到达了山顶，半小时后我们开始下山。", "key": ["descend"]},
+          "ext": [
+            {"word": "descent", "ipa": "/dɪˈsent/", "senses": [{"pos": "n.", "mean": "下降，降落；血统"}]},
+            {"word": "descendant", "ipa": "/dɪˈsendənt/", "senses": [{"pos": "n.", "mean": "子孙，后裔，后代"}]}
+          ]
+        },
+        {
+          "no": 38, "word": "decline", "freq": 3, "page": 13,
+          "prons": [{"ipa": "/dɪˈklaɪn/", "senses": [
+            {"pos": "v.", "mean": "[[下降，衰落]]；[[谢绝]]"},
+            {"pos": "n.", "mean": "[[减少，下降]]"}
+          ]}],
+          "tip": {"type": "构词", "text": "de-（往下）+ cline（倾斜） → 下降，衰落；减少"},
+          "ex": {"type": "真", "year": 2021, "en": "Research has revealed an enormous decline in reading.", "zh": "研究显示，阅读量大幅下降。", "key": ["decline"]},
+          "ext": []
+        },
+        {
+          "no": 39, "word": "incline", "freq": 2, "page": 13,
+          "prons": [
+            {"ipa": "/ˈɪnklaɪn/", "senses": [{"pos": "n.", "mean": "[[斜坡，斜面]]"}]},
+            {"ipa": "/ɪnˈklaɪn/", "senses": [{"pos": "v.", "mean": "[[（使）倾斜]]，[[（使）倾向于]]"}]}
+          ],
+          "tip": {"type": "构词", "text": "in-（向内）+ cline（倾斜） → （使）倾斜，（使）倾向于"},
+          "ex": {"type": "例", "en": "I incline to the view that we should take no action at this stage.", "zh": "我倾向于认为我们在这个阶段不应采取行动。", "key": ["incline to"]},
+          "ext": [
+            {"word": "inclination", "ipa": "/ˌɪnklɪˈneɪʃn/", "senses": [{"pos": "n.", "mean": "倾向；意愿"}]},
+            {"word": "inclined", "ipa": "/ɪnˈklaɪnd/", "senses": [{"pos": "adj.", "mean": "想（做某事）；有……倾向；很可能；有（某种）天赋的；倾斜的"}]}
+          ]
+        }
+      ]
+    }
+  ]
+}

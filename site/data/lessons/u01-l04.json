@@ -1,0 +1,760 @@
+{
+  "id": "u01-l04",
+  "part": 1,
+  "unit": 1,
+  "lesson": 4,
+  "pages": [22, 29],
+  "groups": [
+    {
+      "no": 13,
+      "title": "cur/cue 相关",
+      "pages": [22, 24],
+      "map": {
+        "w": "cur/cue 相关",
+        "children": [
+          {"w": "cure", "children": [
+            {"w": "curable", "rel": "扩"},
+            {"w": "curious", "rel": "形近", "children": [{"w": "curiosity", "rel": "扩"}]},
+            {"w": "accurate", "rel": "形近", "children": [{"w": "accuracy", "rel": "扩"}]},
+            {"w": "secure", "rel": "形近", "children": [{"w": "security", "rel": "扩"}]}
+          ]},
+          {"w": "rescue", "children": [
+            {"w": "injure", "rel": "相关", "children": [
+              {"w": "injurious", "rel": "扩"},
+              {"w": "injury", "rel": "扩", "children": [
+                {"w": "wound", "rel": "近义"},
+                {"w": "harm", "rel": "近义", "children": [
+                  {"w": "harmful", "rel": "扩"},
+                  {"w": "harmless", "rel": "扩"}
+                ]}
+              ]}
+            ]},
+            {"w": "hazard", "rel": "相关", "children": [
+              {"w": "hazardous", "rel": "扩"},
+              {"w": "danger", "rel": "近义", "children": [
+                {"w": "dangerous", "rel": "扩"},
+                {"w": "endanger", "rel": "扩"}
+              ]},
+              {"w": "risk", "rel": "近义", "children": [{"w": "risky", "rel": "扩"}]},
+              {"w": "stake", "rel": "近义"},
+              {"w": "gamble", "rel": "近义", "children": [{"w": "bet", "rel": "近义"}]}
+            ]}
+          ]},
+          {"w": "current", "children": [
+            {"w": "currently", "rel": "扩"},
+            {"w": "currency", "rel": "相关", "children": [
+              {"w": "rental", "rel": "相关", "children": [
+                {"w": "rent", "rel": "扩"},
+                {"w": "lease", "rel": "近义", "children": [{"w": "release", "rel": "加re"}]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "cure", "freq": 3, "page": 22,
+          "prons": [{"ipa": "/ˈkjʊə(r)/", "senses": [
+            {"pos": "v.", "mean": "[[治愈]]；[[消除]]；[[改正]]"},
+            {"pos": "n.", "mean": "[[疗法]]；[[治疗]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "正在治疗（cure）疾病的他，深切感受到了父母的关心（care）。"},
+          "ex": {"type": "例", "en": "The doctor managed to cure her of her illness.", "zh": "医生设法治好了她的病。", "key": ["cure", "of"]},
+          "ext": [{"word": "curable", "ipa": "/ˈkjʊərəbl/", "senses": [{"pos": "adj.", "mean": "可治愈的；可医治的"}]}]
+        },
+        {
+          "no": 2, "word": "curious", "freq": 2, "page": 22,
+          "prons": [{"ipa": "/ˈkjʊəriəs/", "senses": [{"pos": "adj.", "mean": "[[好奇的]]；[[奇特的]]；[[不寻常的]]"}]}],
+          "tip": {"type": "构词", "text": "cur（= care，关心；注意）+ -(i)ous（形容词后缀）→ （人）对……关心的 → 好奇的 / （物）引人注意的 → 奇特的"},
+          "ex": {"type": "真", "year": 2017, "en": "Reading literary fiction, he says, makes us more curious.", "zh": "他说，阅读文学小说会让我们更加好奇。", "key": ["curious"]},
+          "ext": [{"word": "curiosity", "ipa": "/ˌkjʊəriˈɒsəti/", "senses": [{"pos": "n.", "mean": "好奇心，求知欲；奇物，珍品"}]}]
+        },
+        {
+          "no": 3, "word": "accurate", "freq": 3, "page": 22,
+          "prons": [{"ipa": "/ˈækjərət/", "senses": [{"pos": "adj.", "mean": "[[精确的]]，[[准确的]]"}]}],
+          "tip": {"type": "构词", "text": "ac-（= to）+ cur（= care）+ -ate（形容词后缀）→ 关心以使做得更精确 → 精确的，准确的"},
+          "ex": {"type": "真", "year": 2020, "en": "Global warming is the more accurate term.", "zh": "全球变暖是更准确的术语。", "key": ["accurate"]},
+          "ext": [{"word": "accuracy", "ipa": "/ˈækjərəsi/", "senses": [{"pos": "n.", "mean": "准确（性），准确度"}]}]
+        },
+        {
+          "no": 4, "word": "secure", "freq": 3, "page": 22,
+          "prons": [{"ipa": "/sɪˈkjʊə(r)/", "senses": [
+            {"pos": "adj.", "mean": "安心的；[[安全的]]；[[可靠的]]"},
+            {"pos": "v.", "mean": "（尤指经过努力）[[获得]]；[[保护]]；[[拴牢]]；[[抵押]]"}
+          ]}],
+          "tip": {"type": "构词", "text": "se-（离开）+ cure（= care）→ 不用担心 → 安全的；可靠的"},
+          "ex": {"type": "例", "en": "She found it difficult to secure a job in that country.", "zh": "她发现在那个国家很难找到一份工作。", "key": ["secure"]},
+          "ext": [{"word": "security", "ipa": "/sɪˈkjʊərəti/", "senses": [{"pos": "n.", "mean": "安全，安全感"}]}]
+        },
+        {
+          "no": 5, "word": "rescue", "freq": 1, "page": 22,
+          "prons": [{"ipa": "/ˈreskjuː/", "senses": [{"pos": "n. & v.", "mean": "[[营救]]，[[救援]]"}]}],
+          "tip": {"type": "联想", "text": "re-（回）+ s（联想“女孩”）+ cue（联想 cute）→ 他要回去“营救”那个可爱的女孩。"},
+          "ex": {"type": "例", "en": "After being rescued from the air crash, the people agreed that they had much to be thankful for.", "zh": "从空难中获救后，人们认为他们有很多值得感谢的事情。", "key": ["rescued"]},
+          "ext": []
+        },
+        {
+          "no": 6, "word": "injure", "freq": 1, "page": 22,
+          "prons": [{"ipa": "/ˈɪndʒə(r)/", "senses": [{"pos": "v.", "mean": "[[损害]]，[[伤害]]；[[受伤]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“阴招”→ 他不屑用阴招“伤害”别人。"},
+          "ex": {"type": "例", "en": "She was injured in a car accident two weeks ago and still in critical condition.", "zh": "她在两周前的一次车祸中受伤了，目前仍然危急。", "key": ["injured"]},
+          "ext": [
+            {"word": "injury", "ipa": "/ˈɪndʒəri/", "senses": [{"pos": "n.", "mean": "伤害，损伤"}]},
+            {"word": "injurious", "ipa": "/ɪnˈdʒʊəriəs/", "senses": [{"pos": "adj.", "mean": "造成伤害的；有害的"}]}
+          ]
+        },
+        {
+          "no": 7, "word": "wound", "freq": 1, "page": 23,
+          "prons": [{"ipa": "/wuːnd/", "senses": [
+            {"pos": "n.", "mean": "[[创伤]]；[[伤口]]"},
+            {"pos": "v.", "mean": "[[使受伤]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“捂的”→ 捂着的“伤口”容易发炎。"},
+          "ex": {"type": "真", "year": 2021, "en": "But disasters can still wound us.", "zh": "但灾难仍然会伤害我们。", "key": ["wound"]},
+          "ext": []
+        },
+        {
+          "no": 8, "word": "harm", "freq": 1, "page": 23,
+          "prons": [{"ipa": "/hɑːm/", "senses": [{"pos": "n. & v.", "mean": "[[伤害]]；[[损害]]"}]}],
+          "tip": {"type": "联想", "text": "har（音似“吓”）+ m（联想“妹”）→ 吓妹妹容易“伤害”到她。"},
+          "ex": {"type": "例", "en": "He may look fierce, but he means no harm.", "zh": "他可能看上去很凶，但并无恶意。", "key": ["harm"]},
+          "ext": [
+            {"word": "harmful", "ipa": "/ˈhɑːmfl/", "senses": [{"pos": "adj.", "mean": "（尤指对健康或环境）有害的，导致损害的"}]},
+            {"word": "harmless", "ipa": "/ˈhɑːmləs/", "senses": [{"pos": "adj.", "mean": "无害的；不致伤的"}]}
+          ]
+        },
+        {
+          "no": 9, "word": "hazard", "freq": 2, "page": 23,
+          "prons": [{"ipa": "/ˈhæzəd/", "senses": [
+            {"pos": "n.", "mean": "[[危险]]，[[危害]]"},
+            {"pos": "v.", "mean": "[[冒昧提出]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“害咱的”→ 这种行为会“危害”咱们的健康。"},
+          "ex": {"type": "例", "en": "Growing levels of pollution represent a serious health hazard to the local population.", "zh": "日益严重的污染对当地人民的健康构成了重大威胁。", "key": ["hazard"]},
+          "ext": [{"word": "hazardous", "ipa": "/ˈhæzədəs/", "senses": [{"pos": "adj.", "mean": "危险的；有害的"}]}]
+        },
+        {
+          "no": 10, "word": "danger", "freq": 1, "page": 23,
+          "prons": [{"ipa": "/ˈdeɪndʒə(r)/", "senses": [{"pos": "n.", "mean": "[[危险]]；[[可能性]]；[[威胁]]"}]}],
+          "tip": {"type": "联想", "text": "dang（联想“挡”）+（g）er（联想“哥”）→ 哥哥开车时，被挡住视线是很“危险”的。"},
+          "ex": {"type": "真", "year": 2017, "en": "You may expose yourself to unexpected dangers.", "zh": "你可能会面临意想不到的危险。", "key": ["dangers"]},
+          "ext": [
+            {"word": "dangerous", "ipa": "/ˈdeɪndʒərəs/", "senses": [{"pos": "adj.", "mean": "危险的"}]},
+            {"word": "endanger", "ipa": "/ɪnˈdeɪndʒə(r)/", "senses": [{"pos": "v.", "mean": "危害"}]}
+          ]
+        },
+        {
+          "no": 11, "word": "stake", "freq": 1, "page": 23,
+          "prons": [{"ipa": "/steɪk/", "senses": [
+            {"pos": "n.", "mean": "[[桩]]；[[风险]]；[[股本]]；[[利害关系]]"},
+            {"pos": "v.", "mean": "[[拿……冒险]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "s（联想“蛇”）+ take（拿）→ 他拿着蛇玩，“风险”很大。"},
+          "ex": {"type": "例", "en": "In some situations, the stakes are low and failure is a healthy part of growth.", "zh": "在某些情况下，风险很低，失败是成长中健康的一部分。", "key": ["stakes"]},
+          "ext": []
+        },
+        {
+          "no": 12, "word": "risk", "freq": 2, "page": 23,
+          "prons": [{"ipa": "/rɪsk/", "senses": [
+            {"pos": "n.", "mean": "[[危险]]，[[冒险行为]]"},
+            {"pos": "v.", "mean": "[[使遭受危险]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "ri（联想“日”）+ sk（音似“死磕”）→ 死磕太阳是有“危险”的行为。"},
+          "ex": {"type": "例", "en": "Dare she risk staying where she was?", "zh": "她敢冒险待在原地不动吗？", "key": ["risk"]},
+          "ext": [{"word": "risky", "ipa": "/ˈrɪski/", "senses": [{"pos": "adj.", "mean": "有危险的，有风险的"}]}]
+        },
+        {
+          "no": 13, "word": "gamble", "freq": 1, "page": 23,
+          "prons": [{"ipa": "/ˈɡæmbl/", "senses": [
+            {"pos": "n.", "mean": "[[赌博]]；[[冒险]]"},
+            {"pos": "v.", "mean": "[[冒风险]]；[[以……为赌注]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "gam（联想 game）+ ble（音似 ball）→ 那个涉及“赌博”的游戏跟球有关。"},
+          "ex": {"type": "例", "en": "It was wrong to gamble with our children's future.", "zh": "拿孩子们的未来冒险是错误的。", "key": ["gamble"]},
+          "ext": []
+        },
+        {
+          "no": 14, "word": "bet", "freq": 2, "page": 23,
+          "prons": [{"ipa": "/bet/", "senses": [
+            {"pos": "n.", "mean": "[[打赌]]；[[预计]]"},
+            {"pos": "v.", "mean": "[[下赌注（于）]]；[[用……打赌]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "be（是）+ t（联想“他”）→ 我“打赌”是他偷了我的钱包。"},
+          "ex": {"type": "例", "en": "I bet you get a lot of requests for it.", "zh": "我打赌你会为此收到很多请求。", "key": ["bet"]},
+          "ext": []
+        },
+        {
+          "no": 15, "word": "current", "freq": 3, "page": 23,
+          "prons": [{"ipa": "/ˈkʌrənt/", "senses": [
+            {"pos": "adj.", "mean": "[[当前的]]；[[通用的]]；[[流行的]]"},
+            {"pos": "n.", "mean": "[[水流]]；[[气流]]；[[电流]]；[[趋向]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "cur（联想 care）+ rent（租）→ 我们关心“当前的”租房价格。"},
+          "ex": {"type": "真", "year": 2016, "en": "Environmental problems must be solved to ease the current global food shortage.", "zh": "必须解决环境问题，以缓解目前的全球粮食短缺。", "key": ["current"]},
+          "ext": [{"word": "currently", "ipa": "/ˈkʌrəntli/", "senses": [{"pos": "adv.", "mean": "现时；目前"}]}]
+        },
+        {
+          "no": 16, "word": "currency", "freq": 1, "page": 24,
+          "prons": [{"ipa": "/ˈkʌrənsi/", "senses": [{"pos": "n.", "mean": "[[通货]]；[[货币]]；[[通用]]"}]}],
+          "tip": {"type": "对照", "text": "current adj.通用的 → currency n."},
+          "ex": {"type": "例", "en": "You'll need some cash in local currency.", "zh": "你将需要一些当地的货币现金。", "key": ["currency"]},
+          "ext": []
+        },
+        {
+          "no": 17, "word": "rental", "freq": 1, "page": 24,
+          "prons": [{"ipa": "/ˈrentl/", "senses": [{"pos": "n.", "mean": "[[租金，租用费]]；[[出租]]；租赁"}]}],
+          "tip": {"type": "构词", "text": "rent（租）+ -al（名词后缀）→ 租金；出租"},
+          "ex": {"type": "例", "en": "Telephone charges include line rental.", "zh": "电话费包括线路租用费。", "key": ["rental"]},
+          "ext": [{"word": "rent", "ipa": "/rent/", "senses": [
+            {"pos": "n.", "mean": "租金"},
+            {"pos": "v.", "mean": "租用，租借；出租"}
+          ]}]
+        },
+        {
+          "no": 18, "word": "lease", "freq": 2, "page": 24,
+          "prons": [{"ipa": "/liːs/", "senses": [
+            {"pos": "n.", "mean": "[[租约]]"},
+            {"pos": "v.", "mean": "[[出租]]；[[租用，租借]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“立撕”→ 租期一满，他立刻撕了“租约”。"},
+          "ex": {"type": "例", "en": "They leased the land from a local farmer.", "zh": "他们从当地一位农场主手中租得这块土地。", "key": ["leased"]},
+          "ext": []
+        },
+        {
+          "no": 19, "word": "release", "freq": 3, "page": 24,
+          "prons": [{"ipa": "/rɪˈliːs/", "senses": [
+            {"pos": "n.", "mean": "[[释放]]；[[放开，松开]]；[[发行]]；[[排放]]"},
+            {"pos": "v.", "mean": "[[释放]]；[[放走]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "re（字母音似“阿姨”）+ lease（租约）→ 阿姨租约到期时，“释放”出了房源。"},
+          "ex": {"type": "真", "year": 2019, "en": "A private wildlife management company will release the animal into the wild.", "zh": "一家私人野生动物管理公司将把这只动物放归野外。", "key": ["release"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 14,
+      "title": "“当代”相关",
+      "pages": [24, 25],
+      "map": {
+        "w": "“当代”相关",
+        "children": [
+          {"w": "recently", "children": [
+            {"w": "recent", "children": [{"w": "era", "rel": "相关"}]}
+          ]},
+          {"w": "modern", "children": [
+            {"w": "modernise", "rel": "扩", "children": [{"w": "modernisation"}]}
+          ]},
+          {"w": "up-to-date", "children": [
+            {"w": "outdated", "children": [
+              {"w": "stale", "rel": "近义"},
+              {"w": "fashion", "rel": "相关", "children": [{"w": "fashionable", "rel": "扩"}]}
+            ]}
+          ]},
+          {"w": "contemporary", "children": [
+            {"w": "temporary", "rel": "去前缀", "children": [
+              {"w": "temporarily", "rel": "扩"},
+              {"w": "temple", "rel": "形近"}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 20, "word": "recently", "freq": 1, "page": 24,
+          "prons": [{"ipa": "/ˈriːsntli/", "senses": [{"pos": "adv.", "mean": "[[不久前]]；[[最近]]"}]}],
+          "tip": {"type": "联想", "text": "re（字母音似“阿姨”）+ cent（分）+ -ly（副词后缀）→ 阿姨“最近”穿得只剩一分钱了。"},
+          "ex": {"type": "真", "year": 2024, "en": "These effects can also be observed among people who have recently become unemployed.", "zh": "这些影响也可以在最近失业的人群中观察到。", "key": ["recently"]},
+          "ext": [{"word": "recent", "ipa": "/ˈriːsnt/", "senses": [{"pos": "adj.", "mean": "近来的；新近的"}]}]
+        },
+        {
+          "no": 21, "word": "modern", "freq": 1, "page": 24,
+          "prons": [{"ipa": "/ˈmɒdn/", "senses": [{"pos": "adj.", "mean": "[[现代的]]；[[当代的]]；[[时髦的]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“摩登”→ 现代的；时髦的"},
+          "ex": {"type": "真", "year": 2024, "en": "High schoolers knew nothing about the modern financial world.", "zh": "高中生对现代金融世界一无所知。", "key": ["modern"]},
+          "ext": [
+            {"word": "modernise", "alt": "-ize", "ipa": "/ˈmɒdənaɪz/", "senses": [{"pos": "v.", "mean": "（使）现代化"}]},
+            {"word": "modernisation", "alt": "-ization", "ipa": "/ˌmɒdənaɪˈzeɪʃn/", "senses": [{"pos": "n.", "mean": "现代化；现代化的事物"}]}
+          ]
+        },
+        {
+          "no": 22, "word": "era", "freq": 2, "page": 24,
+          "prons": [{"ipa": "/ˈɪərə/", "senses": [{"pos": "n.", "mean": "[[时代]]；[[年代]]；[[纪元]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“饿弱”→ 在那个吃不饱的“年代”，人们饿得很瘦弱。"},
+          "ex": {"type": "真", "year": 2022, "en": "In the coming era of budget cuts to education, distance learning could become the norm.", "zh": "在即将到来的教育预算削减时代，远程学习可能会成为常态。", "key": ["era"]},
+          "ext": []
+        },
+        {
+          "no": 23, "word": "up-to-date", "freq": 2, "page": 24,
+          "prons": [{"ipa": "/ˌʌp tə ˈdeɪt/", "senses": [{"pos": "adj.", "mean": "[[现代的]]，[[最新的]]；[[时髦的]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2018, "en": "Now scientists are bringing this ancient wisdom up-to-date.", "zh": "如今，科学家们正在将这一古老的智慧推向最新。", "key": ["up-to-date"]},
+          "ext": []
+        },
+        {
+          "no": 24, "word": "outdated", "freq": 1, "page": 24,
+          "prons": [{"ipa": "/ˌaʊtˈdeɪtɪd/", "senses": [{"pos": "adj.", "mean": "[[过时的]]；[[陈旧的]]"}]}],
+          "tip": {"type": "构词", "text": "out（外面）+ date（日期）+ -(e)d（形容词后缀）→ 在日期外面的 → 过时的"},
+          "ex": {"type": "例", "en": "It is a somewhat outdated expression.", "zh": "这是个有点过时的表达方式。", "key": ["outdated"]},
+          "ext": []
+        },
+        {
+          "no": 25, "word": "stale", "freq": 1, "page": 25,
+          "prons": [{"ipa": "/steɪl/", "senses": [{"pos": "adj.", "mean": "[[不新鲜的]]；（空气）[[污浊的]]；[[陈腐的]]；[[厌倦的]]"}]}],
+          "tip": {"type": "联想", "text": "s（联想“蛇”）+ tale（故事）→ 美女蛇的故事听多了就厌倦了 → 厌倦的"},
+          "ex": {"type": "真", "year": 2015, "en": "You need to do some self-assessment to determine where you have become stale in your thinking.", "zh": "你需要做一些自我评估，以确定你的思维在哪里变得陈旧。", "key": ["stale"]},
+          "ext": []
+        },
+        {
+          "no": 26, "word": "fashion", "freq": 3, "page": 25,
+          "prons": [{"ipa": "/ˈfæʃn/", "senses": [{"pos": "n.", "mean": "[[时尚]]，[[时兴]]；[[流行款式]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“范神”→ 他穿衣有范，堪称“时尚”男神。"},
+          "ex": {"type": "真", "year": 2023, "en": "They have adapted to meet fashion changes.", "zh": "他们已经适应了迎合时尚的变化。", "key": ["fashion"]},
+          "ext": [{"word": "fashionable", "ipa": "/ˈfæʃnəbl/", "senses": [{"pos": "adj.", "mean": "流行的，时髦的"}]}]
+        },
+        {
+          "no": 27, "word": "contemporary", "freq": 2, "page": 25,
+          "prons": [{"ipa": "/kənˈtemprəri/", "senses": [
+            {"pos": "adj.", "mean": "[[当代的，现代的]]；[[同一时代的]]"},
+            {"pos": "n.", "mean": "[[同龄人]]"}
+          ]}],
+          "tip": {"type": "构词", "text": "con-（共同）+ tempor（时代）+ -ary（后缀）→ 同一个时代的 → 同龄人"},
+          "ex": {"type": "真", "year": 2015, "en": "It is the concern of contemporary economists.", "zh": "这是当代经济学家所关注的问题。", "key": ["contemporary"]},
+          "ext": []
+        },
+        {
+          "no": 28, "word": "temple", "freq": 1, "page": 25,
+          "prons": [{"ipa": "/ˈtempl/", "senses": [{"pos": "n.", "mean": "[[庙，寺]]；[[太阳穴]]；[[鬓角]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“太破”→ 荒郊野外有一座很破的“庙”。"},
+          "ex": {"type": "例", "en": "We went to temple last Saturday.", "zh": "我们上个星期六去了寺庙。", "key": ["temple"]},
+          "ext": []
+        },
+        {
+          "no": 29, "word": "temporary", "freq": 2, "page": 25,
+          "prons": [{"ipa": "/ˈtemprəri/", "senses": [{"pos": "adj.", "mean": "[[暂时的]]，[[临时的]]"}]}],
+          "tip": {"type": "构词", "text": "tempor（时间）+ -ary（形容词后缀）→ 暂时的，临时的"},
+          "ex": {"type": "例", "en": "Since being laid off, he has worked a series of temporary positions.", "zh": "自从下岗后，他从事过一系列临时工作。", "key": ["temporary"]},
+          "ext": [{"word": "temporarily", "ipa": "/ˈtemprərəli/", "senses": [{"pos": "adv.", "mean": "临时地，暂时地"}]}]
+        }
+      ]
+    },
+    {
+      "no": 15,
+      "title": "“大量”相关",
+      "pages": [25, 27],
+      "map": {
+        "w": "“大量”相关",
+        "children": [
+          {"w": "abundant", "children": [
+            {"w": "abundance", "rel": "扩"},
+            {"w": "ample", "rel": "近义"}
+          ]},
+          {"w": "mass", "children": [
+            {"w": "massive", "rel": "扩", "children": [{"w": "massage", "rel": "形近"}]}
+          ]},
+          {"w": "numerous", "children": [
+            {"w": "number", "rel": "扩", "children": [
+              {"w": "dozen", "rel": "相关"},
+              {"w": "multiply", "rel": "相关", "children": [
+                {"w": "multiple", "rel": "扩"},
+                {"w": "multiplication", "rel": "扩"}
+              ]}
+            ]}
+          ]},
+          {"w": "gang", "children": [
+            {"w": "band", "rel": "近义", "children": [{"w": "bandage", "rel": "加后缀"}]},
+            {"w": "flock", "rel": "近义", "children": [
+              {"w": "crowd", "children": [{"w": "crowded", "rel": "扩"}]}
+            ]},
+            {"w": "sort", "rel": "相关", "children": [{"w": "resort", "rel": "加前缀"}]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 30, "word": "abundant", "freq": 1, "page": 25,
+          "prons": [{"ipa": "/əˈbʌndənt/", "senses": [{"pos": "adj.", "mean": "[[大量的]]；[[丰盛的]]；[[充裕的]]"}]}],
+          "tip": {"type": "联想", "text": "a（一）+ bund（音似“帮的”）+ ant（蚂蚁）→ 像蚂蚁似的一大帮 → 大量的"},
+          "ex": {"type": "真", "year": 2020, "en": "Abundant information about cooking is available either online or on TV.", "zh": "网上或电视上都有大量关于烹饪的信息。", "key": ["Abundant"]},
+          "ext": [{"word": "abundance", "ipa": "/əˈbʌndəns/", "senses": [{"pos": "n.", "mean": "丰富，充裕"}]}]
+        },
+        {
+          "no": 31, "word": "ample", "freq": 1, "page": 25,
+          "prons": [{"ipa": "/ˈæmpl/", "senses": [{"pos": "adj.", "mean": "[[足够的]]；[[丰裕的]]"}]}],
+          "tip": {"type": "对照", "text": "这些苹果（apple）对我们来说是足够的（ample）。"},
+          "ex": {"type": "真", "year": 2022, "en": "It made ample preparations for various possibilities.", "zh": "它为各种可能性做了足够的准备工作。", "key": ["ample"]},
+          "ext": []
+        },
+        {
+          "no": 32, "word": "mass", "freq": 3, "page": 25,
+          "prons": [{"ipa": "/mæs/", "senses": [
+            {"pos": "n.", "mean": "[[许多，大量]]；一群；群众"},
+            {"pos": "adj.", "mean": "民众的；[[大量的]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“慢死”→ 我的马跑得慢死了，“一群”人在后面拍它。"},
+          "ex": {"type": "例", "en": "I began sifting through the mass of evidence.", "zh": "我开始筛选大量的证据。", "key": ["mass"]},
+          "ext": []
+        },
+        {
+          "no": 33, "word": "massive", "freq": 3, "page": 26,
+          "prons": [{"ipa": "/ˈmæsɪv/", "senses": [{"pos": "adj.", "mean": "[[大量的]]；[[大规模的]]；[[巨大的]]；[[非常严重的]]"}]}],
+          "tip": {"type": "构词", "text": "mass（大量）+ -ive（形容词后缀）→ 大量的"},
+          "ex": {"type": "例", "en": "We derive massive economic benefits when we buy the most affordable energy on the world market.", "zh": "当我们在世界市场上购买最便宜的能源时，也获得了巨大的经济利益。", "key": ["massive"]},
+          "ext": []
+        },
+        {
+          "no": 34, "word": "massage", "freq": 1, "page": 26,
+          "prons": [{"ipa": "/ˈmæsɑːʒ/", "senses": [
+            {"pos": "n.", "mean": "[[按摩]]"},
+            {"pos": "v.", "mean": "[[按摩]]，[[推拿]]；美化；虚报"}
+          ]}],
+          "tip": {"type": "联想", "text": "ma（联想“妈”）+ ssage（音似“杀鸡”）→ 妈妈杀鸡后用调料给鸡做“按摩”。"},
+          "ex": {"type": "例", "en": "Massage helps to improve physical function and reduce stress.", "zh": "按摩有助于改善身体机能，减轻压力。", "key": ["Massage"]},
+          "ext": []
+        },
+        {
+          "no": 35, "word": "numerous", "freq": 3, "page": 26,
+          "prons": [{"ipa": "/ˈnjuːmərəs/", "senses": [{"pos": "adj.", "mean": "[[众多的]]；[[许多的]]"}]}],
+          "tip": {"type": "对照", "text": "number n.数字 → numerous adj."},
+          "ex": {"type": "真", "year": 2016, "en": "It has great influence on numerous girls and women.", "zh": "它对许多女孩和妇女产生了巨大的影响。", "key": ["numerous"]},
+          "ext": [{"word": "number", "ipa": "/ˈnʌmbə(r)/", "senses": [
+            {"pos": "n.", "mean": "数字；数量；编号；号码"},
+            {"pos": "v.", "mean": "给……编号；总计"}
+          ]}]
+        },
+        {
+          "no": 36, "word": "multiply", "freq": 1, "page": 26,
+          "prons": [{"ipa": "/ˈmʌltɪplaɪ/", "senses": [{"pos": "v.", "mean": "[[乘]]；[[成倍增加]]；（使）[[繁殖]]"}]}],
+          "tip": {"type": "构词", "text": "multi-（许多的）+ ply（层）→ 许多层叠在一起 → 成倍增加"},
+          "ex": {"type": "例", "en": "It revealed the secret of how bacteria multiply in cream and butter.", "zh": "它揭示了细菌如何在奶油和黄油中繁殖的秘密。", "key": ["multiply"]},
+          "ext": [
+            {"word": "multiple", "ipa": "/ˈmʌltɪpl/", "senses": [
+              {"pos": "adj.", "mean": "数量多的；多种多样的"},
+              {"pos": "n.", "mean": "倍数"}
+            ]},
+            {"word": "multiplication", "ipa": "/ˌmʌltɪplɪˈkeɪʃn/", "senses": [{"pos": "n.", "mean": "乘；相乘；增加"}]}
+          ]
+        },
+        {
+          "no": 37, "word": "gang", "freq": 1, "page": 26,
+          "prons": [{"ipa": "/ɡæŋ/", "senses": [{"pos": "n.", "mean": "[[一帮]]，[[一伙]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“干”→ 那是“一帮”干大事的人。"},
+          "ex": {"type": "例", "en": "I went out with the usual gang from college on Friday night.", "zh": "星期五晚上，我和大学的一帮老朋友一起出去了。", "key": ["gang"]},
+          "ext": []
+        },
+        {
+          "no": 38, "word": "band", "freq": 1, "page": 26,
+          "prons": [{"ipa": "/bænd/", "senses": [{"pos": "n.", "mean": "[[流行音乐乐队]]；[[一伙，一群]]；[[带]]；[[条纹]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“帮的”→ 那“一群”在台上帮忙唱歌的人来自那个“流行音乐乐队”。"},
+          "ex": {"type": "例", "en": "The watch comes equipped with a standard battery and a nylon band.", "zh": "这款手表配有标准电池和尼龙表带。", "key": ["band"]},
+          "ext": []
+        },
+        {
+          "no": 39, "word": "bandage", "freq": 1, "page": 26,
+          "prons": [{"ipa": "/ˈbændɪdʒ/", "senses": [
+            {"pos": "n.", "mean": "[[绷带]]"},
+            {"pos": "v.", "mean": "[[用绷带包扎]]"}
+          ]}],
+          "tip": {"type": "构词", "text": "band（带）+ -age（后缀）→ 绷带"},
+          "ex": {"type": "例", "en": "Please pass me the bandage.", "zh": "请把绷带递给我。", "key": ["bandage"]},
+          "ext": []
+        },
+        {
+          "no": 40, "word": "sort", "freq": 2, "page": 26,
+          "prons": [{"ipa": "/sɔːt/", "senses": [
+            {"pos": "n.", "mean": "[[种类]]"},
+            {"pos": "v.", "mean": "[[把……分类]]，[[整理]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“扫它”→ 清扫垃圾的时候顺便将其分类 → 把……分类"},
+          "ex": {"type": "例", "en": "This sort of problem is quite common.", "zh": "这类问题相当普遍。", "key": ["sort"]},
+          "ext": []
+        },
+        {
+          "no": 41, "word": "resort", "freq": 2, "page": 26,
+          "prons": [{"ipa": "/rɪˈzɔːt/", "senses": [
+            {"pos": "n.", "mean": "[[采取，求助]]；（度假）[[胜地]]"},
+            {"pos": "v.", "mean": "（～to）[[求助于]]；[[采取]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "re（字母音似“阿姨”）+ sort（把……分类）→ 阿姨为了快速把豆子分类，“求助于”我们。"},
+          "ex": {"type": "真", "year": 2017, "en": "They resort to different means to survive the bitter cold.", "zh": "他们采取了不同的手段来度过严寒。", "key": ["resort to"]},
+          "ext": []
+        },
+        {
+          "no": 42, "word": "flock", "freq": 1, "page": 26,
+          "prons": [{"ipa": "/flɒk/", "senses": [
+            {"pos": "n.", "mean": "（羊或鸟）[[群]]"},
+            {"pos": "v.", "mean": "[[群集]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“妇唠嗑”→ 树上一“群”鸟叽叽喳喳叫着，树下妇人们在唠嗑。"},
+          "ex": {"type": "例", "en": "These birds fly in huge flocks.", "zh": "这些鸟成群结队地飞行。", "key": ["flocks"]},
+          "ext": []
+        },
+        {
+          "no": 43, "word": "crowd", "freq": 1, "page": 27,
+          "prons": [{"ipa": "/kraʊd/", "senses": [
+            {"pos": "n.", "mean": "[[人群]]；[[观众]]；[[一伙人]]"},
+            {"pos": "v.", "mean": "[[使……拥挤]]；[[靠近]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "c（音似“可”）+ row（排）+ d（音似“的”）→ 一排一排的人可多了 → 人群；使……拥挤"},
+          "ex": {"type": "真", "year": 2023, "en": "There will be crowds of people waiting for her.", "zh": "会有很多人在等她。", "key": ["crowds of"]},
+          "ext": [{"word": "crowded", "ipa": "/ˈkraʊdɪd/", "senses": [{"pos": "adj.", "mean": "人（太）多的；拥挤的；充满的；挤满的"}]}]
+        },
+        {
+          "no": 44, "word": "dozen", "freq": 2, "page": 27,
+          "prons": [{"ipa": "/ˈdʌzn/", "senses": [{"pos": "n.", "mean": "[[（一）打]]；[[十二个]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“打人”→ 叶问一个人能打“十二个”人。"},
+          "ex": {"type": "真", "year": 2019, "en": "A freshman textbook will have dozens of contributors.", "zh": "一本新生教材将有几十名撰稿人。", "key": ["dozens"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 16,
+      "title": "“人群”相关",
+      "pages": [27, 28],
+      "map": {
+        "w": "“人群”相关",
+        "children": [
+          {"w": "population", "children": [
+            {"w": "populous", "rel": "扩"},
+            {"w": "populate", "rel": "扩"},
+            {"w": "popularity", "rel": "相关", "children": [
+              {"w": "popular", "rel": "扩"},
+              {"w": "prevail", "rel": "相关", "children": [
+                {"w": "prevalent", "rel": "扩"},
+                {"w": "prevalence", "rel": "扩"},
+                {"w": "available", "rel": "同根", "children": [{"w": "availability", "rel": "扩"}]}
+              ]}
+            ]}
+          ]},
+          {"w": "crew", "children": [
+            {"w": "screw", "rel": "前加s"},
+            {"w": "colleague", "rel": "相关", "children": [
+              {"w": "personnel", "children": [
+                {"w": "staff", "children": [
+                  {"w": "stuff", "rel": "形近", "children": [
+                    {"w": "stuffy", "rel": "扩"},
+                    {"w": "stuffing", "rel": "扩"}
+                  ]}
+                ]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 45, "word": "population", "freq": 1, "page": 27,
+          "prons": [{"ipa": "/ˌpɒpjuˈleɪʃn/", "senses": [{"pos": "n.", "mean": "（地区、国家等的）[[人口]]；[[某领域的生物]]；[[族群]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2020, "en": "Its population is now showing signs of increase.", "zh": "它的人口现在正呈现增长的迹象。", "key": ["population"]},
+          "ext": [
+            {"word": "populous", "ipa": "/ˈpɒpjələs/", "senses": [{"pos": "adj.", "mean": "人口众多的；人口密集的"}]},
+            {"word": "populate", "ipa": "/ˈpɒpjuleɪt/", "senses": [{"pos": "v.", "mean": "居住于；构成……的人口；迁移；殖民于；增添数据"}]}
+          ]
+        },
+        {
+          "no": 46, "word": "popularity", "freq": 3, "page": 27,
+          "prons": [{"ipa": "/ˌpɒpjuˈlærəti/", "senses": [{"pos": "n.", "mean": "[[受欢迎]]；[[普及]]；[[流行]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2020, "en": "Even the old metal lunch boxes have regained popularity.", "zh": "甚至老式全金属饭盒也重新流行起来。", "key": ["popularity"]},
+          "ext": [{"word": "popular", "ipa": "/ˈpɒpjələ(r)/", "senses": [{"pos": "adj.", "mean": "受欢迎的；普遍的"}]}]
+        },
+        {
+          "no": 47, "word": "prevail", "freq": 1, "page": 27,
+          "prons": [{"ipa": "/prɪˈveɪl/", "senses": [{"pos": "v.", "mean": "[[普遍存在]]；[[盛行]]；[[被接受]]；[[战胜]]"}]}],
+          "tip": {"type": "构词", "text": "pre-（在……之前）+ vail（力量，强大）→ 盛行"},
+          "ex": {"type": "真", "year": 2017, "en": "There's an ancient legend that as long as these eggs are made, evil will not prevail in the world.", "zh": "有一个古老的传说，只要这些蛋被制作出来，邪恶就不会在世上盛行。", "key": ["prevail"]},
+          "ext": [
+            {"word": "prevalent", "ipa": "/ˈprevələnt/", "senses": [{"pos": "adj.", "mean": "普遍存在的，盛行的，流行的"}]},
+            {"word": "prevalence", "ipa": "/ˈprevələns/", "senses": [{"pos": "n.", "mean": "流行，普遍"}]}
+          ]
+        },
+        {
+          "no": 48, "word": "available", "freq": 1, "page": 27,
+          "prons": [{"ipa": "/əˈveɪləbl/", "senses": [{"pos": "adj.", "mean": "[[可获得的]]；[[可找到的]]；[[有空的]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2017, "en": "I want my students to search out the answers to questions by using all the resources available to them.", "zh": "我希望我的学生利用所有可用的资源去寻找问题的答案。", "key": ["available"]},
+          "ext": [{"word": "availability", "ipa": "/əˌveɪləˈbɪləti/", "senses": [{"pos": "n.", "mean": "可获得的可能性"}]}]
+        },
+        {
+          "no": 49, "word": "crew", "freq": 2, "page": 27,
+          "prons": [{"ipa": "/kruː/", "senses": [{"pos": "n.", "mean": "[[全体船员]]；[[一群工作人员]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“可入”→ 遇到危险时，“全体船员”可以进入救生艇。"},
+          "ex": {"type": "例", "en": "He joined the crew of a large fishing boat.", "zh": "他加入一艘大型渔船船员的行列。", "key": ["crew"]},
+          "ext": []
+        },
+        {
+          "no": 50, "word": "screw", "freq": 1, "page": 27,
+          "prons": [{"ipa": "/skruː/", "senses": [
+            {"pos": "n.", "mean": "[[螺丝]]"},
+            {"pos": "v.", "mean": "[[用螺丝固定]]，[[拧紧]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“四可入”→ 这是四个可以拧入孔内的“螺丝”。"},
+          "ex": {"type": "例", "en": "She carefully screwed the cap back onto the toothpaste.", "zh": "她小心地把牙膏盖子拧回去。", "key": ["screwed"]},
+          "ext": []
+        },
+        {
+          "no": 51, "word": "colleague", "freq": 3, "page": 27,
+          "prons": [{"ipa": "/ˈkɒliːɡ/", "senses": [{"pos": "n.", "mean": "[[同事]]，[[同僚]]"}]}],
+          "tip": {"type": "对照", "text": "他们是在同一所大学（college）教学的同事（colleague）。"},
+          "ex": {"type": "真", "year": 2021, "en": "They feel pressured to keep up with female colleagues.", "zh": "要跟上女同事的步伐，他们感到有压力。", "key": ["colleagues"]},
+          "ext": []
+        },
+        {
+          "no": 52, "word": "personnel", "freq": 2, "page": 28,
+          "prons": [{"ipa": "/ˌpɜːsəˈnel/", "senses": [{"pos": "n.", "mean": "[[全体人员]]，[[职员]]；[[人事部门]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "She works in personnel.", "zh": "她在人事部门工作。", "key": ["personnel"]},
+          "ext": []
+        },
+        {
+          "no": 53, "word": "staff", "freq": 3, "page": 28,
+          "prons": [{"ipa": "/stɑːf/", "senses": [{"pos": "n.", "mean": "[[全体职员]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“士大夫”→ 古代士大夫相当于皇帝的职员 → 全体职员"},
+          "ex": {"type": "真", "year": 2018, "en": "The letter is in fairly good condition, in spite of being out of the care of trained museum staff for so long.", "zh": "这封信虽然长期没有受到训练有素的博物馆员工的维护，但其状况相当好。", "key": ["staff"]},
+          "ext": []
+        },
+        {
+          "no": 54, "word": "stuff", "freq": 2, "page": 28,
+          "prons": [{"ipa": "/stʌf/", "senses": [
+            {"pos": "n.", "mean": "[[东西]]，[[物品]]"},
+            {"pos": "v.", "mean": "[[把……塞进，填进]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "一个谨言慎行的（a 像闭口而立）员工（staff）拿着装满物品（stuff）的桶（u）。"},
+          "ex": {"type": "真", "year": 2023, "en": "If you want the good stuff, the quality, you have to see it for yourself.", "zh": "如果你想要好的东西、高品质的东西，你必须自己去看。", "key": ["stuff"]},
+          "ext": [
+            {"word": "stuffy", "ipa": "/ˈstʌfi/", "senses": [{"pos": "adj.", "mean": "闷热的；一本正经的；古板的"}]},
+            {"word": "stuffing", "ipa": "/ˈstʌfɪŋ/", "senses": [{"pos": "n.", "mean": "填料；填充物"}]}
+          ]
+        }
+      ]
+    },
+    {
+      "no": 17,
+      "title": "“成长阶段”相关",
+      "pages": [28, 28],
+      "map": {
+        "w": "“成长阶段”相关",
+        "children": [
+          {"w": "infant"},
+          {"w": "adolescent", "children": [
+            {"w": "youngster", "rel": "近义"},
+            {"w": "elder", "rel": "反义", "children": [
+              {"w": "elderly", "rel": "扩"},
+              {"w": "idle", "rel": "音近", "children": [{"w": "idly", "rel": "扩"}]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 55, "word": "infant", "freq": 2, "page": 28,
+          "prons": [{"ipa": "/ˈɪnfənt/", "senses": [{"pos": "n.", "mean": "[[婴儿]]；[[幼儿]]"}]}],
+          "tip": {"type": "联想", "text": "in（里面）+ fant（音似“粉的”）→“婴儿”衣服里面的皮肤粉粉嫩嫩的。"},
+          "ex": {"type": "真", "year": 2021, "en": "Hundreds of studies show that infants prefer novelty.", "zh": "数百项研究表明，婴儿更喜欢新鲜事物。", "key": ["infants"]},
+          "ext": []
+        },
+        {
+          "no": 56, "word": "adolescent", "freq": 1, "page": 28,
+          "prons": [{"ipa": "/ˌædəˈlesnt/", "senses": [{"pos": "n.", "mean": "[[青少年]]"}]}],
+          "tip": {"type": "联想", "text": "ado（音似 idle）+ lescen（音似 lesson）+ t（联想“头”）→ 那个懒惰的“青少年”一上课就觉得头疼。"},
+          "ex": {"type": "真", "year": 2021, "en": "In one recent study, we examined 360 adolescents' beliefs about the nature of \"smartness\".", "zh": "在最近的一项研究中，我们调查了 360 名青少年对“聪明”本质的看法。", "key": ["adolescents'"]},
+          "ext": []
+        },
+        {
+          "no": 57, "word": "idle", "freq": 2, "page": 28,
+          "prons": [{"ipa": "/ˈaɪdl/", "senses": [
+            {"pos": "v.", "mean": "[[虚度]]；[[闲荡]]"},
+            {"pos": "adj.", "mean": "[[懒惰的]]；[[无所事事的]]；[[闲散的]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“爱逗”→ 爱逗狗的人大多是“无所事事的”。"},
+          "ex": {"type": "例", "en": "He never stayed idle for long.", "zh": "他闲散的时间从来不长。", "key": ["idle"]},
+          "ext": [{"word": "idly", "ipa": "/ˈaɪdli/", "senses": [{"pos": "adv.", "mean": "闲散地；漫不经心地"}]}]
+        },
+        {
+          "no": 58, "word": "youngster", "freq": 1, "page": 28,
+          "prons": [{"ipa": "/ˈjʌŋstə(r)/", "senses": [{"pos": "n.", "mean": "[[年轻人]]；[[少年]]；[[儿童]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The camp is for youngsters aged 8 to 14.", "zh": "这个度假营是针对 8 至 14 岁的少年儿童的。", "key": ["youngsters"]},
+          "ext": []
+        },
+        {
+          "no": 59, "word": "elder", "freq": 1, "page": 28,
+          "prons": [{"ipa": "/ˈeldə(r)/", "senses": [
+            {"pos": "adj.", "mean": "[[年纪较长的]]"},
+            {"pos": "n.", "mean": "[[长者]]；[[长辈]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Lawyers can specialise in \"elder law\".", "zh": "律师可以专攻“老年法”。", "key": ["elder"]},
+          "ext": [{"word": "elderly", "ipa": "/ˈeldəli/", "senses": [{"pos": "adj.", "mean": "年纪较大的，上年纪的"}]}]
+        }
+      ]
+    },
+    {
+      "no": 18,
+      "title": "“移民”相关",
+      "pages": [29, 29],
+      "map": {
+        "w": "“移民”相关",
+        "children": [
+          {"w": "immigrate", "children": [
+            {"w": "immigrant", "rel": "扩", "children": [{"w": "immigration"}]}
+          ]},
+          {"w": "emigrate", "children": [{"w": "emigrant", "rel": "扩"}]},
+          {"w": "migrate", "children": [
+            {"w": "migration", "rel": "扩", "children": [{"w": "migrant"}]},
+            {"w": "surname", "rel": "相关", "children": [{"w": "namely", "rel": "同根"}]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 60, "word": "immigrate", "freq": 1, "page": 29,
+          "prons": [{"ipa": "/ˈɪmɪɡreɪt/", "senses": [{"pos": "v.", "mean": "（从外地）[[移居]]；[[移民]]"}]}],
+          "tip": {"type": "联想", "text": "immi（音似“移民”）+ grate（音似 great）→ 他说“移民”到中国后的生活很好。"},
+          "ex": {"type": "例", "en": "Her parents immigrated to America.", "zh": "她的父母移民到了美国。", "key": ["immigrated"]},
+          "ext": [
+            {"word": "immigrant", "ipa": "/ˈɪmɪɡrənt/", "senses": [{"pos": "n.", "mean": "（外来）移民；外侨"}]},
+            {"word": "immigration", "ipa": "/ˌɪmɪˈɡreɪʃn/", "senses": [{"pos": "n.", "mean": "移民；移民人数"}]}
+          ]
+        },
+        {
+          "no": 61, "word": "emigrate", "freq": 1, "page": 29,
+          "prons": [{"ipa": "/ˈemɪɡreɪt/", "senses": [{"pos": "v.", "mean": "[[移居国外]]；[[移民]]"}]}],
+          "tip": {"type": "联想", "text": "emi（音似“移民”）+ grate（音似 great）→ 即使“移居国外”后过得很好，他也没忘了自己的祖籍。"},
+          "ex": {"type": "真", "year": 2015, "en": "Immigrant parents could talk about their country of origin and why they emigrated to the United States.", "zh": "移民父母可以谈论他们的原籍国以及他们为什么移民到美国。", "key": ["emigrated"]},
+          "ext": [{"word": "emigrant", "ipa": "/ˈemɪɡrənt/", "senses": [{"pos": "n.", "mean": "移居外国的人；移民"}]}]
+        },
+        {
+          "no": 62, "word": "migrate", "freq": 2, "page": 29,
+          "prons": [{"ipa": "/maɪˈɡreɪt/", "senses": [{"pos": "v.", "mean": "（随季节变化）[[迁徙]]；[[移动]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Most of the colored people migrated there at the turn of the 20th century.", "zh": "大多数有色人种在 20 世纪之交移民到那里。", "key": ["migrated"]},
+          "ext": [
+            {"word": "migration", "ipa": "/maɪˈɡreɪʃn/", "senses": [{"pos": "n.", "mean": "迁移；移居；迁徙"}]},
+            {"word": "migrant", "ipa": "/ˈmaɪɡrənt/", "senses": [
+              {"pos": "n.", "mean": "（为工作）移居者；移民；候鸟"},
+              {"pos": "adj.", "mean": "（为工作）迁移的；迁徙的"}
+            ]}
+          ]
+        },
+        {
+          "no": 63, "word": "surname", "freq": 1, "page": 29,
+          "prons": [{"ipa": "/ˈsɜːneɪm/", "senses": [{"pos": "n.", "mean": "[[姓]]"}]}],
+          "tip": {"type": "构词", "text": "sur-（上面）+ name（名字）→ 在名字上面的 → 家族名 → 姓"},
+          "ex": {"type": "例", "en": "The full name of China's Han ethnic group is composed of surname and given name.", "zh": "中国汉族人的全名由姓和名组成。", "key": ["surname"]},
+          "ext": []
+        },
+        {
+          "no": 64, "word": "namely", "freq": 1, "page": 29,
+          "prons": [{"ipa": "/ˈneɪmli/", "senses": [{"pos": "adv.", "mean": "[[即]]；[[也就是]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "In the past, electric vehicles had their problems, namely, a limited driving range.", "zh": "在过去，电动汽车也有它们存在的问题，即驾驶范围有限。", "key": ["namely"]},
+          "ext": []
+        }
+      ]
+    }
+  ],
+  "unit_summary": {"groups": 18, "words": 223, "ext": 141, "zhen": 92, "li": 131}
+}
