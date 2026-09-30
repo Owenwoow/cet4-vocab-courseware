@@ -27,7 +27,7 @@ function applySettings() {
 }
 
 /* ---------- 状态 ---------- */
-let BOOK = null, L = null, GLOSS = {}, AUD = {w: {}, s: {}, z: {}, voices: []}, HAS_PAGES = false;
+let BOOK = null, L = null, GLOSS = {}, AUD = {w: {}, s: {}, z: {}, voices: []};
 const WORDMAP = new Map();   // 本课词条/扩展词 → {word, senses, no, ext}
 /* no-cache：每次向服务器确认，重新生成数据后不会读到旧缓存 */
 const fetchJSON = url => fetch(url, {cache: "no-cache"}).then(r => { if (!r.ok) throw new Error(url + " " + r.status); return r.json(); });
@@ -213,7 +213,7 @@ function renderLesson() {
     <div class="chips">${L.groups.map(g => `<a href="#/${L.id}/g${g.no}">词以群记 ${g.no} ${esc(g.title)}</a>`).join("")}</div>`;
   $("#groups").innerHTML = L.groups.map(g => `<section class="group" id="g${g.no}" data-g="${g.no}">
       <div class="ghead"><span class="gno">词以群记 ${g.no}</span><span class="gtitle">${esc(g.title)}</span>
-        ${HAS_PAGES ? `<button class="src-btn" data-pages="${g.pages[0]}-${g.pages[1]}">📖 看原书</button>` : ""}</div>
+        ${BOOK.hasPages ? `<button class="src-btn" data-pages="${g.pages[0]}-${g.pages[1]}">📖 看原书</button>` : ""}</div>
       <div class="mapbox">${mapHTML(g.map, true)}</div>
       ${g.entries.map(cardHTML).join("")}
     </section>`).join("");
@@ -237,8 +237,6 @@ async function loadLesson(id) {
     fetchJSON(`data/audio/${id}.json`).catch(() => ({w: {}, s: {}, z: {}, m: {}, voices: []})),
   ]);
   L = les; GLOSS = gl.words || {}; AUD = au;
-  /* 原书页图只在本地生成、不公开部署；没有就不显示「看原书」 */
-  HAS_PAGES = await fetch(`data/pages/p${L.pages[0]}.jpg`, {method: "HEAD", cache: "no-cache"}).then(r => r.ok).catch(() => false);
   WORDMAP.clear();
   for (const g of L.groups) for (const e of g.entries) {
     WORDMAP.set(e.word, {word: e.word, senses: e.prons.flatMap(p => p.senses), ipa: e.prons.map(p => p.ipa).join(" "), no: e.no, entry: e, ext: false});

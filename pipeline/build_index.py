@@ -6,13 +6,15 @@
 import json
 from pathlib import Path
 
-from config import DATA, LESSONS, lesson_id
+from config import DATA, LESSONS, PAGES, lesson_id
 
 TOC = json.loads((Path(__file__).parent / "toc.json").read_text(encoding="utf-8"))
 
 
 def main():
-    book = {"title": TOC["title"], "parts": [], "search": {}}
+    # 原书页图只在本地有（不进仓库、不部署），网页据此决定显不显示「看原书」
+    has_pages = PAGES.exists() and any(PAGES.glob("*.jpg"))
+    book = {"title": TOC["title"], "hasPages": has_pages, "parts": [], "search": {}}
     for part in TOC["parts"]:
         p = {"no": part["no"], "title": part["title"], "units": []}
         for unit in part["units"]:
