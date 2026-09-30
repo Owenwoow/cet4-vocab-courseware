@@ -14,7 +14,7 @@ PAGES = DATA / "pages"                    # 压缩后的页图，供网页「看
 AUDIO = DATA / "audio"                    # 每课的音频清单（小，随主仓库提交）
 
 # 音频文件本身放在单独的仓库 cet4-vocab-audio（本地克隆在 audio-store/），由它的 Pages 提供下载。
-# 本地生成、推送，线上不再生成，避免被语音服务限流。
+# 默认本地生成、推送；也可用 Actions 的 audio 工作流手动在云端生成（并发固定 3，避免被语音服务限流）。
 # 这个仓库快满 1GB 时：新建 cet4-vocab-audio-2，把下面两行改过去；旧课的清单里记着自己的地址，不受影响。
 AUDIO_STORE = ROOT / "audio-store"
 AUDIO_BASE = "https://owenwoow.github.io/cet4-vocab-audio/"

@@ -1,0 +1,84 @@
+# 手动触发：在云端生成指定课的音频，推到音频仓库 cet4-vocab-audio，再把音频清单提交回主仓库。
+# 提交回主仓库会触发 deploy 工作流（校验 → 检查音频已上线 → 部署），所以这里不用再手动部署。
+#
+# 用法：GitHub → Actions → audio → Run workflow，lessons 填 "u08-l03 u08-l04"（空格分隔）。
+# 前提：先把课程数据（site/data/lessons/*.json）推到 main。
+#
+# 需要一个 Secret：AUDIO_REPO_TOKEN（fine-grained PAT），仅授权本账号的这两个仓库：
+#   cet4-vocab-audio      Contents: 读写、Pages: 只读
+#   cet4-vocab-courseware Contents: 读写
+# 用 PAT 而不是默认的 GITHUB_TOKEN：默认令牌不能推别的仓库，
+# 而且用它提交的内容不会触发 deploy。
+#
+# 限流：GitHub 服务器 IP 容易被微软语音服务限流，所以并发固定为 3，且所有课在同一个任务里顺序做。
+# 每课做完立刻推送，中途超时或失败也不丢已完成的课；重跑同一批课会跳过已有音频。
+name: audio
+
+on:
+  workflow_dispatch:
+    inputs:
+      lessons:
+        description: 课程 id，空格分隔，例如 u08-l03 u08-l04
+        required: true
+        type: string
+
+concurrency:
+  group: audio
+  cancel-in-progress: false
+
+jobs:
+  audio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    env:
+      AUDIO_CONCURRENCY: "3"
+      GH_TOKEN: ${{ secrets.AUDIO_REPO_TOKEN }}
+      LESSONS: ${{ inputs.lessons }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.AUDIO_REPO_TOKEN }}
+
+      - uses: actions/checkout@v4
+        with:
+          repository: Owenwoow/cet4-vocab-audio
+          path: audio-store
+          token: ${{ secrets.AUDIO_REPO_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install edge-tts
+
+      - name: 检查课程 id
+        run: |
+          for id in $LESSONS; do
+            [[ "$id" =~ ^u[0-9]{2}-l[0-9]{2}$ ]] || { echo "课程 id 格式不对：$id"; exit 1; }
+            [ -f "site/data/lessons/$id.json" ] || { echo "找不到 site/data/lessons/$id.json，先把课程数据推到 main"; exit 1; }
+          done
+
+      - name: 设置提交身份
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: 逐课生成并推送音频
+        run: |
+          for id in $LESSONS; do
+            echo "::group::$id"
+            python pipeline/build_audio.py "$id"
+            python pipeline/publish_audio.py
+            echo "::endgroup::"
+          done
+
+      - name: 把音频清单提交回主仓库（触发 deploy）
+        run: |
+          git add site/data/audio
+          if git diff --cached --quiet; then
+            echo "清单没有变化，不提交"
+          else
+            git commit -m "chore(audio): 云端生成音频清单 ${LESSONS}"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

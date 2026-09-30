@@ -28,6 +28,7 @@ FILES = AUDIO_STORE / "files"
 # 并发数：本机 8 没问题；GitHub 服务器 IP 容易被限流，CI 里设 AUDIO_CONCURRENCY=3
 SEM = asyncio.Semaphore(int(os.environ.get("AUDIO_CONCURRENCY", 8)))
 RETRIES = 6
+REQUEST_TIMEOUT = 60   # 秒；一句话正常几秒内完成
 
 
 def senses_zh(senses):
@@ -44,13 +45,17 @@ async def synth(text, voice, marks_wanted):
     async with SEM:
         for attempt in range(RETRIES):
             try:
-                com = edge_tts.Communicate(text, voice, boundary="WordBoundary")
-                audio, marks = b"", []
-                async for ch in com.stream():
-                    if ch["type"] == "audio":
-                        audio += ch["data"]
-                    elif ch["type"] == "WordBoundary":
-                        marks.append([round(ch["offset"] / 1e7, 3), ch["text"]])
+                async def fetch():
+                    com = edge_tts.Communicate(text, voice, boundary="WordBoundary")
+                    audio, marks = b"", []
+                    async for ch in com.stream():
+                        if ch["type"] == "audio":
+                            audio += ch["data"]
+                        elif ch["type"] == "WordBoundary":
+                            marks.append([round(ch["offset"] / 1e7, 3), ch["text"]])
+                    return audio, marks
+                # 连接挂死时 stream() 不会自己超时，会一直占着并发名额；限时后按失败重试
+                audio, marks = await asyncio.wait_for(fetch(), REQUEST_TIMEOUT)
                 break
             except Exception as err:
                 if attempt == RETRIES - 1:

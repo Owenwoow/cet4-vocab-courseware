@@ -1,0 +1,2785 @@
+{
+ "id": "u08-l01",
+ "part": 1,
+ "unit": 8,
+ "lesson": 1,
+ "pages": [
+  215,
+  222
+ ],
+ "groups": [
+  {
+   "no": 1,
+   "title": "“器官”相关",
+   "pages": [
+    215,
+    216
+   ],
+   "map": {
+    "w": "“器官”相关",
+    "children": [
+     {
+      "w": "organ",
+      "children": [
+       {
+        "w": "organic",
+        "rel": "扩",
+        "children": [
+         {
+          "w": "organism",
+          "children": [
+           {
+            "w": "organise",
+            "rel": "相关",
+            "children": [
+             {
+              "w": "organisation",
+              "rel": "扩"
+             },
+             {
+              "w": "organisational",
+              "rel": "扩"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "w": "cell",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "deliver",
+          "rel": "相关",
+          "children": [
+           {
+            "w": "delivery",
+            "rel": "扩"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "function",
+      "children": [
+       {
+        "w": "functional",
+        "rel": "扩"
+       },
+       {
+        "w": "absorb",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "absorption",
+          "rel": "扩"
+         },
+         {
+          "w": "digest",
+          "rel": "近义",
+          "children": [
+           {
+            "w": "digestion",
+            "rel": "扩"
+           },
+           {
+            "w": "digestive",
+            "rel": "扩"
+           },
+           {
+            "w": "intake",
+            "rel": "相关"
+           }
+          ]
+         },
+         {
+          "w": "suck",
+          "rel": "相关",
+          "children": [
+           {
+            "w": "straw",
+            "rel": "相关"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "entries": [
+    {
+     "no": 1,
+     "word": "deliver",
+     "freq": 3,
+     "page": 215,
+     "prons": [
+      {
+       "ipa": "/dɪˈlɪvə(r)/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[传送]]；[[发送]]；[[发表]]；移交；运载"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "de（音似“弟”）+ liver（肝脏）→ 弟弟的肝脏适配成功，正在“传送”中。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2023,
+      "en": "They worry assistants will one day be used to deliver advertising directly to us.",
+      "zh": "他们担心，有一天（智能）助手会被用来直接向我们发送广告。",
+      "key": [
+       "deliver"
+      ]
+     },
+     "ext": [
+      {
+       "word": "delivery",
+       "ipa": "/dɪˈlɪvəri/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "投递；传送"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "word": "cell",
+     "freq": 1,
+     "page": 215,
+     "prons": [
+      {
+       "ipa": "/sel/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[细胞]]；牢房；[[小房间]]；[[手机]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "手机（cellphone）的应用程序就像一个个的小房间（cell）。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2018,
+      "en": "Changes in brain cells can affect communication between different regions of the brain.",
+      "zh": "脑细胞的变化会影响大脑不同区域之间的交流。",
+      "key": [
+       "cells"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 3,
+     "word": "organ",
+     "freq": 2,
+     "page": 215,
+     "prons": [
+      {
+       "ipa": "/ˈɔːɡən/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[（人体或动植物的）器官]]；[[（官方的）机构]]；风琴"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“哦肝”→ 哦，肝是人体的“器官”。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The heart is an organ.",
+      "zh": "心脏是一个器官。",
+      "key": [
+       "organ"
+      ]
+     },
+     "ext": [
+      {
+       "word": "organic",
+       "ipa": "/ɔːˈɡænɪk/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "有机的；绿色的；器官的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "word": "organism",
+     "freq": 1,
+     "page": 215,
+     "prons": [
+      {
+       "ipa": "/ˈɔːɡənɪzəm/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[有机体]]；[[生物]]"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "例",
+      "en": "It seems simple enough to distinguish between the organism and the surrounding environment.",
+      "zh": "区分生物和周围的环境似乎很简单。",
+      "key": [
+       "organism"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 5,
+     "word": "organise",
+     "alt": "-ize",
+     "freq": 1,
+     "page": 215,
+     "prons": [
+      {
+       "ipa": "/ˈɔːɡənaɪz/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[组织]]；[[安排]]；[[处理]]；[[分配]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "organ（器官）+ -ise/-ize（使……化）→ 使器官秩序化 → 组织"
+     },
+     "ex": {
+      "type": "例",
+      "en": "They organise their own laboratory work.",
+      "zh": "他们组织自己的实验室工作。",
+      "key": [
+       "organise"
+      ]
+     },
+     "ext": [
+      {
+       "word": "organisation",
+       "alt": "-ization",
+       "ipa": "/ˌɔːɡənaɪˈzeɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "组织；机构"
+        }
+       ]
+      },
+      {
+       "word": "organisational",
+       "alt": "-izational",
+       "ipa": "/ˌɔːɡənaɪˈzeɪʃənl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "安排的；配置的；分配的；组织性的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "word": "function",
+     "freq": 1,
+     "page": 215,
+     "prons": [
+      {
+       "ipa": "/ˈfʌŋkʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[功能]]；[[职能]]；函数"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[起作用]]；[[运转]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“放颗心”→ 放心吧，你的身体各器官“功能”良好。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2019,
+      "en": "This is evidence that our immune system really doesn't function so well when we age.",
+      "zh": "这表明，随着年龄的增长，我们的免疫系统确实不能很好地发挥作用。",
+      "key": [
+       "function"
+      ]
+     },
+     "ext": [
+      {
+       "word": "functional",
+       "ipa": "/ˈfʌŋkʃənl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "实用的；作用的；功能的；机能的；职能的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "word": "absorb",
+     "freq": 1,
+     "page": 216,
+     "prons": [
+      {
+       "ipa": "/əbˈzɔːb/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[吸收（液体，知识等）]]；同化；[[理解，使全神贯注]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "ab-（一再地）+ sorb（音似吮吸声）→ 一再地吸 → 吸收"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2017,
+      "en": "Some people are absorbed in the past but not open to new memories, but that's not the case for me.",
+      "zh": "有些人沉湎于过去，不愿接受新的回忆，但我不是这样。",
+      "key": [
+       "absorbed"
+      ]
+     },
+     "ext": [
+      {
+       "word": "absorption",
+       "ipa": "/əbˈzɔːpʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "吸收；并入；同化；专注"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "word": "suck",
+     "freq": 1,
+     "page": 216,
+     "prons": [
+      {
+       "ipa": "/sʌk/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[吸，吮]]；抽；吞没"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "su（音似“仨”）+ ck（联想“客”）→ 三个客人坐在一起用吸管喝饮料 → 吸，吮"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2020,
+      "en": "Nowadays forests are increasingly welcome because they suck in carbon pollution from the air.",
+      "zh": "现在森林越来越受欢迎，因为它们从空气中吸收碳污染。",
+      "key": [
+       "suck"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 9,
+     "word": "intake",
+     "freq": 1,
+     "page": 216,
+     "prons": [
+      {
+       "ipa": "/ˈɪnteɪk/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[（食物、饮料等的）摄入量，吸入量]]；吸收"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "in-（进入）+ take（拿，取）→ 进入并拿取 → 摄入量，吸入量"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2019,
+      "en": "People who prioritise breakfasts tend to have lower calorie but higher nutritional intake.",
+      "zh": "优先吃早餐的人往往摄入的热量较低，但营养较高。",
+      "key": [
+       "intake"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 10,
+     "word": "straw",
+     "freq": 1,
+     "page": 216,
+     "prons": [
+      {
+       "ipa": "/strɔː/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[稻草]]；[[吸管]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "他用吸管（straw）喝草莓（strawberry）奶昔。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "It adds a layer of straw to the inside of the cup.",
+      "zh": "它在杯子里面加一层稻草。",
+      "key": [
+       "straw"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 11,
+     "word": "digest",
+     "freq": 2,
+     "page": 216,
+     "prons": [
+      {
+       "ipa": "/ˈdaɪdʒest/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[摘要]]；[[概要]]；[[文摘]]；[[汇编]]"
+        }
+       ]
+      },
+      {
+       "ipa": "/daɪˈdʒest/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[消化]]；[[领悟]]；[[理解]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "di（联想“弟”）+ ge（联想“哥”）+ st（联想 street）→ 弟弟和哥哥去街上散步，“消化”刚吃完的美食。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2015,
+      "en": "But you can't force the child to think carefully, enjoy books, digest complex information.",
+      "zh": "但你不能强迫孩子仔细思考，享受读书，消化复杂的信息。",
+      "key": [
+       "digest"
+      ]
+     },
+     "ext": [
+      {
+       "word": "digestion",
+       "ipa": "/daɪˈdʒestʃən/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "消化；消化能力"
+        }
+       ]
+      },
+      {
+       "word": "digestive",
+       "ipa": "/daɪˈdʒestɪv/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "消化的；和消化有关的"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "no": 2,
+   "title": "“医疗”相关",
+   "pages": [
+    216,
+    218
+   ],
+   "map": {
+    "w": "“医疗”相关",
+    "children": [
+     {
+      "w": "clinic",
+      "children": [
+       {
+        "w": "clinical",
+        "rel": "扩",
+        "children": [
+         {
+          "w": "diagnose",
+          "rel": "相关",
+          "children": [
+           {
+            "w": "diagnosis",
+            "rel": "扩"
+           },
+           {
+            "w": "surgery",
+            "rel": "相关",
+            "children": [
+             {
+              "w": "surgical",
+              "rel": "扩"
+             },
+             {
+              "w": "surgeon",
+              "rel": "扩"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "w": "physician",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "physical",
+          "rel": "相关",
+          "children": [
+           {
+            "w": "physics",
+            "rel": "扩"
+           },
+           {
+            "w": "physicist",
+            "rel": "扩"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "dentist",
+      "children": [
+       {
+        "w": "dental",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "identical",
+          "rel": "形近",
+          "children": [
+           {
+            "w": "identity",
+            "rel": "同根"
+           },
+           {
+            "w": "identify",
+            "rel": "同根",
+            "children": [
+             {
+              "w": "identification",
+              "rel": "扩"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "w": "dose",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "dosage",
+          "rel": "扩"
+         },
+         {
+          "w": "tablet",
+          "rel": "相关"
+         },
+         {
+          "w": "pill",
+          "rel": "相关"
+         }
+        ]
+       },
+       {
+        "w": "sore",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "ambulance",
+          "rel": "相关"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "entries": [
+    {
+     "no": 12,
+     "word": "clinic",
+     "freq": 1,
+     "page": 216,
+     "prons": [
+      {
+       "ipa": "/ˈklɪnɪk/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[诊所]]；临床实习；[[门诊部]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "野餐（picnic）时我吃坏了肚子，要去诊所（clinic）看医生。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "He is being treated at a clinic.",
+      "zh": "他正在一家诊所接受治疗。",
+      "key": [
+       "clinic"
+      ]
+     },
+     "ext": [
+      {
+       "word": "clinical",
+       "ipa": "/ˈklɪnɪkl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "临床的，临床诊断的；简陋的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 13,
+     "word": "diagnose",
+     "freq": 1,
+     "page": 217,
+     "prons": [
+      {
+       "ipa": "/ˈdaɪəɡnəʊz; ˌdaɪəɡˈnəʊz/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[诊断（疾病）]]；[[判断（问题的原因）]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "di（联想“打”）+ ag（联想“阿哥”）+ nose（鼻子）→ 医生给阿哥打光是为了方便“诊断”鼻子的状况。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "He was wrongly diagnosed.",
+      "zh": "他被误诊了。",
+      "key": [
+       "diagnosed"
+      ]
+     },
+     "ext": [
+      {
+       "word": "diagnosis",
+       "ipa": "/ˌdaɪəɡˈnəʊsɪs/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "诊断"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "word": "surgery",
+     "freq": 2,
+     "page": 217,
+     "prons": [
+      {
+       "ipa": "/ˈsɜːdʒəri/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[外科手术]]；[[诊室]]；[[门诊处]]"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "真",
+      "year": 2021,
+      "en": "Health insurance and clinical guidelines promote treatment with drugs and surgery.",
+      "zh": "健康保险和临床指导方针提倡用药物和手术治疗。",
+      "key": [
+       "surgery"
+      ]
+     },
+     "ext": [
+      {
+       "word": "surgical",
+       "ipa": "/ˈsɜːdʒɪkl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "外科的，外科手术的"
+        }
+       ]
+      },
+      {
+       "word": "surgeon",
+       "ipa": "/ˈsɜːdʒən/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "外科医生"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "word": "physical",
+     "freq": 1,
+     "page": 217,
+     "prons": [
+      {
+       "ipa": "/ˈfɪzɪkl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[身体的]]；[[现实的]]；[[物质的]]；[[物理学的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "phy（音似“肥”）+ si（联想“死”）+ -cal（形容词后缀）→ 过度肥胖对“身体的”危害非常大，甚至会增加死亡风险。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2016,
+      "en": "What mattered most was the residents' physical health and mental status.",
+      "zh": "最重要的是居民的身体健康和心理状态。",
+      "key": [
+       "physical"
+      ]
+     },
+     "ext": [
+      {
+       "word": "physics",
+       "ipa": "/ˈfɪzɪks/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "物理学"
+        }
+       ]
+      },
+      {
+       "word": "physicist",
+       "ipa": "/ˈfɪzɪsɪst/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "物理学家"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 16,
+     "word": "physician",
+     "freq": 3,
+     "page": 217,
+     "prons": [
+      {
+       "ipa": "/fɪˈzɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[医生]]，[[内科医生]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "physic（医学；身体）+ -ian（人）→ 医生"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2019,
+      "en": "They can save patients trouble visiting physicians.",
+      "zh": "他们可以为患者省去看医生的麻烦。",
+      "key": [
+       "physicians"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 17,
+     "word": "dentist",
+     "freq": 1,
+     "page": 217,
+     "prons": [
+      {
+       "ipa": "/ˈdentɪst/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[牙医，牙医诊所]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "dent（牙齿）+ -ist（人）→ 医治牙齿的人 → 牙医"
+     },
+     "ex": {
+      "type": "例",
+      "en": "I have to go to the dentist tomorrow.",
+      "zh": "我明天得去看牙医。",
+      "key": [
+       "dentist"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 18,
+     "word": "dental",
+     "freq": 1,
+     "page": 217,
+     "prons": [
+      {
+       "ipa": "/ˈdentl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[牙齿的]]；[[牙科的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "dent（牙齿）+ -al（形容词后缀）→ 牙齿的；牙科的"
+     },
+     "ex": {
+      "type": "例",
+      "en": "I've got a dental appointment at 3 o'clock.",
+      "zh": "我约了3点看牙医。",
+      "key": [
+       "dental"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 19,
+     "word": "identical",
+     "freq": 2,
+     "page": 217,
+     "prons": [
+      {
+       "ipa": "/aɪˈdentɪkl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[同一的，相同的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "ident（相同）+ -ical（形容词后缀）→ 同一的，相同的"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The two pictures are similar, although not identical.",
+      "zh": "这两幅画很相似，但不完全相同。",
+      "key": [
+       "identical"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 20,
+     "word": "identity",
+     "freq": 2,
+     "page": 217,
+     "prons": [
+      {
+       "ipa": "/aɪˈdentəti/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[身份，特性]]；[[同一性，一致]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "身份证（ID card）就是用来识别某个人“身份”（identity）的证件。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2021,
+      "en": "It clearly aims to form children's identity through play.",
+      "zh": "很明显，它的目的是通过游戏来形成孩子的身份。",
+      "key": [
+       "identity"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 21,
+     "word": "identify",
+     "freq": 3,
+     "page": 217,
+     "prons": [
+      {
+       "ipa": "/aɪˈdentɪfaɪ/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[认出，识别]]；[[鉴定]]；找到"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "身份证（ID card）就是用来识别、鉴定（identify）身份（identity）的。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2019,
+      "en": "Postal services work hard to identify items that require priority treatment.",
+      "zh": "邮政服务部门努力识别需要优先处理的物品。",
+      "key": [
+       "identify"
+      ]
+     },
+     "ext": [
+      {
+       "word": "identification",
+       "ipa": "/aɪˌdentɪfɪˈkeɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "鉴别，识别；身份证明"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 22,
+     "word": "dose",
+     "freq": 2,
+     "page": 218,
+     "prons": [
+      {
+       "ipa": "/dəʊs/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[（药的）一剂]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[给（某人）服药]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "他的鼻子（nose）不舒服，去医院开了一剂（dose）药。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "It will have considerable side effects if taken in large doses.",
+      "zh": "如果大量服用，会有相当大的副作用。",
+      "key": [
+       "doses"
+      ]
+     },
+     "ext": [
+      {
+       "word": "dosage",
+       "ipa": "/ˈdəʊsɪdʒ/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "（通常指药的）剂量"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 23,
+     "word": "sore",
+     "freq": 1,
+     "page": 218,
+     "prons": [
+      {
+       "ipa": "/sɔː(r)/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[（发炎）疼痛的]]；[[酸痛的]]；愤慨的"
+        },
+        {
+         "pos": "n.",
+         "mean": "[[痛处]]；伤处"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“烧”→ 嗓子像火烧一样“疼痛”。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Flu symptoms including fever and chills, sore throat and body aches come on suddenly.",
+      "zh": "流感症状比如发烧、寒战、喉咙痛和身体疼痛，会突然出现。",
+      "key": [
+       "sore"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 24,
+     "word": "tablet",
+     "freq": 1,
+     "page": 218,
+     "prons": [
+      {
+       "ipa": "/ˈtæblət/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[药片]]；[[平板电脑]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "table（桌子）+ t（联想“他”）→ 桌子上有他的“药片”和“平板电脑”。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2022,
+      "en": "It involves buying lots of tablets and software.",
+      "zh": "它需要购买大量的平板电脑和软件。",
+      "key": [
+       "tablets"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 25,
+     "word": "pill",
+     "freq": 1,
+     "page": 218,
+     "prons": [
+      {
+       "ipa": "/pɪl/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[药丸]]；[[药片]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“片”→“药片”是片剂。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "I took a pill to help settle my nerves.",
+      "zh": "我吃了一片药，帮助放松一下神经。",
+      "key": [
+       "pill"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 26,
+     "word": "ambulance",
+     "freq": 1,
+     "page": 218,
+     "prons": [
+      {
+       "ipa": "/ˈæmbjələns/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[救护车]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“俺不能死”→ 俺不能死，赶紧叫“救护车”。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "He was taken to hospital in an ambulance.",
+      "zh": "他被救护车送往医院。",
+      "key": [
+       "ambulance"
+      ]
+     },
+     "ext": []
+    }
+   ]
+  },
+  {
+   "no": 3,
+   "title": "“病痛”相关",
+   "pages": [
+    218,
+    221
+   ],
+   "map": {
+    "w": "“病痛”相关",
+    "children": [
+     {
+      "w": "obesity",
+      "children": [
+       {
+        "w": "obese",
+        "rel": "扩"
+       },
+       {
+        "w": "diabetes",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "cancer",
+          "children": [
+           {
+            "w": "headache",
+            "rel": "相关"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "w": "slim",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "lean",
+          "rel": "近义"
+         },
+         {
+          "w": "slender",
+          "rel": "近义",
+          "children": [
+           {
+            "w": "bundle",
+            "rel": "相关"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "recover",
+      "children": [
+       {
+        "w": "recovery",
+        "rel": "加y",
+        "children": [
+         {
+          "w": "restore",
+          "rel": "相关",
+          "children": [
+           {
+            "w": "restoration",
+            "rel": "扩"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "w": "cover",
+        "rel": "去re",
+        "children": [
+         {
+          "w": "coverage",
+          "rel": "加age"
+         },
+         {
+          "w": "discover",
+          "rel": "加dis",
+          "children": [
+           {
+            "w": "discovery",
+            "rel": "扩"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "treatment",
+      "children": [
+       {
+        "w": "treat",
+        "rel": "扩"
+       },
+       {
+        "w": "remedy",
+        "rel": "近义",
+        "children": [
+         {
+          "w": "remedial",
+          "rel": "扩"
+         },
+         {
+          "w": "heal",
+          "rel": "相关"
+         }
+        ]
+       },
+       {
+        "w": "therapy",
+        "rel": "近义",
+        "children": [
+         {
+          "w": "therapist",
+          "rel": "扩"
+         },
+         {
+          "w": "therapeutic",
+          "rel": "扩"
+         }
+        ]
+       },
+       {
+        "w": "inject",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "injection",
+          "rel": "扩"
+         },
+         {
+          "w": "subject",
+          "rel": "同根",
+          "children": [
+           {
+            "w": "subjective",
+            "rel": "扩"
+           },
+           {
+            "w": "phenomenon",
+            "rel": "相关"
+           }
+          ]
+         },
+         {
+          "w": "object",
+          "rel": "同根",
+          "children": [
+           {
+            "w": "objective",
+            "rel": "扩"
+           },
+           {
+            "w": "reject",
+            "children": [
+             {
+              "w": "rejection",
+              "rel": "扩"
+             },
+             {
+              "w": "project",
+              "children": [
+               {
+                "w": "projection",
+                "rel": "扩"
+               },
+               {
+                "w": "projector",
+                "rel": "扩"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "entries": [
+    {
+     "no": 27,
+     "word": "headache",
+     "freq": 1,
+     "page": 218,
+     "prons": [
+      {
+       "ipa": "/ˈhedeɪk/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[头痛]]；头痛的事"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "head（头）+ a（一）+ che（联想“扯”）→ 头上的伤口一扯就疼 → 头痛"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2018,
+      "en": "The access codes may be another financial headache for students.",
+      "zh": "访问码可能是令学生们头疼的另一个经济问题。",
+      "key": [
+       "headache"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 28,
+     "word": "cancer",
+     "freq": 1,
+     "page": 218,
+     "prons": [
+      {
+       "ipa": "/ˈkænsə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[癌症]]；（社会）毒瘤；（迅速蔓延的）邪恶"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "can（可以）+ c（音似“死”）+ -er（表示人的后缀）→ 可以让人死去的病 → 癌症"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2017,
+      "en": "There are many people who recover from cancer, stroke, or heart disease.",
+      "zh": "许多人从癌症、中风或心脏病中康复。",
+      "key": [
+       "cancer"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 29,
+     "word": "diabetes",
+     "freq": 3,
+     "page": 219,
+     "prons": [
+      {
+       "ipa": "/ˌdaɪəˈbiːtiːz/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[糖尿病]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "di-（两个）+ a + bete（音似“鼻涕”）+ s → 两行鼻涕 →“糖尿病”患者因免疫力下降，经常感冒流鼻涕。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2018,
+      "en": "Diabetes patients are advised to eat more plant-based food.",
+      "zh": "建议糖尿病患者多吃植物性食物。",
+      "key": [
+       "Diabetes"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 30,
+     "word": "obesity",
+     "freq": 1,
+     "page": 219,
+     "prons": [
+      {
+       "ipa": "/əʊˈbiːsəti/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[肥胖]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "obese adj. 肥胖的 → obesity n."
+     },
+     "ex": {
+      "type": "真",
+      "year": 2021,
+      "en": "The food industry plays a major role in fighting obesity.",
+      "zh": "食品业在抗击肥胖方面发挥着重要作用。",
+      "key": [
+       "obesity"
+      ]
+     },
+     "ext": [
+      {
+       "word": "obese",
+       "ipa": "/əʊˈbiːs/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "臃肿的，肥胖的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 31,
+     "word": "slim",
+     "freq": 3,
+     "page": 219,
+     "prons": [
+      {
+       "ipa": "/slɪm/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[苗条的]]；[[薄的]]；[[（数量）微小的]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[减肥]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“四厘米”→ 四厘米高的鞋跟让“苗条的”她体态更好。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "How do you manage to stay so slim?",
+      "zh": "你是怎样把身材保持得这么苗条的？",
+      "key": [
+       "slim"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 32,
+     "word": "lean",
+     "freq": 1,
+     "page": 219,
+     "prons": [
+      {
+       "ipa": "/liːn/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[倾斜，倾向]]；[[倚靠]]"
+        },
+        {
+         "pos": "adj.",
+         "mean": "[[精简的]]；[[苗条的，瘦的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "他学习（learn）学得都瘦（lean）了。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2016,
+      "en": "I lean toward the latter view.",
+      "zh": "我倾向于后一种观点。",
+      "key": [
+       "lean"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 33,
+     "word": "slender",
+     "freq": 1,
+     "page": 219,
+     "prons": [
+      {
+       "ipa": "/ˈslendə(r)/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[苗条的]]；[[微小的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "s（联想“美女”）+ lender（音似 Linda，人名）→ 身材“苗条”的 Linda 是个美女。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "These claims are based on slender evidence.",
+      "zh": "这些说法基于微弱的证据。",
+      "key": [
+       "slender"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 34,
+     "word": "bundle",
+     "freq": 1,
+     "page": 219,
+     "prons": [
+      {
+       "ipa": "/ˈbʌndl/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[捆]]；[[包]]；[[一批]]；[[一大笔钱]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[（成群地）匆忙赶往]]；[[捆绑]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“绑的”→ 捆；捆绑"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2022,
+      "en": "A bundle containing thousands of pounds got stolen.",
+      "zh": "一捆包含数千英镑的现金被偷了。",
+      "key": [
+       "bundle"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 35,
+     "word": "restore",
+     "freq": 3,
+     "page": 219,
+     "prons": [
+      {
+       "ipa": "/rɪˈstɔː(r)/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[恢复]]；[[使复原]]；[[修复]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "rest（休息）+ o（联想“一圈”）+ re（字母音似“阿姨”）→ 阿姨绕了一圈稍作休息，才“恢复”过来。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "They were badly damaged but restored.",
+      "zh": "它们已严重受损，但已得到修复。",
+      "key": [
+       "restored"
+      ]
+     },
+     "ext": [
+      {
+       "word": "restoration",
+       "ipa": "/ˌrestəˈreɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "恢复；修复；归还"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 36,
+     "word": "recover",
+     "freq": 1,
+     "page": 219,
+     "prons": [
+      {
+       "ipa": "/rɪˈkʌvə(r)/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[康复]]；[[痊愈]]；[[恢复]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "re-（重新）+ cover（覆盖）→ 重新覆盖 → 恢复"
+     },
+     "ex": {
+      "type": "例",
+      "en": "He's still recovering from his operation.",
+      "zh": "手术后，他仍在恢复之中。",
+      "key": [
+       "recovering"
+      ]
+     },
+     "ext": [
+      {
+       "word": "recovery",
+       "ipa": "/rɪˈkʌvəri/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "恢复；痊愈；复苏"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 37,
+     "word": "coverage",
+     "freq": 1,
+     "page": 219,
+     "prons": [
+      {
+       "ipa": "/ˈkʌvərɪdʒ/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[新闻报道]]；[[覆盖范围]]"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "例",
+      "en": "The incident has received wide coverage in the press.",
+      "zh": "这个事件已被新闻界广泛报道。",
+      "key": [
+       "coverage"
+      ]
+     },
+     "ext": [
+      {
+       "word": "cover",
+       "ipa": "/ˈkʌvə(r)/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "包括；涉及；采访；覆盖"
+        },
+        {
+         "pos": "n.",
+         "mean": "盖子；封面"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 38,
+     "word": "discover",
+     "freq": 3,
+     "page": 219,
+     "prons": [
+      {
+       "ipa": "/dɪˈskʌvə(r)/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[发现]]；[[发觉]]；[[了解到]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "dis-（分开；除去）+ cover（覆盖；盖子）→ 除去覆盖物，我们就“发现”了真相。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2017,
+      "en": "They discovered Iceland in the ninth century.",
+      "zh": "他们在九世纪发现了冰岛。",
+      "key": [
+       "discovered"
+      ]
+     },
+     "ext": [
+      {
+       "word": "discovery",
+       "ipa": "/dɪˈskʌvəri/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "发现；发觉；被发现的事物"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 39,
+     "word": "heal",
+     "freq": 2,
+     "page": 220,
+     "prons": [
+      {
+       "ipa": "/hiːl/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[（使）康复]]；[[治愈（病人）]]；使又愉快起来"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "he（他）+ al（联想 all）→ 他的病都好了 → 康复；治愈"
+     },
+     "ex": {
+      "type": "例",
+      "en": "That hasn't stopped thousands of winter depressives from trying to heal themselves.",
+      "zh": "那并没有阻止成千上万的冬季抑郁症患者试图治愈自己。",
+      "key": [
+       "heal"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 40,
+     "word": "remedy",
+     "freq": 2,
+     "page": 220,
+     "prons": [
+      {
+       "ipa": "/ˈremədi/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[处理方法]]；[[疗法]]；[[改进措施]]；补偿"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[改正]]；[[改进]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "re-（回来）+ me（我）+ dy（联想 dying）→ 我回来治疗垂死的病人 → 疗法"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2016,
+      "en": "But many tech home remedies can be explained by a little science.",
+      "zh": "但是，许多科技家庭疗法可以用一点科学来解释。",
+      "key": [
+       "remedies"
+      ]
+     },
+     "ext": [
+      {
+       "word": "remedial",
+       "ipa": "/rɪˈmiːdiəl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "补救的；纠正的；辅导的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 41,
+     "word": "therapy",
+     "freq": 2,
+     "page": 220,
+     "prons": [
+      {
+       "ipa": "/ˈθerəpi/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[治疗]]；[[心理治疗]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "the（这个）+ rap（说唱）+ y → 这个说唱歌手在舞台上表演，“治疗”你的心灵创伤。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2017,
+      "en": "They also had talk therapy with a nurse before and after quit day.",
+      "zh": "他们还在戒烟日前后与护士进行了谈话治疗。",
+      "key": [
+       "therapy"
+      ]
+     },
+     "ext": [
+      {
+       "word": "therapist",
+       "ipa": "/ˈθerəpɪst/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "（某治疗法的）治疗专家"
+        }
+       ]
+      },
+      {
+       "word": "therapeutic",
+       "alt": "therapeutical",
+       "ipa": "/ˌθerəˈpjuːtɪk(l)/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "治疗的；医疗的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 42,
+     "word": "treatment",
+     "freq": 3,
+     "page": 220,
+     "prons": [
+      {
+       "ipa": "/ˈtriːtmənt/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[治疗]]；[[待遇]]"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "真",
+      "year": 2024,
+      "en": "The elephant was given medical treatment for many days.",
+      "zh": "这头大象接受了多天的医学治疗。",
+      "key": [
+       "treatment"
+      ]
+     },
+     "ext": [
+      {
+       "word": "treat",
+       "ipa": "/triːt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "以……方式对待；把……看作；治疗；招待"
+        },
+        {
+         "pos": "n.",
+         "mean": "款待"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 43,
+     "word": "inject",
+     "freq": 1,
+     "page": 220,
+     "prons": [
+      {
+       "ipa": "/ɪnˈdʒekt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[（给……）注射（药物等）]]；[[投入]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "in-（进入）+ ject（扔）→ 扔进身体 → 注射"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Look at your talk and pick out a few words or sentences which you can inject with humour.",
+      "zh": "请仔细审视你的演讲内容，挑选出一些可以巧妙植入幽默的词语或句子。",
+      "key": [
+       "inject"
+      ]
+     },
+     "ext": [
+      {
+       "word": "injection",
+       "ipa": "/ɪnˈdʒekʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "注射；大量资金的投入；注入"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 44,
+     "word": "subject",
+     "freq": 2,
+     "page": 220,
+     "prons": [
+      {
+       "ipa": "/ˈsʌbdʒɪkt/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[主题]]；[[科目]]"
+        },
+        {
+         "pos": "adj.",
+         "mean": "[[易遭受……的]]；[[服从于]]"
+        }
+       ]
+      },
+      {
+       "ipa": "/səbˈdʒekt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[（～to）使遭受]]；[[使服从]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "sub-（往下）+ ject（扔）→ 使遭受；使服从"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2017,
+      "en": "Most college professors agree the kind of exam they choose largely depends on the subject.",
+      "zh": "大多数大学教授都同意，他们选择的考试形式在很大程度上取决于学科性质。",
+      "key": [
+       "subject"
+      ]
+     },
+     "ext": [
+      {
+       "word": "subjective",
+       "ipa": "/səbˈdʒektɪv/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "主观的；主语的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 45,
+     "word": "phenomenon",
+     "freq": 3,
+     "page": 220,
+     "prons": [
+      {
+       "ipa": "/fəˈnɒmɪnən/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[现象]]；非凡的人"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "phe（音似“飞”）+ no（不）+ men（人）+ on（在……上面）→ 在上面飞的不是人，而是不明飞行物，大家都对这个“现象”感兴趣。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2017,
+      "en": "Muscle performance can also be affected by a phenomenon called \"central fatigue\".",
+      "zh": "肌肉表现也会受到一种叫作“中枢疲劳”的现象的影响。",
+      "key": [
+       "phenomenon"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 46,
+     "word": "object",
+     "freq": 1,
+     "page": 220,
+     "prons": [
+      {
+       "ipa": "/ˈɒbdʒɪkt/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[对象，物品，东西]]"
+        }
+       ]
+      },
+      {
+       "ipa": "/əbˈdʒekt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[反对]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "ob-（表示方向）+ ject（扔）→ 朝着某个方向扔 → 反对"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Her mother objected to Eric's flying lessons.",
+      "zh": "她母亲反对（她上）埃里克的飞行课。",
+      "key": [
+       "objected"
+      ]
+     },
+     "ext": [
+      {
+       "word": "objective",
+       "ipa": "/əbˈdʒektɪv/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "客观的"
+        },
+        {
+         "pos": "n.",
+         "mean": "目的；目标"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 47,
+     "word": "reject",
+     "freq": 2,
+     "page": 221,
+     "prons": [
+      {
+       "ipa": "/rɪˈdʒekt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[拒绝，抵制]]"
+        }
+       ]
+      },
+      {
+       "ipa": "/ˈriːdʒekt/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "废品；不合格者"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "re-（回来）+ ject（扔）→ 扔回来 → 拒绝，抵制"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2017,
+      "en": "They reject using toilet paper with unnecessary features.",
+      "zh": "他们拒绝使用带有不必要功能的卫生纸。",
+      "key": [
+       "reject"
+      ]
+     },
+     "ext": [
+      {
+       "word": "rejection",
+       "ipa": "/rɪˈdʒekʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "拒绝；不录用"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 48,
+     "word": "project",
+     "freq": 1,
+     "page": 221,
+     "prons": [
+      {
+       "ipa": "/ˈprɒdʒekt/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[计划，方案]]；[[项目]]"
+        }
+       ]
+      },
+      {
+       "ipa": "/prəˈdʒekt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[计划]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "pro-（往前）+ ject（扔）→ 做一件事情之前，要提前扔出“计划”。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2017,
+      "en": "Business schools grade their students in part on their performance in group projects.",
+      "zh": "商学院对学生的评分部分取决于他们在小组项目中的表现。",
+      "key": [
+       "projects"
+      ]
+     },
+     "ext": [
+      {
+       "word": "projection",
+       "ipa": "/prəˈdʒekʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "预测，推断，设想；投射，放映，投影，放映的影像"
+        }
+       ]
+      },
+      {
+       "word": "projector",
+       "ipa": "/prəˈdʒektə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "放映机；投影仪"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "no": 4,
+   "title": "donation 相关",
+   "pages": [
+    221,
+    222
+   ],
+   "map": {
+    "w": "donation 相关",
+    "children": [
+     {
+      "w": "donor",
+      "children": [
+       {
+        "w": "donate",
+        "children": [
+         {
+          "w": "charity",
+          "rel": "相关",
+          "children": [
+           {
+            "w": "charitable",
+            "rel": "扩"
+           }
+          ]
+         },
+         {
+          "w": "devote",
+          "rel": "相关",
+          "children": [
+           {
+            "w": "devotion",
+            "rel": "扩"
+           },
+           {
+            "w": "delicate",
+            "rel": "相关"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "contribution",
+      "children": [
+       {
+        "w": "contribute",
+        "rel": "扩",
+        "children": [
+         {
+          "w": "distribute",
+          "rel": "形近",
+          "children": [
+           {
+            "w": "distribution",
+            "rel": "扩"
+           },
+           {
+            "w": "distributive",
+            "rel": "扩"
+           }
+          ]
+         },
+         {
+          "w": "attribute",
+          "rel": "形近",
+          "children": [
+           {
+            "w": "attributable",
+            "rel": "扩"
+           },
+           {
+            "w": "attributive",
+            "rel": "扩"
+           },
+           {
+            "w": "owe",
+            "rel": "相关"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "w": "contributor",
+        "rel": "扩"
+       }
+      ]
+     }
+    ]
+   },
+   "entries": [
+    {
+     "no": 49,
+     "word": "charity",
+     "freq": 2,
+     "page": 221,
+     "prons": [
+      {
+       "ipa": "/ˈtʃærəti/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[慈善]]；[[慈善团体]]；[[仁爱]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "cha（联想“插”）+ r（形似花）+ -ity（名词后缀）→ 她把平时插花挣的钱，都做了“慈善”。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2023,
+      "en": "He was a popular guest at charity benefits and public events.",
+      "zh": "他是慈善活动和公开场合中备受青睐的嘉宾。",
+      "key": [
+       "charity"
+      ]
+     },
+     "ext": [
+      {
+       "word": "charitable",
+       "ipa": "/ˈtʃærətəbl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "慈善的；慷慨的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 50,
+     "word": "donate",
+     "freq": 2,
+     "page": 221,
+     "prons": [
+      {
+       "ipa": "/dəʊˈneɪt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[捐赠]]；[[赠予]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“兜内的”→ 他把兜内的钱都“捐赠”了出去。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2020,
+      "en": "It received an incredibly large number of donated books.",
+      "zh": "它收到了数量惊人的捐赠书籍。",
+      "key": [
+       "donated"
+      ]
+     },
+     "ext": [
+      {
+       "word": "donation",
+       "ipa": "/dəʊˈneɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "捐赠，捐款"
+        }
+       ]
+      },
+      {
+       "word": "donor",
+       "ipa": "/ˈdəʊnə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "捐赠者"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 51,
+     "word": "devote",
+     "freq": 2,
+     "page": 221,
+     "prons": [
+      {
+       "ipa": "/dɪˈvəʊt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[（～to）奉献]]；[[致力于]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "de（音似“弟”）+ vote（投票）→ 弟弟积极参与投票，“致力于”公益。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2017,
+      "en": "She decided to devote all her time to cultivating and developing it.",
+      "zh": "她决定把她所有的时间都用来培养和发展它。",
+      "key": [
+       "devote",
+       "to"
+      ]
+     },
+     "ext": [
+      {
+       "word": "devotion",
+       "ipa": "/dɪˈvəʊʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "奉献，奉献精神"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 52,
+     "word": "delicate",
+     "freq": 1,
+     "page": 221,
+     "prons": [
+      {
+       "ipa": "/ˈdelɪkət/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[易碎的，脆弱的]]；[[精致的]]；熟练的"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "deli（联想“得力”，文具品牌）+ cat（猫）+ e → 得力文具上刻有一只“精致的”猫。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2017,
+      "en": "Life is precious, and delicate.",
+      "zh": "生命是宝贵的，也是脆弱的。",
+      "key": [
+       "delicate"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 53,
+     "word": "contribute",
+     "freq": 3,
+     "page": 222,
+     "prons": [
+      {
+       "ipa": "/kənˈtrɪbjuːt; ˈkɒntrɪbjuːt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[贡献，有助于]]；[[捐助]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "con-（一起，共同）+ tribut（给）+ e → 共同给 → 贡献"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2019,
+      "en": "A variety of factors contribute to the long-run increase in the share of young adults living with their parents.",
+      "zh": "多种因素导致了与父母同住的年轻人比例的长期增长。",
+      "key": [
+       "contribute to"
+      ]
+     },
+     "ext": [
+      {
+       "word": "contribution",
+       "ipa": "/ˌkɒntrɪˈbjuːʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "贡献"
+        }
+       ]
+      },
+      {
+       "word": "contributor",
+       "ipa": "/kənˈtrɪbjətə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "捐款者；捐赠者；撰稿人；嘉宾"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 54,
+     "word": "distribute",
+     "freq": 2,
+     "page": 222,
+     "prons": [
+      {
+       "ipa": "/dɪˈstrɪbjuːt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[分发，分配]]；[[散布]]；[[分销]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "dis-（分开）+ tribut（给）+ e → 分发，分配"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2021,
+      "en": "The scientific establishment is not very good at distributing money.",
+      "zh": "科学界在分配资金方面并不擅长。",
+      "key": [
+       "distributing"
+      ]
+     },
+     "ext": [
+      {
+       "word": "distribution",
+       "ipa": "/ˌdɪstrɪˈbjuːʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "分配；分发"
+        }
+       ]
+      },
+      {
+       "word": "distributive",
+       "ipa": "/dɪˈstrɪbjətɪv/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "经销的；分销的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 55,
+     "word": "attribute",
+     "freq": 3,
+     "page": 222,
+     "prons": [
+      {
+       "ipa": "/əˈtrɪbjuːt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[把……归因于]]"
+        }
+       ]
+      },
+      {
+       "ipa": "/ˈætrɪbjuːt/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[属性]]，[[性质]]，[[特征]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "at-（一再地）+ tribut（给）+ e → 给出原因 → 把……归因于"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2016,
+      "en": "Mistakes crack their self-confidence because they attribute errors to a lack of ability, which they feel powerless to change.",
+      "zh": "错误会让他们的自信心崩溃，因为他们把错误归咎于能力不足，觉得无力改变。",
+      "key": [
+       "attribute",
+       "to"
+      ]
+     },
+     "ext": [
+      {
+       "word": "attributable",
+       "ipa": "/əˈtrɪbjətəbl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "可归因于……的"
+        }
+       ]
+      },
+      {
+       "word": "attributive",
+       "ipa": "/əˈtrɪbjətɪv/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "定语的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 56,
+     "word": "owe",
+     "freq": 1,
+     "page": 222,
+     "prons": [
+      {
+       "ipa": "/əʊ/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[欠（账、情）]]；[[归因于]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "o（形似矿井）+ we（我们）→ 我们得知矿井经营不善，已经“欠账”了。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The child may feel that he owes her an apology.",
+      "zh": "这孩子可能觉得他欠她一个道歉。",
+      "key": [
+       "owes"
+      ]
+     },
+     "ext": []
+    }
+   ]
+  }
+ ]
+}
