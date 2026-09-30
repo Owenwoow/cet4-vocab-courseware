@@ -27,3 +27,12 @@ Thumbs.db
 desktop.ini
 .idea/
 .vscode/
+
+# ===== 原书与素材：体积大、有版权，不提交 =====
+*.pdf
+reference/
+
+# ===== 可由脚本重新生成的产物 =====
+work/
+site/data/pages/
+site/data/audio/

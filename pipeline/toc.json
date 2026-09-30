@@ -1,0 +1,22 @@
+{
+  "title": "英语四级 · 你还在背单词吗",
+  "parts": [
+    {"no": 1, "title": "词以群记 · 抓核心", "units": [
+      {"no": 1,  "groups": 18, "words": 223, "lessons": [2, 9, 14, 22]},
+      {"no": 2,  "groups": 22, "words": 228, "lessons": [30, 36, 42, 50]},
+      {"no": 3,  "groups": 24, "words": 234, "lessons": [60, 68, 75, 83]},
+      {"no": 4,  "groups": 20, "words": 246, "lessons": [91, 100, 107, 115]},
+      {"no": 5,  "groups": 21, "words": 254, "lessons": [123, 131, 139, 148]},
+      {"no": 6,  "groups": 24, "words": 263, "lessons": [156, 163, 172, 182]},
+      {"no": 7,  "groups": 13, "words": 194, "lessons": [191, 196, 203, 210]},
+      {"no": 8,  "groups": 16, "words": 241, "lessons": [215, 223, 232, 240]},
+      {"no": 9,  "groups": 17, "words": 212, "lessons": [248, 254, 262, 268]},
+      {"no": 10, "groups": 20, "words": 232, "lessons": [277, 285, 292, 301]}
+    ]},
+    {"no": 2, "title": "词以序记 · 刷基础", "units": [
+      {"no": 11, "lessons": [309, 313, 317, 321]},
+      {"no": 12, "lessons": [325, 329, 333, 337]}
+    ]}
+  ],
+  "index_page": 338
+}

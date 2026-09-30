@@ -1,0 +1,433 @@
+{
+  "id": "u07-l01",
+  "part": 1,
+  "unit": 7,
+  "lesson": 1,
+  "pages": [191, 195],
+  "groups": [
+    {
+      "no": 1,
+      "title": "“边缘”相关",
+      "pages": [191, 192],
+      "map": {
+        "w": "“边缘”相关",
+        "children": [
+          {"w": "margin", "children": [{"w": "marginal", "rel": "扩"}]},
+          {"w": "boundary", "children": [
+            {"w": "bound", "rel": "相关", "children": [{"w": "bounce", "rel": "形近"}]}
+          ]},
+          {"w": "horizon", "children": [{"w": "horizontal", "rel": "扩"}]},
+          {"w": "edge", "children": [{"w": "hedge", "rel": "形近"}]},
+          {"w": "frontier", "children": [
+            {"w": "border", "rel": "近义"},
+            {"w": "import", "rel": "相关", "children": [{"w": "importation", "rel": "扩"}]},
+            {"w": "export", "rel": "相关", "children": [{"w": "exportation", "rel": "扩"}]},
+            {"w": "passport", "rel": "相关", "children": [{"w": "visa"}]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "margin", "freq": 3, "page": 191,
+          "prons": [{"ipa": "/ˈmɑːdʒɪn/", "senses": [{"pos": "n.", "mean": "[[边缘]]；[[利润]]；极限；白边，页边空白处"}]}],
+          "tip": {"type": "联想", "text": "mar（联想 Mars）+ gin（音似“进”）→ 探测器要从“边缘”进入火星。"},
+          "ex": {"type": "例", "en": "Most students write questions or short notes in the margins.", "zh": "大多数学生在页边空白处写问题或简短的笔记。", "key": ["margins"]},
+          "ext": [{"word": "marginal", "ipa": "/ˈmɑːdʒɪnl/", "senses": [{"pos": "adj.", "mean": "小的，微不足道的；不重要的"}]}]
+        },
+        {
+          "no": 2, "word": "boundary", "freq": 2, "page": 191,
+          "prons": [{"ipa": "/ˈbaʊndri/", "senses": [{"pos": "n.", "mean": "[[边界]]，界限；[[分界线]]"}]}],
+          "tip": {"type": "联想", "text": "bound（音似“邦德”）+ -ary（名词后缀）→ 邦德是一个善恶分明，有“边界”感的人。"},
+          "ex": {"type": "例", "en": "The left boundary of this plate is the west coast of North America.", "zh": "这个板块的左边界是北美的西海岸。", "key": ["boundary"]},
+          "ext": []
+        },
+        {
+          "no": 3, "word": "bound", "freq": 2, "page": 191,
+          "prons": [{"ipa": "/baʊnd/", "senses": [
+            {"pos": "adj.", "mean": "[[一定会]]；有义务（做某事）；准备前往（某地）"},
+            {"pos": "v.", "mean": "[[跳跃]]；[[形成……的边界（或界限）]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“蹦跶”→ 你可以在一定范围内蹦跶 → 跳跃；形成……的边界"},
+          "ex": {"type": "真", "year": 2022, "en": "It is bound to help us achieve greater success.", "zh": "它一定会帮助我们取得更大的成功。", "key": ["is bound to"]},
+          "ext": []
+        },
+        {
+          "no": 4, "word": "bounce", "freq": 1, "page": 191,
+          "prons": [{"ipa": "/baʊns/", "senses": [
+            {"pos": "v.", "mean": "跳动；[[弹起]]；[[反射]]"},
+            {"pos": "n.", "mean": "[[弹跳]]；活力"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“棒死”→ 他简直太棒了，一把就接住了“弹跳”球。"},
+          "ex": {"type": "例", "en": "The ball bounced twice before he could reach it.", "zh": "球弹跳了两次他才接到。", "key": ["bounced"]},
+          "ext": []
+        },
+        {
+          "no": 5, "word": "horizon", "freq": 2, "page": 191,
+          "prons": [{"ipa": "/həˈraɪzn/", "senses": [{"pos": "n.", "mean": "[[地平线]]；范围；[[眼界]]"}]}],
+          "tip": {"type": "联想", "text": "ho（联想“好”）+ riz（联想 rise）+ on → 好大的太阳从“地平线”升起来了。"},
+          "ex": {"type": "例", "en": "She wanted to travel to broaden her horizons.", "zh": "她想旅行，以开阔眼界。", "key": ["horizons"]},
+          "ext": [{"word": "horizontal", "ipa": "/ˌhɒrɪˈzɒntl/", "senses": [{"pos": "adj.", "mean": "地平线的；水平的"}]}]
+        },
+        {
+          "no": 6, "word": "edge", "freq": 1, "page": 191,
+          "prons": [{"ipa": "/edʒ/", "senses": [{"pos": "n.", "mean": "刀口；[[边缘]]；优势"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“挨挤”→ 景区的“边缘”人挨人，人挤人。"},
+          "ex": {"type": "真", "year": 2019, "en": "The brown animal was spotted stuck on a narrow window edge of the office tower.", "zh": "这只棕色的动物被发现卡在办公大楼的一个狭窄的窗户边上。", "key": ["edge"]},
+          "ext": []
+        },
+        {
+          "no": 7, "word": "hedge", "freq": 1, "page": 191,
+          "prons": [{"ipa": "/hedʒ/", "senses": [{"pos": "n.", "mean": "[[树篱]]；防范措施"}]}],
+          "tip": {"type": "联想", "text": "he（他）+（e）dge（边缘）→ 他在房子的边缘修了一个“树篱”。"},
+          "ex": {"type": "例", "en": "The cottage was surrounded by a hedge.", "zh": "小屋被一道树篱包围着。", "key": ["hedge"]},
+          "ext": []
+        },
+        {
+          "no": 8, "word": "frontier", "freq": 1, "page": 192,
+          "prons": [{"ipa": "/ˈfrʌntɪə(r)/", "senses": [{"pos": "n.", "mean": "[[边境]]；（尤指知识的）[[前沿]]，[[新领域]]"}]}],
+          "tip": {"type": "构词", "text": "front（前面）+ -ier（名词后缀）→ 一个国家的最前面就是“边境”。"},
+          "ex": {"type": "真", "year": 2022, "en": "For many scientists, public debate is a new frontier.", "zh": "对许多科学家来说，公开辩论是一个新的领域。", "key": ["frontier"]},
+          "ext": []
+        },
+        {
+          "no": 9, "word": "border", "freq": 1, "page": 192,
+          "prons": [{"ipa": "/ˈbɔːdə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[国界]]；[[边界]]"},
+            {"pos": "v.", "mean": "与……接壤"}
+          ]}],
+          "tip": {"type": "联想", "text": "b（联想“兵”）+ order（命令）→ 士兵接到了命令，去驻守国家的边境 → 国界；边界"},
+          "ex": {"type": "真", "year": 2016, "en": "It gave rise to a lot of problems on the border.", "zh": "这在边境引发了很多问题。", "key": ["border"]},
+          "ext": []
+        },
+        {
+          "no": 10, "word": "import", "freq": 1, "page": 192,
+          "prons": [
+            {"ipa": "/ˈɪmpɔːt/", "senses": [{"pos": "n.", "mean": "[[进口]]；重要性"}]},
+            {"ipa": "/ɪmˈpɔːt/", "senses": [{"pos": "v.", "mean": "[[进口]]；[[输入]]"}]}
+          ],
+          "tip": {"type": "构词", "text": "im-（里面）+ port（港口）→ 运到港口里 → 进口"},
+          "ex": {"type": "例", "en": "The country has to import most of its raw materials.", "zh": "这个国家必须进口大多数原料。", "key": ["import"]},
+          "ext": [{"word": "importation", "ipa": "/ˌɪmpɔːˈteɪʃn/", "senses": [{"pos": "n.", "mean": "进口，输入；进口货"}]}]
+        },
+        {
+          "no": 11, "word": "export", "freq": 1, "page": 192,
+          "prons": [
+            {"ipa": "/ˈekspɔːt/", "senses": [{"pos": "n.", "mean": "[[出口（物）]]；输出（物）"}]},
+            {"ipa": "/ɪkˈspɔːt/", "senses": [{"pos": "v.", "mean": "[[出口]]；[[输出]]"}]}
+          ],
+          "tip": {"type": "构词", "text": "ex-（往外）+ port（港口）→ 运到港口外 → 出口"},
+          "ex": {"type": "例", "en": "The country banned its exports for several months.", "zh": "该国禁止了几个月的出口。", "key": ["exports"]},
+          "ext": [{"word": "exportation", "ipa": "/ˌekspɔːˈteɪʃn/", "senses": [{"pos": "n.", "mean": "出口，输出"}]}]
+        },
+        {
+          "no": 12, "word": "passport", "freq": 1, "page": 192,
+          "prons": [{"ipa": "/ˈpɑːspɔːt/", "senses": [{"pos": "n.", "mean": "[[护照]]；途径，手段"}]}],
+          "tip": {"type": "构词", "text": "pass（通过）+ port（港口）→ 通过港口时需要“护照”。"},
+          "ex": {"type": "真", "year": 2021, "en": "They appear more formal than other passports.", "zh": "它们看起来比其他护照更正式。", "key": ["passports"]},
+          "ext": []
+        },
+        {
+          "no": 13, "word": "visa", "freq": 2, "page": 192,
+          "prons": [{"ipa": "/ˈviːzə/", "senses": [{"pos": "n.", "mean": "[[签证]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "He was surprised to find that his visitor's visa expired.", "zh": "他惊讶地发现，他的访问签证过期了。", "key": ["visa"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "title": "“具体、熟悉”相关",
+      "pages": [192, 194],
+      "map": {
+        "w": "“具体、熟悉”相关",
+        "children": [
+          {"w": "specific", "children": [
+            {"w": "specifically", "rel": "扩", "children": [
+              {"w": "specify", "children": [{"w": "specification"}]}
+            ]},
+            {"w": "especially", "rel": "相关", "children": [
+              {"w": "particularly", "rel": "近义", "children": [{"w": "particular", "rel": "扩"}]}
+            ]},
+            {"w": "special", "rel": "相关", "children": [
+              {"w": "specialise", "rel": "扩", "children": [
+                {"w": "specialisation"},
+                {"w": "specialist", "children": [
+                  {"w": "doctor", "rel": "相关", "children": [
+                    {"w": "doctorate", "rel": "扩"},
+                    {"w": "doctoral", "rel": "扩"}
+                  ]}
+                ]}
+              ]},
+              {"w": "peculiar", "rel": "近义", "children": [
+                {"w": "peculiarity", "rel": "扩"},
+                {"w": "unique", "rel": "近义"},
+                {"w": "weird", "rel": "近义"},
+                {"w": "odd", "rel": "近义", "children": [
+                  {"w": "oddity", "rel": "扩"},
+                  {"w": "odds", "rel": "加s"}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"w": "acquaint", "children": [
+            {"w": "acquaintance", "rel": "扩", "children": [
+              {"w": "familiar", "rel": "相关", "children": [
+                {"w": "familiarity", "rel": "扩"},
+                {"w": "familiarise", "rel": "扩"}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 14, "word": "specific", "freq": 3, "page": 193,
+          "prons": [{"ipa": "/spəˈsɪfɪk/", "senses": [
+            {"pos": "n.", "mean": "[[细节]]，[[详情]]"},
+            {"pos": "adj.", "mean": "[[具体的]]，[[详细的]]；特定的"}
+          ]}],
+          "tip": {"type": "联想", "text": "speci（联想 special）+ fic（音似“非可”）→ 在这特别的日子，他非把“细节”做到完美不可。"},
+          "ex": {"type": "真", "year": 2017, "en": "They tried to meet astronauts' specific requirements.", "zh": "他们尽力满足航天员的特定需求。", "key": ["specific"]},
+          "ext": [
+            {"word": "specifically", "ipa": "/spəˈsɪfɪkli/", "senses": [{"pos": "adv.", "mean": "特意；专门地；明确地，具体地"}]},
+            {"word": "specify", "ipa": "/ˈspesɪfaɪ/", "senses": [{"pos": "v.", "mean": "具体说明；明确规定"}]}
+          ]
+        },
+        {
+          "no": 15, "word": "specification", "freq": 1, "page": 193,
+          "prons": [{"ipa": "/ˌspesɪfɪˈkeɪʃn/", "senses": [{"pos": "n.", "mean": "[[规格]]；说明书"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The office was furnished to a high specification.", "zh": "办公室是按高规格装潢的。", "key": ["specification"]},
+          "ext": []
+        },
+        {
+          "no": 16, "word": "especially", "freq": 1, "page": 193,
+          "prons": [{"ipa": "/ɪˈspeʃəli/", "senses": [{"pos": "adv.", "mean": "[[尤其]]；专门；非常"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2024, "en": "Chocolates save us from many things, especially emotional distress.", "zh": "巧克力可以让我们远离许多事情，尤其是情绪上的痛苦。", "key": ["especially"]},
+          "ext": []
+        },
+        {
+          "no": 17, "word": "particular", "freq": 1, "page": 193,
+          "prons": [{"ipa": "/pəˈtɪkjələ(r)/", "senses": [
+            {"pos": "adj.", "mean": "[[特别的]]；挑剔的；[[详细的]]；[[专指的]]"},
+            {"pos": "n.", "mean": "（正式记下的）细节，[[详情]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2017, "en": "They are particular about the quality of toilet paper.", "zh": "他们对卫生纸的质量特别挑剔。", "key": ["are particular about"]},
+          "ext": [{"word": "particularly", "ipa": "/pəˈtɪkjələli/", "senses": [{"pos": "adv.", "mean": "特别，尤其"}]}]
+        },
+        {
+          "no": 18, "word": "special", "freq": 1, "page": 193,
+          "prons": [{"ipa": "/ˈspeʃl/", "senses": [
+            {"pos": "adj.", "mean": "[[特殊的]]；特设的"},
+            {"pos": "n.", "mean": "特别活动；[[特色菜]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2019, "en": "Museum's special exhibition area will now be free of charge.", "zh": "博物馆的特殊展区将免费开放。", "key": ["special"]},
+          "ext": [
+            {"word": "specialise", "alt": "-ize", "ipa": "/ˈspeʃəlaɪz/", "senses": [{"pos": "v.", "mean": "专门研究；专攻"}]},
+            {"word": "specialisation", "alt": "-ization", "ipa": "/ˌspeʃəlaɪˈzeɪʃn/", "senses": [{"pos": "n.", "mean": "特别化，专门化"}]}
+          ]
+        },
+        {
+          "no": 19, "word": "specialist", "freq": 2, "page": 193,
+          "prons": [{"ipa": "/ˈspeʃəlɪst/", "senses": [
+            {"pos": "n.", "mean": "[[专家]]；专科医生"},
+            {"pos": "adj.", "mean": "[[专业的]]；专家的"}
+          ]}],
+          "tip": {"type": "构词", "text": "special（特别的）+ -ist（表示人的后缀）→ 在某个行业特别的人 → 专家"},
+          "ex": {"type": "真", "year": 2017, "en": "This rat detection method doesn't rely on specialist equipment.", "zh": "这种检测老鼠的方法不依赖于专业设备。", "key": ["specialist"]},
+          "ext": []
+        },
+        {
+          "no": 20, "word": "doctor", "freq": 1, "page": 193,
+          "prons": [{"ipa": "/ˈdɒktə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[医生]]；博士"},
+            {"pos": "v.", "mean": "篡改"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "It assigns doctors to give advice to shoppers in food stores.", "zh": "它指派医生为食品店的购物者提供建议。", "key": ["doctors"]},
+          "ext": [
+            {"word": "doctorate", "ipa": "/ˈdɒktərət/", "senses": [{"pos": "n.", "mean": "博士学位"}]},
+            {"word": "doctoral", "ipa": "/ˈdɒktərəl/", "senses": [{"pos": "adj.", "mean": "博士的，博士学位的"}]}
+          ]
+        },
+        {
+          "no": 21, "word": "peculiar", "freq": 1, "page": 193,
+          "prons": [{"ipa": "/pɪˈkjuːliə(r)/", "senses": [{"pos": "adj.", "mean": "[[奇怪的]]；[[特殊的]]；罕见的"}]}],
+          "tip": {"type": "联想", "text": "pecu（音似“皮裤”）+ liar（说谎者）→ 那个穿皮裤的说谎者是很“奇怪的”。"},
+          "ex": {"type": "例", "en": "There was something peculiar in the way he smiled.", "zh": "他笑起来有点怪。", "key": ["peculiar"]},
+          "ext": [{"word": "peculiarity", "ipa": "/pɪˌkjuːliˈærəti/", "senses": [{"pos": "n.", "mean": "特点；奇怪"}]}]
+        },
+        {
+          "no": 22, "word": "unique", "freq": 3, "page": 193,
+          "prons": [{"ipa": "/juˈniːk/", "senses": [{"pos": "adj.", "mean": "[[唯一的]]；[[独特的]]；罕见的"}]}],
+          "tip": {"type": "联想", "text": "u（字母音似 you）+ ni（联想“你”）+ que（音似“可”）→ 你们每个人可都是一个“唯一的”且“独特的”存在。"},
+          "ex": {"type": "真", "year": 2022, "en": "Each of the healthy eating cultures has its own unique feature.", "zh": "每种健康饮食文化都有其特色。", "key": ["unique"]},
+          "ext": []
+        },
+        {
+          "no": 23, "word": "odd", "freq": 2, "page": 193,
+          "prons": [{"ipa": "/ɒd/", "senses": [{"pos": "adj.", "mean": "[[奇怪的]]；临时的；不成对的，奇数的"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“熬的”→ 我熬的粥里加了很多配菜，有种“奇怪的”味道。"},
+          "ex": {"type": "例", "en": "He'd always been odd, but not to this extent.", "zh": "他曾一直很古怪，但没到这种程度。", "key": ["odd"]},
+          "ext": [{"word": "oddity", "ipa": "/ˈɒdəti/", "senses": [{"pos": "n.", "mean": "古怪反常的人（或事物）；怪现象；古怪，怪异，反常"}]}]
+        },
+        {
+          "no": 24, "word": "odds", "freq": 2, "page": 193,
+          "prons": [{"ipa": "/ɒdz/", "senses": [{"pos": "n.", "mean": "[[可能性]]，[[概率]]；不利条件；差异"}]}],
+          "tip": {"type": "对照", "text": "奇怪的（odd）事情不会每天发生，是有一定概率（odds）的。"},
+          "ex": {"type": "例", "en": "The odds are very much in our favour.", "zh": "我方获胜的概率极大。", "key": ["odds"]},
+          "ext": []
+        },
+        {
+          "no": 25, "word": "weird", "freq": 1, "page": 194,
+          "prons": [{"ipa": "/wɪəd/", "senses": [{"pos": "adj.", "mean": "[[奇异的]]；不寻常的；怪诞的"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“we 饿的”→ 如果我们三餐富足却天天说饿，那么这种行为是很“奇异的”。"},
+          "ex": {"type": "例", "en": "He's got some weird ideas.", "zh": "他有些怪念头。", "key": ["weird"]},
+          "ext": []
+        },
+        {
+          "no": 26, "word": "acquaint", "freq": 1, "page": 194,
+          "prons": [{"ipa": "/əˈkweɪnt/", "senses": [{"pos": "v.", "mean": "使[[熟悉]]，使了解"}]}],
+          "tip": {"type": "联想", "text": "ac-（一再地）+ quai（联想 guai“怪”）+ nt → 再奇怪的东西，只要一再地见到也见怪不怪了，因为已经熟悉了 → 使熟悉，使了解"},
+          "ex": {"type": "例", "en": "Please acquaint me with the facts of the case.", "zh": "请把这件事的实情告诉我。", "key": ["acquaint", "with"]},
+          "ext": [{"word": "acquaintance", "ipa": "/əˈkweɪntəns/", "senses": [{"pos": "n.", "mean": "熟人"}]}]
+        },
+        {
+          "no": 27, "word": "familiar", "freq": 1, "page": 194,
+          "prons": [{"ipa": "/fəˈmɪliə(r)/", "senses": [{"pos": "adj.", "mean": "[[熟悉的]]；通晓"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2024, "en": "Snow days are a familiar theme in American film and TV shows.", "zh": "雪休日是美国电影和电视节目中一个熟悉的主题。", "key": ["familiar"]},
+          "ext": [
+            {"word": "familiarity", "ipa": "/fəˌmɪliˈærəti/", "senses": [{"pos": "n.", "mean": "熟悉；通晓，认识；亲近"}]},
+            {"word": "familiarise", "alt": "-ize", "ipa": "/fəˈmɪliəraɪz/", "senses": [{"pos": "v.", "mean": "（使）熟悉，了解，通晓"}]}
+          ]
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "title": "“打扰、忽视”相关",
+      "pages": [194, 195],
+      "map": {
+        "w": "“打扰、忽视”相关",
+        "children": [
+          {"w": "trouble", "children": [{"w": "troublesome", "rel": "扩"}]},
+          {"w": "bother", "children": [
+            {"w": "plague", "rel": "近义"},
+            {"w": "annoy", "rel": "近义", "children": [{"w": "annoyance", "rel": "扩"}]}
+          ]},
+          {"w": "ignore", "children": [
+            {"w": "ignorance", "rel": "扩"},
+            {"w": "ignorant", "rel": "扩"},
+            {"w": "neglect", "rel": "近义", "children": [
+              {"w": "neglectful", "rel": "扩"},
+              {"w": "negative", "rel": "同根", "children": [
+                {"w": "negate", "rel": "扩", "children": [{"w": "negation"}]},
+                {"w": "passive", "rel": "近义"},
+                {"w": "pessimistic", "rel": "近义", "children": [
+                  {"w": "pessimist", "rel": "扩"},
+                  {"w": "pessimism", "rel": "扩"}
+                ]},
+                {"w": "optimistic", "rel": "反义", "children": [{"w": "optimism", "rel": "扩"}]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 28, "word": "troublesome", "freq": 1, "page": 194,
+          "prons": [{"ipa": "/ˈtrʌblsəm/", "senses": [{"pos": "adj.", "mean": "[[引起麻烦的，令人讨厌的]]"}]}],
+          "tip": {"type": "构词", "text": "trouble（麻烦）+ -some（……的）→ 引起麻烦的，令人讨厌的"},
+          "ex": {"type": "例", "en": "He needed surgery to cure a troublesome back injury.", "zh": "他需要手术来治好烦人的背伤。", "key": ["troublesome"]},
+          "ext": [{"word": "trouble", "ipa": "/ˈtrʌbl/", "senses": [
+            {"pos": "n.", "mean": "问题；困难，烦扰"},
+            {"pos": "v.", "mean": "使烦恼；劳驾；费力"}
+          ]}]
+        },
+        {
+          "no": 29, "word": "bother", "freq": 1, "page": 194,
+          "prons": [{"ipa": "/ˈbɒðə(r)/", "senses": [
+            {"pos": "v.", "mean": "（使某人）[[烦恼]]，[[打扰]]"},
+            {"pos": "n.", "mean": "麻烦，[[烦扰]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "有花（r）的是自家兄弟（brother），没花（r）的是来打扰（bother）大家的人。"},
+          "ex": {"type": "真", "year": 2017, "en": "I have been bothered for a long time about the curious lack of curiosity.", "zh": "很长一段时间以来，我一直感到困扰的是缺乏好奇心这一奇怪现象。", "key": ["bothered"]},
+          "ext": []
+        },
+        {
+          "no": 30, "word": "plague", "freq": 1, "page": 194,
+          "prons": [{"ipa": "/pleɪɡ/", "senses": [
+            {"pos": "v.", "mean": "[[困扰]]，使苦恼"},
+            {"pos": "n.", "mean": "[[瘟疫]]；灾害"}
+          ]}],
+          "tip": {"type": "联想", "text": "p（联想“扑”）+ la（联想“拉”）+ gue（音似“哥”）→ 他常常突然扑过来拉住哥哥，这让哥哥感到很“困扰”。"},
+          "ex": {"type": "例", "en": "The team has been plagued by injury this season.", "zh": "本赛季这支队伍一直为队员受伤所困扰。", "key": ["plagued"]},
+          "ext": []
+        },
+        {
+          "no": 31, "word": "annoy", "freq": 2, "page": 194,
+          "prons": [{"ipa": "/əˈnɔɪ/", "senses": [{"pos": "v.", "mean": "[[使苦恼]]；[[使生气]]；骚扰"}]}],
+          "tip": {"type": "联想", "text": "an（一个）+ noy（音似“闹唉”）→ 如果家里有一个常哭闹的小孩，这会令人苦恼不已 → 使苦恼；使生气"},
+          "ex": {"type": "真", "year": 2020, "en": "The authorities were annoyed but could find nothing to charge him with.", "zh": "当局很恼火，但找不到任何指控他的罪名。", "key": ["annoyed"]},
+          "ext": [{"word": "annoyance", "ipa": "/əˈnɔɪəns/", "senses": [{"pos": "n.", "mean": "恼怒，生气；令人生气的事物"}]}]
+        },
+        {
+          "no": 32, "word": "ignore", "freq": 3, "page": 195,
+          "prons": [{"ipa": "/ɪɡˈnɔː(r)/", "senses": [{"pos": "v.", "mean": "[[忽视]]；[[不予理睬]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“一个闹”→ 对付一个无理取闹的孩子，最好的方法就是“不予理睬”。"},
+          "ex": {"type": "真", "year": 2023, "en": "They attempt to ignore the whole situation.", "zh": "他们试图忽视整个情况。", "key": ["ignore"]},
+          "ext": [
+            {"word": "ignorance", "ipa": "/ˈɪɡnərəns/", "senses": [{"pos": "n.", "mean": "无知"}]},
+            {"word": "ignorant", "ipa": "/ˈɪɡnərənt/", "senses": [{"pos": "adj.", "mean": "无知的；粗鲁的"}]}
+          ]
+        },
+        {
+          "no": 33, "word": "neglect", "freq": 3, "page": 195,
+          "prons": [{"ipa": "/nɪˈɡlekt/", "senses": [{"pos": "n. & v.", "mean": "[[忽略]]，[[忽视]]"}]}],
+          "tip": {"type": "构词", "text": "neg-（否定前缀）+ lect（选择）→ 不去选择 → 忽略，忽视"},
+          "ex": {"type": "真", "year": 2023, "en": "It leads students to neglect their studies.", "zh": "它导致学生忽视他们的学业。", "key": ["neglect"]},
+          "ext": [{"word": "neglectful", "ipa": "/nɪˈɡlektfl/", "senses": [{"pos": "adj.", "mean": "马虎的；不重视的；忽视的"}]}]
+        },
+        {
+          "no": 34, "word": "negative", "freq": 3, "page": 195,
+          "prons": [{"ipa": "/ˈneɡətɪv/", "senses": [{"pos": "adj.", "mean": "[[有害的]]；[[消极的]]，[[负面的]]；[[否定的]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“奶哥提我”→ 我小时候调皮，奶奶和哥哥一提到我都是“消极的”态度。"},
+          "ex": {"type": "真", "year": 2021, "en": "They have strong negative emotions towards maths.", "zh": "他们对数学有着强烈的负面情绪。", "key": ["negative"]},
+          "ext": [
+            {"word": "negate", "ipa": "/nɪˈɡeɪt/", "senses": [{"pos": "v.", "mean": "取消；使无效；否定"}]},
+            {"word": "negation", "ipa": "/nɪˈɡeɪʃn/", "senses": [{"pos": "n.", "mean": "反面，对立面；否定；拒绝"}]}
+          ]
+        },
+        {
+          "no": 35, "word": "passive", "freq": 2, "page": 195,
+          "prons": [{"ipa": "/ˈpæsɪv/", "senses": [{"pos": "adj.", "mean": "[[被动的]]；[[消极的]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“怕媳妇”→ 他怕媳妇，常使自己处于“被动的”地位。"},
+          "ex": {"type": "例", "en": "Textbooks are not passive or lifeless.", "zh": "教科书并不是消极或毫无生气的。", "key": ["passive"]},
+          "ext": []
+        },
+        {
+          "no": 36, "word": "optimistic", "freq": 3, "page": 195,
+          "prons": [{"ipa": "/ˌɒptɪˈmɪstɪk/", "senses": [{"pos": "adj.", "mean": "[[乐观（主义）的]]"}]}],
+          "tip": {"type": "对照", "text": "她小时候很调皮，家人提起她的表现时是消极的（negative），后来她变得懂事乖巧，家人再提起她是很乐观的（optimistic）。"},
+          "ex": {"type": "真", "year": 2019, "en": "Try to be optimistic whatever happens.", "zh": "无论发生什么，都要保持乐观。", "key": ["optimistic"]},
+          "ext": [{"word": "optimism", "ipa": "/ˈɒptɪmɪzəm/", "senses": [{"pos": "n.", "mean": "乐观；乐观主义"}]}]
+        },
+        {
+          "no": 37, "word": "pessimistic", "freq": 2, "page": 195,
+          "prons": [{"ipa": "/ˌpesɪˈmɪstɪk/", "senses": [{"pos": "adj.", "mean": "[[悲观的]]，厌世的"}]}],
+          "tip": {"type": "联想", "text": "pessi（音似“拍死”）+ mistic（音似 mistake）→ 他一做错事就想拍死自己，这是一种“悲观的”态度。"},
+          "ex": {"type": "真", "year": 2018, "en": "Some pessimistic experts feel that the automobile is bound to fall into disuse.", "zh": "一些悲观的专家认为汽车一定会被淘汰。", "key": ["pessimistic"]},
+          "ext": [
+            {"word": "pessimism", "ipa": "/ˈpesɪmɪzəm/", "senses": [{"pos": "n.", "mean": "悲观，悲观主义"}]},
+            {"word": "pessimist", "ipa": "/ˈpesɪmɪst/", "senses": [{"pos": "n.", "mean": "悲观主义者，悲观论者"}]}
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>四级词汇课件</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <button class="icon" id="menuBtn" aria-label="目录">☰</button>
+  <div class="crumb" id="crumb">加载中…</div>
+  <div class="search">
+    <input id="q" type="search" placeholder="搜单词" autocomplete="off" spellcheck="false">
+    <div id="qres" class="qres"></div>
+  </div>
+</header>
+
+<nav id="drawer" class="drawer" aria-label="目录"></nav>
+<div id="scrim" class="scrim"></div>
+
+<main class="wrap">
+  <section id="lessonHead" class="lesson-head"></section>
+  <div class="bar" id="bar">
+    <label>发音 <select id="voice"></select></label>
+    <label>语速 <select id="rate"><option value="1">常速</option><option value="0.75">慢速</option></select></label>
+    <button id="maskBtn">背诵模式</button>
+    <button id="hideKnown">隐藏已会</button>
+    <span class="sep"></span>
+    <button id="playAll">🎧 磨耳朵</button>
+    <label><select id="scope"><option value="group">当前词群</option><option value="lesson">整课</option></select></label>
+    <label><input type="checkbox" id="withZh" checked> 含中文</label>
+    <label><input type="checkbox" id="loop"> 循环</label>
+  </div>
+  <div id="groups"></div>
+  <p class="foot">内容取自《英语四级 · 你还在背单词吗》，仅供个人学习。例句逐词释义为 AI 补充，标注「补充」。</p>
+</main>
+
+<div id="pop" class="pop"></div>
+<div id="viewer" class="viewer" hidden>
+  <div class="viewer-bar"><span id="viewerTitle"></span><button class="icon" id="viewerClose" aria-label="关闭">✕</button></div>
+  <div id="viewerBody" class="viewer-body"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
