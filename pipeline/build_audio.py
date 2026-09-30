@@ -11,6 +11,7 @@ import argparse
 import asyncio
 import hashlib
 import json
+import os
 import re
 
 import edge_tts
@@ -23,7 +24,9 @@ ZH_VOICE = "zh-CN-XiaoxiaoNeural"
 POS_ZH = {"n.": "名词", "v.": "动词", "adj.": "形容词", "adv.": "副词", "prep.": "介词",
           "conj.": "连词", "pron.": "代词", "phr.": "短语", "n. & v.": "名词和动词"}
 FILES = AUDIO / "files"
-SEM = asyncio.Semaphore(8)
+# 并发数：本机 8 没问题；GitHub 服务器 IP 容易被限流，CI 里设 AUDIO_CONCURRENCY=3
+SEM = asyncio.Semaphore(int(os.environ.get("AUDIO_CONCURRENCY", 8)))
+RETRIES = 6
 
 
 def senses_zh(senses):
@@ -38,7 +41,7 @@ async def synth(text, voice, marks_wanted):
     if mp3.exists() and (not marks_wanted or mk.exists()):
         return key, (json.loads(mk.read_text()) if marks_wanted else None), False
     async with SEM:
-        for attempt in range(3):
+        for attempt in range(RETRIES):
             try:
                 com = edge_tts.Communicate(text, voice, boundary="WordBoundary")
                 audio, marks = b"", []
@@ -48,10 +51,12 @@ async def synth(text, voice, marks_wanted):
                     elif ch["type"] == "WordBoundary":
                         marks.append([round(ch["offset"] / 1e7, 3), ch["text"]])
                 break
-            except Exception:
-                if attempt == 2:
-                    raise
-                await asyncio.sleep(1.5)
+            except Exception as err:
+                if attempt == RETRIES - 1:
+                    # 放弃这一条：网页会退回浏览器语音，下次运行再补
+                    print(f"  放弃：{voice} {text[:40]!r}（{type(err).__name__}）")
+                    return None, None, False
+                await asyncio.sleep(min(2 ** attempt * 2, 30))   # 2, 4, 8, 16, 30 秒
     mp3.write_bytes(audio)
     if marks_wanted:
         mk.write_text(json.dumps(marks, ensure_ascii=False))
@@ -78,24 +83,30 @@ async def main(lid, voice_keys):
 
     # z：中文文本 → 文件；m：单词 → 其释义朗读文本（磨耳朵用）
     manifest = {"voices": voice_keys, "w": {}, "s": {}, "z": {}, "m": meaning}
-    made = 0
+    made = failed = 0
 
     async def do_word(w, vk):
-        nonlocal made
+        nonlocal made, failed
         key, _, new = await synth(w, VOICES[vk], False)
-        manifest["w"].setdefault(w, {})[vk] = key
+        if key:
+            manifest["w"].setdefault(w, {})[vk] = key
+        failed += not key
         made += new
 
     async def do_sent(s, vk):
-        nonlocal made
+        nonlocal made, failed
         key, marks, new = await synth(s, VOICES[vk], True)
-        manifest["s"].setdefault(s, {})[vk] = {"f": key, "m": marks}
+        if key:
+            manifest["s"].setdefault(s, {})[vk] = {"f": key, "m": marks}
+        failed += not key
         made += new
 
     async def do_zh(t):
-        nonlocal made
+        nonlocal made, failed
         key, _, new = await synth(t, ZH_VOICE, False)
-        manifest["z"][t] = key
+        if key:
+            manifest["z"][t] = key
+        failed += not key
         made += new
 
     jobs = [do_zh(t) for t in zh]
@@ -107,7 +118,7 @@ async def main(lid, voice_keys):
     out.write_text(json.dumps(manifest, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     size = sum(f.stat().st_size for f in FILES.glob("*.mp3"))
     print(f"{lid}：{len(words)} 词 × {len(voice_keys)} 声，{len(sentences)} 句，中文 {len(zh)} 条；"
-          f"新生成 {made} 个文件；音频库共 {size // 1024} KB")
+          f"新生成 {made} 个文件，失败 {failed} 个；音频库共 {size // 1024} KB")
 
 
 if __name__ == "__main__":

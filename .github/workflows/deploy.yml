@@ -31,14 +31,17 @@ jobs:
       - name: 校验数据
         run: python pipeline/validate.py
 
-      # 音频文件按内容哈希命名，缓存起来，每次只补新增的
+      # 音频文件按内容哈希命名。每次运行都存一份最新缓存（键带 run_id），
+      # 这样上次失败跳过的文件补上后也能存进去
       - uses: actions/cache@v4
         with:
           path: site/data/audio
-          key: audio-${{ hashFiles('site/data/lessons/*.json', 'pipeline/build_audio.py') }}
+          key: audio-${{ github.run_id }}
           restore-keys: audio-
 
       - name: 生成音频
+        env:
+          AUDIO_CONCURRENCY: "3"   # GitHub 服务器 IP 并发高了会被语音服务限流
         run: |
           for f in site/data/lessons/*.json; do
             python pipeline/build_audio.py "$(basename "$f" .json)"
