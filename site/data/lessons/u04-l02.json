@@ -1,0 +1,705 @@
+{
+  "id": "u04-l02",
+  "part": 1,
+  "unit": 4,
+  "lesson": 2,
+  "pages": [100, 106],
+  "groups": [
+    {
+      "no": 7,
+      "title": "species 相关",
+      "pages": [100, 100],
+      "map": {
+        "w": "species 相关",
+        "children": [
+          {"w": "species", "children": [
+            {"w": "creature", "children": [
+              {"w": "creation", "rel": "同根", "children": [
+                {"w": "create", "rel": "扩"},
+                {"w": "creator", "rel": "扩"},
+                {"w": "creative", "rel": "扩"}
+              ]},
+              {"w": "clay", "rel": "相关"},
+              {"w": "concrete", "rel": "相关"}
+            ]},
+            {"w": "human", "children": [
+              {"w": "humanity", "rel": "扩"},
+              {"w": "humble", "rel": "形近", "children": [{"w": "humbly", "rel": "扩"}]},
+              {"w": "humour", "rel": "形近", "children": [{"w": "humorous", "rel": "扩"}]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "species", "freq": 3, "page": 100,
+          "prons": [{"ipa": "/ˈspiːʃiːz/", "senses": [{"pos": "n.", "mean": "[[物种，种类]]"}]}],
+          "tip": {"type": "对照", "text": "世界上每个物种（species）都很特别（special）。"},
+          "ex": {"type": "例", "en": "This book is called The Origin of Species.", "zh": "这本书叫《物种起源》。", "key": ["Species"]},
+          "ext": []
+        },
+        {
+          "no": 2, "word": "creature", "freq": 1, "page": 100,
+          "prons": [{"ipa": "/ˈkriːtʃə(r)/", "senses": [{"pos": "n.", "mean": "[[生物，动物]]"}]}],
+          "tip": {"type": "对照", "text": "在大多数西方人眼中，生物（creature）是上帝创造（create）的。"},
+          "ex": {"type": "例", "en": "The panda is a shy creature.", "zh": "熊猫是胆小的动物。", "key": ["creature"]},
+          "ext": []
+        },
+        {
+          "no": 3, "word": "creation", "freq": 3, "page": 100,
+          "prons": [{"ipa": "/kriˈeɪʃn/", "senses": [{"pos": "n.", "mean": "[[创造]]；作品；[[世界]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Job creation needs to be the top priority.", "zh": "当务之急是创造就业机会。", "key": ["creation"]},
+          "ext": [
+            {"word": "create", "ipa": "/kriˈeɪt/", "senses": [{"pos": "v.", "mean": "创造，创建；引起；授予"}]},
+            {"word": "creator", "ipa": "/kriˈeɪtə(r)/", "senses": [{"pos": "n.", "mean": "创造者；创作者；上帝"}]},
+            {"word": "creative", "ipa": "/kriˈeɪtɪv/", "senses": [{"pos": "adj.", "mean": "创造（性）的；创作的"}]}
+          ]
+        },
+        {
+          "no": 4, "word": "concrete", "freq": 3, "page": 100,
+          "prons": [{"ipa": "/ˈkɒŋkriːt/", "senses": [
+            {"pos": "adj.", "mean": "[[具体的]]；[[实在的]]"},
+            {"pos": "n.", "mean": "[[混凝土]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "con-（所有，都）+ crete（联想 create）→传说中，女娲创造出来的都是“具体的”人。"},
+          "ex": {"type": "例", "en": "He had no concrete evidence.", "zh": "他没有确凿的证据。", "key": ["concrete"]},
+          "ext": []
+        },
+        {
+          "no": 5, "word": "clay", "freq": 1, "page": 100,
+          "prons": [{"ipa": "/kleɪ/", "senses": [{"pos": "n.", "mean": "[[肉体]]；[[黏土，陶土]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“可累”→挖了一天“黏土”，我可累了。"},
+          "ex": {"type": "例", "en": "She moulded the clay into the shape of a head.", "zh": "她把陶土做成一个人头的形状。", "key": ["clay"]},
+          "ext": []
+        },
+        {
+          "no": 6, "word": "human", "freq": 1, "page": 100,
+          "prons": [{"ipa": "/ˈhjuːmən/", "senses": [
+            {"pos": "n.", "mean": "[[人]]"},
+            {"pos": "adj.", "mean": "[[人的]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2016, "en": "Some robots are already programmed with basic human values.", "zh": "一些机器人已经具备了基本的人类价值观。", "key": ["human"]},
+          "ext": [{"word": "humanity", "ipa": "/hjuːˈmænəti/", "senses": [{"pos": "n.", "mean": "人的总称；人性；人文学科"}]}]
+        },
+        {
+          "no": 7, "word": "humble", "freq": 1, "page": 100,
+          "prons": [{"ipa": "/ˈhʌmbl/", "senses": [
+            {"pos": "adj.", "mean": "[[谦逊的]]；[[卑微的]]；[[虚心的]]"},
+            {"pos": "v.", "mean": "[[贬低]]；[[使感到卑微]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“哈木抱”→他点头哈腰，神情木讷，不敢去拥抱别人→谦逊的；卑微的"},
+          "ex": {"type": "真", "year": 2021, "en": "A humble partner might be your ideal partner.", "zh": "谦虚的伴侣可能是你理想的伴侣。", "key": ["humble"]},
+          "ext": [{"word": "humbly", "ipa": "/ˈhʌmbli/", "senses": [{"pos": "adv.", "mean": "谦虚地；虚心地"}]}]
+        },
+        {
+          "no": 8, "word": "humour", "alt": "humor", "freq": 1, "page": 100,
+          "prons": [{"ipa": "/ˈhjuːmə(r)/", "senses": [{"pos": "n.", "mean": "[[诙谐]]；[[幽默，幽默感]]"}]}],
+          "tip": {"type": "对照", "text": "他说谣言（rumour）是从我们嘴里传出的，这也太幽默（humour）了吧。"},
+          "ex": {"type": "例", "en": "He has impressed me with his good sense of humour.", "zh": "他良好的幽默感给我留下了深刻的印象。", "key": ["humour"]},
+          "ext": [{"word": "humorous", "ipa": "/ˈhjuːmərəs/", "senses": [{"pos": "adj.", "mean": "幽默的，滑稽的，诙谐的"}]}]
+        }
+      ]
+    },
+    {
+      "no": 8,
+      "title": "“湿”相关",
+      "pages": [100, 101],
+      "map": {
+        "w": "“湿”相关",
+        "children": [
+          {"w": "moist", "children": [
+            {"w": "moisture", "rel": "扩"},
+            {"w": "render", "rel": "相关", "children": [{"w": "rendering", "rel": "扩"}]},
+            {"w": "chill", "rel": "相关", "children": [{"w": "chilly", "rel": "扩"}]}
+          ]},
+          {"w": "damp", "children": [
+            {"w": "dampen", "rel": "扩"},
+            {"w": "damage", "rel": "形近", "children": [
+              {"w": "cottage", "rel": "相关", "children": [
+                {"w": "lodge", "rel": "近义", "children": [{"w": "lodging", "rel": "扩"}]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 9, "word": "moist", "freq": 1, "page": 101,
+          "prons": [{"ipa": "/mɔɪst/", "senses": [{"pos": "adj.", "mean": "[[潮湿的]]；[[湿润的]]；[[微湿的]]"}]}],
+          "tip": {"type": "联想", "text": "mo（音似“毛”）+ -ist（后缀）→“潮湿的”天气使人的衣服都长毛了。"},
+          "ex": {"type": "例", "en": "Our skins let us know whether the air is moist or dry.", "zh": "我们的皮肤可以让我们知道空气是潮湿还是干燥。", "key": ["moist"]},
+          "ext": [{"word": "moisture", "ipa": "/ˈmɔɪstʃə(r)/", "senses": [{"pos": "n.", "mean": "水分；潮湿；水汽；潮气"}]}]
+        },
+        {
+          "no": 10, "word": "render", "freq": 1, "page": 101,
+          "prons": [{"ipa": "/ˈrendə(r)/", "senses": [{"pos": "v.", "mean": "[[使成为]]；[[使得]]；[[给予，提供]]；[[表演]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“润的”→潮湿的天气“使得”你的皮肤变得润润的。"},
+          "ex": {"type": "真", "year": 2022, "en": "It may render many teachers jobless.", "zh": "它可能会使许多教师失业。", "key": ["render"]},
+          "ext": [{"word": "rendering", "ipa": "/ˈrendərɪŋ/", "senses": [{"pos": "n.", "mean": "演奏；扮演；翻译"}]}]
+        },
+        {
+          "no": 11, "word": "chill", "freq": 1, "page": 101,
+          "prons": [{"ipa": "/tʃɪl/", "senses": [
+            {"pos": "adj.", "mean": "[[冷的]]"},
+            {"pos": "n.", "mean": "[[寒冷]]；[[害怕]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "chi（联想“吃”）+ ll（形似两根冰棍）→他吃了两根冰棍，感觉心底都是“冷的”。"},
+          "ex": {"type": "例", "en": "I waited in the chill wind for an hour.", "zh": "我在寒风中等了一个小时。", "key": ["chill"]},
+          "ext": [{"word": "chilly", "ipa": "/ˈtʃɪli/", "senses": [{"pos": "adj.", "mean": "寒冷的；阴冷的"}]}]
+        },
+        {
+          "no": 12, "word": "damp", "freq": 1, "page": 101,
+          "prons": [{"ipa": "/dæmp/", "senses": [
+            {"pos": "adj.", "mean": "[[潮湿的]]"},
+            {"pos": "n.", "mean": "[[潮湿]]"},
+            {"pos": "v.", "mean": "[[使潮湿]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "dam（水坝）+ p（联想 place）→有水坝的地方一般比较潮湿→潮湿的"},
+          "ex": {"type": "例", "en": "The sheets are damp with sweat.", "zh": "床单被汗水浸湿了。", "key": ["damp"]},
+          "ext": [{"word": "dampen", "ipa": "/ˈdæmpən/", "senses": [{"pos": "v.", "mean": "弄湿；抑制，减弱"}]}]
+        },
+        {
+          "no": 13, "word": "damage", "freq": 1, "page": 101,
+          "prons": [{"ipa": "/ˈdæmɪdʒ/", "senses": [
+            {"pos": "v.", "mean": "[[损害，毁坏]]"},
+            {"pos": "n.", "mean": "[[损害]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "dam（水坝）+ age（很长时间）→水坝年久失修可能会“损害”民众的安全。"},
+          "ex": {"type": "例", "en": "The storm didn't do much damage.", "zh": "暴风雨未造成严重损失。", "key": ["damage"]},
+          "ext": []
+        },
+        {
+          "no": 14, "word": "cottage", "freq": 1, "page": 101,
+          "prons": [{"ipa": "/ˈkɒtɪdʒ/", "senses": [{"pos": "n.", "mean": "[[小屋，村舍]]"}]}],
+          "tip": {"type": "联想", "text": "cott（联想 cotton）+ age（年代）→纺棉花的那个年代，人们都住在“小屋”里。"},
+          "ex": {"type": "例", "en": "The red roof of the cottage came into view.", "zh": "小屋的红色屋顶映入眼帘。", "key": ["cottage"]},
+          "ext": []
+        },
+        {
+          "no": 15, "word": "lodge", "freq": 1, "page": 101,
+          "prons": [{"ipa": "/lɒdʒ/", "senses": [
+            {"pos": "v.", "mean": "[[寄住，租住]]；[[安置]]；[[正式提出]]"},
+            {"pos": "n.", "mean": "[[乡间小屋]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "lo（音似“劳”）+ d（联想“的”）+ ge（联想“哥”）→劳累的哥哥“寄住”在“乡间小屋”里。"},
+          "ex": {"type": "例", "en": "He lodged with Mrs. Brown when he arrived in the city.", "zh": "他抵达此城时租住在布朗太太家里。", "key": ["lodged"]},
+          "ext": [{"word": "lodging", "ipa": "/ˈlɒdʒɪŋ/", "senses": [{"pos": "n.", "mean": "暂住；寄宿；借宿"}]}]
+        }
+      ]
+    },
+    {
+      "no": 9,
+      "title": "“人”相关",
+      "pages": [101, 102],
+      "map": {
+        "w": "“人”相关",
+        "children": [
+          {"w": "individual", "children": [
+            {"w": "individualism", "rel": "扩"},
+            {"w": "divide", "rel": "同根", "children": [
+              {"w": "division", "rel": "扩"},
+              {"w": "divisive", "rel": "扩"}
+            ]},
+            {"w": "personal", "rel": "近义", "children": [
+              {"w": "person", "rel": "扩"},
+              {"w": "personally", "rel": "扩"},
+              {"w": "personality", "rel": "扩"}
+            ]},
+            {"w": "private", "rel": "近义", "children": [
+              {"w": "privacy", "rel": "扩"},
+              {"w": "privatise", "rel": "扩"},
+              {"w": "privatisation", "rel": "扩"}
+            ]}
+          ]},
+          {"w": "gender", "children": [
+            {"w": "male", "rel": "相关"},
+            {"w": "female", "rel": "相关"}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 16, "word": "individual", "freq": 3, "page": 101,
+          "prons": [{"ipa": "/ˌɪndɪˈvɪdʒuəl/", "senses": [
+            {"pos": "adj.", "mean": "[[单独的]]；[[个别的]]"},
+            {"pos": "n.", "mean": "[[个人]]；[[个体]]"}
+          ]}],
+          "tip": {"type": "构词", "text": "in-（不）+ divid(e)（分开）+ -ual（后缀）→不能再分割的→单独的；个体"},
+          "ex": {"type": "真", "year": 2016, "en": "Real friendship is when two individuals share the same soul.", "zh": "真正的友谊是两个人拥有同一个灵魂。", "key": ["individuals"]},
+          "ext": [{"word": "individualism", "ipa": "/ˌɪndɪˈvɪdʒuəlɪzəm/", "senses": [{"pos": "n.", "mean": "个性；独特的气质；个人主义"}]}]
+        },
+        {
+          "no": 17, "word": "divide", "freq": 1, "page": 102,
+          "prons": [{"ipa": "/dɪˈvaɪd/", "senses": [
+            {"pos": "v.", "mean": "[[(使)分开]]；[[分配]]；[[分担]]"},
+            {"pos": "n.", "mean": "[[不同，分歧]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "di-（两个）+ vi（形似罗马数字 6）+ de →把他们分成两组，一组两个人，另一组六个人→分开；分配"},
+          "ex": {"type": "真", "year": 2023, "en": "It contributes to the male-female divide in the workplace.", "zh": "它导致了工作场所的男女分歧。", "key": ["divide"]},
+          "ext": [
+            {"word": "division", "ipa": "/dɪˈvɪʒn/", "senses": [{"pos": "n.", "mean": "分开；分配；差异"}]},
+            {"word": "divisive", "ipa": "/dɪˈvaɪsɪv/", "senses": [{"pos": "adj.", "mean": "造成不和的；引起分歧的"}]}
+          ]
+        },
+        {
+          "no": 18, "word": "personal", "freq": 1, "page": 102,
+          "prons": [{"ipa": "/ˈpɜːsənl/", "senses": [{"pos": "adj.", "mean": "[[个人的]]；[[人际的]]；[[个性的]]；[[亲自的]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2022, "en": "Distance education will never match the personal teaching in a traditional classroom.", "zh": "远程教育永远比不上传统课堂上的个人教学。", "key": ["personal"]},
+          "ext": [
+            {"word": "person", "ipa": "/ˈpɜːsn/", "senses": [{"pos": "n.", "mean": "人，个人；某人"}]},
+            {"word": "personally", "ipa": "/ˈpɜːsənəli/", "senses": [{"pos": "adv.", "mean": "就本人而言；本人；亲自；私人地；无礼地；冒犯地"}]},
+            {"word": "personality", "ipa": "/ˌpɜːsəˈnæləti/", "senses": [{"pos": "n.", "mean": "性格；人格"}]}
+          ]
+        },
+        {
+          "no": 19, "word": "private", "freq": 1, "page": 102,
+          "prons": [{"ipa": "/ˈpraɪvət/", "senses": [{"pos": "adj.", "mean": "[[私有的]]；[[私人的]]；[[个体的]]"}]}],
+          "tip": {"type": "构词", "text": "priv（私人，单个）+ -ate（形容词后缀）→私人的；个体的"},
+          "ex": {"type": "真", "year": 2022, "en": "In the age of the Internet, there's no such thing as a private debate.", "zh": "在互联网时代，没有私人辩论。", "key": ["private"]},
+          "ext": [
+            {"word": "privacy", "ipa": "/ˈprɪvəsi/", "senses": [{"pos": "n.", "mean": "隐私；私密；独处"}]},
+            {"word": "privatise", "alt": "-ize", "ipa": "/ˈpraɪvətaɪz/", "senses": [{"pos": "v.", "mean": "使私有化；将……私营化"}]},
+            {"word": "privatisation", "alt": "-ization", "ipa": "/ˌpraɪvətaɪˈzeɪʃn/", "senses": [{"pos": "n.", "mean": "私有化"}]}
+          ]
+        },
+        {
+          "no": 20, "word": "gender", "freq": 3, "page": 102,
+          "prons": [{"ipa": "/ˈdʒendə(r)/", "senses": [{"pos": "n.", "mean": "[[性别]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“真的”→这里真的是不分“性别”，男女均可入内。"},
+          "ex": {"type": "真", "year": 2019, "en": "It hardly occurs across gender boundaries.", "zh": "它几乎不会跨越性别界限。", "key": ["gender"]},
+          "ext": []
+        },
+        {
+          "no": 21, "word": "male", "freq": 1, "page": 102,
+          "prons": [{"ipa": "/meɪl/", "senses": [
+            {"pos": "n.", "mean": "[[男子]]；雄性植物（动物）"},
+            {"pos": "adj.", "mean": "[[男性的]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "ma（联想“妈”）+ le（联想“乐”）→妈妈被那个“男子”的滑稽表演逗乐了。"},
+          "ex": {"type": "例", "en": "Only about three percent of early childhood teachers are male.", "zh": "只有大约3%的幼儿教师是男性。", "key": ["male"]},
+          "ext": []
+        },
+        {
+          "no": 22, "word": "female", "freq": 3, "page": 102,
+          "prons": [{"ipa": "/ˈfiːmeɪl/", "senses": [
+            {"pos": "n.", "mean": "[[女子]]；雌性植物（动物）"},
+            {"pos": "adj.", "mean": "[[女性的]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "fe（音似“非”）+ male（男性）→女子；女性的"},
+          "ex": {"type": "例", "en": "Two of the candidates must be female.", "zh": "候选人中必须有两名是女性。", "key": ["female"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 10,
+      "title": "main 相关",
+      "pages": [102, 104],
+      "map": {
+        "w": "main 相关",
+        "children": [
+          {"w": "remain", "children": [
+            {"w": "remainder", "rel": "扩"},
+            {"w": "inherit", "rel": "相关", "children": [
+              {"w": "inheritance", "rel": "扩", "children": [{"w": "heritage", "rel": "近义"}]}
+            ]}
+          ]},
+          {"w": "major", "children": [{"w": "majority", "rel": "扩"}]},
+          {"w": "mainstream", "children": [
+            {"w": "stream", "rel": "拆分", "children": [
+              {"w": "canal", "rel": "相关"},
+              {"w": "scream", "rel": "形近", "children": [
+                {"w": "cream", "rel": "形近", "children": [
+                  {"w": "creamy", "rel": "扩"},
+                  {"w": "dairy", "rel": "相关", "children": [{"w": "butter"}]}
+                ]}
+              ]},
+              {"w": "steam", "rel": "形近", "children": [
+                {"w": "steamer", "rel": "扩"},
+                {"w": "steamy", "rel": "扩"},
+                {"w": "vapour", "rel": "相关"}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 23, "word": "main", "freq": 1, "page": 102,
+          "prons": [{"ipa": "/meɪn/", "senses": [
+            {"pos": "adj.", "mean": "[[主要的]]；最重要的"},
+            {"pos": "n.", "mean": "主线路；总管道"}
+          ]}],
+          "tip": {"type": "对照", "text": "过去，男人（man）是主要的（main）劳动力。"},
+          "ex": {"type": "例", "en": "In my opinion, lack of money is the main problem.", "zh": "在我看来，缺钱是主要的问题。", "key": ["main"]},
+          "ext": []
+        },
+        {
+          "no": 24, "word": "remain", "freq": 1, "page": 102,
+          "prons": [{"ipa": "/rɪˈmeɪn/", "senses": [{"pos": "v.", "mean": "[[保持]]；[[维持]]；[[停留]]；[[剩下]]"}]}],
+          "tip": {"type": "联想", "text": "re-（重复）+ main（主要的）→重复主要的，即“保持”不变。"},
+          "ex": {"type": "真", "year": 2023, "en": "Supplying enough job opportunities for the homeless remains a challenge.", "zh": "为无家可归者提供足够的就业机会仍然是一个挑战。", "key": ["remains"]},
+          "ext": [{"word": "remainder", "ipa": "/rɪˈmeɪndə(r)/", "senses": [{"pos": "n.", "mean": "剩余物；差数；余数"}]}]
+        },
+        {
+          "no": 25, "word": "inherit", "freq": 2, "page": 102,
+          "prons": [{"ipa": "/ɪnˈherɪt/", "senses": [{"pos": "v.", "mean": "[[继承，经遗传获得]]；接替"}]}],
+          "tip": {"type": "联想", "text": "in（里面）+ her（她）+ it（它）→我女儿内心善良，它（这种品质）是从我这里“继承”的。"},
+          "ex": {"type": "例", "en": "She inherited a big fortune from her father.", "zh": "她从父亲那里继承了一大笔财产。", "key": ["inherited"]},
+          "ext": [{"word": "inheritance", "ipa": "/ɪnˈherɪtəns/", "senses": [{"pos": "n.", "mean": "继承物；遗产；继承"}]}]
+        },
+        {
+          "no": 26, "word": "heritage", "freq": 1, "page": 103,
+          "prons": [{"ipa": "/ˈherɪtɪdʒ/", "senses": [{"pos": "n.", "mean": "[[遗产（指国家或社会长期形成的历史、传统和特色）]]"}]}],
+          "tip": {"type": "联想", "text": "her（她）+ it（它）+ age（年龄）→她到了一定年龄才可以继承它——父母留给她的“遗产”。"},
+          "ex": {"type": "例", "en": "The building is part of our national heritage.", "zh": "这个建筑是我们民族遗产的一部分。", "key": ["heritage"]},
+          "ext": []
+        },
+        {
+          "no": 27, "word": "major", "freq": 1, "page": 103,
+          "prons": [{"ipa": "/ˈmeɪdʒə(r)/", "senses": [
+            {"pos": "adj.", "mean": "[[主要的]]；[[重要的]]"},
+            {"pos": "n.", "mean": "[[主修课程]]；专业课"},
+            {"pos": "v.", "mean": "[[主修]]；专攻"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“每节”→每节“主修课程”都要认真上。"},
+          "ex": {"type": "真", "year": 2019, "en": "CO2 emissions constitute a major threat to the environment.", "zh": "二氧化碳排放对环境构成重大威胁。", "key": ["major"]},
+          "ext": [{"word": "majority", "ipa": "/məˈdʒɒrəti/", "senses": [{"pos": "n.", "mean": "大部分；大多数"}]}]
+        },
+        {
+          "no": 28, "word": "mainstream", "freq": 2, "page": 103,
+          "prons": [{"ipa": "/ˈmeɪnstriːm/", "senses": [{"pos": "n.", "mean": "[[主流]]；主流思想；主流群体"}]}],
+          "tip": {"type": "构词", "text": "main（主要的）+ stream（溪流）→主流"},
+          "ex": {"type": "真", "year": 2018, "en": "The technology is just now becoming mainstream.", "zh": "这项技术现在正在成为主流。", "key": ["mainstream"]},
+          "ext": []
+        },
+        {
+          "no": 29, "word": "stream", "freq": 1, "page": 103,
+          "prons": [{"ipa": "/striːm/", "senses": [
+            {"pos": "n.", "mean": "[[溪流，小河]]"},
+            {"pos": "v.", "mean": "[[流动]]；[[涌出]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "蒸汽（steam）从锅里涌出（stream）来了。"},
+          "ex": {"type": "例", "en": "They value quiet forests and clear streams.", "zh": "他们珍视宁静的森林和清澈的溪流。", "key": ["streams"]},
+          "ext": []
+        },
+        {
+          "no": 30, "word": "canal", "freq": 1, "page": 103,
+          "prons": [{"ipa": "/kəˈnæl/", "senses": [{"pos": "n.", "mean": "[[运河]]；（体内的）管；道"}]}],
+          "tip": {"type": "联想", "text": "can（能）+ al（联想 all）→这里的水能够全部流向“运河”。"},
+          "ex": {"type": "例", "en": "The Grand Canal is the longest man-made river in the world.", "zh": "京杭大运河是世界上最长的人工河。", "key": ["Canal"]},
+          "ext": []
+        },
+        {
+          "no": 31, "word": "scream", "freq": 1, "page": 103,
+          "prons": [{"ipa": "/skriːm/", "senses": [{"pos": "n. & v.", "mean": "[[尖叫，喊叫]]"}]}],
+          "tip": {"type": "联想", "text": "s（联想“美女”）+ cream（奶油）→我不小心把奶油涂在美女的脸上，她“尖叫”起来。"},
+          "ex": {"type": "例", "en": "I screamed in pain.", "zh": "我痛得尖叫起来。", "key": ["screamed"]},
+          "ext": []
+        },
+        {
+          "no": 32, "word": "cream", "freq": 1, "page": 103,
+          "prons": [{"ipa": "/kriːm/", "senses": [{"pos": "n.", "mean": "[[奶油，乳脂]]；奶油色"}]}],
+          "tip": {"type": "联想", "text": "ice-cream 是冰激凌，cream 是奶油。"},
+          "ex": {"type": "例", "en": "We had strawberries and cream for dessert.", "zh": "我们的甜点是加奶油的草莓。", "key": ["cream"]},
+          "ext": [{"word": "creamy", "ipa": "/ˈkriːmi/", "senses": [{"pos": "adj.", "mean": "像奶油的；光滑细腻的；含乳脂的"}]}]
+        },
+        {
+          "no": 33, "word": "dairy", "freq": 3, "page": 103,
+          "prons": [{"ipa": "/ˈdeəri/", "senses": [
+            {"pos": "n.", "mean": "[[乳品场]]；[[乳制品]]"},
+            {"pos": "adj.", "mean": "[[牛奶的]]；[[乳品的]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "他每天（daily）都要喝乳制品（dairy）。"},
+          "ex": {"type": "真", "year": 2020, "en": "That's where fresh produce, meat and seafood, and dairy are.", "zh": "那里有新鲜农产品、肉类、海鲜和乳制品。", "key": ["dairy"]},
+          "ext": []
+        },
+        {
+          "no": 34, "word": "butter", "freq": 1, "page": 103,
+          "prons": [{"ipa": "/ˈbʌtə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[黄油]]；牛油"},
+            {"pos": "v.", "mean": "涂黄油于"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“爸特”→爸爸特别喜欢吃加“黄油”的面包。"},
+          "ex": {"type": "真", "year": 2018, "en": "He shaped delicious masterpieces out of flour, butter and sugar.", "zh": "他用面粉、黄油和糖做出了杰出的美味。", "key": ["butter"]},
+          "ext": []
+        },
+        {
+          "no": 35, "word": "steam", "freq": 2, "page": 103,
+          "prons": [{"ipa": "/stiːm/", "senses": [
+            {"pos": "n.", "mean": "[[蒸汽，水汽]]；精力"},
+            {"pos": "v.", "mean": "[[蒸发，蒸]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "s（联想“美女”）+ tea（茶）+ m（联想“门”）→一个美女在喝茶，门里飘出了“蒸汽”。"},
+          "ex": {"type": "例", "en": "Steam rose from the boiling kettle.", "zh": "壶里的水开了，冒着蒸汽。", "key": ["Steam"]},
+          "ext": [
+            {"word": "steamer", "ipa": "/ˈstiːmə(r)/", "senses": [{"pos": "n.", "mean": "汽船；轮船；蒸锅；蒸笼"}]},
+            {"word": "steamy", "ipa": "/ˈstiːmi/", "senses": [{"pos": "adj.", "mean": "充满蒸汽的；蒙着水汽的"}]}
+          ]
+        },
+        {
+          "no": 36, "word": "vapour", "alt": "vapor", "freq": 1, "page": 104,
+          "prons": [{"ipa": "/ˈveɪpə(r)/", "senses": [{"pos": "n.", "mean": "[[蒸气]]；[[水蒸气]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“外婆”→外婆烧的水开了，冒出了“水蒸气”。"},
+          "ex": {"type": "例", "en": "The particles form a vapour.", "zh": "这些粒子形成蒸气。", "key": ["vapour"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 11,
+      "title": "“消失、出现”相关",
+      "pages": [104, 105],
+      "map": {
+        "w": "“消失、出现”相关",
+        "children": [
+          {"w": "appear", "children": [
+            {"w": "appearance", "rel": "扩"},
+            {"w": "disappear", "rel": "反义", "children": [{"w": "disappearance", "rel": "扩"}]}
+          ]},
+          {"w": "vanish"},
+          {"w": "emerge", "children": [
+            {"w": "emergency", "rel": "扩", "children": [{"w": "emergence"}]},
+            {"w": "urge", "rel": "音近", "children": [
+              {"w": "urgent", "rel": "扩"},
+              {"w": "urgency", "rel": "扩"}
+            ]},
+            {"w": "marine", "rel": "相关"},
+            {"w": "bacteria", "rel": "相关", "children": [
+              {"w": "virus", "children": [
+                {"w": "germ"},
+                {"w": "immune", "rel": "相关", "children": [
+                  {"w": "immunity", "rel": "扩"},
+                  {"w": "immunise", "rel": "扩"}
+                ]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 37, "word": "appear", "freq": 1, "page": 104,
+          "prons": [{"ipa": "/əˈpɪə(r)/", "senses": [{"pos": "v.", "mean": "[[显得]]；[[似乎]]；[[出现]]；[[起源]]"}]}],
+          "tip": {"type": "联想", "text": "ap-（一再地）+ pear（梨）→他一再地让我吃梨，“显得”很热情。"},
+          "ex": {"type": "例", "en": "There does appear to be some psychology behind it.", "zh": "这背后似乎确实有一些心理因素。", "key": ["appear"]},
+          "ext": [
+            {"word": "disappear", "ipa": "/ˌdɪsəˈpɪə(r)/", "senses": [{"pos": "v.", "mean": "消失，失踪"}]},
+            {"word": "disappearance", "ipa": "/ˌdɪsəˈpɪərəns/", "senses": [{"pos": "n.", "mean": "消失，不见"}]}
+          ]
+        },
+        {
+          "no": 38, "word": "appearance", "freq": 1, "page": 104,
+          "prons": [{"ipa": "/əˈpɪərəns/", "senses": [{"pos": "n.", "mean": "[[外貌，外观，外表]]；（尤指突然的）[[抵达，到来]]"}]}],
+          "tip": {"type": "对照", "text": "appear v.出现→appearance n."},
+          "ex": {"type": "例", "en": "He stressed both the appearance and flavour of dishes.", "zh": "他注重菜肴的外观和味道。", "key": ["appearance"]},
+          "ext": []
+        },
+        {
+          "no": 39, "word": "vanish", "freq": 1, "page": 104,
+          "prons": [{"ipa": "/ˈvænɪʃ/", "senses": [{"pos": "v.", "mean": "[[突然消失]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“玩你失”→玩捉迷藏时，你“突然消失”了。"},
+          "ex": {"type": "例", "en": "Many types of animal have now vanished from the earth.", "zh": "许多动物物种现已从地球上绝迹。", "key": ["vanished"]},
+          "ext": []
+        },
+        {
+          "no": 40, "word": "emerge", "freq": 2, "page": 104,
+          "prons": [{"ipa": "/ɪˈmɜːdʒ/", "senses": [{"pos": "v.", "mean": "[[浮现]]；[[出现]]；兴起"}]}],
+          "tip": {"type": "联想", "text": "e-（出去）+ merge（音似“磨叽”）→妈妈让他别磨叽了，赶紧出来→出现"},
+          "ex": {"type": "真", "year": 2023, "en": "If a new competitor emerges to threaten your business, you may need to change direction.", "zh": "如果一个新的竞争对手出现，威胁到你的业务，你可能需要改变方向。", "key": ["emerges"]},
+          "ext": []
+        },
+        {
+          "no": 41, "word": "emergency", "freq": 2, "page": 104,
+          "prons": [{"ipa": "/ɪˈmɜːdʒənsi/", "senses": [{"pos": "n.", "mean": "[[紧急情况]]，[[非常时刻]]"}]}],
+          "tip": {"type": "构词", "text": "emerge（出现）+ -(e)ncy（名词后缀）→突然出现的事→紧急情况"},
+          "ex": {"type": "例", "en": "The government has declared a state of emergency following the earthquake.", "zh": "地震发生后政府已宣布进入紧急状态。", "key": ["emergency"]},
+          "ext": [{"word": "emergence", "ipa": "/ɪˈmɜːdʒəns/", "senses": [{"pos": "n.", "mean": "出现"}]}]
+        },
+        {
+          "no": 42, "word": "urge", "freq": 2, "page": 104,
+          "prons": [{"ipa": "/ɜːdʒ/", "senses": [{"pos": "v.", "mean": "[[主张]]，[[强烈要求]]；[[催促]]；[[鼓励]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“饿极”→他饿极了，“催促”饭店快点上菜。"},
+          "ex": {"type": "真", "year": 2016, "en": "It urged tourists to leave Tunisia immediately.", "zh": "它催促游客立即离开突尼斯。", "key": ["urged"]},
+          "ext": [
+            {"word": "urgent", "ipa": "/ˈɜːdʒənt/", "senses": [{"pos": "adj.", "mean": "急迫的，紧急的"}]},
+            {"word": "urgency", "ipa": "/ˈɜːdʒənsi/", "senses": [{"pos": "n.", "mean": "紧急，迫切"}]}
+          ]
+        },
+        {
+          "no": 43, "word": "marine", "freq": 2, "page": 104,
+          "prons": [{"ipa": "/məˈriːn/", "senses": [{"pos": "adj.", "mean": "[[海洋的]]；[[海产的]]；[[海事的]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“没(mò)人”→大海把人淹没了→海洋的"},
+          "ex": {"type": "例", "en": "Marine biologists are looking for the secret of turtles' reproduction.", "zh": "海洋生物学家正在寻找海龟繁殖的秘密。", "key": ["Marine"]},
+          "ext": []
+        },
+        {
+          "no": 44, "word": "bacteria", "freq": 2, "page": 104,
+          "prons": [{"ipa": "/bækˈtɪəriə/", "senses": [{"pos": "n.", "mean": "[[细菌]]"}]}],
+          "tip": {"type": "联想", "text": "bac（音似 back）+ te（联想“特”）+ ri（联想“日”）+ a→背后晒不到太阳，特别容易滋生“细菌”。"},
+          "ex": {"type": "例", "en": "Certain types of bacteria are extremely harmful.", "zh": "某些种类的细菌非常有害。", "key": ["bacteria"]},
+          "ext": []
+        },
+        {
+          "no": 45, "word": "virus", "freq": 2, "page": 105,
+          "prons": [{"ipa": "/ˈvaɪrəs/", "senses": [{"pos": "n.", "mean": "[[病毒]]；有害影响"}]}],
+          "tip": {"type": "联想", "text": "vi（形似罗马数字 6）+ r（形似花）+ us（我们）→这六朵花有“病毒”，我们不能要。"},
+          "ex": {"type": "例", "en": "When a virus attacks your body, your body works hard to get rid of it.", "zh": "当病毒攻击人体时，人体会努力清除病毒。", "key": ["virus"]},
+          "ext": []
+        },
+        {
+          "no": 46, "word": "germ", "freq": 1, "page": 105,
+          "prons": [{"ipa": "/dʒɜːm/", "senses": [{"pos": "n.", "mean": "[[病菌，细菌]]；[[微生物]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“这么”→显微镜下能看到有这么多的“细菌”。"},
+          "ex": {"type": "例", "en": "Dirty hands can be a breeding ground for germs.", "zh": "脏手可能滋生病菌。", "key": ["germs"]},
+          "ext": []
+        },
+        {
+          "no": 47, "word": "immune", "freq": 3, "page": 105,
+          "prons": [{"ipa": "/ɪˈmjuːn/", "senses": [{"pos": "adj.", "mean": "[[有免疫力的]]；免除的；豁免的"}]}],
+          "tip": {"type": "联想", "text": "im（联想 I'm）+ mune（联想“木讷”）→我是个木讷的人，反应慢，对别人的攻击是“有免疫力的”。"},
+          "ex": {"type": "真", "year": 2019, "en": "This is evidence that our immune system really doesn't function so well when we age.", "zh": "这表明，随着年龄的增长，我们的免疫系统真的不能很好地发挥作用。", "key": ["immune system"]},
+          "ext": [
+            {"word": "immunity", "ipa": "/ɪˈmjuːnəti/", "senses": [{"pos": "n.", "mean": "免疫（力）；不受影响；受保护"}]},
+            {"word": "immunise", "alt": "-ize", "ipa": "/ˈɪmjunaɪz/", "senses": [{"pos": "v.", "mean": "使免疫"}]}
+          ]
+        }
+      ]
+    },
+    {
+      "no": 12,
+      "title": "para 相关",
+      "pages": [105, 106],
+      "map": {
+        "w": "para 相关",
+        "children": [
+          {"w": "parallel", "children": [{"w": "balance", "rel": "相关"}]},
+          {"w": "paradox", "children": [{"w": "paradoxical", "rel": "扩"}]},
+          {"w": "parade", "children": [
+            {"w": "march", "rel": "近义", "children": [
+              {"w": "bug", "rel": "相关"},
+              {"w": "insect", "rel": "相关"},
+              {"w": "worm", "rel": "相关"},
+              {"w": "wooden", "rel": "相关", "children": [
+                {"w": "wood", "rel": "扩", "children": [{"w": "timber", "rel": "相关"}]}
+              ]},
+              {"w": "chase", "rel": "相关", "children": [
+                {"w": "purchase", "rel": "同根"},
+                {"w": "pursue", "rel": "近义", "children": [{"w": "pursuit", "rel": "扩"}]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 48, "word": "balance", "freq": 1, "page": 105,
+          "prons": [{"ipa": "/ˈbæləns/", "senses": [
+            {"pos": "v.", "mean": "[[(使)平衡]]"},
+            {"pos": "n.", "mean": "[[平衡]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“芭蕾”→芭蕾舞者的“平衡”感特别好。"},
+          "ex": {"type": "真", "year": 2016, "en": "They are under growing pressure to balance their national budgets.", "zh": "他们承受着越来越大的压力来平衡国家预算。", "key": ["balance"]},
+          "ext": []
+        },
+        {
+          "no": 49, "word": "parallel", "freq": 1, "page": 105,
+          "prons": [{"ipa": "/ˈpærəlel/", "senses": [
+            {"pos": "n.", "mean": "[[平行线]]；[[相似处]]"},
+            {"pos": "adj.", "mean": "[[平行的]]；[[类似的]]"},
+            {"pos": "v.", "mean": "[[与……相似]]；[[比得上]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "para-（旁边）+ llel（联想“e 和线”）→在“e”旁边并排的线→平行线；平行的"},
+          "ex": {"type": "真", "year": 2016, "en": "It is one that has seen no parallel in economic history.", "zh": "这在经济史上是前所未有的。", "key": ["parallel"]},
+          "ext": []
+        },
+        {
+          "no": 50, "word": "paradox", "freq": 1, "page": 105,
+          "prons": [{"ipa": "/ˈpærədɒks/", "senses": [{"pos": "n.", "mean": "[[矛盾的人（或事物、情况）]]；[[悖论]]"}]}],
+          "tip": {"type": "联想", "text": "para-（旁边）+ do（做，干）+ x（形似叉号）→相对立→旁边那个人老是和我对着干，是个和我有“矛盾”的人。"},
+          "ex": {"type": "例", "en": "We seem to exhibit paradox.", "zh": "我们似乎表现出了矛盾。", "key": ["paradox"]},
+          "ext": [{"word": "paradoxical", "ipa": "/ˌpærəˈdɒksɪkl/", "senses": [{"pos": "adj.", "mean": "自相矛盾的；出乎意料的"}]}]
+        },
+        {
+          "no": 51, "word": "parade", "freq": 1, "page": 105,
+          "prons": [{"ipa": "/pəˈreɪd/", "senses": [
+            {"pos": "n.", "mean": "[[游行]]；[[阅兵]]；[[炫耀]]"},
+            {"pos": "v.", "mean": "[[游行，排队行进]]；[[炫耀]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "para-（旁边）+ de（联想“的”）→我旁边的同学喜欢“炫耀”成绩。"},
+          "ex": {"type": "例", "en": "They held a parade to mark the soldiers' return.", "zh": "他们举行了游行庆祝士兵凯旋。", "key": ["parade"]},
+          "ext": []
+        },
+        {
+          "no": 52, "word": "march", "freq": 1, "page": 106,
+          "prons": [{"ipa": "/mɑːtʃ/", "senses": [
+            {"pos": "v.", "mean": "[[(使)行军，(使)行进]]"},
+            {"pos": "n.", "mean": "[[示威游行]]；[[行程]]；(March)三月(略作 Mar.)"}
+          ]}],
+          "tip": {"type": "联想", "text": "三月（March）是万物复苏的季节，所有小动物都排着队行进（march）。"},
+          "ex": {"type": "例", "en": "The army began their long march to the coast.", "zh": "部队开始了他们前往沿海地区的长途行军。", "key": ["march"]},
+          "ext": []
+        },
+        {
+          "no": 53, "word": "bug", "freq": 1, "page": 106,
+          "prons": [{"ipa": "/bʌɡ/", "senses": [{"pos": "n.", "mean": "[[虫子]]；[[小病]]；[[计算机故障]]"}]}],
+          "tip": {"type": "联想", "text": "我们经常说“电脑上的某个程序有个 bug”，bug 就是“计算机故障”。"},
+          "ex": {"type": "真", "year": 2015, "en": "This is the strangest bug I've ever seen.", "zh": "这是我见过的最奇特的虫子。", "key": ["bug"]},
+          "ext": []
+        },
+        {
+          "no": 54, "word": "insect", "freq": 1, "page": 106,
+          "prons": [{"ipa": "/ˈɪnsekt/", "senses": [{"pos": "n.", "mean": "[[昆虫]]"}]}],
+          "tip": {"type": "联想", "text": "in（里面）+ sect（音似“塞个它”）→他的耳朵总不舒服，检查发现里面塞了一只“昆虫”。"},
+          "ex": {"type": "例", "en": "On the road there is little to protect them from mud and insects.", "zh": "在路上，几乎没有什么能保护它们免受泥土和昆虫的伤害。", "key": ["insects"]},
+          "ext": []
+        },
+        {
+          "no": 55, "word": "worm", "freq": 1, "page": 106,
+          "prons": [{"ipa": "/wɜːm/", "senses": [{"pos": "n.", "mean": "[[虫，蠕虫]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“乌木”→乌木受潮了，里面特别容易生“虫”。"},
+          "ex": {"type": "例", "en": "Worms burrow down through the soil.", "zh": "蠕虫往土里钻。", "key": ["Worms"]},
+          "ext": []
+        },
+        {
+          "no": 56, "word": "wooden", "freq": 1, "page": 106,
+          "prons": [{"ipa": "/ˈwʊdn/", "senses": [{"pos": "adj.", "mean": "[[木制的]]；呆板的"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2018, "en": "Their aim was to provide quality, yet affordable wooden furniture.", "zh": "他们的目标是提供高质量且价格合理的木制家具。", "key": ["wooden"]},
+          "ext": [{"word": "wood", "ipa": "/wʊd/", "senses": [{"pos": "n.", "mean": "木，木头；树林"}]}]
+        },
+        {
+          "no": 57, "word": "timber", "freq": 1, "page": 106,
+          "prons": [{"ipa": "/ˈtɪmbə(r)/", "senses": [{"pos": "n.", "mean": "[[木材]]；[[大木料，栋木]]"}]}],
+          "tip": {"type": "联想", "text": "Timberland（添柏岚）是一个户外品牌，我们常常戏称它的谐音为“踢不烂”，因为 timber 是坚固的“木材”。"},
+          "ex": {"type": "真", "year": 2021, "en": "At the time, most large homes were constructed of timber and brick.", "zh": "当时，大多数大房子都是用木材和砖建造的。", "key": ["timber"]},
+          "ext": []
+        },
+        {
+          "no": 58, "word": "chase", "freq": 1, "page": 106,
+          "prons": [{"ipa": "/tʃeɪs/", "senses": [{"pos": "v.", "mean": "[[努力获取]]；[[追赶，追求]]；[[赶走]]"}]}],
+          "tip": {"type": "联想", "text": "cha（联想“叉”）+ se（音似“死”）→他“追赶”着臭虫，想用叉子叉死它。"},
+          "ex": {"type": "例", "en": "They decided to chase the cow away.", "zh": "他们决定把牛赶走。", "key": ["chase"]},
+          "ext": []
+        },
+        {
+          "no": 59, "word": "purchase", "freq": 3, "page": 106,
+          "prons": [{"ipa": "/ˈpɜːtʃəs/", "senses": [{"pos": "v.", "mean": "[[购买]]；[[采购]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“破车子”→车子很破了，那就“购买”个新的吧。"},
+          "ex": {"type": "例", "en": "They purchase increasing quantities of sweets.", "zh": "他们购买越来越多的糖果。", "key": ["purchase"]},
+          "ext": []
+        },
+        {
+          "no": 60, "word": "pursue", "freq": 3, "page": 106,
+          "prons": [{"ipa": "/pəˈsjuː/", "senses": [{"pos": "v.", "mean": "[[追求]]；[[致力于]]；[[执行]]；[[贯彻]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“破书”→他把书都翻破了，就是为了“追求”真理。"},
+          "ex": {"type": "真", "year": 2017, "en": "We should feel happy when we pursue knowledge for knowledge's sake.", "zh": "当我们为了知识本身而追求知识时，应该感到快乐。", "key": ["pursue"]},
+          "ext": [{"word": "pursuit", "ipa": "/pəˈsjuːt/", "senses": [{"pos": "n.", "mean": "追求；追赶；消遣"}]}]
+        }
+      ]
+    }
+  ]
+}

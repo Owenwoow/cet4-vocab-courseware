@@ -1,0 +1,2788 @@
+{
+ "id": "u04-l03",
+ "part": 1,
+ "unit": 4,
+ "lesson": 3,
+ "pages": [
+  107,
+  114
+ ],
+ "groups": [
+  {
+   "no": 13,
+   "title": "trans 相关",
+   "pages": [
+    107,
+    109
+   ],
+   "map": {
+    "w": "trans 相关",
+    "children": [
+     {
+      "w": "translate",
+      "children": [
+       {
+        "w": "translation",
+        "rel": "扩",
+        "children": [
+         {
+          "w": "translator"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "transplant",
+      "children": [
+       {
+        "w": "transplantation",
+        "rel": "扩"
+       }
+      ]
+     },
+     {
+      "w": "transform",
+      "children": [
+       {
+        "w": "transformation",
+        "rel": "扩"
+       }
+      ]
+     },
+     {
+      "w": "transport",
+      "children": [
+       {
+        "w": "transportation",
+        "rel": "扩",
+        "children": [
+         {
+          "w": "rail",
+          "rel": "相关",
+          "children": [
+           {
+            "w": "trail",
+            "rel": "形近",
+            "children": [
+             {
+              "w": "trailer",
+              "rel": "扩"
+             },
+             {
+              "w": "trace",
+              "rel": "近义",
+              "children": [
+               {
+                "w": "track"
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "w": "orbit",
+            "rel": "相关",
+            "children": [
+             {
+              "w": "orbital",
+              "rel": "扩"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "w": "platform",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "transfer",
+          "rel": "相关",
+          "children": [
+           {
+            "w": "transference",
+            "rel": "扩"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "w": "transit",
+        "rel": "近义",
+        "children": [
+         {
+          "w": "transition",
+          "rel": "扩",
+          "children": [
+           {
+            "w": "transaction",
+            "rel": "形近"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "transparent",
+      "children": [
+       {
+        "w": "transparency",
+        "rel": "扩"
+       },
+       {
+        "w": "apparent",
+        "rel": "同根",
+        "children": [
+         {
+          "w": "apparently",
+          "rel": "扩"
+         },
+         {
+          "w": "obvious",
+          "rel": "近义",
+          "children": [
+           {
+            "w": "obviously",
+            "rel": "扩"
+           }
+          ]
+         },
+         {
+          "w": "evident",
+          "rel": "近义",
+          "children": [
+           {
+            "w": "evidence",
+            "rel": "扩"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "entries": [
+    {
+     "no": 1,
+     "word": "translate",
+     "freq": 1,
+     "page": 107,
+     "prons": [
+      {
+       "ipa": "/trænzˈleɪt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[翻译]]；[[解释，说明]]"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "真",
+      "year": 2016,
+      "en": "It can be avoided if human values are translated into their language.",
+      "zh": "如果把人类的价值观翻译成他们的语言，这是可以避免的。",
+      "key": [
+       "translated"
+      ]
+     },
+     "ext": [
+      {
+       "word": "translation",
+       "ipa": "/trænzˈleɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "翻译，译文"
+        }
+       ]
+      },
+      {
+       "word": "translator",
+       "ipa": "/trænzˈleɪtə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "翻译，译员，翻译家"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "word": "transplant",
+     "freq": 1,
+     "page": 107,
+     "prons": [
+      {
+       "ipa": "/trænsˈplɑːnt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[移植]]；[[移栽]]"
+        }
+       ]
+      },
+      {
+       "ipa": "/ˈtrænsplɑːnt/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[（器官等的）移植]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "trans-（从……到……）+ plant（种植）→ 从这里种到那里 → 移植；移栽"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Many others attempted to transplant their habits and traditions to the new world.",
+      "zh": "还有许多人试图将他们的习惯和传统移植到新世界。",
+      "key": [
+       "transplant"
+      ]
+     },
+     "ext": [
+      {
+       "word": "transplantation",
+       "ipa": "/ˌtrænsplɑːnˈteɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "移栽，移种，移植"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "word": "transform",
+     "freq": 2,
+     "page": 107,
+     "prons": [
+      {
+       "ipa": "/trænsˈfɔːm/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[使改变形态]]；[[使改观]]；[[变形]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "trans-（从……到……）+ form（形式）→ 从一种形式到另外一种形式 → 使改变形态"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2021,
+      "en": "It will force cities to transform their infrastructure.",
+      "zh": "这将迫使城市改变其基础设施。",
+      "key": [
+       "transform"
+      ]
+     },
+     "ext": [
+      {
+       "word": "transformation",
+       "ipa": "/ˌtrænsfəˈmeɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "变化，改观，转变，改革"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "word": "platform",
+     "freq": 3,
+     "page": 107,
+     "prons": [
+      {
+       "ipa": "/ˈplætfɔːm/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[平台]]；[[站台]]；[[纲领]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "plat（平的）+ form（形式，形状）→ 平台；站台"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The train now standing at platform 1 is for Leeds.",
+      "zh": "停靠在1号站台的火车是开往利兹的。",
+      "key": [
+       "platform"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 5,
+     "word": "transport",
+     "freq": 3,
+     "page": 107,
+     "prons": [
+      {
+       "ipa": "/ˈtrænspɔːt/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[交通运输系统]]；[[运输工具]]；[[激动]]"
+        }
+       ]
+      },
+      {
+       "ipa": "/trænˈspɔːt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[运输]]；[[传输]]；[[流放]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "trans-（从……到……）+ port（港口）→ 从一个港口到另一个港口 → 运输"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2022,
+      "en": "She is used to taking public transport.",
+      "zh": "她习惯于乘坐公共交通工具。",
+      "key": [
+       "transport"
+      ]
+     },
+     "ext": [
+      {
+       "word": "transportation",
+       "ipa": "/ˌtrænspɔːˈteɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "运输；交通方式"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "word": "transaction",
+     "freq": 2,
+     "page": 107,
+     "prons": [
+      {
+       "ipa": "/trænˈzækʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[交易，业务]]；[[办理]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "trans-（从……到……）+ action（行动）→ 从一个行动到另一个行动 → 交易"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Technology has reduced transaction costs.",
+      "zh": "技术降低了交易成本。",
+      "key": [
+       "transaction"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 7,
+     "word": "transfer",
+     "freq": 2,
+     "page": 108,
+     "prons": [
+      {
+       "ipa": "/trænsˈfɜː(r)/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[转移]]；[[改编]]"
+        }
+       ]
+      },
+      {
+       "ipa": "/ˈtrænsfɜː(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[搬迁]]；[[换乘]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "trans-（从……到……）+ fer（音似“佛”）→ 唐僧师徒把佛经从西天“转移”至大唐。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "How many bacteria actually transfer in five seconds?",
+      "zh": "有多少种细菌能在五秒钟内转移？",
+      "key": [
+       "transfer"
+      ]
+     },
+     "ext": [
+      {
+       "word": "transference",
+       "ipa": "/ˈtrænsfərəns/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "转移；调动"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "word": "transit",
+     "freq": 1,
+     "page": 108,
+     "prons": [
+      {
+       "ipa": "/ˈtrænzɪt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[通过]]；[[转运]]"
+        },
+        {
+         "pos": "n.",
+         "mean": "[[运输，运送]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "trans-（从……到……）+ it（它）→ 把它从这“转运”到那。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "He had to transit a forest to reach the finish line.",
+      "zh": "他必须穿过一片森林才能到达终点线。",
+      "key": [
+       "transit"
+      ]
+     },
+     "ext": [
+      {
+       "word": "transition",
+       "ipa": "/trænˈzɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "转变，转换"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "word": "transparent",
+     "freq": 1,
+     "page": 108,
+     "prons": [
+      {
+       "ipa": "/trænsˈpærənt/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[透明的]]；[[易看穿的，易懂的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "trans-（从……到……）+ parent（父母）→ 父母之间彼此很了解 → 透明的；易懂的"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2022,
+      "en": "Let the debates be transparent and vigorous, wherever they are held.",
+      "zh": "无论在何处举行辩论，都应使辩论易懂而有力。",
+      "key": [
+       "transparent"
+      ]
+     },
+     "ext": [
+      {
+       "word": "transparency",
+       "ipa": "/trænsˈpærənsi/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "透明；易懂；清楚"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "word": "apparent",
+     "freq": 2,
+     "page": 108,
+     "prons": [
+      {
+       "ipa": "/əˈpærənt/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[显然的]]；[[表面上的]]；[[貌似的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "ap-（一再地）+ parent（父母）→ 她一再地提到父母，显然她很爱他们 → 显然的"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2021,
+      "en": "These invisible duties become apparent only when you don't do them.",
+      "zh": "只有当你不去做的时候，这些看不见的责任才会变得明显。",
+      "key": [
+       "apparent"
+      ]
+     },
+     "ext": [
+      {
+       "word": "apparently",
+       "ipa": "/əˈpærəntli/",
+       "senses": [
+        {
+         "pos": "adv.",
+         "mean": "看来；显然"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "word": "obvious",
+     "freq": 3,
+     "page": 108,
+     "prons": [
+      {
+       "ipa": "/ˈɒbviəs/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[明显的，显然的]]；[[平淡无奇的]]"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "真",
+      "year": 2022,
+      "en": "Start with the most obvious place first: the company's website.",
+      "zh": "首先从最明显的地方开始：公司的网站。",
+      "key": [
+       "obvious"
+      ]
+     },
+     "ext": [
+      {
+       "word": "obviously",
+       "ipa": "/ˈɒbviəsli/",
+       "senses": [
+        {
+         "pos": "adv.",
+         "mean": "显然，明显地；不言而喻"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "word": "evident",
+     "freq": 1,
+     "page": 108,
+     "prons": [
+      {
+       "ipa": "/ˈevɪdənt/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[明显的]]；[[明白的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“俺为等他”→ 俺为了在机场等他，站在人群中很“明显的”地方。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The fridge's effect upon the environment has been evident.",
+      "zh": "冰箱对环境的影响已经很明显了。",
+      "key": [
+       "evident"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 13,
+     "word": "evidence",
+     "freq": 3,
+     "page": 108,
+     "prons": [
+      {
+       "ipa": "/ˈevɪdəns/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[证据]]；[[（法庭）证物，证词]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "evident adj. 明显的；明白的 → evidence n."
+     },
+     "ex": {
+      "type": "例",
+      "en": "There was no evidence that the meeting took place.",
+      "zh": "没有证据表明有过这次会面。",
+      "key": [
+       "evidence"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 14,
+     "word": "trace",
+     "freq": 1,
+     "page": 108,
+     "prons": [
+      {
+       "ipa": "/treɪs/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[痕迹]]；[[微量]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[追踪]]；[[跟踪]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "我和他比赛（race）追踪（trace）丢失钱包的下落。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2017,
+      "en": "Each time this initial memory trace is \"replayed\", it becomes even stronger.",
+      "zh": "每次这种最初的记忆痕迹被“重播”时，它就会变得更加强烈。",
+      "key": [
+       "trace"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 15,
+     "word": "trail",
+     "freq": 2,
+     "page": 108,
+     "prons": [
+      {
+       "ipa": "/treɪl/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[踪迹]]；[[痕迹]]；[[路线]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[跟踪]]；[[拖]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "t（联想“他”）+ rail（联想 railway）→ 他沿着铁路走，留下了“踪迹”。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The hounds were following the fox's trail.",
+      "zh": "猎犬追踪着狐狸的气味。",
+      "key": [
+       "trail"
+      ]
+     },
+     "ext": [
+      {
+       "word": "trailer",
+       "ipa": "/ˈtreɪlə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "拖车；活动房屋"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 16,
+     "word": "rail",
+     "freq": 2,
+     "page": 109,
+     "prons": [
+      {
+       "ipa": "/reɪl/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[铁路]]；[[栏杆]]；[[铁轨]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[怒斥，抱怨]]"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "真",
+      "year": 2020,
+      "en": "Isn't this the same crowd that rails against processed junk and champions craft cooking?",
+      "zh": "这不就是那些怒斥加工垃圾、拥护手工烹饪的人吗？",
+      "key": [
+       "rails against"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 17,
+     "word": "track",
+     "freq": 1,
+     "page": 109,
+     "prons": [
+      {
+       "ipa": "/træk/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[跟踪]]；[[追踪]]"
+        },
+        {
+         "pos": "n.",
+         "mean": "[[轨道]]；[[踪迹]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“踹开”→ 一个玩具小火车正在“轨道”上跑，突然被他一脚踹开了。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2021,
+      "en": "Keep track of left-handed children's school performance.",
+      "zh": "跟踪左利手孩子在学校的表现。",
+      "key": [
+       "track"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 18,
+     "word": "orbit",
+     "freq": 2,
+     "page": 109,
+     "prons": [
+      {
+       "ipa": "/ˈɔːbɪt/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[轨道]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[沿轨道运行]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "or（或者）+ bit（音似“逼他”）→ 朋友们或者劝他，或者逼他，只盼颓废的他重回正常生活的“轨道”。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The two spacecrafts will link up in orbit.",
+      "zh": "两艘宇宙飞船将在轨道上对接。",
+      "key": [
+       "orbit"
+      ]
+     },
+     "ext": [
+      {
+       "word": "orbital",
+       "ipa": "/ˈɔːbɪtl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "轨道的；（城市）外环路的"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "no": 14,
+   "title": "“土地”相关",
+   "pages": [
+    109,
+    111
+   ],
+   "map": {
+    "w": "“土地”相关",
+    "children": [
+     {
+      "w": "boom",
+      "children": [
+       {
+        "w": "bloom",
+        "rel": "形近",
+        "children": [
+         {
+          "w": "blossom",
+          "rel": "近义"
+         },
+         {
+          "w": "gloom",
+          "rel": "形近",
+          "children": [
+           {
+            "w": "gloomy",
+            "rel": "扩"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "boost",
+      "children": [
+       {
+        "w": "boast",
+        "rel": "形近",
+        "children": [
+         {
+          "w": "boastful",
+          "rel": "扩"
+         },
+         {
+          "w": "brag",
+          "rel": "近义"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "raw",
+      "children": [
+       {
+        "w": "ripe",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "ripen",
+          "rel": "扩"
+         }
+        ]
+       },
+       {
+        "w": "mature",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "maturity",
+          "rel": "扩"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "reap",
+      "children": [
+       {
+        "w": "harvest",
+        "rel": "近义"
+       }
+      ]
+     },
+     {
+      "w": "yield",
+      "children": [
+       {
+        "w": "plough"
+       }
+      ]
+     },
+     {
+      "w": "irrigation",
+      "children": [
+       {
+        "w": "irrigate",
+        "rel": "扩"
+       }
+      ]
+     },
+     {
+      "w": "dominate",
+      "children": [
+       {
+        "w": "domination",
+        "rel": "扩",
+        "children": [
+         {
+          "w": "dominant",
+          "children": [
+           {
+            "w": "dominance"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "entries": [
+    {
+     "no": 19,
+     "word": "boom",
+     "freq": 1,
+     "page": 109,
+     "prons": [
+      {
+       "ipa": "/buːm/",
+       "senses": [
+        {
+         "pos": "v. & n.",
+         "mean": "[[（发出）隆隆声]]；[[激增，繁荣]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "boo（形似600）+ m（联想 meter）→ 方圆600米内一片“繁荣”。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2016,
+      "en": "It still has a chance to give rise to a boom in the global economy.",
+      "zh": "（中国）仍有机会为全球经济带来繁荣。",
+      "key": [
+       "boom"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 20,
+     "word": "bloom",
+     "freq": 1,
+     "page": 109,
+     "prons": [
+      {
+       "ipa": "/bluːm/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[花]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[开花]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "bloo（形似6,100）+ m（联想“美”）→ 广场上布置了6,100朵美丽的“花”。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "With the development in science and technology man can make various flowers bloom before their time.",
+      "zh": "随着科学技术的发展，人们可以使各种各样的花提前绽放。",
+      "key": [
+       "bloom"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 21,
+     "word": "blossom",
+     "freq": 1,
+     "page": 109,
+     "prons": [
+      {
+       "ipa": "/ˈblɒsəm/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[花朵]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[开花]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“捕捞色木”→ 他捕鱼时捞上来一根彩色的木头，上面刻有漂亮的“花朵”。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The trees are in blossom.",
+      "zh": "树上鲜花盛开。",
+      "key": [
+       "blossom"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 22,
+     "word": "gloom",
+     "freq": 1,
+     "page": 109,
+     "prons": [
+      {
+       "ipa": "/ɡluːm/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[忧郁]]；[[幽暗]]；[[黑暗]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "g（联想“哥”）+ loo（形似100）+ m（联想“米”）→ 哥哥看不清100米以外的东西，表情很“忧郁”。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "We watched the boats come back in the gathering gloom.",
+      "zh": "我们注视着船只在越来越浓的暮色中返航。",
+      "key": [
+       "gloom"
+      ]
+     },
+     "ext": [
+      {
+       "word": "gloomy",
+       "ipa": "/ˈɡluːmi/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "郁闷的；阴暗的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 23,
+     "word": "boost",
+     "freq": 3,
+     "page": 110,
+     "prons": [
+      {
+       "ipa": "/buːst/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[促进，推动]]；[[使兴旺]]"
+        },
+        {
+         "pos": "n.",
+         "mean": "[[促进]]；[[宣扬]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "boo（形似600）+ st（联想 street）→ 修600条街道能“促进”当地经济的增长。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Agreeable people boost your confidence.",
+      "zh": "随和的人会增强你的自信。",
+      "key": [
+       "boost"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 24,
+     "word": "boast",
+     "freq": 1,
+     "page": 110,
+     "prons": [
+      {
+       "ipa": "/bəʊst/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[自夸]]；[[吹嘘]]；[[有（值得自豪的东西）]]"
+        },
+        {
+         "pos": "n.",
+         "mean": "[[夸耀]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“宝石塔（一种游戏）”→ 他“吹嘘”说他总能赢宝石塔游戏。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2023,
+      "en": "They boast the longest battery life.",
+      "zh": "它们拥有最长的电池寿命。",
+      "key": [
+       "boast"
+      ]
+     },
+     "ext": [
+      {
+       "word": "boastful",
+       "ipa": "/ˈbəʊstfl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "自吹自擂的；自夸的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 25,
+     "word": "brag",
+     "freq": 1,
+     "page": 110,
+     "prons": [
+      {
+       "ipa": "/bræɡ/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[吹嘘]]；[[自吹自擂]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“布拉格”→ 他“吹嘘”自己去过布拉格。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "He bragged about how brave he was.",
+      "zh": "他吹嘘自己多么勇敢。",
+      "key": [
+       "bragged"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 26,
+     "word": "raw",
+     "freq": 3,
+     "page": 110,
+     "prons": [
+      {
+       "ipa": "/rɔː/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[生的，未加工的]]；[[不熟练的，没有经验的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“肉”→ 这些肉是“生的”，不能吃。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2015,
+      "en": "Many governments have done more than the US government in providing the raw materials for innovation.",
+      "zh": "在提供原材料促进创新方面，许多政府比美国政府做得更多。",
+      "key": [
+       "raw"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 27,
+     "word": "ripe",
+     "freq": 1,
+     "page": 110,
+     "prons": [
+      {
+       "ipa": "/raɪp/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[熟的]]；[[时机成熟的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "ri（联想“日”）+ pe（音似“扑”）→ 扑向太阳的植物很容易成熟 → 熟的"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Pick the tomatoes before they get too ripe.",
+      "zh": "在西红柿过度成熟之前把它们摘下来。",
+      "key": [
+       "ripe"
+      ]
+     },
+     "ext": [
+      {
+       "word": "ripen",
+       "ipa": "/ˈraɪpən/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "成熟"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 28,
+     "word": "reap",
+     "freq": 2,
+     "page": 110,
+     "prons": [
+      {
+       "ipa": "/riːp/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[取得（成果）]]；[[收获]]；[[收割（庄稼）]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "阅读（read）会使你收获（reap）知识。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Now is the time to reap.",
+      "zh": "现在是收获的时候了。",
+      "key": [
+       "reap"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 29,
+     "word": "harvest",
+     "freq": 1,
+     "page": 110,
+     "prons": [
+      {
+       "ipa": "/ˈhɑːvɪst/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[收获，成果]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[收割]]；[[采集]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "harv（联想 have）+ est（联想“最高级后缀”）→“收获”的季节有最多的好吃的。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2016,
+      "en": "Prices typically returned to normal with the next harvest.",
+      "zh": "价格通常会在下一次收获时恢复正常。",
+      "key": [
+       "harvest"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 30,
+     "word": "yield",
+     "freq": 2,
+     "page": 110,
+     "prons": [
+      {
+       "ipa": "/jiːld/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[产量]]；[[利润]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[出产]]；[[屈服]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "yi（音似“爷”）+ eld（联想 old）→ 爷爷很老了还在种庄稼，“出产”粮食。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Their grain yields have begun to decrease sharply in recent years.",
+      "zh": "近年来，他们的粮食产量已开始急剧下降。",
+      "key": [
+       "yields"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 31,
+     "word": "mature",
+     "freq": 2,
+     "page": 110,
+     "prons": [
+      {
+       "ipa": "/məˈtʃʊə(r); məˈtjʊə(r)/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[成熟的，成年的]]；[[技艺精湛的]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[成熟]]；[[成长]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "ma（联想“妈”）+ ture（联想 true）→ 当了妈妈后，她真正“成熟”了。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "He is able to think and speak like a mature adult.",
+      "zh": "他能够像一个成熟的成年人一样思考和说话。",
+      "key": [
+       "mature"
+      ]
+     },
+     "ext": [
+      {
+       "word": "maturity",
+       "ipa": "/məˈtʃʊərəti; məˈtjʊərəti/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "成熟；成年；完全长成"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 32,
+     "word": "plough",
+     "alt": "plow",
+     "freq": 1,
+     "page": 110,
+     "prons": [
+      {
+       "ipa": "/plaʊ/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[犁]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[犁，耕（地）]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“扑老”→ 他扑向那个正在“耕地”的老人，要给他帮忙。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Land currently ploughed up for crops might be able to revert to forest or wilderness.",
+      "zh": "目前用来种植的土地可能会恢复为森林或荒野。",
+      "key": [
+       "ploughed"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 33,
+     "word": "irrigation",
+     "freq": 1,
+     "page": 111,
+     "prons": [
+      {
+       "ipa": "/ˌɪrɪˈɡeɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[灌溉]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "i（形似人）+ rr（形似两朵花）+ i（形似人）+ gat（联想 gate）+ -ion（名词后缀）→ 两个人站在大门口“灌溉”两朵花。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2016,
+      "en": "The biggest challenge here is irrigation.",
+      "zh": "这里最大的挑战是灌溉。",
+      "key": [
+       "irrigation"
+      ]
+     },
+     "ext": [
+      {
+       "word": "irrigate",
+       "ipa": "/ˈɪrɪɡeɪt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "灌溉"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 34,
+     "word": "dominate",
+     "freq": 3,
+     "page": 111,
+     "prons": [
+      {
+       "ipa": "/ˈdɒmɪneɪt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[支配]]；[[控制]]；[[俯视]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "在过去，那个有圆屋顶（dome）的教堂在本地占统治（dominate）地位。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2019,
+      "en": "The same can be said of their ability to dominate the corporate boardroom.",
+      "zh": "他们主导公司董事会的能力也是如此。",
+      "key": [
+       "dominate"
+      ]
+     },
+     "ext": [
+      {
+       "word": "domination",
+       "ipa": "/ˌdɒmɪˈneɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "统治；控制"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 35,
+     "word": "dominant",
+     "freq": 2,
+     "page": 111,
+     "prons": [
+      {
+       "ipa": "/ˈdɒmɪnənt/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[首要的]]；[[占支配地位的]]；[[（基因）显性的]]；[[优势的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "domin（联想 dome）+ ant（蚂蚁）→ 蚂蚁占领了圆顶的房子 → 首要的；占支配地位的"
+     },
+     "ex": {
+      "type": "例",
+      "en": "It is playing a dominant role in the film market.",
+      "zh": "它在电影市场上发挥着主导作用。",
+      "key": [
+       "dominant"
+      ]
+     },
+     "ext": [
+      {
+       "word": "dominance",
+       "ipa": "/ˈdɒmɪnəns/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "优势；支配，控制"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "no": 15,
+   "title": "domestic 相关",
+   "pages": [
+    111,
+    113
+   ],
+   "map": {
+    "w": "domestic 相关",
+    "children": [
+     {
+      "w": "chore",
+      "children": [
+       {
+        "w": "dull",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "dumb",
+          "rel": "形近"
+         },
+         {
+          "w": "tedious",
+          "rel": "近义",
+          "children": [
+           {
+            "w": "tedium",
+            "rel": "扩"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "routine",
+      "children": [
+       {
+        "w": "schedule",
+        "rel": "近义",
+        "children": [
+         {
+          "w": "scheme",
+          "rel": "形近"
+         },
+         {
+          "w": "agenda",
+          "rel": "相关"
+         }
+        ]
+       },
+       {
+        "w": "route",
+        "rel": "形近",
+        "children": [
+         {
+          "w": "passage",
+          "rel": "相关",
+          "children": [
+           {
+            "w": "passenger",
+            "rel": "形近"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "interior",
+      "children": [
+       {
+        "w": "internal",
+        "rel": "近义",
+        "children": [
+         {
+          "w": "inner"
+         }
+        ]
+       },
+       {
+        "w": "exterior",
+        "rel": "反义",
+        "children": [
+         {
+          "w": "external"
+         }
+        ]
+       },
+       {
+        "w": "intermediate",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "intermediary",
+          "rel": "扩"
+         },
+         {
+          "w": "medium",
+          "rel": "近义",
+          "children": [
+           {
+            "w": "media",
+            "rel": "扩"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "entries": [
+    {
+     "no": 36,
+     "word": "domestic",
+     "freq": 3,
+     "page": 111,
+     "prons": [
+      {
+       "ipa": "/dəˈmestɪk/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[家庭的]]；[[国内的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "dome（联想 home）+ stic → 中国是我们共同的家 → 家庭的；国内的"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2016,
+      "en": "To lower domestic food prices, some countries limited or stopped their grain exports.",
+      "zh": "为了降低国内食品价格，一些国家限制或停止了粮食出口。",
+      "key": [
+       "domestic"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 37,
+     "word": "chore",
+     "freq": 1,
+     "page": 111,
+     "prons": [
+      {
+       "ipa": "/tʃɔː(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[家庭杂务]]；[[日常事务]]；[[例行工作]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“瞧”→ 不要每天在家瞧着妈妈干“家庭杂务”，你也要帮把手。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Paying an allowance for completing chores benefits their children.",
+      "zh": "为完成家务支付津贴对他们的孩子有好处。",
+      "key": [
+       "chores"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 38,
+     "word": "dull",
+     "freq": 3,
+     "page": 111,
+     "prons": [
+      {
+       "ipa": "/dʌl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[枯燥的]]；[[不鲜明的]]；[[迟钝的]]；[[萧条的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "du（联想“读”）+ ll（形似11）→ 她读了11本书都不感兴趣，感觉很枯燥 → 枯燥的"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Well-functioning machines relieve them of dull tasks.",
+      "zh": "运行良好的机器可以减轻他们枯燥的任务。",
+      "key": [
+       "dull"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 39,
+     "word": "dumb",
+     "freq": 1,
+     "page": 111,
+     "prons": [
+      {
+       "ipa": "/dʌm/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[愚蠢的]]；[[哑的]]；[[无言的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "du（联想“毒”）+ mb（联想“面包”）→ 公主吃完毒面包变哑了 → 哑的"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Some people are dumb enough to want children just because seeing others do so.",
+      "zh": "有些人愚蠢到想要孩子只是因为看到别人这样做。",
+      "key": [
+       "dumb"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 40,
+     "word": "tedious",
+     "freq": 1,
+     "page": 112,
+     "prons": [
+      {
+       "ipa": "/ˈtiːdiəs/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[单调的，乏味的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "te（音似“提”）+ di（音似“弟”）+ -ous（形容词后缀）→ 妈妈总是在外人面前提弟弟过去的事儿，太乏味了 → 单调的，乏味的"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2020,
+      "en": "It was a hard and tedious job.",
+      "zh": "它是一项艰苦而乏味的工作。",
+      "key": [
+       "tedious"
+      ]
+     },
+     "ext": [
+      {
+       "word": "tedium",
+       "ipa": "/ˈtiːdiəm/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "单调；厌烦"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 41,
+     "word": "schedule",
+     "freq": 3,
+     "page": 112,
+     "prons": [
+      {
+       "ipa": "/ˈʃedjuːl/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[工作计划]]；[[日程安排]]；[[时间表]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[安排，预定]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "s（联想“私”）+ chedule（联想“车堵了”）→ 私家车堵在路上了，耽误了我们的“日程安排”。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2022,
+      "en": "They were complete clock watchers, while I would have liked a more flexible schedule.",
+      "zh": "他们是彻头彻尾的守时者，而我希望有一个更灵活的时间表。",
+      "key": [
+       "schedule"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 42,
+     "word": "scheme",
+     "freq": 1,
+     "page": 112,
+     "prons": [
+      {
+       "ipa": "/skiːm/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[计划]]；[[方案]]；[[阴谋]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "s（联想“美女”）+ che（联想“车”）+ me（我）→ 美女有开车送我的“计划”。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Universities want the government to introduce a loan scheme for tuition fees.",
+      "zh": "大学希望政府推出一项学费贷款计划。",
+      "key": [
+       "scheme"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 43,
+     "word": "agenda",
+     "freq": 1,
+     "page": 112,
+     "prons": [
+      {
+       "ipa": "/əˈdʒendə/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[（会议的）议程表，议事日程]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "a（一）+ gen（音似“件”）+ da（联想“大”）→ 一件大事必须放到“议程表”里。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Information protection is high on the boss's agenda in businesses of every variety.",
+      "zh": "信息保护在各行各业的老板的议事日程上都处于重要地位。",
+      "key": [
+       "agenda"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 44,
+     "word": "routine",
+     "freq": 2,
+     "page": 112,
+     "prons": [
+      {
+       "ipa": "/ruːˈtiːn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[常规]]；[[日常工作]]；[[例行程序]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“路听”→ 老板的“日常工作”很忙，时常在路上听秘书汇报工作。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2021,
+      "en": "We love to establish a routine and stick with it.",
+      "zh": "我们喜欢建立一个常规并坚持下去。",
+      "key": [
+       "routine"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 45,
+     "word": "route",
+     "freq": 2,
+     "page": 112,
+     "prons": [
+      {
+       "ipa": "/ruːt/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[路线]]；[[途径]]；[[渠道]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "r（形似花）+ out（出去）+ e（字母音似“—”）→ 他每次把花扔出去，都是沿着同一条“路线”的。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "I followed my route like I normally do.",
+      "zh": "我像往常一样走自己的路线。",
+      "key": [
+       "route"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 46,
+     "word": "passage",
+     "freq": 1,
+     "page": 112,
+     "prons": [
+      {
+       "ipa": "/ˈpæsɪdʒ/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[通过]]；[[通道]]；[[文章]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "pass v.通过→passage n."
+     },
+     "ex": {
+      "type": "例",
+      "en": "To get to the place requires going through a very narrow passage.",
+      "zh": "要到达这个地方，需要经过一条非常狭窄的通道。",
+      "key": [
+       "passage"
+      ]
+     },
+     "ext": [
+      {
+       "word": "passenger",
+       "ipa": "/ˈpæsɪndʒə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "乘客，旅客，过路人"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 47,
+     "word": "interior",
+     "freq": 3,
+     "page": 112,
+     "prons": [
+      {
+       "ipa": "/ɪnˈtɪəriə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[内部]]；[[内地]]"
+        },
+        {
+         "pos": "adj.",
+         "mean": "[[内部的]]"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "例",
+      "en": "The original interior of the hotel has been replaced.",
+      "zh": "旅馆原来的内部装潢已经更换掉了。",
+      "key": [
+       "interior"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 48,
+     "word": "exterior",
+     "freq": 1,
+     "page": 112,
+     "prons": [
+      {
+       "ipa": "/ɪkˈstɪəriə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[外部，表面，外貌]]"
+        },
+        {
+         "pos": "adj.",
+         "mean": "[[外部的]]；[[表面的]]"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "例",
+      "en": "The exterior lights of the house came on as I approached the door.",
+      "zh": "当我走近门的时候，房子外面的灯亮了。",
+      "key": [
+       "exterior"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 49,
+     "word": "external",
+     "freq": 1,
+     "page": 112,
+     "prons": [
+      {
+       "ipa": "/ɪkˈstɜːnl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[外部的]]；[[外来的]]；[[对外的]]"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "真",
+      "year": 2020,
+      "en": "Why is there both external and internal pressure to look \"perfect\"?",
+      "zh": "为何会有外在和内在的双重压力来让自己看起来“完美”？",
+      "key": [
+       "external"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 50,
+     "word": "internal",
+     "freq": 1,
+     "page": 113,
+     "prons": [
+      {
+       "ipa": "/ɪnˈtɜːnl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[内部的]]；[[内政的]]；[[国内的]]"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "例",
+      "en": "She was on an internal flight from London to Manchester.",
+      "zh": "她在从伦敦到曼彻斯特的国内航班上。",
+      "key": [
+       "internal"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 51,
+     "word": "inner",
+     "freq": 2,
+     "page": 113,
+     "prons": [
+      {
+       "ipa": "/ˈɪnə(r)/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[里面的，向内的]]；[[内心的]]"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "真",
+      "year": 2022,
+      "en": "They seldom expressed their inner thoughts.",
+      "zh": "他们很少表达内心的想法。",
+      "key": [
+       "inner"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 52,
+     "word": "media",
+     "freq": 3,
+     "page": 113,
+     "prons": [
+      {
+       "ipa": "/ˈmiːdiə/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[大众传播]]；[[媒体，媒介]]"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "例",
+      "en": "The news media reported extensively on the story.",
+      "zh": "新闻媒体广泛报道了这个故事。",
+      "key": [
+       "media"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 53,
+     "word": "medium",
+     "freq": 2,
+     "page": 113,
+     "prons": [
+      {
+       "ipa": "/ˈmiːdiəm/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[中等的]]；[[中号的]]"
+        },
+        {
+         "pos": "n.",
+         "mean": "[[（传播信息的）媒介，方法]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "衣服上的m码不是middle（中间的），而是medium（中号的）。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2020,
+      "en": "You have a choice of a small, medium or large soda.",
+      "zh": "您可以选择小杯、中杯或者大杯苏打水。",
+      "key": [
+       "medium"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 54,
+     "word": "intermediate",
+     "freq": 1,
+     "page": 113,
+     "prons": [
+      {
+       "ipa": "/ˌɪntəˈmiːdiət/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[中等的，中间的，中级的]]"
+        },
+        {
+         "pos": "n.",
+         "mean": "[[中级学生]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "inter-（中间的）+ media（媒体）+ te（联想“特”）→ 在中间的媒体，不是特别好也不是特别差 → 中等的"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Fewer than half of Americans say they cook at an intermediate level.",
+      "zh": "不到一半的美国人说他们的烹饪水平处于中等。",
+      "key": [
+       "intermediate"
+      ]
+     },
+     "ext": [
+      {
+       "word": "intermediary",
+       "ipa": "/ˌɪntəˈmiːdiəri/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "中间人；调解人"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "no": 16,
+   "title": "“位置”相关",
+   "pages": [
+    113,
+    114
+   ],
+   "map": {
+    "w": "“位置”相关",
+    "children": [
+     {
+      "w": "local",
+      "children": [
+       {
+        "w": "locality",
+        "rel": "扩"
+       },
+       {
+        "w": "locate",
+        "rel": "形近",
+        "children": [
+         {
+          "w": "location",
+          "rel": "扩"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "site",
+      "children": [
+       {
+        "w": "situate",
+        "rel": "近义",
+        "children": [
+         {
+          "w": "situation",
+          "rel": "扩"
+         }
+        ]
+       },
+       {
+        "w": "cite",
+        "rel": "同音",
+        "children": [
+         {
+          "w": "citation",
+          "rel": "扩"
+         }
+        ]
+       },
+       {
+        "w": "bite",
+        "rel": "形近"
+       },
+       {
+        "w": "website",
+        "rel": "合成",
+        "children": [
+         {
+          "w": "web",
+          "rel": "拆分"
+         },
+         {
+          "w": "click",
+          "rel": "相关"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "entries": [
+    {
+     "no": 55,
+     "word": "local",
+     "freq": 1,
+     "page": 113,
+     "prons": [
+      {
+       "ipa": "/ˈləʊkl/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[本地人]]"
+        },
+        {
+         "pos": "adj.",
+         "mean": "[[地方性的，当地的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“唠嗑”→ 她喜欢跟“本地人”唠嗑。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2020,
+      "en": "It creates a lot of trouble for local residents.",
+      "zh": "这给当地居民带来了很多麻烦。",
+      "key": [
+       "local"
+      ]
+     },
+     "ext": [
+      {
+       "word": "locality",
+       "ipa": "/ləʊˈkæləti/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "位置，地点"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 56,
+     "word": "locate",
+     "freq": 3,
+     "page": 113,
+     "prons": [
+      {
+       "ipa": "/ləʊˈkeɪt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[探明]]；[[定位]]；[[位于]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "lo（联想“姥”）+ cate（音似 Kate，人名）→ 姥姥要找凯特，让我帮她“定位”。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2020,
+      "en": "Some of the world's most innovative companies are located here.",
+      "zh": "世界上一些最具创新性的公司都坐落在这里。",
+      "key": [
+       "located"
+      ]
+     },
+     "ext": [
+      {
+       "word": "location",
+       "ipa": "/ləʊˈkeɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "位置，场所"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 57,
+     "word": "site",
+     "freq": 3,
+     "page": 113,
+     "prons": [
+      {
+       "ipa": "/saɪt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[使坐落在]]"
+        },
+        {
+         "pos": "n.",
+         "mean": "[[位置]]；[[网站]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "sit（坐）+ e → 使坐落在"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2015,
+      "en": "It is an old city with many sites of historical interest.",
+      "zh": "它是一座有许多名胜古迹的古城。",
+      "key": [
+       "sites"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 58,
+     "word": "situate",
+     "freq": 1,
+     "page": 113,
+     "prons": [
+      {
+       "ipa": "/ˈsɪtʃueɪt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[位于]]；[[将……置于]]；[[使坐落于]]；[[处于（某种）状况]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "我找到了这座山的位置（site），它位于（situate）东部。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The test site was situated in southwestern New Mexico.",
+      "zh": "该试验场位于新墨西哥州西南部。",
+      "key": [
+       "situated"
+      ]
+     },
+     "ext": [
+      {
+       "word": "situation",
+       "ipa": "/ˌsɪtʃuˈeɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "情况，形势"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 59,
+     "word": "cite",
+     "freq": 2,
+     "page": 114,
+     "prons": [
+      {
+       "ipa": "/saɪt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[列举]]；[[引用]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“赛他”→ 在这场作文大赛中，他“引用”了一些格言。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "She cited examples of companies the city has helped relocate or expand.",
+      "zh": "她列举了该市帮助搬迁或扩张的公司的例子。",
+      "key": [
+       "cited"
+      ]
+     },
+     "ext": [
+      {
+       "word": "citation",
+       "ipa": "/saɪˈteɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "引文；（被）引用，引证"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 60,
+     "word": "bite",
+     "freq": 1,
+     "page": 114,
+     "prons": [
+      {
+       "ipa": "/baɪt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[咬]]；[[上钩]]；[[蜇]]"
+        },
+        {
+         "pos": "n.",
+         "mean": "[[咬伤]]；[[寒冷]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“拜他”→ 孩子拜托爸爸帮忙“咬”开他的零食包装袋。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "She was bitten by the family dog.",
+      "zh": "她被家里的狗咬伤了。",
+      "key": [
+       "bitten"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 61,
+     "word": "website",
+     "freq": 1,
+     "page": 114,
+     "prons": [
+      {
+       "ipa": "/ˈwebsaɪt/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[网站]]"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "例",
+      "en": "For current prices, please visit our website.",
+      "zh": "有关目前的价格，请访问我们的网站。",
+      "key": [
+       "website"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 62,
+     "word": "web",
+     "freq": 2,
+     "page": 114,
+     "prons": [
+      {
+       "ipa": "/web/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[网络]]；[[蜘蛛网]]；[[错综复杂的事物]]"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "真",
+      "year": 2023,
+      "en": "But what are the challenges of moving to \"spoken web\"?",
+      "zh": "但是，向“语音网络”转变的挑战是什么呢？",
+      "key": [
+       "web"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 63,
+     "word": "click",
+     "freq": 1,
+     "page": 114,
+     "prons": [
+      {
+       "ipa": "/klɪk/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[点击]]；[[单击]]；[[豁然开朗]]"
+        },
+        {
+         "pos": "n.",
+         "mean": "[[（对计算机鼠标的）单击]]；[[咔嗒声]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“渴立刻”→ 他口渴了，打开电脑立刻“点击”网站购买水。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "I clicked on the link to the next page of the website.",
+      "zh": "我单击链接好翻到网站的下一页。",
+      "key": [
+       "clicked"
+      ]
+     },
+     "ext": []
+    }
+   ]
+  }
+ ]
+}

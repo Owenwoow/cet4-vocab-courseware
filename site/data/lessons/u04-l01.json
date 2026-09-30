@@ -1,0 +1,784 @@
+{
+  "id": "u04-l01",
+  "part": 1,
+  "unit": 4,
+  "lesson": 1,
+  "pages": [91, 99],
+  "groups": [
+    {
+      "no": 1,
+      "title": "serv(e)相关",
+      "pages": [91, 92],
+      "map": {
+        "w": "serv(e)相关",
+        "children": [
+          {"w": "observe", "children": [
+            {"w": "observation", "rel": "扩", "children": [{"w": "observer", "children": [{"w": "observant"}]}]},
+            {"w": "reserve", "rel": "形近", "children": [
+              {"w": "reservation", "rel": "扩"},
+              {"w": "reserved", "rel": "扩"}
+            ]},
+            {"w": "deserve", "rel": "形近"}
+          ]},
+          {"w": "conservative", "children": [{"w": "conserve", "rel": "扩"}]},
+          {"w": "preserve", "children": [
+            {"w": "preservation", "rel": "扩", "children": [{"w": "preservative"}]},
+            {"w": "protect", "rel": "近义", "children": [
+              {"w": "protection", "rel": "扩", "children": [{"w": "protective"}]},
+              {"w": "detect", "rel": "形近", "children": [
+                {"w": "detection", "rel": "扩", "children": [{"w": "detective"}]},
+                {"w": "scout", "rel": "近义"}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "observe", "freq": 3, "page": 91,
+          "prons": [{"ipa": "/əbˈzɜːv/", "senses": [{"pos": "v.", "mean": "[[观察]]；[[遵守]]；[[评论，评说]]"}]}],
+          "tip": {"type": "联想", "text": "ob-（表方向）+ serve（服务）→ 朝着一个方向为别人服务，要“观察”对方的需求，“遵守”对方的要求。"},
+          "ex": {"type": "真", "year": 2021, "en": "He observed his client's life and habits.", "zh": "他观察了客户的生活和习惯。", "key": ["observed"]},
+          "ext": [
+            {"word": "observation", "ipa": "/ˌɒbzəˈveɪʃn/", "senses": [{"pos": "n.", "mean": "观察；评论"}]},
+            {"word": "observer", "ipa": "/əbˈzɜːvə(r)/", "senses": [{"pos": "n.", "mean": "观察者；评论者"}]},
+            {"word": "observant", "ipa": "/əbˈzɜːvənt/", "senses": [{"pos": "adj.", "mean": "善于观察的；观察力敏锐的"}]}
+          ]
+        },
+        {
+          "no": 2, "word": "reserve", "freq": 3, "page": 91,
+          "prons": [{"ipa": "/rɪˈzɜːv/", "senses": [
+            {"pos": "v.", "mean": "[[保留]]；[[预订]]"},
+            {"pos": "n.", "mean": "[[储备（量）]]；[[保护区]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "re-（重复）+ serve（服务）→ 想重复接受该酒店的服务，需要重新“预订”房间，这样它才会为你“保留”足够的房间。"},
+          "ex": {"type": "真", "year": 2016, "en": "They use their money reserves to back up consumption.", "zh": "他们用他们的货币储备来支持消费。", "key": ["reserves"]},
+          "ext": [
+            {"word": "reservation", "ipa": "/ˌrezəˈveɪʃn/", "senses": [{"pos": "n.", "mean": "保留，预订"}]},
+            {"word": "reserved", "ipa": "/rɪˈzɜːvd/", "senses": [{"pos": "adj.", "mean": "内向的；矜持的"}]}
+          ]
+        },
+        {
+          "no": 3, "word": "deserve", "freq": 1, "page": 91,
+          "prons": [{"ipa": "/dɪˈzɜːv/", "senses": [{"pos": "v.", "mean": "[[值得]]；[[应受]]，[[应得]]"}]}],
+          "tip": {"type": "联想", "text": "de-（音似“弟”）+ serve（服务）→ 弟弟觉得为家人服务理所应当 → 应受，应得"},
+          "ex": {"type": "真", "year": 2016, "en": "Any product that promises to protect your home deserves careful examination.", "zh": "任何承诺保护您家的产品都值得仔细检查。", "key": ["deserves"]},
+          "ext": []
+        },
+        {
+          "no": 4, "word": "conservative", "freq": 1, "page": 91,
+          "prons": [{"ipa": "/kənˈsɜːvətɪv/", "senses": [
+            {"pos": "n.", "mean": "[[保守派]]，[[保守的人]]"},
+            {"pos": "adj.", "mean": "[[保守的]]，[[守旧的]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "They were deeply conservative in their outlook.", "zh": "他们的观点非常保守。", "key": ["conservative"]},
+          "ext": [
+            {"word": "conserve", "ipa": "/kənˈsɜːv/ /ˈkɒnsɜːv/", "senses": [
+              {"pos": "v.", "mean": "节约；保护；保存，保藏"},
+              {"pos": "n.", "mean": "果酱；蜜饯"}
+            ]}
+          ]
+        },
+        {
+          "no": 5, "word": "preserve", "freq": 3, "page": 91,
+          "prons": [{"ipa": "/prɪˈzɜːv/", "senses": [
+            {"pos": "v.", "mean": "[[保护]]；[[保留]]；[[保存]]"},
+            {"pos": "n.", "mean": "[[专属领域]]；[[独有活动]]；[[动物保护区]]"}
+          ]}],
+          "tip": {"type": "构词", "text": "pre-（提前）+ serve（保留）→ 保留；保存[servant 最初是俘虏中“保留下来”（serv）不杀“的人”（-ant），为胜利者服务 → serv(e) 服务；保留]"},
+          "ex": {"type": "真", "year": 2023, "en": "Hyphenating names allows the bride to preserve her own identity while respecting tradition.", "zh": "用连字符连接的名字可以让新娘在尊重传统的同时保留自己的身份。", "key": ["preserve"]},
+          "ext": [
+            {"word": "preservation", "ipa": "/ˌprezəˈveɪʃn/", "senses": [{"pos": "n.", "mean": "保护；保存；保留；保持"}]},
+            {"word": "preservative", "ipa": "/prɪˈzɜːvətɪv/", "senses": [
+              {"pos": "adj.", "mean": "保护的，保存的"},
+              {"pos": "n.", "mean": "防腐剂；保护剂"}
+            ]}
+          ]
+        },
+        {
+          "no": 6, "word": "protect", "freq": 1, "page": 92,
+          "prons": [{"ipa": "/prəˈtekt/", "senses": [{"pos": "v.", "mean": "[[保护]]；[[防护]]；[[防守]]"}]}],
+          "tip": {"type": "联想", "text": "pro-（提前）+ tect（音似“探个它”）→ 他提前把路探好是为了“保护”我们的安全。"},
+          "ex": {"type": "真", "year": 2016, "en": "The chief duty of every government is to protect persons and property.", "zh": "每一个政府的首要职责都是保护人民和财产。", "key": ["protect"]},
+          "ext": [
+            {"word": "protection", "ipa": "/prəˈtekʃn/", "senses": [{"pos": "n.", "mean": "保护；防卫；保护物"}]},
+            {"word": "protective", "ipa": "/prəˈtektɪv/", "senses": [{"pos": "adj.", "mean": "保护的；防护的"}]}
+          ]
+        },
+        {
+          "no": 7, "word": "detect", "freq": 3, "page": 92,
+          "prons": [{"ipa": "/dɪˈtekt/", "senses": [{"pos": "v.", "mean": "[[发现]]；[[查明]]；[[侦察出]]"}]}],
+          "tip": {"type": "联想", "text": "de-（往下）+ tect（音似“探个它”）→ 钻探工人往下钻井，是为了“查明”地下有无石油层。"},
+          "ex": {"type": "真", "year": 2016, "en": "The tests are designed to detect changes in mental function.", "zh": "这些测试旨在检测心理功能的变化。", "key": ["detect"]},
+          "ext": [
+            {"word": "detection", "ipa": "/dɪˈtekʃn/", "senses": [{"pos": "n.", "mean": "侦查；探测；察觉"}]},
+            {"word": "detective", "ipa": "/dɪˈtektɪv/", "senses": [{"pos": "n.", "mean": "侦探"}]}
+          ]
+        },
+        {
+          "no": 8, "word": "scout", "freq": 1, "page": 92,
+          "prons": [{"ipa": "/skaʊt/", "senses": [
+            {"pos": "n.", "mean": "[[侦查员]]；[[童子军]]"},
+            {"pos": "v.", "mean": "[[侦查]]，寻找；物色"}
+          ]}],
+          "tip": {"type": "联想", "text": "sc（音似“四个”）+ out（出去）→ 四个“侦查员”出去了。"},
+          "ex": {"type": "例", "en": "Both my brothers were scouts.", "zh": "我的两个哥哥都当过童子军。", "key": ["scouts"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "title": "“阻止、冻结”相关",
+      "pages": [92, 93],
+      "map": {
+        "w": "“阻止、冻结”相关",
+        "children": [
+          {"w": "prevent", "children": [
+            {"w": "prevention", "rel": "扩", "children": [{"w": "preventive"}]}
+          ]},
+          {"w": "forbid", "children": [
+            {"w": "bid", "rel": "同根", "children": [{"w": "bidding", "rel": "扩"}]},
+            {"w": "ban", "rel": "近义", "children": [{"w": "banner", "rel": "加 ner"}]},
+            {"w": "prohibit", "rel": "近义", "children": [
+              {"w": "prohibition", "rel": "扩"},
+              {"w": "prohibitive", "rel": "扩"},
+              {"w": "exhibit", "rel": "同根", "children": [
+                {"w": "exhibition", "rel": "扩"},
+                {"w": "display", "rel": "近义"}
+              ]}
+            ]}
+          ]},
+          {"w": "freeze", "children": [
+            {"w": "squeeze", "rel": "形近", "children": [
+              {"w": "breeze", "children": [
+                {"w": "breath", "rel": "近义", "children": [{"w": "breathe", "rel": "扩"}]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 9, "word": "prevent", "freq": 1, "page": 92,
+          "prons": [{"ipa": "/prɪˈvent/", "senses": [{"pos": "v.", "mean": "[[阻止]]；[[妨碍]]"}]}],
+          "tip": {"type": "联想", "text": "pre-（前）+ vent（音似 went）→ 在你前面走 → 阻止；妨碍"},
+          "ex": {"type": "例", "en": "It may prevent your business and career from advancing.", "zh": "它可能会阻碍你的事业和职业的发展。", "key": ["prevent", "from"]},
+          "ext": [
+            {"word": "prevention", "ipa": "/prɪˈvenʃn/", "senses": [{"pos": "n.", "mean": "预防；防止"}]},
+            {"word": "preventive", "ipa": "/prɪˈventɪv/", "senses": [{"pos": "adj.", "mean": "预防性的；防备的"}]}
+          ]
+        },
+        {
+          "no": 10, "word": "forbid", "freq": 1, "page": 92,
+          "prons": [{"ipa": "/fəˈbɪd/", "senses": [{"pos": "v.", "mean": "[[禁止]]，[[不准]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“封闭的”→ 封闭的地方是“禁止”入内的。"},
+          "ex": {"type": "例", "en": "These children are forbidden to visit terminally ill patients.", "zh": "这些儿童被禁止去探望绝症患者。", "key": ["forbidden"]},
+          "ext": []
+        },
+        {
+          "no": 11, "word": "bid", "freq": 1, "page": 92,
+          "prons": [{"ipa": "/bɪd/", "senses": [{"pos": "v. & n.", "mean": "[[出价]]；[[投标]]；[[努力争取]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“必得”→ 拍卖时竞拍者“出价”很高，志在必得。"},
+          "ex": {"type": "例", "en": "We deny our children's bids to help until they are 6 or 7 years old.", "zh": "我们拒绝孩子在 6 或 7 岁之前提供帮助。", "key": ["bids"]},
+          "ext": [{"word": "bidding", "ipa": "/ˈbɪdɪŋ/", "senses": [{"pos": "n.", "mean": "投标；（尤指拍卖中的）出价，喊价"}]}]
+        },
+        {
+          "no": 12, "word": "ban", "freq": 1, "page": 93,
+          "prons": [{"ipa": "/bæn/", "senses": [
+            {"pos": "n.", "mean": "[[禁令]]"},
+            {"pos": "v.", "mean": "[[（明令）禁止]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“扳”→“禁止”扳动这个把手。"},
+          "ex": {"type": "例", "en": "He plans to ban tipping in favor of paying his servers a wage.", "zh": "他计划禁止给服务员小费，而给他们支付工资。", "key": ["ban"]},
+          "ext": []
+        },
+        {
+          "no": 13, "word": "banner", "freq": 1, "page": 93,
+          "prons": [{"ipa": "/ˈbænə(r)/", "senses": [{"pos": "n.", "mean": "[[标语]]；[[横幅]]"}]}],
+          "tip": {"type": "联想", "text": "ban（禁止）+ n（联想“那”）+ -er（表示人的后缀）→ 为了禁止那个人这样做，他们贴了个“标语”。"},
+          "ex": {"type": "例", "en": "They carried banners and shouted angrily.", "zh": "他们高举横幅，愤怒声讨。", "key": ["banners"]},
+          "ext": []
+        },
+        {
+          "no": 14, "word": "prohibit", "freq": 2, "page": 93,
+          "prons": [{"ipa": "/prəˈhɪbɪt/", "senses": [{"pos": "v.", "mean": "[[禁止]]；[[阻止]]"}]}],
+          "tip": {"type": "联想", "text": "pro-（前）+ hibi（音似“狠逼”）+ t（联想“他”）→ 有人站在他前面，狠狠地逼他回去，“阻止”他前进。"},
+          "ex": {"type": "例", "en": "They prohibit agents from hiring models with a BMI below 18.", "zh": "他们禁止经纪公司雇用体重指数低于 18 的模特。", "key": ["prohibit", "from"]},
+          "ext": [
+            {"word": "prohibition", "ipa": "/ˌprəʊɪˈbɪʃn/", "senses": [{"pos": "n.", "mean": "禁止，阻止"}]},
+            {"word": "prohibitive", "ipa": "/prəˈhɪbətɪv/", "senses": [{"pos": "adj.", "mean": "禁止的"}]}
+          ]
+        },
+        {
+          "no": 15, "word": "exhibit", "freq": 3, "page": 93,
+          "prons": [{"ipa": "/ɪɡˈzɪbɪt/", "senses": [
+            {"pos": "n.", "mean": "[[（一件）展览品]]；[[证据]]"},
+            {"pos": "v.", "mean": "[[展览]]；[[表现]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "ex-（往外）+ hi（嗨）+ bit（联想“比她”）→ 他往外打了个招呼，炫耀自己的“展览品”比她多。"},
+          "ex": {"type": "例", "en": "His creative works were exhibited in the shop windows.", "zh": "他的创意作品在商店的橱窗里展览。", "key": ["exhibited"]},
+          "ext": [{"word": "exhibition", "ipa": "/ˌeksɪˈbɪʃn/", "senses": [{"pos": "n.", "mean": "展览；展出"}]}]
+        },
+        {
+          "no": 16, "word": "display", "freq": 3, "page": 93,
+          "prons": [{"ipa": "/dɪˈspleɪ/", "senses": [{"pos": "n. & v.", "mean": "[[陈列]]；[[展览]]；[[表现]]；（计算机屏幕上的）[[显示]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "His cooking displays became the symbol of fine French dining.", "zh": "他的烹饪展示成了法国美食的象征。", "key": ["displays"]},
+          "ext": []
+        },
+        {
+          "no": 17, "word": "freeze", "freq": 1, "page": 93,
+          "prons": [{"ipa": "/friːz/", "senses": [{"pos": "v.", "mean": "[[冻]]；[[冻结]]；[[使结冰]]"}]}],
+          "tip": {"type": "联想", "text": "free（自由）+ ze（联想“泽”）→ 他幻想沼泽“冻结”，这样就能在上面自由地行走。"},
+          "ex": {"type": "例", "en": "Water freezes at 0℃.", "zh": "水在 0 摄氏度时结冰。", "key": ["freezes"]},
+          "ext": []
+        },
+        {
+          "no": 18, "word": "breath", "freq": 1, "page": 93,
+          "prons": [{"ipa": "/breθ/", "senses": [{"pos": "n.", "mean": "[[呼吸]]；[[一口气]]；[[微风]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“不会死”→ 还有“呼吸”就不会死。"},
+          "ex": {"type": "例", "en": "We had to stop for breath before we got to the top.", "zh": "我们不得不喘口气，然后再登山顶。", "key": ["breath"]},
+          "ext": [{"word": "breathe", "ipa": "/briːð/", "senses": [{"pos": "v.", "mean": "呼吸；充满"}]}]
+        },
+        {
+          "no": 19, "word": "breeze", "freq": 1, "page": 93,
+          "prons": [{"ipa": "/briːz/", "senses": [{"pos": "n.", "mean": "[[微风]]；[[轻而易举的事]]"}]}],
+          "tip": {"type": "对照", "text": "微风（breeze）拂过冻结（freeze）的湖面，好像春天就要来了。"},
+          "ex": {"type": "例", "en": "The flowers were gently swaying in the breeze.", "zh": "花儿在微风中轻轻舞动。", "key": ["breeze"]},
+          "ext": []
+        },
+        {
+          "no": 20, "word": "squeeze", "freq": 2, "page": 93,
+          "prons": [{"ipa": "/skwiːz/", "senses": [{"pos": "v. & n.", "mean": "[[压]]；[[挤]]；[[捏]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“死贵死”→ 价格死（很）贵，要往下“压”价。"},
+          "ex": {"type": "例", "en": "We managed to squeeze six people into the car.", "zh": "我们设法把六个人挤进了那辆车。", "key": ["squeeze"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "title": "“膨胀、压缩”相关",
+      "pages": [94, 95],
+      "map": {
+        "w": "“膨胀、压缩”相关",
+        "children": [
+          {"w": "inflate", "children": [
+            {"w": "inflation", "rel": "扩"},
+            {"w": "flat", "rel": "去字母", "children": [{"w": "plot", "rel": "相关"}]}
+          ]},
+          {"w": "condense", "children": [
+            {"w": "condensation", "rel": "扩"},
+            {"w": "dense", "rel": "同根", "children": [
+              {"w": "density", "rel": "扩"},
+              {"w": "compact", "rel": "近义", "children": [
+                {"w": "impact", "rel": "形近", "children": [
+                  {"w": "influence", "rel": "近义", "children": [
+                    {"w": "influential", "rel": "扩"},
+                    {"w": "influenza", "rel": "形近"}
+                  ]},
+                  {"w": "exert", "rel": "相关", "children": [{"w": "exertion", "rel": "扩"}]}
+                ]}
+              ]}
+            ]},
+            {"w": "shrink", "rel": "相关", "children": [{"w": "fade", "rel": "相关"}]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 21, "word": "plot", "freq": 2, "page": 94,
+          "prons": [{"ipa": "/plɒt/", "senses": [
+            {"pos": "v.", "mean": "[[密谋]]；[[策划]]"},
+            {"pos": "n.", "mean": "[[故事情节]]；[[密谋]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“扑捞它”→ 包掉到河里了，不要直接扑进去捞它，而是要“策划”一下打捞方案。"},
+          "ex": {"type": "例", "en": "I forgot the plot of the movie.", "zh": "我忘记了电影情节。", "key": ["plot"]},
+          "ext": []
+        },
+        {
+          "no": 22, "word": "flat", "freq": 1, "page": 94,
+          "prons": [{"ipa": "/flæt/", "senses": [
+            {"pos": "adj.", "mean": "[[平坦的]]；[[无趣的]]；[[平淡的]]"},
+            {"pos": "n.", "mean": "[[公寓]]；[[单元房]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "fl（联想 fly）+ at（上面）→ 超人飞过来，停留在一块“平坦的”岩石上。"},
+          "ex": {"type": "真", "year": 2022, "en": "It has a flat surface at the top.", "zh": "顶部有一个平面。", "key": ["flat"]},
+          "ext": []
+        },
+        {
+          "no": 23, "word": "inflate", "freq": 1, "page": 94,
+          "prons": [{"ipa": "/ɪnˈfleɪt/", "senses": [{"pos": "v.", "mean": "[[使充气]]；[[膨胀]]；（使）[[涨价]]"}]}],
+          "tip": {"type": "联想", "text": "in（入）+ flat（平坦的）+ e → 使气体进入平坦的物体 → 使充气；膨胀"},
+          "ex": {"type": "例", "en": "Swimming circles can be inflated by machines.", "zh": "游泳圈可以用机器充气。", "key": ["inflated"]},
+          "ext": [{"word": "inflation", "ipa": "/ɪnˈfleɪʃn/", "senses": [{"pos": "n.", "mean": "通货膨胀；通胀率；充气"}]}]
+        },
+        {
+          "no": 24, "word": "dense", "freq": 1, "page": 94,
+          "prons": [{"ipa": "/dens/", "senses": [{"pos": "adj.", "mean": "[[密集的]]，[[稠密的]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“扽死”→ 方言，指东西怎么拽都拽不开，像乱麻一样稠密 → 稠密的"},
+          "ex": {"type": "例", "en": "Their first glimpse of the new land was a sight of dense woods.", "zh": "他们对这片新大陆的第一印象是茂密的树林。", "key": ["dense"]},
+          "ext": [{"word": "density", "ipa": "/ˈdensəti/", "senses": [{"pos": "n.", "mean": "密度"}]}]
+        },
+        {
+          "no": 25, "word": "condense", "freq": 1, "page": 94,
+          "prons": [{"ipa": "/kənˈdens/", "senses": [{"pos": "v.", "mean": "[[压缩]]；[[变浓]]"}]}],
+          "tip": {"type": "构词", "text": "con-（表加强）+ dense（稠密的）→ 使变得稠密 → 压缩；变浓"},
+          "ex": {"type": "例", "en": "The mayor was asked to condense his speech.", "zh": "市长被要求缩短他的讲话。", "key": ["condense"]},
+          "ext": [{"word": "condensation", "ipa": "/ˌkɒndenˈseɪʃn/", "senses": [{"pos": "n.", "mean": "冷凝，凝结"}]}]
+        },
+        {
+          "no": 26, "word": "shrink", "freq": 2, "page": 94,
+          "prons": [{"ipa": "/ʃrɪŋk/", "senses": [{"pos": "v.", "mean": "[[起皱]]；[[缩水]]；[[退缩]]；[[减少]]"}]}],
+          "tip": {"type": "联想", "text": "sh（联想“湿”）+ r（形似花）+ ink（墨水）→ 我的花毛衣被墨水弄湿了，洗了以后就“缩水”了。"},
+          "ex": {"type": "例", "en": "The market for their products is shrinking.", "zh": "市场对他们产品的需求在减少。", "key": ["shrinking"]},
+          "ext": []
+        },
+        {
+          "no": 27, "word": "fade", "freq": 1, "page": 94,
+          "prons": [{"ipa": "/feɪd/", "senses": [{"pos": "v.", "mean": "[[褪色]]，[[逐渐消失]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“废的”→ 那件羊毛衫洗了几次就“褪色”报废了。"},
+          "ex": {"type": "例", "en": "When students feel isolated, their motivation to continue begins to fade.", "zh": "当学生们感到被孤立时，他们继续学习的动力就会开始消退。", "key": ["fade"]},
+          "ext": []
+        },
+        {
+          "no": 28, "word": "compact", "freq": 1, "page": 94,
+          "prons": [{"ipa": "/kəmˈpækt/", "senses": [{"pos": "adj.", "mean": "[[紧凑的]]，[[紧密的]]"}]}],
+          "tip": {"type": "联想", "text": "com-（都）+ pact（音似“拍个它”）→ 我们做年糕时都杵白使劲拍，越拍就越紧实 → 紧密的"},
+          "ex": {"type": "例", "en": "The kitchen was small and compact so that the disabled could reach everything easily.", "zh": "厨房又小又紧凑，因此残疾人可以轻松地拿到所有东西。", "key": ["compact"]},
+          "ext": []
+        },
+        {
+          "no": 29, "word": "impact", "freq": 3, "page": 95,
+          "prons": [
+            {"ipa": "/ˈɪmpækt/", "senses": [{"pos": "n.", "mean": "[[碰撞]]；[[影响]]"}]},
+            {"ipa": "/ɪmˈpækt/", "senses": [{"pos": "v.", "mean": "[[撞击]]，[[冲击]]；[[影响]]"}]}
+          ],
+          "tip": {"type": "联想", "text": "im-（里面）+ pact（音似“拍个它”）→ 海水“撞击”海里的岩石，有种惊涛拍岸的感觉。"},
+          "ex": {"type": "真", "year": 2016, "en": "More studies are needed to find out the impact of emotion on behavior.", "zh": "需要更多的研究来发现情绪对行为的影响。", "key": ["impact"]},
+          "ext": []
+        },
+        {
+          "no": 30, "word": "influence", "freq": 1, "page": 95,
+          "prons": [{"ipa": "/ˈɪnfluəns/", "senses": [
+            {"pos": "n.", "mean": "[[影响]]；[[势力]]"},
+            {"pos": "v.", "mean": "[[影响]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "in-（里面）+ flu（流感）+ -ence（名词后缀）→ 家里的人得了流感，肯定会对其他人也产生一些“影响”。"},
+          "ex": {"type": "真", "year": 2016, "en": "Mothers' influence on children may last longer than fathers'.", "zh": "母亲对孩子的影响可能比父亲更持久。", "key": ["influence", "on"]},
+          "ext": [{"word": "influential", "ipa": "/ˌɪnfluˈenʃl/", "senses": [{"pos": "adj.", "mean": "有影响的；有权势的"}]}]
+        },
+        {
+          "no": 31, "word": "influenza", "freq": 1, "page": 95,
+          "prons": [{"ipa": "/ˌɪnfluˈenzə/", "senses": [{"pos": "n.", "mean": "[[流行性感冒]]；[[流感]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "He came down with influenza.", "zh": "他得了流感。", "key": ["influenza"]},
+          "ext": []
+        },
+        {
+          "no": 32, "word": "exert", "freq": 2, "page": 95,
+          "prons": [{"ipa": "/ɪɡˈzɜːt/", "senses": [{"pos": "v.", "mean": "[[运用]]；[[施加]]；[[努力]]；[[竭力]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“一个蛇他”→ 外面有条蛇，这件事给他“施加”了很大的压力。"},
+          "ex": {"type": "例", "en": "He exerted all his authority to make them accept the plan.", "zh": "他运用他的所有权力让他们接受这个计划。", "key": ["exerted"]},
+          "ext": [{"word": "exertion", "ipa": "/ɪɡˈzɜːʃn/", "senses": [{"pos": "n.", "mean": "努力；尽力；费力"}]}]
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "title": "“足够的”相关",
+      "pages": [95, 96],
+      "map": {
+        "w": "“足够的”相关",
+        "children": [
+          {"w": "affluent", "children": [
+            {"w": "affluence", "rel": "扩"},
+            {"w": "fluent", "rel": "形近", "children": [{"w": "fluency", "rel": "扩"}]},
+            {"w": "scarce", "rel": "反义", "children": [
+              {"w": "scarcely", "rel": "扩"},
+              {"w": "scarcity", "rel": "扩"},
+              {"w": "rare", "rel": "近义", "children": [
+                {"w": "rarely", "rel": "扩"},
+                {"w": "rarity", "rel": "扩"}
+              ]},
+              {"w": "lack", "rel": "相关"}
+            ]}
+          ]},
+          {"w": "adequate", "children": [
+            {"w": "adequacy", "rel": "扩"},
+            {"w": "adequately", "rel": "扩"},
+            {"w": "equivalent", "rel": "相关", "children": [
+              {"w": "equivalence", "rel": "扩"},
+              {"w": "equal", "rel": "扩"},
+              {"w": "equally", "rel": "扩"},
+              {"w": "equality", "rel": "扩"},
+              {"w": "equation", "rel": "扩"}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 33, "word": "fluent", "freq": 1, "page": 95,
+          "prons": [{"ipa": "/ˈfluːənt/", "senses": [{"pos": "adj.", "mean": "[[流利的]]，[[流畅的]]"}]}],
+          "tip": {"type": "联想", "text": "flu（联想 fly）+ ent（联想 enter）→ 燕子飞进来的动作是“流畅的”。"},
+          "ex": {"type": "例", "en": "Some employees are fluent in a second language.", "zh": "一些员工能流利地使用第二语言。", "key": ["fluent", "in"]},
+          "ext": [{"word": "fluency", "ipa": "/ˈfluːənsi/", "senses": [{"pos": "n.", "mean": "流利，流畅；熟练"}]}]
+        },
+        {
+          "no": 34, "word": "affluent", "freq": 1, "page": 95,
+          "prons": [{"ipa": "/ˈæfluənt/", "senses": [{"pos": "adj.", "mean": "[[富裕的]]，[[富足的]]"}]}],
+          "tip": {"type": "联想", "text": "af-（一再地）+ fluent（流畅的）→ 一个“富裕的”人可能事事顺畅。"},
+          "ex": {"type": "真", "year": 2022, "en": "They enjoyed a fairly affluent life.", "zh": "他们过着相当富裕的生活。", "key": ["affluent"]},
+          "ext": [{"word": "affluence", "ipa": "/ˈæfluəns/", "senses": [{"pos": "n.", "mean": "富裕"}]}]
+        },
+        {
+          "no": 35, "word": "lack", "freq": 1, "page": 95,
+          "prons": [{"ipa": "/læk/", "senses": [
+            {"pos": "n.", "mean": "[[缺乏]]；[[匮乏]]；[[短缺]]"},
+            {"pos": "v.", "mean": "[[没有]]；[[短缺]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“来客”→ 她的小面馆因“缺乏”宣传，“没有”来客人。"},
+          "ex": {"type": "真", "year": 2024, "en": "They may lack adequate knowledge of healthy food.", "zh": "他们可能缺乏足够的健康食品知识。", "key": ["lack"]},
+          "ext": []
+        },
+        {
+          "no": 36, "word": "scarce", "freq": 1, "page": 95,
+          "prons": [{"ipa": "/skeəs/", "senses": [{"pos": "adj.", "mean": "[[缺乏的]]；[[不足的]]；[[稀少的]]"}]}],
+          "tip": {"type": "联想", "text": "s（联想“死”）+ car（车）+ ce（联想“侧”）→ 他拼死侧身挤上了车，因为车太少了 → 稀少的"},
+          "ex": {"type": "真", "year": 2016, "en": "In college, time is scarce, and consequently, very precious.", "zh": "在大学里，时间很少，因此也非常珍贵。", "key": ["scarce"]},
+          "ext": [
+            {"word": "scarcity", "ipa": "/ˈskeəsəti/", "senses": [{"pos": "n.", "mean": "缺乏，稀少"}]},
+            {"word": "scarcely", "ipa": "/ˈskeəsli/", "senses": [{"pos": "adv.", "mean": "几乎不，简直不"}]}
+          ]
+        },
+        {
+          "no": 37, "word": "rare", "freq": 1, "page": 96,
+          "prons": [{"ipa": "/reə(r)/", "senses": [{"pos": "adj.", "mean": "[[稀少的]]；[[珍贵的]]；（肉类）[[三分熟的]]"}]}],
+          "tip": {"type": "联想", "text": "r（形似花）+ are（是）→ 这种花是很“稀少的”。"},
+          "ex": {"type": "例", "en": "Physical books will become much rarer in the marketplace.", "zh": "实体书籍在市场上会变得更加罕见。", "key": ["rarer"]},
+          "ext": [
+            {"word": "rarely", "ipa": "/ˈreəli/", "senses": [{"pos": "adv.", "mean": "罕有，很少；不常"}]},
+            {"word": "rarity", "ipa": "/ˈreərəti/", "senses": [{"pos": "n.", "mean": "珍品，稀有物；稀有，罕见"}]}
+          ]
+        },
+        {
+          "no": 38, "word": "adequate", "freq": 1, "page": 96,
+          "prons": [{"ipa": "/ˈædɪkwət/", "senses": [{"pos": "adj.", "mean": "[[足够的]]；[[充足的]]；[[合格的]]"}]}],
+          "tip": {"type": "构词", "text": "ad-（= to）+ equ（= equal）+ -ate（后缀）→ 趋向相等的 → 足够的"},
+          "ex": {"type": "真", "year": 2021, "en": "The basics of adequate sleep, healthy diet and exercise are a good place to start.", "zh": "充足的睡眠、健康的饮食和锻炼这些基本因素是一个很好的开始。", "key": ["adequate"]},
+          "ext": [
+            {"word": "adequacy", "ipa": "/ˈædɪkwəsi/", "senses": [{"pos": "n.", "mean": "足够"}]},
+            {"word": "adequately", "ipa": "/ˈædɪkwətli/", "senses": [{"pos": "adv.", "mean": "足够地；合格地"}]}
+          ]
+        },
+        {
+          "no": 39, "word": "equivalent", "freq": 1, "page": 96,
+          "prons": [{"ipa": "/ɪˈkwɪvələnt/", "senses": [
+            {"pos": "n.", "mean": "[[相等的东西]]；[[等量]]"},
+            {"pos": "adj.", "mean": "[[相等的]]，[[相同的]]"}
+          ]}],
+          "tip": {"type": "构词", "text": "equi（= equal）+ val（= value）+ -ent（后缀）→ 相等价值的 → 相等的，相同的"},
+          "ex": {"type": "真", "year": 2017, "en": "The caffeine—the equivalent of two strong cups of coffee—was sufficient to reverse this effect.", "zh": "咖啡因——相当于两杯浓咖啡——足以扭转这种影响。", "key": ["equivalent"]},
+          "ext": [
+            {"word": "equivalence", "ipa": "/ɪˈkwɪvələns/", "senses": [{"pos": "n.", "mean": "相等；等值"}]},
+            {"word": "equal", "ipa": "/ˈiːkwəl/", "senses": [
+              {"pos": "adj.", "mean": "相同的；相等的；平等的"},
+              {"pos": "n.", "mean": "同等的人；相等物"},
+              {"pos": "v.", "mean": "等于；比得上"}
+            ]},
+            {"word": "equally", "ipa": "/ˈiːkwəli/", "senses": [{"pos": "adv.", "mean": "平等地；同样地"}]},
+            {"word": "equality", "ipa": "/iˈkwɒləti/", "senses": [{"pos": "n.", "mean": "平等；均等；相等"}]},
+            {"word": "equation", "ipa": "/ɪˈkweɪʒn/", "senses": [{"pos": "n.", "mean": "方程，等式；相等"}]}
+          ]
+        }
+      ]
+    },
+    {
+      "no": 5,
+      "title": "“紧张、感觉”相关",
+      "pages": [96, 98],
+      "map": {
+        "w": "“紧张、感觉”相关",
+        "children": [
+          {"w": "tense", "children": [
+            {"w": "tension", "rel": "扩"},
+            {"w": "intense", "rel": "近义", "children": [
+              {"w": "intensity", "rel": "扩", "children": [
+                {"w": "intensify", "children": [{"w": "intensive"}]}
+              ]}
+            ]}
+          ]},
+          {"w": "sense", "children": [
+            {"w": "sensor", "rel": "扩", "children": [
+              {"w": "sensible", "children": [
+                {"w": "sensitive", "children": [{"w": "sensitivity", "rel": "扩"}]}
+              ]}
+            ]},
+            {"w": "nonsense", "rel": "加前缀"},
+            {"w": "mental", "rel": "相关", "children": [
+              {"w": "mentality", "rel": "扩"},
+              {"w": "fundamental", "rel": "加字母", "children": [
+                {"w": "total", "rel": "相关", "children": [
+                  {"w": "digital", "rel": "相关", "children": [{"w": "digit", "rel": "扩"}]}
+                ]},
+                {"w": "vital", "children": [
+                  {"w": "vitality", "rel": "扩"},
+                  {"w": "crucial", "rel": "近义"}
+                ]},
+                {"w": "fatal", "children": [{"w": "fatality", "rel": "扩"}]}
+              ]},
+              {"w": "talent", "rel": "相关", "children": [{"w": "talented", "rel": "扩"}]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 40, "word": "tense", "freq": 1, "page": 96,
+          "prons": [{"ipa": "/tens/", "senses": [
+            {"pos": "adj.", "mean": "[[紧张的]]"},
+            {"pos": "v.", "mean": "[[紧张]]，[[紧绷]]"},
+            {"pos": "n.", "mean": "[[时态]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "ten（十）+ se（联想“蛇”）→ 他放学路上看到十条蛇，感到极其“紧张”。"},
+          "ex": {"type": "例", "en": "The atmosphere in the meeting was getting more and more tense.", "zh": "会议的气氛越来越紧张。", "key": ["tense"]},
+          "ext": [{"word": "tension", "ipa": "/ˈtenʃn/", "senses": [{"pos": "n.", "mean": "紧张；矛盾；拉伸；张力"}]}]
+        },
+        {
+          "no": 41, "word": "intensive", "freq": 2, "page": 96,
+          "prons": [{"ipa": "/ɪnˈtensɪv/", "senses": [{"pos": "adj.", "mean": "[[集中的]]，[[加强的]]；[[密集的]]"}]}],
+          "tip": {"type": "构词", "text": "in-（向内）+ tens(e)（伸展）+ -ive（形容词后缀）→ 集中的，加强的"},
+          "ex": {"type": "例", "en": "There have been intensive discussions between the two governments in recent days.", "zh": "近几天，双方政府一直在进行集中的磋商。", "key": ["intensive"]},
+          "ext": []
+        },
+        {
+          "no": 42, "word": "intense", "freq": 3, "page": 97,
+          "prons": [{"ipa": "/ɪnˈtens/", "senses": [{"pos": "adj.", "mean": "[[紧张的]]；[[激烈的]]；[[十分强烈的]]"}]}],
+          "tip": {"type": "构词", "text": "in-（向内）+ tense（伸展 → 拉紧，紧张）→ 紧张的；激烈的"},
+          "ex": {"type": "例", "en": "It was a period of intense activity.", "zh": "那是活动激烈的时期。", "key": ["intense"]},
+          "ext": [
+            {"word": "intensity", "ipa": "/ɪnˈtensəti/", "senses": [{"pos": "n.", "mean": "强烈，剧烈；紧张"}]},
+            {"word": "intensify", "ipa": "/ɪnˈtensɪfaɪ/", "senses": [{"pos": "v.", "mean": "增强，加剧"}]}
+          ]
+        },
+        {
+          "no": 43, "word": "sense", "freq": 1, "page": 97,
+          "prons": [{"ipa": "/sens/", "senses": [
+            {"pos": "n.", "mean": "[[感觉]]；[[见识]]；[[理解力]]；[[意义]]"},
+            {"pos": "v.", "mean": "[[感觉到]]；[[觉察到]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“神似”→ 有人说我长得神似明星，那只是他们的“感觉”而已。"},
+          "ex": {"type": "真", "year": 2017, "en": "She connected with her sense of purpose and dug deep, cultivating a tremendous sense of strength.", "zh": "她与自己的使命感联系在一起，深入挖掘，培养了一种巨大的力量感。", "key": ["sense of"]},
+          "ext": [{"word": "sensor", "ipa": "/ˈsensə(r)/", "senses": [{"pos": "n.", "mean": "传感器，敏感元件"}]}]
+        },
+        {
+          "no": 44, "word": "sensitive", "freq": 3, "page": 97,
+          "prons": [{"ipa": "/ˈsensətɪv/", "senses": [{"pos": "adj.", "mean": "[[敏感的]]；[[脆弱的]]"}]}],
+          "tip": {"type": "对照", "text": "sense n.感觉；见识 → sensitive adj."},
+          "ex": {"type": "真", "year": 2019, "en": "They are becoming rather sensitive issues.", "zh": "它们正在成为相当敏感的话题。", "key": ["sensitive"]},
+          "ext": [{"word": "sensitivity", "ipa": "/ˌsensəˈtɪvəti/", "senses": [{"pos": "n.", "mean": "体贴；敏感性；灵敏度"}]}]
+        },
+        {
+          "no": 45, "word": "nonsense", "freq": 2, "page": 97,
+          "prons": [{"ipa": "/ˈnɒnsns/", "senses": [{"pos": "n.", "mean": "[[废话]]，[[胡说]]；[[荒谬的想法]]"}]}],
+          "tip": {"type": "构词", "text": "non-（无）+ sense（意义）→ 无意义的话 → 废话，胡说"},
+          "ex": {"type": "例", "en": "It's nonsense to say they don't care.", "zh": "说他们不在意那是胡说八道。", "key": ["nonsense"]},
+          "ext": []
+        },
+        {
+          "no": 46, "word": "sensible", "freq": 2, "page": 97,
+          "prons": [{"ipa": "/ˈsensəbl/", "senses": [{"pos": "adj.", "mean": "[[明智的]]；[[感觉得到的]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Less stressed people made more sensible decisions.", "zh": "压力较小的人做决定更为明智。", "key": ["sensible"]},
+          "ext": []
+        },
+        {
+          "no": 47, "word": "mental", "freq": 1, "page": 97,
+          "prons": [{"ipa": "/ˈmentl/", "senses": [{"pos": "adj.", "mean": "[[精神的]]，[[智力的]]；[[思想的]]"}]}],
+          "tip": {"type": "联想", "text": "men（人）+ tal（联想“头”）→ 人的头脑就是“精神的”载体。"},
+          "ex": {"type": "真", "year": 2016, "en": "What mattered most was the residents' physical health and mental status.", "zh": "最重要的是居民的身体健康和精神状态。", "key": ["mental"]},
+          "ext": [{"word": "mentality", "ipa": "/menˈtæləti/", "senses": [{"pos": "n.", "mean": "心态；思想状况；思想方法"}]}]
+        },
+        {
+          "no": 48, "word": "fundamental", "freq": 1, "page": 97,
+          "prons": [{"ipa": "/ˌfʌndəˈmentl/", "senses": [
+            {"pos": "adj.", "mean": "[[基础的]]，[[根本的]]；[[重要的]]"},
+            {"pos": "n.", "mean": "（pl.）[[基本原则]]，[[基本原理]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "fund（资金）+ a（一）+ mental（精神的）→ 除了资金需求以外，一个人精神的满足也是他“基础的”需要。"},
+          "ex": {"type": "例", "en": "Hard work is fundamental to success.", "zh": "勤奋工作是成功的基础。", "key": ["fundamental"]},
+          "ext": []
+        },
+        {
+          "no": 49, "word": "fatal", "freq": 2, "page": 97,
+          "prons": [{"ipa": "/ˈfeɪtl/", "senses": [{"pos": "adj.", "mean": "[[严重的]]；[[致命的]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“肥头”→ 肥头（大头）病是很“严重的”病。"},
+          "ex": {"type": "例", "en": "The research is starting to show that early setbacks don't have to be fatal.", "zh": "这项研究开始表明，早期的挫折不一定是致命的。", "key": ["fatal"]},
+          "ext": [{"word": "fatality", "ipa": "/fəˈtæləti/", "senses": [{"pos": "n.", "mean": "致命性；死亡；宿命"}]}]
+        },
+        {
+          "no": 50, "word": "total", "freq": 1, "page": 97,
+          "prons": [{"ipa": "/ˈtəʊtl/", "senses": [
+            {"pos": "adj.", "mean": "[[总的]]，[[全部的]]"},
+            {"pos": "n.", "mean": "[[总数]]，[[总计]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“头头”→ 一个一个头地数，最后得出“总数”是多少。"},
+          "ex": {"type": "例", "en": "All the people we interviewed expressed almost total satisfaction with it.", "zh": "我们采访的所有人对此都表示非常满意。", "key": ["total"]},
+          "ext": []
+        },
+        {
+          "no": 51, "word": "digital", "freq": 3, "page": 98,
+          "prons": [{"ipa": "/ˈdɪdʒɪtl/", "senses": [{"pos": "adj.", "mean": "[[数字的]]，[[数码的]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“低着头”→ 上课时不要总低着头看数码产品 → 数字的，数码的"},
+          "ex": {"type": "例", "en": "Digital technology makes it easier for people to coordinate their activities.", "zh": "数字技术使人们更容易协调他们的活动。", "key": ["Digital"]},
+          "ext": [{"word": "digit", "ipa": "/ˈdɪdʒɪt/", "senses": [{"pos": "n.", "mean": "数字；数位；手指；脚趾"}]}]
+        },
+        {
+          "no": 52, "word": "talent", "freq": 3, "page": 98,
+          "prons": [{"ipa": "/ˈtælənt/", "senses": [{"pos": "n.", "mean": "[[天赋]]，[[才能]]，[[天才]]"}]}],
+          "tip": {"type": "联想", "text": "ta（联想“他”）+ lent（借给）→ 他总是把好点子借给我，说明他很有“天赋”。"},
+          "ex": {"type": "例", "en": "Teaching is talent and practice; it is not something that just anyone can be good at.", "zh": "教学是天赋，是实践；这不是任何人都能擅长的事情。", "key": ["talent"]},
+          "ext": [{"word": "talented", "ipa": "/ˈtæləntɪd/", "senses": [{"pos": "adj.", "mean": "有才能的；天才的"}]}]
+        },
+        {
+          "no": 53, "word": "vital", "freq": 3, "page": 98,
+          "prons": [{"ipa": "/ˈvaɪtl/", "senses": [{"pos": "adj.", "mean": "[[至关重要的]]；[[必不可少的]]"}]}],
+          "tip": {"type": "联想", "text": "vi（形似罗马数字 6）+ tal（音似“头”）→ 这 6 个人很有头脑，他们的地位都是“至关重要的”。"},
+          "ex": {"type": "真", "year": 2017, "en": "We will lose a vital part of what has made humanity as a whole so successful as a species.", "zh": "我们将失去使人类作为一个物种整体取得如此成功的一个重要部分。", "key": ["vital"]},
+          "ext": [{"word": "vitality", "ipa": "/vaɪˈtæləti/", "senses": [{"pos": "n.", "mean": "生命力；活力；热情"}]}]
+        },
+        {
+          "no": 54, "word": "crucial", "freq": 3, "page": 98,
+          "prons": [{"ipa": "/ˈkruːʃl/", "senses": [{"pos": "adj.", "mean": "[[至关重要的]]；[[关键性的]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“可入手”→ 可入手的东西一般都是“至关重要的”。"},
+          "ex": {"type": "真", "year": 2024, "en": "It proves crucial in making others follow one's course of action.", "zh": "这证明，使他人遵循自己的行动方针是至关重要的。", "key": ["crucial"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 6,
+      "title": "tain 相关",
+      "pages": [98, 99],
+      "map": {
+        "w": "tain 相关",
+        "children": [
+          {"w": "attain", "children": [{"w": "attainment", "rel": "扩"}]},
+          {"w": "contain", "children": [
+            {"w": "container", "rel": "扩", "children": [{"w": "containment"}]},
+            {"w": "contaminate", "rel": "形近", "children": [
+              {"w": "contamination", "rel": "扩", "children": [
+                {"w": "pollution", "rel": "近义", "children": [
+                  {"w": "pollute", "rel": "扩"},
+                  {"w": "pollutant", "rel": "扩"}
+                ]}
+              ]},
+              {"w": "dirty", "rel": "近义", "children": [{"w": "dirt", "rel": "扩"}]}
+            ]}
+          ]},
+          {"w": "retain", "children": [{"w": "retention", "rel": "扩"}]},
+          {"w": "maintain", "children": [
+            {"w": "maintenance", "rel": "扩"},
+            {"w": "sustain", "rel": "近义", "children": [
+              {"w": "sustainable", "rel": "扩", "children": [{"w": "sustainability"}]}
+            ]}
+          ]},
+          {"w": "entertain", "children": [
+            {"w": "entertainment", "rel": "扩", "children": [{"w": "entertaining"}]}
+          ]},
+          {"w": "obtain", "children": [{"w": "obtainment", "rel": "扩"}]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 55, "word": "attain", "freq": 1, "page": 98,
+          "prons": [{"ipa": "/əˈteɪn/", "senses": [{"pos": "v.", "mean": "[[达到]]；[[获得]]"}]}],
+          "tip": {"type": "联想", "text": "at-（一再地）+ tain（= take）→ 他“获得”了喜欢的东西，一再地拿着。"},
+          "ex": {"type": "例", "en": "Most of our students attained five \"A\" grades in their exams.", "zh": "我们多数学生的考试成绩是五个优。", "key": ["attained"]},
+          "ext": [{"word": "attainment", "ipa": "/əˈteɪnmənt/", "senses": [{"pos": "n.", "mean": "达到；成就"}]}]
+        },
+        {
+          "no": 56, "word": "contain", "freq": 1, "page": 98,
+          "prons": [{"ipa": "/kənˈteɪn/", "senses": [{"pos": "v.", "mean": "[[包含]]；[[控制]]；[[容纳]]"}]}],
+          "tip": {"type": "构词", "text": "con-（所有）+ tain（= take）→ 把所有东西都拿着 → 包含；容纳"},
+          "ex": {"type": "真", "year": 2019, "en": "These studies showed that their water did contain microplastics.", "zh": "这些研究表明，他们的水确实含有微塑料。", "key": ["contain"]},
+          "ext": [
+            {"word": "container", "ipa": "/kənˈteɪnə(r)/", "senses": [{"pos": "n.", "mean": "容器；集装箱；货柜"}]},
+            {"word": "containment", "ipa": "/kənˈteɪnmənt/", "senses": [{"pos": "n.", "mean": "控制；抑制"}]}
+          ]
+        },
+        {
+          "no": 57, "word": "contaminate", "freq": 1, "page": 99,
+          "prons": [{"ipa": "/kənˈtæmɪneɪt/", "senses": [{"pos": "v.", "mean": "[[弄脏]]；[[污染]]；[[玷污]]"}]}],
+          "tip": {"type": "联想", "text": "con-（所有）+ tamin（联想“他们”）+ ate（吃）→ 他们吃的所有东西都被“污染”了。"},
+          "ex": {"type": "例", "en": "These substances can contaminate groundwater.", "zh": "这些物质会污染地下水。", "key": ["contaminate"]},
+          "ext": [{"word": "contamination", "ipa": "/kənˌtæmɪˈneɪʃn/", "senses": [{"pos": "n.", "mean": "污染；毒害；玷污"}]}]
+        },
+        {
+          "no": 58, "word": "dirty", "freq": 1, "page": 99,
+          "prons": [{"ipa": "/ˈdɜːti/", "senses": [
+            {"pos": "adj.", "mean": "[[肮脏的]]；[[下流的]]"},
+            {"pos": "v.", "mean": "[[弄脏]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "They are often seen as dirty birds.", "zh": "它们经常被视为肮脏的鸟类。", "key": ["dirty"]},
+          "ext": [{"word": "dirt", "ipa": "/dɜːt/", "senses": [{"pos": "n.", "mean": "污物，烂泥"}]}]
+        },
+        {
+          "no": 59, "word": "pollution", "freq": 1, "page": 99,
+          "prons": [{"ipa": "/pəˈluːʃn/", "senses": [{"pos": "n.", "mean": "[[污染]]；[[污染物]]；[[垃圾]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“破路深”→ 这条破路深处有很多“污染物”。"},
+          "ex": {"type": "真", "year": 2018, "en": "Millions die early from air pollution each year.", "zh": "每年数百万人因空气污染而早逝。", "key": ["pollution"]},
+          "ext": [
+            {"word": "pollutant", "ipa": "/pəˈluːtənt/", "senses": [{"pos": "n.", "mean": "污染物；污染物质"}]},
+            {"word": "pollute", "ipa": "/pəˈluːt/", "senses": [{"pos": "v.", "mean": "弄脏，污染"}]}
+          ]
+        },
+        {
+          "no": 60, "word": "retain", "freq": 2, "page": 99,
+          "prons": [{"ipa": "/rɪˈteɪn/", "senses": [{"pos": "v.", "mean": "[[保持]]，[[保留]]；[[雇]]；[[记住]]"}]}],
+          "tip": {"type": "构词", "text": "re-（回，复）+ tain（保持）→ 保持，保留"},
+          "ex": {"type": "例", "en": "The house retains much of its original charm.", "zh": "这所房子保留了许多原有的魅力。", "key": ["retains"]},
+          "ext": [{"word": "retention", "ipa": "/rɪˈtenʃn/", "senses": [{"pos": "n.", "mean": "保持；保留"}]}]
+        },
+        {
+          "no": 61, "word": "maintain", "freq": 3, "page": 99,
+          "prons": [{"ipa": "/meɪnˈteɪn/", "senses": [{"pos": "v.", "mean": "[[维持]]；[[维修]]；[[认为]]"}]}],
+          "tip": {"type": "联想", "text": "main（主要的）+ tain（保持）→ 我们的生活主要是靠他拿钱“维持”的。"},
+          "ex": {"type": "例", "en": "The best way to maintain good blood circulation is through using the brain.", "zh": "保持良好血液循环的最佳方法是使用大脑。", "key": ["maintain"]},
+          "ext": [{"word": "maintenance", "ipa": "/ˈmeɪntənəns/", "senses": [{"pos": "n.", "mean": "维护；保养；维持"}]}]
+        },
+        {
+          "no": 62, "word": "entertain", "freq": 3, "page": 99,
+          "prons": [{"ipa": "/ˌentəˈteɪn/", "senses": [{"pos": "v.", "mean": "（尤指在自己家中）[[招待]]，[[款待]]；[[娱乐]]"}]}],
+          "tip": {"type": "联想", "text": "enter（进来）+ tain（= take）→ 他进来就一直拿着麦克风唱，只顾“娱乐”自己。"},
+          "ex": {"type": "真", "year": 2017, "en": "Visiting a bookshop as curiosity leads us can be a good way to entertain ourselves.", "zh": "我们在好奇心的引导下去书店是一种很好的娱乐方式。", "key": ["entertain"]},
+          "ext": [
+            {"word": "entertainment", "ipa": "/ˌentəˈteɪnmənt/", "senses": [{"pos": "n.", "mean": "娱乐活动；招待"}]},
+            {"word": "entertaining", "ipa": "/ˌentəˈteɪnɪŋ/", "senses": [{"pos": "adj.", "mean": "娱乐的；使人愉快的"}]}
+          ]
+        },
+        {
+          "no": 63, "word": "sustain", "freq": 1, "page": 99,
+          "prons": [{"ipa": "/səˈsteɪn/", "senses": [{"pos": "v.", "mean": "[[维持]]；[[支撑]]，[[承担]]"}]}],
+          "tip": {"type": "构词", "text": "sus-（下面）+ tain（保持）→ 从下面保持 → 维持；支撑"},
+          "ex": {"type": "真", "year": 2019, "en": "Some of those small mammals help to sustain such big birds as golden eagles.", "zh": "有些小型哺乳动物有助于维持像金雕这样的大型鸟类的生存。", "key": ["sustain"]},
+          "ext": [
+            {"word": "sustainable", "ipa": "/səˈsteɪnəbl/", "senses": [{"pos": "adj.", "mean": "可持续的"}]},
+            {"word": "sustainability", "ipa": "/səˌsteɪnəˈbɪləti/", "senses": [{"pos": "n.", "mean": "可持续性"}]}
+          ]
+        },
+        {
+          "no": 64, "word": "obtain", "freq": 3, "page": 99,
+          "prons": [{"ipa": "/əbˈteɪn/", "senses": [{"pos": "v.", "mean": "[[获得]]，[[得到]]"}]}],
+          "tip": {"type": "构词", "text": "ob-（表方向）+ tain（= take）→ 朝着某个方向拿 → 获得，得到"},
+          "ex": {"type": "例", "en": "Help it to obtain financial support from industry.", "zh": "帮助其获得行业的资金支持。", "key": ["obtain"]},
+          "ext": [{"word": "obtainment", "ipa": "/əbˈteɪnmənt/", "senses": [{"pos": "n.", "mean": "获得"}]}]
+        }
+      ]
+    }
+  ]
+}

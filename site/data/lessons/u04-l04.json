@@ -1,0 +1,653 @@
+{
+  "id": "u04-l04",
+  "part": 1,
+  "unit": 4,
+  "lesson": 4,
+  "pages": [115, 122],
+  "groups": [
+    {
+      "no": 17,
+      "title": "pose 相关",
+      "pages": [115, 117],
+      "map": {
+        "w": "pose 相关",
+        "children": [
+          {"w": "posture"},
+          {"w": "expose", "children": [{"w": "exposure", "rel": "扩"}]},
+          {"w": "dispose", "children": [
+            {"w": "disposal", "rel": "扩"},
+            {"w": "rid", "rel": "近义"},
+            {"w": "deposit", "rel": "形近"}
+          ]},
+          {"w": "suppose", "children": [
+            {"w": "supposedly", "rel": "扩", "children": [{"w": "supposition"}]}
+          ]},
+          {"w": "compose", "children": [
+            {"w": "composer", "rel": "扩", "children": [{"w": "composition"}]},
+            {"w": "component", "rel": "相关"}
+          ]},
+          {"w": "impose", "children": [
+            {"w": "imposition", "rel": "扩", "children": [{"w": "imposing"}]}
+          ]},
+          {"w": "oppose", "children": [
+            {"w": "opposition", "rel": "扩", "children": [{"w": "opponent", "children": [{"w": "opposite"}]}]},
+            {"w": "rival", "rel": "相关", "children": [{"w": "rivalry", "rel": "扩"}]},
+            {"w": "position", "rel": "相关", "children": [{"w": "positive", "rel": "形近"}]}
+          ]},
+          {"w": "propose", "children": [
+            {"w": "proposal", "rel": "扩", "children": [{"w": "proposition"}]},
+            {"w": "counsel", "rel": "近义", "children": [{"w": "counsellor", "rel": "扩"}]},
+            {"w": "purpose", "rel": "形近", "children": [{"w": "purposeful", "rel": "扩"}]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "pose", "freq": 2, "page": 115,
+          "prons": [{"ipa": "/pəʊz/", "senses": [
+            {"pos": "n.", "mean": "（为画像、拍照等摆的）[[姿势]]"},
+            {"pos": "v.", "mean": "[[摆姿势]]；[[造成]]；引起"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2016, "en": "It poses a great challenge for customers to do math.", "zh": "对客户来说算数是一项很大的挑战。", "key": ["poses"]},
+          "ext": []
+        },
+        {
+          "no": 2, "word": "posture", "freq": 1, "page": 115,
+          "prons": [{"ipa": "/ˈpɒstʃə(r)/", "senses": [{"pos": "n.", "mean": "[[姿势，态度]]；[[立场]]"}]}],
+          "tip": {"type": "对照", "text": "pose v.摆姿势 → posture n."},
+          "ex": {"type": "例", "en": "Back pains can be the result of bad posture.", "zh": "背疼可能是不良姿势造成的。", "key": ["posture"]},
+          "ext": []
+        },
+        {
+          "no": 3, "word": "expose", "freq": 2, "page": 115,
+          "prons": [{"ipa": "/ɪkˈspəʊz/", "senses": [{"pos": "v.", "mean": "[[（使）暴露]]；[[使接触]]；[[揭露]]；[[曝光]]"}]}],
+          "tip": {"type": "构词", "text": "ex-（向外）+ pose（摆放）→（使）暴露；揭露"},
+          "ex": {"type": "例", "en": "My job as a journalist is to expose the truth.", "zh": "我作为记者的职责就是揭露真相。", "key": ["expose"]},
+          "ext": [{"word": "exposure", "ipa": "/ɪkˈspəʊʒə(r)/", "senses": [{"pos": "n.", "mean": "暴露；揭发；亮相"}]}]
+        },
+        {
+          "no": 4, "word": "dispose", "freq": 1, "page": 115,
+          "prons": [{"ipa": "/dɪˈspəʊz/", "senses": [{"pos": "v.", "mean": "[[处置]]；[[布置]]；[[排列]]；[[安排]]；[[使倾向于]]；[[去掉]]"}]}],
+          "tip": {"type": "构词", "text": "dis-（分开）+ pose（摆放）→布置；排列"},
+          "ex": {"type": "例", "en": "They find it difficult to dispose of their old-style furniture.", "zh": "他们发现很难处置他们的旧式家具。", "key": ["dispose of"]},
+          "ext": [{"word": "disposal", "ipa": "/dɪˈspəʊzl/", "senses": [{"pos": "n.", "mean": "清除；处理；（企业、财产等的）变卖"}]}]
+        },
+        {
+          "no": 5, "word": "rid", "freq": 2, "page": 115,
+          "prons": [{"ipa": "/rɪd/", "senses": [
+            {"pos": "v.", "mean": "[[摆脱]]；[[丢弃]]；[[除掉]]"},
+            {"pos": "adj.", "mean": "[[摆脱的，去掉的]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "ri（联想“日”）+ d（音似“的”）→ 后羿射日就是“除掉”天上的九个太阳。"},
+          "ex": {"type": "真", "year": 2016, "en": "He intends to get rid of the tipping practice.", "zh": "他打算取消给小费的做法。", "key": ["get rid of"]},
+          "ext": []
+        },
+        {
+          "no": 6, "word": "suppose", "freq": 1, "page": 115,
+          "prons": [{"ipa": "/səˈpəʊz/", "senses": [{"pos": "v.", "mean": "[[推断]]；[[假设]]；[[设想]]"}]}],
+          "tip": {"type": "构词", "text": "sup-（在下面）+ pose（摆放）→在下面摆放（条件）→假设"},
+          "ex": {"type": "例", "en": "I suppose it will rain tomorrow, so we should bring umbrellas.", "zh": "我猜明天会下雨，所以我们应该带伞。", "key": ["suppose"]},
+          "ext": [
+            {"word": "supposedly", "ipa": "/səˈpəʊzɪdli/", "senses": [{"pos": "adv.", "mean": "据信；据传；据说"}]},
+            {"word": "supposition", "ipa": "/ˌsʌpəˈzɪʃn/", "senses": [{"pos": "n.", "mean": "推测的想法；推断的结论；推测；推断"}]}
+          ]
+        },
+        {
+          "no": 7, "word": "positive", "freq": 3, "page": 115,
+          "prons": [{"ipa": "/ˈpɒzətɪv/", "senses": [
+            {"pos": "adj.", "mean": "[[乐观的，积极的]]；[[阳性的]]；[[正面的]]"},
+            {"pos": "n.", "mean": "[[优势，优点]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "posit（= pose，放）+ -ive（后缀）→（把情绪等）摆放出来的→乐观的；积极的"},
+          "ex": {"type": "真", "year": 2016, "en": "Its negative effects more than cancel out its positive effects.", "zh": "它的消极影响不仅仅抵消了它的积极影响。", "key": ["positive"]},
+          "ext": []
+        },
+        {
+          "no": 8, "word": "deposit", "freq": 2, "page": 116,
+          "prons": [{"ipa": "/dɪˈpɒzɪt/", "senses": [
+            {"pos": "n.", "mean": "[[存款]]；[[沉积物]]；[[押金]]"},
+            {"pos": "v.", "mean": "[[放下]]；[[寄放]]"}
+          ]}],
+          "tip": {"type": "构词", "text": "de-（往下）+ posit（摆放）→沉积物；放下"},
+          "ex": {"type": "例", "en": "You can withdraw and deposit money in any of our branches.", "zh": "您可在我们任意一家分行办理存取款业务。", "key": ["deposit"]},
+          "ext": []
+        },
+        {
+          "no": 9, "word": "compose", "freq": 1, "page": 116,
+          "prons": [{"ipa": "/kəmˈpəʊz/", "senses": [{"pos": "v.", "mean": "[[组成，构成]]；[[作曲]]；[[撰写]]"}]}],
+          "tip": {"type": "构词", "text": "com-（一起）+ pose（摆放）→摆放在一起→组成，构成"},
+          "ex": {"type": "例", "en": "The earth is composed of several layers.", "zh": "地球由几层组成。", "key": ["composed"]},
+          "ext": [{"word": "composer", "ipa": "/kəmˈpəʊzə(r)/", "senses": [{"pos": "n.", "mean": "作曲家"}]}]
+        },
+        {
+          "no": 10, "word": "composition", "freq": 1, "page": 116,
+          "prons": [{"ipa": "/ˌkɒmpəˈzɪʃn/", "senses": [{"pos": "n.", "mean": "[[作品，作文]]；[[作曲]]"}]}],
+          "tip": {"type": "对照", "text": "compose v.组成；构成；作曲 → composition n."},
+          "ex": {"type": "例", "en": "He pulls up a music composition textbook, complete with playable demos.", "zh": "他拿出了一本音乐作曲教材，里面有可播放的小样。", "key": ["composition"]},
+          "ext": []
+        },
+        {
+          "no": 11, "word": "component", "freq": 2, "page": 116,
+          "prons": [{"ipa": "/kəmˈpəʊnənt/", "senses": [{"pos": "n.", "mean": "[[组成部分，成分]]；[[部件]]"}]}],
+          "tip": {"type": "联想", "text": "compon（联想 compose）+ -ent（后缀）→组成部分，成分"},
+          "ex": {"type": "真", "year": 2016, "en": "The emotional component of the prizes is at work.", "zh": "奖励的情感因素在起作用。", "key": ["component"]},
+          "ext": []
+        },
+        {
+          "no": 12, "word": "impose", "freq": 2, "page": 116,
+          "prons": [{"ipa": "/ɪmˈpəʊz/", "senses": [{"pos": "v.", "mean": "[[将……强加于]]；[[强制实行]]；[[勉强]]；[[征税]]"}]}],
+          "tip": {"type": "构词", "text": "im-（里面）+ pose（摆放）→把……放到……里面→将……强加于"},
+          "ex": {"type": "例", "en": "Do not impose your idea on me.", "zh": "不要把你的思想强加于我。", "key": ["impose", "on"]},
+          "ext": [
+            {"word": "imposition", "ipa": "/ˌɪmpəˈzɪʃn/", "senses": [{"pos": "n.", "mean": "征税，强加；被征收之物"}]},
+            {"word": "imposing", "ipa": "/ɪmˈpəʊzɪŋ/", "senses": [{"pos": "adj.", "mean": "壮观的；使人印象深刻的"}]}
+          ]
+        },
+        {
+          "no": 13, "word": "oppose", "freq": 2, "page": 116,
+          "prons": [{"ipa": "/əˈpəʊz/", "senses": [{"pos": "v.", "mean": "[[反对，对抗]]"}]}],
+          "tip": {"type": "构词", "text": "op-（反）+ pose（摆放）→摆放到相反的位置或立场→反对"},
+          "ex": {"type": "例", "en": "The children strongly opposed the idea.", "zh": "孩子们强烈反对这个想法。", "key": ["opposed"]},
+          "ext": [
+            {"word": "opposition", "ipa": "/ˌɒpəˈzɪʃn/", "senses": [{"pos": "n.", "mean": "（强烈的）反对"}]},
+            {"word": "opponent", "ipa": "/əˈpəʊnənt/", "senses": [{"pos": "n.", "mean": "对手，竞争者，反对者"}]}
+          ]
+        },
+        {
+          "no": 14, "word": "opposite", "freq": 1, "page": 116,
+          "prons": [{"ipa": "/ˈɒpəzɪt/", "senses": [{"pos": "adj.", "mean": "[[相反的，不同的，对面的]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "They are actually in opposite directions.", "zh": "它们实际上是相反的方向。", "key": ["opposite"]},
+          "ext": []
+        },
+        {
+          "no": 15, "word": "rival", "freq": 2, "page": 116,
+          "prons": [{"ipa": "/ˈraɪvl/", "senses": [
+            {"pos": "n.", "mean": "[[竞争者，对手]]"},
+            {"pos": "v.", "mean": "[[与……匹敌]]；[[比得上]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "riv（联想 river）+ a（形似一个矮胖小人）+ l（形似一个高瘦小人）→矮胖小人和高瘦小人是“对手”，在河的两边叫嚣。"},
+          "ex": {"type": "真", "year": 2018, "en": "Computers are man's potential rivals.", "zh": "计算机是人类潜在的竞争对手。", "key": ["rivals"]},
+          "ext": [{"word": "rivalry", "ipa": "/ˈraɪvlri/", "senses": [{"pos": "n.", "mean": "竞争，竞赛，较量"}]}]
+        },
+        {
+          "no": 16, "word": "position", "freq": 1, "page": 116,
+          "prons": [{"ipa": "/pəˈzɪʃn/", "senses": [
+            {"pos": "n.", "mean": "[[位置]]；[[处境]]；[[地位]]"},
+            {"pos": "v.", "mean": "[[使处于]]；[[安置]]"}
+          ]}],
+          "tip": {"type": "构词", "text": "posit（摆放）+ -ion（后缀）→位置；地位；使处于"},
+          "ex": {"type": "真", "year": 2021, "en": "In one study, students were told their social position in school is not unchangeable.", "zh": "在一项研究中，学生们被告知他们在学校的社会地位并非一成不变。", "key": ["position"]},
+          "ext": []
+        },
+        {
+          "no": 17, "word": "propose", "freq": 3, "page": 117,
+          "prons": [{"ipa": "/prəˈpəʊz/", "senses": [{"pos": "v.", "mean": "[[建议]]；[[计划]]；[[求婚]]"}]}],
+          "tip": {"type": "构词", "text": "pro-（往前）+ pose（摆放）→（把想法、心意等）在……前面摆放→建议；计划；求婚"},
+          "ex": {"type": "例", "en": "She proposed that the book be banned.", "zh": "她建议查禁这本书。", "key": ["proposed"]},
+          "ext": [
+            {"word": "proposal", "ipa": "/prəˈpəʊzl/", "senses": [{"pos": "n.", "mean": "提议，建议；求婚"}]},
+            {"word": "proposition", "ipa": "/ˌprɒpəˈzɪʃn/", "senses": [{"pos": "n.", "mean": "提议，建议；（美国）法律修正议案；观点"}]}
+          ]
+        },
+        {
+          "no": 18, "word": "counsel", "freq": 1, "page": 117,
+          "prons": [{"ipa": "/ˈkaʊnsl/", "senses": [
+            {"pos": "v.", "mean": "[[提供专业咨询]]"},
+            {"pos": "n.", "mean": "[[劝告]]；[[建议]]，[[讨论]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "coun-（= con-）+ sel（联想 sell）→我把几套房子一起卖掉，家人“劝告”我要慎重。"},
+          "ex": {"type": "例", "en": "In the end, wiser counsels prevailed.", "zh": "更高明的建议最终占了上风。", "key": ["counsels"]},
+          "ext": [{"word": "counsellor", "alt": "counselor", "ipa": "/ˈkaʊnsələ(r)/", "senses": [{"pos": "n.", "mean": "（尤指针对私人问题的）顾问；辅导顾问"}]}]
+        },
+        {
+          "no": 19, "word": "purpose", "freq": 1, "page": 117,
+          "prons": [{"ipa": "/ˈpɜːpəs/", "senses": [{"pos": "n.", "mean": "[[意图]]；[[目的]]；[[重要意义]]"}]}],
+          "tip": {"type": "联想", "text": "pur（联想 pure）+ pose（摆放）→她把最纯粹的“目的”放在心中。"},
+          "ex": {"type": "真", "year": 2020, "en": "For what purpose is \"the bad option\" added?", "zh": "添加“坏选项”的目的是什么？", "key": ["purpose"]},
+          "ext": [{"word": "purposeful", "ipa": "/ˈpɜːpəsfl/", "senses": [{"pos": "adj.", "mean": "目的明确的；有目的的；目标清晰而坚定的"}]}]
+        }
+      ]
+    },
+    {
+      "no": 18,
+      "title": "“乡村、城市”相关",
+      "pages": [117, 119],
+      "map": {
+        "w": "“乡村、城市”相关",
+        "children": [
+          {"w": "rural", "children": [
+            {"w": "agriculture", "rel": "相关", "children": [{"w": "agricultural", "rel": "扩"}]},
+            {"w": "country", "rel": "相关", "children": [
+              {"w": "countryside", "rel": "扩"},
+              {"w": "county", "rel": "形近"},
+              {"w": "nationwide", "rel": "相关", "children": [
+                {"w": "worldwide", "children": [
+                  {"w": "widespread", "rel": "相关", "children": [{"w": "throughout"}]}
+                ]}
+              ]},
+              {"w": "continent", "rel": "相关", "children": [{"w": "continental", "rel": "扩"}]}
+            ]}
+          ]},
+          {"w": "urban", "children": [
+            {"w": "urbanise", "rel": "扩", "children": [{"w": "urbanisation"}]},
+            {"w": "suburb", "rel": "相关", "children": [{"w": "suburban", "rel": "扩"}]},
+            {"w": "downtown", "rel": "相关"},
+            {"w": "civil", "rel": "相关", "children": [
+              {"w": "civilise", "rel": "扩", "children": [
+                {"w": "civilisation", "children": [
+                  {"w": "civilian", "children": [
+                    {"w": "citizen", "rel": "近义", "children": [{"w": "citizenship", "rel": "扩"}]}
+                  ]}
+                ]}
+              ]},
+              {"w": "cultural", "rel": "相关"}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 20, "word": "rural", "freq": 2, "page": 117,
+          "prons": [{"ipa": "/ˈrʊərəl/", "senses": [{"pos": "adj.", "mean": "[[乡村的，农村的]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“懦弱”→ 现在“农村的”年轻人都去城里打工了，留守在村里的主要是老弱妇孺。"},
+          "ex": {"type": "例", "en": "Rural kids used to walk a long way to school in the old days.", "zh": "过去农村的孩子们常常走很长的路去上学。", "key": ["Rural"]},
+          "ext": []
+        },
+        {
+          "no": 21, "word": "agriculture", "freq": 1, "page": 117,
+          "prons": [{"ipa": "/ˈæɡrɪkʌltʃə(r)/", "senses": [{"pos": "n.", "mean": "[[农业]]；农学"}]}],
+          "tip": {"type": "联想", "text": "ag（联想“阿哥”）+ ri（联想“日”）+ culture（文化）→ 阿哥在太阳下耕种，学习“农业”相关的文化知识。"},
+          "ex": {"type": "例", "en": "African agriculture is still broadly unproductive.", "zh": "非洲农业仍然普遍缺乏生产力。", "key": ["agriculture"]},
+          "ext": [{"word": "agricultural", "ipa": "/ˌæɡrɪˈkʌltʃərəl/", "senses": [{"pos": "adj.", "mean": "农业的；农用的；（地区或社会）以农业为主的"}]}]
+        },
+        {
+          "no": 22, "word": "urban", "freq": 1, "page": 117,
+          "prons": [{"ipa": "/ˈɜːbən/", "senses": [{"pos": "adj.", "mean": "[[城市的，市内的]]"}]}],
+          "tip": {"type": "联想", "text": "ur（音似“鹅”）+ ban（禁止）→ 该市区禁止养鹅 → 城市的，市内的"},
+          "ex": {"type": "真", "year": 2024, "en": "It has long been used to increase food supply and improve urban landscape.", "zh": "长期以来，它被用来增加食物供给和改善城市景观。", "key": ["urban"]},
+          "ext": [
+            {"word": "urbanise", "alt": "-ize", "ipa": "/ˈɜːbənaɪz/", "senses": [{"pos": "v.", "mean": "使都市化"}]},
+            {"word": "urbanisation", "alt": "-ization", "ipa": "/ˌɜːbənaɪˈzeɪʃn/", "senses": [{"pos": "n.", "mean": "城市化"}]}
+          ]
+        },
+        {
+          "no": 23, "word": "suburb", "freq": 2, "page": 118,
+          "prons": [{"ipa": "/ˈsʌbɜːb/", "senses": [{"pos": "n.", "mean": "[[市郊，郊区]]"}]}],
+          "tip": {"type": "联想", "text": "sub-（下面，次）+ urb（联想 urban）→ 市郊，郊区"},
+          "ex": {"type": "例", "en": "They live in a wealthy suburb of Chicago.", "zh": "他们住在芝加哥郊区的一处富人区。", "key": ["suburb"]},
+          "ext": [{"word": "suburban", "ipa": "/səˈbɜːbən/", "senses": [{"pos": "adj.", "mean": "郊区的；见闻不广的，平庸的"}]}]
+        },
+        {
+          "no": 24, "word": "downtown", "freq": 1, "page": 118,
+          "prons": [{"ipa": "/ˌdaʊnˈtaʊn/", "senses": [
+            {"pos": "adv.", "mean": "[[往或在城市的商业区（或中心区、闹市区）]]"},
+            {"pos": "n.", "mean": "[[城市的商业区，中心区]]，闹市区"},
+            {"pos": "adj.", "mean": "[[城市的商业区的，中心区的]]，闹市区的"}
+          ]}],
+          "tip": {"type": "构词", "text": "down（下）+ town（城镇）→ 在城镇的下方 → 城市的商业区，中心区"},
+          "ex": {"type": "例", "en": "He lives downtown and it is really noisy.", "zh": "他住在市区，真的很嘈杂。", "key": ["downtown"]},
+          "ext": []
+        },
+        {
+          "no": 25, "word": "citizen", "freq": 3, "page": 118,
+          "prons": [{"ipa": "/ˈsɪtɪzn/", "senses": [{"pos": "n.", "mean": "[[公民]]；[[市民，居民]]"}]}],
+          "tip": {"type": "联想", "text": "citi（联想 city）+ zen（音似“人”）→ 市民"},
+          "ex": {"type": "真", "year": 2020, "en": "Doing so will send an important message to the nation's youngest citizens.", "zh": "这样做将向美国最年轻的公民传递一个重要的信息。", "key": ["citizens"]},
+          "ext": [{"word": "citizenship", "ipa": "/ˈsɪtɪzənʃɪp/", "senses": [{"pos": "n.", "mean": "公民身份；公民资格"}]}]
+        },
+        {
+          "no": 26, "word": "civil", "freq": 1, "page": 118,
+          "prons": [{"ipa": "/ˈsɪvl/", "senses": [{"pos": "adj.", "mean": "[[公民的]]；[[民用的]]；[[文明的]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "We have been actively exercising our civil rights.", "zh": "我们一直在积极行使我们的公民权。", "key": ["civil"]},
+          "ext": [
+            {"word": "civilise", "alt": "-ize", "ipa": "/ˈsɪvəlaɪz/", "senses": [{"pos": "v.", "mean": "使文明；教化；使开化"}]},
+            {"word": "civilisation", "alt": "-ization", "ipa": "/ˌsɪvəlaɪˈzeɪʃn/", "senses": [{"pos": "n.", "mean": "文明；文明社会"}]}
+          ]
+        },
+        {
+          "no": 27, "word": "cultural", "freq": 3, "page": 119,
+          "prons": [{"ipa": "/ˈkʌltʃərəl/", "senses": [{"pos": "adj.", "mean": "[[文化的]]；[[与艺术、文学、音乐等有关的]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2023, "en": "It's a great way to promote cultural understanding and exchange; we welcome that.", "zh": "这是促进文化理解和交流的好方法；我们对此表示欢迎。", "key": ["cultural"]},
+          "ext": []
+        },
+        {
+          "no": 28, "word": "civilian", "freq": 1, "page": 119,
+          "prons": [{"ipa": "/səˈvɪliən/", "senses": [{"pos": "n.", "mean": "[[平民]]；[[老百姓]]"}]}],
+          "tip": {"type": "构词", "text": "civil（公民的）+ -ian（表示人的后缀）→ 平民"},
+          "ex": {"type": "例", "en": "Further measures are needed to protect civilians.", "zh": "需要采取进一步措施保护平民。", "key": ["civilians"]},
+          "ext": []
+        },
+        {
+          "no": 29, "word": "country", "freq": 1, "page": 119,
+          "prons": [{"ipa": "/ˈkʌntri/", "senses": [{"pos": "n.", "mean": "[[国家，国土]]；[[农村]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Across the country, 285 emergency management teams are devoted to crisis control.", "zh": "全国有 285 个应急管理小组致力于危机控制。", "key": ["country"]},
+          "ext": [{"word": "countryside", "ipa": "/ˈkʌntrisaɪd/", "senses": [{"pos": "n.", "mean": "乡下，农村"}]}]
+        },
+        {
+          "no": 30, "word": "county", "freq": 2, "page": 119,
+          "prons": [{"ipa": "/ˈkaʊnti/", "senses": [{"pos": "n.", "mean": "[[（英国的）郡]]，[[（美国的）县]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "It sets a bar for similar initiatives across the county.", "zh": "它为全县的类似举措设定了一个标准。", "key": ["county"]},
+          "ext": []
+        },
+        {
+          "no": 31, "word": "nationwide", "freq": 2, "page": 119,
+          "prons": [{"ipa": "/ˌneɪʃ(ə)nˈwaɪd/", "senses": [
+            {"pos": "adj.", "mean": "[[全国性的]]；[[全国各地的]]"},
+            {"pos": "adv.", "mean": "[[在全国范围内]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2020, "en": "Nationwide, the gap is even greater.", "zh": "在全国范围内，差距甚至更大。", "key": ["Nationwide"]},
+          "ext": []
+        },
+        {
+          "no": 32, "word": "worldwide", "freq": 1, "page": 119,
+          "prons": [{"ipa": "/ˌwɜːldˈwaɪd/", "senses": [
+            {"pos": "adj.", "mean": "[[世界各地的]]"},
+            {"pos": "adv.", "mean": "[[在全世界]]；[[遍及全球]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2024, "en": "It has been popularised worldwide with the increasing influence of social media.", "zh": "随着社交媒体影响力的日益增强，它在全球范围内得到了普及。", "key": ["worldwide"]},
+          "ext": []
+        },
+        {
+          "no": 33, "word": "widespread", "freq": 3, "page": 119,
+          "prons": [{"ipa": "/ˈwaɪdspred/", "senses": [{"pos": "adj.", "mean": "[[分布广的]]；[[广泛流传的]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2024, "en": "Such corporate sponsorship is widespread in some fields.", "zh": "这种企业赞助在某些领域非常普遍。", "key": ["widespread"]},
+          "ext": []
+        },
+        {
+          "no": 34, "word": "throughout", "freq": 1, "page": 119,
+          "prons": [{"ipa": "/θruːˈaʊt/", "senses": [{"pos": "prep. & adv.", "mean": "[[遍及，到处]]；[[贯穿整个时期]]"}]}],
+          "tip": {"type": "构词", "text": "through（穿过）+ out（出来）→ 遍及，到处"},
+          "ex": {"type": "真", "year": 2023, "en": "The dance group performs throughout the year but was now preparing for its biggest events.", "zh": "这个舞蹈团全年都在表演，但现在正在为最盛大的活动做准备。", "key": ["throughout"]},
+          "ext": []
+        },
+        {
+          "no": 35, "word": "continent", "freq": 1, "page": 119,
+          "prons": [{"ipa": "/ˈkɒntɪnənt/", "senses": [{"pos": "n.", "mean": "[[洲，大陆]]"}]}],
+          "tip": {"type": "联想", "text": "con-（所有）+ tin（音似“听”）+ ent（联想 enter）→ 所有听装罐头都运进“大陆”了。"},
+          "ex": {"type": "例", "en": "Now we could sell our products all across the continent.", "zh": "现在我们可以在整个大陆销售我们的产品。", "key": ["continent"]},
+          "ext": [{"word": "continental", "ipa": "/ˌkɒntɪˈnentl/", "senses": [{"pos": "adj.", "mean": "大陆的；大洲的"}]}]
+        }
+      ]
+    },
+    {
+      "no": 19,
+      "title": "surround 相关",
+      "pages": [119, 121],
+      "map": {
+        "w": "surround 相关",
+        "children": [
+          {"w": "siege"},
+          {"w": "surroundings", "children": [
+            {"w": "environment", "rel": "近义", "children": [
+              {"w": "environmental", "rel": "扩", "children": [{"w": "environmentalist"}]}
+            ]},
+            {"w": "climate", "rel": "相关", "children": [{"w": "climatic", "rel": "扩"}]},
+            {"w": "mood", "rel": "相关", "children": [{"w": "moody", "rel": "扩"}]},
+            {"w": "atmosphere", "rel": "相关", "children": [
+              {"w": "atmospheric", "rel": "扩"},
+              {"w": "sphere", "rel": "拆分", "children": [
+                {"w": "spherical", "rel": "扩"},
+                {"w": "scope", "rel": "近义"}
+              ]}
+            ]},
+            {"w": "circumstance", "rel": "相关", "children": [
+              {"w": "condition", "rel": "近义", "children": [
+                {"w": "conditional", "rel": "扩", "children": [{"w": "conditioner"}]}
+              ]}
+            ]}
+          ]},
+          {"w": "surface", "children": [{"w": "preface", "rel": "形近"}]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 36, "word": "siege", "freq": 1, "page": 119,
+          "prons": [{"ipa": "/siːdʒ/", "senses": [{"pos": "n.", "mean": "[[围困，包围]]，[[围攻]]"}]}],
+          "tip": {"type": "联想", "text": "si（联想“四”）+ e（联想“鹅”）+ ge（联想“哥”）→ 四只鹅正在“围攻”哥哥。"},
+          "ex": {"type": "例", "en": "Crowds of journalists laid siege to the star's apartment.", "zh": "成群的记者包围了明星的公寓。", "key": ["siege"]},
+          "ext": []
+        },
+        {
+          "no": 37, "word": "surround", "freq": 2, "page": 119,
+          "prons": [{"ipa": "/səˈraʊnd/", "senses": [
+            {"pos": "n.", "mean": "[[周围]]；[[环绕]]"},
+            {"pos": "v.", "mean": "[[包围]]；[[环绕]]"}
+          ]}],
+          "tip": {"type": "构词", "text": "sur-（上面）+ round（围绕）→ 包围；环绕"},
+          "ex": {"type": "真", "year": 2017, "en": "I am making my way through Columbia University, surrounded by students.", "zh": "我正在哥伦比亚大学的路上，周围都是学生。", "key": ["surrounded"]},
+          "ext": [{"word": "surroundings", "ipa": "/səˈraʊndɪŋz/", "senses": [{"pos": "n.", "mean": "环境"}]}]
+        },
+        {
+          "no": 38, "word": "surface", "freq": 1, "page": 119,
+          "prons": [{"ipa": "/ˈsɜːfɪs/", "senses": [
+            {"pos": "n.", "mean": "[[表面]]"},
+            {"pos": "v.", "mean": "[[升到表面]]"}
+          ]}],
+          "tip": {"type": "构词", "text": "sur-（上面）+ face（面）→ 上面的面 → 表面"},
+          "ex": {"type": "真", "year": 2017, "en": "Eggs provide a unique surface to paint on.", "zh": "鸡蛋为绘画提供了一个独特的表面。", "key": ["surface"]},
+          "ext": []
+        },
+        {
+          "no": 39, "word": "preface", "freq": 1, "page": 119,
+          "prons": [{"ipa": "/ˈprefəs/", "senses": [{"pos": "n.", "mean": "[[序言，前言]]"}]}],
+          "tip": {"type": "联想", "text": "pre-（前面）+ face（脸）→ 一本书前面那张“脸”就是“前言”。"},
+          "ex": {"type": "例", "en": "Bruce added this key point in the preface to the panel's report.", "zh": "布鲁斯在专家组报告的前言中补充了这一要点。", "key": ["preface"]},
+          "ext": []
+        },
+        {
+          "no": 40, "word": "climate", "freq": 1, "page": 119,
+          "prons": [{"ipa": "/ˈklaɪmət/", "senses": [{"pos": "n.", "mean": "[[气候]]；[[氛围]]；[[形势]]"}]}],
+          "tip": {"type": "联想", "text": "c（形似半圆）+ li（联想“立”）+ mate（朋友）→ 朋友们围着我站立成了半圆，营造出节日的“氛围”。"},
+          "ex": {"type": "例", "en": "The terms \"global warming\" and \"climate change\" are used by us.", "zh": "“全球变暖”和“气候变化”这两个术语被我们使用。", "key": ["climate"]},
+          "ext": [{"word": "climatic", "ipa": "/klaɪˈmætɪk/", "senses": [{"pos": "adj.", "mean": "气候的"}]}]
+        },
+        {
+          "no": 41, "word": "mood", "freq": 3, "page": 120,
+          "prons": [{"ipa": "/muːd/", "senses": [{"pos": "n.", "mean": "[[情绪]]；[[心情]]；[[气氛]]；（动词的）语气"}]}],
+          "tip": {"type": "对照", "text": "他一个人坐着看月亮（moon），情绪（mood）有点儿低落。"},
+          "ex": {"type": "真", "year": 2020, "en": "People are ungrateful when in a bad mood.", "zh": "人们心情不好的时候是不会领情的。", "key": ["mood"]},
+          "ext": [{"word": "moody", "ipa": "/ˈmuːdi/", "senses": [{"pos": "adj.", "mean": "情绪多变的，喜怒无常的"}]}]
+        },
+        {
+          "no": 42, "word": "atmosphere", "freq": 3, "page": 120,
+          "prons": [{"ipa": "/ˈætməsfɪə(r)/", "senses": [{"pos": "n.", "mean": "[[大气]]；[[空气]]；[[气氛]]"}]}],
+          "tip": {"type": "联想", "text": "atmo（联想“阿童木”）+ sphere（领域）→ 阿童木总在天上飞来飞去，“大气”就是他的活动领域。"},
+          "ex": {"type": "真", "year": 2022, "en": "They favoured a more rigid, closed-door, corporate atmosphere.", "zh": "他们倾向于更严格、更封闭的公司氛围。", "key": ["atmosphere"]},
+          "ext": [{"word": "atmospheric", "ipa": "/ˌætməsˈferɪk/", "senses": [{"pos": "adj.", "mean": "大气的，大气层的；有气氛的"}]}]
+        },
+        {
+          "no": 43, "word": "sphere", "freq": 1, "page": 120,
+          "prons": [{"ipa": "/sfɪə(r)/", "senses": [{"pos": "n.", "mean": "[[球体]]；[[范围]]；[[领域]]"}]}],
+          "tip": {"type": "联想", "text": "s（联想“蛇”）+ p（联想“趴”）+ here（这里）→ 一条蛇趴在这里，这里就是它的活动“领域”。"},
+          "ex": {"type": "例", "en": "Its advantage would be the improvement of freedom in every sphere of daily life.", "zh": "它的优点是提高日常生活各个领域的自由度。", "key": ["sphere"]},
+          "ext": [{"word": "spherical", "ipa": "/ˈsferɪkl/", "senses": [{"pos": "adj.", "mean": "球形的；球状的"}]}]
+        },
+        {
+          "no": 44, "word": "scope", "freq": 1, "page": 120,
+          "prons": [{"ipa": "/skəʊp/", "senses": [
+            {"pos": "n.", "mean": "[[范围]]；[[（发挥能力等的）余地]]"},
+            {"pos": "v.", "mean": "[[查明]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "s（联想“美女”）+ cope（处理）→ 一个美女可以在一定“范围”内处理问题。"},
+          "ex": {"type": "例", "en": "This subject lies beyond the scope of our investigation.", "zh": "这一问题超出了我们的调查范围。", "key": ["scope"]},
+          "ext": []
+        },
+        {
+          "no": 45, "word": "environment", "freq": 3, "page": 120,
+          "prons": [{"ipa": "/ɪnˈvaɪrənmənt/", "senses": [{"pos": "n.", "mean": "[[环境]]；[[客观环境]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2022, "en": "He felt disappointed working in the environment.", "zh": "在这种环境中工作让他感到失望。", "key": ["environment"]},
+          "ext": [
+            {"word": "environmental", "ipa": "/ɪnˌvaɪrənˈmentl/", "senses": [{"pos": "adj.", "mean": "自然环境的；生态环境的；有关环境的"}]},
+            {"word": "environmentalist", "ipa": "/ɪnˌvaɪrənˈmentəlɪst/", "senses": [{"pos": "n.", "mean": "环境保护论者"}]}
+          ]
+        },
+        {
+          "no": 46, "word": "circumstance", "freq": 3, "page": 120,
+          "prons": [{"ipa": "/ˈsɜːkəmstæns/", "senses": [{"pos": "n.", "mean": "[[条件]]；[[环境]]；[[状况]]"}]}],
+          "tip": {"type": "联想", "text": "circum（联想 circle）+ st（联想 stand）+ -ance（名词后缀）→ 周围站立的事物等 → 环境"},
+          "ex": {"type": "真", "year": 2023, "en": "One is forced by circumstances to stop working.", "zh": "一个人因环境而被迫停止工作。", "key": ["circumstances"]},
+          "ext": []
+        },
+        {
+          "no": 47, "word": "condition", "freq": 1, "page": 120,
+          "prons": [{"ipa": "/kənˈdɪʃn/", "senses": [{"pos": "n.", "mean": "[[状态]]；[[条件]]；[[状况]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“肯低身”→ 肯低身适应外界环境和“条件”，才能调整好身心“状态”。"},
+          "ex": {"type": "真", "year": 2023, "en": "They are responsible for their own condition.", "zh": "他们对自己的状况负责。", "key": ["condition"]},
+          "ext": [
+            {"word": "conditional", "ipa": "/kənˈdɪʃənl/", "senses": [
+              {"pos": "adj.", "mean": "有条件的；条件的"},
+              {"pos": "n.", "mean": "条件从句"}
+            ]},
+            {"word": "conditioner", "ipa": "/kənˈdɪʃənə(r)/", "senses": [{"pos": "n.", "mean": "护发素；柔顺剂"}]}
+          ]
+        }
+      ]
+    },
+    {
+      "no": 20,
+      "title": "“环”相关",
+      "pages": [121, 122],
+      "map": {
+        "w": "“环”相关",
+        "children": [
+          {"w": "cycle", "children": [
+            {"w": "cycling", "rel": "扩", "children": [{"w": "cyclist"}]},
+            {"w": "recycle", "rel": "形近", "children": [{"w": "recyclable", "rel": "扩"}]},
+            {"w": "circle", "rel": "相关", "children": [
+              {"w": "circular", "rel": "扩", "children": [
+                {"w": "circuit", "rel": "形近", "children": [{"w": "circus"}]},
+                {"w": "circulate", "rel": "形近", "children": [{"w": "circulation", "rel": "扩"}]}
+              ]},
+              {"w": "oval", "rel": "相关"}
+            ]}
+          ]},
+          {"w": "setting", "children": [
+            {"w": "background", "rel": "近义"},
+            {"w": "context", "rel": "近义", "children": [
+              {"w": "contextual", "rel": "扩"},
+              {"w": "contest", "rel": "形近", "children": [
+                {"w": "contestant", "rel": "扩"},
+                {"w": "protest", "rel": "同根"}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 48, "word": "cycle", "freq": 1, "page": 121,
+          "prons": [{"ipa": "/ˈsaɪkl/", "senses": [
+            {"pos": "n.", "mean": "[[自行车]]；[[循环]]"},
+            {"pos": "v.", "mean": "[[骑自行车]]；[[循环]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2017, "en": "The cycle of renewal never ends.", "zh": "更新的循环永远不会结束。", "key": ["cycle"]},
+          "ext": [
+            {"word": "cycling", "ipa": "/ˈsaɪklɪŋ/", "senses": [{"pos": "n.", "mean": "骑自行车运动或活动"}]},
+            {"word": "cyclist", "ipa": "/ˈsaɪklɪst/", "senses": [{"pos": "n.", "mean": "骑自行车的人"}]}
+          ]
+        },
+        {
+          "no": 49, "word": "recycle", "freq": 1, "page": 121,
+          "prons": [{"ipa": "/ˌriːˈsaɪkl/", "senses": [{"pos": "v.", "mean": "[[回收利用，再利用]]；[[重新使用]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The objective would be to recycle 98 percent of domestic waste.", "zh": "该目标是循环使用 98% 的生活垃圾。", "key": ["recycle"]},
+          "ext": [{"word": "recyclable", "ipa": "/ˌriːˈsaɪkləbl/", "senses": [{"pos": "adj.", "mean": "可回收利用的，可再循环的"}]}]
+        },
+        {
+          "no": 50, "word": "circle", "freq": 1, "page": 121,
+          "prons": [{"ipa": "/ˈsɜːkl/", "senses": [
+            {"pos": "n.", "mean": "[[圆]]；[[圈子]]；[[阶层]]"},
+            {"pos": "v.", "mean": "[[环绕]]；[[画圈]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2017, "en": "Start a public discussion on how to raise women's status in academic circles.", "zh": "就如何提高女性在学术圈的地位展开公开的讨论。", "key": ["circles"]},
+          "ext": [{"word": "circular", "ipa": "/ˈsɜːkjələ(r)/", "senses": [{"pos": "adj.", "mean": "圆形的；环形的；环行的"}]}]
+        },
+        {
+          "no": 51, "word": "oval", "freq": 1, "page": 121,
+          "prons": [{"ipa": "/ˈəʊvl/", "senses": [
+            {"pos": "adj.", "mean": "[[椭圆形的]]"},
+            {"pos": "n.", "mean": "[[椭圆形]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "o（形似蛋）+ v（形似罗马数字 5）+ al（联想 all）→ 这五个蛋都是“椭圆形的”。"},
+          "ex": {"type": "真", "year": 2017, "en": "Eggs have an oval shape appealing to artists.", "zh": "鸡蛋呈椭圆形，对艺术家很有吸引力。", "key": ["oval"]},
+          "ext": []
+        },
+        {
+          "no": 52, "word": "circuit", "freq": 1, "page": 121,
+          "prons": [{"ipa": "/ˈsɜːkɪt/", "senses": [{"pos": "n.", "mean": "[[环行]]；[[环行路线]]；[[电路]]；[[赛车道]]"}]}],
+          "tip": {"type": "对照", "text": "circle n.圆；圈子 v.环绕 → circuit n."},
+          "ex": {"type": "例", "en": "The earth takes a year to make a circuit of the sun.", "zh": "地球绕太阳运行一周需要一年的时间。", "key": ["circuit"]},
+          "ext": []
+        },
+        {
+          "no": 53, "word": "circus", "freq": 1, "page": 121,
+          "prons": [{"ipa": "/ˈsɜːkəs/", "senses": [{"pos": "n.", "mean": "[[马戏团]]；[[马戏表演]]"}]}],
+          "tip": {"type": "对照", "text": "他沿着一条环形路线（circuit）去了马戏团（circus）。"},
+          "ex": {"type": "例", "en": "We took the children to the circus.", "zh": "我带孩子去看了马戏表演。", "key": ["circus"]},
+          "ext": []
+        },
+        {
+          "no": 54, "word": "circulate", "freq": 2, "page": 121,
+          "prons": [{"ipa": "/ˈsɜːkjəleɪt/", "senses": [{"pos": "v.", "mean": "（液体或气体）[[环流，循环，流传]]"}]}],
+          "tip": {"type": "构词", "text": "circul（联想 circle）+ -ate（动词后缀）→ 使绕圈转起来 → 循环"},
+          "ex": {"type": "真", "year": 2018, "en": "They don't want their photos to be circulated on the Internet.", "zh": "他们不希望自己的照片在网上流传。", "key": ["circulated"]},
+          "ext": [{"word": "circulation", "ipa": "/ˌsɜːkjəˈleɪʃn/", "senses": [{"pos": "n.", "mean": "循环；传递；流通"}]}]
+        },
+        {
+          "no": 55, "word": "setting", "freq": 2, "page": 121,
+          "prons": [{"ipa": "/ˈsetɪŋ/", "senses": [{"pos": "n.", "mean": "[[环境]]；[[背景]]；[[挡位]]"}]}],
+          "tip": {"type": "联想", "text": "set（设置）+ ting（联想“听”）→ 他设置好播放器，选择了一个安静的“环境”来听音乐。"},
+          "ex": {"type": "例", "en": "The technology has a place in educational settings.", "zh": "这项技术在教育环境中占有一席之地。", "key": ["settings"]},
+          "ext": []
+        },
+        {
+          "no": 56, "word": "background", "freq": 1, "page": 122,
+          "prons": [{"ipa": "/ˈbækɡraʊnd/", "senses": [{"pos": "n.", "mean": "[[背景]]；[[幕后]]"}]}],
+          "tip": {"type": "构词", "text": "back（背后）+ ground（地面）→ 背景；幕后"},
+          "ex": {"type": "真", "year": 2023, "en": "Carey's background is in deal making and innovation.", "zh": "凯里的背景是交易和创新。", "key": ["background"]},
+          "ext": []
+        },
+        {
+          "no": 57, "word": "context", "freq": 1, "page": 122,
+          "prons": [{"ipa": "/ˈkɒntekst/", "senses": [{"pos": "n.", "mean": "[[背景，上下文]]"}]}],
+          "tip": {"type": "联想", "text": "con-（所有）+ text（课本）→ 我们要了解课本上所有文章的“背景”和来龙去脉。"},
+          "ex": {"type": "例", "en": "It is heavily dependent on the context.", "zh": "它严重依赖于上下文。", "key": ["context"]},
+          "ext": [{"word": "contextual", "ipa": "/kənˈtekstʃuəl/", "senses": [{"pos": "adj.", "mean": "上下文的；与上下文有关的；与语境相关的"}]}]
+        },
+        {
+          "no": 58, "word": "contest", "freq": 3, "page": 122,
+          "prons": [
+            {"ipa": "/ˈkɒntest/", "senses": [{"pos": "n.", "mean": "[[竞争]]；[[比赛]]"}]},
+            {"ipa": "/kənˈtest/", "senses": [{"pos": "v.", "mean": "[[争取赢得]]"}]}
+          ],
+          "tip": {"type": "构词", "text": "con-（一起）+ test（检验）→ 一起检验孰优孰劣 → 竞争；比赛"},
+          "ex": {"type": "例", "en": "I'm preparing for the speech contest.", "zh": "我正在为演讲比赛做准备。", "key": ["contest"]},
+          "ext": [{"word": "contestant", "ipa": "/kənˈtestənt/", "senses": [{"pos": "n.", "mean": "比赛者；竞争者"}]}]
+        },
+        {
+          "no": 59, "word": "protest", "freq": 2, "page": 122,
+          "prons": [
+            {"ipa": "/ˈprəʊtest/", "senses": [{"pos": "n.", "mean": "[[抗议]]；[[反对]]"}]},
+            {"ipa": "/prəˈtest/", "senses": [{"pos": "v.", "mean": "[[抗议]]；[[反对]]"}]}
+          ],
+          "tip": {"type": "构词", "text": "pro-（在前，公开）+ test（检验，作证）→ 公开作证，表达立场 → 抗议；反对"},
+          "ex": {"type": "真", "year": 2019, "en": "It kept sending letters of protest to the media.", "zh": "它不断向媒体发抗议信。", "key": ["protest"]},
+          "ext": []
+        }
+      ]
+    }
+  ],
+  "unit_summary": {"groups": 20, "words": 246, "ext": 162, "zhen": 98, "li": 148}
+}
