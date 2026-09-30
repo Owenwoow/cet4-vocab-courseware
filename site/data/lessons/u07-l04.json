@@ -1,0 +1,493 @@
+{
+  "id": "u07-l04",
+  "part": 1,
+  "unit": 7,
+  "lesson": 4,
+  "pages": [210, 214],
+  "groups": [
+    {
+      "no": 11,
+      "title": "s 相关",
+      "pages": [210, 211],
+      "map": {
+        "w": "s 相关",
+        "children": [
+          {"w": "slap", "children": [
+            {"w": "clap", "rel": "形近", "children": [
+              {"w": "applaud", "rel": "近义", "children": [{"w": "applause", "rel": "扩"}]}
+            ]},
+            {"w": "slip", "rel": "形近", "children": [
+              {"w": "slippery", "rel": "扩"},
+              {"w": "slipper", "rel": "扩"}
+            ]}
+          ]},
+          {"w": "slope", "children": [
+            {"w": "slogan", "rel": "形近"},
+            {"w": "steep", "rel": "相关"}
+          ]},
+          {"w": "stain", "children": [{"w": "stainless", "rel": "扩"}]},
+          {"w": "steady", "children": [
+            {"w": "steadily", "rel": "扩"},
+            {"w": "stable", "rel": "近义", "children": [
+              {"w": "stability", "rel": "扩"},
+              {"w": "stabilise", "rel": "扩"},
+              {"w": "establish", "rel": "相关", "children": [{"w": "establishment", "rel": "扩"}]}
+            ]}
+          ]},
+          {"w": "slide", "children": [
+            {"w": "swing", "rel": "相关", "children": [
+              {"w": "wing", "rel": "去s"},
+              {"w": "sway", "rel": "近义"}
+            ]}
+          ]},
+          {"w": "sweep", "children": [
+            {"w": "erase", "rel": "近义", "children": [{"w": "eraser", "rel": "扩"}]}
+          ]},
+          {"w": "scare", "children": [{"w": "scary", "rel": "扩"}]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "applaud", "freq": 1, "page": 210,
+          "prons": [{"ipa": "/əˈplɔːd/", "senses": [{"pos": "v.", "mean": "[[鼓掌]]；[[称赞]]"}]}],
+          "tip": {"type": "联想", "text": "ap-（一再地）+ p（联想“扑”）+ lau（音似“老”）+ d（联想“的”）→ 他为了救人，一再地扑向老虎，大家都为他的英勇而“鼓掌”。"},
+          "ex": {"type": "例", "en": "She was applauded as she came on stage.", "zh": "她上台时人们向她鼓掌。", "key": ["applauded"]},
+          "ext": [{"word": "applause", "ipa": "/əˈplɔːz/", "senses": [{"pos": "n.", "mean": "掌声；喝彩"}]}]
+        },
+        {
+          "no": 2, "word": "clap", "freq": 1, "page": 210,
+          "prons": [{"ipa": "/klæp/", "senses": [
+            {"pos": "v.", "mean": "[[鼓掌]]；[[轻拍]]"},
+            {"pos": "n.", "mean": "[[拍手]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“客来铺”→ 当有客人来到店铺时，店里的员工“鼓掌”表示欢迎。"},
+          "ex": {"type": "例", "en": "The band played a familiar tune which had everyone clapping along.", "zh": "乐队演奏了一首熟悉的曲子，每个人都跟着拍手。", "key": ["clapping"]},
+          "ext": []
+        },
+        {
+          "no": 3, "word": "slap", "freq": 1, "page": 210,
+          "prons": [{"ipa": "/slæp/", "senses": [{"pos": "v.", "mean": "[[（用手掌）打，拍，掴]]；啪的一声放下"}]}],
+          "tip": {"type": "联想", "text": "s（联想“美女”）+ la（联想“拉”）+ p（联想“拍”）→ 美女把他拉过来，“拍”了他一下。"},
+          "ex": {"type": "例", "en": "He slapped the newspaper down on the desk.", "zh": "他啪的一声把报纸摔在桌上。", "key": ["slapped"]},
+          "ext": []
+        },
+        {
+          "no": 4, "word": "slip", "freq": 2, "page": 210,
+          "prons": [{"ipa": "/slɪp/", "senses": [
+            {"pos": "v.", "mean": "[[滑倒]]；下降；[[溜]]"},
+            {"pos": "n.", "mean": "[[差错]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "s（联想“美女”）+ li（联想“立”）+ p（联想“扑”）→ 美女立刻扑向我，接着“滑倒”了。"},
+          "ex": {"type": "例", "en": "If you have memory slips, you probably needn't worry.", "zh": "如果你一时出现记忆偏差，或许不必担心。", "key": ["slips"]},
+          "ext": [
+            {"word": "slipper", "ipa": "/ˈslɪpə(r)/", "senses": [{"pos": "n.", "mean": "拖鞋"}]},
+            {"word": "slippery", "ipa": "/ˈslɪpəri/", "senses": [{"pos": "adj.", "mean": "光滑的"}]}
+          ]
+        },
+        {
+          "no": 5, "word": "slope", "freq": 1, "page": 210,
+          "prons": [{"ipa": "/sləʊp/", "senses": [
+            {"pos": "n.", "mean": "[[斜坡]]"},
+            {"pos": "v.", "mean": "[[倾斜]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "slo（音似 slow）+ pe（音似“坡”）→ 这是个“斜坡”，所以要慢慢爬。"},
+          "ex": {"type": "真", "year": 2019, "en": "They nest on the volcano's slopes.", "zh": "它们在火山的山坡上筑巢。", "key": ["slopes"]},
+          "ext": []
+        },
+        {
+          "no": 6, "word": "slogan", "freq": 2, "page": 210,
+          "prons": [{"ipa": "/ˈsləʊɡən/", "senses": [{"pos": "n.", "mean": "[[口号]]；标语"}]}],
+          "tip": {"type": "联想", "text": "slo（音似 slow）+ gan（联想“干”）→ 我们的“口号”是慢慢干，慢工出细活。"},
+          "ex": {"type": "例", "en": "The ceremony was disrupted by slogan-chanting.", "zh": "典礼因口号声而中断。", "key": ["slogan"]},
+          "ext": []
+        },
+        {
+          "no": 7, "word": "steep", "freq": 1, "page": 210,
+          "prons": [{"ipa": "/stiːp/", "senses": [{"pos": "adj.", "mean": "[[陡峭的，险峻的]]；过高的；[[急剧的]]"}]}],
+          "tip": {"type": "联想", "text": "stee（音似“死提”）+ p（联想“爬”）→ 爬这座“陡峭的”山峰时，他快吓死了，一直提心吊胆的。"},
+          "ex": {"type": "例", "en": "The steep banks of the river are largely tree-covered.", "zh": "陡峭的河岸大部分被树林覆盖。", "key": ["steep"]},
+          "ext": []
+        },
+        {
+          "no": 8, "word": "stain", "freq": 1, "page": 211,
+          "prons": [{"ipa": "/steɪn/", "senses": [
+            {"pos": "n.", "mean": "[[污点，污渍]]"},
+            {"pos": "v.", "mean": "[[（被）玷污]]；给……染色"}
+          ]}],
+          "tip": {"type": "对照", "text": "这污渍（stain）怎么也洗不掉，就沾在（stay）衣服上。"},
+          "ex": {"type": "例", "en": "Résumés arrive with stains.", "zh": "简历上有污点。", "key": ["stains"]},
+          "ext": [{"word": "stainless", "ipa": "/ˈsteɪnləs/", "senses": [{"pos": "adj.", "mean": "不锈的；无污点的，无瑕的；纯洁的"}]}]
+        },
+        {
+          "no": 9, "word": "steady", "freq": 2, "page": 211,
+          "prons": [{"ipa": "/ˈstedi/", "senses": [
+            {"pos": "adj.", "mean": "[[平稳的]]；[[牢固的]]；冷静的"},
+            {"pos": "v.", "mean": "[[使平稳]]，稳住"}
+          ]}],
+          "tip": {"type": "对照", "text": "他站（stand）在那里，就像牢固的（steady）建筑物。"},
+          "ex": {"type": "真", "year": 2018, "en": "They provide a steady supply of freshwater.", "zh": "它们提供稳定的淡水补给。", "key": ["steady"]},
+          "ext": [{"word": "steadily", "ipa": "/ˈstedəli/", "senses": [{"pos": "adv.", "mean": "平稳地；持续地；稳定地"}]}]
+        },
+        {
+          "no": 10, "word": "stable", "freq": 1, "page": 211,
+          "prons": [{"ipa": "/ˈsteɪbl/", "senses": [
+            {"pos": "adj.", "mean": "[[稳定的]]；[[牢固的]]；[[稳重的]]"},
+            {"pos": "n.", "mean": "[[养马场]]；[[马房]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "s（音似“似”）+ table（桌子）→ 像桌子一样稳定 → 稳定的"},
+          "ex": {"type": "例", "en": "Keep your blood sugar stable throughout the day.", "zh": "保持你的血糖全天都很稳定。", "key": ["stable"]},
+          "ext": [
+            {"word": "stability", "ipa": "/stəˈbɪləti/", "senses": [{"pos": "n.", "mean": "稳定（性），稳固（性）"}]},
+            {"word": "stabilise", "alt": "-ize", "ipa": "/ˈsteɪbəlaɪz/", "senses": [{"pos": "v.", "mean": "（使）稳定，稳固"}]}
+          ]
+        },
+        {
+          "no": 11, "word": "establish", "freq": 3, "page": 211,
+          "prons": [{"ipa": "/ɪˈstæblɪʃ/", "senses": [{"pos": "v.", "mean": "[[建立，设立]]；[[确定]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Let's establish some ground rules.", "zh": "我们来制订一些基本原则吧。", "key": ["establish"]},
+          "ext": [{"word": "establishment", "ipa": "/ɪˈstæblɪʃmənt/", "senses": [{"pos": "n.", "mean": "建立；机构，大型组织"}]}]
+        },
+        {
+          "no": 12, "word": "slide", "freq": 2, "page": 211,
+          "prons": [{"ipa": "/slaɪd/", "senses": [
+            {"pos": "n.", "mean": "滑梯；[[滑倒]]；跌落"},
+            {"pos": "v.", "mean": "[[滑行]]；[[下跌]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "s（联想“蛇”）+ lide（音似“来的”）→ 这条蛇是一路“滑行”来的。"},
+          "ex": {"type": "真", "year": 2024, "en": "Some people have said aging is more a slide into forgetfulness than a journey towards wisdom.", "zh": "有人说，衰老与其说是通往智慧的旅程，不如说是滑向遗忘的过程。", "key": ["slide"]},
+          "ext": []
+        },
+        {
+          "no": 13, "word": "swing", "freq": 1, "page": 211,
+          "prons": [{"ipa": "/swɪŋ/", "senses": [
+            {"pos": "n.", "mean": "[[摆动]]；[[转动]]；秋千"},
+            {"pos": "v.", "mean": "[[（使）摆动，摇荡]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "s（联想“蛇”）+ wing（翅膀）→ 蛇左右“摆动”，就像要长出翅膀一样。"},
+          "ex": {"type": "例", "en": "He sat on the stool, swinging his legs.", "zh": "他坐在凳子上晃动着两条腿。", "key": ["swinging"]},
+          "ext": []
+        },
+        {
+          "no": 14, "word": "wing", "freq": 1, "page": 211,
+          "prons": [{"ipa": "/wɪŋ/", "senses": [{"pos": "n.", "mean": "[[翼，翅膀]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“嗡”→ 苍蝇扇动“翅膀”时发出“嗡嗡”声。"},
+          "ex": {"type": "例", "en": "This bird's large wings enable it to fly very fast.", "zh": "这只鸟的大翅膀使它能飞得非常快。", "key": ["wings"]},
+          "ext": []
+        },
+        {
+          "no": 15, "word": "sway", "freq": 1, "page": 211,
+          "prons": [{"ipa": "/sweɪ/", "senses": [
+            {"pos": "n.", "mean": "[[摇摆，摆动]]"},
+            {"pos": "v.", "mean": "[[（使）摇摆]]，摇动"}
+          ]}],
+          "tip": {"type": "联想", "text": "s（联想“蛇”）+ way（路）→ 蛇在路上左右“摆动”前进。"},
+          "ex": {"type": "例", "en": "Billy swayed and fell.", "zh": "比利摇晃着倒下了。", "key": ["swayed"]},
+          "ext": []
+        },
+        {
+          "no": 16, "word": "sweep", "freq": 1, "page": 211,
+          "prons": [{"ipa": "/swiːp/", "senses": [
+            {"pos": "v.", "mean": "[[打扫]]；[[清除]]"},
+            {"pos": "n.", "mean": "[[清扫]]；[[巡行]]；[[席卷]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "s（联想“美女”）+ weep（哭）→ 美女哭了，因为她不想“打扫”卫生。"},
+          "ex": {"type": "例", "en": "I don't have to sweep and mop every day.", "zh": "我不用每天扫地拖地。", "key": ["sweep"]},
+          "ext": []
+        },
+        {
+          "no": 17, "word": "erase", "freq": 1, "page": 211,
+          "prons": [{"ipa": "/ɪˈreɪz/", "senses": [{"pos": "v.", "mean": "[[擦掉]]，抹掉（笔迹等）；[[清除，消除]]"}]}],
+          "tip": {"type": "对照", "text": "eraser n.橡皮擦 → erase v."},
+          "ex": {"type": "真", "year": 2022, "en": "It erases the belief that growing old means growing useless.", "zh": "衰老即无用的信念得以消除。", "key": ["erases"]},
+          "ext": [{"word": "eraser", "ipa": "/ɪˈreɪzə(r)/", "senses": [{"pos": "n.", "mean": "橡皮擦；黑板擦"}]}]
+        },
+        {
+          "no": 18, "word": "scare", "freq": 1, "page": 211,
+          "prons": [{"ipa": "/skeə(r)/", "senses": [
+            {"pos": "v.", "mean": "[[惊吓]]；（使）害怕"},
+            {"pos": "n.", "mean": "惊恐，[[恐慌]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "s（联想“蛇”）+ care（照顾）→ 他说让蛇来照顾我，我很“害怕”。"},
+          "ex": {"type": "例", "en": "You scared me.", "zh": "你吓了我一跳。", "key": ["scared"]},
+          "ext": [{"word": "scary", "ipa": "/ˈskeəri/", "senses": [{"pos": "adj.", "mean": "恐怖的，吓人的"}]}]
+        }
+      ]
+    },
+    {
+      "no": 12,
+      "title": "“喷、洒”相关",
+      "pages": [212, 213],
+      "map": {
+        "w": "“喷、洒”相关",
+        "children": [
+          {"w": "spill", "children": [
+            {"w": "spread", "children": [{"w": "swell"}]}
+          ]},
+          {"w": "spit", "children": [
+            {"w": "spite", "rel": "加e", "children": [{"w": "despite", "rel": "加de"}]},
+            {"w": "split", "rel": "形近", "children": [
+              {"w": "stem", "rel": "相关", "children": [
+                {"w": "sword", "rel": "相关"},
+                {"w": "arrow", "rel": "相关"},
+                {"w": "sample", "rel": "相关", "children": [{"w": "specimen", "rel": "近义"}]}
+              ]}
+            ]}
+          ]},
+          {"w": "spray", "children": [
+            {"w": "pray", "rel": "去s", "children": [{"w": "prayer", "rel": "扩"}]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 19, "word": "spill", "freq": 2, "page": 212,
+          "prons": [{"ipa": "/spɪl/", "senses": [
+            {"pos": "v.", "mean": "（使）[[洒出，溢出]]"},
+            {"pos": "n.", "mean": "[[洒出（量）]]；泄漏（量）"}
+          ]}],
+          "tip": {"type": "联想", "text": "s（联想“美女”）+ p（联想“趴”）+ ill（生病）→ 美女生病趴在床上，不小心“洒出”了药汤。"},
+          "ex": {"type": "例", "en": "I accidentally spilled my drink all over him.", "zh": "我不小心把饮料洒了他一身。", "key": ["spilled"]},
+          "ext": []
+        },
+        {
+          "no": 20, "word": "spread", "freq": 1, "page": 212,
+          "prons": [{"ipa": "/spred/", "senses": [
+            {"pos": "v.", "mean": "[[展开]]；[[散布]]"},
+            {"pos": "n.", "mean": "[[传播]]；广泛"}
+          ]}],
+          "tip": {"type": "联想", "text": "s（联想“蛇”）+ p（联想“趴”）+ read（读）→ 假如连蛇都趴在地上读我的书，就证明书得到了广泛“传播”。"},
+          "ex": {"type": "真", "year": 2015, "en": "I hurried off to spread the good news.", "zh": "我赶紧去传播这个好消息。", "key": ["spread"]},
+          "ext": []
+        },
+        {
+          "no": 21, "word": "spit", "freq": 1, "page": 212,
+          "prons": [{"ipa": "/spɪt/", "senses": [
+            {"pos": "v.", "mean": "[[吐（唾沫、食物等）]]；[[怒斥]]"},
+            {"pos": "n.", "mean": "[[唾液]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "s（联想“美女”）+ pit（音似“呸他”）→ 美女呸他 → 吐（唾沫）"},
+          "ex": {"type": "例", "en": "She took a mouthful of food and then suddenly spat it out.", "zh": "她吃了一口食物，突然又吐了出来。", "key": ["spat", "out"]},
+          "ext": []
+        },
+        {
+          "no": 22, "word": "spite", "freq": 2, "page": 212,
+          "prons": [{"ipa": "/spaɪt/", "senses": [
+            {"pos": "n.", "mean": "[[恶意]]；[[怨恨]]"},
+            {"pos": "v.", "mean": "故意使烦恼"}
+          ]}],
+          "tip": {"type": "对照", "text": "这个人怨恨（spite）他，看到他就吐唾沫（spit）。"},
+          "ex": {"type": "例", "en": "I'm sure he only said it out of spite.", "zh": "我相信他只是为了泄愤才那么说的。", "key": ["out of spite"]},
+          "ext": []
+        },
+        {
+          "no": 23, "word": "despite", "freq": 3, "page": 212,
+          "prons": [{"ipa": "/dɪˈspaɪt/", "senses": [{"pos": "prep.", "mean": "[[尽管，即使]]"}]}],
+          "tip": {"type": "联想", "text": "de（音似“弟”）+ spite（怨恨）→ “即使”你不喜欢弟弟，也不要怨恨他。"},
+          "ex": {"type": "例", "en": "Despite applying for hundreds of jobs, he is still out of work.", "zh": "尽管他申请了数百份工作，但仍然在失业中。", "key": ["Despite"]},
+          "ext": []
+        },
+        {
+          "no": 24, "word": "pray", "freq": 1, "page": 212,
+          "prons": [{"ipa": "/preɪ/", "senses": [{"pos": "v.", "mean": "[[祈祷]]；恳求"}]}],
+          "tip": {"type": "联想", "text": "p（联想“趴”）+ ray（光线）→ 他趴在地上，向着光线投来的方向“祈祷”。"},
+          "ex": {"type": "例", "en": "Let's pray for peace.", "zh": "让我们一起祈祷和平。", "key": ["pray", "for"]},
+          "ext": [{"word": "prayer", "ipa": "/preə(r)/", "senses": [{"pos": "n.", "mean": "祷告，祈祷；祈祷文"}]}]
+        },
+        {
+          "no": 25, "word": "spray", "freq": 1, "page": 212,
+          "prons": [{"ipa": "/spreɪ/", "senses": [
+            {"pos": "v.", "mean": "[[喷]]，喷洒"},
+            {"pos": "n.", "mean": "[[浪花，水花]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "s（联想“美女”）+ pray（祈祷）→ 美女在许愿池边祈祷，池中泛起“水花”。"},
+          "ex": {"type": "例", "en": "The crops are regularly sprayed with pesticide.", "zh": "庄稼定期喷洒杀虫剂。", "key": ["sprayed"]},
+          "ext": []
+        },
+        {
+          "no": 26, "word": "split", "freq": 2, "page": 212,
+          "prons": [{"ipa": "/splɪt/", "senses": [{"pos": "v.", "mean": "[[（使）分裂]]；[[产生分歧]]；[[分开]]"}]}],
+          "tip": {"type": "联想", "text": "s（联想“蛇”）+ p（联想“扑”）+ l（形似 1）+ it（它）→ 蛇扑过去，把它的猎物一分为二 → 分开"},
+          "ex": {"type": "真", "year": 2016, "en": "The public overall is split on whether they'd like to use a driverless car.", "zh": "在是否愿意使用无人驾驶汽车的问题上，公众总体上存在分歧。", "key": ["split", "on"]},
+          "ext": []
+        },
+        {
+          "no": 27, "word": "stem", "freq": 1, "page": 212,
+          "prons": [{"ipa": "/stem/", "senses": [
+            {"pos": "n.", "mean": "（植物的）[[茎，干]]"},
+            {"pos": "v.", "mean": "[[起源于，来自]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "s（联想“蛇”）+ tem（联想“他妹”）→ 一条树藤像蛇一样缠在他妹妹的身上 → 茎，干"},
+          "ex": {"type": "例", "en": "There are several leaves on each stem.", "zh": "每一根茎上都有几片叶子。", "key": ["stem"]},
+          "ext": []
+        },
+        {
+          "no": 28, "word": "swell", "freq": 1, "page": 213,
+          "prons": [{"ipa": "/swel/", "senses": [
+            {"pos": "n.", "mean": "涌浪；[[隆起处]]；增加；重要人士"},
+            {"pos": "v.", "mean": "[[膨胀]]；[[隆起]]；[[增强]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "s（联想“蛇”）+ well（井）→ 蛇掉到井里，被泡肿了 → 膨胀"},
+          "ex": {"type": "真", "year": 2021, "en": "When IT is operating as it should, employees' self-confidence swells.", "zh": "当信息技术正常运转时，员工的自信心就会增强。", "key": ["swells"]},
+          "ext": []
+        },
+        {
+          "no": 29, "word": "sword", "freq": 1, "page": 213,
+          "prons": [{"ipa": "/sɔːd/", "senses": [{"pos": "n.", "mean": "[[剑，刀]]"}]}],
+          "tip": {"type": "联想", "text": "s（联想“美女”）+ word（话）→ 这个美女说的话像“剑”一样犀利。"},
+          "ex": {"type": "例", "en": "In fact, the sword hasn't had a military function for many years.", "zh": "事实上，这把剑已经多年没有军事用途了。", "key": ["sword"]},
+          "ext": []
+        },
+        {
+          "no": 30, "word": "arrow", "freq": 1, "page": 213,
+          "prons": [{"ipa": "/ˈærəʊ/", "senses": [{"pos": "n.", "mean": "[[箭]]；[[箭头]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“哎哟”→ 哎哟，他的腿被“箭”射中了。"},
+          "ex": {"type": "真", "year": 2019, "en": "An officer then shot an arrow to put it to sleep.", "zh": "一名警官随后射了一箭使它沉睡。", "key": ["arrow"]},
+          "ext": []
+        },
+        {
+          "no": 31, "word": "sample", "freq": 2, "page": 213,
+          "prons": [{"ipa": "/ˈsɑːmpl/", "senses": [
+            {"pos": "n.", "mean": "[[样品]]；[[试样]]"},
+            {"pos": "v.", "mean": "[[抽样调查]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "s（联想“蛇”）+ ample（充足的）→ 他选取了足量的蛇作为“样品”。"},
+          "ex": {"type": "例", "en": "Women in our sample tend to over-perceive their weight.", "zh": "我们样本中的女性往往过度关注自己的体重。", "key": ["sample"]},
+          "ext": []
+        },
+        {
+          "no": 32, "word": "specimen", "freq": 1, "page": 213,
+          "prons": [{"ipa": "/ˈspesɪmən/", "senses": [{"pos": "n.", "mean": "[[样品]]；[[标本]]"}]}],
+          "tip": {"type": "联想", "text": "speci（联想 special）+ men（人）→ 特别的人可以被选取为研究对象 → 样品"},
+          "ex": {"type": "真", "year": 2019, "en": "It is displaying more fossil specimens.", "zh": "它展示了更多的化石标本。", "key": ["specimens"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 13,
+      "title": "“保证”相关",
+      "pages": [213, 214],
+      "map": {
+        "w": "“保证”相关",
+        "children": [
+          {"w": "insure", "children": [{"w": "insurance", "rel": "扩"}]},
+          {"w": "assure", "children": [
+            {"w": "assurance", "rel": "扩"},
+            {"w": "sure", "rel": "扩"}
+          ]},
+          {"w": "ensure", "children": [{"w": "guarantee"}]},
+          {"w": "promise", "children": [
+            {"w": "promising", "rel": "扩"},
+            {"w": "compromise", "rel": "加前缀"}
+          ]},
+          {"w": "pledge", "children": [
+            {"w": "allege", "rel": "形近", "children": [
+              {"w": "alleged", "rel": "扩"},
+              {"w": "allegedly", "rel": "扩"},
+              {"w": "allegation", "rel": "扩"}
+            ]},
+            {"w": "swear", "rel": "近义", "children": [
+              {"w": "sweat", "rel": "形近", "children": [{"w": "sweater", "rel": "加er"}]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 33, "word": "insure", "freq": 1, "page": 213,
+          "prons": [{"ipa": "/ɪnˈʃʊə(r)/", "senses": [{"pos": "v.", "mean": "[[投保]]；[[确保]]"}]}],
+          "tip": {"type": "联想", "text": "in（里面）+ sure（确定的）→ 他心里确定要“投保”。"},
+          "ex": {"type": "例", "en": "The use of wood was minimised to insure fire safety.", "zh": "为了确保消防安全，尽量减少使用木材。", "key": ["insure"]},
+          "ext": [{"word": "insurance", "ipa": "/ɪnˈʃʊərəns/", "senses": [{"pos": "n.", "mean": "保险；保费；保障措施"}]}]
+        },
+        {
+          "no": 34, "word": "assure", "freq": 2, "page": 213,
+          "prons": [{"ipa": "/əˈʃʊə(r)/", "senses": [{"pos": "v.", "mean": "[[保证]]；[[使确信]]"}]}],
+          "tip": {"type": "构词", "text": "as-（表加强）+ sure（确定的）→ 保证；使确信"},
+          "ex": {"type": "例", "en": "I can assure you that the animals are well cared for.", "zh": "我可以向你保证这些动物都被照看得很好。", "key": ["assure"]},
+          "ext": [
+            {"word": "assurance", "ipa": "/əˈʃʊərəns/", "senses": [{"pos": "n.", "mean": "保证；确信"}]},
+            {"word": "sure", "ipa": "/ʃʊə(r)/", "senses": [
+              {"pos": "adj.", "mean": "确信的，当然的"},
+              {"pos": "adv.", "mean": "确信地，当然地"}
+            ]}
+          ]
+        },
+        {
+          "no": 35, "word": "ensure", "freq": 3, "page": 214,
+          "prons": [{"ipa": "/ɪnˈʃʊə(r)/", "senses": [{"pos": "v.", "mean": "[[保证，确保]]"}]}],
+          "tip": {"type": "构词", "text": "en-（使）+ sure（确定的）→ 保证，确保"},
+          "ex": {"type": "真", "year": 2019, "en": "The United States Postal Service has a system to ensure its employees' safety.", "zh": "美国邮政署有一个系统来确保其员工的安全。", "key": ["ensure"]},
+          "ext": []
+        },
+        {
+          "no": 36, "word": "guarantee", "freq": 3, "page": 214,
+          "prons": [{"ipa": "/ˌɡærənˈtiː/", "senses": [
+            {"pos": "v.", "mean": "[[保证，担保]]"},
+            {"pos": "n.", "mean": "[[保证]]；保证书"}
+          ]}],
+          "tip": {"type": "联想", "text": "guar（联想 guard）+ ant（蚂蚁）+ ee（形似两只眼睛）→ 蚂蚁哨兵瞪着两只小眼睛，“保证”会完成任务。"},
+          "ex": {"type": "例", "en": "We guarantee to deliver your goods within a week.", "zh": "我们保证一周内交货。", "key": ["guarantee"]},
+          "ext": []
+        },
+        {
+          "no": 37, "word": "promise", "freq": 1, "page": 214,
+          "prons": [{"ipa": "/ˈprɒmɪs/", "senses": [
+            {"pos": "v.", "mean": "[[许诺]]；[[保证]]；[[答应]]"},
+            {"pos": "n.", "mean": "[[承诺]]；[[迹象]]；吉兆"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2018, "en": "She wanted to honour her father's promise.", "zh": "她想兑现父亲的承诺。", "key": ["promise"]},
+          "ext": [{"word": "promising", "ipa": "/ˈprɒmɪsɪŋ/", "senses": [{"pos": "adj.", "mean": "有希望的；有前途的"}]}]
+        },
+        {
+          "no": 38, "word": "compromise", "freq": 1, "page": 214,
+          "prons": [{"ipa": "/ˈkɒmprəmaɪz/", "senses": [{"pos": "n. & v.", "mean": "[[妥协，折中]]"}]}],
+          "tip": {"type": "联想", "text": "com-（所有）+ promise（承诺）→ 他“妥协”了，承诺把所有东西都给我。"},
+          "ex": {"type": "真", "year": 2023, "en": "There are a couple of ways to compromise on the issue.", "zh": "在这个问题上有几种折中的方法。", "key": ["compromise"]},
+          "ext": []
+        },
+        {
+          "no": 39, "word": "pledge", "freq": 1, "page": 214,
+          "prons": [{"ipa": "/pledʒ/", "senses": [
+            {"pos": "n.", "mean": "[[保证]]；[[诺言]]"},
+            {"pos": "v.", "mean": "正式承诺；[[（使）发誓]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“扑来鸡”→ 一只鸡突然朝他扑来，他“发誓”一定要抓住它。"},
+          "ex": {"type": "例", "en": "It has pledged to take the lead in reducing carbon emissions.", "zh": "它承诺率先减少碳排放。", "key": ["pledged"]},
+          "ext": []
+        },
+        {
+          "no": 40, "word": "allege", "freq": 1, "page": 214,
+          "prons": [{"ipa": "/əˈledʒ/", "senses": [{"pos": "v.", "mean": "（未提出证据的）[[断言]]；[[声称]]；[[指控]]"}]}],
+          "tip": {"type": "联想", "text": "al-（一再地）+ lege（音似“乐极”）→ 他今天一再地表示快乐极了，我“断言”他遇到了好事。"},
+          "ex": {"type": "例", "en": "The prosecution alleges that she was driving carelessly.", "zh": "控方指控她粗心驾驶。", "key": ["alleges"]},
+          "ext": [
+            {"word": "alleged", "ipa": "/əˈledʒd/", "senses": [{"pos": "adj.", "mean": "被指控的，涉嫌的"}]},
+            {"word": "allegedly", "ipa": "/əˈledʒɪdli/", "senses": [{"pos": "adv.", "mean": "据说"}]},
+            {"word": "allegation", "ipa": "/ˌæləˈɡeɪʃn/", "senses": [{"pos": "n.", "mean": "指控；（无证据的）说法"}]}
+          ]
+        },
+        {
+          "no": 41, "word": "swear", "freq": 1, "page": 214,
+          "prons": [{"ipa": "/sweə(r)/", "senses": [{"pos": "v.", "mean": "[[发誓]]；[[诅咒]]"}]}],
+          "tip": {"type": "联想", "text": "s（联想“美女”）+ wear（穿）→ 美女穿着正式，是要去宣誓 → 发誓"},
+          "ex": {"type": "例", "en": "I swear I had nothing to do with it.", "zh": "我发誓，这跟我一点关系也没有。", "key": ["swear"]},
+          "ext": []
+        },
+        {
+          "no": 42, "word": "sweat", "freq": 2, "page": 214,
+          "prons": [{"ipa": "/swet/", "senses": [
+            {"pos": "n.", "mean": "[[汗]]"},
+            {"pos": "v.", "mean": "[[出汗]]；[[辛苦工作]]；担心，焦虑"}
+          ]}],
+          "tip": {"type": "对照", "text": "所有甜蜜的（sweet）东西都是用汗水（sweat）换来的。"},
+          "ex": {"type": "例", "en": "His skin was agleam with sweat.", "zh": "他的皮肤因出汗而发光。", "key": ["sweat"]},
+          "ext": [{"word": "sweater", "ipa": "/ˈswetə(r)/", "senses": [{"pos": "n.", "mean": "毛衣；线衣"}]}]
+        }
+      ]
+    }
+  ],
+  "unit_summary": {"groups": 13, "words": 194, "ext": 113, "zhen": 84, "li": 110}
+}

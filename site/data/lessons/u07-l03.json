@@ -1,0 +1,634 @@
+{
+  "id": "u07-l03",
+  "part": 1,
+  "unit": 7,
+  "lesson": 3,
+  "pages": [203, 209],
+  "groups": [
+    {
+      "no": 7,
+      "title": "device 相关",
+      "pages": [203, 204],
+      "map": {
+        "w": "device 相关",
+        "children": [
+          {"w": "equipment", "children": [{"w": "equip", "rel": "扩"}]},
+          {"w": "apparatus"},
+          {"w": "fix", "children": [
+            {"w": "fixed", "rel": "扩", "children": [{"w": "fixation", "children": [{"w": "fixture"}]}]}
+          ]},
+          {"w": "air conditioning", "children": [
+            {"w": "air conditioner", "rel": "扩"},
+            {"w": "furnish", "rel": "相关", "children": [{"w": "furniture", "rel": "扩"}]},
+            {"w": "decorate", "rel": "相关", "children": [
+              {"w": "decoration", "rel": "扩"},
+              {"w": "decorative", "rel": "扩"},
+              {"w": "ornament", "rel": "近义", "children": [{"w": "ornamental", "rel": "扩"}]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "device", "freq": 3, "page": 203,
+          "prons": [{"ipa": "/dɪˈvaɪs/", "senses": [{"pos": "n.", "mean": "[[设备]]；手段"}]}],
+          "tip": {"type": "联想", "text": "de（音似“弟”）+ vi（形似罗马数字 6）+ ce（联想“车”）→ 弟弟用六辆车拉“设备”。"},
+          "ex": {"type": "真", "year": 2021, "en": "The survey allowed for reading materials on a digital device.", "zh": "调查允许在数字设备上阅读材料。", "key": ["device"]},
+          "ext": []
+        },
+        {
+          "no": 2, "word": "equipment", "freq": 1, "page": 203,
+          "prons": [{"ipa": "/ɪˈkwɪpmənt/", "senses": [{"pos": "n.", "mean": "[[用具，设备]]；装备过程"}]}],
+          "tip": {"type": "联想", "text": "equip（音似“一块布”）+ -ment（名词后缀）→ 仆人总是拿着一块布当作清洁“用具”。"},
+          "ex": {"type": "真", "year": 2021, "en": "This requires purchasing desks, chairs and office equipment.", "zh": "这需要购买桌椅和办公设备。", "key": ["equipment"]},
+          "ext": [{"word": "equip", "ipa": "/ɪˈkwɪp/", "senses": [{"pos": "v.", "mean": "配备，装备；使有所准备；使有能力"}]}]
+        },
+        {
+          "no": 3, "word": "apparatus", "freq": 1, "page": 203,
+          "prons": [{"ipa": "/ˌæpəˈreɪtəs/", "senses": [{"pos": "n.", "mean": "[[仪器，器械]]"}]}],
+          "tip": {"type": "联想", "text": "appar（联想 appear）+ a（—）+ tus（联想“吐丝”）→ 科技时代，出现了一种会吐丝的“仪器”。"},
+          "ex": {"type": "例", "en": "Firefighters needed breathing apparatus to enter the burning house.", "zh": "消防队员需要呼吸器械以便进入燃烧的大楼。", "key": ["apparatus"]},
+          "ext": []
+        },
+        {
+          "no": 4, "word": "fix", "freq": 1, "page": 203,
+          "prons": [{"ipa": "/fɪks/", "senses": [
+            {"pos": "v.", "mean": "[[修理，校正]]；使固定；找到，[[确定]]，说出"},
+            {"pos": "n.", "mean": "[[解决方法]]；困境；[[定位]]；理解"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2016, "en": "They lack talent to fix their deepening problems.", "zh": "他们缺乏解决日益严重的问题的才能。", "key": ["fix"]},
+          "ext": [
+            {"word": "fixed", "ipa": "/fɪkst/", "senses": [{"pos": "adj.", "mean": "固定的；不易改变的；执着的"}]},
+            {"word": "fixation", "ipa": "/fɪkˈseɪʃn/", "senses": [{"pos": "n.", "mean": "（对……的）异常依恋，癖；固定（指气态变成固态的过程）"}]},
+            {"word": "fixture", "ipa": "/ˈfɪkstʃə(r)/", "senses": [{"pos": "n.", "mean": "固定设施；（定期定点举行的）体育活动，体育节"}]}
+          ]
+        },
+        {
+          "no": 5, "word": "air conditioning", "freq": 1, "page": 203,
+          "prons": [{"ipa": "/ˈeə kəndɪʃənɪŋ/", "senses": [{"pos": "n.", "mean": "[[空气调节系统]]"}]}],
+          "tip": {"type": "联想", "text": "汽车的 A/C 按钮就是空调的开关键 → 空气调节系统"},
+          "ex": {"type": "例", "en": "The air conditioning can adjust automatically.", "zh": "空调可以自动调节。", "key": ["air conditioning"]},
+          "ext": [{"word": "air conditioner", "ipa": "/ˈeə kəndɪʃənə(r)/", "senses": [{"pos": "n.", "mean": "空调机，空调设备"}]}]
+        },
+        {
+          "no": 6, "word": "furnish", "freq": 2, "page": 203,
+          "prons": [{"ipa": "/ˈfɜːnɪʃ/", "senses": [{"pos": "v.", "mean": "[[布置家具]]；供应，提供"}]}],
+          "tip": {"type": "对照", "text": "有些人喜欢用毛皮（fur）布置家具（furnish）。"},
+          "ex": {"type": "例", "en": "The room was furnished with antiques.", "zh": "房间里摆放了古董。", "key": ["furnished with"]},
+          "ext": [{"word": "furniture", "ipa": "/ˈfɜːnɪtʃə(r)/", "senses": [{"pos": "n.", "mean": "（可移动的）家具"}]}]
+        },
+        {
+          "no": 7, "word": "decorate", "freq": 1, "page": 203,
+          "prons": [{"ipa": "/ˈdekəreɪt/", "senses": [{"pos": "v.", "mean": "[[装饰，装修]]"}]}],
+          "tip": {"type": "联想", "text": "de（联想“弟”）+ cor（联想 core）+ ate → 弟弟想买一套核心地段的房子，然后亲自“装修”。"},
+          "ex": {"type": "真", "year": 2018, "en": "It has walls decorated with jewels.", "zh": "它的墙上装饰着珠宝。", "key": ["decorated with"]},
+          "ext": [
+            {"word": "decoration", "ipa": "/ˌdekəˈreɪʃn/", "senses": [{"pos": "n.", "mean": "装饰，装潢"}]},
+            {"word": "decorative", "ipa": "/ˈdekərətɪv/", "senses": [{"pos": "adj.", "mean": "装饰性的，作装饰用的"}]}
+          ]
+        },
+        {
+          "no": 8, "word": "ornament", "freq": 1, "page": 204,
+          "prons": [
+            {"ipa": "/ˈɔːnəmənt/", "senses": [{"pos": "n.", "mean": "[[装饰，点缀]]；饰物"}]},
+            {"ipa": "/ˈɔːnəment/", "senses": [{"pos": "v.", "mean": "[[装饰；美化]]"}]}
+          ],
+          "tip": {"type": "联想", "text": "ornam（音似“哦那美”）+ ent → 哦，那栋房子的“装饰”真美。"},
+          "ex": {"type": "真", "year": 2015, "en": "The British public loved his cheap gold earrings and his tasteless silver ornaments.", "zh": "英国公众喜欢他廉价的金耳环和毫无品位的银饰。", "key": ["ornaments"]},
+          "ext": [{"word": "ornamental", "ipa": "/ˌɔːnəˈmentl/", "senses": [{"pos": "adj.", "mean": "装饰性的，点缀的"}]}]
+        }
+      ]
+    },
+    {
+      "no": 8,
+      "title": "clude 相关",
+      "pages": [204, 205],
+      "map": {
+        "w": "clude 相关",
+        "children": [
+          {"w": "conclude", "children": [
+            {"w": "conclusive", "rel": "扩", "children": [
+              {"w": "conclusion", "children": [
+                {"w": "summary", "rel": "近义", "children": [
+                  {"w": "summarise", "rel": "扩", "children": [{"w": "sum", "rel": "相关"}]}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"w": "include", "children": [
+            {"w": "including", "rel": "扩", "children": [{"w": "inclusion", "children": [{"w": "inclusive"}]}]},
+            {"w": "exclude", "rel": "反义", "children": [
+              {"w": "exclusive", "rel": "扩"},
+              {"w": "exclusion", "rel": "扩"}
+            ]},
+            {"w": "eliminate", "rel": "反义", "children": [{"w": "elimination", "rel": "扩"}]},
+            {"w": "except", "rel": "反义", "children": [
+              {"w": "exception", "rel": "扩", "children": [{"w": "exceptional", "rel": "扩"}]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 9, "word": "conclude", "freq": 2, "page": 204,
+          "prons": [{"ipa": "/kənˈkluːd/", "senses": [{"pos": "v.", "mean": "[[断定]]；得出结论；[[结束]]"}]}],
+          "tip": {"type": "构词", "text": "con-（所有的）+ clude（= close）→ 得出结论；结束"},
+          "ex": {"type": "真", "year": 2016, "en": "Most animals conclude that a situation is hopeless and beyond their control.", "zh": "大多数动物得出结论，情况是无望的，无法控制的。", "key": ["conclude"]},
+          "ext": [
+            {"word": "conclusion", "ipa": "/kənˈkluːʒn/", "senses": [{"pos": "n.", "mean": "结束，结局；结论；推论"}]},
+            {"word": "conclusive", "ipa": "/kənˈkluːsɪv/", "senses": [{"pos": "adj.", "mean": "确凿的；结论性的"}]}
+          ]
+        },
+        {
+          "no": 10, "word": "summary", "freq": 1, "page": 204,
+          "prons": [{"ipa": "/ˈsʌməri/", "senses": [
+            {"pos": "n.", "mean": "[[总结]]"},
+            {"pos": "adj.", "mean": "[[总结性的]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "to sum up 总而言之，概括地说 → summary n."},
+          "ex": {"type": "例", "en": "I made a summary report for the records.", "zh": "我对记录的内容做了总结报告。", "key": ["summary"]},
+          "ext": [{"word": "summarise", "alt": "-ize", "ipa": "/ˈsʌməraɪz/", "senses": [{"pos": "v.", "mean": "总结，概括"}]}]
+        },
+        {
+          "no": 11, "word": "sum", "freq": 3, "page": 204,
+          "prons": [{"ipa": "/sʌm/", "senses": [{"pos": "n.", "mean": "[[金额]]；算术；[[总数]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“仨木”→ 这个房间总共有三道木门 → 总数"},
+          "ex": {"type": "真", "year": 2016, "en": "He gives his staff a considerable sum for tips.", "zh": "他给他的员工一笔丰厚的小费。", "key": ["sum"]},
+          "ext": []
+        },
+        {
+          "no": 12, "word": "include", "freq": 1, "page": 204,
+          "prons": [{"ipa": "/ɪnˈkluːd/", "senses": [{"pos": "v.", "mean": "[[包括]]；使成为……的一部分"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2015, "en": "GNP includes loss in value of factories and equipment.", "zh": "国民生产总值包括工厂和设备的价值损失。", "key": ["includes"]},
+          "ext": [
+            {"word": "including", "ipa": "/ɪnˈkluːdɪŋ/", "senses": [{"pos": "prep.", "mean": "包括……在内"}]},
+            {"word": "inclusion", "ipa": "/ɪnˈkluːʒn/", "senses": [{"pos": "n.", "mean": "（被）包括，包含"}]},
+            {"word": "inclusive", "ipa": "/ɪnˈkluːsɪv/", "senses": [{"pos": "adj.", "mean": "包括……的，包括一切的"}]}
+          ]
+        },
+        {
+          "no": 13, "word": "exclude", "freq": 1, "page": 204,
+          "prons": [{"ipa": "/ɪkˈskluːd/", "senses": [{"pos": "v.", "mean": "[[不包括]]；防止……进入；[[排除]]"}]}],
+          "tip": {"type": "构词", "text": "ex-（向外）+ clude（= close）→ 把……关闭在外 → 不包括；排除"},
+          "ex": {"type": "例", "en": "Buses run every hour, Sundays excluded.", "zh": "公共汽车每小时一班，星期天除外。", "key": ["excluded"]},
+          "ext": [
+            {"word": "exclusive", "ipa": "/ɪkˈskluːsɪv/", "senses": [
+              {"pos": "n.", "mean": "独家新闻，独家报道"},
+              {"pos": "adj.", "mean": "独有的；排外的"}
+            ]},
+            {"word": "exclusion", "ipa": "/ɪkˈskluːʒn/", "senses": [{"pos": "n.", "mean": "排斥；排除在外"}]}
+          ]
+        },
+        {
+          "no": 14, "word": "eliminate", "freq": 2, "page": 205,
+          "prons": [{"ipa": "/ɪˈlɪmɪneɪt/", "senses": [{"pos": "v.", "mean": "[[排除]]；（比赛中）[[淘汰]]"}]}],
+          "tip": {"type": "联想", "text": "e-（出去）+ limi（联想 limit）+ n（联想“你”）+ -ate（动词后缀）→ 把针对你的限制剔除出去 → 排除"},
+          "ex": {"type": "真", "year": 2022, "en": "At first, you just eliminate the obvious distractions and explore the rest.", "zh": "一开始，你只需要排除那些明显的干扰，然后探索剩下的内容。", "key": ["eliminate"]},
+          "ext": [{"word": "elimination", "ipa": "/ɪˌlɪmɪˈneɪʃn/", "senses": [{"pos": "n.", "mean": "消除；淘汰"}]}]
+        },
+        {
+          "no": 15, "word": "except", "freq": 1, "page": 205,
+          "prons": [{"ipa": "/ɪkˈsept/", "senses": [
+            {"pos": "v.", "mean": "[[不包括]]；把……除外"},
+            {"pos": "prep.", "mean": "（用于所言不包括的人或事物前）[[除……之外]]"},
+            {"pos": "conj.", "mean": "[[除了]]；只是"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2022, "en": "We were assured that, except for low grades or a raise in family income, no money would be taken away.", "zh": "我们得到保证，除了成绩不佳或家庭收入增加外，任何钱都不会被拿走。", "key": ["except for"]},
+          "ext": []
+        },
+        {
+          "no": 16, "word": "exception", "freq": 3, "page": 205,
+          "prons": [{"ipa": "/ɪkˈsepʃn/", "senses": [{"pos": "n.", "mean": "一般情况以外的人（或事物）；[[例外]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Universities today are in the business of education, and mine is no exception.", "zh": "现在的大学都以教育为业，我的大学也不例外。", "key": ["exception"]},
+          "ext": [{"word": "exceptional", "ipa": "/ɪkˈsepʃənl/", "senses": [{"pos": "adj.", "mean": "杰出的，卓越的"}]}]
+        }
+      ]
+    },
+    {
+      "no": 9,
+      "title": "car 相关",
+      "pages": [205, 207],
+      "map": {
+        "w": "car 相关",
+        "children": [
+          {"w": "carpet", "children": [
+            {"w": "pigeon", "rel": "pet相关", "children": [
+              {"w": "herd", "rel": "相关"},
+              {"w": "vivid", "rel": "相关", "children": [
+                {"w": "survive", "rel": "同根", "children": [
+                  {"w": "survival", "rel": "扩"},
+                  {"w": "survivor", "rel": "扩"},
+                  {"w": "appetite", "rel": "相关"}
+                ]}
+              ]}
+            ]},
+            {"w": "blanket", "rel": "近义", "children": [
+              {"w": "blank", "rel": "去et", "children": [
+                {"w": "vacant", "rel": "近义", "children": [
+                  {"w": "vacancy", "rel": "扩", "children": [{"w": "vacuum", "rel": "相关"}]}
+                ]},
+                {"w": "pad", "rel": "相关"}
+              ]}
+            ]}
+          ]},
+          {"w": "career", "children": [
+            {"w": "cargo", "children": [
+              {"w": "scar", "children": [
+                {"w": "carrot", "children": [{"w": "root", "rel": "相关"}]}
+              ]}
+            ]}
+          ]},
+          {"w": "carpenter", "children": [
+            {"w": "cart", "children": [
+              {"w": "carriage", "rel": "近义", "children": [{"w": "carrier", "rel": "形近"}]}
+            ]}
+          ]},
+          {"w": "cartoon", "children": [
+            {"w": "paint", "rel": "相关", "children": [
+              {"w": "painter", "rel": "扩"},
+              {"w": "painting", "rel": "扩", "children": [{"w": "chart", "rel": "相关"}]}
+            ]},
+            {"w": "photography", "rel": "相关", "children": [
+              {"w": "photograph", "rel": "扩"},
+              {"w": "photographic", "rel": "扩"},
+              {"w": "photographer", "rel": "扩"}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 17, "word": "herd", "freq": 1, "page": 205,
+          "prons": [{"ipa": "/hɜːd/", "senses": [
+            {"pos": "n.", "mean": "兽群，[[牧群]]"},
+            {"pos": "v.", "mean": "[[放牧]]；驱赶（兽群）"}
+          ]}],
+          "tip": {"type": "联想", "text": "her（她的）+ d（联想“的”）→ 那群羊是她的，她是个“放牧”的小女孩。"},
+          "ex": {"type": "例", "en": "They want to get back to their herds.", "zh": "他们想回到自己的牧群。", "key": ["herds"]},
+          "ext": []
+        },
+        {
+          "no": 18, "word": "pigeon", "freq": 1, "page": 205,
+          "prons": [{"ipa": "/ˈpɪdʒɪn/", "senses": [{"pos": "n.", "mean": "[[鸽子]]"}]}],
+          "tip": {"type": "联想", "text": "母婴用品品牌“贝亲”就是 pigeon（鸽子）的音译，表达了对婴儿茁壮成长、社会和平的期许。"},
+          "ex": {"type": "例", "en": "Pigeons are often seen as a symbol of peace.", "zh": "鸽子常被认为是和平的象征。", "key": ["Pigeons"]},
+          "ext": []
+        },
+        {
+          "no": 19, "word": "vivid", "freq": 1, "page": 205,
+          "prons": [{"ipa": "/ˈvɪvɪd/", "senses": [{"pos": "adj.", "mean": "[[生动的]]，逼真的；鲜艳的"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“娓娓的”→ 娓娓动听的 → 生动的"},
+          "ex": {"type": "例", "en": "A vivid example of such replay can be seen in a video.", "zh": "这种回放的生动例子可以在一段视频中看到。", "key": ["vivid"]},
+          "ext": []
+        },
+        {
+          "no": 20, "word": "survive", "freq": 3, "page": 205,
+          "prons": [{"ipa": "/səˈvaɪv/", "senses": [{"pos": "v.", "mean": "[[生存]]；幸免于难，[[幸存]]；艰难度过"}]}],
+          "tip": {"type": "构词", "text": "sur-（上面）+ viv(e)（= live）→ 从死亡线上面活了下来 → 幸存"},
+          "ex": {"type": "真", "year": 2023, "en": "Remember, failure is inevitable, and every failure you survive is a learning experience.", "zh": "记住，失败是不可避免的，你艰难度过的每一次失败都是一次学习的经历。", "key": ["survive"]},
+          "ext": [
+            {"word": "survival", "ipa": "/səˈvaɪvl/", "senses": [{"pos": "n.", "mean": "幸存，生存；残存物"}]},
+            {"word": "survivor", "ipa": "/səˈvaɪvə(r)/", "senses": [{"pos": "n.", "mean": "生还者，幸存者"}]}
+          ]
+        },
+        {
+          "no": 21, "word": "appetite", "freq": 2, "page": 206,
+          "prons": [{"ipa": "/ˈæpɪtaɪt/", "senses": [{"pos": "n.", "mean": "[[胃口]]；喜爱"}]}],
+          "tip": {"type": "联想", "text": "ap-（一再）+ pet（宠物）+ ite → 他一再地提到家里的宠物，说明很“喜爱”它。"},
+          "ex": {"type": "例", "en": "Don't spoil your appetite by eating between meals.", "zh": "不要在两餐之间吃东西，以免影响胃口。", "key": ["appetite"]},
+          "ext": []
+        },
+        {
+          "no": 22, "word": "carpet", "freq": 1, "page": 206,
+          "prons": [{"ipa": "/ˈkɑːpɪt/", "senses": [{"pos": "n.", "mean": "[[地毯]]，毛毯"}]}],
+          "tip": {"type": "联想", "text": "car（汽车）+ pet（宠物）→ 汽车上载有宠物时，最好铺块“地毯”。"},
+          "ex": {"type": "真", "year": 2018, "en": "To find out, we introduced bacteria to squares of tile, carpet or wood.", "zh": "为了找到答案，我们将细菌引入了瓷砖、地毯或木材中。", "key": ["carpet"]},
+          "ext": []
+        },
+        {
+          "no": 23, "word": "pad", "freq": 2, "page": 206,
+          "prons": [{"ipa": "/pæd/", "senses": [
+            {"pos": "n.", "mean": "[[垫]]；[[便笺本]]"},
+            {"pos": "v.", "mean": "轻轻地走"}
+          ]}],
+          "tip": {"type": "对照", "text": "iPad 苹果平板电脑 → pad n."},
+          "ex": {"type": "例", "en": "She always kept a pad by the phone.", "zh": "她总是在电话旁放一个便笺本。", "key": ["pad"]},
+          "ext": []
+        },
+        {
+          "no": 24, "word": "blanket", "freq": 1, "page": 206,
+          "prons": [{"ipa": "/ˈblæŋkɪt/", "senses": [{"pos": "n.", "mean": "[[毛毯]]，毯子，羊毛毯"}]}],
+          "tip": {"type": "对照", "text": "他身上披了条毯子（blanket），脸色煞白（blanch）。"},
+          "ex": {"type": "例", "en": "The atmosphere again acts as our protective blanket on earth.", "zh": "大气再次充当着我们在地球上的保护毯。", "key": ["blanket"]},
+          "ext": []
+        },
+        {
+          "no": 25, "word": "blank", "freq": 1, "page": 206,
+          "prons": [{"ipa": "/blæŋk/", "senses": [
+            {"pos": "adj.", "mean": "[[空白的]]；空着的；没有表情的"},
+            {"pos": "n.", "mean": "[[空白处]]，空格"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“不来客”→ 我开了一家面馆，晚上不来客人，总是“空着的”。"},
+          "ex": {"type": "例", "en": "At that moment his brain went blank.", "zh": "那一刻，他的脑子一片空白。", "key": ["blank"]},
+          "ext": []
+        },
+        {
+          "no": 26, "word": "vacant", "freq": 1, "page": 206,
+          "prons": [{"ipa": "/ˈveɪkənt/", "senses": [{"pos": "adj.", "mean": "[[空缺的]]，[[未被占用的]]；茫然的"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“未垦的”→ 一片未被开垦的土地 → 未被占用的"},
+          "ex": {"type": "例", "en": "The seat next to him was vacant.", "zh": "他旁边的座位空着。", "key": ["vacant"]},
+          "ext": [{"word": "vacancy", "ipa": "/ˈveɪkənsi/", "senses": [{"pos": "n.", "mean": "空缺，空额；空房间；空虚"}]}]
+        },
+        {
+          "no": 27, "word": "vacuum", "freq": 1, "page": 206,
+          "prons": [{"ipa": "/ˈvækjuːm/", "senses": [
+            {"pos": "n.", "mean": "[[真空]]"},
+            {"pos": "v.", "mean": "用真空吸尘器清扫"}
+          ]}],
+          "tip": {"type": "联想", "text": "vacu（联想 vacant）+ u + m（联想“妹”）→ 妹妹内心是空缺的，仿佛“真空”状态。"},
+          "ex": {"type": "例", "en": "Exclusion of air creates a vacuum in the bottle.", "zh": "瓶子里的空气排除后就产生真空。", "key": ["vacuum"]},
+          "ext": []
+        },
+        {
+          "no": 28, "word": "career", "freq": 3, "page": 206,
+          "prons": [{"ipa": "/kəˈrɪə(r)/", "senses": [{"pos": "n.", "mean": "[[职业]]；事业"}]}],
+          "tip": {"type": "联想", "text": "car（汽车）+ (e)er（表示人的后缀）→ 这个开汽车的人的“职业”是司机。"},
+          "ex": {"type": "真", "year": 2017, "en": "In the process, she built a radically new life and career.", "zh": "在这个过程中，她建立了一番全新的生活和事业。", "key": ["career"]},
+          "ext": []
+        },
+        {
+          "no": 29, "word": "cargo", "freq": 1, "page": 206,
+          "prons": [{"ipa": "/ˈkɑːɡəʊ/", "senses": [{"pos": "n.", "mean": "（船或飞机装载的）[[货物]]"}]}],
+          "tip": {"type": "联想", "text": "car（车）+ go（去）→ 车装满了“货物”才出发。"},
+          "ex": {"type": "真", "year": 2021, "en": "It had one of its cargo planes land at a wrong airport.", "zh": "它使一架货机降落在了一个错误的机场。", "key": ["cargo"]},
+          "ext": []
+        },
+        {
+          "no": 30, "word": "scar", "freq": 1, "page": 206,
+          "prons": [{"ipa": "/skɑː(r)/", "senses": [
+            {"pos": "n.", "mean": "[[伤疤]]；[[创伤]]"},
+            {"pos": "v.", "mean": "[[使结疤]]；使……破损"}
+          ]}],
+          "tip": {"type": "联想", "text": "s（联想“死”）+ car（汽车）→ 他从车祸中死里逃生，身上留下了“伤疤”。"},
+          "ex": {"type": "例", "en": "So many of our own past scars and dashed hopes can surface.", "zh": "我们自己过去的许多伤疤和破灭的希望都会浮现出来。", "key": ["scars"]},
+          "ext": []
+        },
+        {
+          "no": 31, "word": "carrot", "freq": 1, "page": 207,
+          "prons": [{"ipa": "/ˈkærət/", "senses": [{"pos": "n.", "mean": "[[胡萝卜]]"}]}],
+          "tip": {"type": "联想", "text": "car（汽车）+ rot（腐烂）→ 汽车上装了腐烂的“胡萝卜”。"},
+          "ex": {"type": "例", "en": "Chop the carrots up into small pieces.", "zh": "把胡萝卜切成小块。", "key": ["carrots"]},
+          "ext": []
+        },
+        {
+          "no": 32, "word": "root", "freq": 1, "page": 207,
+          "prons": [{"ipa": "/ruːt/", "senses": [
+            {"pos": "n.", "mean": "[[根]]；[[根源]]，[[基础]]"},
+            {"pos": "v.", "mean": "（使）[[生根]]，[[使固定]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "这盆植物的根（root）腐烂（rot）了。"},
+          "ex": {"type": "真", "year": 2017, "en": "Doctors used carrot seeds and roots as medicine.", "zh": "医生用胡萝卜的种子和根作药。", "key": ["roots"]},
+          "ext": []
+        },
+        {
+          "no": 33, "word": "carpenter", "freq": 1, "page": 207,
+          "prons": [{"ipa": "/ˈkɑːpəntə(r)/", "senses": [{"pos": "n.", "mean": "[[木工]]，[[木匠]]"}]}],
+          "tip": {"type": "联想", "text": "car（汽车）+ pen（联想“棚”）+ t（联想“他”）+ -er（表示人的后缀）→ 他会修理汽车和车棚，是个全能的“木匠”。"},
+          "ex": {"type": "真", "year": 2018, "en": "They were skilled carpenters themselves.", "zh": "他们自己就是技术熟练的木匠。", "key": ["carpenters"]},
+          "ext": []
+        },
+        {
+          "no": 34, "word": "cartoon", "freq": 1, "page": 207,
+          "prons": [{"ipa": "/kɑːˈtuːn/", "senses": [{"pos": "n.", "mean": "（报刊中与政治或时事有关的）[[漫画]]，[[讽刺画]]；[[动画片]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“卡通”。"},
+          "ex": {"type": "真", "year": 2022, "en": "As a child I used to love the Scooby-Doo cartoons.", "zh": "当我还是个孩子的时候，我很喜欢《史酷比》动画片。", "key": ["cartoons"]},
+          "ext": []
+        },
+        {
+          "no": 35, "word": "paint", "freq": 1, "page": 207,
+          "prons": [{"ipa": "/peɪnt/", "senses": [
+            {"pos": "n.", "mean": "[[油漆]]；[[颜料]]"},
+            {"pos": "v.", "mean": "在……上刷油漆；用颜料画；[[描绘]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“喷它”→ 他用“颜料”喷绘墙体。"},
+          "ex": {"type": "真", "year": 2017, "en": "Life Reimagined paints a picture of middle age that is far from gloomy.", "zh": "《重新想象的生活》描绘了一幅远非悲观的中年图景。", "key": ["paints"]},
+          "ext": [
+            {"word": "painting", "ipa": "/ˈpeɪntɪŋ/", "senses": [{"pos": "n.", "mean": "油画；绘画；着色"}]},
+            {"word": "painter", "ipa": "/ˈpeɪntə(r)/", "senses": [{"pos": "n.", "mean": "油漆匠"}]}
+          ]
+        },
+        {
+          "no": 36, "word": "photography", "freq": 1, "page": 207,
+          "prons": [{"ipa": "/fəˈtɒɡrəfi/", "senses": [{"pos": "n.", "mean": "[[照相术]]，[[摄影]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2017, "en": "Its picture won a photography prize.", "zh": "它的照片获得了摄影奖。", "key": ["photography"]},
+          "ext": [
+            {"word": "photograph", "ipa": "/ˈfəʊtəɡrɑːf/", "senses": [
+              {"pos": "n.", "mean": "照片，相片"},
+              {"pos": "v.", "mean": "拍照，照相"}
+            ]},
+            {"word": "photographic", "ipa": "/ˌfəʊtəˈɡræfɪk/", "senses": [{"pos": "adj.", "mean": "摄影的；照片的"}]},
+            {"word": "photographer", "ipa": "/fəˈtɒɡrəfə(r)/", "senses": [{"pos": "n.", "mean": "拍照者，摄影师"}]}
+          ]
+        },
+        {
+          "no": 37, "word": "chart", "freq": 1, "page": 207,
+          "prons": [{"ipa": "/tʃɑːt/", "senses": [{"pos": "n.", "mean": "[[图]]，[[图表]]；[[海图]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“插它”→ 我在幻灯片上插入了一张“图表”。"},
+          "ex": {"type": "例", "en": "The accompanying chart shows data for eight countries.", "zh": "附图显示了八个国家的数据。", "key": ["chart"]},
+          "ext": []
+        },
+        {
+          "no": 38, "word": "carrier", "freq": 1, "page": 207,
+          "prons": [{"ipa": "/ˈkæriə(r)/", "senses": [{"pos": "n.", "mean": "（尤指经营空运的）[[运输公司]]；[[运输工具]]；[[携带者]]"}]}],
+          "tip": {"type": "对照", "text": "carry v.携带 → carrier n."},
+          "ex": {"type": "真", "year": 2020, "en": "It can be seen from the cheapest budget airlines to the world's largest carriers.", "zh": "从最便宜的廉价航空公司到世界上最大的航空公司，都可以看到这一点。", "key": ["carriers"]},
+          "ext": []
+        },
+        {
+          "no": 39, "word": "carriage", "freq": 2, "page": 207,
+          "prons": [{"ipa": "/ˈkærɪdʒ/", "senses": [{"pos": "n.", "mean": "（火车的）[[客车厢]]；[[四轮大马车]]；[[婴儿车]]；[[运输]]"}]}],
+          "tip": {"type": "联想", "text": "carri（联想 carry）+ age（时代）→ 在以前那个时代，运输东西要用“四轮马车”。"},
+          "ex": {"type": "真", "year": 2019, "en": "There are mothers pushing baby carriages, and old women with walkers.", "zh": "有推着婴儿车的母亲，还有推着助行器的老妇人。", "key": ["carriages"]},
+          "ext": []
+        },
+        {
+          "no": 40, "word": "cart", "freq": 1, "page": 207,
+          "prons": [{"ipa": "/kɑːt/", "senses": [{"pos": "n.", "mean": "（两轮或四轮）[[运货马车]]；[[手推车]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“卡他”→ 他推着“手推车”上扶梯时被卡住了。"},
+          "ex": {"type": "真", "year": 2018, "en": "People are cheering and holding their carts in the air.", "zh": "人们欢呼着，把手推车举到空中。", "key": ["carts"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 10,
+      "title": "“汽车”相关",
+      "pages": [208, 209],
+      "map": {
+        "w": "“汽车”相关",
+        "children": [
+          {"w": "automate", "children": [
+            {"w": "automation", "rel": "扩", "children": [
+              {"w": "automatic", "children": [{"w": "automatically"}]}
+            ]},
+            {"w": "engine", "rel": "相关", "children": [
+              {"w": "engineer", "rel": "相关", "children": [{"w": "engineering", "rel": "扩"}]},
+              {"w": "motor", "rel": "近义", "children": [{"w": "motel", "rel": "相关"}]}
+            ]}
+          ]},
+          {"w": "vehicle", "children": [
+            {"w": "petrol", "rel": "相关", "children": [
+              {"w": "petroleum", "rel": "加eum", "children": [
+                {"w": "coach", "rel": "相关"},
+                {"w": "horn", "rel": "相关"}
+              ]}
+            ]},
+            {"w": "fleet", "rel": "相关", "children": [
+              {"w": "flee", "rel": "形近"},
+              {"w": "tunnel", "rel": "相关"},
+              {"w": "channel", "rel": "相关"},
+              {"w": "steer", "rel": "相关"}
+            ]}
+          ]},
+          {"w": "breakdown", "children": [
+            {"w": "crack", "rel": "相关", "children": [{"w": "cracker", "rel": "扩"}]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 41, "word": "automate", "freq": 1, "page": 208,
+          "prons": [{"ipa": "/ˈɔːtəmeɪt/", "senses": [{"pos": "v.", "mean": "[[使自动化]]"}]}],
+          "tip": {"type": "构词", "text": "auto（自动的）+ -(m)ate（使……成为）→ 使自动化"},
+          "ex": {"type": "例", "en": "Automated grading systems are now widespread.", "zh": "自动评分系统现在很普遍。", "key": ["Automated"]},
+          "ext": [{"word": "automation", "ipa": "/ˌɔːtəˈmeɪʃn/", "senses": [{"pos": "n.", "mean": "自动化；自动操作"}]}]
+        },
+        {
+          "no": 42, "word": "automatic", "freq": 1, "page": 208,
+          "prons": [{"ipa": "/ˌɔːtəˈmætɪk/", "senses": [
+            {"pos": "adj.", "mean": "[[自动的]]；无意识的；必然的"},
+            {"pos": "n.", "mean": "[[自动手枪（或步枪）]]；[[自动变速汽车]]；[[自动换挡汽车]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2017, "en": "Most drivers have test driven cars with automatic braking features.", "zh": "大多数驾驶员都试驾过带有自动制动功能的汽车。", "key": ["automatic"]},
+          "ext": [{"word": "automatically", "ipa": "/ˌɔːtəˈmætɪkli/", "senses": [{"pos": "adv.", "mean": "自动地；无意识地"}]}]
+        },
+        {
+          "no": 43, "word": "engine", "freq": 1, "page": 208,
+          "prons": [{"ipa": "/ˈendʒɪn/", "senses": [{"pos": "n.", "mean": "[[发动机]]，[[引擎]]；机车；火车头"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“引擎”。"},
+          "ex": {"type": "例", "en": "It's clear that petrol-driven engines have no future.", "zh": "很明显，汽油发动机没有未来。", "key": ["engines"]},
+          "ext": [
+            {"word": "engineer", "ipa": "/ˌendʒɪˈnɪə(r)/", "senses": [{"pos": "n.", "mean": "工程师，技师"}]},
+            {"word": "engineering", "ipa": "/ˌendʒɪˈnɪərɪŋ/", "senses": [{"pos": "n.", "mean": "工程，工程学"}]}
+          ]
+        },
+        {
+          "no": 44, "word": "vehicle", "freq": 2, "page": 208,
+          "prons": [{"ipa": "/ˈviːəkl/", "senses": [{"pos": "n.", "mean": "[[交通工具]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“维柯”→“依维柯”汽车是一款“交通工具”。"},
+          "ex": {"type": "真", "year": 2018, "en": "There's no question that self-driving vehicles could be an enormous benefit.", "zh": "毫无疑问，自动驾驶汽车会带来巨大的好处。", "key": ["vehicles"]},
+          "ext": []
+        },
+        {
+          "no": 45, "word": "motor", "freq": 2, "page": 208,
+          "prons": [{"ipa": "/ˈməʊtə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[发动机]]；汽车"},
+            {"pos": "adj.", "mean": "有引擎的；[[由发动机推动的]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2016, "en": "It marked a new era in motor travel.", "zh": "它标志着汽车旅行的新时代。", "key": ["motor"]},
+          "ext": []
+        },
+        {
+          "no": 46, "word": "motel", "freq": 1, "page": 208,
+          "prons": [{"ipa": "/məʊˈtel/", "senses": [{"pos": "n.", "mean": "[[汽车旅馆]]（附有停车设施）"}]}],
+          "tip": {"type": "构词", "text": "mo（= motor）+ tel（= hotel）→ 汽车旅馆"},
+          "ex": {"type": "例", "en": "Just search the name of the motel.", "zh": "只需搜索这家汽车旅店的名字即可。", "key": ["motel"]},
+          "ext": []
+        },
+        {
+          "no": 47, "word": "petrol", "freq": 1, "page": 208,
+          "prons": [{"ipa": "/ˈpetrəl/", "senses": [{"pos": "n.", "mean": "[[汽油]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“排出”→“汽油”车会排出尾气。"},
+          "ex": {"type": "例", "en": "The petrol is running out.", "zh": "汽油快要耗尽了。", "key": ["petrol"]},
+          "ext": [{"word": "petroleum", "ipa": "/pəˈtrəʊliəm/", "senses": [{"pos": "n.", "mean": "石油，原油"}]}]
+        },
+        {
+          "no": 48, "word": "coach", "freq": 1, "page": 208,
+          "prons": [{"ipa": "/kəʊtʃ/", "senses": [
+            {"pos": "n.", "mean": "[[长途客车]]；四轮大马车；（体育运动的）[[教练]]；（客机的）[[经济舱]]"},
+            {"pos": "v.", "mean": "[[训练，培训]]；指导"}
+          ]}],
+          "tip": {"type": "联想", "text": "轻奢品牌 Coach（蔻驰）的标志上就有驾“四轮大马车”。"},
+          "ex": {"type": "真", "year": 2019, "en": "The teacher's role is more of a coach or observer.", "zh": "教师的角色更多的是一个教练或观察者。", "key": ["coach"]},
+          "ext": []
+        },
+        {
+          "no": 49, "word": "horn", "freq": 1, "page": 209,
+          "prons": [{"ipa": "/hɔːn/", "senses": [{"pos": "n.", "mean": "（汽车等的）[[喇叭]]；（羊、牛等动物的）[[角]]；（乐器）号"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“号”。"},
+          "ex": {"type": "例", "en": "Horn is prohibited in the park.", "zh": "公园内禁止使用喇叭。", "key": ["Horn"]},
+          "ext": []
+        },
+        {
+          "no": 50, "word": "fleet", "freq": 1, "page": 209,
+          "prons": [{"ipa": "/fliːt/", "senses": [{"pos": "n.", "mean": "[[舰队]]；（同一机构或统一调度的）[[机群]]，车队"}]}],
+          "tip": {"type": "联想", "text": "flee（音似“飞离”）+ t（联想“他”）→ 他带领“舰队”飞速逃离。"},
+          "ex": {"type": "真", "year": 2018, "en": "He owns a fleet of aircraft.", "zh": "他拥有一支机队。", "key": ["fleet"]},
+          "ext": []
+        },
+        {
+          "no": 51, "word": "flee", "freq": 2, "page": 209,
+          "prons": [{"ipa": "/fliː/", "senses": [{"pos": "v.", "mean": "[[迅速离开]]；[[逃跑]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“飞离”→ 他飞速离开 → 迅速离开"},
+          "ex": {"type": "例", "en": "He was caught trying to flee the country.", "zh": "他试图逃离该国时被抓住了。", "key": ["flee"]},
+          "ext": []
+        },
+        {
+          "no": 52, "word": "breakdown", "freq": 1, "page": 209,
+          "prons": [{"ipa": "/ˈbreɪkdaʊn/", "senses": [{"pos": "n.", "mean": "（车辆或机器的）[[故障]]；（关系的）[[破裂]]；（讨论、系统的）[[失败]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "There has obviously been a breakdown in communications between the two sides.", "zh": "双方的交流明显中断了。", "key": ["breakdown"]},
+          "ext": []
+        },
+        {
+          "no": 53, "word": "crack", "freq": 1, "page": 209,
+          "prons": [{"ipa": "/kræk/", "senses": [
+            {"pos": "v.", "mean": "[[破裂]]；[[重击]]；找到解决（难题等的）方法"},
+            {"pos": "n.", "mean": "[[裂缝]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "cr（联想 cry）+ a（—）+ ck（联想“CK 品牌”）→ 他哭着望向那一块“破裂”的 CK 手表。"},
+          "ex": {"type": "真", "year": 2016, "en": "It may shed light on people's desire to crack a secret.", "zh": "这或许能揭示人们想要破解秘密的欲望。", "key": ["crack"]},
+          "ext": [{"word": "cracker", "ipa": "/ˈkrækə(r)/", "senses": [{"pos": "n.", "mean": "彩包爆竹；饼干；黑客"}]}]
+        },
+        {
+          "no": 54, "word": "tunnel", "freq": 1, "page": 209,
+          "prons": [{"ipa": "/ˈtʌnl/", "senses": [{"pos": "n.", "mean": "[[地道]]，[[隧道]]；（动物的）[[洞穴通道]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“探呢”→ 他在准备探索一条神秘的“隧道”呢。"},
+          "ex": {"type": "例", "en": "They've built a new tunnel through the mountain.", "zh": "他们修建了一条新的穿山隧道。", "key": ["tunnel"]},
+          "ext": []
+        },
+        {
+          "no": 55, "word": "channel", "freq": 2, "page": 209,
+          "prons": [{"ipa": "/ˈtʃænl/", "senses": [{"pos": "n.", "mean": "[[海峡]]；[[航道]]；[[频道]]；电视台"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2019, "en": "The channel needs to interview the boy.", "zh": "电视台需要采访那个男孩。", "key": ["channel"]},
+          "ext": []
+        },
+        {
+          "no": 56, "word": "steer", "freq": 1, "page": 209,
+          "prons": [{"ipa": "/stɪə(r)/", "senses": [{"pos": "v.", "mean": "[[驾驶]]（船、汽车等）；[[操纵]]；[[引导]]"}]}],
+          "tip": {"type": "对照", "text": "他在街（street）上驾驶（steer）汽车的时候，目不转睛地看着前方。"},
+          "ex": {"type": "真", "year": 2017, "en": "Steering through change and facing obstacles brings us face to face with our fears.", "zh": "驾驭变化和面对障碍会让我们直面恐惧。", "key": ["Steering"]},
+          "ext": []
+        }
+      ]
+    }
+  ]
+}

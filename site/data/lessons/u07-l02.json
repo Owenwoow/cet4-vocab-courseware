@@ -1,0 +1,2746 @@
+{
+ "id": "u07-l02",
+ "part": 1,
+ "unit": 7,
+ "lesson": 2,
+ "pages": [
+  196,
+  202
+ ],
+ "groups": [
+  {
+   "no": 4,
+   "title": "“选择”相关",
+   "pages": [
+    196,
+    197
+   ],
+   "map": {
+    "w": "“选择”相关",
+    "children": [
+     {
+      "w": "opt",
+      "children": [
+       {
+        "w": "option",
+        "rel": "扩",
+        "children": [
+         {
+          "w": "choice",
+          "rel": "近义"
+         }
+        ]
+       },
+       {
+        "w": "compulsory",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "course",
+          "rel": "相关",
+          "children": [
+           {
+            "w": "case",
+            "rel": "音近"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "select",
+      "children": [
+       {
+        "w": "selection",
+        "rel": "扩",
+        "children": [
+         {
+          "w": "selective",
+          "children": [
+           {
+            "w": "elective",
+            "rel": "形近",
+            "children": [
+             {
+              "w": "elect",
+              "rel": "扩",
+              "children": [
+               {
+                "w": "poll",
+                "rel": "相关",
+                "children": [
+                 {
+                  "w": "pollster",
+                  "rel": "扩"
+                 }
+                ]
+               }
+              ]
+             },
+             {
+              "w": "election",
+              "rel": "扩"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "w": "lecture",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "lecturer",
+          "rel": "扩"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "collect",
+      "children": [
+       {
+        "w": "collection",
+        "rel": "扩",
+        "children": [
+         {
+          "w": "collective"
+         }
+        ]
+       },
+       {
+        "w": "dialect",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "accent",
+          "rel": "相关",
+          "children": [
+           {
+            "w": "rhythm",
+            "rel": "相关",
+            "children": [
+             {
+              "w": "rhythmic",
+              "rel": "扩",
+              "children": [
+               {
+                "w": "orchestra",
+                "rel": "相关"
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "w": "tone",
+            "rel": "近义",
+            "children": [
+             {
+              "w": "tune",
+              "rel": "形近"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "entries": [
+    {
+     "no": 1,
+     "word": "opt",
+     "freq": 1,
+     "page": 196,
+     "prons": [
+      {
+       "ipa": "/ɒpt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[选择]]，挑选"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "op-（表示方向）+ t（联想“他”）→ 她面朝他的方向走去，并表示自己“选择”了他。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2018,
+      "en": "The digital access codes are even harder for students to opt out of.",
+      "zh": "数字访问代码甚至让学生们更难选择退出。",
+      "key": [
+       "opt"
+      ]
+     },
+     "ext": [
+      {
+       "word": "option",
+       "ipa": "/ˈɒpʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "供选择的东西；选择（权）"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "word": "compulsory",
+     "freq": 1,
+     "page": 196,
+     "prons": [
+      {
+       "ipa": "/kəmˈpʌlsəri/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[强制的]]；[[义务的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "com-（都）+ pul（音似“扑”）+ sory（联想 sorry）→ 所有护卫都扑过去向国王道歉，他们这种行为是被“强制的”。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The use of seat belts was compulsory for the population.",
+      "zh": "人们使用安全带是强制性的。",
+      "key": [
+       "compulsory"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 3,
+     "word": "course",
+     "freq": 1,
+     "page": 196,
+     "prons": [
+      {
+       "ipa": "/kɔːs/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[课程]]；[[过程]]；[[航线]]；[[方针]]；[[进展]]"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "例",
+      "en": "Many universities offer courses in business administration.",
+      "zh": "许多大学都开设工商管理课程。",
+      "key": [
+       "courses"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 4,
+     "word": "case",
+     "freq": 1,
+     "page": 196,
+     "prons": [
+      {
+       "ipa": "/keɪs/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[实例]]；诉讼；容器；[[情况]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "ca（联想“开”）+ se（音似“撕”）→ 我撕下标签，打开“容器”。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "What should be done in such cases?",
+      "zh": "这种情况应该怎么办？",
+      "key": [
+       "cases"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 5,
+     "word": "choice",
+     "freq": 1,
+     "page": 196,
+     "prons": [
+      {
+       "ipa": "/tʃɔɪs/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[选择]]；入选者"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "choose v.选择，挑选 → choice n."
+     },
+     "ex": {
+      "type": "真",
+      "year": 2022,
+      "en": "People's choice of food depends on their individual taste.",
+      "zh": "人们对食物的选择取决于他们的个人口味。",
+      "key": [
+       "choice"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 6,
+     "word": "select",
+     "freq": 3,
+     "page": 196,
+     "prons": [
+      {
+       "ipa": "/sɪˈlekt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[选择]]，选拔"
+        },
+        {
+         "pos": "adj.",
+         "mean": "[[精选的]]；优等的"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "se-（分开）+ lect（选择）→ 选择，选拔"
+     },
+     "ex": {
+      "type": "例",
+      "en": "It helps people to select the most effective sunscreen.",
+      "zh": "它帮助人们选择最有效的防晒霜。",
+      "key": [
+       "select"
+      ]
+     },
+     "ext": [
+      {
+       "word": "selection",
+       "ipa": "/sɪˈlekʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "选择"
+        }
+       ]
+      },
+      {
+       "word": "selective",
+       "ipa": "/sɪˈlektɪv/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "选择性的；有选择的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "word": "lecture",
+     "freq": 1,
+     "page": 196,
+     "prons": [
+      {
+       "ipa": "/ˈlektʃə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[演讲]]；[[讲座]]；教训"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[讲授]]；告诫；指责"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "lect（说）+ -ure（名词后缀）→ 演讲；讲座"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The content of the lecture is a much more effective method for students to learn.",
+      "zh": "对于学生来说，讲座里讲的内容是一种更有效的学习方法。",
+      "key": [
+       "lecture"
+      ]
+     },
+     "ext": [
+      {
+       "word": "lecturer",
+       "ipa": "/ˈlektʃərə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "讲课者，讲演者"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "word": "elect",
+     "freq": 2,
+     "page": 197,
+     "prons": [
+      {
+       "ipa": "/ɪˈlekt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[选举]]，推选；[[选择]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "e-（出去）+ lect（选择）→ 选举，推选；选择"
+     },
+     "ex": {
+      "type": "例",
+      "en": "People who elect to track their sleep may try to get more sleep.",
+      "zh": "那些选择跟踪自己睡眠的人可能会努力睡得更多。",
+      "key": [
+       "elect"
+      ]
+     },
+     "ext": [
+      {
+       "word": "election",
+       "ipa": "/ɪˈlekʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "选举，推选（尤指从政）"
+        }
+       ]
+      },
+      {
+       "word": "elective",
+       "ipa": "/ɪˈlektɪv/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "选举的；可选择的；选修的"
+        },
+        {
+         "pos": "n.",
+         "mean": "选修课程"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "word": "poll",
+     "freq": 3,
+     "page": 197,
+     "prons": [
+      {
+       "ipa": "/pəʊl/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[民意调查]]；[[投票]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "对……进行民意测验；[[获得（票数）]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "他拉（pull）着我，让我为他投票（poll）。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The final result of the poll will be known tomorrow.",
+      "zh": "投票的最终结果将于明天公布。",
+      "key": [
+       "poll"
+      ]
+     },
+     "ext": [
+      {
+       "word": "pollster",
+       "ipa": "/ˈpəʊlstə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "民意测验主办人；民意调查员"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "word": "collect",
+     "freq": 1,
+     "page": 197,
+     "prons": [
+      {
+       "ipa": "/kəˈlekt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[收集]]；[[收藏]]；[[采集]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "col-（一起）+ lect（选择）→ 收集"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Its conclusions are based on carefully collected data.",
+      "zh": "它的结论是基于仔细收集的数据的。",
+      "key": [
+       "collected"
+      ]
+     },
+     "ext": [
+      {
+       "word": "collection",
+       "ipa": "/kəˈlekʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "收藏（品）；积聚"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "word": "collective",
+     "freq": 1,
+     "page": 197,
+     "prons": [
+      {
+       "ipa": "/kəˈlektɪv/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[集体的]]；共有的"
+        },
+        {
+         "pos": "n.",
+         "mean": "[[集体企业]]，企业集团"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "collect（采集）+ -ive（形容词后缀）→ 共同采集的 → 集体的；共有的"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2023,
+      "en": "They must be used in combination for an entire collective.",
+      "zh": "它们必须结合起来用于整个集体。",
+      "key": [
+       "collective"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 12,
+     "word": "dialect",
+     "freq": 1,
+     "page": 197,
+     "prons": [
+      {
+       "ipa": "/ˈdaɪəlekt/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[方言]]；土话"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "dia（联想“嗲”）+ lect（说）→ 那个地方的人说话都很嗲，这就是他们的“方言”特色。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Dialects should be preserved to retain a culture.",
+      "zh": "应该保留方言来保留一种文化。",
+      "key": [
+       "Dialects"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 13,
+     "word": "accent",
+     "freq": 1,
+     "page": 197,
+     "prons": [
+      {
+       "ipa": "/ˈæksent/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[口音]]；腔调；[[重音]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "ac-（一再地）+ cent（分）→ 他一再地把一分钱硬币含在嘴里，练习一种特殊的“口音”。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "She spoke English with an accent.",
+      "zh": "她说英语带有口音。",
+      "key": [
+       "accent"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 14,
+     "word": "rhythm",
+     "freq": 2,
+     "page": 197,
+     "prons": [
+      {
+       "ipa": "/ˈrɪðəm/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[节奏]]，韵律"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "例",
+      "en": "A basic sense of rhythm is essential in a music teacher.",
+      "zh": "基本的节奏感是音乐教师的必备素质。",
+      "key": [
+       "rhythm"
+      ]
+     },
+     "ext": [
+      {
+       "word": "rhythmic",
+       "ipa": "/ˈrɪðmɪk/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "有节奏（或规律）的，节奏分明的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "word": "tone",
+     "freq": 2,
+     "page": 197,
+     "prons": [
+      {
+       "ipa": "/təʊn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[音调]]；[[语气]]，腔调"
+        },
+        {
+         "pos": "v.",
+         "mean": "使（皮肤、肌肉等）更强健"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "这个女孩说话的语气（tone）像石头（stone）一样冰冷、生硬。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Don't speak to me in that tone of voice.",
+      "zh": "别用那种口吻跟我讲话。",
+      "key": [
+       "tone"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 16,
+     "word": "tune",
+     "freq": 1,
+     "page": 197,
+     "prons": [
+      {
+       "ipa": "/tjuːn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[曲调]]；[[曲子]]，歌曲"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "他用温和的语气（tone）哼唱出悠扬的曲子（tune）。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The piano is out of tune.",
+      "zh": "钢琴音走调了。",
+      "key": [
+       "out of tune"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 17,
+     "word": "orchestra",
+     "freq": 1,
+     "page": 197,
+     "prons": [
+      {
+       "ipa": "/ˈɔːkɪstrə/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[管弦乐队]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "or + chest（胸膛）+（t）ra（音似“吹”）→ “管弦乐队”中的乐手吹奏时，乐声萦绕他们的胸膛。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2015,
+      "en": "She listened to recordings of many European orchestras.",
+      "zh": "她听了许多欧洲管弦乐队的录音。",
+      "key": [
+       "orchestras"
+      ]
+     },
+     "ext": []
+    }
+   ]
+  },
+  {
+   "no": 5,
+   "title": "“户外、活动”相关",
+   "pages": [
+    198,
+    200
+   ],
+   "map": {
+    "w": "“户外、活动”相关",
+    "children": [
+     {
+      "w": "outdoors",
+      "children": [
+       {
+        "w": "outdoor",
+        "rel": "扩"
+       },
+       {
+        "w": "venture",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "adventure",
+          "rel": "扩"
+         },
+         {
+          "w": "adventurer",
+          "rel": "扩"
+         },
+         {
+          "w": "adventurous",
+          "rel": "扩"
+         }
+        ]
+       },
+       {
+        "w": "vacation",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "vocation",
+          "rel": "形近",
+          "children": [
+           {
+            "w": "vocational",
+            "rel": "扩"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "excursion",
+      "children": [
+       {
+        "w": "tour",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "tourism",
+          "rel": "扩"
+         },
+         {
+          "w": "tourist",
+          "rel": "扩"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "journey",
+      "children": [
+       {
+        "w": "cruise",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "cruiser",
+          "rel": "扩",
+          "children": [
+           {
+            "w": "voyage",
+            "rel": "相关",
+            "children": [
+             {
+              "w": "yoga",
+              "rel": "形近"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "train",
+      "children": [
+       {
+        "w": "trainee",
+        "rel": "扩",
+        "children": [
+         {
+          "w": "trainer",
+          "children": [
+           {
+            "w": "training",
+            "children": [
+             {
+              "w": "workout",
+              "rel": "近义",
+              "children": [
+               {
+                "w": "fit",
+                "rel": "相关",
+                "children": [
+                 {
+                  "w": "well-being"
+                 }
+                ]
+               },
+               {
+                "w": "gym",
+                "rel": "相关",
+                "children": [
+                 {
+                  "w": "muscle",
+                  "children": [
+                   {
+                    "w": "muscular",
+                    "rel": "扩"
+                   }
+                  ]
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "w": "calorie",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "battery"
+         }
+        ]
+       },
+       {
+        "w": "energy",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "energetically",
+          "rel": "扩",
+          "children": [
+           {
+            "w": "energetic",
+            "children": [
+             {
+              "w": "vigorous",
+              "rel": "近义",
+              "children": [
+               {
+                "w": "vigour",
+                "rel": "扩"
+               }
+              ]
+             },
+             {
+              "w": "dynamic",
+              "rel": "近义",
+              "children": [
+               {
+                "w": "dynamics",
+                "rel": "扩"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "entries": [
+    {
+     "no": 18,
+     "word": "outdoors",
+     "freq": 1,
+     "page": 198,
+     "prons": [
+      {
+       "ipa": "/ˌaʊtˈdɔːz/",
+       "senses": [
+        {
+         "pos": "adv.",
+         "mean": "[[在户外]]；在野外"
+        },
+        {
+         "pos": "n.",
+         "mean": "旷野，[[郊外]]"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "真",
+      "year": 2023,
+      "en": "Taking a walk can instantly lift your mood, especially when you go outdoors.",
+      "zh": "散步可以立即提升你的情绪，尤其是当你在户外的时候。",
+      "key": [
+       "outdoors"
+      ]
+     },
+     "ext": [
+      {
+       "word": "outdoor",
+       "ipa": "/ˈaʊtdɔː(r)/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "户外的；室外的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 19,
+     "word": "venture",
+     "freq": 2,
+     "page": 198,
+     "prons": [
+      {
+       "ipa": "/ˈventʃə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[企业]]，商业；[[冒险事业]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[冒险]]；小心地说"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "ven（联想 went）+ ture（联想 true）→ 他们真的去“冒险”了。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2023,
+      "en": "They may adopt strategies that are bound to ruin their venture.",
+      "zh": "他们可能会采取注定会毁掉企业的策略。",
+      "key": [
+       "venture"
+      ]
+     },
+     "ext": [
+      {
+       "word": "adventure",
+       "ipa": "/ədˈventʃə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "冒险；奇遇；大胆开拓"
+        }
+       ]
+      },
+      {
+       "word": "adventurer",
+       "ipa": "/ədˈventʃərə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "冒险者，冒险家"
+        }
+       ]
+      },
+      {
+       "word": "adventurous",
+       "ipa": "/ədˈventʃərəs/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "有冒险精神的，大胆开拓的；惊险的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 20,
+     "word": "vacation",
+     "freq": 1,
+     "page": 198,
+     "prons": [
+      {
+       "ipa": "/veɪˈkeɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[假期]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[度假]]；休假"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“我开心”→“假期”到了，我很开心。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2020,
+      "en": "She might not get enough vacation.",
+      "zh": "她可能没有足够的假期。",
+      "key": [
+       "vacation"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 21,
+     "word": "vocation",
+     "freq": 1,
+     "page": 198,
+     "prons": [
+      {
+       "ipa": "/vəʊˈkeɪʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[工作，职业]]；生活方式"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "我们的假期（vacation）比较少，大部分时间都奉献给了工作（vocation）。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "She believes that she has found her true vocation.",
+      "zh": "她相信自己找到了真正适合自己的职业。",
+      "key": [
+       "vocation"
+      ]
+     },
+     "ext": [
+      {
+       "word": "vocational",
+       "ipa": "/vəʊˈkeɪʃənl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "职业的；业务知识的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 22,
+     "word": "excursion",
+     "freq": 2,
+     "page": 198,
+     "prons": [
+      {
+       "ipa": "/ɪkˈskɜːʃn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[远足，短途旅行]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "ex-（出去）+ cursion（音似“开心”）→ 出去“远足”让我很开心。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "We took an excursion around the island yesterday.",
+      "zh": "我们昨天进行了一次环岛短途旅行。",
+      "key": [
+       "excursion"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 23,
+     "word": "tour",
+     "freq": 1,
+     "page": 198,
+     "prons": [
+      {
+       "ipa": "/tʊə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[旅行，观光]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[在……旅游]]；在……巡回演出（或做宣传广告等）"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "t（联想“他”）+ our（我们的）→ 他和我们的朋友一起去“旅行”了。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "He toured the Forbidden City.",
+      "zh": "他游览了故宫。",
+      "key": [
+       "toured"
+      ]
+     },
+     "ext": [
+      {
+       "word": "tourism",
+       "ipa": "/ˈtʊərɪzəm/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "旅游业；旅游观光"
+        }
+       ]
+      },
+      {
+       "word": "tourist",
+       "ipa": "/ˈtʊərɪst/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "旅游者，观光者，游客"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 24,
+     "word": "journey",
+     "freq": 1,
+     "page": 199,
+     "prons": [
+      {
+       "ipa": "/ˈdʒɜːni/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "（尤指长途）[[旅行；历程]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“脚泥”→ 在“旅行”的路上，我们的脚都沾了泥巴。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "She took her sister with her to keep her company on the journey.",
+      "zh": "她带着妹妹在旅途中作伴。",
+      "key": [
+       "journey"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 25,
+     "word": "cruise",
+     "freq": 2,
+     "page": 199,
+     "prons": [
+      {
+       "ipa": "/kruːz/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[乘船游览]]；巡航"
+        },
+        {
+         "pos": "n.",
+         "mean": "[[乘船游览]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "cru（联想 cross）+ -ise（后缀）→ 船只在海上跨水域航行 → 巡航"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2018,
+      "en": "Every time I see a cruise ship, I feel sad.",
+      "zh": "每次一看见游轮，我就会觉得很难过。",
+      "key": [
+       "cruise"
+      ]
+     },
+     "ext": [
+      {
+       "word": "cruiser",
+       "ipa": "/ˈkruːzə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "巡洋舰；巡逻警车"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 26,
+     "word": "voyage",
+     "freq": 1,
+     "page": 199,
+     "prons": [
+      {
+       "ipa": "/ˈvɔɪɪdʒ/",
+       "senses": [
+        {
+         "pos": "n. & v.",
+         "mean": "[[航行]]；旅行"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "vo（音似“我”）+ yage（联想 yoga）→ 在进行瑜伽冥想时，我的思想就像在“航行”。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The Titanic sank on its maiden voyage.",
+      "zh": "泰坦尼克号首航便沉没了。",
+      "key": [
+       "voyage"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 27,
+     "word": "yoga",
+     "freq": 1,
+     "page": 199,
+     "prons": [
+      {
+       "ipa": "/ˈjəʊɡə/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[瑜伽]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“瑜伽”。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2022,
+      "en": "She wasn't so much interested in hot yoga.",
+      "zh": "她对高温瑜伽不怎么感兴趣。",
+      "key": [
+       "yoga"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 28,
+     "word": "training",
+     "freq": 1,
+     "page": 199,
+     "prons": [
+      {
+       "ipa": "/ˈtreɪnɪŋ/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[训练，培训]]；锻炼"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "真",
+      "year": 2018,
+      "en": "Training a patient to prepare healthy food can change their life.",
+      "zh": "训练患者准备健康的食物可以改变他们的生活。",
+      "key": [
+       "Training"
+      ]
+     },
+     "ext": [
+      {
+       "word": "train",
+       "ipa": "/treɪn/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "培训，训练"
+        },
+        {
+         "pos": "n.",
+         "mean": "列车；队列"
+        }
+       ]
+      },
+      {
+       "word": "trainee",
+       "ipa": "/ˌtreɪˈniː/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "接受培训者；实习生"
+        }
+       ]
+      },
+      {
+       "word": "trainer",
+       "ipa": "/ˈtreɪnə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "运动鞋，便鞋；教员；教练员"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 29,
+     "word": "workout",
+     "freq": 1,
+     "page": 199,
+     "prons": [
+      {
+       "ipa": "/ˈwɜːkaʊt/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[锻炼]]"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "例",
+      "en": "She does a 20-minute workout every morning.",
+      "zh": "她每天早晨做 20 分钟的锻炼。",
+      "key": [
+       "workout"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 30,
+     "word": "fit",
+     "freq": 1,
+     "page": 199,
+     "prons": [
+      {
+       "ipa": "/fɪt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "（形状和尺寸）[[适合，合身]]；使胜任"
+        },
+        {
+         "pos": "adj.",
+         "mean": "[[健康的]]"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "真",
+      "year": 2019,
+      "en": "Learning by doing doesn't really fit that mold anymore.",
+      "zh": "在实践中学习已经不符合那种模式了。",
+      "key": [
+       "fit"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 31,
+     "word": "well-being",
+     "freq": 1,
+     "page": 199,
+     "prons": [
+      {
+       "ipa": "/ˈwel biːɪŋ/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[健康；安乐]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "well（好的）+ being（存在，生命）→ 健康；安乐"
+     },
+     "ex": {
+      "type": "例",
+      "en": "They're concerned about their health and the well-being of the planet.",
+      "zh": "他们关心自己的健康和地球的福祉。",
+      "key": [
+       "well-being"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 32,
+     "word": "gym",
+     "freq": 1,
+     "page": 199,
+     "prons": [
+      {
+       "ipa": "/dʒɪm/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[体育馆，健身房；健身]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“健美”→ 我去“健身房”做健美操。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The school has recently built a new gym.",
+      "zh": "学校最近新建了一个体育馆。",
+      "key": [
+       "gym"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 33,
+     "word": "muscle",
+     "freq": 1,
+     "page": 199,
+     "prons": [
+      {
+       "ipa": "/ˈmʌsl/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[肌肉；体力；权力；威信]]"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "真",
+      "year": 2024,
+      "en": "Willpower is just like a muscle; to keep it strong you need to constantly exercise it.",
+      "zh": "意志力就像一块肌肉，需要不断锻炼才能保持强壮。",
+      "key": [
+       "muscle"
+      ]
+     },
+     "ext": [
+      {
+       "word": "muscular",
+       "ipa": "/ˈmʌskjələ(r)/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "肌肉发达的；强壮的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 34,
+     "word": "calorie",
+     "freq": 1,
+     "page": 199,
+     "prons": [
+      {
+       "ipa": "/ˈkæləri/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[卡路里]]；千卡（测量食物含热量的单位）"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "真",
+      "year": 2015,
+      "en": "We get a fairly large portion of calories from fast food and snacks.",
+      "zh": "我们从快餐和零食中获得相当大一部分的卡路里。",
+      "key": [
+       "calories"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 35,
+     "word": "energy",
+     "freq": 1,
+     "page": 199,
+     "prons": [
+      {
+       "ipa": "/ˈenədʒi/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[精力，活力]]；能源"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“俺奶鸡”→ 俺奶奶还能抓住鸡，说明她“活力”十足。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2024,
+      "en": "The last important point to consider is that practice focuses your energy on the process.",
+      "zh": "最后要考虑的一点是，练习将你的精力集中在这个过程上。",
+      "key": [
+       "energy"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 36,
+     "word": "energetic",
+     "freq": 2,
+     "page": 200,
+     "prons": [
+      {
+       "ipa": "/ˌenəˈdʒetɪk/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[精力充沛的，充满活力的]]；积极的"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "例",
+      "en": "The heart responds well to energetic exercise.",
+      "zh": "心脏对剧烈运动反应良好。",
+      "key": [
+       "energetic"
+      ]
+     },
+     "ext": [
+      {
+       "word": "energetically",
+       "ipa": "/ˌenəˈdʒetɪkli/",
+       "senses": [
+        {
+         "pos": "adv.",
+         "mean": "精力充沛地；充满活力地"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 37,
+     "word": "battery",
+     "freq": 1,
+     "page": 200,
+     "prons": [
+      {
+       "ipa": "/ˈbætri/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[电池]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "对照",
+      "text": "这个牌子的电池（battery）用起来更好（better）。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "More funding will be invested in bike battery research.",
+      "zh": "更多的资金将投入自行车电池研究中。",
+      "key": [
+       "battery"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 38,
+     "word": "vigorous",
+     "freq": 1,
+     "page": 200,
+     "prons": [
+      {
+       "ipa": "/ˈvɪɡərəs/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[精力充沛的]]；健壮的"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“喂个肉丝”→ 他喂小狗吃肉丝后，小狗的状态是“精力充沛的”。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2022,
+      "en": "Let the debates be transparent and vigorous, wherever they are held.",
+      "zh": "无论在何处举行辩论，都应使辩论清晰而有力。",
+      "key": [
+       "vigorous"
+      ]
+     },
+     "ext": [
+      {
+       "word": "vigour",
+       "ipa": "/ˈvɪɡə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "精力，活力"
+        }
+       ],
+       "alt": "vigor"
+      }
+     ]
+    },
+    {
+     "no": 39,
+     "word": "dynamic",
+     "freq": 2,
+     "page": 200,
+     "prons": [
+      {
+       "ipa": "/daɪˈnæmɪk/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[充满活力的，精力充沛的]]；[[动力的]]；[[动态的]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "dy（联想“大雁”）+ na（联想“拿”）+ mic（音似“麦克”）→ 大雁只要拿着麦克风走上讲台，就会变成“充满活力的”老师。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2022,
+      "en": "It is a dynamic and self-improving process.",
+      "zh": "这是一个动态的、自我完善的过程。",
+      "key": [
+       "dynamic"
+      ]
+     },
+     "ext": [
+      {
+       "word": "dynamics",
+       "ipa": "/daɪˈnæmɪks/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "动力学；动力"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "no": 6,
+   "title": "vi 相关",
+   "pages": [
+    200,
+    202
+   ],
+   "map": {
+    "w": "vi 相关",
+    "children": [
+     {
+      "w": "visit",
+      "children": [
+       {
+        "w": "visitor",
+        "rel": "扩"
+       },
+       {
+        "w": "visible",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "visibility",
+          "rel": "扩"
+         },
+         {
+          "w": "invisible",
+          "rel": "反义"
+         }
+        ]
+       },
+       {
+        "w": "vision",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "visionary",
+          "rel": "扩",
+          "children": [
+           {
+            "w": "visual",
+            "rel": "相关",
+            "children": [
+             {
+              "w": "visualise",
+              "rel": "扩"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "view",
+      "children": [
+       {
+        "w": "gaze",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "glance",
+          "children": [
+           {
+            "w": "glimpse",
+            "children": [
+             {
+              "w": "stare"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "w": "scan",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "scanner",
+          "rel": "扩"
+         },
+         {
+          "w": "scandal",
+          "rel": "形近",
+          "children": [
+           {
+            "w": "scandalous",
+            "rel": "扩"
+           }
+          ]
+         },
+         {
+          "w": "browse",
+          "rel": "近义",
+          "children": [
+           {
+            "w": "browser",
+            "rel": "扩"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "w": "sight",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "sightseeing",
+          "children": [
+           {
+            "w": "oversight"
+           }
+          ]
+         },
+         {
+          "w": "insight",
+          "children": [
+           {
+            "w": "insightful",
+            "rel": "扩"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "w": "revise",
+      "children": [
+       {
+        "w": "revision",
+        "rel": "扩"
+       },
+       {
+        "w": "devise",
+        "rel": "相关",
+        "children": [
+         {
+          "w": "supervise",
+          "children": [
+           {
+            "w": "supervision",
+            "rel": "扩"
+           },
+           {
+            "w": "supervisor",
+            "rel": "扩"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "entries": [
+    {
+     "no": 40,
+     "word": "visit",
+     "freq": 1,
+     "page": 200,
+     "prons": [
+      {
+       "ipa": "/ˈvɪzɪt/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[访问]]"
+        },
+        {
+         "pos": "n.",
+         "mean": "[[参观]]；逗留；[[看望]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "vis（看）+ it（它）→ 看它 → 访问；参观"
+     },
+     "ex": {
+      "type": "例",
+      "en": "His friends feel reluctant to visit his home.",
+      "zh": "他的朋友不愿意去他家。",
+      "key": [
+       "visit"
+      ]
+     },
+     "ext": [
+      {
+       "word": "visitor",
+       "ipa": "/ˈvɪzɪtə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "来访者，访问者；参观者，游客"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 41,
+     "word": "visible",
+     "freq": 2,
+     "page": 200,
+     "prons": [
+      {
+       "ipa": "/ˈvɪzəbl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[可见的]]；明显的"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "vis（看）+ -ible（形容词后缀）→ 可见的；明显的"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2020,
+      "en": "They can lead to the creation of new clouds easily visible from space.",
+      "zh": "它们能形成新的云，这从太空中很容易看到。",
+      "key": [
+       "visible"
+      ]
+     },
+     "ext": [
+      {
+       "word": "visibility",
+       "ipa": "/ˌvɪzəˈbɪləti/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "能见度；可见性"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 42,
+     "word": "invisible",
+     "freq": 2,
+     "page": 200,
+     "prons": [
+      {
+       "ipa": "/ɪnˈvɪzəbl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[看不见的]]，无形的"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "in-（不）+ visible（可见的）→ 看不见的，无形的"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2021,
+      "en": "These invisible duties become apparent only when you don't do them.",
+      "zh": "只有当你不去做的时候，这些看不见的责任才会变得明显。",
+      "key": [
+       "invisible"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 43,
+     "word": "revise",
+     "freq": 2,
+     "page": 201,
+     "prons": [
+      {
+       "ipa": "/rɪˈvaɪz/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[修改]]；复习"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "re-（再）+ vise（看）→ 再看一遍 → 修改；复习"
+     },
+     "ex": {
+      "type": "例",
+      "en": "Patients' data has to be revised from time to time.",
+      "zh": "患者的数据必须不时地进行修改。",
+      "key": [
+       "revised"
+      ]
+     },
+     "ext": [
+      {
+       "word": "revision",
+       "ipa": "/rɪˈvɪʒn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "复习，温习"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 44,
+     "word": "vision",
+     "freq": 2,
+     "page": 201,
+     "prons": [
+      {
+       "ipa": "/ˈvɪʒn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[视力]]；[[视野]]；[[幻象]]；[[远见卓识]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "vis（看）+ -ion（名词后缀）→ 视力；视野；幻象"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2024,
+      "en": "They help an organization to broaden its vision effectively.",
+      "zh": "它们帮助组织有效地拓宽视野。",
+      "key": [
+       "vision"
+      ]
+     },
+     "ext": [
+      {
+       "word": "visionary",
+       "ipa": "/ˈvɪʒənri/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "有眼力的；有远见卓识的"
+        },
+        {
+         "pos": "n.",
+         "mean": "有眼力的人；有远见卓识的人"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 45,
+     "word": "supervise",
+     "freq": 2,
+     "page": 201,
+     "prons": [
+      {
+       "ipa": "/ˈsuːpəvaɪz/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[监督，管理]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "super（上面；超越）+ vise（看）→ 监督"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2021,
+      "en": "It does not supervise its employees.",
+      "zh": "它不监督它的员工。",
+      "key": [
+       "supervise"
+      ]
+     },
+     "ext": [
+      {
+       "word": "supervision",
+       "ipa": "/ˌsuːpəˈvɪʒn/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "监督，管理"
+        }
+       ]
+      },
+      {
+       "word": "supervisor",
+       "ipa": "/ˈsuːpəvaɪzə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "监督人；主管人"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 46,
+     "word": "visual",
+     "freq": 2,
+     "page": 201,
+     "prons": [
+      {
+       "ipa": "/ˈvɪʒuəl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "[[视力的，视觉的]]"
+        },
+        {
+         "pos": "n.",
+         "mean": "视觉资料"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "例",
+      "en": "A reader creates visual images of the characters in a novel.",
+      "zh": "读者创造小说中人物的视觉形象。",
+      "key": [
+       "visual"
+      ]
+     },
+     "ext": [
+      {
+       "word": "visualise",
+       "alt": "-ize",
+       "ipa": "/ˈvɪʒuəlaɪz/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "构思；设想；想象"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 47,
+     "word": "view",
+     "freq": 1,
+     "page": 201,
+     "prons": [
+      {
+       "ipa": "/vjuː/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[看法]]；[[风景]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[看待]]；[[观察]]"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "例",
+      "en": "There were magnificent views of the surrounding countryside.",
+      "zh": "四周乡间的景色壮观秀丽。",
+      "key": [
+       "views"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 48,
+     "word": "devise",
+     "freq": 1,
+     "page": 201,
+     "prons": [
+      {
+       "ipa": "/dɪˈvaɪz/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[设计，发明]]；想出"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "de-（往下）+ vise（看）→ 他一低头，眼睛一转圈，就“想出”一个主意。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2021,
+      "en": "Employees with a growth mindset may be more likely to devise innovative ideas.",
+      "zh": "具有成长心态的员工也许更有可能想出创新的想法。",
+      "key": [
+       "devise"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 49,
+     "word": "gaze",
+     "freq": 2,
+     "page": 201,
+     "prons": [
+      {
+       "ipa": "/ɡeɪz/",
+       "senses": [
+        {
+         "pos": "n. & v.",
+         "mean": "[[凝视，注视]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "ga（联想“尬”）+ ze（音似“死”）→ 有人一直“凝视”着他，他觉得尴尬死了。"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2017,
+      "en": "When looking at angry humans, they tended to turn away their gaze.",
+      "zh": "当看到愤怒的人类时，它们往往会转移视线。",
+      "key": [
+       "gaze"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 50,
+     "word": "glance",
+     "freq": 1,
+     "page": 201,
+     "prons": [
+      {
+       "ipa": "/ɡlɑːns/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "匆匆一看，[[一瞥，扫视]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[瞥一眼，扫视]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“哥懒死”→ 哥哥懒死了，读书只是“瞥一眼”。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "I only had time to glance at my emails.",
+      "zh": "我只来得及瞥一眼我的电子邮件。",
+      "key": [
+       "glance at"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 51,
+     "word": "glimpse",
+     "freq": 1,
+     "page": 201,
+     "prons": [
+      {
+       "ipa": "/ɡlɪmps/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[一瞥，一看]]"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[瞥见]]；看一眼"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "g（联想“哥”）+ li（联想“立”）+ m（联想“妹”）+ pse → 哥哥站立在妹妹旁边，“瞥见”了她。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "He caught a glimpse of her in the crowd.",
+      "zh": "他一眼瞥见她在人群里。",
+      "key": [
+       "a glimpse of"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 52,
+     "word": "stare",
+     "freq": 1,
+     "page": 201,
+     "prons": [
+      {
+       "ipa": "/steə(r)/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[凝视]]，盯着看"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "star（星星）+ e（联想 eye）→ 眼睛盯着星星看 → 凝视，盯着看"
+     },
+     "ex": {
+      "type": "真",
+      "year": 2022,
+      "en": "You just stare across the table blankly with your mouth hanging open.",
+      "zh": "你只是张着嘴，茫然地盯着桌子对面。",
+      "key": [
+       "stare"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 53,
+     "word": "scan",
+     "freq": 1,
+     "page": 202,
+     "prons": [
+      {
+       "ipa": "/skæn/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[细看；扫描]]；审视"
+        },
+        {
+         "pos": "n.",
+         "mean": "[[浏览；扫描检查]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“死看”→ 死死地盯着一个人看 → 细看；审视"
+     },
+     "ex": {
+      "type": "例",
+      "en": "She scanned through the newspaper over breakfast.",
+      "zh": "她边吃早饭，边浏览报纸。",
+      "key": [
+       "scanned",
+       "through"
+      ]
+     },
+     "ext": [
+      {
+       "word": "scanner",
+       "ipa": "/ˈskænə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "扫描仪"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 54,
+     "word": "scandal",
+     "freq": 2,
+     "page": 202,
+     "prons": [
+      {
+       "ipa": "/ˈskændl/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[丑闻]]；流言蜚语，[[谣言]]"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "谐音",
+      "text": "单词发音类似“撕堪斗”→ 两人撕破脸皮，觉得难堪，于是发生争斗，最终爆发了“丑闻”。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The press could scent a scandal.",
+      "zh": "记者觉察出有桩丑闻。",
+      "key": [
+       "scandal"
+      ]
+     },
+     "ext": [
+      {
+       "word": "scandalous",
+       "ipa": "/ˈskændələs/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "可耻的；不可原谅的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 55,
+     "word": "browse",
+     "freq": 1,
+     "page": 202,
+     "prons": [
+      {
+       "ipa": "/braʊz/",
+       "senses": [
+        {
+         "pos": "v.",
+         "mean": "[[浏览]]，上网浏览信息；（在商店里）随便看看"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "联想",
+      "text": "b(r)（联想 bring）+ row（排）+ se → 他把所有的数据拿来，然后开始一排一排地“浏览”。"
+     },
+     "ex": {
+      "type": "例",
+      "en": "She browsed in an up-market antiques shop.",
+      "zh": "她逛了一家高级古董店。",
+      "key": [
+       "browsed"
+      ]
+     },
+     "ext": [
+      {
+       "word": "browser",
+       "ipa": "/ˈbraʊzə(r)/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "浏览器；浏览程序"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 56,
+     "word": "sight",
+     "freq": 1,
+     "page": 202,
+     "prons": [
+      {
+       "ipa": "/saɪt/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[视力]]；看见；视野；景象"
+        },
+        {
+         "pos": "v.",
+         "mean": "[[看见]]；发现"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "例",
+      "en": "The disease has affected her sight.",
+      "zh": "这种病影响了她的视力。",
+      "key": [
+       "sight"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 57,
+     "word": "sightseeing",
+     "freq": 1,
+     "page": 202,
+     "prons": [
+      {
+       "ipa": "/ˈsaɪtsiːɪŋ/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[观光，游览]]"
+        }
+       ]
+      }
+     ],
+     "tip": null,
+     "ex": {
+      "type": "例",
+      "en": "Did you have a chance to do any sightseeing?",
+      "zh": "你有没有出去游览的机会？",
+      "key": [
+       "sightseeing"
+      ]
+     },
+     "ext": []
+    },
+    {
+     "no": 58,
+     "word": "insight",
+     "freq": 2,
+     "page": 202,
+     "prons": [
+      {
+       "ipa": "/ˈɪnsaɪt/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[洞察力，领悟，洞悉]]；了解"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "in-（向内，进入）+ sight（看见）→ 洞察力"
+     },
+     "ex": {
+      "type": "例",
+      "en": "He has insight, vision and a deep humanity.",
+      "zh": "他有洞察力、远见和深厚的人文关怀。",
+      "key": [
+       "insight"
+      ]
+     },
+     "ext": [
+      {
+       "word": "insightful",
+       "ipa": "/ɪnˈsaɪtfl/",
+       "senses": [
+        {
+         "pos": "adj.",
+         "mean": "有深刻了解的；富有洞察力的"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "no": 59,
+     "word": "oversight",
+     "freq": 1,
+     "page": 202,
+     "prons": [
+      {
+       "ipa": "/ˈəʊvəsaɪt/",
+       "senses": [
+        {
+         "pos": "n.",
+         "mean": "[[疏忽，忽略]]；失察，负责"
+        }
+       ]
+      }
+     ],
+     "tip": {
+      "type": "构词",
+      "text": "over-（超过，覆盖）+ sight（视野）→ 忽略"
+     },
+     "ex": {
+      "type": "例",
+      "en": "The cause of the fire was a minor oversight of the staff.",
+      "zh": "火灾的原因是工作人员的轻微疏忽。",
+      "key": [
+       "oversight"
+      ]
+     },
+     "ext": []
+    }
+   ]
+  }
+ ]
+}
