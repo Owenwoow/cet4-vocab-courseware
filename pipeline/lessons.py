@@ -17,11 +17,11 @@ TOC = json.loads((Path(__file__).parent / "toc.json").read_text(encoding="utf-8"
 
 
 def all_lessons():
-    """按书顺序给出 (id, unit, lesson, 起页, 止页)；止页 = 下一课起页 - 1"""
+    """按书顺序给出 (id, unit, lesson, 起页, 止页)；止页 = 下一课起页 - 1；最后一课止于 end_page（Part 02 即 Unit 11–12 不做）"""
     flat = [(u["no"], i + 1, start) for p in TOC["parts"] for u in p["units"] for i, start in enumerate(u["lessons"])]
     out = []
     for k, (unit, les, start) in enumerate(flat):
-        end = (flat[k + 1][2] if k + 1 < len(flat) else TOC["index_page"]) - 1
+        end = (flat[k + 1][2] if k + 1 < len(flat) else TOC["end_page"] + 1) - 1
         out.append((lesson_id(unit, les), unit, les, start, end))
     return out
 
