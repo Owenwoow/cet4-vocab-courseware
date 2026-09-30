@@ -17,7 +17,8 @@
 | 3 | 校验 | 脚本（不花 token） | `python pipeline/validate.py u07-l01` |
 | 3′ | 有 ERROR 就回炉 | 同第 2 步的模型，附上错误清单和页图 | — |
 | 4 | 例句逐词释义 | **纯文本便宜模型**（DeepSeek / Haiku） | 提示词 `pipeline/prompts/gloss.md` → `site/data/gloss/u07-l01.json` |
-| 5 | 音频 | 脚本（edge-tts，免费） | `python pipeline/build_audio.py u07-l01` |
+| 5 | 音频（本地生成） | 脚本（edge-tts，免费） | `python pipeline/build_audio.py u07-l01` |
+| 5′ | 推送音频到音频仓库 | 脚本 | `python pipeline/publish_audio.py` |
 | 6 | 目录与搜索索引 | 脚本 | `python pipeline/build_index.py` |
 | 7 | 对照原书抽查 | **人** | 网页里每个词群的「📖 看原书」 |
 
@@ -36,7 +37,8 @@
 - **音频改成独立 mp3，按内容哈希去重**：样例把 7 个词的音频 base64 内嵌在 HTML 里，已经 5MB；现在一课约 10MB 的独立小文件，按需加载，重跑时只补新文件。
 - **慢速不再单独生成**，改用浏览器 `playbackRate`（慢 0.75 / 较慢 0.9 / 常速），音频量减半。默认生成全部四种声音（Ava / Andrew / Sonia / Ryan），每种一课约 4MB；想省空间用 `--voices ava,sonia` 这类参数只生成部分。
 - **设置集中到单独的设置页**（`#/settings`，顶栏 ⚙）：发音（可试听）、语速、背诵模式、隐藏已会、磨耳朵范围/读中文/循环、主题、清空已会记录。设置存在本机浏览器里。课文页只留右下角两个悬浮按钮：「遮」（背诵模式快捷切换）和 🎧（磨耳朵）。
-- **音频和页图不进 git**：两者都能用脚本从 PDF 和 JSON 重新生成；进 git 的只有代码和 JSON。
+- **音频放独立仓库 `cet4-vocab-audio`，本地生成后推送**（2026-09-30 改）：线上生成会被语音服务限流，Actions 缓存 7 天不用就被删，届时要全书重生成；主站和音频各占一个 Pages 站点，各有约 1GB 额度。音频按内容哈希命名、只增不改，仓库历史不会膨胀。每课清单记着音频站地址 `base`，音频仓库满了就新建 `-2`，改 `pipeline/config.py` 两行，旧课不受影响。部署前 `check_audio.py` 抽查音频已上线，忘推音频会拦住部署。
+- **页图不进 git**：用脚本从本地 PDF 重新生成。
 - 手机上的思维导图改成竖向大纲，桌面端保持横向树。
 
 ## 下一步（待定）
@@ -45,8 +47,8 @@
 - [ ] 用 Sonnet 子代理（或便宜视觉模型）按提示词跑 Unit 7 Lesson 2，对比人工结果，测出准确率
 - [ ] 把工作流固化成项目技能 `.claude/skills/make-lesson/`
 - [x] 部署：GitHub Actions → GitHub Pages，https://owenwoow.github.io/cet4-vocab-courseware/（2026-09-30）
-  - 线上生成音频曾被微软语音服务限流：并发降到 3、退避重试、失败跳过、缓存每次保存
+  - 线上生成音频被限流、缓存会过期 → 音频改为本地生成，放独立仓库 https://owenwoow.github.io/cet4-vocab-audio/
   - Pages 缓存 10 分钟：部署时给 app.js / style.css 加版本号
-  - 容量提醒：Pages 站点上限约 1GB。全书四种声音估计约 800MB，接近上限；做到后面几个 Unit 时要考虑减少声音种类
+  - 容量：全书音频估计约 600MB，单个音频仓库装得下；`publish_audio.py` 每次会报总量，接近 1GB 时再拆
 - [ ] Part 02（词以序记）版式不同，需要另一套 schema 和模板
 - [ ] 复习功能：书末艾宾浩斯打卡表

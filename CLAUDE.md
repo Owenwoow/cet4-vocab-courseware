@@ -10,13 +10,16 @@
 - 启动：`python -m http.server 8765 --directory site`，打开 http://localhost:8765 （不能直接双击 HTML，fetch 会被拦）
 - 全量测试：`python pipeline/validate.py`（校验所有课的数据）
 - 生成一课：见 `docs/plans/demo-u7l1.md` 的工作流表
-- 部署：推送到 `main` 即自动部署（`.github/workflows/deploy.yml`：校验 → 生成音频（有缓存）→ 目录索引 → GitHub Pages）。线上地址 https://owenwoow.github.io/cet4-vocab-courseware/
+- 部署：先 `python pipeline/publish_audio.py` 推音频，再推主仓库 `main`，自动部署（`.github/workflows/deploy.yml`：校验 → 检查音频已上线 → 目录索引 → GitHub Pages）。线上地址 https://owenwoow.github.io/cet4-vocab-courseware/
+- 本地预览要起两个服务：课件 8765（`site/`）、音频 8766（`audio-store/`），见 `.claude/launch.json`
+- 新电脑上恢复音频目录：`git clone https://github.com/Owenwoow/cet4-vocab-audio.git audio-store`
 
 ## 目录
 
 - `pipeline/`：流水线脚本和提示词（`prompts/`），`toc.json` 是手录的书目录
 - `site/`：静态站点，直接托管这个目录；`site/data/lessons/*.json` 是唯一数据源
-- `site/data/pages/`、`site/data/audio/`、`work/`：脚本生成，不进 git
+- `site/data/audio/*.json`：每课音频清单（进 git）；音频文件本身在单独的仓库 `cet4-vocab-audio`，本地克隆在 `audio-store/`（主仓库忽略）
+- `site/data/pages/`、`work/`：脚本生成，不进 git
 
 ## 项目约束
 
