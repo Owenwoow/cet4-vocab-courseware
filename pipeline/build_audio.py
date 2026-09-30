@@ -2,9 +2,10 @@
 
 用法：python pipeline/build_audio.py u07-l01 [--voices ava,ryan]
 产物：
-  site/data/audio/files/<hash>.mp3     按「语音+文本」哈希命名，全书去重，已存在就跳过
-  site/data/audio/files/<hash>.json    例句的逐词时间点（用于朗读高亮）
-  site/data/audio/<lesson>.json        本课清单：文本 → 文件
+  audio-store/files/<hash>.mp3     按「语音+文本」哈希命名，全书去重，已存在就跳过
+  audio-store/files/<hash>.json    例句的逐词时间点（用于朗读高亮）
+  site/data/audio/<lesson>.json    本课清单：文本 → 文件，base 记着音频站地址
+生成后用 python pipeline/publish_audio.py 推送到音频仓库。
 慢速播放由浏览器 playbackRate 实现，不单独生成慢速音频。
 """
 import argparse
@@ -16,14 +17,14 @@ import re
 
 import edge_tts
 
-from config import AUDIO, LESSONS
+from config import AUDIO, AUDIO_BASE, AUDIO_STORE, LESSONS
 
 VOICES = {"ava": "en-US-AvaNeural", "andrew": "en-US-AndrewNeural",
           "sonia": "en-GB-SoniaNeural", "ryan": "en-GB-RyanNeural"}
 ZH_VOICE = "zh-CN-XiaoxiaoNeural"
 POS_ZH = {"n.": "名词", "v.": "动词", "adj.": "形容词", "adv.": "副词", "prep.": "介词",
           "conj.": "连词", "pron.": "代词", "phr.": "短语", "n. & v.": "名词和动词"}
-FILES = AUDIO / "files"
+FILES = AUDIO_STORE / "files"
 # 并发数：本机 8 没问题；GitHub 服务器 IP 容易被限流，CI 里设 AUDIO_CONCURRENCY=3
 SEM = asyncio.Semaphore(int(os.environ.get("AUDIO_CONCURRENCY", 8)))
 RETRIES = 6
@@ -66,6 +67,7 @@ async def synth(text, voice, marks_wanted):
 async def main(lid, voice_keys):
     d = json.loads((LESSONS / f"{lid}.json").read_text(encoding="utf-8"))
     FILES.mkdir(parents=True, exist_ok=True)
+    AUDIO.mkdir(parents=True, exist_ok=True)
     words, sentences, zh, meaning = [], [], [], {}
     for g in d["groups"]:
         for e in g["entries"]:
@@ -82,7 +84,7 @@ async def main(lid, voice_keys):
     words, sentences, zh = (list(dict.fromkeys(v)) for v in (words, sentences, zh))
 
     # z：中文文本 → 文件；m：单词 → 其释义朗读文本（磨耳朵用）
-    manifest = {"voices": voice_keys, "w": {}, "s": {}, "z": {}, "m": meaning}
+    manifest = {"base": AUDIO_BASE, "voices": voice_keys, "w": {}, "s": {}, "z": {}, "m": meaning}
     made = failed = 0
 
     async def do_word(w, vk):

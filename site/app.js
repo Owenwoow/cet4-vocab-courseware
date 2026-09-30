@@ -77,7 +77,10 @@ function pickSysVoice() {
   sysVoice = vs.find(v => /natural|online/i.test(v.name) && /en-US/.test(v.lang)) || vs.find(v => /en-US/.test(v.lang)) || vs[0];
 }
 if (synth) { pickSysVoice(); synth.onvoiceschanged = pickSysVoice; }
-const audioURL = key => `data/audio/files/${key}.mp3`;
+/* 音频放在单独的音频站（清单里的 base）。本地开发（http）用本机 8766 端口的 audio-store，
+   这样新生成、还没推送的音频也能直接试听 */
+const audioBase = () => location.protocol === "http:" ? `http://${location.hostname}:8766/` : (AUD.base || "data/audio/");
+const audioURL = key => `${audioBase()}files/${key}.mp3`;
 const rate = () => +S.rate;
 /* 选中的声音本课没生成时，退回本课第一种 */
 const pickVoice = rec => rec && (rec[S.voice] || Object.values(rec)[0]);

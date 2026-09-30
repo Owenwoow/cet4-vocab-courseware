@@ -11,7 +11,13 @@ SITE = ROOT / "site"                      # 可直接托管的静态站点
 DATA = SITE / "data"
 LESSONS = DATA / "lessons"
 PAGES = DATA / "pages"                    # 压缩后的页图，供网页「看原书」
-AUDIO = DATA / "audio"
+AUDIO = DATA / "audio"                    # 每课的音频清单（小，随主仓库提交）
+
+# 音频文件本身放在单独的仓库 cet4-vocab-audio（本地克隆在 audio-store/），由它的 Pages 提供下载。
+# 本地生成、推送，线上不再生成，避免被语音服务限流。
+# 这个仓库快满 1GB 时：新建 cet4-vocab-audio-2，把下面两行改过去；旧课的清单里记着自己的地址，不受影响。
+AUDIO_STORE = ROOT / "audio-store"
+AUDIO_BASE = "https://owenwoow.github.io/cet4-vocab-audio/"
 
 # 书页码 = PDF 页序号(0 起) - 9，例：书 p191 = PDF 第 200 页(0 起)
 PAGE_OFFSET = 9

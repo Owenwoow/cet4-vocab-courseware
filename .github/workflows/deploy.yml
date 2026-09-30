@@ -1,4 +1,5 @@
-# 推送到 main 后：校验数据 → 生成音频（有缓存，只补新的）→ 部署到 GitHub Pages
+# 推送到 main 后：校验数据 → 检查音频已上线 → 目录索引 → 部署到 GitHub Pages
+# 音频在本地生成、推到单独的仓库 cet4-vocab-audio（见 pipeline/publish_audio.py），这里不生成。
 # 原书扫描页（site/data/pages/）不进仓库，也不部署。
 name: deploy
 
@@ -26,26 +27,11 @@ jobs:
         with:
           python-version: "3.12"
 
-      - run: pip install edge-tts
-
       - name: 校验数据
         run: python pipeline/validate.py
 
-      # 音频文件按内容哈希命名。每次运行都存一份最新缓存（键带 run_id），
-      # 这样上次失败跳过的文件补上后也能存进去
-      - uses: actions/cache@v4
-        with:
-          path: site/data/audio
-          key: audio-${{ github.run_id }}
-          restore-keys: audio-
-
-      - name: 生成音频
-        env:
-          AUDIO_CONCURRENCY: "3"   # GitHub 服务器 IP 并发高了会被语音服务限流
-        run: |
-          for f in site/data/lessons/*.json; do
-            python pipeline/build_audio.py "$(basename "$f" .json)"
-          done
+      - name: 检查音频已推送到音频站
+        run: python pipeline/check_audio.py
 
       - name: 生成目录索引
         run: python pipeline/build_index.py

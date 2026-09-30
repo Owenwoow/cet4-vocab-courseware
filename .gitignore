@@ -35,4 +35,6 @@ reference/
 # ===== 可由脚本重新生成的产物 =====
 work/
 site/data/pages/
-site/data/audio/
+
+# ===== 音频文件：在单独的仓库 cet4-vocab-audio，本地克隆在这里 =====
+audio-store/
