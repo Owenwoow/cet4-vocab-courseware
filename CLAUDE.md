@@ -10,6 +10,7 @@
 - 启动：`python -m http.server 8765 --directory site`，打开 http://localhost:8765 （不能直接双击 HTML，fetch 会被拦）
 - 全量测试：`python pipeline/validate.py`（校验所有课的数据）
 - 生成一课：见 `docs/plans/demo-u7l1.md` 的工作流表
+- 部署：推送到 `main` 即自动部署（`.github/workflows/deploy.yml`：校验 → 生成音频（有缓存）→ 目录索引 → GitHub Pages）。线上地址 https://owenwoow.github.io/cet4-vocab-courseware/
 
 ## 目录
 
@@ -20,6 +21,7 @@
 ## 项目约束
 
 - 内容与书上逐字一致；书外补充（`site/data/gloss/`）在页面上标「补充」
-- 仓库不公开；页面带 `noindex`
+- 仓库和网站是公开的（公开仓库才有免费 Actions 额度），但只给自己用：页面带 `noindex`，`site/robots.txt` 禁止所有爬虫，不在任何地方放链接
+- 原书扫描页（`site/data/pages/`）不进仓库、不部署，「看原书」只在本地版出现（`book.json` 的 `hasPages`）
 - 书页码 = PDF 页序号(0 起) − 9（`pipeline/config.py`）
 - 每个 Lesson 的词条序号从 01 重新开始；词群编号在整个 Unit 内连续

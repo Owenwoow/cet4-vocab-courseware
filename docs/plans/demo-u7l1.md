@@ -5,7 +5,7 @@
 ## 已定的方向
 
 - 只给自己用，内容**与书上一致**；书外补充（例句逐词释义）在页面上标「补充」。
-- 仓库放在 GitHub 上，不公开、不被索引（页面带 `noindex`）。
+- 仓库和网站公开（私有仓库没有免费 Actions 额度），只给自己用：`noindex` + `robots.txt` 禁止收录，原书扫描页不部署。
 - 走 Claude Code 订阅；工作流拆成独立步骤，繁琐耗 token 的步骤可以换成 DeepSeek 等便宜模型。
 
 ## 工作流（每课一遍）
@@ -44,6 +44,9 @@
 - [ ] 用户验收 demo，提改动意见
 - [ ] 用 Sonnet 子代理（或便宜视觉模型）按提示词跑 Unit 7 Lesson 2，对比人工结果，测出准确率
 - [ ] 把工作流固化成项目技能 `.claude/skills/make-lesson/`
-- [ ] 手机上怎么访问：私有托管方案（Cloudflare Pages + Access / 局域网 / 其他）
+- [x] 部署：GitHub Actions → GitHub Pages，https://owenwoow.github.io/cet4-vocab-courseware/（2026-09-30）
+  - 线上生成音频曾被微软语音服务限流：并发降到 3、退避重试、失败跳过、缓存每次保存
+  - Pages 缓存 10 分钟：部署时给 app.js / style.css 加版本号
+  - 容量提醒：Pages 站点上限约 1GB。全书四种声音估计约 800MB，接近上限；做到后面几个 Unit 时要考虑减少声音种类
 - [ ] Part 02（词以序记）版式不同，需要另一套 schema 和模板
 - [ ] 复习功能：书末艾宾浩斯打卡表
