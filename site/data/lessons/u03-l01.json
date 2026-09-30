@@ -1,0 +1,674 @@
+{
+  "id": "u03-l01",
+  "part": 1,
+  "unit": 3,
+  "lesson": 1,
+  "pages": [60, 67],
+  "groups": [
+    {
+      "no": 1,
+      "title": "count 相关",
+      "pages": [60, 61],
+      "map": {
+        "w": "count 相关",
+        "children": [
+          {"w": "counter", "children": [
+            {"w": "countdown"},
+            {"w": "counterpart", "rel": "合成"},
+            {"w": "encounter", "rel": "加前缀"}
+          ]},
+          {"w": "account", "children": [
+            {"w": "accounting"},
+            {"w": "accountant"},
+            {"w": "accountable"},
+            {"w": "accountancy"},
+            {"w": "accountability"}
+          ]},
+          {"w": "payment", "children": [
+            {"w": "pay", "rel": "扩"},
+            {"w": "repay", "rel": "同根", "children": [{"w": "repayment", "rel": "扩"}]},
+            {"w": "loan", "rel": "相关", "children": [
+              {"w": "bill", "children": [
+                {"w": "debt", "rel": "相关", "children": [{"w": "debtor", "rel": "扩"}]}
+              ]}
+            ]}
+          ]},
+          {"w": "discount", "children": [{"w": "coupon", "rel": "相关"}]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "count", "freq": 1, "page": 60,
+          "prons": [{"ipa": "/kaʊnt/", "senses": [
+            {"pos": "v.", "mean": "[[计数，重要]]"},
+            {"pos": "n.", "mean": "点数；[[数量]]；罪状"}
+          ]}],
+          "tip": {"type": "联想", "text": "co（联想 con-，所有）+ unt（联想 aunt）→ 所有的阿姨都来了，数数有多少个人 → 计数；数量"},
+          "ex": {"type": "真", "year": 2019, "en": "It counts less than generally thought.", "zh": "它没有人们普遍认为的那么重要。", "key": ["counts"]},
+          "ext": [{"word": "countdown", "ipa": "/ˈkaʊntdaʊn/", "senses": [{"pos": "n.", "mean": "倒计时；倒数读秒"}]}]
+        },
+        {
+          "no": 2, "word": "counter", "freq": 2, "page": 60,
+          "prons": [{"ipa": "/ˈkaʊntə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[柜台]]；相对的事物；[[计算器]]"},
+            {"pos": "v.", "mean": "[[反驳]]"},
+            {"pos": "adv.", "mean": "[[相反地]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "count（数）+ -er（后缀）→ 算账的人坐在“柜台”里用“计算器”算数。"},
+          "ex": {"type": "例", "en": "It doesn't run counter to the goals of public education.", "zh": "它并不违背公共教育的目标。", "key": ["run counter to"]},
+          "ext": []
+        },
+        {
+          "no": 3, "word": "account", "freq": 1, "page": 60,
+          "prons": [{"ipa": "/əˈkaʊnt/", "senses": [
+            {"pos": "n.", "mean": "[[账户]]；[[账目]]"},
+            {"pos": "v.", "mean": "[[认为]]；[[解释]]；导致"}
+          ]}],
+          "tip": {"type": "联想", "text": "ac-（一再地）+ count（数）→ 妈妈一再地数“账户”里有多少钱。"},
+          "ex": {"type": "真", "year": 2021, "en": "They account for age differences in learning.", "zh": "它们解释了学习中的年龄差异。", "key": ["account for"]},
+          "ext": [
+            {"word": "accounting", "ipa": "/əˈkaʊntɪŋ/", "senses": [{"pos": "n.", "mean": "会计"}]},
+            {"word": "accountant", "ipa": "/əˈkaʊntənt/", "senses": [{"pos": "n.", "mean": "会计，会计师"}]},
+            {"word": "accountancy", "ipa": "/əˈkaʊntənsi/", "senses": [{"pos": "n.", "mean": "会计工作；会计职业"}]},
+            {"word": "accountable", "ipa": "/əˈkaʊntəbl/", "senses": [{"pos": "adj.", "mean": "负有责任的"}]},
+            {"word": "accountability", "ipa": "/əˌkaʊntəˈbɪləti/", "senses": [{"pos": "n.", "mean": "有责任，有义务"}]}
+          ]
+        },
+        {
+          "no": 4, "word": "counterpart", "freq": 1, "page": 60,
+          "prons": [{"ipa": "/ˈkaʊntəpɑːt/", "senses": [{"pos": "n.", "mean": "[[相似的人或物]]"}]}],
+          "tip": {"type": "构词", "text": "counter（相对，对应）+ part（部分）→ 相似的人或物"},
+          "ex": {"type": "例", "en": "The Foreign Minister held talks with his Chinese counterpart.", "zh": "外交部长与中国的同级官员举行了会谈。", "key": ["counterpart"]},
+          "ext": []
+        },
+        {
+          "no": 5, "word": "encounter", "freq": 2, "page": 60,
+          "prons": [{"ipa": "/ɪnˈkaʊntə(r)/", "senses": [{"pos": "v. & n.", "mean": "[[遇见]]；[[遭遇]]"}]}],
+          "tip": {"type": "构词", "text": "en-（使……）+ counter（相对）→ 遇见；遭遇"},
+          "ex": {"type": "真", "year": 2022, "en": "They may encounter technological problems.", "zh": "他们可能会遇到技术问题。", "key": ["encounter"]},
+          "ext": []
+        },
+        {
+          "no": 6, "word": "discount", "freq": 3, "page": 60,
+          "prons": [{"ipa": "/ˈdɪskaʊnt/", "senses": [
+            {"pos": "n.", "mean": "[[折扣]]"},
+            {"pos": "v.", "mean": "[[打折扣]]"}
+          ]}],
+          "tip": {"type": "构词", "text": "dis-（不）+ count（数，计算）→ 不用计算在内的 → 折扣"},
+          "ex": {"type": "例", "en": "Traffic was boosted in America, the home of fast food, with discounts and promotions.", "zh": "在快餐之乡美国，折扣和促销活动增加了客流量。", "key": ["discounts"]},
+          "ext": []
+        },
+        {
+          "no": 7, "word": "coupon", "freq": 1, "page": 61,
+          "prons": [{"ipa": "/ˈkuːpɒn/", "senses": [{"pos": "n.", "mean": "配给券；[[优惠券]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“苦盼”→ 我天天苦盼商家多发些“优惠券”来帮我省钱。"},
+          "ex": {"type": "例", "en": "She gets coupons from them regularly.", "zh": "她经常从他们那里得到优惠券。", "key": ["coupons"]},
+          "ext": []
+        },
+        {
+          "no": 8, "word": "payment", "freq": 3, "page": 61,
+          "prons": [{"ipa": "/ˈpeɪmənt/", "senses": [{"pos": "n.", "mean": "[[付款]]；[[收款]]；报答"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2022, "en": "We generally recommend other forms of payment, like credit card.", "zh": "我们一般建议使用其他付款方式，比如信用卡。", "key": ["payment"]},
+          "ext": [{"word": "pay", "ipa": "/peɪ/", "senses": [
+            {"pos": "v.", "mean": "付费；交纳；创收；付出代价"},
+            {"pos": "n.", "mean": "工资，薪水"}
+          ]}]
+        },
+        {
+          "no": 9, "word": "repay", "freq": 1, "page": 61,
+          "prons": [{"ipa": "/rɪˈpeɪ/", "senses": [{"pos": "v.", "mean": "[[归还，偿还]]，清偿"}]}],
+          "tip": {"type": "构词", "text": "re-（回）+ pay（付）→ 归还，偿还"},
+          "ex": {"type": "例", "en": "I'll repay the money I owe them next week.", "zh": "我将在下个星期偿还欠他们的钱。", "key": ["repay"]},
+          "ext": [{"word": "repayment", "ipa": "/rɪˈpeɪmənt/", "senses": [{"pos": "n.", "mean": "归还借款；偿还债务"}]}]
+        },
+        {
+          "no": 10, "word": "bill", "freq": 1, "page": 61,
+          "prons": [{"ipa": "/bɪl/", "senses": [{"pos": "n.", "mean": "[[账单]]；议案"}]}],
+          "tip": {"type": "联想", "text": "bi-（两个，两）+ ll（联想“两张薄纸”）→ 我收到两页“账单”。"},
+          "ex": {"type": "例", "en": "If a home generates more power than it uses, the bill is zero.", "zh": "如果一个家庭产生的电比它使用的多，那么账单为零。", "key": ["bill"]},
+          "ext": []
+        },
+        {
+          "no": 11, "word": "loan", "freq": 3, "page": 61,
+          "prons": [{"ipa": "/ləʊn/", "senses": [{"pos": "n.", "mean": "[[贷款]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“楼”→ 一般人买楼房需要“贷款”。"},
+          "ex": {"type": "真", "year": 2020, "en": "Often there'll be a car loan and perhaps a mortgage.", "zh": "通常会有汽车贷款，也许还有抵押贷款。", "key": ["loan"]},
+          "ext": []
+        },
+        {
+          "no": 12, "word": "debt", "freq": 1, "page": 61,
+          "prons": [{"ipa": "/det/", "senses": [{"pos": "n.", "mean": "[[债务]]，欠款"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“贷它”→ 他向银行贷款后，有了“债务”。"},
+          "ex": {"type": "例", "en": "They are finally clear of debt.", "zh": "他们终于偿清了债务。", "key": ["debt"]},
+          "ext": [{"word": "debtor", "ipa": "/ˈdetə(r)/", "senses": [{"pos": "n.", "mean": "债务人；借方"}]}]
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "title": "“草”相关",
+      "pages": [61, 62],
+      "map": {
+        "w": "“草”相关",
+        "children": [
+          {"w": "lawn"},
+          {"w": "bush", "children": [
+            {"w": "bushy", "rel": "扩"},
+            {"w": "brush", "rel": "形近"},
+            {"w": "flush", "rel": "形近", "children": [{"w": "splash", "rel": "相关"}]}
+          ]},
+          {"w": "jungle"},
+          {"w": "weed", "children": [{"w": "field", "rel": "相关"}]},
+          {"w": "hay"},
+          {"w": "grasp", "children": [{"w": "grab", "rel": "近义"}]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 13, "word": "lawn", "freq": 1, "page": 61,
+          "prons": [{"ipa": "/lɔːn/", "senses": [{"pos": "n.", "mean": "[[草坪]]"}]}],
+          "tip": {"type": "联想", "text": "law（联想 lawyer）+ n（形似门）→ 律师家门前有一大片“草坪”。"},
+          "ex": {"type": "例", "en": "In summer we have to mow the lawn twice a week.", "zh": "夏天我们每周得修剪草坪两次。", "key": ["lawn"]},
+          "ext": []
+        },
+        {
+          "no": 14, "word": "bush", "freq": 1, "page": 61,
+          "prons": [{"ipa": "/bʊʃ/", "senses": [{"pos": "n.", "mean": "[[灌木]]；[[灌木丛]]；矮树"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“布什”→ 布什家后院种了许多“灌木”。"},
+          "ex": {"type": "例", "en": "She was hiding in the bushes at the side of the lane.", "zh": "她躲在道边的灌木丛中。", "key": ["bushes"]},
+          "ext": [{"word": "bushy", "ipa": "/ˈbʊʃi/", "senses": [{"pos": "adj.", "mean": "浓密的；茂密的；多叶的"}]}]
+        },
+        {
+          "no": 15, "word": "brush", "freq": 1, "page": 62,
+          "prons": [{"ipa": "/brʌʃ/", "senses": [
+            {"pos": "n.", "mean": "[[刷子]]；[[画笔]]"},
+            {"pos": "v.", "mean": "（用刷子）涂；抹"}
+          ]}],
+          "tip": {"type": "联想", "text": "bush（音似“布什”）+ r（形似花）→ 布什用“画笔”画了一幅以花为主题的画。"},
+          "ex": {"type": "例", "en": "Brush the pastry with beaten egg.", "zh": "用刷子把打匀的鸡蛋抹在油酥面团上。", "key": ["Brush"]},
+          "ext": []
+        },
+        {
+          "no": 16, "word": "flush", "freq": 1, "page": 62,
+          "prons": [{"ipa": "/flʌʃ/", "senses": [{"pos": "n. & v.", "mean": "[[脸红]]；[[冲洗]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“服了师”→ 他上课不听话，被老师批评了一顿，服了老师，并且羞愧地“脸红”了。"},
+          "ex": {"type": "例", "en": "There was a flush on her cheeks.", "zh": "她满脸通红。", "key": ["flush"]},
+          "ext": []
+        },
+        {
+          "no": 17, "word": "splash", "freq": 1, "page": 62,
+          "prons": [{"ipa": "/splæʃ/", "senses": [
+            {"pos": "n.", "mean": "[[落水声]]；[[溅洒后留下的污渍]]"},
+            {"pos": "v.", "mean": "[[把（水、泥等）溅在……上]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "电影《美人鱼》（Splash）里的美人鱼扑通一声跳进海里，海水飞溅→落水声"},
+          "ex": {"type": "例", "en": "My clothes were splashed with mud.", "zh": "我衣服上溅满了泥。", "key": ["splashed"]},
+          "ext": []
+        },
+        {
+          "no": 18, "word": "jungle", "freq": 1, "page": 62,
+          "prons": [{"ipa": "/ˈdʒʌŋɡl/", "senses": [{"pos": "n.", "mean": "[[丛林]]，密林；杂草丛生的地方"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“夹勾”→ 如果你在“丛林”行进，很容易被夹住脚或勾住衣服。"},
+          "ex": {"type": "真", "year": 2024, "en": "The elephant was able to return to the jungle.", "zh": "大象得以回到丛林。", "key": ["jungle"]},
+          "ext": []
+        },
+        {
+          "no": 19, "word": "weed", "freq": 1, "page": 62,
+          "prons": [{"ipa": "/wiːd/", "senses": [{"pos": "n.", "mean": "[[杂草]]，野草"}]}],
+          "tip": {"type": "联想", "text": "wee（音似 we）+ d（联想“的”）→ 我们的花园荒废已久，里面长满了“杂草”。"},
+          "ex": {"type": "例", "en": "The yard was overgrown with weeds.", "zh": "这座庭院杂草丛生。", "key": ["weeds"]},
+          "ext": []
+        },
+        {
+          "no": 20, "word": "hay", "freq": 1, "page": 62,
+          "prons": [{"ipa": "/heɪ/", "senses": [{"pos": "n.", "mean": "（用作饲料的）[[干草]]"}]}],
+          "tip": {"type": "联想", "text": "ha（联想“哈”）+ y（联想“爷”）→ 哈！爷爷正在用“干草”喂牲畜。"},
+          "ex": {"type": "例", "en": "He drove by with a big load of hay.", "zh": "他开着装满干草的车过去了。", "key": ["hay"]},
+          "ext": []
+        },
+        {
+          "no": 21, "word": "field", "freq": 1, "page": 62,
+          "prons": [{"ipa": "/fiːld/", "senses": [
+            {"pos": "n.", "mean": "[[田]]；[[地]]；[[领域]]"},
+            {"pos": "adj.", "mean": "实地的；野外的"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“肥沃的”→ 这里有一块肥沃的田“地”。"},
+          "ex": {"type": "例", "en": "Great innovators are good at connecting concepts from various academic fields.", "zh": "伟大的创新者善于将不同学术领域的概念联系起来。", "key": ["fields"]},
+          "ext": []
+        },
+        {
+          "no": 22, "word": "grasp", "freq": 2, "page": 62,
+          "prons": [{"ipa": "/ɡrɑːsp/", "senses": [{"pos": "n. & v.", "mean": "[[抓住]]，[[抓紧]]；[[理解]]，[[领会]]"}]}],
+          "tip": {"type": "联想", "text": "gras（联想 grass）+ p（联想“趴”）→ 他趴在草地上，“抓住”一撮草。"},
+          "ex": {"type": "真", "year": 2021, "en": "It takes great efforts for children to grasp the concept of number words.", "zh": "儿童掌握数字单词的概念需要付出很大的努力。", "key": ["grasp"]},
+          "ext": []
+        },
+        {
+          "no": 23, "word": "grab", "freq": 2, "page": 62,
+          "prons": [{"ipa": "/ɡræb/", "senses": [{"pos": "n. & v.", "mean": "[[抓住]]；[[抓取]]"}]}],
+          "tip": {"type": "联想", "text": "gr（联想“官人”）+ a（音似“爱”）+ b（联想“宝”）→ 官人爱一个人就要“抓住”她的心，把她视为珍宝。"},
+          "ex": {"type": "例", "en": "She grabbed his arm as he got up to leave.", "zh": "他起身离开时，她抓住了他的胳膊。", "key": ["grabbed"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "title": "“方位”相关",
+      "pages": [63, 64],
+      "map": {
+        "w": "“方位”相关",
+        "children": [
+          {"w": "above", "children": [
+            {"w": "beneath", "rel": "反义", "children": [
+              {"w": "bottom", "rel": "相关", "children": [{"w": "button", "rel": "形近"}]},
+              {"w": "underneath", "rel": "近义"}
+            ]}
+          ]},
+          {"w": "undergo", "children": [
+            {"w": "experience", "rel": "近义", "children": [{"w": "experienced", "rel": "扩"}]},
+            {"w": "endure", "rel": "相关", "children": [
+              {"w": "endurance", "rel": "扩"},
+              {"w": "durable", "rel": "同根", "children": [{"w": "durability", "rel": "扩"}]},
+              {"w": "duration", "children": [
+                {"w": "session", "rel": "近义"},
+                {"w": "span", "rel": "近义"}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 24, "word": "above", "freq": 1, "page": 63,
+          "prons": [{"ipa": "/əˈbʌv/", "senses": [
+            {"pos": "prep. & adv.", "mean": "在……上面；超过"},
+            {"pos": "adj.", "mean": "上述的"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2021, "en": "It was built above the sea-water.", "zh": "它建在海水之上。", "key": ["above"]},
+          "ext": []
+        },
+        {
+          "no": 25, "word": "bottom", "freq": 1, "page": 63,
+          "prons": [{"ipa": "/ˈbɒtəm/", "senses": [
+            {"pos": "n.", "mean": "底部；底面；（容器内的）底"},
+            {"pos": "adj.", "mean": "底部的；最后的"}
+          ]}],
+          "tip": {"type": "联想", "text": "bo（形似 60）+ t + tom（联想“汤姆”，名字）→ 盒子“底部”画了 60 只汤姆猫。"},
+          "ex": {"type": "真", "year": 2020, "en": "The idea that those at the bottom can rise to the top is central to America's ideas about itself.", "zh": "美国自我认知的核心便是社会底层的人有机会跃居社会顶层。", "key": ["at the bottom"]},
+          "ext": []
+        },
+        {
+          "no": 26, "word": "button", "freq": 1, "page": 63,
+          "prons": [{"ipa": "/ˈbʌtn/", "senses": [{"pos": "n.", "mean": "按钮；纽扣"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“爸吞”→ 爸爸小时候很调皮，曾吞下过一颗“纽扣”。"},
+          "ex": {"type": "例", "en": "Adam pressed a button and waited for the lift.", "zh": "亚当按了一个按钮，然后等着乘坐电梯。", "key": ["button"]},
+          "ext": []
+        },
+        {
+          "no": 27, "word": "beneath", "freq": 1, "page": 63,
+          "prons": [{"ipa": "/bɪˈniːθ/", "senses": [{"pos": "prep.", "mean": "在（或往）……下面，在（或往）……下方"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“币泥石”→ 他把钱币藏在泥土和石块的“下面”。"},
+          "ex": {"type": "例", "en": "The city was spread out beneath us in all its glory.", "zh": "这座城市绚丽多彩地展现在我们下方。", "key": ["beneath"]},
+          "ext": []
+        },
+        {
+          "no": 28, "word": "underneath", "freq": 1, "page": 63,
+          "prons": [{"ipa": "/ˌʌndəˈniːθ/", "senses": [
+            {"pos": "adv.", "mean": "在下面，在底下"},
+            {"pos": "prep.", "mean": "在……下面"},
+            {"pos": "n.", "mean": "底部"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The coin rolled underneath the piano.", "zh": "硬币滚到了钢琴底下。", "key": ["underneath"]},
+          "ext": []
+        },
+        {
+          "no": 29, "word": "undergo", "freq": 1, "page": 63,
+          "prons": [{"ipa": "/ˌʌndəˈɡəʊ/", "senses": [{"pos": "v.", "mean": "经历，经受（变化、不快的事等）"}]}],
+          "tip": {"type": "联想", "text": "under（下面）+ go（走）→ 人要是总走在别人的下面，过得不如别人，就可能“经受”冷嘲热讽。"},
+          "ex": {"type": "真", "year": 2022, "en": "They had to undergo 2-3 physical checkups.", "zh": "他们必须接受 2~3 次身体检查。", "key": ["undergo"]},
+          "ext": []
+        },
+        {
+          "no": 30, "word": "experience", "freq": 1, "page": 63,
+          "prons": [{"ipa": "/ɪkˈspɪəriəns/", "senses": [
+            {"pos": "n.", "mean": "[[经历]]；[[经验]]"},
+            {"pos": "v.", "mean": "[[经受]]；感受"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2024, "en": "Desiring new experiences can help to renovate the brain.", "zh": "渴望新的体验可以帮助大脑更新。", "key": ["experiences"]},
+          "ext": [{"word": "experienced", "ipa": "/ɪkˈspɪəriənst/", "senses": [{"pos": "adj.", "mean": "有经验的；熟练的"}]}]
+        },
+        {
+          "no": 31, "word": "endure", "freq": 1, "page": 63,
+          "prons": [{"ipa": "/ɪnˈdjʊə(r)/", "senses": [{"pos": "v.", "mean": "[[忍受]]；持续"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“硬度”→ 人的意志像钢铁般坚硬，能“忍受”一切磨难。"},
+          "ex": {"type": "例", "en": "These people are usually unable or unprepared to endure the long haul.", "zh": "这些人通常无法或没有准备好忍受长途跋涉。", "key": ["endure"]},
+          "ext": [{"word": "endurance", "ipa": "/ɪnˈdjʊərəns/", "senses": [{"pos": "n.", "mean": "忍耐力，耐久力"}]}]
+        },
+        {
+          "no": 32, "word": "durable", "freq": 1, "page": 63,
+          "prons": [{"ipa": "/ˈdjʊərəbl/", "senses": [{"pos": "adj.", "mean": "[[持久的]]；[[耐用的]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "These containers were really durable, lasting years on end.", "zh": "这些容器真的很耐用，可以连续使用数年。", "key": ["durable"]},
+          "ext": [{"word": "durability", "ipa": "/ˌdjʊərəˈbɪləti/", "senses": [{"pos": "n.", "mean": "耐久性；持续性"}]}]
+        },
+        {
+          "no": 33, "word": "duration", "freq": 1, "page": 64,
+          "prons": [{"ipa": "/djuˈreɪʃn/", "senses": [{"pos": "n.", "mean": "[[持续时间]]；期间"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The average duration of unemployment for older people was 53 weeks.", "zh": "老年人的平均失业持续时间为 53 周。", "key": ["duration"]},
+          "ext": []
+        },
+        {
+          "no": 34, "word": "session", "freq": 2, "page": 64,
+          "prons": [{"ipa": "/ˈseʃ(ə)n/", "senses": [{"pos": "n.", "mean": "[[会议]]；（某项活动的）[[一段时间]]；学年"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“塞心”→ 一想到每周五下午开会，就觉得心塞→会议"},
+          "ex": {"type": "例", "en": "Participants will have the opportunity to attend sessions on a wide variety of topics.", "zh": "参与者将有机会参加各种主题的会议。", "key": ["sessions"]},
+          "ext": []
+        },
+        {
+          "no": 35, "word": "span", "freq": 1, "page": 64,
+          "prons": [{"ipa": "/spæn/", "senses": [
+            {"pos": "n.", "mean": "[[期间]]；[[持续时间]]；[[跨度]]"},
+            {"pos": "v.", "mean": "（时间）持续；横跨"}
+          ]}],
+          "tip": {"type": "联想", "text": "s（联想“美女”）+ pan（音似“盼”）→ 美女盼望着考研成功，让人生能有一个新的“跨度”。"},
+          "ex": {"type": "真", "year": 2023, "en": "Their attention span cannot be expanded.", "zh": "他们的注意力持续时间无法延长。", "key": ["span"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "title": "fer 相关",
+      "pages": [64, 65],
+      "map": {
+        "w": "fer 相关",
+        "children": [
+          {"w": "suffer", "children": [
+            {"w": "suffering", "rel": "扩"},
+            {"w": "beard", "rel": "相关"}
+          ]},
+          {"w": "infer", "children": [{"w": "inference", "rel": "扩"}]},
+          {"w": "refer", "children": [
+            {"w": "reference", "rel": "扩"},
+            {"w": "concern", "rel": "相关", "children": [
+              {"w": "concerned", "rel": "扩"},
+              {"w": "concerning", "rel": "扩"}
+            ]}
+          ]},
+          {"w": "conference"},
+          {"w": "fertile", "children": [
+            {"w": "fertiliser", "rel": "扩", "children": [{"w": "fertility"}]}
+          ]},
+          {"w": "prefer", "children": [
+            {"w": "preferable", "rel": "扩", "children": [
+              {"w": "preference", "children": [{"w": "preferential"}]}
+            ]}
+          ]},
+          {"w": "indifferent", "children": [{"w": "indifference", "rel": "扩"}]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 36, "word": "suffer", "freq": 3, "page": 64,
+          "prons": [{"ipa": "/ˈsʌfə(r)/", "senses": [{"pos": "v.", "mean": "（因疾病、痛苦、悲伤等）[[受苦]]，受折磨；[[遭受]]，忍受"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“仨佛”→ 一个和尚挑水喝，两个和尚抬水喝，三个和尚没水喝→受苦；遭受"},
+          "ex": {"type": "真", "year": 2022, "en": "But while catchings at sea have suffered, fish-farming has been growing at a fast rate.", "zh": "虽然海上捕捞受到了影响，但渔业一直在快速发展。", "key": ["suffered"]},
+          "ext": [{"word": "suffering", "ipa": "/ˈsʌfərɪŋ/", "senses": [{"pos": "n.", "mean": "疼痛；痛苦；折磨"}]}]
+        },
+        {
+          "no": 37, "word": "beard", "freq": 1, "page": 64,
+          "prons": [{"ipa": "/bɪəd/", "senses": [{"pos": "n.", "mean": "[[胡须]]"}]}],
+          "tip": {"type": "联想", "text": "bear（熊）+ d（联想“的”）→ 熊的“胡须”很长。"},
+          "ex": {"type": "例", "en": "I didn't recognize him—he's grown a beard.", "zh": "我没认出他来——他留胡子了。", "key": ["beard"]},
+          "ext": []
+        },
+        {
+          "no": 38, "word": "infer", "freq": 2, "page": 64,
+          "prons": [{"ipa": "/ɪnˈfɜː(r)/", "senses": [{"pos": "v.", "mean": "[[推测]]，推论"}]}],
+          "tip": {"type": "联想", "text": "in-（里面）+ fer（音似“佛”）→ 佛心里在想什么？我们不知道，只能“推测”。"},
+          "ex": {"type": "真", "year": 2020, "en": "What can we infer from the passage about the author?", "zh": "从文章中我们可以推断出关于作者的什么？", "key": ["infer from"]},
+          "ext": [{"word": "inference", "ipa": "/ˈɪnfərəns/", "senses": [{"pos": "n.", "mean": "推断；推理；推论"}]}]
+        },
+        {
+          "no": 39, "word": "refer", "freq": 2, "page": 64,
+          "prons": [{"ipa": "/rɪˈfɜː(r)/", "senses": [{"pos": "v.", "mean": "[[提到]]；[[涉及]]"}]}],
+          "tip": {"type": "联想", "text": "re-（重复）+ fer（音似“佛”）→ 谈话时，他们重复“提到”佛。"},
+          "ex": {"type": "真", "year": 2017, "en": "The report refers to this as the coming of the \"18-hour city\".", "zh": "该报告称这是“18 小时城市”的到来。", "key": ["refers to"]},
+          "ext": [{"word": "reference", "ipa": "/ˈrefrəns/", "senses": [{"pos": "n.", "mean": "参考（书目），查阅；索引"}]}]
+        },
+        {
+          "no": 40, "word": "concern", "freq": 1, "page": 64,
+          "prons": [{"ipa": "/kənˈsɜːn/", "senses": [
+            {"pos": "v.", "mean": "[[影响]]；[[涉及]]；[[使担忧]]"},
+            {"pos": "n.", "mean": "[[忧虑]]；[[关心]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "con-（所有）+ cern（音似“心”）→ 妈妈所有的心思都在你身上，她非常“关心”你。"},
+          "ex": {"type": "真", "year": 2024, "en": "Their top concern is not that they work too much but that they work too little.", "zh": "他们最关心的不是工作太多，而是工作太少。", "key": ["concern"]},
+          "ext": [
+            {"word": "concerned", "ipa": "/kənˈsɜːnd/", "senses": [{"pos": "adj.", "mean": "担心的；关注的，关切的；涉及"}]},
+            {"word": "concerning", "ipa": "/kənˈsɜːnɪŋ/", "senses": [
+              {"pos": "prep.", "mean": "关于；涉及"},
+              {"pos": "adj.", "mean": "让人不安的，令人担忧的"}
+            ]}
+          ]
+        },
+        {
+          "no": 41, "word": "conference", "freq": 2, "page": 65,
+          "prons": [{"ipa": "/ˈkɒnfərəns/", "senses": [{"pos": "n.", "mean": "[[会议]]，商讨会"}]}],
+          "tip": {"type": "联想", "text": "con-（所有）+ fer（音似“佛”）+ -ence（名词后缀）→ 有人建议召集所有的佛来参加“会议”，商讨如何降服孙悟空。"},
+          "ex": {"type": "真", "year": 2022, "en": "Debating scientific issues at a conference is now old-fashioned.", "zh": "在会议上辩论科学问题现在已经过时了。", "key": ["conference"]},
+          "ext": []
+        },
+        {
+          "no": 42, "word": "fertile", "freq": 1, "page": 65,
+          "prons": [{"ipa": "/ˈfɜːtaɪl/", "senses": [{"pos": "adj.", "mean": "能结果的；肥沃的"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“佛头”→《西游记》里结出佛头一样人参果的土地是“肥沃的”。"},
+          "ex": {"type": "真", "year": 2020, "en": "Forests are eating away the fertile farmland worldwide.", "zh": "森林正在吞噬全世界肥沃的农田。", "key": ["fertile"]},
+          "ext": [
+            {"word": "fertiliser", "alt": "-izer", "ipa": "/ˈfɜːtəlaɪzə(r)/", "senses": [{"pos": "n.", "mean": "肥料，化肥"}]},
+            {"word": "fertility", "ipa": "/fəˈtɪləti/", "senses": [{"pos": "n.", "mean": "富饶；能生育性；可繁殖性"}]}
+          ]
+        },
+        {
+          "no": 43, "word": "prefer", "freq": 1, "page": 65,
+          "prons": [{"ipa": "/prɪˈfɜː(r)/", "senses": [{"pos": "v.", "mean": "[[更喜欢]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2021, "en": "Hundreds of studies show that infants prefer novelty.", "zh": "数百项研究表明，婴儿喜欢新奇事物。", "key": ["prefer"]},
+          "ext": [
+            {"word": "preferable", "ipa": "/ˈprefrəbl/", "senses": [{"pos": "adj.", "mean": "更可取的；更好的，更优越的"}]},
+            {"word": "preference", "ipa": "/ˈprefrəns/", "senses": [{"pos": "n.", "mean": "偏爱，爱好，喜爱；偏爱的事物；最喜爱的东西"}]},
+            {"word": "preferential", "ipa": "/ˌprefəˈrenʃl/", "senses": [{"pos": "adj.", "mean": "优先的；优惠的；优待的"}]}
+          ]
+        },
+        {
+          "no": 44, "word": "indifferent", "freq": 2, "page": 65,
+          "prons": [{"ipa": "/ɪnˈdɪfrənt/", "senses": [{"pos": "adj.", "mean": "[[冷漠的]]，不关心的"}]}],
+          "tip": {"type": "联想", "text": "in-（不）+ different（不同，有差异）→ 他觉得这件事对他不会产生什么差异，所以露出一副“冷漠的”表情。"},
+          "ex": {"type": "例", "en": "Man appears indifferent to what happens in nature.", "zh": "人类似乎对自然界发生的事情漠不关心。", "key": ["indifferent"]},
+          "ext": [{"word": "indifference", "ipa": "/ɪnˈdɪfrəns/", "senses": [{"pos": "n.", "mean": "冷漠，不关心"}]}]
+        }
+      ]
+    },
+    {
+      "no": 5,
+      "title": "line 相关",
+      "pages": [65, 66],
+      "map": {
+        "w": "line 相关",
+        "children": [
+          {"w": "online", "children": [
+            {"w": "skyline", "children": [{"w": "outline", "rel": "相关"}]}
+          ]},
+          {"w": "underline", "children": [
+            {"w": "undermine", "rel": "形近", "children": [
+              {"w": "determine", "rel": "形近", "children": [
+                {"w": "determination", "rel": "扩"},
+                {"w": "determined", "rel": "扩"}
+              ]}
+            ]}
+          ]},
+          {"w": "headline", "children": [
+            {"w": "deadline", "rel": "形近", "children": [{"w": "layout", "rel": "相关"}]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 45, "word": "skyline", "freq": 1, "page": 65,
+          "prons": [{"ipa": "/ˈskaɪlaɪn/", "senses": [{"pos": "n.", "mean": "轮廓线；天际线"}]}],
+          "tip": {"type": "构词", "text": "sky（天空）+ line（线）→ 天际线"},
+          "ex": {"type": "例", "en": "We are attracted by the skyline of the distant mountains.", "zh": "我们被远山的轮廓线所吸引。", "key": ["skyline"]},
+          "ext": []
+        },
+        {
+          "no": 46, "word": "outline", "freq": 1, "page": 65,
+          "prons": [{"ipa": "/ˈaʊtlaɪn/", "senses": [
+            {"pos": "n.", "mean": "[[轮廓]]，外形；梗概"},
+            {"pos": "v.", "mean": "[[概述]]；勾勒"}
+          ]}],
+          "tip": {"type": "构词", "text": "out（外面）+ line（线）→ 外部线条 → 轮廓"},
+          "ex": {"type": "例", "en": "She drew the figures in outline.", "zh": "她简略地勾勒出人物的轮廓。", "key": ["outline"]},
+          "ext": []
+        },
+        {
+          "no": 47, "word": "online", "freq": 3, "page": 65,
+          "prons": [{"ipa": "/ˌɒnˈlaɪn/", "senses": [{"pos": "adj.", "mean": "[[在线的]]，联网的；线上的"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2022, "en": "Online classes began to be popularized just a few decades ago.", "zh": "在线课程在几十年前才开始普及。", "key": ["Online classes"]},
+          "ext": []
+        },
+        {
+          "no": 48, "word": "underline", "freq": 2, "page": 66,
+          "prons": [{"ipa": "/ˌʌndəˈlaɪn/", "senses": [{"pos": "v.", "mean": "在（词语等下）画线；强调，重视"}]}],
+          "tip": {"type": "构词", "text": "under（下面）+ line（线）→ 在（词语等）下面画线，引申为“强调，重视”。"},
+          "ex": {"type": "例", "en": "It underlined Italy's global reputation as a good steward of art and culture.", "zh": "它强调了意大利作为艺术和文化的优秀管理者在全球的声誉。", "key": ["underlined"]},
+          "ext": []
+        },
+        {
+          "no": 49, "word": "headline", "freq": 1, "page": 66,
+          "prons": [{"ipa": "/ˈhedlaɪn/", "senses": [{"pos": "n.", "mean": "（报纸的）[[大字标题，头条]]；（电视或无线电广播的）新闻摘要"}]}],
+          "tip": {"type": "构词", "text": "head（头）+ line（行）→ 一篇文章头上的那行字，就是“大字标题”或“头条”。"},
+          "ex": {"type": "真", "year": 2015, "en": "Some of the world's most significant problems never hit headlines.", "zh": "世界上一些最重要的问题从未上过头条新闻。", "key": ["headlines"]},
+          "ext": []
+        },
+        {
+          "no": 50, "word": "deadline", "freq": 2, "page": 66,
+          "prons": [{"ipa": "/ˈdedlaɪn/", "senses": [{"pos": "n.", "mean": "[[截止日期]]，最终期限"}]}],
+          "tip": {"type": "构词", "text": "dead（死）+ line（线）→ 最后的那条线 → 截止日期"},
+          "ex": {"type": "例", "en": "He cannot finish his assignment before the deadline.", "zh": "他不能在最后期限前完成他的任务。", "key": ["deadline"]},
+          "ext": []
+        },
+        {
+          "no": 51, "word": "layout", "freq": 1, "page": 66,
+          "prons": [{"ipa": "/ˈleɪaʊt/", "senses": [{"pos": "n.", "mean": "[[布局]]，布置；[[设计]]；安排"}]}],
+          "tip": {"type": "构词", "text": "lay（放置）+ out（外面）→ 放置在外面 → 布局"},
+          "ex": {"type": "真", "year": 2023, "en": "The typical supermarket layout has barely changed over the past 90 years.", "zh": "过去 90 年里，典型的超市布局几乎没有改变。", "key": ["layout"]},
+          "ext": []
+        },
+        {
+          "no": 52, "word": "undermine", "freq": 2, "page": 66,
+          "prons": [{"ipa": "/ˌʌndəˈmaɪn/", "senses": [{"pos": "v.", "mean": "[[逐渐削弱]]（信心、权威等）；（暗中）破坏"}]}],
+          "tip": {"type": "联想", "text": "under（下面）+ mine（矿井）→ 敌人躲在矿井的下面搞“破坏”。"},
+          "ex": {"type": "真", "year": 2018, "en": "The passing cruise ships will undermine the foundations of the ancient buildings in Venice.", "zh": "过往的游轮将会破坏威尼斯古建筑的地基。", "key": ["undermine"]},
+          "ext": []
+        },
+        {
+          "no": 53, "word": "determine", "freq": 3, "page": 66,
+          "prons": [{"ipa": "/dɪˈtɜːmɪn/", "senses": [{"pos": "v.", "mean": "[[查明]]；[[决定]]；[[支配]]，影响"}]}],
+          "tip": {"type": "联想", "text": "de（音似“弟”）+ ter（音似“特”）+ mine（矿井）→ 弟弟特意躲在矿井里，终于“查明”是谁在暗中搞破坏。"},
+          "ex": {"type": "真", "year": 2022, "en": "There are a few things you can do to determine whether or not a company is a good fit for you.", "zh": "你可以做一些事情来确定一家公司是否适合你。", "key": ["determine"]},
+          "ext": [
+            {"word": "determination", "ipa": "/dɪˌtɜːmɪˈneɪʃn/", "senses": [{"pos": "n.", "mean": "决心"}]},
+            {"word": "determined", "ipa": "/dɪˈtɜːmɪnd/", "senses": [{"pos": "adj.", "mean": "坚定的；坚决的"}]}
+          ]
+        }
+      ]
+    },
+    {
+      "no": 6,
+      "title": "“坏”相关",
+      "pages": [66, 67],
+      "map": {
+        "w": "“坏”相关",
+        "children": [
+          {"w": "deteriorate", "children": [{"w": "deterioration", "rel": "扩"}]},
+          {"w": "spoil", "children": [
+            {"w": "boil", "rel": "形近", "children": [{"w": "boiler", "rel": "扩"}]},
+            {"w": "ruin", "rel": "近义", "children": [{"w": "ruinous", "rel": "扩"}]},
+            {"w": "destroy", "rel": "近义", "children": [
+              {"w": "destruction", "rel": "扩"},
+              {"w": "destructive", "rel": "扩"}
+            ]}
+          ]},
+          {"w": "decay", "children": [{"w": "decade", "rel": "形近"}]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 54, "word": "deteriorate", "freq": 2, "page": 67,
+          "prons": [{"ipa": "/dɪˈtɪəriəreɪt/", "senses": [{"pos": "v.", "mean": "[[恶化]]；退化"}]}],
+          "tip": {"type": "联想", "text": "de（音似“弟”）+ teri（联想“特日”）+ o（形似矿井）+ rate → 在这特别的日子，弟弟仍然心系矿井土地“退化”问题。"},
+          "ex": {"type": "真", "year": 2018, "en": "Our interaction skills deteriorate.", "zh": "我们的互动技能退化了。", "key": ["deteriorate"]},
+          "ext": [{"word": "deterioration", "ipa": "/dɪˌtɪəriəˈreɪʃn/", "senses": [{"pos": "n.", "mean": "恶化"}]}]
+        },
+        {
+          "no": 55, "word": "spoil", "freq": 2, "page": 67,
+          "prons": [{"ipa": "/spɔɪl/", "senses": [
+            {"pos": "v.", "mean": "[[破坏]]，[[毁掉]]；[[溺爱]]"},
+            {"pos": "n.", "mean": "赃物；战利品"}
+          ]}],
+          "tip": {"type": "联想", "text": "s（联想“蛇”）+ p（联想“扑”）+ oil（油）→ 蛇扑到油桶里，一桶油就这样被“毁掉”了。"},
+          "ex": {"type": "例", "en": "Our camping trip was spoiled by bad weather.", "zh": "天气不好，破坏了我们的露营计划。", "key": ["spoiled"]},
+          "ext": []
+        },
+        {
+          "no": 56, "word": "boil", "freq": 1, "page": 67,
+          "prons": [{"ipa": "/bɔɪl/", "senses": [{"pos": "v.", "mean": "煮沸；烧开"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“爆油”→“煮沸”水时油意外入锅，引发了爆油。"},
+          "ex": {"type": "例", "en": "Watch paint dry or water boil, and you might unlock your next big idea.", "zh": "看着油漆变干或水烧开，你可能会解锁下一个大创意。", "key": ["boil"]},
+          "ext": [{"word": "boiler", "ipa": "/ˈbɔɪlə(r)/", "senses": [{"pos": "n.", "mean": "锅炉；汽锅"}]}]
+        },
+        {
+          "no": 57, "word": "ruin", "freq": 1, "page": 67,
+          "prons": [{"ipa": "/ˈruːɪn/", "senses": [
+            {"pos": "v.", "mean": "[[毁坏]]；[[毁灭]]"},
+            {"pos": "n.", "mean": "[[毁灭]]；[[破坏]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "ru（音似“辱”）+ in（里面）→ 一直把别人的辱骂记在心里，就是在“毁灭”自己。"},
+          "ex": {"type": "例", "en": "I don't want to ruin the story for you.", "zh": "我不想破坏你要听的这个故事。", "key": ["ruin"]},
+          "ext": [{"word": "ruinous", "ipa": "/ˈruːɪnəs/", "senses": [{"pos": "adj.", "mean": "耗资巨大的，无法承担的；破坏性的，灾难性的"}]}]
+        },
+        {
+          "no": 58, "word": "destroy", "freq": 1, "page": 67,
+          "prons": [{"ipa": "/dɪˈstrɔɪ/", "senses": [{"pos": "v.", "mean": "[[毁坏]]，[[破坏]]；消灭"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“弟死戳”→ 如果弟弟很很地戳一个物体，他就是在“破坏”它。"},
+          "ex": {"type": "真", "year": 2019, "en": "Many facilities were destroyed by a wandering cow.", "zh": "许多设施被一头游荡的奶牛破坏了。", "key": ["destroyed"]},
+          "ext": [
+            {"word": "destruction", "ipa": "/dɪˈstrʌkʃn/", "senses": [{"pos": "n.", "mean": "破坏；毁灭，摧毁"}]},
+            {"word": "destructive", "ipa": "/dɪˈstrʌktɪv/", "senses": [{"pos": "adj.", "mean": "破坏性的"}]}
+          ]
+        },
+        {
+          "no": 59, "word": "decay", "freq": 1, "page": 67,
+          "prons": [{"ipa": "/dɪˈkeɪ/", "senses": [{"pos": "n. & v.", "mean": "[[衰退]]，衰减；[[腐烂]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“低开”→ 经济在“衰退”，股市每天低开。"},
+          "ex": {"type": "例", "en": "The landlord had let the building fall into decay.", "zh": "房东任由房子变得破烂不堪。", "key": ["decay"]},
+          "ext": []
+        },
+        {
+          "no": 60, "word": "decade", "freq": 1, "page": 67,
+          "prons": [{"ipa": "/ˈdekeɪd/", "senses": [{"pos": "n.", "mean": "[[十年]]，十年期"}]}],
+          "tip": {"type": "联想", "text": "de（联想“弟”）+ cade（音似“划的”）→ 小时候弟弟在他脸上划（抓）了一道伤痕，“十年”后疤痕还在。"},
+          "ex": {"type": "真", "year": 2023, "en": "The reading culture was seriously affected by cable television some four decades ago.", "zh": "大约四十年前，阅读文化受到了有线电视的严重影响。", "key": ["decades"]},
+          "ext": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,764 @@
+{
+  "id": "u03-l03",
+  "part": 1,
+  "unit": 3,
+  "lesson": 3,
+  "pages": [75, 82],
+  "groups": [
+    {
+      "no": 13,
+      "title": "stan 相关",
+      "pages": [75, 76],
+      "map": {
+        "w": "stan 相关",
+        "children": [
+          {"w": "substance", "children": [{"w": "substantial", "rel": "扩"}]},
+          {"w": "instance", "children": [
+            {"w": "quote", "rel": "相关", "children": [{"w": "quotation", "rel": "扩"}]}
+          ]},
+          {"w": "withstand", "children": [
+            {"w": "withdraw", "rel": "形近", "children": [
+              {"w": "withdrawal", "rel": "扩"},
+              {"w": "drawer", "rel": "同根"},
+              {"w": "fetch", "rel": "相关"}
+            ]}
+          ]},
+          {"w": "distant", "children": [{"w": "distance", "rel": "扩"}]},
+          {"w": "constant", "children": [
+            {"w": "consistent", "rel": "形近", "children": [{"w": "consistency", "rel": "扩"}]}
+          ]},
+          {"w": "instant", "children": [
+            {"w": "instantaneous", "rel": "近义"},
+            {"w": "immediate", "rel": "近义", "children": [
+              {"w": "immediately", "rel": "扩"},
+              {"w": "prompt", "rel": "近义"}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "substance", "freq": 2, "page": 75,
+          "prons": [{"ipa": "/ˈsʌbstəns/", "senses": [{"pos": "n.", "mean": "[[物质]]；[[实质]]；主旨"}]}],
+          "tip": {"type": "构词", "text": "sub-（下面）+ st（存在）+ -ance（名词后缀）→ 存在于下面的东西 → 实质"},
+          "ex": {"type": "真", "year": 2020, "en": "It was a hard task to remove the spilled substance.", "zh": "清除溢出物质是一项艰巨的任务。", "key": ["substance"]},
+          "ext": [{"word": "substantial", "ipa": "/səbˈstænʃl/", "senses": [{"pos": "adj.", "mean": "大量的；牢固的"}]}]
+        },
+        {
+          "no": 2, "word": "instance", "freq": 3, "page": 75,
+          "prons": [{"ipa": "/ˈɪnstəns/", "senses": [
+            {"pos": "n.", "mean": "[[例子]]，[[实例]]"},
+            {"pos": "v.", "mean": "[[举……为例]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "In most instances, there will be no need for further treatment.", "zh": "多数情况下，不必继续治疗。", "key": ["instances"]},
+          "ext": []
+        },
+        {
+          "no": 3, "word": "quote", "freq": 2, "page": 75,
+          "prons": [{"ipa": "/kwəʊt/", "senses": [
+            {"pos": "v.", "mean": "[[引用]]，[[引述]]"},
+            {"pos": "n.", "mean": "[[原话]]，[[引语]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“夸她”→ 当她表现好的时候，我们可以“引用”一些名人名言来夸她。"},
+          "ex": {"type": "例", "en": "He quoted a passage from the minister's speech.", "zh": "他引用了部长的一段讲话。", "key": ["quoted"]},
+          "ext": [{"word": "quotation", "ipa": "/kwəʊˈteɪʃn/", "senses": [{"pos": "n.", "mean": "引用；报价；（商业）行情"}]}]
+        },
+        {
+          "no": 4, "word": "withstand", "freq": 1, "page": 75,
+          "prons": [{"ipa": "/wɪðˈstænd/", "senses": [{"pos": "v.", "mean": "[[承受]]，抵住"}]}],
+          "tip": {"type": "构词", "text": "with-（对抗）+ stand（站立）→ 用站立的方式去对抗 → 承受"},
+          "ex": {"type": "例", "en": "They can withstand a drier, warmer climate.", "zh": "它们能够承受更干燥、更温暖的气候。", "key": ["withstand"]},
+          "ext": []
+        },
+        {
+          "no": 5, "word": "withdraw", "freq": 1, "page": 75,
+          "prons": [{"ipa": "/wɪðˈdrɔː/", "senses": [{"pos": "v.", "mean": "（使）[[撤回]]，[[收回]]；[[提]]，[[取]]（银行账户中的款）"}]}],
+          "tip": {"type": "构词", "text": "with-（向后）+ draw（拉）→ 撤回"},
+          "ex": {"type": "例", "en": "He had withdrawn all the money from their joint account.", "zh": "他已经从他们的联名账户中取出了所有的钱。", "key": ["withdrawn", "from"]},
+          "ext": [{"word": "withdrawal", "ipa": "/wɪðˈdrɔːəl/", "senses": [{"pos": "n.", "mean": "提款；撤走；收回"}]}]
+        },
+        {
+          "no": 6, "word": "drawer", "freq": 1, "page": 75,
+          "prons": [{"ipa": "/drɔː(r)/", "senses": [{"pos": "n.", "mean": "[[抽屉]]"}]}],
+          "tip": {"type": "对照", "text": "draw v.拖，拉 → drawer n."},
+          "ex": {"type": "例", "en": "I found some old photos at the back of the drawer.", "zh": "我从抽屉尽里头找到一些旧照片。", "key": ["drawer"]},
+          "ext": []
+        },
+        {
+          "no": 7, "word": "fetch", "freq": 1, "page": 75,
+          "prons": [{"ipa": "/fetʃ/", "senses": [{"pos": "v.", "mean": "（去）[[拿来]]；（去）[[请来]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“饭吃”→ 在食堂吃饭的时候要自己“拿来”餐品。"},
+          "ex": {"type": "真", "year": 2023, "en": "Ask a clerk to fetch items from behind a counter.", "zh": "让店员从柜台后面拿东西。", "key": ["fetch"]},
+          "ext": []
+        },
+        {
+          "no": 8, "word": "distant", "freq": 1, "page": 75,
+          "prons": [{"ipa": "/ˈdɪstənt/", "senses": [{"pos": "adj.", "mean": "[[有距离的]]；[[遥远的]]；不同的"}]}],
+          "tip": {"type": "联想", "text": "di-（两）+ stan（联想 stand）+ t → 两个人分开站 → 有距离的；遥远的"},
+          "ex": {"type": "例", "en": "They see a day in the not-too-distant future when all autos will be abandoned and allowed to rust.", "zh": "他们认为，在不远的将来，所有的汽车都将被抛弃，任其生锈。", "key": ["distant"]},
+          "ext": [{"word": "distance", "ipa": "/ˈdɪstəns/", "senses": [{"pos": "n.", "mean": "距离"}]}]
+        },
+        {
+          "no": 9, "word": "constant", "freq": 2, "page": 75,
+          "prons": [{"ipa": "/ˈkɒnstənt/", "senses": [{"pos": "adj.", "mean": "[[不断的]]；[[重复的]]；[[固定的]]，[[不变的]]"}]}],
+          "tip": {"type": "联想", "text": "con-（所有）+ stan（联想 stand）+ t → 所有人都站在他身边，掌声“不断”响起。"},
+          "ex": {"type": "真", "year": 2018, "en": "Indoor pollution has remained constant over the past several decades.", "zh": "在过去的几十年里，室内污染仍然没有改变。", "key": ["constant"]},
+          "ext": []
+        },
+        {
+          "no": 10, "word": "consistent", "freq": 2, "page": 76,
+          "prons": [{"ipa": "/kənˈsɪstənt/", "senses": [{"pos": "adj.", "mean": "[[连续的]]；[[一贯的]]，[[一致的]]"}]}],
+          "tip": {"type": "构词", "text": "con-（所有）+ sist（= stand）+ -ent（形容词后缀）→ 所有人站在一起的 → 一致的"},
+          "ex": {"type": "例", "en": "We must be consistent in applying the rules.", "zh": "我们在实施这些规则时必须保持一贯性。", "key": ["consistent"]},
+          "ext": [{"word": "consistency", "ipa": "/kənˈsɪstənsi/", "senses": [{"pos": "n.", "mean": "一致性，连贯性"}]}]
+        },
+        {
+          "no": 11, "word": "instant", "freq": 2, "page": 76,
+          "prons": [{"ipa": "/ˈɪnstənt/", "senses": [
+            {"pos": "n.", "mean": "[[瞬间]]，[[顷刻]]"},
+            {"pos": "adj.", "mean": "[[立即的]]；[[速溶的]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "in（里面）+ stan（联想 stand）+ t（联想“他”）→ 他站在接机大厅里，见朋友出来立刻迎了上去 → 立即的"},
+          "ex": {"type": "真", "year": 2017, "en": "Only a few months later Leah opened her first yoga studio, but success was not instant.", "zh": "仅仅几个月后，利亚开设了她的第一家瑜伽馆，但成功不是一蹴而就的。", "key": ["instant"]},
+          "ext": []
+        },
+        {
+          "no": 12, "word": "instantaneous", "freq": 1, "page": 76,
+          "prons": [{"ipa": "/ˌɪnstənˈteɪniəs/", "senses": [{"pos": "adj.", "mean": "[[瞬间的]]，[[即时的]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The Internet is remarkable for the almost instantaneous speed at which it transmits information.", "zh": "互联网的显著特征就在于其传送信息的瞬时速度。", "key": ["instantaneous"]},
+          "ext": []
+        },
+        {
+          "no": 13, "word": "immediate", "freq": 3, "page": 76,
+          "prons": [{"ipa": "/ɪˈmiːdiət/", "senses": [{"pos": "adj.", "mean": "[[立刻的]]，[[即时的]]；（地方）[[紧邻的]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "We must make an immediate response.", "zh": "我们必须立即作出反应。", "key": ["immediate"]},
+          "ext": [{"word": "immediately", "ipa": "/ɪˈmiːdiətli/", "senses": [{"pos": "adv.", "mean": "立即；接近；紧接地"}]}]
+        },
+        {
+          "no": 14, "word": "prompt", "freq": 3, "page": 76,
+          "prons": [{"ipa": "/prɒmpt/", "senses": [
+            {"pos": "adj.", "mean": "[[立即的]]，[[及时的]]"},
+            {"pos": "v.", "mean": "[[促使]]，[[导致]]；[[激励]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "pro-（向前）+ m（联想“妹”）+ pt（联想“扑他”）→ 妹妹看到哥哥，立即扑向他 → 立即的"},
+          "ex": {"type": "例", "en": "Professors can give prompt feedback to students' homework.", "zh": "教授可以对学生的家庭作业给予及时的反馈。", "key": ["prompt"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 14,
+      "title": "stitu 相关",
+      "pages": [76, 77],
+      "map": {
+        "w": "stitu 相关",
+        "children": [
+          {"w": "constitute", "children": [
+            {"w": "constitution", "rel": "扩", "children": [{"w": "constitutional", "rel": "扩"}]}
+          ]},
+          {"w": "substitute", "children": [
+            {"w": "substitution", "rel": "扩"},
+            {"w": "replace", "rel": "近义", "children": [{"w": "replacement", "rel": "扩"}]}
+          ]},
+          {"w": "institute", "children": [
+            {"w": "institution", "rel": "扩", "children": [{"w": "institutional", "rel": "扩"}]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 15, "word": "constitute", "freq": 2, "page": 76,
+          "prons": [{"ipa": "/ˈkɒnstɪtjuːt/", "senses": [{"pos": "v.", "mean": "[[组成]]，[[构成]]；[[设立]]"}]}],
+          "tip": {"type": "联想", "text": "con-（所有）+ stitu（= stand）+ te → 所有人都站在一起，“组成”了一个团队。"},
+          "ex": {"type": "真", "year": 2016, "en": "It may constitute a challenge to computer programmers.", "zh": "它可能对计算机程序员构成挑战。", "key": ["constitute"]},
+          "ext": []
+        },
+        {
+          "no": 16, "word": "constitution", "freq": 1, "page": 76,
+          "prons": [{"ipa": "/ˌkɒnstɪˈtjuːʃn/", "senses": [{"pos": "n.", "mean": "[[宪法]]，[[章程]]"}]}],
+          "tip": {"type": "对照", "text": "构成（constitute）一个国家最根本法律的是宪法（constitution），它被称为根本法。"},
+          "ex": {"type": "例", "en": "The British Constitution is to a large extent a product of the historical events described above.", "zh": "英国宪法在很大程度上是上述历史事件的产物。", "key": ["Constitution"]},
+          "ext": [{"word": "constitutional", "ipa": "/ˌkɒnstɪˈtjuːʃənl/", "senses": [{"pos": "adj.", "mean": "宪法的；体质的，体格的"}]}]
+        },
+        {
+          "no": 17, "word": "substitute", "freq": 1, "page": 76,
+          "prons": [{"ipa": "/ˈsʌbstɪtjuːt/", "senses": [
+            {"pos": "n.", "mean": "[[替代品]]；[[替代者]]"},
+            {"pos": "v.", "mean": "（以……）[[代替]]，[[取代]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "sub-（下面）+ stitu（= stand）+ te → 站在场下等待登场的是替补，即“替代者”。"},
+          "ex": {"type": "真", "year": 2020, "en": "It substitutes old information with new data.", "zh": "它用新数据代替旧信息。", "key": ["substitutes", "with"]},
+          "ext": [{"word": "substitution", "ipa": "/ˌsʌbstɪˈtjuːʃn/", "senses": [{"pos": "n.", "mean": "替代；代替物"}]}]
+        },
+        {
+          "no": 18, "word": "replace", "freq": 3, "page": 77,
+          "prons": [{"ipa": "/rɪˈpleɪs/", "senses": [{"pos": "v.", "mean": "[[代替]]，[[取代]]"}]}],
+          "tip": {"type": "联想", "text": "re（字母音似“阿姨”）+ place（位置）→ 阿姨“代替”了这个位置的人。"},
+          "ex": {"type": "例", "en": "It's not likely they will replace traditional textbooks.", "zh": "它们不太可能取代传统的教科书。", "key": ["replace"]},
+          "ext": [{"word": "replacement", "ipa": "/rɪˈpleɪsmənt/", "senses": [{"pos": "n.", "mean": "替换；替代品"}]}]
+        },
+        {
+          "no": 19, "word": "institute", "freq": 3, "page": 77,
+          "prons": [{"ipa": "/ˈɪnstɪtjuːt/", "senses": [
+            {"pos": "n.", "mean": "[[学院]]；学会；协会"},
+            {"pos": "v.", "mean": "制定；创立"}
+          ]}],
+          "tip": {"type": "联想", "text": "in（里面）+ stitu（= stand）+ te → 位于大学里面的这座建筑是“学院”楼。"},
+          "ex": {"type": "例", "en": "Individuals can enrol on self-study courses in the university's language institute.", "zh": "人们可以报名参加这所大学的语言学院的自学课程。", "key": ["institute"]},
+          "ext": []
+        },
+        {
+          "no": 20, "word": "institution", "freq": 3, "page": 77,
+          "prons": [{"ipa": "/ˌɪnstɪˈtjuːʃ(ə)n/", "senses": [{"pos": "n.", "mean": "[[机构]]，团体；制度"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "He has worked as a visiting lecturer for various educational institutions.", "zh": "他曾在各种教育机构担任客座讲师。", "key": ["institutions"]},
+          "ext": [{"word": "institutional", "ipa": "/ˌɪnstɪˈtjuːʃənl/", "senses": [{"pos": "adj.", "mean": "机构的；慈善机构的"}]}]
+        }
+      ]
+    },
+    {
+      "no": 15,
+      "title": "part 相关",
+      "pages": [77, 79],
+      "map": {
+        "w": "part 相关",
+        "children": [
+          {"w": "separate", "children": [
+            {"w": "separation", "rel": "扩", "children": [{"w": "separatist"}]},
+            {"w": "sector", "rel": "相关", "children": [
+              {"w": "section", "rel": "近义", "children": [
+                {"w": "segment", "rel": "近义", "children": [
+                  {"w": "segmental", "rel": "扩"},
+                  {"w": "semester", "rel": "形近", "children": [{"w": "term", "rel": "近义"}]}
+                ]}
+              ]}
+            ]}
+          ]},
+          {"w": "apart", "children": [
+            {"w": "apartment", "rel": "加 ment", "children": [
+              {"w": "department", "rel": "形近", "children": [
+                {"w": "depart", "rel": "去 ment", "children": [{"w": "departure", "rel": "扩"}]}
+              ]}
+            ]}
+          ]},
+          {"w": "particle", "children": [
+            {"w": "partial", "rel": "形近", "children": [
+              {"w": "partially", "rel": "扩"},
+              {"w": "part"},
+              {"w": "prejudice", "rel": "相关", "children": [
+                {"w": "bias", "rel": "近义", "children": [
+                  {"w": "neutral", "rel": "相关", "children": [
+                    {"w": "neutrality", "rel": "扩"},
+                    {"w": "neutralise"},
+                    {"w": "independent", "children": [{"w": "independence", "rel": "扩"}]}
+                  ]}
+                ]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 21, "word": "separate", "freq": 1, "page": 77,
+          "prons": [
+            {"ipa": "/ˈsepəreɪt/", "senses": [{"pos": "v.", "mean": "（使）[[分开]]；[[区别]]"}]},
+            {"ipa": "/ˈseprət/", "senses": [{"pos": "adj.", "mean": "[[单独的]]；不同的"}]}
+          ],
+          "tip": {"type": "联想", "text": "se（联想“蛇”）+ pa（联想“怕”）+ r（联想“人”）+ -ate（后缀）→ 蛇怕人，所以要与人“分开”。"},
+          "ex": {"type": "真", "year": 2019, "en": "The researchers conducted five separate surveys of more than 1,700 people.", "zh": "研究人员对 1,700 多人进行了五次单独的调查。", "key": ["separate"]},
+          "ext": [
+            {"word": "separation", "ipa": "/ˌsepəˈreɪʃn/", "senses": [{"pos": "n.", "mean": "分离；分割；隔离"}]},
+            {"word": "separatist", "ipa": "/ˈseprətɪst/", "senses": [{"pos": "n.", "mean": "分离主义者；独立主义者"}]}
+          ]
+        },
+        {
+          "no": 22, "word": "sector", "freq": 2, "page": 77,
+          "prons": [{"ipa": "/ˈsektə(r)/", "senses": [{"pos": "n.", "mean": "[[部门]]；[[领域]]；[[行业]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“塞个他”→ 电视剧中，有些人会把亲戚塞到某个“部门”中。"},
+          "ex": {"type": "例", "en": "For the high-tech sector, there are a few other interesting findings.", "zh": "对于高科技行业，还有其他一些有趣的发现。", "key": ["sector"]},
+          "ext": []
+        },
+        {
+          "no": 23, "word": "section", "freq": 2, "page": 77,
+          "prons": [{"ipa": "/ˈsekʃn/", "senses": [{"pos": "n.", "mean": "[[部分]]；[[节]]；[[阶层]]；[[部门]]"}]}],
+          "tip": {"type": "构词", "text": "sec（切）+ -tion（名词后缀）→ 切开的部分 → 部分；部门"},
+          "ex": {"type": "例", "en": "That section of the road is still closed.", "zh": "那段公路依旧封闭。", "key": ["section"]},
+          "ext": []
+        },
+        {
+          "no": 24, "word": "segment", "freq": 1, "page": 77,
+          "prons": [
+            {"ipa": "/ˈsegmənt/", "senses": [{"pos": "n.", "mean": "[[部分]]；（水果的）[[瓣]]"}]},
+            {"ipa": "/segˈment/", "senses": [{"pos": "v.", "mean": "[[划分]]"}]}
+          ],
+          "tip": {"type": "构词", "text": "seg（分割）+ -ment（后缀）→ 部分；划分"},
+          "ex": {"type": "例", "en": "It is in no one's interest to keep a large segment of the population on the margins of society.", "zh": "将一大部分人口留在社会边缘不符合任何人的利益。", "key": ["segment"]},
+          "ext": [{"word": "segmental", "ipa": "/segˈmentl/", "senses": [{"pos": "adj.", "mean": "音段的"}]}]
+        },
+        {
+          "no": 25, "word": "semester", "freq": 2, "page": 78,
+          "prons": [{"ipa": "/sɪˈmestə(r)/", "senses": [{"pos": "n.", "mean": "[[学期]]"}]}],
+          "tip": {"type": "联想", "text": "se（分开）+ me（我）+ ster（联想 sister）→ 这个“学期”我和妹妹分开了，不在同一个班里。"},
+          "ex": {"type": "例", "en": "You took an optional course this semester, didn't you?", "zh": "你这学期修了一门选修课，不是吗？", "key": ["semester"]},
+          "ext": []
+        },
+        {
+          "no": 26, "word": "term", "freq": 1, "page": 78,
+          "prons": [{"ipa": "/tɜːm/", "senses": [{"pos": "n.", "mean": "[[学期]]；[[术语]]；[[任期]]"}]}],
+          "tip": {"type": "联想", "text": "te（音似“特”）+ rm（联想“任命”）→ 这个“学期”，老师特别任命她当班长。"},
+          "ex": {"type": "例", "en": "Many students now have paid employment during term.", "zh": "现在许多学生在上学期间就从事有薪工作。", "key": ["term"]},
+          "ext": []
+        },
+        {
+          "no": 27, "word": "apart", "freq": 1, "page": 78,
+          "prons": [{"ipa": "/əˈpɑːt/", "senses": [
+            {"pos": "adv.", "mean": "[[相隔地]]，[[分开地]]"},
+            {"pos": "adj.", "mean": "[[分离的]]，[[隔离的]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "a（一）+ part（部分）→ 把整体分成一个个部分 → 分开地"},
+          "ex": {"type": "例", "en": "The thing that sets children apart from adults is not their ignorance, nor their lack of skills.", "zh": "孩子和成年人的区别不是他们无知，也不是他们缺乏技能。", "key": ["apart"]},
+          "ext": []
+        },
+        {
+          "no": 28, "word": "apartment", "freq": 1, "page": 78,
+          "prons": [{"ipa": "/əˈpɑːtmənt/", "senses": [{"pos": "n.", "mean": "[[公寓]]"}]}],
+          "tip": {"type": "联想", "text": "a（一）+ part（部分）+ ment（音似“门”）→ 一扇扇门把“公寓”分成一个个独立的部分。"},
+          "ex": {"type": "例", "en": "The woman is fussy about the cleanness of the apartment.", "zh": "这个女人对公寓的干净程度很挑剔。", "key": ["apartment"]},
+          "ext": []
+        },
+        {
+          "no": 29, "word": "department", "freq": 1, "page": 78,
+          "prons": [{"ipa": "/dɪˈpɑːtmənt/", "senses": [{"pos": "n.", "mean": "[[部门]]；[[院系]]"}]}],
+          "tip": {"type": "联想", "text": "de-（分开）+ part（部分）+ -ment（名词后缀）→ 把一个机构分成一个个独立的部分，每一个部分就是一个“部门”。"},
+          "ex": {"type": "真", "year": 2017, "en": "Companies are abandoning conventional functional departments.", "zh": "公司正在摒弃传统的职能部门。", "key": ["departments"]},
+          "ext": []
+        },
+        {
+          "no": 30, "word": "particle", "freq": 2, "page": 78,
+          "prons": [{"ipa": "/ˈpɑːtɪkl/", "senses": [{"pos": "n.", "mean": "[[微粒]]；[[极小量]]"}]}],
+          "tip": {"type": "联想", "text": "part（部分）+ i + cle（音似“抠”）→ 抠下来极小的部分 → 微粒；极小量"},
+          "ex": {"type": "例", "en": "There was not a particle of evidence to support the case.", "zh": "没有丝毫证据支持这个论点。", "key": ["particle"]},
+          "ext": []
+        },
+        {
+          "no": 31, "word": "depart", "freq": 1, "page": 78,
+          "prons": [{"ipa": "/dɪˈpɑːt/", "senses": [{"pos": "v.", "mean": "[[离开]]，[[出发]]；[[离职]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“弟怕他”→ 弟弟怕他，于是“离开”了。"},
+          "ex": {"type": "例", "en": "Were they to arrive before we depart the day after tomorrow, we should have a wonderful dinner party.", "zh": "如果他们能在后天我们离开之前到达，我们将举行一个盛大的宴会。", "key": ["depart"]},
+          "ext": [{"word": "departure", "ipa": "/dɪˈpɑːtʃə(r)/", "senses": [{"pos": "n.", "mean": "离开，起程，出发"}]}]
+        },
+        {
+          "no": 32, "word": "partial", "freq": 1, "page": 78,
+          "prons": [{"ipa": "/ˈpɑːʃl/", "senses": [{"pos": "adj.", "mean": "[[部分的]]，[[局部的]]；[[偏袒的]]"}]}],
+          "tip": {"type": "对照", "text": "part n.部分 → partial adj."},
+          "ex": {"type": "例", "en": "It is said that the math teacher seems partial towards bright students.", "zh": "据说那位数学老师似乎偏爱聪明的学生。", "key": ["partial"]},
+          "ext": [
+            {"word": "partially", "ipa": "/ˈpɑːʃəli/", "senses": [{"pos": "adv.", "mean": "部分地；不完全地"}]},
+            {"word": "part", "ipa": "/pɑːt/", "senses": [
+              {"pos": "n.", "mean": "部分；片段；成员；成分"},
+              {"pos": "v.", "mean": "离开；分别"},
+              {"pos": "adv.", "mean": "在一定程度上；部分地"}
+            ]}
+          ]
+        },
+        {
+          "no": 33, "word": "prejudice", "freq": 1, "page": 78,
+          "prons": [{"ipa": "/ˈpredʒədɪs/", "senses": [
+            {"pos": "n.", "mean": "[[偏见]]；[[歧视]]"},
+            {"pos": "v.", "mean": "[[使有偏见]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "pre-（提前）+ judi（联想 Judy，人名）+ ce → 他在见到朱迪前就对她有“偏见”。"},
+          "ex": {"type": "例", "en": "Students of different races are prejudiced against each other.", "zh": "不同种族的学生彼此有偏见。", "key": ["prejudiced"]},
+          "ext": []
+        },
+        {
+          "no": 34, "word": "bias", "freq": 2, "page": 78,
+          "prons": [{"ipa": "/ˈbaɪəs/", "senses": [
+            {"pos": "n.", "mean": "[[偏心]]，[[偏见]]"},
+            {"pos": "v.", "mean": "[[使存偏见]]；[[使倾向一方]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "bi-（两）+ as（音似“儿子”）→ 她有两个儿子，但从不“偏心”。"},
+          "ex": {"type": "例", "en": "If everyone around you has similar views, your work will suffer from confirmation bias.", "zh": "如果你周围的每个人都有类似的观点，你的工作就会受到确认偏见的影响。", "key": ["bias"]},
+          "ext": []
+        },
+        {
+          "no": 35, "word": "neutral", "freq": 2, "page": 79,
+          "prons": [{"ipa": "/ˈnjuːtrəl/", "senses": [
+            {"pos": "adj.", "mean": "[[中立的]]；[[持平的]]；[[中性的]]"},
+            {"pos": "n.", "mean": "[[中立者]]；[[中立国]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "neu（联想 new）+ tr + -al（后缀）→ 一个单位新来的人一般都是“中立的”。"},
+          "ex": {"type": "例", "en": "Technology is neutral, but people aren't.", "zh": "技术是中立的，但人不是。", "key": ["neutral"]},
+          "ext": [
+            {"word": "neutrality", "ipa": "/njuːˈtræləti/", "senses": [{"pos": "n.", "mean": "中立；中立状态"}]},
+            {"word": "neutralise", "alt": "-ize", "ipa": "/ˈnjuːtrəlaɪz/", "senses": [{"pos": "v.", "mean": "使无效；中和；使中立"}]}
+          ]
+        },
+        {
+          "no": 36, "word": "independent", "freq": 3, "page": 79,
+          "prons": [{"ipa": "/ˌɪndɪˈpendənt/", "senses": [{"pos": "adj.", "mean": "[[独立的]]；[[自主的]]；[[公正的]]；[[私营的]]"}]}],
+          "tip": {"type": "构词", "text": "in-（不，无）+ depend（依靠）+ -ent（形容词后缀）→ 独立的"},
+          "ex": {"type": "真", "year": 2024, "en": "It requires consistent education to be financially independent.", "zh": "要实现经济独立需要持续的教育。", "key": ["independent"]},
+          "ext": [{"word": "independence", "ipa": "/ˌɪndɪˈpendəns/", "senses": [{"pos": "n.", "mean": "独立；自主"}]}]
+        }
+      ]
+    },
+    {
+      "no": 16,
+      "title": "“严重的”相关",
+      "pages": [79, 80],
+      "map": {
+        "w": "“严重的”相关",
+        "children": [
+          {"w": "acute"},
+          {"w": "severe", "children": [{"w": "severity", "rel": "扩"}]},
+          {"w": "grave", "children": [
+            {"w": "gravity", "rel": "扩"},
+            {"w": "grieve", "rel": "音近", "children": [
+              {"w": "grievous", "rel": "扩"},
+              {"w": "grief"},
+              {"w": "relieve", "rel": "形近", "children": [
+                {"w": "relief", "rel": "扩", "children": [
+                  {"w": "belief", "rel": "形近", "children": [{"w": "believe", "rel": "扩"}]}
+                ]}
+              ]}
+            ]},
+            {"w": "grateful", "rel": "相关", "children": [
+              {"w": "gratitude", "rel": "扩"}
+            ]},
+            {"w": "grant", "rel": "相关", "children": [
+              {"w": "granted", "rel": "扩"},
+              {"w": "grind", "rel": "音近", "children": [{"w": "polish", "rel": "近义"}]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 37, "word": "acute", "freq": 1, "page": 79,
+          "prons": [{"ipa": "/əˈkjuːt/", "senses": [{"pos": "adj.", "mean": "[[严重的]]；[[敏锐的]]；[[急性的]]"}]}],
+          "tip": {"type": "联想", "text": "a（一）+ cute（可爱的）→ 一个可爱孩子得了很严重的病，是急性阑尾炎 → 严重的；急性的"},
+          "ex": {"type": "例", "en": "Boys generally have more acute vision, and learn best through touch.", "zh": "男孩通常视力更敏锐，通过触摸学习效果最好。", "key": ["acute"]},
+          "ext": []
+        },
+        {
+          "no": 38, "word": "severe", "freq": 2, "page": 79,
+          "prons": [{"ipa": "/sɪˈvɪə(r)/", "senses": [{"pos": "adj.", "mean": "[[十分严重的]]，[[极为恶劣的]]；[[严峻的]]"}]}],
+          "tip": {"type": "联想", "text": "sever（联想 seven）+ e（出去）→ 七楼以上的人暂时都出不去，因为下面的火情是“十分严重的”。"},
+          "ex": {"type": "例", "en": "This can result in severe penalties that continue long after punishment is completed.", "zh": "这可能导致严重的惩罚，并在刑罚结束后持续很长时间。", "key": ["severe"]},
+          "ext": [{"word": "severity", "ipa": "/sɪˈverəti/", "senses": [{"pos": "n.", "mean": "严厉；严重性"}]}]
+        },
+        {
+          "no": 39, "word": "grave", "freq": 1, "page": 79,
+          "prons": [{"ipa": "/ɡreɪv/", "senses": [
+            {"pos": "n.", "mean": "[[墓穴]]，[[坟墓]]"},
+            {"pos": "adj.", "mean": "[[严重的]]；[[严肃的]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "gr（联想“官人”）+ a（联想“爱”）+ ve（音似“我”）→ 官人发誓会爱我终生，“生同衾，死同穴”→ 墓穴"},
+          "ex": {"type": "例", "en": "There were flowers on the grave.", "zh": "坟上有些花。", "key": ["grave"]},
+          "ext": []
+        },
+        {
+          "no": 40, "word": "gravity", "freq": 1, "page": 79,
+          "prons": [{"ipa": "/ˈɡrævəti/", "senses": [{"pos": "n.", "mean": "[[严重性]]；[[严肃]]；[[重力]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "I don't think you realise the gravity of the situation.", "zh": "我认为你没有意识到形势的严重性。", "key": ["gravity"]},
+          "ext": []
+        },
+        {
+          "no": 41, "word": "grieve", "freq": 1, "page": 79,
+          "prons": [{"ipa": "/ɡriːv/", "senses": [{"pos": "v.", "mean": "[[感到悲痛]]；[[使……伤心]]"}]}],
+          "tip": {"type": "联想", "text": "gr（联想“官人”）+ i（字母音似“爱”）+ eve（前夕）→ 深爱她的官人在婚礼前夕去世了，这使她“感到悲痛”。"},
+          "ex": {"type": "例", "en": "The little girl was grieved by the death of her dog.", "zh": "小女孩的狗狗死了，她很伤心。", "key": ["grieved"]},
+          "ext": [
+            {"word": "grievous", "ipa": "/ˈɡriːvəs/", "senses": [{"pos": "adj.", "mean": "极严重的；使人痛苦的；令人伤心的"}]},
+            {"word": "grief", "ipa": "/ɡriːf/", "senses": [{"pos": "n.", "mean": "悲伤，悲痛"}]}
+          ]
+        },
+        {
+          "no": 42, "word": "relieve", "freq": 2, "page": 79,
+          "prons": [{"ipa": "/rɪˈliːv/", "senses": [{"pos": "v.", "mean": "[[缓解]]，[[缓和]]；[[减轻]]"}]}],
+          "tip": {"type": "联想", "text": "re（字母音似“阿姨”）+ li（音似“立”）+ eve（联想“夏娃”）→ 阿姨见夏娃很难过，立刻来安慰她，“缓解”她内心的痛苦。"},
+          "ex": {"type": "真", "year": 2017, "en": "Survey findings show that knitting can help people relieve stress.", "zh": "调查结果显示，编织可以帮助人们缓解压力。", "key": ["relieve"]},
+          "ext": [{"word": "relief", "ipa": "/rɪˈliːf/", "senses": [{"pos": "n.", "mean": "轻松；减轻；缓和"}]}]
+        },
+        {
+          "no": 43, "word": "belief", "freq": 1, "page": 80,
+          "prons": [{"ipa": "/bɪˈliːf/", "senses": [{"pos": "n.", "mean": "[[相信]]，[[信心]]；[[信念]]；[[看法]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2023, "en": "We hold the belief that hard work leads to success.", "zh": "我们坚信努力工作会带来成功。", "key": ["belief"]},
+          "ext": []
+        },
+        {
+          "no": 44, "word": "believe", "freq": 1, "page": 80,
+          "prons": [{"ipa": "/bɪˈliːv/", "senses": [{"pos": "v.", "mean": "[[相信]]；[[认定]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2024, "en": "We believe that tomorrow will be different.", "zh": "我们相信明天会有所不同。", "key": ["believe"]},
+          "ext": []
+        },
+        {
+          "no": 45, "word": "grateful", "freq": 1, "page": 80,
+          "prons": [{"ipa": "/ˈɡreɪtfl/", "senses": [{"pos": "adj.", "mean": "[[感激的]]，[[感谢的]]"}]}],
+          "tip": {"type": "联想", "text": "gr（联想“官人”）+ ate（eat 的过去式）+ ful（联想 full）→ 你收留了官人，让他吃饱，他对你是“感激的”。"},
+          "ex": {"type": "真", "year": 2020, "en": "People can be educated to be grateful.", "zh": "人们可以被教育去感恩。", "key": ["grateful"]},
+          "ext": [{"word": "gratitude", "ipa": "/ˈɡrætɪtjuːd/", "senses": [{"pos": "n.", "mean": "感激"}]}]
+        },
+        {
+          "no": 46, "word": "grant", "freq": 3, "page": 80,
+          "prons": [{"ipa": "/ɡrɑːnt/", "senses": [
+            {"pos": "n.", "mean": "[[拨款]]"},
+            {"pos": "v.", "mean": "[[授予]]；[[准予]]；[[承认]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "gr（联想“官人”）+ ant（蚂蚁）→ 大雨来临，蚂蚁无处可去，官人就开门让蚂蚁进来 → 准予"},
+          "ex": {"type": "例", "en": "There was a much higher rate of attrition among scientists who didn't get grants.", "zh": "没有获得资助的科学家人员流失率要高得多。", "key": ["grants"]},
+          "ext": [{"word": "granted", "ipa": "/ˈɡrɑːntɪd/", "senses": [{"pos": "adv.", "mean": "的确，诚然"}]}]
+        },
+        {
+          "no": 47, "word": "grind", "freq": 1, "page": 80,
+          "prons": [{"ipa": "/ɡraɪnd/", "senses": [{"pos": "v.", "mean": "[[磨碎]]；[[磨光]]；[[用力挤压]]；[[摩擦]]"}]}],
+          "tip": {"type": "联想", "text": "gr（联想“官人”）+ in（里面）+ d（联想“刀”）→ 官人每天在家里磨刀 → 磨光；摩擦"},
+          "ex": {"type": "例", "en": "Parts of the machine were grinding together noisily.", "zh": "机器零件摩擦发出刺耳的声音。", "key": ["grinding"]},
+          "ext": []
+        },
+        {
+          "no": 48, "word": "polish", "freq": 2, "page": 80,
+          "prons": [{"ipa": "/ˈpɒlɪʃ/", "senses": [
+            {"pos": "n.", "mean": "[[擦光剂]]；[[抛光]]"},
+            {"pos": "v.", "mean": "[[擦亮]]；[[磨光]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "po（音似“抛”）+ lish（音似“历史”）→ 文学家为历史“抛光”。"},
+          "ex": {"type": "例", "en": "You'll need to give your shoes a good polish.", "zh": "你有必要把鞋好好擦亮一下。", "key": ["polish"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 17,
+      "title": "“爆炸”相关",
+      "pages": [80, 81],
+      "map": {
+        "w": "“爆炸”相关",
+        "children": [
+          {"w": "burst", "children": [
+            {"w": "blast", "rel": "近义", "children": [{"w": "blow", "rel": "相关"}]}
+          ]},
+          {"w": "bomb", "children": [
+            {"w": "bump", "rel": "音近", "children": [
+              {"w": "bumper", "rel": "扩"},
+              {"w": "pump", "rel": "形近", "children": [{"w": "lump"}]}
+            ]}
+          ]},
+          {"w": "explode", "children": [
+            {"w": "explosion", "rel": "扩", "children": [{"w": "explosive"}]},
+            {"w": "explore", "rel": "形近", "children": [{"w": "exploration", "rel": "扩"}]},
+            {"w": "exploit", "rel": "形近", "children": [{"w": "exploitation", "rel": "扩"}]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 49, "word": "burst", "freq": 1, "page": 80,
+          "prons": [{"ipa": "/bɜːst/", "senses": [
+            {"pos": "v.", "mean": "[[爆炸]]；[[突然发生]]"},
+            {"pos": "n.", "mean": "[[爆炸]]；[[突发]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "bu（联想“不”）+ r（形似花）+ st（联想 street）→ 街上的人手里都有花，就她没有，她的情绪就爆发了 → 爆炸"},
+          "ex": {"type": "例", "en": "Don't burst that balloon!", "zh": "别把那气球弄爆了！", "key": ["burst"]},
+          "ext": []
+        },
+        {
+          "no": 50, "word": "blast", "freq": 1, "page": 80,
+          "prons": [{"ipa": "/blɑːst/", "senses": [
+            {"pos": "n.", "mean": "[[爆炸]]；一阵（风），[[一股]]（气流）"},
+            {"pos": "v.", "mean": "炸毁"}
+          ]}],
+          "tip": {"type": "联想", "text": "b（联想“不”）+ last（持续）→ 不持续 → 这种烟花的捻子比较短，点燃后烟花会快速“爆炸”，留下“一股”青烟。"},
+          "ex": {"type": "例", "en": "The blast ripped through the building.", "zh": "爆炸的气浪席卷了整座大楼。", "key": ["blast"]},
+          "ext": []
+        },
+        {
+          "no": 51, "word": "blow", "freq": 1, "page": 80,
+          "prons": [{"ipa": "/bləʊ/", "senses": [
+            {"pos": "v.", "mean": "[[吹奏]]（哨子、乐器等）；吹出（某物）"},
+            {"pos": "n.", "mean": "[[吹]]；（用手、武器等的）[[猛击]]；[[挫折]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2023, "en": "There are ways we could soften the coming blow to the global food supply.", "zh": "我们有办法减轻即将到来的对全球粮食供应的打击。", "key": ["blow"]},
+          "ext": []
+        },
+        {
+          "no": 52, "word": "explode", "freq": 1, "page": 81,
+          "prons": [{"ipa": "/ɪkˈspləʊd/", "senses": [{"pos": "v.", "mean": "[[爆炸]]；[[激增]]；[[爆发]]"}]}],
+          "tip": {"type": "联想", "text": "ex-（往外）+ plo（联想爆竹的声音）+ de（往下）→ 放爆竹时，爆竹向外飞出，“爆炸”后又落下来。"},
+          "ex": {"type": "真", "year": 2020, "en": "Most were sold in Europe and China, where the bikes already have exploded in popularity.", "zh": "其中大部分在欧洲和中国销售，这种自行车在两地市场的受欢迎度激增。", "key": ["exploded"]},
+          "ext": [
+            {"word": "explosion", "ipa": "/ɪkˈspləʊʒn/", "senses": [{"pos": "n.", "mean": "爆炸；激增"}]},
+            {"word": "explosive", "ipa": "/ɪkˈspləʊsɪv/", "senses": [
+              {"pos": "n.", "mean": "爆炸物，炸药"},
+              {"pos": "adj.", "mean": "能引起爆炸的"}
+            ]}
+          ]
+        },
+        {
+          "no": 53, "word": "explore", "freq": 3, "page": 81,
+          "prons": [{"ipa": "/ɪkˈsplɔː(r)/", "senses": [{"pos": "v.", "mean": "[[勘查]]；[[探索]]；[[研究]]"}]}],
+          "tip": {"type": "联想", "text": "ex-（往外）+ plo（音似“扑姥”）+ re（字母音似“阿姨”）→ 姥姥和阿姨来做客，你往外扑向她们，想要“探索”那过去的事情。"},
+          "ex": {"type": "例", "en": "Suppose we built a robot to explore the planet Mars.", "zh": "假设我们制造了一个机器人来探索火星这个星球。", "key": ["explore"]},
+          "ext": [{"word": "exploration", "ipa": "/ˌekspləˈreɪʃn/", "senses": [{"pos": "n.", "mean": "探索；勘察"}]}]
+        },
+        {
+          "no": 54, "word": "exploit", "freq": 2, "page": 81,
+          "prons": [
+            {"ipa": "/ɪkˈsplɔɪt/", "senses": [{"pos": "v.", "mean": "[[利用]]；[[开采]]，[[开发]]"}]},
+            {"ipa": "/ˈeksplɔɪt/", "senses": [{"pos": "n.", "mean": "[[壮举]]"}]}
+          ],
+          "tip": {"type": "联想", "text": "ex-（往外）+ plo（联想“扑落”）+ it（它）→ 猫咪向外扑落杂物，“开发”了它的专属领地。"},
+          "ex": {"type": "真", "year": 2017, "en": "Creating the future you want is a lot easier if you are ready to exploit the opportunities that come your way.", "zh": "如果你准备好利用你遇到的机会，创造你想要的未来就会容易得多。", "key": ["exploit"]},
+          "ext": [{"word": "exploitation", "ipa": "/ˌeksplɔɪˈteɪʃn/", "senses": [{"pos": "n.", "mean": "剥削，榨取；利用；开发，开采"}]}]
+        },
+        {
+          "no": 55, "word": "bomb", "freq": 1, "page": 81,
+          "prons": [{"ipa": "/bɒm/", "senses": [
+            {"pos": "n.", "mean": "[[炸弹]]"},
+            {"pos": "v.", "mean": "[[轰炸]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“嘣”→“炸弹”爆炸的时候发出“嘣”的声音。"},
+          "ex": {"type": "例", "en": "A bomb exploded somewhere near.", "zh": "一颗炸弹在附近爆炸了。", "key": ["bomb"]},
+          "ext": []
+        },
+        {
+          "no": 56, "word": "bump", "freq": 1, "page": 81,
+          "prons": [{"ipa": "/bʌmp/", "senses": [
+            {"pos": "n.", "mean": "[[撞击（声）]]；[[肿块]]；[[隆起]]"},
+            {"pos": "v.", "mean": "（无意地）[[碰]]，[[撞]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“砰”→ 撞击时发出的“砰”声就是“撞击声”；身体受到撞击后可能会产生“肿块”。"},
+          "ex": {"type": "例", "en": "He fell to the ground with a bump.", "zh": "他砰的一声摔倒在地上。", "key": ["bump"]},
+          "ext": []
+        },
+        {
+          "no": 57, "word": "bumper", "freq": 1, "page": 81,
+          "prons": [{"ipa": "/ˈbʌmpə(r)/", "senses": [{"pos": "n.", "mean": "（汽车头尾的）[[保险杠]]"}]}],
+          "tip": {"type": "联想", "text": "bump（撞击）+ -er（后缀）→ 汽车的“保险杠”就是撞击时承受冲击力的首要部位。"},
+          "ex": {"type": "例", "en": "The bumper of the car needs to be crash-tested.", "zh": "汽车的保险杠需要进行碰撞测试。", "key": ["bumper"]},
+          "ext": []
+        },
+        {
+          "no": 58, "word": "pump", "freq": 1, "page": 81,
+          "prons": [{"ipa": "/pʌmp/", "senses": [
+            {"pos": "n.", "mean": "[[抽水机]]；[[泵]]"},
+            {"pos": "v.", "mean": "[[用泵输送]]；[[涌出]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“噗噗”→“抽水机”工作时会发出噗噗声。"},
+          "ex": {"type": "例", "en": "Only recently in California has it become profitable to pump water from this depth.", "zh": "直到最近，在加利福尼亚州，这一深度抽水才变得有利可图。", "key": ["pump"]},
+          "ext": []
+        },
+        {
+          "no": 59, "word": "lump", "freq": 1, "page": 81,
+          "prons": [{"ipa": "/lʌmp/", "senses": [{"pos": "n.", "mean": "[[块]]；[[方糖]]；[[肿块]]；[[笨重的人]]"}]}],
+          "tip": {"type": "联想", "text": "lum（联想“拉妹”）+ p（联想“扑”）→ 他拉着妹妹扑过去，结果头上撞了个“肿块”。"},
+          "ex": {"type": "例", "en": "Do not turn the salad cream into a solid lump.", "zh": "不要将沙拉奶油变成固体块。", "key": ["lump"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 18,
+      "title": "“射击”相关",
+      "pages": [82, 82],
+      "map": {
+        "w": "“射击”相关",
+        "children": [
+          {"w": "shot", "children": [
+            {"w": "fire", "children": [
+              {"w": "fireman", "rel": "合成"},
+              {"w": "fireplace", "rel": "合成"},
+              {"w": "firework", "rel": "合成"},
+              {"w": "hire", "rel": "形近", "children": [
+                {"w": "retire", "rel": "相关", "children": [
+                  {"w": "retirement", "rel": "扩"},
+                  {"w": "retired"}
+                ]},
+                {"w": "employ", "rel": "近义", "children": [
+                  {"w": "employee", "rel": "扩"},
+                  {"w": "employer"},
+                  {"w": "employment", "children": [
+                    {"w": "unemployment", "rel": "扩"},
+                    {"w": "unemployed"}
+                  ]}
+                ]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 60, "word": "shot", "freq": 1, "page": 82,
+          "prons": [{"ipa": "/ʃɒt/", "senses": [{"pos": "n.", "mean": "[[射击]]；[[枪手]]；[[射门]]；[[发射]]"}]}],
+          "tip": {"type": "对照", "text": "shoot v.射击；冲；奔 → shot n."},
+          "ex": {"type": "例", "en": "We heard some shots in the distance.", "zh": "我们听见远处几声枪响。", "key": ["shots"]},
+          "ext": []
+        },
+        {
+          "no": 61, "word": "fire", "freq": 1, "page": 82,
+          "prons": [{"ipa": "/ˈfaɪə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[火]]"},
+            {"pos": "v.", "mean": "[[解雇]]；[[开火]]；[[射击]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "She doesn't want to use her name for fear of being fired from her job.", "zh": "她不想使用自己的名字，因害怕被解雇。", "key": ["fired"]},
+          "ext": [
+            {"word": "fireman", "ipa": "/ˈfaɪəmən/", "senses": [{"pos": "n.", "mean": "消防队员"}]},
+            {"word": "fireplace", "ipa": "/ˈfaɪəpleɪs/", "senses": [{"pos": "n.", "mean": "壁炉"}]},
+            {"word": "firework", "ipa": "/ˈfaɪəwɜːk/", "senses": [{"pos": "n.", "mean": "烟火；（pl.）激烈的言辞"}]}
+          ]
+        },
+        {
+          "no": 62, "word": "hire", "freq": 3, "page": 82,
+          "prons": [{"ipa": "/ˈhaɪə(r)/", "senses": [
+            {"pos": "v.", "mean": "[[雇用]]，[[租用]]"},
+            {"pos": "n.", "mean": "[[租借]]，[[租用]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "hi（嗨）+ re（字母音似“阿姨”）→ 家里“雇用”了阿姨，我热情地跟她打招呼。"},
+          "ex": {"type": "例", "en": "There is a growing tendency among employers to hire casual staff.", "zh": "雇主雇用临时职员的趋势正在增加。", "key": ["hire"]},
+          "ext": []
+        },
+        {
+          "no": 63, "word": "retire", "freq": 2, "page": 82,
+          "prons": [{"ipa": "/rɪˈtaɪə(r)/", "senses": [{"pos": "v.", "mean": "[[退休]]；[[退出]]；[[离开]]（去安静的地方）"}]}],
+          "tip": {"type": "联想", "text": "re（字母音似“阿姨”）+ tire（联想 tired）→ 阿姨累了，不工作了，要提前“退休”。"},
+          "ex": {"type": "真", "year": 2021, "en": "The goal was to reach the top, accumulate wealth and retire to a life of ease.", "zh": "他的目标是登上顶峰，积累财富，退休后过上安逸的生活。", "key": ["retire"]},
+          "ext": [
+            {"word": "retirement", "ipa": "/rɪˈtaɪəmənt/", "senses": [{"pos": "n.", "mean": "退休；退休年龄；退休生活"}]},
+            {"word": "retired", "ipa": "/rɪˈtaɪəd/", "senses": [{"pos": "adj.", "mean": "已退休的；已退职的"}]}
+          ]
+        },
+        {
+          "no": 64, "word": "employ", "freq": 1, "page": 82,
+          "prons": [{"ipa": "/ɪmˈplɔɪ/", "senses": [{"pos": "v.", "mean": "[[雇用]]；[[应用]]，[[运用]]，[[使用]]"}]}],
+          "tip": {"type": "联想", "text": "em-（使）+ ploy（音似“捕捞”）→ 我们想要捕捞一艘沉船，但是人手不够，需要另外“雇用”一些人。"},
+          "ex": {"type": "例", "en": "It is said that all of us employ a mix of both these types of planning.", "zh": "据说我们所有人都混合使用这两种规划方式。", "key": ["employ"]},
+          "ext": [
+            {"word": "employee", "ipa": "/ɪmˈplɔɪiː/", "senses": [{"pos": "n.", "mean": "受雇者，雇工，雇员"}]},
+            {"word": "employer", "ipa": "/ɪmˈplɔɪə(r)/", "senses": [{"pos": "n.", "mean": "雇用者，雇主，老板"}]}
+          ]
+        },
+        {
+          "no": 65, "word": "employment", "freq": 1, "page": 82,
+          "prons": [{"ipa": "/ɪmˈplɔɪmənt/", "senses": [{"pos": "n.", "mean": "[[工作]]，[[职业]]；受雇；[[就业]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "As the world migrant crisis intensifies, employment is becoming a global concern.", "zh": "随着世界移民危机的加剧，就业正成为一个全球性问题。", "key": ["employment"]},
+          "ext": [
+            {"word": "unemployment", "ipa": "/ˌʌnɪmˈplɔɪmənt/", "senses": [{"pos": "n.", "mean": "失业；失业人数"}]},
+            {"word": "unemployed", "ipa": "/ˌʌnɪmˈplɔɪd/", "senses": [{"pos": "adj.", "mean": "失业的"}]}
+          ]
+        }
+      ]
+    }
+  ]
+}

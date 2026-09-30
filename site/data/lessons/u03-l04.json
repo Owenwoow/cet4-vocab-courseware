@@ -1,0 +1,2718 @@
+{
+  "id": "u03-l04",
+  "part": 1,
+  "unit": 3,
+  "lesson": 4,
+  "pages": [
+    83,
+    90
+  ],
+  "groups": [
+    {
+      "no": 19,
+      "title": "“珍贵的”相关",
+      "pages": [
+        83,
+        84
+      ],
+      "map": {
+        "w": "“珍贵的”相关",
+        "children": [
+          {
+            "w": "luxury",
+            "children": [
+              {
+                "w": "luxurious",
+                "rel": "扩"
+              },
+              {
+                "w": "treasure",
+                "rel": "相关",
+                "children": [
+                  {
+                    "w": "precious",
+                    "rel": "相关"
+                  },
+                  {
+                    "w": "beloved",
+                    "rel": "相关"
+                  },
+                  {
+                    "w": "cherish",
+                    "rel": "近义",
+                    "children": [
+                      {
+                        "w": "appreciate",
+                        "rel": "相关",
+                        "children": [
+                          {
+                            "w": "appreciation"
+                          },
+                          {
+                            "w": "appreciative"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "w": "valuable",
+            "children": [
+              {
+                "w": "value",
+                "rel": "扩"
+              },
+              {
+                "w": "costly",
+                "rel": "近义",
+                "children": [
+                  {
+                    "w": "cost",
+                    "rel": "扩"
+                  }
+                ]
+              },
+              {
+                "w": "evaluate",
+                "rel": "同根",
+                "children": [
+                  {
+                    "w": "evaluation",
+                    "rel": "扩"
+                  },
+                  {
+                    "w": "estimate",
+                    "rel": "近义",
+                    "children": [
+                      {
+                        "w": "estimation",
+                        "rel": "扩"
+                      },
+                      {
+                        "w": "underestimate",
+                        "rel": "扩"
+                      }
+                    ]
+                  },
+                  {
+                    "w": "reckon",
+                    "rel": "近义"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "entries": [
+        {
+          "no": 1,
+          "word": "luxury",
+          "freq": 2,
+          "page": 83,
+          "prons": [
+            {
+              "ipa": "/ˈlʌkʃəri/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[奢侈品]]；奢华，华贵"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "雷克萨斯（Lexus）是一个奢华（luxury）高端的汽车品牌。"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2022,
+            "en": "Saying \"no\" is sometimes seen as a luxury that only those in power can afford.",
+            "zh": "有时候，说“不”被视为一种奢侈，只有当权者才能负担得起。",
+            "key": [
+              "luxury"
+            ]
+          },
+          "ext": [
+            {
+              "word": "luxurious",
+              "ipa": "/lʌɡˈʒʊəriəs/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "奢侈的，豪华的"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 2,
+          "word": "treasure",
+          "freq": 1,
+          "page": 83,
+          "prons": [
+            {
+              "ipa": "/ˈtreʒə(r)/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[金银财宝，财富]]；心肝宝贝"
+                },
+                {
+                  "pos": "v.",
+                  "mean": "[[珍惜]]，珍视"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "谐音",
+            "text": "单词发音类似“揣掖”→ 那些你揣着、掖着不想被别人看到的东西是你倍加“珍惜”的“心肝宝贝”。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "The destruction of these treasures was a loss for mankind that no amount of money could make up.",
+            "zh": "这些宝藏的毁灭是人类的损失，再多的钱也无法弥补。",
+            "key": [
+              "treasures"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 3,
+          "word": "precious",
+          "freq": 2,
+          "page": 83,
+          "prons": [
+            {
+              "ipa": "/ˈpreʃəs/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "[[珍贵的]]，珍稀的"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "对照",
+            "text": "price n.价格 → precious adj."
+          },
+          "ex": {
+            "type": "真",
+            "year": 2017,
+            "en": "It keeps our most precious memories until life's end.",
+            "zh": "它保存着我们最珍贵的回忆，直到生命的尽头。",
+            "key": [
+              "precious"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 4,
+          "word": "beloved",
+          "freq": 1,
+          "page": 83,
+          "prons": [
+            {
+              "ipa": "/bɪˈlʌv(ɪ)d/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "[[钟爱的]]；亲爱的；深受喜爱的"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "be（被）+ love（喜爱）+ d（音似“的”）→ 深受喜爱的"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2023,
+            "en": "Today, he is still one of the best-known and most beloved racehorses of all time.",
+            "zh": "今天，它仍然是有史以来最著名和最受欢迎的赛马之一。",
+            "key": [
+              "beloved"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 5,
+          "word": "cherish",
+          "freq": 1,
+          "page": 83,
+          "prons": [
+            {
+              "ipa": "/ˈtʃerɪʃ/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[珍爱，钟爱]]"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "che（联想“车”）+ ri（联想“日”）+ sh（联想“洗”）→ 他每天都洗爱车 → 珍爱，钟爱"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2017,
+            "en": "They are cherished by the rich.",
+            "zh": "它们受到富人的钟爱。",
+            "key": [
+              "cherished"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 6,
+          "word": "appreciate",
+          "freq": 3,
+          "page": 83,
+          "prons": [
+            {
+              "ipa": "/əˈpriːʃieɪt/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[重视]]；[[欣赏]]；感激"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "ap-（一再地）+ preci（联想 precious）+ -ate（动词后缀）→ 一再地说一个对象珍贵 → 重视；欣赏"
+          },
+          "ex": {
+            "type": "例",
+            "en": "Let them know how much you appreciate their contribution.",
+            "zh": "让他们知道你多么感激他们的付出。",
+            "key": [
+              "appreciate"
+            ]
+          },
+          "ext": [
+            {
+              "word": "appreciation",
+              "ipa": "/əˌpriːʃiˈeɪʃn/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "欣赏；感激"
+                }
+              ]
+            },
+            {
+              "word": "appreciative",
+              "ipa": "/əˈpriːʃətɪv/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "感激的；欣赏的"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 7,
+          "word": "valuable",
+          "freq": 1,
+          "page": 83,
+          "prons": [
+            {
+              "ipa": "/ˈvæljuəbl/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "[[有价值的，贵重的]]；很有用的"
+                }
+              ]
+            }
+          ],
+          "tip": null,
+          "ex": {
+            "type": "例",
+            "en": "They gave me many valuable comments as to how to improve my writing.",
+            "zh": "对于如何提高我的写作水平，他们给了我很多有用的意见。",
+            "key": [
+              "valuable"
+            ]
+          },
+          "ext": [
+            {
+              "word": "value",
+              "ipa": "/ˈvæljuː/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "价值；价值观；数值"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 8,
+          "word": "costly",
+          "freq": 3,
+          "page": 84,
+          "prons": [
+            {
+              "ipa": "/ˈkɒstli/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "[[昂贵的，贵重的]]"
+                }
+              ]
+            }
+          ],
+          "tip": null,
+          "ex": {
+            "type": "例",
+            "en": "Buying new furniture may prove too costly.",
+            "zh": "购买新家具可能会花钱太多。",
+            "key": [
+              "costly"
+            ]
+          },
+          "ext": [
+            {
+              "word": "cost",
+              "ipa": "/kɒst/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "费用；价格；（pl.）成本；代价"
+                },
+                {
+                  "pos": "v.",
+                  "mean": "花费，价钱为；以……为代价"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 9,
+          "word": "evaluate",
+          "freq": 2,
+          "page": 84,
+          "prons": [
+            {
+              "ipa": "/ɪˈvæljueɪt/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[评价，评估]]"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "构词",
+            "text": "e-（出去）+ valu(e)（价值）+ -ate（动词后缀）→ 把价值说出去 → 评价，评估"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2017,
+            "en": "They asked unbiased scholars to evaluate them.",
+            "zh": "他们请公正的学者对它们进行评估。",
+            "key": [
+              "evaluate"
+            ]
+          },
+          "ext": [
+            {
+              "word": "evaluation",
+              "ipa": "/ɪˌvæljuˈeɪʃn/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "评价，估计"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 10,
+          "word": "estimate",
+          "freq": 2,
+          "page": 84,
+          "prons": [
+            {
+              "ipa": "/ˈestɪmeɪt/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[估计，评估]]"
+                }
+              ]
+            },
+            {
+              "ipa": "/ˈestɪmət/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[估计，评估]]"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "est（联想最高级后缀）+ i（字母音“爱”）+ mate（朋友）→ 他最偏爱哪个朋友？谁也不知道，只能“估计”。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "Surveys estimate that 85% of women and 73% of men report feeling better after shedding tears.",
+            "zh": "调查估计，85%的女性和 73%的男性称流泪后感觉更好。",
+            "key": [
+              "estimate"
+            ]
+          },
+          "ext": [
+            {
+              "word": "estimation",
+              "ipa": "/ˌestɪˈmeɪʃn/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "估计；判断；评价；看法"
+                }
+              ]
+            },
+            {
+              "word": "underestimate",
+              "ipa": "/ˌʌndərˈestɪmeɪt/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "低估；看轻"
+                },
+                {
+                  "pos": "n.",
+                  "mean": "低估；轻视"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 11,
+          "word": "reckon",
+          "freq": 1,
+          "page": 84,
+          "prons": [
+            {
+              "ipa": "/ˈrekən/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[估算]]；计算；[[认为]]"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "re（字母音似“阿姨”）+ ck（联想 CK）+ on（上面）→ 阿姨把手放在 CK 品牌的衣服上，“估算”需要多少钱。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "I reckon I'm going to pass the examination smoothly.",
+            "zh": "我认为我会顺利通过这次考试。",
+            "key": [
+              "reckon"
+            ]
+          },
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 20,
+      "title": "mate 相关",
+      "pages": [
+        84,
+        85
+      ],
+      "map": {
+        "w": "mate 相关",
+        "children": [
+          {
+            "w": "ultimate",
+            "children": [
+              {
+                "w": "ultimately",
+                "rel": "扩"
+              }
+            ]
+          },
+          {
+            "w": "intimate",
+            "children": [
+              {
+                "w": "intimacy",
+                "rel": "扩"
+              }
+            ]
+          },
+          {
+            "w": "approximate",
+            "children": [
+              {
+                "w": "approximation",
+                "rel": "扩",
+                "children": [
+                  {
+                    "w": "approximately"
+                  }
+                ]
+              },
+              {
+                "w": "approach",
+                "rel": "近义"
+              }
+            ]
+          }
+        ]
+      },
+      "entries": [
+        {
+          "no": 12,
+          "word": "ultimate",
+          "freq": 1,
+          "page": 84,
+          "prons": [
+            {
+              "ipa": "/ˈʌltɪmət/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "[[最后的]]，最终的"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "ul（音似“啊偶”）+ ti（联想“提”）+ mate（朋友）→ 等到“最后的”时候她才提起她的朋友，于是尴尬地发出“啊偶”的声音。"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2018,
+            "en": "They are the ultimate solution to droughts.",
+            "zh": "它们是干旱的最终解决方案。",
+            "key": [
+              "ultimate"
+            ]
+          },
+          "ext": [
+            {
+              "word": "ultimately",
+              "ipa": "/ˈʌltɪmətli/",
+              "senses": [
+                {
+                  "pos": "adv.",
+                  "mean": "最终；根本上"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 13,
+          "word": "intimate",
+          "freq": 2,
+          "page": 84,
+          "prons": [
+            {
+              "ipa": "/ˈɪntɪmət/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "[[亲密的]]；密切的"
+                },
+                {
+                  "pos": "n.",
+                  "mean": "[[密友]]，知己"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "in（里面）+ ti（联想“提”）+ mate（朋友）→ 内心会提到的朋友，就是你的“密友”。"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2023,
+            "en": "Using voice interaction feels far more intimate than surfing the net the old-fashioned way.",
+            "zh": "使用语音交互比老式的上网方式感觉亲密得多。",
+            "key": [
+              "intimate"
+            ]
+          },
+          "ext": [
+            {
+              "word": "intimacy",
+              "ipa": "/ˈɪntɪməsi/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "亲密；密切"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 14,
+          "word": "approximate",
+          "freq": 1,
+          "page": 84,
+          "prons": [
+            {
+              "ipa": "/əˈprɒksɪmət/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "[[大约的]]；接近的"
+                }
+              ]
+            },
+            {
+              "ipa": "/əˈprɒksɪmeɪt/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[近似]]，接近；估算"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "ap-（一再地）+ pro-（往前）+ xi（联想“西”）+ mate（配偶）→ 一再地朝西往前走，你大约就会找到你的配偶 → 大约的"
+          },
+          "ex": {
+            "type": "例",
+            "en": "The approximate materials are tomatoes, eggs, oil and salt.",
+            "zh": "大概的材料是西红柿、鸡蛋、油和盐。",
+            "key": [
+              "approximate"
+            ]
+          },
+          "ext": [
+            {
+              "word": "approximation",
+              "ipa": "/əˌprɒksɪˈmeɪʃn/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "近似值；粗略估算；类似事物"
+                }
+              ]
+            },
+            {
+              "word": "approximately",
+              "ipa": "/əˈprɒksɪmətli/",
+              "senses": [
+                {
+                  "pos": "adv.",
+                  "mean": "大概，大约"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 15,
+          "word": "approach",
+          "freq": 3,
+          "page": 85,
+          "prons": [
+            {
+              "ipa": "/əˈprəʊtʃ/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[接近]]；着手处理"
+                },
+                {
+                  "pos": "n.",
+                  "mean": "[[接近]]；[[方法]]；态度"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "谐音",
+            "text": "单词发音类似“饿扑肉吃”→ 老虎饿了想扑倒猎物吃肉，首先得“接近”猎物。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "She took the wrong approach in her dealings with them.",
+            "zh": "她和他们打交道的方式错了。",
+            "key": [
+              "approach"
+            ]
+          },
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 21,
+      "title": "cap/cab 相关",
+      "pages": [
+        85,
+        86
+      ],
+      "map": {
+        "w": "cap/cab 相关",
+        "children": [
+          {
+            "w": "captain",
+            "children": [
+              {
+                "w": "capital",
+                "children": [
+                  {
+                    "w": "expend",
+                    "rel": "相关",
+                    "children": [
+                      {
+                        "w": "expense",
+                        "rel": "扩"
+                      },
+                      {
+                        "w": "expensive",
+                        "rel": "扩"
+                      },
+                      {
+                        "w": "expenditure",
+                        "rel": "扩"
+                      }
+                    ]
+                  },
+                  {
+                    "w": "capitalist",
+                    "rel": "扩",
+                    "children": [
+                      {
+                        "w": "capitalism"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "w": "capable",
+            "children": [
+              {
+                "w": "capability",
+                "rel": "扩"
+              }
+            ]
+          },
+          {
+            "w": "capacity",
+            "children": [
+              {
+                "w": "capture"
+              }
+            ]
+          },
+          {
+            "w": "cabin",
+            "children": [
+              {
+                "w": "cabinet",
+                "rel": "形近"
+              }
+            ]
+          },
+          {
+            "w": "cable",
+            "children": [
+              {
+                "w": "cattle",
+                "rel": "形近"
+              },
+              {
+                "w": "wire",
+                "rel": "近义",
+                "children": [
+                  {
+                    "w": "wireless",
+                    "rel": "扩"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "entries": [
+        {
+          "no": 16,
+          "word": "expend",
+          "freq": 1,
+          "page": 85,
+          "prons": [
+            {
+              "ipa": "/ɪkˈspend/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[支出，花费]]；消耗"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "对照",
+            "text": "昂贵的（expensive）东西需要人们花费（expend）很多钱来购买。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "She expended all her efforts on the care of home and children.",
+            "zh": "她把所有精力都花在照顾家庭和孩子上。",
+            "key": [
+              "expended"
+            ]
+          },
+          "ext": [
+            {
+              "word": "expense",
+              "ipa": "/ɪkˈspens/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "费用，花费"
+                }
+              ]
+            },
+            {
+              "word": "expensive",
+              "ipa": "/ɪkˈspensɪv/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "昂贵的；价格高的"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 17,
+          "word": "expenditure",
+          "freq": 1,
+          "page": 85,
+          "prons": [
+            {
+              "ipa": "/ɪkˈspendɪtʃə(r)/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[支出，花费]]；消耗"
+                }
+              ]
+            }
+          ],
+          "tip": null,
+          "ex": {
+            "type": "例",
+            "en": "They find consulting caloric-expenditure charts troublesome.",
+            "zh": "他们发现查询卡路里消耗表很麻烦。",
+            "key": [
+              "expenditure"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 18,
+          "word": "capital",
+          "freq": 1,
+          "page": 85,
+          "prons": [
+            {
+              "ipa": "/ˈkæpɪtl/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[首都]]；[[资本]]；大写字母"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "首都（capital）的企业更容易获得资本（capital）的投入。"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2018,
+            "en": "It didn't need much capital to start with.",
+            "zh": "它一开始不需要太多资金。",
+            "key": [
+              "capital"
+            ]
+          },
+          "ext": [
+            {
+              "word": "capitalist",
+              "ipa": "/ˈkæpɪtəlɪst/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "资本家；资本主义者"
+                },
+                {
+                  "pos": "adj.",
+                  "mean": "资本主义的"
+                }
+              ]
+            },
+            {
+              "word": "capitalism",
+              "ipa": "/ˈkæpɪtəlɪzəm/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "资本主义"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 19,
+          "word": "captain",
+          "freq": 1,
+          "page": 85,
+          "prons": [
+            {
+              "ipa": "/ˈkæptɪn/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[船长]]；机长；首领"
+                },
+                {
+                  "pos": "v.",
+                  "mean": "[[担任……的队长]]"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "cap（帽子）+ tain（拿）→ 拿着帽子的那个人就是“船长”。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "The captain welcomes you aboard.",
+            "zh": "船长欢迎你上船。",
+            "key": [
+              "captain"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 20,
+          "word": "capable",
+          "freq": 2,
+          "page": 85,
+          "prons": [
+            {
+              "ipa": "/ˈkeɪpəbl/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "[[有能力，有才能的]]；[[能胜任的]]"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "cap（帽子，联想“头”）+ able（能够）→ 他头脑灵活、善于思考，是“有才能的”人。"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2024,
+            "en": "They have proved capable of doing almost anything.",
+            "zh": "事实证明，它们几乎无所不能。",
+            "key": [
+              "capable",
+              "of"
+            ]
+          },
+          "ext": [
+            {
+              "word": "capability",
+              "ipa": "/ˌkeɪpəˈbɪləti/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "能力，才能"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 21,
+          "word": "capacity",
+          "freq": 3,
+          "page": 85,
+          "prons": [
+            {
+              "ipa": "/kəˈpæsəti/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[容量]]；[[领悟（或理解、办事）能力]]；职位"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "cap（帽子）+ a（一）+ city（城市）→ 头戴大盖帽的人在城市里是一个很有“能力”的人 → 领悟（或理解、办事）能力"
+          },
+          "ex": {
+            "type": "例",
+            "en": "She has the capacity to take account of all the important factors.",
+            "zh": "她有考虑到所有重要因素的能力。",
+            "key": [
+              "capacity"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 22,
+          "word": "capture",
+          "freq": 3,
+          "page": 86,
+          "prons": [
+            {
+              "ipa": "/ˈkæptʃə(r)/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[捕获]]"
+                },
+                {
+                  "pos": "n.",
+                  "mean": "（被）[[捕获]]"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "构词",
+            "text": "capt（抓）+ -ure（后缀）→ 抓的行为 → 捕获"
+          },
+          "ex": {
+            "type": "例",
+            "en": "A wandering cow was captured by the police.",
+            "zh": "一头游荡的牛被警察抓住了。",
+            "key": [
+              "captured"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 23,
+          "word": "cabin",
+          "freq": 1,
+          "page": 86,
+          "prons": [
+            {
+              "ipa": "/ˈkæbɪn/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[小木屋]]；[[机舱]]"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "ca（音似“开”）+ b + in（里面）→ 猎人打开“小木屋”并把猎物放到里面。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "He sat quietly in the first class cabin of the flight.",
+            "zh": "他静静地坐在班机的头等舱内。",
+            "key": [
+              "cabin"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 24,
+          "word": "cabinet",
+          "freq": 1,
+          "page": 86,
+          "prons": [
+            {
+              "ipa": "/ˈkæbɪnət/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[内阁]]；[[储藏柜]]，陈列柜"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "谐音",
+            "text": "单词发音类似“开杯奶他”→ 他从“储藏柜”里拿出一杯奶并打开。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "They are fond of sleeping in cabinets.",
+            "zh": "它们喜欢睡在储藏柜里。",
+            "key": [
+              "cabinets"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 25,
+          "word": "cable",
+          "freq": 2,
+          "page": 86,
+          "prons": [
+            {
+              "ipa": "/ˈkeɪbl/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[缆绳]]；[[电缆]]；电报；网线"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "谐音",
+            "text": "单词发音类似“可包”→“电缆”可以用橡胶包覆。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "Repairs to the cable did not take too long.",
+            "zh": "维修电缆没花太长时间。",
+            "key": [
+              "cable"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 26,
+          "word": "cattle",
+          "freq": 1,
+          "page": 86,
+          "prons": [
+            {
+              "ipa": "/ˈkætl/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[牛]]；牲口，家畜"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "ca（联想 capture）+ ttle（音似“头”）→ 我抓住了一头“牛”。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "Raising cattle, pigs, and other land-based animals requires vast sums of grain and water.",
+            "zh": "饲养牛、猪和其他陆生动物需要大量的粮食和水。",
+            "key": [
+              "cattle"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 27,
+          "word": "wire",
+          "freq": 1,
+          "page": 86,
+          "prons": [
+            {
+              "ipa": "/ˈwaɪə(r)/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[金属线]]；[[电线]]，导线"
+                },
+                {
+                  "pos": "v.",
+                  "mean": "[[用导线给（建筑物、设备等）接通电源]]"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "谐音",
+            "text": "单词发音类似“威亚”→ 电线，导线"
+          },
+          "ex": {
+            "type": "例",
+            "en": "A high wire fence encircles the complex.",
+            "zh": "一个高高的铁丝网围绕着这个建筑群。",
+            "key": [
+              "wire"
+            ]
+          },
+          "ext": [
+            {
+              "word": "wireless",
+              "ipa": "/ˈwaɪələs/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "无线电收音机；无线电发射和接收系统；无线电报"
+                },
+                {
+                  "pos": "adj.",
+                  "mean": "无线的"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "no": 22,
+      "title": "“起源”相关",
+      "pages": [
+        86,
+        88
+      ],
+      "map": {
+        "w": "“起源”相关",
+        "children": [
+          {
+            "w": "origin",
+            "children": [
+              {
+                "w": "original",
+                "rel": "扩",
+                "children": [
+                  {
+                    "w": "originality"
+                  }
+                ]
+              },
+              {
+                "w": "originate",
+                "rel": "扩"
+              },
+              {
+                "w": "region",
+                "rel": "音近",
+                "children": [
+                  {
+                    "w": "regional",
+                    "rel": "扩"
+                  }
+                ]
+              },
+              {
+                "w": "source",
+                "rel": "近义",
+                "children": [
+                  {
+                    "w": "resource",
+                    "rel": "形近",
+                    "children": [
+                      {
+                        "w": "resourceful",
+                        "rel": "扩"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "w": "derive",
+            "children": [
+              {
+                "w": "derivative",
+                "rel": "扩",
+                "children": [
+                  {
+                    "w": "derivation"
+                  }
+                ]
+              },
+              {
+                "w": "deprive",
+                "rel": "形近",
+                "children": [
+                  {
+                    "w": "deprivation",
+                    "rel": "扩"
+                  },
+                  {
+                    "w": "seize",
+                    "rel": "相关",
+                    "children": [
+                      {
+                        "w": "seizure",
+                        "rel": "扩"
+                      }
+                    ]
+                  },
+                  {
+                    "w": "rob",
+                    "rel": "相关",
+                    "children": [
+                      {
+                        "w": "robbery",
+                        "rel": "扩"
+                      },
+                      {
+                        "w": "rub",
+                        "rel": "形近"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "w": "thrive",
+                "rel": "形近",
+                "children": [
+                  {
+                    "w": "strive",
+                    "rel": "音近",
+                    "children": [
+                      {
+                        "w": "effort",
+                        "rel": "相关"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "entries": [
+        {
+          "no": 28,
+          "word": "region",
+          "freq": 3,
+          "page": 86,
+          "prons": [
+            {
+              "ipa": "/ˈriːdʒən/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[地区]]；（身体）部位"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "谐音",
+            "text": "单词发音类似“瑞金”→ 瑞金是江西的一个“地区”。"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2018,
+            "en": "There are lots of different dishes to try and every region has its own special food.",
+            "zh": "有很多不同的菜肴可以尝试，并且每个地区都有自己的特色食物。",
+            "key": [
+              "region"
+            ]
+          },
+          "ext": [
+            {
+              "word": "regional",
+              "ipa": "/ˈriːdʒənl/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "地区的；区域的"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 29,
+          "word": "origin",
+          "freq": 2,
+          "page": 87,
+          "prons": [
+            {
+              "ipa": "/ˈɒrɪdʒɪn/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[起源]]；[[源头]]；起因；出身"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "谐音",
+            "text": "单词发音类似“噢瑞金”→ 噢，江西瑞金是长征精神的发源地 → 起源；源头"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2023,
+            "en": "There are a number of different versions about the origin of the lion dance.",
+            "zh": "关于舞狮的起源有很多不同的说法。",
+            "key": [
+              "origin"
+            ]
+          },
+          "ext": [
+            {
+              "word": "original",
+              "ipa": "/əˈrɪdʒənl/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "最初的，原始的"
+                }
+              ]
+            },
+            {
+              "word": "originality",
+              "ipa": "/əˌrɪdʒəˈnæləti/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "独创性，创意，独特构思"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 30,
+          "word": "originate",
+          "freq": 1,
+          "page": 87,
+          "prons": [
+            {
+              "ipa": "/əˈrɪdʒɪneɪt/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[创建]]；起源"
+                }
+              ]
+            }
+          ],
+          "tip": null,
+          "ex": {
+            "type": "例",
+            "en": "She doesn't really know where they originated.",
+            "zh": "她真不知道它们的起源。",
+            "key": [
+              "originated"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 31,
+          "word": "source",
+          "freq": 3,
+          "page": 87,
+          "prons": [
+            {
+              "ipa": "/sɔːs/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[来源]]，出处，源头"
+                },
+                {
+                  "pos": "v.",
+                  "mean": "[[从某地获得]]"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "谐音",
+            "text": "单词发音类似“缫丝”→ 缫丝（将蚕茧抽出蚕丝的工艺）起源于中国 → 源头"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2024,
+            "en": "Kids and adults alike find in dogs a source of attachment.",
+            "zh": "儿童和成人都会从狗身上找到依恋的来源。",
+            "key": [
+              "source"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 32,
+          "word": "resource",
+          "freq": 3,
+          "page": 87,
+          "prons": [
+            {
+              "ipa": "/rɪˈsɔːs/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[资源]]；财力"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "re-（重复）+ source（源头）→ 重复地寻找源头是需要“资源”支持的。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "Half of the world's water resources have been seriously polluted.",
+            "zh": "世界上一半的水资源已经被严重污染。",
+            "key": [
+              "resources"
+            ]
+          },
+          "ext": [
+            {
+              "word": "resourceful",
+              "ipa": "/rɪˈsɔːsfl/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "机敏的；足智多谋的"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 33,
+          "word": "derive",
+          "freq": 3,
+          "page": 87,
+          "prons": [
+            {
+              "ipa": "/dɪˈraɪv/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[追溯……的起源]]，[[源于]]；得到，获得"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "de（音似“弟”）+ rive（联想 river）→ 弟弟沿着河走，追溯河的源头 → 追溯……的起源"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2017,
+            "en": "She always derives great pleasure from designing something new.",
+            "zh": "她总是从设计新东西中获得极大的乐趣。",
+            "key": [
+              "derives",
+              "from"
+            ]
+          },
+          "ext": [
+            {
+              "word": "derivative",
+              "ipa": "/dɪˈrɪvətɪv/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "模仿他人的"
+                },
+                {
+                  "pos": "n.",
+                  "mean": "派生词"
+                }
+              ]
+            },
+            {
+              "word": "derivation",
+              "ipa": "/ˌderɪˈveɪʃn/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "（尤指词语的）起源，派生"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 34,
+          "word": "deprive",
+          "freq": 1,
+          "page": 87,
+          "prons": [
+            {
+              "ipa": "/dɪˈpraɪv/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[剥夺]]，掠夺；使丧失"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "de（音似“弟”）+ p（联想“扑”）+ rive（联想 river）→ 弟弟扑到河里去抓鱼，鱼的自由被“剥夺”。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "Online systems may deprive teachers of opportunities to make the best use of their expertise for their students.",
+            "zh": "在线系统可能会剥夺教师们为学生充分利用其专业知识的机会。",
+            "key": [
+              "deprive",
+              "of"
+            ]
+          },
+          "ext": [
+            {
+              "word": "deprivation",
+              "ipa": "/ˌdeprɪˈveɪʃn/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "贫困；丧失；剥夺"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 35,
+          "word": "seize",
+          "freq": 2,
+          "page": 87,
+          "prons": [
+            {
+              "ipa": "/siːz/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[抓住]]；夺取，占领；没收"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "对照",
+            "text": "个头（size）最大的那只鹅很难被抓住（seize）。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "The men were seized as they left the building.",
+            "zh": "这些人在离开那栋房子时被抓获。",
+            "key": [
+              "seized"
+            ]
+          },
+          "ext": [
+            {
+              "word": "seizure",
+              "ipa": "/ˈsiːʒə(r)/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "没收；起获的赃物；夺取，占领，控制；突然侵袭，发作"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 36,
+          "word": "rob",
+          "freq": 1,
+          "page": 87,
+          "prons": [
+            {
+              "ipa": "/rɒb/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[抢劫]]；盗取；剥夺"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "谐音",
+            "text": "单词发音类似“肉不”→ 在文明社会，肉不用“抢”。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "Her father was shot by someone trying to rob his small retail shop.",
+            "zh": "她父亲被某个试图抢劫他的小零售店的人开枪打中了。",
+            "key": [
+              "rob"
+            ]
+          },
+          "ext": [
+            {
+              "word": "robbery",
+              "ipa": "/ˈrɒbəri/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "盗窃，抢劫，掠夺"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 37,
+          "word": "rub",
+          "freq": 1,
+          "page": 88,
+          "prons": [
+            {
+              "ipa": "/rʌb/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[擦，摩擦]]；揉搓"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "谐音",
+            "text": "单词发音类似“软布”→ 她喜欢用软布“擦”脸。"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2017,
+            "en": "When the rats detect the smell, they stop and rub their legs.",
+            "zh": "当老鼠闻到这种气味时，它们会停下来摩擦自己的腿。",
+            "key": [
+              "rub"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 38,
+          "word": "thrive",
+          "freq": 2,
+          "page": 88,
+          "prons": [
+            {
+              "ipa": "/θraɪv/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[兴旺，繁荣]]；茁壮成长"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "th(r)（联想 three）+ rive（联想 river）→ 三河交汇的地方经济比较“繁荣”。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "New businesses thrive in this area.",
+            "zh": "新企业在这一地区蓬勃兴起。",
+            "key": [
+              "thrive"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 39,
+          "word": "strive",
+          "freq": 1,
+          "page": 88,
+          "prons": [
+            {
+              "ipa": "/straɪv/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[努力，奋斗]]"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "st（联想 street）+ rive（联想 river）→ 在河上建一条街需要多方合作与“努力”。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "We must continue to strive for greater efficiency.",
+            "zh": "我们必须继续为提高效率而努力。",
+            "key": [
+              "strive",
+              "for"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 40,
+          "word": "effort",
+          "freq": 1,
+          "page": 88,
+          "prons": [
+            {
+              "ipa": "/ˈefət/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[努力]]；[[费力的事]]；试图"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "e（音似“爱”）+（f）for（为了）+ t（联想“她”）→ 父母很爱她，为了她，“努力”提升生活质量。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "The local clubs are making every effort to interest more young people.",
+            "zh": "地方俱乐部正在尽一切努力来吸引更多的年轻人。",
+            "key": [
+              "making every effort"
+            ]
+          },
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 23,
+      "title": "cord 相关",
+      "pages": [
+        88,
+        89
+      ],
+      "map": {
+        "w": "cord 相关",
+        "children": [
+          {
+            "w": "accord",
+            "children": [
+              {
+                "w": "according to",
+                "rel": "扩",
+                "children": [
+                  {
+                    "w": "accordance",
+                    "children": [
+                      {
+                        "w": "accordingly"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "w": "record",
+            "children": [
+              {
+                "w": "recorder",
+                "rel": "扩",
+                "children": [
+                  {
+                    "w": "audio",
+                    "rel": "相关",
+                    "children": [
+                      {
+                        "w": "audience",
+                        "rel": "同根"
+                      }
+                    ]
+                  },
+                  {
+                    "w": "echo",
+                    "rel": "相关"
+                  }
+                ]
+              },
+              {
+                "w": "recording",
+                "rel": "扩"
+              },
+              {
+                "w": "regard",
+                "rel": "形近",
+                "children": [
+                  {
+                    "w": "regarding",
+                    "rel": "扩"
+                  },
+                  {
+                    "w": "regardless",
+                    "rel": "扩"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "entries": [
+        {
+          "no": 41,
+          "word": "accord",
+          "freq": 2,
+          "page": 88,
+          "prons": [
+            {
+              "ipa": "/əˈkɔːd/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "（与……）[[一致]]，符合"
+                },
+                {
+                  "pos": "n.",
+                  "mean": "[[协议]]；符合，一致"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "ac-（一再地）+ cord（音似“靠的”）→ 他一再地靠着这个人，并试图从行为上与他保持“一致”。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "This action would not be in accord with our policy.",
+            "zh": "这一行动不会符合我们的方针。",
+            "key": [
+              "in accord with"
+            ]
+          },
+          "ext": [
+            {
+              "word": "according to",
+              "ipa": "/əˈkɔːdɪŋ tə/",
+              "senses": [
+                {
+                  "pos": "",
+                  "mean": "根据；按照"
+                }
+              ]
+            },
+            {
+              "word": "accordance",
+              "ipa": "/əˈkɔːdns/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "按照，依据"
+                }
+              ]
+            },
+            {
+              "word": "accordingly",
+              "ipa": "/əˈkɔːdɪŋli/",
+              "senses": [
+                {
+                  "pos": "adv.",
+                  "mean": "相应地；因此，从而"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 42,
+          "word": "record",
+          "freq": 1,
+          "page": 88,
+          "prons": [
+            {
+              "ipa": "/ˈrekɔːd/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[记录]]；记载；唱片"
+                }
+              ]
+            },
+            {
+              "ipa": "/rɪˈkɔːd/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[记录]]；标明；录音，录像"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "re（字母音似“阿姨”）+ cord（音似“拷的”）→ 阿姨拷贝的是“唱片”。"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2023,
+            "en": "It partly records his own experience.",
+            "zh": "它部分地记录了他自己的经历。",
+            "key": [
+              "records"
+            ]
+          },
+          "ext": [
+            {
+              "word": "recorder",
+              "ipa": "/rɪˈkɔːdə(r)/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "记录者；录音机"
+                }
+              ]
+            },
+            {
+              "word": "recording",
+              "ipa": "/rɪˈkɔːdɪŋ/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "录制，音像制品"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 43,
+          "word": "audio",
+          "freq": 1,
+          "page": 88,
+          "prons": [
+            {
+              "ipa": "/ˈɔːdiəʊ/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "[[声音的]]；录音的"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "谐音",
+            "text": "单词发音类似“奥迪哦”→ 后面有辆奥迪车，按喇叭的声音很大 → 声音的"
+          },
+          "ex": {
+            "type": "例",
+            "en": "This digital audio player supports multiple formats.",
+            "zh": "这台数字音频播放器支持多种格式。",
+            "key": [
+              "audio"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 44,
+          "word": "audience",
+          "freq": 1,
+          "page": 89,
+          "prons": [
+            {
+              "ipa": "/ˈɔːdiəns/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[听众]]；观众"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "谐音",
+            "text": "单词发音类似“奥迪摁死”→ 一位奥迪车主使劲摁喇叭，“听众”受不了了。"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2021,
+            "en": "Make sure to bring the audience into the conversation so that it is not one-sided.",
+            "zh": "确保让听众参与到对话中来，这样对话就不会一边倒。",
+            "key": [
+              "audience"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 45,
+          "word": "echo",
+          "freq": 2,
+          "page": 89,
+          "prons": [
+            {
+              "ipa": "/ˈekəʊ/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[回声]]；启示"
+                },
+                {
+                  "pos": "v.",
+                  "mean": "[[发出回声]]；重复；附和"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "谐音",
+            "text": "单词发音类似“隘口”→ 在狭窄的山口容易有“回声”。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "Her footsteps echoed in the empty room.",
+            "zh": "她的脚步声在空荡荡的屋子里回响着。",
+            "key": [
+              "echoed"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 46,
+          "word": "regard",
+          "freq": 1,
+          "page": 89,
+          "prons": [
+            {
+              "ipa": "/rɪˈɡɑːd/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[认为]]，把……看作"
+                },
+                {
+                  "pos": "n.",
+                  "mean": "[[致意]]，问候"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "联想",
+            "text": "re（字母音似“阿姨”）+ gard（联想 guard）→ 阿姨向士兵致以“问候”。"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2017,
+            "en": "Some people regard professional change as an unpleasant experience that disturbs their stable careers.",
+            "zh": "有些人认为转行是一种不愉快的经历，会扰乱他们稳定的职业生涯。",
+            "key": [
+              "regard",
+              "as"
+            ]
+          },
+          "ext": [
+            {
+              "word": "regarding",
+              "ipa": "/rɪˈɡɑːdɪŋ/",
+              "senses": [
+                {
+                  "pos": "prep.",
+                  "mean": "关于"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 47,
+          "word": "regardless",
+          "freq": 2,
+          "page": 89,
+          "prons": [
+            {
+              "ipa": "/rɪˈɡɑːdləs/",
+              "senses": [
+                {
+                  "pos": "adv.",
+                  "mean": "[[不顾一切地]]，[[不管]]；不理会"
+                }
+              ]
+            }
+          ],
+          "tip": null,
+          "ex": {
+            "type": "真",
+            "year": 2015,
+            "en": "Skills are highly valued regardless of age.",
+            "zh": "无论年龄大小，技能都受到高度重视。",
+            "key": [
+              "regardless of"
+            ]
+          },
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 24,
+      "title": "guish 相关",
+      "pages": [
+        89,
+        90
+      ],
+      "map": {
+        "w": "guish 相关",
+        "children": [
+          {
+            "w": "distinguish",
+            "children": [
+              {
+                "w": "distinguishable",
+                "rel": "扩"
+              },
+              {
+                "w": "distinct",
+                "rel": "相关",
+                "children": [
+                  {
+                    "w": "distinction",
+                    "rel": "扩"
+                  },
+                  {
+                    "w": "distinctive",
+                    "rel": "扩"
+                  },
+                  {
+                    "w": "instinct",
+                    "rel": "形近",
+                    "children": [
+                      {
+                        "w": "instinctive",
+                        "rel": "扩"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "w": "difference",
+                "rel": "相关",
+                "children": [
+                  {
+                    "w": "differ",
+                    "rel": "扩"
+                  },
+                  {
+                    "w": "different",
+                    "rel": "扩"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "w": "extinguish",
+            "children": [
+              {
+                "w": "sting",
+                "rel": "相关",
+                "children": [
+                  {
+                    "w": "pierce",
+                    "rel": "近义"
+                  },
+                  {
+                    "w": "thrust",
+                    "rel": "近义"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "entries": [
+        {
+          "no": 48,
+          "word": "distinguish",
+          "freq": 2,
+          "page": 89,
+          "prons": [
+            {
+              "ipa": "/dɪˈstɪŋɡwɪʃ/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[区分]]，辨别"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "谐音",
+            "text": "单词发音类似“弟似听故事”→ 弟弟似乎在努力地听老师讲故事，试图“辨别”出故事里谁好谁坏。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "What distinguishes children from adults is their strong ability to derive joy from what they are doing.",
+            "zh": "儿童与成人的区别在于他们从所做的事情中获得快乐的能力很强。",
+            "key": [
+              "distinguishes"
+            ]
+          },
+          "ext": [
+            {
+              "word": "distinguishable",
+              "ipa": "/dɪˈstɪŋɡwɪʃəbl/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "可区分的，可辨认的"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 49,
+          "word": "distinct",
+          "freq": 2,
+          "page": 89,
+          "prons": [
+            {
+              "ipa": "/dɪˈstɪŋkt/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "[[有区别的]]；明确的；显著的"
+                }
+              ]
+            }
+          ],
+          "tip": null,
+          "ex": {
+            "type": "例",
+            "en": "Start-up investors are a distinct type of rich people.",
+            "zh": "创业投资者是一类与众不同的富人。",
+            "key": [
+              "distinct"
+            ]
+          },
+          "ext": [
+            {
+              "word": "distinction",
+              "ipa": "/dɪˈstɪŋkʃn/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "区别，辨别"
+                }
+              ]
+            },
+            {
+              "word": "distinctive",
+              "ipa": "/dɪˈstɪŋktɪv/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "独特的，有特色的"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 50,
+          "word": "difference",
+          "freq": 1,
+          "page": 89,
+          "prons": [
+            {
+              "ipa": "/ˈdɪfrəns/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[差别]]，不同（之处）；变化（之处）"
+                }
+              ]
+            }
+          ],
+          "tip": null,
+          "ex": {
+            "type": "真",
+            "year": 2024,
+            "en": "It all comes down to the difference between learning and practicing.",
+            "zh": "这一切都归结为学习和练习之间的区别。",
+            "key": [
+              "difference"
+            ]
+          },
+          "ext": [
+            {
+              "word": "differ",
+              "ipa": "/ˈdɪfə(r)/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "不同，相异"
+                }
+              ]
+            },
+            {
+              "word": "different",
+              "ipa": "/ˈdɪfrənt/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "不同的"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 51,
+          "word": "extinguish",
+          "freq": 1,
+          "page": 89,
+          "prons": [
+            {
+              "ipa": "/ɪkˈstɪŋɡwɪʃ/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[熄灭]]；消灭"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "对照",
+            "text": "extinguisher n.灭火器 → extinguish v."
+          },
+          "ex": {
+            "type": "例",
+            "en": "Firefighters tried to extinguish the flames.",
+            "zh": "消防队员奋力灭火。",
+            "key": [
+              "extinguish"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 52,
+          "word": "instinct",
+          "freq": 1,
+          "page": 90,
+          "prons": [
+            {
+              "ipa": "/ˈɪnstɪŋkt/",
+              "senses": [
+                {
+                  "pos": "n.",
+                  "mean": "[[本能]]；[[直觉]]；天赋"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "谐音",
+            "text": "单词发音类似“鹰死盯克它”→ 老鹰死盯着猎物是一种“本能”。"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2021,
+            "en": "Compared with other mammals, our numerical instincts are not as remarkable as many assume.",
+            "zh": "与其他哺乳动物相比，我们对数字的直觉并不像许多人认为的那样卓越。",
+            "key": [
+              "instincts"
+            ]
+          },
+          "ext": [
+            {
+              "word": "instinctive",
+              "ipa": "/ɪnˈstɪŋktɪv/",
+              "senses": [
+                {
+                  "pos": "adj.",
+                  "mean": "本能的；直觉的；天生的"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "no": 53,
+          "word": "sting",
+          "freq": 2,
+          "page": 90,
+          "prons": [
+            {
+              "ipa": "/stɪŋ/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[刺]]；蜇"
+                },
+                {
+                  "pos": "n.",
+                  "mean": "[[刺]]；痛苦"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "谐音",
+            "text": "单词发音类似“死定”→ 他被蜜蜂“蜇”一下很痛，感觉像是死定了。"
+          },
+          "ex": {
+            "type": "真",
+            "year": 2018,
+            "en": "She still remembers the sting of her first experience skipping an assignment due to the high prices.",
+            "zh": "她仍记得第一次因为价格太高而没交作业所经历的那种痛苦。",
+            "key": [
+              "sting"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 54,
+          "word": "pierce",
+          "freq": 1,
+          "page": 90,
+          "prons": [
+            {
+              "ipa": "/pɪəs/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[刺穿]]；刺破；穿孔"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "对照",
+            "text": "一片（piece）玻璃碎片刺破（pierce）了他的手掌。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "She was pierced by a chicken bone.",
+            "zh": "她被一块鸡骨头刺到了。",
+            "key": [
+              "pierced"
+            ]
+          },
+          "ext": []
+        },
+        {
+          "no": 55,
+          "word": "thrust",
+          "freq": 1,
+          "page": 90,
+          "prons": [
+            {
+              "ipa": "/θrʌst/",
+              "senses": [
+                {
+                  "pos": "v.",
+                  "mean": "[[猛推]]；冲；刺"
+                },
+                {
+                  "pos": "n.",
+                  "mean": "要点；驱动力；[[刺]]"
+                }
+              ]
+            }
+          ],
+          "tip": {
+            "type": "对照",
+            "text": "如果人与人之间没有了信任（trust），生活早晚得刺（thrust）人一刀。"
+          },
+          "ex": {
+            "type": "例",
+            "en": "She thrust her way into the crowd.",
+            "zh": "她一头扎进人群。",
+            "key": [
+              "thrust"
+            ]
+          },
+          "ext": []
+        }
+      ]
+    }
+  ],
+  "unit_summary": {
+    "groups": 24,
+    "words": 234,
+    "ext": 130,
+    "zhen": 80,
+    "li": 154
+  }
+}

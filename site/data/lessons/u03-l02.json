@@ -1,0 +1,620 @@
+{
+  "id": "u03-l02",
+  "part": 1,
+  "unit": 3,
+  "lesson": 2,
+  "pages": [68, 74],
+  "groups": [
+    {
+      "no": 7,
+      "title": "out 相关",
+      "pages": [68, 68],
+      "map": {
+        "w": "out 相关",
+        "children": [
+          {"w": "outcome"},
+          {"w": "outbreak", "children": [{"w": "breakthrough", "rel": "相关"}]},
+          {"w": "outlet"},
+          {"w": "outlook"},
+          {"w": "output"}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "outcome", "freq": 1, "page": 68,
+          "prons": [{"ipa": "/ˈaʊtkʌm/", "senses": [{"pos": "n.", "mean": "[[结果]]；[[效果]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "In my opinion, the outcome of the game shouldn't matter most.", "zh": "在我看来，比赛的结果不应是最重要的。", "key": ["outcome"]},
+          "ext": []
+        },
+        {
+          "no": 2, "word": "outbreak", "freq": 1, "page": 68,
+          "prons": [{"ipa": "/ˈaʊtbreɪk/", "senses": [{"pos": "n.", "mean": "（暴力、疾病等坏事的）[[爆发，突然发生]]"}]}],
+          "tip": {"type": "构词", "text": "out（出来）+ break（打破）→ 打破出来 → 爆发"},
+          "ex": {"type": "例", "en": "Outbreaks of rain are expected in the afternoon.", "zh": "下午将有暴雨。", "key": ["Outbreaks"]},
+          "ext": []
+        },
+        {
+          "no": 3, "word": "breakthrough", "freq": 1, "page": 68,
+          "prons": [{"ipa": "/ˈbreɪkθruː/", "senses": [
+            {"pos": "n.", "mean": "重大进展，[[突破]]"},
+            {"pos": "adj.", "mean": "[[突破性的]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "break（打破）+ through（穿过）→ 科学研究要打破一些固有的思维定式，才能穿过重重障碍，取得“重大进展”。"},
+          "ex": {"type": "例", "en": "It could be the breakthrough we've been looking for.", "zh": "这可能就是我们一直寻求的突破。", "key": ["breakthrough"]},
+          "ext": []
+        },
+        {
+          "no": 4, "word": "outlet", "freq": 2, "page": 68,
+          "prons": [{"ipa": "/ˈaʊtlet/", "senses": [{"pos": "n.", "mean": "[[出口]]；[[经销店]]；[[发泄方式]]；[[表现机会]]"}]}],
+          "tip": {"type": "构词", "text": "out（出来）+ let（让）→ 让……出来 → 出口"},
+          "ex": {"type": "例", "en": "Lion dance provides a creative outlet.", "zh": "舞狮提供了一种创造性的表现机会。", "key": ["outlet"]},
+          "ext": []
+        },
+        {
+          "no": 5, "word": "outlook", "freq": 1, "page": 68,
+          "prons": [{"ipa": "/ˈaʊtlʊk/", "senses": [{"pos": "n.", "mean": "[[观点]]；[[前景]]；[[景色]]"}]}],
+          "tip": {"type": "构词", "text": "out（向外）+ look（看）→ 他向外看到了美丽的“景色”。"},
+          "ex": {"type": "例", "en": "He has a much rosier outlook on the future of AI.", "zh": "他对人工智能的前景更加乐观。", "key": ["outlook"]},
+          "ext": []
+        },
+        {
+          "no": 6, "word": "output", "freq": 2, "page": 68,
+          "prons": [{"ipa": "/ˈaʊtpʊt/", "senses": [
+            {"pos": "n.", "mean": "（人、机器、机构的）[[产量，输出量]]"},
+            {"pos": "v.", "mean": "输出"}
+          ]}],
+          "tip": {"type": "构词", "text": "out（向外）+ put（放）→ 产量，输出量"},
+          "ex": {"type": "真", "year": 2022, "en": "Focusing on output alone can have unintended consequences.", "zh": "只关注产出可能会产生意想不到的后果。", "key": ["output"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 8,
+      "title": "over 相关",
+      "pages": [68, 70],
+      "map": {
+        "w": "over 相关",
+        "children": [
+          {"w": "overcome", "children": [
+            {"w": "overlook", "children": [{"w": "overnight"}]}
+          ]},
+          {"w": "overtake", "children": [
+            {"w": "undertake", "rel": "相关", "children": [{"w": "undertaking", "rel": "扩"}]}
+          ]},
+          {"w": "overtime"},
+          {"w": "overdue", "children": [
+            {"w": "beforehand", "rel": "相关"},
+            {"w": "ready", "rel": "相关", "children": [{"w": "readily", "rel": "扩"}]}
+          ]},
+          {"w": "overhear"},
+          {"w": "overwhelm", "children": [
+            {"w": "overwhelming", "rel": "扩"},
+            {"w": "overwhelmingly", "rel": "扩"}
+          ]},
+          {"w": "overall", "children": [
+            {"w": "altogether", "rel": "近义", "children": [
+              {"w": "gather", "rel": "相关", "children": [{"w": "gathering", "rel": "扩"}]},
+              {"w": "headquarters", "rel": "相关", "children": [
+                {"w": "quarter", "rel": "拆分", "children": [{"w": "quarterly", "rel": "扩"}]}
+              ]}
+            ]},
+            {"w": "so-called", "rel": "相关"}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 7, "word": "overcome", "freq": 2, "page": 69,
+          "prons": [{"ipa": "/ˌəʊvəˈkʌm/", "senses": [{"pos": "v.", "mean": "[[克服，战胜]]"}]}],
+          "tip": {"type": "构词", "text": "over（超过）+ come（到达）→ 超过到达，引申为“克服”。"},
+          "ex": {"type": "例", "en": "Focusing on effort is effective in helping children overcome frustration.", "zh": "专注于努力对帮助孩子克服挫折是有效的。", "key": ["overcome"]},
+          "ext": []
+        },
+        {
+          "no": 8, "word": "overlook", "freq": 2, "page": 69,
+          "prons": [{"ipa": "/ˌəʊvəˈlʊk/", "senses": [{"pos": "v.", "mean": "[[俯视]]；[[忽略]]"}]}],
+          "tip": {"type": "构词", "text": "over（上面）+ look（看）→ 俯视"},
+          "ex": {"type": "真", "year": 2020, "en": "The wide diversity of Asian Americans was overlooked.", "zh": "亚裔美国人的广泛多样性被忽视了。", "key": ["overlooked"]},
+          "ext": []
+        },
+        {
+          "no": 9, "word": "overnight", "freq": 2, "page": 69,
+          "prons": [
+            {"ipa": "/ˌəʊvəˈnaɪt/", "senses": [{"pos": "adv.", "mean": "[[忽然]]；[[在晚上]]"}]},
+            {"ipa": "/ˈəʊvənaɪt/", "senses": [{"pos": "adj.", "mean": "[[忽然的]]；[[夜间的]]"}]}
+          ],
+          "tip": null,
+          "ex": {"type": "例", "en": "How did she become rich overnight?", "zh": "她是如何一夜暴富的？", "key": ["overnight"]},
+          "ext": []
+        },
+        {
+          "no": 10, "word": "overtake", "freq": 2, "page": 69,
+          "prons": [{"ipa": "/ˌəʊvəˈteɪk/", "senses": [{"pos": "v.", "mean": "[[超过]]；[[赶上]]"}]}],
+          "tip": {"type": "构词", "text": "over（上面）+ take（拿）→ 从上面拿走 → 超过；赶上"},
+          "ex": {"type": "例", "en": "He pulled out to overtake a truck.", "zh": "他驶出车流，以超过一辆卡车。", "key": ["overtake"]},
+          "ext": []
+        },
+        {
+          "no": 11, "word": "overtime", "freq": 1, "page": 69,
+          "prons": [{"ipa": "/ˈəʊvətaɪm/", "senses": [{"pos": "n.", "mean": "[[加班]]"}]}],
+          "tip": {"type": "构词", "text": "over（超过）+ time（时间）→ 加班"},
+          "ex": {"type": "真", "year": 2016, "en": "He thinks he deserves extra pay for overtime.", "zh": "他认为他应该得到加班费。", "key": ["overtime"]},
+          "ext": []
+        },
+        {
+          "no": 12, "word": "overdue", "freq": 1, "page": 69,
+          "prons": [{"ipa": "/ˌəʊvəˈdjuː/", "senses": [{"pos": "adj.", "mean": "（到期）[[未付的]]，[[未做的]]；[[延误的]]"}]}],
+          "tip": {"type": "构词", "text": "over（超过）+ due（到期的）→ 延误的"},
+          "ex": {"type": "例", "en": "My library books are a week overdue.", "zh": "我借图书馆的书过期一个星期了。", "key": ["overdue"]},
+          "ext": []
+        },
+        {
+          "no": 13, "word": "overhear", "freq": 1, "page": 69,
+          "prons": [{"ipa": "/ˌəʊvəˈhɪə(r)/", "senses": [{"pos": "v.", "mean": "[[偶然听到，无意中听到]]"}]}],
+          "tip": {"type": "构词", "text": "over（超过）+ hear（听）→ 超越正常的听力范围 → 无意中听到"},
+          "ex": {"type": "例", "en": "The patient overheard the news that he was seriously ill.", "zh": "病人无意中听到了他病情严重的消息。", "key": ["overheard"]},
+          "ext": []
+        },
+        {
+          "no": 14, "word": "overwhelm", "freq": 2, "page": 69,
+          "prons": [{"ipa": "/ˌəʊvəˈwelm/", "senses": [{"pos": "v.", "mean": "[[淹没]]；[[压倒]]"}]}],
+          "tip": {"type": "联想", "text": "over（上面）+ whel（联想 wheel）+ m（联想 man）→ 时代的车轮从人身上压过，把人“压倒”了。"},
+          "ex": {"type": "真", "year": 2021, "en": "Obese people would be overwhelmed with anxiety.", "zh": "肥胖的人会被焦虑淹没。", "key": ["overwhelmed"]},
+          "ext": [
+            {"word": "overwhelming", "ipa": "/ˌəʊvəˈwelmɪŋ/", "senses": [{"pos": "adj.", "mean": "压倒性的；巨大的"}]},
+            {"word": "overwhelmingly", "ipa": "/ˌəʊvəˈwelmɪŋli/", "senses": [{"pos": "adv.", "mean": "巨大地；压倒性地"}]}
+          ]
+        },
+        {
+          "no": 15, "word": "undertake", "freq": 2, "page": 69,
+          "prons": [{"ipa": "/ˌʌndəˈteɪk/", "senses": [{"pos": "v.", "mean": "[[承担]]；[[从事]]"}]}],
+          "tip": {"type": "构词", "text": "under（下面）+ take（拿）→ 在下面拿，引申为“承担”。"},
+          "ex": {"type": "例", "en": "The way chores are undertaken around the world may change people's thinking.", "zh": "世界各地做家务的方式可能会改变人们的想法。", "key": ["undertaken"]},
+          "ext": [{"word": "undertaking", "ipa": "/ˌʌndəˈteɪkɪŋ/", "senses": [{"pos": "n.", "mean": "任务，项目，事业；企业；承诺；保证"}]}]
+        },
+        {
+          "no": 16, "word": "overall", "freq": 3, "page": 69,
+          "prons": [
+            {"ipa": "/ˌəʊvərˈɔːl/", "senses": [
+              {"pos": "adj.", "mean": "[[全面的，综合的]]"},
+              {"pos": "adv.", "mean": "[[总计；总体上]]"}
+            ]},
+            {"ipa": "/ˈəʊvərɔːl/", "senses": [{"pos": "n.", "mean": "外套；工装服"}]}
+          ],
+          "tip": {"type": "构词", "text": "over（上面）+ all（所有的）→ 总体上"},
+          "ex": {"type": "真", "year": 2016, "en": "The public overall is split on whether they'd like to use a driverless car.", "zh": "对于是否愿意使用无人驾驶汽车，公众总体上存在分歧。", "key": ["overall"]},
+          "ext": []
+        },
+        {
+          "no": 17, "word": "altogether", "freq": 1, "page": 70,
+          "prons": [{"ipa": "/ˌɔːltəˈɡeðə(r)/", "senses": [{"pos": "adv.", "mean": "[[完全]]；[[总共]]；[[总之]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2017, "en": "Google aims to save you from the thirst of curiosity altogether.", "zh": "谷歌的目标是让你完全摆脱好奇心的渴望。", "key": ["altogether"]},
+          "ext": []
+        },
+        {
+          "no": 18, "word": "gather", "freq": 2, "page": 70,
+          "prons": [{"ipa": "/ˈɡæðə(r)/", "senses": [{"pos": "v.", "mean": "[[收集]]；[[聚集]]；增加"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The kids were gathered together in one room.", "zh": "孩子们被聚集在一个房间里。", "key": ["gathered"]},
+          "ext": [{"word": "gathering", "ipa": "/ˈɡæðərɪŋ/", "senses": [{"pos": "n.", "mean": "聚集；集会"}]}]
+        },
+        {
+          "no": 19, "word": "headquarters", "freq": 1, "page": 70,
+          "prons": [{"ipa": "/ˌhedˈkwɔːtəz/", "senses": [{"pos": "n.", "mean": "[[司令部]]；[[总部]]"}]}],
+          "tip": {"type": "联想", "text": "head（头）+ quarter（四分之一）+ s → 只有排名在前四分之一的人，才能进入“总部”。"},
+          "ex": {"type": "真", "year": 2016, "en": "Taxes are low, so many businesses have their headquarters here.", "zh": "这里的税收很低，所以很多企业都把总部设在这里。", "key": ["headquarters"]},
+          "ext": []
+        },
+        {
+          "no": 20, "word": "quarter", "freq": 1, "page": 70,
+          "prons": [{"ipa": "/ˈkwɔːtə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[四分之一]]；[[季度]]；[[十五分钟]]"},
+            {"pos": "v.", "mean": "分为四份"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2020, "en": "One quarter of teachers in an American city said that children in kindergartens had no time for playing freely.", "zh": "美国一座城市四分之一的教师表示，幼儿园的孩子没有时间自由玩耍。", "key": ["quarter"]},
+          "ext": [{"word": "quarterly", "ipa": "/ˈkwɔːtəli/", "senses": [
+            {"pos": "adj.", "mean": "季度的；每季的"},
+            {"pos": "adv.", "mean": "按季度；每季"},
+            {"pos": "n.", "mean": "季刊"}
+          ]}]
+        },
+        {
+          "no": 21, "word": "beforehand", "freq": 1, "page": 70,
+          "prons": [{"ipa": "/bɪˈfɔːhænd/", "senses": [{"pos": "adv.", "mean": "预先，[[事先]]"}]}],
+          "tip": {"type": "构词", "text": "before（前面）+ hand（手）→ 事先"},
+          "ex": {"type": "例", "en": "People often fail to programme their routines beforehand.", "zh": "人们往往不能事先安排好他们的日常工作。", "key": ["beforehand"]},
+          "ext": []
+        },
+        {
+          "no": 22, "word": "ready", "freq": 1, "page": 70,
+          "prons": [{"ipa": "/ˈredi/", "senses": [
+            {"pos": "adj.", "mean": "[[准备好的]]；[[已完成的]]；[[方便使用的]]"},
+            {"pos": "adv.", "mean": "[[已做完]]；[[已完成]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Frozen fruit will be ready by morning.", "zh": "冷冻水果会在早上准备好。", "key": ["ready"]},
+          "ext": [{"word": "readily", "ipa": "/ˈredɪli/", "senses": [{"pos": "adv.", "mean": "轻而易举地；便利地；欣然地"}]}]
+        },
+        {
+          "no": 23, "word": "so-called", "freq": 3, "page": 70,
+          "prons": [{"ipa": "/ˌsəʊ ˈkɔːld/", "senses": [{"pos": "adj.", "mean": "[[所谓的]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "How have these so-called improvements helped the local community?", "zh": "这些所谓的进步对当地社会有什么帮助呢？", "key": ["so-called"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 9,
+      "title": "rupt 相关",
+      "pages": [70, 71],
+      "map": {
+        "w": "rupt 相关",
+        "children": [
+          {"w": "corrupt", "children": [
+            {"w": "corruption", "rel": "扩"},
+            {"w": "bribe", "rel": "相关", "children": [{"w": "bribery", "rel": "扩"}]}
+          ]},
+          {"w": "bankrupt", "children": [
+            {"w": "bankruptcy", "rel": "扩"},
+            {"w": "deficit", "rel": "相关"}
+          ]},
+          {"w": "disrupt", "children": [
+            {"w": "disruptive", "children": [{"w": "disruption"}]}
+          ]},
+          {"w": "interrupt", "children": [{"w": "interruption", "rel": "扩"}]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 24, "word": "corrupt", "freq": 1, "page": 70,
+          "prons": [{"ipa": "/kəˈrʌpt/", "senses": [
+            {"pos": "v.", "mean": "[[使腐化]]，使堕落；[[破坏]]"},
+            {"pos": "adj.", "mean": "贪污的，[[腐败的]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“可抓捕他”→ 警察可抓捕“腐败的”人。"},
+          "ex": {"type": "例", "en": "He was corrupted by power and ambition.", "zh": "权力与野心使他腐化堕落。", "key": ["corrupted"]},
+          "ext": [{"word": "corruption", "ipa": "/kəˈrʌpʃn/", "senses": [{"pos": "n.", "mean": "腐败，贪污；堕落"}]}]
+        },
+        {
+          "no": 25, "word": "bribe", "freq": 1, "page": 70,
+          "prons": [{"ipa": "/braɪb/", "senses": [
+            {"pos": "v.", "mean": "[[贿赂]]，向……行贿"},
+            {"pos": "n.", "mean": "[[贿赂]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "新娘（bride）贿赂（bribe）马夫，骑马离开了。"},
+          "ex": {"type": "例", "en": "Bribing the boss is punishable.", "zh": "贿赂老板是应受到惩罚的。", "key": ["Bribing"]},
+          "ext": [{"word": "bribery", "ipa": "/ˈbraɪbəri/", "senses": [{"pos": "n.", "mean": "行贿；行贿的财物"}]}]
+        },
+        {
+          "no": 26, "word": "bankrupt", "freq": 2, "page": 71,
+          "prons": [{"ipa": "/ˈbæŋkrʌpt/", "senses": [
+            {"pos": "n.", "mean": "破产者"},
+            {"pos": "adj.", "mean": "[[破产的]]；完全丧失的"}
+          ]}],
+          "tip": {"type": "构词", "text": "bank（银行）+ rupt（= break，断裂）→ 银行（资金链）断裂 → 破产的"},
+          "ex": {"type": "真", "year": 2015, "en": "Her business went bankrupt while she was in prison.", "zh": "她在监狱期间，她的生意破产了。", "key": ["went bankrupt"]},
+          "ext": [{"word": "bankruptcy", "ipa": "/ˈbæŋkrʌptsi/", "senses": [{"pos": "n.", "mean": "破产"}]}]
+        },
+        {
+          "no": 27, "word": "deficit", "freq": 1, "page": 71,
+          "prons": [{"ipa": "/ˈdefɪsɪt/", "senses": [{"pos": "n.", "mean": "[[赤字]]，逆差，亏损"}]}],
+          "tip": {"type": "联想", "text": "de（联想“弟”）+ fi（音似“非”）+ ci（音似“撕”）+ t（联想“他”）→ 弟弟开的公司出现非常严重的“亏损”，他气得撕了财务报表。"},
+          "ex": {"type": "真", "year": 2023, "en": "It will help many African countries reduce trade deficits.", "zh": "它将帮助许多非洲国家减少贸易赤字。", "key": ["deficits"]},
+          "ext": []
+        },
+        {
+          "no": 28, "word": "disrupt", "freq": 1, "page": 71,
+          "prons": [{"ipa": "/dɪsˈrʌpt/", "senses": [{"pos": "v.", "mean": "[[扰乱]]；分裂，瓦解；[[中断]]；彻底改变结构"}]}],
+          "tip": {"type": "构词", "text": "dis-（分开）+ rupt（断裂）→ 分裂"},
+          "ex": {"type": "例", "en": "The global economy continues to be disrupted by technology and other massive change.", "zh": "全球经济持续被技术和其他巨大的变化所扰乱。", "key": ["disrupted"]},
+          "ext": [
+            {"word": "disruptive", "ipa": "/dɪsˈrʌptɪv/", "senses": [{"pos": "adj.", "mean": "引起混乱的；扰乱性的；破坏性的"}]},
+            {"word": "disruption", "ipa": "/dɪsˈrʌpʃn/", "senses": [{"pos": "n.", "mean": "中断，分裂，破坏"}]}
+          ]
+        },
+        {
+          "no": 29, "word": "interrupt", "freq": 2, "page": 71,
+          "prons": [{"ipa": "/ˌɪntəˈrʌpt/", "senses": [{"pos": "v.", "mean": "[[打断]]；[[打扰]]；使暂停"}]}],
+          "tip": {"type": "构词", "text": "inter-（中间）+ rupt（断裂）→ 在中间断裂 → 打断"},
+          "ex": {"type": "例", "en": "Please do not interrupt the speaker.", "zh": "请不要打断讲话者。", "key": ["interrupt"]},
+          "ext": [{"word": "interruption", "ipa": "/ˌɪntəˈrʌpʃn/", "senses": [{"pos": "n.", "mean": "打断；插嘴"}]}]
+        }
+      ]
+    },
+    {
+      "no": 10,
+      "title": "“丢弃”相关",
+      "pages": [71, 72],
+      "map": {
+        "w": "“丢弃”相关",
+        "children": [
+          {"w": "desert", "children": [
+            {"w": "desertion", "rel": "扩"},
+            {"w": "dessert", "rel": "形近"},
+            {"w": "insert", "rel": "同根", "children": [{"w": "insertion", "rel": "扩"}]}
+          ]},
+          {"w": "dump"},
+          {"w": "discard", "children": [
+            {"w": "junk", "children": [
+              {"w": "trash", "rel": "相关"},
+              {"w": "abolish", "rel": "相关", "children": [{"w": "abolition", "rel": "扩"}]},
+              {"w": "abuse", "rel": "相关", "children": [{"w": "abusive", "rel": "扩"}]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 30, "word": "desert", "freq": 1, "page": 71,
+          "prons": [
+            {"ipa": "/ˈdezət/", "senses": [{"pos": "n.", "mean": "[[沙漠]]"}]},
+            {"ipa": "/dɪˈzɜːt/", "senses": [{"pos": "v.", "mean": "离开；[[抛弃]]"}]}
+          ],
+          "tip": {"type": "谐音", "text": "单词发音类似“弟舍它”→ 弟弟把它舍弃了 → 抛弃"},
+          "ex": {"type": "例", "en": "They are deserted by their family.", "zh": "他们被家人抛弃了。", "key": ["deserted"]},
+          "ext": [{"word": "desertion", "ipa": "/dɪˈzɜːʃn/", "senses": [{"pos": "n.", "mean": "抛弃，离弃，遗弃；擅离（部队）；逃走；开小差"}]}]
+        },
+        {
+          "no": 31, "word": "dessert", "freq": 1, "page": 71,
+          "prons": [{"ipa": "/dɪˈzɜːt/", "senses": [{"pos": "n.", "mean": "（饭后）[[甜点]]，甜食"}]}],
+          "tip": {"type": "对照", "text": "一个人不要去沙漠（desert）玩，那里的蛇会把你当甜点（dessert）吃掉的。"},
+          "ex": {"type": "例", "en": "He learned his trade from a famous dessert chef in Paris.", "zh": "他是从巴黎一位著名的甜点师那里学来的手艺。", "key": ["dessert"]},
+          "ext": []
+        },
+        {
+          "no": 32, "word": "insert", "freq": 1, "page": 71,
+          "prons": [{"ipa": "/ɪnˈsɜːt/", "senses": [{"pos": "v.", "mean": "[[插入]]，嵌进"}]}],
+          "tip": {"type": "构词", "text": "in-（向内）+ sert（加入）→ 插入"},
+          "ex": {"type": "例", "en": "Insert coins into the slot and press for a ticket.", "zh": "把硬币放进投币口，按钮取票。", "key": ["Insert", "into"]},
+          "ext": [{"word": "insertion", "ipa": "/ɪnˈsɜːʃn/", "senses": [{"pos": "n.", "mean": "放入，插入；（文件或文稿中的）插入物"}]}]
+        },
+        {
+          "no": 33, "word": "dump", "freq": 2, "page": 72,
+          "prons": [{"ipa": "/dʌmp/", "senses": [
+            {"pos": "n.", "mean": "[[垃圾场]]；废物堆"},
+            {"pos": "v.", "mean": "[[扔下]]；倾倒；[[丢弃]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“当铺”→ 有人会把不经常用的东西放到当铺里当点钱 → 丢弃"},
+          "ex": {"type": "例", "en": "Everything that goes into the dumps might be made into something useful.", "zh": "所有进入垃圾场的东西都有可能会被做成有用的东西。", "key": ["dumps"]},
+          "ext": []
+        },
+        {
+          "no": 34, "word": "discard", "freq": 1, "page": 72,
+          "prons": [{"ipa": "/dɪˈskɑːd/", "senses": [{"pos": "v.", "mean": "[[丢弃]]，抛弃"}]}],
+          "tip": {"type": "构词", "text": "dis-（不）+ card（纸牌）→ 不要纸牌 → 丢弃，抛弃"},
+          "ex": {"type": "例", "en": "Beverage companies should be responsible for collecting and reusing discarded plastic soda bottles.", "zh": "饮料公司应该负责收集和重新使用丢弃的塑料汽水瓶。", "key": ["discarded"]},
+          "ext": []
+        },
+        {
+          "no": 35, "word": "junk", "freq": 1, "page": 72,
+          "prons": [{"ipa": "/dʒʌŋk/", "senses": [
+            {"pos": "n.", "mean": "[[无用的东西]]，[[无价值的东西]]"},
+            {"pos": "v.", "mean": "[[丢弃]]，[[废弃]]，[[扔]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“夹克”→ 妈妈认为这件夹克是“无用的东西”，于是“丢弃”了它。"},
+          "ex": {"type": "例", "en": "There's nothing but junk on the TV.", "zh": "电视上全是些无聊的东西。", "key": ["junk"]},
+          "ext": []
+        },
+        {
+          "no": 36, "word": "trash", "freq": 3, "page": 72,
+          "prons": [{"ipa": "/træʃ/", "senses": [
+            {"pos": "n.", "mean": "[[垃圾]]，[[废物]]"},
+            {"pos": "v.", "mean": "[[损坏]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“揣洗”→ 一双“垃圾”一样的臭袜子，他竟然还揣回宿舍洗。"},
+          "ex": {"type": "真", "year": 2018, "en": "One person's trash is another's treasure.", "zh": "一个人的垃圾可能是另一个人的宝藏。", "key": ["trash"]},
+          "ext": []
+        },
+        {
+          "no": 37, "word": "abolish", "freq": 2, "page": 72,
+          "prons": [{"ipa": "/əˈbɒlɪʃ/", "senses": [{"pos": "v.", "mean": "[[废除]]；[[取消]]"}]}],
+          "tip": {"type": "联想", "text": "a（—）+ bolish（音似“暴力史”）→ “废除”这一酷刑，终结暴力史。"},
+          "ex": {"type": "例", "en": "Slavery was abolished in America in the 19th century.", "zh": "美国在19世纪废除了奴隶制。", "key": ["abolished"]},
+          "ext": [{"word": "abolition", "ipa": "/ˌæbəˈlɪʃn/", "senses": [{"pos": "n.", "mean": "废除，废止"}]}]
+        },
+        {
+          "no": 38, "word": "abuse", "freq": 3, "page": 72,
+          "prons": [
+            {"ipa": "/əˈbjuːs/", "senses": [{"pos": "n.", "mean": "[[滥用]]；[[虐待]]；辱骂"}]},
+            {"ipa": "/əˈbjuːz/", "senses": [{"pos": "v.", "mean": "[[滥用]]；[[虐待]]；诋毁"}]}
+          ],
+          "tip": {"type": "构词", "text": "ab-（否定前缀）+ use（使用）→ 不正常的使用 → 滥用"},
+          "ex": {"type": "例", "en": "That may lead to nursing home abuse and age discrimination.", "zh": "那可能会导致养老院虐待和年龄歧视。", "key": ["abuse"]},
+          "ext": [{"word": "abusive", "ipa": "/əˈbjuːsɪv/", "senses": [{"pos": "adj.", "mean": "辱骂的；滥用的；虐待的"}]}]
+        }
+      ]
+    },
+    {
+      "no": 11,
+      "title": "“冲击”相关",
+      "pages": [72, 73],
+      "map": {
+        "w": "“冲击”相关",
+        "children": [
+          {"w": "clash", "children": [
+            {"w": "crash", "rel": "形近"},
+            {"w": "wreck", "rel": "相关", "children": [{"w": "wreckage", "rel": "扩"}]}
+          ]},
+          {"w": "smash", "children": [
+            {"w": "cash", "rel": "形近"},
+            {"w": "ashamed", "rel": "形近"},
+            {"w": "dash", "rel": "形近"}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 39, "word": "clash", "freq": 1, "page": 72,
+          "prons": [{"ipa": "/klæʃ/", "senses": [
+            {"pos": "n.", "mean": "[[冲突]]；不协调；[[撞击声]]"},
+            {"pos": "v.", "mean": "[[冲突]]；争论"}
+          ]}],
+          "tip": {"type": "联想", "text": "cl（联想“可来”）+ ash（灰）→ 维和部队可来到漫天灰尘的“冲突”现场了。"},
+          "ex": {"type": "例", "en": "Eight people were wounded in a clash with border guards.", "zh": "在与边防警卫的冲突中有八人受伤。", "key": ["clash"]},
+          "ext": []
+        },
+        {
+          "no": 40, "word": "crash", "freq": 1, "page": 72,
+          "prons": [{"ipa": "/kræʃ/", "senses": [
+            {"pos": "v.", "mean": "[[撞车]]；坠毁"},
+            {"pos": "n.", "mean": "[[撞车事故]]；失事"}
+          ]}],
+          "tip": {"type": "联想", "text": "c（联想 car）+ rash（鲁莽的）→ 开车不能太鲁莽，不然会出“撞车事故”的。"},
+          "ex": {"type": "真", "year": 2024, "en": "It narrowly escaped a plane crash when turning around.", "zh": "它转弯时险些撞上飞机。", "key": ["crash"]},
+          "ext": []
+        },
+        {
+          "no": 41, "word": "wreck", "freq": 1, "page": 73,
+          "prons": [{"ipa": "/rek/", "senses": [
+            {"pos": "n.", "mean": "[[沉船]]；失事；[[交通事故]]"},
+            {"pos": "v.", "mean": "[[破坏]]，[[毁坏]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "w（联想“我”）+ re（字母音似“阿姨”）+ ck（联想 CK 品牌）→ 我阿姨的 CK 手表因“交通事故”而被“毁坏”。"},
+          "ex": {"type": "真", "year": 2020, "en": "His fishing boat got wrecked on a rock.", "zh": "他的渔船触礁失事了。", "key": ["wrecked"]},
+          "ext": [{"word": "wreckage", "ipa": "/ˈrekɪdʒ/", "senses": [{"pos": "n.", "mean": "残骸，残余"}]}]
+        },
+        {
+          "no": 42, "word": "smash", "freq": 1, "page": 73,
+          "prons": [{"ipa": "/smæʃ/", "senses": [{"pos": "v.", "mean": "[[打碎，粉碎]]；[[猛击]]"}]}],
+          "tip": {"type": "联想", "text": "sm（联想 small）+ ash（废墟）→ 不久前，这个小型建筑被撞了个“粉碎”，成了一片废墟。"},
+          "ex": {"type": "例", "en": "The glass bowl smashed into a thousand pieces.", "zh": "玻璃碗咣的一声摔了个粉碎。", "key": ["smashed"]},
+          "ext": []
+        },
+        {
+          "no": 43, "word": "cash", "freq": 1, "page": 73,
+          "prons": [{"ipa": "/kæʃ/", "senses": [{"pos": "n.", "mean": "[[现金]]；[[金钱]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“开支”→ 当局需要一大笔开支才能恢复建筑的原貌 → 现金；金钱"},
+          "ex": {"type": "真", "year": 2020, "en": "She found it much safer to use cash.", "zh": "她发现用现金更安全。", "key": ["cash"]},
+          "ext": []
+        },
+        {
+          "no": 44, "word": "ashamed", "freq": 1, "page": 73,
+          "prons": [{"ipa": "/əˈʃeɪmd/", "senses": [{"pos": "adj.", "mean": "[[羞愧的]]，[[惭愧的]]"}]}],
+          "tip": {"type": "联想", "text": "ash（灰烬）+ a（—）+ me（我）+ d（联想“的”）→ 我的脸上有一点儿灰 → 羞愧的"},
+          "ex": {"type": "例", "en": "He was ashamed of having asked such a silly question.", "zh": "他为问了这样一个愚蠢的问题而感到羞愧。", "key": ["was ashamed of"]},
+          "ext": []
+        },
+        {
+          "no": 45, "word": "dash", "freq": 1, "page": 73,
+          "prons": [{"ipa": "/dæʃ/", "senses": [
+            {"pos": "v.", "mean": "[[猛冲，突进]]；（使）[[冲撞]]"},
+            {"pos": "n.", "mean": "[[猛冲，突进]]；[[破折号]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“大事”→ 大事不好了，人们“猛冲”过去看发生了什么。"},
+          "ex": {"type": "例", "en": "They dashed into the classroom.", "zh": "他们冲进了教室。", "key": ["dashed"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 12,
+      "title": "“掩盖、揭露”相关",
+      "pages": [73, 74],
+      "map": {
+        "w": "“掩盖、揭露”相关",
+        "children": [
+          {"w": "seal"},
+          {"w": "conceal", "children": [
+            {"w": "concealment", "rel": "扩"},
+            {"w": "reveal", "rel": "反义", "children": [
+              {"w": "revelation", "rel": "扩"},
+              {"w": "betray", "rel": "相关", "children": [{"w": "betrayal", "rel": "扩"}]},
+              {"w": "uncover", "rel": "近义"}
+            ]}
+          ]},
+          {"w": "unfold", "children": [
+            {"w": "fold", "rel": "反义", "children": [
+              {"w": "load", "rel": "形近", "children": [
+                {"w": "download", "rel": "合成"},
+                {"w": "upload", "rel": "合成"},
+                {"w": "unload", "rel": "反义"}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 46, "word": "seal", "freq": 1, "page": 73,
+          "prons": [{"ipa": "/siːl/", "senses": [
+            {"pos": "v.", "mean": "[[封上（信封）]]；[[密封]]"},
+            {"pos": "n.", "mean": "[[印章]]；密封装置"}
+          ]}],
+          "tip": {"type": "联想", "text": "sea（大海）+ l（形似拉链）→ 在这个神话故事中，他竟然把大海的水用拉链“封上”了。"},
+          "ex": {"type": "例", "en": "My father sealed the bag tightly with sticky tape minutes later.", "zh": "几分钟之后，我父亲用胶带将袋子牢牢地封住了。", "key": ["sealed"]},
+          "ext": []
+        },
+        {
+          "no": 47, "word": "conceal", "freq": 1, "page": 73,
+          "prons": [{"ipa": "/kənˈsiːl/", "senses": [{"pos": "v.", "mean": "[[隐藏]]；[[隐瞒]]；[[掩盖]]"}]}],
+          "tip": {"type": "联想", "text": "con-（所有）+ ceal（联想 seal）→ 所有的通道都被封上了，才能“隐藏”起来。"},
+          "ex": {"type": "真", "year": 2021, "en": "He wanted to conceal something from his parents.", "zh": "他想对父母隐瞒一些事情。", "key": ["conceal"]},
+          "ext": [{"word": "concealment", "ipa": "/kənˈsiːlmənt/", "senses": [{"pos": "n.", "mean": "隐藏；隐瞒；掩盖"}]}]
+        },
+        {
+          "no": 48, "word": "reveal", "freq": 3, "page": 73,
+          "prons": [{"ipa": "/rɪˈviːl/", "senses": [{"pos": "v.", "mean": "[[揭露]]，显示；[[展示]]"}]}],
+          "tip": {"type": "联想", "text": "re-（再）+ veal（联想 real）→ 史学家遍寻典籍，再次还原真相→揭露"},
+          "ex": {"type": "例", "en": "It's important to reveal yourself to friends.", "zh": "向朋友展示自己是很重要的。", "key": ["reveal"]},
+          "ext": [{"word": "revelation", "ipa": "/ˌrevəˈleɪʃn/", "senses": [{"pos": "n.", "mean": "揭示，被揭示的真相"}]}]
+        },
+        {
+          "no": 49, "word": "betray", "freq": 1, "page": 74,
+          "prons": [{"ipa": "/bɪˈtreɪ/", "senses": [{"pos": "v.", "mean": "[[泄露]]；[[背叛]]；流露情感"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“背捶”→ 如果一个人“背叛”了你，那你一定捶（打）他的背。"},
+          "ex": {"type": "例", "en": "I could never forgive Mike for betraying a confidence.", "zh": "迈克泄露了秘密，我决不会饶恕他。", "key": ["betraying"]},
+          "ext": [{"word": "betrayal", "ipa": "/bɪˈtreɪəl/", "senses": [{"pos": "n.", "mean": "背叛；（被）出卖"}]}]
+        },
+        {
+          "no": 50, "word": "uncover", "freq": 1, "page": 74,
+          "prons": [{"ipa": "/ʌnˈkʌvə(r)/", "senses": [{"pos": "v.", "mean": "[[揭开盖子]]；[[揭露]]；[[发现]]"}]}],
+          "tip": {"type": "构词", "text": "un-（不）+ cover（覆盖）→ 揭露"},
+          "ex": {"type": "例", "en": "It will be difficult to uncover the truth.", "zh": "揭开真相会很困难。", "key": ["uncover"]},
+          "ext": []
+        },
+        {
+          "no": 51, "word": "load", "freq": 1, "page": 74,
+          "prons": [{"ipa": "/ləʊd/", "senses": [
+            {"pos": "n.", "mean": "[[负载，承载]]；许多"},
+            {"pos": "v.", "mean": "（把大量……）[[装上]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“楼的”→ 一栋楼“负载”了生活万象。"},
+          "ex": {"type": "例", "en": "The heavy teaching loads left them little time and energy for family life.", "zh": "沉重的教学负担使他们很少有时间和精力用于家庭生活。", "key": ["loads"]},
+          "ext": [
+            {"word": "download", "ipa": "/ˌdaʊnˈləʊd/", "senses": [{"pos": "v.", "mean": "下载"}]},
+            {"word": "upload", "ipa": "/ˌʌpˈləʊd/", "senses": [{"pos": "v.", "mean": "上传，上载"}]}
+          ]
+        },
+        {
+          "no": 52, "word": "unload", "freq": 1, "page": 74,
+          "prons": [{"ipa": "/ˌʌnˈləʊd/", "senses": [{"pos": "v.", "mean": "[[卸货]]；[[取下]]；[[取出]]"}]}],
+          "tip": {"type": "构词", "text": "un-（不）+ load（装上）→ 卸货；取下"},
+          "ex": {"type": "例", "en": "He was only responsible for unloading food.", "zh": "他只负责卸食物。", "key": ["unloading"]},
+          "ext": []
+        },
+        {
+          "no": 53, "word": "unfold", "freq": 1, "page": 74,
+          "prons": [{"ipa": "/ʌnˈfəʊld/", "senses": [{"pos": "v.", "mean": "[[打开]]；[[呈现]]；[[发展]]，[[发生]]"}]}],
+          "tip": {"type": "构词", "text": "un-（不）+ fold（折叠）→ 打开"},
+          "ex": {"type": "例", "en": "The audience watched as the story unfolded before their eyes.", "zh": "观众看着剧情逐渐地展开。", "key": ["unfolded"]},
+          "ext": []
+        },
+        {
+          "no": 54, "word": "fold", "freq": 1, "page": 74,
+          "prons": [{"ipa": "/fəʊld/", "senses": [
+            {"pos": "v.", "mean": "[[折叠]]；[[交叉]]；[[倒闭]]；[[包裹]]"},
+            {"pos": "n.", "mean": "[[褶皱]]；[[山谷]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "父亲（f）老了（old），脸上有褶皱（fold）了。"},
+          "ex": {"type": "例", "en": "Fold the paper in half.", "zh": "把纸对折起来。", "key": ["Fold"]},
+          "ext": []
+        }
+      ]
+    }
+  ]
+}
