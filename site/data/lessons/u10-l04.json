@@ -1,0 +1,606 @@
+{
+  "id": "u10-l04",
+  "part": 1,
+  "unit": 10,
+  "lesson": 4,
+  "pages": [301, 307],
+  "groups": [
+    {
+      "no": 17,
+      "title": "“谨慎”相关",
+      "pages": [301, 302],
+      "map": {
+        "w": "“谨慎”相关",
+        "children": [
+          {"w": "caution", "children": [
+            {"w": "cautious", "rel": "扩"},
+            {"w": "precaution", "rel": "形近", "children": [{"w": "precautionary", "rel": "扩"}]}
+          ]},
+          {"w": "aware", "children": [
+            {"w": "awareness", "rel": "扩"},
+            {"w": "alert", "rel": "相关", "children": [{"w": "warning", "rel": "近义"}]},
+            {"w": "conscious", "rel": "近义", "children": [
+              {"w": "consciousness", "rel": "扩"},
+              {"w": "conscience", "rel": "形近"}
+            ]}
+          ]},
+          {"w": "perceive", "children": [
+            {"w": "perception", "rel": "扩", "children": [{"w": "perceptive"}]},
+            {"w": "deceive", "rel": "形近", "children": [
+              {"w": "deceit", "rel": "扩"},
+              {"w": "deception", "rel": "扩"},
+              {"w": "deceptive", "rel": "扩"},
+              {"w": "cheat", "rel": "近义"}
+            ]},
+            {"w": "receive", "rel": "形近", "children": [
+              {"w": "receipt", "rel": "形近", "children": [
+                {"w": "receptive", "rel": "扩"},
+                {"w": "recipient", "rel": "扩"}
+              ]},
+              {"w": "receptionist", "rel": "相关", "children": [{"w": "reception", "rel": "扩"}]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "caution", "freq": 1, "page": 301,
+          "prons": [{"ipa": "/ˈkɔːʃn/", "senses": [
+            {"pos": "n.", "mean": "[[小心，谨慎]]"},
+            {"pos": "v.", "mean": "[[警告，劝……小心]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“靠心”→ 人要依靠良心做事，态度需“谨慎”。"},
+          "ex": {"type": "例", "en": "Statistics should be treated with caution.", "zh": "对待统计数字要小心。", "key": ["caution"]},
+          "ext": [{"word": "cautious", "ipa": "/ˈkɔːʃəs/", "senses": [{"pos": "adj.", "mean": "谨慎的，小心的"}]}]
+        },
+        {
+          "no": 2, "word": "precaution", "freq": 1, "page": 301,
+          "prons": [{"ipa": "/prɪˈkɔːʃn/", "senses": [{"pos": "n.", "mean": "[[预防措施]]；[[防备]]"}]}],
+          "tip": {"type": "构词", "text": "pre-（提前）+ caution（小心）→ 预防措施"},
+          "ex": {"type": "例", "en": "I hope all the precautions against air pollution will be seriously considered here.", "zh": "我希望在这里能认真考虑所有抵御空气污染的预防措施。", "key": ["precautions"]},
+          "ext": [{"word": "precautionary", "ipa": "/prɪˈkɔːʃənəri/", "senses": [{"pos": "adj.", "mean": "预先警戒的；小心的"}]}]
+        },
+        {
+          "no": 3, "word": "warning", "freq": 1, "page": 301,
+          "prons": [{"ipa": "/ˈwɔːnɪŋ/", "senses": [{"pos": "n.", "mean": "[[警告，警示]]；先兆"}]}],
+          "tip": {"type": "构词", "text": "warn（警告）+ -ing（名词后缀）→ 警告，警示"},
+          "ex": {"type": "例", "en": "The driver annoyed after receiving continuous warnings.", "zh": "该司机在连续收到警告后感到恼火。", "key": ["warnings"]},
+          "ext": []
+        },
+        {
+          "no": 4, "word": "aware", "freq": 3, "page": 301,
+          "prons": [{"ipa": "/əˈweə(r)/", "senses": [{"pos": "adj.", "mean": "[[知道]]；[[发觉]]；[[意识到]]"}]}],
+          "tip": {"type": "联想", "text": "a（一）+ war（战争）+ e（字母音似“姨”）→ 一场战争让阿姨“意识到”和平的生活有多可贵。"},
+          "ex": {"type": "真", "year": 2020, "en": "They are less aware of the value of their money.", "zh": "他们很少意识到钱的价值。", "key": ["aware of"]},
+          "ext": [{"word": "awareness", "ipa": "/əˈweənəs/", "senses": [{"pos": "n.", "mean": "知道；认识；意识"}]}]
+        },
+        {
+          "no": 5, "word": "alert", "freq": 3, "page": 301,
+          "prons": [{"ipa": "/əˈlɜːt/", "senses": [
+            {"pos": "adj.", "mean": "[[警觉的]]；[[警惕的]]；[[意识到]]；[[注意到]]"},
+            {"pos": "v.", "mean": "[[向……报警]]；[[使警觉]]"},
+            {"pos": "n.", "mean": "[[警戒]]；[[戒备]]；[[警报]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "a（一）+ ler（音似“乐”）+ t（联想“他”）→ 他一直情绪低落，今天突然乐起来，我们要对他突然变化的精神状态保持警惕 → 警惕的"},
+          "ex": {"type": "真", "year": 2022, "en": "We are able to issue alerts about the latest threats they should be aware of.", "zh": "我们能够就他们应注意的最新威胁发出警报。", "key": ["alerts"]},
+          "ext": []
+        },
+        {
+          "no": 6, "word": "conscious", "freq": 2, "page": 302,
+          "prons": [{"ipa": "/ˈkɒnʃəs/", "senses": [{"pos": "adj.", "mean": "[[意识到的]]；[[有意识的]]；[[有意的]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“靠心的”→ 靠心去感应，去思考 → 意识到的；有意识的"},
+          "ex": {"type": "真", "year": 2023, "en": "This environmentally conscious product will save millions of liters of water a year.", "zh": "这种具有环保意识的产品每年将节省数百万升水。", "key": ["conscious"]},
+          "ext": [{"word": "consciousness", "ipa": "/ˈkɒnʃəsnəs/", "senses": [{"pos": "n.", "mean": "意识，觉悟；知觉"}]}]
+        },
+        {
+          "no": 7, "word": "conscience", "freq": 1, "page": 302,
+          "prons": [{"ipa": "/ˈkɒnʃəns/", "senses": [{"pos": "n.", "mean": "[[良知，良心]]"}]}],
+          "tip": {"type": "联想", "text": "con-（所有）+ science（科学）→ 我们希望所有懂科学的人都是有“良知”的，为人类谋福利。"},
+          "ex": {"type": "例", "en": "This is an issue of equality, opportunity and national conscience.", "zh": "这是一个关于平等、机会和国家良知的问题。", "key": ["conscience"]},
+          "ext": []
+        },
+        {
+          "no": 8, "word": "perceive", "freq": 2, "page": 302,
+          "prons": [{"ipa": "/pəˈsiːv/", "senses": [{"pos": "v.", "mean": "[[察觉到]]；[[注意到]]；[[意识到]]；[[理解]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“破媳妇”→ 他“察觉到”媳妇的衣服破了个洞。"},
+          "ex": {"type": "例", "en": "I perceived a change in his behaviour.", "zh": "我注意到他举止有些改变。", "key": ["perceived"]},
+          "ext": [
+            {"word": "perception", "ipa": "/pəˈsepʃn/", "senses": [{"pos": "n.", "mean": "知觉，感知；洞察力；认识，看法"}]},
+            {"word": "perceptive", "ipa": "/pəˈseptɪv/", "senses": [{"pos": "adj.", "mean": "理解力强的；有洞察力的；观察敏锐的"}]}
+          ]
+        },
+        {
+          "no": 9, "word": "deceive", "freq": 1, "page": 302,
+          "prons": [{"ipa": "/dɪˈsiːv/", "senses": [{"pos": "v.", "mean": "[[欺骗]]，[[蒙骗]]，[[诓骗]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“弟媳妇”→ 这部电影里，主角的弟媳妇是个骗子，“欺骗”了弟弟。"},
+          "ex": {"type": "例", "en": "She deceived him into handing over all his savings.", "zh": "她骗他交出了所有的积蓄。", "key": ["deceived", "into"]},
+          "ext": [
+            {"word": "deceit", "ipa": "/dɪˈsiːt/", "senses": [{"pos": "n.", "mean": "欺骗，欺诈"}]},
+            {"word": "deception", "ipa": "/dɪˈsepʃn/", "senses": [{"pos": "n.", "mean": "欺骗（行为）"}]},
+            {"word": "deceptive", "ipa": "/dɪˈseptɪv/", "senses": [{"pos": "adj.", "mean": "欺骗性的；误导的"}]}
+          ]
+        },
+        {
+          "no": 10, "word": "cheat", "freq": 1, "page": 302,
+          "prons": [{"ipa": "/tʃiːt/", "senses": [{"pos": "v.", "mean": "[[欺骗]]；[[作弊]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“欺他”→ 人们“欺骗”了他。"},
+          "ex": {"type": "例", "en": "If he thinks he can cheat me, just let him try!", "zh": "要是他以为能够骗过我，就让他来试一下吧！", "key": ["cheat"]},
+          "ext": []
+        },
+        {
+          "no": 11, "word": "receive", "freq": 1, "page": 302,
+          "prons": [{"ipa": "/rɪˈsiːv/", "senses": [{"pos": "v.", "mean": "[[收到，接到]]；[[遭受]]；[[接见]]"}]}],
+          "tip": {"type": "联想", "text": "re（字母音似“阿姨”）+ ceive（音似“媳妇”）→ 阿姨从车站“接到”了她的儿媳妇。"},
+          "ex": {"type": "真", "year": 2023, "en": "Farmers ring up to receive the information.", "zh": "农民们打电话来接收信息。", "key": ["receive"]},
+          "ext": []
+        },
+        {
+          "no": 12, "word": "receipt", "freq": 1, "page": 302,
+          "prons": [{"ipa": "/rɪˈsiːt/", "senses": [{"pos": "n.", "mean": "[[发票，收据]]；[[收入]]"}]}],
+          "tip": {"type": "对照", "text": "他收到（receive）了收据（receipt）。"},
+          "ex": {"type": "例", "en": "Can I have a receipt, please?", "zh": "请给我开个收据，好吗？", "key": ["receipt"]},
+          "ext": [
+            {"word": "receptive", "ipa": "/rɪˈseptɪv/", "senses": [{"pos": "adj.", "mean": "愿意倾听的，乐于接受的"}]},
+            {"word": "recipient", "ipa": "/rɪˈsɪpiənt/", "senses": [{"pos": "n.", "mean": "受方；接受者"}]}
+          ]
+        },
+        {
+          "no": 13, "word": "receptionist", "freq": 1, "page": 302,
+          "prons": [{"ipa": "/rɪˈsepʃənɪst/", "senses": [{"pos": "n.", "mean": "[[接待员]]"}]}],
+          "tip": {"type": "构词", "text": "reception（接待）+ -ist（表示人的后缀）→ 接待员"},
+          "ex": {"type": "例", "en": "The hotel receptionist must make sure that guests are registered correctly.", "zh": "酒店接待员必须确保客人正确登记。", "key": ["receptionist"]},
+          "ext": [{"word": "reception", "ipa": "/rɪˈsepʃn/", "senses": [{"pos": "n.", "mean": "接待处；接待仪式；反应；接待"}]}]
+        }
+      ]
+    },
+    {
+      "no": 18,
+      "title": "“相似的”相关",
+      "pages": [303, 304],
+      "map": {
+        "w": "“相似的”相关",
+        "children": [
+          {"w": "resemble", "children": [
+            {"w": "assemble", "rel": "形近", "children": [{"w": "assembly", "rel": "扩"}]}
+          ]},
+          {"w": "symbol", "children": [
+            {"w": "symbolic", "rel": "扩"},
+            {"w": "sympathy", "rel": "形近", "children": [
+              {"w": "sympathetic", "rel": "扩"},
+              {"w": "sympathise", "rel": "扩"},
+              {"w": "mercy", "rel": "相关", "children": [{"w": "merciful", "rel": "扩"}]}
+            ]},
+            {"w": "symptom", "rel": "形近"},
+            {"w": "badge", "rel": "近义"}
+          ]},
+          {"w": "likewise", "children": [
+            {"w": "wise", "rel": "形近", "children": [
+              {"w": "wisdom", "rel": "扩"},
+              {"w": "wit", "rel": "相关", "children": [{"w": "witty", "rel": "扩"}]},
+              {"w": "insane", "rel": "相关", "children": [{"w": "insanity", "rel": "扩"}]}
+            ]},
+            {"w": "clockwise", "rel": "形近"},
+            {"w": "alike", "rel": "近义"}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 14, "word": "resemble", "freq": 1, "page": 303,
+          "prons": [{"ipa": "/rɪˈzembl/", "senses": [{"pos": "v.", "mean": "[[类似于]]；[[像]]；[[看起来像]]"}]}],
+          "tip": {"type": "联想", "text": "re-（重复）+ sem（联想 same）+ ble → 重复同样的 → 像；看起来像"},
+          "ex": {"type": "例", "en": "She closely resembles her sister.", "zh": "她和她姐姐很像。", "key": ["resembles"]},
+          "ext": []
+        },
+        {
+          "no": 15, "word": "assemble", "freq": 1, "page": 303,
+          "prons": [{"ipa": "/əˈsembl/", "senses": [{"pos": "v.", "mean": "[[集合，聚集]]；[[组装]]"}]}],
+          "tip": {"type": "联想", "text": "as-（一再地）+ sem（联想 same）+ ble → 一再地相似 → 相似的都在一起 → 集合，聚集"},
+          "ex": {"type": "真", "year": 2016, "en": "It assembles super-intelligent robots.", "zh": "它组装超级智能机器人。", "key": ["assembles"]},
+          "ext": [{"word": "assembly", "ipa": "/əˈsembli/", "senses": [{"pos": "n.", "mean": "会议；议会；集会；装配"}]}]
+        },
+        {
+          "no": 16, "word": "sympathy", "freq": 2, "page": 303,
+          "prons": [{"ipa": "/ˈsɪmpəθi/", "senses": [{"pos": "n.", "mean": "[[同情]]；[[赞同]]；[[支持]]"}]}],
+          "tip": {"type": "联想", "text": "sym（音似 same）+ path（道路）+ y → 同道中人最能相互“同情”。"},
+          "ex": {"type": "例", "en": "Our heartfelt sympathy goes out to the victims of the war.", "zh": "我们对战争的受害者表示由衷的同情。", "key": ["sympathy"]},
+          "ext": [
+            {"word": "sympathetic", "ipa": "/ˌsɪmpəˈθetɪk/", "senses": [{"pos": "adj.", "mean": "同情的；赞同的"}]},
+            {"word": "sympathise", "alt": "-ize", "ipa": "/ˈsɪmpəθaɪz/", "senses": [{"pos": "v.", "mean": "同情；赞同；支持"}]}
+          ]
+        },
+        {
+          "no": 17, "word": "mercy", "freq": 1, "page": 303,
+          "prons": [{"ipa": "/ˈmɜːsi/", "senses": [{"pos": "n.", "mean": "[[仁慈]]；[[幸运]]，[[恩惠]]"}]}],
+          "tip": {"type": "联想", "text": "me（我）+ rcy（联想 cry）→ 她是一个“仁慈”的人，因同情我的遭遇而落泪。"},
+          "ex": {"type": "例", "en": "It's a mercy she wasn't seriously hurt.", "zh": "幸运的是她伤势不重。", "key": ["mercy"]},
+          "ext": [{"word": "merciful", "ipa": "/ˈmɜːsɪfl/", "senses": [{"pos": "adj.", "mean": "仁慈的；宽大的"}]}]
+        },
+        {
+          "no": 18, "word": "symptom", "freq": 2, "page": 303,
+          "prons": [{"ipa": "/ˈsɪmptəm/", "senses": [{"pos": "n.", "mean": "[[征兆]]；[[特征]]；（[[医]]）[[症状]]"}]}],
+          "tip": {"type": "联想", "text": "sym（音似 same）+ p + tom（音似“童木”）→ 他和阿童木有同样的“特征”。"},
+          "ex": {"type": "真", "year": 2021, "en": "Many women say their physicians sometimes don't even recognize the symptoms.", "zh": "许多女性表示，她们的医生有时甚至无法识别这些症状。", "key": ["symptoms"]},
+          "ext": []
+        },
+        {
+          "no": 19, "word": "symbol", "freq": 1, "page": 303,
+          "prons": [{"ipa": "/ˈsɪmbl/", "senses": [{"pos": "n.", "mean": "[[符号，记号]]；[[标记]]；[[标志，象征]]"}]}],
+          "tip": {"type": "联想", "text": "sym（音似 same）+ bol（联想 ball）→ 他用相同的球做“标记”。"},
+          "ex": {"type": "例", "en": "The new school stands as a symbol of hope for a better future.", "zh": "这所新学校象征着对更美好的未来的希望。", "key": ["symbol of"]},
+          "ext": [{"word": "symbolic", "ipa": "/sɪmˈbɒlɪk/", "senses": [{"pos": "adj.", "mean": "使用象征的；作为象征的；象征性的"}]}]
+        },
+        {
+          "no": 20, "word": "badge", "freq": 1, "page": 304,
+          "prons": [{"ipa": "/bædʒ/", "senses": [{"pos": "n.", "mean": "[[徽章]]；[[标记]]；[[象征]]"}]}],
+          "tip": {"type": "联想", "text": "bad（坏的）+ ge（联想“哥”）→ 做了坏事的哥哥被没收了“徽章”。"},
+          "ex": {"type": "例", "en": "Today, consulting for five businesses at the same time is a badge of honor.", "zh": "如今，同时为五家企业提供咨询是一种荣誉的象征。", "key": ["badge"]},
+          "ext": []
+        },
+        {
+          "no": 21, "word": "likewise", "freq": 2, "page": 304,
+          "prons": [{"ipa": "/ˈlaɪkwaɪz/", "senses": [{"pos": "adv.", "mean": "[[相似地]]；[[相同地]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The method works for English, and likewise for French.", "zh": "这种方法适用于英语，同样也适用于法语。", "key": ["likewise"]},
+          "ext": []
+        },
+        {
+          "no": 22, "word": "wise", "freq": 1, "page": 304,
+          "prons": [{"ipa": "/waɪz/", "senses": [{"pos": "adj.", "mean": "[[明智的]]，[[高明的]]"}]}],
+          "tip": {"type": "联想", "text": "wi（联想 we）+ se（联想“蛇”）→ 我们没有打草惊蛇，作出的决定是非常“明智的”。"},
+          "ex": {"type": "真", "year": 2022, "en": "She doesn't think it wise to pay before attending any class.", "zh": "她认为先交钱再上课是不明智的。", "key": ["wise"]},
+          "ext": [{"word": "wisdom", "ipa": "/ˈwɪzdəm/", "senses": [{"pos": "n.", "mean": "智慧；明智；知识，学问"}]}]
+        },
+        {
+          "no": 23, "word": "alike", "freq": 1, "page": 304,
+          "prons": [{"ipa": "/əˈlaɪk/", "senses": [
+            {"pos": "adj.", "mean": "[[相似的]]，[[相像的]]"},
+            {"pos": "adv.", "mean": "[[相似地]]，[[相像地]]；[[同样都]]"}
+          ]}],
+          "tip": {"type": "构词", "text": "a-（表加强）+ like（像）→ 相似地"},
+          "ex": {"type": "例", "en": "Good management benefits employers and employees alike.", "zh": "良好的管理对雇主和雇员同样有利。", "key": ["alike"]},
+          "ext": []
+        },
+        {
+          "no": 24, "word": "clockwise", "freq": 1, "page": 304,
+          "prons": [{"ipa": "/ˈklɒkwaɪz/", "senses": [{"pos": "adv. & adj.", "mean": "[[顺时针方向（的）]]"}]}],
+          "tip": {"type": "构词", "text": "clock（时钟）+ -wise（表方向）→ 钟表指针转动方向 → 顺时针方向（的）"},
+          "ex": {"type": "例", "en": "He walked clockwise on the playground.", "zh": "他在操场上按顺时针方向走。", "key": ["clockwise"]},
+          "ext": []
+        },
+        {
+          "no": 25, "word": "insane", "freq": 1, "page": 304,
+          "prons": [{"ipa": "/ɪnˈseɪn/", "senses": [{"pos": "adj.", "mean": "[[精神失常的]]；[[荒唐的]]；[[疯狂的]]"}]}],
+          "tip": {"type": "联想", "text": "in-（否定前缀）+ sane（音似“神”）→ 心神不宁，心智不全 → 精神失常的"},
+          "ex": {"type": "例", "en": "She was driving me insane with her constant chatter.", "zh": "她唠叨个没完，快把我逼得精神失常了。", "key": ["insane"]},
+          "ext": [{"word": "insanity", "ipa": "/ɪnˈsænəti/", "senses": [{"pos": "n.", "mean": "精神失常，精神错乱；精神病；荒唐的行为"}]}]
+        },
+        {
+          "no": 26, "word": "wit", "freq": 1, "page": 304,
+          "prons": [{"ipa": "/wɪt/", "senses": [{"pos": "n.", "mean": "[[风趣]]；[[机智]]，[[理解力]]"}]}],
+          "tip": {"type": "对照", "text": "智慧（wisdom）与理解力（wit）密不可分。"},
+          "ex": {"type": "例", "en": "The game was a long battle of wits.", "zh": "这场游戏是长时间的斗智。", "key": ["wits"]},
+          "ext": [{"word": "witty", "ipa": "/ˈwɪti/", "senses": [{"pos": "adj.", "mean": "言辞诙谐的；巧妙的；妙趣横生的；机智的"}]}]
+        }
+      ]
+    },
+    {
+      "no": 19,
+      "title": "“宽广”相关",
+      "pages": [304, 306],
+      "map": {
+        "w": "“宽广”相关",
+        "children": [
+          {"w": "broad", "children": [
+            {"w": "broaden", "rel": "扩", "children": [{"w": "breadth"}]},
+            {"w": "abroad", "rel": "形近", "children": [{"w": "overseas", "rel": "近义"}]},
+            {"w": "board", "rel": "形近", "children": [{"w": "panel", "rel": "相关"}]},
+            {"w": "aboard", "rel": "形近"}
+          ]},
+          {"w": "wide", "children": [
+            {"w": "width", "rel": "扩"},
+            {"w": "wild", "rel": "形近", "children": [{"w": "wilderness", "rel": "扩"}]},
+            {"w": "deep", "rel": "相关", "children": [
+              {"w": "depth", "rel": "扩"},
+              {"w": "deeply", "rel": "扩"}
+            ]},
+            {"w": "height", "rel": "相关", "children": [
+              {"w": "heighten", "rel": "扩", "children": [{"w": "lengthen", "rel": "相关"}]}
+            ]},
+            {"w": "weight", "rel": "相关", "children": [{"w": "weigh", "rel": "扩"}]}
+          ]},
+          {"w": "measure", "children": [
+            {"w": "measurement", "rel": "扩", "children": [{"w": "measurable"}]},
+            {"w": "centimetre", "rel": "相关", "children": [
+              {"w": "kilometre", "children": [
+                {"w": "billion", "children": [{"w": "billionaire", "rel": "扩"}]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 27, "word": "broad", "freq": 1, "page": 305,
+          "prons": [{"ipa": "/brɔːd/", "senses": [{"pos": "adj.", "mean": "[[宽阔的]]；[[广泛的]]；[[普遍的]]"}]}],
+          "tip": {"type": "联想", "text": "b（联想 big）+ road（路）→ 大路是“宽阔的”。"},
+          "ex": {"type": "例", "en": "He's got broad shoulders.", "zh": "他的肩很宽。", "key": ["broad"]},
+          "ext": [
+            {"word": "broaden", "ipa": "/ˈbrɔːdn/", "senses": [{"pos": "v.", "mean": "变宽；（使）扩大影响；增长（经验、知识等）"}]},
+            {"word": "breadth", "ipa": "/bredθ/", "senses": [{"pos": "n.", "mean": "宽度"}]}
+          ]
+        },
+        {
+          "no": 28, "word": "abroad", "freq": 1, "page": 305,
+          "prons": [{"ipa": "/əˈbrɔːd/", "senses": [{"pos": "adv.", "mean": "[[到国外]]，[[在国外]]"}]}],
+          "tip": {"type": "联想", "text": "a-（一）+ broad（宽阔的）→ 他“在国外”旅游，正走在一条宽阔的道路上。"},
+          "ex": {"type": "真", "year": 2016, "en": "She is abroad on business.", "zh": "她在国外出差。", "key": ["abroad"]},
+          "ext": []
+        },
+        {
+          "no": 29, "word": "overseas", "freq": 3, "page": 305,
+          "prons": [{"ipa": "/ˌəʊvəˈsiːz/", "senses": [
+            {"pos": "adj.", "mean": "[[海外的]]"},
+            {"pos": "adv.", "mean": "[[在海外]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The firm is expanding into overseas markets.", "zh": "该公司正在向海外市场扩张。", "key": ["overseas"]},
+          "ext": []
+        },
+        {
+          "no": 30, "word": "board", "freq": 1, "page": 305,
+          "prons": [{"ipa": "/bɔːd/", "senses": [
+            {"pos": "n.", "mean": "[[木板]]；[[董事会]]；[[伙食（尤指付费的）]]"},
+            {"pos": "v.", "mean": "[[登上（船、飞机等）]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "黑板（blackboard）就是黑色的（black）木板（board）。"},
+          "ex": {"type": "真", "year": 2016, "en": "Some employees found the board motivating.", "zh": "一些员工发现董事会具有激励作用。", "key": ["board"]},
+          "ext": []
+        },
+        {
+          "no": 31, "word": "aboard", "freq": 1, "page": 305,
+          "prons": [{"ipa": "/əˈbɔːd/", "senses": [{"pos": "adv. & prep.", "mean": "[[在（船、飞机、火车等）上]]；[[上（船、飞机、火车等）]]"}]}],
+          "tip": {"type": "构词", "text": "a-（= on，在……上）+ board（木板）→ 上（船、飞机、火车等）"},
+          "ex": {"type": "例", "en": "The captain welcomed everyone aboard.", "zh": "船长欢迎所有人登船。", "key": ["aboard"]},
+          "ext": []
+        },
+        {
+          "no": 32, "word": "panel", "freq": 2, "page": 305,
+          "prons": [{"ipa": "/ˈpænl/", "senses": [{"pos": "n.", "mean": "[[专家咨询组]]；[[嵌板]]；[[控制板]]；[[仪表盘]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“拍喽”→ 能给这件事拍板的人 → 专家咨询组"},
+          "ex": {"type": "真", "year": 2018, "en": "They agreed to cover the entire building in solar panels.", "zh": "他们同意用太阳能电池板覆盖整座建筑。", "key": ["panels"]},
+          "ext": []
+        },
+        {
+          "no": 33, "word": "depth", "freq": 1, "page": 305,
+          "prons": [{"ipa": "/depθ/", "senses": [{"pos": "n.", "mean": "[[向下的距离]]；[[深（度）]]；[[纵深]]"}]}],
+          "tip": {"type": "构词", "text": "de(e)p（深的）+ -th（名词后缀）→ 深度"},
+          "ex": {"type": "真", "year": 2021, "en": "We must continually explore the depths of our species' linguistic diversity.", "zh": "我们必须不断探索我们物种语言多样性的深度。", "key": ["depths"]},
+          "ext": [
+            {"word": "deep", "ipa": "/diːp/", "senses": [
+              {"pos": "adj.", "mean": "深的；深刻的"},
+              {"pos": "adv.", "mean": "深深地"}
+            ]},
+            {"word": "deeply", "ipa": "/ˈdiːpli/", "senses": [{"pos": "adv.", "mean": "很，非常；深深地，强烈地"}]}
+          ]
+        },
+        {
+          "no": 34, "word": "height", "freq": 1, "page": 305,
+          "prons": [{"ipa": "/haɪt/", "senses": [{"pos": "n.", "mean": "（人或物的）[[身高]]；[[高度]]；[[最强点]]，[[顶点]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Please state your height and weight.", "zh": "请说明你的身高和体重。", "key": ["height"]},
+          "ext": [{"word": "heighten", "ipa": "/ˈhaɪtn/", "senses": [{"pos": "v.", "mean": "（使）加强，提高，增加"}]}]
+        },
+        {
+          "no": 35, "word": "weight", "freq": 1, "page": 305,
+          "prons": [{"ipa": "/weɪt/", "senses": [
+            {"pos": "n.", "mean": "[[重量]]；[[体重]]；[[重担]]；[[重压]]"},
+            {"pos": "v.", "mean": "[[使加权]]；[[使负重]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“喂他”→ 他的父母不停地喂他吃东西，导致他的“体重”日渐增加。"},
+          "ex": {"type": "真", "year": 2021, "en": "Choosing what to eat and drink is key to weight control.", "zh": "选择吃什么和喝什么是控制体重的关键。", "key": ["weight"]},
+          "ext": [{"word": "weigh", "ipa": "/weɪ/", "senses": [{"pos": "v.", "mean": "有……重；称重量；权衡"}]}]
+        },
+        {
+          "no": 36, "word": "wide", "freq": 1, "page": 305,
+          "prons": [{"ipa": "/waɪd/", "senses": [{"pos": "adj.", "mean": "[[宽的，宽阔的]]；[[广泛的]]"}]}],
+          "tip": {"type": "联想", "text": "wi（联想 we）+ de（联想“的”）→ 我们的心胸是“宽阔的”。"},
+          "ex": {"type": "例", "en": "The river gets quite wide here.", "zh": "河流在此段变得很宽。", "key": ["wide"]},
+          "ext": []
+        },
+        {
+          "no": 37, "word": "width", "freq": 1, "page": 305,
+          "prons": [{"ipa": "/wɪdθ; wɪtθ/", "senses": [{"pos": "n.", "mean": "[[宽度]]；[[广度]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The carpet is available in different widths.", "zh": "这款地毯有各种宽度可供选择。", "key": ["widths"]},
+          "ext": []
+        },
+        {
+          "no": 38, "word": "wild", "freq": 1, "page": 306,
+          "prons": [{"ipa": "/waɪld/", "senses": [
+            {"pos": "adj.", "mean": "[[野生的]]，[[野外的]]；[[狂热的]]；[[荒芜的]]"},
+            {"pos": "n.", "mean": "[[野生环境]]；[[偏远地区]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "wil（联想 will）+ d（联想“的”）→ 我们将要开始“野外的”冒险之旅。"},
+          "ex": {"type": "真", "year": 2021, "en": "Climate change has little effect on the lives of wild ducks.", "zh": "气候变化对野鸭的生活几乎没有影响。", "key": ["wild"]},
+          "ext": [{"word": "wilderness", "ipa": "/ˈwɪldənəs/", "senses": [{"pos": "n.", "mean": "荒野"}]}]
+        },
+        {
+          "no": 39, "word": "lengthen", "freq": 1, "page": 306,
+          "prons": [{"ipa": "/ˈleŋ(k)θən/", "senses": [{"pos": "v.", "mean": "[[延长]]，[[加长]]"}]}],
+          "tip": {"type": "构词", "text": "length（长度）+ -en（动词后缀）→ 使……变长 → 延长，加长"},
+          "ex": {"type": "例", "en": "Healthy habits can effectively lengthen people's life expectancy.", "zh": "健康的习惯能有效延长人的预期寿命。", "key": ["lengthen"]},
+          "ext": []
+        },
+        {
+          "no": 40, "word": "measure", "freq": 1, "page": 306,
+          "prons": [{"ipa": "/ˈmeʒə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[措施]]；[[计量单位]]；程度，标准"},
+            {"pos": "v.", "mean": "[[测量]]；[[度量]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The office asked for the public's help to measure their speed results.", "zh": "办公室请求公众帮助测量他们的速度结果。", "key": ["measure"]},
+          "ext": [
+            {"word": "measurement", "ipa": "/ˈmeʒəmənt/", "senses": [{"pos": "n.", "mean": "测量；度量；（某物的）尺寸"}]},
+            {"word": "measurable", "ipa": "/ˈmeʒərəbl/", "senses": [{"pos": "adj.", "mean": "可测量的"}]}
+          ]
+        },
+        {
+          "no": 41, "word": "centimetre", "alt": "-ter", "freq": 1, "page": 306,
+          "prons": [{"ipa": "/ˈsentɪmiːtə(r)/", "senses": [{"pos": "n.", "mean": "[[厘米]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The shrimps grow from their original 1 millimetre to a length of about 1.5 centimetres.", "zh": "虾从原来的1毫米长到大约1.5厘米的长度。", "key": ["centimetres"]},
+          "ext": []
+        },
+        {
+          "no": 42, "word": "kilometre", "alt": "-ter", "freq": 1, "page": 306,
+          "prons": [{"ipa": "/ˈkɪləmiːtə(r)/", "senses": [{"pos": "n.", "mean": "[[千米]]；[[公里]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "She had been driving at 110 kilometres per hour.", "zh": "她一直以每小时110千米的速度行驶。", "key": ["kilometres"]},
+          "ext": []
+        },
+        {
+          "no": 43, "word": "billion", "freq": 1, "page": 306,
+          "prons": [{"ipa": "/ˈbɪljən/", "senses": [{"pos": "num.", "mean": "[[十亿]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Textbooks represent an 11 billion dollar industry.", "zh": "教科书行业价值110亿美元。", "key": ["billion"]},
+          "ext": [{"word": "billionaire", "ipa": "/ˌbɪljəˈneə(r)/", "senses": [{"pos": "n.", "mean": "巨富；亿万富翁"}]}]
+        }
+      ]
+    },
+    {
+      "no": 20,
+      "title": "“逻辑关系”相关",
+      "pages": [306, 307],
+      "map": {
+        "w": "“逻辑关系”相关",
+        "children": [
+          {"w": "former", "children": [{"w": "later", "rel": "反义"}]},
+          {"w": "meanwhile", "children": [{"w": "meantime", "rel": "近义"}]},
+          {"w": "whereas", "children": [{"w": "nevertheless", "rel": "近义"}]},
+          {"w": "unless", "children": [{"w": "otherwise", "rel": "相关"}]},
+          {"w": "else", "children": [{"w": "elsewhere", "rel": "合成"}]},
+          {"w": "therefore", "children": [
+            {"w": "thereby", "rel": "近义"},
+            {"w": "thus", "rel": "近义"}
+          ]},
+          {"w": "moreover", "children": [{"w": "furthermore", "rel": "近义"}]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 44, "word": "former", "freq": 3, "page": 306,
+          "prons": [{"ipa": "/ˈfɔːmə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[前者]]"},
+            {"pos": "adj.", "mean": "[[以前的]]；（[[两者中]]）[[前者的]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "She is my former employee.", "zh": "她是我的前员工。", "key": ["former"]},
+          "ext": []
+        },
+        {
+          "no": 45, "word": "later", "freq": 1, "page": 306,
+          "prons": [{"ipa": "/ˈleɪtə(r)/", "senses": [
+            {"pos": "adv.", "mean": "[[后来]]，[[随后]]"},
+            {"pos": "adj.", "mean": "[[后来的]]；[[以后的]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2021, "en": "This might present problems for young people later on.", "zh": "这可能会在以后给年轻人带来问题。", "key": ["later"]},
+          "ext": []
+        },
+        {
+          "no": 46, "word": "meanwhile", "freq": 1, "page": 306,
+          "prons": [{"ipa": "/ˈmiːnwaɪl/", "senses": [{"pos": "adv.", "mean": "[[在此期间]]，[[同时]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2016, "en": "Meanwhile, it is also the most practiced art form in the world.", "zh": "同时，它也是世界上得到最广泛实践的艺术形式。", "key": ["Meanwhile"]},
+          "ext": []
+        },
+        {
+          "no": 47, "word": "meantime", "freq": 1, "page": 306,
+          "prons": [{"ipa": "/ˈmiːntaɪm/", "senses": [{"pos": "n. & adv.", "mean": "[[其间]]，[[同时]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "My first novel was rejected. In the meantime I had written a play.", "zh": "我的第一部小说遭到拒绝。同时，我又完成了一部戏剧。", "key": ["In the meantime"]},
+          "ext": []
+        },
+        {
+          "no": 48, "word": "whereas", "freq": 3, "page": 307,
+          "prons": [{"ipa": "/ˌweərˈæz/", "senses": [{"pos": "conj.", "mean": "[[然而]]，[[但是]]，[[尽管]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "We thought she was arrogant, whereas in fact she was just very shy.", "zh": "我们认为她傲慢，然而事实上她只是非常害羞。", "key": ["whereas"]},
+          "ext": []
+        },
+        {
+          "no": 49, "word": "unless", "freq": 1, "page": 307,
+          "prons": [{"ipa": "/ənˈles/", "senses": [{"pos": "conj.", "mean": "[[除非]]；[[若非]]，[[如果不]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2019, "en": "They can't function unless exposed to sunlight.", "zh": "除非暴露在阳光下，否则它们无法正常工作。", "key": ["unless"]},
+          "ext": []
+        },
+        {
+          "no": 50, "word": "nevertheless", "freq": 2, "page": 307,
+          "prons": [{"ipa": "/ˌnevəðəˈles/", "senses": [{"pos": "adv.", "mean": "[[尽管如此]]；[[不过]]；[[然而]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "What you said was true. It was, nevertheless, a little unkind.", "zh": "你说的都是实话，只不过有点刻薄。", "key": ["nevertheless"]},
+          "ext": []
+        },
+        {
+          "no": 51, "word": "else", "freq": 1, "page": 307,
+          "prons": [{"ipa": "/els/", "senses": [{"pos": "adv.", "mean": "[[其他的]]，[[别的]]；[[另外的]]；[[不同的]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2020, "en": "How can you quantify a person's boredom level and compare it with someone else's?", "zh": "你如何量化一个人的无聊程度，并与其他人的无聊程度进行比较？", "key": ["else's"]},
+          "ext": []
+        },
+        {
+          "no": 52, "word": "elsewhere", "freq": 1, "page": 307,
+          "prons": [{"ipa": "/ˌelsˈweə(r)/", "senses": [{"pos": "adv.", "mean": "[[在别处]]；[[去别处]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2019, "en": "If the destruction is extreme, mail addressed to the area will get sent elsewhere.", "zh": "如果破坏严重，寄往该地区的邮件将被发送到别处。", "key": ["elsewhere"]},
+          "ext": []
+        },
+        {
+          "no": 53, "word": "otherwise", "freq": 3, "page": 307,
+          "prons": [{"ipa": "/ˈʌðəwaɪz/", "senses": [{"pos": "adv.", "mean": "[[否则]]；另外；[[在其他方面]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2016, "en": "It keeps many otherwise qualified women off the runway.", "zh": "这让许多其他方面合格的女性无法走上T台。", "key": ["otherwise"]},
+          "ext": []
+        },
+        {
+          "no": 54, "word": "therefore", "freq": 3, "page": 307,
+          "prons": [{"ipa": "/ˈðeəfɔː(r)/", "senses": [{"pos": "adv.", "mean": "[[因此]]，[[所以]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "He's only 17 and therefore not eligible to vote.", "zh": "他只有17岁，因此没有投票选举的资格。", "key": ["therefore"]},
+          "ext": []
+        },
+        {
+          "no": 55, "word": "thereby", "freq": 1, "page": 307,
+          "prons": [{"ipa": "/ˌðeəˈbaɪ/", "senses": [{"pos": "adv.", "mean": "[[因此]]；由此；[[从而]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Regular exercise strengthens the heart, thereby reducing the risk of heart attack.", "zh": "经常锻炼可以增强心脏机能，从而减少心脏病发作的危险。", "key": ["thereby"]},
+          "ext": []
+        },
+        {
+          "no": 56, "word": "thus", "freq": 3, "page": 307,
+          "prons": [{"ipa": "/ðʌs/", "senses": [{"pos": "adv.", "mean": "[[因此]]，[[所以]]；[[这样]]；[[如此]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "She rarely gave interviews and thus avoided being asked questions she would rather not answer.", "zh": "她很少接受采访，因此避免了被问到她不愿回答的问题。", "key": ["thus"]},
+          "ext": []
+        },
+        {
+          "no": 57, "word": "moreover", "freq": 2, "page": 307,
+          "prons": [{"ipa": "/mɔːrˈəʊvə(r)/", "senses": [{"pos": "adv.", "mean": "[[此外]]；[[而且]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2022, "en": "Moreover, schools should be more than simple institutions of traditional learning.", "zh": "此外，学校不应该仅仅是简单的传统学习机构。", "key": ["Moreover"]},
+          "ext": []
+        },
+        {
+          "no": 58, "word": "furthermore", "freq": 1, "page": 307,
+          "prons": [{"ipa": "/ˌfɜːðəˈmɔː(r)/", "senses": [{"pos": "adv.", "mean": "[[此外]]；[[而且]]；[[再者]]"}]}],
+          "tip": {"type": "构词", "text": "further（进一步）+ more（更多）→ 此外；而且"},
+          "ex": {"type": "例", "en": "Furthermore, listening can benefit yourself.", "zh": "此外，倾听对你自己有益。", "key": ["Furthermore"]},
+          "ext": []
+        }
+      ]
+    }
+  ],
+  "unit_summary": {"groups": 20, "words": 232, "ext": 153, "zhen": 73, "li": 159}
+}

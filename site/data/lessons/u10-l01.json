@@ -1,0 +1,661 @@
+{
+  "id": "u10-l01",
+  "part": 1,
+  "unit": 10,
+  "lesson": 1,
+  "pages": [277, 284],
+  "groups": [
+    {
+      "no": 1,
+      "title": "“巨大的”相关",
+      "pages": [277, 278],
+      "map": {
+        "w": "“巨大的”相关",
+        "children": [
+          {"w": "giant", "children": [{"w": "gigantic"}]},
+          {"w": "immense", "children": [{"w": "immensely", "rel": "扩"}, {"w": "immensity", "rel": "扩"}]},
+          {"w": "tremendous"},
+          {"w": "enormous", "children": [{"w": "vast"}]},
+          {"w": "largely", "children": [
+            {"w": "large", "rel": "扩"},
+            {"w": "highly", "rel": "相关", "children": [{"w": "high", "rel": "扩"}]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "giant", "freq": 1, "page": 277,
+          "prons": [{"ipa": "/ˈdʒaɪənt/", "senses": [
+            {"pos": "adj.", "mean": "[[巨大的]]；[[伟大的]]"},
+            {"pos": "n.", "mean": "[[巨人]]；[[大公司]]；[[伟人]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“站他”→ 我们学习科学知识，需要站在“巨人”的肩膀上。"},
+          "ex": {"type": "例", "en": "He is the CEO of a giant company.", "zh": "他是一家大公司的首席执行官。", "key": ["giant"]},
+          "ext": []
+        },
+        {
+          "no": 2, "word": "gigantic", "freq": 1, "page": 277,
+          "prons": [{"ipa": "/dʒaɪˈɡæntɪk/", "senses": [{"pos": "adj.", "mean": "[[巨大的，巨人般的]]"}]}],
+          "tip": {"type": "联想", "text": "泰坦尼克（Titanic）是一艘巨大的（gigantic）轮船。"},
+          "ex": {"type": "真", "year": 2021, "en": "Curiosity is one of the tools humans have found to accomplish that gigantic task.", "zh": "好奇心是人类发现的完成那一艰巨任务的工具之一。", "key": ["gigantic"]},
+          "ext": []
+        },
+        {
+          "no": 3, "word": "immense", "freq": 2, "page": 277,
+          "prons": [{"ipa": "/ɪˈmens/", "senses": [{"pos": "adj.", "mean": "[[极大的，巨大的]]"}]}],
+          "tip": {"type": "联想", "text": "i（我）+ mmense（音似“闷死”）→ 这里就像一个“巨大的”火炉，都快把我闷死了。"},
+          "ex": {"type": "例", "en": "That is a sign of its immense potential.", "zh": "这是其巨大潜力的标志。", "key": ["immense"]},
+          "ext": [
+            {"word": "immensely", "ipa": "/ɪˈmensli/", "senses": [{"pos": "adv.", "mean": "极大地；极端地；非常"}]},
+            {"word": "immensity", "ipa": "/ɪˈmensəti/", "senses": [{"pos": "n.", "mean": "巨大"}]}
+          ]
+        },
+        {
+          "no": 4, "word": "tremendous", "freq": 2, "page": 277,
+          "prons": [{"ipa": "/trəˈmendəs/", "senses": [{"pos": "adj.", "mean": "[[巨大的，极大的]]；[[极好的]]"}]}],
+          "tip": {"type": "联想", "text": "tre（联想 tree）+ mend（音似“门的”）+ -ous（形容词后缀）→ 树都长到门的两边了，说明这棵树是“巨大的”。"},
+          "ex": {"type": "例", "en": "One of humans' key characteristics is tremendous linguistic diversity.", "zh": "人类的一个重要特征是庞大的语言多样性。", "key": ["tremendous"]},
+          "ext": []
+        },
+        {
+          "no": 5, "word": "enormous", "freq": 2, "page": 277,
+          "prons": [{"ipa": "/ɪˈnɔːməs/", "senses": [{"pos": "adj.", "mean": "[[巨大的，庞大的，极大的]]"}]}],
+          "tip": {"type": "构词", "text": "e-（超出）+ norm（标准）+ -ous（形容词后缀）→ 超出标准大小的 → 巨大的，庞大的"},
+          "ex": {"type": "真", "year": 2018, "en": "There's no question that self-driving vehicles could be an enormous benefit.", "zh": "毫无疑问，自动驾驶汽车可能会带来巨大的利益。", "key": ["enormous"]},
+          "ext": []
+        },
+        {
+          "no": 6, "word": "vast", "freq": 1, "page": 277,
+          "prons": [{"ipa": "/vɑːst/", "senses": [{"pos": "adj.", "mean": "[[巨大的，广大的]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“哇死（很）特”→ 哇，这艘轮船真的很大，特别大 → 巨大的，广大的"},
+          "ex": {"type": "例", "en": "Your help made a vast difference.", "zh": "你的帮助产生了巨大的影响。", "key": ["vast"]},
+          "ext": []
+        },
+        {
+          "no": 7, "word": "largely", "freq": 3, "page": 277,
+          "prons": [{"ipa": "/ˈlɑːdʒli/", "senses": [{"pos": "adv.", "mean": "[[在很大程度上]]；[[多半]]；[[主要地]]"}]}],
+          "tip": {"type": "构词", "text": "large（大的）+ -ly（副词后缀）→ 在很大程度上；多半；主要地"},
+          "ex": {"type": "例", "en": "He was largely regarded as past his prime.", "zh": "人们普遍认为他已经过了黄金时期。", "key": ["largely"]},
+          "ext": [{"word": "large", "ipa": "/lɑːdʒ/", "senses": [{"pos": "adj.", "mean": "大的，广大的；大规模的"}]}]
+        },
+        {
+          "no": 8, "word": "highly", "freq": 3, "page": 278,
+          "prons": [{"ipa": "/ˈhaɪli/", "senses": [{"pos": "adv.", "mean": "[[非常]]；[[高标准地]]；[[高度地]]；[[钦佩地]]"}]}],
+          "tip": {"type": "构词", "text": "high（高的）+ -ly（副词后缀）→ 非常；高标准地；高度地"},
+          "ex": {"type": "真", "year": 2018, "en": "Computers can become highly intelligent.", "zh": "计算机可以变得高度智能。", "key": ["highly"]},
+          "ext": [{"word": "high", "ipa": "/haɪ/", "senses": [
+            {"pos": "adj.", "mean": "高的，有某高度的；地位高的；高尚的"},
+            {"pos": "adv.", "mean": "高高地"}
+          ]}]
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "title": "“标准”相关",
+      "pages": [278, 279],
+      "map": {
+        "w": "“标准”相关",
+        "children": [
+          {"w": "standard", "children": [
+            {"w": "standardise", "rel": "扩", "children": [{"w": "standardisation"}]}
+          ]},
+          {"w": "norm", "children": [
+            {"w": "normal", "rel": "扩", "children": [
+              {"w": "normally", "children": [
+                {"w": "normalise", "children": [{"w": "normalisation"}]}
+              ]}
+            ]}
+          ]},
+          {"w": "precise", "children": [
+            {"w": "precisely", "rel": "扩", "children": [{"w": "precision"}]}
+          ]},
+          {"w": "brief", "children": [
+            {"w": "briefing", "rel": "扩", "children": [{"w": "briefcase"}]},
+            {"w": "simple", "rel": "近义", "children": [
+              {"w": "simply", "rel": "扩"},
+              {"w": "simplicity", "rel": "扩"},
+              {"w": "simplify", "rel": "扩"}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 9, "word": "standard", "freq": 1, "page": 278,
+          "prons": [{"ipa": "/ˈstændəd/", "senses": [
+            {"pos": "n.", "mean": "[[标准]]，[[水平]]"},
+            {"pos": "adj.", "mean": "[[标准的]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "stand（站）+ -ard（后缀）→ 一个人站也有站的“标准”。"},
+          "ex": {"type": "真", "year": 2024, "en": "Thus, they had to keep working just as much in order to maintain their standard of living.", "zh": "因此，为了维持生活水平，他们不得不继续付出同样多的劳动。", "key": ["standard"]},
+          "ext": [
+            {"word": "standardise", "alt": "-ize", "ipa": "/ˈstændədaɪz/", "senses": [{"pos": "v.", "mean": "使标准化；使符合标准"}]},
+            {"word": "standardisation", "alt": "-ization", "ipa": "/ˌstændədaɪˈzeɪʃn/", "senses": [{"pos": "n.", "mean": "标准化；统一化"}]}
+          ]
+        },
+        {
+          "no": 10, "word": "norm", "freq": 1, "page": 278,
+          "prons": [{"ipa": "/nɔːm/", "senses": [{"pos": "n.", "mean": "[[社会准则，行为规范]]；[[标准]]；正常水平"}]}],
+          "tip": {"type": "联想", "text": "no（没有）+ r（联想“人”）+ m（联想“妈”）→ 没有人可以定义好妈妈的“标准”。"},
+          "ex": {"type": "例", "en": "She considered people to be products of the values and norms of the society.", "zh": "她认为人是社会价值观和规范的产物。", "key": ["norms"]},
+          "ext": []
+        },
+        {
+          "no": 11, "word": "normal", "freq": 1, "page": 278,
+          "prons": [{"ipa": "/ˈnɔːml/", "senses": [
+            {"pos": "adj.", "mean": "[[典型的]]，[[正常的]]，一般的"},
+            {"pos": "n.", "mean": "[[常态]]；通常标准"}
+          ]}],
+          "tip": {"type": "构词", "text": "norm（标准）+ -al（后缀）→ 典型的；正常的；常态"},
+          "ex": {"type": "真", "year": 2022, "en": "Such tasks can get our brains thinking flexibly, beyond our normal comfort zone.", "zh": "这样的任务可以让我们的大脑灵活思考，跳出常规舒适区。", "key": ["normal"]},
+          "ext": [
+            {"word": "normally", "ipa": "/ˈnɔːməli/", "senses": [{"pos": "adv.", "mean": "通常；正常地"}]},
+            {"word": "normalise", "alt": "-ize", "ipa": "/ˈnɔːməlaɪz/", "senses": [{"pos": "v.", "mean": "（使）正常化，标准化"}]},
+            {"word": "normalisation", "alt": "-ization", "ipa": "/ˌnɔːməlaɪˈzeɪʃn/", "senses": [{"pos": "n.", "mean": "正常化"}]}
+          ]
+        },
+        {
+          "no": 12, "word": "precise", "freq": 1, "page": 278,
+          "prons": [{"ipa": "/prɪˈsaɪs/", "senses": [{"pos": "adj.", "mean": "[[精确的，准确的]]；[[确切的]]；（强调时间或方式等）[[就，恰好]]"}]}],
+          "tip": {"type": "联想", "text": "pre-（提前）+ cise（音似“杀死”）→ 杀死害虫，需要提前确定“精确的”路线。"},
+          "ex": {"type": "例", "en": "Can you give a more precise definition of the word?", "zh": "你能给这个词下个更确切的定义吗？", "key": ["precise"]},
+          "ext": [
+            {"word": "precisely", "ipa": "/prɪˈsaɪsli/", "senses": [{"pos": "adv.", "mean": "准确地，恰好地"}]},
+            {"word": "precision", "ipa": "/prɪˈsɪʒn/", "senses": [{"pos": "n.", "mean": "精确，准确；细致"}]}
+          ]
+        },
+        {
+          "no": 13, "word": "brief", "freq": 1, "page": 279,
+          "prons": [{"ipa": "/briːf/", "senses": [
+            {"pos": "adj.", "mean": "[[短暂的]]；简短的；[[简洁的]]"},
+            {"pos": "n.", "mean": "任务简介，[[指示]]"},
+            {"pos": "v.", "mean": "给（某人）指示"}
+          ]}],
+          "tip": {"type": "联想", "text": "br（联想“病人”）+ i（字母音似“爱”）+ ef（音似“衣服”）→ 病人爱穿简洁风格的衣服 → 简洁的"},
+          "ex": {"type": "例", "en": "He said nothing during the brief court appearance.", "zh": "在短暂的出庭期间，他什么也没说。", "key": ["brief"]},
+          "ext": [
+            {"word": "briefing", "ipa": "/ˈbriːfɪŋ/", "senses": [{"pos": "n.", "mean": "详细指示；详情介绍；传达指示会；情况介绍会"}]},
+            {"word": "briefcase", "ipa": "/ˈbriːfkeɪs/", "senses": [{"pos": "n.", "mean": "公文包；公事包"}]}
+          ]
+        },
+        {
+          "no": 14, "word": "simple", "freq": 1, "page": 279,
+          "prons": [{"ipa": "/ˈsɪmpl/", "senses": [{"pos": "adj.", "mean": "[[简单的]]；[[朴素的]]；（表示强调）纯粹的"}]}],
+          "tip": {"type": "联想", "text": "sim（联想“四妹”）+ ple（音似“剖”）→ 四妹学医，她觉得解剖课是很“简单的”。"},
+          "ex": {"type": "例", "en": "Some traditions are simple, like the red eggs that get baked into breads.", "zh": "有些传统很简单，比如面包中烤制的红鸡蛋。", "key": ["simple"]},
+          "ext": [
+            {"word": "simply", "ipa": "/ˈsɪmpli/", "senses": [{"pos": "adv.", "mean": "仅仅；确实；简单地"}]},
+            {"word": "simplicity", "ipa": "/sɪmˈplɪsəti/", "senses": [{"pos": "n.", "mean": "简单（性）；质朴"}]},
+            {"word": "simplify", "ipa": "/ˈsɪmplɪfaɪ/", "senses": [{"pos": "v.", "mean": "使简化"}]}
+          ]
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "title": "“绝对”相关",
+      "pages": [279, 280],
+      "map": {
+        "w": "“绝对”相关",
+        "children": [
+          {"w": "extreme", "children": [
+            {"w": "extremity", "rel": "扩"},
+            {"w": "utmost", "rel": "近义"}
+          ]},
+          {"w": "utter", "children": [
+            {"w": "utterly", "rel": "扩"},
+            {"w": "sheer", "rel": "近义"},
+            {"w": "absolute", "rel": "近义"},
+            {"w": "possibility", "rel": "相关", "children": [
+              {"w": "possible", "rel": "扩"},
+              {"w": "possibly", "rel": "扩"},
+              {"w": "impossible", "rel": "反义", "children": [{"w": "impossibility", "rel": "扩"}]},
+              {"w": "probability", "rel": "近义", "children": [
+                {"w": "probable", "rel": "扩"},
+                {"w": "probably", "rel": "扩"}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 15, "word": "extreme", "freq": 2, "page": 279,
+          "prons": [{"ipa": "/ɪkˈstriːm/", "senses": [
+            {"pos": "adj.", "mean": "[[极度的]]；[[严重的]]；[[极端的]]"},
+            {"pos": "n.", "mean": "[[极端不同的感情（或境况、行为方式等）]]；[[完全相反的事物]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "ex-（向外）+ tre（音似“踹”）+ me（我）→ 他说要出来踹我，这种行为是“极端的”。"},
+          "ex": {"type": "例", "en": "We are working under extreme pressure at the moment.", "zh": "目前我们正在极大的压力下工作。", "key": ["extreme"]},
+          "ext": [{"word": "extremity", "ipa": "/ɪkˈstreməti/", "senses": [{"pos": "n.", "mean": "极端；极度；极限；末端；端点；尽头"}]}]
+        },
+        {
+          "no": 16, "word": "utmost", "freq": 1, "page": 279,
+          "prons": [{"ipa": "/ˈʌtməʊst/", "senses": [
+            {"pos": "adj.", "mean": "[[最大的]]；[[极度的]]"},
+            {"pos": "n.", "mean": "[[最大量]]；[[最大限度]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "They had the utmost comfort passengers could enjoy in mind.", "zh": "他们考虑到了乘客能享受到的最大舒适度。", "key": ["utmost"]},
+          "ext": []
+        },
+        {
+          "no": 17, "word": "utter", "freq": 2, "page": 279,
+          "prons": [{"ipa": "/ˈʌtə(r)/", "senses": [
+            {"pos": "adj.", "mean": "[[完全的]]；[[十足的]]；[[彻底的]]"},
+            {"pos": "v.", "mean": "[[出声]]；[[说]]；[[讲]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“啊特”→ 啊，他特别恨那个“十足的”骗子。"},
+          "ex": {"type": "真", "year": 2021, "en": "Falling into a routine can turn a person into an utter bore.", "zh": "墨守成规会让人变得无聊透顶。", "key": ["utter"]},
+          "ext": [{"word": "utterly", "ipa": "/ˈʌtəli/", "senses": [{"pos": "adv.", "mean": "完全地；彻底地"}]}]
+        },
+        {
+          "no": 18, "word": "sheer", "freq": 2, "page": 279,
+          "prons": [{"ipa": "/ʃɪə(r)/", "senses": [
+            {"pos": "adj.", "mean": "[[完全的]]；[[十足的]]；[[陡峭的]]"},
+            {"pos": "adv.", "mean": "[[垂直地]]；[[陡峭地]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "she（她）+ er（联想“表示人的后缀”）→ 她是个“十足的”好人。"},
+          "ex": {"type": "例", "en": "Outside there was a sheer drop down to the sea below.", "zh": "外面是一道陡坡，直插大海。", "key": ["sheer"]},
+          "ext": []
+        },
+        {
+          "no": 19, "word": "absolute", "freq": 3, "page": 279,
+          "prons": [{"ipa": "/ˈæbsəluːt/", "senses": [{"pos": "adj.", "mean": "[[完全的]]；[[绝对的]]；[[确凿的]]"}]}],
+          "tip": {"type": "联想", "text": "ab-（一再地）+ so（如此）+ lute（联想 late）→ 一再地如此晚 → 完全晚了 → 完全的"},
+          "ex": {"type": "真", "year": 2020, "en": "Value is almost never absolute.", "zh": "价值几乎永远不是绝对的。", "key": ["absolute"]},
+          "ext": []
+        },
+        {
+          "no": 20, "word": "possibility", "freq": 3, "page": 280,
+          "prons": [{"ipa": "/ˌpɒsəˈbɪləti/", "senses": [{"pos": "n.", "mean": "[[可能]]；[[可能性]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The study did not examine the possibility of deep significance.", "zh": "这项研究并没有考虑可能产生的深层影响。", "key": ["possibility"]},
+          "ext": [
+            {"word": "possible", "ipa": "/ˈpɒsəbl/", "senses": [{"pos": "adj.", "mean": "可能的；可能存在的"}]},
+            {"word": "possibly", "ipa": "/ˈpɒsəbli/", "senses": [{"pos": "adv.", "mean": "可能；或许"}]}
+          ]
+        },
+        {
+          "no": 21, "word": "impossible", "freq": 1, "page": 280,
+          "prons": [{"ipa": "/ɪmˈpɒsəbl/", "senses": [{"pos": "adj.", "mean": "[[不可能的]]；[[难处理的]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Without effort, getting any kind of decent job is impossible.", "zh": "没有努力，找到任何体面的工作都是不可能的。", "key": ["impossible"]},
+          "ext": [{"word": "impossibility", "ipa": "/ɪmˌpɒsəˈbɪləti/", "senses": [{"pos": "n.", "mean": "几乎不可能的事"}]}]
+        },
+        {
+          "no": 22, "word": "probable", "freq": 2, "page": 280,
+          "prons": [{"ipa": "/ˈprɒbəbl/", "senses": [
+            {"pos": "adj.", "mean": "[[很可能发生（或存在）的]]"},
+            {"pos": "n.", "mean": "[[可能入选者]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "pro-（往前）+ bab（联想 baby）+ le（联想“了”）→ 那个婴儿自己往前走了，摔跤是“很可能发生的”事情。"},
+          "ex": {"type": "例", "en": "The most probable reason for the popularity is that they are less expensive.", "zh": "流行的最可能的原因是它们更便宜。", "key": ["probable"]},
+          "ext": [
+            {"word": "probability", "ipa": "/ˌprɒbəˈbɪləti/", "senses": [{"pos": "n.", "mean": "可能性；很可能发生的事；概率，几率"}]},
+            {"word": "probably", "ipa": "/ˈprɒbəbli/", "senses": [{"pos": "adv.", "mean": "几乎肯定；很可能；大概"}]}
+          ]
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "title": "tract 相关",
+      "pages": [280, 282],
+      "map": {
+        "w": "tract 相关",
+        "children": [
+          {"w": "abstract", "children": [{"w": "tractor"}]},
+          {"w": "subtract", "children": [
+            {"w": "subtraction", "rel": "扩"},
+            {"w": "reduce", "rel": "相关", "children": [{"w": "reduction", "rel": "扩"}]}
+          ]},
+          {"w": "contract", "children": [
+            {"w": "contractor", "rel": "扩", "children": [{"w": "contraction"}]}
+          ]},
+          {"w": "attract", "children": [
+            {"w": "attraction", "rel": "扩", "children": [{"w": "attractive"}]},
+            {"w": "induce", "rel": "相关", "children": [
+              {"w": "inducement", "rel": "扩"},
+              {"w": "hook", "rel": "相关"}
+            ]},
+            {"w": "distract", "rel": "反义", "children": [{"w": "distraction", "rel": "扩"}]},
+            {"w": "fascinate", "rel": "近义", "children": [
+              {"w": "fascinating", "rel": "扩"},
+              {"w": "fascination", "rel": "扩"},
+              {"w": "fantasy", "children": [
+                {"w": "fancy"},
+                {"w": "fantastic", "rel": "形近"},
+                {"w": "illusion", "rel": "相关", "children": [{"w": "illusory", "rel": "扩"}]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 23, "word": "abstract", "freq": 2, "page": 280,
+          "prons": [
+            {"ipa": "/ˈæbstrækt/", "senses": [
+              {"pos": "adj.", "mean": "[[抽象的]]"},
+              {"pos": "n.", "mean": "（文献等的）[[摘要]]"}
+            ]},
+            {"ipa": "/æbˈstrækt/", "senses": [{"pos": "v.", "mean": "[[提取]]；写摘要"}]}
+          ],
+          "tip": {"type": "构词", "text": "abs-（从……离开）+ tract（拖，拉，拽）→ 提取"},
+          "ex": {"type": "例", "en": "We may talk of beautiful things but beauty itself is abstract.", "zh": "我们可以谈论美的事物，但美本身却是抽象的。", "key": ["abstract"]},
+          "ext": []
+        },
+        {
+          "no": 24, "word": "tractor", "freq": 1, "page": 280,
+          "prons": [{"ipa": "/ˈtræktə(r)/", "senses": [{"pos": "n.", "mean": "[[拖拉机]]；牵引机"}]}],
+          "tip": {"type": "构词", "text": "tract（拖，拉，拽）+ -or（名词后缀）→ 用来拖、拉、拽的东西 → 拖拉机"},
+          "ex": {"type": "例", "en": "We had to use a tractor to pull the car out of the mud.", "zh": "我们不得不用拖拉机把车从泥地里拖出来。", "key": ["tractor"]},
+          "ext": []
+        },
+        {
+          "no": 25, "word": "subtract", "freq": 1, "page": 281,
+          "prons": [{"ipa": "/səbˈtrækt/", "senses": [{"pos": "v.", "mean": "[[减去]]，[[扣除]]"}]}],
+          "tip": {"type": "构词", "text": "sub-（往下）+ tract（拖，拉，拽）→ 往下拖，拉，拽 → 减去，扣除"},
+          "ex": {"type": "例", "en": "This subtracts loss in value of factories and equipment.", "zh": "这减去了工厂和设备的价值损失。", "key": ["subtracts"]},
+          "ext": [{"word": "subtraction", "ipa": "/səbˈtrækʃn/", "senses": [{"pos": "n.", "mean": "减；减去"}]}]
+        },
+        {
+          "no": 26, "word": "reduce", "freq": 3, "page": 281,
+          "prons": [{"ipa": "/rɪˈdjuːs/", "senses": [{"pos": "v.", "mean": "[[减少]]，[[缩小（尺寸、数量、价格等）]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The number of employees was reduced from 40 to 25.", "zh": "雇员人数从 40 人减少到了 25 人。", "key": ["reduced from", "to"]},
+          "ext": [{"word": "reduction", "ipa": "/rɪˈdʌkʃn/", "senses": [{"pos": "n.", "mean": "减少；缩小；减价"}]}]
+        },
+        {
+          "no": 27, "word": "contract", "freq": 1, "page": 281,
+          "prons": [
+            {"ipa": "/ˈkɒntrækt/", "senses": [
+              {"pos": "n.", "mean": "[[合同]]，[[契约]]"},
+              {"pos": "v.", "mean": "[[与……订立合同（或契约）]]"}
+            ]},
+            {"ipa": "/kənˈtrækt/", "senses": [{"pos": "v.", "mean": "[[缩小]]"}]}
+          ],
+          "tip": {"type": "构词", "text": "con-（一起）+ tract（拖，拉，拽）→ 把双方拉到一起 → 合同"},
+          "ex": {"type": "例", "en": "All employees have a written contract of employment.", "zh": "所有员工都有一份书面聘用合同。", "key": ["contract"]},
+          "ext": [
+            {"word": "contractor", "ipa": "/kənˈtræktə(r)；ˈkɒntræktə(r)/", "senses": [{"pos": "n.", "mean": "承包人；承包商；承包公司"}]},
+            {"word": "contraction", "ipa": "/kənˈtrækʃn/", "senses": [{"pos": "n.", "mean": "收缩；缩小"}]}
+          ]
+        },
+        {
+          "no": 28, "word": "attract", "freq": 1, "page": 281,
+          "prons": [{"ipa": "/əˈtrækt/", "senses": [{"pos": "v.", "mean": "[[吸引]]；[[使喜爱]]；[[引起……的好感]]"}]}],
+          "tip": {"type": "构词", "text": "at-（朝，向）+ tract（拖，拉，拽）→ 吸引"},
+          "ex": {"type": "例", "en": "What first attracted me to her was her sense of humour.", "zh": "她首先吸引我的是她的幽默感。", "key": ["attracted", "to"]},
+          "ext": [
+            {"word": "attraction", "ipa": "/əˈtrækʃn/", "senses": [{"pos": "n.", "mean": "吸引；爱慕"}]},
+            {"word": "attractive", "ipa": "/əˈtræktɪv/", "senses": [{"pos": "adj.", "mean": "有吸引力的；诱人的"}]}
+          ]
+        },
+        {
+          "no": 29, "word": "induce", "freq": 2, "page": 281,
+          "prons": [{"ipa": "/ɪnˈdjuːs/", "senses": [{"pos": "v.", "mean": "[[劝诱，诱导]]；[[引产]]"}]}],
+          "tip": {"type": "联想", "text": "in（里面）+ du（联想“毒”）+ ce（音似“死”）→ 他“劝诱”我把家里的害虫毒死。"},
+          "ex": {"type": "例", "en": "Some producers may induce customers to make more unplanned purchases.", "zh": "一些生产商可能诱导顾客进行更多计划外的购买。", "key": ["induce"]},
+          "ext": [{"word": "inducement", "ipa": "/ɪnˈdjuːsmənt/", "senses": [{"pos": "n.", "mean": "引诱；刺激；诱因"}]}]
+        },
+        {
+          "no": 30, "word": "hook", "freq": 1, "page": 281,
+          "prons": [{"ipa": "/hʊk/", "senses": [
+            {"pos": "n.", "mean": "[[钩]]，[[挂钩]]"},
+            {"pos": "v.", "mean": "[[钩住]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "动画片中的胡克（Hook）船长有一个鹰钩（hook）鼻。"},
+          "ex": {"type": "例", "en": "Your coat's hanging on a hook behind the door.", "zh": "你的外套挂在门后的挂钩上。", "key": ["hook"]},
+          "ext": []
+        },
+        {
+          "no": 31, "word": "distract", "freq": 2, "page": 281,
+          "prons": [{"ipa": "/dɪˈstrækt/", "senses": [{"pos": "v.", "mean": "[[分散注意力]]；[[分散]]；[[使分心]]"}]}],
+          "tip": {"type": "构词", "text": "dis-（分开）+ tract（拖，拉，拽）→ 向不同方向拖，拉，拽 → 分散；使分心"},
+          "ex": {"type": "真", "year": 2017, "en": "Members of poorly managed teams are easily distracted from their work.", "zh": "管理不善的团队成员很容易在工作中分心。", "key": ["distracted from"]},
+          "ext": [{"word": "distraction", "ipa": "/dɪˈstrækʃn/", "senses": [{"pos": "n.", "mean": "使人分心的事物"}]}]
+        },
+        {
+          "no": 32, "word": "fascinate", "freq": 3, "page": 281,
+          "prons": [{"ipa": "/ˈfæsɪneɪt/", "senses": [{"pos": "v.", "mean": "[[深深吸引]]；[[迷住]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“帅死你她”→ 他很帅，把你和她都“迷住”了。"},
+          "ex": {"type": "例", "en": "It was a question that had fascinated him since he was a boy.", "zh": "这是他自幼就着迷的问题。", "key": ["fascinated"]},
+          "ext": [
+            {"word": "fascinating", "ipa": "/ˈfæsɪneɪtɪŋ/", "senses": [{"pos": "adj.", "mean": "极有吸引力的；迷人的"}]},
+            {"word": "fascination", "ipa": "/ˌfæsɪˈneɪʃn/", "senses": [{"pos": "n.", "mean": "魅力；极大的吸引力；入迷，着迷"}]}
+          ]
+        },
+        {
+          "no": 33, "word": "fantasy", "freq": 1, "page": 281,
+          "prons": [{"ipa": "/ˈfæntəsi/", "senses": [{"pos": "n.", "mean": "[[幻想]]，[[白日梦]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“范特西”→ 范特西是一个爱“幻想”的人。"},
+          "ex": {"type": "例", "en": "He spoke of his childhood fantasies about becoming a football player.", "zh": "他谈起儿时想成为足球运动员的幻想。", "key": ["fantasies"]},
+          "ext": []
+        },
+        {
+          "no": 34, "word": "fantastic", "freq": 1, "page": 282,
+          "prons": [{"ipa": "/fænˈtæstɪk/", "senses": [{"pos": "adj.", "mean": "[[极好的]]；[[了不起的]]；[[怪诞的]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "This was a fantastic opportunity for students.", "zh": "这对学生来说是一个极好的机会。", "key": ["fantastic"]},
+          "ext": []
+        },
+        {
+          "no": 35, "word": "fancy", "freq": 3, "page": 282,
+          "prons": [{"ipa": "/ˈfænsi/", "senses": [
+            {"pos": "n. & v.", "mean": "[[想象]]，[[设想]]；[[喜欢]]"},
+            {"pos": "adj.", "mean": "[[精致的]]，[[绚丽的]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“烦死”→ 当你特别烦时，不如“想象”一下未来的幸福时光。"},
+          "ex": {"type": "真", "year": 2024, "en": "She enjoys buying a lot of fancy things.", "zh": "她喜欢买很多精致的东西。", "key": ["fancy"]},
+          "ext": []
+        },
+        {
+          "no": 36, "word": "illusion", "freq": 1, "page": 282,
+          "prons": [{"ipa": "/ɪˈluːʒn/", "senses": [{"pos": "n.", "mean": "[[幻想]]；[[错觉]]；[[错误的观念]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“一路引”→ 他想要一直有人为他的人生引路，但这只是他的“幻想”。"},
+          "ex": {"type": "真", "year": 2017, "en": "Google can give us the powerful illusion that all questions have definite answers.", "zh": "谷歌能给我们一种强大的错觉，即所有的问题都有明确的答案。", "key": ["illusion"]},
+          "ext": [{"word": "illusory", "ipa": "/ɪˈluːsəri/", "senses": [{"pos": "adj.", "mean": "虚假的；幻觉的；迷惑人的"}]}]
+        }
+      ]
+    },
+    {
+      "no": 5,
+      "title": "“持续的、裸露的”相关",
+      "pages": [282, 283],
+      "map": {
+        "w": "“持续的、裸露的”相关",
+        "children": [
+          {"w": "plastic"},
+          {"w": "permanent", "children": [
+            {"w": "permanence", "rel": "扩"},
+            {"w": "eternal", "rel": "近义", "children": [{"w": "eternity", "rel": "扩"}]}
+          ]},
+          {"w": "bare", "children": [
+            {"w": "barely", "rel": "扩", "children": [
+              {"w": "merely", "rel": "近义", "children": [{"w": "mere", "rel": "扩"}]},
+              {"w": "solely", "rel": "近义", "children": [{"w": "sole", "rel": "扩"}]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 37, "word": "plastic", "freq": 1, "page": 282,
+          "prons": [{"ipa": "/ˈplæstɪk/", "senses": [
+            {"pos": "n.", "mean": "[[塑料]]"},
+            {"pos": "adj.", "mean": "[[塑料的]]；人造的"}
+          ]}],
+          "tip": {"type": "对照", "text": "大多数塑料（plastic）可以持续（last）使用。"},
+          "ex": {"type": "例", "en": "Do you buy water in plastic bottles or take your chances with tap water?", "zh": "你会买塑料瓶装水，还是碰碰运气喝自来水？", "key": ["plastic"]},
+          "ext": []
+        },
+        {
+          "no": 38, "word": "permanent", "freq": 3, "page": 282,
+          "prons": [{"ipa": "/ˈpɜːmənənt/", "senses": [{"pos": "adj.", "mean": "[[永久的，永恒的]]；[[固定的]]"}]}],
+          "tip": {"type": "联想", "text": "per-（每一）+ man（人）+ ent（联想 enter）→ 每一个人都想进入时间“永恒的”世界。"},
+          "ex": {"type": "真", "year": 2021, "en": "If working from home becomes permanent, employees will have to dedicate part of their private space to work.", "zh": "如果居家办公成为常态，员工将不得不拿出部分私人空间用于工作。", "key": ["permanent"]},
+          "ext": [{"word": "permanence", "ipa": "/ˈpɜːmənəns/", "senses": [{"pos": "n.", "mean": "永久；持久性"}]}]
+        },
+        {
+          "no": 39, "word": "eternal", "freq": 1, "page": 282,
+          "prons": [{"ipa": "/ɪˈtɜːnl/", "senses": [{"pos": "adj.", "mean": "[[不朽的]]；[[永恒的]]；[[永久的]]"}]}],
+          "tip": {"type": "联想", "text": "eter（音似“一特”）+ n（形似门）+ -al（形容词后缀）→ 这一扇特色之门是城市“永恒的”印记。"},
+          "ex": {"type": "例", "en": "I'm tired of your eternal arguments.", "zh": "我烦透了你们那无休止的争论。", "key": ["eternal"]},
+          "ext": [{"word": "eternity", "ipa": "/ɪˈtɜːnəti/", "senses": [{"pos": "n.", "mean": "永恒；永生；不朽"}]}]
+        },
+        {
+          "no": 40, "word": "barely", "freq": 2, "page": 282,
+          "prons": [{"ipa": "/ˈbeəli/", "senses": [{"pos": "adv.", "mean": "[[仅仅]]；[[几乎不，几乎没有]]；刚好"}]}],
+          "tip": {"type": "对照", "text": "裸露的（bare）就是几乎没有（barely）穿衣服。"},
+          "ex": {"type": "真", "year": 2024, "en": "The economy would become so productive that people would barely need to work at all.", "zh": "经济发展将更具生产力，人们几乎不再需要工作。", "key": ["barely"]},
+          "ext": []
+        },
+        {
+          "no": 41, "word": "bare", "freq": 2, "page": 283,
+          "prons": [{"ipa": "/beə(r)/", "senses": [{"pos": "adj.", "mean": "[[裸露的]]，[[裸体的]]；（树木）[[光秃秃的]]"}]}],
+          "tip": {"type": "联想", "text": "bar（木条）+ e（字母音似“姨”）→ 木条划破了阿姨的衣袖，使她露出了胳膊 → 裸露的"},
+          "ex": {"type": "例", "en": "She likes to walk around in bare feet.", "zh": "她喜欢光着脚走来走去。", "key": ["bare"]},
+          "ext": []
+        },
+        {
+          "no": 42, "word": "mere", "freq": 2, "page": 283,
+          "prons": [{"ipa": "/mɪə(r)/", "senses": [{"pos": "adj.", "mean": "[[仅仅，只不过]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“米儿”→ 世界那么大，我们“仅仅”像一粒米那样渺小。"},
+          "ex": {"type": "例", "en": "Social robots will be much more like companions than mere tools.", "zh": "社交机器人将会更像是伙伴，而不仅仅是工具。", "key": ["mere"]},
+          "ext": [{"word": "merely", "ipa": "/ˈmɪəli/", "senses": [{"pos": "adv.", "mean": "仅仅；只不过"}]}]
+        },
+        {
+          "no": 43, "word": "sole", "freq": 1, "page": 283,
+          "prons": [{"ipa": "/səʊl/", "senses": [{"pos": "adj.", "mean": "[[仅有的]]，[[唯一的]]；[[独占的]]，[[专有的]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“馊”→ 馊了也不给别人吃，要独占这一食物 → 独占的，专有的"},
+          "ex": {"type": "例", "en": "GDP is no longer regarded as the sole measure of a country's success.", "zh": "国内生产总值不再被视为衡量一个国家成功与否的唯一标准。", "key": ["sole"]},
+          "ext": [{"word": "solely", "ipa": "/ˈsəʊlli/", "senses": [{"pos": "adv.", "mean": "仅；只；单独地"}]}]
+        }
+      ]
+    },
+    {
+      "no": 6,
+      "title": "“事故”相关",
+      "pages": [283, 284],
+      "map": {
+        "w": "“事故”相关",
+        "children": [
+          {"w": "accident", "children": [{"w": "accidental", "rel": "扩"}]},
+          {"w": "incident", "children": [
+            {"w": "incidental", "rel": "扩", "children": [{"w": "incidentally"}]},
+            {"w": "incidence", "rel": "形近"}
+          ]},
+          {"w": "occasion", "children": [
+            {"w": "occasionally", "rel": "扩", "children": [
+              {"w": "occasional", "children": [{"w": "casual", "rel": "近义"}]}
+            ]},
+            {"w": "opportunity", "rel": "近义", "children": [
+              {"w": "chance", "children": [
+                {"w": "potential", "rel": "相关", "children": [{"w": "potentiality", "rel": "扩"}]}
+              ]}
+            ]}
+          ]},
+          {"w": "occur", "children": [{"w": "occurrence", "rel": "扩"}]},
+          {"w": "curb", "children": [{"w": "spot"}]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 44, "word": "accident", "freq": 1, "page": 283,
+          "prons": [{"ipa": "/ˈæksɪdənt/", "senses": [{"pos": "n.", "mean": "（交通）[[事故]]；[[意外遭遇]]；[[不测事件]]"}]}],
+          "tip": {"type": "联想", "text": "ac-（一再地）+ cident（音似“死等”）→ 她一再地等他，但他就是没来，她担心出了“事故”。"},
+          "ex": {"type": "真", "year": 2023, "en": "He was involved in a terrible car accident last April.", "zh": "去年四月，他遭遇了一场严重的车祸。", "key": ["accident"]},
+          "ext": [{"word": "accidental", "ipa": "/ˌæksɪˈdentl/", "senses": [{"pos": "adj.", "mean": "意外的；偶然的"}]}]
+        },
+        {
+          "no": 45, "word": "incident", "freq": 1, "page": 283,
+          "prons": [{"ipa": "/ˈɪnsɪdənt/", "senses": [{"pos": "n.", "mean": "[[事件]]；[[事故]]；[[摩擦]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The most recent incident occurred last January.", "zh": "最近的一次事件发生在去年一月。", "key": ["incident"]},
+          "ext": [
+            {"word": "incidental", "ipa": "/ˌɪnsɪˈdentl/", "senses": [{"pos": "adj.", "mean": "附带发生的；次要的"}]},
+            {"word": "incidentally", "ipa": "/ˌɪnsɪˈdentli/", "senses": [{"pos": "adv.", "mean": "偶然地；不经意地"}]}
+          ]
+        },
+        {
+          "no": 46, "word": "incidence", "freq": 2, "page": 283,
+          "prons": [{"ipa": "/ˈɪnsɪdəns/", "senses": [{"pos": "n.", "mean": "[[发生率]]；[[发生范围]]；[[影响程度]]"}]}],
+          "tip": {"type": "联想", "text": "inciden(t)（事故）+ ce（联想“车”）→ 车辆事故有一定的“发生率”。"},
+          "ex": {"type": "例", "en": "Not eating breakfast is related to the incidence of certain diseases.", "zh": "不吃早餐与某些疾病的发病率有关。", "key": ["incidence"]},
+          "ext": []
+        },
+        {
+          "no": 47, "word": "occasion", "freq": 3, "page": 283,
+          "prons": [{"ipa": "/əˈkeɪʒn/", "senses": [{"pos": "n.", "mean": "[[特殊场合]]；[[时刻]]；[[机会]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "He has mentioned this on many previous occasions.", "zh": "他在以前的许多场合都提到过这一点。", "key": ["occasions"]},
+          "ext": [
+            {"word": "occasional", "ipa": "/əˈkeɪʒənl/", "senses": [{"pos": "adj.", "mean": "偶尔的，偶然的；临时的"}]},
+            {"word": "occasionally", "ipa": "/əˈkeɪʒnəli/", "senses": [{"pos": "adv.", "mean": "偶然，偶尔；有时候"}]}
+          ]
+        },
+        {
+          "no": 48, "word": "casual", "freq": 2, "page": 284,
+          "prons": [{"ipa": "/ˈkæʒuəl/", "senses": [{"pos": "adj.", "mean": "[[不经意的]]；[[非正式的，随便的]]；[[偶然的]]"}]}],
+          "tip": {"type": "联想", "text": "casu（联想“卡苏”，人名）+ -al（形容词后缀）→ 卡苏是个外国人，穿衣风格是很“随便的”。"},
+          "ex": {"type": "真", "year": 2023, "en": "Siri has often been praised for its ability to interpret our casual language.", "zh": "Siri 经常受到称赞，因为它能够解释我们非正式的语言。", "key": ["casual"]},
+          "ext": []
+        },
+        {
+          "no": 49, "word": "opportunity", "freq": 3, "page": 284,
+          "prons": [{"ipa": "/ˌɒpəˈtjuːnəti/", "senses": [{"pos": "n.", "mean": "[[机会]]，[[时机]]"}]}],
+          "tip": {"type": "联想", "text": "op（联想 open）+ port（港口）+ unity（团结一致）→ 在开放的港口城市生存，我们要团结一致，抓住发展“机会”。"},
+          "ex": {"type": "例", "en": "This is an opportunity that must not be wasted.", "zh": "这是一个绝不能浪费的机会。", "key": ["opportunity"]},
+          "ext": []
+        },
+        {
+          "no": 50, "word": "chance", "freq": 1, "page": 284,
+          "prons": [{"ipa": "/tʃɑːns/", "senses": [{"pos": "n.", "mean": "[[机会]]，[[时机]]；[[可能性]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2024, "en": "Some people view socialising at the workplace as a chance to develop personal relationships.", "zh": "有些人将职场社交视为发展人际关系的机会。", "key": ["chance"]},
+          "ext": []
+        },
+        {
+          "no": 51, "word": "occur", "freq": 3, "page": 284,
+          "prons": [{"ipa": "/əˈkɜː(r)/", "senses": [{"pos": "v.", "mean": "[[发生]]；[[出现]]"}]}],
+          "tip": {"type": "联想", "text": "o（字母音似“偶”）+ ccur（音似“磕”）→ 我偶然磕了腿，“发生”了意外。"},
+          "ex": {"type": "真", "year": 2019, "en": "It occurs when people are doing a repetitive activity.", "zh": "当人们在做重复性的活动时，它就会发生。", "key": ["occurs"]},
+          "ext": [{"word": "occurrence", "ipa": "/əˈkʌrəns/", "senses": [{"pos": "n.", "mean": "出现；发生的事件"}]}]
+        },
+        {
+          "no": 52, "word": "curb", "freq": 1, "page": 284,
+          "prons": [{"ipa": "/kɜːb/", "senses": [
+            {"pos": "v.", "mean": "[[控制]]；[[抑制]]；[[限定]]"},
+            {"pos": "n.", "mean": "[[控制]]；[[限制]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "cur（联想 occur）+ b（联想“不”）→ 让一件事情不发生，就要“抑制”它。"},
+          "ex": {"type": "例", "en": "He needs to learn to curb his temper.", "zh": "他得学着控制自己的脾气。", "key": ["curb"]},
+          "ext": []
+        },
+        {
+          "no": 53, "word": "spot", "freq": 1, "page": 284,
+          "prons": [{"ipa": "/spɒt/", "senses": [
+            {"pos": "n.", "mean": "[[地点]]，[[场所]]；[[污点]]，[[污渍]]；[[斑点]]"},
+            {"pos": "v.", "mean": "[[认出]]，[[发现]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "s（联想“美女”）+ pot（坛子）→ 美女打翻了泡菜坛子，身上溅了很多“污渍”。"},
+          "ex": {"type": "例", "en": "A deadly fish has been spotted in the ocean.", "zh": "在海洋中发现了一种致命的鱼类。", "key": ["spotted"]},
+          "ext": []
+        },
+        {
+          "no": 54, "word": "potential", "freq": 3, "page": 284,
+          "prons": [{"ipa": "/pəˈtenʃl/", "senses": [
+            {"pos": "n.", "mean": "[[潜能]]，[[潜力]]"},
+            {"pos": "adj.", "mean": "[[潜在的]]，[[可能的]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "pot（坛子）+ ent（联想 enter）+ -ial（后缀）→ 他一进入像坛子一样封闭的环境，“潜能”就会被激发出来。"},
+          "ex": {"type": "例", "en": "These educational experiences have enormous potential to brighten my future.", "zh": "这些教育经历有巨大的潜力来照亮我的未来。", "key": ["potential"]},
+          "ext": [{"word": "potentiality", "ipa": "/pəˌtenʃiˈæləti/", "senses": [{"pos": "n.", "mean": "潜力；潜在的可能性"}]}]
+        }
+      ]
+    }
+  ]
+}

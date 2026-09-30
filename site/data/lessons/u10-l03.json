@@ -1,0 +1,794 @@
+{
+  "id": "u10-l03",
+  "part": 1,
+  "unit": 10,
+  "lesson": 3,
+  "pages": [292, 300],
+  "groups": [
+    {
+      "no": 11,
+      "title": "drama 相关",
+      "pages": [292, 293],
+      "map": {
+        "w": "drama",
+        "children": [
+          {"w": "dramatic", "children": [{"w": "dramatically", "rel": "扩"}]},
+          {"w": "drastic", "children": [{"w": "drastically", "rel": "扩"}]},
+          {"w": "tragedy", "children": [
+            {"w": "tragic", "rel": "扩", "children": [{"w": "tragically"}]}
+          ]},
+          {"w": "comedy", "children": [
+            {"w": "ridiculous", "rel": "相关", "children": [{"w": "ridicule", "rel": "扩"}]}
+          ]},
+          {"w": "biography", "children": [
+            {"w": "biographical", "rel": "扩", "children": [{"w": "biographer"}]}
+          ]},
+          {"w": "literature", "children": [
+            {"w": "literary", "rel": "扩", "children": [{"w": "literate"}]},
+            {"w": "literacy", "rel": "形近"},
+            {"w": "literal", "rel": "形近", "children": [{"w": "literally", "rel": "扩"}]},
+            {"w": "best-seller", "rel": "相关", "children": [{"w": "best-selling", "rel": "扩"}]},
+            {"w": "second-hand", "rel": "相关"}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "drama", "freq": 1, "page": 292,
+          "prons": [{"ipa": "/ˈdrɑːmə/", "senses": [{"pos": "n.", "mean": "戏剧；戏剧性；戏剧性情节；激动；兴奋；刺激"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“抓妈”→ 他做游戏时一下子抓住了妈妈，场面充满了“戏剧性”。"},
+          "ex": {"type": "例", "en": "It was recognised that crying in response to drama brought pleasure.", "zh": "人们已经意识到，因戏剧而哭泣能带来愉悦感。", "key": ["drama"]},
+          "ext": []
+        },
+        {
+          "no": 2, "word": "dramatic", "freq": 3, "page": 292,
+          "prons": [{"ipa": "/drəˈmætɪk/", "senses": [{"pos": "adj.", "mean": "突然的；[[巨大的]]；引人注目的；[[戏剧性的]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Climate change will have a dramatic impact on the health of the planet.", "zh": "气候变化将对地球的健康产生巨大影响。", "key": ["dramatic"]},
+          "ext": [{"word": "dramatically", "ipa": "/drəˈmætɪkli/", "senses": [{"pos": "adv.", "mean": "戏剧性地；剧烈地；明显地"}]}]
+        },
+        {
+          "no": 3, "word": "drastic", "freq": 1, "page": 292,
+          "prons": [{"ipa": "/ˈdræstɪk/", "senses": [{"pos": "adj.", "mean": "急剧的；[[激烈的；极端的；严厉的]]"}]}],
+          "tip": {"type": "联想", "text": "dra（音似“抓”）+ stic（联想 stick）→ 他动不动就抓起棍子想要打人，真的太极端了 → 极端的"},
+          "ex": {"type": "真", "year": 2020, "en": "The city officials then decided to take drastic action.", "zh": "市政府官员随后决定采取果断行动。", "key": ["drastic"]},
+          "ext": [{"word": "drastically", "ipa": "/ˈdræstɪkli/", "senses": [{"pos": "adv.", "mean": "彻底地；激烈地"}]}]
+        },
+        {
+          "no": 4, "word": "tragedy", "freq": 2, "page": 292,
+          "prons": [{"ipa": "/ˈtrædʒədi/", "senses": [{"pos": "n.", "mean": "[[悲剧]]，灾难"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“踹着弟”→ 哥哥踹了弟弟一脚，真是“悲剧”。"},
+          "ex": {"type": "例", "en": "His childhood was one part tragedy, equal part mystery.", "zh": "他的童年一半是悲剧，一半是悬疑。", "key": ["tragedy"]},
+          "ext": [
+            {"word": "tragic", "ipa": "/ˈtrædʒɪk/", "senses": [{"pos": "adj.", "mean": "悲惨的"}]},
+            {"word": "tragically", "ipa": "/ˈtrædʒɪkli/", "senses": [{"pos": "adv.", "mean": "悲惨地，悲痛地"}]}
+          ]
+        },
+        {
+          "no": 5, "word": "comedy", "freq": 1, "page": 292,
+          "prons": [{"ipa": "/ˈkɒmədi/", "senses": [{"pos": "n.", "mean": "[[喜剧]]；搞笑的东西"}]}],
+          "tip": {"type": "联想", "text": "come（来）+ dy（音似“弟”）→ 好久不见的弟弟来了，我很高兴 → 喜剧"},
+          "ex": {"type": "真", "year": 2018, "en": "It's a charity comedy night with lots of different acts.", "zh": "这是一个慈善喜剧之夜，有很多不同的表演。", "key": ["comedy"]},
+          "ext": []
+        },
+        {
+          "no": 6, "word": "ridiculous", "freq": 1, "page": 292,
+          "prons": [{"ipa": "/rɪˈdɪkjələs/", "senses": [{"pos": "adj.", "mean": "[[可笑的]]，荒谬的"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“瑞迪可乐死”→ 瑞迪“可笑的”样子把我逗乐了。"},
+          "ex": {"type": "例", "en": "He looks ridiculous in this hat.", "zh": "他戴这顶帽子看上去很可笑。", "key": ["ridiculous"]},
+          "ext": [{"word": "ridicule", "ipa": "/ˈrɪdɪkjuːl/", "senses": [{"pos": "v. & n.", "mean": "嘲笑，奚落"}]}]
+        },
+        {
+          "no": 7, "word": "biography", "freq": 1, "page": 292,
+          "prons": [{"ipa": "/baɪˈɒɡrəfi/", "senses": [{"pos": "n.", "mean": "[[传记（作品）]]"}]}],
+          "tip": {"type": "构词", "text": "bio-（生物，生命）+ graph（写）+ -y（名词后缀）→ 对生命的书写 → 传记"},
+          "ex": {"type": "例", "en": "The biography shows him in a favourable light.", "zh": "传记刻画出了他的正面形象。", "key": ["biography"]},
+          "ext": [
+            {"word": "biographical", "ipa": "/ˌbaɪəˈɡræfɪkl/", "senses": [{"pos": "adj.", "mean": "关于（某人）生平的，传记的"}]},
+            {"word": "biographer", "ipa": "/baɪˈɒɡrəfə(r)/", "senses": [{"pos": "n.", "mean": "传记作家"}]}
+          ]
+        },
+        {
+          "no": 8, "word": "literature", "freq": 2, "page": 293,
+          "prons": [{"ipa": "/ˈlɪtrətʃə(r)/", "senses": [{"pos": "n.", "mean": "[[文献]]；[[文学，文学作品]]"}]}],
+          "tip": {"type": "联想", "text": "liter（联想 litter）+ a + ture（联想 true）→ 他吐槽那些“文学作品”像垃圾一样，真的会害人。"},
+          "ex": {"type": "例", "en": "Paperbacks of popular literature are more likely to be replaced by e-books.", "zh": "通俗文学的平装书更有可能被电子书所取代。", "key": ["literature"]},
+          "ext": [
+            {"word": "literary", "ipa": "/ˈlɪtərəri/", "senses": [{"pos": "adj.", "mean": "文学的；有典型文学作品特征的；从事文学研究（或写作）的"}]},
+            {"word": "literate", "ipa": "/ˈlɪtərət/", "senses": [{"pos": "adj.", "mean": "有文化的"}]}
+          ]
+        },
+        {
+          "no": 9, "word": "literacy", "freq": 1, "page": 293,
+          "prons": [{"ipa": "/ˈlɪtərəsi/", "senses": [{"pos": "n.", "mean": "[[读写能力]]；[[识字]]；[[专业知识]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "Most of the students here need help with literacy and numeracy.", "zh": "这里的大多数学生需要识字和算术方面的帮助。", "key": ["literacy"]},
+          "ext": []
+        },
+        {
+          "no": 10, "word": "literal", "freq": 1, "page": 293,
+          "prons": [{"ipa": "/ˈlɪtərəl/", "senses": [{"pos": "adj.", "mean": "[[字面意义的]]；[[完全按原文的]]；[[缺乏想象力的]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“李特弱”→ 李同学的英语基础特别薄弱，只能按字面意思翻译 → 字面意义的"},
+          "ex": {"type": "例", "en": "I am not referring to \"small\" people in the literal sense of the word.", "zh": "我指的不是字面意义上的“小”人。", "key": ["literal"]},
+          "ext": [{"word": "literally", "ipa": "/ˈlɪtərəli/", "senses": [{"pos": "adv.", "mean": "按字面意义地，逐字地；确实地"}]}]
+        },
+        {
+          "no": 11, "word": "best-seller", "freq": 1, "page": 293,
+          "prons": [{"ipa": "/ˌbest ˈselə(r)/", "senses": [{"pos": "n.", "mean": "[[畅销品]]；[[畅销书]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "He turned this novel into an English best-seller.", "zh": "他把这本小说变成了英语畅销书。", "key": ["best-seller"]},
+          "ext": [{"word": "best-selling", "ipa": "/ˌbest ˈselɪŋ/", "senses": [{"pos": "adj.", "mean": "最畅销的，最红的"}]}]
+        },
+        {
+          "no": 12, "word": "second-hand", "freq": 1, "page": 293,
+          "prons": [{"ipa": "/ˌsekənd ˈhænd/", "senses": [{"pos": "adj.", "mean": "[[二手的]]；间接得来的"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "I bought a second-hand camera.", "zh": "我买了一台二手照相机。", "key": ["second-hand"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 12,
+      "title": "“品牌、标签”相关",
+      "pages": [293, 294],
+      "map": {
+        "w": "“品牌、标签”相关",
+        "children": [
+          {"w": "brand", "children": [
+            {"w": "patent", "rel": "相关", "children": [
+              {"w": "patient", "rel": "形近", "children": [
+                {"w": "patience", "rel": "扩"},
+                {"w": "impatient", "rel": "反义", "children": [{"w": "impatience", "rel": "扩"}]}
+              ]}
+            ]}
+          ]},
+          {"w": "tag", "children": [
+            {"w": "lag", "rel": "形近", "children": [{"w": "pace", "rel": "相关"}]},
+            {"w": "label", "rel": "近义"}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 13, "word": "patience", "freq": 1, "page": 293,
+          "prons": [{"ipa": "/ˈpeɪʃns/", "senses": [{"pos": "n.", "mean": "[[耐心]]；[[忍耐力]]；[[毅力]]；坚忍"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“陪生死”→ 能一直陪着你、生死不离的人，一定很有“耐心”。"},
+          "ex": {"type": "真", "year": 2019, "en": "Learning from experience is something that takes time and patience.", "zh": "从经验中学习需要时间和耐心。", "key": ["patience"]},
+          "ext": []
+        },
+        {
+          "no": 14, "word": "patient", "freq": 1, "page": 293,
+          "prons": [{"ipa": "/ˈpeɪʃnt/", "senses": [
+            {"pos": "n.", "mean": "[[病人]]"},
+            {"pos": "adj.", "mean": "[[有耐心的]]；能忍耐的"}
+          ]}],
+          "tip": {"type": "对照", "text": "照顾病人（patient）要有耐心（patience）。"},
+          "ex": {"type": "例", "en": "He was very patient with me.", "zh": "他对我很有耐心。", "key": ["patient", "with"]},
+          "ext": [
+            {"word": "impatient", "ipa": "/ɪmˈpeɪʃnt/", "senses": [{"pos": "adj.", "mean": "不耐烦的，不耐心的"}]},
+            {"word": "impatience", "ipa": "/ɪmˈpeɪʃns/", "senses": [{"pos": "n.", "mean": "急躁，不耐烦"}]}
+          ]
+        },
+        {
+          "no": 15, "word": "patent", "freq": 1, "page": 294,
+          "prons": [{"ipa": "/ˈpætnt; ˈpeɪtnt/", "senses": [{"pos": "n.", "mean": "[[专利]]；[[专利权]]，专利证书"}]}],
+          "tip": {"type": "对照", "text": "申请专利（patent）是需要有耐心的（patient），因为要等待很久才能审核通过。"},
+          "ex": {"type": "例", "en": "He held a number of patents for his many innovations.", "zh": "他拥有多项发明的专利权。", "key": ["patents"]},
+          "ext": []
+        },
+        {
+          "no": 16, "word": "brand", "freq": 2, "page": 294,
+          "prons": [{"ipa": "/brænd/", "senses": [
+            {"pos": "n.", "mean": "[[商标]]；[[品牌]]"},
+            {"pos": "v.", "mean": "印……商标于；铭记；铭刻于"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“不让的”→“商标”是不能任意转让的。"},
+          "ex": {"type": "真", "year": 2023, "en": "Few people are successful when they try to build their first brand.", "zh": "很少有人在尝试建立自己的第一个品牌时取得成功。", "key": ["brand"]},
+          "ext": []
+        },
+        {
+          "no": 17, "word": "label", "freq": 2, "page": 294,
+          "prons": [{"ipa": "/ˈleɪbl/", "senses": [
+            {"pos": "n.", "mean": "[[标签]]；商标"},
+            {"pos": "v.", "mean": "[[贴标签]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "实验室（lab）门口一般都要贴个标签（label）——“闲人勿扰”。"},
+          "ex": {"type": "真", "year": 2019, "en": "The bottle is sealed, and the label says \"pure water\".", "zh": "瓶子是密封的，标签上写着“纯净水”。", "key": ["label"]},
+          "ext": []
+        },
+        {
+          "no": 18, "word": "tag", "freq": 1, "page": 294,
+          "prons": [{"ipa": "/tæɡ/", "senses": [
+            {"pos": "n.", "mean": "[[标签]]；标牌"},
+            {"pos": "v.", "mean": "[[给……加标签]]；[[把……称作]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "ta（联想“他”）+ g（联想“哥”）→ 他哥哥爱给别人贴“标签”。"},
+          "ex": {"type": "例", "en": "The man was tagged a \"loser\".", "zh": "这个男人被称为“失败者”。", "key": ["tagged"]},
+          "ext": []
+        },
+        {
+          "no": 19, "word": "lag", "freq": 1, "page": 294,
+          "prons": [{"ipa": "/læɡ/", "senses": [
+            {"pos": "n.", "mean": "[[落后]]；（时间上的）间隔"},
+            {"pos": "v.", "mean": "缓缓而行；掉队，[[落后于]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "la（联想“拉”）+ g（联想“哥”）→ 他拉了哥哥一把，因为哥哥“落后”了。"},
+          "ex": {"type": "例", "en": "Ten minutes later, some runners in the race began to lag.", "zh": "十分钟后，比赛中的一些赛跑者开始落后了。", "key": ["lag"]},
+          "ext": []
+        },
+        {
+          "no": 20, "word": "pace", "freq": 1, "page": 294,
+          "prons": [{"ipa": "/peɪs/", "senses": [{"pos": "n.", "mean": "[[步]]；[[速度]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“陪死”→ 你的爱人遇见你之后，在你人生的每一“步”都陪着你，直到死去。"},
+          "ex": {"type": "真", "year": 2019, "en": "Readers proceed at their own pace.", "zh": "读者按照自己的节奏阅读。", "key": ["at", "pace"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 13,
+      "title": "“家庭”相关",
+      "pages": [294, 295],
+      "map": {
+        "w": "“家庭”相关",
+        "children": [
+          {"w": "household", "children": [
+            {"w": "housewife", "rel": "相关", "children": [{"w": "gap"}]}
+          ]},
+          {"w": "garage", "children": [
+            {"w": "rage", "rel": "形近", "children": [
+              {"w": "temper", "rel": "相关", "children": [
+                {"w": "attempt", "rel": "形近", "children": [
+                  {"w": "contempt", "children": [{"w": "contemptible", "rel": "扩"}]}
+                ]}
+              ]}
+            ]},
+            {"w": "glove", "rel": "相关"}
+          ]},
+          {"w": "host", "children": [
+            {"w": "hostess", "rel": "扩"},
+            {"w": "hostile", "rel": "形近", "children": [{"w": "hostility", "rel": "扩"}]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 21, "word": "household", "freq": 3, "page": 294,
+          "prons": [{"ipa": "/ˈhaʊshəʊld/", "senses": [{"pos": "n.", "mean": "[[一家人]]；家庭；同住一所房子的人"}]}],
+          "tip": {"type": "构词", "text": "house（房子）+ hold（容纳）→ 房子里容纳的是“一家人”。"},
+          "ex": {"type": "例", "en": "Most households now own at least one car.", "zh": "现在大多数家庭至少有一辆汽车。", "key": ["households"]},
+          "ext": []
+        },
+        {
+          "no": 22, "word": "housewife", "freq": 1, "page": 294,
+          "prons": [{"ipa": "/ˈhaʊswaɪf/", "senses": [{"pos": "n.", "mean": "[[家庭主妇]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "A housewife who opens a shop online can even out-earn a white-collar worker.", "zh": "一个在网上开店的家庭主妇甚至比一个白领挣得多。", "key": ["housewife"]},
+          "ext": []
+        },
+        {
+          "no": 23, "word": "gap", "freq": 3, "page": 295,
+          "prons": [{"ipa": "/ɡæp/", "senses": [{"pos": "n.", "mean": "[[缝隙]]，缺口；[[差距]]"}]}],
+          "tip": {"type": "对照", "text": "水龙头（tap）上有个缺口（gap）。"},
+          "ex": {"type": "真", "year": 2022, "en": "It often widens the gap between rich and poor and sustains the old world order.", "zh": "它经常扩大贫富差距，维持旧的世界秩序。", "key": ["gap", "between", "and"]},
+          "ext": []
+        },
+        {
+          "no": 24, "word": "garage", "freq": 1, "page": 295,
+          "prons": [{"ipa": "/ˈɡærɑːʒ; ˈɡærɪdʒ/", "senses": [{"pos": "n.", "mean": "[[车库]]；加油站；[[汽车修理厂]]"}]}],
+          "tip": {"type": "联想", "text": "g（联想“哥”）+ a（一）+ rage（生气）→ 哥哥每到一个“车库”停车就生气，因为找个位置太难了。"},
+          "ex": {"type": "例", "en": "Faith in the skill of a garage mechanic is increased by a uniform.", "zh": "一套制服增加了人们对汽车修理厂机械师技能的信心。", "key": ["garage"]},
+          "ext": []
+        },
+        {
+          "no": 25, "word": "rage", "freq": 1, "page": 295,
+          "prons": [{"ipa": "/reɪdʒ/", "senses": [
+            {"pos": "n.", "mean": "[[狂怒]]，狂暴；[[愤怒的行为]]"},
+            {"pos": "v.", "mean": "[[发怒]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "r（形似花）+ age（年龄）→ 青少年正处于花一样的年龄，比较敏感，容易“发怒”。"},
+          "ex": {"type": "例", "en": "She raged when her jewels were stolen.", "zh": "当她的珠宝被偷时，她发怒了。", "key": ["raged"]},
+          "ext": []
+        },
+        {
+          "no": 26, "word": "temper", "freq": 2, "page": 295,
+          "prons": [{"ipa": "/ˈtempə(r)/", "senses": [
+            {"pos": "n.", "mean": "[[坏脾气]]；情绪；[[发怒]]"},
+            {"pos": "v.", "mean": "[[使缓和]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "天气的温度（temperature）就像人的脾气（temper），不太稳定。"},
+          "ex": {"type": "例", "en": "All at once she lost her temper.", "zh": "她突然大发脾气。", "key": ["temper"]},
+          "ext": []
+        },
+        {
+          "no": 27, "word": "attempt", "freq": 3, "page": 295,
+          "prons": [{"ipa": "/əˈtempt/", "senses": [
+            {"pos": "v.", "mean": "[[尝试]]，[[试图]]"},
+            {"pos": "n.", "mean": "[[试图]]，[[努力]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "at-（一再地）+ tempt（诱惑）→ 他一再地诱惑猎物，“试图”使其落入陷阱。"},
+          "ex": {"type": "真", "year": 2021, "en": "They abandoned the attempt to roast coffee beans in space.", "zh": "他们放弃了在太空中烤咖啡豆的尝试。", "key": ["attempt"]},
+          "ext": []
+        },
+        {
+          "no": 28, "word": "contempt", "freq": 1, "page": 295,
+          "prons": [{"ipa": "/kənˈtempt/", "senses": [{"pos": "n.", "mean": "[[轻视]]，[[藐视]]"}]}],
+          "tip": {"type": "联想", "text": "con-（所有）+ tempt（诱惑）→ 所有人都“藐视”无法拒绝利益诱惑的人。"},
+          "ex": {"type": "例", "en": "She looked at him with contempt.", "zh": "她轻蔑地看着他。", "key": ["contempt"]},
+          "ext": [{"word": "contemptible", "ipa": "/kənˈtemptəbl/", "senses": [{"pos": "adj.", "mean": "可轻蔑的；可鄙的；卑劣的"}]}]
+        },
+        {
+          "no": 29, "word": "host", "freq": 1, "page": 295,
+          "prons": [{"ipa": "/həʊst/", "senses": [
+            {"pos": "n.", "mean": "[[主人]]；东道主，[[主持人]]"},
+            {"pos": "v.", "mean": "[[主持]]；[[主办]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“齁死他”→“主人”做的饭太咸了，快齁死人了。"},
+          "ex": {"type": "例", "en": "South Africa hosted the World Cup finals.", "zh": "南非主办了世界杯决赛。", "key": ["hosted"]},
+          "ext": [{"word": "hostess", "ipa": "/ˈhəʊstəs; ˌhəʊˈstes/", "senses": [{"pos": "n.", "mean": "女主人"}]}]
+        },
+        {
+          "no": 30, "word": "hostile", "freq": 1, "page": 295,
+          "prons": [{"ipa": "/ˈhɒstaɪl/", "senses": [{"pos": "adj.", "mean": "[[敌意的]]，[[敌视的]]"}]}],
+          "tip": {"type": "联想", "text": "host（主人）+ (t)i（联想“踢”）+ le（联想“了”）→ 主人踢了他一脚 → 敌意的"},
+          "ex": {"type": "真", "year": 2019, "en": "It tried to arouse hostile feelings among consumers.", "zh": "它试图引起消费者的敌意。", "key": ["hostile"]},
+          "ext": [{"word": "hostility", "ipa": "/hɒˈstɪləti/", "senses": [{"pos": "n.", "mean": "敌意，敌对"}]}]
+        },
+        {
+          "no": 31, "word": "glove", "freq": 1, "page": 295,
+          "prons": [{"ipa": "/ɡlʌv/", "senses": [{"pos": "n.", "mean": "[[手套]]"}]}],
+          "tip": {"type": "联想", "text": "g（音似“哥”）+ love（爱）→ 哥哥很爱妈妈织的这双“手套”。"},
+          "ex": {"type": "例", "en": "He must have been wearing gloves.", "zh": "他一定戴着手套。", "key": ["gloves"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 14,
+      "title": "“航空”相关",
+      "pages": [296, 297],
+      "map": {
+        "w": "“航空”相关",
+        "children": [
+          {"w": "aircraft", "children": [
+            {"w": "craft", "rel": "拆分"},
+            {"w": "aviation", "rel": "相关", "children": [{"w": "jet"}]},
+            {"w": "helicopter", "rel": "相关"}
+          ]},
+          {"w": "airport", "children": [{"w": "terminal", "rel": "相关"}]},
+          {"w": "airline", "children": [
+            {"w": "flight", "rel": "相关", "children": [{"w": "pilot", "rel": "相关"}]},
+            {"w": "airplane", "rel": "扩", "children": [
+              {"w": "plane", "rel": "拆分", "children": [
+                {"w": "plain", "rel": "同音", "children": [
+                  {"w": "complain", "rel": "形近", "children": [{"w": "complaint", "rel": "扩"}]}
+                ]},
+                {"w": "plunge", "rel": "相关", "children": [
+                  {"w": "dive", "rel": "近义", "children": [{"w": "drown", "rel": "相关"}]}
+                ]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 32, "word": "craft", "freq": 3, "page": 296,
+          "prons": [{"ipa": "/krɑːft/", "senses": [
+            {"pos": "n.", "mean": "[[工艺]]；[[技巧]]；[[飞行器]]"},
+            {"pos": "v.", "mean": "（尤指用手工）[[精心制作]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "cra（联想 car）+ ft（联想“福特”）→ 福特车的“工艺”是很好的。"},
+          "ex": {"type": "例", "en": "Each doll is crafted individually by specialists.", "zh": "每个玩偶都由专业人员手工制作。", "key": ["crafted"]},
+          "ext": []
+        },
+        {
+          "no": 33, "word": "aircraft", "freq": 1, "page": 296,
+          "prons": [{"ipa": "/ˈeəkrɑːft/", "senses": [{"pos": "n.", "mean": "[[飞机]]；[[航空器]]"}]}],
+          "tip": {"type": "构词", "text": "air（空中）+ craft（飞行器）→ 飞机"},
+          "ex": {"type": "真", "year": 2018, "en": "He owns a fleet of aircraft.", "zh": "他拥有一支机队。", "key": ["aircraft"]},
+          "ext": []
+        },
+        {
+          "no": 34, "word": "airport", "freq": 1, "page": 296,
+          "prons": [{"ipa": "/ˈeəpɔːt/", "senses": [{"pos": "n.", "mean": "[[航空站]]；[[航空港]]；[[机场]]"}]}],
+          "tip": {"type": "构词", "text": "air（空中）+ port（港口）→ 航空站"},
+          "ex": {"type": "例", "en": "The plane is going to land at another airport.", "zh": "飞机将在另一个机场降落。", "key": ["airport"]},
+          "ext": []
+        },
+        {
+          "no": 35, "word": "aviation", "freq": 1, "page": 296,
+          "prons": [{"ipa": "/ˌeɪviˈeɪʃn/", "senses": [{"pos": "n.", "mean": "[[航空]]；[[航空制造业]]"}]}],
+          "tip": {"type": "联想", "text": "a（一）+ vi（形似罗马数字 6）+ -ation（名词后缀）→ 他研究“航空”学，一天进行六次测试。"},
+          "ex": {"type": "真", "year": 2018, "en": "It uses the latest aviation technology.", "zh": "它采用最新的航空技术。", "key": ["aviation"]},
+          "ext": []
+        },
+        {
+          "no": 36, "word": "jet", "freq": 1, "page": 296,
+          "prons": [{"ipa": "/dʒet/", "senses": [{"pos": "n.", "mean": "[[喷气式飞机]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“接她”→ 他开着“喷气式飞机”去接她。"},
+          "ex": {"type": "例", "en": "The giant jet will be forced to land.", "zh": "巨型喷气式飞机将被迫降落。", "key": ["jet"]},
+          "ext": []
+        },
+        {
+          "no": 37, "word": "terminal", "freq": 2, "page": 296,
+          "prons": [{"ipa": "/ˈtɜːmɪnl/", "senses": [
+            {"pos": "n.", "mean": "[[航站楼]]；[[终点站]]；[[计算机终端]]"},
+            {"pos": "adj.", "mean": "[[终点的]]；[[晚期的]]；不治的"}
+          ]}],
+          "tip": {"type": "联想", "text": "term（学期，期限）+ inal（联想 final）→ 最终期限 → 终点的"},
+          "ex": {"type": "例", "en": "He has terminal lung cancer.", "zh": "他患有晚期肺癌。", "key": ["terminal"]},
+          "ext": []
+        },
+        {
+          "no": 38, "word": "airline", "freq": 1, "page": 296,
+          "prons": [{"ipa": "/ˈeəlaɪn/", "senses": [{"pos": "n.", "mean": "[[航空公司]]"}]}],
+          "tip": {"type": "构词", "text": "air（空中）+ line（线）→ 航线 → 航空公司"},
+          "ex": {"type": "例", "en": "Our job as designers is to reinforce the airline's brand.", "zh": "作为设计师，我们的工作就是强化航空公司的品牌。", "key": ["airline's"]},
+          "ext": [
+            {"word": "airplane", "ipa": "/ˈeəpleɪn/", "senses": [{"pos": "n.", "mean": "飞机"}]},
+            {"word": "plane", "ipa": "/pleɪn/", "senses": [
+              {"pos": "n.", "mean": "飞机；平面；水平"},
+              {"pos": "adj.", "mean": "平的"}
+            ]}
+          ]
+        },
+        {
+          "no": 39, "word": "flight", "freq": 1, "page": 296,
+          "prons": [{"ipa": "/flaɪt/", "senses": [{"pos": "n.", "mean": "[[飞行]]；[[飞机的航程]]；[[航班]]"}]}],
+          "tip": {"type": "联想", "text": "f（联想“飞”）+ light（光）→“航班”的“飞行”速度就像光一样快。"},
+          "ex": {"type": "例", "en": "Long queues and delayed flights at airports have become a topic for conversation in Britain.", "zh": "在英国，机场排长队和航班延误已经成为人们谈论的话题。", "key": ["flights"]},
+          "ext": []
+        },
+        {
+          "no": 40, "word": "helicopter", "freq": 1, "page": 296,
+          "prons": [{"ipa": "/ˈhelɪkɒptə(r)/", "senses": [{"pos": "n.", "mean": "[[直升机]]"}]}],
+          "tip": {"type": "联想", "text": "heli（音似“海狸”）+ cop（警察）+ ter → 海狸警察开着“直升机”去追犯罪分子。"},
+          "ex": {"type": "例", "en": "He was rushed to the hospital by helicopter.", "zh": "他由直升机火速送到医院。", "key": ["helicopter"]},
+          "ext": []
+        },
+        {
+          "no": 41, "word": "pilot", "freq": 1, "page": 297,
+          "prons": [{"ipa": "/ˈpaɪlət/", "senses": [
+            {"pos": "n.", "mean": "[[飞行员]]"},
+            {"pos": "adj.", "mean": "[[试点的]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“怕了它”→ 当飞机遭遇强气流时，“飞行员”都怕了。"},
+          "ex": {"type": "例", "en": "There are a few pilot schools already making the transition to digital books.", "zh": "有一些试点学校已经开始向数字图书过渡。", "key": ["pilot"]},
+          "ext": []
+        },
+        {
+          "no": 42, "word": "plain", "freq": 1, "page": 297,
+          "prons": [{"ipa": "/pleɪn/", "senses": [
+            {"pos": "n.", "mean": "[[大平原]]；朴实无华的东西"},
+            {"pos": "adj.", "mean": "[[普通的]]；[[直接的]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“扑来”→ 坐在高铁上往外看，“大平原”映入眼帘，像要扑过来一样。"},
+          "ex": {"type": "例", "en": "The geographic feature of this country is mainly plains.", "zh": "这个国家的主要地理特征是平原。", "key": ["plains"]},
+          "ext": []
+        },
+        {
+          "no": 43, "word": "complain", "freq": 3, "page": 297,
+          "prons": [{"ipa": "/kəmˈpleɪn/", "senses": [{"pos": "v.", "mean": "[[抱怨]]；[[埋怨]]；发牢骚"}]}],
+          "tip": {"type": "联想", "text": "com-（所有）+ plain（音似“扑来”）→ 所有人都扑来，向他“抱怨”。"},
+          "ex": {"type": "真", "year": 2019, "en": "Some of the people who work in Songdo complain about boredom in the workplace.", "zh": "一些在松岛工作的人抱怨工作场所无聊。", "key": ["complain about"]},
+          "ext": [{"word": "complaint", "ipa": "/kəmˈpleɪnt/", "senses": [{"pos": "n.", "mean": "抱怨；投诉；控告"}]}]
+        },
+        {
+          "no": 44, "word": "plunge", "freq": 1, "page": 297,
+          "prons": [{"ipa": "/plʌndʒ/", "senses": [
+            {"pos": "v.", "mean": "[[使突然前冲（或下落）]]；[[骤降]]"},
+            {"pos": "n.", "mean": "（价值或数量的）[[骤然下跌]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“扑浪激”→ 他突然冲向大海，扑通一下跳入水中，激起浪花 → 使突然前冲（或下落）"},
+          "ex": {"type": "真", "year": 2016, "en": "People the world over are afraid of a further plunge in oil prices.", "zh": "全世界的人都担心油价会进一步下跌。", "key": ["plunge"]},
+          "ext": []
+        },
+        {
+          "no": 45, "word": "dive", "freq": 2, "page": 297,
+          "prons": [{"ipa": "/daɪv/", "senses": [
+            {"pos": "v.", "mean": "[[跳水]]；[[急剧下降]]"},
+            {"pos": "n.", "mean": "[[跳水]]；[[潜水]]；[[暴跌]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "di（联想“弟”）+ ve（音似“我”）→ 弟弟和我练习“跳水”。"},
+          "ex": {"type": "例", "en": "He dived into the river but couldn't reach the surface.", "zh": "他跳进河里，但不能浮到水面。", "key": ["dived"]},
+          "ext": []
+        },
+        {
+          "no": 46, "word": "drown", "freq": 2, "page": 297,
+          "prons": [{"ipa": "/draʊn/", "senses": [{"pos": "v.", "mean": "[[淹死]]，[[溺死]]；[[沉浸于]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“撞”→ 一只小鸭子游泳时不小心撞上了石头，差点“淹死”。"},
+          "ex": {"type": "例", "en": "Some young adults are drowning in credit-card debt.", "zh": "一些年轻人正被信用卡债务淹没。", "key": ["drowning"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 15,
+      "title": "“食物”相关",
+      "pages": [297, 299],
+      "map": {
+        "w": "“食物”相关",
+        "children": [
+          {"w": "pork", "children": [{"w": "beef"}]},
+          {"w": "slice"},
+          {"w": "onion"},
+          {"w": "snack", "children": [{"w": "chip", "rel": "相关"}]},
+          {"w": "sauce"},
+          {"w": "chef"},
+          {"w": "dine", "children": [{"w": "diner", "rel": "扩"}]},
+          {"w": "picnic"},
+          {"w": "chew", "children": [{"w": "gum", "rel": "相关"}]},
+          {"w": "lick"},
+          {"w": "napkin", "children": [
+            {"w": "nap", "rel": "拆分", "children": [
+              {"w": "puzzle", "rel": "相关", "children": [
+                {"w": "puzzlement", "rel": "扩"},
+                {"w": "guess", "rel": "相关"}
+              ]}
+            ]}
+          ]},
+          {"w": "pour"}
+        ]
+      },
+      "entries": [
+        {
+          "no": 47, "word": "pork", "freq": 1, "page": 298,
+          "prons": [{"ipa": "/pɔːk/", "senses": [{"pos": "n.", "mean": "[[猪肉]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“剖开”→ 他把“猪肉”剖开。"},
+          "ex": {"type": "例", "en": "The restaurant introduced barbecue pork ribs.", "zh": "该餐厅推出了烤猪肋排。", "key": ["pork"]},
+          "ext": []
+        },
+        {
+          "no": 48, "word": "beef", "freq": 1, "page": 298,
+          "prons": [{"ipa": "/biːf/", "senses": [{"pos": "n.", "mean": "[[牛肉]]；怨言"}]}],
+          "tip": {"type": "联想", "text": "bee（蜜蜂）+ f（联想“飞”）→ 蜜蜂飞到“牛肉”上了。"},
+          "ex": {"type": "例", "en": "We sat by the fireplace, eating beef and onions.", "zh": "我们坐在壁炉旁，吃着牛肉和洋葱。", "key": ["beef"]},
+          "ext": []
+        },
+        {
+          "no": 49, "word": "slice", "freq": 1, "page": 298,
+          "prons": [{"ipa": "/slaɪs/", "senses": [
+            {"pos": "n.", "mean": "[[薄片]]；[[小块]]；[[部分]]"},
+            {"pos": "v.", "mean": "[[切]]；[[划]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "s（联想“美女”）+ lice（音似“辣死”）→ 美女吃了一“小块”辣椒，就被辣到了。"},
+          "ex": {"type": "例", "en": "She asked the waiter to cut the cheese into slices.", "zh": "她请服务员把奶酪切成薄片。", "key": ["slices"]},
+          "ext": []
+        },
+        {
+          "no": 50, "word": "chip", "freq": 3, "page": 298,
+          "prons": [{"ipa": "/tʃɪp/", "senses": [{"pos": "n.", "mean": "[[油炸土豆条]]；（木头、玻璃等的）[[缺口]]；[[碎片]]；[[筹码]]"}]}],
+          "tip": {"type": "联想", "text": "chi（联想“吃”）+ p（联想“盘”）→ 我吃了一盘“油炸土豆条”。"},
+          "ex": {"type": "例", "en": "Performance is your best bargaining chip when you are seeking a raise.", "zh": "当你要求加薪时，业绩是你最好的谈判筹码。", "key": ["chip"]},
+          "ext": []
+        },
+        {
+          "no": 51, "word": "onion", "freq": 1, "page": 298,
+          "prons": [{"ipa": "/ˈʌnjən/", "senses": [{"pos": "n.", "mean": "[[洋葱]]，[[洋葱头]]"}]}],
+          "tip": {"type": "联想", "text": "on（在……上）+ i（形似 1）+ on（在……上）→ 剥“洋葱”时，剥了上面一层，下面还有一层。"},
+          "ex": {"type": "例", "en": "Experts observe that \"textbooks come in layers, something like an onion.\"", "zh": "专家说“教科书是分层的，有点像洋葱。”", "key": ["onion"]},
+          "ext": []
+        },
+        {
+          "no": 52, "word": "snack", "freq": 3, "page": 298,
+          "prons": [{"ipa": "/snæk/", "senses": [{"pos": "n.", "mean": "[[点心]]；[[小吃]]；[[零食]]；[[快餐]]"}]}],
+          "tip": {"type": "对照", "text": "蛇（snake）也爱吃小吃（snack）。"},
+          "ex": {"type": "真", "year": 2020, "en": "We get almost 25% of our daily calories from snacks.", "zh": "我们每天获得的热量中的大约 25% 来自零食。", "key": ["snacks"]},
+          "ext": []
+        },
+        {
+          "no": 53, "word": "sauce", "freq": 1, "page": 298,
+          "prons": [{"ipa": "/sɔːs/", "senses": [{"pos": "n.", "mean": "[[调味汁]]；[[酱]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“臊子”→ 炸“酱”面里面有臊子。"},
+          "ex": {"type": "例", "en": "I prefer ice cream with chocolate sauce.", "zh": "我更喜欢加巧克力酱的冰激凌。", "key": ["sauce"]},
+          "ext": []
+        },
+        {
+          "no": 54, "word": "chef", "freq": 1, "page": 298,
+          "prons": [{"ipa": "/ʃef/", "senses": [{"pos": "n.", "mean": "[[厨师]]；[[主厨]]"}]}],
+          "tip": {"type": "联想", "text": "che（联想“车”）+ f（联想“夫”）→ 车夫失业后来当“厨师”。"},
+          "ex": {"type": "例", "en": "He learned his trade from a famous dessert chef.", "zh": "他从一位著名甜点主厨那里学到了手艺。", "key": ["chef"]},
+          "ext": []
+        },
+        {
+          "no": 55, "word": "dine", "freq": 1, "page": 298,
+          "prons": [{"ipa": "/daɪn/", "senses": [{"pos": "v.", "mean": "[[进餐]]；[[用饭]]"}]}],
+          "tip": {"type": "对照", "text": "dinner n.正餐，晚餐 → dine v."},
+          "ex": {"type": "例", "en": "This can help improve the quality of the restaurants they dine in.", "zh": "这能帮助提高他们就餐的餐馆的质量。", "key": ["dine"]},
+          "ext": [{"word": "diner", "ipa": "/ˈdaɪnə(r)/", "senses": [{"pos": "n.", "mean": "进餐者；食客"}]}]
+        },
+        {
+          "no": 56, "word": "picnic", "freq": 1, "page": 298,
+          "prons": [{"ipa": "/ˈpɪknɪk/", "senses": [
+            {"pos": "n.", "mean": "[[郊游]]，[[野餐]]"},
+            {"pos": "v.", "mean": "[[野餐]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "pic（联想 pick）+ nic（音似“你磕”）→ 他周末出去“野餐”了，在采摘水果时磕到了腿。"},
+          "ex": {"type": "真", "year": 2022, "en": "It turns parks into picnic sites.", "zh": "它把公园变成了野餐地。", "key": ["picnic"]},
+          "ext": []
+        },
+        {
+          "no": 57, "word": "chew", "freq": 1, "page": 298,
+          "prons": [{"ipa": "/tʃuː/", "senses": [{"pos": "v.", "mean": "[[咀嚼]]，[[嚼碎]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“粗”→ 吃太粗糙的食物时，要多“咀嚼”。"},
+          "ex": {"type": "例", "en": "After the operation you may find it difficult to chew and swallow.", "zh": "手术后你可能会发现难以咀嚼和吞咽。", "key": ["chew"]},
+          "ext": []
+        },
+        {
+          "no": 58, "word": "gum", "freq": 1, "page": 299,
+          "prons": [{"ipa": "/ɡʌm/", "senses": [{"pos": "n.", "mean": "牙龈；[[口香糖]]；[[树胶]]"}]}],
+          "tip": {"type": "联想", "text": "gu（音似“尬”）+ m（联想“妹”）→ 妹嚼了块“口香糖”来掩饰尴尬。"},
+          "ex": {"type": "例", "en": "I do not chew gum in public.", "zh": "我不在公共场合嚼口香糖。", "key": ["gum"]},
+          "ext": []
+        },
+        {
+          "no": 59, "word": "lick", "freq": 1, "page": 299,
+          "prons": [{"ipa": "/lɪk/", "senses": [
+            {"pos": "v.", "mean": "[[舔]]；掠过；（火舌）舔食"},
+            {"pos": "n.", "mean": "[[舔]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“立刻”→ 小狗口渴了，看到有水就立刻“舔”起来了。"},
+          "ex": {"type": "例", "en": "He likes to lick the covering of the yogurt.", "zh": "他喜欢舔酸奶的盖子。", "key": ["lick"]},
+          "ext": []
+        },
+        {
+          "no": 60, "word": "napkin", "freq": 1, "page": 299,
+          "prons": [{"ipa": "/ˈnæpkɪn/", "senses": [{"pos": "n.", "mean": "[[餐巾]]；[[餐巾纸]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“奶扑啃”→ 小宝宝看到酸奶块就扑过去啃了起来，我要用“餐巾纸”给他擦拭一下。"},
+          "ex": {"type": "例", "en": "She dabbed her mouth with her table napkin.", "zh": "她用餐巾轻轻擦了擦嘴。", "key": ["napkin"]},
+          "ext": []
+        },
+        {
+          "no": 61, "word": "nap", "freq": 1, "page": 299,
+          "prons": [{"ipa": "/næp/", "senses": [
+            {"pos": "v.", "mean": "（日间的）[[小睡，打盹]]"},
+            {"pos": "n.", "mean": "（日间的）[[小睡]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "na（音似“奶”）+ p（联想“趴”）→ 奶奶趴在那里“小睡”了一会儿。"},
+          "ex": {"type": "真", "year": 2020, "en": "Taking a nap after learning can help you find the way through the maze.", "zh": "学习后小睡一会儿可以帮助你找到走出迷宫的路。", "key": ["Taking a nap"]},
+          "ext": []
+        },
+        {
+          "no": 62, "word": "pour", "freq": 1, "page": 299,
+          "prons": [{"ipa": "/pɔː(r)/", "senses": [{"pos": "v.", "mean": "[[倾倒]]；[[倒（饮料等）]]；[[倾泻]]；[[倾盆而下]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“泼”→ 大雨下得就像泼下来一样 → 倾泻"},
+          "ex": {"type": "例", "en": "Tea is poured into a cup from a teapot.", "zh": "茶是从茶壶倒进杯子里的。", "key": ["poured"]},
+          "ext": []
+        },
+        {
+          "no": 63, "word": "puzzle", "freq": 1, "page": 299,
+          "prons": [{"ipa": "/ˈpʌzl/", "senses": [
+            {"pos": "v.", "mean": "[[使困惑]]，[[使迷惑]]"},
+            {"pos": "n.", "mean": "[[令人费解的人或事物]]；[[难题]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "pu（音似“趴”）+ zz（联想“睡觉”的符号）+ le（联想“了”）→ 我被“难题”困住，趴着睡着了。"},
+          "ex": {"type": "真", "year": 2019, "en": "Their functioning is still a puzzle to be solved.", "zh": "它们的功能仍然是一个有待解决的难题。", "key": ["puzzle"]},
+          "ext": [{"word": "puzzlement", "ipa": "/ˈpʌzlmənt/", "senses": [{"pos": "n.", "mean": "迷惘；困惑"}]}]
+        },
+        {
+          "no": 64, "word": "guess", "freq": 1, "page": 299,
+          "prons": [{"ipa": "/ɡes/", "senses": [{"pos": "v. & n.", "mean": "[[猜测，推测]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“该死”→ 该死，又让我“猜测”答案。"},
+          "ex": {"type": "例", "en": "They're asked to guess that person's name.", "zh": "他们被要求猜出那个人的名字。", "key": ["guess"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 16,
+      "title": "“吓唬”相关",
+      "pages": [299, 300],
+      "map": {
+        "w": "“吓唬”相关",
+        "children": [
+          {"w": "terror", "children": [
+            {"w": "terrorist", "rel": "扩", "children": [
+              {"w": "terrorism", "children": [{"w": "terrify"}]}
+            ]},
+            {"w": "rebel", "rel": "相关", "children": [
+              {"w": "rebellion", "rel": "扩", "children": [
+                {"w": "riot", "rel": "相关", "children": [{"w": "riotous", "rel": "扩"}]}
+              ]},
+              {"w": "rebellious", "rel": "扩"}
+            ]}
+          ]},
+          {"w": "horror", "children": [
+            {"w": "horrible", "rel": "扩", "children": [{"w": "horrify"}]},
+            {"w": "shock", "rel": "近义"},
+            {"w": "pale", "rel": "相关", "children": [
+              {"w": "palm", "rel": "形近", "children": [{"w": "limb", "rel": "相关"}]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 65, "word": "rebel", "freq": 1, "page": 300,
+          "prons": [
+            {"ipa": "/rɪˈbel/", "senses": [{"pos": "v.", "mean": "[[造反]]，[[反叛]]，[[反抗]]"}]},
+            {"ipa": "/ˈrebl/", "senses": [{"pos": "n.", "mean": "[[造反者]]；[[反对者]]"}]}
+          ],
+          "tip": {"type": "联想", "text": "re-（再）+ bel（联想 bell）→ 警铃再次被摇响，有人在“造反”。"},
+          "ex": {"type": "例", "en": "He attempts to rebel against the existing social order.", "zh": "他企图反抗现有的社会秩序。", "key": ["rebel"]},
+          "ext": [
+            {"word": "rebellion", "ipa": "/rɪˈbeljən/", "senses": [{"pos": "n.", "mean": "谋反，叛乱；叛逆"}]},
+            {"word": "rebellious", "ipa": "/rɪˈbeljəs/", "senses": [{"pos": "adj.", "mean": "反叛的；叛逆的"}]}
+          ]
+        },
+        {
+          "no": 66, "word": "riot", "freq": 1, "page": 300,
+          "prons": [{"ipa": "/ˈraɪət/", "senses": [
+            {"pos": "n.", "mean": "[[暴乱]]，[[骚动]]"},
+            {"pos": "v.", "mean": "[[发生暴乱]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "rio（联想 Rio，酒品牌）+ t（联想“他”）→ 喝醉酒的他引发了“暴乱”。"},
+          "ex": {"type": "例", "en": "The police were able to take preventive action and avoid a possible riot.", "zh": "警方得以采取防范措施，避免了可能发生的暴乱。", "key": ["riot"]},
+          "ext": [{"word": "riotous", "ipa": "/ˈraɪətəs/", "senses": [{"pos": "adj.", "mean": "骚乱的，暴乱的；狂欢的，纵情欢闹的"}]}]
+        },
+        {
+          "no": 67, "word": "terror", "freq": 1, "page": 300,
+          "prons": [{"ipa": "/ˈterə(r)/", "senses": [{"pos": "n.", "mean": "[[恐惧]]；[[恐怖行动]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“太弱”→ 他太软弱，遇到一点挫折就生“恐惧”。"},
+          "ex": {"type": "例", "en": "Her eyes were filled with terror.", "zh": "她的眼睛里充满了恐惧。", "key": ["terror"]},
+          "ext": [
+            {"word": "terrorist", "ipa": "/ˈterərɪst/", "senses": [{"pos": "n.", "mean": "恐怖分子"}]},
+            {"word": "terrorism", "ipa": "/ˈterərɪzəm/", "senses": [{"pos": "n.", "mean": "恐怖主义"}]}
+          ]
+        },
+        {
+          "no": 68, "word": "terrify", "freq": 1, "page": 300,
+          "prons": [{"ipa": "/ˈterɪfaɪ/", "senses": [{"pos": "v.", "mean": "[[使惊吓]]；[[恐吓]]；[[威胁]]"}]}],
+          "tip": {"type": "构词", "text": "terr（怕，恐吓）+ -ify（动词后缀）→ 使惊吓；恐吓；威胁"},
+          "ex": {"type": "真", "year": 2017, "en": "They could sometimes terrify adults.", "zh": "它们有时会吓到成年人。", "key": ["terrify"]},
+          "ext": []
+        },
+        {
+          "no": 69, "word": "shock", "freq": 3, "page": 300,
+          "prons": [{"ipa": "/ʃɒk/", "senses": [
+            {"pos": "n.", "mean": "[[震惊]]；[[休克]]；[[令人震惊的事]]"},
+            {"pos": "v.", "mean": "[[使震惊]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“休克”。"},
+          "ex": {"type": "真", "year": 2023, "en": "These are machines that shock and awe you.", "zh": "这些机器会让你感到震惊和敬畏。", "key": ["shock"]},
+          "ext": []
+        },
+        {
+          "no": 70, "word": "horror", "freq": 1, "page": 300,
+          "prons": [{"ipa": "/ˈhɒrə(r)/", "senses": [{"pos": "n.", "mean": "[[震惊]]；[[恐惧]]；[[恐怖故事]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“嚎我”→ 它对着我嚎叫，让我产生了“恐惧”。"},
+          "ex": {"type": "例", "en": "I have heard some horror stories.", "zh": "我听说过一些恐怖故事。", "key": ["horror"]},
+          "ext": [
+            {"word": "horrible", "ipa": "/ˈhɒrəbl/", "senses": [{"pos": "adj.", "mean": "可怕的；糟糕的，讨厌的"}]},
+            {"word": "horrify", "ipa": "/ˈhɒrɪfaɪ/", "senses": [{"pos": "v.", "mean": "使恐怖，使毛骨悚然"}]}
+          ]
+        },
+        {
+          "no": 71, "word": "pale", "freq": 1, "page": 300,
+          "prons": [{"ipa": "/peɪl/", "senses": [
+            {"pos": "adj.", "mean": "[[苍白的]]；[[浅的]]，[[淡的]]"},
+            {"pos": "v.", "mean": "[[变苍白]]；[[变淡]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "pa（联想“怕”）+ le（联想“了”）→ 他的脸色逐渐“变苍白”，因为他害怕了。"},
+          "ex": {"type": "例", "en": "He was pale and looked sick to death.", "zh": "他脸色苍白，看上去病入膏肓。", "key": ["pale"]},
+          "ext": []
+        },
+        {
+          "no": 72, "word": "palm", "freq": 1, "page": 300,
+          "prons": [{"ipa": "/pɑːm/", "senses": [{"pos": "n.", "mean": "[[手掌]]，[[手心]]；[[棕榈树]]"}]}],
+          "tip": {"type": "联想", "text": "pa（联想“怕”）+ l（联想“了”）+ m（联想“吗”）→ 如来佛祖将悟空困于“手掌”之中，并问他“怕了吗”。"},
+          "ex": {"type": "真", "year": 2017, "en": "He fell from a tall palm tree by accident.", "zh": "他不小心从一棵高棕榈树上摔了下来。", "key": ["palm"]},
+          "ext": []
+        },
+        {
+          "no": 73, "word": "limb", "freq": 1, "page": 300,
+          "prons": [{"ipa": "/lɪm/", "senses": [{"pos": "n.", "mean": "[[肢]]；[[大树枝]]"}]}],
+          "tip": {"type": "联想", "text": "li（联想“立”）+ m（联想“妹”）+ b → 妹妹站在一个“大树枝”上。"},
+          "ex": {"type": "真", "year": 2017, "en": "It has got one of its limbs injured.", "zh": "它的一条腿受伤了。", "key": ["limbs"]},
+          "ext": []
+        }
+      ]
+    }
+  ]
+}

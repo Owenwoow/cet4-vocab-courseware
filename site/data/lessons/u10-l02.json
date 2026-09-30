@@ -1,0 +1,548 @@
+{
+  "id": "u10-l02",
+  "part": 1,
+  "unit": 10,
+  "lesson": 2,
+  "pages": [285, 291],
+  "groups": [
+    {
+      "no": 7,
+      "title": "mit 相关",
+      "pages": [285, 287],
+      "map": {
+        "w": "mit 相关",
+        "children": [
+          {"w": "transmit", "children": [{"w": "transmission", "rel": "扩"}, {"w": "transmitter", "rel": "扩"}]},
+          {"w": "omit", "children": [
+            {"w": "omission", "rel": "扩"},
+            {"w": "mission", "rel": "形近", "children": [
+              {"w": "dismiss", "rel": "同根", "children": [{"w": "dismissal", "rel": "扩"}]},
+              {"w": "missile", "rel": "同根"}
+            ]}
+          ]},
+          {"w": "emit", "children": [
+            {"w": "emission", "rel": "扩"},
+            {"w": "scent", "rel": "相关", "children": [{"w": "poison", "children": [{"w": "poisonous", "rel": "扩"}]}]}
+          ]},
+          {"w": "submit", "children": [{"w": "submission", "rel": "扩"}, {"w": "submissive", "rel": "扩"}]},
+          {"w": "admit", "children": [{"w": "admission", "rel": "扩"}, {"w": "admittance", "rel": "扩"}, {"w": "admittedly", "rel": "扩"}]},
+          {"w": "commit", "children": [
+            {"w": "commitment", "rel": "扩"},
+            {"w": "committee", "rel": "形近", "children": [{"w": "commission", "rel": "近义"}]}
+          ]},
+          {"w": "summit", "children": [
+            {"w": "peak", "rel": "近义"},
+            {"w": "ceiling", "rel": "相关", "children": [
+              {"w": "altitude", "children": [
+                {"w": "attitude", "rel": "形近", "children": [{"w": "aptitude"}]}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 1, "word": "scent", "freq": 1, "page": 285,
+          "prons": [{"ipa": "/sent/", "senses": [
+            {"pos": "n.", "mean": "[[香味]]；[[（人的）气味，气息]]；[[察觉]]"},
+            {"pos": "v.", "mean": "[[嗅出]]；[[觉察出]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "他给我邮寄了（sent）一束花，香味（scent）扑鼻。"},
+          "ex": {"type": "例", "en": "Scientists have found that scents affect working efficiency.", "zh": "科学家发现，气味可以影响工作效率。", "key": ["scents"]},
+          "ext": []
+        },
+        {
+          "no": 2, "word": "poison", "freq": 2, "page": 285,
+          "prons": [{"ipa": "/ˈpɔɪzn/", "senses": [
+            {"pos": "n.", "mean": "[[毒]]，[[毒药]]"},
+            {"pos": "v.", "mean": "[[毒害]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“泼一身”→他被泼了一身“毒药”。"},
+          "ex": {"type": "真", "year": 2018, "en": "What people eat can be medicine or poison.", "zh": "人们吃的东西可能是药，也可能是毒药。", "key": ["poison"]},
+          "ext": [{"word": "poisonous", "ipa": "/ˈpɔɪzənəs/", "senses": [{"pos": "adj.", "mean": "有毒的，有害的"}]}]
+        },
+        {
+          "no": 3, "word": "transmit", "freq": 2, "page": 285,
+          "prons": [{"ipa": "/trænzˈmɪt/", "senses": [{"pos": "v.", "mean": "[[传输]]；[[传播]]；[[发射]]"}]}],
+          "tip": {"type": "联想", "text": "trans-（从……到……）+ mi（音似“妹”）+ t（联想“他”）→ 妹妹和他成为朋友是从传纸条开始的 → 传输"},
+          "ex": {"type": "例", "en": "The ceremony was transmitted live by satellite to over fifty countries.", "zh": "典礼通过卫星向五十多个国家进行了实况转播。", "key": ["transmitted"]},
+          "ext": [
+            {"word": "transmission", "ipa": "/trænzˈmɪʃn/", "senses": [{"pos": "n.", "mean": "传送；传播"}]},
+            {"word": "transmitter", "ipa": "/trænzˈmɪtə(r)/", "senses": [{"pos": "n.", "mean": "传送者；发射机"}]}
+          ]
+        },
+        {
+          "no": 4, "word": "omit", "freq": 1, "page": 285,
+          "prons": [{"ipa": "/əˈmɪt/", "senses": [{"pos": "v.", "mean": "[[删除]]；[[忽略]]；[[遗漏]]；[[不做]]"}]}],
+          "tip": {"type": "联想", "text": "o（形似圆圈）+ mit（送）→ 把圈中的送出去 → 删除"},
+          "ex": {"type": "例", "en": "His name had been omitted from the list of honor students.", "zh": "他的名字被从优秀学生名单上删除了。", "key": ["omitted", "from"]},
+          "ext": [{"word": "omission", "ipa": "/əˈmɪʃn/", "senses": [{"pos": "n.", "mean": "省略；遗漏"}]}]
+        },
+        {
+          "no": 5, "word": "mission", "freq": 2, "page": 285,
+          "prons": [{"ipa": "/ˈmɪʃn/", "senses": [{"pos": "n.", "mean": "[[使命]]，[[任务]]"}]}],
+          "tip": {"type": "联想", "text": "miss（= mit，送）+ -ion（名词后缀）→ 谍战片里，卧底必须想方设法把情报送出去，这是“任务”。"},
+          "ex": {"type": "例", "en": "Learning is a daily experience and a lifetime mission.", "zh": "学习是每天的经历，也是一生的使命。", "key": ["mission"]},
+          "ext": []
+        },
+        {
+          "no": 6, "word": "dismiss", "freq": 2, "page": 285,
+          "prons": [{"ipa": "/dɪsˈmɪs/", "senses": [{"pos": "v.", "mean": "[[不予考虑]]；[[驳回]]；[[摒除（思想、感情等）]]；[[解雇]]"}]}],
+          "tip": {"type": "构词", "text": "dis-（分开）+ miss（= mit，送）→ 送走，使分开 → 解雇"},
+          "ex": {"type": "例", "en": "I think we can dismiss their objections.", "zh": "我认为我们可以驳回他们的异议。", "key": ["dismiss"]},
+          "ext": [{"word": "dismissal", "ipa": "/dɪsˈmɪsl/", "senses": [{"pos": "n.", "mean": "免职，解雇；不予考虑"}]}]
+        },
+        {
+          "no": 7, "word": "missile", "freq": 1, "page": 286,
+          "prons": [{"ipa": "/ˈmɪsaɪl/", "senses": [{"pos": "n.", "mean": "[[导弹]]；[[投射物]]"}]}],
+          "tip": {"type": "联想", "text": "miss（错过）+ i（我）+ le（联想“了”）→ 我错过了“导弹”发射的播出画面。"},
+          "ex": {"type": "例", "en": "The army fired more than two hundred missiles.", "zh": "军队发射了200多枚导弹。", "key": ["missiles"]},
+          "ext": []
+        },
+        {
+          "no": 8, "word": "emit", "freq": 2, "page": 286,
+          "prons": [{"ipa": "/ɪˈmɪt/", "senses": [{"pos": "v.", "mean": "[[发出]]，[[射出]]；[[排出]]"}]}],
+          "tip": {"type": "构词", "text": "e-（出去）+ mit（送）→ 送出去 → 发出，射出；排出"},
+          "ex": {"type": "真", "year": 2019, "en": "These cars emit more than all the microwaves in the EU.", "zh": "这些汽车排放的废气比欧盟所有的微波炉排放的都多。", "key": ["emit"]},
+          "ext": [{"word": "emission", "ipa": "/ɪˈmɪʃn/", "senses": [{"pos": "n.", "mean": "（光、热、气等的）发出，排放；排放物"}]}]
+        },
+        {
+          "no": 9, "word": "submit", "freq": 3, "page": 286,
+          "prons": [{"ipa": "/səbˈmɪt/", "senses": [{"pos": "v.", "mean": "[[提交]]，[[呈递]]；[[服从]]"}]}],
+          "tip": {"type": "构词", "text": "sub-（下）+ mit（送）→ 从下往上送 → 提交，呈递"},
+          "ex": {"type": "例", "en": "These digital products aren't just mechanisms for students to submit homework.", "zh": "这些数字产品不仅仅是学生提交作业的机制。", "key": ["submit"]},
+          "ext": [
+            {"word": "submission", "ipa": "/səbˈmɪʃn/", "senses": [{"pos": "n.", "mean": "屈服；提交"}]},
+            {"word": "submissive", "ipa": "/səbˈmɪsɪv/", "senses": [{"pos": "adj.", "mean": "服从的，驯服的；恭顺的"}]}
+          ]
+        },
+        {
+          "no": 10, "word": "admit", "freq": 1, "page": 286,
+          "prons": [{"ipa": "/ədˈmɪt/", "senses": [{"pos": "v.", "mean": "[[承认]]；[[准许……进入]]"}]}],
+          "tip": {"type": "联想", "text": "ad-（一再地）+ mit（送）→ 他一再地运送货物，保安最终准许他进入了 → 承认；准许……进入"},
+          "ex": {"type": "例", "en": "She refuses to admit the truth.", "zh": "她拒不承认事实。", "key": ["admit"]},
+          "ext": [
+            {"word": "admission", "ipa": "/ədˈmɪʃn/", "senses": [{"pos": "n.", "mean": "允许进入；承认"}]},
+            {"word": "admittance", "ipa": "/ədˈmɪtns/", "senses": [{"pos": "n.", "mean": "进入权，进入"}]},
+            {"word": "admittedly", "ipa": "/ədˈmɪtɪdli/", "senses": [{"pos": "adv.", "mean": "诚然，无可否认"}]}
+          ]
+        },
+        {
+          "no": 11, "word": "commission", "freq": 3, "page": 286,
+          "prons": [{"ipa": "/kəˈmɪʃn/", "senses": [
+            {"pos": "n.", "mean": "[[委员会]]；[[委托]]"},
+            {"pos": "v.", "mean": "[[委托（别人写报告、创作艺术品等）]]"}
+          ]}],
+          "tip": {"type": "联想", "text": "com-（所有）+ mission（任务）→ 公司所有重要任务都是“委员会”决定的。"},
+          "ex": {"type": "例", "en": "We'd like to see the commission make further changes to the guidelines.", "zh": "我们希望看到委员会对准则做出进一步的修改。", "key": ["commission"]},
+          "ext": []
+        },
+        {
+          "no": 12, "word": "committee", "freq": 2, "page": 286,
+          "prons": [{"ipa": "/kəˈmɪti/", "senses": [{"pos": "n.", "mean": "[[委员会]]"}]}],
+          "tip": {"type": "对照", "text": "委员会（committee）做出了承诺（commit）。"},
+          "ex": {"type": "例", "en": "She's on the planning committee.", "zh": "她是计划委员会的成员。", "key": ["committee"]},
+          "ext": []
+        },
+        {
+          "no": 13, "word": "commit", "freq": 3, "page": 286,
+          "prons": [{"ipa": "/kəˈmɪt/", "senses": [{"pos": "v.", "mean": "[[犯（罪或错等）]]；[[承诺，保证]]；[[投入]]"}]}],
+          "tip": {"type": "对照", "text": "委员会（committee）做出了承诺（commit）。"},
+          "ex": {"type": "真", "year": 2016, "en": "When someone commits a criminal act, we always hope the punishment will match the offense.", "zh": "当有人犯罪时，我们总是希望惩罚与罪行相匹配。", "key": ["commits"]},
+          "ext": [{"word": "commitment", "ipa": "/kəˈmɪtmənt/", "senses": [{"pos": "n.", "mean": "承诺，保证；承诺的事；献身"}]}]
+        },
+        {
+          "no": 14, "word": "summit", "freq": 1, "page": 286,
+          "prons": [{"ipa": "/ˈsʌmɪt/", "senses": [{"pos": "n.", "mean": "[[最高点]]，[[顶峰]]；[[峰会（最高级会议）]]"}]}],
+          "tip": {"type": "联想", "text": "sum（联想 sun）+ mit（送）→ 送到太阳上去 → 最高点"},
+          "ex": {"type": "例", "en": "The new research has profound implications for the environmental summit.", "zh": "这项新研究对环境峰会具有深远影响。", "key": ["summit"]},
+          "ext": []
+        },
+        {
+          "no": 15, "word": "peak", "freq": 2, "page": 286,
+          "prons": [{"ipa": "/piːk/", "senses": [
+            {"pos": "n.", "mean": "[[山顶]]，[[顶峰]]"},
+            {"pos": "adj.", "mean": "[[最高的]]"},
+            {"pos": "v.", "mean": "[[到达最高点]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "他站在山顶（peak）大声说话（speak）。"},
+          "ex": {"type": "例", "en": "They reach a peak at the age of 20.", "zh": "他们在20岁时达到顶峰。", "key": ["peak"]},
+          "ext": []
+        },
+        {
+          "no": 16, "word": "ceiling", "freq": 1, "page": 287,
+          "prons": [{"ipa": "/ˈsiːlɪŋ/", "senses": [{"pos": "n.", "mean": "[[天花板]]；[[上限]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“系铃”→“天花板”上系了一个风铃。"},
+          "ex": {"type": "真", "year": 2023, "en": "The room's ceilings are too low to wear the lion heads for jumping practice.", "zh": "房间的天花板太低了，无法戴着狮头进行跳跃练习。", "key": ["ceilings"]},
+          "ext": []
+        },
+        {
+          "no": 17, "word": "altitude", "freq": 1, "page": 287,
+          "prons": [{"ipa": "/ˈæltɪtjuːd/", "senses": [{"pos": "n.", "mean": "[[高]]，[[高度]]；[[高处]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "The plane made a dive to a lower altitude.", "zh": "飞机俯冲到较低高度。", "key": ["altitude"]},
+          "ext": []
+        },
+        {
+          "no": 18, "word": "attitude", "freq": 3, "page": 287,
+          "prons": [{"ipa": "/ˈætɪtjuːd/", "senses": [{"pos": "n.", "mean": "[[态度]]；[[做派]]"}]}],
+          "tip": {"type": "联想", "text": "a（音似“爱”）+ tti（音似“踢”）+ tu（联想“吐”）+ de（音似“的”）→ 他爱到处乱踢又吐，这说明他的“态度”有问题。"},
+          "ex": {"type": "例", "en": "If you want to pass your exams, you'd better change your attitude.", "zh": "你若想通过考试，最好改变你的态度。", "key": ["attitude"]},
+          "ext": []
+        },
+        {
+          "no": 19, "word": "aptitude", "freq": 1, "page": 287,
+          "prons": [{"ipa": "/ˈæptɪtjuːd/", "senses": [{"pos": "n.", "mean": "[[天资]]；[[天赋]]"}]}],
+          "tip": {"type": "对照", "text": "想要学有所成，天赋（aptitude）是一部分，态度（attitude）是另一部分，而后者决定了你的高度（altitude）。"},
+          "ex": {"type": "真", "year": 2018, "en": "Researchers used ACT scores as a measure of intellectual aptitude.", "zh": "研究人员用美国大学入学考试成绩来衡量智力资质。", "key": ["aptitude"]},
+          "ext": []
+        }
+      ]
+    },
+    {
+      "no": 8,
+      "title": "“密码、规范”相关",
+      "pages": [287, 288],
+      "map": {
+        "w": "“密码、规范”相关",
+        "children": [
+          {"w": "password", "children": [
+            {"w": "code", "rel": "近义", "children": [
+              {"w": "cross", "rel": "相关", "children": [{"w": "crossing", "rel": "扩"}]}
+            ]}
+          ]},
+          {"w": "regulate", "children": [
+            {"w": "regulation", "rel": "扩"},
+            {"w": "regulator", "rel": "扩"},
+            {"w": "regulatory", "rel": "扩"},
+            {"w": "regular", "rel": "同根", "children": [
+              {"w": "regularity", "rel": "扩"},
+              {"w": "irregular", "rel": "反义"}
+            ]},
+            {"w": "relate", "rel": "形近", "children": [
+              {"w": "relation", "rel": "扩"},
+              {"w": "relationship", "rel": "扩"},
+              {"w": "relative", "rel": "扩"},
+              {"w": "relativity", "rel": "扩"},
+              {"w": "relevant", "rel": "相关", "children": [{"w": "relevance", "rel": "扩"}]},
+              {"w": "narrate", "rel": "近义", "children": [
+                {"w": "narration", "rel": "扩"},
+                {"w": "narrative", "rel": "扩"},
+                {"w": "narrator", "rel": "扩"}
+              ]}
+            ]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 20, "word": "password", "freq": 1, "page": 287,
+          "prons": [{"ipa": "/ˈpɑːswɜːd/", "senses": [{"pos": "n.", "mean": "[[暗语]]；[[口令]]；[[密码]]"}]}],
+          "tip": {"type": "构词", "text": "pass（通过）+ word（字，词）→ 密码"},
+          "ex": {"type": "例", "en": "Companies should promise that they would never ask for passwords.", "zh": "公司应该承诺，他们永远不会索要密码。", "key": ["passwords"]},
+          "ext": []
+        },
+        {
+          "no": 21, "word": "cross", "freq": 1, "page": 287,
+          "prons": [{"ipa": "/krɒs/", "senses": [
+            {"pos": "v.", "mean": "[[交叉]]；[[穿越]]；[[越过]]；[[渡过]]"},
+            {"pos": "n.", "mean": "[[叉字形记号]]；[[十字形记号]]；[[十字架]]"},
+            {"pos": "adj.", "mean": "[[恼怒的]]"}
+          ]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“可绕死”→ 这里的路可太绕了，要穿过好几个路口 → 穿越"},
+          "ex": {"type": "例", "en": "Put a cross if the answer is wrong.", "zh": "如果答案错误，打叉。", "key": ["cross"]},
+          "ext": [{"word": "crossing", "ipa": "/ˈkrɒsɪŋ/", "senses": [{"pos": "n.", "mean": "过境处；十字路口"}]}]
+        },
+        {
+          "no": 22, "word": "code", "freq": 3, "page": 287,
+          "prons": [{"ipa": "/kəʊd/", "senses": [{"pos": "n.", "mean": "[[准则]]；[[代码]]；[[密码]]，[[编码]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“扣的”→ 我们的电脑要用“密码”扣（锁）住。"},
+          "ex": {"type": "例", "en": "The sport has a strict code of conduct.", "zh": "体育运动有严格的行为准则。", "key": ["code"]},
+          "ext": []
+        },
+        {
+          "no": 23, "word": "regulate", "freq": 2, "page": 288,
+          "prons": [{"ipa": "/ˈreɡjuleɪt/", "senses": [{"pos": "v.", "mean": "[[管理]]；[[调节]]；[[规范]]"}]}],
+          "tip": {"type": "联想", "text": "re（字母音似“阿姨”）+ gu（联想“故”）+ late（迟到）→ 阿姨故意迟到，想让我们随她的时间调整时间表 → 调节"},
+          "ex": {"type": "真", "year": 2022, "en": "Their emotions were much harder to regulate.", "zh": "他们的情绪更难调节。", "key": ["regulate"]},
+          "ext": [
+            {"word": "regulation", "ipa": "/ˌreɡjuˈleɪʃn/", "senses": [{"pos": "n.", "mean": "规章，规则"}]},
+            {"word": "regulator", "ipa": "/ˈreɡjuleɪtə(r)/", "senses": [{"pos": "n.", "mean": "监管者；调节器"}]},
+            {"word": "regulatory", "ipa": "/ˈreɡjələtəri/", "senses": [{"pos": "adj.", "mean": "具有监管权的，监管的"}]}
+          ]
+        },
+        {
+          "no": 24, "word": "regular", "freq": 1, "page": 288,
+          "prons": [{"ipa": "/ˈreɡjələ(r)/", "senses": [
+            {"pos": "adj.", "mean": "[[有规律的]]；[[频繁的]]；[[普通的]]"},
+            {"pos": "n.", "mean": "[[常客]]；[[老主顾]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "It's joyful in a way that you don't get from a regular bike.", "zh": "这是一辆普通自行车所不能带给你的快乐。", "key": ["regular"]},
+          "ext": [
+            {"word": "regularity", "ipa": "/ˌreɡjuˈlærəti/", "senses": [{"pos": "n.", "mean": "规律性；经常性；匀称"}]},
+            {"word": "irregular", "ipa": "/ɪˈreɡjələ(r)/", "senses": [{"pos": "adj.", "mean": "不整齐的；不规则的；无规律的"}]}
+          ]
+        },
+        {
+          "no": 25, "word": "relate", "freq": 3, "page": 288,
+          "prons": [{"ipa": "/rɪˈleɪt/", "senses": [{"pos": "v.", "mean": "[[联系]]；[[叙述]]，[[讲述]]"}]}],
+          "tip": {"type": "联想", "text": "re（字母音似“阿姨”）+ late（迟到）→ 阿姨迟到了，她要向我“讲述”理由，因为我和她之间有“联系”。"},
+          "ex": {"type": "真", "year": 2022, "en": "People's psychological well-being is related to various factors.", "zh": "人们的心理健康与多种因素有关。", "key": ["related to"]},
+          "ext": [
+            {"word": "relation", "ipa": "/rɪˈleɪʃn/", "senses": [{"pos": "n.", "mean": "关系；联系"}]},
+            {"word": "relationship", "ipa": "/rɪˈleɪʃnʃɪp/", "senses": [{"pos": "n.", "mean": "（人、团体、国家之间的）关系；联系"}]}
+          ]
+        },
+        {
+          "no": 26, "word": "relative", "freq": 1, "page": 288,
+          "prons": [{"ipa": "/ˈrelətɪv/", "senses": [
+            {"pos": "adj.", "mean": "[[比较的]]；[[相对的]]"},
+            {"pos": "n.", "mean": "[[亲戚]]"}
+          ]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2022, "en": "She was finally rescued by her relatives.", "zh": "她终于被亲戚们救了出来。", "key": ["relatives"]},
+          "ext": [{"word": "relativity", "ipa": "/ˌreləˈtɪvəti/", "senses": [{"pos": "n.", "mean": "相对论；相对性"}]}]
+        },
+        {
+          "no": 27, "word": "relevant", "freq": 1, "page": 288,
+          "prons": [{"ipa": "/ˈreləvənt/", "senses": [{"pos": "adj.", "mean": "[[有关的]]，[[切题的]]"}]}],
+          "tip": {"type": "联想", "text": "re-（重复）+ le（音似“了”）+ vant（音似“问他”）→ 我重复问了他好几遍，因为这件事跟他是“有关的”。"},
+          "ex": {"type": "例", "en": "The incident is still under investigation by the relevant authorities.", "zh": "该事件仍在接受有关当局的调查。", "key": ["relevant"]},
+          "ext": [{"word": "relevance", "ipa": "/ˈreləvəns/", "senses": [{"pos": "n.", "mean": "相关性；意义"}]}]
+        },
+        {
+          "no": 28, "word": "narrate", "freq": 1, "page": 288,
+          "prons": [{"ipa": "/nəˈreɪt/", "senses": [{"pos": "v.", "mean": "[[讲（故事）]]；[[叙述]]"}]}],
+          "tip": {"type": "联想", "text": "na（联想“那”）+ r（联想“人”）+ rate（速度）→ 那个人用很快的速度给我“讲故事”。"},
+          "ex": {"type": "例", "en": "My grandmother used to narrate bedtime stories to me when I was young.", "zh": "我小的时候，祖母经常给我讲睡前故事。", "key": ["narrate"]},
+          "ext": [
+            {"word": "narration", "ipa": "/nəˈreɪʃn; næˈreɪʃn/", "senses": [{"pos": "n.", "mean": "叙述，讲述；解说，旁白"}]},
+            {"word": "narrative", "ipa": "/ˈnærətɪv/", "senses": [{"pos": "n.", "mean": "描述，叙述"}, {"pos": "adj.", "mean": "叙述的；叙事体的"}]},
+            {"word": "narrator", "ipa": "/nəˈreɪtə(r)/", "senses": [{"pos": "n.", "mean": "叙述者，讲述者；幕后解说员，旁白员"}]}
+          ]
+        }
+      ]
+    },
+    {
+      "no": 9,
+      "title": "ate 相关",
+      "pages": [289, 290],
+      "map": {
+        "w": "ate 相关",
+        "children": [
+          {"w": "hesitate", "children": [{"w": "hesitation", "rel": "扩"}, {"w": "hesitant", "rel": "扩"}]},
+          {"w": "compensate", "children": [{"w": "compensation", "rel": "扩"}, {"w": "compensatory", "rel": "扩"}]},
+          {"w": "candidate", "children": [{"w": "candidacy", "rel": "扩"}]},
+          {"w": "negotiate", "children": [{"w": "negotiation", "rel": "扩"}, {"w": "negotiable", "rel": "扩"}]},
+          {"w": "initiate", "children": [
+            {"w": "initial", "rel": "扩"},
+            {"w": "initially", "rel": "扩"},
+            {"w": "initiation", "rel": "扩"},
+            {"w": "initiative", "rel": "扩"},
+            {"w": "launch", "rel": "近义"}
+          ]},
+          {"w": "innovate", "children": [
+            {"w": "innovation", "rel": "扩"},
+            {"w": "innovative", "rel": "扩"},
+            {"w": "renovation", "rel": "形近", "children": [{"w": "renovate", "rel": "扩"}]}
+          ]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 29, "word": "hesitate", "freq": 1, "page": 289,
+          "prons": [{"ipa": "/ˈhezɪteɪt/", "senses": [{"pos": "v.", "mean": "[[犹豫]]，[[踌躇]]"}]}],
+          "tip": {"type": "联想", "text": "he（他）+ sit（坐）+ ate（eat 的过去式）→ 他坐在餐桌旁，“犹豫”要不要吃。"},
+          "ex": {"type": "例", "en": "She never hesitates to speak her mind.", "zh": "她从不犹豫说出自己的想法。", "key": ["hesitates"]},
+          "ext": [
+            {"word": "hesitation", "ipa": "/ˌhezɪˈteɪʃn/", "senses": [{"pos": "n.", "mean": "犹豫，踌躇"}]},
+            {"word": "hesitant", "ipa": "/ˈhezɪtənt/", "senses": [{"pos": "adj.", "mean": "犹豫的；不情愿的"}]}
+          ]
+        },
+        {
+          "no": 30, "word": "compensate", "freq": 2, "page": 289,
+          "prons": [{"ipa": "/ˈkɒmpenseɪt/", "senses": [{"pos": "v.", "mean": "[[补偿]]；[[弥补]]"}]}],
+          "tip": {"type": "联想", "text": "com-（所有）+ pens（钢笔）+ ate（eat 的过去式）→ 他把我所有的钢笔都弄坏了，所以我要求他请我吃饭来“补偿”我。"},
+          "ex": {"type": "真", "year": 2017, "en": "The lack of knowledge is difficult if not impossible to compensate for later on.", "zh": "即使不是完全不可能，知识的缺乏在日后也很难弥补。", "key": ["compensate for"]},
+          "ext": [
+            {"word": "compensation", "ipa": "/ˌkɒmpenˈseɪʃn/", "senses": [{"pos": "n.", "mean": "补偿物；（尤指）赔偿金；赔偿"}]},
+            {"word": "compensatory", "ipa": "/ˌkɒmpenˈseɪtəri/", "senses": [{"pos": "adj.", "mean": "补偿性的"}]}
+          ]
+        },
+        {
+          "no": 31, "word": "candidate", "freq": 2, "page": 289,
+          "prons": [{"ipa": "/ˈkændɪdət; ˈkændɪdeɪt/", "senses": [{"pos": "n.", "mean": "[[候选人]]，[[申请人]]；[[应试者]]"}]}],
+          "tip": {"type": "联想", "text": "can（能够）+ did（做）+ ate（eat 的过去式）→ 他作为“候选人”有些紧张，能做的就是先吃些东西，缓解紧张的心情。"},
+          "ex": {"type": "例", "en": "He is the best candidate for the job.", "zh": "他是这个职位的最佳候选人。", "key": ["candidate"]},
+          "ext": [{"word": "candidacy", "ipa": "/ˈkændɪdəsi/", "senses": [{"pos": "n.", "mean": "候选人的资格（或身份）"}]}]
+        },
+        {
+          "no": 32, "word": "negotiate", "freq": 2, "page": 289,
+          "prons": [{"ipa": "/nɪˈɡəʊʃieɪt/", "senses": [{"pos": "v.", "mean": "[[谈判]]，[[商定]]；[[协商]]"}]}],
+          "tip": {"type": "联想", "text": "ne（音似“你”）+ go（去）+ ti（联想“提”）+ ate（eat 的过去式）→ 你去提有关“吃”的问题，要跟食堂负责人“协商”。"},
+          "ex": {"type": "真", "year": 2016, "en": "They are better at negotiating an agreement.", "zh": "他们更擅长协商协议。", "key": ["negotiating"]},
+          "ext": [
+            {"word": "negotiation", "ipa": "/nɪˌɡəʊʃiˈeɪʃn/", "senses": [{"pos": "n.", "mean": "谈判；协商"}]},
+            {"word": "negotiable", "ipa": "/nɪˈɡəʊʃiəbl/", "senses": [{"pos": "adj.", "mean": "可协商的；可讨论的"}]}
+          ]
+        },
+        {
+          "no": 33, "word": "initiate", "freq": 1, "page": 289,
+          "prons": [{"ipa": "/ɪˈnɪʃieɪt/", "senses": [{"pos": "v.", "mean": "[[发起]]，[[开始]]；[[使了解]]；[[传授]]"}]}],
+          "tip": {"type": "联想", "text": "i（我）+ ni（联想“你”）+ ti（联想“提”）+ ate（eat 的过去式）→ 我和你总提吃的，于是我们决定“开始”加入餐饮行业。"},
+          "ex": {"type": "例", "en": "It initiated the digital revolution in the film industry.", "zh": "它开启了电影行业的数字革命。", "key": ["initiated"]},
+          "ext": [
+            {"word": "initial", "ipa": "/ɪˈnɪʃl/", "senses": [{"pos": "adj.", "mean": "开始的，最初的"}]},
+            {"word": "initially", "ipa": "/ɪˈnɪʃəli/", "senses": [{"pos": "adv.", "mean": "最初，开始"}]},
+            {"word": "initiation", "ipa": "/ɪˌnɪʃiˈeɪʃn/", "senses": [{"pos": "n.", "mean": "开始；创始；发起"}]},
+            {"word": "initiative", "ipa": "/ɪˈnɪʃətɪv/", "senses": [{"pos": "n.", "mean": "主动性，积极性；主动权；倡议"}]}
+          ]
+        },
+        {
+          "no": 34, "word": "launch", "freq": 3, "page": 290,
+          "prons": [{"ipa": "/lɔːntʃ/", "senses": [
+            {"pos": "v.", "mean": "[[发行]]；[[发起]]；[[启动]]；[[起飞]]"},
+            {"pos": "n.", "mean": "[[（产品的）发行]]；[[发射]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "他们一般都是午饭（lunch）后发射（launch）卫星。"},
+          "ex": {"type": "例", "en": "The government recently launched a national road safety campaign.", "zh": "政府最近发起了一场全国道路安全运动。", "key": ["launched"]},
+          "ext": []
+        },
+        {
+          "no": 35, "word": "innovate", "freq": 1, "page": 290,
+          "prons": [{"ipa": "/ˈɪnəveɪt/", "senses": [{"pos": "v.", "mean": "[[引入（新事物、思想或方法）]]；[[创新]]，[[改革]]"}]}],
+          "tip": {"type": "构词", "text": "in（进入）+ nov（新的）+ -ate（动词后缀）→ 创新；改革"},
+          "ex": {"type": "例", "en": "He called on graduates to innovate in his speech.", "zh": "他在他的演讲中呼吁毕业生们创新。", "key": ["innovate"]},
+          "ext": [
+            {"word": "innovation", "ipa": "/ˌɪnəˈveɪʃn/", "senses": [{"pos": "n.", "mean": "改革，创新"}]},
+            {"word": "innovative", "ipa": "/ˈɪnəveɪtɪv; ˈɪnəvətɪv/", "senses": [{"pos": "adj.", "mean": "革新的；富有革新精神的"}]}
+          ]
+        },
+        {
+          "no": 36, "word": "renovation", "freq": 1, "page": 290,
+          "prons": [{"ipa": "/ˌrenəˈveɪʃn/", "senses": [{"pos": "n.", "mean": "[[整修]]，[[翻新]]"}]}],
+          "tip": {"type": "构词", "text": "re-（再）+ nov（新的）+ -ation（名词后缀）→ 翻新"},
+          "ex": {"type": "例", "en": "This renovation project cost much money.", "zh": "这个翻新项目花费了大量资金。", "key": ["renovation"]},
+          "ext": [{"word": "renovate", "ipa": "/ˈrenəveɪt/", "senses": [{"pos": "v.", "mean": "修复；翻新；重新粉刷"}]}]
+        }
+      ]
+    },
+    {
+      "no": 10,
+      "title": "“文章”相关",
+      "pages": [290, 291],
+      "map": {
+        "w": "“文章”相关",
+        "children": [
+          {"w": "myth", "children": [
+            {"w": "mythical", "rel": "扩"},
+            {"w": "mythology", "rel": "扩"},
+            {"w": "mystery", "rel": "相关", "children": [{"w": "mysterious", "rel": "扩"}]}
+          ]},
+          {"w": "legend", "children": [{"w": "legendary", "rel": "扩"}]},
+          {"w": "novel", "children": [
+            {"w": "novelty", "rel": "扩"},
+            {"w": "novelist", "rel": "扩"},
+            {"w": "romance", "rel": "相关", "children": [{"w": "romantic", "rel": "扩"}]},
+            {"w": "fiction", "rel": "近义", "children": [{"w": "fictional", "rel": "扩"}]}
+          ]},
+          {"w": "essay", "children": [{"w": "essayist", "rel": "扩"}]},
+          {"w": "chapter", "children": [{"w": "brochure"}]},
+          {"w": "comprehend", "children": [{"w": "comprehensive", "rel": "扩"}, {"w": "comprehension", "rel": "扩"}]}
+        ]
+      },
+      "entries": [
+        {
+          "no": 37, "word": "legend", "freq": 3, "page": 290,
+          "prons": [{"ipa": "/ˈledʒənd/", "senses": [{"pos": "n.", "mean": "[[传说]]；[[传奇故事]]；[[传奇人物]]"}]}],
+          "tip": {"type": "对照", "text": "运动员在腿（leg）受伤的情况下完成比赛，成了传奇人物（legend）。"},
+          "ex": {"type": "例", "en": "The film is based on the legend.", "zh": "这部电影是根据传奇故事改编的。", "key": ["legend"]},
+          "ext": [{"word": "legendary", "ipa": "/ˈledʒəndri/", "senses": [{"pos": "adj.", "mean": "传说的，传奇的"}]}]
+        },
+        {
+          "no": 38, "word": "myth", "freq": 3, "page": 290,
+          "prons": [{"ipa": "/mɪθ/", "senses": [{"pos": "n.", "mean": "[[神话]]；[[神话故事]]；[[虚构的东西]]；[[荒诞的说法]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“没死”→“神话”中的世界没有死亡，都是“虚构的东西”。"},
+          "ex": {"type": "真", "year": 2020, "en": "American myth is that you can pull yourself up by your own efforts and change a bad situation into a good one.", "zh": "美国人的神话是你可以通过自己的努力振作起来，转逆为顺。", "key": ["myth"]},
+          "ext": [
+            {"word": "mythical", "ipa": "/ˈmɪθɪkl/", "senses": [{"pos": "adj.", "mean": "神话的；虚无的；不真实的"}]},
+            {"word": "mythology", "ipa": "/mɪˈθɒlədʒi/", "senses": [{"pos": "n.", "mean": "神话；虚幻的想法；错误的观点"}]}
+          ]
+        },
+        {
+          "no": 39, "word": "mystery", "freq": 2, "page": 290,
+          "prons": [{"ipa": "/ˈmɪstri/", "senses": [{"pos": "n.", "mean": "[[神秘的事情]]，[[谜]]；[[不可理解之事]]"}]}],
+          "tip": {"type": "联想", "text": "my（我的）+ st（联想 street）+ -ery（名词后缀）→ 我家附近的街上发生了一件“神秘的事情”。"},
+          "ex": {"type": "真", "year": 2022, "en": "They were puzzled by the mystery.", "zh": "他们对这谜感到困惑。", "key": ["mystery"]},
+          "ext": [{"word": "mysterious", "ipa": "/mɪˈstɪəriəs/", "senses": [{"pos": "adj.", "mean": "神秘的；奇怪的；不易解释的；故弄玄虚的"}]}]
+        },
+        {
+          "no": 40, "word": "novel", "freq": 1, "page": 290,
+          "prons": [{"ipa": "/ˈnɒvl/", "senses": [
+            {"pos": "n.", "mean": "[[（长篇）小说]]"},
+            {"pos": "adj.", "mean": "[[新颖的]]，[[珍奇的]]"}
+          ]}],
+          "tip": {"type": "对照", "text": "小说（novel）更新需要创新（innovation）。"},
+          "ex": {"type": "真", "year": 2021, "en": "They prefer to go after all that is novel.", "zh": "他们更喜欢追求一切新奇的事物。", "key": ["novel"]},
+          "ext": [
+            {"word": "novelist", "ipa": "/ˈnɒvəlɪst/", "senses": [{"pos": "n.", "mean": "小说家"}]},
+            {"word": "novelty", "ipa": "/ˈnɒvlti/", "senses": [{"pos": "n.", "mean": "新奇；新奇的人/事物/环境"}]}
+          ]
+        },
+        {
+          "no": 41, "word": "essay", "freq": 3, "page": 291,
+          "prons": [{"ipa": "/ˈeseɪ/", "senses": [{"pos": "n.", "mean": "[[短文]]，[[文章]]，[[小品文]]"}]}],
+          "tip": {"type": "联想", "text": "e-（往外）+ s（联想“美女”）+ say（说）→ 美女通过一篇“短文”把心中的想法表达出来。"},
+          "ex": {"type": "真", "year": 2015, "en": "For each assignment, I was to write the best essay as I could.", "zh": "对于每一项作业，我都要尽我所能写出最好的文章。", "key": ["essay"]},
+          "ext": [{"word": "essayist", "ipa": "/ˈeseɪɪst/", "senses": [{"pos": "n.", "mean": "随笔作家，散文家；评论家"}]}]
+        },
+        {
+          "no": 42, "word": "article", "freq": 2, "page": 291,
+          "prons": [{"ipa": "/ˈɑːtɪkl/", "senses": [{"pos": "n.", "mean": "[[文章]]；[[条款]]；[[物品]]；[[冠词]]"}]}],
+          "tip": null,
+          "ex": {"type": "例", "en": "It will be a great loss if we no longer read books and longer articles.", "zh": "如果我们不再阅读书籍和长篇文章，那将是一个巨大的损失。", "key": ["articles"]},
+          "ext": []
+        },
+        {
+          "no": 43, "word": "chapter", "freq": 2, "page": 291,
+          "prons": [{"ipa": "/ˈtʃæptə(r)/", "senses": [{"pos": "n.", "mean": "[[（书的）章节]]，[[篇章]]；[[（人生或历史的）时期]]"}]}],
+          "tip": {"type": "联想", "text": "cha（联想“查”）+ pt（联想“葡萄”）+ -er（名词后缀）→ 查一下有葡萄的“篇章”。"},
+          "ex": {"type": "例", "en": "I've just finished Chapter 3.", "zh": "我刚完成第3章。", "key": ["Chapter"]},
+          "ext": []
+        },
+        {
+          "no": 44, "word": "romance", "freq": 1, "page": 291,
+          "prons": [{"ipa": "/rəʊˈmæns; ˈrəʊmæns/", "senses": [{"pos": "n.", "mean": "[[（通常指短暂的）浪漫史]]，[[爱情关系]]，[[风流韵事]]；[[爱情故事]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“罗曼史”。"},
+          "ex": {"type": "例", "en": "This ancient town is regarded as the paradise of love and romance.", "zh": "这个古镇被视为爱情和浪漫的天堂。", "key": ["romance"]},
+          "ext": [{"word": "romantic", "ipa": "/rəʊˈmæntɪk/", "senses": [{"pos": "adj.", "mean": "浪漫的；爱情的"}, {"pos": "n.", "mean": "浪漫的人；浪漫主义作家"}]}]
+        },
+        {
+          "no": 45, "word": "fiction", "freq": 2, "page": 291,
+          "prons": [{"ipa": "/ˈfɪkʃn/", "senses": [{"pos": "n.", "mean": "[[小说]]，[[虚构的事]]"}]}],
+          "tip": {"type": "谐音", "text": "单词发音类似“飞可神”→ 这部“小说”中的每个人都会飞，可神奇了。"},
+          "ex": {"type": "真", "year": 2020, "en": "It resembles fragments of science fiction.", "zh": "它类似于科幻小说的片段。", "key": ["fiction"]},
+          "ext": [{"word": "fictional", "ipa": "/ˈfɪkʃənl/", "senses": [{"pos": "adj.", "mean": "虚构的；小说（中）的"}]}]
+        },
+        {
+          "no": 46, "word": "brochure", "freq": 1, "page": 291,
+          "prons": [{"ipa": "/ˈbrəʊʃə(r)/", "senses": [{"pos": "n.", "mean": "[[（资料或广告的）手册]]"}]}],
+          "tip": {"type": "联想", "text": "bro（联想 brother）+ chure（音似“车”）→ 哥哥车里拉了很多招生“手册”。"},
+          "ex": {"type": "例", "en": "The brochure should give you a good idea of the hotel.", "zh": "这本手册应该能让您很好地了解这家酒店。", "key": ["brochure"]},
+          "ext": []
+        },
+        {
+          "no": 47, "word": "comprehend", "freq": 1, "page": 291,
+          "prons": [{"ipa": "/ˌkɒmprɪˈhend/", "senses": [{"pos": "v.", "mean": "[[理解]]；[[领悟]]；[[懂]]"}]}],
+          "tip": null,
+          "ex": {"type": "真", "year": 2021, "en": "Reading and comprehending longer books and chapters takes practice.", "zh": "阅读并理解较长的书和章节需要练习。", "key": ["comprehending"]},
+          "ext": [
+            {"word": "comprehensive", "ipa": "/ˌkɒmprɪˈhensɪv/", "senses": [{"pos": "adj.", "mean": "全部的；（几乎）无所不包的；详尽的"}]},
+            {"word": "comprehension", "ipa": "/ˌkɒmprɪˈhenʃn/", "senses": [{"pos": "n.", "mean": "理解（力）；（听力或阅读）理解测试"}]}
+          ]
+        }
+      ]
+    }
+  ]
+}
