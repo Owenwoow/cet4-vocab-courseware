@@ -37,6 +37,12 @@ const Sync = (() => {
     doc[k] = [v, Date.now()]; save();
     schedule(lazy ? LAZY_DELAY : DELAY);
   }
+  /* 一次写一批（比如记录一个词群的几十个词），只存一次本地、只排一次推送 */
+  function setMany(pairs) {
+    const t = Date.now(); let n = 0;
+    for (const [k, v] of pairs) { if (k in doc && same(doc[k][0], v)) continue; doc[k] = [v, t]; n++; }
+    if (n) { save(); schedule(DELAY); }
+  }
   const entries = prefix => Object.keys(doc).filter(k => k.startsWith(prefix)).map(k => [k.slice(prefix.length), doc[k][0]]);
 
   /* ---------- 合并：按键取较新的；时间相同按值排序，保证各端结果一致 ---------- */
@@ -148,7 +154,7 @@ const Sync = (() => {
   function disconnect() { cfg = null; clearTimeout(timer); timer = null; ls.del(P + "cfg"); setStatus("off"); }
 
   return {
-    get, set, entries, start, connect, disconnect, syncNow: now,
+    get, set, setMany, entries, start, connect, disconnect, syncNow: now,
     on: f => changeFns.push(f), onStatus: f => statusFns.push(f),
     get status() { return status; }, get connected() { return !!cfg; },
   };
