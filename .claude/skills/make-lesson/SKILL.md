@@ -120,5 +120,5 @@ id: u08-l01；unit: 8；lesson: 1；part: 1；书页范围：215 到 222；词�
 ## 6. 收尾汇报
 
 给用户一张表：每课的词条数、校验结果、子代理 token 消耗；每个 Unit 的对数结果；每批音频（新生成数、失败数）；
-部署结果与线上地址 https://owenwoow.github.io/cet4-vocab-courseware/ ；开工和结束时的额度百分比；需要人工抽查的清单。
+部署结果与线上地址 https://cet4.owenwoow.com/ ；开工和结束时的额度百分比；需要人工抽查的清单。
 提交信息和汇报里都不要加任何 Claude 署名。

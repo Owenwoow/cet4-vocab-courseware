@@ -11,7 +11,7 @@
 - 全量测试：`python pipeline/validate.py`（校验所有课的数据）
 - 批量生成课程：用项目技能 `make-lesson`（`.claude/skills/make-lesson/SKILL.md`），子代理在 `.claude/agents/`（抽取 Sonnet、释义 Haiku）；音频走云端 `audio` 工作流，启动子代理前按技能第 4 节查额度（至少留 5%）
 - 查进度：`python pipeline/lessons.py --todo 1 10`（Part 02 即 Unit 11–12 不做，已从 `toc.json` 删除）
-- 部署：先 `python pipeline/publish_audio.py` 推音频，再推主仓库 `main`，自动部署（`.github/workflows/deploy.yml`：校验 → 检查音频已上线 → 目录索引 → GitHub Pages）。线上地址 https://owenwoow.github.io/cet4-vocab-courseware/
+- 部署：先 `python pipeline/publish_audio.py` 推音频，再推主仓库 `main`，自动部署（`.github/workflows/deploy.yml`：校验 → 检查音频已上线 → 目录索引 → GitHub Pages）。线上地址 https://cet4.owenwoow.com/（自定义域名，旧的 github.io 地址会自动跳转过来；云同步 token 按网址存，要在这个地址下粘贴）
 - 云端生成音频（默认，本地网络跑 edge-tts 会卡死）：Actions → `audio` 工作流（`.github/workflows/audio.yml`），手动触发，填课程 id；并发固定 3（服务器 IP 易被限流），生成后自动推音频仓库并把清单提交回 `main`。需要 Secret `AUDIO_REPO_TOKEN`（PAT，详见工作流文件头部）
 - 本地预览要起两个服务：课件 8765（`site/`）、音频 8766（`audio-store/`），见 `.claude/launch.json`
 - 新电脑上恢复音频目录：`git clone https://github.com/Owenwoow/cet4-vocab-audio.git audio-store`
