@@ -278,7 +278,7 @@ async function route() {
   const isSettings = location.hash === "#/settings";
   if (isSettings && !$("#lessonView").hidden && L) lessonScroll = {id: L.id, y: scrollY};   // 进设置前记住读到哪
   $("#lessonView").hidden = isSettings; $("#fabs").hidden = isSettings; $("#settingsView").hidden = !isSettings;
-  $("#setBtn").classList.toggle("on", isSettings);
+  $("#setBtn").classList.toggle("on", isSettings); $("#setBtn").title = $("#setBtn").ariaLabel = isSettings ? "返回" : "设置";
   if (isSettings) {
     stopMarathon(); pop.style.display = "none";
     if (!L) await loadLesson(last);   // 设置页试听要用到本课音频
@@ -468,6 +468,12 @@ function renderSyncPanel() {
       <button class="danger" id="syncOff">断开</button></div>`;
 }
 Sync.onStatus(() => { if (location.hash === "#/settings") renderSyncPanel(); });
+/* 设置页再点 ⚙ 直接返回，和页面里的「← 返回」去同一个地方 */
+$("#setBtn").addEventListener("click", e => {
+  if (location.hash !== "#/settings") return;
+  e.preventDefault();
+  location.hash = $("#settingsView .back").getAttribute("href");
+});
 $("#settingsView").addEventListener("click", e => {
   const t = e.target;
   const tryBtn = t.closest("[data-try]");
