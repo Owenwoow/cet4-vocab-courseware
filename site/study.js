@@ -93,7 +93,7 @@ const Study = (() => {
       const by = new Map();
       for (const g of les.groups) for (const e of g.entries) if (!by.has(e.word)) by.set(e.word, {e, g});
       return {les, aud, by};
-    }));
+    }).catch(err => { cache.delete(id); throw err; }));   // 失败的不缓存，下次重试
     return cache.get(id);
   }
   /* 卡片列表 → 带上书上的词条内容 */
@@ -145,6 +145,7 @@ const Study = (() => {
   const ipaOf = e => e.prons.map(p => p.ipa).join(" ");
   const fl = n => `<span class="fl" title="考频 ${n}/3">${"🔥".repeat(n)}</span>`;
   const btn = (href, text, attrs = 'appearance="filled"') => `<wa-button size="small" href="${href}" ${attrs}>${text}</wa-button>`;   // 默认浅底，主按钮传 variant="brand"
+  const loadFail = err => { view().innerHTML = `<p class="empty">加载失败：${esc(err.message)}<br>检查网络后 <a href="javascript:location.reload()">重新加载</a></p>`; };
   function setHead(title) { $("#crumb").textContent = title; document.title = title + " · 四级词汇"; }
 
   /* ---------- 首页：一个个板块，按顺序画；以后加功能就往 MODULES 里加一项 ---------- */
@@ -247,7 +248,8 @@ const Study = (() => {
     if (!info) { location.hash = "#/"; return; }
     setHead(info.title);
     view().innerHTML = `<p class="empty">加载中…</p>`;
-    const items = sortBy(await itemsOf(sc), "course");
+    let items;
+    try { items = sortBy(await itemsOf(sc), "course"); } catch (err) { loadFail(err); return; }
     const hide = !!store.get("listHide", false);
     let lastG = "";
     const rows = items.map(x => {
@@ -293,7 +295,8 @@ const Study = (() => {
     if (!info) { location.hash = "#/drill"; return; }
     setHead("巩固 · " + info.title);
     view().innerHTML = `<p class="empty">加载中…</p>`;
-    const items = preset ? preset.items : sortBy(await itemsOf(sc), S.drillOrder);
+    let items;
+    try { items = preset ? preset.items : sortBy(await itemsOf(sc), S.drillOrder); } catch (err) { loadFail(err); return; }
     D = {sc, title: info.title, items, queue: items.slice(), flipped: false, rated: new Map(), res: {g: 0, m: 0, f: 0, k: 0}, hash: location.hash};
     if (!items.length) { view().innerHTML = `<div class="drill"><p class="empty">「${esc(info.title)}」里没有要抽的词。</p><p class="empty">${btn("#/", "回首页")} ${btn("#/drill", "换个范围")}</p></div>`; return; }
     showCard();
