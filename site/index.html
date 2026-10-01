@@ -6,11 +6,15 @@
 <meta name="robots" content="noindex,nofollow">
 <title>四级词汇课件</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>">
+<!-- 组件库 Web Awesome：只引主题变量和组件加载器（用到哪个组件自动加载哪个），不引 native.css，免得改动课文页 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@awesome.me/webawesome@3.14.0/dist-cdn/styles/themes/default.css">
+<script type="module" src="https://cdn.jsdelivr.net/npm/@awesome.me/webawesome@3.14.0/dist-cdn/webawesome.loader.js"></script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="top">
   <button class="icon" id="menuBtn" aria-label="目录">☰</button>
+  <a class="icon" id="homeBtn" href="#/" aria-label="首页" title="首页">⌂</a>
   <div class="crumb" id="crumb">加载中…</div>
   <div class="search">
     <input id="q" type="search" placeholder="搜单词" autocomplete="off" spellcheck="false">
@@ -30,6 +34,14 @@
 
 <main class="wrap settings" id="settingsView" hidden></main>
 
+<main class="wrap study" id="studyView" hidden></main>
+
+<div class="pickbar" id="pickBar" hidden>
+  <span id="pickInfo"></span>
+  <span class="seg"><button data-day="today">今天</button><button data-day="yesterday">昨天</button></span>
+  <button id="pickSave" class="on">记下</button><button id="pickCancel">取消</button>
+</div>
+
 <div class="fabs" id="fabs">
   <button class="fab" id="maskFab" title="背诵模式：遮住中文">遮</button>
   <button class="fab main" id="playAll" title="磨耳朵">🎧</button>
@@ -44,6 +56,8 @@
 <div id="toast" class="toast" role="status"></div>
 
 <script src="sync.js"></script>
+<script src="srs.js"></script>
 <script src="app.js"></script>
+<script src="study.js"></script>
 </body>
 </html>

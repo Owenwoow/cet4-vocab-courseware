@@ -14,18 +14,23 @@ loadKnown();
 /* ---------- 设置：集中存放，设置页修改，全站生效 ---------- */
 const VOICE_NAMES = {ava: "Ava", andrew: "Andrew", sonia: "Sonia", ryan: "Ryan"};
 const VOICE_DESC = {ava: "美式 · 女声", andrew: "美式 · 男声", sonia: "英式 · 女声", ryan: "英式 · 男声"};
-const DEFAULTS = {voice: "ava", rate: 1, mask: false, hideKnown: false, scope: "group", withZh: true, loop: false, theme: "auto"};
+const DEFAULTS = {voice: "ava", rate: 1, mask: false, hideKnown: false, scope: "group", withZh: true, loop: false, theme: "auto",
+  examDate: "2026-12-12", dailyCap: 120, autoSay: true, drillOrder: "course"};
 const S = {...DEFAULTS};
 const loadSettings = () => Object.assign(S, DEFAULTS, Object.fromEntries(Sync.entries("set:")));
 function setS(k, v) { S[k] = v; Sync.set("set:" + k, v); applySettings(); }
 loadSettings();
+const darkMQ = matchMedia("(prefers-color-scheme: dark)");
 function applySettings() {
   document.body.classList.toggle("mask", S.mask);
   document.body.classList.toggle("hideKnown", S.hideKnown);
   if (S.theme === "auto") document.documentElement.removeAttribute("data-theme");
   else document.documentElement.dataset.theme = S.theme;
+  /* 组件库 Web Awesome 的深浅色跟着本站主题走 */
+  document.documentElement.classList.toggle("wa-dark", S.theme === "dark" || (S.theme === "auto" && darkMQ.matches));
   $("#maskFab").classList.toggle("on", S.mask);
 }
+darkMQ.addEventListener("change", applySettings);
 
 /* ---------- 状态 ---------- */
 let BOOK = null, L = null, GLOSS = {}, AUD = {w: {}, s: {}, z: {}, voices: []};
@@ -80,16 +85,17 @@ function pickSysVoice() {
 if (synth) { pickSysVoice(); synth.onvoiceschanged = pickSysVoice; }
 /* 音频放在单独的音频站（清单里的 base）。本地开发（http）用本机 8766 端口的 audio-store，
    这样新生成、还没推送的音频也能直接试听 */
-const audioBase = () => location.protocol === "http:" ? `http://${location.hostname}:8766/` : (AUD.base || "data/audio/");
-const audioURL = key => `${audioBase()}files/${key}.mp3`;
+const audioBase = (aud = AUD) => location.protocol === "http:" ? `http://${location.hostname}:8766/` : (aud.base || "data/audio/");
+const audioURL = (key, aud) => `${audioBase(aud)}files/${key}.mp3`;
 const rate = () => +S.rate;
 /* 选中的声音本课没生成时，退回本课第一种 */
 const pickVoice = rec => rec && (rec[S.voice] || Object.values(rec)[0]);
 
 function stopAll() { player.pause(); player.ontimeupdate = player.onended = player.onerror = null; synth && synth.cancel(); }
-function playFile(key, onEnd, r = rate()) {
+/* aud：用哪一课的音频清单，默认当前课（巩固模式会播别的课的词） */
+function playFile(key, onEnd, r = rate(), aud) {
   stopAll();
-  player.src = audioURL(key); player.playbackRate = r;
+  player.src = audioURL(key, aud); player.playbackRate = r;
   player.onended = () => onEnd && onEnd();
   player.onerror = () => onEnd && onEnd();
   player.play().catch(() => onEnd && onEnd());
@@ -142,7 +148,7 @@ function lessonProgress(les) {
   return `<span class="prog${n === words.length ? " done" : ""}">${n}/${words.length}</span>`;
 }
 function renderDrawer() {
-  let h = `<h2>${esc(BOOK.title)}</h2>`;
+  let h = `<div class="dnav"><a href="#/">🏠 首页</a><a href="#/drill">🎲 巩固</a><a href="#/week">📅 周总结</a></div><h2>${esc(BOOK.title)}</h2>`;
   for (const p of BOOK.parts) {
     h += `<div class="part">PART 0${p.no} · ${esc(p.title)}</div>`;
     for (const u of p.units) {
@@ -235,15 +241,68 @@ function renderLesson() {
   document.title = `U${L.unit} L${L.lesson} · 四级词汇`;
   $("#lessonHead").innerHTML = `<h1>Unit ${L.unit} · Lesson ${L.lesson}</h1>
     <p>${allEntries().length} 词 · ${L.groups.length} 个词群 · 书 p${a}–${b} · <span id="lessonProg"></span></p>
-    <div class="chips">${L.groups.map(g => `<a href="#/${L.id}/g${g.no}">词以群记 ${g.no} ${esc(g.title)}</a>`).join("")}</div>`;
+    <div class="chips">${L.groups.map(g => `<a href="#/${L.id}/g${g.no}">词以群记 ${g.no} ${esc(g.title)}</a>`).join("")}</div>
+    <button class="pickBtn" id="pickBtn">📝 记录今天学了什么</button>`;
   $("#groups").innerHTML = L.groups.map(g => `<section class="group" id="g${g.no}" data-g="${g.no}">
-      <div class="ghead"><span class="gno">词以群记 ${g.no}</span><span class="gtitle">${esc(g.title)}</span>
+      <div class="ghead"><label class="pick"><input type="checkbox" data-pick="${g.no}"><span>学过</span></label>
+        <span class="gno">词以群记 ${g.no}</span><span class="gtitle">${esc(g.title)}</span><span class="learned" data-learned="${g.no}"></span>
         ${BOOK.hasPages ? `<button class="src-btn" data-pages="${g.pages[0]}-${g.pages[1]}">📖 看原书</button>` : ""}</div>
       <div class="mapbox">${mapHTML(g.map, true)}${mapCompact(g.map)}</div>
       ${g.entries.map(cardHTML).join("")}
     </section>`).join("");
   updateProgress();
+  paintLearned();
 }
+
+/* ---------- 学习记录：以词群为单位记下「今天学了什么」，可以随时追加 ---------- */
+let pick = null;   // 选词模式：{sel: 勾着的词群号, day: "today" | "yesterday"}
+const learnedNos = () => L.groups.filter(g => Study.learnDate(L.id, g.no)).map(g => g.no);
+function paintLearned() {
+  for (const g of L.groups) {
+    const d = Study.learnDate(L.id, g.no), el = $(`[data-learned="${g.no}"]`);
+    if (el) { el.textContent = d ? `✓ ${+d.slice(5, 7)}/${+d.slice(8)} 学过` : ""; el.title = d ? `${d} 记为学过` : ""; }
+    const box = $(`[data-pick="${g.no}"]`);
+    if (box) box.checked = pick ? pick.sel.has(g.no) : !!d;
+  }
+  if (!pick) return;
+  const was = learnedNos(), add = [...pick.sel].filter(n => !was.includes(n)), del = was.filter(n => !pick.sel.has(n));
+  const words = add.reduce((a, n) => a + L.groups.find(g => g.no === n).entries.length, 0);
+  $("#pickInfo").innerHTML = add.length || del.length
+    ? `${add.length ? `新勾 <b>${add.length}</b> 个词群 · ${words} 词` : ""}${add.length && del.length ? "；" : ""}${del.length ? `取消 <b>${del.length}</b> 个` : ""}`
+    : "勾上今天学过的词群";
+  $$("#pickBar [data-day]").forEach(b => b.classList.toggle("on", b.dataset.day === pick.day));
+  $("#pickSave").disabled = !add.length && !del.length;
+}
+function enterPick() {
+  pick = {sel: new Set(learnedNos()), day: "today"};
+  document.body.classList.add("picking"); $("#pickBar").hidden = false;
+  paintLearned();
+}
+function exitPick() {
+  pick = null;
+  document.body.classList.remove("picking"); $("#pickBar").hidden = true;
+  if (/\/learn$/.test(location.hash) && L) history.replaceState(null, "", "#/" + L.id);   // 刷新不再进选词模式
+  if (L) paintLearned();
+}
+function savePick() {
+  const was = learnedNos(), add = [...pick.sel].filter(n => !was.includes(n)), del = was.filter(n => !pick.sel.has(n));
+  if (del.length && !confirm(`取消 ${del.length} 个词群的学习记录？这些词的复习进度也会删掉。`)) return;
+  const day = pick.day === "today" ? SRS.today() : SRS.add(SRS.today(), -1);
+  Study.markGroups(L, add, day); Study.unmarkGroups(L, del);
+  toast(add.length ? `已记为${pick.day === "today" ? "今天" : "昨天"}学的：${add.length} 个词群${del.length ? `，取消 ${del.length} 个` : ""}` : `已取消 ${del.length} 个词群`);
+  exitPick();
+}
+$("#pickBar").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b || !pick) return;
+  if (b.dataset.day) { pick.day = b.dataset.day; paintLearned(); }
+  else if (b.id === "pickSave") savePick();
+  else if (b.id === "pickCancel") exitPick();
+});
+$("#groups").addEventListener("change", e => {
+  const box = e.target.closest("[data-pick]"); if (!box || !pick) return;
+  const n = +box.dataset.pick; box.checked ? pick.sel.add(n) : pick.sel.delete(n);
+  paintLearned();
+});
 function updateProgress() {
   const words = allEntries().map(e => e.word);
   const n = words.filter(w => known.has(w)).length;
@@ -270,15 +329,22 @@ async function loadLesson(id) {
   renderLesson();
 }
 
-/* ---------- 路由：#/u07-l01、#/u07-l01/g2、#/u07-l01/w/margin、#/settings ---------- */
+/* ---------- 路由：#/ 首页、#/drill…、#/list/…、#/week…（study.js）；#/u07-l01、#/u07-l01/g2、#/u07-l01/w/margin、
+   #/u07-l01/learn（打开选词模式）、#/settings ---------- */
+let prevHash = "#/";   // 设置页「返回」回到哪
 async function route() {
   const ready = BOOK.parts.flatMap(p => p.units.flatMap(u => u.lessons)).filter(l => l.ready);
   if (!ready.length) { $("#groups").innerHTML = `<p class="empty">还没有生成任何课。</p>`; return; }
   const last = ready.some(l => l.id === store.get("last")) ? store.get("last") : ready[0].id;
-  const isSettings = location.hash === "#/settings";
-  if (isSettings && !$("#lessonView").hidden && L) lessonScroll = {id: L.id, y: scrollY};   // 进设置前记住读到哪
-  $("#lessonView").hidden = isSettings; $("#fabs").hidden = isSettings; $("#settingsView").hidden = !isSettings;
+  const h = location.hash, isSettings = h === "#/settings", isStudy = !isSettings && Study.isStudy(h);
+  if ((isSettings || isStudy) && !$("#lessonView").hidden && L) lessonScroll = {id: L.id, y: scrollY};   // 离开课文前记住读到哪
+  if (!isSettings) prevHash = h || "#/";
+  if (pick && (isSettings || isStudy)) exitPick();
+  $("#lessonView").hidden = isSettings || isStudy; $("#fabs").hidden = isSettings || isStudy;
+  $("#settingsView").hidden = !isSettings; $("#studyView").hidden = !isStudy;
+  $("#homeBtn").classList.toggle("on", isStudy && !/^#\/(drill|list|week)/.test(h));
   $("#setBtn").classList.toggle("on", isSettings); $("#setBtn").title = $("#setBtn").ariaLabel = isSettings ? "返回" : "设置";
+  if (isStudy) { stopMarathon(); pop.style.display = "none"; Study.render(h); renderDrawer(); return; }
   if (isSettings) {
     stopMarathon(); pop.style.display = "none";
     if (!L) await loadLesson(last);   // 设置页试听要用到本课音频
@@ -286,14 +352,15 @@ async function route() {
     $("#crumb").textContent = "设置"; document.title = "设置 · 四级词汇";
     return;
   }
-  const m = location.hash.match(/^#\/(u\d\d-l\d\d)(?:\/(g\d+|w\/.+))?$/);
+  const m = h.match(/^#\/(u\d\d-l\d\d)(?:\/(g\d+|w\/.+|learn))?$/);
   const id = m && ready.some(l => l.id === m[1]) ? m[1] : last;
   const reuse = L && L.id === id;
   await loadLesson(id);
   store.set("last", id);
   if (reuse) renderLesson();   // 从设置页返回时重画，标题和进度跟上
   const t = m && m[2];
-  if (t && t[0] === "g") document.getElementById(t)?.scrollIntoView();
+  if (t === "learn") { restorePos(id); enterPick(); }
+  else if (t && t[0] === "g") document.getElementById(t)?.scrollIntoView();
   else if (t) gotoWord(decodeURIComponent(t.slice(2)));
   else if (lessonScroll && lessonScroll.id === id) scrollTo(0, lessonScroll.y);   // 从设置页返回，回到原来的位置
   else restorePos(id);
@@ -371,7 +438,9 @@ $("#viewerClose").onclick = () => { $("#viewer").hidden = true; };
 /* ---------- 点击事件 ---------- */
 document.addEventListener("click", e => {
   const t = e.target;
-  if (t.closest(".top,.drawer,.fabs,.settings,.viewer")) { if (!t.closest(".search")) $("#qres").style.display = "none"; return; }
+  if (t.closest(".top,.drawer,.fabs,.settings,.viewer,.study,.pickbar")) { if (!t.closest(".search")) $("#qres").style.display = "none"; return; }
+  if (t.id === "pickBtn") { pick ? exitPick() : enterPick(); return; }
+  if (t.closest(".pick")) return;
   if (t.dataset.say || t.classList.contains("play") || t.classList.contains("w")) stopMarathon();
   if (t.dataset.say) { speak(t.dataset.say); return; }
   if (t.classList.contains("play")) { playSentence(t.closest(".card"), null, t.dataset.slow ? 0.75 : rate()); return; }
@@ -405,9 +474,9 @@ const sw = (key, title, desc) => `<label class="row sw"><span><b>${title}</b><sm
 function renderSettings() {
   const have = AUD.voices || [];
   const sample = L ? allEntries()[0].word : "hello";
-  const back = L ? `#/${L.id}` : "#/";
+  const back = prevHash, bm = back.match(/^#\/u(\d\d)-l(\d\d)/);
   $("#settingsView").innerHTML = `
-    <a class="back" href="${back}">← 返回${L ? ` Unit ${L.unit} · Lesson ${L.lesson}` : ""}</a>
+    <a class="back" href="${back}">← 返回${bm ? ` Unit ${+bm[1]} · Lesson ${+bm[2]}` : Study.isStudy(back) && !/^#\/(drill|list|week)/.test(back) ? "首页" : ""}</a>
     <h1>设置</h1>
     <section class="panel"><h2>发音</h2>
       <div class="voices">${Object.keys(VOICE_NAMES).map(v => `
@@ -421,6 +490,12 @@ function renderSettings() {
     <section class="panel"><h2>学习</h2>
       ${sw("mask", "背诵模式", "遮住释义、记忆法和译文，点一下显示。课文页右下角「遮」也能随手切换")}
       ${sw("hideKnown", "隐藏已会", "标为「已会」的词卡不显示，磨耳朵也跳过它们")}
+    </section>
+    <section class="panel"><h2>背词</h2>
+      <div class="row"><span><b>考试日期</b><small>首页倒计时用</small></span><input type="date" data-set="examDate" value="${esc(S.examDate)}"></div>
+      <div class="row"><span><b>每天复习上限</b><small>到期的词超过这个数，多出来的按拖得久、火苗多优先，自动排到后面几天</small></span>
+        ${seg("dailyCap", [[80, "80"], [120, "120"], [200, "200"]])}</div>
+      ${sw("autoSay", "巩固时自动读单词", "每翻到一个新词先读一遍；按 R 再读")}
     </section>
     <section class="panel"><h2>磨耳朵</h2>
       <div class="row"><span><b>播放范围</b><small>从右下角 🎧 开始</small></span>${seg("scope", [["group", "当前词群"], ["lesson", "整课"]])}</div>
@@ -484,7 +559,7 @@ $("#settingsView").addEventListener("click", e => {
     return;
   }
   const b = t.closest("button[data-set]");
-  if (b) { const k = b.dataset.set, v = b.dataset.val; setS(k, k === "rate" ? +v : v); renderSettings(); if (k === "voice") speak(allEntries()[0].word); return; }
+  if (b) { const k = b.dataset.set, v = b.dataset.val; setS(k, k === "rate" || k === "dailyCap" ? +v : v); renderSettings(); if (k === "voice") speak(allEntries()[0].word); return; }
   if (t.id === "clearKnown" && confirm(`清空 ${known.size} 个「已会」记录？`)) { [...known].forEach(w => setKnown(w, false)); renderSettings(); }
   if (t.id === "syncNow") Sync.syncNow();
   if (t.id === "syncOff" && confirm("断开后这台设备不再同步，确定？")) { Sync.disconnect(); renderSettings(); }
@@ -499,6 +574,7 @@ $("#settingsView").addEventListener("click", e => {
 $("#settingsView").addEventListener("change", e => {
   const t = e.target;
   if (t.type === "checkbox" && t.dataset.set) setS(t.dataset.set, t.checked);
+  else if (t.dataset.set && t.value) setS(t.dataset.set, t.value);
 });
 
 /* ---------- 右下角快捷按钮 ---------- */
@@ -584,6 +660,8 @@ Sync.on(changed => {
   const last = store.get("last");
   const moved = ready.some(l => l.id === last) && (changed.includes("last") || changed.includes("pos:" + last));
   if (location.hash === "#/settings") { renderSettings(); renderDrawer(); return; }
+  if (!$("#studyView").hidden) { Study.refresh(); return; }   // 首页、巩固不跟着别处的阅读位置跳
+  if (pick) { paintLearned(); return; }                         // 正在勾词群，不重画
   if (moved) {
     const [, u, l] = last.match(/u(\d+)-l(\d+)/);
     toast(`已接上其他设备的进度：Unit ${+u} · Lesson ${+l}`);
