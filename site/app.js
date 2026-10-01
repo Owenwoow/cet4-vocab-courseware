@@ -4,20 +4,21 @@ const $ = s => document.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
 
-/* ---------- 本地存储（只存个人便利项，读写失败不影响使用） ---------- */
-const store = {
-  get(k, d) { try { const v = localStorage.getItem("lx:" + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
-  set(k, v) { try { localStorage.setItem("lx:" + k, JSON.stringify(v)); } catch {} },
-};
-const known = new Set(store.get("known", []));
-const saveKnown = () => store.set("known", [...known]);
+/* ---------- 存储：读写都走 sync.js（本机优先，连上 GitHub 后自动多端同步） ---------- */
+const store = {get: Sync.get, set: Sync.set};
+const known = new Set();
+function loadKnown() { known.clear(); for (const [w, on] of Sync.entries("known:")) if (on) known.add(w); }
+const setKnown = (w, on) => { on ? known.add(w) : known.delete(w); Sync.set("known:" + w, on ? 1 : 0); };
+loadKnown();
 
 /* ---------- 设置：集中存放，设置页修改，全站生效 ---------- */
 const VOICE_NAMES = {ava: "Ava", andrew: "Andrew", sonia: "Sonia", ryan: "Ryan"};
 const VOICE_DESC = {ava: "美式 · 女声", andrew: "美式 · 男声", sonia: "英式 · 女声", ryan: "英式 · 男声"};
 const DEFAULTS = {voice: "ava", rate: 1, mask: false, hideKnown: false, scope: "group", withZh: true, loop: false, theme: "auto"};
-const S = {...DEFAULTS, ...store.get("settings", {})};
-function setS(k, v) { S[k] = v; store.set("settings", S); applySettings(); }
+const S = {...DEFAULTS};
+const loadSettings = () => Object.assign(S, DEFAULTS, Object.fromEntries(Sync.entries("set:")));
+function setS(k, v) { S[k] = v; Sync.set("set:" + k, v); applySettings(); }
+loadSettings();
 function applySettings() {
   document.body.classList.toggle("mask", S.mask);
   document.body.classList.toggle("hideKnown", S.hideKnown);
@@ -288,9 +289,28 @@ async function route() {
   if (t && t[0] === "g") document.getElementById(t)?.scrollIntoView();
   else if (t) gotoWord(decodeURIComponent(t.slice(2)));
   else if (lessonScroll && lessonScroll.id === id) scrollTo(0, lessonScroll.y);   // 从设置页返回，回到原来的位置
+  else restorePos(id);
   lessonScroll = null;
 }
 let lessonScroll = null;
+
+/* ---------- 阅读位置：滚动停下后记下本课读到哪个词，下次打开（或换设备）接着读 ---------- */
+let posReady = false;   // 首次同步完成前不记，免得本机的旧位置盖掉别的设备更新的位置
+history.scrollRestoration = "manual";   // 刷新后由 restorePos 定位，不让浏览器自己恢复的滚动位置抢在后面
+function restorePos(id) {
+  const w = store.get("pos:" + id, "");
+  const card = w && document.getElementById("w-" + w);
+  card ? card.scrollIntoView({block: "start"}) : scrollTo(0, 0);
+}
+let posTimer = null;
+addEventListener("scroll", () => {
+  clearTimeout(posTimer);
+  posTimer = setTimeout(() => {
+    if (!posReady || !L || $("#lessonView").hidden) return;
+    const card = scrollY < 120 ? null : $$(".card").find(c => c.getBoundingClientRect().bottom > 70);   // 顶栏 52px 下第一张露出来的卡
+    store.set("pos:" + L.id, card ? card.dataset.word : "", true);
+  }, 500);
+}, {passive: true});
 function gotoWord(w) {
   const hit = WORDMAP.get(w); if (!hit) return;
   const card = document.getElementById("w-" + hit.entry.word);
@@ -352,7 +372,7 @@ document.addEventListener("click", e => {
   if (t.dataset.pages) { const [a, b] = t.dataset.pages.split("-").map(Number); openPages(a, b); return; }
   if (t.classList.contains("knowBtn")) {
     const card = t.closest(".card"), w = card.dataset.word;
-    known.has(w) ? known.delete(w) : known.add(w); saveKnown();
+    setKnown(w, !known.has(w));
     card.classList.toggle("known", known.has(w)); t.textContent = known.has(w) ? "✓ 已会" : "标为已会";
     $$(`.node[data-goto="${CSS.escape(w)}"]`).forEach(n => n.classList.toggle("known", known.has(w)));
     updateProgress(); return;
@@ -404,10 +424,43 @@ function renderSettings() {
       <div class="row"><span><b>主题</b><small>自动跟随系统深浅色</small></span>${seg("theme", [["auto", "自动"], ["light", "浅色"], ["dark", "深色"]])}</div>
     </section>
     <section class="panel"><h2>数据</h2>
-      <div class="row"><span><b>「已会」记录</b><small>共 ${known.size} 个词，只存在这台设备的浏览器里</small></span>
+      <div class="row"><span><b>「已会」记录</b><small>共 ${known.size} 个词${Sync.connected ? "，已开启云同步，清空会同步到所有设备" : "，只存在这台设备的浏览器里"}</small></span>
         <button class="danger" id="clearKnown"${known.size ? "" : " disabled"}>清空</button></div>
-    </section>`;
+    </section>
+    <section class="panel" id="syncPanel"></section>`;
+  renderSyncPanel();
 }
+
+/* ---------- 设置页：云同步 ---------- */
+const TOKEN_URL = "https://github.com/settings/personal-access-tokens/new";
+function ago(t) {
+  const s = (Date.now() - t) / 1000;
+  return s < 60 ? "刚刚" : s < 3600 ? `${Math.floor(s / 60)} 分钟前` : s < 86400 ? `${Math.floor(s / 3600)} 小时前` : new Date(t).toLocaleString();
+}
+function renderSyncPanel() {
+  const el = $("#syncPanel"); if (!el) return;
+  const st = Sync.status;
+  if (!Sync.connected) {
+    el.innerHTML = `<h2>云同步</h2>
+      <div class="row"><span><b>多端同步进度</b><small>「已会」、设置、上次读到的位置存进你自己 GitHub 账号的一个私密 Gist，电脑、手机打开就自动接上</small></span></div>
+      <ol class="steps">
+        <li>打开 <a href="${TOKEN_URL}" target="_blank" rel="noopener">GitHub 新建 token</a>（fine-grained token）</li>
+        <li>名字随意，有效期选最长；Repository access 选 <b>Public repositories</b>；Permissions 里只把 <b>Gists</b> 设为 <b>Read and write</b>，其余都不动</li>
+        <li>生成后复制，粘贴到下面点「连接」。每台设备粘贴一次即可</li>
+      </ol>
+      <div class="tokenrow"><input id="syncToken" type="password" placeholder="github_pat_…" autocomplete="off" spellcheck="false">
+        <button id="syncConnect">连接</button></div>
+      ${st.msg ? `<p class="syncmsg err">${esc(st.msg)}</p>` : ""}`;
+    return;
+  }
+  const text = st.state === "syncing" ? "同步中…" : st.state === "error" ? esc(st.msg) : st.at ? `已同步 · ${ago(st.at)}` : "等待同步";
+  el.innerHTML = `<h2>云同步</h2>
+    <div class="row"><span><b>已开启</b><small class="syncstate ${st.state}">${text}</small></span>
+      <button id="syncNow"${st.state === "syncing" ? " disabled" : ""}>立即同步</button></div>
+    <div class="row"><span><b>断开这台设备</b><small>只删除本机保存的 token，云端进度和其他设备不受影响</small></span>
+      <button class="danger" id="syncOff">断开</button></div>`;
+}
+Sync.onStatus(() => { if (location.hash === "#/settings") renderSyncPanel(); });
 $("#settingsView").addEventListener("click", e => {
   const t = e.target;
   const tryBtn = t.closest("[data-try]");
@@ -419,7 +472,16 @@ $("#settingsView").addEventListener("click", e => {
   }
   const b = t.closest("button[data-set]");
   if (b) { const k = b.dataset.set, v = b.dataset.val; setS(k, k === "rate" ? +v : v); renderSettings(); if (k === "voice") speak(allEntries()[0].word); return; }
-  if (t.id === "clearKnown" && confirm(`清空 ${known.size} 个「已会」记录？`)) { known.clear(); saveKnown(); renderSettings(); }
+  if (t.id === "clearKnown" && confirm(`清空 ${known.size} 个「已会」记录？`)) { [...known].forEach(w => setKnown(w, false)); renderSettings(); }
+  if (t.id === "syncNow") Sync.syncNow();
+  if (t.id === "syncOff" && confirm("断开后这台设备不再同步，确定？")) { Sync.disconnect(); renderSettings(); }
+  if (t.id === "syncConnect") {
+    const token = $("#syncToken").value.trim();
+    if (!token) { $("#syncToken").focus(); return; }
+    t.disabled = true; t.textContent = "连接中…";
+    Sync.connect(token).then(() => { posReady = true; renderSettings(); toast("云同步已开启"); })
+      .catch(err => { renderSyncPanel(); const m = document.createElement("p"); m.className = "syncmsg err"; m.textContent = err.message; $("#syncPanel").append(m); });
+  }
 });
 $("#settingsView").addEventListener("change", e => {
   const t = e.target;
@@ -497,8 +559,29 @@ $("#q").addEventListener("input", () => {
 $("#q").addEventListener("keydown", e => { if (e.key === "Enter") { const a = qres.querySelector("a[href]"); if (a) { location.hash = a.getAttribute("href"); qres.style.display = "none"; } } });
 qres.addEventListener("click", () => { qres.style.display = "none"; $("#q").blur(); });
 
+/* ---------- 别的设备的改动同步过来：刷新已会和设置；别处读到了更新的位置就跟过去 ---------- */
+function toast(msg) {
+  const el = $("#toast"); el.textContent = msg; el.classList.add("on");
+  clearTimeout(toast.t); toast.t = setTimeout(() => el.classList.remove("on"), 3000);
+}
+Sync.on(changed => {
+  loadKnown(); loadSettings(); applySettings();
+  if (!BOOK) return;
+  const ready = BOOK.parts.flatMap(p => p.units.flatMap(u => u.lessons)).filter(l => l.ready);
+  const last = store.get("last");
+  const moved = ready.some(l => l.id === last) && (changed.includes("last") || changed.includes("pos:" + last));
+  if (location.hash === "#/settings") { renderSettings(); renderDrawer(); return; }
+  if (moved) {
+    const [, u, l] = last.match(/u(\d+)-l(\d+)/);
+    toast(`已接上其他设备的进度：Unit ${+u} · Lesson ${+l}`);
+    if (L && L.id === last) { renderLesson(); restorePos(last); }
+    else location.hash = "#/" + last;
+  } else if (L) { const y = scrollY; renderLesson(); scrollTo(0, y); }
+});
+
 /* ---------- 启动 ---------- */
 applySettings();
 window.addEventListener("hashchange", route);
 fetchJSON("data/book.json").then(b => { BOOK = b; renderDrawer(); return route(); })
+  .then(() => Sync.start()).then(() => { posReady = true; })
   .catch(err => { $("#groups").innerHTML = `<p class="empty">数据加载失败：${esc(err.message)}<br>请用本地服务器打开（见 README），不要直接双击 HTML。</p>`; });

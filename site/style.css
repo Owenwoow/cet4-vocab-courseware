@@ -94,6 +94,7 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .panel h2+.row,.panel h2+.voices{border-top:none}
 .row>span{display:flex;flex-direction:column;min-width:0}
 .row small{color:var(--sub);font-size:13px}
+.row>button{flex-shrink:0;white-space:nowrap}
 .hint{font-size:12px;color:var(--sub);margin:0 0 6px}
 .seg{display:inline-flex;flex:none;border:1px solid var(--line);border-radius:10px;overflow:hidden}
 .seg button{border:none;border-radius:0;padding:6px 12px;background:var(--card)}
@@ -228,3 +229,15 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .viewer-body img{width:100%;max-width:900px;display:block;margin:0 auto 12px;border:1px solid var(--line)}
 .foot{font-size:12px;color:var(--sub);text-align:center;margin-top:30px}
 .empty{color:var(--sub);text-align:center;padding:60px 0}
+
+/* 云同步面板与提示条 */
+.steps{margin:4px 0 10px;padding-left:20px;font-size:13px;color:var(--sub);line-height:1.7}
+.steps a{color:var(--blue)}
+.steps b{color:var(--ink);font-weight:600}
+.tokenrow{display:flex;gap:8px;padding:4px 0 10px}
+.tokenrow input{flex:1;min-width:0;padding:8px 10px;border:1px solid var(--line2);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit;font-size:14px}
+.syncmsg{font-size:13px;margin:0 0 10px}
+.syncmsg.err,.syncstate.error{color:var(--pink)}
+.syncstate.ok{color:var(--ok)}
+.toast{position:fixed;left:50%;bottom:24px;z-index:60;transform:translate(-50%,20px);max-width:calc(100vw - 32px);padding:10px 16px;border-radius:10px;background:var(--ink);color:var(--bg);font-size:14px;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s}
+.toast.on{opacity:1;transform:translate(-50%,0)}
