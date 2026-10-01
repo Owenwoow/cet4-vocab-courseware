@@ -148,7 +148,7 @@ function lessonProgress(les) {
   return `<span class="prog${n === words.length ? " done" : ""}">${n}/${words.length}</span>`;
 }
 function renderDrawer() {
-  let h = `<div class="dnav"><a href="#/">🏠 首页</a><a href="#/drill">🎲 巩固</a><a href="#/week">📅 周总结</a></div><h2>${esc(BOOK.title)}</h2>`;
+  let h = `<h2>${esc(BOOK.title)}</h2>`;
   for (const p of BOOK.parts) {
     h += `<div class="part">PART 0${p.no} · ${esc(p.title)}</div>`;
     for (const u of p.units) {

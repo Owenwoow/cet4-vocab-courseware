@@ -253,12 +253,9 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
   --wa-color-brand-border-normal:var(--accent);
 }
 
-/* 顶栏：首页按钮；抽屉顶部导航 */
+/* 顶栏：首页按钮 */
 #homeBtn{text-decoration:none;color:var(--ink);border-radius:8px;font-size:20px;line-height:1}
 #homeBtn.on{background:var(--accent-soft);color:var(--accent)}
-.drawer .dnav{display:flex;gap:6px;padding:0 12px 12px;margin-bottom:6px;border-bottom:1px solid var(--line)}
-.drawer .dnav a{flex:1;text-align:center;font-size:13px;padding:6px 0;border-radius:8px;background:var(--bg);color:var(--ink);text-decoration:none}
-@media (hover:hover){.drawer .dnav a:hover{background:var(--accent-soft);color:var(--accent)}}
 
 /* ---------- 学习记录（课文页选词模式） ---------- */
 .pickBtn{margin:-10px 0 22px;font-size:14px;padding:6px 14px;border-radius:18px;border-color:var(--accent);color:var(--accent)}
