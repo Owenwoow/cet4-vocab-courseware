@@ -268,6 +268,7 @@ async function route() {
   if (!ready.length) { $("#groups").innerHTML = `<p class="empty">还没有生成任何课。</p>`; return; }
   const last = ready.some(l => l.id === store.get("last")) ? store.get("last") : ready[0].id;
   const isSettings = location.hash === "#/settings";
+  if (isSettings && !$("#lessonView").hidden && L) lessonScroll = {id: L.id, y: scrollY};   // 进设置前记住读到哪
   $("#lessonView").hidden = isSettings; $("#fabs").hidden = isSettings; $("#settingsView").hidden = !isSettings;
   $("#setBtn").classList.toggle("on", isSettings);
   if (isSettings) {
@@ -286,7 +287,10 @@ async function route() {
   const t = m && m[2];
   if (t && t[0] === "g") document.getElementById(t)?.scrollIntoView();
   else if (t) gotoWord(decodeURIComponent(t.slice(2)));
+  else if (lessonScroll && lessonScroll.id === id) scrollTo(0, lessonScroll.y);   // 从设置页返回，回到原来的位置
+  lessonScroll = null;
 }
+let lessonScroll = null;
 function gotoWord(w) {
   const hit = WORDMAP.get(w); if (!hit) return;
   const card = document.getElementById("w-" + hit.entry.word);
