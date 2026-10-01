@@ -17,7 +17,7 @@
   --t-lx:#4ade80;--t-gc:#fb923c;--t-xy:#38bdf8;--t-dz:#93b4ff;
 }
 *{box-sizing:border-box}
-html{scroll-padding-top:70px;-webkit-tap-highlight-color:transparent}
+html{scroll-padding-top:70px}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
 button,select,input{font:inherit;color:var(--ink)}
 select,button{font-size:13px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:5px 10px;cursor:pointer}
