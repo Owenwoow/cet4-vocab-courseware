@@ -242,7 +242,7 @@ function renderLesson() {
   $("#lessonHead").innerHTML = `<h1>Unit ${L.unit} · Lesson ${L.lesson}</h1>
     <p>${allEntries().length} 词 · ${L.groups.length} 个词群 · 书 p${a}–${b} · <span id="lessonProg"></span></p>
     <div class="chips">${L.groups.map(g => `<a href="#/${L.id}/g${g.no}">词以群记 ${g.no} ${esc(g.title)}</a>`).join("")}</div>
-    <a class="pickBtn" href="#/log/${L.id}">📝 记录学了什么</a>`;
+    <a class="pickBtn" href="#/log/${L.id}">📝 学习记录</a>`;
   $("#groups").innerHTML = L.groups.map(g => `<section class="group" id="g${g.no}" data-g="${g.no}">
       <div class="ghead"><span class="gno">词以群记 ${g.no}</span><span class="gtitle">${esc(g.title)}</span><span class="learned" data-learned="${g.no}"></span>
         ${BOOK.hasPages ? `<button class="src-btn" data-pages="${g.pages[0]}-${g.pages[1]}">📖 看原书</button>` : ""}</div>

@@ -262,32 +262,30 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 @media (hover:hover){.pickBtn:hover{background:var(--accent-soft)}}
 .learned{font-size:12px;color:var(--ok);background:var(--ok-soft);border-radius:8px;padding:1px 8px;white-space:nowrap}
 .learned:empty{display:none}
-/* 首页「学新」里的快速记：点到哪勾到哪 */
-.steps4 li .quick{flex-basis:100%;margin:4px 0 0 40px}
-.qhint{font-size:12px;color:var(--sub);margin-bottom:4px}
-.qrow{display:flex;align-items:center;gap:10px;width:100%;text-align:left;font-size:14px;padding:7px 10px;margin-bottom:4px;border-radius:10px;background:var(--bg);border:1px solid transparent}
-.qrow.on{background:var(--accent-soft);border-color:var(--accent)}
-.qbox{flex:none;width:18px;height:18px;border-radius:5px;border:1.5px solid var(--line2);display:grid;place-items:center;font-size:12px;font-weight:700;color:#fff;background:var(--card)}
-.qrow.on .qbox{background:var(--accent);border-color:var(--accent)}
-.qt{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.qn{flex:none;font-size:12px;color:var(--sub)}
-.qops{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:8px}
-.qmore{font-size:13px;color:var(--accent);text-decoration:none;margin-left:auto}
-@media (max-width:600px){.steps4 li .quick{margin-left:0}.qmore{margin-left:0}}
-/* 记录页：像书的目录 */
+.steps4 .acts{display:flex;gap:6px;flex:none}
+/* 学习记录页：像书的目录。每课一张连成一体的列表，勾上的行左边一条竖线，连续勾的连成一段 */
 .logv .vh h1{margin:4px 0}
 .lunit{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:10px;overflow:hidden}
 .lunit summary{display:flex;justify-content:space-between;align-items:baseline;padding:12px 16px;cursor:pointer;font-weight:700}
 .lunit summary small{font-weight:400;color:var(--sub);font-size:13px}
-.lles{padding:0 12px 8px}
-.llh{font-size:13px;font-weight:600;color:var(--accent);margin:6px 4px 4px}
-.lrec{display:flex;align-items:center;gap:10px;padding:8px 8px;border-radius:10px;cursor:pointer;font-size:14px}
+.lunit[open] summary{border-bottom:1px solid var(--line)}
+.lles{margin:12px 14px;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.llh{padding:6px 14px;font-size:12px;font-weight:600;letter-spacing:.5px;color:var(--sub);background:var(--bg);border-bottom:1px solid var(--line)}
+.lrec{display:flex;align-items:center;gap:12px;padding:10px 14px;cursor:pointer;font-size:15px;border-top:1px solid var(--line);transition:background .15s}
+.llh+.lrec{border-top:none}
 @media (hover:hover){.lrec:hover{background:var(--bg)}}
-.lrec.on{background:var(--accent-soft)}
 .lrec input{flex:none;width:18px;height:18px;margin:0;accent-color:var(--accent);cursor:pointer}
+.lno{flex:none;min-width:24px;text-align:center;font-size:12px;font-weight:700;color:var(--sub);border:1px solid var(--line2);border-radius:6px;padding:0 4px;line-height:1.6}
 .lrec .gt{flex:1;min-width:0}
+.lrec .ld{flex:none;font-size:12px;color:var(--ok)}
+.lrec .qn{flex:none;font-size:12px;color:var(--sub);min-width:34px;text-align:right}
+.lrec.on{background:var(--accent-soft);box-shadow:inset 3px 0 0 var(--accent)}
+.lrec.on+.lrec.on{border-top-color:transparent}
+.lrec.on .gt{font-weight:600}
+.lrec.on .lno{color:#fff;background:var(--accent);border-color:var(--accent)}
 .logbar{position:sticky;bottom:calc(12px + env(safe-area-inset-bottom));display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px;
   padding:10px 14px;background:var(--card);border:1px solid var(--accent);border-radius:14px;box-shadow:0 6px 24px rgba(0,0,0,.15);font-size:14px}
+@media (max-width:600px){.lles{margin:10px 8px}.lrec{padding:10px 10px;gap:10px}}
 
 /* ---------- 背词页面公共 ---------- */
 .study[hidden]{display:none}
@@ -340,7 +338,7 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
   .units{grid-template-columns:repeat(4,1fr)}
   .steps4 li{flex-wrap:wrap}
   .steps4 .sd{flex-basis:calc(100% - 40px)}
-  .steps4 li>.dot+.sd+wa-button{margin-left:40px}
+  .steps4 li>.dot+.sd+wa-button,.steps4 li>.dot+.sd+.acts{margin-left:40px}
 }
 
 /* 浏览列表 */

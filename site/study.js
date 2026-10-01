@@ -212,8 +212,8 @@ const Study = (() => {
         : `到期 ${due} 个${due > left ? ` · 今天先做 ${left} 个（上限 ${cap()}）` : ""}`,
       due && left ? btn("#/drill/due", "开始", 'variant="brand"') : "");
     const s2 = step(groups > 0, 2, weekend ? "学新（周末可选）" : "学新",
-      groups ? `今天记了 ${groups} 个词群 · ${todays.length} 词，学了更多就接着点下面的` : "看完视频和课件，在下面点到今天学到的词群",
-      lastL ? btn(`#/${last}`, `继续 U${+lastL[1]} L${+lastL[2]}`) : "", `<div class="quick" id="quick">${quickHTML()}</div>`);
+      groups ? `今天记了 ${groups} 个词群 · ${todays.length} 词，学了更多就接着记` : "看完视频和课件，在「学习记录」里勾上今天学的词群",
+      `<span class="acts">${lastL ? btn(`#/${last}`, `继续 U${+lastL[1]} L${+lastL[2]}`) : ""}${btn("#/log", "📝 学习记录", groups ? undefined : 'variant="brand"')}</span>`);
     const s3 = step(false, 3, "途中看", todays.length ? `今天的 ${todays.length} 个词，掏出手机随时过一眼` : weekend ? "看看本周学的词" : "记录今天学的之后，这里能快速浏览",
       todays.length ? btn("#/list/today", "浏览") : weekend ? btn("#/list/week", "浏览") : "");
     const s4 = step(nightDone, 4, "睡前巩固", todays.length ? (nightDone ? "今天学的都过了一遍" : `把今天学的 ${todays.length} 个词再过一遍`) : "今天还没有新学的词",
@@ -221,21 +221,6 @@ const Study = (() => {
     return `<wa-card class="mod today"><div slot="header" class="mh"><b>今天</b><a href="#/drill">自由抽查 →</a></div>
       <ol class="steps4">${s1}${s2}${s3}${s4}</ol></wa-card>`;
   }
-  /* 首页快速记：列出接下来的 5 个词群，点到哪个就勾到哪个（学是按顺序往后学的） */
-  const Q = {n: 0, day: "today", list: []};
-  function quickHTML() {
-    Q.list = nextGroups(5);
-    if (Q.n > Q.list.length) Q.n = 0;
-    if (!Q.list.length) return `<a class="qmore" href="#/log">已生成的课都记完了，去记录页看看 →</a>`;
-    const words = wordsOf(Q.list.slice(0, Q.n).map(g => g.key));
-    return `<div class="qhint">接下来要学的（点到哪个就勾到哪个）：</div>
-      ${Q.list.map((g, i) => `<button class="qrow${i < Q.n ? " on" : ""}" data-qi="${i}"><span class="qbox">${i < Q.n ? "✓" : ""}</span>
-        <span class="qt">${lesTitle(g.lid)} · 词以群记 ${g.no} ${esc(g.title)}</span><span class="qn" data-qn="${g.key}">${counts.has(g.key) ? counts.get(g.key) + " 词" : ""}</span></button>`).join("")}
-      <div class="qops"><span class="seg">${[["today", "今天"], ["yesterday", "昨天"]].map(([v, l]) => `<button data-qday="${v}" class="${Q.day === v ? "on" : ""}">${l}</button>`).join("")}</span>
-        <wa-button size="small" variant="brand" id="quickSave"${Q.n ? "" : " disabled"}>${Q.n ? `记为${Q.day === "today" ? "今天" : "昨天"}学的${words ? ` · ${words} 词` : ""}` : "先点上面的词群"}</wa-button>
-        <a class="qmore" href="#/log">跳着学、补记、取消 →</a></div>`;
-  }
-  function paintQuick() { const el = $("#quick"); if (el) el.innerHTML = quickHTML(); }
   function lastActive() {
     let last = "";
     for (const [d, v] of Sync.entries("log:")) if (v && (v.g + v.m + v.f) > 0 && d > last) last = d;
@@ -287,13 +272,12 @@ const Study = (() => {
   function renderHome() {
     setHead("首页");
     view().innerHTML = `<div class="home">${MODULES.map(f => f()).join("")}</div>`;
-    fillCounts(Q.list.map(g => g.lid), paintQuick);
   }
 
   /* ---------- 记录页：像书的目录，Unit → Lesson → 词群，一行一个，勾上就是学过（跳着学、补记、取消用） ---------- */
   let W = null;   // 还没保存的改动：{want: 词群键 → 勾不勾, day}
   function renderLog(focus) {
-    setHead("记录学了什么");
+    setHead("学习记录");
     if (!W) W = {want: new Map(), day: "today"};
     const learned = new Map(learnMarks()), all = seq();
     const fLid = focus || (nextGroups(1)[0] || {}).lid || store.get("last") || (all[0] || {}).lid;
@@ -301,17 +285,17 @@ const Study = (() => {
     const on = key => (W.want.has(key) ? W.want.get(key) : learned.has(key));
     const units = BOOK.parts.flatMap(p => p.units);
     view().innerHTML = `<div class="logv">
-      <div class="vh"><h1>记录学了什么</h1><span class="seg">${[["today", "今天"], ["yesterday", "昨天"]].map(([v, l]) =>
+      <div class="vh"><h1>学习记录</h1><span class="seg">${[["today", "今天"], ["yesterday", "昨天"]].map(([v, l]) =>
         `<button data-lday="${v}" class="${W.day === v ? "on" : ""}">记为${l}学的</button>`).join("")}</span></div>
-      <p class="note">勾上学过的词群，取消勾选就删掉那个词群的学习记录和复习进度。平时在首页「学新」里点一下更快。</p>
+      <p class="note">像翻书的目录一样，勾上学过的词群再保存；取消勾选会删掉那个词群的学习记录和复习进度。</p>
       ${units.map(u => {
         const ls = u.lessons.filter(l => l.ready), keys = ls.flatMap(l => l.groups.map(g => `${l.id}:g${g.no}`)), n = keys.filter(k => learned.has(k)).length;
         return `<details class="lunit" data-u="${u.no}"${u.no === fU ? " open" : ""}><summary>Unit ${u.no}<small>已记 ${n}/${keys.length} 个词群</small></summary>
           ${ls.map(l => `<div class="lles" id="log-${l.id}"><div class="llh">Lesson ${l.no}</div>${l.groups.map(g => {
             const key = `${l.id}:g${g.no}`, d = learned.get(key);
             return `<label class="lrec${on(key) ? " on" : ""}"><input type="checkbox" data-g="${key}"${on(key) ? " checked" : ""}>
-              <span class="gt">词以群记 ${g.no} ${esc(g.title)}</span><span class="qn" data-qn="${key}">${counts.has(key) ? counts.get(key) + " 词" : ""}</span>
-              ${d ? `<span class="learned">✓ ${md(d)}</span>` : ""}</label>`; }).join("")}</div>`).join("")}</details>`; }).join("")}
+              <span class="lno">${g.no}</span><span class="gt">${esc(g.title)}</span>
+              ${d ? `<span class="ld" title="${d} 记为学过">${md(d)} 学过</span>` : ""}<span class="qn" data-qn="${key}">${counts.has(key) ? counts.get(key) + " 词" : ""}</span></label>`; }).join("")}</div>`).join("")}</details>`; }).join("")}
       <div class="logbar"><span id="logInfo"></span><wa-button size="small" variant="brand" id="logSave">保存</wa-button></div></div>`;
     paintLogBar();
     const open = units.find(u => u.no === fU);
@@ -522,16 +506,7 @@ const Study = (() => {
       const r = t.closest("[data-rate]"); if (r) { rateCur(r.dataset.rate); return; }
       if (t.closest("#redo")) { startDrill(D.sc, {title: "再过一遍", items: D.again}); return; }
     }
-    const qi = t.closest("[data-qi]"); if (qi) { const i = +qi.dataset.qi; Q.n = i < Q.n ? i : i + 1; paintQuick(); return; }   // 点到哪勾到哪；点已勾的就从它往后取消
-    const qd = t.closest("[data-qday]"); if (qd) { Q.day = qd.dataset.qday; paintQuick(); return; }
-    if (t.closest("#quickSave") && Q.n) {
-      const picked = Q.list.slice(0, Q.n), day = Q.day === "today" ? T() : SRS.add(T(), -1);
-      saveMarks(picked.map(g => [g.key, true]), day).then(() => {
-        toast(`已记为${Q.day === "today" ? "今天" : "昨天"}学的：${picked.length} 个词群`); Q.n = 0; renderHome();
-      }).catch(err => toast("保存失败：" + err.message));
-      return;
-    }
-    const ld = t.closest("[data-lday]"); if (ld && W) { W.day = ld.dataset.lday; 40("[data-lday]", v).forEach(b => b.classList.toggle("on", b === ld)); return; }
+    const ld = t.closest("[data-lday]"); if (ld && W) { W.day = ld.dataset.lday; $$("[data-lday]", v).forEach(b => b.classList.toggle("on", b === ld)); return; }
     if (t.closest("#logSave") && W) {
       const {add, del} = logDiff();
       if (!add.length && !del.length) return;
