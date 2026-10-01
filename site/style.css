@@ -58,8 +58,10 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 @media (min-width:1180px){
   .drawer{transform:none;top:52px;z-index:20}
   .scrim.open{display:none}
-  #menuBtn{display:none}
-  .wrap{margin-left:max(290px,calc(50% - 380px))!important}
+  .wrap{margin-left:max(290px,calc(50% - 380px))!important;transition:margin-left .2s}
+  /* 宽屏也能手动收起侧边栏，正文回到居中 */
+  body.sideOff .drawer{transform:translateX(-100%)}
+  body.sideOff .wrap{margin-left:auto!important}
 }
 
 .wrap{max-width:780px;margin:0 auto;padding:16px 16px 80px}

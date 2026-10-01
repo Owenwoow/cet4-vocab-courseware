@@ -161,7 +161,14 @@ function renderDrawer() {
   $("#drawer").innerHTML = h;
 }
 const openDrawer = v => { $("#drawer").classList.toggle("open", v); $("#scrim").classList.toggle("open", v); };
-$("#menuBtn").onclick = () => openDrawer(true);
+/* 宽屏时侧边栏常驻，☰ 改为收起 / 展开，状态记住；窄屏仍是抽屉 */
+const wide = matchMedia("(min-width:1180px)");
+const applySide = () => document.body.classList.toggle("sideOff", !!store.get("sideOff", false));
+$("#menuBtn").onclick = () => {
+  if (!wide.matches) { openDrawer(true); return; }
+  store.set("sideOff", !store.get("sideOff", false)); applySide();
+};
+applySide();
 $("#scrim").onclick = () => openDrawer(false);
 $("#drawer").addEventListener("click", e => { if (e.target.closest("a")) openDrawer(false); });
 
@@ -565,7 +572,7 @@ function toast(msg) {
   clearTimeout(toast.t); toast.t = setTimeout(() => el.classList.remove("on"), 3000);
 }
 Sync.on(changed => {
-  loadKnown(); loadSettings(); applySettings();
+  loadKnown(); loadSettings(); applySettings(); applySide();
   if (!BOOK) return;
   const ready = BOOK.parts.flatMap(p => p.units.flatMap(u => u.lessons)).filter(l => l.ready);
   const last = store.get("last");
