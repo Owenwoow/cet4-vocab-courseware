@@ -66,7 +66,7 @@ test("忘了：从今天重新开始，遗忘次数 +1，进难词本", () => {
 test("提前复习：记得 / 模糊不改计划，忘了照样重来", () => {
   const c = SRS.newCard(MON);           // 周二到期
   const g = SRS.rate(c, "g", MON);
-  assert.equal(g.d, TUE); assert.equal(g.s, 0); assert.equal(g.n, 1);
+  assert.equal(g.d, TUE); assert.equal(g.s, 0); assert.equal(g.n, 1); assert.equal(g.t, MON);
   const m = SRS.rate(c, "m", MON);
   assert.equal(m.d, TUE);
   const f = SRS.rate(c, "f", MON);

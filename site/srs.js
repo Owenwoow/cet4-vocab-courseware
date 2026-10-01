@@ -39,9 +39,9 @@ const SRS = (() => {
   const newCard = date => ({a: date, s: 0, d: add(date, 1), l: 0, r: "", n: 0});
   const isDue = (c, t) => c.d <= t;
 
-  /* 打分：g 记得 / m 模糊 / f 忘了。返回新卡，不改原卡 */
+  /* 打分：g 记得 / m 模糊 / f 忘了。返回新卡，不改原卡；t 记下最近一次复习的日期 */
   function rate(c, r, t) {
-    const n = {...c, r, n: (c.n || 0) + 1};
+    const n = {...c, r, n: (c.n || 0) + 1, t};
     if (r === "f") return {...n, a: t, s: 0, d: add(t, 1), l: (c.l || 0) + 1};
     if (!isDue(c, t)) return n;                     // 提前复习：不改计划
     if (r === "m") return {...n, d: add(t, 2)};
