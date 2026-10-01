@@ -30,3 +30,4 @@
 - 原书扫描页（`site/data/pages/`）不进仓库、不部署，「看原书」只在本地版出现（`book.json` 的 `hasPages`）
 - 书页码 = PDF 页序号(0 起) − 9（`pipeline/config.py`）
 - 每个 Lesson 的词条序号从 01 重新开始；词群编号在整个 Unit 内连续
+- 学习进度（已会、设置、上次的课、每课阅读位置）统一走 `site/sync.js` 存取，不要直接写 localStorage；新增要跨设备同步的状态也走它。云端是用户自己的私密 Gist（`cet4-progress.json`），token 只存本机，绝不写进仓库
