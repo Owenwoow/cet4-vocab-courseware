@@ -257,20 +257,37 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 #homeBtn{text-decoration:none;color:var(--ink);border-radius:8px;font-size:20px;line-height:1}
 #homeBtn.on{background:var(--accent-soft);color:var(--accent)}
 
-/* ---------- 学习记录（课文页选词模式） ---------- */
-.pickBtn{margin:-10px 0 22px;font-size:14px;padding:6px 14px;border-radius:18px;border-color:var(--accent);color:var(--accent)}
-.picking .pickBtn{background:var(--accent);color:#fff}
-.ghead .pick{display:none;align-items:center;gap:4px;font-size:14px;font-weight:600;color:var(--accent);cursor:pointer;padding:2px 8px 2px 4px;border:1.5px solid var(--accent);border-radius:8px;background:var(--card)}
-.ghead .pick input{width:18px;height:18px;margin:0;accent-color:var(--accent);cursor:pointer}
-.picking .ghead .pick{display:inline-flex}
-.learned{font-size:12px;color:var(--ok);background:var(--ok-soft);border-radius:8px;padding:1px 8px}
+/* ---------- 学习记录 ---------- */
+.pickBtn{display:inline-block;margin:-10px 0 22px;font-size:14px;padding:5px 14px;border-radius:18px;border:1px solid var(--accent);color:var(--accent);text-decoration:none;background:var(--card)}
+@media (hover:hover){.pickBtn:hover{background:var(--accent-soft)}}
+.learned{font-size:12px;color:var(--ok);background:var(--ok-soft);border-radius:8px;padding:1px 8px;white-space:nowrap}
 .learned:empty{display:none}
-.pickbar{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:45;display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;
-  width:max-content;max-width:calc(100vw - 24px);padding:10px 14px;background:var(--card);border:1px solid var(--accent);border-radius:14px;box-shadow:0 6px 24px rgba(0,0,0,.2);font-size:14px}
-.pickbar[hidden]{display:none}
-.pickbar #pickSave:disabled{opacity:.45;cursor:not-allowed}
-.picking .fabs{display:none}
-.picking .wrap{padding-bottom:140px}
+/* 首页「学新」里的快速记：点到哪勾到哪 */
+.steps4 li .quick{flex-basis:100%;margin:4px 0 0 40px}
+.qhint{font-size:12px;color:var(--sub);margin-bottom:4px}
+.qrow{display:flex;align-items:center;gap:10px;width:100%;text-align:left;font-size:14px;padding:7px 10px;margin-bottom:4px;border-radius:10px;background:var(--bg);border:1px solid transparent}
+.qrow.on{background:var(--accent-soft);border-color:var(--accent)}
+.qbox{flex:none;width:18px;height:18px;border-radius:5px;border:1.5px solid var(--line2);display:grid;place-items:center;font-size:12px;font-weight:700;color:#fff;background:var(--card)}
+.qrow.on .qbox{background:var(--accent);border-color:var(--accent)}
+.qt{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.qn{flex:none;font-size:12px;color:var(--sub)}
+.qops{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:8px}
+.qmore{font-size:13px;color:var(--accent);text-decoration:none;margin-left:auto}
+@media (max-width:600px){.steps4 li .quick{margin-left:0}.qmore{margin-left:0}}
+/* 记录页：像书的目录 */
+.logv .vh h1{margin:4px 0}
+.lunit{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:10px;overflow:hidden}
+.lunit summary{display:flex;justify-content:space-between;align-items:baseline;padding:12px 16px;cursor:pointer;font-weight:700}
+.lunit summary small{font-weight:400;color:var(--sub);font-size:13px}
+.lles{padding:0 12px 8px}
+.llh{font-size:13px;font-weight:600;color:var(--accent);margin:6px 4px 4px}
+.lrec{display:flex;align-items:center;gap:10px;padding:8px 8px;border-radius:10px;cursor:pointer;font-size:14px}
+@media (hover:hover){.lrec:hover{background:var(--bg)}}
+.lrec.on{background:var(--accent-soft)}
+.lrec input{flex:none;width:18px;height:18px;margin:0;accent-color:var(--accent);cursor:pointer}
+.lrec .gt{flex:1;min-width:0}
+.logbar{position:sticky;bottom:calc(12px + env(safe-area-inset-bottom));display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px;
+  padding:10px 14px;background:var(--card);border:1px solid var(--accent);border-radius:14px;box-shadow:0 6px 24px rgba(0,0,0,.15);font-size:14px}
 
 /* ---------- 背词页面公共 ---------- */
 .study[hidden]{display:none}
@@ -295,7 +312,7 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .mh .sub{color:var(--sub);font-size:13px}
 .mh a{margin-left:auto;font-size:13px;color:var(--accent);text-decoration:none}
 .steps4{list-style:none;margin:0;padding:0}
-.steps4 li{display:flex;align-items:center;gap:8px 12px;padding:10px 0;border-top:1px solid var(--line)}
+.steps4 li{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;padding:10px 0;border-top:1px solid var(--line)}
 .steps4 li:first-child{border-top:none;padding-top:2px}
 .steps4 .dot{flex:none;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:14px;background:var(--accent-soft);color:var(--accent)}
 .steps4 li.done .dot{background:var(--ok);color:#fff}

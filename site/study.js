@@ -52,6 +52,39 @@ const Study = (() => {
     }
     Sync.setMany(pairs);
   }
+  /* 按「词群键 → 要不要记」批量保存：新勾的记为 date 那天学的，取消的删掉 */
+  async function saveMarks(want, date) {
+    const byLes = {};
+    for (const [key, on] of want) { const [lid, g] = key.split(":g"); (byLes[lid] = byLes[lid] || {add: [], del: []})[on ? "add" : "del"].push(+g); }
+    for (const [lid, {add, del}] of Object.entries(byLes)) {
+      const {les} = await getLesson(lid);
+      if (add.length) markGroups(les, add, date);
+      if (del.length) unmarkGroups(les, del);
+    }
+  }
+
+  /* 书上所有词群按顺序排开（只算已生成的课） */
+  const seq = () => BOOK.parts.flatMap(p => p.units.flatMap(u => u.lessons.filter(l => l.ready)
+    .flatMap(l => l.groups.map(g => ({lid: l.id, no: g.no, title: g.title, key: `${l.id}:g${g.no}`})))));
+  /* 接下来要学的词群：从记过的最后一个往后数；一个都没记过就从上次读的那课开始 */
+  function nextGroups(n) {
+    const all = seq(), learned = new Set(learnMarks().map(([k]) => k));
+    let start = -1;
+    all.forEach((g, i) => { if (learned.has(g.key)) start = i; });
+    if (start < 0) { const i = all.findIndex(g => g.lid === store.get("last")); start = i > 0 ? i - 1 : -1; }
+    return all.slice(start + 1).filter(g => !learned.has(g.key)).slice(0, n);
+  }
+  /* 词群的词数要读课文才知道：先空着，读到再填上 */
+  const counts = new Map();
+  async function fillCounts(lids, then) {
+    for (const lid of new Set(lids)) {
+      if ([...counts.keys()].some(k => k.startsWith(lid + ":"))) continue;
+      try { const {les} = await getLesson(lid); for (const g of les.groups) counts.set(`${lid}:g${g.no}`, g.entries.length); } catch { /* 没网就不显示词数 */ }
+    }
+    $$("[data-qn]", view()).forEach(el => { const n = counts.get(el.dataset.qn); if (n) el.textContent = n + " 词"; });
+    then && then();
+  }
+  const wordsOf = keys => keys.reduce((a, k) => a + (counts.get(k) || 0), 0);
 
   /* 某个范围里的卡：按词群的学习日期筛（忘了重来不改词群日期，所以「今天学的」不会混进旧词） */
   function inLearnRange(from, to) {
@@ -171,17 +204,16 @@ const Study = (() => {
     const ready = BOOK.parts.flatMap(p => p.units.flatMap(u => u.lessons)).filter(l => l.ready);
     const last = ready.some(l => l.id === store.get("last")) ? store.get("last") : ready[0] && ready[0].id, lastL = last && last.match(/u(\d+)-l(\d+)/);
     const nightDone = todays.length && todays.every(x => x.card.t === t);
-    const step = (done, n, title, desc, action) => `<li class="${done ? "done" : ""}"><span class="dot">${done ? "✓" : n}</span>
-      <div class="sd"><b>${title}</b><small>${desc}</small></div>${action || ""}</li>`;
+    const step = (done, n, title, desc, action, extra) => `<li class="${done ? "done" : ""}"><span class="dot">${done ? "✓" : n}</span>
+      <div class="sd"><b>${title}</b><small>${desc}</small></div>${action || ""}${extra || ""}</li>`;
     const s1 = step(!due || !left, 1, weekend ? "周末复习" : "早上复习",
       !due ? (lg.dv ? `今天复习了 ${lg.dv} 个，全部清完` : "今天没有到期的词")
         : !left ? `今天已做满 ${cap()} 个，剩下 ${due} 个排到后面几天`
         : `到期 ${due} 个${due > left ? ` · 今天先做 ${left} 个（上限 ${cap()}）` : ""}`,
       due && left ? btn("#/drill/due", "开始", 'variant="brand"') : "");
-    const s2 = weekend
-      ? step(false, 2, "周总结", "看看这周学了什么、哪些词老忘", btn("#/week", "打开"))
-      : step(groups > 0, 2, "学新", groups ? `今天记了 ${groups} 个词群 · ${todays.length} 词，还能接着追加` : "看完视频和课件，记下今天学了哪几个词群",
-        (lastL ? btn(`#/${last}`, `继续 U${+lastL[1]} L${+lastL[2]}`) : "") + (last ? btn(`#/${last}/learn`, "记录", 'variant="brand" appearance="outlined"') : ""));
+    const s2 = step(groups > 0, 2, weekend ? "学新（周末可选）" : "学新",
+      groups ? `今天记了 ${groups} 个词群 · ${todays.length} 词，学了更多就接着点下面的` : "看完视频和课件，在下面点到今天学到的词群",
+      lastL ? btn(`#/${last}`, `继续 U${+lastL[1]} L${+lastL[2]}`) : "", `<div class="quick" id="quick">${quickHTML()}</div>`);
     const s3 = step(false, 3, "途中看", todays.length ? `今天的 ${todays.length} 个词，掏出手机随时过一眼` : weekend ? "看看本周学的词" : "记录今天学的之后，这里能快速浏览",
       todays.length ? btn("#/list/today", "浏览") : weekend ? btn("#/list/week", "浏览") : "");
     const s4 = step(nightDone, 4, "睡前巩固", todays.length ? (nightDone ? "今天学的都过了一遍" : `把今天学的 ${todays.length} 个词再过一遍`) : "今天还没有新学的词",
@@ -189,6 +221,21 @@ const Study = (() => {
     return `<wa-card class="mod today"><div slot="header" class="mh"><b>今天</b><a href="#/drill">自由抽查 →</a></div>
       <ol class="steps4">${s1}${s2}${s3}${s4}</ol></wa-card>`;
   }
+  /* 首页快速记：列出接下来的 5 个词群，点到哪个就勾到哪个（学是按顺序往后学的） */
+  const Q = {n: 0, day: "today", list: []};
+  function quickHTML() {
+    Q.list = nextGroups(5);
+    if (Q.n > Q.list.length) Q.n = 0;
+    if (!Q.list.length) return `<a class="qmore" href="#/log">已生成的课都记完了，去记录页看看 →</a>`;
+    const words = wordsOf(Q.list.slice(0, Q.n).map(g => g.key));
+    return `<div class="qhint">接下来要学的（点到哪个就勾到哪个）：</div>
+      ${Q.list.map((g, i) => `<button class="qrow${i < Q.n ? " on" : ""}" data-qi="${i}"><span class="qbox">${i < Q.n ? "✓" : ""}</span>
+        <span class="qt">${lesTitle(g.lid)} · 词以群记 ${g.no} ${esc(g.title)}</span><span class="qn" data-qn="${g.key}">${counts.has(g.key) ? counts.get(g.key) + " 词" : ""}</span></button>`).join("")}
+      <div class="qops"><span class="seg">${[["today", "今天"], ["yesterday", "昨天"]].map(([v, l]) => `<button data-qday="${v}" class="${Q.day === v ? "on" : ""}">${l}</button>`).join("")}</span>
+        <wa-button size="small" variant="brand" id="quickSave"${Q.n ? "" : " disabled"}>${Q.n ? `记为${Q.day === "today" ? "今天" : "昨天"}学的${words ? ` · ${words} 词` : ""}` : "先点上面的词群"}</wa-button>
+        <a class="qmore" href="#/log">跳着学、补记、取消 →</a></div>`;
+  }
+  function paintQuick() { const el = $("#quick"); if (el) el.innerHTML = quickHTML(); }
   function lastActive() {
     let last = "";
     for (const [d, v] of Sync.entries("log:")) if (v && (v.g + v.m + v.f) > 0 && d > last) last = d;
@@ -240,6 +287,49 @@ const Study = (() => {
   function renderHome() {
     setHead("首页");
     view().innerHTML = `<div class="home">${MODULES.map(f => f()).join("")}</div>`;
+    fillCounts(Q.list.map(g => g.lid), paintQuick);
+  }
+
+  /* ---------- 记录页：像书的目录，Unit → Lesson → 词群，一行一个，勾上就是学过（跳着学、补记、取消用） ---------- */
+  let W = null;   // 还没保存的改动：{want: 词群键 → 勾不勾, day}
+  function renderLog(focus) {
+    setHead("记录学了什么");
+    if (!W) W = {want: new Map(), day: "today"};
+    const learned = new Map(learnMarks()), all = seq();
+    const fLid = focus || (nextGroups(1)[0] || {}).lid || store.get("last") || (all[0] || {}).lid;
+    const fU = fLid ? +fLid.slice(1, 3) : 1;
+    const on = key => (W.want.has(key) ? W.want.get(key) : learned.has(key));
+    const units = BOOK.parts.flatMap(p => p.units);
+    view().innerHTML = `<div class="logv">
+      <div class="vh"><h1>记录学了什么</h1><span class="seg">${[["today", "今天"], ["yesterday", "昨天"]].map(([v, l]) =>
+        `<button data-lday="${v}" class="${W.day === v ? "on" : ""}">记为${l}学的</button>`).join("")}</span></div>
+      <p class="note">勾上学过的词群，取消勾选就删掉那个词群的学习记录和复习进度。平时在首页「学新」里点一下更快。</p>
+      ${units.map(u => {
+        const ls = u.lessons.filter(l => l.ready), keys = ls.flatMap(l => l.groups.map(g => `${l.id}:g${g.no}`)), n = keys.filter(k => learned.has(k)).length;
+        return `<details class="lunit" data-u="${u.no}"${u.no === fU ? " open" : ""}><summary>Unit ${u.no}<small>已记 ${n}/${keys.length} 个词群</small></summary>
+          ${ls.map(l => `<div class="lles" id="log-${l.id}"><div class="llh">Lesson ${l.no}</div>${l.groups.map(g => {
+            const key = `${l.id}:g${g.no}`, d = learned.get(key);
+            return `<label class="lrec${on(key) ? " on" : ""}"><input type="checkbox" data-g="${key}"${on(key) ? " checked" : ""}>
+              <span class="gt">词以群记 ${g.no} ${esc(g.title)}</span><span class="qn" data-qn="${key}">${counts.has(key) ? counts.get(key) + " 词" : ""}</span>
+              ${d ? `<span class="learned">✓ ${md(d)}</span>` : ""}</label>`; }).join("")}</div>`).join("")}</details>`; }).join("")}
+      <div class="logbar"><span id="logInfo"></span><wa-button size="small" variant="brand" id="logSave">保存</wa-button></div></div>`;
+    paintLogBar();
+    const open = units.find(u => u.no === fU);
+    if (open) fillCounts(open.lessons.filter(l => l.ready).map(l => l.id), paintLogBar);
+    if (focus) setTimeout(() => document.getElementById("log-" + focus)?.scrollIntoView({block: "start"}), 0);
+  }
+  function logDiff() {
+    const learned = new Map(learnMarks()), add = [], del = [];
+    for (const [k, v] of W.want) { if (v && !learned.has(k)) add.push(k); if (!v && learned.has(k)) del.push(k); }
+    return {add, del};
+  }
+  function paintLogBar() {
+    const el = $("#logInfo"); if (!el || !W) return;
+    const {add, del} = logDiff(), w = wordsOf(add);
+    el.innerHTML = add.length || del.length
+      ? `${add.length ? `新勾 <b>${add.length}</b> 个词群${w ? ` · ${w} 词` : ""}` : ""}${add.length && del.length ? "；" : ""}${del.length ? `取消 <b>${del.length}</b> 个` : ""}`
+      : "勾上学过的词群";
+    $("#logSave").disabled = !add.length && !del.length;
   }
 
   /* ---------- 浏览（途中看）：紧凑列表，可遮住释义 ---------- */
@@ -393,12 +483,14 @@ const Study = (() => {
         <p class="note">明天那一格包括之前拖下来没做的；每天最多做 ${cap()} 个</p></section>` : ""}</div>`;
   }
 
-  /* ---------- 路由入口：#/、#/drill[/范围]、#/list/范围、#/week[/周一] ---------- */
-  function isStudy(h) { return h === "" || h === "#" || h === "#/" || /^#\/(drill|list|week)(\/|$)/.test(h); }
+  /* ---------- 路由入口：#/、#/drill[/范围]、#/list/范围、#/week[/周一]、#/log[/课id] ---------- */
+  function isStudy(h) { return h === "" || h === "#" || h === "#/" || /^#\/(drill|list|week|log)(\/|$)/.test(h); }
   function render(h) {
-    const m = h.match(/^#\/(drill|list|week)(?:\/(.+))?$/);
+    const m = h.match(/^#\/(drill|list|week|log)(?:\/(.+))?$/);
+    if (!m || m[1] !== "log") W = null;   // 离开记录页，没保存的勾选作废
     if (!m) { D = null; renderHome(); return; }
     const arg = m[2] && decodeURIComponent(m[2]);
+    if (m[1] === "log") { D = null; renderLog(arg); if (!arg) scrollTo(0, 0); return; }
     if (m[1] === "drill") { if (!arg) { D = null; renderPicker(); } else if (!D || D.hash !== h) startDrill(arg); else showCard(); }
     else if (m[1] === "list") { D = null; renderList(arg); }
     else { D = null; renderWeek(arg); }
@@ -408,7 +500,7 @@ const Study = (() => {
   function refresh() {
     const h = location.hash;
     if (/^#\/drill\/./.test(h)) return;
-    if (/^#\/list\//.test(h)) return;
+    if (/^#\/(list|log)/.test(h)) return;              // 浏览、记录页不重画，免得滚动位置和没保存的勾选丢掉
     render(h);
   }
 
@@ -430,6 +522,27 @@ const Study = (() => {
       const r = t.closest("[data-rate]"); if (r) { rateCur(r.dataset.rate); return; }
       if (t.closest("#redo")) { startDrill(D.sc, {title: "再过一遍", items: D.again}); return; }
     }
+    const qi = t.closest("[data-qi]"); if (qi) { const i = +qi.dataset.qi; Q.n = i < Q.n ? i : i + 1; paintQuick(); return; }   // 点到哪勾到哪；点已勾的就从它往后取消
+    const qd = t.closest("[data-qday]"); if (qd) { Q.day = qd.dataset.qday; paintQuick(); return; }
+    if (t.closest("#quickSave") && Q.n) {
+      const picked = Q.list.slice(0, Q.n), day = Q.day === "today" ? T() : SRS.add(T(), -1);
+      saveMarks(picked.map(g => [g.key, true]), day).then(() => {
+        toast(`已记为${Q.day === "today" ? "今天" : "昨天"}学的：${picked.length} 个词群`); Q.n = 0; renderHome();
+      }).catch(err => toast("保存失败：" + err.message));
+      return;
+    }
+    const ld = t.closest("[data-lday]"); if (ld && W) { W.day = ld.dataset.lday; 40("[data-lday]", v).forEach(b => b.classList.toggle("on", b === ld)); return; }
+    if (t.closest("#logSave") && W) {
+      const {add, del} = logDiff();
+      if (!add.length && !del.length) return;
+      if (del.length && !confirm(`取消 ${del.length} 个词群的学习记录？这些词的复习进度也会删掉。`)) return;
+      const day = W.day === "today" ? T() : SRS.add(T(), -1), label = W.day === "today" ? "今天" : "昨天";
+      saveMarks([...add.map(k => [k, true]), ...del.map(k => [k, false])], day).then(() => {
+        toast(add.length ? `已记为${label}学的：${add.length} 个词群${del.length ? `，取消 ${del.length} 个` : ""}` : `已取消 ${del.length} 个词群`);
+        const y = scrollY; W = null; renderLog(); scrollTo(0, y);
+      }).catch(err => toast("保存失败：" + err.message));
+      return;
+    }
     const o = t.closest("[data-order]"); if (o) { setS("drillOrder", o.dataset.order); renderPicker(); return; }
     if (t.closest("#listHide")) { store.set("listHide", !store.get("listHide", false)); renderList(decodeURIComponent(location.hash.split("/")[2])); return; }
     const row = t.closest(".lrow");
@@ -445,10 +558,23 @@ const Study = (() => {
     }
   }
   function onChange(e) {
-    if (e.target.id === "bookScope" && e.target.value) location.hash = "#/drill/" + e.target.value;
+    const t = e.target;
+    if (t.id === "bookScope" && t.value) location.hash = "#/drill/" + t.value;
+    if (t.dataset.g && W) {
+      const learned = !!Sync.get("learn:" + t.dataset.g, 0);
+      t.checked === learned ? W.want.delete(t.dataset.g) : W.want.set(t.dataset.g, t.checked);
+      t.closest(".lrec").classList.toggle("on", t.checked);
+      paintLogBar();
+    }
+  }
+  /* 记录页展开别的单元时再读词数（toggle 事件不冒泡，用捕获） */
+  function onToggle(e) {
+    const d = e.target; if (!d.matches || !d.matches("details.lunit") || !d.open) return;
+    const u = BOOK.parts.flatMap(p => p.units).find(x => x.no === +d.dataset.u);
+    if (u) fillCounts(u.lessons.filter(l => l.ready).map(l => l.id), paintLogBar);
   }
   document.addEventListener("keydown", drillKey);
-  const bind = () => { view().addEventListener("click", onClick); view().addEventListener("change", onChange); };
+  const bind = () => { view().addEventListener("click", onClick); view().addEventListener("change", onChange); view().addEventListener("toggle", onToggle, true); };
   bind();
 
   return {isStudy, render, refresh, markGroups, unmarkGroups, learnDate};
