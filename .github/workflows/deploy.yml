@@ -30,6 +30,9 @@ jobs:
       - name: 校验数据
         run: python pipeline/validate.py
 
+      - name: 单元测试（复习规则）
+        run: node --test "tests/*.test.js"
+
       - name: 检查音频已推送到音频站
         run: python pipeline/check_audio.py
 
@@ -38,7 +41,7 @@ jobs:
 
       # Pages 让浏览器缓存 10 分钟；给脚本和样式加版本号，部署后立即生效
       - name: 静态资源加版本号
-        run: sed -i "s/app\.js\"/app.js?v=${GITHUB_SHA::7}\"/; s/sync\.js\"/sync.js?v=${GITHUB_SHA::7}\"/; s/style\.css\"/style.css?v=${GITHUB_SHA::7}\"/" site/index.html && grep -E "app.js|sync.js|style.css" site/index.html
+        run: sed -i -E "s/(app|sync|srs|study)\.js\"/\1.js?v=${GITHUB_SHA::7}\"/g; s/style\.css\"/style.css?v=${GITHUB_SHA::7}\"/" site/index.html && grep -E "\.js|style.css" site/index.html
 
       - uses: actions/configure-pages@v5
 
