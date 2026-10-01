@@ -237,7 +237,7 @@ function cardHTML(e) {
 
 function renderLesson() {
   const [a, b] = L.pages;
-  $("#crumb").textContent = `Unit ${L.unit} · Lesson ${L.lesson}`;
+  $("#crumb").textContent = matchMedia("(max-width:600px)").matches ? `U${L.unit} · L${L.lesson}` : `Unit ${L.unit} · Lesson ${L.lesson}`;   // 手机顶栏放不下全称
   document.title = `U${L.unit} L${L.lesson} · 四级词汇`;
   $("#lessonHead").innerHTML = `<h1>Unit ${L.unit} · Lesson ${L.lesson}</h1>
     <p>${allEntries().length} 词 · ${L.groups.length} 个词群 · 书 p${a}–${b} · <span id="lessonProg"></span></p>

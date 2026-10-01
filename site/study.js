@@ -335,7 +335,7 @@ const Study = (() => {
     }).join("");
     view().innerHTML = `<div class="listv${hide ? " hide" : ""}">
       <div class="vh"><h1>${esc(info.title)} <small>${items.length} 词</small></h1>
-        <div class="ops"><wa-button size="small" id="listHide">${hide ? "显示释义" : "遮住释义"}</wa-button>
+        <div class="ops"><wa-button size="small" appearance="filled" id="listHide">${hide ? "显示释义" : "遮住释义"}</wa-button>
         ${items.length ? btn(`#/drill/${encodeURIComponent(sc)}`, "巩固模式过一遍", 'variant="brand"') : ""}</div></div>
       ${hide ? `<p class="note">点单词读音，点释义的位置显示释义</p>` : `<p class="note">点单词读音</p>`}
       ${rows || `<p class="empty">这里还没有词。${sc === "today" ? "在课文页点「记录今天学了什么」勾选词群。" : ""}</p>`}</div>`;
@@ -424,7 +424,7 @@ const Study = (() => {
     const {g, m, f, k} = D.res;
     view().innerHTML = `<div class="drill end"><h1>这一轮结束 🎉</h1>
       <div class="tally"><span class="g">记得 <b>${g}</b></span><span class="m">模糊 <b>${m}</b></span><span class="f">忘了 <b>${f}</b></span>${k ? `<span>已会 <b>${k}</b></span>` : ""}</div>
-      <p class="note">忘了的词已经当场滚到记住为止，明天早上还会再出现；模糊的 2 天后再来。</p>
+      <p class="note">${D.items.some(x => x.card) ? "忘了的词已经当场滚到记住为止，明天早上还会再出现；模糊的 2 天后再来。" : ""}${D.items.some(x => !x.card) ? "这一轮有还没记为学过的词，它们的评分不排复习；学了以后在「学习记录」里勾上。" : ""}</p>
       <div class="ops">${again.length ? `<wa-button variant="brand" id="redo">再过一遍忘了 / 模糊的（${again.length}）</wa-button>` : ""}
         ${btn("#/", "回首页")} ${btn("#/drill", "换个范围")}</div></div>`;
     D.again = again;
@@ -435,7 +435,7 @@ const Study = (() => {
     const t = T();
     mon = mon ? SRS.monday(mon) : SRS.monday(t);
     const end = SRS.add(mon, 6), days = weekCounts(mon);
-    setHead(`周总结 ${md(mon)}–${md(end)}`);
+    setHead("周总结");
     const marks = learnMarks().filter(([, d]) => d >= mon && d <= end);
     const byDay = {};
     for (const [k, d] of marks) { const [lid, g] = k.split(":g"); (byDay[d] = byDay[d] || []).push({lid, g: +g, info: groupInfo(lid, +g)}); }
@@ -472,7 +472,7 @@ const Study = (() => {
   function render(h) {
     const m = h.match(/^#\/(drill|list|week|log)(?:\/(.+))?$/);
     if (!m || m[1] !== "log") W = null;   // 离开记录页，没保存的勾选作废
-    if (!m) { D = null; renderHome(); return; }
+    if (!m) { D = null; renderHome(); scrollTo(0, 0); return; }
     const arg = m[2] && decodeURIComponent(m[2]);
     if (m[1] === "log") { D = null; renderLog(arg); if (!arg) scrollTo(0, 0); return; }
     if (m[1] === "drill") { if (!arg) { D = null; renderPicker(); } else if (!D || D.hash !== h) startDrill(arg); else showCard(); }
