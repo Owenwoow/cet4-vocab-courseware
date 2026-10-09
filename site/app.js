@@ -43,18 +43,7 @@ const meanHTML = m => esc(m).replace(/\[\[(.+?)\]\]/g, "<u>$1</u>");
 const plainMean = m => m.replace(/\[\[|\]\]/g, "");
 const sensesText = ss => ss.map(s => `${s.pos} ${plainMean(s.mean)}`).join("　");
 
-function lemmaCandidates(w) {
-  const c = [w];
-  if (w.endsWith("'s")) c.push(w.slice(0, -2));
-  if (w.endsWith("s'")) c.push(w.slice(0, -1), w.slice(0, -2));
-  if (w.endsWith("ies")) c.push(w.slice(0, -3) + "y");
-  if (w.endsWith("es")) c.push(w.slice(0, -2));
-  if (w.endsWith("s")) c.push(w.slice(0, -1));
-  if (w.endsWith("ied")) c.push(w.slice(0, -3) + "y");
-  if (w.endsWith("ed")) c.push(w.slice(0, -2), w.slice(0, -1), w.slice(0, -3));
-  if (w.endsWith("ing")) c.push(w.slice(0, -3), w.slice(0, -3) + "e");
-  return c;
-}
+const lemmaCandidates = Vocab.candidates;   // 词形变化的候选原形（vocab.js）
 const findWord = w => { for (const k of lemmaCandidates(w.toLowerCase())) if (WORDMAP.has(k)) return WORDMAP.get(k); return null; };
 
 /* 例句切成可点的单词，重点词（可能是多词短语）加 key 样式 */
@@ -203,6 +192,9 @@ function mapCompactLine(node) {
 const mapCompact = root => `<ul class="mmc">${(root.children || []).map(c => `<li>${mapCompactLine(c)}</li>`).join("")}</ul>`;
 
 /* ---------- 词卡 ---------- */
+/* 扩展词行的「加入生词本」小按钮：加过的显示 ✓ */
+const vaddBtn = w => { const on = !!Study.vocabGet(w); return `<button class="vadd${on ? " on" : ""}" data-vadd="${esc(w)}" title="${on ? "已在生词本，点一下移出" : "加入生词本"}">${on ? "✓" : "＋"}</button>`; };
+const paintVadd = w => $$(`[data-vadd="${CSS.escape(w)}"]`).forEach(b => { b.outerHTML = vaddBtn(w); });
 const allEntries = () => L.groups.flatMap(g => g.entries);
 const entryOf = card => WORDMAP.get(card.dataset.word).entry;
 const flames = n => "🔥".repeat(n) + `<i>${"🔥".repeat(3 - n)}</i>`;
@@ -219,7 +211,7 @@ function cardHTML(e) {
     </div>` : "";
   const exts = e.ext && e.ext.length ? `<div class="exts">${e.ext.map(x => `<div class="extrow" data-ext="${esc(x.word)}">
       <span class="tag">扩</span><b>${esc(x.word)}</b>${x.alt ? `<span class="ipa">/${esc(x.alt)}</span>` : ""}
-      <span class="ipa">${esc(x.ipa)}</span><button class="spk sm" data-say="${esc(x.word)}" title="读">🔊</button>
+      <span class="ipa">${esc(x.ipa)}</span><button class="spk sm" data-say="${esc(x.word)}" title="读">🔊</button>${vaddBtn(x.word)}
       <span class="xm">${x.senses.map(s => `<span class="pos">${esc(s.pos)}</span>${meanHTML(s.mean)}`).join("　")}</span></div>`).join("")}</div>` : "";
   return `<article class="card${known.has(e.word) ? " known" : ""}" id="w-${esc(e.word)}" data-word="${esc(e.word)}">
     <div class="head">
@@ -374,7 +366,33 @@ function showPop(html, rect) {
   const x = Math.min(rect.left + scrollX, scrollX + document.documentElement.clientWidth - pop.offsetWidth - 8);
   pop.style.left = Math.max(8, x) + "px"; pop.style.top = (rect.bottom + scrollY + 6) + "px";
 }
-async function lookup(text, rect) {
+/* ---------- 生词本：查到的词 → 存什么（原形、释义、音标、书中位置）；src = 例句所在的词条 ---------- */
+const lesShort = lid => `U${+lid.slice(1, 3)} L${+lid.slice(5, 7)}`;
+const bookAt = w => (Object.hasOwn(BOOK.search, w) ? BOOK.search[w] : null);   // 书中位置 [课id, 词条序号, 是否扩展词]
+function vocabTarget(q, src) {
+  const b = !q.includes(" ") && findWord(q);     // 本课词条 / 扩展词
+  const g = GLOSS[q] || "";
+  const w = b ? b.word : Vocab.lemma(q, g, bookAt);
+  const {p, m} = Vocab.parse(g, w !== q);
+  return {w, x: q, m: b ? sensesText(b.senses) : m, p: b ? b.ipa : w === q ? p : "", k: L.id, e: src || "", bk: bookAt(w)};
+}
+/* 浮层底部的按钮：加入 / 移出；书上已在复习的词改为「记一次忘了」 */
+function vocabButton(v) {
+  const el = $("#popVocab"), note = $("#popVn"); if (!el) return;
+  if (v.bk && !v.bk[2] && Sync.get("srs:" + v.w, 0)) {
+    el.classList.remove("on"); el.disabled = false; el.textContent = "记一次忘了";
+    note.textContent = `${v.w} 已在复习中（书中 ${lesShort(v.bk[0])}）；记忘了就明天再来，并进难词本`;
+    el.onclick = () => { Study.forgetBook(v.w); el.disabled = true; el.textContent = "✓ 已记，明天再复习"; };
+    return;
+  }
+  const cur = Study.vocabGet(v.w);
+  el.classList.toggle("on", !!cur);
+  el.textContent = cur ? "✓ 生词本 · 移出" : "＋ 生词本";
+  note.textContent = cur ? `${+cur.at.slice(5, 7)}/${+cur.at.slice(8)} 加入的生词${v.w !== v.x ? `：${v.w}` : ""}` : v.w !== v.x ? `加入生词本：${v.w}` : "";
+  el.onclick = () => { cur ? Study.removeVocab(v.w) : Study.addVocab(v); vocabButton(v); paintVadd(v.w); };
+}
+
+async function lookup(text, rect, src) {
   const q = text.toLowerCase().replace(/[^a-z' ]/g, " ").replace(/\s+/g, " ").trim();
   if (!q) return;
   const line = (w, body, src) => `<div class="pm"><b>${esc(w)}</b> ${body}${src}</div>`;
@@ -390,8 +408,9 @@ async function lookup(text, rect) {
   else if (!q.includes(" ")) {
     html = one(q) || line(q, "查询中…", ""); needOnline = !one(q);
   } else html = `<div><span class="pw">${esc(text)}</span></div>` + q.split(" ").map(w => one(w) || line(w, "—", "")).join("");
-  showPop(html + `<div class="ops"><button id="popSay">🔊 再读一遍</button></div>`, rect);
+  showPop(html + `<div class="ops"><button id="popSay">🔊 再读一遍</button><button id="popVocab" class="pvb"></button></div><div class="pn" id="popVn"></div>`, rect);
   $("#popSay").onclick = () => speak(q);
+  vocabButton(vocabTarget(q, src));
   if (needOnline) {
     try {
       const j = await fetchJSON("https://api.dictionaryapi.dev/api/v2/entries/en/" + encodeURIComponent(q));
@@ -410,10 +429,20 @@ function openPages(a, b) {
 $("#viewerClose").onclick = () => { $("#viewer").hidden = true; };
 
 /* ---------- 点击事件 ---------- */
+const srcOf = el => (el.closest && el.closest(".card") ? el.closest(".card").dataset.word : "");   // 例句属于哪个词条
+/* 扩展词加入 / 移出生词本；书上已在复习的记一次忘了 */
+function toggleExtVocab(w) {
+  const hit = WORDMAP.get(w); if (!hit) return;
+  if (Sync.get("srs:" + w, 0)) { Study.forgetBook(w); toast(`${w} 已在复习中，记了一次忘了，明天再来`); return; }
+  const on = !!Study.vocabGet(w);
+  on ? Study.removeVocab(w) : Study.addVocab({w, x: w, m: sensesText(hit.senses), p: hit.ipa, k: L.id, e: "", bk: bookAt(w)});
+  paintVadd(w); toast(on ? `已移出生词本：${w}` : `已加入生词本：${w}`);
+}
 document.addEventListener("click", e => {
   const t = e.target;
   if (t.closest(".top,.drawer,.fabs,.settings,.viewer,.study")) { if (!t.closest(".search")) $("#qres").style.display = "none"; return; }
   if (t.dataset.say || t.classList.contains("play") || t.classList.contains("w")) stopMarathon();
+  if (t.dataset.vadd) { toggleExtVocab(t.dataset.vadd); return; }
   if (t.dataset.say) { speak(t.dataset.say); return; }
   if (t.classList.contains("play")) { playSentence(t.closest(".card"), null, t.dataset.slow ? 0.75 : rate()); return; }
   if (t.dataset.goto) { gotoWord(t.dataset.goto); return; }
@@ -429,13 +458,13 @@ document.addEventListener("click", e => {
   if (masked) { masked.classList.toggle("show"); return; }
   if (pop.contains(t)) return;
   const sel = getSelection().toString().trim();
-  if (sel && t.closest(".sent")) { lookup(sel, getSelection().getRangeAt(0).getBoundingClientRect()); speak(sel); return; }
-  if (t.classList.contains("w")) { lookup(t.textContent, t.getBoundingClientRect()); speak(t.textContent); return; }
+  if (sel && t.closest(".sent")) { lookup(sel, getSelection().getRangeAt(0).getBoundingClientRect(), srcOf(t)); speak(sel); return; }
+  if (t.classList.contains("w")) { lookup(t.textContent, t.getBoundingClientRect(), srcOf(t)); speak(t.textContent); return; }
   pop.style.display = "none";
 });
 document.addEventListener("touchend", e => setTimeout(() => {
   const s = getSelection();
-  if (s.toString().trim().includes(" ") && e.target.closest && e.target.closest(".sent")) lookup(s.toString(), s.getRangeAt(0).getBoundingClientRect());
+  if (s.toString().trim().includes(" ") && e.target.closest && e.target.closest(".sent")) lookup(s.toString(), s.getRangeAt(0).getBoundingClientRect(), srcOf(e.target));
 }, 300));
 
 /* ---------- 设置页 ---------- */

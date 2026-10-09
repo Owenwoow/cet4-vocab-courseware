@@ -225,6 +225,11 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .pop .pn{color:var(--sub);font-size:12px;margin-top:4px}
 .pop .src{font-size:11px;border-radius:8px;padding:0 6px;margin-left:4px;background:var(--accent-soft);color:var(--accent)}
 .pop .src.add{background:var(--blue-soft);color:var(--blue)}
+.pop .pvb.on{background:var(--ok-soft);border-color:var(--ok);color:var(--ok)}
+.pop #popVn:empty{display:none}
+/* 扩展词行：加入生词本 */
+.vadd{width:24px;height:24px;padding:0;border-radius:50%;border:1px dashed var(--line2);background:none;color:var(--sub);font-size:13px;line-height:1}
+.vadd.on{border:1px solid var(--ok);background:var(--ok-soft);color:var(--ok)}
 
 /* 原书查看 */
 .viewer{position:fixed;inset:0;z-index:60;background:var(--bg);display:flex;flex-direction:column}
@@ -328,7 +333,7 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .weekstrip .wd{font-size:12px;color:var(--sub)}
 .weekstrip b{font-size:17px;min-height:1.4em}
 .weekstrip small{font-size:11px;color:var(--sub);white-space:nowrap}
-.home .links{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.home .links{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
 .links .lk{display:flex;flex-direction:column;gap:2px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);text-decoration:none}
 @media (hover:hover){.links .lk:hover{border-color:var(--accent)}}
 .links .lk small{color:var(--sub);font-size:12px}
@@ -337,7 +342,7 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .unit small{color:var(--sub);font-size:11px}
 .unit wa-progress-ring{font-size:13px;font-weight:600;--indicator-color:var(--accent);--track-color:var(--line)}
 @media (max-width:600px){
-  .home .links{grid-template-columns:1fr}
+  .home .links{grid-template-columns:repeat(2,1fr)}
   .units{grid-template-columns:repeat(5,1fr);gap:10px 2px}
   .unit wa-progress-ring{--size:46px!important;font-size:12px}
   .steps4 li{flex-wrap:wrap}
@@ -356,9 +361,15 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .lrow .lm u{text-decoration:none;border-bottom:2px solid var(--accent)}
 .listv.hide .lm{filter:blur(6px);cursor:pointer;user-select:none;transition:filter .2s}
 .listv.hide .lm.show{filter:none}
+.lrow .vt{font-size:11px;color:var(--ok);border:1px solid currentColor;border-radius:8px;padding:0 6px;line-height:1.6;align-self:center}
+.lrow .src{font-size:11px;border-radius:8px;padding:0 6px;margin-left:6px;background:var(--blue-soft);color:var(--blue)}
+.lrow .lsrc{flex-basis:100%;display:flex;align-items:center;flex-wrap:wrap;gap:2px 4px;font-size:12px;color:var(--sub)}
+.lrow .lsrc:empty{display:none}
+.lrow .lsrc a{color:var(--blue);text-decoration:none}
+.lrow .vdel{margin-left:auto;font-size:12px;padding:2px 10px}
 
 /* 巩固模式 */
-.picker .scopes{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:6px 0 12px}
+.picker .scopes{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:6px 0 12px}
 .picker .sc{display:flex;flex-direction:column;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);text-decoration:none}
 @media (hover:hover){.picker .sc:hover{border-color:var(--accent)}}
 .picker .sc small{color:var(--sub);font-size:12px}
@@ -381,6 +392,12 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .dsense .ipa{font-weight:400;margin-right:6px}
 .dsense u{text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:1px}
 .dzh{color:var(--sub);font-size:15px}
+.dnote{font-size:13px;color:var(--sub);margin:4px 0}
+.dnote .src{font-size:11px;border-radius:8px;padding:0 6px;background:var(--blue-soft);color:var(--blue)}
+/* 生词：遇见它的那句例句 */
+.ex.meet{border-left-color:var(--ok)}
+.ex.meet .exlab{color:var(--ok)}
+.ex.meet .sent .key{color:var(--ok)}
 .dops{display:flex;gap:8px;justify-content:center;margin-top:14px;flex-wrap:wrap;position:sticky;bottom:calc(10px + env(safe-area-inset-bottom))}
 .dops wa-button{flex:1;max-width:180px}
 .dops .flip{max-width:none}
@@ -410,6 +427,7 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .drow .dg a{color:var(--ink);text-decoration:none}
 @media (hover:hover){.drow .dg a:hover{color:var(--accent)}}
 .drow .dg small{color:var(--sub)}
+.drow .dv{color:var(--ok);font-size:13px}
 .drow .dn{flex:none;color:var(--sub);font-size:13px}
 @media (max-width:600px){
   .drow{flex-wrap:wrap;gap:4px 10px}
