@@ -209,9 +209,9 @@ const Study = (() => {
   }
 
   /* ---------- 发音（用词所在那课的音频清单） ---------- */
-  function sayWord(x) {
-    const key = pickVoice(x.aud.w[x.word] || x.aud.w[x.word.toLowerCase()]);
-    key ? playFile(key, null, rate(), x.aud) : speakTTS(x.word, "en");
+  function sayWord(x, w = x.word) {   // w：读这个词的扩展词时传进来
+    const key = pickVoice(x.aud.w[w] || x.aud.w[w.toLowerCase()]);
+    key ? playFile(key, null, rate(), x.aud) : speakTTS(w, "en");
   }
   /* src：读生词遇见的那句（在出处那课的音频里），否则读词条自己的例句 */
   function saySent(x, slow, src) {
@@ -461,6 +461,9 @@ const Study = (() => {
           ${x.e.ex ? `<div class="ex${x.e.ex.type === "真" ? " zt" : ""}"><div class="exlab">${x.e.ex.type === "真" ? `真题 ${x.e.ex.year}` : "例句"}</div>
             <div class="sent">${sentenceHTML(x.e.ex.en, x.e.ex.key)}</div><div class="dzh">${esc(x.e.ex.zh)}</div>
             <div class="ops"><button data-sent="1">▶ 例句</button><button data-sent="slow">🐢 慢速</button></div></div>` : ""}
+          ${x.e.ext && x.e.ext.length ? `<div class="dext">${x.e.ext.map(y => `<div class="dextrow"><span class="tag">扩</span><b data-sayx="${esc(y.word)}">${esc(y.word)}</b>
+            <span class="ipa">${esc(y.ipa)}</span><button class="spk sm" data-sayx="${esc(y.word)}" title="读">🔊</button>
+            <span>${y.senses.map(s => `<span class="pos">${esc(s.pos)}</span>${meanHTML(s.mean)}`).join("　")}</span></div>`).join("")}</div>` : ""}
           ${meetHTML(x)}</div>` : ""}
       </div>
       <div class="dops">${D.flipped
@@ -573,6 +576,7 @@ const Study = (() => {
     if (D && /^#\/drill\/./.test(location.hash)) {
       const x = D.queue[0];
       if (t.closest("[data-flip]") || (!D.flipped && t.closest(".dcard") && !t.closest("[data-say]"))) { D.flipped = true; showCard(); return; }
+      const sx = t.closest("[data-sayx]"); if (sx && x) { sayWord(x, sx.dataset.sayx); return; }
       if (t.closest("[data-say]") && x) { sayWord(x); return; }
       const s = t.closest("[data-sent]"); if (s && x) { const v = s.dataset.sent; saySent(x, /slow/.test(v), v.startsWith("src")); return; }
       const r = t.closest("[data-rate]"); if (r) { rateCur(r.dataset.rate); return; }

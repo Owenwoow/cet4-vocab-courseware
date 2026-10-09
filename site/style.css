@@ -227,9 +227,6 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .pop .src.add{background:var(--blue-soft);color:var(--blue)}
 .pop .pvb.on{background:var(--ok-soft);border-color:var(--ok);color:var(--ok)}
 .pop #popVn:empty{display:none}
-/* 扩展词行：加入生词本 */
-.vadd{width:24px;height:24px;padding:0;border-radius:50%;border:1px dashed var(--line2);background:none;color:var(--sub);font-size:13px;line-height:1}
-.vadd.on{border:1px solid var(--ok);background:var(--ok-soft);color:var(--ok)}
 
 /* 原书查看 */
 .viewer{position:fixed;inset:0;z-index:60;background:var(--bg);display:flex;flex-direction:column}
@@ -394,6 +391,11 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .dzh{color:var(--sub);font-size:15px}
 .dnote{font-size:13px;color:var(--sub);margin:4px 0}
 .dnote .src{font-size:11px;border-radius:8px;padding:0 6px;background:var(--blue-soft);color:var(--blue)}
+/* 巩固卡背面的扩展词：附带看一眼，不单独打分 */
+.dext{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:14px;color:var(--sub)}
+.dextrow{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:3px 0}
+.dextrow .tag{color:var(--accent)}
+.dextrow b{color:var(--ink);font-size:15px;cursor:pointer}
 /* 生词：遇见它的那句例句 */
 .ex.meet{border-left-color:var(--ok)}
 .ex.meet .exlab{color:var(--ok)}

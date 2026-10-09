@@ -192,9 +192,6 @@ function mapCompactLine(node) {
 const mapCompact = root => `<ul class="mmc">${(root.children || []).map(c => `<li>${mapCompactLine(c)}</li>`).join("")}</ul>`;
 
 /* ---------- 词卡 ---------- */
-/* 扩展词行的「加入生词本」小按钮：加过的显示 ✓ */
-const vaddBtn = w => { const on = !!Study.vocabGet(w); return `<button class="vadd${on ? " on" : ""}" data-vadd="${esc(w)}" title="${on ? "已在生词本，点一下移出" : "加入生词本"}">${on ? "✓" : "＋"}</button>`; };
-const paintVadd = w => $$(`[data-vadd="${CSS.escape(w)}"]`).forEach(b => { b.outerHTML = vaddBtn(w); });
 const allEntries = () => L.groups.flatMap(g => g.entries);
 const entryOf = card => WORDMAP.get(card.dataset.word).entry;
 const flames = n => "🔥".repeat(n) + `<i>${"🔥".repeat(3 - n)}</i>`;
@@ -211,7 +208,7 @@ function cardHTML(e) {
     </div>` : "";
   const exts = e.ext && e.ext.length ? `<div class="exts">${e.ext.map(x => `<div class="extrow" data-ext="${esc(x.word)}">
       <span class="tag">扩</span><b>${esc(x.word)}</b>${x.alt ? `<span class="ipa">/${esc(x.alt)}</span>` : ""}
-      <span class="ipa">${esc(x.ipa)}</span><button class="spk sm" data-say="${esc(x.word)}" title="读">🔊</button>${vaddBtn(x.word)}
+      <span class="ipa">${esc(x.ipa)}</span><button class="spk sm" data-say="${esc(x.word)}" title="读">🔊</button>
       <span class="xm">${x.senses.map(s => `<span class="pos">${esc(s.pos)}</span>${meanHTML(s.mean)}`).join("　")}</span></div>`).join("")}</div>` : "";
   return `<article class="card${known.has(e.word) ? " known" : ""}" id="w-${esc(e.word)}" data-word="${esc(e.word)}">
     <div class="head">
@@ -390,7 +387,7 @@ function vocabButton(v) {
   el.classList.toggle("on", !!cur);
   el.textContent = cur ? "✓ 生词本 · 移出" : "＋ 生词本";
   note.textContent = cur ? `${+cur.at.slice(5, 7)}/${+cur.at.slice(8)} 加入的生词${v.w !== v.x ? `：${v.w}` : ""}` : v.w !== v.x ? `加入生词本：${v.w}` : "";
-  el.onclick = () => { cur ? Study.removeVocab(v.w) : Study.addVocab(v); vocabButton(v); paintVadd(v.w); };
+  el.onclick = () => { cur ? Study.removeVocab(v.w) : Study.addVocab(v); vocabButton(v); };
 }
 
 async function lookup(text, rect, src) {
@@ -431,19 +428,10 @@ $("#viewerClose").onclick = () => { $("#viewer").hidden = true; };
 
 /* ---------- 点击事件 ---------- */
 const srcOf = el => (el.closest && el.closest(".card") ? el.closest(".card").dataset.word : "");   // 例句属于哪个词条
-/* 扩展词加入 / 移出生词本；书上已在复习的记一次忘了 */
-function toggleExtVocab(w) {
-  const hit = WORDMAP.get(w); if (!hit) return;
-  if (Sync.get("srs:" + w, 0)) { Study.forgetBook(w); toast(`${w} 已在复习中，记了一次忘了，明天再来`); return; }
-  const on = !!Study.vocabGet(w);
-  on ? Study.removeVocab(w) : Study.addVocab({w, x: w, m: sensesText(hit.senses), p: hit.ipa, k: L.id, e: "", bk: bookAt(w)});
-  paintVadd(w); toast(on ? `已移出生词本：${w}` : `已加入生词本：${w}`);
-}
 document.addEventListener("click", e => {
   const t = e.target;
   if (t.closest(".top,.drawer,.fabs,.settings,.viewer,.study,.peek")) { if (!t.closest(".search")) $("#qres").style.display = "none"; return; }
   if (t.dataset.say || t.classList.contains("play") || t.classList.contains("w")) stopMarathon();
-  if (t.dataset.vadd) { toggleExtVocab(t.dataset.vadd); return; }
   if (t.dataset.say) { speak(t.dataset.say); return; }
   if (t.classList.contains("play")) { playSentence(t.closest(".card"), null, t.dataset.slow ? 0.75 : rate()); return; }
   if (t.dataset.goto) { gotoWord(t.dataset.goto); return; }
