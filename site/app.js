@@ -302,6 +302,7 @@ async function route() {
   const h = location.hash, isSettings = h === "#/settings", isStudy = !isSettings && Study.isStudy(h);
   if (h !== curHash) viewY.set(curHash, scrollY);
   curHash = h;
+  closePeek();
   if ((isSettings || isStudy) && !$("#lessonView").hidden && L) lessonScroll = {id: L.id, h: prevHash, y: scrollY};   // 离开课文前记住读到哪
   if (!isSettings) prevHash = h || "#/";
   $("#lessonView").hidden = isSettings || isStudy; $("#fabs").hidden = isSettings || isStudy;
@@ -440,7 +441,7 @@ function toggleExtVocab(w) {
 }
 document.addEventListener("click", e => {
   const t = e.target;
-  if (t.closest(".top,.drawer,.fabs,.settings,.viewer,.study")) { if (!t.closest(".search")) $("#qres").style.display = "none"; return; }
+  if (t.closest(".top,.drawer,.fabs,.settings,.viewer,.study,.peek")) { if (!t.closest(".search")) $("#qres").style.display = "none"; return; }
   if (t.dataset.say || t.classList.contains("play") || t.classList.contains("w")) stopMarathon();
   if (t.dataset.vadd) { toggleExtVocab(t.dataset.vadd); return; }
   if (t.dataset.say) { speak(t.dataset.say); return; }
@@ -633,6 +634,82 @@ $("#playAll").onclick = function () {
   };
   next();
 };
+
+/* ---------- 词群速览：右下角「群」或按 M。本群导图 + 词表，点词原地展开、读一遍，不滚动课文 ---------- */
+const peek = $("#peek");
+const peekOpen = () => peek.classList.contains("open");
+/* 读到哪张卡：屏幕上方 40% 处的那张（和磨耳朵判断当前词群的办法一样） */
+function readingCard(sec) {
+  const cs = $$(".card", sec).filter(c => c.offsetParent !== null);
+  let cur = cs[0];
+  for (const c of cs) if (c.getBoundingClientRect().top < innerHeight * 0.4) cur = c;
+  return cur;
+}
+/* 词表里的一行：序号 · 单词 · 音标 · 释义；展开后是记忆法、扩展词和「跳到」 */
+const peekRow = (e, cls = "", mark = "") => `<li class="pk${cls}${known.has(e.word) ? " known" : ""}" data-pk="${esc(e.word)}">
+    <div class="pkh"><span class="no">${String(e.no).padStart(2, "0")}</span><b>${esc(e.word)}</b><span class="ipa">${esc(e.prons.map(p => p.ipa).join(" "))}</span>${mark}</div>
+    <div class="pkm">${e.prons.flatMap(p => p.senses).map(s => `<span class="pos">${esc(s.pos)}</span>${meanHTML(s.mean)}`).join("　")}</div>
+    <div class="pkx">${e.tip ? `<div class="tip"><span class="tag ${esc(e.tip.type)}">${esc(e.tip.type)}</span>${esc(e.tip.text)}</div>` : ""}
+      ${e.ext && e.ext.length ? `<div class="pkext">${e.ext.map(x => `<span data-pkext="${esc(x.word)}"><span class="tag">扩</span><b>${esc(x.word)}</b> ${x.senses.map(s => `${esc(s.pos)} ${meanHTML(s.mean)}`).join("；")}</span>`).join("")}</div>` : ""}
+      <button class="pkgo" data-pkgo="${esc(e.word)}">跳到这张卡 ↓</button></div></li>`;
+function openPeek() {
+  const sec = L && currentGroup(); if (!sec) return;
+  const g = L.groups.find(x => x.no === +sec.dataset.g), here = readingCard(sec);
+  const hi = here ? g.entries.findIndex(e => e.word === here.dataset.word) : -1;
+  const rows = g.entries.map((e, i) => peekRow(e, i < hi ? " read" : i === hi ? " here" : "", i === hi ? `<span class="pkhere">▸ 读到这</span>` : "")).join("");
+  peek.innerHTML = `<div class="pkbar"><b>词以群记 ${g.no}</b><span>${esc(g.title)}</span><button class="icon" id="peekClose" aria-label="关闭" title="关闭（Esc）">✕</button></div>
+    <div class="pktabs seg"><button data-pktab="map">导图</button><button data-pktab="list">词表${hi >= 0 ? ` · 读到 ${hi + 1}/${g.entries.length}` : ""}</button></div>
+    <div class="pkbody">
+      <div class="pkpane" data-pane="map"><div class="mapbox pkmap">${mapHTML(g.map, true)}${mapCompact(g.map)}</div>
+        <p class="pknote">点导图里的词，下面显示它的释义；课文不会动</p></div>
+      <div class="pkpane" data-pane="list"><p class="pknote">${S.mask ? "背诵模式：点一行看释义" : "点一行展开记忆法、读一遍"}；课文不会动，「跳到这张卡」才过去</p>
+        <ol class="pklist">${rows}</ol></div></div>
+    <ol class="pkfoot" hidden></ol>`;
+  peek.classList.add("open"); $("#peekScrim").classList.add("open"); $("#peekFab").classList.add("on");
+  setPeekTab(store.get("peekTab", "list"));
+  /* 词表长、读到的那行在下面看不见时，滚到它，让前面读过的几行露出来 */
+  const h = peek.querySelector(".pk.here"), body = peek.querySelector(".pkbody");
+  if (h && h.offsetTop + h.offsetHeight > body.clientHeight) body.scrollTop = h.offsetTop - body.clientHeight * 0.6;
+}
+function setPeekTab(v) {
+  store.set("peekTab", v);
+  $$("[data-pktab]", peek).forEach(b => b.classList.toggle("on", b.dataset.pktab === v));
+  $$(".pkpane", peek).forEach(p => { p.hidden = p.dataset.pane !== v; });
+  if (v !== "map") { peek.querySelector(".pkfoot").hidden = true; return; }
+  /* 树形导图在浮层里放不下，换成手机版的紧凑导图（导图显示出来才量得到宽度） */
+  const box = peek.querySelector(".pkmap"), mm = box.querySelector(".mm");
+  if (mm && mm.offsetParent !== null && mm.offsetWidth > box.clientWidth - 20) box.classList.add("compact");
+}
+/* 导图里点的词：底部显示它所在词条的释义（扩展词就标出那一行），读一遍 */
+function peekFoot(w) {
+  const hit = WORDMAP.get(w); if (!hit) return;
+  const foot = peek.querySelector(".pkfoot");
+  foot.innerHTML = peekRow(hit.entry, " open"); foot.hidden = false;
+  if (hit.ext) foot.querySelector(`[data-pkext="${CSS.escape(w)}"]`)?.classList.add("hit");
+  stopMarathon(); speak(w);
+}
+function closePeek() {
+  if (!peekOpen()) return;
+  peek.classList.remove("open"); $("#peekScrim").classList.remove("open"); $("#peekFab").classList.remove("on");
+}
+const togglePeek = () => (peekOpen() ? closePeek() : openPeek());
+$("#peekFab").onclick = togglePeek;
+$("#peekScrim").onclick = closePeek;
+peek.addEventListener("click", e => {
+  const t = e.target;
+  if (t.closest("#peekClose")) { closePeek(); return; }
+  const go = t.closest("[data-pkgo]"); if (go) { closePeek(); gotoWord(go.dataset.pkgo); return; }
+  const tab = t.closest("[data-pktab]"); if (tab) { setPeekTab(tab.dataset.pktab); return; }
+  const node = t.closest("[data-goto]"); if (node) { peekFoot(node.dataset.goto); return; }
+  if (t.closest(".pkfoot")) return;
+  const row = t.closest(".pk");
+  if (row) { const open = !row.classList.contains("open"); row.classList.toggle("open", open); if (open) { stopMarathon(); speak(row.dataset.pk); } }
+});
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape" && peekOpen()) { closePeek(); return; }
+  if ((e.key === "m" || e.key === "M") && !e.ctrlKey && !e.metaKey && !e.altKey && !$("#lessonView").hidden &&
+      !(e.target.closest && e.target.closest("input,select,textarea"))) togglePeek();
+});
 
 /* ---------- 搜索 ---------- */
 const qres = $("#qres");
