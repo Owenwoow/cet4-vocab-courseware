@@ -19,7 +19,7 @@
 ## 目录
 
 - `pipeline/`：流水线脚本和提示词（`prompts/`），`toc.json` 是手录的书目录
-- `site/`：静态站点，直接托管这个目录；`site/data/lessons/*.json` 是唯一数据源。`app.js` 课文与设置，`study.js` 首页 / 记录 / 巩固 / 浏览 / 周总结，`srs.js` 复习规则（纯函数），`sync.js` 存储与云同步
+- `site/`：静态站点，直接托管这个目录；`site/data/lessons/*.json` 是唯一数据源。`app.js` 课文与设置，`study.js` 首页 / 记录 / 巩固 / 浏览 / 周总结，`srs.js` 复习规则（纯函数），`vocab.js` 生词本的取原形 / 拆释义（纯函数），`sync.js` 存储与云同步
 - `site/data/roots/*.json`：词根词缀记忆法补充（书外、AI 生成），只给书上用联想/谐音法且能拆出公认词根的词条补，页面标「补充」；`validate.py` 会核对
 - `site/data/audio/*.json`：每课音频清单（进 git）；音频文件本身在单独的仓库 `cet4-vocab-audio`，本地克隆在 `audio-store/`（主仓库忽略）
 - `site/data/pages/`、`work/`：脚本生成，不进 git
@@ -32,6 +32,6 @@
 - 书页码 = PDF 页序号(0 起) − 9（`pipeline/config.py`）
 - 每个 Lesson 的词条序号从 01 重新开始；词群编号在整个 Unit 内连续
 - 学习进度（已会、设置、上次的课、每课阅读位置）统一走 `site/sync.js` 存取，不要直接写 localStorage；新增要跨设备同步的状态也走它。云端是用户自己的私密 Gist（`cet4-progress.json`），token 只存本机，绝不写进仓库
-- 背词数据也走 `sync.js`：`learn:<课id>:g<词群号>` = 学的日期，`srs:<词>` = 复习卡，`log:<日期>` = 当天评分计数；取消记 0（墓碑），不要删键
+- 背词数据也走 `sync.js`：`learn:<课id>:g<词群号>` = 学的日期，`srs:<词>` = 复习卡，`log:<日期>` = 当天评分计数，`vocab:<原形>` = 生词本（释义快照 + 复习卡，和 `srs:` 分开存，所在词群记为学过时记 0「毕业」）；取消记 0（墓碑），不要删键
 - 复习规则只在 `site/srs.js` 改，改了同步改 `tests/srs.test.js`；规则说明写在文件开头和 `docs/plans/2026-10-01-vocab-portal.md`
 - 组件库 Web Awesome 只引主题变量 `themes/default.css` 和组件加载器，不引 `native.css`、不用 `wa-page`（会改动课文页）；版本号写死在 `index.html`。新增脚本要加进部署工作流的版本号 sed
