@@ -1,0 +1,19 @@
+{
+ "_note": "词根词缀记忆法（书外补充，AI 生成），只给书上用联想/谐音法的词补充。",
+ "words": {
+  "ancestor": "ante-（前）+ cess（走）+ -or（表人后缀）→ 走在前面的人 → 祖先",
+  "ancient": "anci-（ante-，前）+ -ent（形容词后缀）→ 在很前面的 → 古代的",
+  "procedure": "pro-（向前）+ ced（走）+ -ure（名词后缀）→ 一步步向前走 → 程序，步骤",
+  "assess": "as-（在旁）+ sess（坐）→ 坐在旁边估定税额 → 评估",
+  "surplus": "sur-（超过）+ plus（多）→ 多出来的 → 过剩，盈余",
+  "extra": "extra-（在……之外）→ 之外多出的 → 额外的",
+  "successor": "suc-（在下面，接着）+ cess（走）+ -or（表人后缀）→ 接着往下走的人 → 继承者",
+  "static": "stat（站）+ -ic（形容词后缀）→ 站着不动的 → 静止的",
+  "ratio": "rat（计算，推理）+ -io（名词后缀）→ 算出来的比值 → 比率",
+  "action": "act（做）+ -ion（名词后缀）→ 做出来的事 → 行动",
+  "fragment": "frag（破）+ -ment（名词后缀）→ 破开的东西 → 碎片",
+  "fraction": "fract（破）+ -ion（名词后缀）→ 破下来的一小块 → 小部分",
+  "portion": "port（部分）+ -ion（名词后缀）→ 分出的一份 → 部分",
+  "proportion": "pro-（按照）+ portion（部分）→ 按各部分来比 → 比例"
+ }
+}

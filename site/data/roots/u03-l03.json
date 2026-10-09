@@ -1,0 +1,28 @@
+{
+ "_note": "词根词缀记忆法（书外补充，AI 生成），只给书上用联想/谐音法的词补充。",
+ "words": {
+  "distant": "dis-（分开）+ st（站，拉丁 stare）+ -ant（形容词后缀）→ 分开站着 → 遥远的",
+  "constant": "con-（一起）+ st（站）+ -ant（形容词后缀）→ 一直站定不动 → 不变的；不断的",
+  "instant": "in-（在……上）+ st（站）+ -ant（形容词后缀）→ 紧站在身边 → 迫近的 → 立即的",
+  "constitute": "con-（一起）+ stitu（站，放置）+ -te（动词后缀）→ 放在一起立起来 → 组成",
+  "substitute": "sub-（下面，代替）+ stitu（站，放置）+ -te（动词后缀）→ 站到别人的位置上 → 代替",
+  "replace": "re-（回）+ place（位置）→ 放回原位的是新人 → 代替",
+  "institute": "in-（在内）+ stitu（站，设立）+ -te（动词后缀）→ 设立起来的机构 → 学会；创立",
+  "separate": "se-（分开）+ par（准备，整理）+ -ate（动词后缀）→ 整理开来 → 分开",
+  "sector": "sect（切）+ -or（名词后缀）→ 切下来的一块 → 部门；领域",
+  "semester": "se-（六，拉丁 sex）+ mens（月）+ -ter → 六个月 → 学期",
+  "apart": "a-（向）+ part（部分）→ 分成一部分一部分 → 分开地",
+  "apartment": "apart（分开）+ -ment（名词后缀）→ 隔开的一间间房 → 公寓",
+  "particle": "part（部分）+ -icle（小）→ 小部分 → 微粒",
+  "depart": "de-（离开）+ part（部分，分开）→ 与原处分开 → 离开",
+  "prejudice": "pre-（预先）+ jud（判断）+ -ice（名词后缀）→ 预先下判断 → 偏见",
+  "neutral": "ne-（不）+ utr（二者之一）+ -al（形容词后缀）→ 不偏向任何一方 → 中立的",
+  "acute": "acu（尖）+ -te → 尖锐的 → 敏锐的；急性的；严重的",
+  "grave": "grav（重）+ -e → 沉重的 → 严重的；严肃的",
+  "relieve": "re-（再，反复）+ lev（轻，举起）+ -e → 使变轻 → 缓解",
+  "grateful": "grat（感谢，喜悦）+ -ful（充满……的）→ 充满谢意的 → 感激的",
+  "exploit": "ex-（出）+ ploit（折，拉丁 plicare）→ 把东西展开来用 → 利用；开发",
+  "retire": "re-（向后）+ tire（拉）→ 往后拉退下来 → 退休",
+  "employ": "em-（in-，入）+ ploy（折，拉丁 plicare）→ 把人折进工作里 → 雇用"
+ }
+}

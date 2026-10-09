@@ -1,0 +1,19 @@
+{
+ "_note": "词根词缀记忆法（书外补充，AI 生成），只给书上用联想/谐音法的词补充。",
+ "words": {
+  "democratic": "demo（人民）+ crat（统治）+ -ic（形容词后缀）→ 人民统治的 → 民主的",
+  "generate": "gener（生）+ -ate（动词后缀）→ 生出 → 产生",
+  "general": "gener（种类，全体）+ -al（形容词后缀）→ 全体的 → 一般的；将军",
+  "strategy": "strat（军队）+ eg（带领）+ -y（名词后缀）→ 率领军队 → 战略",
+  "catalogue": "cata-（向下）+ log（说，列举）+ -ue → 一条条列下来 → 目录",
+  "dialogue": "dia-（相互）+ log（说话）+ -ue → 互相说话 → 对话",
+  "logic": "log（言语，理性）+ -ic（名词后缀）→ 讲理的学问 → 逻辑",
+  "index": "in-（向）+ dex（指，拉丁 dicere）→ 指向 → 索引",
+  "expel": "ex-（出）+ pel（推）→ 推出去 → 驱逐；开除",
+  "compel": "com-（强调）+ pel（推）→ 逼着往前推 → 强迫",
+  "reluctant": "re-（反）+ luct（挣扎）+ -ant（形容词后缀）→ 反抗挣扎的 → 不情愿的",
+  "affair": "af-（ad-，向）+ fair（做，法语 faire）→ 要去做的事 → 事务",
+  "recruit": "re-（再）+ cru（生长，拉丁 crescere）+ -it → 再长出来的人 → 招聘；新成员",
+  "register": "re-（回）+ gist（带，拉丁 gerere）+ -er → 记录带回 → 登记"
+ }
+}

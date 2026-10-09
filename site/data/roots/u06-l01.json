@@ -1,0 +1,20 @@
+{
+ "_note": "词根词缀记忆法（书外补充，AI 生成），只给书上用联想/谐音法的词补充。",
+ "words": {
+  "portable": "port（拿，搬运）+ -able（能……的）→ 能搬运的 → 便携式的",
+  "compound": "com-（一起）+ pound（放，同 pon-）→ 放在一起 → 混合物",
+  "complex": "com-（一起）+ plex（编织，折叠）→ 编织在一起 → 复杂的",
+  "collapse": "col-（一起）+ lapse（滑落）→ 一起滑落 → 倒塌",
+  "complicate": "com-（一起）+ plic（折叠）+ -ate（动词后缀）→ 折叠缠在一起 → 使复杂化",
+  "demand": "de-（完全）+ mand（命令，委托）→ 完全交代下去 → 要求",
+  "acquire": "ac-（向）+ quir（寻求）+ -e → 去寻求 → 获得",
+  "courage": "cour（心，同 cor）+ -age（名词后缀）→ 心的状态 → 勇气",
+  "frustrate": "frustr（徒劳）+ -ate（动词后缀）→ 使徒劳无功 → 使气馁",
+  "provoke": "pro-（向前）+ vok（喊，叫）+ -e → 向前叫喊 → 挑衅；激起",
+  "sponsor": "spons（誓约，承诺）+ -or（人）→ 许诺出资的人 → 赞助者",
+  "spontaneous": "spont（自愿）+ -aneous（形容词后缀）→ 出于自愿 → 自发的",
+  "suspend": "sus-（= sub-，在下）+ pend（悬挂）→ 从下面挂起 → 悬，暂停",
+  "technique": "techn（技艺）+ -ique（名词后缀）→ 技艺",
+  "hardware": "hard（硬的）+ ware（物品）→ 硬东西 → 硬件"
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "_note": "词根词缀记忆法（书外补充，AI 生成），只给书上用联想/谐音法的词补充。",
+ "words": {
+  "transfer": "trans-（越过）+ fer（带）→ 带到另一边 → 转移",
+  "transit": "trans-（越过）+ it（走）→ 走过去 → 通过；运输",
+  "transparent": "trans-（透过）+ par（出现）+ -ent（形容词后缀）→ 透过去能显现 → 透明的",
+  "apparent": "ap-（向）+ par（出现）+ -ent（形容词后缀）→ 显现出来的 → 显然的",
+  "evident": "e-（出）+ vid（看）+ -ent（形容词后缀）→ 看得出来的 → 明显的",
+  "irrigation": "ir-（in-，入）+ rig（灌水）+ -ation（名词后缀）→ 引水入田 → 灌溉",
+  "dominant": "domin（主人，统治）+ -ant（形容词后缀）→ 统治的 → 占支配地位的",
+  "domestic": "dom（家）+ -estic（形容词后缀）→ 家的 → 家庭的；国内的",
+  "tedious": "ted（厌烦，拉丁 taedium）+ -ious（形容词后缀）→ 令人厌烦的 → 乏味的",
+  "agenda": "ag（做）+ -enda（应做之事）→ 要做的事 → 议程",
+  "medium": "medi（中间）+ -um（名词后缀）→ 居中传递者 → 中等的；媒介",
+  "intermediate": "inter-（之间）+ medi（中间）+ -ate（形容词后缀）→ 位于中间的",
+  "local": "loc（地方）+ -al（形容词后缀）→ 地方的 → 当地的",
+  "locate": "loc（地方）+ -ate（动词后缀）→ 确定地方 → 定位",
+  "cite": "cit（召唤）+ -e → 召来作证 → 引用"
+ }
+}

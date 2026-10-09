@@ -1,0 +1,25 @@
+{
+ "_note": "词根词缀记忆法（书外补充，AI 生成），只给书上用联想/谐音法的词补充。",
+ "words": {
+  "tutor": "tut（照看，拉丁 tueri）+ -or（人）→ 照看人 → 导师",
+  "seminar": "semin（种子）+ -ar → 播种之处 → 研讨会",
+  "tuition": "tu（照看）+ -ition（名词后缀）→ 照看教导 → 教学；学费",
+  "faculty": "facul（容易，能力）+ -ty（名词后缀）→ 能力 → 全体教师；院系",
+  "expert": "ex-（出）+ per（尝试）+ -t → 经历过尝试的人 → 专家",
+  "principal": "prin（首先）+ cip（拿）+ -al → 拿第一位的 → 首要的；校长",
+  "principle": "prin（首先）+ cip（拿）+ -le（名词后缀）→ 首要的东西 → 原则",
+  "prince": "prin（首先）+ ce（= cip，拿）→ 居于第一位的人 → 王子",
+  "dormitory": "dorm（睡）+ -itory（场所）→ 睡觉的地方 → 宿舍",
+  "junior": "jun（年轻）+ -ior（比较级）→ 较年轻的 → 年少的；晚辈",
+  "cultivate": "cult（耕种）+ -iv + -ate（动词后缀）→ 耕种 → 培育",
+  "intelligent": "intel-（inter-，之间）+ lig（选择）+ -ent（形容词后缀）→ 能在其中做选择的 → 聪明的",
+  "intellectual": "intel-（inter-，之间）+ lect（选，读）+ -ual（形容词后缀）→ 智力的",
+  "pioneer": "pion（步兵，拉丁 ped 脚）+ -eer（人）→ 走在前面的步兵 → 先锋",
+  "compatible": "com-（一起）+ pat（感受）+ -ible（能……的）→ 能共同感受的 → 兼容的",
+  "curriculum": "curr（跑）+ -iculum → 跑道 → 课程",
+  "geometry": "geo（地）+ metr（测量）+ -y（名词后缀）→ 测量土地 → 几何",
+  "psychology": "psycho（心灵）+ -logy（……学）→ 研究心灵的学问 → 心理学",
+  "architecture": "archi-（首要）+ tect（建造）+ -ure（名词后缀）→ 首要的建造 → 建筑学",
+  "infrastructure": "infra-（下面）+ struct（建造）+ -ure（名词后缀）→ 下层的建造 → 基础设施"
+ }
+}

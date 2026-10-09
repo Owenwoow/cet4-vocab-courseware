@@ -20,6 +20,7 @@
 
 - `pipeline/`：流水线脚本和提示词（`prompts/`），`toc.json` 是手录的书目录
 - `site/`：静态站点，直接托管这个目录；`site/data/lessons/*.json` 是唯一数据源。`app.js` 课文与设置，`study.js` 首页 / 记录 / 巩固 / 浏览 / 周总结，`srs.js` 复习规则（纯函数），`sync.js` 存储与云同步
+- `site/data/roots/*.json`：词根词缀记忆法补充（书外、AI 生成），只给书上用联想/谐音法且能拆出公认词根的词条补，页面标「补充」；`validate.py` 会核对
 - `site/data/audio/*.json`：每课音频清单（进 git）；音频文件本身在单独的仓库 `cet4-vocab-audio`，本地克隆在 `audio-store/`（主仓库忽略）
 - `site/data/pages/`、`work/`：脚本生成，不进 git
 

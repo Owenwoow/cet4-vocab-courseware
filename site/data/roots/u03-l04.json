@@ -1,0 +1,27 @@
+{
+ "_note": "词根词缀记忆法（书外补充，AI 生成），只给书上用联想/谐音法的词补充。",
+ "words": {
+  "appreciate": "ap-（向）+ preci（价值）+ -ate（动词后缀）→ 评定价值 → 重视；欣赏；感激",
+  "ultimate": "ultim（最远的）+ -ate（形容词后缀）→ 最远端的 → 最终的",
+  "intimate": "intim（最内部的）+ -ate（形容词后缀）→ 最里面的 → 亲密的",
+  "approximate": "ap-（向）+ proxim（最近）+ -ate（形容词后缀）→ 靠得最近的 → 大约的；接近的",
+  "approach": "ap-（向）+ proach（近，拉丁 prope）→ 向前靠近 → 接近",
+  "capital": "cap（头）+ -ital（形容词、名词后缀）→ 头部的 → 首位的 → 首都；大写字母",
+  "captain": "cap（头）+ -tain（名词后缀）→ 为首的人 → 船长；首领",
+  "capable": "cap（拿，容纳）+ -able（能……的）→ 能抓得住 → 能胜任的",
+  "capacity": "cap（拿，容纳）+ -acity（名词后缀）→ 能容纳的量 → 容量；能力",
+  "region": "reg（统治）+ -ion（名词后缀）→ 被统治的范围 → 地区",
+  "origin": "orig（升起，拉丁 oriri）+ -in（名词后缀）→ 事物升起的地方 → 起源",
+  "resource": "re-（再）+ source（涌出的源头）→ 可以再次涌出的东西 → 资源",
+  "derive": "de-（从）+ riv（河流）+ -e → 从河流引出水 → 源于；得到",
+  "deprive": "de-（完全）+ priv（个人的，分离）+ -e → 使脱离所有 → 剥夺",
+  "effort": "ef-（ex-，出）+ fort（力量）→ 使出力量 → 努力",
+  "accord": "ac-（ad-，向）+ cord（心）→ 心向一处 → 一致；符合",
+  "record": "re-（回）+ cord（心）→ 使回到心里记住 → 记录",
+  "audio": "aud（听）+ -io → 听的 → 声音的",
+  "audience": "aud（听）+ -ience（名词后缀）→ 听的人 → 听众",
+  "regard": "re-（回）+ gard（看守，同 guard）→ 回头看护 → 看待；致意",
+  "distinguish": "di(s)-（分开）+ stingu（刺，标记）+ -ish（动词后缀）→ 做出区分的记号 → 区分",
+  "instinct": "in-（内）+ stinct（刺，推动）→ 内在的推动力 → 本能"
+ }
+}

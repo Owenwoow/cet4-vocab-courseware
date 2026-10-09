@@ -1,0 +1,17 @@
+{
+ "_note": "词根词缀记忆法（书外补充，AI 生成），只给书上用联想/谐音法的词补充。",
+ "words": {
+  "caution": "caut（小心）+ -ion（名词后缀）→ 谨慎",
+  "conscious": "con-（共同）+ sci（知道）+ -ous（形容词后缀）→ 自己知道的 → 有意识的",
+  "conscience": "con-（共同）+ sci（知道）+ -ence（名词后缀）→ 内心明白是非 → 良知",
+  "perceive": "per-（完全）+ ceive（拿，抓）→ 完全抓住 → 察觉",
+  "deceive": "de-（离开）+ ceive（拿，捉）→ 诱捕 → 欺骗",
+  "receive": "re-（回）+ ceive（拿）→ 拿到手 → 收到",
+  "resemble": "re-（再）+ semble（相似）→ 再现相似 → 类似于",
+  "assemble": "as-（向）+ semble（一同）→ 聚到一起 → 集合",
+  "sympathy": "sym-（共同）+ path（感受）+ -y（名词后缀）→ 共同感受 → 同情",
+  "symptom": "sym-（共同）+ ptom（落下）→ 一同出现的情况 → 症状",
+  "symbol": "sym-（共同）+ bol（投掷）→ 投在一起作为凭证 → 象征",
+  "insane": "in-（不）+ san（健康）+ -e → 不健全的 → 疯狂的"
+ }
+}

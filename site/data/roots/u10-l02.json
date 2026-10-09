@@ -1,0 +1,23 @@
+{
+ "_note": "词根词缀记忆法（书外补充，AI 生成），只给书上用联想/谐音法的词补充。",
+ "words": {
+  "transmit": "trans-（穿过）+ mit（送）→ 送过去 → 传输",
+  "omit": "o-（离开）+ mit（送）→ 送走 → 遗漏",
+  "mission": "miss（送）+ -ion（名词后缀）→ 被派遣出去的事 → 任务",
+  "missile": "miss（投掷）+ -ile（名词后缀）→ 投射出去的东西 → 导弹",
+  "admit": "ad-（向）+ mit（送）→ 放进来 → 承认；准许进入",
+  "commission": "com-（共同）+ miss（送）+ -ion（名词后缀）→ 把事务送交 → 委托；委员会",
+  "summit": "summ（最高）+ -it → 最高处 → 顶峰",
+  "attitude": "att-（适合）+ -itude（状态）→ 适合的姿态 → 态度",
+  "regulate": "reg（统治，直）+ -ul- + -ate（动词后缀）→ 使走上正轨 → 管理",
+  "relate": "re-（回）+ lat（带）+ -e → 带回来 → 联系",
+  "relevant": "re-（再）+ lev（举起）+ -ant（形容词后缀）→ 再提起的 → 有关的",
+  "hesitate": "hes（粘住）+ -it- + -ate（动词后缀）→ 粘住不动 → 犹豫",
+  "compensate": "com-（共同）+ pens（称量，支付）+ -ate（动词后缀）→ 称量抵消 → 补偿",
+  "candidate": "cand（白）+ -id- + -ate（名词后缀）→ 穿白袍竞选的人 → 候选人",
+  "negotiate": "neg（否）+ oti（闲暇）+ -ate（动词后缀）→ 没有闲暇，忙于事务 → 谈判",
+  "initiate": "in-（进入）+ it（走）+ -i- + -ate（动词后缀）→ 走进去 → 开始",
+  "chapter": "chap（头）+ -ter → 小标题段落 → 章节",
+  "fiction": "fict（塑造）+ -ion（名词后缀）→ 捏造出来的 → 虚构"
+ }
+}

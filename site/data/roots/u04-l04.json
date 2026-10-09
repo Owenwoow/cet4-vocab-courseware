@@ -1,0 +1,21 @@
+{
+ "_note": "词根词缀记忆法（书外补充，AI 生成），只给书上用联想/谐音法的词补充。",
+ "words": {
+  "component": "com-（一起）+ pon（放）+ -ent（名词后缀）→ 放在一起的东西 → 组成部分",
+  "rival": "riv（河，拉丁 rivus）+ -al（名词后缀）→ 共用一条河取水的人 → 对手",
+  "counsel": "con-（共同）+ sul（商议）→ 共同商议 → 劝告",
+  "purpose": "pur-（pro-，前）+ pose（放）→ 放在前面的目标 → 目的",
+  "rural": "rur（乡村）+ -al（形容词后缀）→ 乡村的",
+  "agriculture": "agri（田地）+ cult（耕种）+ -ure（名词后缀）→ 耕种田地 → 农业",
+  "urban": "urb（城市）+ -an（形容词后缀）→ 城市的",
+  "suburb": "sub-（靠近，下）+ urb（城市）→ 靠近城市的地方 → 郊区",
+  "continent": "con-（一起）+ tin（保持）+ -ent（名词后缀）→ 连在一起的大片陆地 → 大陆",
+  "preface": "pre-（前）+ fac（说，拉丁 fari）+ -e → 前面说的话 → 序言",
+  "climate": "clim（倾斜）+ -ate（名词后缀）→ 太阳倾斜角度随地区而异 → 气候",
+  "atmosphere": "atmo（蒸汽，空气）+ sphere（球）→ 包裹地球的气体球层 → 大气",
+  "circumstance": "circum-（周围）+ stan（站）+ -ce（名词后缀）→ 站在周围的东西 → 环境；状况",
+  "condition": "con-（一起）+ dit（说，拉丁 dicere）+ -ion（名词后缀）→ 共同说定的事 → 条件",
+  "oval": "ov（蛋）+ -al（形容词后缀）→ 蛋形的 → 椭圆形的",
+  "context": "con-（一起）+ text（编织）→ 编织在一起的文字 → 上下文；背景"
+ }
+}

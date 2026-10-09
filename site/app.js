@@ -231,6 +231,7 @@ function cardHTML(e) {
     </div>
     <div class="senses">${senses}</div>
     ${e.tip ? `<div class="tip"><span class="tag ${esc(e.tip.type)}">${esc(e.tip.type)}</span>${esc(e.tip.text)}</div>` : ""}
+    ${e.root ? `<div class="tip root"><span class="tag 构词">词根</span>${esc(e.root)}<span class="src add">补充</span></div>` : ""}
     ${ex}${exts}
   </article>`;
 }
@@ -272,12 +273,14 @@ function updateProgress() {
 async function loadLesson(id) {
   if (L && L.id === id) return;
   stopMarathon();
-  const [les, gl, au] = await Promise.all([
+  const [les, gl, au, rt] = await Promise.all([
     fetchJSON(`data/lessons/${id}.json`),
     fetchJSON(`data/gloss/${id}.json`).catch(() => ({words: {}})),
     fetchJSON(`data/audio/${id}.json`).catch(() => ({w: {}, s: {}, z: {}, m: {}, voices: []})),
+    fetchJSON(`data/roots/${id}.json`).catch(() => ({words: {}})),
   ]);
   L = les; GLOSS = gl.words || {}; AUD = au;
+  for (const g of L.groups) for (const e of g.entries) e.root = rt.words?.[e.word];   // 词根法（书外补充）
   WORDMAP.clear();
   for (const g of L.groups) for (const e of g.entries) {
     WORDMAP.set(e.word, {word: e.word, senses: e.prons.flatMap(p => p.senses), ipa: e.prons.map(p => p.ipa).join(" "), no: e.no, entry: e, ext: false});

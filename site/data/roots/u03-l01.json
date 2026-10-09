@@ -1,0 +1,24 @@
+{
+ "_note": "词根词缀记忆法（书外补充，AI 生成），只给书上用联想/谐音法的词补充。",
+ "words": {
+  "account": "ac-（向）+ count（计算）→ 计算的记录 → 账户",
+  "coupon": "coup（切）+ -on（名词后缀）→ 切下来的票 → 优惠券",
+  "beneath": "be-（在）+ neath（下面）→ 在下面",
+  "undergo": "under（在下）+ go（走）→ 走到下面承受 → 经历",
+  "endure": "en-（使）+ dur（持久）+ -e → 使持久 → 忍受",
+  "session": "sess（坐）+ -ion（名词后缀）→ 坐在一起 → 会议",
+  "suffer": "suf-（在下）+ fer（承担，带）→ 在下面承受 → 遭受",
+  "infer": "in-（进入）+ fer（带）→ 把结论带入 → 推断",
+  "refer": "re-（回）+ fer（带）→ 带回到某事 → 提到",
+  "concern": "con-（加强）+ cern（筛，辨别）→ 一一辨别关系到 → 涉及",
+  "conference": "con-（一起）+ fer（带）+ -ence（名词后缀）→ 带到一起商讨 → 会议",
+  "fertile": "fert（带来，结果）+ -ile（形容词后缀）→ 能带来产出的 → 肥沃的",
+  "indifferent": "in-（不）+ differ（区别）+ -ent（形容词后缀）→ 不分高下的 → 冷漠的",
+  "undermine": "under（在下）+ mine（挖）→ 在底下挖 → 逐渐削弱",
+  "determine": "de-（完全）+ termin（界限）+ -e → 划定界限 → 决定",
+  "deteriorate": "deterior（更坏的）+ -ate（动词后缀）→ 变得更坏 → 恶化",
+  "destroy": "de-（相反）+ stroy（建造，同 struct）→ 把建好的拆掉 → 毁坏",
+  "decay": "de-（下）+ cay（落，同 cad）→ 落下去 → 衰退；腐烂",
+  "decade": "dec（十）+ -ade（群，组）→ 十年一组 → 十年"
+ }
+}

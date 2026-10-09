@@ -1,0 +1,31 @@
+{
+ "_note": "词根词缀记忆法（书外补充，AI 生成），只给书上用联想/谐音法的词补充。",
+ "words": {
+  "ingredient": "in-（入）+ gred（走）+ -i- + -ent（名词后缀）→ 走进配方里的东西 → 材料",
+  "forgive": "for-（离开）+ give（给）→ 把怨恨给出去 → 原谅",
+  "accuse": "ac-（向）+ cuse（原因，指控）→ 向某人追究原因 → 谴责",
+  "excuse": "ex-（去除）+ cuse（指控）→ 免除指控 → 借口；原谅",
+  "insult": "in-（在……上）+ sult（跳）→ 跳到别人身上 → 侮辱",
+  "critic": "crit（判断）+ -ic（人）→ 作判断的人 → 批评者",
+  "assist": "as-（= ad-，向）+ sist（站）→ 站到旁边 → 帮助",
+  "persist": "per-（始终）+ sist（站）→ 一直站着 → 坚持",
+  "comprise": "com-（一起）+ pris（抓取）+ -e → 抓在一起 → 包括",
+  "enterprise": "enter-（= inter-，之间）+ pris（抓取）+ -e → 抓住承担的事 → 企业",
+  "entrepreneur": "entre-（之间）+ pren（抓取）+ -eur（人）→ 承担事务的人 → 企业家",
+  "corporation": "corpor（身体）+ -ation（名词后缀）→ 组成一个整体 → 公司",
+  "empire": "em-（= in-，在……上）+ pir（命令）+ -e → 发号施令之地 → 帝国",
+  "manage": "man（手）+ -age（动词/名词后缀）→ 用手操控 → 管理",
+  "president": "pre-（前）+ sid（坐）+ -ent（人）→ 坐在前面的人 → 总统；总经理",
+  "compete": "com-（共同）+ pet（追求）+ -e → 一起追求同一目标 → 竞争",
+  "complete": "com-（完全）+ plet（填满）+ -e → 完全填满 → 完成",
+  "versus": "vers（转）+ -us → 转向对立方 → 对抗",
+  "finance": "fin（结束，付清）+ -ance（名词后缀）→ 了结债务 → 金融",
+  "commerce": "com-（共同）+ merc（买卖）+ -e → 一起买卖 → 贸易，商业",
+  "merchant": "merch（买卖）+ -ant（人）→ 做买卖的人 → 商人",
+  "destination": "de-（加强）+ stin（站立）+ -ation（名词后缀）→ 要站定的地方 → 目的地",
+  "revenue": "re-（回）+ ven（来）+ -ue → 回来的钱 → 收入",
+  "avenue": "a-（向）+ ven（来）+ -ue → 通达的路 → 大街",
+  "economical": "eco（家）+ nom（管理）+ -ic-al（形容词后缀）→ 精打细算持家的 → 节俭的",
+  "manipulate": "mani（手）+ pul（装满）+ -ate（动词后缀）→ 一把之量，用手操作 → 操纵"
+ }
+}

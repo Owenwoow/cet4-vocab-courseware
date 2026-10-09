@@ -1,0 +1,27 @@
+{
+ "_note": "词根词缀记忆法（书外补充，AI 生成），只给书上用联想/谐音法的词补充。",
+ "words": {
+  "conduct": "con-（一起）+ duct（引导）→ 引导在一起 → 指挥；执行",
+  "direct": "di-（分开）+ rect（直）→ 使成直线 → 指导；直接的",
+  "instruct": "in-（向）+ struct（建造）→ 建立起知识 → 指示；传授",
+  "command": "com-（强调）+ mand（命令，托付）→ 命令；指挥",
+  "military": "milit（士兵）+ -ary（形容词后缀）→ 士兵的 → 军事的",
+  "enemy": "en-（in-，不）+ em（= amic，朋友）+ -y → 不是朋友的人 → 敌人",
+  "status": "stat（站）+ -us（名词后缀）→ 所站的位置 → 地位",
+  "statue": "stat（站）+ -ue（名词后缀）→ 立着的像 → 雕像",
+  "liberty": "liber（自由）+ -ty（名词后缀）→ 自由",
+  "deliberate": "de-（完全）+ liber（称量，拉丁 libra 天平）+ -ate → 反复称量 → 深思熟虑",
+  "generous": "gener（出身，生）+ -ous（形容词后缀）→ 出身高贵者的风度 → 慷慨的",
+  "author": "auth（= aug，增加）+ -or（人）→ 使事物产生的人 → 作者；创造者",
+  "genius": "gen（生）+ -ius → 天生的才能 → 天才",
+  "elite": "e-（出）+ lit（选，拉丁 legere）+ -e → 选出来的人 → 精英",
+  "prior": "pri（先）+ -or（比较级）→ 更靠前的 → 先前的",
+  "inferior": "infer（下面）+ -ior（比较级）→ 更低的 → 劣等的",
+  "superb": "super（超越）+ -b → 超出一般的 → 极佳的",
+  "supreme": "supre（上，同 super）+ -me（最高级）→ 最上面的 → 最高的",
+  "mutual": "mut（交换）+ -ual（形容词后缀）→ 互相交换的 → 相互的",
+  "commute": "com-（完全）+ mut（改变，交换）+ -e → 来回交换 → 通勤",
+  "associate": "as-（ad-，向）+ soci（同伴）+ -ate（动词后缀）→ 结伴 → 联系；交往",
+  "ally": "al-（ad-，向）+ ly（捆绑，拉丁 ligare）→ 捆在一起 → 盟友"
+ }
+}

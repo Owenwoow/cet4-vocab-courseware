@@ -1,0 +1,21 @@
+{
+ "_note": "词根词缀记忆法（书外补充，AI 生成），只给书上用联想/谐音法的词补充。",
+ "words": {
+  "distress": "dis-（分开）+ stress（拉紧）→ 被向四面拉扯 → 痛苦",
+  "flexible": "flex（弯曲）+ -ible（可……的）→ 可弯曲的 → 灵活的",
+  "vulnerable": "vulner（伤）+ -able（可……的）→ 易受伤的 → 脆弱的",
+  "brutal": "brut（粗野，愚钝）+ -al（形容词后缀）→ 野蛮的",
+  "despair": "de-（离开）+ spair（希望）→ 失去希望 → 绝望",
+  "compare": "com-（共同）+ par（相等）+ -e → 放在一起比高下 → 比较",
+  "dilemma": "di-（二）+ lemma（命题）→ 两个难选的命题 → 进退两难的窘境",
+  "desperate": "de-（离开）+ sper（希望）+ -ate（形容词后缀）→ 失去希望的 → 拼命的；绝望的",
+  "accelerate": "ac-（加强）+ celer（快）+ -ate（动词后缀）→ 使更快 → 加速",
+  "decelerate": "de-（减）+ celer（快）+ -ate（动词后缀）→ 使变慢 → 减速",
+  "exaggerate": "ex-（向外）+ agger（堆）+ -ate（动词后缀）→ 往外堆高 → 夸大",
+  "advantage": "advant（在前）+ -age（名词后缀）→ 占在前面 → 优势",
+  "obstacle": "ob-（相对）+ st（站）+ -acle（名词后缀）→ 站在面前挡路 → 障碍",
+  "restrain": "re-（回）+ strain（拉紧）→ 拉回来 → 约束，制止",
+  "restrict": "re-（回）+ strict（拉紧）→ 勒紧限住 → 限制",
+  "degree": "de-（向下）+ gree（步，级）→ 一级一级往下 → 程度"
+ }
+}

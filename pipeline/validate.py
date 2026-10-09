@@ -7,7 +7,7 @@ import json
 import re
 import sys
 
-from config import LESSONS
+from config import DATA, LESSONS
 
 POS = {"n.", "v.", "adj.", "adv.", "prep.", "conj.", "pron.", "num.", "art.",
        "int.", "aux.", "modal v.", "phr.", "n. & v.", "v. & n.", "adj. & adv.", "adv. & adj."}
@@ -141,7 +141,24 @@ def validate(path):
                 r.warn(gw, f"词条 {e['word']} 不在导图里")
         for n in names - in_group:
             r.warn(gw, f"导图词 {n} 在本词群找不到词条/扩展词")
+    check_roots(r, d)
     return r, len(seen)
+
+
+def check_roots(r, data):
+    """词根法补充（site/data/roots/，书外）：只给书上用联想/谐音法的词条补。"""
+    f = DATA / "roots" / f"{data['id']}.json"
+    if not f.exists():
+        return
+    tips = {e["word"]: (e.get("tip") or {}).get("type") for g in data["groups"] for e in g["entries"]}
+    for word, text in json.loads(f.read_text(encoding="utf-8")).get("words", {}).items():
+        where = f"词根补充 {word}"
+        if word not in tips:
+            r.err(where, "本课没有这个词条")
+        elif tips[word] not in ("联想", "谐音"):
+            r.err(where, f"书上已是「{tips[word]}」法，不需要补词根")
+        if not isinstance(text, str) or "→" not in text:
+            r.err(where, f"格式应为「词根（含义）+ … → 词义」：{text!r}")
 
 
 def main(ids):

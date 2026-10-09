@@ -1,0 +1,22 @@
+{
+ "_note": "词根词缀记忆法（书外补充，AI 生成），只给书上用联想/谐音法的词补充。",
+ "words": {
+  "respond": "re-（回）+ spond（应答，保证）→ 回应",
+  "exhaust": "ex-（出）+ haust（汲取）→ 抽干 → 耗尽",
+  "expand": "ex-（向外）+ pand（展开）→ 向外展开 → 扩大",
+  "feasible": "feas（做）+ -ible（可……的）→ 可以做成的 → 可行的",
+  "feature": "feat（做）+ -ure（名词后缀）→ 做出来的样子 → 特征",
+  "figure": "fig（塑造）+ -ure（名词后缀）→ 塑造出的形状 → 数字；人物",
+  "document": "doc（教）+ -u- + -ment（名词后缀）→ 用来证明或教的东西 → 文件",
+  "arrange": "ar-（向）+ range（排列）→ 排好队列 → 安排",
+  "event": "e-（出）+ vent（来）→ 出来发生的事 → 事件",
+  "consequence": "con-（共同）+ sequ（跟随）+ -ence（名词后缀）→ 接着发生的事 → 后果",
+  "sequence": "sequ（跟随）+ -ence（名词后缀）→ 一个接一个 → 顺序",
+  "primary": "prim（第一）+ -ary（形容词后缀）→ 第一位的 → 主要的",
+  "preliminary": "pre-（之前）+ limin（门槛）+ -ary（形容词后缀）→ 门槛之前的 → 初步的",
+  "defend": "de-（离开）+ fend（打击）→ 打退来犯者 → 防御",
+  "possess": "pos（能力）+ sess（坐）→ 稳坐其上 → 占有",
+  "solve": "solv（松开）+ -e → 把结解开 → 解决",
+  "address": "ad-（向）+ dress（引导，对准）→ 对准目标 → 地址；致辞"
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "_note": "词根词缀记忆法（书外补充，AI 生成），只给书上用联想/谐音法的词补充。",
+ "words": {
+  "concrete": "con-（一起）+ cret（生长）+ -e → 长在一起的 → 具体的；混凝土",
+  "damage": "dam（损失，拉丁 damnum）+ -age（名词后缀）→ 造成损失 → 损害",
+  "divide": "di-（分开）+ vid（分）+ -e → 分开",
+  "remain": "re-（后）+ main（留，拉丁 manere）→ 留在后面 → 保持；剩下",
+  "inherit": "in-（入）+ her（继承人，拉丁 heres）+ -it → 成为继承人 → 继承",
+  "heritage": "her（继承）+ -itage（名词后缀）→ 继承下来的东西 → 遗产",
+  "major": "maj（大）+ -or（比较级）→ 较大的 → 主要的",
+  "appear": "ap-（ad-，向）+ pear（显现，拉丁 parere）→ 显现出来 → 出现",
+  "vanish": "van（空）+ -ish（动词后缀）→ 变成空无 → 消失",
+  "emerge": "e-（出）+ merg（浸）+ -e → 从水中浮出 → 浮现",
+  "marine": "mar（海）+ -ine（形容词后缀）→ 海的 → 海洋的",
+  "immune": "im-（不）+ mun（义务，负担）+ -e → 免除负担 → 有免疫力的",
+  "balance": "bi-（二）+ lanc（盘子）+ -e → 两个盘子相称 → 平衡",
+  "parallel": "para-（旁边）+ allel（彼此，希腊 allelon）→ 彼此并排 → 平行的",
+  "paradox": "para-（相反，超出）+ dox（意见）→ 与常识相反的看法 → 悖论",
+  "insect": "in-（里面）+ sect（切）→ 身体被切分成节的虫 → 昆虫",
+  "purchase": "pur-（pro-，前）+ chase（追，拉丁 captare 抓）→ 追着抓到手 → 购买",
+  "pursue": "pur-（pro-，向前）+ sue（跟随，拉丁 sequi）→ 向前追随 → 追求"
+ }
+}

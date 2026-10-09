@@ -122,9 +122,10 @@ const Study = (() => {
     if (!cache.has(id)) cache.set(id, Promise.all([
       fetchJSON(`data/lessons/${id}.json`),
       fetchJSON(`data/audio/${id}.json`).catch(() => ({w: {}, s: {}, z: {}, voices: []})),
-    ]).then(([les, aud]) => {
+      fetchJSON(`data/roots/${id}.json`).catch(() => ({words: {}})),
+    ]).then(([les, aud, rt]) => {
       const by = new Map();
-      for (const g of les.groups) for (const e of g.entries) if (!by.has(e.word)) by.set(e.word, {e, g});
+      for (const g of les.groups) for (const e of g.entries) { e.root = rt.words?.[e.word]; if (!by.has(e.word)) by.set(e.word, {e, g}); }
       return {les, aud, by};
     }).catch(err => { cache.delete(id); throw err; }));   // 失败的不缓存，下次重试
     return cache.get(id);
@@ -388,6 +389,7 @@ const Study = (() => {
         <div class="dipa"><span class="ipa">${esc(ipaOf(x.e))}</span> <button class="spk" data-say="1" title="读（R）">🔊</button> ${fl(x.freq)}</div>
         ${D.flipped ? `<div class="dback">${senseHTML(x.e)}
           ${x.e.tip ? `<div class="tip"><span class="tag ${esc(x.e.tip.type)}">${esc(x.e.tip.type)}</span>${esc(x.e.tip.text)}</div>` : ""}
+          ${x.e.root ? `<div class="tip root"><span class="tag 构词">词根</span>${esc(x.e.root)}<span class="src add">补充</span></div>` : ""}
           ${x.e.ex ? `<div class="ex${x.e.ex.type === "真" ? " zt" : ""}"><div class="exlab">${x.e.ex.type === "真" ? `真题 ${x.e.ex.year}` : "例句"}</div>
             <div class="sent">${sentenceHTML(x.e.ex.en, x.e.ex.key)}</div><div class="dzh">${esc(x.e.ex.zh)}</div>
             <div class="ops"><button data-sent="1">▶ 例句</button><button data-sent="slow">🐢 慢速</button></div></div>` : ""}</div>` : ""}

@@ -1,0 +1,24 @@
+{
+ "_note": "词根词缀记忆法（书外补充，AI 生成），只给书上用联想/谐音法的词补充。",
+ "words": {
+  "passion": "pass（感受，遭受）+ -ion（名词后缀）→ 强烈的感受 → 激情",
+  "conflict": "con-（互相）+ flict（打击）→ 互相撞击 → 冲突",
+  "debate": "de-（下）+ bat（打）+ -e → 把对方的观点打倒 → 争论",
+  "argument": "argu（证明，说明白）+ -ment（名词后缀）→ 论证 → 争论",
+  "demonstrate": "de-（完全）+ monstr（展示）+ -ate（动词后缀）→ 完全展示出来 → 证明",
+  "illustrate": "il-（在内）+ lustr（光亮）+ -ate（动词后缀）→ 照亮 → 说明",
+  "explicit": "ex-（向外）+ plic（折叠）+ -it → 把折叠的展开 → 明确的",
+  "convey": "con-（共同）+ vey（路）→ 一同上路 → 运送；传递",
+  "survey": "sur-（在上）+ vey（看）→ 从上往下看 → 审视；调查",
+  "invest": "in-（进入）+ vest（衣服）→ 给人穿上 → 授予 → 投资",
+  "investigate": "in-（进入）+ vestig（足迹）+ -ate（动词后缀）→ 循着足迹找 → 调查",
+  "statistic": "stat（国家，状态）+ -istic（……的）→ 国家状况的数据 → 统计数字",
+  "consent": "con-（共同）+ sent（感觉）→ 感觉一致 → 同意",
+  "resent": "re-（反）+ sent（感觉）→ 反过来感受到冒犯 → 怨恨",
+  "present": "pre-（在前）+ sent（在）→ 在面前 → 出席的；展示",
+  "absent": "ab-（离开）+ sent（在）→ 不在场 → 缺席的",
+  "punctual": "punct（点）+ -ual（形容词后缀）→ 卡准时间点的 → 准时的",
+  "postpone": "post-（后）+ pone（放）→ 放到后面 → 延迟",
+  "licence": "lic（被允许）+ -ence（名词后缀）→ 允许做某事的凭证 → 许可证"
+ }
+}
