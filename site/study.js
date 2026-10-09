@@ -471,23 +471,24 @@ const Study = (() => {
 
   /* ---------- 路由入口：#/、#/drill[/范围]、#/list/范围、#/week[/周一]、#/log[/课id] ---------- */
   function isStudy(h) { return h === "" || h === "#" || h === "#/" || /^#\/(drill|list|week|log)(\/|$)/.test(h); }
-  function render(h) {
+  /* y：回到这个页面时接着上次滚到的位置（app.js 按地址记），新打开为 0 */
+  async function render(h, y = 0) {
     const m = h.match(/^#\/(drill|list|week|log)(?:\/(.+))?$/);
     if (!m || m[1] !== "log") W = null;   // 离开记录页，没保存的勾选作废
-    if (!m) { D = null; renderHome(); scrollTo(0, 0); return; }
+    if (!m) { D = null; renderHome(); scrollBack(y, h); return; }
     const arg = m[2] && decodeURIComponent(m[2]);
-    if (m[1] === "log") { D = null; renderLog(arg); if (!arg) scrollTo(0, 0); return; }
-    if (m[1] === "drill") { if (!arg) { D = null; renderPicker(); } else if (!D || D.hash !== h) startDrill(arg); else showCard(); }
-    else if (m[1] === "list") { D = null; renderList(arg); }
-    else { D = null; renderWeek(arg); }
-    scrollTo(0, 0);
+    if (m[1] === "log") { D = null; renderLog(arg); if (!arg || y) scrollBack(y, h); return; }
+    if (m[1] === "drill") { if (!arg) { D = null; renderPicker(); } else { y = 0; if (!D || D.hash !== h) startDrill(arg); else showCard(); } }
+    else if (m[1] === "list") { D = null; await renderList(arg); }
+    else { D = null; await renderWeek(arg); }
+    scrollBack(y, h);   // 加载期间又去了别的页就不动
   }
   /* 别的设备同步过来新数据：首页、周总结重画；正在巩固的不打断 */
   function refresh() {
     const h = location.hash;
     if (/^#\/drill\/./.test(h)) return;
     if (/^#\/(list|log)/.test(h)) return;              // 浏览、记录页不重画，免得滚动位置和没保存的勾选丢掉
-    render(h);
+    render(h, scrollY);
   }
 
   /* ---------- 交互 ---------- */

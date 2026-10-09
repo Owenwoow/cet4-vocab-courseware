@@ -292,22 +292,35 @@ async function loadLesson(id) {
 /* ---------- 路由：#/ 首页、#/drill…、#/list/…、#/week…（study.js）；#/u07-l01、#/u07-l01/g2、#/u07-l01/w/margin、
    #/u07-l01/learn（旧地址，转到记录页）、#/settings ---------- */
 let prevHash = "#/";   // 设置页「返回」回到哪
+let curHash = location.hash;   // 当前显示的页面
+const viewY = new Map();       // 每个页面（按地址）离开时滚到哪，回来时接着看
+/* 滚回之前的位置：页面内容可能还没撑开（组件升级、异步加载），够不着就隔一会儿再试，最多约 1 秒 */
+function scrollBack(y, h = location.hash) {
+  let n = 0;
+  (function go() {
+    if (location.hash !== h) return;
+    scrollTo(0, y);
+    if (scrollY < y - 2 && ++n < 40) setTimeout(go, 25);
+  })();
+}
 async function route() {
   const ready = BOOK.parts.flatMap(p => p.units.flatMap(u => u.lessons)).filter(l => l.ready);
   if (!ready.length) { $("#groups").innerHTML = `<p class="empty">还没有生成任何课。</p>`; return; }
   const last = ready.some(l => l.id === store.get("last")) ? store.get("last") : ready[0].id;
   const h = location.hash, isSettings = h === "#/settings", isStudy = !isSettings && Study.isStudy(h);
-  if ((isSettings || isStudy) && !$("#lessonView").hidden && L) lessonScroll = {id: L.id, y: scrollY};   // 离开课文前记住读到哪
+  if (h !== curHash) viewY.set(curHash, scrollY);
+  curHash = h;
+  if ((isSettings || isStudy) && !$("#lessonView").hidden && L) lessonScroll = {id: L.id, h: prevHash, y: scrollY};   // 离开课文前记住读到哪
   if (!isSettings) prevHash = h || "#/";
   $("#lessonView").hidden = isSettings || isStudy; $("#fabs").hidden = isSettings || isStudy;
   $("#settingsView").hidden = !isSettings; $("#studyView").hidden = !isStudy;
   $("#homeBtn").classList.toggle("on", isStudy && !/^#\/(drill|list|week|log)/.test(h));
   $("#setBtn").classList.toggle("on", isSettings); $("#setBtn").title = $("#setBtn").ariaLabel = isSettings ? "返回" : "设置";
-  if (isStudy) { stopMarathon(); pop.style.display = "none"; Study.render(h); renderDrawer(); return; }
+  if (isStudy) { stopMarathon(); pop.style.display = "none"; Study.render(h, viewY.get(h) || 0); renderDrawer(); return; }
   if (isSettings) {
     stopMarathon(); pop.style.display = "none";
     if (!L) await loadLesson(last);   // 设置页试听要用到本课音频
-    renderSettings(); scrollTo(0, 0);
+    renderSettings(); scrollBack(viewY.get(h) || 0);
     $("#crumb").textContent = "设置"; document.title = "设置 · 四级词汇";
     return;
   }
@@ -319,9 +332,11 @@ async function route() {
   if (reuse) renderLesson();   // 从设置页返回时重画，标题和进度跟上
   const t = m && m[2];
   if (t === "learn") { location.replace("#/log/" + id); return; }
-  if (t && t[0] === "g") document.getElementById(t)?.scrollIntoView();
+  // 从设置 / 首页回来，回到离开时的位置；地址带词群、词的锚点，只有新点开（不是原来那个地址）才跳过去
+  const back = lessonScroll && lessonScroll.id === id && (!t || lessonScroll.h === h);
+  if (back) scrollBack(lessonScroll.y);
+  else if (t && t[0] === "g") document.getElementById(t)?.scrollIntoView();
   else if (t) gotoWord(decodeURIComponent(t.slice(2)));
-  else if (lessonScroll && lessonScroll.id === id) scrollTo(0, lessonScroll.y);   // 从设置页返回，回到原来的位置
   else restorePos(id);
   lessonScroll = null;
 }
