@@ -180,7 +180,7 @@ const Study = (() => {
     if (main) { e = main.e; grp = main.g; aud = B.aud; }
     else if (ext) { e = {word: c.w, prons: [{ipa: ext.x.ipa, senses: ext.x.senses}], freq: 0, extOf: ext.e}; grp = ext.g; aud = B.aud; }
     else e = {word: c.w, prons: [{ipa: c.p || "", senses: Vocab.senses(c.m)}], freq: 0, gloss: true};
-    return {...x, lid: c.bk ? c.bk[0] : c.k, e, grp, aud, src};
+    return {...x, lid: c.bk ? c.bk[0] : c.k, e, grp, aud, src, nb: true};   // nb：按生词显示（书上范围里的生词仍按词群显示）
   }
   /* 按书上的课 / 单元取词（包括还没记为学过的；没记过的只能看，不排复习） */
   async function bookItems(sc) {
@@ -389,15 +389,15 @@ const Study = (() => {
     const hide = !!store.get("listHide", false);
     let lastG = "";
     const rows = items.map(x => {
-      const gk = x.vocab ? "v:" + x.card.at : `${x.lid}:${x.grp.no}`;
-      const head = gk === lastG ? "" : `<div class="lgh">${x.vocab ? `生词 · ${md(x.card.at)} 加入` : `${lesTitle(x.lid)} · 词以群记 ${x.grp.no} ${esc(x.grp.title)}`}</div>`;
+      const gk = x.nb ? "v:" + x.card.at : `${x.lid}:${x.grp.no}`;
+      const head = gk === lastG ? "" : `<div class="lgh">${x.nb ? `生词 · ${md(x.card.at)} 加入` : `${lesTitle(x.lid)} · 词以群记 ${x.grp.no} ${esc(x.grp.title)}`}</div>`;
       lastG = gk;
-      const bk = x.vocab && x.card.bk, w = encodeURIComponent(x.word);
-      const from = x.vocab ? `<div class="lsrc">${x.src ? `遇见于 <a href="#/${x.src.lid}/w/${encodeURIComponent(x.src.entry)}">${lesTitle(x.src.lid)} ${esc(x.src.entry)}</a> 的例句` : ""}
+      const bk = x.nb && x.card.bk, w = encodeURIComponent(x.word);
+      const from = x.nb ? `<div class="lsrc">${x.src ? `遇见于 <a href="#/${x.src.lid}/w/${encodeURIComponent(x.src.entry)}">${lesTitle(x.src.lid)} ${esc(x.src.entry)}</a> 的例句` : ""}
         ${bk ? `${x.src ? " · " : ""}书中 <a href="#/${bk[0]}/w/${w}">${lesTitle(bk[0])} #${bk[1]}${bk[2] ? " 扩展词" : ""}</a>` : ""}
         ${vpage ? `<button class="vdel" data-vdel="${esc(x.word)}">移出</button>` : ""}</div>` : "";
       const ms = x.e.prons.flatMap(p => p.senses);
-      return `${head}<div class="lrow" data-w="${esc(x.word)}"><span class="lw" data-say="1">${esc(x.word)}</span><span class="ipa">${esc(ipaOf(x.e))}</span>${fl(x.vocab ? x.e.freq || 0 : x.freq)}
+      return `${head}<div class="lrow" data-w="${esc(x.word)}"><span class="lw" data-say="1">${esc(x.word)}</span><span class="ipa">${esc(ipaOf(x.e))}</span>${fl(x.nb ? x.e.freq || 0 : x.freq)}
         ${x.vocab && !vpage ? `<span class="vt">生词</span>` : ""}${x.card && x.card.l ? `<span class="lapse" title="忘过 ${x.card.l} 次">✗${x.card.l}</span>` : ""}
         <div class="lm">${ms.length ? ms.map(s => `<span class="pos">${esc(s.pos)}</span>${meanHTML(s.mean)}`).join("　") : "（没有现成释义，看例句）"}${x.e.gloss ? `<span class="src add">补充</span>` : ""}</div>${from}</div>`;
     }).join("");
@@ -451,9 +451,9 @@ const Study = (() => {
       <div class="dbar"><span>${esc(D.title)}</span><wa-progress-bar value="${Math.round(done / D.items.length * 100)}"></wa-progress-bar>
         <span>${done}/${D.items.length}</span><a href="#/" class="dx" title="结束">✕</a></div>
       <div class="dcard">
-        <div class="dmeta">${x.vocab ? vocabMeta(x) : `${lesTitle(x.lid)} · 词群 ${x.grp.no} ${esc(x.grp.title)}`}${retry ? ` · <b class="again">再来一次</b>` : ""}${c ? "" : " · 未记为学过"}</div>
+        <div class="dmeta">${x.nb ? vocabMeta(x) : `${lesTitle(x.lid)} · 词群 ${x.grp.no} ${esc(x.grp.title)}`}${retry ? ` · <b class="again">再来一次</b>` : ""}${c ? "" : " · 未记为学过"}</div>
         <div class="dword" data-say="1">${esc(x.word)}</div>
-        <div class="dipa"><span class="ipa">${esc(ipaOf(x.e))}</span> <button class="spk" data-say="1" title="读（R）">🔊</button> ${fl(x.vocab ? x.e.freq || 0 : x.freq)}</div>
+        <div class="dipa"><span class="ipa">${esc(ipaOf(x.e))}</span> <button class="spk" data-say="1" title="读（R）">🔊</button> ${fl(x.nb ? x.e.freq || 0 : x.freq)}</div>
         ${D.flipped ? `<div class="dback">${senseHTML(x.e)}${x.e.gloss ? `<div class="dnote">${x.e.prons[0].senses.length ? "" : "没有现成释义，看例句 · "}<span class="src add">补充</span> 例句逐词释义</div>` : ""}
           ${x.e.extOf ? `<div class="dnote">书上 #${x.e.extOf.no} ${esc(x.e.extOf.word)} 的扩展词</div>` : ""}
           ${x.e.tip ? `<div class="tip"><span class="tag ${esc(x.e.tip.type)}">${esc(x.e.tip.type)}</span>${esc(x.e.tip.text)}</div>` : ""}
