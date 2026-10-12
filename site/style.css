@@ -541,3 +541,7 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .lrow.lv4,.lrow.lv5{opacity:.5}
 .listv.fold .lrow.lv4,.listv.fold .lrow.lv5{display:none}
 .foldnote{font-size:13px;color:var(--sub)}
+.qverdict{text-align:center;margin-top:14px;font-size:15px;font-weight:600}
+.qverdict.ok{color:var(--ok)}.qverdict.bad{color:var(--pink)}
+.drill.past .dcard{border-style:dashed}
+.dmeta .pastk{color:var(--blue)}
