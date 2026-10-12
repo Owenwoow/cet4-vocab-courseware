@@ -3,18 +3,21 @@
   --accent:#c2410c;--accent-soft:#fdebe1;--blue:#1d6fd1;--blue-soft:#e6f0fc;--pink:#d6336c;--pink-soft:#fde8ef;
   --hl:#fde68a;--pop:#fff;--ok:#15803d;--ok-soft:#dcfce7;
   --t-lx:#15803d;--t-gc:#c2410c;--t-xy:#0e7490;--t-dz:#1d4ed8;
+  --lv0:var(--line2);--lv1:#d6336c;--lv2:#e07b1f;--lv3:#1d6fd1;--lv4:#15803d;--lv5:var(--sub);   /* 熟练度 0～5，已用 dataviz 校验 */
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#17181b;--card:#212226;--ink:#e8e6e1;--sub:#9a9ea5;--line:#34363b;--line2:#4a4d54;
   --accent:#fb923c;--accent-soft:#3a2518;--blue:#6aa8f0;--blue-soft:#1b2a3d;--pink:#f07aa0;--pink-soft:#3b1f29;
   --hl:#78591a;--pop:#2a2c31;--ok:#4ade80;--ok-soft:#173222;
   --t-lx:#4ade80;--t-gc:#fb923c;--t-xy:#38bdf8;--t-dz:#93b4ff;
+  --lv0:var(--line2);--lv1:#e85a8a;--lv2:#d27a22;--lv3:#4f8fe0;--lv4:#2eaa5e;--lv5:var(--sub);
 }}
 :root[data-theme="dark"]{
   --bg:#17181b;--card:#212226;--ink:#e8e6e1;--sub:#9a9ea5;--line:#34363b;--line2:#4a4d54;
   --accent:#fb923c;--accent-soft:#3a2518;--blue:#6aa8f0;--blue-soft:#1b2a3d;--pink:#f07aa0;--pink-soft:#3b1f29;
   --hl:#78591a;--pop:#2a2c31;--ok:#4ade80;--ok-soft:#173222;
   --t-lx:#4ade80;--t-gc:#fb923c;--t-xy:#38bdf8;--t-dz:#93b4ff;
+  --lv0:var(--line2);--lv1:#e85a8a;--lv2:#d27a22;--lv3:#4f8fe0;--lv4:#2eaa5e;--lv5:var(--sub);
 }
 *{box-sizing:border-box}
 html{scroll-padding-top:70px}
@@ -523,3 +526,18 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .quiz.right .dcard{border-color:var(--ok)}
 .quiz.wrong .dcard{border-color:var(--pink)}
 .quiz .dops .note{margin:0;text-align:center}
+
+/* ---------- 熟练度：首页分布条、词表颜色点、斩 ---------- */
+.lvbar{display:flex;gap:2px;height:14px;margin:4px 0 10px}
+.lvbar a{display:block;min-width:4px;border-radius:4px;transition:opacity .15s}
+.lvbar a:hover{opacity:.75}
+.lvlegend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;color:var(--sub)}
+.lvlegend a{color:var(--sub);text-decoration:none;display:inline-flex;align-items:center;gap:5px}
+.lvlegend a:hover{color:var(--ink)}
+.lvlegend b{color:var(--ink);font-weight:600}
+.lvdot{display:inline-block;width:9px;height:9px;border-radius:50%;flex:none;background:var(--c)}
+.lvdot.hollow{background:none;border:1.5px solid var(--lv0)}
+.lrow .lvdot{margin-right:6px;vertical-align:middle}
+.lrow.lv4,.lrow.lv5{opacity:.5}
+.listv.fold .lrow.lv4,.listv.fold .lrow.lv5{display:none}
+.foldnote{font-size:13px;color:var(--sub)}
