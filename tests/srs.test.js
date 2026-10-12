@@ -29,8 +29,8 @@ test("一天从凌晨 4 点开始算", () => {
   assert.equal(SRS.today(new Date(2026, 9, 6, 4, 0).getTime()), TUE);
 });
 
-test("周一学的：次日 → 本周六 → 下周一 → 第三周周日 → 之后每 3 周", () => {
-  assert.deepEqual(walk(MON, 5), [TUE, SAT, "2026-10-12", "2026-10-25", "2026-11-15", "2026-12-06"]);
+test("周一学的：次日 → 本周六 → 下周一 → 第三周周日 → 之后按熟练度（一路看词选义记得 = 3 级，14 天）", () => {
+  assert.deepEqual(walk(MON, 5), [TUE, SAT, "2026-10-12", "2026-10-25", "2026-11-08", "2026-11-22"]);
 });
 
 test("周三学的：次日 → 本周六 → 下周三 → 第三周周日", () => {
@@ -100,4 +100,139 @@ test("到期列表：拖得久的先来，同日火苗多的先来，再按课�
 test("请假顺延：学习日和到期日一起后移", () => {
   const c = SRS.shift({a: MON, s: 2, d: "2026-10-12", l: 0, r: "g", n: 2}, 3);
   assert.equal(c.a, THU); assert.equal(c.d, "2026-10-15"); assert.equal(c.s, 2);
+});
+
+/* ---------- 熟练度 / 题型 / 间隔 / 封顶 / 出题顺序 ---------- */
+const T = SRS.TYPE;
+const card = o => ({a: MON, s: 0, d: TUE, l: 0, r: "", n: 0, h: "", ...o});
+
+test("熟练度：按表从上往下命中", () => {
+  assert.equal(SRS.level(card({})), 0);                                       // 新学
+  assert.equal(SRS.level(card({h: "f"})), 1);                                // 学新词循环里错多了：先标生疏
+  assert.equal(SRS.level(card({n: 3, h: "ggf"})), 1);                        // 最近一次忘了
+  assert.equal(SRS.level(card({n: 5, h: "gfgfg", l: 2})), 1);                // 忘过 2 次、连对不到 2
+  assert.equal(SRS.level(card({n: 5, h: "gfgfgg", l: 2, s: 2})), 2);         // 忘过 2 次但已连对 2
+  assert.equal(SRS.level(card({n: 2, h: "gg", s: 2})), 2);
+  assert.equal(SRS.level(card({n: 3, h: "gg", s: 3})), 3);
+  assert.equal(SRS.level(card({n: 4, h: "ggg", s: 4, q: 1})), 3);            // 没过回忆型题，到不了 4
+  assert.equal(SRS.level(card({n: 4, h: "ggg", s: 4, q: 2})), 4);
+  assert.equal(SRS.level(card({n: 5, h: "gggg", s: 4, q: 2})), 4);           // 没拼对过，到不了 5
+  assert.equal(SRS.level(card({n: 5, h: "gggg", s: 4, q: 3})), 5);
+  assert.equal(SRS.level(card({n: 5, h: "gggm", s: 4, q: 3})), 2);           // 模糊打断连对
+  assert.equal(SRS.level(card({z: 1, h: "f"})), 5);                          // 斩
+});
+
+test("旧卡没有 h：用最近一次评分顶上", () => {
+  assert.equal(SRS.level({a: MON, s: 1, d: SAT, l: 0, r: "g", n: 1}), 2);
+  assert.equal(SRS.level({a: MON, s: 0, d: TUE, l: 1, r: "f", n: 1}), 1);
+  assert.equal(SRS.level({a: MON, s: 0, d: TUE, l: 0, r: "", n: 0}), 0);
+});
+
+test("出题：按熟练度，每次最多比答对过的升一级；5 级快速抽查", () => {
+  assert.equal(SRS.pickType(card({})), T.MEAN);
+  assert.equal(SRS.pickType(card({n: 1, h: "g", s: 1})), T.LISTEN);         // 2 级按复习次数轮换
+  assert.equal(SRS.pickType(card({n: 2, h: "gg", s: 2, q: 1})), T.MEAN);
+  assert.equal(SRS.pickType(card({n: 3, h: "gg", s: 3, q: 0})), T.LISTEN);   // 3 级该出例句，但只答对过看词选义
+  assert.equal(SRS.pickType(card({n: 3, h: "gg", s: 3, q: 1})), T.CONTEXT);
+  assert.equal(SRS.pickType(card({n: 4, h: "ggg", s: 4, q: 2})), T.SPELL);
+  assert.equal(SRS.pickType(card({n: 5, h: "gggg", s: 4, q: 3})), T.QUICK);
+});
+
+test("判分：选择题 5 秒内对 = 记得，慢 = 模糊；拼写错一个字母 = 模糊", () => {
+  assert.equal(SRS.gradeChoice(true, 2000), "g");
+  assert.equal(SRS.gradeChoice(true, 7000), "m");
+  assert.equal(SRS.gradeChoice(false, 1000), "f");
+  assert.equal(SRS.gradeSpell(" Abandon ", "abandon"), "g");
+  assert.equal(SRS.gradeSpell("abandom", "abandon"), "m");
+  assert.equal(SRS.gradeSpell("abndon", "abandon"), "m");
+  assert.equal(SRS.gradeSpell("abodon", "abandon"), "f");
+});
+
+test("打分记录：h 只留 6 次，第一遍答对才升 q，提前复习不记，忘了清掉斩", () => {
+  let c = card({h: "gggggg", n: 6, s: 2, d: TUE});
+  c = SRS.rate(c, "g", TUE, {type: T.CONTEXT});
+  assert.equal(c.h, "gggggg"); assert.equal(c.q, 2);
+  const m = SRS.rate(card({d: TUE}), "m", TUE, {type: T.SPELL});
+  assert.equal(m.q, 0); assert.equal(m.h, "m");
+  const early = SRS.rate(card({d: SAT, h: "g", n: 1, s: 1}), "g", TUE, {type: T.LISTEN});
+  assert.equal(early.h, "g"); assert.equal(early.q || 0, 0); assert.equal(early.d, SAT); assert.equal(early.n, 2);
+  const f = SRS.rate(card({z: 1, s: 5, d: TUE, h: "gggg", n: 6}), "f", TUE);
+  assert.equal(f.z, 0); assert.equal(f.s, 0); assert.equal(f.h, "ggggf"); assert.equal(SRS.level(f), 1);
+});
+
+test("s≥4 间隔按熟练度；模糊取一半（至少 2 天）", () => {
+  const t = "2026-10-20";
+  const base = {a: "2026-09-01", s: 3, d: t, n: 4, l: 0};
+  assert.equal(SRS.rate({...base, h: "gf", l: 1}, "g", t).d, "2026-10-27");               // 2 级 7 天
+  assert.equal(SRS.rate({...base, h: "ggg", q: 1}, "g", t).d, "2026-11-03");               // 3 级 14 天
+  assert.equal(SRS.rate({...base, h: "ggg", q: 2}, "g", t).d, "2026-11-10");               // 4 级 21 天
+  assert.equal(SRS.rate({...base, h: "ggg", q: 3}, "g", t).d, "2026-11-19");               // 5 级 30 天
+  assert.equal(SRS.rate({...base, s: 4, h: "ggg", q: 2}, "m", t).d, "2026-10-23");         // 模糊 → 2 级 7 天的一半 = 3
+  assert.equal(SRS.rate({...base, s: 2, h: "ggg"}, "m", t).d, "2026-10-22");               // s≤3 照旧 2 天
+});
+
+test("考前封顶：窗口前复习、到期又晚于 12-09 的，分散到 12-05～12-09；窗口里复习的不管", () => {
+  const days = new Set();
+  for (let i = 0; i < 200; i++) {
+    const d = SRS.examCap("2026-12-20", "2026-11-20", "w" + i);
+    assert.ok(d >= "2026-12-05" && d <= "2026-12-09", d);
+    days.add(d);
+  }
+  assert.equal(days.size, 5);
+  assert.equal(SRS.examCap("2026-12-20", "2026-11-20", "x"), SRS.examCap("2026-12-20", "2026-11-20", "x"));   // 同一个词每次一样
+  assert.equal(SRS.examCap("2026-12-08", "2026-11-20", "x"), "2026-12-08");   // 没超不动
+  assert.equal(SRS.examCap("2027-01-05", "2026-12-06", "x"), "2027-01-05");   // 窗口里刚复习过
+  const c = SRS.rate({a: "2026-09-01", s: 4, d: "2026-11-25", n: 5, l: 0, h: "ggg", q: 2}, "g", "2026-11-25", {key: "abandon"});
+  assert.ok(c.d >= "2026-12-05" && c.d <= "2026-12-09", c.d);
+});
+
+test("斩：直接 5 级，30 天后（或考前窗口）抽查", () => {
+  const c = SRS.chop(card({n: 1, h: "g", s: 1}), "2026-10-13", "abandon");
+  assert.equal(SRS.level(c), 5); assert.equal(c.s, 4); assert.equal(c.d, "2026-11-12");
+  assert.equal(SRS.pickType(c), T.QUICK);
+  const late = SRS.chop(card({}), "2026-11-20", "abandon");
+  assert.ok(late.d >= "2026-12-05" && late.d <= "2026-12-09");
+});
+
+test("乱序：是原列表的重排，同组尽量不相邻，同一个 seed 结果相同", () => {
+  const list = [];
+  for (let i = 0; i < 12; i++) list.push({id: i, g: i < 6 ? "A" : i < 9 ? "B" : i < 11 ? "C" : "D"});
+  for (const seed of ["s1", "s2", "s3", "s4", "s5"]) {
+    const out = SRS.shuffleSpread(list, x => x.g, seed);
+    assert.deepEqual(out.map(x => x.id).sort((a, b) => a - b), list.map(x => x.id));
+    for (let i = 1; i < out.length; i++) assert.notEqual(out[i].g, out[i - 1].g, out.map(x => x.g).join(""));
+    assert.deepEqual(SRS.shuffleSpread(list, x => x.g, seed), out);
+  }
+  assert.equal(SRS.shuffleSpread([{g: "A"}, {g: "A"}, {g: "A"}], x => x.g).length, 3);
+});
+
+test("本轮顺序：拖过的先，熟练度低的先，复习不到 3 次按课本顺序，3 次以上乱序", () => {
+  const it = (word, order, c) => ({word, order, card: card({k: "u01-l01", d: WED, ...c})});
+  const items = [
+    it("late", 9, {d: MON, n: 1, h: "g", s: 1}),
+    it("red", 8, {n: 2, h: "gf"}),
+    it("b2", 2, {n: 1, h: "g", s: 1}),
+    it("b1", 1, {n: 1, h: "g", s: 1}),
+    it("x1", 3, {n: 4, h: "ggg", s: 2, g: 1}),
+    it("x2", 4, {n: 4, h: "ggg", s: 2, g: 1}),
+    it("x3", 5, {n: 4, h: "ggg", s: 2, g: 2}),
+    it("future", 0, {d: FRI, n: 1}),
+  ];
+  const q = SRS.queue(items, WED).map(x => x.word);
+  assert.equal(q.length, 7);
+  assert.deepEqual(q.slice(0, 4), ["late", "red", "b1", "b2"]);
+  assert.deepEqual(q.slice(4).sort(), ["x1", "x2", "x3"]);
+  assert.equal(q[5], "x3");                                                   // 同词群的 x1、x2 被隔开
+});
+
+test("方案文档里的 abandon：一路走到牢记", () => {
+  let c = SRS.newCard("2026-10-12");
+  const step = (r, t, type) => { assert.equal(c.d, t); c = SRS.rate(c, r, t, {type, key: "abandon"}); return [SRS.level(c), c.d]; };
+  assert.deepEqual(step("g", "2026-10-13", T.MEAN), [2, "2026-10-17"]);
+  assert.deepEqual(step("g", "2026-10-17", T.LISTEN), [2, "2026-10-19"]);
+  assert.deepEqual(step("m", "2026-10-19", T.MEAN), [2, "2026-10-21"]);
+  assert.deepEqual(step("g", "2026-10-21", T.MEAN), [2, "2026-11-01"]);
+  assert.deepEqual(step("g", "2026-11-01", T.LISTEN), [3, "2026-11-15"]);
+  assert.deepEqual(step("g", "2026-11-15", T.CONTEXT), [4, "2026-12-06"]);
+  assert.deepEqual(step("g", "2026-12-06", T.SPELL), [5, "2027-01-05"]);
 });
