@@ -225,6 +225,25 @@ test("本轮顺序：拖过的先，熟练度低的先，复习不到 3 次按�
   assert.equal(q[5], "x3");                                                   // 同词群的 x1、x2 被隔开
 });
 
+test("形近：编辑距离小或前 4 个字母相同", () => {
+  assert.ok(SRS.similar("adapt", "adopt"));
+  assert.ok(SRS.similar("Affect", "effect"));
+  assert.ok(SRS.similar("conserve", "conservation"));
+  assert.ok(!SRS.similar("space", "space"));
+  assert.ok(!SRS.similar("union", "moon"));
+});
+
+test("形近词相邻：不同词群的挪到一起，同词群的不动", () => {
+  const it = (word, g) => ({word, card: {k: "u01-l01", g}});
+  const list = [it("adapt", 1), it("moon", 2), it("space", 3), it("adopt", 4), it("adapter", 1)];
+  assert.deepEqual(SRS.pairSimilar(list, x => x.card.g).map(x => x.word), ["adapt", "adopt", "moon", "space", "adapter"]);
+  const t = WED, card2 = (word, g) => ({word, order: 0, card: card({k: "u01-l01", g, d: WED, n: 4, h: "ggg", s: 2})});
+  const q = SRS.queue([card2("adapt", 1), card2("moon", 2), card2("space", 3), card2("adopt", 4), card2("union", 5), card2("unite", 5)], t).map(x => x.word);
+  const i = q.indexOf("adapt"), j = q.indexOf("adopt");
+  assert.equal(Math.abs(i - j), 1, q.join(","));
+  assert.notEqual(Math.abs(q.indexOf("union") - q.indexOf("unite")), 1, q.join(","));   // 同词群照旧隔开
+});
+
 test("方案文档里的 abandon：一路走到牢记", () => {
   let c = SRS.newCard("2026-10-12");
   const step = (r, t, type) => { assert.equal(c.d, t); c = SRS.rate(c, r, t, {type, key: "abandon"}); return [SRS.level(c), c.d]; };

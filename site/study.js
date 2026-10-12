@@ -121,7 +121,7 @@ const Study = (() => {
   const dueAll = () => SRS.dueList(liveCards(), T());
 
   /* 范围：due 今天到期（一轮最多 ROUND 个，按熟练度排）/ learn 今天学的、学新词还没过关的 / today / yesterday / week 本周 / lastweek / weeks 本周+上周 / hard / all / vocab 生词本 /
-     w:<周一> 那一周 / w2:<周一> 那一周+前一周 / uNN 某单元 / uNN-lNN 某课 */
+     w:<周一> 那一周 / w2:<周一> 那一周+前一周 / lv:<0～5> 某个熟练度 / uNN 某单元 / uNN-lNN 某课 */
   function scopeInfo(sc) {
     const t = T(), mon = SRS.monday(t);
     let m;
@@ -135,6 +135,7 @@ const Study = (() => {
     if (sc === "hard") return {title: "难词本", items: () => liveCards().filter(x => SRS.isHard(x.card))};
     if (sc === "all") return {title: "全部已学", items: () => liveCards()};
     if (sc === "vocab") return {title: "生词本", items: () => vocabCards()};
+    if ((m = sc.match(/^lv:([0-5])$/))) return {title: "熟练度 · " + LV_NAME[+m[1]], items: () => liveCards().filter(x => SRS.level(x.card) === +m[1])};
     if ((m = sc.match(/^w(2?):(\d{4}-\d\d-\d\d)$/))) {
       const a = m[1] ? SRS.add(m[2], -7) : m[2];
       return {title: `${md(a)}–${md(SRS.add(m[2], 6))}${m[1] ? "（两周）" : ""}`, items: () => inLearnRange(a, SRS.add(m[2], 6))};
@@ -239,6 +240,8 @@ const Study = (() => {
   /* 生词的来历：哪天加的、书上有没有 */
   const vocabMeta = x => `生词 · ${md(x.card.at)} 加入${x.card.bk ? ` · 书中 ${lesTitle(x.card.bk[0])} #${x.card.bk[1]}${x.card.bk[2] ? " 的扩展词" : ""}` : ""}`;
   const fl = n => `<span class="fl" title="考频 ${n}/3">${"🔥".repeat(n)}</span>`;
+  const LV_NAME = ["新学", "生疏", "认识", "熟悉", "掌握", "牢记"];
+  const lvDot = n => `<span class="lvdot${n ? "" : " hollow"}" style="--c:var(--lv${n})" title="熟练度：${LV_NAME[n]}"></span>`;
   const btn = (href, text, attrs = 'appearance="filled"') => `<wa-button size="small" href="${href}" ${attrs}>${text}</wa-button>`;   // 默认浅底，主按钮传 variant="brand"
   const loadFail = err => { view().innerHTML = `<p class="empty">加载失败：${esc(err.message)}<br>检查网络后 <a href="javascript:location.reload()">重新加载</a></p>`; };
   function setHead(title) { $("#crumb").textContent = title; document.title = title + " · 四级词汇"; }
@@ -336,7 +339,20 @@ const Study = (() => {
         return `<a class="unit" href="${first ? "#/" + first.id : "#/"}"><wa-progress-ring value="${pct}" style="--size:56px;--track-width:5px;--indicator-width:5px">${n || ""}</wa-progress-ring>
           <span>Unit ${u.no}</span><small>${u.words} 词</small></a>`; }).join("")}</div></wa-card>`;
   }
-  const MODULES = [modHero, modToday, modBacklog, modWeek, modLinks, modUnits];
+  /* 熟练度分布：一根分段条 + 图例（带数量），点哪一段就看那一档的词 */
+  function modMastery() {
+    const cards = liveCards();
+    if (!cards.length) return "";
+    const n = [0, 0, 0, 0, 0, 0];
+    for (const x of cards) n[SRS.level(x.card)]++;
+    const order = [1, 2, 3, 4, 5, 0];                   // 生疏在最前，新学放最后
+    const seg = i => n[i] ? `<a href="#/list/lv:${i}" style="flex:${n[i]};${i ? `background:var(--lv${i})` : "box-shadow:inset 0 0 0 1.5px var(--lv0)"}" title="${LV_NAME[i]} ${n[i]} 个"></a>` : "";
+    return `<wa-card class="mod"><div slot="header" class="mh"><b>熟练度</b><span class="sub">共 ${cards.length} 词 · 掌握以上 ${n[4] + n[5]} 个</span></div>
+      <div class="lvbar">${order.map(seg).join("")}</div>
+      <div class="lvlegend">${order.map(i => `<a href="#/list/lv:${i}">${lvDot(i)}${LV_NAME[i]} <b>${n[i]}</b></a>`).join("")}</div>
+      <p class="note">按每个词第一遍作答算：生疏 = 最近答错；掌握要能看中文想出英文；牢记要拼得出或手动「斩」过。点一档看具体的词</p></wa-card>`;
+  }
+  const MODULES = [modHero, modToday, modBacklog, modMastery, modWeek, modLinks, modUnits];
 
   function renderHome() {
     setHead("首页");
@@ -394,7 +410,9 @@ const Study = (() => {
     let items;
     const vpage = sc === "vocab";   // 生词本页：新加的在前，带「移出」
     try { items = sortBy(await itemsOf(sc), "course"); if (vpage) items.reverse(); } catch (err) { loadFail(err); return; }
-    const hide = !!store.get("listHide", false);
+    const hide = !!store.get("listHide", false), fold = !!store.get("listFold", false);
+    const lvOf = x => (x.card ? SRS.level(x.card) : -1);
+    const nFold = items.filter(x => lvOf(x) >= 4).length;
     let lastG = "";
     const rows = items.map(x => {
       const gk = x.nb ? "v:" + x.card.at : `${x.lid}:${x.grp.no}`;
@@ -405,15 +423,18 @@ const Study = (() => {
         ${bk ? `${x.src ? " · " : ""}书中 <a href="#/${bk[0]}/w/${w}">${lesTitle(bk[0])} #${bk[1]}${bk[2] ? " 扩展词" : ""}</a>` : ""}
         ${vpage ? `<button class="vdel" data-vdel="${esc(x.word)}">移出</button>` : ""}</div>` : "";
       const ms = x.e.prons.flatMap(p => p.senses);
-      return `${head}<div class="lrow" data-w="${esc(x.word)}"><span class="lw" data-say="1">${esc(x.word)}</span><span class="ipa">${esc(ipaOf(x.e))}</span>${fl(x.nb ? x.e.freq || 0 : x.freq)}
+      const lv = lvOf(x);
+      return `${head}<div class="lrow${lv >= 0 ? " lv" + lv : ""}" data-w="${esc(x.word)}">${lv >= 0 ? lvDot(lv) : ""}<span class="lw" data-say="1">${esc(x.word)}</span><span class="ipa">${esc(ipaOf(x.e))}</span>${fl(x.nb ? x.e.freq || 0 : x.freq)}
         ${x.vocab && !vpage ? `<span class="vt">生词</span>` : ""}${x.card && x.card.l ? `<span class="lapse" title="忘过 ${x.card.l} 次">✗${x.card.l}</span>` : ""}
         <div class="lm">${ms.length ? ms.map(s => `<span class="pos">${esc(s.pos)}</span>${meanHTML(s.mean)}`).join("　") : "（没有现成释义，看例句）"}${x.e.gloss ? `<span class="src add">补充</span>` : ""}</div>${from}</div>`;
     }).join("");
-    view().innerHTML = `<div class="listv${hide ? " hide" : ""}">
+    view().innerHTML = `<div class="listv${hide ? " hide" : ""}${fold ? " fold" : ""}">
       <div class="vh"><h1>${esc(info.title)} <small>${items.length} 词</small></h1>
         <div class="ops"><wa-button size="small" appearance="filled" id="listHide">${hide ? "显示释义" : "遮住释义"}</wa-button>
+        ${nFold ? `<wa-button size="small" appearance="filled" id="listFold">${fold ? "展开已掌握" : "折叠已掌握"}</wa-button>` : ""}
         ${items.length ? btn(`#/drill/${encodeURIComponent(sc)}`, "巩固模式过一遍", 'variant="brand"') : ""}</div></div>
       ${hide ? `<p class="note">点单词读音，点释义的位置显示释义</p>` : `<p class="note">点单词读音</p>`}
+      ${fold && nFold ? `<p class="foldnote">已折叠 ${nFold} 个掌握 / 牢记的词</p>` : ""}
       ${rows || `<p class="empty">这里还没有词。${sc === "today" ? "在「学习记录」里勾上今天学的词群，或者在例句里点生词加进生词本。" : vpage ? "读例句时点不认识的词，在弹出的释义里点「＋ 生词本」。" : ""}</p>`}</div>`;
     view()._items = items;
   }
@@ -452,12 +473,6 @@ const Study = (() => {
   const sensesOf = e => e.prons.flatMap(p => p.senses);
   const meanText = e => sensesOf(e).slice(0, 3).map(s => `${s.pos} ${plainMean(s.mean)}`).join("；");
   const mainPos = e => (sensesOf(e)[0] || {}).pos || "";
-  /* 形近：编辑距离很小，或者前 4 个字母相同（较长的词） */
-  function similar(a, b) {
-    a = a.toLowerCase(); b = b.toLowerCase();
-    if (a === b) return false;
-    return SRS.editDist(a, b) <= Math.max(1, Math.floor(Math.min(a.length, b.length) / 4)) || (a.length >= 5 && b.length >= 5 && a.slice(0, 4) === b.slice(0, 4));
-  }
   /* 干扰项的候选：这一轮涉及的课里所有书上词条 + 这一轮的词 */
   async function buildPool(items) {
     const pool = new Map();
@@ -471,7 +486,7 @@ const Study = (() => {
   function distractors(x) {
     const me = meanText(x.e), pos = mainPos(x.e), seen = new Set([me]), out = [];
     const cands = D.pool.filter(e => e.word.toLowerCase() !== x.word.toLowerCase())
-      .map(e => ({e, s: (similar(x.word, e.word) ? 3 : 0) + (mainPos(e) === pos ? 2 : 0) + Math.random() * 1.5}))
+      .map(e => ({e, s: (SRS.similar(x.word, e.word) ? 3 : 0) + (mainPos(e) === pos ? 2 : 0) + Math.random() * 1.5}))
       .sort((a, b) => b.s - a.s);
     for (const {e} of cands) { const m = meanText(e); if (seen.has(m)) continue; seen.add(m); out.push(e); if (out.length === 3) break; }
     return out;
@@ -565,8 +580,8 @@ const Study = (() => {
       view().innerHTML = `<div class="drill${q.flipped ? " flipped" : ""}">${bar}<div class="dcard">${meta}${wordHead(x)}${q.flipped ? backHTML(x) : ""}</div>
         <div class="dops">${q.flipped
           ? `<wa-button variant="danger" data-rate="f">忘了 <kbd>1</kbd></wa-button><wa-button variant="warning" data-rate="m">模糊 <kbd>2</kbd></wa-button>
-             <wa-button variant="success" data-rate="g">记得 <kbd>3</kbd></wa-button>${D.learn ? "" : `<wa-button appearance="outlined" data-rate="k" title="标为已会，以后不再出现">已会 <kbd>4</kbd></wa-button>`}`
-          : `<wa-button variant="brand" class="flip" data-flip="1">想好了，翻开看 <kbd>空格</kbd></wa-button>`}</div></div>`;
+             <wa-button variant="success" data-rate="g">记得 <kbd>3</kbd></wa-button>${D.learn ? "" : `<wa-button appearance="outlined" data-rate="k" title="标为已会，以后不再出现">已会 <kbd>4</kbd></wa-button>`}${chopBtn(x)}`
+          : `<wa-button variant="brand" class="flip" data-flip="1">想好了，翻开看 <kbd>空格</kbd></wa-button>${chopBtn(x)}`}</div></div>`;
       if (!q.flipped && S.autoSay) sayWord(x);
       return;
     }
@@ -584,7 +599,8 @@ const Study = (() => {
       ? (q.auto ? `<p class="note">${q.r === "m" ? "答对了，但想得有点久 · " : "✓ "}点一下或按空格继续</p>` : `<wa-button variant="brand" data-next="1">继续 <kbd>空格</kbd></wa-button>`)
       : q.kind === "spell" ? `<wa-button appearance="outlined" data-opt="-1">不会 <kbd>Esc</kbd></wa-button><wa-button variant="brand" data-spell="1">提交 <kbd>Enter</kbd></wa-button>`
       : `<wa-button appearance="outlined" data-opt="-1">不认识 <kbd>0</kbd></wa-button>`;
-    view().innerHTML = `<div class="drill quiz${done ? (ok ? " right" : " wrong") : ""}">${bar}<div class="dcard">${meta}${body}${opts}${done && !q.auto ? backHTML(x) : ""}</div><div class="dops">${ops}</div></div>`;
+    const ops2 = done ? ops : ops + chopBtn(x);
+    view().innerHTML = `<div class="drill quiz${done ? (ok ? " right" : " wrong") : ""}">${bar}<div class="dcard">${meta}${body}${opts}${done && !q.auto ? backHTML(x) : ""}</div><div class="dops">${ops2}</div></div>`;
     if (!done) {
       q.t0 = Date.now();
       if (q.kind === "listen" || q.kind === "spell" || (q.kind === "mean" && S.autoSay)) sayWord(x);
@@ -604,6 +620,21 @@ const Study = (() => {
     showCard();
     if (q.r !== "f" && q.kind !== "mean") sayWord(x);
     if (q.auto) D.timer = setTimeout(next, q.r === "m" ? 1400 : 900);
+  }
+  /* 斩：太简单了，直接升到牢记，30 天后（或考前窗口）抽查一次；算本轮过关，不计入复习次数 */
+  const chopBtn = x => (x.card && !x.card.z ? `<wa-button appearance="outlined" data-chop="1" title="太简单，直接标为牢记，一个月后抽查">斩 <kbd>S</kbd></wa-button>` : "");
+  function chopCur() {
+    const q = D.q, x = q && q.x;
+    if (!x || !x.card || (q.kind !== "flip" && q.state !== "ask")) return;
+    const key = cardKey(x), c = Sync.get(key, 0); if (!c) return;
+    const t = T(), u = SRS.chop(c, t, x.word, S.examDate);
+    Sync.set(key, D.learn ? {...u, p: t} : u); x.card = Sync.get(key);
+    clearTimeout(D.timer);
+    D.res.z = (D.res.z || 0) + 1; D.passed++; (D.chopped = D.chopped || new Set()).add(x.word);
+    D.queue = D.queue.filter(y => y.word !== x.word);
+    if (D.learn && D.pending.length) D.queue.push(D.pending.shift());
+    toast(`已斩 ${x.word}：${md(x.card.d)} 抽查`);
+    next();
   }
   function rateFlip(r) {
     const q = D.q, x = q.x;
@@ -653,7 +684,7 @@ const Study = (() => {
     if (D.learn) {
       const missed = D.items.filter(x => (D.st.get(x.word) || {}).err);
       view().innerHTML = `<div class="drill end"><h1>今天的新词全部过关 🎉</h1>
-        <div class="tally"><span>过关 <b>${D.passed}</b></span><span class="g">一次就过 <b>${D.passed - missed.length}</b></span><span class="f">错过才过 <b>${missed.length}</b></span></div>
+        <div class="tally"><span>过关 <b>${D.passed}</b></span><span class="g">一次就过 <b>${D.items.filter(x => !(D.st.get(x.word) || {}).err && !(D.chopped && D.chopped.has(x.word))).length}</b></span><span class="f">错过才过 <b>${missed.length}</b></span>${D.res.z ? `<span>斩 <b>${D.res.z}</b></span>` : ""}</div>
         ${missed.length ? `<p class="note">错过的：${missed.map(x => esc(x.word)).join("、")}${missed.some(x => D.st.get(x.word).err >= 2) ? "（错 2 次以上的明天早上标红、优先出）" : ""}</p>` : ""}
         <p class="note">明天早上照常复习这些词。</p>
         <div class="ops">${btn("#/", "回首页", 'variant="brand"')} ${btn("#/list/today", "浏览今天的词")}</div></div>`;
@@ -662,7 +693,7 @@ const Study = (() => {
     const again = D.items.filter(x => ["f", "m"].includes(D.rated.get(x.word)));
     const more = D.sc === "due" ? Math.min(dueAll().length, capLeft()) : 0;
     view().innerHTML = `<div class="drill end"><h1>这一轮结束 🎉</h1>
-      <div class="tally"><span class="g">记得 <b>${g}</b></span><span class="m">模糊 <b>${m}</b></span><span class="f">忘了 <b>${f}</b></span>${k ? `<span>已会 <b>${k}</b></span>` : ""}</div>
+      <div class="tally"><span class="g">记得 <b>${g}</b></span><span class="m">模糊 <b>${m}</b></span><span class="f">忘了 <b>${f}</b></span>${k ? `<span>已会 <b>${k}</b></span>` : ""}${D.res.z ? `<span>斩 <b>${D.res.z}</b></span>` : ""}</div>
       <p class="note">${D.items.some(x => x.card) ? "成绩按每个词第一遍算：忘了的已经当场滚到答对，明天早上还会再出现；模糊的过两天再来。" : ""}${D.items.some(x => !x.card) ? "这一轮有还没记为学过的词，它们的评分不排复习；学了以后在「学习记录」里勾上。" : ""}</p>
       <div class="ops">${more ? `<wa-button variant="brand" id="nextRound">再来一轮（还有 ${more} 个到期）</wa-button>` : ""}
         ${again.length ? `<wa-button ${more ? 'appearance="filled"' : 'variant="brand"'} id="redo">再过一遍忘了 / 模糊的（${again.length}）</wa-button>` : ""}
@@ -740,6 +771,7 @@ const Study = (() => {
     }
     if (e.target.closest && e.target.closest("input,select,textarea")) return;
     if (e.key === "r" || e.key === "R") { sayWord(x); return; }
+    if (e.key === "s" || e.key === "S") { chopCur(); return; }
     if (q.kind === "flip") {
       if (e.key === " " || e.key === "Enter") { e.preventDefault(); if (!q.flipped) { q.flipped = true; showCard(); } return; }
       if (q.flipped && "1234".includes(e.key) && !(D.learn && e.key === "4")) rateFlip({1: "f", 2: "m", 3: "g", 4: "k"}[e.key]);
@@ -761,6 +793,7 @@ const Study = (() => {
       const s = t.closest("[data-sent]"); if (s) { const v = s.dataset.sent; saySent(x, /slow/.test(v), v.startsWith("src")); return; }
       if (t.closest("[data-say]")) { sayWord(x); return; }
       const r = t.closest("[data-rate]"); if (r) { rateFlip(r.dataset.rate); return; }
+      if (t.closest("[data-chop]")) { chopCur(); return; }
       const op = t.closest("[data-opt]"); if (op && q.state === "ask") { answer(+op.dataset.opt, ""); return; }
       if (t.closest("[data-spell]")) { answer(0, ($("#spell") || {}).value); return; }
       if (t.closest("[data-next]") || (q.state === "done" && q.auto && t.closest(".drill"))) { next(); return; }
@@ -780,6 +813,7 @@ const Study = (() => {
     const o = t.closest("[data-order]"); if (o) { setS("drillOrder", o.dataset.order); renderPicker(); return; }
     const dm = t.closest("[data-dmode]"); if (dm) { setS("drillMode", dm.dataset.dmode); renderPicker(); return; }
     if (t.closest("#listHide")) { store.set("listHide", !store.get("listHide", false)); renderList(decodeURIComponent(location.hash.split("/")[2])); return; }
+    if (t.closest("#listFold")) { store.set("listFold", !store.get("listFold", false)); renderList(decodeURIComponent(location.hash.split("/")[2])); return; }
     const vd = t.closest("[data-vdel]");
     if (vd) {
       const w = vd.dataset.vdel;
