@@ -497,3 +497,29 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
   .pkbody{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
   .pkfoot{padding-bottom:calc(6px + env(safe-area-inset-bottom))}
 }
+
+/* ---------- 智能出题：四选一、听音、例句填空、拼写 ---------- */
+.quiz .dcard{cursor:default}
+.dmeta .qk{color:var(--accent);font-weight:600}
+.qopts{display:grid;gap:8px;margin-top:20px}
+.qopt{display:flex;gap:10px;align-items:baseline;text-align:left;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);font:inherit;font-size:15px;line-height:1.5;cursor:pointer}
+.qopt:hover:not(:disabled){border-color:var(--accent)}
+.qopt:disabled{cursor:default;opacity:.55}
+.qopt kbd{font:inherit;font-size:11px;color:var(--sub);min-width:1em}
+.qopt.ok{opacity:1;border-color:var(--ok);background:var(--ok-soft)}
+.qopt.bad{opacity:1;border-color:var(--pink);background:var(--pink-soft)}
+.qmean{font-size:20px;text-align:center;margin:26px 0 8px;line-height:1.6}
+.qsent{font-size:18px;line-height:1.8;margin:22px 0 8px}
+.qsent .blank{display:inline-block;min-width:3.5em;border-bottom:2px solid var(--accent);color:var(--accent);text-align:center}
+.qhint{text-align:center}
+.bigspk{display:block;margin:30px auto 6px;font-size:40px;background:none;border:2px solid var(--line);border-radius:50%;width:96px;height:96px;cursor:pointer}
+.bigspk:hover{border-color:var(--accent)}
+.quiz .qmean + .spk{display:block;margin:0 auto}
+.spellbox{display:flex;justify-content:center;margin-top:16px}
+.spellbox input{font:inherit;font-size:24px;text-align:center;letter-spacing:1px;padding:8px 12px;border:1px solid var(--line2);border-radius:10px;width:min(340px,100%);background:var(--bg);color:var(--ink)}
+.spellbox input:focus{outline:2px solid var(--accent);border-color:transparent}
+.spres{text-align:center;margin-top:10px;font-size:15px}
+.spres.ok{color:var(--ok)}.spres.bad{color:var(--pink)}
+.quiz.right .dcard{border-color:var(--ok)}
+.quiz.wrong .dcard{border-color:var(--pink)}
+.quiz .dops .note{margin:0;text-align:center}

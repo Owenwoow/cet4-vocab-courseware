@@ -100,7 +100,7 @@ const SRS = (() => {
   const isDue = (c, t) => c.d <= t;
 
   /* 打分：g 记得 / m 模糊 / f 忘了。返回新卡，不改原卡；t 记下最近一次复习的日期。
-     opt.type：这次的题型（第一遍答对时更新 q）；opt.key：考前封顶时用来分散日期，一般传单词 */
+     opt.type：这次的题型（第一遍答对时更新 q）；opt.key：考前封顶时用来分散日期，一般传单词；opt.exam：考试日（默认 EXAM） */
   function rate(c, r, t, opt = {}) {
     const key = opt.key ?? `${c.k}|${c.g}|${c.o}|${c.w}`;
     const n = {...c, r, n: (c.n || 0) + 1, t};
@@ -110,14 +110,14 @@ const SRS = (() => {
     const q = r === "g" && opt.type >= 0 && opt.type <= TYPE.SPELL ? Math.max(c.q || 0, opt.type) : c.q || 0;
     if (r === "m") {
       const d = c.s >= 4 ? add(t, Math.max(2, Math.floor(LV_DAYS[level({...n, h, q})] / 2))) : add(t, 2);
-      return {...n, h, q, d: examCap(d, t, key)};
+      return {...n, h, q, d: examCap(d, t, key, opt.exam || EXAM)};
     }
     const s = c.s + 1, nc = {...n, h, q, s};
-    return {...nc, d: examCap(stationDue(c.a, s, t, level(nc)), t, key)};
+    return {...nc, d: examCap(stationDue(c.a, s, t, level(nc)), t, key, opt.exam || EXAM)};
   }
 
   /* 斩：直接 5 级，30 天后（或考前窗口）抽查；抽查答错照常重来并清掉 z */
-  const chop = (c, t, key = c.w || "") => ({...c, z: 1, s: Math.max(c.s, 4), d: examCap(add(t, LV_DAYS[5]), t, key)});
+  const chop = (c, t, key = c.w || "", exam = EXAM) => ({...c, z: 1, s: Math.max(c.s, 4), d: examCap(add(t, LV_DAYS[5]), t, key, exam)});
 
   /* 难词本：最近一次是忘了 / 模糊，或忘过不止一次 */
   const isHard = c => c.r === "f" || c.r === "m" || (c.l || 0) >= 2;
