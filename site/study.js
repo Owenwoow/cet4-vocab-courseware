@@ -630,7 +630,7 @@ const Study = (() => {
     const t = T(), u = SRS.chop(c, t, x.word, S.examDate);
     Sync.set(key, D.learn ? {...u, p: t} : u); x.card = Sync.get(key);
     clearTimeout(D.timer);
-    D.res.z = (D.res.z || 0) + 1; D.passed++;
+    D.res.z = (D.res.z || 0) + 1; D.passed++; (D.chopped = D.chopped || new Set()).add(x.word);
     D.queue = D.queue.filter(y => y.word !== x.word);
     if (D.learn && D.pending.length) D.queue.push(D.pending.shift());
     toast(`已斩 ${x.word}：${md(x.card.d)} 抽查`);
@@ -684,7 +684,7 @@ const Study = (() => {
     if (D.learn) {
       const missed = D.items.filter(x => (D.st.get(x.word) || {}).err);
       view().innerHTML = `<div class="drill end"><h1>今天的新词全部过关 🎉</h1>
-        <div class="tally"><span>过关 <b>${D.passed}</b></span><span class="g">一次就过 <b>${D.passed - missed.length - (D.res.z || 0)}</b></span><span class="f">错过才过 <b>${missed.length}</b></span>${D.res.z ? `<span>斩 <b>${D.res.z}</b></span>` : ""}</div>
+        <div class="tally"><span>过关 <b>${D.passed}</b></span><span class="g">一次就过 <b>${D.items.filter(x => !(D.st.get(x.word) || {}).err && !(D.chopped && D.chopped.has(x.word))).length}</b></span><span class="f">错过才过 <b>${missed.length}</b></span>${D.res.z ? `<span>斩 <b>${D.res.z}</b></span>` : ""}</div>
         ${missed.length ? `<p class="note">错过的：${missed.map(x => esc(x.word)).join("、")}${missed.some(x => D.st.get(x.word).err >= 2) ? "（错 2 次以上的明天早上标红、优先出）" : ""}</p>` : ""}
         <p class="note">明天早上照常复习这些词。</p>
         <div class="ops">${btn("#/", "回首页", 'variant="brand"')} ${btn("#/list/today", "浏览今天的词")}</div></div>`;
