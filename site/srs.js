@@ -151,8 +151,26 @@ const SRS = (() => {
     return out;
   }
 
+  /* 形近：编辑距离很小，或者前 4 个字母相同（较长的词）；出干扰项、排顺序都用 */
+  function similar(a, b) {
+    a = a.toLowerCase(); b = b.toLowerCase();
+    if (a === b) return false;
+    return editDist(a, b) <= Math.max(1, Math.floor(Math.min(a.length, b.length) / 4)) || (a.length >= 5 && b.length >= 5 && a.slice(0, 4) === b.slice(0, 4));
+  }
+  /* 把不同组的形近词挪到一起（adapt 后面紧跟 adopt），对比着记；同组的不动（书上按词根成群，同群形近是常态） */
+  function pairSimilar(list, groupOf) {
+    const out = [], used = new Set();
+    list.forEach((x, i) => {
+      if (used.has(i)) return;
+      used.add(i); out.push(x);
+      const j = list.findIndex((y, k) => !used.has(k) && groupOf(y) !== groupOf(x) && similar(x.word, y.word));
+      if (j >= 0) { used.add(j); out.push(list[j]); }
+    });
+    return out;
+  }
+
   /* 本轮出题顺序：拖过的先、今天到期的后；同一段里熟练度低的先；
-     同一熟练度里，复习不到 3 次的按课本顺序（保留词群联想），3 次及以上的乱序且同词群不相邻 */
+     同一熟练度里，复习不到 3 次的按课本顺序（保留词群联想），3 次及以上的乱序、同词群不相邻、不同词群的形近词相邻 */
   function queue(items, t, seed = t) {
     const grp = x => `${x.card.k}|${x.card.g}`;
     const due = items.filter(x => isDue(x.card, t)), out = [];
@@ -160,7 +178,7 @@ const SRS = (() => {
       for (let lv = 0; lv <= 5; lv++) {
         const seg = due.filter(x => (x.card.d < t) === late && level(x.card) === lv);
         out.push(...seg.filter(x => (x.card.n || 0) < 3).sort((x, y) => (x.order || 0) - (y.order || 0)));
-        out.push(...shuffleSpread(seg.filter(x => (x.card.n || 0) >= 3), grp, `${seed}|${late}|${lv}`));
+        out.push(...pairSimilar(shuffleSpread(seg.filter(x => (x.card.n || 0) >= 3), grp, `${seed}|${late}|${lv}`), grp));
       }
     return out;
   }
@@ -169,6 +187,6 @@ const SRS = (() => {
   const shift = (c, n) => ({...c, a: add(c.a, n), d: add(c.d, n)});
 
   return {EXAM, TYPE, today, add, diff, dow, monday, firstWeekend, firstSunday, stationDue, examCap, newCard, isDue,
-    rate, chop, isHard, dueList, level, streak, pickType, gradeChoice, gradeSpell, editDist, shuffleSpread, queue, shift};
+    rate, chop, isHard, dueList, level, streak, pickType, gradeChoice, gradeSpell, editDist, similar, shuffleSpread, pairSimilar, queue, shift};
 })();
 if (typeof module === "object" && module.exports) module.exports = SRS;

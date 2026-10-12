@@ -452,12 +452,6 @@ const Study = (() => {
   const sensesOf = e => e.prons.flatMap(p => p.senses);
   const meanText = e => sensesOf(e).slice(0, 3).map(s => `${s.pos} ${plainMean(s.mean)}`).join("；");
   const mainPos = e => (sensesOf(e)[0] || {}).pos || "";
-  /* 形近：编辑距离很小，或者前 4 个字母相同（较长的词） */
-  function similar(a, b) {
-    a = a.toLowerCase(); b = b.toLowerCase();
-    if (a === b) return false;
-    return SRS.editDist(a, b) <= Math.max(1, Math.floor(Math.min(a.length, b.length) / 4)) || (a.length >= 5 && b.length >= 5 && a.slice(0, 4) === b.slice(0, 4));
-  }
   /* 干扰项的候选：这一轮涉及的课里所有书上词条 + 这一轮的词 */
   async function buildPool(items) {
     const pool = new Map();
@@ -471,7 +465,7 @@ const Study = (() => {
   function distractors(x) {
     const me = meanText(x.e), pos = mainPos(x.e), seen = new Set([me]), out = [];
     const cands = D.pool.filter(e => e.word.toLowerCase() !== x.word.toLowerCase())
-      .map(e => ({e, s: (similar(x.word, e.word) ? 3 : 0) + (mainPos(e) === pos ? 2 : 0) + Math.random() * 1.5}))
+      .map(e => ({e, s: (SRS.similar(x.word, e.word) ? 3 : 0) + (mainPos(e) === pos ? 2 : 0) + Math.random() * 1.5}))
       .sort((a, b) => b.s - a.s);
     for (const {e} of cands) { const m = meanText(e); if (seen.has(m)) continue; seen.add(m); out.push(e); if (out.length === 3) break; }
     return out;
