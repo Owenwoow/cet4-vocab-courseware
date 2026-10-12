@@ -148,16 +148,21 @@ const Study = (() => {
       fetchJSON(`data/lessons/${id}.json`),
       fetchJSON(`data/audio/${id}.json`).catch(() => ({w: {}, s: {}, z: {}, voices: []})),
       fetchJSON(`data/roots/${id}.json`).catch(() => ({words: {}})),
-    ]).then(([les, aud, rt]) => {
-      const by = new Map(), ext = new Map();
+      fetchJSON(`data/gloss/${id}.json`).catch(() => ({words: {}})),
+    ]).then(([les, aud, rt, gl]) => {
+      const by = new Map(), ext = new Map(), map = new Map();   // map：查词用，和 app.js 的 WORDMAP 一样
       for (const g of les.groups) for (const e of g.entries) {
         e.root = rt.words?.[e.word]; if (!by.has(e.word)) by.set(e.word, {e, g});
         for (const x of e.ext || []) if (!ext.has(x.word)) ext.set(x.word, {x, e, g});
+        map.set(e.word, {word: e.word, senses: e.prons.flatMap(p => p.senses), ipa: e.prons.map(p => p.ipa).join(" "), no: e.no, entry: e, ext: false});
+        for (const x of e.ext || []) if (!map.has(x.word)) map.set(x.word, {word: x.word, senses: x.senses, ipa: x.ipa, no: e.no, entry: e, ext: true});
       }
-      return {les, aud, by, ext};
+      return {les, aud, by, ext, map, gloss: gl.words || {}};
     }).catch(err => { cache.delete(id); throw err; }));   // 失败的不缓存，下次重试
     return cache.get(id);
   }
+  /* 例句点词查义用的那课数据（app.js 的 lookup） */
+  const lookupCtx = lid => getLesson(lid).then(x => ({lid, gloss: x.gloss, map: x.map, aud: x.aud}));
   /* 卡片列表 → 带上书上的词条内容 */
   async function resolve(items) {
     const ids = new Set();
@@ -227,7 +232,7 @@ const Study = (() => {
   const ipaOf = e => e.prons.map(p => p.ipa).join(" ");
   /* 生词：遇见它的那句例句，生词高亮，可朗读 */
   const meetHTML = x => x.src ? `<div class="ex meet"><div class="exlab">遇见 · ${lesTitle(x.src.lid)} ${esc(x.src.entry)} 的例句</div>
-    <div class="sent">${sentenceHTML(x.src.ex.en, [x.src.x])}</div><div class="dzh">${esc(x.src.ex.zh)}</div>
+    <div class="sent" data-lid="${x.src.lid}" data-src="${esc(x.src.entry)}">${sentenceHTML(x.src.ex.en, [x.src.x])}</div><div class="dzh">${esc(x.src.ex.zh)}</div>
     <div class="ops"><button data-sent="src">▶ 例句</button><button data-sent="srcslow">🐢 慢速</button></div></div>` : "";
   /* 生词的来历：哪天加的、书上有没有 */
   const vocabMeta = x => `生词 · ${md(x.card.at)} 加入${x.card.bk ? ` · 书中 ${lesTitle(x.card.bk[0])} #${x.card.bk[1]}${x.card.bk[2] ? " 的扩展词" : ""}` : ""}`;
@@ -447,6 +452,7 @@ const Study = (() => {
     if (!D.queue.length) { endDrill(); return; }
     const x = D.queue[0], done = D.items.length - new Set(D.queue.map(q => q.word)).size, retry = D.rated.has(x.word);
     const c = x.card;
+    pop.style.display = "none";
     view().innerHTML = `<div class="drill${D.flipped ? " flipped" : ""}">
       <div class="dbar"><span>${esc(D.title)}</span><wa-progress-bar value="${Math.round(done / D.items.length * 100)}"></wa-progress-bar>
         <span>${done}/${D.items.length}</span><a href="#/" class="dx" title="结束">✕</a></div>
@@ -459,7 +465,7 @@ const Study = (() => {
           ${x.e.tip ? `<div class="tip"><span class="tag ${esc(x.e.tip.type)}">${esc(x.e.tip.type)}</span>${esc(x.e.tip.text)}</div>` : ""}
           ${x.e.root ? `<div class="tip root"><span class="tag 构词">词根</span>${esc(x.e.root)}<span class="src add">补充</span></div>` : ""}
           ${x.e.ex ? `<div class="ex${x.e.ex.type === "真" ? " zt" : ""}"><div class="exlab">${x.e.ex.type === "真" ? `真题 ${x.e.ex.year}` : "例句"}</div>
-            <div class="sent">${sentenceHTML(x.e.ex.en, x.e.ex.key)}</div><div class="dzh">${esc(x.e.ex.zh)}</div>
+            <div class="sent" data-lid="${x.lid}" data-src="${esc(x.e.word)}">${sentenceHTML(x.e.ex.en, x.e.ex.key)}</div><div class="dzh">${esc(x.e.ex.zh)}</div>
             <div class="ops"><button data-sent="1">▶ 例句</button><button data-sent="slow">🐢 慢速</button></div></div>` : ""}
           ${x.e.ext && x.e.ext.length ? `<div class="dext">${x.e.ext.map(y => `<div class="dextrow"><span class="tag">扩</span><b data-sayx="${esc(y.word)}">${esc(y.word)}</b>
             <span class="ipa">${esc(y.ipa)}</span><button class="spk sm" data-sayx="${esc(y.word)}" title="读">🔊</button>
@@ -636,5 +642,5 @@ const Study = (() => {
   const bind = () => { view().addEventListener("click", onClick); view().addEventListener("change", onChange); view().addEventListener("toggle", onToggle, true); };
   bind();
 
-  return {isStudy, render, refresh, markGroups, unmarkGroups, learnDate, vocabGet, addVocab, removeVocab, forgetBook};
+  return {isStudy, render, refresh, lookupCtx, markGroups, unmarkGroups, learnDate, vocabGet, addVocab, removeVocab, forgetBook};
 })();

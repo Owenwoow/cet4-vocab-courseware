@@ -44,7 +44,7 @@ const plainMean = m => m.replace(/\[\[|\]\]/g, "");
 const sensesText = ss => ss.map(s => `${s.pos} ${plainMean(s.mean)}`).join("　");
 
 const lemmaCandidates = Vocab.candidates;   // 词形变化的候选原形（vocab.js）
-const findWord = w => { for (const k of lemmaCandidates(w.toLowerCase())) if (WORDMAP.has(k)) return WORDMAP.get(k); return null; };
+const findWord = (w, map = WORDMAP) => { for (const k of lemmaCandidates(w.toLowerCase())) if (map.has(k)) return map.get(k); return null; };
 
 /* 例句切成可点的单词，重点词（可能是多词短语）加 key 样式 */
 function sentenceHTML(en, keys) {
@@ -367,12 +367,12 @@ function showPop(html, rect) {
 /* ---------- 生词本：查到的词 → 存什么（原形、释义、音标、书中位置）；src = 例句所在的词条 ---------- */
 const lesShort = lid => `U${+lid.slice(1, 3)} L${+lid.slice(5, 7)}`;
 const bookAt = w => (Object.hasOwn(BOOK.search, w) ? BOOK.search[w] : null);   // 书中位置 [课id, 词条序号, 是否扩展词]
-function vocabTarget(q, src) {
-  const b = !q.includes(" ") && findWord(q);     // 本课词条 / 扩展词
-  const g = GLOSS[q] || "";
+function vocabTarget(q, src, c) {
+  const b = !q.includes(" ") && findWord(q, c.map);     // 本课词条 / 扩展词
+  const g = c.gloss[q] || "";
   const w = b ? b.word : Vocab.lemma(q, g, bookAt);
   const {p, m} = Vocab.parse(g, w !== q);
-  return {w, x: q, m: b ? sensesText(b.senses) : m, p: b ? b.ipa : w === q ? p : "", k: L.id, e: src || "", bk: bookAt(w)};
+  return {w, x: q, m: b ? sensesText(b.senses) : m, p: b ? b.ipa : w === q ? p : "", k: c.lid, e: src || "", bk: bookAt(w)};
 }
 /* 浮层底部的按钮：加入 / 移出；书上已在复习的词改为「记一次忘了」 */
 function vocabButton(v) {
@@ -390,14 +390,29 @@ function vocabButton(v) {
   el.onclick = () => { cur ? Study.removeVocab(v.w) : Study.addVocab(v); vocabButton(v); };
 }
 
-async function lookup(text, rect, src) {
+/* 查词用哪课的数据：课文页是本课；首页巩固里的例句带 data-lid，用那课的（study.js 读来缓存） */
+const curCtx = () => ({lid: L.id, gloss: GLOSS, map: WORDMAP, aud: AUD});
+const ctxOf = el => { const s = el.closest && el.closest("[data-lid]"); return s ? Study.lookupCtx(s.dataset.lid) : Promise.resolve(curCtx()); };
+function speakIn(text, c) {
+  if (c.aud === AUD) { speak(text); return; }
+  const key = pickVoice(c.aud.w[text] || c.aud.w[text.toLowerCase()]);
+  key ? playFile(key, null, rate(), c.aud) : speakTTS(text, "en");
+}
+/* 点到例句里的词（el）或选中一段：查词 + 读出来 */
+async function lookupAt(el, text, rect) {
+  const c = await ctxOf(el);
+  lookup(text, rect, srcOf(el), c); speakIn(text, c);
+}
+
+async function lookup(text, rect, src, c = curCtx()) {
+  const GLOSS = c.gloss;
   const q = text.toLowerCase().replace(/[^a-z' ]/g, " ").replace(/\s+/g, " ").trim();
   if (!q) return;
   const line = (w, body, src) => `<div class="pm"><b>${esc(w)}</b> ${body}${src}</div>`;
   const BOOKTAG = n => `<span class="src">书中 #${n}</span>`, ADD = `<span class="src add">补充</span>`;
   let html, needOnline = false;
   const one = w => {
-    const b = findWord(w);
+    const b = findWord(w, c.map);
     if (b) return line(b.word, `<span class="ipa">${esc(b.ipa)}</span> ${esc(sensesText(b.senses))}`, BOOKTAG(b.no));
     for (const k of lemmaCandidates(w)) if (GLOSS[k]) return line(w, esc(GLOSS[k]), ADD);
     return null;
@@ -407,8 +422,8 @@ async function lookup(text, rect, src) {
     html = one(q) || line(q, "查询中…", ""); needOnline = !one(q);
   } else html = `<div><span class="pw">${esc(text)}</span></div>` + q.split(" ").map(w => one(w) || line(w, "—", "")).join("");
   showPop(html + `<div class="ops"><button id="popSay">🔊 再读一遍</button><button id="popVocab" class="pvb"></button></div><div class="pn" id="popVn"></div>`, rect);
-  $("#popSay").onclick = () => speak(q);
-  vocabButton(vocabTarget(q, src));
+  $("#popSay").onclick = () => speakIn(q, c);
+  vocabButton(vocabTarget(q, src, c));
   if (needOnline) {
     try {
       const j = await fetchJSON("https://api.dictionaryapi.dev/api/v2/entries/en/" + encodeURIComponent(q));
@@ -427,9 +442,15 @@ function openPages(a, b) {
 $("#viewerClose").onclick = () => { $("#viewer").hidden = true; };
 
 /* ---------- 点击事件 ---------- */
-const srcOf = el => (el.closest && el.closest(".card") ? el.closest(".card").dataset.word : "");   // 例句属于哪个词条
+const srcOf = el => { const s = el.closest && el.closest(".card,[data-src]"); return s ? s.dataset.word || s.dataset.src || "" : ""; };   // 例句属于哪个词条
 document.addEventListener("click", e => {
   const t = e.target;
+  if (t.closest(".study .sent") && !pop.contains(t)) {   // 首页巩固里的例句也能点词查义
+    const sel = getSelection().toString().trim();
+    if (sel) { lookupAt(t, sel, getSelection().getRangeAt(0).getBoundingClientRect()); return; }
+    if (t.classList.contains("w")) { lookupAt(t, t.textContent, t.getBoundingClientRect()); return; }
+  }
+  if (t.closest(".study") && !pop.contains(t)) pop.style.display = "none";
   if (t.closest(".top,.drawer,.fabs,.settings,.viewer,.study,.peek")) { if (!t.closest(".search")) $("#qres").style.display = "none"; return; }
   if (t.dataset.say || t.classList.contains("play") || t.classList.contains("w")) stopMarathon();
   if (t.dataset.say) { speak(t.dataset.say); return; }
@@ -447,13 +468,13 @@ document.addEventListener("click", e => {
   if (masked) { masked.classList.toggle("show"); return; }
   if (pop.contains(t)) return;
   const sel = getSelection().toString().trim();
-  if (sel && t.closest(".sent")) { lookup(sel, getSelection().getRangeAt(0).getBoundingClientRect(), srcOf(t)); speak(sel); return; }
-  if (t.classList.contains("w")) { lookup(t.textContent, t.getBoundingClientRect(), srcOf(t)); speak(t.textContent); return; }
+  if (sel && t.closest(".sent")) { lookupAt(t, sel, getSelection().getRangeAt(0).getBoundingClientRect()); return; }
+  if (t.classList.contains("w")) { lookupAt(t, t.textContent, t.getBoundingClientRect()); return; }
   pop.style.display = "none";
 });
 document.addEventListener("touchend", e => setTimeout(() => {
   const s = getSelection();
-  if (s.toString().trim().includes(" ") && e.target.closest && e.target.closest(".sent")) lookup(s.toString(), s.getRangeAt(0).getBoundingClientRect(), srcOf(e.target));
+  if (s.toString().trim().includes(" ") && e.target.closest && e.target.closest(".sent")) ctxOf(e.target).then(c => lookup(s.toString(), s.getRangeAt(0).getBoundingClientRect(), srcOf(e.target), c));
 }, 300));
 
 /* ---------- 设置页 ---------- */
