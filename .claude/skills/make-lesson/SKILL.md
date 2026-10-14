@@ -16,7 +16,7 @@ description: 批量生成课件课程（Part 01 词以群记）：抽页图 → 
 | 页图 → Lesson JSON + 自检 | 子代理 `lesson-extractor` | **Sonnet** | 约 10~13 万 token |
 | 校验 | `pipeline/validate.py` | 脚本 | 0 |
 | 逐词释义 | 子代理 `gloss-writer` | **Haiku** | 约 5~6 万 token |
-| 例句词组与对话带练讲解 | 子代理 `note-writer` | **Sonnet**（先行词、虚拟语气这类判断 Haiku 容易讲错） | 约 4 万 token（2026-10-14 对话带练版实测 u10-l01；Haiku 同课 9 万且选句偏易，不用） |
+| 例句词组与对话带练讲解 | 子代理 `note-writer` | **Sonnet**（先行词、虚拟语气这类判断 Haiku 容易讲错） | 约 2.6 万 token、5～7 次工具调用、约 1 分钟（2026-10-14 对话带练版实测 39 课均值，合计约 101 万；只重写讲解的情形，新课要再写词组，多一点）；占额度：每课 5 小时窗口约 1%、周窗口约 0.15%（含总控自己的上下文）；Haiku 同课 9 万且选句偏易，不用 |
 | 音频 | 云端 `audio` 工作流（`.github/workflows/audio.yml`，内部跑 `build_audio.py` + `publish_audio.py`） | 脚本（edge-tts） | 0 |
 | 对数 / 部署检查 | `build_index.py` / `check_audio.py`（deploy 工作流里也会跑） | 脚本 | 0 |
 | 人工抽查 | 用户 | — | — |
