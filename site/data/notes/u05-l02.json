@@ -1,0 +1,325 @@
+{
+  "_note": "例句词组与语法解析（书外补充，AI 生成）",
+  "sents": {
+    "He is a member of the Democratic Party.": {
+      "ph": [{"t": "a member of", "b": "a member of", "m": "……的成员"}]
+    },
+    "It generates a great deal of electronic garbage.": {
+      "ph": [{"t": "a great deal of", "b": "a great deal of", "m": "大量的"}]
+    },
+    "Lion dance should be handed down to future generations as part of Chinese culture.": {
+      "ph": [
+        {"t": "handed down", "b": "hand down", "m": "传承，传下去"},
+        {"t": "as part of", "b": "as part of", "m": "作为……的一部分"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Lion dance should be handed down to future generations", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "as part of Chinese culture", "r": "状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "should be handed down 是被动，传承的人没有写出来，书上译成「应该……传承给」，不出现「被」，中文顺。",
+          "hand down A to B：A 是主语 Lion dance，B 是 future generations，书上不直译「未来几代」，而是译成习惯说法「子孙后代」。",
+          "as part of Chinese culture 是介词短语作状语，说明传承时的身份，书上放到动词「传承」前，译成「作为中国文化的一部分传承给……」。"
+        ],
+        "lit": "舞狮应该被传下去给未来的几代人，作为中国文化的一部分。"
+      }
+    },
+    "General farm management can go a long way toward easing changes.": {
+      "ph": [{"t": "go a long way toward", "b": "go a long way toward", "m": "对……大有帮助，在很大程度上促成"}]
+    },
+    "One strategy is called market modification.": {
+      "ph": [{"t": "is called", "b": "be called", "m": "被称为"}]
+    },
+    "He apologised for scratching an athlete's gold medal.": {
+      "ph": [{"t": "apologised for", "b": "apologise for", "m": "为……道歉"}]
+    },
+    "Their extraordinary minds are still using the same flawed tools that the rest of us rely on.": {
+      "ph": [{"t": "rely on", "b": "rely on", "m": "依靠，使用"}],
+      "an": {
+        "parts": [
+          {"t": "Their extraordinary minds are still using the same flawed tools", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that the rest of us rely on", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导定语从句，先行词是 tools（前面有 the same，the same…that 表示「同样的……」），that 在从句里作介词 on 的宾语（rely on that）。",
+          "书上没有把从句前置成「……的工具」，而是拆到句末译成「和我们其他人用的一样」，把 the same…that 的「同样」单独说出来。",
+          "flawed 是过去分词作定语，书上译成「有瑕疵的」；the rest of us 是「我们其余的人」，书上译成「我们其他人」。"
+        ],
+        "lit": "他们非凡的头脑仍然在使用我们其余的人所依靠的同样有瑕疵的工具。"
+      }
+    },
+    "It cannot cater to personal needs.": {
+      "ph": [{"t": "cater to", "b": "cater to", "m": "满足，迎合"}]
+    },
+    "Sales people often fall into this category.": {
+      "ph": [{"t": "fall into", "b": "fall into", "m": "属于，归入"}]
+    },
+    "One possible solution to the food security problem is diversification of diet.": {
+      "ph": [{"t": "solution to", "b": "a solution to", "m": "……的解决办法"}]
+    },
+    "They can apply for fully funded access to Coursera's course catalogue.": {
+      "ph": [
+        {"t": "apply for", "b": "apply for", "m": "申请"},
+        {"t": "access to", "b": "access to", "m": "访问，进入"}
+      ]
+    },
+    "Over the centuries, they have simulated dialogues in a number of ways.": {
+      "ph": [
+        {"t": "Over the centuries", "b": "over the centuries", "m": "几个世纪以来"},
+        {"t": "a number of", "b": "a number of", "m": "许多，多种"}
+      ]
+    },
+    "Researchers have shown that body mass index is related to wages and income.": {
+      "ph": [{"t": "is related to", "b": "be related to", "m": "与……有关"}]
+    },
+    "At 8 years old, he worked as a kitchen boy for a restaurant in Paris in exchange for room and board.": {
+      "ph": [
+        {"t": "worked as", "b": "work as", "m": "担任，当"},
+        {"t": "in exchange for", "b": "in exchange for", "m": "以换取"},
+        {"t": "room and board", "b": "room and board", "m": "食宿"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "At 8 years old", "r": "时间状语"},
+          {"t": ", ", "r": ""},
+          {"t": "he worked as a kitchen boy for a restaurant in Paris", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "in exchange for room and board", "r": "状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "At 8 years old 是介词短语作时间状语，意思是「在 8 岁的时候」，书上译成「8 岁时」。",
+          "in exchange for room and board 是介词短语作状语，说明干活的报酬，不是主干的一部分；书上把它拆成句末的短分句「以换取食宿」。",
+          "for a restaurant 中的 for 表示「为……工作」，worked as a kitchen boy for a restaurant 整体译成「在一家餐馆当厨房帮工」。"
+        ],
+        "lit": "在 8 岁时，他在巴黎为一家餐馆作为厨房男孩工作，以交换食宿。"
+      }
+    },
+    "The agents' questions compel student tutors to think and explain the materials in different ways.": {
+      "ph": [
+        {"t": "compel", "b": "compel … to do", "m": "迫使……做"},
+        {"t": "to", "b": "compel … to do", "m": "迫使……做"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "The agents' questions compel student tutors", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to think and explain the materials in different ways", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "compel sb. to do：to think and explain 是宾语 student tutors 的补足语，to 同时管 think 和 explain 两个动词，书上译成「思考和解释」。",
+          "主语 The agents' questions 是无生命名词，但 compel 本身就带「迫使」的意思，书上不用加字，直接译成「代理的问题迫使……」。",
+          "in different ways 放在句末，修饰前面的两个动词，书上前置成「以不同的方式思考和解释这些材料」。"
+        ],
+        "lit": "代理的问题迫使学生家教去思考和解释这些材料以不同的方式。"
+      }
+    },
+    "It forces the customer to compensate the waiter.": {
+      "ph": [
+        {"t": "forces", "b": "force … to do", "m": "迫使……做"},
+        {"t": "to", "b": "force … to do", "m": "迫使……做"}
+      ]
+    },
+    "Cultivating positive interpersonal relationships helped him expel solitary feelings.": {
+      "ph": [{"t": "helped him expel", "b": "help sb. do", "m": "帮助某人做"}]
+    },
+    "But the greatest strength of this book (on fashion) is its intellectual profoundness.": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "But the greatest strength of this book ", "r": "主干"},
+          {"t": "(on fashion)", "r": "插入语"},
+          {"t": " is its intellectual profoundness", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "主干是 The greatest strength … is its intellectual profoundness，主语是 strength，表语是 profoundness；书上把 is 译成「在于」，说成「最大的优势在于……」，比「最大的优势是……」更像中文。",
+          "(on fashion) 是括号里的补充说明，修饰 this book，意思是「这本关于时尚的书」，书上照原样保留括号。",
+          "its intellectual profoundness 是名词化结构（形容词 profound 变成名词 profoundness），书上译成「它的思想深度」。"
+        ],
+        "lit": "但是这本书（关于时尚）最大的优势是它的思想的深刻性。"
+      }
+    },
+    "Your feelings about your willpower affect the way you behave.": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "Your feelings about your willpower affect the way", "r": "主干"},
+          {"t": " you behave", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "the way 后面省略了关系词（that 或 in which），you behave 是定语从句，先行词是 way，关系词在从句里作方式状语（behave in the way），不是主语或宾语。",
+          "书上把从句前置成「你的行为方式」，way 与 behave 合成一个名词短语，作 affect 的宾语。",
+          "feelings about your willpower 里 about 引出感觉的对象，书上译成「对意志力的感觉」，把对象提到「感觉」之前。"
+        ],
+        "lit": "你关于你的意志力的感觉影响你行为的方式。"
+      }
+    },
+    "Consumers must be willing to pay for these solutions.": {
+      "ph": [
+        {"t": "be willing to", "b": "be willing to do", "m": "愿意做"},
+        {"t": "pay for", "b": "pay for", "m": "为……付费"}
+      ]
+    },
+    "Most people surveyed were reluctant to reveal what they ate.": {
+      "ph": [{"t": "were reluctant to", "b": "be reluctant to do", "m": "不愿做"}],
+      "an": {
+        "parts": [
+          {"t": "Most people surveyed were reluctant to reveal ", "r": "主干"},
+          {"t": "what they ate", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "surveyed 是过去分词作后置定语，相当于 who were surveyed，修饰 people，书上压缩成名词性的「被调查者」。",
+          "what they ate 是 reveal 的宾语从句，what 在从句里作 ate 的宾语（ate what），书上译成「他们吃了什么」。",
+          "be reluctant to do 表示不情愿，书上译成「不愿透露」，用否定词「不」来表达。"
+        ],
+        "lit": "大多数被调查的人不情愿透露他们吃了什么。"
+      }
+    },
+    "Some strains of bacteria are so harmful that a tiny few can have deadly consequences.": {
+      "ph": [{"t": "so harmful that", "b": "so … that", "m": "如此……以至于"}],
+      "an": {
+        "parts": [
+          {"t": "Some strains of bacteria are so harmful", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that a tiny few can have deadly consequences", "r": "结果状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "so harmful that … 是 so…that 结构，that 引导结果状语从句，书上译成「危害极大，以至于……」，从句放在后面。",
+          "a tiny few 指其中极少数的细菌，是省略了 of them 的说法，书上补出名词，译成「极少量细菌」。",
+          "can have deadly consequences 直译是「能有致命后果」，书上把 have 换成动词「带来」，译成「带来致命的后果」。"
+        ],
+        "lit": "一些细菌的种类是如此有害，以至于极少数就能有致命的后果。"
+      }
+    },
+    "They clothe their children in the latest fashions.": {
+      "ph": [{"t": "clothe their children in", "b": "clothe sb. in sth.", "m": "给某人穿上"}]
+    },
+    "He tied a metal key and a strip of silk to the kite line.": {
+      "ph": [
+        {"t": "tied", "b": "tie … to", "m": "把……系在"},
+        {"t": "to", "b": "tie … to", "m": "把……系在"},
+        {"t": "a strip of", "b": "a strip of", "m": "一条"}
+      ]
+    },
+    "Justin Le, aged 18, tied a red ribbon around his waist to practice jumping.": {
+      "ph": [{"t": "practice jumping", "b": "practice doing", "m": "练习做"}],
+      "an": {
+        "parts": [
+          {"t": "Justin Le", "r": "主干"},
+          {"t": ", ", "r": ""},
+          {"t": "aged 18", "r": "插入语"},
+          {"t": ", ", "r": ""},
+          {"t": "tied a red ribbon around his waist", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to practice jumping", "r": "目的状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "aged 18 夹在两个逗号之间，是对主语 Justin Le 的补充说明，书上放到人名前，译成「18 岁的贾斯汀·乐」。",
+          "to practice jumping 是不定式作目的状语，说明系丝带的原因，书上用「以便」引出，译成「以便练习跳跃」。",
+          "practice 后面接动名词，practice doing 是「练习做某事」。"
+        ],
+        "lit": "贾斯汀·乐，18 岁，在他的腰间系了一条红丝带，为了练习跳跃。"
+      }
+    },
+    "He went off to change a guitar string.": {
+      "ph": [{"t": "went off", "b": "go off", "m": "离开"}]
+    },
+    "A common thread runs through these discussions.": {
+      "ph": [{"t": "runs through", "b": "run through", "m": "贯穿"}]
+    },
+    "My co-workers would all be friendly with one another, without ever falling into the office gossip trap.": {
+      "ph": [
+        {"t": "be friendly with", "b": "be friendly with", "m": "与……友好"},
+        {"t": "one another", "b": "one another", "m": "彼此"},
+        {"t": "falling into the office gossip trap", "b": "fall into a trap", "m": "落入陷阱"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "My co-workers would all be friendly with one another", "r": "主干"},
+          {"t": ", ", "r": ""},
+          {"t": "without ever falling into the office gossip trap", "r": "状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "without ever falling… 是 without + 动名词，表示「不……」，ever 加强否定，书上译成「不会落入」，把否定意味并进动词。",
+          "all 夹在 would 和 be 之间，修饰主语 My co-workers，书上译成「都」放在谓语前。",
+          "office gossip trap 是三个名词叠加，中心词是 trap，书上译成「办公室八卦的陷阱」。"
+        ],
+        "lit": "我的同事们将都彼此友好，从不落入办公室八卦陷阱。"
+      }
+    },
+    "We get a fairly large portion of calories from fast food and snacks.": {
+      "ph": [
+        {"t": "a fairly large portion of", "b": "a portion of", "m": "一部分"},
+        {"t": "from", "b": "get … from", "m": "从……获得"}
+      ]
+    },
+    "These teams are gaining more power to run their own affairs.": {
+      "ph": [{"t": "run their own affairs", "b": "run one's own affairs", "m": "管理自己的事务"}]
+    },
+    "Don't forget to return the trolley after you finish shopping.": {
+      "ph": [
+        {"t": "forget to return", "b": "forget to do", "m": "忘记去做"},
+        {"t": "finish shopping", "b": "finish doing", "m": "完成做某事"}
+      ]
+    },
+    "Years of smoking have taken their toll on his health.": {
+      "ph": [{"t": "taken their toll on", "b": "take its toll on", "m": "对……造成损害"}]
+    },
+    "It has renewed her passion for life.": {
+      "ph": [{"t": "passion for", "b": "passion for", "m": "对……的热情"}]
+    },
+    "Everyone's entitled to their own opinion.": {
+      "ph": [{"t": "entitled to", "b": "be entitled to", "m": "有权利得到"}]
+    },
+    "He qualified as a doctor last year.": {
+      "ph": [{"t": "qualified as", "b": "qualify as", "m": "取得……资格"}]
+    },
+    "The food is fresh and of good quality.": {
+      "ph": [{"t": "of good quality", "b": "of good quality", "m": "质量好"}]
+    },
+    "His years in exile resulted in an innovation discount.": {
+      "ph": [
+        {"t": "in exile", "b": "in exile", "m": "流亡中"},
+        {"t": "resulted in", "b": "result in", "m": "导致"}
+      ]
+    },
+    "My kids spend hours chatting on the phone to their friends.": {
+      "ph": [
+        {"t": "spend", "b": "spend … doing", "m": "花时间做某事"},
+        {"t": "chatting", "b": "spend … doing", "m": "花时间做某事"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "My kids spend hours", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "chatting on the phone to their friends", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "spend + 时间 + doing：hours 是花掉的时间，chatting… 是动名词，说明时间花在什么事上。",
+          "英文把时间放在动词前，中文习惯先说做什么再说多久，所以书上拆成「在电话里和朋友聊天，聊了几个小时」，动词「聊天」重复了一次。",
+          "on the phone to their friends 在这里是「在电话里和朋友」，书上把方式和对象前置到动词前。"
+        ],
+        "lit": "我的孩子们花几个小时在电话上对他们的朋友聊天。"
+      }
+    },
+    "I ripped the package open.": {
+      "ph": [{"t": "ripped", "b": "rip … open", "m": "撕开"}, {"t": "open", "b": "rip … open", "m": "撕开"}]
+    },
+    "She tried to get a grip on the icy rock.": {
+      "ph": [{"t": "get a grip on", "b": "get a grip on", "m": "抓住"}]
+    }
+  }
+}

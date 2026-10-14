@@ -1,0 +1,325 @@
+{
+  "_note": "例句词组与语法解析（书外补充，AI 生成）",
+  "sents": {
+    "Activities all take place under the guidance of an experienced tutor.": {
+      "ph": [
+        {"t": "take place", "b": "take place", "m": "举行，进行"},
+        {"t": "under the guidance of", "b": "under the guidance of", "m": "在……的指导下"}
+      ]
+    },
+    "Educators and business leaders have more in common than it may seem.": {
+      "ph": [
+        {"t": "have", "b": "have … in common", "m": "有共同点"},
+        {"t": "in common", "b": "have … in common", "m": "有共同点"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Educators and business leaders have more in common", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "than it may seem", "r": "状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "have … in common 中间夹了 more，意思是「有更多共同点」；than 后面是比较的对象，书上把「比……」提前，译成「有着比表面上看起来更多的共同点」。",
+          "than it may seem 是 than 引导的比较从句，may seem 译成「看起来」；这里 may 表推测，主句是现在时、没有 if 条件，不是虚拟语气。"
+        ],
+        "lit": "教育者和商界领袖有更多共同之处，比它可能看起来的那样。"
+      }
+    },
+    "It is essential to a person's future academic success.": {
+      "ph": [{"t": "is essential to", "b": "be essential to", "m": "对……至关重要"}]
+    },
+    "What did Dr. Sasaki do when she first did her experiment?": {
+      "ph": [{"t": "did her experiment", "b": "do an experiment", "m": "做实验"}],
+      "an": {
+        "parts": [
+          {"t": "What did Dr. Sasaki do", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "when she first did her experiment", "r": "时间状语"},
+          {"t": "?", "r": ""}
+        ],
+        "pts": [
+          "前一个 did 是疑问句的助动词，What 是实义动词 do 的宾语，整句问的是「做了什么」。后一个 did 才是「做（实验）」的实义动词。",
+          "when 引导的时间状语从句放在疑问句末尾，中文习惯先交代时间，所以书上提到前面译成「第一次做实验时」，再问「做了什么」。"
+        ],
+        "lit": "佐佐木博士做了什么，当她第一次做她的实验的时候？"
+      }
+    },
+    "What is the argument against the experts' idea of a long summer vacation?": {
+      "ph": [{"t": "argument against", "b": "argument against", "m": "反对……的理由"}],
+      "an": {
+        "parts": [
+          {"t": "What is the argument against the experts' idea of a long summer vacation", "r": "主干"},
+          {"t": "?", "r": ""}
+        ],
+        "pts": [
+          "argument against 是名词加介词的搭配，against 引出被反对的对象 the experts' idea…，书上译成「反对……的理由」。",
+          "the experts' idea of a long summer vacation 是名词短语：experts' 是所有格，idea of 后面说明想法的内容；书上把所有格展开成动作「专家们提出的」，再接「长暑假想法」。"
+        ],
+        "lit": "反对专家们关于一个长暑假的想法的论点是什么？"
+      }
+    },
+    "She keeps good discipline in class.": {
+      "ph": [{"t": "keeps good discipline", "b": "keep discipline", "m": "维持纪律"}]
+    },
+    "The principal reason for this omission is lack of time.": {
+      "ph": [
+        {"t": "reason for", "b": "reason for", "m": "……的原因"},
+        {"t": "lack of", "b": "lack of", "m": "缺乏"}
+      ]
+    },
+    "Angry politicians launched an attack on the Princess in the press.": {
+      "ph": [
+        {"t": "launched an attack on", "b": "launch an attack on", "m": "对……发起攻击"},
+        {"t": "in the press", "b": "in the press", "m": "在新闻媒体上"}
+      ]
+    },
+    "One day, he received an invitation to dinner at the ruler's palace.": {
+      "ph": [
+        {"t": "One day", "b": "one day", "m": "有一天"},
+        {"t": "invitation to", "b": "invitation to", "m": "……的邀请"}
+      ]
+    },
+    "I used to attend a summer music camp for five weeks.": {
+      "ph": [{"t": "used to attend", "b": "used to do", "m": "过去常常做"}]
+    },
+    "She lives on campus.": {
+      "ph": [{"t": "lives on campus", "b": "live on campus", "m": "住在校园内"}]
+    },
+    "It is a special offer to recent college graduates working in offices.": {
+      "ph": [{"t": "special offer", "b": "special offer", "m": "特别优惠"}],
+      "an": {
+        "parts": [
+          {"t": "It is a special offer to recent college graduates", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "working in offices", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "working in offices 是现在分词短语作后置定语，修饰 graduates（毕业生在办公室工作，是主动关系），相当于 who work in offices。中文定语不能后置，书上前置成「在办公室工作的应届大学毕业生」。",
+          "recent college graduates 里 recent 指刚毕业不久，书上译成「应届」，比「最近的」更贴切。"
+        ],
+        "lit": "这是给最近的大学毕业生的特别优惠，他们在办公室工作。"
+      }
+    },
+    "This fall, thousands of college students from across the country will begin their undergraduate studies.": {
+      "ph": [{"t": "thousands of", "b": "thousands of", "m": "数千"}],
+      "an": {
+        "parts": [
+          {"t": "This fall", "r": "状语"},
+          {"t": ", ", "r": ""},
+          {"t": "thousands of college students from across the country will begin their undergraduate studies", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "from across the country 是介词短语作后置定语，修饰 students；中文要前置，书上译成「来自全国各地的数千名大学生」。",
+          "will begin 是单纯的将来时（This fall 指即将到来的秋天），书上译「将开始」，不是虚拟语气。"
+        ],
+        "lit": "今年秋天，数千名来自全国各处的大学生将开始他们的本科研究。"
+      }
+    },
+    "But as a scared freshman looking at their grades, it's not fun.": {
+      "ph": [{"t": "looking at", "b": "look at", "m": "看，关注"}],
+      "an": {
+        "parts": [
+          {"t": "But ", "r": ""},
+          {"t": "as a scared freshman looking at their grades", "r": "状语"},
+          {"t": ", ", "r": ""},
+          {"t": "it's not fun", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "as 在这里是介词「作为」，引出身份，as a … freshman 整体作句首状语；looking at their grades 是现在分词短语后置定语，修饰 freshman（新生在看成绩，主动关系），书上前置成「恐慌地关注着自己成绩的新生」。",
+          "主干 it's not fun 的 it 泛指当时的情形，书上译成「这并不好玩」。"
+        ],
+        "lit": "但是作为一个害怕的、看着他们成绩的新生，它并不有趣。"
+      }
+    },
+    "He's a member of the club's junior team.": {
+      "ph": [{"t": "a member of", "b": "a member of", "m": "……的一员"}]
+    },
+    "At the very top are the senior executives.": {
+      "ph": [{"t": "At the very top", "b": "at the top", "m": "在最高层"}],
+      "an": {
+        "parts": [
+          {"t": "At the very top", "r": "状语"},
+          {"t": " ", "r": ""},
+          {"t": "are the senior executives", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "地点状语 At the very top 放在句首，引起完全倒装：谓语 are 提到主语 the senior executives 前面。正常语序是 The senior executives are at the very top。",
+          "倒装把信息重点放在句尾的主语上，书上用「位于最高层的正是高管们」的「……的正是……」格式表现这种强调；very 加强 top，译「最高层」。"
+        ],
+        "lit": "在最顶端的是高级主管们。"
+      }
+    },
+    "Children may be tempted to drop litter.": {
+      "ph": [
+        {"t": "be tempted to", "b": "be tempted to do", "m": "忍不住做"},
+        {"t": "drop litter", "b": "drop litter", "m": "乱扔垃圾"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Children may be tempted to drop litter", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "be tempted to do 是被动结构，直译「被诱惑去做」，书上转成主动的「忍不住」，更符合中文习惯。",
+          "may 表可能性，译「可能会」；句子是现在时、没有 if 条件，不是虚拟语气。"
+        ],
+        "lit": "孩子们可能被诱惑去丢垃圾。"
+      }
+    },
+    "By investing in education, we nourish the talents of our children.": {
+      "ph": [{"t": "investing in", "b": "invest in", "m": "投资于"}],
+      "an": {
+        "parts": [
+          {"t": "By investing in education", "r": "方式状语"},
+          {"t": ", ", "r": ""},
+          {"t": "we nourish the talents of our children", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "By + 动名词表示方式，「通过……」；书上把这个状语放进主干，译成「我们通过教育投资培养……」。",
+          "investing in education 是动宾结构，书上压缩成名词短语「教育投资」；the talents of our children 译成「孩子们的才能」。"
+        ],
+        "lit": "通过投资于教育，我们滋养我们孩子的才能。"
+      }
+    },
+    "People may either be born with it or be able to cultivate it.": {
+      "ph": [
+        {"t": "be born with", "b": "be born with", "m": "天生具有"},
+        {"t": "be able to", "b": "be able to do", "m": "能够做"}
+      ]
+    },
+    "He was a leading intellectual of his day.": {
+      "ph": [{"t": "of his day", "b": "of one's day", "m": "那个时代的"}]
+    },
+    "It made a series of sharp turns in the sky.": {
+      "ph": [{"t": "a series of", "b": "a series of", "m": "一系列"}]
+    },
+    "Some studies have found that first-born children are more intelligent than their later-born siblings.": {
+      "ph": [
+        {"t": "more", "b": "more … than", "m": "比……更"},
+        {"t": "than", "b": "more … than", "m": "比……更"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Some studies have found", "r": "主干"},
+          {"t": " that ", "r": ""},
+          {"t": "first-born children are more intelligent than their later-born siblings", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "Some studies 是无生命主语，直译「一些研究发现」可以接受，书上保留这一说法；have found 是现在完成时，中文用「发现」，不必加「已经」。",
+          "that 引导 found 的宾语从句；从句里是 more … than 比较结构，比较的双方是 first-born children 和 their later-born siblings。",
+          "first-born、later-born 是「序数词/副词 + 过去分词」构成的复合形容词，书上译成「头胎的」「后生的」。"
+        ],
+        "lit": "一些研究已经发现，头生的孩子比他们后出生的兄弟姐妹更聪明。"
+      }
+    },
+    "These pioneers reflected on the challenges they faced.": {
+      "ph": [{"t": "reflected on", "b": "reflect on", "m": "反思"}],
+      "an": {
+        "parts": [
+          {"t": "These pioneers reflected on the challenges", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "they faced", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "they faced 是定语从句，先行词是 the challenges；省略了关系代词 that/which，它在从句里作 faced 的宾语（they faced the challenges）。",
+          "书上把从句前置成「他们所面临的挑战」，「所」正好对应被省略的宾语关系。"
+        ],
+        "lit": "这些先驱者反思了他们面对的那些挑战。"
+      }
+    },
+    "Students prefer to rely on peers to relieve stress and anxiety.": {
+      "ph": [
+        {"t": "prefer to", "b": "prefer to do", "m": "更喜欢做"},
+        {"t": "rely on", "b": "rely on", "m": "依靠"}
+      ]
+    },
+    "The new system will be compatible with existing equipment.": {
+      "ph": [{"t": "be compatible with", "b": "be compatible with", "m": "与……兼容"}]
+    },
+    "Toy manufacturers have been banned from using the chemicals.": {
+      "ph": [{"t": "been banned from using", "b": "be banned from doing", "m": "被禁止做"}]
+    },
+    "Everything you learned in elementary school about triangles is pretty basic.": {
+      "ph": [{"t": "elementary school", "b": "elementary school", "m": "小学"}],
+      "an": {
+        "parts": [
+          {"t": "Everything", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "you learned in elementary school about triangles", "r": "定语从句"},
+          {"t": " ", "r": ""},
+          {"t": "is pretty basic", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "you learned … 是定语从句，先行词是不定代词 Everything；先行词是 everything 时关系词多用 that，并且常省略，它在从句里作 learned 的宾语。",
+          "书上把从句前置成「你在小学学到的所有关于三角形的东西」，Everything 译成「所有……的东西」；主干 Everything is… 的谓语用单数 is，与 Everything 一致。"
+        ],
+        "lit": "你在小学学的一切关于三角形的东西都相当基础。"
+      }
+    },
+    "You will probably never think of fashion as a trifle again.": {
+      "ph": [
+        {"t": "think of", "b": "think of … as", "m": "把……看作"},
+        {"t": "as", "b": "think of … as", "m": "把……看作"},
+        {"t": "never", "b": "never … again", "m": "再也不"},
+        {"t": "again", "b": "never … again", "m": "再也不"}
+      ]
+    },
+    "Her proof is a remarkable piece of mathematics.": {
+      "ph": [{"t": "piece of", "b": "a piece of", "m": "一件（作品）"}]
+    },
+    "There does appear to be some psychology behind it.": {
+      "ph": [{"t": "appear to be", "b": "appear to be", "m": "似乎是，似乎有"}],
+      "an": {
+        "parts": [
+          {"t": "There does appear to be some psychology behind it", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "There … be 表示「存在」，appear to be 把它变成「似乎有」；There does appear 中的 does 是肯定句里的强调助动词，加强语气。",
+          "所以书上译成「似乎确实有」：「似乎」对应 appear，「确实」对应强调的 does。"
+        ],
+        "lit": "在它背后确实似乎有一些心理学。"
+      }
+    },
+    "They are favored as a form of art.": {
+      "ph": [
+        {"t": "are favored as", "b": "be favored as", "m": "作为……受青睐"},
+        {"t": "a form of", "b": "a form of", "m": "一种形式的"}
+      ]
+    },
+    "The architecture of these buildings is in the Greek style.": {
+      "ph": [{"t": "in the Greek style", "b": "in the … style", "m": "是……风格"}]
+    },
+    "They are copies built to the architect's designs.": {
+      "ph": [{"t": "built to", "b": "build to", "m": "按照……建造"}],
+      "an": {
+        "parts": [
+          {"t": "They are copies", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "built to the architect's designs", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "built to … 是过去分词短语作后置定语，修饰 copies，带被动意味（复制品「被建造」），相当于 which were built to …。",
+          "中文定语要前置，书上译成「按照建筑师的设计建造的复制品」；这里 to 表示「按照」。"
+        ],
+        "lit": "它们是按建筑师的设计被建造的复制品。"
+      }
+    },
+    "It will force cities to transform their infrastructure.": {
+      "ph": [
+        {"t": "force", "b": "force sb. to do", "m": "迫使"},
+        {"t": "to", "b": "force sb. to do", "m": "迫使"}
+      ]
+    }
+  }
+}

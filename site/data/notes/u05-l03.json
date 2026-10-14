@@ -1,0 +1,360 @@
+{
+  "_note": "例句词组与语法解析（书外补充，AI 生成）",
+  "sents": {
+    "She tried to concentrate on reading her book but couldn't.": {
+      "ph": [{"t": "concentrate on", "b": "concentrate on", "m": "集中精力于"}]
+    },
+    "Fresno, in the central valley, comes top of the list in America for year-round pollution.": {
+      "ph": [{"t": "comes top of the list", "b": "come top of the list", "m": "名列榜首"}],
+      "an": {
+        "parts": [
+          {"t": "Fresno", "r": "主干"},
+          {"t": ", ", "r": ""},
+          {"t": "in the central valley", "r": "插入语"},
+          {"t": ", ", "r": ""},
+          {"t": "comes top of the list in America for year-round pollution", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "in the central valley 夹在主语 Fresno 和谓语 comes 之间，是地点插入语，书上把它前置成定语「位于中央谷地的弗雷斯诺」，主干就顺了。",
+          "comes top of the list … for year-round pollution 字面是「在污染榜单上排第一」，榜单上排第一的依据是污染，所以书上合并成「污染最严重的地区」。"
+        ],
+        "lit": "弗雷斯诺，在中央谷地，在美国的全年污染榜单上名列榜首。"
+      }
+    },
+    "When most of us set goals, we focus on long-term results we want to see.": {
+      "ph": [
+        {"t": "set goals", "b": "set goals", "m": "设定目标"},
+        {"t": "focus on", "b": "focus on", "m": "关注"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "When most of us set goals", "r": "时间状语"},
+          {"t": ", ", "r": ""},
+          {"t": "we focus on long-term results", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "we want to see", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "we want to see 是定语从句，先行词是 long-term results，省略了关系代词 that / which，它在从句中作 see 的宾语（see which）。",
+          "书上把这个定语从句前置成「我们想要看到的长期结果」，没有拆成后面的分句。",
+          "When 引导时间状语从句，书上译成「当……时」放在句首。"
+        ],
+        "lit": "当我们中的大多数人设定目标时，我们关注我们想看到的长期结果。"
+      }
+    },
+    "I used to be a video game addict.": {
+      "ph": [{"t": "used to be", "b": "used to do", "m": "过去是……"}]
+    },
+    "There is no denying that mobile phones have brought much convenience.": {
+      "ph": [{"t": "There is no denying that", "b": "There is no denying that", "m": "不可否认"}],
+      "an": {
+        "parts": [
+          {"t": "There is no denying", "r": "主干"},
+          {"t": " that ", "r": ""},
+          {"t": "mobile phones have brought much convenience", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "There is no doing 是固定句型，表示「不可能 / 没有办法做某事」；There is no denying that… 相当于 It is undeniable that…，所以书上直接译成「不可否认」。",
+          "that 引导的从句是 denying 的内容；have brought 是现在完成时，强调手机已经带来的影响，书上译成「带来了很多便利」。"
+        ],
+        "lit": "没有否认的可能，即手机已经带来了许多便利。"
+      }
+    },
+    "In other words, when it comes to cities—or anything else—it is hard to predict the future.": {
+      "ph": [
+        {"t": "In other words", "b": "in other words", "m": "换句话说"},
+        {"t": "when it comes to", "b": "when it comes to", "m": "当提到……"},
+        {"t": "it is hard to", "b": "it is hard to do", "m": "做……很难"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "In other words", "r": "插入语"},
+          {"t": ", ", "r": ""},
+          {"t": "when it comes to cities", "r": "时间状语"},
+          {"t": "—or anything else—", "r": "插入语"},
+          {"t": "it is hard to predict the future", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "it is hard to predict the future 中 it 是形式主语，真正的主语是不定式 to predict the future，所以书上不译 it，直接说「很难预测未来」。",
+          "when it comes to 中的 to 是介词，后面接名词（cities），整个从句表示「谈到 / 当提到」；破折号里的 or anything else 是插入语，书上译成「或其他任何事物」夹在中间。"
+        ],
+        "lit": "换句话说，当它谈到城市——或任何别的东西——时，预测未来是困难的。"
+      }
+    },
+    "They provide facilities management services to corporations, hospitals and universities.": {
+      "ph": [
+        {"t": "provide", "b": "provide … to", "m": "向……提供"},
+        {"t": "to", "b": "provide … to", "m": "向……提供"}
+      ]
+    },
+    "The creative aspects of advertisement often cover up the defects or problems in products.": {
+      "ph": [{"t": "cover up", "b": "cover up", "m": "掩盖"}]
+    },
+    "Such personality characteristics as self-discipline have no effect on longevity.": {
+      "ph": [
+        {"t": "Such", "b": "such … as", "m": "诸如……这样的"},
+        {"t": "as", "b": "such … as", "m": "诸如……这样的"},
+        {"t": "have no effect on", "b": "have an effect on", "m": "对……没有影响"}
+      ]
+    },
+    "People of different ages and genders show affection in different ways.": {
+      "ph": [{"t": "show affection", "b": "show affection", "m": "表达感情"}]
+    },
+    "Two million bees were infected with disease.": {
+      "ph": [{"t": "were infected with", "b": "be infected with", "m": "感染上"}]
+    },
+    "Why don't you read the manual?": {
+      "ph": [{"t": "Why don't you", "b": "Why don't you do", "m": "你为什么不……（提建议）"}]
+    },
+    "The doctor gave him a thorough check-up.": {
+      "ph": [{"t": "gave him a thorough check-up", "b": "give sb. a check-up", "m": "给某人做检查"}]
+    },
+    "They must be used in combination for an entire collective.": {
+      "ph": [
+        {"t": "be used", "b": "be used for", "m": "用于"},
+        {"t": "in combination", "b": "in combination", "m": "结合起来"},
+        {"t": "for", "b": "be used for", "m": "用于"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "They must be used", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "in combination", "r": "方式状语"},
+          {"t": " ", "r": ""},
+          {"t": "for an entire collective", "r": "目的状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "must be used 是情态动词加被动，They 是动作的承受者；书上没有译「被使用」，而是顺着「必须结合起来用于」译成主动的说法。",
+          "in combination 是介词短语作方式状语，名词 combination 在书上被转成动词「结合起来」。",
+          "for an entire collective 表用途，entire 放在名词前强调「整个、全部」，书上译成「整个集体」。"
+        ],
+        "lit": "它们必须被使用在结合中，为了一个整个的集体。"
+      }
+    },
+    "It contributes greatly to the advance of society as a whole.": {
+      "ph": [
+        {"t": "contributes greatly to", "b": "contribute to", "m": "对……有贡献"},
+        {"t": "as a whole", "b": "as a whole", "m": "整体上"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "It contributes greatly to the advance of society as a whole", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "the advance of society 是名词化结构，书上展开成「社会的进步」；to 是介词，contribute to 后面接名词，所以「做出贡献」的对象是「进步」。",
+          "as a whole 放在 society 后面作后置修饰，书上提前成「整个社会」；greatly 修饰 contributes，书上译成「做出了巨大贡献」。"
+        ],
+        "lit": "它对作为一个整体的社会的进步大大地做贡献。"
+      }
+    },
+    "They work in shifts in a factory.": {
+      "ph": [{"t": "work in shifts", "b": "work in shifts", "m": "轮班工作"}]
+    },
+    "The old mill is now little more than a ruin.": {
+      "ph": [{"t": "little more than", "b": "little more than", "m": "只不过是"}]
+    },
+    "It's certainly new territory, especially as home security cameras become easier to install.": {
+      "ph": [{"t": "especially as", "b": "especially as", "m": "尤其是在……的情况下"}]
+    },
+    "In this study, students came into the laboratory and were asked to give a public speech.": {
+      "ph": [
+        {"t": "were asked to", "b": "be asked to do", "m": "被要求做"},
+        {"t": "give a public speech", "b": "give a speech", "m": "发表演讲"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "In this study", "r": "状语"},
+          {"t": ", ", "r": ""},
+          {"t": "students came into the laboratory and were asked to give a public speech", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "主语 students 后面有两个并列谓语：came into the laboratory（主动）和 were asked to give…（被动），and 后面省略了重复的主语，书上译成连续的两个动作。",
+          "were asked to give 是被动，书上保留「被要求」；give a public speech 里的 give 不是「给」，整个短语是「发表演讲」。"
+        ],
+        "lit": "在这项研究中，学生们进入了实验室并被要求做一个公开的演讲。"
+      }
+    },
+    "In his spare time, he visited the local art galleries.": {
+      "ph": [{"t": "In his spare time", "b": "in one's spare time", "m": "在业余时间"}]
+    },
+    "There's a door at either end of the corridor.": {
+      "ph": [{"t": "at either end of", "b": "at either end of", "m": "在……的两端"}]
+    },
+    "When he saw the police arrive, he ran down an alley.": {
+      "ph": [{"t": "saw the police arrive", "b": "see sb. do sth.", "m": "看见某人做某事"}],
+      "an": {
+        "parts": [
+          {"t": "When he saw the police arrive", "r": "时间状语"},
+          {"t": ", ", "r": ""},
+          {"t": "he ran down an alley", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "saw the police arrive 是「感官动词 + 宾语 + 省 to 的不定式」，police 是 arrive 的逻辑主语，所以书上译成「看见警察来了」，不是「看见警察，来到」。",
+          "When 引导时间状语从句，两个动作紧接着发生，书上用「……便……」连接，译成「看见……便跑进了……」。"
+        ],
+        "lit": "当他看见警察到来时，他沿着一条小巷跑了。"
+      }
+    },
+    "The city centre streets are paved with dark local stone.": {
+      "ph": [{"t": "are paved with", "b": "be paved with", "m": "用……铺砌"}],
+      "an": {
+        "parts": [
+          {"t": "The city centre streets are paved", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "with dark local stone", "r": "状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "are paved with 是被动，with 引出铺路的材料；书上不用「被」，译成「用……铺砌而成」，以「而成」表示被动结果。",
+          "dark local stone 里两个形容词叠加，书上译成「当地的深色石块」，把表示来源的 local 放在最前面。"
+        ],
+        "lit": "市中心的街道被用黑暗的当地石头铺设。"
+      }
+    },
+    "There is plenty of decent food in the grocery stores.": {
+      "ph": [{"t": "plenty of", "b": "plenty of", "m": "大量的"}]
+    },
+    "It has been the scene of several fatal accidents recently.": {
+      "ph": [{"t": "the scene of", "b": "the scene of", "m": "……的现场"}]
+    },
+    "This pattern of woods and fields is typical of the English landscape.": {
+      "ph": [{"t": "is typical of", "b": "be typical of", "m": "是……的典型"}]
+    },
+    "Landlords had to wait 60 days to get rid of problem tenants.": {
+      "ph": [{"t": "get rid of", "b": "get rid of", "m": "清除，摆脱"}]
+    },
+    "The security camera installed may intrude into their privacy.": {
+      "ph": [{"t": "intrude into", "b": "intrude into", "m": "侵犯，闯入"}]
+    },
+    "It is possible for burglars to make jamming attacks with the necessary equipment and skill.": {
+      "ph": [
+        {"t": "is possible for", "b": "be possible for sb. to do", "m": "……有可能做"},
+        {"t": "to", "b": "be possible for sb. to do", "m": "……有可能做"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "It is possible for burglars to make jamming attacks", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "with the necessary equipment and skill", "r": "方式状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "It 是形式主语，真正的主语是 for burglars to make jamming attacks；for burglars 是不定式的逻辑主语，所以书上译成「窃贼有可能……」，把 burglars 提到前面当主语，不译 It。",
+          "with the necessary equipment and skill 是介词短语作方式状语，书上把 with 转成动词「利用」，译成「利用必要的设备和技巧」。"
+        ],
+        "lit": "对窃贼来说，用必要的设备和技巧进行干扰攻击是可能的。"
+      }
+    },
+    "The only way to conquer a fear is to face it.": {
+      "ph": [{"t": "The only way to", "b": "the only way to do", "m": "做……的唯一方法"}]
+    },
+    "The treaty banning mining here comes up for review.": {
+      "ph": [{"t": "comes up for", "b": "come up for", "m": "被提交……（审议）"}],
+      "an": {
+        "parts": [
+          {"t": "The treaty ", "r": "主干"},
+          {"t": "banning mining here", "r": "非谓语"},
+          {"t": " comes up for review", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "banning mining here 是现在分词短语作后置定语，修饰 treaty（条约禁止采矿，是主动关系），相当于 that bans mining here；书上前置成「禁止在这里采矿的条约」。",
+          "comes up for review 字面是「上来接受审查」，书上译成「将进行审查」；一般现在时在这里表示按计划安排好的事。"
+        ],
+        "lit": "禁止在这里采矿的条约上来接受审查。"
+      }
+    },
+    "AlphaGo's victory and Taylor's defeat happened at about the same time.": {
+      "ph": [{"t": "at about the same time", "b": "at the same time", "m": "同时"}]
+    },
+    "They triumphed ultimately over evil in the battle.": {
+      "ph": [
+        {"t": "triumphed", "b": "triumph over", "m": "战胜"},
+        {"t": "over", "b": "triumph over", "m": "战胜"}
+      ]
+    },
+    "She is confident of victory in Saturday's final.": {
+      "ph": [{"t": "is confident of", "b": "be confident of", "m": "对……有信心"}]
+    },
+    "It has much to do with whom employees interact with.": {
+      "ph": [
+        {"t": "has much to do with", "b": "have much to do with", "m": "与……有很大关系"},
+        {"t": "interact with", "b": "interact with", "m": "与……互动"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "It has much to do with", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "whom employees interact with", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "whom employees interact with 是介词 with 的宾语从句（have to do with 后面要接宾语），整个从句相当于一个名词性成分「员工和谁互动」。",
+          "从句里 whom 是 interact with 的宾语，介词 with 被留在从句末尾（interact with whom）；书上按中文习惯译成「和谁互动」。"
+        ],
+        "lit": "它与员工和谁互动有很多关系。"
+      }
+    },
+    "Most of us may sometimes feel the frustration of having old memories interfere with new, relevant memories.": {
+      "ph": [
+        {"t": "interfere with", "b": "interfere with", "m": "干扰"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Most of us may sometimes feel the frustration", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "of having old memories interfere with new, relevant memories", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "the frustration 是名词，of 后面的 having… 说明沮丧的来由；书上把它展开成动词「感到沮丧」，并用「因为……而」把原因提前。",
+          "having old memories interfere with… 是「have + 宾语 + 动词原形」，old memories 是 interfere 的逻辑主语，所以书上译成「旧记忆干扰新的相关记忆」，主谓关系清楚。"
+        ],
+        "lit": "我们大多数人有时可能感到有旧记忆干扰新的、相关的记忆的沮丧。"
+      }
+    },
+    "The interview didn't go as well as he expected.": {
+      "ph": [
+        {"t": "as", "b": "not as … as", "m": "不如……那样"},
+        {"t": "as", "b": "not as … as", "m": "不如……那样"}
+      ]
+    },
+    "More readers choose the digital over the print edition.": {
+      "ph": [
+        {"t": "choose", "b": "choose … over", "m": "选择……而不选"},
+        {"t": "over", "b": "choose … over", "m": "选择……而不选"}
+      ]
+    },
+    "It doesn't run counter to the goals of public education.": {
+      "ph": [{"t": "run counter to", "b": "run counter to", "m": "违背，与……相反"}]
+    },
+    "He submitted the unedited version to a more respected journal and got accepted.": {
+      "ph": [
+        {"t": "submitted", "b": "submit … to", "m": "把……提交给"},
+        {"t": "to", "b": "submit … to", "m": "把……提交给"},
+        {"t": "got accepted", "b": "get accepted", "m": "被接受"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "He submitted the unedited version to a more respected journal", "r": "主干"},
+          {"t": " and ", "r": ""},
+          {"t": "got accepted", "r": "并列分句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "and 连接两个并列谓语 submitted… 和 got accepted，共用主语 He；got accepted 是「get + 过去分词」表被动，强调结果，书上译成「被接受了」。",
+          "a more respected journal 里的 more respected 是比较级，但句中没有 than，表示「相对更受尊敬」，书上译成「一家更受尊敬的杂志」。"
+        ],
+        "lit": "他把未经编辑的版本提交给一家更受尊敬的期刊，并且被接受了。"
+      }
+    }
+  }
+}

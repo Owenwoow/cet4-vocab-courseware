@@ -1,0 +1,384 @@
+{
+  "_note": "例句词组与语法解析（书外补充，AI 生成）",
+  "sents": {
+    "It is a code of conduct based on laws and ethics.": {
+      "ph": [{"t": "based on", "b": "be based on", "m": "基于"}]
+    },
+    "The food industry has, in general, been firmly opposed to such direct government action.": {
+      "ph": [
+        {"t": "in general", "b": "in general", "m": "总的来说"},
+        {"t": "opposed to", "b": "be opposed to", "m": "反对"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "The food industry has", "r": "主干"},
+          {"t": ", ", "r": ""},
+          {"t": "in general", "r": "插入语"},
+          {"t": ", ", "r": ""},
+          {"t": "been firmly opposed to such direct government action", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "in general 夹在 has 和 been 之间，是插入语，修饰整句；书上把它提到句首，译成「总的来说」。",
+          "has been opposed 是现在完成时，表示从过去持续到现在的状态，所以书上译成「一直……反对」，副词 firmly 译成「坚决」。",
+          "such direct government action 里 government 是名词作定语，「政府的行动」；书上译成「这种直接行动」，省去了「政府」。"
+        ],
+        "lit": "食品行业，总的来说，已经坚决地被反对这种直接的政府行动。"
+      }
+    },
+    "You will be instructed where to go when the plane is ready.": {
+      "ph": [{"t": "be instructed", "b": "be instructed", "m": "被通知"}],
+      "an": {
+        "parts": [
+          {"t": "You will be instructed", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "where to go", "r": "非谓语"},
+          {"t": " ", "r": ""},
+          {"t": "when the plane is ready", "r": "时间状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "You will be instructed 是被动，动作的发出者没有说出；书上译成无主语的主动句「会通知你」，比「你将被通知」自然。",
+          "where to go 是「疑问词 + 不定式」，在句中作 instructed 之后保留下来的宾语，意思是「去哪里」，书上译成「去何处」。",
+          "when 引导时间状语从句，从句用一般现在时 is ready 表示将来，所以书上译成「飞机准备好时」，不带「将」。"
+        ],
+        "lit": "你将被指示去哪里，当飞机准备好的时候。"
+      }
+    },
+    "He commanded his men to retreat.": {
+      "ph": [{"t": "commanded his men to", "b": "command sb. to do", "m": "命令某人做某事"}]
+    },
+    "They told him the military exercise was over.": {
+      "ph": [{"t": "was over", "b": "be over", "m": "结束"}]
+    },
+    "Closing post offices is one of several proposals the Postal Service has put forth recently to cut costs.": {
+      "ph": [
+        {"t": "one of", "b": "one of", "m": "……之一"},
+        {"t": "put forth", "b": "put forth", "m": "提出"},
+        {"t": "cut costs", "b": "cut costs", "m": "降低成本"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Closing post offices is one of several proposals", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "the Postal Service has put forth recently", "r": "定语从句"},
+          {"t": " ", "r": ""},
+          {"t": "to cut costs", "r": "目的状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "Closing post offices 是动名词短语作主语，所以谓语用单数 is，书上译成「关闭邮局」。",
+          "proposals 后面省略了关系代词：the Postal Service has put forth (that/which) 是定语从句，先行词是 proposals，省略的关系词在从句里作 put forth 的宾语；书上把它前置成「邮政服务最近……提出的几个建议」。",
+          "to cut costs 是不定式表目的，修饰 put forth，书上译成「为了降低成本」并放在「提出」之前。"
+        ],
+        "lit": "关闭邮局是邮政服务最近提出的几个建议之一，以降低成本。"
+      }
+    },
+    "Keep an eye on the noticeboards for forthcoming events.": {
+      "ph": [{"t": "Keep an eye on", "b": "keep an eye on", "m": "留意，注意"}]
+    },
+    "It is the force that pushes human society forward.": {
+      "ph": [
+        {"t": "pushes", "b": "push … forward", "m": "推动……前进"},
+        {"t": "forward", "b": "push … forward", "m": "推动……前进"}
+      ]
+    },
+    "Just keep telling yourself that it won't last forever.": {
+      "ph": [{"t": "keep telling", "b": "keep doing", "m": "不停地做"}]
+    },
+    "I'd like to introduce you to the world's foremost authority on the subject.": {
+      "ph": [
+        {"t": "introduce you to", "b": "introduce sb. to sb.", "m": "把某人介绍给"},
+        {"t": "authority on", "b": "authority on", "m": "……方面的权威"}
+      ]
+    },
+    "It is impossible to foresee how life will work out.": {
+      "ph": [{"t": "work out", "b": "work out", "m": "发展"}]
+    },
+    "The forecast assumes continued improvements in yields.": {
+      "ph": [{"t": "improvements in", "b": "improvement in", "m": "……的提高"}]
+    },
+    "Someone was standing in the dark shadow cast by the light.": {
+      "ph": [{"t": "cast", "b": "cast a shadow", "m": "投下阴影"}],
+      "an": {
+        "parts": [
+          {"t": "Someone was standing in the dark shadow", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "cast by the light", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "cast by the light 是过去分词短语作后置定语，修饰 shadow，含被动意思：阴影是被灯光投下的。",
+          "汉语定语习惯放在名词前，所以书上把它前置成「灯光投下的阴影」，被动的「被」也不用译出。"
+        ],
+        "lit": "有人站在被灯光投下的黑暗阴影中。"
+      }
+    },
+    "How can you predict where the ball you tossed will land?": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "How can you predict", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "where the ball you tossed will land", "r": "宾语从句"},
+          {"t": "?", "r": ""}
+        ],
+        "pts": [
+          "where 引导 predict 的宾语从句，where 在从句中作 land 的地点状语；宾语从句用陈述语序，所以书上译成「会落在哪里」。",
+          "从句里 the ball you tossed 又含一个定语从句：先行词是 ball，省略的关系代词在从句里作 tossed 的宾语。",
+          "书上把这个定语从句前置，译成「你扔出的球」。"
+        ],
+        "lit": "你怎么能预测你扔的那个球将落在哪里？"
+      }
+    },
+    "Chase Carey used to serve as a top advisor for a major broadcasting company.": {
+      "ph": [
+        {"t": "used to", "b": "used to do", "m": "曾经"},
+        {"t": "serve as", "b": "serve as", "m": "担任"}
+      ]
+    },
+    "People's earnings are closely related to people's social status.": {
+      "ph": [{"t": "related to", "b": "be related to", "m": "与……有关"}]
+    },
+    "The prisoner was deprived of his civil liberty for three years.": {
+      "ph": [{"t": "was deprived of", "b": "be deprived of", "m": "被剥夺"}]
+    },
+    "Writing poetry liberated her from the routine of everyday life.": {
+      "ph": [{"t": "liberated her from", "b": "liberate sb. from sth.", "m": "使某人从……中解放出来"}]
+    },
+    "See if there was a deliberate cover-up of the problem.": {
+      "ph": [{"t": "See if", "b": "see if", "m": "看看是否"}],
+      "an": {
+        "parts": [
+          {"t": "See", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "if there was a deliberate cover-up of the problem", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "这是省略主语 you 的祈使句；if 在这里相当于 whether，引导 See 的宾语从句，意思是「是否」，不是「如果」。",
+          "there was 是存在句型，从句主语是 cover-up；书上译成「有人故意掩盖」，补出了英文里没有的施动者「有人」。",
+          "a deliberate cover-up of the problem 是名词化结构（cover up the problem 变成名词），书上展开成动宾「掩盖问题」，deliberate 译成副词「故意」。"
+        ],
+        "lit": "看看是否有对这个问题的故意掩盖。"
+      }
+    },
+    "Oh, and they'd give me two months of paid vacation with a very generous salary.": {
+      "ph": [{"t": "paid vacation", "b": "paid vacation", "m": "带薪假期"}]
+    },
+    "There are various means the consumers may use to gain satisfaction.": {
+      "ph": [{"t": "gain satisfaction", "b": "gain satisfaction", "m": "获得满足"}]
+    },
+    "The criticism the author received from his readers changed him.": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "The criticism", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "the author received from his readers", "r": "定语从句"},
+          {"t": " ", "r": ""},
+          {"t": "changed him", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "the author received from his readers 是定语从句，先行词是 The criticism，省略的关系代词（that/which）在从句里作 received 的宾语。",
+          "主句主干是 The criticism changed him，定语从句夹在主语和谓语之间；书上把它前置，译成「作者从读者那里受到的批评」。",
+          "received 译成「受到」，比「收到」更符合 criticism 的搭配。"
+        ],
+        "lit": "批评，作者从他的读者那里收到的，改变了他。"
+      }
+    },
+    "Decentralisation of authority was also found to be more effective in military operations.": {
+      "ph": [
+        {"t": "found to be", "b": "be found to be", "m": "被发现是"},
+        {"t": "effective in", "b": "effective in", "m": "在……方面有效"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Decentralisation of authority was also found", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to be more effective in military operations", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "Decentralisation of authority 是名词化结构（decentralise authority），书上展开成动宾式「权力下放」。",
+          "was found to be… 是被动加不定式，书上保留「被发现」，并把 also 译成「也」放在前面：「也被发现在军事行动中更为有效」。",
+          "more effective 是比较级，句中没有 than，比较对象是隐含的（没下放时），书上译成「更为有效」即可。"
+        ],
+        "lit": "权力的分散也被发现在军事行动中更有效。"
+      }
+    },
+    "But sharing our experiences in an authentic way to connect with other people is what makes us interesting.": {
+      "ph": [
+        {"t": "connect with", "b": "connect with", "m": "与……建立联系"},
+        {"t": "makes us interesting", "b": "make sb. adj.", "m": "使某人变得……"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "But sharing our experiences in an authentic way", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to connect with other people", "r": "非谓语"},
+          {"t": " is ", "r": "主干"},
+          {"t": "what makes us interesting", "r": "表语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "sharing our experiences… 是动名词短语作主语，谓语是 is，所以整个「分享经历」是一件事；书上译成「但是以一种真实的方式分享我们的经历……」。",
+          "to connect with other people 是不定式表目的，修饰 sharing，书上译成「以便与他人建立联系」。",
+          "what makes us interesting 是表语从句，what 在从句里作 makes 的主语，意思是「使我们有趣的东西」；书上把 is what 的结构化成「可以让我们变得有趣」，不再硬译「是……的东西」。"
+        ],
+        "lit": "但是以一种真实的方式分享我们的经历来与其他人联系，是使我们有趣的东西。"
+      }
+    },
+    "He wanted to make a sincere apology to Jimmy.": {
+      "ph": [{"t": "make a sincere apology to", "b": "make an apology to sb.", "m": "向某人道歉"}]
+    },
+    "It may prevent people from developing a genuine sense of community.": {
+      "ph": [
+        {"t": "prevent", "b": "prevent … from doing", "m": "阻止……做某事"},
+        {"t": "from", "b": "prevent … from doing", "m": "阻止……做某事"},
+        {"t": "sense of", "b": "a sense of", "m": "……意识"}
+      ]
+    },
+    "I had heard that genius could show itself at an early age.": {
+      "ph": [{"t": "at an early age", "b": "at an early age", "m": "在很小的时候"}],
+      "an": {
+        "parts": [
+          {"t": "I had heard", "r": "主干"},
+          {"t": " that ", "r": ""},
+          {"t": "genius could show itself at an early age", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导 heard 的宾语从句；主句是过去完成时 had heard，从句里的 could 是 can 的过去形式，属于时态呼应，不是虚拟语气（没有 if，也不是与事实相反）。",
+          "所以书上把 could 译成「能」：「天赋在很小的时候就能表现出来」，时间上不再强调过去。",
+          "show itself 是反身用法，字面「显示它自己」，书上译成「表现出来」；「就」是书上为 at an early age 加的语气。"
+        ],
+        "lit": "我听说过，天赋能在很早的年纪显示它自己。"
+      }
+    },
+    "Students in elite school districts have gained attention in recent years.": {
+      "ph": [
+        {"t": "gained attention", "b": "gain attention", "m": "受到关注"},
+        {"t": "in recent years", "b": "in recent years", "m": "近年来"}
+      ]
+    },
+    "The majority of previous research has focused on how we learn and remember new information.": {
+      "ph": [
+        {"t": "The majority of", "b": "the majority of", "m": "大部分"},
+        {"t": "focused on", "b": "focus on", "m": "侧重于"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "The majority of previous research has focused on", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "how we learn and remember new information", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "主语中心词是不可数名词 research，所以 the majority of 后谓语用单数 has focused；书上译成「大部分之前的研究」。",
+          "how 引导宾语从句，作介词 on 的宾语，learn and remember 是并列谓语；书上译成「我们如何学习和记忆新信息」。",
+          "has focused 是现在完成时，书上用「侧重于」表示这种一直如此的倾向，没有硬加「已经」。"
+        ],
+        "lit": "之前的研究的大多数已经集中于我们如何学习和记住新信息。"
+      }
+    },
+    "Absorbing new information is helpful in making better decisions prior to action.": {
+      "ph": [
+        {"t": "helpful in", "b": "be helpful in", "m": "有助于"},
+        {"t": "prior to", "b": "prior to", "m": "在……之前"}
+      ]
+    },
+    "After mail service stops due to weather, the agency's top priority is ensuring that employees are safe.": {
+      "ph": [
+        {"t": "due to", "b": "due to", "m": "由于"},
+        {"t": "ensuring that", "b": "ensure that", "m": "确保"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "After mail service stops due to weather", "r": "时间状语"},
+          {"t": ", ", "r": ""},
+          {"t": "the agency's top priority is ensuring", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that employees are safe", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "After 引导时间状语从句，due to weather 是介词短语，说明停止的原因；书上把二者合成「因天气原因暂停邮政服务后」。",
+          "主句 the agency's top priority is ensuring…：动名词 ensuring 作表语，that 引导它的宾语从句；书上译成「首要任务是确保……」。",
+          "employees are safe 是从句，书上译成名词化的「员工的安全」，读起来更顺。"
+        ],
+        "lit": "在邮政服务因为天气停止之后，该机构的最高优先事项是确保员工是安全的。"
+      }
+    },
+    "Modern music is often considered inferior to that of the past.": {
+      "ph": [
+        {"t": "is often considered", "b": "be considered", "m": "被认为"},
+        {"t": "inferior to", "b": "be inferior to", "m": "不如"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Modern music is often considered inferior to that of the past", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "is considered inferior 是被动结构，inferior 是主语补足语，书上保留「被认为」，译成「常被认为不如……」。",
+          "inferior to 本身含比较意思，后面接 to 而不是 than；that of the past 里的 that 代替前面的 music，避免重复，书上译成「过去的」，把代词还原。"
+        ],
+        "lit": "现代音乐经常被认为比过去的那个要差。"
+      }
+    },
+    "The enemy forces were reduced to absolute inferiority.": {
+      "ph": [{"t": "were reduced to", "b": "be reduced to", "m": "沦为，处于"}]
+    },
+    "They tend to have a sense of superiority over their peers.": {
+      "ph": [
+        {"t": "tend to", "b": "tend to do", "m": "往往"},
+        {"t": "sense of", "b": "a sense of", "m": "……感"},
+        {"t": "superiority over", "b": "superiority over", "m": "胜过"}
+      ]
+    },
+    "This is a family who can't communicate with each other.": {
+      "ph": [{"t": "communicate with", "b": "communicate with", "m": "与……沟通"}],
+      "an": {
+        "parts": [
+          {"t": "This is a family", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "who can't communicate with each other", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "who 引导定语从句，先行词是 a family，who 在从句里作主语。这里把 family 看成一群人（家庭成员），所以用 who 而不是 which。",
+          "书上把定语从句前置，译成「彼此无法沟通的家庭」，并补出「成员间」，让「彼此」有了明确的主体。"
+        ],
+        "lit": "这是一个不能彼此沟通的家庭。"
+      }
+    },
+    "He called the woman and left her a message.": {
+      "ph": [{"t": "left her a message", "b": "leave sb. a message", "m": "给某人留言"}]
+    },
+    "Japan says fear of disease is its main reason to block fresh imports.": {
+      "ph": [{"t": "fear of", "b": "fear of", "m": "对……的恐惧"}]
+    },
+    "Blue is associated with the positive qualities of trust, quietness and calm.": {
+      "ph": [{"t": "is associated with", "b": "be associated with", "m": "与……有关"}],
+      "an": {
+        "parts": [
+          {"t": "Blue is associated with the positive qualities of trust, quietness and calm", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "is associated with 是被动形式，但固定搭配「与……有关」在汉语里不说「被」，所以书上译成主动的「与……有关」。",
+          "the positive qualities of trust, quietness and calm：of 后面三个并列名词是 qualities 的具体内容，书上译成「信任、安静和冷静等积极的品质」，把 of 短语前置并加「等」。"
+        ],
+        "lit": "蓝色被与信任、安静和冷静的积极品质联系起来。"
+      }
+    },
+    "He had no choice but to ally himself with the new movement.": {
+      "ph": [
+        {"t": "no choice but to", "b": "have no choice but to do", "m": "别无选择，只能"},
+        {"t": "ally himself with", "b": "ally oneself with", "m": "与……结盟"}
+      ]
+    }
+  }
+}
