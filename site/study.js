@@ -8,8 +8,8 @@
                 k 课id, g 词群号, f 火苗, o 词条序号}（取消记 0）
      log:<日期> = {g, m, f 当天评分次数, dv 当天复习的到期词数}
      vocab:<原形> = 生词本：{w 原形, x 点到的写法, m 释义, p 音标, k 出处课id, e 出处词条（空 = 没有例句，如扩展词）,
-                at 加入日期, o 加入时刻, bk 书中位置 [课id, 词条序号, 是否扩展词]} + 复习卡字段 a s d l r n t（移出记 0）。
-                加入当天算学习日，复习规则和书上的词一样；这个词所在的词群记为学过时，它从生词本「毕业」（记 0），以书上的卡为准 */
+                at 加入日期, o 加入时刻, bk 书中位置 [课id, 词条序号, 是否扩展词], ph 1 = 例句里标出的词组（w 是词组原形，x 是句中写法、拆开的用「 … 」连）} + 复习卡字段 a s d l r n t（移出记 0）。
+                加入当天算学习日，复习规则和书上的词一样（原形含空格的按词组卡出题，见 srs.js isPhrase）；这个词所在的词群记为学过时，它从生词本「毕业」（记 0），以书上的卡为准 */
 "use strict";
 const Study = (() => {
   const T = () => SRS.today();
@@ -188,7 +188,7 @@ const Study = (() => {
     const main = B && !c.bk[2] && B.by.get(c.w), ext = B && c.bk[2] && B.ext.get(c.w);
     if (main) { e = main.e; grp = main.g; aud = B.aud; notes = B.notes; }
     else if (ext) { e = {word: c.w, prons: [{ipa: ext.x.ipa, senses: ext.x.senses}], freq: 0, extOf: ext.e}; grp = ext.g; aud = B.aud; }
-    else e = {word: c.w, prons: [{ipa: c.p || "", senses: Vocab.senses(c.m)}], freq: 0, gloss: true};
+    else e = {word: c.w, prons: [{ipa: c.p || "", senses: Vocab.senses(c.m)}], freq: 0, gloss: true, ph: !!c.ph};   // ph：释义来自例句词组（notes）
     return {...x, lid: c.bk ? c.bk[0] : c.k, e, grp, aud, notes, src, nb: true};   // nb：按生词显示（书上范围里的生词仍按词群显示）
   }
   /* 按书上的课 / 单元取词（包括还没记为学过的；没记过的只能看，不排复习） */
@@ -501,6 +501,33 @@ const Study = (() => {
     }
     return out;
   }
+  /* 词组卡：生词本里原形含空格的（含以前从逐词释义划选的短语），或从例句词组加进来的（ph） */
+  const isPh = x => !!(x.vocab && x.card && SRS.isPhrase(x.card));
+  const fakeEntry = (word, m, ipa = "") => ({word, prons: [{ipa, senses: Vocab.senses(m)}]});
+  /* 词组卡的干扰项候选：phs = 这一轮涉及的课的 notes 里所有词组 + 生词本里别的词组；vbs = 生词本里的单词 */
+  async function buildPhrasePool(items) {
+    const ph = new Map();
+    for (const id of new Set(items.flatMap(x => [x.lid, x.card && x.card.k]).filter(Boolean))) {
+      try { for (const n of Object.values((await getLesson(id)).notes.sents)) for (const p of n.ph || []) if (p.b && p.m && !ph.has(p.b)) ph.set(p.b, p.m); } catch { /* 没网就少一些候选 */ }
+    }
+    const vs = vocabMarks();
+    for (const [w, v] of vs) if (SRS.isPhrase(v) && v.m && !ph.has(w)) ph.set(w, v.m);
+    return {phs: [...ph].map(([b, m]) => fakeEntry(b, m)), vbs: vs.filter(([, v]) => !SRS.isPhrase(v) && v.m).map(([w, v]) => fakeEntry(w, v.m, v.p))};
+  }
+  /* 看词组选义的 3 个干扰项：先取别的词组的释义，不够从生词释义补，再不够从书上词条补；同一原形、相同释义的不要 */
+  function phraseDistractors(x) {
+    const me = meanText(x.e), lw = x.word.toLowerCase(), seen = new Set([me]), out = [];
+    const take = list => {
+      for (const e of shuffle(list.slice())) {
+        if (out.length >= 3) return;
+        const m = meanText(e);
+        if (!m.trim() || seen.has(m) || e.word.toLowerCase() === lw) continue;
+        seen.add(m); out.push({e, tag: null});
+      }
+    };
+    take(D.phs); take(D.vbs); take(D.pool.map(p => p.e));
+    return out;
+  }
   const shuffle = a => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
   /* 例句挖空：生词用遇见它的那句，书上的词用词条例句；找不到这个词就返回 null */
   function clozeOf(x) {
@@ -514,17 +541,17 @@ const Study = (() => {
   /* 这个词这次出什么题 */
   function kindFor(x) {
     if (!meanText(x.e)) return "flip";               // 没有现成释义的生词出不了选择题
-    if (D.learn) return (D.st.get(x.word) || {}).stage ? "listen" : "mean";
+    if (D.learn) return !isPh(x) && (D.st.get(x.word) || {}).stage ? "listen" : "mean";   // 词组卡两关都是看词组选义
     if (D.flip) return "flip";
     if (D.kind.has(x.word)) return D.kind.get(x.word);   // 答错再来：同一种题
-    const ty = x.card ? SRS.pickType(x.card) : SRS.TYPE.MEAN;
+    const ty = x.card ? SRS.pickType(x.card, {phrase: isPh(x)}) : SRS.TYPE.MEAN;   // 词组卡只会是看词组选义或翻卡
     if (ty === SRS.TYPE.CONTEXT) return clozeOf(x) && SRS.reviews(x.card) % 2 === 0 ? "cloze" : "reverse";
     return ["mean", "listen", null, "spell", "flip"][ty];
   }
   function makeQ(x, kind) {
     const q = {x, kind, state: "ask", t0: 0};
     if (kind === "mean" || kind === "listen" || kind === "cloze" || kind === "reverse") {
-      const cs = shuffle([{e: x.e, tag: null}, ...distractors(x)]);
+      const cs = shuffle([{e: x.e, tag: null}, ...(isPh(x) ? phraseDistractors(x) : distractors(x))]);
       q.es = cs.map(c => c.e); q.tags = cs.map(c => c.tag);
       q.ans = q.es.indexOf(x.e);
       q.opts = q.es.map(e => (kind === "mean" || kind === "listen" ? meanText(e) : e.word));
@@ -539,14 +566,15 @@ const Study = (() => {
     setHead("巩固 · " + info.title);
     view().innerHTML = `<p class="empty">加载中…</p>`;
     const learn = !preset && sc === "learn", hash = location.hash;
-    let items, pool = [];
+    let items, pool = [], pp = {phs: [], vbs: []};
     try {
       items = preset ? preset.items : await itemsOf(sc);
       if (!preset && sc !== "due") items = sortBy(items, learn ? "course" : S.drillOrder);   // 到期的已按熟练度排好
       if (learn || S.drillMode !== "flip") pool = await buildPool(items);
+      if ((learn || S.drillMode !== "flip") && items.some(isPh)) pp = await buildPhrasePool(items);
     } catch (err) { loadFail(err); return; }
     if (location.hash !== hash) return;              // 加载期间去了别的页
-    D = {sc, title: info.title, items, learn, flip: !learn && S.drillMode === "flip", pool, hash,
+    D = {sc, title: info.title, items, learn, flip: !learn && S.drillMode === "flip", pool, ...pp, hash,
       queue: learn ? items.slice(0, WINDOW) : items.slice(), pending: learn ? items.slice(WINDOW) : [],
       st: new Map(), kind: new Map(), cf: new Map(), rated: new Map(), passed: 0, res: {g: 0, m: 0, f: 0, k: 0}, q: null, hist: [], back: 0};
     if (!items.length) {
@@ -567,7 +595,7 @@ const Study = (() => {
   }
 
   /* 卡片背面：释义、记忆法、词根、例句、扩展词、生词出处（翻卡和答错后都用） */
-  const backHTML = x => `<div class="dback">${senseHTML(x.e)}${x.e.gloss ? `<div class="dnote">${x.e.prons[0].senses.length ? "" : "没有现成释义，看例句 · "}<span class="src add">补充</span> 例句逐词释义</div>` : ""}
+  const backHTML = x => `<div class="dback">${senseHTML(x.e)}${x.e.gloss ? `<div class="dnote">${x.e.prons[0].senses.length ? "" : "没有现成释义，看例句 · "}<span class="src add">补充</span> ${x.e.ph ? "例句词组释义" : "例句逐词释义"}</div>` : ""}
     ${x.e.extOf ? `<div class="dnote">书上 #${x.e.extOf.no} ${esc(x.e.extOf.word)} 的扩展词</div>` : ""}
     ${x.e.tip ? `<div class="tip"><span class="tag ${esc(x.e.tip.type)}">${esc(x.e.tip.type)}</span>${esc(x.e.tip.text)}</div>` : ""}
     ${x.e.root ? `<div class="tip root"><span class="tag 构词">词根</span>${esc(x.e.root)}<span class="src add">补充</span></div>` : ""}
