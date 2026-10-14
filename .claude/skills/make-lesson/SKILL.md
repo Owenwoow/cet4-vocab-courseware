@@ -16,7 +16,7 @@ description: 批量生成课件课程（Part 01 词以群记）：抽页图 → 
 | 页图 → Lesson JSON + 自检 | 子代理 `lesson-extractor` | **Sonnet** | 约 10~13 万 token |
 | 校验 | `pipeline/validate.py` | 脚本 | 0 |
 | 逐词释义 | 子代理 `gloss-writer` | **Haiku** | 约 5~6 万 token |
-| 例句词组与对话带练讲解 | 子代理 `note-writer` | **Sonnet**（先行词、虚拟语气这类判断 Haiku 容易讲错） | 约 2.6 万 token、5～7 次工具调用、约 1 分钟（2026-10-14 对话带练版实测 39 课均值，合计约 101 万；只重写讲解的情形，新课要再写词组，多一点）；占额度：每课 5 小时窗口约 1%、周窗口约 0.15%（含总控自己的上下文）；Haiku 同课 9 万且选句偏易，不用 |
+| 例句词组与对话带练讲解 | 子代理 `note-writer` | **Sonnet**（先行词、虚拟语气这类判断 Haiku 容易讲错） | 约 2.6 万 token、5～7 次工具调用、约 1 分钟（2026-10-14 对话带练版实测 39 课均值，合计约 101 万；只重写讲解的情形，新课要再写词组，多一点）；占额度：每课 5 小时窗口约 1.3%、周窗口约 0.18%（含总控自己的上下文；39 课合计 5 小时窗口 38%→91%、周窗口 66%→73%）；Haiku 同课 9 万且选句偏易，不用 |
 | 音频 | 云端 `audio` 工作流（`.github/workflows/audio.yml`，内部跑 `build_audio.py` + `publish_audio.py`） | 脚本（edge-tts） | 0 |
 | 对数 / 部署检查 | `build_index.py` / `check_audio.py`（deploy 工作流里也会跑） | 脚本 | 0 |
 | 人工抽查 | 用户 | — | — |
@@ -87,6 +87,7 @@ id: u08-l01；unit: 8；lesson: 1；part: 1；书页范围：215 到 222；词�
      （日志里是「没有音频清单」）；音频生成完会自动再部署。
 5. 触发云端音频：`gh workflow run audio.yml -f lessons="u<nn>-l01 u<nn>-l02 u<nn>-l03 u<nn>-l04"`。
    - 实测：一课约 6~8 分钟，4 课约 30 分钟，并发固定 3，微软语音服务没有拒绝 GitHub 的 IP。
+   - 音频站（Pages，约 690MB）每次有新推送就把进行中的构建作废重来，一次构建要 3~10 分钟，所以工作流里**中间的课只推送不等，最后一课才等**一次（`AUDIO_SKIP_WAIT`）；构建状态接口 `pages/builds` 不可靠（被取消的、甚至进行中的都显示 errored），脚本看 `pages-build-deployment` 任务的结果。一个任务可以放整个 Unit 甚至十几课（2026-10-14 实测 24 课约 12 分钟生成 + 推送，不含等待）。云端同一时间只跑一个音频任务（有排队），不要在它跑的时候取消再重开，取消会让尾巴上的推送和构建互相打架。
    - 后台盯：`gh run watch <run id> --exit-status`；看日志 `gh run view <run id> --log | grep -E "新生成|放弃|已上线"`，确认每课「失败 0 个」。
      有失败就对同一批课再触发一次（按哈希跳过已有文件，只补缺的）。
 6. 工作流结束时会提交 `chore(audio): 云端生成音频清单 …` 到 `main`，并触发 deploy。找到这次 deploy
