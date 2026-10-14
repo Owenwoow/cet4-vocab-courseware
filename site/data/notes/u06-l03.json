@@ -1,0 +1,479 @@
+{
+  "_note": "例句词组与语法解析（书外补充，AI 生成）",
+  "sents": {
+    "A lot of times, though, the act of keeping your name is still something that causes concern.": {
+      "ph": [
+        {"t": "A lot of times", "b": "a lot of times", "m": "很多时候"},
+        {"t": "causes concern", "b": "cause concern", "m": "引起担忧"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "A lot of times", "r": "状语"},
+          {"t": ", ", "r": ""},
+          {"t": "though", "r": "插入语"},
+          {"t": ", ", "r": ""},
+          {"t": "the act of keeping your name is still something", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that causes concern", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "though 放在句中用逗号隔开，是插入语（相当于 however），书上把它提到句首译成「然而」。",
+          "the act of keeping your name 是名词化结构，书上展开成动宾式的「保留你的名字的行为」。",
+          "定语从句 that causes concern 的先行词是 something，that 在从句里作 causes 的主语；书上没有译出「某种事情」，把 something that causes concern 压缩成「令人担忧」。"
+        ],
+        "lit": "很多次，然而，保留你的名字的行为仍然是某件引起担忧的事情。"
+      }
+    },
+    "This is partly due to a lack of necessary evidence.": {
+      "ph": [
+        {"t": "due to", "b": "due to", "m": "由于，归因于"},
+        {"t": "a lack of", "b": "a lack of", "m": "缺乏"}
+      ]
+    },
+    "They stayed together for the sake of the children.": {
+      "ph": [
+        {"t": "for the sake of", "b": "for the sake of", "m": "为了"}
+      ]
+    },
+    "The society fails to forgive them for their mistakes.": {
+      "ph": [
+        {"t": "fails to", "b": "fail to do", "m": "未能做到"},
+        {"t": "forgive", "b": "forgive sb. for sth.", "m": "原谅某人的……"},
+        {"t": "for", "b": "forgive sb. for sth.", "m": "原谅某人的……"}
+      ]
+    },
+    "He scolded them for arriving late.": {
+      "ph": [
+        {"t": "scolded", "b": "scold sb. for sth.", "m": "因……斥责某人"},
+        {"t": "for", "b": "scold sb. for sth.", "m": "因……斥责某人"}
+      ]
+    },
+    "He was accused of causing a fire.": {
+      "ph": [
+        {"t": "was accused of", "b": "be accused of", "m": "被控告……"}
+      ]
+    },
+    "To forbid a thing one day and excuse it the next is no foundation for morality.": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "To forbid a thing one day and excuse it the next", "r": "非谓语"},
+          {"t": " is no foundation for morality", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "整句的主语是不定式短语 To forbid … and excuse …，两个动词共用一个 to；the next 是 the next day 的省略，与前面的 one day 对照，所以书上译成「第一天……，第二天又……」。",
+          "谓语是 is no foundation，no + 名词表示彻底否定，相当于 is not any foundation，书上译成「没有道德基础」。"
+        ],
+        "lit": "在一天禁止一件事而在第二天原谅它，不是道德的任何基础。"
+      }
+    },
+    "He has just quarreled with his girlfriend.": {
+      "ph": [
+        {"t": "quarreled with", "b": "quarrel with", "m": "与……吵架"}
+      ]
+    },
+    "The questions were an insult to our intelligence.": {
+      "ph": [
+        {"t": "an insult to", "b": "an insult to", "m": "对……的侮辱"}
+      ]
+    },
+    "But not everything is to be blamed on technology.": {
+      "ph": [
+        {"t": "blamed on", "b": "be blamed on", "m": "归咎于"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "But ", "r": ""},
+          {"t": "not everything is to be blamed on technology", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "not everything 是部分否定（不是「所有事情都不」，而是「并非所有事情都」），所以书上译成「并不是所有的事情都……」。",
+          "is to be blamed 是 be to + 被动不定式，表示「应当 / 要被」，书上译成「都要归咎于科技」，没有用生硬的「被」。"
+        ],
+        "lit": "但不是每件事都应被归咎于科技。"
+      }
+    },
+    "The ads criticised the measure, characterizing it as a \"grocery tax\".": {
+      "ph": [
+        {"t": "characterizing", "b": "characterize … as", "m": "把……描述为"},
+        {"t": "as", "b": "characterize … as", "m": "把……描述为"}
+      ]
+    },
+    "It has drawn a lot of criticism from overseas.": {
+      "ph": [
+        {"t": "drawn", "b": "draw … criticism", "m": "招致批评"},
+        {"t": "a lot of", "b": "a lot of", "m": "大量"},
+        {"t": "criticism", "b": "draw … criticism", "m": "招致批评"}
+      ]
+    },
+    "It is likely to be a critical turning point in one's life.": {
+      "ph": [
+        {"t": "is likely to", "b": "be likely to do", "m": "可能做"},
+        {"t": "turning point", "b": "turning point", "m": "转折点"}
+      ]
+    },
+    "The criterion for a snow day is primarily the inability of school buses.": {
+      "ph": [
+        {"t": "criterion for", "b": "criterion for", "m": "……的标准"}
+      ]
+    },
+    "He assists the professor with his teaching.": {
+      "ph": [
+        {"t": "assists", "b": "assist sb. with sth.", "m": "协助某人做某事"},
+        {"t": "with", "b": "assist sb. with sth.", "m": "协助某人做某事"}
+      ]
+    },
+    "Neither children nor adults could resist the temptation of a free toy.": {
+      "ph": [
+        {"t": "Neither", "b": "neither … nor …", "m": "既不……也不……"},
+        {"t": "nor", "b": "neither … nor …", "m": "既不……也不……"},
+        {"t": "resist the temptation of", "b": "resist the temptation of", "m": "抗拒……的诱惑"}
+      ]
+    },
+    "If our findings persist, we may be faced with a financial crisis.": {
+      "ph": [
+        {"t": "be faced with", "b": "be faced with", "m": "面临"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "If our findings persist", "r": "条件状语"},
+          {"t": ", ", "r": ""},
+          {"t": "we may be faced with a financial crisis", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "if 从句用一般现在时 persist 表示将来，主句 may 表示可能性，是对将来可能情况的真实条件，不是虚拟语气，所以书上直接译「如果……持续下去，我们可能会……」。",
+          "be faced with 形式是被动，意思是「面临」，书上译成主动的「面临」，不译「被面对」。"
+        ],
+        "lit": "如果我们的发现持续，我们可能会被面对一场金融危机。"
+      }
+    },
+    "A lifetime of praise leads smart people to develop too much faith in their intelligence and abilities.": {
+      "ph": [
+        {"t": "leads", "b": "lead sb. to do", "m": "使某人做"},
+        {"t": "to", "b": "lead sb. to do", "m": "使某人做"},
+        {"t": "faith in", "b": "faith in", "m": "对……的信心"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "A lifetime of praise leads smart people", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to develop too much faith in their intelligence and abilities", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "主语 A lifetime of praise 是无生命主语，直译「一生的赞美导致……」生硬，书上用 lead sb. to do 的因果关系译成「会使聪明人……」。",
+          "to develop … 是 leads smart people 后的不定式，作宾语补足语，说明赞美造成的结果，书上译成「产生过度的信心」。",
+          "faith in their intelligence and abilities 里 in 引出信心的对象，书上译成「对自己的智力和能力」，把 their 换成「自己」。"
+        ],
+        "lit": "一生的赞美导致聪明的人发展出对他们的智力和能力太多的信念。"
+      }
+    },
+    "Employers attach great importance to their corporations' diversity.": {
+      "ph": [
+        {"t": "attach great importance to", "b": "attach importance to", "m": "重视"}
+      ]
+    },
+    "What are entrepreneurs advised to do to avoid traps that often accompany rivalry?": {
+      "ph": [
+        {"t": "advised to", "b": "be advised to do", "m": "被建议做"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "What are entrepreneurs advised to do", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to avoid traps", "r": "目的状语"},
+          {"t": " ", "r": ""},
+          {"t": "that often accompany rivalry", "r": "定语从句"},
+          {"t": "?", "r": ""}
+        ],
+        "pts": [
+          "主干是疑问句，What 是 do 的宾语（advised to do what），are … advised 是被动，书上译成「建议企业家们采取哪些措施」，把被动转为主动。",
+          "to avoid traps … 是目的状语，说明做这些措施是为了避免陷阱。",
+          "定语从句 that often accompany rivalry 的先行词是 traps，that 在从句里作 accompany 的主语；书上前置成「竞争中常出现的陷阱」。"
+        ],
+        "lit": "企业家们被建议做什么以避免经常伴随竞争的陷阱？"
+      }
+    },
+    "Women are more likely than men to take charge of their stress and manage it.": {
+      "ph": [
+        {"t": "more likely", "b": "be likely to do", "m": "更有可能做"},
+        {"t": "to", "b": "be likely to do", "m": "更有可能做"},
+        {"t": "take charge of", "b": "take charge of", "m": "掌管，控制"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Women are more likely than men", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to take charge of their stress and manage it", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "be likely to do 被 than men 隔开，more … than men 是比较结构，书上译成「比男性更有可能……」。",
+          "不定式 to 后并列两个动词 take charge of … 和 manage it，it 指代 their stress，书上译成「掌控自己的压力并加以管理」，用「加以」代替重复的宾语。"
+        ],
+        "lit": "女性比男性更可能掌管她们的压力并管理它。"
+      }
+    },
+    "So executives hit on an idea that would harness the new-found popularity of television.": {
+      "ph": [
+        {"t": "hit on", "b": "hit on", "m": "想出，偶然想到"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "So executives hit on an idea", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that would harness the new-found popularity of television", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "定语从句 that would harness … 的先行词是 idea，that 在从句里作 harness 的主语（后面直接接动词，没有别的主语），所以是定语从句，不是同位语从句。",
+          "would 出现在主句 hit on 的过去时语境里，且没有 if 条件，是过去语境中的情态，不是虚拟语气；书上译成「可以利用」。",
+          "书上把从句放在后面，译成「想出了一个主意，可以利用……」，没有前置成「……的主意」。"
+        ],
+        "lit": "所以高管们想到了一个会利用电视新近流行的主意。"
+      }
+    },
+    "It is well positioned to compete with the giants.": {
+      "ph": [
+        {"t": "compete with", "b": "compete with", "m": "与……竞争"}
+      ]
+    },
+    "But what makes you a competent lion dancer is that there's a sense of imagination involved.": {
+      "ph": [
+        {"t": "a sense of", "b": "a sense of", "m": "一种……的意识"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "But ", "r": ""},
+          {"t": "what makes you a competent lion dancer", "r": "主语从句"},
+          {"t": " is ", "r": "主干"},
+          {"t": "that there's a sense of imagination involved", "r": "表语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "what makes you a competent lion dancer 是主语从句，what 在从句里作 makes 的主语，makes you a … 是 make + 宾语 + 名词补足语，书上译成「让你成为一个称职的舞狮者的」。",
+          "is 后面的 that 从句是表语从句，that 不作成分，书上译成「是，其中蕴含着……」。",
+          "involved 是过去分词作后置定语，修饰 a sense of imagination，所以书上译成「其中蕴含着一种想象力」。"
+        ],
+        "lit": "但是使你成为称职舞狮者的东西是有一种想象力被涉及其中。"
+      }
+    },
+    "New research has found deep water reserves under the state which could help solve their drought crisis.": {
+      "ph": [
+        {"t": "help solve", "b": "help (to) do", "m": "有助于解决"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "New research has found deep water reserves under the state", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "which could help solve their drought crisis", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "which 的先行词按意思是 deep water reserves（深水储备能帮助解决危机），不是紧挨着的 the state；which 在从句里作 could help 的主语，与先行词隔了介词短语 under the state。",
+          "书上把 under the state 前置成「该州的深水储备」，再用「可能有助于解决……」接上，读者不会把先行词误认成「州」。",
+          "could 是表示可能性的情态动词，句中没有 if 条件，不是虚拟语气，书上译成「可能」。"
+        ],
+        "lit": "新的研究发现了在该州之下的深水储备，它可能帮助解决他们的干旱危机。"
+      }
+    },
+    "Funding for science has changed with the times.": {
+      "ph": [
+        {"t": "changed with the times", "b": "change with the times", "m": "随时代变化"}
+      ]
+    },
+    "International commerce plays a vital role in global economic growth.": {
+      "ph": [
+        {"t": "plays a vital role in", "b": "play a vital role in", "m": "在……中发挥重要作用"}
+      ]
+    },
+    "The other sections you should get to know are the frozen foods and the durable goods.": {
+      "ph": [
+        {"t": "get to know", "b": "get to know", "m": "逐渐了解"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "The other sections", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "you should get to know", "r": "定语从句"},
+          {"t": " are the frozen foods and the durable goods", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "sections 后面省略了关系代词 that / which，定语从句 you should get to know 的先行词是 sections，省略的关系词在从句里作 know 的宾语。",
+          "书上把定语从句前置成「你应该了解的其他部分」，再接「是冷冻食品和耐用商品」。"
+        ],
+        "lit": "你应该了解的其他部分是冷冻食品和耐用品。"
+      }
+    },
+    "That particular model is not currently in stock.": {
+      "ph": [
+        {"t": "in stock", "b": "in stock", "m": "有现货"}
+      ]
+    },
+    "If you don't register your trademark yourself, there's a good chance that it will be squatted by others.": {
+      "ph": [
+        {"t": "a good chance", "b": "a good chance", "m": "很有可能"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "If you don't register your trademark yourself", "r": "条件状语"},
+          {"t": ", ", "r": ""},
+          {"t": "there's a good chance", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that it will be squatted by others", "r": "同位语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that it will be squatted by others 解释 chance 的内容，that 在从句里不作任何成分（it 是主语），所以是同位语从句，不是定语从句；书上译成「很有可能它会被……」。",
+          "will be squatted by others 是被动，书上保留「被别人占用」，因为动作承受者 it 是主语，施动者 others 也要交代。",
+          "if 条件状语用一般现在时 don't register，主句用 there is a good chance + will，表示对将来的真实预测，不是虚拟语气。"
+        ],
+        "lit": "如果你自己不注册你的商标，有一个很大的机会它将被别人占用。"
+      }
+    },
+    "A relatively harmless gadget may be turning friends away from your home.": {
+      "ph": [
+        {"t": "turning", "b": "turn … away", "m": "使……离开"},
+        {"t": "away", "b": "turn … away", "m": "使……离开"}
+      ]
+    },
+    "Scotland will reach the national target in carbon emissions reduction ahead of schedule.": {
+      "ph": [
+        {"t": "ahead of schedule", "b": "ahead of schedule", "m": "提前"}
+      ]
+    },
+    "She aims to open up fresh avenues for women post-doctors to join in research work.": {
+      "ph": [
+        {"t": "aims to", "b": "aim to do", "m": "力求做"},
+        {"t": "open up", "b": "open up", "m": "开辟"},
+        {"t": "join in", "b": "join in", "m": "参与"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "She aims to open up fresh avenues", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "for women post-doctors to join in research work", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "for women post-doctors to join in … 是带逻辑主语的不定式：for 引出不定式的执行者，to join in 作 avenues 的后置定语，意思是「供女性博士后参与研究工作的途径」。",
+          "书上把 for women post-doctors 提前译成「为女性博士后……开辟新的途径」，把「参与研究工作」放进前面，顺序和英文不同。"
+        ],
+        "lit": "她力求开辟新的途径，让女性博士后参加研究工作。"
+      }
+    },
+    "They organise a series of seminars on world economy.": {
+      "ph": [
+        {"t": "a series of", "b": "a series of", "m": "一系列"}
+      ]
+    },
+    "These groups provide invaluable funding for scientific research.": {
+      "ph": [
+        {"t": "provide", "b": "provide … for", "m": "为……提供"},
+        {"t": "for", "b": "provide … for", "m": "为……提供"}
+      ]
+    },
+    "I suppose that's what these films are all about—good triumphing over evil.": {
+      "ph": [
+        {"t": "are all about", "b": "be all about", "m": "主题是，全在于"},
+        {"t": "triumphing over", "b": "triumph over", "m": "战胜"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "I suppose", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that's what these films are all about", "r": "宾语从句"},
+          {"t": "—", "r": ""},
+          {"t": "good triumphing over evil", "r": "同位语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "suppose 后面是宾语从句 that's what …；其中 what these films are all about 又是表语从句，what 作介词 about 的宾语（be all about what），所以 about 留在句尾。",
+          "书上把 be all about 转成名词「主题」，译成「那就是这些电影的主题」。",
+          "破折号后 good triumphing over evil 补充说明 what 的具体内容，good 在这里是名词「正义」，书上译成「正义战胜邪恶」。"
+        ],
+        "lit": "我想这就是这些电影全部关于的东西——善战胜邪恶。"
+      }
+    },
+    "A quarter of this year's American grain harvest will be used to produce bio-fuel for cars.": {
+      "ph": [
+        {"t": "A quarter of", "b": "a quarter of", "m": "四分之一"},
+        {"t": "used to", "b": "be used to do", "m": "被用于做"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "A quarter of this year's American grain harvest will be used", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to produce bio-fuel for cars", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "will be used 是被动，后接 to produce（动词原形），所以是「被用来做」，to 是不定式符号；不是「习惯于做」的 be used to doing。",
+          "书上把被动译成「将用于生产……」，省去「被」字。",
+          "主语 A quarter of … harvest 是「分数 + of + 名词」，书上译成「……收成的四分之一」，把数量放在最后。"
+        ],
+        "lit": "今年美国谷物收成的四分之一将被用来生产汽车的生物燃料。"
+      }
+    },
+    "The food industry plays a major role in fighting obesity.": {
+      "ph": [
+        {"t": "plays a major role in", "b": "play a major role in", "m": "在……中扮演重要角色"}
+      ]
+    },
+    "Several studies have implied that emotional intelligence can be used to manipulate others for personal gains.": {
+      "ph": [
+        {"t": "used to", "b": "be used to do", "m": "被用来做"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Several studies have implied", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that emotional intelligence can be used to manipulate others for personal gains", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "主语 Several studies 是无生命主语，直译「几项研究暗示了……」生硬，书上译成「几项研究表明……」。",
+          "that 引导 implied 的宾语从句；can be used to manipulate 是被动 + 不定式，书上译成主动的「可以用来操纵他人」。",
+          "for personal gains 说明目的，书上译成「以谋取个人利益」。"
+        ],
+        "lit": "几项研究已经暗示，情商可以被用来为了个人利益而操纵别人。"
+      }
+    },
+    "Those who want to use computers should know how computers operate.": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "Those", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "who want to use computers", "r": "定语从句"},
+          {"t": " ", "r": ""},
+          {"t": "should know", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "how computers operate", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "定语从句 who want to use computers 的先行词是 Those（指人），who 在从句里作 want 的主语；书上前置成「那些想要使用电脑的人」。",
+          "how computers operate 是 know 的宾语从句，how 在从句里作 operate 的方式状语，书上译成「电脑是如何运转的」。"
+        ],
+        "lit": "那些想要使用电脑的人应该知道电脑如何运转。"
+      }
+    },
+    "They cooperated well with the police.": {
+      "ph": [
+        {"t": "cooperated", "b": "cooperate with", "m": "与……合作"},
+        {"t": "with", "b": "cooperate with", "m": "与……合作"}
+      ]
+    },
+    "They collaborated on building the first space coffee machine.": {
+      "ph": [
+        {"t": "collaborated on", "b": "collaborate on", "m": "合作做"}
+      ]
+    }
+  }
+}

@@ -1,0 +1,365 @@
+{
+  "_note": "例句词组与语法解析（书外补充，AI 生成）",
+  "sents": {
+    "A major auto company is holding a press conference next week.": {
+      "ph": [{"t": "holding a press conference", "b": "hold a press conference", "m": "举行新闻发布会"}]
+    },
+    "Furthermore, in-class exams force students to learn how to perform under pressure, an essential work skill.": {
+      "ph": [
+        {"t": "force", "b": "force sb. to do", "m": "迫使某人做"},
+        {"t": "to", "b": "force sb. to do", "m": "迫使某人做"},
+        {"t": "under pressure", "b": "under pressure", "m": "在压力下"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Furthermore, ", "r": ""},
+          {"t": "in-class exams force students to learn how to perform under pressure", "r": "主干"},
+          {"t": ", ", "r": ""},
+          {"t": "an essential work skill", "r": "同位语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "force students to learn 是「force sb. to do」，书上译成「迫使学生学习」；learn 后的 how to perform 是「疑问词 + 不定式」，整体作 learn 的宾语，所以译成「学习如何……表现」。",
+          "句末逗号后的 an essential work skill 是同位语，说明前面整件事（在压力下表现），不是只说 pressure；书上因此另起一个小分句「这是一项基本的工作技能」。"
+        ],
+        "lit": "而且，课堂内的考试迫使学生学习如何在压力下表现，一项基本的工作技能。"
+      }
+    },
+    "She was unable to suppress a giggle.": {
+      "ph": [{"t": "unable to", "b": "be unable to do", "m": "不能做"}]
+    },
+    "Some services, however, remind us that life will eventually return to normal.": {
+      "ph": [
+        {"t": "remind us that", "b": "remind sb. that", "m": "提醒某人……"},
+        {"t": "return to normal", "b": "return to normal", "m": "恢复正常"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Some services", "r": "主干"},
+          {"t": ", however, ", "r": "插入语"},
+          {"t": "remind us", "r": "主干"},
+          {"t": " that ", "r": ""},
+          {"t": "life will eventually return to normal", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "however 夹在主语和谓语之间，是插入语，表转折；书上把「然而」提到句首，读起来更顺。",
+          "remind sb. that…：us 是 remind 的间接宾语，that 引导的从句是直接宾语（宾语从句），所以译成「提醒我们，……」。",
+          "主句 remind 是一般现在时，从句的 will 是真正的将来，不是过去将来的时态呼应，书上译「将恢复」。"
+        ],
+        "lit": "一些服务，然而，提醒我们生活将最终回到正常。"
+      }
+    },
+    "\"I felt empowered because I broke through my own limitations,\" she recalls.": {
+      "ph": [{"t": "broke through", "b": "break through", "m": "突破"}],
+      "an": {
+        "parts": [
+          {"t": "\"", "r": ""},
+          {"t": "I felt empowered", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "because I broke through my own limitations", "r": "原因状语"},
+          {"t": ",\" ", "r": ""},
+          {"t": "she recalls", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "引语放在前面，she recalls 放在后面作说明；书上保持这个顺序，译成「……」她回忆道。",
+          "empowered 是过去分词作表语（felt empowered），含被动义，所以书上译成「被赋予了力量」，而不是「我感到有力量」。",
+          "because 从句说明 felt empowered 的原因，书上也用「因为」放在后面，和英文顺序一致。"
+        ],
+        "lit": "「我感到被赋予力量，因为我突破了我自己的局限，」她回忆。"
+      }
+    },
+    "Most people express gratitude for help.": {
+      "ph": [{"t": "express gratitude for", "b": "express gratitude for", "m": "对……表示感激"}]
+    },
+    "There was an immense network of paved roads, residential streets and expressways.": {
+      "ph": [{"t": "network of", "b": "network of", "m": "……网络"}]
+    },
+    "It is to recognise that in America's vast criminal justice system, second chances are crucial.": {
+      "ph": [{"t": "criminal justice system", "b": "criminal justice system", "m": "刑事司法体系"}],
+      "an": {
+        "parts": [
+          {"t": "It is to recognise", "r": "主干"},
+          {"t": " that ", "r": ""},
+          {"t": "in America's vast criminal justice system, second chances are crucial", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "to recognise… 是不定式作表语，说明 It 所指的内容；书上没有译出 It，直接译成「要认识到，……」。",
+          "that 引导 recognise 的宾语从句；从句开头的 in America's vast criminal justice system 是前置的地点状语，书上保留在前，译成「在美国庞大的刑事司法体系中」。",
+          "criminal justice system 是三个名词叠加，最后的 system 是中心词，前两个依次修饰，所以按「刑事 + 司法 + 体系」译。"
+        ],
+        "lit": "它是去认识到，在美国庞大的刑事司法系统中，第二次机会是关键的。"
+      }
+    },
+    "Are the benefits of the product important enough to justify buying it?": {
+      "ph": [{"t": "enough to", "b": "adj. + enough to do", "m": "足以做"}]
+    },
+    "The jury has returned a verdict of guilty.": {
+      "ph": [{"t": "returned a verdict", "b": "return a verdict", "m": "作出裁定"}]
+    },
+    "We learn, in a sense, by trial and error.": {
+      "ph": [
+        {"t": "in a sense", "b": "in a sense", "m": "从某种意义上说"},
+        {"t": "trial and error", "b": "trial and error", "m": "反复试错"}
+      ]
+    },
+    "A couple of them have got involved in crimes.": {
+      "ph": [
+        {"t": "A couple of", "b": "a couple of", "m": "几个"},
+        {"t": "got involved in", "b": "get involved in", "m": "卷入"}
+      ]
+    },
+    "There is discrimination against male nurses.": {
+      "ph": [{"t": "discrimination against", "b": "discrimination against", "m": "对……的歧视"}]
+    },
+    "They were obliged to fulfill the signed contract.": {
+      "ph": [{"t": "were obliged to", "b": "be obliged to do", "m": "不得不做"}]
+    },
+    "They are responsible for working through that problem.": {
+      "ph": [
+        {"t": "are responsible for", "b": "be responsible for", "m": "对……负责"},
+        {"t": "working through", "b": "work through", "m": "解决"}
+      ]
+    },
+    "He felt it his duty to revolutionise its management.": {
+      "ph": [
+        {"t": "felt it his duty to", "b": "feel it one's duty to do", "m": "觉得做某事是自己的责任"}
+      ]
+    },
+    "He faces trial on several charges.": {
+      "ph": [{"t": "faces trial", "b": "face trial", "m": "面临审判"}]
+    },
+    "The child had been treated and was being prepared for discharge.": {
+      "ph": [{"t": "prepared for", "b": "be prepared for", "m": "为……做准备"}],
+      "an": {
+        "parts": [
+          {"t": "The child had been treated and was being prepared for discharge", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "两个谓语共用主语 The child：had been treated 是过去完成时被动，表示「之前已经治疗过」，was being prepared 是过去进行时被动，表示「当时正在准备」，两者的先后靠时态区分。",
+          "两处被动书上都译成主动：「已经接受了治疗」「正准备出院」，不说「被治疗」「被准备」。",
+          "discharge 在这里是名词（出院），前面 for 是介词，所以 prepared for discharge 译成「准备出院」。"
+        ],
+        "lit": "这个孩子已经被治疗了，并且正在被准备出院。"
+      }
+    },
+    "They are calling for tough legislation to tackle this problem.": {
+      "ph": [{"t": "calling for", "b": "call for", "m": "呼吁，要求"}]
+    },
+    "Sharing items such as cars does good to the environment.": {
+      "ph": [
+        {"t": "such as", "b": "such as", "m": "例如"},
+        {"t": "does good to", "b": "do good to", "m": "对……有好处"}
+      ]
+    },
+    "A clever lawyer might find a way of getting round that clause.": {
+      "ph": [
+        {"t": "find a way of", "b": "find a way of doing", "m": "找到做……的办法"},
+        {"t": "getting round", "b": "get round", "m": "绕过"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "A clever lawyer might find a way", "r": "主干"},
+          {"t": " of getting round that clause", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "a way of getting round that clause：「of + 动名词」跟在 way 后面作定语，修饰 a way；书上把它前置成「绕过那个条款的办法」。",
+          "might 在这里表示推测的可能性（语气比 may 更弱），句中没有 if 条件，主句也不是过去时，所以既不是虚拟语气也不是时态呼应，书上译成「也许能」。"
+        ],
+        "lit": "一位聪明的律师可能找到一种绕过那个条款的方式。"
+      }
+    },
+    "She worked on the draft of the American Constitution.": {
+      "ph": [{"t": "worked on", "b": "work on", "m": "从事，参与"}]
+    },
+    "We proceeded to drift on up the river.": {
+      "ph": [{"t": "proceeded to", "b": "proceed to do", "m": "接着做，继续做"}]
+    },
+    "They float around in the oven.": {
+      "ph": [{"t": "float around", "b": "float around", "m": "到处漂浮"}]
+    },
+    "There are valid reasons boredom may feel so painful.": {
+      "an": {
+        "parts": [
+          {"t": "There are valid reasons", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "boredom may feel so painful", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "boredom may feel so painful 是省略了关系副词 why 的定语从句：先行词是 reasons，why 在从句里作原因状语（因为这些理由，无聊可能感到痛苦）。",
+          "书上没有把从句前置成「……的理由」，而是先译从句内容，再用「这是有合理的理由的」回扣 There are valid reasons。",
+          "feel 在这里是系动词，主语 boredom 是抽象名词，书上补出「让人」，译成「（让人）感到如此痛苦」。"
+        ],
+        "lit": "有合理的理由，无聊可能感觉如此痛苦。"
+      }
+    },
+    "It appeals to kids' curiosity to find out what is hidden inside.": {
+      "ph": [
+        {"t": "appeals to", "b": "appeal to", "m": "吸引"},
+        {"t": "find out", "b": "find out", "m": "弄清，查明"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "It appeals to kids' curiosity", "r": "主干"},
+          {"t": " to find out ", "r": "非谓语"},
+          {"t": "what is hidden inside", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "to find out… 紧跟在 curiosity 之后，是修饰它的不定式（想弄清……的好奇心）；书上把它拆成后面的分句「要弄清里面藏着什么」，没有硬挤进「……的好奇心」里。",
+          "what is hidden inside 是 find out 的宾语从句，what 在从句中作主语；is hidden 是被动，书上译成主动的「藏着」。"
+        ],
+        "lit": "它吸引孩子们的好奇心去弄清什么被隐藏在里面。"
+      }
+    },
+    "Kids would beg for a new lunch box every year to keep up with the newest characters.": {
+      "ph": [
+        {"t": "beg for", "b": "beg for", "m": "乞求，央求"},
+        {"t": "keep up with", "b": "keep up with", "m": "跟上"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Kids would beg for a new lunch box every year", "r": "主干"},
+          {"t": " to keep up with the newest characters", "r": "目的状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "to keep up with… 是不定式作目的状语，说明孩子们乞求新饭盒是为了什么，书上译成「来跟上……」。",
+          "the newest characters 直译是「最新的角色」，书上补译成「最新角色的潮流」，因为 keep up with 在这里指跟上潮流。"
+        ],
+        "lit": "孩子们每年会乞求一个新饭盒，以便跟上最新的角色。"
+      }
+    },
+    "They surrendered their guns to the police.": {
+      "ph": [
+        {"t": "surrendered", "b": "surrender … to", "m": "向……交出"},
+        {"t": "to", "b": "surrender … to", "m": "向……交出"}
+      ]
+    },
+    "It is urgent that schools teach kids how to verify online information.": {
+      "ph": [{"t": "It is urgent that", "b": "it is urgent that", "m": "迫切需要……"}],
+      "an": {
+        "parts": [
+          {"t": "It is urgent", "r": "主干"},
+          {"t": " that ", "r": ""},
+          {"t": "schools teach kids how to verify online information", "r": "主语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "It 是形式主语，真正的主语是 that 引导的从句；书上不译 It，把「学校教孩子们……」放在后面，前面译成「迫切需要」。",
+          "urgent 这类形容词后的 that 从句，谓语用「(should) + 动词原形」；这里 schools 是复数，teach 看不出变化，但属于这一类，所以译成「需要……」而不是陈述事实。",
+          "teach kids how to verify…：kids 是间接宾语，how to verify online information 是「疑问词 + 不定式」作直接宾语，译成「教孩子们如何核实……」。"
+        ],
+        "lit": "紧迫的是，学校教孩子们如何核实在线信息。"
+      }
+    },
+    "He spent his life tortured by the memories of his childhood.": {
+      "ph": [{"t": "tortured by", "b": "be tortured by", "m": "被……折磨"}],
+      "an": {
+        "parts": [
+          {"t": "He spent his life", "r": "主干"},
+          {"t": " tortured by the memories of his childhood", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "tortured by… 是过去分词短语，说明 He 度过一生时的状态，含被动义（被折磨）；书上把动作的施事 the memories 提成主语，译成主动的「童年的记忆使他痛苦了一辈子」。",
+          "of his childhood 是后置定语，修饰 memories，书上前置成「童年的记忆」。"
+        ],
+        "lit": "他度过了他的一生，被他童年的记忆折磨着。"
+      }
+    },
+    "One benefit of this change is that students will not fall victim to the \"summer slide\".": {
+      "ph": [{"t": "fall victim to", "b": "fall victim to", "m": "成为……的受害者"}],
+      "an": {
+        "parts": [
+          {"t": "One benefit of this change is", "r": "主干"},
+          {"t": " that ", "r": ""},
+          {"t": "students will not fall victim to the \"summer slide\"", "r": "表语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导的从句跟在系动词 is 后面，作表语（表语从句），说明「好处」的具体内容，所以译成「一个好处是……」。",
+          "fall victim to 是固定搭配，「成为……的受害者」；will not 是真正的将来否定，书上译「不会成为」。",
+          "\"summer slide\" 直译是「暑期滑坡」，书上括号里补了「（学习）」，点明退步的是学习。"
+        ],
+        "lit": "这个变化的一个好处是学生们将不会沦为「暑期滑坡」的受害者。"
+      }
+    },
+    "The pursuit of a fulfilling career involves personal sacrifice.": {
+      "ph": [{"t": "pursuit of", "b": "pursuit of", "m": "追求"}]
+    },
+    "He has been released from jail.": {
+      "ph": [{"t": "released from", "b": "be released from", "m": "从……被释放"}]
+    },
+    "He visited a prison located on a faraway island.": {
+      "ph": [{"t": "located on", "b": "be located on", "m": "位于"}]
+    },
+    "Their parents often punish them for minor faults.": {
+      "ph": [
+        {"t": "punish", "b": "punish … for", "m": "因……惩罚"},
+        {"t": "for", "b": "punish … for", "m": "因……惩罚"}
+      ]
+    },
+    "Especially for women, there is a clear penalty at work for being overweight or obese.": {
+      "ph": [{"t": "at work", "b": "at work", "m": "在工作中"}],
+      "an": {
+        "parts": [
+          {"t": "Especially for women", "r": "状语"},
+          {"t": ", ", "r": ""},
+          {"t": "there is a clear penalty at work for being overweight or obese", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "there is a clear penalty 是存在句，penalty 本义是「惩罚」，这里指超重带来的不利后果，书上译成「会有明显的不利」。",
+          "for being overweight or obese 是「介词 for + 动名词」，说明 penalty 因何而来；书上把这个动名词短语提成主语「超重或肥胖」，句子变成「超重或肥胖会有明显的不利」。",
+          "Especially for women 是前置的状语，限定适用对象，书上保留在句首，译成「尤其是对女性来说」。"
+        ],
+        "lit": "尤其对女性来说，工作中有一个明显的惩罚，针对超重或肥胖。"
+      }
+    },
+    "More than half of the interviewees felt no sense of guilt over cheating.": {
+      "ph": [
+        {"t": "More than half of", "b": "more than half of", "m": "超过一半的"},
+        {"t": "sense of", "b": "a sense of", "m": "……感"}
+      ]
+    },
+    "Have you ever used email to apologize to a colleague?": {
+      "ph": [{"t": "apologize to", "b": "apologize to sb.", "m": "向……道歉"}]
+    },
+    "He felt guilty for his sins and decided to change.": {
+      "ph": [{"t": "felt guilty for", "b": "feel guilty for", "m": "因……感到内疚"}]
+    },
+    "The busy streets in Paris were uneven and caked in thick mud.": {
+      "ph": [{"t": "caked in", "b": "be caked in", "m": "覆满（泥）"}]
+    },
+    "It causes them to lose dignity.": {
+      "ph": [
+        {"t": "causes", "b": "cause sb. to do", "m": "使某人做"},
+        {"t": "to", "b": "cause sb. to do", "m": "使某人做"}
+      ]
+    },
+    "She was found innocent of any crime.": {
+      "ph": [{"t": "found innocent of", "b": "be found innocent of", "m": "被判定无……罪"}]
+    },
+    "He was the first minor to be executed in South Carolina.": {
+      "an": {
+        "parts": [
+          {"t": "He was the first minor", "r": "主干"},
+          {"t": " to be executed", "r": "非谓语"},
+          {"t": " in South Carolina", "r": "状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "「序数词 + 名词 + 不定式」：the first minor to be executed 里，to be executed 作后置定语修饰 minor，表示「第一个被处决的未成年人」。",
+          "to be executed 是不定式的被动形式，书上保留「被处决」；in South Carolina 修饰 executed，书上前置到「第一个」之前，译成「南卡罗来纳州第一个被处决的未成年人」。"
+        ],
+        "lit": "他是在南卡罗来纳州第一个要被处决的未成年人。"
+      }
+    }
+  }
+}

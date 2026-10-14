@@ -1,0 +1,436 @@
+{
+  "_note": "例句词组与语法解析（书外补充，AI 生成）",
+  "sents": {
+    "Nigeria is dependent on $1 billion worth of tomato paste imports every year.": {
+      "ph": [
+        {"t": "is dependent on", "b": "be dependent on", "m": "依赖"}
+      ]
+    },
+    "The device is said to be the world's first portable transistor.": {
+      "ph": [
+        {"t": "is said to be", "b": "be said to be", "m": "据说是"}
+      ]
+    },
+    "The wrong name is invariably fished out from the same relationship pond.": {
+      "ph": [
+        {"t": "fished out", "b": "fish out", "m": "捞出，找出"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "The wrong name is invariably fished out", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "from the same relationship pond", "r": "状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "is fished out 是被动，动作的执行者没有出现；书上保留被动意味，译成「被……找到」，并把 invariably 译成「总是」放在动词前。",
+          "relationship pond 是名词作定语（关系的池子），书上译成「关系池」；The wrong name 的「错误」是形容词作定语，书上加引号，是在强调这是个比喻说法。"
+        ],
+        "lit": "错误的名字总是被从同一个关系池塘里捞出来。"
+      }
+    },
+    "A man was pulled to safety after a building collapse.": {
+      "ph": [
+        {"t": "pulled to safety", "b": "pull sb. to safety", "m": "拉到安全地带"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "A man was pulled to safety", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "after a building collapse", "r": "时间状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "a building collapse 是名词化结构：building 是 collapse 的逻辑主语，意思是「建筑物倒塌」。书上把它展开成主谓式的「一幢建筑物倒塌后」，并把 after 引出的时间状语提到句首。",
+          "was pulled 是被动，书上也用被动意味译成「被拉到安全地带」；to safety 表结果（到了安全的地方），所以译成「地带」而不是「安全」。"
+        ],
+        "lit": "一名男子在一次建筑物倒塌之后被拉到了安全。"
+      }
+    },
+    "Their loud claps can be confused with explosions.": {
+      "ph": [
+        {"t": "be confused with", "b": "be confused with", "m": "与……相混淆"}
+      ]
+    },
+    "As for the organisation itself, it declined a request for an interview.": {
+      "ph": [
+        {"t": "As for", "b": "as for", "m": "至于"},
+        {"t": "a request for", "b": "a request for", "m": "……的请求"}
+      ]
+    },
+    "As what happened with tobacco, this will require a cultural shift, but that can happen.": {
+      "ph": [
+        {"t": "cultural shift", "b": "cultural shift", "m": "文化转变"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "As what happened with tobacco", "r": "方式状语"},
+          {"t": ", ", "r": ""},
+          {"t": "this will require a cultural shift", "r": "主干"},
+          {"t": ", ", "r": ""},
+          {"t": "but that can happen", "r": "并列分句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "As 引出「正如……一样」的方式状语，what happened with tobacco 里 what 是 happened 的主语，意思是「烟草那里发生的事」；书上把动词 happened 转成名词性的「烟草的情况」，译成「正如烟草的情况一样」。",
+          "this 作主语、require 作谓语，this 指前文谈到的这件事，无生命主语，书上顺着译成「这虽需要文化转变」。",
+          "but 连接前后两个分句，书上把转折提前，用「虽……但……」呼应；that can happen 的 that 指代 a cultural shift，can 表可能性，所以译成「也可能会发生」。"
+        ],
+        "lit": "正如烟草发生的事情，这将需要一次文化转变，但那是可能发生的。"
+      }
+    },
+    "They take up a lot of our fresh water demands across the world.": {
+      "ph": [
+        {"t": "take up", "b": "take up", "m": "占用"},
+        {"t": "a lot of", "b": "a lot of", "m": "大量"}
+      ]
+    },
+    "He inquired about his client's family background.": {
+      "ph": [
+        {"t": "inquired about", "b": "inquire about", "m": "询问"}
+      ]
+    },
+    "Her courage is an example to all of us.": {
+      "ph": [
+        {"t": "an example to", "b": "an example to", "m": "……的榜样"}
+      ]
+    },
+    "Parents should encourage their child to take the risks needed to learn and grow.": {
+      "ph": [
+        {"t": "encourage", "b": "encourage sb. to do", "m": "鼓励某人做"},
+        {"t": "to", "b": "encourage sb. to do", "m": "鼓励某人做"},
+        {"t": "take the risks", "b": "take risks", "m": "冒险，承担风险"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Parents should encourage their child", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to take the risks", "r": "非谓语"},
+          {"t": " ", "r": ""},
+          {"t": "needed to learn and grow", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "encourage sb. to do 中 to take the risks 是宾语补足语，书上译成「鼓励他们的孩子承担……风险」。",
+          "needed to learn and grow 紧跟在 the risks 后面，是过去分词短语作后置定语（被需要的风险），其中 to learn and grow 是目的不定式；书上把它前置成「学习和成长中必要的」，放在「风险」前面。"
+        ],
+        "lit": "父母应该鼓励他们的孩子去冒那些学习和成长所需要的风险。"
+      }
+    },
+    "Playing with digital devices discourages kids from active discovery.": {
+      "ph": [
+        {"t": "Playing with", "b": "play with", "m": "玩，摆弄"},
+        {"t": "discourages", "b": "discourage sb. from sth.", "m": "阻碍某人做某事"},
+        {"t": "from", "b": "discourage sb. from sth.", "m": "阻碍某人做某事"}
+      ]
+    },
+    "Gender inequality continues to frustrate a lot of female employees.": {
+      "ph": [
+        {"t": "continues to", "b": "continue to do", "m": "仍然，继续"},
+        {"t": "a lot of", "b": "a lot of", "m": "许多"}
+      ]
+    },
+    "The article was intended to provoke discussion.": {
+      "ph": [
+        {"t": "was intended to", "b": "be intended to do", "m": "旨在"}
+      ]
+    },
+    "It is evident that the writer advocates the idea of returning to nature.": {
+      "ph": [
+        {"t": "It is evident that", "b": "it is evident that", "m": "很明显"},
+        {"t": "returning to", "b": "return to", "m": "回归"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "It is evident", "r": "主干"},
+          {"t": " that ", "r": ""},
+          {"t": "the writer advocates the idea of returning to nature", "r": "主语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "It 是形式主语，真正的主语是后面的 that 从句；这是「It is + 形容词 + that 从句」的常见句型，书上译成「很明显，……」，把 it 省掉、结论放在后面。",
+          "the idea of returning to nature 中 returning to nature 是动名词短语，作介词 of 的宾语，解释 idea 的内容，书上译成「回归自然的思想」，把后面的内容前置成「……的」。"
+        ],
+        "lit": "很明显的是，作者提倡回到自然的想法。"
+      }
+    },
+    "It refused to sponsor the 1984 Olympics.": {
+      "ph": [
+        {"t": "refused to", "b": "refuse to do", "m": "拒绝做"}
+      ]
+    },
+    "He found many lies are spontaneous responses to an unexpected demand.": {
+      "ph": [
+        {"t": "responses to", "b": "response to", "m": "对……的反应"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "He found", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "many lies are spontaneous responses to an unexpected demand", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "found 后面省略了引导宾语从句的 that，many lies 是从句主语，所以书上译成「他发现，许多谎言都是……」，在「发现」后加逗号。",
+          "responses to an unexpected demand 中 to 短语修饰 responses，书上把它前置成「对意外需求的自发反应」。"
+        ],
+        "lit": "他发现许多谎言是对一个意外的需求的自发反应。"
+      }
+    },
+    "Our philosophy is to inspire kids at a young age to understand that engineering is a great career.": {
+      "ph": [
+        {"t": "inspire", "b": "inspire … to do", "m": "激励某人做"},
+        {"t": "to", "b": "inspire … to do", "m": "激励某人做"},
+        {"t": "at a young age", "b": "at a young age", "m": "在年幼的时候"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Our philosophy is", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to inspire kids at a young age to understand", "r": "非谓语"},
+          {"t": " ", "r": ""},
+          {"t": "that engineering is a great career", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "to inspire… 是不定式短语作表语，说明 philosophy 的内容，所以书上译成「我们的理念是……」。",
+          "inspire kids to understand 是「inspire sb. to do」，书上把它拆成两个分句「启迪他们，让他们明白」，at a young age 译成时间状语「在孩子们很小的时候」放在前面。",
+          "that 引导 understand 的宾语从句，从句内容 engineering is a great career 译在「明白」之后。"
+        ],
+        "lit": "我们的理念是在年幼时激励孩子们去理解工程学是一个伟大的职业。"
+      }
+    },
+    "He aspired to be their next leader.": {
+      "ph": [
+        {"t": "aspired to", "b": "aspire to do", "m": "渴望做"}
+      ]
+    },
+    "They were more eager to enjoy a movie.": {
+      "ph": [
+        {"t": "eager to", "b": "be eager to do", "m": "渴望做"}
+      ]
+    },
+    "They fell victim to eagles.": {
+      "ph": [
+        {"t": "fell victim to", "b": "fall victim to", "m": "成为……的受害者"}
+      ]
+    },
+    "Thousands are dying of thirst.": {
+      "ph": [
+        {"t": "dying of", "b": "die of", "m": "死于"}
+      ]
+    },
+    "I have no desire to make millions of dollars.": {
+      "ph": [
+        {"t": "no desire to", "b": "have no desire to do", "m": "不想做"},
+        {"t": "millions of", "b": "millions of", "m": "数百万"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "I have no desire", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to make millions of dollars", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "no desire 是「no + 名词」的否定形式，意思是「没有愿望」，书上直接译成动词的否定「不想」，不译成「没有……的愿望」。",
+          "to make millions of dollars 是不定式短语作 desire 的后置定语，说明愿望的内容，所以并入「不想赚……」。"
+        ],
+        "lit": "我没有愿望去赚数百万美元。"
+      }
+    },
+    "The close link between age and stage may cease to exist in a multi-stage life.": {
+      "ph": [
+        {"t": "link between", "b": "link between … and …", "m": "……和……之间的联系"},
+        {"t": "and", "b": "link between … and …", "m": "……和……之间的联系"},
+        {"t": "cease to", "b": "cease to do", "m": "不再，停止"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "The close link between age and stage may cease to exist", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "in a multi-stage life", "r": "状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "cease to exist 是「停止存在」，书上译成肯定形式的「不复存在」；may 表推测（可能），不是虚拟语气，所以是「可能不复存在」。",
+          "in a multi-stage life 是地点范围状语，书上提到句首译成「在多阶段的人生中，……」，使主干「联系可能不复存在」保持完整。",
+          "between age and stage 修饰 link，作后置定语，书上前置成「年龄和所处阶段之间的」。"
+        ],
+        "lit": "年龄和阶段之间的密切联系可能在一个多阶段的人生中停止存在。"
+      }
+    },
+    "The eyes of a very good reader move quickly, taking long jumps and making very short halts.": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "The eyes of a very good reader move quickly", "r": "主干"},
+          {"t": ", ", "r": ""},
+          {"t": "taking long jumps and making very short halts", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "taking… and making… 是两个并列的现在分词短语，作伴随状语，逻辑主语是主句的 The eyes，说明眼睛移动时的情形。",
+          "书上把「动词 + 名词」转成「动词 + 副词」：taking long jumps 译成「跳得很远」，making very short halts 译成「停顿很短」，所以读起来像并列分句，而不是「做出很长的跳跃」。"
+        ],
+        "lit": "一个很好的阅读者的眼睛移动得很快，做着长的跳跃并做着很短的停顿。"
+      }
+    },
+    "What three words would you use to describe the culture here?": {
+      "ph": [
+        {"t": "use", "b": "use … to do", "m": "用……来做"},
+        {"t": "to", "b": "use … to do", "m": "用……来做"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "What three words would you use", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to describe the culture here", "r": "目的状语"},
+          {"t": "?", "r": ""}
+        ],
+        "pts": [
+          "What three words 是疑问限定词 + 名词，作 use 的宾语，所以提到句首，书上译成「哪三个词」放在句首，再接「你会用……」。",
+          "to describe… 是不定式作目的状语，书上译成「用……来描述」。",
+          "here 修饰 the culture，作后置定语，书上前置成「这里的文化」。"
+        ],
+        "lit": "你会用什么三个词去描述这里的文化？"
+      }
+    },
+    "Police regulations prescribe that an officer's number must be clearly visible.": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "Police regulations prescribe", "r": "主干"},
+          {"t": " that ", "r": ""},
+          {"t": "an officer's number must be clearly visible", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "Police regulations 是无生命主语，prescribe 意思是「规定」，书上直接译成「警政制度规定」，没有拐弯。",
+          "that 引导 prescribe 的宾语从句，内容是规定的具体要求；must be clearly visible 是书上译成的「必须清晰可见」，规定内容放在逗号之后。"
+        ],
+        "lit": "警察规章规定一名警官的编号必须清楚地可见。"
+      }
+    },
+    "On balance, biotechnology should be good news for developing countries.": {
+      "ph": [
+        {"t": "On balance", "b": "on balance", "m": "总的来说"},
+        {"t": "good news for", "b": "good news for", "m": "对……是好消息"}
+      ]
+    },
+    "Genetic researchers in China have made a clone of a star police dog.": {
+      "ph": [
+        {"t": "made a clone of", "b": "make a clone of", "m": "克隆"}
+      ]
+    },
+    "He asked a technician to fix the broken production line.": {
+      "ph": [
+        {"t": "asked", "b": "ask sb. to do", "m": "请某人做"},
+        {"t": "to", "b": "ask sb. to do", "m": "请某人做"}
+      ]
+    },
+    "Buying that second-hand car without having it checked by a mechanic first cost us dear.": {
+      "ph": [
+        {"t": "having", "b": "have sth. done", "m": "请人做某事"},
+        {"t": "checked", "b": "have sth. done", "m": "请人做某事"},
+        {"t": "cost", "b": "cost sb. dear", "m": "使某人付出高昂代价"},
+        {"t": "dear", "b": "cost sb. dear", "m": "使某人付出高昂代价"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Buying that second-hand car", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "without having it checked by a mechanic first", "r": "状语"},
+          {"t": " ", "r": ""},
+          {"t": "cost us dear", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "Buying… 是动名词短语作主语，without 短语夹在主语和谓语之间；cost 是谓语，所以书上把「购买……时没有先……」译成一个时间 / 条件式的前半句，再接「让我们损失惨重」。",
+          "having it checked by a mechanic 是「have + 宾语 + 过去分词」，表示请别人做，it 是 checked 的逻辑宾语，书上译成「请技师检查」，而不是「让它被技师检查」。",
+          "cost sb. dear 是固定搭配，意思是「使某人付出高昂代价」，书上译成「让我们损失惨重」。"
+        ],
+        "lit": "买那辆二手车，没有先让它被一个技师检查，使我们付出了高昂的代价。"
+      }
+    },
+    "I do not wish to complicate the task more than is necessary.": {
+      "ph": [
+        {"t": "more than is necessary", "b": "more than is necessary", "m": "超过必要的程度"}
+      ]
+    },
+    "The era of personal technology is in many ways just beginning.": {
+      "ph": [
+        {"t": "in many ways", "b": "in many ways", "m": "在许多方面"}
+      ]
+    },
+    "There is no mechanism to ensure that they make the required effort.": {
+      "ph": [
+        {"t": "make the required effort", "b": "make an effort", "m": "做出努力"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "There is no mechanism", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to ensure", "r": "非谓语"},
+          {"t": " ", "r": ""},
+          {"t": "that they make the required effort", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "There is no mechanism 是「there be + no + 名词」，表示完全否定，书上译成「没有任何机制」。",
+          "to ensure… 是不定式作 mechanism 的后置定语，书上译成「没有任何机制可以确保……」，把不定式的内容放在「机制」之后，用「可以」连接。",
+          "that 引导 ensure 的宾语从句；required 是过去分词作前置定语，译成「必要的」，make the required effort 即「做出必要的努力」。"
+        ],
+        "lit": "没有机制去确保他们做出被要求的努力。"
+      }
+    },
+    "By moving the radar beam around slowly in circles, we can explore the surroundings.": {
+      "ph": [
+        {"t": "in circles", "b": "in circles", "m": "绕圈"}
+      ]
+    },
+    "Enormous quantities of radiation from the sun are screened off.": {
+      "ph": [
+        {"t": "quantities of", "b": "quantities of", "m": "大量"},
+        {"t": "screened off", "b": "screen off", "m": "屏蔽，挡掉"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Enormous quantities of radiation from the sun are screened off", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "are screened off 是被动，动作的执行者没有出现，书上译成「被屏蔽掉」，保留被动。",
+          "主语的中心词是复数的 quantities（radiation 在 of 之后，不影响谓语），所以用 are，而不是 is。",
+          "from the sun 修饰 radiation，作后置定语，书上前置成「来自太阳的大量辐射」。"
+        ],
+        "lit": "来自太阳的巨大数量的辐射被屏蔽掉。"
+      }
+    },
+    "For the consumer, it's a matter of paying now for the hardware to save later on the utilities.": {
+      "ph": [
+        {"t": "a matter of", "b": "a matter of", "m": "……的问题"},
+        {"t": "paying", "b": "pay … for", "m": "为……付钱"},
+        {"t": "for", "b": "pay … for", "m": "为……付钱"},
+        {"t": "save", "b": "save … on", "m": "在……上节省"},
+        {"t": "on", "b": "save … on", "m": "在……上节省"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "For the consumer", "r": "状语"},
+          {"t": ", ", "r": ""},
+          {"t": "it's a matter of paying now for the hardware", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to save later on the utilities", "r": "目的状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "it's a matter of doing 是固定句型，表示「问题在于做……」，书上不译 a matter，直接把 of 后面的动作当作主干内容。",
+          "paying now for the hardware 中 pay for 是动词搭配，书上把 for the hardware 转成名词性的「硬件费用」，译成「现在支付硬件费用」。",
+          "to save later on the utilities 是不定式作目的状语，书上译成「可以节省以后的水电费」，用「可以」把前后连起来。"
+        ],
+        "lit": "对于消费者来说，这是现在为硬件付钱以便之后在水电费上节省的事情。"
+      }
+    }
+  }
+}

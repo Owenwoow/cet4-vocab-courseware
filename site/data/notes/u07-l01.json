@@ -1,0 +1,168 @@
+{
+  "_note": "例句词组与语法解析（书外补充，AI 生成）",
+  "sents": {
+    "It is bound to help us achieve greater success.": {
+      "ph": [{"t": "is bound to", "b": "be bound to do", "m": "一定会"}]
+    },
+    "She wanted to travel to broaden her horizons.": {
+      "ph": [{"t": "broaden her horizons", "b": "broaden one's horizons", "m": "开阔眼界"}]
+    },
+    "The brown animal was spotted stuck on a narrow window edge of the office tower.": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "The brown animal was spotted", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "stuck on a narrow window edge of the office tower", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "主干 was spotted 是被动：主动式是 spot sth. stuck…（发现某物卡在……），宾语 the brown animal 提到句首变主语，书上译成「被发现」。",
+          "stuck on… 是过去分词短语，作主语补语，说明动物被发现时的状态，书上译成「卡在……」，紧跟在「被发现」后面。",
+          "of the office tower 修饰 window edge，是后置定语，书上前置成「办公大楼的」窗户边。"
+        ],
+        "lit": "这只棕色的动物被发现，卡住在办公楼的一个狭窄的窗边缘上。"
+      }
+    },
+    "The cottage was surrounded by a hedge.": {
+      "ph": [{"t": "was surrounded by", "b": "be surrounded by", "m": "被……包围"}]
+    },
+    "It gave rise to a lot of problems on the border.": {
+      "ph": [{"t": "gave rise to", "b": "give rise to", "m": "引起"}]
+    },
+    "The country has to import most of its raw materials.": {
+      "ph": [{"t": "raw materials", "b": "raw material", "m": "原料"}]
+    },
+    "He was surprised to find that his visitor's visa expired.": {
+      "ph": [{"t": "was surprised to", "b": "be surprised to do", "m": "惊讶地做某事"}],
+      "an": {
+        "parts": [
+          {"t": "He was surprised", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to find", "r": "非谓语"},
+          {"t": " that ", "r": ""},
+          {"t": "his visitor's visa expired", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "to find 是不定式，作原因状语，说明 surprised 的原因，书上译成「惊讶地发现」。",
+          "that 引导 find 的宾语从句，that 在从句中不作成分；从句主语是 his visitor's visa，谓语 expired 与主句同为一般过去时，所以书上译成「签证过期了」。"
+        ],
+        "lit": "他惊讶于发现他的访问者的签证过期了。"
+      }
+    },
+    "They tried to meet astronauts' specific requirements.": {
+      "ph": [
+        {"t": "meet", "b": "meet … requirements", "m": "满足需求"},
+        {"t": "requirements", "b": "meet … requirements", "m": "满足需求"}
+      ]
+    },
+    "Chocolates save us from many things, especially emotional distress.": {
+      "ph": [{"t": "save us from", "b": "save sb. from sth.", "m": "使我们免于"}]
+    },
+    "They are particular about the quality of toilet paper.": {
+      "ph": [{"t": "are particular about", "b": "be particular about", "m": "对……挑剔"}]
+    },
+    "Museum's special exhibition area will now be free of charge.": {
+      "ph": [{"t": "free of charge", "b": "free of charge", "m": "免费"}]
+    },
+    "This rat detection method doesn't rely on specialist equipment.": {
+      "ph": [{"t": "rely on", "b": "rely on", "m": "依赖"}]
+    },
+    "It assigns doctors to give advice to shoppers in food stores.": {
+      "ph": [{"t": "assigns doctors to give", "b": "assign sb. to do", "m": "指派某人做某事"}]
+    },
+    "He'd always been odd, but not to this extent.": {
+      "ph": [{"t": "to this extent", "b": "to this extent", "m": "到这种程度"}]
+    },
+    "The odds are very much in our favour.": {
+      "ph": [{"t": "in our favour", "b": "in sb.'s favour", "m": "对我们有利"}]
+    },
+    "Please acquaint me with the facts of the case.": {
+      "ph": [{"t": "acquaint me with", "b": "acquaint sb. with sth.", "m": "使某人了解某事"}]
+    },
+    "I have been bothered for a long time about the curious lack of curiosity.": {
+      "ph": [
+        {"t": "bothered", "b": "be bothered about", "m": "为……感到困扰"},
+        {"t": "about", "b": "be bothered about", "m": "为……感到困扰"},
+        {"t": "lack of", "b": "lack of", "m": "缺乏"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "I have been bothered", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "for a long time", "r": "状语"},
+          {"t": " ", "r": ""},
+          {"t": "about the curious lack of curiosity", "r": "状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "have been bothered 是现在完成时的被动，加 for a long time 表示从过去持续到现在，书上译成「一直感到困扰」。",
+          "the curious lack of curiosity 是名词化结构：lack 对应动词「缺乏」，curious 修饰整个现象，书上展开成「缺乏好奇心这一奇怪现象」。",
+          "about 引出困扰的内容，书上把它改成「困扰的是……」放在句末，主语 I 隐去，读起来更像汉语。"
+        ],
+        "lit": "我已经被困扰了很长时间，关于那种奇怪的对好奇心的缺乏。"
+      }
+    },
+    "The team has been plagued by injury this season.": {
+      "ph": [{"t": "been plagued by", "b": "be plagued by", "m": "为……所困扰"}]
+    },
+    "The authorities were annoyed but could find nothing to charge him with.": {
+      "ph": [{"t": "charge him with", "b": "charge sb. with sth.", "m": "指控某人犯某罪"}],
+      "an": {
+        "parts": [
+          {"t": "The authorities were annoyed", "r": "主干"},
+          {"t": " but ", "r": ""},
+          {"t": "could find nothing", "r": "并列分句"},
+          {"t": " ", "r": ""},
+          {"t": "to charge him with", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "but 连接两个谓语，could find nothing 与 were annoyed 共用主语 The authorities，could 是 can 的过去式，表过去的情况，没有 if 条件，不是虚拟语气。",
+          "to charge him with 是不定式，作 nothing 的后置定语；with 的宾语就是 nothing（charge him with nothing），所以书上译成「任何指控他的罪名」，把 nothing 放在定语的末尾。"
+        ],
+        "lit": "当局很恼火，但是不能找到什么可以用来指控他的东西。"
+      }
+    },
+    "It leads students to neglect their studies.": {
+      "ph": [{"t": "leads students to neglect", "b": "lead sb. to do", "m": "导致某人做某事"}]
+    },
+    "Try to be optimistic whatever happens.": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "Try to be optimistic", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "whatever happens", "r": "让步状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "Try to be optimistic 是祈使句，省略了主语 you，所以书上直接译成「要保持乐观」。",
+          "whatever happens 是让步状语从句，相当于 no matter what happens，whatever 在从句中作 happens 的主语；书上把它提到句首译成「无论发生什么」。"
+        ],
+        "lit": "试着乐观，无论什么发生。"
+      }
+    },
+    "Some pessimistic experts feel that the automobile is bound to fall into disuse.": {
+      "ph": [
+        {"t": "is bound to", "b": "be bound to do", "m": "一定会"},
+        {"t": "fall into disuse", "b": "fall into disuse", "m": "不再使用，被淘汰"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Some pessimistic experts feel", "r": "主干"},
+          {"t": " that ", "r": ""},
+          {"t": "the automobile is bound to fall into disuse", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导 feel 的宾语从句，that 本身不作成分；feel 在这里是「认为」，不是「感觉」。",
+          "be bound to do 表示「一定会」，是对未来的肯定推断，书上译成「一定会」。",
+          "fall into disuse（进入不被使用的状态）在英语里是主动形式，书上意译成被动的「被淘汰」。"
+        ],
+        "lit": "一些悲观的专家觉得汽车一定会落入不被使用。"
+      }
+    }
+  }
+}
