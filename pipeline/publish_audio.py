@@ -4,6 +4,7 @@
 音频文件按内容哈希命名、只增不改，所以每次提交只有新文件，仓库历史不会膨胀。
 推送后 GitHub Pages 约 1 分钟生效，再推主仓库，线上课件就能播放新音频。
 """
+import json
 import os
 import subprocess
 import sys
@@ -35,19 +36,23 @@ def main():
 
 
 def wait_pages(commit, timeout=1800):
-    """等音频站 Pages 用这次提交构建完成，否则紧接着推主仓库时，部署前的音频检查会因文件未上线而失败"""
+    """等音频站 Pages 用这次提交构建完成，否则紧接着推主仓库时，部署前的音频检查会因文件未上线而失败。
+    看 Actions 里的「pages build and deployment」任务（builds 接口不可靠：被后来的推送取消的构建、甚至进行中的构建都会显示 errored）：
+    这次提交对应的任务成功才算上线；被取消说明后面又有推送，继续等"""
     repo = git("remote", "get-url", "origin").strip().removesuffix(".git").split("github.com/")[-1]
     start = time.time()
     while time.time() - start < timeout:
-        r = subprocess.run(["gh", "api", f"repos/{repo}/pages/builds/latest", "--jq", ".status + \" \" + .commit"],
-                           capture_output=True, text=True)
-        status, _, built = r.stdout.strip().partition(" ")
-        if built == commit and status == "built":
+        r = subprocess.run(["gh", "run", "list", "-R", repo, "-w", "pages-build-deployment", "-L", "10",
+                            "--json", "headSha,status,conclusion"], capture_output=True, text=True)
+        try:
+            runs = json.loads(r.stdout or "[]")
+        except ValueError:
+            runs = []
+        if any(x["headSha"] == commit and x["conclusion"] == "success" for x in runs):
             print(f"音频站已上线（{int(time.time() - start)} 秒）")
             return
-        time.sleep(10)
-    # 构建状态接口不可靠（被后来的推送取消的构建会显示 errored，进行中的也可能先显示 errored），所以不当作失败：
-    # 等不到就提醒一下，上线与否由部署前的 check_audio.py 兜底
+        time.sleep(15)
+    # 等不到不当作失败，上线与否由部署前的 check_audio.py 兜底
     print(f"等了 {timeout} 秒音频站还没构建完，稍后用 python pipeline/check_audio.py 确认再推主仓库")
 
 
