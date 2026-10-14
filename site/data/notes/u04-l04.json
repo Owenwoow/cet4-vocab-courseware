@@ -1,0 +1,386 @@
+{
+  "_note": "例句词组与语法解析（书外补充，AI 生成）",
+  "sents": {
+    "It poses a great challenge for customers to do math.": {
+      "ph": [
+        {"t": "poses a great challenge", "b": "pose a challenge to", "m": "构成挑战"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "It poses a great challenge", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "for customers to do math", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "It 是形式主语，真正的主语是后面的不定式 to do math；for customers 是这个不定式的逻辑主语，表示「由客户来做」。",
+          "所以书上先译 for customers 为「对客户来说」，再把真正主语「算数」提到前面，整句成了「对客户来说算数是……挑战」，不再单独译 It。"
+        ],
+        "lit": "它提出了一个很大的挑战，对于客户去做数学。"
+      }
+    },
+    "Back pains can be the result of bad posture.": {
+      "ph": [
+        {"t": "be the result of", "b": "be the result of", "m": "是……造成的"}
+      ]
+    },
+    "They find it difficult to dispose of their old-style furniture.": {
+      "ph": [
+        {"t": "find it difficult to", "b": "find it difficult to do", "m": "发现做某事很难"},
+        {"t": "dispose of", "b": "dispose of", "m": "处置，处理掉"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "They find it difficult", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to dispose of their old-style furniture", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "find it difficult to do 里 it 是形式宾语，真正的宾语是后面的不定式 to dispose of…，difficult 是宾语补足语。",
+          "所以书上不单独译 it，直接说「发现很难处置……」，把不定式当作被「发现」的内容。"
+        ],
+        "lit": "他们发现它难以处置掉他们的旧式家具。"
+      }
+    },
+    "He intends to get rid of the tipping practice.": {
+      "ph": [
+        {"t": "intends to", "b": "intend to do", "m": "打算做"},
+        {"t": "get rid of", "b": "get rid of", "m": "除掉，取消"}
+      ]
+    },
+    "Its negative effects more than cancel out its positive effects.": {
+      "ph": [
+        {"t": "more than", "b": "more than", "m": "不仅仅，不止"},
+        {"t": "cancel out", "b": "cancel out", "m": "抵消"}
+      ]
+    },
+    "The earth is composed of several layers.": {
+      "ph": [
+        {"t": "is composed of", "b": "be composed of", "m": "由……组成"}
+      ]
+    },
+    "He pulls up a music composition textbook, complete with playable demos.": {
+      "ph": [
+        {"t": "pulls up", "b": "pull up", "m": "拿出，调出"},
+        {"t": "complete with", "b": "complete with", "m": "附有，配有"}
+      ]
+    },
+    "The emotional component of the prizes is at work.": {
+      "ph": [
+        {"t": "is at work", "b": "be at work", "m": "在起作用"}
+      ]
+    },
+    "Do not impose your idea on me.": {
+      "ph": [
+        {"t": "impose", "b": "impose … on", "m": "把……强加于"},
+        {"t": "on", "b": "impose … on", "m": "把……强加于"}
+      ]
+    },
+    "In one study, students were told their social position in school is not unchangeable.": {
+      "ph": [
+        {"t": "were told", "b": "be told", "m": "被告知"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "In one study", "r": "状语"},
+          {"t": ", ", "r": ""},
+          {"t": "students were told", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "their social position in school is not unchangeable", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "were told 是被动，students 是 tell 的间接宾语，后面省略了 that 的从句是直接宾语，书上译成「学生们被告知……」。",
+          "not unchangeable 是 not + un- 的双重否定，书上译成「并非一成不变」，保留委婉的否定语气，而不直接说「可以改变」。"
+        ],
+        "lit": "在一项研究中，学生们被告诉他们在学校的社会地位不是不可改变的。"
+      }
+    },
+    "She proposed that the book be banned.": {
+      "ph": [
+        {"t": "proposed that", "b": "propose that", "m": "建议……"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "She proposed", "r": "主干"},
+          {"t": " that ", "r": ""},
+          {"t": "the book be banned", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "propose / suggest / demand 等表示建议、要求的动词后，that 从句的谓语用「(should +) 动词原形」，这里 be banned 前省略了 should，是虚拟语气，不随主句的过去时变化。",
+          "所以书上译成「建议查禁这本书」：从句表示建议的内容，不是已经发生的事实；被动的 be banned 也顺势译成动宾式「查禁……」。"
+        ],
+        "lit": "她建议这本书应当被禁止。"
+      }
+    },
+    "In the end, wiser counsels prevailed.": {
+      "ph": [
+        {"t": "In the end", "b": "in the end", "m": "最终"}
+      ]
+    },
+    "Rural kids used to walk a long way to school in the old days.": {
+      "ph": [
+        {"t": "used to", "b": "used to do", "m": "过去常常"},
+        {"t": "in the old days", "b": "in the old days", "m": "在过去"}
+      ]
+    },
+    "It has long been used to increase food supply and improve urban landscape.": {
+      "ph": [
+        {"t": "been used to", "b": "be used to do", "m": "被用来做"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "It has long been used", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to increase food supply and improve urban landscape", "r": "目的状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "has long been used 是现在完成时的被动，long 夹在 has 和 been 之间；书上把它提到句首译成「长期以来」，被动译成「被用来」。",
+          "to increase… and improve… 是不定式作目的状语，两个动词共用一个 to，并列关系，所以书上译成「增加……和改善……」。这里是 be used to do（被用来做），不是 be used to doing（习惯于）。"
+        ],
+        "lit": "它长久地被用来增加食物供应并改善城市景观。"
+      }
+    },
+    "Doing so will send an important message to the nation's youngest citizens.": {
+      "ph": [
+        {"t": "send an important message to", "b": "send a message to", "m": "向……传递信息"}
+      ]
+    },
+    "We have been actively exercising our civil rights.": {
+      "ph": [
+        {"t": "civil rights", "b": "civil rights", "m": "公民权利"}
+      ]
+    },
+    "It's a great way to promote cultural understanding and exchange; we welcome that.": {
+      "ph": [
+        {"t": "a great way to", "b": "a way to do", "m": "做……的好方法"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "It's a great way", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to promote cultural understanding and exchange", "r": "非谓语"},
+          {"t": "; ", "r": ""},
+          {"t": "we welcome that", "r": "并列分句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "to promote… 是不定式作后置定语，修饰 way，所以书上译成「促进……的好方法」，把定语放到名词前。",
+          "cultural 同时修饰 understanding 和 exchange，书上译成「文化理解和交流」，没有把「交流」译成别的领域。",
+          "分号后的 that 指代前半句整件事（用这个方法），所以译成「对此表示欢迎」。"
+        ],
+        "lit": "它是促进文化理解和交流的一个好方式；我们欢迎那个。"
+      }
+    },
+    "Across the country, 285 emergency management teams are devoted to crisis control.": {
+      "ph": [
+        {"t": "Across the country", "b": "across the country", "m": "全国"},
+        {"t": "are devoted to", "b": "be devoted to", "m": "致力于"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Across the country", "r": "状语"},
+          {"t": ", ", "r": ""},
+          {"t": "285 emergency management teams are devoted to crisis control", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "Across the country 是句首的地点状语，书上译成「全国有 285 个……」，在数量主语前补出「有」，把地点状语变成存在句的开头。",
+          "are devoted to 形式上是被动，但 be devoted to 是固定搭配，to 是介词（后接名词 crisis control），书上译成主动的「致力于」。"
+        ],
+        "lit": "遍及全国，285 个应急管理小组被投入到危机控制上。"
+      }
+    },
+    "It sets a bar for similar initiatives across the county.": {
+      "ph": [
+        {"t": "sets a bar for", "b": "set a bar for", "m": "为……设定标准"}
+      ]
+    },
+    "It has been popularised worldwide with the increasing influence of social media.": {
+      "ph": [
+        {"t": "social media", "b": "social media", "m": "社交媒体"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "It has been popularised worldwide", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "with the increasing influence of social media", "r": "状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "has been popularised 是现在完成时的被动，书上译成「得到了普及」，而不是生硬的「被普及了」。",
+          "with + 名词短语表示伴随变化，书上提到句首译成「随着……」；the increasing influence of social media 是名词化结构，书上展开成主谓式的「社交媒体影响力的日益增强」。"
+        ],
+        "lit": "它已经被普及到全世界，伴随着社交媒体日益增长的影响。"
+      }
+    },
+    "The dance group performs throughout the year but was now preparing for its biggest events.": {
+      "ph": [
+        {"t": "throughout the year", "b": "throughout the year", "m": "全年"},
+        {"t": "preparing for", "b": "prepare for", "m": "为……做准备"}
+      ]
+    },
+    "Crowds of journalists laid siege to the star's apartment.": {
+      "ph": [
+        {"t": "Crowds of", "b": "crowds of", "m": "成群的"},
+        {"t": "laid siege to", "b": "lay siege to", "m": "包围"}
+      ]
+    },
+    "I am making my way through Columbia University, surrounded by students.": {
+      "ph": [
+        {"t": "making my way", "b": "make one's way", "m": "前进，前往"},
+        {"t": "surrounded by", "b": "be surrounded by", "m": "被……包围"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "I am making my way through Columbia University", "r": "主干"},
+          {"t": ", ", "r": ""},
+          {"t": "surrounded by students", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "surrounded by students 是过去分词短语作伴随状语，逻辑主语是主句的 I（我被学生包围），表示被动、伴随的状态。",
+          "书上把被动转成状态描述「周围都是学生」；am making my way 是现在进行时，译成「正在……的路上」。"
+        ],
+        "lit": "我正在穿过哥伦比亚大学前进，被学生们围绕着。"
+      }
+    },
+    "The terms \"global warming\" and \"climate change\" are used by us.": {
+      "ph": [
+        {"t": "global warming", "b": "global warming", "m": "全球变暖"},
+        {"t": "climate change", "b": "climate change", "m": "气候变化"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "The terms \"global warming\" and \"climate change\" are used by us", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "terms 后面两个带引号的词是对它的说明（同位关系），英文把 The terms 放前面，书上译成「……和……这两个术语」，把说明内容提到 terms 前面。",
+          "are used by us 是带 by 的被动，书上保留了「被我们使用」，把施动者 us 明确译出。"
+        ],
+        "lit": "术语「全球变暖」和「气候变化」由我们所使用。"
+      }
+    },
+    "People are ungrateful when in a bad mood.": {
+      "ph": [
+        {"t": "in a bad mood", "b": "in a bad mood", "m": "心情不好"}
+      ]
+    },
+    "This subject lies beyond the scope of our investigation.": {
+      "ph": [
+        {"t": "beyond the scope of", "b": "beyond the scope of", "m": "超出……的范围"}
+      ]
+    },
+    "One is forced by circumstances to stop working.": {
+      "ph": [
+        {"t": "is forced", "b": "be forced to do", "m": "被迫做某事"},
+        {"t": "to", "b": "be forced to do", "m": "被迫做某事"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "One is forced by circumstances", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to stop working", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "is forced to do 是被动，by circumstances 是无生命的施动者；书上把它转成原因「因环境而」，整个被动译成「被迫」。",
+          "One 在这里泛指「一个人」，不是数词「一」，所以书上译成「一个人」。"
+        ],
+        "lit": "一个人被环境强迫去停止工作。"
+      }
+    },
+    "They are responsible for their own condition.": {
+      "ph": [
+        {"t": "are responsible for", "b": "be responsible for", "m": "对……负责"}
+      ]
+    },
+    "Start a public discussion on how to raise women's status in academic circles.": {
+      "ph": [
+        {"t": "in academic circles", "b": "in academic circles", "m": "在学术圈"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Start a public discussion", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "on how to raise women's status in academic circles", "r": ""},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "这是祈使句，省略了主语 you。on how to raise… 是介词短语作 discussion 的后置定语，how to raise 是「疑问词 + 不定式」，作介词 on 的宾语。",
+          "所以书上把 on 短语提到动词前，译成「就如何提高……展开公开的讨论」，Start 译成「展开」。"
+        ],
+        "lit": "开始一个关于如何提高女性在学术圈的地位的公开讨论。"
+      }
+    },
+    "Eggs have an oval shape appealing to artists.": {
+      "ph": [
+        {"t": "appealing to", "b": "appeal to", "m": "对……有吸引力"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Eggs have an oval shape", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "appealing to artists", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "appealing to artists 是现在分词短语作后置定语，修饰 shape，相当于 which appeals to artists（形状吸引艺术家）。",
+          "书上不把它前置成长定语，而是拆成后面的分句「对艺术家很有吸引力」，承前省略主语。"
+        ],
+        "lit": "鸡蛋有一个吸引艺术家的椭圆形状。"
+      }
+    },
+    "The earth takes a year to make a circuit of the sun.": {
+      "ph": [
+        {"t": "takes", "b": "take … to do", "m": "花费……做某事"},
+        {"t": "to", "b": "take … to do", "m": "花费……做某事"},
+        {"t": "make a circuit of", "b": "make a circuit of", "m": "绕……一周"}
+      ]
+    },
+    "They don't want their photos to be circulated on the Internet.": {
+      "ph": [
+        {"t": "want", "b": "want sth. to do", "m": "想要某事物被做"},
+        {"t": "to", "b": "want sth. to do", "m": "想要某事物被做"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "They don't want", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "their photos to be circulated on the Internet", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "want + 宾语 + 不定式：their photos 是 want 的宾语，to be circulated 是宾语补足语，照片与「传播」是被动关系，所以用不定式的被动式。",
+          "书上把被动改译成主动的「照片……流传」；否定落在 want 上，译成「不希望」，their 指主语 They，所以加上「自己的」。"
+        ],
+        "lit": "他们不想要他们的照片被在互联网上传播。"
+      }
+    },
+    "The technology has a place in educational settings.": {
+      "ph": [
+        {"t": "has a place in", "b": "have a place in", "m": "占有一席之地"}
+      ]
+    },
+    "It is heavily dependent on the context.": {
+      "ph": [
+        {"t": "dependent on", "b": "be dependent on", "m": "依赖"}
+      ]
+    },
+    "I'm preparing for the speech contest.": {
+      "ph": [
+        {"t": "preparing for", "b": "prepare for", "m": "为……做准备"}
+      ]
+    },
+    "It kept sending letters of protest to the media.": {
+      "ph": [
+        {"t": "kept sending", "b": "keep doing", "m": "不断做某事"},
+        {"t": "letters of protest", "b": "letter of protest", "m": "抗议信"}
+      ]
+    }
+  }
+}

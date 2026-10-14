@@ -1,0 +1,404 @@
+{
+  "_note": "例句词组与语法解析（书外补充，AI 生成）",
+  "sents": {
+    "They use their money reserves to back up consumption.": {
+      "ph": [{"t": "back up", "b": "back up", "m": "支持"}]
+    },
+    "Any product that promises to protect your home deserves careful examination.": {
+      "ph": [{"t": "promises to", "b": "promise to do", "m": "承诺做"}],
+      "an": {
+        "parts": [
+          {"t": "Any product", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that promises to protect your home", "r": "定语从句"},
+          {"t": " ", "r": ""},
+          {"t": "deserves careful examination", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 的先行词是 product，在从句中作主语（that promises…），所以书上把整个从句前置成「任何承诺保护您家的产品」。",
+          "careful examination 是名词化结构，书上展开成动词「检查」加副词性的「仔细」：「值得仔细检查」。"
+        ],
+        "lit": "任何承诺保护你的家的产品值得仔细的检查。"
+      }
+    },
+    "Hyphenating names allows the bride to preserve her own identity while respecting tradition.": {
+      "ph": [
+        {"t": "allows", "b": "allow sb. to do", "m": "让某人做"},
+        {"t": "to", "b": "allow sb. to do", "m": "让某人做"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Hyphenating names allows the bride to preserve her own identity", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "while respecting tradition", "r": "时间状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "主语 Hyphenating names 是动名词短语（给名字加连字符），无生命主语 + allow sb. to do，书上译成「……可以让新娘……」。",
+          "while respecting tradition 是 while 后省略了主语和 be 的分词结构，省略的主语就是主句的 the bride，所以书上译成「在尊重传统的同时」，主语仍是新娘。"
+        ],
+        "lit": "给名字加连字符允许新娘保留她自己的身份，同时尊重传统。"
+      }
+    },
+    "The tests are designed to detect changes in mental function.": {
+      "ph": [
+        {"t": "are designed to", "b": "be designed to do", "m": "旨在"},
+        {"t": "changes in", "b": "change in", "m": "……的变化"}
+      ]
+    },
+    "It may prevent your business and career from advancing.": {
+      "ph": [
+        {"t": "prevent", "b": "prevent … from doing", "m": "阻碍……做"},
+        {"t": "from", "b": "prevent … from doing", "m": "阻碍……做"}
+      ]
+    },
+    "These children are forbidden to visit terminally ill patients.": {
+      "ph": [{"t": "are forbidden to", "b": "be forbidden to do", "m": "被禁止做"}]
+    },
+    "We deny our children's bids to help until they are 6 or 7 years old.": {
+      "ph": [{"t": "deny", "b": "deny", "m": "拒绝"}],
+      "an": {
+        "parts": [
+          {"t": "We deny our children's bids to help", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "until they are 6 or 7 years old", "r": "时间状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "bids 在这里是名词（主动提出、尝试），to help 是不定式作后置定语；our children's 是所有格，表示「孩子」是发出帮忙动作的人，所以书上转成动词性表达「孩子……提供帮助」。",
+          "until 引导时间状语从句，和 deny（拒绝）搭配，意思是「到那时为止一直不让」，书上顺成「在 6 或 7 岁之前」。"
+        ],
+        "lit": "我们拒绝我们孩子帮忙的尝试，直到他们 6 或 7 岁。"
+      }
+    },
+    "He plans to ban tipping in favor of paying his servers a wage.": {
+      "ph": [
+        {"t": "plans to", "b": "plan to do", "m": "计划做"},
+        {"t": "in favor of", "b": "in favor of", "m": "而改为，赞成"}
+      ]
+    },
+    "They prohibit agents from hiring models with a BMI below 18.": {
+      "ph": [
+        {"t": "prohibit", "b": "prohibit … from doing", "m": "禁止……做"},
+        {"t": "from", "b": "prohibit … from doing", "m": "禁止……做"}
+      ]
+    },
+    "We had to stop for breath before we got to the top.": {
+      "ph": [
+        {"t": "stop for breath", "b": "stop for breath", "m": "停下来喘口气"},
+        {"t": "got to", "b": "get to", "m": "到达"}
+      ]
+    },
+    "We managed to squeeze six people into the car.": {
+      "ph": [
+        {"t": "managed to", "b": "manage to do", "m": "设法做成"},
+        {"t": "squeeze", "b": "squeeze … into", "m": "把……挤进"},
+        {"t": "into", "b": "squeeze … into", "m": "把……挤进"}
+      ]
+    },
+    "Their first glimpse of the new land was a sight of dense woods.": {
+      "ph": [{"t": "glimpse of", "b": "a glimpse of", "m": "对……的初步印象"}]
+    },
+    "The mayor was asked to condense his speech.": {
+      "ph": [{"t": "was asked to", "b": "be asked to do", "m": "被要求做"}]
+    },
+    "The market for their products is shrinking.": {
+      "ph": [{"t": "market for", "b": "market for", "m": "对……的需求"}]
+    },
+    "When students feel isolated, their motivation to continue begins to fade.": {
+      "ph": [
+        {"t": "motivation to", "b": "motivation to do", "m": "做……的动力"},
+        {"t": "begins to", "b": "begin to do", "m": "开始做"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "When students feel isolated", "r": "时间状语"},
+          {"t": ", ", "r": ""},
+          {"t": "their motivation to continue begins to fade", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "When 引导时间状语从句，feel isolated 是「系动词 + 过去分词形容词」，表示感到「被孤立」的状态，书上译成「当学生们感到被孤立时」。",
+          "motivation to continue 是名词 + 不定式后置定语，to continue 说明动力指向什么；continue 后省略了宾语，书上结合上下文补成「继续学习的动力」。"
+        ],
+        "lit": "当学生感到孤立时，他们继续的动力开始消退。"
+      }
+    },
+    "The kitchen was small and compact so that the disabled could reach everything easily.": {
+      "ph": [
+        {"t": "so that", "b": "so that", "m": "因此，以便"},
+        {"t": "the disabled", "b": "the + 形容词", "m": "残疾人"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "The kitchen was small and compact", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "so that the disabled could reach everything easily", "r": "状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "so that 既可以引导目的状语（以便），也可以引导结果状语（因此）；这句书上按结果译成「因此残疾人可以……」。",
+          "the disabled 是 the + 形容词表示一类人，指「残疾人」整体，作 could reach 的主语。",
+          "could 与主句 was 同为过去时，是时态上的一致，不是虚拟语气。"
+        ],
+        "lit": "厨房又小又紧凑，以至于残疾人能够轻松够到一切。"
+      }
+    },
+    "More studies are needed to find out the impact of emotion on behavior.": {
+      "ph": [
+        {"t": "find out", "b": "find out", "m": "发现，查明"},
+        {"t": "impact of emotion on", "b": "impact on", "m": "……对……的影响"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "More studies are needed", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to find out the impact of emotion on behavior", "r": "目的状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "are needed 是被动，主语是 studies，书上译成主动式的「需要更多的研究」，不说「被需要」。",
+          "to find out… 是不定式作目的状语，说明为什么需要研究，书上译成「来发现……」。",
+          "impact on 是固定搭配，of emotion 交代影响的来源，on behavior 是受影响的对象，书上译成「情绪对行为的影响」，顺序是来源在前、对象在后。"
+        ],
+        "lit": "更多的研究被需要来找出情绪在行为上的影响。"
+      }
+    },
+    "Mothers' influence on children may last longer than fathers'.": {
+      "ph": [{"t": "influence on", "b": "influence on", "m": "对……的影响"}]
+    },
+    "He came down with influenza.": {
+      "ph": [{"t": "came down with", "b": "come down with", "m": "患上（病）"}]
+    },
+    "Some employees are fluent in a second language.": {
+      "ph": [{"t": "are fluent in", "b": "be fluent in", "m": "能流利使用"}]
+    },
+    "They may lack adequate knowledge of healthy food.": {
+      "ph": [{"t": "knowledge of", "b": "knowledge of", "m": "对……的了解"}]
+    },
+    "The basics of adequate sleep, healthy diet and exercise are a good place to start.": {
+      "ph": [{"t": "The basics of", "b": "the basics of", "m": "……的基本要素"}],
+      "an": {
+        "parts": [
+          {"t": "The basics of adequate sleep, healthy diet and exercise are a good place to start", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "主语是 The basics，of 后面的 adequate sleep, healthy diet and exercise 是并列的三项内容，书上把三项提前，译成「充足的睡眠、健康的饮食和锻炼这些基本因素」，basics 放到最后并加「这些」。",
+          "a good place to start 里 to start 是不定式作 place 的后置定语，place 在这里已经虚化，书上译成「一个很好的开始」，而不是「一个开始的好地方」。"
+        ],
+        "lit": "充足睡眠、健康饮食和锻炼的基础是一个很好的开始的地方。"
+      }
+    },
+    "The caffeine—the equivalent of two strong cups of coffee—was sufficient to reverse this effect.": {
+      "ph": [
+        {"t": "the equivalent of", "b": "the equivalent of", "m": "相当于"},
+        {"t": "was sufficient to", "b": "be sufficient to do", "m": "足以做"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "The caffeine", "r": "主干"},
+          {"t": "—", "r": ""},
+          {"t": "the equivalent of two strong cups of coffee", "r": "同位语"},
+          {"t": "—", "r": ""},
+          {"t": "was sufficient to reverse this effect", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "两个破折号之间的 the equivalent of two strong cups of coffee 是 the caffeine 的同位语（补充说明），书上保留破折号，译成「相当于两杯浓咖啡」。",
+          "be sufficient to do 中 to reverse 修饰 sufficient，表示程度，译成「足以扭转」。"
+        ],
+        "lit": "咖啡因——两杯浓咖啡的等同物——对于扭转这种影响是足够的。"
+      }
+    },
+    "There have been intensive discussions between the two governments in recent days.": {
+      "ph": [{"t": "in recent days", "b": "in recent days", "m": "近几天"}]
+    },
+    "She connected with her sense of purpose and dug deep, cultivating a tremendous sense of strength.": {
+      "ph": [
+        {"t": "connected with", "b": "connect with", "m": "与……联系起来"},
+        {"t": "sense of purpose", "b": "sense of purpose", "m": "使命感"},
+        {"t": "dug deep", "b": "dig deep", "m": "深入挖掘"},
+        {"t": "sense of strength", "b": "sense of strength", "m": "力量感"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "She connected with her sense of purpose and dug deep", "r": "主干"},
+          {"t": ", ", "r": ""},
+          {"t": "cultivating a tremendous sense of strength", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "主干有两个并列谓语 connected 和 dug，主语都是 She。",
+          "cultivating… 是现在分词短语，逻辑主语是主句的 She，表示伴随或结果，书上拆成并列的「培养了……」。",
+          "sense of + 名词 构成「……感」：sense of purpose 是「使命感」，sense of strength 是「力量感」，书上都译成名词。"
+        ],
+        "lit": "她与她的目的感联系，并挖得很深，培养一种巨大的力量感。"
+      }
+    },
+    "What mattered most was the residents' physical health and mental status.": {
+      "an": {
+        "parts": [
+          {"t": "What mattered most", "r": "主语从句"},
+          {"t": " ", "r": ""},
+          {"t": "was the residents' physical health and mental status", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "What mattered most 是主语从句，what 在从句中作 mattered 的主语，意思是「最要紧的东西」。",
+          "what 引导的主语从句 + was + 表语，是「最重要的是……」的固定句式，书上就这样译。"
+        ],
+        "lit": "什么最要紧是居民们的身体健康和心理状态。"
+      }
+    },
+    "Hard work is fundamental to success.": {
+      "ph": [{"t": "is fundamental to", "b": "be fundamental to", "m": "是……的基础"}]
+    },
+    "The research is starting to show that early setbacks don't have to be fatal.": {
+      "ph": [{"t": "have to", "b": "not have to do", "m": "不一定要"}],
+      "an": {
+        "parts": [
+          {"t": "The research is starting to show", "r": "主干"},
+          {"t": " that ", "r": ""},
+          {"t": "early setbacks don't have to be fatal", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导 show 的宾语从句，书上译成「这项研究开始表明，……」。",
+          "don't have to 是「不必、不一定」，和 mustn't（禁止）不同，所以 don't have to be fatal 译成「不一定是致命的」，而不是「不是致命的」。"
+        ],
+        "lit": "这项研究开始显示，早期的挫折不必是致命的。"
+      }
+    },
+    "All the people we interviewed expressed almost total satisfaction with it.": {
+      "ph": [{"t": "satisfaction with", "b": "satisfaction with", "m": "对……满意"}],
+      "an": {
+        "parts": [
+          {"t": "All the people", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "we interviewed", "r": "定语从句"},
+          {"t": " ", "r": ""},
+          {"t": "expressed almost total satisfaction with it", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "we interviewed 是定语从句，先行词是 people，省略的关系代词（that / whom）在从句中作 interviewed 的宾语，书上前置成「我们采访的所有人」。",
+          "satisfaction with it 是名词化结构，书上展开成「对此表示非常满意」；almost total 译成程度副词「非常」。"
+        ],
+        "lit": "我们采访的所有人对它表达了几乎完全的满意。"
+      }
+    },
+    "Digital technology makes it easier for people to coordinate their activities.": {
+      "ph": [
+        {"t": "makes it easier for", "b": "make it easier for sb. to do", "m": "使某人更容易做"},
+        {"t": "to", "b": "make it easier for sb. to do", "m": "使某人更容易做"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Digital technology makes it easier", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "for people to coordinate their activities", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "it 是形式宾语，真正的宾语是后面的不定式 to coordinate their activities，for people 是不定式的逻辑主语；所以 it 不译，书上译成「使人们更容易协调……」。",
+          "主语 Digital technology 是无生命名词，译成「数字技术使……」，保持原来的因果关系。"
+        ],
+        "lit": "数字技术使得对人们来说协调他们的活动更容易。"
+      }
+    },
+    "Teaching is talent and practice; it is not something that just anyone can be good at.": {
+      "ph": [{"t": "be good at", "b": "be good at", "m": "擅长"}],
+      "an": {
+        "parts": [
+          {"t": "Teaching is talent and practice", "r": "主干"},
+          {"t": "; ", "r": ""},
+          {"t": "it is not something", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that just anyone can be good at", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 的先行词是 something，在从句中作介词 at 的宾语（be good at that），所以句末的 at 不能漏；书上前置成「任何人都能擅长的事情」。",
+          "not 否定整个「谁都能擅长」，是部分否定，意思是「不是谁都能」，书上译成「不是任何人都能擅长的事情」。"
+        ],
+        "lit": "教学是天赋和实践；它不是任何一个人都能擅长的东西。"
+      }
+    },
+    "We will lose a vital part of what has made humanity as a whole so successful as a species.": {
+      "ph": [
+        {"t": "a vital part of", "b": "a part of", "m": "……的重要部分"},
+        {"t": "as a whole", "b": "as a whole", "m": "整体上"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "We will lose a vital part of ", "r": "主干"},
+          {"t": "what has made humanity as a whole so successful as a species", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "what 引导的从句作介词 of 的宾语，what 在从句中作 has made 的主语，意思是「使……的那种东西」。",
+          "make humanity successful 是「make + 宾语 + 形容词补语」，意思是「使人类成功」，as a whole 修饰 humanity（人类整体），as a species 是「作为一个物种」。",
+          "书上把 what 从句前置成长定语，译成「使人类作为一个物种整体取得如此成功的一个重要部分」，what 所指的东西融进「……的」里。"
+        ],
+        "lit": "我们将失去已经使作为整体的人类作为一个物种如此成功的东西的一个重要部分。"
+      }
+    },
+    "It proves crucial in making others follow one's course of action.": {
+      "ph": [{"t": "course of action", "b": "course of action", "m": "行动方针"}]
+    },
+    "These studies showed that their water did contain microplastics.": {
+      "an": {
+        "parts": [
+          {"t": "These studies showed", "r": "主干"},
+          {"t": " that ", "r": ""},
+          {"t": "their water did contain microplastics", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "did contain 里的 did 是强调助动词，放在谓语动词前加强肯定语气，动词回到原形 contain，所以书上加「确实」，译成「确实含有」。",
+          "that 引导 showed 的宾语从句，书上译成「这些研究表明，……」。"
+        ],
+        "lit": "这些研究显示他们的水的确含有微塑料。"
+      }
+    },
+    "They are often seen as dirty birds.": {
+      "ph": [{"t": "are often seen as", "b": "be seen as", "m": "被视为"}]
+    },
+    "Millions die early from air pollution each year.": {
+      "ph": [{"t": "die early from", "b": "die from", "m": "死于"}]
+    },
+    "The best way to maintain good blood circulation is through using the brain.": {
+      "ph": [{"t": "The best way to", "b": "the way to do", "m": "做……的方法"}]
+    },
+    "Visiting a bookshop as curiosity leads us can be a good way to entertain ourselves.": {
+      "ph": [
+        {"t": "a good way to", "b": "a way to do", "m": "做……的方式"},
+        {"t": "entertain ourselves", "b": "entertain oneself", "m": "自娱"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Visiting a bookshop", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "as curiosity leads us", "r": "方式状语"},
+          {"t": " ", "r": ""},
+          {"t": "can be a good way to entertain ourselves", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "主语是动名词短语 Visiting a bookshop；as curiosity leads us 是 as 引导的方式状语从句（按照、顺着好奇心的带领），书上压缩成介词短语「在好奇心的引导下」。",
+          "to entertain ourselves 是不定式作 way 的后置定语；entertain oneself 是「自娱」，书上省去反身代词，译成「一种很好的娱乐方式」。"
+        ],
+        "lit": "去书店，当好奇心引导我们时，可以是一个让我们自己娱乐的好方式。"
+      }
+    },
+    "Some of those small mammals help to sustain such big birds as golden eagles.": {
+      "ph": [
+        {"t": "help to", "b": "help to do", "m": "有助于"},
+        {"t": "such", "b": "such … as", "m": "像……这样的"},
+        {"t": "as", "b": "such … as", "m": "像……这样的"}
+      ]
+    }
+  }
+}
