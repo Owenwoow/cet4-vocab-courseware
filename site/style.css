@@ -249,6 +249,16 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .antr div{display:flex;gap:8px}
 .antr b{flex:none;font-size:12px;font-weight:600;color:var(--sub);line-height:1.6rem}
 .antr span{min-width:0}
+/* 对话带练：英文块像引文，下面是老师的话，→ 行是这块的中文 */
+.an.talk p{margin:0 0 4px}
+.an .anopen{color:var(--sub);font-style:italic;margin-bottom:8px}
+.anblk{margin:0 0 10px;padding-left:10px;border-left:3px solid var(--blue-soft)}
+.anen{font-weight:600;font-size:15px;color:var(--ink);margin-bottom:3px}
+.anto{font-weight:600;color:var(--accent);margin:2px 0 0}
+.anord{margin:0 0 10px;padding:6px 10px;border-radius:8px;background:var(--accent-soft)}
+.anord b{font-size:12px;color:var(--accent);margin-right:6px}
+.anord p{display:inline}
+.an .ancmp{margin:6px 0 0;font-size:13px;color:var(--sub)}
 
 /* 背诵模式：遮住中文 */
 .mask .sense,.mask .zh,.mask .tip,.mask .xm{filter:blur(6px);cursor:pointer;transition:filter .2s;user-select:none}
