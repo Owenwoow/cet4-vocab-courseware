@@ -210,6 +210,7 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 /* 例句词组（书外补充）：虚线下划线，同一词组拆开的几段各自画线 */
 .sent .ph{cursor:pointer;text-decoration:underline dashed var(--sub);text-decoration-thickness:1px;text-underline-offset:5px;border-radius:3px}
 @media (hover:hover){.sent .ph:hover{background:var(--accent-soft)}}
+.noPhLine .sent .ph{text-decoration:none}   /* 设置「例句词组下划线」关掉 */
 /* 出题卡片还没作答（.locked）：例句不能点，不显示词组下划线和「析」（app.js 的例句点击也看这个类） */
 .locked .sent,.locked .sent .w,.locked .sent .ph{cursor:default}
 .locked .sent .ph{text-decoration:none}

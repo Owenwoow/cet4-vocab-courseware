@@ -15,7 +15,7 @@ loadKnown();
 const VOICE_NAMES = {ava: "Ava", andrew: "Andrew", sonia: "Sonia", ryan: "Ryan"};
 const VOICE_DESC = {ava: "美式 · 女声", andrew: "美式 · 男声", sonia: "英式 · 女声", ryan: "英式 · 男声"};
 const DEFAULTS = {voice: "ava", rate: 1, mask: false, hideKnown: false, scope: "group", withZh: true, loop: false, theme: "auto",
-  examDate: "2026-12-12", dailyCap: 120, autoSay: true, drillOrder: "course", drillMode: "quiz"};
+  examDate: "2026-12-12", dailyCap: 120, autoSay: true, drillOrder: "course", drillMode: "quiz", phLine: true};
 const S = {...DEFAULTS};
 const loadSettings = () => Object.assign(S, DEFAULTS, Object.fromEntries(Sync.entries("set:")));
 function setS(k, v) { S[k] = v; Sync.set("set:" + k, v); applySettings(); }
@@ -24,6 +24,7 @@ const darkMQ = matchMedia("(prefers-color-scheme: dark)");
 function applySettings() {
   document.body.classList.toggle("mask", S.mask);
   document.body.classList.toggle("hideKnown", S.hideKnown);
+  document.body.classList.toggle("noPhLine", !S.phLine);   // 例句词组下划线（点词组照样能查）
   if (S.theme === "auto") document.documentElement.removeAttribute("data-theme");
   else document.documentElement.dataset.theme = S.theme;
   /* 组件库 Web Awesome 的深浅色跟着本站主题走 */
@@ -574,6 +575,7 @@ function renderSettings() {
     <section class="panel"><h2>学习</h2>
       ${sw("mask", "背诵模式", "遮住释义、记忆法和译文，点一下显示。课文页右下角「遮」也能随手切换")}
       ${sw("hideKnown", "隐藏已会", "标为「已会」的词卡不显示，磨耳朵也跳过它们")}
+      ${sw("phLine", "例句词组下划线", "例句里标出的词组（书外补充）画虚线；关掉只是不画线，点词组照样显示词组释义")}
     </section>
     <section class="panel"><h2>背词</h2>
       <div class="row"><span><b>考试日期</b><small>首页倒计时用</small></span><input type="date" data-set="examDate" value="${esc(S.examDate)}"></div>
