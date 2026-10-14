@@ -15,7 +15,7 @@ loadKnown();
 const VOICE_NAMES = {ava: "Ava", andrew: "Andrew", sonia: "Sonia", ryan: "Ryan"};
 const VOICE_DESC = {ava: "美式 · 女声", andrew: "美式 · 男声", sonia: "英式 · 女声", ryan: "英式 · 男声"};
 const DEFAULTS = {voice: "ava", rate: 1, mask: false, hideKnown: false, scope: "group", withZh: true, loop: false, theme: "auto",
-  examDate: "2026-12-12", dailyCap: 120, autoSay: true, drillOrder: "course", drillMode: "quiz"};
+  examDate: "2026-12-12", dailyCap: 120, autoSay: true, drillOrder: "course", drillMode: "quiz", phLine: true};
 const S = {...DEFAULTS};
 const loadSettings = () => Object.assign(S, DEFAULTS, Object.fromEntries(Sync.entries("set:")));
 function setS(k, v) { S[k] = v; Sync.set("set:" + k, v); applySettings(); }
@@ -24,6 +24,7 @@ const darkMQ = matchMedia("(prefers-color-scheme: dark)");
 function applySettings() {
   document.body.classList.toggle("mask", S.mask);
   document.body.classList.toggle("hideKnown", S.hideKnown);
+  document.body.classList.toggle("noPhLine", !S.phLine);   // 例句词组下划线（点词组照样能查）
   if (S.theme === "auto") document.documentElement.removeAttribute("data-theme");
   else document.documentElement.dataset.theme = S.theme;
   /* 组件库 Web Awesome 的深浅色跟着本站主题走 */
@@ -33,7 +34,7 @@ function applySettings() {
 darkMQ.addEventListener("change", applySettings);
 
 /* ---------- 状态 ---------- */
-let BOOK = null, L = null, GLOSS = {}, AUD = {w: {}, s: {}, z: {}, voices: []};
+let BOOK = null, L = null, GLOSS = {}, NOTES = {sents: {}}, AUD = {w: {}, s: {}, z: {}, voices: []};   // NOTES：例句词组与语法解析（书外补充）
 const WORDMAP = new Map();   // 本课词条/扩展词 → {word, senses, no, ext}
 /* no-cache：每次向服务器确认，重新生成数据后不会读到旧缓存 */
 const fetchJSON = url => fetch(url, {cache: "no-cache"}).then(r => { if (!r.ok) throw new Error(url + " " + r.status); return r.json(); });
@@ -46,20 +47,9 @@ const sensesText = ss => ss.map(s => `${s.pos} ${plainMean(s.mean)}`).join("　"
 const lemmaCandidates = Vocab.candidates;   // 词形变化的候选原形（vocab.js）
 const findWord = (w, map = WORDMAP) => { for (const k of lemmaCandidates(w.toLowerCase())) if (map.has(k)) return map.get(k); return null; };
 
-/* 例句切成可点的单词，重点词（可能是多词短语）加 key 样式 */
-function sentenceHTML(en, keys) {
-  const hit = new Array(en.length).fill(false);
-  for (const k of keys || []) {
-    const re = new RegExp("(?<![A-Za-z])" + k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "(?![A-Za-z])", "gi");
-    let m; while ((m = re.exec(en))) for (let i = m.index; i < m.index + m[0].length; i++) hit[i] = true;
-  }
-  let pos = 0;
-  return en.replace(/([A-Za-z']+)|([^A-Za-z']+)/g, (m, w, o) => {
-    const start = pos; pos += m.length;
-    if (o) return esc(o);
-    return `<span class="w${hit[start] ? " key" : ""}">${w}</span>`;
-  });
-}
+/* 例句切成可点的单词，重点词（可能是多词短语）加 key 样式；note = 这句的 notes（词组标注、语法解析），见 sent.js */
+const sentenceHTML = (en, keys, note, hi) => Sent.html(en, keys, note, hi);
+const noteOf = (notes, en) => (notes && notes.sents && notes.sents[en]) || null;
 
 /* ---------- 音频：预生成 mp3 优先，缺失时退回浏览器语音 ---------- */
 const player = new Audio();
@@ -202,8 +192,8 @@ function cardHTML(e) {
     `<div class="sense">${multi && i === 0 ? `<span class="ipa">${esc(p.ipa)}</span>` : ""}<span class="pos">${esc(s.pos)}</span>${meanHTML(s.mean)}</div>`).join("")).join("");
   const ex = e.ex ? `<div class="ex${e.ex.type === "真" ? " zt" : ""}">
       <div class="exlab">${e.ex.type === "真" ? `真题 ${e.ex.year}` : "例句"}</div>
-      <div class="sent">${sentenceHTML(e.ex.en, e.ex.key)}</div>
-      <div class="zh">${esc(e.ex.zh)}</div>
+      <div class="sent">${sentenceHTML(e.ex.en, e.ex.key, noteOf(NOTES, e.ex.en))}</div>
+      <div class="zh">${esc(e.ex.zh)}</div>${Sent.anBlock(noteOf(NOTES, e.ex.en), e.ex.zh)}
       <div class="ops"><button class="play">▶ 播放例句</button><button class="play" data-slow="1">🐢 慢速</button></div>
     </div>` : "";
   const exts = e.ext && e.ext.length ? `<div class="exts">${e.ext.map(x => `<div class="extrow" data-ext="${esc(x.word)}">
@@ -262,13 +252,14 @@ function updateProgress() {
 async function loadLesson(id) {
   if (L && L.id === id) return;
   stopMarathon();
-  const [les, gl, au, rt] = await Promise.all([
+  const [les, gl, au, rt, nt] = await Promise.all([
     fetchJSON(`data/lessons/${id}.json`),
     fetchJSON(`data/gloss/${id}.json`).catch(() => ({words: {}})),
     fetchJSON(`data/audio/${id}.json`).catch(() => ({w: {}, s: {}, z: {}, m: {}, voices: []})),
     fetchJSON(`data/roots/${id}.json`).catch(() => ({words: {}})),
+    fetchJSON(`data/notes/${id}.json`).catch(() => ({sents: {}})),
   ]);
-  L = les; GLOSS = gl.words || {}; AUD = au;
+  L = les; GLOSS = gl.words || {}; AUD = au; NOTES = {sents: nt.sents || {}};
   for (const g of L.groups) for (const e of g.entries) e.root = rt.words?.[e.word];   // 词根法（书外补充）
   WORDMAP.clear();
   for (const g of L.groups) for (const e of g.entries) {
@@ -360,9 +351,15 @@ function gotoWord(w) {
 /* ---------- 查词浮层 ---------- */
 const pop = $("#pop");
 function showPop(html, rect) {
-  pop.innerHTML = html; pop.style.display = "block";
-  const x = Math.min(rect.left + scrollX, scrollX + document.documentElement.clientWidth - pop.offsetWidth - 8);
-  pop.style.left = Math.max(8, x) + "px"; pop.style.top = (rect.bottom + scrollY + 6) + "px";
+  pop.innerHTML = html; pop.style.display = "block"; pop.rect = {left: rect.left + scrollX, bottom: rect.bottom + scrollY};
+  placePop();
+}
+/* 放在点到的位置下面、不超出右边；内容变了（生词本按钮填上字）再放一次。先放到最左边再量宽度，免得贴着右边被挤窄、量出来偏小 */
+function placePop() {
+  const r = pop.rect; if (!r) return;
+  pop.style.left = "0px";
+  const x = Math.min(r.left, scrollX + document.documentElement.clientWidth - pop.offsetWidth - 8);
+  pop.style.left = Math.max(8, x) + "px"; pop.style.top = (r.bottom + 6) + "px";
 }
 /* ---------- 生词本：查到的词 → 存什么（原形、释义、音标、书中位置）；src = 例句所在的词条 ---------- */
 const lesShort = lid => `U${+lid.slice(1, 3)} L${+lid.slice(5, 7)}`;
@@ -381,17 +378,18 @@ function vocabButton(v) {
     el.classList.remove("on"); el.disabled = false; el.textContent = "记一次忘了";
     note.textContent = `${v.w} 已在复习中（书中 ${lesShort(v.bk[0])}）；记忘了就明天再来，并进难词本`;
     el.onclick = () => { Study.forgetBook(v.w); el.disabled = true; el.textContent = "✓ 已记，明天再复习"; };
-    return;
+    placePop(); return;
   }
   const cur = Study.vocabGet(v.w);
   el.classList.toggle("on", !!cur);
   el.textContent = cur ? "✓ 生词本 · 移出" : "＋ 生词本";
   note.textContent = cur ? `${+cur.at.slice(5, 7)}/${+cur.at.slice(8)} 加入的生词${v.w !== v.x ? `：${v.w}` : ""}` : v.w !== v.x ? `加入生词本：${v.w}` : "";
   el.onclick = () => { cur ? Study.removeVocab(v.w) : Study.addVocab(v); vocabButton(v); };
+  placePop();
 }
 
 /* 查词用哪课的数据：课文页是本课；首页巩固里的例句带 data-lid，用那课的（study.js 读来缓存） */
-const curCtx = () => ({lid: L.id, gloss: GLOSS, map: WORDMAP, aud: AUD});
+const curCtx = () => ({lid: L.id, gloss: GLOSS, map: WORDMAP, aud: AUD, notes: NOTES});
 const ctxOf = el => { const s = el.closest && el.closest("[data-lid]"); return s ? Study.lookupCtx(s.dataset.lid) : Promise.resolve(curCtx()); };
 function speakIn(text, c) {
   if (c.aud === AUD) { speak(text); return; }
@@ -404,19 +402,21 @@ async function lookupAt(el, text, rect) {
   lookup(text, rect, srcOf(el), c); speakIn(text, c);
 }
 
+const BOOKTAG = n => `<span class="src">书中 #${n}</span>`, ADD = `<span class="src add">补充</span>`;
+/* 一个词的释义（浮层里的一行）：本课词条 / 扩展词用书上的，其他用逐词释义；都没有返回 null */
+function wordInfo(w, c) {
+  const b = findWord(w, c.map);
+  if (b) return `<b>${esc(b.word)}</b> <span class="ipa">${esc(b.ipa)}</span> ${esc(sensesText(b.senses))}${BOOKTAG(b.no)}`;
+  for (const k of lemmaCandidates(w)) if (c.gloss[k]) return `<b>${esc(w)}</b> ${esc(c.gloss[k])}${ADD}`;
+  return null;
+}
 async function lookup(text, rect, src, c = curCtx()) {
   const GLOSS = c.gloss;
   const q = text.toLowerCase().replace(/[^a-z' ]/g, " ").replace(/\s+/g, " ").trim();
   if (!q) return;
   const line = (w, body, src) => `<div class="pm"><b>${esc(w)}</b> ${body}${src}</div>`;
-  const BOOKTAG = n => `<span class="src">书中 #${n}</span>`, ADD = `<span class="src add">补充</span>`;
   let html, needOnline = false;
-  const one = w => {
-    const b = findWord(w, c.map);
-    if (b) return line(b.word, `<span class="ipa">${esc(b.ipa)}</span> ${esc(sensesText(b.senses))}`, BOOKTAG(b.no));
-    for (const k of lemmaCandidates(w)) if (GLOSS[k]) return line(w, esc(GLOSS[k]), ADD);
-    return null;
-  };
+  const one = w => { const h = wordInfo(w, c); return h && `<div class="pm">${h}</div>`; };
   if (GLOSS[q]) html = `<div><span class="pw">${esc(text)}</span>${ADD}</div><div class="pm">${esc(GLOSS[q])}</div>`;
   else if (!q.includes(" ")) {
     html = one(q) || line(q, "查询中…", ""); needOnline = !one(q);
@@ -430,6 +430,7 @@ async function lookup(text, rect, src, c = curCtx()) {
       const m = j[0].meanings.slice(0, 2).map(x => `<i>${x.partOfSpeech}</i> ${esc(x.definitions[0].definition)}`).join("<br>");
       pop.querySelector(".pm").innerHTML = `<b>${esc(q)}</b> ${m}<div class="pn">英文词典在线释义（本地未收录）</div>`;
     } catch { pop.querySelector(".pm").innerHTML = `<b>${esc(q)}</b> 本地未收录，在线查询失败`; }
+    placePop();
   }
 }
 
@@ -441,18 +442,106 @@ function openPages(a, b) {
 }
 $("#viewerClose").onclick = () => { $("#viewer").hidden = true; };
 
-/* ---------- 点击事件 ---------- */
+/* ---------- 例句点词：课文页、首页复习卡背面、生词「遇见」的 .sent 都走这一个处理函数 ----------
+   单击词组 → 词组浮层（下面一行小字是点到的词），读词组；单击词组外的词 → 查这个词并朗读；
+   双击单词 / 手机长按选中一个词 → 只查这个词；划选几个词 → 和哪个词组重叠的字最多就显示哪个，对不上就逐词查。
+   双击会先来两次 click：点在词组上的单击等 DBL_MS 确认不是双击再弹，双击直接查词，不会先闪词组、读两遍；
+   词组外的词单击立刻查，第二击不再处理。
+   出题卡片还没作答（.locked）时例句不响应，点击照常交给卡片（翻卡）。
+   在捕获阶段处理并停止传播，study.js 的卡片监听和下面的 document 监听都不会再收到这次点击 */
 const srcOf = el => { const s = el.closest && el.closest(".card,[data-src]"); return s ? s.dataset.word || s.dataset.src || "" : ""; };   // 例句属于哪个词条
+/* 「析」：展开 / 收起这句的语法解析 */
+function toggleAn(b) {
+  const an = b.parentElement.querySelector(".an"); if (!an) return;
+  an.hidden = !an.hidden; b.classList.toggle("on", !an.hidden);
+}
+const DBL_MS = 260;
+let phTimer = 0, lastSel = {k: "", t: 0, s: null};
+/* node 里 offset 处在这句里是第几个字符 */
+function charAt(sent, node, offset) { const r = document.createRange(); r.setStart(sent, 0); r.setEnd(node, offset); return r.toString().length; }
+/* 选区落在这句里的部分：{text, a, b, rect}；没选或不在这句里返回 null */
+function selIn(sent) {
+  const s = getSelection();
+  if (!s.rangeCount || !s.toString().trim()) return null;
+  const r = s.getRangeAt(0), inS = sent.contains(r.startContainer), inE = sent.contains(r.endContainer);
+  if (!inS && !inE) return null;
+  const a = inS ? charAt(sent, r.startContainer, r.startOffset) : 0, b = inE ? charAt(sent, r.endContainer, r.endOffset) : sent.textContent.length;
+  const text = sent.textContent.slice(a, b).trim();
+  return text ? {text, a, b, rect: r.getBoundingClientRect()} : null;
+}
+/* 词组浮层：上面词组（原形、释义、补充），w 是点到的词（划选时没有），下面一行小字是它的释义；读词组原形 */
+async function phraseAt(sent, id, w) {
+  const c = await ctxOf(sent);
+  if (!sent.isConnected) return;
+  const en = sent.textContent, list = (noteOf(c.notes, en) || {}).ph || [], P = list[id];
+  const rect = (w || sent.querySelector(`.ph[data-ph="${id}"]`) || sent).getBoundingClientRect();
+  if (!P) { if (w) { lookup(w.textContent, rect, srcOf(sent), c); speakIn(w.textContent, c); } return; }
+  const x = Sent.locate(en, list).filter(s => s.id === id).map(s => en.slice(s.s, s.e)).join(" … ");
+  const wq = w && w.textContent.toLowerCase().replace(/[^a-z']/g, "");
+  showPop(`<div><span class="pw">${esc(P.b)}</span>${ADD}</div><div class="pm">${esc(P.m)}</div>
+    ${w ? `<div class="pwl">${wordInfo(wq, c) || `<b>${esc(w.textContent)}</b> 本地未收录`}</div>` : ""}
+    <div class="ops"><button id="popSay">🔊 再读一遍</button><button id="popVocab" class="pvb"></button></div><div class="pn" id="popVn"></div>`, rect);
+  const say = () => speakIn(P.b.replace(/\s*…\s*/g, " "), c);
+  $("#popSay").onclick = say;
+  vocabButton({w: P.b, x, m: P.m, p: "", k: c.lid, e: srcOf(sent), bk: bookAt(P.b), ph: 1});   // 生词本：原形、句中写法、释义快照，ph 标明是词组
+  say();
+}
+/* 划选：一个词只查这个词；几个词按重叠挑词组，对不上走逐词查。
+   同一个选区短时间内只处理一次（手机上 touchend 和 click 可能都看到它） */
+function onSelect(sent, sel) {
+  const k = `${sel.a}:${sel.b}:${sel.text}`, now = Date.now();
+  if (lastSel.k === k && lastSel.s === sent && now - lastSel.t < 800) return;
+  lastSel = {k, t: now, s: sent};
+  stopMarathon();
+  if (!/\s/.test(sel.text)) { lookupAt(sent, sel.text, sel.rect); return; }
+  const segs = $$(".ph", sent).map(p => { const s = charAt(sent, p, 0); return {s, e: s + p.textContent.length, id: +p.dataset.ph}; });
+  const id = Sent.best(segs, sel.a, sel.b);
+  id >= 0 ? phraseAt(sent, id, null) : lookupAt(sent, sel.text, sel.rect);
+}
+/* 这次点击落在哪句例句上：点在句子里；或者从句子里开始划选、松手在句子外（click 落在共同的外层上） */
+function sentOf(t) {
+  const sent = t.closest(".sent"); if (sent) return sent;
+  const s = getSelection(); if (!s.rangeCount || !s.toString().trim()) return null;
+  const n = s.getRangeAt(0).startContainer, el = (n.nodeType === 1 ? n : n.parentElement).closest(".sent");
+  return el && t.contains(el) ? el : null;
+}
+function sentClick(e) {
+  const t = e.target; if (!t.closest || pop.contains(t)) return;
+  const ab = t.closest(".anBtn");
+  if (ab && !ab.closest(".locked")) { e.stopPropagation(); toggleAn(ab); return; }
+  const sent = sentOf(t);
+  if (!sent || sent.closest(".locked")) return;
+  e.stopPropagation();
+  const w = t.closest(".w"), ph = t.closest(".ph");
+  if (e.detail >= 2) {                               // 双击的第二击：词组里的词改查单词；词组外的词第一击已经查过
+    if (e.detail === 2 && w && ph) { clearTimeout(phTimer); phTimer = 0; stopMarathon(); lookupAt(w, w.textContent, w.getBoundingClientRect()); }
+    return;
+  }
+  const sel = selIn(sent);
+  if (sel) { onSelect(sent, sel); return; }
+  clearTimeout(phTimer); phTimer = 0;
+  if (!w && !ph) { pop.style.display = "none"; return; }
+  stopMarathon();
+  if (!ph) { lookupAt(w, w.textContent, w.getBoundingClientRect()); return; }
+  phTimer = setTimeout(() => { phTimer = 0; phraseAt(sent, +ph.dataset.ph, w); }, DBL_MS);
+}
+document.addEventListener("click", sentClick, true);
+/* 手机长按选词、拖动选区：松手后看选区（长按不会触发 click） */
+document.addEventListener("touchend", e => {
+  const t = e.target;
+  setTimeout(() => {
+    const sent = t.closest && t.closest(".sent");
+    if (!sent || !sent.isConnected || sent.closest(".locked")) return;
+    const sel = selIn(sent); if (sel) onSelect(sent, sel);
+  }, 300);
+});
+
+/* ---------- 其他点击 ---------- */
 document.addEventListener("click", e => {
   const t = e.target;
-  if (t.closest(".study .sent") && !pop.contains(t)) {   // 首页巩固里的例句也能点词查义
-    const sel = getSelection().toString().trim();
-    if (sel) { lookupAt(t, sel, getSelection().getRangeAt(0).getBoundingClientRect()); return; }
-    if (t.classList.contains("w")) { lookupAt(t, t.textContent, t.getBoundingClientRect()); return; }
-  }
   if (t.closest(".study") && !pop.contains(t)) pop.style.display = "none";
   if (t.closest(".top,.drawer,.fabs,.settings,.viewer,.study,.peek")) { if (!t.closest(".search")) $("#qres").style.display = "none"; return; }
-  if (t.dataset.say || t.classList.contains("play") || t.classList.contains("w")) stopMarathon();
+  if (t.dataset.say || t.classList.contains("play")) stopMarathon();
   if (t.dataset.say) { speak(t.dataset.say); return; }
   if (t.classList.contains("play")) { playSentence(t.closest(".card"), null, t.dataset.slow ? 0.75 : rate()); return; }
   if (t.dataset.goto) { gotoWord(t.dataset.goto); return; }
@@ -467,15 +556,8 @@ document.addEventListener("click", e => {
   const masked = t.closest(".mask .sense,.mask .zh,.mask .tip,.mask .xm");
   if (masked) { masked.classList.toggle("show"); return; }
   if (pop.contains(t)) return;
-  const sel = getSelection().toString().trim();
-  if (sel && t.closest(".sent")) { lookupAt(t, sel, getSelection().getRangeAt(0).getBoundingClientRect()); return; }
-  if (t.classList.contains("w")) { lookupAt(t, t.textContent, t.getBoundingClientRect()); return; }
   pop.style.display = "none";
 });
-document.addEventListener("touchend", e => setTimeout(() => {
-  const s = getSelection();
-  if (s.toString().trim().includes(" ") && e.target.closest && e.target.closest(".sent")) ctxOf(e.target).then(c => lookup(s.toString(), s.getRangeAt(0).getBoundingClientRect(), srcOf(e.target), c));
-}, 300));
 
 /* ---------- 设置页 ---------- */
 const seg = (key, opts) => `<div class="seg">${opts.map(([v, label]) =>
@@ -501,6 +583,7 @@ function renderSettings() {
     <section class="panel"><h2>学习</h2>
       ${sw("mask", "背诵模式", "遮住释义、记忆法和译文，点一下显示。课文页右下角「遮」也能随手切换")}
       ${sw("hideKnown", "隐藏已会", "标为「已会」的词卡不显示，磨耳朵也跳过它们")}
+      ${sw("phLine", "例句词组下划线", "例句里标出的词组（书外补充）画虚线；关掉只是不画线，点词组照样显示词组释义")}
     </section>
     <section class="panel"><h2>背词</h2>
       <div class="row"><span><b>考试日期</b><small>首页倒计时用</small></span><input type="date" data-set="examDate" value="${esc(S.examDate)}"></div>

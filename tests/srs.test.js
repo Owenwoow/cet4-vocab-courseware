@@ -306,3 +306,44 @@ test("混淆词列表：新的在前、去重、最多 3 个", () => {
   assert.deepEqual(SRS.confDrop(["a", "b"], "a"), ["b"]);
   assert.deepEqual(SRS.confDrop(undefined, "a"), []);
 });
+
+/* ---------- 词组卡：生词本里原形含空格的，或 ph=1 的例句词组 ---------- */
+test("词组卡：原形含空格或标了 ph 的生词", () => {
+  assert.ok(SRS.isPhrase({w: "take away"}));
+  assert.ok(SRS.isPhrase({w: "is bound to"}));               // 以前从逐词释义划选加进来的短语
+  assert.ok(SRS.isPhrase({w: "attribute … to", ph: 1}));
+  assert.ok(!SRS.isPhrase({w: "abandon"}));
+  assert.ok(!SRS.isPhrase(card({})));                         // 书上的卡没有 w
+});
+
+test("词组卡出题：只出看词组选义，5 级快速抽查（翻卡）；不出听音、例句、拼写", () => {
+  const ph = o => card({w: "take away", ph: 1, ...o});
+  assert.equal(SRS.pickType(ph({})), T.MEAN);
+  assert.equal(SRS.pickType(ph({n: 1, h: "g", s: 1})), T.MEAN);            // 普通卡这里会出听音
+  assert.equal(SRS.pickType(ph({n: 3, h: "gg", s: 3, q: 1})), T.MEAN);     // 普通卡出例句
+  assert.equal(SRS.pickType(ph({n: 4, h: "ggg", s: 4})), T.MEAN);          // 普通卡出拼写
+  assert.equal(SRS.pickType(ph({n: 5, h: "gggg", s: 4})), T.QUICK);
+  assert.equal(SRS.pickType(card({n: 1, h: "g", s: 1}), {phrase: true}), T.MEAN);   // 也可以显式按词组算
+  for (let s = 0; s <= 5; s++) for (const h of ["", "g", "gg", "ggg", "gggg", "gf", "ggm"])
+    assert.ok([T.MEAN, T.QUICK].includes(SRS.pickType(ph({s, h, n: h.length}))), `s=${s} h=${h}`);
+});
+
+test("词组卡熟练度：不看 q，4 / 5 级只看站数和连对", () => {
+  const ph = o => card({w: "take away", ...o});
+  assert.equal(SRS.level(ph({n: 4, h: "ggg", s: 4})), 4);                  // 普通卡 q=0 只有 3 级
+  assert.equal(SRS.level(card({n: 4, h: "ggg", s: 4})), 3);
+  assert.equal(SRS.level(ph({n: 5, h: "gggg", s: 4})), 5);
+  assert.equal(SRS.level(ph({n: 5, h: "gggg", s: 3})), 3);                  // 站数不够
+  assert.equal(SRS.level(ph({n: 5, h: "gggf", s: 4})), 1);
+  assert.equal(SRS.level(card({n: 4, h: "ggg", s: 4}), {phrase: true}), 4);
+});
+
+test("词组卡一路看词组选义记得，也能走到牢记", () => {
+  let c = {...SRS.newCard("2026-10-12"), w: "take away", ph: 1};
+  for (let i = 0; i < 10 && SRS.level(c) < 5; i++) {
+    assert.ok([T.MEAN, T.QUICK].includes(SRS.pickType(c)));
+    c = SRS.rate(c, "g", c.d, {type: SRS.pickType(c), key: "take away"});
+  }
+  assert.equal(SRS.level(c), 5);
+  assert.equal(SRS.pickType(c), T.QUICK);
+});
