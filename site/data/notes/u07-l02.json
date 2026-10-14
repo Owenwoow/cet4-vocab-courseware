@@ -1,320 +1,442 @@
 {
-  "_note": "例句词组与语法解析（书外补充，AI 生成）",
-  "sents": {
-    "The digital access codes are even harder for students to opt out of.": {
-      "ph": [{"t": "opt out of", "b": "opt out of", "m": "选择退出"}],
-      "an": {
-        "parts": [
-          {"t": "The digital access codes are even harder", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "for students to opt out of", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "harder for sb. to do 里，for students 是不定式 to opt out of 的逻辑主语，书上把它转成使役式「让学生们更难……」。",
-          "主语 codes 其实是句尾 of 的逻辑宾语（opt out of the codes），所以介词 of 悬在句尾；译文要还原成「退出代码」，不能把 of 漏掉。",
-          "even 修饰比较级 harder，书上译成「甚至……更难」。"
-        ],
-        "lit": "数字访问代码对学生来说甚至更难选择退出。"
-      }
-    },
-    "People's choice of food depends on their individual taste.": {
-      "ph": [{"t": "depends on", "b": "depend on", "m": "取决于"}]
-    },
-    "It helps people to select the most effective sunscreen.": {
-      "ph": [{"t": "helps people to select", "b": "help sb. to do", "m": "帮助人们选择"}]
-    },
-    "The content of the lecture is a much more effective method for students to learn.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "The content of the lecture is a much more effective method", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "for students to learn", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "for students to learn 是不定式作后置定语修饰 method，for students 是 learn 的逻辑主语；书上把「对于学生来说」提到句首，再译成「学习方法」。",
-          "much 修饰比较级 more effective，表示「……得多」，书上译成「更有效」。",
-          "The content of the lecture 是 of 短语作定语，书上展开成「讲座里讲的内容」。"
-        ],
-        "lit": "讲座的内容是对学生来说学习的一个有效得多的方法。"
-      }
-    },
-    "People who elect to track their sleep may try to get more sleep.": {
-      "ph": [{"t": "elect to", "b": "elect to do", "m": "选择做"}],
-      "an": {
-        "parts": [
-          {"t": "People", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "who elect to track their sleep", "r": "定语从句"},
-          {"t": " ", "r": ""},
-          {"t": "may try to get more sleep", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "who 的先行词是 People，who 在从句中作 elect 的主语；书上把定语从句前置成「那些选择跟踪自己睡眠的人」。",
-          "elect 在这里不是「选举」，而是 elect to do「选择做」，to track 是它的宾语。",
-          "may 表推测，译成「可能」；try to get more sleep 译成「会努力睡得更多」。"
-        ],
-        "lit": "选择跟踪他们睡眠的人们可能尝试得到更多的睡眠。"
-      }
-    },
-    "They must be used in combination for an entire collective.": {
-      "ph": [{"t": "in combination", "b": "in combination with", "m": "结合起来"}]
-    },
-    "Don't speak to me in that tone of voice.": {
-      "ph": [{"t": "tone of voice", "b": "tone of voice", "m": "语气，口吻"}]
-    },
-    "The piano is out of tune.": {
-      "ph": [{"t": "out of tune", "b": "out of tune", "m": "走调"}]
-    },
-    "She spoke English with an accent.": {
-      "ph": [{"t": "with an accent", "b": "with an accent", "m": "带口音"}]
-    },
-    "A basic sense of rhythm is essential in a music teacher.": {
-      "ph": [{"t": "A basic sense of", "b": "a sense of", "m": "……感"}]
-    },
-    "Taking a walk can instantly lift your mood, especially when you go outdoors.": {
-      "ph": [{"t": "Taking a walk", "b": "take a walk", "m": "散步"}],
-      "an": {
-        "parts": [
-          {"t": "Taking a walk can instantly lift your mood", "r": "主干"},
-          {"t": ", ", "r": ""},
-          {"t": "especially when you go outdoors", "r": "时间状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "Taking a walk 是动名词短语作主语，无生命主语加 can lift，书上直接译成「散步可以立即提升你的情绪」，不用补人称主语。",
-          "especially when 引导时间状语从句，especially 强调这个时机；go outdoors 书上译成「在户外」，整个从句译成「尤其是当你在户外的时候」。"
-        ],
-        "lit": "散步能立刻提升你的心情，尤其是当你走到户外的时候。"
-      }
-    },
-    "They may adopt strategies that are bound to ruin their venture.": {
-      "ph": [{"t": "are bound to", "b": "be bound to do", "m": "注定会"}],
-      "an": {
-        "parts": [
-          {"t": "They may adopt strategies", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that are bound to ruin their venture", "r": "定语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "that 的先行词是 strategies，that 在从句中作主语（strategies are bound to ruin…）；书上把定语从句前置成「注定会毁掉企业的策略」。",
-          "be bound to do 表示必然性，译成「注定会」；may 表推测，译成「可能」。"
-        ],
-        "lit": "他们可能采取注定要毁掉他们的企业的策略。"
-      }
-    },
-    "We took an excursion around the island yesterday.": {
-      "ph": [{"t": "took an excursion", "b": "take an excursion", "m": "进行短途旅行"}]
-    },
-    "She took her sister with her to keep her company on the journey.": {
-      "ph": [{"t": "keep her company", "b": "keep sb. company", "m": "陪伴，作伴"}]
-    },
-    "Every time I see a cruise ship, I feel sad.": {
-      "ph": [{"t": "Every time", "b": "every time", "m": "每次"}]
-    },
-    "She wasn't so much interested in hot yoga.": {
-      "ph": [{"t": "interested in", "b": "be interested in", "m": "对……感兴趣"}]
-    },
-    "They're concerned about their health and the well-being of the planet.": {
-      "ph": [{"t": "concerned about", "b": "be concerned about", "m": "关心"}]
-    },
-    "Willpower is just like a muscle; to keep it strong you need to constantly exercise it.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "Willpower is just like a muscle", "r": "主干"},
-          {"t": "; ", "r": ""},
-          {"t": "to keep it strong", "r": "目的状语"},
-          {"t": " ", "r": ""},
-          {"t": "you need to constantly exercise it", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "分号连接两个分句，后一句解释前一句的比喻（意志力像肌肉一样要练）。",
-          "to keep it strong 是放在句首的不定式，作目的状语；书上把它挪到后面，用「需要不断锻炼才能保持强壮」的「才能」把目的关系译出来。",
-          "keep it strong 是 keep + 宾语 + 形容词补足语，意思是「使它保持强壮」，it 指意志力。"
-        ],
-        "lit": "意志力就像一块肌肉；为了让它保持强壮，你需要不断地锻炼它。"
-      }
-    },
-    "We get a fairly large portion of calories from fast food and snacks.": {
-      "ph": [{"t": "a fairly large portion of", "b": "a portion of", "m": "一部分"}]
-    },
-    "The last important point to consider is that practice focuses your energy on the process.": {
-      "ph": [
-        {"t": "focuses", "b": "focus … on", "m": "把……集中在"},
-        {"t": "on", "b": "focus … on", "m": "把……集中在"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "The last important point to consider is", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that practice focuses your energy on the process", "r": "表语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "to consider 是不定式作后置定语修饰 point，point 是 consider 的逻辑宾语，书上前置成「最后要考虑的一点」。",
-          "is 后面的 that 从句作表语，that 本身不作成分、不译；整句译成「……的一点是，……」。",
-          "focus A on B 被拆开：A 是 your energy，B 是 the process；practice 是无生命主语，书上保留成「练习将你的精力集中在这个过程上」。"
-        ],
-        "lit": "要考虑的最后一个重要的点是，练习把你的精力集中在过程上。"
-      }
-    },
-    "More funding will be invested in bike battery research.": {
-      "ph": [{"t": "invested in", "b": "invest in", "m": "投入到"}]
-    },
-    "Let the debates be transparent and vigorous, wherever they are held.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "Let the debates be transparent and vigorous", "r": "主干"},
-          {"t": ", ", "r": ""},
-          {"t": "wherever they are held", "r": "让步状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "Let + 宾语 + 动词原形（be）是祈使句，意思是「让辩论……」，书上译成「应使辩论清晰而有力」，加了「应」表示要求。",
-          "wherever 引导让步状语从句，they 指 debates；they are held 是被动，书上译成主动的「举行」，并补出 debates，译成「无论在何处举行辩论」。",
-          "从句在原句放最后，书上提到句首，符合中文「先条件后结论」的顺序。"
-        ],
-        "lit": "让辩论透明而有力，无论它们在哪里被举行。"
-      }
-    },
-    "His friends feel reluctant to visit his home.": {
-      "ph": [{"t": "feel reluctant to", "b": "feel reluctant to do", "m": "不愿做某事"}]
-    },
-    "They can lead to the creation of new clouds easily visible from space.": {
-      "ph": [{"t": "lead to", "b": "lead to", "m": "导致，形成"}],
-      "an": {
-        "parts": [
-          {"t": "They can lead to the creation of new clouds", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "easily visible from space", "r": ""},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "the creation of new clouds 是名词化结构，书上把 lead to the creation of 展开成动宾式的「形成新的云」。",
-          "easily visible from space 是形容词短语后置，修饰 clouds（相当于省略了 which are）；书上把它拆成后面的分句「这从太空中很容易看到」。"
-        ],
-        "lit": "它们能导致从太空容易看见的新云的形成。"
-      }
-    },
-    "These invisible duties become apparent only when you don't do them.": {
-      "ph": [{"t": "become apparent", "b": "become apparent", "m": "变得明显"}],
-      "an": {
-        "parts": [
-          {"t": "These invisible duties become apparent", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "only when you don't do them", "r": "时间状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "only 放在 when 从句前，限定条件，只是强调「仅在……时」；它不在句首，所以主句不倒装。",
-          "书上用「只有当……的时候，……才……」对应 only when，把从句提到前面，并把 don't do them 译成「不去做」；them 指 duties。"
-        ],
-        "lit": "这些看不见的责任变得明显，仅当你不做它们的时候。"
-      }
-    },
-    "Patients' data has to be revised from time to time.": {
-      "ph": [{"t": "from time to time", "b": "from time to time", "m": "不时，有时"}],
-      "an": {
-        "parts": [
-          {"t": "Patients' data has to be revised", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "from time to time", "r": "状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "has to be revised 是 have to + 被动，动作的施事没有说出，书上译成「必须……进行修改」，避开了生硬的「被修改」。",
-          "data 在这里当作整体、视为单数，所以谓语用 has；Patients' 作定语，译成「患者的数据」。"
-        ],
-        "lit": "患者的数据必须被修改，不时地。"
-      }
-    },
-    "They help an organization to broaden its vision effectively.": {
-      "ph": [{"t": "help an organization to broaden", "b": "help sb. to do", "m": "帮助……拓宽"}]
-    },
-    "Employees with a growth mindset may be more likely to devise innovative ideas.": {
-      "ph": [{"t": "be more likely to", "b": "be likely to", "m": "更有可能"}],
-      "an": {
-        "parts": [
-          {"t": "Employees", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "with a growth mindset", "r": ""},
-          {"t": " ", "r": ""},
-          {"t": "may be more likely to devise innovative ideas", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "with a growth mindset 是介词短语作后置定语修饰 Employees，书上前置成「具有成长心态的员工」。",
-          "may 和 likely 都带推测意味，书上合译成「也许更有可能」；more likely to devise 是 be likely to do 的比较级，意思是「更可能想出」。"
-        ],
-        "lit": "带有成长心态的员工可能更有可能想出创新的想法。"
-      }
-    },
-    "When looking at angry humans, they tended to turn away their gaze.": {
-      "ph": [
-        {"t": "looking at", "b": "look at", "m": "看着"},
-        {"t": "tended to", "b": "tend to do", "m": "往往"},
-        {"t": "turn away", "b": "turn away", "m": "转移，移开"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "When looking at angry humans", "r": "时间状语"},
-          {"t": ", ", "r": ""},
-          {"t": "they tended to turn away their gaze", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "When looking 是省略了主语的时间状语从句（完整是 When they looked），省略的主语和主句的 they 一致，所以用现在分词表主动。",
-          "tended to 用过去式描述一种习惯性倾向，书上译成「往往」，turn away their gaze 译成「转移视线」。"
-        ],
-        "lit": "当看着愤怒的人类时，它们倾向于转开它们的目光。"
-      }
-    },
-    "I only had time to glance at my emails.": {
-      "ph": [
-        {"t": "had time to", "b": "have time to do", "m": "有时间做"},
-        {"t": "glance at", "b": "glance at", "m": "瞥一眼"}
-      ]
-    },
-    "He caught a glimpse of her in the crowd.": {
-      "ph": [{"t": "caught a glimpse of", "b": "catch a glimpse of", "m": "瞥见"}]
-    },
-    "You just stare across the table blankly with your mouth hanging open.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "You just stare across the table blankly", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "with your mouth hanging open", "r": "状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "with + 宾语 + 现在分词是复合结构，作伴随状语：mouth 和 hang 是主动关系，hanging open 说明嘴的状态；书上译成「张着嘴」，放到动作前面。",
-          "blankly 是方式副词，书上前置译成「茫然地」，放在「盯着」之前。"
-        ],
-        "lit": "你只是茫然地盯着桌子对面，你的嘴张着挂开。"
-      }
-    },
-    "She scanned through the newspaper over breakfast.": {
-      "ph": [
-        {"t": "scanned through", "b": "scan through", "m": "浏览"},
-        {"t": "over breakfast", "b": "over breakfast", "m": "吃早饭时"}
-      ]
-    },
-    "Did you have a chance to do any sightseeing?": {
-      "ph": [
-        {"t": "have a chance to", "b": "have a chance to do", "m": "有机会做"},
-        {"t": "do any sightseeing", "b": "do sightseeing", "m": "游览"}
-      ]
-    },
-    "Its conclusions are based on carefully collected data.": {
-      "ph": [{"t": "are based on", "b": "be based on", "m": "基于"}]
+ "_note": "例句词组与语法解析（书外补充，AI 生成）",
+ "sents": {
+  "The digital access codes are even harder for students to opt out of.": {
+   "ph": [
+    {
+     "t": "opt out of",
+     "b": "opt out of",
+     "m": "选择退出"
     }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The digital access codes are even harder",
+      "s": "even 放在比较级前面，是「甚至更……」。hard 你可能直接翻成「硬」或「难」就停了，后面还跟着 for students，这是 hard for sb. to do 的框架：对谁来说，做某事很难。先把「甚至更难」记住，等后面补上「做什么」。\n→ 数字访问代码甚至更难"
+     },
+     {
+      "t": "for students to opt out of",
+      "s": "你多半会翻成「对学生来说选择退出的」。念一遍，句子在 of 后面断了，是不是没说完？眼睛盯住句尾这个 of：opt out of 后面本来要跟宾语，这个宾语就是句首的 codes，被挪到前面当主语了。放回去试：学生很难退出这些代码，说得通。for students 是 to opt out of 的动作者。\n→ 让学生退出"
+     }
+    ],
+    "order": "英文把「退出」放在最后，其实意思是「学生要退出这些代码更难」，所以先说学生，再说退出。",
+    "sum": "数字访问代码更是让学生难以选择退出。",
+    "cmp": "意思一样。书上用「让学生们更难选择退出」，把 for students 译成「让……」，也通顺。"
+   }
+  },
+  "People's choice of food depends on their individual taste.": {
+   "ph": [
+    {
+     "t": "depends on",
+     "b": "depend on",
+     "m": "取决于"
+    }
+   ]
+  },
+  "It helps people to select the most effective sunscreen.": {
+   "ph": [
+    {
+     "t": "helps people to select",
+     "b": "help sb. to do",
+     "m": "帮助人们选择"
+    }
+   ]
+  },
+  "The content of the lecture is a much more effective method for students to learn.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The content of the lecture",
+      "s": "这块照字面翻就行：content 在这里是「内容」，of 表示属于，「讲座的内容」。\n→ 讲座的内容"
+     },
+     {
+      "t": "is a much more effective method",
+      "s": "你可能把 much 当成「很多」，翻成「很多更有效」。念一遍，是不是不通？much 放在比较级 more effective 前面，是「……得多」。a method 是「一种方法」。\n→ 是一种有效得多的方法"
+     },
+     {
+      "t": "for students to learn",
+      "s": "你多半会翻成「对学生去学习」，句子接不上。这里 for students to learn 是跟在 method 后面的补充说明：学生用来学习的方法。眼睛往回找，它修饰的是 method，所以中文要把「学生学习」提到「方法」前面去。\n→ 供学生学习的"
+     }
+    ],
+    "order": "英文「方法」在前、「学生学习」在后，中文习惯先说修饰的话：「学生用来学习的、有效得多的方法」。",
+    "sum": "讲座的内容对学生来说是一种有效得多的学习方法。",
+    "cmp": "意思一样。书上把 for students 提到句首说「对于学生来说」，「学习」放到「方法」前面成「学习方法」，处理得很顺；书上还把 the content of the lecture 说成「讲座里讲的内容」，比「讲座的内容」更口语。"
+   }
+  },
+  "People who elect to track their sleep may try to get more sleep.": {
+   "ph": [
+    {
+     "t": "elect to",
+     "b": "elect to do",
+     "m": "选择做"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "People who elect to track their sleep",
+      "s": "elect 你多半只认识「选举」，翻成「选举去跟踪」就怪了。看到 elect 后面跟 to track（to + 动词），它在这里是「选择做某事」。who 指谁？放回去试：People elect to track their sleep，人选择记录睡眠，说得通。track 是「追踪记录」。\n→ 选择记录自己睡眠的人"
+     },
+     {
+      "t": "may try to get more sleep",
+      "s": "may 别翻成「允许」，这里是「可能」。try to 是「努力去做」。more sleep 你可能翻成「更多的睡眠」，不顺，把名词 sleep 换成动词说：「睡得更多」。\n→ 可能会努力睡得更多"
+     }
+    ],
+    "sum": "选择记录自己睡眠情况的人，可能会努力多睡一些。",
+    "cmp": "意思一样。书上译成「睡得更多」，我说成「多睡一些」，两个都对。"
+   }
+  },
+  "Its conclusions are based on carefully collected data.": {
+   "ph": [
+    {
+     "t": "are based on",
+     "b": "be based on",
+     "m": "基于"
+    }
+   ]
+  },
+  "They must be used in combination for an entire collective.": {
+   "ph": [
+    {
+     "t": "in combination",
+     "b": "in combination with",
+     "m": "结合起来"
+    }
+   ]
+  },
+  "She spoke English with an accent.": {
+   "ph": [
+    {
+     "t": "with an accent",
+     "b": "with an accent",
+     "m": "带口音"
+    }
+   ]
+  },
+  "A basic sense of rhythm is essential in a music teacher.": {
+   "ph": [
+    {
+     "t": "A basic sense of",
+     "b": "a sense of",
+     "m": "……感"
+    }
+   ]
+  },
+  "Don't speak to me in that tone of voice.": {
+   "ph": [
+    {
+     "t": "tone of voice",
+     "b": "tone of voice",
+     "m": "语气，口吻"
+    }
+   ]
+  },
+  "The piano is out of tune.": {
+   "ph": [
+    {
+     "t": "out of tune",
+     "b": "out of tune",
+     "m": "走调"
+    }
+   ]
+  },
+  "Taking a walk can instantly lift your mood, especially when you go outdoors.": {
+   "ph": [
+    {
+     "t": "Taking a walk",
+     "b": "take a walk",
+     "m": "散步"
+    }
+   ]
+  },
+  "They may adopt strategies that are bound to ruin their venture.": {
+   "ph": [
+    {
+     "t": "are bound to",
+     "b": "be bound to do",
+     "m": "注定会"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They may adopt strategies",
+      "s": "adopt 你可能翻成「收养」。放到 strategies（策略）前面，它是「采用」。may 是「可能」。\n→ 他们可能会采取一些策略"
+     },
+     {
+      "t": "that are bound to ruin their venture",
+      "s": "that 指谁？放回去试：strategies are bound to ruin……，策略注定会毁掉……，说得通；venture are……，venture 是单数，配 are 不对，还是 ruin 的宾语，不能当主语。所以 that 指 strategies。be bound to do 是「一定会、注定会」，不是「被绑住」。venture 你可能只认识「冒险」，这里指「企业、事业」。\n→ 这些策略注定会毁掉他们的企业"
+     }
+    ],
+    "order": "英文用 that 把「毁掉企业」挂在策略后面，中文可以拆成两个短句：先说采取策略，再说这些策略注定会毁掉……",
+    "sum": "他们可能会采取一些注定会毁掉自己企业的策略。",
+    "cmp": "意思一样。书上把「注定会毁掉企业」放在「策略」前，一口气说完；拆开说也可以，看哪个顺。"
+   }
+  },
+  "We took an excursion around the island yesterday.": {
+   "ph": [
+    {
+     "t": "took an excursion",
+     "b": "take an excursion",
+     "m": "进行短途旅行"
+    }
+   ]
+  },
+  "She took her sister with her to keep her company on the journey.": {
+   "ph": [
+    {
+     "t": "keep her company",
+     "b": "keep sb. company",
+     "m": "陪伴，作伴"
+    }
+   ]
+  },
+  "Every time I see a cruise ship, I feel sad.": {
+   "ph": [
+    {
+     "t": "Every time",
+     "b": "every time",
+     "m": "每次"
+    }
+   ]
+  },
+  "She wasn't so much interested in hot yoga.": {
+   "ph": [
+    {
+     "t": "interested in",
+     "b": "be interested in",
+     "m": "对……感兴趣"
+    }
+   ]
+  },
+  "They're concerned about their health and the well-being of the planet.": {
+   "ph": [
+    {
+     "t": "concerned about",
+     "b": "be concerned about",
+     "m": "关心"
+    }
+   ]
+  },
+  "We get a fairly large portion of calories from fast food and snacks.": {
+   "ph": [
+    {
+     "t": "a fairly large portion of",
+     "b": "a portion of",
+     "m": "一部分"
+    }
+   ]
+  },
+  "The last important point to consider is that practice focuses your energy on the process.": {
+   "ph": [
+    {
+     "t": "focuses",
+     "b": "focus … on",
+     "m": "把……集中在"
+    },
+    {
+     "t": "on",
+     "b": "focus … on",
+     "m": "把……集中在"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The last important point to consider",
+      "s": "你多半会翻成「最后重要的点去考虑」。念一遍，卡住了吧？to consider 是跟在 point 后面的，说明是哪一点：要考虑的那一点。中文要把「要考虑的」提到「点」前面。\n→ 最后要考虑的重要一点"
+     },
+     {
+      "t": "is that practice focuses your energy on the process",
+      "s": "is that 后面是一整句话，那就是内容，「是……」。再看 practice：后面的 focuses 带 s，是动词，所以 practice 是名词「练习」，当主语。focus A on B 是「把 A 集中在 B 上」：把你的精力集中在这个过程上。\n→ 是练习能让你把精力集中在过程上"
+     }
+    ],
+    "order": "英文是「要考虑的点」放在 is 前面，中文也是先说这一点，再说内容，顺序一致，只需要把 to consider 提前。",
+    "sum": "最后一个要考虑的重点是，练习能让你把精力集中在过程上。",
+    "cmp": "书上译成「最后要考虑的一点是，练习将你的精力集中在这个过程上」，基本一样，「将……集中」是书面说法。"
+   }
+  },
+  "More funding will be invested in bike battery research.": {
+   "ph": [
+    {
+     "t": "invested in",
+     "b": "invest in",
+     "m": "投入到"
+    }
+   ]
+  },
+  "Let the debates be transparent and vigorous, wherever they are held.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Let the debates be transparent and vigorous",
+      "s": "你多半会翻成「让辩论是透明的和有力的」。念一遍，be 翻出来很生硬。Let sb. be…… 是「让……保持某种样子」，be 不用翻出来。transparent 本义是「透明的」，说辩论，就是「公开清楚」；vigorous 是「有力、有活力」。\n→ 让辩论公开清晰又有力"
+     },
+     {
+      "t": "wherever they are held",
+      "s": "wherever 看成「无论在哪里」，一个词就是 no matter where。they 指谁？放回去试：debates are held，辩论被举行，说得通。「辩论被举行」是被动，中文说「举行辩论」更顺。\n→ 无论在哪里举行辩论"
+     }
+    ],
+    "order": "英文把「无论在哪里」放在最后，中文习惯把「无论……」放在前面当条件，再说结论「应使辩论……」。",
+    "sum": "无论在哪里举行辩论，都应让辩论公开、清晰而有力。",
+    "cmp": "书上是「无论在何处举行辩论，都应使辩论清晰而有力」，一样先说条件，也把被动改成了「举行辩论」。"
+   }
+  },
+  "His friends feel reluctant to visit his home.": {
+   "ph": [
+    {
+     "t": "feel reluctant to",
+     "b": "feel reluctant to do",
+     "m": "不愿做某事"
+    }
+   ]
+  },
+  "They can lead to the creation of new clouds easily visible from space.": {
+   "ph": [
+    {
+     "t": "lead to",
+     "b": "lead to",
+     "m": "导致，形成"
+    }
+   ]
+  },
+  "These invisible duties become apparent only when you don't do them.": {
+   "ph": [
+    {
+     "t": "become apparent",
+     "b": "become apparent",
+     "m": "变得明显"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "These invisible duties become apparent",
+      "s": "invisible 拆开看：in 是「不」，visible 是「看得见」，合起来「看不见的」。apparent 你可能想到「表面上的」，但 become apparent 是固定说法，「变得明显」。\n→ 这些看不见的责任变得明显"
+     },
+     {
+      "t": "only when you don't do them",
+      "s": "你多半会翻成「只有当你不做它们」，这半句没错，问题是整句中文会没头没尾。中文说「只有……才……」，所以看到 only when，脑子里换成「只有……的时候，才……」，「才」要放到前一半的谓语前。them 指 duties，放回去试：不做这些责任，说得通。\n→ 只有当你不去做的时候"
+     }
+    ],
+    "order": "英文把 only when 放在最后，中文要把「只有当你不去做的时候」提到前面，在「变得明显」前加「才」。",
+    "sum": "只有当你不去做的时候，这些看不见的责任才会显现出来。",
+    "cmp": "书上是「才会变得明显」，和我的意思一样，「显现出来」稍微灵活一点。"
+   }
+  },
+  "Patients' data has to be revised from time to time.": {
+   "ph": [
+    {
+     "t": "from time to time",
+     "b": "from time to time",
+     "m": "不时，有时"
+    }
+   ]
+  },
+  "They help an organization to broaden its vision effectively.": {
+   "ph": [
+    {
+     "t": "help an organization to broaden",
+     "b": "help sb. to do",
+     "m": "帮助……拓宽"
+    }
+   ]
+  },
+  "Employees with a growth mindset may be more likely to devise innovative ideas.": {
+   "ph": [
+    {
+     "t": "be more likely to",
+     "b": "be likely to",
+     "m": "更有可能"
+    }
+   ]
+  },
+  "When looking at angry humans, they tended to turn away their gaze.": {
+   "ph": [
+    {
+     "t": "looking at",
+     "b": "look at",
+     "m": "看着"
+    },
+    {
+     "t": "tended to",
+     "b": "tend to do",
+     "m": "往往"
+    },
+    {
+     "t": "turn away",
+     "b": "turn away",
+     "m": "转移，移开"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "When looking at angry humans",
+      "s": "你多半会翻成「当看着愤怒的人类时」。念一遍，是谁在看？When looking 前面没有主语。这种时候，眼睛往后找主句的主语：逗号后面是 they，所以看的人就是 they。look at 是「看」，angry humans 是「愤怒的人类」。\n→ 当它们看到愤怒的人类时"
+     },
+     {
+      "t": "they tended to turn away their gaze",
+      "s": "tend to 是「往往会、倾向于」，不是「照料」。turn away their gaze 你可能翻成「转走它们的凝视」，太硬了。gaze 是「目光」，turn away 是「移开」，合起来就是「移开目光」。\n→ 往往会移开目光"
+     }
+    ],
+    "sum": "它们看到愤怒的人类时，往往会把目光移开。",
+    "cmp": "意思一样。书上译成「转移视线」，我说「移开目光」，两个都对。"
+   }
+  },
+  "I only had time to glance at my emails.": {
+   "ph": [
+    {
+     "t": "had time to",
+     "b": "have time to do",
+     "m": "有时间做"
+    },
+    {
+     "t": "glance at",
+     "b": "glance at",
+     "m": "瞥一眼"
+    }
+   ]
+  },
+  "He caught a glimpse of her in the crowd.": {
+   "ph": [
+    {
+     "t": "caught a glimpse of",
+     "b": "catch a glimpse of",
+     "m": "瞥见"
+    }
+   ]
+  },
+  "She scanned through the newspaper over breakfast.": {
+   "ph": [
+    {
+     "t": "scanned through",
+     "b": "scan through",
+     "m": "浏览"
+    },
+    {
+     "t": "over breakfast",
+     "b": "over breakfast",
+     "m": "吃早饭时"
+    }
+   ]
+  },
+  "Did you have a chance to do any sightseeing?": {
+   "ph": [
+    {
+     "t": "have a chance to",
+     "b": "have a chance to do",
+     "m": "有机会做"
+    },
+    {
+     "t": "do any sightseeing",
+     "b": "do sightseeing",
+     "m": "游览"
+    }
+   ]
   }
+ }
 }

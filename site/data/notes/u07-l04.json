@@ -1,250 +1,387 @@
 {
-  "_note": "例句词组与语法解析（书外补充，AI 生成）",
-  "sents": {
-    "She was applauded as she came on stage.": {
-      "ph": [
-        {"t": "came on stage", "b": "come on stage", "m": "上台"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "She was applauded", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "as she came on stage", "r": "时间状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "主干 She was applauded 是被动，动作的发出者（观众）没有写出，书上补出「人们」，译成主动的「人们向她鼓掌」，比「她被鼓掌」自然。",
-          "as 引导时间状语从句，表示两个动作同时发生，书上译成「她上台时」。"
-        ],
-        "lit": "她被鼓掌，当她上台的时候。"
-      }
-    },
-    "The band played a familiar tune which had everyone clapping along.": {
-      "ph": [
-        {"t": "clapping along", "b": "clap along", "m": "跟着拍手"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "The band played a familiar tune", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "which had everyone clapping along", "r": "定语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "which 的先行词是 a familiar tune（曲子），which 在从句里作主语（which had…）。",
-          "从句里 had everyone clapping 是「have + 宾语 + 现在分词」，表示让某人（持续）做某事，这里是曲子使每个人都跟着拍手。",
-          "书上没有把定语从句前置成「……的曲子」，而是拆成后面的分句：「乐队演奏了一首熟悉的曲子，每个人都跟着拍手」，which 承前省略。"
-        ],
-        "lit": "乐队演奏了一首熟悉的曲子，这首曲子使每个人都跟着拍手。"
-      }
-    },
-    "He slapped the newspaper down on the desk.": {
-      "ph": [
-        {"t": "slapped", "b": "slap … down", "m": "啪地放下"},
-        {"t": "down", "b": "slap … down", "m": "啪地放下"}
-      ]
-    },
-    "Let's establish some ground rules.": {
-      "ph": [
-        {"t": "ground rules", "b": "ground rules", "m": "基本规则"}
-      ]
-    },
-    "They provide a steady supply of freshwater.": {
-      "ph": [
-        {"t": "a steady supply of", "b": "a steady supply of", "m": "稳定的……供应"}
-      ]
-    },
-    "Some people have said aging is more a slide into forgetfulness than a journey towards wisdom.": {
-      "ph": [
-        {"t": "more", "b": "more A than B", "m": "与其说是 B，不如说是 A"},
-        {"t": "than", "b": "more A than B", "m": "与其说是 B，不如说是 A"},
-        {"t": "slide into", "b": "slide into", "m": "滑入"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Some people have said", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "aging is more a slide into forgetfulness than a journey towards wisdom", "r": "宾语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "said 后省略了 that，aging is… 是 said 的宾语从句；书上把主句放在前面，译成「有人说，……」。",
-          "more A than B 表示「与其说 A，不如说 B」的比较，但英文里 A（a slide…）在前，书上译文却是先说 B：「与其说是通往智慧的旅程，不如说是滑向遗忘的过程」。读的时候要把 more 后面的 a slide into forgetfulness 当成说话人真正想强调的那一项。",
-          "have said 是现在完成时，强调「有人（已经）这样说过」，书上译成「有人说」。"
-        ],
-        "lit": "有些人说过，衰老更是一种滑入遗忘，而不是一场走向智慧的旅程。"
-      }
-    },
-    "This bird's large wings enable it to fly very fast.": {
-      "ph": [
-        {"t": "enable", "b": "enable sb. to do", "m": "使……能够做"},
-        {"t": "to", "b": "enable sb. to do", "m": "使……能够做"}
-      ]
-    },
-    "I don't have to sweep and mop every day.": {
-      "ph": [
-        {"t": "don't have to", "b": "don't have to do", "m": "不必做"}
-      ]
-    },
-    "It erases the belief that growing old means growing useless.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "It erases the belief", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that growing old means growing useless", "r": "同位语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "that 引导 belief 的同位语从句，说明「信念」的具体内容，that 在从句里不作任何成分，所以不能译成「……的那个」，而是「……的信念」。",
-          "主干 It erases the belief 的主语 It 是无生命的事物，直译「它消除了这个信念」生硬，书上改成被动式的「……的信念得以消除」。",
-          "从句里 growing old 是动名词短语作主语，means 后面的 growing useless 是动名词作宾语（grow + 形容词＝变得……），书上压缩成「衰老即无用」。"
-        ],
-        "lit": "它消除了变老意味着变得无用的这个信念。"
-      }
-    },
-    "I accidentally spilled my drink all over him.": {
-      "ph": [
-        {"t": "all over", "b": "all over", "m": "洒遍……全身"}
-      ]
-    },
-    "I hurried off to spread the good news.": {
-      "ph": [
-        {"t": "hurried off", "b": "hurry off", "m": "匆忙离开"}
-      ]
-    },
-    "She took a mouthful of food and then suddenly spat it out.": {
-      "ph": [
-        {"t": "a mouthful of", "b": "a mouthful of", "m": "一口……"},
-        {"t": "spat", "b": "spit … out", "m": "吐出来"},
-        {"t": "out", "b": "spit … out", "m": "吐出来"}
-      ]
-    },
-    "I'm sure he only said it out of spite.": {
-      "ph": [
-        {"t": "out of spite", "b": "out of spite", "m": "出于怨恨"}
-      ]
-    },
-    "Despite applying for hundreds of jobs, he is still out of work.": {
-      "ph": [
-        {"t": "applying for", "b": "apply for", "m": "申请"},
-        {"t": "out of work", "b": "out of work", "m": "失业"}
-      ]
-    },
-    "Let's pray for peace.": {
-      "ph": [
-        {"t": "pray for", "b": "pray for", "m": "为……祈祷"}
-      ]
-    },
-    "The crops are regularly sprayed with pesticide.": {
-      "ph": [
-        {"t": "are regularly sprayed with", "b": "be sprayed with", "m": "被喷洒"}
-      ]
-    },
-    "The public overall is split on whether they'd like to use a driverless car.": {
-      "ph": [
-        {"t": "is split on", "b": "be split on", "m": "在……上存在分歧"},
-        {"t": "like to", "b": "would like to do", "m": "愿意做"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "The public overall is split on", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "whether they'd like to use a driverless car", "r": "宾语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "is split 是被动形式，表示一种状态：公众「被分成了两派」，书上译成「存在分歧」。",
-          "whether 引导的宾语从句充当介词 on 的宾语，书上把它提到句首，加上「问题」二字，译成「在是否愿意……的问题上」。",
-          "they'd like to 是 they would like to，would like to 是表示愿望的固定说法（想要、愿意），不是虚拟语气。"
-        ],
-        "lit": "总体上公众在他们是否愿意使用无人驾驶汽车上被分裂。"
-      }
-    },
-    "When IT is operating as it should, employees' self-confidence swells.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "When IT is operating as it should", "r": "时间状语"},
-          {"t": ", ", "r": ""},
-          {"t": "employees' self-confidence swells", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "When 引导时间状语从句放在句首，书上译成「当……时」；IT 是 information technology（信息技术）的缩写，作从句主语。",
-          "as it should 是 as it should operate 的省略，as 表示「按照……的方式」，书上译成「正常运转」。",
-          "swell 本义是「膨胀」，这里指自信心增强，书上译成「增强」，没有照字面译。"
-        ],
-        "lit": "当信息技术像它应该的那样运转时，员工们的自信心膨胀。"
-      }
-    },
-    "In fact, the sword hasn't had a military function for many years.": {
-      "ph": [
-        {"t": "In fact", "b": "in fact", "m": "事实上"}
-      ]
-    },
-    "An officer then shot an arrow to put it to sleep.": {
-      "ph": [
-        {"t": "put it to sleep", "b": "put sb./sth. to sleep", "m": "使……沉睡"}
-      ]
-    },
-    "Women in our sample tend to over-perceive their weight.": {
-      "ph": [
-        {"t": "tend to", "b": "tend to do", "m": "往往会"}
-      ]
-    },
-    "The use of wood was minimised to insure fire safety.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "The use of wood was minimised", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "to insure fire safety", "r": "目的状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "The use of wood 是名词化结构，书上展开成动宾式的「使用木材」，并作为被减少的对象。",
-          "was minimised 是被动，没有写出施动者，书上译成主动式「尽量减少使用木材」。",
-          "to insure fire safety 是不定式作目的状语，放在句尾，书上提到句首译成「为了确保消防安全」；这里 insure 的意思是「确保」，和 ensure 相同。"
-        ],
-        "lit": "木材的使用被最小化，为了确保消防安全。"
-      }
-    },
-    "I can assure you that the animals are well cared for.": {
-      "ph": [
-        {"t": "assure", "b": "assure sb. that", "m": "向某人保证"},
-        {"t": "that", "b": "assure sb. that", "m": "向某人保证"},
-        {"t": "cared for", "b": "care for", "m": "照看"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "I can assure you", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that the animals are well cared for", "r": "宾语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "assure sb. that… 是「向某人保证……」，you 是间接宾语，that 引导的从句是直接宾语（宾语从句），所以书上译成「我可以向你保证……」。",
-          "从句 the animals are well cared for 是被动，动词短语 care for（照看）的被动式；书上保留了「被照看得很好」的意思，well 译成补语「得很好」。"
-        ],
-        "lit": "我能向你保证这些动物被很好地照顾。"
-      }
-    },
-    "There are a couple of ways to compromise on the issue.": {
-      "ph": [
-        {"t": "a couple of", "b": "a couple of", "m": "几个"},
-        {"t": "compromise on", "b": "compromise on", "m": "在……上妥协"}
-      ]
-    },
-    "It has pledged to take the lead in reducing carbon emissions.": {
-      "ph": [
-        {"t": "take the lead in", "b": "take the lead in", "m": "带头做、率先做"}
-      ]
-    },
-    "I swear I had nothing to do with it.": {
-      "ph": [
-        {"t": "had nothing to do with", "b": "have nothing to do with", "m": "与……毫无关系"}
-      ]
+ "_note": "例句词组与语法解析（书外补充，AI 生成）",
+ "sents": {
+  "She was applauded as she came on stage.": {
+   "ph": [
+    {
+     "t": "came on stage",
+     "b": "come on stage",
+     "m": "上台"
     }
+   ]
+  },
+  "The band played a familiar tune which had everyone clapping along.": {
+   "ph": [
+    {
+     "t": "clapping along",
+     "b": "clap along",
+     "m": "跟着拍手"
+    }
+   ]
+  },
+  "He slapped the newspaper down on the desk.": {
+   "ph": [
+    {
+     "t": "slapped",
+     "b": "slap … down",
+     "m": "啪地放下"
+    },
+    {
+     "t": "down",
+     "b": "slap … down",
+     "m": "啪地放下"
+    }
+   ]
+  },
+  "They provide a steady supply of freshwater.": {
+   "ph": [
+    {
+     "t": "a steady supply of",
+     "b": "a steady supply of",
+     "m": "稳定的……供应"
+    }
+   ]
+  },
+  "Let's establish some ground rules.": {
+   "ph": [
+    {
+     "t": "ground rules",
+     "b": "ground rules",
+     "m": "基本规则"
+    }
+   ]
+  },
+  "Some people have said aging is more a slide into forgetfulness than a journey towards wisdom.": {
+   "ph": [
+    {
+     "t": "more",
+     "b": "more A than B",
+     "m": "与其说是 B，不如说是 A"
+    },
+    {
+     "t": "than",
+     "b": "more A than B",
+     "m": "与其说是 B，不如说是 A"
+    },
+    {
+     "t": "slide into",
+     "b": "slide into",
+     "m": "滑入"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Some people have said aging is",
+      "s": "这块照字面翻就行：aging 是「衰老」，is 后面等着说它是什么。\n→ 有人说，衰老是"
+     },
+     {
+      "t": "more a slide into forgetfulness",
+      "s": "你多半会翻成「更多的滑入遗忘」。念一遍，不通吧？more 后面跟的是 a slide，不是名词复数，这里 more 不是「更多」。先别翻它，往后找 than，一看到 more … than，脑子里换成「与其说……不如说……」。a slide into forgetfulness 是名词，中文换成动词说：「滑向遗忘」。\n→ 与其说是滑向遗忘的过程"
+     },
+     {
+      "t": "than a journey towards wisdom",
+      "s": "more A than B 里，重点在 A，B 是被「比下去」的那一边。这里 B 是 a journey towards wisdom，「通往智慧的旅程」，towards 是「通往」。\n→ 不如说是通往智慧的旅程"
+     }
+    ],
+    "order": "英文是 A（滑向遗忘）在前、B（通往智慧）在后，中文「与其说 B，不如说 A」把 B 提前，所以要把 than 后面的内容挪到前面去。",
+    "sum": "有人说，衰老与其说是一场通往智慧的旅程，不如说是一个滑向遗忘的过程。",
+    "cmp": "和书上基本一致，书上也是先说 B（通往智慧的旅程）、后说 A（滑向遗忘的过程），顺序已经调好了。"
+   }
+  },
+  "This bird's large wings enable it to fly very fast.": {
+   "ph": [
+    {
+     "t": "enable",
+     "b": "enable sb. to do",
+     "m": "使……能够做"
+    },
+    {
+     "t": "to",
+     "b": "enable sb. to do",
+     "m": "使……能够做"
+    }
+   ]
+  },
+  "I don't have to sweep and mop every day.": {
+   "ph": [
+    {
+     "t": "don't have to",
+     "b": "don't have to do",
+     "m": "不必做"
+    }
+   ]
+  },
+  "It erases the belief that growing old means growing useless.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It erases the belief",
+      "s": "erase 你可能只记得「擦掉」，这里擦的是一种想法，就是「消除、抹去」。the belief 是「那种信念」。\n→ 它消除了那种信念"
+     },
+     {
+      "t": "that growing old means growing useless",
+      "s": "这个 that 指谁？你可能把它当成「……的」定语从句，把 belief 放回 that 后面试试：belief 在 growing old means growing useless 里当不了任何成分，说不通。再看 that 后面，growing old 是主语，means 是谓语，growing useless 是宾语，句子是完整的，所以 that 后面整句就是 belief 的内容，「……这一信念」。growing old 是「变老」，growing useless 是「变得无用」，grow 在这里是「变得」。\n→ 即变老就意味着变得无用"
+     }
+    ],
+    "order": "中文里「……的信念」，修饰的内容要放在「信念」前面，所以把 that 后面的整句挪到 belief 前面，再加一个「的」。",
+    "sum": "它消除了「人老了就没用了」这种想法。",
+    "cmp": "意思一样。书上把句子改成被动「得以消除」，并把原来做宾语的「信念」放到句首；我的说法保持主动，更接近英文原句。"
+   }
+  },
+  "I accidentally spilled my drink all over him.": {
+   "ph": [
+    {
+     "t": "all over",
+     "b": "all over",
+     "m": "洒遍……全身"
+    }
+   ]
+  },
+  "I hurried off to spread the good news.": {
+   "ph": [
+    {
+     "t": "hurried off",
+     "b": "hurry off",
+     "m": "匆忙离开"
+    }
+   ]
+  },
+  "She took a mouthful of food and then suddenly spat it out.": {
+   "ph": [
+    {
+     "t": "a mouthful of",
+     "b": "a mouthful of",
+     "m": "一口……"
+    },
+    {
+     "t": "spat",
+     "b": "spit … out",
+     "m": "吐出来"
+    },
+    {
+     "t": "out",
+     "b": "spit … out",
+     "m": "吐出来"
+    }
+   ]
+  },
+  "I'm sure he only said it out of spite.": {
+   "ph": [
+    {
+     "t": "out of spite",
+     "b": "out of spite",
+     "m": "出于怨恨"
+    }
+   ]
+  },
+  "Despite applying for hundreds of jobs, he is still out of work.": {
+   "ph": [
+    {
+     "t": "applying for",
+     "b": "apply for",
+     "m": "申请"
+    },
+    {
+     "t": "out of work",
+     "b": "out of work",
+     "m": "失业"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Despite applying for hundreds of jobs",
+      "s": "despite 后面跟的是 applying，你可能想翻成「尽管申请」，其实 despite 是介词，后面跟名词或 -ing，就是把整件事当名词用。看到 despite，脑子里换成「尽管」。applying for 是「申请」，for 别丢。hundreds of 是「数以百计」。\n→ 尽管他申请了数百份工作"
+     },
+     {
+      "t": "he is still out of work",
+      "s": "out of work 你可能翻成「在工作之外」，其实是固定说法，就是「失业」。still 是「仍然」。\n→ 他仍然失业"
+     }
+    ],
+    "sum": "尽管他申请了数百份工作，却仍然没有找到工作。",
+    "cmp": "书上说「仍然在失业中」，意思一样，「仍然失业」更简短，也更口语。"
+   }
+  },
+  "Let's pray for peace.": {
+   "ph": [
+    {
+     "t": "pray for",
+     "b": "pray for",
+     "m": "为……祈祷"
+    }
+   ]
+  },
+  "The crops are regularly sprayed with pesticide.": {
+   "ph": [
+    {
+     "t": "are regularly sprayed with",
+     "b": "be sprayed with",
+     "m": "被喷洒"
+    }
+   ]
+  },
+  "The public overall is split on whether they'd like to use a driverless car.": {
+   "ph": [
+    {
+     "t": "is split on",
+     "b": "be split on",
+     "m": "在……上存在分歧"
+    },
+    {
+     "t": "like to",
+     "b": "would like to do",
+     "m": "愿意做"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The public overall is split on",
+      "s": "你多半会翻成「公众总体上被分裂在」。念一遍，是不是很怪？be split on 是一个整体，就是「在……上有分歧」，on 后面接分歧的话题。overall 是副词，「总体上」。\n→ 公众总体上在……上存在分歧"
+     },
+     {
+      "t": "whether they'd like to use a driverless car",
+      "s": "whether 引出的是分歧的话题，「是否……」。they'd 是 they would，后面跟 like to，would like to do 是固定说法，「愿意、想要做」，是礼貌说法，不是虚拟。driverless 是 driver 加 less，「没有司机的」，也就是「无人驾驶的」。\n→ 是否愿意使用无人驾驶汽车"
+     }
+    ],
+    "order": "英文把「分歧」放前面、「什么问题」放后面，中文习惯先交代话题：「在是否愿意……的问题上」，再说「存在分歧」，所以把 whether 这块提到前面。",
+    "sum": "在是否愿意使用无人驾驶汽车的问题上，公众总体存在分歧。",
+    "cmp": "几乎一样，只差「总体上」和「总体」。"
+   }
+  },
+  "When IT is operating as it should, employees' self-confidence swells.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "When IT is operating",
+      "s": "你可能把 IT 读成 it，翻成「当它在运转时」。注意它是大写的：IT 是信息技术（information technology）的缩写。operate 在这里是「运转」，不是「做手术」。\n→ 当信息技术在运转时"
+     },
+     {
+      "t": "as it should",
+      "s": "你多半会翻成「像它应该的」。念一遍，缺了点什么吧？这是 as it should operate 省掉了最后的 operate，补回去就顺了：「像它应该运转的那样」，说白了就是「正常」。\n→ 正常"
+     },
+     {
+      "t": "employees' self-confidence swells",
+      "s": "swell 本义是「膨胀、鼓起来」，自信心鼓起来，就是「增强」。\n→ 员工的自信心就会增强"
+     }
+    ],
+    "order": "前两块合起来说「信息技术运转正常时」，直接放在句首就可以，不用调整顺序。",
+    "sum": "信息技术运转正常的时候，员工的自信心就会增强。",
+    "cmp": "意思一样，书上「正常运转」也是把 as it should 的意思并进了 operating，写法更紧凑。"
+   }
+  },
+  "In fact, the sword hasn't had a military function for many years.": {
+   "ph": [
+    {
+     "t": "In fact",
+     "b": "in fact",
+     "m": "事实上"
+    }
+   ]
+  },
+  "An officer then shot an arrow to put it to sleep.": {
+   "ph": [
+    {
+     "t": "put it to sleep",
+     "b": "put sb./sth. to sleep",
+     "m": "使……沉睡"
+    }
+   ]
+  },
+  "Women in our sample tend to over-perceive their weight.": {
+   "ph": [
+    {
+     "t": "tend to",
+     "b": "tend to do",
+     "m": "往往会"
+    }
+   ]
+  },
+  "The use of wood was minimised to insure fire safety.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The use of wood was minimised",
+      "s": "你多半会翻成「木材的使用被最小化了」。念一遍，中文不这么说。use 是名词，换回动词：「使用木材」；minimised 是「减到最少」。被动句里没有交代谁来做，中文可以不加主语。\n→ 尽量减少使用木材"
+     },
+     {
+      "t": "to insure fire safety",
+      "s": "to 放在这里是目的：「为了……」。insure 你可能当成「保险」，这里是 ensure 的意思，就是「确保」。fire safety 是「消防安全」，别翻成「火的安全」。\n→ 为了确保消防安全"
+     }
+    ],
+    "order": "英文先说做法、再说目的，中文习惯先说目的，把「为了确保消防安全」提到前面。",
+    "sum": "为了确保消防安全，尽量减少了木材的使用。",
+    "cmp": "意思一样，书上也把目的放到了前面。"
+   }
+  },
+  "I can assure you that the animals are well cared for.": {
+   "ph": [
+    {
+     "t": "assure",
+     "b": "assure sb. that",
+     "m": "向某人保证"
+    },
+    {
+     "t": "that",
+     "b": "assure sb. that",
+     "m": "向某人保证"
+    },
+    {
+     "t": "cared for",
+     "b": "care for",
+     "m": "照看"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "I can assure you that",
+      "s": "你多半会翻成「我能保证你」。念一遍，保证的是什么？assure sb. that 的结构是「向某人保证……」，you 是对象，保证的内容是 that 后面的整句话。\n→ 我可以向你保证"
+     },
+     {
+      "t": "the animals are well cared for",
+      "s": "cared for 你可能想翻成「被关心」，其实 for 不能丢：care for 是「照看」，所以 are cared for 就是「被照看」。well 修饰它，「照看得很好」。被动句不需要补主语，中文直接说「照看得很好」就行。\n→ 这些动物都被照看得很好"
+     }
+    ],
+    "sum": "我可以向你保证，这些动物都照看得很好。",
+    "cmp": "和书上基本一样，书上保留了「被」字，我的版本省掉，更像日常说话。"
+   }
+  },
+  "There are a couple of ways to compromise on the issue.": {
+   "ph": [
+    {
+     "t": "a couple of",
+     "b": "a couple of",
+     "m": "几个"
+    },
+    {
+     "t": "compromise on",
+     "b": "compromise on",
+     "m": "在……上妥协"
+    }
+   ]
+  },
+  "It has pledged to take the lead in reducing carbon emissions.": {
+   "ph": [
+    {
+     "t": "take the lead in",
+     "b": "take the lead in",
+     "m": "带头做、率先做"
+    }
+   ]
+  },
+  "I swear I had nothing to do with it.": {
+   "ph": [
+    {
+     "t": "had nothing to do with",
+     "b": "have nothing to do with",
+     "m": "与……毫无关系"
+    }
+   ]
   }
+ }
 }
