@@ -46,20 +46,9 @@ const sensesText = ss => ss.map(s => `${s.pos} ${plainMean(s.mean)}`).join("　"
 const lemmaCandidates = Vocab.candidates;   // 词形变化的候选原形（vocab.js）
 const findWord = (w, map = WORDMAP) => { for (const k of lemmaCandidates(w.toLowerCase())) if (map.has(k)) return map.get(k); return null; };
 
-/* 例句切成可点的单词，重点词（可能是多词短语）加 key 样式 */
-function sentenceHTML(en, keys) {
-  const hit = new Array(en.length).fill(false);
-  for (const k of keys || []) {
-    const re = new RegExp("(?<![A-Za-z])" + k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "(?![A-Za-z])", "gi");
-    let m; while ((m = re.exec(en))) for (let i = m.index; i < m.index + m[0].length; i++) hit[i] = true;
-  }
-  let pos = 0;
-  return en.replace(/([A-Za-z']+)|([^A-Za-z']+)/g, (m, w, o) => {
-    const start = pos; pos += m.length;
-    if (o) return esc(o);
-    return `<span class="w${hit[start] ? " key" : ""}">${w}</span>`;
-  });
-}
+/* 例句切成可点的单词，重点词（可能是多词短语）加 key 样式；note = 这句的 notes（词组标注、语法解析），见 sent.js */
+const sentenceHTML = (en, keys, note, hi) => Sent.html(en, keys, note, hi);
+const noteOf = (notes, en) => (notes && notes.sents && notes.sents[en]) || null;
 
 /* ---------- 音频：预生成 mp3 优先，缺失时退回浏览器语音 ---------- */
 const player = new Audio();
@@ -202,7 +191,7 @@ function cardHTML(e) {
     `<div class="sense">${multi && i === 0 ? `<span class="ipa">${esc(p.ipa)}</span>` : ""}<span class="pos">${esc(s.pos)}</span>${meanHTML(s.mean)}</div>`).join("")).join("");
   const ex = e.ex ? `<div class="ex${e.ex.type === "真" ? " zt" : ""}">
       <div class="exlab">${e.ex.type === "真" ? `真题 ${e.ex.year}` : "例句"}</div>
-      <div class="sent">${sentenceHTML(e.ex.en, e.ex.key)}</div>
+      <div class="sent">${sentenceHTML(e.ex.en, e.ex.key, noteOf(NOTES, e.ex.en))}</div>
       <div class="zh">${esc(e.ex.zh)}</div>
       <div class="ops"><button class="play">▶ 播放例句</button><button class="play" data-slow="1">🐢 慢速</button></div>
     </div>` : "";

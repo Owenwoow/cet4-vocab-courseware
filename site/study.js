@@ -175,7 +175,7 @@ const Study = (() => {
     return items.map(x => {
       if (x.vocab) return resolveVocab(x, ls);
       const L2 = ls[x.card.k], hit = L2.by.get(x.word);
-      return hit && {...x, lid: x.card.k, e: hit.e, grp: hit.g, aud: L2.aud};
+      return hit && {...x, lid: x.card.k, e: hit.e, grp: hit.g, aud: L2.aud, notes: L2.notes};
     }).filter(Boolean);
   }
   /* 生词：书上有这个词条就用书上的完整内容，是扩展词就用扩展词的释义，都不是就用逐词释义；
@@ -183,13 +183,13 @@ const Study = (() => {
   function resolveVocab(x, ls) {
     const c = x.card, S2 = ls[c.k], B = c.bk && ls[c.bk[0]];
     const hit = c.e && S2 && S2.by.get(c.e);
-    const src = hit && hit.e.ex ? {ex: hit.e.ex, lid: c.k, entry: c.e, x: c.x, aud: S2.aud} : null;
-    let e, grp = null, aud = S2 ? S2.aud : {w: {}, s: {}};
+    const src = hit && hit.e.ex ? {ex: hit.e.ex, lid: c.k, entry: c.e, x: c.x, aud: S2.aud, notes: S2.notes} : null;
+    let e, grp = null, aud = S2 ? S2.aud : {w: {}, s: {}}, notes = S2 ? S2.notes : null;
     const main = B && !c.bk[2] && B.by.get(c.w), ext = B && c.bk[2] && B.ext.get(c.w);
-    if (main) { e = main.e; grp = main.g; aud = B.aud; }
+    if (main) { e = main.e; grp = main.g; aud = B.aud; notes = B.notes; }
     else if (ext) { e = {word: c.w, prons: [{ipa: ext.x.ipa, senses: ext.x.senses}], freq: 0, extOf: ext.e}; grp = ext.g; aud = B.aud; }
     else e = {word: c.w, prons: [{ipa: c.p || "", senses: Vocab.senses(c.m)}], freq: 0, gloss: true};
-    return {...x, lid: c.bk ? c.bk[0] : c.k, e, grp, aud, src, nb: true};   // nb：按生词显示（书上范围里的生词仍按词群显示）
+    return {...x, lid: c.bk ? c.bk[0] : c.k, e, grp, aud, notes, src, nb: true};   // nb：按生词显示（书上范围里的生词仍按词群显示）
   }
   /* 按书上的课 / 单元取词（包括还没记为学过的；没记过的只能看，不排复习） */
   async function bookItems(sc) {
@@ -201,7 +201,7 @@ const Study = (() => {
       for (const g of L2.les.groups) for (const e of g.entries) {
         if (known.has(e.word)) continue;
         const c = Sync.get("srs:" + e.word, 0), v = !c && vocabGet(e.word);   // 还没学、但在生词本里的，评分算进生词卡
-        out.push({word: e.word, card: c || v || null, vocab: !!v, freq: e.freq, order: (+u) * 1e6 + L2.les.lesson * 1e4 + g.no * 100 + e.no, lid: id, e, grp: g, aud: L2.aud});
+        out.push({word: e.word, card: c || v || null, vocab: !!v, freq: e.freq, order: (+u) * 1e6 + L2.les.lesson * 1e4 + g.no * 100 + e.no, lid: id, e, grp: g, aud: L2.aud, notes: L2.notes});
       }
     }
     return out;
@@ -236,7 +236,7 @@ const Study = (() => {
   const ipaOf = e => e.prons.map(p => p.ipa).join(" ");
   /* 生词：遇见它的那句例句，生词高亮，可朗读 */
   const meetHTML = x => x.src ? `<div class="ex meet"><div class="exlab">遇见 · ${lesTitle(x.src.lid)} ${esc(x.src.entry)} 的例句</div>
-    <div class="sent" data-lid="${x.src.lid}" data-src="${esc(x.src.entry)}">${sentenceHTML(x.src.ex.en, [x.src.x])}</div><div class="dzh">${esc(x.src.ex.zh)}</div>
+    <div class="sent" data-lid="${x.src.lid}" data-src="${esc(x.src.entry)}">${sentenceHTML(x.src.ex.en, x.card.ph ? [] : [x.src.x], noteOf(x.src.notes, x.src.ex.en), x.card.ph ? x.card.w : "")}</div><div class="dzh">${esc(x.src.ex.zh)}</div>
     <div class="ops"><button data-sent="src">▶ 例句</button><button data-sent="srcslow">🐢 慢速</button></div></div>` : "";
   /* 生词的来历：哪天加的、书上有没有 */
   const vocabMeta = x => `生词 · ${md(x.card.at)} 加入${x.card.bk ? ` · 书中 ${lesTitle(x.card.bk[0])} #${x.card.bk[1]}${x.card.bk[2] ? " 的扩展词" : ""}` : ""}`;
@@ -572,7 +572,7 @@ const Study = (() => {
     ${x.e.tip ? `<div class="tip"><span class="tag ${esc(x.e.tip.type)}">${esc(x.e.tip.type)}</span>${esc(x.e.tip.text)}</div>` : ""}
     ${x.e.root ? `<div class="tip root"><span class="tag 构词">词根</span>${esc(x.e.root)}<span class="src add">补充</span></div>` : ""}
     ${x.e.ex ? `<div class="ex${x.e.ex.type === "真" ? " zt" : ""}"><div class="exlab">${x.e.ex.type === "真" ? `真题 ${x.e.ex.year}` : "例句"}</div>
-      <div class="sent" data-lid="${x.lid}" data-src="${esc(x.e.word)}">${sentenceHTML(x.e.ex.en, x.e.ex.key)}</div><div class="dzh">${esc(x.e.ex.zh)}</div>
+      <div class="sent" data-lid="${x.lid}" data-src="${esc(x.e.word)}">${sentenceHTML(x.e.ex.en, x.e.ex.key, noteOf(x.notes, x.e.ex.en))}</div><div class="dzh">${esc(x.e.ex.zh)}</div>
       <div class="ops"><button data-sent="1">▶ 例句</button><button data-sent="slow">🐢 慢速</button></div></div>` : ""}
     ${x.e.ext && x.e.ext.length ? `<div class="dext">${x.e.ext.map(y => `<div class="dextrow"><span class="tag">扩</span><b data-sayx="${esc(y.word)}">${esc(y.word)}</b>
       <span class="ipa">${esc(y.ipa)}</span><button class="spk sm" data-sayx="${esc(y.word)}" title="读">🔊</button>

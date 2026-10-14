@@ -207,6 +207,8 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 @media (hover:hover){.sent .w:hover{background:var(--accent-soft)}}
 .sent .w.reading{background:var(--hl)}
 .sent .key{color:var(--blue);font-weight:700}
+/* 例句词组（书外补充）：虚线下划线，同一词组拆开的几段各自画线 */
+.sent .ph{text-decoration:underline dashed var(--sub);text-decoration-thickness:1px;text-underline-offset:5px}
 .ex.zt .sent .key{color:var(--pink)}
 .zh{color:var(--sub);font-size:15px}
 .ops{display:flex;gap:6px;margin-top:6px;flex-wrap:wrap}
