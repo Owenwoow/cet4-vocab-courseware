@@ -51,11 +51,23 @@ def senses_zh(senses):
     return "。".join(parts)
 
 
+def read_marks(mk):
+    """读字幕标记缓存。早期在 Windows 本机生成的文件是系统默认编码（GBK）写的，云端按 UTF-8 读会炸：
+    读不了就按 GBK 解，并改写成 UTF-8"""
+    raw = mk.read_bytes()
+    try:
+        return json.loads(raw.decode("utf-8"))
+    except UnicodeDecodeError:
+        marks = json.loads(raw.decode("gbk"))
+        mk.write_text(json.dumps(marks, ensure_ascii=False), encoding="utf-8")
+        return marks
+
+
 async def synth(text, voice, marks_wanted):
     key = hashlib.sha1(f"{voice}|{text}".encode()).hexdigest()[:16]
     mp3, mk = FILES / f"{key}.mp3", FILES / f"{key}.json"
     if mp3.exists() and (not marks_wanted or mk.exists()):
-        return key, (json.loads(mk.read_text()) if marks_wanted else None), False
+        return key, (read_marks(mk) if marks_wanted else None), False
     async with SEM:
         for attempt in range(RETRIES):
             try:
@@ -79,7 +91,7 @@ async def synth(text, voice, marks_wanted):
                 await asyncio.sleep(min(2 ** attempt * 2, 30))   # 2, 4, 8, 16, 30 秒
     mp3.write_bytes(audio)
     if marks_wanted:
-        mk.write_text(json.dumps(marks, ensure_ascii=False))
+        mk.write_text(json.dumps(marks, ensure_ascii=False), encoding="utf-8")
     return key, marks, True
 
 
