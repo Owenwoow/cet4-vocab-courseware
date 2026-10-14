@@ -39,8 +39,9 @@ const Sent = (() => {
     return out.sort((a, b) => a.s - b.s);
   }
 
-  /* 例句 HTML：keys 重点词（可能是多词短语）加 key 样式；note 这句的 notes；hi 要高亮的词组原形（生词「遇见」用） */
-  function html(en, keys, note, hi) {
+  /* 例句 HTML：keys 重点词（可能是多词短语）加 key 样式；note 这句的 notes；hi 要高亮的词组原形（生词「遇见」用）；
+     rg = {s, e}：只画句子的这一段（「析」里的英文块），单词、词组的切分和整句完全一样；被切开的半个单词画成纯文字 */
+  function html(en, keys, note, hi, rg) {
     const hit = new Array(en.length).fill(false);
     for (const k of keys || []) {
       if (!k) continue;
@@ -57,14 +58,16 @@ const Sent = (() => {
       if (id >= 0) out += `<span class="ph${hi && bOf.get(id) === hi ? " key" : ""}" data-ph="${id}">`;
       cur = id;
     };
+    const lo = rg ? rg.s : 0, up = rg ? rg.e : en.length;
     const re = /([A-Za-z']+)|([^A-Za-z']+)/g;
     let m;
     while ((m = re.exec(en))) {
-      const s = m.index;
-      if (m[1]) { open(at[s]); out += `<span class="w${hit[s] ? " key" : ""}">${m[1]}</span>`; continue; }
-      for (let i = s, j; i < s + m[0].length; i = j) {   // 标点、空格可能一半在词组里
-        for (j = i + 1; j < s + m[0].length && at[j] === at[i];) j++;
-        open(at[i]); out += esc(en.slice(i, j));
+      const s = m.index, e = s + m[0].length;
+      if (e <= lo || s >= up) continue;
+      if (m[1] && s >= lo && e <= up) { open(at[s]); out += `<span class="w${hit[s] ? " key" : ""}">${m[1]}</span>`; continue; }
+      for (let i = Math.max(s, lo), j; i < Math.min(e, up); i = j) {   // 标点、空格可能一半在词组里；被切开的半个单词不可点
+        for (j = i + 1; j < Math.min(e, up) && at[j] === at[i];) j++;
+        open(m[1] ? -1 : at[i]); out += esc(en.slice(i, j));
       }
     }
     open(-1);
@@ -87,19 +90,27 @@ const Sent = (() => {
      对话带练（an.talk）：开场白 → 一块块英文 + 带练文字（→ 开头的行是这块的中文）→ 排顺序 → 合起来与书译对照；
      旧格式（an.parts / pts / lit）：成分分块 → 要点 → 直译与书译对照，全部重写后删掉 */
   const ADD = `<span class="src add">补充</span>`;
-  function talkHTML(an, zh) {
-    const lines = s => String(s).split("\n").filter(x => x.trim())
-      .map(x => /^\s*→/.test(x) ? `<div class="anto">${esc(x.trim())}</div>` : `<p>${esc(x)}</p>`).join("");
-    const blocks = an.talk.map(b => `<div class="anblk">${b.t ? `<div class="anen">${esc(b.t)}</div>` : ""}<div class="ans">${lines(b.s || "")}</div></div>`).join("");
+  /* s = {en, keys, note, hi}：这句例句本身。英文块按位置画成可点的 .snip（和例句一样点词查义、标词组），找不到就画纯文字 */
+  function talkHTML(an, zh, s) {
+    const lines = x => String(x).split("\n").filter(y => y.trim())
+      .map(y => /^\s*→/.test(y) ? `<div class="anto">${esc(y.trim())}</div>` : `<p>${esc(y)}</p>`).join("");
+    let pos = 0;
+    const enHTML = t => {
+      const j = s && s.en ? s.en.indexOf(t, pos) : -1;
+      if (j < 0) return `<div class="anen">${esc(t)}</div>`;
+      pos = j + t.length;
+      return `<div class="anen snip">${html(s.en, s.keys, s.note, s.hi, {s: j, e: pos})}</div>`;
+    };
+    const blocks = an.talk.map(b => `<div class="anblk">${b.t ? enHTML(b.t) : ""}<div class="ans">${lines(b.s || "")}</div></div>`).join("");
     return `<div class="an talk" hidden><div class="anh">带你译${ADD}</div>
       <p class="anopen">先别看译文，你自己来。</p>${blocks}
       ${an.order ? `<div class="anord"><b>排顺序</b>${lines(an.order)}</div>` : ""}
       <div class="antr">${an.sum ? `<div><b>合起来</b><span>${esc(an.sum)}</span></div>` : ""}${zh ? `<div><b>书译</b><span>${esc(zh)}</span></div>` : ""}</div>
       ${an.cmp ? `<p class="ancmp">${esc(an.cmp)}</p>` : ""}</div>`;
   }
-  function anHTML(an, zh) {
+  function anHTML(an, zh, s) {
     if (!an) return "";
-    if (Array.isArray(an.talk)) return talkHTML(an, zh);
+    if (Array.isArray(an.talk)) return talkHTML(an, zh, s);
     const parts = (an.parts || []).map(p => {
       const t = p.t.trim(), c = role(p.r);
       if (!t) return "";
@@ -110,8 +121,9 @@ const Sent = (() => {
       ${an.pts && an.pts.length ? `<ul class="anpts">${an.pts.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
       ${an.lit || zh ? `<div class="antr">${an.lit ? `<div><b>直译</b><span>${esc(an.lit)}</span></div>` : ""}${zh ? `<div><b>书译</b><span>${esc(zh)}</span></div>` : ""}</div>` : ""}</div>`;
   }
-  /* 有解析的例句：右上角「析」按钮 + 默认收起的解析块（都放在 .sent 外面，不含 .w） */
-  const anBlock = (note, zh) => (note && note.an ? `<button class="anBtn" title="带你译这句（补充）">析</button>${anHTML(note.an, zh)}` : "");
+  /* 有解析的例句：右上角「析」按钮 + 默认收起的解析块（都放在 .sent 外面；英文块是 .snip 不是 .sent，朗读高亮只数 .sent 里的 .w）。
+     en、keys、hi 和这句例句的 sentenceHTML 传的一样 */
+  const anBlock = (note, zh, en, keys, hi) => (note && note.an ? `<button class="anBtn" title="带你译这句（补充）">析</button>${anHTML(note.an, zh, {en, keys, note, hi})}` : "");
 
   /* 词组原形 → 朗读文本（和 pipeline/build_audio.py 的 phrase_spoken 一致，音频按这个文本生成）：
      括号里可省的去掉，a/b 二选一读前一个，… 和 sth. 读 something，sb. 读 somebody，adj. 读 adjective */

@@ -108,3 +108,22 @@ test("词组朗读文本：和 build_audio.py 的 phrase_spoken 一致", () => {
   assert.equal(Sent.spoken("make sb. adj."), "make somebody adjective");
   assert.equal(Sent.spoken("take away"), "take away");
 });
+
+test("「析」英文块：按位置截出整句的一段，单词和词组的切分和整句一样，可点", () => {
+  const strip = h => h.replace(/<[^>]+>/g, "");
+  const s = ATTR.indexOf("because"), e = ATTR.indexOf(",");
+  const h = Sent.html(ATTR, ["attribute"], {ph: ATTR_PH}, "", {s, e});
+  assert.equal(strip(h), "because they attribute errors to a lack of ability");
+  assert.match(h, /<span class="ph" data-ph="0"><span class="w key">attribute<\/span><\/span>/);   // 拆开的搭配两段都在，共用 data-ph="0"
+  assert.match(h, /<span class="ph" data-ph="0"><span class="w">to<\/span><\/span> <span class="ph" data-ph="2">/);
+  assert.equal((h.match(/class="w/g) || []).length, 9);
+  /* 半个单词不可点 */
+  const half = Sent.html(ATTR, [], null, "", {s: 2, e: 8});
+  assert.equal(strip(half), "stakes");
+  assert.doesNotMatch(half, /class="w/);
+  /* anBlock 把英文块画成 .snip；找不到的片段画纯文字 */
+  const an = {talk: [{t: "which they feel powerless to change", s: "x\n→ y"}, {t: "not in sentence", s: "z"}], sum: "s", cmp: "c"};
+  const b = Sent.anBlock({ph: ATTR_PH, an}, "书译", ATTR, ["attribute"]);
+  assert.match(b, /<div class="anen snip"><span class="w">which<\/span> <span class="w">they<\/span> <span class="ph" data-ph="3">/);
+  assert.match(b, /<div class="anen">not in sentence<\/div>/);
+});

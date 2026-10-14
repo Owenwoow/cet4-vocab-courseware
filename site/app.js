@@ -193,7 +193,7 @@ function cardHTML(e) {
   const ex = e.ex ? `<div class="ex${e.ex.type === "真" ? " zt" : ""}">
       <div class="exlab">${e.ex.type === "真" ? `真题 ${e.ex.year}` : "例句"}</div>
       <div class="sent">${sentenceHTML(e.ex.en, e.ex.key, noteOf(NOTES, e.ex.en))}</div>
-      <div class="zh">${esc(e.ex.zh)}</div>${Sent.anBlock(noteOf(NOTES, e.ex.en), e.ex.zh)}
+      <div class="zh">${esc(e.ex.zh)}</div>${Sent.anBlock(noteOf(NOTES, e.ex.en), e.ex.zh, e.ex.en, e.ex.key)}
       <div class="ops"><button class="play">▶ 播放例句</button><button class="play" data-slow="1">🐢 慢速</button></div>
     </div>` : "";
   const exts = e.ext && e.ext.length ? `<div class="exts">${e.ext.map(x => `<div class="extrow" data-ext="${esc(x.word)}">
@@ -390,7 +390,10 @@ function vocabButton(v) {
 
 /* 查词用哪课的数据：课文页是本课；首页巩固里的例句带 data-lid，用那课的（study.js 读来缓存） */
 const curCtx = () => ({lid: L.id, gloss: GLOSS, map: WORDMAP, aud: AUD, notes: NOTES});
-const ctxOf = el => { const s = el.closest && el.closest("[data-lid]"); return s ? Study.lookupCtx(s.dataset.lid) : Promise.resolve(curCtx()); };
+/* 「析」里的英文块（.snip）属于它所在例句块里的那句 .sent：查词上下文、出处、整句原文都按那句算 */
+const SENT = ".sent,.snip";
+const hostOf = el => { const sn = el.closest && el.closest(".snip"); return (sn && sn.closest(".ex") && sn.closest(".ex").querySelector(".sent")) || el; };
+const ctxOf = el => { const s = hostOf(el).closest && hostOf(el).closest("[data-lid]"); return s ? Study.lookupCtx(s.dataset.lid) : Promise.resolve(curCtx()); };
 function speakIn(text, c) {
   if (c.aud === AUD) { speak(text); return; }
   const key = pickVoice(c.aud.w[text] || c.aud.w[text.toLowerCase()]);
@@ -442,14 +445,14 @@ function openPages(a, b) {
 }
 $("#viewerClose").onclick = () => { $("#viewer").hidden = true; };
 
-/* ---------- 例句点词：课文页、首页复习卡背面、生词「遇见」的 .sent 都走这一个处理函数 ----------
+/* ---------- 例句点词：课文页、首页复习卡背面、生词「遇见」的 .sent，以及「析」里的英文块 .snip，都走这一个处理函数 ----------
    单击词组 → 词组浮层（下面一行小字是点到的词），读词组；单击词组外的词 → 查这个词并朗读；
    双击单词 / 手机长按选中一个词 → 只查这个词；划选几个词 → 和哪个词组重叠的字最多就显示哪个，对不上就逐词查。
    双击会先来两次 click：点在词组上的单击等 DBL_MS 确认不是双击再弹，双击直接查词，不会先闪词组、读两遍；
    词组外的词单击立刻查，第二击不再处理。
    出题卡片还没作答（.locked）时例句不响应，点击照常交给卡片（翻卡）。
    在捕获阶段处理并停止传播，study.js 的卡片监听和下面的 document 监听都不会再收到这次点击 */
-const srcOf = el => { const s = el.closest && el.closest(".card,[data-src]"); return s ? s.dataset.word || s.dataset.src || "" : ""; };   // 例句属于哪个词条
+const srcOf = el => { const h = hostOf(el), s = h.closest && h.closest(".card,[data-src]"); return s ? s.dataset.word || s.dataset.src || "" : ""; };   // 例句属于哪个词条
 /* 「析」：展开 / 收起这句的语法解析 */
 function toggleAn(b) {
   const an = b.parentElement.querySelector(".an"); if (!an) return;
@@ -473,7 +476,7 @@ function selIn(sent) {
 async function phraseAt(sent, id, w) {
   const c = await ctxOf(sent);
   if (!sent.isConnected) return;
-  const en = sent.textContent, list = (noteOf(c.notes, en) || {}).ph || [], P = list[id];
+  const en = hostOf(sent).textContent, list = (noteOf(c.notes, en) || {}).ph || [], P = list[id];   // sent 可能是「析」里的英文块，词组按整句找
   const rect = (w || sent.querySelector(`.ph[data-ph="${id}"]`) || sent).getBoundingClientRect();
   if (!P) { if (w) { lookup(w.textContent, rect, srcOf(sent), c); speakIn(w.textContent, c); } return; }
   const x = Sent.locate(en, list).filter(s => s.id === id).map(s => en.slice(s.s, s.e)).join(" … ");
@@ -501,9 +504,9 @@ function onSelect(sent, sel) {
 }
 /* 这次点击落在哪句例句上：点在句子里；或者从句子里开始划选、松手在句子外（click 落在共同的外层上） */
 function sentOf(t) {
-  const sent = t.closest(".sent"); if (sent) return sent;
+  const sent = t.closest(SENT); if (sent) return sent;
   const s = getSelection(); if (!s.rangeCount || !s.toString().trim()) return null;
-  const n = s.getRangeAt(0).startContainer, el = (n.nodeType === 1 ? n : n.parentElement).closest(".sent");
+  const n = s.getRangeAt(0).startContainer, el = (n.nodeType === 1 ? n : n.parentElement).closest(SENT);
   return el && t.contains(el) ? el : null;
 }
 function sentClick(e) {
@@ -531,7 +534,7 @@ document.addEventListener("click", sentClick, true);
 document.addEventListener("touchend", e => {
   const t = e.target;
   setTimeout(() => {
-    const sent = t.closest && t.closest(".sent");
+    const sent = t.closest && t.closest(SENT);
     if (!sent || !sent.isConnected || sent.closest(".locked")) return;
     const sel = selIn(sent); if (sel) onSelect(sent, sel);
   }, 300);
