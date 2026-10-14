@@ -1,354 +1,544 @@
 {
-  "_note": "例句词组与语法解析（书外补充，AI 生成）",
-  "sents": {
-    "Curiosity is one of the tools humans have found to accomplish that gigantic task.": {
-      "ph": [{"t": "one of", "b": "one of", "m": "……之一"}],
-      "an": {
-        "parts": [
-          {"t": "Curiosity is one of the tools", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "humans have found", "r": "定语从句"},
-          {"t": " ", "r": ""},
-          {"t": "to accomplish that gigantic task", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "humans have found 是定语从句，先行词是 the tools，省略了关系代词（that / which），它在从句里作 found 的宾语；书上前置成「人类发现的……工具」。",
-          "to accomplish that gigantic task 是不定式短语，书上按修饰 tools 的后置定语处理，译成「完成那一艰巨任务的工具」，于是两个修饰成分都被挪到「工具」前面。"
-        ],
-        "lit": "好奇心是人类已经发现的、用来完成那个巨大任务的工具之一。"
-      }
-    },
-    "That is a sign of its immense potential.": {
-      "ph": [{"t": "a sign of", "b": "a sign of", "m": "……的标志"}]
-    },
-    "There's no question that self-driving vehicles could be an enormous benefit.": {
-      "ph": [{"t": "no question that", "b": "no question that", "m": "毫无疑问"}],
-      "an": {
-        "parts": [
-          {"t": "There's no question", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that self-driving vehicles could be an enormous benefit", "r": "同位语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "that 引导的是 question 的同位语从句，that 在从句中不作任何成分，只说明「问题」的具体内容；书上把 There's no question 译成句首的「毫无疑问」，再接从句内容。",
-          "could 在这里表示可能性的推测，句中没有 if 条件，也不是在与事实相反，所以译「可能会」，不是虚拟语气。",
-          "be an enormous benefit 是名词性表达，书上展开成动宾式的「带来巨大的利益」。"
-        ],
-        "lit": "没有疑问，自动驾驶车辆可能是一个巨大的好处。"
-      }
-    },
-    "Your help made a vast difference.": {
-      "ph": [{"t": "made a vast difference", "b": "make a difference", "m": "产生影响"}]
-    },
-    "He was largely regarded as past his prime.": {
-      "ph": [
-        {"t": "regarded as", "b": "regard … as", "m": "被视为"},
-        {"t": "past his prime", "b": "past one's prime", "m": "过了黄金时期"}
-      ]
-    },
-    "Thus, they had to keep working just as much in order to maintain their standard of living.": {
-      "ph": [
-        {"t": "keep working", "b": "keep doing", "m": "继续做"},
-        {"t": "in order to", "b": "in order to do", "m": "为了"},
-        {"t": "standard of living", "b": "standard of living", "m": "生活水平"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Thus, ", "r": ""},
-          {"t": "they had to keep working just as much", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "in order to maintain their standard of living", "r": "目的状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "in order to maintain… 是目的状语，英文放在句末，书上提到句首译成「为了维持生活水平」，再接主干。",
-          "just as much 是比较结构，just as much 后面省略了比较对象，书上把它落成「同样多的劳动」，并补出名词「劳动」，让 keep working 译得完整。",
-          "had to 表示不得不，是过去的被迫情形，书上译成「不得不继续……」。"
-        ],
-        "lit": "因此，他们不得不继续工作同样多，以便维持他们的生活标准。"
-      }
-    },
-    "She considered people to be products of the values and norms of the society.": {
-      "ph": [{"t": "considered people to be", "b": "consider sb. to be", "m": "认为某人是"}]
-    },
-    "Such tasks can get our brains thinking flexibly, beyond our normal comfort zone.": {
-      "ph": [
-        {"t": "get our brains thinking", "b": "get sth. doing", "m": "让……思考"},
-        {"t": "comfort zone", "b": "comfort zone", "m": "舒适区"}
-      ]
-    },
-    "Some traditions are simple, like the red eggs that get baked into breads.": {
-      "ph": [{"t": "baked into", "b": "bake into", "m": "烤进"}],
-      "an": {
-        "parts": [
-          {"t": "Some traditions are simple", "r": "主干"},
-          {"t": ", like the red eggs ", "r": ""},
-          {"t": "that get baked into breads", "r": "定语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "that 引导定语从句，先行词是 the red eggs，that 在从句中作主语（红鸡蛋被烤进面包里）；书上前置成「面包中烤制的红鸡蛋」。",
-          "get baked 是 get + 过去分词的被动，强调动作过程，书上译成「烤制」，不出现「被」。",
-          "like 在这里是介词，引出举例，译「比如」。"
-        ],
-        "lit": "有些传统是简单的，像那些被烤进面包里的红鸡蛋。"
-      }
-    },
-    "We are working under extreme pressure at the moment.": {
-      "ph": [{"t": "at the moment", "b": "at the moment", "m": "目前"}]
-    },
-    "They had the utmost comfort passengers could enjoy in mind.": {
-      "ph": [
-        {"t": "had", "b": "have … in mind", "m": "考虑到"},
-        {"t": "in mind", "b": "have … in mind", "m": "考虑到"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "They had the utmost comfort", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "passengers could enjoy", "r": "定语从句"},
-          {"t": " ", "r": ""},
-          {"t": "in mind", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "have … in mind（心里想着、考虑到）被宾语拆开：have 和 in mind 之间夹着很长的宾语 the utmost comfort passengers could enjoy。",
-          "passengers could enjoy 是定语从句，先行词是 the utmost comfort，省略了关系代词，它在从句里作 enjoy 的宾语；书上前置成「乘客能享受到的最大舒适度」。",
-          "书上把 have … in mind 译成「考虑到」放在句首，宾语整体放在后面，这样中文语序才顺。"
-        ],
-        "lit": "他们心里有乘客能享受到的最大的舒适。"
-      }
-    },
-    "Falling into a routine can turn a person into an utter bore.": {
-      "ph": [
-        {"t": "Falling into a routine", "b": "fall into a routine", "m": "陷入常规"},
-        {"t": "turn a person into", "b": "turn … into", "m": "使变成"}
-      ]
-    },
-    "Without effort, getting any kind of decent job is impossible.": {
-      "ph": [{"t": "any kind of", "b": "any kind of", "m": "任何种类的"}]
-    },
-    "The most probable reason for the popularity is that they are less expensive.": {
-      "ph": [{"t": "reason for", "b": "reason for", "m": "……的原因"}],
-      "an": {
-        "parts": [
-          {"t": "The most probable reason for the popularity is ", "r": "主干"},
-          {"t": "that they are less expensive", "r": "表语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "is 后面的 that they are less expensive 是表语从句，that 不作成分，只引导从句，说明「原因」具体是什么；书上译成「……是它们更便宜」。",
-          "the popularity 是名词，书上展开成「流行」，reason for the popularity 译成「流行的……原因」，最高级 most probable 放在「原因」前面。"
-        ],
-        "lit": "对这种流行最可能的原因是它们不那么贵。"
-      }
-    },
-    "We had to use a tractor to pull the car out of the mud.": {
-      "ph": [{"t": "pull the car out of", "b": "pull … out of", "m": "把……拉出"}]
-    },
-    "The number of employees was reduced from 40 to 25.": {
-      "ph": [
-        {"t": "reduced from", "b": "reduce from … to", "m": "从……减少到"},
-        {"t": "to", "b": "reduce from … to", "m": "从……减少到"}
-      ]
-    },
-    "What first attracted me to her was her sense of humour.": {
-      "ph": [
-        {"t": "attracted me to", "b": "attract sb. to", "m": "把某人吸引到"},
-        {"t": "sense of humour", "b": "sense of humour", "m": "幽默感"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "What first attracted me to her", "r": "主语从句"},
-          {"t": " was her sense of humour", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "What first attracted me to her 是主语从句，What 在从句中作 attracted 的主语，相当于 the thing that；书上译成「……的是……」结构：「她首先吸引我的是她的幽默感」。",
-          "attract sb. to sb.（把某人吸引向某人）：英文用 to her 表示吸引的方向，书上译成「吸引我」，把 to her 化进了「她……吸引我」的语序里。"
-        ],
-        "lit": "最初把我吸引向她的东西是她的幽默感。"
-      }
-    },
-    "Some producers may induce customers to make more unplanned purchases.": {
-      "ph": [{"t": "induce customers to", "b": "induce sb. to do", "m": "诱导某人做"}]
-    },
-    "Members of poorly managed teams are easily distracted from their work.": {
-      "ph": [{"t": "distracted from", "b": "be distracted from", "m": "从……分心"}],
-      "an": {
-        "parts": [
-          {"t": "Members of ", "r": "主干"},
-          {"t": "poorly managed", "r": "非谓语"},
-          {"t": " teams are easily distracted from their work", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "poorly managed 是过去分词短语（被管理得不好），放在 teams 前作定语，译成「管理不善的」；它修饰 teams，不是修饰 Members。",
-          "are distracted 是被动，但书上译成主动的「分心」，因为中文说「被分心」不通。"
-        ],
-        "lit": "管理得很差的团队的成员很容易被从他们的工作上分散注意力。"
-      }
-    },
-    "It was a question that had fascinated him since he was a boy.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "It was a question", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that had fascinated him since he was a boy", "r": "定语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "that 引导定语从句，先行词是 a question，that 在从句中作 had fascinated 的主语；书上前置成「他自幼就着迷的问题」，而不是拆成后面的分句。",
-          "had fascinated 是过去完成时，since he was a boy 说明这种着迷从他小时候起一直持续，书上用「自幼就」带出这个持续的意思。"
-        ],
-        "lit": "那是一个自从他是个男孩以来就一直使他着迷的问题。"
-      }
-    },
-    "He spoke of his childhood fantasies about becoming a football player.": {
-      "ph": [{"t": "spoke of", "b": "speak of", "m": "谈到"}]
-    },
-    "Google can give us the powerful illusion that all questions have definite answers.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "Google can give us the powerful illusion", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that all questions have definite answers", "r": "同位语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "that 引导 illusion 的同位语从句，说明「错觉」的内容；判断依据是 that 后的 all questions have definite answers 主谓宾齐全，that 不作任何成分，illusion 也不是 have 的宾语，所以不是定语从句。",
-          "书上用「即」把同位语从句接在「错觉」后面：「一种强大的错觉，即所有的问题都有明确的答案」。"
-        ],
-        "lit": "谷歌能给我们那种所有问题都有明确答案的强大错觉。"
-      }
-    },
-    "Do you buy water in plastic bottles or take your chances with tap water?": {
-      "ph": [{"t": "take your chances", "b": "take one's chances", "m": "碰运气"}]
-    },
-    "If working from home becomes permanent, employees will have to dedicate part of their private space to work.": {
-      "ph": [
-        {"t": "working from home", "b": "work from home", "m": "居家办公"},
-        {"t": "have to", "b": "have to do", "m": "不得不"},
-        {"t": "dedicate", "b": "dedicate … to", "m": "把……用于"},
-        {"t": "part of", "b": "part of", "m": "……的一部分"},
-        {"t": "to", "b": "dedicate … to", "m": "把……用于"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "If working from home becomes permanent", "r": "条件状语"},
-          {"t": ", ", "r": ""},
-          {"t": "employees will have to dedicate part of their private space to work", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "If 条件状语从句用一般现在时 becomes 表示将来，主句用 will，这是「主将从现」；书上译成「如果……成为常态」。",
-          "working from home 是动名词短语作从句主语，书上译成名词性的「居家办公」。permanent 作表语，意思是持久，书上意译为「成为常态」。",
-          "dedicate A to B 被拆开：A 是 part of their private space，B 是 work；书上译成「拿出部分私人空间用于工作」。"
-        ],
-        "lit": "如果在家工作变成永久的，雇员将不得不把他们私人空间的一部分奉献给工作。"
-      }
-    },
-    "I'm tired of your eternal arguments.": {
-      "ph": [{"t": "tired of", "b": "be tired of", "m": "厌烦"}]
-    },
-    "The economy would become so productive that people would barely need to work at all.": {
-      "ph": [
-        {"t": "so", "b": "so … that", "m": "如此……以至于"},
-        {"t": "that", "b": "so … that", "m": "如此……以至于"},
-        {"t": "at all", "b": "at all", "m": "根本"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "The economy would become so productive", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that people would barely need to work at all", "r": "结果状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "so productive that… 是 so…that 结果状语从句：「如此有生产力，以至于……」；书上不译「以至于」，拆成两个并列的分句「经济发展将更具生产力，人们几乎不再需要工作」。",
-          "barely 是半否定副词，意思是几乎不，句中没有 not，所以否定意味落在 barely 上，书上译「几乎不再需要工作」。"
-        ],
-        "lit": "经济将变得如此有生产力，以至于人们将几乎根本不需要工作。"
-      }
-    },
-    "She likes to walk around in bare feet.": {
-      "ph": [
-        {"t": "walk around", "b": "walk around", "m": "走来走去"},
-        {"t": "in bare feet", "b": "in bare feet", "m": "光着脚"}
-      ]
-    },
-    "GDP is no longer regarded as the sole measure of a country's success.": {
-      "ph": [
-        {"t": "no longer", "b": "no longer", "m": "不再"},
-        {"t": "regarded as", "b": "regard … as", "m": "被视为"}
-      ]
-    },
-    "He was involved in a terrible car accident last April.": {
-      "ph": [
-        {"t": "was involved in", "b": "be involved in", "m": "卷入"},
-        {"t": "car accident", "b": "car accident", "m": "车祸"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "He was involved in a terrible car accident", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "last April", "r": "时间状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "was involved in 是被动形式，意思是被卷入，书上译成主动的「遭遇」，更符合中文说法。",
-          "last April 在英文句末，书上提到句首「去年四月」，先交代时间，再说事件。"
-        ],
-        "lit": "他去年四月被卷入了一场可怕的车祸。"
-      }
-    },
-    "Not eating breakfast is related to the incidence of certain diseases.": {
-      "ph": [{"t": "is related to", "b": "be related to", "m": "与……有关"}],
-      "an": {
-        "parts": [
-          {"t": "Not eating breakfast", "r": "主干"},
-          {"t": " is related to the incidence of certain diseases", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "Not eating breakfast 是动名词短语作主语，否定词 not 直接放在动名词前，译成「不吃早餐」。",
-          "the incidence of certain diseases 是名词化结构，书上把 incidence 当「发病率」，译成「某些疾病的发病率」。"
-        ],
-        "lit": "不吃早餐与某些疾病的发病率有关联。"
-      }
-    },
-    "Siri has often been praised for its ability to interpret our casual language.": {
-      "ph": [
-        {"t": "been praised for", "b": "be praised for", "m": "因……受称赞"},
-        {"t": "ability to", "b": "ability to do", "m": "做……的能力"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Siri has often been praised for its ability", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "to interpret our casual language", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "has been praised 是现在完成时的被动，often 表示多次，书上译成「经常受到称赞」，用「受到」代替「被」。",
-          "to interpret… 是不定式作 ability 的后置定语；for 表原因，书上译成「因为它能够解释……」，把名词 ability 展开成动词性的「能够」。"
-        ],
-        "lit": "Siri 经常因为它解释我们随意语言的能力而被称赞。"
-      }
-    },
-    "Some people view socialising at the workplace as a chance to develop personal relationships.": {
-      "ph": [
-        {"t": "view", "b": "view … as", "m": "把……视为"},
-        {"t": "as", "b": "view … as", "m": "把……视为"},
-        {"t": "chance to", "b": "chance to do", "m": "做……的机会"}
-      ]
-    },
-    "These educational experiences have enormous potential to brighten my future.": {
-      "ph": [{"t": "potential to", "b": "potential to do", "m": "做……的潜力"}]
+ "_note": "例句词组与语法解析（书外补充，AI 生成）",
+ "sents": {
+  "Curiosity is one of the tools humans have found to accomplish that gigantic task.": {
+   "ph": [
+    {
+     "t": "one of",
+     "b": "one of",
+     "m": "……之一"
     }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Curiosity is one of the tools humans have found",
+      "s": "tools 后面直接跟着 humans，两个名词挨在一起，中间藏了个 that，补回去是 the tools (that) humans have found。放回去试：humans have found tools，人类发现了工具，通；tools have found humans，工具发现了人类，不通。所以这是「人类发现的工具」，中文要把它提到「工具」前面。\n→ 好奇心是人类发现的……工具之一"
+     },
+     {
+      "t": "to accomplish that gigantic task",
+      "s": "你多半会把它当成一个独立的「为了完成那个任务」。可它紧跟在 tools 后面，是在说这些工具是干什么用的：用来完成什么。gigantic 字面是「巨大的」，说到任务，中文更常说「艰巨的」。\n→ 用来完成那项艰巨任务的"
+     }
+    ],
+    "order": "英文把两个修饰语都放在 tools 后面，一个接一个；中文要全部提到「工具」前面，用「的」连起来。",
+    "sum": "好奇心是人类发现的、用来完成那项艰巨任务的工具之一。",
+    "cmp": "书上是「完成那一艰巨任务的工具」，意思相同，只是省掉了「用来」；加上「用来」，to accomplish 和 tools 的关系更清楚。"
+   }
+  },
+  "That is a sign of its immense potential.": {
+   "ph": [
+    {
+     "t": "a sign of",
+     "b": "a sign of",
+     "m": "……的标志"
+    }
+   ]
+  },
+  "There's no question that self-driving vehicles could be an enormous benefit.": {
+   "ph": [
+    {
+     "t": "no question that",
+     "b": "no question that",
+     "m": "毫无疑问"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "There's no question that",
+      "s": "你多半会翻成「没有一个问题」。放回去看：that 后面是一整句完整的话，根本没有哪个「问题」要回答。no question that 是一个固定说法，意思是「毫无疑问」，that 后面就是毫无疑问的内容。\n→ 毫无疑问"
+     },
+     {
+      "t": "self-driving vehicles could be an enormous benefit",
+      "s": "你可能把 could 当成「曾经能够」。看依据：前面是 There's，现在时，也没有 if 条件，所以 could 既不是过去，也不是虚拟，只是比 can 语气更含蓄的「可能」。be an enormous benefit 字面是「是一个巨大的好处」，中文更爱说「带来巨大的好处」。\n→ 自动驾驶汽车可能会带来巨大的好处"
+     }
+    ],
+    "sum": "毫无疑问，自动驾驶汽车可能会带来巨大的好处。",
+    "cmp": "和书上一样，只差一个词：书上说「巨大的利益」，我写「好处」，意思相同。"
+   }
+  },
+  "Your help made a vast difference.": {
+   "ph": [
+    {
+     "t": "made a vast difference",
+     "b": "make a difference",
+     "m": "产生影响"
+    }
+   ]
+  },
+  "He was largely regarded as past his prime.": {
+   "ph": [
+    {
+     "t": "regarded as",
+     "b": "regard … as",
+     "m": "被视为"
+    },
+    {
+     "t": "past his prime",
+     "b": "past one's prime",
+     "m": "过了黄金时期"
+    }
+   ]
+  },
+  "Thus, they had to keep working just as much in order to maintain their standard of living.": {
+   "ph": [
+    {
+     "t": "keep working",
+     "b": "keep doing",
+     "m": "继续做"
+    },
+    {
+     "t": "in order to",
+     "b": "in order to do",
+     "m": "为了"
+    },
+    {
+     "t": "standard of living",
+     "b": "standard of living",
+     "m": "生活水平"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Thus, they had to keep working",
+      "s": "你多半会翻成「因此，他们必须保持工作」。念一遍，keep working 不是「保持工作」，keep doing 是「继续做」。had to 是 have to 的过去式，除了「必须」，还带着没办法的意味，说「不得不」更准。\n→ 因此，他们不得不继续工作"
+     },
+     {
+      "t": "just as much",
+      "s": "你可能想翻成「正好那么多」。just as much 的意思是「同样多」：干活的量没有减少。这句没写和什么比，就老老实实翻「同样多」，别自己补。\n→ 付出同样多"
+     },
+     {
+      "t": "in order to maintain their standard of living",
+      "s": "in order to 就是「为了」，在句尾，说的是前面这些活为什么要干。maintain 是「维持」，standard of living 是一个整体，「生活水平」，别拆成「生活的标准」。\n→ 为了维持他们的生活水平"
+     }
+    ],
+    "order": "英文把目的放在最后，中文习惯先说「为了……」，所以把最后一块提到「不得不」前面。同时把「继续工作」和「同样多」合成「继续付出同样多的劳动」。",
+    "sum": "因此，为了维持生活水平，他们不得不继续付出同样多的劳动。",
+    "cmp": "和书上一样。书上把 working 说成「付出……的劳动」，比「继续工作同样多」自然得多，这是把动词改成名词的典型转换。"
+   }
+  },
+  "She considered people to be products of the values and norms of the society.": {
+   "ph": [
+    {
+     "t": "considered people to be",
+     "b": "consider sb. to be",
+     "m": "认为某人是"
+    }
+   ]
+  },
+  "Such tasks can get our brains thinking flexibly, beyond our normal comfort zone.": {
+   "ph": [
+    {
+     "t": "get our brains thinking",
+     "b": "get sth. doing",
+     "m": "让……思考"
+    },
+    {
+     "t": "comfort zone",
+     "b": "comfort zone",
+     "m": "舒适区"
+    }
+   ]
+  },
+  "Some traditions are simple, like the red eggs that get baked into breads.": {
+   "ph": [
+    {
+     "t": "baked into",
+     "b": "bake into",
+     "m": "烤进"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Some traditions are simple, like the red eggs",
+      "s": "你多半会把 like 翻成「喜欢」。放回去看：前面 are simple 已经是完整的谓语了，不能再来一个动词，所以 like 是介词「像、比如」，用来举例。\n→ 有些传统很简单，比如红鸡蛋"
+     },
+     {
+      "t": "that get baked into breads",
+      "s": "that 指谁？放回去试：breads get baked into eggs，面包被烤进鸡蛋里？不通；eggs get baked into breads，鸡蛋被烤进面包里，对。所以 that 指 eggs，在从句里作主语。get baked 是「get + 过去分词」，表示被动，意思是「被烤」，中文不用说「被」。\n→ 烤进面包里的"
+     }
+    ],
+    "order": "英文先说 eggs，后面再接 that 从句；中文把从句提到「红鸡蛋」前面，用「的」连起来。",
+    "sum": "有些传统很简单，比如那些烤进面包里的红鸡蛋。",
+    "cmp": "书上是「面包中烤制的红鸡蛋」，思路一样，把从句前置成「……的」；我的「烤进面包里」保留了 into 的方向感，书上的「烤制」更书面。"
+   }
+  },
+  "We are working under extreme pressure at the moment.": {
+   "ph": [
+    {
+     "t": "at the moment",
+     "b": "at the moment",
+     "m": "目前"
+    }
+   ]
+  },
+  "They had the utmost comfort passengers could enjoy in mind.": {
+   "ph": [
+    {
+     "t": "had",
+     "b": "have … in mind",
+     "m": "考虑到"
+    },
+    {
+     "t": "in mind",
+     "b": "have … in mind",
+     "m": "考虑到"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They had",
+      "s": "你多半会翻成「他们有最大的舒适……」，一路读下去到句尾才发现不通。看到 had 后面跟了一长串，先别急着翻，眼睛往后找 in mind：have … in mind 是「心里想着、考虑到」，中间夹着的是被考虑的内容。\n→ 他们考虑到"
+     },
+     {
+      "t": "the utmost comfort passengers could enjoy",
+      "s": "comfort 和 passengers 两个名词挨在一起，中间藏了 that，补回去是 the comfort (that) passengers could enjoy。放回去试：passengers could enjoy comfort，乘客享受舒适，通；comfort could enjoy passengers，不通。所以 that 在从句里作 enjoy 的宾语。could 的依据：前面 They had 是过去时，could 是 can 的过去形式，是时态呼应，不是虚拟。utmost 是「最大的」。\n→ 乘客能享受到的最大舒适度"
+     },
+     {
+      "t": "in mind",
+      "s": "你可能把 in mind 单独翻成「在心里」，那就重复了。它已经和开头的 had 合成「考虑到」，这里不用再翻。\n→ （已并入开头的「考虑到」）"
+     }
+    ],
+    "order": "英文把 have … in mind 劈成两半，中间塞满被考虑的内容；中文把「考虑到」放在最前面，后面直接接内容。",
+    "sum": "他们考虑的是乘客所能享受到的最大程度的舒适。",
+    "cmp": "书上是「他们考虑到了乘客能享受到的最大舒适度」，意思一样，书上多了「了」，「舒适度」比我的「最大程度的舒适」更紧凑。"
+   }
+  },
+  "Falling into a routine can turn a person into an utter bore.": {
+   "ph": [
+    {
+     "t": "Falling into a routine",
+     "b": "fall into a routine",
+     "m": "陷入常规"
+    },
+    {
+     "t": "turn a person into",
+     "b": "turn … into",
+     "m": "使变成"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Falling into a routine",
+      "s": "-ing 开头当主语，就是「做某事」这件事。你可能把 routine 翻成「例行公事」，掉进一个例行公事？很怪。fall into a routine 是「陷入一成不变的常规」，说白了就是「墨守成规」。\n→ 墨守成规"
+     },
+     {
+      "t": "can turn a person into an utter bore",
+      "s": "turn 先别急，眼睛往后找 into：turn A into B 是「把 A 变成 B」。你多半会翻成「能把一个人变成一个完全的无聊」，不通顺。bore 是名词，指「令人厌烦的人」，不是 boring；utter 是「彻底的」。中文里「墨守成规」不是人，说成「会让人变得……」更顺。\n→ 会让人变得无聊透顶"
+     }
+    ],
+    "sum": "一味墨守成规，会把人变成一个彻头彻尾的无趣之人。",
+    "cmp": "书上是「墨守成规会让人变得无聊透顶」。书上把名词 bore 转成了形容词式的「无聊透顶」，utter 也浓缩成「透顶」，比我的写法简洁。"
+   }
+  },
+  "Without effort, getting any kind of decent job is impossible.": {
+   "ph": [
+    {
+     "t": "any kind of",
+     "b": "any kind of",
+     "m": "任何种类的"
+    }
+   ]
+  },
+  "The most probable reason for the popularity is that they are less expensive.": {
+   "ph": [
+    {
+     "t": "reason for",
+     "b": "reason for",
+     "m": "……的原因"
+    }
+   ]
+  },
+  "We had to use a tractor to pull the car out of the mud.": {
+   "ph": [
+    {
+     "t": "pull the car out of",
+     "b": "pull … out of",
+     "m": "把……拉出"
+    }
+   ]
+  },
+  "The number of employees was reduced from 40 to 25.": {
+   "ph": [
+    {
+     "t": "reduced from",
+     "b": "reduce from … to",
+     "m": "从……减少到"
+    },
+    {
+     "t": "to",
+     "b": "reduce from … to",
+     "m": "从……减少到"
+    }
+   ]
+  },
+  "What first attracted me to her was her sense of humour.": {
+   "ph": [
+    {
+     "t": "attracted me to",
+     "b": "attract sb. to",
+     "m": "把某人吸引到"
+    },
+    {
+     "t": "sense of humour",
+     "b": "sense of humour",
+     "m": "幽默感"
+    }
+   ]
+  },
+  "Some producers may induce customers to make more unplanned purchases.": {
+   "ph": [
+    {
+     "t": "induce customers to",
+     "b": "induce sb. to do",
+     "m": "诱导某人做"
+    }
+   ]
+  },
+  "Members of poorly managed teams are easily distracted from their work.": {
+   "ph": [
+    {
+     "t": "distracted from",
+     "b": "be distracted from",
+     "m": "从……分心"
+    }
+   ]
+  },
+  "It was a question that had fascinated him since he was a boy.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It was a question that had fascinated him",
+      "s": "that 指谁？放回去试：a question had fascinated him，一个问题让他着迷，通；he had fascinated a question，他让问题着迷，不通。fascinate 是「使……着迷」，被迷住的是 him，所以做主语的是 question。中文换个说法，让人当主语：「他着迷的问题」。\n→ 这是一个他一直着迷的问题"
+     },
+     {
+      "t": "since he was a boy",
+      "s": "你多半会翻成「自从他是个男孩」。念一遍，怪吧？中文说「从小」。再看 had fascinated：过去完成时，意思是从那时起一直到句子所说的那个过去时间，这个问题都在吸引他，所以要带上「一直」的味道。\n→ 从小就一直"
+     }
+    ],
+    "order": "英文是「问题 + 从小以来一直让他着迷」，中文把「从小就」提到「着迷」前面，一起放到「问题」前面修饰它。",
+    "sum": "这是一个他从小就一直着迷的问题。",
+    "cmp": "和书上基本一样，书上说「自幼就着迷」，「自幼」书面一点；我多了「一直」，是把 had fascinated 的过去完成时体现出来。"
+   }
+  },
+  "He spoke of his childhood fantasies about becoming a football player.": {
+   "ph": [
+    {
+     "t": "spoke of",
+     "b": "speak of",
+     "m": "谈到"
+    }
+   ]
+  },
+  "Do you buy water in plastic bottles or take your chances with tap water?": {
+   "ph": [
+    {
+     "t": "take your chances",
+     "b": "take one's chances",
+     "m": "碰运气"
+    }
+   ]
+  },
+  "If working from home becomes permanent, employees will have to dedicate part of their private space to work.": {
+   "ph": [
+    {
+     "t": "working from home",
+     "b": "work from home",
+     "m": "居家办公"
+    },
+    {
+     "t": "have to",
+     "b": "have to do",
+     "m": "不得不"
+    },
+    {
+     "t": "dedicate",
+     "b": "dedicate … to",
+     "m": "把……用于"
+    },
+    {
+     "t": "part of",
+     "b": "part of",
+     "m": "……的一部分"
+    },
+    {
+     "t": "to",
+     "b": "dedicate … to",
+     "m": "把……用于"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "If working from home becomes permanent",
+      "s": "working 开头当主语，就是「居家办公」这件事。permanent 你可能翻成「永久的」，但「居家办公变成永久的」太绝对，中文说「成为常态」。再看 If：if 从句用 becomes（现在时），主句用 will，这是真实的条件，不是虚拟。\n→ 如果居家办公成为常态"
+     },
+     {
+      "t": "employees will have to dedicate part of their private space",
+      "s": "你可能把 dedicate 翻成「奉献」，奉献部分私人空间？很怪。看到 dedicate，眼睛往后找 to：dedicate A to B 是「把 A 专门用于 B」，A 就是 part of their private space。will have to 是「将不得不」。\n→ 员工将不得不拿出部分私人空间"
+     },
+     {
+      "t": "to work",
+      "s": "找到了 to，但你可能把 to work 当成「去工作」。注意，dedicate…to 里的 to 是介词，后面接名词，所以 work 是名词「工作」，不是动词。\n→ 用于工作"
+     }
+    ],
+    "sum": "如果居家办公成为常态，员工将不得不拿出一部分私人空间专门用来工作。",
+    "cmp": "意思和书上一样，书上是「用于工作」；我多了「专门」，是 dedicate 本身就有的意思。"
+   }
+  },
+  "I'm tired of your eternal arguments.": {
+   "ph": [
+    {
+     "t": "tired of",
+     "b": "be tired of",
+     "m": "厌烦"
+    }
+   ]
+  },
+  "The economy would become so productive that people would barely need to work at all.": {
+   "ph": [
+    {
+     "t": "so",
+     "b": "so … that",
+     "m": "如此……以至于"
+    },
+    {
+     "t": "that",
+     "b": "so … that",
+     "m": "如此……以至于"
+    },
+    {
+     "t": "at all",
+     "b": "at all",
+     "m": "根本"
+    }
+   ]
+  },
+  "She likes to walk around in bare feet.": {
+   "ph": [
+    {
+     "t": "walk around",
+     "b": "walk around",
+     "m": "走来走去"
+    },
+    {
+     "t": "in bare feet",
+     "b": "in bare feet",
+     "m": "光着脚"
+    }
+   ]
+  },
+  "GDP is no longer regarded as the sole measure of a country's success.": {
+   "ph": [
+    {
+     "t": "no longer",
+     "b": "no longer",
+     "m": "不再"
+    },
+    {
+     "t": "regarded as",
+     "b": "regard … as",
+     "m": "被视为"
+    }
+   ]
+  },
+  "He was involved in a terrible car accident last April.": {
+   "ph": [
+    {
+     "t": "was involved in",
+     "b": "be involved in",
+     "m": "卷入"
+    },
+    {
+     "t": "car accident",
+     "b": "car accident",
+     "m": "车祸"
+    }
+   ]
+  },
+  "Not eating breakfast is related to the incidence of certain diseases.": {
+   "ph": [
+    {
+     "t": "is related to",
+     "b": "be related to",
+     "m": "与……有关"
+    }
+   ]
+  },
+  "Siri has often been praised for its ability to interpret our casual language.": {
+   "ph": [
+    {
+     "t": "been praised for",
+     "b": "be praised for",
+     "m": "因……受称赞"
+    },
+    {
+     "t": "ability to",
+     "b": "ability to do",
+     "m": "做……的能力"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Siri has often been praised",
+      "s": "你多半会翻成「Siri 经常被赞扬」。意思没错，但中文里「被」不常用在好事上，习惯说「受到称赞」。has been praised 是现在完成时的被动，often 说明这是一直以来的情况。\n→ Siri 经常受到称赞"
+     },
+     {
+      "t": "for its ability to interpret our casual language",
+      "s": "你可能把 for 翻成「为了」。praise sb. for sth. 里的 for 是「因为」，后面是被称赞的原因。ability to interpret 是名词 ability 加动词，中文展开成「能够解释」就顺了。casual 不是「随便」，这里是「非正式、日常」。\n→ 因为它能够解释我们非正式的语言"
+     }
+    ],
+    "sum": "Siri 常因为能听懂我们日常随意的说法而受到称赞。",
+    "cmp": "书上是「Siri 经常受到称赞，因为它能够解释我们非正式的语言」，把 for 拆成后面的「，因为」，和上面思路一致；我把「解释」换成了更口语的「听懂」。"
+   }
+  },
+  "Some people view socialising at the workplace as a chance to develop personal relationships.": {
+   "ph": [
+    {
+     "t": "view",
+     "b": "view … as",
+     "m": "把……视为"
+    },
+    {
+     "t": "as",
+     "b": "view … as",
+     "m": "把……视为"
+    },
+    {
+     "t": "chance to",
+     "b": "chance to do",
+     "m": "做……的机会"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Some people view socialising at the workplace",
+      "s": "看到 view，眼睛往后找 as：view A as B，把 A 看作 B。A 就是 socialising at the workplace。你可能把 socialising 当成动词，其实它是名词性的「社交这件事」，at the workplace 说明在哪儿社交。\n→ 有些人把职场社交"
+     },
+     {
+      "t": "as a chance to develop personal relationships",
+      "s": "as 找到了。a chance to develop… 里，to develop 是在说是什么样的机会，中文要把它放到「机会」前面。personal relationships 你多半翻成「个人关系」，这里是「人际关系」。\n→ 看作发展人际关系的机会"
+     }
+    ],
+    "sum": "有些人把职场社交看作发展人际关系的机会。",
+    "cmp": "和书上一样，只是书上用了更书面的「将……视为」，我用的是口语的「把……看作」。"
+   }
+  },
+  "These educational experiences have enormous potential to brighten my future.": {
+   "ph": [
+    {
+     "t": "potential to",
+     "b": "potential to do",
+     "m": "做……的潜力"
+    }
+   ]
   }
+ }
 }
