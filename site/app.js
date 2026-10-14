@@ -33,7 +33,7 @@ function applySettings() {
 darkMQ.addEventListener("change", applySettings);
 
 /* ---------- 状态 ---------- */
-let BOOK = null, L = null, GLOSS = {}, AUD = {w: {}, s: {}, z: {}, voices: []};
+let BOOK = null, L = null, GLOSS = {}, NOTES = {sents: {}}, AUD = {w: {}, s: {}, z: {}, voices: []};   // NOTES：例句词组与语法解析（书外补充）
 const WORDMAP = new Map();   // 本课词条/扩展词 → {word, senses, no, ext}
 /* no-cache：每次向服务器确认，重新生成数据后不会读到旧缓存 */
 const fetchJSON = url => fetch(url, {cache: "no-cache"}).then(r => { if (!r.ok) throw new Error(url + " " + r.status); return r.json(); });
@@ -262,13 +262,14 @@ function updateProgress() {
 async function loadLesson(id) {
   if (L && L.id === id) return;
   stopMarathon();
-  const [les, gl, au, rt] = await Promise.all([
+  const [les, gl, au, rt, nt] = await Promise.all([
     fetchJSON(`data/lessons/${id}.json`),
     fetchJSON(`data/gloss/${id}.json`).catch(() => ({words: {}})),
     fetchJSON(`data/audio/${id}.json`).catch(() => ({w: {}, s: {}, z: {}, m: {}, voices: []})),
     fetchJSON(`data/roots/${id}.json`).catch(() => ({words: {}})),
+    fetchJSON(`data/notes/${id}.json`).catch(() => ({sents: {}})),
   ]);
-  L = les; GLOSS = gl.words || {}; AUD = au;
+  L = les; GLOSS = gl.words || {}; AUD = au; NOTES = {sents: nt.sents || {}};
   for (const g of L.groups) for (const e of g.entries) e.root = rt.words?.[e.word];   // 词根法（书外补充）
   WORDMAP.clear();
   for (const g of L.groups) for (const e of g.entries) {
@@ -391,7 +392,7 @@ function vocabButton(v) {
 }
 
 /* 查词用哪课的数据：课文页是本课；首页巩固里的例句带 data-lid，用那课的（study.js 读来缓存） */
-const curCtx = () => ({lid: L.id, gloss: GLOSS, map: WORDMAP, aud: AUD});
+const curCtx = () => ({lid: L.id, gloss: GLOSS, map: WORDMAP, aud: AUD, notes: NOTES});
 const ctxOf = el => { const s = el.closest && el.closest("[data-lid]"); return s ? Study.lookupCtx(s.dataset.lid) : Promise.resolve(curCtx()); };
 function speakIn(text, c) {
   if (c.aud === AUD) { speak(text); return; }

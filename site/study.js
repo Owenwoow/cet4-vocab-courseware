@@ -152,7 +152,8 @@ const Study = (() => {
       fetchJSON(`data/audio/${id}.json`).catch(() => ({w: {}, s: {}, z: {}, voices: []})),
       fetchJSON(`data/roots/${id}.json`).catch(() => ({words: {}})),
       fetchJSON(`data/gloss/${id}.json`).catch(() => ({words: {}})),
-    ]).then(([les, aud, rt, gl]) => {
+      fetchJSON(`data/notes/${id}.json`).catch(() => ({sents: {}})),
+    ]).then(([les, aud, rt, gl, nt]) => {
       const by = new Map(), ext = new Map(), map = new Map();   // map：查词用，和 app.js 的 WORDMAP 一样
       for (const g of les.groups) for (const e of g.entries) {
         e.root = rt.words?.[e.word]; if (!by.has(e.word)) by.set(e.word, {e, g});
@@ -160,12 +161,12 @@ const Study = (() => {
         map.set(e.word, {word: e.word, senses: e.prons.flatMap(p => p.senses), ipa: e.prons.map(p => p.ipa).join(" "), no: e.no, entry: e, ext: false});
         for (const x of e.ext || []) if (!map.has(x.word)) map.set(x.word, {word: x.word, senses: x.senses, ipa: x.ipa, no: e.no, entry: e, ext: true});
       }
-      return {les, aud, by, ext, map, gloss: gl.words || {}};
+      return {les, aud, by, ext, map, gloss: gl.words || {}, notes: {sents: nt.sents || {}}};   // notes：例句词组与语法解析（书外补充）
     }).catch(err => { cache.delete(id); throw err; }));   // 失败的不缓存，下次重试
     return cache.get(id);
   }
   /* 例句点词查义用的那课数据（app.js 的 lookup） */
-  const lookupCtx = lid => getLesson(lid).then(x => ({lid, gloss: x.gloss, map: x.map, aud: x.aud}));
+  const lookupCtx = lid => getLesson(lid).then(x => ({lid, gloss: x.gloss, map: x.map, aud: x.aud, notes: x.notes}));
   /* 卡片列表 → 带上书上的词条内容 */
   async function resolve(items) {
     const ids = new Set();
