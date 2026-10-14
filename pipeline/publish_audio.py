@@ -4,6 +4,7 @@
 音频文件按内容哈希命名、只增不改，所以每次提交只有新文件，仓库历史不会膨胀。
 推送后 GitHub Pages 约 1 分钟生效，再推主仓库，线上课件就能播放新音频。
 """
+import os
 import subprocess
 import sys
 import time
@@ -27,10 +28,13 @@ def main():
     git("push", "-q", "origin", "main")
     size = sum(f.stat().st_size for f in (AUDIO_STORE / "files").glob("*.mp3"))
     print(f"已推送 {mp3} 个新音频；音频仓库共 {size / 1e6:.0f} MB（GitHub Pages 单站上限约 1GB）")
+    if os.environ.get("AUDIO_SKIP_WAIT"):
+        print("不等音频站构建（后面还有课要推，推完最后一课再等）")
+        return
     wait_pages(head)
 
 
-def wait_pages(commit, timeout=600):
+def wait_pages(commit, timeout=1800):
     """等音频站 Pages 用这次提交构建完成，否则紧接着推主仓库时，部署前的音频检查会因文件未上线而失败"""
     repo = git("remote", "get-url", "origin").strip().removesuffix(".git").split("github.com/")[-1]
     start = time.time()

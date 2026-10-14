@@ -65,10 +65,13 @@ jobs:
 
       - name: 逐课生成并推送音频
         run: |
+          # 音频站每次有新推送，Pages 就把进行中的构建作废重来，所以中间的课只推送不等，最后一课才等一次构建完成
+          set -- $LESSONS
           for id in $LESSONS; do
             echo "::group::$id"
             python pipeline/build_audio.py "$id"
-            python pipeline/publish_audio.py
+            if [ "$#" -gt 1 ]; then AUDIO_SKIP_WAIT=1 python pipeline/publish_audio.py; else python pipeline/publish_audio.py; fi
+            shift
             echo "::endgroup::"
           done
 
