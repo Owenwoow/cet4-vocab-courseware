@@ -1,387 +1,537 @@
 {
-  "_note": "例句词组与语法解析（书外补充，AI 生成）",
-  "sents": {
-    "Scientists have tried to tap Internet donors, too, with mixed success.": {
-      "ph": [
-        {"t": "tried to", "b": "try to do", "m": "试图做"},
-        {"t": "with mixed success", "b": "with success", "m": "结果喜忧参半"}
-      ]
+ "_note": "例句词组与语法解析（书外补充，AI 生成）",
+ "sents": {
+  "Scientists have tried to tap Internet donors, too, with mixed success.": {
+   "ph": [
+    {
+     "t": "tried to",
+     "b": "try to do",
+     "m": "试图做"
     },
-    "She patted the dog on the head.": {
-      "ph": [
-        {"t": "patted", "b": "pat … on the head", "m": "轻拍……的头"},
-        {"t": "on the head", "b": "pat … on the head", "m": "轻拍……的头"}
-      ]
-    },
-    "I admire the passion and commitment shown by the players.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "I admire", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "the passion and commitment shown by the players", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "shown by the players 是过去分词短语作后置定语，修饰 the passion and commitment，与被修饰词是被动关系（激情和承诺被表现出来）。",
-          "英文修饰语放在名词后面，中文习惯放前面，所以书上译成前置的「运动员们表现出的激情和承诺」。"
-        ],
-        "lit": "我钦佩被运动员们表现出的激情和承诺。"
-      }
-    },
-    "They are keen on high technology.": {
-      "ph": [{"t": "are keen on", "b": "be keen on", "m": "热衷于"}]
-    },
-    "The villagers finally banded together and scared the beast away with firecrackers and drums.": {
-      "ph": [
-        {"t": "banded together", "b": "band together", "m": "团结起来"},
-        {"t": "scared", "b": "scare … away", "m": "吓跑"},
-        {"t": "away", "b": "scare … away", "m": "吓跑"}
-      ]
-    },
-    "In the battle against weight gain, people should pay more attention to exercise and less to what they eat and drink.": {
-      "ph": [
-        {"t": "In the battle against", "b": "in the battle against", "m": "在对抗……的斗争中"},
-        {"t": "pay more attention to", "b": "pay attention to", "m": "更加注意"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "In the battle against weight gain", "r": "状语"},
-          {"t": ", ", "r": ""},
-          {"t": "people should pay more attention to exercise and less to ", "r": "主干"},
-          {"t": "what they eat and drink", "r": "宾语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "and less to… 省略了 pay attention，完整是 pay more attention to exercise and (pay) less (attention) to…，书上译成对称的「多注意锻炼，少注意饮食」。",
-          "what they eat and drink 是介词 to 的宾语从句，what 在从句中作 eat 和 drink 的宾语（eat what, drink what），所以书上译成名词性的「饮食」。",
-          "In the battle against… 是句首状语，书上顺序不变，译成「在对抗体重增加的战斗中」。"
-        ],
-        "lit": "在对抗体重增加的战斗中，人们应该付出更多注意给锻炼，更少给他们吃和喝的东西。"
-      }
-    },
-    "They struggle to satisfy the demands of both work and home.": {
-      "ph": [{"t": "struggle to", "b": "struggle to do", "m": "努力做"}]
-    },
-    "He was killed in combat.": {
-      "ph": [{"t": "was killed in", "b": "be killed in", "m": "在……中丧生"}]
-    },
-    "In a Los Angeles Times article, one employee referred to the board as a \"digital whip\".": {
-      "ph": [
-        {"t": "referred to", "b": "refer to … as", "m": "称……为"},
-        {"t": "as", "b": "refer to … as", "m": "称……为"}
-      ]
-    },
-    "In order to learn the art of persuasion at the workplace, you need to understand how to handle conflicts and reach agreements.": {
-      "ph": [
-        {"t": "In order to", "b": "in order to do", "m": "为了做"},
-        {"t": "the art of", "b": "the art of", "m": "……的艺术"},
-        {"t": "reach agreements", "b": "reach an agreement", "m": "达成一致"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "In order to learn the art of persuasion at the workplace", "r": "目的状语"},
-          {"t": ", ", "r": ""},
-          {"t": "you need to understand how to handle conflicts and reach agreements", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "In order to learn… 是不定式短语作目的状语，放在句首，书上译成「为了……」，主语 you 在后面的主干里。",
-          "how to handle… and reach… 是「疑问词 + 不定式」作 understand 的宾语，handle 和 reach 并列共用 how to，书上译成「如何处理冲突和达成一致」。"
-        ],
-        "lit": "为了在工作场所学习说服的艺术，你需要理解如何处理冲突并达成协议。"
-      }
-    },
-    "Most people when confronted with a horse will pat it.": {
-      "ph": [
-        {"t": "confronted with", "b": "be confronted with", "m": "面对，遇到"},
-        {"t": "pat", "b": "pat", "m": "轻拍"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Most people", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "when confronted with a horse", "r": "时间状语"},
-          {"t": " ", "r": ""},
-          {"t": "will pat it", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "when confronted with a horse 是省略了「主语 + be」的时间状语从句，完整是 when they are confronted with a horse，省略的主语就是主句的 Most people，所以 confront 用被动（人是被马「面对」）。",
-          "这个状语插在主语和谓语之间，书上译成「大多数人遇见马时都会……」，把「遇见马时」放在谓语前，并把被动改成主动的「遇见」。"
-        ],
-        "lit": "大多数人当被一匹马面对时会拍拍它。"
-      }
-    },
-    "The Britannic hit a naval mine in 1916 and subsequently sank as well.": {
-      "ph": [{"t": "as well", "b": "as well", "m": "也"}]
-    },
-    "Its crew members went on strike.": {
-      "ph": [{"t": "went on strike", "b": "go on strike", "m": "罢工"}]
-    },
-    "Smash the car window with a hammer when in danger.": {
-      "ph": [{"t": "in danger", "b": "in danger", "m": "处于危险中"}]
-    },
-    "He also figured out a new way to make a punch look real.": {
-      "ph": [
-        {"t": "figured out", "b": "figure out", "m": "想出"},
-        {"t": "way to", "b": "a way to do", "m": "做……的办法"}
-      ]
-    },
-    "In the age of the Internet, there's no such thing as a private debate.": {
-      "ph": [
-        {"t": "In the age of", "b": "in the age of", "m": "在……的时代"},
-        {"t": "no such thing as", "b": "no such thing as", "m": "没有所谓的"}
-      ]
-    },
-    "Men are more likely to face that dispute from the perspective of what benefits them most.": {
-      "ph": [
-        {"t": "likely to", "b": "be likely to do", "m": "有可能做"},
-        {"t": "from the perspective of", "b": "from the perspective of", "m": "从……的角度"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Men are more likely to face that dispute", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "from the perspective of ", "r": "状语"},
-          {"t": "what benefits them most", "r": "宾语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "what benefits them most 是介词 of 的宾语从句，what 在从句中作 benefits 的主语（什么对他们最有利），不是宾语。",
-          "书上把这个从句译成「对他们最有利的」，前置作「角度」的定语，并把 from the perspective of 提到句首，译成「从……角度来看」。"
-        ],
-        "lit": "男性更有可能从什么对他们最有利的角度来面对那种争论。"
-      }
-    },
-    "The problem with this argument is that most children aren't playing outside or even spending time with other kids.": {
-      "ph": [
-        {"t": "problem with", "b": "the problem with", "m": "……的问题"},
-        {"t": "spending time with", "b": "spend time with", "m": "和……共度时间"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "The problem with this argument is", "r": "主干"},
-          {"t": " that ", "r": ""},
-          {"t": "most children aren't playing outside or even spending time with other kids", "r": "表语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "that 引导表语从句，说明 The problem 具体是什么；that 在从句中不作成分，书上译成「问题是，……」。",
-          "从句里 aren't playing… or even spending… 是否定后用 or 并列，两个动作都被否定，所以书上译成「都没有……，甚至没有……」。"
-        ],
-        "lit": "这个论点的问题是大多数孩子没有在外面玩或者甚至花时间和其他孩子在一起。"
-      }
-    },
-    "Should I drop a hint to Matt?": {
-      "ph": [{"t": "drop a hint", "b": "drop a hint", "m": "给出暗示"}]
-    },
-    "This is your chance to convey boundless enthusiasm for the subject.": {
-      "ph": [{"t": "enthusiasm for", "b": "enthusiasm for", "m": "对……的热情"}]
-    },
-    "The survey allowed for reading materials on a digital device.": {
-      "ph": [{"t": "allowed for", "b": "allow for", "m": "允许"}]
-    },
-    "They need to invest more in hospital staff and facilities.": {
-      "ph": [
-        {"t": "invest", "b": "invest … in", "m": "在……上投资"},
-        {"t": "in", "b": "invest … in", "m": "在……上投资"}
-      ]
-    },
-    "The report calls for a commission to investigate the matter further.": {
-      "ph": [{"t": "calls for", "b": "call for", "m": "呼吁"}],
-      "an": {
-        "parts": [
-          {"t": "The report calls for a commission", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "to investigate the matter further", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "to investigate the matter further 是不定式作后置定语，修饰 a commission（负责调查此事的委员会）。",
-          "call for 后面直接接名词 a commission，书上补出动词，译成「呼吁成立一个委员会来……」，不定式则译成「来进一步调查此事」。"
-        ],
-        "lit": "该报告呼吁一个委员会去进一步调查这件事。"
-      }
-    },
-    "A man who can recite sports statistics from 30 years ago, may not remember to drop a letter in the mailbox.": {
-      "ph": [
-        {"t": "remember to", "b": "remember to do", "m": "记得去做"},
-        {"t": "drop", "b": "drop … in", "m": "投入"},
-        {"t": "in", "b": "drop … in", "m": "投入"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "A man", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "who can recite sports statistics from 30 years ago", "r": "定语从句"},
-          {"t": ", ", "r": ""},
-          {"t": "may not remember to drop a letter in the mailbox", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "who 引导定语从句，先行词是 A man，who 在从句中作 can recite 的主语；书上把它前置成「一个能背诵……的人」，再接后面的谓语。",
-          "remember to do 表示「记得要去做某事」（事情还没做），与 remember doing（记得做过）不同，所以书上译成「不记得要往邮箱里投一封信」。"
-        ],
-        "lit": "一个能背诵三十年前体育统计数据的男人，可能不记得去投一封信到邮箱里。"
-      }
-    },
-    "These findings suggest that there is no direct link between unemployment and crime.": {
-      "ph": [
-        {"t": "link between", "b": "link between … and", "m": "……和……之间的联系"},
-        {"t": "and", "b": "link between … and", "m": "……和……之间的联系"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "These findings suggest", "r": "主干"},
-          {"t": " that ", "r": ""},
-          {"t": "there is no direct link between unemployment and crime", "r": "宾语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "主语 These findings 是无生命名词，suggest 表示「显示、表明」，书上译成「这些调研结果表明……」，不译成「建议」。",
-          "that 引导 suggest 的宾语从句，从句是 there be 结构，no direct link 是 no + 名词的否定，书上译成「没有直接联系」。"
-        ],
-        "lit": "这些发现表明，在失业和犯罪之间没有直接的联系。"
-      }
-    },
-    "You should not be afraid to show it or drastically change your behaviors—just ask for consent beforehand!": {
-      "ph": [
-        {"t": "be afraid to", "b": "be afraid to do", "m": "害怕做"},
-        {"t": "ask for", "b": "ask for", "m": "请求，征求"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "You should not be afraid to show it or drastically change your behaviors", "r": "主干"},
-          {"t": "—", "r": ""},
-          {"t": "just ask for consent beforehand", "r": "并列分句"},
-          {"t": "!", "r": ""}
-        ],
-        "pts": [
-          "should not be afraid to show it or (to) change… 中，or 并列两个动词 show 和 change，共用 be afraid to，否定落在 afraid 上，两个动作都不该怕，书上译成「不应该害怕表现出来或彻底改变」。",
-          "破折号后是祈使句 just ask for consent beforehand，补充说明怎么做；书上译成「只要事先征得同意就行了」，把 just 译成「只要……就行」。"
-        ],
-        "lit": "你不应该害怕表现它或者彻底改变你的行为——只要事先请求同意！"
-      }
-    },
-    "It is only natural that he should resent you.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "It is only natural", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that he should resent you", "r": "主语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "It 是形式主语，真正的主语是后面的 that 从句；书上把真正的主语提到前面，译成「他怨恨你是很自然的事」。",
-          "that 从句里用 should + 动词原形，是 It is natural / strange / a pity that… 之后常见的虚拟语气（带感情色彩的 should），不是「应该」，所以书上没有译出「应该」。"
-        ],
-        "lit": "他应该怨恨你是很自然的。"
-      }
-    },
-    "Red, however, does not always represent good luck and happiness.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "Red", "r": "主干"},
-          {"t": ", ", "r": ""},
-          {"t": "however", "r": "插入语"},
-          {"t": ", ", "r": ""},
-          {"t": "does not always represent good luck and happiness", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "not always 是部分否定，意思是「并不总是」，不是「总是不」，所以书上译成「并不总是代表」。",
-          "however 夹在两个逗号之间是插入语，表示转折，书上把它放在「然而」的位置，放到句首译出。"
-        ],
-        "lit": "红色，然而，不总是代表好运和幸福。"
-      }
-    },
-    "It has ignored campaigns on behalf of the left-handed.": {
-      "ph": [{"t": "on behalf of", "b": "on behalf of", "m": "为了……的利益"}]
-    },
-    "The man was absent from the weekly meeting.": {
-      "ph": [{"t": "absent from", "b": "be absent from", "m": "缺席"}]
-    },
-    "They should make sure their children are always punctual for school.": {
-      "ph": [
-        {"t": "make sure", "b": "make sure", "m": "确保"},
-        {"t": "punctual for", "b": "be punctual for", "m": "准时到"}
-      ]
-    },
-    "Millennials seem to be extending this phase of life as they postpone marriage.": {
-      "ph": [{"t": "seem to", "b": "seem to do", "m": "似乎"}]
-    },
-    "The virtues of physical fitness are shown on magazine covers, postage stamps, and television ads.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "The virtues of physical fitness are shown", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "on magazine covers, postage stamps, and television ads", "r": "状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "are shown 是被动，书上译成主动的「展示了」，把 The virtues… 放在宾语位置，更符合中文表达。",
-          "on 后面并列三个地点：magazine covers, postage stamps, and television ads，共用一个 on，书上译成「杂志封面、邮票、电视广告里」，并放到句首。"
-        ],
-        "lit": "身体健康的优点被展示在杂志封面、邮票和电视广告上。"
-      }
-    },
-    "They should learn to delay gratification so that they can pursue abstract goals, like going to college.": {
-      "ph": [
-        {"t": "learn to", "b": "learn to do", "m": "学会做"},
-        {"t": "so that", "b": "so that", "m": "以便，这样就"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "They should learn to delay gratification", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "so that they can pursue abstract goals", "r": "目的状语"},
-          {"t": ", ", "r": ""},
-          {"t": "like going to college", "r": "插入语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "so that they can pursue… 是目的状语从句，从句中常有 can / could / may，表示「为了能够……」，书上译成「这样他们就可以追求……」。",
-          "like going to college 里 like 是介词（比如），后面接动名词短语，补充举例 abstract goals，书上译成「比如上大学」。"
-        ],
-        "lit": "他们应该学会延迟满足，以便他们能够追求抽象的目标，比如上大学。"
-      }
-    },
-    "They can take all of the platform's classes and obtain professional certificates for free.": {
-      "ph": [{"t": "for free", "b": "for free", "m": "免费"}]
-    },
-    "Sometimes, rational analysis and data are impractical to be employed in certain situations.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "Sometimes", "r": ""},
-          {"t": ", ", "r": ""},
-          {"t": "rational analysis and data are impractical", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "to be employed in certain situations", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "to be employed 是不定式的被动形式，用来限定形容词 impractical：被使用时不切实际，主语 rational analysis and data 是被使用的对象。",
-          "书上不译出「被使用」，而是把 in certain situations 提到前面，译成「在某些情况下，理性分析和数据是不切实际的」。"
-        ],
-        "lit": "有时，理性分析和数据在某些情况下被使用是不切实际的。"
-      }
-    },
-    "You also have to take the time to apply for your marriage licence.": {
-      "ph": [
-        {"t": "take the time to", "b": "take the time to do", "m": "花时间做"},
-        {"t": "apply for", "b": "apply for", "m": "申请"}
-      ]
-    },
-    "He drove past the embassy the other day.": {
-      "ph": [
-        {"t": "drove past", "b": "drive past", "m": "开车经过"},
-        {"t": "the other day", "b": "the other day", "m": "前几天"}
-      ]
+    {
+     "t": "with mixed success",
+     "b": "with success",
+     "m": "结果喜忧参半"
     }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Scientists have tried to tap Internet donors",
+      "s": "你多半会翻成「科学家试图轻拍互联网捐助者」。念一遍，是不是怪？tap 常见的意思是「轻敲」，但后面接的是 donors（捐助者），拍人家没道理。这里 tap 是「开发、利用」某种来源，想想「挖掘捐助者」。have tried to 是「已经试过」。\n→ 科学家们已经试图利用互联网上的捐助者"
+     },
+     {
+      "t": "too, with mixed success",
+      "s": "too 夹在逗号中间，别慌，就是「也」，和前面的 Scientists 一起读：科学家也这么做。with mixed success 你可能翻成「带着混合的成功」，太硬了。mixed 是「有好有坏」，把名词 success 换成「结果」：结果喜忧参半。\n→ 也……，但结果喜忧参半"
+     }
+    ],
+    "order": "「也」提到前面跟着动作走，「with……」那块改成「结果……」放在最后，中文读起来才顺。",
+    "sum": "科学家们也试过利用网上的捐助者，但结果有好有坏。",
+    "cmp": "意思和书上一样。书上「喜忧参半」更像成语，我的说法更口语。"
+   }
+  },
+  "She patted the dog on the head.": {
+   "ph": [
+    {
+     "t": "patted",
+     "b": "pat … on the head",
+     "m": "轻拍……的头"
+    },
+    {
+     "t": "on the head",
+     "b": "pat … on the head",
+     "m": "轻拍……的头"
+    }
+   ]
+  },
+  "They are keen on high technology.": {
+   "ph": [
+    {
+     "t": "are keen on",
+     "b": "be keen on",
+     "m": "热衷于"
+    }
+   ]
+  },
+  "The villagers finally banded together and scared the beast away with firecrackers and drums.": {
+   "ph": [
+    {
+     "t": "banded together",
+     "b": "band together",
+     "m": "团结起来"
+    },
+    {
+     "t": "scared",
+     "b": "scare … away",
+     "m": "吓跑"
+    },
+    {
+     "t": "away",
+     "b": "scare … away",
+     "m": "吓跑"
+    }
+   ]
+  },
+  "In the battle against weight gain, people should pay more attention to exercise and less to what they eat and drink.": {
+   "ph": [
+    {
+     "t": "In the battle against",
+     "b": "in the battle against",
+     "m": "在对抗……的斗争中"
+    },
+    {
+     "t": "pay more attention to",
+     "b": "pay attention to",
+     "m": "更加注意"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "In the battle against weight gain",
+      "s": "你多半会翻成「在对抗体重增加的战斗中」。念一遍，有点吓人，其实没人真打仗。battle against 就是「和……作斗争」，weight gain 是「体重增加」，说白了就是「防止发胖」。\n→ 在对抗体重增加的斗争中"
+     },
+     {
+      "t": "people should pay more attention to exercise",
+      "s": "这块照字面翻就行：pay attention to 是「注意、重视」，more 是「更」。\n→ 人们应该更重视锻炼"
+     },
+     {
+      "t": "and less to what they eat and drink",
+      "s": "and less to 后面没有动词，你可能会愣住。别急，把前面的 pay attention 补回来：pay less attention to。what they eat and drink 是「他们吃的和喝的东西」，中文直接说「饮食」更顺。\n→ 而少关注饮食"
+     }
+    ],
+    "sum": "在对抗发胖的过程中，人们应该多重视锻炼，少关注吃喝。",
+    "cmp": "书上把 attention 译成「注意」，两处都用了「注意」，意思对。我把 less to 补成「少关注」，读起来更像一句完整的话。"
+   }
+  },
+  "They struggle to satisfy the demands of both work and home.": {
+   "ph": [
+    {
+     "t": "struggle to",
+     "b": "struggle to do",
+     "m": "努力做"
+    }
+   ]
+  },
+  "He was killed in combat.": {
+   "ph": [
+    {
+     "t": "was killed in",
+     "b": "be killed in",
+     "m": "在……中丧生"
+    }
+   ]
+  },
+  "In a Los Angeles Times article, one employee referred to the board as a \"digital whip\".": {
+   "ph": [
+    {
+     "t": "referred to",
+     "b": "refer to … as",
+     "m": "称……为"
+    },
+    {
+     "t": "as",
+     "b": "refer to … as",
+     "m": "称……为"
+    }
+   ]
+  },
+  "In order to learn the art of persuasion at the workplace, you need to understand how to handle conflicts and reach agreements.": {
+   "ph": [
+    {
+     "t": "In order to",
+     "b": "in order to do",
+     "m": "为了做"
+    },
+    {
+     "t": "the art of",
+     "b": "the art of",
+     "m": "……的艺术"
+    },
+    {
+     "t": "reach agreements",
+     "b": "reach an agreement",
+     "m": "达成一致"
+    }
+   ]
+  },
+  "Most people when confronted with a horse will pat it.": {
+   "ph": [
+    {
+     "t": "confronted with",
+     "b": "be confronted with",
+     "m": "面对，遇到"
+    },
+    {
+     "t": "pat",
+     "b": "pat",
+     "m": "轻拍"
+    }
+   ]
+  },
+  "The Britannic hit a naval mine in 1916 and subsequently sank as well.": {
+   "ph": [
+    {
+     "t": "as well",
+     "b": "as well",
+     "m": "也"
+    }
+   ]
+  },
+  "Its crew members went on strike.": {
+   "ph": [
+    {
+     "t": "went on strike",
+     "b": "go on strike",
+     "m": "罢工"
+    }
+   ]
+  },
+  "Smash the car window with a hammer when in danger.": {
+   "ph": [
+    {
+     "t": "in danger",
+     "b": "in danger",
+     "m": "处于危险中"
+    }
+   ]
+  },
+  "He also figured out a new way to make a punch look real.": {
+   "ph": [
+    {
+     "t": "figured out",
+     "b": "figure out",
+     "m": "想出"
+    },
+    {
+     "t": "way to",
+     "b": "a way to do",
+     "m": "做……的办法"
+    }
+   ]
+  },
+  "In the age of the Internet, there's no such thing as a private debate.": {
+   "ph": [
+    {
+     "t": "In the age of",
+     "b": "in the age of",
+     "m": "在……的时代"
+    },
+    {
+     "t": "no such thing as",
+     "b": "no such thing as",
+     "m": "没有所谓的"
+    }
+   ]
+  },
+  "Men are more likely to face that dispute from the perspective of what benefits them most.": {
+   "ph": [
+    {
+     "t": "likely to",
+     "b": "be likely to do",
+     "m": "有可能做"
+    },
+    {
+     "t": "from the perspective of",
+     "b": "from the perspective of",
+     "m": "从……的角度"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Men are more likely to face that dispute",
+      "s": "more likely to 你可能翻成「更多可能去」，别扭。be likely to do 是「有可能做」，加上 more 就是「更有可能」。face 在这里不是「脸」，是「面对」。\n→ 男性更有可能面对那种争论"
+     },
+     {
+      "t": "from the perspective of what benefits them most",
+      "s": "from the perspective of 是一整块，「从……的角度」。后面 what benefits them most 你可能不知道 what 干什么。把 what 当成「……的东西」，what benefits them most 就是「对他们最有利的东西」。放进去：从「对他们最有利的东西」的角度，有点绕，说短一点就是「从对他们最有利的角度」。\n→ 从对他们最有利的角度"
+     }
+    ],
+    "order": "英文把「从……角度」放最后，中文习惯先交代角度，再说怎么做，所以把这块提到前面。",
+    "sum": "从对自己最有利的角度出发，男性更有可能这样去面对这种争论。",
+    "cmp": "书上把「角度」放在前面，说成「从对他们最有利的角度来看」，意思没错，也是先说角度。我这里把「他们」改成「自己」，读起来更自然，两种都对。"
+   }
+  },
+  "The problem with this argument is that most children aren't playing outside or even spending time with other kids.": {
+   "ph": [
+    {
+     "t": "problem with",
+     "b": "the problem with",
+     "m": "……的问题"
+    },
+    {
+     "t": "spending time with",
+     "b": "spend time with",
+     "m": "和……共度时间"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The problem with this argument is that",
+      "s": "你多半会翻成「这个论点的问题是」，意思对，但要看清 problem with 是一个搭配，「……的问题（毛病）」。argument 这里不是「吵架」，是「论点、说法」。that 后面是一整句话，说明问题是什么。\n→ 这个论点的问题在于"
+     },
+     {
+      "t": "most children aren't playing outside or even spending time with other kids",
+      "s": "aren't playing 用的是进行时，说明现在的状况，翻成「没有在玩」。接着是 or even：否定词 aren't 管到后面，or even spending time 也是「没有」，不是「甚至花时间」。你要是翻成「不在外面玩，或者甚至花时间……」就乱了。spend time with 是「和……共度时间」。\n→ 大多数孩子没有在外面玩，甚至没有和其他孩子待在一起"
+     }
+    ],
+    "sum": "这个说法的问题在于，大多数孩子并不在外面玩，甚至不和别的孩子待在一起。",
+    "cmp": "意思一样，书上「花时间和其他孩子在一起」是把 spending time with 直译，我说「待在一起」更口语。"
+   }
+  },
+  "Should I drop a hint to Matt?": {
+   "ph": [
+    {
+     "t": "drop a hint",
+     "b": "drop a hint",
+     "m": "给出暗示"
+    }
+   ]
+  },
+  "The point is to use the results of this study to open up meaningful dialogues on implicit gender bias.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The point is to use the results of this study",
+      "s": "你多半会翻成「点是用这项研究的结果」。念一遍，有点怪。The point is 是「关键是」「重点在于」。is 后面的 to use 是说明这个关键是什么，翻成「利用」就行。\n→ 关键是利用这项研究的结果"
+     },
+     {
+      "t": "to open up meaningful dialogues on implicit gender bias",
+      "s": "这里又出现一个 to，表示目的：用结果「为了」做什么。眼睛盯住 dialogues on：on 在这里是「关于」，不是「在……上面」，所以是「就……展开对话」。implicit 是「隐含的、没明说的」，gender bias 是「性别偏见」。open up 在这里是「展开」，meaningful 是「有意义的」。\n→ 就隐含的性别偏见展开有意义的对话"
+     }
+    ],
+    "sum": "关键是借助这项研究的结果，就隐含的性别偏见展开有意义的对话。",
+    "cmp": "和书上基本一样。书上用「利用」，我用「借助」，更像是在说「拿来当工具」，两个都行。"
+   }
+  },
+  "This is your chance to convey boundless enthusiasm for the subject.": {
+   "ph": [
+    {
+     "t": "enthusiasm for",
+     "b": "enthusiasm for",
+     "m": "对……的热情"
+    }
+   ]
+  },
+  "The survey allowed for reading materials on a digital device.": {
+   "ph": [
+    {
+     "t": "allowed for",
+     "b": "allow for",
+     "m": "允许"
+    }
+   ]
+  },
+  "They need to invest more in hospital staff and facilities.": {
+   "ph": [
+    {
+     "t": "invest",
+     "b": "invest … in",
+     "m": "在……上投资"
+    },
+    {
+     "t": "in",
+     "b": "invest … in",
+     "m": "在……上投资"
+    }
+   ]
+  },
+  "The report calls for a commission to investigate the matter further.": {
+   "ph": [
+    {
+     "t": "calls for",
+     "b": "call for",
+     "m": "呼吁"
+    }
+   ]
+  },
+  "A man who can recite sports statistics from 30 years ago, may not remember to drop a letter in the mailbox.": {
+   "ph": [
+    {
+     "t": "remember to",
+     "b": "remember to do",
+     "m": "记得去做"
+    },
+    {
+     "t": "drop",
+     "b": "drop … in",
+     "m": "投入"
+    },
+    {
+     "t": "in",
+     "b": "drop … in",
+     "m": "投入"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "A man who can recite sports statistics from 30 years ago",
+      "s": "who 指谁？把候选放回去试：a man can recite，一个人能背，对；statistics can recite，数据能背？不行。所以 who 指 a man。from 30 years ago 你可能想挂在 recite 后面，翻成「从30年前背起」，其实它是修饰 statistics 的，「30年前的体育数据」。\n→ 一个能背出30年前体育统计数据的人"
+     },
+     {
+      "t": "may not remember to drop a letter in the mailbox",
+      "s": "may not 你可能想翻成「不许」，不对，这里是推测，「可能不」。remember to drop 是「记得去投」，不是「记得投过」。drop a letter in the mailbox 字面是「在邮箱里掉下一封信」，其实就是「往邮箱里投一封信」。\n→ 可能不记得要往邮箱里投一封信"
+     }
+    ],
+    "sum": "一个能背出30年前体育统计数据的人，却可能记不住要去寄一封信。",
+    "cmp": "意思和书上一样，只差在最后：我加了「却」，把前后反差说出来了；书上的译法更平实。"
+   }
+  },
+  "These findings suggest that there is no direct link between unemployment and crime.": {
+   "ph": [
+    {
+     "t": "link between",
+     "b": "link between … and",
+     "m": "……和……之间的联系"
+    },
+    {
+     "t": "and",
+     "b": "link between … and",
+     "m": "……和……之间的联系"
+    }
+   ]
+  },
+  "You should not be afraid to show it or drastically change your behaviors—just ask for consent beforehand!": {
+   "ph": [
+    {
+     "t": "be afraid to",
+     "b": "be afraid to do",
+     "m": "害怕做"
+    },
+    {
+     "t": "ask for",
+     "b": "ask for",
+     "m": "请求，征求"
+    }
+   ]
+  },
+  "It has ignored campaigns on behalf of the left-handed.": {
+   "ph": [
+    {
+     "t": "on behalf of",
+     "b": "on behalf of",
+     "m": "为了……的利益"
+    }
+   ]
+  },
+  "The man was absent from the weekly meeting.": {
+   "ph": [
+    {
+     "t": "absent from",
+     "b": "be absent from",
+     "m": "缺席"
+    }
+   ]
+  },
+  "They should make sure their children are always punctual for school.": {
+   "ph": [
+    {
+     "t": "make sure",
+     "b": "make sure",
+     "m": "确保"
+    },
+    {
+     "t": "punctual for",
+     "b": "be punctual for",
+     "m": "准时到"
+    }
+   ]
+  },
+  "Millennials seem to be extending this phase of life as they postpone marriage.": {
+   "ph": [
+    {
+     "t": "seem to",
+     "b": "seem to do",
+     "m": "似乎"
+    }
+   ]
+  },
+  "The virtues of physical fitness are shown on magazine covers, postage stamps, and television ads.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The virtues of physical fitness",
+      "s": "你多半会翻成「身体健康的美德」。念一遍，是不是怪？virtue 常见意思是「美德」，但健身哪来的美德，这里是「优点、好处」。physical fitness 是「身体健康、健身」。\n→ 健身的好处"
+     },
+     {
+      "t": "are shown on magazine covers, postage stamps, and television ads",
+      "s": "are shown 你可能翻成「被展示」，可是后面是三个地方，都是「被展示的位置」，更自然的说法是「在……上都展示了……」。postage stamps 是「邮票」，不是「邮资」，别因为 postage 单看觉得怪。\n→ 杂志封面、邮票和电视广告上都展示了"
+     }
+    ],
+    "order": "英文是「优点被展示在这些地方」，中文改成「这些地方都展示了优点」，地点放前面，被动变主动。",
+    "sum": "杂志封面、邮票和电视广告上，都在展示健身的好处。",
+    "cmp": "和书上基本一样，书上把 are shown 译成「展示了」，把地点放在了前面，是对的。我说「好处」，书上说「优点」，都可以。"
+   }
+  },
+  "They should learn to delay gratification so that they can pursue abstract goals, like going to college.": {
+   "ph": [
+    {
+     "t": "learn to",
+     "b": "learn to do",
+     "m": "学会做"
+    },
+    {
+     "t": "so that",
+     "b": "so that",
+     "m": "以便，这样就"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They should learn to delay gratification",
+      "s": "你多半会翻成「他们应该学会延迟满意」。念一遍，中文不这么说。gratification 是「需求得到满足」，delay gratification 在心理学里就是「延迟满足」，不要马上满足自己，而是等一等。\n→ 他们应该学会延迟满足"
+     },
+     {
+      "t": "so that they can pursue abstract goals, like going to college",
+      "s": "so that 你可能会和 so…that 弄混。这里 so that 连着 they can，意思是「以便、这样就能」。abstract goals 是「抽象的目标」，看不见摸不着，后面 like going to college 举例，like 是「比如」，不是「喜欢」。\n→ 这样他们就能追求抽象的目标，比如上大学"
+     }
+    ],
+    "sum": "他们应该学会延迟满足，这样才能追求上大学之类的抽象目标。",
+    "cmp": "意思一样，书上把「比如上大学」放在最后，我把它并进目标里，更紧凑。"
+   }
+  },
+  "They can take all of the platform's classes and obtain professional certificates for free.": {
+   "ph": [
+    {
+     "t": "for free",
+     "b": "for free",
+     "m": "免费"
+    }
+   ]
+  },
+  "You also have to take the time to apply for your marriage licence.": {
+   "ph": [
+    {
+     "t": "take the time to",
+     "b": "take the time to do",
+     "m": "花时间做"
+    },
+    {
+     "t": "apply for",
+     "b": "apply for",
+     "m": "申请"
+    }
+   ]
+  },
+  "He drove past the embassy the other day.": {
+   "ph": [
+    {
+     "t": "drove past",
+     "b": "drive past",
+     "m": "开车经过"
+    },
+    {
+     "t": "the other day",
+     "b": "the other day",
+     "m": "前几天"
+    }
+   ]
   }
+ }
 }

@@ -1,507 +1,624 @@
 {
-  "_note": "例句词组与语法解析（书外补充，AI 生成）",
-  "sents": {
-    "They often fail to combine teaching with research.": {
-      "ph": [
-        {"t": "fail to", "b": "fail to do", "m": "未能做到"},
-        {"t": "combine", "b": "combine … with", "m": "把……与……结合"},
-        {"t": "with", "b": "combine … with", "m": "把……与……结合"}
-      ]
+ "_note": "例句词组与语法解析（书外补充，AI 生成）",
+ "sents": {
+  "They often fail to combine teaching with research.": {
+   "ph": [
+    {
+     "t": "fail to",
+     "b": "fail to do",
+     "m": "未能做到"
     },
-    "The close link between age and stage may cease to exist in a multi-stage life.": {
-      "ph": [
-        {"t": "cease to", "b": "cease to do", "m": "不再做"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "The close link between age and stage may cease to exist", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "in a multi-stage life", "r": "状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "主语 The close link 后面的 between age and stage 是介词短语作后置定语，英文放在名词后面，书上前置成「年龄和阶段之间的密切联系」。",
-          "in a multi-stage life 是句末的地点（范围）状语，中文习惯把状语放在句首，所以书上译成「在多阶段生活中，……」。",
-          "cease to exist 是 cease to do（不再做）的搭配，加上 may 表可能，书上译成「可能不再存在」。"
-        ],
-        "lit": "年龄和阶段之间的密切联系可能停止存在于一个多阶段的生活中。"
-      }
+    {
+     "t": "combine",
+     "b": "combine … with",
+     "m": "把……与……结合"
     },
-    "Great innovators are good at connecting concepts from various academic fields.": {
-      "ph": [
-        {"t": "are good at", "b": "be good at", "m": "善于"}
-      ]
-    },
-    "All this is done with the aim of improving workplace efficiency, collaboration and cohesion.": {
-      "ph": [
-        {"t": "with the aim of", "b": "with the aim of", "m": "目的是，为了"}
-      ]
-    },
-    "They work in conjunction with the environment.": {
-      "ph": [
-        {"t": "in conjunction with", "b": "in conjunction with", "m": "与……相结合"}
-      ]
-    },
-    "Training can help to make muscles stronger and keeping joints lubricated.": {
-      "ph": [
-        {"t": "help to", "b": "help to do", "m": "有助于做"}
-      ]
-    },
-    "She tied a knot in a cherry stem.": {
-      "ph": [
-        {"t": "tied a knot", "b": "tie a knot", "m": "打结"}
-      ]
-    },
-    "But not many are able to integrate innovation into their business.": {
-      "ph": [
-        {"t": "are able to", "b": "be able to do", "m": "能够做"},
-        {"t": "integrate", "b": "integrate … into", "m": "将……融入"},
-        {"t": "into", "b": "integrate … into", "m": "将……融入"}
-      ]
-    },
-    "When governments lose their control on power, law and order begin to disintegrate.": {
-      "ph": [
-        {"t": "law and order", "b": "law and order", "m": "法律和秩序，治安"}
-      ]
-    },
-    "Craft activities result in tangible and often useful products.": {
-      "ph": [
-        {"t": "result in", "b": "result in", "m": "产生，导致"}
-      ]
-    },
-    "However, merely having contact with children does not guarantee happiness in old age.": {
-      "ph": [
-        {"t": "having contact with", "b": "have contact with", "m": "与……接触"}
-      ]
-    },
-    "It wants to keep its own environment intact.": {
-      "ph": [
-        {"t": "keep", "b": "keep … intact", "m": "保持……完整"},
-        {"t": "intact", "b": "keep … intact", "m": "保持……完整"}
-      ]
-    },
-    "It does not attach enough importance to task-based practice.": {
-      "ph": [
-        {"t": "attach enough importance to", "b": "attach importance to", "m": "重视"}
-      ]
-    },
-    "He had one last hope to cling on to.": {
-      "ph": [
-        {"t": "cling on to", "b": "cling on to", "m": "抱着（希望），紧抓不放"}
-      ]
-    },
-    "We love to establish a routine and stick with it.": {
-      "ph": [
-        {"t": "stick with", "b": "stick with", "m": "坚持"}
-      ]
-    },
-    "I used to play drums in a band.": {
-      "ph": [
-        {"t": "used to", "b": "used to do", "m": "以前常常做"}
-      ]
-    },
-    "Taijiquan, stemming from ancient China, is an important branch of Chinese martial arts.": {
-      "ph": [
-        {"t": "stemming from", "b": "stem from", "m": "源于"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Taijiquan", "r": "主干"},
-          {"t": ", ", "r": ""},
-          {"t": "stemming from ancient China", "r": "非谓语"},
-          {"t": ", ", "r": ""},
-          {"t": "is an important branch of Chinese martial arts", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "stemming from ancient China 是现在分词短语，夹在主语和谓语之间、用逗号隔开，补充说明 Taijiquan（相当于 which stems from…）；书上不嵌在主语里，而是拆成并列的分句「源于中国古代，是……」。",
-          "stem from 是不及物的短语动词，主语 Taijiquan 是动作的发出者，所以用 -ing 表主动，译成「源于」，不能译成被动。"
-        ],
-        "lit": "太极拳，源自古代中国，是中国武术的一个重要分支。"
-      }
-    },
-    "They would run around looking for clues and at the end unmask the bad guy.": {
-      "ph": [
-        {"t": "run around", "b": "run around", "m": "到处跑"},
-        {"t": "looking for", "b": "look for", "m": "寻找"},
-        {"t": "at the end", "b": "at the end", "m": "最后，结尾时"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "They would run around", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "looking for clues", "r": "非谓语"},
-          {"t": " and ", "r": ""},
-          {"t": "at the end unmask the bad guy", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "looking for clues 是现在分词短语，作伴随状语，说明 run around 时在做什么，书上译成连动「四处找线索」。",
-          "run around 和 unmask 是两个并列谓语，共用主语 They 和助动词 would，所以书上译成「会四处找……，最后揭开……」。",
-          "句中没有 if 条件，也不是与现实相反的假设，would 不是虚拟语气；这里表过去反复发生的动作，书上用「会」译出。"
-        ],
-        "lit": "他们会到处跑着寻找线索，并且在最后揭开那个坏人的面具。"
-      }
-    },
-    "I think that's my cue to explain why I'm here.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "I think", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that's my cue to explain why I'm here", "r": "宾语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "I think 后面省略了连词 that，其后整句是 think 的宾语从句；从句里的 that's 是 that is，that 是指示代词作主语（指眼下这个时机），不是引导从句的 that。",
-          "to explain… 是不定式作后置定语，修饰 cue；cue 本义是「暗示、信号」，这里指轮到我发言的时机，所以书上意译成「现在该轮到我解释」。",
-          "why I'm here 是 explain 的宾语从句，书上译成名词性的「我来这里的原因」。"
-        ],
-        "lit": "我想那是我的提示去解释我为什么在这里。"
-      }
-    },
-    "Of the nearly 100 Americans recommended to be studied, 77% were white.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "Of the nearly 100 Americans recommended to be studied", "r": "状语"},
-          {"t": ", ", "r": ""},
-          {"t": "77% were white", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "句首 Of… 的 of 表示「在整体之中」，指出 77% 是从这近 100 人里统计出来的，书上译成「在……中」。",
-          "recommended to be studied 是过去分词短语作后置定语，修饰 Americans；英文放在名词后面，书上前置成「被推荐研究的近100名美国人」。",
-          "recommended 和 to be studied 里有两层被动，书上合译成「被推荐研究」，只留一个「被」，不说「被推荐被研究」。"
-        ],
-        "lit": "在被推荐被研究的近100名美国人中，77%是白人。"
-      }
-    },
-    "This suggests their higher IQs result from the time they spend teaching their siblings.": {
-      "ph": [
-        {"t": "result from", "b": "result from", "m": "由……引起，起因于"}
-      ]
-    },
-    "It is mainly based on a society's religion.": {
-      "ph": [
-        {"t": "based on", "b": "be based on", "m": "基于，以……为基础"}
-      ]
-    },
-    "She mainly drew on stories of ancient saints.": {
-      "ph": [
-        {"t": "drew on", "b": "draw on", "m": "借鉴，利用"}
-      ]
-    },
-    "The tradition, dating back to 300 B.C., was later incorporated into the Christian church.": {
-      "ph": [
-        {"t": "dating back to", "b": "date back to", "m": "追溯到"},
-        {"t": "incorporated into", "b": "be incorporated into", "m": "被纳入"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "The tradition", "r": "主干"},
-          {"t": ", ", "r": ""},
-          {"t": "dating back to 300 B.C.", "r": "非谓语"},
-          {"t": ", ", "r": ""},
-          {"t": "was later incorporated into the Christian church", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "dating back to 300 B.C. 是现在分词短语，夹在主语和谓语之间（相当于 which dates back…），补充说明 The tradition；date back to 是不及物短语，用 -ing 表主动，所以译成「可以追溯到」，不是「被追溯」。",
-          "书上把插入的分词短语和后面的谓语拆成两个并列分句：「这一传统可以追溯到……，后来被纳入……」，主语只出现一次。",
-          "was later incorporated into 是被动，传统是被吸收的对象，书上保留「被纳入」。"
-        ],
-        "lit": "这一传统，追溯到公元前300年，后来被并入基督教会。"
-      }
-    },
-    "Most of us in the entrepreneurial community are blessed—or cursed—with higher-than-average ambition.": {
-      "ph": [
-        {"t": "blessed", "b": "be blessed with", "m": "有幸拥有，被赋予"},
-        {"t": "with", "b": "be blessed with", "m": "有幸拥有，被赋予"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Most of us in the entrepreneurial community are blessed", "r": "主干"},
-          {"t": "—or cursed—", "r": "插入语"},
-          {"t": "with higher-than-average ambition", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "in the entrepreneurial community 是介词短语作后置定语，修饰 Most of us，书上提到句首译成「在企业家群体中，大多数人」。",
-          "—or cursed— 是破折号引出的插入语，插在 blessed 和 with 之间，补充「也可能是诅咒」；中文无法在句中嵌入，所以书上把它挪到句末，译成「这或是祝福，或是诅咒」。",
-          "be blessed with 是被动形式的固定搭配，表示「被赋予、拥有（好的东西）」，书上译成主动的「有……雄心壮志」。"
-        ],
-        "lit": "我们企业家群体中的大多数人被赋予了——或者被诅咒了——高于平均水平的雄心。"
-      }
-    },
-    "So it's no surprise that cultures around the world celebrate spring by honouring the egg.": {
-      "ph": [
-        {"t": "no surprise", "b": "no surprise", "m": "不足为奇"},
-        {"t": "around the world", "b": "around the world", "m": "世界各地"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "So it's no surprise", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that cultures around the world celebrate spring by honouring the egg", "r": "主语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "it 是形式主语，真正的主语是后面的 that 从句（主语从句后置）；书上把从句提前当主语译，「……也就不足为奇了」放在最后。",
-          "no surprise 是 no + 名词，表否定，相当于 not a surprise，书上译成「不足为奇」。",
-          "by honouring the egg 是 by + 动名词，表方式，译成「通过纪念鸡蛋」。"
-        ],
-        "lit": "所以这不是什么惊讶，世界各地的文化通过尊崇鸡蛋来庆祝春天。"
-      }
-    },
-    "A state banquet was held in honour of the visiting president.": {
-      "ph": [
-        {"t": "was held", "b": "be held", "m": "举行"},
-        {"t": "in honour of", "b": "in honour of", "m": "为向……表示敬意"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "A state banquet was held", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "in honour of the visiting president", "r": "状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "was held 是被动，施事者不重要所以没写出来，书上译成无主语的「特设国宴」，不出现「被」。",
-          "in honour of 表示「为了向……致敬」，书上拆成「为欢迎来访总统」和「以示礼遇」两处来译。",
-          "visiting 是现在分词作前置定语，「来访的」，修饰 president。"
-        ],
-        "lit": "一场国宴为了向来访的总统致敬而被举行。"
-      }
-    },
-    "It does produce much less pollution than that caused by energy production through fossil fuels.": {
-      "ph": [
-        {"t": "caused by", "b": "be caused by", "m": "由……引起，产生"},
-        {"t": "fossil fuels", "b": "fossil fuel", "m": "化石燃料"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "It does produce much less pollution", "r": "主干"},
-          {"t": " than ", "r": ""},
-          {"t": "that caused by energy production through fossil fuels", "r": "状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "does produce 里的 does 是强调助动词，加强肯定语气，书上译成「的确」。",
-          "than 后的 that 是代词，指前面的 pollution，避免重复；caused by… 是过去分词短语作后置定语，修饰 that，书上前置并把 caused by 译成「产生」：「化石燃料能源生产产生的污染」。",
-          "much less pollution 是 less + 不可数名词的比较，much 加强程度，书上译成「少得多」。"
-        ],
-        "lit": "它的确比由通过化石燃料的能源生产所造成的那种污染产生少得多的污染。"
-      }
-    },
-    "The road was covered with spilled gas.": {
-      "ph": [
-        {"t": "covered with", "b": "be covered with", "m": "被……覆盖"}
-      ]
-    },
-    "Scotland will reach the national target in carbon emissions reduction ahead of schedule.": {
-      "ph": [
-        {"t": "ahead of schedule", "b": "ahead of schedule", "m": "提前"}
-      ]
-    },
-    "They argued in favour of keeping a nuclear deterrent.": {
-      "ph": [
-        {"t": "in favour of", "b": "in favour of", "m": "赞成，主张"}
-      ]
-    },
-    "Two atoms of hydrogen combine with one atom of oxygen to form a molecule of water.": {
-      "ph": [
-        {"t": "combine", "b": "combine … with", "m": "与……结合"},
-        {"t": "with", "b": "combine … with", "m": "与……结合"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Two atoms of hydrogen combine with one atom of oxygen", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "to form a molecule of water", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "to form a molecule of water 是不定式短语作状语，说明结合之后形成什么；书上不译「为了」，而是和前面连成连动「结合组成」。",
-          "Two atoms of hydrogen 中 of hydrogen 说明 atoms 是什么原子，中文要前置成「氢原子」，所以书上写「两个氢原子」「一个氧原子」。"
-        ],
-        "lit": "两个氢的原子与一个氧的原子结合，以形成一个水的分子。"
-      }
-    },
-    "The former have atoms that contain more free electrons than the latter.": {
-      "ph": [
-        {"t": "The former", "b": "the former … the latter", "m": "前者……后者"},
-        {"t": "the latter", "b": "the former … the latter", "m": "前者……后者"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "The former have atoms", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that contain more free electrons than the latter", "r": "定语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "that 引导定语从句，先行词是 atoms，that 在从句中作 contain 的主语。",
-          "主干 The former have atoms 只是引出 atoms，真正的信息在从句里；书上把它转成「前者的原子」作主语，把从句的 contain 提升为谓语，译成「前者的原子比后者含有更多的自由电子」，不再单独译 have。",
-          "more… than the latter 是比较结构，than 后省略了 contain…，书上译成「比后者」。"
-        ],
-        "lit": "前者有含有比后者更多自由电子的原子。"
-      }
-    },
-    "Try to imagine what it is like to live without electricity.": {
-      "ph": [
-        {"t": "Try to", "b": "try to do", "m": "试着做"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Try to imagine", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "what it is like to live without electricity", "r": "宾语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "what 引导 imagine 的宾语从句，what 在从句里是介词 like 的宾语（it is like what），整个从句意为「……是什么样子」。",
-          "从句里 it 是形式主语，to live without electricity 是真正的主语；书上把不定式译成名词性的「没有电的生活」，再接「是什么样子」。"
-        ],
-        "lit": "试着想象生活在没有电的情况下是什么样子。"
-      }
-    },
-    "We gave out a cheer when the red roof of the cottage came into view.": {
-      "ph": [
-        {"t": "gave out", "b": "give out", "m": "发出"},
-        {"t": "came into view", "b": "come into view", "m": "映入眼帘，出现"}
-      ]
-    },
-    "She always derives great pleasure from designing something new.": {
-      "ph": [
-        {"t": "derives", "b": "derive … from", "m": "从……中获得"},
-        {"t": "from", "b": "derive … from", "m": "从……中获得"}
-      ]
-    },
-    "We do work that gives us bursts of joy each new day.": {
-      "ph": [
-        {"t": "bursts of", "b": "a burst of", "m": "一阵阵"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "We do work", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that gives us bursts of joy", "r": "定语从句"},
-          {"t": " ", "r": ""},
-          {"t": "each new day", "r": "状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "that 引导定语从句，先行词是 work，that 在从句中作 gives 的主语。",
-          "书上把主干 We do work 译成「我们所做的工作」作主语，把从句的 gives 提升为谓语：「……的工作每一天都给我们带来……」，没有按英文拆成两层。",
-          "each new day 是名词短语直接作时间状语（前面不加介词），书上译成「每一天都」。"
-        ],
-        "lit": "我们做工作，这工作每个新的一天给我们一阵阵喜悦。"
-      }
-    },
-    "Medical Association offers a picture of how risky it is to get a lift from a teenage driver.": {
-      "ph": [
-        {"t": "get a lift", "b": "get a lift", "m": "搭便车"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Medical Association offers a picture of", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "how risky it is to get a lift from a teenage driver", "r": "宾语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "how risky it is… 是介词 of 的宾语从句；how risky 是表语提到从句开头，it 是形式主语，to get a lift… 是真正的主语。",
-          "还原成陈述语序是 it is risky to get a lift…，书上译成「从十几岁的司机那里搭便车有多危险」，先译不定式，再译 how risky。",
-          "offers a picture of 里 picture 是名词，书上展开成「提供了一张图片，展示了……」。"
-        ],
-        "lit": "医学协会提供一幅关于从青少年司机那里搭便车是多么危险的图景。"
-      }
-    },
-    "Leslie worries that the rise of the Internet has reduced our appetite for aimless adventures.": {
-      "ph": [
-        {"t": "appetite for", "b": "appetite for", "m": "对……的欲望（兴趣）"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Leslie worries", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that the rise of the Internet has reduced our appetite for aimless adventures", "r": "宾语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "that 引导 worries 的宾语从句，说明担心的内容，书上译成「担心……」，从句整体放在后面。",
-          "从句用现在完成时 has reduced，强调兴起对现在造成的结果，书上译成「已经减少了」。",
-          "appetite 本义「食欲」，appetite for 引申为「对……的欲望、兴趣」，书上译成「兴趣」。"
-        ],
-        "lit": "莱斯利担心互联网的兴起已经减少了我们对无目的冒险的胃口。"
-      }
-    },
-    "What problem may arise if classes go online?": {
-      "ph": [
-        {"t": "go online", "b": "go online", "m": "转到线上，上网"}
-      ]
-    },
-    "Most stores open with flowers, fruit and vegetables at the front as a breath of freshness to arouse our appetite.": {
-      "ph": [
-        {"t": "a breath of", "b": "a breath of", "m": "一股，一丝"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Most stores open with flowers, fruit and vegetables at the front", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "as a breath of freshness", "r": "状语"},
-          {"t": " ", "r": ""},
-          {"t": "to arouse our appetite", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "open with… at the front 直译是「以……开场、放在前面」，书上不直译，转成「把鲜花、水果和蔬菜放在最前面」。",
-          "as a breath of freshness 里 as 表「作为」，a breath of 是「一股、一丝」，书上把名词短语转成「给人一种新鲜的感觉」。",
-          "to arouse our appetite 是不定式短语，说明这样摆放的作用，书上拆成后面的分句「唤起我们的食欲」。"
-        ],
-        "lit": "大多数商店以鲜花、水果和蔬菜在前面开场，作为一股新鲜感来唤起我们的食欲。"
-      }
-    },
-    "The telephone roused me from my sleep at 6 a.m.": {
-      "ph": [
-        {"t": "roused", "b": "rouse sb. from", "m": "把某人从……中唤醒"},
-        {"t": "from", "b": "rouse sb. from", "m": "把某人从……中唤醒"}
-      ]
-    },
-    "This has already raised privacy concerns.": {
-      "ph": [
-        {"t": "raised privacy concerns", "b": "raise concerns", "m": "引起担忧"}
-      ]
-    },
-    "I was barely able to stay awake.": {
-      "ph": [
-        {"t": "stay awake", "b": "stay awake", "m": "保持清醒"}
-      ]
-    },
-    "I could hear nothing but the roar of the airplane engines.": {
-      "ph": [
-        {"t": "nothing but", "b": "nothing but", "m": "只有，除了……什么也没有"}
-      ]
-    },
-    "Pain is the only feeling to which the nerves in that layer respond.": {
-      "ph": [
-        {"t": "to which", "b": "respond to", "m": "对……做出反应"},
-        {"t": "respond", "b": "respond to", "m": "对……做出反应"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Pain is the only feeling", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "to which the nerves in that layer respond", "r": "定语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "to which… 引导定语从句，先行词是 feeling，which 在从句中是 respond to 的宾语；介词 to 提到 which 前面（介词 + which 结构），还原是 the nerves respond to the feeling。",
-          "书上把从句前置成「这一层神经所能反应的」，修饰「唯一感觉」；respond to 在译文里变成「反应」，介词 to 不再单独出现。"
-        ],
-        "lit": "疼痛是这一层中的神经对其做出反应的唯一感觉。"
-      }
+    {
+     "t": "with",
+     "b": "combine … with",
+     "m": "把……与……结合"
     }
+   ]
+  },
+  "The close link between age and stage may cease to exist in a multi-stage life.": {
+   "ph": [
+    {
+     "t": "cease to",
+     "b": "cease to do",
+     "m": "不再做"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The close link between age and stage",
+      "s": "你多半会翻成「年龄和阶段之间的紧的联系」。念一遍，是不是有点怪？close 修饰 link，说关系时是「密切」。between A and B 是「A 和 B 之间」，link between 整体就是「……之间的联系」。\n→ 年龄和阶段之间的密切联系"
+     },
+     {
+      "t": "may cease to exist",
+      "s": "cease 你可能不认识。看到 cease to，脑子里换成「不再」。exist 是「存在」，cease to exist 就是「不再存在」。may 在这里是「可能」。\n→ 可能不再存在"
+     },
+     {
+      "t": "in a multi-stage life",
+      "s": "你可能想翻成「在一个多阶段的生活里」，意思没错，但放在句末，中文读起来就拖了尾巴。multi-stage 拆开看：multi 是「多」，stage 是「阶段」。这块是条件和范围，中文习惯放最前面。\n→ 在多阶段的生活中"
+     }
+    ],
+    "order": "英文把范围 in a multi-stage life 放在句末，中文习惯先交代「在什么情况下」，所以把它挪到最前面。",
+    "sum": "在多阶段的人生里，年龄和阶段之间原本密切的联系可能不复存在。",
+    "cmp": "意思一样，书上也把「在多阶段生活中」提到了句首。「不复存在」比书上的「不再存在」稍微书面一点，两个都对。"
+   }
+  },
+  "Great innovators are good at connecting concepts from various academic fields.": {
+   "ph": [
+    {
+     "t": "are good at",
+     "b": "be good at",
+     "m": "善于"
+    }
+   ]
+  },
+  "All this is done with the aim of improving workplace efficiency, collaboration and cohesion.": {
+   "ph": [
+    {
+     "t": "with the aim of",
+     "b": "with the aim of",
+     "m": "目的是，为了"
+    }
+   ]
+  },
+  "They work in conjunction with the environment.": {
+   "ph": [
+    {
+     "t": "in conjunction with",
+     "b": "in conjunction with",
+     "m": "与……相结合"
+    }
+   ]
+  },
+  "Training can help to make muscles stronger and keeping joints lubricated.": {
+   "ph": [
+    {
+     "t": "help to",
+     "b": "help to do",
+     "m": "有助于做"
+    }
+   ]
+  },
+  "She tied a knot in a cherry stem.": {
+   "ph": [
+    {
+     "t": "tied a knot",
+     "b": "tie a knot",
+     "m": "打结"
+    }
+   ]
+  },
+  "But not many are able to integrate innovation into their business.": {
+   "ph": [
+    {
+     "t": "are able to",
+     "b": "be able to do",
+     "m": "能够做"
+    },
+    {
+     "t": "integrate",
+     "b": "integrate … into",
+     "m": "将……融入"
+    },
+    {
+     "t": "into",
+     "b": "integrate … into",
+     "m": "将……融入"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "But not many are able to",
+      "s": "你多半会翻成「但是不多的人能够」。念一遍，是不是有点怪？not many 就是「没有多少、不多」，are able to 是「能够」。not many 后面没写名词，只能照字面理解成「能做到的并不多」。\n→ 但能做到的并不多"
+     },
+     {
+      "t": "integrate innovation into their business",
+      "s": "integrate 你可能只想到「整合」，放在这里很别扭。看到 integrate 先别急，眼睛往后找 into：integrate A into B，把 A 融进 B。A 是 innovation，B 是 their business。business 在这里是「业务」，不是「生意」。\n→ 把创新融入自己的业务"
+     }
+    ],
+    "order": "英文是「不多的人能够做到……」，中文说「能……的并不多」更顺：先说做到什么，再说「并不多」放最后。",
+    "sum": "但能把创新融入自己业务的并不多。",
+    "cmp": "书上说「能够将创新融入业务的企业并不多」，加了「企业」二字，我们只看这一句，看不出 not many 指谁，所以我没有加。结构和书上一样，都是把「并不多」放在最后。"
+   }
+  },
+  "When governments lose their control on power, law and order begin to disintegrate.": {
+   "ph": [
+    {
+     "t": "law and order",
+     "b": "law and order",
+     "m": "法律和秩序，治安"
+    }
+   ]
+  },
+  "Craft activities result in tangible and often useful products.": {
+   "ph": [
+    {
+     "t": "result in",
+     "b": "result in",
+     "m": "产生，导致"
+    }
+   ]
+  },
+  "However, merely having contact with children does not guarantee happiness in old age.": {
+   "ph": [
+    {
+     "t": "having contact with",
+     "b": "have contact with",
+     "m": "与……接触"
+    }
+   ]
+  },
+  "It wants to keep its own environment intact.": {
+   "ph": [
+    {
+     "t": "keep",
+     "b": "keep … intact",
+     "m": "保持……完整"
+    },
+    {
+     "t": "intact",
+     "b": "keep … intact",
+     "m": "保持……完整"
+    }
+   ]
+  },
+  "It does not attach enough importance to task-based practice.": {
+   "ph": [
+    {
+     "t": "attach enough importance to",
+     "b": "attach importance to",
+     "m": "重视"
+    }
+   ]
+  },
+  "He had one last hope to cling on to.": {
+   "ph": [
+    {
+     "t": "cling on to",
+     "b": "cling on to",
+     "m": "抱着（希望），紧抓不放"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He had one last hope",
+      "s": "这块照字面翻就行：last 在 one last hope 里是「最后的」，不是「上一个」。\n→ 他有最后一线希望"
+     },
+     {
+      "t": "to cling on to",
+      "s": "你多半会翻成「去紧抓到」，念着不像话。看到最后孤零零一个 to，别以为漏了东西：cling on to 是「紧抓不放」，to 后面的宾语被提到前面去了。放回去试试：cling on to the hope，紧抓着这点希望不放。所以 to cling on to 是在说前面的 hope，意思是「可以抓住的」。\n→ 可以紧紧抓住"
+     }
+    ],
+    "order": "英文是 hope 在前，to cling on to 在后面补充说明它；中文把它放到 hope 前面，说成「抓着的最后一线希望」，或者合成一句「抱着最后一线希望」。",
+    "sum": "他还有最后一线希望可以紧紧抓住。",
+    "cmp": "书上译成「他还抱着最后的一线希望」，把 to cling on to 并进了动词「抱着」，更口语也更省，意思没差。"
+   }
+  },
+  "We love to establish a routine and stick with it.": {
+   "ph": [
+    {
+     "t": "stick with",
+     "b": "stick with",
+     "m": "坚持"
+    }
+   ]
+  },
+  "I used to play drums in a band.": {
+   "ph": [
+    {
+     "t": "used to",
+     "b": "used to do",
+     "m": "以前常常做"
+    }
+   ]
+  },
+  "Taijiquan, stemming from ancient China, is an important branch of Chinese martial arts.": {
+   "ph": [
+    {
+     "t": "stemming from",
+     "b": "stem from",
+     "m": "源于"
+    }
+   ]
+  },
+  "They would run around looking for clues and at the end unmask the bad guy.": {
+   "ph": [
+    {
+     "t": "run around",
+     "b": "run around",
+     "m": "到处跑"
+    },
+    {
+     "t": "looking for",
+     "b": "look for",
+     "m": "寻找"
+    },
+    {
+     "t": "at the end",
+     "b": "at the end",
+     "m": "最后，结尾时"
+    }
+   ]
+  },
+  "Of the nearly 100 Americans recommended to be studied, 77% were white.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Of the nearly 100 Americans",
+      "s": "句子一上来就是 Of，你多半会翻成「关于近 100 个美国人」。往后看，逗号后面还有主句，Of 在这里是「在……当中」，从一个范围里挑出比例来说。nearly 是「将近」。\n→ 在将近 100 名美国人中"
+     },
+     {
+      "t": "recommended to be studied",
+      "s": "recommended 看着像谓语，但前面已经有 Americans，后面又没有主句动词，所以它是过去分词，在修饰 Americans，意思是「被推荐的」。to be studied 是被动，「被研究」。你可能翻成「被推荐被研究」，读起来重复，合并成「被推荐去研究的」就顺了。\n→ 被推荐来研究的"
+     },
+     {
+      "t": "77% were white",
+      "s": "这块照字面翻就行：white 在这里是「白人」。\n→ 77% 是白人"
+     }
+    ],
+    "sum": "在被推荐作为研究对象的近 100 名美国人中，77% 是白人。",
+    "cmp": "书上是「在被推荐研究的近100名美国人中」，把修饰语 recommended to be studied 提到名词前面，和我这里一致，只是「被推荐研究」更省一点。"
+   }
+  },
+  "This suggests their higher IQs result from the time they spend teaching their siblings.": {
+   "ph": [
+    {
+     "t": "result from",
+     "b": "result from",
+     "m": "由……引起，起因于"
+    }
+   ]
+  },
+  "Pain is the only feeling to which the nerves in that layer respond.": {
+   "ph": [
+    {
+     "t": "to which",
+     "b": "respond to",
+     "m": "对……做出反应"
+    },
+    {
+     "t": "respond",
+     "b": "respond to",
+     "m": "对……做出反应"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Pain is the only feeling",
+      "s": "这块照字面翻就行：the only 是「唯一的」。\n→ 疼痛是唯一的感觉"
+     },
+     {
+      "t": "to which the nerves in that layer respond",
+      "s": "to which 开头，你多半会翻成「对此，那层的神经反应」，读不通。看到 to which，把 to 搬回动词那里：the nerves in that layer respond to which。respond to 是「对……做出反应」，to 本来就跟着 respond。which 放回去试试：候选是 Pain 和 feeling，这里 which 紧跟在 feeling 后面，指 feeling（疼痛就是这种感觉，两者说的是同一件事）。nerves 前面的 in that layer 是「那一层里的」神经。\n→ 那一层里的神经会对它做出反应"
+     }
+    ],
+    "order": "英文把 to which 提到从句最前面，中文要把「对……」放回动词前：神经对这种感觉有反应，再用「唯一」把范围收住。",
+    "sum": "疼痛是那一层神经唯一会做出反应的感觉。",
+    "cmp": "书上译成「疼痛是这一层神经所能反应的唯一感觉」，也是把从句翻到「感觉」前面当定语，只是用了「所能」，书面一些，意思一样。"
+   }
+  },
+  "It is mainly based on a society's religion.": {
+   "ph": [
+    {
+     "t": "based on",
+     "b": "be based on",
+     "m": "基于，以……为基础"
+    }
+   ]
+  },
+  "She mainly drew on stories of ancient saints.": {
+   "ph": [
+    {
+     "t": "drew on",
+     "b": "draw on",
+     "m": "借鉴，利用"
+    }
+   ]
+  },
+  "The tradition, dating back to 300 B.C., was later incorporated into the Christian church.": {
+   "ph": [
+    {
+     "t": "dating back to",
+     "b": "date back to",
+     "m": "追溯到"
+    },
+    {
+     "t": "incorporated into",
+     "b": "be incorporated into",
+     "m": "被纳入"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The tradition",
+      "s": "这块是主语，照字面翻就行：「这一传统」。后面先别急着找谓语，中间被插了一段话。\n→ 这一传统"
+     },
+     {
+      "t": "dating back to 300 B.C.",
+      "s": "夹在两个逗号中间的这一段是插入语，先单独翻。dating 不是谓语，是 -ing 形式，说明 tradition 的来历。你多半会翻成「约会回到」，date back to 是固定搭配，「追溯到」。B.C. 是「公元前」。\n→ 可以追溯到公元前 300 年"
+     },
+     {
+      "t": "was later incorporated into the Christian church",
+      "s": "这才是真正的谓语：was incorporated 是被动，「被纳入」。你可能翻成「被合并到基督教会里」，没错，但 incorporate into 更常说「纳入」。later 是「后来」。\n→ 后来被纳入基督教会"
+     }
+    ],
+    "sum": "这一传统可以追溯到公元前 300 年，后来被纳入基督教会。",
+    "cmp": "和书上基本一样，书上也把插入语拆成了「可以追溯到……」，再接「后来被纳入」。"
+   }
+  },
+  "Most of us in the entrepreneurial community are blessed—or cursed—with higher-than-average ambition.": {
+   "ph": [
+    {
+     "t": "blessed",
+     "b": "be blessed with",
+     "m": "有幸拥有，被赋予"
+    },
+    {
+     "t": "with",
+     "b": "be blessed with",
+     "m": "有幸拥有，被赋予"
+    }
+   ]
+  },
+  "So it's no surprise that cultures around the world celebrate spring by honouring the egg.": {
+   "ph": [
+    {
+     "t": "no surprise",
+     "b": "no surprise",
+     "m": "不足为奇"
+    },
+    {
+     "t": "around the world",
+     "b": "around the world",
+     "m": "世界各地"
+    }
+   ]
+  },
+  "A state banquet was held in honour of the visiting president.": {
+   "ph": [
+    {
+     "t": "was held",
+     "b": "be held",
+     "m": "举行"
+    },
+    {
+     "t": "in honour of",
+     "b": "in honour of",
+     "m": "为向……表示敬意"
+    }
+   ]
+  },
+  "It does produce much less pollution than that caused by energy production through fossil fuels.": {
+   "ph": [
+    {
+     "t": "caused by",
+     "b": "be caused by",
+     "m": "由……引起，产生"
+    },
+    {
+     "t": "fossil fuels",
+     "b": "fossil fuel",
+     "m": "化石燃料"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It does produce much less pollution",
+      "s": "你多半会翻成「它确实做产生很少的污染」，别扭在 does。does 放在 produce 前面是加重语气，「确实、的确」，不是「做」。much less 是「少得多」。\n→ 它的确产生了少得多的污染"
+     },
+     {
+      "t": "than that caused by energy production through fossil fuels",
+      "s": "that 是谁？候选有 pollution 和 energy production。放回去试：比污染更少，比能源生产更少？前面比的是污染的量，所以 that 是 pollution，避免重复。caused by 是「由……造成的」。energy production 是「能源生产」，through fossil fuels 是方式，「靠化石燃料」。三个名词连着翻会很长，先看 through：靠化石燃料来生产能源。\n→ 比靠化石燃料生产能源所造成的污染"
+     }
+    ],
+    "order": "than 后面的 that caused by……是修饰 pollution 的一长串，中文把它放在「污染」前面当定语。",
+    "sum": "它的确比靠化石燃料生产能源所造成的污染少得多。",
+    "cmp": "书上是「它产生的污染的确比化石燃料能源生产产生的污染要少得多」，意思一样，但「产生」重复了两次，把 that 直接翻成「污染」也没问题，只是我这里换成了更短的说法。"
+   }
+  },
+  "The road was covered with spilled gas.": {
+   "ph": [
+    {
+     "t": "covered with",
+     "b": "be covered with",
+     "m": "被……覆盖"
+    }
+   ]
+  },
+  "Scotland will reach the national target in carbon emissions reduction ahead of schedule.": {
+   "ph": [
+    {
+     "t": "ahead of schedule",
+     "b": "ahead of schedule",
+     "m": "提前"
+    }
+   ]
+  },
+  "They argued in favour of keeping a nuclear deterrent.": {
+   "ph": [
+    {
+     "t": "in favour of",
+     "b": "in favour of",
+     "m": "赞成，主张"
+    }
+   ]
+  },
+  "Two atoms of hydrogen combine with one atom of oxygen to form a molecule of water.": {
+   "ph": [
+    {
+     "t": "combine",
+     "b": "combine … with",
+     "m": "与……结合"
+    },
+    {
+     "t": "with",
+     "b": "combine … with",
+     "m": "与……结合"
+    }
+   ]
+  },
+  "The former have atoms that contain more free electrons than the latter.": {
+   "ph": [
+    {
+     "t": "The former",
+     "b": "the former … the latter",
+     "m": "前者……后者"
+    },
+    {
+     "t": "the latter",
+     "b": "the former … the latter",
+     "m": "前者……后者"
+    }
+   ]
+  },
+  "Try to imagine what it is like to live without electricity.": {
+   "ph": [
+    {
+     "t": "Try to",
+     "b": "try to do",
+     "m": "试着做"
+    }
+   ]
+  },
+  "We gave out a cheer when the red roof of the cottage came into view.": {
+   "ph": [
+    {
+     "t": "gave out",
+     "b": "give out",
+     "m": "发出"
+    },
+    {
+     "t": "came into view",
+     "b": "come into view",
+     "m": "映入眼帘，出现"
+    }
+   ]
+  },
+  "She always derives great pleasure from designing something new.": {
+   "ph": [
+    {
+     "t": "derives",
+     "b": "derive … from",
+     "m": "从……中获得"
+    },
+    {
+     "t": "from",
+     "b": "derive … from",
+     "m": "从……中获得"
+    }
+   ]
+  },
+  "We do work that gives us bursts of joy each new day.": {
+   "ph": [
+    {
+     "t": "bursts of",
+     "b": "a burst of",
+     "m": "一阵阵"
+    }
+   ]
+  },
+  "Medical Association offers a picture of how risky it is to get a lift from a teenage driver.": {
+   "ph": [
+    {
+     "t": "get a lift",
+     "b": "get a lift",
+     "m": "搭便车"
+    }
+   ]
+  },
+  "Leslie worries that the rise of the Internet has reduced our appetite for aimless adventures.": {
+   "ph": [
+    {
+     "t": "appetite for",
+     "b": "appetite for",
+     "m": "对……的欲望（兴趣）"
+    }
+   ]
+  },
+  "What problem may arise if classes go online?": {
+   "ph": [
+    {
+     "t": "go online",
+     "b": "go online",
+     "m": "转到线上，上网"
+    }
+   ]
+  },
+  "Most stores open with flowers, fruit and vegetables at the front as a breath of freshness to arouse our appetite.": {
+   "ph": [
+    {
+     "t": "a breath of",
+     "b": "a breath of",
+     "m": "一股，一丝"
+    }
+   ]
+  },
+  "The telephone roused me from my sleep at 6 a.m.": {
+   "ph": [
+    {
+     "t": "roused",
+     "b": "rouse sb. from",
+     "m": "把某人从……中唤醒"
+    },
+    {
+     "t": "from",
+     "b": "rouse sb. from",
+     "m": "把某人从……中唤醒"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The telephone roused me",
+      "s": "你多半会翻成「电话唤醒了我」。念一遍，意思能懂，但电话是东西，中文更习惯说「电话响了，把我……」。rouse 是「唤醒、吵醒」，主语是东西，所以中文把电话说成是在「响」。\n→ 电话把我吵醒了"
+     },
+     {
+      "t": "from my sleep at 6 a.m.",
+      "s": "看到 rouse A from B，眼睛往 from 后面找：rouse me from my sleep，把我从睡梦中叫醒。你可能想翻成「从我的睡眠」，太硬，说成「睡梦中」。at 6 a.m. 是时间，中文放在句首更顺。\n→ 早晨 6 点，从睡梦中"
+     }
+    ],
+    "order": "英文把时间 at 6 a.m. 放在句末，中文习惯先说时间，所以放最前面。",
+    "sum": "早晨 6 点，电话铃声把我从睡梦中吵醒了。",
+    "cmp": "和书上基本一样，书上也把时间提到句首，并用了「电话铃声」，更自然。"
+   }
+  },
+  "This has already raised privacy concerns.": {
+   "ph": [
+    {
+     "t": "raised privacy concerns",
+     "b": "raise concerns",
+     "m": "引起担忧"
+    }
+   ]
+  },
+  "I was barely able to stay awake.": {
+   "ph": [
+    {
+     "t": "stay awake",
+     "b": "stay awake",
+     "m": "保持清醒"
+    }
+   ]
+  },
+  "I could hear nothing but the roar of the airplane engines.": {
+   "ph": [
+    {
+     "t": "nothing but",
+     "b": "nothing but",
+     "m": "只有，除了……什么也没有"
+    }
+   ]
   }
+ }
 }

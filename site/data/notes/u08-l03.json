@@ -1,357 +1,512 @@
 {
-  "_note": "例句词组与语法解析（书外补充，AI 生成）",
-  "sents": {
-    "I learned a little bit of Spanish.": {
-      "ph": [{"t": "a little bit of", "b": "a little bit of", "m": "一点"}]
-    },
-    "Fame brought her nothing but misery.": {
-      "ph": [{"t": "nothing but", "b": "nothing but", "m": "只有，仅仅"}]
-    },
-    "Most people will experience some form of financial hardship at some point in their lives.": {
-      "ph": [
-        {"t": "some form of", "b": "some form of", "m": "某种形式的"},
-        {"t": "at some point", "b": "at some point", "m": "在某个时候"}
-      ]
-    },
-    "The baby was clearly in distress.": {
-      "ph": [{"t": "in distress", "b": "in distress", "m": "处于痛苦中"}]
-    },
-    "It is impossible for Americans to lift themselves out of poverty entirely on their own.": {
-      "ph": [
-        {"t": "lift", "b": "lift … out of", "m": "使……摆脱"},
-        {"t": "out of", "b": "lift … out of", "m": "使……摆脱"},
-        {"t": "on their own", "b": "on one's own", "m": "靠自己，独立地"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "It is impossible ", "r": "主干"},
-          {"t": "for Americans to lift themselves out of poverty entirely on their own", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "It 是形式主语，真正的主语是后面的不定式 to lift…；for Americans 是不定式的逻辑主语，意思是「美国人去摆脱……」。",
-          "书上把 It is impossible for… 转成以人作主语的「美国人不可能……」，形式主语不再单独译出。",
-          "lift themselves out of poverty 中 themselves 是反身代词作宾语，指 Americans 自己；on their own 是「靠自己」，所以书上译成「完全靠自己摆脱贫困」。"
-        ],
-        "lit": "对美国人来说，完全靠他们自己把自己从贫困中拉出来是不可能的。"
-      }
-    },
-    "It's a good problem to have, but it can be a tough skill to master.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "It's a good problem to have", "r": "主干"},
-          {"t": ", but ", "r": ""},
-          {"t": "it can be a tough skill to master", "r": "并列分句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "to have 是不定式作后置定语，修饰 problem，problem 是 have 的宾语（have the problem），所以书上直译成「一个很好的问题」，字面和英文一一对应。",
-          "to master 同样是不定式作后置定语，skill 是 master 的宾语（master the skill）；书上把它前置成「一个很难掌握的技能」，这是中文定语必须放在名词前的缘故。",
-          "but 连接两个并列分句，前半句说好处，后半句转折，书上保留「但」。"
-        ],
-        "lit": "这是一个好的有的问题，但它可以是一个困难的要掌握的技能。"
-      }
-    },
-    "We had to face up to the harsh realities of life sooner or later.": {
-      "ph": [
-        {"t": "face up to", "b": "face up to", "m": "正视，面对"},
-        {"t": "sooner or later", "b": "sooner or later", "m": "迟早"}
-      ]
-    },
-    "Hunting foxes with dogs is considered cruel and violent.": {
-      "ph": [{"t": "is considered", "b": "be considered", "m": "被认为是"}]
-    },
-    "The number of people opposed to fox hunting, because they think it is brutal, has risen sharply.": {
-      "ph": [
-        {"t": "The number of", "b": "the number of", "m": "……的数目"},
-        {"t": "opposed to", "b": "be opposed to", "m": "反对"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "The number of people opposed to fox hunting", "r": "主干"},
-          {"t": ", ", "r": ""},
-          {"t": "because they think it is brutal", "r": "原因状语"},
-          {"t": ", ", "r": ""},
-          {"t": "has risen sharply", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "主语是 The number of people…，谓语 has risen 用单数，说明主语中心词是 number（数量），不是 people。",
-          "opposed to fox hunting 是过去分词短语作后置定语，修饰 people，书上前置成「反对猎狐的人数」。",
-          "because 引导的原因状语从句被逗号夹在主语和谓语之间，从句里 think 后省略了 that，it 指 fox hunting；书上把这个从句挪到句末，译成「因为他们认为这是残忍的」。"
-        ],
-        "lit": "反对猎狐的人的数量，因为他们认为它是残忍的，急剧地上升了。"
-      }
-    },
-    "She took her clumsy shoe off her left foot, and put on the golden slipper.": {
-      "ph": [
-        {"t": "took", "b": "take … off", "m": "脱下"},
-        {"t": "off", "b": "take … off", "m": "脱下"},
-        {"t": "put on", "b": "put on", "m": "穿上"}
-      ]
-    },
-    "This might mean thinking of non-financial ways to reward employees, like unpaid time off or flexible work schedules.": {
-      "ph": [
-        {"t": "thinking of", "b": "think of", "m": "考虑，想到"},
-        {"t": "time off", "b": "time off", "m": "休假"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "This might mean thinking of non-financial ways to reward employees", "r": "主干"},
-          {"t": ", ", "r": ""},
-          {"t": "like unpaid time off or flexible work schedules", "r": ""},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "mean 表示「意味着」时后面接动名词（mean doing），所以 thinking of… 是 mean 的宾语，书上译成「意味着考虑……」。",
-          "to reward employees 是不定式作后置定语，修饰 ways，书上前置成「奖励员工的非经济方式」。",
-          "like 在这里是「比如」，引出对 non-financial ways 的举例，不是动词「喜欢」；might 是表推测的情态动词（可能），不是虚拟语气，所以书上译「这可能意味着」。"
-        ],
-        "lit": "这可能意味着考虑奖励员工的非金钱的方式，像无薪的休假或灵活的工作时间表。"
-      }
-    },
-    "They can become increasingly vulnerable to serious illnesses.": {
-      "ph": [{"t": "vulnerable to", "b": "be vulnerable to", "m": "易受……的影响"}]
-    },
-    "My legs were trembling with fear.": {
-      "ph": [{"t": "trembling with", "b": "tremble with", "m": "因……而发抖"}]
-    },
-    "He felt a cold shiver of fear run through him.": {
-      "ph": [{"t": "run through", "b": "run through", "m": "掠过，贯穿"}]
-    },
-    "Consumers say they're not in despair.": {
-      "ph": [{"t": "in despair", "b": "in despair", "m": "绝望"}]
-    },
-    "Let's compare a theoretical financial education subject to the standard compulsory English class.": {
-      "ph": [
-        {"t": "compare", "b": "compare … to", "m": "把……与……比较"},
-        {"t": "to", "b": "compare … to", "m": "把……与……比较"}
-      ]
-    },
-    "He has made a mess of his midterm exam.": {
-      "ph": [{"t": "made a mess of", "b": "make a mess of", "m": "把……搞得一团糟"}]
-    },
-    "He loves them but does not want to make a fuss.": {
-      "ph": [{"t": "make a fuss", "b": "make a fuss", "m": "大惊小怪"}]
-    },
-    "The solution to this dilemma is using data and instincts in conjunction.": {
-      "ph": [
-        {"t": "solution to", "b": "solution to", "m": "……的解决办法"},
-        {"t": "in conjunction", "b": "in conjunction with", "m": "结合，协同"}
-      ]
-    },
-    "It has mild weather both in summer and in winter.": {
-      "ph": [
-        {"t": "both", "b": "both … and", "m": "……和……都"},
-        {"t": "and", "b": "both … and", "m": "……和……都"}
-      ]
-    },
-    "The car decelerated because of the sudden change in the weather.": {
-      "ph": [
-        {"t": "because of", "b": "because of", "m": "由于"},
-        {"t": "change in", "b": "change in", "m": "……的变化"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "The car decelerated", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "because of the sudden change in the weather", "r": "原因状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "because of 后面接名词短语，because 后面才接句子；这里 because of 引出的是介词短语作原因状语。",
-          "the sudden change in the weather 是名词化结构，书上把它展开成主谓式的「天气突然变化」，再放到句首译成「由于……」。"
-        ],
-        "lit": "汽车减速了，因为天气中的突然变化。"
-      }
-    },
-    "Stress will weaken the body's defense against germs.": {
-      "ph": [{"t": "defense against", "b": "defense against", "m": "对……的防御"}]
-    },
-    "Humility leads to an honest view of one's own advantages and shortcomings.": {
-      "ph": [{"t": "leads to", "b": "lead to", "m": "导致，使得"}]
-    },
-    "There is a growing shortage of medical personnel.": {
-      "ph": [{"t": "shortage of", "b": "a shortage of", "m": "……的短缺"}]
-    },
-    "She had the advantage of a good education.": {
-      "ph": [{"t": "the advantage of", "b": "have the advantage of", "m": "具有……的优势"}]
-    },
-    "It is not an individual's fault if they develop obesity.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "It is not an individual's fault", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "if they develop obesity", "r": "条件状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "if 引导条件状语从句放在句末，书上把它提到前面，译成「如果他们患上肥胖症，这不是个人的错」，符合中文「条件在前、结论在后」的顺序。",
-          "它在主句中指整件事，不指某个具体名词，书上译成「这」；从句里的 they 回指前面单数的 an individual（泛指的单数 they），所以译作「他们」。",
-          "develop 后面接疾病名，意思是「患上（病）」，不是「发展」。"
-        ],
-        "lit": "这不是个人的错，如果他们患上肥胖症。"
-      }
-    },
-    "But curiosity can also be dangerous, leading to setbacks or even downfalls.": {
-      "ph": [{"t": "leading to", "b": "lead to", "m": "导致"}]
-    },
-    "Though there are plans to add translations, language barriers can be a big obstacle.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "Though there are plans to add translations", "r": "让步状语"},
-          {"t": ", ", "r": ""},
-          {"t": "language barriers can be a big obstacle", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "Though 引导让步状语从句，英文里 though 和 but 不能同时用；书上译成「虽然……但……」，中文要补出「但」。",
-          "there are plans 是 there be 句型，书上译成「有……的计划」；to add translations 是不定式作后置定语，修饰 plans，说明计划的内容，所以译成「增加翻译的计划」。",
-          "主干 language barriers can be a big obstacle 里 can 表可能性，不是「能够」，书上译「可能是一个很大的阻碍」。"
-        ],
-        "lit": "虽然有要增加翻译的计划，语言障碍可以是一个大的阻碍。"
-      }
-    },
-    "Do not try to restrain me from beating him.": {
-      "ph": [
-        {"t": "restrain", "b": "restrain sb. from doing", "m": "阻止某人做某事"},
-        {"t": "from", "b": "restrain sb. from doing", "m": "阻止某人做某事"}
-      ]
-    },
-    "Laws can restrict or ban voting, access to public housing, and professional and business licensing.": {
-      "ph": [{"t": "access to", "b": "access to", "m": "获取……的权利"}],
-      "an": {
-        "parts": [
-          {"t": "Laws can restrict or ban voting, access to public housing, and professional and business licensing", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "谓语 restrict or ban 是两个并列动词，共用后面三个并列宾语：voting、access to public housing、professional and business licensing。",
-          "宾语是动名词或名词化结构（voting、licensing），书上把它们译成名词「选举权」「许可权」，并把动词转成名词「限制或禁令」，整句变成「对……实施限制或禁令」。",
-          "professional and business 两个形容词共同修饰 licensing，所以译成「职业及商业许可权」。"
-        ],
-        "lit": "法律可以限制或禁止投票、对公共住房的获取，以及职业和商业许可。"
-      }
-    },
-    "The letter had clearly been written in haste.": {
-      "ph": [{"t": "in haste", "b": "in haste", "m": "匆忙地"}]
-    },
-    "I hate it because it's an obligation disguised as an option.": {
-      "ph": [{"t": "disguised as", "b": "be disguised as", "m": "伪装成"}],
-      "an": {
-        "parts": [
-          {"t": "I hate it", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "because it's an obligation disguised as an option", "r": "原因状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "because 引导原因状语从句，放在句末，书上顺序不变，译成「我讨厌它，因为……」。",
-          "disguised as an option 是过去分词短语作后置定语，修饰 obligation，表被动（被伪装成）；书上前置成「伪装成自由选择的义务」。"
-        ],
-        "lit": "我讨厌它，因为它是一个被伪装成一个选项的义务。"
-      }
-    },
-    "They are built in harmony with the environment.": {
-      "ph": [{"t": "in harmony with", "b": "in harmony with", "m": "与……协调"}]
-    },
-    "They will coordinate with the Social Security Administration.": {
-      "ph": [{"t": "coordinate with", "b": "coordinate with", "m": "与……协调"}]
-    },
-    "In the classic marriage vow, couples promise to stay together in sickness and in health.": {
-      "ph": [
-        {"t": "promise to", "b": "promise to do", "m": "承诺做某事"},
-        {"t": "in sickness and in health", "b": "in sickness and in health", "m": "无论疾病还是健康"}
-      ]
-    },
-    "There is not enough evidence to classify it as a disease.": {
-      "ph": [
-        {"t": "classify", "b": "classify … as", "m": "把……归类为"},
-        {"t": "as", "b": "classify … as", "m": "把……归类为"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "There is not enough evidence", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "to classify it as a disease", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "There is… 是 there be 存在句型，书上译成「目前还没有足够的证据」，不把 There 译出。",
-          "to classify it as a disease 是不定式作后置定语，修饰 evidence，说明证据用来做什么；书上顺着英文语序译成「足够的证据将它归类为一种疾病」。"
-        ],
-        "lit": "没有足够的证据来把它归类为一种疾病。"
-      }
-    },
-    "The earth is composed of several layers.": {
-      "ph": [{"t": "is composed of", "b": "be composed of", "m": "由……组成"}]
-    },
-    "Fast technological change makes it necessary for one to constantly upgrade their skills.": {
-      "ph": [{"t": "makes it necessary", "b": "make it necessary", "m": "使……有必要"}],
-      "an": {
-        "parts": [
-          {"t": "Fast technological change makes it necessary ", "r": "主干"},
-          {"t": "for one to constantly upgrade their skills", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "主语 Fast technological change 是无生命的抽象名词，直译「快速的技术变化使……」可以，但书上把它译成「快速的技术变革使人们有必要……」，补出「人们」。",
-          "it 是形式宾语，necessary 是宾语补足语，真正的宾语是后面的 for one to… 不定式短语；for one 是不定式的逻辑主语。",
-          "their 回指泛指的 one（单数 they 的用法），书上译成「自己的技能」。"
-        ],
-        "lit": "快速的技术变化使得对一个人来说不断提升他们的技能是必要的。"
-      }
-    },
-    "Promotion will mean that I'm immediately above him in rank.": {
-      "ph": [{"t": "in rank", "b": "in rank", "m": "在级别上"}],
-      "an": {
-        "parts": [
-          {"t": "Promotion will mean ", "r": "主干"},
-          {"t": "that I'm immediately above him in rank", "r": "宾语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "主语 Promotion 是名词化的抽象名词，主句 will mean 引出结果；书上把它展开成状语「升职后」，把主句主语转成时间条件，再接后面的结论。",
-          "that 引导 mean 的宾语从句，从句里 above him in rank 是「在级别上高于他」，书上译成「比他高一级」。"
-        ],
-        "lit": "晋升将意味着我在级别上立刻在他之上。"
-      }
-    },
-    "Today foreign students earn 30 percent of the doctoral degrees awarded in the United States.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "Today foreign students earn 30 percent of the doctoral degrees", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "awarded in the United States", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "awarded in the United States 是过去分词短语作后置定语，修饰 degrees，表被动（被授予的），书上前置成「在美国获得博士学位的学生中」。",
-          "earn 30 percent of… 直译是「赢得 30%」，书上把整句重组成「外国学生占30%」，earn 转成「占」。"
-        ],
-        "lit": "如今外国学生获得在美国授予的博士学位的30%。"
-      }
-    },
-    "On a global scale, 77 percent of energy is created from fossil fuels.": {
-      "ph": [{"t": "On a global scale", "b": "on a … scale", "m": "在……范围上"}],
-      "an": {
-        "parts": [
-          {"t": "On a global scale", "r": "状语"},
-          {"t": ", ", "r": ""},
-          {"t": "77 percent of energy is created from fossil fuels", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "On a global scale 是介词短语作状语，表范围，书上译成「在全球范围内」。",
-          "is created from 是被动，字面是「被创造自」，书上改成主动的「来自」，更符合中文习惯。",
-          "77 percent of energy 里 energy 是不可数名词，所以谓语用单数 is。"
-        ],
-        "lit": "在全球的规模上，77%的能源是从化石燃料中被创造出来的。"
-      }
+ "_note": "例句词组与语法解析（书外补充，AI 生成）",
+ "sents": {
+  "I learned a little bit of Spanish.": {
+   "ph": [
+    {
+     "t": "a little bit of",
+     "b": "a little bit of",
+     "m": "一点"
     }
+   ]
+  },
+  "Fame brought her nothing but misery.": {
+   "ph": [
+    {
+     "t": "nothing but",
+     "b": "nothing but",
+     "m": "只有，仅仅"
+    }
+   ]
+  },
+  "Most people will experience some form of financial hardship at some point in their lives.": {
+   "ph": [
+    {
+     "t": "some form of",
+     "b": "some form of",
+     "m": "某种形式的"
+    },
+    {
+     "t": "at some point",
+     "b": "at some point",
+     "m": "在某个时候"
+    }
+   ]
+  },
+  "The baby was clearly in distress.": {
+   "ph": [
+    {
+     "t": "in distress",
+     "b": "in distress",
+     "m": "处于痛苦中"
+    }
+   ]
+  },
+  "It is impossible for Americans to lift themselves out of poverty entirely on their own.": {
+   "ph": [
+    {
+     "t": "lift",
+     "b": "lift … out of",
+     "m": "使……摆脱"
+    },
+    {
+     "t": "out of",
+     "b": "lift … out of",
+     "m": "使……摆脱"
+    },
+    {
+     "t": "on their own",
+     "b": "on one's own",
+     "m": "靠自己，独立地"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It is impossible for Americans to",
+      "s": "你多半会翻成「它对美国人来说是不可能的」。念一遍，「它」没着落。这里 It 只是占位，真正的内容在后面的 to 动词里。看到 It is impossible for sb. to do，就读成「某人不可能做某事」。\n→ 美国人不可能"
+     },
+     {
+      "t": "lift themselves out of poverty",
+      "s": "你可能想翻成「把他们自己抬出贫困」。lift 是「抬起」，out of 是「出来」，合起来 lift sb. out of poverty 就是「使某人摆脱贫困」。themselves 是自己拉自己，所以说「自己摆脱贫困」。\n→ 摆脱贫困"
+     },
+     {
+      "t": "entirely on their own",
+      "s": "on their own 你可能翻成「在他们自己上面」，不通。它是固定搭配，「靠自己、独立地」。entirely 是「完全」，修饰这个短语。\n→ 完全靠自己"
+     }
+    ],
+    "order": "英文把「完全靠自己」放在最后，中文习惯把方式放在动作前面，所以先说「完全靠自己」，再说「摆脱贫困」。",
+    "sum": "美国人不可能完全靠自己摆脱贫困。",
+    "cmp": "和书上基本一样，书上也把「靠自己」提到了「摆脱贫困」前面。"
+   }
+  },
+  "We had to face up to the harsh realities of life sooner or later.": {
+   "ph": [
+    {
+     "t": "face up to",
+     "b": "face up to",
+     "m": "正视，面对"
+    },
+    {
+     "t": "sooner or later",
+     "b": "sooner or later",
+     "m": "迟早"
+    }
+   ]
+  },
+  "Hunting foxes with dogs is considered cruel and violent.": {
+   "ph": [
+    {
+     "t": "is considered",
+     "b": "be considered",
+     "m": "被认为是"
+    }
+   ]
+  },
+  "The number of people opposed to fox hunting, because they think it is brutal, has risen sharply.": {
+   "ph": [
+    {
+     "t": "The number of",
+     "b": "the number of",
+     "m": "……的数目"
+    },
+    {
+     "t": "opposed to",
+     "b": "be opposed to",
+     "m": "反对"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The number of people opposed to fox hunting",
+      "s": "你多半会翻成「反对猎狐的人的数量」，勉强能懂，但抓不住重点。the number of 是「……的数目」，主语是 number，不是 people（所以后面动词是 has，不是 have）。opposed to fox hunting 在 people 后面，是「反对猎狐的」，放到「人」前面修饰。\n→ 反对猎狐的人数"
+     },
+     {
+      "t": "because they think it is brutal",
+      "s": "这句夹在两个逗号中间，像插了一句嘴，先单独翻。they 指 people，it 指谁？放回去试：猎狐是残忍的，通；人数是残忍的，不通。所以 it 是猎狐。\n→ 因为他们认为猎狐是残忍的"
+     },
+     {
+      "t": "has risen sharply",
+      "s": "这块照字面翻就行：sharply 修饰 risen，「急剧地上升」。\n→ 急剧上升"
+     }
+    ],
+    "order": "中间那句原因插在主语和谓语之间，翻成中文时可以先说「因为……」，再说「人数急剧上升」，或者放在最后补充，都比夹在中间顺。",
+    "sum": "反对猎狐的人数急剧上升，因为他们认为猎狐是残忍的。",
+    "cmp": "和书上基本一致，书上把「因为……」放在后面，我这里把 it 明确说成「猎狐」，书上说「这」。"
+   }
+  },
+  "She took her clumsy shoe off her left foot, and put on the golden slipper.": {
+   "ph": [
+    {
+     "t": "took",
+     "b": "take … off",
+     "m": "脱下"
+    },
+    {
+     "t": "off",
+     "b": "take … off",
+     "m": "脱下"
+    },
+    {
+     "t": "put on",
+     "b": "put on",
+     "m": "穿上"
+    }
+   ]
+  },
+  "This might mean thinking of non-financial ways to reward employees, like unpaid time off or flexible work schedules.": {
+   "ph": [
+    {
+     "t": "thinking of",
+     "b": "think of",
+     "m": "考虑，想到"
+    },
+    {
+     "t": "time off",
+     "b": "time off",
+     "m": "休假"
+    }
+   ]
+  },
+  "They can become increasingly vulnerable to serious illnesses.": {
+   "ph": [
+    {
+     "t": "vulnerable to",
+     "b": "be vulnerable to",
+     "m": "易受……的影响"
+    }
+   ]
+  },
+  "It has mild weather both in summer and in winter.": {
+   "ph": [
+    {
+     "t": "both",
+     "b": "both … and",
+     "m": "……和……都"
+    },
+    {
+     "t": "and",
+     "b": "both … and",
+     "m": "……和……都"
+    }
+   ]
+  },
+  "My legs were trembling with fear.": {
+   "ph": [
+    {
+     "t": "trembling with",
+     "b": "tremble with",
+     "m": "因……而发抖"
+    }
+   ]
+  },
+  "He felt a cold shiver of fear run through him.": {
+   "ph": [
+    {
+     "t": "run through",
+     "b": "run through",
+     "m": "掠过，贯穿"
+    }
+   ]
+  },
+  "Consumers say they're not in despair.": {
+   "ph": [
+    {
+     "t": "in despair",
+     "b": "in despair",
+     "m": "绝望"
+    }
+   ]
+  },
+  "Let's compare a theoretical financial education subject to the standard compulsory English class.": {
+   "ph": [
+    {
+     "t": "compare",
+     "b": "compare … to",
+     "m": "把……与……比较"
+    },
+    {
+     "t": "to",
+     "b": "compare … to",
+     "m": "把……与……比较"
+    }
+   ]
+  },
+  "He has made a mess of his midterm exam.": {
+   "ph": [
+    {
+     "t": "made a mess of",
+     "b": "make a mess of",
+     "m": "把……搞得一团糟"
+    }
+   ]
+  },
+  "He loves them but does not want to make a fuss.": {
+   "ph": [
+    {
+     "t": "make a fuss",
+     "b": "make a fuss",
+     "m": "大惊小怪"
+    }
+   ]
+  },
+  "The solution to this dilemma is using data and instincts in conjunction.": {
+   "ph": [
+    {
+     "t": "solution to",
+     "b": "solution to",
+     "m": "……的解决办法"
+    },
+    {
+     "t": "in conjunction",
+     "b": "in conjunction with",
+     "m": "结合，协同"
+    }
+   ]
+  },
+  "The car decelerated because of the sudden change in the weather.": {
+   "ph": [
+    {
+     "t": "because of",
+     "b": "because of",
+     "m": "由于"
+    },
+    {
+     "t": "change in",
+     "b": "change in",
+     "m": "……的变化"
+    }
+   ]
+  },
+  "Stress will weaken the body's defense against germs.": {
+   "ph": [
+    {
+     "t": "defense against",
+     "b": "defense against",
+     "m": "对……的防御"
+    }
+   ]
+  },
+  "Humility leads to an honest view of one's own advantages and shortcomings.": {
+   "ph": [
+    {
+     "t": "leads to",
+     "b": "lead to",
+     "m": "导致，使得"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Humility leads to",
+      "s": "你多半会翻成「谦逊导致」。lead to 常翻成「导致」，多数用在坏结果上；这里结果是好事，「导致」就偏重。换成「使得」或者「让人」更顺。\n→ 谦逊让人"
+     },
+     {
+      "t": "an honest view of one's own advantages and shortcomings",
+      "s": "你可能翻成「对自己的优点和缺点的一个诚实的看法」，太硬了。view 是名词，我们把它换成动词，「看待」；honest 修饰这个动作，变成「诚实地」。one's own 是「自己的」，advantages and shortcomings 是「优点和缺点」。\n→ 诚实地看待自己的优点和缺点"
+     }
+    ],
+    "sum": "谦逊让人诚实地看待自己的优点和缺点。",
+    "cmp": "和书上基本一样，书上也是把名词 view 改成了动词「看待」。"
+   }
+  },
+  "There is a growing shortage of medical personnel.": {
+   "ph": [
+    {
+     "t": "shortage of",
+     "b": "a shortage of",
+     "m": "……的短缺"
+    }
+   ]
+  },
+  "She had the advantage of a good education.": {
+   "ph": [
+    {
+     "t": "the advantage of",
+     "b": "have the advantage of",
+     "m": "具有……的优势"
+    }
+   ]
+  },
+  "It is not an individual's fault if they develop obesity.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It is not an individual's fault",
+      "s": "你多半会翻成「这不是个人的错」，然后再接 if 的内容。这样翻能懂，但 It 没有指任何东西，只是占位，真正的意思是后面 if 说的那件事。所以不要纠结 It 是谁。an individual's fault 是「个人的错」。\n→ 不是个人的错"
+     },
+     {
+      "t": "if they develop obesity",
+      "s": "they 是复数，前面的 an individual 是单数，你可能觉得不对。其实现代英语常用 they 指代不明说性别的单个人，这里的 they 就是指「这个人」。develop 你可能翻成「发展」，放到疾病前面说不通；develop obesity 是「患上肥胖症」。\n→ 如果一个人患上肥胖症"
+     }
+    ],
+    "order": "中文习惯先说条件：「如果……」，再说结论，所以把 if 句提到前面。",
+    "sum": "如果一个人患上肥胖症，这不是他个人的错。",
+    "cmp": "意思一样。书上把 they 译成「他们」，我改成「一个人」，是因为前面是单数的 an individual，中文这样更顺。"
+   }
+  },
+  "But curiosity can also be dangerous, leading to setbacks or even downfalls.": {
+   "ph": [
+    {
+     "t": "leading to",
+     "b": "lead to",
+     "m": "导致"
+    }
+   ]
+  },
+  "Do not try to restrain me from beating him.": {
+   "ph": [
+    {
+     "t": "restrain",
+     "b": "restrain sb. from doing",
+     "m": "阻止某人做某事"
+    },
+    {
+     "t": "from",
+     "b": "restrain sb. from doing",
+     "m": "阻止某人做某事"
+    }
+   ]
+  },
+  "Laws can restrict or ban voting, access to public housing, and professional and business licensing.": {
+   "ph": [
+    {
+     "t": "access to",
+     "b": "access to",
+     "m": "获取……的权利"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Laws can restrict or ban",
+      "s": "你多半会翻成「法律可以限制或禁止」，这没错，但后面一长串宾语，你会不知道怎么接。先记住：restrict or ban 管着后面三样东西，别忘了。\n→ 法律可以限制或禁止"
+     },
+     {
+      "t": "voting, access to public housing, and professional and business licensing",
+      "s": "这里是三个并列的东西：voting、access to public housing、professional and business licensing，用逗号和 and 隔开。你可能把 access 当动词翻，其实它是名词，access to 是「获得……的权利」。voting 是「投票」，licensing 是「发放许可」，各自补个「权」字或「资格」就顺了。\n→ 投票、获得公共住房、获得职业和商业许可"
+     }
+    ],
+    "sum": "法律可以限制或禁止人们投票、获得公共住房，以及获得职业和商业许可。",
+    "cmp": "书上说的是「对选举权……实施限制或禁令」，把动词当名词用，较书面。我这里按动词顺着译，更接近口语，意思没变。"
+   }
+  },
+  "The letter had clearly been written in haste.": {
+   "ph": [
+    {
+     "t": "in haste",
+     "b": "in haste",
+     "m": "匆忙地"
+    }
+   ]
+  },
+  "I hate it because it's an obligation disguised as an option.": {
+   "ph": [
+    {
+     "t": "disguised as",
+     "b": "be disguised as",
+     "m": "伪装成"
+    }
+   ]
+  },
+  "They are built in harmony with the environment.": {
+   "ph": [
+    {
+     "t": "in harmony with",
+     "b": "in harmony with",
+     "m": "与……协调"
+    }
+   ]
+  },
+  "They will coordinate with the Social Security Administration.": {
+   "ph": [
+    {
+     "t": "coordinate with",
+     "b": "coordinate with",
+     "m": "与……协调"
+    }
+   ]
+  },
+  "In the classic marriage vow, couples promise to stay together in sickness and in health.": {
+   "ph": [
+    {
+     "t": "promise to",
+     "b": "promise to do",
+     "m": "承诺做某事"
+    },
+    {
+     "t": "in sickness and in health",
+     "b": "in sickness and in health",
+     "m": "无论疾病还是健康"
+    }
+   ]
+  },
+  "There is not enough evidence to classify it as a disease.": {
+   "ph": [
+    {
+     "t": "classify",
+     "b": "classify … as",
+     "m": "把……归类为"
+    },
+    {
+     "t": "as",
+     "b": "classify … as",
+     "m": "把……归类为"
+    }
+   ]
+  },
+  "The earth is composed of several layers.": {
+   "ph": [
+    {
+     "t": "is composed of",
+     "b": "be composed of",
+     "m": "由……组成"
+    }
+   ]
+  },
+  "Fast technological change makes it necessary for one to constantly upgrade their skills.": {
+   "ph": [
+    {
+     "t": "makes it necessary",
+     "b": "make it necessary",
+     "m": "使……有必要"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Fast technological change makes it necessary",
+      "s": "你多半会翻成「快速的技术变化使它必要」。念一遍，it 没着落。makes it necessary 里的 it 是占位的宾语，真正的内容在后面的 to 动词。读成「使……有必要」。主语是技术变化，中文可以说成「因为技术变化快」。\n→ 技术变化很快，使得……有必要"
+     },
+     {
+      "t": "for one to constantly upgrade their skills",
+      "s": "for one to do 是「某人去做」，one 是泛指「人」，不用翻成「一个」。constantly 是「不断地」，upgrade 是「提高、更新」，their 指 one，翻成「自己的」。\n→ 人们不断提高自己的技能"
+     }
+    ],
+    "order": "英文把 it 放在中间、真正内容放最后；中文直接把 it 要说的事放到「有必要」后面就行。",
+    "sum": "技术变革很快，人们有必要不断提高自己的技能。",
+    "cmp": "书上是「快速的技术变革使人们有必要不断地提高自己的技能」，和我的一样，只是句子更长。"
+   }
+  },
+  "Promotion will mean that I'm immediately above him in rank.": {
+   "ph": [
+    {
+     "t": "in rank",
+     "b": "in rank",
+     "m": "在级别上"
+    }
+   ]
+  },
+  "On a global scale, 77 percent of energy is created from fossil fuels.": {
+   "ph": [
+    {
+     "t": "On a global scale",
+     "b": "on a … scale",
+     "m": "在……范围上"
+    }
+   ]
   }
+ }
 }
