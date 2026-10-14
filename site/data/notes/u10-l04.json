@@ -1,0 +1,345 @@
+{
+  "_note": "例句词组与语法解析（书外补充，AI 生成）",
+  "sents": {
+    "Statistics should be treated with caution.": {
+      "ph": [{"t": "treated with caution", "b": "treat sth. with caution", "m": "谨慎对待"}]
+    },
+    "I hope all the precautions against air pollution will be seriously considered here.": {
+      "ph": [{"t": "precautions against", "b": "precaution against", "m": "防范……的措施"}],
+      "an": {
+        "parts": [
+          {"t": "I hope", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "all the precautions against air pollution will be seriously considered here", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "hope 后省略了 that，all the precautions … here 是 hope 的宾语从句；主句是现在时，will 只表一般将来，不是虚拟语气。",
+          "从句是被动 will be considered，主语 precautions 在意义上是「被考虑」的对象，书上译成主动式「考虑所有……措施」，不带「被」。",
+          "against air pollution 是介词短语后置修饰 precautions，书上前置成「抵御空气污染的预防措施」。"
+        ],
+        "lit": "我希望所有针对空气污染的预防措施将在这里被认真地考虑。"
+      }
+    },
+    "They are less aware of the value of their money.": {
+      "ph": [{"t": "aware of", "b": "be aware of", "m": "意识到"}]
+    },
+    "We are able to issue alerts about the latest threats they should be aware of.": {
+      "ph": [
+        {"t": "are able to", "b": "be able to do", "m": "能够做某事"},
+        {"t": "aware of", "b": "be aware of", "m": "意识到，注意到"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "We are able to issue alerts about the latest threats", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "they should be aware of", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "定语从句 they should be aware of 的先行词是 threats（最新威胁），关系词（that / which）省略；它在从句里作介词 of 的宾语（be aware of the threats）。",
+          "从句里的介词 of 被留在末尾，书上把整个从句前置成「他们应注意的最新威胁」，of 的意思融进了「注意」。",
+          "should 表「应该」，是情态动词的本义，不是虚拟语气。"
+        ],
+        "lit": "我们能够发出关于他们应该意识到的最新威胁的警报。"
+      }
+    },
+    "This environmentally conscious product will save millions of liters of water a year.": {
+      "ph": [{"t": "millions of", "b": "millions of", "m": "数百万的"}]
+    },
+    "I perceived a change in his behaviour.": {
+      "ph": [{"t": "a change in", "b": "a change in", "m": "……的改变"}]
+    },
+    "She deceived him into handing over all his savings.": {
+      "ph": [
+        {"t": "deceived", "b": "deceive sb. into doing", "m": "骗某人做某事"},
+        {"t": "into", "b": "deceive sb. into doing", "m": "骗某人做某事"},
+        {"t": "handing over", "b": "hand over", "m": "交出"}
+      ]
+    },
+    "If he thinks he can cheat me, just let him try!": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "If he thinks he can cheat me", "r": "条件状语"},
+          {"t": ", ", "r": ""},
+          {"t": "just let him try", "r": "主干"},
+          {"t": "!", "r": ""}
+        ],
+        "pts": [
+          "If 条件从句用一般现在时，主句是祈使句 let him try，属于真实条件，不是虚拟语气，can 也只表「能够」。",
+          "thinks 后省略了 that，he can cheat me 是 thinks 的宾语从句，所以书上译成「以为能够骗过我」。",
+          "祈使句 just let him try 带挑战的语气，书上译成「就让他来试一下吧」，用 just 加感叹号体现这种口气。"
+        ],
+        "lit": "如果他认为他能欺骗我，就让他试一试！"
+      }
+    },
+    "Farmers ring up to receive the information.": {
+      "ph": [{"t": "ring up", "b": "ring up", "m": "打电话"}]
+    },
+    "The hotel receptionist must make sure that guests are registered correctly.": {
+      "ph": [{"t": "make sure", "b": "make sure", "m": "确保"}],
+      "an": {
+        "parts": [
+          {"t": "The hotel receptionist must make sure", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that guests are registered correctly", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导 make sure 的宾语从句（make sure that…「确保……」），从句内容就是「确保」的对象，所以书上直接译作「确保客人……」。",
+          "从句是被动 are registered，书上去掉「被」，译成「客人正确登记」，符合中文习惯。"
+        ],
+        "lit": "酒店接待员必须确保客人被正确地登记。"
+      }
+    },
+    "Our heartfelt sympathy goes out to the victims of the war.": {
+      "ph": [{"t": "goes out to", "b": "go out to", "m": "（同情等）向……表达"}]
+    },
+    "It's a mercy she wasn't seriously hurt.": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "It's a mercy", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "she wasn't seriously hurt", "r": "主语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "It 是形式主语，真正的主语是后面省略了 that 的从句 she wasn't seriously hurt。",
+          "书上把表语 a mercy 译成句首的「幸运的是」，再接从句内容，这是 It's + 名词 + that 从句的常见译法。",
+          "从句是被动 wasn't seriously hurt，书上转成「伤势不重」，把被动谓语改写成名词加形容词。"
+        ],
+        "lit": "她没有被严重伤害是一种仁慈。"
+      }
+    },
+    "The new school stands as a symbol of hope for a better future.": {
+      "ph": [
+        {"t": "stands as", "b": "stand as", "m": "作为，充当"},
+        {"t": "a symbol of", "b": "a symbol of", "m": "……的象征"}
+      ]
+    },
+    "Today, consulting for five businesses at the same time is a badge of honor.": {
+      "ph": [
+        {"t": "at the same time", "b": "at the same time", "m": "同时"},
+        {"t": "a badge of honor", "b": "a badge of honor", "m": "荣誉的象征"}
+      ]
+    },
+    "The method works for English, and likewise for French.": {
+      "ph": [{"t": "works for", "b": "work for", "m": "适用于"}]
+    },
+    "She doesn't think it wise to pay before attending any class.": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "She doesn't think it wise", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to pay before attending any class", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "think it wise to do 中 it 是形式宾语，wise 是宾语补足语，真正的宾语是后面的不定式 to pay…。",
+          "否定词 doesn't 放在 think 上，意思却是否定后面的内容（认为……不明智），这是英语的否定转移；书上译成「认为……是不明智的」。"
+        ],
+        "lit": "她不认为在上任何课之前付款是明智的。"
+      }
+    },
+    "Good management benefits employers and employees alike.": {
+      "ph": [{"t": "employers and employees alike", "b": "A and B alike", "m": "A 和 B 都同样"}]
+    },
+    "She was driving me insane with her constant chatter.": {
+      "ph": [{"t": "driving me insane", "b": "drive sb. insane", "m": "把某人逼疯"}]
+    },
+    "The game was a long battle of wits.": {
+      "ph": [{"t": "battle of wits", "b": "battle of wits", "m": "斗智"}]
+    },
+    "She is abroad on business.": {
+      "ph": [{"t": "on business", "b": "on business", "m": "因公，出差"}]
+    },
+    "The firm is expanding into overseas markets.": {
+      "ph": [{"t": "expanding into", "b": "expand into", "m": "向……扩张"}]
+    },
+    "They agreed to cover the entire building in solar panels.": {
+      "ph": [{"t": "agreed to", "b": "agree to do", "m": "同意做某事"}]
+    },
+    "Choosing what to eat and drink is key to weight control.": {
+      "ph": [{"t": "key to", "b": "be key to", "m": "是……的关键"}],
+      "an": {
+        "parts": [
+          {"t": "Choosing what to eat and drink", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "is key to weight control", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "主语是动名词短语 Choosing …，其中 what to eat and drink 是「疑问词 + 不定式」，作 choosing 的宾语，书上译成「选择吃什么和喝什么」。",
+          "key to 里的 to 是介词，后面接名词短语 weight control；这是名词化结构，书上展开成动宾式的「控制体重」。"
+        ],
+        "lit": "选择吃什么和喝什么是体重控制的关键。"
+      }
+    },
+    "The carpet is available in different widths.": {
+      "ph": [{"t": "available in", "b": "be available in", "m": "有……规格可选"}]
+    },
+    "Climate change has little effect on the lives of wild ducks.": {
+      "ph": [{"t": "has little effect on", "b": "have little effect on", "m": "对……几乎没有影响"}]
+    },
+    "Healthy habits can effectively lengthen people's life expectancy.": {
+      "ph": [{"t": "life expectancy", "b": "life expectancy", "m": "预期寿命"}]
+    },
+    "The office asked for the public's help to measure their speed results.": {
+      "ph": [{"t": "asked for", "b": "ask for", "m": "请求"}]
+    },
+    "The shrimps grow from their original 1 millimetre to a length of about 1.5 centimetres.": {
+      "ph": [
+        {"t": "grow from", "b": "grow from … to", "m": "从……增长到"},
+        {"t": "to", "b": "grow from … to", "m": "从……增长到"}
+      ]
+    },
+    "This might present problems for young people later on.": {
+      "ph": [{"t": "later on", "b": "later on", "m": "以后，后来"}]
+    },
+    "My first novel was rejected. In the meantime I had written a play.": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "My first novel was rejected", "r": "主干"},
+          {"t": ". ", "r": ""},
+          {"t": "In the meantime", "r": "状语"},
+          {"t": " ", "r": ""},
+          {"t": "I had written a play", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "was rejected 是被动，书上译成「遭到拒绝」，比「被拒绝」更符合中文表达（不好的事常用「遭到 / 受到」）。",
+          "had written 是过去完成时，表示在「小说被拒」这段过去的时间里，戏剧已经写完了；书上用「又完成了」把「已完成」的意思译出来。"
+        ],
+        "lit": "我的第一部小说被拒绝了。在此期间我已经写了一部戏剧。"
+      }
+    },
+    "We thought she was arrogant, whereas in fact she was just very shy.": {
+      "ph": [{"t": "in fact", "b": "in fact", "m": "事实上"}],
+      "an": {
+        "parts": [
+          {"t": "We thought", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "she was arrogant", "r": "宾语从句"},
+          {"t": ", ", "r": ""},
+          {"t": "whereas in fact she was just very shy", "r": "状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "thought 后省略了 that，she was arrogant 是宾语从句；主句是过去时，从句的 was 随之用过去时。",
+          "whereas 引导对比性的状语从句，强调前后两种情况相反，书上把它译成转折词「然而」，放在后一个分句开头。"
+        ],
+        "lit": "我们认为她傲慢，然而事实上她只是非常害羞。"
+      }
+    },
+    "They can't function unless exposed to sunlight.": {
+      "ph": [{"t": "exposed to", "b": "be exposed to", "m": "暴露于"}],
+      "an": {
+        "parts": [
+          {"t": "They can't function", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "unless exposed to sunlight", "r": "条件状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "unless 引导条件状语从句，这里省略了和主句相同的主语 they 与 are（unless they are exposed…），只剩过去分词短语 exposed to sunlight，含被动意义。",
+          "unless 相当于 if … not，书上先译条件「除非暴露在阳光下」，再补上「否则」连接主句，把顺序提前。"
+        ],
+        "lit": "他们不能运转，除非被暴露于阳光。"
+      }
+    },
+    "How can you quantify a person's boredom level and compare it with someone else's?": {
+      "ph": [
+        {"t": "compare", "b": "compare … with", "m": "把……与……比较"},
+        {"t": "with", "b": "compare … with", "m": "把……与……比较"}
+      ]
+    },
+    "It keeps many otherwise qualified women off the runway.": {
+      "ph": [
+        {"t": "keeps", "b": "keep … off", "m": "使……无法上"},
+        {"t": "off", "b": "keep … off", "m": "使……无法上"}
+      ]
+    },
+    "He's only 17 and therefore not eligible to vote.": {
+      "ph": [{"t": "eligible to", "b": "be eligible to do", "m": "有资格做某事"}]
+    },
+    "Regular exercise strengthens the heart, thereby reducing the risk of heart attack.": {
+      "ph": [{"t": "reducing the risk of", "b": "reduce the risk of", "m": "降低……的风险"}],
+      "an": {
+        "parts": [
+          {"t": "Regular exercise strengthens the heart", "r": "主干"},
+          {"t": ", ", "r": ""},
+          {"t": "thereby reducing the risk of heart attack", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "thereby reducing … 是现在分词短语作结果状语，逻辑主语是主句的 exercise，表示「增强心脏」带来的结果；书上用「从而」把它接成后面的分句。",
+          "主语 Regular exercise 是名词化结构，书上把 exercise 还原成动词，译成「经常锻炼」。"
+        ],
+        "lit": "规律的锻炼增强心脏，从而减少心脏病发作的风险。"
+      }
+    },
+    "She rarely gave interviews and thus avoided being asked questions she would rather not answer.": {
+      "ph": [{"t": "would rather not answer", "b": "would rather not do", "m": "宁愿不做"}],
+      "an": {
+        "parts": [
+          {"t": "She rarely gave interviews and thus avoided being asked questions", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "she would rather not answer", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "定语从句 she would rather not answer 的先行词是 questions，关系词（that / which）省略，在从句里作 answer 的宾语；书上前置成「她不愿回答的问题」。",
+          "would rather not do 是固定搭配「宁愿不做」，不是 if 引导的虚拟语气。",
+          "being asked questions 是动名词的被动形式，作 avoided 的宾语，书上译成「避免了被问到……」；rarely 是否定词，译为「很少」。"
+        ],
+        "lit": "她很少给采访，因此避免了被问她宁愿不回答的问题。"
+      }
+    },
+    "What you said was true. It was, nevertheless, a little unkind.": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "What you said was true", "r": "主干"},
+          {"t": ". ", "r": ""},
+          {"t": "It was", "r": "主干"},
+          {"t": ", ", "r": ""},
+          {"t": "nevertheless", "r": "插入语"},
+          {"t": ", ", "r": ""},
+          {"t": "a little unkind", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "What you said 是主语从句，what 在从句中作 said 的宾语，整个从句相当于「你说的话」，书上译成「你说的都是实话」。",
+          "nevertheless 夹在 was 和表语之间，用逗号隔开作插入语，表示转折；书上译成「只不过」，把转折意味放到后半句开头。"
+        ],
+        "lit": "你所说的是真的。然而它有一点不友善。"
+      }
+    },
+    "If the destruction is extreme, mail addressed to the area will get sent elsewhere.": {
+      "ph": [{"t": "addressed to", "b": "be addressed to", "m": "寄往，寄给"}],
+      "an": {
+        "parts": [
+          {"t": "If the destruction is extreme", "r": "条件状语"},
+          {"t": ", ", "r": ""},
+          {"t": "mail ", "r": "主干"},
+          {"t": "addressed to the area", "r": "非谓语"},
+          {"t": " will get sent elsewhere", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "If 从句用一般现在时，主句用 will，是真实条件（将来可能发生），不是虚拟语气。",
+          "addressed to the area 是过去分词短语作后置定语，修饰 mail（相当于 which is addressed…），书上前置成「寄往该地区的邮件」。",
+          "will get sent 用 get + 过去分词表被动，强调变化的过程，书上译成「将被发送到别处」。"
+        ],
+        "lit": "如果破坏是极端的，寄给该地区的邮件将会被送到别处。"
+      }
+    },
+    "Moreover, schools should be more than simple institutions of traditional learning.": {
+      "ph": [{"t": "more than", "b": "more than", "m": "不仅仅是"}]
+    }
+  }
+}

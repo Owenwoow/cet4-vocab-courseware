@@ -1,0 +1,319 @@
+{
+  "_note": "例句词组与语法解析（书外补充，AI 生成）",
+  "sents": {
+    "What people eat can be medicine or poison.": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "What people eat", "r": "主语从句"},
+          {"t": " can be medicine or poison", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "What people eat 是主语从句，what 在从句里作 eat 的宾语，同时充当整句的主语，相当于 the things that people eat；书上展开成「人们吃的东西」。",
+          "can 表示可能性，不是「能够」，所以书上译成「可能是药，也可能是毒药」。"
+        ],
+        "lit": "人们吃的什么可以是药或者毒药。"
+      }
+    },
+    "The ceremony was transmitted live by satellite to over fifty countries.": {
+      "ph": [
+        {"t": "transmitted", "b": "transmit … to", "m": "向……传送"},
+        {"t": "to", "b": "transmit … to", "m": "向……传送"},
+        {"t": "by satellite", "b": "by satellite", "m": "通过卫星"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "The ceremony was transmitted live by satellite to over fifty countries", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "was transmitted 是被动，句中没有施动者，书上译成主动式「进行了……转播」，不出现「被」。",
+          "live 在这里是副词，修饰 transmitted，表示「实况地」，所以书上译成「实况转播」，把副词变成了名词性修饰。",
+          "by satellite 表方式，to over fifty countries 表方向，书上把方式提前、方向放在动词前，译成「通过卫星向五十多个国家……」。"
+        ],
+        "lit": "典礼被实况地通过卫星传送给五十多个国家。"
+      }
+    },
+    "His name had been omitted from the list of honor students.": {
+      "ph": [
+        {"t": "omitted from", "b": "omit from", "m": "从……中删除"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "His name had been omitted from the list of honor students", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "had been omitted 是过去完成时的被动，表示在说话的过去时间点之前名字已经被删掉了，书上保留「被」，译成「被从……删除了」。",
+          "omitted from 里 from 引出被删除的来源，书上译成「从……名单上」，把 the list of honor students 里的 of 结构转成「优秀学生名单」。"
+        ],
+        "lit": "他的名字已经被从荣誉学生的名单中省略了。"
+      }
+    },
+    "She refuses to admit the truth.": {
+      "ph": [
+        {"t": "refuses to", "b": "refuse to do", "m": "拒绝做"}
+      ]
+    },
+    "We'd like to see the commission make further changes to the guidelines.": {
+      "ph": [
+        {"t": "make further changes to", "b": "make changes to", "m": "对……做出修改"}
+      ]
+    },
+    "When someone commits a criminal act, we always hope the punishment will match the offense.": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "When someone commits a criminal act", "r": "时间状语"},
+          {"t": ", ", "r": ""},
+          {"t": "we always hope", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "the punishment will match the offense", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "When 引导时间状语从句，commits a criminal act 是动宾搭配，书上直接译成动词「犯罪」，所以是「当有人犯罪时」。",
+          "hope 后省略了 that，the punishment will match the offense 是它的宾语从句；will 是单纯的将来，没有 if 条件，不是虚拟语气，书上译成「惩罚与罪行相匹配」。"
+        ],
+        "lit": "当某人犯一个犯罪行为时，我们总是希望惩罚将会匹配罪行。"
+      }
+    },
+    "The new research has profound implications for the environmental summit.": {
+      "ph": [
+        {"t": "implications for", "b": "implication for", "m": "对……的影响"}
+      ]
+    },
+    "They reach a peak at the age of 20.": {
+      "ph": [
+        {"t": "reach a peak", "b": "reach a peak", "m": "达到顶峰"},
+        {"t": "at the age of", "b": "at the age of", "m": "在……岁时"}
+      ]
+    },
+    "The room's ceilings are too low to wear the lion heads for jumping practice.": {
+      "ph": [
+        {"t": "too", "b": "too … to do", "m": "太……而不能做"},
+        {"t": "to", "b": "too … to do", "m": "太……而不能做"}
+      ]
+    },
+    "The plane made a dive to a lower altitude.": {
+      "ph": [
+        {"t": "made a dive", "b": "make a dive", "m": "俯冲"}
+      ]
+    },
+    "If you want to pass your exams, you'd better change your attitude.": {
+      "ph": [
+        {"t": "better", "b": "had better do", "m": "最好做"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "If you want to pass your exams", "r": "条件状语"},
+          {"t": ", ", "r": ""},
+          {"t": "you'd better change your attitude", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "If 引导条件状语从句，want 用一般现在时，是对现实可能性的真实条件，不是虚拟语气，书上译成「你若想通过考试」。",
+          "you'd better 是 you had better 的缩写（不是 you would），后接动词原形 change，表示建议，书上译成「最好改变」。"
+        ],
+        "lit": "如果你想通过你的考试，你最好改变你的态度。"
+      }
+    },
+    "Researchers used ACT scores as a measure of intellectual aptitude.": {
+      "ph": [
+        {"t": "used", "b": "use … as", "m": "把……用作"},
+        {"t": "as", "b": "use … as", "m": "把……用作"}
+      ]
+    },
+    "Companies should promise that they would never ask for passwords.": {
+      "ph": [
+        {"t": "ask for", "b": "ask for", "m": "索要"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Companies should promise", "r": "主干"},
+          {"t": " that ", "r": ""},
+          {"t": "they would never ask for passwords", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导 promise 的宾语从句，内容是所承诺的事。",
+          "从句里的 would 表示承诺的将来（所承诺的是以后的事），句中没有 if 条件，也不是与事实相反，所以不是虚拟语气，书上译成「永远不会索要」。",
+          "never 是对整个谓语的否定，书上译成「永远不会」。"
+        ],
+        "lit": "公司应该承诺它们永远不会要求密码。"
+      }
+    },
+    "The sport has a strict code of conduct.": {
+      "ph": [
+        {"t": "code of conduct", "b": "code of conduct", "m": "行为准则"}
+      ]
+    },
+    "People's psychological well-being is related to various factors.": {
+      "ph": [
+        {"t": "is related to", "b": "be related to", "m": "与……有关"}
+      ]
+    },
+    "The incident is still under investigation by the relevant authorities.": {
+      "ph": [
+        {"t": "under investigation", "b": "under investigation", "m": "在调查中"}
+      ]
+    },
+    "It's joyful in a way that you don't get from a regular bike.": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "It's joyful in a way", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that you don't get from a regular bike", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导定语从句，先行词是 a way（in a way 里的 way），that 在从句中作 get 的宾语，即「你从普通自行车上得不到的那种（快乐）」。",
+          "书上没有照字面译成「以一种……的方式快乐」，而是把定语从句前置成「……所不能带给你的」，并补出「快乐」作中心词，译成「这是一辆普通自行车所不能带给你的快乐」。"
+        ],
+        "lit": "它是快乐的，以一种你从一辆普通自行车那里得不到的方式。"
+      }
+    },
+    "My grandmother used to narrate bedtime stories to me when I was young.": {
+      "ph": [
+        {"t": "used to", "b": "used to do", "m": "过去经常"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "My grandmother used to narrate bedtime stories to me", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "when I was young", "r": "时间状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "used to + 动词原形表示过去经常做、现在已不这样，书上用「经常」表达过去的习惯。",
+          "when I was young 是时间状语从句，英文放句尾，书上按中文习惯提到句首，译成「我小的时候」。"
+        ],
+        "lit": "我的祖母过去常常讲睡前故事给我听，当我年轻的时候。"
+      }
+    },
+    "She never hesitates to speak her mind.": {
+      "ph": [
+        {"t": "hesitates to", "b": "hesitate to do", "m": "犹豫做"},
+        {"t": "speak her mind", "b": "speak one's mind", "m": "说出自己的想法"}
+      ]
+    },
+    "The lack of knowledge is difficult if not impossible to compensate for later on.": {
+      "ph": [
+        {"t": "lack of", "b": "lack of", "m": "缺乏"},
+        {"t": "compensate for", "b": "compensate for", "m": "弥补"},
+        {"t": "later on", "b": "later on", "m": "日后"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "The lack of knowledge is difficult", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "if not impossible", "r": "插入语"},
+          {"t": " ", "r": ""},
+          {"t": "to compensate for later on", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "if not impossible 是省略了 it is 的让步性插入成分，意思是「即使不是不可能」，夹在 difficult 和后面的不定式之间；书上把它提到句首，译成「即使不是完全不可能」。",
+          "to compensate for 是不定式，作 difficult 的状语；句子的主语 The lack of knowledge 是 compensate for 的逻辑宾语，所以书上译成「知识的缺乏……很难弥补」，不是「很难去弥补……」。",
+          "The lack of knowledge 是名词化结构，书上保留为「知识的缺乏」。"
+        ],
+        "lit": "知识的缺乏是困难的，如果不是不可能的话，在之后去弥补。"
+      }
+    },
+    "They are better at negotiating an agreement.": {
+      "ph": [
+        {"t": "better at", "b": "be good at", "m": "擅长"}
+      ]
+    },
+    "He called on graduates to innovate in his speech.": {
+      "ph": [
+        {"t": "called on", "b": "call on sb. to do", "m": "呼吁某人做"},
+        {"t": "to", "b": "call on sb. to do", "m": "呼吁某人做"}
+      ]
+    },
+    "The film is based on the legend.": {
+      "ph": [
+        {"t": "is based on", "b": "be based on", "m": "根据……改编"}
+      ]
+    },
+    "American myth is that you can pull yourself up by your own efforts and change a bad situation into a good one.": {
+      "ph": [
+        {"t": "pull yourself up", "b": "pull oneself up", "m": "振作起来"},
+        {"t": "change", "b": "change … into", "m": "把……变成"},
+        {"t": "into", "b": "change … into", "m": "把……变成"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "American myth is", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that you can pull yourself up by your own efforts and change a bad situation into a good one", "r": "表语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "is 后面的 that 从句说明 myth 的具体内容，是表语从句，书上译成「神话是你可以……」。",
+          "从句里 can 后并列两个动词：pull yourself up 和 change … into …，共用 can 和主语 you。",
+          "a good one 里的 one 代替前面的 situation，所以 change a bad situation into a good one 是「把坏局面变成好局面」，书上意译成「转逆为顺」。"
+        ],
+        "lit": "美国的神话是，你可以通过你自己的努力把自己拉起来，并把一个坏的情况变成一个好的。"
+      }
+    },
+    "They were puzzled by the mystery.": {
+      "ph": [
+        {"t": "were puzzled by", "b": "be puzzled by", "m": "对……感到困惑"}
+      ]
+    },
+    "They prefer to go after all that is novel.": {
+      "ph": [
+        {"t": "go after", "b": "go after", "m": "追求"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "They prefer to go after all ", "r": "主干"},
+          {"t": "that is novel", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that is novel 是定语从句，先行词是 all，that 在从句中作主语（后接 is）；先行词是 all 时，关系词一般用 that。",
+          "书上把定语从句前置成「……的」，并补出中心词「事物」，译成「一切新奇的事物」。"
+        ],
+        "lit": "他们更喜欢追求所有是新奇的东西。"
+      }
+    },
+    "For each assignment, I was to write the best essay as I could.": {
+      "ph": [
+        {"t": "was to", "b": "be to do", "m": "必须做"}
+      ]
+    },
+    "It will be a great loss if we no longer read books and longer articles.": {
+      "ph": [
+        {"t": "no longer", "b": "no longer", "m": "不再"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "It will be a great loss", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "if we no longer read books and longer articles", "r": "条件状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "if 条件状语从句用一般现在时（read）表将来，主句用 will（主将从现），是真实条件，不是虚拟语气，书上译成「如果我们不再阅读……，那将是……」。",
+          "if 从句在后，书上提到前面，把 it will be a great loss 放在后半句。",
+          "longer articles 里的 longer 是比较级，但句中没有 than，表示「比较长的」，所以书上译成「长篇文章」。"
+        ],
+        "lit": "如果我们不再读书和更长的文章，那将是一个巨大的损失。"
+      }
+    },
+    "This ancient town is regarded as the paradise of love and romance.": {
+      "ph": [
+        {"t": "is regarded as", "b": "be regarded as", "m": "被视为"}
+      ]
+    },
+    "The brochure should give you a good idea of the hotel.": {
+      "ph": [
+        {"t": "give you a good idea of", "b": "give sb. an idea of", "m": "让某人了解"}
+      ]
+    }
+  }
+}
