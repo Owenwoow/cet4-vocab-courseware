@@ -255,3 +255,28 @@ test("方案文档里的 abandon：一路走到牢记", () => {
   assert.deepEqual(step("g", "2026-11-15", T.CONTEXT), [4, "2026-12-06"]);
   assert.deepEqual(step("g", "2026-12-06", T.SPELL), [5, "2027-01-05"]);
 });
+
+test("干扰项：义项拆分与词性", () => {
+  assert.deepEqual([...SRS.senseKeys("v. 选举，推选；选择")], ["选举", "推选", "选择"]);
+  assert.deepEqual([...SRS.senseKeys("v. （使）适应；使适合")], ["适应", "使适合"]);
+  assert.deepEqual([...SRS.posSet("v. 选择，选拔；adj. 精选的")], ["v.", "adj."]);
+});
+
+test("干扰项：共同义项不能用、只差词性的算词性辨析、形近/同词群算易混", () => {
+  const elect = {word: "elect", mean: "v. 选举，推选；选择"};
+  assert.equal(SRS.distractorTag(elect, {word: "select", mean: "v. 选择，选拔；adj. 精选的；优等的"}), "bad");
+  const injury = {word: "injury", mean: "n. 伤害，损伤"};
+  assert.equal(SRS.distractorTag(injury, {word: "injure", mean: "v. 损害，伤害；受伤"}), "pos");
+  assert.equal(SRS.distractorTag(injury, {word: "harm", mean: "v. 伤害"}), "bad");     // 不形近：照样不能用
+  assert.equal(SRS.distractorTag({word: "adapt", mean: "v. （使）适应；使适合"}, {word: "adopt", mean: "v. 收养；采纳；接受"}), "near");
+  assert.equal(SRS.distractorTag(injury, {word: "carrot", mean: "n. 胡萝卜"}), null);
+  assert.equal(SRS.distractorTag(injury, {word: "carrot", mean: "n. 胡萝卜"}, true), "near");
+});
+
+test("混淆词列表：新的在前、去重、最多 3 个", () => {
+  assert.deepEqual(SRS.confAdd(undefined, "a"), ["a"]);
+  assert.deepEqual(SRS.confAdd(["a", "b", "c"], "b"), ["b", "a", "c"]);
+  assert.deepEqual(SRS.confAdd(["a", "b", "c"], "d"), ["d", "a", "b"]);
+  assert.deepEqual(SRS.confDrop(["a", "b"], "a"), ["b"]);
+  assert.deepEqual(SRS.confDrop(undefined, "a"), []);
+});
