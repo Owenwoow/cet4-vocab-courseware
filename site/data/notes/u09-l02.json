@@ -1,324 +1,477 @@
 {
-  "_note": "例句词组与语法解析（书外补充，AI 生成）",
-  "sents": {
-    "It was very considerate of him to wait.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "It was very considerate", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "of him", "r": "状语"},
-          {"t": " ", "r": ""},
-          {"t": "to wait", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "It 是形式主语，真正的主语是后面的不定式 to wait；of him 是不定式的逻辑主语，用 of 而不是 for，是因为 considerate 评价的是人的品质。",
-          "这类「It is + 表人品质的形容词 + of sb. to do」结构，书上先说「他一直在等候着」，再补评价「真是体贴」，把形容词判断挪到了句末。"
-        ],
-        "lit": "他等待是很体贴的。"
-      }
-    },
-    "The project wasted a considerable amount of time and money.": {
-      "ph": [
-        {"t": "a considerable amount of", "b": "a considerable amount of", "m": "相当多的"}
-      ]
-    },
-    "Her ideas are worthy of serious consideration.": {
-      "ph": [
-        {"t": "worthy of", "b": "be worthy of", "m": "值得"}
-      ]
-    },
-    "It created a pool of labour for factories.": {
-      "ph": [
-        {"t": "a pool of", "b": "a pool of", "m": "一批，大量"}
-      ]
-    },
-    "What is needed is a frank exchange of views.": {
-      "ph": [
-        {"t": "exchange of views", "b": "exchange of views", "m": "意见交换"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "What is needed", "r": "主语从句"},
-          {"t": " ", "r": ""},
-          {"t": "is a frank exchange of views", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "What is needed 是主语从句，what 在从句中作 needed 的逻辑主语（被需要的东西），整个从句相当于「所需要的东西」。",
-          "needed 是被动，没有施动者，书上补出「（我们）需要的是……」，用括号标明是补充的主语，译成主动更自然。",
-          "a frank exchange of views 是名词化结构，书上译成「坦诚的意见交换」，保留名词短语。"
-        ],
-        "lit": "被需要的是坦诚的意见交换。"
-      }
-    },
-    "They make sensible decisions when facing moral dilemmas.": {
-      "ph": [
-        {"t": "make sensible decisions", "b": "make a decision", "m": "做决定"}
-      ]
-    },
-    "Particular emphasis will be placed on oral language training.": {
-      "ph": [
-        {"t": "emphasis will be placed on", "b": "place emphasis on", "m": "重视"}
-      ]
-    },
-    "Teachers don't have to share the same racial or ethnic background as their students.": {
-      "ph": [
-        {"t": "the same", "b": "the same … as", "m": "与……相同"},
-        {"t": "as", "b": "the same … as", "m": "与……相同"}
-      ]
-    },
-    "A new technology has the potential to change modern society in radical ways.": {
-      "ph": [
-        {"t": "has the potential to", "b": "have the potential to do", "m": "有可能做"}
-      ]
-    },
-    "Do violent video games lead to violence?": {
-      "ph": [
-        {"t": "lead to", "b": "lead to", "m": "导致"}
-      ]
-    },
-    "She accused the press photographers of violating her privacy.": {
-      "ph": [
-        {"t": "accused", "b": "accuse sb. of", "m": "指责某人做了……"},
-        {"t": "of", "b": "accuse sb. of", "m": "指责某人做了……"}
-      ]
-    },
-    "I wouldn't have dared to defy my teachers.": {
-      "ph": [
-        {"t": "dared to", "b": "dare to do", "m": "敢于做"}
-      ]
-    },
-    "Dogs can be trained to obey orders.": {
-      "ph": [
-        {"t": "be trained to", "b": "be trained to do", "m": "被训练去做"}
-      ]
-    },
-    "Emergency workers have made contact with the miners via a radio.": {
-      "ph": [
-        {"t": "made contact with", "b": "make contact with", "m": "与……取得联系"}
-      ]
-    },
-    "A teacher must be capable of infinite patience.": {
-      "ph": [
-        {"t": "be capable of", "b": "be capable of", "m": "有……的能力"}
-      ]
-    },
-    "No definite conclusions can be drawn from this study.": {
-      "ph": [
-        {"t": "conclusions can be drawn", "b": "draw a conclusion", "m": "得出结论"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "No definite conclusions can be drawn", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "from this study", "r": "状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "No + 名词作主语，否定落在主语上，等于「任何明确的结论都不能……」；书上把否定移到谓语，译成「不能得出明确的结论」。",
-          "can be drawn 是被动，没有施动者，书上译成无主语的主动句「不能得出」，而不是「结论不能被得出」。"
-        ],
-        "lit": "没有明确的结论能够从这项研究中被得出。"
-      }
-    },
-    "The dominance of television was not confined to our living rooms.": {
-      "ph": [
-        {"t": "confined to", "b": "be confined to", "m": "局限于"}
-      ]
-    },
-    "Groups like these will help you refine your analytical skills and enable you to express yourself better.": {
-      "ph": [
-        {"t": "help you refine", "b": "help sb. do", "m": "帮助你做……"},
-        {"t": "enable you to", "b": "enable sb. to do", "m": "使你能够做……"},
-        {"t": "express yourself", "b": "express oneself", "m": "表达自己"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Groups like these", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "will help you refine your analytical skills", "r": "主干"},
-          {"t": " and ", "r": ""},
-          {"t": "enable you to express yourself better", "r": "并列分句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "like these 是后置定语，修饰 Groups，书上前置成「像这样的小组」。",
-          "and 连接两个并列谓语：will help … 和（will）enable …，共用主语 Groups like these 和情态动词 will，所以书上译成「将帮助……，让……」。",
-          "help you refine 里 refine 前省略了 to（help sb. (to) do），而 enable 后必须带 to（enable sb. to do），两处补语形式不同。",
-          "better 修饰 express，书上译成「更好地表达自己」。"
-        ],
-        "lit": "像这样的小组将帮助你提炼你的分析技能并使你能够更好地表达你自己。"
-      }
-    },
-    "If you do not, you could be fined up to £50.": {
-      "ph": [
-        {"t": "up to", "b": "up to", "m": "最多达"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "If you do not", "r": "条件状语"},
-          {"t": ", ", "r": ""},
-          {"t": "you could be fined up to £50", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "If you do not 末尾省略了上文已提到的动作，do 代替前一句的动词，书上译成「如果你不这样做」。",
-          "if 从句用一般现在时，是对将来可能情况的真实条件，所以 could 表可能性，不是虚拟语气，书上译成「可能会被……」。",
-          "fined 是被动，书上译成「被处以……罚款」，把动词 fine 转成名词「罚款」，up to £50 译成「最高 50 英镑」。"
-        ],
-        "lit": "如果你不这样做，你可能被罚款多达 50 英镑。"
-      }
-    },
-    "The author emphasises being anumeric does not affect one's cognitive ability.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "The author emphasises", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "being anumeric does not affect one's cognitive ability", "r": "宾语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "emphasises 后省略了引导宾语从句的 that，从句是 being anumeric does not affect one's cognitive ability。",
-          "从句的主语是动名词短语 being anumeric（不识数），谓语是 does not affect，所以书上译成「不识数并不影响……」，主语部分不另加「这件事」。"
-        ],
-        "lit": "作者强调不识数不影响一个人的认知能力。"
-      }
-    },
-    "The researcher studied the videotapes to analyse the matches in detail.": {
-      "ph": [
-        {"t": "in detail", "b": "in detail", "m": "详细地"}
-      ]
-    },
-    "With this comprehensive knowledge of the history of art, he has since become a professional painter.": {
-      "ph": [
-        {"t": "knowledge of", "b": "knowledge of", "m": "对……的了解"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "With this comprehensive knowledge of the history of art", "r": "状语"},
-          {"t": ", ", "r": ""},
-          {"t": "he has since become a professional painter", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "开头 With 短语表示凭借的条件，书上译成「凭借……」；其中 comprehensive knowledge of the history of art 是名词化结构，书上展开成「对艺术史的全面了解」。",
-          "has since become 是现在完成时，since 在这里是副词，意思是「从那以后」，所以书上译成「从此成了」，强调从那时起到现在的结果。"
-        ],
-        "lit": "带着这种对艺术史的全面知识，他从那以后已经成为一名专业画家。"
-      }
-    },
-    "It is necessary to use terms other than gamification for some professions.": {
-      "ph": [
-        {"t": "other than", "b": "other than", "m": "除……以外"}
-      ]
-    },
-    "It's commonly known that certain diseases are linked with occupations.": {
-      "ph": [
-        {"t": "are linked with", "b": "be linked with", "m": "与……有关"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "It's commonly known", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that certain diseases are linked with occupations", "r": "主语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "It 是形式主语，真正的主语是后面 that 引导的主语从句；that 只起连接作用，在从句中不作成分。",
-          "is known 是被动，没有施动者，书上套用固定说法「众所周知」，把 that 从句放到后面译。",
-          "are linked with 是被动形式，表状态，书上译成「与……有关」，不译「被联系」。"
-        ],
-        "lit": "它被普遍知道某些疾病与职业被联系在一起。"
-      }
-    },
-    "It's creating some tension between newcomers and veterans.": {
-      "ph": [
-        {"t": "tension between", "b": "tension between … and", "m": "……之间的紧张关系"},
-        {"t": "and", "b": "tension between … and", "m": "……之间的紧张关系"}
-      ]
-    },
-    "It is an attempt to clarify misunderstanding about the origin of language.": {
-      "ph": [
-        {"t": "an attempt to", "b": "an attempt to do", "m": "试图做"}
-      ]
-    },
-    "The authorities refused to confirm any details.": {
-      "ph": [
-        {"t": "refused to", "b": "refuse to do", "m": "拒绝做"}
-      ]
-    },
-    "He doesn't feel at ease in the firm.": {
-      "ph": [
-        {"t": "feel at ease", "b": "feel at ease", "m": "感到自在"}
-      ]
-    },
-    "The state affirms its supreme power over the individuals within its own borders.": {
-      "ph": [
-        {"t": "power over", "b": "power over", "m": "对……的权力"}
-      ]
-    },
-    "She claimed to hate all art.": {
-      "ph": [
-        {"t": "claimed to", "b": "claim to do", "m": "声称做"}
-      ]
-    },
-    "The president proclaimed a state of emergency.": {
-      "ph": [
-        {"t": "a state of emergency", "b": "a state of emergency", "m": "紧急状态"}
-      ]
-    },
-    "The film met with considerable critical and public acclaim.": {
-      "ph": [
-        {"t": "met with", "b": "meet with", "m": "得到，遇到"}
-      ]
-    },
-    "The player proceeded to rub his gloves and then exclaimed.": {
-      "ph": [
-        {"t": "proceeded to", "b": "proceed to do", "m": "接着做"}
-      ]
-    },
-    "Pay attention to the whispers so you won't have to hear the screams.": {
-      "ph": [
-        {"t": "Pay attention to", "b": "pay attention to", "m": "留心"},
-        {"t": "have to", "b": "have to", "m": "不得不"}
-      ]
-    },
-    "He kept shouting, blowing his whistle to stop the excited players.": {
-      "ph": [
-        {"t": "kept shouting", "b": "keep doing", "m": "不停地做"}
-      ]
-    },
-    "In ancient times, many nations worshipped different gods.": {
-      "ph": [
-        {"t": "In ancient times", "b": "in ancient times", "m": "在古代"}
-      ]
-    },
-    "Being an information technology, or IT, worker is not a job I envy.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "Being an information technology", "r": "主干"},
-          {"t": ", or IT, ", "r": "插入语"},
-          {"t": "worker is not a job", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "I envy", "r": "定语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "Being an information technology … worker 是动名词短语作主语，意思是「做信息技术工作者」；, or IT, 是插入语，给 information technology 补充简称。",
-          "I envy 是定语从句，先行词是 a job，省略的关系代词（that / which）在从句中作 envy 的宾语（I envy the job）。",
-          "书上把「做 IT 工作者这份工作」转成「羡慕从事信息技术（IT）工作的人」，把 a job 的定语从句改成谓语「羡慕」，所以译文主语变成了「我」。"
-        ],
-        "lit": "作为一名信息技术（IT）工作者不是我羡慕的工作。"
-      }
-    },
-    "She's jealous of my success.": {
-      "ph": [
-        {"t": "jealous of", "b": "be jealous of", "m": "忌妒"}
-      ]
+ "_note": "例句词组与语法解析（书外补充，AI 生成）",
+ "sents": {
+  "It was very considerate of him to wait.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It was very considerate of him",
+      "s": "你多半会翻成「它是他非常体贴的」。念一遍，不成话。It 在这里是个先占位置的形式主语，真正的内容在后面，眼睛往后找 to wait。of him 说的是「这件事体现出他怎么样」，considerate 是评价他这个人：体贴。\n→ 他真体贴"
+     },
+     {
+      "t": "to wait",
+      "s": "to wait 就是被夸的那件事：等。注意英文只说了「等」，没有「一直」「着」的意思，别替它加戏。\n→ 愿意等"
+     }
+    ],
+    "order": "英文先下评价、再说是哪件事；中文可以倒过来，先说做了什么，再夸一句。",
+    "sum": "他愿意等，真体贴。",
+    "cmp": "书上译成「他一直在等候着，真是体贴」，顺序和我一样，但多了「一直」「着」，原句 to wait 里没有这层意思，我这里不加。"
+   }
+  },
+  "The project wasted a considerable amount of time and money.": {
+   "ph": [
+    {
+     "t": "a considerable amount of",
+     "b": "a considerable amount of",
+     "m": "相当多的"
     }
+   ]
+  },
+  "Her ideas are worthy of serious consideration.": {
+   "ph": [
+    {
+     "t": "worthy of",
+     "b": "be worthy of",
+     "m": "值得"
+    }
+   ]
+  },
+  "It created a pool of labour for factories.": {
+   "ph": [
+    {
+     "t": "a pool of",
+     "b": "a pool of",
+     "m": "一批，大量"
+    }
+   ]
+  },
+  "What is needed is a frank exchange of views.": {
+   "ph": [
+    {
+     "t": "exchange of views",
+     "b": "exchange of views",
+     "m": "意见交换"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "What is needed",
+      "s": "你多半会翻成「什么是需要的」，听着像在问问题。这里 What 不是问，是「……的东西」：what is needed = 需要的东西。\n→ 需要的"
+     },
+     {
+      "t": "is a frank exchange of views",
+      "s": "exchange of views 你可能翻成「观点的交换」，太硬。把名词 exchange 换成动词说：「交换意见」。frank 在这里是「坦诚的」，不是人名。\n→ 是坦诚地交换意见"
+     }
+    ],
+    "sum": "需要的是坦诚地交换意见。",
+    "cmp": "意思一样。书上保留名词「意见交换」，我换成动词「交换意见」，更口语一点。"
+   }
+  },
+  "They make sensible decisions when facing moral dilemmas.": {
+   "ph": [
+    {
+     "t": "make sensible decisions",
+     "b": "make a decision",
+     "m": "做决定"
+    }
+   ]
+  },
+  "Particular emphasis will be placed on oral language training.": {
+   "ph": [
+    {
+     "t": "emphasis will be placed on",
+     "b": "place emphasis on",
+     "m": "重视"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Particular emphasis will be placed on",
+      "s": "你多半会翻成「特别的强调将被放在……上」。念一遍，别扭。place emphasis on 是一个整体，就是「重视」。被动句，主语 emphasis 是东西，中文不会让「强调」被放在哪儿，改成人来做：重视。Particular 是「特别」。\n→ 将特别重视"
+     },
+     {
+      "t": "oral language training",
+      "s": "oral 你可能只见过「口服」。这里是「口头的」，oral language 就是口语，training 是训练。\n→ 口语训练"
+     }
+    ],
+    "order": "原句是被动，东西当主语；中文改成「重视」的动作，把 oral language training 放到后面做宾语。",
+    "sum": "将特别重视口语训练。",
+    "cmp": "书上译成「口语训练将被予以非同寻常的重视」，保留了被动。「非同寻常」比 Particular 的「特别」重，我这里用「特别」，更口语。"
+   }
+  },
+  "Teachers don't have to share the same racial or ethnic background as their students.": {
+   "ph": [
+    {
+     "t": "the same",
+     "b": "the same … as",
+     "m": "与……相同"
+    },
+    {
+     "t": "as",
+     "b": "the same … as",
+     "m": "与……相同"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Teachers don't have to share",
+      "s": "你可能会翻成「老师不准分享」，两处都错了。don't have to 是「不必」，不是「不准」；share 在这里不是「分享」，是「共有、具有」。\n→ 老师不必具有"
+     },
+     {
+      "t": "the same racial or ethnic background as their students",
+      "s": "看到 the same，眼睛往后找 as：the same … as 是「和……一样的」，as 后面就是比较的对象 their students。racial or ethnic 是「种族或民族」。\n→ 和学生相同的种族或民族背景"
+     }
+    ],
+    "order": "英文把 as their students 放在最后，中文要先说和谁比，所以把「和学生」提到前面。",
+    "sum": "老师不必和学生有相同的种族或民族背景。",
+    "cmp": "意思一样。书上把「老师和学生」放在一起做主语，我保留老师做主语，更贴近原句。"
+   }
+  },
+  "A new technology has the potential to change modern society in radical ways.": {
+   "ph": [
+    {
+     "t": "has the potential to",
+     "b": "have the potential to do",
+     "m": "有可能做"
+    }
+   ]
+  },
+  "Do violent video games lead to violence?": {
+   "ph": [
+    {
+     "t": "lead to",
+     "b": "lead to",
+     "m": "导致"
+    }
+   ]
+  },
+  "She accused the press photographers of violating her privacy.": {
+   "ph": [
+    {
+     "t": "accused",
+     "b": "accuse sb. of",
+     "m": "指责某人做了……"
+    },
+    {
+     "t": "of",
+     "b": "accuse sb. of",
+     "m": "指责某人做了……"
+    }
+   ]
+  },
+  "I wouldn't have dared to defy my teachers.": {
+   "ph": [
+    {
+     "t": "dared to",
+     "b": "dare to do",
+     "m": "敢于做"
+    }
+   ]
+  },
+  "Dogs can be trained to obey orders.": {
+   "ph": [
+    {
+     "t": "be trained to",
+     "b": "be trained to do",
+     "m": "被训练去做"
+    }
+   ]
+  },
+  "Emergency workers have made contact with the miners via a radio.": {
+   "ph": [
+    {
+     "t": "made contact with",
+     "b": "make contact with",
+     "m": "与……取得联系"
+    }
+   ]
+  },
+  "A teacher must be capable of infinite patience.": {
+   "ph": [
+    {
+     "t": "be capable of",
+     "b": "be capable of",
+     "m": "有……的能力"
+    }
+   ]
+  },
+  "No definite conclusions can be drawn from this study.": {
+   "ph": [
+    {
+     "t": "conclusions can be drawn",
+     "b": "draw a conclusion",
+     "m": "得出结论"
+    }
+   ]
+  },
+  "The dominance of television was not confined to our living rooms.": {
+   "ph": [
+    {
+     "t": "confined to",
+     "b": "be confined to",
+     "m": "局限于"
+    }
+   ]
+  },
+  "Groups like these will help you refine your analytical skills and enable you to express yourself better.": {
+   "ph": [
+    {
+     "t": "help you refine",
+     "b": "help sb. do",
+     "m": "帮助你做……"
+    },
+    {
+     "t": "enable you to",
+     "b": "enable sb. to do",
+     "m": "使你能够做……"
+    },
+    {
+     "t": "express yourself",
+     "b": "express oneself",
+     "m": "表达自己"
+    }
+   ]
+  },
+  "If you do not, you could be fined up to £50.": {
+   "ph": [
+    {
+     "t": "up to",
+     "b": "up to",
+     "m": "最多达"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "If you do not",
+      "s": "你多半会翻成「如果你不」，话说一半。do not 后面是空的，说明省略了一个动作；单看这一句看不出是什么，中文就用「这样做」顶上。\n→ 如果你不这样做"
+     },
+     {
+      "t": "you could be fined",
+      "s": "fined 你可能当成「好的」。fine 在这里是动词「罚款」，be fined 是被罚款。再看 could：前面的 if 说的是真实可能发生的事，不是和事实相反，所以不是虚拟，could 表示「有可能」。\n→ 你可能会被罚款"
+     },
+     {
+      "t": "up to £50",
+      "s": "up to 是「最多达」。金额放前面还是放后面？中文习惯把数量说成「最高……的罚款」。\n→ 最高 50 英镑"
+     }
+    ],
+    "order": "英文把金额放在最后，中文可以把「最高 50 英镑」放到「罚款」前面。",
+    "sum": "如果你不这样做，可能会被处以最高 50 英镑的罚款。",
+    "cmp": "和书上一样。"
+   }
+  },
+  "The researcher studied the videotapes to analyse the matches in detail.": {
+   "ph": [
+    {
+     "t": "in detail",
+     "b": "in detail",
+     "m": "详细地"
+    }
+   ]
+  },
+  "With this comprehensive knowledge of the history of art, he has since become a professional painter.": {
+   "ph": [
+    {
+     "t": "knowledge of",
+     "b": "knowledge of",
+     "m": "对……的了解"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "With this comprehensive knowledge of the history of art",
+      "s": "你多半会翻成「带着这个全面的艺术史的知识」，太像翻译腔。句首的 With 在这里是「凭借」。knowledge of 是「对……的了解」，把名词换成动词：「了解艺术史」。\n→ 凭借对艺术史的全面了解"
+     },
+     {
+      "t": "he has since become a professional painter",
+      "s": "since 你可能当成「自从」，但这里后面没有接句子，是副词，「从那以后」。has become 是现在完成，说从那时到现在的结果。professional 是「专业的」。\n→ 他从此成了一名专业画家"
+     }
+    ],
+    "sum": "凭借对艺术史的全面了解，他从那以后成了一名专业画家。",
+    "cmp": "和书上基本一样，书上用「从此」，我用「从那以后」，是同一个意思。"
+   }
+  },
+  "It is necessary to use terms other than gamification for some professions.": {
+   "ph": [
+    {
+     "t": "other than",
+     "b": "other than",
+     "m": "除……以外"
+    }
+   ]
+  },
+  "It's commonly known that certain diseases are linked with occupations.": {
+   "ph": [
+    {
+     "t": "are linked with",
+     "b": "be linked with",
+     "m": "与……有关"
+    }
+   ]
+  },
+  "It's creating some tension between newcomers and veterans.": {
+   "ph": [
+    {
+     "t": "tension between",
+     "b": "tension between … and",
+     "m": "……之间的紧张关系"
+    },
+    {
+     "t": "and",
+     "b": "tension between … and",
+     "m": "……之间的紧张关系"
+    }
+   ]
+  },
+  "It is an attempt to clarify misunderstanding about the origin of language.": {
+   "ph": [
+    {
+     "t": "an attempt to",
+     "b": "an attempt to do",
+     "m": "试图做"
+    }
+   ]
+  },
+  "The authorities refused to confirm any details.": {
+   "ph": [
+    {
+     "t": "refused to",
+     "b": "refuse to do",
+     "m": "拒绝做"
+    }
+   ]
+  },
+  "He doesn't feel at ease in the firm.": {
+   "ph": [
+    {
+     "t": "feel at ease",
+     "b": "feel at ease",
+     "m": "感到自在"
+    }
+   ]
+  },
+  "The state affirms its supreme power over the individuals within its own borders.": {
+   "ph": [
+    {
+     "t": "power over",
+     "b": "power over",
+     "m": "对……的权力"
+    }
+   ]
+  },
+  "She claimed to hate all art.": {
+   "ph": [
+    {
+     "t": "claimed to",
+     "b": "claim to do",
+     "m": "声称做"
+    }
+   ]
+  },
+  "The president proclaimed a state of emergency.": {
+   "ph": [
+    {
+     "t": "a state of emergency",
+     "b": "a state of emergency",
+     "m": "紧急状态"
+    }
+   ]
+  },
+  "The film met with considerable critical and public acclaim.": {
+   "ph": [
+    {
+     "t": "met with",
+     "b": "meet with",
+     "m": "得到，遇到"
+    }
+   ]
+  },
+  "The player proceeded to rub his gloves and then exclaimed.": {
+   "ph": [
+    {
+     "t": "proceeded to",
+     "b": "proceed to do",
+     "m": "接着做"
+    }
+   ]
+  },
+  "Pay attention to the whispers so you won't have to hear the screams.": {
+   "ph": [
+    {
+     "t": "Pay attention to",
+     "b": "pay attention to",
+     "m": "留心"
+    },
+    {
+     "t": "have to",
+     "b": "have to",
+     "m": "不得不"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Pay attention to the whispers",
+      "s": "你多半会翻成「付注意到低语」。pay attention to 是一个整体，「留意」，这个 to 是介词，后面接名词 the whispers：低声细语。句子开头没有主语，是在对人下命令。\n→ 留意那些低声细语"
+     },
+     {
+      "t": "so you won't have to hear the screams",
+      "s": "so 你可能翻成「所以」，这里是「这样一来」。won't have to 是「不必」，不是「不许」。screams 是尖叫、嘶吼。\n→ 这样你就不必听到嘶吼声了"
+     }
+    ],
+    "sum": "留意那些低声细语，这样你就不必听到嘶吼声了。",
+    "cmp": "书上译成「便听不见嘶吼声」，把「不必听」变成了「听不见」，意思有点偏：原句是不用去听，而不是听不到。"
+   }
+  },
+  "He kept shouting, blowing his whistle to stop the excited players.": {
+   "ph": [
+    {
+     "t": "kept shouting",
+     "b": "keep doing",
+     "m": "不停地做"
+    }
+   ]
+  },
+  "In ancient times, many nations worshipped different gods.": {
+   "ph": [
+    {
+     "t": "In ancient times",
+     "b": "in ancient times",
+     "m": "在古代"
+    }
+   ]
+  },
+  "Being an information technology, or IT, worker is not a job I envy.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Being an information technology, or IT, worker",
+      "s": "一开头就是 Being，别慌。-ing 开头当主语，就是「做某事」这件事。中间 or IT 是插进来的说明，括号里补一下就行。worker 是做这类工作的人。\n→ 做信息技术（IT）工作的人"
+     },
+     {
+      "t": "is not a job I envy",
+      "s": "你多半会翻成「不是一份我羡慕的工作」。意思不错，但整句连起来是「做 IT 的人不是一份工作」，硬。先找 envy：a job 后面藏了 that，a job (that) I envy，放回去是「我羡慕这份工作」。envy 在这里是动词「羡慕」。所以不如转个方向：我不羡慕。\n→ 我并不羡慕"
+     }
+    ],
+    "order": "原句是「东西当主语」，中文改成「我」当主语，把 a job I envy 拆开说：我不羡慕做 IT 的人。",
+    "sum": "我并不羡慕做信息技术（IT）工作的人。",
+    "cmp": "和书上基本一样。书上说「羡慕……的人」，原句羡慕的是那份工作（a job），差别很小，中文这样说更自然。"
+   }
+  },
+  "She's jealous of my success.": {
+   "ph": [
+    {
+     "t": "jealous of",
+     "b": "be jealous of",
+     "m": "忌妒"
+    }
+   ]
   }
+ }
 }
