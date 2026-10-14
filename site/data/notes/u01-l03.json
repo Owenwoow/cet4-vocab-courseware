@@ -1,0 +1,445 @@
+{
+  "_note": "例句词组与语法解析（书外补充，AI 生成）",
+  "sents": {
+    "Li Jiang, an ancient town in Yunnan Province, is one of the most famous tourist attractions in China.": {
+      "ph": [
+        {"t": "one of the most", "b": "one of the most", "m": "最……之一"},
+        {"t": "tourist attractions", "b": "tourist attraction", "m": "旅游景点"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Li Jiang", "r": "主干"},
+          {"t": ", ", "r": ""},
+          {"t": "an ancient town in Yunnan Province", "r": "同位语"},
+          {"t": ", ", "r": ""},
+          {"t": "is one of the most famous tourist attractions in China", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "an ancient town in Yunnan Province 是 Li Jiang 的同位语，夹在主语和谓语之间说明它的身份，所以书上同样用逗号隔开，译成「丽江，云南省的一个古镇，是……」。",
+          "one of the most + 最高级 + 复数名词 是「最……之一」，of 后面的名词必须用复数（attractions），书上译成「最著名的……之一」。"
+        ],
+        "lit": "丽江，云南省的一个古老城镇，是中国最著名的旅游景点中的一个。"
+      }
+    },
+    "There is a growing consensus of opinion on this issue.": {
+      "ph": [
+        {"t": "consensus of opinion", "b": "consensus of opinion", "m": "意见一致"}
+      ]
+    },
+    "The president decided to send in the troops.": {
+      "ph": [
+        {"t": "send in", "b": "send in", "m": "派遣（部队）"}
+      ]
+    },
+    "She was involved in the production process.": {
+      "ph": [
+        {"t": "was involved in", "b": "be involved in", "m": "参与"}
+      ]
+    },
+    "They must make efforts to increase women's access to health care.": {
+      "ph": [
+        {"t": "make efforts to", "b": "make efforts to do", "m": "努力做某事"},
+        {"t": "access to", "b": "access to", "m": "获得……的机会"},
+        {"t": "health care", "b": "health care", "m": "医疗服务"}
+      ]
+    },
+    "The trial assessed the effectiveness of an early mathematics intervention aimed at preschoolers.": {
+      "ph": [
+        {"t": "aimed at", "b": "aim at", "m": "针对"}
+      ]
+    },
+    "They tend to push themselves beyond the limits of their ability.": {
+      "ph": [
+        {"t": "tend to", "b": "tend to do", "m": "倾向于做"},
+        {"t": "push themselves", "b": "push oneself", "m": "逼迫自己"},
+        {"t": "beyond the limits of", "b": "beyond the limits of", "m": "超出……的极限"}
+      ]
+    },
+    "Wheat was in surplus that year.": {
+      "ph": [
+        {"t": "in surplus", "b": "in surplus", "m": "过剩"}
+      ]
+    },
+    "They make extra efforts to research their own products.": {
+      "ph": [
+        {"t": "make extra efforts to", "b": "make efforts to do", "m": "更加努力去做"}
+      ]
+    },
+    "We cover costs up to 600 pounds and then you pay the excess.": {
+      "ph": [
+        {"t": "up to", "b": "up to", "m": "最多达到"}
+      ]
+    },
+    "Her way to success was full of pains and frustrations.": {
+      "ph": [
+        {"t": "was full of", "b": "be full of", "m": "充满"}
+      ]
+    },
+    "Immigrant parents believe that academic excellence will allow their children equal chances to succeed in the future.": {
+      "ph": [
+        {"t": "allow their children equal chances", "b": "allow sb. sth.", "m": "使某人拥有某物"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Immigrant parents believe", "r": "主干"},
+          {"t": " that ", "r": ""},
+          {"t": "academic excellence will allow their children equal chances to succeed in the future", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导 believe 的宾语从句，书上译成「认为，……」，从句内容放在后面。",
+          "从句主语 academic excellence 是抽象的无生命名词，allow 带双宾语（their children + equal chances），直译「优秀成绩允许孩子机会」生硬，所以书上译成「将使他们的孩子……拥有……机会」。",
+          "to succeed in the future 是不定式作后置定语，修饰 equal chances，书上把它前置成「成功的机会」，并把 in the future 提到前面译成「在未来」。"
+        ],
+        "lit": "移民父母相信，学术上的卓越将允许他们的孩子在未来获得成功的平等机会。"
+      }
+    },
+    "The team excels at turning defence into attack.": {
+      "ph": [
+        {"t": "excels at", "b": "excel at", "m": "擅长"},
+        {"t": "turning", "b": "turn … into", "m": "把……转变成"},
+        {"t": "into", "b": "turn … into", "m": "把……转变成"}
+      ]
+    },
+    "No longer have we the inclination to let ourselves wander through fields of knowledges, ready to be surprised.": {
+      "ph": [
+        {"t": "No longer", "b": "no longer", "m": "不再"},
+        {"t": "inclination to", "b": "inclination to do", "m": "倾向于做"},
+        {"t": "wander through", "b": "wander through", "m": "漫游于"},
+        {"t": "ready to", "b": "be ready to do", "m": "准备好做"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "No longer have we the inclination to let ourselves wander through fields of knowledges", "r": "主干"},
+          {"t": ", ", "r": ""},
+          {"t": "ready to be surprised", "r": "状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "否定词组 No longer 放句首，引起部分倒装：have 在这里是实义动词「有」，直接提到主语 we 前面（正常语序是 We no longer have…），书上还原成「我们不再倾向于……」。",
+          "to let ourselves wander… 是不定式作 inclination 的后置定语，let ourselves wander 是 let sb. do（让自己漫游），书上译成「倾向于让自己……漫游」。",
+          "ready to be surprised 是形容词短语，作伴随状语，逻辑主语是 ourselves；to be surprised 是被动，书上转成主动的「准备好接受惊喜」。"
+        ],
+        "lit": "不再有我们倾向于让自己在知识的领域中漫游，准备好被惊讶。"
+      }
+    },
+    "But innovation, broadly defined, is the crucial ingredient in all economic progress.": {
+      "ph": [
+        {"t": "ingredient in", "b": "ingredient in", "m": "……的要素"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "But innovation", "r": "主干"},
+          {"t": ", ", "r": ""},
+          {"t": "broadly defined", "r": "非谓语"},
+          {"t": ", ", "r": ""},
+          {"t": "is the crucial ingredient in all economic progress", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "broadly defined 是过去分词短语，夹在主语和谓语之间，相当于 when it is broadly defined（innovation 被广义地定义），与 innovation 是被动关系。",
+          "书上把它前置成定语「广义上的创新」，被动的「被定义」转成了「广义上的」，读起来更顺。"
+        ],
+        "lit": "但是创新，被广泛地定义，是所有经济进步中的关键成分。"
+      }
+    },
+    "They tend to be a lot more aggressive than right-handed people.": {
+      "ph": [
+        {"t": "tend to", "b": "tend to do", "m": "往往会"}
+      ]
+    },
+    "This is how society moves forward.": {
+      "ph": [
+        {"t": "moves forward", "b": "move forward", "m": "前进"}
+      ]
+    },
+    "The shaking is caused by the motion of two plates.": {
+      "ph": [
+        {"t": "is caused by", "b": "be caused by", "m": "由……引起"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "The shaking is caused by the motion of two plates", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "is caused by 是被动结构，by 后面是动作的发出者。书上译成「是由……引起的」，保留了被动意味，但用的是「由……引起」而不是生硬的「被引起」。",
+          "the motion of two plates 是名词化结构（motion 来自 move），书上展开成主谓式的「两个板块的运动」，即两个板块在运动。"
+        ],
+        "lit": "震动被两个板块的运动所引起。"
+      }
+    },
+    "Our bombers have knocked out the mobile launchers.": {
+      "ph": [
+        {"t": "knocked out", "b": "knock out", "m": "摧毁"}
+      ]
+    },
+    "The population of this animal has remained static in recent years.": {
+      "ph": [
+        {"t": "remained static", "b": "remain static", "m": "保持不变"},
+        {"t": "in recent years", "b": "in recent years", "m": "近年来"}
+      ]
+    },
+    "You have drawn hostile conclusions about unseen people and their motives.": {
+      "ph": [
+        {"t": "drawn", "b": "draw … conclusions about", "m": "对……得出结论"},
+        {"t": "conclusions about", "b": "draw … conclusions about", "m": "对……得出结论"}
+      ]
+    },
+    "Effective measures should be taken to motivate employees to set up offices at home.": {
+      "ph": [
+        {"t": "measures", "b": "take measures", "m": "采取措施"},
+        {"t": "be taken", "b": "take measures", "m": "采取措施"},
+        {"t": "motivate", "b": "motivate sb. to do", "m": "激励某人做某事"},
+        {"t": "to", "b": "motivate sb. to do", "m": "激励某人做某事"},
+        {"t": "set up", "b": "set up", "m": "设立"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Effective measures should be taken", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to motivate employees to set up offices at home", "r": "目的状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "should be taken 是被动，没有 by 引出施动者，书上译成无主语的「应采取有效措施」，不说「措施应被采取」。",
+          "to motivate… 是不定式作目的状语，书上译成「采取……以激励……」的目的，没有逐字照搬语序。",
+          "motivate employees to set up 是 motivate sb. to do：employees 既是 motivate 的宾语，又是 set up 的逻辑主语，所以译成「激励员工居家办公」。"
+        ],
+        "lit": "有效的措施应该被采取，以激励员工在家里设立办公室。"
+      }
+    },
+    "Above all, it's the emotions one experiences in teaching that facilitate learning.": {
+      "ph": [
+        {"t": "Above all", "b": "above all", "m": "最重要的是"},
+        {"t": "it's", "b": "it is … that", "m": "强调句型：正是……"},
+        {"t": "that", "b": "it is … that", "m": "强调句型：正是……"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Above all", "r": "状语"},
+          {"t": ", ", "r": ""},
+          {"t": "it's the emotions", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "one experiences in teaching", "r": "定语从句"},
+          {"t": " ", "r": ""},
+          {"t": "that facilitate learning", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "it's … that 是强调句型，去掉 it's 和 that 后还原为 the emotions one experiences in teaching facilitate learning；被强调的是主语 the emotions…，意思是「正是这些情感促进了学习」。",
+          "one experiences in teaching 是定语从句，省略了关系代词 that/which，先行词是 the emotions，关系词在从句里作 experiences 的宾语，书上前置成「人们在教学中体验到的情感」。",
+          "that 后面的谓语 facilitate 用原形而不是 facilitates，是因为它的主语是复数的 the emotions，不是 one。"
+        ],
+        "lit": "最重要的是，正是人在教学中体验的那些情感促进学习。"
+      }
+    },
+    "Once you get beyond the initial learning curve, knitting and crocheting can lower heart rate and blood pressure.": {
+      "ph": [
+        {"t": "learning curve", "b": "learning curve", "m": "学习曲线"},
+        {"t": "heart rate", "b": "heart rate", "m": "心率"},
+        {"t": "blood pressure", "b": "blood pressure", "m": "血压"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Once you get beyond the initial learning curve", "r": "时间状语"},
+          {"t": ", ", "r": ""},
+          {"t": "knitting and crocheting can lower heart rate and blood pressure", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "Once 在这里是连词，引导时间状语从句，意思是「一旦……」，带一点条件意味，所以书上译成「一旦你超越了……」，后面接「就可以……」。",
+          "从句里 get 用一般现在时，表示将来或一般情况（时间状语从句不用将来时），所以书上没有加「将」。",
+          "knitting and crocheting 是动名词作主语，书上直接译成名词性的「针织和钩编」。"
+        ],
+        "lit": "一旦你越过最初的学习曲线，编织和钩织能够降低心率和血压。"
+      }
+    },
+    "In 1970, the percentage of women majoring in engineering was less than 1%.": {
+      "ph": [
+        {"t": "majoring in", "b": "major in", "m": "主修"}
+      ]
+    },
+    "Your university is selecting some students to teach kids in remote rural areas during the coming vacation.": {
+      "ph": [
+        {"t": "selecting", "b": "select sb. to do", "m": "选拔某人去做某事"},
+        {"t": "to", "b": "select sb. to do", "m": "选拔某人去做某事"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Your university is selecting some students", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to teach kids in remote rural areas during the coming vacation", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "is selecting 是现在进行时，表示动作正在进行，书上译成「正在选拔」。",
+          "to teach… 是不定式，紧跟在 students 后面，说明选这些学生是去做什么。书上把它拆成后面的分句「（让他们）在……去……教孩子们」，并把 during the coming vacation 提到「去」前面。",
+          "the coming vacation 里的 coming 是现在分词作定语，书上译成「即将到来的假期」。"
+        ],
+        "lit": "你们的大学正在选拔一些学生去在即将到来的假期期间在偏远的农村地区教孩子们。"
+      }
+    },
+    "Watching the agent solve problems allows them to see their knowledge put into action.": {
+      "ph": [
+        {"t": "allows", "b": "allow sb. to do", "m": "使某人能够做某事"},
+        {"t": "to", "b": "allow sb. to do", "m": "使某人能够做某事"},
+        {"t": "put into action", "b": "put into action", "m": "付诸行动"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Watching the agent solve problems", "r": "主干"},
+          {"t": " allows them to see ", "r": "主干"},
+          {"t": "their knowledge put into action", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "Watching the agent solve problems 是动名词短语作主语，是无生命的「动作」作主语，allows 直译成「允许」生硬，书上译成「使他们得以……」。",
+          "watch the agent solve 是「感官动词 + 宾语 + 省略 to 的不定式」，书上译成「观看代理人解决问题」。",
+          "see their knowledge put into action 是 see + 宾语 + 过去分词：知识与 put 是被动关系（知识被付诸行动），书上译成主动的「知识付诸行动」。"
+        ],
+        "lit": "看着代理人解决问题允许他们看到他们的知识被付诸行动。"
+      }
+    },
+    "They continued to behave as they did in the beginning.": {
+      "ph": [
+        {"t": "in the beginning", "b": "in the beginning", "m": "起初"}
+      ]
+    },
+    "He is not familiar with the exact details of the goods.": {
+      "ph": [
+        {"t": "familiar with", "b": "be familiar with", "m": "熟悉"}
+      ]
+    },
+    "It calls for people's actual action to reduce the waste.": {
+      "ph": [
+        {"t": "calls for", "b": "call for", "m": "需要，呼吁"}
+      ]
+    },
+    "Taken in a practical way, saving for post-work years is like giving money away to others.": {
+      "ph": [
+        {"t": "saving for", "b": "save for", "m": "为……存钱"},
+        {"t": "giving", "b": "give … away", "m": "送出"},
+        {"t": "away", "b": "give … away", "m": "送出"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Taken in a practical way", "r": "非谓语"},
+          {"t": ", ", "r": ""},
+          {"t": "saving for post-work years is like giving money away to others", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "Taken in a practical way 是过去分词短语作状语，逻辑主语是主句的主语 saving…（存钱这件事被这样看待），相当于 If it is taken in a practical way。书上把被动译成「从实际的角度来看」。",
+          "saving for post-work years 和 giving money away 都是动名词短语，分别作主语和 like 的宾语，书上译成动宾短语「为退休后的生活存钱」「给别人钱」。"
+        ],
+        "lit": "以实际的方式被看待，为工作后的年月存钱就像把钱送给别人。"
+      }
+    },
+    "The virtual assistant became so advanced and realistic that the students didn't know she was a computer.": {
+      "ph": [
+        {"t": "so", "b": "so … that", "m": "如此……以至于"},
+        {"t": "that", "b": "so … that", "m": "如此……以至于"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "The virtual assistant became so advanced and realistic", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that the students didn't know she was a computer", "r": "结果状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "so + 形容词 + that 引导结果状语从句，意思是「如此……以至于……」，书上也按这个顺序译。",
+          "结果状语从句内部还有一层：didn't know 后面省略了 that，she was a computer 是 know 的宾语从句。she 指前面的 virtual assistant，书上译成「它」。"
+        ],
+        "lit": "这个虚拟助手变得如此先进和逼真，以至于学生们不知道她是一台电脑。"
+      }
+    },
+    "Only a tiny fraction of Americans change any behaviours in an effort to preserve their privacy.": {
+      "ph": [
+        {"t": "a tiny fraction of", "b": "a fraction of", "m": "一小部分"},
+        {"t": "in an effort to", "b": "in an effort to do", "m": "为了（努力）做某事"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Only a tiny fraction of Americans change any behaviours", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "in an effort to preserve their privacy", "r": "目的状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "Only 修饰的是主语 a tiny fraction of Americans，所以句子没有倒装；谓语 change 用复数原形，因为 a fraction of 后面的 Americans 才是实际的主体，书上译成「只有一小部分美国人……改变」。",
+          "in an effort to preserve 表示目的，意思是「为了（努力）保护」，书上把它提到前面，译成「为了保护自己的隐私而改变……」。"
+        ],
+        "lit": "只有很小一部分美国人改变任何行为，以努力保护他们的隐私。"
+      }
+    },
+    "We get a fairly large portion of calories from fast food and snacks.": {
+      "ph": [
+        {"t": "portion of", "b": "a portion of", "m": "一部分"}
+      ]
+    },
+    "As is now the case in many big firms, a large proportion of staff are temporary contractors.": {
+      "ph": [
+        {"t": "As is now the case in", "b": "as is the case in", "m": "……里也是这样"},
+        {"t": "a large proportion of", "b": "a large proportion of", "m": "很大一部分"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "As is now the case in many big firms", "r": "非限制性定语从句"},
+          {"t": ", ", "r": ""},
+          {"t": "a large proportion of staff are temporary contractors", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "As is the case 是 as 引导的非限制性定语从句，as 的先行词是后面整个主句的内容，在从句里作 is 的主语，the case 是表语；as 从句可以放句首，意思是「正如……的情况那样」。",
+          "书上没有单独译出「情况如此」，而是把从句的内容并进主句，译成「现在许多大公司的大部分员工都是……」。",
+          "a large proportion of staff 作主语时，谓语 are 要跟 of 后面的名词，staff 这里按复数用，所以是 are。"
+        ],
+        "lit": "正如现在在许多大公司中的情况，大比例的员工是临时合同工。"
+      }
+    },
+    "The human skeleton consists of 206 bones.": {
+      "ph": [
+        {"t": "consists of", "b": "consist of", "m": "由……组成"}
+      ]
+    },
+    "She leaned against the frame of the door.": {
+      "ph": [
+        {"t": "leaned against", "b": "lean against", "m": "靠在"}
+      ]
+    },
+    "The room was filled with smoke and flame.": {
+      "ph": [
+        {"t": "was filled with", "b": "be filled with", "m": "充满"}
+      ]
+    },
+    "It had burned for 45 minutes by the time firefighters arrived.": {
+      "ph": [
+        {"t": "by the time", "b": "by the time", "m": "到……的时候"}
+      ]
+    },
+    "The car keeps flashing its headlights.": {
+      "ph": [
+        {"t": "keeps flashing", "b": "keep doing", "m": "一直做"}
+      ]
+    },
+    "The memory of the recent great recession is still fresh in their mind.": {
+      "ph": [
+        {"t": "fresh in their mind", "b": "be fresh in one's mind", "m": "记忆犹新"}
+      ]
+    },
+    "The arts began to flourish at that time.": {
+      "ph": [
+        {"t": "at that time", "b": "at that time", "m": "在那时"}
+      ]
+    },
+    "He shaped delicious masterpieces out of flour, butter and sugar.": {
+      "ph": [
+        {"t": "shaped", "b": "shape … out of", "m": "用……塑造"},
+        {"t": "out of", "b": "shape … out of", "m": "用……塑造"}
+      ]
+    }
+  }
+}

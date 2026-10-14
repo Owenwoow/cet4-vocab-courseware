@@ -1,0 +1,326 @@
+{
+  "_note": "例句词组与语法解析（书外补充，AI 生成）",
+  "sents": {
+    "They found the space in the cage too small to stay in.": {
+      "ph": [
+        {"t": "too", "b": "too … to do", "m": "太……而不能做"},
+        {"t": "to", "b": "too … to do", "m": "太……而不能做"}
+      ]
+    },
+    "The idea of a parallel universe is hard to grasp.": {
+      "ph": [{"t": "is hard to", "b": "be hard to do", "m": "很难做到"}]
+    },
+    "We will unite in fighting crime.": {
+      "ph": [{"t": "unite in", "b": "unite in doing", "m": "联合起来做"}]
+    },
+    "People from diverse backgrounds no longer socialise.": {
+      "ph": [{"t": "no longer", "b": "no longer", "m": "不再"}]
+    },
+    "You need to ensure that you've converted the data properly.": {
+      "ph": [
+        {"t": "need to", "b": "need to do", "m": "需要做"},
+        {"t": "ensure that", "b": "ensure that", "m": "确保"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "You need to ensure", "r": "主干"},
+          {"t": " that ", "r": ""},
+          {"t": "you've converted the data properly", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导 ensure 的宾语从句，从句主语 you 和主句主语相同，书上只译一次「您」，把从句直接接在「确保」后面。",
+          "you've converted 是现在完成时，强调转换这件事要在现在之前完成，所以书上加「已经」，译成「已经正确转换了数据」。"
+        ],
+        "lit": "你需要确保，你已经转换了数据，正确地。"
+      }
+    },
+    "They are trying to prevent, limit or even reverse disease by changing what patients eat.": {
+      "ph": [{"t": "are trying to", "b": "try to do", "m": "试图做"}],
+      "an": {
+        "parts": [
+          {"t": "They are trying to prevent, limit or even reverse disease", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "by changing what patients eat", "r": "方式状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "by changing… 是 by + 动名词，表示方式或手段，放在句末；书上把它提到前面译成「通过改变……」，再接主干。",
+          "what patients eat 是 changing 的宾语从句，what 在从句里作 eat 的宾语；书上把它压缩成名词短语「患者的饮食」，不译成「患者吃的东西」。",
+          "prevent、limit、reverse 三个动词并列，共用宾语 disease，书上写成「预防、限制甚至逆转疾病」。"
+        ],
+        "lit": "他们正试图预防、限制或甚至逆转疾病，通过改变患者吃什么。"
+      }
+    },
+    "Funding will be awarded on an annual basis.": {
+      "ph": [{"t": "on an annual basis", "b": "on a … basis", "m": "按年度"}]
+    },
+    "Contrary to popular belief, many cats dislike milk.": {
+      "ph": [{"t": "Contrary to", "b": "contrary to", "m": "与……相反"}]
+    },
+    "In contrast, the recent surge in world grain prices is trend-driven.": {
+      "ph": [
+        {"t": "In contrast", "b": "in contrast", "m": "相比之下"},
+        {"t": "surge in", "b": "surge in", "m": "……的激增"}
+      ]
+    },
+    "They tried to meet astronauts' specific requirements.": {
+      "ph": [
+        {"t": "tried to", "b": "try to do", "m": "试图做"},
+        {"t": "meet", "b": "meet … requirements", "m": "满足……的要求"},
+        {"t": "requirements", "b": "meet … requirements", "m": "满足……的要求"}
+      ]
+    },
+    "The island is truly a heaven on earth.": {
+      "ph": [{"t": "heaven on earth", "b": "heaven on earth", "m": "人间天堂"}]
+    },
+    "The interview came live by satellite from Hollywood.": {
+      "ph": [{"t": "by satellite", "b": "by satellite", "m": "通过卫星"}]
+    },
+    "It makes us wonder if scientists can send a man to the moon.": {
+      "ph": [
+        {"t": "makes us wonder", "b": "make sb. do", "m": "使某人……"},
+        {"t": "send", "b": "send … to", "m": "把……送往"},
+        {"t": "to", "b": "send … to", "m": "把……送往"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "It makes us wonder", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "if scientists can send a man to the moon", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "主语 It 指前文提到的事，是无生命主语，直译「它使我们想知道」；书上改成「这使我们想知道」，用「这」承接上文。",
+          "make sb. do 是使役结构，makes us wonder 里 us 是宾语、wonder 是省略 to 的不定式作补语。",
+          "if 在 wonder 后引导宾语从句，意思是「是否」，不是条件句；所以书上译成「能否把人送上月球」。"
+        ],
+        "lit": "它使我们想知道是否科学家能送一个人到月亮上。"
+      }
+    },
+    "It takes time to develop new technology.": {
+      "ph": [{"t": "takes time to", "b": "it takes time to do", "m": "做某事需要时间"}]
+    },
+    "Lunch boxes have evolved along with the transformation of schools.": {
+      "ph": [{"t": "along with", "b": "along with", "m": "随着，与……一起"}]
+    },
+    "The job involves me travelling all over the country.": {
+      "ph": [
+        {"t": "involves me travelling", "b": "involve sb. doing", "m": "需要某人做"},
+        {"t": "all over", "b": "all over", "m": "遍及"}
+      ]
+    },
+    "It contributes greatly to the advance of society as a whole.": {
+      "ph": [
+        {"t": "contributes greatly to", "b": "contribute to", "m": "对……做出贡献"},
+        {"t": "as a whole", "b": "as a whole", "m": "整体上，整个"}
+      ]
+    },
+    "When they look ahead, they see roadblocks to their success.": {
+      "ph": [
+        {"t": "look ahead", "b": "look ahead", "m": "展望未来"},
+        {"t": "roadblocks to", "b": "roadblock to", "m": "……的障碍"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "When they look ahead", "r": "时间状语"},
+          {"t": ", ", "r": ""},
+          {"t": "they see roadblocks to their success", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "When 引导时间状语从句，放在句首，书上顺序不变；look ahead 这里不是「向前看」，而是引申的「展望未来」。",
+          "roadblocks to their success 是名词 + to 的结构，to 表示障碍所指向的对象；书上把它转成动词定语「阻碍成功的重重障碍」，复数 roadblocks 译成「重重」。"
+        ],
+        "lit": "当他们向前看时，他们看见通向他们成功的路障。"
+      }
+    },
+    "Do you approve of my idea?": {
+      "ph": [{"t": "approve of", "b": "approve of", "m": "赞成，同意"}]
+    },
+    "So far there has been no proof that the knife belonged to her.": {
+      "ph": [
+        {"t": "So far", "b": "so far", "m": "到目前为止"},
+        {"t": "belonged to", "b": "belong to", "m": "属于"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "So far there has been no proof", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that the knife belonged to her", "r": "同位语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导 proof 的同位语从句：从句 the knife belonged to her 本身成分完整，that 不作成分，只是说明证据的具体内容，所以书上拆成动词「证明那把刀子是她的」。",
+          "no proof 是 no + 名词的否定，书上译成「还没有证据」；So far 与现在完成时 has been 搭配，表示从过去到现在的状态，译成「到目前为止」。",
+          "belonged 用过去时，是因为刀的归属是过去的事，不是与现在相反的虚拟。"
+        ],
+        "lit": "到目前为止，没有证据，即那把刀属于她。"
+      }
+    },
+    "This is an opportunity to enhance the reputation of the company.": {
+      "ph": [{"t": "an opportunity to", "b": "an opportunity to do", "m": "做某事的机会"}]
+    },
+    "Self-control enables you to avoid behaviours that don't contribute to your success.": {
+      "ph": [
+        {"t": "enables you to", "b": "enable sb. to do", "m": "使某人能够做"},
+        {"t": "contribute to", "b": "contribute to", "m": "有助于"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Self-control enables you to avoid behaviours", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that don't contribute to your success", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "主语 Self-control 是抽象名词，作无生命主语，直译「自我控制使你能够……」；书上保留这种说法，译成「自我控制使你能够避免……」。",
+          "that 引导定语从句，先行词是 behaviours，that 在从句里作主语（that don't contribute）；书上把从句前置成「……的行为」。",
+          "don't contribute to 是否定式，书上译成「无益于」，比「不贡献于」自然。"
+        ],
+        "lit": "自我控制使你能够避免那些不对你的成功做贡献的行为。"
+      }
+    },
+    "The liberal arts in higher education help enrich students' spiritual life.": {
+      "ph": [{"t": "help enrich", "b": "help (to) do", "m": "有助于做"}]
+    },
+    "If you do not fasten your safety belt, your chances of being hurt will be greater.": {
+      "ph": [{"t": "chances of", "b": "chance of doing", "m": "……的可能性"}],
+      "an": {
+        "parts": [
+          {"t": "If you do not fasten your safety belt", "r": "条件状语"},
+          {"t": ", ", "r": ""},
+          {"t": "your chances of being hurt will be greater", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "条件状语从句用一般现在时 do not fasten，主句用 will be，是「主将从现」，从句的现在时指将来的情况，所以书上译成「如果你不系牢……」，不是虚拟语气。",
+          "chances of being hurt 是名词 + of + 动名词的被动式，being hurt 译成「受伤」，不译成「被伤害」；书上整个译成「你受伤的概率」。",
+          "greater 是比较级，没有出现比较对象，隐含「比系了安全带时」，书上只译成「更大」。"
+        ],
+        "lit": "如果你不系你的安全带，你被伤害的机会将会更大。"
+      }
+    },
+    "These shoes are much too tight.": {
+      "ph": [{"t": "much too", "b": "much too", "m": "实在太"}]
+    },
+    "He buckled on his sword.": {
+      "ph": [{"t": "buckled on", "b": "buckle on", "m": "扣上，系上"}]
+    },
+    "I undid the package and took out the books.": {
+      "ph": [{"t": "took out", "b": "take out", "m": "取出"}]
+    },
+    "One form of socialising doesn't replace the other.": {
+      "ph": [
+        {"t": "One", "b": "one … the other", "m": "一个……另一个"},
+        {"t": "the other", "b": "one … the other", "m": "一个……另一个"}
+      ]
+    },
+    "Students' ability to learn formal writing is unlikely to be affected by texting.": {
+      "ph": [
+        {"t": "ability to", "b": "ability to do", "m": "做某事的能力"},
+        {"t": "is unlikely to", "b": "be unlikely to do", "m": "不太可能做"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Students' ability", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to learn formal writing", "r": "非谓语"},
+          {"t": " ", "r": ""},
+          {"t": "is unlikely to be affected by texting", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "to learn formal writing 是不定式作 ability 的后置定语，修饰 ability；书上前置成「学习正式写作的能力」。",
+          "is unlikely to be affected 里 to be affected 是不定式的被动式，by texting 引出动作的来源；书上译成「受到发短信的影响」，用「受到」而不用「被」。",
+          "texting 是动名词作 by 的宾语，书上译成「发短信」，对应的动词形式是 text。"
+        ],
+        "lit": "学生学习正式写作的能力不太可能被发短信所影响。"
+      }
+    },
+    "The hat is part of the school uniform.": {
+      "ph": [{"t": "is part of", "b": "be part of", "m": "是……的一部分"}]
+    },
+    "The particles interfere with the formation of carbon-14 on earth.": {
+      "ph": [{"t": "interfere with", "b": "interfere with", "m": "干扰，妨碍"}]
+    },
+    "It may force companies to reform their business practice.": {
+      "ph": [{"t": "force companies to", "b": "force sb. to do", "m": "迫使某人做"}]
+    },
+    "A behaviour that does not conform to social norms may be described as being deviant.": {
+      "ph": [
+        {"t": "conform to", "b": "conform to", "m": "遵守，符合"},
+        {"t": "be described as", "b": "be described as", "m": "被描述为"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "A behaviour", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that does not conform to social norms", "r": "定语从句"},
+          {"t": " ", "r": ""},
+          {"t": "may be described as being deviant", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导定语从句，先行词是 A behaviour，that 在从句里作主语（that does not conform）；书上把从句前置成「不遵守社会规范的行为」。",
+          "may be described as 是被动式，may 表示可能性，不是虚拟语气；书上译成「可能被描述为」，保留了「被」。",
+          "as being deviant 里 as 后接动名词 being 带表语 deviant；书上意译成「偏离常轨」，没有逐字译「作为偏离的」。"
+        ],
+        "lit": "不符合社会规范的一种行为可能被描述为是偏离的。"
+      }
+    },
+    "They refused to comply with the UN resolution.": {
+      "ph": [{"t": "refused to", "b": "refuse to do", "m": "拒绝做"}]
+    },
+    "He struggled to formulate an answer.": {
+      "ph": [{"t": "struggled to", "b": "struggle to do", "m": "努力做"}]
+    },
+    "In a pilot programme, students are given electronic devices to do assignments when schools are closed.": {
+      "ph": [{"t": "do assignments", "b": "do assignments", "m": "做作业"}],
+      "an": {
+        "parts": [
+          {"t": "In a pilot programme", "r": "状语"},
+          {"t": ", ", "r": ""},
+          {"t": "students are given electronic devices", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to do assignments", "r": "非谓语"},
+          {"t": " ", "r": ""},
+          {"t": "when schools are closed", "r": "时间状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "students are given electronic devices 是 give sb. sth. 的被动式，以 students 作主语；书上译成主动的「学生们可以使用电子设备」，不译成「被给予」。",
+          "to do assignments 是不定式作目的状语，说明给设备的用途；书上译成「完成作业」。",
+          "when schools are closed 是时间状语从句，are closed 是被动式，表示学校被关闭的状态，书上意译成「学校停课时」。"
+        ],
+        "lit": "在一个试点项目中，学生被给予电子设备以做作业，当学校被关闭时。"
+      }
+    },
+    "Lion dancers need to have a little imagination to perform well.": {
+      "ph": [{"t": "need to", "b": "need to do", "m": "需要做"}]
+    },
+    "She is well informed about the design business.": {
+      "ph": [{"t": "is well informed about", "b": "be informed about", "m": "了解"}]
+    },
+    "When the system thinks it's being jammed, it'll notify you via push alert.": {
+      "an": {
+        "parts": [
+          {"t": "When the system thinks ", "r": "时间状语"},
+          {"t": "it's being jammed", "r": "宾语从句"},
+          {"t": ", ", "r": ""},
+          {"t": "it'll notify you via push alert", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "When 引导的时间状语里，thinks 后省略了 that，it's being jammed 是 thinks 的宾语从句，所以书上译成「当系统认为自己被干扰时」。",
+          "is being jammed 是现在进行时的被动式，表示正在被干扰；书上译成「被干扰」，没有再加「正在」，因为 thinks 已带出了当下的判断。",
+          "it 在从句里指 the system，书上译成「自己」，避免和后面主句的「它」混淆。"
+        ],
+        "lit": "当系统认为它正在被干扰时，它会通过推送警报通知你。"
+      }
+    },
+    "There is a noticeable difference between the two brands.": {
+      "ph": [{"t": "difference between", "b": "difference between … and", "m": "……之间的区别"}]
+    }
+  }
+}

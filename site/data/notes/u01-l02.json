@@ -1,0 +1,338 @@
+{
+  "_note": "例句词组与语法解析（书外补充，AI 生成）",
+  "sents": {
+    "One city on the west coast of America has banned single-use bottles from its property and events.": {
+      "ph": [
+        {"t": "banned", "b": "ban … from", "m": "禁止……出现在"},
+        {"t": "from", "b": "ban … from", "m": "禁止……出现在"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "One city on the west coast of America", "r": "主干"},
+          {"t": " has banned single-use bottles from its property and events", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "主语 One city 后面挂着 on the west coast、of America 两层介词短语作后置定语，书上全部前置，译成「美国西海岸的一个城市」。",
+          "ban A from B 字面是「禁止 A 出现在 B 上」，书上补出动词「使用」，把 B 提到前面，译成「禁止在其公有财产处所和活动中使用一次性瓶子」。"
+        ],
+        "lit": "美国西海岸上的一个城市已经禁止了一次性使用的瓶子出现在它的财产和活动上。"
+      }
+    },
+    "People laughed when he said that he wanted to sail around the world.": {
+      "ph": [
+        {"t": "sail around", "b": "sail around", "m": "环绕航行"}
+      ]
+    },
+    "I usually have a piece of toast for breakfast every day.": {
+      "ph": [
+        {"t": "a piece of", "b": "a piece of", "m": "一片"},
+        {"t": "for breakfast", "b": "for breakfast", "m": "作为早餐"}
+      ]
+    },
+    "They settled on a small island north of England.": {
+      "ph": [
+        {"t": "north of", "b": "north of", "m": "在……以北"}
+      ]
+    },
+    "He lost his way on a beach.": {
+      "ph": [
+        {"t": "lost his way", "b": "lose one's way", "m": "迷路"}
+      ]
+    },
+    "I remember sitting on a bench with my aunt at a yoga studio.": {
+      "ph": [
+        {"t": "remember sitting", "b": "remember doing", "m": "记得做过某事"}
+      ]
+    },
+    "Several boats lay at anchor in the harbour.": {
+      "ph": [
+        {"t": "lay at anchor", "b": "lie at anchor", "m": "（船）停泊"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Several boats lay at anchor", "r": "主干"},
+          {"t": " in the harbour", "r": "状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "这里的 lay 是 lie（位于、停放）的过去式，不是 lay（放置）；lie at anchor 是固定搭配，指船「抛锚停泊」。",
+          "地点状语 in the harbour 在句末，书上提到句首，译成存现句「港口停泊着几条船」，比「几条船停泊在港口」更符合汉语习惯。"
+        ],
+        "lit": "几条船停泊着，在港口里。"
+      }
+    },
+    "Evil behavior is typically thought to embrace one or both forms.": {
+      "ph": [
+        {"t": "is typically thought to", "b": "be thought to do", "m": "被认为……"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Evil behavior is typically thought to embrace one or both forms", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "is thought to embrace 是被动语态加不定式，相当于 People think that evil behavior embraces…；书上保留被动，译成「通常被认为包含」。",
+          "embrace 本义是「拥抱」，主语是抽象的 Evil behavior，宾语是 forms（形式），所以引申为「包含、包括」，书上译「包含一种或两种形式」。"
+        ],
+        "lit": "邪恶的行为通常被认为拥抱一种或两种形式。"
+      }
+    },
+    "It is a place in Upper New York Bay formerly used for exiles.": {
+      "ph": [
+        {"t": "used for", "b": "be used for", "m": "被用作"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "It is a place in Upper New York Bay", "r": "主干"},
+          {"t": " formerly used for exiles", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "formerly used for exiles 是过去分词短语作后置定语，修饰 a place（地方是「被用作」流放地），相当于 which was formerly used for exiles。",
+          "书上没有把它前置成「以前被用于流放者的地方」，而是拆成后面的分句「以前是流放者的所在地」；in Upper New York Bay 则前置，译成「上纽约湾的一个地方」。"
+        ],
+        "lit": "它是上纽约湾里的一个地方，以前被用于流放者。"
+      }
+    },
+    "They have to look for food and shelter underground.": {
+      "ph": [
+        {"t": "have to", "b": "have to", "m": "不得不"},
+        {"t": "look for", "b": "look for", "m": "寻找"}
+      ]
+    },
+    "Most animals seek shade when temperatures in the Sahara Desert soar to 120 degrees Fahrenheit.": {
+      "ph": [
+        {"t": "seek shade", "b": "seek shade", "m": "寻找阴凉处"},
+        {"t": "soar to", "b": "soar to", "m": "飙升到"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Most animals seek shade", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "when temperatures in the Sahara Desert soar to 120 degrees Fahrenheit", "r": "时间状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "when 引导的时间状语从句放在句末，书上提到句首，译成「当……时，大多数动物都会……」，先说条件再说结果，符合汉语顺序。",
+          "两个谓语都是一般现在时，描述规律性的现象，书上在主句里加了「都会」；in the Sahara Desert 是 temperatures 的后置定语，译成「撒哈拉沙漠的温度」。",
+          "seek shade 中 shade 是不可数名词，指「阴凉处」，书上补出「地方」，译成「寻找阴凉的地方」。"
+        ],
+        "lit": "大多数动物寻找阴凉，当撒哈拉沙漠里的温度飙升到120华氏度的时候。"
+      }
+    },
+    "New roads are cutting into the green belt.": {
+      "ph": [
+        {"t": "cutting into", "b": "cut into", "m": "侵占、切入"},
+        {"t": "green belt", "b": "green belt", "m": "绿化地带"}
+      ]
+    },
+    "It will help strengthen their emotional bonds.": {
+      "ph": [
+        {"t": "help strengthen", "b": "help (to) do", "m": "有助于做某事"}
+      ]
+    },
+    "The ties that bind us together are so feeble.": {
+      "ph": [
+        {"t": "bind", "b": "bind … together", "m": "把……联系在一起"},
+        {"t": "together", "b": "bind … together", "m": "把……联系在一起"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "The ties", "r": "主干"},
+          {"t": " that bind us together", "r": "定语从句"},
+          {"t": " are so feeble", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "定语从句 that bind us together 的先行词是 The ties（纽带），that 在从句中作主语，所以 bind 用复数与 ties 一致。",
+          "书上把定语从句前置成「把我们联系在一起的」，直接放在「纽带」前面，主干 are so feeble 译成「是如此脆弱」。",
+          "bind … together 被宾语 us 隔开，together 强调「在一起」，书上译成「把我们联系在一起」。"
+        ],
+        "lit": "那些捆绑我们在一起的纽带是如此脆弱。"
+      }
+    },
+    "The doctor told me to avoid bending and stretching.": {
+      "ph": [
+        {"t": "told me to", "b": "tell sb. to do", "m": "告诉某人做某事"},
+        {"t": "avoid bending", "b": "avoid doing", "m": "避免做某事"}
+      ]
+    },
+    "Intelligent people are more prone to silly mistakes because of blind spots in how they use logic.": {
+      "ph": [
+        {"t": "prone to", "b": "be prone to", "m": "易于、倾向于"},
+        {"t": "because of", "b": "because of", "m": "因为"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Intelligent people are more prone to silly mistakes", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "because of blind spots in how they use logic", "r": "原因状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "because of 是介词短语，后面接名词短语 blind spots in…，不是从句；书上把名词 blind spots 展开成动词，译成「他们……存在盲点」。",
+          "in how they use logic 是 blind spots 的后置定语，how they use logic 是宾语从句，作介词 in 的宾语；书上译成「在使用逻辑时」，提到「盲点」前面。",
+          "more prone 是比较级但没有 than，比较对象不出现，书上直接译成「更容易」。"
+        ],
+        "lit": "聪明的人对愚蠢的错误更容易倾向，因为在他们如何使用逻辑上的盲点。"
+      }
+    },
+    "To enjoy the magnificence of a mountain, you have to look upwards in most cases.": {
+      "ph": [
+        {"t": "have to", "b": "have to", "m": "必须"},
+        {"t": "in most cases", "b": "in most cases", "m": "在大多数情况下"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "To enjoy the magnificence of a mountain", "r": "目的状语"},
+          {"t": ", ", "r": ""},
+          {"t": "you have to look upwards", "r": "主干"},
+          {"t": " in most cases", "r": "状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "句首的不定式短语 To enjoy… 作目的状语，书上译成「要欣赏……」，汉语里「要」比「为了」更自然。",
+          "the magnificence of a mountain 是名词化结构（magnificent 的名词形式），书上展开成「大山的壮丽」。",
+          "句末的 in most cases 书上提到句首，译成「在大多数情况下」，整句变成「条件—结果」的顺序；you 是泛指，不是特指某个人。"
+        ],
+        "lit": "为了享受一座山的壮丽，你必须向上看，在大多数情况下。"
+      }
+    },
+    "The new cream is marketed as the fountain of youth.": {
+      "ph": [
+        {"t": "is marketed as", "b": "be marketed as", "m": "被营销成"},
+        {"t": "fountain of youth", "b": "the fountain of youth", "m": "青春之泉"}
+      ]
+    },
+    "Then students select an adviser, based on shared academic interests.": {
+      "ph": [
+        {"t": "based on", "b": "be based on", "m": "根据、基于"}
+      ]
+    },
+    "The diving suit and a set of basic tools needed for skin-diving can be bought for 20 dollars.": {
+      "ph": [
+        {"t": "a set of", "b": "a set of", "m": "一套"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "The diving suit and a set of basic tools", "r": "主干"},
+          {"t": " needed for skin-diving", "r": "非谓语"},
+          {"t": " can be bought for 20 dollars", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "needed for skin-diving 是过去分词短语作后置定语，修饰 tools（工具是「被需要」的），书上前置成「自由潜水所需的」。",
+          "can be bought 是被动，没有施动者；书上改成主动，把「买」化进「只需20美元」，译成「只需20美元」，比「可以被20美元买到」自然。"
+        ],
+        "lit": "潜水衣和一套为自由潜水所需要的基本工具可以被用20美元买到。"
+      }
+    },
+    "All members of the committee work on a voluntary basis.": {
+      "ph": [
+        {"t": "on a voluntary basis", "b": "on a voluntary basis", "m": "在自愿的基础上"}
+      ]
+    },
+    "As the popularity of exercise continues to mount, so does scientific evidence of its health benefits.": {
+      "ph": [
+        {"t": "continues to", "b": "continue to do", "m": "继续做"},
+        {"t": "so does", "b": "so do/does sb.", "m": "……也是如此"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "As the popularity of exercise continues to mount", "r": "状语"},
+          {"t": ", ", "r": ""},
+          {"t": "so does scientific evidence of its health benefits", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "As 在这里是「随着」，引导伴随变化的状语从句；the popularity of exercise 是名词化结构，书上展开成「运动的普及程度」。",
+          "so does scientific evidence 是 so + 助动词 + 主语的倒装，表示「……也是如此」，does 代替前面的 continues to mount，字面意思是「科学证据也在增加」。",
+          "书上译成「科学证据也证明了运动对健康的益处」，是意译：把 evidence of its health benefits 当作「证明」的内容来处理。"
+        ],
+        "lit": "随着运动的普及继续增加，关于其健康益处的科学证据也是如此。"
+      }
+    },
+    "During the course of trying various things, you will gain a large amount of social experience.": {
+      "ph": [
+        {"t": "During the course of", "b": "during the course of", "m": "在……的过程中"},
+        {"t": "a large amount of", "b": "a large amount of", "m": "大量的"}
+      ]
+    },
+    "The children cheered up when they saw the balloons ascending slowly into the sky.": {
+      "ph": [
+        {"t": "cheered up", "b": "cheer up", "m": "欢呼起来、高兴起来"},
+        {"t": "saw", "b": "see … doing", "m": "看到……正在做"},
+        {"t": "ascending", "b": "see … doing", "m": "看到……正在做"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "The children cheered up", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "when they saw the balloons ascending slowly into the sky", "r": "时间状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "saw the balloons ascending 是 see sb. doing，现在分词 ascending 作宾语补足语，强调看到气球「正在上升」的过程，书上译成「看到那些气球缓缓升上天空」。",
+          "when 从句在句末，书上提到句首，译成「当孩子们看到……时，他们欢呼起来」，先说原因再说反应。"
+        ],
+        "lit": "孩子们欢呼起来，当他们看到气球正在缓慢地上升进入天空的时候。"
+      }
+    },
+    "We managed to reach the top of the mountain, and half an hour later we began to descend.": {
+      "ph": [
+        {"t": "managed to", "b": "manage to do", "m": "设法做成"},
+        {"t": "the top of", "b": "the top of", "m": "……的顶部"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "We managed to reach the top of the mountain", "r": "主干"},
+          {"t": ", and ", "r": ""},
+          {"t": "half an hour later we began to descend", "r": "并列分句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "manage to do 的意思是「设法做成了」，已含成功之意，所以书上译成「成功到达」，而不是「试图到达」。",
+          "descend 在这里不带宾语，是不及物动词，只是「向下走」；书上结合前面的 the top of the mountain 补出「下山」。"
+        ],
+        "lit": "我们设法到达了山的顶部，并且半小时之后我们开始下降。"
+      }
+    },
+    "Research has revealed an enormous decline in reading.": {
+      "ph": [
+        {"t": "decline in", "b": "decline in", "m": "……的下降"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Research has revealed an enormous decline in reading", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "an enormous decline in reading 是名词化结构（decline 由动词变来），书上展开成主谓式的「阅读量大幅下降」。",
+          "主语 Research 是无生命名词，直译「研究揭示了……」，书上译成「研究显示，」后面接完整的一句话，让名词化的宾语变成小句。"
+        ],
+        "lit": "研究已经揭示了一个在阅读方面的巨大下降。"
+      }
+    },
+    "I incline to the view that we should take no action at this stage.": {
+      "ph": [
+        {"t": "incline to", "b": "incline to", "m": "倾向于"},
+        {"t": "take no action", "b": "take action", "m": "采取行动"},
+        {"t": "at this stage", "b": "at this stage", "m": "在这个阶段"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "I incline to the view", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that we should take no action at this stage", "r": "同位语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that we should… 是同位语从句，说明 the view 的具体内容；that 在从句中不作成分，也不译。书上把 the view that 融成动词，译成「倾向于认为……」。",
+          "no action 是 no + 名词，否定落在 action 上，书上译成「不应采取行动」；should 在这里表示「应该」，不是虚拟语气。"
+        ],
+        "lit": "我倾向于这样一种观点：我们在这个阶段应该采取没有行动。"
+      }
+    }
+  }
+}
