@@ -1,0 +1,304 @@
+{
+  "_note": "例句词组与语法解析（书外补充，AI 生成）",
+  "sents": {
+    "One had to quit abruptly on a given day, going from about a pack a day to zero.": {
+      "ph": [
+        {"t": "had to", "b": "have to do", "m": "必须"},
+        {"t": "on a given day", "b": "on a given day", "m": "在某一天"},
+        {"t": "from", "b": "from … to", "m": "从……到……"},
+        {"t": "to", "b": "from … to", "m": "从……到……"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "One had to quit abruptly on a given day", "r": "主干"},
+          {"t": ", ", "r": ""},
+          {"t": "going from about a pack a day to zero", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "going 引导现在分词短语，逻辑主语就是主干的主语 One，补充说明「怎么戒」的结果，书上把它拆成后面的独立分句「从每天一包到零包」。",
+          "a pack a day 里第二个 a 表「每」，所以是「每天一包」；主语 One 是泛指，书上结合上下文具体化为「吸烟者」。"
+        ],
+        "lit": "一个人必须在某个给定的日子突然戒掉，从大约一天一包到零。"
+      }
+    },
+    "He claims a packet of chips now contains less salt.": {
+      "ph": [{"t": "a packet of", "b": "a packet of", "m": "一袋"}],
+      "an": {
+        "parts": [
+          {"t": "He claims", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "a packet of chips now contains less salt", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "claims 后面省略了 that，a packet of chips now contains less salt 是 claims 的宾语从句。",
+          "contains less salt 是动宾结构，书上把它名词化译成「含盐量更少」，主语也相应变成「一袋薯片的含盐量」。less 是比较级，now 暗示与以前相比，所以书上译成「现在……更少」。"
+        ],
+        "lit": "他声称一袋薯片现在含有更少的盐。"
+      }
+    },
+    "It can be hard to identify which parcels are carrying crucial items.": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "It can be hard to identify", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "which parcels are carrying crucial items", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "It 是形式主语，真正的主语是后面的不定式 to identify…，书上去掉 It，直接译成「很难确定……」。",
+          "which parcels are carrying crucial items 是 identify 的宾语从句；which 在这里是限定词，修饰 parcels，整个 which parcels 作从句主语，不是关系词。",
+          "are carrying 是现在进行时，说的是包裹此刻「装着」什么，书上译成「哪些包裹里装的是关键物品」，把 parcels 当话题放前面。"
+        ],
+        "lit": "确定哪些包裹正在携带关键物品可能是困难的。"
+      }
+    },
+    "Each apple was wrapped in paper.": {
+      "ph": [{"t": "was wrapped in", "b": "be wrapped in", "m": "用……包着"}]
+    },
+    "If you're going on a trip, it's a good idea to bring your own towel.": {
+      "ph": [
+        {"t": "going on a trip", "b": "go on a trip", "m": "去旅行"},
+        {"t": "a good idea to", "b": "a good idea to do", "m": "做……是个好主意"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "If you're going on a trip", "r": "条件状语"},
+          {"t": ", ", "r": ""},
+          {"t": "it's a good idea to bring your own towel", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "If 引导条件状语从句，用进行时 're going 表示已打算好的行程，书上译成「如果你要去旅行」。",
+          "主句的 it 是形式主语，真正的主语是 to bring your own towel；a good idea to do 书上浓缩成「最好」，译成「最好自己带条毛巾」。",
+          "your own 加强「自己的」，书上译成「自己带」，把物主关系转成了动作的施行者。"
+        ],
+        "lit": "如果你正要去旅行，带上你自己的毛巾是个好主意。"
+      }
+    },
+    "They see a benefit to successfully veiling their contempt for you.": {
+      "ph": [{"t": "contempt for", "b": "contempt for", "m": "对……的蔑视"}]
+    },
+    "National data masks the variation in the performance of individual universities.": {
+      "ph": [{"t": "variation in", "b": "variation in", "m": "……的差异"}]
+    },
+    "They found him half naked and bleeding to death.": {
+      "ph": [{"t": "bleeding to death", "b": "bleed to death", "m": "流血不止快不行了"}]
+    },
+    "They try to limit their usage of facial tissue to save money.": {
+      "ph": [{"t": "save money", "b": "save money", "m": "节省开支"}]
+    },
+    "Increasingly states and companies are starting to take up the issue.": {
+      "ph": [{"t": "take up", "b": "take up", "m": "关注，着手处理"}]
+    },
+    "Remember no more than 10 ounces of carry-on baggage are allowed.": {
+      "ph": [{"t": "no more than", "b": "no more than", "m": "不超过"}],
+      "an": {
+        "parts": [
+          {"t": "Remember", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "no more than 10 ounces of carry-on baggage are allowed", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "Remember 后面省略了 that，no more than 10 ounces… are allowed 是它的宾语从句。",
+          "are allowed 是被动，字面是「被允许」；no more than 10 ounces 是在给数量封顶，书上把「允许不多于 10 盎司」转成否定说法「不能超过 10 盎司」，更符合中文的行李规定口吻。",
+          "carry-on 是复合形容词作定语，修饰 baggage，书上前置成「随身携带的行李」。"
+        ],
+        "lit": "记住不多于 10 盎司的随身行李是被允许的。"
+      }
+    },
+    "He has been burdened with excessive work.": {
+      "ph": [{"t": "been burdened with", "b": "be burdened with", "m": "负担……"}]
+    },
+    "They find it increasingly difficult to afford a place to live.": {
+      "ph": [{"t": "find it increasingly difficult to", "b": "find it difficult to do", "m": "发现做……很难"}],
+      "an": {
+        "parts": [
+          {"t": "They find it increasingly difficult", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to afford a place to live", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "it 是形式宾语，difficult 是宾语补足语，真正的宾语是后面的不定式 to afford…；书上省略 it，直接译成「发现越来越难以负担……」。",
+          "a place to live 中的 to live 是不定式作后置定语，修饰 place，字面是「可供居住的地方」，书上浓缩成「住处」。"
+        ],
+        "lit": "他们发现越来越困难去负担一个居住的地方。"
+      }
+    },
+    "Vitamins are complex substances that the body requires in very small amounts.": {
+      "ph": [{"t": "in very small amounts", "b": "in small amounts", "m": "少量地"}],
+      "an": {
+        "parts": [
+          {"t": "Vitamins are complex substances", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that the body requires in very small amounts", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导定语从句，先行词是 substances，that 在从句里作 requires 的宾语（the body requires that），所以可以省略。",
+          "书上把定语从句前置成「人体需要的极少量的复杂物质」，从句里的方式状语 in very small amounts 也被并进了定语，译成「极少量的」。"
+        ],
+        "lit": "维生素是人体极少量地需要的复杂物质。"
+      }
+    },
+    "A bird must weave these materials into a nest.": {
+      "ph": [
+        {"t": "weave", "b": "weave … into", "m": "把……编织成"},
+        {"t": "into", "b": "weave … into", "m": "把……编织成"}
+      ]
+    },
+    "The people on the bus waved and we waved back.": {
+      "ph": [{"t": "waved back", "b": "wave back", "m": "挥手回应"}]
+    },
+    "The tide swept in quickly at the beach.": {
+      "ph": [{"t": "swept in", "b": "sweep in", "m": "涌入，冲上来"}]
+    },
+    "Breakfast foods are often higher in fibre and nutrients.": {
+      "ph": [{"t": "higher in", "b": "be high in", "m": "……含量高"}]
+    },
+    "Nutrition information is now provided on the back of most food products.": {
+      "ph": [{"t": "on the back of", "b": "on the back of", "m": "在……背面"}]
+    },
+    "The bone failed to knit correctly.": {
+      "ph": [{"t": "failed to", "b": "fail to do", "m": "未能做到"}]
+    },
+    "I don't want to be a nuisance, so tell me if you want to be alone.": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "I don't want to be a nuisance", "r": "主干"},
+          {"t": ", so ", "r": ""},
+          {"t": "tell me", "r": "并列分句"},
+          {"t": " ", "r": ""},
+          {"t": "if you want to be alone", "r": "条件状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "so 连接两个分句，前一句交代原因，后一句是祈使句 tell me…，所以书上译成「我不想讨人嫌，所以你……」。",
+          "if you want to be alone 在这里按条件理解，书上译成「你要是想一个人待着」，并把这个条件提到「说一声」之前。"
+        ],
+        "lit": "我不想成为一个讨厌的人，所以如果你想独处就告诉我。"
+      }
+    },
+    "Since the 1940s, southern California has had a reputation for smog.": {
+      "ph": [{"t": "has had a reputation for", "b": "have a reputation for", "m": "以……闻名"}],
+      "an": {
+        "parts": [
+          {"t": "Since the 1940s", "r": "时间状语"},
+          {"t": ", ", "r": ""},
+          {"t": "southern California has had a reputation for smog", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "Since + 过去的时间点，主句用现在完成时 has had，表示这种状态从 1940 年代延续到现在，所以书上译成「自……以来一直」。",
+          "have a reputation for 是「名词 + 介词」的搭配，书上把名词 reputation 转成动词「闻名」，译成「一直因雾霾闻名」。"
+        ],
+        "lit": "自 20 世纪 40 年代以来，南加州已经有了对雾霾的名声。"
+      }
+    },
+    "The advertisements are intended to improve the company's image.": {
+      "ph": [{"t": "are intended to", "b": "be intended to do", "m": "旨在"}]
+    },
+    "I can imagine how many difficulties and obstacles you've conquered.": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "I can imagine", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "how many difficulties and obstacles you've conquered", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "how many difficulties and obstacles 是 conquered 的宾语，被疑问词 how many 带到从句开头，从句里 you've conquered 是正常语序；书上按中文顺序译成「你克服了多少困难和障碍」。",
+          "you've conquered 是现在完成时，强调已经克服并有结果，所以译成「克服了」。"
+        ],
+        "lit": "我能想象多少困难和障碍你已经征服了。"
+      }
+    },
+    "He hasn't replied to any of my text messages.": {
+      "ph": [{"t": "replied to", "b": "reply to", "m": "回复"}]
+    },
+    "Patients are using new devices to relay their vital signs to their doctors.": {
+      "ph": [
+        {"t": "relay", "b": "relay … to", "m": "把……传给"},
+        {"t": "to", "b": "relay … to", "m": "把……传给"}
+      ]
+    },
+    "It would be rash to rely on such evidence.": {
+      "ph": [{"t": "rely on", "b": "rely on", "m": "依靠"}]
+    },
+    "We are looking for someone who is reliable and hard-working.": {
+      "ph": [{"t": "looking for", "b": "look for", "m": "寻找，物色"}],
+      "an": {
+        "parts": [
+          {"t": "We are looking for someone", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "who is reliable and hard-working", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "who 引导定语从句，先行词是 someone，who 在从句里作主语（who is reliable…）。",
+          "书上把定语从句前置成「可靠而又勤奋的人」，从句里两个并列表语 reliable 和 hard-working 变成并列定语。"
+        ],
+        "lit": "我们正在寻找一个可靠而且勤奋的人。"
+      }
+    },
+    "You will be liable for any damage caused.": {
+      "ph": [{"t": "will be liable for", "b": "be liable for", "m": "对……负责"}],
+      "an": {
+        "parts": [
+          {"t": "You will be liable for any damage", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "caused", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "caused 是过去分词作后置定语，修饰 damage，含被动意义（被造成的损失），书上前置成「造成的任何损失」。",
+          "be liable for 书上不只译「负责」，而是结合上下文展开成「负赔偿责任」。"
+        ],
+        "lit": "你将对任何被造成的损害负责。"
+      }
+    },
+    "It is just not credible that she would cheat.": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "It is just not credible", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that she would cheat", "r": "主语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "It 是形式主语，that she would cheat 是真正的主语从句；书上把从句提到前面作主语，译成「她会行骗简直难以置信」。",
+          "just not 的 just 加强否定语气，书上用「简直」体现。"
+        ],
+        "lit": "她会欺骗，这就是不可信的。"
+      }
+    },
+    "Friends should always be faithful to each other.": {
+      "ph": [{"t": "be faithful to", "b": "be faithful to", "m": "对……忠诚"}]
+    },
+    "Consumers are loyal to certain brands.": {
+      "ph": [{"t": "are loyal to", "b": "be loyal to", "m": "对……忠诚"}]
+    },
+    "He regards his royal duties as a burden.": {
+      "ph": [
+        {"t": "regards", "b": "regard … as", "m": "把……视为"},
+        {"t": "as", "b": "regard … as", "m": "把……视为"}
+      ]
+    },
+    "He was not a noble, but the son of a leather trader.": {
+      "ph": [
+        {"t": "not", "b": "not … but …", "m": "不是……而是……"},
+        {"t": "but", "b": "not … but …", "m": "不是……而是……"}
+      ]
+    },
+    "She became queen at the age of fifteen.": {
+      "ph": [{"t": "at the age of", "b": "at the age of", "m": "在……岁时"}]
+    }
+  }
+}

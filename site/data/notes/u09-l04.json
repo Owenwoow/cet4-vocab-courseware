@@ -1,0 +1,250 @@
+{
+  "_note": "例句词组与语法解析（书外补充，AI 生成）",
+  "sents": {
+    "Sixty percent of the respondents agreed with the suggestion.": {
+      "ph": [{"t": "agreed with", "b": "agree with", "m": "同意"}]
+    },
+    "One of the most well-worn phrases of parents is that breakfast is the most important meal of the day.": {
+      "ph": [{"t": "One of the most", "b": "one of the most", "m": "最……之一"}],
+      "an": {
+        "parts": [
+          {"t": "One of the most well-worn phrases of parents", "r": "主干"},
+          {"t": " is ", "r": ""},
+          {"t": "that breakfast is the most important meal of the day", "r": "表语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "is 后面的 that 从句作表语，内容就是前面主语 phrases（话）的具体所指，所以书上译成「……就是，早餐是……」，用逗号把话的内容引出来。",
+          "One of the most … phrases of parents 里 well-worn（老生常谈的）修饰 phrases，书上把「最……的短语之一」转成「父母最常说的一句话」，更符合中文习惯。"
+        ],
+        "lit": "父母最老生常谈的短语之一是早餐是一天中最重要的一餐。"
+      }
+    },
+    "No wonder so many of us suffer from emotional fatigue.": {
+      "ph": [
+        {"t": "No wonder", "b": "no wonder", "m": "难怪"},
+        {"t": "suffer from", "b": "suffer from", "m": "患（病）、受……之苦"}
+      ]
+    },
+    "It now turns out that exercise can exhaust not only your muscles, but also your eyes.": {
+      "ph": [
+        {"t": "turns out", "b": "turn out", "m": "结果是、原来"},
+        {"t": "not only", "b": "not only … but also", "m": "不仅……而且"},
+        {"t": "but also", "b": "not only … but also", "m": "不仅……而且"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "It now turns out", "r": "主干"},
+          {"t": " that ", "r": ""},
+          {"t": "exercise can exhaust not only your muscles, but also your eyes", "r": "主语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "It 是形式主语，that 从句是真正的内容，turn out that… 表示「结果发现……」，书上不译 it，直接说「现在发现，……」。",
+          "not only … but also 连接 exhaust 的两个并列宾语 your muscles 和 your eyes，书上保留「不仅……还……」。",
+          "exhaust 本义是「耗尽」，宾语是肌肉和眼睛，所以书上译成「使……疲劳」，不能硬译成「耗尽肌肉」。"
+        ],
+        "lit": "现在结果是，运动能耗尽的不仅是你的肌肉，而且还有你的眼睛。"
+      }
+    },
+    "I would argue that this is a perfectly feasible solution.": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "I would argue", "r": "主干"},
+          {"t": " that ", "r": ""},
+          {"t": "this is a perfectly feasible solution", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导 argue 的宾语从句，that 在从句里不作成分，书上直接译成「我认为……」。",
+          "这里的 would 既没有 if 条件，主句也不是过去时，不是虚拟语气或时态呼应，而是缓和语气的用法（委婉地表达看法），所以书上只译「我认为」，没有加「会」。",
+          "perfectly 修饰形容词 feasible，书上译成「完全可行」。"
+        ],
+        "lit": "我会主张这是一个完全可行的解决办法。"
+      }
+    },
+    "The most common materials used for nests are grasses, branches and feathers.": {
+      "ph": [{"t": "used for", "b": "be used for", "m": "用于"}]
+    },
+    "So far, participants have ranged in age from 2 to 85.": {
+      "ph": [
+        {"t": "So far", "b": "so far", "m": "到目前为止"},
+        {"t": "ranged", "b": "range from … to …", "m": "（范围）从……到……不等"},
+        {"t": "from", "b": "range from … to …", "m": "（范围）从……到……不等"},
+        {"t": "to", "b": "range from … to …", "m": "（范围）从……到……不等"}
+      ]
+    },
+    "She is never sure what the final design will look like until the end.": {
+      "ph": [{"t": "look like", "b": "look like", "m": "看起来像"}],
+      "an": {
+        "parts": [
+          {"t": "She is never sure", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "what the final design will look like", "r": "宾语从句"},
+          {"t": " ", "r": ""},
+          {"t": "until the end", "r": "时间状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "what 引导宾语从句，作 sure 之后的内容，what 在从句里是介词 like 的宾语（look like what），整句是「她不确定它看起来像什么样」。",
+          "never … until the end 是否定词加 until，意思是「到最后才……」，所以书上把顺序调成「直到最后，她才确定……」，用「才」表达否定的含义。"
+        ],
+        "lit": "她从不确定最终的设计看起来会是什么样，直到最后。"
+      }
+    },
+    "He described the sequence of events leading up to the robbery.": {
+      "ph": [{"t": "leading up to", "b": "lead up to", "m": "导致、发生在……之前"}]
+    },
+    "They pressed criminal charges in vain.": {
+      "ph": [{"t": "in vain", "b": "in vain", "m": "徒劳、没有成功"}]
+    },
+    "This case raises a whole series of important questions.": {
+      "ph": [{"t": "a whole series of", "b": "a series of", "m": "一系列"}]
+    },
+    "They break up nature's food supply chain.": {
+      "ph": [{"t": "break up", "b": "break up", "m": "打破、破坏"}]
+    },
+    "An increasingly important skill will be your ability to deal with change.": {
+      "ph": [{"t": "deal with", "b": "deal with", "m": "应对、处理"}]
+    },
+    "Exposure to blue light is the chief cause of obesity.": {
+      "ph": [
+        {"t": "Exposure to", "b": "exposure to", "m": "暴露于"},
+        {"t": "cause of", "b": "cause of", "m": "……的原因"}
+      ]
+    },
+    "Research will be needed as a preliminary to taking a decision.": {
+      "ph": [
+        {"t": "as a preliminary to", "b": "as a preliminary to", "m": "作为……的前期步骤"},
+        {"t": "taking a decision", "b": "take a decision", "m": "做决定"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Research will be needed", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "as a preliminary to taking a decision", "r": "状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "Research will be needed 是被动，书上译成无主语的主动句「需要进行研究」，不说「研究会被需要」。",
+          "preliminary to 里的 to 是介词，所以后面接动名词 taking；as a preliminary to… 的意思是「作为……的前奏」，书上把这个名词短语转成时间意味的「做决定之前」。"
+        ],
+        "lit": "研究将被需要，作为做决定的前期步骤。"
+      }
+    },
+    "Her coarse hands are the result of years of hard work.": {
+      "ph": [{"t": "the result of", "b": "the result of", "m": "……的结果"}]
+    },
+    "It may sound safe to avoid all physical contact so as not to offend anyone.": {
+      "ph": [{"t": "so as not to", "b": "so as not to do", "m": "为了不……"}],
+      "an": {
+        "parts": [
+          {"t": "It may sound safe", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to avoid all physical contact", "r": "非谓语"},
+          {"t": " ", "r": ""},
+          {"t": "so as not to offend anyone", "r": "目的状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "It 是形式主语，真正的主语是后面的不定式 to avoid all physical contact，书上把它提到句首译成「避免所有的身体接触……听起来可能是安全的」。",
+          "so as not to offend anyone 是不定式的否定形式作目的状语，否定词 not 放在 to 前面，意思是「为了不冒犯任何人」，书上译作「以不冒犯任何人」。",
+          "may 在这里表推测（可能），不是虚拟语气，对应书上的「可能」。"
+        ],
+        "lit": "它可能听起来是安全的，去避免所有身体接触，以便不冒犯任何人。"
+      }
+    },
+    "Officers use soccer goals to fence the animal in.": {
+      "ph": [
+        {"t": "fence", "b": "fence … in", "m": "把……围起来"},
+        {"t": "in", "b": "fence … in", "m": "把……围起来"}
+      ]
+    },
+    "It was thought appropriate to award her the prize.": {
+      "ph": [{"t": "award her the prize", "b": "award sb. sth.", "m": "授予某人某物"}],
+      "an": {
+        "parts": [
+          {"t": "It was thought appropriate", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to award her the prize", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "It 是形式主语，真正的主语是不定式 to award her the prize；think it appropriate to do 的被动形式就是 It is thought appropriate to do。",
+          "被动式没有交代是谁认为，书上补上泛指的「大家」，译成「大家都认为……是恰当的」，并把不定式提到前面当主语。"
+        ],
+        "lit": "它被认为是恰当的，把奖授予她。"
+      }
+    },
+    "He left estate valued at a million dollars.": {
+      "ph": [{"t": "valued at", "b": "be valued at", "m": "估价为、价值"}]
+    },
+    "It can bring wealth and honour to them.": {
+      "ph": [
+        {"t": "bring", "b": "bring … to", "m": "给……带来"},
+        {"t": "to", "b": "bring … to", "m": "给……带来"}
+      ]
+    },
+    "They believe others care most about fame and fortune.": {
+      "ph": [{"t": "care most about", "b": "care about", "m": "最在乎"}]
+    },
+    "It's worth asking if things are necessary.": {
+      "ph": [{"t": "worth asking", "b": "be worth doing", "m": "值得做"}]
+    },
+    "Her assets include shares in the company and a house in France.": {
+      "ph": [{"t": "shares in", "b": "a share in", "m": "……的股份"}]
+    },
+    "She settled in Vienna after her father's death.": {
+      "ph": [{"t": "settled in", "b": "settle in", "m": "定居于"}]
+    },
+    "It's time to re-evaluate how women handle conflict at work.": {
+      "ph": [{"t": "It's time to", "b": "it's time to do", "m": "是时候做某事了"}]
+    },
+    "Unless we accept that obesity is a disease, we are not going to be able to tackle it.": {
+      "ph": [
+        {"t": "going to", "b": "be going to", "m": "将要"},
+        {"t": "be able to", "b": "be able to", "m": "能够"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Unless we accept that obesity is a disease", "r": "条件状语"},
+          {"t": ", ", "r": ""},
+          {"t": "we are not going to be able to tackle it", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "Unless 等于 if … not，引导否定性的条件状语从句，书上译成「除非……，否则……」，前后两个分句顺序不变。",
+          "条件状语从句里还嵌了一个 that 宾语从句 that obesity is a disease，作 accept 的宾语，书上译成「接受肥胖是一种疾病」。",
+          "主句的 it 指代前面的 obesity（肥胖），所以书上直接译成「解决它」，指的是肥胖问题。"
+        ],
+        "lit": "除非我们接受肥胖是一种疾病，我们将没有能力解决它。"
+      }
+    },
+    "Some students cope with this shock by avoiding challenges.": {
+      "ph": [{"t": "cope with", "b": "cope with", "m": "应对"}]
+    },
+    "Environmental problems must be solved to ease the current global food shortage.": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "Environmental problems must be solved", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to ease the current global food shortage", "r": "目的状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "must be solved 是被动，书上译成无主语的主动句「必须解决环境问题」，把宾语移到动词后面。",
+          "to ease … 是不定式作目的状语，说明为什么要解决环境问题，书上用「以缓解……」承接。"
+        ],
+        "lit": "环境问题必须被解决，以便缓解当前的全球粮食短缺。"
+      }
+    },
+    "Both sides met in order to try to resolve their differences.": {
+      "ph": [{"t": "in order to", "b": "in order to do", "m": "为了"}]
+    },
+    "I made a New Year resolution to give up smoking.": {
+      "ph": [{"t": "give up", "b": "give up", "m": "放弃、戒掉"}]
+    }
+  }
+}

@@ -1,0 +1,365 @@
+{
+  "_note": "例句词组与语法解析（书外补充，AI 生成）",
+  "sents": {
+    "They learned about the growth mindset and how to apply it to schoolwork.": {
+      "ph": [
+        {"t": "learned about", "b": "learn about", "m": "了解，学习"},
+        {"t": "apply", "b": "apply … to", "m": "把……应用于"},
+        {"t": "to", "b": "apply … to", "m": "把……应用于"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "They learned about", "r": "主干"},
+          {"t": " the growth mindset and ", "r": ""},
+          {"t": "how to apply it to schoolwork", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "about 后面并列了两个宾语：名词短语 the growth mindset 和「疑问词 + 不定式」how to apply it to schoolwork，书上用「以及」把两者连起来。",
+          "how to apply … 的逻辑主语就是主句的 They，所以书上译成「如何将其应用到……」，不需要另加主语；it 指前面的 the growth mindset，译成「其」。"
+        ],
+        "lit": "他们了解了成长型思维模式和如何把它应用到学校作业上。"
+      }
+    },
+    "Languages that exist today vary dramatically in how they utilise numbers.": {
+      "ph": [
+        {"t": "vary", "b": "vary in", "m": "在……方面不同"},
+        {"t": "in", "b": "vary in", "m": "在……方面不同"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Languages ", "r": "主干"},
+          {"t": "that exist today", "r": "定语从句"},
+          {"t": " vary dramatically in ", "r": "主干"},
+          {"t": "how they utilise numbers", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that exist today 是定语从句，先行词是 Languages，that 在从句里作主语；书上前置成「现存的语言」。",
+          "how they utilise numbers 是介词 in 的宾语从句，how 在从句里作方式状语；书上把它名词化成「使用数字的方式」，再接「上……的差异」。",
+          "vary dramatically in 是主干，副词 dramatically 书上放到名词前译成「巨大的差异」。"
+        ],
+        "lit": "今天存在的语言在它们如何使用数字上巨大地不同。"
+      }
+    },
+    "It is obvious that this new rule is applicable to everyone without exception.": {
+      "ph": [
+        {"t": "is applicable to", "b": "be applicable to", "m": "适用于"},
+        {"t": "without exception", "b": "without exception", "m": "无一例外"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "It is obvious", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that this new rule is applicable to everyone without exception", "r": "主语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "句首的 It 是形式主语，真正的主语是后面 that 引导的主语从句；that 只起连接作用，在从句中不作成分。",
+          "书上先译 It is obvious 为「很明显，」，再顺着译出从句内容，without exception 作状语，放到句末译成「无一例外」。"
+        ],
+        "lit": "很明显的是，这条新规则适用于每个人而没有例外。"
+      }
+    },
+    "Consumers could use appliances in a more efficient way by adjusting the time of cooking.": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "Consumers could use appliances", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "in a more efficient way", "r": "状语"},
+          {"t": " ", "r": ""},
+          {"t": "by adjusting the time of cooking", "r": "方式状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "by + 动名词 adjusting … 表示手段、方式，书上把它提前译成「调整烹饪时间」，再加「从而」接结果，顺序和英文相反。",
+          "in a more efficient way 是「介词 + 名词」作方式状语，书上转成副词「更有效地」；the time of cooking 里的 cooking 是动名词，译成「烹饪（的）时间」。"
+        ],
+        "lit": "消费者可以以更有效的方式使用电器，通过调整烹饪的时间。"
+      }
+    },
+    "They provide shelter for the farmers.": {
+      "ph": [
+        {"t": "provide", "b": "provide … for", "m": "为……提供"},
+        {"t": "for", "b": "provide … for", "m": "为……提供"}
+      ]
+    },
+    "Advances in agriculture increased the food supply.": {
+      "ph": [{"t": "Advances in", "b": "advance in", "m": "……方面的进步"}]
+    },
+    "We'll buy everything you produce, provided of course the price is right.": {
+      "ph": [
+        {"t": "provided", "b": "provided that", "m": "如果，假如"},
+        {"t": "of course", "b": "of course", "m": "当然"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "We'll buy everything ", "r": "主干"},
+          {"t": "you produce", "r": "定语从句"},
+          {"t": ", ", "r": ""},
+          {"t": "provided of course the price is right", "r": "条件状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "you produce 是省略了关系词的定语从句，先行词是 everything，省略的 that 在从句里作 produce 的宾语；书上前置成「你方生产的全部产品」。",
+          "provided 在这里相当于 if，引导条件状语从句（省略了 that，且从句里没有再加主句成分）；书上把条件提到句首译成「当然如果价格合适的话」，再译主句。"
+        ],
+        "lit": "我们将购买你生产的一切，如果当然价格是合适的。"
+      }
+    },
+    "People who prioritise breakfasts tend to have lower calorie but higher nutritional intake.": {
+      "ph": [{"t": "tend to", "b": "tend to do", "m": "往往，倾向于"}],
+      "an": {
+        "parts": [
+          {"t": "People ", "r": "主干"},
+          {"t": "who prioritise breakfasts", "r": "定语从句"},
+          {"t": " tend to have lower calorie but higher nutritional intake", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "who prioritise breakfasts 是定语从句，先行词是 People，who 在从句里作主语；书上前置成「优先吃早餐的人」。",
+          "lower calorie but higher nutritional intake 是并列结构，前半的 intake 被省略（calorie intake），两个比较级都没有 than，只是表示「较低」「较高」，所以书上译成「摄入的热量较低，但营养较高」。"
+        ],
+        "lit": "优先吃早餐的人倾向于有较低的热量但更高的营养摄入。"
+      }
+    },
+    "Great benefit and great harm can come from the same human tendency.": {
+      "ph": [{"t": "come from", "b": "come from", "m": "源自"}],
+      "an": {
+        "parts": [
+          {"t": "Great benefit and great harm", "r": "主干"},
+          {"t": " can come from ", "r": "主干"},
+          {"t": "the same human tendency", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "come from 是「来自」，主语是结果（利益和危害），介词宾语是来源（倾向）；书上把来源提作主语，译成「同样的倾向可能带来巨大的利益，也可能带来巨大的危害」，主客换位，语气更顺。",
+          "两个并列主语 benefit 和 harm 书上拆成两个「带来……」的分句；can 表可能性，对应「可能」。"
+        ],
+        "lit": "巨大的利益和巨大的危害可以来自同样的人类倾向。"
+      }
+    },
+    "This is not necessarily a new trend, but it is a somewhat puzzling one.": {
+      "ph": [{"t": "not necessarily", "b": "not necessarily", "m": "未必"}],
+      "an": {
+        "parts": [
+          {"t": "This is not necessarily a new trend", "r": "并列分句"},
+          {"t": ", but ", "r": ""},
+          {"t": "it is a somewhat puzzling one", "r": "并列分句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "not necessarily 是部分否定，意思是「不一定」而不是「一定不」，书上译成「未必是」。",
+          "one 是代词，代替前面的可数名词 trend，a somewhat puzzling one = a somewhat puzzling trend；书上省去重复的「趋势」，译成「但多少有点令人费解」。"
+        ],
+        "lit": "这不一定是一个新的趋势，但它是一个有点令人困惑的趋势。"
+      }
+    },
+    "Over the centuries, they have simulated dialogues in a number of ways.": {
+      "ph": [
+        {"t": "Over the centuries", "b": "over the centuries", "m": "几个世纪以来"},
+        {"t": "in a number of ways", "b": "in a number of ways", "m": "以多种方式"}
+      ]
+    },
+    "I do agree with him to an extent.": {
+      "ph": [
+        {"t": "agree with", "b": "agree with", "m": "同意"},
+        {"t": "to an extent", "b": "to an extent", "m": "在一定程度上"}
+      ]
+    },
+    "She stretched up to reach the top shelf.": {
+      "ph": [{"t": "stretched up", "b": "stretch up", "m": "向上伸"}]
+    },
+    "Offering online classes certainly helps students who would otherwise not be able to attend classroom sessions.": {
+      "ph": [{"t": "be able to", "b": "be able to do", "m": "能够"}],
+      "an": {
+        "parts": [
+          {"t": "Offering online classes", "r": "主干"},
+          {"t": " certainly helps students ", "r": "主干"},
+          {"t": "who would otherwise not be able to attend classroom sessions", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "句首 Offering online classes 是动名词短语作主语，书上译成「提供在线课程」，整体作主语。",
+          "who … 是定语从句，先行词是 students，who 在从句里作主语；书上前置成「那些无法参加……的学生」，放在「帮助」之后。",
+          "would otherwise 里的 otherwise 暗含一个没有说出的条件「如果没有在线课程」，所以 would 是含蓄条件的虚拟语气，不是时态呼应；书上把这层意思融进「无法参加」，没有单独译 otherwise。"
+        ],
+        "lit": "提供在线课程当然帮助那些否则不能参加课堂教学的学生。"
+      }
+    },
+    "I would contend that the minister's thinking is flawed on this point.": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "I would contend ", "r": "主干"},
+          {"t": "that the minister's thinking is flawed on this point", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导 contend 的宾语从句，that 不作成分；contend that 就是「主张、认为」。",
+          "这里 would 没有 if 条件，主句也不是过去时，既不是虚拟语气也不是时态呼应，而是用来缓和语气、表示委婉的主观看法；书上用「我倒认为」体现这种语气。",
+          "the minister's thinking 是名词短语，书上译成「部长的想法」；is flawed on this point 译成「在这一点上有漏洞」。"
+        ],
+        "lit": "我会主张部长的思想在这一点上是有缺陷的。"
+      }
+    },
+    "The intention to put a home-cooked meal on the table was pretty much universal.": {
+      "ph": [
+        {"t": "intention to", "b": "intention to do", "m": "做某事的意图"},
+        {"t": "pretty much", "b": "pretty much", "m": "几乎"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "The intention ", "r": "主干"},
+          {"t": "to put a home-cooked meal on the table", "r": "非谓语"},
+          {"t": " was pretty much universal", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "to put … 是不定式短语作 intention 的后置定语（说明意图的内容），书上前置成「把家常菜摆上餐桌的意图」。",
+          "put … on the table 译成「把……摆上餐桌」，用「把」字句，宾语提前。"
+        ],
+        "lit": "把一顿家常饭摆上桌子的意图几乎是普遍的。"
+      }
+    },
+    "He pretended not to notice.": {
+      "ph": [{"t": "pretended not to", "b": "pretend not to do", "m": "假装不……"}]
+    },
+    "She disguised herself as a boy.": {
+      "ph": [{"t": "disguised herself as", "b": "disguise oneself as", "m": "把自己装扮成"}]
+    },
+    "The fake websites have authentic-sounding names involving a mix of keywords.": {
+      "ph": [{"t": "a mix of", "b": "a mix of", "m": "多种……的混合"}]
+    },
+    "Let the cheers from the crowd spur you on.": {
+      "ph": [
+        {"t": "spur", "b": "spur … on", "m": "激励，鞭策"},
+        {"t": "on", "b": "spur … on", "m": "激励，鞭策"}
+      ]
+    },
+    "The dancers move in harmony as they imitate the animal's natural movements in the wild.": {
+      "ph": [
+        {"t": "in harmony", "b": "in harmony", "m": "和谐一致地"},
+        {"t": "in the wild", "b": "in the wild", "m": "在野外，野生的"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "The dancers move in harmony", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "as they imitate the animal's natural movements in the wild", "r": "时间状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "as 引导时间状语从句，表示两个动作同时进行（「一边……一边……」），书上译成「在模仿……时」，并把从句提到主干之前。",
+          "in the wild 放在句末，书上把它并入名词，译成「野生动物」，而不是单独译「在野外」。"
+        ],
+        "lit": "舞者们和谐地移动，当他们模仿野外动物的自然动作的时候。"
+      }
+    },
+    "A growing number of bike riders are attracted to electric bikes for convenience.": {
+      "ph": [
+        {"t": "A growing number of", "b": "a growing number of", "m": "越来越多的"},
+        {"t": "are attracted to", "b": "be attracted to", "m": "被……吸引"},
+        {"t": "for convenience", "b": "for convenience", "m": "为了方便"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "A growing number of bike riders are attracted to electric bikes", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "for convenience", "r": "原因状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "a growing number of 后接复数名词，主语是 number 但谓语跟着 bike riders 用复数 are；书上直接译成「越来越多的自行车爱好者」。",
+          "are attracted to 是被动，书上保留「被……所吸引」，因为被动的施动者（电动自行车）就在后面。",
+          "for convenience 是「介词 + 名词」表原因，名词 convenience 书上展开成分句「因为它们方便」。"
+        ],
+        "lit": "越来越多的骑自行车的人被电动自行车吸引，为了方便。"
+      }
+    },
+    "Always keep a first-aid kit handy.": {
+      "ph": [
+        {"t": "keep", "b": "keep … handy", "m": "把……放在手边"},
+        {"t": "handy", "b": "keep … handy", "m": "把……放在手边"}
+      ]
+    },
+    "It convinced the public that fashionable clothes should be made durable.": {
+      "ph": [
+        {"t": "convinced", "b": "convince sb. that", "m": "使某人相信"},
+        {"t": "that", "b": "convince sb. that", "m": "使某人相信"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "It convinced the public ", "r": "主干"},
+          {"t": "that fashionable clothes should be made durable", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "convince sb. that … 中，the public 是间接宾语，that 从句是直接宾语（宾语从句）；书上译成「使公众相信，……」。",
+          "should be made durable 是被动，make + 宾语 + 形容词（宾补）变成被动后 durable 留在原位；书上不译「被」，直接说「应该经久耐穿」。should 在这里表示「应该」，不是虚拟。"
+        ],
+        "lit": "它使公众相信时尚的衣服应该被做得耐用。"
+      }
+    },
+    "Farmers will lobby Congress for higher subsidies.": {
+      "ph": [
+        {"t": "lobby", "b": "lobby … for", "m": "游说……争取"},
+        {"t": "for", "b": "lobby … for", "m": "游说……争取"}
+      ]
+    },
+    "Americans are less doubtful when it comes to politics.": {
+      "ph": [{"t": "when it comes to", "b": "when it comes to", "m": "说到，在……问题上"}]
+    },
+    "Most people will be able to give a vague description of their main meals.": {
+      "ph": [{"t": "be able to", "b": "be able to do", "m": "能够"}]
+    },
+    "This light is too dim to read by.": {
+      "ph": [
+        {"t": "too", "b": "too … to", "m": "太……而不能"},
+        {"t": "to", "b": "too … to", "m": "太……而不能"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "This light is too dim", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to read by", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "too … to 表示「太……以至于不能」，形式是肯定，意思却是否定，所以书上译成「太暗，看不了书」。",
+          "read by 的介词 by 后面省略了宾语，实际是 read by this light，宾语就是主语 This light；这种介词后置书上直接译成「看书」，把「借着光」融进「光线……看不了」。"
+        ],
+        "lit": "这光太暗以至于不能借着它读。"
+      }
+    },
+    "He walked away in disgust.": {
+      "ph": [
+        {"t": "walked away", "b": "walk away", "m": "走开"},
+        {"t": "in disgust", "b": "in disgust", "m": "厌恶地"}
+      ]
+    },
+    "If you get up early, try not to disturb everyone else.": {
+      "ph": [
+        {"t": "get up", "b": "get up", "m": "起床"},
+        {"t": "try not to", "b": "try not to do", "m": "尽量不要"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "If you get up early", "r": "条件状语"},
+          {"t": ", ", "r": ""},
+          {"t": "try not to disturb everyone else", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "If 引导真实条件状语从句，用一般现在时 get up 表示将来可能的情况；书上译成「如果你起得早」。",
+          "主句是祈使句，省略了主语 you；否定词 not 放在 to 前（try not to do），表示「尽量不要做」，而不是「不尝试做」。"
+        ],
+        "lit": "如果你早起，试着不要打扰其他所有人。"
+      }
+    },
+    "They cast anchor at nightfall.": {
+      "ph": [{"t": "cast anchor", "b": "cast anchor", "m": "抛锚停泊"}]
+    }
+  }
+}
