@@ -1,21 +1,28 @@
-# 任务：给一课例句标词组、写语法解析（书外补充）
+# 任务：给例句标词组、写「对话带练」式的翻译讲解（书外补充）
 
-输入：`python pipeline/note_sents.py <id>` 列出的本课例句（每句带书上译文；★ 是脚本粗筛出的解析候选）。
-输出：**一个 JSON 文件** `site/data/notes/<id>.json`。读者是备考四级的学生：点句中的词组看意思，点「析」看这句为什么这么译。
+读者是备考四级的学生。点句中的词组看意思；点「析」，像有个老师坐在旁边，带着他把一句难句从硬译改成通顺的中文。
+
+数据在 `site/data/notes/<id>.json`，每句两部分：`ph` 词组标注、`an` 讲解。两部分分开写：
+
+| 写什么 | 怎么写 | 写到哪 |
+|---|---|---|
+| 词组 `ph`（只在新课第一次生成时写） | `python pipeline/note_sents.py <id>` 看例句，按第一节写 | 直接写 `site/data/notes/<id>.json`，先不带 `an` |
+| 讲解 `an` | `python pipeline/notes_an.py <id> --dump` 看例句、书译、已标词组，按第二、三节写 | **只写** `work/notes-an/<id>.json`，再跑 `python pipeline/notes_an.py <id> --merge` 合并（会自动校验，词组不会被动） |
+
+`work/notes-an/<id>.json` 的格式：
 
 ```json
 {
-  "_note": "例句词组与语法解析（书外补充，AI 生成）",
-  "sents": {
-    "<例句原文，逐字照抄，包括标点>": {
-      "ph": [{"t": "句中原样片段", "b": "词组原形", "m": "中文释义"}],
-      "an": {"parts": [{"t": "片段", "r": "成分名或空串"}], "pts": ["要点"], "lit": "直译"}
-    }
+  "<例句英文原文，和 --dump 列出的逐字相同，包括标点>": {
+    "talk": [{"t": "英文片段", "s": "带练文字\n→ 这一块的中文"}],
+    "order": "排顺序（选填）",
+    "sum": "合起来的整句译文",
+    "cmp": "和书上译文的对照"
   }
 }
 ```
 
-一句既没有词组、也不写解析，就整句不写（不要写空对象）；只有解析没有词组的，写 `"ph": []`。
+`site/data/notes/<id>.json` 的整体格式：`{"_note": "例句词组与语法解析（书外补充，AI 生成）", "sents": {"<例句原文>": {"ph": [...], "an": {...}}}}`。一句既没有词组、也没有讲解，就整句不写。
 
 ## 一、词组 ph
 
@@ -29,103 +36,90 @@
 - 不同词组的片段**不能重叠**。两个搭配共用一个词时只标更值得记的那个（`be open to` 和 `open to new memories` 只标前者）
 - 同一个片段在句中出现两次、而你要标的是第二次：换一个更长、不重复的 t（把前后的词带上），或者不标
 
-## 二、解析 an
+## 二、讲解 an：对话带练
 
-**写不写**：★ 候选句由你判断，有值得讲的语法点才写；非候选句一般不写，除非有明显的难点（倒装、强调句、虚拟语气等）。写不出两条有用要点的，不写。一课一般 8～15 句。
+### 挑哪些句子
 
-**只讲四级常见语法点**：从句（宾语 / 定语 / 状语 / 同位语 / 主语从句）、非谓语（不定式、分词、动名词）、被动、时态呼应、名词化、否定（全部否定 / 部分否定 / no + 名词）、插入语、倒装、强调句、虚拟语气、无生命主语。
+只挑**难句**，或**书上译文做了明显转换**的句子：语序前后调、名词改成动词、加了字（「让」「被」「得到」）、拆成两句、被动改主动、东西当主语……
+一课写 **5～10 句**。照字面就能翻对的简单句不写；写不出带练价值的不写；**拿不准的判断（先行词、would 是不是虚拟）宁可不写这一句，也不要猜**。
 
-### parts：成分分块
+### 每句的结构
 
-把整句切成按顺序首尾相接的片段，**拼起来必须和原句一字不差**（包括空格和标点；空格、逗号、连接词单独成块时 `r` 写空串）。r 用这些名称：
+页面会先自动显示开场白「先别看译文，你自己来。」，**不要**写进数据。然后：
 
-`主干`、`宾语从句`、`主语从句`、`表语从句`、`同位语从句`、`定语从句`、`非限制性定语从句`、`时间状语`、`条件状语`、`原因状语`、`让步状语`、`目的状语`、`结果状语`、`方式状语`、`状语`（不好细分时）、`插入语`、`非谓语`（不定式 / 分词短语作状语、补语等）、`同位语`、`并列分句`，或空串。
+1. **talk：一块一块往下走**（1～6 块，按句中先后）。每块：
+   - `t` 贴这块英文（原句里的原样片段，按顺序）；
+   - `s` 是带练文字，固定套路：**猜他会怎么翻**（「你多半会翻成……」）→ **让他自己发现问题**（「念一遍，是不是有点怪？」「放回去试试」）→ **给一个能马上动手的办法**（「眼睛往后找 to」「看到 in spite of，脑子里换成『虽然』」）→ 最后另起一行，用 `→` 开头写这一块的中文；
+   - 没有卡点的块一句带过：「这块照字面翻就行：……」，同样用 `→` 行收尾。
+2. **order：排顺序**（选填）。英文和中文语序不同、需要挪动时，单独一两句说为什么挪、怎么挪；不用挪就不写这个字段。
+3. **sum：合起来**。自己顺下来的整句中文，不要照抄书上译文。
+4. **cmp：对照书译**。一样就说一样；不一样就说差在哪、哪个更顺；书上译文明显不够好，可以直说并给出理由。页面会把 sum 和书上译文并排显示。
 
-切得粗一点：一个从句一块，主干一块，不要每个词一块。从句嵌在主干中间时，主干可以分成两块都标 `主干`。
+### 写法规矩
 
-### pts：要点（1～4 条）
+- 用「你」，口语，像老师坐在旁边说话。一块最多 3～4 句话（不算 → 那行），**每块只解决一个卡点**
+- 不堆术语；非用不可时，马上跟一句白话（「-ing 开头当主语，就是『做某事』这件事」）
+- 找指代、找搭配，一律给能动手的办法，不直接甩结论：定语从句、which / that / it 指谁，就把候选名词**一个个放回去试**，说清哪个说得通；被拆开的搭配，说「眼睛往后找……」
+- would / could / might：说清是时态呼应（前面是过去时）、虚拟（有 if 条件，或和事实相反）还是委婉语气，**要说出依据**
+- 中文里的引号用「」，不要用 `"`（会破坏 JSON）；英文原句里本来就有的双引号，在键和 `t` 里照抄并写成 `\"` 转义
+- 不改书上的原句和译文，不把书上译文复制进 sum
 
-每条**先说现象，再落到「所以书上这么译」**。不说空话（「这句话结构清晰」「注意语法」不算要点），不讲书上译文已经一目了然、没有转换的地方。
-
-- 定语从句**必须说清先行词是谁、关系词在从句里作什么成分**（主语 / 宾语 / 状语），以及书上是前置成「……的」还是拆成后面的分句
-- 被动：说书上译成主动、「得到 / 受到」还是「被」
-- would / could / might：说清是**时态呼应（过去将来）**还是**虚拟语气**，有依据（主句是过去时 → 呼应；有 if 条件或与现在事实相反 → 虚拟）
-- 名词化：指出名词短语，说书上把它展开成了什么（动宾、主谓）
-- 没把握的语法判断不要写
-
-### lit：直译
-
-逐词硬译、保留英文结构的一句中文，只用来和书上译文对比，让人看出书上做了哪些转换。**不要**写成书上的译文。
-
-## 三、样例（照这个水平写）
+## 三、示例（照这个水平和口气写）
 
 ```json
-"We were assured that, except for low grades or a raise in family income, no money would be taken away.": {
-  "ph": [
-    {"t": "were assured", "b": "be assured", "m": "得到保证"},
-    {"t": "except for", "b": "except for", "m": "除……之外"},
-    {"t": "a raise in", "b": "a raise in", "m": "……的增加"},
-    {"t": "taken away", "b": "take away", "m": "拿走"}
-  ],
-  "an": {
-    "parts": [
-      {"t": "We were assured", "r": "主干"},
-      {"t": " that, ", "r": ""},
-      {"t": "except for low grades or a raise in family income", "r": "插入语"},
-      {"t": ", ", "r": ""},
-      {"t": "no money would be taken away", "r": "宾语从句"},
-      {"t": ".", "r": ""}
+{
+  "The letter is in fairly good condition, in spite of being out of the care of trained museum staff for so long.": {
+    "talk": [
+      {"t": "The letter is in fairly good condition",
+       "s": "你多半会翻成「这封信在相当好的状况里」。念一遍，中文不这么说。in good condition 是一个整体，就是「状况好、保存得不错」。\n→ 这封信状况相当好。"},
+      {"t": "in spite of being out of the care of trained museum staff for so long",
+       "s": "看到 in spite of，脑子里马上换成「虽然」，后面跟的都是「虽然」的内容。being out of the care of……你可能想翻成「处于……的照顾之外」，太绕了，说白了就是「没人照顾」。谁没照顾它？trained museum staff。for so long 是「这么长时间」。\n→ 虽然这么长时间没有受到训练有素的博物馆员工的维护"}
     ],
-    "pts": [
-      "主干 We were assured 是被动，书上译成「我们得到保证」，比「我们被保证」顺。",
-      "that 引导 assured 的宾语从句；except for… 夹在 that 和从句主语之间，是插入语，所以书上把「除了……外」提到从句开头。",
-      "no money 作主语，否定落在主语上，书上译成「任何钱都不会……」；would 是主句过去时引起的时态呼应（过去将来），不是虚拟语气。",
-      "a raise in family income 是名词化结构，书上展开成主谓式的「家庭收入增加」。"
+    "order": "英文是「结果在前、虽然在后」，中文习惯先说「虽然」、再说「但」，所以把后半句提到前面。",
+    "sum": "这封信虽然长期没有受到训练有素的博物馆员工的维护，但状况相当好。",
+    "cmp": "几乎一样，书上多了个「其」，书面一点。"
+  },
+  "Creating the future you want is a lot easier if you are ready to exploit the opportunities that come your way.": {
+    "talk": [
+      {"t": "Creating the future you want",
+       "s": "一开头就是 Creating，别慌。-ing 开头当主语，就是「做某事」这件事。the future you want 中间藏了个 that，补回去是 the future (that) you want，「你想要的未来」。\n→ 创造你想要的未来"},
+      {"t": "is a lot easier",
+       "s": "这块照字面翻就行。a lot 放在比较级前面是「……得多」，不是「很多」。\n→ 就会容易得多"},
+      {"t": "if you are ready to exploit the opportunities that come your way",
+       "s": "exploit 你可能只认识「剥削」，这里是「利用、抓住」机会。come your way 字面是「来到你的路上」，说白了就是「你遇到的」。that 指谁？放回去试：opportunities come your way，机会来到你面前，对。\n→ 如果你准备好利用你遇到的机会"}
     ],
-    "lit": "我们被保证，除了低分或家庭收入的增加以外，没有钱会被拿走。"
+    "order": "英文把 if 放在后面，中文的「如果」几乎总是放前面。",
+    "sum": "如果你准备好抓住遇到的机会，创造你想要的未来就会容易得多。",
+    "cmp": "意思一样。「抓住」比书上的「利用」顺口一点，两个都对。"
+  },
+  "Mistakes crack their self-confidence because they attribute errors to a lack of ability, which they feel powerless to change.": {
+    "talk": [
+      {"t": "Mistakes crack their self-confidence",
+       "s": "你多半会翻成「错误破坏他们的自信」。念一遍，是不是有点怪？「错误」又不是人，怎么去破坏？英文爱让东西当主语，中文更习惯说「东西让人怎么样」。crack 本义是「裂开」，自信心裂开了，就是「崩溃」。\n→ 错误会让他们的自信心崩溃"},
+      {"t": "because they attribute errors to a lack of ability",
+       "s": "看到 attribute 先别急，眼睛往后找 to——找到了：attribute A to B，把 A 归到 B 上。A 是 errors，B 是 a lack of ability。「能力的缺乏」太翻译腔，中文直接说「能力不足」。\n→ 因为他们把错误归咎于能力不足"},
+      {"t": "which they feel powerless to change",
+       "s": "which 是谁？你可能以为是 errors。放回去试试：无力改变错误？错误都犯了，改什么？换 a lack of ability：无力改变能力不足——对了。中文不用把它再说一遍，直接接一个短句。\n→ 觉得无力改变"}
+    ],
+    "sum": "错误会让他们的自信心崩溃，因为他们把错误归咎于能力不足，觉得无力改变。",
+    "cmp": "和书上完全一样，说明这几步就是书上的思路。"
+  },
+  "We were assured that, except for low grades or a raise in family income, no money would be taken away.": {
+    "talk": [
+      {"t": "We were assured that",
+       "s": "你多半会翻成「我们被保证」。念一遍，别扭吧？中文很少说「被保证」，换成「得到保证」就顺了。that 后面跟的就是保证的内容。\n→ 我们得到保证"},
+      {"t": "except for low grades or a raise in family income",
+       "s": "这块夹在 that 和后面的话中间，像是插了一句嘴，先单独翻。except for 就是「除了……之外」。a raise in family income 你可能翻成「家庭收入的一个增加」，太硬了，把名词 raise 换成动词说：「收入增加」。\n→ 除了成绩不佳或家庭收入增加外"},
+      {"t": "no money would be taken away",
+       "s": "no money 打头，你可能想翻「没有钱会被拿走」。意思对，但中文更常说「任何……都不……」。再看一眼 would：前面 were assured 是过去时，这里只是跟着用了过去的 will，不是虚拟，翻成「会」就行。\n→ 任何钱都不会被拿走"}
+    ],
+    "sum": "我们得到保证，除了成绩不佳或家庭收入增加外，任何钱都不会被拿走。",
+    "cmp": "和书上完全一样。"
   }
 }
 ```
 
-```json
-"Mistakes crack their self-confidence because they attribute errors to a lack of ability, which they feel powerless to change.": {
-  "ph": [
-    {"t": "attribute", "b": "attribute … to", "m": "把……归因于"},
-    {"t": "to", "b": "attribute … to", "m": "把……归因于"},
-    {"t": "a lack of", "b": "a lack of", "m": "缺乏"},
-    {"t": "feel powerless to", "b": "feel powerless to do", "m": "感到无力做某事"}
-  ],
-  "an": {
-    "parts": [
-      {"t": "Mistakes crack their self-confidence", "r": "主干"},
-      {"t": " ", "r": ""},
-      {"t": "because they attribute errors to a lack of ability", "r": "原因状语"},
-      {"t": ", ", "r": ""},
-      {"t": "which they feel powerless to change", "r": "非限制性定语从句"},
-      {"t": ".", "r": ""}
-    ],
-    "pts": [
-      "主语 Mistakes 是无生命名词，直译「错误破坏自信」生硬，书上加「让」译成「错误会让他们的自信心崩溃」。",
-      "attribute A to B 被拆开：A 是 errors，B 是 a lack of ability，书上译成「把错误归咎于能力不足」。",
-      "which 的先行词是 a lack of ability（能力不足），不是 errors；which 在从句里作 change 的宾语（change which）。",
-      "非限制性定语从句书上拆成后面的分句「觉得无力改变」，which 承前省略，不再译出「这种不足」。"
-    ],
-    "lit": "错误破坏了他们的自信，因为他们把错误归因于能力的缺乏，而他们觉得无力改变这种缺乏。"
-  }
-}
-```
+## 四、写完自检
 
-只有词组的句子：
-
-```json
-"Nowadays forests are increasingly welcome because they suck in carbon pollution from the air.": {
-  "ph": [{"t": "suck in", "b": "suck in", "m": "吸入"}]
-}
-```
-
-## 四、规则
-
-1. 句子键必须逐字照抄 `note_sents.py` 列出的英文（标点、撇号都一样）
-2. 中文里的引号用「」，不要用 `"`（会破坏 JSON）；英文原句里本来就有的双引号，在键和 t 里照抄并写成 `\"` 转义，这种句子照常标注，不要因为有引号就跳过
-3. 不改书上的原句和译文，不把书上译文复制进 notes
-4. 写完跑 `python pipeline/validate.py <id>`，有 ERROR 改到没有为止（WARN 是书上原有的提醒，不用管）
+1. 跑 `python pipeline/notes_an.py <id> --merge`。报错就改 `work/notes-an/<id>.json`，再 merge，直到 `[OK]`
+2. 每句读一遍：有没有「猜他会怎么翻 → 发现问题 → 动手的办法 → 中文」？有没有空话（「这句话结构清晰」「注意语法」）？指代、would 的判断有没有说出依据？

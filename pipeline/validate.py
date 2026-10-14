@@ -216,6 +216,10 @@ def check_notes(r, data):
         an = n.get("an")
         if an is None:
             continue
+        if "talk" in an:
+            check_talk(r, where, s, an)
+            continue
+        r.warn(where, "旧格式解析（parts/pts），待重写成对话带练")
         parts = an.get("parts", [])
         if "".join(x.get("t", "") for x in parts) != s:
             r.err(where, "parts 的 t 按顺序拼起来和原句不一致")
@@ -229,6 +233,38 @@ def check_notes(r, data):
             r.err(where, f"要点 {len(pts)} 条，最多 4 条")
         if not str(an.get("lit", "")).strip():
             r.err(where, "缺少直译 lit")
+
+
+TALK_KEYS = {"talk", "order", "sum", "cmp"}
+
+
+def check_talk(r, where, s, an):
+    """对话带练式解析：talk 1~6 块（t 是英文片段，按顺序出现在原句里，可省；s 是带练文字），
+    order 排顺序（选填），sum 合起来的译文，cmp 和书译的对照"""
+    extra = set(an) - TALK_KEYS
+    if extra:
+        r.err(where, f"解析里有多余的字段 {sorted(extra)}（只能有 talk/order/sum/cmp）")
+    talk = an.get("talk")
+    if not isinstance(talk, list) or not 1 <= len(talk) <= 6:
+        r.err(where, f"talk 应为 1~6 块，实际 {len(talk) if isinstance(talk, list) else talk!r}")
+        talk = talk if isinstance(talk, list) else []
+    pos = 0
+    for i, b in enumerate(talk, 1):
+        if not isinstance(b, dict) or not str(b.get("s", "")).strip():
+            r.err(where, f"第 {i} 块的带练文字 s 为空")
+            continue
+        t = b.get("t", "")
+        if t:
+            j = s.find(t, pos)
+            if j < 0:
+                r.err(where, f"第 {i} 块的英文片段 {t[:30]!r} 不在原句里，或顺序不对（要按句中先后）")
+            else:
+                pos = j + len(t)
+    if "order" in an and not str(an["order"]).strip():
+        r.err(where, "order 写了但是空的（不需要就删掉这个字段）")
+    for k in ("sum", "cmp"):
+        if not str(an.get(k, "")).strip():
+            r.err(where, f"缺少 {k}（{'合起来的译文' if k == 'sum' else '和书译的对照'}）")
 
 
 def check_roots(r, data):

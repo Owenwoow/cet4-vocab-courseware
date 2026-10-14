@@ -16,7 +16,7 @@ description: 批量生成课件课程（Part 01 词以群记）：抽页图 → 
 | 页图 → Lesson JSON + 自检 | 子代理 `lesson-extractor` | **Sonnet** | 约 10~13 万 token |
 | 校验 | `pipeline/validate.py` | 脚本 | 0 |
 | 逐词释义 | 子代理 `gloss-writer` | **Haiku** | 约 5~6 万 token |
-| 例句词组与语法解析 | 子代理 `note-writer` | **Sonnet**（先行词、虚拟语气这类判断 Haiku 容易讲错） | 约 2.5~4 万 token（2026-10-14 实测 38 课） |
+| 例句词组与对话带练讲解 | 子代理 `note-writer` | **Sonnet**（先行词、虚拟语气这类判断 Haiku 容易讲错） | 约 2.5~4 万 token（2026-10-14 旧版讲解实测；对话带练版待实测） |
 | 音频 | 云端 `audio` 工作流（`.github/workflows/audio.yml`，内部跑 `build_audio.py` + `publish_audio.py`） | 脚本（edge-tts） | 0 |
 | 对数 / 部署检查 | `build_index.py` / `check_audio.py`（deploy 工作流里也会跑） | 脚本 | 0 |
 | 人工抽查 | 用户 | — | — |
@@ -68,9 +68,9 @@ id: u08-l01；unit: 8；lesson: 1；part: 1；书页范围：215 到 222；词�
 
 释义完成时：自己跑 `python pipeline/gloss_words.py <id> --check`，不 OK 就 SendMessage 回同一个子代理。
 
-释义通过后，过额度闸门，后台启动一个 `note-writer`（Sonnet，不占 N 个名额），提示词只给课号 id。完成时自己跑
+释义通过后，过额度闸门，后台启动一个 `note-writer`（Sonnet，不占 N 个名额），提示词给课号 id 并写明「新课」。它先写词组、再把讲解写进 `work/notes-an/<id>.json`，用 `python pipeline/notes_an.py <id> --merge` 合并。完成时自己跑
 `python pipeline/validate.py <id>`（看「词组解析」开头的 ERROR）和 `python pipeline/note_sents.py <id> --check`，
-不 OK 就 SendMessage 回同一个子代理；再抽两三句带「析」的解析看一眼（先行词、would 是不是虚拟、要点有没有落到译法）。
+不 OK 就 SendMessage 回同一个子代理；再抽两三句带「析」的讲解看一眼（先行词、would 是不是虚拟、有没有「猜你会怎么翻 → 发现问题 → 动手的办法 → 中文」的套路）。
 
 **本地不生成音频**（本地网络跑 edge-tts 会卡死），音频统一交给云端 `audio` 工作流，见第 3 节。
 
