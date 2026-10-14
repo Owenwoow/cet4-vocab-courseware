@@ -83,9 +83,23 @@ const Sent = (() => {
   /* 语法成分的配色类：主干 / 各类从句 / 状语 / 插入语 / 其他；空串不着色 */
   const role = r => (!r ? "" : r === "主干" ? "main" : /从句/.test(r) ? "cl" : /状语/.test(r) ? "adv" : /插入/.test(r) ? "ins" : "oth");
 
-  /* 「析」：成分分块 → 要点 → 直译与书译对照；zh 是书上的译文（课程文件 ex.zh） */
+  /* 「析」：zh 是书上的译文（课程文件 ex.zh）。
+     对话带练（an.talk）：开场白 → 一块块英文 + 带练文字（→ 开头的行是这块的中文）→ 排顺序 → 合起来与书译对照；
+     旧格式（an.parts / pts / lit）：成分分块 → 要点 → 直译与书译对照，全部重写后删掉 */
+  const ADD = `<span class="src add">补充</span>`;
+  function talkHTML(an, zh) {
+    const lines = s => String(s).split("\n").filter(x => x.trim())
+      .map(x => /^\s*→/.test(x) ? `<div class="anto">${esc(x.trim())}</div>` : `<p>${esc(x)}</p>`).join("");
+    const blocks = an.talk.map(b => `<div class="anblk">${b.t ? `<div class="anen">${esc(b.t)}</div>` : ""}<div class="ans">${lines(b.s || "")}</div></div>`).join("");
+    return `<div class="an talk" hidden><div class="anh">带你译${ADD}</div>
+      <p class="anopen">先别看译文，你自己来。</p>${blocks}
+      ${an.order ? `<div class="anord"><b>排顺序</b>${lines(an.order)}</div>` : ""}
+      <div class="antr">${an.sum ? `<div><b>合起来</b><span>${esc(an.sum)}</span></div>` : ""}${zh ? `<div><b>书译</b><span>${esc(zh)}</span></div>` : ""}</div>
+      ${an.cmp ? `<p class="ancmp">${esc(an.cmp)}</p>` : ""}</div>`;
+  }
   function anHTML(an, zh) {
     if (!an) return "";
+    if (Array.isArray(an.talk)) return talkHTML(an, zh);
     const parts = (an.parts || []).map(p => {
       const t = p.t.trim(), c = role(p.r);
       if (!t) return "";
@@ -97,8 +111,13 @@ const Sent = (() => {
       ${an.lit || zh ? `<div class="antr">${an.lit ? `<div><b>直译</b><span>${esc(an.lit)}</span></div>` : ""}${zh ? `<div><b>书译</b><span>${esc(zh)}</span></div>` : ""}</div>` : ""}</div>`;
   }
   /* 有解析的例句：右上角「析」按钮 + 默认收起的解析块（都放在 .sent 外面，不含 .w） */
-  const anBlock = (note, zh) => (note && note.an ? `<button class="anBtn" title="句子解析（补充）">析</button>${anHTML(note.an, zh)}` : "");
+  const anBlock = (note, zh) => (note && note.an ? `<button class="anBtn" title="带你译这句（补充）">析</button>${anHTML(note.an, zh)}` : "");
 
-  return {find, locate, html, best, role, anHTML, anBlock};
+  /* 词组原形 → 朗读文本（和 pipeline/build_audio.py 的 phrase_spoken 一致，音频按这个文本生成）：
+     括号里可省的去掉，a/b 二选一读前一个，… 和 sth. 读 something，sb. 读 somebody，adj. 读 adjective */
+  const spoken = b => String(b).replace(/\([^)]*\)/g, " ").replace(/(\S+?)\/\S+/g, "$1").replace(/…/g, " something ").replace(/\badj\./g, "adjective").replace(/\+/g, " ")
+    .replace(/\bsth\./g, "something").replace(/\bsb\.'s\b|\bsb's\b/g, "somebody's").replace(/\bsb\./g, "somebody").replace(/\s+/g, " ").trim();
+
+  return {find, locate, html, best, role, anHTML, anBlock, spoken};
 })();
 if (typeof module === "object" && module.exports) module.exports = Sent;

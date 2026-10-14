@@ -83,3 +83,28 @@ test("语法成分配色：主干 / 从句 / 状语 / 插入语，空串不着�
   assert.match(h, /anp main/); assert.match(h, /书译/); assert.match(h, /补充/);
   assert.equal(Sent.anBlock(null, "x"), "");
 });
+
+test("对话带练：开场白、英文块、→ 行、排顺序、合起来与书译对照，文字都转义", () => {
+  const an = {talk: [{t: "The letter is in fairly good condition", s: "你多半会翻成「这封信在<相当>好的状况里」。\n→ 这封信状况相当好。"},
+    {s: "这块照字面翻就行。\n→ 虽然……"}], order: "先说「虽然」，再说「但」。", sum: "这封信……状况相当好。", cmp: "几乎一样。"};
+  const h = Sent.anHTML(an, "书上的译文");
+  assert.match(h, /class="an talk" hidden/);
+  assert.match(h, /先别看译文，你自己来。/);
+  assert.match(h, /<div class="anen">The letter is in fairly good condition<\/div>/);
+  assert.match(h, /&lt;相当&gt;/);                                    // 转义
+  assert.equal((h.match(/class="anto"/g) || []).length, 2);
+  assert.equal((h.match(/class="anen"/g) || []).length, 1);          // 没有 t 的块不画英文
+  assert.match(h, /<b>排顺序<\/b>/); assert.match(h, /<b>合起来<\/b>/); assert.match(h, /书上的译文/); assert.match(h, /几乎一样/); assert.match(h, /补充/);
+  assert.doesNotMatch(Sent.anHTML({talk: [{t: "x", s: "y"}], sum: "s", cmp: "c"}, ""), /排顺序/);   // 没有 order 不显示
+});
+
+test("词组朗读文本：和 build_audio.py 的 phrase_spoken 一致", () => {
+  assert.equal(Sent.spoken("attribute … to"), "attribute something to");
+  assert.equal(Sent.spoken("be famous for sth."), "be famous for something");
+  assert.equal(Sent.spoken("remind sb. of sth."), "remind somebody of something");
+  assert.equal(Sent.spoken("take sb.'s advice"), "take somebody's advice");
+  assert.equal(Sent.spoken("put sb./sth. to sleep"), "put somebody to sleep");
+  assert.equal(Sent.spoken("have trouble (in) doing"), "have trouble doing");
+  assert.equal(Sent.spoken("make sb. adj."), "make somebody adjective");
+  assert.equal(Sent.spoken("take away"), "take away");
+});

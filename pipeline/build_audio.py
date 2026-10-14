@@ -17,7 +17,7 @@ import re
 
 import edge_tts
 
-from config import AUDIO, AUDIO_BASE, AUDIO_STORE, LESSONS
+from config import AUDIO, AUDIO_BASE, AUDIO_STORE, DATA, LESSONS
 
 VOICES = {"ava": "en-US-AvaNeural", "andrew": "en-US-AndrewNeural",
           "sonia": "en-GB-SoniaNeural", "ryan": "en-GB-RyanNeural"}
@@ -25,10 +25,24 @@ ZH_VOICE = "zh-CN-XiaoxiaoNeural"
 POS_ZH = {"n.": "名词", "v.": "动词", "adj.": "形容词", "adv.": "副词", "prep.": "介词",
           "conj.": "连词", "pron.": "代词", "phr.": "短语", "n. & v.": "名词和动词"}
 FILES = AUDIO_STORE / "files"
+NOTES = DATA / "notes"
 # 并发数：本机 8 没问题；GitHub 服务器 IP 容易被限流，CI 里设 AUDIO_CONCURRENCY=3
 SEM = asyncio.Semaphore(int(os.environ.get("AUDIO_CONCURRENCY", 8)))
 RETRIES = 6
 REQUEST_TIMEOUT = 60   # 秒；一句话正常几秒内完成
+
+
+def phrase_spoken(b):
+    """词组原形 → 朗读文本（与网页 sent.js 的 spoken 一致）：括号里可省的去掉，a/b 二选一读前一个，
+    … 和 sth. 读 something，sb. 读 somebody，adj. 读 adjective"""
+    t = re.sub(r"\([^)]*\)", " ", b)
+    t = re.sub(r"(\S+?)/\S+", r"\1", t)
+    t = t.replace("…", " something ")
+    t = re.sub(r"\badj\.", "adjective", t).replace("+", " ")
+    t = re.sub(r"\bsth\.", "something", t)
+    t = re.sub(r"\bsb\.'s\b|\bsb's\b", "somebody's", t)
+    t = re.sub(r"\bsb\.", "somebody", t)
+    return re.sub(r"\s+", " ", t).strip()
 
 
 def senses_zh(senses):
@@ -87,9 +101,13 @@ async def main(lid, voice_keys):
                 meaning.setdefault(x["word"], senses_zh(x["senses"]))
     zh += meaning.values()
     words, sentences, zh = (list(dict.fromkeys(v)) for v in (words, sentences, zh))
+    # 例句里标出的词组（data/notes，书外补充）：按原形读，点词组时播放
+    nf = NOTES / f"{lid}.json"
+    notes = json.loads(nf.read_text(encoding="utf-8")).get("sents", {}) if nf.exists() else {}
+    phrases = list(dict.fromkeys(p["b"] for n in notes.values() for p in n.get("ph", []) if p.get("b")))
 
-    # z：中文文本 → 文件；m：单词 → 其释义朗读文本（磨耳朵用）
-    manifest = {"base": AUDIO_BASE, "voices": voice_keys, "w": {}, "s": {}, "z": {}, "m": meaning}
+    # z：中文文本 → 文件；m：单词 → 其释义朗读文本（磨耳朵用）；p：词组原形 → 文件
+    manifest = {"base": AUDIO_BASE, "voices": voice_keys, "w": {}, "s": {}, "z": {}, "m": meaning, "p": {}}
     made = failed = 0
 
     async def do_word(w, vk):
@@ -108,6 +126,14 @@ async def main(lid, voice_keys):
         failed += not key
         made += new
 
+    async def do_phrase(b, vk):
+        nonlocal made, failed
+        key, _, new = await synth(phrase_spoken(b), VOICES[vk], False)
+        if key:
+            manifest["p"].setdefault(b, {})[vk] = key
+        failed += not key
+        made += new
+
     async def do_zh(t):
         nonlocal made, failed
         key, _, new = await synth(t, ZH_VOICE, False)
@@ -118,13 +144,13 @@ async def main(lid, voice_keys):
 
     jobs = [do_zh(t) for t in zh]
     for vk in voice_keys:
-        jobs += [do_word(w, vk) for w in words] + [do_sent(s, vk) for s in sentences]
+        jobs += [do_word(w, vk) for w in words] + [do_sent(s, vk) for s in sentences] + [do_phrase(b, vk) for b in phrases]
     await asyncio.gather(*jobs)
 
     out = AUDIO / f"{lid}.json"
     out.write_text(json.dumps(manifest, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     size = sum(f.stat().st_size for f in FILES.glob("*.mp3"))
-    print(f"{lid}：{len(words)} 词 × {len(voice_keys)} 声，{len(sentences)} 句，中文 {len(zh)} 条；"
+    print(f"{lid}：{len(words)} 词 × {len(voice_keys)} 声，{len(sentences)} 句，词组 {len(phrases)} 个，中文 {len(zh)} 条；"
           f"新生成 {made} 个文件，失败 {failed} 个；音频库共 {size // 1024} KB")
 
 
