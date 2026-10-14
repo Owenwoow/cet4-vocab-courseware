@@ -1,6 +1,6 @@
 /* 例句渲染：切成可点的单词，标出词组（书外补充 data/notes）。纯函数，不碰页面和存储；浏览器里是全局 Sent，Node 里 require 进来跑单元测试
 
-   notes 一句的格式：{ph: [{t 句中原样片段, b 词组原形, m 释义}], an: {parts: [{t, r}], pts: [要点], lit: 直译}}
+   notes 一句的格式：{ph: [{t 句中原样片段, b 词组原形, m 释义}], an: {talk: [{t 英文片段, s 带练文字}], order?, sum, cmp}}
    词组定位（和 pipeline/validate.py 一致）：按 ph 顺序处理；
      单段取 t 在句中第一次出现、且落在单词边界上的位置；
      被拆开的搭配写成多条 ph、b 相同，第二段起从同一词组上一段的结尾之后找（attribute … to 的 to 落在 to a lack，不是 to change）。
@@ -83,12 +83,8 @@ const Sent = (() => {
     return id;
   }
 
-  /* 语法成分的配色类：主干 / 各类从句 / 状语 / 插入语 / 其他；空串不着色 */
-  const role = r => (!r ? "" : r === "主干" ? "main" : /从句/.test(r) ? "cl" : /状语/.test(r) ? "adv" : /插入/.test(r) ? "ins" : "oth");
-
   /* 「析」：zh 是书上的译文（课程文件 ex.zh）。
-     对话带练（an.talk）：开场白 → 一块块英文 + 带练文字（→ 开头的行是这块的中文）→ 排顺序 → 合起来与书译对照；
-     旧格式（an.parts / pts / lit）：成分分块 → 要点 → 直译与书译对照，全部重写后删掉 */
+     对话带练（an.talk）：开场白 → 一块块英文 + 带练文字（→ 开头的行是这块的中文）→ 排顺序 → 合起来与书译对照 */
   const ADD = `<span class="src add">补充</span>`;
   /* s = {en, keys, note, hi}：这句例句本身。英文块按位置画成可点的 .snip（和例句一样点词查义、标词组），找不到就画纯文字 */
   function talkHTML(an, zh, s) {
@@ -109,17 +105,7 @@ const Sent = (() => {
       ${an.cmp ? `<p class="ancmp">${esc(an.cmp)}</p>` : ""}</div>`;
   }
   function anHTML(an, zh, s) {
-    if (!an) return "";
-    if (Array.isArray(an.talk)) return talkHTML(an, zh, s);
-    const parts = (an.parts || []).map(p => {
-      const t = p.t.trim(), c = role(p.r);
-      if (!t) return "";
-      return c ? `<span class="anp ${c}"><span class="ant">${esc(t)}</span><small>${esc(p.r)}</small></span>` : `<span class="anp"><span class="ant">${esc(t)}</span></span>`;
-    }).join("");
-    return `<div class="an" hidden><div class="anh">句子解析<span class="src add">补充</span></div>
-      ${parts ? `<div class="anparts">${parts}</div>` : ""}
-      ${an.pts && an.pts.length ? `<ul class="anpts">${an.pts.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
-      ${an.lit || zh ? `<div class="antr">${an.lit ? `<div><b>直译</b><span>${esc(an.lit)}</span></div>` : ""}${zh ? `<div><b>书译</b><span>${esc(zh)}</span></div>` : ""}</div>` : ""}</div>`;
+    return an && Array.isArray(an.talk) ? talkHTML(an, zh, s) : "";
   }
   /* 有解析的例句：右上角「析」按钮 + 默认收起的解析块（都放在 .sent 外面；英文块是 .snip 不是 .sent，朗读高亮只数 .sent 里的 .w）。
      en、keys、hi 和这句例句的 sentenceHTML 传的一样 */
@@ -130,6 +116,6 @@ const Sent = (() => {
   const spoken = b => String(b).replace(/\([^)]*\)/g, " ").replace(/(\S+?)\/\S+/g, "$1").replace(/…/g, " something ").replace(/\badj\./g, "adjective").replace(/\+/g, " ")
     .replace(/\bsth\./g, "something").replace(/\bsb\.'s\b|\bsb's\b/g, "somebody's").replace(/\bsb\./g, "somebody").replace(/\s+/g, " ").trim();
 
-  return {find, locate, html, best, role, anHTML, anBlock, spoken};
+  return {find, locate, html, best, anHTML, anBlock, spoken};
 })();
 if (typeof module === "object" && module.exports) module.exports = Sent;

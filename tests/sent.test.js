@@ -72,16 +72,10 @@ test("划选：按重叠字符数挑词组，变形也能对上，对不上返�
   assert.equal(Sent.best(segs, ...at("low grades")), -1);
 });
 
-test("语法成分配色：主干 / 从句 / 状语 / 插入语，空串不着色", () => {
-  assert.equal(Sent.role("主干"), "main");
-  assert.equal(Sent.role("宾语从句"), "cl");
-  assert.equal(Sent.role("非限制性定语从句"), "cl");
-  assert.equal(Sent.role("原因状语"), "adv");
-  assert.equal(Sent.role("插入语"), "ins");
-  assert.equal(Sent.role(""), "");
-  const h = Sent.anHTML({parts: [{t: "We were assured", r: "主干"}, {t: " that, ", r: ""}], pts: ["要点"], lit: "直译"}, "书译");
-  assert.match(h, /anp main/); assert.match(h, /书译/); assert.match(h, /补充/);
+test("anBlock / anHTML：没有对话带练的解析不画，旧格式不再显示", () => {
   assert.equal(Sent.anBlock(null, "x"), "");
+  assert.equal(Sent.anHTML({parts: [{t: "x", r: "主干"}], pts: ["要点"], lit: "直译"}, "书译"), "");
+  assert.equal(Sent.anHTML(null, "书译"), "");
 });
 
 test("对话带练：开场白、英文块、→ 行、排顺序、合起来与书译对照，文字都转义", () => {

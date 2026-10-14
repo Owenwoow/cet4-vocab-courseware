@@ -219,20 +219,7 @@ def check_notes(r, data):
         if "talk" in an:
             check_talk(r, where, s, an)
             continue
-        r.warn(where, "旧格式解析（parts/pts），待重写成对话带练")
-        parts = an.get("parts", [])
-        if "".join(x.get("t", "") for x in parts) != s:
-            r.err(where, "parts 的 t 按顺序拼起来和原句不一致")
-        for x in parts:
-            if not isinstance(x.get("r", None), str):
-                r.err(where, f"成分 {x.get('t')!r} 的 r 应为字符串（不标注写空串）")
-        pts = an.get("pts", [])
-        if not pts or not all(isinstance(x, str) and x.strip() for x in pts):
-            r.err(where, "pts 为空或有空要点")
-        elif len(pts) > 4:
-            r.err(where, f"要点 {len(pts)} 条，最多 4 条")
-        if not str(an.get("lit", "")).strip():
-            r.err(where, "缺少直译 lit")
+        r.err(where, "解析必须是 talk 格式（对话带练），见 pipeline/prompts/notes.md")
 
 
 TALK_KEYS = {"talk", "order", "sum", "cmp"}
