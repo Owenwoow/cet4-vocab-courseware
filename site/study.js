@@ -477,18 +477,27 @@ const Study = (() => {
   async function buildPool(items) {
     const pool = new Map();
     for (const id of new Set(items.map(x => x.lid).filter(Boolean))) {
-      try { for (const [w, {e}] of (await getLesson(id)).by) if (!pool.has(w)) pool.set(w, e); } catch { /* 没网就只用这一轮的词 */ }
+      try { for (const [w, {e, g}] of (await getLesson(id)).by) if (!pool.has(w)) pool.set(w, {e, g}); } catch { /* 没网就只用这一轮的词 */ }
     }
-    for (const x of items) if (!pool.has(x.word)) pool.set(x.word, x.e);
-    return [...pool.values()].filter(e => meanText(e));
+    for (const x of items) if (!pool.has(x.word)) pool.set(x.word, {e: x.e, g: x.grp});
+    return [...pool.values()].filter(p => meanText(p.e));
   }
-  /* 挑 3 个干扰项：形近词优先，其次同词性，同分随机；释义和正确答案一样的不要 */
+  /* 挑 3 个干扰项（每个带 tag，见 SRS.distractorTag）：和正确答案有共同义项的不要（只差词性的除外）；
+     形近 / 同词群 / 词性辨析合计最多 1 个，混淆过的词（卡片 cf、本轮刚混淆的）优先占这个名额；其次同词性（词性辨析的词按同词性算，不然总被同词群挤掉），同分随机 */
   function distractors(x) {
-    const me = meanText(x.e), pos = mainPos(x.e), seen = new Set([me]), out = [];
-    const cands = D.pool.filter(e => e.word.toLowerCase() !== x.word.toLowerCase())
-      .map(e => ({e, s: (SRS.similar(x.word, e.word) ? 3 : 0) + (mainPos(e) === pos ? 2 : 0) + Math.random() * 1.5}))
+    const me = meanText(x.e), pos = mainPos(x.e), t = {word: x.word, mean: me}, seen = new Set([me]), out = [];
+    const cf = new Set([...(D.cf.get(x.word) || []), ...((x.card && x.card.cf) || [])]);
+    const cands = D.pool.filter(p => p.e.word.toLowerCase() !== x.word.toLowerCase())
+      .map(p => { const m = meanText(p.e); return {e: p.e, m, tag: SRS.distractorTag(t, {word: p.e.word, mean: m}, !!x.grp && p.g === x.grp)}; })
+      .filter(c => c.tag !== "bad")
+      .map(c => ({...c, s: (c.tag && cf.has(c.e.word) ? 10 : 0) + (c.tag ? 3 : 0) + (c.tag === "pos" || mainPos(c.e) === pos ? 2 : 0) + Math.random() * 1.5}))
       .sort((a, b) => b.s - a.s);
-    for (const {e} of cands) { const m = meanText(e); if (seen.has(m)) continue; seen.add(m); out.push(e); if (out.length === 3) break; }
+    let near = false;
+    for (const c of cands) {
+      if (seen.has(c.m) || (c.tag && near)) continue;
+      if (c.tag) near = true;
+      seen.add(c.m); out.push(c); if (out.length === 3) break;
+    }
     return out;
   }
   const shuffle = a => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
@@ -514,9 +523,10 @@ const Study = (() => {
   function makeQ(x, kind) {
     const q = {x, kind, state: "ask", t0: 0};
     if (kind === "mean" || kind === "listen" || kind === "cloze" || kind === "reverse") {
-      const es = shuffle([x.e, ...distractors(x)]);
-      q.ans = es.indexOf(x.e);
-      q.opts = es.map(e => (kind === "mean" || kind === "listen" ? meanText(e) : e.word));
+      const cs = shuffle([{e: x.e, tag: null}, ...distractors(x)]);
+      q.es = cs.map(c => c.e); q.tags = cs.map(c => c.tag);
+      q.ans = q.es.indexOf(x.e);
+      q.opts = q.es.map(e => (kind === "mean" || kind === "listen" ? meanText(e) : e.word));
       if (kind === "cloze") q.cloze = clozeOf(x);
     }
     return q;
@@ -537,7 +547,7 @@ const Study = (() => {
     if (location.hash !== hash) return;              // 加载期间去了别的页
     D = {sc, title: info.title, items, learn, flip: !learn && S.drillMode === "flip", pool, hash,
       queue: learn ? items.slice(0, WINDOW) : items.slice(), pending: learn ? items.slice(WINDOW) : [],
-      st: new Map(), kind: new Map(), rated: new Map(), passed: 0, res: {g: 0, m: 0, f: 0, k: 0}, q: null, hist: [], back: 0};
+      st: new Map(), kind: new Map(), cf: new Map(), rated: new Map(), passed: 0, res: {g: 0, m: 0, f: 0, k: 0}, q: null, hist: [], back: 0};
     if (!items.length) {
       view().innerHTML = `<div class="drill"><p class="empty">「${esc(info.title)}」里没有要抽的词。${learn ? "先在「学习记录」里勾上今天学的词群。" : ""}</p><p class="empty">${btn("#/", "回首页")} ${btn("#/drill", "换个范围")}</p></div>`;
       return;
@@ -593,7 +603,7 @@ const Study = (() => {
       if (!past && !q.flipped && !q.said) { q.said = true; if (S.autoSay) sayWord(x); }
       return;
     }
-    const done = q.state === "done", ok = done && q.r !== "f";
+    const done = q.state === "done", ok = done && q.r !== "f" && !q.conf;
     let body = "";
     if (q.kind === "mean") body = wordHead(x);
     else if (q.kind === "listen") body = done ? wordHead(x) : `<button class="bigspk" data-say="1" title="再听一遍（R）">🔊</button><p class="note qhint">听发音，选意思 · R 再听</p>`;
@@ -602,13 +612,13 @@ const Study = (() => {
     else if (q.kind === "spell") body = `<div class="qmean">${esc(meanText(x.e))}</div>
       ${done ? `<div class="spres ${q.r === "g" ? "ok" : "bad"}">${q.r === "g" ? "✓ 拼对了" : `${q.input ? `你写的：<s>${esc(q.input)}</s>` : "没写"}${q.r === "m" ? " · 差一个字母，算模糊" : ""}`}</div>${wordHead(x)}`
         : `<button class="spk" data-say="1" title="再听（R）">🔊</button><div class="spellbox"><input id="spell" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="${esc(x.word[0] + " _".repeat(Math.max(0, x.word.length - 1)))}"></div>`}`;
-    const verdict = done && q.kind !== "spell" ? `<div class="qverdict ${ok ? "ok" : "bad"}">${q.r === "g" ? "✓ 答对了" : q.r === "m" ? "✓ 答对了，但想得有点久（记为模糊）" : q.pick === -1 ? "✗ 不认识" : "✗ 答错了"}</div>` : "";
+    const verdict = done && q.kind !== "spell" ? `<div class="qverdict ${ok ? "ok" : "bad"}">${q.conf ? confHTML(x, q.conf) : q.r === "g" ? "✓ 答对了" : q.r === "m" ? "✓ 答对了，但想得有点久（记为模糊）" : q.pick === -1 ? "✗ 不认识" : "✗ 答错了"}</div>` : "";
     const opts = q.opts ? `<div class="qopts">${q.opts.map((o, i) => `<button class="qopt${done && i === q.ans ? " ok" : ""}${done && i === q.pick && i !== q.ans ? " bad" : ""}" data-opt="${i}"${done ? " disabled" : ""}><kbd>${i + 1}</kbd><span>${esc(o)}</span></button>`).join("")}</div>` : "";
     const ops = past ? pastOps : done
       ? `${prevBtn}<wa-button variant="brand" data-next="1">继续 <kbd>空格</kbd></wa-button>`
       : q.kind === "spell" ? `${prevBtn}<wa-button appearance="outlined" data-opt="-1">不会 <kbd>Esc</kbd></wa-button><wa-button variant="brand" data-spell="1">提交 <kbd>Enter</kbd></wa-button>${chopBtn(x)}`
       : `${prevBtn}<wa-button appearance="outlined" data-opt="-1">不认识 <kbd>0</kbd></wa-button>${chopBtn(x)}`;
-    view().innerHTML = `<div class="drill quiz${done ? (ok ? " right" : " wrong") : ""}${past ? " past" : ""}">${bar}<div class="dcard">${meta}${body}${opts}${verdict}${done ? backHTML(x) : ""}</div><div class="dops">${ops}</div></div>`;
+    view().innerHTML = `<div class="drill quiz${done ? (ok ? " right" : " wrong") : ""}${past ? " past" : ""}">${bar}<div class="dcard">${meta}${body}${opts}${verdict}${done && q.conf ? cmpHTML(q.conf.e) : ""}${done ? backHTML(x) : ""}</div><div class="dops">${ops}</div></div>`;
     if (!done) {
       q.t0 = Date.now();                               // 从回看回来重新计时
       if (!q.said) { q.said = true; if (q.kind === "listen" || q.kind === "spell" || (q.kind === "mean" && S.autoSay)) sayWord(x); }
@@ -624,9 +634,14 @@ const Study = (() => {
     const q = D.q; if (!q || q.state !== "ask") return;
     const x = q.x, ms = Date.now() - q.t0;
     if (q.kind === "spell") { q.input = input || ""; q.r = i === -1 || !q.input.trim() ? "f" : SRS.gradeSpell(q.input, x.word); }
-    else { q.pick = i; q.r = SRS.gradeChoice(i === q.ans, ms); }
+    else {
+      q.pick = i;
+      const tag = i >= 0 && i !== q.ans ? q.tags[i] : null;   // 选中易混的干扰项：算混淆，记模糊，不按忘了重来
+      if (tag) { q.conf = {tag, e: q.es[i]}; q.r = "m"; } else q.r = SRS.gradeChoice(i === q.ans, ms);
+    }
     q.state = "done";                                // 答对答错都展开完整卡片，按「继续」再走
-    settle(x, q.r, q.kind);
+    settle(x, q.r, q.kind, !!q.conf);
+    if (q.es) noteConf(x, q);
     showCard();
     if (q.r !== "f" && q.kind !== "mean") sayWord(x);
   }
@@ -653,19 +668,39 @@ const Study = (() => {
     next();
   }
   /* 记成绩、排队：复习只记第一遍；学新词两关都过（或错满 3 次后再对一次）才过关 */
-  function settle(x, r, kind) {
-    const ok = r !== "f";
+  function settle(x, r, kind, conf = false) {
+    const ok = r !== "f" && !conf;                   // 混淆：成绩记模糊，但这一轮还要再答对一次
     D.queue.shift();
     if (!D.rated.has(x.word)) { D.rated.set(x.word, r); D.res[r]++; if (!D.learn) record(x, r, kind); }
     if (D.learn) {
       const s = D.st.get(x.word) || {stage: 0, err: 0};
-      if (ok) s.stage++; else { s.stage = 0; s.err++; }
+      if (ok) s.stage++; else { s.stage = 0; if (!conf) s.err++; }   // 混淆不算错次数
       D.st.set(x.word, s);
       if (ok && (s.stage >= 2 || s.err >= 3 || kind === "flip")) { D.passed++; learnPass(x, s); if (D.pending.length) D.queue.push(D.pending.shift()); }
       else reinsert(x);
     } else if (ok) D.passed++;
     else reinsert(x);
   }
+  /* 对比复习：混淆的词记进卡片 cf，下次出这个词的选择题固定放进干扰项；带着它答对就删掉 */
+  function noteConf(x, q) {
+    if (q.conf) D.cf.set(x.word, SRS.confAdd(D.cf.get(x.word), q.conf.e.word));
+    const key = cardKey(x), c = Sync.get(key, 0);
+    if (!c) return;
+    let cf = c.cf || [];
+    if (q.conf) cf = SRS.confAdd(cf, q.conf.e.word);
+    else if (q.pick === q.ans) for (const e of q.es) cf = SRS.confDrop(cf, e.word);
+    if (cf.join() === (c.cf || []).join()) return;
+    const u = {...c, cf};
+    if (!cf.length) delete u.cf;
+    Sync.set(key, u); x.card = u;
+  }
+  const posText = e => [...SRS.posSet(meanText(e))].join("、") || "?";
+  const confHTML = (x, {tag, e}) => tag === "pos"
+    ? `✗ 词性混淆：${esc(x.word)} 是 ${esc(posText(x.e))}，${esc(e.word)} 是 ${esc(posText(e))}<small>记为模糊，下次会把两个词放在一起考</small>`
+    : `✗ 近义混淆：你选的 ${esc(e.word)} 是「${esc(meanText(e))}」<small>记为模糊，下次会把两个词放在一起考</small>`;
+  const cmpHTML = e => `<div class="dcmp"><span class="tag">对比</span><b data-sayx="${esc(e.word)}">${esc(e.word)}</b>
+    <span class="ipa">${esc(ipaOf(e))}</span><button class="spk sm" data-sayx="${esc(e.word)}" title="读">🔊</button>
+    <span>${sensesOf(e).map(s => `<span class="pos">${esc(s.pos)}</span>${meanHTML(s.mean)}`).join("　")}</span></div>`;
   const reinsert = x => D.queue.splice(Math.min(D.queue.length, 3 + Math.floor(Math.random() * 3)), 0, x);
   function record(x, r, kind) {
     const key = cardKey(x), c = Sync.get(key, 0);

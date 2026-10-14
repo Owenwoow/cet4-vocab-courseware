@@ -157,6 +157,27 @@ const SRS = (() => {
     if (a === b) return false;
     return editDist(a, b) <= Math.max(1, Math.floor(Math.min(a.length, b.length) / 4)) || (a.length >= 5 && b.length >= 5 && a.slice(0, 4) === b.slice(0, 4));
   }
+  /* 选择题干扰项：释义拆成义项词（去掉词性、括号里的补充），比较有没有共同义项 */
+  const POS_RE = /\b[a-z]+\.(?:\s*&\s*[a-z]+\.)*/gi;
+  const senseKeys = text => new Set(String(text).replace(/\[\[|\]\]/g, "").replace(POS_RE, " ")
+    .replace(/（[^）]*）|\([^)]*\)/g, "").split(/[，；,;、\s]+/).filter(Boolean));
+  const posSet = text => new Set((String(text).match(/\b[a-z]+\./gi) || []).map(p => p.toLowerCase()));
+  /* 候选干扰项的性质（t、c 是 {word, mean}，mean 是带词性的释义文本）：
+     "bad"  有共同义项，选了也不算错，不能用（elect 的「选择」和 select 的「选择」）
+     "pos"  形近、有共同义项、但词性完全不同：考词性辨析（injury n. / injure v.）
+     "near" 形近或同词群：容易混，每题最多放 1 个（"pos" 也占这个名额）
+     null   普通干扰项 */
+  function distractorTag(t, c, sameGroup = false) {
+    const ka = senseKeys(t.mean), kb = senseKeys(c.mean), sim = similar(t.word, c.word);
+    if ([...kb].some(k => ka.has(k))) {
+      const pa = posSet(t.mean), pb = posSet(c.mean);
+      return sim && pa.size && pb.size && ![...pb].some(p => pa.has(p)) ? "pos" : "bad";
+    }
+    return sim || sameGroup ? "near" : null;
+  }
+  /* 卡片上的混淆词 cf：最近混淆的在前，最多 3 个；带着它答对就删掉 */
+  const confAdd = (cf, w) => [w, ...(cf || []).filter(x => x !== w)].slice(0, 3);
+  const confDrop = (cf, w) => (cf || []).filter(x => x !== w);
   /* 把不同组的形近词挪到一起（adapt 后面紧跟 adopt），对比着记；同组的不动（书上按词根成群，同群形近是常态） */
   function pairSimilar(list, groupOf) {
     const out = [], used = new Set();
@@ -187,6 +208,6 @@ const SRS = (() => {
   const shift = (c, n) => ({...c, a: add(c.a, n), d: add(c.d, n)});
 
   return {EXAM, TYPE, today, add, diff, dow, monday, firstWeekend, firstSunday, stationDue, examCap, newCard, isDue,
-    rate, chop, isHard, dueList, level, streak, pickType, gradeChoice, gradeSpell, editDist, similar, shuffleSpread, pairSimilar, queue, shift};
+    rate, chop, isHard, dueList, level, streak, pickType, gradeChoice, gradeSpell, editDist, similar, senseKeys, posSet, distractorTag, confAdd, confDrop, shuffleSpread, pairSimilar, queue, shift};
 })();
 if (typeof module === "object" && module.exports) module.exports = SRS;
