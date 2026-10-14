@@ -34,6 +34,7 @@ def wait_pages(commit, timeout=600):
     """等音频站 Pages 用这次提交构建完成，否则紧接着推主仓库时，部署前的音频检查会因文件未上线而失败"""
     repo = git("remote", "get-url", "origin").strip().removesuffix(".git").split("github.com/")[-1]
     start = time.time()
+    retries = 0
     while time.time() - start < timeout:
         r = subprocess.run(["gh", "api", f"repos/{repo}/pages/builds/latest", "--jq", ".status + \" \" + .commit"],
                            capture_output=True, text=True)
@@ -42,7 +43,14 @@ def wait_pages(commit, timeout=600):
             print(f"音频站已上线（{int(time.time() - start)} 秒）")
             return
         if built == commit and status == "errored":
-            sys.exit("音频站构建失败，去 GitHub 仓库的 Actions 页看原因")
+            # 构建常因为别处又来了一次推送而被取消（也显示 errored），重新触发再等；连续 3 次才算失败
+            retries += 1
+            if retries > 3:
+                sys.exit("音频站构建连续失败，去 GitHub 仓库的 Actions 页看原因")
+            print(f"音频站构建失败（可能被新推送取消），第 {retries} 次重新触发")
+            subprocess.run(["gh", "api", "-X", "POST", f"repos/{repo}/pages/builds"], capture_output=True, text=True)
+            time.sleep(20)
+            continue
         time.sleep(10)
     sys.exit(f"等了 {timeout} 秒音频站还没构建完，稍后用 python pipeline/check_audio.py 确认再推主仓库")
 
