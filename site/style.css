@@ -552,3 +552,8 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 /* 底部按钮行固定在下面，长卡片会滚到它下面：垫一层渐变底，描边按钮用实心底，免得后面的字透出来 */
 .dops{padding-top:14px;background:linear-gradient(to bottom,transparent,var(--bg) 45%)}
 .dops wa-button[appearance~="outlined"]::part(base){background:var(--card)}
+/* 混淆反馈：说明小字 + 背面对比行 */
+.qverdict small{display:block;margin-top:4px;font-size:12px;font-weight:400;color:var(--sub)}
+.dcmp{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:10px 0 4px;padding:8px 10px;border-radius:10px;border:1px dashed var(--pink)}
+.dcmp .tag{color:var(--pink)}
+.dcmp b{color:var(--ink);font-size:15px;cursor:pointer}
