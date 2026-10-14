@@ -1,0 +1,241 @@
+{
+  "_note": "例句词组与语法解析（书外补充，AI 生成）",
+  "sents": {
+    "That's the first sign to them that life is starting to return to normal.": {
+      "ph": [
+        {"t": "return to normal", "b": "return to normal", "m": "恢复正常"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "That's the first sign to them", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that life is starting to return to normal", "r": "同位语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导的从句解释抽象名词 sign 的具体内容，是同位语从句；that 在从句中不作成分，也不能换成 which。",
+          "to them 夹在 sign 和同位语从句之间，书上把它提前成「对他们来说」，再把同位语从句译成「生活开始回归正常的第一个迹象」，即从句前置成「……的」放在 sign 前面。"
+        ],
+        "lit": "那是对他们的第一个迹象，即生活正开始回到正常。"
+      }
+    },
+    "Please accept this small gift as a token of our gratitude.": {
+      "ph": [
+        {"t": "as a token of", "b": "as a token of", "m": "作为……的表示"}
+      ]
+    },
+    "She is well informed about the design business.": {
+      "ph": [
+        {"t": "well informed about", "b": "be informed about", "m": "对……了解"}
+      ]
+    },
+    "In her study, participants were randomly assigned to two groups.": {
+      "ph": [
+        {"t": "assigned to", "b": "be assigned to", "m": "被分配到"}
+      ]
+    },
+    "The following year, things got worse and he was forced to resign.": {
+      "ph": [
+        {"t": "got worse", "b": "get worse", "m": "变得更糟"},
+        {"t": "was forced to", "b": "be forced to do", "m": "被迫做某事"}
+      ]
+    },
+    "It witnessed a significant increase in women engineers in the 1970s.": {
+      "ph": [
+        {"t": "increase in", "b": "increase in", "m": "……的增加"}
+      ]
+    },
+    "Higher education is indispensable if you want to go far in both your studies and life.": {
+      "ph": [
+        {"t": "go far", "b": "go far", "m": "走得远，有所成就"},
+        {"t": "both", "b": "both … and", "m": "既……又……"},
+        {"t": "and", "b": "both … and", "m": "既……又……"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Higher education is indispensable", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "if you want to go far in both your studies and life", "r": "条件状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "if 引导条件状语从句，英语里放在主句后，书上译成中文习惯的「如果……，……」，把条件提到前面。",
+          "从句用一般现在时 want，主句是一般现在时的判断，表示一般性的条件与结论，不是虚拟语气。",
+          "both your studies and life 是 both…and 连接两个并列的宾语（studies 和 life），共用介词 in，书上译成「在学习和生活中」。"
+        ],
+        "lit": "高等教育是不可或缺的，如果你想在你的学习和生活两方面都走得远。"
+      }
+    },
+    "Fast technological change makes it necessary for one to constantly upgrade their skills.": {
+      "ph": [
+        {"t": "makes it necessary", "b": "make it necessary for sb. to do", "m": "使……有必要做某事"},
+        {"t": "for", "b": "make it necessary for sb. to do", "m": "使……有必要做某事"},
+        {"t": "to", "b": "make it necessary for sb. to do", "m": "使……有必要做某事"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Fast technological change makes it necessary", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "for one to constantly upgrade their skills", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "it 是形式宾语，necessary 是宾语补足语，真正的宾语是后面的不定式 to constantly upgrade their skills；for one 是这个不定式的逻辑主语。",
+          "所以书上把 make it necessary 译成「使……有必要」，for one 译成「人们」，不定式部分译成「不断地提高自己的技能」放在最后。"
+        ],
+        "lit": "快速的技术变革使它必要，对于一个人来说，不断地升级他们的技能。"
+      }
+    },
+    "We recognize the necessity for a written agreement.": {
+      "ph": [
+        {"t": "necessity for", "b": "necessity for sth.", "m": "对……的必要"}
+      ]
+    },
+    "Remember, failure is inevitable, and every failure you survive is a learning experience.": {
+      "an": {
+        "parts": [
+          {"t": "Remember, failure is inevitable", "r": "主干"},
+          {"t": ", and ", "r": ""},
+          {"t": "every failure", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "you survive", "r": "定语从句"},
+          {"t": " is a learning experience", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "you survive 是定语从句，先行词是 every failure，关系代词（that / which）省略，在从句中作 survive 的宾语（survive every failure）。",
+          "书上把这个定语从句前置，译成「你经历的每一次失败」；survive 在这里是及物动词，指熬过、经历，所以译成「经历」而不是「幸存」。"
+        ],
+        "lit": "记住，失败是不可避免的，并且你熬过的每一次失败是一次学习体验。"
+      }
+    },
+    "It helps us avoid making mistakes.": {
+      "ph": [
+        {"t": "helps us avoid", "b": "help sb. do", "m": "帮助我们避免"}
+      ]
+    },
+    "They have difficulty adapting to climate change.": {
+      "ph": [
+        {"t": "have difficulty", "b": "have difficulty (in) doing", "m": "难以做某事"}
+      ]
+    },
+    "A bride will in most cases adopt a name that combines the couple's last names.": {
+      "ph": [
+        {"t": "in most cases", "b": "in most cases", "m": "在大多数情况下"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "A bride will in most cases adopt a name", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that combines the couple's last names", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导定语从句，先行词是 a name，that 在从句中作 combines 的主语。",
+          "书上把定语从句前置，译成「一个结合夫妻姓氏的名字」，而不是拆成后面的分句。"
+        ],
+        "lit": "在大多数情况下，新娘会采用一个把夫妻的姓氏结合起来的名字。"
+      }
+    },
+    "By nature, Americans are enthusiastic and energetic about hobbies or pastimes.": {
+      "ph": [
+        {"t": "By nature", "b": "by nature", "m": "天生，本质上"},
+        {"t": "enthusiastic", "b": "be enthusiastic about", "m": "对……热情"},
+        {"t": "about", "b": "be enthusiastic about", "m": "对……热情"}
+      ]
+    },
+    "But the club also acts as a recreation center and safe haven for teenagers, with video games readily available.": {
+      "ph": [
+        {"t": "acts as", "b": "act as", "m": "充当，作为"},
+        {"t": "safe haven", "b": "safe haven", "m": "避风港"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "But the club also acts as a recreation center and safe haven for teenagers", "r": "主干"},
+          {"t": ", ", "r": ""},
+          {"t": "with video games readily available", "r": "状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "with + 名词 + 形容词 是 with 复合结构，作伴随 / 补充说明的状语：video games 是逻辑主语，readily available 是它的状态。",
+          "书上把它译成括号里的分句「（在那里）他们随时可以玩电子游戏」，补出了「他们」，并把 available（可得到的）转成动作「可以玩」。"
+        ],
+        "lit": "但是这个俱乐部也充当青少年的娱乐中心和避风港，伴随着电子游戏随时可得。"
+      }
+    },
+    "Thank you for your swift reply.": {
+      "ph": [
+        {"t": "Thank you for", "b": "thank sb. for sth.", "m": "感谢你……"}
+      ]
+    },
+    "Leah shed the safety of her accounting job and made the switch complete.": {
+      "ph": [
+        {"t": "made the switch", "b": "make the switch", "m": "完成转变"}
+      ]
+    },
+    "That doesn't control the cost of education; it just shifts it to taxpayers.": {
+      "ph": [
+        {"t": "shifts", "b": "shift … to", "m": "把……转移给"},
+        {"t": "to", "b": "shift … to", "m": "把……转移给"}
+      ]
+    },
+    "Jeans are available in a greater variety in America.": {
+      "ph": [
+        {"t": "are available", "b": "be available", "m": "可以买到"}
+      ]
+    },
+    "Children's personality characteristics are invariably determined by their mothers.": {
+      "ph": [
+        {"t": "determined by", "b": "be determined by", "m": "由……决定"}
+      ]
+    },
+    "Students' test-form preferences vary, too, often depending on the subject and course difficulty.": {
+      "ph": [
+        {"t": "depending on", "b": "depend on", "m": "取决于"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Students' test-form preferences vary", "r": "主干"},
+          {"t": ", too, ", "r": ""},
+          {"t": "often depending on the subject and course difficulty", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "depending on… 是现在分词短语，作伴随状语，逻辑主语是主句的主语 preferences；书上不译成从句，直接接在后面写成「通常取决于……」。",
+          "Students' test-form preferences 是名词化结构，preference 由动词 prefer 变来，书上展开成动宾式的「学生对测试形式的偏好」。"
+        ],
+        "lit": "学生的测试形式偏好也变化，经常取决于科目和课程难度。"
+      }
+    },
+    "Trying to live up to the images of \"perfect\" models and movie heroes has a dark side.": {
+      "ph": [
+        {"t": "live up to", "b": "live up to", "m": "达到（标准、期望），追求"},
+        {"t": "a dark side", "b": "a dark side", "m": "阴暗面"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Trying to live up to the images of \"perfect\" models and movie heroes", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "has a dark side", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "整个 Trying to live up to… 是动名词短语作主语，谓语用单数 has，因为它指的是「这件事」，而不是 models 和 heroes 那几个名词。",
+          "主语很长，书上保持原顺序译成「试图追求……的形象有其阴暗面」，用「试图」「追求」译 trying to live up to，没有拆开主语。"
+        ],
+        "lit": "试图达到「完美」模范和电影英雄的形象有一个阴暗面。"
+      }
+    },
+    "They did not raise much due to modest targets.": {
+      "ph": [
+        {"t": "due to", "b": "due to", "m": "由于"}
+      ]
+    },
+    "The majority of earnest people are trying to get on in life.": {
+      "ph": [
+        {"t": "The majority of", "b": "the majority of", "m": "大多数"},
+        {"t": "get on in life", "b": "get on in life", "m": "在生活中过得好，取得进步"}
+      ]
+    }
+  }
+}

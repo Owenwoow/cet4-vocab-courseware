@@ -1,0 +1,496 @@
+{
+  "_note": "例句词组与语法解析（书外补充，AI 生成）",
+  "sents": {
+    "More and more women actively engaged in politics.": {
+      "ph": [
+        {"t": "More and more", "b": "more and more", "m": "越来越多"},
+        {"t": "engaged in", "b": "engage in", "m": "从事，参与"}
+      ]
+    },
+    "Pregnant employees struggled to keep up.": {
+      "ph": [
+        {"t": "struggled to", "b": "struggle to do", "m": "努力做某事"},
+        {"t": "keep up", "b": "keep up", "m": "跟上"}
+      ]
+    },
+    "There are a couple of ways to compromise on the issue.": {
+      "ph": [
+        {"t": "a couple of", "b": "a couple of", "m": "几个"},
+        {"t": "compromise on", "b": "compromise on", "m": "在……上折中"}
+      ]
+    },
+    "As a result, wheat prices elsewhere more than doubled, pulling rice and corn prices up with them.": {
+      "ph": [
+        {"t": "As a result", "b": "as a result", "m": "结果"},
+        {"t": "pulling", "b": "pull … up", "m": "带动……上涨"},
+        {"t": "up", "b": "pull … up", "m": "带动……上涨"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "As a result", "r": "状语"},
+          {"t": ", ", "r": ""},
+          {"t": "wheat prices elsewhere more than doubled", "r": "主干"},
+          {"t": ", ", "r": ""},
+          {"t": "pulling rice and corn prices up with them", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "more than 放在动词 doubled 前，修饰整个动作，意思是「不止翻了一倍」，所以书上译成「翻了一倍多」。",
+          "pulling… 是现在分词短语，作结果（伴随）状语，逻辑主语是前面整件事（小麦涨价）；them 指 wheat prices。书上把它译成后续分句「带动……的上涨」，把 pull up 展开成「带动……上涨」。"
+        ],
+        "lit": "结果，其他地方的小麦价格不止翻了一倍，把大米和玉米价格拉高，与它们一起。"
+      }
+    },
+    "The divorce rate in the county has been on a steady rise.": {
+      "ph": [
+        {"t": "on a steady rise", "b": "be on the rise", "m": "稳步上升"}
+      ]
+    },
+    "Young men are less likely to end up as single parents than young women.": {
+      "ph": [
+        {"t": "likely to", "b": "be likely to", "m": "可能做某事"},
+        {"t": "end up as", "b": "end up as", "m": "最终成为"}
+      ]
+    },
+    "Substitutions of one gesture for the other often create humorous moment.": {
+      "ph": [
+        {"t": "Substitutions of", "b": "substitution of … for", "m": "用……代替"},
+        {"t": "for", "b": "substitution of … for", "m": "用……代替"}
+      ]
+    },
+    "The importance of using PowerPoint in education should be recognised by all of us.": {
+      "ph": [
+        {"t": "The importance of", "b": "the importance of", "m": "……的重要性"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "The importance of ", "r": "主干"},
+          {"t": "using PowerPoint in education", "r": "非谓语"},
+          {"t": " should be recognised by all of us", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "should be recognised by all of us 是被动结构，by 后面才是动作的执行者；书上改成主动，把 all of us 提成主语，译成「我们所有人都应该认识到」。",
+          "of 后面接动名词短语 using PowerPoint in education，作 importance 的内容，书上译成「使用演示文稿的重要性」，并把它放到「认识到」后面作宾语。"
+        ],
+        "lit": "在教育中使用演示文稿的重要性应该被我们所有人认识到。"
+      }
+    },
+    "We are having trouble keeping up with the recent surge in demand.": {
+      "ph": [
+        {"t": "having trouble", "b": "have trouble (in) doing", "m": "做……有困难"},
+        {"t": "keeping up with", "b": "keep up with", "m": "跟上，应对"},
+        {"t": "surge in", "b": "surge in", "m": "……的激增"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "We are having trouble keeping up with the recent surge in demand", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "have trouble (in) doing 里 in 常省略，keeping up with… 是动名词短语，说明「困难在哪」；trouble 译成「难以」，所以书上是「难以应对」。",
+          "the recent surge in demand 是名词化结构，书上展开成主谓式的「需求猛增」，并用「对于」把它提到句首。"
+        ],
+        "lit": "我们在跟上最近的需求激增方面正有困难。"
+      }
+    },
+    "They fill these tubes with gases that glow when electrified.": {
+      "ph": [
+        {"t": "fill", "b": "fill … with", "m": "用……充满"},
+        {"t": "with", "b": "fill … with", "m": "用……充满"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "They fill these tubes with gases", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that glow when electrified", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导定语从句，先行词是 gases，that 在从句中作 glow 的主语。",
+          "when electrified 是省略了主语和 be 的时间状语，完整是 when they (the gases) are electrified，所以是「通电时」。",
+          "书上把这个定语从句压缩后前置成「通电发光气体」，放在宾语前，没有拆成后面的分句。"
+        ],
+        "lit": "他们用会在通电时发光的气体填充这些管子。"
+      }
+    },
+    "I have seen this place—it is elegant, inside and out.": {
+      "ph": [
+        {"t": "inside and out", "b": "inside and out", "m": "里里外外"}
+      ]
+    },
+    "It can bring wealth and honor to them.": {
+      "ph": [
+        {"t": "bring", "b": "bring … to", "m": "给……带来"},
+        {"t": "to", "b": "bring … to", "m": "给……带来"}
+      ]
+    },
+    "But it's also true that saying \"no\" is not merely a privilege reserved for the successful.": {
+      "ph": [
+        {"t": "not merely", "b": "not merely", "m": "不仅仅"},
+        {"t": "reserved for", "b": "be reserved for", "m": "专属于，留给"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "But ", "r": ""},
+          {"t": "it's also true", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that saying \"no\" is not merely a privilege reserved for the successful", "r": "主语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "it 是形式主语，真正的主语是后面 that 引导的主语从句；从句后置避免头重脚轻。书上先译从句「说『不』并不仅仅是……的特权」，再把「这也是事实」放到句尾。",
+          "reserved for the successful 是过去分词短语作后置定语，修饰 privilege；the successful = successful people（形容词前加 the 表一类人），所以译成「成功人士的特权」。"
+        ],
+        "lit": "但说「不」不仅仅是留给成功者的一种特权，这也是真的。"
+      }
+    },
+    "What was a significant contributor to the past glory of public schools?": {
+      "ph": [
+        {"t": "contributor to", "b": "contributor to", "m": "……的促成因素"}
+      ]
+    },
+    "It is said, that menu-labeling could favour chains that have more healthy offerings.": {
+      "ph": [
+        {"t": "It is said", "b": "it is said that", "m": "据说"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "It is said", "r": "主干"},
+          {"t": ", ", "r": ""},
+          {"t": "that menu-labeling could favour chains", "r": "主语从句"},
+          {"t": " ", "r": ""},
+          {"t": "that have more healthy offerings", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "It is said that… 里 It 是形式主语，that 从句是真正的主语（这里 that 前多了个逗号）；这是固定套路「据说……」，书上直接译成「据说」，不译成「它被说」。",
+          "第二个 that 引导定语从句，先行词是 chains，that 在从句中作 have 的主语；书上前置成「提供更多健康食品的连锁店」。",
+          "could 在这里没有 if 条件，也不是与事实相反，表示可能性（比 can 委婉），所以译成「可能有利于」，不是虚拟语气。"
+        ],
+        "lit": "据说，菜单标签可能偏向于那些有更多健康供应品的连锁店。"
+      }
+    },
+    "A student who earns good marks is generally a good student.": {
+      "ph": [
+        {"t": "earns good marks", "b": "earn good marks", "m": "取得好成绩"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "A student ", "r": "主干"},
+          {"t": "who earns good marks", "r": "定语从句"},
+          {"t": " is generally a good student", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "who 引导定语从句，先行词是 A student，who 在从句中作 earns 的主语。",
+          "从句夹在主语和谓语之间，书上前置成「成绩好的学生」，earn good marks 译成「成绩好」，而不是「赚得好分数」。"
+        ],
+        "lit": "一个赚得好分数的学生通常是一个好学生。"
+      }
+    },
+    "How did people feel when they learned of her remarks?": {
+      "ph": [
+        {"t": "learned of", "b": "learn of", "m": "得知"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "How did people feel", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "when they learned of her remarks", "r": "时间状语"},
+          {"t": "?", "r": ""}
+        ],
+        "pts": [
+          "How did people feel 是特殊疑问句，助动词 did 提到主语前；when 从句是时间状语，用陈述语序。",
+          "书上把时间状语提到句首「当人们得知她的言论时」，疑问部分「感觉如何」放最后，符合中文先条件后问题的顺序。"
+        ],
+        "lit": "人们感觉如何，当他们得知她的言论时？"
+      }
+    },
+    "It's a miracle that nobody was killed in the crash.": {
+      "ph": [
+        {"t": "was killed in", "b": "be killed in", "m": "在……中丧生"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "It's a miracle", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that nobody was killed in the crash", "r": "主语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "it 是形式主语，真正的主语是 that 引导的主语从句；书上译成「撞车事故中没人丧生，这真是奇迹」，把从句提前、结论放后。",
+          "nobody 是全部否定，was killed in 是被动，书上译成主动的「丧生」。"
+        ],
+        "lit": "这是个奇迹，没有人在撞车中被杀死。"
+      }
+    },
+    "We have long feared that this \"revolution in distribution\" uses corporate black magic on our appetite.": {
+      "ph": [
+        {"t": "revolution in", "b": "revolution in", "m": "……方面的变革"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "We have long feared", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that this \"revolution in distribution\" uses corporate black magic on our appetite", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "have long feared 是现在完成时加 long，表示从过去一直担心到现在，书上译成「长期以来，我们一直担心」。",
+          "that 引导 feared 的宾语从句，担心的内容是整个从句；从句的主语是 revolution，无生命主语，书上译成「这种……会利用……影响我们的胃口」。",
+          "use … on 是「对……使用」，书上译成「利用企业黑魔法影响我们的胃口」。"
+        ],
+        "lit": "我们长久以来一直害怕，这种「分销革命」把企业黑魔法用在我们的胃口上。"
+      }
+    },
+    "The decision still has to be ratified by the full council.": {
+      "ph": [
+        {"t": "has to", "b": "have to do", "m": "必须，需要"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "The decision still has to be ratified by the full council", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "has to be ratified 是 have to 加被动不定式，表示「必须被批准」；书上用「仍需得到……批准」，把被动译成「得到」。",
+          "by the full council 是被动句的施动者，书上译成「整个委员会」，放在动词前面作批准的主体。"
+        ],
+        "lit": "这个决定仍然必须被整个委员会批准。"
+      }
+    },
+    "According to the Census Bureau, 38 million people in the U.S. are living below the official poverty thresholds.": {
+      "ph": [
+        {"t": "According to", "b": "according to", "m": "根据"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "According to the Census Bureau", "r": "状语"},
+          {"t": ", ", "r": ""},
+          {"t": "38 million people in the U.S. are living below the official poverty thresholds", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "According to… 引出信息来源，作状语放句首；书上译成「根据人口普查局的数据」，补出了「数据」。",
+          "38 million = 38 个百万，即 3,800 万；数词后的 million 不加 s，书上换算成中文的计数习惯。"
+        ],
+        "lit": "根据人口普查局，美国的 38 百万人正生活在官方贫困门槛以下。"
+      }
+    },
+    "Human lives are governed by the desire to experience joy.": {
+      "ph": [
+        {"t": "are governed by", "b": "be governed by", "m": "被……支配"},
+        {"t": "the desire to", "b": "the desire to do", "m": "做……的欲望"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Human lives are governed by the desire", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to experience joy", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "are governed by 是被动，书上保留「被……所支配」，因为施动者「欲望」是有力量的无生命名词，译成被动仍然自然。",
+          "to experience joy 是不定式作 desire 的后置定语，说明欲望的内容，书上前置成「体验快乐的欲望」。"
+        ],
+        "lit": "人类的生活被体验快乐的欲望所支配。"
+      }
+    },
+    "The Ministry of Transport maintains that speed limits reduce accidents.": {
+      "ph": [
+        {"t": "maintains that", "b": "maintain that", "m": "坚持认为"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "The Ministry of Transport maintains", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that speed limits reduce accidents", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "maintain 后面接 that 从句时意思是「坚持认为」，不是「维持」；that 引导宾语从句，书上译成「认为」。",
+          "宾语从句用一般现在时 reduce，表示一般性的结论；speed limits 是无生命主语，书上译成「限速可以减少交通事故」。"
+        ],
+        "lit": "交通运输部坚持认为限速减少事故。"
+      }
+    },
+    "Don't misunderstand me—I am grateful for all you've done.": {
+      "ph": [
+        {"t": "grateful for", "b": "be grateful for", "m": "为……而感激"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Don't misunderstand me", "r": "主干"},
+          {"t": "—", "r": ""},
+          {"t": "I am grateful for all", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "you've done", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "all you've done 里 all 是先行词，省略了关系代词 that，that 在从句中作 done 的宾语；书上前置成「你所做的一切」。",
+          "Don't + 动词原形是否定祈使句，破折号后面是对前一句的补充说明，书上译成「别误解我的意思，我对……很感激」。"
+        ],
+        "lit": "不要误解我——我对你所做过的一切是感激的。"
+      }
+    },
+    "We had to rely on a compass and a lot of luck to get there.": {
+      "ph": [
+        {"t": "had to", "b": "have to do", "m": "只得，不得不"},
+        {"t": "rely on", "b": "rely on", "m": "依靠"},
+        {"t": "a lot of", "b": "a lot of", "m": "大量"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "We had to rely on a compass and a lot of luck", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to get there", "r": "目的状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "had to 是 have to 的过去式，表示当时被迫，书上译成「只得」。",
+          "to get there 是不定式作目的状语，放在句尾；书上译成「才能到那儿」，补了「才」，强调这是唯一的办法。"
+        ],
+        "lit": "我们不得不依靠一个指南针和很多运气去到达那里。"
+      }
+    },
+    "Hundreds of people cheered and waved flags.": {
+      "ph": [
+        {"t": "Hundreds of", "b": "hundreds of", "m": "数百"}
+      ]
+    },
+    "They consume plenty of cereal for breakfast.": {
+      "ph": [
+        {"t": "plenty of", "b": "plenty of", "m": "大量"}
+      ]
+    },
+    "The sky sparkled with brilliant stars.": {
+      "ph": [
+        {"t": "sparkled with", "b": "sparkle with", "m": "闪耀着"}
+      ]
+    },
+    "Jobs, of course, has enjoyed singular success.": {
+      "ph": [
+        {"t": "of course", "b": "of course", "m": "当然"}
+      ]
+    },
+    "He is fond of luxury cat food.": {
+      "ph": [
+        {"t": "is fond of", "b": "be fond of", "m": "喜欢"}
+      ]
+    },
+    "This description even fits the majority of eminent scholars.": {
+      "ph": [
+        {"t": "the majority of", "b": "the majority of", "m": "大多数"}
+      ]
+    },
+    "In the past few years, prominent schools around the world have joined the trend.": {
+      "ph": [
+        {"t": "around the world", "b": "around the world", "m": "世界各地"}
+      ]
+    },
+    "They feel proud of being an outstanding problem solver.": {
+      "ph": [
+        {"t": "proud of", "b": "be proud of", "m": "为……自豪"}
+      ]
+    },
+    "The meeting is scheduled to commence at noon.": {
+      "ph": [
+        {"t": "is scheduled to", "b": "be scheduled to do", "m": "定于"}
+      ]
+    },
+    "She has one of the most brilliant minds in the country.": {
+      "ph": [
+        {"t": "one of the most", "b": "one of the most", "m": "最……的……之一"}
+      ]
+    },
+    "She is known to have a terrific figure.": {
+      "ph": [
+        {"t": "is known to", "b": "be known to do", "m": "众所周知有"}
+      ]
+    },
+    "The book includes a wealth of splendid photographs.": {
+      "ph": [
+        {"t": "a wealth of", "b": "a wealth of", "m": "大量"}
+      ]
+    },
+    "It's marvellous what modern technology can do.": {
+      "an": {
+        "parts": [
+          {"t": "It's marvellous", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "what modern technology can do", "r": "主语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "It 是形式主语，真正的主语是后面 what 引导的主语从句；书上把从句提到前面作主语「现代技术所能做的」，再接「真是太了不起了」。",
+          "what 在从句中作 do 的宾语（do what），既引导从句又充当成分，没有先行词，译成「所能做的（事）」。"
+        ],
+        "lit": "它是了不起的，现代技术能做什么。"
+      }
+    },
+    "All in all, the Olympic class ships were marvels of sea engineering.": {
+      "ph": [
+        {"t": "All in all", "b": "all in all", "m": "总之"}
+      ]
+    },
+    "Later Parliament increased the speed limit to 14 miles per hour.": {
+      "ph": [
+        {"t": "increased", "b": "increase … to", "m": "提高到"},
+        {"t": "to", "b": "increase … to", "m": "提高到"}
+      ]
+    },
+    "The senator called on Facebook to change its privacy policy.": {
+      "ph": [
+        {"t": "called on", "b": "call on sb. to do", "m": "呼吁……做某事"},
+        {"t": "to", "b": "call on sb. to do", "m": "呼吁……做某事"}
+      ]
+    },
+    "It was shot to death by a police officer.": {
+      "ph": [
+        {"t": "shot to death", "b": "shoot sb. to death", "m": "开枪打死"}
+      ]
+    },
+    "It often leads to innovations in other related fields.": {
+      "ph": [
+        {"t": "leads to", "b": "lead to", "m": "促成，导致"},
+        {"t": "innovations in", "b": "innovation in", "m": "……方面的创新"}
+      ]
+    },
+    "It misleads people to rely on sunscreen for protection.": {
+      "ph": [
+        {"t": "rely on", "b": "rely on", "m": "依赖"}
+      ]
+    },
+    "Despite these poor figures, it's not all doom and gloom.": {
+      "ph": [
+        {"t": "doom and gloom", "b": "doom and gloom", "m": "悲观绝望"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Despite these poor figures", "r": "让步状语"},
+          {"t": ", ", "r": ""},
+          {"t": "it's not all doom and gloom", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "Despite + 名词短语作让步状语，意思是「尽管」，后面不再加 but；书上译成「尽管这些数字很糟糕，但……」，补了「但」。",
+          "not all 是部分否定，意思是「并非全是」，不是「全不是」；书上意译成「还不至于说一点希望都没有」。"
+        ],
+        "lit": "尽管有这些糟糕的数字，也并非全是厄运和阴郁。"
+      }
+    },
+    "We regard these disappointments as a fate.": {
+      "ph": [
+        {"t": "regard", "b": "regard … as", "m": "把……视为"},
+        {"t": "as", "b": "regard … as", "m": "把……视为"}
+      ]
+    },
+    "The scent of flowers acts as a magnet to bees.": {
+      "ph": [
+        {"t": "acts as", "b": "act as", "m": "起……的作用，充当"}
+      ]
+    }
+  }
+}

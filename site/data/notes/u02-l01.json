@@ -1,0 +1,398 @@
+{
+  "_note": "例句词组与语法解析（书外补充，AI 生成）",
+  "sents": {
+    "In fact, in some cases, extreme ambition may end up doing more harm than good.": {
+      "ph": [
+        {"t": "In fact", "b": "in fact", "m": "事实上"},
+        {"t": "in some cases", "b": "in some cases", "m": "在某些情况下"},
+        {"t": "end up doing", "b": "end up doing", "m": "最终落得"},
+        {"t": "more harm than good", "b": "do more harm than good", "m": "弊大于利"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "In fact, in some cases", "r": "状语"},
+          {"t": ", ", "r": ""},
+          {"t": "extreme ambition may end up doing more harm than good", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "end up doing 表示「最终落得……的结果」，may 表可能，所以书上译成「最终可能……」。",
+          "more harm than good 是 more…than… 的比较结构，字面是「更多的害处而不是好处」，书上凝练成固定说法「弊大于利」。"
+        ],
+        "lit": "事实上，在某些情况下，极端的野心可能最终做出比好处更多的害处。"
+      }
+    },
+    "Curiosity is one of the tools humans have found to accomplish that gigantic task.": {
+      "ph": [
+        {"t": "one of", "b": "one of", "m": "……之一"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Curiosity is one of the tools", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "humans have found", "r": "定语从句"},
+          {"t": " ", "r": ""},
+          {"t": "to accomplish that gigantic task", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "humans have found 是省略了关系词的定语从句，先行词是 tools，省略的 that / which 在从句里作 found 的宾语，所以书上前置成「人类发现的……工具」。",
+          "to accomplish that gigantic task 是不定式短语，说明工具的用途，书上也前置，译成「完成那项艰巨任务的」，整个定语堆在「工具」前面。"
+        ],
+        "lit": "好奇心是人类已经发现的、用来完成那个巨大任务的工具之一。"
+      }
+    },
+    "Factories are being digitalised, filled with new sensors and new computers to make them quicker.": {
+      "ph": [
+        {"t": "filled with", "b": "be filled with", "m": "装满，充满"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Factories are being digitalised", "r": "主干"},
+          {"t": ", ", "r": ""},
+          {"t": "filled with new sensors and new computers", "r": "非谓语"},
+          {"t": " ", "r": ""},
+          {"t": "to make them quicker", "r": "目的状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "are being digitalised 是现在进行时的被动，表示正在发生，书上保留被动译成「正在被数字化」。",
+          "filled with… 是过去分词短语作状语，补充说明数字化的具体表现，书上译成主动的「充满了……」。",
+          "to make them quicker 是不定式表目的，them 指 factories，make them quicker 是「使它们更快」，书上补出宾语译成「以加快生产速度」。"
+        ],
+        "lit": "工厂正在被数字化，被新的传感器和新的电脑填满，为了使它们更快。"
+      }
+    },
+    "The office maintained a well-stocked kitchen that would satisfy my every snack desire.": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "The office maintained a well-stocked kitchen", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that would satisfy my every snack desire", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导定语从句，先行词是 kitchen，that 在从句里作主语；书上没有前置成「……的厨房」，而是拆成后面的分句「可以满足……」。",
+          "主句 maintained 是过去时，从句的 would 是随之变化的形式，句中没有 if 条件，不是虚拟语气；书上译成「可以满足」。",
+          "every snack desire 里 every 修饰 desire，强调「每一种」，书上译成「每一种渴望」。"
+        ],
+        "lit": "办公室保有一个储备充足的厨房，它会满足我每一个零食欲望。"
+      }
+    },
+    "It is important to distinguish between the rules of grammar and the conventions of written language.": {
+      "ph": [
+        {"t": "distinguish between", "b": "distinguish between … and", "m": "区分……和……"},
+        {"t": "and", "b": "distinguish between … and", "m": "区分……和……"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "It is important", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to distinguish between the rules of grammar and the conventions of written language", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "It 是形式主语，真正的主语是后面的不定式 to distinguish…，书上把它提到前面译成「区分……很重要」。",
+          "distinguish between A and B 中 A 是 the rules of grammar，B 是 the conventions of written language，两项并列，书上译成「语法规则和书面语言的惯例」。"
+        ],
+        "lit": "重要的是区分语法的规则和书面语言的惯例之间。"
+      }
+    },
+    "Within 10 minutes, I had impressed the interviewer enough to be offered a job with the agency.": {
+      "ph": [
+        {"t": "enough to", "b": "enough to do", "m": "足以……"},
+        {"t": "be offered", "b": "be offered sth.", "m": "得到（提供的）……"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Within 10 minutes", "r": "状语"},
+          {"t": ", ", "r": ""},
+          {"t": "I had impressed the interviewer", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "enough to be offered a job with the agency", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "adj. / adv. + enough to do 表示「足以做某事」，这里 enough to be offered 说明印象好到什么程度，书上拆成先后两个动作：「留下了深刻的印象，得到了……」。",
+          "to be offered 是不定式的被动形式，主语 I 是动作的承受者，书上译成「得到……工作机会」，而不是「被提供」。"
+        ],
+        "lit": "在 10 分钟之内，我已经给面试官留下了足够的印象，以至于被提供了该机构的一份工作。"
+      }
+    },
+    "Blocks of flats built in the past there were mostly inhabited by people who did not earn much.": {
+      "ph": [
+        {"t": "Blocks of flats", "b": "a block of flats", "m": "公寓楼"},
+        {"t": "were mostly inhabited by", "b": "be inhabited by", "m": "住着，被……居住"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Blocks of flats", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "built in the past there", "r": "非谓语"},
+          {"t": " ", "r": ""},
+          {"t": "were mostly inhabited by people", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "who did not earn much", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "built in the past there 是过去分词短语作后置定语，修饰 Blocks of flats，意思是「过去建在那里的」，书上前置译出。",
+          "主干 were inhabited 是被动，书上改成主动的「住着」，把 people 译成宾语，读起来更顺。",
+          "who 引导定语从句，先行词是 people，who 在从句里作主语；书上前置成「收入不高的」，放在「人」前面。"
+        ],
+        "lit": "过去建在那里的公寓楼大多被不赚很多钱的人居住。"
+      }
+    },
+    "There are growing concerns that robots could become a threat.": {
+      "ph": [
+        {"t": "growing concerns", "b": "growing concern", "m": "越来越多的担忧"},
+        {"t": "become a threat", "b": "become a threat", "m": "成为威胁"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "There are growing concerns", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that robots could become a threat", "r": "同位语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导同位语从句，解释名词 concerns 的具体内容，that 在从句里不作成分；concerns 本身是名词，书上把它化成动词，译成「人们越来越担心……」。",
+          "There are… 是存在句型，书上不直译「有……担忧」，而是补出「人们」作主语，让「担心」成为谓语。",
+          "could 在这里表示可能性，主句是现在时、句中没有 if 条件，不是过去将来，所以译成「可能」。"
+        ],
+        "lit": "有越来越多的担忧，即机器人可能成为一个威胁。"
+      }
+    },
+    "I came to realise online classes were merely a means to fulfil course requirements.": {
+      "ph": [
+        {"t": "came to", "b": "come to do", "m": "开始（逐渐）做"},
+        {"t": "a means to", "b": "a means to do", "m": "……的手段"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "I came to realise", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "online classes were merely a means to fulfil course requirements", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "come to do 表示认识逐渐变化的过程，书上译成「开始意识到」。",
+          "realise 后省略了 that，后面整句是它的宾语从句；从句用 were，与 came 的过去时一致。",
+          "a means to fulfil… 里不定式作后置定语，说明「手段」的用途，书上译成「满足课程要求的一种手段」。"
+        ],
+        "lit": "我来到意识到网络课程仅仅是一个用来满足课程要求的手段。"
+      }
+    },
+    "It alarms me that nobody takes this problem seriously.": {
+      "ph": [
+        {"t": "takes this problem seriously", "b": "take sth. seriously", "m": "认真对待……"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "It alarms me", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that nobody takes this problem seriously", "r": "主语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "It 是形式主语，真正的主语是 that 引导的主语从句，所以书上把从句提到前面：「谁都不认真对待这个问题，我非常不安」。",
+          "nobody 是全部否定，书上译成「谁都不……」；alarm 是使动词，「使我不安」被书上译成「我非常不安」，让感受者作主语。"
+        ],
+        "lit": "没有人认真对待这个问题，使我惊恐。"
+      }
+    },
+    "The daughter feared her mother would be ignored there.": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "The daughter feared", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "her mother would be ignored there", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "feared 后省略了 that，her mother would be ignored there 是它的宾语从句。",
+          "主句是过去时 feared，从句的 would 是时态呼应（过去将来），句中没有 if 条件，不是虚拟语气，所以书上译成「会被忽视」。"
+        ],
+        "lit": "女儿害怕她的母亲在那里将会被忽视。"
+      }
+    },
+    "Leah easily could have fallen into a trap of feeling content.": {
+      "ph": [
+        {"t": "fallen into a trap", "b": "fall into a trap", "m": "陷入陷阱"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Leah easily could have fallen into a trap", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "of feeling content", "r": ""},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "could have done 表示对过去的推测或「本可以……」，句子暗含「实际上没有陷入」，书上译成「很容易陷入」，没有写出这层意思。",
+          "of feeling content 是 of + 动名词，说明 trap 具体指什么；书上把它译成前置的「满足感的陷阱」。"
+        ],
+        "lit": "利亚很容易本可以陷入一个感到满足的陷阱。"
+      }
+    },
+    "But across society, the abstraction of the idea of cash makes me uneasy.": {
+      "ph": [
+        {"t": "makes me uneasy", "b": "make sb. uneasy", "m": "让人感到不安"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "But across society", "r": "状语"},
+          {"t": ", ", "r": ""},
+          {"t": "the abstraction of the idea of cash makes me uneasy", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "主语 the abstraction of the idea of cash 是名词化短语（abstraction 由动词 abstract 变来），无生命主语，书上译成「现金概念的抽象化」后再接「让我感到不安」。",
+          "make + 宾语 + 形容词补语 表示「使……处于某种状态」，书上译成「让我感到不安」，把 uneasy 译成感受。"
+        ],
+        "lit": "但是在整个社会中，现金这个概念的抽象使我不安。"
+      }
+    },
+    "The girl appeared anxious, had lost weight and was not sleeping well.": {
+      "ph": [
+        {"t": "lost weight", "b": "lose weight", "m": "体重减轻"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "The girl appeared anxious", "r": "主干"},
+          {"t": ", ", "r": ""},
+          {"t": "had lost weight", "r": "并列分句"},
+          {"t": " and ", "r": ""},
+          {"t": "was not sleeping well", "r": "并列分句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "三个谓语共用主语 The girl：appeared anxious、had lost weight、was not sleeping well 并列，书上拆成三个短分句。",
+          "had lost 是过去完成时，表示在「显得焦虑」之前已经发生的变化，书上译成「体重降了」；was not sleeping 是过去进行时，表示当时持续的状态，书上译成「觉也睡不好」。"
+        ],
+        "lit": "那个女孩显得焦虑，已经失去了体重，并且当时没有睡得好。"
+      }
+    },
+    "They think it more urgent to fulfil their social obligations.": {
+      "ph": [
+        {"t": "fulfil their social obligations", "b": "fulfil one's obligations", "m": "履行社会责任"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "They think it more urgent", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to fulfil their social obligations", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "it 是形式宾语，more urgent 是宾语补足语，真正的宾语是后面的不定式 to fulfil…，句型是 think it + 形容词 + to do。",
+          "书上把真正的宾语提到前面，译成「认为履行社会责任更加紧迫」，不再保留 it。"
+        ],
+        "lit": "他们认为它更紧迫，去履行他们的社会责任。"
+      }
+    },
+    "It is bound to help us achieve greater success.": {
+      "ph": [
+        {"t": "is bound to", "b": "be bound to do", "m": "必定会"}
+      ]
+    },
+    "My suitcase was full of books.": {
+      "ph": [
+        {"t": "was full of", "b": "be full of", "m": "装满"}
+      ]
+    },
+    "The precise function of sleep remains largely in the realm of assumption.": {
+      "ph": [
+        {"t": "in the realm of", "b": "in the realm of", "m": "在……的领域"}
+      ]
+    },
+    "It gets one into the habit of making empty promises.": {
+      "ph": [
+        {"t": "into the habit of", "b": "get into the habit of", "m": "养成……的习惯"},
+        {"t": "making empty promises", "b": "make promises", "m": "许下承诺"}
+      ]
+    },
+    "A stack of files awaited me on my desk.": {
+      "ph": [
+        {"t": "A stack of", "b": "a stack of", "m": "一堆"}
+      ]
+    },
+    "I found it in a pile of documents on his desk.": {
+      "ph": [
+        {"t": "a pile of", "b": "a pile of", "m": "一堆"}
+      ]
+    },
+    "She resumed her career after an interval of six years.": {
+      "ph": [
+        {"t": "an interval of", "b": "an interval of", "m": "……的间隔"}
+      ]
+    },
+    "More affluent and educated people tend to consume higher quality diets.": {
+      "ph": [
+        {"t": "tend to", "b": "tend to do", "m": "倾向于"}
+      ]
+    },
+    "She grew up with Chinese customs and traditions.": {
+      "ph": [
+        {"t": "grew up", "b": "grow up", "m": "成长"}
+      ]
+    },
+    "Moreover, schools should be more than simple institutions of traditional learning.": {
+      "ph": [
+        {"t": "more than", "b": "more than", "m": "不仅仅是"}
+      ]
+    },
+    "He inquired about his client's family background.": {
+      "ph": [
+        {"t": "inquired about", "b": "inquire about", "m": "询问"}
+      ]
+    },
+    "The agents were able to utilise their full potential and experience.": {
+      "ph": [
+        {"t": "were able to", "b": "be able to do", "m": "能够"}
+      ]
+    },
+    "Deputy chiefs may be more willing to make the jump without a net.": {
+      "ph": [
+        {"t": "be more willing to", "b": "be willing to do", "m": "更愿意"}
+      ]
+    },
+    "They reside in our minds, shaping our thoughts.": {
+      "ph": [
+        {"t": "reside in", "b": "reside in", "m": "存在于，居住在"}
+      ]
+    },
+    "Numerous professional drivers would have to find new ways of earning a living.": {
+      "ph": [
+        {"t": "have to", "b": "have to do", "m": "必须"},
+        {"t": "earning a living", "b": "earn a living", "m": "谋生"}
+      ]
+    },
+    "It remains alive among the majority of American people.": {
+      "ph": [
+        {"t": "the majority of", "b": "the majority of", "m": "大多数"}
+      ]
+    },
+    "It launched a fierce attack against that state.": {
+      "ph": [
+        {"t": "launched a fierce attack against", "b": "launch an attack against", "m": "对……发动攻击"}
+      ]
+    },
+    "The editor is frightened by this news.": {
+      "ph": [
+        {"t": "is frightened by", "b": "be frightened by", "m": "被……吓坏"}
+      ]
+    },
+    "He doesn't feel at ease in the firm.": {
+      "ph": [
+        {"t": "feel at ease", "b": "feel at ease", "m": "感到自在"}
+      ]
+    },
+    "That was great for the consumer, not so much for the manufacturer.": {
+      "ph": [
+        {"t": "not so much", "b": "not so much", "m": "没那么（好）"}
+      ]
+    }
+  }
+}
