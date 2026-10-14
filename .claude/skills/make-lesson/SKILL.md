@@ -16,7 +16,7 @@ description: 批量生成课件课程（Part 01 词以群记）：抽页图 → 
 | 页图 → Lesson JSON + 自检 | 子代理 `lesson-extractor` | **Sonnet** | 约 10~13 万 token |
 | 校验 | `pipeline/validate.py` | 脚本 | 0 |
 | 逐词释义 | 子代理 `gloss-writer` | **Haiku** | 约 5~6 万 token |
-| 例句词组与语法解析 | 子代理 `note-writer` | **Sonnet**（先行词、虚拟语气这类判断 Haiku 容易讲错） | 待实测（见 `docs/plans/2026-10-14-sentence-notes.md`） |
+| 例句词组与语法解析 | 子代理 `note-writer` | **Sonnet**（先行词、虚拟语气这类判断 Haiku 容易讲错） | 约 2.5~4 万 token（2026-10-14 实测 38 课） |
 | 音频 | 云端 `audio` 工作流（`.github/workflows/audio.yml`，内部跑 `build_audio.py` + `publish_audio.py`） | 脚本（edge-tts） | 0 |
 | 对数 / 部署检查 | `build_index.py` / `check_audio.py`（deploy 工作流里也会跑） | 脚本 | 0 |
 | 人工抽查 | 用户 | — | — |
@@ -106,7 +106,7 @@ id: u08-l01；unit: 8；lesson: 1；part: 1；书页范围：215 到 222；词�
   校准前按 c = 10%（5 小时窗口）、c = 3%（周窗口）保守估计；之后每完成一个 Unit 按实际均值更新 c。
 - **启动任何子代理前**，对两个窗口都要满足：
   `已用% + (正在跑的课数 + 1) × c ≤ 95`
-  （抽取子代理算 0.7 课，释义子代理算 0.3 课，词组解析子代理先按 0.4 课算，实测后更新。）不满足就**不启动**，只等正在跑的子代理结束。
+  （抽取子代理算 0.7 课，释义子代理算 0.3 课，词组解析子代理算 0.3 课。）不满足就**不启动**，只等正在跑的子代理结束。
 - **5 小时窗口不够**：正在跑的都结束后，等到 `resetsAt` 之后再继续。等待方法：后台跑
   `python -c "import time; time.sleep(<秒数>)"`（run_in_background，秒数 = 距 resetsAt 再加 120 秒），结束通知回来后重新查额度再继续。
   不要用前台 sleep，也不要轮询。
