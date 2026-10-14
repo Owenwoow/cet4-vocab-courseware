@@ -1,0 +1,106 @@
+{
+ "_note": "例句词组与语法解析（书外补充，AI 生成）",
+ "sents": {
+  "Changes in brain cells can affect communication between different regions of the brain.": {
+   "ph": [
+    {
+     "t": "Changes in",
+     "b": "change in",
+     "m": "……的变化"
+    },
+    {
+     "t": "communication between",
+     "b": "communication between",
+     "m": "……之间的交流"
+    }
+   ]
+  },
+  "Some people are absorbed in the past but not open to new memories, but that's not the case for me.": {
+   "ph": [
+    {
+     "t": "absorbed in",
+     "b": "be absorbed in",
+     "m": "沉浸于；专心于"
+    },
+    {
+     "t": "open to",
+     "b": "be open to",
+     "m": "对……持开放态度"
+    },
+    {
+     "t": "the case",
+     "b": "be the case",
+     "m": "是事实；属实"
+    }
+   ]
+  },
+  "Nowadays forests are increasingly welcome because they suck in carbon pollution from the air.": {
+   "ph": [
+    {
+     "t": "suck in",
+     "b": "suck in",
+     "m": "吸入"
+    }
+   ]
+  },
+  "Mistakes crack their self-confidence because they attribute errors to a lack of ability, which they feel powerless to change.": {
+   "ph": [
+    {
+     "t": "attribute",
+     "b": "attribute … to",
+     "m": "把……归因于"
+    },
+    {
+     "t": "to",
+     "b": "attribute … to",
+     "m": "把……归因于"
+    },
+    {
+     "t": "a lack of",
+     "b": "a lack of",
+     "m": "缺乏"
+    },
+    {
+     "t": "feel powerless to",
+     "b": "feel powerless to do",
+     "m": "感到无力做某事"
+    }
+   ],
+   "an": {
+    "parts": [
+     {
+      "t": "Mistakes crack their self-confidence",
+      "r": "主干"
+     },
+     {
+      "t": " ",
+      "r": ""
+     },
+     {
+      "t": "because they attribute errors to a lack of ability",
+      "r": "原因状语"
+     },
+     {
+      "t": ", ",
+      "r": ""
+     },
+     {
+      "t": "which they feel powerless to change",
+      "r": "非限制性定语从句"
+     },
+     {
+      "t": ".",
+      "r": ""
+     }
+    ],
+    "pts": [
+     "主语 Mistakes 是无生命名词，直译“错误破坏自信”生硬，书上加“让”译成“错误会让他们的自信心崩溃”。",
+     "attribute A to B 被拆开：A 是 errors，B 是 a lack of ability，译成“把错误归咎于能力不足”。",
+     "which 的先行词是 a lack of ability（能力不足），不是 errors；which 在从句里作 change 的宾语（change which）。",
+     "非限制性定语从句书上拆成后面的分句“觉得无力改变”，which 承前省略，不再译出“这种不足”。"
+    ],
+    "lit": "错误破坏了他们的自信，因为他们把错误归因于能力的缺乏，而他们觉得无力改变这种缺乏。"
+   }
+  }
+ }
+}

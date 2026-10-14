@@ -1,0 +1,96 @@
+{
+ "_note": "例句词组与语法解析（书外补充，AI 生成）",
+ "sents": {
+  "The survey allowed for reading materials on a digital device.": {
+   "ph": [
+    {
+     "t": "allowed for",
+     "b": "allow for",
+     "m": "考虑到；为……留出余地"
+    },
+    {
+     "t": "reading materials",
+     "b": "reading materials",
+     "m": "阅读材料"
+    }
+   ]
+  },
+  "Firefighters needed breathing apparatus to enter the burning house.": {
+   "ph": [
+    {
+     "t": "breathing apparatus",
+     "b": "breathing apparatus",
+     "m": "呼吸器"
+    }
+   ]
+  },
+  "The room was furnished with antiques.": {
+   "ph": [
+    {
+     "t": "furnished with",
+     "b": "be furnished with",
+     "m": "配备有（家具等）"
+    }
+   ]
+  },
+  "We were assured that, except for low grades or a raise in family income, no money would be taken away.": {
+   "ph": [
+    {
+     "t": "were assured",
+     "b": "be assured",
+     "m": "得到保证"
+    },
+    {
+     "t": "except for",
+     "b": "except for",
+     "m": "除……之外"
+    },
+    {
+     "t": "a raise in",
+     "b": "a raise in",
+     "m": "……的增加"
+    },
+    {
+     "t": "taken away",
+     "b": "take away",
+     "m": "拿走；夺去"
+    }
+   ],
+   "an": {
+    "parts": [
+     {
+      "t": "We were assured",
+      "r": "主干"
+     },
+     {
+      "t": " that, ",
+      "r": ""
+     },
+     {
+      "t": "except for low grades or a raise in family income",
+      "r": "插入语"
+     },
+     {
+      "t": ", ",
+      "r": ""
+     },
+     {
+      "t": "no money would be taken away",
+      "r": "宾语从句"
+     },
+     {
+      "t": ".",
+      "r": ""
+     }
+    ],
+    "pts": [
+     "主干是被动 We were assured，直接译成“我们得到保证”，比“我们被保证”顺。",
+     "that 引导 assured 的宾语从句；except for… 夹在 that 和从句主语之间，是插入语，所以书上把“除了……外”提到从句开头。",
+     "no money 作主语，否定落在主语上，译成“任何钱都不会……”；would 是主句过去时引起的时态呼应（过去将来），不是虚拟语气。",
+     "a raise in family income 是名词化结构，书上译成动宾式的“家庭收入增加”。"
+    ],
+    "lit": "我们被保证，除了低分或家庭收入的增加以外，没有钱会被拿走。"
+   }
+  }
+ }
+}
