@@ -142,7 +142,93 @@ def validate(path):
         for n in names - in_group:
             r.warn(gw, f"导图词 {n} 在本词群找不到词条/扩展词")
     check_roots(r, d)
+    check_notes(r, d)
     return r, len(seen)
+
+
+WORD_CH = re.compile(r"[A-Za-z']")
+
+
+def find_at_boundary(s, t, start=0):
+    """t 在 s 里从 start 起第一次出现、两端落在单词边界上的位置；找不到返回 -1。
+    与网页 sentenceHTML 的定位规则一致（单词 = 字母和撇号）"""
+    i = s.find(t, start)
+    while i >= 0:
+        before = s[i - 1] if i > 0 else ""
+        after = s[i + len(t)] if i + len(t) < len(s) else ""
+        if not (before and WORD_CH.match(before)) and not (after and WORD_CH.match(after)):
+            return i
+        i = s.find(t, i + 1)
+    return -1
+
+
+def locate_phrases(s, ph):
+    """按定位规则给每条 ph 找位置：单段取第一次出现；同一 b 的后续段从上一段结尾之后找。
+    返回 [(起, 止) 或 None]"""
+    last_end, out = {}, []
+    for p in ph:
+        t, b = p.get("t", ""), p.get("b", "")
+        i = find_at_boundary(s, t, last_end.get(b, 0)) if t else -1
+        if i < 0:
+            out.append(None)
+            continue
+        out.append((i, i + len(t)))
+        last_end[b] = i + len(t)
+    return out
+
+
+def check_notes(r, data):
+    """例句词组与语法解析（site/data/notes/，书外补充）"""
+    f = DATA / "notes" / f"{data['id']}.json"
+    if not f.exists():
+        return
+    sents = {e["ex"]["en"] for g in data["groups"] for e in g["entries"] if e.get("ex")}
+    notes = json.loads(f.read_text(encoding="utf-8")).get("sents")
+    if not isinstance(notes, dict):
+        r.err("词组解析", "缺少 sents 对象")
+        return
+    for s, n in notes.items():
+        where = f"词组解析「{s[:40]}{'…' if len(s) > 40 else ''}」"
+        if s not in sents:
+            r.err(where, "本课没有这句例句（键要和 ex.en 逐字相同）")
+            continue
+        ph = n.get("ph", [])
+        if not isinstance(ph, list):
+            r.err(where, "ph 应为数组")
+            ph = []
+        for p in ph:
+            for k in ("t", "b", "m"):
+                if not str(p.get(k, "")).strip():
+                    r.err(where, f"词组 {p.get('t')!r} 的 {k} 为空")
+        spans = locate_phrases(s, ph)
+        taken = []   # (起, 止, b)
+        for p, sp in zip(ph, spans):
+            t = p.get("t", "")
+            if t and not (WORD_CH.match(t[0]) and WORD_CH.match(t[-1])):
+                r.err(where, f"词组片段 {t!r} 首尾应是单词，不要带空格或标点")
+            if sp is None:
+                r.err(where, f"词组片段 {t!r} 不在句中，或没落在单词边界上")
+                continue
+            for a, z, b in taken:
+                if sp[0] < z and a < sp[1] and b != p.get("b"):
+                    r.err(where, f"词组 {p.get('b')!r} 的片段 {p.get('t')!r} 和词组 {b!r} 重叠")
+            taken.append((*sp, p.get("b")))
+        an = n.get("an")
+        if an is None:
+            continue
+        parts = an.get("parts", [])
+        if "".join(x.get("t", "") for x in parts) != s:
+            r.err(where, "parts 的 t 按顺序拼起来和原句不一致")
+        for x in parts:
+            if not isinstance(x.get("r", None), str):
+                r.err(where, f"成分 {x.get('t')!r} 的 r 应为字符串（不标注写空串）")
+        pts = an.get("pts", [])
+        if not pts or not all(isinstance(x, str) and x.strip() for x in pts):
+            r.err(where, "pts 为空或有空要点")
+        elif len(pts) > 4:
+            r.err(where, f"要点 {len(pts)} 条，最多 4 条")
+        if not str(an.get("lit", "")).strip():
+            r.err(where, "缺少直译 lit")
 
 
 def check_roots(r, data):
