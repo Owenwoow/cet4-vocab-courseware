@@ -13,8 +13,9 @@
 
    熟练度（level，0～5）：每轮只记第一遍作答，h 存最近 6 次（g 记得 / m 模糊 / f 忘了），
    q 是第一遍答对过的最难题型（0 看词选义 / 1 听音选义 / 2 例句挖空、看中文选英文 / 3 拼写），z=1 是手动「斩」。
+   n 是总作答轮数（含提前复习），v 是记进熟练度的轮数（到期复习 + 忘了）；熟练度和出题只看 v，提前复习不会让题型跳级。
    连对 = h 末尾连续 g 的个数；从上往下命中即止：
-     z=1 → 5；h 末位 f，或忘过≥2 次且连对<2 → 1；还没复习过 → 0；
+     z=1 → 5；h 末位 f，或忘过≥2 次且连对<2 → 1；还没正式复习过（v=0）→ 0；
      s≥4 且连对≥4 且 q≥3 → 5；s≥4 且连对≥3 且 q≥2 → 4；s≥3 且连对≥2 → 3；其他 → 2
    出题：题型 = min(熟练度对应题型, q+1)，每次最多升一级；5 级只做快速抽查。
    日期都用本地日期字符串 YYYY-MM-DD，一天从凌晨 4 点开始算 */
@@ -59,23 +60,24 @@ const SRS = (() => {
 
   /* 熟练度 */
   const hist = c => c.h ?? (c.n ? c.r || "" : "");   // 旧卡没有 h：用最近一次评分顶上
+  const reviews = c => c.v ?? hist(c).length;       // 记进熟练度的轮数；旧卡没有 v：h 每轮记一次，用它的长度顶上
   function streak(c) { const h = hist(c); let k = 0; while (k < h.length && h[h.length - 1 - k] === "g") k++; return k; }
   function level(c) {
     if (c.z) return 5;
     const h = hist(c), k = streak(c), q = c.q || 0;
     if (h.endsWith("f") || ((c.l || 0) >= 2 && k < 2)) return 1;
-    if (!c.n) return 0;
+    if (!reviews(c)) return 0;
     if (c.s >= 4 && k >= 4 && q >= 3) return 5;
     if (c.s >= 4 && k >= 3 && q >= 2) return 4;
     if (c.s >= 3 && k >= 2) return 3;
     return 2;
   }
 
-  /* 出什么题：2 级在看词选义 / 听音选义间按复习次数轮换 */
+  /* 出什么题：2 级在看词选义 / 听音选义间按正式复习次数轮换 */
   function pickType(c) {
     const lv = level(c);
     if (lv === 5) return TYPE.QUICK;
-    const want = lv <= 1 ? TYPE.MEAN : lv === 2 ? (c.n || 0) % 2 : lv === 3 ? TYPE.CONTEXT : TYPE.SPELL;
+    const want = lv <= 1 ? TYPE.MEAN : lv === 2 ? reviews(c) % 2 : lv === 3 ? TYPE.CONTEXT : TYPE.SPELL;
     return Math.min(want, (c.q || 0) + 1);
   }
 
@@ -104,15 +106,15 @@ const SRS = (() => {
   function rate(c, r, t, opt = {}) {
     const key = opt.key ?? `${c.k}|${c.g}|${c.o}|${c.w}`;
     const n = {...c, r, n: (c.n || 0) + 1, t};
-    const h = (hist(c) + r).slice(-H_LEN);
-    if (r === "f") return {...n, a: t, s: 0, d: add(t, 1), l: (c.l || 0) + 1, h, z: 0};
-    if (!isDue(c, t)) return n;                     // 提前复习：不改计划，也不记进熟练度
+    const h = (hist(c) + r).slice(-H_LEN), v = reviews(c) + 1;
+    if (r === "f") return {...n, a: t, s: 0, d: add(t, 1), l: (c.l || 0) + 1, h, v, z: 0};
+    if (!isDue(c, t)) return n;                     // 提前复习：不改计划，也不记进熟练度（v 不加）
     const q = r === "g" && opt.type >= 0 && opt.type <= TYPE.SPELL ? Math.max(c.q || 0, opt.type) : c.q || 0;
     if (r === "m") {
-      const d = c.s >= 4 ? add(t, Math.max(2, Math.floor(LV_DAYS[level({...n, h, q})] / 2))) : add(t, 2);
-      return {...n, h, q, d: examCap(d, t, key, opt.exam || EXAM)};
+      const d = c.s >= 4 ? add(t, Math.max(2, Math.floor(LV_DAYS[level({...n, h, v, q})] / 2))) : add(t, 2);
+      return {...n, h, v, q, d: examCap(d, t, key, opt.exam || EXAM)};
     }
-    const s = c.s + 1, nc = {...n, h, q, s};
+    const s = c.s + 1, nc = {...n, h, v, q, s};
     return {...nc, d: examCap(stationDue(c.a, s, t, level(nc)), t, key, opt.exam || EXAM)};
   }
 
@@ -191,15 +193,15 @@ const SRS = (() => {
   }
 
   /* 本轮出题顺序：拖过的先、今天到期的后；同一段里熟练度低的先；
-     同一熟练度里，复习不到 3 次的按课本顺序（保留词群联想），3 次及以上的乱序、同词群不相邻、不同词群的形近词相邻 */
+     同一熟练度里，正式复习不到 3 次的按课本顺序（保留词群联想），3 次及以上的乱序、同词群不相邻、不同词群的形近词相邻 */
   function queue(items, t, seed = t) {
     const grp = x => `${x.card.k}|${x.card.g}`;
     const due = items.filter(x => isDue(x.card, t)), out = [];
     for (const late of [true, false])
       for (let lv = 0; lv <= 5; lv++) {
         const seg = due.filter(x => (x.card.d < t) === late && level(x.card) === lv);
-        out.push(...seg.filter(x => (x.card.n || 0) < 3).sort((x, y) => (x.order || 0) - (y.order || 0)));
-        out.push(...pairSimilar(shuffleSpread(seg.filter(x => (x.card.n || 0) >= 3), grp, `${seed}|${late}|${lv}`), grp));
+        out.push(...seg.filter(x => reviews(x.card) < 3).sort((x, y) => (x.order || 0) - (y.order || 0)));
+        out.push(...pairSimilar(shuffleSpread(seg.filter(x => reviews(x.card) >= 3), grp, `${seed}|${late}|${lv}`), grp));
       }
     return out;
   }
@@ -207,7 +209,7 @@ const SRS = (() => {
   /* 请假顺延：学习日和到期日一起后移，整条路线不变 */
   const shift = (c, n) => ({...c, a: add(c.a, n), d: add(c.d, n)});
 
-  return {EXAM, TYPE, today, add, diff, dow, monday, firstWeekend, firstSunday, stationDue, examCap, newCard, isDue,
+  return {EXAM, TYPE, today, reviews, add, diff, dow, monday, firstWeekend, firstSunday, stationDue, examCap, newCard, isDue,
     rate, chop, isHard, dueList, level, streak, pickType, gradeChoice, gradeSpell, editDist, similar, senseKeys, posSet, distractorTag, confAdd, confDrop, shuffleSpread, pairSimilar, queue, shift};
 })();
 if (typeof module === "object" && module.exports) module.exports = SRS;

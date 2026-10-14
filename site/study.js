@@ -517,7 +517,7 @@ const Study = (() => {
     if (D.flip) return "flip";
     if (D.kind.has(x.word)) return D.kind.get(x.word);   // 答错再来：同一种题
     const ty = x.card ? SRS.pickType(x.card) : SRS.TYPE.MEAN;
-    if (ty === SRS.TYPE.CONTEXT) return clozeOf(x) && (x.card.n || 0) % 2 === 0 ? "cloze" : "reverse";
+    if (ty === SRS.TYPE.CONTEXT) return clozeOf(x) && SRS.reviews(x.card) % 2 === 0 ? "cloze" : "reverse";
     return ["mean", "listen", null, "spell", "flip"][ty];
   }
   function makeQ(x, kind) {
@@ -715,7 +715,7 @@ const Study = (() => {
     const key = cardKey(x), c = Sync.get(key, 0);
     if (!c) return;
     const u = {...c, p: T()};
-    if (s.err >= 2 && !c.n) u.h = ((c.h || "") + "f").slice(-6);
+    if (s.err >= 2 && !c.n) { u.h = ((c.h || "") + "f").slice(-6); u.v = 0; }   // 这个 f 不算复习过
     if (s.err >= 3) u.r = "f";
     Sync.set(key, u); x.card = u;
   }

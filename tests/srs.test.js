@@ -138,6 +138,19 @@ test("出题：按熟练度，每次最多比答对过的升一级；5 级快速
   assert.equal(SRS.pickType(card({n: 5, h: "gggg", s: 4, q: 3})), T.QUICK);
 });
 
+test("提前复习不影响熟练度和题型：睡前巩固过的新词，次日早上仍是 0 级、看词选义", () => {
+  const MON_NEW = SRS.newCard(MON);
+  const night = SRS.rate(MON_NEW, "g", MON, {type: T.MEAN});                 // 当晚睡前巩固（还没到期）
+  assert.equal(night.n, 1); assert.equal(night.v || 0, 0);
+  assert.equal(SRS.level(night), 0); assert.equal(SRS.pickType(night), T.MEAN);
+  const morning = SRS.rate(night, "g", TUE, {type: T.MEAN});                 // 次日早上到期复习
+  assert.equal(morning.v, 1); assert.equal(morning.h, "g");
+  assert.equal(SRS.pickType(morning), T.LISTEN);                              // 正式复习 1 次后才轮到听音
+  const again = SRS.rate(morning, "g", WED, {type: T.LISTEN});                // 再提前刷一遍，轮换不受影响
+  assert.equal(again.v, 1); assert.equal(SRS.pickType(again), T.LISTEN);
+  assert.equal(SRS.reviews({n: 2, h: "m", r: "m"}), 1);                     // 旧卡没有 v：按 h 的长度算
+});
+
 test("判分：选择题 5 秒内对 = 记得，慢 = 模糊；拼写错一个字母 = 模糊", () => {
   assert.equal(SRS.gradeChoice(true, 2000), "g");
   assert.equal(SRS.gradeChoice(true, 7000), "m");
