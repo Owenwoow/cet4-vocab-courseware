@@ -1,241 +1,399 @@
 {
-  "_note": "例句词组与语法解析（书外补充，AI 生成）",
-  "sents": {
-    "That's the first sign to them that life is starting to return to normal.": {
-      "ph": [
-        {"t": "return to normal", "b": "return to normal", "m": "恢复正常"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "That's the first sign to them", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that life is starting to return to normal", "r": "同位语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "that 引导的从句解释抽象名词 sign 的具体内容，是同位语从句；that 在从句中不作成分，也不能换成 which。",
-          "to them 夹在 sign 和同位语从句之间，书上把它提前成「对他们来说」，再把同位语从句译成「生活开始回归正常的第一个迹象」，即从句前置成「……的」放在 sign 前面。"
-        ],
-        "lit": "那是对他们的第一个迹象，即生活正开始回到正常。"
-      }
-    },
-    "Please accept this small gift as a token of our gratitude.": {
-      "ph": [
-        {"t": "as a token of", "b": "as a token of", "m": "作为……的表示"}
-      ]
-    },
-    "She is well informed about the design business.": {
-      "ph": [
-        {"t": "well informed about", "b": "be informed about", "m": "对……了解"}
-      ]
-    },
-    "In her study, participants were randomly assigned to two groups.": {
-      "ph": [
-        {"t": "assigned to", "b": "be assigned to", "m": "被分配到"}
-      ]
-    },
-    "The following year, things got worse and he was forced to resign.": {
-      "ph": [
-        {"t": "got worse", "b": "get worse", "m": "变得更糟"},
-        {"t": "was forced to", "b": "be forced to do", "m": "被迫做某事"}
-      ]
-    },
-    "It witnessed a significant increase in women engineers in the 1970s.": {
-      "ph": [
-        {"t": "increase in", "b": "increase in", "m": "……的增加"}
-      ]
-    },
-    "Higher education is indispensable if you want to go far in both your studies and life.": {
-      "ph": [
-        {"t": "go far", "b": "go far", "m": "走得远，有所成就"},
-        {"t": "both", "b": "both … and", "m": "既……又……"},
-        {"t": "and", "b": "both … and", "m": "既……又……"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Higher education is indispensable", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "if you want to go far in both your studies and life", "r": "条件状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "if 引导条件状语从句，英语里放在主句后，书上译成中文习惯的「如果……，……」，把条件提到前面。",
-          "从句用一般现在时 want，主句是一般现在时的判断，表示一般性的条件与结论，不是虚拟语气。",
-          "both your studies and life 是 both…and 连接两个并列的宾语（studies 和 life），共用介词 in，书上译成「在学习和生活中」。"
-        ],
-        "lit": "高等教育是不可或缺的，如果你想在你的学习和生活两方面都走得远。"
-      }
-    },
-    "Fast technological change makes it necessary for one to constantly upgrade their skills.": {
-      "ph": [
-        {"t": "makes it necessary", "b": "make it necessary for sb. to do", "m": "使……有必要做某事"},
-        {"t": "for", "b": "make it necessary for sb. to do", "m": "使……有必要做某事"},
-        {"t": "to", "b": "make it necessary for sb. to do", "m": "使……有必要做某事"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Fast technological change makes it necessary", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "for one to constantly upgrade their skills", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "it 是形式宾语，necessary 是宾语补足语，真正的宾语是后面的不定式 to constantly upgrade their skills；for one 是这个不定式的逻辑主语。",
-          "所以书上把 make it necessary 译成「使……有必要」，for one 译成「人们」，不定式部分译成「不断地提高自己的技能」放在最后。"
-        ],
-        "lit": "快速的技术变革使它必要，对于一个人来说，不断地升级他们的技能。"
-      }
-    },
-    "We recognize the necessity for a written agreement.": {
-      "ph": [
-        {"t": "necessity for", "b": "necessity for sth.", "m": "对……的必要"}
-      ]
-    },
-    "Remember, failure is inevitable, and every failure you survive is a learning experience.": {
-      "an": {
-        "parts": [
-          {"t": "Remember, failure is inevitable", "r": "主干"},
-          {"t": ", and ", "r": ""},
-          {"t": "every failure", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "you survive", "r": "定语从句"},
-          {"t": " is a learning experience", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "you survive 是定语从句，先行词是 every failure，关系代词（that / which）省略，在从句中作 survive 的宾语（survive every failure）。",
-          "书上把这个定语从句前置，译成「你经历的每一次失败」；survive 在这里是及物动词，指熬过、经历，所以译成「经历」而不是「幸存」。"
-        ],
-        "lit": "记住，失败是不可避免的，并且你熬过的每一次失败是一次学习体验。"
-      }
-    },
-    "It helps us avoid making mistakes.": {
-      "ph": [
-        {"t": "helps us avoid", "b": "help sb. do", "m": "帮助我们避免"}
-      ]
-    },
-    "They have difficulty adapting to climate change.": {
-      "ph": [
-        {"t": "have difficulty", "b": "have difficulty (in) doing", "m": "难以做某事"}
-      ]
-    },
-    "A bride will in most cases adopt a name that combines the couple's last names.": {
-      "ph": [
-        {"t": "in most cases", "b": "in most cases", "m": "在大多数情况下"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "A bride will in most cases adopt a name", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that combines the couple's last names", "r": "定语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "that 引导定语从句，先行词是 a name，that 在从句中作 combines 的主语。",
-          "书上把定语从句前置，译成「一个结合夫妻姓氏的名字」，而不是拆成后面的分句。"
-        ],
-        "lit": "在大多数情况下，新娘会采用一个把夫妻的姓氏结合起来的名字。"
-      }
-    },
-    "By nature, Americans are enthusiastic and energetic about hobbies or pastimes.": {
-      "ph": [
-        {"t": "By nature", "b": "by nature", "m": "天生，本质上"},
-        {"t": "enthusiastic", "b": "be enthusiastic about", "m": "对……热情"},
-        {"t": "about", "b": "be enthusiastic about", "m": "对……热情"}
-      ]
-    },
-    "But the club also acts as a recreation center and safe haven for teenagers, with video games readily available.": {
-      "ph": [
-        {"t": "acts as", "b": "act as", "m": "充当，作为"},
-        {"t": "safe haven", "b": "safe haven", "m": "避风港"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "But the club also acts as a recreation center and safe haven for teenagers", "r": "主干"},
-          {"t": ", ", "r": ""},
-          {"t": "with video games readily available", "r": "状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "with + 名词 + 形容词 是 with 复合结构，作伴随 / 补充说明的状语：video games 是逻辑主语，readily available 是它的状态。",
-          "书上把它译成括号里的分句「（在那里）他们随时可以玩电子游戏」，补出了「他们」，并把 available（可得到的）转成动作「可以玩」。"
-        ],
-        "lit": "但是这个俱乐部也充当青少年的娱乐中心和避风港，伴随着电子游戏随时可得。"
-      }
-    },
-    "Thank you for your swift reply.": {
-      "ph": [
-        {"t": "Thank you for", "b": "thank sb. for sth.", "m": "感谢你……"}
-      ]
-    },
-    "Leah shed the safety of her accounting job and made the switch complete.": {
-      "ph": [
-        {"t": "made the switch", "b": "make the switch", "m": "完成转变"}
-      ]
-    },
-    "That doesn't control the cost of education; it just shifts it to taxpayers.": {
-      "ph": [
-        {"t": "shifts", "b": "shift … to", "m": "把……转移给"},
-        {"t": "to", "b": "shift … to", "m": "把……转移给"}
-      ]
-    },
-    "Jeans are available in a greater variety in America.": {
-      "ph": [
-        {"t": "are available", "b": "be available", "m": "可以买到"}
-      ]
-    },
-    "Children's personality characteristics are invariably determined by their mothers.": {
-      "ph": [
-        {"t": "determined by", "b": "be determined by", "m": "由……决定"}
-      ]
-    },
-    "Students' test-form preferences vary, too, often depending on the subject and course difficulty.": {
-      "ph": [
-        {"t": "depending on", "b": "depend on", "m": "取决于"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Students' test-form preferences vary", "r": "主干"},
-          {"t": ", too, ", "r": ""},
-          {"t": "often depending on the subject and course difficulty", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "depending on… 是现在分词短语，作伴随状语，逻辑主语是主句的主语 preferences；书上不译成从句，直接接在后面写成「通常取决于……」。",
-          "Students' test-form preferences 是名词化结构，preference 由动词 prefer 变来，书上展开成动宾式的「学生对测试形式的偏好」。"
-        ],
-        "lit": "学生的测试形式偏好也变化，经常取决于科目和课程难度。"
-      }
-    },
-    "Trying to live up to the images of \"perfect\" models and movie heroes has a dark side.": {
-      "ph": [
-        {"t": "live up to", "b": "live up to", "m": "达到（标准、期望），追求"},
-        {"t": "a dark side", "b": "a dark side", "m": "阴暗面"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Trying to live up to the images of \"perfect\" models and movie heroes", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "has a dark side", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "整个 Trying to live up to… 是动名词短语作主语，谓语用单数 has，因为它指的是「这件事」，而不是 models 和 heroes 那几个名词。",
-          "主语很长，书上保持原顺序译成「试图追求……的形象有其阴暗面」，用「试图」「追求」译 trying to live up to，没有拆开主语。"
-        ],
-        "lit": "试图达到「完美」模范和电影英雄的形象有一个阴暗面。"
-      }
-    },
-    "They did not raise much due to modest targets.": {
-      "ph": [
-        {"t": "due to", "b": "due to", "m": "由于"}
-      ]
-    },
-    "The majority of earnest people are trying to get on in life.": {
-      "ph": [
-        {"t": "The majority of", "b": "the majority of", "m": "大多数"},
-        {"t": "get on in life", "b": "get on in life", "m": "在生活中过得好，取得进步"}
-      ]
+ "_note": "例句词组与语法解析（书外补充，AI 生成）",
+ "sents": {
+  "That's the first sign to them that life is starting to return to normal.": {
+   "ph": [
+    {
+     "t": "return to normal",
+     "b": "return to normal",
+     "m": "恢复正常"
     }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "That's the first sign to them",
+      "s": "你多半会翻成「那是对他们的第一个迹象」。念一遍，是不是有点怪？sign to them 里的 to them 不是「对他们做什么」，而是「在他们看来」。看到 to + 人，先想想能不能换成「对……来说」。\n→ 对他们来说，那是第一个迹象"
+     },
+     {
+      "t": "that life is starting to return to normal",
+      "s": "这个 that 不是「那个」，也不是在修饰 life。它后面是一个完整的句子 life is starting……，说明的是 sign 的内容：什么迹象？生活开始恢复正常。碰到「名词 + that + 完整句子」，就把它翻成「……的」放在名词前面。return to normal 是「恢复正常」。\n→ 生活开始回归正常的"
+     }
+    ],
+    "order": "英文是「迹象」在前、内容在后；中文习惯把内容放到「迹象」前面，说成「生活开始回归正常的第一个迹象」。",
+    "sum": "对他们来说，这是生活开始恢复正常的第一个迹象。",
+    "cmp": "意思一样。书上把「回归正常」说得更书面，我用的「恢复正常」更口语。"
+   }
+  },
+  "Please accept this small gift as a token of our gratitude.": {
+   "ph": [
+    {
+     "t": "as a token of",
+     "b": "as a token of",
+     "m": "作为……的表示"
+    }
+   ]
+  },
+  "In her study, participants were randomly assigned to two groups.": {
+   "ph": [
+    {
+     "t": "assigned to",
+     "b": "be assigned to",
+     "m": "被分配到"
+    }
+   ]
+  },
+  "She is well informed about the design business.": {
+   "ph": [
+    {
+     "t": "well informed about",
+     "b": "be informed about",
+     "m": "对……了解"
+    }
+   ]
+  },
+  "The following year, things got worse and he was forced to resign.": {
+   "ph": [
+    {
+     "t": "got worse",
+     "b": "get worse",
+     "m": "变得更糟"
+    },
+    {
+     "t": "was forced to",
+     "b": "be forced to do",
+     "m": "被迫做某事"
+    }
+   ]
+  },
+  "It witnessed a significant increase in women engineers in the 1970s.": {
+   "ph": [
+    {
+     "t": "increase in",
+     "b": "increase in",
+     "m": "……的增加"
+    }
+   ]
+  },
+  "Higher education is indispensable if you want to go far in both your studies and life.": {
+   "ph": [
+    {
+     "t": "go far",
+     "b": "go far",
+     "m": "走得远，有所成就"
+    },
+    {
+     "t": "both",
+     "b": "both … and",
+     "m": "既……又……"
+    },
+    {
+     "t": "and",
+     "b": "both … and",
+     "m": "既……又……"
+    }
+   ]
+  },
+  "Fast technological change makes it necessary for one to constantly upgrade their skills.": {
+   "ph": [
+    {
+     "t": "makes it necessary",
+     "b": "make it necessary for sb. to do",
+     "m": "使……有必要做某事"
+    },
+    {
+     "t": "for",
+     "b": "make it necessary for sb. to do",
+     "m": "使……有必要做某事"
+    },
+    {
+     "t": "to",
+     "b": "make it necessary for sb. to do",
+     "m": "使……有必要做某事"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Fast technological change makes it necessary",
+      "s": "你多半会翻成「快速的技术变化使它必要」。念一遍，「它」是谁？这个 it 不指任何东西，是个占位的，真正的内容在后面。看到 makes it necessary，脑子里就想：「使得……变得有必要」，然后眼睛往后找 to。\n→ 快速的技术变革使得有必要"
+     },
+     {
+      "t": "for one to constantly upgrade their skills",
+      "s": "找到 to 了：for one to upgrade，是「让某个人去提高」，for one 交代的是谁要做这件事。one 在这里就是泛指的「人们」，不是数字「一」。constantly 是「不断地」，放在动词前。\n→ 人们不断地提高自己的技能"
+     }
+    ],
+    "order": "it 先占着位置，真正的内容放在最后。中文可以按「使人们有必要……」这个顺序直接说下来，不用倒。",
+    "sum": "快速的技术变革使人们有必要不断地提高自己的技能。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "We recognize the necessity for a written agreement.": {
+   "ph": [
+    {
+     "t": "necessity for",
+     "b": "necessity for sth.",
+     "m": "对……的必要"
+    }
+   ]
+  },
+  "Remember, failure is inevitable, and every failure you survive is a learning experience.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Remember, failure is inevitable",
+      "s": "这块照字面翻就行：inevitable 是「不可避免的」。\n→ 记住，失败是不可避免的"
+     },
+     {
+      "t": "and every failure you survive",
+      "s": "你多半会把 every failure you survive 一个词一个词硬翻，翻成「每一个失败你存活」。念一遍，读不通。failure 后面直接跟了 you survive，中间藏了个 that，补回去是 every failure (that) you survive。survive 平时是「幸存」，这里后面直接跟的是失败，意思是「熬过、经历之后还在」。\n→ 你经历过的每一次失败"
+     },
+     {
+      "t": "is a learning experience",
+      "s": "你可能想翻成「是一个学习的经验」，有点生硬。learning experience 就是「一次学习的机会」，换成「都是一次学习」更自然。\n→ 都是一次学习的体验"
+     }
+    ],
+    "order": "「你熬过的」是修饰 failure 的，英文放在后面，中文要提到「失败」前面，说成「你经历的每一次失败」。",
+    "sum": "记住，失败不可避免，而你熬过的每一次失败，都是一次学习的机会。",
+    "cmp": "意思一样，书上用「经历」，我用「熬过」，强调是挺过来了；「体验」和「机会」两个说法都行。"
+   }
+  },
+  "It helps us avoid making mistakes.": {
+   "ph": [
+    {
+     "t": "helps us avoid",
+     "b": "help sb. do",
+     "m": "帮助我们避免"
+    }
+   ]
+  },
+  "They have difficulty adapting to climate change.": {
+   "ph": [
+    {
+     "t": "have difficulty",
+     "b": "have difficulty (in) doing",
+     "m": "难以做某事"
+    }
+   ]
+  },
+  "A bride will in most cases adopt a name that combines the couple's last names.": {
+   "ph": [
+    {
+     "t": "in most cases",
+     "b": "in most cases",
+     "m": "在大多数情况下"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "A bride will in most cases adopt a name",
+      "s": "你多半会翻成「新娘将在大多数情况下采用一个名字」，念一遍，in most cases 夹在 will 和 adopt 中间，读起来被卡住了。这是插进来的话，先把它拎出来放到句首：「在大多数情况下」。adopt 平时是「收养」，用在名字上就是「采用」。\n→ 在大多数情况下，新娘会采用一个名字"
+     },
+     {
+      "t": "that combines the couple's last names",
+      "s": "that 指谁？放回去试试：新娘把两个姓结合起来？新娘是人，不是她去「结合」，说不太通；那个名字把两个姓结合起来，对。而且 combines 是单数，和 name 对得上。the couple's last names 是「夫妻双方的姓」，last name 就是「姓」。\n→ 这个名字结合了夫妻双方的姓氏"
+     }
+    ],
+    "order": "将 in most cases 提到句首，更符合中文习惯。",
+    "sum": "大多数情况下，新娘会采用一个结合了夫妻双方姓氏的名字。",
+    "cmp": "意思一样。书上也是把「在大多数情况下」放在句首，而且最后说成「结合夫妻姓氏的名字」，比我更紧凑。"
+   }
+  },
+  "By nature, Americans are enthusiastic and energetic about hobbies or pastimes.": {
+   "ph": [
+    {
+     "t": "By nature",
+     "b": "by nature",
+     "m": "天生，本质上"
+    },
+    {
+     "t": "enthusiastic",
+     "b": "be enthusiastic about",
+     "m": "对……热情"
+    },
+    {
+     "t": "about",
+     "b": "be enthusiastic about",
+     "m": "对……热情"
+    }
+   ]
+  },
+  "But the club also acts as a recreation center and safe haven for teenagers, with video games readily available.": {
+   "ph": [
+    {
+     "t": "acts as",
+     "b": "act as",
+     "m": "充当，作为"
+    },
+    {
+     "t": "safe haven",
+     "b": "safe haven",
+     "m": "避风港"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "But the club also acts as a recreation center and safe haven for teenagers",
+      "s": "act 你可能只会翻成「表演」，放到 acts as 里就变成「充当、起……的作用」。as 后面有两个名词用 and 连着：a recreation center 和 safe haven，都是俱乐部的角色。safe haven 字面是「安全的港口」，说成「避风港」。\n→ 但这个俱乐部同时也是青少年的娱乐中心和避风港"
+     },
+     {
+      "t": "with video games readily available",
+      "s": "你多半会翻成「和电子游戏随时可用在一起」。念一遍，是不是不知所云？with 后面跟「名词 + 形容词」，要把它想成：with 前面的情形再加上「电子游戏随手可得」，也就是一句补充的话。readily available 就是「随时可以得到」。因为是补充，中文可以另起一个小句，说成「在那里，他们……」。\n→ 在那里，电子游戏随手可得"
+     }
+    ],
+    "order": "with 那一块是补充说明，放在最后，中文也可以顺着往后说，不用挪。",
+    "sum": "但这个俱乐部同时也是青少年的娱乐中心和避风港，那里随时都有电子游戏可玩。",
+    "cmp": "书上把 with 译成括号里的「（在那里）他们随时可以玩电子游戏」，补了个主语「他们」，这样读起来更顺。我的说法差不多。"
+   }
+  },
+  "When I apologise, I usually choose in-person first, or a phone conversation as my top alternative, and maybe a handwritten note next.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "When I apologise, I usually choose in-person first",
+      "s": "你多半会翻成「我通常选择亲自第一」。念一遍，in-person 单独放在 choose 后面，像没写完？这里省略了一个名词，补回去是 choose in-person (apology)，就是「当面道歉」。first 是「首先」，放在句尾，翻译时提到前面。\n→ 当我道歉的时候，我通常首选当面道歉"
+     },
+     {
+      "t": "or a phone conversation as my top alternative",
+      "s": "alternative 你可能只认识「替代品」，这里是「选择」。as my top alternative：作为我最优先的选择。这一块和前面的 in-person 是并列的两个选项。\n→ 或者把电话交谈作为首选"
+     },
+     {
+      "t": "and maybe a handwritten note next",
+      "s": "这个 a handwritten note 前面也省略了 choose。补回去：我可能会选一张手写便条，作为接下来的方式。next 是「其次」。\n→ 其次可能是手写便条"
+     }
+    ],
+    "order": "first 和 next 在英文里放句尾，中文要提到前面当「首选」「其次」。",
+    "sum": "我道歉时，通常首选当面，或者电话交谈，其次可能是写一张便条。",
+    "cmp": "书上也是「首选……其次……」，和我的说法一样；它把 in-person 译成「面对面」，意思一样。"
+   }
+  },
+  "That doesn't control the cost of education; it just shifts it to taxpayers.": {
+   "ph": [
+    {
+     "t": "shifts",
+     "b": "shift … to",
+     "m": "把……转移给"
+    },
+    {
+     "t": "to",
+     "b": "shift … to",
+     "m": "把……转移给"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "That doesn't control the cost of education",
+      "s": "你多半会翻成「那不控制教育的成本」。意思没错，但 That 在这里是个「这个做法」的意思，翻成「那」太空。东西当主语，中文更习惯说「这样做并不能……」。control 在这里是「控制、压低」。\n→ 这样做并不能控制教育成本"
+     },
+     {
+      "t": "it just shifts it to taxpayers",
+      "s": "这里有两个 it。先看第二个 it 是谁，放回去试：shifts the cost of education 到纳税人身上——对；shifts education 到纳税人？不通。所以是「成本」。看到 shift 别急，眼睛往后找 to：shift A to B，把 A 转移给 B。just 在这里是「只不过」。\n→ 只是把它转嫁给了纳税人"
+     }
+    ],
+    "sum": "这样做并不能控制教育成本，只是把成本转嫁给了纳税人。",
+    "cmp": "意思一样。书上「它……把它」两个代词都保留了，读起来有点绕；我把第二个 it 直接换成「成本」，更清楚。"
+   }
+  },
+  "Thank you for your swift reply.": {
+   "ph": [
+    {
+     "t": "Thank you for",
+     "b": "thank sb. for sth.",
+     "m": "感谢你……"
+    }
+   ]
+  },
+  "Leah shed the safety of her accounting job and made the switch complete.": {
+   "ph": [
+    {
+     "t": "made the switch",
+     "b": "make the switch",
+     "m": "完成转变"
+    }
+   ]
+  },
+  "Students' test-form preferences vary, too, often depending on the subject and course difficulty.": {
+   "ph": [
+    {
+     "t": "depending on",
+     "b": "depend on",
+     "m": "取决于"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Students' test-form preferences vary, too",
+      "s": "你多半会翻成「学生的测试形式偏好也不同」，意思对，但 preferences 是名词，堆在一起读起来很硬。换成动词：「学生喜欢哪种考试形式」，再接 vary。vary 就是「各不相同」。too 夹在中间，翻成「也」放到句子里。\n→ 学生喜欢的考试形式也各不相同"
+     },
+     {
+      "t": "often depending on the subject and course difficulty",
+      "s": "depending on 是 -ing 开头，前面有逗号，说明是补充说明，前面那句话的情形是怎样的。depend on 就是「取决于」，the subject and course difficulty 是并列的两样：科目，还有课程的难度。often 是「通常」。\n→ 通常取决于科目和课程难度"
+     }
+    ],
+    "sum": "学生喜欢的考试形式也各不相同，通常取决于科目和课程的难度。",
+    "cmp": "意思一样。书上保留了「偏好」，比较书面；我换成了「喜欢的」，更口语。"
+   }
+  },
+  "Jeans are available in a greater variety in America.": {
+   "ph": [
+    {
+     "t": "are available",
+     "b": "be available",
+     "m": "可以买到"
+    }
+   ]
+  },
+  "Children's personality characteristics are invariably determined by their mothers.": {
+   "ph": [
+    {
+     "t": "determined by",
+     "b": "be determined by",
+     "m": "由……决定"
+    }
+   ]
+  },
+  "Trying to live up to the images of \"perfect\" models and movie heroes has a dark side.": {
+   "ph": [
+    {
+     "t": "live up to",
+     "b": "live up to",
+     "m": "达到（标准、期望），追求"
+    },
+    {
+     "t": "a dark side",
+     "b": "a dark side",
+     "m": "阴暗面"
+    }
+   ]
+  },
+  "They did not raise much due to modest targets.": {
+   "ph": [
+    {
+     "t": "due to",
+     "b": "due to",
+     "m": "由于"
+    }
+   ]
+  },
+  "The majority of earnest people are trying to get on in life.": {
+   "ph": [
+    {
+     "t": "The majority of",
+     "b": "the majority of",
+     "m": "大多数"
+    },
+    {
+     "t": "get on in life",
+     "b": "get on in life",
+     "m": "在生活中过得好，取得进步"
+    }
+   ]
   }
+ }
 }

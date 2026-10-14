@@ -1,411 +1,577 @@
 {
-  "_note": "例句词组与语法解析（书外补充，AI 生成）",
-  "sents": {
-    "Given this, the future for the region's poor doesn't look nearly as bright as it once did.": {
-      "ph": [
-        {"t": "nearly as bright as", "b": "not nearly as … as", "m": "远不如……那么，不像……那么"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Given this", "r": "状语"},
-          {"t": ", ", "r": ""},
-          {"t": "the future for the region's poor doesn't look nearly as bright", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "as it once did", "r": "状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "the region's poor 是 the + 形容词，指一类人，等于「该地区的穷人」，所以书上直接译成名词「穷人」。",
-          "not nearly as … as 是比较结构：第一个 as 在主干里，as it once did 是比较状语从句，did 代替前面的 look bright，书上补全成「不像以前那么光明」。",
-          "Given this 是过去分词作介词用，相当于「鉴于」，放在句首交代前提，书上也放在句首译成「鉴于此」。"
-        ],
-        "lit": "鉴于此，该地区穷人的未来看起来远不如它曾经那样光明。"
-      }
-    },
-    "For his part, Wang said that in his own experience, losing did light a motivating fire.": {
-      "an": {
-        "parts": [
-          {"t": "For his part", "r": "状语"},
-          {"t": ", ", "r": ""},
-          {"t": "Wang said", "r": "主干"},
-          {"t": " that ", "r": ""},
-          {"t": "in his own experience", "r": "插入语"},
-          {"t": ", ", "r": ""},
-          {"t": "losing did light a motivating fire", "r": "宾语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "宾语从句里 did light 的 did 是助动词，用来加强语气（强调 light 这个动作），所以书上加上「确实」。",
-          "in his own experience 夹在 that 和从句主语之间，是插入语，书上把它提到从句前面译成「从他自己的经历来看」。",
-          "losing 是动名词作从句主语，书上译成名词性的「失败」；motivating 是现在分词作定语，修饰 fire，译成前置的「激励人心的」。"
-        ],
-        "lit": "就他而言，王说，在他自己的经历中，失败确实点亮了一团激励人的火。"
-      }
-    },
-    "One converts sunlight into energy and the other has to eat food to make its energy.": {
-      "ph": [
-        {"t": "converts", "b": "convert … into", "m": "把……转化为"},
-        {"t": "into", "b": "convert … into", "m": "把……转化为"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "One converts sunlight into energy", "r": "并列分句"},
-          {"t": " and ", "r": ""},
-          {"t": "the other has to eat food to make its energy", "r": "并列分句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "One … the other 是「两者中一个……另一个……」的分指结构，and 连接两个并列分句，书上译成「一种……另一种……」。",
-          "to make its energy 是不定式作目的状语，说明 eat food 的目的，书上译成「来产生」。",
-          "convert A into B 被 sunlight 隔开，A 是 sunlight，B 是 energy，书上译成「将阳光转化为能量」。"
-        ],
-        "lit": "一个把阳光转变成能量，而另一个必须吃食物来制造它的能量。"
-      }
-    },
-    "From sunrise to sunset, my father, my younger brother and I cut the weeds in the very large yards.": {
-      "ph": [
-        {"t": "From", "b": "from … to …", "m": "从……到……"},
-        {"t": "to", "b": "from … to …", "m": "从……到……"}
-      ]
-    },
-    "You should have made that clear right at the outset.": {
-      "ph": [
-        {"t": "made", "b": "make … clear", "m": "说清楚"},
-        {"t": "clear", "b": "make … clear", "m": "说清楚"},
-        {"t": "at the outset", "b": "at the outset", "m": "一开始"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "You should have made that clear", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "right at the outset", "r": "状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "should have + 过去分词表示「本应该做而没做」，带责备或遗憾；书上译成「你应该……说清楚」，语气里的责备要靠语境体会。",
-          "made that clear 是 make + 宾语 + 形容词补足语（使 that 清楚），搭配 make … clear，书上译成「说清楚」；right 加强 at the outset，译成「一开始就」。"
-        ],
-        "lit": "你本应该在最开始的时候就把那件事弄清楚。"
-      }
-    },
-    "At dawn on July 16, 1945, the atomic bomb was set off.": {
-      "ph": [
-        {"t": "At dawn", "b": "at dawn", "m": "黎明时"},
-        {"t": "set off", "b": "set off", "m": "引爆"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "At dawn on July 16, 1945", "r": "时间状语"},
-          {"t": ", ", "r": ""},
-          {"t": "the atomic bomb was set off", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "was set off 是被动，直译「被引爆」；原子弹爆炸时没必要交代谁引爆，书上译成主动的「原子弹爆炸了」。",
-          "句首 At dawn on July 16, 1945 是时间状语（由小到大叠加：时刻 + 日期），书上同样放在句首，译成「1945 年 7 月 16 日黎明时分」，顺序按中文习惯从大到小。"
-        ],
-        "lit": "在 1945 年 7 月 16 日的黎明，原子弹被引爆了。"
-      }
-    },
-    "Cultural differences often tear apart a family built on romantic love.": {
-      "ph": [
-        {"t": "tear apart", "b": "tear apart", "m": "使破裂"},
-        {"t": "built on", "b": "be built on", "m": "建立在……基础上"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Cultural differences often tear apart a family", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "built on romantic love", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "主语 Cultural differences 是无生命名词，直译「文化差异撕开家庭」生硬；书上加「使」，译成「文化差异常常使……家庭破裂」。",
-          "built on romantic love 是过去分词短语作后置定语，修饰 a family（家庭是被建立的），书上前置成「建立在浪漫爱情基础上的家庭」。"
-        ],
-        "lit": "文化差异经常撕裂一个建立在浪漫爱情上的家庭。"
-      }
-    },
-    "There is a heated debate regarding whether the university's canteens should be open to the public.": {
-      "ph": [
-        {"t": "open to", "b": "be open to", "m": "向……开放"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "There is a heated debate", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "regarding whether the university's canteens should be open to the public", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "There is a heated debate 是 there be 句型，debate 是名词，书上把它转成动词，译成「人们展开了激烈的争论」。",
-          "regarding 是由现在分词转成的介词，意为「关于」；它的宾语是 whether 引导的从句，所以这是介词后接宾语从句，书上先译「关于……是否……」再接主句。"
-        ],
-        "lit": "有一场关于大学食堂是否应该向公众开放的激烈争论。"
-      }
-    },
-    "The candidate was productive, or intelligent, or a solid scientist or something that's clearly solid praise.": {
-      "an": {
-        "parts": [
-          {"t": "The candidate was productive, or intelligent, or a solid scientist or something", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that's clearly solid praise", "r": "定语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "was 后面有四个并列表语（productive、intelligent、a solid scientist、something …），用 or 连接，书上译成「要么……要么……或者……」。",
-          "that's clearly solid praise 是定语从句：先行词是 something，that 在从句中作主语（that is …），书上前置成「明显值得高度称赞的东西」。",
-          "solid 出现两次意思不同：a solid scientist 是「可靠的」，solid praise 是「扎实的、高度的」称赞，书上分别译成「可靠的」「高度称赞」。"
-        ],
-        "lit": "这位候选人是多产的，或者聪明的，或者一个可靠的科学家，或者某种明显是扎实的称赞的东西。"
-      }
-    },
-    "A dry mouth may reduce taste sensitivity, but taste is restored by drinking fluids.": {
-      "an": {
-        "parts": [
-          {"t": "A dry mouth may reduce taste sensitivity", "r": "主干"},
-          {"t": ", but ", "r": ""},
-          {"t": "taste is restored by drinking fluids", "r": "并列分句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "A dry mouth 是「形容词 + 名词」作主语，指口干这一状况，而不是一个人；书上把它译成主谓式的「口干」。",
-          "taste sensitivity 是名词叠加，书上译成「味觉的敏感度」。",
-          "taste is restored by drinking fluids 是被动；by + 动名词表示方式，书上译成「通过饮用液体可以恢复味觉」，把被动转成主动、by 译成「通过」。"
-        ],
-        "lit": "口干可能降低味觉敏感度，但是味觉被饮用液体恢复。"
-      }
-    },
-    "The difference lies in what's in the globules and what's in the surrounding liquid.": {
-      "ph": [
-        {"t": "lies in", "b": "lie in", "m": "在于"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "The difference lies in ", "r": "主干"},
-          {"t": "what's in the globules and what's in the surrounding liquid", "r": "宾语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "介词 in 后面接了两个 what 引导的并列从句，作 in 的宾语；what 在各自从句中作主语（what is in …），相当于「……的东西」。",
-          "所以书上把 what's in the globules 译成「液滴中的物质」，what's in the surrounding liquid 译成「周围液体中的物质」。",
-          "surrounding 是现在分词作定语，修饰 liquid，译成前置的「周围的」。"
-        ],
-        "lit": "区别在于在液滴里的东西和在周围液体里的东西。"
-      }
-    },
-    "A new batch of young women has been entering the workforce for the past decade.": {
-      "ph": [
-        {"t": "batch of", "b": "a batch of", "m": "一批"},
-        {"t": "entering the workforce", "b": "enter the workforce", "m": "进入劳动大军"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "A new batch of young women has been entering the workforce", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "for the past decade", "r": "时间状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "has been entering 是现在完成进行时，加上 for the past decade，表示动作从十年前持续到现在，书上译成「在过去的十年里……加入」。",
-          "主语的中心词是单数 batch（一批），不是 women，所以谓语用 has；书上译成「一批新的年轻女性」。"
-        ],
-        "lit": "一批新的年轻女性在过去十年里一直在进入劳动力队伍。"
-      }
-    },
-    "What is the absolute maximum you can afford to pay?": {
-      "ph": [
-        {"t": "afford to pay", "b": "afford to do", "m": "负担得起支付"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "What is the absolute maximum", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "you can afford to pay", "r": "定语从句"},
-          {"t": "?", "r": ""}
-        ],
-        "pts": [
-          "you can afford to pay 是省略了关系词的定语从句：先行词是 maximum，省略的 that / which 在从句中作 pay 的宾语（pay the maximum）。",
-          "整句问的是「最大值是多少」，书上把 What is the absolute maximum 转成「你最多能出多少钱」，把名词 maximum 化成副词「最多」，pay 的宾语补成「多少钱」。"
-        ],
-        "lit": "你能负担得起支付的绝对最大值是什么？"
-      }
-    },
-    "The different shapes of the containers suggest they were used to brew, filter, and store beer.": {
-      "ph": [
-        {"t": "were used to", "b": "be used to do", "m": "被用来做"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "The different shapes of the containers suggest", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "they were used to brew, filter, and store beer", "r": "宾语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "suggest 后面省略了 that，they were used … 是宾语从句；主语 shapes 是无生命名词，书上译成「……表明」，不是「形状建议」。",
-          "were used to 后面接动词原形 brew，是「被用来做」；不要和 be used to + 名词 / 动名词（习惯于）混淆，所以书上译成「被用来酿造、过滤和储存」。",
-          "brew、filter、store 三个动词并列，共用 were used to，书上按顺序译成三个动作。"
-        ],
-        "lit": "容器的不同形状暗示它们被用来酿造、过滤和储存啤酒。"
-      }
-    },
-    "To help prevent headaches, drink plenty of water, and avoid alcohol and coffee.": {
-      "ph": [
-        {"t": "plenty of", "b": "plenty of", "m": "大量的"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "To help prevent headaches", "r": "目的状语"},
-          {"t": ", ", "r": ""},
-          {"t": "drink plenty of water, and avoid alcohol and coffee", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "To help prevent headaches 是不定式作目的状语，放在句首，书上译成「为了帮助预防头疼」。",
-          "主干是两个并列的祈使句 drink … and avoid …，省略了主语 you；avoid 本身含否定意思，书上译成「不要喝」。"
-        ],
-        "lit": "为了帮助预防头痛，喝大量的水，并且避开酒精和咖啡。"
-      }
-    },
-    "A smaller vessel would have capsized.": {
-      "an": {
-        "parts": [
-          {"t": "A smaller vessel would have capsized", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "would have + 过去分词表示对过去的假设，是虚拟语气；条件没有用 if 写出来，而是含在主语 A smaller vessel 里（相当于 if it had been a smaller vessel）。",
-          "所以这句不是在叙述事实，而是说「（换成）小一点的船就会翻」，书上译成「小一点的船可能会倾覆」。"
-        ],
-        "lit": "一艘更小的船本会倾覆。"
-      }
-    },
-    "He took shelter under a tree and was struck by lightning.": {
-      "ph": [
-        {"t": "took shelter", "b": "take shelter", "m": "躲避"},
-        {"t": "was struck by", "b": "be struck by", "m": "被……击中"}
-      ]
-    },
-    "He looked up at his father, his features overflowing with energy and delight.": {
-      "ph": [
-        {"t": "looked up at", "b": "look up at", "m": "抬头看"},
-        {"t": "overflowing with", "b": "overflow with", "m": "洋溢着"}
-      ]
-    },
-    "It may highlight your inability to delegate effectively.": {
-      "ph": [
-        {"t": "inability to delegate", "b": "inability to do", "m": "无法做某事"}
-      ]
-    },
-    "The rest of the energy savings comes from the solar units.": {
-      "ph": [
-        {"t": "The rest of", "b": "the rest of", "m": "其余的"},
-        {"t": "comes from", "b": "come from", "m": "来自"}
-      ]
-    },
-    "The picture was at a slight angle.": {
-      "ph": [
-        {"t": "at a slight angle", "b": "at an angle", "m": "倾斜"}
-      ]
-    },
-    "The street lights go on at dusk.": {
-      "ph": [
-        {"t": "go on", "b": "go on", "m": "亮起来"},
-        {"t": "at dusk", "b": "at dusk", "m": "黄昏时"}
-      ]
-    },
-    "Every table had been set with fine china and crystal.": {
-      "ph": [
-        {"t": "been set with", "b": "be set with", "m": "摆放着"}
-      ]
-    },
-    "She keeps a supply of candles in the house in case of power failure.": {
-      "ph": [
-        {"t": "a supply of", "b": "a supply of", "m": "一批储备"},
-        {"t": "in case of", "b": "in case of", "m": "以防"}
-      ]
-    },
-    "Small schools consolidated into larger ones, meaning more students were farther away from home.": {
-      "ph": [
-        {"t": "consolidated into", "b": "consolidate into", "m": "合并成"},
-        {"t": "away from", "b": "away from", "m": "远离"}
-      ]
-    },
-    "The bulk of the world's languages use base-10, base-20 or base-5 number systems.": {
-      "ph": [
-        {"t": "The bulk of", "b": "the bulk of", "m": "大部分"}
-      ]
-    },
-    "Many of them buy things on impulse.": {
-      "ph": [
-        {"t": "on impulse", "b": "on impulse", "m": "冲动地"}
-      ]
-    },
-    "Prices fluctuate in response to harvests.": {
-      "ph": [
-        {"t": "in response to", "b": "in response to", "m": "随着……而"}
-      ]
-    },
-    "She was bleeding from her face and hands.": {
-      "ph": [
-        {"t": "bleeding from", "b": "bleed from", "m": "从……流血"}
-      ]
-    },
-    "Leave the dishes to drain.": {
-      "ph": [
-        {"t": "Leave", "b": "leave sth. to do", "m": "让……自行做"},
-        {"t": "to", "b": "leave sth. to do", "m": "让……自行做"}
-      ]
-    },
-    "Leave the apricots to soak for 20 minutes.": {
-      "ph": [
-        {"t": "Leave", "b": "leave sth. to do", "m": "让……自行做"},
-        {"t": "to", "b": "leave sth. to do", "m": "让……自行做"}
-      ]
-    },
-    "Most countries impose some sort of tax on alcohol and tobacco.": {
-      "ph": [
-        {"t": "impose", "b": "impose … on", "m": "对……征收"},
-        {"t": "some sort of", "b": "some sort of", "m": "某种"},
-        {"t": "on", "b": "impose … on", "m": "对……征收"}
-      ]
-    },
-    "People should pay more attention to the danger of drunk driving.": {
-      "ph": [
-        {"t": "pay more attention to", "b": "pay attention to", "m": "注意"}
-      ]
-    },
-    "The method for making beer has changed over time.": {
-      "ph": [
-        {"t": "over time", "b": "over time", "m": "随着时间的推移"}
-      ]
-    },
-    "They will find they have something in common.": {
-      "ph": [
-        {"t": "have something in common", "b": "have sth. in common", "m": "有共同点"}
-      ]
-    },
-    "I'll put the kettle on and make some tea.": {
-      "ph": [
-        {"t": "put", "b": "put … on", "m": "烧上（水）"},
-        {"t": "on", "b": "put … on", "m": "烧上（水）"}
-      ]
-    },
-    "The liquor is not for sale in many countries.": {
-      "ph": [
-        {"t": "for sale", "b": "for sale", "m": "出售"}
-      ]
-    },
-    "She went to the doctor complaining of dizzy spells.": {
-      "ph": [
-        {"t": "complaining of", "b": "complain of", "m": "诉说（病痛）"}
-      ]
-    },
-    "The Chinese doctor took my pulse and asked to see my tongue.": {
-      "ph": [
-        {"t": "took my pulse", "b": "take one's pulse", "m": "把脉"}
-      ]
+ "_note": "例句词组与语法解析（书外补充，AI 生成）",
+ "sents": {
+  "Given this, the future for the region's poor doesn't look nearly as bright as it once did.": {
+   "ph": [
+    {
+     "t": "nearly as bright as",
+     "b": "not nearly as … as",
+     "m": "远不如……那么，不像……那么"
     }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Given this",
+      "s": "你多半会翻成「给定这个」。念一遍，是不是像在做数学题？这里的 Given 是介词，意思是「考虑到、鉴于」，后面跟的是理由。\n→ 鉴于此"
+     },
+     {
+      "t": "the future for the region's poor",
+      "s": "the region's poor 你可能翻成「该地区的穷」，缺了个名词。the 加形容词，指的是一类人，the poor 就是「穷人」。for 在这里别翻成「为了」，就是「穷人的未来」。\n→ 该地区穷人的未来"
+     },
+     {
+      "t": "doesn't look nearly as bright as it once did",
+      "s": "你多半会翻成「看起来几乎和以前一样光明」。放回去想想：整句是在说前景不好，「几乎一样」对不上。not nearly as … as 是一个整体，意思是「远不如……」，nearly 前面有 not，不是「几乎」。最后的 did 是替身，替的是 looked bright，不用重复。it 指谁？放回去试：the future once looked bright，说得通；the region's poor once looked bright（穷人看起来光明），说不通。所以 it 是 the future。\n→ 远不如以前光明"
+     }
+    ],
+    "order": "英文是「未来……不如以前光明」，顺着翻就行；只要把「鉴于此」放在最前面，别漏掉 not nearly 的「远」。",
+    "sum": "鉴于此，该地区穷人的未来远不如过去光明。",
+    "cmp": "书上译成「不像以前那么光明」，意思对，但「远」没有译出来；not nearly 比 not 的程度重，所以我加了「远」。"
+   }
+  },
+  "For his part, Wang said that in his own experience, losing did light a motivating fire.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "For his part, Wang said that",
+      "s": "你多半会翻成「为了他的部分，王说」。念一遍，不知所云吧？for one's part 是固定说法，意思是「就某人而言、至于某人」，放在句首，表示接下来是他自己的看法。\n→ 就他而言，王说"
+     },
+     {
+      "t": "in his own experience",
+      "s": "这块照字面翻就行。own 是加强语气的，「他自己的」。\n→ 根据他自己的经历"
+     },
+     {
+      "t": "losing did light",
+      "s": "你多半会翻成「失败做了点亮」。did 不是「做」，肯定句里 did 后面跟原形动词，是加强语气，翻成「确实」。losing 是 -ing 开头当主语，就是「失败」这件事。light 也要小心，这里是动词，「点燃」，不是名词「光」。\n→ 失败确实点燃了"
+     },
+     {
+      "t": "a motivating fire",
+      "s": "你可能翻成「一个激励的火」。motivating 是「起激励作用的」，修饰 fire。火在这里是比喻，指心里的斗志。\n→ 一团激励人心的火"
+     }
+    ],
+    "sum": "就他而言，王说根据他自己的经历，失败确实会点燃一团激励人心的火。",
+    "cmp": "和书上基本一致，书上的「确实」就是 did 的意思；书上把 For his part 省掉了，没有译出来。"
+   }
+  },
+  "The picture was at a slight angle.": {
+   "ph": [
+    {
+     "t": "at a slight angle",
+     "b": "at an angle",
+     "m": "倾斜"
+    }
+   ]
+  },
+  "He took shelter under a tree and was struck by lightning.": {
+   "ph": [
+    {
+     "t": "took shelter",
+     "b": "take shelter",
+     "m": "躲避"
+    },
+    {
+     "t": "was struck by",
+     "b": "be struck by",
+     "m": "被……击中"
+    }
+   ]
+  },
+  "He looked up at his father, his features overflowing with energy and delight.": {
+   "ph": [
+    {
+     "t": "looked up at",
+     "b": "look up at",
+     "m": "抬头看"
+    },
+    {
+     "t": "overflowing with",
+     "b": "overflow with",
+     "m": "洋溢着"
+    }
+   ]
+  },
+  "It may highlight your inability to delegate effectively.": {
+   "ph": [
+    {
+     "t": "inability to delegate",
+     "b": "inability to do",
+     "m": "无法做某事"
+    }
+   ]
+  },
+  "The rest of the energy savings comes from the solar units.": {
+   "ph": [
+    {
+     "t": "The rest of",
+     "b": "the rest of",
+     "m": "其余的"
+    },
+    {
+     "t": "comes from",
+     "b": "come from",
+     "m": "来自"
+    }
+   ]
+  },
+  "One converts sunlight into energy and the other has to eat food to make its energy.": {
+   "ph": [
+    {
+     "t": "converts",
+     "b": "convert … into",
+     "m": "把……转化为"
+    },
+    {
+     "t": "into",
+     "b": "convert … into",
+     "m": "把……转化为"
+    }
+   ]
+  },
+  "From sunrise to sunset, my father, my younger brother and I cut the weeds in the very large yards.": {
+   "ph": [
+    {
+     "t": "From",
+     "b": "from … to …",
+     "m": "从……到……"
+    },
+    {
+     "t": "to",
+     "b": "from … to …",
+     "m": "从……到……"
+    }
+   ]
+  },
+  "You should have made that clear right at the outset.": {
+   "ph": [
+    {
+     "t": "made",
+     "b": "make … clear",
+     "m": "说清楚"
+    },
+    {
+     "t": "clear",
+     "b": "make … clear",
+     "m": "说清楚"
+    },
+    {
+     "t": "at the outset",
+     "b": "at the outset",
+     "m": "一开始"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "You should have made",
+      "s": "你可能会翻成「你应该做了」，然后就卡住了。should have done 是「本该做却没做」，带着一点责备的口气，所以整句是在说「你当时没做到」。make 先放一放，眼睛往后找 clear。\n→ 你本该……"
+     },
+     {
+      "t": "that clear",
+      "s": "找到了：make that clear，make 加宾语再加形容词，意思是「使那件事清楚」，也就是「把那件事说清楚」。你要是翻成「做那个清楚」就不通了。\n→ 把那件事说清楚"
+     },
+     {
+      "t": "right at the outset",
+      "s": "outset 你可能不认识，at the outset 就是「一开始」。right 放在前面是加强语气，「就在」、「一开始就」。\n→ 一开始就"
+     }
+    ],
+    "order": "「一开始就」要挪到「说清楚」前面，中文才顺：先交代什么时候，再说做什么。",
+    "sum": "你本该一开始就把这件事说清楚。",
+    "cmp": "书上译成「你应该一开始就说清楚」，意思一样，书上省略了 that 指的那件事；我把「应该」译成「本该」，是为了带出「当时没做」的责备意味。"
+   }
+  },
+  "At dawn on July 16, 1945, the atomic bomb was set off.": {
+   "ph": [
+    {
+     "t": "At dawn",
+     "b": "at dawn",
+     "m": "黎明时"
+    },
+    {
+     "t": "set off",
+     "b": "set off",
+     "m": "引爆"
+    }
+   ]
+  },
+  "The street lights go on at dusk.": {
+   "ph": [
+    {
+     "t": "go on",
+     "b": "go on",
+     "m": "亮起来"
+    },
+    {
+     "t": "at dusk",
+     "b": "at dusk",
+     "m": "黄昏时"
+    }
+   ]
+  },
+  "Cultural differences often tear apart a family built on romantic love.": {
+   "ph": [
+    {
+     "t": "tear apart",
+     "b": "tear apart",
+     "m": "使破裂"
+    },
+    {
+     "t": "built on",
+     "b": "be built on",
+     "m": "建立在……基础上"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Cultural differences often tear apart",
+      "s": "你多半会翻成「文化差异经常撕开一个家庭」。念一遍，是不是有点怪？差异又不是人，怎么会撕东西？英文爱让东西当主语，中文更习惯说「东西让人怎么样」。tear apart 是「撕裂」，家庭被撕裂，就是「破裂」。\n→ 文化差异常常使……破裂"
+     },
+     {
+      "t": "a family built on romantic love",
+      "s": "built 你可能当成谓语动词。数一数，句子已经有 tear apart 了，所以 built 不是谓语，是过去分词，在后面修饰 family，意思是「被建立起来的」。built on 就是「建立在……之上」。\n→ 建立在浪漫爱情基础上的家庭"
+     }
+    ],
+    "order": "英文是「家庭」在前、「建立在……上」在后，中文要把修饰成分提到「家庭」前面，再放在「破裂」前面：使建立在浪漫爱情基础上的家庭破裂。",
+    "sum": "文化差异常常使建立在浪漫爱情基础上的家庭破裂。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "Every table had been set with fine china and crystal.": {
+   "ph": [
+    {
+     "t": "been set with",
+     "b": "be set with",
+     "m": "摆放着"
+    }
+   ]
+  },
+  "She keeps a supply of candles in the house in case of power failure.": {
+   "ph": [
+    {
+     "t": "a supply of",
+     "b": "a supply of",
+     "m": "一批储备"
+    },
+    {
+     "t": "in case of",
+     "b": "in case of",
+     "m": "以防"
+    }
+   ]
+  },
+  "There is a heated debate regarding whether the university's canteens should be open to the public.": {
+   "ph": [
+    {
+     "t": "open to",
+     "b": "be open to",
+     "m": "向……开放"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "There is a heated debate",
+      "s": "你多半会翻成「那里有一场激烈的辩论」。there is 引出的句型，不翻「那里」，就是「有」。heated 本义是「加热的」，说争论时是「激烈的」。\n→ 有一场激烈的争论"
+     },
+     {
+      "t": "regarding whether",
+      "s": "看到 regarding，你可能把它当成动词，翻成「正在看待」。这里它是介词，意思是「关于」，后面的 whether 从句就是争论的内容。whether 是「是否」。\n→ 关于是否"
+     },
+     {
+      "t": "the university's canteens should be open to the public",
+      "s": "be open to 你可能翻成「对……打开」，太硬。be open to the public 就是「向公众开放」。canteens 是食堂。\n→ 大学食堂应该向公众开放"
+     }
+    ],
+    "order": "英文把争论放在前面，把内容放在后面；中文习惯先交代「关于……」，所以把「关于是否……」提到前面，再接「人们展开激烈的争论」。",
+    "sum": "关于大学食堂是否应该向公众开放，目前争论得很激烈。",
+    "cmp": "书上译成「人们展开了激烈的争论」，加了「人们」做主语，比「有一场争论」更顺；我用「争论得很激烈」，意思相同。"
+   }
+  },
+  "She went to the doctor complaining of dizzy spells.": {
+   "ph": [
+    {
+     "t": "complaining of",
+     "b": "complain of",
+     "m": "诉说（病痛）"
+    }
+   ]
+  },
+  "Small schools consolidated into larger ones, meaning more students were farther away from home.": {
+   "ph": [
+    {
+     "t": "consolidated into",
+     "b": "consolidate into",
+     "m": "合并成"
+    },
+    {
+     "t": "away from",
+     "b": "away from",
+     "m": "远离"
+    }
+   ]
+  },
+  "A dry mouth may reduce taste sensitivity, but taste is restored by drinking fluids.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "A dry mouth may reduce taste sensitivity",
+      "s": "你多半会翻成「一张干的嘴可能降低味觉敏感度」。念一遍，嘴还有干的？a dry mouth 是一个整体，就是「口干」。taste sensitivity 是两个名词连在一起，taste 修饰 sensitivity，「味觉的敏感度」。\n→ 口干可能会降低味觉的敏感度"
+     },
+     {
+      "t": "but taste is restored by drinking fluids",
+      "s": "你多半会翻成「味觉被通过喝液体而恢复」。被动加 by 又加 -ing，念着特别拗口。办法是：by 后面跟 -ing，翻成「通过做某事」，再把被动改主动，主语换成「喝液体」。fluids 是液体。\n→ 但喝些液体就能恢复味觉"
+     }
+    ],
+    "order": "英文是「味觉被恢复，通过喝液体」，中文把方式提到前面、改成主动：通过喝液体，味觉能恢复。",
+    "sum": "口干可能会降低味觉的敏感度，但多喝点液体，味觉就能恢复。",
+    "cmp": "书上译成「通过饮用液体可以恢复味觉」，意思一样，我把「通过……」改成了更口语的「多喝点……就能」。"
+   }
+  },
+  "The difference lies in what's in the globules and what's in the surrounding liquid.": {
+   "ph": [
+    {
+     "t": "lies in",
+     "b": "lie in",
+     "m": "在于"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The difference lies in",
+      "s": "lies 你多半会翻成「躺着」。lie in 是固定搭配，「在于」。不是说差别躺在某个地方，而是说差别就在后面这两样东西上。\n→ 区别在于"
+     },
+     {
+      "t": "what's in the globules",
+      "s": "你可能把 what 当疑问词，翻成「什么在液滴里」。放回去念念，这不是问句。what 在这里的意思是「……的东西」，what's 就是 what is。globules 是小液滴。\n→ 液滴里的东西"
+     },
+     {
+      "t": "and what's in the surrounding liquid",
+      "s": "and 连的是前后两个 what 开头的块，它们都是 in 后面的内容。surrounding 你可能翻成「正在环绕的」，说白了就是「周围的」。\n→ 和周围液体里的东西"
+     }
+    ],
+    "sum": "区别在于液滴里的东西和周围液体里的东西。",
+    "cmp": "和书上的意思一样，书上译成「液滴中的物质和周围液体中的物质」，把 what 译成「物质」，更书面一点。"
+   }
+  },
+  "The bulk of the world's languages use base-10, base-20 or base-5 number systems.": {
+   "ph": [
+    {
+     "t": "The bulk of",
+     "b": "the bulk of",
+     "m": "大部分"
+    }
+   ]
+  },
+  "A new batch of young women has been entering the workforce for the past decade.": {
+   "ph": [
+    {
+     "t": "batch of",
+     "b": "a batch of",
+     "m": "一批"
+    },
+    {
+     "t": "entering the workforce",
+     "b": "enter the workforce",
+     "m": "进入劳动大军"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "A new batch of young women",
+      "s": "你可能会奇怪：young women 是复数，为什么后面是 has 不是 have？放回去试：谓语跟着 batch，不是 women。a batch of 是「一批」，主语是「一批」。\n→ 一批新的年轻女性"
+     },
+     {
+      "t": "has been entering the workforce",
+      "s": "你多半会翻成「已经进入了劳动大军」，像是一次就完成了。has been entering 是现在完成进行时，意思是从过去一直持续到现在，所以要翻出「一直在」。workforce 是「劳动大军、劳动力」。\n→ 一直在进入劳动大军"
+     },
+     {
+      "t": "for the past decade",
+      "s": "这块照字面翻就行。for 加一段时间，配现在完成的时态，the past decade 就是「过去十年」。\n→ 在过去十年里"
+     }
+    ],
+    "order": "英文把时间放在最后，中文习惯把时间提到动作前面：「在过去十年里，一批……一直在进入……」。",
+    "sum": "在过去十年里，一批批新的年轻女性一直在进入劳动大军。",
+    "cmp": "书上译成「一批新的年轻女性加入了劳动大军」，把「一直在」译成了「加入了」，丢了持续的意思；我保留了 has been entering 的持续感。"
+   }
+  },
+  "What is the absolute maximum you can afford to pay?": {
+   "ph": [
+    {
+     "t": "afford to pay",
+     "b": "afford to do",
+     "m": "负担得起支付"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "What is the absolute maximum",
+      "s": "你多半会翻成「什么是绝对的最大值」。念一遍，像数学题。这里是在问数额：absolute 是加强语气，maximum 是「最高限度」，合起来就是「最多是多少」。\n→ 最高限度到底是多少"
+     },
+     {
+      "t": "you can afford to pay",
+      "s": "maximum 后面直接跟了 you，中间没有连词，这是省略了 that：the maximum (that) you can afford to pay，「你能付得起的最高额」。afford to do 是「负担得起做某事」，你要是翻成「给得起支付」就别扭了。\n→ 你能付得起的"
+     }
+    ],
+    "order": "「你能付得起的」是修饰 maximum 的，要挪到前面：你能付得起的最高限度是多少。",
+    "sum": "你能付得起的最高价是多少？",
+    "cmp": "书上译成「你最多能出多少钱？」，比我更口语，意思一样。"
+   }
+  },
+  "The Chinese doctor took my pulse and asked to see my tongue.": {
+   "ph": [
+    {
+     "t": "took my pulse",
+     "b": "take one's pulse",
+     "m": "把脉"
+    }
+   ]
+  },
+  "Many of them buy things on impulse.": {
+   "ph": [
+    {
+     "t": "on impulse",
+     "b": "on impulse",
+     "m": "冲动地"
+    }
+   ]
+  },
+  "Prices fluctuate in response to harvests.": {
+   "ph": [
+    {
+     "t": "in response to",
+     "b": "in response to",
+     "m": "随着……而"
+    }
+   ]
+  },
+  "She was bleeding from her face and hands.": {
+   "ph": [
+    {
+     "t": "bleeding from",
+     "b": "bleed from",
+     "m": "从……流血"
+    }
+   ]
+  },
+  "Leave the dishes to drain.": {
+   "ph": [
+    {
+     "t": "Leave",
+     "b": "leave sth. to do",
+     "m": "让……自行做"
+    },
+    {
+     "t": "to",
+     "b": "leave sth. to do",
+     "m": "让……自行做"
+    }
+   ]
+  },
+  "Leave the apricots to soak for 20 minutes.": {
+   "ph": [
+    {
+     "t": "Leave",
+     "b": "leave sth. to do",
+     "m": "让……自行做"
+    },
+    {
+     "t": "to",
+     "b": "leave sth. to do",
+     "m": "让……自行做"
+    }
+   ]
+  },
+  "The different shapes of the containers suggest they were used to brew, filter, and store beer.": {
+   "ph": [
+    {
+     "t": "were used to",
+     "b": "be used to do",
+     "m": "被用来做"
+    }
+   ]
+  },
+  "To help prevent headaches, drink plenty of water, and avoid alcohol and coffee.": {
+   "ph": [
+    {
+     "t": "plenty of",
+     "b": "plenty of",
+     "m": "大量的"
+    }
+   ]
+  },
+  "The liquor is not for sale in many countries.": {
+   "ph": [
+    {
+     "t": "for sale",
+     "b": "for sale",
+     "m": "出售"
+    }
+   ]
+  },
+  "People should pay more attention to the danger of drunk driving.": {
+   "ph": [
+    {
+     "t": "pay more attention to",
+     "b": "pay attention to",
+     "m": "注意"
+    }
+   ]
+  },
+  "The method for making beer has changed over time.": {
+   "ph": [
+    {
+     "t": "over time",
+     "b": "over time",
+     "m": "随着时间的推移"
+    }
+   ]
+  },
+  "Most countries impose some sort of tax on alcohol and tobacco.": {
+   "ph": [
+    {
+     "t": "impose",
+     "b": "impose … on",
+     "m": "对……征收"
+    },
+    {
+     "t": "some sort of",
+     "b": "some sort of",
+     "m": "某种"
+    },
+    {
+     "t": "on",
+     "b": "impose … on",
+     "m": "对……征收"
+    }
+   ]
+  },
+  "They will find they have something in common.": {
+   "ph": [
+    {
+     "t": "have something in common",
+     "b": "have sth. in common",
+     "m": "有共同点"
+    }
+   ]
+  },
+  "I'll put the kettle on and make some tea.": {
+   "ph": [
+    {
+     "t": "put",
+     "b": "put … on",
+     "m": "烧上（水）"
+    },
+    {
+     "t": "on",
+     "b": "put … on",
+     "m": "烧上（水）"
+    }
+   ]
   }
+ }
 }
