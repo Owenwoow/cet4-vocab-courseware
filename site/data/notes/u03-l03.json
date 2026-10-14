@@ -1,0 +1,499 @@
+{
+  "_note": "例句词组与语法解析（书外补充，AI 生成）",
+  "sents": {
+    "In most instances, there will be no need for further treatment.": {
+      "ph": [{"t": "no need for", "b": "no need for", "m": "不需要"}]
+    },
+    "He had withdrawn all the money from their joint account.": {
+      "ph": [{"t": "joint account", "b": "joint account", "m": "联名账户"}]
+    },
+    "I found some old photos at the back of the drawer.": {
+      "ph": [{"t": "at the back of", "b": "at the back of", "m": "在……的后部"}]
+    },
+    "They see a day in the not-too-distant future when all autos will be abandoned and allowed to rust.": {
+      "ph": [{"t": "allowed to", "b": "be allowed to do", "m": "被允许；任其"}],
+      "an": {
+        "parts": [
+          {"t": "They see a day in the not-too-distant future", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "when all autos will be abandoned and allowed to rust", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "when 引导定语从句，先行词是 a day（中间隔着 in the not-too-distant future），when 在从句里作时间状语；书上把 a day … future 合并译成「在不远的将来」，when 不再单独译出。",
+          "从句里 will be abandoned and allowed to rust 是两个并列的被动，共用 will be；书上前一个译成「被抛弃」，后一个 allowed to rust 译成「任其生锈」，不直译成「被允许生锈」。"
+        ],
+        "lit": "他们看到未来不太遥远的某一天，那时所有的汽车将被抛弃并被允许生锈。"
+      }
+    },
+    "Indoor pollution has remained constant over the past several decades.": {
+      "ph": [{"t": "over the past", "b": "over the past … years", "m": "在过去……期间"}]
+    },
+    "We must be consistent in applying the rules.": {
+      "ph": [{"t": "be consistent in", "b": "be consistent in", "m": "在……方面保持一致"}]
+    },
+    "The Internet is remarkable for the almost instantaneous speed at which it transmits information.": {
+      "ph": [{"t": "is remarkable for", "b": "be remarkable for", "m": "因……而显著"}],
+      "an": {
+        "parts": [
+          {"t": "The Internet is remarkable for the almost instantaneous speed", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "at which it transmits information", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "at which 引导定语从句，先行词是 speed，which 是介词 at 的宾语（it transmits information at the speed），整个 at which 在从句里作方式状语。",
+          "介词 + which 的定语从句，书上前置成「其传送信息的瞬时速度」，把 at 吸收掉，不再单独译。",
+          "be remarkable for 后面是名词短语，书上译成「……的显著特征就在于……」，把「因什么而显著」转成「特征在于」。"
+        ],
+        "lit": "互联网因几乎瞬时的速度而显著，它以这种速度传送信息。"
+      }
+    },
+    "It's not likely they will replace traditional textbooks.": {
+      "ph": [{"t": "It's not likely", "b": "it is not likely that", "m": "不太可能"}],
+      "an": {
+        "parts": [
+          {"t": "It's not likely", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "they will replace traditional textbooks", "r": "主语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "It 是形式主语，真正的主语是省略了 that 的从句 they will replace traditional textbooks；书上不译 it，直接译「它们不太可能取代……」。",
+          "not likely 是弱否定「不太可能」，不等于 impossible「不可能」，书上用「不太」对应。"
+        ],
+        "lit": "它们将取代传统教科书是不可能的。"
+      }
+    },
+    "It substitutes old information with new data.": {
+      "ph": [
+        {"t": "substitutes", "b": "substitute … with", "m": "用……代替"},
+        {"t": "with", "b": "substitute … with", "m": "用……代替"}
+      ]
+    },
+    "He has worked as a visiting lecturer for various educational institutions.": {
+      "ph": [
+        {"t": "worked as", "b": "work as", "m": "担任"},
+        {"t": "visiting lecturer", "b": "visiting lecturer", "m": "客座讲师"}
+      ]
+    },
+    "The British Constitution is to a large extent a product of the historical events described above.": {
+      "ph": [
+        {"t": "to a large extent", "b": "to a large extent", "m": "在很大程度上"},
+        {"t": "a product of", "b": "a product of", "m": "……的产物"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "The British Constitution is ", "r": "主干"},
+          {"t": "to a large extent", "r": "状语"},
+          {"t": " a product of the historical events", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "described above", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "described above 是过去分词短语，作 events 的后置定语，含被动义（被上文描述的事件）；书上前置成「上述历史事件」，省掉「被描述」。",
+          "to a large extent 插在系动词 is 和表语 a product 之间作状语，书上提到谓语前译成「在很大程度上是……的产物」。"
+        ],
+        "lit": "英国宪法在很大程度上是上面所描述的历史事件的一个产物。"
+      }
+    },
+    "Professors can give prompt feedback to students' homework.": {
+      "ph": [
+        {"t": "give", "b": "give feedback to", "m": "给予反馈"},
+        {"t": "feedback to", "b": "give feedback to", "m": "给予反馈"}
+      ]
+    },
+    "It may constitute a challenge to computer programmers.": {
+      "ph": [{"t": "a challenge to", "b": "a challenge to", "m": "对……的挑战"}]
+    },
+    "We must make an immediate response.": {
+      "ph": [{"t": "make an immediate response", "b": "make a response", "m": "作出反应"}]
+    },
+    "It is in no one's interest to keep a large segment of the population on the margins of society.": {
+      "ph": [
+        {"t": "in no one's interest", "b": "in one's interest", "m": "符合某人的利益"},
+        {"t": "a large segment of", "b": "a large segment of", "m": "一大部分"},
+        {"t": "on the margins of", "b": "on the margins of", "m": "在……的边缘"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "It is in no one's interest", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to keep a large segment of the population on the margins of society", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "It 是形式主语，真正的主语是后面的不定式短语 to keep …；书上把它放回句首作主语：「将一大部分人口留在社会边缘……」。",
+          "no one's 是 no + 名词的否定，否定落在 interest 的所有者上，书上译成「不符合任何人的利益」，不是「符合没有人的利益」。",
+          "keep + 宾语 + 介词短语（on the margins of society）是「使……处于某处」，书上译成「留在社会边缘」。"
+        ],
+        "lit": "保持人口的一大部分处在社会的边缘，不在任何人的利益之中。"
+      }
+    },
+    "The woman is fussy about the cleanness of the apartment.": {
+      "ph": [{"t": "is fussy about", "b": "be fussy about", "m": "对……挑剔"}]
+    },
+    "There was not a particle of evidence to support the case.": {
+      "ph": [{"t": "a particle of", "b": "not a particle of", "m": "丝毫"}],
+      "an": {
+        "parts": [
+          {"t": "There was not a particle of evidence", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to support the case", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "not a particle of 是强否定「一点也没有」，整个名词短语作 there be 的主语，书上译成「没有丝毫证据」。",
+          "to support the case 是不定式短语，作 evidence 的后置定语，书上译成「支持这个论点的证据」的意思，但顺序保持在后面：「没有丝毫证据支持……」。"
+        ],
+        "lit": "没有一点点证据来支持这个论点。"
+      }
+    },
+    "The thing that sets children apart from adults is not their ignorance, nor their lack of skills.": {
+      "ph": [
+        {"t": "sets", "b": "set … apart from", "m": "使区别于"},
+        {"t": "apart from", "b": "set … apart from", "m": "使区别于"},
+        {"t": "lack of", "b": "lack of", "m": "缺乏"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "The thing ", "r": "主干"},
+          {"t": "that sets children apart from adults", "r": "定语从句"},
+          {"t": " is not their ignorance, nor their lack of skills", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导定语从句，先行词是 The thing，that 在从句里作主语（that sets …）。",
+          "书上不把定语从句前置成「使孩子区别于成年人的东西」，而是把 the thing that sets A apart from B 压缩成名词「孩子和成年人的区别」，译得简洁。",
+          "not … nor … 是并列否定：不是 ignorance，也不是 lack of skills，书上译成「不是……也不是……」。"
+        ],
+        "lit": "使孩子区别于成年人的东西不是他们的无知，也不是他们缺乏技能。"
+      }
+    },
+    "Were they to arrive before we depart the day after tomorrow, we should have a wonderful dinner party.": {
+      "ph": [{"t": "the day after tomorrow", "b": "the day after tomorrow", "m": "后天"}],
+      "an": {
+        "parts": [
+          {"t": "Were they to arrive before we depart the day after tomorrow", "r": "条件状语"},
+          {"t": ", ", "r": ""},
+          {"t": "we should have a wonderful dinner party", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "Were they to arrive 是省略 if 的倒装，等于 If they were to arrive，were to do 表示对将来的假设（可能性不大）；主句 should have 是与之配套的虚拟语气。书上译成「如果他们能……」。",
+          "before we depart 是嵌在条件句里的时间状语从句，用一般现在时 depart 表示将来；书上译成「在后天我们离开之前」。"
+        ],
+        "lit": "如果他们要在我们后天离开之前到达，我们就应该有一场很棒的晚宴。"
+      }
+    },
+    "It is said that the math teacher seems partial towards bright students.": {
+      "ph": [
+        {"t": "It is said that", "b": "it is said that", "m": "据说"},
+        {"t": "partial towards", "b": "be partial to/towards", "m": "偏爱"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "It is said ", "r": "主干"},
+          {"t": "that the math teacher seems partial towards bright students", "r": "主语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "It 是形式主语，真正的主语是 that 引导的主语从句；It is said that … 是固定句式，书上译成主动的「据说」，而不是「它被说」。",
+          "seems partial towards 是「系动词 + 形容词 + 介词」，书上把 partial towards 译成动词「偏爱」，seems 译为「似乎」放在前面。"
+        ],
+        "lit": "它被说，数学老师似乎对聪明的学生偏心。"
+      }
+    },
+    "Students of different races are prejudiced against each other.": {
+      "ph": [
+        {"t": "are prejudiced against", "b": "be prejudiced against", "m": "对……有偏见"},
+        {"t": "each other", "b": "each other", "m": "彼此"}
+      ]
+    },
+    "If everyone around you has similar views, your work will suffer from confirmation bias.": {
+      "ph": [{"t": "suffer from", "b": "suffer from", "m": "受……影响；遭受"}],
+      "an": {
+        "parts": [
+          {"t": "If everyone around you has similar views", "r": "条件状语"},
+          {"t": ", ", "r": ""},
+          {"t": "your work will suffer from confirmation bias", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "If 条件状语从句用一般现在时 has，主句用 will，是对真实情况的推断，不是虚拟语气；书上译成「如果……就会……」。",
+          "around you 是介词短语，作 everyone 的后置定语，书上前置成「你周围的每个人」。",
+          "主语 your work 是无生命的事物，suffer from 在这里是「受到……的影响」，不直译成「遭受」，书上译成「你的工作就会受到确认偏见的影响」。"
+        ],
+        "lit": "如果你周围的每个人都有相似的观点，你的工作将遭受确认偏见。"
+      }
+    },
+    "This can result in severe penalties that continue long after punishment is completed.": {
+      "ph": [
+        {"t": "result in", "b": "result in", "m": "导致"},
+        {"t": "long after", "b": "long after", "m": "在……很久之后"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "This can result in severe penalties", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that continue long after punishment is completed", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导定语从句，先行词是 penalties，that 在从句里作主语（that continue …）。",
+          "书上没有前置成「持续很久的严重惩罚」，而是拆成后面的分句「并在刑罚结束后持续很长时间」，因为从句里还带着一个时间状语。",
+          "after punishment is completed 里 is completed 是被动，书上译成主动的「刑罚结束」。"
+        ],
+        "lit": "这可能导致严重的惩罚，这些惩罚在惩罚被完成之后很久仍然持续。"
+      }
+    },
+    "I don't think you realise the gravity of the situation.": {
+      "ph": [{"t": "the gravity of", "b": "the gravity of", "m": "……的严重性"}],
+      "an": {
+        "parts": [
+          {"t": "I don't think", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "you realise the gravity of the situation", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "I don't think + 从句是否定转移：否定词写在主句的 think 上，意思却是否定从句内容。所以书上译成「我认为你没有意识到」，不译成「我不认为你意识到」。",
+          "the gravity of the situation 是名词短语（gravity 的意思是严重性），书上译成「形势的严重性」。"
+        ],
+        "lit": "我不认为你意识到了形势的严重性。"
+      }
+    },
+    "The little girl was grieved by the death of her dog.": {
+      "ph": [{"t": "was grieved by", "b": "be grieved by", "m": "因……而伤心"}],
+      "an": {
+        "parts": [
+          {"t": "The little girl was grieved", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "by the death of her dog", "r": "原因状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "was grieved by 是被动，书上译成主动的形容词感受「她很伤心」，不用「被……使悲伤」。",
+          "the death of her dog 是名词化结构，书上展开成主谓句「狗狗死了」，并把原因放在前面：「小女孩的狗狗死了，她很伤心」。"
+        ],
+        "lit": "小女孩被她的狗的死亡所悲伤。"
+      }
+    },
+    "Survey findings show that knitting can help people relieve stress.": {
+      "ph": [{"t": "help people relieve", "b": "help sb. do sth.", "m": "帮助某人做某事"}],
+      "an": {
+        "parts": [
+          {"t": "Survey findings show", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that knitting can help people relieve stress", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "主语 Survey findings 是无生命名词，直译「调查结果显示」勉强可以，书上就是这么译的；that 引导 show 的宾语从句。",
+          "宾语从句里 knitting 是动名词作主语，书上译成名词「编织」。",
+          "help people relieve stress 里 help 后面的不定式省略了 to，people 是宾语，书上译成「帮助人们缓解压力」。"
+        ],
+        "lit": "调查结果显示，编织能够帮助人们缓解压力。"
+      }
+    },
+    "We hold the belief that hard work leads to success.": {
+      "ph": [
+        {"t": "hold the belief", "b": "hold the belief that", "m": "坚信"},
+        {"t": "leads to", "b": "lead to", "m": "导致；带来"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "We hold the belief", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that hard work leads to success", "r": "同位语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导的是同位语从句，解释 belief 的具体内容；that 在从句里不作任何成分（从句 hard work leads to success 已经完整），这是它和定语从句的区别。",
+          "hold the belief 是「名词 belief + 动词」的搭配，书上把它还原成动词「坚信」，从句内容作宾语。"
+        ],
+        "lit": "我们持有这样的信念：努力工作通向成功。"
+      }
+    },
+    "There was a much higher rate of attrition among scientists who didn't get grants.": {
+      "ph": [
+        {"t": "a much higher rate of", "b": "a high rate of", "m": "高得多的……率"},
+        {"t": "get grants", "b": "get a grant", "m": "获得资助"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "There was a much higher rate of attrition among scientists", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "who didn't get grants", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "who 引导定语从句，先行词是 scientists，who 在从句里作主语（who didn't get grants）；书上前置成「没有获得资助的科学家」。",
+          "there be 句型里 a much higher rate of attrition 是主语，among scientists 说明范围；书上把 scientists 提前，译成「没有获得资助的科学家人员流失率要高得多」，much higher 放到句末译成「高得多」。"
+        ],
+        "lit": "在没有获得资助的科学家中，存在高得多的流失率。"
+      }
+    },
+    "You'll need to give your shoes a good polish.": {
+      "ph": [
+        {"t": "give", "b": "give … a polish", "m": "擦亮"},
+        {"t": "a good polish", "b": "give … a polish", "m": "擦亮"}
+      ]
+    },
+    "There are ways we could soften the coming blow to the global food supply.": {
+      "ph": [{"t": "blow to", "b": "a blow to", "m": "对……的打击"}],
+      "an": {
+        "parts": [
+          {"t": "There are ways", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "we could soften the coming blow to the global food supply", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "ways 后面是省略了关系词的定语从句，先行词是 ways，省略的关系词（in which 或 that）在从句里作方式状语：we could soften … in these ways。书上把 ways 译成「办法」，从句译成动词「减轻……」，没有前置。",
+          "could 在这里主句是现在时 are，也没有 if 条件，所以不是过去时的呼应，也不是虚拟语气，只是比 can 更委婉的「能够」。",
+          "the coming blow 的 coming 是现在分词，作前置定语，书上译成「即将到来的打击」。"
+        ],
+        "lit": "有一些我们能够减轻即将到来的对全球食品供应的打击的办法。"
+      }
+    },
+    "Most were sold in Europe and China, where the bikes already have exploded in popularity.": {
+      "ph": [{"t": "exploded in popularity", "b": "explode in popularity", "m": "受欢迎度激增"}],
+      "an": {
+        "parts": [
+          {"t": "Most were sold in Europe and China", "r": "主干"},
+          {"t": ", ", "r": ""},
+          {"t": "where the bikes already have exploded in popularity", "r": "非限制性定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "where 引导非限制性定语从句，先行词是 Europe and China，where 在从句里作地点状语（in Europe and China）。",
+          "书上把它拆成后面的分句，用「两地」「这种自行车」回指：「其中大部分在欧洲和中国销售，这种自行车在两地市场……」。",
+          "Most 单独作主语，指前文所说的车（most of them），were sold 是被动，书上译成主动的「销售」，Most 译成「其中大部分」。"
+        ],
+        "lit": "大部分被卖在欧洲和中国，在那里自行车已经在受欢迎程度上爆炸了。"
+      }
+    },
+    "Creating the future you want is a lot easier if you are ready to exploit the opportunities that come your way.": {
+      "ph": [
+        {"t": "a lot easier", "b": "a lot + 比较级", "m": "容易得多"},
+        {"t": "are ready to", "b": "be ready to do", "m": "准备好做"},
+        {"t": "come your way", "b": "come one's way", "m": "降临到某人身上；遇到"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Creating the future you want is a lot easier", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "if you are ready to exploit the opportunities that come your way", "r": "条件状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "Creating the future you want 是动名词短语作主语；you want 是省略了关系词的定语从句，先行词是 the future，关系词（that）在从句里作 want 的宾语。书上前置成「你想要的未来」。",
+          "if 条件状语从句里用一般现在时 are，主句是现在时 is，是真实条件，不是虚拟；书上译成「如果……就……」。",
+          "that come your way 是定语从句，先行词是 the opportunities，that 在从句里作主语；come your way 字面是「来到你的路上」，书上译成「你遇到的机会」，前置成「……的」。"
+        ],
+        "lit": "创造你想要的未来是容易得多的，如果你准备好利用来到你路上的机会。"
+      }
+    },
+    "Only recently in California has it become profitable to pump water from this depth.": {
+      "ph": [{"t": "profitable to", "b": "be profitable to do", "m": "做……有利可图"}],
+      "an": {
+        "parts": [
+          {"t": "Only recently in California has it become profitable", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to pump water from this depth", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "only + 状语（Only recently in California）放在句首时，主句要部分倒装：助动词 has 提到主语 it 之前。正常语序是 It has become profitable … only recently.",
+          "it 是形式主语，真正的主语是不定式短语 to pump water from this depth；书上译成「直到最近……这一深度抽水才变得有利可图」，用「直到……才」对应 Only + 倒装。"
+        ],
+        "lit": "只有最近在加利福尼亚，从这个深度抽水才变得有利可图。"
+      }
+    },
+    "He fell to the ground with a bump.": {
+      "ph": [{"t": "with a bump", "b": "with a bump", "m": "砰的一声"}]
+    },
+    "We heard some shots in the distance.": {
+      "ph": [{"t": "in the distance", "b": "in the distance", "m": "在远处"}]
+    },
+    "She doesn't want to use her name for fear of being fired from her job.": {
+      "ph": [
+        {"t": "for fear of", "b": "for fear of", "m": "因害怕"},
+        {"t": "fired from", "b": "fire sb. from", "m": "解雇"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "She doesn't want to use her name", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "for fear of being fired from her job", "r": "原因状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "for fear of 是介词短语，of 后面要接名词或动名词，这里是动名词的被动式 being fired；书上译成「因害怕被解雇」。",
+          "being fired from her job 里 fire 是「解雇」，from her job 表示被解雇的来源，书上省略「从工作中」，直接译「被解雇」。"
+        ],
+        "lit": "她不想使用她的名字，因为害怕被从她的工作中解雇。"
+      }
+    },
+    "There is a growing tendency among employers to hire casual staff.": {
+      "ph": [
+        {"t": "tendency", "b": "tendency to do", "m": "……的倾向"},
+        {"t": "to", "b": "tendency to do", "m": "……的倾向"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "There is a growing tendency among employers", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to hire casual staff", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "to hire casual staff 是不定式短语，作 tendency 的后置定语（说明趋势的内容），among employers 插在中间。书上把 employers 提前作主语：「雇主雇用临时职员的趋势」。",
+          "growing 是现在分词，作前置定语；书上把它转成谓语，译成「正在增加」放在句末。"
+        ],
+        "lit": "有一个在雇主中间雇用临时职员的日益增长的趋势。"
+      }
+    },
+    "The goal was to reach the top, accumulate wealth and retire to a life of ease.": {
+      "ph": [
+        {"t": "retire to", "b": "retire to", "m": "退休后过（……生活）"},
+        {"t": "a life of ease", "b": "a life of ease", "m": "安逸的生活"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "The goal was ", "r": "主干"},
+          {"t": "to reach the top, accumulate wealth and retire to a life of ease", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "was 后面是不定式作表语，reach / accumulate / retire 三个动词并列，共用一个 to；书上用逗号连成三个分句。",
+          "retire to a life of ease 是「退休」加「到某种生活」，书上展开成「退休后过上安逸的生活」，把 to 译成「过上」。"
+        ],
+        "lit": "目标是到达顶峰，积累财富，并退休到一种安逸的生活。"
+      }
+    },
+    "It is said that all of us employ a mix of both these types of planning.": {
+      "ph": [
+        {"t": "It is said that", "b": "it is said that", "m": "据说"},
+        {"t": "a mix of", "b": "a mix of", "m": "……的混合"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "It is said ", "r": "主干"},
+          {"t": "that all of us employ a mix of both these types of planning", "r": "主语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "It 是形式主语，真正的主语是 that 引导的主语从句；It is said that … 固定译成主动的「据说」。",
+          "employ a mix of … 是「动词 + 名词」，书上把名词 a mix 还原成动词，译成「混合使用这两种规划方式」。"
+        ],
+        "lit": "它被说，我们所有人使用这两种类型的规划的一种混合。"
+      }
+    },
+    "Do not turn the salad cream into a solid lump.": {
+      "ph": [{"t": "turn", "b": "turn … into", "m": "把……变成"}, {"t": "into", "b": "turn … into", "m": "把……变成"}]
+    }
+  }
+}
