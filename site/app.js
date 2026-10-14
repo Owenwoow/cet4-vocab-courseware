@@ -394,19 +394,21 @@ async function lookupAt(el, text, rect) {
   lookup(text, rect, srcOf(el), c); speakIn(text, c);
 }
 
+const BOOKTAG = n => `<span class="src">书中 #${n}</span>`, ADD = `<span class="src add">补充</span>`;
+/* 一个词的释义（浮层里的一行）：本课词条 / 扩展词用书上的，其他用逐词释义；都没有返回 null */
+function wordInfo(w, c) {
+  const b = findWord(w, c.map);
+  if (b) return `<b>${esc(b.word)}</b> <span class="ipa">${esc(b.ipa)}</span> ${esc(sensesText(b.senses))}${BOOKTAG(b.no)}`;
+  for (const k of lemmaCandidates(w)) if (c.gloss[k]) return `<b>${esc(w)}</b> ${esc(c.gloss[k])}${ADD}`;
+  return null;
+}
 async function lookup(text, rect, src, c = curCtx()) {
   const GLOSS = c.gloss;
   const q = text.toLowerCase().replace(/[^a-z' ]/g, " ").replace(/\s+/g, " ").trim();
   if (!q) return;
   const line = (w, body, src) => `<div class="pm"><b>${esc(w)}</b> ${body}${src}</div>`;
-  const BOOKTAG = n => `<span class="src">书中 #${n}</span>`, ADD = `<span class="src add">补充</span>`;
   let html, needOnline = false;
-  const one = w => {
-    const b = findWord(w, c.map);
-    if (b) return line(b.word, `<span class="ipa">${esc(b.ipa)}</span> ${esc(sensesText(b.senses))}`, BOOKTAG(b.no));
-    for (const k of lemmaCandidates(w)) if (GLOSS[k]) return line(w, esc(GLOSS[k]), ADD);
-    return null;
-  };
+  const one = w => { const h = wordInfo(w, c); return h && `<div class="pm">${h}</div>`; };
   if (GLOSS[q]) html = `<div><span class="pw">${esc(text)}</span>${ADD}</div><div class="pm">${esc(GLOSS[q])}</div>`;
   else if (!q.includes(" ")) {
     html = one(q) || line(q, "查询中…", ""); needOnline = !one(q);
@@ -431,24 +433,106 @@ function openPages(a, b) {
 }
 $("#viewerClose").onclick = () => { $("#viewer").hidden = true; };
 
-/* ---------- 点击事件 ---------- */
+/* ---------- 例句点词：课文页、首页复习卡背面、生词「遇见」的 .sent 都走这一个处理函数 ----------
+   单击词组 → 词组浮层（下面一行小字是点到的词），读词组；单击词组外的词 → 查这个词并朗读；
+   双击单词 / 手机长按选中一个词 → 只查这个词；划选几个词 → 和哪个词组重叠的字最多就显示哪个，对不上就逐词查。
+   双击会先来两次 click：点在词组上的单击等 DBL_MS 确认不是双击再弹，双击直接查词，不会先闪词组、读两遍；
+   词组外的词单击立刻查，第二击不再处理。
+   出题卡片还没作答（.locked）时例句不响应，点击照常交给卡片（翻卡）。
+   在捕获阶段处理并停止传播，study.js 的卡片监听和下面的 document 监听都不会再收到这次点击 */
 const srcOf = el => { const s = el.closest && el.closest(".card,[data-src]"); return s ? s.dataset.word || s.dataset.src || "" : ""; };   // 例句属于哪个词条
 /* 「析」：展开 / 收起这句的语法解析 */
 function toggleAn(b) {
   const an = b.parentElement.querySelector(".an"); if (!an) return;
   an.hidden = !an.hidden; b.classList.toggle("on", !an.hidden);
 }
+const DBL_MS = 260;
+let phTimer = 0, lastSel = {k: "", t: 0, s: null};
+/* node 里 offset 处在这句里是第几个字符 */
+function charAt(sent, node, offset) { const r = document.createRange(); r.setStart(sent, 0); r.setEnd(node, offset); return r.toString().length; }
+/* 选区落在这句里的部分：{text, a, b, rect}；没选或不在这句里返回 null */
+function selIn(sent) {
+  const s = getSelection();
+  if (!s.rangeCount || !s.toString().trim()) return null;
+  const r = s.getRangeAt(0), inS = sent.contains(r.startContainer), inE = sent.contains(r.endContainer);
+  if (!inS && !inE) return null;
+  const a = inS ? charAt(sent, r.startContainer, r.startOffset) : 0, b = inE ? charAt(sent, r.endContainer, r.endOffset) : sent.textContent.length;
+  const text = sent.textContent.slice(a, b).trim();
+  return text ? {text, a, b, rect: r.getBoundingClientRect()} : null;
+}
+/* 词组浮层：上面词组（原形、释义、补充），w 是点到的词（划选时没有），下面一行小字是它的释义；读词组原形 */
+async function phraseAt(sent, id, w) {
+  const c = await ctxOf(sent);
+  if (!sent.isConnected) return;
+  const en = sent.textContent, list = (noteOf(c.notes, en) || {}).ph || [], P = list[id];
+  const rect = (w || sent.querySelector(`.ph[data-ph="${id}"]`) || sent).getBoundingClientRect();
+  if (!P) { if (w) { lookup(w.textContent, rect, srcOf(sent), c); speakIn(w.textContent, c); } return; }
+  const x = Sent.locate(en, list).filter(s => s.id === id).map(s => en.slice(s.s, s.e)).join(" … ");
+  const wq = w && w.textContent.toLowerCase().replace(/[^a-z']/g, "");
+  showPop(`<div><span class="pw">${esc(P.b)}</span>${ADD}</div><div class="pm">${esc(P.m)}</div>
+    ${w ? `<div class="pwl">${wordInfo(wq, c) || `<b>${esc(w.textContent)}</b> 本地未收录`}</div>` : ""}
+    <div class="ops"><button id="popSay">🔊 再读一遍</button><button id="popVocab" class="pvb"></button></div><div class="pn" id="popVn"></div>`, rect);
+  const say = () => speakIn(P.b.replace(/\s*…\s*/g, " "), c);
+  $("#popSay").onclick = say;
+  vocabButton({w: P.b, x, m: P.m, p: "", k: c.lid, e: srcOf(sent), bk: bookAt(P.b), ph: 1});   // 生词本：原形、句中写法、释义快照，ph 标明是词组
+  say();
+}
+/* 划选：一个词只查这个词；几个词按重叠挑词组，对不上走逐词查。
+   同一个选区短时间内只处理一次（手机上 touchend 和 click 可能都看到它） */
+function onSelect(sent, sel) {
+  const k = `${sel.a}:${sel.b}:${sel.text}`, now = Date.now();
+  if (lastSel.k === k && lastSel.s === sent && now - lastSel.t < 800) return;
+  lastSel = {k, t: now, s: sent};
+  stopMarathon();
+  if (!/\s/.test(sel.text)) { lookupAt(sent, sel.text, sel.rect); return; }
+  const segs = $$(".ph", sent).map(p => { const s = charAt(sent, p, 0); return {s, e: s + p.textContent.length, id: +p.dataset.ph}; });
+  const id = Sent.best(segs, sel.a, sel.b);
+  id >= 0 ? phraseAt(sent, id, null) : lookupAt(sent, sel.text, sel.rect);
+}
+/* 这次点击落在哪句例句上：点在句子里；或者从句子里开始划选、松手在句子外（click 落在共同的外层上） */
+function sentOf(t) {
+  const sent = t.closest(".sent"); if (sent) return sent;
+  const s = getSelection(); if (!s.rangeCount || !s.toString().trim()) return null;
+  const n = s.getRangeAt(0).startContainer, el = (n.nodeType === 1 ? n : n.parentElement).closest(".sent");
+  return el && t.contains(el) ? el : null;
+}
+function sentClick(e) {
+  const t = e.target; if (!t.closest || pop.contains(t)) return;
+  const ab = t.closest(".anBtn");
+  if (ab && !ab.closest(".locked")) { e.stopPropagation(); toggleAn(ab); return; }
+  const sent = sentOf(t);
+  if (!sent || sent.closest(".locked")) return;
+  e.stopPropagation();
+  const w = t.closest(".w"), ph = t.closest(".ph");
+  if (e.detail >= 2) {                               // 双击的第二击：词组里的词改查单词；词组外的词第一击已经查过
+    if (e.detail === 2 && w && ph) { clearTimeout(phTimer); phTimer = 0; stopMarathon(); lookupAt(w, w.textContent, w.getBoundingClientRect()); }
+    return;
+  }
+  const sel = selIn(sent);
+  if (sel) { onSelect(sent, sel); return; }
+  clearTimeout(phTimer); phTimer = 0;
+  if (!w && !ph) { pop.style.display = "none"; return; }
+  stopMarathon();
+  if (!ph) { lookupAt(w, w.textContent, w.getBoundingClientRect()); return; }
+  phTimer = setTimeout(() => { phTimer = 0; phraseAt(sent, +ph.dataset.ph, w); }, DBL_MS);
+}
+document.addEventListener("click", sentClick, true);
+/* 手机长按选词、拖动选区：松手后看选区（长按不会触发 click） */
+document.addEventListener("touchend", e => {
+  const t = e.target;
+  setTimeout(() => {
+    const sent = t.closest && t.closest(".sent");
+    if (!sent || !sent.isConnected || sent.closest(".locked")) return;
+    const sel = selIn(sent); if (sel) onSelect(sent, sel);
+  }, 300);
+});
+
+/* ---------- 其他点击 ---------- */
 document.addEventListener("click", e => {
   const t = e.target;
-  const ab = t.closest(".anBtn"); if (ab) { toggleAn(ab); return; }
-  if (t.closest(".study .sent") && !pop.contains(t)) {   // 首页巩固里的例句也能点词查义
-    const sel = getSelection().toString().trim();
-    if (sel) { lookupAt(t, sel, getSelection().getRangeAt(0).getBoundingClientRect()); return; }
-    if (t.classList.contains("w")) { lookupAt(t, t.textContent, t.getBoundingClientRect()); return; }
-  }
   if (t.closest(".study") && !pop.contains(t)) pop.style.display = "none";
   if (t.closest(".top,.drawer,.fabs,.settings,.viewer,.study,.peek")) { if (!t.closest(".search")) $("#qres").style.display = "none"; return; }
-  if (t.dataset.say || t.classList.contains("play") || t.classList.contains("w")) stopMarathon();
+  if (t.dataset.say || t.classList.contains("play")) stopMarathon();
   if (t.dataset.say) { speak(t.dataset.say); return; }
   if (t.classList.contains("play")) { playSentence(t.closest(".card"), null, t.dataset.slow ? 0.75 : rate()); return; }
   if (t.dataset.goto) { gotoWord(t.dataset.goto); return; }
@@ -463,15 +547,8 @@ document.addEventListener("click", e => {
   const masked = t.closest(".mask .sense,.mask .zh,.mask .tip,.mask .xm");
   if (masked) { masked.classList.toggle("show"); return; }
   if (pop.contains(t)) return;
-  const sel = getSelection().toString().trim();
-  if (sel && t.closest(".sent")) { lookupAt(t, sel, getSelection().getRangeAt(0).getBoundingClientRect()); return; }
-  if (t.classList.contains("w")) { lookupAt(t, t.textContent, t.getBoundingClientRect()); return; }
   pop.style.display = "none";
 });
-document.addEventListener("touchend", e => setTimeout(() => {
-  const s = getSelection();
-  if (s.toString().trim().includes(" ") && e.target.closest && e.target.closest(".sent")) ctxOf(e.target).then(c => lookup(s.toString(), s.getRangeAt(0).getBoundingClientRect(), srcOf(e.target), c));
-}, 300));
 
 /* ---------- 设置页 ---------- */
 const seg = (key, opts) => `<div class="seg">${opts.map(([v, label]) =>
