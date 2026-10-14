@@ -481,7 +481,8 @@ async function phraseAt(sent, id, w) {
   showPop(`<div><span class="pw">${esc(P.b)}</span>${ADD}</div><div class="pm">${esc(P.m)}</div>
     ${w ? `<div class="pwl">${wordInfo(wq, c) || `<b>${esc(w.textContent)}</b> 本地未收录`}</div>` : ""}
     <div class="ops"><button id="popSay">🔊 再读一遍</button><button id="popVocab" class="pvb"></button></div><div class="pn" id="popVn"></div>`, rect);
-  const say = () => speakIn(P.b.replace(/\s*…\s*/g, " "), c);
+  /* 词组音频按原形生成（清单 p，… 读 something），这一课还没生成就退回浏览器语音 */
+  const say = () => { stopAll(); const key = pickVoice((c.aud.p || {})[P.b]); key ? playFile(key, null, rate(), c.aud) : speakTTS(Sent.spoken(P.b), "en"); };
   $("#popSay").onclick = say;
   vocabButton({w: P.b, x, m: P.m, p: "", k: c.lid, e: srcOf(sent), bk: bookAt(P.b), ph: 1});   // 生词本：原形、句中写法、释义快照，ph 标明是词组
   say();
