@@ -29,16 +29,29 @@ test("一天从凌晨 4 点开始算", () => {
   assert.equal(SRS.today(new Date(2026, 9, 6, 4, 0).getTime()), TUE);
 });
 
-test("周一学的：次日 → 本周六 → 下周一 → 第三周周日 → 之后按熟练度（一路看词选义记得 = 3 级，14 天）", () => {
-  assert.deepEqual(walk(MON, 5), [TUE, SAT, "2026-10-12", "2026-10-25", "2026-11-08", "2026-11-22"]);
+test("周一学的：次日 → 周三（周日太远）→ 下周一 → 第三周周日 → 之后按熟练度（一路看词选义记得 = 3 级，14 天）", () => {
+  assert.deepEqual(walk(MON, 5), [TUE, WED, "2026-10-12", "2026-10-25", "2026-11-08", "2026-11-22"]);
 });
 
-test("周三学的：次日 → 本周六 → 下周三 → 第三周周日", () => {
-  assert.deepEqual(walk(WED, 3), [THU, SAT, "2026-10-14", "2026-10-25"]);
+test("周二学的：次日 → 本周日 → 下周二", () => {
+  assert.deepEqual(walk(TUE, 2), [WED, SUN, "2026-10-13"]);
+});
+
+test("周三学的：次日（周四只是正常复习）→ 本周日 → 下周三 → 第三周周日", () => {
+  assert.deepEqual(walk(WED, 3), [THU, SUN, "2026-10-14", "2026-10-25"]);
 });
 
 test("周五学的：次日（周六）→ 周日 → 下周五 → 第三周周日", () => {
   assert.deepEqual(walk(FRI, 3), [SAT, SUN, "2026-10-16", "2026-10-25"]);
+});
+
+test("周六、周日学的：离下个周日太远，第二站放在学习日后第 2 天", () => {
+  assert.deepEqual(walk(SAT, 2), [SUN, "2026-10-12", "2026-10-17"]);
+  assert.deepEqual(walk(SUN, 2), ["2026-10-12", "2026-10-13", "2026-10-18"]);
+});
+
+test("周六不再是复习站：一周七天学的词，第二站都不落在周六", () => {
+  for (let i = 0; i < 7; i++) assert.notEqual(SRS.dow(SRS.stationDue(SRS.add(MON, i), 1, SRS.add(MON, i))), 6);
 });
 
 test("周末学的也能走完，站与站之间至少隔一天", () => {
@@ -52,14 +65,14 @@ test("模糊：站数不变，2 天后再来", () => {
   const c = SRS.rate(SRS.newCard(MON), "m", TUE);
   assert.equal(c.s, 0); assert.equal(c.d, THU); assert.equal(c.r, "m");
   const c2 = SRS.rate(c, "g", THU);
-  assert.equal(c2.s, 1); assert.equal(c2.d, SAT);
+  assert.equal(c2.s, 1); assert.equal(c2.d, FRI);   // 第二站本是周三，已过，顺到明天
 });
 
 test("忘了：从今天重新开始，遗忘次数 +1，进难词本", () => {
   let c = SRS.newCard(MON);
-  c = SRS.rate(c, "g", TUE);            // 到本周六
-  c = SRS.rate(c, "f", SAT);
-  assert.deepEqual([c.a, c.s, c.d, c.l], [SAT, 0, SUN, 1]);
+  c = SRS.rate(c, "g", TUE);            // 到周三
+  c = SRS.rate(c, "f", WED);
+  assert.deepEqual([c.a, c.s, c.d, c.l], [WED, 0, THU, 1]);
   assert.ok(SRS.isHard(c));
 });
 
@@ -75,7 +88,7 @@ test("提前复习：记得 / 模糊不改计划，忘了照样重来", () => {
 
 test("拖了几天才复习：照常进下一站，下一站不早于明天", () => {
   let c = SRS.newCard(MON);
-  c = SRS.rate(c, "g", "2026-10-13");   // 次日那站拖到下周二才做，本周末早过了
+  c = SRS.rate(c, "g", "2026-10-13");   // 次日那站拖到下周二才做，第二站早过了
   assert.equal(c.s, 1); assert.equal(c.d, "2026-10-14");
 });
 
@@ -146,7 +159,7 @@ test("提前复习不影响熟练度和题型：睡前巩固过的新词，次�
   const morning = SRS.rate(night, "g", TUE, {type: T.MEAN});                 // 次日早上到期复习
   assert.equal(morning.v, 1); assert.equal(morning.h, "g");
   assert.equal(SRS.pickType(morning), T.LISTEN);                              // 正式复习 1 次后才轮到听音
-  const again = SRS.rate(morning, "g", WED, {type: T.LISTEN});                // 再提前刷一遍，轮换不受影响
+  const again = SRS.rate(morning, "g", TUE, {type: T.LISTEN});                // 当天再提前刷一遍，轮换不受影响
   assert.equal(again.v, 1); assert.equal(SRS.pickType(again), T.LISTEN);
   assert.equal(SRS.reviews({n: 2, h: "m", r: "m"}), 1);                     // 旧卡没有 v：按 h 的长度算
 });
@@ -260,8 +273,8 @@ test("形近词相邻：不同词群的挪到一起，同词群的不动", () =>
 test("方案文档里的 abandon：一路走到牢记", () => {
   let c = SRS.newCard("2026-10-12");
   const step = (r, t, type) => { assert.equal(c.d, t); c = SRS.rate(c, r, t, {type, key: "abandon"}); return [SRS.level(c), c.d]; };
-  assert.deepEqual(step("g", "2026-10-13", T.MEAN), [2, "2026-10-17"]);
-  assert.deepEqual(step("g", "2026-10-17", T.LISTEN), [2, "2026-10-19"]);
+  assert.deepEqual(step("g", "2026-10-13", T.MEAN), [2, "2026-10-14"]);
+  assert.deepEqual(step("g", "2026-10-14", T.LISTEN), [2, "2026-10-19"]);
   assert.deepEqual(step("m", "2026-10-19", T.MEAN), [2, "2026-10-21"]);
   assert.deepEqual(step("g", "2026-10-21", T.MEAN), [2, "2026-11-01"]);
   assert.deepEqual(step("g", "2026-11-01", T.LISTEN), [3, "2026-11-15"]);

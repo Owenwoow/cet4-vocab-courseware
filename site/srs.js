@@ -1,9 +1,9 @@
 /* 滚动复习规则（纯函数，不碰页面和存储；浏览器里是全局 SRS，Node 里 require 进来跑单元测试）
 
-   一句话：工作日早上复习「昨天的 + 上周今天的」，周末复习「本周的 + 上上周的」；之后按熟练度拉开间隔。
+   一句话：每天早上复习「昨天的 + 上周今天的」，周日复习「本周的 + 上上周的」；之后按熟练度拉开间隔。
    实现按词算：每张卡记 学习日 a、已过站数 s、到期日 d，所以每天学多少、哪天没学都不影响。
      s=0 → 次日（a+1）
-     s=1 → 本周末：a+2 起第一个周六或周日
+     s=1 → 本周日：a+2 起第一个周日；离学习日超过 5 天的（周一、周六、周日学的）改成 a+2
      s=2 → 上周今天：a+7
      s=3 → 上上周：a+14 起第一个周日
      s≥4 → 按熟练度：1～2 级 7 天、3 级 14 天、4 级 21 天、5 级 30 天
@@ -41,12 +41,12 @@ const SRS = (() => {
     return `${t.getFullYear()}-${pad(t.getMonth() + 1)}-${pad(t.getDate())}`;
   }
   const monday = s => add(s, -((dow(s) + 6) % 7));   // 所在周的周一（周一到周日算一周）
-  function firstWeekend(s) { const w = dow(s); return w === 6 || w === 0 ? s : add(s, 6 - w); }
   const firstSunday = s => add(s, (7 - dow(s)) % 7);
+  function secondDue(a) { const d = firstSunday(add(a, 2)); return diff(d, a) > 5 ? add(a, 2) : d; }   // s=1 那一站
 
   /* 第 s 站的到期日；s≥4 按熟练度 lv（不传按 4 级，即 21 天） */
   function stationDue(a, s, t, lv = 4) {
-    const d = s === 1 ? firstWeekend(add(a, 2)) : s === 2 ? add(a, 7) : s === 3 ? firstSunday(add(a, 14)) : add(t, LV_DAYS[lv]);
+    const d = s === 1 ? secondDue(a) : s === 2 ? add(a, 7) : s === 3 ? firstSunday(add(a, 14)) : add(t, LV_DAYS[lv]);
     return max(d, add(t, 1));
   }
 
@@ -209,7 +209,7 @@ const SRS = (() => {
   /* 请假顺延：学习日和到期日一起后移，整条路线不变 */
   const shift = (c, n) => ({...c, a: add(c.a, n), d: add(c.d, n)});
 
-  return {EXAM, TYPE, today, reviews, add, diff, dow, monday, firstWeekend, firstSunday, stationDue, examCap, newCard, isDue,
+  return {EXAM, TYPE, today, reviews, add, diff, dow, monday, firstSunday, secondDue, stationDue, examCap, newCard, isDue,
     rate, chop, isHard, dueList, level, streak, pickType, gradeChoice, gradeSpell, editDist, similar, senseKeys, posSet, distractorTag, confAdd, confDrop, shuffleSpread, pairSimilar, queue, shift};
 })();
 if (typeof module === "object" && module.exports) module.exports = SRS;

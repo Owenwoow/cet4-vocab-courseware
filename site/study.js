@@ -264,7 +264,7 @@ const Study = (() => {
       ${n ? `<div class="streak" title="连续学习天数">🔥 连续 ${n} 天</div>` : ""}</div>`;
   }
   function modToday() {
-    const t = T(), wd = SRS.dow(t), weekend = wd === 6 || wd === 0;
+    const t = T(), weekend = SRS.dow(t) === 0;   // 周日是复习日
     const due = dueAll().length, left = capLeft(), lg = logOf(t);
     const todays = inLearnRange(t, t), groups = learnMarks().filter(([, d]) => d === t).length;
     const nv = todays.filter(x => x.vocab).length, nb = todays.length - nv, plusV = nv ? ` + 生词 ${nv} 个` : "";
@@ -274,12 +274,12 @@ const Study = (() => {
     const nl = todays.filter(x => !x.card.p).length;   // 学新词还没过关的
     const step = (done, n, title, desc, action, extra) => `<li class="${done ? "done" : ""}"><span class="dot">${done ? "✓" : n}</span>
       <div class="sd"><b>${title}</b><small>${desc}</small></div>${action || ""}${extra || ""}</li>`;
-    const s1 = step(!due || !left, 1, weekend ? "周末复习" : "早上复习",
+    const s1 = step(!due || !left, 1, weekend ? "周日复习" : "早上复习",
       !due ? (lg.dv ? `今天复习了 ${lg.dv} 个，全部清完` : "今天没有到期的词")
         : !left ? `今天已做满 ${cap()} 个，剩下 ${due} 个排到后面几天`
         : `到期 ${due} 个${due > left ? ` · 今天先做 ${left} 个（上限 ${cap()}）` : ""}${Math.min(due, left) > ROUND ? ` · 每轮 ${ROUND} 个` : ""}`,
       due && left ? btn("#/drill/due", "开始", 'variant="brand"') : "");
-    const s2 = step(groups > 0 && !nl, 2, weekend ? "学新（周末可选）" : "学新",
+    const s2 = step(groups > 0 && !nl, 2, weekend ? "学新（周日可选）" : "学新",
       groups ? `今天记了 ${groups} 个词群 · ${nb} 词${plusV}，${nl ? `还有 ${nl} 个没过「学新词」测验` : "新词测验已全部过关；学了更多就接着记"}` : `看完视频和课件，在「学习记录」里勾上今天学的词群，再点「学新词」过一遍测验${nv ? `（已加生词 ${nv} 个）` : ""}`,
       `<span class="acts">${lastL ? btn(`#/${last}`, `继续 U${+lastL[1]} L${+lastL[2]}`) : ""}${btn("#/log", "📝 学习记录", groups || nl ? undefined : 'variant="brand"')}${nl ? btn("#/drill/learn", `学新词 ${nl}`, 'variant="brand"') : ""}</span>`);
     const s3 = step(false, 3, "途中看", todays.length ? `今天的 ${todays.length} 个词，掏出手机随时过一眼` : weekend ? "看看本周学的词" : "记录今天学的之后，这里能快速浏览",
@@ -316,11 +316,11 @@ const Study = (() => {
   }
   function modWeek() {
     const t = T(), days = weekCounts(SRS.monday(t));
-    const cell = (x, i) => `<a class="day${x.d === t ? " now" : ""}${i >= 5 ? " we" : ""}" href="#/week">
-      <span class="wd">${WEEK[(i + 1) % 7]}</span><b>${x.learned + x.vocab.length || (x.d > t ? "" : "·")}</b><small>${x.reviewed ? "复 " + x.reviewed : i >= 5 ? "复习" : ""}</small></a>`;
+    const cell = (x, i) => `<a class="day${x.d === t ? " now" : ""}${i === 6 ? " we" : ""}" href="#/week">
+      <span class="wd">${WEEK[(i + 1) % 7]}</span><b>${x.learned + x.vocab.length || (x.d > t ? "" : "·")}</b><small>${x.reviewed ? "复 " + x.reviewed : i === 6 ? "复习" : ""}</small></a>`;
     const sum = days.reduce((a, x) => a + x.learned + x.vocab.length, 0);
     return `<wa-card class="mod"><div slot="header" class="mh"><b>本周</b><span class="sub">新学 ${sum} 词</span><a href="#/week">周总结 →</a></div>
-      <div class="weekstrip">${days.map(cell).join("")}</div><p class="note">格子里的数字是那天新学的词数（含生词），下面是复习次数；周六日是复习日</p></wa-card>`;
+      <div class="weekstrip">${days.map(cell).join("")}</div><p class="note">格子里的数字是那天新学的词数（含生词），下面是复习次数；周日是复习日</p></wa-card>`;
   }
   function modLinks() {
     const hard = liveCards().filter(x => SRS.isHard(x.card)).length, nv = vocabCards().length;
@@ -775,7 +775,7 @@ const Study = (() => {
         <p class="note">记得 ${tot.g} · 模糊 ${tot.m} · 忘了 ${tot.f}</p>` : ""}
       <div class="ops">${btn(`#/drill/${encodeURIComponent("w2:" + mon)}`, "开始周复习（本周 + 上周）", 'variant="brand"')} ${btn(`#/list/${encodeURIComponent("w:" + mon)}`, "浏览本周的词")}</div>
       <section class="panel"><h2>每天学了什么</h2>${days.map((x, i) => `<div class="drow${x.d === t ? " now" : ""}"><span class="dd">周${WEEK[(i + 1) % 7]} ${md(x.d)}</span>
-        <span class="dg">${(byDay[x.d] || []).map(g => `<a href="#/${g.lid}/g${g.g}">${lesTitle(g.lid)} · ${g.g} ${esc(g.info ? g.info.title : "")}</a>`).join("")}${x.vocab.length ? `<span class="dv">生词：${x.vocab.map(esc).join("、")}</span>` : ""}${(byDay[x.d] || x.vocab.length) ? "" : `<small>${x.d > t ? "" : i >= 5 ? "复习日" : "没记录"}</small>`}</span>
+        <span class="dg">${(byDay[x.d] || []).map(g => `<a href="#/${g.lid}/g${g.g}">${lesTitle(g.lid)} · ${g.g} ${esc(g.info ? g.info.title : "")}</a>`).join("")}${x.vocab.length ? `<span class="dv">生词：${x.vocab.map(esc).join("、")}</span>` : ""}${(byDay[x.d] || x.vocab.length) ? "" : `<small>${x.d > t ? "" : i === 6 ? "复习日" : "没记录"}</small>`}</span>
         <span class="dn">${x.learned ? x.learned + " 词" : ""}${x.vocab.length ? `${x.learned ? " + " : ""}生词 ${x.vocab.length}` : ""}${x.reviewed ? ` · 复 ${x.reviewed}` : ""}</span></div>`).join("")}</section>
       <section class="panel"><h2>本周最常忘的词</h2>${worst.length ? `<div class="worst">${worst.map(x => `<span data-w="${esc(x.word)}">${esc(x.word)}${x.card.l ? ` <small>✗${x.card.l}</small>` : ""}</span>`).join("")}</div>
         ${btn(`#/list/hard`, "打开难词本")}` : `<p class="note">还没有忘过的词</p>`}</section>
