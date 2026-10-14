@@ -351,9 +351,15 @@ function gotoWord(w) {
 /* ---------- 查词浮层 ---------- */
 const pop = $("#pop");
 function showPop(html, rect) {
-  pop.innerHTML = html; pop.style.display = "block";
-  const x = Math.min(rect.left + scrollX, scrollX + document.documentElement.clientWidth - pop.offsetWidth - 8);
-  pop.style.left = Math.max(8, x) + "px"; pop.style.top = (rect.bottom + scrollY + 6) + "px";
+  pop.innerHTML = html; pop.style.display = "block"; pop.rect = {left: rect.left + scrollX, bottom: rect.bottom + scrollY};
+  placePop();
+}
+/* 放在点到的位置下面、不超出右边；内容变了（生词本按钮填上字）再放一次。先放到最左边再量宽度，免得贴着右边被挤窄、量出来偏小 */
+function placePop() {
+  const r = pop.rect; if (!r) return;
+  pop.style.left = "0px";
+  const x = Math.min(r.left, scrollX + document.documentElement.clientWidth - pop.offsetWidth - 8);
+  pop.style.left = Math.max(8, x) + "px"; pop.style.top = (r.bottom + 6) + "px";
 }
 /* ---------- 生词本：查到的词 → 存什么（原形、释义、音标、书中位置）；src = 例句所在的词条 ---------- */
 const lesShort = lid => `U${+lid.slice(1, 3)} L${+lid.slice(5, 7)}`;
@@ -372,13 +378,14 @@ function vocabButton(v) {
     el.classList.remove("on"); el.disabled = false; el.textContent = "记一次忘了";
     note.textContent = `${v.w} 已在复习中（书中 ${lesShort(v.bk[0])}）；记忘了就明天再来，并进难词本`;
     el.onclick = () => { Study.forgetBook(v.w); el.disabled = true; el.textContent = "✓ 已记，明天再复习"; };
-    return;
+    placePop(); return;
   }
   const cur = Study.vocabGet(v.w);
   el.classList.toggle("on", !!cur);
   el.textContent = cur ? "✓ 生词本 · 移出" : "＋ 生词本";
   note.textContent = cur ? `${+cur.at.slice(5, 7)}/${+cur.at.slice(8)} 加入的生词${v.w !== v.x ? `：${v.w}` : ""}` : v.w !== v.x ? `加入生词本：${v.w}` : "";
   el.onclick = () => { cur ? Study.removeVocab(v.w) : Study.addVocab(v); vocabButton(v); };
+  placePop();
 }
 
 /* 查词用哪课的数据：课文页是本课；首页巩固里的例句带 data-lid，用那课的（study.js 读来缓存） */
@@ -423,6 +430,7 @@ async function lookup(text, rect, src, c = curCtx()) {
       const m = j[0].meanings.slice(0, 2).map(x => `<i>${x.partOfSpeech}</i> ${esc(x.definitions[0].definition)}`).join("<br>");
       pop.querySelector(".pm").innerHTML = `<b>${esc(q)}</b> ${m}<div class="pn">英文词典在线释义（本地未收录）</div>`;
     } catch { pop.querySelector(".pm").innerHTML = `<b>${esc(q)}</b> 本地未收录，在线查询失败`; }
+    placePop();
   }
 }
 
