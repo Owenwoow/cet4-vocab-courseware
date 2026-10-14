@@ -1,430 +1,538 @@
 {
-  "_note": "例句词组与语法解析（书外补充，AI 生成）",
-  "sents": {
-    "The doctor managed to cure her of her illness.": {
-      "ph": [
-        {"t": "managed to", "b": "manage to do", "m": "设法做到"},
-        {"t": "cure", "b": "cure sb. of sth.", "m": "治好某人的病"},
-        {"t": "of", "b": "cure sb. of sth.", "m": "治好某人的病"}
-      ]
+ "_note": "例句词组与语法解析（书外补充，AI 生成）",
+ "sents": {
+  "The doctor managed to cure her of her illness.": {
+   "ph": [
+    {
+     "t": "managed to",
+     "b": "manage to do",
+     "m": "设法做到"
     },
-    "She found it difficult to secure a job in that country.": {
-      "ph": [
-        {"t": "found it difficult to", "b": "find it difficult to do", "m": "发现做某事很难"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "She found it difficult ", "r": "主干"},
-          {"t": "to secure a job in that country", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "found it difficult to secure… 里 it 是形式宾语，difficult 是宾语补足语，真正的宾语是后面的不定式 to secure a job…，所以书上不译 it，直接译成「发现在那个国家很难找到一份工作」。",
-          "不定式的内容在中文里要提前当主语成分来讲，英文「先说难、再说难在哪」，书上顺成「在那个国家……很难」。"
-        ],
-        "lit": "她发现它困难去获得一份在那个国家的工作。"
-      }
+    {
+     "t": "cure",
+     "b": "cure sb. of sth.",
+     "m": "治好某人的病"
     },
-    "After being rescued from the air crash, the people agreed that they had much to be thankful for.": {
-      "ph": [
-        {"t": "rescued from", "b": "rescue sb. from", "m": "从……中救出"},
-        {"t": "thankful for", "b": "be thankful for", "m": "为……而感激"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "After being rescued from the air crash", "r": "时间状语"},
-          {"t": ", ", "r": ""},
-          {"t": "the people agreed", "r": "主干"},
-          {"t": " that ", "r": ""},
-          {"t": "they had much to be thankful for", "r": "宾语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "After 后接 being rescued（动名词的被动式），逻辑主语就是主句主语 the people，书上把被动译成「获救」，再加「后」表示先后。",
-          "that 引导 agreed 的宾语从句；从句里 to be thankful for 是不定式作 much 的后置定语，for 的宾语就是 much（be thankful for much），所以书上译成「有很多值得感谢的事情」。"
-        ],
-        "lit": "在被从空难中救出之后，人们同意他们有许多要为之感激的东西。"
-      }
-    },
-    "She was injured in a car accident two weeks ago and still in critical condition.": {
-      "ph": [
-        {"t": "was injured in", "b": "be injured in", "m": "在……中受伤"},
-        {"t": "in critical condition", "b": "in critical condition", "m": "处于危急状态"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "She was injured in a car accident two weeks ago", "r": "主干"},
-          {"t": " and ", "r": ""},
-          {"t": "still in critical condition", "r": "并列分句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "was injured 是被动式，但表示的是遭遇的结果，书上译成主动的「受伤了」，比「被伤害」自然。",
-          "and 后面省略了与前面相同的 she was，still in critical condition 是并列的表语部分，书上补出主语译成「目前仍然危急」。"
-        ],
-        "lit": "她在两周前的一次车祸中被伤害，并且仍在危急的状况中。"
-      }
-    },
-    "He may look fierce, but he means no harm.": {
-      "ph": [
-        {"t": "means no harm", "b": "mean no harm", "m": "并无恶意"}
-      ]
-    },
-    "You may expose yourself to unexpected dangers.": {
-      "ph": [
-        {"t": "expose yourself to", "b": "expose oneself to", "m": "使自己面临"}
-      ]
-    },
-    "Dare she risk staying where she was?": {
-      "ph": [
-        {"t": "risk staying", "b": "risk doing", "m": "冒险做某事"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Dare she risk staying", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "where she was", "r": "状语"},
-          {"t": "?", "r": ""}
-        ],
-        "pts": [
-          "Dare 在这里是情态动词，疑问句把它提到主语 she 前面（Dare she…?），等于 Does she dare to…；书上译成「她敢……吗」。",
-          "risk 后接动名词 staying；where she was 是地点状语从句，修饰 staying，意思是「在她原来所在的地方」，书上译成「原地不动」。"
-        ],
-        "lit": "敢她冒险停留在她所在的地方吗？"
-      }
-    },
-    "It was wrong to gamble with our children's future.": {
-      "ph": [
-        {"t": "gamble with", "b": "gamble with", "m": "拿……冒险"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "It was wrong", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "to gamble with our children's future", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "It 是形式主语，真正的主语是后面的不定式 to gamble with our children's future；书上把它提前，译成「拿孩子们的未来冒险是错误的」，不再出现「它」。"
-        ],
-        "lit": "它是错误的，去拿我们孩子的未来赌博。"
-      }
-    },
-    "I bet you get a lot of requests for it.": {
-      "ph": [
-        {"t": "a lot of", "b": "a lot of", "m": "许多"},
-        {"t": "requests for", "b": "request for", "m": "对……的请求"}
-      ]
-    },
-    "Environmental problems must be solved to ease the current global food shortage.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "Environmental problems must be solved", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "to ease the current global food shortage", "r": "目的状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "must be solved 是被动式，书上译成无主语的「必须解决环境问题」，原主语 Environmental problems 变成宾语，放到动词后。",
-          "to ease… 是不定式作目的状语，说明为什么要解决，书上用「以缓解……」连接。"
-        ],
-        "lit": "环境问题必须被解决，以缓解当前的全球粮食短缺。"
-      }
-    },
-    "A private wildlife management company will release the animal into the wild.": {
-      "ph": [
-        {"t": "release", "b": "release … into", "m": "把……放归到"},
-        {"t": "into", "b": "release … into", "m": "把……放归到"}
-      ]
-    },
-    "These effects can also be observed among people who have recently become unemployed.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "These effects can also be observed among people", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "who have recently become unemployed", "r": "定语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "who 引导定语从句，先行词是 people，who 在从句里作主语；书上把从句前置成「最近失业的人群」。",
-          "can also be observed 是被动，书上译成「可以在……中观察到」，保留「到」字表被动义，不说「被观察」。",
-          "have recently become 是现在完成时，recently 配合它表示「到现在为止的最近」，所以译成「最近失业的」。"
-        ],
-        "lit": "这些影响也能被观察到，在最近已经成为失业的人们当中。"
-      }
-    },
-    "High schoolers knew nothing about the modern financial world.": {
-      "ph": [
-        {"t": "knew nothing about", "b": "know nothing about", "m": "对……一无所知"}
-      ]
-    },
-    "In the coming era of budget cuts to education, distance learning could become the norm.": {
-      "ph": [
-        {"t": "become the norm", "b": "become the norm", "m": "成为常态"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "In the coming era of budget cuts to education", "r": "状语"},
-          {"t": ", ", "r": ""},
-          {"t": "distance learning could become the norm", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "coming 是现在分词作定语，修饰 era，意思是「即将到来的」；budget cuts to education 是名词化结构，书上展开成动宾式的「教育预算削减」。",
-          "could 这里没有 if 条件，主句也不是过去时，不是虚拟语气，也不是时态呼应；它表示可能性（语气比 can 弱），书上译成「可能会」。"
-        ],
-        "lit": "在即将到来的对教育的预算削减的时代里，远程学习可以成为常态。"
-      }
-    },
-    "Now scientists are bringing this ancient wisdom up-to-date.": {
-      "ph": [
-        {"t": "bringing", "b": "bring … up to date", "m": "使……更新"},
-        {"t": "up-to-date", "b": "bring … up to date", "m": "使……更新"}
-      ]
-    },
-    "You need to do some self-assessment to determine where you have become stale in your thinking.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "You need to do some self-assessment", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "to determine ", "r": "目的状语"},
-          {"t": "where you have become stale in your thinking", "r": "宾语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "to determine… 是不定式作目的状语，说明做自我评估的目的，书上译成「以确定……」。",
-          "where 引导 determine 的宾语从句，where 在从句里作地点状语，这里是抽象的「在哪方面」，所以书上译成「你的思维在哪里变得陈旧」。",
-          "have become 是现在完成时，强调「已经变得」陈旧的状态，书上译作「变得陈旧」。"
-        ],
-        "lit": "你需要做一些自我评估来确定你在哪里在你的思维中已经变得陈旧。"
-      }
-    },
-    "Since being laid off, he has worked a series of temporary positions.": {
-      "ph": [
-        {"t": "laid off", "b": "lay off", "m": "解雇，下岗"},
-        {"t": "a series of", "b": "a series of", "m": "一系列"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Since being laid off", "r": "时间状语"},
-          {"t": ", ", "r": ""},
-          {"t": "he has worked a series of temporary positions", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "Since 后接 being laid off（动名词的被动式），逻辑主语是主句的 he，原意是「被解雇」，书上译成主动的「下岗」，再加「后」。",
-          "主句用现在完成时 has worked，与 since 搭配，表示从那时起一直到现在，书上译成「从事过」。"
-        ],
-        "lit": "自从被解雇以来，他已经做过一系列的临时职位。"
-      }
-    },
-    "Abundant information about cooking is available either online or on TV.": {
-      "ph": [
-        {"t": "is available", "b": "be available", "m": "可得到"},
-        {"t": "either", "b": "either … or", "m": "要么……要么，或者"},
-        {"t": "or", "b": "either … or", "m": "要么……要么，或者"}
-      ]
-    },
-    "It made ample preparations for various possibilities.": {
-      "ph": [
-        {"t": "preparations for", "b": "preparation for", "m": "为……做的准备"}
-      ]
-    },
-    "I began sifting through the mass of evidence.": {
-      "ph": [
-        {"t": "sifting through", "b": "sift through", "m": "仔细筛查"},
-        {"t": "the mass of", "b": "a mass of", "m": "大量的"}
-      ]
-    },
-    "It has great influence on numerous girls and women.": {
-      "ph": [
-        {"t": "influence on", "b": "influence on", "m": "对……的影响"}
-      ]
-    },
-    "I went out with the usual gang from college on Friday night.": {
-      "ph": [
-        {"t": "went out with", "b": "go out with", "m": "和……一起出去"}
-      ]
-    },
-    "This sort of problem is quite common.": {
-      "ph": [
-        {"t": "This sort of", "b": "this sort of", "m": "这类"}
-      ]
-    },
-    "They resort to different means to survive the bitter cold.": {
-      "ph": [
-        {"t": "resort to", "b": "resort to", "m": "诉诸，采取"}
-      ]
-    },
-    "There will be crowds of people waiting for her.": {
-      "ph": [
-        {"t": "crowds of", "b": "crowds of", "m": "大批的"}
-      ]
-    },
-    "A freshman textbook will have dozens of contributors.": {
-      "ph": [
-        {"t": "dozens of", "b": "dozens of", "m": "几十个"}
-      ]
-    },
-    "Its population is now showing signs of increase.": {
-      "ph": [
-        {"t": "showing signs of", "b": "show signs of", "m": "呈现……的迹象"}
-      ]
-    },
-    "Even the old metal lunch boxes have regained popularity.": {
-      "ph": [
-        {"t": "regained popularity", "b": "regain popularity", "m": "重新流行"}
-      ]
-    },
-    "There's an ancient legend that as long as these eggs are made, evil will not prevail in the world.": {
-      "ph": [
-        {"t": "as long as", "b": "as long as", "m": "只要"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "There's an ancient legend", "r": "主干"},
-          {"t": " that ", "r": ""},
-          {"t": "as long as these eggs are made", "r": "条件状语"},
-          {"t": ", ", "r": ""},
-          {"t": "evil will not prevail in the world", "r": "同位语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "that 引导同位语从句，解释 legend（传说）的具体内容；that 在从句里不作成分。书上译成「有一个古老的传说，只要……」，用逗号把内容接在后面。",
-          "同位语从句内部又有 as long as 引导的条件状语从句，书上译作「只要……就」的前半。从句用一般现在时 are made 表将来（主句是 will not prevail），这是「主将从现」。",
-          "are made 是被动，书上译成「被制作出来」，保留「被」是因为强调的是蛋的制作过程。"
-        ],
-        "lit": "有一个古老的传说：只要这些蛋被制作出来，邪恶就不会在世界上盛行。"
-      }
-    },
-    "I want my students to search out the answers to questions by using all the resources available to them.": {
-      "ph": [
-        {"t": "search out", "b": "search out", "m": "找出"},
-        {"t": "answers to", "b": "answer to", "m": "……的答案"},
-        {"t": "available to", "b": "be available to", "m": "可供……使用的"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "I want my students to search out the answers to questions", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "by using all the resources available to them", "r": "方式状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "want sb. to do 是复合宾语结构，my students 是 to search out 的逻辑主语，书上译成「我希望我的学生……去寻找」。",
-          "available to them 是形容词短语后置作定语，修饰 resources（形容词带补足成分要后置），书上前置成「可用的资源」。",
-          "by using… 是方式状语，英文放在句末，书上把它提到动作前，译成「利用……去寻找……」。"
-        ],
-        "lit": "我想要我的学生通过使用所有对他们可用的资源来找出问题的答案。"
-      }
-    },
-    "They feel pressured to keep up with female colleagues.": {
-      "ph": [
-        {"t": "feel pressured to", "b": "feel pressured to do", "m": "感到有压力去做"},
-        {"t": "keep up with", "b": "keep up with", "m": "跟上"}
-      ]
-    },
-    "The letter is in fairly good condition, in spite of being out of the care of trained museum staff for so long.": {
-      "ph": [
-        {"t": "in fairly good condition", "b": "in good condition", "m": "状况良好"},
-        {"t": "in spite of", "b": "in spite of", "m": "尽管"},
-        {"t": "out of the care of", "b": "out of the care of", "m": "不在……的照管下"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "The letter is in fairly good condition", "r": "主干"},
-          {"t": ", ", "r": ""},
-          {"t": "in spite of being out of the care of trained museum staff for so long", "r": "让步状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "in spite of 是介词短语，后面接动名词 being…，意思是「尽管」。书上把它译成带「虽然」的分句：虽然……，但状况相当好。",
-          "out of the care of… 里 care 是名词，书上把它动词化，译成「没有受到……维护」。",
-          "trained 是过去分词作定语，修饰 museum staff，被动义「受过训练的」，书上译成「训练有素的」。"
-        ],
-        "lit": "这封信处于相当好的状况，尽管在训练过的博物馆员工的照管之外这么久。"
-      }
-    },
-    "If you want the good stuff, the quality, you have to see it for yourself.": {
-      "ph": [
-        {"t": "have to", "b": "have to do", "m": "必须"},
-        {"t": "for yourself", "b": "for oneself", "m": "亲自"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "If you want the good stuff, the quality", "r": "条件状语"},
-          {"t": ", ", "r": ""},
-          {"t": "you have to see it for yourself", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "the quality 是 the good stuff 的同位语，补充说明具体指什么；书上译成并列的「好的东西、高品质的东西」，补出了「东西」。",
-          "主句里的 it 指代前面的 the good stuff，书上省去不译，只译成「你必须自己去看」。"
-        ],
-        "lit": "如果你想要好东西，品质，你必须自己亲自看它。"
-      }
-    },
-    "Hundreds of studies show that infants prefer novelty.": {
-      "ph": [
-        {"t": "Hundreds of", "b": "hundreds of", "m": "数百的"}
-      ]
-    },
-    "In one recent study, we examined 360 adolescents' beliefs about the nature of \"smartness\".": {
-      "ph": [
-        {"t": "beliefs about", "b": "belief about", "m": "对……的看法"}
-      ]
-    },
-    "Lawyers can specialise in \"elder law\".": {
-      "ph": [
-        {"t": "specialise in", "b": "specialise in", "m": "专攻"}
-      ]
-    },
-    "Immigrant parents could talk about their country of origin and why they emigrated to the United States.": {
-      "ph": [
-        {"t": "talk about", "b": "talk about", "m": "谈论"},
-        {"t": "country of origin", "b": "country of origin", "m": "原籍国"},
-        {"t": "emigrated to", "b": "emigrate to", "m": "移民到"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Immigrant parents could talk about their country of origin and ", "r": "主干"},
-          {"t": "why they emigrated to the United States", "r": "宾语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "介词 about 后面并列了两个宾语：名词短语 their country of origin 和 why 引导的宾语从句，书上都译成「谈论」的宾语，用「以及」连接。",
-          "why 在从句里作原因状语，从句用一般过去时 emigrated，说明移民是过去的事，书上译成「他们为什么移民到美国」。",
-          "could 这里没有 if 条件，是表示「能够」的情态用法，不是虚拟语气，书上译成「可以谈论」。"
-        ],
-        "lit": "移民的父母可以谈论他们的原籍国和为什么他们移民到了美国。"
-      }
-    },
-    "Most of the colored people migrated there at the turn of the 20th century.": {
-      "ph": [
-        {"t": "at the turn of", "b": "at the turn of", "m": "在……之交"}
-      ]
-    },
-    "In the past, electric vehicles had their problems, namely, a limited driving range.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "In the past", "r": "时间状语"},
-          {"t": ", ", "r": ""},
-          {"t": "electric vehicles had their problems", "r": "主干"},
-          {"t": ", ", "r": ""},
-          {"t": "namely, a limited driving range", "r": "同位语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "namely 引出对前面 problems 的具体说明，a limited driving range 是 problems 的同位语，书上译成「即驾驶范围有限」。",
-          "limited 是过去分词作定语，修饰 driving range，书上译成「有限的」，并把它放到谓语位置读作「范围有限」。",
-          "had their problems 用一般过去时，配合 In the past 与现在对照，书上把 their problems 展开成「它们存在的问题」。"
-        ],
-        "lit": "在过去，电动汽车有它们的问题，即，一个有限的驾驶范围。"
-      }
+    {
+     "t": "of",
+     "b": "cure sb. of sth.",
+     "m": "治好某人的病"
     }
+   ]
+  },
+  "She found it difficult to secure a job in that country.": {
+   "ph": [
+    {
+     "t": "found it difficult to",
+     "b": "find it difficult to do",
+     "m": "发现做某事很难"
+    }
+   ]
+  },
+  "After being rescued from the air crash, the people agreed that they had much to be thankful for.": {
+   "ph": [
+    {
+     "t": "rescued from",
+     "b": "rescue sb. from",
+     "m": "从……中救出"
+    },
+    {
+     "t": "thankful for",
+     "b": "be thankful for",
+     "m": "为……而感激"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "After being rescued from the air crash",
+      "s": "你多半会翻成「在被从空难中救出之后」。念一遍，是不是一股翻译腔？After being rescued 是 after 加被动的 -ing，中文把「被」去掉，说「获救」就顺了。rescue sb. from 是「把某人从……中救出」，from 后面是险境。\n→ 从空难中获救后"
+     },
+     {
+      "t": "the people agreed that they had much to be thankful for",
+      "s": "agreed that 你可能翻成「同意」，但后面跟的是一整句话，不是同意一个提议，所以更像「一致认为」。再看结尾：be thankful for 的 for 被甩到了句尾，眼睛从 for 往前找它的宾语——找到 much，就是「很多可以感谢的事」。had much to be thankful for，字面就是「有很多要感谢的」。\n→ 人们认为他们有很多值得感谢的事情"
+     }
+    ],
+    "order": "这句顺序基本不用挪，前半句是「获救后」，后半句是人们的想法，按英文顺序往下说即可。",
+    "sum": "从空难中获救后，人们一致认为，自己有很多值得感恩的事。",
+    "cmp": "和书上几乎一样，书上用「认为」，我写的「一致认为」更强调大家都同意；「感恩」和书上的「感谢」意思相同。"
+   }
+  },
+  "She was injured in a car accident two weeks ago and still in critical condition.": {
+   "ph": [
+    {
+     "t": "was injured in",
+     "b": "be injured in",
+     "m": "在……中受伤"
+    },
+    {
+     "t": "in critical condition",
+     "b": "in critical condition",
+     "m": "处于危急状态"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She was injured in a car accident two weeks ago",
+      "s": "你多半会翻成「她被受伤在一次车祸里」。念一遍就知道不对。be injured 本身就是「受伤」，不用再加「被」。in a car accident 是「在车祸中」。two weeks ago 放在句尾，中文习惯把时间提到前面。\n→ 两周前，她在一次车祸中受伤"
+     },
+     {
+      "t": "and still in critical condition",
+      "s": "这块没有动词，你可能一时不知道怎么接。其实 and 后面省略了 was，前面已经有过一次，就不重复：she was ... and (was) still in critical condition。in critical condition 是「处于危急状态」。\n→ 目前仍然处于危急状态"
+     }
+    ],
+    "order": "英文把时间 two weeks ago 放在最后，中文要提到句首，说「两周前」。",
+    "sum": "两周前，她在一次车祸中受伤，目前仍处于危急状态。",
+    "cmp": "和书上基本一样，书上把时间放在「在两周前的一次车祸中」里，我提到了句首，更清楚。"
+   }
+  },
+  "He may look fierce, but he means no harm.": {
+   "ph": [
+    {
+     "t": "means no harm",
+     "b": "mean no harm",
+     "m": "并无恶意"
+    }
+   ]
+  },
+  "You may expose yourself to unexpected dangers.": {
+   "ph": [
+    {
+     "t": "expose yourself to",
+     "b": "expose oneself to",
+     "m": "使自己面临"
+    }
+   ]
+  },
+  "Dare she risk staying where she was?": {
+   "ph": [
+    {
+     "t": "risk staying",
+     "b": "risk doing",
+     "m": "冒险做某事"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Dare she risk staying",
+      "s": "一上来 Dare 就在主语 she 前面，你可能以为是动词乱了位置。其实 dare 在这里像 can 一样当助动词用，疑问句把它提到主语前，就是「她敢……吗」。risk 后面接 -ing：risk doing 是「冒险做某事」，不能写成 risk to stay。\n→ 她敢冒险待着"
+     },
+     {
+      "t": "where she was",
+      "s": "where 你多半会翻成「哪里」，把整句变成问她在哪。放回去试：stay where she was，待在「她所在的地方」，说得通；问「哪里」就说不通了。这里的 where 不是疑问，是引出地点的从句，中文说白了就是「原地」。\n→ 在原地不动"
+     }
+    ],
+    "sum": "她敢冒险留在原地吗？",
+    "cmp": "和书上基本一致，书上译作「她敢冒险待在原地不动吗？」，多了「不动」两个字，我的更简洁一些。"
+   }
+  },
+  "It was wrong to gamble with our children's future.": {
+   "ph": [
+    {
+     "t": "gamble with",
+     "b": "gamble with",
+     "m": "拿……冒险"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It was wrong",
+      "s": "句首的 It 你多半会翻成「它」。「它是错的」——它是谁？没有答案。往后看，后面有个 to gamble……，这才是真正要说的事，It 只是先占个位置。所以这块的意思是「做那件事是错的」，先在心里放一放。\n→ ……是错误的"
+     },
+     {
+      "t": "to gamble with our children's future",
+      "s": "gamble with 你可能只认识「赌博」，翻成「和我们孩子的未来赌博」，念一遍很怪。gamble with 是「拿……冒险」，with 后面是被拿来冒险的东西。our children's future 就是「孩子们的未来」。\n→ 拿我们孩子的未来冒险"
+     }
+    ],
+    "order": "英文先说「是错的」、后说具体做了什么；中文习惯先把事情摆出来当主语，再下判断，所以把 to 后面的内容提到前面。",
+    "sum": "拿我们孩子的未来冒险，是错误的。",
+    "cmp": "和书上基本一样，书上写「拿孩子们的未来冒险是错误的」，没有出现「我们」，我保留了 our，更贴近原文。"
+   }
+  },
+  "I bet you get a lot of requests for it.": {
+   "ph": [
+    {
+     "t": "a lot of",
+     "b": "a lot of",
+     "m": "许多"
+    },
+    {
+     "t": "requests for",
+     "b": "request for",
+     "m": "对……的请求"
+    }
+   ]
+  },
+  "Environmental problems must be solved to ease the current global food shortage.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Environmental problems must be solved",
+      "s": "你多半会翻成「环境问题必须被解决」。念一遍，中文很少说「被解决」。must be solved 是被动，没说谁来解决，中文去掉「被」，直接说「必须解决环境问题」就顺了。\n→ 必须解决环境问题"
+     },
+     {
+      "t": "to ease the current global food shortage",
+      "s": "这里的 to 不是「到」，它后面跟动词 ease，是在说目的，换成「以便」。再看 current：你可能想到「电流」，放回去试试：电流的全球粮食短缺？不通。放在名词前面，current 是形容词，意思是「目前的」。food shortage 是「粮食短缺」，把 shortage 当作动作来理解，更自然。\n→ 以缓解目前全球的粮食短缺"
+     }
+    ],
+    "order": "英文是「必须解决问题」在前、目的在后，中文也按这个顺序说，不用挪。",
+    "sum": "必须解决环境问题，以缓解目前全球范围的粮食短缺。",
+    "cmp": "意思和书上一样，书上是「全球粮食短缺」，我加了「范围」让语气顺一点，两个都对。"
+   }
+  },
+  "A private wildlife management company will release the animal into the wild.": {
+   "ph": [
+    {
+     "t": "release",
+     "b": "release … into",
+     "m": "把……放归到"
+    },
+    {
+     "t": "into",
+     "b": "release … into",
+     "m": "把……放归到"
+    }
+   ]
+  },
+  "These effects can also be observed among people who have recently become unemployed.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "These effects can also be observed among people",
+      "s": "你可能想翻成「这些影响也可以被观察到在人们中间」。念一遍，是不是很别扭？去掉「被」，说「也可以观察到」，among people 放到前面，说成「在……人群中」。\n→ 在这些人群中也可以观察到这些影响"
+     },
+     {
+      "t": "who have recently become unemployed",
+      "s": "who 指谁？把两个候选放回去试：effects 失业了？影响怎么会失业，不通。people 失业了——对。所以 who 引导的是修饰 people 的从句。have recently become 是现在完成时，说的是「最近发生、现在的状态」，become unemployed 就是「失业」。\n→ 最近失业的人"
+     }
+    ],
+    "order": "英文先说「影响可以观察到」，再说在哪些人中；中文可以把「在最近失业的人群中」提到前面，再说「也能观察到这些影响」。",
+    "sum": "在最近失业的人群中，也能观察到这些影响。",
+    "cmp": "和书上基本一致，书上是「这些影响也可以在最近失业的人群中观察到」，我把地点提前了，语序更像中文。"
+   }
+  },
+  "High schoolers knew nothing about the modern financial world.": {
+   "ph": [
+    {
+     "t": "knew nothing about",
+     "b": "know nothing about",
+     "m": "对……一无所知"
+    }
+   ]
+  },
+  "In the coming era of budget cuts to education, distance learning could become the norm.": {
+   "ph": [
+    {
+     "t": "become the norm",
+     "b": "become the norm",
+     "m": "成为常态"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "In the coming era of budget cuts to education",
+      "s": "你多半会翻成「在教育的预算削减的即将到来的时代里」。念一遍，三个「的」叠在一起，绕不出来。拆开：coming 是「即将到来的」；era of budget cuts，把 cuts 当动作，说成「削减预算的时代」；cuts to education 的 to 是「对……的削减」，所以是「削减教育预算」。\n→ 在即将到来的削减教育预算的时代"
+     },
+     {
+      "t": "distance learning could become the norm",
+      "s": "could 你会不会当成过去时或虚拟？这里没有 if，没有和事实相反，前面也没有过去时的动词需要呼应，只是在说一种可能，语气委婉，翻成「可能」。norm 是「标准、常态」，become the norm 就是「成为常态」。\n→ 远程学习可能成为常态"
+     }
+    ],
+    "sum": "在即将到来的削减教育预算的时代，远程学习可能会成为常态。",
+    "cmp": "意思和书上一样，书上写「教育预算削减时代」，我把 cuts 换成动词说「削减教育预算」，更像口语。"
+   }
+  },
+  "Now scientists are bringing this ancient wisdom up-to-date.": {
+   "ph": [
+    {
+     "t": "bringing",
+     "b": "bring … up to date",
+     "m": "使……更新"
+    },
+    {
+     "t": "up-to-date",
+     "b": "bring … up to date",
+     "m": "使……更新"
+    }
+   ]
+  },
+  "Since being laid off, he has worked a series of temporary positions.": {
+   "ph": [
+    {
+     "t": "laid off",
+     "b": "lay off",
+     "m": "解雇，下岗"
+    },
+    {
+     "t": "a series of",
+     "b": "a series of",
+     "m": "一系列"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Since being laid off",
+      "s": "你多半会翻成「自从被解雇了」。意思对，但 being laid off 里的「被」在中文里可以直接去掉。lay off 是「解雇、使下岗」，被动的 being laid off 就是「下岗」。since 引出的是「从那以后」。\n→ 自从下岗后"
+     },
+     {
+      "t": "he has worked a series of temporary positions",
+      "s": "has worked 是现在完成时，说的是「从那时到现在一直」。work 你习惯后面带 in 或 at，这里直接带了 positions，意思是「做过某些工作」。a series of 是「一系列」，temporary 是「临时的」，不要和 temporary 的近形词 temple 混了。\n→ 他做过一系列临时工作"
+     }
+    ],
+    "sum": "自从下岗后，他一直做各种临时工作。",
+    "cmp": "书上是「从事过一系列临时工作」，和我基本一致，「一系列」更忠实于 a series of。"
+   }
+  },
+  "Abundant information about cooking is available either online or on TV.": {
+   "ph": [
+    {
+     "t": "is available",
+     "b": "be available",
+     "m": "可得到"
+    },
+    {
+     "t": "either",
+     "b": "either … or",
+     "m": "要么……要么，或者"
+    },
+    {
+     "t": "or",
+     "b": "either … or",
+     "m": "要么……要么，或者"
+    }
+   ]
+  },
+  "It made ample preparations for various possibilities.": {
+   "ph": [
+    {
+     "t": "preparations for",
+     "b": "preparation for",
+     "m": "为……做的准备"
+    }
+   ]
+  },
+  "I began sifting through the mass of evidence.": {
+   "ph": [
+    {
+     "t": "sifting through",
+     "b": "sift through",
+     "m": "仔细筛查"
+    },
+    {
+     "t": "the mass of",
+     "b": "a mass of",
+     "m": "大量的"
+    }
+   ]
+  },
+  "It has great influence on numerous girls and women.": {
+   "ph": [
+    {
+     "t": "influence on",
+     "b": "influence on",
+     "m": "对……的影响"
+    }
+   ]
+  },
+  "I went out with the usual gang from college on Friday night.": {
+   "ph": [
+    {
+     "t": "went out with",
+     "b": "go out with",
+     "m": "和……一起出去"
+    }
+   ]
+  },
+  "This sort of problem is quite common.": {
+   "ph": [
+    {
+     "t": "This sort of",
+     "b": "this sort of",
+     "m": "这类"
+    }
+   ]
+  },
+  "They resort to different means to survive the bitter cold.": {
+   "ph": [
+    {
+     "t": "resort to",
+     "b": "resort to",
+     "m": "诉诸，采取"
+    }
+   ]
+  },
+  "There will be crowds of people waiting for her.": {
+   "ph": [
+    {
+     "t": "crowds of",
+     "b": "crowds of",
+     "m": "大批的"
+    }
+   ]
+  },
+  "A freshman textbook will have dozens of contributors.": {
+   "ph": [
+    {
+     "t": "dozens of",
+     "b": "dozens of",
+     "m": "几十个"
+    }
+   ]
+  },
+  "Its population is now showing signs of increase.": {
+   "ph": [
+    {
+     "t": "showing signs of",
+     "b": "show signs of",
+     "m": "呈现……的迹象"
+    }
+   ]
+  },
+  "Even the old metal lunch boxes have regained popularity.": {
+   "ph": [
+    {
+     "t": "regained popularity",
+     "b": "regain popularity",
+     "m": "重新流行"
+    }
+   ]
+  },
+  "There's an ancient legend that as long as these eggs are made, evil will not prevail in the world.": {
+   "ph": [
+    {
+     "t": "as long as",
+     "b": "as long as",
+     "m": "只要"
+    }
+   ]
+  },
+  "I want my students to search out the answers to questions by using all the resources available to them.": {
+   "ph": [
+    {
+     "t": "search out",
+     "b": "search out",
+     "m": "找出"
+    },
+    {
+     "t": "answers to",
+     "b": "answer to",
+     "m": "……的答案"
+    },
+    {
+     "t": "available to",
+     "b": "be available to",
+     "m": "可供……使用的"
+    }
+   ]
+  },
+  "They feel pressured to keep up with female colleagues.": {
+   "ph": [
+    {
+     "t": "feel pressured to",
+     "b": "feel pressured to do",
+     "m": "感到有压力去做"
+    },
+    {
+     "t": "keep up with",
+     "b": "keep up with",
+     "m": "跟上"
+    }
+   ]
+  },
+  "The letter is in fairly good condition, in spite of being out of the care of trained museum staff for so long.": {
+   "ph": [
+    {
+     "t": "in fairly good condition",
+     "b": "in good condition",
+     "m": "状况良好"
+    },
+    {
+     "t": "in spite of",
+     "b": "in spite of",
+     "m": "尽管"
+    },
+    {
+     "t": "out of the care of",
+     "b": "out of the care of",
+     "m": "不在……的照管下"
+    }
+   ]
+  },
+  "If you want the good stuff, the quality, you have to see it for yourself.": {
+   "ph": [
+    {
+     "t": "have to",
+     "b": "have to do",
+     "m": "必须"
+    },
+    {
+     "t": "for yourself",
+     "b": "for oneself",
+     "m": "亲自"
+    }
+   ]
+  },
+  "Hundreds of studies show that infants prefer novelty.": {
+   "ph": [
+    {
+     "t": "Hundreds of",
+     "b": "hundreds of",
+     "m": "数百的"
+    }
+   ]
+  },
+  "In one recent study, we examined 360 adolescents' beliefs about the nature of \"smartness\".": {
+   "ph": [
+    {
+     "t": "beliefs about",
+     "b": "belief about",
+     "m": "对……的看法"
+    }
+   ]
+  },
+  "Lawyers can specialise in \"elder law\".": {
+   "ph": [
+    {
+     "t": "specialise in",
+     "b": "specialise in",
+     "m": "专攻"
+    }
+   ]
+  },
+  "Immigrant parents could talk about their country of origin and why they emigrated to the United States.": {
+   "ph": [
+    {
+     "t": "talk about",
+     "b": "talk about",
+     "m": "谈论"
+    },
+    {
+     "t": "country of origin",
+     "b": "country of origin",
+     "m": "原籍国"
+    },
+    {
+     "t": "emigrated to",
+     "b": "emigrate to",
+     "m": "移民到"
+    }
+   ]
+  },
+  "Most of the colored people migrated there at the turn of the 20th century.": {
+   "ph": [
+    {
+     "t": "at the turn of",
+     "b": "at the turn of",
+     "m": "在……之交"
+    }
+   ]
   }
+ }
 }
