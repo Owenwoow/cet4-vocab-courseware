@@ -192,7 +192,7 @@ function cardHTML(e) {
   const ex = e.ex ? `<div class="ex${e.ex.type === "真" ? " zt" : ""}">
       <div class="exlab">${e.ex.type === "真" ? `真题 ${e.ex.year}` : "例句"}</div>
       <div class="sent">${sentenceHTML(e.ex.en, e.ex.key, noteOf(NOTES, e.ex.en))}</div>
-      <div class="zh">${esc(e.ex.zh)}</div>
+      <div class="zh">${esc(e.ex.zh)}</div>${Sent.anBlock(noteOf(NOTES, e.ex.en), e.ex.zh)}
       <div class="ops"><button class="play">▶ 播放例句</button><button class="play" data-slow="1">🐢 慢速</button></div>
     </div>` : "";
   const exts = e.ext && e.ext.length ? `<div class="exts">${e.ext.map(x => `<div class="extrow" data-ext="${esc(x.word)}">
@@ -433,8 +433,14 @@ $("#viewerClose").onclick = () => { $("#viewer").hidden = true; };
 
 /* ---------- 点击事件 ---------- */
 const srcOf = el => { const s = el.closest && el.closest(".card,[data-src]"); return s ? s.dataset.word || s.dataset.src || "" : ""; };   // 例句属于哪个词条
+/* 「析」：展开 / 收起这句的语法解析 */
+function toggleAn(b) {
+  const an = b.parentElement.querySelector(".an"); if (!an) return;
+  an.hidden = !an.hidden; b.classList.toggle("on", !an.hidden);
+}
 document.addEventListener("click", e => {
   const t = e.target;
+  const ab = t.closest(".anBtn"); if (ab) { toggleAn(ab); return; }
   if (t.closest(".study .sent") && !pop.contains(t)) {   // 首页巩固里的例句也能点词查义
     const sel = getSelection().toString().trim();
     if (sel) { lookupAt(t, sel, getSelection().getRangeAt(0).getBoundingClientRect()); return; }

@@ -236,7 +236,7 @@ const Study = (() => {
   const ipaOf = e => e.prons.map(p => p.ipa).join(" ");
   /* 生词：遇见它的那句例句，生词高亮，可朗读 */
   const meetHTML = x => x.src ? `<div class="ex meet"><div class="exlab">遇见 · ${lesTitle(x.src.lid)} ${esc(x.src.entry)} 的例句</div>
-    <div class="sent" data-lid="${x.src.lid}" data-src="${esc(x.src.entry)}">${sentenceHTML(x.src.ex.en, x.card.ph ? [] : [x.src.x], noteOf(x.src.notes, x.src.ex.en), x.card.ph ? x.card.w : "")}</div><div class="dzh">${esc(x.src.ex.zh)}</div>
+    <div class="sent" data-lid="${x.src.lid}" data-src="${esc(x.src.entry)}">${sentenceHTML(x.src.ex.en, x.card.ph ? [] : [x.src.x], noteOf(x.src.notes, x.src.ex.en), x.card.ph ? x.card.w : "")}</div><div class="dzh">${esc(x.src.ex.zh)}</div>${Sent.anBlock(noteOf(x.src.notes, x.src.ex.en), x.src.ex.zh)}
     <div class="ops"><button data-sent="src">▶ 例句</button><button data-sent="srcslow">🐢 慢速</button></div></div>` : "";
   /* 生词的来历：哪天加的、书上有没有 */
   const vocabMeta = x => `生词 · ${md(x.card.at)} 加入${x.card.bk ? ` · 书中 ${lesTitle(x.card.bk[0])} #${x.card.bk[1]}${x.card.bk[2] ? " 的扩展词" : ""}` : ""}`;
@@ -572,7 +572,7 @@ const Study = (() => {
     ${x.e.tip ? `<div class="tip"><span class="tag ${esc(x.e.tip.type)}">${esc(x.e.tip.type)}</span>${esc(x.e.tip.text)}</div>` : ""}
     ${x.e.root ? `<div class="tip root"><span class="tag 构词">词根</span>${esc(x.e.root)}<span class="src add">补充</span></div>` : ""}
     ${x.e.ex ? `<div class="ex${x.e.ex.type === "真" ? " zt" : ""}"><div class="exlab">${x.e.ex.type === "真" ? `真题 ${x.e.ex.year}` : "例句"}</div>
-      <div class="sent" data-lid="${x.lid}" data-src="${esc(x.e.word)}">${sentenceHTML(x.e.ex.en, x.e.ex.key, noteOf(x.notes, x.e.ex.en))}</div><div class="dzh">${esc(x.e.ex.zh)}</div>
+      <div class="sent" data-lid="${x.lid}" data-src="${esc(x.e.word)}">${sentenceHTML(x.e.ex.en, x.e.ex.key, noteOf(x.notes, x.e.ex.en))}</div><div class="dzh">${esc(x.e.ex.zh)}</div>${Sent.anBlock(noteOf(x.notes, x.e.ex.en), x.e.ex.zh)}
       <div class="ops"><button data-sent="1">▶ 例句</button><button data-sent="slow">🐢 慢速</button></div></div>` : ""}
     ${x.e.ext && x.e.ext.length ? `<div class="dext">${x.e.ext.map(y => `<div class="dextrow"><span class="tag">扩</span><b data-sayx="${esc(y.word)}">${esc(y.word)}</b>
       <span class="ipa">${esc(y.ipa)}</span><button class="spk sm" data-sayx="${esc(y.word)}" title="读">🔊</button>
