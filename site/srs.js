@@ -18,6 +18,8 @@
      z=1 → 5；h 末位 f，或忘过≥2 次且连对<2 → 1；还没正式复习过（v=0）→ 0；
      s≥4 且连对≥4 且 q≥3 → 5；s≥4 且连对≥3 且 q≥2 → 4；s≥3 且连对≥2 → 3；其他 → 2
    出题：题型 = min(熟练度对应题型, q+1)，每次最多升一级；5 级只做快速抽查。
+   词组卡（生词本里原形含空格的，或 ph=1 的例句词组，见 isPhrase）：只出看词组选义（MEAN）和翻卡（5 级的快速抽查 QUICK），
+     不出听音、例句、拼写；熟练度不看 q（拼写题出不了，否则到不了 4、5 级）：s≥4 且连对≥4 → 5；s≥4 且连对≥3 → 4，其余同上。
    日期都用本地日期字符串 YYYY-MM-DD，一天从凌晨 4 点开始算 */
 "use strict";
 const SRS = (() => {
@@ -62,9 +64,12 @@ const SRS = (() => {
   const hist = c => c.h ?? (c.n ? c.r || "" : "");   // 旧卡没有 h：用最近一次评分顶上
   const reviews = c => c.v ?? hist(c).length;       // 记进熟练度的轮数；旧卡没有 v：h 每轮记一次，用它的长度顶上
   function streak(c) { const h = hist(c); let k = 0; while (k < h.length && h[h.length - 1 - k] === "g") k++; return k; }
-  function level(c) {
+  /* 词组卡：生词本里原形含空格的（包括以前从逐词释义划选加进来的短语），或标了 ph 的例句词组 */
+  const isPhrase = c => !!(c && (c.ph || /\s/.test(c.w || "")));
+  /* opt.phrase：按词组卡算（不传就看卡片自己） */
+  function level(c, opt = {}) {
     if (c.z) return 5;
-    const h = hist(c), k = streak(c), q = c.q || 0;
+    const h = hist(c), k = streak(c), ph = opt.phrase ?? isPhrase(c), q = ph ? 3 : c.q || 0;   // 词组卡不看 q
     if (h.endsWith("f") || ((c.l || 0) >= 2 && k < 2)) return 1;
     if (!reviews(c)) return 0;
     if (c.s >= 4 && k >= 4 && q >= 3) return 5;
@@ -73,10 +78,11 @@ const SRS = (() => {
     return 2;
   }
 
-  /* 出什么题：2 级在看词选义 / 听音选义间按正式复习次数轮换 */
-  function pickType(c) {
-    const lv = level(c);
+  /* 出什么题：2 级在看词选义 / 听音选义间按正式复习次数轮换；词组卡只有看词组选义和 5 级的快速抽查（翻卡） */
+  function pickType(c, opt = {}) {
+    const ph = opt.phrase ?? isPhrase(c), lv = level(c, {phrase: ph});
     if (lv === 5) return TYPE.QUICK;
+    if (ph) return TYPE.MEAN;
     const want = lv <= 1 ? TYPE.MEAN : lv === 2 ? reviews(c) % 2 : lv === 3 ? TYPE.CONTEXT : TYPE.SPELL;
     return Math.min(want, (c.q || 0) + 1);
   }
@@ -210,6 +216,6 @@ const SRS = (() => {
   const shift = (c, n) => ({...c, a: add(c.a, n), d: add(c.d, n)});
 
   return {EXAM, TYPE, today, reviews, add, diff, dow, monday, firstSunday, secondDue, stationDue, examCap, newCard, isDue,
-    rate, chop, isHard, dueList, level, streak, pickType, gradeChoice, gradeSpell, editDist, similar, senseKeys, posSet, distractorTag, confAdd, confDrop, shuffleSpread, pairSimilar, queue, shift};
+    rate, chop, isHard, dueList, isPhrase, level, streak, pickType, gradeChoice, gradeSpell, editDist, similar, senseKeys, posSet, distractorTag, confAdd, confDrop, shuffleSpread, pairSimilar, queue, shift};
 })();
 if (typeof module === "object" && module.exports) module.exports = SRS;

@@ -8,8 +8,8 @@
                 k 课id, g 词群号, f 火苗, o 词条序号}（取消记 0）
      log:<日期> = {g, m, f 当天评分次数, dv 当天复习的到期词数}
      vocab:<原形> = 生词本：{w 原形, x 点到的写法, m 释义, p 音标, k 出处课id, e 出处词条（空 = 没有例句，如扩展词）,
-                at 加入日期, o 加入时刻, bk 书中位置 [课id, 词条序号, 是否扩展词]} + 复习卡字段 a s d l r n t（移出记 0）。
-                加入当天算学习日，复习规则和书上的词一样；这个词所在的词群记为学过时，它从生词本「毕业」（记 0），以书上的卡为准 */
+                at 加入日期, o 加入时刻, bk 书中位置 [课id, 词条序号, 是否扩展词], ph 1 = 例句里标出的词组（w 是词组原形，x 是句中写法、拆开的用「 … 」连）} + 复习卡字段 a s d l r n t（移出记 0）。
+                加入当天算学习日，复习规则和书上的词一样（原形含空格的按词组卡出题，见 srs.js isPhrase）；这个词所在的词群记为学过时，它从生词本「毕业」（记 0），以书上的卡为准 */
 "use strict";
 const Study = (() => {
   const T = () => SRS.today();
@@ -152,7 +152,8 @@ const Study = (() => {
       fetchJSON(`data/audio/${id}.json`).catch(() => ({w: {}, s: {}, z: {}, voices: []})),
       fetchJSON(`data/roots/${id}.json`).catch(() => ({words: {}})),
       fetchJSON(`data/gloss/${id}.json`).catch(() => ({words: {}})),
-    ]).then(([les, aud, rt, gl]) => {
+      fetchJSON(`data/notes/${id}.json`).catch(() => ({sents: {}})),
+    ]).then(([les, aud, rt, gl, nt]) => {
       const by = new Map(), ext = new Map(), map = new Map();   // map：查词用，和 app.js 的 WORDMAP 一样
       for (const g of les.groups) for (const e of g.entries) {
         e.root = rt.words?.[e.word]; if (!by.has(e.word)) by.set(e.word, {e, g});
@@ -160,12 +161,12 @@ const Study = (() => {
         map.set(e.word, {word: e.word, senses: e.prons.flatMap(p => p.senses), ipa: e.prons.map(p => p.ipa).join(" "), no: e.no, entry: e, ext: false});
         for (const x of e.ext || []) if (!map.has(x.word)) map.set(x.word, {word: x.word, senses: x.senses, ipa: x.ipa, no: e.no, entry: e, ext: true});
       }
-      return {les, aud, by, ext, map, gloss: gl.words || {}};
+      return {les, aud, by, ext, map, gloss: gl.words || {}, notes: {sents: nt.sents || {}}};   // notes：例句词组与语法解析（书外补充）
     }).catch(err => { cache.delete(id); throw err; }));   // 失败的不缓存，下次重试
     return cache.get(id);
   }
   /* 例句点词查义用的那课数据（app.js 的 lookup） */
-  const lookupCtx = lid => getLesson(lid).then(x => ({lid, gloss: x.gloss, map: x.map, aud: x.aud}));
+  const lookupCtx = lid => getLesson(lid).then(x => ({lid, gloss: x.gloss, map: x.map, aud: x.aud, notes: x.notes}));
   /* 卡片列表 → 带上书上的词条内容 */
   async function resolve(items) {
     const ids = new Set();
@@ -174,7 +175,7 @@ const Study = (() => {
     return items.map(x => {
       if (x.vocab) return resolveVocab(x, ls);
       const L2 = ls[x.card.k], hit = L2.by.get(x.word);
-      return hit && {...x, lid: x.card.k, e: hit.e, grp: hit.g, aud: L2.aud};
+      return hit && {...x, lid: x.card.k, e: hit.e, grp: hit.g, aud: L2.aud, notes: L2.notes};
     }).filter(Boolean);
   }
   /* 生词：书上有这个词条就用书上的完整内容，是扩展词就用扩展词的释义，都不是就用逐词释义；
@@ -182,13 +183,13 @@ const Study = (() => {
   function resolveVocab(x, ls) {
     const c = x.card, S2 = ls[c.k], B = c.bk && ls[c.bk[0]];
     const hit = c.e && S2 && S2.by.get(c.e);
-    const src = hit && hit.e.ex ? {ex: hit.e.ex, lid: c.k, entry: c.e, x: c.x, aud: S2.aud} : null;
-    let e, grp = null, aud = S2 ? S2.aud : {w: {}, s: {}};
+    const src = hit && hit.e.ex ? {ex: hit.e.ex, lid: c.k, entry: c.e, x: c.x, aud: S2.aud, notes: S2.notes} : null;
+    let e, grp = null, aud = S2 ? S2.aud : {w: {}, s: {}}, notes = S2 ? S2.notes : null;
     const main = B && !c.bk[2] && B.by.get(c.w), ext = B && c.bk[2] && B.ext.get(c.w);
-    if (main) { e = main.e; grp = main.g; aud = B.aud; }
+    if (main) { e = main.e; grp = main.g; aud = B.aud; notes = B.notes; }
     else if (ext) { e = {word: c.w, prons: [{ipa: ext.x.ipa, senses: ext.x.senses}], freq: 0, extOf: ext.e}; grp = ext.g; aud = B.aud; }
-    else e = {word: c.w, prons: [{ipa: c.p || "", senses: Vocab.senses(c.m)}], freq: 0, gloss: true};
-    return {...x, lid: c.bk ? c.bk[0] : c.k, e, grp, aud, src, nb: true};   // nb：按生词显示（书上范围里的生词仍按词群显示）
+    else e = {word: c.w, prons: [{ipa: c.p || "", senses: Vocab.senses(c.m)}], freq: 0, gloss: true, ph: !!c.ph};   // ph：释义来自例句词组（notes）
+    return {...x, lid: c.bk ? c.bk[0] : c.k, e, grp, aud, notes, src, nb: true};   // nb：按生词显示（书上范围里的生词仍按词群显示）
   }
   /* 按书上的课 / 单元取词（包括还没记为学过的；没记过的只能看，不排复习） */
   async function bookItems(sc) {
@@ -200,7 +201,7 @@ const Study = (() => {
       for (const g of L2.les.groups) for (const e of g.entries) {
         if (known.has(e.word)) continue;
         const c = Sync.get("srs:" + e.word, 0), v = !c && vocabGet(e.word);   // 还没学、但在生词本里的，评分算进生词卡
-        out.push({word: e.word, card: c || v || null, vocab: !!v, freq: e.freq, order: (+u) * 1e6 + L2.les.lesson * 1e4 + g.no * 100 + e.no, lid: id, e, grp: g, aud: L2.aud});
+        out.push({word: e.word, card: c || v || null, vocab: !!v, freq: e.freq, order: (+u) * 1e6 + L2.les.lesson * 1e4 + g.no * 100 + e.no, lid: id, e, grp: g, aud: L2.aud, notes: L2.notes});
       }
     }
     return out;
@@ -235,7 +236,7 @@ const Study = (() => {
   const ipaOf = e => e.prons.map(p => p.ipa).join(" ");
   /* 生词：遇见它的那句例句，生词高亮，可朗读 */
   const meetHTML = x => x.src ? `<div class="ex meet"><div class="exlab">遇见 · ${lesTitle(x.src.lid)} ${esc(x.src.entry)} 的例句</div>
-    <div class="sent" data-lid="${x.src.lid}" data-src="${esc(x.src.entry)}">${sentenceHTML(x.src.ex.en, [x.src.x])}</div><div class="dzh">${esc(x.src.ex.zh)}</div>
+    <div class="sent" data-lid="${x.src.lid}" data-src="${esc(x.src.entry)}">${sentenceHTML(x.src.ex.en, x.card.ph ? [] : [x.src.x], noteOf(x.src.notes, x.src.ex.en), x.card.ph ? x.card.w : "")}</div><div class="dzh">${esc(x.src.ex.zh)}</div>${Sent.anBlock(noteOf(x.src.notes, x.src.ex.en), x.src.ex.zh)}
     <div class="ops"><button data-sent="src">▶ 例句</button><button data-sent="srcslow">🐢 慢速</button></div></div>` : "";
   /* 生词的来历：哪天加的、书上有没有 */
   const vocabMeta = x => `生词 · ${md(x.card.at)} 加入${x.card.bk ? ` · 书中 ${lesTitle(x.card.bk[0])} #${x.card.bk[1]}${x.card.bk[2] ? " 的扩展词" : ""}` : ""}`;
@@ -471,7 +472,7 @@ const Study = (() => {
 
   /* ---------- 出题用的小工具 ---------- */
   const sensesOf = e => e.prons.flatMap(p => p.senses);
-  const meanText = e => sensesOf(e).slice(0, 3).map(s => `${s.pos} ${plainMean(s.mean)}`).join("；");
+  const meanText = e => sensesOf(e).slice(0, 3).map(s => `${s.pos} ${plainMean(s.mean)}`.trim()).join("；");
   const mainPos = e => (sensesOf(e)[0] || {}).pos || "";
   /* 干扰项的候选：这一轮涉及的课里所有书上词条 + 这一轮的词 */
   async function buildPool(items) {
@@ -500,6 +501,33 @@ const Study = (() => {
     }
     return out;
   }
+  /* 词组卡：生词本里原形含空格的（含以前从逐词释义划选的短语），或从例句词组加进来的（ph） */
+  const isPh = x => !!(x.vocab && x.card && SRS.isPhrase(x.card));
+  const fakeEntry = (word, m, ipa = "") => ({word, prons: [{ipa, senses: Vocab.senses(m)}]});
+  /* 词组卡的干扰项候选：phs = 这一轮涉及的课的 notes 里所有词组 + 生词本里别的词组；vbs = 生词本里的单词 */
+  async function buildPhrasePool(items) {
+    const ph = new Map();
+    for (const id of new Set(items.flatMap(x => [x.lid, x.card && x.card.k]).filter(Boolean))) {
+      try { for (const n of Object.values((await getLesson(id)).notes.sents)) for (const p of n.ph || []) if (p.b && p.m && !ph.has(p.b)) ph.set(p.b, p.m); } catch { /* 没网就少一些候选 */ }
+    }
+    const vs = vocabMarks();
+    for (const [w, v] of vs) if (SRS.isPhrase(v) && v.m && !ph.has(w)) ph.set(w, v.m);
+    return {phs: [...ph].map(([b, m]) => fakeEntry(b, m)), vbs: vs.filter(([, v]) => !SRS.isPhrase(v) && v.m).map(([w, v]) => fakeEntry(w, v.m, v.p))};
+  }
+  /* 看词组选义的 3 个干扰项：先取别的词组的释义，不够从生词释义补，再不够从书上词条补；同一原形、相同释义的不要 */
+  function phraseDistractors(x) {
+    const me = meanText(x.e), lw = x.word.toLowerCase(), seen = new Set([me]), out = [];
+    const take = list => {
+      for (const e of shuffle(list.slice())) {
+        if (out.length >= 3) return;
+        const m = meanText(e);
+        if (!m.trim() || seen.has(m) || e.word.toLowerCase() === lw) continue;
+        seen.add(m); out.push({e, tag: null});
+      }
+    };
+    take(D.phs); take(D.vbs); take(D.pool.map(p => p.e));
+    return out;
+  }
   const shuffle = a => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
   /* 例句挖空：生词用遇见它的那句，书上的词用词条例句；找不到这个词就返回 null */
   function clozeOf(x) {
@@ -513,17 +541,17 @@ const Study = (() => {
   /* 这个词这次出什么题 */
   function kindFor(x) {
     if (!meanText(x.e)) return "flip";               // 没有现成释义的生词出不了选择题
-    if (D.learn) return (D.st.get(x.word) || {}).stage ? "listen" : "mean";
+    if (D.learn) return !isPh(x) && (D.st.get(x.word) || {}).stage ? "listen" : "mean";   // 词组卡两关都是看词组选义
     if (D.flip) return "flip";
     if (D.kind.has(x.word)) return D.kind.get(x.word);   // 答错再来：同一种题
-    const ty = x.card ? SRS.pickType(x.card) : SRS.TYPE.MEAN;
+    const ty = x.card ? SRS.pickType(x.card, {phrase: isPh(x)}) : SRS.TYPE.MEAN;   // 词组卡只会是看词组选义或翻卡
     if (ty === SRS.TYPE.CONTEXT) return clozeOf(x) && SRS.reviews(x.card) % 2 === 0 ? "cloze" : "reverse";
     return ["mean", "listen", null, "spell", "flip"][ty];
   }
   function makeQ(x, kind) {
     const q = {x, kind, state: "ask", t0: 0};
     if (kind === "mean" || kind === "listen" || kind === "cloze" || kind === "reverse") {
-      const cs = shuffle([{e: x.e, tag: null}, ...distractors(x)]);
+      const cs = shuffle([{e: x.e, tag: null}, ...(isPh(x) ? phraseDistractors(x) : distractors(x))]);
       q.es = cs.map(c => c.e); q.tags = cs.map(c => c.tag);
       q.ans = q.es.indexOf(x.e);
       q.opts = q.es.map(e => (kind === "mean" || kind === "listen" ? meanText(e) : e.word));
@@ -538,14 +566,15 @@ const Study = (() => {
     setHead("巩固 · " + info.title);
     view().innerHTML = `<p class="empty">加载中…</p>`;
     const learn = !preset && sc === "learn", hash = location.hash;
-    let items, pool = [];
+    let items, pool = [], pp = {phs: [], vbs: []};
     try {
       items = preset ? preset.items : await itemsOf(sc);
       if (!preset && sc !== "due") items = sortBy(items, learn ? "course" : S.drillOrder);   // 到期的已按熟练度排好
       if (learn || S.drillMode !== "flip") pool = await buildPool(items);
+      if ((learn || S.drillMode !== "flip") && items.some(isPh)) pp = await buildPhrasePool(items);
     } catch (err) { loadFail(err); return; }
     if (location.hash !== hash) return;              // 加载期间去了别的页
-    D = {sc, title: info.title, items, learn, flip: !learn && S.drillMode === "flip", pool, hash,
+    D = {sc, title: info.title, items, learn, flip: !learn && S.drillMode === "flip", pool, ...pp, hash,
       queue: learn ? items.slice(0, WINDOW) : items.slice(), pending: learn ? items.slice(WINDOW) : [],
       st: new Map(), kind: new Map(), cf: new Map(), rated: new Map(), passed: 0, res: {g: 0, m: 0, f: 0, k: 0}, q: null, hist: [], back: 0};
     if (!items.length) {
@@ -566,12 +595,12 @@ const Study = (() => {
   }
 
   /* 卡片背面：释义、记忆法、词根、例句、扩展词、生词出处（翻卡和答错后都用） */
-  const backHTML = x => `<div class="dback">${senseHTML(x.e)}${x.e.gloss ? `<div class="dnote">${x.e.prons[0].senses.length ? "" : "没有现成释义，看例句 · "}<span class="src add">补充</span> 例句逐词释义</div>` : ""}
+  const backHTML = x => `<div class="dback">${senseHTML(x.e)}${x.e.gloss ? `<div class="dnote">${x.e.prons[0].senses.length ? "" : "没有现成释义，看例句 · "}<span class="src add">补充</span> ${x.e.ph ? "例句词组释义" : "例句逐词释义"}</div>` : ""}
     ${x.e.extOf ? `<div class="dnote">书上 #${x.e.extOf.no} ${esc(x.e.extOf.word)} 的扩展词</div>` : ""}
     ${x.e.tip ? `<div class="tip"><span class="tag ${esc(x.e.tip.type)}">${esc(x.e.tip.type)}</span>${esc(x.e.tip.text)}</div>` : ""}
     ${x.e.root ? `<div class="tip root"><span class="tag 构词">词根</span>${esc(x.e.root)}<span class="src add">补充</span></div>` : ""}
     ${x.e.ex ? `<div class="ex${x.e.ex.type === "真" ? " zt" : ""}"><div class="exlab">${x.e.ex.type === "真" ? `真题 ${x.e.ex.year}` : "例句"}</div>
-      <div class="sent" data-lid="${x.lid}" data-src="${esc(x.e.word)}">${sentenceHTML(x.e.ex.en, x.e.ex.key)}</div><div class="dzh">${esc(x.e.ex.zh)}</div>
+      <div class="sent" data-lid="${x.lid}" data-src="${esc(x.e.word)}">${sentenceHTML(x.e.ex.en, x.e.ex.key, noteOf(x.notes, x.e.ex.en))}</div><div class="dzh">${esc(x.e.ex.zh)}</div>${Sent.anBlock(noteOf(x.notes, x.e.ex.en), x.e.ex.zh)}
       <div class="ops"><button data-sent="1">▶ 例句</button><button data-sent="slow">🐢 慢速</button></div></div>` : ""}
     ${x.e.ext && x.e.ext.length ? `<div class="dext">${x.e.ext.map(y => `<div class="dextrow"><span class="tag">扩</span><b data-sayx="${esc(y.word)}">${esc(y.word)}</b>
       <span class="ipa">${esc(y.ipa)}</span><button class="spk sm" data-sayx="${esc(y.word)}" title="读">🔊</button>
@@ -595,7 +624,7 @@ const Study = (() => {
     const pastOps = `${prevBtn}<wa-button variant="brand" data-fwd="1">${D.back > 1 ? "下一个 →" : "回到当前 →"} <kbd>空格</kbd></wa-button>`;
     if (q.kind === "flip" || (past && q.state !== "done")) {   // 翻卡；回看时没作答就斩掉的题也按翻卡样子展示
       const open = q.flipped || past;
-      view().innerHTML = `<div class="drill${open ? " flipped" : ""}${past ? " past" : ""}">${bar}<div class="dcard">${meta}${wordHead(x)}${open ? backHTML(x) : ""}</div>
+      view().innerHTML = `<div class="drill${open ? " flipped" : ""}${past ? " past" : ""}">${bar}<div class="dcard${open ? "" : " locked"}">${meta}${wordHead(x)}${open ? backHTML(x) : ""}</div>
         <div class="dops">${past ? pastOps : q.flipped
           ? `${prevBtn}<wa-button variant="danger" data-rate="f">忘了 <kbd>1</kbd></wa-button><wa-button variant="warning" data-rate="m">模糊 <kbd>2</kbd></wa-button>
              <wa-button variant="success" data-rate="g">记得 <kbd>3</kbd></wa-button>${D.learn ? "" : `<wa-button appearance="outlined" data-rate="k" title="标为已会，以后不再出现">已会 <kbd>4</kbd></wa-button>`}${chopBtn(x)}`
@@ -618,7 +647,7 @@ const Study = (() => {
       ? `${prevBtn}<wa-button variant="brand" data-next="1">继续 <kbd>空格</kbd></wa-button>`
       : q.kind === "spell" ? `${prevBtn}<wa-button appearance="outlined" data-opt="-1">不会 <kbd>Esc</kbd></wa-button><wa-button variant="brand" data-spell="1">提交 <kbd>Enter</kbd></wa-button>${chopBtn(x)}`
       : `${prevBtn}<wa-button appearance="outlined" data-opt="-1">不认识 <kbd>0</kbd></wa-button>${chopBtn(x)}`;
-    view().innerHTML = `<div class="drill quiz${done ? (ok ? " right" : " wrong") : ""}${past ? " past" : ""}">${bar}<div class="dcard">${meta}${body}${opts}${verdict}${done && q.conf ? cmpHTML(q.conf.e) : ""}${done ? backHTML(x) : ""}</div><div class="dops">${ops}</div></div>`;
+    view().innerHTML = `<div class="drill quiz${done ? (ok ? " right" : " wrong") : ""}${past ? " past" : ""}">${bar}<div class="dcard${done || past ? "" : " locked"}">${meta}${body}${opts}${verdict}${done && q.conf ? cmpHTML(q.conf.e) : ""}${done ? backHTML(x) : ""}</div><div class="dops">${ops}</div></div>`;
     if (!done) {
       q.t0 = Date.now();                               // 从回看回来重新计时
       if (!q.said) { q.said = true; if (q.kind === "listen" || q.kind === "spell" || (q.kind === "mean" && S.autoSay)) sayWord(x); }
