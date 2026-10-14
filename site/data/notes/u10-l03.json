@@ -1,333 +1,567 @@
 {
-  "_note": "例句词组与语法解析（书外补充，AI 生成）",
-  "sents": {
-    "It was recognised that crying in response to drama brought pleasure.": {
-      "ph": [{"t": "in response to", "b": "in response to", "m": "因……而；对……的反应"}],
-      "an": {
-        "parts": [
-          {"t": "It was recognised", "r": "主干"},
-          {"t": " that ", "r": ""},
-          {"t": "crying in response to drama brought pleasure", "r": "主语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "It 是形式主语，真正的主语是后面 that 引导的主语从句，所以书上先说「人们已经意识到」，再接从句内容。",
-          "was recognised 是被动且没有施动者，书上补出泛指的「人们」，译成主动句。",
-          "从句里 crying in response to drama 是动名词短语作主语，in response to drama 修饰 crying，书上译成「因戏剧而哭泣」；brought pleasure 译成「能带来愉悦感」。"
-        ],
-        "lit": "它被认识到，哭泣作为对戏剧的反应带来了愉悦。"
-      }
-    },
-    "Climate change will have a dramatic impact on the health of the planet.": {
-      "ph": [{"t": "have a dramatic impact on", "b": "have an impact on", "m": "对……产生影响"}]
-    },
-    "The city officials then decided to take drastic action.": {
-      "ph": [
-        {"t": "take", "b": "take … action", "m": "采取行动"},
-        {"t": "action", "b": "take … action", "m": "采取行动"}
-      ]
-    },
-    "It's a charity comedy night with lots of different acts.": {
-      "ph": [{"t": "lots of", "b": "lots of", "m": "许多"}]
-    },
-    "The biography shows him in a favourable light.": {
-      "ph": [{"t": "in a favourable light", "b": "in a favourable light", "m": "以有利的角度；正面地"}]
-    },
-    "Paperbacks of popular literature are more likely to be replaced by e-books.": {
-      "ph": [
-        {"t": "likely to", "b": "be likely to", "m": "有可能"},
-        {"t": "be replaced by", "b": "be replaced by", "m": "被……取代"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Paperbacks of popular literature", "r": "主干"},
-          {"t": " are more likely to be replaced by e-books", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "主语 Paperbacks of popular literature 里 of 短语作后置定语，英文放后面，书上前置成「通俗文学的平装书」。",
-          "be likely to 后面接被动不定式 to be replaced by，more 是比较级（比起以前更……），书上译成「更有可能被电子书所取代」，用「被……所取代」保留被动。"
-        ],
-        "lit": "通俗文学的平装书更有可能被电子书取代。"
-      }
-    },
-    "Most of the students here need help with literacy and numeracy.": {
-      "ph": [{"t": "help with", "b": "help with", "m": "在……方面的帮助"}]
-    },
-    "I am not referring to \"small\" people in the literal sense of the word.": {
-      "ph": [
-        {"t": "referring to", "b": "refer to", "m": "指的是"},
-        {"t": "in the literal sense of the word", "b": "in the literal sense of the word", "m": "从字面意义上"}
-      ]
-    },
-    "He turned this novel into an English best-seller.": {
-      "ph": [
-        {"t": "turned", "b": "turn … into", "m": "把……变成"},
-        {"t": "into", "b": "turn … into", "m": "把……变成"}
-      ]
-    },
-    "Learning from experience is something that takes time and patience.": {
-      "ph": [{"t": "Learning from", "b": "learn from", "m": "从……中学习"}],
-      "an": {
-        "parts": [
-          {"t": "Learning from experience is something", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that takes time and patience", "r": "定语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "Learning from experience 是动名词短语作主语，书上译成「从经验中学习」，后面不加「这件事」。",
-          "that 引导定语从句，先行词是 something，that 在从句中作主语（something takes time and patience）。",
-          "书上没有译成「是需要时间和耐心的东西」，而是把 something 省去，直接说「需要时间和耐心」，让定语从句并入谓语。"
-        ],
-        "lit": "从经验中学习是需要时间和耐心的某种事。"
-      }
-    },
-    "He was very patient with me.": {
-      "ph": [{"t": "patient with", "b": "be patient with", "m": "对……有耐心"}]
-    },
-    "He held a number of patents for his many innovations.": {
-      "ph": [{"t": "a number of", "b": "a number of", "m": "许多"}]
-    },
-    "Few people are successful when they try to build their first brand.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "Few people are successful", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "when they try to build their first brand", "r": "时间状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "Few 不带 a，表示否定含义（几乎没有），所以书上译成「很少有人……」，而不是「有一些人」。",
-          "when 引导时间状语从句，英文放句末，书上把它提到中间，译成「在尝试……时取得成功」。",
-          "从句里 their 指回 they（即 people），书上译成「自己的」，避免重复出现「他们」。"
-        ],
-        "lit": "很少的人是成功的，当他们尝试建立他们的第一个品牌的时候。"
-      }
-    },
-    "The bottle is sealed, and the label says \"pure water\".": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "The bottle is sealed", "r": "并列分句"},
-          {"t": ", and ", "r": ""},
-          {"t": "the label says \"pure water\"", "r": "并列分句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "and 连接两个并列分句，各有各的主语。",
-          "is sealed 是「系动词 + 过去分词」，强调瓶子处于封好的状态，书上译成「是密封的」，不是「被密封」。",
-          "the label says 是无生命名词作主语，书上转成地点状语「标签上写着」，比「标签说」自然。"
-        ],
-        "lit": "瓶子是被密封的，并且标签说「纯净水」。"
-      }
-    },
-    "Readers proceed at their own pace.": {
-      "ph": [{"t": "at their own pace", "b": "at one's own pace", "m": "按自己的节奏"}]
-    },
-    "Most households now own at least one car.": {
-      "ph": [{"t": "at least", "b": "at least", "m": "至少"}]
-    },
-    "A housewife who opens a shop online can even out-earn a white-collar worker.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "A housewife ", "r": "主干"},
-          {"t": "who opens a shop online", "r": "定语从句"},
-          {"t": " can even out-earn a white-collar worker", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "who 引导定语从句，先行词是 A housewife，who 在从句中作主语（who opens a shop online）；书上把它前置成「在网上开店的家庭主妇」。",
-          "out-earn 是前缀 out-（超过）加 earn（挣钱），一个词表示「比……挣得多」，书上拆成「比……挣得多」。",
-          "even 修饰 can out-earn，表示出乎意料，译成「甚至」。"
-        ],
-        "lit": "一个在网上开一家店的家庭主妇甚至能比一个白领挣得更多。"
-      }
-    },
-    "It often widens the gap between rich and poor and sustains the old world order.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "It often widens the gap between rich and poor", "r": "主干"},
-          {"t": " and ", "r": ""},
-          {"t": "sustains the old world order", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "widens … and sustains … 是两个并列谓语，共用主语 It，书上顺序译成两个动作：「扩大……维持……」。",
-          "rich and poor 是 the rich and the poor 的省略写法，形容词表示一类人（富人和穷人）；the gap between … 在书上译成「贫富差距」，压缩成一个名词。"
-        ],
-        "lit": "它经常扩大富人与穷人之间的差距并维持旧的世界秩序。"
-      }
-    },
-    "Faith in the skill of a garage mechanic is increased by a uniform.": {
-      "ph": [{"t": "Faith in", "b": "faith in", "m": "对……的信心"}],
-      "an": {
-        "parts": [
-          {"t": "Faith in the skill of a garage mechanic", "r": "主干"},
-          {"t": " is increased by a uniform", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "is increased by a uniform 是被动式，by 后面是无生命的施动者，书上改成主动「一套制服增加了……」。",
-          "Faith in the skill 是名词短语，隐含「谁对技能有信心」，书上补出泛指的「人们」，展开成「人们对……技能的信心」。"
-        ],
-        "lit": "对一个汽车修理厂机械师的技能的信心被一套制服增加。"
-      }
-    },
-    "All at once she lost her temper.": {
-      "ph": [
-        {"t": "All at once", "b": "all at once", "m": "突然"},
-        {"t": "lost her temper", "b": "lose one's temper", "m": "发脾气"}
-      ]
-    },
-    "She looked at him with contempt.": {
-      "ph": [{"t": "with contempt", "b": "with contempt", "m": "轻蔑地"}]
-    },
-    "He must have been wearing gloves.": {
-      "ph": [{"t": "must have been wearing", "b": "must have done", "m": "一定做过（对过去的推测）"}]
-    },
-    "The plane is going to land at another airport.": {
-      "ph": [{"t": "land at", "b": "land at", "m": "降落在"}]
-    },
-    "The giant jet will be forced to land.": {
-      "ph": [{"t": "be forced to", "b": "be forced to do", "m": "被迫做某事"}]
-    },
-    "Long queues and delayed flights at airports have become a topic for conversation in Britain.": {
-      "ph": [{"t": "a topic for conversation", "b": "a topic for conversation", "m": "谈论的话题"}],
-      "an": {
-        "parts": [
-          {"t": "Long queues and delayed flights at airports", "r": "主干"},
-          {"t": " have become a topic for conversation in Britain", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "主语是并列的 Long queues and delayed flights，at airports 作后置定语修饰两者；书上把这个名词短语展开成主谓式的「机场排长队和航班延误」。",
-          "delayed 是过去分词作定语，flights 与 delay 是被动关系（航班被延误），书上译成「航班延误」。",
-          "have become 是现在完成时，强调现在已经成为的结果，译成「已经成为」；a topic for conversation 译成「人们谈论的话题」。"
-        ],
-        "lit": "在机场的长队和被延误的航班已经成为英国的一个谈话的话题。"
-      }
-    },
-    "He was rushed to the hospital by helicopter.": {
-      "ph": [{"t": "was rushed to", "b": "be rushed to", "m": "被火速送往"}]
-    },
-    "There are a few pilot schools already making the transition to digital books.": {
-      "ph": [{"t": "making the transition to", "b": "make the transition to", "m": "向……过渡"}]
-    },
-    "Some of the people who work in Songdo complain about boredom in the workplace.": {
-      "ph": [{"t": "complain about", "b": "complain about", "m": "抱怨"}],
-      "an": {
-        "parts": [
-          {"t": "Some of the people", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "who work in Songdo", "r": "定语从句"},
-          {"t": " complain about boredom in the workplace", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "who 引导定语从句，先行词是 the people，who 在从句中作主语（who work in Songdo）。",
-          "英文 Some of the people 后面跟定语从句，书上把从句前置，译成「一些在松岛工作的人」。",
-          "complain about boredom 的 boredom 是抽象名词，书上译成形容词性的「无聊」：「抱怨工作场所无聊」。"
-        ],
-        "lit": "那些在松岛工作的人中的一些抱怨关于工作场所的无聊。"
-      }
-    },
-    "People the world over are afraid of a further plunge in oil prices.": {
-      "ph": [
-        {"t": "the world over", "b": "the world over", "m": "全世界"},
-        {"t": "are afraid of", "b": "be afraid of", "m": "担心；害怕"},
-        {"t": "a further plunge in", "b": "a plunge in", "m": "……的下跌"}
-      ]
-    },
-    "He dived into the river but couldn't reach the surface.": {
-      "ph": [{"t": "dived into", "b": "dive into", "m": "跳进"}]
-    },
-    "Some young adults are drowning in credit-card debt.": {
-      "ph": [{"t": "drowning in", "b": "drown in", "m": "被……淹没"}]
-    },
-    "She asked the waiter to cut the cheese into slices.": {
-      "ph": [
-        {"t": "cut", "b": "cut … into", "m": "把……切成"},
-        {"t": "into", "b": "cut … into", "m": "把……切成"}
-      ]
-    },
-    "Performance is your best bargaining chip when you are seeking a raise.": {
-      "ph": [],
-      "an": {
-        "parts": [
-          {"t": "Performance is your best bargaining chip", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "when you are seeking a raise", "r": "时间状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "when 引导时间状语从句，英文放句末，书上提到句首，译成「当你要求加薪时，……」。",
-          "从句用现在进行时 are seeking，指正在争取的这个阶段，书上译成「要求加薪」；raise 是名词，书上译成动词性的「加薪」。",
-          "bargaining 是动名词作定语，说明筹码的用途（用来谈判的筹码），所以是「谈判筹码」。"
-        ],
-        "lit": "业绩是你最好的谈判筹码，当你正在寻求一次加薪的时候。"
-      }
-    },
-    "Experts observe that \"textbooks come in layers, something like an onion.\"": {
-      "ph": [{"t": "something like", "b": "something like", "m": "有点像"}],
-      "an": {
-        "parts": [
-          {"t": "Experts observe", "r": "主干"},
-          {"t": " that ", "r": ""},
-          {"t": "\"textbooks come in layers, something like an onion.\"", "r": "宾语从句"}
-        ],
-        "pts": [
-          "that 引导 observe 的宾语从句，从句内容是引号里的话；这里 observe 是「说出、评论」，不是「观察」，所以书上译成「专家说」。",
-          "something like an onion 是跟在逗号后的名词短语，补充说明前面整个分句的情形，书上译成「有点像洋葱」。"
-        ],
-        "lit": "专家观察到，「教科书是成层次出现的，某种像洋葱的东西。」"
-      }
-    },
-    "This can help improve the quality of the restaurants they dine in.": {
-      "ph": [{"t": "dine in", "b": "dine in", "m": "在……就餐"}]
-    },
-    "It turns parks into picnic sites.": {
-      "ph": [
-        {"t": "turns", "b": "turn … into", "m": "把……变成"},
-        {"t": "into", "b": "turn … into", "m": "把……变成"}
-      ]
-    },
-    "After the operation you may find it difficult to chew and swallow.": {
-      "ph": [{"t": "find it difficult to", "b": "find it difficult to do", "m": "发现难以做某事"}]
-    },
-    "I do not chew gum in public.": {
-      "ph": [{"t": "in public", "b": "in public", "m": "在公共场合"}]
-    },
-    "Taking a nap after learning can help you find the way through the maze.": {
-      "ph": [{"t": "Taking a nap", "b": "take a nap", "m": "小睡一会儿"}]
-    },
-    "Tea is poured into a cup from a teapot.": {
-      "ph": [{"t": "poured into", "b": "pour into", "m": "倒入"}]
-    },
-    "They're asked to guess that person's name.": {
-      "ph": [{"t": "asked to", "b": "be asked to do", "m": "被要求做某事"}]
-    },
-    "He attempts to rebel against the existing social order.": {
-      "ph": [
-        {"t": "attempts to", "b": "attempt to do", "m": "企图做某事"},
-        {"t": "rebel against", "b": "rebel against", "m": "反抗"}
-      ]
-    },
-    "The police were able to take preventive action and avoid a possible riot.": {
-      "ph": [
-        {"t": "were able to", "b": "be able to", "m": "能够；得以"},
-        {"t": "take", "b": "take … action", "m": "采取措施"},
-        {"t": "action", "b": "take … action", "m": "采取措施"}
-      ]
-    },
-    "Her eyes were filled with terror.": {
-      "ph": [{"t": "were filled with", "b": "be filled with", "m": "充满"}]
-    },
-    "He fell from a tall palm tree by accident.": {
-      "ph": [{"t": "by accident", "b": "by accident", "m": "意外地；不小心"}]
+ "_note": "例句词组与语法解析（书外补充，AI 生成）",
+ "sents": {
+  "It was recognised that crying in response to drama brought pleasure.": {
+   "ph": [
+    {
+     "t": "in response to",
+     "b": "in response to",
+     "m": "因……而；对……的反应"
     }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It was recognised that",
+      "s": "你多半会翻成「它被认识到」。念一遍，中文没这种说法。It was recognised that…… 是英文常见的开头，真正的内容全在 that 后面。中文换成有人在「意识到」，没有具体的人就说「人们」。\n→ 人们已经意识到"
+     },
+     {
+      "t": "crying in response to drama",
+      "s": "crying 打头，-ing 开头当主语，就是「哭」这件事。in response to 你可能想翻成「在对……的回应里」，太绕。看到 in response to，脑子里换成「因为……、对……有反应」。drama 在这儿是「戏剧」。哭是因为什么？因为戏剧。\n→ 因戏剧而哭泣"
+     },
+     {
+      "t": "brought pleasure",
+      "s": "这块照字面翻就行：bring 是「带来」，pleasure 是「愉悦」。\n→ 能带来愉悦感"
+     }
+    ],
+    "sum": "人们已经意识到，看戏时哭一场是能带来愉悦感的。",
+    "cmp": "和书上基本一样。书上说「因戏剧而哭泣」，我的「看戏时哭一场」更口语，意思相同。"
+   }
+  },
+  "Climate change will have a dramatic impact on the health of the planet.": {
+   "ph": [
+    {
+     "t": "have a dramatic impact on",
+     "b": "have an impact on",
+     "m": "对……产生影响"
+    }
+   ]
+  },
+  "The city officials then decided to take drastic action.": {
+   "ph": [
+    {
+     "t": "take",
+     "b": "take … action",
+     "m": "采取行动"
+    },
+    {
+     "t": "action",
+     "b": "take … action",
+     "m": "采取行动"
+    }
+   ]
+  },
+  "It's a charity comedy night with lots of different acts.": {
+   "ph": [
+    {
+     "t": "lots of",
+     "b": "lots of",
+     "m": "许多"
+    }
+   ]
+  },
+  "The biography shows him in a favourable light.": {
+   "ph": [
+    {
+     "t": "in a favourable light",
+     "b": "in a favourable light",
+     "m": "以有利的角度；正面地"
+    }
+   ]
+  },
+  "Paperbacks of popular literature are more likely to be replaced by e-books.": {
+   "ph": [
+    {
+     "t": "likely to",
+     "b": "be likely to",
+     "m": "有可能"
+    },
+    {
+     "t": "be replaced by",
+     "b": "be replaced by",
+     "m": "被……取代"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Paperbacks of popular literature",
+      "s": "popular literature 你多半会翻成「受欢迎的文学」。这里的 popular 是「大众的、通俗的」，popular literature 就是「通俗文学」。of 把它挂在 paperbacks 后面，是「通俗文学的平装书」。\n→ 通俗文学的平装书"
+     },
+     {
+      "t": "are more likely to be replaced by e-books",
+      "s": "先抓 more likely to，眼睛往后找 to，找到了：be likely to do 是「有可能做」，more 就是「更有可能」。后面 be replaced by 是被动：平装书不是去取代别人，而是被换掉。by 后面的 e-books 才是来取代的。你要是翻成「被电子书取代」当然对，中文再顺一点可以说「会被电子书取代」。\n→ 更有可能被电子书所取代"
+     }
+    ],
+    "sum": "通俗文学的平装书更有可能被电子书取代。",
+    "cmp": "意思一样，书上多了个「所」，书面一点，「被……所取代」是常见的书面说法。"
+   }
+  },
+  "Most of the students here need help with literacy and numeracy.": {
+   "ph": [
+    {
+     "t": "help with",
+     "b": "help with",
+     "m": "在……方面的帮助"
+    }
+   ]
+  },
+  "I am not referring to \"small\" people in the literal sense of the word.": {
+   "ph": [
+    {
+     "t": "referring to",
+     "b": "refer to",
+     "m": "指的是"
+    },
+    {
+     "t": "in the literal sense of the word",
+     "b": "in the literal sense of the word",
+     "m": "从字面意义上"
+    }
+   ]
+  },
+  "He turned this novel into an English best-seller.": {
+   "ph": [
+    {
+     "t": "turned",
+     "b": "turn … into",
+     "m": "把……变成"
+    },
+    {
+     "t": "into",
+     "b": "turn … into",
+     "m": "把……变成"
+    }
+   ]
+  },
+  "Learning from experience is something that takes time and patience.": {
+   "ph": [
+    {
+     "t": "Learning from",
+     "b": "learn from",
+     "m": "从……中学习"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Learning from experience",
+      "s": "Learning 打头，-ing 开头当主语，就是「学习」这件事。from experience 是「从经验中」。\n→ 从经验中学习"
+     },
+     {
+      "t": "is something that takes time and patience",
+      "s": "that 指谁？紧挨着它前面的是 something，候选还有 experience。放回去试：something takes time and patience，一件需要时间和耐心的事，通；experience takes time and patience，经验需要时间和耐心？勉强，而且句子的重点是「学习」。所以 that 指 something，that takes time and patience 是在说明 something。takes 你可能翻成「拿走」，这里是「需要」。\n→ 是需要时间和耐心的事"
+     }
+    ],
+    "sum": "从经验中学习是一件需要时间和耐心的事。",
+    "cmp": "书上把 something that 省掉了，直接说「需要时间和耐心」，更简洁，意思没变。"
+   }
+  },
+  "He was very patient with me.": {
+   "ph": [
+    {
+     "t": "patient with",
+     "b": "be patient with",
+     "m": "对……有耐心"
+    }
+   ]
+  },
+  "He held a number of patents for his many innovations.": {
+   "ph": [
+    {
+     "t": "a number of",
+     "b": "a number of",
+     "m": "许多"
+    }
+   ]
+  },
+  "Readers proceed at their own pace.": {
+   "ph": [
+    {
+     "t": "at their own pace",
+     "b": "at one's own pace",
+     "m": "按自己的节奏"
+    }
+   ]
+  },
+  "Most households now own at least one car.": {
+   "ph": [
+    {
+     "t": "at least",
+     "b": "at least",
+     "m": "至少"
+    }
+   ]
+  },
+  "A housewife who opens a shop online can even out-earn a white-collar worker.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "A housewife who opens a shop online",
+      "s": "who 指谁？候选是 housewife 和 shop。放回去试：shop opens a shop？不通，who 也只能指人。所以是 housewife 开店。who 引导的句子在说明是哪种主妇，中文把它放到前面，用「……的」连起来：「在网上开店的家庭主妇」。\n→ 一个在网上开店的家庭主妇"
+     },
+     {
+      "t": "can even out-earn",
+      "s": "out-earn 你多半不认识。拆开看：out- 加在动词前，意思是「胜过」，out-earn 就是「挣得比……多」。even 是「甚至」，放在 can 后面，管后面整件事。\n→ 甚至能挣得比……多"
+     },
+     {
+      "t": "a white-collar worker",
+      "s": "这块照字面翻就行：white-collar 是「白领的」，worker 是「工作者」，合起来就是「白领」。\n→ 一个白领"
+     }
+    ],
+    "order": "out-earn 后面接宾语，中文里「挣得比」要和宾语放在一起：「甚至比白领挣得多」。",
+    "sum": "在网上开店的家庭主妇，收入甚至能比白领还高。",
+    "cmp": "意思一样。书上是「甚至比一个白领挣得多」，我换成了「收入……比白领还高」，更口语。"
+   }
+  },
+  "Faith in the skill of a garage mechanic is increased by a uniform.": {
+   "ph": [
+    {
+     "t": "Faith in",
+     "b": "faith in",
+     "m": "对……的信心"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Faith in the skill",
+      "s": "你多半会翻成「信仰在技能里」。念一遍，不通。faith in 是搭配，意思是「对……的信心」，in 不翻成「在」。skill 是「技能、手艺」。\n→ 对……技能的信心"
+     },
+     {
+      "t": "of a garage mechanic",
+      "s": "garage 你可能翻成「车库」。可 garage mechanic 是修车的人，车库里不会有机械师，这里的 garage 是「汽车修理厂」。mechanic 是「机械师、修理工」。of 说明这技能是谁的。\n→ 汽车修理厂机械师的"
+     },
+     {
+      "t": "is increased by a uniform",
+      "s": "你多半会翻成「被一套制服增加」。念一遍，别扭吧？英文爱让东西当主语，中文更习惯「东西让人怎么样」。把 by 后面的 a uniform 提上来当主语，increased 变成「增加」，信心是被增加的对象。\n→ 被一套制服增加"
+     }
+    ],
+    "order": "英文是「信心 被 制服 增加」，中文把 by 后面的 uniform 提到前面当主语：「一套制服增加了对……的信心」。",
+    "sum": "一套制服能让人对汽车修理厂机械师的技术更有信心。",
+    "cmp": "书上是「一套制服增加了人们对汽车修理厂机械师技能的信心」，思路一样，我把「增加信心」换成「更有信心」，口语一点。"
+   }
+  },
+  "All at once she lost her temper.": {
+   "ph": [
+    {
+     "t": "All at once",
+     "b": "all at once",
+     "m": "突然"
+    },
+    {
+     "t": "lost her temper",
+     "b": "lose one's temper",
+     "m": "发脾气"
+    }
+   ]
+  },
+  "She looked at him with contempt.": {
+   "ph": [
+    {
+     "t": "with contempt",
+     "b": "with contempt",
+     "m": "轻蔑地"
+    }
+   ]
+  },
+  "He must have been wearing gloves.": {
+   "ph": [
+    {
+     "t": "must have been wearing",
+     "b": "must have done",
+     "m": "一定做过（对过去的推测）"
+    }
+   ]
+  },
+  "The plane is going to land at another airport.": {
+   "ph": [
+    {
+     "t": "land at",
+     "b": "land at",
+     "m": "降落在"
+    }
+   ]
+  },
+  "The giant jet will be forced to land.": {
+   "ph": [
+    {
+     "t": "be forced to",
+     "b": "be forced to do",
+     "m": "被迫做某事"
+    }
+   ]
+  },
+  "Long queues and delayed flights at airports have become a topic for conversation in Britain.": {
+   "ph": [
+    {
+     "t": "a topic for conversation",
+     "b": "a topic for conversation",
+     "m": "谈论的话题"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Long queues and delayed flights at airports",
+      "s": "你多半会翻成「长的队伍和被延误的航班在机场」。念一遍，是不是像一堆名词堆在一起？英文爱用名词，中文爱用动词：queues 改成「排队」，delayed flights 改成「航班延误」。at airports 管着前面两件事，提前说，是「机场里」发生的。\n→ 机场排长队和航班延误"
+     },
+     {
+      "t": "have become",
+      "s": "这块照字面翻就行：前面两件事并列当主语，所以用 have，不是 has。become 是「成为」。\n→ 已经成为"
+     },
+     {
+      "t": "a topic for conversation in Britain",
+      "s": "for conversation 你可能翻成「用于谈话的」，太硬。topic for conversation 就是「谈论的话题」。in Britain 在句尾，中文习惯把地点放到句首，说「在英国」。\n→ 人们谈论的话题（在英国）"
+     }
+    ],
+    "order": "in Britain 英文放在最后，中文习惯把地点提到句子最前面：「在英国，……」。",
+    "sum": "在英国，机场排长队、航班延误已经成了人们谈论的话题。",
+    "cmp": "和书上基本一样，书上也是把「在英国」提到了句首。"
+   }
+  },
+  "He was rushed to the hospital by helicopter.": {
+   "ph": [
+    {
+     "t": "was rushed to",
+     "b": "be rushed to",
+     "m": "被火速送往"
+    }
+   ]
+  },
+  "There are a few pilot schools already making the transition to digital books.": {
+   "ph": [
+    {
+     "t": "making the transition to",
+     "b": "make the transition to",
+     "m": "向……过渡"
+    }
+   ]
+  },
+  "Some of the people who work in Songdo complain about boredom in the workplace.": {
+   "ph": [
+    {
+     "t": "complain about",
+     "b": "complain about",
+     "m": "抱怨"
+    }
+   ]
+  },
+  "People the world over are afraid of a further plunge in oil prices.": {
+   "ph": [
+    {
+     "t": "the world over",
+     "b": "the world over",
+     "m": "全世界"
+    },
+    {
+     "t": "are afraid of",
+     "b": "be afraid of",
+     "m": "担心；害怕"
+    },
+    {
+     "t": "a further plunge in",
+     "b": "a plunge in",
+     "m": "……的下跌"
+    }
+   ]
+  },
+  "He dived into the river but couldn't reach the surface.": {
+   "ph": [
+    {
+     "t": "dived into",
+     "b": "dive into",
+     "m": "跳进"
+    }
+   ]
+  },
+  "Some young adults are drowning in credit-card debt.": {
+   "ph": [
+    {
+     "t": "drowning in",
+     "b": "drown in",
+     "m": "被……淹没"
+    }
+   ]
+  },
+  "She asked the waiter to cut the cheese into slices.": {
+   "ph": [
+    {
+     "t": "cut",
+     "b": "cut … into",
+     "m": "把……切成"
+    },
+    {
+     "t": "into",
+     "b": "cut … into",
+     "m": "把……切成"
+    }
+   ]
+  },
+  "Performance is your best bargaining chip when you are seeking a raise.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Performance",
+      "s": "你多半会翻成「表演」。放回去试：表演是你最好的……？不通。这里说的是工作，performance 是「表现、业绩」。\n→ 业绩"
+     },
+     {
+      "t": "is your best bargaining chip",
+      "s": "bargaining chip 你可能想翻成「讨价还价的芯片」。chip 有好几个意思：芯片、薯片，这里是赌桌上的「筹码」。bargaining chip 是一个整体，就是「谈判的筹码」。\n→ 是你最好的谈判筹码"
+     },
+     {
+      "t": "when you are seeking a raise",
+      "s": "你多半会翻成「当你在寻找一个提高」。raise 在这里是名词，指的是「加薪」，不是动词「提高」。seek 在这里是「争取、想要」。\n→ 当你想要加薪时"
+     }
+    ],
+    "order": "英文把 when 放在后面，中文习惯先说条件：「想加薪时，业绩是你最好的筹码」。",
+    "sum": "想要加薪的时候，业绩就是你最好的谈判筹码。",
+    "cmp": "和书上意思一样。书上用「要求加薪」，我写成「想要加薪」，语气更轻。"
+   }
+  },
+  "Experts observe that \"textbooks come in layers, something like an onion.\"": {
+   "ph": [
+    {
+     "t": "something like",
+     "b": "something like",
+     "m": "有点像"
+    }
+   ]
+  },
+  "This can help improve the quality of the restaurants they dine in.": {
+   "ph": [
+    {
+     "t": "dine in",
+     "b": "dine in",
+     "m": "在……就餐"
+    }
+   ]
+  },
+  "It turns parks into picnic sites.": {
+   "ph": [
+    {
+     "t": "turns",
+     "b": "turn … into",
+     "m": "把……变成"
+    },
+    {
+     "t": "into",
+     "b": "turn … into",
+     "m": "把……变成"
+    }
+   ]
+  },
+  "After the operation you may find it difficult to chew and swallow.": {
+   "ph": [
+    {
+     "t": "find it difficult to",
+     "b": "find it difficult to do",
+     "m": "发现难以做某事"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "After the operation you may find",
+      "s": "你可能把 may 翻成「可以」，像是在许可。这里不是许可，是推测：「可能」。operation 在这里是「手术」，不是「操作」。find 是「发现、觉得」。\n→ 手术后你可能会发现"
+     },
+     {
+      "t": "it difficult to chew and swallow",
+      "s": "你多半会翻成「它困难去咀嚼和吞咽」。念一遍，it 是什么？没有人。这里的 it 是占位的，眼睛往后找 to，真正的内容是 to chew and swallow。结构是 find it + 形容词 + to do，it 不用翻，「咀嚼和吞咽」才是被觉得困难的事。\n→ 咀嚼和吞咽很困难"
+     }
+    ],
+    "sum": "手术后你可能会发现咀嚼和吞咽很困难。",
+    "cmp": "书上是「难以咀嚼和吞咽」，意思一样，「难以」更书面。"
+   }
+  },
+  "I do not chew gum in public.": {
+   "ph": [
+    {
+     "t": "in public",
+     "b": "in public",
+     "m": "在公共场合"
+    }
+   ]
+  },
+  "Taking a nap after learning can help you find the way through the maze.": {
+   "ph": [
+    {
+     "t": "Taking a nap",
+     "b": "take a nap",
+     "m": "小睡一会儿"
+    }
+   ]
+  },
+  "Tea is poured into a cup from a teapot.": {
+   "ph": [
+    {
+     "t": "poured into",
+     "b": "pour into",
+     "m": "倒入"
+    }
+   ]
+  },
+  "They're asked to guess that person's name.": {
+   "ph": [
+    {
+     "t": "asked to",
+     "b": "be asked to do",
+     "m": "被要求做某事"
+    }
+   ]
+  },
+  "He attempts to rebel against the existing social order.": {
+   "ph": [
+    {
+     "t": "attempts to",
+     "b": "attempt to do",
+     "m": "企图做某事"
+    },
+    {
+     "t": "rebel against",
+     "b": "rebel against",
+     "m": "反抗"
+    }
+   ]
+  },
+  "The police were able to take preventive action and avoid a possible riot.": {
+   "ph": [
+    {
+     "t": "were able to",
+     "b": "be able to",
+     "m": "能够；得以"
+    },
+    {
+     "t": "take",
+     "b": "take … action",
+     "m": "采取措施"
+    },
+    {
+     "t": "action",
+     "b": "take … action",
+     "m": "采取措施"
+    }
+   ]
+  },
+  "Her eyes were filled with terror.": {
+   "ph": [
+    {
+     "t": "were filled with",
+     "b": "be filled with",
+     "m": "充满"
+    }
+   ]
+  },
+  "He fell from a tall palm tree by accident.": {
+   "ph": [
+    {
+     "t": "by accident",
+     "b": "by accident",
+     "m": "意外地；不小心"
+    }
+   ]
   }
+ }
 }
