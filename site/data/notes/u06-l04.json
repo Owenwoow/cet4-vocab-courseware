@@ -1,0 +1,369 @@
+{
+  "_note": "例句词组与语法解析（书外补充，AI 生成）",
+  "sents": {
+    "I'm not sure whether I can gain any profit from the investment.": {
+      "ph": [
+        {"t": "gain", "b": "gain … from", "m": "从……获得"},
+        {"t": "from", "b": "gain … from", "m": "从……获得"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "I'm not sure", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "whether I can gain any profit from the investment", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "sure 是形容词，后面接 whether 引导的从句作它的补足成分（宾语从句），not sure whether 对应书上的「不确定是否」。",
+          "gain any profit from the investment 里，名词 profit 是「利润」，gain profit 合起来书上转成动词「获利」；any 出现在 whether 从句这种疑问性语境里，书上略去不译。"
+        ],
+        "lit": "我不确定我是否能从这次投资获得任何利润。"
+      }
+    },
+    "Tips benefit the boss rather than the employees.": {
+      "ph": [{"t": "rather than", "b": "rather than", "m": "而不是"}]
+    },
+    "He is always complaining about low wages.": {
+      "ph": [{"t": "complaining about", "b": "complain about", "m": "抱怨"}]
+    },
+    "A fee should be charged on used containers for recycling.": {
+      "ph": [
+        {"t": "charged on", "b": "charge … on", "m": "对……收取"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "A fee should be charged on used containers for recycling", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "should be charged 是带情态动词的被动，句中没有写出施事，书上译成没有主语的主动句「应收取费用」，把 A fee 挪到了宾语的位置。",
+          "for recycling 是 containers 的后置修饰（用于回收的），used containers for recycling 整体被书上前置成「回收的旧容器」，on 在这里译成「对」。"
+        ],
+        "lit": "一笔费用应当被收取在用过的、用于回收的容器上。"
+      }
+    },
+    "You should bid farewell to guilt and regret.": {
+      "ph": [{"t": "bid farewell to", "b": "bid farewell to", "m": "告别"}]
+    },
+    "They live on charity and social welfare.": {
+      "ph": [{"t": "live on", "b": "live on", "m": "靠……生活"}]
+    },
+    "People may be able to enjoy generous defined-benefits from pension plans.": {
+      "ph": [{"t": "be able to", "b": "be able to", "m": "能够"}]
+    },
+    "The three students were awarded scholarships totaling $21,000.": {
+      "ph": [{"t": "were awarded", "b": "be awarded", "m": "获得（奖励）"}]
+    },
+    "Big houses are advertised as a reward for hard work and diligence.": {
+      "ph": [
+        {"t": "are advertised as", "b": "be advertised as", "m": "被宣传为"},
+        {"t": "a reward for", "b": "a reward for", "m": "对……的奖赏"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Big houses are advertised as a reward for hard work and diligence", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "are advertised as 是被动，advertise A as B 即「把 A 宣传为 B」，a reward… 作 as 的宾语，书上保留「被宣传为」。",
+          "a reward for hard work and diligence 里，for 引出奖赏的缘由，hard work 和 diligence 并列作 for 的宾语；书上用「对……的」把 for 短语前置，译成「对努力工作和勤奋的奖赏」。"
+        ],
+        "lit": "大房子被广告为对于努力工作和勤奋的一种奖赏。"
+      }
+    },
+    "Children looked up in awe and delight.": {
+      "ph": [
+        {"t": "looked up", "b": "look up", "m": "抬头看"},
+        {"t": "in awe", "b": "in awe", "m": "怀着敬畏"}
+      ]
+    },
+    "Treatment is tailored to the needs of each patient.": {
+      "ph": [{"t": "tailored to", "b": "be tailored to", "m": "针对……制订"}]
+    },
+    "She can add multiple details to the design to communicate her idea.": {
+      "ph": [
+        {"t": "add", "b": "add … to", "m": "把……添加到"},
+        {"t": "to", "b": "add … to", "m": "把……添加到"}
+      ]
+    },
+    "They are advertised as a way for adults to finish their education.": {
+      "ph": [{"t": "are advertised as", "b": "be advertised as", "m": "被宣传为"}],
+      "an": {
+        "parts": [
+          {"t": "They are advertised as a way ", "r": "主干"},
+          {"t": "for adults to finish their education", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "are advertised as 是被动，advertise A as B「把 A 宣传为 B」，书上保留「被宣传为」。",
+          "to finish their education 是不定式作后置定语，修饰 a way；for adults 是不定式的逻辑主语（谁来完成）。书上把整个修饰语前置，译成「成年人完成教育的一种方式」。"
+        ],
+        "lit": "它们被宣传为一种对成年人来说完成他们的教育的方式。"
+      }
+    },
+    "They got through two barrels of beer.": {
+      "ph": [{"t": "got through", "b": "get through", "m": "用完；喝完"}]
+    },
+    "He said he wasn't prepared to bargain.": {
+      "ph": [{"t": "prepared to", "b": "be prepared to do", "m": "愿意做"}]
+    },
+    "They failed to meet the deadline because their time was deficient.": {
+      "ph": [
+        {"t": "failed to", "b": "fail to do", "m": "未能做到"},
+        {"t": "meet the deadline", "b": "meet the deadline", "m": "如期完成"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "They failed to meet the deadline", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "because their time was deficient", "r": "原因状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "because 引导原因状语从句，their time was deficient 是主系表，deficient 作表语；书上把它译成动宾式的「缺少时间」，并提到句首「因为……」。",
+          "fail to do 本身带否定意义，译「没能」；meet the deadline 是固定搭配「按期完成」，所以书上译成「没能如期完成」，括号里补出「任务」。"
+        ],
+        "lit": "他们没能满足截止日期，因为他们的时间是不足的。"
+      }
+    },
+    "Millions of jobs will be threatened by robotics and artificial intelligence.": {
+      "ph": [
+        {"t": "Millions of", "b": "millions of", "m": "数百万的"},
+        {"t": "be threatened by", "b": "be threatened by", "m": "受……威胁"},
+        {"t": "artificial intelligence", "b": "artificial intelligence", "m": "人工智能"}
+      ]
+    },
+    "It's not necessarily an efficient way to learn.": {
+      "ph": [{"t": "not necessarily", "b": "not necessarily", "m": "不一定；未必"}]
+    },
+    "These fish are found in shallow waters around the coast.": {
+      "ph": [{"t": "are found in", "b": "be found in", "m": "生长在；发现于"}]
+    },
+    "The energy used by microwaves is lower than any other form of cooking.": {
+      "ph": [],
+      "an": {
+        "parts": [
+          {"t": "The energy", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "used by microwaves", "r": "非谓语"},
+          {"t": " ", "r": ""},
+          {"t": "is lower than any other form of cooking", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "used by microwaves 是过去分词短语作后置定语，修饰 energy（能量被微波炉使用），书上前置成「微波炉所消耗的能量」。",
+          "「比较级 + than any other + 名词」是用比较级表达最高级意思：它比其他任何方式都低，等于最低。书上译「比其他任何烹饪方式都更低」，保留了这层比较。"
+        ],
+        "lit": "被微波炉使用的能量比任何其他形式的烹饪都低。"
+      }
+    },
+    "Their homes will be swallowed up by the hungry sea.": {
+      "ph": [{"t": "swallowed up", "b": "swallow up", "m": "吞没"}],
+      "an": {
+        "parts": [
+          {"t": "Their homes will be swallowed up by the hungry sea", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "will be swallowed up 是被动，by the hungry sea 是施事；家园被海水吞没是遭受损害的事，所以书上保留「被……吞没」，没有改成主动。",
+          "hungry 修饰无生命的 sea，是拟人手法，书上照留，译成「饥饿的大海」。"
+        ],
+        "lit": "他们的家将被饥饿的海吞下去。"
+      }
+    },
+    "She is a pillar of strength in a crisis.": {
+      "ph": [{"t": "a pillar of strength", "b": "a pillar of strength", "m": "坚强的支柱"}]
+    },
+    "It proves crucial in making others follow one's course of action.": {
+      "ph": [
+        {"t": "proves crucial", "b": "prove crucial", "m": "证明至关重要"},
+        {"t": "making others follow", "b": "make sb. do", "m": "让别人做某事"},
+        {"t": "course of action", "b": "course of action", "m": "行动方针"}
+      ]
+    },
+    "The most researched aspect of breakfast and breakfast-skipping has been its links to obesity.": {
+      "ph": [{"t": "links to", "b": "link to", "m": "与……的联系"}],
+      "an": {
+        "parts": [
+          {"t": "The most researched aspect of breakfast and breakfast-skipping has been its links to obesity", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "researched 是过去分词作前置定语，与 the most 构成「被研究得最多的」，书上改成主动式的「研究最多的方面」。",
+          "breakfast-skipping 是由 skip（跳过）加宾语 breakfast 构成的名词化复合词，书上展开成动宾短语「不吃早餐」。"
+        ],
+        "lit": "早餐和不吃早餐最被研究的方面一直是它与肥胖的联系。"
+      }
+    },
+    "The plane was spinning out of control.": {
+      "ph": [{"t": "out of control", "b": "out of control", "m": "失去控制"}]
+    },
+    "Police suspect the eggs came from a freighter that lost part of its cargo.": {
+      "ph": [{"t": "came from", "b": "come from", "m": "来自"}],
+      "an": {
+        "parts": [
+          {"t": "Police suspect", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "the eggs came from a freighter ", "r": "宾语从句"},
+          {"t": "that lost part of its cargo", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "suspect 后面省略了 that，the eggs came from… 是它的宾语从句，书上译成「警方怀疑这些鸡蛋来自……」。",
+          "that lost part of its cargo 是定语从句，先行词是 a freighter，that 在从句中作 lost 的主语；书上把它前置成「丢失部分货物的货船」。"
+        ],
+        "lit": "警察怀疑鸡蛋来自一艘丢失了它的一部分货物的货船。"
+      }
+    },
+    "They became suspicious of his behaviour and contacted the police.": {
+      "ph": [{"t": "suspicious of", "b": "be suspicious of", "m": "对……起疑"}]
+    },
+    "She checked all the items with the man.": {
+      "ph": [
+        {"t": "checked", "b": "check … with", "m": "和……核对"},
+        {"t": "with", "b": "check … with", "m": "和……核对"}
+      ]
+    },
+    "I had just posted the letter when I remembered that hadn't enclosed the cheque.": {
+      "ph": [
+        {"t": "had just posted", "b": "had just done … when", "m": "刚……就……"},
+        {"t": "when", "b": "had just done … when", "m": "刚……就……"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "I had just posted the letter", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "when I remembered ", "r": "并列分句"},
+          {"t": "that hadn't enclosed the cheque", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "had just done … when … 是固定句型，过去完成时表示先发生的动作，when 引出紧接着的事，译「刚……就……」，所以书上译成「刚把信寄出去，就想起……」。",
+          "remembered 后面 that 引导宾语从句，hadn't enclosed 用过去完成时，说明「没附支票」发生在「想起」之前，书上译「没有附上」。原句 that 后面漏了主语 I，按书上译文应理解为「我没有附上」。"
+        ],
+        "lit": "我刚刚寄出了信，当我想起没有附上支票的时候。"
+      }
+    },
+    "Meanwhile, it pays to examine studies funded by industry or special interest groups with extra care.": {
+      "ph": [
+        {"t": "it pays to", "b": "it pays to do", "m": "做……是值得的"},
+        {"t": "funded by", "b": "be funded by", "m": "由……资助"},
+        {"t": "with extra care", "b": "with care", "m": "格外仔细地"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Meanwhile", "r": "状语"},
+          {"t": ", ", "r": ""},
+          {"t": "it pays to examine studies", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "funded by industry or special interest groups", "r": "非谓语"},
+          {"t": " ", "r": ""},
+          {"t": "with extra care", "r": "方式状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "it 是形式主语，to examine… 才是真正的主语；pay 在这里是「值得、有好处」。书上把真主语提前，译成「仔细检查……是值得的」。",
+          "funded by industry or special interest groups 是过去分词短语作后置定语，修饰 studies（研究是被资助的），书上前置成「由行业或特殊利益集团资助的研究」。",
+          "with extra care 是方式状语，修饰 examine，英文放在句末，书上提前并入动词，译成「仔细检查」。"
+        ],
+        "lit": "与此同时，检查被行业或特殊利益集团资助的研究，以格外的小心，是划算的。"
+      }
+    },
+    "So is there any evidence that setbacks might actually improve our career prospects?": {
+      "ph": [{"t": "career prospects", "b": "career prospects", "m": "职业前景"}],
+      "an": {
+        "parts": [
+          {"t": "So is there any evidence ", "r": "主干"},
+          {"t": "that setbacks might actually improve our career prospects", "r": "同位语从句"},
+          {"t": "?", "r": ""}
+        ],
+        "pts": [
+          "that 引导的是 evidence 的同位语从句，说明证据的具体内容，that 在从句中不作成分；书上把「有证据，内容是……」转成动词「有没有证据表明……」。",
+          "might 表示可能性（语气较委婉的推测）：主句 is there 是现在时，没有 if 条件，所以既不是过去将来的时态呼应，也不是虚拟语气；书上译成「会改善」。"
+        ],
+        "lit": "那么有没有任何证据，挫折可能实际上改善我们的职业前景？"
+      }
+    },
+    "The researchers speculate that craft activities promote the development of nerve pathways in the brain.": {
+      "ph": [{"t": "promote the development of", "b": "promote the development of", "m": "促进……的发展"}]
+    },
+    "It's nice to have people agree, but you need conflicting perspectives to dig out the truth.": {
+      "ph": [
+        {"t": "have people agree", "b": "have sb. do", "m": "让人们（意见一致）"},
+        {"t": "dig out", "b": "dig out", "m": "挖掘出"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "It's nice to have people agree", "r": "主干"},
+          {"t": ", ", "r": ""},
+          {"t": "but you need conflicting perspectives", "r": "并列分句"},
+          {"t": " ", "r": ""},
+          {"t": "to dig out the truth", "r": "目的状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "It 是形式主语，to have people agree 是真正的主语；have sb. do 是使役结构（让人做）。书上把真主语提前，并把使役转成「人们意见一致」，译成「人们意见一致是件好事」。",
+          "but 连接两个并列分句，前半句说「好」，后半句转折到「需要」。",
+          "to dig out the truth 是不定式作目的状语，书上译「来挖掘真相」；conflicting 是现在分词作前置定语，译「相互矛盾的」。"
+        ],
+        "lit": "让人们同意是好的，但是你需要冲突的观点来挖出真相。"
+      }
+    },
+    "She had only a vague notion of what might happen.": {
+      "ph": [{"t": "a vague notion of", "b": "a notion of", "m": "……的概念"}],
+      "an": {
+        "parts": [
+          {"t": "She had only a vague notion of ", "r": "主干"},
+          {"t": "what might happen", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "of 是介词，what might happen 是它的宾语从句，what 在从句中作 happen 的主语；书上把 of 短语提到句首，译成「对于可能发生的事……」。",
+          "might 是 may 的过去式：主句 had 是过去时，从句随之呼应，表示过去那个时间点上的「可能」；句中没有 if 条件，不是虚拟语气。"
+        ],
+        "lit": "她只有一个关于什么可能发生的模糊概念。"
+      }
+    },
+    "The concept is often presented as something to achieve, or a goal to reach.": {
+      "ph": [{"t": "is often presented as", "b": "be presented as", "m": "被呈现为"}],
+      "an": {
+        "parts": [
+          {"t": "The concept is often presented as something ", "r": "主干"},
+          {"t": "to achieve", "r": "非谓语"},
+          {"t": ", or a goal ", "r": ""},
+          {"t": "to reach", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "is presented as 是被动，present A as B「把 A 呈现为 B」，书上保留「被呈现为」。",
+          "to achieve 和 to reach 都是不定式作后置定语，分别修饰 something 和 a goal，与名词是动宾关系（achieve something、reach a goal）；书上前置成「要实现的东西」「要达到的目标」。"
+        ],
+        "lit": "这个概念经常被呈现为要实现的某物，或者要达到的一个目标。"
+      }
+    },
+    "When you look at today's digital activity, the facts are much more positive than you might expect.": {
+      "ph": [{"t": "look at", "b": "look at", "m": "审视"}],
+      "an": {
+        "parts": [
+          {"t": "When you look at today's digital activity", "r": "时间状语"},
+          {"t": ", ", "r": ""},
+          {"t": "the facts are much more positive", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "than you might expect", "r": "状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "much more positive than you might expect 是比较结构：than 引导比较状语从句，expect 后面省略了宾语（它），much 修饰比较级，译「得多」。书上把从句译成「的」字结构「比你预料的」。",
+          "might 表示推测语气，主句 are 是现在时，句中没有 if 条件，所以不是虚拟语气，也不是时态呼应；than you might expect 是常见说法，书上直接译成「你预料的」，没有单独译出「可能」。"
+        ],
+        "lit": "当你看今天的数字活动时，事实比你可能预料的要积极得多。"
+      }
+    },
+    "My financial aid did not anticipate any of these costs.": {
+      "ph": [{"t": "financial aid", "b": "financial aid", "m": "经济援助"}]
+    },
+    "She had participated in the Berkeley study.": {
+      "ph": [{"t": "participated in", "b": "participate in", "m": "参与"}]
+    }
+  }
+}
