@@ -1,317 +1,511 @@
 {
-  "_note": "例句词组与语法解析（书外补充，AI 生成）",
-  "sents": {
-    "It counts less than generally thought.": {
-      "an": {
-        "parts": [
-          {"t": "It counts less", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "than generally thought", "r": "状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "than 后面省略了 it is，完整是 than (it is) generally thought，thought 是过去分词；书上补出主语，译成「人们普遍认为的那么重要」。",
-          "count 在这里是不及物动词，意思是「重要、有价值」；less than 是否定比较，所以书上译成「没有……那么重要」，而不是「重要得更少」。"
-        ],
-        "lit": "它重要得比一般被认为的少。"
-      }
-    },
-    "It doesn't run counter to the goals of public education.": {
-      "ph": [{"t": "run counter to", "b": "run counter to", "m": "违背，与……背道而驰"}]
-    },
-    "They account for age differences in learning.": {
-      "ph": [{"t": "account for", "b": "account for", "m": "解释，说明"}]
-    },
-    "The Foreign Minister held talks with his Chinese counterpart.": {
-      "ph": [{"t": "held talks with", "b": "hold talks with", "m": "与……举行会谈"}]
-    },
-    "Traffic was boosted in America, the home of fast food, with discounts and promotions.": {
-      "ph": [{"t": "the home of", "b": "the home of", "m": "……之乡"}],
-      "an": {
-        "parts": [
-          {"t": "Traffic was boosted in America", "r": "主干"},
-          {"t": ", ", "r": ""},
-          {"t": "the home of fast food", "r": "同位语"},
-          {"t": ", ", "r": ""},
-          {"t": "with discounts and promotions", "r": "方式状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "the home of fast food 是 America 的同位语，用逗号隔开；书上把它前置成「快餐之乡美国」。",
-          "主干是被动 Traffic was boosted，with discounts and promotions 说明靠什么手段；书上把手段提作主语，译成主动句「折扣和促销活动增加了客流量」，不出现「被」。"
-        ],
-        "lit": "客流量在美国，快餐的家乡，被用折扣和促销提高了。"
-      }
-    },
-    "If a home generates more power than it uses, the bill is zero.": {
-      "an": {
-        "parts": [
-          {"t": "If a home generates more power than it uses", "r": "条件状语"},
-          {"t": ", ", "r": ""},
-          {"t": "the bill is zero", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "If 引导条件状语从句，用一般现在时陈述一般情况（不是虚拟语气），书上译成「如果……那么……」。",
-          "than it uses 是比较状语从句，省略了宾语 power（than it uses power），it 指 a home；书上译成「比它使用的多」，把省略的 power 隐去。"
-        ],
-        "lit": "如果一个家庭产生比它使用的更多的电，账单是零。"
-      }
-    },
-    "They are finally clear of debt.": {
-      "ph": [{"t": "clear of", "b": "be clear of", "m": "没有……，摆脱……"}]
-    },
-    "She was hiding in the bushes at the side of the lane.": {
-      "ph": [{"t": "at the side of", "b": "at the side of", "m": "在……旁边"}]
-    },
-    "Brush the pastry with beaten egg.": {
-      "ph": [
-        {"t": "Brush", "b": "brush … with", "m": "用……刷（涂抹）"},
-        {"t": "with", "b": "brush … with", "m": "用……刷（涂抹）"}
-      ]
-    },
-    "My clothes were splashed with mud.": {
-      "ph": [{"t": "were splashed with", "b": "be splashed with", "m": "溅满"}]
-    },
-    "The elephant was able to return to the jungle.": {
-      "ph": [{"t": "was able to", "b": "be able to", "m": "能够，得以"}]
-    },
-    "The yard was overgrown with weeds.": {
-      "ph": [{"t": "overgrown with", "b": "be overgrown with", "m": "长满"}]
-    },
-    "He drove by with a big load of hay.": {
-      "ph": [
-        {"t": "drove by", "b": "drive by", "m": "驾车驶过"},
-        {"t": "a big load of", "b": "a load of", "m": "一车的"}
-      ]
-    },
-    "Great innovators are good at connecting concepts from various academic fields.": {
-      "ph": [{"t": "are good at", "b": "be good at", "m": "擅长"}]
-    },
-    "It takes great efforts for children to grasp the concept of number words.": {
-      "ph": [
-        {"t": "It takes", "b": "it takes … to do", "m": "做某事需要花费……"},
-        {"t": "to", "b": "it takes … to do", "m": "做某事需要花费……"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "It takes great efforts", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "for children to grasp the concept of number words", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "It 是形式主语，真正的主语是后面的不定式 to grasp…；for children 是这个不定式的逻辑主语（谁来掌握）。",
-          "书上把真正的主语提到句首，译成「儿童掌握数字单词的概念」，再把 it takes great efforts 译成谓语「需要付出很大的努力」，避免生硬的「它需要……」。"
-        ],
-        "lit": "它需要很大的努力，对儿童来说，去掌握数字单词的概念。"
-      }
-    },
-    "She grabbed his arm as he got up to leave.": {
-      "ph": [{"t": "got up", "b": "get up", "m": "起身"}]
-    },
-    "The idea that those at the bottom can rise to the top is central to America's ideas about itself.": {
-      "ph": [
-        {"t": "at the bottom", "b": "at the bottom", "m": "在底层"},
-        {"t": "rise to the top", "b": "rise to the top", "m": "升到顶层"},
-        {"t": "central to", "b": "be central to", "m": "是……的核心"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "The idea", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that those at the bottom can rise to the top", "r": "同位语从句"},
-          {"t": " ", "r": ""},
-          {"t": "is central to America's ideas about itself", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "that 引导同位语从句，说明 The idea 的具体内容，that 在从句里不作成分；those at the bottom 中 those 指「人」，at the bottom 后置修饰，书上译成「社会底层的人」。",
-          "主语 The idea… 很长，表语 central to 很短。书上把表语转成名词「核心」提到句首，主语从句内容放到「便是」之后，所以是「……的核心便是……」。",
-          "can rise 表示有可能，书上译成「有机会跃居」；itself 指 America，ideas about itself 书上译成「美国自我认知」，把反身代词和名词短语压成一个词。"
-        ],
-        "lit": "那些在底层的人能升到顶层这个想法，对美国关于它自己的想法来说是核心。"
-      }
-    },
-    "Adam pressed a button and waited for the lift.": {
-      "ph": [{"t": "waited for", "b": "wait for", "m": "等待"}]
-    },
-    "The city was spread out beneath us in all its glory.": {
-      "ph": [
-        {"t": "spread out", "b": "spread out", "m": "展开，铺展"},
-        {"t": "in all its glory", "b": "in all one's glory", "m": "以其全部的辉煌"}
-      ]
-    },
-    "Desiring new experiences can help to renovate the brain.": {
-      "ph": [{"t": "help to", "b": "help (to) do", "m": "有助于做"}]
-    },
-    "These people are usually unable or unprepared to endure the long haul.": {
-      "ph": [{"t": "the long haul", "b": "the long haul", "m": "长途跋涉，漫长过程"}]
-    },
-    "These containers were really durable, lasting years on end.": {
-      "ph": [{"t": "years on end", "b": "years on end", "m": "连续数年"}]
-    },
-    "Participants will have the opportunity to attend sessions on a wide variety of topics.": {
-      "ph": [
-        {"t": "have the opportunity to", "b": "have the opportunity to do", "m": "有机会做"},
-        {"t": "a wide variety of", "b": "a wide variety of", "m": "各种各样的"}
-      ]
-    },
-    "But while catchings at sea have suffered, fish-farming has been growing at a fast rate.": {
-      "ph": [{"t": "at a fast rate", "b": "at a fast rate", "m": "快速地"}],
-      "an": {
-        "parts": [
-          {"t": "But ", "r": ""},
-          {"t": "while catchings at sea have suffered", "r": "让步状语"},
-          {"t": ", ", "r": ""},
-          {"t": "fish-farming has been growing at a fast rate", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "while 在这里表对比、让步，引导让步状语从句，所以书上译成「虽然……但……」，而不是「当……时」；句首的 But 与 while 呼应，合成一个「虽然……但」。",
-          "have suffered 是现在完成时，suffer 在这里作不及物动词，意思是「受到损害、受到影响」，书上译成「受到了影响」。",
-          "has been growing 是现在完成进行时，强调从过去一直增长到现在，所以译成「一直在快速发展」。"
-        ],
-        "lit": "但是当海上的捕捞受了损失时，养鱼一直在以快的速度增长。"
-      }
-    },
-    "What can we infer from the passage about the author?": {
-      "ph": [
-        {"t": "infer", "b": "infer … from", "m": "从……推断出"},
-        {"t": "from", "b": "infer … from", "m": "从……推断出"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "What can we infer from the passage about the author", "r": "主干"},
-          {"t": "?", "r": ""}
-        ],
-        "pts": [
-          "What 是 infer 的宾语，about the author 本来紧跟在 what 后面（infer something about the author），被 from the passage 隔开；这是阅读理解推断题的固定问法。",
-          "书上保持这个顺序译成「从文章中我们可以推断出关于作者的什么」，can 译成「可以」，表示文中信息允许得出的结论。"
-        ],
-        "lit": "我们能从这篇文章推断出什么，关于作者的？"
-      }
-    },
-    "The report refers to this as the coming of the \"18-hour city\".": {
-      "ph": [
-        {"t": "refers to", "b": "refer to … as", "m": "把……称为"},
-        {"t": "as", "b": "refer to … as", "m": "把……称为"}
-      ]
-    },
-    "Their top concern is not that they work too much but that they work too little.": {
-      "ph": [
-        {"t": "not", "b": "not … but …", "m": "不是……而是……"},
-        {"t": "but", "b": "not … but …", "m": "不是……而是……"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Their top concern is not", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that they work too much", "r": "表语从句"},
-          {"t": " but ", "r": ""},
-          {"t": "that they work too little", "r": "表语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "is 后面的两个 that 从句都是表语从句，that 只起连接作用、不作成分；not … but … 把它们连成「不是……而是……」。",
-          "top concern 是名词短语，书上译成「最关心的」，把名词转成动词性的说法。",
-          "too much 和 too little 是一对反义，书上译成「工作太多」「工作太少」，对比关系靠「不是……而是……」体现出来。"
-        ],
-        "lit": "他们的首要关切不是他们工作得太多，而是他们工作得太少。"
-      }
-    },
-    "Forests are eating away the fertile farmland worldwide.": {
-      "ph": [{"t": "eating away", "b": "eat away", "m": "侵蚀，吞噬"}]
-    },
-    "Hundreds of studies show that infants prefer novelty.": {
-      "ph": [{"t": "Hundreds of", "b": "hundreds of", "m": "数以百计的"}]
-    },
-    "Man appears indifferent to what happens in nature.": {
-      "ph": [{"t": "indifferent to", "b": "be indifferent to", "m": "对……漠不关心"}]
-    },
-    "We are attracted by the skyline of the distant mountains.": {
-      "ph": [{"t": "are attracted by", "b": "be attracted by", "m": "被……吸引"}]
-    },
-    "She drew the figures in outline.": {
-      "ph": [{"t": "in outline", "b": "in outline", "m": "概括地，简略地"}]
-    },
-    "Online classes began to be popularized just a few decades ago.": {
-      "an": {
-        "parts": [
-          {"t": "Online classes began to be popularized", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "just a few decades ago", "r": "时间状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "to be popularized 是不定式的被动式，课程是被推广的对象；书上译成不带「被」的「开始普及」。",
-          "just 修饰 a few decades ago，强调时间离现在很近，书上用「才」表达：「几十年前才开始普及」；ago 与一般过去时 began 搭配。"
-        ],
-        "lit": "在线课程开始被普及就在几十年以前。"
-      }
-    },
-    "Some of the world's most significant problems never hit headlines.": {
-      "ph": [{"t": "hit headlines", "b": "hit the headlines", "m": "登上头条"}]
-    },
-    "The typical supermarket layout has barely changed over the past 90 years.": {
-      "ph": [{"t": "over the past 90 years", "b": "over the past … years", "m": "在过去……年里"}]
-    },
-    "There are a few things you can do to determine whether or not a company is a good fit for you.": {
-      "ph": [{"t": "a good fit for", "b": "a good fit for", "m": "适合……的"}],
-      "an": {
-        "parts": [
-          {"t": "There are a few things", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "you can do", "r": "定语从句"},
-          {"t": " ", "r": ""},
-          {"t": "to determine", "r": "目的状语"},
-          {"t": " ", "r": ""},
-          {"t": "whether or not a company is a good fit for you", "r": "宾语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "you can do 是定语从句，先行词是 things，关系词 that/which 省略，在从句中作 do 的宾语（you can do things）；书上没有前置成「……的事情」，而是并入主句译成「你可以做一些事情」，there are 不译出。",
-          "to determine 是不定式作目的状语，书上用「来确定」衔接。",
-          "whether or not 引导 determine 的宾语从句，译成「是否」；a good fit for you 中 fit 是名词，书上转成动词「适合你」。"
-        ],
-        "lit": "有几件你能做的事，去确定一家公司是不是对你来说一个好的合适。"
-      }
-    },
-    "Watch paint dry or water boil, and you might unlock your next big idea.": {
-      "ph": [{"t": "Watch paint dry", "b": "watch sb./sth. do", "m": "看着……（发生某变化）"}],
-      "an": {
-        "parts": [
-          {"t": "Watch paint dry or water boil", "r": "主干"},
-          {"t": ", and ", "r": ""},
-          {"t": "you might unlock your next big idea", "r": "并列分句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "「祈使句 + and + 陈述句」暗含条件关系（相当于 If you watch…, you might…），所以书上译成「看着……，你可能会……」。",
-          "watch 是感官动词，后面接「宾语 + 宾语补足语」：paint dry 里 dry 是形容词作补语，water boil 里 boil 是省略 to 的动词原形作补语，书上译成「变干」「烧开」。",
-          "might 是表可能性的情态动词（语气比 may 弱），这里没有与事实相反的假设，不是虚拟语气，所以译成「可能会」。"
-        ],
-        "lit": "看油漆变干或水沸腾，而你可能会解开你的下一个大创意。"
-      }
-    },
-    "The landlord had let the building fall into decay.": {
-      "ph": [{"t": "fall into decay", "b": "fall into decay", "m": "衰败，破败"}]
-    },
-    "The reading culture was seriously affected by cable television some four decades ago.": {
-      "ph": [{"t": "was seriously affected by", "b": "be affected by", "m": "受到……的严重影响"}],
-      "an": {
-        "parts": [
-          {"t": "The reading culture was seriously affected by cable television", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "some four decades ago", "r": "状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "主干是被动 was affected by，书上译成「受到了有线电视的严重影响」，不用「被」，by 后面的施动者变成「……的影响」。",
-          "some 放在数词前表示「大约」，some four decades ago 就是「大约四十年前」；书上把句末的时间状语提到句首。"
-        ],
-        "lit": "阅读文化被有线电视严重地影响了，大约四十年以前。"
-      }
+ "_note": "例句词组与语法解析（书外补充，AI 生成）",
+ "sents": {
+  "It counts less than generally thought.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It counts",
+      "s": "你多半会翻成「它计算」或「它数数」。念一遍，是不是不知所云？count 在这里不带宾语，意思是「有分量、算数、重要」。\n→ 它的分量（没那么重）"
+     },
+     {
+      "t": "less than generally thought",
+      "s": "你可能想翻成「比普遍被想的更少」，太怪了。办法是把省略的补回去：less than (it is) generally thought，「比人们普遍认为的要轻」。thought 是「被认为」，generally 是「普遍地」。\n→ 比人们普遍认为的要小"
+     }
+    ],
+    "order": "英文是「重要」在前、「比……少」在后；中文把 count 的意思落在最后，说成「重要性比……小」。",
+    "sum": "它的重要性比人们普遍以为的要小。",
+    "cmp": "意思一样。书上的「没有人们普遍认为的那么重要」更口语，也很好。"
+   }
+  },
+  "It doesn't run counter to the goals of public education.": {
+   "ph": [
+    {
+     "t": "run counter to",
+     "b": "run counter to",
+     "m": "违背，与……背道而驰"
     }
+   ]
+  },
+  "They account for age differences in learning.": {
+   "ph": [
+    {
+     "t": "account for",
+     "b": "account for",
+     "m": "解释，说明"
+    }
+   ]
+  },
+  "The Foreign Minister held talks with his Chinese counterpart.": {
+   "ph": [
+    {
+     "t": "held talks with",
+     "b": "hold talks with",
+     "m": "与……举行会谈"
+    }
+   ]
+  },
+  "Traffic was boosted in America, the home of fast food, with discounts and promotions.": {
+   "ph": [
+    {
+     "t": "the home of",
+     "b": "the home of",
+     "m": "……之乡"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Traffic was boosted",
+      "s": "你多半会翻成「交通被提升了」。念一遍，美国的交通怎么「被提升」？这里 traffic 说的是商店的「客流量」，boost 是「促进、提高」。\n→ 客流量增加了"
+     },
+     {
+      "t": "in America, the home of fast food,",
+      "s": "两个逗号夹住的 the home of fast food 是在补充说明 America：美国，也就是快餐之乡。home of 是「……之乡」。\n→ 在快餐之乡美国"
+     },
+     {
+      "t": "with discounts and promotions",
+      "s": "你可能翻成「和折扣和促销」。这里 with 不是「和」，是「靠、通过」，表示手段：是靠什么让客流量增加的。\n→ 靠折扣和促销活动"
+     }
+    ],
+    "order": "英文把手段放最后，中文可以把「靠折扣和促销」提前，说「靠……，……客流量增加了」。",
+    "sum": "靠着打折和促销，快餐之乡美国的客流量增加了。",
+    "cmp": "书上让「折扣和促销活动」当主语，写成「折扣和促销活动增加了客流量」，更简洁；意思和我的一样。"
+   }
+  },
+  "They are finally clear of debt.": {
+   "ph": [
+    {
+     "t": "clear of",
+     "b": "be clear of",
+     "m": "没有……，摆脱……"
+    }
+   ]
+  },
+  "She was hiding in the bushes at the side of the lane.": {
+   "ph": [
+    {
+     "t": "at the side of",
+     "b": "at the side of",
+     "m": "在……旁边"
+    }
+   ]
+  },
+  "Brush the pastry with beaten egg.": {
+   "ph": [
+    {
+     "t": "Brush",
+     "b": "brush … with",
+     "m": "用……刷（涂抹）"
+    },
+    {
+     "t": "with",
+     "b": "brush … with",
+     "m": "用……刷（涂抹）"
+    }
+   ]
+  },
+  "My clothes were splashed with mud.": {
+   "ph": [
+    {
+     "t": "were splashed with",
+     "b": "be splashed with",
+     "m": "溅满"
+    }
+   ]
+  },
+  "The elephant was able to return to the jungle.": {
+   "ph": [
+    {
+     "t": "was able to",
+     "b": "be able to",
+     "m": "能够，得以"
+    }
+   ]
+  },
+  "The yard was overgrown with weeds.": {
+   "ph": [
+    {
+     "t": "overgrown with",
+     "b": "be overgrown with",
+     "m": "长满"
+    }
+   ]
+  },
+  "He drove by with a big load of hay.": {
+   "ph": [
+    {
+     "t": "drove by",
+     "b": "drive by",
+     "m": "驾车驶过"
+    },
+    {
+     "t": "a big load of",
+     "b": "a load of",
+     "m": "一车的"
+    }
+   ]
+  },
+  "Great innovators are good at connecting concepts from various academic fields.": {
+   "ph": [
+    {
+     "t": "are good at",
+     "b": "be good at",
+     "m": "擅长"
+    }
+   ]
+  },
+  "It takes great efforts for children to grasp the concept of number words.": {
+   "ph": [
+    {
+     "t": "It takes",
+     "b": "it takes … to do",
+     "m": "做某事需要花费……"
+    },
+    {
+     "t": "to",
+     "b": "it takes … to do",
+     "m": "做某事需要花费……"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It takes great efforts",
+      "s": "你多半会翻成「它花费很大的努力」，然后卡在「它」是谁。这里 it 是形式主语，真正的内容在后面的 to grasp。办法：看到 It takes，眼睛往后找 to——找到了，it 就不用翻。\n→ 需要付出很大的努力"
+     },
+     {
+      "t": "for children to grasp",
+      "s": "你可能把 for 翻成「为了儿童」。放回去试：为了儿童去掌握？说不通。for children 在这里是告诉你「谁来做 grasp」，儿童来掌握。\n→ 儿童掌握"
+     },
+     {
+      "t": "the concept of number words",
+      "s": "这块照字面翻就行：number words 是「表示数的词」，比如 one、two。\n→ 数字单词的概念"
+     }
+    ],
+    "order": "英文先说「需要努力」，再说「谁做什么」；中文把「儿童掌握……」提到前面当主语，「需要付出努力」放最后。",
+    "sum": "孩子要掌握数词这个概念，得付出很大的努力。",
+    "cmp": "书上也是这样调的，译成「儿童掌握数字单词的概念需要付出很大的努力」。我把 number words 说成「数词」，更像语言学里的说法。"
+   }
+  },
+  "She grabbed his arm as he got up to leave.": {
+   "ph": [
+    {
+     "t": "got up",
+     "b": "get up",
+     "m": "起身"
+    }
+   ]
+  },
+  "The idea that those at the bottom can rise to the top is central to America's ideas about itself.": {
+   "ph": [
+    {
+     "t": "at the bottom",
+     "b": "at the bottom",
+     "m": "在底层"
+    },
+    {
+     "t": "rise to the top",
+     "b": "rise to the top",
+     "m": "升到顶层"
+    },
+    {
+     "t": "central to",
+     "b": "be central to",
+     "m": "是……的核心"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The idea that those at the bottom can rise to the top",
+      "s": "你多半会翻成「那个在底部的人能升到顶部的想法」，把 that 当成「那个」。放回去试：that 后面 those at the bottom can rise to the top 自己主谓齐全，是一句完整的话，所以 that 不是替 idea 做成分，而是引出「想法的内容」。those at the bottom 是「处在底层的人」。\n→ 底层的人能升到顶层这种观念"
+     },
+     {
+      "t": "is central to America's ideas about itself",
+      "s": "你可能翻成「是对美国关于它自己的想法的中心」，太绕。central to 是「是……的核心」。itself 指 America，ideas about itself 说白了就是「美国对自己的认识」。\n→ 是美国自我认知的核心"
+     }
+    ],
+    "sum": "「底层的人也能升到顶层」这种观念，是美国自我认知的核心。",
+    "cmp": "书上把「核心」提到了句首，写成「美国自我认知的核心便是……」，并把 can 译成「有机会」。意思一样，书译更像中文里先下结论、再说内容的说法。"
+   }
+  },
+  "Adam pressed a button and waited for the lift.": {
+   "ph": [
+    {
+     "t": "waited for",
+     "b": "wait for",
+     "m": "等待"
+    }
+   ]
+  },
+  "The city was spread out beneath us in all its glory.": {
+   "ph": [
+    {
+     "t": "spread out",
+     "b": "spread out",
+     "m": "展开，铺展"
+    },
+    {
+     "t": "in all its glory",
+     "b": "in all one's glory",
+     "m": "以其全部的辉煌"
+    }
+   ]
+  },
+  "Desiring new experiences can help to renovate the brain.": {
+   "ph": [
+    {
+     "t": "help to",
+     "b": "help (to) do",
+     "m": "有助于做"
+    }
+   ]
+  },
+  "These people are usually unable or unprepared to endure the long haul.": {
+   "ph": [
+    {
+     "t": "the long haul",
+     "b": "the long haul",
+     "m": "长途跋涉，漫长过程"
+    }
+   ]
+  },
+  "These containers were really durable, lasting years on end.": {
+   "ph": [
+    {
+     "t": "years on end",
+     "b": "years on end",
+     "m": "连续数年"
+    }
+   ]
+  },
+  "Participants will have the opportunity to attend sessions on a wide variety of topics.": {
+   "ph": [
+    {
+     "t": "have the opportunity to",
+     "b": "have the opportunity to do",
+     "m": "有机会做"
+    },
+    {
+     "t": "a wide variety of",
+     "b": "a wide variety of",
+     "m": "各种各样的"
+    }
+   ]
+  },
+  "But while catchings at sea have suffered, fish-farming has been growing at a fast rate.": {
+   "ph": [
+    {
+     "t": "at a fast rate",
+     "b": "at a fast rate",
+     "m": "快速地"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "But while catchings at sea",
+      "s": "你多半会把 while 翻成「当……的时候」。往后看，逗号后面说的是另一件事（养殖在增长），两边是对比，所以这里 while 是「虽然」。catchings 是 catch 的复数，指「捕获量」。\n→ 但虽然海上的捕获量"
+     },
+     {
+      "t": "have suffered",
+      "s": "你可能想翻成「遭受了痛苦」。suffer 的主语是事物（捕获量）时，说的是「受损、受到影响」。\n→ 受到了影响"
+     },
+     {
+      "t": "fish-farming has been growing at a fast rate",
+      "s": "这块照字面翻就行：has been growing 是「一直在增长」，at a fast rate 是「速度很快」。\n→ 养鱼业一直在快速增长"
+     }
+    ],
+    "sum": "虽然海上捕获量受到了影响，但养鱼业一直在快速增长。",
+    "cmp": "书上把 fish-farming 译成「渔业」，范围比原文大，「养鱼业」更准确；其余一样。"
+   }
+  },
+  "What can we infer from the passage about the author?": {
+   "ph": [
+    {
+     "t": "infer",
+     "b": "infer … from",
+     "m": "从……推断出"
+    },
+    {
+     "t": "from",
+     "b": "infer … from",
+     "m": "从……推断出"
+    }
+   ]
+  },
+  "The report refers to this as the coming of the \"18-hour city\".": {
+   "ph": [
+    {
+     "t": "refers to",
+     "b": "refer to … as",
+     "m": "把……称为"
+    },
+    {
+     "t": "as",
+     "b": "refer to … as",
+     "m": "把……称为"
+    }
+   ]
+  },
+  "Their top concern is not that they work too much but that they work too little.": {
+   "ph": [
+    {
+     "t": "not",
+     "b": "not … but …",
+     "m": "不是……而是……"
+    },
+    {
+     "t": "but",
+     "b": "not … but …",
+     "m": "不是……而是……"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Their top concern",
+      "s": "你多半会翻成「他们的顶部关注」。top 在这里不是「顶部」，是「最重要的」；concern 是名词，指「关心的事」。\n→ 他们最关心的事"
+     },
+     {
+      "t": "is not that they work too much but that they work too little",
+      "s": "看到 not，眼睛往后找 but：not A but B，「不是 A 而是 B」。两个 that 别各翻成「那」，它们只是引出内容，说明「最关心的事」到底是什么，中文省掉就顺了。\n→ 不是工作太多，而是工作太少"
+     }
+    ],
+    "sum": "他们最在意的不是工作过多，而是工作过少。",
+    "cmp": "和书上基本一样，书上说「最关心的」，我换成「最在意的」，两个都行。"
+   }
+  },
+  "Forests are eating away the fertile farmland worldwide.": {
+   "ph": [
+    {
+     "t": "eating away",
+     "b": "eat away",
+     "m": "侵蚀，吞噬"
+    }
+   ]
+  },
+  "Hundreds of studies show that infants prefer novelty.": {
+   "ph": [
+    {
+     "t": "Hundreds of",
+     "b": "hundreds of",
+     "m": "数以百计的"
+    }
+   ]
+  },
+  "Man appears indifferent to what happens in nature.": {
+   "ph": [
+    {
+     "t": "indifferent to",
+     "b": "be indifferent to",
+     "m": "对……漠不关心"
+    }
+   ]
+  },
+  "We are attracted by the skyline of the distant mountains.": {
+   "ph": [
+    {
+     "t": "are attracted by",
+     "b": "be attracted by",
+     "m": "被……吸引"
+    }
+   ]
+  },
+  "She drew the figures in outline.": {
+   "ph": [
+    {
+     "t": "in outline",
+     "b": "in outline",
+     "m": "概括地，简略地"
+    }
+   ]
+  },
+  "Some of the world's most significant problems never hit headlines.": {
+   "ph": [
+    {
+     "t": "hit headlines",
+     "b": "hit the headlines",
+     "m": "登上头条"
+    }
+   ]
+  },
+  "The typical supermarket layout has barely changed over the past 90 years.": {
+   "ph": [
+    {
+     "t": "over the past 90 years",
+     "b": "over the past … years",
+     "m": "在过去……年里"
+    }
+   ]
+  },
+  "There are a few things you can do to determine whether or not a company is a good fit for you.": {
+   "ph": [
+    {
+     "t": "a good fit for",
+     "b": "a good fit for",
+     "m": "适合……的"
+    }
+   ]
+  },
+  "Watch paint dry or water boil, and you might unlock your next big idea.": {
+   "ph": [
+    {
+     "t": "Watch paint dry",
+     "b": "watch sb./sth. do",
+     "m": "看着……（发生某变化）"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Watch paint dry or water boil",
+      "s": "你多半会翻成「看油漆干或水沸腾」，念起来像半句。Watch 开头、没有主语，是在发指令。watch sb./sth. do，意思是「看着某物发生某个变化」：看着油漆变干，或看着水烧开。dry、boil 是动作，不是名词。\n→ 看着油漆变干，或者看着水烧开"
+     },
+     {
+      "t": "and you might unlock your next big idea",
+      "s": "指令句后面接 and，常常是「你这么做，就会……」，and 引出的是结果。你可能直接翻成「而且你可能解锁……」，不通。might 在这里表可能性，翻成「也许、可能」。unlock 本义是「开锁」，这里是「打开思路、想出」。\n→ 你也许就能想出下一个大创意"
+     }
+    ],
+    "order": "英文用 and 连接，中文要补上「如果」，说成「如果你……，也许就能……」。",
+    "sum": "如果你看着油漆变干、看着水烧开，也许就能想出下一个大创意。",
+    "cmp": "书上保留了「解锁」，是直译，能看懂，但「想出」更像日常中文。"
+   }
+  },
+  "The landlord had let the building fall into decay.": {
+   "ph": [
+    {
+     "t": "fall into decay",
+     "b": "fall into decay",
+     "m": "衰败，破败"
+    }
+   ]
+  },
+  "The reading culture was seriously affected by cable television some four decades ago.": {
+   "ph": [
+    {
+     "t": "was seriously affected by",
+     "b": "be affected by",
+     "m": "受到……的严重影响"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The reading culture was seriously affected by cable television",
+      "s": "你多半会翻成「阅读文化被有线电视严重影响了」。语法没错，但中文里「被」字句读起来硬。办法是换成「受到……影响」。cable television 是「有线电视」。\n→ 阅读文化受到了有线电视的严重影响"
+     },
+     {
+      "t": "some four decades ago",
+      "s": "你可能翻成「一些四十年前」，不对。some 放在数字前面，意思是「大约」。decade 是「十年」，four decades 就是四十年。\n→ 大约四十年前"
+     }
+    ],
+    "order": "英文时间放在句末，中文习惯把时间放最前面：「大约四十年前，……」。",
+    "sum": "大约四十年前，有线电视给阅读文化带来了严重影响。",
+    "cmp": "意思一样。书上保留了被动的味道，写成「受到了……的严重影响」；我改成有线电视当主语，两种都顺。"
+   }
   }
+ }
 }

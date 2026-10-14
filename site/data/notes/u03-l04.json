@@ -1,344 +1,453 @@
 {
-  "_note": "例句词组与语法解析（书外补充，AI 生成）",
-  "sents": {
-    "Saying \"no\" is sometimes seen as a luxury that only those in power can afford.": {
-      "ph": [
-        {"t": "seen as", "b": "be seen as", "m": "被视为"},
-        {"t": "in power", "b": "in power", "m": "当权，掌权"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Saying \"no\" is sometimes seen as a luxury", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that only those in power can afford", "r": "定语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "Saying \"no\" 是动名词短语作主语，is seen as 是被动，书上译成「被视为」，没有改成主动。",
-          "定语从句的先行词是 a luxury，that 在从句里作 afford 的宾语（afford that）；从句主语是 only those in power（只有当权者）。",
-          "书上没有把从句前置成「……的奢侈」，而是拆成后面的分句「只有当权者才能负担得起」，把 only 译成「只有……才」。"
-        ],
-        "lit": "说「不」有时被看作一种只有那些当权的人才能负担的奢侈。"
-      }
+ "_note": "例句词组与语法解析（书外补充，AI 生成）",
+ "sents": {
+  "Saying \"no\" is sometimes seen as a luxury that only those in power can afford.": {
+   "ph": [
+    {
+     "t": "seen as",
+     "b": "be seen as",
+     "m": "被视为"
     },
-    "The destruction of these treasures was a loss for mankind that no amount of money could make up.": {
-      "ph": [
-        {"t": "no amount of", "b": "no amount of", "m": "再多的"},
-        {"t": "make up", "b": "make up", "m": "弥补"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "The destruction of these treasures was a loss for mankind", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that no amount of money could make up", "r": "定语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "定语从句的先行词是 a loss for mankind（人类的损失），that 在从句里作 make up 的宾语（make up that）。书上把从句拆成后面的分句「再多的钱也无法弥补」。",
-          "no amount of money 作主语，否定落在主语上，意思是「再多的钱也……不」，所以书上译成「再多的钱也无法弥补」，而不是「没有数量的钱」。",
-          "could 与主句 was 同处过去的视角，表示「能够」，句中没有 if 条件，不是虚拟语气。"
-        ],
-        "lit": "这些宝藏的毁灭是人类的一个损失，没有任何数量的钱能够弥补。"
-      }
-    },
-    "Today, he is still one of the best-known and most beloved racehorses of all time.": {
-      "ph": [
-        {"t": "one of", "b": "one of", "m": "……之一"},
-        {"t": "of all time", "b": "of all time", "m": "有史以来"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Today, he is still one of the best-known and most beloved racehorses of all time", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "one of + 最高级 + 复数名词表示「最……之一」；best-known 和 most beloved 是并列的两个最高级，共同修饰 racehorses。",
-          "of all time 放在句末修饰整个名词短语，书上提前译成「有史以来」，放在最高级前面。",
-          "he 指的是赛马，书上译成「它」。"
-        ],
-        "lit": "今天，他仍然是所有时间里最著名和最受喜爱的赛马之一。"
-      }
-    },
-    "Surveys estimate that 85% of women and 73% of men report feeling better after shedding tears.": {
-      "ph": [
-        {"t": "shedding tears", "b": "shed tears", "m": "流泪"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Surveys estimate", "r": "主干"},
-          {"t": " that ", "r": ""},
-          {"t": "85% of women and 73% of men report feeling better after shedding tears", "r": "宾语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "Surveys 是无生命主语，估计的实际上是人，书上译成「调查估计」，照字面保留。",
-          "that 引导 estimate 的宾语从句，从句主语是 85% of women and 73% of men（两个并列的百分比），谓语是 report。",
-          "after shedding tears 是「介词 + 动名词」，作时间状语，修饰 feeling better；书上把它提前译成「流泪后」，放在「感觉更好」之前。"
-        ],
-        "lit": "调查估计，85% 的女性和 73% 的男性报告在流泪之后感觉更好。"
-      }
-    },
-    "Using voice interaction feels far more intimate than surfing the net the old-fashioned way.": {
-      "ph": [
-        {"t": "surfing the net", "b": "surf the net", "m": "上网"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Using voice interaction feels far more intimate", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "than surfing the net the old-fashioned way", "r": "状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "Using voice interaction 是动名词短语作主语，feels 是系动词，后接形容词 intimate 作表语；than 后面 surfing the net 也是动名词，比较的是这两种做法。",
-          "far 修饰比较级 more intimate，表示「……得多」，所以书上译成「亲密得多」。",
-          "the old-fashioned way 是名词短语直接作方式状语（相当于 in the old-fashioned way），修饰 surfing，书上译成定语「老式的上网方式」。"
-        ],
-        "lit": "使用语音交互感觉起来远比以老式的方式上网更亲密。"
-      }
-    },
-    "Raising cattle, pigs, and other land-based animals requires vast sums of grain and water.": {
-      "ph": [
-        {"t": "vast sums of", "b": "vast sums of", "m": "大量的"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Raising cattle, pigs, and other land-based animals requires vast sums of grain and water", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "Raising cattle, pigs, and other land-based animals 是动名词短语作主语，整体看作单数，所以谓语是 requires。",
-          "land-based 是「名词 + 过去分词」构成的复合形容词，意思是「以陆地为基础的」，书上译成「陆生」。",
-          "requires 的主语是动作（饲养），不是人，书上译成「饲养……需要……」，顺着原句语序即可。"
-        ],
-        "lit": "饲养牛、猪和其他以陆地为基础的动物需要大量的粮食和水。"
-      }
-    },
-    "There are lots of different dishes to try and every region has its own special food.": {
-      "ph": [
-        {"t": "lots of", "b": "lots of", "m": "许多"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "There are lots of different dishes", "r": "主干"},
-          {"t": " to try", "r": "非谓语"},
-          {"t": " and ", "r": ""},
-          {"t": "every region has its own special food", "r": "并列分句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "to try 是不定式作后置定语，修饰 dishes，表示「可以尝试的」，书上译成「有很多不同的菜肴可以尝试」。",
-          "and 连接两个并列分句：前一句是 There be 句型，后一句是 every region has…，所以书上用「并且」把两句连起来。"
-        ],
-        "lit": "有许多不同的菜肴去尝试，并且每个地区都有它自己的特色食物。"
-      }
-    },
-    "Half of the world's water resources have been seriously polluted.": {
-      "ph": [
-        {"t": "Half of", "b": "half of", "m": "……的一半"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Half of the world's water resources have been seriously polluted", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "Half of + 名词作主语时，谓语的单复数看 of 后面的名词：resources 是复数，所以用 have been。",
-          "have been polluted 是现在完成时的被动语态，强调到现在为止已经造成的结果，书上译成「已经被严重污染」。"
-        ],
-        "lit": "世界水资源的一半已经被严重地污染了。"
-      }
-    },
-    "Online systems may deprive teachers of opportunities to make the best use of their expertise for their students.": {
-      "ph": [
-        {"t": "deprive", "b": "deprive … of", "m": "剥夺"},
-        {"t": "of", "b": "deprive … of", "m": "剥夺"},
-        {"t": "make the best use of", "b": "make the best use of", "m": "充分利用"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Online systems may deprive teachers of opportunities", "r": "主干"},
-          {"t": " to make the best use of their expertise for their students", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "deprive sb. of sth. 的结构是「剥夺某人的某物」：被剥夺的人是 teachers，被剥夺的东西是 opportunities，所以书上译成「剥夺教师们……的机会」。",
-          "to make the best use of… 是不定式作后置定语，修饰 opportunities，书上译成「……的机会」，放在「机会」之前。",
-          "Online systems 是无生命主语，may 表示推测的可能性，所以书上译成「可能会剥夺」。"
-        ],
-        "lit": "在线系统可能剥夺教师们做出对他们专业知识为了学生的最好利用的机会。"
-      }
-    },
-    "Make sure to bring the audience into the conversation so that it is not one-sided.": {
-      "ph": [
-        {"t": "Make sure to", "b": "make sure to do", "m": "确保做某事"},
-        {"t": "so that", "b": "so that", "m": "这样，以便"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Make sure to bring the audience into the conversation", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "so that it is not one-sided", "r": "目的状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "整句是祈使句，省略了主语 you，书上译成「确保……」。",
-          "so that 引导目的状语从句，书上用「这样……」连接；从句里的 it 指的是 the conversation（对话），不是 the audience，所以译成「对话就不会一边倒」。"
-        ],
-        "lit": "确保把听众带进对话里，以便它不是片面的。"
-      }
-    },
-    "Some people regard professional change as an unpleasant experience that disturbs their stable careers.": {
-      "ph": [
-        {"t": "regard", "b": "regard … as", "m": "把……看作"},
-        {"t": "as", "b": "regard … as", "m": "把……看作"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Some people regard professional change as an unpleasant experience", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that disturbs their stable careers", "r": "定语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "regard A as B 是「把 A 看作 B」，A 是 professional change，B 是 an unpleasant experience，书上译成「认为转行是一种不愉快的经历」。",
-          "定语从句的先行词是 experience，that 在从句里作主语（that disturbs…）。书上没有前置成「扰乱……的经历」，而是拆成后面的分句「会扰乱他们稳定的职业生涯」。"
-        ],
-        "lit": "一些人把职业变化看作一种扰乱他们稳定职业生涯的不愉快的经历。"
-      }
-    },
-    "What distinguishes children from adults is their strong ability to derive joy from what they are doing.": {
-      "ph": [
-        {"t": "distinguishes", "b": "distinguish … from", "m": "区分，使有别于"},
-        {"t": "from", "b": "distinguish … from", "m": "区分，使有别于"},
-        {"t": "derive", "b": "derive … from", "m": "从……获得"},
-        {"t": "from", "b": "derive … from", "m": "从……获得"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "What distinguishes children from adults", "r": "主语从句"},
-          {"t": " is their strong ability to derive joy from ", "r": "主干"},
-          {"t": "what they are doing", "r": "宾语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "What 引导主语从句，what 在从句里作 distinguishes 的主语，相当于「使儿童有别于成人的那个东西」；书上把它转成名词「儿童与成人的区别」，用「……在于……」引出表语。",
-          "to derive joy from… 是不定式作 ability 的后置定语，「获得快乐的能力」。",
-          "from 后面的 what they are doing 是宾语从句，作介词 from 的宾语，what 在从句里作 doing 的宾语，书上译成「所做的事情」。"
-        ],
-        "lit": "区分孩子与成人的东西是他们从他们正在做的事情中获得快乐的强大能力。"
-      }
-    },
-    "She still remembers the sting of her first experience skipping an assignment due to the high prices.": {
-      "ph": [
-        {"t": "due to", "b": "due to", "m": "由于"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "She still remembers the sting of her first experience", "r": "主干"},
-          {"t": " skipping an assignment due to the high prices", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "skipping an assignment… 是现在分词短语作后置定语，修饰 experience，表示这次「经历」的内容。",
-          "due to the high prices 作原因状语，修饰 skipping。",
-          "书上把整个分词短语前置，译成「第一次因为价格太高而没交作业所经历的那种痛苦」，英文里放在后面的修饰成分，中文里变成放在「痛苦」前面的长定语。"
-        ],
-        "lit": "她仍然记得她第一次由于高价格而跳过一份作业的经历的刺痛。"
-      }
-    },
-    "They gave me many valuable comments as to how to improve my writing.": {
-      "ph": [
-        {"t": "as to", "b": "as to", "m": "关于，对于"}
-      ]
-    },
-    "They are the ultimate solution to droughts.": {
-      "ph": [
-        {"t": "solution to", "b": "solution to", "m": "……的解决办法"}
-      ]
-    },
-    "She took the wrong approach in her dealings with them.": {
-      "ph": [
-        {"t": "dealings with", "b": "dealings with", "m": "与……打交道"}
-      ]
-    },
-    "She expended all her efforts on the care of home and children.": {
-      "ph": [
-        {"t": "expended", "b": "expend … on", "m": "把……花在"},
-        {"t": "on", "b": "expend … on", "m": "把……花在"}
-      ]
-    },
-    "It didn't need much capital to start with.": {
-      "ph": [
-        {"t": "to start with", "b": "to start with", "m": "一开始"}
-      ]
-    },
-    "They have proved capable of doing almost anything.": {
-      "ph": [
-        {"t": "capable of", "b": "be capable of", "m": "能够，有能力"}
-      ]
-    },
-    "She has the capacity to take account of all the important factors.": {
-      "ph": [
-        {"t": "capacity to", "b": "capacity to do", "m": "做某事的能力"},
-        {"t": "take account of", "b": "take account of", "m": "考虑到"}
-      ]
-    },
-    "They are fond of sleeping in cabinets.": {
-      "ph": [
-        {"t": "fond of", "b": "be fond of", "m": "喜欢"}
-      ]
-    },
-    "There are a number of different versions about the origin of the lion dance.": {
-      "ph": [
-        {"t": "a number of", "b": "a number of", "m": "许多"}
-      ]
-    },
-    "Kids and adults alike find in dogs a source of attachment.": {
-      "ph": [
-        {"t": "a source of", "b": "a source of", "m": "……的来源"}
-      ]
-    },
-    "She always derives great pleasure from designing something new.": {
-      "ph": [
-        {"t": "derives", "b": "derive … from", "m": "从……获得"},
-        {"t": "from", "b": "derive … from", "m": "从……获得"}
-      ]
-    },
-    "We must continue to strive for greater efficiency.": {
-      "ph": [
-        {"t": "strive for", "b": "strive for", "m": "为……而努力"}
-      ]
-    },
-    "The local clubs are making every effort to interest more young people.": {
-      "ph": [
-        {"t": "making every effort to", "b": "make every effort to do", "m": "尽一切努力做某事"}
-      ]
-    },
-    "This action would not be in accord with our policy.": {
-      "ph": [
-        {"t": "in accord with", "b": "in accord with", "m": "与……一致"}
-      ]
-    },
-    "Skills are highly valued regardless of age.": {
-      "ph": [
-        {"t": "regardless of", "b": "regardless of", "m": "不管，无论"}
-      ]
-    },
-    "It all comes down to the difference between learning and practicing.": {
-      "ph": [
-        {"t": "comes down to", "b": "come down to", "m": "归结为"}
-      ]
-    },
-    "Compared with other mammals, our numerical instincts are not as remarkable as many assume.": {
-      "ph": [
-        {"t": "Compared with", "b": "compared with", "m": "与……相比"}
-      ]
-    },
-    "She thrust her way into the crowd.": {
-      "ph": [
-        {"t": "thrust her way into", "b": "thrust one's way into", "m": "硬挤进"}
-      ]
+    {
+     "t": "in power",
+     "b": "in power",
+     "m": "当权，掌权"
     }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Saying \"no\" is sometimes seen as",
+      "s": "你多半会翻成「说不有时候被看作……」。念一遍，「被看作」有点硬。Saying 开头当主语，就是「说不」这件事。seen as 是「被视为」，中文更爱换成「有人把……当成」。\n→ 说「不」有时被视为"
+     },
+     {
+      "t": "a luxury that only those in power can afford",
+      "s": "that 指谁？放回去试：只有当权者能负担起「一种奢侈」，说得通；放回 Saying：只有当权者能负担「说不」？也勉强，但 that 紧跟在 luxury 后面，指 luxury 最自然。你可能把 afford 翻成「给得起」，这里是「承受得起、享受得起」。those in power 是「当权的人」。\n→ 一种只有当权者才负担得起的奢侈"
+     }
+    ],
+    "order": "中文把 that 后面的内容整个提到「奢侈」前面，当成长长的定语：「只有当权者才负担得起的奢侈」。",
+    "sum": "说「不」有时被看作一种奢侈，只有掌权的人才享受得起。",
+    "cmp": "意思一样，书上「只有当权者能负担得起」是拆成了两小句；我把它压成一个定语，也可以。"
+   }
+  },
+  "The destruction of these treasures was a loss for mankind that no amount of money could make up.": {
+   "ph": [
+    {
+     "t": "no amount of",
+     "b": "no amount of",
+     "m": "再多的"
+    },
+    {
+     "t": "make up",
+     "b": "make up",
+     "m": "弥补"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The destruction of these treasures was a loss for mankind",
+      "s": "你多半会翻成「这些宝藏的毁灭是人类的一个损失」。念一遍，能懂，但 destruction 是名词，中文里连着「的」用着很重。把它换回动词：宝藏被毁。a loss for mankind 就是「人类的损失」。\n→ 这些宝藏被毁是人类的损失"
+     },
+     {
+      "t": "that no amount of money could make up",
+      "s": "that 指谁？放回去试：no amount of money could make up mankind，弥补人类？不通。换成 a loss：钱也弥补不了这个损失，通。make up 在这里是「弥补」，不是「组成」。could 前面是 was 的过去时，也没有 if 条件，不是虚拟，只是「能」的过去形式。\n→ 再多的钱也无法弥补的"
+     }
+    ],
+    "order": "英文 that 引导的部分放在 loss 后面，中文可以拆成一个新小句：先说「是人类的损失」，再补「再多的钱也弥补不了」。",
+    "sum": "这些宝藏被毁，是人类的损失，再多的钱也弥补不了。",
+    "cmp": "和书上基本一样，书上也是拆成两小句，这样最顺。"
+   }
+  },
+  "Today, he is still one of the best-known and most beloved racehorses of all time.": {
+   "ph": [
+    {
+     "t": "one of",
+     "b": "one of",
+     "m": "……之一"
+    },
+    {
+     "t": "of all time",
+     "b": "of all time",
+     "m": "有史以来"
+    }
+   ]
+  },
+  "They gave me many valuable comments as to how to improve my writing.": {
+   "ph": [
+    {
+     "t": "as to",
+     "b": "as to",
+     "m": "关于，对于"
+    }
+   ]
+  },
+  "Surveys estimate that 85% of women and 73% of men report feeling better after shedding tears.": {
+   "ph": [
+    {
+     "t": "shedding tears",
+     "b": "shed tears",
+     "m": "流泪"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Surveys estimate that",
+      "s": "你多半会翻成「调查估计」，听起来也能懂，但调查不会自己估计。英文爱让东西当主语，中文可以说「根据调查估计」或者直接保留「调查估计」。that 后面是估计的内容。\n→ 调查估计"
+     },
+     {
+      "t": "85% of women and 73% of men report feeling better after shedding tears",
+      "s": "report 你多半翻成「报告」。念一遍，「85% 的女性报告感觉更好」是不是有点怪？这里 report 是「称、表示」，说明他们自己讲的。feeling better 是 report 后面跟的内容，「感觉好些」。shedding tears 是「流泪」，after 管着它。\n→ 85% 的女性和 73% 的男性称流泪后感觉更好"
+     }
+    ],
+    "sum": "调查估计，85% 的女性和 73% 的男性表示，哭过之后会感觉好一些。",
+    "cmp": "和书上基本一样，书上用「称」，我用「表示」，意思没变。"
+   }
+  },
+  "They are the ultimate solution to droughts.": {
+   "ph": [
+    {
+     "t": "solution to",
+     "b": "solution to",
+     "m": "……的解决办法"
+    }
+   ]
+  },
+  "Using voice interaction feels far more intimate than surfing the net the old-fashioned way.": {
+   "ph": [
+    {
+     "t": "surfing the net",
+     "b": "surf the net",
+     "m": "上网"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Using voice interaction feels far more intimate",
+      "s": "你多半会翻成「使用语音交互感觉更亲密」。念一遍，谁感觉？这里 Using 开头当主语，就是「用语音交互」这件事；feels 是「让人觉得」。far more 是「……得多」，不是「远远更多」。\n→ 用语音交互让人觉得亲密得多"
+     },
+     {
+      "t": "than surfing the net the old-fashioned way",
+      "s": "than 后面比的是和前面对应的东西：前面是 Using voice interaction，所以这里是 surfing the net，「上网」这件事，两个 -ing 在比。the old-fashioned way 你可能翻成「老式的方式」，其实它在说怎么上网，「用老办法」。\n→ 比用老办法上网"
+     }
+    ],
+    "order": "「比」要放在形容词前面：英文是「亲密得多，比……」，中文说成「比用老办法上网亲密得多」。",
+    "sum": "用语音交互，比用老办法上网要让人觉得亲密得多。",
+    "cmp": "意思相同。书上的「使用语音交互比老式的上网方式感觉亲密得多」把 the old-fashioned way 当成「老式的上网方式」，也对，只是我更想让两边的动作对应起来。"
+   }
+  },
+  "She took the wrong approach in her dealings with them.": {
+   "ph": [
+    {
+     "t": "dealings with",
+     "b": "dealings with",
+     "m": "与……打交道"
+    }
+   ]
+  },
+  "She expended all her efforts on the care of home and children.": {
+   "ph": [
+    {
+     "t": "expended",
+     "b": "expend … on",
+     "m": "把……花在"
+    },
+    {
+     "t": "on",
+     "b": "expend … on",
+     "m": "把……花在"
+    }
+   ]
+  },
+  "It didn't need much capital to start with.": {
+   "ph": [
+    {
+     "t": "to start with",
+     "b": "to start with",
+     "m": "一开始"
+    }
+   ]
+  },
+  "They have proved capable of doing almost anything.": {
+   "ph": [
+    {
+     "t": "capable of",
+     "b": "be capable of",
+     "m": "能够，有能力"
+    }
+   ]
+  },
+  "She has the capacity to take account of all the important factors.": {
+   "ph": [
+    {
+     "t": "capacity to",
+     "b": "capacity to do",
+     "m": "做某事的能力"
+    },
+    {
+     "t": "take account of",
+     "b": "take account of",
+     "m": "考虑到"
+    }
+   ]
+  },
+  "They are fond of sleeping in cabinets.": {
+   "ph": [
+    {
+     "t": "fond of",
+     "b": "be fond of",
+     "m": "喜欢"
+    }
+   ]
+  },
+  "Raising cattle, pigs, and other land-based animals requires vast sums of grain and water.": {
+   "ph": [
+    {
+     "t": "vast sums of",
+     "b": "vast sums of",
+     "m": "大量的"
+    }
+   ]
+  },
+  "There are lots of different dishes to try and every region has its own special food.": {
+   "ph": [
+    {
+     "t": "lots of",
+     "b": "lots of",
+     "m": "许多"
+    }
+   ]
+  },
+  "There are a number of different versions about the origin of the lion dance.": {
+   "ph": [
+    {
+     "t": "a number of",
+     "b": "a number of",
+     "m": "许多"
+    }
+   ]
+  },
+  "Kids and adults alike find in dogs a source of attachment.": {
+   "ph": [
+    {
+     "t": "a source of",
+     "b": "a source of",
+     "m": "……的来源"
+    }
+   ]
+  },
+  "Half of the world's water resources have been seriously polluted.": {
+   "ph": [
+    {
+     "t": "Half of",
+     "b": "half of",
+     "m": "……的一半"
+    }
+   ]
+  },
+  "She always derives great pleasure from designing something new.": {
+   "ph": [
+    {
+     "t": "derives",
+     "b": "derive … from",
+     "m": "从……获得"
+    },
+    {
+     "t": "from",
+     "b": "derive … from",
+     "m": "从……获得"
+    }
+   ]
+  },
+  "Online systems may deprive teachers of opportunities to make the best use of their expertise for their students.": {
+   "ph": [
+    {
+     "t": "deprive",
+     "b": "deprive … of",
+     "m": "剥夺"
+    },
+    {
+     "t": "of",
+     "b": "deprive … of",
+     "m": "剥夺"
+    },
+    {
+     "t": "make the best use of",
+     "b": "make the best use of",
+     "m": "充分利用"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Online systems may deprive teachers of opportunities",
+      "s": "你多半会翻成「在线系统可能剥夺教师的机会」，念一遍，意思虽然差不多，但 deprive 后面有个 of 被你落掉了。看到 deprive，眼睛往后找 of——找到了：deprive A of B，从 A 那里拿走 B。A 是 teachers，B 是 opportunities。\n→ 在线系统可能剥夺教师……的机会"
+     },
+     {
+      "t": "to make the best use of their expertise for their students",
+      "s": "to 跟在 opportunities 后面，说明是什么机会，「……的机会」。make the best use of 你可能翻成「做最好的使用」，太生硬，意思就是「充分利用」。their expertise 是「他们的专业知识」，for their students 是「为了学生」，放在动作前面更顺。\n→ 为学生充分利用其专业知识"
+     }
+    ],
+    "order": "「机会」在英文里放前面、说明放后面；中文把说明提到「机会」前，写成「……的机会」。",
+    "sum": "在线系统可能让教师失去为学生充分发挥专业知识的机会。",
+    "cmp": "意思一样。书上用「剥夺」，我换成「让……失去」，口气软一点，两个都行。"
+   }
+  },
+  "We must continue to strive for greater efficiency.": {
+   "ph": [
+    {
+     "t": "strive for",
+     "b": "strive for",
+     "m": "为……而努力"
+    }
+   ]
+  },
+  "The local clubs are making every effort to interest more young people.": {
+   "ph": [
+    {
+     "t": "making every effort to",
+     "b": "make every effort to do",
+     "m": "尽一切努力做某事"
+    }
+   ]
+  },
+  "This action would not be in accord with our policy.": {
+   "ph": [
+    {
+     "t": "in accord with",
+     "b": "in accord with",
+     "m": "与……一致"
+    }
+   ]
+  },
+  "Make sure to bring the audience into the conversation so that it is not one-sided.": {
+   "ph": [
+    {
+     "t": "Make sure to",
+     "b": "make sure to do",
+     "m": "确保做某事"
+    },
+    {
+     "t": "so that",
+     "b": "so that",
+     "m": "这样，以便"
+    }
+   ]
+  },
+  "Some people regard professional change as an unpleasant experience that disturbs their stable careers.": {
+   "ph": [
+    {
+     "t": "regard",
+     "b": "regard … as",
+     "m": "把……看作"
+    },
+    {
+     "t": "as",
+     "b": "regard … as",
+     "m": "把……看作"
+    }
+   ]
+  },
+  "Skills are highly valued regardless of age.": {
+   "ph": [
+    {
+     "t": "regardless of",
+     "b": "regardless of",
+     "m": "不管，无论"
+    }
+   ]
+  },
+  "What distinguishes children from adults is their strong ability to derive joy from what they are doing.": {
+   "ph": [
+    {
+     "t": "distinguishes",
+     "b": "distinguish … from",
+     "m": "区分，使有别于"
+    },
+    {
+     "t": "from",
+     "b": "distinguish … from",
+     "m": "区分，使有别于"
+    },
+    {
+     "t": "derive",
+     "b": "derive … from",
+     "m": "从……获得"
+    },
+    {
+     "t": "from",
+     "b": "derive … from",
+     "m": "从……获得"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "What distinguishes children from adults",
+      "s": "What 开头，你多半会翻成「什么区分孩子和大人」，不成句。这里 What 引导的是整个主语，「……的东西」。distinguish A from B 是「把 A 和 B 区分开」，所以整块就是「使孩子不同于大人的东西」，更顺的说法是「孩子与大人的区别」。\n→ 孩子与大人的区别"
+     },
+     {
+      "t": "is their strong ability to derive joy from what they are doing",
+      "s": "is 后面是答案：their strong ability，「他们很强的能力」，to derive 说明是什么能力。derive A from B 是「从 B 中获得 A」，眼睛往后找 from。what they are doing 里的 what 是「所做的事」，不是「什么」。\n→ 在于他们很会从自己做的事情中获得快乐"
+     }
+    ],
+    "order": "英文先说「区别」再说「是什么」，中文可以用「……的区别在于……」，顺序不用动，只是把 is 换成「在于」。",
+    "sum": "孩子与大人的区别在于，他们特别善于从自己所做的事情中获得快乐。",
+    "cmp": "意思一样。书上「能力很强」直译 strong ability，我换成「特别善于」，更像中文。"
+   }
+  },
+  "It all comes down to the difference between learning and practicing.": {
+   "ph": [
+    {
+     "t": "comes down to",
+     "b": "come down to",
+     "m": "归结为"
+    }
+   ]
+  },
+  "Compared with other mammals, our numerical instincts are not as remarkable as many assume.": {
+   "ph": [
+    {
+     "t": "Compared with",
+     "b": "compared with",
+     "m": "与……相比"
+    }
+   ]
+  },
+  "She still remembers the sting of her first experience skipping an assignment due to the high prices.": {
+   "ph": [
+    {
+     "t": "due to",
+     "b": "due to",
+     "m": "由于"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She still remembers the sting of",
+      "s": "你多半会翻成「她仍然记得……的刺痛」。念一遍，「刺痛」像身体上的伤。sting 本来是「蜇、刺」，这里是比喻，指心里的难受、痛苦。\n→ 她仍然记得……的那种痛苦"
+     },
+     {
+      "t": "her first experience skipping an assignment due to the high prices",
+      "s": "这一块不要从头念到底。experience 后面的 skipping 是在说明这次「经历」是什么：跳过一份作业。skip an assignment 在这里就是「没做、没交作业」。due to 看到就换成「因为」，管着后面的 the high prices。你可能把 skipping 翻成「跳过」，作业又不能跳，说成「没交」更顺。\n→ 她第一次因为价格太高而没交作业的经历"
+     }
+    ],
+    "order": "「痛苦」是中心词，前面一长串都是在说是哪一次的痛苦，所以先说「第一次因为价格太高而没交作业」，最后落到「那种痛苦」。",
+    "sum": "她仍然记得第一次因为价格太高而没交作业的那种痛苦。",
+    "cmp": "和书上基本一样，书上译成「所经历的那种痛苦」，把 experience 也译出来了。"
+   }
+  },
+  "She thrust her way into the crowd.": {
+   "ph": [
+    {
+     "t": "thrust her way into",
+     "b": "thrust one's way into",
+     "m": "硬挤进"
+    }
+   ]
   }
+ }
 }

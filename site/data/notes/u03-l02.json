@@ -1,314 +1,423 @@
 {
-  "_note": "例句词组与语法解析（书外补充，AI 生成）",
-  "sents": {
-    "In my opinion, the outcome of the game shouldn't matter most.": {
-      "ph": [{"t": "In my opinion", "b": "in one's opinion", "m": "在我看来"}]
-    },
-    "It could be the breakthrough we've been looking for.": {
-      "ph": [{"t": "looking for", "b": "look for", "m": "寻找，寻求"}],
-      "an": {
-        "parts": [
-          {"t": "It could be the breakthrough", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "we've been looking for", "r": "定语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "we've been looking for 是定语从句，先行词是 the breakthrough，省略了关系词 that / which，它在从句里作 looking for 的宾语（look for which）；书上前置成「我们一直寻求的突破」。",
-          "could 在这里表示委婉的推测「可能」，句中没有 if 条件，也不是与事实相反，不是虚拟语气；have been looking 是现在完成进行时，所以书上译成「一直寻求」。"
-        ],
-        "lit": "它可能是我们一直在寻找的那个突破。"
-      }
-    },
-    "Focusing on output alone can have unintended consequences.": {
-      "ph": [{"t": "Focusing on", "b": "focus on", "m": "专注于，只关注"}]
-    },
-    "Focusing on effort is effective in helping children overcome frustration.": {
-      "ph": [
-        {"t": "Focusing on", "b": "focus on", "m": "专注于"},
-        {"t": "effective in", "b": "be effective in", "m": "在……方面有效"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Focusing on effort is effective in", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "helping children overcome frustration", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "Focusing on effort 是动名词短语作主语，书上译成「专注于努力」，直接当名词性主语用。",
-          "介词 in 后面要接动名词，所以是 effective in helping……，书上译成「对帮助……是有效的」。",
-          "help children overcome frustration：help 后的宾语 children 加动词原形 overcome（省略了 to）作宾补，书上合成一个动宾结构「帮助孩子克服挫折」。"
-        ],
-        "lit": "专注于努力在帮助孩子们克服挫折方面是有效的。"
-      }
-    },
-    "He pulled out to overtake a truck.": {
-      "ph": [{"t": "pulled out", "b": "pull out", "m": "驶出（车流）"}]
-    },
-    "The patient overheard the news that he was seriously ill.": {
-      "an": {
-        "parts": [
-          {"t": "The patient overheard the news", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that he was seriously ill", "r": "同位语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "that he was seriously ill 是 the news 的同位语从句：that 在从句里不作任何成分，从句本身完整，内容就是「消息」具体说了什么；这和定语从句不同（定语从句里关系词要作成分）。",
-          "书上把同位语从句前置成「他病情严重的消息」，并把 was seriously ill 说成「病情严重」。",
-          "overheard 是过去时，从句用 was 与之保持一致（时态呼应）。"
-        ],
-        "lit": "病人无意中听到了那个他病得很重的消息。"
-      }
-    },
-    "Obese people would be overwhelmed with anxiety.": {
-      "ph": [{"t": "be overwhelmed with", "b": "be overwhelmed with", "m": "被……淹没，不堪承受"}]
-    },
-    "The way chores are undertaken around the world may change people's thinking.": {
-      "ph": [{"t": "around the world", "b": "around the world", "m": "世界各地"}],
-      "an": {
-        "parts": [
-          {"t": "The way ", "r": "主干"},
-          {"t": "chores are undertaken around the world", "r": "定语从句"},
-          {"t": " may change people's thinking", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "the way 后面的从句是定语从句，先行词是 the way，省略了 in which / that；关系词在从句里作方式状语（chores are undertaken in the way），所以从句本身是完整的，书上前置成「世界各地做家务的方式」。",
-          "从句里 are undertaken 是被动（chores 是被做的对象），书上译成主动的「做家务」，不出现「被」。",
-          "may 表示推测「可能」，句中没有 if 条件，不是虚拟语气。"
-        ],
-        "lit": "家务在世界各地被承担的方式可能改变人们的思考。"
-      }
-    },
-    "The public overall is split on whether they'd like to use a driverless car.": {
-      "ph": [{"t": "is split on", "b": "be split on", "m": "在……上存在分歧"}],
-      "an": {
-        "parts": [
-          {"t": "The public overall is split on", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "whether they'd like to use a driverless car", "r": "宾语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "is split on 形式上是被动，意思是「意见被分成两派」，书上译成主动的「存在分歧」。",
-          "whether 引导的从句作介词 on 的宾语，书上把 on 译成「对于」，放在句首：「对于是否愿意……」。",
-          "they'd like to 是 they would like to，would like to 表示「愿意、想要」的客气说法，不是虚拟语气。"
-        ],
-        "lit": "公众总体上在他们是否愿意使用无人驾驶汽车这件事上被分裂了。"
-      }
-    },
-    "Google aims to save you from the thirst of curiosity altogether.": {
-      "ph": [
-        {"t": "aims to", "b": "aim to do", "m": "旨在，目标是"},
-        {"t": "save you from", "b": "save sb. from", "m": "使你摆脱"}
-      ]
-    },
-    "The kids were gathered together in one room.": {
-      "ph": [{"t": "gathered together", "b": "gather together", "m": "聚集"}]
-    },
-    "One quarter of teachers in an American city said that children in kindergartens had no time for playing freely.": {
-      "ph": [{"t": "had no time for", "b": "have no time for", "m": "没有时间做……"}],
-      "an": {
-        "parts": [
-          {"t": "One quarter of teachers in an American city said", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that children in kindergartens had no time for playing freely", "r": "宾语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "in an American city 是后置定语，修饰 teachers；书上前置成「美国一座城市四分之一的教师」，同理 in kindergartens 译成「幼儿园的孩子」。",
-          "that 引导 said 的宾语从句；said 是过去时，从句用 had（过去）与它呼应，书上不需要译出过去。",
-          "no time for playing 是 no + 名词的否定，书上译成「没有时间自由玩耍」，for 后接动名词 playing。"
-        ],
-        "lit": "一个美国城市里的教师的四分之一说，幼儿园里的孩子没有时间用于自由地玩耍。"
-      }
-    },
-    "Her business went bankrupt while she was in prison.": {
-      "ph": [{"t": "went bankrupt", "b": "go bankrupt", "m": "破产"}]
-    },
-    "The global economy continues to be disrupted by technology and other massive change.": {
-      "ph": [{"t": "continues to", "b": "continue to do", "m": "继续做某事"}],
-      "an": {
-        "parts": [
-          {"t": "The global economy continues", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "to be disrupted by technology and other massive change", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "continues to be disrupted 是 continue to do 的被动形式（to be + 过去分词），书上保留被动，译成「持续被……所扰乱」。",
-          "technology and other massive change 里 other 说明 technology 本身也算一种 change，所以书上译成「技术和其他巨大的变化」，两者并列作 by 的宾语（施事）。"
-        ],
-        "lit": "全球经济继续被技术和其他巨大变化所扰乱。"
-      }
-    },
-    "Insert coins into the slot and press for a ticket.": {
-      "ph": [
-        {"t": "Insert", "b": "insert … into", "m": "把……插入"},
-        {"t": "into", "b": "insert … into", "m": "把……插入"}
-      ]
-    },
-    "Everything that goes into the dumps might be made into something useful.": {
-      "ph": [
-        {"t": "goes into", "b": "go into", "m": "进入"},
-        {"t": "be made into", "b": "be made into", "m": "被做成"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Everything", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that goes into the dumps", "r": "定语从句"},
-          {"t": " might be made into something useful", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "that goes into the dumps 是定语从句，先行词是 Everything，that 在从句里作主语（that goes），不能省略；书上前置成「所有进入垃圾场的东西」。",
-          "might be made into 是被动，书上译成「被做成」，保留了「被」。",
-          "might 表示推测「有可能」，句中没有 if 条件，不是虚拟语气；something useful 里形容词 useful 放在 something 后面作后置定语。"
-        ],
-        "lit": "所有进入垃圾场的东西都可能被做成某种有用的东西。"
-      }
-    },
-    "Beverage companies should be responsible for collecting and reusing discarded plastic soda bottles.": {
-      "ph": [{"t": "be responsible for", "b": "be responsible for", "m": "对……负责"}]
-    },
-    "There's nothing but junk on the TV.": {
-      "ph": [{"t": "nothing but", "b": "nothing but", "m": "只有，仅仅"}]
-    },
-    "That may lead to nursing home abuse and age discrimination.": {
-      "ph": [
-        {"t": "lead to", "b": "lead to", "m": "导致"},
-        {"t": "nursing home", "b": "nursing home", "m": "养老院"}
-      ]
-    },
-    "Eight people were wounded in a clash with border guards.": {
-      "ph": [{"t": "clash with", "b": "clash with", "m": "与……冲突"}],
-      "an": {
-        "parts": [
-          {"t": "Eight people were wounded", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "in a clash with border guards", "r": "状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "were wounded 是被动形式，但表示的是「受伤」这个结果，书上译成「有八人受伤」，不说「被打伤」。",
-          "in a clash with border guards 是放在句尾的地点 / 场合状语，书上提到句首：「在与边防警卫的冲突中」。"
-        ],
-        "lit": "八个人在与边防警卫的一次冲突中受了伤。"
-      }
-    },
-    "The glass bowl smashed into a thousand pieces.": {
-      "ph": [{"t": "smashed into a thousand pieces", "b": "smash into pieces", "m": "摔成碎片"}]
-    },
-    "She found it much safer to use cash.": {
-      "ph": [
-        {"t": "found it", "b": "find it … to do", "m": "觉得做某事……"},
-        {"t": "to use", "b": "find it … to do", "m": "觉得做某事……"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "She found it much safer", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "to use cash", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "it 是形式宾语，真正的宾语是后面的不定式 to use cash，safer 是宾语补足语；这个结构书上译成「她发现用现金更安全」，把不定式提前当作主语来译。",
-          "much 修饰比较级 safer，表示「……得多」，书上译成「更安全」。"
-        ],
-        "lit": "她发现它更安全得多，用现金。"
-      }
-    },
-    "They dashed into the classroom.": {
-      "ph": [{"t": "dashed into", "b": "dash into", "m": "冲进"}]
-    },
-    "My father sealed the bag tightly with sticky tape minutes later.": {
-      "ph": [{"t": "minutes later", "b": "minutes later", "m": "几分钟之后"}]
-    },
-    "He wanted to conceal something from his parents.": {
-      "ph": [
-        {"t": "conceal", "b": "conceal … from", "m": "对……隐瞒"},
-        {"t": "from", "b": "conceal … from", "m": "对……隐瞒"}
-      ]
-    },
-    "It's important to reveal yourself to friends.": {
-      "ph": [{"t": "reveal yourself to", "b": "reveal oneself to sb.", "m": "向……展示自己"}],
-      "an": {
-        "parts": [
-          {"t": "It's important", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "to reveal yourself to friends", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "It 是形式主语，真正的主语是后面的不定式 to reveal yourself to friends；书上把不定式提前，译成「向朋友展示自己是很重要的」。",
-          "yourself 在这里泛指任何人，不是特指对话中的「你」，所以书上译成「自己」而不是「你自己」。"
-        ],
-        "lit": "向朋友们展示你自己是重要的。"
-      }
-    },
-    "I could never forgive Mike for betraying a confidence.": {
-      "ph": [
-        {"t": "forgive", "b": "forgive sb. for doing", "m": "原谅某人做某事"},
-        {"t": "for", "b": "forgive sb. for doing", "m": "原谅某人做某事"}
-      ]
-    },
-    "The heavy teaching loads left them little time and energy for family life.": {
-      "an": {
-        "parts": [
-          {"t": "The heavy teaching loads left them little time and energy", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "for family life", "r": "状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "主语 The heavy teaching loads 是无生命名词，直译「负担留给他们……」生硬，书上用「使他们……」的使字句译成「沉重的教学负担使他们很少有时间和精力」。",
-          "little 虽然不带 not，但含否定义「几乎没有」，修饰 time and energy，书上译成「很少有」。",
-          "teaching 是动名词作定语，teaching loads 就是「教学负担」。"
-        ],
-        "lit": "沉重的教学负担留给他们很少的时间和精力用于家庭生活。"
-      }
-    },
-    "He was only responsible for unloading food.": {
-      "ph": [{"t": "responsible for", "b": "be responsible for", "m": "负责"}]
-    },
-    "The audience watched as the story unfolded before their eyes.": {
-      "ph": [{"t": "before their eyes", "b": "before one's eyes", "m": "在眼前"}],
-      "an": {
-        "parts": [
-          {"t": "The audience watched", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "as the story unfolded before their eyes", "r": "时间状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "as 引导时间状语从句，表示两个动作同时进行（当……的时候 / 随着……），所以 watched 和 unfolded 是同步的。",
-          "意思上相当于 watched the story unfold，书上因此把 as 从句译成 watch 的内容：「看着剧情逐渐地展开」，并用「逐渐」体现 as 的「随着」。"
-        ],
-        "lit": "观众观看，当故事在他们的眼前展开的时候。"
-      }
-    },
-    "Fold the paper in half.": {
-      "ph": [{"t": "in half", "b": "in half", "m": "成两半"}]
-    },
-    "He was ashamed of having asked such a silly question.": {
-      "ph": [{"t": "was ashamed of", "b": "be ashamed of", "m": "为……感到羞愧"}],
-      "an": {
-        "parts": [
-          {"t": "He was ashamed", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "of having asked such a silly question", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "介词 of 后接动名词的完成式 having asked，表示「问」发生在「感到羞愧」之前，所以书上译成「为问了……而感到羞愧」，用「了」体现先后。",
-          "of 后面的内容是羞愧的原因，书上用「为……而」把原因提到前面。",
-          "such a silly question 的词序是 such + a + 形容词 + 名词，译成「这样一个愚蠢的问题」。"
-        ],
-        "lit": "他为曾经问过这样一个愚蠢的问题而感到羞愧。"
-      }
+ "_note": "例句词组与语法解析（书外补充，AI 生成）",
+ "sents": {
+  "In my opinion, the outcome of the game shouldn't matter most.": {
+   "ph": [
+    {
+     "t": "In my opinion",
+     "b": "in one's opinion",
+     "m": "在我看来"
     }
+   ]
+  },
+  "It could be the breakthrough we've been looking for.": {
+   "ph": [
+    {
+     "t": "looking for",
+     "b": "look for",
+     "m": "寻找，寻求"
+    }
+   ]
+  },
+  "Focusing on output alone can have unintended consequences.": {
+   "ph": [
+    {
+     "t": "Focusing on",
+     "b": "focus on",
+     "m": "专注于，只关注"
+    }
+   ]
+  },
+  "Focusing on effort is effective in helping children overcome frustration.": {
+   "ph": [
+    {
+     "t": "Focusing on",
+     "b": "focus on",
+     "m": "专注于"
+    },
+    {
+     "t": "effective in",
+     "b": "be effective in",
+     "m": "在……方面有效"
+    }
+   ]
+  },
+  "He pulled out to overtake a truck.": {
+   "ph": [
+    {
+     "t": "pulled out",
+     "b": "pull out",
+     "m": "驶出（车流）"
+    }
+   ]
+  },
+  "Obese people would be overwhelmed with anxiety.": {
+   "ph": [
+    {
+     "t": "be overwhelmed with",
+     "b": "be overwhelmed with",
+     "m": "被……淹没，不堪承受"
+    }
+   ]
+  },
+  "The way chores are undertaken around the world may change people's thinking.": {
+   "ph": [
+    {
+     "t": "around the world",
+     "b": "around the world",
+     "m": "世界各地"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The way chores are undertaken around the world",
+      "s": "你多半会翻成「方式家务被承担在世界各地」，读不下去。看到 The way 后面直接跟了一个完整的句子 chores are undertaken，就知道它在说「……的方式」，way 和 chores 之间省略了 in which。undertaken 你可能翻成「被承担」，家务不会被承担，换成人话就是「做家务」。around the world 放到前面说。\n→ 世界各地做家务的方式"
+     },
+     {
+      "t": "may change people's thinking",
+      "s": "这块照字面翻就行：may 是「可能」，thinking 在这里是名词，指「想法、看法」。\n→ 可能会改变人们的想法"
+     }
+    ],
+    "sum": "世界各地做家务的方式，可能会改变人们的想法。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "The public overall is split on whether they'd like to use a driverless car.": {
+   "ph": [
+    {
+     "t": "is split on",
+     "b": "be split on",
+     "m": "在……上存在分歧"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The public overall is split",
+      "s": "你可能把 overall 当成形容词，想翻成「整体的公众」。它夹在 public 和 is 之间，其实是副词，意思是「总体上」。再看 is split：public 在这里是「公众」，把它当成一个整体，所以用 is。split 是「分裂」，人被分成了几派，就是「意见有分歧」。\n→ 公众总体上存在分歧"
+     },
+     {
+      "t": "on whether they'd like to use a driverless car",
+      "s": "你多半会翻成「在是否他们愿意使用……上」，太硬。on 在这里是「就……」「对于……」，whether 是「是否」。they'd 是 they would 的缩写，would like to 是固定说法，表示「愿意、想要」，是客气的语气，不是虚拟，句里也没有 if。driverless 里的 -less 是「没有」，driver 加 -less 就是「没有司机的」，也就是「无人驾驶的」。\n→ 对于是否愿意使用无人驾驶汽车"
+     }
+    ],
+    "order": "英文把分歧放前面，把「对什么有分歧」放后面；中文习惯先说「对于是否……」，再说「存在分歧」，所以把 on whether 这一块提到前面。",
+    "sum": "对于是否愿意使用无人驾驶汽车，公众总体上存在分歧。",
+    "cmp": "和书上完全一样，也是把「对于是否……」提到了前面。"
+   }
+  },
+  "Google aims to save you from the thirst of curiosity altogether.": {
+   "ph": [
+    {
+     "t": "aims to",
+     "b": "aim to do",
+     "m": "旨在，目标是"
+    },
+    {
+     "t": "save you from",
+     "b": "save sb. from",
+     "m": "使你摆脱"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Google aims to save you",
+      "s": "你多半会翻成「谷歌的目标是拯救你」，再往后就翻不下去了。看到 save 先别急，眼睛往后找 from：save sb. from sth.，把某人从某事里救出来，也就是「让某人摆脱某事」。\n→ 谷歌的目标是让你摆脱"
+     },
+     {
+      "t": "from the thirst of curiosity",
+      "s": "thirst 你可能只认识「口渴」，这里是比喻，指「渴望」。the thirst of curiosity 字面是「好奇心的渴望」，说白了就是对好奇心的渴求。\n→ 好奇心的渴望"
+     },
+     {
+      "t": "altogether",
+      "s": "altogether 放在句子最后，你可能不知道它在修饰什么。它是「完全、彻底」，修饰的是前面整个 save you from……，所以翻的时候提到「摆脱」前面。\n→ 完全"
+     }
+    ],
+    "order": "altogether 在英文里放在句末，中文要把它提到动作前面：「完全摆脱」，而不是「摆脱……完全」。",
+    "sum": "谷歌的目标是让你彻底摆脱好奇心的渴望。",
+    "cmp": "意思一样。书上是「完全摆脱」，我换成「彻底摆脱」，两个都对。"
+   }
+  },
+  "The kids were gathered together in one room.": {
+   "ph": [
+    {
+     "t": "gathered together",
+     "b": "gather together",
+     "m": "聚集"
+    }
+   ]
+  },
+  "One quarter of teachers in an American city said that children in kindergartens had no time for playing freely.": {
+   "ph": [
+    {
+     "t": "had no time for",
+     "b": "have no time for",
+     "m": "没有时间做……"
+    }
+   ]
+  },
+  "Her business went bankrupt while she was in prison.": {
+   "ph": [
+    {
+     "t": "went bankrupt",
+     "b": "go bankrupt",
+     "m": "破产"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Her business went bankrupt",
+      "s": "你多半会翻成「她的生意去破产了」。went 不是「去」。go 后面跟形容词，表示「变成某种状态」，go bankrupt 就是「破产」。\n→ 她的生意破产了"
+     },
+     {
+      "t": "while she was in prison",
+      "s": "while 引导一个时间，意思是「在……期间」。in prison 是「在坐牢」，prison 前面不加 the。这个时间放在后面，中文习惯先说时间。\n→ 在她坐牢期间"
+     }
+    ],
+    "order": "英文把时间放在句末，中文习惯先说时间，再说发生了什么，所以把 while 这一块提到前面。",
+    "sum": "在她坐牢期间，她的生意破产了。",
+    "cmp": "书上是「她在监狱期间，她的生意破产了」，前后两个「她」，有点啰嗦，而且「她在监狱期间」不太通顺。「在她坐牢期间」更顺。"
+   }
+  },
+  "The global economy continues to be disrupted by technology and other massive change.": {
+   "ph": [
+    {
+     "t": "continues to",
+     "b": "continue to do",
+     "m": "继续做某事"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The global economy continues to be disrupted",
+      "s": "你多半会翻成「全球经济继续被扰乱」。念一遍，是不是有点怪？中文没那么爱用「被」。continues to be disrupted 是「继续」加一个被动，拆开看：经济不是自己在扰乱，是别人在扰乱它。disrupt 是「扰乱、使中断」，换成「受到冲击」会更顺。\n→ 全球经济持续受到冲击"
+     },
+     {
+      "t": "by technology and other massive change",
+      "s": "by 后面是「谁干的」，你可能想翻成「被技术……所扰乱」，让技术当施事，句子还是别扭。说「受到……的冲击」，by 后面的东西就变成了冲击的来源。注意 change 在这里是不可数名词，指「变化」，massive 是「巨大的」。\n→ 技术和其他巨大变化的冲击"
+     }
+    ],
+    "sum": "全球经济持续受到技术和其他巨大变化的冲击。",
+    "cmp": "意思一样。书上是「持续被……所扰乱」，保留了被动，我这里换成「受到……冲击」，中文更自然。"
+   }
+  },
+  "Insert coins into the slot and press for a ticket.": {
+   "ph": [
+    {
+     "t": "Insert",
+     "b": "insert … into",
+     "m": "把……插入"
+    },
+    {
+     "t": "into",
+     "b": "insert … into",
+     "m": "把……插入"
+    }
+   ]
+  },
+  "Everything that goes into the dumps might be made into something useful.": {
+   "ph": [
+    {
+     "t": "goes into",
+     "b": "go into",
+     "m": "进入"
+    },
+    {
+     "t": "be made into",
+     "b": "be made into",
+     "m": "被做成"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Everything that goes into the dumps",
+      "s": "that 指谁？只有 Everything 一个能放回去：Everything goes into the dumps，所有东西进入垃圾场，说得通。所以 that 引导的这一小段是修饰 Everything 的，要先翻。dumps 是「垃圾场」，goes into 是「进入」，中文说「被扔进」更顺。\n→ 所有被扔进垃圾场的东西"
+     },
+     {
+      "t": "might be made into something useful",
+      "s": "你可能把 might 当成虚拟，以为是「要是……就会」。但这句话里没有 if，也不是和事实相反，might 只是表示「有可能」。be made into 是「被做成、变成」，眼睛放在 into 上，后面是变成的结果。\n→ 有可能变成有用的东西"
+     }
+    ],
+    "sum": "所有被扔进垃圾场的东西，都有可能变成有用的东西。",
+    "cmp": "和书上基本一样，书上用「进入」「被做成」，我这里换成「被扔进」「变成」，更顺口一点。"
+   }
+  },
+  "Beverage companies should be responsible for collecting and reusing discarded plastic soda bottles.": {
+   "ph": [
+    {
+     "t": "be responsible for",
+     "b": "be responsible for",
+     "m": "对……负责"
+    }
+   ]
+  },
+  "There's nothing but junk on the TV.": {
+   "ph": [
+    {
+     "t": "nothing but",
+     "b": "nothing but",
+     "m": "只有，仅仅"
+    }
+   ]
+  },
+  "That may lead to nursing home abuse and age discrimination.": {
+   "ph": [
+    {
+     "t": "lead to",
+     "b": "lead to",
+     "m": "导致"
+    },
+    {
+     "t": "nursing home",
+     "b": "nursing home",
+     "m": "养老院"
+    }
+   ]
+  },
+  "Eight people were wounded in a clash with border guards.": {
+   "ph": [
+    {
+     "t": "clash with",
+     "b": "clash with",
+     "m": "与……冲突"
+    }
+   ]
+  },
+  "The glass bowl smashed into a thousand pieces.": {
+   "ph": [
+    {
+     "t": "smashed into a thousand pieces",
+     "b": "smash into pieces",
+     "m": "摔成碎片"
+    }
+   ]
+  },
+  "She found it much safer to use cash.": {
+   "ph": [
+    {
+     "t": "found it",
+     "b": "find it … to do",
+     "m": "觉得做某事……"
+    },
+    {
+     "t": "to use",
+     "b": "find it … to do",
+     "m": "觉得做某事……"
+    }
+   ]
+  },
+  "He was ashamed of having asked such a silly question.": {
+   "ph": [
+    {
+     "t": "was ashamed of",
+     "b": "be ashamed of",
+     "m": "为……感到羞愧"
+    }
+   ]
+  },
+  "They dashed into the classroom.": {
+   "ph": [
+    {
+     "t": "dashed into",
+     "b": "dash into",
+     "m": "冲进"
+    }
+   ]
+  },
+  "My father sealed the bag tightly with sticky tape minutes later.": {
+   "ph": [
+    {
+     "t": "minutes later",
+     "b": "minutes later",
+     "m": "几分钟之后"
+    }
+   ]
+  },
+  "He wanted to conceal something from his parents.": {
+   "ph": [
+    {
+     "t": "conceal",
+     "b": "conceal … from",
+     "m": "对……隐瞒"
+    },
+    {
+     "t": "from",
+     "b": "conceal … from",
+     "m": "对……隐瞒"
+    }
+   ]
+  },
+  "It's important to reveal yourself to friends.": {
+   "ph": [
+    {
+     "t": "reveal yourself to",
+     "b": "reveal oneself to sb.",
+     "m": "向……展示自己"
+    }
+   ]
+  },
+  "I could never forgive Mike for betraying a confidence.": {
+   "ph": [
+    {
+     "t": "forgive",
+     "b": "forgive sb. for doing",
+     "m": "原谅某人做某事"
+    },
+    {
+     "t": "for",
+     "b": "forgive sb. for doing",
+     "m": "原谅某人做某事"
+    }
+   ]
+  },
+  "The heavy teaching loads left them little time and energy for family life.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The heavy teaching loads left them",
+      "s": "你多半会翻成「沉重的教学负担留给了他们」。意思对，但中文更习惯让东西当原因：「让他们」「使他们」。loads 是「负担、工作量」，teaching loads 就是教学工作量。\n→ 沉重的教学负担使他们"
+     },
+     {
+      "t": "little time and energy for family life",
+      "s": "你可能把 little 当成「小的」，翻成「小的时间和精力」，念一遍就不对了。little 在这里修饰不可数名词，是「几乎没有」，带有否定的意思。for family life 是「用在家庭生活上」。\n→ 几乎没有时间和精力用于家庭生活"
+     }
+    ],
+    "sum": "沉重的教学负担，使他们几乎没有时间和精力顾及家庭生活。",
+    "cmp": "意思一样。书上是「很少有时间和精力用于家庭生活」，我换成「几乎没有时间和精力顾及家庭生活」，更口语一点。"
+   }
+  },
+  "He was only responsible for unloading food.": {
+   "ph": [
+    {
+     "t": "responsible for",
+     "b": "be responsible for",
+     "m": "负责"
+    }
+   ]
+  },
+  "The audience watched as the story unfolded before their eyes.": {
+   "ph": [
+    {
+     "t": "before their eyes",
+     "b": "before one's eyes",
+     "m": "在眼前"
+    }
+   ]
+  },
+  "Fold the paper in half.": {
+   "ph": [
+    {
+     "t": "in half",
+     "b": "in half",
+     "m": "成两半"
+    }
+   ]
   }
+ }
 }
