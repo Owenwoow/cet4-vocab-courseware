@@ -83,6 +83,30 @@ def merge(lid):
         sys.exit(1)
     n_an = sum(1 for n in doc["sents"].values() if n.get("an"))
     print(f"[OK] {lid}：合并 {len(draft)} 句解析，notes 里共 {len(doc['sents'])} 句、带解析 {n_an} 句")
+    hints = [f"{en[:40]}…：{h}" for en, an in draft.items() for h in style_hints(an)]
+    if hints:
+        print(f"  风格提醒 {len(hints)} 条（已写入；逐条改掉再 merge，确实不该改的在回复里说明）：")
+        for h in hints:
+            print("   ", h)
+
+
+PREDICT = ("你多半", "你可能", "你要是", "你大概", "你也许", "你会想", "你想翻")
+GUESS = ("前文", "上文", "上下文", "斜体")
+
+
+def style_hints(an):
+    """对话带练的风格自检（不拦截，只提醒）：见 pipeline/prompts/notes.md「写法规矩」"""
+    out, talk = [], an.get("talk", [])
+    plain = [b for b in talk if "照字面" in b.get("s", "")]
+    if len(plain) > 1:
+        out.append(f"「照字面翻就行」的块有 {len(plain)} 个，最多 1 个，其余并进相邻的块")
+    if not any(w in b.get("s", "") for b in talk for w in PREDICT):
+        out.append("没有一块在猜「你多半会翻成……」，这句不像带练；卡点不够就别选这句")
+    text = "".join(b.get("s", "") for b in talk) + an.get("order", "") + an.get("cmp", "")
+    for w in GUESS:
+        if w in text:
+            out.append(f"出现「{w}」：只讲这一句和书译里看得到的东西")
+    return out
 
 
 if __name__ == "__main__":

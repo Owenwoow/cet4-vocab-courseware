@@ -15,8 +15,8 @@
 | 阶段 | 谁做 | 做什么 | 状态 |
 |---|---|---|---|
 | 1 | Claude | 新格式、校验、合并脚本、提示词、页面「析」改版、词组音频代码 | 已完成 |
-| 2 | WorkBuddy | 试跑 u07-l03、u08-l01 | 待开始 |
-| 3 | Claude | 逐句审查试跑结果，按需改提示词；结论：可以批量 / 改提示词 / 改成 WorkBuddy 写初稿、Claude 审难句 | 待开始 |
+| 2 | WorkBuddy | 试跑 u07-l03、u08-l01 | 第 1 轮不过，第 2 轮待开始 |
+| 3 | Claude | 逐句审查试跑结果，按需改提示词；结论：可以批量 / 改提示词 / 改成 WorkBuddy 写初稿、Claude 审难句 | 第 1 轮：改提示词 + 加风格自检，重跑试跑 |
 | 4 | WorkBuddy | 批量其余 38 课，每个 Unit 开一个新对话、一个提交 | 待开始 |
 | 5 | Claude | 每个 Unit 抽查 3 句；收尾文档 | 待开始 |
 | 6 | 用户或 WorkBuddy | 推送 → 云端 audio 工作流按 Unit 跑 40 课（生成词组音频）→ 确认部署 | 待开始（可提前到阶段 1 推送后，与 2~4 并行） |
@@ -46,6 +46,17 @@
 见对话里整理的 B（试跑）、D（批量）、E（推送与音频）三段；要点：
 - 先读 `pipeline/prompts/notes.md`；每课 `--dump` → 写 `work/notes-an/<id>.json` → `--merge` 直到 `[OK]`
 - 只改 `work/notes-an/` 和 merge 产生的 `site/data/notes/`；拿不准的句子不写；提交不加 AI 署名，不 push
+
+## 试跑第 1 轮审查（WorkBuddy，2026-10-14）
+
+格式全对，merge 一次通过；但 20 句里 18 句没有「你多半会翻成……」这一步，写成了逐词讲解，不是带练（只有照抄示例的 except、attribute 两句是对的）。另外：
+- 选句偏易：Diabetes patients are advised…、Muscle performance can also be affected…、Most animals conclude… 都只有一个卡点
+- 编造看不到的信息：「Life Reimagined 斜体」「It 指前文那家航空公司」「They 指前文的某些人」；cmp 写「书上把『……有着……的影响』写完整」，书译里没有「有着」
+- 语法说错：Steering… and facing… brings 说成「两件事一起当主语，谓语才用单数」；「calorie 是形容词」
+- 指代只放回去试了一个候选（Life Reimagined 句）
+- sum 有「免疫系统顶不太住了」这类太随意的说法
+
+处理：提示词加了 6 条规矩（每句至少 2 个真卡点；有卡点的块第一句必须猜他会怎么翻；照字面的块最多 1 个；只讲看得到的；cmp 逐字引书译；语法说法要准，附上这次的错例），`notes_an.py --merge` 加风格自检（没有「你多半会」、照字面块超过 1 个、出现「前文 / 斜体 / 上下文」时提醒，不拦截）。用新自检回看第 1 轮，20 句里 18 句有提醒。第 1 轮数据没提交，已还原；草稿另存在本机临时目录。
 
 ## 决定
 
