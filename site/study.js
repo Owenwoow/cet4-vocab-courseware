@@ -472,7 +472,7 @@ const Study = (() => {
 
   /* ---------- 出题用的小工具 ---------- */
   const sensesOf = e => e.prons.flatMap(p => p.senses);
-  const meanText = e => sensesOf(e).slice(0, 3).map(s => `${s.pos} ${plainMean(s.mean)}`).join("；");
+  const meanText = e => sensesOf(e).slice(0, 3).map(s => `${s.pos} ${plainMean(s.mean)}`.trim()).join("；");
   const mainPos = e => (sensesOf(e)[0] || {}).pos || "";
   /* 干扰项的候选：这一轮涉及的课里所有书上词条 + 这一轮的词 */
   async function buildPool(items) {
