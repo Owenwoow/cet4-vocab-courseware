@@ -1,330 +1,471 @@
 {
-  "_note": "例句词组与语法解析（书外补充，AI 生成）",
-  "sents": {
-    "It can be avoided if human values are translated into their language.": {
-      "ph": [
-        {"t": "translated into", "b": "translate into", "m": "把……翻译成"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "It can be avoided", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "if human values are translated into their language", "r": "条件状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "主句 It can be avoided 是被动，It 指代前文所说的情况；书上译成「这是可以避免的」，用「是……的」而不用「被」。",
-          "if 条件从句里 are translated into 也是被动，书上改成主动的「把」字句「把人类的价值观翻译成他们的语言」，并把条件提到句首，主句放后面。"
-        ],
-        "lit": "它能被避免，如果人类的价值观被翻译进他们的语言。"
-      }
-    },
-    "Many others attempted to transplant their habits and traditions to the new world.": {
-      "ph": [
-        {"t": "attempted to", "b": "attempt to do", "m": "试图做"}
-      ]
-    },
-    "It will force cities to transform their infrastructure.": {
-      "ph": [
-        {"t": "force", "b": "force sb. to do", "m": "迫使某人做"},
-        {"t": "to", "b": "force sb. to do", "m": "迫使某人做"}
-      ]
-    },
-    "She is used to taking public transport.": {
-      "ph": [
-        {"t": "is used to", "b": "be used to doing", "m": "习惯于"},
-        {"t": "public transport", "b": "public transport", "m": "公共交通工具"}
-      ]
-    },
-    "Let the debates be transparent and vigorous, wherever they are held.": {
-      "an": {
-        "parts": [
-          {"t": "Let the debates be transparent and vigorous", "r": "主干"},
-          {"t": ", ", "r": ""},
-          {"t": "wherever they are held", "r": "让步状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "主干是祈使句 Let + 宾语 + be + 表语（让辩论保持……），书上带上要求的语气，译成「应使辩论易懂而有力」。",
-          "wherever 引导让步状语从句，相当于 no matter where，在从句中作地点状语；从句里 are held 是被动，书上译成主动的「举行」，并把整个从句提到句首：「无论在何处举行辩论」。"
-        ],
-        "lit": "让辩论是透明而有力的，无论它们在哪里被举行。"
-      }
-    },
-    "These invisible duties become apparent only when you don't do them.": {
-      "ph": [
-        {"t": "only when", "b": "only when", "m": "只有当……的时候"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "These invisible duties become apparent", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "only when you don't do them", "r": "时间状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "only 限定 when 引导的时间状语从句，表示唯一的条件；only 状语在句尾，所以主句不倒装。书上译成「只有当……的时候……才……」，补出「才」来呼应「只有」。",
-          "从句里的 them 指 These invisible duties；书上把 when 从句提到前面，主句放后面，译成「只有当你不去做的时候，这些看不见的责任才会变得明显」。"
-        ],
-        "lit": "这些看不见的责任变得明显，只有当你不做它们的时候。"
-      }
-    },
-    "Start with the most obvious place first: the company's website.": {
-      "ph": [
-        {"t": "Start with", "b": "start with", "m": "从……开始"}
-      ]
-    },
-    "The fridge's effect upon the environment has been evident.": {
-      "ph": [
-        {"t": "effect upon", "b": "effect on", "m": "对……的影响"}
-      ]
-    },
-    "There was no evidence that the meeting took place.": {
-      "ph": [
-        {"t": "took place", "b": "take place", "m": "发生"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "There was no evidence", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that the meeting took place", "r": "同位语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "There was no evidence 是 there be 句型，no + 名词表示完全否定，书上译成「没有证据」。",
-          "that 引导同位语从句，解释 evidence 的具体内容；that 在从句中不作成分、也没有意思。书上用「表明」把从句接在「证据」后面，译成「没有证据表明有过这次会面」，而不是「……的证据」。"
-        ],
-        "lit": "没有一个会议发生了的证据。"
-      }
-    },
-    "Isn't this the same crowd that rails against processed junk and champions craft cooking?": {
-      "ph": [
-        {"t": "rails against", "b": "rail against", "m": "怒斥"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Isn't this the same crowd", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that rails against processed junk and champions craft cooking", "r": "定语从句"},
-          {"t": "?", "r": ""}
-        ],
-        "pts": [
-          "Isn't this…? 是否定形式的疑问句，表示反问，期待肯定的回答；书上译成「这不就是……吗」。",
-          "定语从句的先行词是 crowd（the same crowd），that 在从句中作主语，所以谓语 rails 用单数，与 crowd 一致。书上把从句前置成「那些怒斥……、拥护……的人」，crowd 译成「人」。",
-          "从句里 rails against … 和 champions … 是两个并列谓语，共用主语 that；champions 在这里是动词（拥护），书上用顿号并列译成「怒斥加工垃圾、拥护手工烹饪」。"
-        ],
-        "lit": "这不是同一群人吗，他们怒斥加工垃圾并拥护手工烹饪？"
-      }
-    },
-    "Keep track of left-handed children's school performance.": {
-      "ph": [
-        {"t": "Keep track of", "b": "keep track of", "m": "跟踪"}
-      ]
-    },
-    "The two spacecrafts will link up in orbit.": {
-      "ph": [
-        {"t": "link up", "b": "link up", "m": "对接"},
-        {"t": "in orbit", "b": "in orbit", "m": "在轨道上"}
-      ]
-    },
-    "It still has a chance to give rise to a boom in the global economy.": {
-      "ph": [
-        {"t": "a chance to", "b": "a chance to do", "m": "有机会做"},
-        {"t": "give rise to", "b": "give rise to", "m": "带来，引起"},
-        {"t": "a boom in", "b": "a boom in", "m": "……的繁荣"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "It still has a chance", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "to give rise to a boom in the global economy", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "to give rise to… 是不定式短语作后置定语，修饰 a chance，书上译成「仍有机会……」，后面的内容接在「机会」之后。",
-          "boom 在这里是名词（繁荣），a boom in the global economy 是名词短语作 give rise to 的宾语；书上把 give rise to 译成「带来」，并把 in the global economy 提到前面，译成「为全球经济带来繁荣」。"
-        ],
-        "lit": "它仍然有一个机会引起全球经济中的繁荣。"
-      }
-    },
-    "With the development in science and technology man can make various flowers bloom before their time.": {
-      "ph": [
-        {"t": "development in", "b": "development in", "m": "……方面的发展"},
-        {"t": "make various flowers bloom", "b": "make sb. do", "m": "使……做某事"},
-        {"t": "before their time", "b": "before one's time", "m": "提前，不到时候"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "With the development in science and technology", "r": "状语"},
-          {"t": " ", "r": ""},
-          {"t": "man can make various flowers bloom before their time", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "With the development in science and technology 是 with 引导的介词短语，在句首作背景状语，书上译成「随着科学技术的发展」。",
-          "make various flowers bloom 是使役动词 make + 宾语 + 省略 to 的不定式（bloom），书上译成「使各种各样的花……绽放」。before their time 指不到花期，书上译成「提前」。"
-        ],
-        "lit": "随着科学和技术中的发展，人能使各种花在它们的时间之前开放。"
-      }
-    },
-    "He bragged about how brave he was.": {
-      "ph": [
-        {"t": "bragged about", "b": "brag about", "m": "吹嘘"}
-      ]
-    },
-    "Many governments have done more than the US government in providing the raw materials for innovation.": {
-      "an": {
-        "parts": [
-          {"t": "Many governments have done more than the US government", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "in providing the raw materials for innovation", "r": "状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "have done more than the US government 是比较结构，more than 后省略了 has done；现在完成时 have done 书上译成「做得更多」。",
-          "in providing… 是介词 in + 动名词短语，表示「在……方面」，作范围状语。书上把它提到句首，译成「在提供原材料促进创新方面」，再接主干。",
-          "for innovation 修饰 raw materials（用于创新的原材料），书上译成动词性的「促进创新」。"
-        ],
-        "lit": "许多政府已经做了比美国政府更多的事，在提供用于创新的原材料方面。"
-      }
-    },
-    "Land currently ploughed up for crops might be able to revert to forest or wilderness.": {
-      "ph": [
-        {"t": "ploughed up", "b": "plough up", "m": "翻耕，开垦"},
-        {"t": "might be able to", "b": "be able to", "m": "可能能够"},
-        {"t": "revert to", "b": "revert to", "m": "恢复为"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Land ", "r": "主干"},
-          {"t": "currently ploughed up for crops", "r": "非谓语"},
-          {"t": " might be able to revert to forest or wilderness", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "currently ploughed up for crops 是过去分词短语作后置定语，修饰 Land，相当于 that is currently ploughed up for crops；书上前置成「目前用来种植的土地」。",
-          "might be able to 里的 might 表示可能性的推测（可能），不是时态呼应，书上译成「可能会恢复为」。"
-        ],
-        "lit": "目前被翻耕出来用于作物的土地可能能够恢复成森林或荒野。"
-      }
-    },
-    "The same can be said of their ability to dominate the corporate boardroom.": {
-      "ph": [
-        {"t": "The same can be said of", "b": "the same can be said of", "m": "对……也是如此"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "The same can be said of their ability", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "to dominate the corporate boardroom", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "The same can be said of… 是固定的被动句式，书上不译「被说」，而是把 of 后面的名词提到句首作主语，译成「……也是如此」。",
-          "to dominate the corporate boardroom 是不定式作后置定语，修饰 ability，书上前置成「主导公司董事会的能力」。"
-        ],
-        "lit": "同样的可以被说起他们主导公司董事会的能力。"
-      }
-    },
-    "It is playing a dominant role in the film market.": {
-      "ph": [
-        {"t": "playing a dominant role in", "b": "play a role in", "m": "在……中发挥作用"}
-      ]
-    },
-    "Well-functioning machines relieve them of dull tasks.": {
-      "ph": [
-        {"t": "relieve", "b": "relieve sb. of sth.", "m": "减轻某人的负担"},
-        {"t": "of", "b": "relieve sb. of sth.", "m": "减轻某人的负担"}
-      ]
-    },
-    "Some people are dumb enough to want children just because seeing others do so.": {
-      "ph": [
-        {"t": "dumb enough to", "b": "be adj. enough to do", "m": "愚蠢到……"},
-        {"t": "just because", "b": "just because", "m": "只是因为"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "Some people are dumb enough to want children", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "just because seeing others do so", "r": "原因状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "dumb enough to want 是「形容词 + enough to do」，不定式说明程度，书上译成「愚蠢到想要……」。",
-          "just because 引导原因状语从句，because 后直接接 seeing，省略了与主句一致的主语和助动词，书上译成「只是因为看到别人这样做」，just 译成「只是」。",
-          "seeing others do so 是 see + 宾语 + 省略 to 的不定式，do so 代替前面的 want children，所以译成「这样做」。"
-        ],
-        "lit": "一些人愚蠢得足以想要孩子，仅仅因为看见别人这样做。"
-      }
-    },
-    "Universities want the government to introduce a loan scheme for tuition fees.": {
-      "ph": [
-        {"t": "want", "b": "want sb. to do", "m": "想要某人做"},
-        {"t": "to", "b": "want sb. to do", "m": "想要某人做"},
-        {"t": "tuition fees", "b": "tuition fees", "m": "学费"}
-      ]
-    },
-    "We love to establish a routine and stick with it.": {
-      "ph": [
-        {"t": "stick with", "b": "stick with", "m": "坚持"}
-      ]
-    },
-    "To get to the place requires going through a very narrow passage.": {
-      "ph": [
-        {"t": "get to", "b": "get to", "m": "到达"},
-        {"t": "going through", "b": "go through", "m": "经过，穿过"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "To get to the place", "r": "主干"},
-          {"t": " requires going through a very narrow passage", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "To get to the place 是不定式短语作主语，谓语 requires 用单数；书上把它译成带「要」的分句「要到达这个地方」，后面再接「需要……」。",
-          "require 后接动名词短语 going through… 作宾语（require doing），书上译成「需要经过一条非常狭窄的通道」。"
-        ],
-        "lit": "去到那个地方需要穿过一条很窄的通道。"
-      }
-    },
-    "The exterior lights of the house came on as I approached the door.": {
-      "ph": [
-        {"t": "came on", "b": "come on", "m": "（灯）亮起"}
-      ]
-    },
-    "The news media reported extensively on the story.": {
-      "ph": [
-        {"t": "reported", "b": "report on", "m": "报道"},
-        {"t": "on", "b": "report on", "m": "报道"}
-      ]
-    },
-    "It creates a lot of trouble for local residents.": {
-      "ph": [
-        {"t": "a lot of", "b": "a lot of", "m": "许多"}
-      ]
-    },
-    "Some of the world's most innovative companies are located here.": {
-      "an": {
-        "parts": [
-          {"t": "Some of the world's most innovative companies are located here", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "are located 是被动形式，但 locate 在这里表示「位于」，书上译成主动的「坐落在这里」，不译「被」。",
-          "主语 Some of the world's most innovative companies 里 most innovative 是最高级，书上译成「世界上一些最具创新性的公司」，把 Some 提到「公司」之前作数量修饰。"
-        ],
-        "lit": "世界上最具创新性的公司中的一些被位于这里。"
-      }
-    },
-    "It is an old city with many sites of historical interest.": {
-      "ph": [
-        {"t": "of historical interest", "b": "of historical interest", "m": "有历史意义的"}
-      ]
-    },
-    "I clicked on the link to the next page of the website.": {
-      "ph": [
-        {"t": "clicked on", "b": "click on", "m": "单击"}
-      ]
+ "_note": "例句词组与语法解析（书外补充，AI 生成）",
+ "sents": {
+  "It can be avoided if human values are translated into their language.": {
+   "ph": [
+    {
+     "t": "translated into",
+     "b": "translate into",
+     "m": "把……翻译成"
     }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It can be avoided",
+      "s": "你多半会翻成「它可以被避免」。念一遍，有点翻译腔，中文少说「被避免」。can be avoided 直接说「能避免」「可以避免」就顺了。这句里 It 指什么看不出来，翻成「这」或「这种情况」都行。\n→ 这是可以避免的"
+     },
+     {
+      "t": "if human values are translated into their language",
+      "s": "你可能想翻成「如果人类的价值观被翻译进他们的语言」。又是「被」，而且 translate A into B 是「把 A 翻译成 B」，眼睛盯住 into，它后面就是翻成的结果。这里 A 是 human values，B 是 their language，用「把」字句最顺。\n→ 如果把人类的价值观翻译成他们的语言"
+     }
+    ],
+    "order": "英文把 if 放在后面，中文的「如果」习惯放前面，所以把 if 这块提到前面。",
+    "sum": "要是把人类的价值观翻译成他们的语言，这种情况就能避免。",
+    "cmp": "意思一样。书上译成「这是可以避免的」，也是把 It 译成「这」，并且把「如果」提到了前面。"
+   }
+  },
+  "Many others attempted to transplant their habits and traditions to the new world.": {
+   "ph": [
+    {
+     "t": "attempted to",
+     "b": "attempt to do",
+     "m": "试图做"
+    }
+   ]
+  },
+  "It will force cities to transform their infrastructure.": {
+   "ph": [
+    {
+     "t": "force",
+     "b": "force sb. to do",
+     "m": "迫使某人做"
+    },
+    {
+     "t": "to",
+     "b": "force sb. to do",
+     "m": "迫使某人做"
+    }
+   ]
+  },
+  "She is used to taking public transport.": {
+   "ph": [
+    {
+     "t": "is used to",
+     "b": "be used to doing",
+     "m": "习惯于"
+    },
+    {
+     "t": "public transport",
+     "b": "public transport",
+     "m": "公共交通工具"
+    }
+   ]
+  },
+  "These invisible duties become apparent only when you don't do them.": {
+   "ph": [
+    {
+     "t": "only when",
+     "b": "only when",
+     "m": "只有当……的时候"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "These invisible duties become apparent",
+      "s": "这块照字面翻就行：invisible 是「看不见的」，apparent 在这里是「显而易见」，become 是「变得」。\n→ 这些看不见的责任会变得明显"
+     },
+     {
+      "t": "only when",
+      "s": "你多半会翻成「只有当……的时候」，然后后面就没有呼应了。念一遍，是不是缺了点什么？中文说「只有……才……」，所以看到 only，就在前面那块的动词前补一个「才」。\n→ 只有当……的时候，才"
+     },
+     {
+      "t": "you don't do them",
+      "s": "你可能想翻成「你不做它们」。念一遍，怪吧？them 放回去试：它指前面的 duties，不是别的东西，做「责任」说白了就是「履行」，不做就是「不去履行」。\n→ 你不去履行它们"
+     }
+    ],
+    "order": "「才」要放在「变得明显」前面，所以顺序是：只有你不去履行的时候，这些责任才变得明显。",
+    "sum": "只有当你不去履行的时候，这些看不见的责任才会显现出来。",
+    "cmp": "书上译成「只有当你不去做的时候，这些看不见的责任才会变得明显」，和我的意思一样，也补了「才」，把 only when 放到了前面。"
+   }
+  },
+  "Start with the most obvious place first: the company's website.": {
+   "ph": [
+    {
+     "t": "Start with",
+     "b": "start with",
+     "m": "从……开始"
+    }
+   ]
+  },
+  "The fridge's effect upon the environment has been evident.": {
+   "ph": [
+    {
+     "t": "effect upon",
+     "b": "effect on",
+     "m": "对……的影响"
+    }
+   ]
+  },
+  "There was no evidence that the meeting took place.": {
+   "ph": [
+    {
+     "t": "took place",
+     "b": "take place",
+     "m": "发生"
+    }
+   ]
+  },
+  "Isn't this the same crowd that rails against processed junk and champions craft cooking?": {
+   "ph": [
+    {
+     "t": "rails against",
+     "b": "rail against",
+     "m": "怒斥"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Isn't this the same crowd",
+      "s": "你多半会翻成「这不是同一群人吗」。意思对，但念一遍还不够味。Isn't 打头是反问，说话人心里已经有答案了，中文更常说「这不就是……吗」。the same crowd 是「同一批人」，crowd 是人群。\n→ 这不就是同一批人吗"
+     },
+     {
+      "t": "that rails against processed junk",
+      "s": "that 指谁？放回去试：junk 怒斥 junk？垃圾食品怎么会怒斥？换成 crowd：这批人怒斥……对了。还有一个线索，rails 带 s，是单数，正好对上单数的 crowd。rail against 是「痛斥、猛烈抨击」，processed junk 是「加工过的垃圾食品」。\n→ 痛斥加工垃圾食品的"
+     },
+     {
+      "t": "and champions craft cooking",
+      "s": "champions 你可能一看就是「冠军」，放进去试：和……冠军手工烹饪？读不通。注意前面有 rails，and 把两个动作并列起来，所以 champions 也是动词，意思是「拥护、支持」，后面的 craft cooking 是它的宾语，「手工烹饪」。\n→ 又拥护手工烹饪的"
+     }
+    ],
+    "order": "that 后面的两个动作都是在说 crowd，所以中文把它们提到「人」前面，当成修饰：痛斥……又拥护……的那批人。",
+    "sum": "这不就是那批一边痛斥加工垃圾食品、一边拥护手工烹饪的人吗？",
+    "cmp": "书上译成「那些怒斥加工垃圾、拥护手工烹饪的人」，意思一样；「怒斥」和我的「痛斥」差不多，「垃圾」我补成了「垃圾食品」，更清楚。"
+   }
+  },
+  "Keep track of left-handed children's school performance.": {
+   "ph": [
+    {
+     "t": "Keep track of",
+     "b": "keep track of",
+     "m": "跟踪"
+    }
+   ]
+  },
+  "The two spacecrafts will link up in orbit.": {
+   "ph": [
+    {
+     "t": "link up",
+     "b": "link up",
+     "m": "对接"
+    },
+    {
+     "t": "in orbit",
+     "b": "in orbit",
+     "m": "在轨道上"
+    }
+   ]
+  },
+  "It still has a chance to give rise to a boom in the global economy.": {
+   "ph": [
+    {
+     "t": "a chance to",
+     "b": "a chance to do",
+     "m": "有机会做"
+    },
+    {
+     "t": "give rise to",
+     "b": "give rise to",
+     "m": "带来，引起"
+    },
+    {
+     "t": "a boom in",
+     "b": "a boom in",
+     "m": "……的繁荣"
+    }
+   ]
+  },
+  "With the development in science and technology man can make various flowers bloom before their time.": {
+   "ph": [
+    {
+     "t": "development in",
+     "b": "development in",
+     "m": "……方面的发展"
+    },
+    {
+     "t": "make various flowers bloom",
+     "b": "make sb. do",
+     "m": "使……做某事"
+    },
+    {
+     "t": "before their time",
+     "b": "before one's time",
+     "m": "提前，不到时候"
+    }
+   ]
+  },
+  "He bragged about how brave he was.": {
+   "ph": [
+    {
+     "t": "bragged about",
+     "b": "brag about",
+     "m": "吹嘘"
+    }
+   ]
+  },
+  "Many governments have done more than the US government in providing the raw materials for innovation.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Many governments have done more than the US government",
+      "s": "这块照字面翻就行：have done more than 是「比……做得更多」。\n→ 许多政府比美国政府做得更多"
+     },
+     {
+      "t": "in providing",
+      "s": "你多半会翻成「在提供……中」。念一遍，别扭。in + -ing 在这里是「在……方面」，说的是做得更多的范围。而且要提前，不然前面的「做得更多」就悬空了。\n→ 在提供……方面"
+     },
+     {
+      "t": "the raw materials for innovation",
+      "s": "你可能想翻成「为创新的原材料」。念一遍，for 怎么翻都怪。for 在名词后面是「用于……的」，raw materials 是原材料，合起来就是「供创新使用的原材料」。innovation 是「创新」。\n→ 为创新提供原材料"
+     }
+    ],
+    "order": "英文先说「做得更多」，再补范围；中文习惯先交代范围：在为创新提供原材料方面，许多政府比美国政府做得更多。",
+    "sum": "在为创新提供原材料方面，许多政府比美国政府做得更多。",
+    "cmp": "书上译成「在提供原材料促进创新方面，许多政府比美国政府做得更多」，意思一样，也先说了范围。「促进创新」把 for innovation 说成动作，我的「为创新提供」更贴近原文。"
+   }
+  },
+  "Land currently ploughed up for crops might be able to revert to forest or wilderness.": {
+   "ph": [
+    {
+     "t": "ploughed up",
+     "b": "plough up",
+     "m": "翻耕，开垦"
+    },
+    {
+     "t": "might be able to",
+     "b": "be able to",
+     "m": "可能能够"
+    },
+    {
+     "t": "revert to",
+     "b": "revert to",
+     "m": "恢复为"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Land currently ploughed up for crops",
+      "s": "你多半会翻成「土地目前被翻耕为农作物」，然后发现后面没有谓语了。别慌：ploughed up 是过去分词，放在 Land 后面修饰它，意思是「被开垦的」。真正的谓语在后面的 might be able to。for crops 是用途，「用来种庄稼」。\n→ 目前被开垦来种庄稼的土地"
+     },
+     {
+      "t": "might be able to",
+      "s": "might 是不是虚拟？看依据：句里没有 if 条件，前面也没有过去时的谓语让它跟着变，所以不是虚拟，也不是时态呼应。它就是 may 的语气更弱的说法，表示「有可能」。might be able to 叠在一起，翻成「可能能够」太啰嗦，合成「有可能」。\n→ 有可能"
+     },
+     {
+      "t": "revert to forest or wilderness",
+      "s": "revert to 你可能没见过，拆开想：re 是「回」，所以是「回到原来的状态」。to 后面跟的就是回到的地方：forest 森林，wilderness 荒野。\n→ 恢复成森林或荒野"
+     }
+    ],
+    "sum": "目前被开垦来种庄稼的土地，有可能恢复成森林或荒野。",
+    "cmp": "书上译成「目前用来种植的土地可能会恢复为森林或荒野」，意思一样。书上没有译出 ploughed up 的「开垦」，我补上了。"
+   }
+  },
+  "The same can be said of their ability to dominate the corporate boardroom.": {
+   "ph": [
+    {
+     "t": "The same can be said of",
+     "b": "the same can be said of",
+     "m": "对……也是如此"
+    }
+   ]
+  },
+  "It is playing a dominant role in the film market.": {
+   "ph": [
+    {
+     "t": "playing a dominant role in",
+     "b": "play a role in",
+     "m": "在……中发挥作用"
+    }
+   ]
+  },
+  "Paying an allowance for completing chores benefits their children.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Paying an allowance",
+      "s": "一开头就是 Paying，别慌。-ing 开头当主语，就是「做某事」这件事。allowance 是定期给的钱，这里是「零花钱、津贴」。\n→ 给零花钱"
+     },
+     {
+      "t": "for completing chores",
+      "s": "你多半会翻成「为了完成家务」，念一遍，像是目的，其实这里是在说为什么给钱：for + -ing 是「因为做了……」。chores 是日常家务。\n→ 因为孩子做了家务"
+     },
+     {
+      "t": "benefits their children",
+      "s": "benefits 你可能以为是名词「好处」，然后读不通。看一下：前面已经是一整件事当主语，后面又是 their children，所以 benefits 在这里是动词，「对……有好处」。\n→ 对他们的孩子有好处"
+     }
+    ],
+    "order": "三块顺下来就通了：因为孩子做家务而给零花钱，对孩子有好处。",
+    "sum": "孩子做了家务就给零花钱，这样做对孩子有好处。",
+    "cmp": "书上译成「为完成家务支付津贴对他们的孩子有好处」，意思一样，但读起来有点连在一起。我加了逗号断开，更顺口。"
+   }
+  },
+  "Well-functioning machines relieve them of dull tasks.": {
+   "ph": [
+    {
+     "t": "relieve",
+     "b": "relieve sb. of sth.",
+     "m": "减轻某人的负担"
+    },
+    {
+     "t": "of",
+     "b": "relieve sb. of sth.",
+     "m": "减轻某人的负担"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Well-functioning machines",
+      "s": "Well-functioning 带连字符，你可能一时不知道怎么翻。拆开：well 是「好」，functioning 是「运转」，合起来「运转良好的」。\n→ 运转良好的机器"
+     },
+     {
+      "t": "relieve them of dull tasks",
+      "s": "relieve 你可能只记得「缓解」，翻成「缓解他们的枯燥任务」，读起来任务像是被缓解了。眼睛往后找 of——找到了：relieve sb. of sth.，把 sth. 从 sb. 身上拿走。所以是「让他们摆脱枯燥的工作」，被拿走负担的是人，不是任务。dull 是「枯燥乏味的」，tasks 这里就是「工作」。\n→ 让他们摆脱枯燥的工作"
+     }
+    ],
+    "order": "英文是机器当主语，中文可以保留，也可以说成「有了机器，他们就不用……」。这里保留，加一个「能」字就顺了。",
+    "sum": "运转良好的机器能让他们摆脱枯燥乏味的工作。",
+    "cmp": "书上译成「减轻他们枯燥的任务」，字面上像是任务被减轻了。其实是人摆脱了任务，我的更准确。"
+   }
+  },
+  "Some people are dumb enough to want children just because seeing others do so.": {
+   "ph": [
+    {
+     "t": "dumb enough to",
+     "b": "be adj. enough to do",
+     "m": "愚蠢到……"
+    },
+    {
+     "t": "just because",
+     "b": "just because",
+     "m": "只是因为"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Some people are dumb enough to want children",
+      "s": "你多半会翻成「足够愚蠢以至于想要孩子」。念一遍，别扭。形容词 + enough to，中文说「……到会……的地步」。dumb 在这里是「愚蠢」，所以是「蠢到想要孩子」。\n→ 有些人蠢到想要孩子"
+     },
+     {
+      "t": "just because seeing others",
+      "s": "just because 是「只是因为」。because 后面接了 -ing，省掉了主语，补回去是「只因为（他们）看到别人」。你可能会把 seeing 单独翻成「看到」就停住，其实它在讲原因。\n→ 只是因为看到别人"
+     },
+     {
+      "t": "do so",
+      "s": "do so 是什么？放回去试：别人「做」……什么？只有 want children 说得通，do so 就是「这样做」，指「想要孩子」。\n→ 也想要孩子"
+     }
+    ],
+    "sum": "有些人蠢到想要孩子，只是因为看到别人也想要。",
+    "cmp": "书上译成「有些人愚蠢到想要孩子只是因为看到别人这样做」，意思一样。「这样做」是照字面翻 do so，我换成了「也想要」，更具体。"
+   }
+  },
+  "Universities want the government to introduce a loan scheme for tuition fees.": {
+   "ph": [
+    {
+     "t": "want",
+     "b": "want sb. to do",
+     "m": "想要某人做"
+    },
+    {
+     "t": "to",
+     "b": "want sb. to do",
+     "m": "想要某人做"
+    },
+    {
+     "t": "tuition fees",
+     "b": "tuition fees",
+     "m": "学费"
+    }
+   ]
+  },
+  "We love to establish a routine and stick with it.": {
+   "ph": [
+    {
+     "t": "stick with",
+     "b": "stick with",
+     "m": "坚持"
+    }
+   ]
+  },
+  "To get to the place requires going through a very narrow passage.": {
+   "ph": [
+    {
+     "t": "get to",
+     "b": "get to",
+     "m": "到达"
+    },
+    {
+     "t": "going through",
+     "b": "go through",
+     "m": "经过，穿过"
+    }
+   ]
+  },
+  "The exterior lights of the house came on as I approached the door.": {
+   "ph": [
+    {
+     "t": "came on",
+     "b": "come on",
+     "m": "（灯）亮起"
+    }
+   ]
+  },
+  "The news media reported extensively on the story.": {
+   "ph": [
+    {
+     "t": "reported",
+     "b": "report on",
+     "m": "报道"
+    },
+    {
+     "t": "on",
+     "b": "report on",
+     "m": "报道"
+    }
+   ]
+  },
+  "It creates a lot of trouble for local residents.": {
+   "ph": [
+    {
+     "t": "a lot of",
+     "b": "a lot of",
+     "m": "许多"
+    }
+   ]
+  },
+  "It is an old city with many sites of historical interest.": {
+   "ph": [
+    {
+     "t": "of historical interest",
+     "b": "of historical interest",
+     "m": "有历史意义的"
+    }
+   ]
+  },
+  "I clicked on the link to the next page of the website.": {
+   "ph": [
+    {
+     "t": "clicked on",
+     "b": "click on",
+     "m": "单击"
+    }
+   ]
   }
+ }
 }

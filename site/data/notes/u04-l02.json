@@ -1,301 +1,468 @@
 {
-  "_note": "例句词组与语法解析（书外补充，AI 生成）",
-  "sents": {
-    "Job creation needs to be the top priority.": {
-      "ph": [{"t": "top priority", "b": "top priority", "m": "当务之急"}]
-    },
-    "She moulded the clay into the shape of a head.": {
-      "ph": [
-        {"t": "moulded", "b": "mould … into", "m": "把……塑造成"},
-        {"t": "into", "b": "mould … into", "m": "把……塑造成"}
-      ]
-    },
-    "Some robots are already programmed with basic human values.": {
-      "ph": [{"t": "programmed with", "b": "be programmed with", "m": "被编入"}]
-    },
-    "He has impressed me with his good sense of humour.": {
-      "ph": [
-        {"t": "impressed", "b": "impress … with", "m": "用……给人留下印象"},
-        {"t": "with", "b": "impress … with", "m": "用……给人留下印象"},
-        {"t": "sense of humour", "b": "a sense of humour", "m": "幽默感"}
-      ]
-    },
-    "Our skins let us know whether the air is moist or dry.": {
-      "ph": [{"t": "let us know", "b": "let sb. know", "m": "让……知道"}],
-      "an": {
-        "parts": [
-          {"t": "Our skins let us know", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "whether the air is moist or dry", "r": "宾语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "let us know 是「let + 宾语 + 动词原形」的使役结构，主语 Our skins 是无生命名词，书上顺着字面译成「皮肤可以让我们知道」。",
-          "whether 引导 know 的宾语从句，从句里 is 的表语是并列的 moist or dry，whether … or … 对应书上的「是……还是……」。"
-        ],
-        "lit": "我们的皮肤让我们知道是否空气是潮湿的或干燥的。"
-      }
-    },
-    "The storm didn't do much damage.": {
-      "ph": [{"t": "do much damage", "b": "do damage", "m": "造成损失"}]
-    },
-    "The red roof of the cottage came into view.": {
-      "ph": [{"t": "came into view", "b": "come into view", "m": "映入眼帘"}]
-    },
-    "He lodged with Mrs. Brown when he arrived in the city.": {
-      "ph": [{"t": "lodged with", "b": "lodge with", "m": "租住在……家"}],
-      "an": {
-        "parts": [
-          {"t": "He lodged with Mrs. Brown", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "when he arrived in the city", "r": "时间状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "lodge 在这里是不及物动词，lodge with sb. 指寄宿在某人家，所以书上把 with Mrs. Brown 译成「在布朗太太家里」，并补出「租住」。",
-          "when 引导的时间状语从句放在句末，书上提到句首译成「抵达此城时」，再接主干；两个动作都是过去时，从句动作（到达）发生在先。"
-        ],
-        "lit": "他寄宿在布朗太太那里，当他到达这个城市的时候。"
-      }
-    },
-    "Real friendship is when two individuals share the same soul.": {
-      "an": {
-        "parts": [
-          {"t": "Real friendship is", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "when two individuals share the same soul", "r": "表语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "is 后面的 when 从句作表语（表语从句），说明友谊「是怎样的情形」，这里的 when 不是「当……的时候」，所以书上没有译出「当」字。",
-          "从句主语 two individuals 中的 individual 作名词，指「个人」，书上译成「两个人」，整句译成判断句「友谊是……」。"
-        ],
-        "lit": "真正的友谊是当两个个体分享同一个灵魂的时候。"
-      }
-    },
-    "It contributes to the male-female divide in the workplace.": {
-      "ph": [{"t": "contributes to", "b": "contribute to", "m": "导致"}]
-    },
-    "In my opinion, lack of money is the main problem.": {
-      "ph": [
-        {"t": "In my opinion", "b": "in one's opinion", "m": "在我看来"},
-        {"t": "lack of", "b": "lack of", "m": "缺乏"}
-      ]
-    },
-    "In the age of the Internet, there's no such thing as a private debate.": {
-      "ph": [{"t": "no such thing as", "b": "no such thing as", "m": "不存在……这回事"}]
-    },
-    "She inherited a big fortune from her father.": {
-      "ph": [
-        {"t": "inherited", "b": "inherit … from", "m": "从……继承"},
-        {"t": "from", "b": "inherit … from", "m": "从……继承"}
-      ]
-    },
-    "The building is part of our national heritage.": {
-      "ph": [{"t": "part of", "b": "part of", "m": "……的一部分"}]
-    },
-    "CO2 emissions constitute a major threat to the environment.": {
-      "ph": [{"t": "threat to", "b": "a threat to", "m": "对……的威胁"}]
-    },
-    "I screamed in pain.": {
-      "ph": [{"t": "in pain", "b": "in pain", "m": "痛苦地"}]
-    },
-    "That's where fresh produce, meat and seafood, and dairy are.": {
-      "ph": [{"t": "That's where", "b": "that's where", "m": "那就是……的地方"}],
-      "an": {
-        "parts": [
-          {"t": "That's", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "where fresh produce, meat and seafood, and dairy are", "r": "表语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "That's where… 是「主语 + is + 表语从句」，where 在从句里作地点状语，从句谓语 are 放在最后；书上把「那是……所在的地方」转成存在句「那里有……」。",
-          "英文按三类列举：fresh produce、meat and seafood、dairy；书上把 meat and seafood 拆开译成「肉类、海鲜」，所以是四项并列。"
-        ],
-        "lit": "那就是新鲜农产品、肉类和海鲜以及乳制品所在的地方。"
-      }
-    },
-    "He shaped delicious masterpieces out of flour, butter and sugar.": {
-      "ph": [
-        {"t": "shaped", "b": "shape … out of", "m": "用……做出"},
-        {"t": "out of", "b": "shape … out of", "m": "用……做出"}
-      ]
-    },
-    "There does appear to be some psychology behind it.": {
-      "ph": [{"t": "appear to", "b": "appear to do", "m": "似乎"}],
-      "an": {
-        "parts": [
-          {"t": "There does appear", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "to be some psychology behind it", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "does 是助动词，放在肯定句里加强语气，书上译成「确实」。",
-          "There appear to be… 是存在句「there be」的变体，appear to 表示「似乎」，所以书上译成「似乎确实有一些心理因素」。",
-          "psychology 在这里指「心理因素」，不是「心理学」这门学科；it 指前文所讲的那种现象。"
-        ],
-        "lit": "确实有似乎存在一些心理学在它的背后。"
-      }
-    },
-    "Many types of animal have now vanished from the earth.": {
-      "ph": [{"t": "vanished from", "b": "vanish from", "m": "从……消失"}]
-    },
-    "If a new competitor emerges to threaten your business, you may need to change direction.": {
-      "ph": [{"t": "change direction", "b": "change direction", "m": "改变方向"}],
-      "an": {
-        "parts": [
-          {"t": "If a new competitor emerges to threaten your business", "r": "条件状语"},
-          {"t": ", ", "r": ""},
-          {"t": "you may need to change direction", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "If 从句用一般现在时 emerges，主句用 may need，说的是将来可能发生的真实情况，不是虚拟语气（虚拟要用过去式或 were）。",
-          "emerges to threaten 里的不定式 to threaten 表示出现之后的结果，不是目的，所以书上拆成两个动作「出现，威胁到你的业务」。",
-          "may 表示推测，书上译成「可能需要」。"
-        ],
-        "lit": "如果一个新的竞争对手出现来威胁你的业务，你可能需要改变方向。"
-      }
-    },
-    "The government has declared a state of emergency following the earthquake.": {
-      "ph": [{"t": "a state of emergency", "b": "a state of emergency", "m": "紧急状态"}]
-    },
-    "It urged tourists to leave Tunisia immediately.": {
-      "ph": [
-        {"t": "urged", "b": "urge sb. to do", "m": "催促……做"},
-        {"t": "to", "b": "urge sb. to do", "m": "催促……做"}
-      ]
-    },
-    "Marine biologists are looking for the secret of turtles' reproduction.": {
-      "ph": [{"t": "looking for", "b": "look for", "m": "寻找"}]
-    },
-    "When a virus attacks your body, your body works hard to get rid of it.": {
-      "ph": [{"t": "get rid of", "b": "get rid of", "m": "清除"}],
-      "an": {
-        "parts": [
-          {"t": "When a virus attacks your body", "r": "时间状语"},
-          {"t": ", ", "r": ""},
-          {"t": "your body works hard to get rid of it", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "When 从句和主句都用一般现在时，说的是普遍规律，书上译成「当病毒攻击人体时，人体会……」。",
-          "两处 your body 里的 your 是泛指（任何人），书上译成「人体」，不译「你的身体」。",
-          "句末 it 指代从句里的 a virus，书上还原成「病毒」，避免「清除它」指代不清。",
-          "to get rid of it 是不定式作目的状语，work hard to 对应「努力去……」。"
-        ],
-        "lit": "当一个病毒攻击你的身体时，你的身体努力工作以摆脱它。"
-      }
-    },
-    "Dirty hands can be a breeding ground for germs.": {
-      "ph": [{"t": "a breeding ground for", "b": "a breeding ground for", "m": "滋生……的温床"}]
-    },
-    "This is evidence that our immune system really doesn't function so well when we age.": {
-      "ph": [{"t": "immune system", "b": "immune system", "m": "免疫系统"}],
-      "an": {
-        "parts": [
-          {"t": "This is evidence", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that our immune system really doesn't function so well when we age", "r": "同位语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "that 引导同位语从句，说明 evidence 的具体内容；that 在从句中不作成分。书上把 This is evidence that 压缩成「这表明」，把名词 evidence 转成动词。",
-          "从句里 doesn't function so well 是否定谓语加 so well，书上译成「不能很好地发挥作用」，really 译作「真的」。",
-          "when we age 是时间状语，age 在这里作动词（变老）；书上把 when 转成「随着年龄的增长」，强调是一个逐渐变化的过程。"
-        ],
-        "lit": "这是证据，即我们的免疫系统真的不是那么好地运转，当我们变老的时候。"
-      }
-    },
-    "They are under growing pressure to balance their national budgets.": {
-      "ph": [{"t": "under growing pressure to", "b": "be under pressure to do", "m": "面临……的压力去做"}]
-    },
-    "It is one that has seen no parallel in economic history.": {
-      "ph": [{"t": "seen no parallel in", "b": "see no parallel in", "m": "前所未有"}],
-      "an": {
-        "parts": [
-          {"t": "It is one", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "that has seen no parallel in economic history", "r": "定语从句"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "定语从句的先行词是 one（代指前文所说的某种情况），that 在从句里作 has seen 的主语。",
-          "has seen 是以「历史」为背景的无生命主语表达：「（经济史上）没见过相同的事」，实际意思是没有先例，书上转成「前所未有」。",
-          "no parallel 是 no + 名词的否定，书上没有拆成后置的定语从句，而是合并成判断句「这在经济史上是前所未有的」。"
-        ],
-        "lit": "它是这样一个，在经济史上没有见过类似物的。"
-      }
-    },
-    "They held a parade to mark the soldiers' return.": {
-      "ph": [{"t": "held a parade", "b": "hold a parade", "m": "举行游行"}]
-    },
-    "On the road there is little to protect them from mud and insects.": {
-      "ph": [
-        {"t": "protect", "b": "protect … from", "m": "保护……免受"},
-        {"t": "from", "b": "protect … from", "m": "保护……免受"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "On the road", "r": "状语"},
-          {"t": " ", "r": ""},
-          {"t": "there is little", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "to protect them from mud and insects", "r": "非谓语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "there is little 是存在句，little 表示「几乎没有」，带有否定意义。",
-          "to protect… 是不定式作后置定语，修饰 little，意思是「能保护它们的东西」，所以书上译成「几乎没有什么能保护它们」。",
-          "protect sb. from sth. 是「保护……免受……」，书上译成「免受泥土和昆虫的伤害」，把名词 mud and insects 补成了带「伤害」的结构。"
-        ],
-        "lit": "在路上有很少的东西来保护它们不受泥土和昆虫。"
-      }
-    },
-    "At the time, most large homes were constructed of timber and brick.": {
-      "ph": [
-        {"t": "At the time", "b": "at the time", "m": "当时"},
-        {"t": "constructed of", "b": "be constructed of", "m": "由……建造"}
-      ],
-      "an": {
-        "parts": [
-          {"t": "At the time", "r": "状语"},
-          {"t": ", ", "r": ""},
-          {"t": "most large homes were constructed of timber and brick", "r": "主干"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "were constructed of 是被动语态，书上译成「是用……建造的」，没有译成「被建造」。",
-          "be constructed of 与 be made of 同类，表示材料，of 后面 timber and brick 是并列的两种材料，书上译成「木材和砖」。",
-          "At the time 指过去的某个时期，与过去时 were 呼应，书上译作「当时」。"
-        ],
-        "lit": "在那个时候，大多数大房子被用木材和砖建造。"
-      }
-    },
-    "They decided to chase the cow away.": {
-      "ph": [
-        {"t": "chase", "b": "chase … away", "m": "赶走"},
-        {"t": "away", "b": "chase … away", "m": "赶走"}
-      ]
-    },
-    "We should feel happy when we pursue knowledge for knowledge's sake.": {
-      "ph": [{"t": "for knowledge's sake", "b": "for sth.'s sake", "m": "为了……本身"}],
-      "an": {
-        "parts": [
-          {"t": "We should feel happy", "r": "主干"},
-          {"t": " ", "r": ""},
-          {"t": "when we pursue knowledge for knowledge's sake", "r": "时间状语"},
-          {"t": ".", "r": ""}
-        ],
-        "pts": [
-          "when 引导的时间状语从句放在句末，书上提到句首译成「当我们……时，应该……」。",
-          "should 表示「应该」，是一般的情态用法，不是虚拟语气。",
-          "for knowledge's sake 是固定搭配 for sth.'s sake，重复同一个词表示「为了它本身」，所以书上译成「为了知识本身」。"
-        ],
-        "lit": "我们应该感到快乐，当我们为了知识的缘故追求知识的时候。"
-      }
+ "_note": "例句词组与语法解析（书外补充，AI 生成）",
+ "sents": {
+  "Job creation needs to be the top priority.": {
+   "ph": [
+    {
+     "t": "top priority",
+     "b": "top priority",
+     "m": "当务之急"
     }
+   ]
+  },
+  "She moulded the clay into the shape of a head.": {
+   "ph": [
+    {
+     "t": "moulded",
+     "b": "mould … into",
+     "m": "把……塑造成"
+    },
+    {
+     "t": "into",
+     "b": "mould … into",
+     "m": "把……塑造成"
+    }
+   ]
+  },
+  "Some robots are already programmed with basic human values.": {
+   "ph": [
+    {
+     "t": "programmed with",
+     "b": "be programmed with",
+     "m": "被编入"
+    }
+   ]
+  },
+  "He has impressed me with his good sense of humour.": {
+   "ph": [
+    {
+     "t": "impressed",
+     "b": "impress … with",
+     "m": "用……给人留下印象"
+    },
+    {
+     "t": "with",
+     "b": "impress … with",
+     "m": "用……给人留下印象"
+    },
+    {
+     "t": "sense of humour",
+     "b": "a sense of humour",
+     "m": "幽默感"
+    }
+   ]
+  },
+  "Our skins let us know whether the air is moist or dry.": {
+   "ph": [
+    {
+     "t": "let us know",
+     "b": "let sb. know",
+     "m": "让……知道"
+    }
+   ]
+  },
+  "The storm didn't do much damage.": {
+   "ph": [
+    {
+     "t": "do much damage",
+     "b": "do damage",
+     "m": "造成损失"
+    }
+   ]
+  },
+  "The red roof of the cottage came into view.": {
+   "ph": [
+    {
+     "t": "came into view",
+     "b": "come into view",
+     "m": "映入眼帘"
+    }
+   ]
+  },
+  "He lodged with Mrs. Brown when he arrived in the city.": {
+   "ph": [
+    {
+     "t": "lodged with",
+     "b": "lodge with",
+     "m": "租住在……家"
+    }
+   ]
+  },
+  "Real friendship is when two individuals share the same soul.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Real friendship is when",
+      "s": "你多半会翻成「真正的友谊是当……」。念一遍，是不是有点怪？中文不这么开头。is when 后面接的是一种情形，换成「就是……的时候」或者「就是……」都行。\n→ 真正的友谊就是"
+     },
+     {
+      "t": "two individuals share the same soul",
+      "s": "individuals 你可能翻成「两个个体」，太生硬了，这里就是「两个人」。share 你可能想到「分享」，但「分享同一个灵魂」说不通。放回去试：两个人共有同一个灵魂——对了，share 在这里是「共有」。\n→ 两个人共有同一个灵魂"
+     }
+    ],
+    "sum": "真正的友谊，就是两个人共有同一个灵魂。",
+    "cmp": "意思一样。书上用「是……拥有」，我用「就是……共有」，share 的「共」更明显。"
+   }
+  },
+  "It contributes to the male-female divide in the workplace.": {
+   "ph": [
+    {
+     "t": "contributes to",
+     "b": "contribute to",
+     "m": "导致"
+    }
+   ]
+  },
+  "In the age of the Internet, there's no such thing as a private debate.": {
+   "ph": [
+    {
+     "t": "no such thing as",
+     "b": "no such thing as",
+     "m": "不存在……这回事"
+    }
+   ]
+  },
+  "In my opinion, lack of money is the main problem.": {
+   "ph": [
+    {
+     "t": "In my opinion",
+     "b": "in one's opinion",
+     "m": "在我看来"
+    },
+    {
+     "t": "lack of",
+     "b": "lack of",
+     "m": "缺乏"
+    }
+   ]
+  },
+  "Supplying enough job opportunities for the homeless remains a challenge.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Supplying enough job opportunities for the homeless",
+      "s": "-ing 开头当主语，就是「做某事」这件事：提供足够的工作机会。for the homeless 你可能翻成「为无家可归的」，念一遍，话没说完，对吧？the + 形容词，指的是一类人，补上「人」字：「无家可归的人」。\n→ 为无家可归的人提供足够的工作机会"
+     },
+     {
+      "t": "remains a challenge",
+      "s": "你多半会翻成「保持一个挑战」。念一遍，别扭吧？remain 后面直接跟名词，意思是「仍然是」，把它当成「还是」就顺了。challenge 在这里是「难题」。\n→ 仍然是个难题"
+     }
+    ],
+    "sum": "给无家可归的人提供足够的工作机会，仍然是个难题。",
+    "cmp": "意思一样。书上用「无家可归者」和「一个挑战」，更书面；我用「无家可归的人」和「难题」，更口语。"
+   }
+  },
+  "She inherited a big fortune from her father.": {
+   "ph": [
+    {
+     "t": "inherited",
+     "b": "inherit … from",
+     "m": "从……继承"
+    },
+    {
+     "t": "from",
+     "b": "inherit … from",
+     "m": "从……继承"
+    }
+   ]
+  },
+  "The building is part of our national heritage.": {
+   "ph": [
+    {
+     "t": "part of",
+     "b": "part of",
+     "m": "……的一部分"
+    }
+   ]
+  },
+  "CO2 emissions constitute a major threat to the environment.": {
+   "ph": [
+    {
+     "t": "threat to",
+     "b": "a threat to",
+     "m": "对……的威胁"
+    }
+   ]
+  },
+  "I screamed in pain.": {
+   "ph": [
+    {
+     "t": "in pain",
+     "b": "in pain",
+     "m": "痛苦地"
+    }
+   ]
+  },
+  "That's where fresh produce, meat and seafood, and dairy are.": {
+   "ph": [
+    {
+     "t": "That's where",
+     "b": "that's where",
+     "m": "那就是……的地方"
+    }
+   ]
+  },
+  "He shaped delicious masterpieces out of flour, butter and sugar.": {
+   "ph": [
+    {
+     "t": "shaped",
+     "b": "shape … out of",
+     "m": "用……做出"
+    },
+    {
+     "t": "out of",
+     "b": "shape … out of",
+     "m": "用……做出"
+    }
+   ]
+  },
+  "There does appear to be some psychology behind it.": {
+   "ph": [
+    {
+     "t": "appear to",
+     "b": "appear to do",
+     "m": "似乎"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "There does appear",
+      "s": "你多半会翻成「那里确实似乎」。there 在这里不是「那里」，there be 是「有」的句型，there 不用翻。does 是用来加强 appear 的：「确实」。\n→ 确实似乎有"
+     },
+     {
+      "t": "to be some psychology behind it",
+      "s": "psychology 你可能翻成「心理学」，说成「有一些心理学在它后面」，念一遍，是不是怪？这里不是一门学科，说白了就是「心理方面的原因」。behind it 就是「在它背后」。\n→ 一些心理方面的原因在它背后"
+     }
+    ],
+    "order": "英文是「有……在它背后」，中文习惯先说地点，再说有什么：「这背后有……」。",
+    "sum": "这背后似乎确实有一些心理上的原因。",
+    "cmp": "几乎一样。书上写的是「一些心理因素」，「因素」比我的「原因」稍微宽一点，两个都对。"
+   }
+  },
+  "Many types of animal have now vanished from the earth.": {
+   "ph": [
+    {
+     "t": "vanished from",
+     "b": "vanish from",
+     "m": "从……消失"
+    }
+   ]
+  },
+  "If a new competitor emerges to threaten your business, you may need to change direction.": {
+   "ph": [
+    {
+     "t": "change direction",
+     "b": "change direction",
+     "m": "改变方向"
+    }
+   ]
+  },
+  "The government has declared a state of emergency following the earthquake.": {
+   "ph": [
+    {
+     "t": "a state of emergency",
+     "b": "a state of emergency",
+     "m": "紧急状态"
+    }
+   ]
+  },
+  "It urged tourists to leave Tunisia immediately.": {
+   "ph": [
+    {
+     "t": "urged",
+     "b": "urge sb. to do",
+     "m": "催促……做"
+    },
+    {
+     "t": "to",
+     "b": "urge sb. to do",
+     "m": "催促……做"
+    }
+   ]
+  },
+  "Marine biologists are looking for the secret of turtles' reproduction.": {
+   "ph": [
+    {
+     "t": "looking for",
+     "b": "look for",
+     "m": "寻找"
+    }
+   ]
+  },
+  "When a virus attacks your body, your body works hard to get rid of it.": {
+   "ph": [
+    {
+     "t": "get rid of",
+     "b": "get rid of",
+     "m": "清除"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "When a virus attacks your body",
+      "s": "这块照字面翻就行：when 是「当……的时候」，attacks 是「攻击」。\n→ 当病毒攻击你的身体时"
+     },
+     {
+      "t": "your body works hard",
+      "s": "你多半会翻成「你的身体工作得很努力」。念一遍，是不是像身体在上班？身体不上班，work 在这里是「起作用、运转」，work hard 说白了就是「拼命起作用」，中文常说「努力」。\n→ 身体会努力"
+     },
+     {
+      "t": "to get rid of it",
+      "s": "get rid of 是一个整体，「摆脱、清除」。最后的 it 指谁？把两个候选放回去试：get rid of your body，把身体清除掉？不可能。get rid of the virus，清除病毒，对。\n→ 把它清除掉"
+     }
+    ],
+    "order": "英文是「当……时」在前，中文也一样，顺着翻就行，不用挪。",
+    "sum": "病毒攻击身体时，身体会努力把它清除掉。",
+    "cmp": "意思一样。书上把 it 直接说成「病毒」，把 your body 说成「人体」，指代更清楚，也更像说明文的口气。"
+   }
+  },
+  "Dirty hands can be a breeding ground for germs.": {
+   "ph": [
+    {
+     "t": "a breeding ground for",
+     "b": "a breeding ground for",
+     "m": "滋生……的温床"
+    }
+   ]
+  },
+  "This is evidence that our immune system really doesn't function so well when we age.": {
+   "ph": [
+    {
+     "t": "immune system",
+     "b": "immune system",
+     "m": "免疫系统"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "This is evidence that",
+      "s": "你多半会翻成「这是证据，那个……」。that 在这里不是「那个」，它是在补充说明 evidence：证明了什么？后面整句话就是答案。看到 evidence that，脑子里换成「证明……这一点」。\n→ 这证明了"
+     },
+     {
+      "t": "our immune system really doesn't function so well",
+      "s": "function 你可能只认识名词「功能」，这里是动词，「起作用、运转」。doesn't function so well，字面是「运转得不太好」，中文更习惯说「不太管用」。\n→ 我们的免疫系统真的不太管用"
+     },
+     {
+      "t": "when we age",
+      "s": "你可能翻成「当我们变老的时候」。能懂，但 age 在这里是动词，when 引出的是一种条件：人一上年纪，就会这样。换成「随着年龄增长」更顺。\n→ 随着年龄增长"
+     }
+    ],
+    "order": "「随着年龄增长」可以提到「免疫系统」前面，先交代背景，再说结果，中文读起来更顺。",
+    "sum": "这证明，人上了年纪，免疫系统真的会变得不太管用。",
+    "cmp": "意思一样。书上用「这表明」和「随着年龄的增长」，把 when we age 提到了前面，我的说法更口语一点。"
+   }
+  },
+  "They are under growing pressure to balance their national budgets.": {
+   "ph": [
+    {
+     "t": "under growing pressure to",
+     "b": "be under pressure to do",
+     "m": "面临……的压力去做"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They are under growing pressure",
+      "s": "你多半会翻成「他们在越来越大的压力之下」。能懂，但有点翻译腔。under pressure 说白了就是「承受压力」。growing 是「越来越大的」。\n→ 他们承受着越来越大的压力"
+     },
+     {
+      "t": "to balance their national budgets",
+      "s": "你可能把 to 当成「为了」，翻成「为了平衡预算」。放回去试：压力是为了平衡预算？说不通。这个 to 在补充说明 pressure：什么压力？「要平衡预算」的压力。budget 的 balance 是收支平衡。\n→ 要使国家预算收支平衡"
+     }
+    ],
+    "sum": "他们面临的压力越来越大，要设法让国家预算收支平衡。",
+    "cmp": "意思一样。书上用「承受着……压力来平衡……」，「来」把压力和目的连得稍微硬一点；我把压力的内容拆成了「要……」。"
+   }
+  },
+  "It is one that has seen no parallel in economic history.": {
+   "ph": [
+    {
+     "t": "seen no parallel in",
+     "b": "see no parallel in",
+     "m": "前所未有"
+    }
+   ]
+  },
+  "They held a parade to mark the soldiers' return.": {
+   "ph": [
+    {
+     "t": "held a parade",
+     "b": "hold a parade",
+     "m": "举行游行"
+    }
+   ]
+  },
+  "On the road there is little to protect them from mud and insects.": {
+   "ph": [
+    {
+     "t": "protect",
+     "b": "protect … from",
+     "m": "保护……免受"
+    },
+    {
+     "t": "from",
+     "b": "protect … from",
+     "m": "保护……免受"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "On the road there is little",
+      "s": "你多半会翻成「在路上有一点点」。念一遍，是不是话没说完？little 在这里不是「小」，是「几乎没有什么」，there is little 就是「几乎没有什么东西」。\n→ 在路上，几乎没有什么"
+     },
+     {
+      "t": "to protect them from mud and insects",
+      "s": "接着往后看，to protect 在补充说明 little：什么东西？「能保护它们的」。看到 protect，眼睛往后找 from——找到了：protect A from B，保护 A 不受 B 的侵害。A 是 them，B 是 mud and insects。\n→ 能保护它们不受泥土和昆虫侵害的东西"
+     }
+    ],
+    "order": "英文的 to protect 在后面补充 little，中文要把它提到前面，说成「能保护……的东西」，再放回「几乎没有」。",
+    "sum": "路上几乎没有什么能保护它们不受泥土和昆虫的侵害。",
+    "cmp": "意思一样。书上写的是「免受泥土和昆虫的伤害」，我用「不受……侵害」，说法不同，意思相同。"
+   }
+  },
+  "At the time, most large homes were constructed of timber and brick.": {
+   "ph": [
+    {
+     "t": "At the time",
+     "b": "at the time",
+     "m": "当时"
+    },
+    {
+     "t": "constructed of",
+     "b": "be constructed of",
+     "m": "由……建造"
+    }
+   ]
+  },
+  "They decided to chase the cow away.": {
+   "ph": [
+    {
+     "t": "chase",
+     "b": "chase … away",
+     "m": "赶走"
+    },
+    {
+     "t": "away",
+     "b": "chase … away",
+     "m": "赶走"
+    }
+   ]
+  },
+  "We should feel happy when we pursue knowledge for knowledge's sake.": {
+   "ph": [
+    {
+     "t": "for knowledge's sake",
+     "b": "for sth.'s sake",
+     "m": "为了……本身"
+    }
+   ]
   }
+ }
 }
