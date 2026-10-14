@@ -43,9 +43,7 @@
 
 ## 给 WorkBuddy 的指令
 
-见对话里整理的 B（试跑）、D（批量）、E（推送与音频）三段；要点：
-- 先读 `pipeline/prompts/notes.md`；每课 `--dump` → 写 `work/notes-an/<id>.json` → `--merge` 直到 `[OK]`
-- 只改 `work/notes-an/` 和 merge 产生的 `site/data/notes/`；拿不准的句子不写；提交不加 AI 署名，不 push
+已作废：2026-10-14 用户决定不用 WorkBuddy，`.workbuddy/` 目录和它的试跑草稿已删除。讲解由 note-writer 子代理（Sonnet）在主目录生成。
 
 ## 试跑第 1 轮审查（WorkBuddy，2026-10-14）
 
