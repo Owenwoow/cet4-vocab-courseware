@@ -466,6 +466,43 @@
      "m": "单击"
     }
    ]
+  },
+  "Each time this initial memory trace is \"replayed\", it becomes even stronger.": {
+   "ph": [
+    {
+     "t": "Each time",
+     "b": "each time",
+     "m": "每当，每次"
+    }
+   ]
+  },
+  "Why is there both external and internal pressure to look \"perfect\"?": {
+   "ph": [
+    {
+     "t": "both",
+     "b": "both … and",
+     "m": "既……又……"
+    },
+    {
+     "t": "and",
+     "b": "both … and",
+     "m": "既……又……"
+    },
+    {
+     "t": "pressure to",
+     "b": "pressure to do",
+     "m": "做……的压力"
+    }
+   ]
+  },
+  "But what are the challenges of moving to \"spoken web\"?": {
+   "ph": [
+    {
+     "t": "moving to",
+     "b": "move to",
+     "m": "转向，转移到"
+    }
+   ]
   }
  }
 }
