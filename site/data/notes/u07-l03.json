@@ -1,96 +1,331 @@
 {
- "_note": "例句词组与语法解析（书外补充，AI 生成）",
- "sents": {
-  "The survey allowed for reading materials on a digital device.": {
-   "ph": [
-    {
-     "t": "allowed for",
-     "b": "allow for",
-     "m": "考虑到；为……留出余地"
+  "_note": "例句词组与语法解析（书外补充，AI 生成）",
+  "sents": {
+    "The survey allowed for reading materials on a digital device.": {
+      "ph": [{"t": "allowed for", "b": "allow for", "m": "允许"}]
     },
-    {
-     "t": "reading materials",
-     "b": "reading materials",
-     "m": "阅读材料"
-    }
-   ]
-  },
-  "Firefighters needed breathing apparatus to enter the burning house.": {
-   "ph": [
-    {
-     "t": "breathing apparatus",
-     "b": "breathing apparatus",
-     "m": "呼吸器"
-    }
-   ]
-  },
-  "The room was furnished with antiques.": {
-   "ph": [
-    {
-     "t": "furnished with",
-     "b": "be furnished with",
-     "m": "配备有（家具等）"
-    }
-   ]
-  },
-  "We were assured that, except for low grades or a raise in family income, no money would be taken away.": {
-   "ph": [
-    {
-     "t": "were assured",
-     "b": "be assured",
-     "m": "得到保证"
+    "The room was furnished with antiques.": {
+      "ph": [{"t": "was furnished with", "b": "be furnished with", "m": "配有，摆放着"}]
     },
-    {
-     "t": "except for",
-     "b": "except for",
-     "m": "除……之外"
+    "It has walls decorated with jewels.": {
+      "ph": [{"t": "decorated with", "b": "be decorated with", "m": "用……装饰"}]
     },
-    {
-     "t": "a raise in",
-     "b": "a raise in",
-     "m": "……的增加"
+    "Most animals conclude that a situation is hopeless and beyond their control.": {
+      "ph": [{"t": "beyond their control", "b": "beyond one's control", "m": "无法控制"}],
+      "an": {
+        "parts": [
+          {"t": "Most animals conclude", "r": "主干"},
+          {"t": " that ", "r": ""},
+          {"t": "a situation is hopeless and beyond their control", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导 conclude 的宾语从句，书上把 conclude 译成「得出结论」，后面用逗号拆开，从句单独成分句。",
+          "hopeless 和 beyond their control 用 and 并列作表语，介词短语 beyond their control 与形容词对等，书上都译成「……的」：「无望的，无法控制的」。"
+        ],
+        "lit": "大多数动物断定，一个情况是无望的并且超出它们的控制。"
+      }
     },
-    {
-     "t": "taken away",
-     "b": "take away",
-     "m": "拿走；夺去"
+    "Buses run every hour, Sundays excluded.": {
+      "an": {
+        "parts": [
+          {"t": "Buses run every hour", "r": "主干"},
+          {"t": ", ", "r": ""},
+          {"t": "Sundays excluded", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "Sundays excluded 是「名词 + 过去分词」的独立结构，有自己的逻辑主语 Sundays，不和主句主语 Buses 共用，用来补充说明例外情况。",
+          "Sundays 与 exclude 是被动关系（星期天被排除在外），所以用过去分词 excluded，书上直接译成「星期天除外」，放在句末作补充。"
+        ],
+        "lit": "公共汽车每小时运行，星期天被排除。"
+      }
+    },
+    "We were assured that, except for low grades or a raise in family income, no money would be taken away.": {
+      "ph": [
+        {"t": "were assured", "b": "be assured", "m": "得到保证"},
+        {"t": "except for", "b": "except for", "m": "除……之外"},
+        {"t": "a raise in", "b": "a raise in", "m": "……的增加"},
+        {"t": "taken away", "b": "take away", "m": "拿走"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "We were assured", "r": "主干"},
+          {"t": " that, ", "r": ""},
+          {"t": "except for low grades or a raise in family income", "r": "插入语"},
+          {"t": ", ", "r": ""},
+          {"t": "no money would be taken away", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "主干 We were assured 是被动，书上译成「我们得到保证」，比「我们被保证」顺。",
+          "that 引导 assured 的宾语从句；except for… 夹在 that 和从句主语之间，是插入语，所以书上把「除了……外」提到从句开头。",
+          "no money 作主语，否定落在主语上，书上译成「任何钱都不会……」；would 是主句过去时引起的时态呼应（过去将来），不是虚拟语气。",
+          "a raise in family income 是名词化结构，书上展开成主谓式的「家庭收入增加」。"
+        ],
+        "lit": "我们被保证，除了低分或家庭收入的增加以外，没有钱会被拿走。"
+      }
+    },
+    "Universities today are in the business of education, and mine is no exception.": {
+      "ph": [
+        {"t": "in the business of", "b": "in the business of", "m": "以……为业"},
+        {"t": "is no exception", "b": "be no exception", "m": "也不例外"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Universities today are in the business of education", "r": "主干"},
+          {"t": ", and ", "r": ""},
+          {"t": "mine is no exception", "r": "并列分句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "mine 是名词性物主代词，等于 my university，指代前面分句的 Universities（取单数），书上补出来译成「我的大学」。",
+          "no exception 是 no + 名词的否定，直译「是没有例外」，书上译成动词否定「也不例外」，并补上「也」承接前一分句。"
+        ],
+        "lit": "今天的大学从事教育事业，并且我的大学不是例外。"
+      }
+    },
+    "They want to get back to their herds.": {
+      "ph": [{"t": "get back to", "b": "get back to", "m": "回到"}]
+    },
+    "Pigeons are often seen as a symbol of peace.": {
+      "ph": [
+        {"t": "are often seen as", "b": "be seen as", "m": "被看作"},
+        {"t": "a symbol of", "b": "a symbol of", "m": "……的象征"}
+      ]
+    },
+    "A vivid example of such replay can be seen in a video.": {
+      "an": {
+        "parts": [
+          {"t": "A vivid example of such replay can be seen in a video", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "can be seen 是被动，动作的执行者不明确，书上译成无主语的主动句「可以在一段视频中看到」，不说「被看到」。",
+          "主语 A vivid example of such replay 里，of such replay 后置修饰 example，书上前置成「这种回放的生动例子」。"
+        ],
+        "lit": "这种回放的一个生动的例子可以被在一段视频中看到。"
+      }
+    },
+    "Remember, failure is inevitable, and every failure you survive is a learning experience.": {
+      "an": {
+        "parts": [
+          {"t": "Remember", "r": "主干"},
+          {"t": ", ", "r": ""},
+          {"t": "failure is inevitable", "r": "并列分句"},
+          {"t": ", and ", "r": ""},
+          {"t": "every failure ", "r": "主干"},
+          {"t": "you survive", "r": "定语从句"},
+          {"t": " is a learning experience", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "you survive 是省略了关系代词 that / which 的定语从句，先行词是 every failure，省略的关系词在从句里作 survive 的宾语（survive every failure）；书上把它前置成「你艰难度过的每一次失败」。",
+          "a learning experience 里 learning 作定语修饰 experience，书上译成「一次学习的经历」，用「的」把名词短语理顺。"
+        ],
+        "lit": "记住，失败是不可避免的，并且你挺过的每一次失败是一次学习的经历。"
+      }
+    },
+    "To find out, we introduced bacteria to squares of tile, carpet or wood.": {
+      "ph": [
+        {"t": "find out", "b": "find out", "m": "找到答案，查明"},
+        {"t": "introduced", "b": "introduce … to", "m": "把……引入"},
+        {"t": "to", "b": "introduce … to", "m": "把……引入"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "To find out", "r": "目的状语"},
+          {"t": ", ", "r": ""},
+          {"t": "we introduced bacteria to squares of tile, carpet or wood", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "句首的不定式 To find out 作目的状语；find out 后面省略了宾语（要查明的事），书上补成「为了找到答案」。",
+          "squares of tile, carpet or wood 里 squares of 只是「一块块」的量词性说法，书上略去，只译材料「瓷砖、地毯或木材」；introduce A to B 译成「将 A 引入 B 中」。"
+        ],
+        "lit": "为了查明，我们把细菌引入到一块块的瓷砖、地毯或木材。"
+      }
+    },
+    "The atmosphere again acts as our protective blanket on earth.": {
+      "ph": [{"t": "acts as", "b": "act as", "m": "充当"}]
+    },
+    "At that moment his brain went blank.": {
+      "ph": [{"t": "went blank", "b": "go blank", "m": "变得一片空白"}]
+    },
+    "Exclusion of air creates a vacuum in the bottle.": {
+      "an": {
+        "parts": [
+          {"t": "Exclusion of air creates a vacuum in the bottle", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "Exclusion of air 是名词化结构（exclude air 的名词形式），air 是被排除的对象，书上展开成被动式的「空气排除后」。",
+          "主语是无生命的名词短语，直译「空气的排除创造真空」生硬；书上把主语转成时间 / 条件状语，再补「就」连接结果「就产生真空」。"
+        ],
+        "lit": "空气的排除在瓶子里创造出一个真空。"
+      }
+    },
+    "In the process, she built a radically new life and career.": {
+      "ph": [{"t": "In the process", "b": "in the process", "m": "在这个过程中"}]
+    },
+    "It had one of its cargo planes land at a wrong airport.": {
+      "ph": [
+        {"t": "had", "b": "have … do", "m": "使……做"},
+        {"t": "land", "b": "have … do", "m": "使……做"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "It had one of its cargo planes land at a wrong airport", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "had one of its cargo planes land 是「have + 宾语 + 动词原形」的使役结构，land 作宾语补足语，书上译成「使一架货机降落」。",
+          "one of its cargo planes 直译「它的货机之一」，书上简化成「一架货机」，its 的指代不再单译。"
+        ],
+        "lit": "它使它的货机之一降落在一个错误的机场。"
+      }
+    },
+    "Chop the carrots up into small pieces.": {
+      "ph": [
+        {"t": "Chop", "b": "chop … up", "m": "切碎"},
+        {"t": "up", "b": "chop … up", "m": "切碎"}
+      ]
+    },
+    "Doctors used carrot seeds and roots as medicine.": {
+      "ph": [
+        {"t": "used", "b": "use … as", "m": "把……用作"},
+        {"t": "as", "b": "use … as", "m": "把……用作"}
+      ]
+    },
+    "As a child I used to love the Scooby-Doo cartoons.": {
+      "ph": [{"t": "used to", "b": "used to do", "m": "过去常常"}]
+    },
+    "Life Reimagined paints a picture of middle age that is far from gloomy.": {
+      "ph": [
+        {"t": "paints a picture of", "b": "paint a picture of", "m": "描绘……的图景"},
+        {"t": "far from", "b": "far from", "m": "远非，一点也不"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Life Reimagined paints a picture of middle age", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that is far from gloomy", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导定语从句，修饰 a picture of middle age 这个整体（图景是不悲观的），that 在从句里作主语；书上把从句前置成「远非悲观的中年图景」。",
+          "far from + 形容词表示「远非、一点也不」，是否定含义，不是「距离远」，书上译成「远非悲观」。"
+        ],
+        "lit": "《重新想象的生活》描绘了一幅中年的图景，这幅图景远不是悲观的。"
+      }
+    },
+    "It can be seen from the cheapest budget airlines to the world's largest carriers.": {
+      "ph": [
+        {"t": "from", "b": "from … to", "m": "从……到"},
+        {"t": "to", "b": "from … to", "m": "从……到"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "It can be seen", "r": "主干"},
+          {"t": " from the cheapest budget airlines to the world's largest carriers", "r": "状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "这里的 It 没有后续的 that 从句可以指，是指代上文提到的某种现象，所以不是形式主语；书上把它译成「这一点」。",
+          "can be seen 是被动，书上译成无主语的「都可以看到」；from … to … 表示范围，书上提到句首「从……到……」，再用「都」收束。"
+        ],
+        "lit": "它可以被看到，从最便宜的廉价航空公司到世界上最大的航空公司。"
+      }
+    },
+    "There are mothers pushing baby carriages, and old women with walkers.": {
+      "ph": [{"t": "baby carriages", "b": "baby carriage", "m": "婴儿车"}]
+    },
+    "People are cheering and holding their carts in the air.": {
+      "ph": [{"t": "in the air", "b": "in the air", "m": "在空中"}]
+    },
+    "It's clear that petrol-driven engines have no future.": {
+      "an": {
+        "parts": [
+          {"t": "It's clear", "r": "主干"},
+          {"t": " that ", "r": ""},
+          {"t": "petrol-driven engines have no future", "r": "主语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "It 是形式主语，真正的主语是 that 引导的从句；书上把从句内容放在「很明显，」后面，形式主语 It 不译。",
+          "have no future 是 no + 名词的否定，直译「有没有的未来」不通，书上译成「没有未来」。",
+          "petrol-driven 是「名词 + 过去分词」组成的复合形容词（被汽油驱动的），书上省略 driven，直接译成「汽油发动机」。"
+        ],
+        "lit": "很清楚，汽油驱动的发动机没有未来。"
+      }
+    },
+    "There's no question that self-driving vehicles could be an enormous benefit.": {
+      "ph": [{"t": "There's no question", "b": "there is no question that", "m": "毫无疑问"}],
+      "an": {
+        "parts": [
+          {"t": "There's no question", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that self-driving vehicles could be an enormous benefit", "r": "同位语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导同位语从句，说明 question 的具体内容，that 不作成分；书上把 There's no question 译成「毫无疑问」，放在句首引出从句。",
+          "could be 在这里表示可能性的推测：主句 There's 是一般现在时，所以不是时态呼应；书上译成「会带来」。",
+          "be an enormous benefit 是「是 + 名词」，书上把名词 benefit 转成动词，译成「带来巨大的好处」。"
+        ],
+        "lit": "没有疑问，自动驾驶的车辆可能是一个巨大的好处。"
+      }
+    },
+    "The petrol is running out.": {
+      "ph": [{"t": "running out", "b": "run out", "m": "耗尽"}]
+    },
+    "The teacher's role is more of a coach or observer.": {
+      "ph": [{"t": "more of a", "b": "more of a", "m": "更多的是"}]
+    },
+    "Horn is prohibited in the park.": {
+      "ph": [{"t": "is prohibited", "b": "be prohibited", "m": "被禁止"}]
+    },
+    "He owns a fleet of aircraft.": {
+      "ph": [{"t": "a fleet of", "b": "a fleet of", "m": "一支……队"}]
+    },
+    "He was caught trying to flee the country.": {
+      "ph": [
+        {"t": "was caught", "b": "be caught doing", "m": "做……时被抓住"},
+        {"t": "trying to", "b": "try to do", "m": "试图"}
+      ]
+    },
+    "It may shed light on people's desire to crack a secret.": {
+      "ph": [{"t": "shed light on", "b": "shed light on", "m": "揭示，阐明"}],
+      "an": {
+        "parts": [
+          {"t": "It may shed light on people's desire", "r": "主干"},
+          {"t": " to crack a secret", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "to crack a secret 是不定式短语，作 desire 的后置定语（desire to do），书上前置成「想要破解秘密的欲望」。",
+          "may 表示可能性的推测，不是「许可」，书上用「或许」译出，放在句首。"
+        ],
+        "lit": "它可能揭示人们破解一个秘密的欲望。"
+      }
+    },
+    "Steering through change and facing obstacles brings us face to face with our fears.": {
+      "ph": [
+        {"t": "brings", "b": "bring sb. face to face with", "m": "使……直面"},
+        {"t": "face to face with", "b": "bring sb. face to face with", "m": "使……直面"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Steering through change and facing obstacles", "r": "主干"},
+          {"t": " brings us face to face with our fears", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "Steering … 和 facing … 是两个并列的动名词短语，合起来作主语，谓语用单数 brings，把两件事看成一个整体，书上直接译成动作「驾驭变化和面对障碍」。",
+          "主语是动作，brings us face to face with 是无生命主语带使役意味，书上转成「会让我们直面恐惧」，主语后补「会」，把 bring 译成「让」。"
+        ],
+        "lit": "驾驭变化和面对障碍使我们面对面地面对我们的恐惧。"
+      }
     }
-   ],
-   "an": {
-    "parts": [
-     {
-      "t": "We were assured",
-      "r": "主干"
-     },
-     {
-      "t": " that, ",
-      "r": ""
-     },
-     {
-      "t": "except for low grades or a raise in family income",
-      "r": "插入语"
-     },
-     {
-      "t": ", ",
-      "r": ""
-     },
-     {
-      "t": "no money would be taken away",
-      "r": "宾语从句"
-     },
-     {
-      "t": ".",
-      "r": ""
-     }
-    ],
-    "pts": [
-     "主干是被动 We were assured，直接译成“我们得到保证”，比“我们被保证”顺。",
-     "that 引导 assured 的宾语从句；except for… 夹在 that 和从句主语之间，是插入语，所以书上把“除了……外”提到从句开头。",
-     "no money 作主语，否定落在主语上，译成“任何钱都不会……”；would 是主句过去时引起的时态呼应（过去将来），不是虚拟语气。",
-     "a raise in family income 是名词化结构，书上译成动宾式的“家庭收入增加”。"
-    ],
-    "lit": "我们被保证，除了低分或家庭收入的增加以外，没有钱会被拿走。"
-   }
   }
- }
 }

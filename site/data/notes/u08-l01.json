@@ -1,106 +1,457 @@
 {
- "_note": "例句词组与语法解析（书外补充，AI 生成）",
- "sents": {
-  "Changes in brain cells can affect communication between different regions of the brain.": {
-   "ph": [
-    {
-     "t": "Changes in",
-     "b": "change in",
-     "m": "……的变化"
+  "_note": "例句词组与语法解析（书外补充，AI 生成）",
+  "sents": {
+    "They worry assistants will one day be used to deliver advertising directly to us.": {
+      "ph": [
+        {"t": "one day", "b": "one day", "m": "有一天"},
+        {"t": "be used to", "b": "be used to do", "m": "被用来做"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "They worry", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "assistants will one day be used to deliver advertising directly to us", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "worry 后省略了 that，assistants … 整个是 worry 的宾语从句，书上译成「他们担心，……」，把从句内容放在逗号之后。",
+          "will be used 是被动，书上保留被动，译成「会被用来」；be used to do（被用来做）后面接动词原形，不是 be used to doing（习惯于做）。",
+          "one day 是插在 will 和 be used 之间的时间状语，书上提到从句开头，译成「有一天」。"
+        ],
+        "lit": "他们担心助手有一天将被用来直接传送广告给我们。"
+      }
     },
-    {
-     "t": "communication between",
-     "b": "communication between",
-     "m": "……之间的交流"
+    "Changes in brain cells can affect communication between different regions of the brain.": {
+      "ph": [
+        {"t": "Changes in", "b": "change in", "m": "……的变化"}
+      ]
+    },
+    "It seems simple enough to distinguish between the organism and the surrounding environment.": {
+      "ph": [
+        {"t": "simple enough to", "b": "adj. enough to do", "m": "简单到可以做某事"},
+        {"t": "distinguish between", "b": "distinguish between … and", "m": "区分……和……"},
+        {"t": "and", "b": "distinguish between … and", "m": "区分……和……"}
+      ]
+    },
+    "This is evidence that our immune system really doesn't function so well when we age.": {
+      "an": {
+        "parts": [
+          {"t": "This is evidence", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that our immune system really doesn't function so well", "r": "同位语从句"},
+          {"t": " ", "r": ""},
+          {"t": "when we age", "r": "时间状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导的是 evidence 的同位语从句，that 在从句里不作成分，只是说明「证据的内容是什么」；所以书上不把它译成「……的证据」，而是拆成「这表明，……」，让内容直接跟在后面。",
+          "when we age 是修饰从句谓语 function 的时间状语，when 在这里带有「随着」的意思，书上译成「随着年龄的增长」，放在前面。"
+        ],
+        "lit": "这是证据，我们的免疫系统在我们变老的时候真的不太能很好地运作。"
+      }
+    },
+    "Some people are absorbed in the past but not open to new memories, but that's not the case for me.": {
+      "ph": [
+        {"t": "are absorbed in", "b": "be absorbed in", "m": "沉湎于"},
+        {"t": "open to", "b": "be open to", "m": "愿意接受"},
+        {"t": "the case", "b": "be the case", "m": "情况如此"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Some people are absorbed in the past but not open to new memories", "r": "主干"},
+          {"t": ", but ", "r": ""},
+          {"t": "that's not the case for me", "r": "并列分句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "are absorbed in 里的 absorbed 是形容词性的过去分词，表示一种状态，be absorbed in 是固定搭配，书上译成「沉湎于」，不译成「被吸收」。",
+          "第一个 but 连接两个并列表语：are absorbed in … 和（are）not open to …，后一个省略了 are，书上合起来译成「沉湎于过去，不愿接受新的回忆」。",
+          "that's not the case 里 that 指代前面说的那种情形，the case 是「情况」，书上译成「我不是这样」，把 for me 转成人称主语。"
+        ],
+        "lit": "有些人被沉浸在过去却对新的记忆不开放，但那对我不是这种情况。"
+      }
+    },
+    "Nowadays forests are increasingly welcome because they suck in carbon pollution from the air.": {
+      "ph": [{"t": "suck in", "b": "suck in", "m": "吸入"}]
+    },
+    "People who prioritise breakfasts tend to have lower calorie but higher nutritional intake.": {
+      "ph": [{"t": "tend to", "b": "tend to do", "m": "往往"}],
+      "an": {
+        "parts": [
+          {"t": "People", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "who prioritise breakfasts", "r": "定语从句"},
+          {"t": " ", "r": ""},
+          {"t": "tend to have lower calorie but higher nutritional intake", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "who 引导定语从句，先行词是 People，who 在从句里作 prioritise 的主语；书上把从句前置成「优先吃早餐的人」，再接主句谓语「往往……」。",
+          "lower calorie 后面省略了 intake（calorie intake 与 nutritional intake 并列），书上补出「摄入的热量较低」，所以 have 不译成「有」，而译成「摄入」。"
+        ],
+        "lit": "优先考虑早餐的人倾向于有更低的卡路里但更高的营养摄入。"
+      }
+    },
+    "It adds a layer of straw to the inside of the cup.": {
+      "ph": [{"t": "a layer of", "b": "a layer of", "m": "一层"}]
+    },
+    "But you can't force the child to think carefully, enjoy books, digest complex information.": {
+      "ph": [
+        {"t": "force", "b": "force sb. to do", "m": "强迫某人做某事"},
+        {"t": "to", "b": "force sb. to do", "m": "强迫某人做某事"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "But you can't force the child", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to think carefully, enjoy books, digest complex information", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "force sb. to do 里 to think 是宾语 the child 的补语，后面的 enjoy books、digest complex information 是与 think 并列的动词，省略了 to；三项并列，书上用逗号连起来译成「仔细思考，享受读书，消化……」。",
+          "can't 否定的是 force（强迫），不是 think 等动作本身，所以书上译成「不能强迫孩子……」，三个并列动作都放在「强迫」的内容里。"
+        ],
+        "lit": "但是你不能强迫孩子仔细地思考、享受书籍、消化复杂的信息。"
+      }
+    },
+    "Health insurance and clinical guidelines promote treatment with drugs and surgery.": {
+      "ph": [{"t": "treatment with", "b": "treatment with", "m": "用……治疗"}]
+    },
+    "They can save patients trouble visiting physicians.": {
+      "ph": [{"t": "save patients trouble", "b": "save sb. trouble", "m": "为某人省去麻烦"}]
+    },
+    "I have to go to the dentist tomorrow.": {
+      "ph": [
+        {"t": "have to", "b": "have to do", "m": "不得不，必须"},
+        {"t": "go to the dentist", "b": "go to the dentist", "m": "看牙医"}
+      ]
+    },
+    "It clearly aims to form children's identity through play.": {
+      "ph": [{"t": "aims to", "b": "aim to do", "m": "目的是，旨在"}]
+    },
+    "What mattered most was the residents' physical health and mental status.": {
+      "an": {
+        "parts": [
+          {"t": "What mattered most", "r": "主语从句"},
+          {"t": " ", "r": ""},
+          {"t": "was the residents' physical health and mental status", "r": "主干"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "What mattered most 是主语从句，what 既引导从句又在从句里作 mattered 的主语，相当于「最重要的事」；书上译成「最重要的是……」，把从句压缩成一个短语。",
+          "was 后面的 the residents' physical health and mental status 是表语，两个名词并列，共用 the residents' 的所属，书上译成「居民的身体健康和心理状态」。"
+        ],
+        "lit": "最重要的事情是居民们的身体的健康和心理的状态。"
+      }
+    },
+    "Postal services work hard to identify items that require priority treatment.": {
+      "ph": [
+        {"t": "work hard to", "b": "work hard to do", "m": "努力做"},
+        {"t": "priority treatment", "b": "priority treatment", "m": "优先处理"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Postal services work hard", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to identify items", "r": "非谓语"},
+          {"t": " ", "r": ""},
+          {"t": "that require priority treatment", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导定语从句，先行词是 items，that 在从句里作 require 的主语；书上前置成「需要优先处理的物品」。",
+          "to identify 是不定式，说明 work hard 努力的内容，书上译成「努力识别」。",
+          "priority treatment 是名词短语，书上把名词 treatment 展开成动词「处理」，译成「优先处理」，而不是「优先待遇」。"
+        ],
+        "lit": "邮政服务努力工作以识别那些要求优先待遇的物品。"
+      }
+    },
+    "It will have considerable side effects if taken in large doses.": {
+      "ph": [
+        {"t": "side effects", "b": "side effect", "m": "副作用"},
+        {"t": "in large doses", "b": "in large doses", "m": "大剂量地"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "It will have considerable side effects", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "if taken in large doses", "r": "条件状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "if taken in large doses 是省略了「主语 + be」的条件状语从句，完整是 if it is taken in large doses，省略的 it 就是主句的 It，所以书上补出「如果……服用」。",
+          "in large doses 是介词短语，书上把名词 doses（剂量）转成「大量服用」，修饰动词，而不是译成「在大剂量中」。"
+        ],
+        "lit": "它将有相当大的副作用，如果以大剂量被服用。"
+      }
+    },
+    "Flu symptoms including fever and chills, sore throat and body aches come on suddenly.": {
+      "ph": [{"t": "come on", "b": "come on", "m": "（病症）开始出现"}]
+    },
+    "It involves buying lots of tablets and software.": {
+      "ph": [
+        {"t": "involves buying", "b": "involve doing", "m": "需要做某事"},
+        {"t": "lots of", "b": "lots of", "m": "大量"}
+      ]
+    },
+    "I took a pill to help settle my nerves.": {
+      "ph": [
+        {"t": "took a pill", "b": "take a pill", "m": "吃一片药"},
+        {"t": "settle my nerves", "b": "settle one's nerves", "m": "让神经平静下来"}
+      ]
+    },
+    "He was taken to hospital in an ambulance.": {
+      "ph": [{"t": "was taken to", "b": "be taken to", "m": "被送往"}]
+    },
+    "The access codes may be another financial headache for students.": {
+      "ph": [{"t": "headache for", "b": "a headache for sb.", "m": "让某人头疼的事"}]
+    },
+    "There are many people who recover from cancer, stroke, or heart disease.": {
+      "ph": [
+        {"t": "recover from", "b": "recover from", "m": "从……中康复"},
+        {"t": "heart disease", "b": "heart disease", "m": "心脏病"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "There are many people", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "who recover from cancer, stroke, or heart disease", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "who 引导定语从句，先行词是 many people，who 在从句里作 recover 的主语。",
+          "There are … 只是引出 many people，书上没有译「有许多人」，而是把从句的动作直接当成谓语，译成「许多人从……中康复」，语序更自然。"
+        ],
+        "lit": "有许多人，他们从癌症、中风或心脏病中康复。"
+      }
+    },
+    "Diabetes patients are advised to eat more plant-based food.": {
+      "ph": [{"t": "are advised to", "b": "be advised to do", "m": "被建议做某事"}],
+      "an": {
+        "parts": [
+          {"t": "Diabetes patients are advised", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "to eat more plant-based food", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "are advised to eat 是被动结构，书上没有译成「被建议」，而是转成无主语的主动句「建议糖尿病患者……」，是汉语里常见的说法。",
+          "Diabetes 作名词修饰 patients，是「糖尿病患者」，不是「糖尿病的」。",
+          "more plant-based food 里 more 修饰名词，没有 than 比较对象，意思是「比现在更多」；书上把它挪到动词前译成「多吃」。"
+        ],
+        "lit": "糖尿病患者被建议去吃更多植物性的食物。"
+      }
+    },
+    "The food industry plays a major role in fighting obesity.": {
+      "ph": [{"t": "plays a major role in", "b": "play a major role in", "m": "在……中发挥重要作用"}]
+    },
+    "How do you manage to stay so slim?": {
+      "ph": [{"t": "manage to", "b": "manage to do", "m": "设法做到"}]
+    },
+    "I lean toward the latter view.": {
+      "ph": [{"t": "lean toward", "b": "lean toward", "m": "倾向于"}]
+    },
+    "These claims are based on slender evidence.": {
+      "ph": [{"t": "are based on", "b": "be based on", "m": "基于"}]
+    },
+    "A bundle containing thousands of pounds got stolen.": {
+      "ph": [{"t": "thousands of", "b": "thousands of", "m": "数千的"}]
+    },
+    "He's still recovering from his operation.": {
+      "ph": [{"t": "recovering from", "b": "recover from", "m": "从……中恢复"}]
+    },
+    "The incident has received wide coverage in the press.": {
+      "ph": [{"t": "in the press", "b": "in the press", "m": "在新闻界"}]
+    },
+    "That hasn't stopped thousands of winter depressives from trying to heal themselves.": {
+      "ph": [
+        {"t": "stopped", "b": "stop … from doing", "m": "阻止……做某事"},
+        {"t": "thousands of", "b": "thousands of", "m": "成千上万的"},
+        {"t": "from", "b": "stop … from doing", "m": "阻止……做某事"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "That hasn't stopped thousands of winter depressives", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "from trying to heal themselves", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "stop A from doing B 是固定结构：A 是 thousands of winter depressives，from 后面接动名词 trying；主语 That 指代前文说的情况（无生命主语），书上照直译成「那并没有阻止……试图……」。",
+          "hasn't stopped 是现在完成时的否定，说的是「到现在为止并没有起到阻止作用」，书上用「并没有」表达这层意思。"
+        ],
+        "lit": "那没有阻止成千上万的冬季抑郁者去尝试治愈他们自己。"
+      }
+    },
+    "But many tech home remedies can be explained by a little science.": {
+      "ph": [
+        {"t": "can be explained by", "b": "be explained by", "m": "被……解释"},
+        {"t": "a little", "b": "a little", "m": "一点"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "But many tech home remedies can be explained", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "by a little science", "r": "状语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "can be explained by 是被动，by 后面是解释所依据的东西；书上转成主动的「可以用一点科学来解释」，by 译成「用……来」，不译「被」。",
+          "a little + 不可数名词 science 是「有一点」的肯定意思；没有 a 的 little science 才是「几乎没有」。书上译成「一点科学」。"
+        ],
+        "lit": "但是许多科技家庭疗法能够被一点科学解释。"
+      }
+    },
+    "They also had talk therapy with a nurse before and after quit day.": {
+      "ph": [{"t": "before and after", "b": "before and after", "m": "在……之前和之后"}]
+    },
+    "The elephant was given medical treatment for many days.": {
+      "ph": [{"t": "was given medical treatment", "b": "be given treatment", "m": "接受治疗"}]
+    },
+    "Look at your talk and pick out a few words or sentences which you can inject with humour.": {
+      "ph": [
+        {"t": "Look at", "b": "look at", "m": "查看，审视"},
+        {"t": "pick out", "b": "pick out", "m": "挑选出"},
+        {"t": "a few", "b": "a few", "m": "一些"},
+        {"t": "inject", "b": "inject … with", "m": "给……注入"},
+        {"t": "with", "b": "inject … with", "m": "给……注入"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Look at your talk and pick out a few words or sentences", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "which you can inject with humour", "r": "定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "Look at … and pick out … 是两个并列的祈使句，省略主语 you，书上加「请」译成「请仔细审视……，挑选出……」。",
+          "which 引导定语从句，先行词是 a few words or sentences，which 在从句里作 inject 的宾语（inject which with humour），书上前置成「可以……的词语或句子」。",
+          "inject A with B 是「给 A 注入 B」，书上转成动宾式「植入幽默」，把 with humour 作为植入的内容。"
+        ],
+        "lit": "看你的演讲，并挑出一些你可以用幽默注入的词语或句子。"
+      }
+    },
+    "Most college professors agree the kind of exam they choose largely depends on the subject.": {
+      "ph": [{"t": "depends on", "b": "depend on", "m": "取决于"}],
+      "an": {
+        "parts": [
+          {"t": "Most college professors agree", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "the kind of exam they choose largely depends on the subject", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "agree 后省略了 that，the kind of exam … 整个是 agree 的宾语从句，书上译成「都同意，……」。",
+          "they choose 是省略了关系代词的定语从句，先行词是 the kind of exam，省略的 that/which 在从句里作 choose 的宾语；书上前置成「他们选择的考试形式」。",
+          "depends on the subject 里 the subject 指「学科」，书上译成「学科性质」，把 largely 译成「在很大程度上」。"
+        ],
+        "lit": "大多数大学教授同意他们选择的考试的种类很大程度上取决于这个学科。"
+      }
+    },
+    "Muscle performance can also be affected by a phenomenon called \"central fatigue\".": {
+      "ph": [{"t": "be affected by", "b": "be affected by", "m": "受……影响"}],
+      "an": {
+        "parts": [
+          {"t": "Muscle performance can also be affected by a phenomenon", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "called \"central fatigue\"", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "can also be affected by 是被动，书上没有译「被影响」，而是译成「也会受到……的影响」，行为者放在「受到」后面。",
+          "called \"central fatigue\" 是过去分词短语作后置定语，修饰 a phenomenon，相当于 which is called …；书上前置成「一种叫作「中枢疲劳」的现象」。"
+        ],
+        "lit": "肌肉表现也能被一种叫作「中枢疲劳」的现象影响。"
+      }
+    },
+    "Her mother objected to Eric's flying lessons.": {
+      "ph": [{"t": "objected to", "b": "object to", "m": "反对"}]
+    },
+    "They reject using toilet paper with unnecessary features.": {
+      "ph": [{"t": "reject using", "b": "reject doing", "m": "拒绝做某事"}]
+    },
+    "Business schools grade their students in part on their performance in group projects.": {
+      "ph": [
+        {"t": "in part", "b": "in part", "m": "部分地"},
+        {"t": "performance in", "b": "performance in", "m": "在……中的表现"}
+      ]
+    },
+    "It received an incredibly large number of donated books.": {
+      "ph": [{"t": "large number of", "b": "a large number of", "m": "大量的"}]
+    },
+    "She decided to devote all her time to cultivating and developing it.": {
+      "ph": [
+        {"t": "decided to", "b": "decide to do", "m": "决定做某事"},
+        {"t": "devote", "b": "devote … to", "m": "把……用于"},
+        {"t": "to", "b": "devote … to", "m": "把……用于"}
+      ]
+    },
+    "A variety of factors contribute to the long-run increase in the share of young adults living with their parents.": {
+      "ph": [
+        {"t": "A variety of", "b": "a variety of", "m": "各种各样的"},
+        {"t": "contribute to", "b": "contribute to", "m": "导致，促成"},
+        {"t": "increase in", "b": "increase in", "m": "……的增加"},
+        {"t": "living with", "b": "live with", "m": "与……同住"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "A variety of factors contribute to the long-run increase in the share of young adults", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "living with their parents", "r": "非谓语"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "主语 A variety of factors 是无生命名词，作原因；contribute to 后的 to 是介词，接名词 increase，书上译成「导致了……的长期增长」。",
+          "living with their parents 是现在分词短语作后置定语，修饰紧邻的 young adults（不是 share），书上前置成「与父母同住的年轻人」。",
+          "the long-run increase in the share of … 是层层叠加的名词化结构，书上展开成「……比例的长期增长」，主谓关系是「比例增长」。"
+        ],
+        "lit": "多种因素促成了年轻成年人（与他们的父母住在一起的）的份额上的长期增加。"
+      }
+    },
+    "The scientific establishment is not very good at distributing money.": {
+      "ph": [{"t": "good at", "b": "be good at", "m": "擅长"}]
+    },
+    "Mistakes crack their self-confidence because they attribute errors to a lack of ability, which they feel powerless to change.": {
+      "ph": [
+        {"t": "attribute", "b": "attribute … to", "m": "把……归因于"},
+        {"t": "to", "b": "attribute … to", "m": "把……归因于"},
+        {"t": "a lack of", "b": "a lack of", "m": "缺乏"},
+        {"t": "feel powerless to", "b": "feel powerless to do", "m": "感到无力做某事"}
+      ],
+      "an": {
+        "parts": [
+          {"t": "Mistakes crack their self-confidence", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "because they attribute errors to a lack of ability", "r": "原因状语"},
+          {"t": ", ", "r": ""},
+          {"t": "which they feel powerless to change", "r": "非限制性定语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "主语 Mistakes 是无生命名词，直译「错误破坏自信」生硬，书上加「让」译成「错误会让他们的自信心崩溃」。",
+          "attribute A to B 被拆开：A 是 errors，B 是 a lack of ability，书上译成「把错误归咎于能力不足」。",
+          "which 的先行词是 a lack of ability（能力不足），不是 errors；which 在从句里作 change 的宾语（change which）。",
+          "非限制性定语从句书上拆成后面的分句「觉得无力改变」，which 承前省略，不再译出「这种不足」。"
+        ],
+        "lit": "错误破坏了他们的自信，因为他们把错误归因于能力的缺乏，而他们觉得无力改变这种缺乏。"
+      }
+    },
+    "The child may feel that he owes her an apology.": {
+      "ph": [{"t": "owes her an apology", "b": "owe sb. an apology", "m": "欠某人一个道歉"}],
+      "an": {
+        "parts": [
+          {"t": "The child may feel", "r": "主干"},
+          {"t": " ", "r": ""},
+          {"t": "that he owes her an apology", "r": "宾语从句"},
+          {"t": ".", "r": ""}
+        ],
+        "pts": [
+          "that 引导 feel 的宾语从句，that 不作成分，书上译成「可能觉得……」，从句内容直接接在后面。",
+          "owe sb. sth. 是双宾语结构：her 是间接宾语，an apology 是直接宾语，书上译成「欠她一个道歉」，保留了「欠」的说法。",
+          "may 在这里表示推测（「可能」），不是「允许」，书上放在主句谓语前译成「可能觉得」。"
+        ],
+        "lit": "这个孩子可能感觉到他欠她一个道歉。"
+      }
     }
-   ]
-  },
-  "Some people are absorbed in the past but not open to new memories, but that's not the case for me.": {
-   "ph": [
-    {
-     "t": "absorbed in",
-     "b": "be absorbed in",
-     "m": "沉浸于；专心于"
-    },
-    {
-     "t": "open to",
-     "b": "be open to",
-     "m": "对……持开放态度"
-    },
-    {
-     "t": "the case",
-     "b": "be the case",
-     "m": "是事实；属实"
-    }
-   ]
-  },
-  "Nowadays forests are increasingly welcome because they suck in carbon pollution from the air.": {
-   "ph": [
-    {
-     "t": "suck in",
-     "b": "suck in",
-     "m": "吸入"
-    }
-   ]
-  },
-  "Mistakes crack their self-confidence because they attribute errors to a lack of ability, which they feel powerless to change.": {
-   "ph": [
-    {
-     "t": "attribute",
-     "b": "attribute … to",
-     "m": "把……归因于"
-    },
-    {
-     "t": "to",
-     "b": "attribute … to",
-     "m": "把……归因于"
-    },
-    {
-     "t": "a lack of",
-     "b": "a lack of",
-     "m": "缺乏"
-    },
-    {
-     "t": "feel powerless to",
-     "b": "feel powerless to do",
-     "m": "感到无力做某事"
-    }
-   ],
-   "an": {
-    "parts": [
-     {
-      "t": "Mistakes crack their self-confidence",
-      "r": "主干"
-     },
-     {
-      "t": " ",
-      "r": ""
-     },
-     {
-      "t": "because they attribute errors to a lack of ability",
-      "r": "原因状语"
-     },
-     {
-      "t": ", ",
-      "r": ""
-     },
-     {
-      "t": "which they feel powerless to change",
-      "r": "非限制性定语从句"
-     },
-     {
-      "t": ".",
-      "r": ""
-     }
-    ],
-    "pts": [
-     "主语 Mistakes 是无生命名词，直译“错误破坏自信”生硬，书上加“让”译成“错误会让他们的自信心崩溃”。",
-     "attribute A to B 被拆开：A 是 errors，B 是 a lack of ability，译成“把错误归咎于能力不足”。",
-     "which 的先行词是 a lack of ability（能力不足），不是 errors；which 在从句里作 change 的宾语（change which）。",
-     "非限制性定语从句书上拆成后面的分句“觉得无力改变”，which 承前省略，不再译出“这种不足”。"
-    ],
-    "lit": "错误破坏了他们的自信，因为他们把错误归因于能力的缺乏，而他们觉得无力改变这种缺乏。"
-   }
   }
- }
 }
