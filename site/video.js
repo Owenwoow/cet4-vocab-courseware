@@ -1,0 +1,36 @@
+/* 讲解视频跳转的取数规则（纯函数，不碰页面；浏览器里是全局 Video，Node 里 require 进来跑单元测试）
+
+   数据 data/video/<课id>.json（pipeline/video_align.py 生成，一课一份）：
+     sources：这一课覆盖到的视频 [{id, bv, label, alive}]，数组顺序就是优先级
+     entries：词条号 no（字符串）→ {视频 id: [分P号, 秒] 或 [分P号, 秒, 1]}，第三位 1 = 推算出来的（approx，页面标「约」）
+   同一套讲课被多个 UP 主上传，视频可能下架（alive: false），所以每个词有多个备选，按优先级挑还在的 */
+"use strict";
+const Video = (() => {
+  const url = (bv, p, t) => `https://www.bilibili.com/video/${encodeURIComponent(bv)}/?p=${p}&t=${t}`;
+
+  /* 这个词条能看的视频，按优先级：[{id, label, url, approx}]。下架的、这个视频里没有这个词的跳过；没有数据返回 [] */
+  function options(data, no) {
+    const out = [];
+    if (!data || !Array.isArray(data.sources) || !data.entries || no == null) return out;
+    const hit = Object.hasOwn(data.entries, String(no)) ? data.entries[String(no)] : null;
+    if (!hit) return out;
+    for (const s of data.sources) {
+      if (!s || s.alive === false || !Object.hasOwn(hit, s.id)) continue;
+      const [p, t, approx] = Array.isArray(hit[s.id]) ? hit[s.id] : [];
+      if (!Number.isFinite(p) || !Number.isFinite(t) || !s.bv) continue;
+      out.push({id: s.id, label: s.label || s.id, url: url(s.bv, p, Math.max(0, Math.floor(t))), approx: !!approx});
+    }
+    return out;
+  }
+
+  /* 一个词条（书上词条 / 扩展词 / 只有逐词释义的生词）在视频里对应哪个词条号：
+     书上词条用自己的号，扩展词用它所属主词条的号（老师是在讲主词条时顺带讲的），逐词释义的生词不在书里，没有 */
+  function noOf(e) {
+    if (!e || e.gloss) return null;
+    const n = e.extOf ? e.extOf.no : e.no;
+    return n == null ? null : n;
+  }
+
+  return {url, options, noOf};
+})();
+if (typeof module === "object" && module.exports) module.exports = Video;
