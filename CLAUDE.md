@@ -15,6 +15,7 @@
 - 云端生成音频（默认，本地网络跑 edge-tts 会卡死）：Actions → `audio` 工作流（`.github/workflows/audio.yml`），手动触发，填课程 id；并发固定 3（服务器 IP 易被限流），生成后自动推音频仓库并把清单提交回 `main`。需要 Secret `AUDIO_REPO_TOKEN`（PAT，详见工作流文件头部）
 - 本地预览要起两个服务：课件 8765（`site/`）、音频 8766（`audio-store/`），见 `.claude/launch.json`；8765 被占用时用备用的 `site-alt`（8775，localStorage 按端口隔离，测试数据不串）
 - 新电脑上恢复音频目录：`git clone https://github.com/Owenwoow/cet4-vocab-audio.git audio-store`
+- 讲解视频时间点：`python pipeline/video_align.py` 重新对齐生成 `site/data/video/`（只在本机跑：要 B 站登录 cookie，环境变量 `BILI_COOKIE`，默认 `~/Downloads/bilibili_cookie.json`；字幕缓存在 `work/bili/`，没缓存时约 280 次请求、5 分钟）；`--check` 查视频是否下架并更新 `alive`（不用 cookie）；`--sample 3 --seed N` 每单元抽 3 词打印落点前后字幕。视频下架或有人重新上传：改 `pipeline/video_sources.json` 再重跑
 
 ## 目录
 
@@ -23,6 +24,7 @@
 - `site/data/roots/*.json`：词根词缀记忆法补充（书外、AI 生成），只给书上用联想/谐音法且能拆出公认词根的词条补，页面标「补充」；`validate.py` 会核对
 - `site/data/notes/*.json`：例句词组标注与语法解析（书外、AI 生成，子代理 `note-writer` 按 `pipeline/prompts/notes.md` 写），按例句英文原文索引；词组片段的定位规则在 `site/sent.js` 开头，和 `validate.py` 的 `check_notes` 必须一致；页面标「补充」
 - `site/data/audio/*.json`：每课音频清单（进 git）；音频文件本身在单独的仓库 `cet4-vocab-audio`，本地克隆在 `audio-store/`（主仓库忽略）
+- `site/data/video/*.json`：每课每个词条在各 B 站讲解视频里的「分 P、秒」（`pipeline/video_align.py` 从 AI 字幕对齐生成），前端选视频规则在 `site/video.js`；视频表（优先级、分 P 范围和时长）手录在 `pipeline/video_sources.json`
 - `site/data/pages/`、`work/`：脚本生成，不进 git
 
 ## 项目约束
@@ -32,6 +34,7 @@
 - 原书扫描页（`site/data/pages/`）不进仓库、不部署，「看原书」只在本地版出现（`book.json` 的 `hasPages`）
 - 书页码 = PDF 页序号(0 起) − 9（`pipeline/config.py`）
 - 每个 Lesson 的词条序号从 01 重新开始；词群编号在整个 Unit 内连续
+- B 站 cookie 只在本机读，不打印、不进仓库、不进 Actions；字幕原文只缓存在 `work/bili/`，仓库里只放时间点
 - 学习进度（已会、设置、上次的课、每课阅读位置）统一走 `site/sync.js` 存取，不要直接写 localStorage；新增要跨设备同步的状态也走它。云端是用户自己的私密 Gist（`cet4-progress.json`），token 只存本机，绝不写进仓库
 - 背词数据也走 `sync.js`：`learn:<课id>:g<词群号>` = 学的日期，`srs:<词>` = 复习卡，`log:<日期>` = 当天评分计数，`vocab:<原形>` = 生词本（释义快照 + 复习卡，和 `srs:` 分开存，所在词群记为学过时记 0「毕业」）；取消记 0（墓碑），不要删键
 - 复习规则只在 `site/srs.js` 改，改了同步改 `tests/srs.test.js`；规则说明写在文件开头和 `docs/plans/2026-10-01-vocab-portal.md`
