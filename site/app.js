@@ -15,10 +15,10 @@ loadKnown();
 const VOICE_NAMES = {ava: "Ava", andrew: "Andrew", sonia: "Sonia", ryan: "Ryan"};
 const VOICE_DESC = {ava: "美式 · 女声", andrew: "美式 · 男声", sonia: "英式 · 女声", ryan: "英式 · 男声"};
 const DEFAULTS = {voice: "ava", rate: 1, mask: false, hideKnown: false, scope: "group", withZh: true, loop: false, theme: "auto",
-  examDate: "2026-12-12", dailyCap: 120, autoSay: true, drillOrder: "course", drillMode: "quiz", phLine: true};
+  examDate: "2026-12-12", dailyCap: 120, autoSay: true, drillOrder: "course", drillMode: "quiz", phLine: true, videoPrefer: "精讲带背"};
 const S = {...DEFAULTS};
 const loadSettings = () => Object.assign(S, DEFAULTS, Object.fromEntries(Sync.entries("set:")));
-function setS(k, v) { S[k] = v; Sync.set("set:" + k, v); applySettings(); }
+function setS(k, v) { S[k] = v; Sync.set("set:" + k, v); applySettings(); if (k === "videoPrefer" && L) renderLesson(); }   // 视频按钮按偏好重画（复习页每次进入都会重画）
 loadSettings();
 const darkMQ = matchMedia("(prefers-color-scheme: dark)");
 function applySettings() {
@@ -52,21 +52,17 @@ const findWord = (w, map = WORDMAP) => { for (const k of lemmaCandidates(w.toLow
 const sentenceHTML = (en, keys, note, hi) => Sent.html(en, keys, note, hi);
 const noteOf = (notes, en) => (notes && notes.sents && notes.sents[en]) || null;
 
-/* ---------- 讲解视频：「▶ 视频」按钮，课文页、复习卡背面、列表页共用 ----------
+/* ---------- 讲解视频按钮：课文页词头、复习卡背面、列表页共用 ----------
    data = 这一课的视频数据，no = 词条号（video.js 的 noOf 取）；这个词没有可用的视频就返回空串，调用的地方不用判断。
-   第一个可用视频是主按钮，点了在页面里播（openVideo）；「约」= 时间点是推算的，可能差几秒。还有别的可用视频，旁边多一个「换」菜单；
-   mini = 列表页每行一个小 ▶，不带菜单；word = 播放窗标题上显示的词。
+   一个和 🔊 一样的圆形播放图标，点了在页面里播第一个可用的视频（openVideo），别的视频在播放窗里换；
+   「约」= 时间点是推算的，可能差几秒，图标外圈是虚线。sm = 列表页小一号；word = 播放窗标题上显示的词。
    链接本身仍是 B 站地址：Ctrl / Shift / 中键点照旧在新标签页打开 */
-function videoHTML(data, no, mini, word = "") {
-  const vs = Video.options(data, no);
+const PLAY_ICON = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 1.2v9.6L10.5 6z"/></svg>';
+function videoHTML(data, no, sm, word = "") {
+  const vs = Video.options(data, no, S.videoPrefer);
   if (!vs.length) return "";
-  const [v, ...rest] = vs, open = ' target="_blank" rel="noopener"', ap = v.approx ? "（约）" : "";
-  const tip = `${v.label}${v.approx ? "，时间点是推算的，可能差几秒" : ""}`;
-  const ds = ` data-vs="${esc(JSON.stringify(vs))}" data-vw="${esc(word)}"`;   // 播放窗换视频要用全部可选的
-  if (mini) return `<a class="vbtn mini${v.approx ? " approx" : ""}" href="${esc(v.url)}"${open} data-vi="0"${ds} title="${esc(`讲解视频 · ${tip}`)}">▶</a>`;
-  return `<span class="vid"${ds}><a class="vbtn${v.approx ? " approx" : ""}" href="${esc(v.url)}"${open} data-vi="0" title="${esc(`讲解视频 · ${tip}`)}">▶ 视频${ap}</a>` +
-    (rest.length ? `<details class="vmore"><summary title="换个视频看（共 ${vs.length} 个）">换</summary><div class="vmenu">${
-      rest.map((r, i) => `<a href="${esc(r.url)}"${open} data-vi="${i + 1}">${esc(r.label)}${r.approx ? `<small>约</small>` : ""}</a>`).join("")}</div></details>` : "") + `</span>`;
+  const v = vs[0], tip = `看老师讲解${v.approx ? "（时间点是推算的，可能差几秒）" : ""} · ${v.label}${vs.length > 1 ? `，播放窗里可换另外 ${vs.length - 1} 个视频` : ""}`;
+  return `<a class="vbtn${sm ? " sm" : ""}${v.approx ? " approx" : ""}" href="${esc(v.url)}" target="_blank" rel="noopener" data-vi="0" data-vs="${esc(JSON.stringify(vs))}" data-vw="${esc(word)}" title="${esc(tip)}" aria-label="讲解视频">${PLAY_ICON}</a>`;
 }
 
 /* ---------- 讲解视频页内播放：B 站嵌入播放器，电脑上是画中画式浮窗，手机贴在底部；不离开页面，看完 ✕ 掉接着背 ----------
@@ -154,13 +150,6 @@ document.addEventListener("click", e => {
 document.addEventListener("change", e => { if (vp && e.target.classList.contains("vpsel")) openVideo(vp._vs, +e.target.value, vp._w); });
 /* Esc 先关播放窗（在捕获阶段截住，复习页的 Esc 不会同时触发） */
 addEventListener("keydown", e => { if (e.key === "Escape" && vp) { closeVideo(); e.preventDefault(); e.stopImmediatePropagation(); } }, true);
-/* 「换」菜单：点别处、点菜单里的链接、按 Esc 都收起来（点「换」自己交给 details 原生处理） */
-document.addEventListener("click", e => {
-  const t = e.target; if (!t.closest) return;
-  const keep = t.closest("summary") && t.closest(".vmore");
-  $$(".vmore[open]").forEach(d => { if (d !== keep) d.open = false; });
-}, true);
-document.addEventListener("keydown", e => { if (e.key === "Escape") $$(".vmore[open]").forEach(d => { d.open = false; }); });
 
 /* ---------- 音频：预生成 mp3 优先，缺失时退回浏览器语音 ---------- */
 const player = new Audio();
@@ -708,6 +697,8 @@ function renderSettings() {
       <div class="row"><span><b>每天复习上限</b><small>到期的词超过这个数，多出来的按拖得久、火苗多优先，自动排到后面几天</small></span>
         ${seg("dailyCap", [[80, "80"], [120, "120"], [200, "200"]])}</div>
       ${sw("autoSay", "巩固时自动读单词", "每翻到一个新词先读一遍；按 R 再读")}
+      <div class="row"><span><b>讲解视频优先用</b><small>词卡上 ▶ 先播哪一种：精讲带背每课一段（约 1 小时，到 U8）；全程班每单元一段（约 4 小时，U1–U10 都有）。选的这种没有这个词就用另一种，播放窗里也随时能换</small></span>
+        ${seg("videoPrefer", [["精讲带背", "精讲带背"], ["全程班", "全程班"]])}</div>
     </section>
     <section class="panel"><h2>磨耳朵</h2>
       <div class="row"><span><b>播放范围</b><small>从右下角 🎧 开始</small></span>${seg("scope", [["group", "当前词群"], ["lesson", "整课"]])}</div>

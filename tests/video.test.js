@@ -103,3 +103,10 @@ test("页内播放：嵌入播放器地址带 BV、分 P、秒，自动播放、
   const o = Video.options(data(), 1)[1];
   assert.equal(Video.embed(o), "https://player.bilibili.com/player.html?bvid=BV1Vkah6oEVo&p=1&t=1402&autoplay=1&danmaku=0&high_quality=1");
 });
+
+test("设置里的系列偏好：这个系列排前面，其余顺序不变；没有这个系列的词照旧", () => {
+  assert.deepEqual(Video.options(data(), 1, "全程班").map(x => x.id), ["qc1", "qc3", "jj1"]);
+  assert.deepEqual(Video.options(data(), 1, "精讲带背").map(x => x.id), ["jj1", "qc1", "qc3"]);
+  assert.deepEqual(Video.options(data(), 3, "精讲带背").map(x => x.id), ["qc1", "qc3"]);   // 3 号没有精讲
+  assert.deepEqual(Video.options(data(), 1, "").map(x => x.id), ["jj1", "qc1", "qc3"]);
+});

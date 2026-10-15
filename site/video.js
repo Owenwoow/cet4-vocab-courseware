@@ -10,8 +10,9 @@ const Video = (() => {
   /* 页内播放用的 B 站嵌入播放器（o = options 里的一项）：自动播放、关弹幕；没登录时画质 360p */
   const embed = o => `https://player.bilibili.com/player.html?bvid=${encodeURIComponent(o.bv)}&p=${o.p}&t=${o.t}&autoplay=1&danmaku=0&high_quality=1`;
 
-  /* 这个词条能看的视频，按优先级：[{id, label, url, approx, bv, p, t}]。下架的、这个视频里没有这个词的跳过；没有数据返回 [] */
-  function options(data, no) {
+  /* 这个词条能看的视频，按优先级：[{id, label, url, approx, bv, p, t}]。
+     prefer = 设置里「讲解视频优先用」的系列（label 的开头，如「精讲带背」「全程班」）：这个系列的排到前面，其余照原来的顺序；没有这个系列就不变。下架的、这个视频里没有这个词的跳过；没有数据返回 [] */
+  function options(data, no, prefer) {
     const out = [];
     if (!data || !Array.isArray(data.sources) || !data.entries || no == null) return out;
     const hit = Object.hasOwn(data.entries, String(no)) ? data.entries[String(no)] : null;
@@ -23,7 +24,9 @@ const Video = (() => {
       const sec = Math.max(0, Math.floor(t));
       out.push({id: s.id, label: s.label || s.id, url: url(s.bv, p, sec), approx: !!approx, bv: s.bv, p, t: sec});
     }
-    return out;
+    if (!prefer) return out;
+    const mine = o => o.label.startsWith(prefer);
+    return [...out.filter(mine), ...out.filter(o => !mine(o))];
   }
 
   /* 一个词条（书上词条 / 扩展词 / 只有逐词释义的生词）在视频里对应哪个词条号：
