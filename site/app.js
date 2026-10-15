@@ -54,18 +54,53 @@ const noteOf = (notes, en) => (notes && notes.sents && notes.sents[en]) || null;
 
 /* ---------- 讲解视频：「▶ 视频」按钮，课文页、复习卡背面、列表页共用 ----------
    data = 这一课的视频数据，no = 词条号（video.js 的 noOf 取）；这个词没有可用的视频就返回空串，调用的地方不用判断。
-   第一个可用视频是主按钮，新标签页打开 B 站；「约」= 时间点是推算的，可能差几秒。还有别的可用视频，旁边多一个「换」菜单；
-   mini = 列表页每行一个小 ▶，不带菜单 */
-function videoHTML(data, no, mini) {
+   第一个可用视频是主按钮，点了在页面里播（openVideo）；「约」= 时间点是推算的，可能差几秒。还有别的可用视频，旁边多一个「换」菜单；
+   mini = 列表页每行一个小 ▶，不带菜单；word = 播放窗标题上显示的词。
+   链接本身仍是 B 站地址：Ctrl / Shift / 中键点照旧在新标签页打开 */
+function videoHTML(data, no, mini, word = "") {
   const vs = Video.options(data, no);
   if (!vs.length) return "";
   const [v, ...rest] = vs, open = ' target="_blank" rel="noopener"', ap = v.approx ? "（约）" : "";
   const tip = `${v.label}${v.approx ? "，时间点是推算的，可能差几秒" : ""}`;
-  if (mini) return `<a class="vbtn mini${v.approx ? " approx" : ""}" href="${esc(v.url)}"${open} title="${esc(`B 站讲解视频 · ${tip}`)}">▶</a>`;
-  return `<span class="vid"><a class="vbtn${v.approx ? " approx" : ""}" href="${esc(v.url)}"${open} title="${esc(`B 站讲解视频 · ${tip}`)}">▶ 视频${ap}</a>` +
+  const ds = ` data-vs="${esc(JSON.stringify(vs))}" data-vw="${esc(word)}"`;   // 播放窗换视频要用全部可选的
+  if (mini) return `<a class="vbtn mini${v.approx ? " approx" : ""}" href="${esc(v.url)}"${open} data-vi="0"${ds} title="${esc(`讲解视频 · ${tip}`)}">▶</a>`;
+  return `<span class="vid"${ds}><a class="vbtn${v.approx ? " approx" : ""}" href="${esc(v.url)}"${open} data-vi="0" title="${esc(`讲解视频 · ${tip}`)}">▶ 视频${ap}</a>` +
     (rest.length ? `<details class="vmore"><summary title="换个视频看（共 ${vs.length} 个）">换</summary><div class="vmenu">${
-      rest.map(r => `<a href="${esc(r.url)}"${open}>${esc(r.label)}${r.approx ? `<small>约</small>` : ""}</a>`).join("")}</div></details>` : "") + `</span>`;
+      rest.map((r, i) => `<a href="${esc(r.url)}"${open} data-vi="${i + 1}">${esc(r.label)}${r.approx ? `<small>约</small>` : ""}</a>`).join("")}</div></details>` : "") + `</span>`;
 }
+
+/* ---------- 讲解视频页内播放：B 站嵌入播放器，电脑在右下角浮着，手机贴在底部；不离开页面，看完 ✕ 掉接着背 ----------
+   没登录 B 站时嵌入播放器只有 360p，窗口里留一个「B 站 ↗」去 B 站看高清 */
+let vp = null;   // 播放窗，没开时是 null
+function openVideo(vs, i, word) {
+  const v = vs[i];
+  if (!v) return;
+  stopAll();   // 课件自己的朗读先停，免得两边一起出声
+  if (!vp) { vp = document.createElement("div"); vp.id = "vplayer"; document.body.append(vp); }
+  vp.innerHTML = `<div class="vphead"><b>${esc(word)}</b>
+      <select class="vpsel" title="换个视频看">${vs.map((o, j) => `<option value="${j}"${j === i ? " selected" : ""}>${esc(o.label)}${o.approx ? "（约）" : ""}</option>`).join("")}</select>
+      <a class="vpout" href="${esc(v.url)}" target="_blank" rel="noopener" title="去 B 站看（登录后能看高清）">B 站 ↗</a>
+      <button class="vpx" title="关闭（Esc）">✕</button></div>
+    <div class="vpbox"><iframe src="${esc(Video.embed(v))}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen scrolling="no"></iframe></div>`;
+  vp._vs = vs; vp._w = word;
+  document.body.classList.add("vp-open");
+}
+function closeVideo() { if (vp) { vp.remove(); vp = null; } document.body.classList.remove("vp-open"); }
+document.addEventListener("click", e => {
+  const t = e.target; if (!t.closest) return;
+  const a = t.closest("a[data-vi]");
+  if (a) {
+    if (e.button || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;   // 想在新标签页开的照旧
+    const host = a.closest("[data-vs]");
+    e.preventDefault(); e.stopPropagation();   // 也不让复习卡、列表行的点击处理收到
+    openVideo(JSON.parse(host.dataset.vs), +a.dataset.vi, host.dataset.vw);
+    return;
+  }
+  if (vp && t.closest(".vpx")) closeVideo();
+}, true);
+document.addEventListener("change", e => { if (vp && e.target.classList.contains("vpsel")) openVideo(vp._vs, +e.target.value, vp._w); });
+/* Esc 先关播放窗（在捕获阶段截住，复习页的 Esc 不会同时触发） */
+addEventListener("keydown", e => { if (e.key === "Escape" && vp) { closeVideo(); e.preventDefault(); e.stopImmediatePropagation(); } }, true);
 /* 「换」菜单：点别处、点菜单里的链接、按 Esc 都收起来（点「换」自己交给 details 原生处理） */
 document.addEventListener("click", e => {
   const t = e.target; if (!t.closest) return;
@@ -229,7 +264,7 @@ function cardHTML(e) {
     <div class="head">
       <span class="no">${String(e.no).padStart(2, "0")}</span><span class="word">${esc(e.word)}</span>
       ${e.prons.length === 1 ? `<span class="ipa">${esc(e.prons[0].ipa)}</span>` : ""}
-      <button class="spk" data-say="${esc(e.word)}" title="读单词">🔊</button>${videoHTML(VIDEO, e.no)}
+      <button class="spk" data-say="${esc(e.word)}" title="读单词">🔊</button>${videoHTML(VIDEO, e.no, false, e.word)}
       <span class="freq" title="考频 ${e.freq}/3">${flames(e.freq)}</span>
       <button class="knowBtn">${known.has(e.word) ? "✓ 已会" : "标为已会"}</button>
     </div>

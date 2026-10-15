@@ -7,8 +7,10 @@
 "use strict";
 const Video = (() => {
   const url = (bv, p, t) => `https://www.bilibili.com/video/${encodeURIComponent(bv)}/?p=${p}&t=${t}`;
+  /* 页内播放用的 B 站嵌入播放器（o = options 里的一项）：自动播放、关弹幕；没登录时画质 360p */
+  const embed = o => `https://player.bilibili.com/player.html?bvid=${encodeURIComponent(o.bv)}&p=${o.p}&t=${o.t}&autoplay=1&danmaku=0&high_quality=1`;
 
-  /* 这个词条能看的视频，按优先级：[{id, label, url, approx}]。下架的、这个视频里没有这个词的跳过；没有数据返回 [] */
+  /* 这个词条能看的视频，按优先级：[{id, label, url, approx, bv, p, t}]。下架的、这个视频里没有这个词的跳过；没有数据返回 [] */
   function options(data, no) {
     const out = [];
     if (!data || !Array.isArray(data.sources) || !data.entries || no == null) return out;
@@ -18,7 +20,8 @@ const Video = (() => {
       if (!s || s.alive === false || !Object.hasOwn(hit, s.id)) continue;
       const [p, t, approx] = Array.isArray(hit[s.id]) ? hit[s.id] : [];
       if (!Number.isFinite(p) || !Number.isFinite(t) || !s.bv) continue;
-      out.push({id: s.id, label: s.label || s.id, url: url(s.bv, p, Math.max(0, Math.floor(t))), approx: !!approx});
+      const sec = Math.max(0, Math.floor(t));
+      out.push({id: s.id, label: s.label || s.id, url: url(s.bv, p, sec), approx: !!approx, bv: s.bv, p, t: sec});
     }
     return out;
   }
@@ -31,6 +34,6 @@ const Video = (() => {
     return n == null ? null : n;
   }
 
-  return {url, options, noOf};
+  return {url, embed, options, noOf};
 })();
 if (typeof module === "object" && module.exports) module.exports = Video;

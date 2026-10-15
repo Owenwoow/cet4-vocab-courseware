@@ -235,7 +235,7 @@ const Study = (() => {
     `<div class="dsense">${e.prons.length > 1 && i === 0 ? `<span class="ipa">${esc(p.ipa)}</span>` : ""}<span class="pos">${esc(s.pos)}</span>${meanHTML(s.mean)}</div>`).join("")).join("");
   const ipaOf = e => e.prons.map(p => p.ipa).join(" ");
   /* 讲解视频按钮（app.js 的 videoHTML）：x.video 是词条所在那课的视频数据；扩展词用主词条的号，逐词释义的生词不在书里，没有 */
-  const videoOf = (x, mini) => videoHTML(x.video, Video.noOf(x.e), mini);
+  const videoOf = (x, mini) => videoHTML(x.video, Video.noOf(x.e), mini, x.word);
   /* 生词：遇见它的那句例句，生词高亮，可朗读 */
   const meetHTML = x => x.src ? `<div class="ex meet"><div class="exlab">遇见 · ${lesTitle(x.src.lid)} ${esc(x.src.entry)} 的例句</div>
     <div class="sent" data-lid="${x.src.lid}" data-src="${esc(x.src.entry)}">${sentenceHTML(x.src.ex.en, x.card.ph ? [] : [x.src.x], noteOf(x.src.notes, x.src.ex.en), x.card.ph ? x.card.w : "")}</div><div class="dzh">${esc(x.src.ex.zh)}</div>${Sent.anBlock(noteOf(x.src.notes, x.src.ex.en), x.src.ex.zh, x.src.ex.en, x.card.ph ? [] : [x.src.x], x.card.ph ? x.card.w : "")}

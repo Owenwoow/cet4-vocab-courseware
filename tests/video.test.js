@@ -27,7 +27,7 @@ test("链接：BV、分 P、秒拼成 B 站地址", () => {
 test("按 sources 的顺序给出，第一个就是优先级最高的", () => {
   const o = Video.options(data(), 1);
   assert.deepEqual(o.map(x => x.id), ["jj1", "qc1", "qc3"]);
-  assert.deepEqual(o[0], {id: "jj1", label: "精讲带背 · 晓艳教英语", url: "https://www.bilibili.com/video/BV1FTPLzBEnj/?p=2&t=23", approx: false});
+  assert.deepEqual(o[0], {id: "jj1", label: "精讲带背 · 晓艳教英语", url: "https://www.bilibili.com/video/BV1FTPLzBEnj/?p=2&t=23", approx: false, bv: "BV1FTPLzBEnj", p: 2, t: 23});
   assert.equal(o[1].url, "https://www.bilibili.com/video/BV1Vkah6oEVo/?p=1&t=1402");
 });
 
@@ -97,4 +97,9 @@ test("词条号：书上词条用自己的，扩展词用主词条的，逐词�
   assert.equal(Video.noOf({word: "found", gloss: true, extOf: {no: 3}}), null);
   assert.equal(Video.noOf({word: "x"}), null);
   assert.equal(Video.noOf(null), null);
+});
+
+test("页内播放：嵌入播放器地址带 BV、分 P、秒，自动播放、关弹幕", () => {
+  const o = Video.options(data(), 1)[1];
+  assert.equal(Video.embed(o), "https://player.bilibili.com/player.html?bvid=BV1Vkah6oEVo&p=1&t=1402&autoplay=1&danmaku=0&high_quality=1");
 });
