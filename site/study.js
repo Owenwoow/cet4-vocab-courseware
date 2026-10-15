@@ -153,7 +153,8 @@ const Study = (() => {
       fetchJSON(`data/roots/${id}.json`).catch(() => ({words: {}})),
       fetchJSON(`data/gloss/${id}.json`).catch(() => ({words: {}})),
       fetchJSON(`data/notes/${id}.json`).catch(() => ({sents: {}})),
-    ]).then(([les, aud, rt, gl, nt]) => {
+      fetchJSON(`data/video/${id}.json`).catch(() => null),   // 讲解视频跳转（规则见 video.js），没有这一课的数据就是 null
+    ]).then(([les, aud, rt, gl, nt, vd]) => {
       const by = new Map(), ext = new Map(), map = new Map();   // map：查词用，和 app.js 的 WORDMAP 一样
       for (const g of les.groups) for (const e of g.entries) {
         e.root = rt.words?.[e.word]; if (!by.has(e.word)) by.set(e.word, {e, g});
@@ -161,7 +162,7 @@ const Study = (() => {
         map.set(e.word, {word: e.word, senses: e.prons.flatMap(p => p.senses), ipa: e.prons.map(p => p.ipa).join(" "), no: e.no, entry: e, ext: false});
         for (const x of e.ext || []) if (!map.has(x.word)) map.set(x.word, {word: x.word, senses: x.senses, ipa: x.ipa, no: e.no, entry: e, ext: true});
       }
-      return {les, aud, by, ext, map, gloss: gl.words || {}, notes: {sents: nt.sents || {}}};   // notes：例句词组与语法解析（书外补充）
+      return {les, aud, by, ext, map, gloss: gl.words || {}, notes: {sents: nt.sents || {}}, video: vd};   // notes：例句词组与语法解析（书外补充）
     }).catch(err => { cache.delete(id); throw err; }));   // 失败的不缓存，下次重试
     return cache.get(id);
   }
@@ -175,7 +176,7 @@ const Study = (() => {
     return items.map(x => {
       if (x.vocab) return resolveVocab(x, ls);
       const L2 = ls[x.card.k], hit = L2.by.get(x.word);
-      return hit && {...x, lid: x.card.k, e: hit.e, grp: hit.g, aud: L2.aud, notes: L2.notes};
+      return hit && {...x, lid: x.card.k, e: hit.e, grp: hit.g, aud: L2.aud, notes: L2.notes, video: L2.video};
     }).filter(Boolean);
   }
   /* 生词：书上有这个词条就用书上的完整内容，是扩展词就用扩展词的释义，都不是就用逐词释义；
@@ -189,7 +190,7 @@ const Study = (() => {
     if (main) { e = main.e; grp = main.g; aud = B.aud; notes = B.notes; }
     else if (ext) { e = {word: c.w, prons: [{ipa: ext.x.ipa, senses: ext.x.senses}], freq: 0, extOf: ext.e}; grp = ext.g; aud = B.aud; }
     else e = {word: c.w, prons: [{ipa: c.p || "", senses: Vocab.senses(c.m)}], freq: 0, gloss: true, ph: !!c.ph};   // ph：释义来自例句词组（notes）
-    return {...x, lid: c.bk ? c.bk[0] : c.k, e, grp, aud, notes, src, nb: true};   // nb：按生词显示（书上范围里的生词仍按词群显示）
+    return {...x, lid: c.bk ? c.bk[0] : c.k, e, grp, aud, notes, src, nb: true, video: main || ext ? B.video : null};   // nb：按生词显示（书上范围里的生词仍按词群显示）；video：书上有这个词才有视频
   }
   /* 按书上的课 / 单元取词（包括还没记为学过的；没记过的只能看，不排复习） */
   async function bookItems(sc) {
@@ -201,7 +202,7 @@ const Study = (() => {
       for (const g of L2.les.groups) for (const e of g.entries) {
         if (known.has(e.word)) continue;
         const c = Sync.get("srs:" + e.word, 0), v = !c && vocabGet(e.word);   // 还没学、但在生词本里的，评分算进生词卡
-        out.push({word: e.word, card: c || v || null, vocab: !!v, freq: e.freq, order: (+u) * 1e6 + L2.les.lesson * 1e4 + g.no * 100 + e.no, lid: id, e, grp: g, aud: L2.aud, notes: L2.notes});
+        out.push({word: e.word, card: c || v || null, vocab: !!v, freq: e.freq, order: (+u) * 1e6 + L2.les.lesson * 1e4 + g.no * 100 + e.no, lid: id, e, grp: g, aud: L2.aud, notes: L2.notes, video: L2.video});
       }
     }
     return out;
@@ -233,6 +234,8 @@ const Study = (() => {
   const senseHTML = e => e.prons.map(p => p.senses.map((s, i) =>
     `<div class="dsense">${e.prons.length > 1 && i === 0 ? `<span class="ipa">${esc(p.ipa)}</span>` : ""}<span class="pos">${esc(s.pos)}</span>${meanHTML(s.mean)}</div>`).join("")).join("");
   const ipaOf = e => e.prons.map(p => p.ipa).join(" ");
+  /* 讲解视频按钮（app.js 的 videoHTML）：x.video 是词条所在那课的视频数据；扩展词用主词条的号，逐词释义的生词不在书里，没有 */
+  const videoOf = (x, mini) => videoHTML(x.video, Video.noOf(x.e), mini);
   /* 生词：遇见它的那句例句，生词高亮，可朗读 */
   const meetHTML = x => x.src ? `<div class="ex meet"><div class="exlab">遇见 · ${lesTitle(x.src.lid)} ${esc(x.src.entry)} 的例句</div>
     <div class="sent" data-lid="${x.src.lid}" data-src="${esc(x.src.entry)}">${sentenceHTML(x.src.ex.en, x.card.ph ? [] : [x.src.x], noteOf(x.src.notes, x.src.ex.en), x.card.ph ? x.card.w : "")}</div><div class="dzh">${esc(x.src.ex.zh)}</div>${Sent.anBlock(noteOf(x.src.notes, x.src.ex.en), x.src.ex.zh, x.src.ex.en, x.card.ph ? [] : [x.src.x], x.card.ph ? x.card.w : "")}
@@ -425,7 +428,7 @@ const Study = (() => {
       const ms = x.e.prons.flatMap(p => p.senses);
       const lv = lvOf(x);
       return `${head}<div class="lrow${lv >= 0 ? " lv" + lv : ""}" data-w="${esc(x.word)}">${lv >= 0 ? lvDot(lv) : ""}<span class="lw" data-say="1">${esc(x.word)}</span><span class="ipa">${esc(ipaOf(x.e))}</span>${fl(x.nb ? x.e.freq || 0 : x.freq)}
-        ${x.vocab && !vpage ? `<span class="vt">生词</span>` : ""}${x.card && x.card.l ? `<span class="lapse" title="忘过 ${x.card.l} 次">✗${x.card.l}</span>` : ""}
+        ${x.vocab && !vpage ? `<span class="vt">生词</span>` : ""}${x.card && x.card.l ? `<span class="lapse" title="忘过 ${x.card.l} 次">✗${x.card.l}</span>` : ""}${videoOf(x, true)}
         <div class="lm">${ms.length ? ms.map(s => `<span class="pos">${esc(s.pos)}</span>${meanHTML(s.mean)}`).join("　") : "（没有现成释义，看例句）"}${x.e.gloss ? `<span class="src add">补充</span>` : ""}</div>${from}</div>`;
     }).join("");
     view().innerHTML = `<div class="listv${hide ? " hide" : ""}${fold ? " fold" : ""}">
@@ -595,7 +598,7 @@ const Study = (() => {
   }
 
   /* 卡片背面：释义、记忆法、词根、例句、扩展词、生词出处（翻卡和答错后都用） */
-  const backHTML = x => `<div class="dback">${senseHTML(x.e)}${x.e.gloss ? `<div class="dnote">${x.e.prons[0].senses.length ? "" : "没有现成释义，看例句 · "}<span class="src add">补充</span> ${x.e.ph ? "例句词组释义" : "例句逐词释义"}</div>` : ""}
+  const backHTML = x => `<div class="dback">${videoOf(x) ? `<div class="dvid">${videoOf(x)}</div>` : ""}${senseHTML(x.e)}${x.e.gloss ? `<div class="dnote">${x.e.prons[0].senses.length ? "" : "没有现成释义，看例句 · "}<span class="src add">补充</span> ${x.e.ph ? "例句词组释义" : "例句逐词释义"}</div>` : ""}
     ${x.e.extOf ? `<div class="dnote">书上 #${x.e.extOf.no} ${esc(x.e.extOf.word)} 的扩展词</div>` : ""}
     ${x.e.tip ? `<div class="tip"><span class="tag ${esc(x.e.tip.type)}">${esc(x.e.tip.type)}</span>${esc(x.e.tip.text)}</div>` : ""}
     ${x.e.root ? `<div class="tip root"><span class="tag 构词">词根</span>${esc(x.e.root)}<span class="src add">补充</span></div>` : ""}

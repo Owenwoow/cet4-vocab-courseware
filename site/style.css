@@ -193,6 +193,7 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .vbtn.approx{border-style:dashed}
 @media (hover:hover){.vbtn:hover{background:var(--blue);color:#fff}}
 .vbtn.mini{align-self:center;font-size:11px;padding:0 7px;line-height:1.6}
+.lrow .vbtn.mini{margin-left:auto}
 .vmore{position:relative}
 .vmore summary{list-style:none;cursor:pointer;user-select:none;font-size:12px;padding:3px 8px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--sub)}
 .vmore summary::-webkit-details-marker{display:none}
