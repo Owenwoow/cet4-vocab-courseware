@@ -7,7 +7,8 @@
      s=2 → 上周今天：a+7
      s=3 → 上上周：a+14 起第一个周日
      s≥4 → 按熟练度：1～2 级 7 天、3 级 14 天、4 级 21 天、5 级 30 天
-   记得 → 进下一站；模糊 → 站数不变，s≤3 时 2 天后再来，s≥4 时取熟练度间隔的一半（至少 2 天）；忘了 → 从今天重新开始。
+   记得 → 进下一站；模糊 → 也进下一站（算过关但费劲：打断连对、不升题型，s≥4 时熟练度落到 2 级即 7 天）；忘了 → 从今天重新开始。
+   选中易混干扰项（混淆，opt.hold）其实是答错：记 m，站数不变，2 天后再来。2026-10-15 前模糊也是这样，见 docs/plans/2026-10-15-fuzzy-pass.md。
    还没到期就复习（途中看、睡前、周总结多刷）：记得 / 模糊不改计划也不记进熟练度，忘了照样重来。
    考前封顶：12-05 前复习、到期日又晚于 12-09 的，改到 12-05～12-09 之间，按词分散到各天；窗口里及之后复习的不封顶。
 
@@ -25,7 +26,9 @@
 const SRS = (() => {
   const DAY = 86400000, CUTOFF_H = 4;
   const EXAM = "2026-12-12";                          // 考试日；换六级只改这里
-  const H_LEN = 6, SLOW_MS = 5000;
+  const H_LEN = 6;
+  /* 选择题答对但超过这个时限算模糊（毫秒），按题型：听音从读音第一次播完算起，其余从出题算起；词组卡按看词选义 */
+  const SLOW_MS = {mean: 8000, listen: 8000, reverse: 10000, cloze: 15000};
   const LV_DAYS = [7, 7, 7, 14, 21, 30];              // s≥4 时各熟练度的间隔
   const TYPE = {MEAN: 0, LISTEN: 1, CONTEXT: 2, SPELL: 3, QUICK: 4};
   const pad = n => String(n).padStart(2, "0");
@@ -87,8 +90,8 @@ const SRS = (() => {
     return Math.min(want, (c.q || 0) + 1);
   }
 
-  /* 判分：选择题看对错和用时；拼写全对 g、错一个字母 m */
-  const gradeChoice = (ok, ms) => (!ok ? "f" : ms > SLOW_MS ? "m" : "g");
+  /* 判分：选择题看对错和用时（kind 是题型 mean / listen / reverse / cloze，时限见 SLOW_MS）；拼写全对 g、错一个字母 m */
+  const gradeChoice = (ok, ms, kind = "mean") => (!ok ? "f" : ms > (SLOW_MS[kind] || SLOW_MS.mean) ? "m" : "g");
   function editDist(a, b) {
     let prev = Array.from({length: b.length + 1}, (_, j) => j);
     for (let i = 1; i <= a.length; i++) {
@@ -108,7 +111,8 @@ const SRS = (() => {
   const isDue = (c, t) => c.d <= t;
 
   /* 打分：g 记得 / m 模糊 / f 忘了。返回新卡，不改原卡；t 记下最近一次复习的日期。
-     opt.type：这次的题型（第一遍答对时更新 q）；opt.key：考前封顶时用来分散日期，一般传单词；opt.exam：考试日（默认 EXAM） */
+     opt.type：这次的题型（第一遍答对时更新 q）；opt.key：考前封顶时用来分散日期，一般传单词；opt.exam：考试日（默认 EXAM）；
+     opt.hold：选中易混干扰项（混淆），r 传 m，站数不变、2 天后再来 */
   function rate(c, r, t, opt = {}) {
     const key = opt.key ?? `${c.k}|${c.g}|${c.o}|${c.w}`;
     const n = {...c, r, n: (c.n || 0) + 1, t};
@@ -116,19 +120,16 @@ const SRS = (() => {
     if (r === "f") return {...n, a: t, s: 0, d: add(t, 1), l: (c.l || 0) + 1, h, v, z: 0};
     if (!isDue(c, t)) return n;                     // 提前复习：不改计划，也不记进熟练度（v 不加）
     const q = r === "g" && opt.type >= 0 && opt.type <= TYPE.SPELL ? Math.max(c.q || 0, opt.type) : c.q || 0;
-    if (r === "m") {
-      const d = c.s >= 4 ? add(t, Math.max(2, Math.floor(LV_DAYS[level({...n, h, v, q})] / 2))) : add(t, 2);
-      return {...n, h, v, q, d: examCap(d, t, key, opt.exam || EXAM)};
-    }
-    const s = c.s + 1, nc = {...n, h, v, q, s};
+    if (opt.hold) return {...n, h, v, q, d: examCap(add(t, 2), t, key, opt.exam || EXAM)};
+    const s = c.s + 1, nc = {...n, h, v, q, s};       // 记得、模糊都进下一站；模糊靠 h 打断连对来降熟练度
     return {...nc, d: examCap(stationDue(c.a, s, t, level(nc)), t, key, opt.exam || EXAM)};
   }
 
   /* 斩：直接 5 级，30 天后（或考前窗口）抽查；抽查答错照常重来并清掉 z */
   const chop = (c, t, key = c.w || "", exam = EXAM) => ({...c, z: 1, s: Math.max(c.s, 4), d: examCap(add(t, LV_DAYS[5]), t, key, exam)});
 
-  /* 难词本：最近一次是忘了 / 模糊，或忘过不止一次 */
-  const isHard = c => c.r === "f" || c.r === "m" || (c.l || 0) >= 2;
+  /* 难词本：最近一次是忘了，或忘过不止一次，或还有没分清的易混词（cf） */
+  const isHard = c => c.r === "f" || (c.l || 0) >= 2 || !!(c.cf && c.cf.length);
 
   /* 今天要复习的：拖得最久的先来，同一天到期的火苗多的先来，再按课本顺序 */
   function dueList(items, t) {
