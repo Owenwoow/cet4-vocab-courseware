@@ -7,7 +7,9 @@ import json
 import re
 import sys
 
-from config import DATA, LESSONS
+from config import DATA, LESSONS, ROOT
+
+VIDEO_SOURCES = ROOT / "pipeline" / "video_sources.json"
 
 POS = {"n.", "v.", "adj.", "adv.", "prep.", "conj.", "pron.", "num.", "art.",
        "int.", "aux.", "modal v.", "phr.", "n. & v.", "v. & n.", "adj. & adv.", "adv. & adj."}
@@ -143,6 +145,7 @@ def validate(path):
             r.warn(gw, f"导图词 {n} 在本词群找不到词条/扩展词")
     check_roots(r, d)
     check_notes(r, d)
+    check_video(r, d)
     return r, len(seen)
 
 
@@ -268,6 +271,77 @@ def check_roots(r, data):
             r.err(where, f"书上已是「{tips[word]}」法，不需要补词根")
         if not isinstance(text, str) or "→" not in text:
             r.err(where, f"格式应为「词根（含义）+ … → 词义」：{text!r}")
+
+
+_video_table = None
+
+
+def video_table():
+    """pipeline/video_sources.json：{视频id: 视频}（只读一次）"""
+    global _video_table
+    if _video_table is None:
+        _video_table = {v["id"]: v for v in json.loads(VIDEO_SOURCES.read_text(encoding="utf-8"))}
+    return _video_table
+
+
+def check_video(r, data):
+    """讲解视频时间点（site/data/video/，video_align.py 生成）：
+    词条号都在本课；视频 id 在视频表里；分 P 在该视频用到的范围内；秒数在 0 ~ 该分 P 时长；
+    同一视频内 (分P, 秒) 按词条顺序不减"""
+    f = DATA / "video" / f"{data['id']}.json"
+    if not f.exists():
+        return
+    d = json.loads(f.read_text(encoding="utf-8"))
+    table = video_table()
+    if d.get("lesson") != data["id"]:
+        r.err("视频", f"lesson 应为 {data['id']}，实际 {d.get('lesson')!r}")
+    ids = []
+    for s in d.get("sources", []):
+        v = table.get(s.get("id"))
+        if not v:
+            r.err("视频", f"sources 里的 {s.get('id')!r} 不在视频表 video_sources.json 里")
+            continue
+        if s.get("bv") != v["bv"]:
+            r.err("视频", f"{s['id']} 的 bv 应为 {v['bv']}，实际 {s.get('bv')!r}")
+        if not isinstance(s.get("alive"), bool):
+            r.err("视频", f"{s['id']} 的 alive 应为 true/false")
+        ids.append(s["id"])
+    nos = [e["no"] for g in data["groups"] for e in g["entries"]]
+    entries = d.get("entries", {})
+    for no in entries:
+        if not no.isdigit() or int(no) not in nos:
+            r.err("视频", f"词条号 {no!r} 不在本课")
+    last = {}
+    for no in nos:
+        e = entries.get(str(no))
+        if not e:
+            r.warn("视频", f"#{no} 没有任何视频")
+            continue
+        for vid, val in e.items():
+            where = f"视频 #{no} {vid}"
+            if vid not in ids:
+                r.err(where, "不在本课的 sources 里")
+                continue
+            v = table[vid]
+            ok = (isinstance(val, list) and len(val) in (2, 3) and all(type(x) is int for x in val)
+                  and (len(val) == 2 or val[2] == 1))
+            if not ok:
+                r.err(where, f"应为 [分P, 秒] 或 [分P, 秒, 1]，实际 {val!r}")
+                continue
+            p, sec = val[:2]
+            if not v["pages"][0] <= p <= v["pages"][1]:
+                r.err(where, f"分 P {p} 不在该视频用到的范围 P{v['pages'][0]}–P{v['pages'][1]}")
+                continue
+            dur = v.get("durations", {}).get(str(p))
+            if dur is None:
+                r.err(where, f"视频表里没有 P{p} 的时长（跑一次 video_align.py 会补上）")
+                continue
+            if not 0 <= sec <= dur:
+                r.err(where, f"秒数 {sec} 超出 0 ~ {dur}")
+                continue
+            if (p, sec) < last.get(vid, (0, 0)):
+                r.err(where, f"(P{p}, {sec}s) 早于前一个词条的 (P{last[vid][0]}, {last[vid][1]}s)，应按词条顺序不减")
+            last[vid] = (p, sec)
 
 
 def main(ids):
