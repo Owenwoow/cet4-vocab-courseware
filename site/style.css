@@ -187,6 +187,24 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .freq i{font-style:normal;opacity:.22}
 .knowBtn{align-self:center;font-size:12px;padding:3px 9px}
 .card.known .knowBtn{background:var(--ok-soft);border-color:var(--ok);color:var(--ok)}
+/* 讲解视频：词头里的「▶ 视频」+「换」菜单（课文页、复习卡背面 .dvid），列表页每行一个小 ▶；约 = 时间点是推算的，虚线边 */
+.vid{display:inline-flex;align-items:center;gap:4px;align-self:center}
+.vbtn{display:inline-block;font-size:12px;padding:3px 9px;border:1px solid var(--blue);border-radius:8px;color:var(--blue);background:var(--blue-soft);text-decoration:none;white-space:nowrap}
+.vbtn.approx{border-style:dashed}
+@media (hover:hover){.vbtn:hover{background:var(--blue);color:#fff}}
+.vbtn.mini{align-self:center;font-size:11px;padding:0 7px;line-height:1.6}
+.vmore{position:relative}
+.vmore summary{list-style:none;cursor:pointer;user-select:none;font-size:12px;padding:3px 8px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--sub)}
+.vmore summary::-webkit-details-marker{display:none}
+.vmore[open] summary{border-color:var(--blue);color:var(--blue)}
+@media (hover:hover){.vmore summary:hover{border-color:var(--blue);color:var(--blue)}}
+.vmenu{position:absolute;z-index:20;top:calc(100% + 4px);left:0;width:max-content;max-width:min(320px,80vw);background:var(--pop);border:1px solid var(--line);border-radius:10px;box-shadow:0 6px 24px rgba(0,0,0,.18);padding:4px 0;font-size:13px}
+.vmenu a{display:block;padding:6px 12px;color:var(--ink);text-decoration:none;line-height:1.4}
+@media (hover:hover){.vmenu a:hover{background:var(--accent-soft)}}
+.vmenu small{margin-left:6px;font-size:11px;color:var(--sub);border:1px solid var(--line2);border-radius:8px;padding:0 5px}
+.dvid{position:relative;display:flex;justify-content:flex-end;margin:-4px 0 6px}
+.dvid .vmenu{left:auto;right:0}
+@media (max-width:600px){.head,.dvid{position:relative}.vmore{position:static}.head .vmenu{left:0}}
 .senses{margin:8px 0 4px}
 .sense{font-weight:600}
 .sense .ipa{font-weight:400;margin-right:6px}

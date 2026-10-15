@@ -35,6 +35,7 @@ darkMQ.addEventListener("change", applySettings);
 
 /* ---------- 状态 ---------- */
 let BOOK = null, L = null, GLOSS = {}, NOTES = {sents: {}}, AUD = {w: {}, s: {}, z: {}, voices: []};   // NOTES：例句词组与语法解析（书外补充）
+let VIDEO = null;   // 本课的讲解视频跳转数据（data/video，规则见 video.js），没有这一课的数据就是 null
 const WORDMAP = new Map();   // 本课词条/扩展词 → {word, senses, no, ext}
 /* no-cache：每次向服务器确认，重新生成数据后不会读到旧缓存 */
 const fetchJSON = url => fetch(url, {cache: "no-cache"}).then(r => { if (!r.ok) throw new Error(url + " " + r.status); return r.json(); });
@@ -50,6 +51,28 @@ const findWord = (w, map = WORDMAP) => { for (const k of lemmaCandidates(w.toLow
 /* 例句切成可点的单词，重点词（可能是多词短语）加 key 样式；note = 这句的 notes（词组标注、语法解析），见 sent.js */
 const sentenceHTML = (en, keys, note, hi) => Sent.html(en, keys, note, hi);
 const noteOf = (notes, en) => (notes && notes.sents && notes.sents[en]) || null;
+
+/* ---------- 讲解视频：「▶ 视频」按钮，课文页、复习卡背面、列表页共用 ----------
+   data = 这一课的视频数据，no = 词条号（video.js 的 noOf 取）；这个词没有可用的视频就返回空串，调用的地方不用判断。
+   第一个可用视频是主按钮，新标签页打开 B 站；「约」= 时间点是推算的，可能差几秒。还有别的可用视频，旁边多一个「换」菜单；
+   mini = 列表页每行一个小 ▶，不带菜单 */
+function videoHTML(data, no, mini) {
+  const vs = Video.options(data, no);
+  if (!vs.length) return "";
+  const [v, ...rest] = vs, open = ' target="_blank" rel="noopener"', ap = v.approx ? "（约）" : "";
+  const tip = `${v.label}${v.approx ? "，时间点是推算的，可能差几秒" : ""}`;
+  if (mini) return `<a class="vbtn mini${v.approx ? " approx" : ""}" href="${esc(v.url)}"${open} title="${esc(`B 站讲解视频 · ${tip}`)}">▶</a>`;
+  return `<span class="vid"><a class="vbtn${v.approx ? " approx" : ""}" href="${esc(v.url)}"${open} title="${esc(`B 站讲解视频 · ${tip}`)}">▶ 视频${ap}</a>` +
+    (rest.length ? `<details class="vmore"><summary title="换个视频看（共 ${vs.length} 个）">换</summary><div class="vmenu">${
+      rest.map(r => `<a href="${esc(r.url)}"${open}>${esc(r.label)}${r.approx ? `<small>约</small>` : ""}</a>`).join("")}</div></details>` : "") + `</span>`;
+}
+/* 「换」菜单：点别处、点菜单里的链接、按 Esc 都收起来（点「换」自己交给 details 原生处理） */
+document.addEventListener("click", e => {
+  const t = e.target; if (!t.closest) return;
+  const keep = t.closest("summary") && t.closest(".vmore");
+  $$(".vmore[open]").forEach(d => { if (d !== keep) d.open = false; });
+}, true);
+document.addEventListener("keydown", e => { if (e.key === "Escape") $$(".vmore[open]").forEach(d => { d.open = false; }); });
 
 /* ---------- 音频：预生成 mp3 优先，缺失时退回浏览器语音 ---------- */
 const player = new Audio();
@@ -206,7 +229,7 @@ function cardHTML(e) {
     <div class="head">
       <span class="no">${String(e.no).padStart(2, "0")}</span><span class="word">${esc(e.word)}</span>
       ${e.prons.length === 1 ? `<span class="ipa">${esc(e.prons[0].ipa)}</span>` : ""}
-      <button class="spk" data-say="${esc(e.word)}" title="读单词">🔊</button>
+      <button class="spk" data-say="${esc(e.word)}" title="读单词">🔊</button>${videoHTML(VIDEO, e.no)}
       <span class="freq" title="考频 ${e.freq}/3">${flames(e.freq)}</span>
       <button class="knowBtn">${known.has(e.word) ? "✓ 已会" : "标为已会"}</button>
     </div>
@@ -254,14 +277,15 @@ function updateProgress() {
 async function loadLesson(id) {
   if (L && L.id === id) return;
   stopMarathon();
-  const [les, gl, au, rt, nt] = await Promise.all([
+  const [les, gl, au, rt, nt, vd] = await Promise.all([
     fetchJSON(`data/lessons/${id}.json`),
     fetchJSON(`data/gloss/${id}.json`).catch(() => ({words: {}})),
     fetchJSON(`data/audio/${id}.json`).catch(() => ({w: {}, s: {}, z: {}, m: {}, voices: []})),
     fetchJSON(`data/roots/${id}.json`).catch(() => ({words: {}})),
     fetchJSON(`data/notes/${id}.json`).catch(() => ({sents: {}})),
+    fetchJSON(`data/video/${id}.json`).catch(() => null),   // 讲解视频跳转：没有这一课的数据就不显示按钮
   ]);
-  L = les; GLOSS = gl.words || {}; AUD = au; NOTES = {sents: nt.sents || {}};
+  L = les; GLOSS = gl.words || {}; AUD = au; NOTES = {sents: nt.sents || {}}; VIDEO = vd;
   for (const g of L.groups) for (const e of g.entries) e.root = rt.words?.[e.word];   // 词根法（书外补充）
   WORDMAP.clear();
   for (const g of L.groups) for (const e of g.entries) {
