@@ -15,10 +15,10 @@ loadKnown();
 const VOICE_NAMES = {ava: "Ava", andrew: "Andrew", sonia: "Sonia", ryan: "Ryan"};
 const VOICE_DESC = {ava: "美式 · 女声", andrew: "美式 · 男声", sonia: "英式 · 女声", ryan: "英式 · 男声"};
 const DEFAULTS = {voice: "ava", rate: 1, mask: false, hideKnown: false, scope: "group", withZh: true, loop: false, theme: "auto",
-  examDate: "2026-12-12", dailyCap: 120, autoSay: true, drillOrder: "course", drillMode: "quiz", phLine: true};
+  examDate: "2026-12-12", dailyCap: 120, autoSay: true, drillOrder: "course", drillMode: "quiz", phLine: true, videoPrefer: "精讲带背"};
 const S = {...DEFAULTS};
 const loadSettings = () => Object.assign(S, DEFAULTS, Object.fromEntries(Sync.entries("set:")));
-function setS(k, v) { S[k] = v; Sync.set("set:" + k, v); applySettings(); }
+function setS(k, v) { S[k] = v; Sync.set("set:" + k, v); applySettings(); if (k === "videoPrefer" && L) renderLesson(); }   // 视频按钮按偏好重画（复习页每次进入都会重画）
 loadSettings();
 const darkMQ = matchMedia("(prefers-color-scheme: dark)");
 function applySettings() {
@@ -52,27 +52,104 @@ const findWord = (w, map = WORDMAP) => { for (const k of lemmaCandidates(w.toLow
 const sentenceHTML = (en, keys, note, hi) => Sent.html(en, keys, note, hi);
 const noteOf = (notes, en) => (notes && notes.sents && notes.sents[en]) || null;
 
-/* ---------- 讲解视频：「▶ 视频」按钮，课文页、复习卡背面、列表页共用 ----------
+/* ---------- 讲解视频按钮：课文页词头、复习卡背面、列表页共用 ----------
    data = 这一课的视频数据，no = 词条号（video.js 的 noOf 取）；这个词没有可用的视频就返回空串，调用的地方不用判断。
-   第一个可用视频是主按钮，新标签页打开 B 站；「约」= 时间点是推算的，可能差几秒。还有别的可用视频，旁边多一个「换」菜单；
-   mini = 列表页每行一个小 ▶，不带菜单 */
-function videoHTML(data, no, mini) {
-  const vs = Video.options(data, no);
+   一个和 🔊 一样的圆形播放图标，点了在页面里播第一个可用的视频（openVideo），别的视频在播放窗里换；
+   「约」= 时间点是推算的，可能差几秒，图标外圈是虚线。sm = 列表页小一号；word = 播放窗标题上显示的词。
+   链接本身仍是 B 站地址：Ctrl / Shift / 中键点照旧在新标签页打开 */
+const PLAY_ICON = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 1.2v9.6L10.5 6z"/></svg>';
+function videoHTML(data, no, sm, word = "") {
+  const vs = Video.options(data, no, S.videoPrefer);
   if (!vs.length) return "";
-  const [v, ...rest] = vs, open = ' target="_blank" rel="noopener"', ap = v.approx ? "（约）" : "";
-  const tip = `${v.label}${v.approx ? "，时间点是推算的，可能差几秒" : ""}`;
-  if (mini) return `<a class="vbtn mini${v.approx ? " approx" : ""}" href="${esc(v.url)}"${open} title="${esc(`B 站讲解视频 · ${tip}`)}">▶</a>`;
-  return `<span class="vid"><a class="vbtn${v.approx ? " approx" : ""}" href="${esc(v.url)}"${open} title="${esc(`B 站讲解视频 · ${tip}`)}">▶ 视频${ap}</a>` +
-    (rest.length ? `<details class="vmore"><summary title="换个视频看（共 ${vs.length} 个）">换</summary><div class="vmenu">${
-      rest.map(r => `<a href="${esc(r.url)}"${open}>${esc(r.label)}${r.approx ? `<small>约</small>` : ""}</a>`).join("")}</div></details>` : "") + `</span>`;
+  const v = vs[0], tip = `看老师讲解${v.approx ? "（时间点是推算的，可能差几秒）" : ""} · ${v.label}${vs.length > 1 ? `，播放窗里可换另外 ${vs.length - 1} 个视频` : ""}`;
+  return `<a class="vbtn${sm ? " sm" : ""}${v.approx ? " approx" : ""}" href="${esc(v.url)}" target="_blank" rel="noopener" data-vi="0" data-vs="${esc(JSON.stringify(vs))}" data-vw="${esc(word)}" title="${esc(tip)}" aria-label="讲解视频">${PLAY_ICON}</a>`;
 }
-/* 「换」菜单：点别处、点菜单里的链接、按 Esc 都收起来（点「换」自己交给 details 原生处理） */
+
+/* ---------- 讲解视频页内播放：B 站嵌入播放器，电脑上是画中画式浮窗，手机贴在底部；不离开页面，看完 ✕ 掉接着背 ----------
+   没登录 B 站时嵌入播放器只有 360p，窗口里留一个「B 站 ↗」去 B 站看高清 */
+let vp = null;   // 播放窗，没开时是 null
+function openVideo(vs, i, word) {
+  const v = vs[i];
+  if (!v) return;
+  stopAll();   // 课件自己的朗读先停，免得两边一起出声
+  const fresh = !vp;
+  if (fresh) { vp = document.createElement("div"); vp.id = "vplayer"; document.body.append(vp); }
+  vp.innerHTML = `<div class="vphead" title="拖动移动，双击恢复默认大小和位置"><b>${esc(word)}</b>
+      <select class="vpsel" title="换个视频看">${vs.map((o, j) => `<option value="${j}"${j === i ? " selected" : ""}>${esc(o.label)}${o.approx ? "（约）" : ""}</option>`).join("")}</select>
+      <a class="vpout" href="${esc(v.url)}" target="_blank" rel="noopener" title="去 B 站看（登录后能看高清）">B 站 ↗</a>
+      <button class="vpx" title="关闭（Esc）">✕</button></div>
+    <div class="vpbox"><iframe src="${esc(Video.embed(v))}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen scrolling="no"></iframe></div>
+    ${["nw", "ne", "sw", "se"].map(c => `<i class="vpr" data-c="${c}" title="拖动缩放"></i>`).join("")}`;
+  vp._vs = vs; vp._w = word;
+  if (fresh) vpPlace(store.get("vpGeo", null));
+  document.body.classList.add("vp-open");
+}
+
+/* 播放窗的位置和大小（只在电脑上，手机交给 CSS 贴底）：拖标题栏移动，拖四个角缩放，画面保持 16:9；
+   整个窗口始终留在屏幕里，宽 280～1100px。g = {r, b, w}：离右边、下边的距离和宽度——按右下角记，
+   换个屏幕大小也还在原来那个角落。拖完记下来（vpGeo，走 Sync 同步），下次打开还在那儿；双击标题栏恢复默认 */
+const VP_MIN = 280, VP_MAX = 1100, VP_DEF = {r: 16, b: 16, w: 460};
+const vpNarrow = () => matchMedia("(max-width:600px)").matches;
+const vpHead = () => vp.querySelector(".vphead").offsetHeight + 2;   // 标题栏 + 上下边框
+function vpPlace(g) {
+  if (!vp) return;
+  if (vpNarrow()) { vp.style.cssText = ""; vp._g = null; return; }
+  g = g || VP_DEF;
+  const W = document.documentElement.clientWidth, H = document.documentElement.clientHeight, hd = vpHead();   // 不含滚动条
+  const w = Math.round(Math.max(VP_MIN, Math.min(g.w, VP_MAX, W, (H - hd) * 16 / 9)));
+  const h = Math.round(w * 9 / 16) + hd;
+  const r = Math.round(Math.max(0, Math.min(g.r, W - w))), b = Math.round(Math.max(0, Math.min(g.b, H - h)));
+  Object.assign(vp.style, {width: w + "px", right: r + "px", bottom: b + "px"});
+  vp._g = {r, b, w};
+}
+addEventListener("resize", () => vp && vpPlace(vp._g || store.get("vpGeo", null)));
+document.addEventListener("pointerdown", e => {
+  if (!vp || e.button || vpNarrow() || !vp.contains(e.target)) return;
+  const corner = e.target.closest(".vpr");
+  if (!corner && (!e.target.closest(".vphead") || e.target.closest("select, a, button"))) return;
+  e.preventDefault();
+  const g0 = {...vp._g}, x0 = e.clientX, y0 = e.clientY, W = document.documentElement.clientWidth, H = document.documentElement.clientHeight, hd = vpHead();
+  const left0 = W - g0.r - g0.w, top0 = H - g0.b - (Math.round(g0.w * 9 / 16) + hd);
+  const c = corner && corner.dataset.c, sx = c && c.includes("e") ? 1 : -1, sy = c && c.includes("s") ? 1 : -1;
+  const el = corner || e.target.closest(".vphead");
+  el.setPointerCapture(e.pointerId);
+  document.body.classList.add("vp-drag");   // 拖的时候播放器的 iframe 不接鼠标，不然一进画面就拖不动了
+  const move = ev => {
+    const dx = ev.clientX - x0, dy = ev.clientY - y0;
+    if (!c) { vpPlace({w: g0.w, r: g0.r - dx, b: g0.b - dy}); return; }
+    /* 缩放：对角固定不动，哪个方向拖得多就按哪个方向算宽度 */
+    const dw = Math.abs(dx) >= Math.abs(dy) * 16 / 9 ? sx * dx : sy * dy * 16 / 9;
+    const maxW = Math.min(sx > 0 ? W - left0 : W - g0.r, ((sy > 0 ? H - top0 : H - g0.b) - hd) * 16 / 9);
+    const w = Math.max(VP_MIN, Math.min(g0.w + dw, maxW, VP_MAX)), h = Math.round(w * 9 / 16) + hd;
+    vpPlace({w, r: sx > 0 ? W - left0 - w : g0.r, b: sy > 0 ? H - top0 - h : g0.b});
+  };
+  const up = () => {
+    el.removeEventListener("pointermove", move); el.removeEventListener("pointerup", up); el.removeEventListener("pointercancel", up);
+    document.body.classList.remove("vp-drag");
+    if (vp && vp._g) store.set("vpGeo", vp._g, true);
+  };
+  el.addEventListener("pointermove", move); el.addEventListener("pointerup", up); el.addEventListener("pointercancel", up);
+});
+document.addEventListener("dblclick", e => {
+  if (!vp || vpNarrow() || !e.target.closest || !e.target.closest(".vphead") || e.target.closest("select, a, button")) return;
+  vpPlace(VP_DEF); store.set("vpGeo", vp._g, true);
+});
+function closeVideo() { if (vp) { vp.remove(); vp = null; } document.body.classList.remove("vp-open"); }
 document.addEventListener("click", e => {
   const t = e.target; if (!t.closest) return;
-  const keep = t.closest("summary") && t.closest(".vmore");
-  $$(".vmore[open]").forEach(d => { if (d !== keep) d.open = false; });
+  const a = t.closest("a[data-vi]");
+  if (a) {
+    if (e.button || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;   // 想在新标签页开的照旧
+    const host = a.closest("[data-vs]");
+    e.preventDefault(); e.stopPropagation();   // 也不让复习卡、列表行的点击处理收到
+    openVideo(JSON.parse(host.dataset.vs), +a.dataset.vi, host.dataset.vw);
+    return;
+  }
+  if (vp && t.closest(".vpx")) closeVideo();
 }, true);
-document.addEventListener("keydown", e => { if (e.key === "Escape") $$(".vmore[open]").forEach(d => { d.open = false; }); });
+document.addEventListener("change", e => { if (vp && e.target.classList.contains("vpsel")) openVideo(vp._vs, +e.target.value, vp._w); });
+/* Esc 先关播放窗（在捕获阶段截住，复习页的 Esc 不会同时触发） */
+addEventListener("keydown", e => { if (e.key === "Escape" && vp) { closeVideo(); e.preventDefault(); e.stopImmediatePropagation(); } }, true);
 
 /* ---------- 音频：预生成 mp3 优先，缺失时退回浏览器语音 ---------- */
 const player = new Audio();
@@ -229,7 +306,7 @@ function cardHTML(e) {
     <div class="head">
       <span class="no">${String(e.no).padStart(2, "0")}</span><span class="word">${esc(e.word)}</span>
       ${e.prons.length === 1 ? `<span class="ipa">${esc(e.prons[0].ipa)}</span>` : ""}
-      <button class="spk" data-say="${esc(e.word)}" title="读单词">🔊</button>${videoHTML(VIDEO, e.no)}
+      <button class="spk" data-say="${esc(e.word)}" title="读单词">🔊</button>${videoHTML(VIDEO, e.no, false, e.word)}
       <span class="freq" title="考频 ${e.freq}/3">${flames(e.freq)}</span>
       <button class="knowBtn">${known.has(e.word) ? "✓ 已会" : "标为已会"}</button>
     </div>
@@ -620,6 +697,8 @@ function renderSettings() {
       <div class="row"><span><b>每天复习上限</b><small>到期的词超过这个数，多出来的按拖得久、火苗多优先，自动排到后面几天</small></span>
         ${seg("dailyCap", [[80, "80"], [120, "120"], [200, "200"]])}</div>
       ${sw("autoSay", "巩固时自动读单词", "每翻到一个新词先读一遍；按 R 再读")}
+      <div class="row"><span><b>讲解视频优先用</b><small>词卡上 ▶ 先播哪一种：精讲带背每课一段（约 1 小时，到 U8）；全程班每单元一段（约 4 小时，U1–U10 都有）。选的这种没有这个词就用另一种，播放窗里也随时能换</small></span>
+        ${seg("videoPrefer", [["精讲带背", "精讲带背"], ["全程班", "全程班"]])}</div>
     </section>
     <section class="panel"><h2>磨耳朵</h2>
       <div class="row"><span><b>播放范围</b><small>从右下角 🎧 开始</small></span>${seg("scope", [["group", "当前词群"], ["lesson", "整课"]])}</div>

@@ -235,7 +235,7 @@ const Study = (() => {
     `<div class="dsense">${e.prons.length > 1 && i === 0 ? `<span class="ipa">${esc(p.ipa)}</span>` : ""}<span class="pos">${esc(s.pos)}</span>${meanHTML(s.mean)}</div>`).join("")).join("");
   const ipaOf = e => e.prons.map(p => p.ipa).join(" ");
   /* 讲解视频按钮（app.js 的 videoHTML）：x.video 是词条所在那课的视频数据；扩展词用主词条的号，逐词释义的生词不在书里，没有 */
-  const videoOf = (x, mini) => videoHTML(x.video, Video.noOf(x.e), mini);
+  const videoOf = (x, mini) => videoHTML(x.video, Video.noOf(x.e), mini, x.word);
   /* 生词：遇见它的那句例句，生词高亮，可朗读 */
   const meetHTML = x => x.src ? `<div class="ex meet"><div class="exlab">遇见 · ${lesTitle(x.src.lid)} ${esc(x.src.entry)} 的例句</div>
     <div class="sent" data-lid="${x.src.lid}" data-src="${esc(x.src.entry)}">${sentenceHTML(x.src.ex.en, x.card.ph ? [] : [x.src.x], noteOf(x.src.notes, x.src.ex.en), x.card.ph ? x.card.w : "")}</div><div class="dzh">${esc(x.src.ex.zh)}</div>${Sent.anBlock(noteOf(x.src.notes, x.src.ex.en), x.src.ex.zh, x.src.ex.en, x.card.ph ? [] : [x.src.x], x.card.ph ? x.card.w : "")}
@@ -598,7 +598,7 @@ const Study = (() => {
   }
 
   /* 卡片背面：释义、记忆法、词根、例句、扩展词、生词出处（翻卡和答错后都用） */
-  const backHTML = x => `<div class="dback">${videoOf(x) ? `<div class="dvid">${videoOf(x)}</div>` : ""}${senseHTML(x.e)}${x.e.gloss ? `<div class="dnote">${x.e.prons[0].senses.length ? "" : "没有现成释义，看例句 · "}<span class="src add">补充</span> ${x.e.ph ? "例句词组释义" : "例句逐词释义"}</div>` : ""}
+  const backHTML = x => `<div class="dback">${senseHTML(x.e)}${x.e.gloss ? `<div class="dnote">${x.e.prons[0].senses.length ? "" : "没有现成释义，看例句 · "}<span class="src add">补充</span> ${x.e.ph ? "例句词组释义" : "例句逐词释义"}</div>` : ""}
     ${x.e.extOf ? `<div class="dnote">书上 #${x.e.extOf.no} ${esc(x.e.extOf.word)} 的扩展词</div>` : ""}
     ${x.e.tip ? `<div class="tip"><span class="tag ${esc(x.e.tip.type)}">${esc(x.e.tip.type)}</span>${esc(x.e.tip.text)}</div>` : ""}
     ${x.e.root ? `<div class="tip root"><span class="tag 构词">词根</span>${esc(x.e.root)}<span class="src add">补充</span></div>` : ""}
@@ -609,8 +609,9 @@ const Study = (() => {
       <span class="ipa">${esc(y.ipa)}</span><button class="spk sm" data-sayx="${esc(y.word)}" title="读">🔊</button>
       <span>${y.senses.map(s => `<span class="pos">${esc(s.pos)}</span>${meanHTML(s.mean)}`).join("　")}</span></div>`).join("")}</div>` : ""}
     ${meetHTML(x)}</div>`;
-  const wordHead = x => `<div class="dword" data-say="1">${esc(x.word)}</div>
-    <div class="dipa"><span class="ipa">${esc(ipaOf(x.e))}</span> <button class="spk" data-say="1" title="读（R）">🔊</button> ${fl(x.nb ? x.e.freq || 0 : x.freq)}</div>`;
+  /* vid：翻开 / 答完以后才在 🔊 旁边放讲解视频按钮（答题前放出来就等于给了答案） */
+  const wordHead = (x, vid) => `<div class="dword" data-say="1">${esc(x.word)}</div>
+    <div class="dipa"><span class="ipa">${esc(ipaOf(x.e))}</span> <button class="spk" data-say="1" title="读（R）">🔊</button>${vid ? videoOf(x) : ""} ${fl(x.nb ? x.e.freq || 0 : x.freq)}</div>`;
 
   /* 正在看的那一题：回看时是历史里的，否则是当前题 */
   const curQ = () => (D.back ? D.hist[D.hist.length - D.back] : D.q);
@@ -628,7 +629,7 @@ const Study = (() => {
     const pastOps = `${prevBtn}<wa-button variant="brand" data-fwd="1">${D.back > 1 ? "下一个 →" : "回到当前 →"} <kbd>空格</kbd></wa-button>`;
     if (q.kind === "flip" || (past && q.state !== "done")) {   // 翻卡；回看时没作答就斩掉的题也按翻卡样子展示
       const open = q.flipped || past;
-      view().innerHTML = `<div class="drill${open ? " flipped" : ""}${past ? " past" : ""}">${bar}<div class="dcard${open ? "" : " locked"}">${meta}${wordHead(x)}${open ? backHTML(x) : ""}</div>
+      view().innerHTML = `<div class="drill${open ? " flipped" : ""}${past ? " past" : ""}">${bar}<div class="dcard${open ? "" : " locked"}">${meta}${wordHead(x, open)}${open ? backHTML(x) : ""}</div>
         <div class="dops">${past ? pastOps : q.flipped
           ? `${prevBtn}<wa-button variant="danger" data-rate="f">忘了 <kbd>1</kbd></wa-button><wa-button variant="warning" data-rate="m">模糊 <kbd>2</kbd></wa-button>
              <wa-button variant="success" data-rate="g">记得 <kbd>3</kbd></wa-button>${chopBtn(x)}${RUBRIC}`
@@ -638,12 +639,12 @@ const Study = (() => {
     }
     const done = q.state === "done", ok = done && q.r !== "f" && !q.conf;
     let body = "";
-    if (q.kind === "mean") body = wordHead(x);
-    else if (q.kind === "listen") body = done ? wordHead(x) : `<button class="bigspk" data-say="1" title="再听一遍（R）">🔊</button><p class="note qhint">听发音，选意思 · R 再听</p>`;
-    else if (q.kind === "reverse") body = `<div class="qmean">${esc(meanText(x.e))}</div>${done ? wordHead(x) : `<p class="note qhint">选出对应的英文</p>`}`;
-    else if (q.kind === "cloze") body = `<div class="qsent">${q.cloze.html}</div>${done ? `<div class="dzh">${esc(q.cloze.zh)}</div>${wordHead(x)}` : `<p class="note qhint">选出填进空里的词（可能是变形）</p>`}`;
+    if (q.kind === "mean") body = wordHead(x, done);
+    else if (q.kind === "listen") body = done ? wordHead(x, true) : `<button class="bigspk" data-say="1" title="再听一遍（R）">🔊</button><p class="note qhint">听发音，选意思 · R 再听</p>`;
+    else if (q.kind === "reverse") body = `<div class="qmean">${esc(meanText(x.e))}</div>${done ? wordHead(x, true) : `<p class="note qhint">选出对应的英文</p>`}`;
+    else if (q.kind === "cloze") body = `<div class="qsent">${q.cloze.html}</div>${done ? `<div class="dzh">${esc(q.cloze.zh)}</div>${wordHead(x, true)}` : `<p class="note qhint">选出填进空里的词（可能是变形）</p>`}`;
     else if (q.kind === "spell") body = `<div class="qmean">${esc(meanText(x.e))}</div>
-      ${done ? `<div class="spres ${q.r === "g" ? "ok" : "bad"}">${q.r === "g" ? "✓ 拼对了" : `${q.input ? `你写的：<s>${esc(q.input)}</s>` : "没写"}${q.r === "m" ? " · 差一个字母，算模糊" : ""}`}</div>${wordHead(x)}`
+      ${done ? `<div class="spres ${q.r === "g" ? "ok" : "bad"}">${q.r === "g" ? "✓ 拼对了" : `${q.input ? `你写的：<s>${esc(q.input)}</s>` : "没写"}${q.r === "m" ? " · 差一个字母，算模糊" : ""}`}</div>${wordHead(x, true)}`
         : `<button class="spk" data-say="1" title="再听（R）">🔊</button><div class="spellbox"><input id="spell" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="${esc(x.word[0] + " _".repeat(Math.max(0, x.word.length - 1)))}"></div>`}`;
     const verdict = done && q.kind !== "spell" ? `<div class="qverdict ${ok ? "ok" : "bad"}">${q.conf ? confHTML(x, q.conf) : q.r === "g" ? "✓ 答对了" : q.r === "m" ? "✓ 答对了，但想得有点久（记为模糊）" : q.pick === -1 ? "✗ 不认识" : "✗ 答错了"}</div>` : "";
     const opts = q.opts ? `<div class="qopts">${q.opts.map((o, i) => `<button class="qopt${done && i === q.ans ? " ok" : ""}${done && i === q.pick && i !== q.ans ? " bad" : ""}" data-opt="${i}"${done ? " disabled" : ""}><kbd>${i + 1}</kbd><span>${esc(o)}</span></button>`).join("")}</div>` : "";
