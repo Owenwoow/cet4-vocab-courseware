@@ -215,8 +215,19 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .vpx{font-size:13px;padding:2px 8px;line-height:1.4}
 .vpbox{position:relative;aspect-ratio:16/9;background:#000}
 .vpbox iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+/* 电脑上拖标题栏移动、拖四个角缩放（位置大小由 app.js 写在行内样式里）；拖的时候 iframe 不接鼠标 */
+.vphead{cursor:move;touch-action:none;user-select:none}
+.vphead select,.vphead a,.vphead button{cursor:pointer}
+.vpr{position:absolute;z-index:2;width:14px;height:14px;touch-action:none}
+.vpr[data-c=nw]{left:0;top:0;cursor:nwse-resize}
+.vpr[data-c=ne]{right:0;top:0;cursor:nesw-resize}
+.vpr[data-c=sw]{left:0;bottom:0;cursor:nesw-resize}
+.vpr[data-c=se]{right:0;bottom:0;cursor:nwse-resize}
+#vplayer:hover .vpr[data-c=se]{background:linear-gradient(135deg,transparent 50%,var(--sub) 50%,var(--sub) 60%,transparent 60%,transparent 72%,var(--sub) 72%,var(--sub) 82%,transparent 82%)}
+body.vp-drag{user-select:none}
+body.vp-drag #vplayer iframe{pointer-events:none}
 body.vp-open{padding-bottom:calc(min(460px,100vw - 32px) * 9 / 16 + 64px)}
-@media (max-width:600px){#vplayer{left:0;right:0;bottom:0;width:auto;border-radius:12px 12px 0 0;border-width:1px 0 0}
+@media (max-width:600px){#vplayer{left:0;right:0;bottom:0;width:auto;border-radius:12px 12px 0 0;border-width:1px 0 0}.vpr{display:none}.vphead{cursor:auto}
   body.vp-open{padding-bottom:calc(100vw * 9 / 16 + 44px)}}
 .senses{margin:8px 0 4px}
 .sense{font-weight:600}

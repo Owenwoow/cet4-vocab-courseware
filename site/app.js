@@ -69,22 +69,75 @@ function videoHTML(data, no, mini, word = "") {
       rest.map((r, i) => `<a href="${esc(r.url)}"${open} data-vi="${i + 1}">${esc(r.label)}${r.approx ? `<small>约</small>` : ""}</a>`).join("")}</div></details>` : "") + `</span>`;
 }
 
-/* ---------- 讲解视频页内播放：B 站嵌入播放器，电脑在右下角浮着，手机贴在底部；不离开页面，看完 ✕ 掉接着背 ----------
+/* ---------- 讲解视频页内播放：B 站嵌入播放器，电脑上是画中画式浮窗，手机贴在底部；不离开页面，看完 ✕ 掉接着背 ----------
    没登录 B 站时嵌入播放器只有 360p，窗口里留一个「B 站 ↗」去 B 站看高清 */
 let vp = null;   // 播放窗，没开时是 null
 function openVideo(vs, i, word) {
   const v = vs[i];
   if (!v) return;
   stopAll();   // 课件自己的朗读先停，免得两边一起出声
-  if (!vp) { vp = document.createElement("div"); vp.id = "vplayer"; document.body.append(vp); }
-  vp.innerHTML = `<div class="vphead"><b>${esc(word)}</b>
+  const fresh = !vp;
+  if (fresh) { vp = document.createElement("div"); vp.id = "vplayer"; document.body.append(vp); }
+  vp.innerHTML = `<div class="vphead" title="拖动移动，双击恢复默认大小和位置"><b>${esc(word)}</b>
       <select class="vpsel" title="换个视频看">${vs.map((o, j) => `<option value="${j}"${j === i ? " selected" : ""}>${esc(o.label)}${o.approx ? "（约）" : ""}</option>`).join("")}</select>
       <a class="vpout" href="${esc(v.url)}" target="_blank" rel="noopener" title="去 B 站看（登录后能看高清）">B 站 ↗</a>
       <button class="vpx" title="关闭（Esc）">✕</button></div>
-    <div class="vpbox"><iframe src="${esc(Video.embed(v))}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen scrolling="no"></iframe></div>`;
+    <div class="vpbox"><iframe src="${esc(Video.embed(v))}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen scrolling="no"></iframe></div>
+    ${["nw", "ne", "sw", "se"].map(c => `<i class="vpr" data-c="${c}" title="拖动缩放"></i>`).join("")}`;
   vp._vs = vs; vp._w = word;
+  if (fresh) vpPlace(store.get("vpGeo", null));
   document.body.classList.add("vp-open");
 }
+
+/* 播放窗的位置和大小（只在电脑上，手机交给 CSS 贴底）：拖标题栏移动，拖四个角缩放，画面保持 16:9；
+   整个窗口始终留在屏幕里，宽 280～1100px。g = {r, b, w}：离右边、下边的距离和宽度——按右下角记，
+   换个屏幕大小也还在原来那个角落。拖完记下来（vpGeo，走 Sync 同步），下次打开还在那儿；双击标题栏恢复默认 */
+const VP_MIN = 280, VP_MAX = 1100, VP_DEF = {r: 16, b: 16, w: 460};
+const vpNarrow = () => matchMedia("(max-width:600px)").matches;
+const vpHead = () => vp.querySelector(".vphead").offsetHeight + 2;   // 标题栏 + 上下边框
+function vpPlace(g) {
+  if (!vp) return;
+  if (vpNarrow()) { vp.style.cssText = ""; vp._g = null; return; }
+  g = g || VP_DEF;
+  const W = document.documentElement.clientWidth, H = document.documentElement.clientHeight, hd = vpHead();   // 不含滚动条
+  const w = Math.round(Math.max(VP_MIN, Math.min(g.w, VP_MAX, W, (H - hd) * 16 / 9)));
+  const h = Math.round(w * 9 / 16) + hd;
+  const r = Math.round(Math.max(0, Math.min(g.r, W - w))), b = Math.round(Math.max(0, Math.min(g.b, H - h)));
+  Object.assign(vp.style, {width: w + "px", right: r + "px", bottom: b + "px"});
+  vp._g = {r, b, w};
+}
+addEventListener("resize", () => vp && vpPlace(vp._g || store.get("vpGeo", null)));
+document.addEventListener("pointerdown", e => {
+  if (!vp || e.button || vpNarrow() || !vp.contains(e.target)) return;
+  const corner = e.target.closest(".vpr");
+  if (!corner && (!e.target.closest(".vphead") || e.target.closest("select, a, button"))) return;
+  e.preventDefault();
+  const g0 = {...vp._g}, x0 = e.clientX, y0 = e.clientY, W = document.documentElement.clientWidth, H = document.documentElement.clientHeight, hd = vpHead();
+  const left0 = W - g0.r - g0.w, top0 = H - g0.b - (Math.round(g0.w * 9 / 16) + hd);
+  const c = corner && corner.dataset.c, sx = c && c.includes("e") ? 1 : -1, sy = c && c.includes("s") ? 1 : -1;
+  const el = corner || e.target.closest(".vphead");
+  el.setPointerCapture(e.pointerId);
+  document.body.classList.add("vp-drag");   // 拖的时候播放器的 iframe 不接鼠标，不然一进画面就拖不动了
+  const move = ev => {
+    const dx = ev.clientX - x0, dy = ev.clientY - y0;
+    if (!c) { vpPlace({w: g0.w, r: g0.r - dx, b: g0.b - dy}); return; }
+    /* 缩放：对角固定不动，哪个方向拖得多就按哪个方向算宽度 */
+    const dw = Math.abs(dx) >= Math.abs(dy) * 16 / 9 ? sx * dx : sy * dy * 16 / 9;
+    const maxW = Math.min(sx > 0 ? W - left0 : W - g0.r, ((sy > 0 ? H - top0 : H - g0.b) - hd) * 16 / 9);
+    const w = Math.max(VP_MIN, Math.min(g0.w + dw, maxW, VP_MAX)), h = Math.round(w * 9 / 16) + hd;
+    vpPlace({w, r: sx > 0 ? W - left0 - w : g0.r, b: sy > 0 ? H - top0 - h : g0.b});
+  };
+  const up = () => {
+    el.removeEventListener("pointermove", move); el.removeEventListener("pointerup", up); el.removeEventListener("pointercancel", up);
+    document.body.classList.remove("vp-drag");
+    if (vp && vp._g) store.set("vpGeo", vp._g, true);
+  };
+  el.addEventListener("pointermove", move); el.addEventListener("pointerup", up); el.addEventListener("pointercancel", up);
+});
+document.addEventListener("dblclick", e => {
+  if (!vp || vpNarrow() || !e.target.closest || !e.target.closest(".vphead") || e.target.closest("select, a, button")) return;
+  vpPlace(VP_DEF); store.set("vpGeo", vp._g, true);
+});
 function closeVideo() { if (vp) { vp.remove(); vp = null; } document.body.classList.remove("vp-open"); }
 document.addEventListener("click", e => {
   const t = e.target; if (!t.closest) return;
