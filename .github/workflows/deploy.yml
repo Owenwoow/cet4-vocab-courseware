@@ -41,7 +41,7 @@ jobs:
 
       # Pages 让浏览器缓存 10 分钟；给脚本和样式加版本号，部署后立即生效
       - name: 静态资源加版本号
-        run: sed -i -E "s/(app|sync|srs|study|vocab|sent)\.js\"/\1.js?v=${GITHUB_SHA::7}\"/g; s/style\.css\"/style.css?v=${GITHUB_SHA::7}\"/" site/index.html && grep -E "\.js|style.css" site/index.html
+        run: sed -i -E "s/(app|sync|srs|study|vocab|sent|video)\.js\"/\1.js?v=${GITHUB_SHA::7}\"/g; s/style\.css\"/style.css?v=${GITHUB_SHA::7}\"/" site/index.html && grep -E "\.js|style.css" site/index.html
 
       - uses: actions/configure-pages@v5
 
