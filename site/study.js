@@ -222,11 +222,10 @@ const Study = (() => {
     const key = pickVoice(x.aud.w[w] || x.aud.w[w.toLowerCase()]);
     key ? playFile(key, null, rate(), x.aud) : speakTTS(w, "en");
   }
-  /* src：读生词遇见的那句（在出处那课的音频里），否则读词条自己的例句 */
+  /* src：读生词遇见的那句（在出处那课的音频里），否则读词条自己的例句；和课文页一样逐词高亮（卡片上这两句各在一个 .ex 里） */
   function saySent(x, slow, src) {
     const {ex, aud} = src ? {ex: x.src.ex, aud: x.src.aud} : {ex: x.e.ex, aud: x.aud};
-    const rec = pickVoice(aud.s[ex.en]);
-    rec ? playFile(rec.f, null, slow ? 0.75 : rate(), aud) : speakTTS(ex.en, "en");
+    readSent(view().querySelector(src ? ".ex.meet" : ".ex:not(.meet)"), ex.en, null, slow ? 0.75 : rate(), aud);
   }
 
   /* ---------- 公共片段 ---------- */
@@ -584,6 +583,7 @@ const Study = (() => {
     next();
   }
   function next() {
+    stopAll();                                       // 上一题没读完的词、例句（连同高亮）停掉
     const pq = D.q;
     if (pq && (pq.state === "done" || pq.r || pq.chopped)) { D.hist.push(pq); if (D.hist.length > HIST) D.hist.shift(); }
     D.back = 0;
@@ -655,8 +655,8 @@ const Study = (() => {
     }
   }
   /* 上一个 / 往回翻到头再往前：只看不改 */
-  function goBack() { if (D.back < D.hist.length) { D.back++; showCard(); } }
-  function goFwd() { if (D.back > 0) { D.back--; showCard(); } }
+  function goBack() { if (D.back < D.hist.length) { stopAll(); D.back++; showCard(); } }
+  function goFwd() { if (D.back > 0) { stopAll(); D.back--; showCard(); } }
 
   /* 作答：i 是选项序号（-1 = 不认识 / 不会）；拼写传 input */
   function answer(i, input) {

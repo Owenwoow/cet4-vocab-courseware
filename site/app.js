@@ -70,7 +70,7 @@ const rate = () => +S.rate;
 /* 选中的声音本课没生成时，退回本课第一种 */
 const pickVoice = rec => rec && (rec[S.voice] || Object.values(rec)[0]);
 
-function stopAll() { player.pause(); player.ontimeupdate = player.onended = player.onerror = null; synth && synth.cancel(); }
+function stopAll() { player.pause(); player.ontimeupdate = player.onended = player.onerror = null; synth && synth.cancel(); $$(".sent .w.reading").forEach(s => s.classList.remove("reading")); }   // 读到一半被打断的例句也去掉高亮
 /* aud：用哪一课的音频清单，默认当前课（巩固模式会播别的课的词） */
 function playFile(key, onEnd, r = rate(), aud) {
   stopAll();
@@ -97,11 +97,13 @@ function speakZh(text, onEnd) {
   const key = AUD.z[text];
   key ? playFile(key, onEnd, 1) : speakTTS(plainMean(text), "zh", onEnd);
 }
-function playSentence(card, onEnd, r = rate()) {
-  const e = entryOf(card), spans = $$(".sent .w", card);
+function playSentence(card, onEnd, r = rate()) { readSent(card, entryOf(card).ex.en, onEnd, r); }
+/* 读 root 里 .sent 的那句例句（原文 en）并逐词高亮；aud：句子所在那课的音频清单（复习、巩固会读别的课的句子） */
+function readSent(root, en, onEnd, r = rate(), aud = AUD) {
+  const spans = $$(".sent .w", root);
   const clear = () => spans.forEach(s => s.classList.remove("reading"));
-  const rec = pickVoice(AUD.s[e.ex.en]);
-  if (!rec) { speakTTS(e.ex.en, "en", onEnd); return; }
+  const rec = pickVoice(aud.s[en]);
+  if (!rec) { speakTTS(en, "en", onEnd); return; }
   /* 语音的逐词时间点按顺序对到句中单词，用于朗读高亮 */
   const norm = x => x.toLowerCase().replace(/[^a-z']/g, "");
   let j = 0;
@@ -110,7 +112,7 @@ function playSentence(card, onEnd, r = rate()) {
     if (k < spans.length) j = k + 1;
     return [t, k < spans.length ? k : Math.min(j, spans.length - 1)];
   });
-  playFile(rec.f, () => { clear(); onEnd && onEnd(); }, r);
+  playFile(rec.f, () => { clear(); onEnd && onEnd(); }, r, aud);
   player.ontimeupdate = () => { const m = marks.filter(m => m[0] <= player.currentTime).pop(); clear(); m && spans[m[1]] && spans[m[1]].classList.add("reading"); };
 }
 
