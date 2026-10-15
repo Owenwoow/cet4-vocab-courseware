@@ -61,11 +61,23 @@ test("周末学的也能走完，站与站之间至少隔一天", () => {
   }
 });
 
-test("模糊：站数不变，2 天后再来", () => {
-  const c = SRS.rate(SRS.newCard(MON), "m", TUE);
-  assert.equal(c.s, 0); assert.equal(c.d, THU); assert.equal(c.r, "m");
+test("模糊：和记得一样进下一站，只是 h 记 m、不升题型", () => {
+  const m = SRS.rate(SRS.newCard(MON), "m", TUE, {type: T.LISTEN});
+  const g = SRS.rate(SRS.newCard(MON), "g", TUE, {type: T.LISTEN});
+  assert.equal(m.s, 1); assert.equal(m.d, WED); assert.equal(m.r, "m"); assert.equal(m.h, "m");
+  assert.deepEqual([m.s, m.d, m.v], [g.s, g.d, g.v]);
+  assert.equal(m.q, 0); assert.equal(g.q, 1);
+  const m2 = SRS.rate(m, "m", WED);
+  assert.equal(m2.s, 2); assert.equal(m2.d, "2026-10-12");   // 连着模糊也照走：上周今天
+});
+
+test("混淆（选中易混词，hold）：站数不变，2 天后再来，h 记 m", () => {
+  const c = SRS.rate(SRS.newCard(MON), "m", TUE, {type: T.MEAN, hold: true});
+  assert.equal(c.s, 0); assert.equal(c.d, THU); assert.equal(c.r, "m"); assert.equal(c.h, "m"); assert.equal(c.v, 1);
   const c2 = SRS.rate(c, "g", THU);
   assert.equal(c2.s, 1); assert.equal(c2.d, FRI);   // 第二站本是周三，已过，顺到明天
+  const late = SRS.rate({a: "2026-09-01", s: 4, d: "2026-10-20", n: 4, l: 0, h: "ggg", q: 2}, "m", "2026-10-20", {hold: true});
+  assert.equal(late.s, 4); assert.equal(late.d, "2026-10-22");   // s≥4 也是 2 天
 });
 
 test("忘了：从今天重新开始，遗忘次数 +1，进难词本", () => {
@@ -76,12 +88,16 @@ test("忘了：从今天重新开始，遗忘次数 +1，进难词本", () => {
   assert.ok(SRS.isHard(c));
 });
 
-test("提前复习：记得 / 模糊不改计划，忘了照样重来", () => {
+test("提前复习：记得 / 模糊（含混淆）不改计划、不记进熟练度，忘了照样重来", () => {
   const c = SRS.newCard(MON);           // 周二到期
   const g = SRS.rate(c, "g", MON);
   assert.equal(g.d, TUE); assert.equal(g.s, 0); assert.equal(g.n, 1); assert.equal(g.t, MON);
-  const m = SRS.rate(c, "m", MON);
-  assert.equal(m.d, TUE);
+  for (const opt of [{}, {hold: true}]) {
+    const m = SRS.rate(c, "m", MON, opt);
+    assert.equal(m.d, TUE); assert.equal(m.s, 0); assert.equal(m.h, ""); assert.equal(m.v || 0, 0); assert.equal(m.r, "m");
+  }
+  const s2 = {a: MON, s: 2, d: "2026-10-12", n: 2, l: 0, h: "gg"};   // 中途的卡：模糊也不提前进站
+  assert.deepEqual([SRS.rate(s2, "m", THU).s, SRS.rate(s2, "m", THU).d, SRS.rate(s2, "m", THU).h], [2, "2026-10-12", "gg"]);
   const f = SRS.rate(c, "f", MON);
   assert.equal(f.d, TUE); assert.equal(f.l, 1);
 });
@@ -92,10 +108,15 @@ test("拖了几天才复习：照常进下一站，下一站不早于明天", ()
   assert.equal(c.s, 1); assert.equal(c.d, "2026-10-14");
 });
 
-test("难词本：最近忘了 / 模糊，或忘过两次以上", () => {
+test("难词本：最近忘了，或忘过两次以上，或还有没分清的易混词；模糊不进", () => {
   assert.ok(!SRS.isHard({r: "g", l: 1}));
+  assert.ok(SRS.isHard({r: "f", l: 1}));
   assert.ok(SRS.isHard({r: "g", l: 2}));
-  assert.ok(SRS.isHard({r: "m", l: 0}));
+  assert.ok(!SRS.isHard({r: "m", l: 0}));
+  assert.ok(!SRS.isHard({r: "m", l: 1}));
+  assert.ok(SRS.isHard({r: "m", l: 0, cf: ["adopt"]}));
+  assert.ok(SRS.isHard({r: "g", l: 0, cf: ["adopt"]}));      // 混淆后还没带着它答对过
+  assert.ok(!SRS.isHard({r: "g", l: 0, cf: []}));
   assert.ok(!SRS.isHard(SRS.newCard(MON)));
 });
 
@@ -164,10 +185,15 @@ test("提前复习不影响熟练度和题型：睡前巩固过的新词，次�
   assert.equal(SRS.reviews({n: 2, h: "m", r: "m"}), 1);                     // 旧卡没有 v：按 h 的长度算
 });
 
-test("判分：选择题 5 秒内对 = 记得，慢 = 模糊；拼写错一个字母 = 模糊", () => {
-  assert.equal(SRS.gradeChoice(true, 2000), "g");
-  assert.equal(SRS.gradeChoice(true, 7000), "m");
-  assert.equal(SRS.gradeChoice(false, 1000), "f");
+test("判分：选择题按题型的时限内答对 = 记得，慢 = 模糊；拼写错一个字母 = 模糊", () => {
+  for (const [kind, ms] of [["mean", 8000], ["listen", 8000], ["reverse", 10000], ["cloze", 15000]]) {
+    assert.equal(SRS.gradeChoice(true, ms, kind), "g", kind);
+    assert.equal(SRS.gradeChoice(true, ms + 1, kind), "m", kind);
+    assert.equal(SRS.gradeChoice(false, 1000, kind), "f", kind);
+  }
+  assert.equal(SRS.gradeChoice(true, 7000), "g");             // 不传题型按看词选义（词组卡也是）
+  assert.equal(SRS.gradeChoice(true, 9000), "m");
+  assert.equal(SRS.gradeChoice(true, 12000, "spell"), "m");   // 没有时限的题型按看词选义
   assert.equal(SRS.gradeSpell(" Abandon ", "abandon"), "g");
   assert.equal(SRS.gradeSpell("abandom", "abandon"), "m");
   assert.equal(SRS.gradeSpell("abndon", "abandon"), "m");
@@ -186,15 +212,19 @@ test("打分记录：h 只留 6 次，第一遍答对才升 q，提前复习不�
   assert.equal(f.z, 0); assert.equal(f.s, 0); assert.equal(f.h, "ggggf"); assert.equal(SRS.level(f), 1);
 });
 
-test("s≥4 间隔按熟练度；模糊取一半（至少 2 天）", () => {
+test("s≥4 间隔按熟练度；模糊也进站，但打断连对落到 2 级，7 天", () => {
   const t = "2026-10-20";
   const base = {a: "2026-09-01", s: 3, d: t, n: 4, l: 0};
   assert.equal(SRS.rate({...base, h: "gf", l: 1}, "g", t).d, "2026-10-27");               // 2 级 7 天
   assert.equal(SRS.rate({...base, h: "ggg", q: 1}, "g", t).d, "2026-11-03");               // 3 级 14 天
   assert.equal(SRS.rate({...base, h: "ggg", q: 2}, "g", t).d, "2026-11-10");               // 4 级 21 天
   assert.equal(SRS.rate({...base, h: "ggg", q: 3}, "g", t).d, "2026-11-19");               // 5 级 30 天
-  assert.equal(SRS.rate({...base, s: 4, h: "ggg", q: 2}, "m", t).d, "2026-10-23");         // 模糊 → 2 级 7 天的一半 = 3
-  assert.equal(SRS.rate({...base, s: 2, h: "ggg"}, "m", t).d, "2026-10-22");               // s≤3 照旧 2 天
+  const m = SRS.rate({...base, s: 4, h: "ggg", q: 3}, "m", t, {type: T.SPELL});
+  assert.equal(m.d, "2026-10-27"); assert.equal(m.s, 5); assert.equal(SRS.level(m), 2); assert.equal(m.q, 3);   // 本该 5 级 30 天
+  assert.equal(SRS.rate({...base, s: 4, h: "ggg", q: 2, l: 2}, "m", t).d, "2026-10-27");   // 忘过 2 次：1 级，也是 7 天
+  const s2 = {a: "2026-10-06", s: 2, d: t, n: 2, l: 0, h: "gg"};
+  assert.equal(SRS.rate(s2, "m", t).s, 3); assert.equal(SRS.rate(s2, "m", t).d, SRS.rate(s2, "g", t).d);   // s≤3 和记得同一站
+  assert.equal(SRS.rate(s2, "m", t).d, "2026-10-25");
 });
 
 test("考前封顶：窗口前复习、到期又晚于 12-09 的，分散到 12-05～12-09；窗口里复习的不管", () => {
@@ -270,16 +300,19 @@ test("形近词相邻：不同词群的挪到一起，同词群的不动", () =>
   assert.notEqual(Math.abs(q.indexOf("union") - q.indexOf("unite")), 1, q.join(","));   // 同词群照旧隔开
 });
 
-test("方案文档里的 abandon：一路走到牢记", () => {
+test("方案文档里的 abandon：一路走到牢记（10-19 模糊照样进站）", () => {
   let c = SRS.newCard("2026-10-12");
-  const step = (r, t, type) => { assert.equal(c.d, t); c = SRS.rate(c, r, t, {type, key: "abandon"}); return [SRS.level(c), c.d]; };
+  const step = (r, t, type) => {
+    assert.equal(c.d, t); assert.equal(SRS.pickType(c), type, t);   // 题型就是系统会出的那种
+    c = SRS.rate(c, r, t, {type, key: "abandon"}); return [SRS.level(c), c.d];
+  };
   assert.deepEqual(step("g", "2026-10-13", T.MEAN), [2, "2026-10-14"]);
   assert.deepEqual(step("g", "2026-10-14", T.LISTEN), [2, "2026-10-19"]);
-  assert.deepEqual(step("m", "2026-10-19", T.MEAN), [2, "2026-10-21"]);
-  assert.deepEqual(step("g", "2026-10-21", T.MEAN), [2, "2026-11-01"]);
-  assert.deepEqual(step("g", "2026-11-01", T.LISTEN), [3, "2026-11-15"]);
-  assert.deepEqual(step("g", "2026-11-15", T.CONTEXT), [4, "2026-12-06"]);
-  assert.deepEqual(step("g", "2026-12-06", T.SPELL), [5, "2027-01-05"]);
+  assert.deepEqual(step("m", "2026-10-19", T.MEAN), [2, "2026-11-01"]);      // 进第 3 站，连对清零
+  assert.deepEqual(step("g", "2026-11-01", T.LISTEN), [2, "2026-11-08"]);    // 连对 1：还是 2 级，7 天
+  assert.deepEqual(step("g", "2026-11-08", T.MEAN), [3, "2026-11-22"]);
+  assert.deepEqual(step("g", "2026-11-22", T.CONTEXT), [4, "2026-12-09"]);   // 21 天是 12-13，封顶到考前窗口
+  assert.deepEqual(step("g", "2026-12-09", T.SPELL), [5, "2027-01-08"]);     // 窗口里复习，不封顶
 });
 
 test("干扰项：义项拆分与词性", () => {
