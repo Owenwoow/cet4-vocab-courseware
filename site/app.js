@@ -408,7 +408,7 @@ async function route() {
     $("#crumb").textContent = "设置"; document.title = "设置 · 四级词汇";
     return;
   }
-  const m = h.match(/^#\/(u\d\d-l\d\d)(?:\/(g\d+|w\/.+|learn))?$/);
+  const m = h.match(/^#\/(u\d\d-l\d\d)(?:\/(g\d+|w\/.+|learn|cont))?$/);
   const id = m && ready.some(l => l.id === m[1]) ? m[1] : last;
   const reuse = L && L.id === id;
   await loadLesson(id);
@@ -416,6 +416,14 @@ async function route() {
   if (reuse) renderLesson();   // 从设置页返回时重画，标题和进度跟上
   const t = m && m[2];
   if (t === "learn") { location.replace("#/log/" + id); return; }
+  if (t === "cont") {   // 首页「继续」：回到上次读到的那个词群的开头（标题 + 导图），不直接跳到那个词；地址换成词群锚点
+    const card = document.getElementById("w-" + store.get("pos:" + id, "")), sec = card && card.closest(".group");
+    const to = `#/${id}${sec ? "/" + sec.id : ""}`;
+    history.replaceState(null, "", to); curHash = prevHash = to;
+    sec ? sec.scrollIntoView() : scrollTo(0, 0);
+    lessonScroll = null;
+    return;
+  }
   // 从设置 / 首页回来，回到离开时的位置；地址带词群、词的锚点，只有新点开（不是原来那个地址）才跳过去
   const back = lessonScroll && lessonScroll.id === id && (!t || lessonScroll.h === h);
   if (back) scrollBack(lessonScroll.y);

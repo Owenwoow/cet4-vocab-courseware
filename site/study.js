@@ -284,7 +284,7 @@ const Study = (() => {
       due && left ? btn("#/drill/due", "开始", 'variant="brand"') : "");
     const s2 = step(groups > 0 && !nl, 2, weekend ? "学新（周日可选）" : "学新",
       groups ? `今天记了 ${groups} 个词群 · ${nb} 词${plusV}，${nl ? `还有 ${nl} 个没过「学新词」测验` : "新词测验已全部过关；学了更多就接着记"}` : `看完视频和课件，在「学习记录」里勾上今天学的词群，再点「学新词」过一遍测验${nv ? `（已加生词 ${nv} 个）` : ""}`,
-      `<span class="acts">${lastL ? btn(`#/${last}`, `继续 U${+lastL[1]} L${+lastL[2]}`) : ""}${btn("#/log", "📝 学习记录", groups || nl ? undefined : 'variant="brand"')}${nl ? btn("#/drill/learn", `学新词 ${nl}`, 'variant="brand"') : ""}</span>`);
+      `<span class="acts">${lastL ? btn(`#/${last}/cont`, `继续 U${+lastL[1]} L${+lastL[2]}`) : ""}${btn("#/log", "📝 学习记录", groups || nl ? undefined : 'variant="brand"')}${nl ? btn("#/drill/learn", `学新词 ${nl}`, 'variant="brand"') : ""}</span>`);
     const s3 = step(false, 3, "途中看", todays.length ? `今天的 ${todays.length} 个词，掏出手机随时过一眼` : weekend ? "看看本周学的词" : "记录今天学的之后，这里能快速浏览",
       todays.length ? btn("#/list/today", "浏览") : weekend ? btn("#/list/week", "浏览") : "");
     const s4 = step(nightDone, 4, "睡前巩固", todays.length ? (nightDone ? "今天学的都过了一遍" : `把今天学的 ${todays.length} 个词再过一遍`) : "今天还没有新学的词",
