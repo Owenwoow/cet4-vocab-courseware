@@ -417,7 +417,10 @@ async function route() {
   const t = m && m[2];
   if (t === "learn") { location.replace("#/log/" + id); return; }
   if (t === "cont") {   // 首页「继续」：回到上次读到的那个词群的开头（标题 + 导图），不直接跳到那个词；地址换成词群锚点
-    const card = document.getElementById("w-" + store.get("pos:" + id, "")), sec = card && card.closest(".group");
+    // 读到的词群已经勾为学过（比如跟着电子书和视频学完再勾的），就去最后一个勾过的词群的下一群
+    const card = document.getElementById("w-" + store.get("pos:" + id, "")), nx = Sync.entries("learn:").some(([, d]) => d) && Study.nextGroups(1)[0];
+    let sec = card && card.closest(".group");
+    if (nx && nx.lid === id && (!sec || +sec.dataset.g < nx.no)) sec = document.getElementById("g" + nx.no);
     const to = `#/${id}${sec ? "/" + sec.id : ""}`;
     history.replaceState(null, "", to); curHash = prevHash = to;
     sec ? sec.scrollIntoView() : scrollTo(0, 0);

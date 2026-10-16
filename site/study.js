@@ -272,7 +272,9 @@ const Study = (() => {
     const todays = inLearnRange(t, t), groups = learnMarks().filter(([, d]) => d === t).length;
     const nv = todays.filter(x => x.vocab).length, nb = todays.length - nv, plusV = nv ? ` + 生词 ${nv} 个` : "";
     const ready = BOOK.parts.flatMap(p => p.units.flatMap(u => u.lessons)).filter(l => l.ready);
-    const last = ready.some(l => l.id === store.get("last")) ? store.get("last") : ready[0] && ready[0].id, lastL = last && last.match(/u(\d+)-l(\d+)/);
+    // 「继续」去上次读的课；在别处学完勾掉的词群已经排到后面一课时，去下一个没勾的词群那课（进去后的定位见 app.js 的 cont）
+    const rd = ready.some(l => l.id === store.get("last")) ? store.get("last") : ready[0] && ready[0].id, nx = learnMarks().length ? nextGroups(1)[0] : null;
+    const last = nx && ready.findIndex(l => l.id === nx.lid) > ready.findIndex(l => l.id === rd) ? nx.lid : rd, lastL = last && last.match(/u(\d+)-l(\d+)/);
     const nightDone = todays.length && todays.every(x => x.card.t === t);
     const nl = todays.filter(x => !x.card.p).length;   // 学新词还没过关的
     const step = (done, n, title, desc, action, extra) => `<li class="${done ? "done" : ""}"><span class="dot">${done ? "✓" : n}</span>
@@ -950,5 +952,5 @@ const Study = (() => {
   const bind = () => { view().addEventListener("click", onClick); view().addEventListener("change", onChange); view().addEventListener("toggle", onToggle, true); };
   bind();
 
-  return {isStudy, render, refresh, lookupCtx, markGroups, unmarkGroups, learnDate, vocabGet, addVocab, removeVocab, forgetBook};
+  return {isStudy, render, refresh, lookupCtx, markGroups, unmarkGroups, learnDate, nextGroups, vocabGet, addVocab, removeVocab, forgetBook};
 })();
