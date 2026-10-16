@@ -55,14 +55,14 @@ const noteOf = (notes, en) => (notes && notes.sents && notes.sents[en]) || null;
 /* ---------- 讲解视频按钮：课文页词头、复习卡背面、列表页共用 ----------
    data = 这一课的视频数据，no = 词条号（video.js 的 noOf 取）；这个词没有可用的视频就返回空串，调用的地方不用判断。
    一个和 🔊 一样的圆形播放图标，点了在页面里播第一个可用的视频（openVideo），别的视频在播放窗里换；
-   「约」= 时间点是推算的，可能差几秒，图标外圈是虚线。sm = 列表页小一号；word = 播放窗标题上显示的词。
+   时间点是推算的（approx，可能差几秒）按钮长得一样，只在悬停提示和播放窗下拉框里标「约」。sm = 列表页小一号；word = 播放窗标题上显示的词。
    链接本身仍是 B 站地址：Ctrl / Shift / 中键点照旧在新标签页打开 */
 const PLAY_ICON = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 1.2v9.6L10.5 6z"/></svg>';
 function videoHTML(data, no, sm, word = "") {
   const vs = Video.options(data, no, S.videoPrefer);
   if (!vs.length) return "";
   const v = vs[0], tip = `看老师讲解${v.approx ? "（时间点是推算的，可能差几秒）" : ""} · ${v.label}${vs.length > 1 ? `，播放窗里可换另外 ${vs.length - 1} 个视频` : ""}`;
-  return `<a class="vbtn${sm ? " sm" : ""}${v.approx ? " approx" : ""}" href="${esc(v.url)}" target="_blank" rel="noopener" data-vi="0" data-vs="${esc(JSON.stringify(vs))}" data-vw="${esc(word)}" title="${esc(tip)}" aria-label="讲解视频">${PLAY_ICON}</a>`;
+  return `<a class="vbtn${sm ? " sm" : ""}" href="${esc(v.url)}" target="_blank" rel="noopener" data-vi="0" data-vs="${esc(JSON.stringify(vs))}" data-vw="${esc(word)}" title="${esc(tip)}" aria-label="讲解视频">${PLAY_ICON}</a>`;
 }
 
 /* ---------- 讲解视频页内播放：B 站嵌入播放器，电脑上是画中画式浮窗，手机贴在底部；不离开页面，看完 ✕ 掉接着背 ----------

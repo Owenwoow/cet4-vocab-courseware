@@ -188,10 +188,9 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .knowBtn{align-self:center;font-size:12px;padding:3px 9px}
 .card.known .knowBtn{background:var(--ok-soft);border-color:var(--ok);color:var(--ok)}
 /* 讲解视频按钮：和 🔊 一样的圆形图标，蓝色、播放三角，紧挨着 🔊 成一对（课文页词头、复习卡单词读音旁）；列表页小一号 .sm；
-   约 = 时间点是推算的，虚线圈。换视频在播放窗里 */
+   推算的时间点（约）按钮不区分，只在悬停提示和播放窗的下拉框里标。换视频在播放窗里 */
 .vbtn{display:inline-flex;align-items:center;justify-content:center;flex:none;align-self:center;width:30px;height:30px;border-radius:50%;background:var(--blue-soft);color:var(--blue);text-decoration:none}
 .vbtn svg{width:12px;height:12px;margin-left:2px;fill:currentColor}
-.vbtn.approx{outline:1px dashed var(--blue);outline-offset:-1px}
 @media (hover:hover){.vbtn:hover{background:var(--blue);color:#fff}}
 .head .spk + .vbtn{margin-left:-4px}
 .vbtn.sm{width:24px;height:24px}
