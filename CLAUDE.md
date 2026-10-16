@@ -36,6 +36,6 @@
 - 每个 Lesson 的词条序号从 01 重新开始；词群编号在整个 Unit 内连续
 - B 站 cookie 只在本机读，不打印、不进仓库、不进 Actions；字幕原文只缓存在 `work/bili/`，仓库里只放时间点
 - 学习进度（已会、设置、上次的课、每课阅读位置）统一走 `site/sync.js` 存取，不要直接写 localStorage；新增要跨设备同步的状态也走它。云端是用户自己的私密 Gist（`cet4-progress.json`），token 只存本机，绝不写进仓库
-- 背词数据也走 `sync.js`：`learn:<课id>:g<词群号>` = 学的日期，`srs:<词>` = 复习卡，`log:<日期>` = 当天评分计数，`vocab:<原形>` = 生词本（释义快照 + 复习卡，和 `srs:` 分开存，所在词群记为学过时记 0「毕业」）；取消记 0（墓碑），不要删键
+- 背词数据也走 `sync.js`：`learn:<课id>:g<词群号>` = 学的日期，`srs:<词>` = 复习卡，`log:<日期>` = 当天评分计数，`drill:<范围>` = 巩固做到一半的进度（当天有效、做完记 0），`vocab:<原形>` = 生词本（释义快照 + 复习卡，和 `srs:` 分开存，所在词群记为学过时记 0「毕业」）；取消记 0（墓碑），不要删键
 - 复习规则只在 `site/srs.js` 改，改了同步改 `tests/srs.test.js`；规则说明写在文件开头和 `docs/plans/2026-10-01-vocab-portal.md`
 - 组件库 Web Awesome 只引主题变量 `themes/default.css` 和组件加载器，不引 `native.css`、不用 `wa-page`（会改动课文页）；版本号写死在 `index.html`。新增脚本要加进部署工作流的版本号 sed
