@@ -669,7 +669,12 @@ document.addEventListener("click", e => {
     updateProgress(); return;
   }
   const masked = t.closest(".mask .sense,.mask .zh,.mask .tip,.mask .xm");
-  if (masked) { masked.classList.toggle("show"); return; }
+  if (masked) {
+    // 词卡里只分两块：单词意思（释义、记忆法、扩展词）一起开，例句译文单独开
+    const card = masked.closest(".card"), on = !masked.classList.contains("show");
+    const group = card && !masked.classList.contains("zh") ? $$(".sense,.tip,.xm", card) : [masked];
+    group.forEach(x => x.classList.toggle("show", on)); return;
+  }
   if (pop.contains(t)) return;
   pop.style.display = "none";
 });
@@ -696,7 +701,7 @@ function renderSettings() {
       <p class="hint">试听词：${esc(sample)}</p>
     </section>
     <section class="panel"><h2>学习</h2>
-      ${sw("mask", "背诵模式", "遮住释义、记忆法和译文，点一下显示。课文页右下角「遮」也能随手切换")}
+      ${sw("mask", "背诵模式", "遮住释义、记忆法和译文；点单词意思一次全开，例句译文单独点开。课文页右下角「遮」也能随手切换")}
       ${sw("hideKnown", "隐藏已会", "标为「已会」的词卡不显示，磨耳朵也跳过它们")}
       ${sw("phLine", "例句词组下划线", "例句里标出的词组（书外补充）画虚线；关掉只是不画线，点词组照样显示词组释义")}
     </section>
