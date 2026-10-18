@@ -224,14 +224,14 @@ const Study = (() => {
     return {g, les: L2.les, items};
   }
 
-  /* ---------- 巩固进度：drill:<范围> = {d 日期, done 本轮已过关的词, st 学习新词每个词 {seen 看过词卡, stage 过了几关, err 错几次},
+  /* ---------- 巩固进度：drill:<范围> = {d 日期, w 这一轮的词单（按出题顺序）, done 本轮已过关的词, st 学习新词每个词 {seen 看过词卡, stage 过了几关, err 错几次},
      rated 第一遍成绩, g 学习新词的词群键}；答一个存一个，同一天再进同一范围接着做，日期不是今天就作废；一轮做完记 0 ---------- */
   const progKey = sc => "drill:" + sc;
   const progGet = sc => { const v = Sync.get(progKey(sc), 0); return v && v.d === T() ? v : null; };
   function progSave() {
     if (!D || !D.save) return;
     const st = {}; for (const [w, s] of D.st) st[w] = {...s};   // 拷一份：D.st 里的对象之后还会改
-    Sync.set(progKey(D.sc), {d: T(), done: [...D.done], st, rated: Object.fromEntries(D.rated), ...(D.lg && D.lg.g ? {g: D.lg.g.key} : {})}, true);
+    Sync.set(progKey(D.sc), {d: T(), ...(D.learn ? {} : {w: D.items.map(x => x.word)}), done: [...D.done], st, rated: Object.fromEntries(D.rated), ...(D.lg && D.lg.g ? {g: D.lg.g.key} : {})}, true);
   }
   const progClear = sc => Sync.set(progKey(sc), 0, true);
 
@@ -303,14 +303,15 @@ const Study = (() => {
     const last = nx && learnMarks().length && ready.findIndex(l => l.id === nx.lid) > ready.findIndex(l => l.id === rd) ? nx.lid : rd, lastL = last && last.match(/u(\d+)-l(\d+)/);
     const nightDone = todays.length && todays.every(x => x.card.t === t);
     const go = (sc, label) => (progGet(sc) ? "接着做" : label);   // 今天做到一半的范围
+    const dueHalf = !!progGet("due");                // 这一轮做到一半：答错的已排到明天、到期数可能清零了，还要能接着做
     const nxn = nx && counts.get(nx.key);
     const step = (done, n, title, desc, action, extra) => `<li class="${done ? "done" : ""}"><span class="dot">${done ? "✓" : n}</span>
       <div class="sd"><b>${title}</b><small>${desc}</small></div>${action || ""}${extra || ""}</li>`;
-    const s1 = step(!due || !left, 1, weekend ? "周日复习" : "早上复习",
+    const s1 = step((!due || !left) && !dueHalf, 1, weekend ? "周日复习" : "早上复习",
       !due ? (lg.dv ? `今天复习了 ${lg.dv} 个，全部清完` : "今天没有到期的词")
         : !left ? `今天已做满 ${cap()} 个，剩下 ${due} 个排到后面几天`
         : `到期 ${due} 个${due > left ? ` · 今天先做 ${left} 个（上限 ${cap()}）` : ""}${Math.min(due, left) > ROUND ? ` · 每轮 ${ROUND} 个` : ""}`,
-      due && left ? btn("#/drill/due", go("due", "开始"), 'variant="brand"') : "");
+      (due && left) || dueHalf ? btn("#/drill/due", go("due", "开始"), 'variant="brand"') : "");
     // 学新：「学习新词」按书顺序一群一群学，学完自动记为今天学的；在电子书、视频里学完的在「学习记录」里勾上，学习新词就跳过它
     const s2 = step(groups > 0, 2, weekend ? "学新（周日可选）" : "学新",
       `${groups ? `今天学了 ${groups} 个词群 · ${nb} 词${plusV}；` : nv ? `今天加了生词 ${nv} 个；` : ""}${nx ? `下一群：${lesTitle(nx.lid)} · 第 ${nx.no} 群 ${esc(nx.title)}<span class="qn" data-qn="${nx.key}">${nxn ? nxn + " 词" : ""}</span>` : "Part 01 的词群全部学完了"}`,
@@ -488,7 +489,7 @@ const Study = (() => {
     setHead("巩固模式");
     const n = sc => scopeInfo(sc).items().length;
     const nx = nextGroups(1)[0];
-    const scopes = [["due", "今天到期", Math.min(dueAll().length, capLeft(), ROUND)], ["learn", "学习新词", nx ? 1 : 0, nx ? `${lesTitle(nx.lid)} 第 ${nx.no} 群` : "全部学完"], ["today", "今天学的"], ["yesterday", "昨天学的"], ["week", "本周学的"],
+    const dueSv = progGet("due"), scopes = [["due", "今天到期", dueSv && dueSv.w ? dueSv.w.length - dueSv.done.length : Math.min(dueAll().length, capLeft(), ROUND)], ["learn", "学习新词", nx ? 1 : 0, nx ? `${lesTitle(nx.lid)} 第 ${nx.no} 群` : "全部学完"], ["today", "今天学的"], ["yesterday", "昨天学的"], ["week", "本周学的"],
       ["lastweek", "上周学的"], ["weeks", "本周 + 上周"], ["hard", "难词本"], ["vocab", "生词本"], ["all", "全部已学"]];
     const units = BOOK.parts.flatMap(p => p.units);
     view().innerHTML = `<div class="picker">
@@ -608,13 +609,17 @@ const Study = (() => {
       if (learn) { lg = await learnItems(); items = lg.items; }
       else {
         items = preset ? preset.items : await itemsOf(sc);
-        if (sv) {   // 上次答错、还没答对的（比如到期的词答错已排到明天，范围里就没有了）接着出
+        if (sv && sv.w) {   // 接着做：按上次的词单出（到期的词答完就排到以后、现取会换一批）；别的范围后来新进来的词接在后面
+          const pos = new Map(sv.w.map((w, i) => [w, i])), cur = sc === "due" ? [] : items, have = new Set(cur.map(x => x.word));
+          const old = [...cur.filter(x => pos.has(x.word)), ...await resolve(liveCards().filter(x => pos.has(x.word) && !have.has(x.word)))];
+          items = [...old.sort((a, b) => pos.get(a.word) - pos.get(b.word)), ...sortBy(cur.filter(x => !pos.has(x.word)), S.drillOrder)];
+        } else if (sv) {   // 旧版进度没存词单   // 上次答错、还没答对的（比如到期的词答错已排到明天，范围里就没有了）接着出
           const have = new Set(items.map(x => x.word));
           const back = liveCards().filter(x => sv.rated[x.word] && !sv.done.includes(x.word) && !have.has(x.word));
           if (back.length) items = [...await resolve(back), ...items];
         }
       }
-      if (!preset && sc !== "due") items = sortBy(items, learn ? "course" : S.drillOrder);   // 到期的已按熟练度排好
+      if (!preset && sc !== "due" && !(sv && sv.w)) items = sortBy(items, learn ? "course" : S.drillOrder);   // 到期的已按熟练度排好
       if (learn || S.drillMode !== "flip") pool = await buildPool(items);
       if ((learn || S.drillMode !== "flip") && items.some(isPh)) pp = await buildPhrasePool(items);
     } catch (err) { loadFail(err); return; }
