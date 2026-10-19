@@ -34,6 +34,23 @@
     }
    ]
   },
+  "My job as a journalist is to expose the truth.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "My job as a journalist",
+      "s": "你可能想翻成「我的工作像一个记者」。放回去试试：我就是记者，不是「像」记者。as 后面跟身份，是「作为」。\n→ 我作为记者的工作"
+     },
+     {
+      "t": "is to expose the truth",
+      "s": "你多半会翻成「是去暴露真相」。is 后面的 to expose 是 to do 短语，当表语用，就是「工作就是做某事」，不用翻出「去」。expose 你可能只认识「暴露」，这里是把藏着的东西拿出来给人看，「揭露」。\n→ 就是揭露真相"
+     }
+    ],
+    "sum": "我作为记者，职责就是揭露真相。",
+    "cmp": "和书上一样，书上把「职责」放在「我作为记者」后面，读起来更像一句完整的话。"
+   }
+  },
   "They find it difficult to dispose of their old-style furniture.": {
    "ph": [
     {
@@ -75,7 +92,38 @@
      "b": "get rid of",
      "m": "除掉，取消"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He intends to get rid of",
+      "s": "intends to 后面跟动词，intend to do 是「打算做某事」，to 在这里是 to do 的一部分。get rid of 你多半会翻成「得到摆脱」，太绕。它是整块记的：get rid of sth. 就是「除掉、摆脱某物」。\n→ 他打算取消"
+     },
+     {
+      "t": "the tipping practice",
+      "s": "你可能想翻成「小费的实践」。practice 在这里是「做法、惯例」。tipping 是 tip（给小费）加 -ing 变成的名词，tipping practice 就是「给小费的做法」。\n→ 给小费的做法"
+     }
+    ],
+    "sum": "他打算取消给小费的做法。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "I suppose it will rain tomorrow, so we should bring umbrellas.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "I suppose it will rain tomorrow",
+      "s": "suppose 你多半会翻成「假设」。念一遍：我假设明天会下雨？有点像做数学题。口语里 I suppose 是「我猜、我想」。后面的 it will rain tomorrow 是宾语从句，前面省略了 that，补回去是 I suppose (that) it will rain tomorrow，「我猜的内容」就是整个从句。\n→ 我猜明天会下雨"
+     },
+     {
+      "t": "so we should bring umbrellas",
+      "s": "这块照字面翻就行：so 是「所以」，should 是「应该」，bring 是「带上」。\n→ 所以我们应该带伞"
+     }
+    ],
+    "sum": "我想明天会下雨，所以我们应该带伞。",
+    "cmp": "和书上一样，「猜」和「想」都可以。"
+   }
   },
   "Its negative effects more than cancel out its positive effects.": {
    "ph": [
@@ -117,7 +165,17 @@
      "b": "be composed of",
      "m": "由……组成"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The earth is composed of several layers",
+      "s": "你多半会翻成「地球被几层组成」。念一遍，中文不这么说。is composed of 外形是被动（be + 过去分词），但它是固定搭配，be composed of 整块记成「由……组成」。of 后面是组成的材料：several layers，「几层」。\n→ 地球由几层组成"
+     }
+    ],
+    "sum": "地球由几层组成。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "He pulls up a music composition textbook, complete with playable demos.": {
    "ph": [
@@ -131,7 +189,21 @@
      "b": "complete with",
      "m": "附有，配有"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He pulls up a music composition textbook",
+      "s": "pulls up 你多半会翻成「拉起」，拉起一本教材？放回去念不通。在电脑或手机上，pull up 是「调出来、打开」，书上译成「拿出」，意思也对。composition 你可能想到「作文」，和 music 放一起是「作曲」，music composition textbook 就是「音乐作曲教材」。\n→ 他调出一本音乐作曲教材"
+     },
+     {
+      "t": "complete with playable demos",
+      "s": "前面有逗号，这是补充说明教材里有什么。complete with 是「附带有、配有」，别翻成「完整的」。playable 是 play 加 -able，「能播放的」；demos 是示范用的小样。\n→ 里面还配有可以播放的小样"
+     }
+    ],
+    "sum": "他调出一本音乐作曲教材，里面还配有可播放的示范小样。",
+    "cmp": "和书上差不多，书上用「里面有」，我用「里面还配有」，complete with 带有「配齐」的意思。"
+   }
   },
   "The emotional component of the prizes is at work.": {
    "ph": [
@@ -215,6 +287,24 @@
     }
    ]
   },
+  "For what purpose is \"the bad option\" added?": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "For what purpose",
+      "s": "你多半会翻成「为了什么目的」。这样翻没错，但放在句首、后面还没看到主语，容易乱。先记下：这是在问「目的」。\n→ 为了什么目的"
+     },
+     {
+      "t": "is \"the bad option\" added",
+      "s": "is added 是被动，就是「被加上」。谁被加？\"the bad option\"，「坏选项」。你可能翻成「坏选项被添加」，中文不爱说「被」，把动作提前：「添加坏选项」。\n→ 添加「坏选项」"
+     }
+    ],
+    "order": "英文是问句，把「为了什么目的」放在最前面；中文可以改成「添加『坏选项』的目的是什么」，把问的东西放到最后。",
+    "sum": "添加「坏选项」是为了什么？",
+    "cmp": "意思一样。书上说成「……的目的是什么」，是把 For what purpose 改成了一个名词「目的」做主语，我这句保留了「为了什么」的问法，两个都对。"
+   }
+  },
   "Rural kids used to walk a long way to school in the old days.": {
    "ph": [
     {
@@ -227,7 +317,22 @@
      "b": "in the old days",
      "m": "在过去"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Rural kids used to walk",
+      "s": "used to 你多半会翻成「被用来」或「习惯于」，放回去都不对。used to 后面跟动词原形（walk），是「过去常常做某事」，现在已经不这样了。Rural 是「农村的」。\n→ 农村的孩子过去常常走"
+     },
+     {
+      "t": "a long way to school in the old days",
+      "s": "你可能把 to school 当成 to do，其实 school 是名词，to school 就是「去学校」。a long way 是「很长的路」。in the old days 是「在过去」，和 used to 呼应。\n→ 很长的路去上学"
+     }
+    ],
+    "order": "英文把「过去」放在句末，中文习惯先说时间，把「过去」提到前面。",
+    "sum": "过去，农村的孩子们常常要走很长的路去上学。",
+    "cmp": "和书上一样。"
+   }
   },
   "It has long been used to increase food supply and improve urban landscape.": {
    "ph": [
@@ -236,7 +341,21 @@
      "b": "be used to do",
      "m": "被用来做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It has long been used",
+      "s": "你多半会翻成「它长期被使用」。been used 是被动，就是「它被别人怎么样了」，has been 表示从以前一直到现在。long 在这里是副词，「长期」。中文可以说「长期以来，它被用来……」。注意 used 后面接什么：接 to 加动词原形（to increase），是「被用来做」；如果是 be used to doing，才是「习惯于」。\n→ 长期以来，它被用来"
+     },
+     {
+      "t": "to increase food supply and improve urban landscape",
+      "s": "to increase 是 to do 短语，说明用途。and 后面的 improve 也在这个 to 管辖里，两个动词并列：to increase … and improve …。food supply 是「食物供给」，urban 是「城市的」。\n→ 增加食物供给和改善城市景观"
+     }
+    ],
+    "sum": "长期以来，它一直被用来增加食物供给、改善城市景观。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "Doing so will send an important message to the nation's youngest citizens.": {
    "ph": [
@@ -245,7 +364,21 @@
      "b": "send a message to",
      "m": "向……传递信息"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Doing so",
+      "s": "一开头就是 Doing，别慌。-ing 开头当主语，就是「做某事」这件事。so 代替的是前面做过的事，这里只翻「这样做」。\n→ 这样做"
+     },
+     {
+      "t": "will send an important message to the nation's youngest citizens",
+      "s": "你多半会翻成「会发送一个重要的信息给国家的最年轻的公民」，太啰嗦了。send a message to 整块记成「向……传递信息」。the nation's youngest citizens 是「这个国家最年轻的公民」。\n→ 将向这个国家最年轻的公民传递一个重要信息"
+     }
+    ],
+    "sum": "这样做会向这个国家最年轻的公民传递一个重要的信息。",
+    "cmp": "书上把 the nation 具体写成了「美国」，句子本身只写了「国家」，所以我这里按字面译成「这个国家」。其余一样。"
+   }
   },
   "We have been actively exercising our civil rights.": {
    "ph": [
@@ -263,7 +396,38 @@
      "b": "a way to do",
      "m": "做……的好方法"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It's a great way to promote cultural understanding and exchange",
+      "s": "to promote 是 to do 短语，在 way 后面补充说明「什么样的方法」，眼睛往前找：promote 说的是 way 的用途，「促进……的好方法」。promote 你可能只认识「晋升」，这里是「促进」。cultural 同时管 understanding 和 exchange：文化理解和文化交流。\n→ 这是促进文化理解和交流的好方法"
+     },
+     {
+      "t": "we welcome that",
+      "s": "你多半会翻成「我们欢迎那个」，太硬。that 是指上一句话说的事，中文说成「对此」就够了。\n→ 我们对此表示欢迎"
+     }
+    ],
+    "sum": "这是促进文化理解和交流的好办法，我们对此表示欢迎。",
+    "cmp": "和书上基本一样，书上用分号隔开，我改成了逗号，更顺口。"
+   }
+  },
+  "Further measures are needed to protect civilians.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Further measures are needed",
+      "s": "你多半会翻成「进一步的措施被需要」。are needed 是被动，就是「措施被别人需要」，中文不这么说，改成「需要采取进一步措施」。further 是「进一步的」。\n→ 需要采取进一步措施"
+     },
+     {
+      "t": "to protect civilians",
+      "s": "to protect 是 to do 短语，说明目的，「为了保护……」。civilians 不是 citizens，指不当兵的人，「平民」。中文可以把「为了」省掉，直接说「保护平民」。\n→ 以保护平民"
+     }
+    ],
+    "sum": "需要采取进一步措施来保护平民。",
+    "cmp": "和书上一样，书上直接把两块连成「采取进一步措施保护平民」，更紧凑。"
+   }
   },
   "Across the country, 285 emergency management teams are devoted to crisis control.": {
    "ph": [
@@ -277,7 +441,21 @@
      "b": "be devoted to",
      "m": "致力于"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Across the country",
+      "s": "你多半会翻成「穿过国家」。放回去念：不对，没人在走。across the country 是「遍及全国」，也就是「全国范围内」。\n→ 全国"
+     },
+     {
+      "t": "285 emergency management teams are devoted to crisis control",
+      "s": "are devoted 看着像被动（be + 过去分词），你可能翻成「被奉献」，放回去不通。be devoted to 是固定搭配，「致力于」，to 是介词，后面接名词 crisis control（危机控制），不接动词原形。emergency management teams 是「应急管理小组」。\n→ 有 285 个应急管理小组致力于危机控制"
+     }
+    ],
+    "sum": "全国有 285 个应急管理小组致力于危机控制。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "It sets a bar for similar initiatives across the county.": {
    "ph": [
@@ -295,7 +473,22 @@
      "b": "social media",
      "m": "社交媒体"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It has been popularised worldwide",
+      "s": "你多半会翻成「它已经被普及了全世界」。has been popularised 是被动，就是「它被别人怎么样了」。popularise 是「使流行、使普及」，中文常说成「得到普及」。worldwide 是副词，「在全球范围内」。\n→ 它在全球范围内得到了普及"
+     },
+     {
+      "t": "with the increasing influence of social media",
+      "s": "with 你可能翻成「和」，放回去不通。这里是「随着」，后面跟一件在变化的事。increasing 是 -ing 形容词，「日益增强的」。influence of social media 就是「社交媒体的影响力」。\n→ 随着社交媒体影响力日益增强"
+     }
+    ],
+    "order": "英文把「随着」放后面，中文习惯先说背景，所以把 with 这块提到前面。",
+    "sum": "随着社交媒体影响力的日益增强，它在全球范围内得到了普及。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "The dance group performs throughout the year but was now preparing for its biggest events.": {
    "ph": [
@@ -337,7 +530,38 @@
      "b": "be surrounded by",
      "m": "被……包围"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "I am making my way through Columbia University",
+      "s": "你多半会翻成「我正在制造我的路」。make one's way 是固定搭配，「前进、前往」，am making 是进行时，表示「正在」。后面 through 是「穿过」。\n→ 我正穿过哥伦比亚大学"
+     },
+     {
+      "t": "surrounded by students",
+      "s": "前面有逗号，surrounded by students 是 -ed 短语，补充说明「我」此刻的状态。surrounded 是「被包围着」，周围都是学生。\n→ 身边都是学生"
+     }
+    ],
+    "sum": "我正穿过哥伦比亚大学，身边都是学生。",
+    "cmp": "书上说「我正在哥伦比亚大学的路上」，没有把 through 的「穿过」译出来。我这里保留了「穿过」，意思更贴原文。"
+   }
+  },
+  "Eggs provide a unique surface to paint on.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Eggs provide a unique surface",
+      "s": "这块照字面翻就行。provide 是「提供」，unique 是「独特的」，surface 是「表面」。\n→ 鸡蛋提供了一个独特的表面"
+     },
+     {
+      "t": "to paint on",
+      "s": "你可能翻成「来画」，然后发现最后的 on 没处放。to paint on 是 to do 短语，补充说明 surface，把 surface 放回 paint on 后面试试：paint on a surface，「在一个表面上画」。所以 on 是 paint 的搭配，不用单独翻。\n→ 可以在上面作画"
+     }
+    ],
+    "sum": "鸡蛋提供了一个可以在上面作画的独特表面。",
+    "cmp": "意思和书上一样。书上说「为绘画提供了一个独特的表面」，更短，我把「在上面」翻出来，是为了把句尾的 on 交代清楚。"
+   }
   },
   "The terms \"global warming\" and \"climate change\" are used by us.": {
    "ph": [
@@ -351,7 +575,22 @@
      "b": "climate change",
      "m": "气候变化"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The terms \"global warming\" and \"climate change\"",
+      "s": "terms 你多半翻成「条款」，这里不对，是「术语、说法」。两个词都是名词短语，global warming 是「全球变暖」，climate change 是「气候变化」。\n→ 「全球变暖」和「气候变化」这两个术语"
+     },
+     {
+      "t": "are used by us",
+      "s": "你多半会翻成「被我们使用」。are used 是被动，就是「它们被别人怎么样了」，by us 点出了谁在用。中文不爱说「被」，把 us 提出来当主语：我们使用这两个词。\n→ 被我们使用"
+     }
+    ],
+    "order": "被动句里 by 后面的人，中文习惯放到句首当主语，再把「被」去掉：「我们使用『全球变暖』和『气候变化』这两个术语」。",
+    "sum": "我们使用「全球变暖」和「气候变化」这两个术语。",
+    "cmp": "书上保留了「被我们使用」，意思没错，但读起来有翻译腔。我改成了主动，更像日常中文。"
+   }
   },
   "People are ungrateful when in a bad mood.": {
    "ph": [
@@ -360,7 +599,22 @@
      "b": "in a bad mood",
      "m": "心情不好"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "People are ungrateful",
+      "s": "ungrateful 是 grateful（感激的）前面加 un-，「不感激的」。你多半会翻成「人们是不感激的」，中文可以说得更活：「不领情」。\n→ 人们不领情"
+     },
+     {
+      "t": "when in a bad mood",
+      "s": "你可能觉得 when 后面没有主语，怪。这里是省略：when (they are) in a bad mood，省略了和主句一样的 they are。when 带的是时间状语从句，就是「在……的时候」。in a bad mood 是「心情不好」。\n→ 在心情不好的时候"
+     }
+    ],
+    "order": "中文习惯先说时间，把「心情不好的时候」提到前面。",
+    "sum": "人们心情不好的时候，是不领情的。",
+    "cmp": "和书上一样。"
+   }
   },
   "This subject lies beyond the scope of our investigation.": {
    "ph": [
@@ -370,6 +624,24 @@
      "m": "超出……的范围"
     }
    ]
+  },
+  "He felt disappointed working in the environment.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "He felt disappointed",
+      "s": "felt 你可能翻成「摸到、感觉到」。feel 后面接 disappointed 这类形容词，是「觉得……」，felt disappointed 就是「感到失望」。\n→ 他感到失望"
+     },
+     {
+      "t": "working in the environment",
+      "s": "working 是 -ing 短语，补充说明「他失望是在什么情况下」，就是「在这种环境下工作时」。the environment 里的 the，中文常译成「这种」。\n→ 在这种环境中工作时"
+     }
+    ],
+    "order": "中文可以把「在这种环境中工作」提到前面当主语，写成「在这种环境中工作让他感到失望」。",
+    "sum": "他在这种环境中工作时感到失望。",
+    "cmp": "书上把 working 当作原因提到了前面，写成「在这种环境中工作让他感到失望」，也通。我这句保留了原文的先后顺序。"
+   }
   },
   "One is forced by circumstances to stop working.": {
    "ph": [
@@ -420,7 +692,21 @@
      "b": "in academic circles",
      "m": "在学术圈"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Start a public discussion on",
+      "s": "句子一开头就是动词，没有主语，这是祈使句，就是「请你开始……」，不用翻出主语。public discussion 是「公开的讨论」，on 是「就……」。\n→ 就……展开公开讨论"
+     },
+     {
+      "t": "how to raise women's status in academic circles",
+      "s": "how to raise 是疑问词加 to do，就是「怎么做某事」。raise 是「提高」，不是 rise。circle 你可能想到「圆」，academic circles 是「学术圈」。\n→ 如何提高女性在学术圈的地位"
+     }
+    ],
+    "sum": "就如何提高女性在学术圈的地位展开公开讨论。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "Eggs have an oval shape appealing to artists.": {
    "ph": [
@@ -429,7 +715,21 @@
      "b": "appeal to",
      "m": "对……有吸引力"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Eggs have an oval shape",
+      "s": "oval 你可能当成「圆形」，其实是「椭圆形」。have an oval shape 字面翻是「有一个椭圆形」，中文更习惯说「呈椭圆形」。\n→ 鸡蛋呈椭圆形"
+     },
+     {
+      "t": "appealing to artists",
+      "s": "你多半会翻成「正在吸引艺术家的」，放回去念不通。appealing 是 -ing 短语，说明前面的 shape（形状）怎么样，眼睛往前找。appeal to 是「对……有吸引力」，所以是「对艺术家有吸引力的」。\n→ 对艺术家很有吸引力"
+     }
+    ],
+    "sum": "鸡蛋呈椭圆形，对艺术家很有吸引力。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "The earth takes a year to make a circuit of the sun.": {
    "ph": [
@@ -536,7 +836,22 @@
      "b": "letter of protest",
      "m": "抗议信"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It kept sending",
+      "s": "你多半会翻成「它保持发送」，中文不这么说。keep doing 是「一直做某事」，kept 是过去式，sending 是 -ing，说明一直在重复发。\n→ 它不断发送"
+     },
+     {
+      "t": "letters of protest to the media",
+      "s": "letters of protest 你可能翻成「抗议的信」，其实 of protest 是说明信的内容，「抗议信」就行。to the media 是「向媒体」。\n→ 抗议信给媒体"
+     }
+    ],
+    "order": "to the media 在中文里放到动词前面更顺：「向媒体不断发抗议信」。",
+    "sum": "它不断向媒体发抗议信。",
+    "cmp": "和书上基本一样。"
+   }
   }
  }
 }

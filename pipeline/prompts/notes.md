@@ -76,7 +76,7 @@
 - 找指代、找搭配，一律给能动手的办法，不直接甩结论：定语从句、which / that / it 指谁，就把**至少两个**候选名词一个个放回去试，说清哪个说得通、哪个说不通；被拆开的搭配，说「眼睛往后找……」
 - **只讲看得到的东西**：你只有这一句话和书上的译文。不要写「前文说的……」「斜体」「上下文里」；句首的 It / They 不知道指什么，就不讲它指谁
 - **cmp 只能照书上译文说**：提到书上怎么译，要逐字引用书译里真有的字，不能编书上没有的词
-- **语法说法要准**，没把握就不说。例：两个 -ing 并列作主语，一般用复数谓语；Steering through change and facing obstacles brings… 用单数，是因为把两件事当成一整件事，不是「两件事一起当主语才用单数」。calorie 是名词，不是形容词
+- **语法说法要准**，没把握就不说。例：两个 -ing 并列作主语，一般用复数谓语；Steering through change and facing obstacles brings… 用单数，是因为把两件事当成一整件事，不是「两件事一起当主语才用单数」。calorie 是名词，不是形容词。句首 It 后面跟 to do / that 从句时，先想是不是形式主语：It requires consistent education to be financially independent. 里真正的主语是 to be financially independent，不是「表目的」。namely 引出的是同位语，不是插入语
 - sum 用自然、规范的中文，可以比书译口语，但不要「顶不太住」这类太随意的说法
 - would / could / might：说清是时态呼应（前面是过去时）、虚拟（有 if 条件，或和事实相反）还是委婉语气，**要说出依据**
 - 中文里的引号用「」，不要用 `"`（会破坏 JSON）；英文原句里本来就有的双引号，在键和 `t` 里照抄并写成 `\"` 转义

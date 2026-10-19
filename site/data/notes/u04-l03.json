@@ -32,7 +32,22 @@
      "b": "attempt to do",
      "m": "试图做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Many others attempted to transplant",
+      "s": "你多半会翻成「许多其他人尝试了移植」。attempted 后面的 to transplant 是 to do 短语（to + 动词），attempt to do 合起来是「试图做某事」，眼睛往后找 to 后面的动词：transplant。transplant 本来是把植物移栽，这里是把习惯传统「搬过去」。\n→ 许多其他人试图把……移植过去"
+     },
+     {
+      "t": "their habits and traditions to the new world",
+      "s": "这块照字面翻就行：their 是「他们的」，to the new world 是「到新世界」，放在 transplant 后面说明搬到哪儿。\n→ 他们的习惯和传统到新世界"
+     }
+    ],
+    "order": "把宾语「他们的习惯和传统」提到动词前面，再说「移植到新世界」，读起来更顺。",
+    "sum": "还有许多人试图把自己的习惯和传统移植到新世界。",
+    "cmp": "和书上基本一样，意思没有差别。"
+   }
   },
   "It will force cities to transform their infrastructure.": {
    "ph": [
@@ -46,7 +61,38 @@
      "b": "force sb. to do",
      "m": "迫使某人做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It will force cities",
+      "s": "force 后面跟了人（cities），眼睛往后找 to：force sb. to do，是「迫使某人做某事」。to transform 是 to do 短语，说的就是被迫去做的事，做这件事的是 cities。\n→ 这将迫使城市"
+     },
+     {
+      "t": "to transform their infrastructure",
+      "s": "transform 你可能只认识「变形」，这里是「改造、改变」。their 指谁？放回去试：城市的基础设施，说得通。infrastructure 是「基础设施」。\n→ 改造它们的基础设施"
+     }
+    ],
+    "sum": "这将迫使城市改造它们的基础设施。",
+    "cmp": "和书上几乎一样，书上用「改变其基础设施」，「改造」对基础设施更常用一点。"
+   }
+  },
+  "The train now standing at platform 1 is for Leeds.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The train now standing at platform 1",
+      "s": "你多半会翻成「现在站在1号站台的火车」。念一遍，火车又不会站着。standing 是 -ing 短语放在名词后面，说明这是哪一趟车，就是「正……的那趟」。这里 stand 是「停着」，所以是「现在停在1号站台的火车」。\n→ 现在停在1号站台的火车"
+     },
+     {
+      "t": "is for Leeds",
+      "s": "be for 后面跟地名，意思是「开往」，不是「为了」。\n→ 开往利兹"
+     }
+    ],
+    "sum": "现在停在1号站台的这趟火车开往利兹。",
+    "cmp": "意思一样，书上少了「现在」，原句里的 now 可以补上。"
+   }
   },
   "She is used to taking public transport.": {
    "ph": [
@@ -60,7 +106,56 @@
      "b": "public transport",
      "m": "公共交通工具"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She is used to",
+      "s": "你多半会翻成「她被用来」。放回去念一遍，不通。看后面跟的是 taking，不是 take：be used to 后面加 -ing，是「习惯于」，这个 to 是介词。要是后面是 to take，才是「被用来做」。\n→ 她习惯于"
+     },
+     {
+      "t": "taking public transport",
+      "s": "taking 是 -ing 短语，放在介词 to 后面，就是「做某事这件事」。public transport 是一个整体，指公共交通工具。\n→ 乘坐公共交通工具"
+     }
+    ],
+    "sum": "她习惯乘坐公共交通工具。",
+    "cmp": "和书上一样。"
+   }
+  },
+  "He had to transit a forest to reach the finish line.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "He had to transit a forest",
+      "s": "had to 是「不得不、必须」。transit 你多半只见过名词「运输、过境」，于是翻成「他必须运输一片森林」。森林怎么运？这里它是动词，就是「穿过」。\n→ 他必须穿过一片森林"
+     },
+     {
+      "t": "to reach the finish line",
+      "s": "to reach 是 to do 短语，放在句尾说「为了做什么」，也就是穿过森林的目的。finish line 是「终点线」。\n→ 才能到达终点线"
+     }
+    ],
+    "sum": "他必须穿过一片森林，才能到达终点线。",
+    "cmp": "和书上一样。"
+   }
+  },
+  "Let the debates be transparent and vigorous, wherever they are held.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Let the debates be transparent and vigorous",
+      "s": "一上来是 Let，这是祈使句，Let sth. be adj. 就是「让……保持成什么样」。transparent 你多半翻成「透明的」，辩论怎么透明？这里指公开、不遮掩。vigorous 是「有力的、热烈的」。\n→ 让辩论公开透明、热烈有力"
+     },
+     {
+      "t": "wherever they are held",
+      "s": "wherever 带的是让步状语从句，就是「无论在哪里」。they 指谁？放回去试：debates 被举行，说得通。are held 是被动，就是「辩论被举行」，中文说成「在哪里举行」就行。\n→ 无论在哪里举行"
+     }
+    ],
+    "order": "英文把 wherever 放后面，中文习惯先说「无论……」，所以提到前面。",
+    "sum": "无论在哪里举行，辩论都应该公开透明、热烈有力。",
+    "cmp": "书上把 transparent 译成「易懂」，我觉得这里说「公开透明」更贴近原词；其余意思一样。"
+   }
   },
   "These invisible duties become apparent only when you don't do them.": {
    "ph": [
@@ -115,7 +210,44 @@
      "b": "take place",
      "m": "发生"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "There was no evidence",
+      "s": "There was 是「有」，no evidence 是「没有证据」。\n→ 没有证据"
+     },
+     {
+      "t": "that the meeting took place",
+      "s": "你可能想把 that 翻成「那个」。看 that 后面：the meeting took place，主语谓语都齐了，是一个完整的句子。这样的 that 带的是同位语从句，就是给前面的 evidence 说明「证据的内容是什么」。放回去试：证据的内容 = 会议举行了。took place 是「发生、举行」。\n→ 表明这次会议举行过"
+     }
+    ],
+    "sum": "没有证据表明这次会议举行过。",
+    "cmp": "和书上基本一样，书上把 meeting 译成「会面」，我译成「会议」。"
+   }
+  },
+  "Each time this initial memory trace is \"replayed\", it becomes even stronger.": {
+   "ph": [
+    {
+     "t": "Each time",
+     "b": "each time",
+     "m": "每当，每次"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Each time this initial memory trace is \"replayed\"",
+      "s": "你多半会翻成「每次的时间这条记忆痕迹被重播」。念一遍，断成两截了。Each time 后面跟了一整句话，所以它带的是时间状语从句，就是「每当……的时候」。is replayed 是被动，就是「这段记忆被重播」。memory trace 是「记忆痕迹」。\n→ 每当这条最初的记忆痕迹被「重播」时"
+     },
+     {
+      "t": "it becomes even stronger",
+      "s": "it 指谁？放回去试：记忆痕迹变得更强，说得通。even 放在比较级 stronger 前面，是「更加、甚至更」，不是「平的」。\n→ 它就会变得更加牢固"
+     }
+    ],
+    "sum": "每当这条最初的记忆痕迹被「重播」一次，它就会变得更加牢固。",
+    "cmp": "意思一样。书上说「更加强烈」，对记忆来说，「牢固」更自然一点。"
+   }
   },
   "Isn't this the same crowd that rails against processed junk and champions craft cooking?": {
    "ph": [
@@ -185,7 +317,21 @@
      "b": "a boom in",
      "m": "……的繁荣"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It still has a chance",
+      "s": "你多半会翻成「它仍然有一个机会」。别停在这儿，眼睛往后找 to：a chance to do，是「有机会做某事」，to 后面才是机会的内容。\n→ 它仍有机会"
+     },
+     {
+      "t": "to give rise to a boom in the global economy",
+      "s": "give rise to 拆开翻成「给上升」是读不通的，要当成一个整体记：「引起、带来」。boom 是「繁荣、激增」，a boom in 是「……方面的繁荣」。\n→ 带来全球经济的繁荣"
+     }
+    ],
+    "sum": "它仍有机会带动全球经济的繁荣。",
+    "cmp": "和书上意思一样。"
+   }
   },
   "With the development in science and technology man can make various flowers bloom before their time.": {
    "ph": [
@@ -204,7 +350,42 @@
      "b": "before one's time",
      "m": "提前，不到时候"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "With the development in science and technology",
+      "s": "你可能想翻成「带着科学技术的发展」。这里的 With 放在句首，说的是背景，中文用「随着」。development in 是「……方面的发展」。\n→ 随着科学技术的发展"
+     },
+     {
+      "t": "man can make various flowers bloom",
+      "s": "make 后面跟了 flowers，再跟 bloom，中间没有 to，这是 make sb. do，「使某人 / 某物做什么」。谁 bloom？flowers，不是 man。man 这里指泛指的人类。\n→ 人们可以使各种各样的花开放"
+     },
+     {
+      "t": "before their time",
+      "s": "字面是「在它们的时间之前」，说白了就是「提前」。their 指花。\n→ 提前"
+     }
+    ],
+    "sum": "随着科学技术的发展，人们可以让各种各样的花提前开放。",
+    "cmp": "和书上基本一样，书上用「提前绽放」。"
+   }
+  },
+  "We watched the boats come back in the gathering gloom.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "We watched the boats come back",
+      "s": "watched 后面跟了 the boats，再跟 come back，中间没有 to，这是 watch sb. do，「看着某人 / 某物做完一个动作」。谁 come back？boats。\n→ 我们看着船只返航"
+     },
+     {
+      "t": "in the gathering gloom",
+      "s": "你多半会翻成「在聚集的阴暗里」，中文不这么说。gathering 是 -ing 形容词，gather 是「聚集」，gloom 是昏暗，合起来是昏暗越聚越多，也就是天色渐渐黑下来、「暮色渐浓」。\n→ 在渐浓的暮色中"
+     }
+    ],
+    "sum": "我们看着船只在渐浓的暮色中返航。",
+    "cmp": "和书上基本一样，书上用「越来越浓」。"
+   }
   },
   "He bragged about how brave he was.": {
    "ph": [
@@ -213,7 +394,21 @@
      "b": "brag about",
      "m": "吹嘘"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He bragged about",
+      "s": "brag about 是「吹嘘」，about 后面接吹嘘的内容。\n→ 他吹嘘"
+     },
+     {
+      "t": "how brave he was",
+      "s": "你可能把它当成疑问句，翻成「他有多勇敢吗」。看语序：how brave he was，he 在 was 前面，不是疑问句的倒装。这是 how 带的宾语从句，就是 about 后面的内容「他有多勇敢」。was 用过去时，是因为前面 bragged 是过去的事。\n→ 自己有多勇敢"
+     }
+    ],
+    "sum": "他吹嘘自己有多勇敢。",
+    "cmp": "和书上一样，书上用「多么勇敢」。"
+   }
   },
   "Many governments have done more than the US government in providing the raw materials for innovation.": {
    "ph": [],
@@ -235,6 +430,73 @@
     "order": "英文先说「做得更多」，再补范围；中文习惯先交代范围：在为创新提供原材料方面，许多政府比美国政府做得更多。",
     "sum": "在为创新提供原材料方面，许多政府比美国政府做得更多。",
     "cmp": "书上译成「在提供原材料促进创新方面，许多政府比美国政府做得更多」，意思一样，也先说了范围。「促进创新」把 for innovation 说成动作，我的「为创新提供」更贴近原文。"
+   }
+  },
+  "Pick the tomatoes before they get too ripe.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Pick the tomatoes",
+      "s": "你多半会翻成「摘西红柿」，这没错，但别漏了语气：一开头就是动词，这是祈使句，是对人下指令，翻成「请……」或者直接说动作。pick 是「摘」。\n→ 把西红柿摘下来"
+     },
+     {
+      "t": "before they get too ripe",
+      "s": "before 带的是时间状语从句，就是「在……之前」。they 指谁？放回去试：西红柿太熟，说得通。get 在这里是「变得」，ripe 是「成熟的」，too ripe 是熟过头。\n→ 趁它们还没熟过头"
+     }
+    ],
+    "order": "英文先说摘，再说 before，中文习惯用「趁……」放前面，所以把后半句挪到前面。",
+    "sum": "趁西红柿还没熟过头，把它们摘下来。",
+    "cmp": "意思一样，书上的语序更贴近英文，我这样写口语一点。"
+   }
+  },
+  "Now is the time to reap.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Now is the time to reap",
+      "s": "你多半会翻成「现在是时间去收获」。念一遍，别扭。to reap 是 to do 短语，放在 the time 后面补充说明，就是「该做……的时候」。reap 本来是「收割」，这里是「收获」。\n→ 现在是收获的时候了"
+     }
+    ],
+    "sum": "现在是收获的时候了。",
+    "cmp": "和书上一样。"
+   }
+  },
+  "Their grain yields have begun to decrease sharply in recent years.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Their grain yields",
+      "s": "你多半会翻成「他们的粮食屈服」。念一遍，粮食怎么屈服？yield 你多半想到「屈服」，那是动词。这里 yields 是名词复数，就是「产量」。grain 是「粮食」。\n→ 他们的粮食产量"
+     },
+     {
+      "t": "have begun to decrease sharply in recent years",
+      "s": "have begun 是现在完成时，和 in recent years 配合，说的是「近年来一直到现在」。begin to do 是「开始做某事」，to decrease 是 to do 短语，decrease 是「下降」，sharply 是「急剧地」。\n→ 近年来已开始急剧下降"
+     }
+    ],
+    "order": "英文把时间 in recent years 放最后，中文习惯放在句首。",
+    "sum": "近年来，他们的粮食产量已经开始急剧下降。",
+    "cmp": "和书上一样。"
+   }
+  },
+  "He is able to think and speak like a mature adult.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "He is able to think and speak",
+      "s": "be able to do 是「能够做某事」，眼睛往后找 to 后面的动词：think and speak，两个动作并列，都是「能够」做的。\n→ 他能够思考和说话"
+     },
+     {
+      "t": "like a mature adult",
+      "s": "like 在这里是介词「像」，不是「喜欢」。mature 你可能想到动词「成熟」，这里是形容词，「成熟的」。\n→ 像一个成熟的成年人一样"
+     }
+    ],
+    "order": "「像……一样」放在动词前面，中文才顺。",
+    "sum": "他能像成熟的成年人一样思考和说话。",
+    "cmp": "和书上意思一样。"
    }
   },
   "Land currently ploughed up for crops might be able to revert to forest or wilderness.": {
@@ -281,7 +543,22 @@
      "b": "the same can be said of",
      "m": "对……也是如此"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The same can be said of",
+      "s": "你多半会翻成「同样的可以被说关于」，读不通。can be said 是被动，就是「可以被说」。The same can be said of A 是一个整体，意思是「A 也是如此」。看到 of，后面跟的就是「也是如此」的对象。\n→ 对……也是如此"
+     },
+     {
+      "t": "their ability to dominate the corporate boardroom",
+      "s": "to dominate 是 to do 短语，放在 ability 后面补充说明，就是「做……的能力」。dominate 是「主导、支配」，corporate boardroom 是「公司董事会」。\n→ 他们主导公司董事会的能力"
+     }
+    ],
+    "order": "英文先说「也是如此」，再说对象；中文把对象挪到前面，再说「也是如此」。",
+    "sum": "他们主导公司董事会的能力也是如此。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "It is playing a dominant role in the film market.": {
    "ph": [
@@ -291,6 +568,23 @@
      "m": "在……中发挥作用"
     }
    ]
+  },
+  "To lower domestic food prices, some countries limited or stopped their grain exports.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "To lower domestic food prices",
+      "s": "句首的 To lower 是 to do 短语，表目的，就是「为了做某事」。domestic 你可能只想到「家庭的」，这里是「国内的」。\n→ 为了降低国内的食品价格"
+     },
+     {
+      "t": "some countries limited or stopped their grain exports",
+      "s": "limited or stopped 是两个动词并列，共用同一个宾语。exports 在这里是名词复数，「出口（的货物）」。\n→ 一些国家限制或停止了粮食出口"
+     }
+    ],
+    "sum": "为了降低国内食品价格，一些国家限制或停止了粮食出口。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Paying an allowance for completing chores benefits their children.": {
    "ph": [],
@@ -375,6 +669,23 @@
     "cmp": "书上译成「有些人愚蠢到想要孩子只是因为看到别人这样做」，意思一样。「这样做」是照字面翻 do so，我换成了「也想要」，更具体。"
    }
   },
+  "They were complete clock watchers, while I would have liked a more flexible schedule.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "They were complete clock watchers",
+      "s": "你多半会翻成「他们是完整的钟表观察者」，这不是人话。clock watcher 说的是总盯着时钟、一到点就走人的人，complete 是「彻头彻尾的」。\n→ 他们是彻头彻尾总盯着时钟的人"
+     },
+     {
+      "t": "while I would have liked a more flexible schedule",
+      "s": "while 这里不是「当……的时候」，而是表示对比，「而」。would have liked 是 would have + 过去分词，说的是过去没能实现的愿望，意思是「本来希望……（可惜没有）」。依据：前半句说他们总盯着钟，后半句说我想要更灵活的安排，是在对比。schedule 是「时间安排」。\n→ 而我本来希望时间安排更灵活些"
+     }
+    ],
+    "sum": "他们是彻头彻尾总盯着时钟的人，而我本来希望时间安排更灵活些。",
+    "cmp": "书上把 clock watchers 译成「守时者」，守时是好事，原词说的是一到点就看钟等下班，我觉得不贴切；「我希望有一个更灵活的时间表」也没有体现 would have liked 的「本来想要」。"
+   }
+  },
   "Universities want the government to introduce a loan scheme for tuition fees.": {
    "ph": [
     {
@@ -392,7 +703,39 @@
      "b": "tuition fees",
      "m": "学费"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Universities want the government to introduce",
+      "s": "want 后面跟了人（the government），眼睛往后找 to：want sb. to do，是「想要某人做某事」。谁 introduce？不是大学，是政府。introduce 在这里是「推出」。\n→ 大学希望政府推出"
+     },
+     {
+      "t": "a loan scheme for tuition fees",
+      "s": "scheme 你可能想到「阴谋」，这里是「计划、方案」。loan scheme 是「贷款计划」，for tuition fees 是「用于学费的」。\n→ 一项学费贷款计划"
+     }
+    ],
+    "sum": "大学希望政府推出一项学费贷款计划。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "Information protection is high on the boss's agenda in businesses of every variety.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Information protection is high on the boss's agenda",
+      "s": "你多半会翻成「信息保护在老板的议程上很高」。念一遍，议程怎么会高？be high on the agenda 是一个整体，议程上排得靠前，也就是「优先考虑、很重要」。\n→ 信息保护是老板们优先考虑的事"
+     },
+     {
+      "t": "in businesses of every variety",
+      "s": "of every variety 是「各种各样的」，修饰前面的 businesses，说白了就是「各行各业」。\n→ 在各行各业"
+     }
+    ],
+    "order": "英文把范围放在句尾，中文习惯先说范围，所以把「在各行各业」提到前面。",
+    "sum": "在各行各业，信息保护都是老板们优先考虑的事。",
+    "cmp": "意思一样，书上的「议事日程」更书面，我把它翻成了更口语的说法。"
+   }
   },
   "We love to establish a routine and stick with it.": {
    "ph": [
@@ -401,7 +744,39 @@
      "b": "stick with",
      "m": "坚持"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "We love to establish a routine",
+      "s": "love to do 是「喜欢做某事」。routine 你可能想到「例行公事」，这里是「日常惯例、固定的做法」。\n→ 我们喜欢建立一套日常惯例"
+     },
+     {
+      "t": "and stick with it",
+      "s": "and 连的是 establish 和 stick with，两个动作都是 love to 后面要做的事。stick with 是「坚持」。it 指谁？放回去试：坚持这套惯例，说得通。\n→ 并坚持下去"
+     }
+    ],
+    "sum": "我们喜欢建立一套日常惯例，并且坚持下去。",
+    "cmp": "意思和书上一样。"
+   }
+  },
+  "I followed my route like I normally do.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "I followed my route",
+      "s": "你多半会翻成「我跟随我的路线」，follow 在这里是「沿着走」，route 是「路线」，说成「沿着自己的路线走」就顺了。\n→ 我沿着自己的路线走"
+     },
+     {
+      "t": "like I normally do",
+      "s": "like 后面跟了一整句话 I normally do，这个 like 当连词用，口语里表示「像……那样」。do 是替身，代替前面的 followed my route，免得重复。\n→ 像我平时那样"
+     }
+    ],
+    "order": "「像平时那样」放前面，中文更顺。",
+    "sum": "我像平时一样走自己的路线。",
+    "cmp": "和书上一样，书上用「往常」。"
+   }
   },
   "To get to the place requires going through a very narrow passage.": {
    "ph": [
@@ -415,7 +790,38 @@
      "b": "go through",
      "m": "经过，穿过"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "To get to the place",
+      "s": "句首的 To get to 是 to do 短语，当主语，就是「做某事这件事」。get to 是「到达」。\n→ 要到达这个地方"
+     },
+     {
+      "t": "requires going through a very narrow passage",
+      "s": "你多半会翻成「要求通过」。主语是一件事，不是人，所以 require 是「需要」。going through 是 -ing 短语，放在 require 后面当宾语，「经过、穿过」。passage 你可能想到「文章段落」，这里是「通道」。\n→ 需要穿过一条非常狭窄的通道"
+     }
+    ],
+    "sum": "要到达这个地方，需要穿过一条非常狭窄的通道。",
+    "cmp": "和书上基本一样，书上用「经过」。"
+   }
+  },
+  "The original interior of the hotel has been replaced.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The original interior of the hotel",
+      "s": "interior 这里是名词，指「内部（装潢）」。original 是「原来的」。\n→ 旅馆原来的内部装潢"
+     },
+     {
+      "t": "has been replaced",
+      "s": "你多半会翻成「已经被替换了」。has been replaced 是被动（现在完成时），就是「被别人换掉了」。谁换的不重要，中文少用「被」，直接说「换掉了」就行。\n→ 已经换掉了"
+     }
+    ],
+    "sum": "旅馆原来的内部装潢已经换掉了。",
+    "cmp": "和书上几乎一样，书上用「更换掉了」。"
+   }
   },
   "The exterior lights of the house came on as I approached the door.": {
    "ph": [
@@ -424,57 +830,22 @@
      "b": "come on",
      "m": "（灯）亮起"
     }
-   ]
-  },
-  "The news media reported extensively on the story.": {
-   "ph": [
-    {
-     "t": "reported",
-     "b": "report on",
-     "m": "报道"
-    },
-    {
-     "t": "on",
-     "b": "report on",
-     "m": "报道"
-    }
-   ]
-  },
-  "It creates a lot of trouble for local residents.": {
-   "ph": [
-    {
-     "t": "a lot of",
-     "b": "a lot of",
-     "m": "许多"
-    }
-   ]
-  },
-  "It is an old city with many sites of historical interest.": {
-   "ph": [
-    {
-     "t": "of historical interest",
-     "b": "of historical interest",
-     "m": "有历史意义的"
-    }
-   ]
-  },
-  "I clicked on the link to the next page of the website.": {
-   "ph": [
-    {
-     "t": "clicked on",
-     "b": "click on",
-     "m": "单击"
-    }
-   ]
-  },
-  "Each time this initial memory trace is \"replayed\", it becomes even stronger.": {
-   "ph": [
-    {
-     "t": "Each time",
-     "b": "each time",
-     "m": "每当，每次"
-    }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The exterior lights of the house came on",
+      "s": "你多半会翻成「房子的外部灯来上」。exterior 是「外面的」，come on 说的是灯「亮起来」。\n→ 房子外面的灯亮了"
+     },
+     {
+      "t": "as I approached the door",
+      "s": "as 你可能翻成「因为」，因为我走近门，灯就亮？意思不对。这里 as 带的是时间状语从句，就是「在……的时候」，两件事同时发生。approach 是「走近」。\n→ 当我走近门的时候"
+     }
+    ],
+    "order": "英文把时间放后面，中文习惯先说时间，所以提到前面。",
+    "sum": "我走近门的时候，房子外面的灯亮了。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "Why is there both external and internal pressure to look \"perfect\"?": {
    "ph": [
@@ -493,7 +864,132 @@
      "b": "pressure to do",
      "m": "做……的压力"
     }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Why is there both external and internal pressure",
+      "s": "Why is there 是 there be 句型的疑问形式，「为什么会有」。both A and B 是「既……又……」，A 和 B 是 external（外在的）和 internal（内在的）。\n→ 为什么会既有外在压力又有内在压力"
+     },
+     {
+      "t": "to look \"perfect\"",
+      "s": "你多半会翻成「压力去看起来完美」，别扭。to look 是 to do 短语，放在 pressure 后面补充说明，就是「要……的压力」。look 是「看起来」。\n→ 要让自己看起来「完美」的压力"
+     }
+    ],
+    "order": "把 to look 那块提到「压力」前面当说明，中文才顺。",
+    "sum": "为什么会有来自外部和内部的双重压力，逼着我们看起来「完美」？",
+    "cmp": "和书上基本一样，意思没有差别。"
+   }
+  },
+  "The news media reported extensively on the story.": {
+   "ph": [
+    {
+     "t": "reported",
+     "b": "report on",
+     "m": "报道"
+    },
+    {
+     "t": "on",
+     "b": "report on",
+     "m": "报道"
+    }
    ]
+  },
+  "Fewer than half of Americans say they cook at an intermediate level.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Fewer than half of Americans say",
+      "s": "你多半会翻成「更少的一半美国人说」。念一遍，不通。Fewer than half 是「不到一半」。say 后面省略了 that，补回去是 say (that) they cook……，say 后面跟的整句话是「说的内容」，这是宾语从句，就是给 say 补上说话的内容。\n→ 不到一半的美国人说"
+     },
+     {
+      "t": "they cook at an intermediate level",
+      "s": "they 指谁？放回去试：这些美国人做饭，说得通。intermediate 是「中等的」，at an intermediate level 是「处于中等水平」。\n→ 他们的烹饪水平处于中等"
+     }
+    ],
+    "sum": "不到一半的美国人说自己的烹饪水平处于中等。",
+    "cmp": "和书上基本一样。"
+   }
+  },
+  "It creates a lot of trouble for local residents.": {
+   "ph": [
+    {
+     "t": "a lot of",
+     "b": "a lot of",
+     "m": "许多"
+    }
+   ]
+  },
+  "Some of the world's most innovative companies are located here.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Some of the world's most innovative companies",
+      "s": "Some of 是「其中的一些」，most innovative 是「最有创新精神的」。\n→ 世界上一些最具创新性的公司"
+     },
+     {
+      "t": "are located here",
+      "s": "你多半会翻成「被定位在这里」，很怪。are located 是被动，locate 本来是「使位于」，被动之后就是「位于、坐落在」。\n→ 就坐落在这里"
+     }
+    ],
+    "sum": "世界上一些最具创新性的公司就坐落在这里。",
+    "cmp": "和书上一样。"
+   }
+  },
+  "It is an old city with many sites of historical interest.": {
+   "ph": [
+    {
+     "t": "of historical interest",
+     "b": "of historical interest",
+     "m": "有历史意义的"
+    }
+   ]
+  },
+  "The test site was situated in southwestern New Mexico.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The test site was situated in southwestern New Mexico",
+      "s": "你多半会翻成「试验场被安置在新墨西哥州西南部」。was situated 是被动，就是「被别人怎么样了」，但 situate 的被动固定翻成「位于」，不用说「被」。test site 是「试验场」，southwestern 是「西南部的」。\n→ 该试验场位于新墨西哥州西南部"
+     }
+    ],
+    "sum": "该试验场位于新墨西哥州西南部。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "She cited examples of companies the city has helped relocate or expand.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "She cited examples of companies",
+      "s": "cite 你可能想到「引用」，这里是「举出」例子。of companies 说明是哪方面的例子。\n→ 她列举了一些公司的例子"
+     },
+     {
+      "t": "the city has helped relocate or expand",
+      "s": "companies 和 the city 两个名词挨在一起，中间省略了 that / which，补回去是 companies (that) the city has helped……。这是定语从句，就是给前面的 companies 补一段说明。再看 help：help sb. do，帮助的是公司，relocate or expand 是公司做的两件事，并列。\n→ 该市帮助搬迁或扩张的"
+     }
+    ],
+    "order": "英文先说公司、说明在后面；中文把这段说明挪到「公司」前面当定语。",
+    "sum": "她列举了一些该市曾帮助搬迁或扩张的公司。",
+    "cmp": "意思和书上一样，书上「公司的例子」前面堆了好几个「的」，稍微绕一点。"
+   }
+  },
+  "She was bitten by the family dog.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "She was bitten by the family dog",
+      "s": "你多半会翻成「她被家里的狗咬了」。这次不用改：was bitten 是被动，就是「她被别人怎么样了」，被咬是坏事，中文也爱用「被」。bitten 是 bite 的过去分词，by 后面是动作的施行者。\n→ 她被家里养的狗咬伤了"
+     }
+    ],
+    "sum": "她被家里养的狗咬伤了。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "But what are the challenges of moving to \"spoken web\"?": {
    "ph": [
@@ -501,6 +997,30 @@
      "t": "moving to",
      "b": "move to",
      "m": "转向，转移到"
+    }
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "But what are the challenges",
+      "s": "这块照字面翻就行：But 是「但是」，what are the challenges 是「挑战是什么」，后面 of 引出是什么方面的挑战。\n→ 但是……的挑战是什么"
+     },
+     {
+      "t": "of moving to \"spoken web\"",
+      "s": "of 后面跟的 moving 是 -ing 短语，就是「做某事这件事」。你多半会翻成「移动到语音网络」，网络又没有位置，这里的 move to 是「转向、过渡到」。\n→ 向「语音网络」转变"
+     }
+    ],
+    "order": "把「向语音网络转变」提到「挑战」前面当说明。",
+    "sum": "但是，向「语音网络」转变会面临哪些挑战？",
+    "cmp": "和书上基本一样。"
+   }
+  },
+  "I clicked on the link to the next page of the website.": {
+   "ph": [
+    {
+     "t": "clicked on",
+     "b": "click on",
+     "m": "单击"
     }
    ]
   }
