@@ -48,6 +48,23 @@
     }
    ]
   },
+  "Given his age, he's remarkably active.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Given his age",
+      "s": "你多半会翻成「给了他的年龄」。念一遍，不通。这里 Given 不是动词「给」，是介词，意思是「考虑到、鉴于」，后面跟的是一个已知的情况。\n→ 考虑到他的年龄"
+     },
+     {
+      "t": "he's remarkably active",
+      "s": "这块照字面翻就行：remarkably 是「相当地、非常地」，active 是「活跃」。\n→ 他相当活跃"
+     }
+    ],
+    "sum": "以他的年纪来说，他算得上相当活跃了。",
+    "cmp": "意思一样。书上多了「已是……的了」，带着一点「都这个岁数了还这么有精神」的味道，我的说法更平。"
+   }
+  },
   "But innovation, broadly defined, is the crucial ingredient in all economic progress.": {
    "ph": [],
    "an": {
@@ -64,6 +81,24 @@
     "order": "「广义上说」本来夹在中间，中文可以挪到整句前面，也可以留在「创新」后面，都顺。",
     "sum": "但从广义上说，创新是一切经济进步的关键因素。",
     "cmp": "和书上基本一样，书上把「广义上说」提到前面，读起来更顺。"
+   }
+  },
+  "It is a chief factor affecting students' learning.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It is a chief factor",
+      "s": "你多半会把 chief 翻成「首席的」，「首席因素」不太像话。chief 在这里是「主要的」。\n→ 它是主要因素"
+     },
+     {
+      "t": "affecting students' learning",
+      "s": "你多半会顺着英文顺序翻成「因素，影响学生的学习」，拆成了两截。affecting 开头的是 -ing 短语（现在分词短语），跟在名词后面，就是给 factor 补一段说明：「影响学生学习的」。中文要把它收成一个「……的」，放到「因素」前面。\n→ 影响学生学习的"
+     }
+    ],
+    "order": "英文把说明放在 factor 后面，中文习惯把「……的」放在名词前面，所以「影响学生学习的」要挪到「因素」前。",
+    "sum": "它是影响学生学习的主要因素。",
+    "cmp": "和书上完全一样。"
    }
   },
   "They stayed together for the sake of the children.": {
@@ -92,7 +127,38 @@
      "b": "forgive sb. for sth.",
      "m": "原谅某人的……"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The society fails to forgive them",
+      "s": "你多半会翻成「社会失败去原谅他们」。念一遍，别扭。fail to do 是固定搭配，就是「未能做到某事」，to forgive 是 to do 短语，说的是没做成的那件事。\n→ 社会未能原谅他们"
+     },
+     {
+      "t": "for their mistakes",
+      "s": "你可能想翻成「因为他们的错误」，放回去：社会没原谅他们，因为他们的错误？意思就歪成了原因。眼睛往前找 forgive：forgive sb. for sth. 是搭配，for 后面接的是「被原谅的事」。\n→ 他们犯的错误"
+     }
+    ],
+    "sum": "社会没能原谅他们犯过的错误。",
+    "cmp": "和书上基本一样，书上用「未能」，比「没能」更书面。"
+   }
+  },
+  "They seemed cursed to suffer disastrous fates.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "They seemed cursed",
+      "s": "你多半会翻成「他们似乎诅咒」。念一遍，谁诅咒谁？cursed 是过去分词，带着被动的意思，就是「被诅咒的」。seem 后面接它，就是「看起来被诅咒了」。\n→ 他们似乎被诅咒了"
+     },
+     {
+      "t": "to suffer disastrous fates",
+      "s": "你可能翻成「去遭受灾难性的命运」，这个「去」是多余的。cursed to do 是「被诅咒要做某事」，to suffer 是 to do 短语，说的是诅咒的内容，翻成「注定要……」就顺了。disastrous 是「灾难性的」，fates 是「命运」。\n→ 注定要遭受灾难性的命运"
+     }
+    ],
+    "sum": "他们似乎被诅咒了，注定要遭受灾难性的命运。",
+    "cmp": "和书上几乎一样，书上是「要遭受」，我多了「注定」，更像在说诅咒。"
+   }
   },
   "He scolded them for arriving late.": {
    "ph": [
@@ -106,7 +172,21 @@
      "b": "scold sb. for sth.",
      "m": "因……斥责某人"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He scolded them",
+      "s": "这块照字面翻就行：scold 是「斥责」。\n→ 他斥责了他们"
+     },
+     {
+      "t": "for arriving late",
+      "s": "你多半会翻成「为了到达晚」。念一遍，不顺。scold sb. for sth. 是搭配，for 后面接的是「挨骂的原因」。arriving late 是 -ing 短语，就是「迟到这件事」。\n→ 因为他们迟到"
+     }
+    ],
+    "sum": "他斥责他们迟到。",
+    "cmp": "和书上基本一样，书上多了一个「了」。"
+   }
   },
   "He was accused of causing a fire.": {
    "ph": [
@@ -115,7 +195,21 @@
      "b": "be accused of",
      "m": "被控告……"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He was accused of",
+      "s": "你多半会翻成「他被指控的」，后面接不上了。was accused 是被动，就是「他被别人怎么样了」。眼睛往后找 of：accuse sb. of sth. 是搭配，of 后面才是罪名。\n→ 他被指控"
+     },
+     {
+      "t": "causing a fire",
+      "s": "of 后面的 causing 是 -ing 短语，就是「造成火灾这件事」。你可能翻成「引起一场火」，中文说「引发火灾」或「纵火」更自然。\n→ 引发火灾"
+     }
+    ],
+    "sum": "他被指控纵火。",
+    "cmp": "和书上一样，「纵火」比「引起火灾」更干脆。"
+   }
   },
   "To forbid a thing one day and excuse it the next is no foundation for morality.": {
    "ph": [],
@@ -164,7 +258,56 @@
      "b": "be blamed on",
      "m": "归咎于"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "But not everything",
+      "s": "你多半会翻成「但所有事情都不……」。放回去试：所有事都不怪科技？意思反了。not everything 是部分否定，说的是「并非所有的事」，还有些事是可以怪的。\n→ 但并非所有的事情"
+     },
+     {
+      "t": "is to be blamed on technology",
+      "s": "你可能翻成「是要被责备在科技上」，太绕。is to be blamed 是被动，就是「事情被怪罪」，这里 is to 带有「应该」的意思。blame sth. on sb. 是「把……怪到某人头上」，被动就是 be blamed on，眼睛盯住 on。\n→ 都该归咎于科技"
+     }
+    ],
+    "sum": "但并不是所有的事情都该怪到科技头上。",
+    "cmp": "意思一样，书上用「要归咎于」，我换成了口语的「怪到……头上」。"
+   }
+  },
+  "They are quite easy to tame.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "They are quite easy",
+      "s": "这块照字面翻就行：quite 是「相当」。\n→ 它们相当容易"
+     },
+     {
+      "t": "to tame",
+      "s": "你多半会翻成「它们很容易去驯服」。放回去试：它们去驯服别人？不对，它们是被驯服的那一方。to tame 是 to do 短语，跟在 easy 后面，说的是「在哪件事上容易」，主语 They 是这个动作的对象，中文要补出「被」的意思，或者干脆省略。\n→ 驯服"
+     }
+    ],
+    "sum": "它们很容易驯服。",
+    "cmp": "和书上一样。中文里「容易驯服」本身就带着被驯服的意思，不用再加「被」。"
+   }
+  },
+  "Some critics say it is a luxury and shouldn't be free to families able to pay.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Some critics say it is a luxury",
+      "s": "你多半会翻成「一些批评家说它是奢侈」。念一遍，不通顺，luxury 在这里是名词，「奢侈品」。另外 say 后面直接跟了 it is，别慌，中间藏了个 that，补回去是 say (that) it is……，that 带的是宾语从句，就是「说的内容」。\n→ 一些批评家说它是一种奢侈品"
+     },
+     {
+      "t": "and shouldn't be free to families able to pay",
+      "s": "你多半会翻成「不应该对家庭是自由的」。放回去试，不通。free 在这里是「免费的」，be free to sb. 就是「对某人免费」。able to pay 是「形容词 + to do」，跟在 families 后面补一段说明，翻成「有能力支付的」，放到「家庭」前面。\n→ 也不该免费提供给有能力支付的家庭"
+     }
+    ],
+    "order": "able to pay 在英文里跟在 families 后面，中文要把「有能力支付的」放到「家庭」前面。",
+    "sum": "一些批评家认为，它是奢侈品，不该免费提供给付得起费用的家庭。",
+    "cmp": "意思一样，书上是「有能力支付的家庭」，更贴近原文。"
+   }
   },
   "The ads criticised the measure, characterizing it as a \"grocery tax\".": {
    "ph": [
@@ -178,7 +321,21 @@
      "b": "characterize … as",
      "m": "把……描述为"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The ads criticised the measure",
+      "s": "你可能把 measure 翻成「测量」。放回去：广告批评了测量？不通。这里 measure 是名词「措施」。\n→ 这些广告批评了这项措施"
+     },
+     {
+      "t": "characterizing it as a \"grocery tax\"",
+      "s": "逗号后面的 characterizing 是 -ing 短语（现在分词短语），就是「同时又做了另一件事」。眼睛往后找 as：characterize A as B 是「把 A 说成 B」。it 指谁？放回去试：广告被称为「杂货税」？不对；措施被称为「杂货税」，对。\n→ 称它为「杂货税」"
+     }
+    ],
+    "sum": "这些广告批评了这项措施，把它称为「杂货税」。",
+    "cmp": "和书上一样，书上用「称其为」，更书面。"
+   }
   },
   "It has drawn a lot of criticism from overseas.": {
    "ph": [
@@ -211,7 +368,21 @@
      "b": "turning point",
      "m": "转折点"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It is likely to be",
+      "s": "你多半会把 likely 看成「喜欢」。放回去：它喜欢成为？不通。be likely to do 是固定搭配，就是「很可能做某事」。\n→ 它很可能是"
+     },
+     {
+      "t": "a critical turning point in one's life",
+      "s": "你可能把 critical 翻成「批评的」，「批评的转折点」不通。critical 还有「关键的」意思。one's life 泛指「一个人的一生」。\n→ 人生中一个关键的转折点"
+     }
+    ],
+    "sum": "它很可能是人生中的一个关键转折点。",
+    "cmp": "和书上基本一样，书上说「一个人一生中的」，我收成了「人生中的」。"
+   }
   },
   "The criterion for a snow day is primarily the inability of school buses.": {
    "ph": [
@@ -220,7 +391,21 @@
      "b": "criterion for",
      "m": "……的标准"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The criterion for a snow day",
+      "s": "你多半会翻成「雪天的标准」。snow day 是固定说法，指因为下雪而停课的日子，也就是「雪休日」。criterion 是「标准」，for 后面接的是「什么的标准」。\n→ 雪休日的标准"
+     },
+     {
+      "t": "is primarily the inability of school buses",
+      "s": "你多半会翻成「主要是校车的无能力」。念一遍，怪。inability 是 ability 加上否定前缀，是个名词，中文里要改成动词说：校车「没法……」，也就是校车无法通行。\n→ 主要是校车无法通行"
+     }
+    ],
+    "sum": "是否算雪休日，主要看校车能不能通行。",
+    "cmp": "书上是「雪休日的标准主要是校车无法通行」，贴着原文，我换成了「看……能不能……」的说法，更口语。"
+   }
   },
   "He assists the professor with his teaching.": {
    "ph": [
@@ -255,6 +440,23 @@
     }
    ]
   },
+  "The textbook industry insists the online systems represent a better deal for students.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The textbook industry insists",
+      "s": "你多半会翻成「教材工业坚持」，后面就接不上了。insists 后面直接跟了一整句话，中间藏了个 that，那是宾语从句，说的就是「坚称的内容」。industry 在这里是「行业」。\n→ 教材行业坚称"
+     },
+     {
+      "t": "the online systems represent a better deal for students",
+      "s": "represent 你多半会翻成「代表」，「系统代表一个更好的交易」？别扭。这里它是「相当于、就是」，deal 是「划算的选择」。for students 是「对学生来说」。\n→ 在线系统对学生来说是更好的选择"
+     }
+    ],
+    "sum": "教材行业坚称，对学生而言，在线系统是更划算的选择。",
+    "cmp": "意思一样，书上用「更好的选择」，我用「更划算」，把 deal 的意思点明了。"
+   }
+  },
   "If our findings persist, we may be faced with a financial crisis.": {
    "ph": [
     {
@@ -262,7 +464,21 @@
      "b": "be faced with",
      "m": "面临"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "If our findings persist",
+      "s": "你多半会翻成「如果我们的发现坚持」。念一遍，发现又不是人，怎么坚持？persist 在这里是「持续存在」，说的是结果一直如此。If 带的是条件状语从句，就是「如果……」。\n→ 如果我们的发现持续下去"
+     },
+     {
+      "t": "we may be faced with a financial crisis",
+      "s": "你可能翻成「我们可能被面对着一场金融危机」。be faced with 是被动，但它是个固定搭配，就是「面临」，不要翻成「被」。may 是「可能」。\n→ 我们可能会面临一场金融危机"
+     }
+    ],
+    "sum": "如果我们的发现一直如此，我们可能会面临金融危机。",
+    "cmp": "和书上几乎一样，书上是「持续下去」，我改成了「一直如此」，更能看出是指结果不变。"
+   }
   },
   "A lifetime of praise leads smart people to develop too much faith in their intelligence and abilities.": {
    "ph": [
@@ -300,6 +516,23 @@
     "order": "「一辈子的夸奖」放前面当原因，「让聪明人……」再接结果，顺序可以不动。",
     "sum": "一辈子都被夸奖，会让聪明人对自己的智力和能力过度自信。",
     "cmp": "书上说「一生的赞美会使聪明人……产生过度的信心」，意思一样；我把「一生的赞美」改成了「被夸奖」，名词变动词，读起来更自然。"
+   }
+  },
+  "People often wonder why some entrepreneurs have greater success than others.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "People often wonder",
+      "s": "你多半会翻成「人们经常奇怪」，后面接不上。wonder 后面跟了 why 引导的从句，这时它是「想知道」。\n→ 人们经常想知道"
+     },
+     {
+      "t": "why some entrepreneurs have greater success than others",
+      "s": "why 带的是宾语从句，就是「想知道的内容」，后面按陈述语序，翻成「为什么……」。have greater success 你可能翻成「有更大的成功」，不顺，名词转成形容词：「更成功」。others 就是「其他企业家」。\n→ 为什么有些企业家比其他人更成功"
+     }
+    ],
+    "sum": "人们经常想知道，为什么有些企业家比别人更成功。",
+    "cmp": "和书上一样。"
    }
   },
   "Employers attach great importance to their corporations' diversity.": {
@@ -377,6 +610,42 @@
     "cmp": "书上说「掌控自己的压力并加以管理」，意思一样，「管理」略硬，「调节」更自然一点。"
    }
   },
+  "\"We didn't do any global consideration,\" says the board's chair.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "We didn't do any global consideration",
+      "s": "你多半会翻成「我们没有做任何全球的考虑」。do consideration 太硬，把名词 consideration 换成动词「考虑」，global 说成「全球性的」。\n→ 我们没有做任何全球性的考虑"
+     },
+     {
+      "t": "says the board's chair",
+      "s": "你可能把 chair 翻成「椅子」，「董事会的椅子说」？这里 chair 是「主席」，指主持会议的人，board 是「董事会」。英文常把「某人说」放在引语后面，中文要放到前面。\n→ 董事会主席说"
+     }
+    ],
+    "order": "英文把 says 放在引语后面，中文习惯先说谁说的，所以「董事会主席说」要提到前面。",
+    "sum": "董事会主席说：「我们没有做任何全球性的考虑。」",
+    "cmp": "和书上一样。"
+   }
+  },
+  "It was suggested by the firm's vice president.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It was suggested",
+      "s": "你多半会翻成「它被建议了」。was suggested 是被动，就是「它被别人怎么样了」，中文少用「被」，更常把做动作的人请出来当主语。谁建议？看后面的 by。\n→ （由）……提出的建议"
+     },
+     {
+      "t": "by the firm's vice president",
+      "s": "by 后面就是做动作的人。vice 是「副」，vice president 就是「副总裁」，firm 是「公司」。\n→ 公司的副总裁"
+     }
+    ],
+    "order": "被动句里做动作的人在最后，中文把它提到前面当主语：「公司副总裁提出了这个建议」。",
+    "sum": "这是公司副总裁提出的建议。",
+    "cmp": "和书上一样。"
+   }
+  },
   "So executives hit on an idea that would harness the new-found popularity of television.": {
    "ph": [
     {
@@ -384,7 +653,42 @@
      "b": "hit on",
      "m": "想出，偶然想到"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "So executives hit on an idea",
+      "s": "你多半会翻成「所以高管们打在一个主意上」。hit on 是固定搭配，意思是「偶然想到、想出」。executives 是「高管」。So 在句首是「于是」。\n→ 于是高管们想出了一个主意"
+     },
+     {
+      "t": "that would",
+      "s": "that 带的是定语从句，就是给前面的名词补一段说明。它指谁？放回去试：an idea would harness……，这个主意能利用……，通；executives would harness……，意思也勉强行得通，但 that 前面紧挨着的是 idea，定语从句总是贴着它修饰的名词，所以是 idea。再看 would：前面 hit on 是过去时，这里只是跟着用了过去形式，没有 if，也不是和事实相反，不是虚拟，翻成「能」就行。\n→ 这个主意能"
+     },
+     {
+      "t": "harness the new-found popularity of television",
+      "s": "harness 你可能只认识「马具」，这里是动词，「利用」。new-found popularity 是「新近获得的受欢迎程度」，说白了就是「刚刚流行起来」。\n→ 利用电视刚刚流行起来这一点"
+     }
+    ],
+    "sum": "于是高管们想到了一个主意，可以利用电视刚刚流行起来这一点。",
+    "cmp": "意思一样，书上是「可以利用最近流行起来的电视」，我把「电视流行」这件事说清楚了，不是说电视机本身。"
+   }
+  },
+  "Some people find that craftwork helps them control their weight.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Some people find that",
+      "s": "你多半会翻成「有些人发现那个」。that 不是「那个」，它引出的是宾语从句，就是「发现的内容」。\n→ 有些人发现"
+     },
+     {
+      "t": "craftwork helps them control their weight",
+      "s": "你可能翻成「手工帮助他们去控制他们的体重」，两个「他们」太啰嗦。help sb. do 是「帮助某人做某事」，do 前面的 to 常常省掉，所以 them 后面直接是 control。后面的 their 在中文里可以省。\n→ 手工活动能帮助他们控制体重"
+     }
+    ],
+    "sum": "有些人发现，做手工能帮助他们控制体重。",
+    "cmp": "意思一样，书上是「手工(活动)」，我说成「做手工」，更顺口。"
+   }
   },
   "It is well positioned to compete with the giants.": {
    "ph": [
@@ -393,7 +697,22 @@
      "b": "compete with",
      "m": "与……竞争"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It is well positioned",
+      "s": "你多半会翻成「它被很好地定位」。is positioned 是被动，就是「它被放在了某个位置上」。well positioned 说白了就是「处在有利位置」。\n→ 它处在有利位置"
+     },
+     {
+      "t": "to compete with the giants",
+      "s": "to compete 是 to do 短语，说的是「有利在哪件事上」。你可能把 giants 翻成「巨人」，这里不是，是行业里的「巨头」。眼睛盯住 with：compete with 是「与……竞争」。\n→ 与巨头竞争"
+     }
+    ],
+    "order": "英文是「有利位置 + to do」，中文可以把「与巨头竞争」收成一个「……的」放到「有利位置」前面。",
+    "sum": "它处在有利位置，可以与巨头竞争。",
+    "cmp": "和书上一样，书上把 to compete 收成「……的」放到前面，更紧凑。"
+   }
   },
   "But what makes you a competent lion dancer is that there's a sense of imagination involved.": {
    "ph": [
@@ -402,7 +721,21 @@
      "b": "a sense of",
      "m": "一种……的意识"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "But what makes you a competent lion dancer",
+      "s": "你多半会翻成「但什么使你一个称职的舞狮者」。念一遍，不成句。what 带的是主语从句，就是「……的那个东西」。make you a dancer 是「使你成为舞者」。competent 是「称职的」，别和 compete 搞混。\n→ 但让你成为称职舞狮者的（关键）"
+     },
+     {
+      "t": "is that there's a sense of imagination involved",
+      "s": "is 后面的 that 带的是表语从句，就是「关键在于……」，不是「那个」。there's a sense of imagination involved：involved 是过去分词，放在名词后面，就是「牵涉在其中的」，合起来是「其中有一种想象力」。\n→ 是其中蕴含着一种想象力"
+     }
+    ],
+    "sum": "但让你成为一个称职舞狮者的关键，是其中要有一种想象力。",
+    "cmp": "意思一样，书上是「的是，其中蕴含着」，我补了「关键」，让前后接得更顺。"
+   }
   },
   "New research has found deep water reserves under the state which could help solve their drought crisis.": {
    "ph": [
@@ -411,7 +744,38 @@
      "b": "help (to) do",
      "m": "有助于解决"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "New research has found deep water reserves under the state",
+      "s": "你多半会翻成「新研究已经发现了深水储备在州下面」。has found 是现在完成时，就是「已经发现了」。under the state 说的是「该州地下」。reserves 是「储备」。\n→ 新的研究在该州地下发现了深层水储备"
+     },
+     {
+      "t": "which could help solve their drought crisis",
+      "s": "which 是谁？放回去试：the state could help solve……，州来解决干旱？勉强；deep water reserves could help solve……，水储备帮助解决干旱危机，水来解决缺水，更说得通。which 带的是定语从句，就是给前面的名词补说明。could 是「有可能」，表示把握不大的推测，没有 if，不是虚拟。help solve 是 help 后面省了 to，「帮助解决」。\n→ 它们可能有助于解决他们的干旱危机"
+     }
+    ],
+    "sum": "新的研究发现，该州地下有深层水储备，可能有助于解决那里的干旱危机。",
+    "cmp": "和书上基本一样。"
+   }
+  },
+  "She started an ice-cream business to finance her daughter's education.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "She started an ice-cream business",
+      "s": "这块照字面翻就行：start a business 是「开一家店、做起生意」。\n→ 她开了一家冰淇淋店"
+     },
+     {
+      "t": "to finance her daughter's education",
+      "s": "你多半会翻成「去资助她女儿的教育」。to finance 是 to do 短语，在这里说的是目的，就是「为了」。finance 在这里是动词，「出钱供」。\n→ 为了供女儿读书"
+     }
+    ],
+    "sum": "她开了一家冰淇淋店，为的是供女儿读书。",
+    "cmp": "意思一样，书上是「资助女儿的教育」，我说成「供女儿读书」，更口语。"
+   }
   },
   "Funding for science has changed with the times.": {
    "ph": [
@@ -438,7 +802,38 @@
      "b": "get to know",
      "m": "逐渐了解"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The other sections you should get to know",
+      "s": "你多半会读成「其他部分，你应该了解」，断成两截。sections 后面直接跟了 you should，中间藏了个 that，补回去：sections (that) you should get to know，是定语从句，给 sections 补说明，「你应该了解的」。get to know 是「逐渐了解、熟悉」。\n→ 你应该了解的其他部分"
+     },
+     {
+      "t": "are the frozen foods and the durable goods",
+      "s": "你可能把 goods 看成「好的」。goods 是名词，「商品」，durable 是「耐用的」，durable goods 就是「耐用品」。frozen foods 是「冷冻食品」。\n→ 是冷冻食品和耐用商品"
+     }
+    ],
+    "sum": "你还应该了解的另外几个部分，是冷冻食品和耐用商品。",
+    "cmp": "和书上基本一样。"
+   }
+  },
+  "The family was forced to live on credit from local merchants.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The family was forced to live",
+      "s": "你多半会翻成「这家人被强迫去生活」。念一遍，别扭。was forced 是被动，but was forced to do 是个固定用法，就是「被迫做某事」，中文常说「不得不」。\n→ 这家人不得不靠……生活"
+     },
+     {
+      "t": "on credit from local merchants",
+      "s": "live on 是「靠……生活」。credit 你多半会翻成「信用」，这里是「赊账」。from local merchants 是「从当地商人那里」。\n→ 向当地商人赊账过日子"
+     }
+    ],
+    "sum": "这家人只能靠向当地商人赊账过日子。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "That particular model is not currently in stock.": {
    "ph": [
@@ -449,6 +844,23 @@
     }
    ]
   },
+  "It will help many African countries reduce trade deficits.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It will help many African countries reduce",
+      "s": "你多半会翻成「它将帮助许多非洲国家去减少」。help sb. do 是「帮助某人做某事」，do 前面的 to 常常省掉，所以 countries 后面直接就是 reduce。\n→ 它将帮助许多非洲国家减少"
+     },
+     {
+      "t": "trade deficits",
+      "s": "你可能把 deficit 翻成「缺陷」，「贸易缺陷」不是说法。deficit 是「赤字、逆差」，trade deficit 就是「贸易逆差」，进口比出口多的那部分。\n→ 贸易逆差"
+     }
+    ],
+    "sum": "它将帮助许多非洲国家减少贸易逆差。",
+    "cmp": "和书上一样。"
+   }
+  },
   "If you don't register your trademark yourself, there's a good chance that it will be squatted by others.": {
    "ph": [
     {
@@ -456,7 +868,42 @@
      "b": "a good chance",
      "m": "很有可能"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "If you don't register your trademark yourself",
+      "s": "你多半会翻成「如果你不注册你的商标你自己」。念一遍，yourself 放在最后，中文要把它提到前面，说成「自己」。If 带的是条件状语从句。trademark 是「商标」。\n→ 如果你不自己注册商标"
+     },
+     {
+      "t": "there's a good chance that",
+      "s": "你多半会翻成「有一个好机会」。念一遍，不对，不是好事。a good chance 在这里是「很大的可能」。后面的 that 带的是同位语从句，就是解释这个「可能」具体是什么。\n→ 很有可能"
+     },
+     {
+      "t": "it will be squatted by others",
+      "s": "will be squatted 是被动，就是「它被别人怎么样了」。squat 原意是「蹲」，这里是「擅自占用」。by others 是做动作的人。\n→ 会被别人占用"
+     }
+    ],
+    "sum": "如果你不自己注册商标，就很有可能被别人抢先占用。",
+    "cmp": "和书上基本一样，书上是「那么很有可能它会被别人占用」，我顺手省了「它」。"
+   }
+  },
+  "They are under growing pressure to balance their national budgets.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "They are under growing pressure",
+      "s": "你多半会翻成「他们在增长的压力之下」。念一遍，不顺。under pressure 就是「承受压力」，growing 在这里当形容词用，「越来越大的」。\n→ 他们承受着越来越大的压力"
+     },
+     {
+      "t": "to balance their national budgets",
+      "s": "你可能翻成「去平衡他们的国家预算的压力」，不通。to balance 是 to do 短语，紧跟在 pressure 后面，说明这是什么压力：pressure to do 就是「要做某事的压力」。balance a budget 是「使预算收支平衡」。\n→ 要平衡国家预算"
+     }
+    ],
+    "sum": "他们承受着越来越大的压力，要使国家预算收支平衡。",
+    "cmp": "意思一样，书上是「平衡国家预算的压力」，把 to do 收成了「……的」，更紧凑。"
+   }
   },
   "A relatively harmless gadget may be turning friends away from your home.": {
    "ph": [
@@ -498,7 +945,34 @@
      "b": "join in",
      "m": "参与"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She aims to open up fresh avenues",
+      "s": "你多半会翻成「她瞄准去打开新的大街」。aim to do 是「力求做某事」，to open up 是 to do 短语。avenues 本义是「大街」，这里比喻「途径」，open up 就是「开辟」。\n→ 她力求开辟新的途径"
+     },
+     {
+      "t": "for women post-doctors to join in research work",
+      "s": "你可能翻成「为女性博士后去参加研究工作」。这里 for 的作用是给后面的 to join 找「做动作的人」：谁参与？women post-doctors。join in 是「参与」。\n→ 让女性博士后参与研究工作"
+     }
+    ],
+    "sum": "她力求开辟新的途径，让女性博士后能参与研究工作。",
+    "cmp": "意思一样，书上把 to join 收成「……的」放到前面，我拆成了一个短句。"
+   }
+  },
+  "It started when people's income was relatively high.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It started when people's income was relatively high",
+      "s": "你多半会翻成「它开始，当人们的收入是相对高」。念一遍，生硬。when 带的是时间状语从句，就是「在……的时候」。relatively 是「相对地、比较」。英文 started when 连着说，中文改成「始于……的时候」。\n→ 它始于人们收入相对较高的时候"
+     }
+    ],
+    "sum": "它始于人们收入相对较高的时候。",
+    "cmp": "和书上一样。"
+   }
   },
   "They organise a series of seminars on world economy.": {
    "ph": [
@@ -564,7 +1038,34 @@
      "b": "be used to do",
      "m": "被用于做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "A quarter of this year's American grain harvest",
+      "s": "这块照字面翻就行：a quarter of 是「四分之一」，grain 是「谷物」，harvest 是「收成」。\n→ 今年美国谷物收成的四分之一"
+     },
+     {
+      "t": "will be used to produce bio-fuel for cars",
+      "s": "你多半会翻成「将被用来生产生物燃料给汽车」。will be used 是被动，就是「将被拿来怎么样」。be used to do 是「被用来做某事」，to produce 是 to do 短语，说的是用途。注意它和 be used to doing（习惯于）长得像，这里 to 后面是原形 produce，所以是「被用来」。for cars 修饰 bio-fuel，是「汽车用的」。\n→ 将用来生产汽车用的生物燃料"
+     }
+    ],
+    "sum": "今年美国谷物收成的四分之一，将用来生产汽车用的生物燃料。",
+    "cmp": "和书上基本一样，书上是「用于生产汽车生物燃料」。"
+   }
+  },
+  "The unions will try to increase productivity.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The unions will try to increase productivity",
+      "s": "你多半会翻成「工会将尝试去增加生产力」。念一遍，「尝试」太轻了。try to do 是「努力做某事」，to increase 是 to do 短语，说的是努力的目标。union 是「工会」，productivity 是「生产力」。\n→ 工会将努力提高生产力"
+     }
+    ],
+    "sum": "工会将努力提高生产力。",
+    "cmp": "和书上一样。"
+   }
   },
   "The food industry plays a major role in fighting obesity.": {
    "ph": [
@@ -573,7 +1074,22 @@
      "b": "play a major role in",
      "m": "在……中扮演重要角色"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The food industry plays a major role",
+      "s": "你多半会翻成「食品工业扮演一个主要角色」。念一遍，生硬。play a role in 是固定搭配，「在……中起作用」，眼睛往后找 in。industry 在这里是「行业」。\n→ 食品行业扮演重要角色"
+     },
+     {
+      "t": "in fighting obesity",
+      "s": "in 后面的 fighting 是 -ing 短语，就是「对抗肥胖这件事」。obesity 是「肥胖」。\n→ 在对抗肥胖方面"
+     }
+    ],
+    "order": "英文把 in fighting obesity 放在最后，中文习惯先说范围，所以把「在对抗肥胖方面」提到前面。",
+    "sum": "食品行业在对抗肥胖方面起着重要作用。",
+    "cmp": "意思一样，书上是「扮演着重要角色」，我换成了「起着重要作用」，更口语。"
+   }
   },
   "Several studies have implied that emotional intelligence can be used to manipulate others for personal gains.": {
    "ph": [
@@ -582,7 +1098,42 @@
      "b": "be used to do",
      "m": "被用来做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Several studies have implied that",
+      "s": "你多半会翻成「几项研究已经暗示了那个」。have implied 是现在完成时，imply 是「暗示、表明」。that 不是「那个」，它带出的是宾语从句，就是「表明的内容」。\n→ 几项研究表明"
+     },
+     {
+      "t": "emotional intelligence can be used to manipulate others",
+      "s": "你多半会翻成「情商能被用来操纵别人」。can be used 是被动，be used to do 就是「被用来做某事」，to manipulate 是 to do 短语，说的是用途。manipulate 是「操纵」。\n→ 情商可以被用来操纵他人"
+     },
+     {
+      "t": "for personal gains",
+      "s": "你可能翻成「为了个人的收益」，「收益」太像钱了。for 在这里表示目的，gains 是「得到的好处」，中文说「以谋取个人利益」就顺了。\n→ 以谋取个人利益"
+     }
+    ],
+    "sum": "几项研究表明，情商可以被用来操纵他人，以谋取个人利益。",
+    "cmp": "和书上基本一样，书上是「可以用来操纵他人」，省了「被」。"
+   }
+  },
+  "Those who want to use computers should know how computers operate.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Those who want to use computers",
+      "s": "你多半会翻成「那些谁想要使用电脑」。念一遍，who 不用翻。who 带的是定语从句，就是给 Those（那些人）补一段说明，Those who 连起来就是「……的人」。to use 是 to do 短语，跟在 want 后面。\n→ 想要使用电脑的人"
+     },
+     {
+      "t": "should know how computers operate",
+      "s": "你可能翻成「应该知道如何电脑运转」。how 带的是宾语从句，后面按陈述语序：computers operate，就是「电脑是怎么运转的」。operate 在这里是「运转」，不是「操作」。\n→ 应该了解电脑是如何运转的"
+     }
+    ],
+    "sum": "想使用电脑的人，应该了解电脑是怎么运转的。",
+    "cmp": "和书上一样。"
+   }
   },
   "They cooperated well with the police.": {
    "ph": [
@@ -605,7 +1156,21 @@
      "b": "collaborate on",
      "m": "合作做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They collaborated on building",
+      "s": "你多半会翻成「他们在建造上合作」。念一遍，不顺。collaborate on 后面接的是合作要做的事。building 是 -ing 短语，就是「建造、开发这件事」。\n→ 他们合作开发"
+     },
+     {
+      "t": "the first space coffee machine",
+      "s": "你可能把 space 翻成「空间」，「空间咖啡机」不对。这里 space 是「太空」。\n→ 第一台太空咖啡机"
+     }
+    ],
+    "sum": "他们合作开发了第一台太空咖啡机。",
+    "cmp": "和书上一样。"
+   }
   }
  }
 }

@@ -17,7 +17,22 @@
      "b": "be said to be",
      "m": "据说是"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The device is said to be",
+      "s": "你多半会翻成「这种装置被说是」。念一遍，中文不这么说。is said 是被动，就是「它被别人怎么样了」，被谁说？大家。中文把「大家说」缩成一个词：「据说」。to be 是 to do 短语，接在 said 后面，意思就是「是」。\n→ 据说这种装置是"
+     },
+     {
+      "t": "the world's first portable transistor",
+      "s": "这块照字面翻就行：the world's first 是「世界上第一个」，portable 是「便携式的」。\n→ 世界上第一个便携式晶体管"
+     }
+    ],
+    "order": "英文「据说」藏在中间的 is said 里，中文要把「据说」提到最前面。",
+    "sum": "据说这种装置是世界上第一个便携式晶体管。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "The wrong name is invariably fished out from the same relationship pond.": {
    "ph": [
@@ -41,6 +56,23 @@
     "order": "英文把来源放在最后，中文习惯先交代「从哪里」，再说「挑出来」，所以把 from 那块提到动作前面，被动也可以改成「总是……里挑出来的」。",
     "sum": "错误的名字总是从同一个关系圈子里挑出来的。",
     "cmp": "意思一样。书上的「关系池」是照字面译 pond，我换成「关系圈子」，中文里更好懂。"
+   }
+  },
+  "It helps people to understand complex issues.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It helps people to understand",
+      "s": "你多半会翻成「它帮助人们去理解」，这个翻法其实没错。help sb. to do 就是「帮助某人做某事」，to understand 是 to do 短语，说的是「帮人干什么」。注意 people 夹在 help 和 to 中间，别漏掉它。\n→ 它帮助人们理解"
+     },
+     {
+      "t": "complex issues",
+      "s": "complex 你可能只认识「复杂的」，用在 issues 前面就是「复杂的问题」，和 complicated 差不多。\n→ 复杂的问题"
+     }
+    ],
+    "sum": "它帮助人们理解复杂的问题。",
+    "cmp": "和书上完全一样。"
    }
   },
   "A man was pulled to safety after a building collapse.": {
@@ -74,7 +106,22 @@
      "b": "more than is necessary",
      "m": "超过必要的程度"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "I do not wish to complicate the task",
+      "s": "wish to do 是「想要做」，do not wish to 就是「不想」。complicate 是动词，你可能翻成「使任务复杂的」，不对，它是「使……复杂化」。\n→ 我不想使这项任务复杂化"
+     },
+     {
+      "t": "more than is necessary",
+      "s": "你多半会翻成「比必要的更多」。念一遍，是不是不知道在说什么？than is necessary 是一个比较从句，就是给前面的 more 补一段说明：「超出必要程度」。拿它修饰前面的动作，中文说成「不必要地」就通了。\n→ 超过必要的程度"
+     }
+    ],
+    "order": "英文把「超过必要」放在最后，中文可以把它压缩成「不必要地」，放在「复杂化」前面。",
+    "sum": "我不想把这项任务搞得比必要的更复杂。",
+    "cmp": "书上的「不必要地复杂化」更简洁，我这个更接近英文的 more than。两种都对。"
+   }
   },
   "Their loud claps can be confused with explosions.": {
    "ph": [
@@ -83,7 +130,17 @@
      "b": "be confused with",
      "m": "与……相混淆"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Their loud claps can be confused with explosions",
+      "s": "你多半会翻成「他们响亮的掌声可以被混淆和爆炸」。念一遍，别扭吧。can be confused 是被动，就是「掌声被别人怎么样了」，被谁弄混？听的人。看到 be confused with，脑子里换成「与……混淆」，with 后面是被混的另一样东西。can 在这里是「可能」。\n→ 他们响亮的掌声可能会与爆炸声混淆"
+     }
+    ],
+    "sum": "他们响亮的掌声可能会被人当成爆炸声。",
+    "cmp": "意思一样。书上保留了「与……相混淆」的说法，更书面；我这个更口语。"
+   }
   },
   "As for the organisation itself, it declined a request for an interview.": {
    "ph": [
@@ -106,7 +163,25 @@
      "b": "cultural shift",
      "m": "文化转变"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "As what happened with tobacco",
+      "s": "你多半会翻成「因为烟草发生了什么」。放回去试试：因为烟草的事，所以后面要文化转变？意思拧了。这里 as 是「正如」。what happened with tobacco 是 what 带的从句，就是「在烟草上发生的事」。\n→ 正如烟草那件事"
+     },
+     {
+      "t": "this will require a cultural shift",
+      "s": "require 是「需要」，will 是将来。cultural shift 是「文化转变」，shift 本义是「挪动」，这里指风气、观念的改变。\n→ 这将需要一场文化转变"
+     },
+     {
+      "t": "but that can happen",
+      "s": "that 指谁？放回去试：烟草能发生？说不通；一场文化转变能发生，对了。这里是前面提到的那场转变。can 是「可能」。\n→ 但这是可能发生的"
+     }
+    ],
+    "sum": "正如烟草那件事一样，这需要一场文化转变，但这种转变是有可能发生的。",
+    "cmp": "和书上基本一致。书上把 that 处理成省略主语的「也可能会发生」，我把「转变」补出来更清楚。"
+   }
   },
   "They take up a lot of our fresh water demands across the world.": {
    "ph": [
@@ -121,6 +196,37 @@
      "m": "大量"
     }
    ]
+  },
+  "They find these exercises too demanding.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "They find these exercises too demanding",
+      "s": "你多半会翻成「他们发现这些练习太要求」。念一遍，不通。find 后面接了「宾语＋形容词」：find sth. + adj. 就是「觉得某事怎么样」。demanding 在这里是形容词，不是「要求」，是「要求高的、费劲的」。too 是「太」。\n→ 他们觉得这些练习要求太高了"
+     }
+    ],
+    "sum": "他们觉得这些练习太费劲了。",
+    "cmp": "书上说「要求太高了」，也行，保留了 demanding 的「要求」；我换成「费劲」更口语。"
+   }
+  },
+  "It can be acquired through persistent practice.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It can be acquired",
+      "s": "你多半会翻成「它可以被获得」。中文很少这么说。can be acquired 是被动，就是「它被别人怎么样了」，这里没说是谁，中文干脆省掉「被」：「能获得」。acquire 是「获得（技能、知识）」。\n→ 它是可以获得的"
+     },
+     {
+      "t": "through persistent practice",
+      "s": "through 在这里是「通过」。persistent 是「坚持不懈的」，所以 persistent practice 就是「坚持练习」，不用说成「持续的练习」。\n→ 通过坚持练习"
+     }
+    ],
+    "order": "英文方式在后，中文习惯先说方式：把「通过坚持练习」提到前面。",
+    "sum": "通过坚持练习就能获得它。",
+    "cmp": "和书上一样，意思没差别。"
+   }
   },
   "He inquired about his client's family background.": {
    "ph": [
@@ -157,7 +263,22 @@
      "b": "take risks",
      "m": "冒险，承担风险"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Parents should encourage their child to take the risks",
+      "s": "看到 encourage，眼睛往后找 to——找到了：encourage sb. to do，鼓励某人去做某事。sb. 是 their child，do 是 take the risks。risk 在这里是「风险」，take risks 就是「冒险、承担风险」。\n→ 父母应该鼓励孩子去承担风险"
+     },
+     {
+      "t": "needed to learn and grow",
+      "s": "你多半会翻成「被需要的去学习和成长」。念一遍，不通。needed 是过去分词（-ed 短语），放在名词后面修饰它，就是「需要的」，修饰前面的 risks。to learn and grow 是 to do 短语，说的是目的：为了学习和成长。合起来就是「为学习和成长所必需的（风险）」。\n→ 学习和成长所必需的"
+     }
+    ],
+    "order": "英文 risks 后面拖着一长串修饰，中文把它们提前，放在「风险」前面当定语。",
+    "sum": "父母应该鼓励孩子去承担学习和成长所必需的风险。",
+    "cmp": "意思一样，书上的「学习和成长中必要的风险」也对，我这个更顺口。"
+   }
   },
   "Playing with digital devices discourages kids from active discovery.": {
    "ph": [
@@ -176,7 +297,21 @@
      "b": "discourage sb. from sth.",
      "m": "阻碍某人做某事"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Playing with digital devices",
+      "s": "句子开头是 Playing，别慌。-ing 开头当主语，就是「做某事」这件事。play with 在这里是「玩弄、摆弄」，digital devices 是「数字设备」。\n→ 玩数字设备"
+     },
+     {
+      "t": "discourages kids from active discovery",
+      "s": "你多半会翻成「使孩子们失去鼓励」。discourage 是 encourage 的反义词。眼睛往后找 from——找到了：discourage sb. from sth.，让某人打消做某事的念头。这里是「阻碍孩子们积极探索」。\n→ 会阻碍孩子们积极探索"
+     }
+    ],
+    "sum": "玩数字设备会妨碍孩子们主动去探索。",
+    "cmp": "和书上基本一致，书上的「阻碍」更简洁。"
+   }
   },
   "Gender inequality continues to frustrate a lot of female employees.": {
    "ph": [
@@ -190,7 +325,21 @@
      "b": "a lot of",
      "m": "许多"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Gender inequality continues to frustrate",
+      "s": "你多半会翻成「性别不平等继续去沮丧」。念一遍，主语是事，沮丧的是人，对不上。continue to do 是「仍在做某事」，to frustrate 是 to do 短语。frustrate 是动词，意思是「使人沮丧、受挫」。中文说「让……沮丧」。\n→ 性别不平等仍然让"
+     },
+     {
+      "t": "a lot of female employees",
+      "s": "这块照字面翻就行：a lot of 是「许多」，female employees 是「女性员工」。\n→ 许多女性员工沮丧"
+     }
+    ],
+    "sum": "性别不平等仍然让许多女性员工感到沮丧。",
+    "cmp": "和书上一致。"
+   }
   },
   "The article was intended to provoke discussion.": {
    "ph": [
@@ -199,7 +348,21 @@
      "b": "be intended to do",
      "m": "旨在"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The article was intended to",
+      "s": "你多半会翻成「这篇文章被打算去」。念一遍，别扭。was intended 是被动，就是「文章被别人怎么样了」，被谁打算？作者。be intended to do 就是「目的是做某事」，中文说「旨在」或「目的是」。\n→ 这篇文章旨在"
+     },
+     {
+      "t": "provoke discussion",
+      "s": "provoke 你可能只认识「激怒」，这里是「引发」，provoke discussion 就是「引发讨论」。\n→ 引发讨论"
+     }
+    ],
+    "sum": "这篇文章的目的是引发讨论。",
+    "cmp": "和书上基本一样，「旨在」更书面。"
+   }
   },
   "It is evident that the writer advocates the idea of returning to nature.": {
    "ph": [
@@ -240,7 +403,17 @@
      "b": "refuse to do",
      "m": "拒绝做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It refused to sponsor the 1984 Olympics",
+      "s": "你多半会翻成「它拒绝了赞助1984年的奥运会」。多了个「了」，也少了动作的感觉。refuse to do 是「拒绝做某事」，to sponsor 是 to do 短语，说的是被拒绝的事。sponsor 在这里是动词「赞助」，不是名词「赞助商」。\n→ 它拒绝赞助1984年的奥运会"
+     }
+    ],
+    "sum": "它拒绝赞助1984年的奥运会。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "He found many lies are spontaneous responses to an unexpected demand.": {
    "ph": [
@@ -249,7 +422,21 @@
      "b": "response to",
      "m": "对……的反应"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He found many lies are",
+      "s": "你多半会翻成「他发现了许多谎言」，然后后面还有个 are，就接不上了。found 后面其实省略了 that，补回去是 He found (that) many lies are……，that 带的是宾语从句，就是「他发现的内容」。\n→ 他发现许多谎言"
+     },
+     {
+      "t": "spontaneous responses to an unexpected demand",
+      "s": "spontaneous 是「自发的、不假思索的」，responses to 是「对……的反应」，unexpected 是「意想不到的」，demand 在这里是「要求」。你可能翻成「对意外需求的自发反应」，太硬，说成「面对突然的要求脱口而出」更像人话。\n→ 是对意想不到的要求脱口而出的反应"
+     }
+    ],
+    "sum": "他发现，许多谎言是面对意想不到的要求时脱口而出的反应。",
+    "cmp": "书上的译文更直接，一个词对一个词；我把「自发反应」说成「脱口而出」，更口语。"
+   }
   },
   "Our philosophy is to inspire kids at a young age to understand that engineering is a great career.": {
    "ph": [
@@ -296,7 +483,17 @@
      "b": "aspire to do",
      "m": "渴望做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He aspired to be their next leader",
+      "s": "你多半会翻成「他渴望是他们的下一个领导」。念一遍，「渴望是」不通顺。aspire to do 是「渴望做某事」，to be 是 to do 短语，在这里中文要补成「成为」。their next leader 是「他们的下一任领导」。\n→ 他渴望成为他们的下一任领导"
+     }
+    ],
+    "sum": "他渴望成为他们的下一任领导。",
+    "cmp": "和书上基本一样，书上说「下一届领导」，也对。"
+   }
   },
   "They were more eager to enjoy a movie.": {
    "ph": [
@@ -305,7 +502,17 @@
      "b": "be eager to do",
      "m": "渴望做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They were more eager to enjoy a movie",
+      "s": "你多半会翻成「他们更渴望享受一部电影」。念一遍，「享受电影」不太像中文。be eager to do 是「渴望做某事」，to enjoy 是 to do 短语，说的是想做的事。more 是「更」，句子里没写和谁比，照翻「更」就行。enjoy a movie 说成「看电影」更自然。\n→ 他们更渴望看电影"
+     }
+    ],
+    "sum": "他们更渴望看电影。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "They fell victim to eagles.": {
    "ph": [
@@ -337,7 +544,21 @@
      "b": "millions of",
      "m": "数百万"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "I have no desire to make",
+      "s": "你多半会翻成「我没有欲望去制造」。念一遍，不通。desire 在这里是名词「愿望」，眼睛往后找 to——找到了：desire to do，做某事的愿望。have no desire to do 就是「一点也不想做」。make 在这里不是「制造」，是「挣（钱）」。\n→ 我一点也不想挣"
+     },
+     {
+      "t": "millions of dollars",
+      "s": "millions of 不是「一百万」，而是「数百万」，泛指很多。\n→ 数百万美元"
+     }
+    ],
+    "sum": "我一点也不想挣几百万美元。",
+    "cmp": "意思和书上一样，书上说「不想赚」，我多加了一点「一点也」，语气更重。"
+   }
   },
   "The close link between age and stage may cease to exist in a multi-stage life.": {
    "ph": [
@@ -377,6 +598,23 @@
     "cmp": "几乎一样，书上说「年龄和所处阶段之间」，多了「所处」，更清楚是哪个阶段。"
    }
   },
+  "The eyes of a very good reader move quickly, taking long jumps and making very short halts.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The eyes of a very good reader move quickly",
+      "s": "这一块先找主语：move 前面是 The eyes，不是 reader。of a very good reader 只是告诉你是谁的眼睛。reader 你可能想成「读者」，在这里就是「会读的人」。\n→ 一个很会读书的人，眼睛移动得很快"
+     },
+     {
+      "t": "taking long jumps and making very short halts",
+      "s": "后面这两个 -ing 开头的词，是现在分词短语，补充说明前面的动作，就是「一边……一边……」。是谁在 take、谁在 make？候选有 reader 和 eyes。放回去试：读者在跳？不对；眼睛在跳、在停，对了。halt 是名词，「停顿」。\n→ 每次跳得很远，停顿很短"
+     }
+    ],
+    "sum": "优秀的阅读者眼睛移动得很快，每次跳得很远，停顿很短。",
+    "cmp": "和书上基本一致。"
+   }
+  },
   "What three words would you use to describe the culture here?": {
    "ph": [
     {
@@ -389,7 +627,51 @@
      "b": "use … to do",
      "m": "用……来做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "What three words would you use",
+      "s": "你多半会翻成「什么三个词你会使用」。先把疑问句还原：you would use what three words。would 在这里没有 if，也不是在过去时里，是个客气的问法，不用翻出来，翻成「会」就行。\n→ 你会用哪三个词"
+     },
+     {
+      "t": "to describe the culture here",
+      "s": "use … to do 是「用……来做某事」，to describe 就是「来描述」。眼睛往前找 use，别漏掉。the culture here 是「这里的文化」。\n→ 来描述这里的文化"
+     }
+    ],
+    "sum": "你会用哪三个词来描述这里的文化？",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "Police regulations prescribe that an officer's number must be clearly visible.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Police regulations prescribe",
+      "s": "你多半会翻成「警方的规章开处方」。prescribe 最常见是「开药方」，但主语是 regulations（规章），规章不会开药。这里 prescribe 是「规定」。\n→ 警方规章规定"
+     },
+     {
+      "t": "that an officer's number must be clearly visible",
+      "s": "that 带的是宾语从句，就是「规定的内容」。从句里 must 是「必须」，clearly visible 是「清晰可见」。\n→ 警察的编号必须清晰可见"
+     }
+    ],
+    "sum": "警方规章规定，警察的编号必须清晰可见。",
+    "cmp": "和书上基本一样，书上说「警政制度」，我保持原词「规章」。"
+   }
+  },
+  "Cooking skills can be improved with practice.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Cooking skills can be improved with practice",
+      "s": "你多半会翻成「烹饪技巧可以被提高和练习」。念一遍，with 不是「和」。can be improved 是被动，就是「技巧被别人怎么样了」，被谁提高？做饭的人。中文不用「被」。with practice 是「靠练习」。\n→ 烹饪技巧可以通过练习来提高"
+     }
+    ],
+    "sum": "烹饪技巧通过练习是可以提高的。",
+    "cmp": "意思和书上一样，书上说「通过练习来提高」，更顺口。"
+   }
   },
   "The era of personal technology is in many ways just beginning.": {
    "ph": [
@@ -412,7 +694,21 @@
      "b": "good news for",
      "m": "对……是好消息"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "On balance",
+      "s": "你多半会翻成「在平衡上」。念一遍，不通。on balance 是一个整体，就是把好处坏处放在秤上称一称之后的结论：「总的来说」。后面有个逗号，隔开了，是句首的状语，不影响主句。\n→ 总的来说"
+     },
+     {
+      "t": "biotechnology should be good news for developing countries",
+      "s": "should 在这里不是「应当」，而是「应该会」的推测。good news for 是「对……是好消息」，developing countries 是「发展中国家」。\n→ 生物技术对发展中国家应该是好消息"
+     }
+    ],
+    "sum": "总的来说，生物技术对发展中国家应该是好消息。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Genetic researchers in China have made a clone of a star police dog.": {
    "ph": [
@@ -435,7 +731,21 @@
      "b": "ask sb. to do",
      "m": "请某人做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He asked a technician to fix",
+      "s": "你多半会翻成「他问了一个技术员去修理」。ask 不是「问」。看到 ask，眼睛往后找 to——找到了：ask sb. to do，请某人做某事。sb. 是 a technician，do 是 fix。\n→ 他请技术员修理"
+     },
+     {
+      "t": "the broken production line",
+      "s": "broken 是过去分词，放在名词前当形容词，就是「坏了的」。production line 是「生产线」。\n→ 坏了的生产线"
+     }
+    ],
+    "sum": "他请技术员修理那条坏了的生产线。",
+    "cmp": "和书上基本一样，书上没有翻 the 的指示意思，我加了「那条」。"
+   }
   },
   "Buying that second-hand car without having it checked by a mechanic first cost us dear.": {
    "ph": [
@@ -486,7 +796,39 @@
      "b": "make an effort",
      "m": "做出努力"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "There is no mechanism to ensure",
+      "s": "你多半会翻成「没有机制去确保」。其实 to ensure 是 to do 短语，放在名词后面修饰它，说的是这个机制是干什么用的：「能确保……的机制」。mechanism 是「机制」。\n→ 没有任何机制能确保"
+     },
+     {
+      "t": "that they make the required effort",
+      "s": "that 带的是宾语从句，就是 ensure 的内容。required 是过去分词，放在名词前，「被要求的」，也就是「必要的」。make an effort 是「付出努力」。\n→ 他们付出必要的努力"
+     }
+    ],
+    "sum": "没有任何机制能确保他们付出必要的努力。",
+    "cmp": "和书上基本一样。"
+   }
+  },
+  "It accompanies all machinery involving high technology.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It accompanies all machinery",
+      "s": "accompany 是「伴随」，machinery 是不可数名词，指「机器、机械」，all machinery 就是「所有的机器」。\n→ 它伴随着所有机器"
+     },
+     {
+      "t": "involving high technology",
+      "s": "你可能想把它当成一个新的动作：「机器涉及高科技」。千万别。involving 是现在分词短语（-ing 短语），放在名词后面，给 machinery 补充说明，就是「涉及高科技的」。\n→ 涉及高科技的"
+     }
+    ],
+    "order": "英文的修饰成分 involving 放在名词后面，中文要把它提到名词前面，说成「涉及高科技的机器」。",
+    "sum": "它伴随着所有涉及高科技的机器。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "By moving the radar beam around slowly in circles, we can explore the surroundings.": {
    "ph": [
@@ -495,7 +837,21 @@
      "b": "in circles",
      "m": "绕圈"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "By moving the radar beam around slowly in circles",
+      "s": "你多半会翻成「通过移动雷达波围绕慢慢在圆圈里」，念不下去。by moving 是 by + -ing，就是「通过做某事」，说的是方法。in circles 是「绕圈」，around slowly 是「慢慢地四处」。拆开说：慢慢地让雷达波绕圈移动。\n→ 通过让雷达波束慢慢地绕圈移动"
+     },
+     {
+      "t": "we can explore the surroundings",
+      "s": "这块照字面翻就行：explore 是「探索」，the surroundings 是「周围的环境」。\n→ 我们就能探索周围的环境"
+     }
+    ],
+    "sum": "通过让雷达波束慢慢地绕圈移动，我们就能探索周围的环境。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "Enormous quantities of radiation from the sun are screened off.": {
    "ph": [

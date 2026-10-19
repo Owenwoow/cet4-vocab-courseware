@@ -13,7 +13,21 @@
      "b": "gain … from",
      "m": "从……获得"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "I'm not sure whether",
+      "s": "你多半会翻成「我不确定是否」，然后卡住，因为后面还有一整句话。whether 带的是宾语从句，就是「不确定的那件事」，意思是「是不是、能不能」。\n→ 我不确定"
+     },
+     {
+      "t": "I can gain any profit from the investment",
+      "s": "gain 你可能只记得「获得」，翻成「获得任何利润」，也行，但 gain profit 中文更常说「获利」。眼睛往后找 from：gain … from，从某处得到。any 在这种不确定的语气里，中文可以不翻。\n→ 我是否能从这次投资中获利"
+     }
+    ],
+    "sum": "我不确定自己能不能从这次投资中获利。",
+    "cmp": "和书上基本一样，我把「是否」换成口语的「能不能」。"
+   }
   },
   "Tips benefit the boss rather than the employees.": {
    "ph": [
@@ -22,7 +36,39 @@
      "b": "rather than",
      "m": "而不是"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Tips benefit the boss",
+      "s": "你多半会翻成「小费受益老板」，不通。benefit 在这里是动词，「使……受益」，主语是让别人受益的东西。Tips 是小费。\n→ 小费使老板受益"
+     },
+     {
+      "t": "rather than the employees",
+      "s": "rather than 就是「而不是」，它后面跟的是被排除的那一方。the employees 前面省掉了 benefit，补回去是 rather than (benefit) the employees，所以是「而不是使雇员受益」。\n→ 而不是使雇员受益"
+     }
+    ],
+    "sum": "小费的好处归了老板，而不是雇员。",
+    "cmp": "书上把「使……受益」说了两遍，意思完全一样；我合并成「好处归了」，更短。"
+   }
+  },
+  "His salary was too low for his responsibility.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "His salary was too low",
+      "s": "这块照字面翻就行：too low 是「太低」。\n→ 他的薪水太低了"
+     },
+     {
+      "t": "for his responsibility",
+      "s": "你多半会翻成「对他的责任来说」，念一遍，有点绕。for 在这里是「相对于、跟……比」，拿薪水和责任放在一起比。\n→ 与他承担的责任相比"
+     }
+    ],
+    "order": "中文习惯先交代拿什么来比，再说结论，所以把 for his responsibility 提到前面。",
+    "sum": "与他承担的责任相比，他的薪水太低了。",
+    "cmp": "和书上一样。"
+   }
   },
   "He is always complaining about low wages.": {
    "ph": [
@@ -40,7 +86,22 @@
      "b": "charge … on",
      "m": "对……收取"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "A fee should be charged",
+      "s": "你多半会翻成「一笔费用应该被收取」。should be charged 是被动，就是「费用被别人怎么样了」。中文更习惯把人请出来当主语，说「应该收费」。\n→ 应该收取费用"
+     },
+     {
+      "t": "on used containers for recycling",
+      "s": "used 在这里是过去分词，放在名词前面当形容词用，就是「用过的」，别当成动词。charge a fee on sth. 是「对……收费」，on 后面是收费的对象。for recycling 是「用于回收的」。\n→ 对回收的旧容器"
+     }
+    ],
+    "order": "英文先说收费、后说对谁收；中文可以先说对象再说收费。",
+    "sum": "对回收的旧容器，应当收费。",
+    "cmp": "和书上意思一样，书上说「收取费用」，我用「收费」更短。"
+   }
   },
   "You should bid farewell to guilt and regret.": {
    "ph": [
@@ -76,7 +137,22 @@
      "b": "be awarded",
      "m": "获得（奖励）"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The three students were awarded scholarships",
+      "s": "你多半会翻成「这三名学生被授予了奖学金」。were awarded 是被动，就是「学生被别人怎么样了」。中文可以这么说，但「获得」更顺口。\n→ 这三名学生获得了奖学金"
+     },
+     {
+      "t": "totaling $21,000",
+      "s": "totaling 是 -ing 短语，跟在 scholarships 后面，给它补一句说明，就是「总计 2.1 万美元的」。别把它当成句子的谓语，谓语是前面的 were awarded。\n→ 总计 2.1 万美元的"
+     }
+    ],
+    "order": "英文把说明放在名词后面，中文要把「总计 2.1 万美元的」挪到「奖学金」前面。",
+    "sum": "这三名学生获得了总额为 2.1 万美元的奖学金。",
+    "cmp": "和书上一样，只是我把「总计」换成「总额为」。"
+   }
   },
   "Big houses are advertised as a reward for hard work and diligence.": {
    "ph": [
@@ -90,7 +166,38 @@
      "b": "a reward for",
      "m": "对……的奖赏"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Big houses are advertised as",
+      "s": "你多半会翻成「大房子被做广告」。are advertised 是被动，就是「大房子被别人怎么样了」。advertise A as B 是「把 A 宣传成 B」，看到 advertised 眼睛往后找 as。\n→ 大房子被宣传成"
+     },
+     {
+      "t": "a reward for hard work and diligence",
+      "s": "a reward for 是「对……的奖赏」，for 后面是奖赏的理由。hard work and diligence 就是「努力工作和勤奋」。\n→ 对努力工作和勤奋的奖赏"
+     }
+    ],
+    "sum": "大房子被宣传成对努力工作和勤奋的奖赏。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "Some of them find it awkward when hugging children.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Some of them find it awkward",
+      "s": "你多半会翻成「他们中的一些人发现它很尴尬」，可是 it 没东西可指。find it awkward 是「觉得……尴尬」，这个 it 只是先占个位置，真正让人尴尬的事在后面的 when hugging children。\n→ 他们中的一些人觉得很尴尬"
+     },
+     {
+      "t": "when hugging children",
+      "s": "when 后面直接接 hugging，是省略了主语：补回去是 when (they are) hugging children。-ing 表示「正在做这件事」，所以是「在拥抱孩子的时候」。\n→ 在拥抱孩子的时候"
+     }
+    ],
+    "sum": "他们中有些人在拥抱孩子时觉得很尴尬。",
+    "cmp": "书上说「觉得拥抱孩子很尴尬」，把尴尬的事直接放在后面；我的版本保留了「时候」，意思一样。"
+   }
   },
   "Children looked up in awe and delight.": {
    "ph": [
@@ -113,7 +220,22 @@
      "b": "be tailored to",
      "m": "针对……制订"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Treatment is tailored",
+      "s": "你多半会翻成「治疗被裁缝了」，不通。tailor 你只认识名词「裁缝」，这里是动词「量身定做」。is tailored 是被动，就是「治疗被别人量身定做」。看到 tailored，眼睛往后找 to。\n→ 治疗是量身制订的"
+     },
+     {
+      "t": "to the needs of each patient",
+      "s": "找到了：be tailored to，是「针对……而制订」。the needs of each patient 就是「每位病人的需要」，不要翻成「每位病人的需要们」，中文不用复数。\n→ 针对每位病人的需要"
+     }
+    ],
+    "order": "英文先说「量身定做」、再说「针对谁」；中文可以先说针对谁。",
+    "sum": "治疗是针对每位病人的需要量身制订的。",
+    "cmp": "和书上基本一样，书上没有「量身」，我加上更能表达 tailor 的意思。"
+   }
   },
   "She can add multiple details to the design to communicate her idea.": {
    "ph": [
@@ -127,7 +249,21 @@
      "b": "add … to",
      "m": "把……添加到"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She can add multiple details to the design",
+      "s": "你多半会翻成「她可以加多个细节到设计」。add A to B 是「把 A 加到 B 上」，这里第一个 to 就是这个搭配，A 是 multiple details，B 是 the design。multiple 是「多个的」。\n→ 她可以在设计中添加多个细节"
+     },
+     {
+      "t": "to communicate her idea",
+      "s": "又出现一个 to，别再当成 add 的搭配了，to the design 已经用掉了。这里 to 后面跟动词 communicate，是 to do 短语，表目的，就是「为了、用来」。\n→ 来传达她的想法"
+     }
+    ],
+    "sum": "她可以在设计中添加许多细节，来传达自己的想法。",
+    "cmp": "和书上一样。"
+   }
   },
   "They are advertised as a way for adults to finish their education.": {
    "ph": [
@@ -136,7 +272,22 @@
      "b": "be advertised as",
      "m": "被宣传为"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They are advertised as a way",
+      "s": "你多半会翻成「它们被做广告成一种方式」，别扭。are advertised 是被动，就是「它们被别人怎么样了」；advertise … as 是「把……宣传成」，看到 advertised，眼睛往后找 as。\n→ 它们被宣传成一种方式"
+     },
+     {
+      "t": "for adults to finish their education",
+      "s": "to finish 是 to do 短语，跟在 a way 后面补说明，就是「完成……的方式」。for adults 是做这件事的人，「成年人」。\n→ 成年人完成教育的"
+     }
+    ],
+    "order": "「成年人完成教育的」是 a way 的说明，中文要放在「一种方式」前面。",
+    "sum": "它们被宣传成成年人完成学业的一种方式。",
+    "cmp": "和书上基本一样，我把「教育」换成「学业」。"
+   }
   },
   "They got through two barrels of beer.": {
    "ph": [
@@ -147,6 +298,23 @@
     }
    ]
   },
+  "We used two buckets of paint to paint the room.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "We used two buckets of paint",
+      "s": "你多半会翻成「两个桶的漆」。a bucket of 是量词用法，直接说「两桶漆」就行。paint 这里是名词「油漆」。\n→ 我们用了两桶漆"
+     },
+     {
+      "t": "to paint the room",
+      "s": "后面又有一个 paint，这个是动词「粉刷」。to paint 是 to do 短语，表目的，就是「用来做什么」。\n→ 来粉刷房间"
+     }
+    ],
+    "sum": "我们用了两桶漆来粉刷这个房间。",
+    "cmp": "和书上一样。"
+   }
+  },
   "He said he wasn't prepared to bargain.": {
    "ph": [
     {
@@ -154,7 +322,38 @@
      "b": "be prepared to do",
      "m": "愿意做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He said",
+      "s": "你可能觉得 said he 两个主语连在一起，怪。其实 said 后面藏了个 that，补回去是 He said (that) he wasn't……，that 后面整句都是宾语从句，就是他说的内容。\n→ 他说"
+     },
+     {
+      "t": "he wasn't prepared to bargain",
+      "s": "你多半会翻成「他没有准备好讨价还价」。be prepared to do 是「愿意做」，否定了就是「不愿意」。bargain 这里是动词「讨价还价」，不是名词「便宜货」。wasn't 用过去时，是跟着前面 said 的过去时走。\n→ 他不愿讨价还价"
+     }
+    ],
+    "sum": "他说他不愿意讨价还价。",
+    "cmp": "和书上基本一样，书上用「不愿」，我加了个「意」。"
+   }
+  },
+  "He didn't want to embarrass her by asking questions.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "He didn't want to embarrass her",
+      "s": "你多半会翻成「他不想尴尬她」，念着怪。embarrass 是动词「使尴尬」，所以要加个「让」：让她尴尬。want to 是 to do，就是「想做某事」。\n→ 他不想让她尴尬"
+     },
+     {
+      "t": "by asking questions",
+      "s": "by 后面接 -ing，是「通过做……」，也就是方式。中文常常换成「因为……」更顺。\n→ 因为问问题"
+     }
+    ],
+    "sum": "他不想因为问问题而让她难堪。",
+    "cmp": "书上是「通过提问题让她尴尬」，跟着英文语序走，也对；我把方式改成原因，更口语。"
+   }
   },
   "They failed to meet the deadline because their time was deficient.": {
    "ph": [
@@ -201,7 +400,22 @@
      "b": "artificial intelligence",
      "m": "人工智能"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Millions of jobs",
+      "s": "Millions of 是「数百万的」，million 加了 s 又加 of，是固定说法，别当成「一百万」。\n→ 数百万个工作岗位"
+     },
+     {
+      "t": "will be threatened by robotics and artificial intelligence",
+      "s": "你多半会翻成「将被机器人技术和人工智能威胁」。will be threatened 是被动，就是「岗位被别人怎么样了」，by 后面的才是动手的人。中文更习惯让动手的人当主语。artificial intelligence 就是「人工智能」。\n→ 将受到机器人技术和人工智能的威胁"
+     }
+    ],
+    "order": "如果想少用「被」，可以把 by 后面提到前面当主语：机器人技术和人工智能将威胁数百万个岗位。",
+    "sum": "机器人技术和人工智能将威胁数百万个工作岗位。",
+    "cmp": "书上保留了被动，意思一样；我改成主动，少一个「被」。"
+   }
   },
   "It's not necessarily an efficient way to learn.": {
    "ph": [
@@ -210,7 +424,21 @@
      "b": "not necessarily",
      "m": "不一定；未必"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It's not necessarily",
+      "s": "你多半会翻成「它不必然」，不完整。not necessarily 是固定搭配，「不一定、未必」，是部分否定，不是说「一定不」。\n→ 它不一定是"
+     },
+     {
+      "t": "an efficient way to learn",
+      "s": "to learn 是 to do 短语，跟在 way 后面补说明，「学习的方式」。efficient 是「高效的、有效的」。\n→ 一种高效的学习方式"
+     }
+    ],
+    "sum": "它不一定是一种高效的学习方式。",
+    "cmp": "书上说「并不是一种有效的学习方式」，把 not necessarily 翻成了「并不是」，语气比「不一定」重一点。"
+   }
   },
   "These fish are found in shallow waters around the coast.": {
    "ph": [
@@ -219,7 +447,38 @@
      "b": "be found in",
      "m": "生长在；发现于"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "These fish are found",
+      "s": "你多半会翻成「这些鱼被发现」。are found in 是被动，在说生物时，常常是「分布在、生活在」。\n→ 这些鱼生活在"
+     },
+     {
+      "t": "shallow waters around the coast",
+      "s": "shallow 是「浅的」，别和 shadow（影子）看混。waters 加了 s，是「水域」，around the coast 是「海岸周围」。\n→ 海岸附近的浅水水域"
+     }
+    ],
+    "sum": "这些鱼生活在海岸附近的浅水水域。",
+    "cmp": "和书上基本一样，书上说「生长在海边浅水水域」。"
+   }
+  },
+  "The energy used by microwaves is lower than any other form of cooking.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The energy used by microwaves",
+      "s": "别急着找谁是谓语。used by microwaves 是 -ed 短语，放在名词后面补说明，就是「被……使用的」，放回去试试：能量被微波炉使用，对。真正的谓语在后面的 is。\n→ 微波炉所消耗的能量"
+     },
+     {
+      "t": "is lower than any other form of cooking",
+      "s": "你多半会翻成「比其他任何烹饪形式低」。这里比的是能量，than 后面省掉了一部分，补回去是 lower than (the energy used by) any other form of cooking。所以是「比其他任何烹饪方式所消耗的能量都低」，中文可以省掉重复的。\n→ 比其他任何烹饪方式都低"
+     }
+    ],
+    "sum": "微波炉消耗的能量比其他任何烹饪方式都低。",
+    "cmp": "和书上一样。"
+   }
   },
   "Their homes will be swallowed up by the hungry sea.": {
    "ph": [
@@ -228,7 +487,22 @@
      "b": "swallow up",
      "m": "吞没"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Their homes will be swallowed up",
+      "s": "你多半会翻成「他们的家将被吞下去」。will be swallowed up 是被动，就是「家被别人怎么样了」。swallow up 是「吞没」，up 加强的是吞得干净。\n→ 他们的家园将被吞没"
+     },
+     {
+      "t": "by the hungry sea",
+      "s": "by 后面是动手的人。the hungry sea 把大海当成饿了的人，这是比喻，中文保留也很生动。要少用「被」，就把大海请出来当主语。\n→ 被饥饿的大海"
+     }
+    ],
+    "order": "如果想少用「被」，把 by 后面提到前面当主语：饥饿的大海将吞没他们的家园。",
+    "sum": "饥饿的大海将吞没他们的家园。",
+    "cmp": "书上保留了被动，意思一样；我改成主动，更干脆。"
+   }
   },
   "She is a pillar of strength in a crisis.": {
    "ph": [
@@ -256,7 +530,21 @@
      "b": "course of action",
      "m": "行动方针"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It proves crucial",
+      "s": "你多半会翻成「它证明关键」，不通。prove 后面直接跟形容词时，是「结果证明是……」，crucial 是「至关重要的」。\n→ 事实证明，这至关重要"
+     },
+     {
+      "t": "in making others follow one's course of action",
+      "s": "in 后面接 -ing，是「在做……这件事上」。making others follow 是 make sb. do，「让别人做某事」，others 是别人，follow 是原形动词，没有 to。course of action 是「行动方针」，one's 是「自己的」。\n→ 在让别人遵循自己的行动方针方面"
+     }
+    ],
+    "sum": "事实证明，在让别人按自己的行动方针行事这件事上，这至关重要。",
+    "cmp": "和书上基本一样，我把 follow 换成「按……行事」，更顺口。"
+   }
   },
   "The most researched aspect of breakfast and breakfast-skipping has been its links to obesity.": {
    "ph": [
@@ -298,7 +586,22 @@
      "b": "come from",
      "m": "来自"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Police suspect the eggs came from a freighter",
+      "s": "你多半会翻成「警方怀疑鸡蛋」，然后后面接不上。suspect 后面藏了个 that，补回去是 Police suspect (that) the eggs came from……，that 后面整句是宾语从句，就是怀疑的内容。came from 是「来自」。\n→ 警方怀疑这些鸡蛋来自一艘货船"
+     },
+     {
+      "t": "that lost part of its cargo",
+      "s": "that 带的是定语从句，就是给前面的名词补一段说明。that 指谁？放回去试：the eggs lost part of its cargo？鸡蛋丢了货物，说不通。a freighter lost part of its cargo：货船丢了一部分货物，对。lost 是过去式，不是被动。\n→ 这艘货船丢失了部分货物"
+     }
+    ],
+    "order": "「丢失了部分货物的」是说明 freighter 的，中文要放在「货船」前面。",
+    "sum": "警方怀疑这些鸡蛋来自一艘丢失了部分货物的货船。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "They became suspicious of his behaviour and contacted the police.": {
    "ph": [
@@ -308,6 +611,24 @@
      "m": "对……起疑"
     }
    ]
+  },
+  "I'll inspect the product before we put it in the container.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "I'll inspect the product",
+      "s": "这块照字面翻就行：I'll 是 I will，inspect 是「检查」。\n→ 我会检查产品"
+     },
+     {
+      "t": "before we put it in the container",
+      "s": "before 带的是时间状语从句，就是「在……之前」。你可能奇怪：说的是还没发生的事，为什么用 put，不用 will put？英语里这种时间从句用现在时表将来，中文就按将来理解。\n→ 在我们把它装进集装箱之前"
+     }
+    ],
+    "order": "英文先说主句、后说 before；中文习惯先说时间。",
+    "sum": "在我们把产品装进集装箱之前，我会先检查一下。",
+    "cmp": "和书上一样。"
+   }
   },
   "She checked all the items with the man.": {
    "ph": [
@@ -389,6 +710,41 @@
     "cmp": "意思一样。书上是「仔细检查……是值得的」，把 with extra care 译成了「仔细」，少了「格外」的意思。"
    }
   },
+  "She monitored the brain activity of participants sleeping in a new environment.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "She monitored the brain activity of participants",
+      "s": "monitor 你可能只认识名词「显示器」，这里是动词，「监测」。of participants 是「参与者的」，brain activity 是「大脑活动」。\n→ 她监测了参与者的大脑活动"
+     },
+     {
+      "t": "sleeping in a new environment",
+      "s": "sleeping 是 -ing 短语，跟在 participants 后面补说明，就是「正在睡觉的」。放回去试：参与者在睡觉，说得通；活动在睡觉，说不通。谓语是前面的 monitored，不是 sleeping。\n→ 在新环境中睡觉的"
+     }
+    ],
+    "order": "「在新环境中睡觉的」是说明 participants 的，中文要放在「参与者」前面。",
+    "sum": "她监测了在新环境中睡觉的参与者的大脑活动。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "The people who live there respect the land.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The people who live there",
+      "s": "who 带的是定语从句，就是给 people 补一段说明。who 指谁？放回去试：people live there，对，只有人才能住在那里。\n→ 住在那里的人"
+     },
+     {
+      "t": "respect the land",
+      "s": "你可能想把 respect 也算进 who 那一句里。who live there 已经完整，there 是「那里」，后面不缺东西，所以 respect 是整句的谓语：人们尊重这片土地。respect 这里是动词「尊重」。\n→ 尊重那片土地"
+     }
+    ],
+    "sum": "住在那里的人尊重那片土地。",
+    "cmp": "和书上完全一样。"
+   }
+  },
   "So is there any evidence that setbacks might actually improve our career prospects?": {
    "ph": [
     {
@@ -419,7 +775,21 @@
      "b": "promote the development of",
      "m": "促进……的发展"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The researchers speculate that",
+      "s": "speculate 你可能只认识名词「投机」，这里是动词「推测」。that 后面是宾语从句，就是推测的内容，that 本身不用翻。\n→ 研究人员推测"
+     },
+     {
+      "t": "craft activities promote the development of nerve pathways in the brain",
+      "s": "你多半会翻成「手工艺活动促进大脑里的神经通路的发展」，念着还行，但嫌长。promote the development of 是固定搭配，「促进……的发展」，in the brain 是 nerve pathways 的位置，「大脑里的」。\n→ 手工艺活动促进了大脑神经通路的发展"
+     }
+    ],
+    "sum": "研究人员推测，手工艺活动促进了大脑神经通路的发展。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "It's nice to have people agree, but you need conflicting perspectives to dig out the truth.": {
    "ph": [
@@ -449,6 +819,24 @@
     "cmp": "意思一样。书上按英文语序，我把「来挖掘真相」提到前面，变成「要……，你需要……」，更像中文常用的说法。"
    }
   },
+  "But is there a point where it reaches capacity?": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "But is there a point",
+      "s": "is there 把 is 放在 there 前面，是疑问句的倒装，就是 there is a point 的疑问形式，「是否存在一个点」。point 这里是「点」。\n→ 但是否存在一个点"
+     },
+     {
+      "t": "where it reaches capacity",
+      "s": "你多半会翻成「那里它达到容量」，别扭。where 带的是定语从句，就是给 point 补说明。放回去试：it reaches capacity at the point，在那个点上达到容量，对。所以 where 其实是「在这个点上」。reach capacity 是「达到容量极限」。\n→ 在那个点上它达到容量极限"
+     }
+    ],
+    "order": "「达到容量极限的」是说明 point 的，中文要放在「临界点」前面。",
+    "sum": "但是，是否存在一个达到容量极限的临界点呢？",
+    "cmp": "和书上完全一样。"
+   }
+  },
   "She had only a vague notion of what might happen.": {
    "ph": [
     {
@@ -456,7 +844,21 @@
      "b": "a notion of",
      "m": "……的概念"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She had only a vague notion",
+      "s": "notion 是「概念、想法」，vague 是「模糊的」。had a notion of 是「对……有个想法」。only 放在 a vague notion 前面，是「只有」。\n→ 她只有一个模糊的概念"
+     },
+     {
+      "t": "of what might happen",
+      "s": "你多半会翻成「关于什么可能发生」，别扭。what might happen 整体是一个宾语从句，当 of 的宾语，就是「可能发生的事」。might 在这里是「可能」。\n→ 关于可能发生的事"
+     }
+    ],
+    "sum": "对于可能发生的事，她只有一个模糊的概念。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "The concept is often presented as something to achieve, or a goal to reach.": {
    "ph": [
@@ -465,7 +867,21 @@
      "b": "be presented as",
      "m": "被呈现为"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The concept is often presented as",
+      "s": "你多半会翻成「这个概念经常被呈现」。is presented 是被动，就是「概念被别人怎么样了」。present A as B 是「把 A 说成 B」，看到 presented，眼睛往后找 as。\n→ 这个概念通常被呈现为"
+     },
+     {
+      "t": "something to achieve, or a goal to reach",
+      "s": "这里有两个 to do 短语：something to achieve 是「要实现的东西」，a goal to reach 是「要达到的目标」，to do 都在名词后面补说明。or 把两个并起来。\n→ 要实现的东西，或者要达到的目标"
+     }
+    ],
+    "sum": "这个概念通常被说成是要实现的东西，或者要达到的目标。",
+    "cmp": "和书上基本一样，书上用「呈现为」，我换成更口语的「说成」。"
+   }
   },
   "When you look at today's digital activity, the facts are much more positive than you might expect.": {
    "ph": [
