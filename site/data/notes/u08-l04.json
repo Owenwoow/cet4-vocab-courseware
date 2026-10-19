@@ -44,6 +44,24 @@
     }
    ]
   },
+  "I admire the passion and commitment shown by the players.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "I admire the passion and commitment",
+      "s": "这块照字面翻就行：admire 是「钦佩」，passion and commitment 是「激情和投入」。\n→ 我钦佩激情和投入"
+     },
+     {
+      "t": "shown by the players",
+      "s": "你多半会翻成「被运动员们展示的」。念一遍，别扭吧？shown 是过去分词，shown by the players 是 -ed 短语，跟在名词后面，给它补一段说明，就是「运动员们表现出的」。眼睛往前找：谁被表现出来？passion and commitment。\n→ 运动员们表现出的"
+     }
+    ],
+    "order": "英文把补充说明放在名词后面，中文要把「运动员们表现出的」提到「激情和投入」前面。",
+    "sum": "我钦佩运动员们表现出的激情和投入。",
+    "cmp": "几乎一样，只有最后一个词不同：书上用「承诺」，我用「投入」，说运动员的状态，「投入」更贴切一点。"
+   }
+  },
   "They are keen on high technology.": {
    "ph": [
     {
@@ -52,6 +70,23 @@
      "m": "热衷于"
     }
    ]
+  },
+  "Their children must excel and beat their white peers in academic settings so they have the same chances to excel later.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Their children must excel and beat their white peers in academic settings",
+      "s": "excel 你可能没见过，它是「做得出色」；beat 是「打败、超过」；peers 是「同龄人」。academic settings 别翻成「学术布景」，就是「学业方面」。\n→ 他们的孩子必须在学业上表现出色、超过他们的白人同龄人"
+     },
+     {
+      "t": "so they have the same chances to excel later",
+      "s": "你多半会翻成「所以他们有同样的机会」。放回去试试：孩子必须出色，所以他们有机会？因果说反了。这里的 so 后面跟了一整句，是目的状语从句，就是「为了让……」「这样才……」。to excel later 是 to do 短语，补充 chances，「以后出类拔萃的机会」。\n→ 这样他们以后才有同样的机会出类拔萃"
+     }
+    ],
+    "sum": "他们的孩子必须在学业上出类拔萃、超过白人同龄人，这样将来才能有同样的出头机会。",
+    "cmp": "意思一样，书上的译文是按英文顺序直译的，读起来没有问题。"
+   }
   },
   "The villagers finally banded together and scared the beast away with firecrackers and drums.": {
    "ph": [
@@ -104,6 +139,23 @@
     "cmp": "书上把 attention 译成「注意」，两处都用了「注意」，意思对。我把 less to 补成「少关注」，读起来更像一句完整的话。"
    }
   },
+  "Online programs to fight depression are already commercially available.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Online programs to fight depression",
+      "s": "你多半会翻成「在线程序去对抗抑郁症」。念一遍，是不是有点怪？to fight depression 是 to do 短语，跟在名词后面，就是「用来……的」，给 programs 补说明。\n→ 用来对抗抑郁症的在线程序"
+     },
+     {
+      "t": "are already commercially available",
+      "s": "你可能想翻成「已经商业地可得到」，太硬了。commercially available 说白了就是「市面上买得到」。\n→ 已经上市了"
+     }
+    ],
+    "sum": "对抗抑郁症的在线程序现在市面上已经能买到了。",
+    "cmp": "和书上基本一样，书上的「上市」是把 commercially available 说成一个词，更简洁。"
+   }
+  },
   "They struggle to satisfy the demands of both work and home.": {
    "ph": [
     {
@@ -111,7 +163,21 @@
      "b": "struggle to do",
      "m": "努力做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They struggle to satisfy",
+      "s": "你多半会翻成「他们挣扎着去满足」。「挣扎」太重了。struggle to do 是「努力做某事」，to satisfy 就是后面跟的那件事。\n→ 他们努力满足"
+     },
+     {
+      "t": "the demands of both work and home",
+      "s": "这块照字面翻就行：demands 在这里是「要求、需求」，both A and B 是「A 和 B 两头」。\n→ 工作和家庭两方面的需求"
+     }
+    ],
+    "sum": "他们努力同时满足工作和家庭两方面的需求。",
+    "cmp": "和书上基本一样，我把 both 的意思「两方面」也翻出来了。"
+   }
   },
   "He was killed in combat.": {
    "ph": [
@@ -120,7 +186,22 @@
      "b": "be killed in",
      "m": "在……中丧生"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He was killed",
+      "s": "你多半会翻成「他被杀死了」。was killed 是被动，就是「他被别人怎么样了」。放在战场上，中文有现成的说法：「阵亡」。\n→ 他阵亡了"
+     },
+     {
+      "t": "in combat",
+      "s": "这块照字面翻就行：combat 是「战斗」，in combat 就是「在战斗中」。\n→ 在战斗中"
+     }
+    ],
+    "order": "「阵亡」已经把 killed 说完了，所以中文先说「在战斗中」，再说「阵亡」。",
+    "sum": "他在战斗中阵亡了。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "In a Los Angeles Times article, one employee referred to the board as a \"digital whip\".": {
    "ph": [
@@ -153,7 +234,25 @@
      "b": "reach an agreement",
      "m": "达成一致"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "In order to learn the art of persuasion at the workplace",
+      "s": "句首的 In order to 就是「为了」，后面的 to learn 是 to do 短语，跟的是目的。你多半会翻成「为了学习说服的艺术在工作场所」，at the workplace 放到最后读不顺，中文先说地点：「在职场」。\n→ 为了在职场学会说服的艺术"
+     },
+     {
+      "t": "you need to understand",
+      "s": "这块照字面翻就行：need to do 是「需要做」。\n→ 你需要了解"
+     },
+     {
+      "t": "how to handle conflicts and reach agreements",
+      "s": "你多半会翻成「怎样去处理冲突和到达协议」。how to do 是「怎么做」，疑问词加 to do。reach agreements 里的 reach 不是「到达」，reach an agreement 是固定说法，「达成一致」。\n→ 如何处理冲突、达成一致"
+     }
+    ],
+    "sum": "要想在职场学会说服的艺术，你需要懂得如何处理冲突、达成一致。",
+    "cmp": "和书上基本一样，书上用的是「了解」，我用「懂得」，意思差不多。"
+   }
   },
   "Most people when confronted with a horse will pat it.": {
    "ph": [
@@ -167,7 +266,21 @@
      "b": "pat",
      "m": "轻拍"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Most people when confronted with a horse",
+      "s": "你多半会翻成「大多数人当被面对着一匹马」。读起来不通。when confronted with 其实是 when they are confronted with 省略了主语和 be，所以 confronted 是被动，就是「被摆到……面前」，说白了是「遇到、碰上」。\n→ 大多数人遇到一匹马时"
+     },
+     {
+      "t": "will pat it",
+      "s": "这块照字面翻就行：pat 是「轻拍」。it 指谁？放回去试：拍 people？人拍人，说不通；拍 a horse，对。\n→ 都会拍拍它"
+     }
+    ],
+    "sum": "大多数人一遇到马，都会拍拍它。",
+    "cmp": "和书上基本一样，书上写作「遇见马时」，我说「一遇到马」，更口语。"
+   }
   },
   "The Britannic hit a naval mine in 1916 and subsequently sank as well.": {
    "ph": [
@@ -194,7 +307,22 @@
      "b": "in danger",
      "m": "处于危险中"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Smash the car window with a hammer",
+      "s": "句子一上来就是动词，没有主语，这是祈使句，就是「你要……」。你多半会翻成「砸碎车窗用锤子」，中文习惯先说工具：with a hammer 是「用锤子」。\n→ 用锤子砸碎车窗"
+     },
+     {
+      "t": "when in danger",
+      "s": "你可能想翻成「当在危险中」，念一遍就觉得不通。when in danger 是 when you are in danger 省略了主语和 be，是时间状语从句，就是「在……的时候」。\n→ 遇到危险时"
+     }
+    ],
+    "order": "英文把「什么时候」放在后面，中文习惯先说时间，所以把「遇到危险时」提到前面。",
+    "sum": "遇到危险时，要用锤子砸碎车窗。",
+    "cmp": "和书上基本一样，书上也是把「在有危险时」提到前面，并加了「要」。"
+   }
   },
   "He also figured out a new way to make a punch look real.": {
    "ph": [
@@ -208,7 +336,21 @@
      "b": "a way to do",
      "m": "做……的办法"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He also figured out a new way",
+      "s": "你多半会翻成「他也计算出了一个新方式」。figure out 是个短语动词，意思是「想出、弄明白」，不是「计算」。\n→ 他还想出了一个新办法"
+     },
+     {
+      "t": "to make a punch look real",
+      "s": "to make 是 to do 短语，跟在 way 后面，补充说明这个办法是干什么的。make a punch look real 是「让一拳看起来像真的」：make 后面是 a punch，再跟 look real，是「让它怎么样」。punch 在这里是名词，「出拳」。\n→ 让出拳看起来像真的"
+     }
+    ],
+    "sum": "他还想出了一个新办法，让出拳看起来像真的。",
+    "cmp": "和书上基本一样，书上最后多了「一样」，是为了顺口。"
+   }
   },
   "In the age of the Internet, there's no such thing as a private debate.": {
    "ph": [
@@ -290,6 +432,44 @@
     }
    ]
   },
+  "New research demonstrates why playing with blocks might have been time better spent.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "New research demonstrates why",
+      "s": "你多半会翻成「新研究证明了为什么」，这个没错，但要注意 why 带的是宾语从句，就是「证明了什么？」后面一整段都是它的内容。research 是不可数名词，不是「研究者」。\n→ 新研究证明了为什么"
+     },
+     {
+      "t": "playing with blocks",
+      "s": "-ing 开头当主语，就是「做某事」这件事。blocks 在这里不是「街区」，是「积木」。\n→ 玩积木"
+     },
+     {
+      "t": "might have been time better spent",
+      "s": "time better spent 你多半翻成「更好被花的时间」。spent 是过去分词，是 -ed 短语，给 time 补说明，就是「花得更值的时间」。might have been 里 might 没有 if 条件，是「也许」的语气，have been 指过去，合起来是对过去的推测：「当初也许是」。\n→ 也许是更值得花的时间"
+     }
+    ],
+    "sum": "新研究说明了为什么玩积木也许是更值得花的时间。",
+    "cmp": "书上译成「或许可以更好地消磨时间」，「可以」把过去的推测说成了能力，不太准确；我的译法保留了「更值得花的时间」这个说法。"
+   }
+  },
+  "He demoed the new program he had just created.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "He demoed",
+      "s": "你多半只见过 demo 当名词，所以会卡住。demo 是 demonstrate 的缩写，这里当动词，加了 -ed，「演示」。\n→ 他演示了"
+     },
+     {
+      "t": "the new program he had just created",
+      "s": "program 后面直接跟 he had just created，中间省略了 that，这是定语从句，就是给前面的名词补一段说明：the new program (that) he had just created。先行词是谁？放回去试：he created the program，对；he created ‘he’ 说不通。had created 是过去完成时，说明创建发生在演示之前。\n→ 他刚编写好的新程序"
+     }
+    ],
+    "sum": "他演示了自己刚编写好的新程序。",
+    "cmp": "和书上基本一样，只是我用「自己」代替了第二个「他」，避免重复。"
+   }
+  },
   "The point is to use the results of this study to open up meaningful dialogues on implicit gender bias.": {
    "ph": [],
    "an": {
@@ -307,6 +487,23 @@
     "cmp": "和书上基本一样。书上用「利用」，我用「借助」，更像是在说「拿来当工具」，两个都行。"
    }
   },
+  "Parents and teachers can help children by providing explicit instruction.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Parents and teachers can help children",
+      "s": "这块照字面翻就行：can help 是「能帮助」。\n→ 父母和老师能帮助孩子"
+     },
+     {
+      "t": "by providing explicit instruction",
+      "s": "by 后面跟 -ing，就是「通过做某事」，说的是方式。你可能把 explicit 翻成「明显的」，这里是「清楚明白的」，explicit instruction 就是「明确的指导」。\n→ 通过提供明确的指导"
+     }
+    ],
+    "sum": "父母和老师可以通过提供明确的指导来帮助孩子。",
+    "cmp": "和书上完全一样。"
+   }
+  },
   "This is your chance to convey boundless enthusiasm for the subject.": {
    "ph": [
     {
@@ -314,7 +511,22 @@
      "b": "enthusiasm for",
      "m": "对……的热情"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "This is your chance",
+      "s": "这块照字面翻就行：chance 在这里是「机会」。\n→ 这是你的机会"
+     },
+     {
+      "t": "to convey boundless enthusiasm for the subject",
+      "s": "你多半会翻成「去表达无限的热情给这门学科」。to convey 是 to do 短语，跟在 chance 后面，补充「什么样的机会」，中文要提前说：「表达……的机会」。enthusiasm for 里的 for 是「对」。\n→ 表达对这门学科的无限热情"
+     }
+    ],
+    "order": "英文是「机会」在前、to do 补充在后，中文把 to do 的内容放到「机会」前面，作「机会」的修饰语。",
+    "sum": "这是你表达对这门学科无限热情的机会。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "The survey allowed for reading materials on a digital device.": {
    "ph": [
@@ -337,7 +549,21 @@
      "b": "invest … in",
      "m": "在……上投资"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They need to invest more in",
+      "s": "看到 invest，眼睛往后找 in——找到了：invest in 是「在……上投资」，中间被 more 隔开了。你多半会翻成「他们需要投资更多在」，中文说「加大投入」更顺。need to do 是「需要做」。\n→ 他们需要在……上加大投资"
+     },
+     {
+      "t": "hospital staff and facilities",
+      "s": "这块照字面翻就行：staff 是「工作人员」，facilities 是「设施」。\n→ 医院人员和设施方面"
+     }
+    ],
+    "sum": "他们需要加大对医院人员和设施的投入。",
+    "cmp": "和书上基本一样，我说「加大……投入」，书上的「在……方面加大投资」是同样的意思。"
+   }
   },
   "The report calls for a commission to investigate the matter further.": {
    "ph": [
@@ -346,7 +572,21 @@
      "b": "call for",
      "m": "呼吁"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The report calls for",
+      "s": "你多半会翻成「报告呼叫为了」，不通。call for 是一个整体，「呼吁、要求」。\n→ 报告呼吁"
+     },
+     {
+      "t": "a commission to investigate the matter further",
+      "s": "commission 别翻成「佣金」，这里是「委员会」。to investigate 是 to do 短语，跟在名词后面，补充「用来做什么」，就是「来调查……的」。further 是「进一步」。\n→ 成立一个委员会来进一步调查此事"
+     }
+    ],
+    "sum": "报告呼吁成立一个委员会，对这件事做进一步调查。",
+    "cmp": "和书上基本一样，书上译成了「成立」，原句里没有这个词，是为了让中文通顺补出来的，我同意这样处理。"
+   }
   },
   "A man who can recite sports statistics from 30 years ago, may not remember to drop a letter in the mailbox.": {
    "ph": [
@@ -381,6 +621,23 @@
     "cmp": "意思和书上一样，只差在最后：我加了「却」，把前后反差说出来了；书上的译法更平实。"
    }
   },
+  "Coca-cola also released data detailing its funding.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Coca-cola also released data",
+      "s": "这块照字面翻就行：release 在这里是「公布」，data 是「数据」。\n→ 可口可乐还公布了数据"
+     },
+     {
+      "t": "detailing its funding",
+      "s": "你多半会翻成「细节它的资金」。detail 在这里当动词，「详细列出」，detailing 是 -ing 短语，跟在 data 后面给它补说明。放回去试：数据详细列出了它的资金情况，对。its 指前面的 Coca-cola。\n→ 详细列出其资金情况的"
+     }
+    ],
+    "sum": "可口可乐还公布了详细列出其资金情况的数据。",
+    "cmp": "和书上意思一样，书上说「详细的资金数据」，把 detailing 变成了「详细」，更简洁。"
+   }
+  },
   "These findings suggest that there is no direct link between unemployment and crime.": {
    "ph": [
     {
@@ -393,7 +650,21 @@
      "b": "link between … and",
      "m": "……和……之间的联系"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "These findings suggest that",
+      "s": "你多半会翻成「这些发现建议」。念一遍，是不是有点怪？findings 是研究结果，不是人，不会提建议，suggest 在这里是「表明」。that 引导的是宾语从句，就是「表明了什么？」后面一整段是内容。\n→ 这些研究结果表明"
+     },
+     {
+      "t": "there is no direct link between unemployment and crime",
+      "s": "这块照字面翻就行：there is 是「存在」，no direct link 是「没有直接联系」，between A and B 是「A 和 B 之间」。\n→ 失业和犯罪之间没有直接联系"
+     }
+    ],
+    "sum": "这些研究结果表明，失业和犯罪之间没有直接联系。",
+    "cmp": "和书上基本一样，书上的「调研结果」就是 findings。"
+   }
   },
   "You should not be afraid to show it or drastically change your behaviors—just ask for consent beforehand!": {
    "ph": [
@@ -407,7 +678,60 @@
      "b": "ask for",
      "m": "请求，征求"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "You should not be afraid to show it",
+      "s": "你多半会翻成「你不应该害怕去展示它」。be afraid to do 是「不敢做」，to show 是后面跟的那件事。中文说「别怕表现出来」更顺。\n→ 你不用害怕表现出来"
+     },
+     {
+      "t": "or drastically change your behaviors",
+      "s": "or 连着两件事：show it 和 change your behaviors。前面有 not，所以是「既不……也不……」，也别怕做第二件事。drastically 是「大幅度地」。\n→ 也不用害怕彻底改变自己的行为"
+     },
+     {
+      "t": "just ask for consent beforehand",
+      "s": "破折号后面是补充的一句话，意思是「只要……就行」。ask for 是「请求」，consent 是「同意」，beforehand 是「事先」。\n→ 只要事先征得同意就行"
+     }
+    ],
+    "sum": "别怕表现出来，也别怕大幅改变自己的行为——只要事先征得同意就行！",
+    "cmp": "和书上基本一样，我把 should not be afraid 译成「别怕」，更口语。"
+   }
+  },
+  "It is only natural that he should resent you.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It is only natural that",
+      "s": "你多半会翻成「它只是自然的」，这就错了。句首 It 是形式主语，真正的主语是后面 that 引出的整段话。It is natural that…… 就是「……是很自然的」。only 是「完全、再……不过」。\n→ ……是再自然不过的"
+     },
+     {
+      "t": "he should resent you",
+      "s": "你可能想翻成「他应该怨恨你」。放回去：他应该怨恨你，是再自然不过的？有点硬。It is natural that 后面的 should 不是「应该」，是表示在情理之中，翻出来是「会」。resent 是「怨恨」。\n→ 他会怨恨你"
+     }
+    ],
+    "order": "英文先说「很自然」，再说内容；中文把内容提前，「他会怨恨你」放前面，「是再自然不过的事」放后面。",
+    "sum": "他会怨恨你，这是再自然不过的事。",
+    "cmp": "意思一样，书上是「他怨恨你是很自然的事」，我多保留了一个 only 的意思。"
+   }
+  },
+  "Red, however, does not always represent good luck and happiness.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Red, however,",
+      "s": "however 夹在两个逗号中间，是插入语，就是顺嘴插的一个词，表示转折，「然而」。中文习惯把它放在最前面。\n→ 然而，红色"
+     },
+     {
+      "t": "does not always represent good luck and happiness",
+      "s": "你多半会翻成「总是不代表好运和幸福」，意思整个反了。not always 是部分否定，就是「不总是」，也就是「有时候是，有时候不是」。represent 在这里是「象征、代表」。\n→ 并不总是代表好运和幸福"
+     }
+    ],
+    "sum": "然而，红色并不总是代表好运和幸福。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "It has ignored campaigns on behalf of the left-handed.": {
    "ph": [
@@ -427,6 +751,40 @@
     }
    ]
   },
+  "He found the 60 pounds in his pocket missing.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "He found the 60 pounds in his pocket",
+      "s": "这块照字面翻就行：pounds 是「英镑」，in his pocket 是修饰 pounds 的，「口袋里的」。\n→ 他发现口袋里的 60 英镑"
+     },
+     {
+      "t": "missing",
+      "s": "你多半会翻成「他发现口袋里的60英镑」就停了，觉得句子没说完。其实 missing 才是关键：find 后面跟了「宾语 + 补充说明」，missing 是形容词，补充说明宾语的状态，就是「他发现 60 英镑处于不见了的状态」。\n→ 不见了"
+     }
+    ],
+    "sum": "他发现口袋里的60英镑不见了。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "They still existed six months after the course ended.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "They still existed",
+      "s": "这块照字面翻就行：exist 是「存在」，still 是「仍然」。\n→ 它们仍然存在"
+     },
+     {
+      "t": "six months after the course ended",
+      "s": "你多半会翻成「六个月之后课程结束」，顺序错了。after the course ended 是 after 带的从句，是时间状语从句，说「课程结束之后」。six months 放在 after 前面，是「相隔多久」，所以读作「课程结束六个月后」。\n→ 课程结束六个月后"
+     }
+    ],
+    "sum": "课程结束六个月后，它们仍然存在。",
+    "cmp": "和书上完全一样。"
+   }
+  },
   "They should make sure their children are always punctual for school.": {
    "ph": [
     {
@@ -439,7 +797,21 @@
      "b": "be punctual for",
      "m": "准时到"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They should make sure",
+      "s": "make sure 是「确保」。后面直接跟了 their children are……，中间省略了 that，所以后面是一个从句，就是「确保的内容」。\n→ 他们应该确保"
+     },
+     {
+      "t": "their children are always punctual for school",
+      "s": "你多半会翻成「他们的孩子总是为了学校准时」。be punctual for 是「准时到」，for school 是「去上学」，不是「为了学校」。\n→ 孩子总是准时上学"
+     }
+    ],
+    "sum": "他们应该确保孩子总是准时上学。",
+    "cmp": "和书上基本一样，书上多了「他们的」，我省了，因为前面已经有「他们」。"
+   }
   },
   "Millennials seem to be extending this phase of life as they postpone marriage.": {
    "ph": [
@@ -448,7 +820,22 @@
      "b": "seem to do",
      "m": "似乎"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Millennials seem to be extending this phase of life",
+      "s": "seem to do 是「似乎做某事」。to be extending 是 to 加进行时，说的是「正在延长」。phase 是「阶段」，this phase of life 就是「人生的这个阶段」。\n→ 千禧一代似乎正在延长人生的这个阶段"
+     },
+     {
+      "t": "as they postpone marriage",
+      "s": "as 你可能只认识「因为」，翻成「因为他们推迟结婚」。这里 as 带的是从句，两件事同时发生，是「随着」。postpone 是「推迟」。\n→ 随着他们推迟结婚"
+     }
+    ],
+    "order": "英文把 as 从句放在后面，中文习惯先说「随着……」。",
+    "sum": "随着推迟结婚，千禧一代似乎在延长人生的这个阶段。",
+    "cmp": "书上译成「通过推迟结婚来延长」，把 as 当成了方式；我按「随着」翻，两件事同时发生。意思接近，都说得通。"
+   }
   },
   "The virtues of physical fitness are shown on magazine covers, postage stamps, and television ads.": {
    "ph": [],
@@ -505,6 +892,28 @@
     }
    ]
   },
+  "Sometimes, rational analysis and data are impractical to be employed in certain situations.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Sometimes, rational analysis and data",
+      "s": "这块照字面翻就行：rational 是「理性的」。\n→ 有时，理性分析和数据"
+     },
+     {
+      "t": "are impractical to be employed",
+      "s": "你多半会翻成「是不切实际地被使用」。impractical 是「不实用」；to be employed 是 to do 的被动形式，就是「被使用」。主语是分析和数据，被使用，所以整体读成「用起来不实际」。\n→ 用起来不切实际"
+     },
+     {
+      "t": "in certain situations",
+      "s": "你可能把 certain 翻成「确定的」。certain 放在名词前面，意思是「某些」，in certain situations 就是「在某些情况下」。\n→ 在某些情况下"
+     }
+    ],
+    "order": "「在某些情况下」放在前面，中文更顺。",
+    "sum": "有时，在某些情况下，理性分析和数据用起来并不实际。",
+    "cmp": "书上译成「理性分析和数据是不切实际的」，没有把 to be employed 翻出来，意思变成分析和数据本身不实际；原句说的是「用起来」不实际。"
+   }
+  },
   "You also have to take the time to apply for your marriage licence.": {
    "ph": [
     {
@@ -517,7 +926,21 @@
      "b": "apply for",
      "m": "申请"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "You also have to take the time to",
+      "s": "你多半会翻成「你还得拿时间去」。take the time to do 是固定说法，「花时间做某事」，眼睛往后找 to——找到了 to apply。have to 是「必须」。\n→ 你还得花时间"
+     },
+     {
+      "t": "apply for your marriage licence",
+      "s": "你可能把 apply 翻成「应用」，这里 apply for 是「申请」。marriage licence 是「结婚证」。\n→ 去申请你的结婚证"
+     }
+    ],
+    "sum": "你还得花点时间去申请结婚证。",
+    "cmp": "和书上基本一样，书上说「花点时间」，更口语。"
+   }
   },
   "He drove past the embassy the other day.": {
    "ph": [
@@ -532,6 +955,19 @@
      "m": "前几天"
     }
    ]
+  },
+  "It was donated by a U.S. ambassador.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It was donated by a U.S. ambassador",
+      "s": "你多半会翻成「它被一位美国大使捐赠」。was donated 是被动，就是「它被别人怎么样了」。中文可以保留一个「是……的」，说成「它是一位美国大使捐赠的」；或者把大使请出来当主语：「一位美国大使捐赠了它」。ambassador 是「大使」，不是「大使馆」。\n→ 它是一位美国大使捐赠的"
+     }
+    ],
+    "sum": "它是一位美国大使捐赠的。",
+    "cmp": "和书上完全一样。"
+   }
   }
  }
 }

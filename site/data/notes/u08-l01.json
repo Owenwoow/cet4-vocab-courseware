@@ -142,7 +142,21 @@
      "b": "suck in",
      "m": "吸入"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Nowadays forests are increasingly welcome",
+      "s": "你多半会翻成「现在森林越来越被欢迎」。念一遍，别扭吧？这里 welcome 是形容词，are welcome 就是「受欢迎」，不是被动。increasingly 是「越来越」。\n→ 如今森林越来越受欢迎"
+     },
+     {
+      "t": "because they suck in carbon pollution from the air",
+      "s": "because 带的是原因状语从句，就是「说明为什么」。suck in 你可能翻成「吸进来」，没错，这里说白了就是「吸收」。你可能会照英文顺序翻成「吸收碳污染从空气」，不通，from the air 要提到动词前面，说成「从空气中」。\n→ 因为它们从空气中吸收碳污染"
+     }
+    ],
+    "sum": "如今森林越来越受欢迎，因为它们能吸收空气中的碳污染。",
+    "cmp": "意思一样。书上是「从空气中吸收碳污染」，我把「空气中的」放在「碳污染」前面，两种都顺。"
+   }
   },
   "People who prioritise breakfasts tend to have lower calorie but higher nutritional intake.": {
    "ph": [
@@ -193,7 +207,52 @@
      "b": "force sb. to do",
      "m": "强迫某人做某事"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "But you can't force the child to think carefully",
+      "s": "你多半会翻成「你不能强迫孩子去仔细想」。意思没错，但要认出结构：force 后面先跟人（the child），再跟 to think。to think 是 to do 短语，就是「要做的那件事」。force sb. to do 记成一个整体：强迫某人做某事。\n→ 但你不能强迫孩子仔细思考"
+     },
+     {
+      "t": "enjoy books, digest complex information",
+      "s": "这两个动作前面没有 to，你可能会愣住。其实它们和 think 是并列的，都挂在 force the child to 后面，把 to 补回去就懂了：to enjoy books，to digest……。enjoy books 字面是「享受书」，补个动作说「享受读书」。digest 本义是「消化食物」，这里消化的是信息，说「消化、吸收」。\n→ 享受读书，消化复杂的信息"
+     }
+    ],
+    "sum": "但你不能强迫孩子认真思考、享受读书、消化复杂的信息。",
+    "cmp": "和书上基本一样，书上用「仔细思考」，我写「认真思考」，都行。"
+   }
+  },
+  "He is being treated at a clinic.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "He is being treated",
+      "s": "你多半会翻成「他正在被治疗」。念一遍，中文不这么说。is being treated 是被动的进行时，就是「他正被别人怎么样」——被医生治疗。中文少用「被」，说「接受治疗」就顺了。\n→ 他正在接受治疗"
+     },
+     {
+      "t": "at a clinic",
+      "s": "这块照字面翻就行：clinic 是诊所，at 是「在」。\n→ 在一家诊所"
+     }
+    ],
+    "order": "「在诊所」放到「接受治疗」前面，中文习惯先说地点。",
+    "sum": "他正在一家诊所接受治疗。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "He was wrongly diagnosed.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "He was wrongly diagnosed",
+      "s": "你多半会翻成「他被错误地诊断了」。念一遍，意思懂，但很生硬。was diagnosed 是被动，就是「他被别人怎么样了」——被医生诊断。wrongly 是「错误地」，把「错误地诊断」合成一个词，中文直接说「误诊」。\n→ 他被误诊了"
+     }
+    ],
+    "sum": "他被误诊了。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Health insurance and clinical guidelines promote treatment with drugs and surgery.": {
    "ph": [
@@ -204,6 +263,23 @@
     }
    ]
   },
+  "What mattered most was the residents' physical health and mental status.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "What mattered most",
+      "s": "你多半会翻成「什么最重要」，把 what 当成了疑问词。放回整句看：What …… was ……，what 带的是主语从句，就是「……的那件事」。matter 当动词是「要紧、重要」，所以 What mattered most 就是「最重要的（事）」。\n→ 最重要的"
+     },
+     {
+      "t": "was the residents' physical health and mental status",
+      "s": "这块照字面翻就行：residents' 是「居民的」，physical health 是身体健康，mental status 是心理状态。\n→ 是居民的身体健康和心理状态"
+     }
+    ],
+    "sum": "最重要的是居民的身体健康和心理状态。",
+    "cmp": "和书上完全一样。"
+   }
+  },
   "They can save patients trouble visiting physicians.": {
    "ph": [
     {
@@ -211,7 +287,21 @@
      "b": "save sb. trouble",
      "m": "为某人省去麻烦"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They can save patients trouble",
+      "s": "你多半会翻成「他们可以节省患者麻烦」。念一遍，是不是怪？save sb. trouble 是固定搭配，save 后面连跟两样东西：先是人，再是麻烦，意思是「帮某人省去麻烦」。\n→ 他们可以帮患者省去麻烦"
+     },
+     {
+      "t": "visiting physicians",
+      "s": "visiting physicians 是 -ing 短语，紧跟在 trouble 后面，说明是什么事的麻烦，就是「去看医生」这件事。physician 是医生，你可能只认识 doctor，记住它特指看病的医生。\n→ 去看医生的"
+     }
+    ],
+    "sum": "他们能帮患者省去去看医生的麻烦。",
+    "cmp": "意思和书上一样，书上说「为患者省去看医生的麻烦」，更简洁。"
+   }
   },
   "I have to go to the dentist tomorrow.": {
    "ph": [
@@ -227,6 +317,23 @@
     }
    ]
   },
+  "The two pictures are similar, although not identical.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The two pictures are similar",
+      "s": "你多半会翻成「这两幅图片是相似的」。中文少说「是……的」，直接说「很相似」就行。\n→ 这两幅画很相似"
+     },
+     {
+      "t": "although not identical",
+      "s": "although 带的是让步状语从句，就是「虽然……」，这里省略了 they are，补回去是 although (they are) not identical。你多半会翻成「虽然不是相同的」，意思差不多，但 identical 是「一模一样的」，not identical 就是「不完全一样」。\n→ 但不完全相同"
+     }
+    ],
+    "sum": "这两幅画很相似，但并不完全一样。",
+    "cmp": "和书上基本一样，书上用「但不完全相同」，我写成「但并不完全一样」，更口语。"
+   }
+  },
   "It clearly aims to form children's identity through play.": {
    "ph": [
     {
@@ -234,7 +341,22 @@
      "b": "aim to do",
      "m": "目的是，旨在"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It clearly aims to form",
+      "s": "你多半会翻成「它清楚地目标形成」，不通。aim to do 是「目的是做某事」，to form 是 to do 短语，说它想做的事。clearly 放在句首翻成「很明显」更顺。\n→ 很明显，它的目的是形成"
+     },
+     {
+      "t": "children's identity through play",
+      "s": "through 你可能想翻成「穿过」。这里不是，through play 是「通过游戏」，是做事的方法，要提到动词前。identity 书上译成「身份」，它在这里指孩子对「我是谁」的认识，说「自我认同」会更准。\n→ 孩子的身份，通过游戏"
+     }
+    ],
+    "order": "「通过游戏」是方法，中文先说方法再说做什么，所以提到「形成」前面。",
+    "sum": "很明显，它的目的是通过游戏培养孩子的自我认同。",
+    "cmp": "意思对，书上用「身份」，我写「自我认同」更贴近 identity 在这里的意思；「形成」我换成了「培养」，更顺口。"
+   }
   },
   "Postal services work hard to identify items that require priority treatment.": {
    "ph": [
@@ -248,7 +370,22 @@
      "b": "priority treatment",
      "m": "优先处理"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Postal services work hard to identify items",
+      "s": "你多半会翻成「邮政服务努力地工作来识别物品」。这个 to 不是「来」，work hard to do 是「努力去做某事」，to identify 是 to do 短语，说努力的目标。\n→ 邮政服务部门努力识别物品"
+     },
+     {
+      "t": "that require priority treatment",
+      "s": "that 指谁？候选有 items 和 Postal services，放回去试：Postal services require priority treatment，邮政服务需要优先处理，说不通；items require priority treatment，物品需要优先处理，对。所以 that 带的是定语从句，就是给 items 补一段说明。priority treatment 是「优先处理」。\n→ 需要优先处理的"
+     }
+    ],
+    "order": "定语从句要提到名词前面，中文说「需要优先处理的物品」。",
+    "sum": "邮政部门努力识别出需要优先处理的物品。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "It will have considerable side effects if taken in large doses.": {
    "ph": [
@@ -262,7 +399,22 @@
      "b": "in large doses",
      "m": "大剂量地"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It will have considerable side effects",
+      "s": "considerable 你可能翻成「值得考虑的」，这里不是，它是「相当大的」。side effects 是「副作用」。\n→ 会有相当大的副作用"
+     },
+     {
+      "t": "if taken in large doses",
+      "s": "你多半会翻成「如果被拿在大剂量里」。if 后面只有 taken，没有主语，其实省略了 it is，补回去是 if (it is) taken，这是被动，就是「它被别人怎么样」——被服用。take 对药来说是「服用」，in large doses 是「大剂量地」，说白了就是「大量」。\n→ 如果大量服用"
+     }
+    ],
+    "order": "英文把 if 放后面，中文的「如果」几乎总是放前面。",
+    "sum": "如果大量服用，会有相当大的副作用。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "Flu symptoms including fever and chills, sore throat and body aches come on suddenly.": {
    "ph": [
@@ -271,7 +423,21 @@
      "b": "come on",
      "m": "（病症）开始出现"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Flu symptoms including fever and chills, sore throat and body aches",
+      "s": "一长串名词，别被带跑。including 是 -ing 短语，用来举例，就是「其中包括」。你多半会翻成「包括发烧和寒战……的流感症状」，太长。先把主语看成 Flu symptoms，眼睛往后找谓语 come on。sore 是「疼痛的」，sore throat 就是喉咙痛。\n→ 流感症状，比如发烧、寒战、喉咙痛和身体疼痛"
+     },
+     {
+      "t": "come on suddenly",
+      "s": "come on 你多半只认识「快点」，放回去念：流感症状「快点」？不通。这里指病症「开始出现」，suddenly 是「突然」。\n→ 会突然出现"
+     }
+    ],
+    "sum": "流感症状，比如发烧、寒战、喉咙痛和身体疼痛，会突然出现。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "It involves buying lots of tablets and software.": {
    "ph": [
@@ -285,7 +451,21 @@
      "b": "lots of",
      "m": "大量"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It involves buying",
+      "s": "你多半会翻成「它涉及买」。involve 后面接动词要用 -ing，buying 是 -ing 短语，就是「买东西」这件事。involve 在这里说白了是「需要、要做」。\n→ 它需要购买"
+     },
+     {
+      "t": "lots of tablets and software",
+      "s": "tablets 你多半会翻成「药片」，放回去念：买大量药片和软件？药片和软件不搭。这里和 software 并列，是「平板电脑」。lots of 就是「大量的」。\n→ 大量的平板电脑和软件"
+     }
+    ],
+    "sum": "它需要购买大量平板电脑和软件。",
+    "cmp": "和书上一样。"
+   }
   },
   "I took a pill to help settle my nerves.": {
    "ph": [
@@ -299,7 +479,21 @@
      "b": "settle one's nerves",
      "m": "让神经平静下来"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "I took a pill",
+      "s": "你多半会翻成「我拿了一片药」。念一遍，不对劲。take a pill 是固定搭配，药要说「吃」。\n→ 我吃了一片药"
+     },
+     {
+      "t": "to help settle my nerves",
+      "s": "to help settle 是 to do 短语，在这里表目的，就是「为了……」。settle 你可能翻成「解决」，翻成「解决我的神经」就怪了。settle one's nerves 是让紧张的神经平静下来。help 可以弱化，不必硬译。\n→ 帮助自己平静下来"
+     }
+    ],
+    "sum": "我吃了一片药，让紧张的神经平静下来。",
+    "cmp": "意思一样。书上是「帮助放松一下神经」，把 help 译成了「帮助」；我省掉它，更简洁。"
+   }
   },
   "He was taken to hospital in an ambulance.": {
    "ph": [
@@ -308,7 +502,22 @@
      "b": "be taken to",
      "m": "被送往"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He was taken to hospital",
+      "s": "你多半会翻成「他被带到医院」。was taken 是被动，就是「他被别人怎么样了」，被送。taken to 是「被送往」。中文可以保留「被」，也可以说「有人把他送到」。\n→ 他被送往医院"
+     },
+     {
+      "t": "in an ambulance",
+      "s": "这块照字面翻就行：ambulance 是救护车，in 在这里表方式，就是「用、乘」。\n→ 用救护车"
+     }
+    ],
+    "order": "中文习惯先说怎么送，再说送到哪，所以「救护车」提到「送往医院」前面。",
+    "sum": "他被救护车送往医院。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "The access codes may be another financial headache for students.": {
    "ph": [
@@ -331,7 +540,21 @@
      "b": "heart disease",
      "m": "心脏病"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "There are many people",
+      "s": "你多半会翻成「那里有许多人」。放回去念，不对：There are 开头是「有……」的句型，there 不是「那里」。\n→ 有许多人"
+     },
+     {
+      "t": "who recover from cancer, stroke, or heart disease",
+      "s": "who 带的是定语从句，就是给前面的名词补一段说明。放回去试：many people recover from cancer，许多人从癌症中康复，对。recover from 是「从……中康复」，stroke 是中风，heart disease 是心脏病。\n→ 从癌症、中风或心脏病中康复的"
+     }
+    ],
+    "sum": "有许多人从癌症、中风或心脏病中康复了。",
+    "cmp": "和书上意思一样，书上把 There are 的「有」省掉，直接说「许多人……」，更简洁。"
+   }
   },
   "Diabetes patients are advised to eat more plant-based food.": {
    "ph": [
@@ -340,7 +563,21 @@
      "b": "be advised to do",
      "m": "被建议做某事"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Diabetes patients are advised",
+      "s": "你多半会翻成「糖尿病患者被建议」。念一遍，别扭吧？are advised 是被动，就是「患者被别人怎么样了」——被劝告。中文少用「被」，把动手的人藏起来，直接说「建议……」。\n→ 建议糖尿病患者"
+     },
+     {
+      "t": "to eat more plant-based food",
+      "s": "眼睛往 advised 后面找 to：to eat 是 to do 短语，说建议做的事。plant-based 你可能翻成「以植物为基础的」，太绕，说「植物性的」。more 是「更多」，放在动词前说「多吃」。\n→ 多吃植物性食物"
+     }
+    ],
+    "sum": "建议糖尿病患者多吃植物性食物。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "The food industry plays a major role in fighting obesity.": {
    "ph": [
@@ -349,7 +586,22 @@
      "b": "play a major role in",
      "m": "在……中发挥重要作用"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The food industry plays a major role",
+      "s": "你多半会翻成「食品业扮演一个主要的角色」，也可以，但中文更常说「发挥重要作用」。play a role in 是固定搭配，眼睛往后找 in。\n→ 食品业发挥着重要作用"
+     },
+     {
+      "t": "in fighting obesity",
+      "s": "in 后面是 fighting，这是 -ing 短语，介词后面的动词就用 -ing，就是「抗击肥胖」这件事。你多半会翻成「在抗击肥胖中」，in 在这里说成「在……方面」更顺。\n→ 在抗击肥胖方面"
+     }
+    ],
+    "order": "「在抗击肥胖方面」放前面，中文先说范围，再说作用。",
+    "sum": "食品业在抗击肥胖方面发挥着重要作用。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "How do you manage to stay so slim?": {
    "ph": [
@@ -358,7 +610,21 @@
      "b": "manage to do",
      "m": "设法做到"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "How do you manage to stay",
+      "s": "你多半会翻成「你怎么管理去保持」。manage 在这里不是「管理」，manage to do 是「设法做到」，to stay 是 to do 短语，说做到的事。How 问的是方法。\n→ 你是怎么设法保持"
+     },
+     {
+      "t": "so slim",
+      "s": "这块照字面翻就行：so 是「这么」，slim 是「苗条的」。\n→ 这么苗条的"
+     }
+    ],
+    "sum": "你是怎么做到身材这么苗条的？",
+    "cmp": "意思和书上一样。书上用「把身材保持得这么苗条」，我换成「做到」，更口语。"
+   }
   },
   "I lean toward the latter view.": {
    "ph": [
@@ -376,7 +642,21 @@
      "b": "be based on",
      "m": "基于"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "These claims are based on",
+      "s": "你多半会翻成「这些说法被基于」。念一遍，不通。be based on 是固定搭配，虽然形式上是被动（be + 过去分词），中文直接说「基于、建立在……之上」。\n→ 这些说法基于"
+     },
+     {
+      "t": "slender evidence",
+      "s": "slender 你多半只认识「苗条」，翻成「苗条的证据」就怪了。放在证据上，是「单薄、不足」的意思，换成「微弱的」。\n→ 微弱的证据"
+     }
+    ],
+    "sum": "这些说法的依据很薄弱。",
+    "cmp": "意思一样。书上是「基于微弱的证据」，更贴近原文，我换成了一个更短的说法。"
+   }
   },
   "A bundle containing thousands of pounds got stolen.": {
    "ph": [
@@ -385,7 +665,38 @@
      "b": "thousands of",
      "m": "数千的"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "A bundle containing thousands of pounds",
+      "s": "你多半会翻成「一捆包含数千英镑」，不通顺。containing 是 -ing 短语，紧跟在名词后面，给 bundle 补说明，就是「里面装着……的」。pounds 在这里是货币「英镑」，不是重量单位。bundle 是「一捆」。\n→ 一捆装着数千英镑的东西"
+     },
+     {
+      "t": "got stolen",
+      "s": "got 你可能想翻成「得到」，翻成「得到被偷」就怪了。get + 过去分词也是被动，got stolen 就是 was stolen，被偷了。\n→ 被偷了"
+     }
+    ],
+    "sum": "一捆装着数千英镑的钱被偷了。",
+    "cmp": "意思一样，书上补了「现金」，让你知道这一捆是什么；我写成「钱」。"
+   }
+  },
+  "They were badly damaged but restored.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "They were badly damaged",
+      "s": "你多半会翻成「它们被严重地损坏了」。意思对，但是 were damaged 是被动，就是「它们被别人怎么样了」。中文说「严重受损」就行，不必加「被」。\n→ 它们严重受损"
+     },
+     {
+      "t": "but restored",
+      "s": "你多半会翻成「但是恢复了」。念一遍，谁恢复的？它们自己恢复吗？restore 是「使恢复、修复」，需要别人动手，所以 but 后面省略了 were，补回去是 but (were) restored，也是被动。\n→ 但已得到修复"
+     }
+    ],
+    "sum": "它们严重受损，但已经修复了。",
+    "cmp": "和书上基本一样，书上用「得到修复」，我写「修复了」。"
+   }
   },
   "He's still recovering from his operation.": {
    "ph": [
@@ -403,7 +714,22 @@
      "b": "in the press",
      "m": "在新闻界"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The incident has received wide coverage",
+      "s": "你多半会翻成「这个事件已经收到了广泛的覆盖」。念一遍，不对。coverage 在新闻里不是「覆盖」，是「报道」。receive coverage 字面是「得到报道」，中文就说「被报道」。\n→ 这个事件得到了广泛报道"
+     },
+     {
+      "t": "in the press",
+      "s": "这块照字面翻就行：the press 是新闻界、媒体，in 是「在……中」。\n→ 在新闻界"
+     }
+    ],
+    "order": "「在新闻界」放在动作前面，中文习惯先说范围。",
+    "sum": "这个事件已在新闻界得到广泛报道。",
+    "cmp": "意思一样。书上用「被新闻界广泛报道」，是被动；我用「得到」，更顺。"
+   }
   },
   "That hasn't stopped thousands of winter depressives from trying to heal themselves.": {
    "ph": [
@@ -454,7 +780,21 @@
      "b": "a little",
      "m": "一点"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "But many tech home remedies",
+      "s": "remedy 你多半会翻成「补救办法」，这里放在 home remedies 里，指的是「疗法、偏方」。tech 是「科技的」，所以是「许多科技方面的家庭疗法」。\n→ 许多科技家庭疗法"
+     },
+     {
+      "t": "can be explained by a little science",
+      "s": "你多半会翻成「可以被一点科学解释」。can be explained 是被动，就是「疗法被别人怎么样」——被解释。中文少用「被」，把 science 请出来：用什么解释？一点科学。a little 是「一点」，by 在这里是「用」。\n→ 可以用一点科学来解释"
+     }
+    ],
+    "sum": "不过，许多科技类的家庭疗法，用一点科学知识就能解释。",
+    "cmp": "意思和书上一样。书上直接说「用一点科学来解释」，我把「科学」补成「科学知识」。"
+   }
   },
   "They also had talk therapy with a nurse before and after quit day.": {
    "ph": [
@@ -472,7 +812,22 @@
      "b": "be given treatment",
      "m": "接受治疗"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The elephant was given medical treatment",
+      "s": "你多半会翻成「大象被给了医学治疗」。念一遍，是不是怪？was given 是被动，就是「大象被别人怎么样了」——被给予治疗，其实就是「接受了治疗」。medical treatment 是「医学治疗」。\n→ 这头大象接受了医学治疗"
+     },
+     {
+      "t": "for many days",
+      "s": "这块照字面翻就行：for 加一段时间，就是「持续……」。\n→ 持续多天"
+     }
+    ],
+    "order": "「多天」放到「治疗」前面，说成「多天的治疗」，更顺。",
+    "sum": "这头大象接受了多天的医学治疗。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Look at your talk and pick out a few words or sentences which you can inject with humour.": {
    "ph": [
@@ -501,7 +856,26 @@
      "b": "inject … with",
      "m": "给……注入"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Look at your talk and pick out",
+      "s": "句子一上来就是动词，没有主语，这是祈使句，就是「请你……」。talk 你可能翻成「谈话」，这里是名词「演讲」。pick out 是「挑选出」。\n→ 请看一看你的演讲，挑出"
+     },
+     {
+      "t": "a few words or sentences",
+      "s": "这块照字面翻就行：a few 是「几个」。\n→ 几个词或句子"
+     },
+     {
+      "t": "which you can inject with humour",
+      "s": "which 指谁？放回去试：words 可以注入幽默，通；sentences 也通。所以指前面的 words or sentences。which 带的是定语从句，就是给它们补一段说明。inject A with B 是「给 A 注入 B」，眼睛往后找 with。inject 本义是「注射」，这里就是「加进去」。\n→ 你可以给它们加入幽默的"
+     }
+    ],
+    "order": "定语从句要提到名词前面，中文说「可以加点幽默的词或句子」。",
+    "sum": "请看一看你的演讲，挑出几个可以加点幽默的词或句子。",
+    "cmp": "意思一样。书上多了「仔细」和「巧妙」，原句里没有对应的词，我没加，更贴近原文。"
+   }
   },
   "Most college professors agree the kind of exam they choose largely depends on the subject.": {
    "ph": [
@@ -510,7 +884,25 @@
      "b": "depend on",
      "m": "取决于"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Most college professors agree",
+      "s": "你可能想把 agree 后面的 the kind of exam 当成「同意这种考试」。放回去念，不通。agree 后面是一整句话，省略了 that，补回去是 agree (that) ……，这是宾语从句，就是「同意的内容」。\n→ 大多数大学教授都同意"
+     },
+     {
+      "t": "the kind of exam they choose",
+      "s": "这里 they choose 前面也省略了 that，补回去是 the kind of exam (that) they choose，这是定语从句，给 exam 补说明，就是「他们选择的考试类型」。\n→ 他们选择的考试形式"
+     },
+     {
+      "t": "largely depends on the subject",
+      "s": "subject 你多半会翻成「主题」，这里是「学科」。depends on 眼睛往后找 on，是「取决于」。largely 是「在很大程度上」。\n→ 在很大程度上取决于学科"
+     }
+    ],
+    "sum": "大多数大学教授都认为，他们选择什么形式的考试，在很大程度上取决于学科。",
+    "cmp": "意思一样。书上多了「性质」，原句只有 the subject，我没加。"
+   }
   },
   "Muscle performance can also be affected by a phenomenon called \"central fatigue\".": {
    "ph": [
@@ -519,7 +911,21 @@
      "b": "be affected by",
      "m": "受……影响"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Muscle performance can also be affected by",
+      "s": "你多半会翻成「肌肉表现也可以被……影响」。can be affected 是被动，就是「肌肉表现被别人怎么样了」，被影响。中文说「受到……影响」更顺。also 是「也」。\n→ 肌肉表现也会受到……的影响"
+     },
+     {
+      "t": "a phenomenon called \"central fatigue\"",
+      "s": "called 是过去分词（-ed）短语，放在名词后面，给名词补说明，相当于 which is called，就是「被称为」。phenomenon 是「现象」。中文把长说明放到名词前面：一种叫作「中枢疲劳」的现象。\n→ 一种叫作「中枢疲劳」的现象"
+     }
+    ],
+    "sum": "肌肉表现也会受到一种叫作「中枢疲劳」的现象的影响。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "Her mother objected to Eric's flying lessons.": {
    "ph": [
@@ -537,7 +943,22 @@
      "b": "reject doing",
      "m": "拒绝做某事"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They reject using toilet paper",
+      "s": "reject 后面接动词要用 -ing，using toilet paper 是 -ing 短语，就是「使用卫生纸」这件事。reject doing 就是「拒绝做某事」。\n→ 他们拒绝使用卫生纸"
+     },
+     {
+      "t": "with unnecessary features",
+      "s": "你多半会翻成「和不必要的功能一起」。放回去念，不通。这里的 with 是「带有」，说明是什么样的卫生纸，features 是「功能」。\n→ 带有不必要功能的"
+     }
+    ],
+    "order": "「带有不必要功能的」要提到「卫生纸」前面，中文说「带有不必要功能的卫生纸」。",
+    "sum": "他们拒绝使用带有不必要功能的卫生纸。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Business schools grade their students in part on their performance in group projects.": {
    "ph": [
@@ -551,7 +972,21 @@
      "b": "performance in",
      "m": "在……中的表现"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Business schools grade their students",
+      "s": "grade 你多半当成名词「成绩」，翻成「商学院成绩他们的学生」就不通了。这里是动词，「给……评分」。\n→ 商学院给学生评分"
+     },
+     {
+      "t": "in part on their performance in group projects",
+      "s": "in part 是「部分地」。眼睛往后找 on：grade A on B 是「根据 B 给 A 评分」，B 就是 their performance in group projects，「他们在小组项目中的表现」。你多半会翻成「部分在他们的表现上」，不通，换成「部分依据」。\n→ 部分依据他们在小组项目中的表现"
+     }
+    ],
+    "sum": "商学院给学生评分，部分依据他们在小组项目中的表现。",
+    "cmp": "意思一样。书上把句子转成了「评分部分取决于……」，更像中文；我保持英文的结构，用「部分依据」，也通顺。"
+   }
   },
   "It received an incredibly large number of donated books.": {
    "ph": [
@@ -579,7 +1014,21 @@
      "b": "devote … to",
      "m": "把……用于"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She decided to devote all her time",
+      "s": "decided to 后面的 devote 是 to do 短语，说她决定做的事。你多半会翻成「她决定奉献所有的时间」，念一遍，奉献给谁？devote A to B 是固定搭配，眼睛往后找 to，A 是 all her time。\n→ 她决定把她所有的时间"
+     },
+     {
+      "t": "to cultivating and developing it",
+      "s": "这个 to 后面是 cultivating，不是动词原形，所以它不是 to do，而是 devote … to 里的介词 to，后面接 -ing 短语，就是「做某事」这件事。cultivate 本义「耕种」，这里是「培养」。\n→ 用来培养和发展它"
+     }
+    ],
+    "sum": "她决定把所有的时间都用来培养和发展它。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "A variety of factors contribute to the long-run increase in the share of young adults living with their parents.": {
    "ph": [
@@ -631,7 +1080,21 @@
      "b": "be good at",
      "m": "擅长"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The scientific establishment",
+      "s": "establishment 你多半会翻成「建立」，翻成「科学的建立」就不对了。the establishment 指的是有影响力的权威机构，scientific establishment 就是「科学界」。\n→ 科学界"
+     },
+     {
+      "t": "is not very good at distributing money",
+      "s": "be good at 是「擅长」，眼睛往后找 at。at 后面是 distributing money，这是 -ing 短语，就是「分配资金」这件事。你多半会翻成「不是很擅长于分配钱」，意思对，但 money 在这里更像「资金」。not very 是「不太」。\n→ 在分配资金方面并不擅长"
+     }
+    ],
+    "sum": "科学界不太擅长分配资金。",
+    "cmp": "意思和书上一样，书上说「在分配资金方面并不擅长」，把「方面」补上了。"
+   }
   },
   "Mistakes crack their self-confidence because they attribute errors to a lack of ability, which they feel powerless to change.": {
    "ph": [
@@ -655,7 +1118,25 @@
      "b": "feel powerless to do",
      "m": "感到无力做某事"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Mistakes crack their self-confidence",
+      "s": "你多半会翻成「错误破坏他们的自信」。念一遍，是不是有点怪？「错误」又不是人，怎么去破坏？英文爱让东西当主语，中文更习惯说「东西让人怎么样」。crack 本义是「裂开」，自信心裂开了，就是「崩溃」。\n→ 错误会让他们的自信心崩溃"
+     },
+     {
+      "t": "because they attribute errors to a lack of ability",
+      "s": "看到 attribute 先别急，眼睛往后找 to——找到了：attribute A to B，把 A 归到 B 上。A 是 errors，B 是 a lack of ability。「能力的缺乏」太翻译腔，中文直接说「能力不足」。\n→ 因为他们把错误归咎于能力不足"
+     },
+     {
+      "t": "which they feel powerless to change",
+      "s": "which 是谁？你可能以为是 errors。放回去试试：无力改变错误？错误都犯了，改什么？换 a lack of ability：无力改变能力不足——对了。which 带的是定语从句，就是给前面的名词补一段说明。中文不用再说一遍，直接接一个短句。\n→ 觉得无力改变"
+     }
+    ],
+    "sum": "错误会让他们的自信心崩溃，因为他们把错误归咎于能力不足，觉得无力改变。",
+    "cmp": "和书上完全一样，说明这几步就是书上的思路。"
+   }
   },
   "The child may feel that he owes her an apology.": {
    "ph": [
@@ -664,7 +1145,21 @@
      "b": "owe sb. an apology",
      "m": "欠某人一个道歉"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The child may feel",
+      "s": "你可能把 may 翻成「可以」，孩子可以觉得？不通。may 在这里是「可能」，表示推测。\n→ 这孩子可能觉得"
+     },
+     {
+      "t": "that he owes her an apology",
+      "s": "that 你多半会翻成「那个」。放回去念：觉得那个他欠她……，不通。feel 后面的 that 带的是宾语从句，就是「觉得的内容」，that 本身不用翻。owe sb. sth. 是「欠某人某物」，owes her an apology 字面就是「欠她一个道歉」。\n→ 他欠她一个道歉"
+     }
+    ],
+    "sum": "这孩子可能觉得，自己欠她一个道歉。",
+    "cmp": "和书上基本一样，我把 he 换成了「自己」，指代更清楚。"
+   }
   }
  }
 }

@@ -18,7 +18,22 @@
      "b": "combine … with",
      "m": "把……与……结合"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They often fail to combine",
+      "s": "你可能会翻成「他们经常失败去结合」。念一遍，是不是不像话？fail to do 是固定搭配，to combine 是 to do 短语，就是「做某事」，整个意思是「没能做到某事」。\n→ 他们常常没能把……结合起来"
+     },
+     {
+      "t": "teaching with research",
+      "s": "眼睛往后找 with——combine A with B，把 A 和 B 结合起来。A 是 teaching，B 是 research。\n→ 教学与研究"
+     }
+    ],
+    "order": "中文要把 combine 的两个对象夹在「把……」和「结合起来」中间，所以先说「把教学与研究」，最后再放「结合起来」。",
+    "sum": "他们常常没能把教学和研究结合起来。",
+    "cmp": "意思一样。书上用「不能」，我用「没能」，强调的是做不到的结果，两个都行。"
+   }
   },
   "The close link between age and stage may cease to exist in a multi-stage life.": {
    "ph": [
@@ -55,7 +70,21 @@
      "b": "be good at",
      "m": "善于"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Great innovators are good at connecting",
+      "s": "你多半会翻成「伟大的创新者在连接上很好」。念一遍，缺了东西。be good at 后面要接「做什么」，所以接了 connecting——这是 -ing 短语，就是「做某事」这件事。be good at doing 就是「善于做某事」。\n→ 伟大的创新者善于联系"
+     },
+     {
+      "t": "concepts from various academic fields",
+      "s": "from 后面是 concepts 的来源，说明这些概念来自哪儿。various 是「各种各样的」，academic fields 是「学术领域」。\n→ 来自各个学术领域的概念"
+     }
+    ],
+    "sum": "伟大的创新者善于把来自不同学术领域的概念联系起来。",
+    "cmp": "书上把「来自……的概念」改成「将各个学术领域的概念联系起来」，更短，意思一样。"
+   }
   },
   "All this is done with the aim of improving workplace efficiency, collaboration and cohesion.": {
    "ph": [
@@ -64,7 +93,21 @@
      "b": "with the aim of",
      "m": "目的是，为了"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "All this is done",
+      "s": "你多半会翻成「所有这些被做」。念一遍，中文不这么说。is done 是被动，就是「这些被别人怎么样了」。中文直接说「所有这些都是……做的」，或者干脆把「做」融进后面的目的里。\n→ 所有这些都是"
+     },
+     {
+      "t": "with the aim of improving workplace efficiency, collaboration and cohesion",
+      "s": "with the aim of 是固定搭配，「怀着……的目的」，后面接 -ing，improving 就是「提高」这件事。后面三个名词并列，efficiency、collaboration、cohesion，都是 improving 的对象：效率、协作、凝聚力，一个个翻。\n→ 为了提高工作场所的效率、协作和凝聚力"
+     }
+    ],
+    "sum": "所有这些做法，都是为了提高职场的效率、协作能力和凝聚力。",
+    "cmp": "意思一样。书上把「被做」和「目的」合在一起说成「都是为了」，很顺。"
+   }
   },
   "They work in conjunction with the environment.": {
    "ph": [
@@ -134,7 +177,21 @@
      "b": "law and order",
      "m": "法律和秩序，治安"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "When governments lose their control on power",
+      "s": "When 带的是时间状语从句，就是「在……的时候」。你可能会翻成「当政府失去他们对权力的控制」，「他们」是多余的，中文不用。control on power 就是「对权力的掌控」。\n→ 当政府失去对权力的控制时"
+     },
+     {
+      "t": "law and order begin to disintegrate",
+      "s": "law and order 是一个整体，就是「法律与秩序」，也就是「治安」。begin to disintegrate 里 to disintegrate 是 to do 短语，就是「开始做某事」，disintegrate 是「瓦解」。\n→ 法律和秩序就开始瓦解"
+     }
+    ],
+    "sum": "一旦政府失去对权力的控制，法律和秩序就开始瓦解了。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "Craft activities result in tangible and often useful products.": {
    "ph": [
@@ -152,7 +209,21 @@
      "b": "have contact with",
      "m": "与……接触"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "merely having contact with children",
+      "s": "你可能会翻成「仅仅有和孩子的接触」，勉强能读，但不顺。having 开头是 -ing 短语当主语，就是「有……这件事」。have contact with 是「和……接触」，merely 是「仅仅」。\n→ 仅仅和孩子接触"
+     },
+     {
+      "t": "does not guarantee happiness in old age",
+      "s": "does not guarantee 就是「并不保证」，主语是上面那一整件事，所以谓语用单数的 does。in old age 是「到了老年」，修饰 happiness 的范围。\n→ 并不能保证老年幸福"
+     }
+    ],
+    "sum": "不过，仅仅和孩子接触，并不能保证老了以后就幸福。",
+    "cmp": "和书上基本一样，开头的 However 在书上译成「然而」。"
+   }
   },
   "It wants to keep its own environment intact.": {
    "ph": [
@@ -166,7 +237,17 @@
      "b": "keep … intact",
      "m": "保持……完整"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It wants to keep its own environment intact",
+      "s": "wants to keep 里的 to keep 是 to do 短语，就是「想要做某事」。你可能会翻成「它想保持它自己的环境完整的」，别绕。keep 后面跟了两样东西：environment 和 intact，意思是「让环境保持完整」，keep … intact 是一个搭配，眼睛要往后找 intact。its own 就是「它自己的」。\n→ 它想保持自己环境的完整"
+     }
+    ],
+    "sum": "它想让自己的环境保持完整。",
+    "cmp": "和书上意思一样，书上把 intact 变成名词「完整」，我用的是「保持完整」，两个都行。"
+   }
   },
   "It does not attach enough importance to task-based practice.": {
    "ph": [
@@ -208,7 +289,21 @@
      "b": "stick with",
      "m": "坚持"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "We love to establish a routine",
+      "s": "to establish 是 to do 短语，就是「喜欢做某事」，love to do。routine 你可能只认识「例行公事」，这里是「日常安排、常规」。\n→ 我们喜欢建立一个常规"
+     },
+     {
+      "t": "and stick with it",
+      "s": "and 后面省略了 to，是 love to … and (to) stick with it，两个动作并列。it 指谁？放回去试：stick with a routine，坚持这个常规，通顺。stick with 就是「坚持」。\n→ 并且坚持下去"
+     }
+    ],
+    "sum": "我们喜欢建立一套日常安排，并且一直坚持下去。",
+    "cmp": "和书上一样，书上的「常规」用得稍书面一点。"
+   }
   },
   "I used to play drums in a band.": {
    "ph": [
@@ -226,7 +321,21 @@
      "b": "stem from",
      "m": "源于"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Taijiquan, stemming from ancient China,",
+      "s": "两个逗号中间夹了一段，是插入语，像是插了一句嘴，先单独翻。stemming 是 -ing 短语，给 Taijiquan 补一句说明：它是怎么来的。stem from 就是「源于」。你可能会翻成「太极拳，从古代中国茎出」，别被 stem 的「茎」带偏。\n→ 太极拳源于中国古代"
+     },
+     {
+      "t": "is an important branch of Chinese martial arts",
+      "s": "branch 本义是树枝，这里是「分支」。martial arts 是「武术」。跳过插入语，主干就是：太极拳 is 一个重要的分支。\n→ 是中国武术的一个重要分支"
+     }
+    ],
+    "sum": "太极拳源于中国古代，是中国武术的一个重要分支。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "They would run around looking for clues and at the end unmask the bad guy.": {
    "ph": [
@@ -245,7 +354,38 @@
      "b": "at the end",
      "m": "最后，结尾时"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They would run around looking for clues",
+      "s": "would 你可能会当成「将会」。这句里没有 if 条件，所以不是虚拟，这是表示过去常常这样做，翻成「会」就行。looking for clues 是 -ing 短语，说明「怎么跑」：边跑边找线索。\n→ 他们会四处跑着找线索"
+     },
+     {
+      "t": "and at the end unmask the bad guy",
+      "s": "and 把两个动作连在一起，都跟在 would 后面：would run around … and unmask。unmask 是「去掉面具」，说白了就是「揭穿」。at the end 是「最后」。\n→ 最后揭开坏人的真面目"
+     }
+    ],
+    "sum": "他们会四处找线索，最后揭穿坏人的真面目。",
+    "cmp": "和书上基本一样。"
+   }
+  },
+  "I think that's my cue to explain why I'm here.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "I think that's my cue",
+      "s": "I think 后面省略了 that，that 引导的是宾语从句，就是「我认为的内容」。后面的 that's 是 that is 的缩写，这里的 that 指「现在这个时刻」。cue 你可能没见过，是「提示、信号」，说白了就是「该我上场的信号」。\n→ 我想，现在该轮到我了"
+     },
+     {
+      "t": "to explain why I'm here",
+      "s": "to explain 是 to do 短语，就是「去做某事」，说明这个信号是干什么的：解释。why I'm here 是 explain 的宾语从句，why 带的是「为什么」的内容：为什么我在这儿。\n→ 解释一下我来这里的原因"
+     }
+    ],
+    "sum": "我想，现在该轮到我来解释一下我为什么在这里了。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "Of the nearly 100 Americans recommended to be studied, 77% were white.": {
    "ph": [],
@@ -275,7 +415,39 @@
      "b": "result from",
      "m": "由……引起，起因于"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "This suggests",
+      "s": "你多半会翻成「这建议」。念一遍，不通。suggest 这里是「表明、暗示」，英文爱让东西当主语，中文就说「这表明」。后面省略了 that，that 带的是宾语从句，就是「表明的内容」。\n→ 这表明"
+     },
+     {
+      "t": "their higher IQs result from the time",
+      "s": "result from 是搭配，「由……引起」，箭头从原因指向结果：IQs 是结果，time 是原因。higher IQs 就是「较高的智商」。\n→ 他们更高的智商是由那段时间造成的"
+     },
+     {
+      "t": "they spend teaching their siblings",
+      "s": "the time 后面省略了 that，是定语从句，就是给前面的名词补一段说明。the time (that) they spend：他们花的时间。teaching their siblings 里 teaching 是 -ing 短语，说明花时间做什么，spend time doing 就是「花时间做某事」。\n→ 他们花在教兄弟姐妹上的时间"
+     }
+    ],
+    "order": "英文是「智商高是由……造成的」，中文常说「是因为他们花时间教……」，所以把原因放后面，用「是因为」连接。",
+    "sum": "这表明他们的智商更高，是因为他们花时间教了兄弟姐妹。",
+    "cmp": "和书上一样。"
+   }
+  },
+  "But don't kids need time to relax?": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "But don't kids need time to relax",
+      "s": "你多半会翻成「但是孩子们不需要时间放松吗」。意思没错。don't kids 是否定疑问，作者的意思是：「孩子当然需要时间放松，难道不是吗？」to relax 是 to do 短语，说明是什么样的时间：用来放松的。\n→ 但是孩子们不是也需要放松的时间吗"
+     }
+    ],
+    "sum": "但是，孩子们不是也需要时间放松一下吗？",
+    "cmp": "和书上差不多，书上直译成「不需要……吗」，我加了「不是……吗」，更像反问的语气。"
+   }
   },
   "Pain is the only feeling to which the nerves in that layer respond.": {
    "ph": [
@@ -306,6 +478,19 @@
     "cmp": "书上译成「疼痛是这一层神经所能反应的唯一感觉」，也是把从句翻到「感觉」前面当定语，只是用了「所能」，书面一些，意思一样。"
    }
   },
+  "Sit down and try to calm yourself.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Sit down and try to calm yourself",
+      "s": "try to 后面的 to calm 是 to do 短语，try to do 就是「试着做某事」。calm 你可能认识形容词「平静的」，这里是动词，calm yourself 就是「让自己平静下来」。\n→ 坐下，试着让自己平静下来"
+     }
+    ],
+    "sum": "坐下，试着让自己平静下来。",
+    "cmp": "和书上完全一样。"
+   }
+  },
   "It is mainly based on a society's religion.": {
    "ph": [
     {
@@ -313,7 +498,21 @@
      "b": "be based on",
      "m": "基于，以……为基础"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It is mainly based on",
+      "s": "is based 是被动，就是「它被别人怎么样了」。你多半会翻成「它主要被基于……」。念一遍，别扭吧？be based on 是固定搭配，说白了就是「以……为基础」。mainly 是「主要」。\n→ 它主要以……为基础"
+     },
+     {
+      "t": "a society's religion",
+      "s": "'s 表示所属，a society's religion 就是「一个社会的宗教信仰」，直接翻。\n→ 一个社会的宗教信仰"
+     }
+    ],
+    "sum": "它主要是以一个社会的宗教信仰为基础的。",
+    "cmp": "书上说「这主要基于一个社会的宗教信仰」，直接把「基于」当动词用，更简洁；我的稍微啰嗦，意思一样。"
+   }
   },
   "She mainly drew on stories of ancient saints.": {
    "ph": [
@@ -323,6 +522,24 @@
      "m": "借鉴，利用"
     }
    ]
+  },
+  "The place is considered holy by the local people.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The place is considered holy",
+      "s": "is considered 是被动，就是「这个地方被别人看作怎么样」。你多半会翻成「这个地方被认为是神圣的」，这也可以。但 considered 后面直接跟了 holy，意思是「被看作是神圣的」。\n→ 这个地方被认为是神圣的"
+     },
+     {
+      "t": "by the local people",
+      "s": "by 后面是做动作的人，被动句里把它请回主语位置：谁认为？当地人。所以中文可以改成主动：当地人认为这个地方神圣。\n→ 被当地人"
+     }
+    ],
+    "order": "英文是被动，把 by 后面的人提到前面当主语，把 considered 变成主动的「认为」。",
+    "sum": "当地人认为这个地方是神圣的。",
+    "cmp": "和书上一样，用主动说，比「被认为」更自然。"
+   }
   },
   "The tradition, dating back to 300 B.C., was later incorporated into the Christian church.": {
    "ph": [
@@ -368,7 +585,26 @@
      "b": "be blessed with",
      "m": "有幸拥有，被赋予"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Most of us in the entrepreneurial community",
+      "s": "Most of us 是「我们中的大多数」，in the entrepreneurial community 说明是哪个圈子里的：创业者圈子。entrepreneurial 是形容词，来自 entrepreneur「企业家」。\n→ 在创业者圈子里，我们大多数人"
+     },
+     {
+      "t": "are blessed—or cursed—with",
+      "s": "are blessed 是被动，be blessed with 是搭配，「被赋予、有幸拥有」。你多半会翻成「被祝福」。放回去试试：被祝福着雄心？别扭。中间的 or cursed 是用破折号隔开的插入语，像插了一句嘴：也可能是「被诅咒」，作者在开玩笑。\n→ 被赋予了（说是福气也好，说是诅咒也罢）"
+     },
+     {
+      "t": "higher-than-average ambition",
+      "s": "higher-than-average 是连字符连成的一个形容词：比平均水平更高的。修饰 ambition。\n→ 高于一般水平的雄心"
+     }
+    ],
+    "order": "插入语 or cursed 打断了句子，中文把它搬到后面单独说，「这既是福气，也可能是诅咒」。",
+    "sum": "在创业者圈子里，我们大多数人都怀有高于一般水平的雄心壮志，这既是福气，也可能是诅咒。",
+    "cmp": "和书上的意思一致，书上把插入语放在最后，是同样的思路。"
+   }
   },
   "So it's no surprise that cultures around the world celebrate spring by honouring the egg.": {
    "ph": [
@@ -382,7 +618,26 @@
      "b": "around the world",
      "m": "世界各地"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "So it's no surprise that",
+      "s": "你可能会翻成「所以它不是惊讶」。放回去读，不通。It 在这里是形式主语，真正的主语在 that 后面。it is no surprise that … 就是「……并不奇怪」。\n→ 所以……也就不足为奇了"
+     },
+     {
+      "t": "cultures around the world celebrate spring",
+      "s": "that 带的是主语从句，就是「不足为奇的那件事」。around the world 说明是哪里的文化：世界各地。celebrate 是「庆祝」。\n→ 世界各地的文化庆祝春天"
+     },
+     {
+      "t": "by honouring the egg",
+      "s": "by 后面接 -ing，by doing 就是「通过做某事」，honouring 是「尊崇、致敬」。\n→ 通过敬奉鸡蛋"
+     }
+    ],
+    "order": "英文先说「不奇怪」，再说 that 里的内容；中文常把 that 里的事情提前，把「也就不足为奇了」放最后。",
+    "sum": "所以，世界各地的文化通过敬奉鸡蛋来庆祝春天，也就不足为奇了。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "A state banquet was held in honour of the visiting president.": {
    "ph": [
@@ -396,7 +651,21 @@
      "b": "in honour of",
      "m": "为向……表示敬意"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "A state banquet was held",
+      "s": "你多半会翻成「一个国家宴会被举行了」。was held 是被动，就是「宴会被别人怎么样了」，hold 在这里是「举办」。中文不用「被」，说「举行了国宴」就顺了。state banquet 是「国宴」。\n→ 举行了一场国宴"
+     },
+     {
+      "t": "in honour of the visiting president",
+      "s": "in honour of 是固定搭配，「为了向……表示敬意」。visiting 是 -ing 形式，当形容词用，就是「来访的」。\n→ 以向来访的总统表示敬意"
+     }
+    ],
+    "sum": "为向来访的总统表示敬意，举行了一场国宴。",
+    "cmp": "书上说「为欢迎来访总统，特设国宴以示礼遇」，意思一样，但是「欢迎」「特设」「以示礼遇」是书面的说法，原文只有「向……表示敬意」。"
+   }
   },
   "It does produce much less pollution than that caused by energy production through fossil fuels.": {
    "ph": [
@@ -434,7 +703,17 @@
      "b": "be covered with",
      "m": "被……覆盖"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The road was covered with spilled gas",
+      "s": "你多半会翻成「路被汽油覆盖」。意思没错，但中文更常说「路上满是……」。was covered 是被动，就是「路被盖住了」，be covered with 就是「被……覆盖」，中文可以说「路上满是……」。spilled 是过去分词，当形容词用，是「洒出来的」。gas 在美式英语里是 gasoline「汽油」，不是「煤气」。\n→ 路上满是洒出来的汽油"
+     }
+    ],
+    "sum": "路上满是洒出来的汽油。",
+    "cmp": "和书上一样，书上用的是「溢出的」。"
+   }
   },
   "Scotland will reach the national target in carbon emissions reduction ahead of schedule.": {
    "ph": [
@@ -452,7 +731,21 @@
      "b": "in favour of",
      "m": "赞成，主张"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They argued in favour of",
+      "s": "你可能会翻成「他们在赞成中争论」。念一遍，不通。in favour of 是固定搭配，就是「赞成、支持」，of 后面要跟东西，眼睛往后找。argued 是「主张」，这里不是「吵架」。\n→ 他们主张"
+     },
+     {
+      "t": "keeping a nuclear deterrent",
+      "s": "of 是介词，后面不能跟动词原形，所以用 keeping，-ing 就是「做某事」这件事。deterrent 是「威慑力量」，nuclear 是「核的」。\n→ 保留核威慑力量"
+     }
+    ],
+    "sum": "他们主张保留核威慑力量。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Two atoms of hydrogen combine with one atom of oxygen to form a molecule of water.": {
    "ph": [
@@ -466,7 +759,21 @@
      "b": "combine … with",
      "m": "与……结合"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Two atoms of hydrogen combine with one atom of oxygen",
+      "s": "你可能会翻成「两个氢的原子结合着一个氧的原子」，of 的顺序要倒过来读：「氢原子」「氧原子」。combine with 就是「和……结合」。\n→ 两个氢原子和一个氧原子结合"
+     },
+     {
+      "t": "to form a molecule of water",
+      "s": "to form 是 to do 短语，说明结合起来干什么、有什么结果：形成。a molecule of water 的 of 也要倒过来：水分子。\n→ 组成一个水分子"
+     }
+    ],
+    "sum": "两个氢原子和一个氧原子结合，组成一个水分子。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "The former have atoms that contain more free electrons than the latter.": {
    "ph": [
@@ -480,7 +787,21 @@
      "b": "the former … the latter",
      "m": "前者……后者"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The former have atoms",
+      "s": "The former 你可能不知道指什么。the former … the latter 是一对搭配，就是「前者……后者」，指的是前面提到的两样东西里先说的那个和后说的那个。have 是「具有」。\n→ 前者的原子"
+     },
+     {
+      "t": "that contain more free electrons than the latter",
+      "s": "that 指谁？放回去试：atoms contain electrons，原子含有电子，对；定语从句紧跟在被说明的名词后面，所以 that 指 atoms。than the latter 是「比后者」，后面省略了 contain 的内容，就是「比后者的原子含有的」。free electrons 是「自由电子」。\n→ 含有的自由电子比后者的更多"
+     }
+    ],
+    "sum": "前者的原子含有的自由电子比后者的原子更多。",
+    "cmp": "和书上基本一样，书上把 have atoms 合并到后面，更简洁。"
+   }
   },
   "Try to imagine what it is like to live without electricity.": {
    "ph": [
@@ -489,7 +810,26 @@
      "b": "try to do",
      "m": "试着做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Try to imagine",
+      "s": "Try to imagine 里的 to imagine 是 to do 短语，try to do 就是「试着做某事」。imagine 是「想象」，后面跟的是想象的内容。\n→ 试着想象一下"
+     },
+     {
+      "t": "what it is like",
+      "s": "你多半会翻成「它像什么」。念一遍，指代不明。what it is like 是宾语从句，就是「想象的内容」，It 是形式主语，真正的主语在后面的 to live。be like 是「像……一样」，what … like 就是「是什么样子」。\n→ ……是什么样子"
+     },
+     {
+      "t": "to live without electricity",
+      "s": "to live 才是真正的主语，「活着」，without electricity 是「没有电」。\n→ 在没有电的情况下生活"
+     }
+    ],
+    "order": "英文把 to live 放到最后，中文先说「没有电的生活」再说「是什么样子」。",
+    "sum": "试着想象一下，没有电的生活会是什么样子。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "We gave out a cheer when the red roof of the cottage came into view.": {
    "ph": [
@@ -503,7 +843,22 @@
      "b": "come into view",
      "m": "映入眼帘，出现"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "We gave out a cheer",
+      "s": "你多半会翻成「我们给出了一个欢呼」。念一遍，不通。give out 是搭配，「发出」，give out a cheer 就是「发出欢呼」。\n→ 我们发出了欢呼声"
+     },
+     {
+      "t": "when the red roof of the cottage came into view",
+      "s": "when 带的是时间状语从句，就是「在……的时候」。come into view 是搭配，「进入视线」。the red roof of the cottage 的 of 要倒过来读：小屋的红色屋顶。\n→ 当小屋的红色屋顶映入眼帘时"
+     }
+    ],
+    "order": "英文把「什么时候」放后面，中文习惯先说时间，所以把 when 那一块提到前面。",
+    "sum": "小屋的红色屋顶一映入眼帘，我们就欢呼起来。",
+    "cmp": "意思一样，书上更接近原文的顺序。"
+   }
   },
   "She always derives great pleasure from designing something new.": {
    "ph": [
@@ -517,7 +872,21 @@
      "b": "derive … from",
      "m": "从……中获得"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She always derives great pleasure",
+      "s": "你多半会翻成「她总是得出很大的快乐」，derive 单独看不好懂。眼睛往后找 from——derive A from B，从 B 中获得 A。A 就是 great pleasure。\n→ 她总是获得极大的乐趣"
+     },
+     {
+      "t": "from designing something new",
+      "s": "from 是介词，后面接 -ing，designing 就是「设计」这件事。something new 里形容词 new 放在后面，就是「新东西」。\n→ 从设计新东西中"
+     }
+    ],
+    "sum": "她总是能从设计新东西中获得极大的乐趣。",
+    "cmp": "和书上一样。"
+   }
   },
   "We do work that gives us bursts of joy each new day.": {
    "ph": [
@@ -526,7 +895,51 @@
      "b": "a burst of",
      "m": "一阵阵"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "We do work that gives us",
+      "s": "你多半会翻成「我们做工作，那个给我们……」，把 that 当成「那个」。that 指谁？放回去试：候选 work 或 We。We gives 不对，gives 是单数，We 是复数；work gives us 通顺。所以 that 带的是定语从句，就是给 work 补一段说明。\n→ 我们做的工作带给我们"
+     },
+     {
+      "t": "bursts of joy each new day",
+      "s": "burst 本义是「爆发」，a burst of 是「一阵」，bursts of joy 就是「阵阵喜悦」。each new day 是「每个新的一天」。\n→ 每天都有阵阵喜悦"
+     }
+    ],
+    "sum": "我们做的工作，每一天都会给我们带来阵阵喜悦。",
+    "cmp": "和书上基本一样。"
+   }
+  },
+  "Students are more comfortable seeking counselling in school.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Students are more comfortable seeking counselling",
+      "s": "你多半会翻成「学生更舒服地寻求咨询」。comfortable 在这里不是「舒服」，而是「自在、不拘谨」。seeking counselling 是 -ing 短语，说明他们在什么事上自在：寻求心理咨询。\n→ 学生更愿意、更自在地寻求心理咨询"
+     },
+     {
+      "t": "in school",
+      "s": "in school 是「在学校里」，说明是在什么地方做这件事。\n→ 在学校里"
+     }
+    ],
+    "sum": "学生在学校里寻求心理咨询，会更自在。",
+    "cmp": "和书上意思一样，书上的「更为自在」比较书面。"
+   }
+  },
+  "Smoking often elevates blood pressure.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Smoking often elevates blood pressure",
+      "s": "Smoking 开头，你可能会当成「正在抽烟」。-ing 开头当主语，就是「抽烟」这件事。elevate 是「使升高」，后面是 blood pressure「血压」。英文爱让东西当主语，中文就说「抽烟使血压升高」。\n→ 抽烟常常使血压升高"
+     }
+    ],
+    "sum": "抽烟常常会使血压升高。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Medical Association offers a picture of how risky it is to get a lift from a teenage driver.": {
    "ph": [
@@ -535,7 +948,25 @@
      "b": "get a lift",
      "m": "搭便车"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Medical Association offers a picture of",
+      "s": "你多半会翻成「医学协会提供一张图片的」。a picture 在这里不是真的照片，而是「一个形象的说明」，of 后面跟的是说明的内容。\n→ 医学协会提供了一张图，展示了"
+     },
+     {
+      "t": "how risky it is",
+      "s": "how risky it is 是宾语从句，就是 picture 展示的内容。it 是形式主语，真正的主语在后面的 to get。\n→ ……有多危险"
+     },
+     {
+      "t": "to get a lift from a teenage driver",
+      "s": "to get 是 to do 短语，才是 it 真正指的事情。get a lift 是「搭便车」。from a teenage driver 是「向十几岁的司机」。\n→ 搭十几岁司机的车"
+     }
+    ],
+    "sum": "医学协会提供了一张图，展示了搭十几岁司机的车有多危险。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "Leslie worries that the rise of the Internet has reduced our appetite for aimless adventures.": {
    "ph": [
@@ -544,7 +975,25 @@
      "b": "appetite for",
      "m": "对……的欲望（兴趣）"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Leslie worries that",
+      "s": "that 带的是宾语从句，就是「担心的内容」。\n→ 莱斯利担心"
+     },
+     {
+      "t": "the rise of the Internet has reduced",
+      "s": "你可能会翻成「互联网的上升」。rise 是名词，这里是「兴起」。has reduced 是现在完成，说明已经造成了影响，翻成「已经减少了」。\n→ 互联网的兴起已经减少了"
+     },
+     {
+      "t": "our appetite for aimless adventures",
+      "s": "appetite 你可能只认识「食欲」，这里是比喻，「appetite for」是对……的欲望、兴趣。aimless 是「没目的的」。\n→ 我们对漫无目的的冒险的兴趣"
+     }
+    ],
+    "sum": "莱斯利担心，互联网的兴起已经削弱了我们对漫无目的冒险的兴趣。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "What problem may arise if classes go online?": {
    "ph": [
@@ -553,7 +1002,22 @@
      "b": "go online",
      "m": "转到线上，上网"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "What problem may arise",
+      "s": "What problem 是「什么问题」，may 是「可能」。arise 你可能会跟 rise 搞混，这里是「出现、产生」。\n→ 可能会出现什么问题"
+     },
+     {
+      "t": "if classes go online",
+      "s": "if 带的是条件状语从句，就是「如果……」。你可能会纠结为什么用 go 而不是 will go：if 引导的从句，说将来的事也用一般现在时。go online 是「转到线上」。\n→ 如果课程转到线上"
+     }
+    ],
+    "order": "英文把 if 放后面，中文习惯先说「如果」。",
+    "sum": "如果课程转到线上，可能会出现什么问题？",
+    "cmp": "和书上一样。"
+   }
   },
   "Most stores open with flowers, fruit and vegetables at the front as a breath of freshness to arouse our appetite.": {
    "ph": [
@@ -562,7 +1026,25 @@
      "b": "a breath of",
      "m": "一股，一丝"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Most stores open with flowers, fruit and vegetables at the front",
+      "s": "你多半会翻成「大多数商店开着花、水果和蔬菜在前面」。念一遍，别扭吧？open with 这里是「开门就摆出」，at the front 是「在前面」。flowers、fruit、vegetables 是三样东西并列。\n→ 大多数商店一开门，就把鲜花、水果和蔬菜摆在最前面"
+     },
+     {
+      "t": "as a breath of freshness",
+      "s": "as 在这里是「作为」。a breath of 是搭配，「一股、一丝」，a breath of freshness 就是「一股清新的气息」。\n→ 作为一股清新的气息"
+     },
+     {
+      "t": "to arouse our appetite",
+      "s": "to arouse 是 to do 短语，说明目的，「为了……」。arouse 是「唤起」，appetite 在这里是「食欲」。\n→ 来唤起我们的食欲"
+     }
+    ],
+    "sum": "大多数商店一开门，就把鲜花、水果和蔬菜摆在最前面，给人一种清新的感觉，唤起我们的食欲。",
+    "cmp": "和书上一样，书上用的是「给人一种新鲜的感觉」。"
+   }
   },
   "The telephone roused me from my sleep at 6 a.m.": {
    "ph": [
@@ -602,6 +1084,19 @@
     }
    ]
   },
+  "They are wakened several times during the night.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "They are wakened several times during the night",
+      "s": "你多半会翻成「他们在夜里被唤醒了几次」。意思没错。are wakened 是被动，就是「他们被别人（或别的东西）弄醒了」。waken 是「唤醒」，不是「醒来」。several times 是「好几次」，during the night 是「在夜间」。\n→ 他们在夜里被弄醒了好几次"
+     }
+    ],
+    "sum": "夜里，他们被吵醒了好几次。",
+    "cmp": "和书上一样。"
+   }
+  },
   "I was barely able to stay awake.": {
    "ph": [
     {
@@ -609,7 +1104,52 @@
      "b": "stay awake",
      "m": "保持清醒"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "I was barely able to stay awake",
+      "s": "你可能会翻成「我几乎能保持醒着」。放回去想：barely 是「几乎不」，是否定。be able to 里的 to stay 是 to do 短语，就是「能够做到某事」。barely able 就是「几乎做不到」。stay awake 是「保持清醒」。\n→ 我几乎无法保持清醒"
+     }
+    ],
+    "sum": "我几乎无法保持清醒。",
+    "cmp": "意思一样，书上的「醒着」和我的「清醒」都行。"
+   }
+  },
+  "You should check the toy dragon one more time before playing.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "You should check the toy dragon one more time",
+      "s": "should 是「应该」。toy dragon 你可能会翻成「玩具的龙」，更顺的是「玩具龙」。one more time 是「再一次」。\n→ 你应该再检查一次这个玩具龙"
+     },
+     {
+      "t": "before playing",
+      "s": "before 是介词，后面接 -ing，playing 就是「玩」这件事，before playing 就是「在玩之前」。\n→ 在玩之前"
+     }
+    ],
+    "order": "中文习惯先说时间，把「玩之前」提前。",
+    "sum": "玩之前，你应该再检查一遍这个玩具龙。",
+    "cmp": "和书上基本一样。"
+   }
+  },
+  "These people are usually unable or unprepared to endure the long haul.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "These people are usually unable or unprepared",
+      "s": "你可能会翻成「这些人通常不能或者不准备」。unable 是「不能」，unprepared 是「没有准备好」，两个形容词用 or 并列，说的是人的状态。\n→ 这些人通常无法或没有准备好"
+     },
+     {
+      "t": "to endure the long haul",
+      "s": "to endure 是 to do 短语，同时接在 unable 和 unprepared 后面，两个词共用它。endure 是「忍受」，the long haul 的 haul 本义是「拖运」，the long haul 是比喻，指「长期的过程」。\n→ 忍受长期的考验"
+     }
+    ],
+    "sum": "这些人通常无法、也没有准备好去忍受长期的考验。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "I could hear nothing but the roar of the airplane engines.": {
    "ph": [
