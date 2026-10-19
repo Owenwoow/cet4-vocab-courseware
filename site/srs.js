@@ -19,6 +19,10 @@
      z=1 → 5；h 末位 f，或忘过≥2 次且连对<2 → 1；还没正式复习过（v=0）→ 0；
      s≥4 且连对≥4 且 q≥3 → 5；s≥4 且连对≥3 且 q≥2 → 4；s≥3 且连对≥2 → 3；其他 → 2
    出题：题型 = min(熟练度对应题型, q+1)，每次最多升一级；5 级只做快速抽查。
+   关掉的题型（设置里关掉听音 / 拼写，opt.off 传题型编号）：出题遇到关掉的，换成梯子上往上数第一个没关的，往上没有就往下找
+     （听音关掉 → 看词选义答对过就直接出例句题；拼写关掉 → 最高到例句题 / 看义选词）；
+     熟练度对关掉的题型不作要求：拼写关掉时 5 级只要 s≥4 且连对≥4（同词组卡）；听音关掉不影响（4 级本来就看例句题）。
+   判模糊的时限可乘一个倍数（设置「想得久算模糊」：宽松 1.5 / 标准 1 / 严格 0.75 / 关掉 0 = 不按时间判模糊）。
    词组卡（生词本里原形含空格的，或 ph=1 的例句词组，见 isPhrase）：只出看词组选义（MEAN）和翻卡（5 级的快速抽查 QUICK），
      不出听音、例句、拼写；熟练度不看 q（拼写题出不了，否则到不了 4、5 级）：s≥4 且连对≥4 → 5；s≥4 且连对≥3 → 4，其余同上。
    日期都用本地日期字符串 YYYY-MM-DD，一天从凌晨 4 点开始算 */
@@ -69,29 +73,39 @@ const SRS = (() => {
   function streak(c) { const h = hist(c); let k = 0; while (k < h.length && h[h.length - 1 - k] === "g") k++; return k; }
   /* 词组卡：生词本里原形含空格的（包括以前从逐词释义划选加进来的短语），或标了 ph 的例句词组 */
   const isPhrase = c => !!(c && (c.ph || /\s/.test(c.w || "")));
-  /* opt.phrase：按词组卡算（不传就看卡片自己） */
+  /* 关掉的题型：opt.off 是题型编号的数组（如 [TYPE.LISTEN, TYPE.SPELL]），不传就是都开着 */
+  const offOf = opt => new Set(opt.off || []);
+  /* opt.phrase：按词组卡算（不传就看卡片自己）；opt.off：关掉的题型 */
   function level(c, opt = {}) {
     if (c.z) return 5;
     const h = hist(c), k = streak(c), ph = opt.phrase ?? isPhrase(c), q = ph ? 3 : c.q || 0;   // 词组卡不看 q
     if (h.endsWith("f") || ((c.l || 0) >= 2 && k < 2)) return 1;
     if (!reviews(c)) return 0;
-    if (c.s >= 4 && k >= 4 && q >= 3) return 5;
+    if (c.s >= 4 && k >= 4 && (q >= 3 || offOf(opt).has(TYPE.SPELL))) return 5;   // 拼写关掉：5 级不要求拼对过
     if (c.s >= 4 && k >= 3 && q >= 2) return 4;
     if (c.s >= 3 && k >= 2) return 3;
     return 2;
   }
 
-  /* 出什么题：2 级在看词选义 / 听音选义间按正式复习次数轮换；词组卡只有看词组选义和 5 级的快速抽查（翻卡） */
+  /* 出什么题：2 级在看词选义 / 听音选义间按正式复习次数轮换；词组卡只有看词组选义和 5 级的快速抽查（翻卡）。
+     opt.off：关掉的题型，换成梯子（看词选义 → 听音 → 例句 → 拼写）上往上第一个没关的，往上没有就往下找；看词选义关不掉 */
   function pickType(c, opt = {}) {
-    const ph = opt.phrase ?? isPhrase(c), lv = level(c, {phrase: ph});
+    const ph = opt.phrase ?? isPhrase(c), off = offOf(opt), lv = level(c, {phrase: ph, off: opt.off});
     if (lv === 5) return TYPE.QUICK;
     if (ph) return TYPE.MEAN;
     const want = lv <= 1 ? TYPE.MEAN : lv === 2 ? reviews(c) % 2 : lv === 3 ? TYPE.CONTEXT : TYPE.SPELL;
-    return Math.min(want, (c.q || 0) + 1);
+    const ty = Math.min(want, (c.q || 0) + 1);
+    if (ty === TYPE.MEAN || !off.has(ty)) return ty;
+    const ladder = [TYPE.MEAN, TYPE.LISTEN, TYPE.CONTEXT, TYPE.SPELL].filter(x => x === TYPE.MEAN || !off.has(x));
+    return ladder.find(x => x > ty) ?? ladder.filter(x => x < ty).pop();
   }
 
-  /* 判分：选择题看对错和用时（kind 是题型 mean / listen / reverse / cloze，时限见 SLOW_MS）；拼写全对 g、错一个字母 m */
-  const gradeChoice = (ok, ms, kind = "mean") => (!ok ? "f" : ms > (SLOW_MS[kind] || SLOW_MS.mean) ? "m" : "g");
+  /* 判分：选择题看对错和用时（kind 是题型 mean / listen / reverse / cloze，时限见 SLOW_MS）；拼写全对 g、错一个字母 m。
+     opt.slow：时限的倍数（默认 1；0 = 不按时间判模糊，只看对错） */
+  const gradeChoice = (ok, ms, kind = "mean", opt = {}) => {
+    const k = opt.slow ?? 1;
+    return !ok ? "f" : k > 0 && ms > (SLOW_MS[kind] || SLOW_MS.mean) * k ? "m" : "g";
+  };
   function editDist(a, b) {
     let prev = Array.from({length: b.length + 1}, (_, j) => j);
     for (let i = 1; i <= a.length; i++) {
@@ -112,7 +126,7 @@ const SRS = (() => {
 
   /* 打分：g 记得 / m 模糊 / f 忘了。返回新卡，不改原卡；t 记下最近一次复习的日期。
      opt.type：这次的题型（第一遍答对时更新 q）；opt.key：考前封顶时用来分散日期，一般传单词；opt.exam：考试日（默认 EXAM）；
-     opt.hold：选中易混干扰项（混淆），r 传 m，站数不变、2 天后再来 */
+     opt.hold：选中易混干扰项（混淆），r 传 m，站数不变、2 天后再来；opt.off：关掉的题型（算 s≥4 的间隔时熟练度按它放宽） */
   function rate(c, r, t, opt = {}) {
     const key = opt.key ?? `${c.k}|${c.g}|${c.o}|${c.w}`;
     const n = {...c, r, n: (c.n || 0) + 1, t};
@@ -122,7 +136,7 @@ const SRS = (() => {
     const q = r === "g" && opt.type >= 0 && opt.type <= TYPE.SPELL ? Math.max(c.q || 0, opt.type) : c.q || 0;
     if (opt.hold) return {...n, h, v, q, d: examCap(add(t, 2), t, key, opt.exam || EXAM)};
     const s = c.s + 1, nc = {...n, h, v, q, s};       // 记得、模糊都进下一站；模糊靠 h 打断连对来降熟练度
-    return {...nc, d: examCap(stationDue(c.a, s, t, level(nc)), t, key, opt.exam || EXAM)};
+    return {...nc, d: examCap(stationDue(c.a, s, t, level(nc, {off: opt.off})), t, key, opt.exam || EXAM)};
   }
 
   /* 斩：直接 5 级，30 天后（或考前窗口）抽查；抽查答错照常重来并清掉 z */
@@ -201,12 +215,12 @@ const SRS = (() => {
 
   /* 本轮出题顺序：拖过的先、今天到期的后；同一段里熟练度低的先；
      同一熟练度里，正式复习不到 3 次的按课本顺序（保留词群联想），3 次及以上的乱序、同词群不相邻、不同词群的形近词相邻 */
-  function queue(items, t, seed = t) {
+  function queue(items, t, seed = t, opt = {}) {   // opt.off：关掉的题型（熟练度按它算）
     const grp = x => `${x.card.k}|${x.card.g}`;
     const due = items.filter(x => isDue(x.card, t)), out = [];
     for (const late of [true, false])
       for (let lv = 0; lv <= 5; lv++) {
-        const seg = due.filter(x => (x.card.d < t) === late && level(x.card) === lv);
+        const seg = due.filter(x => (x.card.d < t) === late && level(x.card, {off: opt.off}) === lv);
         out.push(...seg.filter(x => reviews(x.card) < 3).sort((x, y) => (x.order || 0) - (y.order || 0)));
         out.push(...pairSimilar(shuffleSpread(seg.filter(x => reviews(x.card) >= 3), grp, `${seed}|${late}|${lv}`), grp));
       }
