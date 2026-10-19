@@ -84,7 +84,9 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .fab{width:44px;height:44px;border-radius:50%;padding:0;font-size:15px;font-weight:700;box-shadow:0 3px 12px rgba(0,0,0,.18)}
 .fab.main{width:54px;height:54px;font-size:22px;background:var(--accent);color:#fff;border-color:var(--accent)}
 .fab.main.on{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.fab.on{background:var(--ink);border-color:var(--ink);color:var(--bg)}
 @media (max-width:600px){
+  .fab-split{display:none}   /* B 站分屏只给电脑端 */
   .fabs{right:14px;bottom:calc(16px + env(safe-area-inset-bottom))}
 }
 
