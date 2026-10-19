@@ -47,7 +47,21 @@
      "b": "a packet of",
      "m": "一袋"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He claims",
+      "s": "claim 你可能只认识「要求（索赔）」，翻成「他要求一袋薯片」。放回去念，后面还跟着 contains，一袋薯片怎么成了被要求的东西？这里 claim 是「声称」。后面藏了个 that，补回去是 He claims (that) a packet of chips now contains……，that 后面是一整句话，就是 claims 的内容，这叫宾语从句。\n→ 他声称"
+     },
+     {
+      "t": "a packet of chips now contains less salt",
+      "s": "a packet of chips 是主语，「一袋薯片」。你多半会翻成「一袋薯片现在含有更少的盐」，意思对，但中文更习惯说「含盐量更低」。\n→ 现在一袋薯片的含盐量更少了"
+     }
+    ],
+    "sum": "他声称，现在一袋薯片的含盐量更低了。",
+    "cmp": "和书上基本一样，只是「更低」和书上的「更少」换了个说法，都对。"
+   }
   },
   "It can be hard to identify which parcels are carrying crucial items.": {
    "ph": [],
@@ -73,7 +87,22 @@
      "b": "be wrapped in",
      "m": "用……包着"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Each apple was wrapped",
+      "s": "你多半会翻成「每个苹果被包」。念一遍，中文不这么说。was wrapped 是被动，就是「苹果被别人怎么样了」。中文少用「被」，说「包着」就顺了。\n→ 每个苹果都包着"
+     },
+     {
+      "t": "in paper",
+      "s": "这块照字面翻就行：wrapped in 就是「用……包起来」，in 后面是包的材料。\n→ 用纸"
+     }
+    ],
+    "order": "英文先说包着，再说用什么；中文习惯先说「用纸」，再说「包着」，所以把「用纸」提到前面。",
+    "sum": "每个苹果都用纸包着。",
+    "cmp": "和书上一样。"
+   }
   },
   "If you're going on a trip, it's a good idea to bring your own towel.": {
    "ph": [
@@ -87,7 +116,22 @@
      "b": "a good idea to do",
      "m": "做……是个好主意"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "If you're going on a trip",
+      "s": "你多半会翻成「如果你正在一次旅行上去」。念一遍，是不是怪？go on a trip 是一个整体，就是「去旅行」。you're going 是进行时，表示「正打算去」。If 带的是条件状语从句，就是「如果……」。\n→ 如果你要去旅行"
+     },
+     {
+      "t": "it's a good idea to bring your own towel",
+      "s": "开头的 it 你可能想找它指谁，翻成「它是个好主意」。前面找不到能指的东西，那就眼睛往后找 to——找到了 to bring。这里 it 是形式主语，真正的主语是后面的 to bring your own towel，就是「带上自己的毛巾」这件事。to do 在这里当主语用。own 是强调「自己的」。\n→ 自己带条毛巾是个好主意"
+     }
+    ],
+    "order": "中文说「最好……」比「……是个好主意」更口语，所以把 a good idea 换成「最好」。",
+    "sum": "如果你要去旅行，最好自己带条毛巾。",
+    "cmp": "和书上一样。"
+   }
   },
   "They see a benefit to successfully veiling their contempt for you.": {
    "ph": [
@@ -143,7 +187,21 @@
      "b": "bleed to death",
      "m": "流血不止快不行了"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They found him",
+      "s": "你多半会翻成「他们找到了他」。意思差不多，但后面还跟着他的状态，所以 found 这里是「发现」，就是发现他处在什么样子。\n→ 他们发现他"
+     },
+     {
+      "t": "half naked and bleeding to death",
+      "s": "half naked 是「半裸」。bleeding to death 是 -ing 短语（现在分词），说的是他当时正在怎么样。你多半会翻成「流血到死」，太吓人，而且人还在。bleed to death 是「流血不止、眼看要死」，说的是情况危急，所以书上译成「快不行了」。\n→ 半裸着，流着血，快不行了"
+     }
+    ],
+    "sum": "他们发现他半裸着身体，流血不止，快不行了。",
+    "cmp": "和书上基本一样，书上用「身体半裸，流着血」，我多用了「流血不止」，意思一样。"
+   }
   },
   "They try to limit their usage of facial tissue to save money.": {
    "ph": [
@@ -152,7 +210,22 @@
      "b": "save money",
      "m": "节省开支"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They try to limit their usage of facial tissue",
+      "s": "try to limit 是 try to do，不定式跟在 try 后面，就是「努力去做某事」。their usage of facial tissue 你多半会翻成「他们的面巾纸的使用」，太硬。把名词 usage 换成动词说：「用纸巾」。facial tissue 就是「纸巾」。\n→ 他们试图限制纸巾的使用"
+     },
+     {
+      "t": "to save money",
+      "s": "又出现一个 to do。前面 limit 已经是完整的动作了，句尾再来的 to save money 是在说目的，就是「为了……」。你多半会翻成「去节省钱」，不太顺，save money 说成「省钱」就行。\n→ 为了省钱"
+     }
+    ],
+    "order": "英文把目的放在最后，中文习惯先说目的，再说做法，所以可以把「为了省钱」提到前面。",
+    "sum": "他们为了省钱，尽量少用纸巾。",
+    "cmp": "意思一样。书上保留了「限制……使用」，我改成「尽量少用」，更口语。"
+   }
   },
   "Increasingly states and companies are starting to take up the issue.": {
    "ph": [
@@ -161,7 +234,22 @@
      "b": "take up",
      "m": "关注，着手处理"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Increasingly states and companies",
+      "s": "你多半会翻成「越来越州和公司」，念一遍就知道不通。Increasingly 是副词，放在句首是修饰后面整件事，意思是「越来越多」。states 在这里是「州」，不是「状态」。\n→ 越来越多的州和公司"
+     },
+     {
+      "t": "are starting to take up the issue",
+      "s": "are starting 是进行时，start to do 就是「开始做某事」。take up 你多半翻成「拿起」，这里是「着手处理、关注」。issue 是「问题、议题」。\n→ 开始关注这个问题"
+     }
+    ],
+    "order": "英文用 Increasingly 修饰整句，中文把它挪到主语前面，变成「越来越多的」。",
+    "sum": "越来越多的州和公司开始关注这个问题。",
+    "cmp": "和书上一样。"
+   }
   },
   "Remember no more than 10 ounces of carry-on baggage are allowed.": {
    "ph": [
@@ -194,7 +282,21 @@
      "b": "be burdened with",
      "m": "负担……"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He has been burdened",
+      "s": "你多半会翻成「他被负担了」。念一遍，别扭吧？has been burdened 是被动（现在完成时的被动），就是「他被别的东西压着了」。burden 做动词是「使负担重」，所以这里说的是他被压得很重。\n→ 他被压着"
+     },
+     {
+      "t": "with excessive work",
+      "s": "be burdened with 是搭配，「被……压着」，with 后面放的是压他的东西。excessive 是「过多的」。\n→ 过多的工作"
+     }
+    ],
+    "sum": "他的工作负担过重。",
+    "cmp": "和书上一样。"
+   }
   },
   "They find it increasingly difficult to afford a place to live.": {
    "ph": [
@@ -203,7 +305,39 @@
      "b": "find it difficult to do",
      "m": "发现做……很难"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They find it increasingly difficult",
+      "s": "你多半会翻成「他们发现它越来越难」。it 是什么？前面没有东西可指，那就眼睛往后找 to——找到了 to afford。find it difficult to do 是一个固定的格式，it 是形式宾语，真正的宾语是后面的 to afford……，就是「做某事很难」。increasingly 是「越来越」。\n→ 他们发现越来越难"
+     },
+     {
+      "t": "to afford a place to live",
+      "s": "afford 你可能只认识「给得起」，这里是「负担得起」。a place to live 里的 to live 是不定式短语，跟在名词后面当定语，给 a place 补说明，就是「住的地方」。\n→ 负担得起住处"
+     }
+    ],
+    "sum": "他们发现，要负担得起一个住的地方越来越难了。",
+    "cmp": "和书上基本一样，书上说「住处」更简洁。"
+   }
+  },
+  "It's so hard to create fabric.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It's so hard",
+      "s": "你多半会翻成「它太难了」。念一遍，它是什么？前面找不到，那就眼睛往后找 to——找到了 to create。这里 It 是形式主语，真正的主语在后面。so 是「这么、如此」。\n→ 很难"
+     },
+     {
+      "t": "to create fabric",
+      "s": "to create fabric 才是真正的主语，to do 当主语，就是「做某事」这件事。create 你可能翻成「创造」，布料不是创造出来的，说「制作」就顺了。fabric 是「布料」。\n→ 制作布料"
+     }
+    ],
+    "order": "英文先说「很难」，再说是什么事；中文习惯先说事，再说「很困难」，所以把 to create fabric 提到前面当主语。",
+    "sum": "制作布料很困难。",
+    "cmp": "和书上一样。"
+   }
   },
   "The bone failed to knit correctly.": {
    "ph": [
@@ -212,7 +346,21 @@
      "b": "fail to do",
      "m": "未能做到"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The bone failed to knit",
+      "s": "failed to knit 是 fail to do，就是「没能做到某事」。knit 你多半只认识「编织」，翻成「骨头没能编织」。骨头怎么织？这里是「接合、愈合」，想想线头接起来的样子。\n→ 骨头没能愈合"
+     },
+     {
+      "t": "correctly",
+      "s": "这块照字面翻就行：correctly 是「正确地、好好地」，前面是否定，合起来就是「没长好」。\n→ 好好地"
+     }
+    ],
+    "sum": "骨头没有愈合好。",
+    "cmp": "和书上一样，书上说「愈合得不好」，意思相同。"
+   }
   },
   "A bird must weave these materials into a nest.": {
    "ph": [
@@ -235,7 +383,21 @@
      "b": "wave back",
      "m": "挥手回应"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The people on the bus waved",
+      "s": "你多半会翻成「在公共汽车上的人们挥舞」，少了对象。wave 在这里是「挥手」，人向外面挥手致意。on the bus 是跟在 people 后面补说明的，「公共汽车上的」。\n→ 公共汽车上的人挥手致意"
+     },
+     {
+      "t": "and we waved back",
+      "s": "and 后面是另一句话：we waved。back 是「回过来」，waved back 就是「也向他们挥手回应」。\n→ 我们也向他们挥手"
+     }
+    ],
+    "sum": "公共汽车上的人向我们挥手致意，我们也挥手回应。",
+    "cmp": "和书上基本一样，书上说「我们也向他们挥手」，意思相同。"
+   }
   },
   "The tide swept in quickly at the beach.": {
    "ph": [
@@ -283,6 +445,23 @@
     "cmp": "意思一样。书上把「极少量」提到前面，变成「需要的极少量的复杂物质」，有点绕；我拆成两个短句，更顺。"
    }
   },
+  "Vegetarian protein may be easier to absorb.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Vegetarian protein may be",
+      "s": "Vegetarian 在这里是形容词「素食的」。你多半会翻成「素食者蛋白」，其实是「素食来源的蛋白」，简称「素食蛋白」。may 是「可能」。\n→ 素食蛋白可能"
+     },
+     {
+      "t": "easier to absorb",
+      "s": "easier to absorb 里的 to absorb 是 to do，说明「在哪方面更容易」。你多半会翻成「更容易去吸收」，也行，但蛋白其实是被吸收的东西，中文直接说「更容易吸收」就行。\n→ 更容易吸收"
+     }
+    ],
+    "sum": "素食蛋白可能更容易吸收。",
+    "cmp": "和书上一样。"
+   }
+  },
   "Nutrition information is now provided on the back of most food products.": {
    "ph": [
     {
@@ -290,7 +469,39 @@
      "b": "on the back of",
      "m": "在……背面"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Nutrition information is now provided",
+      "s": "你多半会翻成「营养信息现在被提供」。念一遍，不顺吧？is provided 是被动，就是「信息被别人给出了」。中文少用「被」，直接说「有」或「标着」。Nutrition 在这里当形容词用，Nutrition information 就是「营养信息」。\n→ 现在有营养信息"
+     },
+     {
+      "t": "on the back of most food products",
+      "s": "on the back of 是「在……的背面」，most 是「大多数」。\n→ 在大多数食品的背面"
+     }
+    ],
+    "order": "英文先说有什么，再说在哪里；中文习惯先说「在哪里」，再说「有什么」，所以把地点提到前面。",
+    "sum": "现在大多数食品的背面都标有营养信息。",
+    "cmp": "和书上基本一样，书上说「有」，我说「标有」，更具体一点。"
+   }
+  },
+  "I don't want to be a nuisance, so tell me if you want to be alone.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "I don't want to be a nuisance",
+      "s": "want to be 是 want to do，「想要做某事」。nuisance 你可能没见过，翻成「我不想成为一个讨厌」，不通。nuisance 指「讨厌的人、麻烦的东西」，说白了就是「讨人嫌」。\n→ 我不想讨人嫌"
+     },
+     {
+      "t": "so tell me if you want to be alone",
+      "s": "so 是「所以」，tell me 是命令句，「告诉我」。if you want to be alone 是条件状语从句，就是「如果……」。你多半会按英文顺序翻成「所以告诉我，如果你想一个人」，意思对，但中文习惯先说条件。be alone 是「一个人待着」。\n→ 所以你要是想一个人待着，就说一声"
+     }
+    ],
+    "sum": "我不想讨人嫌，所以你要是想一个人待着，就跟我说一声。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "Since the 1940s, southern California has had a reputation for smog.": {
    "ph": [
@@ -322,7 +533,38 @@
      "b": "be intended to do",
      "m": "旨在"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The advertisements are intended to",
+      "s": "are intended 是被动，就是「广告被人这样打算了」。你多半会翻成「这些广告被打算去」，太硬。are intended to do 是一个固定格式，直接换成「旨在做某事」。\n→ 这些广告旨在"
+     },
+     {
+      "t": "improve the company's image",
+      "s": "这块照字面翻就行：improve 是「提高、改善」，image 是「形象」。\n→ 提高公司的形象"
+     }
+    ],
+    "sum": "这些广告旨在提高公司的形象。",
+    "cmp": "和书上一样。"
+   }
+  },
+  "I can imagine how many difficulties and obstacles you've conquered.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "I can imagine",
+      "s": "这块照字面翻就行：imagine 是「想象」，can imagine 是「我能想象得到」。后面跟的是想象的内容。\n→ 我可以想象"
+     },
+     {
+      "t": "how many difficulties and obstacles you've conquered",
+      "s": "这是一个宾语从句，就是 imagine 想象的内容。你多半会翻成「多少困难和障碍你克服了」，语序是反的。放回去：you've conquered how many difficulties，就是「你克服了多少困难」。how many 提到了前面，但在从句里仍是 conquered 的宾语。you've 是 you have，现在完成时，说的是「已经克服了」。\n→ 你克服了多少困难和障碍"
+     }
+    ],
+    "sum": "我能想象你已经克服了多少困难和障碍。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "He hasn't replied to any of my text messages.": {
    "ph": [
@@ -377,7 +619,22 @@
      "b": "look for",
      "m": "寻找，物色"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "We are looking for someone",
+      "s": "你多半会翻成「我们正在看某人」。look for 是一个整体，「寻找」，不是「看」。are looking 是进行时，表示正在找。someone 是「某个人」。\n→ 我们在物色一个人"
+     },
+     {
+      "t": "who is reliable and hard-working",
+      "s": "who 带的是定语从句，就是给前面的名词补一段说明。who 指谁？放回去试：候选是 We 和 someone。We is reliable？动词 is 是单数，We 要配 are，对不上。someone is reliable and hard-working，对得上。所以 who 指 someone。reliable 是「可靠的」，hard-working 是「勤奋的」。\n→ 可靠又勤奋的"
+     }
+    ],
+    "order": "英文先说「人」，再补说明；中文把说明挪到「人」前面，变成「可靠又勤奋的人」。",
+    "sum": "我们在物色一个可靠又勤奋的人。",
+    "cmp": "和书上一样，只是把「人」补在最后。"
+   }
   },
   "You will be liable for any damage caused.": {
    "ph": [
@@ -386,7 +643,22 @@
      "b": "be liable for",
      "m": "对……负责"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "You will be liable for",
+      "s": "liable 你可能只认识「易于……的」，翻成「你将容易……」。后面跟的是 damage，容易损坏？不通。be liable for 是搭配，「对……负责」，这里是要承担赔偿责任。\n→ 你必须负责"
+     },
+     {
+      "t": "any damage caused",
+      "s": "caused 是过去分词短语（-ed 短语），跟在名词后面，给它补说明，就是「被造成的」。补回去：any damage (that is) caused，「被造成的任何损失」，中文说「造成的任何损失」就顺了。any 是「任何」。\n→ 对造成的任何损失"
+     }
+    ],
+    "order": "英文先说「你要负责」，再说对什么负责；中文把「对……」提到前面，再说「负责」。",
+    "sum": "对造成的任何损失，你都必须负赔偿责任。",
+    "cmp": "意思一样。书上把「对……负赔偿责任」放在了后面，我调整了顺序。"
+   }
   },
   "Friends should always be faithful to each other.": {
    "ph": [
