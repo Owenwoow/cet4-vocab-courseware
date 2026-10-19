@@ -1,6 +1,6 @@
 # 协作技能统一成 dev- 一组，补需求澄清、会话交接和记忆读写规则
 
-- 状态：已决定，未执行
+- 状态：已完成（2026-10-19，本会话总控执行）
 - 日期：2026-10-19
 - 来源：本会话讨论（会话交接方式 → 技能化 → 命名 → idea-shaping 定位 → 项目记忆设计），用户确认"好的"
 - 范围：大部分改动在全局 `~/.claude`（claude-config 仓库），第 6、7 项在本项目；执行时两个仓库各自提交
@@ -49,3 +49,17 @@
 - 可借鉴：idea-shaping 的本机缓存（只读，改了会被同步覆盖）C:\Users\Owen_W\AppData\Local\Claude-Data\claude_pzs8sxrjxfjjc\local-agent-mode-sessions\skills-plugin\f8edefe8-edeb-45d2-8d90-abd889083f98\cbc53e1c-e5c6-46c7-8e32-92419904d788\skills\idea-shaping\SKILL.md
 - 本会话里已做：study-mate-skill 已移到回收站，claude-config 提交 3a8ca39（未推送）；本项目残留的 worktree 和两个 claude/ 分支已删除
 ```
+
+## 决定
+
+- 档位：按文件数是大档，但没派子代理，总控自己做。第 1–5 项都在 `~/.claude` 这个独立仓库里，子代理的 worktree 隔离覆盖不到它，而且第 1、4 项改同一个文件，内容又都是本会话讨论定下的
+- `~/.claude` 直接在 main 上分步提交，没开分支：claude-config 有自动同步程序（定时拉取、提交、推送），开分支的话，改到一半的状态可能被它提交出去；所以每一步都改完立刻提交，保证每个提交本身是完整的。本会话之前那个移除 study-mate-skill 的提交 3a8ca39 已经被它推送了
+- `dev-init` 同时认新旧两种待补全标记（`dev-init:` / `repo-init:`），已经用旧标记建好的项目（如 monitor-hop）不受影响
+- dev-task 的"继续"也能找到状态为「已决定，未执行」的计划（special-cases.md），开工时改成「进行中」
+- 没做、留给用户：`E:\Code\aws-manager\CLAUDE.md` 里还有几处 `/task`（那个项目有自己的旧版流程说明），不在这次范围内；idea-shaping 的 description 收窄、dev-clarify 实际试用，已写进 `docs/待人工验收.md`
+
+## 执行记录
+
+- claude-config（`~/.claude`）：9d0055b 改名 → 7f477ff 新建 dev-clarify、dev-handoff → d5547c6 协作规范补规则、技能索引
+- 本项目：分支 `docs/collab-tidy`（核心模块、两份文档挪进 plans、本计划状态），合回 main
+- 验证：可用技能列表里出现了 dev-task、dev-clarify、dev-handoff（dev-init 是纯手动，按设计不出现）；在 `~/.claude` 的 CLAUDE.md、workflows、skills 里搜旧名，只剩 dev-init 里兼容旧标记的那句说明

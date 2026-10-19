@@ -17,6 +17,15 @@
 - 新电脑上恢复音频目录：`git clone https://github.com/Owenwoow/cet4-vocab-audio.git audio-store`
 - 讲解视频时间点：`python pipeline/video_align.py` 重新对齐生成 `site/data/video/`（只在本机跑：要 B 站登录 cookie，环境变量 `BILI_COOKIE`，默认 `~/Downloads/bilibili_cookie.json`；字幕缓存在 `work/bili/`，没缓存时约 280 次请求、5 分钟）；`--check` 查视频是否下架并更新 `alive`（不用 cookie）；`--sample 3 --seed N` 每单元抽 3 词打印落点前后字幕。视频下架或有人重新上传：改 `pipeline/video_sources.json` 再重跑
 
+## 核心模块
+
+<!-- /dev-task 据此给分组定难度：碰到这些路径的组用更强的模型，合并后做代码审查；小改动碰到这里也按大改动走 -->
+
+- `site/srs.js`：复习规则，改错了复习安排会悄悄乱掉；改了要同步 `tests/srs.test.js`
+- `site/sync.js`：存储与云同步，所有进度都经过它，改错可能丢学习记录，或者两台设备互相覆盖
+- `site/sent.js` 开头的词组定位规则 + `pipeline/validate.py` 的 `check_notes`：两边必须一致，只改一边时页面上词组会错位，校验却照样通过
+- `pipeline/validate.py`：所有课数据的把关，部署工作流第一步就跑它；校验放松了，坏数据会直接上线
+
 ## 目录
 
 - `pipeline/`：流水线脚本和提示词（`prompts/`），`toc.json` 是手录的书目录
