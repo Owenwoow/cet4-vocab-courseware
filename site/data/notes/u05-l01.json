@@ -8,7 +8,22 @@
      "b": "be based on",
      "m": "基于"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It is a code of conduct",
+      "s": "你多半会翻成「它是一个行为的密码」。code 在这里不是「密码」，是「准则、规范」，conduct 是「行为」。\n→ 它是行为准则"
+     },
+     {
+      "t": "based on laws and ethics",
+      "s": "你可能想翻成「被基于法律和道德」。based on 是 -ed 短语（过去分词），跟在 code of conduct 后面补一段说明，就是「以……为基础的」。中文少用「被」，直接说「以……为基础」。ethics 是「道德」。\n→ 以法律和道德为基础的"
+     }
+    ],
+    "order": "「以法律和道德为基础的」说明的是 code，放到「行为准则」前面。",
+    "sum": "它是以法律和道德为基础的行为准则。",
+    "cmp": "和书上基本一样，书上是「基于……的行为准则」，意思相同。"
+   }
   },
   "The food industry has, in general, been firmly opposed to such direct government action.": {
    "ph": [
@@ -22,7 +37,21 @@
      "b": "be opposed to",
      "m": "反对"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The food industry has, in general, been firmly opposed to",
+      "s": "你多半会翻成「食品行业已经，总的来说，被坚决反对」。念一遍就乱了。两个逗号夹着的 in general 是插入语，就是中途插一句嘴，先拿掉它读：has been firmly opposed to。be opposed to 整体就是「反对」，后面跟反对的对象，别当成被动。in general 是「总的来说」。\n→ 总的来说，食品行业一直坚决反对"
+     },
+     {
+      "t": "such direct government action",
+      "s": "你可能想翻成「这样的直接的政府行动」。名词堆在一起，从后往前翻：government action 是「政府的行动」，direct 是「直接的」，such 是「这种」。\n→ 这种政府的直接行动"
+     }
+    ],
+    "sum": "总的来说，食品行业一直坚决反对政府的这类直接行动。",
+    "cmp": "书上的「这种直接行动」漏掉了 government，原句说的是政府出手，补上「政府」更准确。"
+   }
   },
   "You will be instructed where to go when the plane is ready.": {
    "ph": [
@@ -31,7 +60,22 @@
      "b": "be instructed",
      "m": "被通知"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "You will be instructed where to go",
+      "s": "你多半会翻成「你将被指示去哪里」。will be instructed 是被动，就是「你被别人怎么样了」，中文少用「被」，把人请出来：有人会通知你。instruct 在这里是「通知、指示」。where to go 是「疑问词 + to do」，就是「去哪里」，是通知的内容。\n→ 会有人通知你去哪里"
+     },
+     {
+      "t": "when the plane is ready",
+      "s": "你可能想翻成「当飞机准备好」。when 带的是时间状语从句，就是「……的时候」。注意主句是 will，从句却用 is ready：英文说将来的时间，从句习惯用现在时，翻成中文不用管。\n→ 飞机准备好的时候"
+     }
+    ],
+    "order": "英文把「什么时候」放在后面，中文习惯先说时间，所以把「飞机准备好时」提到前面。",
+    "sum": "飞机准备好时，会有人通知你去哪里。",
+    "cmp": "几乎一样，书上的「何处」比「哪里」书面一点。"
+   }
   },
   "He commanded his men to retreat.": {
    "ph": [
@@ -40,7 +84,17 @@
      "b": "command sb. to do",
      "m": "命令某人做某事"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He commanded his men to retreat",
+      "s": "你多半会翻成「他命令了他的人去撤退」。意思对，但要认出结构：眼睛盯住 to，command sb. to do 就是「命令某人做某事」，to retreat 是 to do 短语，说的是被命令的内容。his men 直接说「手下」就行。\n→ 他命令手下撤退"
+     }
+    ],
+    "sum": "他命令手下撤退。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "They told him the military exercise was over.": {
    "ph": [
@@ -49,7 +103,21 @@
      "b": "be over",
      "m": "结束"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They told him",
+      "s": "你多半会翻成「他们告诉了他」，没错。但要看出 told him 后面直接跟了一整句话，中间省掉了 that：told him (that) the military exercise was over。这是省略了 that 的宾语从句，就是「告诉的内容」。\n→ 他们告诉他"
+     },
+     {
+      "t": "the military exercise was over",
+      "s": "你可能想翻成「军事练习是结束的」。exercise 在 military exercise 里是「演习」，不是「练习」。be over 整体是「结束」。was 用过去时，是因为前面的 told 是过去，跟着用过去（时态呼应）。\n→ 军事演习结束了"
+     }
+    ],
+    "sum": "他们告诉他，军事演习已经结束了。",
+    "cmp": "和书上一样。"
+   }
   },
   "Closing post offices is one of several proposals the Postal Service has put forth recently to cut costs.": {
    "ph": [
@@ -110,7 +178,22 @@
      "b": "push … forward",
      "m": "推动……前进"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It is the force",
+      "s": "这块照字面翻就行：the force 是「那种力量」。\n→ 它是那种力量"
+     },
+     {
+      "t": "that pushes human society forward",
+      "s": "你多半会翻成「那推动人类社会向前」。that 带的是定语从句，就是给前面的名词补一段说明。that 指谁？往前找最近的名词：the force。放回去试：the force pushes human society forward，力量推动社会前进，说得通。push … forward 要眼睛往后找 forward：推动……前进。\n→ 推动人类社会前进的"
+     }
+    ],
+    "order": "英文把说明放在 force 后面，中文把「推动人类社会前进的」放到「力量」前面。",
+    "sum": "它是推动人类社会前进的力量。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Just keep telling yourself that it won't last forever.": {
    "ph": [
@@ -119,7 +202,21 @@
      "b": "keep doing",
      "m": "不停地做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Just keep telling yourself",
+      "s": "你多半会翻成「只是继续告诉你自己」。念一遍，怪吧？keep telling 是 keep + -ing，就是「一直做某事」；Just 在这里是「只管」的语气。整句没有主语，是命令、劝告的口气。\n→ 只管一直告诉自己"
+     },
+     {
+      "t": "that it won't last forever",
+      "s": "你可能想翻成「那它不会永远持续」。that 后面是一整句话，是 tell sb. that… 里「告诉的内容」，叫宾语从句。last 在这里是动词「持续」，不是「最后」。won't 是 will not，说的是将来。\n→ 这不会永远持续下去"
+     }
+    ],
+    "sum": "只管一直告诉自己：这不会永远持续下去。",
+    "cmp": "书上译成「不会一直都是这样的」，意思一样，更口语。"
+   }
   },
   "I'd like to introduce you to the world's foremost authority on the subject.": {
    "ph": [
@@ -133,7 +230,22 @@
      "b": "authority on",
      "m": "……方面的权威"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "I'd like to introduce you to",
+      "s": "你多半会翻成「我会喜欢介绍你」。念一遍，怪吧？I'd 是 I would，would like to do 是客气地说「我想……」，这里没有 if 条件，不是虚拟，只是礼貌的口气。introduce you to 要眼睛往后找 to：把你介绍给谁。\n→ 我想把你介绍给"
+     },
+     {
+      "t": "the world's foremost authority on the subject",
+      "s": "你可能想翻成「世界的最前面的权威在这个主题上」。authority 在这里不是「权力」，而是「权威、专家」；authority on 是「……方面的权威」；foremost 是「最重要的、首屈一指」。\n→ 该学科全世界首屈一指的专家"
+     }
+    ],
+    "order": "英文把「哪方面」放在最后，中文把「该学科」提到「专家」前面。",
+    "sum": "我想把你介绍给该领域全世界首屈一指的专家。",
+    "cmp": "几乎一样，书上用「学科」，我用了「领域」，两个都行。"
+   }
   },
   "It is impossible to foresee how life will work out.": {
    "ph": [
@@ -142,7 +254,22 @@
      "b": "work out",
      "m": "发展"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It is impossible to foresee",
+      "s": "你多半会翻成「它是不可能的去预见」。念一遍，别扭吧？句首 It 后面跟 to do，先想形式主语：It 只是占位，真正的主语是 to foresee…，也就是「预见……这件事」。foresee 拆开是 fore（前）+ see（看），就是「预见」。\n→ 预见……是不可能的"
+     },
+     {
+      "t": "how life will work out",
+      "s": "你可能想翻成「生活将如何工作出来」。work out 在这里不是「工作」，是「发展、进展」。how 带的是宾语从句，就是 foresee 的内容：生活将怎样发展。\n→ 生活将如何发展"
+     }
+    ],
+    "order": "先说「预见……」，把它放在句首，再补「是不可能的」，这样中文读起来最顺。",
+    "sum": "预知人生将如何发展是不可能的。",
+    "cmp": "意思一样，书上把 life 译成「生命」，放在「如何发展」前面，用「人生」更顺口。"
+   }
   },
   "The forecast assumes continued improvements in yields.": {
    "ph": [
@@ -160,7 +287,22 @@
      "b": "cast a shadow",
      "m": "投下阴影"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Someone was standing in the dark shadow",
+      "s": "这块照字面翻就行。was standing 是进行时，就是「正站着」，不是被动。\n→ 有人站在昏暗的阴影里"
+     },
+     {
+      "t": "cast by the light",
+      "s": "你多半会翻成「被灯光投掷」。念一遍，怪吧？cast 在这里是过去分词（cast 的三种形式长得一样），cast by the light 是 -ed 短语，跟在 shadow 后面补一段说明，就是「被灯光投下的」。cast a shadow 是「投下阴影」。中文少用「被」，说成「灯光投下的」。\n→ 灯光投下的"
+     }
+    ],
+    "order": "英文把说明放在 shadow 后面，中文把「灯光投下的」提到「阴影」前面。",
+    "sum": "有人站在灯光投下的昏暗阴影里。",
+    "cmp": "意思一样，书上没有译出 dark，我多了一个「昏暗」。"
+   }
   },
   "How can you predict where the ball you tossed will land?": {
    "ph": [],
@@ -213,7 +355,21 @@
      "b": "be deprived of",
      "m": "被剥夺"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The prisoner was deprived of his civil liberty",
+      "s": "你多半会翻成「囚犯被剥夺了他的公民自由」。was deprived 是被动，就是「他被别人怎么样了」。deprive A of B 眼睛往后找 of：剥夺 A 的 B，A 是 the prisoner，B 是 civil liberty。\n→ 这名囚犯被剥夺了公民自由"
+     },
+     {
+      "t": "for three years",
+      "s": "这块照字面翻就行：for 加一段时间，就是「持续多久」。\n→ 长达三年"
+     }
+    ],
+    "sum": "这名囚犯被剥夺公民自由长达三年。",
+    "cmp": "和书上基本一样，「长达三年」把时间长度说得很紧凑。"
+   }
   },
   "Writing poetry liberated her from the routine of everyday life.": {
    "ph": [
@@ -222,7 +378,21 @@
      "b": "liberate sb. from sth.",
      "m": "使某人从……中解放出来"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Writing poetry liberated her",
+      "s": "你多半会翻成「写诗解放了她」。意思对，但要认出 Writing 开头：-ing 开头当主语，就是「做某事」这件事，所以是「写诗这件事」让她怎么样。英文爱让事情当主语，中文可以说「写诗让她……」。\n→ 写诗使她解放出来"
+     },
+     {
+      "t": "from the routine of everyday life",
+      "s": "liberate sb. from sth. 眼睛往后找 from：使某人从某事中解放。你可能想翻成「日常生活的常规」，太硬了。routine 在这里是名词，指一成不变的例行公事，说白了就是「日复一日的老样子」。\n→ 从日常生活的例行公事中"
+     }
+    ],
+    "sum": "写诗让她摆脱了日常生活的千篇一律。",
+    "cmp": "意思一样，书上的「从……中解放出来」更贴近原文结构，我改成「摆脱」，更口语。"
+   }
   },
   "See if there was a deliberate cover-up of the problem.": {
    "ph": [
@@ -231,7 +401,21 @@
      "b": "see if",
      "m": "看看是否"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "See if",
+      "s": "你多半会翻成「看，如果」。念一遍，怪吧？if 在 see 后面不是「如果」，是「是否」，带的是宾语从句，就是「看的内容」。整句没有主语，是祈使句。\n→ 看看是否"
+     },
+     {
+      "t": "there was a deliberate cover-up of the problem",
+      "s": "你可能想翻成「有一个故意的问题的掩盖」。there was 就是「有」。deliberate 在这里是形容词「故意的」。cover-up 是名词「掩盖」，中文更爱用动词：把名词换成动词，说成「有人故意掩盖了问题」。of the problem 说的是掩盖的对象。\n→ 有人故意掩盖了问题"
+     }
+    ],
+    "sum": "看看是不是有人故意掩盖了这个问题。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "Oh, and they'd give me two months of paid vacation with a very generous salary.": {
    "ph": [
@@ -242,6 +426,23 @@
     }
    ]
   },
+  "It doesn't mean it's all good news for future food.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It doesn't mean it's all good news",
+      "s": "你多半会翻成「它不意味着它是全部好消息」。念一遍，两个「它」堆在一起很怪。mean 后面省略了 that，补回来是 mean (that) it's all good news，这是宾语从句，就是「意味着的内容」。两个 it 都不用硬翻，说成「这并不意味着都是好消息」就顺了。\n→ 这并不意味着都是好消息"
+     },
+     {
+      "t": "for future food",
+      "s": "你可能想翻成「为了未来的食物」。for 在这里是「对……来说」。\n→ 对未来的食品来说"
+     }
+    ],
+    "sum": "这并不意味着对未来的食品来说全是好消息。",
+    "cmp": "意思一样，书上多了个「这对」，我省掉了。"
+   }
+  },
   "There are various means the consumers may use to gain satisfaction.": {
    "ph": [
     {
@@ -249,7 +450,26 @@
      "b": "gain satisfaction",
      "m": "获得满足"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "There are various means",
+      "s": "你多半会翻成「有各种意思」。放回去不通：means 在这里是名词「方式、手段」，单复数同形，various means 是复数，所以前面用 are。There are 就是「有」。\n→ 有各种方式"
+     },
+     {
+      "t": "the consumers may use",
+      "s": "你可能想翻成「消费者可能使用」，然后和前面断开了。注意 means 后面省略了 that / which，补回来是 means (that) the consumers may use，这是定语从句，就是给 means 补一段说明。放回去试：消费者使用 means，对。may 在这里是「可以」。\n→ 消费者可以使用的"
+     },
+     {
+      "t": "to gain satisfaction",
+      "s": "你多半会翻成「去获得满足」。to gain 是 to do 短语，表示目的，就是「为了……」。gain satisfaction 是「获得满足」。\n→ 来获得满足"
+     }
+    ],
+    "order": "「消费者可以使用的」是补充说明 means 的，中文要放到「方式」前面。",
+    "sum": "消费者可以用各种方式来获得满足。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "The criticism the author received from his readers changed him.": {
    "ph": [],
@@ -285,7 +505,25 @@
      "b": "effective in",
      "m": "在……方面有效"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Decentralisation of authority",
+      "s": "你多半会翻成「权力的去中心化」，太拗口。decentralisation 拆开：de（去掉）+ central（中心）+ -isation（名词后缀），就是「把权力从中心分出去」。authority 在这里是「权力」。\n→ 权力下放"
+     },
+     {
+      "t": "was also found to be more effective",
+      "s": "你可能想翻成「也被发现是更有效的」。was found to be 是被动，就是「被人发现是……」，书上就保留了「被发现」。想更口语，把人请出来：「人们发现」。more effective 是「更有效」。\n→ 也被发现更为有效"
+     },
+     {
+      "t": "in military operations",
+      "s": "这块照字面翻就行：in 在这里是「在……方面、在……中」。\n→ 在军事行动中"
+     }
+    ],
+    "sum": "人们还发现，在军事行动中，权力下放更有效。",
+    "cmp": "意思一样。书上保留了被动，更贴近英文；我改成「人们发现」，更像平时说话。"
+   }
   },
   "But sharing our experiences in an authentic way to connect with other people is what makes us interesting.": {
    "ph": [
@@ -331,7 +569,17 @@
      "b": "make an apology to sb.",
      "m": "向某人道歉"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He wanted to make a sincere apology to Jimmy",
+      "s": "你多半会翻成「他想做一个真诚的道歉给吉米」。念一遍，中文不说「做道歉」。wanted to make 是 to do 短语，「想要做」。make an apology to sb. 整体就是「向某人道歉」，名词 apology 换回动词；sincere 修饰名词，换成副词「真诚地」。\n→ 他想向吉米真诚地道歉"
+     }
+    ],
+    "sum": "他想向吉米真诚地道歉。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "It may prevent people from developing a genuine sense of community.": {
    "ph": [
@@ -350,7 +598,21 @@
      "b": "a sense of",
      "m": "……意识"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It may prevent people from developing",
+      "s": "你多半会翻成「它可能防止人们从发展」。念一遍，乱了吧？prevent sb. from doing，眼睛往后找 from：阻止某人做某事，developing 是 from 后面的 -ing，就是「阻止人们去……」。may 是「可能」。\n→ 它可能会阻碍人们形成"
+     },
+     {
+      "t": "a genuine sense of community",
+      "s": "你可能想翻成「一种真正的社区的感觉」。a sense of 是「……意识、……感」，community 是「社区、群体」，genuine 是「真正的」。\n→ 真正的社区意识"
+     }
+    ],
+    "sum": "它可能会阻碍人们形成真正的社区意识。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "I had heard that genius could show itself at an early age.": {
    "ph": [
@@ -409,7 +671,21 @@
      "b": "focus on",
      "m": "侧重于"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The majority of previous research",
+      "s": "你多半会翻成「大多数的先前的研究」。the majority of 是「大部分」，previous 是「之前的」。research 是不可数名词，所以后面用单数 has。\n→ 之前的研究大部分"
+     },
+     {
+      "t": "has focused on how we learn and remember new information",
+      "s": "你可能想翻成「专注于如何我们学习」，语序乱了。has focused 是现在完成时，就是「一直在侧重」。focus on 眼睛往后找 on：侧重于……。how 带的是宾语从句，就是 on 后面的内容：我们如何学习和记忆新信息。learn 和 remember 并列，共用 we。\n→ 一直侧重于我们如何学习和记忆新信息"
+     }
+    ],
+    "sum": "之前的研究大多侧重于我们如何学习和记忆新信息。",
+    "cmp": "和书上一样。"
+   }
   },
   "Absorbing new information is helpful in making better decisions prior to action.": {
    "ph": [
@@ -423,7 +699,22 @@
      "b": "prior to",
      "m": "在……之前"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Absorbing new information is helpful",
+      "s": "你多半会翻成「吸收新信息是有帮助的」，意思对。关键是认出 Absorbing new information 是整个主语：-ing 开头当主语，就是「做某事」这件事。\n→ 吸收新信息有帮助"
+     },
+     {
+      "t": "in making better decisions prior to action",
+      "s": "helpful in doing 是「在做某事方面有帮助」，in making 就是 in + -ing。prior to 你可能当成「优先于」，其实 prior to 就是 before，这里的 to 是介词，后面跟名词 action。decisions 是「决定」。\n→ 有助于在行动前做出更好的决定"
+     }
+    ],
+    "order": "把「在行动前」提到「做出更好的决定」前面，中文更顺。",
+    "sum": "吸收新信息有助于在行动前做出更好的决定。",
+    "cmp": "和书上一样。"
+   }
   },
   "After mail service stops due to weather, the agency's top priority is ensuring that employees are safe.": {
    "ph": [
@@ -497,7 +788,21 @@
      "b": "be reduced to",
      "m": "沦为，处于"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The enemy forces",
+      "s": "你多半会翻成「敌人的力量」。forces 用复数，指「军队、部队」，不是「力量」。\n→ 敌军"
+     },
+     {
+      "t": "were reduced to absolute inferiority",
+      "s": "你可能想翻成「被减少到绝对的劣势」，念着怪：减少说的是数量，劣势是状态。were reduced 是被动，就是「被别人弄成了……」；be reduced to 整体是「沦为、落到……的地步」。inferiority 是「劣势」。\n→ 沦为绝对劣势"
+     }
+    ],
+    "sum": "敌军已处于绝对劣势。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "They tend to have a sense of superiority over their peers.": {
    "ph": [
@@ -516,7 +821,21 @@
      "b": "superiority over",
      "m": "胜过"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They tend to have",
+      "s": "你多半会翻成「他们倾向于有」。意思没错，但有点书面。tend to do 就是「往往会做」，眼睛盯住 to 后面的动词。\n→ 他们往往会有"
+     },
+     {
+      "t": "a sense of superiority over their peers",
+      "s": "你可能想翻成「对他们的同龄人的一种优越的感觉」，太长。a sense of superiority 就是「优越感」；眼睛盯住 over：superiority over 是「胜过、高于」，peers 是「同龄人」。\n→ 比同龄人更有优越感"
+     }
+    ],
+    "sum": "他们往往会觉得自己比同龄人更优越。",
+    "cmp": "意思一样，书上的「更有优越感」更贴近原文。"
+   }
   },
   "This is a family who can't communicate with each other.": {
    "ph": [
@@ -525,7 +844,44 @@
      "b": "communicate with",
      "m": "与……沟通"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "This is a family",
+      "s": "这块照字面翻就行。\n→ 这是一个家庭"
+     },
+     {
+      "t": "who can't communicate with each other",
+      "s": "你多半会把 who 翻成「谁」，成了「这是一个谁不能互相沟通的家庭」，不通。who 带的是定语从句，就是给前面的名词补一段说明。who 指谁？往前找：This 不行（this can't communicate 说不通），a family 可以，家庭里的人无法沟通。communicate with 是「与……沟通」，each other 是「彼此」。\n→ 成员间彼此无法沟通的"
+     }
+    ],
+    "order": "把「成员间彼此无法沟通的」放到「家庭」前面。",
+    "sum": "这是一个成员之间无法沟通的家庭。",
+    "cmp": "和书上基本一样。"
+   }
+  },
+  "Mobile telecommunications capacity is expected to double in Shanghai this year.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Mobile telecommunications capacity",
+      "s": "你多半会翻成「移动的电信能力」。三个名词堆在一起，从后往前翻：capacity 是「容量」，telecommunications 是「通信」，mobile 是「移动的」。\n→ 移动通信容量"
+     },
+     {
+      "t": "is expected to double",
+      "s": "你可能想翻成「被期望成双」。is expected 是被动，expected to do 就是「预计会做」。double 在这里是动词，「翻一番」。\n→ 预计将翻一番"
+     },
+     {
+      "t": "in Shanghai this year",
+      "s": "这块照字面翻就行：地点加时间。\n→ 今年在上海"
+     }
+    ],
+    "order": "地点和时间提到句首，中文更顺：先说今年、上海，再说什么东西怎么样。",
+    "sum": "今年，上海的移动通信容量预计将翻一番。",
+    "cmp": "和书上一样。"
+   }
   },
   "He called the woman and left her a message.": {
    "ph": [
@@ -543,7 +899,26 @@
      "b": "fear of",
      "m": "对……的恐惧"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Japan says",
+      "s": "你多半会翻成「日本说」，没错。但要看出 says 后面省略了 that，后面一整句话是宾语从句，就是「说的内容」。\n→ 日本表示"
+     },
+     {
+      "t": "fear of disease is its main reason",
+      "s": "你可能想翻成「疾病的恐惧」，不通顺。fear of 是「对……的恐惧」，of 在这里是「对」。its 是「它的」，指日本。\n→ 对疾病的恐惧是其主要原因"
+     },
+     {
+      "t": "to block fresh imports",
+      "s": "to block 是 to do 短语，跟在名词 reason 后面补充说明，就是「……的原因」。你多半会翻成「去阻止新鲜进口」，放回 reason 后面：阻止生鲜进口的原因，说得通。\n→ 阻止生鲜进口的"
+     }
+    ],
+    "order": "to block 说明的是 reason，中文要把「阻止生鲜进口的」放到「主要原因」前面。",
+    "sum": "日本表示，对疾病的恐惧是它阻止生鲜进口的主要原因。",
+    "cmp": "和书上一样。"
+   }
   },
   "Blue is associated with the positive qualities of trust, quietness and calm.": {
    "ph": [
@@ -552,7 +927,60 @@
      "b": "be associated with",
      "m": "与……有关"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Blue is associated with",
+      "s": "你多半会翻成「蓝色被联系于」。念一遍，别扭吧？is associated 是被动，就是「被别人怎么样了」。associate A with B，眼睛往后找 with：把 A 和 B 联系起来，be associated with 整体是「与……有关」。\n→ 蓝色与……有关"
+     },
+     {
+      "t": "the positive qualities of trust, quietness and calm",
+      "s": "你可能想翻成「信任、安静和冷静的积极品质」。quality 在这里是「品质、特质」。trust、quietness、calm 三个并列，说明是哪些品质。\n→ 信任、安静和冷静这些积极的品质"
+     }
+    ],
+    "sum": "蓝色与信任、安静和冷静这些积极的品质有关。",
+    "cmp": "和书上基本一样。"
+   }
+  },
+  "Being sociable looks like a good way to add years to your life.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Being sociable",
+      "s": "你多半会翻成「是善于交际」。-ing 开头当主语，就是「做某事」这件事，Being sociable 是「善于交际这件事」。\n→ 善于交际"
+     },
+     {
+      "t": "looks like a good way",
+      "s": "你可能想翻成「看起来像一个好的路」。way 在这里是「方法」。look like 是「看起来像」，说成「似乎是」更顺。\n→ 似乎是个好办法"
+     },
+     {
+      "t": "to add years to your life",
+      "s": "to add 是 to do 短语，跟在 way 后面补充说明，就是「……的方法」。add A to B 眼睛往后找 to：把 years 加到 life 上。你多半会翻成「增加年份到你的生活」，说白了就是「延长寿命」。\n→ 延长你的寿命的"
+     }
+    ],
+    "order": "「延长寿命的」说明的是 way，放到「好办法」前面。",
+    "sum": "善于交际似乎是延长寿命的好办法。",
+    "cmp": "和书上一样。"
+   }
+  },
+  "Frankly, Mary is not what I'd call \"easy-going\".": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Frankly, Mary is not",
+      "s": "这块照字面翻就行。Frankly 放在句首，用逗号隔开，是说话人的态度，「坦率地说」。\n→ 坦率地说，玛丽不是"
+     },
+     {
+      "t": "what I'd call \"easy-going\"",
+      "s": "你多半会翻成「我会称呼为随和的」，念一遍，怪吧？what I'd call 是固定说法，就是「我所说的……」。I'd 是 I would，这里没有 if 条件，也不和事实相反，不是虚拟，只是说话人委婉地给出自己的说法。what 带的是名词性从句，整块当 is not 后面的表语，就是「她不是那种……的人」。\n→ 我所说的「随和」的人"
+     }
+    ],
+    "sum": "坦率地说，玛丽算不上那种「随和」的人。",
+    "cmp": "意思一样，书上用「我所称的」，更贴近 what I'd call。"
+   }
   },
   "He had no choice but to ally himself with the new movement.": {
    "ph": [
@@ -566,7 +994,51 @@
      "b": "ally oneself with",
      "m": "与……结盟"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He had no choice but to",
+      "s": "你多半会翻成「他没有选择但是去结盟」。念一遍，怪吧？but 在这里是「除了」，have no choice but to do 是固定搭配，就是「除了做某事别无选择」，看到就整体换。\n→ 他别无选择，只能"
+     },
+     {
+      "t": "ally himself with the new movement",
+      "s": "ally oneself with 眼睛往后找 with：与……结盟。himself 是反身代词，ally himself 就是「使自己与……结盟」，中文不用再说「自己」。\n→ 与新运动结盟"
+     }
+    ],
+    "sum": "他别无选择，只能与这场新运动结盟。",
+    "cmp": "意思一样，书上是「除了与新运动结盟别无选择」，我把 but 翻成「只能」。"
+   }
+  },
+  "But having a large network and some promotional skills may be more crucial.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "But having a large network and some promotional skills",
+      "s": "你多半会翻成「但有一个大网络和一些促销技巧」。But 放在句首是「但是」。having 开头也是 -ing 当主语，就是「拥有……这件事」；a large network 和 some promotional skills 用 and 并列，都是 having 的宾语。promotional 是「促销的、推广的」。\n→ 但拥有庞大的网络和一些促销技巧"
+     },
+     {
+      "t": "may be more crucial",
+      "s": "这块照字面翻就行。may 是「可能」，crucial 是「关键的」，more crucial 是「更关键」。\n→ 可能更为关键"
+     }
+    ],
+    "sum": "但拥有庞大的网络和一些促销技巧，可能更为关键。",
+    "cmp": "意思一样，书上用「更为重要」，crucial 比「重要」语气更强，所以我用「关键」。"
+   }
+  },
+  "The order asks them to hack their own devices.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The order asks them to hack their own devices",
+      "s": "你多半会翻成「命令问他们去黑他们自己的设备」。ask sb. to do 是「要求某人做某事」，to hack 是 to do 短语，说的是被要求做的事。hack 在这里是「入侵」。their own devices 里的 own 是加强语气的，「他们自己的设备」。\n→ 该命令要求他们入侵自己的设备"
+     }
+    ],
+    "sum": "该命令要求他们入侵自己的设备。",
+    "cmp": "和书上完全一样。"
+   }
   }
  }
 }

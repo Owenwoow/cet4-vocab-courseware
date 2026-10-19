@@ -8,7 +8,39 @@
      "b": "in one's opinion",
      "m": "在我看来"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "In my opinion",
+      "s": "这块照字面翻就行：in my opinion 是「在我看来」，放在句首，后面用逗号隔开，先交代「这是我的看法」。\n→ 在我看来"
+     },
+     {
+      "t": "the outcome of the game shouldn't matter most",
+      "s": "matter 你多半会当名词「事情」，翻成「不应该事情最多」，念一遍，不通。这里 matter 是动词，「重要、要紧」，matter most 就是「最重要」。outcome 是「结果」，shouldn't 是「不应该」。\n→ 比赛的结果不应该是最重要的"
+     }
+    ],
+    "sum": "在我看来，比赛的结果不应该是最重要的。",
+    "cmp": "意思一样，书上写「不应是」，更书面一点。"
+   }
+  },
+  "Outbreaks of rain are expected in the afternoon.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Outbreaks of rain are expected",
+      "s": "你多半会翻成「雨的爆发被期待」。念一遍，中文不这么说。are expected 是被动，就是「被人预料到」，中文直接说「预计会……」。outbreak 是「突然发生」，outbreaks of rain 就是「（会）突然下起雨来」。\n→ 预计会有阵雨"
+     },
+     {
+      "t": "in the afternoon",
+      "s": "这块照字面翻就行：in the afternoon 是「在下午」。\n→ 在下午"
+     }
+    ],
+    "order": "英文把时间放在最后，中文习惯先说时间，所以把「下午」提到前面。",
+    "sum": "预计下午会有阵雨。",
+    "cmp": "书上直接说「下午将有暴雨」，没有把 are expected 单独译出来，也通顺；我多写了「预计」，因为英文是被动的「被预料到」。"
+   }
   },
   "It could be the breakthrough we've been looking for.": {
    "ph": [
@@ -17,7 +49,22 @@
      "b": "look for",
      "m": "寻找，寻求"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It could be the breakthrough",
+      "s": "你可能把 could 翻成「能够」，「它能够是突破」，念一遍，不通。这里没有 if，could 是在做推测，意思是「有可能是」，语气比直接说 is 缓和。breakthrough 是 break through 合成的名词，「突破」。\n→ 它有可能就是那个突破"
+     },
+     {
+      "t": "we've been looking for",
+      "s": "the breakthrough 后面直接跟了 we've been looking for，中间省略了 that，补回去是 the breakthrough (that) we've been looking for。这是定语从句，就是给前面的名词补一段说明。你多半会翻成「突破，我们一直在寻求」，放回去试：我们一直在找这个突破，对。中文要把这一段放到名词前面，用「的」连起来。\n→ 我们一直在寻求的"
+     }
+    ],
+    "order": "英文是「名词在前、说明在后」，中文要把说明挪到名词前面：「我们一直在寻求的突破」。",
+    "sum": "这可能就是我们一直在寻求的突破。",
+    "cmp": "和书上一样。"
+   }
   },
   "Focusing on output alone can have unintended consequences.": {
    "ph": [
@@ -26,7 +73,21 @@
      "b": "focus on",
      "m": "专注于，只关注"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Focusing on output alone",
+      "s": "Focusing 开头当主语，就是「做某事」这件事。focus on 是「专注于」。你多半会翻成「专注在产出单独」，alone 放在后面不顺。它是「仅仅、单单」的意思，翻的时候提到前面。\n→ 只关注产出"
+     },
+     {
+      "t": "can have unintended consequences",
+      "s": "你可能把 unintended 翻成「没有被打算的」。它是 un + intended，intended 是 -ed 形容词，「被打算的」，前面加 un 就是「没打算到的」，说白了「意想不到的」。consequences 是「后果」。\n→ 可能会产生意想不到的后果"
+     }
+    ],
+    "sum": "只关注产出，可能会带来意想不到的后果。",
+    "cmp": "和书上基本一样，只是我把 have 译成「带来」，书上译成「产生」，都行。"
+   }
   },
   "Focusing on effort is effective in helping children overcome frustration.": {
    "ph": [
@@ -40,7 +101,39 @@
      "b": "be effective in",
      "m": "在……方面有效"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Focusing on effort",
+      "s": "Focusing 开头当主语，就是「做某事」这件事。这块照字面翻就行：focus on 是「专注于」。\n→ 专注于努力"
+     },
+     {
+      "t": "is effective in helping children overcome frustration",
+      "s": "你多半会翻成「在帮助孩子克服挫折上是有效的」，能懂，但绕。be effective in 是「在……方面有效」，in 后面跟 helping，也就是「帮助」这件事。helping children overcome 里，help 后面可以省略 to，help sb. do 就是「帮某人做某事」。frustration 是「挫折感」。\n→ 在帮助孩子克服挫折方面是有效的"
+     }
+    ],
+    "order": "「有效」放到最后，再把「对……」放前面，中文会顺一些：「对帮助孩子克服挫折很有效」。",
+    "sum": "专注于努力，对帮助孩子克服挫折很有效。",
+    "cmp": "意思和书上一样。书上「专注于努力对帮助孩子克服挫折是有效的」，「是……的」有点硬，我把它说得更口语。"
+   }
+  },
+  "The wide diversity of Asian Americans was overlooked.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The wide diversity of Asian Americans",
+      "s": "这块照字面翻就行：diversity 是「多样性」，wide 是「广泛的」，说白了就是各种各样、差别很大。\n→ 亚裔美国人的广泛多样性"
+     },
+     {
+      "t": "was overlooked",
+      "s": "你可能想把 overlook 翻成「俯瞰」，它确实有这个意思（over 在上面 + look）。放回去试：多样性被俯瞰了？不通。这里是「没注意到」，也就是「忽视」。was overlooked 是被动，就是「它被别人怎么样了」；中文可以保留「被」，也可以让「人们」当主语。\n→ 被忽视了"
+     }
+    ],
+    "sum": "人们忽视了亚裔美国人的广泛多样性。",
+    "cmp": "意思一样，书上保留了「被」，也通顺。"
+   }
   },
   "He pulled out to overtake a truck.": {
    "ph": [
@@ -49,7 +142,39 @@
      "b": "pull out",
      "m": "驶出（车流）"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He pulled out",
+      "s": "你多半会翻成「他拉出来」，用在开车上不通。pull out 用在车上，是车从原来的位置「驶出」。\n→ 他驶出车流"
+     },
+     {
+      "t": "to overtake a truck",
+      "s": "to overtake 是 to do 短语，表示目的，就是「为了……」。overtake 是「超车」，直接指开车超过前面的车。你可能想翻成「去超过」，中文说「超过一辆卡车」就行。\n→ 为了超过一辆卡车"
+     }
+    ],
+    "sum": "他把车开出来，超过了一辆卡车。",
+    "cmp": "书上写「以超过一辆卡车」，「以」是文言的用法；我把「驶出」和「超车」连成两个先后的动作，更口语。"
+   }
+  },
+  "The patient overheard the news that he was seriously ill.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The patient overheard the news",
+      "s": "overhear 不是「过度听」。over 这里带着「偶然、不经意」的意思，所以是「无意中听到」。你多半会翻成「病人听到了消息」，漏了「无意」。\n→ 病人无意中听到了消息"
+     },
+     {
+      "t": "that he was seriously ill",
+      "s": "that 你可能当成定语从句的「那个」。放回去试：he was seriously ill 本身就是一句完整的话，that 在里面不当任何成分，所以这是同位语从句，就是用一整句话说明前面名词的具体内容：消息的内容就是「他病情严重」。中文要把这一段提到名词前面，用「的」连起来。\n→ 他病情严重的消息"
+     }
+    ],
+    "order": "英文是「消息在前，内容在后」，中文要把内容挪到前面：「他病情严重的消息」。",
+    "sum": "病人无意中听到了他病情严重的消息。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Obese people would be overwhelmed with anxiety.": {
    "ph": [
@@ -147,7 +272,38 @@
      "b": "gather together",
      "m": "聚集"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The kids were gathered together",
+      "s": "你多半会翻成「孩子们被聚集在一起」。意思对，但中文不爱用「被」。were gathered 是被动，就是「孩子们被别人怎么样了」，这里是被召集到一起，说白了「聚在了一起」。together 再加强一下「在一起」。\n→ 孩子们聚在一起"
+     },
+     {
+      "t": "in one room",
+      "s": "这块照字面翻就行：in one room 是「在一个房间里」。\n→ 在一个房间里"
+     }
+    ],
+    "sum": "孩子们都聚在一个房间里。",
+    "cmp": "意思一样。书上保留了被动的「被聚集」，我改成「聚在」，更像日常说话。"
+   }
+  },
+  "Taxes are low, so many businesses have their headquarters here.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Taxes are low",
+      "s": "这块照字面翻就行：税收（税率）低。\n→ 税收很低"
+     },
+     {
+      "t": "so many businesses have their headquarters here",
+      "s": "so 在这里连接前面的原因，是「所以」。have their headquarters here 你多半会翻成「他们有他们的总部在这里」，念一遍，啰嗦吧？their 不用重复译。headquarters 虽然带 s，意思是「总部」；把总部设在这里，说白了就是「在这里设总部」。\n→ 所以很多企业都把总部设在这里"
+     }
+    ],
+    "sum": "这里税收很低，所以很多企业把总部设在这里。",
+    "cmp": "和书上基本一样，书上多了「这里的」和「都」，语气强一点。"
+   }
   },
   "One quarter of teachers in an American city said that children in kindergartens had no time for playing freely.": {
    "ph": [
@@ -156,7 +312,74 @@
      "b": "have no time for",
      "m": "没有时间做……"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "One quarter of teachers in an American city",
+      "s": "你多半会翻成「一个四分之一的老师在一座美国城市」。one quarter of 是「……中的四分之一」，in an American city 说这些老师在哪，要放到 teachers 前面，用「的」连起来。\n→ 美国一座城市四分之一的教师"
+     },
+     {
+      "t": "said that children in kindergartens had no time",
+      "s": "said that 后面是宾语从句，就是「说的内容」。had 是跟着前面的 said 用了过去时，这是时态呼应，翻的时候按「现在没有时间」说就行。in kindergartens 是「在幼儿园里的」。\n→ 表示幼儿园的孩子没有时间"
+     },
+     {
+      "t": "for playing freely",
+      "s": "你可能想翻成「为了自由地玩」。放回去试：no time for 是一个整体，「没有时间做……」。for 是介词，后面跟 playing 这种 -ing，就是「玩」这件事，freely 是「自由地」。\n→ 自由玩耍"
+     }
+    ],
+    "sum": "美国一座城市有四分之一的教师表示，幼儿园的孩子没有时间自由玩耍。",
+    "cmp": "和书上基本一样。"
+   }
+  },
+  "People often fail to programme their routines beforehand.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "People often fail to programme",
+      "s": "你多半会翻成「人们经常失败去安排」，念一遍，别扭。fail to do 是一个整体，「没能做到……」。后面的 to programme 是 to do 短语，programme 在这里是动词，「安排、规划」。\n→ 人们往往不能安排"
+     },
+     {
+      "t": "their routines beforehand",
+      "s": "beforehand 放在句尾，是「事先」，修饰的是 programme（事先安排），不是 routines。routines 是「日常事务」。\n→ 他们的日常工作，事先"
+     }
+    ],
+    "order": "「事先」在英文里放最后，中文要把它挪到动词前面：「事先安排好」。",
+    "sum": "人们往往不能事先安排好自己的日常事务。",
+    "cmp": "和书上基本一样，我把「他们的」换成「自己的」，更自然。"
+   }
+  },
+  "He was corrupted by power and ambition.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "He was corrupted by power and ambition",
+      "s": "你多半会翻成「他被权力和野心腐化了」。能懂，但有点翻译腔。was corrupted 是被动，就是「他被别人（别的东西）怎么样了」，by 后面才是让他变坏的原因。中文习惯把原因请出来当主语：「权力和野心使他腐化堕落」。corrupt 是「使堕落」。\n→ 权力与野心使他腐化堕落"
+     }
+    ],
+    "order": "把 by 后面的「权力和野心」挪到句首当主语，被动就变成「使他……」。",
+    "sum": "权力和野心使他腐化堕落。",
+    "cmp": "和书上完全一样，书上就是这么转换的。"
+   }
+  },
+  "Bribing the boss is punishable.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Bribing the boss",
+      "s": "Bribing 开头当主语，就是「做某事」这件事。bribe 是动词，「贿赂」，bribing the boss 就是「贿赂老板这件事」。\n→ 贿赂老板"
+     },
+     {
+      "t": "is punishable",
+      "s": "你多半会翻成「是可惩罚的」，念一遍，不顺。punishable 是 punish（惩罚）加 -able（可以……的），就是「可以被惩罚的」，中文说「要受到惩罚」。\n→ 是要受到惩罚的"
+     }
+    ],
+    "sum": "贿赂老板是要受到惩罚的。",
+    "cmp": "和书上基本一样，书上写「应受到惩罚的」，更书面。"
+   }
   },
   "Her business went bankrupt while she was in prison.": {
    "ph": [
@@ -182,6 +405,23 @@
     "cmp": "书上是「她在监狱期间，她的生意破产了」，前后两个「她」，有点啰嗦，而且「她在监狱期间」不太通顺。「在她坐牢期间」更顺。"
    }
   },
+  "It will help many African countries reduce trade deficits.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It will help many African countries reduce",
+      "s": "你多半会翻成「它会帮助许多非洲国家，减少……」，两段断开了。help 后面跟人，再跟动词：help sb. do，是「帮某人做某事」，reduce 前面省略了 to。把它连起来读：帮助这些国家减少。\n→ 它将帮助许多非洲国家减少"
+     },
+     {
+      "t": "trade deficits",
+      "s": "这块照字面翻就行：trade 是「贸易」，deficit 是「赤字」，也就是花出去的比挣进来的多。\n→ 贸易赤字"
+     }
+    ],
+    "sum": "它将帮助许多非洲国家减少贸易赤字。",
+    "cmp": "和书上完全一样。"
+   }
+  },
   "The global economy continues to be disrupted by technology and other massive change.": {
    "ph": [
     {
@@ -205,6 +445,19 @@
     "cmp": "意思一样。书上是「持续被……所扰乱」，保留了被动，我这里换成「受到……冲击」，中文更自然。"
    }
   },
+  "They are deserted by their family.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "They are deserted by their family",
+      "s": "deserted 你可能认成「沙漠」。desert 当动词读成 /dɪˈzɜːt/，是「抛弃」。你多半会翻成「他们被他们的家人抛弃」，能懂，但「被」加两个「他们」太啰嗦。are deserted 是被动，就是「他们被别人怎么样了」，by 后面才是做这件事的人。中文可以让家人当主语，也可以保留「被」，把第二个「他们」去掉。\n→ 他们被家人抛弃了"
+     }
+    ],
+    "sum": "他们被家人抛弃了。",
+    "cmp": "和书上完全一样。"
+   }
+  },
   "Insert coins into the slot and press for a ticket.": {
    "ph": [
     {
@@ -217,7 +470,21 @@
      "b": "insert … into",
      "m": "把……插入"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Insert coins into the slot",
+      "s": "这句开头就是动词，是在下指令（祈使句），主语 you 省略了。你多半会翻成「插入硬币进入投币口」，不通。insert … into 要拆开看：把硬币放进投币口。\n→ 把硬币放进投币口"
+     },
+     {
+      "t": "and press for a ticket",
+      "s": "你可能翻成「按，为了票」，念一遍，是不是有点怪？for 在这里表示目的，press for a ticket 就是按一下，来取票。中文要补上动作的细节：按下按钮，取票。\n→ 按下按钮取票"
+     }
+    ],
+    "sum": "把硬币投入投币口，按下按钮取票。",
+    "cmp": "书上写「按钮取票」，把名词「按钮」直接当动词用，读起来有点怪；我补了「按下」，读起来顺一点。"
+   }
   },
   "Everything that goes into the dumps might be made into something useful.": {
    "ph": [
@@ -254,7 +521,25 @@
      "b": "be responsible for",
      "m": "对……负责"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Beverage companies should be responsible for",
+      "s": "你多半会翻成「饮料公司应该是负责任的」，后面接不上。be responsible for 是一个整体，「对……负责」，for 后面跟的就是要负责的事。\n→ 饮料公司应该负责"
+     },
+     {
+      "t": "collecting and reusing",
+      "s": "for 是介词，后面跟的是 -ing，就是「做某事」这件事。这里有两个 -ing 并列：collecting 是「收集」，reusing 是「重新使用」。你可能只盯着第一个，漏掉后面的 reusing。\n→ 收集和重新使用"
+     },
+     {
+      "t": "discarded plastic soda bottles",
+      "s": "discarded 是 discard 加 -ed，当形容词修饰后面的 bottles，就是「被丢弃的」。你多半会翻成「被丢弃了的」，太啰嗦，中文说「丢弃的」就够了。\n→ 丢弃的塑料汽水瓶"
+     }
+    ],
+    "sum": "饮料公司应该负责收集和重新使用丢弃的塑料汽水瓶。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "There's nothing but junk on the TV.": {
    "ph": [
@@ -264,6 +549,24 @@
      "m": "只有，仅仅"
     }
    ]
+  },
+  "Slavery was abolished in America in the 19th century.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Slavery was abolished",
+      "s": "你多半会翻成「奴隶制被废除了」。能懂，但没说是谁废除的。was abolished 是被动，就是「奴隶制被别人怎么样了」，中文可以保留「被」，也可以让后面的「美国」当主语，说成「废除了奴隶制」。abolish 是「废除」。\n→ 废除了奴隶制"
+     },
+     {
+      "t": "in America in the 19th century",
+      "s": "这块照字面翻就行：两个 in 连着，第一个是地点，第二个是时间。\n→ 美国在19世纪"
+     }
+    ],
+    "order": "英文把地点、时间放在最后，中文习惯先说「什么时候、在哪」，所以把它们提到前面，再接「废除了奴隶制」。",
+    "sum": "美国在19世纪废除了奴隶制。",
+    "cmp": "和书上完全一样，书上就是让「美国」当主语。"
+   }
   },
   "That may lead to nursing home abuse and age discrimination.": {
    "ph": [
@@ -286,7 +589,53 @@
      "b": "clash with",
      "m": "与……冲突"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Eight people were wounded",
+      "s": "你多半会翻成「八个人被伤害了」。were wounded 是被动，就是「八个人被别人怎么样了」，其实说的是结果：受了伤。中文不用「被」，直接说「有八人受伤」。\n→ 有八人受伤"
+     },
+     {
+      "t": "in a clash with border guards",
+      "s": "clash with 是一个整体，「与……冲突」。看到 clash，眼睛往后找 with：with border guards，和边防警卫冲突。in 在这里是「在……中」。\n→ 在与边防警卫的冲突中"
+     }
+    ],
+    "order": "英文先说结果、后说在哪里，中文习惯先交代场景，所以把「在与边防警卫的冲突中」提到前面。",
+    "sum": "在与边防警卫的冲突中，有八人受伤。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "It narrowly escaped a plane crash when turning around.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It narrowly escaped a plane crash",
+      "s": "你多半会翻成「它狭窄地逃脱了飞机撞击」。narrowly 不是「狭窄地」，是「勉强、差一点」。escape 是「逃过」，plane crash 是「飞机失事」，合起来是「险险躲过一场飞机失事」。\n→ 它险险躲过了一场飞机失事"
+     },
+     {
+      "t": "when turning around",
+      "s": "when 后面直接跟了 turning，没有主语。这是省略写法：when (it was) turning around，主语和前面的 It 是同一个，省掉了。turn around 是「转弯、掉头」。\n→ 在转弯的时候"
+     }
+    ],
+    "order": "英文先说结果、后说「什么时候」，中文习惯先说时间，所以把「转弯的时候」提到前面。",
+    "sum": "它在转弯的时候，险险躲过了一场飞机失事。",
+    "cmp": "书上译成「险些撞上飞机」，把 escaped 译成了「险些」，意思和「躲过飞机失事」不完全一样。我按字面保留 escape 的「躲过」。"
+   }
+  },
+  "His fishing boat got wrecked on a rock.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "His fishing boat got wrecked on a rock",
+      "s": "你多半会翻成「他的渔船被毁坏在一块岩石上」，念一遍，不顺。got wrecked 是 get + 过去分词，也是被动，比 was 更口语，常说「出了意外」。wreck 是「使失事」，on a rock 是「撞在礁石上」，两个合起来，中文有现成的说法：「触礁失事」。\n→ 他的渔船触礁失事了"
+     }
+    ],
+    "sum": "他的渔船触礁失事了。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "The glass bowl smashed into a thousand pieces.": {
    "ph": [
@@ -309,7 +658,17 @@
      "b": "find it … to do",
      "m": "觉得做某事……"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She found it much safer to use cash",
+      "s": "你多半会翻成「她发现它更安全使用现金」，it 没法翻。看到 found it + 形容词，眼睛往后找 to：真正发现的内容是 to use cash，it 只是先占着宾语的位置，不用翻。much 放在比较级前面是「……得多」。\n→ 她发现用现金安全得多"
+     }
+    ],
+    "sum": "她发现用现金安全得多。",
+    "cmp": "和书上基本一样，书上写「更安全」，没有译出 much 的「得多」。"
+   }
   },
   "He was ashamed of having asked such a silly question.": {
    "ph": [
@@ -318,7 +677,21 @@
      "b": "be ashamed of",
      "m": "为……感到羞愧"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He was ashamed of",
+      "s": "这块照字面翻就行：be ashamed of 是一个整体，「为……感到羞愧」，of 后面跟羞愧的原因。\n→ 他为……感到羞愧"
+     },
+     {
+      "t": "having asked such a silly question",
+      "s": "of 是介词，后面跟 having asked，这是 -ing 的完成式，就是「已经做过某事」，指「问过」这件事，比「感到羞愧」更早发生。你可能想翻成「有问过」，中文说「问了」就行。such a silly question 是「这样一个愚蠢的问题」。\n→ 问了这样一个愚蠢的问题"
+     }
+    ],
+    "sum": "他为问了这样一个愚蠢的问题而感到羞愧。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "They dashed into the classroom.": {
    "ph": [
@@ -350,7 +723,18 @@
      "b": "conceal … from",
      "m": "对……隐瞒"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He wanted to conceal something from his parents",
+      "s": "wanted to conceal 是 to do，want to do 就是「想做某事」。你多半会翻成「他想隐藏一些东西从他的父母」，念一遍，「从」不通。conceal 是「隐瞒」，看到它，眼睛往后找 from：conceal A from B，对 B 隐瞒 A。A 是 something，B 是 his parents。\n→ 他想对父母隐瞒一些事情"
+     }
+    ],
+    "order": "把 from 后面的「父母」提到前面，用「对……」连起来：「对父母隐瞒一些事情」。",
+    "sum": "他想对父母隐瞒一些事情。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "It's important to reveal yourself to friends.": {
    "ph": [
@@ -359,7 +743,22 @@
      "b": "reveal oneself to sb.",
      "m": "向……展示自己"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It's important",
+      "s": "你多半会翻成「它是重要的」。放回去试：「它」指什么？后面没有。看到 It's + 形容词，眼睛往后找 to：真正的主语是 to reveal yourself to friends，It 只是先占着主语的位置（形式主语），不用翻。\n→ 很重要的是"
+     },
+     {
+      "t": "to reveal yourself to friends",
+      "s": "这块照字面翻就行：reveal yourself 是「展示自己」，to friends 是展示的对象，「向朋友」。\n→ 向朋友展示自己"
+     }
+    ],
+    "order": "英文先说「重要」、再说内容；中文习惯把内容放前面当主语：「向朋友展示自己是很重要的」。",
+    "sum": "向朋友展示自己是很重要的。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "I could never forgive Mike for betraying a confidence.": {
    "ph": [
@@ -374,6 +773,20 @@
      "m": "原谅某人做某事"
     }
    ]
+  },
+  "It will be difficult to uncover the truth.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It will be difficult to uncover the truth",
+      "s": "你多半会翻成「它将是困难的去揭开真相」，念一遍，是不是很怪？看到 It will be + 形容词，眼睛往后找 to：真正的主语是 to uncover the truth，It 只是先占着位置（形式主语），不用翻。uncover 是 un + cover，「揭开」。\n→ 揭开真相将会很困难"
+     }
+    ],
+    "order": "把 to 后面的内容提到前面当主语，再接「会很困难」。",
+    "sum": "揭开真相将会很困难。",
+    "cmp": "和书上基本一样，书上写「会很困难」，我保留了「将」。"
+   }
   },
   "The heavy teaching loads left them little time and energy for family life.": {
    "ph": [],
@@ -399,7 +812,17 @@
      "b": "be responsible for",
      "m": "负责"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He was only responsible for unloading food",
+      "s": "你多半会翻成「他只是对卸食物是负责的」，太绕。be responsible for 是一个整体，「对……负责」；for 是介词，后面不能直接跟动词，所以用 unloading，就是「卸」这件事。un + load 是「卸下」。only 修饰 responsible，是「只」。\n→ 他只负责卸食物"
+     }
+    ],
+    "sum": "他只负责卸食物。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "The audience watched as the story unfolded before their eyes.": {
    "ph": [
@@ -408,7 +831,21 @@
      "b": "before one's eyes",
      "m": "在眼前"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The audience watched as",
+      "s": "as 你可能只认识「因为」，翻成「观众看，因为……」。放回去试：因为剧情展开，所以观众看？意思歪了。这里 as 带的是时间状语从句，就是「在……的时候」，两件事同时进行。\n→ 观众一边看着"
+     },
+     {
+      "t": "the story unfolded before their eyes",
+      "s": "unfold 是「展开」，故事一层一层地展开。before their eyes 你可能翻成「在他们眼睛前面」，说白了就是「在眼前」。unfolded 是过去时，和前面的 watched 同一时间。\n→ 剧情在他们眼前逐渐展开"
+     }
+    ],
+    "sum": "观众看着剧情在眼前一点点展开。",
+    "cmp": "和书上基本一样，书上没有译出 before their eyes 的「在眼前」，我补上了。"
+   }
   },
   "Fold the paper in half.": {
    "ph": [

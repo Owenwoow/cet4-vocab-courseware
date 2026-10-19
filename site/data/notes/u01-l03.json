@@ -13,7 +13,21 @@
      "b": "tourist attraction",
      "m": "旅游景点"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Li Jiang, an ancient town in Yunnan Province,",
+      "s": "你多半会一路念下去，翻成「丽江，一个云南省的古镇是……」。念一遍，主语和谓语被挤散了。前后都有逗号隔开的一段是插入语，在给 Li Jiang 补充说明，an ancient town 和 Li Jiang 是同一个地方。办法：先把这段当成括号单独翻。\n→ 丽江，云南省的一个古镇，"
+     },
+     {
+      "t": "is one of the most famous tourist attractions in China",
+      "s": "你可能翻成「是中国最著名的旅游景点中的一个」，太长了。one of the most…… 是固定格式，直接换成「最……之一」。\n→ 是中国最著名的旅游景点之一"
+     }
+    ],
+    "sum": "丽江是云南省的一个古镇，也是中国最著名的旅游景点之一。",
+    "cmp": "意思一样。书上把插入语留在中间，我把它拆成前后两个小句，读起来更像平时说话。"
+   }
   },
   "There is a growing consensus of opinion on this issue.": {
    "ph": [
@@ -31,7 +45,17 @@
      "b": "send in",
      "m": "派遣（部队）"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The president decided to send in the troops",
+      "s": "你多半会翻成「总统决定去派进军队」。念一遍，「去」是多出来的。decided to send 里的 to send 是 to do 短语，跟在 decided 后面就是「决定做某事」，真正要做的事是 to 后面的 send in。send in 是「派遣（部队）」，troops 是军队。\n→ 总统决定派军队进驻"
+     }
+    ],
+    "sum": "总统决定派军队进驻。",
+    "cmp": "和书上基本一样，书上说「派驻军队」，更简短。"
+   }
   },
   "She was involved in the production process.": {
    "ph": [
@@ -40,7 +64,21 @@
      "b": "be involved in",
      "m": "参与"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She was involved in",
+      "s": "你多半会翻成「她被卷入了」。was involved 是被动，就是「她被别人怎么样了」，但 be involved in 是一个固定搭配，眼睛盯住后面的 in，合起来是「参与、涉及」，中文不用「被」。\n→ 她参与了"
+     },
+     {
+      "t": "the production process",
+      "s": "这块照字面翻就行：production 是「生产」，process 是「过程」。\n→ 生产过程"
+     }
+    ],
+    "sum": "她参与了生产过程。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "They must make efforts to increase women's access to health care.": {
    "ph": [
@@ -59,7 +97,22 @@
      "b": "health care",
      "m": "医疗服务"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They must make efforts to increase",
+      "s": "你多半会翻成「他们必须做出努力去增加」。能懂，但不顺。make efforts to do 是固定搭配，就是「努力做某事」，to increase 是 to do 短语，说明努力的目的。\n→ 他们必须努力增加"
+     },
+     {
+      "t": "women's access to health care",
+      "s": "你可能翻成「妇女对医疗保健的通路」。看到 access，眼睛往后找 to：access to 是「获得……的机会」。拿到什么？health care，医疗服务。谁获得？women。中文把「机会」放最后。\n→ 妇女获得医疗服务的机会"
+     }
+    ],
+    "order": "英文是「妇女的 access to 医疗」，中文要把「获得医疗服务」整个放到「机会」前面当修饰语。",
+    "sum": "他们必须努力增加妇女获得医疗服务的机会。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "The trial assessed the effectiveness of an early mathematics intervention aimed at preschoolers.": {
    "ph": [
@@ -68,7 +121,39 @@
      "b": "aim at",
      "m": "针对"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The trial assessed the effectiveness of an early mathematics intervention",
+      "s": "这块基本照字面翻：trial 是「试验」，assessed 是「评估了」，the effectiveness of…… 是「……的有效性」，early mathematics intervention 是「早期数学干预」。\n→ 该试验评估了早期数学干预的有效性"
+     },
+     {
+      "t": "aimed at preschoolers",
+      "s": "你多半会把 aimed 当成动词，翻成「瞄准了学龄前儿童」，那前面这句话就有两个动词，说不通。aimed at 是过去分词（-ed 短语），放在名词后面修饰它，就是「被针对……的」。aim at 是「针对」，preschoolers 是「学龄前儿童」。它修饰谁？放回去试：针对学龄前儿童的干预，对。\n→ 针对学龄前儿童的"
+     }
+    ],
+    "order": "-ed 短语在英文里放在名词后面，中文要把「针对学龄前儿童的」提到「早期数学干预」前面。",
+    "sum": "该试验评估了针对学龄前儿童的早期数学干预的有效性。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "The amount raised has far exceeded our wildest expectations.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The amount raised has far exceeded",
+      "s": "你多半会把 raised 当成动词，翻成「数量提高了」。其实 amount 后面直接跟 raised，它是过去分词（-ed 短语），修饰前面的 amount，意思是「被筹集到的」，说白了就是「筹到的钱」。has far exceeded 是现在完成时，「已经远远超过」，far 加强语气。\n→ 筹集到的金额已经远远超过了"
+     },
+     {
+      "t": "our wildest expectations",
+      "s": "你可能翻成「我们最野的期望」，念着怪。wild 在这里是「大胆、离谱」，wildest 是最高级，说的是「再大胆也想不到的」预期。\n→ 我们最大胆的预期"
+     }
+    ],
+    "sum": "筹集到的金额已经远远超过了我们最大胆的预期。",
+    "cmp": "意思一样。书上说「最大的期望」，我用「最大胆」，更贴 wildest 那种「想都不敢想」的味道。"
+   }
   },
   "They tend to push themselves beyond the limits of their ability.": {
    "ph": [
@@ -87,7 +172,21 @@
      "b": "beyond the limits of",
      "m": "超出……的极限"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They tend to push themselves",
+      "s": "你可能翻成「他们倾向去推自己」。tend to do 是固定搭配，就是「往往会做某事」，to 后面的 push 才是动作。push oneself 不是「推自己」，是「逼自己」。\n→ 他们往往会逼自己"
+     },
+     {
+      "t": "beyond the limits of their ability",
+      "s": "你多半会翻成「超出他们能力的极限之外」。念一遍，「超出」和「之外」说重复了，beyond 本身就是「超出」。their 回指 They，中文说「自己的」。\n→ 超出自己能力的极限"
+     }
+    ],
+    "sum": "他们往往会把自己逼到超出能力极限的地步。",
+    "cmp": "意思一样。书上的「极限之外」直接对应 beyond the limits of，我换成「超出……极限」，更像日常说法。"
+   }
   },
   "Wheat was in surplus that year.": {
    "ph": [
@@ -105,7 +204,17 @@
      "b": "make efforts to do",
      "m": "更加努力去做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They make extra efforts to research their own products",
+      "s": "你多半会翻成「他们做额外的努力去研究他们自己的产品」。念一遍，又长又硬。make efforts to do 是固定搭配，就是「努力做某事」，to research 是 to do 短语，说明努力干什么；extra 加在 efforts 前面，是「格外」。their own 在中文里说一次「自己的」就够了。\n→ 他们格外努力地研究自己的产品"
+     }
+    ],
+    "sum": "他们格外努力地研究自己的产品。",
+    "cmp": "和书上基本一样，书上说「更加努力」，我说「格外努力」，都对。"
+   }
   },
   "We cover costs up to 600 pounds and then you pay the excess.": {
    "ph": [
@@ -114,7 +223,21 @@
      "b": "up to",
      "m": "最多达到"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "We cover costs up to 600 pounds",
+      "s": "你多半会翻成「我们覆盖费用到 600 英镑」。cover 在这里不是「覆盖」，是「承担（费用）」。up to 是「最多到」，管着后面的 600 pounds，是承担的上限。\n→ 我们最多承担 600 英镑的费用"
+     },
+     {
+      "t": "and then you pay the excess",
+      "s": "and then 把两句话接起来，「然后」。the excess 你可能当成形容词，但前面有 the，它是名词，「超出的部分」，也就是超过 600 英镑的那一块。中文常把它提前当主语：超出的部分由你付。\n→ 然后超出的部分由你支付"
+     }
+    ],
+    "sum": "我们最多承担 600 英镑的费用，超出的部分由你支付。",
+    "cmp": "意思一样。书上把 cover 译成「支付」，我用「承担」，两个都对。"
+   }
   },
   "Her way to success was full of pains and frustrations.": {
    "ph": [
@@ -170,7 +293,38 @@
      "b": "turn … into",
      "m": "把……转变成"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The team excels at",
+      "s": "你多半会翻成「这个队在……上超过别人」。excel at 是一个整体，就是「擅长」，后面跟的是擅长的那件事。\n→ 这个队擅长"
+     },
+     {
+      "t": "turning defence into attack",
+      "s": "你可能想翻成「转动防守进入进攻」。先看 turning：at 后面的 -ing 是把动作当名词用，就是「做某事」这件事。再眼睛往后找 into：turn A into B 是「把 A 变成 B」，A 是 defence，B 是 attack。\n→ 把防守转为进攻"
+     }
+    ],
+    "sum": "这个队擅长由守转攻。",
+    "cmp": "书上说「善于打防守反攻」，是体育里的说法，意思和我的一样。"
+   }
+  },
+  "She came striding along to meet me.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "She came striding along",
+      "s": "你多半会翻成「她来了，大步走着」。striding 是 -ing 短语，说明她「怎么来的」，和 came 同时发生。stride 是「大步走」，along 是「一路」，合起来是「大步走过来」。\n→ 她大步走过来"
+     },
+     {
+      "t": "to meet me",
+      "s": "to meet me 是 to do 短语，说明目的，「为了……」。meet 你可能翻成「见」，这里是「迎接」。\n→ 来迎接我"
+     }
+    ],
+    "sum": "她大步走过来迎接我。",
+    "cmp": "和书上基本一样，书上多了「上前」，更生动一点。"
+   }
   },
   "No longer have we the inclination to let ourselves wander through fields of knowledges, ready to be surprised.": {
    "ph": [
@@ -222,7 +376,21 @@
      "b": "ingredient in",
      "m": "……的要素"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "But innovation, broadly defined,",
+      "s": "你多半会翻成「但是被广泛定义的创新」，再接后面的 is，读着很卡。逗号隔开的 broadly defined 是插入语，defined 是过去分词（-ed 短语），意思是「如果被广义地定义」，说白了就是「从广义上讲」。\n→ 但从广义上讲，创新"
+     },
+     {
+      "t": "is the crucial ingredient in all economic progress",
+      "s": "ingredient 你可能只认识做菜的「配料」，in 翻成「在……里」，就成了「经济发展里的配料」。ingredient in 是「……的要素」，crucial 是「关键的」。\n→ 是所有经济发展的关键因素"
+     }
+    ],
+    "sum": "但从广义上讲，创新是所有经济发展的关键因素。",
+    "cmp": "意思一样。书上把「广义上」放在「创新」前面当修饰语，我保留英文的插入语位置。"
+   }
   },
   "They tend to be a lot more aggressive than right-handed people.": {
    "ph": [
@@ -231,7 +399,22 @@
      "b": "tend to do",
      "m": "往往会"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They tend to be a lot more aggressive",
+      "s": "你多半会把 a lot 翻成「很多」，写出「很多更有攻击性」。a lot 放在比较级 more 前面是「……得多」。tend to do 是「往往会」，to 后面的 be 是「是」。\n→ 他们往往要有攻击性得多"
+     },
+     {
+      "t": "than right-handed people",
+      "s": "这块照字面翻就行：than 引出比较的对象，right-handed 是「惯用右手的」。\n→ 比惯用右手的人"
+     }
+    ],
+    "order": "英文把比较对象放最后，中文习惯先说「比谁」，所以把「比惯用右手的人」提到前面。",
+    "sum": "他们往往比惯用右手的人更有攻击性。",
+    "cmp": "意思一样，书上用「右利手」，是专门的说法，我用更口语的「惯用右手」。"
+   }
   },
   "This is how society moves forward.": {
    "ph": [
@@ -240,7 +423,17 @@
      "b": "move forward",
      "m": "前进"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "This is how society moves forward",
+      "s": "你多半会翻成「这是社会如何前进」。念一遍，是不是话没说完？how 后面带的是表语从句，就是补充说明 This 到底是什么，这里 how 要换成「……的方式」。先翻从句：society moves forward 是「社会前进、进步」，再接上 This is。\n→ 这就是社会进步的方式"
+     }
+    ],
+    "sum": "这就是社会进步的方式。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "The shaking is caused by the motion of two plates.": {
    "ph": [
@@ -249,7 +442,21 @@
      "b": "be caused by",
      "m": "由……引起"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The shaking is caused by",
+      "s": "你多半会翻成「震动被……引起」。is caused by 是被动，就是「震动被别人怎么样了」，中文更习惯说「是由……引起的」。\n→ 震动是由……引起的"
+     },
+     {
+      "t": "the motion of two plates",
+      "s": "plates 你可能翻成「盘子」，放回去试：两个盘子的运动引起震动？不通。这里是地质里的「板块」。motion 是「运动」。\n→ 两个板块的运动"
+     }
+    ],
+    "sum": "震动是由两个板块的运动引起的。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Our bombers have knocked out the mobile launchers.": {
    "ph": [
@@ -315,7 +522,39 @@
      "b": "set up",
      "m": "设立"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Effective measures should be taken",
+      "s": "你多半会翻成「有效的措施应该被采取」。should be taken 是被动，就是「措施被别人采取」，中文少用「被」，直接说「应采取有效措施」。take measures 是「采取措施」。\n→ 应采取有效措施"
+     },
+     {
+      "t": "to motivate employees to set up offices at home",
+      "s": "这里有两个 to，别晕。第一个 to motivate 是 to do 短语，说明目的，「为了激励……」。motivate sb. to do 是「激励某人做某事」，眼睛往后找第二个 to：to set up 就是员工要做的事。set up offices at home 字面是「在家设立办公室」，说白了就是居家办公。\n→ 来激励员工居家办公"
+     }
+    ],
+    "sum": "应当采取有效措施，激励员工在家中设立办公室。",
+    "cmp": "意思一样。书上译成「居家办公」，更简练，是把 set up offices at home 意译了。"
+   }
+  },
+  "How boundaries can be removed between arts and science disciplines?": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "How boundaries can be removed",
+      "s": "你多半会翻成「如何边界能被移除」。can be removed 是被动，就是「界限被别人移除」，中文去掉「被」，直接说「如何消除界限」。\n→ 如何消除界限"
+     },
+     {
+      "t": "between arts and science disciplines",
+      "s": "你可能把它放在最后，翻成「界限，在艺术和科学学科之间」。念一遍，不顺。between 这一块要提到「界限」前面当修饰语。discipline 在这里是「学科」。\n→ 艺术和科学学科之间"
+     }
+    ],
+    "order": "between 这一块在英文里排在最后，中文要挪到「界限」前面，变成「……之间的界限」。",
+    "sum": "如何消除艺术和科学学科之间的界限？",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Above all, it's the emotions one experiences in teaching that facilitate learning.": {
    "ph": [
@@ -367,7 +606,21 @@
      "b": "blood pressure",
      "m": "血压"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Once you get beyond the initial learning curve,",
+      "s": "你多半会翻成「一次你到达超过最初的学习曲线」。Once 在这里不是「一次」，它带的是时间状语从句，就是「一旦……」。get beyond 是「越过、度过」，initial 是「最初的」，learning curve 是「学习曲线」，指刚上手最吃力的那个阶段。\n→ 一旦你度过最初的学习曲线"
+     },
+     {
+      "t": "knitting and crocheting can lower heart rate and blood pressure",
+      "s": "knitting 和 crocheting 都是 -ing 开头当主语，就是「织毛衣」这件事、「钩针编织」这件事。lower 你可能当形容词「较低的」，但它跟在 can 后面，是动词「降低」。heart rate 是「心率」，blood pressure 是「血压」。\n→ 针织和钩编就能降低心率和血压"
+     }
+    ],
+    "sum": "一旦度过最初的学习曲线，针织和钩编就能降低心率和血压。",
+    "cmp": "意思一样。书上说「超越了最初的学习曲线」，我说「度过」，beyond 在这里是「越过那一段」，不是「超过别人」。"
+   }
   },
   "In 1970, the percentage of women majoring in engineering was less than 1%.": {
    "ph": [
@@ -376,7 +629,21 @@
      "b": "major in",
      "m": "主修"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "In 1970, the percentage of women majoring in engineering",
+      "s": "你多半会把 majoring 当谓语，翻成「女性正在主修工程学」。但它前面没有 be 动词，不是谓语。majoring in engineering 是 -ing 短语，放在 women 后面修饰它，就是「主修工程学的」。major in 是「主修」，the percentage of 是「……的比例」。\n→ 1970 年，主修工程学的女性比例"
+     },
+     {
+      "t": "was less than 1%",
+      "s": "真正的谓语在这里。less than 你可能翻成「比……少」，中文更习惯说「不到」。\n→ 不到 1%"
+     }
+    ],
+    "sum": "1970 年，主修工程学的女性比例不到 1%。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Your university is selecting some students to teach kids in remote rural areas during the coming vacation.": {
    "ph": [
@@ -390,7 +657,43 @@
      "b": "select sb. to do",
      "m": "选拔某人去做某事"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Your university is selecting some students",
+      "s": "你多半会翻成「你的大学是选择一些学生」。is selecting 是现在进行时，「正在……」，不是被动。select 在这里是「选拔」。\n→ 你们大学正在选拔一些学生"
+     },
+     {
+      "t": "to teach kids in remote rural areas",
+      "s": "to teach 是 to do 短语，说明选拔他们去干什么，「去教」。remote 你可能只认识「遥远」，这里是「偏远」。\n→ 去教偏远农村地区的孩子"
+     },
+     {
+      "t": "during the coming vacation",
+      "s": "你可能翻成「在来的假期」。coming 是 -ing 形容词，说白了是「即将到来的」。\n→ 在即将到来的假期"
+     }
+    ],
+    "order": "英文把时间放最后，中文习惯先说时间，再说去哪里做什么：在即将到来的假期，去偏远农村地区教孩子。",
+    "sum": "你们大学正在选拔一些学生，让他们在即将到来的假期去偏远的农村地区教孩子。",
+    "cmp": "几乎一样，书上的「在即将到来的假期去偏远的农村地区教孩子们」和我说的是同一个意思。"
+   }
+  },
+  "More universities will be seeking heads with international experience to promote international programs.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "More universities will be seeking heads with international experience",
+      "s": "will be seeking 看到 be 你可能以为是被动，其实后面是 -ing，这是将来进行时，意思是「将要在寻找」，主语 universities 自己是找的人。heads 你可能翻成「头」，这里是「负责人」。with international experience 是「具有国际经验的」，修饰 heads，中文提到前面。\n→ 更多大学将寻找具有国际经验的负责人"
+     },
+     {
+      "t": "to promote international programs",
+      "s": "to promote 是 to do 短语，说明目的，「为了推广」。programs 是「项目」。\n→ 来推广国际项目"
+     }
+    ],
+    "sum": "更多大学将寻找具有国际经验的负责人，来推广国际项目。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Watching the agent solve problems allows them to see their knowledge put into action.": {
    "ph": [
@@ -429,6 +732,20 @@
     "cmp": "和书上基本一样，书上的「得以见证其知识付诸行动」更书面，我的说法更口语。"
    }
   },
+  "The tourists' good deed was not noticed by the locals.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The tourists' good deed was not noticed by the locals",
+      "s": "你多半会翻成「游客的好行为没有被当地人注意到」。was not noticed 是被动，就是「善举被别人怎么样了」，by the locals 说的是动作是谁做的。中文少用「被」，把 the locals 请出来当主语：当地人没有注意到什么？游客的 good deed，deed 是「行为」，good deed 就是「善举」。\n→ 当地人没有注意到游客的善举"
+     }
+    ],
+    "order": "被动句里动作的发出者 by the locals 在最后，中文把它提到前面当主语，句子就顺了。",
+    "sum": "当地人没有注意到游客的善举。",
+    "cmp": "意思一样。书上保留了英文的被动语序，我改成主动，中文更顺。"
+   }
+  },
   "They continued to behave as they did in the beginning.": {
    "ph": [
     {
@@ -436,7 +753,55 @@
      "b": "in the beginning",
      "m": "起初"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They continued to behave",
+      "s": "你多半会翻成「他们继续去行为」。behave 不是名词「行为」，是动词，「表现、举止」。continue to do 是「继续做某事」，to 后面的 behave 才是动作。\n→ 他们继续表现得"
+     },
+     {
+      "t": "as they did in the beginning",
+      "s": "as 你可能只认识「因为」，放回去试试：因为他们起初做了……？不通。这里 as 带的是方式状语从句，就是「像……那样」。did 是替身，代替前面的 behaved，避免重复。in the beginning 是「起初」。\n→ 像一开始那样"
+     }
+    ],
+    "sum": "他们继续像一开始那样行事。",
+    "cmp": "和书上完全一样的意思。"
+   }
+  },
+  "Although he's nearly 80, he is still very active.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Although he's nearly 80",
+      "s": "Although 带的是让步状语从句，就是「虽然、尽管」。he's 是 he is 的缩写。nearly 是「将近」。\n→ 尽管他快 80 岁了"
+     },
+     {
+      "t": "he is still very active",
+      "s": "active 你可能只认识「积极的」，说一个快 80 岁的人「很积极」，是不是怪？这里是「活跃的、精力充沛的」。\n→ 他还是十分活跃"
+     }
+    ],
+    "sum": "尽管他快 80 岁了，他还是十分活跃。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "You can't tell how the person on the line is reacting.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "You can't tell",
+      "s": "你多半会翻成「你不能告诉」。tell 在这里不是「告诉」，can't tell 是「看不出、判断不了」。后面跟的是看不出的内容。\n→ 你不知道"
+     },
+     {
+      "t": "how the person on the line is reacting",
+      "s": "how 带的是宾语从句，就是 tell 的内容。the person on the line 你可能翻成「线上的人」，这里是「电话那头的人」。is reacting 是现在进行时，「正在作出反应」。\n→ 电话里的人作何反应"
+     }
+    ],
+    "sum": "你不知道电话里的人作何反应。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "He is not familiar with the exact details of the goods.": {
    "ph": [
@@ -454,7 +819,21 @@
      "b": "call for",
      "m": "需要，呼吁"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It calls for people's actual action",
+      "s": "你多半会翻成「它呼叫人们实际的行动」。call for 是一个整体，「需要、要求」，别拆开。actual 是「实际的、真正的」，不是「现在的」。\n→ 这需要人们采取实际行动"
+     },
+     {
+      "t": "to reduce the waste",
+      "s": "to reduce 是 to do 短语，说明目的，「为了减少……」。the waste 是「浪费」，这里指浪费这个问题。\n→ 来减少浪费"
+     }
+    ],
+    "sum": "这需要人们采取实际行动来减少浪费。",
+    "cmp": "意思一样，书上把目的直接接在后面，说「采取实际行动减少浪费」，更简练。"
+   }
   },
   "Taken in a practical way, saving for post-work years is like giving money away to others.": {
    "ph": [
@@ -505,7 +884,56 @@
      "b": "so … that",
      "m": "如此……以至于"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The virtual assistant became so advanced and realistic",
+      "s": "你多半会把 realistic 翻成「现实的」。放回去试：变得如此先进和现实？不通，这里是「逼真的」。看到 so，眼睛往后找 that：so…that…是「如此……以至于」。\n→ 这个虚拟助手变得如此先进和逼真"
+     },
+     {
+      "t": "that the students didn't know she was a computer",
+      "s": "that 带的是结果状语从句，说的是「以至于」后面的结果。didn't know 后面省略了 that，she was a computer 是宾语从句，就是「不知道的内容」。she 指谁？放回去试：学生是电脑？不通；虚拟助手是电脑，对。\n→ 以至于学生们都不知道它是一台电脑"
+     }
+    ],
+    "sum": "这个虚拟助手变得如此先进和逼真，以至于学生们都不知道它是一台电脑。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "Dreaming resembles fragments of science fiction.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Dreaming resembles",
+      "s": "你可能把 Dreaming 翻成「梦想」，像在说理想。-ing 开头当主语，就是「做某事」这件事，这里是「做梦」，说白了就是「梦境」。resemble 是「类似、像」，后面不用加 to。\n→ 梦境类似于"
+     },
+     {
+      "t": "fragments of science fiction",
+      "s": "这块照字面翻就行：fragments 是「片段」，science fiction 是「科幻小说」。\n→ 科幻小说的片段"
+     }
+    ],
+    "sum": "梦境就像科幻小说的一些片段。",
+    "cmp": "和书上基本一样，意思相同。"
+   }
+  },
+  "The situation has changed somewhat since we last met.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The situation has changed somewhat",
+      "s": "has changed 是现在完成时，「已经变了」。somewhat 你可能拆成 some 加 what，翻成「某事」，其实它是副词，「有点、稍微」。\n→ 情况有点变化"
+     },
+     {
+      "t": "since we last met",
+      "s": "since 你可能翻成「因为」。放回去试：因为我们上次见面，所以情况变了？不通。前面是现在完成时，说的是一段时间，所以 since 带的是时间状语从句，「自从……以来」。we last met 是「我们上次见面」。\n→ 自从我们上次见面以来"
+     }
+    ],
+    "order": "英文把时间放后面，中文习惯先说「自从……以来」，再说结果。",
+    "sum": "自从我们上次见面以来，情况有了一点变化。",
+    "cmp": "意思一样，书上说「情况有点变化」，顺序同英文，我提前了时间。"
+   }
   },
   "Only a tiny fraction of Americans change any behaviours in an effort to preserve their privacy.": {
    "ph": [
@@ -603,7 +1031,17 @@
      "b": "be filled with",
      "m": "充满"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The room was filled with smoke and flame",
+      "s": "你多半会翻成「房间被烟和火焰填满了」。was filled with 是被动，就是「房间被什么东西怎么样了」，但 be filled with 是固定搭配，「充满」，中文不用「被」。flame 是「火焰」。\n→ 房间里充满了烟雾和火焰"
+     }
+    ],
+    "sum": "房间里充满了烟雾和火焰。",
+    "cmp": "意思一样。书上译成「烟雾弥漫，烈焰滚滚」，是更文学的说法，我的更直白。"
+   }
   },
   "It had burned for 45 minutes by the time firefighters arrived.": {
    "ph": [
@@ -612,7 +1050,22 @@
      "b": "by the time",
      "m": "到……的时候"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It had burned for 45 minutes",
+      "s": "你多半会翻成「它烧了 45 分钟」，少了点什么。had burned 是过去完成时，「在某个过去的时间点之前就已经……」，所以要补上「已经」。for 45 minutes 是「持续了 45 分钟」。\n→ 已经燃烧了 45 分钟"
+     },
+     {
+      "t": "by the time firefighters arrived",
+      "s": "by 你可能翻成「通过」，不对。by the time 带的是时间状语从句，脑子里换成「等到……的时候」。arrived 是过去式，是更晚发生的事：先烧了 45 分钟，消防员后到。\n→ 等到消防员赶到的时候"
+     }
+    ],
+    "order": "英文先说烧了多久、后说什么时候，中文习惯先说时间，所以把「消防员赶到时」提到前面。",
+    "sum": "消防员赶到时，大火已经烧了 45 分钟。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "The car keeps flashing its headlights.": {
    "ph": [
@@ -621,7 +1074,17 @@
      "b": "keep doing",
      "m": "一直做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The car keeps flashing its headlights",
+      "s": "你多半会翻成「这辆车保持闪着它的前灯」，念着很怪。keeps flashing 是 keep doing，flashing 是 -ing 短语，跟在 keep 后面，就是「一直做某事」。its headlights 里的 its，中文不用翻出来。\n→ 这辆车一直在闪前灯"
+     }
+    ],
+    "sum": "这辆车一直在闪前灯。",
+    "cmp": "意思一样，书上说「一直在闪烁前灯」，用的词稍微书面一点。"
+   }
   },
   "The memory of the recent great recession is still fresh in their mind.": {
    "ph": [
@@ -639,7 +1102,22 @@
      "b": "at that time",
      "m": "在那时"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The arts began to flourish",
+      "s": "你多半会翻成「艺术开始去繁荣」。began to flourish 是 begin to do，「开始做某事」，to 后面的 flourish 才是动作，是动词「繁荣、兴旺」。The arts 是复数，指各门艺术。\n→ 艺术开始繁荣"
+     },
+     {
+      "t": "at that time",
+      "s": "这块照字面翻就行：at that time 是「在那时」。\n→ 在那个时候"
+     }
+    ],
+    "order": "英文把时间放最后，中文习惯放前面。",
+    "sum": "那个时候，艺术开始繁荣起来。",
+    "cmp": "意思一样。书上译成「艺术是从那时开始繁荣的」，用了「是……的」强调时间，我是平铺直叙。"
+   }
   },
   "He shaped delicious masterpieces out of flour, butter and sugar.": {
    "ph": [

@@ -53,6 +53,41 @@
     }
    ]
   },
+  "I don't hear people in the academy saying it.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "I don't hear people in the academy",
+      "s": "你多半会翻成「我没有听到学院里的人」，然后话就断了，念一遍不完整。hear 这类词后面常常是「谁 + 在做什么」，眼睛往后找 -ing。in the academy 跟在 people 后面，说的是哪里的人，就是「学院里的人」。\n→ 我没有听到学院里的人"
+     },
+     {
+      "t": "saying it",
+      "s": "果然，后面是 saying。这是 -ing 短语（现在分词），说明那些人正在「说」。hear people saying it 合起来，就是「听到他们在说这件事」。\n→ 说过这件事"
+     }
+    ],
+    "sum": "我没有听到学院里的人这样说过。",
+    "cmp": "意思一样。书上的「说过它」是照 it 直译，中文里「说过这件事」或「这样说过」更顺。"
+   }
+  },
+  "I attended practically every seminar when I was a student.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "I attended practically every seminar",
+      "s": "practically 你多半会翻成「实际地」。放回去念：我实际地参加了每一场研讨会？怪。这里它是副词「几乎」，后面跟 every，就是「几乎每一场」。\n→ 我几乎参加了每一场研讨会"
+     },
+     {
+      "t": "when I was a student",
+      "s": "when 带的是时间状语从句，就是「在……的时候」，后面是个完整的小句子 I was a student。\n→ 我上学的时候"
+     }
+    ],
+    "order": "英文把「什么时候」放在后面，中文习惯先说时间，所以把「我上学时」提到前面。",
+    "sum": "我上学的时候，几乎每一场研讨会都参加了。",
+    "cmp": "和书上基本一样，书上「上学时」更紧凑，我把「每一场」提前了一点，口语些。"
+   }
+  },
   "Goel and his team sourced the online discussion forum to find all 40,000 questions.": {
    "ph": [],
    "an": {
@@ -87,6 +122,24 @@
     "cmp": "和书上基本一样，书上的「一直大幅上涨」，我多了个「在」，强调还在涨。"
    }
   },
+  "They are set by the dean of the graduate school.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "They are set by the dean",
+      "s": "你多半会翻成「它们被院长设置」。念一遍，是不是有点怪？are set 是被动，就是「它们被别人怎么样了」，by 后面的人才是真正做事的。set 在这里是「制定、规定」，中文少用「被」，把 the dean 请出来当主语。\n→ 由院长制定"
+     },
+     {
+      "t": "of the graduate school",
+      "s": "graduate school 你可能会翻成「毕业学校」，其实 graduate 在这里是形容词「研究生的」，graduate school 就是「研究生院」。of 把它接在 the dean 后面，说的是哪个院的院长。\n→ 研究生院的"
+     }
+    ],
+    "order": "中文里「研究生院的」要放在「院长」前面当修饰语，所以顺序是：研究生院的院长 + 来定。",
+    "sum": "它们由研究生院的院长来定。",
+    "cmp": "和书上基本一样，书上用了「是……的」，更口语。"
+   }
+  },
   "What is the argument against the experts' idea of a long summer vacation?": {
    "ph": [
     {
@@ -103,7 +156,22 @@
      "b": "do an experiment",
      "m": "做实验"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "What did Dr. Sasaki do",
+      "s": "你多半会翻成「什么做了佐佐木博士做」，一看就乱了。别慌：did 是帮忙造疑问句的助动词，不用翻；后面那个 do 才是「做」。what ... do 合起来就是「做了什么」。\n→ 佐佐木博士做了什么"
+     },
+     {
+      "t": "when she first did her experiment",
+      "s": "when 带的是时间状语从句，就是「在……的时候」。这里的 did 是「做」，did her experiment 就是 do an experiment「做实验」；first 是「第一次」。\n→ 她第一次做实验的时候"
+     }
+    ],
+    "order": "英文把「什么时候」放在后面，中文习惯先说时间，所以把「她第一次做实验时」提到前面。",
+    "sum": "佐佐木博士第一次做实验的时候，做了什么？",
+    "cmp": "和书上完全一样。"
+   }
   },
   "She keeps good discipline in class.": {
    "ph": [
@@ -127,6 +195,41 @@
      "m": "缺乏"
     }
    ]
+  },
+  "It is a moral principle to guide people's behaviour.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It is a moral principle",
+      "s": "你多半会翻成「它是一个道德的原则」。意思不算错，但 principle 在这里更常说「准则」，moral 是「道德上的」，合起来就是「道德准则」。\n→ 这是一项道德准则"
+     },
+     {
+      "t": "to guide people's behaviour",
+      "s": "principle 后面直接跟了 to guide，这是 to do 短语（不定式），放在名词后面，是给它补一段说明：这个准则是「用来干什么的」。你可能想翻成「为了引导」，也可以，但放在名词后面时，翻成「用来引导……的」更顺。\n→ 用来引导人们行为的"
+     }
+    ],
+    "order": "英文把说明放在名词后面，中文要把「用来引导人们行为的」提到「道德准则」前面。",
+    "sum": "这是一项用来引导人们行为的道德准则。",
+    "cmp": "意思一样，书上的「引导人们行为的一项道德准则」，把修饰语放在「一项」前面，我放在后面更口语一点。"
+   }
+  },
+  "This is a theory that appeals to many economists.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "This is a theory",
+      "s": "这块照字面翻就行。\n→ 这是一个理论"
+     },
+     {
+      "t": "that appeals to many economists",
+      "s": "你多半会翻成「这是一个理论，那吸引许多经济学家」，把 that 当成「那」。不对，这里的 that 带的是定语从句，就是给前面的名词补一段说明。that 指谁？先试 many economists：economists appeals？动词 appeals 带 s，是单数，复数的 economists 对不上。再试 a theory：理论吸引许多经济学家，通了。appeal to 就是「吸引」。\n→ 吸引许多经济学家的"
+     }
+    ],
+    "sum": "这是一个吸引许多经济学家的理论。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Angry politicians launched an attack on the Princess in the press.": {
    "ph": [
@@ -178,7 +281,21 @@
      "b": "used to do",
      "m": "过去常常做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "I used to attend",
+      "s": "你多半会翻成「我用来参加」，看到 to 就以为是 to do。不是的：used to 后面接动词原形，固定表示「过去常常、曾经」。看到 used to，脑子里直接换成「曾经」。\n→ 我曾经参加过"
+     },
+     {
+      "t": "a summer music camp for five weeks",
+      "s": "for five weeks 你可能翻成「为了五个星期」。这里 for 后面跟一段时间，是「持续了多久」，说的是夏令营的长度。summer music camp 中文说「音乐夏令营」更顺。\n→ 一个为期五周的音乐夏令营"
+     }
+    ],
+    "sum": "我曾经参加过一个为期五周的音乐夏令营。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "She lives on campus.": {
    "ph": [
@@ -196,7 +313,22 @@
      "b": "special offer",
      "m": "特别优惠"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It is a special offer to recent college graduates",
+      "s": "你多半会翻成「它是给最近的大学毕业生的特别提供」。念一遍，别扭吧？offer 作名词，在这里是「优惠」；recent college graduates 是「应届大学毕业生」，不是「最近的」。\n→ 这是给应届大学毕业生的特别优惠"
+     },
+     {
+      "t": "working in offices",
+      "s": "graduates 后面直接跟了 working，这是 -ing 短语（现在分词），放在名词后面，给它补说明。放回去试：毕业生在办公室工作，通。所以它是「在办公室工作的」。\n→ 在办公室工作的"
+     }
+    ],
+    "order": "英文把说明放在名词后面，中文要把「在办公室工作的」提到「应届大学毕业生」前面。",
+    "sum": "这是给在办公室工作的应届大学毕业生的特别优惠。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "This fall, thousands of college students from across the country will begin their undergraduate studies.": {
    "ph": [
@@ -214,7 +346,21 @@
      "b": "look at",
      "m": "看，关注"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "But as a scared freshman looking at their grades",
+      "s": "as 你多半只认识「因为」或「当……时」，翻成「因为一个害怕的新生」。放回去试：as 后面不是一个完整句子，只是一个名词短语 a scared freshman，这时候 as 是介词「作为」。looking at their grades 是 -ing 短语（现在分词），放在 freshman 后面补说明：一个盯着自己成绩的新生。scared 是「害怕的」。\n→ 但作为一个盯着自己成绩、心里发慌的新生"
+     },
+     {
+      "t": "it's not fun",
+      "s": "这块照字面翻就行。fun 在这里是「好玩」。\n→ 这并不好玩"
+     }
+    ],
+    "sum": "但对于一个盯着自己成绩、心里发慌的新生来说，这并不好玩。",
+    "cmp": "意思一样。书上的「恐慌地关注着自己成绩的新生」有点翻译腔，我拆成了两个短语，更顺口。"
+   }
   },
   "He's a member of the club's junior team.": {
    "ph": [
@@ -232,7 +378,18 @@
      "b": "at the top",
      "m": "在最高层"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "At the very top are the senior executives",
+      "s": "你多半会翻成「在最顶部是高级主管们」，也能懂，但语序是倒的。这句是倒装：地点 At the very top 放到了句首，谓语 are 跑到了主语前面。找主语的办法：看 are 后面的名词。are 是复数，后面是 the senior executives，所以主语是它们，very 是加强语气的「最」。\n→ 在最高层的，正是高管们"
+     }
+    ],
+    "order": "还原顺序：高管们（主语）在最高层。中文可以说成「处在最高层的，就是高管们」。",
+    "sum": "处在最高层的，正是那些高管。",
+    "cmp": "和书上基本一样，书上「位于最高层的正是高管们」，一样是把地点变成「的」字短语放前面。"
+   }
   },
   "It's a good problem to have, but it can be a tough skill to master.": {
    "ph": [],
@@ -263,7 +420,38 @@
      "b": "drop litter",
      "m": "乱扔垃圾"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Children may be tempted",
+      "s": "你多半会翻成「孩子们可能被诱惑」。念一遍，中文不这么说。be tempted 是被动，就是「被别人怎么样了」，被什么诱惑，要看后面。be tempted to do 是一个固定搭配：眼睛往后找 to，找到了。\n→ 孩子们可能会忍不住"
+     },
+     {
+      "t": "to drop litter",
+      "s": "to drop 是 to do 短语（不定式），说明忍不住「做什么」。drop 你可能只知道「掉下」，这里是「扔」，drop litter 就是「乱扔垃圾」。\n→ 乱扔垃圾"
+     }
+    ],
+    "sum": "孩子们可能会忍不住乱扔垃圾。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "He's a dropout who doesn't have a steady job.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "He's a dropout",
+      "s": "dropout 你多半不认识，拆开看：drop out 是「退出」，dropout 就是中途退出学校的人。\n→ 他是个辍学的人"
+     },
+     {
+      "t": "who doesn't have a steady job",
+      "s": "who 带的是定语从句，就是给前面的名词补一段说明。who 指谁？放回去试：a steady job doesn't have a steady job？工作没有工作，不通。a dropout doesn't have a steady job，辍学的人没有稳定工作，通。steady 是「稳定的」。\n→ 没有稳定工作"
+     }
+    ],
+    "sum": "他是个辍学的人，没有稳定的工作。",
+    "cmp": "和书上基本一样，书上没有「的」，更简洁。"
+   }
   },
   "By investing in education, we nourish the talents of our children.": {
    "ph": [
@@ -272,7 +460,21 @@
      "b": "invest in",
      "m": "投资于"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "By investing in education",
+      "s": "你多半会翻成「通过投资在教育」，invest in 是固定搭配，「在」是多余的，直接说「投资教育」或「对教育投资」。by 后面的 investing 是 -ing 形式，by doing 就是「通过做某事」这种方式。\n→ 通过对教育投资"
+     },
+     {
+      "t": "we nourish the talents of our children",
+      "s": "nourish 你可能只知道「滋养」，翻成「滋养孩子们的才能」，念一遍有点怪。才能不是用来滋养的，是用来「培养」的。talents of our children 就是「我们孩子的才能」。\n→ 我们培养孩子们的才能"
+     }
+    ],
+    "sum": "通过投资教育，我们培养孩子们的才能。",
+    "cmp": "意思一样。书上把「通过教育投资」放在「我们」后面，我把它放在前面，和英文顺序一致。"
+   }
   },
   "People may either be born with it or be able to cultivate it.": {
    "ph": [
@@ -286,7 +488,34 @@
      "b": "be able to do",
      "m": "能够做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "People may either be born with it",
+      "s": "看到 either，眼睛往后找 or：「要么……要么……」，说明有两个选项。be born with 你多半会翻成「被生下来带着」，这是被动，说白了就是「天生具有」。may 在这里是「可能」。\n→ 人们要么天生就有它"
+     },
+     {
+      "t": "or be able to cultivate it",
+      "s": "or 连接的是第二个选项。be able to do 是「能够做」；cultivate 本义是「耕种」，用在能力上，就是「培养」。\n→ 要么能够培养它"
+     }
+    ],
+    "sum": "人们要么天生就有，要么能通过后天培养出来。",
+    "cmp": "意思一样。书上把 it 补成了「这种能力」，我直接省掉了，中文里不用重复。"
+   }
+  },
+  "Hard times breed hard feelings.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Hard times breed hard feelings",
+      "s": "breed 你多半只认识「繁殖、品种」，翻成「艰难时期繁殖艰难的感觉」。念一遍，怪吧？breed 当动词，是「孕育、引起」。hard feelings 也不是「困难的感觉」，而是「怨气、不愉快的情绪」。把两个词换掉，就是「艰难时期会引起怨气」。\n→ 艰难时期会滋生怨气"
+     }
+    ],
+    "sum": "艰难时期会滋生怨气。",
+    "cmp": "意思一样，书上用「酿成」，我用「滋生」，都行。"
+   }
   },
   "Some studies have found that first-born children are more intelligent than their later-born siblings.": {
    "ph": [
@@ -338,6 +567,40 @@
     }
    ]
   },
+  "Eggs have an oval shape appealing to artists.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Eggs have an oval shape",
+      "s": "你多半会翻成「鸡蛋有一个椭圆的形状」。意思没错，但有点啰嗦，中文更常说「呈椭圆形」。\n→ 鸡蛋呈椭圆形"
+     },
+     {
+      "t": "appealing to artists",
+      "s": "shape 后面直接跟了 appealing，这是 -ing 短语（现在分词），放在名词后面给它补说明。你可能翻成「正在吸引艺术家」，不通顺。appeal to 是「吸引、对……有吸引力」，所以它说的是这个形状「对艺术家有吸引力」。\n→ 对艺术家有吸引力"
+     }
+    ],
+    "sum": "鸡蛋呈椭圆形，对艺术家很有吸引力。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "I also acknowledge that we have a work-life problem.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "I also acknowledge that",
+      "s": "acknowledge 你多半会翻成「承认」，对。关键是 that：它后面跟的是一整个句子，是 acknowledge 的内容，也就是宾语从句，就是「承认了什么」。also 是「也」。\n→ 我也承认"
+     },
+     {
+      "t": "we have a work-life problem",
+      "s": "work-life 你可能翻成「工作-生活的问题」，连在一起像个怪词。这是两个词用连字符连在一起，当形容词用，补上「与」就顺了：工作与生活方面的问题。\n→ 我们有工作与生活方面的问题"
+     }
+    ],
+    "sum": "我也承认，我们存在工作与生活方面的问题。",
+    "cmp": "意思一样，书上是「工作与生活的问题」，我加了「方面」，读起来更自然。"
+   }
+  },
   "These pioneers reflected on the challenges they faced.": {
    "ph": [
     {
@@ -345,7 +608,21 @@
      "b": "reflect on",
      "m": "反思"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "These pioneers reflected on",
+      "s": "reflect 你多半只认识「反射、反映」，翻成「反映在」，读不通。reflect on 是固定搭配，「回头想、反思」。pioneers 是「先驱、开拓者」。\n→ 这些先驱反思了"
+     },
+     {
+      "t": "the challenges they faced",
+      "s": "challenges 后面直接跟 they faced，中间省略了 that，补回去是 the challenges (that) they faced。这是定语从句，就是给前面的名词补一段说明。怎么知道指 challenges？faced 后面缺了宾语，放回去试：they faced the challenges，他们面对挑战，通。\n→ 他们所面临的挑战"
+     }
+    ],
+    "sum": "这些先驱反思了自己曾面临过的挑战。",
+    "cmp": "意思一样，书上用「所面临的」，比我的更书面。"
+   }
   },
   "Students prefer to rely on peers to relieve stress and anxiety.": {
    "ph": [
@@ -359,7 +636,21 @@
      "b": "rely on",
      "m": "依靠"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Students prefer to rely on peers",
+      "s": "第一个 to 紧跟在 prefer 后面，prefer to do 是「更喜欢做」。rely on 你可能翻成「依赖在」，别扭，固定搭配直接说「依靠」。peers 是「同伴、同龄人」。\n→ 学生更喜欢依靠同伴"
+     },
+     {
+      "t": "to relieve stress and anxiety",
+      "s": "第二个 to relieve 是 to do 短语（不定式），表示目的，就是「来做什么」。你可能翻成「为了缓解」，也行，但「来缓解」更顺。stress and anxiety 是并列的两个名词，「压力和焦虑」。\n→ 来缓解压力和焦虑"
+     }
+    ],
+    "sum": "学生更愿意靠同伴来缓解压力和焦虑。",
+    "cmp": "意思一样，书上用「依靠」，我用「靠」，更口语。"
+   }
   },
   "The new system will be compatible with existing equipment.": {
    "ph": [
@@ -377,7 +668,38 @@
      "b": "be banned from doing",
      "m": "被禁止做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Toy manufacturers have been banned",
+      "s": "你多半会翻成「玩具制造商已经被禁止」。注意 have been banned 是被动（现在完成时的被动），就是「他们被别人禁止了」。ban 要搭配 from，眼睛往后找：banned from doing，被禁止做某事。\n→ 玩具制造商已被禁止"
+     },
+     {
+      "t": "from using the chemicals",
+      "s": "from 是介词，后面的动词要用 -ing 形式，所以是 using。from 在这里不翻成「从」，而是跟前面连成「禁止做某事」。the chemicals 是「这些化学物质」。\n→ 使用这些化学物质"
+     }
+    ],
+    "sum": "玩具制造商已被禁止使用这些化学物质。",
+    "cmp": "意思一样，我加了「已」，对应英文的完成时 have been。"
+   }
+  },
+  "We feel that geometry is a difficult subject.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "We feel that",
+      "s": "feel 你多半会翻成「感觉」。放回去念：我们感觉几何是……？也可以，但这里更接近「认为、觉得」。that 后面是一个完整的句子，是 feel 的内容，就是宾语从句，说「觉得什么」。\n→ 我们认为"
+     },
+     {
+      "t": "geometry is a difficult subject",
+      "s": "subject 你可能想到「主题」或「主语」，放回去试：几何是一个难的主题？怪。在学校里 subject 是「学科、科目」。\n→ 几何是一门很难的学科"
+     }
+    ],
+    "sum": "我们觉得几何是一门很难的学科。",
+    "cmp": "意思一样。书上用「认为」和「课程」，我用「觉得」和「学科」，都行。"
+   }
   },
   "Everything you learned in elementary school about triangles is pretty basic.": {
    "ph": [
@@ -386,7 +708,21 @@
      "b": "elementary school",
      "m": "小学"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Everything you learned in elementary school about triangles",
+      "s": "这个主语很长，别被吓到。Everything 后面直接跟 you learned，中间省略了 that，补回去是 Everything (that) you learned，这是定语从句，就是给 Everything 补一段说明。找主语的办法：先找谓语 is，is 前面这一串都是主语。你多半会照顺序翻成「一切你学过的在小学关于三角形」，念不通；中文要把说明放在前面：你在小学学到的，关于三角形的所有东西。\n→ 你在小学学到的所有关于三角形的东西"
+     },
+     {
+      "t": "is pretty basic",
+      "s": "pretty 你可能翻成「漂亮的」，放回去：漂亮地基础？这里是副词，「相当、挺」。\n→ 都相当基础"
+     }
+    ],
+    "sum": "你在小学学到的有关三角形的一切，都相当基础。",
+    "cmp": "意思一样，书上多了「是……的」，我去掉了，更简洁。"
+   }
   },
   "You will probably never think of fashion as a trifle again.": {
    "ph": [
@@ -442,7 +778,22 @@
      "b": "appear to be",
      "m": "似乎是，似乎有"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "There does appear",
+      "s": "你多半会翻成「那里确实出现了」，看到 appear 就想到「出现」。放回去试：后面跟着 to be，appear to be 是「似乎是、似乎有」，和 seem to be 差不多。does 是加强语气的，意思是「确实」。\n→ 确实似乎"
+     },
+     {
+      "t": "to be some psychology behind it",
+      "s": "There ... to be 是「有」，some psychology 是「某种心理因素」，behind it 是「在它背后」。中文先说背后，再说有什么。\n→ 在这背后有某种心理因素"
+     }
+    ],
+    "order": "英文用 There be 开头，中文把「这背后」提到前面，说成「这背后似乎确实有……」。",
+    "sum": "这背后似乎确实有某种心理因素。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "They are favored as a form of art.": {
    "ph": [
@@ -456,7 +807,22 @@
      "b": "a form of",
      "m": "一种形式的"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They are favored",
+      "s": "你多半会翻成「它们被偏爱」。are favored 是被动，就是「它们被别人怎么样了」。favored 在这里是「受到青睐、受欢迎」，中文也少说「被」，直接说「受青睐」。\n→ 它们受青睐"
+     },
+     {
+      "t": "as a form of art",
+      "s": "as 你可能翻成「因为」或「当……时」，放回去试：因为一种艺术形式？不通。as 后面是名词短语，不是句子，这时 as 是介词「作为」。a form of 是「一种……形式」。\n→ 作为一种艺术形式"
+     }
+    ],
+    "order": "「作为……」在中文里习惯放在主语后面、谓语前面，所以把 as 这一块提到「受青睐」前面。",
+    "sum": "它们作为一种艺术形式，深受喜爱。",
+    "cmp": "意思一样。书上说「备受青睐」，比我的「深受喜爱」更书面。"
+   }
   },
   "The architecture of these buildings is in the Greek style.": {
    "ph": [
@@ -474,7 +840,35 @@
      "b": "build to",
      "m": "按照……建造"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They are copies",
+      "s": "这块照字面翻就行。\n→ 它们是复制品"
+     },
+     {
+      "t": "built to the architect's designs",
+      "s": "copies 后面直接跟了 built，这是 -ed 短语（过去分词），放在名词后面补说明，意思是「被建造出来的」。放回去试：copies are built，复制品被建造，通。to 你多半会翻成「到」，建造到设计？不通；这里 to 是「按照」。architect 是「建筑师」。\n→ 按照建筑师的设计建造的"
+     }
+    ],
+    "order": "英文把说明放在名词后面，中文要把「按照建筑师的设计建造的」提到「复制品」前面。",
+    "sum": "它们是按建筑师的设计建造的复制品。",
+    "cmp": "几乎一样，书上用「按照」，我用「按」，更短。"
+   }
+  },
+  "The building was constructed in 1993.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The building was constructed in 1993",
+      "s": "你多半会翻成「这座建筑被建造在1993年」。was constructed 是被动，就是「它被别人怎么样了」。中文少用「被」，说「建于」就行。in 1993 是时间，「在1993年」。\n→ 这座建筑建于1993年"
+     }
+    ],
+    "sum": "这座建筑建于1993年。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "It will force cities to transform their infrastructure.": {
    "ph": [
@@ -488,7 +882,21 @@
      "b": "force sb. to do",
      "m": "迫使"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It will force cities to transform",
+      "s": "你多半会翻成「它将强迫城市去转变」。force 后面要有人，再跟 to do：force sb. to do，「迫使某人做某事」。眼睛往后找 to，找到了：force cities to transform，迫使城市改造。transform 是「转变、改造」。\n→ 它将迫使城市改造"
+     },
+     {
+      "t": "their infrastructure",
+      "s": "这块照字面翻就行。infrastructure 是「基础设施」，their 指前面的 cities。\n→ 它们的基础设施"
+     }
+    ],
+    "sum": "它将迫使城市改造自己的基础设施。",
+    "cmp": "和书上基本一样，我把 their 译成「自己的」，书上是「其」。"
+   }
   }
  }
 }

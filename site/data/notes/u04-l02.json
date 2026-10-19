@@ -1,6 +1,23 @@
 {
  "_note": "例句词组与语法解析（书外补充，AI 生成）",
  "sents": {
+  "This book is called The Origin of Species.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "This book is called",
+      "s": "你多半会翻成「这本书被叫做」。念一遍，中文不爱这么说。is called 是被动，就是「这本书被别人怎么样了」——被人叫做什么，说白了就是「叫」。\n→ 这本书叫"
+     },
+     {
+      "t": "The Origin of Species",
+      "s": "这是书名。origin 是「起源」，species 是「物种」（单数复数长得一样）。of 连起来是「物种的起源」，书名里直接说《物种起源》就行。\n→ 《物种起源》"
+     }
+    ],
+    "sum": "这本书叫《物种起源》。",
+    "cmp": "和书上完全一样。"
+   }
+  },
   "Job creation needs to be the top priority.": {
    "ph": [
     {
@@ -8,7 +25,22 @@
      "b": "top priority",
      "m": "当务之急"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Job creation",
+      "s": "你多半会翻成「工作创造」。念一遍，是不是不像中文？creation 是 create 的名词，「创造」的是什么？jobs，工作岗位。合起来是「创造就业机会」。\n→ 创造就业机会"
+     },
+     {
+      "t": "needs to be the top priority",
+      "s": "你可能想翻成「需要去成为最优先的事」。needs to be 是 need to do 的样子，to be 是 to do 短语，就是「需要做某事」，这里的「做」是 be。top priority 是固定搭配，「首要任务」，中文常说「当务之急」。\n→ 需要成为当务之急"
+     }
+    ],
+    "order": "英文是「创造就业」当主语、最后才说「当务之急」；中文可以把「当务之急」提到前面，说成「当务之急是……」，更顺口。",
+    "sum": "当务之急是创造就业机会。",
+    "cmp": "意思一样。书上把「需要成为」省掉，直接说「当务之急是……」，更简洁。"
+   }
   },
   "She moulded the clay into the shape of a head.": {
    "ph": [
@@ -31,7 +63,21 @@
      "b": "be programmed with",
      "m": "被编入"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Some robots are already programmed with",
+      "s": "你多半会翻成「一些机器人已经被用……编程了」。念一遍，别扭吧？are programmed 是被动，就是「机器人被别人怎么样了」——被人编入了什么。programmed with 看成一个整体，「被输入了……」「被植入了……」，with 后面就是输入的内容。\n→ 一些机器人已经被输入了"
+     },
+     {
+      "t": "basic human values",
+      "s": "这块照字面翻就行。values 在这里是「价值观」，不是「价值」。\n→ 基本的人类价值观"
+     }
+    ],
+    "sum": "一些机器人已经被输入了基本的人类价值观。",
+    "cmp": "书上译成「已经具备了」，把被动改成了主动，读起来更像中文。"
+   }
   },
   "He has impressed me with his good sense of humour.": {
    "ph": [
@@ -50,7 +96,22 @@
      "b": "a sense of humour",
      "m": "幽默感"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He has impressed me",
+      "s": "你多半会翻成「他给我留下了印象」，再接「用他好的幽默感」。念一遍，后半句很拗口。impress sb. with sth. 的意思是「某物让某人留下深刻印象」，真正让人印象深的是 with 后面那个东西。\n→ 他让我印象深刻"
+     },
+     {
+      "t": "with his good sense of humour",
+      "s": "你可能想翻成「用他好的幽默的感觉」，太硬了。sense of humour 是一个整体，就是「幽默感」。办法是把 with 后面的内容提上来当主语：谁让我印象深刻？是他的幽默感。\n→ 他良好的幽默感"
+     }
+    ],
+    "order": "英文是「他给我留下印象，靠的是幽默感」，中文更习惯把原因提上来：「他的幽默感给我留下了深刻印象」。",
+    "sum": "他的幽默感给我留下了很深的印象。",
+    "cmp": "和书上一样，书上也是把 with 后面的内容提成了主语。"
+   }
   },
   "Our skins let us know whether the air is moist or dry.": {
    "ph": [
@@ -59,7 +120,21 @@
      "b": "let sb. know",
      "m": "让……知道"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Our skins let us know",
+      "s": "你多半会翻成「我们的皮肤们让我们知道」。skins 是复数，但中文说「皮肤」就行，不用「们」。let us know 是 let sb. do，就是「让某人做某事」，这里是「让我们知道」。\n→ 我们的皮肤可以让我们知道"
+     },
+     {
+      "t": "whether the air is moist or dry",
+      "s": "你可能翻成「是否空气是潮湿或干燥」。whether 带的是从句，这里是 know 的内容，就是「知道什么」。whether … or … 翻成「是……还是……」就顺了。moist 是「潮湿的」，和 dry 是反义词。\n→ 空气是潮湿还是干燥"
+     }
+    ],
+    "sum": "我们的皮肤能让我们知道空气是潮湿还是干燥。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "The storm didn't do much damage.": {
    "ph": [
@@ -86,7 +161,22 @@
      "b": "lodge with",
      "m": "租住在……家"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He lodged with Mrs. Brown",
+      "s": "你多半会翻成「他和布朗太太一起住宿」。放回去想：一起住？lodge 不是一般的住，是「租住、寄宿」，with 后面是房东家。所以是「住在布朗太太家里」。\n→ 他租住在布朗太太家里"
+     },
+     {
+      "t": "when he arrived in the city",
+      "s": "when 带的是时间状语从句，就是给前面那件事补上「什么时候」。arrive in 是「到达」，in 后面接城市这种大地方。\n→ 他到这座城市的时候"
+     }
+    ],
+    "order": "英文先说住哪里、后说什么时候；中文习惯先交代时间，所以把「他到这座城市时」提到前面。",
+    "sum": "他刚到这座城市的时候，租住在布朗太太家里。",
+    "cmp": "和书上基本一样，书上也把时间提到了前面。"
+   }
   },
   "Real friendship is when two individuals share the same soul.": {
    "ph": [],
@@ -202,7 +292,21 @@
      "b": "that's where",
      "m": "那就是……的地方"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "That's where",
+      "s": "你多半会把 where 翻成「哪里」，说成「那是哪里」。念一遍，不通吧？where 在这里带的是表语从句，就是 That is 后面补一段话来说明「那是个什么地方」。所以 where 要翻成「……的地方」。\n→ 那就是……的地方"
+     },
+     {
+      "t": "fresh produce, meat and seafood, and dairy are",
+      "s": "先把三样东西数清楚：fresh produce / meat and seafood / dairy，前面用逗号隔开，and 只在最后一项前面出现。produce 这里读成名词，是「农产品（蔬菜水果）」。dairy 是「乳制品」。are 说明这些东西「在那里」，中文常说「有」。\n→ 摆着新鲜农产品、肉类和海鲜、乳制品"
+     }
+    ],
+    "sum": "那就是摆着新鲜农产品、肉类海鲜和乳制品的地方。",
+    "cmp": "书上译成「那里有……」，把 where 从句直接改成了「有」。更短，也顺口，意思没变。"
+   }
   },
   "He shaped delicious masterpieces out of flour, butter and sugar.": {
    "ph": [
@@ -258,7 +362,25 @@
      "b": "change direction",
      "m": "改变方向"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "If a new competitor emerges",
+      "s": "If 带的是条件从句，就是「如果发生了这件事」。emerges 你可能没见过，它是「出现、冒出来」。a new competitor 是「一个新的竞争对手」。\n→ 如果出现了一个新的竞争对手"
+     },
+     {
+      "t": "to threaten your business",
+      "s": "你多半会翻成「为了威胁你的业务」。念一遍，竞争对手是故意跑出来的吗？这里的 to threaten 是 to do 短语，补充说明出现之后怎么样了，不要硬翻成「为了」，拆成两个动作：出现，然后威胁到你的生意。\n→ 并威胁到你的生意"
+     },
+     {
+      "t": "you may need to change direction",
+      "s": "may 在这里是「可能」。need to 是 need to do，「需要做某事」。change direction 字面是「改变方向」，放在做生意里就是「调整方向」。\n→ 你可能需要调整方向"
+     }
+    ],
+    "sum": "如果出现了新的竞争对手，威胁到你的生意，你可能需要调整方向。",
+    "cmp": "和书上几乎一样，书上「改变方向」，我写成「调整方向」，意思相同。"
+   }
   },
   "The government has declared a state of emergency following the earthquake.": {
    "ph": [
@@ -281,7 +403,22 @@
      "b": "urge sb. to do",
      "m": "催促……做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It urged tourists to leave Tunisia",
+      "s": "你多半会翻成「它催促游客去离开突尼斯」。别急，眼睛往后找 to：urge sb. to do 是一个整体，「催促某人做某事」，to leave 是 to do 短语，说的就是催促他们做什么。leave 这里是「离开」，后面直接跟地点。\n→ 它催促游客离开突尼斯"
+     },
+     {
+      "t": "immediately",
+      "s": "你可能把它放错位置。immediately 是「立即」，修饰的是 leave，意思是要马上离开。\n→ 立即"
+     }
+    ],
+    "order": "「立即」放在「离开」前面，说成「立即离开突尼斯」更顺口。",
+    "sum": "它催促游客立即离开突尼斯。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Marine biologists are looking for the secret of turtles' reproduction.": {
    "ph": [
@@ -387,7 +524,38 @@
      "b": "see no parallel in",
      "m": "前所未有"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It is one that",
+      "s": "这里的 that 你可能以为是「那个」。放回去试试：It is one that has seen…，that 后面直接是 has seen，缺了主语，所以 that 带的是定语从句，就是给前面的 one 补一段说明，that 就指 one。one 是什么我们不知道，别去猜，只当「一个这样的情况」。\n→ 这是一个……的情况"
+     },
+     {
+      "t": "has seen no parallel in economic history",
+      "s": "你多半会翻成「在经济史上没有看到相似的」。see 在这里不是真的「看」，英文喜欢说「某个时代见到过什么」，中文就是「出现过」。no parallel 是「没有可以相比的」。\n→ 在经济史上没有出现过可以相比的"
+     }
+    ],
+    "sum": "这种情况在经济史上从未出现过。",
+    "cmp": "书上译成「前所未有」，比我的译法更简练，意思相同。"
+   }
+  },
+  "We seem to exhibit paradox.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "We seem to",
+      "s": "你多半会翻成「我们好像去……」。seem to do 是固定搭配，「似乎做某事」，seem to 直接合在一起读，翻成「似乎」。\n→ 我们似乎"
+     },
+     {
+      "t": "exhibit paradox",
+      "s": "exhibit 你可能只认识「展览」，这里是「表现出」。paradox 是「矛盾」，就是又这样又那样、自相矛盾的现象。\n→ 表现出矛盾"
+     }
+    ],
+    "sum": "我们似乎表现出了矛盾。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "They held a parade to mark the soldiers' return.": {
    "ph": [
@@ -396,7 +564,39 @@
      "b": "hold a parade",
      "m": "举行游行"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They held a parade",
+      "s": "你多半会翻成「他们握了一个游行」。held 是 hold 的过去式，hold a parade 是一个整体，「举行游行」。\n→ 他们举行了游行"
+     },
+     {
+      "t": "to mark the soldiers' return",
+      "s": "你可能想翻成「去给士兵的回来做记号」。念一遍，不对吧？to mark 是 to do 短语，说的是目的，「为了……」。mark 在这里不是「做记号」，是「纪念、庆祝」。the soldiers' return 里 return 是名词，「归来」。\n→ 来庆祝士兵们归来"
+     }
+    ],
+    "sum": "他们举行了游行，庆祝士兵们归来。",
+    "cmp": "和书上一样，书上把「归来」说成「凯旋」，更有气势。"
+   }
+  },
+  "This is the strangest bug I've ever seen.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "This is the strangest bug",
+      "s": "你多半会把 bug 翻成「程序漏洞」。放回去试试：strangest 的虫子，这里是真的「虫子」，书上也是这个意思。the strangest 是最高级，就是「最奇怪的」。\n→ 这是最奇怪的虫子"
+     },
+     {
+      "t": "I've ever seen",
+      "s": "bug 后面直接跟了 I've，中间藏了个 that，补回去：the strangest bug (that) I've ever seen，这是省略了 that 的定语从句，就是给前面的 bug 补说明。放回去试：I've seen the bug，我看见过这只虫子，对。ever 加现在完成时，是「迄今为止」。\n→ 我见过的"
+     }
+    ],
+    "order": "英文是「最奇怪的虫子，（就是）我见过的」，中文要把「我见过的」提到前面，放在名词前面：「我见过的最奇怪的虫子」。",
+    "sum": "这是我见过的最奇怪的虫子。",
+    "cmp": "书上说「最奇特的」，我写「最奇怪的」，意思一样。"
+   }
   },
   "On the road there is little to protect them from mud and insects.": {
    "ph": [
@@ -427,6 +627,23 @@
     "cmp": "意思一样。书上写的是「免受泥土和昆虫的伤害」，我用「不受……侵害」，说法不同，意思相同。"
    }
   },
+  "Their aim was to provide quality, yet affordable wooden furniture.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Their aim was to provide",
+      "s": "你多半会翻成「他们的目标是去提供」。was to provide 是 to do 短语，补出「目标是什么」，就是「做某事」。\n→ 他们的目标是提供"
+     },
+     {
+      "t": "quality, yet affordable wooden furniture",
+      "s": "你可能把 quality 当成名词「质量」。放回去试：质量家具？不通。这里它放在 furniture 前面当形容词用，就是「优质的」。逗号加 yet 把 quality 和 affordable 连起来，「优质，但又买得起」。affordable 是 afford（买得起）加 able。wooden 是「木制的」。\n→ 优质但价格合理的木制家具"
+     }
+    ],
+    "sum": "他们的目标是提供优质但价格实惠的木制家具。",
+    "cmp": "和书上基本一样，书上用了「价格合理」，我用了「价格实惠」。"
+   }
+  },
   "At the time, most large homes were constructed of timber and brick.": {
    "ph": [
     {
@@ -439,7 +656,21 @@
      "b": "be constructed of",
      "m": "由……建造"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "At the time, most large homes",
+      "s": "at the time 是「当时」，放在句首，逗号隔开。most large homes 是「大多数大房子」。这块照字面翻就行。\n→ 当时，大多数大房子"
+     },
+     {
+      "t": "were constructed of timber and brick",
+      "s": "你多半会翻成「被建造自木材和砖」。念一遍，怪吧？were constructed 是被动，就是「房子被别人怎么样了」——被人建造。中文少用「被」，说「是用……建成的」。of 后面是材料。timber 是「木材」。\n→ 是用木材和砖建造的"
+     }
+    ],
+    "sum": "当时，大多数大房子是用木材和砖建造的。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "They decided to chase the cow away.": {
    "ph": [
@@ -453,7 +684,21 @@
      "b": "chase … away",
      "m": "赶走"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They decided to",
+      "s": "你多半会翻成「他们决定去」。decide to do 是固定搭配，「决定做某事」，to 后面就是决定要做的事。\n→ 他们决定"
+     },
+     {
+      "t": "chase the cow away",
+      "s": "你可能想翻成「追牛走」。念一遍，不通吧？chase 本来是「追」，眼睛往后找 away：chase … away 是一个整体，「把……赶走」，the cow 夹在中间，就是被赶的对象。\n→ 把牛赶走"
+     }
+    ],
+    "sum": "他们决定把牛赶走。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "We should feel happy when we pursue knowledge for knowledge's sake.": {
    "ph": [
@@ -462,7 +707,26 @@
      "b": "for sth.'s sake",
      "m": "为了……本身"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "We should feel happy",
+      "s": "这块照字面翻就行。should 是「应该」，feel happy 是「感到快乐」。\n→ 我们应该感到快乐"
+     },
+     {
+      "t": "when we pursue knowledge",
+      "s": "你多半会翻成「当我们追赶知识」。pursue 不是追人，用在知识上是「追求」。when 带的是时间状语从句，就是「在……的时候」。\n→ 当我们追求知识的时候"
+     },
+     {
+      "t": "for knowledge's sake",
+      "s": "你可能想翻成「为了知识的缘故」。念一遍，有点绕。for sth.'s sake 是固定搭配，「为了……本身」，意思是不为别的，就为这件事自己。看到 for … sake，脑子里换成「为了……本身」。\n→ 是为了知识本身"
+     }
+    ],
+    "order": "英文先说快乐、后说什么时候；中文习惯先交代时间，所以把「当我们为了知识本身而追求知识时」提到前面。",
+    "sum": "当我们为了知识本身而追求知识时，应该感到快乐。",
+    "cmp": "和书上完全一样。"
+   }
   }
  }
 }

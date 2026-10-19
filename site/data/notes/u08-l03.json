@@ -42,6 +42,24 @@
     }
    ]
   },
+  "There're three main types of financial stress people encounter.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "There're three main types of financial stress",
+      "s": "这块照字面翻就行。There're 是 there are 的缩写，there be 是「有」，不是「那里」。three main types of 就是「三种主要的类型」。\n→ 有三种主要类型的财务压力"
+     },
+     {
+      "t": "people encounter",
+      "s": "stress 后面直接跟了 people encounter，你多半不知道怎么接。念「压力人们遇到」，不通顺。这是定语从句，省掉了 that，补回去是 financial stress (that) people encounter，意思是给前面的名词补一段说明。放回去试：people encounter financial stress，人们遇到财务压力，通。\n→ 人们遇到的"
+     }
+    ],
+    "order": "英文把说明放在名词后面，中文要把「人们遇到的」提到名词前面当修饰语。",
+    "sum": "人们会遇到三种主要类型的财务压力。",
+    "cmp": "意思一样。书上把「人们遇到的」放在前面当修饰语，再说「主要有三种类型」，更像中文口语。"
+   }
+  },
   "It is impossible for Americans to lift themselves out of poverty entirely on their own.": {
    "ph": [
     {
@@ -80,6 +98,23 @@
     "cmp": "和书上基本一样，书上也把「靠自己」提到了「摆脱贫困」前面。"
    }
   },
+  "It's a good problem to have, but it can be a tough skill to master.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It's a good problem to have",
+      "s": "你多半会翻成「这是一个要有的好问题」。念一遍，是不是有点怪？to have 是 to do 短语，作 problem 的后置定语，就是给 problem 补一段说明。眼睛从 problem 往后看：have this problem，「拥有这个问题」。说白了，能有这种问题是件好事。\n→ 这是个有了也不错的问题"
+     },
+     {
+      "t": "but it can be a tough skill to master",
+      "s": "你多半会翻成「它能是一个要掌握的难技能」。念一遍，别扭。can 在这里是「可能」，不是「能够」。to master 和上一块一样，是 to do 短语，补充说明 skill：master the skill，掌握这项技能。tough 是「难的」。\n→ 但它可能是一项很难掌握的技能"
+     }
+    ],
+    "sum": "有这样的问题是好事，但它可能是一项很难掌握的技能。",
+    "cmp": "意思一样。书上说「一个很好的问题」，我把 good 说成「是好事」，更顺。"
+   }
+  },
   "We had to face up to the harsh realities of life sooner or later.": {
    "ph": [
     {
@@ -92,7 +127,22 @@
      "b": "sooner or later",
      "m": "迟早"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "We had to face up to",
+      "s": "你多半会把 had 当成「有」，翻成「我们有去面对」。念一遍，不通。had to 连在一起是 have to 的过去式，「不得不」，后面跟动词原形 face。face up to 是「正视、面对」。\n→ 我们不得不正视"
+     },
+     {
+      "t": "the harsh realities of life sooner or later",
+      "s": "harsh realities 你多半会翻成「严酷的现实」，再接上 of life，变成「生活的严酷的现实」，两个「的」叠在一起，念着累。去掉一个，说「生活的严酷现实」。sooner or later 是「迟早」，英文爱放句尾，中文要放到动词前面。\n→ 生活的严酷现实，迟早"
+     }
+    ],
+    "order": "sooner or later 在英文里压在句尾，中文把「迟早」放到「不得不」前面。",
+    "sum": "我们迟早得正视生活的严酷现实。",
+    "cmp": "和书上一样。"
+   }
   },
   "Hunting foxes with dogs is considered cruel and violent.": {
    "ph": [
@@ -101,7 +151,21 @@
      "b": "be considered",
      "m": "被认为是"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Hunting foxes with dogs",
+      "s": "一开头是 Hunting，别慌。-ing 开头当主语，就是「做某事」这件事。with dogs 你多半会翻成「和狗一起」，放回去试试：和狗一起猎狐狸？猎狐的是人，狗是工具，所以 with 在这里是「用」。\n→ 用狗猎狐狸"
+     },
+     {
+      "t": "is considered cruel and violent",
+      "s": "你多半会翻成「被认为是残忍的和暴力的」。意思没错，但 is considered 是被动，就是「它被别人怎么样了」，中文少用「被」，把「认为的人」请出来：人们认为。cruel and violent 是并列的两个形容词，「残忍又暴力」。\n→ 人们认为是既残忍又暴力的"
+     }
+    ],
+    "sum": "人们认为用狗猎狐狸既残忍又暴力。",
+    "cmp": "意思一样。书上保留了「被认为是」，贴着原句；我把被动改成了「人们认为」，更像中文。"
+   }
   },
   "The number of people opposed to fox hunting, because they think it is brutal, has risen sharply.": {
    "ph": [
@@ -167,7 +231,25 @@
      "b": "time off",
      "m": "休假"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "This might mean",
+      "s": "你可能会把 might 当成 may 的过去式。这里没有 if 条件，也没有和事实相反，不是虚拟；前面也没有过去时需要呼应，所以它是语气比 may 更委婉的「可能」。\n→ 这可能意味着"
+     },
+     {
+      "t": "thinking of non-financial ways to reward employees",
+      "s": "mean 后面接 thinking of，是 -ing 短语，就是「考虑」这件事。think of 在这里是「考虑」，不是「想到」。to reward employees 是 to do 短语，作 ways 的后置定语：眼睛从 ways 往后看，ways to reward，「奖励员工的方式」。non-financial 是「非经济的」。\n→ 考虑奖励员工的非经济方式"
+     },
+     {
+      "t": "like unpaid time off or flexible work schedules",
+      "s": "like 你多半会翻成「喜欢」，念一遍，不通。这里 like 是介词，「比如」，后面列举例子。time off 是「休假」，unpaid 是「无薪的」，flexible 是「灵活的」。\n→ 比如无薪休假或灵活的工作时间安排"
+     }
+    ],
+    "sum": "这可能意味着要考虑用非经济的方式奖励员工，比如无薪休假或灵活的工作时间安排。",
+    "cmp": "意思一样。书上译成「非经济方式来奖励员工」，我把「奖励员工的非经济方式」连成一个短语，读起来更紧凑。"
+   }
   },
   "They can become increasingly vulnerable to serious illnesses.": {
    "ph": [
@@ -177,6 +259,24 @@
      "m": "易受……的影响"
     }
    ]
+  },
+  "Boil the beans until they are tender.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Boil the beans",
+      "s": "这块照字面翻就行。没有主语，直接以动词开头，是祈使句，就是「命令、叮嘱」别人去做。\n→ 煮豆子"
+     },
+     {
+      "t": "until they are tender",
+      "s": "你多半会翻成「直到它们是嫩的」。念一遍，怪。until 带的是时间状语从句，「直到……为止」；tender 说食物，是「煮得软烂」。they 指谁？句子里只有 the beans 是复数，放回去：豆子是软的，通。\n→ 直到豆子变软"
+     }
+    ],
+    "order": "把 until 的内容放在动词后面，翻成「煮到……为止」更顺。",
+    "sum": "把豆子煮到变软为止。",
+    "cmp": "意思一样。书上译成「煮到变软」，更简洁。"
+   }
   },
   "It has mild weather both in summer and in winter.": {
    "ph": [
@@ -208,7 +308,39 @@
      "b": "run through",
      "m": "掠过，贯穿"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He felt a cold shiver of fear",
+      "s": "你多半会翻成「他感到一个冷的恐惧的颤抖」。念一遍，三个「的」堆在一起。shiver 是名词「颤抖、寒战」，of fear 说它由恐惧引起。把名词 shiver 换成动词说：「吓得打寒战」。\n→ 他感到一阵恐惧的寒战"
+     },
+     {
+      "t": "run through him",
+      "s": "run 前面为什么没有 to？因为 feel 这类感官动词，后面可以接「宾语加动词原形」，表示「感觉到它在做某事」。run 你多半会翻成「跑」，run through 是「窜过、传遍」。放回去试：寒战传遍了他，通。\n→ 传遍了全身"
+     }
+    ],
+    "sum": "他感到一阵恐惧的寒战传遍全身。",
+    "cmp": "书上译成「他吓得打了一个寒战」，把「恐惧」变成原因，更口语；我的译法贴着原句，「寒战传遍全身」更形象。"
+   }
+  },
+  "The ground quaked as the bomb exploded.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The ground quaked",
+      "s": "这块照字面翻就行。quake 是动词，「震动、颤抖」，过去式 quaked。\n→ 地面震动了"
+     },
+     {
+      "t": "as the bomb exploded",
+      "s": "as 你多半只认识「因为」，翻成「因为炸弹爆炸」。意思不算错，但 as 最常见的意思是「当……的时候」，它带的是时间状语从句，两件事同时发生。放回去：炸弹爆炸的时候地面震动，更自然。\n→ 炸弹爆炸的时候"
+     }
+    ],
+    "order": "英文把「什么时候」放在后面，中文习惯先说时间，所以把「炸弹爆炸时」提到前面。",
+    "sum": "炸弹爆炸时，地面都震动了。",
+    "cmp": "和书上一样。"
+   }
   },
   "Consumers say they're not in despair.": {
    "ph": [
@@ -217,7 +349,21 @@
      "b": "in despair",
      "m": "绝望"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Consumers say",
+      "s": "say 后面直接跟了 they're，中间省掉了 that，补回去是 say (that) they're……。这是宾语从句，就是「说的内容」。\n→ 消费者表示"
+     },
+     {
+      "t": "they're not in despair",
+      "s": "they're 是 they are，they 指 Consumers，句子里只有这一个复数名词。in despair 你多半会翻成「在绝望里」，念一遍，别扭。in 加名词常常表示「处于某种状态」，in despair 就是「陷入绝望」，换成动词：感到绝望。\n→ 他们并没有感到绝望"
+     }
+    ],
+    "sum": "消费者表示，他们并没有感到绝望。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Let's compare a theoretical financial education subject to the standard compulsory English class.": {
    "ph": [
@@ -249,7 +395,21 @@
      "b": "make a fuss",
      "m": "大惊小怪"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He loves them but",
+      "s": "这块照字面翻就行。but 表示转折，前面是「爱他们」，后面的话要拐个弯。\n→ 他爱他们，但是"
+     },
+     {
+      "t": "does not want to make a fuss",
+      "s": "does not want to make 是 to do，「想做某事」的否定，就是「不想做某事」。make a fuss 你多半会翻成「做一个骚动」，念一遍，不是人话。make a fuss 是一个整体，「大惊小怪、小题大做」。\n→ 不想大惊小怪"
+     }
+    ],
+    "sum": "他爱他们，但不想小题大做。",
+    "cmp": "意思一样。书上的「大惊小怪」和我的「小题大做」都对，前者强调反应过度，后者强调把小事闹大。"
+   }
   },
   "The solution to this dilemma is using data and instincts in conjunction.": {
    "ph": [
@@ -263,7 +423,39 @@
      "b": "in conjunction with",
      "m": "结合，协同"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The solution to this dilemma",
+      "s": "你多半会翻成「对这个困境的解决方案」。念一遍，绕。solution to 就是「……的解决办法」，to 是介词。dilemma 是「两难的处境」，换成动词：解决这个困境的办法。\n→ 解决这一困境的办法"
+     },
+     {
+      "t": "is using data and instincts in conjunction",
+      "s": "is 后面直接是 using，这是 -ing 当表语，就是「办法就是做某事」。in conjunction 你多半会连在 instincts 后面，翻成「联合的直觉」，这就错了。它放在最后，修饰整个 using：数据和直觉「一起、结合」着用。\n→ 就是把数据和直觉结合起来使用"
+     }
+    ],
+    "sum": "解决这个两难处境的办法，就是把数据和直觉结合起来使用。",
+    "cmp": "和书上基本一样，书上写「结合使用数据和直觉」，我把「把……结合起来使用」说得更口语一点。"
+   }
+  },
+  "Doctors were fighting a desperate battle to save the little girl's life.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Doctors were fighting a desperate battle",
+      "s": "你多半会翻成「医生们正在打一场绝望的战斗」。念一遍，怪。医生没有绝望，这里的 desperate 是「拼命的、不顾一切的」。were fighting 是进行时，不是被动，就是「当时正在做」。a battle 在这里是比喻，指抢救。\n→ 医生们在进行一场拼命的抢救"
+     },
+     {
+      "t": "to save the little girl's life",
+      "s": "to save 是 to do 短语，在这里表目的，就是「为了做某事」。放回去试：打这场仗，是为了救小女孩的命，通。save one's life 是「挽救某人的生命」。\n→ 为了挽救小女孩的生命"
+     }
+    ],
+    "order": "目的放在前面说，中文更顺：先说「为了什么」，再说「怎么做」。",
+    "sum": "医生们为了挽救小女孩的生命，正在拼命抢救。",
+    "cmp": "书上把「打一场仗」和「目的」合起来，说成「不惜一切地奋力抢救小女孩的生命」，更精炼；我的译法保留了「为了」，贴着原句。"
+   }
   },
   "The car decelerated because of the sudden change in the weather.": {
    "ph": [
@@ -278,6 +470,23 @@
      "m": "……的变化"
     }
    ]
+  },
+  "They provide objective information without exaggerating.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "They provide objective information",
+      "s": "这块照字面翻就行。provide 是「提供」，objective 是「客观的」。\n→ 他们提供客观的信息"
+     },
+     {
+      "t": "without exaggerating",
+      "s": "你多半会翻成「没有夸大地」，念一遍，不通顺。without 是介词，后面跟动词要变成 -ing，所以是 exaggerating。-ing 短语在这里就是「不做某事就……」。exaggerating 后面没有宾语，说白了就是「不夸大」。\n→ 而不夸大其词"
+     }
+    ],
+    "sum": "他们提供客观的信息，不夸大其词。",
+    "cmp": "和书上一样。"
+   }
   },
   "Stress will weaken the body's defense against germs.": {
    "ph": [
@@ -354,7 +563,38 @@
      "b": "lead to",
      "m": "导致"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "But curiosity can also be dangerous",
+      "s": "你多半会翻成「好奇心也能是危险的」。念一遍，别扭。can 在这里是「可能、有时会」，不是「能够」。also 说明前面肯定了好奇心的好处，这里补一个反面。\n→ 但好奇心也可能是危险的"
+     },
+     {
+      "t": "leading to setbacks or even downfalls",
+      "s": "leading 是 -ing 短语，用逗号接在句尾，说明前面这件事带来的结果。lead to 是「导致」，to 是介词，后面跟结果。setbacks 是「挫折」，downfalls 是「垮台、失败」。\n→ 导致挫折，甚至失败"
+     }
+    ],
+    "sum": "但好奇心也可能带来危险，导致挫折甚至失败。",
+    "cmp": "意思一样。书上译成「它会导致挫折甚至失败」，加了「它」，我省掉了。"
+   }
+  },
+  "Though there are plans to add translations, language barriers can be a big obstacle.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Though there are plans to add translations",
+      "s": "Though 带的是让步状语从句，看到它，脑子里换成「虽然」，后面的话要拐弯。there are 是「有」。to add translations 是 to do 短语，作 plans 的后置定语：眼睛从 plans 往后看，plans to add，「增加翻译的计划」。\n→ 虽然有增加翻译的计划"
+     },
+     {
+      "t": "language barriers can be a big obstacle",
+      "s": "你多半会翻成「语言障碍能是一个大障碍」。barrier 和 obstacle 都是「障碍」，连用太重复，换成「语言障碍可能是个大阻碍」。can 在这里是「可能」，不是「能够」。前面有「虽然」，这里补一个「但」。\n→ 但语言障碍可能是一个很大的阻碍"
+     }
+    ],
+    "sum": "虽然有增加翻译的计划，但语言障碍仍可能是一个很大的阻碍。",
+    "cmp": "意思一样。书上没有「仍」，我加上是为了让转折更明显。"
+   }
   },
   "Do not try to restrain me from beating him.": {
    "ph": [
@@ -368,7 +608,21 @@
      "b": "restrain sb. from doing",
      "m": "阻止某人做某事"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Do not try to restrain me",
+      "s": "没有主语、以 Do not 开头，是祈使句的否定，就是「别做某事」。try to restrain 是 to do，「试图做某事」。restrain 你多半翻成「约束」，后面还有 from，约束我什么？先记下，眼睛往后找 from。\n→ 不要试图阻止我"
+     },
+     {
+      "t": "from beating him",
+      "s": "找到了：restrain A from doing，「阻止 A 做某事」。A 是 me，所以被阻止的是「我打他」。from 是介词，后面动词要变成 -ing。你可能会翻成「阻止我从打他」，中文不这么说，直接说「打他」。\n→ 打他"
+     }
+    ],
+    "sum": "不要试图拦着我不让我打他。",
+    "cmp": "意思一样。书上译成「阻止我打他」，更简洁；我写成「拦着我不让我打他」，口气更重一点。"
+   }
   },
   "Laws can restrict or ban voting, access to public housing, and professional and business licensing.": {
    "ph": [
@@ -400,7 +654,22 @@
      "b": "in haste",
      "m": "匆忙地"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The letter had clearly been written",
+      "s": "你多半会翻成「这封信被明显地写了」。念一遍，怪。had been written 是被动，就是「信是被人写的」，中文少用「被」，直接说「信是……写成的」。had been 说明写信发生在更早之前。clearly 是「显然」，在这里是对整句话的判断。\n→ 这封信显然是写成的"
+     },
+     {
+      "t": "in haste",
+      "s": "in haste 你多半会翻成「在匆忙里」，念一遍，别扭。in 加名词表示「处于某种状态」，in haste 就是「匆忙地」。\n→ 在匆忙中"
+     }
+    ],
+    "order": "把「匆忙」提前，中文更顺：「是匆忙写成的」。",
+    "sum": "这封信显然是匆忙写成的。",
+    "cmp": "意思一样。书上说「在匆忙中写的」，贴着原句；我把它压缩成「匆忙写成的」。"
+   }
   },
   "I hate it because it's an obligation disguised as an option.": {
    "ph": [
@@ -409,7 +678,38 @@
      "b": "be disguised as",
      "m": "伪装成"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "I hate it because",
+      "s": "这块照字面翻就行。because 带原因，前面是结果「我讨厌它」，后面是原因。\n→ 我讨厌它，因为"
+     },
+     {
+      "t": "it's an obligation disguised as an option",
+      "s": "it's 是 it is，后面 disguised 是过去分词（-ed）短语，作 obligation 的后置定语，就是给 obligation 补一段说明：被伪装成……的义务。disguised as 是「伪装成」。你多半翻成「一个被伪装成选择的义务」，太长，把 disguised 提前，说「伪装成选择的义务」。option 在这里是「可选的东西」。\n→ 它是一种伪装成可选项的义务"
+     }
+    ],
+    "sum": "我讨厌它，因为它是一种伪装成可选项的义务。",
+    "cmp": "意思一样。书上译成「伪装成自由选择的义务」，我把 option 说成「可选项」，书上的「自由选择」更口语一点。"
+   }
+  },
+  "Philosophers believe that desire, hatred and envy are \"negative emotions\".": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Philosophers believe that",
+      "s": "that 带的是宾语从句，就是「相信的内容」。believe that 后面整段话都是 believe 的内容。\n→ 哲学家认为"
+     },
+     {
+      "t": "desire, hatred and envy are \"negative emotions\"",
+      "s": "desire 你多半会当成动词「想要」，翻成「想要、仇恨和嫉妒」。念一遍，不通。这里 desire 是名词「欲望」，和 hatred、envy 三个名词并列当主语，所以后面是 are。引号里的 negative emotions 是一个现成的说法，「负面情绪」。\n→ 欲望、仇恨和嫉妒都是「负面情绪」"
+     }
+    ],
+    "sum": "哲学家认为，欲望、仇恨和嫉妒都是「负面情绪」。",
+    "cmp": "和书上基本一样，书上用的是「忌妒」，我写「嫉妒」，两种写法都常见。"
+   }
   },
   "They are built in harmony with the environment.": {
    "ph": [
@@ -418,7 +718,21 @@
      "b": "in harmony with",
      "m": "与……协调"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They are built",
+      "s": "你多半会翻成「它们被建造」。念一遍，怪。are built 是被动，就是「它们被人怎么样了」，中文少用「被」，说「它们建成的方式」或者「它们是这样建的」更顺。\n→ 它们是这样建造的"
+     },
+     {
+      "t": "in harmony with the environment",
+      "s": "in harmony with 你多半会翻成「在与环境的和谐里」，绕。in harmony with 是「与……协调一致」，in 说的是处于什么状态。放回去：建造的方式与环境协调。\n→ 与环境协调"
+     }
+    ],
+    "sum": "它们的建造方式与环境协调一致。",
+    "cmp": "意思一样。书上译成「是以与环境协调的方式建造的」，把被动保留成「建造的」，更完整；我压成了「建造方式」。"
+   }
   },
   "They will coordinate with the Social Security Administration.": {
    "ph": [
@@ -441,7 +755,26 @@
      "b": "in sickness and in health",
      "m": "无论疾病还是健康"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "In the classic marriage vow",
+      "s": "这块照字面翻就行。classic 是「经典的」，marriage vow 是「婚姻誓约」。\n→ 在经典的婚姻誓约中"
+     },
+     {
+      "t": "couples promise to stay together",
+      "s": "promise to stay 是 to do，promise to do 是「承诺做某事」，to stay 说的是承诺的内容。stay together 是「在一起」。couples 在这里是「夫妻」。\n→ 夫妻承诺在一起"
+     },
+     {
+      "t": "in sickness and in health",
+      "s": "你多半会翻成「在疾病中和在健康中」，字面通，但中文不这么说。in A and in B 这种格式，说白了是「无论 A 还是 B」。\n→ 无论疾病还是健康"
+     }
+    ],
+    "order": "把「无论疾病还是健康」提到「在一起」前面，更自然。",
+    "sum": "在经典的婚姻誓约中，夫妻承诺无论疾病还是健康都不分离。",
+    "cmp": "意思一样。书上译成「都会在一起」，我换成「不分离」，两个都对。"
+   }
   },
   "There is not enough evidence to classify it as a disease.": {
    "ph": [
@@ -455,7 +788,22 @@
      "b": "classify … as",
      "m": "把……归类为"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "There is not enough evidence",
+      "s": "你多半会翻成「那里没有足够的证据」。there 在这里不是「那里」，there be 就是「有」，加上 not enough，是「没有足够的」。\n→ 没有足够的证据"
+     },
+     {
+      "t": "to classify it as a disease",
+      "s": "to classify 是 to do 短语，作 evidence 的后置定语，就是给 evidence 补一段说明：证据是用来做什么的。看到 classify，眼睛往后找 as：classify A as B，「把 A 归类为 B」。A 是 it，B 是 a disease。\n→ 把它归类为一种疾病"
+     }
+    ],
+    "order": "中文把「做什么」的内容放到「证据」前面，说成「足以把它归类为疾病的证据」，或者直接说成「没有足够的证据来……」，都行。",
+    "sum": "没有足够的证据能把它归类为一种疾病。",
+    "cmp": "意思一样。书上多了「目前还」，是书上的语气，原句里没有这些字。"
+   }
   },
   "The earth is composed of several layers.": {
    "ph": [
@@ -464,7 +812,21 @@
      "b": "be composed of",
      "m": "由……组成"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The earth is composed of",
+      "s": "你多半会翻成「地球被组成」。念一遍，不通。is composed of 是被动，就是「地球被怎么样了」，但 be composed of 是一个固定搭配，「由……组成」。\n→ 地球由"
+     },
+     {
+      "t": "several layers",
+      "s": "这块照字面翻就行。several 是「几个」，layer 是「层」。\n→ 几层组成"
+     }
+    ],
+    "sum": "地球由好几层组成。",
+    "cmp": "和书上一样，我多加了一个「好」字，强调数量不止一两层。"
+   }
   },
   "Fast technological change makes it necessary for one to constantly upgrade their skills.": {
    "ph": [
@@ -497,7 +859,39 @@
      "b": "in rank",
      "m": "在级别上"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Promotion will mean that",
+      "s": "Promotion 是名词，「升职」，作主语。will mean 是「将意味着」。that 带的是宾语从句，就是 mean 的内容。\n→ 升职将意味着"
+     },
+     {
+      "t": "I'm immediately above him in rank",
+      "s": "你多半会翻成「我立刻在他之上在级别上」，两个「在」叠在一起，念着累。in rank 是「在级别上」，说明比较的方面，换成「级别比他高」。immediately above 是「紧挨着在……上面」，说白了就是「高一级」。\n→ 我的级别比他高一级"
+     }
+    ],
+    "sum": "升职意味着我的级别会比他高一级。",
+    "cmp": "意思一样。书上译成「升职后我会比他高一级」，把「意味着」换成了「升职后」，更简洁。"
+   }
+  },
+  "Today foreign students earn 30 percent of the doctoral degrees awarded in the United States.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Today foreign students earn 30 percent of the doctoral degrees",
+      "s": "earn 你多半会翻成「挣」，翻成「外国学生挣了 30% 的博士学位」。念一遍，学位不是挣钱。earn a degree 是「获得学位」。30 percent of X 就是「X 的 30%」。\n→ 如今外国学生获得了博士学位的 30%"
+     },
+     {
+      "t": "awarded in the United States",
+      "s": "awarded 是过去分词（-ed）短语，作 degrees 的后置定语，就是给 degrees 补一段说明：被授予的。放回去试试：degrees were awarded in the United States，学位是在美国被授予的，通。中文少用「被」，说「在美国授予的」。\n→ 在美国授予的"
+     }
+    ],
+    "order": "英文先说「外国学生获得了多少」，再用 awarded 补范围；中文把范围提到前面，说成「在美国授予的博士学位中，外国学生占……」。",
+    "sum": "如今，在美国授予的博士学位中，有 30% 是外国学生拿到的。",
+    "cmp": "书上把「博士学位」换成了「获得博士学位的学生」，再说「外国学生占 30%」，意思差不多，但原句说的是学位，不是学生。我的译法更贴原句。"
+   }
   },
   "On a global scale, 77 percent of energy is created from fossil fuels.": {
    "ph": [
@@ -506,7 +900,21 @@
      "b": "on a … scale",
      "m": "在……范围上"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "On a global scale",
+      "s": "你多半会翻成「在一个全球的规模上」。念一遍，太绕了。on a … scale 是「在……范围上」，on a global scale 就是「在全球范围内」。\n→ 在全球范围内"
+     },
+     {
+      "t": "77 percent of energy is created from fossil fuels",
+      "s": "is created 是被动，就是「能源被创造出来」。你多半会翻成「被创造」，但能源不是凭空造出来的，中文说「来自、由……产生」更顺。fossil fuels 是「化石燃料」。\n→ 77% 的能源来自化石燃料"
+     }
+    ],
+    "sum": "在全球范围内，77% 的能源来自化石燃料。",
+    "cmp": "和书上一样。"
+   }
   }
  }
 }

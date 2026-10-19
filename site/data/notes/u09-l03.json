@@ -18,7 +18,21 @@
      "b": "apply … to",
      "m": "把……应用于"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They learned about the growth mindset",
+      "s": "你多半会翻成「他们学习关于成长思维模式」。念一遍，别扭吧？learn about 是一个整体，就是「了解到、学到」，about 不用单独翻。growth mindset 是固定说法，「成长型思维模式」。\n→ 他们了解了成长型思维模式"
+     },
+     {
+      "t": "and how to apply it to schoolwork",
+      "s": "and 后面接的是第二个宾语：学的不光是 the growth mindset，还有 how to apply……。how to apply 是「疑问词 + to do」，就是「怎么做某事」，所以是「如何应用」。apply 眼睛往后找 to：apply A to B，把 A 用到 B 上。it 指谁？放回去试：把 the growth mindset 用到作业上，说得通；schoolwork 在 it 后面，不可能是它。\n→ 以及如何把它应用到学校作业中"
+     }
+    ],
+    "sum": "他们了解了成长型思维模式，还学了怎样把它用到学校作业上。",
+    "cmp": "意思和书上一样。书上用「将其」，比较书面；「把它」更口语。"
+   }
   },
   "Languages that exist today vary dramatically in how they utilise numbers.": {
    "ph": [
@@ -65,7 +79,25 @@
      "b": "without exception",
      "m": "无一例外"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It is obvious that",
+      "s": "你多半会翻成「它是明显的」。问一下自己：「它」是谁？找不到。It is obvious that 里的 It 是形式主语，真正的主语是 that 后面那一整段话。办法：看到 It is obvious that，直接翻成「很明显，……」，后面照着翻。\n→ 很明显，"
+     },
+     {
+      "t": "this new rule is applicable to everyone",
+      "s": "你可能翻成「这条新规则是可应用的对于每个人」，太硬了。applicable 眼睛往后找 to：be applicable to 是「适用于」。\n→ 这条新规则适用于每个人"
+     },
+     {
+      "t": "without exception",
+      "s": "这块照字面翻就行：without 是「没有」，exception 是「例外」。\n→ 无一例外"
+     }
+    ],
+    "sum": "很明显，这条新规则适用于所有人，没有一个例外。",
+    "cmp": "和书上几乎一样，书上的「无一例外」更简洁。"
+   }
   },
   "Consumers could use appliances in a more efficient way by adjusting the time of cooking.": {
    "ph": [],
@@ -124,7 +156,22 @@
      "b": "of course",
      "m": "当然"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "We'll buy everything you produce",
+      "s": "everything 后面直接跟了 you produce，中间省了 that，补回去是 everything (that) you produce。这是定语从句，就是给 everything 补一段说明：你生产的一切东西。\n→ 我们会买下你们生产的一切"
+     },
+     {
+      "t": "provided of course the price is right",
+      "s": "你多半会翻成「提供当然价格是对的」。念一遍，完全不通。provided 在这里不是「提供」，它和 provided that 一样，是「如果、只要」，that 省掉了，后面跟的是条件。of course 就是「当然」，夹在中间加个语气。the price is right 是「价格合适」。\n→ 当然，只要价格合适"
+     }
+    ],
+    "order": "英文把条件放在最后，中文习惯先说条件、再说结果，所以把「只要价格合适」提到前面。",
+    "sum": "当然，只要价格合适，我们就会买下你们生产的全部产品。",
+    "cmp": "意思一样。书上也把条件提前了，「你方」是商务口吻，我写成了「你们」。"
+   }
   },
   "People who prioritise breakfasts tend to have lower calorie but higher nutritional intake.": {
    "ph": [
@@ -169,7 +216,38 @@
      "b": "not necessarily",
      "m": "未必"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "This is not necessarily a new trend",
+      "s": "你多半会翻成「这必然不是一个新趋势」，意思就反了。not necessarily 是部分否定，「不一定、未必」，不是「一定不」。\n→ 这未必是一种新趋势"
+     },
+     {
+      "t": "but it is a somewhat puzzling one",
+      "s": "你可能翻成「但它是一个有点困惑的」，话说一半就断了。one 是替身，替的是前面出现过的名词 trend，放回去：a somewhat puzzling trend，通了。puzzling 是 -ing 形容词，说的是事物「令人困惑的」，不是人「感到困惑」。somewhat 是「有点、多少」。\n→ 但多少有点令人费解"
+     }
+    ],
+    "sum": "这未必是一种新趋势，但多少有点令人费解。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "Their average lifespan has been considerably extended.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Their average lifespan",
+      "s": "这块照字面翻就行：lifespan 是「寿命」。\n→ 它们的平均寿命"
+     },
+     {
+      "t": "has been considerably extended",
+      "s": "你多半会翻成「已经被相当大地延长了」。has been extended 是被动，就是「寿命被别人延长了」。中文少用「被」，直接说「寿命延长了」就行。considerably 是「相当大地」，放在动词前，说白了就是「大大」。\n→ 已经大大延长"
+     }
+    ],
+    "sum": "它们的平均寿命已经大大延长。",
+    "cmp": "和书上基本一样，我多了个「已经」，对应 has been 这个现在完成时。"
+   }
   },
   "She stretched up to reach the top shelf.": {
    "ph": [
@@ -178,7 +256,21 @@
      "b": "stretch up",
      "m": "向上伸"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She stretched up",
+      "s": "这块照字面翻就行：stretch up 是「向上伸展」。\n→ 她向上伸展身体"
+     },
+     {
+      "t": "to reach the top shelf",
+      "s": "你多半会翻成「去到达顶层架子」。念一遍，人怎么能「到达」架子？reach 在这里是手伸出去「够到」。to reach 是 to do 短语，说的是目的，就是「为了够到……」。\n→ 为了够到顶层的架子"
+     }
+    ],
+    "sum": "她踮起脚向上伸手，想够到最上面一层架子。",
+    "cmp": "意思和书上一样。书上「伸手向上去够」是照原句顺序译的，也很顺。"
+   }
   },
   "I do agree with him to an extent.": {
    "ph": [
@@ -217,6 +309,40 @@
     "cmp": "书上把 otherwise 的意思略掉了，只说「无法参加课堂教学的学生」。我们补上了「如果没有在线课」，更能看出 would 的虚拟意味。"
    }
   },
+  "I would contend that the minister's thinking is flawed on this point.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "I would contend that",
+      "s": "你多半会翻成「我将会争辩」。先看 would：这句没有 if 条件，前面也没有过去时，所以不是虚拟，也不是时态呼应，是委婉语气，把话说得客气些，和 I would say 差不多。contend that 是「主张、认为」，that 带的是宾语从句，就是「认为的内容」。\n→ 我倒认为"
+     },
+     {
+      "t": "the minister's thinking is flawed on this point",
+      "s": "thinking 你可能当成「正在思考」，这里是名词「想法」。flawed 是「有缺陷的」，在这里当形容词用，说想法有漏洞。on this point 是「在这一点上」。\n→ 部长的想法在这一点上有漏洞"
+     }
+    ],
+    "sum": "在这一点上，我认为部长的想法是有漏洞的。",
+    "cmp": "和书上意思一样。书上的「倒」字正好体现了 would 的委婉口气。"
+   }
+  },
+  "It intends to keep its traditional diet.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It intends to keep",
+      "s": "你多半会翻成「它意图去保持」，太绕。intend to do 是一个整体，就是「打算做某事」，to keep 是 to do 短语，跟在 intend 后面说打算做什么。\n→ 它打算保持"
+     },
+     {
+      "t": "its traditional diet",
+      "s": "diet 你可能只认识「节食」，翻成「传统的节食」就不通了。这里是「日常饮食」。\n→ 它的传统饮食"
+     }
+    ],
+    "sum": "它打算保持传统的饮食习惯。",
+    "cmp": "意思和书上一样，我多加了「习惯」让中文更完整。"
+   }
+  },
   "The intention to put a home-cooked meal on the table was pretty much universal.": {
    "ph": [
     {
@@ -253,7 +379,17 @@
      "b": "pretend not to do",
      "m": "假装不……"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He pretended not to notice",
+      "s": "你多半会把 not 翻到前面，成了「他没有假装注意」，意思就反了。not 否定的是后面的 to notice。to notice 是 to do 短语，跟在 pretend 后面说假装做什么，所以 pretend not to do 是「假装不做某事」。\n→ 他假装没注意到"
+     }
+    ],
+    "sum": "他假装没注意到。",
+    "cmp": "和书上一样，只差一个「到」。"
+   }
   },
   "She disguised herself as a boy.": {
    "ph": [
@@ -271,7 +407,26 @@
      "b": "a mix of",
      "m": "多种……的混合"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The fake websites",
+      "s": "这块照字面翻就行：fake 是「假的」。\n→ 这些假冒网站"
+     },
+     {
+      "t": "have authentic-sounding names",
+      "s": "你多半会翻成「有真实声音的名字」。念一遍，名字哪来声音？authentic-sounding 是 authentic 加 sounding，「听起来很真实的」，是当形容词用，修饰 names。\n→ 有听起来很真实的名字"
+     },
+     {
+      "t": "involving a mix of keywords",
+      "s": "involving 是 -ing 短语，跟在 names 后面，给它补一段说明，就是「包含着……的」。你可能把 involve 翻成「涉及」，这里说名字里「包含」什么更自然。a mix of 是「多种……的混合」。\n→ 其中包含多个关键字"
+     }
+    ],
+    "order": "involving 那一段在中文里单独断成一小句，用「其中」接上，比硬塞进「名字」前面顺。",
+    "sum": "这些假冒网站的名字听起来很真实，里面混合了多个关键词。",
+    "cmp": "意思和书上一样，书上也把 involving 一段断成了「其中包含……」，很顺。"
+   }
   },
   "Over the centuries, they have simulated dialogues in a number of ways.": {
    "ph": [
@@ -287,6 +442,19 @@
     }
    ]
   },
+  "The teacher is able to stimulate students' curiosity.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The teacher is able to stimulate students' curiosity",
+      "s": "你多半会翻成「这位老师是能够刺激学生的好奇心的」。be able to 后面跟 to do，整个就是「能够做某事」，直接说「能」就行。再看 stimulate：本义是「刺激」，但「刺激好奇心」读着别扭，对好奇心、兴趣这类东西，说「激发」才自然。\n→ 这位老师能激发学生的好奇心"
+     }
+    ],
+    "sum": "这位老师能够激发学生的好奇心。",
+    "cmp": "和书上基本一样，只差一个「够」。"
+   }
+  },
   "Let the cheers from the crowd spur you on.": {
    "ph": [
     {
@@ -299,7 +467,21 @@
      "b": "spur … on",
      "m": "激励，鞭策"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Let the cheers from the crowd",
+      "s": "你多半会翻成「让来自人群的欢呼」，然后发现话没说完。Let 后面是「谁 + 做什么」：Let A do，让 A 去做某事，do 前面不带 to。A 是 the cheers from the crowd，做什么在后面的 spur。from the crowd 是 cheers 的说明，「人群发出的」。\n→ 让人群的欢呼声"
+     },
+     {
+      "t": "spur you on",
+      "s": "你可能翻成「刺激你在上面」，on 没处放。spur 被拆开了，眼睛往后找 on：spur sb on 是「激励某人前进」。\n→ 激励你前进"
+     }
+    ],
+    "sum": "让人群的欢呼声激励你继续前进吧。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "The dancers move in harmony as they imitate the animal's natural movements in the wild.": {
    "ph": [
@@ -313,7 +495,22 @@
      "b": "in the wild",
      "m": "在野外，野生的"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The dancers move in harmony",
+      "s": "in harmony 是「和谐一致」，move in harmony 就是动作整齐协调，不是「在和谐里移动」。\n→ 舞者们的动作很和谐"
+     },
+     {
+      "t": "as they imitate the animal's natural movements in the wild",
+      "s": "as 你可能只认识「因为」，翻成「因为他们模仿……」。放回去试试：因为模仿，所以动作和谐？意思有点歪。这里 as 带的是时间状语从句，就是「在……的时候」，两件事同时发生。in the wild 是「在野外」，说的是动物的动作发生在野外，合起来是「野生动物的自然动作」。\n→ 在模仿野生动物的自然动作时"
+     }
+    ],
+    "order": "英文把「什么时候」放在后面，中文习惯先说时间，所以把「在模仿……时」提到前面。",
+    "sum": "舞者们在模仿野生动物的自然动作时，动作十分和谐。",
+    "cmp": "和书上基本一样，书上也把时间提到了前面。"
+   }
   },
   "A growing number of bike riders are attracted to electric bikes for convenience.": {
    "ph": [
@@ -415,7 +612,22 @@
      "b": "when it comes to",
      "m": "说到，在……问题上"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Americans are less doubtful",
+      "s": "你多半会翻成「美国人更少怀疑」。less + 形容词是「没那么……」，doubtful 这里是「多疑、爱怀疑」，合起来是「没那么多疑」。\n→ 美国人没有那么多疑"
+     },
+     {
+      "t": "when it comes to politics",
+      "s": "你可能翻成「当它来到政治」，念一遍就不通。when it comes to 是固定搭配，整体就是「说到、在……方面」，这个 it 不指任何东西，后面跟名词。\n→ 在政治问题上"
+     }
+    ],
+    "order": "英文把范围放在后面，中文习惯先说范围，所以把「在政治问题上」提到前面。",
+    "sum": "在政治问题上，美国人没有那么多疑。",
+    "cmp": "和书上一样，只是语序略有不同。"
+   }
   },
   "Most people will be able to give a vague description of their main meals.": {
    "ph": [
@@ -424,7 +636,21 @@
      "b": "be able to do",
      "m": "能够"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Most people will be able to give",
+      "s": "你多半会翻成「将会是能够给出」，太啰嗦。be able to 后面跟 to do，整个就是「能够做某事」，will 只是表示将来，直接说「能」就行。\n→ 大多数人都能"
+     },
+     {
+      "t": "a vague description of their main meals",
+      "s": "你多半会翻成「一个模糊的描述」。中文不爱用名词，description 换成动词说：「描述一下」。of their main meals 说的是描述什么，是对象，不是「属于主餐的描述」。vague 是「模糊的」，说白了就是「大概」。\n→ 对自己的主餐做一个大概的描述"
+     }
+    ],
+    "sum": "大多数人都能大致描述一下自己的主餐。",
+    "cmp": "意思和书上一样。书上「进行一个模糊的描述」是照着名词硬译，我换成了动词，更顺。"
+   }
   },
   "This light is too dim to read by.": {
    "ph": [
@@ -438,7 +664,21 @@
      "b": "too … to",
      "m": "太……而不能"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "This light is too dim",
+      "s": "你多半会翻成「这光线太暗了」。这没错，但别停在这。看到 too，眼睛往后找 to：too … to 是「太……而不能……」，to 后面是做不成的事。dim 是「昏暗的」。\n→ 这光线太暗了"
+     },
+     {
+      "t": "to read by",
+      "s": "你可能翻成「去读书」，最后那个 by 就没处放了。其实这里是 read by this light，「借着这光线读」，by 后面的宾语就是句首的 This light，所以 by 才会留在句尾。\n→ 没法借着它看书"
+     }
+    ],
+    "sum": "这光线太暗，没法借着它看书。",
+    "cmp": "和书上意思一样，书上「看不了书」更简洁。"
+   }
   },
   "He walked away in disgust.": {
    "ph": [
@@ -466,7 +706,21 @@
      "b": "try not to do",
      "m": "尽量不要"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "If you get up early",
+      "s": "你可能翻成「如果你起来早」。get up 是一个整体，就是「起床」。If 带的是条件状语从句，就是「如果……」。\n→ 如果你起得早"
+     },
+     {
+      "t": "try not to disturb everyone else",
+      "s": "你多半会翻成「试着不要打扰」。try not to do 是「尽量不要做某事」，not 否定的是后面的 to disturb。everyone else 是「其他所有人」，else 就是「别的」。\n→ 尽量不要打扰别人"
+     }
+    ],
+    "sum": "如果你起得早，尽量不要打扰其他人。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "They cast anchor at nightfall.": {
    "ph": [

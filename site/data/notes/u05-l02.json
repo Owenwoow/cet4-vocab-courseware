@@ -55,7 +55,21 @@
      "b": "go a long way toward",
      "m": "对……大有帮助，在很大程度上促成"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "General farm management",
+      "s": "这块照字面翻就行。general 在这里是「总体的、一般的」，不是「将军」。\n→ 总体的农场管理"
+     },
+     {
+      "t": "can go a long way toward easing changes",
+      "s": "你多半会翻成「能走很长的路朝向缓解变化」。念一遍，这是在走路吗？go a long way toward 是一个整体，说白了就是「对……大有帮助」。再看 toward：它是介词，所以后面的 easing 是 -ing 形式，就是把「缓解变化」当成一件事。\n→ 对缓解变化大有帮助"
+     }
+    ],
+    "sum": "总体的农场管理对缓解变化大有帮助。",
+    "cmp": "书上说的是「可以在很大程度上缓解变化」，意思相近。我把 go a long way toward 译成「大有帮助」，保留了「有助于」的味道。"
+   }
   },
   "One strategy is called market modification.": {
    "ph": [
@@ -64,7 +78,21 @@
      "b": "be called",
      "m": "被称为"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "One strategy is called",
+      "s": "你多半会翻成「一种策略被叫做」。is called 是被动，就是「别人把它叫做……」。中文口语里不爱说「被」，直接说「叫做」就顺了。\n→ 有一种策略叫做"
+     },
+     {
+      "t": "market modification",
+      "s": "你可能想翻成「市场修改」。modification 是 modify（修改、调整）的名词形式，说一个市场的做法，「调整」比「修改」更贴切。\n→ 市场调整"
+     }
+    ],
+    "sum": "有一种策略叫做市场调整。",
+    "cmp": "书上是「被称为」，保留了被动的「被」；中文去掉「被」更顺口，意思不变。"
+   }
   },
   "He apologised for scratching an athlete's gold medal.": {
    "ph": [
@@ -73,7 +101,38 @@
      "b": "apologise for",
      "m": "为……道歉"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He apologised for",
+      "s": "apologise for 是一个搭配，「为……道歉」。眼睛往后看，for 是介词，后面接的是道歉的原因。\n→ 他为……道歉"
+     },
+     {
+      "t": "scratching an athlete's gold medal",
+      "s": "你多半会翻成「抓一个运动员的金牌」。念一遍，怪吧？scratch 常见的意思是「挠、抓」，这里是「划、刮出痕迹」。scratching 是 -ing 短语，因为前面是介词 for，用 -ing 把动作变成「做了某事」这件事。\n→ 刮花了运动员的金牌"
+     }
+    ],
+    "sum": "他为刮花了运动员的金牌而道歉。",
+    "cmp": "书上用的是「划伤」，我用「刮花」，东西是金牌，「刮花」更常用，两个都能懂。"
+   }
+  },
+  "His administration is financially pinched.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "His administration",
+      "s": "你多半会翻成「他的管理」。administration 除了「管理」，还可以指「管理层、政府」，这里是「政府」。\n→ 他的政府"
+     },
+     {
+      "t": "is financially pinched",
+      "s": "你可能想翻成「财政上被捏了」。is pinched 是被动，就是「被别人怎么样了」。pinch 本义是「捏、夹」，钱被夹紧了，就是手头紧、很紧张。financially 是「在财政上」。\n→ 财政拮据"
+     }
+    ],
+    "sum": "他的政府财政紧张。",
+    "cmp": "书上是「财政拮据」，「拮据」更书面，意思一样。"
+   }
   },
   "Their extraordinary minds are still using the same flawed tools that the rest of us rely on.": {
    "ph": [
@@ -121,6 +180,23 @@
     }
    ]
   },
+  "By 2050, the world will need to feed an estimated 9.7 billion people.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "By 2050, the world will need to feed",
+      "s": "feed 你多半会翻成「喂」，喂 97 亿人？这里是「养活」。will need to feed 里的 to feed 是 to do 短语，need to do 就是「需要去做某事」。By 2050 是「到 2050 年时」。\n→ 到 2050 年，世界将需要养活"
+     },
+     {
+      "t": "an estimated 9.7 billion people",
+      "s": "你可能想翻成「一个被估计的 97 亿人」。念一遍，别扭。estimated 是 -ed 形式，放在数字前面，意思是「据估计有」。billion 是「十亿」，9.7 billion 就是 97 亿。\n→ 估计达 97 亿的人口"
+     }
+    ],
+    "sum": "到 2050 年，世界需要养活估计达 97 亿的人口。",
+    "cmp": "书上把「估计」放到前面，说成「估计将需要养活」；原文的 estimated 是修饰人数的，我把它放在人数前面，更贴近原文。"
+   }
+  },
   "One possible solution to the food security problem is diversification of diet.": {
    "ph": [
     {
@@ -165,7 +241,21 @@
      "b": "be related to",
      "m": "与……有关"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Researchers have shown that",
+      "s": "that 后面带的是宾语从句，就是「表明的内容」。have shown 是现在完成时，说研究已经得出了结论。\n→ 研究人员已经表明"
+     },
+     {
+      "t": "body mass index is related to wages and income",
+      "s": "你多半会翻成「体重指数被关联到工资」。is related to 看起来是被动，其实它是固定搭配 be related to，就是「与……有关」，不用翻出「被」。body mass index 是医学上常说的体重指数（BMI）。\n→ 体重指数与工资和收入有关"
+     }
+    ],
+    "sum": "研究表明，体重指数与工资和收入有关。",
+    "cmp": "意思一样。书上说「研究人员表明」，中文更常说「研究表明」，我稍微顺了一下。"
+   }
   },
   "My kids spend hours chatting on the phone to their friends.": {
    "ph": [
@@ -179,7 +269,22 @@
      "b": "spend … doing",
      "m": "花时间做某事"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "My kids spend hours chatting",
+      "s": "你可能想翻成「我的孩子花费几个小时聊天」。意思没错，但要认出结构：spend 时间 doing，花多长时间做某事，后面的 chatting 是 -ing 短语，说的是花时间做了什么。\n→ 我的孩子花好几个小时聊天"
+     },
+     {
+      "t": "on the phone to their friends",
+      "s": "你多半会翻成「在电话上到他们的朋友」。念一遍，别扭。on the phone 就是「在电话里」，to their friends 在聊天这件事里是「跟朋友」。\n→ 在电话里跟朋友"
+     }
+    ],
+    "order": "中文习惯先说「在哪儿、跟谁」，再说「聊天」，所以把后一块挪到「聊天」前面。",
+    "sum": "我的孩子们花好几个小时在电话里跟朋友聊天。",
+    "cmp": "书上拆成两段，「在电话里和他们的朋友聊天，聊了几个小时」，把时间放在最后补一句；我合成一句，更紧凑。"
+   }
   },
   "His years in exile resulted in an innovation discount.": {
    "ph": [
@@ -235,7 +340,21 @@
      "b": "help sb. do",
      "m": "帮助某人做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Cultivating positive interpersonal relationships",
+      "s": "一开头就是 Cultivating，别慌。-ing 开头当主语，就是「做某事」这件事。cultivate 你多半只认识「种植」，这里是「培养」。interpersonal 是 inter（之间）加 personal（个人的），「人与人之间的」。\n→ 培养积极的人际关系"
+     },
+     {
+      "t": "helped him expel solitary feelings",
+      "s": "help sb. do 是一个搭配，「帮某人做某事」，help 后面的 to 可以省，所以 helped him expel 就是「帮他驱走」。expel 你可能只认识「开除」，这里是「驱散、赶走」。solitary 是「孤独的」。\n→ 帮他驱散了孤独感"
+     }
+    ],
+    "sum": "培养积极的人际关系，帮他摆脱了孤独感。",
+    "cmp": "和书上基本一样。我在中间加了个逗号，读起来更好断句。"
+   }
   },
   "The agents' questions compel student tutors to think and explain the materials in different ways.": {
    "ph": [
@@ -277,7 +396,73 @@
      "b": "force … to do",
      "m": "迫使……做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It forces the customer to",
+      "s": "看到 forces，眼睛往后找 to——找到了：force sb. to do，强迫某人做某事。forces 后面的 the customer 是被强迫的人，to 后面是被强迫做的事。\n→ 它迫使顾客"
+     },
+     {
+      "t": "compensate the waiter",
+      "s": "你可能想翻成「补偿服务员」。compensate 是「补偿、赔偿」，这里谁赔谁？顾客赔服务员。看不到更多背景，就跟书上一样说「赔偿」。\n→ 赔偿服务员"
+     }
+    ],
+    "sum": "它迫使顾客赔偿服务员。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "Our job as designers is to reinforce the airline's brand.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Our job as designers",
+      "s": "as 你可能只认识「因为」或「当……时」，翻成「当设计师时我们的工作」。放回去试试：说不通。这里 as 是介词，「作为」，as designers 就是「作为设计师」。\n→ 作为设计师，我们的工作"
+     },
+     {
+      "t": "is to reinforce the airline's brand",
+      "s": "is to reinforce 里的 to reinforce 是 to do 短语，放在 is 后面，说明工作的内容：「工作就是去做某事」。reinforce 拆开看：re-（再）加 force（力量），「加强」。\n→ 就是强化航空公司的品牌"
+     }
+    ],
+    "order": "英文把 as designers 放在 job 后面，中文习惯把「作为设计师」提到句首。",
+    "sum": "作为设计师，我们的工作就是强化航空公司的品牌。",
+    "cmp": "和书上基本一样，我多了个「就」，语气更肯定。"
+   }
+  },
+  "But the greatest strength of this book (on fashion) is its intellectual profoundness.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "But the greatest strength of this book (on fashion)",
+      "s": "strength 你多半会翻成「力量」，翻成「这本书最大的力量」。念一遍，书哪有力量？这里是「长处、优点」。括号里的 on fashion 是插进来的补充说明，on 在这里是「关于」，说明这本书是讲时尚的。\n→ 但这本书（关于时尚）最大的优点"
+     },
+     {
+      "t": "is its intellectual profoundness",
+      "s": "intellectual 你可能翻成「智力的」，这里说书，是「思想上的」。profoundness 是 profound（深刻的）的名词，「深度」。is 在这里翻成「在于」更顺。\n→ 在于它的思想深度"
+     }
+    ],
+    "sum": "但这本书（关于时尚）最大的优点在于它的思想深度。",
+    "cmp": "和书上基本一样，书上说「优势」，我说「优点」，都对。"
+   }
+  },
+  "Your feelings about your willpower affect the way you behave.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Your feelings about your willpower",
+      "s": "你多半会翻成「你关于你的意志力的感觉」。念一遍，绕。willpower 拆开看：will（意志）加 power（力量），「意志力」。feelings about 就是「对……的感觉」，说顺了是「你对自己意志力的感觉」。\n→ 你对自己意志力的感觉"
+     },
+     {
+      "t": "affect the way you behave",
+      "s": "the way you behave 中间藏了个 that（或 in which），补回去是 the way (that) you behave，这是定语从句，就是给前面的名词补一段说明：「你做事的方式」。affect 是动词「影响」，别和名词 effect 弄混。\n→ 会影响你的行为方式"
+     }
+    ],
+    "sum": "你对自己意志力的感觉，会影响你的行为方式。",
+    "cmp": "和书上基本一样，只多了「自己」，读起来更自然。"
+   }
   },
   "Consumers must be willing to pay for these solutions.": {
    "ph": [
@@ -291,7 +476,22 @@
      "b": "pay for",
      "m": "为……付费"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Consumers must be willing to pay",
+      "s": "你可能会把 to 当成介词，翻成「到付款」。其实 be willing to do 是搭配，「愿意做某事」，to 后面接的是动词 pay。must 是「必须」。\n→ 消费者必须愿意付钱"
+     },
+     {
+      "t": "for these solutions",
+      "s": "pay for 是「为……付钱」，for 后面是付钱买的东西。solutions 你多半会翻成「解决办法」，这里翻成「解决方案」更顺。\n→ 为这些解决方案"
+     }
+    ],
+    "order": "英文 pay 在 for 前，中文习惯先说「为什么付」，所以说成「为这些解决方案付费」。",
+    "sum": "消费者必须愿意为这些解决方案付费。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Most people surveyed were reluctant to reveal what they ate.": {
    "ph": [
@@ -382,7 +582,25 @@
      "b": "practice doing",
      "m": "练习做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Justin Le, aged 18,",
+      "s": "你多半会翻成「被年龄 18 的贾斯汀·乐」。前后逗号夹的这一段是插入语，aged 18 是 -ed 短语，就是给人补一句说明：「18 岁的」。\n→ 18 岁的贾斯汀·乐"
+     },
+     {
+      "t": "tied a red ribbon around his waist",
+      "s": "这块照字面翻就行。tied 是 tie 的过去式，tie … around 就是「把……系在……周围」，around his waist 是「在他的腰间」。\n→ 在腰间系了一条红丝带"
+     },
+     {
+      "t": "to practice jumping",
+      "s": "to practice 是 to do 短语，这里表示目的，「为了练习」。practice 后面接的是 -ing：practice doing，「练习做某事」，jumping 就是「跳跃」。\n→ 以便练习跳跃"
+     }
+    ],
+    "sum": "18 岁的贾斯汀·乐在腰间系了一条红丝带，以便练习跳跃。",
+    "cmp": "和书上基本一样，书上的「以便」我也保留了，表目的。"
+   }
   },
   "I ripped the package open.": {
    "ph": [
@@ -405,7 +623,21 @@
      "b": "get a grip on",
      "m": "抓住"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She tried to get a grip on",
+      "s": "你多半会翻成「她试着得到一个握在……上」。念一遍，不通顺。tried to do 是「努力想做某事」，但不一定做成了。get a grip on 是一个整体，grip 作名词是「抓紧」，合起来就是「抓住」。\n→ 她尽力抓住"
+     },
+     {
+      "t": "the icy rock",
+      "s": "icy 是 ice 加 y，「冰的」，可以是「冰冷的」，也可以是「结冰的」；放在岩石前，两种说法都说得通。\n→ 那块冰冷的岩石"
+     }
+    ],
+    "sum": "她尽力抓住那块冰冷的岩石。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "He went off to change a guitar string.": {
    "ph": [
@@ -414,7 +646,21 @@
      "b": "go off",
      "m": "离开"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He went off",
+      "s": "你多半会翻成「他去掉了」。go off 有好几个意思，这里的 off 是「离开」，went off 就是「走开了、离开了」。\n→ 他离开了"
+     },
+     {
+      "t": "to change a guitar string",
+      "s": "to change 是 to do 短语，在 went off 后面表示目的，「去做某事」。change 你可能翻成「改变」，换成吉他弦，是「更换」。string 在这里是「弦」。\n→ 去换一根吉他弦"
+     }
+    ],
+    "sum": "他走开去换一根吉他弦。",
+    "cmp": "和书上基本一样，书上结尾多了个「了」。"
+   }
   },
   "A common thread runs through these discussions.": {
    "ph": [
@@ -444,6 +690,23 @@
     }
    ]
   },
+  "A trap was laid, with fresh bait.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "A trap was laid",
+      "s": "你多半会翻成「一个陷阱被躺下」。laid 是 lay（放置）的过去分词，不是 lie（躺）。was laid 是被动，就是「陷阱被别人怎么样了」。lay a trap 是「布置陷阱」，中文不用「被」，直接说「布置好了」。\n→ 陷阱布置好了"
+     },
+     {
+      "t": "with fresh bait",
+      "s": "你可能想翻成「和新鲜的诱饵」。with 这里是「带着、配有」，说明陷阱里还有什么。bait 是「诱饵」。\n→ 还放了新鲜的诱饵"
+     }
+    ],
+    "sum": "陷阱布置好了，还放了新鲜的诱饵。",
+    "cmp": "和书上基本一样，书上用的是「投放」，我用的是「放」，更口语。"
+   }
+  },
   "We get a fairly large portion of calories from fast food and snacks.": {
    "ph": [
     {
@@ -465,7 +728,22 @@
      "b": "run one's own affairs",
      "m": "管理自己的事务"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "These teams are gaining more power",
+      "s": "这块照字面翻就行。are gaining 是进行时，「正在获得」。\n→ 这些团队正在获得更多的权力"
+     },
+     {
+      "t": "to run their own affairs",
+      "s": "你多半会翻成「去跑他们自己的事」。run 在这里不是「跑」，是「管理」。to run 是 to do 短语，紧跟在 power 后面，给它补一段说明：什么样的权力？管理自己事务的权力。affairs 是复数，「事务」。\n→ 来管理他们自己的事务"
+     }
+    ],
+    "order": "英文 power 在前，to do 在后；中文可以把「管理自己事务」放到「权力」前面，当定语。",
+    "sum": "这些团队正在获得更多管理自身事务的权力。",
+    "cmp": "书上保持了英文的语序，说成「更多的权力来管理他们自己的事务」，也对；我把后半句提前，读起来更紧凑。"
+   }
   },
   "Don't forget to return the trolley after you finish shopping.": {
    "ph": [
@@ -479,7 +757,22 @@
      "b": "finish doing",
      "m": "完成做某事"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Don't forget to return the trolley",
+      "s": "你多半会翻成「别忘了归还手推车」，这样翻没错，但要看清是 forget to do，「忘记去做某事」，事情还没做；forget doing 是「忘了做过」，事情已做完，两个不一样。这里是前者。trolley 是超市里的「手推车」。\n→ 别忘了归还手推车"
+     },
+     {
+      "t": "after you finish shopping",
+      "s": "after 带的是时间状语从句，就是交代「在什么时候」。finish 后面接 -ing：finish doing，「完成做某事」，所以是 shopping，不是 to shop。\n→ 在你购完物之后"
+     }
+    ],
+    "order": "英文把「什么时候」放在后面，中文习惯先说时间，所以把「购物结束后」提到前面。",
+    "sum": "购物结束后，别忘了把手推车还回去。",
+    "cmp": "和书上基本一样，我加了个逗号，把「归还」说成口语的「还回去」。"
+   }
   },
   "Years of smoking have taken their toll on his health.": {
    "ph": [
@@ -502,6 +795,24 @@
     ],
     "sum": "多年吸烟，已经严重损害了他的健康。",
     "cmp": "和书上基本一样。"
+   }
+  },
+  "New teachers and staff have to be recruited.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "New teachers and staff",
+      "s": "这块照字面翻就行。staff 是「工作人员」，注意它指一个集体，不加 s。\n→ 新的教师和工作人员"
+     },
+     {
+      "t": "have to be recruited",
+      "s": "你多半会翻成「必须被招聘」。be recruited 是被动，就是「他们被别人怎么样了」。中文少用「被」，被谁招聘不重要，直接说「招聘」，把教师和工作人员放到后面当宾语。have to 是「必须」。\n→ 必须招聘"
+     }
+    ],
+    "order": "英文是被动，教师和工作人员在最前面；中文改成主动，把它们挪到「招聘」后面。",
+    "sum": "必须招聘新的教师和工作人员。",
+    "cmp": "和书上完全一样。"
    }
   },
   "It has renewed her passion for life.": {

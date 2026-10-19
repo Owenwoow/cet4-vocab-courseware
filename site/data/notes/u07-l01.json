@@ -8,7 +8,38 @@
      "b": "be bound to do",
      "m": "一定会"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It is bound to help",
+      "s": "你多半会翻成「它被绑定去帮助」。念一遍，怪吧？be bound to do 是固定搭配，意思是「一定会做某事」，把 is bound to 当成一个整体。to help 是 to do 短语，就是「to + 动词」，说明「一定会干什么」。\n→ 它一定会帮"
+     },
+     {
+      "t": "us achieve greater success",
+      "s": "你可能想翻成「帮助我们去达成更大的成功」，绕了。help 后面可以直接跟「人 + 动词」，help us achieve 就是「帮我们做到」。achieve success 是「取得成功」，greater 是「更大的」。\n→ 我们取得更大的成功"
+     }
+    ],
+    "sum": "它一定能帮我们取得更大的成功。",
+    "cmp": "意思一样。书上用「会帮助」，我用「能帮」，更口语。"
+   }
+  },
+  "The ball bounced twice before he could reach it.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The ball bounced twice",
+      "s": "这块照字面翻就行：bounced 是「弹起」，twice 是「两次」。\n→ 球弹了两次"
+     },
+     {
+      "t": "before he could reach it",
+      "s": "你多半会翻成「在他能够够到它之前」。念一遍，意思对，但中文太啰嗦。before 带的是时间状语从句，就是「在……之前」，中文习惯把它换成「……才……」：球弹了两次，他才接到。reach 在这里是「够到、接到」，it 放回去试，只能是 ball。\n→ 他才接到球"
+     }
+    ],
+    "sum": "球弹了两下，他才接到。",
+    "cmp": "和书上基本一样，书上的「弹跳了两次」，我口语化成「弹了两下」。"
+   }
   },
   "She wanted to travel to broaden her horizons.": {
    "ph": [
@@ -17,7 +48,21 @@
      "b": "broaden one's horizons",
      "m": "开阔眼界"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She wanted to travel",
+      "s": "这块照字面翻就行：want to do 是「想做某事」，to travel 就是 to do 短语（to + 动词）。\n→ 她想去旅行"
+     },
+     {
+      "t": "to broaden her horizons",
+      "s": "你多半会翻成「为了拓宽她的地平线」。念一遍，旅行怎么拓宽地平线？horizon 本义是地平线，用复数 horizons 就是比喻「眼界、见识」。这里的 to broaden 也是 to do 短语，表目的，就是「为了做什么」。broaden one's horizons 是整个固定说法，「开阔眼界」。\n→ 以开阔眼界"
+     }
+    ],
+    "sum": "她想去旅行，开阔一下眼界。",
+    "cmp": "和书上一样的意思。书上用「以」表目的，更书面；我直接并列，更口语。"
+   }
   },
   "The brown animal was spotted stuck on a narrow window edge of the office tower.": {
    "ph": [],
@@ -44,7 +89,18 @@
      "b": "be surrounded by",
      "m": "被……包围"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The cottage was surrounded by a hedge",
+      "s": "你多半会翻成「小屋被一道树篱所包围」。能读懂，但 was surrounded by 是被动，就是「小屋被别人怎么样了」。中文少用「被」，把 by 后面的东西请出来当主语：谁围着小屋？a hedge。hedge 是「树篱」，就是用灌木密密种成的篱笆。cottage 是「小屋」。\n→ 一道树篱围着小屋"
+     }
+    ],
+    "order": "英文主语是小屋、树篱在 by 后面；中文把树篱提到前面当主语，被动就变成了主动。",
+    "sum": "一道树篱围着这间小屋。",
+    "cmp": "书上保留了被动「被……包围着」，也对；我把树篱提前改成主动，更像日常说话。"
+   }
   },
   "It gave rise to a lot of problems on the border.": {
    "ph": [
@@ -62,7 +118,21 @@
      "b": "raw material",
      "m": "原料"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The country has to import",
+      "s": "你多半会翻成「这个国家有去进口」。念一遍，不通。has to do 是「必须、不得不做某事」，to import 就是 to do 短语。import 在这里是动词，读 /ɪmˈpɔːt/，「进口」。\n→ 这个国家必须进口"
+     },
+     {
+      "t": "most of its raw materials",
+      "s": "这块照字面翻就行：most of 是「大部分」，raw materials 是「原料」。\n→ 大部分原料"
+     }
+    ],
+    "sum": "这个国家大部分原料都得靠进口。",
+    "cmp": "意思一样。书上「必须进口大多数原料」更贴近英文，我换成「得靠进口」更口语。"
+   }
   },
   "He was surprised to find that his visitor's visa expired.": {
    "ph": [
@@ -71,7 +141,21 @@
      "b": "be surprised to do",
      "m": "惊讶地做某事"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He was surprised to find",
+      "s": "你多半会翻成「他被惊讶地发现」。中文很少说「被惊讶」。be surprised to do 是固定搭配，「对做某事感到惊讶」。to find 是 to do 短语，说明惊讶的原因：发现了什么。\n→ 他惊讶地发现"
+     },
+     {
+      "t": "that his visitor's visa expired",
+      "s": "that 带的是宾语从句，就是 find 的内容，「发现了什么」。visitor's visa 你可能翻成「他的访客的签证」，两个「的」叠在一起太绕，直接说「访问签证」。expired 是「过期了」。\n→ 他的访问签证过期了"
+     }
+    ],
+    "sum": "他惊讶地发现自己的访问签证已经过期了。",
+    "cmp": "和书上基本一样，我把第二个「他的」换成「自己的」，避免两个「他」重复。"
+   }
   },
   "They tried to meet astronauts' specific requirements.": {
    "ph": [
@@ -85,7 +169,39 @@
      "b": "meet … requirements",
      "m": "满足需求"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They tried to meet",
+      "s": "你多半会翻成「他们试图去遇见」。meet 最常见是「遇见」，但眼睛往后找宾语：requirements，meet requirements 是「满足要求」。try to do 是「尽力做某事」，to meet 是 to do 短语。\n→ 他们尽力满足"
+     },
+     {
+      "t": "astronauts' specific requirements",
+      "s": "你可能想翻成「航天员的具体要求」，也说得通。specific 在这里更准确的意思是「特定的」，指专属于这群人的。astronauts' 末尾的 ' 是所有格，「航天员的」。\n→ 航天员的特定需求"
+     }
+    ],
+    "sum": "他们尽力满足航天员的特定要求。",
+    "cmp": "和书上一样，只是把「需求」换成了「要求」，意思相同。"
+   }
+  },
+  "The office was furnished to a high specification.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The office was furnished",
+      "s": "你多半会翻成「办公室被家具了」。furnish 是动词，「给……配备家具、布置」，was furnished 是被动，就是「办公室被别人布置了」。中文把动作的人省掉，直接说「办公室装修好了」。\n→ 办公室被装潢"
+     },
+     {
+      "t": "to a high specification",
+      "s": "你可能想翻成「到一个高的说明书」。specification 最常见是「说明书」，但这里是「规格、标准」。to a high specification 看到 to a…standard / specification，脑子里换成「按……标准」。\n→ 按高规格"
+     }
+    ],
+    "order": "英文是「装潢好 + 按什么标准」，中文把「按高规格」提到动词前面更顺。",
+    "sum": "这间办公室是按高规格装潢的。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Chocolates save us from many things, especially emotional distress.": {
    "ph": [
@@ -144,7 +260,38 @@
      "b": "assign sb. to do",
      "m": "指派某人做某事"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It assigns doctors",
+      "s": "你多半会翻成「它分配医生」。assign 你可能只认识「分配（作业）」。眼睛往后找 to：assign sb. to do 是「指派某人去做某事」，后面的 to give 就是 to do 短语，说明被指派去干什么。\n→ 它指派医生"
+     },
+     {
+      "t": "to give advice to shoppers in food stores",
+      "s": "give advice to sb. 是「向某人提供建议」，第二个 to 是「给谁」，shoppers 是「购物者」。你可能翻成「给在食品店里的购物者建议」，字字对应，有点长。in food stores 是地点，中文习惯先说在哪儿。\n→ 在食品店里为购物者提供建议"
+     }
+    ],
+    "sum": "它指派医生到食品店里，给购物的人提建议。",
+    "cmp": "书上把 in food stores 当成 shoppers 的修饰，译成「食品店的购物者」；我把地点挪到前面，意思相同。"
+   }
+  },
+  "There was something peculiar in the way he smiled.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "There was something peculiar",
+      "s": "你多半会翻成「那里有某个古怪的东西」。念一遍，哪个「那里」？there be 句型里的 there 不是「那里」，there was 整个就是「有」。形容词 peculiar（古怪的）放在 something 后面，这是 something 的习惯：something peculiar 就是「有点古怪的东西」。\n→ 有些古怪的地方"
+     },
+     {
+      "t": "in the way he smiled",
+      "s": "the way he smiled 中间省了 that（或 in which），补回去是 the way (that) he smiled，这是定语从句，就是给 the way 补一段说明，「他笑的方式」。你可能翻成「在他笑了的方式里」，太硬，说白了就是「他笑的样子」。\n→ 在他笑的样子上"
+     }
+    ],
+    "sum": "他笑的样子有些古怪。",
+    "cmp": "意思一样。书上「他笑起来有点怪」，把 the way he smiled 压成「笑起来」，更口语。"
+   }
   },
   "He'd always been odd, but not to this extent.": {
    "ph": [
@@ -201,6 +348,23 @@
     }
    ]
   },
+  "He needed surgery to cure a troublesome back injury.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "He needed surgery",
+      "s": "这块照字面翻就行：surgery 是「手术」，needed 是过去时的「需要」。\n→ 他需要做手术"
+     },
+     {
+      "t": "to cure a troublesome back injury",
+      "s": "你多半会翻成「为了治愈一个麻烦的背部受伤」。to cure 是 to do 短语，这里表目的，就是「为了治好」。troublesome 是「让人烦恼的」，说的是这伤很折腾人，翻成「麻烦的」太轻。back injury 的 back 是「背」，背伤。\n→ 来治好烦人的背伤"
+     }
+    ],
+    "sum": "他需要做手术，来治好恼人的背伤。",
+    "cmp": "和书上基本一样，只是把「烦人」换成了「恼人」。"
+   }
+  },
   "I have been bothered for a long time about the curious lack of curiosity.": {
    "ph": [
     {
@@ -242,7 +406,22 @@
      "b": "be plagued by",
      "m": "为……所困扰"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The team has been plagued by injury",
+      "s": "你多半会翻成「这支队伍已经被伤病折磨了」。has been plagued 是被动（has been + 过去分词），就是「队伍被别人怎么样了」。plague 本义是「瘟疫」，当动词是「使苦恼、折磨」。has been 是现在完成，意思是「到现在一直这样」。中文把 by 后面的 injury 提前当主语：谁困扰队伍？伤病。\n→ 伤病一直困扰着这支队伍"
+     },
+     {
+      "t": "this season",
+      "s": "这块照字面翻就行：this season 是「这个赛季」。\n→ 本赛季"
+     }
+    ],
+    "order": "英文把 this season 放在最后，中文习惯先交代时间，所以挪到句首。",
+    "sum": "这个赛季，伤病一直困扰着这支队伍。",
+    "cmp": "书上保留被动「为……所困扰」，书面一些；我改成主动，更口语。"
+   }
   },
   "The authorities were annoyed but could find nothing to charge him with.": {
    "ph": [
@@ -267,6 +446,23 @@
     "cmp": "和书上基本一样，只多了一个「可以」。"
    }
   },
+  "They attempt to ignore the whole situation.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "They attempt to ignore",
+      "s": "attempt 你可能只认识名词「尝试」，这里是动词。你多半会翻成「他们尝试去忽视」，能懂。attempt to do 是「试图做某事」，to ignore 是 to do 短语。\n→ 他们试图忽视"
+     },
+     {
+      "t": "the whole situation",
+      "s": "这块照字面翻就行：the whole 是「整个」，situation 是「情况、局面」。\n→ 整个局面"
+     }
+    ],
+    "sum": "他们想对整个局面视而不见。",
+    "cmp": "意思和书上一样。书上「试图忽视整个情况」，我用「视而不见」更口语。"
+   }
+  },
   "It leads students to neglect their studies.": {
    "ph": [
     {
@@ -274,7 +470,39 @@
      "b": "lead sb. to do",
      "m": "导致某人做某事"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It leads students to neglect",
+      "s": "你多半会翻成「它带领学生去忽视」。lead 本义是「带领」，但眼睛往后找 to：lead sb. to do 是「导致某人做某事」。to neglect 是 to do 短语。neglect 是「忽视、疏忽」。\n→ 它导致学生忽视"
+     },
+     {
+      "t": "their studies",
+      "s": "你可能翻成「他们的研究」。studies 这里是复数，「学业」，意思是学生的功课。\n→ 他们的学业"
+     }
+    ],
+    "sum": "它会让学生疏忽学业。",
+    "cmp": "意思和书上一样。书上「导致学生忽视他们的学业」，我用「让」，并省掉「他们的」，更口语。"
+   }
+  },
+  "Try to be optimistic whatever happens.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Try to be optimistic",
+      "s": "句首没有主语，这是祈使句，就是对「你」说话。你多半会翻成「尝试去是乐观的」，念一遍很怪。try to do 是「努力做某事」，to be optimistic 是 to do 短语。be optimistic 就是「保持乐观」。\n→ 尽量保持乐观"
+     },
+     {
+      "t": "whatever happens",
+      "s": "你可能想翻成「无论什么发生」。whatever 带的是让步状语从句，就是「不管……」，相当于 no matter what。happens 是动词，what 在这里当主语，所以是「发生什么」。\n→ 无论发生什么"
+     }
+    ],
+    "order": "英文把 whatever 放在最后，中文习惯先说「无论发生什么」，再说怎么做，所以提到前面。",
+    "sum": "无论发生什么，都尽量保持乐观。",
+    "cmp": "和书上基本一样。书上用「都要」，是命令语气；我用「尽量」，保留了 Try to 的意思。"
+   }
   },
   "Some pessimistic experts feel that the automobile is bound to fall into disuse.": {
    "ph": [

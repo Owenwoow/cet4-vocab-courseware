@@ -63,6 +63,24 @@
     }
    ]
   },
+  "A few dedicated doctors have fought for years to enlighten the profession.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "A few dedicated doctors have fought for years",
+      "s": "你可能想翻成「几位专注的医生已经战斗了好几年」。fight 在这里不是真打仗，是「努力争取」，所以 fought for years 说成「奋斗多年」。have fought 是现在完成时，意思是从过去一直奋斗到现在。dedicated 是「有献身精神的」。\n→ 几位富有献身精神的医生奋斗多年"
+     },
+     {
+      "t": "to enlighten the profession",
+      "s": "你多半会翻成「去启发这个职业」。念一遍，中文不这么说。to enlighten 是 to do 短语，这里表目的，就是「为了……」。profession 指整个行业的人，enlighten 是「使人开窍、明白」。\n→ 为了让这个行业的人开窍"
+     }
+    ],
+    "order": "英文把目的放在最后，中文常把「为了……」提到前面，再说「奋斗多年」。",
+    "sum": "几位有献身精神的医生多年来一直在努力，想让这个行业的人开窍。",
+    "cmp": "意思一样。书上把「为……」提前，说成「为启蒙这一行业奋斗多年」，更紧凑；「启蒙」比我的「开窍」书面一些。"
+   }
+  },
   "He took shelter under a tree and was struck by lightning.": {
    "ph": [
     {
@@ -75,7 +93,35 @@
      "b": "be struck by",
      "m": "被……击中"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He took shelter under a tree",
+      "s": "你多半会翻成「他拿了庇护在树下」。念一遍，不通吧？take shelter 是一个整体，就是「躲避、避雨」。\n→ 他躲在一棵树下"
+     },
+     {
+      "t": "was struck by lightning",
+      "s": "你可能把 struck 当成「打」，翻成「被闪电打了」，不够准。was struck by 是被动，就是「他被闪电怎么样了」；strike 用在闪电上是「击中」。倒霉事中文本来就爱用「被」，保留就行。\n→ 被闪电击中了"
+     }
+    ],
+    "sum": "他躲在一棵树下，结果被闪电击中了。",
+    "cmp": "和书上基本一样，我多加了「结果」，把两件事的前后关系点明了。"
+   }
+  },
+  "He caught his thumb in the door.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "He caught his thumb in the door",
+      "s": "你多半会翻成「他在门里抓住了他的拇指」。念一遍，谁会这么干？catch 在这里是「夹住、卡住」，意思是拇指不小心被门夹了。英文让人当主语，中文更习惯把受伤的部位提出来，让门去「夹」。\n→ 他的拇指被门夹住了"
+     }
+    ],
+    "order": "英文主语是 He，中文把 his thumb 提到句首当主语，门放到后面。",
+    "sum": "他的拇指被门夹住了。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "He looked up at his father, his features overflowing with energy and delight.": {
    "ph": [
@@ -89,7 +135,21 @@
      "b": "overflow with",
      "m": "洋溢着"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He looked up at his father",
+      "s": "这块照字面翻就行：look up at 是「抬头看」，at 后面是看的对象。\n→ 他抬头看着父亲"
+     },
+     {
+      "t": "his features overflowing with energy and delight",
+      "s": "你多半会翻成「他的面部特征正在溢出精力和喜悦」。念一遍，怪。features 在这里是「脸、面容」。overflowing with 是 -ing 短语，跟在逗号后面，补充说明前面那个动作的同时发生了什么：他看父亲的同时，脸上怎么样。overflow with 是「洋溢着」。\n→ 脸上洋溢着活力和喜悦"
+     }
+    ],
+    "sum": "他抬头看着父亲，脸上洋溢着活力和喜悦。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "It may highlight your inability to delegate effectively.": {
    "ph": [
@@ -98,7 +158,21 @@
      "b": "inability to do",
      "m": "无法做某事"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It may highlight",
+      "s": "你多半会翻成「它可能高亮」。highlight 作动词，是「突出、让人注意到」。may 是「可能」。\n→ 它可能会突出"
+     },
+     {
+      "t": "your inability to delegate effectively",
+      "s": "你可能翻成「你的有效地委派的无能力」，太绕。to delegate 是 to do 短语，跟在名词 inability 后面补充说明它是什么，就是「没有能力做某事」。把名词换成动词说：「你无法……」。delegate 是把任务交给别人去做。\n→ 你无法有效地委派任务"
+     }
+    ],
+    "sum": "这可能会让人注意到你不善于有效地分派工作。",
+    "cmp": "意思一样。书上的「突出」直接对应 highlight，有点生硬；我换成「让人注意到」更顺口。"
+   }
   },
   "The rest of the energy savings comes from the solar units.": {
    "ph": [
@@ -126,7 +200,25 @@
      "b": "convert … into",
      "m": "把……转化为"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "One converts sunlight into energy",
+      "s": "你多半会翻成「一个转换阳光进入能量」。念一遍，不通。看到 convert 眼睛往后找 into：convert A into B，把 A 变成 B。A 是 sunlight，B 是 energy。\n→ 一种把阳光转化为能量"
+     },
+     {
+      "t": "and the other has to eat food",
+      "s": "你可能把 the other 翻成「其他的」。one 和 the other 是一对，两个里的一个和另一个，所以是「另一种」。has to 是「必须」。\n→ 另一种必须吃食物"
+     },
+     {
+      "t": "to make its energy",
+      "s": "你多半会翻成「去制造它的能量」。to make 是 to do 短语，这里表目的，就是「为了……」。its energy 说白了就是「得到能量」。\n→ 来获得能量"
+     }
+    ],
+    "sum": "一种把阳光转化为能量，另一种则必须靠吃东西来获得能量。",
+    "cmp": "意思和书上一样。书上「来产生能量」是照 make 直译，我换成「获得」更顺。"
+   }
   },
   "From sunrise to sunset, my father, my younger brother and I cut the weeds in the very large yards.": {
    "ph": [
@@ -192,7 +284,22 @@
      "b": "set off",
      "m": "引爆"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "At dawn on July 16, 1945",
+      "s": "你多半会照英文顺序翻成「在黎明，7 月 16 日，1945 年」。念一遍，中文不这么排。中文时间是从大到小：先年、月、日，最后才到时刻。at dawn 是「黎明时」。\n→ 1945 年 7 月 16 日黎明时分"
+     },
+     {
+      "t": "the atomic bomb was set off",
+      "s": "你可能翻成「原子弹被设置离开」。set off 是一个整体，意思是「引爆」。was set off 是被动，就是「原子弹被别人怎么样了」，被引爆。\n→ 原子弹被引爆了"
+     }
+    ],
+    "order": "英文是由小到大「时刻、日、月、年」，中文要倒过来，从年说到时刻。",
+    "sum": "1945 年 7 月 16 日黎明时分，原子弹被引爆。",
+    "cmp": "书上说「原子弹爆炸了」，把被动改成了主动，也对；我保留了「被引爆」，更贴原文。"
+   }
   },
   "The street lights go on at dusk.": {
    "ph": [
@@ -244,7 +351,21 @@
      "b": "be set with",
      "m": "摆放着"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Every table had been set",
+      "s": "你多半会翻成「每张桌子被设置了」。had been set 是被动，就是「桌子被人怎么样了」；加上 had，表示在那个时刻之前就已经做完了。set a table 是「摆好餐桌」，眼睛往后找 with：be set with，摆着……。\n→ 每张桌子上都已摆好了"
+     },
+     {
+      "t": "with fine china and crystal",
+      "s": "你可能看到 china 就想到「中国」。这里 china 是小写，意思是「瓷器」。crystal 是「水晶」，这里指水晶玻璃器皿。fine 是「精美的」。\n→ 精美的瓷器和水晶器皿"
+     }
+    ],
+    "sum": "每张桌子上都已经摆好了精美的瓷器和水晶器皿。",
+    "cmp": "意思一样。书上的「摆放着」没有体现 had been 的「早已摆好」，我加了「已经」。"
+   }
   },
   "She keeps a supply of candles in the house in case of power failure.": {
    "ph": [
@@ -259,6 +380,23 @@
      "m": "以防"
     }
    ]
+  },
+  "Schools, restaurants, and businesses closed, and more than 1,000 flights were canceled.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Schools, restaurants, and businesses closed",
+      "s": "你可能看到 closed 就想到「被关闭的」。这里 closed 前面没有 were，是动词过去式，主语是前面三个并列的名词，就是「关门了」。\n→ 学校、餐馆和企业都关门了"
+     },
+     {
+      "t": "more than 1,000 flights were canceled",
+      "s": "你多半会翻成「超过 1,000 个航班被取消了」，这样翻没问题。were canceled 是被动，就是「航班被别人取消了」，英文没说谁取消，中文也不用补，保留「被」或直接说「取消了」都行。more than 是「超过」。\n→ 一千多个航班被取消了"
+     }
+    ],
+    "sum": "学校、餐馆和企业都关了门，一千多个航班被取消。",
+    "cmp": "意思和书上一样。"
+   }
   },
   "There is a heated debate regarding whether the university's canteens should be open to the public.": {
    "ph": [
@@ -295,7 +433,42 @@
      "b": "complain of",
      "m": "诉说（病痛）"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She went to the doctor",
+      "s": "你多半会翻成「她去了医生那里」。念一遍，中文不这么说。go to the doctor 就是「去看医生、去看病」。\n→ 她去看医生"
+     },
+     {
+      "t": "complaining of dizzy spells",
+      "s": "你可能翻成「抱怨头晕的咒语」，spell 在这里不是「咒语」，是「一阵、一段时间」，dizzy spells 就是「一阵一阵头晕」。complaining of 是 -ing 短语，说明她去的时候带着什么情况；complain of 在这里是「诉说（病痛）」。\n→ 说自己一阵一阵地头晕"
+     }
+    ],
+    "sum": "她去看医生，说自己一阵阵头晕。",
+    "cmp": "和书上基本一样，只是书上说的是「一阵一阵地头晕」，我用了「一阵阵」。"
+   }
+  },
+  "The candidate was productive, or intelligent, or a solid scientist or something that's clearly solid praise.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The candidate was productive, or intelligent",
+      "s": "你可能把 productive 翻成「有生产力的」，说人太硬。这里是说人「成果多、多产」。or 把几种夸法并列起来，像在列举可以怎么夸他。\n→ 候选人多产，或者聪明"
+     },
+     {
+      "t": "or a solid scientist",
+      "s": "你多半会翻成「坚实的科学家」。念一遍，怪。solid 说人的时候是「扎实、靠得住」，a solid scientist 就是「一个扎实可靠的科学家」。\n→ 或者是一个扎实可靠的科学家"
+     },
+     {
+      "t": "or something that's clearly solid praise",
+      "s": "that's 就是 that is，that 指谁？放回去试：a solid scientist is clearly solid praise，科学家是赞扬？说不通；something is clearly solid praise，某样东西明摆着是实打实的夸奖——对了。所以 that 带的是定语从句，就是给 something 补一段说明。\n→ 或者别的明摆着是实实在在夸奖的话"
+     }
+    ],
+    "sum": "候选人要么多产，要么聪明，要么是个扎实可靠的科学家，或者是诸如此类明摆着是实在夸奖的评价。",
+    "cmp": "意思相近。书上的「有一些明显值得高度称赞的东西」太绕，我把 something 落在「评价、夸奖」上，更清楚。"
+   }
   },
   "Small schools consolidated into larger ones, meaning more students were farther away from home.": {
    "ph": [
@@ -309,7 +482,21 @@
      "b": "away from",
      "m": "远离"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Small schools consolidated into larger ones",
+      "s": "你可能把 consolidated 翻成「巩固」。放回去试试：小学校巩固成更大的学校？说不通。这里是不及物的「合并」，眼睛往后找 into：合并成……。ones 代替前面的 schools，就是「更大的学校」。\n→ 小学校合并成了更大的学校"
+     },
+     {
+      "t": "meaning more students were farther away from home",
+      "s": "meaning 是 -ing 短语，跟在逗号后面，补充说明前面整件事带来的结果，就是「这意味着……」。后面 more students were… 是省略了 that 的宾语从句，补回去是 meaning (that) more students were…。你多半会翻成「更多的学生更远离家」。念一遍，别扭。farther away from home 是「离家更远」。\n→ 这意味着更多的学生离家更远了"
+     }
+    ],
+    "sum": "小学校合并成了更大的学校，这意味着更多学生离家更远了。",
+    "cmp": "和书上基本一样，意思相同。"
+   }
   },
   "A dry mouth may reduce taste sensitivity, but taste is restored by drinking fluids.": {
    "ph": [],
@@ -356,6 +543,24 @@
     "cmp": "和书上的意思一样，书上译成「液滴中的物质和周围液体中的物质」，把 what 译成「物质」，更书面一点。"
    }
   },
+  "The song has been recorded at a low volume.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The song has been recorded",
+      "s": "你多半会翻成「这首歌已经被记录了」。record 对歌来说是「录制」。has been recorded 是被动，就是「这首歌被别人录好了」，中文说「是……录制的」更顺。\n→ 这首歌是录制的"
+     },
+     {
+      "t": "at a low volume",
+      "s": "你可能把 volume 翻成「体积」或「卷」。放回去试试：以低体积录制？不通。说歌的时候 volume 是「音量」，at a low volume 就是「以较低的音量」。\n→ 以低音量"
+     }
+    ],
+    "order": "把「以低音量」提到「录制」前面，合成「是以低音量录制的」。",
+    "sum": "这首歌是用较低的音量录制的。",
+    "cmp": "和书上基本一样，我多了个「较」。"
+   }
+  },
   "The bulk of the world's languages use base-10, base-20 or base-5 number systems.": {
    "ph": [
     {
@@ -398,6 +603,38 @@
     "cmp": "书上译成「一批新的年轻女性加入了劳动大军」，把「一直在」译成了「加入了」，丢了持续的意思；我保留了 has been entering 的持续感。"
    }
   },
+  "People in both groups used nicotine patches before they quit.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "People in both groups used nicotine patches",
+      "s": "你可能把 patches 翻成「补丁」。nicotine patches 是戒烟用的「尼古丁贴片」。used 在这里是过去式「使用」。in both groups 是跟在 People 后面的说明，「两组中的人」。\n→ 两组的人都使用了尼古丁贴片"
+     },
+     {
+      "t": "before they quit",
+      "s": "你多半会翻成「在他们退出之前」。before 带的是时间状语从句，就是「在……之前」。they 指前面的 People，quit 在这里不带宾语，是「戒烟」。\n→ 在戒烟之前"
+     }
+    ],
+    "order": "中文习惯先说时间，把「在戒烟之前」提到「使用贴片」前面。",
+    "sum": "两组的人在戒烟之前都用了尼古丁贴片。",
+    "cmp": "和书上一样，书上把时间提到前面，说成「戒烟前」。"
+   }
+  },
+  "They have their weight reduced to minimum.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "They have their weight reduced to minimum",
+      "s": "你多半会翻成「他们有他们的重量减少到最小」。念一遍，不通。这是 have + 名词 + 过去分词：reduced 是 -ed 短语（过去分词），放在 their weight 后面，表示重量「被」减少了。have 在这里是「使得」。minimum 是「最小」。\n→ 它们的重量被减到最小"
+     }
+    ],
+    "order": "英文是 have + 重量 + 被减，中文把「重量」提成主语，have 融进句子里。",
+    "sum": "它们的重量被降到了最低。",
+    "cmp": "意思和书上一样，书上也是把 have 融进句子，没有单独译出来。"
+   }
+  },
   "What is the absolute maximum you can afford to pay?": {
    "ph": [
     {
@@ -429,7 +666,21 @@
      "b": "take one's pulse",
      "m": "把脉"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The Chinese doctor took my pulse",
+      "s": "你多半会翻成「中国医生拿了我的脉搏」。take one's pulse 是一个整体，就是「给某人把脉」。The Chinese doctor 指的是「中医」。\n→ 中医给我把了脉"
+     },
+     {
+      "t": "and asked to see my tongue",
+      "s": "你可能翻成「问去看我的舌头」。asked to see 里 to see 是 to do 短语，ask to do 就是「要求做某事」。看舌头的是医生自己。\n→ 又要求看我的舌头"
+     }
+    ],
+    "sum": "中医给我把了脉，又要求看看我的舌头。",
+    "cmp": "和书上基本一样，我加了一个「又」，把两个动作的先后接起来。"
+   }
   },
   "Many of them buy things on impulse.": {
    "ph": [
@@ -439,6 +690,24 @@
      "m": "冲动地"
     }
    ]
+  },
+  "The heavy rain has caused floods in many parts of the country.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The heavy rain has caused floods",
+      "s": "你多半会翻成「大雨已经引起了洪水」。意思没错，has caused 是现在完成时，就是「已经造成了」。floods 是复数，可以说「洪灾」。\n→ 大雨造成了洪灾"
+     },
+     {
+      "t": "in many parts of the country",
+      "s": "你可能翻成「在这个国家的许多部分」。parts of the country 说成「全国各地」更自然。\n→ 在全国许多地方"
+     }
+    ],
+    "order": "中文习惯先说地点，把「在全国许多地方」提到「造成了洪灾」前面。",
+    "sum": "大雨在全国许多地方造成了洪灾。",
+    "cmp": "意思一样。书上把 cause floods 译成「使……洪水泛滥」，让地点当主语，是另一种转换，两种都通顺。"
+   }
   },
   "Prices fluctuate in response to harvests.": {
    "ph": [
@@ -470,7 +739,34 @@
      "b": "leave sth. to do",
      "m": "让……自行做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Leave the dishes to drain",
+      "s": "你多半会翻成「离开碟子去排水」。念一遍，怪。leave 在这里不是「离开」，是「留着、放着不管」。leave sth. to do 就是「让某物自己去做某事」，to drain 是 to do 短语，眼睛往后找 to——drain 是「沥干水」。开头没主语，是祈使句，就是在叫人去做。\n→ 把碟子放着沥干水"
+     }
+    ],
+    "sum": "把碟子放着沥干水。",
+    "cmp": "意思和书上一样。书上说「控干」，没有译出 leave 的「放着」，我补上了。"
+   }
+  },
+  "When the bubble burst, demand collapsed.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "When the bubble burst",
+      "s": "你多半会翻成「当气泡爆裂」。bubble 在这里是经济上的「泡沫」。when 带的是时间状语从句，就是「当……的时候」。burst 是过去式，「破裂」。\n→ 当泡沫破裂时"
+     },
+     {
+      "t": "demand collapsed",
+      "s": "你可能把 demand 当成动词「要求」。这里前面没有主语之外的动词，它是名词「需求」，collapsed 才是动词，「崩溃、骤降」。\n→ 需求就崩溃了"
+     }
+    ],
+    "sum": "泡沫一破裂，需求就崩溃了。",
+    "cmp": "和书上一样。"
+   }
   },
   "Leave the apricots to soak for 20 minutes.": {
    "ph": [
@@ -484,7 +780,34 @@
      "b": "leave sth. to do",
      "m": "让……自行做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Leave the apricots to soak for 20 minutes",
+      "s": "你多半会翻成「离开杏子去浸泡 20 分钟」。念一遍，不通。leave 在这里是「放着、留着」，leave sth. to do 是「让某物自己去做某事」，to soak 是 to do 短语，眼睛往后找 to——soak 是「浸泡」。没有主语，是祈使句，就是在叫人去做。for 20 minutes 是「持续 20 分钟」。\n→ 把杏子放着浸泡 20 分钟"
+     }
+    ],
+    "sum": "把杏子放着泡 20 分钟。",
+    "cmp": "意思和书上一样。书上说「把杏子浸泡 20 分钟」，没有译出 leave 的「放着」。"
+   }
+  },
+  "The experience of using IT penetrates almost the entire work field.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The experience of using IT",
+      "s": "这块照字面翻就行：of 后面接 -ing，using IT 是「使用 IT 这件事」，整块说的是这件事的经验。\n→ 使用 IT 的经验"
+     },
+     {
+      "t": "penetrates almost the entire work field",
+      "s": "你可能把 penetrate 翻成「刺穿」，翻成「刺穿几乎整个工作领域」，太吓人。这里是说抽象的东西，就是「渗透到」。中文里 penetrate 后面要补一个「到」。almost the entire 是「几乎整个」。\n→ 渗透到几乎整个工作领域"
+     }
+    ],
+    "sum": "使用 IT 的经验已经渗透到几乎整个工作领域。",
+    "cmp": "书上说「几乎可以渗透到整个工作领域」，多了「可以」，原句并没有 can，我按原文写成直接陈述。"
+   }
   },
   "The different shapes of the containers suggest they were used to brew, filter, and store beer.": {
    "ph": [
@@ -493,7 +816,21 @@
      "b": "be used to do",
      "m": "被用来做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The different shapes of the containers suggest",
+      "s": "你多半会翻成「容器的不同形状建议」。念一遍，怪，形状怎么会提建议？suggest 在这里是「表明、暗示」。\n→ 容器的不同形状表明"
+     },
+     {
+      "t": "they were used to brew, filter, and store beer",
+      "s": "suggest 后面省略了 that，补回去是 suggest (that) they were used…，后面是宾语从句。they 指谁？放回去试：shapes were used to brew？形状不能酿酒；containers were used to brew？容器可以——所以是容器。were used to 后面直接接动词原形 brew，是被动加 to do，就是「被用来做」，不是「习惯于」。brew、filter、store 三个并列，共用一个 to。\n→ 它们被用来酿造、过滤和储存啤酒"
+     }
+    ],
+    "sum": "容器的不同形状表明，它们被用来酿造、过滤和储存啤酒。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "To help prevent headaches, drink plenty of water, and avoid alcohol and coffee.": {
    "ph": [
@@ -502,7 +839,21 @@
      "b": "plenty of",
      "m": "大量的"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "To help prevent headaches",
+      "s": "你多半会翻成「去帮助预防头疼」。句首的 To help 是 to do 短语，这里表目的，就是「为了……」。help prevent 连着，是「帮助预防」。\n→ 为了帮助预防头疼"
+     },
+     {
+      "t": "drink plenty of water, and avoid alcohol and coffee",
+      "s": "这两个动词都顶在句首，没有主语，是祈使句，就是在叫人去做。你可能把 avoid alcohol and coffee 翻成「避免酒精和咖啡」，意思对，但中文说「不要喝酒和咖啡」更自然。plenty of 是「大量的」。\n→ 要喝大量的水，不要喝酒和咖啡"
+     }
+    ],
+    "sum": "为了预防头疼，要多喝水，别喝酒和咖啡。",
+    "cmp": "意思和书上一样，书上保留了 help 的「帮助」，我省略了。"
+   }
   },
   "The liquor is not for sale in many countries.": {
    "ph": [
@@ -529,7 +880,21 @@
      "b": "over time",
      "m": "随着时间的推移"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The method for making beer",
+      "s": "你多半会翻成「为了制作啤酒的方法」。念一遍，不通。for 后面接 -ing，for making beer 跟在 method 后面补充说明它是什么，就是「用来做啤酒的方法」。\n→ 酿造啤酒的方法"
+     },
+     {
+      "t": "has changed over time",
+      "s": "你可能把 over time 翻成「在时间之上」。over time 是一个整体，就是「随着时间的推移」。has changed 是现在完成时，意思是一路变到了现在。\n→ 随着时间的推移发生了变化"
+     }
+    ],
+    "sum": "酿造啤酒的方法随着时间的推移发生了变化。",
+    "cmp": "和书上基本一样，我把「改变」换成了「发生了变化」。"
+   }
   },
   "Most countries impose some sort of tax on alcohol and tobacco.": {
    "ph": [
@@ -550,6 +915,42 @@
     }
    ]
   },
+  "Alcoholic beverages are served in the hotel lounge.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Alcoholic beverages are served",
+      "s": "你多半会翻成「含酒精的饮料被服务」。念一遍，不通。are served 是被动，就是「饮料被别人怎么样了」，serve 对饮料来说是「供应、端上」。中文少用「被」，把地点请出来当主语：酒店的休息室供应饮料。\n→ 供应含酒精的饮料"
+     },
+     {
+      "t": "in the hotel lounge",
+      "s": "这块照字面翻就行：lounge 是「休息室」。\n→ 酒店的休息室"
+     }
+    ],
+    "order": "英文主语是饮料、地点在后；中文把地点提到句首当主语，被动变成「提供」。",
+    "sum": "酒店的休息室里供应含酒精的饮料。",
+    "cmp": "意思和书上一样，书上多了「公共」二字，把 lounge 说得更具体。"
+   }
+  },
+  "I definitely feel things more strongly than the average person.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "I definitely feel things",
+      "s": "你多半会翻成「我肯定感觉东西」。念一遍，怪。feel things 说的是对事物有感受，把动词换成名词：「我对事物的感受」。definitely 是「肯定」。\n→ 我对事物的感受肯定"
+     },
+     {
+      "t": "more strongly than the average person",
+      "s": "more strongly 是 strongly 的比较级，than 引出被比较的对象，就是「比……更强烈」。the average person 你可能翻成「平均人」，average 这里是形容词，「普通的」。\n→ 比普通人更强烈"
+     }
+    ],
+    "order": "英文是「我感受事物，更强烈」，中文把 feel things 变成名词「我对事物的感受」，再接「比……更强烈」。",
+    "sum": "我对事物的感受肯定比普通人更强烈。",
+    "cmp": "和书上完全一样。"
+   }
+  },
   "They will find they have something in common.": {
    "ph": [
     {
@@ -557,7 +958,21 @@
      "b": "have sth. in common",
      "m": "有共同点"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They will find they have",
+      "s": "你可能翻成「他们会找到他们有」。find 在这里是「发现」，不是「找到」；后面 they have… 是宾语从句，省略了 that，补回去是 find (that) they have…，就是「发现某个情况」。will 是「会」。\n→ 他们会发现他们有"
+     },
+     {
+      "t": "something in common",
+      "s": "你多半会翻成「一些东西在共同」。念一遍，怪。have sth. in common 是一个整体，就是「有共同之处」。\n→ 一些共同点"
+     }
+    ],
+    "sum": "他们会发现彼此有一些共同点。",
+    "cmp": "和书上基本一样，我加了「彼此」，把 in common 的意思点明了。"
+   }
   },
   "I'll put the kettle on and make some tea.": {
    "ph": [
@@ -571,7 +986,21 @@
      "b": "put … on",
      "m": "烧上（水）"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "I'll put the kettle on",
+      "s": "你多半会翻成「我会把水壶放在上面」。put on 被拆开了，眼睛往后找 on——put the kettle on 是整体，就是「把水壶放到炉子上烧」。I'll 是 I will，这里是临时决定要做某事。\n→ 我去把水壶烧上"
+     },
+     {
+      "t": "and make some tea",
+      "s": "这块照字面翻就行：make tea 是「沏茶」，and 把两个动作并列起来。\n→ 再沏点茶"
+     }
+    ],
+    "sum": "我去烧壶水，沏点茶。",
+    "cmp": "意思和书上一样，书上把 kettle 译成「烧壶水」，直接说成烧水这个动作，更自然。"
+   }
   }
  }
 }

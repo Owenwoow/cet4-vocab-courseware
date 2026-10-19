@@ -47,6 +47,23 @@
     "cmp": "和书上基本一样，书译把 perform 译成「表现」，我写成「发挥」，两个都行。"
    }
   },
+  "It's good to let your emotions show, don't repress them.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It's good to let your emotions show",
+      "s": "你多半会翻成「让你的情绪显示是好的」。念一遍，主语和谓语都乱了。It's good to do 里的 It 是形式主语，真正说的事在后面的 to let……，也就是「做某事很好」。let your emotions show 是「让情绪表现出来」，let 后面的动词不带 to。\n→ 让你的情绪流露出来是好事"
+     },
+     {
+      "t": "don't repress them",
+      "s": "这块照字面翻就行：repress 是「压抑、抑制」，them 放回去试，只能指 your emotions。\n→ 不要压抑它们"
+     }
+    ],
+    "sum": "让情绪流露出来是好事，不要压抑它们。",
+    "cmp": "几乎一样，书上用「抑制」，我用「压抑」，对情绪来说都行。"
+   }
+  },
   "She was unable to suppress a giggle.": {
    "ph": [
     {
@@ -54,7 +71,22 @@
      "b": "be unable to do",
      "m": "不能做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She was unable to suppress",
+      "s": "你多半会翻成「她不能压制」。念一遍，压制什么？别急，先看 unable to do，它是一个整体，就是「没法做某事」。to suppress 是不定式，补出「没法做什么」。suppress 是「压住、忍住」。\n→ 她没法忍住"
+     },
+     {
+      "t": "a giggle",
+      "s": "这块照字面翻就行：giggle 是名词，指「咯咯的笑声」。忍不住一声笑，中文就说「笑出声」。\n→ 笑声"
+     }
+    ],
+    "order": "「没法忍住笑声」中文不顺，换成「忍不住笑出声」：把忍的内容变成动作。",
+    "sum": "她忍不住笑出了声。",
+    "cmp": "和书上基本一样，书上结尾多一个「来」。"
+   }
   },
   "Some services, however, remind us that life will eventually return to normal.": {
    "ph": [
@@ -68,7 +100,21 @@
      "b": "return to normal",
      "m": "恢复正常"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Some services, however,",
+      "s": "你可能照位置翻成「一些服务，然而，提醒我们」。念一遍，「然而」夹在中间很别扭。however 前后有逗号，是插入语，就是主语后面顺口插进来的一个转折词。中文把它挪到句首。\n→ 然而，一些服务"
+     },
+     {
+      "t": "remind us that life will eventually return to normal",
+      "s": "你多半会翻成「提醒我们生活将会最终回到正常」，词都对，但不顺。remind sb. that…… 里的 that 带的是宾语从句，就是「提醒的内容」。will 在这里是单纯的将来：没有 if，也不是和事实相反，所以不是虚拟。return to normal 是「恢复正常」，eventually 是「最终」。\n→ 提醒我们，生活最终会恢复正常"
+     }
+    ],
+    "sum": "然而，有些服务提醒我们，生活最终会恢复正常。",
+    "cmp": "几乎一样，书上用「将」，比我的「会」更书面。"
+   }
   },
   "\"I felt empowered because I broke through my own limitations,\" she recalls.": {
    "ph": [
@@ -77,7 +123,55 @@
      "b": "break through",
      "m": "突破"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "I felt empowered because I broke through my own limitations",
+      "s": "empowered 你多半会翻成「被授权」，感觉不对。它是 -ed 形容词，意思是「被赋予了力量的」，felt empowered 就是「觉得自己有力量」。because 带原因状语从句，说明为什么有力量：broke through 是「突破」，limitations 是「局限」。\n→ 我觉得自己充满力量，因为我突破了自己的局限"
+     },
+     {
+      "t": "she recalls",
+      "s": "这块照字面翻就行：recall 是「回忆」，引语放前面，she recalls 放后面，就是「她回忆道」。\n→ 她回忆道"
+     }
+    ],
+    "sum": "「我觉得自己充满了力量，因为我突破了自己的局限。」她回忆道。",
+    "cmp": "意思一样，书上的「被赋予了力量」更贴近 empowered 的字面，我的「充满力量」口语一点。"
+   }
+  },
+  "The town raised a memorial to those killed in the war.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The town raised a memorial",
+      "s": "raise 你多半翻成「举起、提高」，翻成「小镇举起了一座纪念碑」就怪了。这里 raise 是「建立、树立」，memorial 是「纪念碑」。\n→ 这座小镇树立了一座纪念碑"
+     },
+     {
+      "t": "to those killed in the war",
+      "s": "这里 to 是「献给」。those 是「那些人」，killed in the war 是过去分词（-ed）短语，放在 those 后面补充说明，就是「在战争中被杀死的」，说白了是「牺牲的」。\n→ 献给在战争中牺牲的人"
+     }
+    ],
+    "sum": "小镇为在战争中牺牲的人树立了一座纪念碑。",
+    "cmp": "和书上一样。"
+   }
+  },
+  "I have to finish this memo and put it in the mail.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "I have to finish this memo",
+      "s": "你可能把 have 当成「有」，翻成「我有……完成这份备忘录」，念着就不通。have to do 是一个整体，就是「必须做」，to finish 是不定式，补出必须做什么。\n→ 我必须完成这份备忘录"
+     },
+     {
+      "t": "and put it in the mail",
+      "s": "and 连的是第二个动作 put，和 finish 共用前面的 have to。it 指谁？句中能指的只有 this memo。put it in the mail 字面是「把它放进邮件里」，中文说「寄出去」。\n→ 再把它寄出去"
+     }
+    ],
+    "sum": "我得把这份备忘录弄完，再寄出去。",
+    "cmp": "意思一样，书上是「必须完成……并把它寄出去」，我换成口语。"
+   }
   },
   "Most people express gratitude for help.": {
    "ph": [
@@ -132,7 +226,21 @@
      "b": "adj. + enough to do",
      "m": "足以做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Are the benefits of the product important enough",
+      "s": "你多半会翻成「是不是产品的好处重要足够」。念一遍，enough 的位置不对。adj. + enough 是「够……」，形容词在前、enough 在后，翻成「足够重要」。Are 放在最前面是一般疑问句，就是「是不是、是否」。\n→ 产品的好处是否足够重要"
+     },
+     {
+      "t": "to justify buying it",
+      "s": "enough to do 是「足以做某事」，to justify 是不定式，说明「重要到什么程度」。justify 是「证明……有道理」。buying it 是 -ing 短语，就是「买它这件事」，作 justify 的宾语。\n→ 足以证明买它是合理的"
+     }
+    ],
+    "sum": "产品的好处，是否重要到足以证明买它是值得的？",
+    "cmp": "书上的「值得购买」把 justify 和 buying 压在一起，更简洁；我多展开了一步。"
+   }
   },
   "The jury has returned a verdict of guilty.": {
    "ph": [
@@ -155,7 +263,22 @@
      "b": "trial and error",
      "m": "反复试错"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "We learn, in a sense,",
+      "s": "你可能按顺序翻成「我们学习，在一种意义上，通过……」，断得很碎。in a sense 夹在两个逗号中间，是插入语，就是顺口加的一句「从某种意义上说」。\n→ 我们学习，从某种意义上说"
+     },
+     {
+      "t": "by trial and error",
+      "s": "trial and error 是固定搭配，就是「试了出错、错了再试」，说白了是「反复试错」。by 是「通过」。\n→ 是通过反复试错"
+     }
+    ],
+    "order": "插入语挪到句首：先说「从某种意义上说」，再说我们怎么学。",
+    "sum": "从某种意义上说，我们是通过反复试错来学习的。",
+    "cmp": "和书上一样。"
+   }
   },
   "A couple of them have got involved in crimes.": {
    "ph": [
@@ -169,7 +292,21 @@
      "b": "get involved in",
      "m": "卷入"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "A couple of them",
+      "s": "你多半会翻成「一对他们」。a couple of 是「几个」，不一定是两个，后面跟 them 就是「他们中的几个」。\n→ 他们中的几个人"
+     },
+     {
+      "t": "have got involved in crimes",
+      "s": "have got 你可能当成「得到了」。这里 got 是 get 的过去分词，have got 构成现在完成时，表示「已经……」。get involved in 是整体，involved 带着被动的意思（被牵进去），就是「卷入」。\n→ 已经卷入了犯罪"
+     }
+    ],
+    "sum": "他们中有几个人已经卷入了犯罪。",
+    "cmp": "书上说「被卷入」，带了个「被」；中文不爱用「被」，我写成「卷入」，意思一样。"
+   }
   },
   "There is discrimination against male nurses.": {
    "ph": [
@@ -187,7 +324,21 @@
      "b": "be obliged to do",
      "m": "不得不做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They were obliged to fulfill",
+      "s": "你多半会翻成「他们被强迫去履行」。were obliged 是被动，就是「他们被迫怎么样」，be obliged to do 是整体，中文常说「不得不做」。to fulfill 是不定式，补出不得不做什么。\n→ 他们不得不履行"
+     },
+     {
+      "t": "the signed contract",
+      "s": "signed 是过去分词（-ed），放在名词前面当形容词用，就是「被签过的」，说白了是「已签订的」。\n→ 已签订的合同"
+     }
+    ],
+    "sum": "他们不得不履行已经签订的合同。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "They are responsible for working through that problem.": {
    "ph": [
@@ -201,7 +352,21 @@
      "b": "work through",
      "m": "解决"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They are responsible for",
+      "s": "你多半会翻成「他们对……是负责的」。念一遍，有点拗口。be responsible for 是整体，for 后面跟的就是要负责的事，中文说「有责任……」更顺。\n→ 他们有责任"
+     },
+     {
+      "t": "working through that problem",
+      "s": "for 是介词，后面不能直接跟动词，所以用 working 这种 -ing 形式，-ing 开头的短语就是「做某事」这件事。work through 你可能翻成「通过工作」，错了，它是「一步一步把问题处理掉」，即「解决」。\n→ 解决那个问题"
+     }
+    ],
+    "sum": "他们有责任解决那个问题。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "He felt it his duty to revolutionise its management.": {
    "ph": [
@@ -210,7 +375,22 @@
      "b": "feel it one's duty to do",
      "m": "觉得做某事是自己的责任"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He felt it his duty",
+      "s": "你多半会翻成「他觉得它是他的责任」，那 it 到底指什么？眼睛往后找 to——找到了：to revolutionise……。felt it his duty to do 里的 it 是形式宾语，真正的宾语是后面的 to do，整体就是「觉得做某事是自己的责任」。\n→ 他觉得……是他的责任"
+     },
+     {
+      "t": "to revolutionise its management",
+      "s": "to revolutionise 是不定式，就是上面 it 所代表的那件事。revolutionise 是「彻底改革」，its management 是「它的管理」。\n→ 彻底改革它的管理"
+     }
+    ],
+    "order": "英文先说「觉得是责任」、再说是什么事，中文习惯先说事，再说「是他的责任」，所以把第二块提到前面。",
+    "sum": "他觉得彻底改革其管理是自己的责任。",
+    "cmp": "意思一样，书上用「改革」，我多了个「彻底」，因为 revolutionise 本身有彻底变革的意思。"
+   }
   },
   "He faces trial on several charges.": {
    "ph": [
@@ -228,7 +408,21 @@
      "b": "be prepared for",
      "m": "为……做准备"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The child had been treated",
+      "s": "你多半会翻成「这个孩子已经被治疗了」。had been treated 是被动，就是「孩子被别人治疗」，加上 had 表示「在那之前已经」。中文更常说「接受了治疗」。\n→ 这个孩子已经接受了治疗"
+     },
+     {
+      "t": "and was being prepared for discharge",
+      "s": "was being prepared 是进行时的被动，字面是「正在被准备」，中文说「正准备」就够了。discharge 你可能想到「排放」，这里是名词，指病人「出院」。\n→ 正准备出院"
+     }
+    ],
+    "sum": "这个孩子已经接受治疗，正准备出院。",
+    "cmp": "和书上基本一样，书上多一个「了」。"
+   }
   },
   "They are calling for tough legislation to tackle this problem.": {
    "ph": [
@@ -237,7 +431,21 @@
      "b": "call for",
      "m": "呼吁，要求"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They are calling for tough legislation",
+      "s": "你可能把 call 当成「打电话」，翻成「他们在为严格的立法打电话」，不通。call for 是整体，就是「呼吁、要求」。are calling 是进行时，表示「正在呼吁」。\n→ 他们在呼吁出台严格的法律"
+     },
+     {
+      "t": "to tackle this problem",
+      "s": "to tackle 是不定式，说明这个法律是用来干什么的。tackle 是「处理、解决」。\n→ 来解决这个问题"
+     }
+    ],
+    "sum": "他们呼吁制定严格的法律来解决这个问题。",
+    "cmp": "书上用「提出制订」，我用「呼吁」，因为 call for 本身就有呼吁的意思；其余一样。"
+   }
   },
   "Sharing items such as cars does good to the environment.": {
    "ph": [
@@ -251,7 +459,21 @@
      "b": "do good to",
      "m": "对……有好处"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Sharing items such as cars",
+      "s": "你可能把 Sharing 当成「正在共享」。它是 -ing 开头当主语，就是「共享某物」这件事。such as cars 是「例如汽车」，items 是「物品」。\n→ 共享汽车之类的物品"
+     },
+     {
+      "t": "does good to the environment",
+      "s": "主语是「共享这件事」，算一件事，所以用 does。你可能把 does good 翻成「做好」，错了。do good to 是整体，就是「对……有好处」。\n→ 对环境有好处"
+     }
+    ],
+    "sum": "共享汽车之类的物品，对环境有好处。",
+    "cmp": "和书上一样，书上把 items 补成「共享物品」，我省掉了重复的「共享」。"
+   }
   },
   "A clever lawyer might find a way of getting round that clause.": {
    "ph": [
@@ -265,7 +487,22 @@
      "b": "get round",
      "m": "绕过"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "A clever lawyer might find",
+      "s": "你可能把 might 当成「可以」，翻成「聪明的律师可以找到」。可是没有人在许可什么，这里没有 if 条件，也不和事实相反，所以不是虚拟，只是「也许、可能」的推测语气。A clever lawyer 泛指「高明的律师」。\n→ 高明的律师也许能找到"
+     },
+     {
+      "t": "a way of getting round that clause",
+      "s": "of 后面跟 getting，是 -ing 形式，a way of doing 就是「做某事的办法」。get round 你可能翻成「绕着转」，这里是「绕过去、避开」。clause 是合同、法律里的「条款」。\n→ 绕过那个条款的办法"
+     }
+    ],
+    "order": "英文是「办法」在前、「绕过条款」在后，中文把「绕过那个条款」放到「办法」前面，当修饰。",
+    "sum": "高明的律师也许能找到绕过那个条款的办法。",
+    "cmp": "和书上一样。"
+   }
   },
   "She worked on the draft of the American Constitution.": {
    "ph": [
@@ -283,7 +520,39 @@
      "b": "proceed to do",
      "m": "接着做，继续做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "We proceeded to drift",
+      "s": "你多半会翻成「我们进行去漂流」。proceed to do 是整体，就是「接着做、继续做」，to drift 是不定式，补出接着做什么。drift 是「随水漂」。\n→ 我们接着漂流"
+     },
+     {
+      "t": "on up the river",
+      "s": "你可能翻成「在河的上面」。up the river 是「往河的上游」；on 在这里表示「继续往前」。\n→ 继续往河的上游去"
+     }
+    ],
+    "sum": "我们继续漂向河的上游。",
+    "cmp": "意思和书上一样，书上写成「继续向河流的上游漂流」，我把重复的动作合并了。"
+   }
+  },
+  "Blood flow can be reduced as blood vessels narrow.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Blood flow can be reduced",
+      "s": "你多半会翻成「血流能被减少」。can be reduced 是被动，就是「血流被别的东西减少」。中文不用「被」，说「血流可能会减少」就行。blood flow 是名词，「血流」。\n→ 血流可能会减少"
+     },
+     {
+      "t": "as blood vessels narrow",
+      "s": "as 你可能翻成「因为」，放回去也勉强说得通，但这里 narrow 是动词「变窄」，as 带的是时间状语从句，表示两件事一起变化，译成「随着」更准。\n→ 随着血管变窄"
+     }
+    ],
+    "order": "英文把 as 从句放后面，中文习惯先说「随着……」，所以把后半句提到前面。",
+    "sum": "随着血管变窄，血流可能会减少。",
+    "cmp": "和书上一样。"
+   }
   },
   "They float around in the oven.": {
    "ph": [
@@ -324,7 +593,21 @@
      "b": "find out",
      "m": "弄清，查明"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It appeals to kids' curiosity",
+      "s": "appeal 你可能只认识「呼吁、上诉」，翻成「它对孩子的好奇心上诉」，当然不通。appeal to 是整体，就是「吸引」。\n→ 它吸引孩子们的好奇心"
+     },
+     {
+      "t": "to find out what is hidden inside",
+      "s": "to find out 是不定式，说明好奇心想做什么：想弄清。what is hidden inside 是 find out 的宾语，what 带的是名词性从句，就是「被藏在里面的东西」；is hidden 是被动，中文说「里面藏着什么」。\n→ 想弄清里面藏着什么"
+     }
+    ],
+    "sum": "它勾起了孩子们的好奇心，让他们想弄清里面藏着什么。",
+    "cmp": "意思一样，书上的「吸引」是 appeal to 的字面意思，我用「勾起」更口语。"
+   }
   },
   "Kids would beg for a new lunch box every year to keep up with the newest characters.": {
    "ph": [
@@ -338,7 +621,21 @@
      "b": "keep up with",
      "m": "跟上"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Kids would beg for a new lunch box every year",
+      "s": "你多半会翻成「孩子们会乞求一个新饭盒」。beg 是「乞讨」，用在孩子身上太重，说「央求」就行。would 怎么看？句中没有 if 条件，也不和事实相反，每年都这样，所以不是虚拟，是「总会、老是」这种反复发生的习惯。\n→ 孩子们每年都会央求买个新饭盒"
+     },
+     {
+      "t": "to keep up with the newest characters",
+      "s": "to keep up with 是 to do 的不定式，表示目的，就是「为了……」。keep up with 是「跟上」。characters 你可能翻成「性格」，这里是「角色」。\n→ 好跟上最新角色的潮流"
+     }
+    ],
+    "sum": "孩子们每年都会央求买个新饭盒，好跟上最新角色的潮流。",
+    "cmp": "书上的「还是」在英文里没有对应的词；「乞求」也比「央求」重一点。"
+   }
   },
   "They surrendered their guns to the police.": {
    "ph": [
@@ -413,7 +710,21 @@
      "b": "fall victim to",
      "m": "成为……的受害者"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "One benefit of this change is that",
+      "s": "你可能把 that 翻成「那个」。这里 is that 后面带的是从句，补出「好处具体是什么」。One benefit of this change 就是「这种变化的一个好处」。\n→ 这种变化的一个好处是"
+     },
+     {
+      "t": "students will not fall victim to the \"summer slide\"",
+      "s": "fall 你多半翻成「落下」。fall victim to 是整体，就是「成为……的受害者」。will not 是单纯的将来，不是虚拟。summer slide 是个叫法，指「暑期里（学习）退步」。\n→ 学生不会成为「暑期退步」的受害者"
+     }
+    ],
+    "sum": "这种变化的一个好处是，学生不会再受「暑期学习退步」之害。",
+    "cmp": "意思一样，书上在括号里补了「学习」，帮读者明白退步的是什么；我把「受害者」换成「受害」更口语。"
+   }
   },
   "The pursuit of a fulfilling career involves personal sacrifice.": {
    "ph": [
@@ -431,7 +742,17 @@
      "b": "be released from",
      "m": "从……被释放"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He has been released from jail",
+      "s": "你多半会翻成「他已经被从监狱释放了」。has been released 是被动加现在完成，就是「他已经被别人放出来了」；中文少用「被」，可以直接说「出狱」。release from 是「从……放出来」，jail 是「监狱」。\n→ 他已经出狱了"
+     }
+    ],
+    "sum": "他已经出狱了。",
+    "cmp": "书上是「已从监狱里放出来了」，保留了被动的味道；我用「出狱」更紧凑。"
+   }
   },
   "He visited a prison located on a faraway island.": {
    "ph": [
@@ -440,7 +761,22 @@
      "b": "be located on",
      "m": "位于"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He visited a prison",
+      "s": "这块照字面翻就行：visit 在这里是「参观」。\n→ 他参观了一座监狱"
+     },
+     {
+      "t": "located on a faraway island",
+      "s": "你多半会翻成「被定位在遥远的岛上」。located 是过去分词，-ed 短语放在名词后面补充说明，就是「被放在……的」，说白了是「位于……的」。\n→ 位于遥远岛屿上的"
+     }
+    ],
+    "order": "英文把 located…… 放在 prison 后面，中文要把它提到「监狱」前面，当修饰。",
+    "sum": "他参观了一座位于遥远岛屿上的监狱。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "Their parents often punish them for minor faults.": {
    "ph": [
@@ -496,7 +832,21 @@
      "b": "a sense of",
      "m": "……感"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "More than half of the interviewees",
+      "s": "这块照字面翻就行：more than half 是「超过一半」，interviewees 是「受访者」。\n→ 超过一半的受访者"
+     },
+     {
+      "t": "felt no sense of guilt over cheating",
+      "s": "你多半会翻成「感觉没有罪恶的感觉」，sense 和「感觉」重复了。no sense of guilt 合起来就是「没有罪恶感」。over 后面的 cheating 是 -ing 形式，就是「作弊这件事」，over 表示「对于」。\n→ 对作弊没有罪恶感"
+     }
+    ],
+    "sum": "超过一半的受访者对作弊没有罪恶感。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Have you ever used email to apologize to a colleague?": {
    "ph": [
@@ -505,7 +855,21 @@
      "b": "apologize to sb.",
      "m": "向……道歉"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Have you ever used email",
+      "s": "你可能把 Have 当成「有」。这里 Have used 是现在完成时的疑问句，Have 提到前面，问的是「有没有过这种经历」。ever 是「曾经」。\n→ 你曾经用电子邮件"
+     },
+     {
+      "t": "to apologize to a colleague",
+      "s": "这句里有两个 to，别混。第一个是 to apologize，不定式，表示目的，就是「来做什么」；第二个是 apologize to sb. 里的 to，「向某人道歉」。\n→ 向同事道过歉吗"
+     }
+    ],
+    "sum": "你曾经用电子邮件向同事道歉过吗？",
+    "cmp": "和书上一样，只是我把「用电子邮件」放在「向同事道歉」前面连着说。"
+   }
   },
   "He felt guilty for his sins and decided to change.": {
    "ph": [
@@ -514,7 +878,39 @@
      "b": "feel guilty for",
      "m": "因……感到内疚"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He felt guilty for his sins",
+      "s": "sin 你多半翻成「罪恶」，对普通人太重。这里指「过错」。feel guilty for 是整体，for 表示原因，就是「为……感到内疚」。\n→ 他为自己的过错感到内疚"
+     },
+     {
+      "t": "and decided to change",
+      "s": "你可能翻成「决定去改变」，多了个「去」。decide to do 就是「决定做某事」，to change 是不定式，补出决定做什么。and 连的是 felt 和 decided 两个动作。\n→ 并决定改变"
+     }
+    ],
+    "sum": "他为自己的过错感到内疚，决定改变。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "People sometimes kneel to pray.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "People sometimes kneel",
+      "s": "这块照字面翻就行：kneel 是「跪」，sometimes 是「有时」。\n→ 人们有时会下跪"
+     },
+     {
+      "t": "to pray",
+      "s": "你多半会翻成「去祈祷」，再和上一块拼成「下跪去祈祷」，就变成两件事了。to pray 是不定式，表示目的，其实是「为了祈祷而跪」，中文就说「跪着祈祷」。\n→ 为了祈祷"
+     }
+    ],
+    "order": "把「为了祈祷」和「跪」合起来说成「跪着祈祷」。",
+    "sum": "人们有时会跪着祈祷。",
+    "cmp": "和书上一样。"
+   }
   },
   "The busy streets in Paris were uneven and caked in thick mud.": {
    "ph": [
@@ -523,7 +919,21 @@
      "b": "be caked in",
      "m": "覆满（泥）"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The busy streets in Paris",
+      "s": "这块照字面翻就行：busy 在说街道时是「繁忙的」。\n→ 巴黎繁忙的街道"
+     },
+     {
+      "t": "were uneven and caked in thick mud",
+      "s": "were 后面连着两个并列的成分：uneven 和 caked in thick mud。caked 你多半想到 cake「蛋糕」，翻成「被蛋糕在泥里」，不通。这里 cake 是动词，意思是「糊满、结成块」，caked 是过去分词，带着被动的意思，be caked in 就是「被……糊满」。uneven 是「不平的」。\n→ 坑坑洼洼，糊满了厚厚的泥"
+     }
+    ],
+    "sum": "巴黎繁忙的街道坑坑洼洼，到处都糊着厚厚的泥。",
+    "cmp": "意思和书上一样，书上的「到处都是厚厚的泥」更顺口；我保留了 caked 糊满的画面。"
+   }
   },
   "It causes them to lose dignity.": {
    "ph": [
@@ -537,7 +947,17 @@
      "b": "cause sb. to do",
      "m": "使某人做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It causes them to lose dignity",
+      "s": "你多半会翻成「它引起他们去失去尊严」。念一遍，别扭吧？cause sb. to do 是整体，眼睛往 them 后面找 to——找到了：to lose。就是「使某人做某事」，to lose 是不定式，补出「使他们怎么样」。\n→ 这会使他们失去尊严"
+     }
+    ],
+    "sum": "这会使他们失去尊严。",
+    "cmp": "几乎一样，书上多了个「了」。"
+   }
   },
   "She was found innocent of any crime.": {
    "ph": [
@@ -546,7 +966,35 @@
      "b": "be found innocent of",
      "m": "被判定无……罪"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She was found innocent",
+      "s": "你多半会翻成「她被发现是无辜的」。was found 是被动，就是「她被别人认定为……」，be found + 形容词在这里是「被判定为……」。innocent 是「无罪的」。\n→ 她被判定无罪"
+     },
+     {
+      "t": "of any crime",
+      "s": "innocent of 是整体，of 后面跟的是「没有犯的罪」，any 在否定意味里是「任何」。\n→ 没有犯任何罪"
+     }
+    ],
+    "order": "中文把两块合起来，说成「判定她没有犯任何罪」。",
+    "sum": "她被判定没有犯任何罪。",
+    "cmp": "书上的「获判无罪」更简洁；我多了「没有犯任何罪」，把 any crime 也译出来了。"
+   }
+  },
+  "They won't help you get a decent job.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "They won't help you get a decent job",
+      "s": "你可能找不到 to，觉得缺了什么。help sb. do 里的动词可以不带 to，help you get 就是 help you to get，「帮你找到」。won't 是 will not，单纯否定将来。decent 你可能只认识「像样」，这里是「体面的、像样的」。\n→ 他们不会帮你找到一份体面的工作"
+     }
+    ],
+    "sum": "他们不会帮你找到一份体面的工作。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "But there needs to be strong economic incentives for companies to locate here.": {
    "ph": [],
@@ -563,6 +1011,41 @@
     ],
     "sum": "但需要有强有力的经济激励措施，让企业愿意在这里落户。",
     "cmp": "和书上基本一样，书上用「来鼓励」，我用「让企业愿意」，意思相同。"
+   }
+  },
+  "He was the first minor to be executed in South Carolina.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "He was the first minor",
+      "s": "minor 你多半认识的是「次要的」，翻成「他是第一个次要」就不通了。这里它是名词，指「未成年人」。\n→ 他是第一个未成年人"
+     },
+     {
+      "t": "to be executed in South Carolina",
+      "s": "to be executed 是不定式的被动，放在 the first minor 后面补充说明，就是「被处决的」。execute 你可能翻成「执行」，用在人身上是「处决」。in South Carolina 是「在南卡罗来纳州」。\n→ 在南卡罗来纳州被处决"
+     }
+    ],
+    "order": "英文把「在南卡罗来纳州被处决」放后面，中文把它提到「第一个未成年人」前面，当修饰。",
+    "sum": "他是南卡罗来纳州第一个被处决的未成年人。",
+    "cmp": "和书上一样。"
+   }
+  },
+  "The government promised to close the loophole in the law.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The government promised to close",
+      "s": "你可能翻成「政府承诺去关闭」。promise to do 是整体，就是「承诺做某事」，to close 是不定式，补出承诺做什么。\n→ 政府承诺堵上"
+     },
+     {
+      "t": "the loophole in the law",
+      "s": "close the loophole 字面是「关上漏洞」，中文说「堵住、填补漏洞」。in the law 是「法律中的」，修饰 loophole。\n→ 法律中的漏洞"
+     }
+    ],
+    "sum": "政府承诺填补法律中的漏洞。",
+    "cmp": "和书上完全一样。"
    }
   }
  }

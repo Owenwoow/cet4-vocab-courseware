@@ -8,7 +8,21 @@
      "b": "back up",
      "m": "支持"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They use their money reserves",
+      "s": "你多半会翻成「他们使用他们的钱储备」。念一遍，别扭吧？reserves 是名词复数，指存起来备用的东西，money reserves 就是「货币储备」。\n→ 他们用货币储备"
+     },
+     {
+      "t": "to back up consumption",
+      "s": "看到 to 别急着翻成「到」。use A to do 是「用 A 来做……」，to back up 是 to do 短语，说明用它来干什么（目的）。back up 是「支持」，consumption 是「消费」。\n→ 来支持消费"
+     }
+    ],
+    "sum": "他们用货币储备来支持消费。",
+    "cmp": "意思一样。书上有两个「他们」，第二个中文里可以省掉。"
+   }
   },
   "Any product that promises to protect your home deserves careful examination.": {
    "ph": [
@@ -66,6 +80,23 @@
     "cmp": "书上是「可以让新娘在尊重传统的同时保留自己的身份」，意思相同，我把 while 放在最后，更贴近英文顺序。"
    }
   },
+  "The chief duty of every government is to protect persons and property.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The chief duty of every government",
+      "s": "你多半会翻成「每个政府的首要的职责」，没错，只是有点啰嗦。chief 就是「首要的」，duty 是「职责」。of every government 说这是谁的职责。\n→ 每个政府的首要职责"
+     },
+     {
+      "t": "is to protect persons and property",
+      "s": "is 后面直接跟 to protect，你可能想翻成「是去保护」，多了个「去」。to protect 是 to do 短语，在这里说明「职责的内容」，is to do 就是「就是做某事」。persons 在这里是「人民、个人」。\n→ 就是保护人民和财产"
+     }
+    ],
+    "sum": "每个政府的首要职责就是保护人民和财产。",
+    "cmp": "和书上一样，书上多了个「都」，加不加都行。"
+   }
+  },
   "The tests are designed to detect changes in mental function.": {
    "ph": [
     {
@@ -78,7 +109,21 @@
      "b": "change in",
      "m": "……的变化"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The tests are designed to detect",
+      "s": "你多半会翻成「这些测试被设计去检测」。念一遍，「被……去」不像中文吧？are designed 是被动，就是「测试被人设计成……」；be designed to do 是固定搭配，意思是「旨在做……、目的是……」。\n→ 这些测试旨在检测"
+     },
+     {
+      "t": "changes in mental function",
+      "s": "changes in 你可能翻成「在心理功能里的变化」，in 在这里不是「在……里面」，change in X 就是「X 方面的变化」。mental 是「心理的、精神的」。\n→ 心理功能的变化"
+     }
+    ],
+    "sum": "这些测试的目的是检测心理功能方面的变化。",
+    "cmp": "意思一样。书上的「旨在」更简洁，书面一点。"
+   }
   },
   "It may prevent your business and career from advancing.": {
    "ph": [
@@ -92,7 +137,17 @@
      "b": "prevent … from doing",
      "m": "阻碍……做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It may prevent your business and career from advancing",
+      "s": "你多半会翻成「它可能阻止你的事业和职业从前进」。念一遍，「从前进」不通吧？眼睛往 prevent 后面找 from：prevent A from doing 是固定搭配，「阻止 A 做某事」。advancing 是 -ing 形式，就是「前进、发展」这件事。A 是 your business and career。\n→ 它可能会妨碍你的事业和职业的发展"
+     }
+    ],
+    "sum": "它可能会妨碍你的事业和职业发展。",
+    "cmp": "意思一样。书上用的是「阻碍……的发展」，把 advancing 变成了名词「发展」，也很顺。"
+   }
   },
   "These children are forbidden to visit terminally ill patients.": {
    "ph": [
@@ -101,7 +156,21 @@
      "b": "be forbidden to do",
      "m": "被禁止做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "These children are forbidden to visit",
+      "s": "你多半会翻成「这些儿童被禁止参观」。visit 后面跟的是 patients（病人），看到人就不是「参观」，而是「探望」。are forbidden 是被动，就是「他们被别人禁止了」；be forbidden to do 就是「被禁止做某事」，to visit 是 to do 短语，说的是禁止的内容。\n→ 这些儿童被禁止探望"
+     },
+     {
+      "t": "terminally ill patients",
+      "s": "terminally 你可能联想到「终点站」，翻成「在终点生病的病人」。其实 terminally ill 是「病到末期的」，也就是「绝症的」。\n→ 绝症患者"
+     }
+    ],
+    "sum": "这些儿童不允许去探望绝症患者。",
+    "cmp": "意思一样。书上保留了「被禁止」，我换成「不允许」，少一个「被」字更口语。"
+   }
   },
   "We deny our children's bids to help until they are 6 or 7 years old.": {
    "ph": [
@@ -166,7 +235,39 @@
      "b": "prohibit … from doing",
      "m": "禁止……做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They prohibit agents from hiring",
+      "s": "你多半会翻成「他们禁止经纪人从雇用」。眼睛看 prohibit 后面的 from：prohibit A from doing 是固定搭配，「禁止 A 做某事」，hiring 是 -ing 形式，就是「雇用」这件事。agents 这里指「经纪公司」。\n→ 他们禁止经纪公司雇用"
+     },
+     {
+      "t": "models with a BMI below 18",
+      "s": "你可能想翻成「有一个低于 18 的 BMI 的模特」，太长了。with 在这里是「具有」，with a BMI below 18 是给 models 补充说明，说白了就是「体重指数低于 18 的」，中文放在「模特」前面。\n→ 体重指数低于 18 的模特"
+     }
+    ],
+    "sum": "他们禁止经纪公司雇用体重指数低于 18 的模特。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "His creative works were exhibited in the shop windows.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "His creative works were exhibited",
+      "s": "你多半会翻成「他的创意作品被展览」。念一遍，「被展览」有点硬。were exhibited 是被动，就是「作品被别人展出了」。中文里东西被展出，直接说「展出」就行。works 在这里是「作品」，不是「工作」。\n→ 他的创意作品展出"
+     },
+     {
+      "t": "in the shop windows",
+      "s": "shop windows 就是「商店橱窗」，in 是「在……里」。\n→ 在商店橱窗里"
+     }
+    ],
+    "order": "英文把地点放在最后，中文习惯把「在商店橱窗里」放在动词「展出」前面。",
+    "sum": "他的创意作品在商店橱窗里展出。",
+    "cmp": "和书上几乎一样。书上说「展览」，我说「展出」，都行。"
+   }
   },
   "We had to stop for breath before we got to the top.": {
    "ph": [
@@ -180,7 +281,22 @@
      "b": "get to",
      "m": "到达"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "We had to stop for breath",
+      "s": "你可能把 had 和 to 拆开，翻成「我们有……去停止」。had to 是一个整体，就是「不得不」。stop for breath 是「停下来喘口气」，for 表示目的，为了喘气。\n→ 我们不得不停下来喘口气"
+     },
+     {
+      "t": "before we got to the top",
+      "s": "before 带的是时间状语从句，就是「在……之前」。got to 你多半会翻成「得到」，放回去试试：得到山顶？不通。这里 get to 是「到达」。\n→ 在我们到达山顶之前"
+     }
+    ],
+    "order": "中文习惯先说时间，所以把「到达山顶之前」提到前面。",
+    "sum": "到山顶之前，我们不得不停下来喘口气。",
+    "cmp": "书上把 before 译成「然后再」，按英文顺序说成两件先后的事，意思差不多。我的更贴近 before 的「在……之前」。"
+   }
   },
   "We managed to squeeze six people into the car.": {
    "ph": [
@@ -199,7 +315,39 @@
      "b": "squeeze … into",
      "m": "把……挤进"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "We managed to squeeze",
+      "s": "你多半会翻成「我们管理去挤」。manage 在这里不是「管理」。manage to do 是固定搭配，「设法做成某事」，而且暗示最后真的做成了。\n→ 我们设法挤"
+     },
+     {
+      "t": "six people into the car",
+      "s": "squeeze 后面眼睛往后找 into：squeeze A into B，把 A 挤进 B。A 是 six people，B 是 the car。\n→ 把六个人挤进那辆车"
+     }
+    ],
+    "order": "中文用「把」字句，把 six people 提到动词前面。",
+    "sum": "我们设法把六个人挤进了那辆车。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "Swimming circles can be inflated by machines.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Swimming circles",
+      "s": "你多半会翻成「游泳的圈子」。Swimming 放在名词前面，是说明用途的，swimming circles 是一个整体，就是「游泳圈」。\n→ 游泳圈"
+     },
+     {
+      "t": "can be inflated by machines",
+      "s": "你多半会翻成「可以被机器充气」。念一遍，「被」字有点多余。can be inflated 是被动，就是「游泳圈被别人充气」；by machines 说是谁来做。中文把机器当工具，说「用机器」就顺了。\n→ 可以用机器充气"
+     }
+    ],
+    "sum": "游泳圈可以用机器充气。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Their first glimpse of the new land was a sight of dense woods.": {
    "ph": [
@@ -217,7 +365,21 @@
      "b": "be asked to do",
      "m": "被要求做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The mayor was asked to",
+      "s": "你多半会翻成「市长被问去……」。ask 在这里不是「问」，是「要求」。was asked 是被动，就是「市长被别人怎么样了」；was asked to do 就是「被要求做某事」，眼睛往后找 to 后面的动作。\n→ 市长被要求"
+     },
+     {
+      "t": "condense his speech",
+      "s": "condense 平时是「浓缩」，讲话不能浓缩，意思是把它「压缩、缩短」。\n→ 缩短他的讲话"
+     }
+    ],
+    "sum": "市长被要求缩短讲话。",
+    "cmp": "和书上一样，我把「他的」省了，中文里不用重复。"
+   }
   },
   "The market for their products is shrinking.": {
    "ph": [
@@ -240,7 +402,21 @@
      "b": "begin to do",
      "m": "开始做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "When students feel isolated",
+      "s": "When 带的是时间状语从句，就是「当……的时候」。isolated 你多半会翻成「被隔离的」，放在 feel 后面，意思是「感到被孤立」。isolated 是 -ed 形式，在这里当形容词用，描述一种感受。\n→ 当学生们感到被孤立时"
+     },
+     {
+      "t": "their motivation to continue begins to fade",
+      "s": "motivation to continue 你可能翻成「他们去继续的动力」。to continue 是 to do 短语，跟在名词 motivation 后面补充说明它，就是「继续（做）的动力」。fade 本义是「褪色」，你可能翻成「动力开始褪色」，动力不会褪色，换成「消退」。begins to fade 就是「开始消退」。\n→ 他们继续学习的动力就会开始消退"
+     }
+    ],
+    "sum": "学生感到被孤立时，继续学习的动力就会开始消退。",
+    "cmp": "和书上一样。书上把 continue 补成「继续学习」，中文就完整了。"
+   }
   },
   "The kitchen was small and compact so that the disabled could reach everything easily.": {
    "ph": [
@@ -254,7 +430,21 @@
      "b": "the + 形容词",
      "m": "残疾人"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The kitchen was small and compact",
+      "s": "compact 你可能翻成「压缩的」，放在厨房上怪。它说的是「小巧紧凑」，small and compact 合起来，就是「小而紧凑」。\n→ 厨房小而紧凑"
+     },
+     {
+      "t": "so that the disabled could reach everything easily",
+      "s": "so that 带的是从句，后面说的是前面这样做的「目的、结果」，可以译成「这样……就能……」。the disabled 你多半会翻成「那个残疾的」，缺名词吧？the + 形容词表示一类人，就是「残疾人」。could 是时态呼应：前面是 was，过去时，这里没有 if，也不是和事实相反，所以不是虚拟，翻成「能」就行。\n→ 这样残疾人就能轻松够到所有东西"
+     }
+    ],
+    "sum": "厨房又小又紧凑，这样残疾人就能轻松够到所有东西。",
+    "cmp": "意思一样。书上把 so that 译成「因此」，强调结果；我译成「这样」，目的和结果都带上了。"
+   }
   },
   "More studies are needed to find out the impact of emotion on behavior.": {
    "ph": [
@@ -268,7 +458,21 @@
      "b": "impact on",
      "m": "……对……的影响"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "More studies are needed",
+      "s": "你多半会翻成「更多的研究被需要」。念一遍，不顺吧？are needed 是被动，说白了就是「需要更多的研究」，中文直接说「需要」就行。\n→ 需要更多的研究"
+     },
+     {
+      "t": "to find out the impact of emotion on behavior",
+      "s": "to find out 是 to do 短语，表目的，「为了查明」。find out 是「弄清楚、发现」，不是「找出去」。the impact of A on B，眼睛往后找 on：A 是 emotion，B 是 behavior，意思是「A 对 B 的影响」。\n→ 来发现情绪对行为的影响"
+     }
+    ],
+    "sum": "需要更多的研究来弄清情绪对行为的影响。",
+    "cmp": "和书上基本一样，「弄清」比「发现」更贴 find out 的意思。"
+   }
   },
   "Mothers' influence on children may last longer than fathers'.": {
    "ph": [
@@ -277,7 +481,21 @@
      "b": "influence on",
      "m": "对……的影响"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Mothers' influence on children",
+      "s": "你多半会翻成「母亲的在孩子上面的影响」。influence on 是一个搭配，on 不是「在上面」，而是「对……的影响」。\n→ 母亲对孩子的影响"
+     },
+     {
+      "t": "may last longer than fathers'",
+      "s": "句子末尾 fathers' 后面没有名词，你多半觉得没写完。其实是省略了，补回去是 than fathers' influence，「比父亲的影响」。may 是「可能」，last longer 是「持续得更久」。\n→ 可能比父亲的更持久"
+     }
+    ],
+    "sum": "母亲对孩子的影响可能比父亲的更持久。",
+    "cmp": "意思一样。书上写成「比父亲更持久」，省掉了「的」。"
+   }
   },
   "He came down with influenza.": {
    "ph": [
@@ -287,6 +505,23 @@
      "m": "患上（病）"
     }
    ]
+  },
+  "He exerted all his authority to make them accept the plan.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "He exerted all his authority",
+      "s": "exerted 你可能不认识，或者翻成「他用力了所有的权力」。exert 是「运用、施加」，exert authority 就是「动用权力」。\n→ 他动用了他所有的权力"
+     },
+     {
+      "t": "to make them accept the plan",
+      "s": "to make 是 to do 短语，表目的，「为了……」。make them accept 是「让他们接受」，make 后面跟人再跟动词原形，不用加 to。\n→ 来让他们接受这个计划"
+     }
+    ],
+    "sum": "他动用全部权力，让他们接受这个计划。",
+    "cmp": "意思一样。书上说「运用」，我说「动用」，都行。"
+   }
   },
   "Some employees are fluent in a second language.": {
    "ph": [
@@ -306,6 +541,23 @@
     }
    ]
   },
+  "In college, time is scarce, and consequently, very precious.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "In college, time is scarce",
+      "s": "这块照字面翻就行。scarce 是「缺乏的、很少的」，说时间很少，意思是不够用。\n→ 在大学里，时间很少"
+     },
+     {
+      "t": "and consequently, very precious",
+      "s": "你多半会翻成「并且结果地，非常珍贵」。consequently 前后都有逗号，是插入语，去掉不影响句子主干，意思是「因此」。and 后面省略了 time is，补回去是 and (time is) very precious，并列的是 scarce 和 precious。\n→ 因此也非常珍贵"
+     }
+    ],
+    "sum": "在大学里，时间很紧缺，因此也非常珍贵。",
+    "cmp": "和书上一样，我把 scarce 说成「紧缺」，更像人话。"
+   }
+  },
   "The basics of adequate sleep, healthy diet and exercise are a good place to start.": {
    "ph": [
     {
@@ -313,7 +565,21 @@
      "b": "the basics of",
      "m": "……的基本要素"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The basics of adequate sleep, healthy diet and exercise",
+      "s": "你多半会翻成「充足睡眠的基础」，然后后面两个就散了。of 后面其实是三样东西并列：adequate sleep、healthy diet 和 exercise。basics 是「基本要素」。\n→ 充足的睡眠、健康的饮食和锻炼这些基本要素"
+     },
+     {
+      "t": "are a good place to start",
+      "s": "are 是因为主语 basics 是复数。a good place to start 你多半会翻成「一个去开始的好地方」。to start 是 to do 短语，跟在名词 place 后面补充说明它，就是「可以从这里开始的好地方」，说白了是「好的起点」。\n→ 是一个很好的开始"
+     }
+    ],
+    "sum": "充足的睡眠、健康的饮食和锻炼，这些基本要素是很好的起点。",
+    "cmp": "意思一样。书上说「基本因素」，我说「基本要素」；「开始」和「起点」都对。"
+   }
   },
   "The caffeine—the equivalent of two strong cups of coffee—was sufficient to reverse this effect.": {
    "ph": [
@@ -374,7 +640,56 @@
      "b": "sense of strength",
      "m": "力量感"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She connected with her sense of purpose",
+      "s": "你多半会翻成「她和她的目的感连接」。connect with 在这里是「与……建立联系」，sense of purpose 是「使命感」。\n→ 她与自己的使命感联系在一起"
+     },
+     {
+      "t": "and dug deep, cultivating a tremendous sense of strength",
+      "s": "dug 是 dig 的过去式，dig deep 是「深入挖掘」，和前面的 connected 并列。逗号后面 cultivating 开头的是 -ing 短语，说白了是「由此怎么样」，主语还是 she。你多半会翻成「培养了一个巨大的力量的感觉」，太硬，说成「力量感」。\n→ 并深入挖掘，由此培养出一种巨大的力量感"
+     }
+    ],
+    "sum": "她与自己的使命感联系在一起，深入挖掘，由此培养出巨大的力量感。",
+    "cmp": "和书上几乎一样，我加了「由此」，把 -ing 短语和前面动作的关系点出来。"
+   }
+  },
+  "It's nonsense to say they don't care.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It's nonsense to say",
+      "s": "你多半会翻成「它是胡说八道去说」。念一遍，不通吧？It's + 名词 + to do 里，It 是形式上的主语，真正要说的是后面的 to say……。办法：把 It 放一边，直接翻 to do 的内容：「说……是胡说八道」。\n→ 说……是胡说八道"
+     },
+     {
+      "t": "they don't care",
+      "s": "say 后面省略了 that，补回去是 say (that) they don't care，这是宾语从句，就是「说的内容」。care 在这里是「在意」。\n→ 他们不在意"
+     }
+    ],
+    "order": "英文先下结论、后说内容；中文把内容放前面，「说他们不在意」，再下结论。",
+    "sum": "说他们不在意，纯属胡说八道。",
+    "cmp": "和书上一样。"
+   }
+  },
+  "What mattered most was the residents' physical health and mental status.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "What mattered most",
+      "s": "开头是 What，你多半以为是问句「什么最重要」。这里不是问句，What mattered most 是主语从句，整段当主语，就是「最重要的事」。matter 当动词是「要紧、重要」。\n→ 最重要的"
+     },
+     {
+      "t": "was the residents' physical health and mental status",
+      "s": "residents' 的撇号在 s 后面，是复数所有格，「居民的」。physical health and mental status 是两样并列：身体健康、精神状态。\n→ 是居民的身体健康和精神状态"
+     }
+    ],
+    "sum": "最重要的是居民的身体健康和精神状态。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Hard work is fundamental to success.": {
    "ph": [
@@ -392,7 +707,21 @@
      "b": "not have to do",
      "m": "不一定要"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The research is starting to show",
+      "s": "你多半会翻成「研究正在开始去显示」，太啰嗦。starting to show 就是「开始表明」，show 后面跟 that 引出的内容。\n→ 这项研究开始表明"
+     },
+     {
+      "t": "that early setbacks don't have to be fatal",
+      "s": "that 带的是宾语从句，就是「表明的内容」。don't have to 你多半会翻成「一定不」，放回去试：早期挫折一定不是致命的？意思歪了。don't have to 是「不必、不一定」，只否定「必须」。fatal 是「致命的」。\n→ 早期的挫折不一定是致命的"
+     }
+    ],
+    "sum": "这项研究开始表明，早期的挫折并不一定致命。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "All the people we interviewed expressed almost total satisfaction with it.": {
    "ph": [
@@ -401,7 +730,21 @@
      "b": "satisfaction with",
      "m": "对……满意"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "All the people we interviewed",
+      "s": "people 后面直接跟了 we interviewed，没有任何连接词，你多半会翻成「所有的人我们采访」。其实这是定语从句，省略了 who(m)，补回去是 the people (whom) we interviewed，给 people 补一段说明：「我们采访的人」。放回去试试：我们采访人，对。\n→ 我们采访的所有人"
+     },
+     {
+      "t": "expressed almost total satisfaction with it",
+      "s": "你可能翻成「表达了几乎全部的满意」，太硬。satisfaction with 是「对……满意」，almost total 是「几乎完全」，合起来说「非常满意」就顺了。\n→ 对此表示非常满意"
+     }
+    ],
+    "sum": "我们采访的所有人对此都表示非常满意。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Digital technology makes it easier for people to coordinate their activities.": {
    "ph": [
@@ -439,7 +782,21 @@
      "b": "be good at",
      "m": "擅长"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Teaching is talent and practice",
+      "s": "这块照字面翻就行。Teaching 开头当主语，就是「教学这件事」。\n→ 教学是天赋，也是实践"
+     },
+     {
+      "t": "it is not something that just anyone can be good at",
+      "s": "that 带的是定语从句，给 something 补一段说明。你多半会翻成「它不是任何人都能擅长在的东西」，at 落单了。办法：把 something 放回 at 后面试试：anyone can be good at something，任何人都能擅长某事，对。just anyone 是「随便什么人」。\n→ 这不是随便什么人都能擅长的事"
+     }
+    ],
+    "sum": "教学靠天赋，也靠实践；不是随便什么人都能做好的事。",
+    "cmp": "意思一样。书上直译成「是天赋，是实践」，我换成「靠……」更顺。"
+   }
   },
   "We will lose a vital part of what has made humanity as a whole so successful as a species.": {
    "ph": [
@@ -477,7 +834,38 @@
      "b": "course of action",
      "m": "行动方针"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It proves crucial",
+      "s": "你多半会翻成「它证明关键」。念一遍，不通吧？prove 后面直接跟形容词时，意思是「结果是、事实证明是」。crucial 是「至关重要的」。\n→ 它被证明至关重要"
+     },
+     {
+      "t": "in making others follow one's course of action",
+      "s": "in 后面接 -ing，in making 就是「在让……这件事上」。make others follow 是「让别人遵循」，make 后面跟人再跟动词原形。one's 是「某人自己的」，course of action 是「行动方针」。你可能翻成「行动的课程」，课程是 course 的另一个意思，这里不对。\n→ 在让他人遵循自己的行动方针这件事上"
+     }
+    ],
+    "sum": "在让他人遵循自己的行动方针这件事上，它至关重要。",
+    "cmp": "书上把 proves 译成「这证明」，再把后面整段拆成主语；我把 prove crucial 理解成「事实证明至关重要」，更贴近原文的结构。"
+   }
+  },
+  "These studies showed that their water did contain microplastics.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "These studies showed that",
+      "s": "你多半会翻成「这些研究展示了」。show 后面跟 that，意思是「表明」。that 带的是宾语从句，就是「表明的内容」。\n→ 这些研究表明"
+     },
+     {
+      "t": "their water did contain microplastics",
+      "s": "你多半会翻成「他们的水做了含有」。念一遍，不通。肯定句里 did + 动词原形，是加强语气，意思是「确实」，不是「做了」。microplastics 拆开看：micro 是「微小」，plastics 是「塑料」。\n→ 他们的水确实含有微塑料"
+     }
+    ],
+    "sum": "这些研究表明，他们的水确实含有微塑料。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "They are often seen as dirty birds.": {
    "ph": [
@@ -486,7 +874,17 @@
      "b": "be seen as",
      "m": "被视为"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They are often seen as dirty birds",
+      "s": "你多半会翻成「它们经常被看见作为肮脏的鸟」。念一遍，不通吧？are seen 是被动，就是「它们被人怎么样了」。眼睛往后找 as：see A as B 是固定搭配，「把 A 看作 B」，被动就是「A 被视为 B」。dirty birds 是「肮脏的鸟类」。\n→ 它们经常被视为肮脏的鸟类"
+     }
+    ],
+    "sum": "人们经常把它们看作肮脏的鸟。",
+    "cmp": "意思一样。书上保留了被动「被视为」，我把「人们」请出来当主语，中文更顺。"
+   }
   },
   "Millions die early from air pollution each year.": {
    "ph": [
@@ -504,7 +902,21 @@
      "b": "the way to do",
      "m": "做……的方法"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The best way to maintain good blood circulation",
+      "s": "你多半会翻成「最好的方式去保持」。to maintain 是 to do 短语，跟在名词 way 后面补充说明它，the way to do 就是「做……的方法」。maintain 是「保持」，blood circulation 是「血液循环」。\n→ 保持良好血液循环的最佳方法"
+     },
+     {
+      "t": "is through using the brain",
+      "s": "is through 就是「就是通过」。through 后面接 -ing 形式，using the brain 是「使用大脑」这件事。\n→ 就是通过使用大脑"
+     }
+    ],
+    "sum": "保持良好血液循环的最佳方法，就是通过动脑。",
+    "cmp": "意思一样。书上省掉了 through，直接说「是使用大脑」。"
+   }
   },
   "Visiting a bookshop as curiosity leads us can be a good way to entertain ourselves.": {
    "ph": [
@@ -551,7 +963,38 @@
      "b": "such … as",
      "m": "像……这样的"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Some of those small mammals help to sustain",
+      "s": "Some of those 是「那些……当中的一些」，mammals 是「哺乳动物」。help to sustain 你可能翻成「帮助去支撑」，help to do 就是「有助于做某事」，sustain 在这里是「维持（生存）」。\n→ 那些小型哺乳动物中有些有助于维持"
+     },
+     {
+      "t": "such big birds as golden eagles",
+      "s": "你多半会翻成「这样大的鸟作为金雕」。as 在这里不是「作为」。眼睛往前找 such：such A as B 是固定搭配，「像 B 这样的 A」。A 是 big birds，B 是 golden eagles。\n→ 像金雕这样的大型鸟类的生存"
+     }
+    ],
+    "sum": "有些小型哺乳动物有助于维持像金雕这样的大型鸟类的生存。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "Help it to obtain financial support from industry.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Help it to obtain",
+      "s": "句子一开头是动词 Help，没有主语，这是祈使句，就是「请……」。help sb. to do 是「帮某人做某事」，to obtain 是 to do 短语。obtain 是「获得」。\n→ 帮助其获得"
+     },
+     {
+      "t": "financial support from industry",
+      "s": "你可能翻成「来自行业的金融支持」。financial 在这里是「资金的」，financial support 就是「资金支持」。from industry 说资金从哪来。\n→ 行业的资金支持"
+     }
+    ],
+    "sum": "帮助它从行业获得资金支持。",
+    "cmp": "意思一样。书上用「其」，书面一点；我把 from 译成「从行业」，来源更清楚。"
+   }
   }
  }
 }

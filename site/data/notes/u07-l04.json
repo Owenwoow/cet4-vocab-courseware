@@ -8,7 +8,22 @@
      "b": "come on stage",
      "m": "上台"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She was applauded",
+      "s": "你多半会翻成「她被鼓掌了」。念一遍，是不是有点怪？was applauded 是被动，就是「她被别人怎么样了」。鼓掌的是别人，中文更爱把做动作的人请出来当主语：谁在鼓掌？台下的观众。\n→ 观众向她鼓掌"
+     },
+     {
+      "t": "as she came on stage",
+      "s": "as 你可能只认识「因为」，翻成「因为她上了台」。放回去试试：掌声是因为「上台这个动作」？意思偏了。这里 as 带的是时间状语从句，就是交代「什么时候」的一整句话，意思是「在……的时候」。came on stage 就是「上台」。\n→ 在她上台的时候"
+     }
+    ],
+    "order": "英文把时间放在后面，中文习惯先交代时间，所以把「她上台时」提到前面。",
+    "sum": "她一上台，观众就向她鼓起掌来。",
+    "cmp": "意思和书上一样。书上说「人们向她鼓掌」，我写的是「观众」，两个都行。"
+   }
   },
   "The band played a familiar tune which had everyone clapping along.": {
    "ph": [
@@ -17,7 +32,25 @@
      "b": "clap along",
      "m": "跟着拍手"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The band played a familiar tune",
+      "s": "这块照字面翻就行：band 是「乐队」，tune 是「曲子」，familiar 是「熟悉的」。\n→ 乐队演奏了一首熟悉的曲子"
+     },
+     {
+      "t": "which",
+      "s": "which 是谁？它带的是定语从句，就是给前面的名词补一段说明。先放回去试：候选有 The band 和 a familiar tune。「乐队让大家拍手」和「曲子让大家拍手」好像都说得通。这时候用就近原则：which 通常贴着前面最近的名词，也就是 tune。曲子一响大家就拍手，也最自然。\n→ 这首曲子"
+     },
+     {
+      "t": "had everyone clapping along",
+      "s": "had 你多半会翻成「有」，成了「有大家跟着拍手」。不对，这里不是「拥有」。have sb. doing 是一个格式，意思是「让某人一直在做某事」，clapping along 是 -ing 短语，说 everyone 在干什么。clap along 是「跟着拍手」。\n→ 让每个人都跟着拍起手来"
+     }
+    ],
+    "sum": "乐队演奏了一首大家熟悉的曲子，一响起来，所有人都跟着拍起手来。",
+    "cmp": "意思一样。书上断成两句：「……曲子，每个人都跟着拍手」，把 which 的关系藏起来了；我保留了「曲子让大家拍手」这层。"
+   }
   },
   "He slapped the newspaper down on the desk.": {
    "ph": [
@@ -32,6 +65,41 @@
      "m": "啪地放下"
     }
    ]
+  },
+  "If you have memory slips, you probably needn't worry.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "If you have memory slips",
+      "s": "你多半会翻成「如果你有记忆滑倒」。念一遍，记忆怎么会滑倒？slip 本义是「滑」，这里是「小失误」，memory slips 就是「记忆上的小差错」，比如一时想不起钥匙放哪了。If 带的是条件状语从句，就是「如果……」。\n→ 如果你出现记忆上的小差错"
+     },
+     {
+      "t": "you probably needn't worry",
+      "s": "这块照字面翻就行：needn't 就是「不必」，后面直接接 worry，不加 to。probably 是「大概」，放在「不必」前面。\n→ 你大概不必担心"
+     }
+    ],
+    "sum": "如果你只是偶尔记错点事，大概不用担心。",
+    "cmp": "意思一样。书上写「一时出现记忆偏差」「或许不必担心」，比我书面一点。"
+   }
+  },
+  "The ceremony was disrupted by slogan-chanting.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The ceremony was disrupted by",
+      "s": "你多半会翻成「典礼被扰乱了」，然后话就停了。was disrupted 是被动，就是「典礼被什么东西怎么样了」。被动句一定要往后找动手的是谁，找 by——by 后面才是搞乱它的东西。disrupt 是「打断、扰乱」。\n→ 典礼被……打断"
+     },
+     {
+      "t": "slogan-chanting",
+      "s": "你可能翻成「口号呼喊」，念着就很别扭。拆开：slogan 是「口号」，chant 是「反复高喊」，加了 -ing 就变成名词，说的是「喊口号这件事」。中文里直接说「口号声」就顺了。\n→ 喊口号的声音"
+     }
+    ],
+    "order": "英文是被动，主语是典礼；中文可以反过来，让「口号声」当主语，不用「被」，更顺。",
+    "sum": "喊口号的声音打断了典礼。",
+    "cmp": "意思一样。书上说「典礼因口号声而中断」，用了「因……而……」；我把口号声提到前面当主语，更直接。"
+   }
   },
   "They provide a steady supply of freshwater.": {
    "ph": [
@@ -89,6 +157,23 @@
     "cmp": "和书上基本一致，书上也是先说 B（通往智慧的旅程）、后说 A（滑向遗忘的过程），顺序已经调好了。"
    }
   },
+  "He sat on the stool, swinging his legs.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "He sat on the stool",
+      "s": "这块照字面翻就行：stool 是没有靠背的「凳子」。\n→ 他坐在凳子上"
+     },
+     {
+      "t": "swinging his legs",
+      "s": "你多半会翻成「摇摆着他的腿」。念一遍，两条腿是自己的，中文不用再说「他的」。swinging his legs 是 -ing 短语，逗号后面的 -ing，主语还是前面的 He，意思是「他一边坐着，一边在……」。\n→ 晃着两条腿"
+     }
+    ],
+    "sum": "他坐在凳子上，两条腿晃来晃去。",
+    "cmp": "和书上基本一样，书上说「晃动着两条腿」，我口语一点。"
+   }
+  },
   "This bird's large wings enable it to fly very fast.": {
    "ph": [
     {
@@ -101,7 +186,21 @@
      "b": "enable sb. to do",
      "m": "使……能够做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "This bird's large wings enable it",
+      "s": "你多半会翻成「这只鸟的大翅膀使得它」，话说了一半，读不通。看到 enable，眼睛往后找 to——enable sb. to do，使某人能够做某事。这里的 it 就是前面的 bird。\n→ 这只鸟的大翅膀使它能够"
+     },
+     {
+      "t": "to fly very fast",
+      "s": "to fly 是 to do 短语，补上「能做什么」，翻成「飞」就行。very fast 你可能翻成「飞很快」，少了一个字：动作后面说程度，中文要加「得」。\n→ 飞得非常快"
+     }
+    ],
+    "sum": "凭着一对大翅膀，这只鸟能飞得非常快。",
+    "cmp": "意思一样，书上是「这只鸟的大翅膀使它能飞得非常快」，几乎逐字对应。"
+   }
   },
   "I don't have to sweep and mop every day.": {
    "ph": [
@@ -110,7 +209,22 @@
      "b": "don't have to do",
      "m": "不必做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "I don't have to",
+      "s": "你多半会翻成「我没有要」，或者「我不准」。don't have to 是一个整体，意思是「不必」，眼睛往后找动词：have to do，后面的动作你可以不做。\n→ 我不必"
+     },
+     {
+      "t": "sweep and mop every day",
+      "s": "这块照字面翻就行：sweep 是「扫」，mop 是用拖把「拖」，两个动作都在 have to 后面。\n→ 每天扫地、拖地"
+     }
+    ],
+    "order": "every day 在英文里放最后，中文要放在动作前面：先说「每天」，再说「扫地、拖地」。",
+    "sum": "我不必天天又扫又拖。",
+    "cmp": "意思一样。书上说「我不用每天扫地拖地」，我换了个更口语的说法。"
+   }
   },
   "It erases the belief that growing old means growing useless.": {
    "ph": [],
@@ -137,7 +251,21 @@
      "b": "all over",
      "m": "洒遍……全身"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "I accidentally spilled my drink",
+      "s": "这块照字面翻就行：accidentally 是「不小心」，spill 是「洒出来」。\n→ 我不小心把饮料洒了"
+     },
+     {
+      "t": "all over him",
+      "s": "你多半会翻成「在他的上面全部」，不通。all over 是「遍及」，all over him 就是「洒遍他全身」。中文直接说「洒了他一身」，把 him 变成「洒」的对象。\n→ 洒了他一身"
+     }
+    ],
+    "sum": "我不小心把饮料洒了他一身。",
+    "cmp": "和书上一样，这个「洒了他一身」已经是很口语的说法了。"
+   }
   },
   "I hurried off to spread the good news.": {
    "ph": [
@@ -146,7 +274,21 @@
      "b": "hurry off",
      "m": "匆忙离开"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "I hurried off",
+      "s": "你多半会翻成「我匆忙离开了」。念一遍，离开去哪里、干什么？hurry off 是「匆匆走开、赶去」，后面带着要去做的事，眼睛往后找 to。\n→ 我匆匆赶去"
+     },
+     {
+      "t": "to spread the good news",
+      "s": "to spread 是 to do 短语，这里说明「赶去是为了什么」，就是目的。spread 本义是「铺开」，news 一铺开就是传出去，所以 spread the good news 是「把好消息传开」。\n→ 传播这个好消息"
+     }
+    ],
+    "sum": "我匆匆赶去，想把这个好消息传出去。",
+    "cmp": "意思一样。书上的「赶紧去传播这个好消息」是按字面直译，我的版本更像人说话。"
+   }
   },
   "She took a mouthful of food and then suddenly spat it out.": {
    "ph": [
@@ -174,7 +316,21 @@
      "b": "out of spite",
      "m": "出于怨恨"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "I'm sure",
+      "s": "你可能翻成「我确定」，然后卡住，不知道确定什么。sure 后面省略了 that，补回去是 I'm sure (that) he only said……。that 带出的是一整句从句，就是「我确信的内容」。\n→ 我相信"
+     },
+     {
+      "t": "he only said it out of spite",
+      "s": "你多半会翻成「他只是说它出于怨恨」，别扭。out of 在这里表示动机，「出于」；spite 是「怨恨、恶意」，out of spite 就是「出于恶意、为了泄愤」。it 不用翻成「它」，换成「那样的话」。\n→ 他只是为了泄愤才说那样的话"
+     }
+    ],
+    "sum": "我相信他只是出于怨恨才说了那样的话。",
+    "cmp": "意思一样。书上的「为了泄愤」比我的「出于怨恨」更口语，更有力。"
+   }
   },
   "Despite applying for hundreds of jobs, he is still out of work.": {
    "ph": [
@@ -220,7 +376,21 @@
      "b": "be sprayed with",
      "m": "被喷洒"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The crops are regularly sprayed",
+      "s": "你多半会翻成「庄稼被定期喷了」。意思对，但读着像是庄稼受了委屈。are sprayed 是被动，就是「庄稼被别人怎么样了」。这里没说是谁喷的，中文也不需要，直接说「庄稼要喷……」就行。\n→ 庄稼定期要喷"
+     },
+     {
+      "t": "with pesticide",
+      "s": "你可能翻成「和杀虫剂一起」。放回去试试：庄稼和杀虫剂一起被喷？不对。spray A with B 是「给 A 喷 B」，with 是「用」，pesticide 就是「杀虫剂」。\n→ 杀虫剂"
+     }
+    ],
+    "sum": "庄稼要定期喷洒杀虫剂。",
+    "cmp": "和书上基本一样，书上也省掉了「被」，这样更像中文。"
+   }
   },
   "The public overall is split on whether they'd like to use a driverless car.": {
    "ph": [
@@ -280,7 +450,22 @@
      "b": "in fact",
      "m": "事实上"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "In fact, the sword",
+      "s": "这块照字面翻就行：in fact 是「事实上」，放在句首，后面接着说一件出人意料的事。\n→ 事实上，这把剑"
+     },
+     {
+      "t": "hasn't had a military function for many years",
+      "s": "你多半会翻成「没有有过军事功能很多年」，读不下去。hasn't had 是现在完成时，就是「从过去一直到现在都没有」，常和 for many years 搭配，翻成「已经多年没有……」。function 这里不是「功能」，是「用途、作用」，military function 就是「军事用途」。\n→ 已经多年没有军事用途"
+     }
+    ],
+    "order": "for many years 在英文里放最后，中文要先说时间：先说「多年来」，再说「没有军事用途」。",
+    "sum": "事实上，这把剑已经好多年没有军事用途了。",
+    "cmp": "和书上基本一样，书上说「已经多年没有军事用途了」，我多了一个「好」字。"
+   }
   },
   "An officer then shot an arrow to put it to sleep.": {
    "ph": [
@@ -289,7 +474,21 @@
      "b": "put sb./sth. to sleep",
      "m": "使……沉睡"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "An officer then shot an arrow",
+      "s": "这块照字面翻就行：shot 是 shoot 的过去式，「射」；an arrow 是「一支箭」，中文说「射了一箭」。\n→ 一名警官随后射了一箭"
+     },
+     {
+      "t": "to put it to sleep",
+      "s": "你多半会翻成「为了把它放去睡觉」，念着有点奇怪。第一个 to 是 to do 短语，说明「射这一箭是为了什么」，也就是目的。put sb. to sleep 是一个整体，意思是「使某人入睡」。it 就是 put 的对象，被弄睡的那个。\n→ 为了让它睡过去"
+     }
+    ],
+    "sum": "随后，一名警官射出一箭，想让它睡过去。",
+    "cmp": "意思一样。书上说「使它沉睡」，比我的「睡过去」书面一点。"
+   }
   },
   "Women in our sample tend to over-perceive their weight.": {
    "ph": [
@@ -298,7 +497,21 @@
      "b": "tend to do",
      "m": "往往会"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Women in our sample",
+      "s": "这块照字面翻就行：sample 在这里是研究里挑出来的「样本」，in our sample 就是「我们样本里的」。\n→ 我们样本中的女性"
+     },
+     {
+      "t": "tend to over-perceive their weight",
+      "s": "你多半会翻成「倾向于过度感知她们的体重」，太生硬。tend to do 就是「往往会做某事」，眼睛往后找动词：over-perceive。over- 是「过度」，perceive 是「感觉、看待」，所以是「把体重看得过重」。their 指的是这些女性自己，中文可以换成「自己」。\n→ 往往把自己的体重看得过重"
+     }
+    ],
+    "sum": "我们样本里的女性往往把自己的体重看得过重。",
+    "cmp": "书上译成「过度关注」，我译成「看得过重」，两个意思接近，都在说她们对体重太敏感。"
+   }
   },
   "The use of wood was minimised to insure fire safety.": {
    "ph": [],
@@ -351,6 +564,59 @@
     "cmp": "和书上基本一样，书上保留了「被」字，我的版本省掉，更像日常说话。"
    }
   },
+  "The United States Postal Service has a system to ensure its employees' safety.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The United States Postal Service has a system",
+      "s": "这块照字面翻就行：The United States Postal Service 是「美国邮政署」，has a system 是「有一套系统」。\n→ 美国邮政署有一套系统"
+     },
+     {
+      "t": "to ensure its employees' safety",
+      "s": "你多半会翻成「去确保它的员工们的安全」，一连几个「的」，绕。to ensure 是 to do 短语，跟在 a system 后面，说明这个系统是干什么的，就是「用来……的系统」。its 指前面的 Service，ensure 是「保证、确保」。\n→ 用来保障其员工的安全"
+     }
+    ],
+    "order": "to do 短语在英文里跟在名词后面，中文要把它提到名词前面，变成「一套用来保障员工安全的系统」。",
+    "sum": "美国邮政署有一套用来保障员工安全的系统。",
+    "cmp": "意思一样。书上保持英文语序，写成「有一个系统来确保其员工的安全」，也通顺；我把「用来……」提前了。"
+   }
+  },
+  "We guarantee to deliver your goods within a week.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "We guarantee to deliver",
+      "s": "你多半会翻成「我们保证去运送」。念一遍，「去」字多余。guarantee 后面可以直接接 to do，意思是「保证做到某事」。deliver 在这里是「送达、交付」。\n→ 我们保证送达"
+     },
+     {
+      "t": "your goods within a week",
+      "s": "你可能顺着英文翻成「你的货物在一周内」，语序反了。within a week 是「一周之内」，说时间的，中文要放在动作前面。goods 是「货物」，用复数。\n→ 在一周内把您的货物"
+     }
+    ],
+    "order": "英文把时间放最后，中文先说时间，再说动作：先「一周之内」，再「把货送到」。",
+    "sum": "我们保证在一周之内把货物送到您手上。",
+    "cmp": "书上说「我们保证一周内交货」，更简短，是做生意常用的说法；我的版本更完整。"
+   }
+  },
+  "She wanted to honour her father's promise.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "She wanted to honour",
+      "s": "你多半会翻成「她想荣誉」。honour 当名词是「荣誉」，但这里前面有 wanted to，后面接的是动词，honour 在这里是动词，意思是「履行、兑现」。wanted to 是 to do，「想要做」。\n→ 她想兑现"
+     },
+     {
+      "t": "her father's promise",
+      "s": "这块照字面翻就行：her father's 是「她父亲的」，promise 是名词「承诺」。\n→ 父亲的承诺"
+     }
+    ],
+    "sum": "她想履行父亲许下的诺言。",
+    "cmp": "意思一样。书上说「兑现父亲的承诺」，我换成了「履行……许下的诺言」。"
+   }
+  },
   "There are a couple of ways to compromise on the issue.": {
    "ph": [
     {
@@ -363,7 +629,22 @@
      "b": "compromise on",
      "m": "在……上妥协"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "There are a couple of ways",
+      "s": "你多半会翻成「那里有一对的方法」。There are 开头是「有」，不是「那里」；a couple of 也不一定正好两个，是「几个」。\n→ 有几种方法"
+     },
+     {
+      "t": "to compromise on the issue",
+      "s": "to compromise 是 to do 短语，紧跟在 ways 后面，说明是「什么样的方法」，就是「……的方法」。compromise on 是「在……上妥协、折中」，the issue 是「这个问题」。\n→ 在这个问题上折中的"
+     }
+    ],
+    "order": "to do 短语在英文里跟在名词后面，中文要提到「方法」前面：「在这个问题上折中的几种方法」。",
+    "sum": "在这个问题上，有几种折中的办法。",
+    "cmp": "意思一样，和书上几乎一样。"
+   }
   },
   "It has pledged to take the lead in reducing carbon emissions.": {
    "ph": [
@@ -372,7 +653,42 @@
      "b": "take the lead in",
      "m": "带头做、率先做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It has pledged to",
+      "s": "你多半会翻成「它有承诺去」。has pledged 是现在完成时，就是「已经许下了承诺」，pledge 后面接 to do，承诺的就是后面这件事。\n→ 它已承诺要"
+     },
+     {
+      "t": "take the lead in",
+      "s": "你可能翻成「采取领导在」，不通。take the lead in 是一个整体，意思是「在……方面带头」，in 后面要接一件事。\n→ 在……方面带头"
+     },
+     {
+      "t": "reducing carbon emissions",
+      "s": "你可能把 reducing 当成形容词，翻成「减少的碳排放」。不对：in 是介词，介词后面的动词变成 -ing，就是「做某事这件事」，reducing 是它的 -ing 短语，carbon emissions 是被减少的东西。\n→ 减少碳排放"
+     }
+    ],
+    "sum": "它已承诺，在减少碳排放方面带头行动。",
+    "cmp": "意思一样。书上的「率先减少碳排放」更简洁，把 take the lead in 压成了「率先」。"
+   }
+  },
+  "The prosecution alleges that she was driving carelessly.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The prosecution alleges that",
+      "s": "你多半会翻成「起诉指控」。prosecution 在这里不是「起诉」这件事，而是「控方」，打官司时站在指控一边的人。alleges 是「宣称、指称」，说出来但还没证实。that 后面带的是从句，就是指控的内容。\n→ 控方指控"
+     },
+     {
+      "t": "she was driving carelessly",
+      "s": "你可能把 was driving 当成被动，翻成「她被驾驶」。被动是 be + 过去分词，这里 driving 是 -ing，was driving 是过去进行时，意思是「当时正在开车」。carelessly 是「粗心地」。\n→ 她当时开车很粗心"
+     }
+    ],
+    "sum": "控方指控她当时开车不够小心。",
+    "cmp": "意思一样。书上的「粗心驾驶」更简洁；我补出了「当时」，这是进行时的意思。"
+   }
   },
   "I swear I had nothing to do with it.": {
    "ph": [
@@ -381,7 +697,21 @@
      "b": "have nothing to do with",
      "m": "与……毫无关系"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "I swear",
+      "s": "你可能翻成「我骂人」。swear 有「骂脏话」和「发誓」两个意思，这里后面跟着一整句话，所以是「发誓」。swear 后面省略了 that，补回去是 I swear (that) I had……，that 带出的从句就是发誓的内容。\n→ 我发誓"
+     },
+     {
+      "t": "I had nothing to do with it",
+      "s": "你多半会翻成「我什么也没有去做和它」。不对，have nothing to do with 是一个整体，意思是「与……毫无关系」，to do 在这里不是「去做」。had 是过去时，因为说的是过去发生的事。\n→ 我和这件事毫无关系"
+     }
+    ],
+    "sum": "我发誓，这件事跟我一点关系都没有。",
+    "cmp": "意思一样。书上写「跟我一点关系也没有」，和我的几乎逐字相同。"
+   }
   }
  }
 }

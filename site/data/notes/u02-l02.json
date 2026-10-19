@@ -34,6 +34,24 @@
     }
    ]
   },
+  "He thought he had heard the referee's signal to proceed.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "He thought he had heard",
+      "s": "你多半会翻成「他想他曾经听到」。thought 后面藏了个 that，补回去是 He thought (that) he had heard，that 后面是宾语从句，就是「他认为的内容」。had heard 是过去完成时，表示在「认为」之前就已经听到了。\n→ 他认为他听到了"
+     },
+     {
+      "t": "the referee's signal to proceed",
+      "s": "referee's signal 你可能翻成「裁判的信号」，这没错。后面的 to proceed 是 to do 短语，紧贴在 signal 后面，给它补一段说明：什么信号？「继续进行」的信号。proceed 不是「收益」，是「继续做下去」。\n→ 裁判发出的继续进行的信号"
+     }
+    ],
+    "order": "to proceed 在英文里放在名词后面，中文要把它挪到名词前面当修饰：「继续进行的信号」。",
+    "sum": "他以为自己听到了裁判让比赛继续的信号。",
+    "cmp": "意思一样。书上写「裁判发出的继续进行的信号」，我这里把「继续进行」说得更口语。"
+   }
+  },
   "In her study, participants were randomly assigned to two groups.": {
    "ph": [
     {
@@ -41,7 +59,21 @@
      "b": "be assigned to",
      "m": "被分配到"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "In her study, participants",
+      "s": "这块照字面翻就行：In her study 是「在她的研究中」，participants 是「参与者」。\n→ 在她的研究中，参与者"
+     },
+     {
+      "t": "were randomly assigned to two groups",
+      "s": "你多半会翻成「被分配随机地到两组」，randomly 的位置就放错了。were assigned 是被动，就是「参与者被别人怎么样了」；谁分配的？研究者，没必要说出来，所以这里保留「被」很自然。randomly 是「随机地」，放在「分配」前面。眼睛往后找 to：assign A to B，把 A 分到 B。\n→ 被随机分配到两组"
+     }
+    ],
+    "sum": "在她的研究中，参与者被随机分成了两组。",
+    "cmp": "和书上基本一样，我把「分配到两组」说成「分成两组」，更口语。"
+   }
   },
   "She is well informed about the design business.": {
    "ph": [
@@ -51,6 +83,23 @@
      "m": "对……了解"
     }
    ]
+  },
+  "He feels we should act with despatch.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "He feels we should act",
+      "s": "你多半会翻成「他感觉我们应该行动」。feels 后面藏了个 that，补回去是 He feels (that) we should act，that 后面是宾语从句，就是「他觉得的内容」。feel 在这里是「觉得、认为」，不是身体上的感觉。\n→ 他觉得我们应该行动"
+     },
+     {
+      "t": "with despatch",
+      "s": "despatch 你可能以为是「派遣」，放回去试试：以派遣的方式行动？不通。with + 名词常常相当于一个副词，这里 despatch 是「迅速」，with despatch 就是「迅速地」。\n→ 迅速地"
+     }
+    ],
+    "sum": "他觉得我们应该迅速行动。",
+    "cmp": "和书上一样，书上写「他觉得我们应该迅速行动」。"
+   }
   },
   "The following year, things got worse and he was forced to resign.": {
    "ph": [
@@ -64,7 +113,38 @@
      "b": "be forced to do",
      "m": "被迫做某事"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The following year, things got worse",
+      "s": "这块照字面翻就行：the following year 是「接下来的那一年」，get worse 是「变得更糟」。\n→ 第二年，情况变得更糟"
+     },
+     {
+      "t": "and he was forced to resign",
+      "s": "你多半会翻成「他被强迫去辞职」。was forced 是被动，就是「他被别人怎么样了」；眼睛往后找 to：be forced to do，被迫做某事。resign 是「辞职」，to resign 就是被迫做的那件事。中文把「去」去掉，说「被迫辞职」就顺了。\n→ 他被迫辞职了"
+     }
+    ],
+    "sum": "第二年情况更糟，他被迫辞职了。",
+    "cmp": "和书上基本一样，我把「变得更糟」缩成「更糟」，更紧凑。"
+   }
+  },
+  "If they don't get more money they'll quit.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "If they don't get more money",
+      "s": "你多半会翻成「如果他们没有得到更多钱」。念一遍，中文没人这么说。If 带的是条件状语从句，就是「如果……的话」，放在前面交代条件。get more money 在这里是「拿到更高的工资」，换成「不给他们加薪」更顺。\n→ 如果不给他们加薪"
+     },
+     {
+      "t": "they'll quit",
+      "s": "they'll 是 they will 缩写，will 是说「如果条件出现，结果就会发生」。quit 你可能只认识「戒掉」，这里是「辞职」。\n→ 他们就辞职"
+     }
+    ],
+    "sum": "要是不给他们加工资，他们就辞职不干了。",
+    "cmp": "意思一样。书上把条件说成「不给他们加薪」，我的「加工资」更口语。"
+   }
   },
   "It witnessed a significant increase in women engineers in the 1970s.": {
    "ph": [
@@ -92,7 +172,26 @@
      "b": "both … and",
      "m": "既……又……"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Higher education is indispensable",
+      "s": "indispensable 比较长，你可能觉得是「不……的」之类的东西。拆开：in- 是「不」，dispensable 是「可有可无的」，合起来就是「不可或缺的」。Higher education 是「高等教育」。\n→ 高等教育是必不可少的"
+     },
+     {
+      "t": "if you want to go far",
+      "s": "if 带的是条件状语从句，就是「如果……」。want to go 是 want to do，「想做某事」。go far 你多半会翻成「走得远」，放在人生里其实是「有大成就」。\n→ 如果你想走得更远"
+     },
+     {
+      "t": "in both your studies and life",
+      "s": "看到 both，眼睛往后找 and：both A and B，就是「既 A 又 B」，A 是 your studies，B 是 life。\n→ 在学习和生活中"
+     }
+    ],
+    "order": "英文把结论放在前面、条件放在后面，中文习惯先说条件，所以把 if 那一块提前：「如果你想……，高等教育……」。",
+    "sum": "如果你想在学习和生活中都走得更远，高等教育是必不可少的。",
+    "cmp": "和书上基本一样，我的 sum 先说了条件，读起来更顺。"
+   }
   },
   "Fast technological change makes it necessary for one to constantly upgrade their skills.": {
    "ph": [
@@ -166,7 +265,56 @@
      "b": "help sb. do",
      "m": "帮助我们避免"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It helps us avoid",
+      "s": "你多半会想在 avoid 前面补一个 to，因为 help 经常和 to 一起出现。念一遍：help sb. do，帮助某人做某事，to 可以省掉。所以这里是 help us avoid，就是「帮助我们避免」。\n→ 它帮助我们避免"
+     },
+     {
+      "t": "making mistakes",
+      "s": "avoid 后面要接 -ing，不能接 to do，所以是 avoid making。making 是 -ing 短语，就是「做某事」这件事；make mistakes 是「犯错」。\n→ 犯错"
+     }
+    ],
+    "sum": "它能帮我们避免出错。",
+    "cmp": "和书上基本一样，书上写「犯错」，我写成「出错」，意思差不多。"
+   }
+  },
+  "I hate to disappoint you, but I'm just not interested.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "I hate to disappoint you",
+      "s": "你多半会翻成「我讨厌使你失望」。放回去试试：讨厌让你失望？语气太重，后面还有 but。hate to do 在这里是一句客套话，意思是「很不愿意做某事，但又不得不做」。disappoint 是「使失望」。\n→ 我不想让你失望"
+     },
+     {
+      "t": "but I'm just not interested",
+      "s": "just 你可能翻成「只是」，这里是加强语气，「就是、确实」。interested 是形容词，be interested 就是「感兴趣」。\n→ 但我确实不感兴趣"
+     }
+    ],
+    "sum": "我真不想让你失望，但我就是没兴趣。",
+    "cmp": "和书上基本一样，书上写「我不想使你扫兴」，我写成「让你失望」，两个意思都说得通。"
+   }
+  },
+  "They are given to accommodate students' needs.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "They are given",
+      "s": "你多半会翻成「它们被给予」。念一遍，别扭吧？are given 是被动，就是「它们被别人怎么样了」。主语是物，give 在这里是「提供」，换成「它们是提供出来的」就通了。\n→ 它们是被提供的"
+     },
+     {
+      "t": "to accommodate students' needs",
+      "s": "to accommodate 是 to do 短语，这里表示目的，就是「为了做某事」。accommodate 你可能只认识「容纳、提供住宿」，后面跟 needs 就是「满足需求」。\n→ 为了满足学生的需求"
+     }
+    ],
+    "order": "英文先说「被提供」，再说「为了什么」；中文可以把目的提前：「为了满足……」，也可以接在后面，但「是为了满足……而提供的」更顺。",
+    "sum": "它们是为了满足学生的需求而提供的。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "They have difficulty adapting to climate change.": {
    "ph": [
@@ -175,7 +323,21 @@
      "b": "have difficulty (in) doing",
      "m": "难以做某事"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They have difficulty",
+      "s": "你多半会翻成「他们有困难」，然后后面就接不上了。have difficulty (in) doing sth. 是一个固定搭配，就是「做某事有困难」，后面接 -ing。\n→ 他们在……方面有困难"
+     },
+     {
+      "t": "adapting to climate change",
+      "s": "adapting 是 -ing 短语，就是「适应」这件事。adapt to 是「适应」。看到 to 先别以为是 to do：后面是 climate change，名词，所以这里 to 是介词。\n→ 适应气候变化"
+     }
+    ],
+    "sum": "他们很难适应气候变化。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "A bride will in most cases adopt a name that combines the couple's last names.": {
    "ph": [
@@ -199,6 +361,41 @@
     "order": "将 in most cases 提到句首，更符合中文习惯。",
     "sum": "大多数情况下，新娘会采用一个结合了夫妻双方姓氏的名字。",
     "cmp": "意思一样。书上也是把「在大多数情况下」放在句首，而且最后说成「结合夫妻姓氏的名字」，比我更紧凑。"
+   }
+  },
+  "At yesterday's party, Elizabeth's boyfriend amused us by imitating Charlie Chaplin.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "At yesterday's party, Elizabeth's boyfriend",
+      "s": "这块照字面翻就行：昨天聚会上的伊丽莎白的男朋友。\n→ 在昨天的聚会上，伊丽莎白的男朋友"
+     },
+     {
+      "t": "amused us by imitating Charlie Chaplin",
+      "s": "你多半会翻成「逗乐了我们，通过模仿查理·卓别林」，顺序不顺。by imitating 是 by + -ing，就是「靠做某事」，说的是方式；amused us 是结果。中文习惯先说方式，后说结果：靠模仿卓别林，逗大家开心。\n→ 通过模仿查理·卓别林逗我们开心"
+     }
+    ],
+    "order": "英文先说结果（逗我们开心）、再说方式（模仿卓别林），中文把方式放前面更顺：「模仿卓别林，把我们逗乐了」。",
+    "sum": "昨天的聚会上，伊丽莎白的男朋友模仿卓别林，把我们逗得很开心。",
+    "cmp": "意思一样，书上写「模仿查理·卓别林逗我们开心」，更紧凑。"
+   }
+  },
+  "He spoke perfect Korean—I was really amazed.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "He spoke perfect Korean",
+      "s": "你多半会翻成「他说完美的韩语」。念一遍，有点怪。perfect 在这里是「毫无破绽、很流利」，中文说「他韩语说得很好」更自然。\n→ 他韩语说得很好"
+     },
+     {
+      "t": "I was really amazed",
+      "s": "破折号后面是补一句自己的反应，不用管。was amazed 看着像被动，但它在这里相当于一个形容词，意思是「感到惊讶」，说的是人的感受。要注意区分：amazed 是人感到惊讶，amazing 是让人惊讶的事。\n→ 我真的很惊讶"
+     }
+    ],
+    "sum": "他韩语说得特别好，我真的很吃惊。",
+    "cmp": "和书上基本一样，我用「吃惊」，书上用「惊讶」，意思一样。"
    }
   },
   "By nature, Americans are enthusiastic and energetic about hobbies or pastimes.": {
@@ -356,7 +553,39 @@
      "b": "be determined by",
      "m": "由……决定"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Children's personality characteristics",
+      "s": "你多半会翻成「孩子们的人格特征的」。这块只是个名词短语，不用绕，中文说「孩子的性格特点」就行。\n→ 孩子的性格特点"
+     },
+     {
+      "t": "are invariably determined by their mothers",
+      "s": "are determined 是被动，就是「性格被别人决定」；by their mothers 把决定的人请了出来。你可能会翻成「被他们的母亲总是决定」，很绕。invariably 是「一成不变地、总是」，in- 是「不」，加上 variable「会变的」，合起来就是「从不变」。中文把被动改成主动更顺：由母亲决定。\n→ 总是由其母亲决定"
+     }
+    ],
+    "sum": "孩子的性格特点总是取决于母亲。",
+    "cmp": "意思一样，书上写「由其母亲决定」，我写成「取决于母亲」，更口语。"
+   }
+  },
+  "The operation should be done only once for each mode.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The operation should be done only once",
+      "s": "你多半会翻成「这个操作应该被做只有一次」，语序和说法都怪。should be done 是被动，就是「应该被人做」，中文不用说「被」，直接说「操作」就行。only once 是「只……一次」，放在动词前面。\n→ 只需操作一次"
+     },
+     {
+      "t": "for each mode",
+      "s": "这块照字面翻就行：每一种模式。\n→ 对每种模式"
+     }
+    ],
+    "order": "英文把「只一次」放在后面，中文习惯把「只需」放在动作前面，所以变成「只需操作一次」。",
+    "sum": "每种模式只需操作一次。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Trying to live up to the images of \"perfect\" models and movie heroes has a dark side.": {
    "ph": [
@@ -370,7 +599,21 @@
      "b": "a dark side",
      "m": "阴暗面"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Trying to live up to the images of \"perfect\" models and movie heroes",
+      "s": "一开头就是 Trying，别慌。-ing 开头当主语，就是「做某事」这件事。后面又有 to live，是 try to do，「努力去做」。live up to 你多半会翻成「活到……上面」，放回去不通，它是一个固定搭配，意思是「达到（某种标准、期望）」。models 你可能想到「模特」，这里是「榜样」，和 movie heroes 并列，都是人们想学的对象。\n→ 努力追求「完美」榜样和电影英雄的形象"
+     },
+     {
+      "t": "has a dark side",
+      "s": "谓语是 has，用单数，是因为整个「努力追求……」是一件事。has a dark side 字面是「有一个黑暗面」，中文说「有阴暗的一面」。\n→ 有其阴暗面"
+     }
+    ],
+    "sum": "努力活成「完美」榜样或电影英雄的样子，也有它不好的一面。",
+    "cmp": "意思一样。书上把 models 译成「模范」，我的 sum 说「榜样」，意思相同。"
+   }
   },
   "They did not raise much due to modest targets.": {
    "ph": [
@@ -393,7 +636,38 @@
      "b": "get on in life",
      "m": "在生活中过得好，取得进步"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The majority of earnest people",
+      "s": "the majority of 是固定搭配，「……中的大多数」。earnest 你可能不认识，它是「认真的、诚恳的」。\n→ 大多数认真的人"
+     },
+     {
+      "t": "are trying to get on in life",
+      "s": "are trying 是进行时，不是被动，就是「正在努力」。眼睛往后找：try to do，努力去做某事；to get on 是 to do 短语，就是努力做的那件事。get on in life 你多半会翻成「在生活中上去」，放回去不通，它的意思是「在人生中有所进步、过得好」。\n→ 都在努力在生活中有所作为"
+     }
+    ],
+    "sum": "大多数认真的人都在努力让自己的生活越过越好。",
+    "cmp": "意思接近，书上译成「努力生活」，把 get on 「过得好」的意思略去了，我的 sum 补上了这一层。"
+   }
+  },
+  "This sort of behaviour will not be tolerated.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "This sort of behaviour",
+      "s": "这块照字面翻就行：this sort of 是「这种」，behaviour 是「行为」。\n→ 这种行为"
+     },
+     {
+      "t": "will not be tolerated",
+      "s": "你多半会翻成「将不会被容忍」。will not be tolerated 是被动，就是「行为被别人怎么样了」；谁容忍？没必要说出来，中文把「被」去掉，直接说「是不能容许的」。tolerate 是「容忍、容许」，will not 在这里说的是一种坚决的态度。\n→ 是不能容许的"
+     }
+    ],
+    "sum": "这种行为是不会被容忍的。",
+    "cmp": "意思一样，书上写「是不能容许的」，我保留了「被」，也可以。"
+   }
   }
  }
 }

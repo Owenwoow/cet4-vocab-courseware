@@ -1,6 +1,40 @@
 {
  "_note": "例句词组与语法解析（书外补充，AI 生成）",
  "sents": {
+  "Scientists have found that scents affect working efficiency.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Scientists have found that",
+      "s": "你多半会翻成「科学家已经发现了那个」。念一遍，那个什么？这里的 that 不是「那个」，它带出的是宾语从句，就是「发现的内容」，翻的时候不用翻出 that。\n→ 科学家发现"
+     },
+     {
+      "t": "scents affect working efficiency",
+      "s": "你可能把 working efficiency 翻成「正在工作的效率」。念一遍，怪吧？working efficiency 是一个整体，就是「工作效率」。scents 是复数，「各种气味」，affect 是「影响」。\n→ 气味会影响工作效率"
+     }
+    ],
+    "sum": "科学家发现，气味会影响工作效率。",
+    "cmp": "几乎一样。书上用「可以影响」，我用「会影响」，意思差不多。"
+   }
+  },
+  "What people eat can be medicine or poison.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "What people eat",
+      "s": "你多半会翻成「什么人们吃」。念不通。What people eat 是主语从句，就是把一整段话当成句子的主语。从句里 people eat 后面缺了宾语，what 补的就是「被吃的东西」。\n→ 人们吃的东西"
+     },
+     {
+      "t": "can be medicine or poison",
+      "s": "这块照字面翻就行。can 在这里是「可能」，or 是二选一，所以要把两种可能都说出来。\n→ 可能是药，也可能是毒药"
+     }
+    ],
+    "sum": "人们吃进肚子里的东西，可能是药，也可能是毒。",
+    "cmp": "意思一样，我把 eat 说得更具体，是「吃进肚子里」。"
+   }
+  },
   "The ceremony was transmitted live by satellite to over fifty countries.": {
    "ph": [
     {
@@ -59,6 +93,40 @@
     "cmp": "书上译成「删除」，是有意去掉；omit 本身既可以是漏掉，也可以是删去，句子没说是不是故意，「漏掉」更保险，两个都说得通。"
    }
   },
+  "Learning is a daily experience and a lifetime mission.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Learning is a daily experience",
+      "s": "你多半会翻成「学习是一个每天的经历」。念一遍，「一个每天的」有点绕。句首 Learning 是 -ing 形式当主语，就是「学习这件事」；a 不用硬翻，daily 直接说「每天的」。\n→ 学习是每天的经历"
+     },
+     {
+      "t": "and a lifetime mission",
+      "s": "你可能把 lifetime 翻成「生命的时间」。它说的是「一生」，a lifetime mission 就是「一生的使命」。mission 不是小任务，是更大的「使命」。\n→ 也是一生的使命"
+     }
+    ],
+    "sum": "学习是每天都在经历的事，也是一辈子的使命。",
+    "cmp": "意思和书上一样，我换了更口语的说法。"
+   }
+  },
+  "I think we can dismiss their objections.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "I think",
+      "s": "你多半会翻成「我认为」，没错。但要留意：think 后面省略了 that，完整是 I think (that) we can……，这个 that 带的是宾语从句，就是「我认为」的内容。\n→ 我认为"
+     },
+     {
+      "t": "we can dismiss their objections",
+      "s": "dismiss 你可能只认识「解散、开除」，放回去试试：「开除他们的反对」？不通。这里 dismiss 是「不予考虑、驳回」。objections 是「异议」。\n→ 我们可以驳回他们的异议"
+     }
+    ],
+    "sum": "我认为，他们提出的异议我们可以不予理会。",
+    "cmp": "意思一样，书上的「驳回」更正式，我用的「不予理会」更口语。"
+   }
+  },
   "These cars emit more than all the microwaves in the EU.": {
    "ph": [],
    "an": {
@@ -101,7 +169,17 @@
      "b": "refuse to do",
      "m": "拒绝做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She refuses to admit the truth",
+      "s": "你多半会翻成「她拒绝去承认真相」。「去」是多余的。refuses to admit 里的 to admit 是 to do 短语，就是「拒绝做的那件事」，眼睛看 to 后面那个动词就行。admit 在这里是「承认」，不是「准许进入」。\n→ 她拒绝承认事实"
+     }
+    ],
+    "sum": "她就是不肯承认事实。",
+    "cmp": "意思和书上一样，书上「拒不承认」更书面。"
+   }
   },
   "We'd like to see the commission make further changes to the guidelines.": {
    "ph": [
@@ -110,7 +188,25 @@
      "b": "make changes to",
      "m": "对……做出修改"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "We'd like to see",
+      "s": "你可能把 We'd 当成 We had。放回去试：We had like？不通。这里是 We would like，客气地说「想要」。没有 if 条件，也不和事实相反，所以不是虚拟，只是委婉语气。\n→ 我们希望看到"
+     },
+     {
+      "t": "the commission make",
+      "s": "你可能觉得 make 少了个 s，写错了。其实 see 后面可以接「某人 + 动词原形」，就是「看到某人做某事」。the commission 是做动作的人，make 是做的事。\n→ 委员会做出"
+     },
+     {
+      "t": "further changes to the guidelines",
+      "s": "你多半会翻成「对准则的进一步的变化」。看到 changes，眼睛往后找 to——找到了：make changes to 是「对……做出修改」，to 后面的 the guidelines 就是改的对象。further 是「进一步的」。\n→ 对准则的进一步修改"
+     }
+    ],
+    "sum": "我们希望看到委员会对这些准则做进一步的修改。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "When someone commits a criminal act, we always hope the punishment will match the offense.": {
    "ph": [],
@@ -164,7 +260,21 @@
      "b": "too … to do",
      "m": "太……而不能做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The room's ceilings are too low to wear the lion heads",
+      "s": "你多半会翻成「房间的天花板太低去戴狮头」。念一遍，是不是缺了点什么？看到 too……to，脑子里换成「太……以至于不能……」，眼睛往后找 to——找到了 to wear。to wear 是 to do 短语，说的是「低到什么程度」，别忘了补上「不能」。\n→ 房间的天花板太低，没法戴狮头"
+     },
+     {
+      "t": "for jumping practice",
+      "s": "你可能把 jumping 翻成「正在跳的」。jumping practice 只是说练习的种类，就是「跳跃练习」，和 running shoes「跑鞋」是一个道理。for 在这里是「用于、为了」。\n→ 来练习跳跃"
+     }
+    ],
+    "sum": "房间的天花板太低，没法戴着狮头练习跳跃。",
+    "cmp": "和书上基本一样，书上的「无法」「进行」更书面，我说得更口语。"
+   }
   },
   "The plane made a dive to a lower altitude.": {
    "ph": [
@@ -182,7 +292,21 @@
      "b": "had better do",
      "m": "最好做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "If you want to pass your exams",
+      "s": "If 带的是条件状语从句，就是「如果……」。to pass your exams 是 to do 短语，跟在 want 后面，就是「想做的事」。「你的考试」的「你的」中文可以不说。\n→ 如果你想通过考试"
+     },
+     {
+      "t": "you'd better change your attitude",
+      "s": "你多半会把 you'd 当成 you would，翻成「你会最好」。念一遍，不通。放回去试：这里的 'd 是 had，you had better change 是固定搭配，就是「你最好……」，后面接动词原形。看到 'd better，就想到 had better。\n→ 你最好改变态度"
+     }
+    ],
+    "sum": "想通过考试的话，你最好改一改自己的态度。",
+    "cmp": "和书上一样，书上「若」更书面，我用「的话」更口语。"
+   }
   },
   "Researchers used ACT scores as a measure of intellectual aptitude.": {
    "ph": [
@@ -205,7 +329,39 @@
      "b": "ask for",
      "m": "索要"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Companies should promise that",
+      "s": "你多半会翻成「公司应该承诺那个」。that 在这里不是「那个」，它带出的是宾语从句，就是「承诺的内容」。\n→ 公司应该承诺"
+     },
+     {
+      "t": "they would never ask for passwords",
+      "s": "看到 would，你可能想到虚拟。检查一下依据：有没有 if 条件？没有。和事实相反吗？也没有，它说的就是承诺的内容，是将来的事，所以翻成「会」就行。ask for 是「索要」，眼睛认住 for。\n→ 他们永远不会索要密码"
+     }
+    ],
+    "sum": "公司应该保证，绝不会向用户索要密码。",
+    "cmp": "意思和书上一样，我把「索要」的对象补成「用户」，更好懂。"
+   }
+  },
+  "Put a cross if the answer is wrong.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Put a cross",
+      "s": "你多半会翻成「放一个十字」。念一遍，不知道在说什么。cross 在这里是「叉号」，put a cross 就是「打个叉」。这是命令句，省略了开头的 You。\n→ 打个叉"
+     },
+     {
+      "t": "if the answer is wrong",
+      "s": "这块照字面翻就行：if 带的是条件状语从句，就是「如果……」，the answer is wrong 是「答案错了」。\n→ 如果答案错了"
+     }
+    ],
+    "order": "英文把「如果」放在后面，中文习惯先说条件，所以把 if 那块提到前面。",
+    "sum": "如果答案是错的，就打个叉。",
+    "cmp": "意思一样，书上「打叉」我也用了。"
+   }
   },
   "The sport has a strict code of conduct.": {
    "ph": [
@@ -216,6 +372,24 @@
     }
    ]
   },
+  "Their emotions were much harder to regulate.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Their emotions were much harder",
+      "s": "你可能把 much harder 翻成「很多更难」。念一遍，别扭。much 放在比较级前面是「……得多」，harder 是 hard 的比较级，「更难」。\n→ 他们的情绪要难得多"
+     },
+     {
+      "t": "to regulate",
+      "s": "你多半会翻成「被调节」，因为情绪是被调节的。其实 to regulate 是 to do 短语，说的是「难在哪」，难在调节。中文不用加「被」，直接说「情绪难调节」。\n→ 调节起来"
+     }
+    ],
+    "order": "把 to regulate 提到 harder 前面，说成「调节起来要难得多」。",
+    "sum": "他们的情绪调节起来要难得多。",
+    "cmp": "书上说「更难调节」，没有翻出 much 的「得多」，加上会更完整。"
+   }
+  },
   "People's psychological well-being is related to various factors.": {
    "ph": [
     {
@@ -223,7 +397,39 @@
      "b": "be related to",
      "m": "与……有关"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "People's psychological well-being",
+      "s": "你多半会把 well-being 翻成「好的存在」。拆开读倒是没错，但它是名词，就是「健康、幸福」。psychological well-being 合起来是「心理健康」。\n→ 人们的心理健康"
+     },
+     {
+      "t": "is related to various factors",
+      "s": "你多半会翻成「被关联到」。is related 是被动，就是「被别人联系起来」，但 be related to 是一个整体，直接记成「与……有关」，中文不说「被」。various 是「各种各样的」。\n→ 与多种因素有关"
+     }
+    ],
+    "sum": "人的心理健康和多种因素都有关系。",
+    "cmp": "和书上基本一样。"
+   }
+  },
+  "She was finally rescued by her relatives.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "She was finally rescued",
+      "s": "你多半会翻成「她终于被救了」。意思没错，但 was rescued 是被动，就是「她被别人怎么样了」，中文更喜欢把「别人」请出来当主语。谁救的？往后看 by。\n→ 她终于被救出来"
+     },
+     {
+      "t": "by her relatives",
+      "s": "这块照字面翻就行：by 引出做动作的人。relatives 是名词，「亲戚」，别当成形容词「相对的」。\n→ 被她的亲戚们"
+     }
+    ],
+    "order": "把 by 后面的人提到前面当主语，用「亲戚们把她救了出来」，不用「被」。",
+    "sum": "她的亲戚们终于把她救了出来。",
+    "cmp": "意思和书上一样，书上保留了「被」，我把亲戚放到前面当主语。"
+   }
   },
   "The incident is still under investigation by the relevant authorities.": {
    "ph": [
@@ -241,7 +447,26 @@
      "b": "used to do",
      "m": "过去经常"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "My grandmother used to narrate",
+      "s": "你多半会把 used 当成「使用」，翻成「用来讲」。念一遍，不通。used to do 是固定搭配，就是「过去经常做」，说的是过去的习惯，现在不这样了。narrate 是「讲述」。\n→ 我祖母过去常常讲"
+     },
+     {
+      "t": "bedtime stories to me",
+      "s": "你可能翻成「睡觉时间的故事给我」。bedtime stories 就是「睡前故事」。to me 是「给我」，中文习惯把它提前，说「给我讲」。\n→ 睡前故事给我听"
+     },
+     {
+      "t": "when I was young",
+      "s": "when 带的是时间状语从句，就是「当……的时候」。was young 是「年轻、年纪小」，这里指「小时候」。\n→ 在我小的时候"
+     }
+    ],
+    "order": "英文把「什么时候」放在后面，中文习惯先说时间，所以把「我小时候」提到前面。",
+    "sum": "我小时候，祖母常给我讲睡前故事。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "She never hesitates to speak her mind.": {
    "ph": [
@@ -255,7 +480,21 @@
      "b": "speak one's mind",
      "m": "说出自己的想法"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She never hesitates to",
+      "s": "你多半会翻成「她从不犹豫去」。hesitate to do 是固定搭配，to 后面是犹豫要不要做的事，to do 短语。never 加上它，中文更顺的说法是「毫不犹豫地做」。\n→ 她总是毫不犹豫地"
+     },
+     {
+      "t": "speak her mind",
+      "s": "你可能翻成「说她的头脑」。念一遍，不通。speak one's mind 是固定搭配，mind 在这里指「想法」，整个就是「直说出自己的想法」。\n→ 说出自己的想法"
+     }
+    ],
+    "sum": "她总是毫不犹豫地说出自己的想法。",
+    "cmp": "书上说「从不犹豫说出自己的想法」，意思对，但「犹豫说出」读起来有点别扭，改成「毫不犹豫地说出」更顺。"
+   }
   },
   "The lack of knowledge is difficult if not impossible to compensate for later on.": {
    "ph": [
@@ -302,7 +541,21 @@
      "b": "be good at",
      "m": "擅长"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They are better at",
+      "s": "你多半会翻成「他们更好在」。念着不通。盯住 at：be good at 是「擅长」，better 是 good 的比较级，所以是「更擅长」。\n→ 他们更擅长"
+     },
+     {
+      "t": "negotiating an agreement",
+      "s": "negotiating 是 -ing 形式。介词 at 后面的动词要变成 -ing，就是「做某事这件事」。negotiate an agreement 是「通过协商达成协议」。\n→ 协商达成协议"
+     }
+    ],
+    "sum": "他们更擅长通过协商达成协议。",
+    "cmp": "意思和书上一样，书上说「协商协议」，我补上「达成」，更像中文。"
+   }
   },
   "He called on graduates to innovate in his speech.": {
    "ph": [
@@ -316,7 +569,22 @@
      "b": "call on sb. to do",
      "m": "呼吁某人做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He called on graduates to innovate",
+      "s": "你多半会翻成「他在毕业生上叫」。call on sb. to do 是一个搭配，就是「号召某人做某事」，眼睛往后找 to——找到了 to innovate。graduates 是「毕业生」，innovate 是「创新」。\n→ 他呼吁毕业生创新"
+     },
+     {
+      "t": "in his speech",
+      "s": "你可能想把它接到 innovate 后面，「在他的演讲中创新」。念一遍，创新在演讲里？不通。放回 called on 后面试试：在演讲中呼吁——对了。\n→ 在他的演讲中"
+     }
+    ],
+    "order": "把「在他的演讲中」提到前面，说成「他在演讲中呼吁……」。",
+    "sum": "他在演讲中呼吁毕业生要勇于创新。",
+    "cmp": "意思和书上一样，书上多了一个「他的」，我省了。"
+   }
   },
   "The film is based on the legend.": {
    "ph": [
@@ -325,7 +593,17 @@
      "b": "be based on",
      "m": "根据……改编"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The film is based on the legend",
+      "s": "你多半会翻成「这部电影被基于传说」。念一遍，不通。is based 是被动形式，但 be based on 要当成一个整体记，就是「以……为基础、根据……改编」。legend 是「传说」。\n→ 这部电影根据传说改编"
+     }
+    ],
+    "sum": "这部电影改编自这个传说。",
+    "cmp": "意思和书上一样，书上把 legend 译成「传奇故事」，我说「传说」，都行。"
+   }
   },
   "American myth is that you can pull yourself up by your own efforts and change a bad situation into a good one.": {
    "ph": [
@@ -367,7 +645,17 @@
      "b": "be puzzled by",
      "m": "对……感到困惑"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They were puzzled by the mystery",
+      "s": "你多半会翻成「他们被这个谜困惑了」。意思懂，但 were puzzled 是被动，就是「他们被某事怎么样了」，中文更常说「感到困惑」。by 后面是让他们困惑的原因，mystery 是「谜、谜团」。\n→ 他们对这个谜感到困惑"
+     }
+    ],
+    "sum": "这个谜让他们很困惑。",
+    "cmp": "意思和书上一样，我把 mystery 放到前面当主语。"
+   }
   },
   "They prefer to go after all that is novel.": {
    "ph": [
@@ -376,7 +664,21 @@
      "b": "go after",
      "m": "追求"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They prefer to go after",
+      "s": "你多半会翻成「他们更喜欢去跟在后面」。go after 在这里不是「跟着」，是「追求」。to go 是 to do 短语，跟在 prefer 后面，就是「更喜欢做的事」。\n→ 他们更喜欢追求"
+     },
+     {
+      "t": "all that is novel",
+      "s": "你可能把 novel 翻成「小说」，翻成「一切是小说的」，不通。novel 还可以做形容词，是「新奇的」。that 是谁？放回去试：that 是定语从句，给 all 补充说明，从句里缺主语：they is novel？不通；all is novel，一切是新奇的——对了。\n→ 一切新奇的事物"
+     }
+    ],
+    "sum": "他们更爱追逐一切新奇的东西。",
+    "cmp": "意思一样，书上用「追求」，我用「追逐」，更口语。"
+   }
   },
   "For each assignment, I was to write the best essay as I could.": {
    "ph": [
@@ -385,7 +687,21 @@
      "b": "be to do",
      "m": "必须做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "For each assignment, I was to write",
+      "s": "你多半会翻成「我是去写」。was to 不是「是去」，be to do 在这里是「被安排或要求去做」，翻成「要、必须」。For each assignment 是「对于每一项作业」。\n→ 对于每一项作业，我都要写"
+     },
+     {
+      "t": "the best essay as I could",
+      "s": "你可能翻成「最好的文章，当我能的时候」。念一遍，不通。把 as I could 当成一个整体，意思是「尽我所能」，the best essay 是「最好的文章」。\n→ 尽我所能写出最好的文章"
+     }
+    ],
+    "sum": "每次作业，我都得尽全力写出最好的文章。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "It will be a great loss if we no longer read books and longer articles.": {
    "ph": [
@@ -394,7 +710,22 @@
      "b": "no longer",
      "m": "不再"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It will be a great loss",
+      "s": "你多半会翻成「它将是一个巨大的损失」。「它」翻出来很空。这句的 It 后面还带着 if 从句，整句要表达的是「如果……就会是巨大的损失」，所以「它」不用翻。\n→ 会是一个巨大的损失"
+     },
+     {
+      "t": "if we no longer read books and longer articles",
+      "s": "if 带的是条件状语从句，就是「如果……」。no longer 是固定搭配，「不再」，这里的 longer 别当成「更长」，你可能会翻成「不更长地读」；后面 longer articles 里的 longer 才是「较长的」。\n→ 如果我们不再阅读书籍和较长的文章"
+     }
+    ],
+    "order": "英文把 if 放后面，中文习惯先说条件，所以把「如果……」提到前面。",
+    "sum": "要是我们再也不读书、不读长文章，损失就大了。",
+    "cmp": "意思和书上一样，书上说「长篇文章」「巨大的损失」，我说得更口语。"
+   }
   },
   "This ancient town is regarded as the paradise of love and romance.": {
    "ph": [
@@ -403,7 +734,21 @@
      "b": "be regarded as",
      "m": "被视为"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "This ancient town is regarded as",
+      "s": "你多半会翻成「这个古镇被认为是作为」。念一遍，不通。is regarded as 是被动，就是「它被别人怎么样了」，be regarded as 要当成一个整体，「被视为、被看作」，as 不单独翻。\n→ 这个古镇被视为"
+     },
+     {
+      "t": "the paradise of love and romance",
+      "s": "这块照字面翻就行：love and romance 并列，romance 在这里是「浪漫」，不是「罗曼史」，paradise 是「天堂」。\n→ 爱情和浪漫的天堂"
+     }
+    ],
+    "sum": "人们把这座古镇看作爱情与浪漫的天堂。",
+    "cmp": "意思和书上一样，书上保留了「被」，我把「人们」请出来当主语。"
+   }
   },
   "The brochure should give you a good idea of the hotel.": {
    "ph": [
@@ -426,6 +771,23 @@
     ],
     "sum": "有了这本手册，你应该能对这家酒店有个很好的了解。",
     "cmp": "意思一样。书上的「让您很好地了解这家酒店」保留了手册当主语，更贴近原文；我换成「有了……」，更口语。"
+   }
+  },
+  "Reading and comprehending longer books and chapters takes practice.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Reading and comprehending longer books and chapters",
+      "s": "你多半会翻成「正在阅读并正在理解」。句首的 Reading and comprehending 是 -ing 形式当主语，就是「读并读懂这件事」。longer 在这里是「较长的」。\n→ 阅读并理解较长的书和章节"
+     },
+     {
+      "t": "takes practice",
+      "s": "你多半会翻成「拿走练习」。take 在这里是「需要」，takes practice 就是「需要练习」。takes 用单数，是因为把「读并读懂」当成一件事。\n→ 需要练习"
+     }
+    ],
+    "sum": "读懂较长的书和章节，是需要练习的。",
+    "cmp": "意思和书上一样。"
    }
   }
  }

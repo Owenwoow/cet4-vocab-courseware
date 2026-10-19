@@ -27,7 +27,21 @@
      "b": "keep up",
      "m": "跟上"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Pregnant employees struggled",
+      "s": "你多半会翻成「怀孕的员工挣扎」。念一遍，是不是不知道在挣扎什么？struggle 单独用是「挣扎」，但后面一旦跟了 to do，就是「努力、费力地做某事」。\n→ 怀孕的员工努力"
+     },
+     {
+      "t": "to keep up",
+      "s": "to keep up 是 to do 短语，就是 struggled 要努力去做的那件事。你可能把 keep 翻成「保持」、up 翻成「向上」，凑不出意思。keep up 是一个整体，就是「跟上」（别人的速度或进度）。\n→ 跟上进度"
+     }
+    ],
+    "sum": "怀孕的员工很吃力地想跟上进度。",
+    "cmp": "书上是「努力跟上进度」，意思一样。句里其实没有「进度」两个字，书上是顺着 keep up 补出来的，补得合理。"
+   }
   },
   "There are a couple of ways to compromise on the issue.": {
    "ph": [
@@ -41,7 +55,22 @@
      "b": "compromise on",
      "m": "在……上折中"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "There are a couple of ways",
+      "s": "你多半会翻成「有一对方式」。a couple of 字面是「一对」，实际口语里就是「几个」，不一定刚好两个。\n→ 有几种方法"
+     },
+     {
+      "t": "to compromise on the issue",
+      "s": "to compromise 是 to do 短语，跟在 ways 后面，说明是「什么样的方法」，就是「……的方法」。你可能翻成「为了在这个问题上妥协」，放回 ways 后面试试，接不上。compromise on 是「在某事上折中、让步」，issue 是「问题」。\n→ 在这个问题上折中的"
+     }
+    ],
+    "order": "英文是「方法」在前、说明在后，中文要把「在这个问题上折中的」挪到「方法」前面。",
+    "sum": "在这个问题上，有几种折中的办法。",
+    "cmp": "和书上基本一样，只是「办法」和「方法」的差别。"
+   }
   },
   "As a result, wheat prices elsewhere more than doubled, pulling rice and corn prices up with them.": {
    "ph": [
@@ -97,7 +126,26 @@
      "b": "end up as",
      "m": "最终成为"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Young men are less likely to",
+      "s": "你多半会翻成「年轻男性更少可能」。念一遍，中文不这么说。be likely to do 是「可能做某事」，前面加了 less，就是反过来：「不太可能、更不可能」。眼睛往后找 to 后面的动词。\n→ 年轻男性更不可能"
+     },
+     {
+      "t": "end up as single parents",
+      "s": "end up as 是「最后成了」，说的是一个结果。single 你可能翻成「单身的」，但 single parent 是一个整体，指「单亲父母」。\n→ 最终成为单亲父母"
+     },
+     {
+      "t": "than young women",
+      "s": "这块照字面翻就行：than 引出比较的对象，补全就是 than young women are likely to。\n→ 比年轻女性"
+     }
+    ],
+    "order": "英文把比较对象放最后，中文习惯先说「比谁」，所以把「比年轻女性」提到前面。",
+    "sum": "年轻男性比年轻女性更不可能最终成为单亲父母。",
+    "cmp": "和书上基本一样，书上用「成为」，没有单独译出 end up 的味道，也通顺。"
+   }
   },
   "Jobs, of course, has enjoyed singular success.": {
    "ph": [
@@ -106,7 +154,21 @@
      "b": "of course",
      "m": "当然"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Jobs, of course,",
+      "s": "你多半会翻成「工作，当然」。注意 Jobs 首字母大写，书上译成乔布斯，是人名。前后用逗号隔开的 of course 是插入语，就是主语后面顺口插的一句「当然」，拿掉也不影响主干，翻的时候挪到句首就行。\n→ 当然，乔布斯"
+     },
+     {
+      "t": "has enjoyed singular success",
+      "s": "has enjoyed 是现在完成时，说的是「到现在为止取得了」。enjoy 你可能翻成「享受」，享受成功？不对，这里是「获得、取得」。singular 你可能翻成「单数的」，放回去试：单数的成功？说不通。这里是「非凡的、出众的」。\n→ 取得了非凡的成就"
+     }
+    ],
+    "sum": "当然，乔布斯取得了非凡的成就。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Substitutions of one gesture for the other often create humorous moment.": {
    "ph": [
@@ -120,7 +182,21 @@
      "b": "substitution of … for",
      "m": "用……代替"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Substitutions of one gesture for the other",
+      "s": "你多半会翻成「一种手势的替代，为了另一种」，读不通。substitution of A for B 是一个被拆开的搭配，看到 of 后眼睛往后找 for：A 代替 B。把名词 substitution 换成动词说：「用 A 代替 B」。A 是 one gesture，B 是 the other。\n→ 用一种手势代替另一种手势"
+     },
+     {
+      "t": "often create humorous moment",
+      "s": "create 你可能翻成「创造」，这里是「造成、带来」。英文爱让动作当主语，中文顺着说：这样替换，常常会带来什么？带来一个有趣的场面。\n→ 常常会带来幽默的时刻"
+     }
+    ],
+    "sum": "用一种手势代替另一种手势，常常会带来滑稽的场面。",
+    "cmp": "和书上基本一样，我把「幽默的时刻」说成「滑稽的场面」，更口语一点。"
+   }
   },
   "The importance of using PowerPoint in education should be recognised by all of us.": {
    "ph": [
@@ -189,6 +265,24 @@
     "cmp": "意思一样。书上把「近来出现的需求猛增」提到前面，结构更完整；我的更口语一点。"
    }
   },
+  "Environmental problems must be solved to ease the current global food shortage.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Environmental problems must be solved",
+      "s": "你多半会翻成「环境问题必须被解决」。must be solved 是被动，就是「问题被人解决了」。中文不爱说「被」，谁解决不重要，直接说「必须解决」或「必须得到解决」。\n→ 环境问题必须得到解决"
+     },
+     {
+      "t": "to ease the current global food shortage",
+      "s": "看到 to 后面跟 ease 这个动词，这是 to do 短语，放在句末说明目的，就是「为了、以便」。你可能把 to 当成「到」，放回去试：到缓解……？说不通。ease 是「缓解」，current 是「目前的」，food shortage 是「粮食短缺」。\n→ 以缓解目前的全球粮食短缺"
+     }
+    ],
+    "order": "英文把目的放在最后，中文习惯先说「为了……」，可以把它提到前面。",
+    "sum": "为了缓解目前的全球粮食短缺，必须解决环境问题。",
+    "cmp": "和书上一样，只是书上保持英文顺序，「以缓解……」放在后面，也通顺。"
+   }
+  },
   "They consume plenty of cereal for breakfast.": {
    "ph": [
     {
@@ -242,7 +336,21 @@
      "b": "inside and out",
      "m": "里里外外"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "I have seen this place",
+      "s": "have seen 是现在完成时，说的是「到现在为止看过」，中文就是「看过这个地方」。后面是破折号，破折号后面是另一句话，对前面补充说明。\n→ 我看过这个地方"
+     },
+     {
+      "t": "it is elegant, inside and out",
+      "s": "elegant 你多半会翻成「优雅」，那是形容人的，说地方用「雅致」。inside and out 字面是「里面和外面」，你可能翻成「在里面和外面」，念一遍怪怪的。这是固定说法，中文就是「里里外外」。\n→ 它里里外外都很雅致"
+     }
+    ],
+    "sum": "这个地方我看过了，里里外外都很雅致。",
+    "cmp": "和书上基本一样，书上保留了破折号。"
+   }
   },
   "It can bring wealth and honor to them.": {
    "ph": [
@@ -316,7 +424,43 @@
      "b": "it is said that",
      "m": "据说"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It is said, that",
+      "s": "你多半会翻成「它被说」。is said 是被动，就是「被人说」。it is said that 是固定句型，it 没有具体指什么，整个就是「据说」，that 后面跟的是内容。\n→ 据说"
+     },
+     {
+      "t": "menu-labeling could favour chains",
+      "s": "could 是什么？前面是 is said，现在时，所以不是时态呼应；句子里也没有 if 条件，所以不是虚拟，就是表示「可能」。favour 你可能翻成「喜欢」，这里是「对……有利」。menu-labeling 是「菜单标签」，chains 是「连锁店」。\n→ 菜单标签可能对连锁店有利"
+     },
+     {
+      "t": "that have more healthy offerings",
+      "s": "that 带的是定语从句，就是给前面的名词补一段说明。that 指谁？放回去试：menu-labeling have offerings，菜单标签提供食品？说不通；chains have offerings，连锁店提供更多健康食品——对。offerings 这里是「提供的食品」。\n→ 提供更多健康食品的"
+     }
+    ],
+    "order": "「提供更多健康食品的」是修饰 chains 的，中文要放在「连锁店」前面。",
+    "sum": "据说，菜单标签可能对那些提供更多健康食品的连锁店有利。",
+    "cmp": "和书上意思一样，书上用「有利于」，我换成「对……有利」，口语一点。"
+   }
+  },
+  "Leah was a typical successful woman before she changed her career.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Leah was a typical successful woman",
+      "s": "你多半会翻成「利亚是一个典型的成功的女人」，三个「的」连着，念着累。typical successful 两个形容词叠在一起，合并成「典型的成功女性」就顺了。Leah 是人名。\n→ 利亚是一位典型的成功女性"
+     },
+     {
+      "t": "before she changed her career",
+      "s": "before 带的是时间状语从句，就是「在……之前」。你可能翻成「在她改变她的职业之前」，两个「她」重复，change one's career 就是「转行」，第二个「她」可以省掉。\n→ 在她转行之前"
+     }
+    ],
+    "sum": "利亚转行之前，是一位典型的成功女性。",
+    "cmp": "和书上一样，只是语序略有不同。"
+   }
   },
   "This description even fits the majority of eminent scholars.": {
    "ph": [
@@ -343,7 +487,21 @@
      "b": "be proud of",
      "m": "为……自豪"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They feel proud of",
+      "s": "你多半会翻成「他们感觉骄傲的」。feel proud of 和 be proud of 一样，是「为……感到自豪」，of 后面跟的就是自豪的内容。\n→ 他们为……感到自豪"
+     },
+     {
+      "t": "being an outstanding problem solver",
+      "s": "of 后面是 being，这是 -ing 短语，因为介词后面的动词要变成 -ing，就是「是……这件事」。being an outstanding problem solver，就是「自己是一个出色的问题解决者」。problem solver 你可能翻得很硬，意思就是「解决问题的人」。\n→ 自己是优秀的问题解决者"
+     }
+    ],
+    "sum": "他们为自己是解决问题的高手而自豪。",
+    "cmp": "书上是「他们为自己是优秀的问题解决者感到自豪」，意思一样。我把「优秀的问题解决者」换成「解决问题的高手」，口语一点。"
+   }
   },
   "A student who earns good marks is generally a good student.": {
    "ph": [
@@ -352,7 +510,22 @@
      "b": "earn good marks",
      "m": "取得好成绩"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "A student who earns good marks",
+      "s": "你多半会翻成「一个赚好分数的学生」。earn 本义是「赚」，这里是「取得」，earn good marks 就是「取得好成绩」。who 带的是定语从句，就是给前面的名词补一段说明。who 指谁？放回去试：student earns good marks，学生取得好成绩，对；marks 是物，而且是复数，who earns 对不上。所以是 student。\n→ 取得好成绩的学生"
+     },
+     {
+      "t": "is generally a good student",
+      "s": "这块照字面翻就行：generally 是「通常」，整句主干就是「学生是好学生」。\n→ 通常是个好学生"
+     }
+    ],
+    "order": "「取得好成绩的」是修饰 student 的，中文要放在「学生」前面。",
+    "sum": "成绩好的学生，通常就是好学生。",
+    "cmp": "和书上基本一样，我把「取得好成绩」直接说成「成绩好」，更口语。"
+   }
   },
   "How did people feel when they learned of her remarks?": {
    "ph": [
@@ -361,7 +534,22 @@
      "b": "learn of",
      "m": "得知"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "How did people feel",
+      "s": "你多半会翻成「人们怎样做了感觉」。did 只是帮忙构成疑问句的，不用翻。How did sb. feel 问的是感受，就是「某人感觉如何」。\n→ 人们感觉如何"
+     },
+     {
+      "t": "when they learned of her remarks",
+      "s": "when 带的是时间状语从句，就是「当……的时候」。they 指谁？候选是 people 和 her 后面的人，they 是复数，对得上的是 people。learned of 你可能翻成「学习了」，放回去：学习了她的言论？不对。learn of 是「得知、听说」，of 后面是得知的东西。remarks 这里是「话、言论」。\n→ 当他们得知她的言论时"
+     }
+    ],
+    "order": "英文把「什么时候」放后面，中文可以先说时间：当人们得知她的言论时，感觉如何？",
+    "sum": "当人们得知她的言论时，感觉如何？",
+    "cmp": "和书上一样。"
+   }
   },
   "The meeting is scheduled to commence at noon.": {
    "ph": [
@@ -370,7 +558,21 @@
      "b": "be scheduled to do",
      "m": "定于"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The meeting is scheduled",
+      "s": "你多半会翻成「会议被安排」。is scheduled 是被动，就是「会议被人安排了」。眼睛往后找 to：be scheduled to do 是固定搭配，「定于做某事」。\n→ 会议定于"
+     },
+     {
+      "t": "to commence at noon",
+      "s": "to commence 是 to do 短语，说明安排的是什么事。commence 你可能没见过，它是 begin 的书面说法，就是「开始」。at noon 是「中午」。\n→ 中午开始"
+     }
+    ],
+    "sum": "会议定于中午开始。",
+    "cmp": "书上是「会议定于午间召开」，意思一样。「召开」比「开始」更像开会的说法。"
+   }
   },
   "She has one of the most brilliant minds in the country.": {
    "ph": [
@@ -388,7 +590,21 @@
      "b": "be known to do",
      "m": "众所周知有"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She is known",
+      "s": "你多半会翻成「她被知道」。念一遍，中文不这么说。is known 是被动，就是「她被大家知道」，换成主动说是「大家都知道她……」。眼睛往后找 to：be known to do 是「众所周知……」。\n→ 大家都知道她"
+     },
+     {
+      "t": "to have a terrific figure",
+      "s": "to have 是 to do 短语，说的是「她怎么样」。terrific 你可能联想到 terrify，翻成「可怕的」，其实是「极好的」。figure 你可能翻成「数字」，放回去：极好的数字？不对。这里是「身材」。\n→ 身材很好"
+     }
+    ],
+    "sum": "大家都知道她身材很好。",
+    "cmp": "和书上基本一样，书上多了一个「的」。"
+   }
   },
   "The book includes a wealth of splendid photographs.": {
    "ph": [
@@ -426,6 +642,41 @@
     }
    ]
   },
+  "The book dares to take on grand themes in the grand manner.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The book dares to take on grand themes",
+      "s": "你多半会翻成「这本书敢于拿起宏大的主题」。dare to do 是「敢于做某事」，dares 的 -s 是因为主语 The book 是单数。take on 在这里不是「拿起」，是「着手处理、承担」。书当主语，中文拟人说也行。\n→ 这本书敢于处理宏大的主题"
+     },
+     {
+      "t": "in the grand manner",
+      "s": "你可能翻成「在宏大的方式里」，念着怪。in the ... manner 是「以……的方式」，把 in 换成「以」就顺了。\n→ 以宏大的方式"
+     }
+    ],
+    "order": "英文把方式放在最后，中文习惯把「以宏大的方式」放在动作前面。",
+    "sum": "这本书敢于以宏大的方式处理宏大的主题。",
+    "cmp": "和书上基本一样，书上用的是「呈现」，我用「处理」，贴近 take on。"
+   }
+  },
+  "People often wonder why some entrepreneurs have greater success than others.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "People often wonder",
+      "s": "wonder 你可能只认识名词「奇迹」，这里是动词「想知道」。后面跟的是想知道的内容。\n→ 人们经常想知道"
+     },
+     {
+      "t": "why some entrepreneurs have greater success than others",
+      "s": "why 带的是宾语从句，就是 wonder 想知道的内容，why 后面是陈述语序，不倒装。你多半会翻成「为什么一些企业家有更大的成功，比别人」，念一遍，比较的部分很别扭。greater success than others 就是「比别人更成功」，others 是「其他人」。\n→ 为什么有些企业家比其他人更成功"
+     }
+    ],
+    "sum": "人们经常想知道，为什么有些企业家比其他人更成功。",
+    "cmp": "和书上完全一样。"
+   }
+  },
   "It's a miracle that nobody was killed in the crash.": {
    "ph": [
     {
@@ -457,7 +708,42 @@
      "b": "revolution in",
      "m": "……方面的变革"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "We have long feared that",
+      "s": "你多半会翻成「我们长久地害怕了」。have feared 是现在完成时，说的是「一直在担心」，long 是「很久」。that 后面跟的是担心的内容，叫宾语从句。\n→ 长期以来，我们一直担心"
+     },
+     {
+      "t": "this \"revolution in distribution\"",
+      "s": "你可能翻成「分销里的革命」。in 在这里表示「在……方面」，revolution in distribution 就是「分销方面的变革」，加了引号是特指的说法。\n→ 这种「分销革命」"
+     },
+     {
+      "t": "uses corporate black magic on our appetite",
+      "s": "你多半会翻成「使用公司的黑魔法在我们的胃口上」，念一遍很别扭。use A on B 是「对 B 使用 A」；corporate 是「企业的」，black magic 是「黑魔法」，在这里是比喻；appetite 是「胃口」。拆开说：企业对我们的胃口用手段。\n→ 会利用企业的黑魔法来影响我们的胃口"
+     }
+    ],
+    "sum": "长期以来，我们一直担心，这种「分销革命」是企业在用黑魔法般的手段左右我们的胃口。",
+    "cmp": "意思和书上一致。书上是「利用企业黑魔法影响我们的胃口」，我把 black magic 说成「黑魔法般的手段」，说得更明白一点。"
+   }
+  },
+  "The magnetic pull of the city was hard to resist.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The magnetic pull of the city",
+      "s": "你多半会翻成「城市的磁性拉力」。magnetic 是「像磁铁的」，pull 是「拉」，磁铁一样的拉力，说的是一种很强的吸引力。\n→ 都市的强大魅力"
+     },
+     {
+      "t": "was hard to resist",
+      "s": "hard to resist 里的 to resist 是 to do 短语，跟在形容词 hard 后面，说明「难在哪」：难在抵抗它。你可能翻成「很难被抵抗」，中文不用「被」，直接说「难以抗拒」。\n→ 令人难以抗拒"
+     }
+    ],
+    "sum": "都市的强大魅力让人难以抗拒。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "The scent of flowers acts as a magnet to bees.": {
    "ph": [
@@ -494,7 +780,21 @@
      "b": "call on sb. to do",
      "m": "呼吁……做某事"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The senator called on Facebook",
+      "s": "你多半会翻成「参议员拜访了脸书」。call on 不是打电话，也不是拜访，眼睛往后找 to：call on sb. to do 是「呼吁某人做某事」。\n→ 参议员呼吁脸书"
+     },
+     {
+      "t": "to change its privacy policy",
+      "s": "找到了 to change，这是 to do 短语，就是呼吁要做的事。its 指谁？候选是 senator 和 Facebook。its 是指物的所有格，指人要用 his / her，所以是 Facebook。privacy policy 是「隐私政策」。\n→ 修改其隐私政策"
+     }
+    ],
+    "sum": "参议员呼吁脸书修改它的隐私政策。",
+    "cmp": "和书上意思一样，书上用「改其隐私政策」，更书面。"
+   }
   },
   "The decision still has to be ratified by the full council.": {
    "ph": [
@@ -503,7 +803,22 @@
      "b": "have to do",
      "m": "必须，需要"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The decision still has to be ratified",
+      "s": "你多半会翻成「这个决定仍然必须被批准」。has to 是「必须」，be ratified 是被动，就是「决定被人批准」。ratify 是「批准」。中文少用「被」，换成「需要经过……批准」。\n→ 该决定仍需得到批准"
+     },
+     {
+      "t": "by the full council",
+      "s": "被动里的 by，后面就是「谁来做」：by the full council，由整个委员会来批准。\n→ 整个委员会的"
+     }
+    ],
+    "order": "被动句里 by 引出的人，中文要提到前面，说成「经整个委员会批准」。",
+    "sum": "这个决定仍需经过整个委员会批准。",
+    "cmp": "和书上基本一样，书上用的是「得到整个委员会的批准」。"
+   }
   },
   "According to the Census Bureau, 38 million people in the U.S. are living below the official poverty thresholds.": {
    "ph": [
@@ -513,6 +828,24 @@
      "m": "根据"
     }
    ]
+  },
+  "I think we're unique as a federal agency.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "I think we're unique",
+      "s": "你多半会翻成「我想我们是独特的」。I think 后面藏了一个 that：I think (that) we're unique，这是宾语从句，就是「我认为……」的内容。unique 是「独一无二的」。\n→ 我认为我们是独一无二的"
+     },
+     {
+      "t": "as a federal agency",
+      "s": "as 你可能只认识「因为」或「当……时」，放回去试：因为一个联邦机构，所以独一无二？说不通。as 后面跟名词，是「作为」。federal 是「联邦的」，agency 是「机构」。\n→ 作为联邦机构"
+     }
+    ],
+    "order": "「作为联邦机构」说的是前提，中文可以提到前面。",
+    "sum": "我认为，作为联邦机构，我们是独一无二的。",
+    "cmp": "和书上一样，只是语序略有不同。"
+   }
   },
   "Human lives are governed by the desire to experience joy.": {
    "ph": [
@@ -526,7 +859,35 @@
      "b": "the desire to do",
      "m": "做……的欲望"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Human lives are governed",
+      "s": "你多半会翻成「人类的生活被统治」。are governed 是被动，就是「生活被什么管着」。govern 平时是「统治」，说到生活，意思是「支配、左右」。\n→ 人类的生活被……支配"
+     },
+     {
+      "t": "by the desire to experience joy",
+      "s": "by 后面是「谁来支配」。to experience joy 是 to do 短语，跟在 desire 后面，说明是什么欲望，就是「……的欲望」。你可能翻成「想要去体验快乐的欲望」，重复了，直接说「体验快乐的欲望」。\n→ 体验快乐的欲望"
+     }
+    ],
+    "order": "被动句可以换成主动说：谁支配生活？体验快乐的欲望。",
+    "sum": "体验快乐的欲望支配着人类的生活。",
+    "cmp": "意思一样。书上是「人类的生活被体验快乐的欲望所支配」，保留了「被」，我换成主动，更口语。"
+   }
+  },
+  "The pension funds are administered by commercial banks.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The pension funds are administered by commercial banks",
+      "s": "你多半会翻成「养老基金被商业银行管理」。are administered 是被动，就是「基金被别人管理」，by 后面是「谁来管」：commercial banks，商业银行。中文少用「被」，说「由……管理」。pension fund 是「养老基金」。\n→ 养老基金由商业银行管理"
+     }
+    ],
+    "sum": "养老基金由商业银行管理。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "It was shot to death by a police officer.": {
    "ph": [
@@ -535,7 +896,22 @@
      "b": "shoot sb. to death",
      "m": "开枪打死"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It was shot to death",
+      "s": "你多半会翻成「它被射击到死亡」。念一遍，别扭吧？was shot 是被动，就是「被人开枪打了」，shot 是 shoot 的过去分词。shoot sb. to death 是搭配，意思是「开枪打死」。\n→ 它被开枪打死"
+     },
+     {
+      "t": "by a police officer",
+      "s": "by 后面是「谁干的」：a police officer，一名警官。\n→ 被一名警官"
+     }
+    ],
+    "order": "被动句里 by 引出的人，可以提到前面当主语：谁开的枪？一名警官。",
+    "sum": "一名警官开枪把它打死了。",
+    "cmp": "意思一样。书上是「它被一名警官开枪击毙」，保留了「被」，我换成主动。"
+   }
   },
   "The Ministry of Transport maintains that speed limits reduce accidents.": {
    "ph": [
@@ -544,7 +920,21 @@
      "b": "maintain that",
      "m": "坚持认为"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The Ministry of Transport maintains",
+      "s": "你多半会翻成「交通运输部维持」。maintain 最常见的意思是「维持」，但后面跟的是 that 引出的一整句话，这时候是「坚持认为」。Ministry of Transport 是「交通运输部」。\n→ 交通运输部认为"
+     },
+     {
+      "t": "that speed limits reduce accidents",
+      "s": "这块照字面翻就行：that 带的是宾语从句，就是「认为」的内容，后面是完整的一句话：限速减少事故。\n→ 限速可以减少交通事故"
+     }
+    ],
+    "sum": "交通运输部认为，限速可以减少交通事故。",
+    "cmp": "和书上一样。"
+   }
   },
   "It often leads to innovations in other related fields.": {
    "ph": [
@@ -567,7 +957,21 @@
      "b": "rely on",
      "m": "依赖"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It misleads people",
+      "s": "你多半会翻成「它误导人们」，对，但话没说完。眼睛往后找 to：mislead sb. to do 是「误导某人去做某事」，所以后面还得说「误导去做什么」。\n→ 它误导人们"
+     },
+     {
+      "t": "to rely on sunscreen for protection",
+      "s": "找到了 to rely，这是 to do 短语，就是被误导去做的事。rely on 是「依赖」。你可能翻成「依赖防晒霜为了保护」，念着别扭，for protection 说白了就是「来防护」。\n→ 依赖防晒霜来防护"
+     }
+    ],
+    "sum": "它误导人们，让人们依赖防晒霜来防护。",
+    "cmp": "和书上基本一样，我加了「让人们」，句子更顺。"
+   }
   },
   "Don't misunderstand me—I am grateful for all you've done.": {
    "ph": [
@@ -576,7 +980,21 @@
      "b": "be grateful for",
      "m": "为……而感激"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Don't misunderstand me",
+      "s": "这块照字面翻就行：Don't 加动词原形是「别……」，mis- 是「错误地」，misunderstand 就是「理解错」。后面是破折号，破折号后面是另一句话。\n→ 别误解我的意思"
+     },
+     {
+      "t": "I am grateful for all you've done",
+      "s": "grateful for 是「为……而感激」，for 后面就是感激的内容。all you've done 你可能翻成「所有你已经做了」，念着别扭。all 后面藏了 that：all (that) you've done，这是定语从句，就是给 all 补一段说明：你所做的一切。\n→ 我对你所做的一切都很感激"
+     }
+    ],
+    "sum": "别误会，你做的一切我都很感激。",
+    "cmp": "和书上意思一样，书上多了「的意思」。"
+   }
   },
   "Despite these poor figures, it's not all doom and gloom.": {
    "ph": [
@@ -632,7 +1050,25 @@
      "b": "a lot of",
      "m": "大量"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "We had to rely on",
+      "s": "你多半会翻成「我们必须依靠」。had to 是 have to 的过去式，除了「必须」，还带着「没别的办法，只得」的意思。rely on 是「依靠」。\n→ 我们只得依靠"
+     },
+     {
+      "t": "a compass and a lot of luck",
+      "s": "你可能翻成「一个指南针和很多的运气」。a lot of 在这里是「很大的、不少的」，a lot of luck 说成「不少运气」更自然。compass 是「指南针」。\n→ 指南针和不少运气"
+     },
+     {
+      "t": "to get there",
+      "s": "to get 是 to do 短语，放在句末说明目的，就是「为了、才能」。你可能把 get 翻成「得到」，放回去：得到那里？不对。get there 是「到达那里」。\n→ 才能到那儿"
+     }
+    ],
+    "sum": "要到那儿，我们只得靠指南针和不少运气。",
+    "cmp": "和书上基本一样，书上是「我们只得依靠指南针和很大的运气才能到那儿」。"
+   }
   }
  }
 }

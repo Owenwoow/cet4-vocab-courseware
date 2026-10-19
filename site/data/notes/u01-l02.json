@@ -55,7 +55,26 @@
      "b": "sail around",
      "m": "环绕航行"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "People laughed",
+      "s": "这块照字面翻就行：laughed 是「笑了」。\n→ 人们笑了"
+     },
+     {
+      "t": "when he said that",
+      "s": "你多半会翻成「当他说那个」。念一遍，that 怎么成了「那个」？when 带的是时间状语从句，就是「……的时候」。said that 后面的 that 是引出内容的标志，后面整段是 said 的宾语从句，就是「他说了什么」，that 本身不用翻。\n→ 在他说的时候"
+     },
+     {
+      "t": "he wanted to sail around the world",
+      "s": "你多半会翻成「他想要航行在世界周围」，太绕了。wanted to sail 是 to do 结构，就是「想去做某事」。sail around the world 是绕着地球航行一圈，中文叫「环球航行」。\n→ 他想环球航行"
+     }
+    ],
+    "order": "英文先说「人们笑了」，再说「什么时候」；中文习惯先说时间，把「他说想环球航行时」提到前面。",
+    "sum": "他说想环球航行的时候，人们都笑了。",
+    "cmp": "几乎一样，书上把「他」说了两遍（「当他说他想……」），我省掉一个，更顺。"
+   }
   },
   "They settled on a small island north of England.": {
    "ph": [
@@ -82,7 +101,21 @@
      "b": "remember doing",
      "m": "记得做过某事"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "I remember sitting",
+      "s": "你多半会翻成「我记得要坐」。放回去试试：记得要去坐？后面说的是和阿姨坐在某处，是已经发生的事。remember 后面接 -ing（sitting）是「记得做过某事」，接 to do 才是「记得要去做」。\n→ 我记得曾经坐在"
+     },
+     {
+      "t": "on a bench with my aunt at a yoga studio",
+      "s": "这块照字面翻就行，只要把顺序理一下：bench 是「长凳」，with my aunt 是「和阿姨一起」，at a yoga studio 是「在瑜伽工作室」。中文把「和谁」放前面，地点从大说到小。\n→ 和阿姨一起，在瑜伽工作室的长凳上"
+     }
+    ],
+    "sum": "我记得曾经和阿姨一起坐在瑜伽工作室的长凳上。",
+    "cmp": "意思一样，书上多说了一个「我」（「我记得我和阿姨……」），我省掉了。"
+   }
   },
   "Several boats lay at anchor in the harbour.": {
    "ph": [
@@ -123,7 +156,21 @@
      "b": "be used for",
      "m": "被用作"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It is a place in Upper New York Bay",
+      "s": "这块照字面翻就行：a place in …… 是「……的一个地方」，Upper New York Bay 是地名「上纽约湾」。\n→ 这是上纽约湾的一个地方"
+     },
+     {
+      "t": "formerly used for exiles",
+      "s": "你多半会翻成「以前被用于流放」。念一遍，不通：exiles 带 s，是名词「被流放的人」，不是动词。used for exiles 是 -ed 短语（过去分词短语），放在 place 后面补一段说明，相当于 which was used for exiles，就是「这个地方以前被用来干什么」。formerly 是「以前」。\n→ 以前是供流放者使用的"
+     }
+    ],
+    "sum": "这是上纽约湾里的一个地方，以前是供流放者使用的。",
+    "cmp": "意思相近。书上的「所在地」是意译，我的说法更贴近 used for 本身。"
+   }
   },
   "They have to look for food and shelter underground.": {
    "ph": [
@@ -189,7 +236,21 @@
      "b": "help (to) do",
      "m": "有助于做某事"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It will help strengthen",
+      "s": "你多半会翻成「它会帮助加强」。念一遍，「帮助」一般要有个被帮的人，这里并没有。help 后面直接接动词，是 help (to) do 把 to 省掉的写法，就是「有助于做某事」。\n→ 它将有助于加强"
+     },
+     {
+      "t": "their emotional bonds",
+      "s": "这块照字面翻就行。bond 你可能只认识「债券」，这里是「纽带、联系」，emotional bonds 就是「情感上的联系」。\n→ 他们的情感联系"
+     }
+    ],
+    "sum": "这将有助于加深他们的感情联系。",
+    "cmp": "几乎一样，我用「加深」，书上用「加强」，两个都对。"
+   }
   },
   "The ties that bind us together are so feeble.": {
    "ph": [
@@ -255,6 +316,24 @@
     "cmp": "和书上几乎一样，书上把 because of 后面的名词短语说成了带「存在」的完整短句，读起来更顺。"
    }
   },
+  "He is a deaf person working in IT.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "He is a deaf person",
+      "s": "这块照字面翻就行：deaf 是「失聪的」，a deaf person 就是「一个失聪的人」。\n→ 他是一个失聪的人"
+     },
+     {
+      "t": "working in IT",
+      "s": "你多半会翻成「他是一个失聪的人，在信息技术里工作」，当成了另一句话。可是 working 前面没有 is，它不是「正在工作」，而是 -ing 短语（现在分词短语），跟在 person 后面补充说明，相当于 who works in IT，就是「这个人是干什么的」。IT 是信息技术行业。\n→ 在信息技术行业工作的"
+     }
+    ],
+    "order": "英文把说明放在 person 后面，中文要放到「人」前面：在信息技术行业工作的失聪人士。",
+    "sum": "他是一名在信息技术行业工作的失聪人士。",
+    "cmp": "意思和书上一样，我把「失聪者」说成了「失聪人士」。"
+   }
+  },
   "The doctor told me to avoid bending and stretching.": {
    "ph": [
     {
@@ -267,7 +346,74 @@
      "b": "avoid doing",
      "m": "避免做某事"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The doctor told me to",
+      "s": "你多半会翻成「医生告诉我去」。念一遍，像在指路。tell sb. to do 是固定搭配，就是「叫某人做某事」，to 后面接的是医生要我做的事。\n→ 医生叮嘱我要"
+     },
+     {
+      "t": "avoid bending and stretching",
+      "s": "你多半会翻成「避免弯曲和拉伸」。意思能懂，可是说的是人，人怎么「弯曲」？说「弯腰」更自然。avoid 后面接 -ing，不能接 to do；bending and stretching 是两个 -ing 动作并在一起，当 avoid 的宾语，就是「做弯腰、伸展这类动作」。\n→ 避免弯腰和伸展"
+     }
+    ],
+    "sum": "医生叮嘱我要避免弯腰和伸展。",
+    "cmp": "书上的「弯曲和拉伸」是直译，能看懂；说人的动作用「弯腰」更自然。"
+   }
+  },
+  "Twist the wire to form a circle.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Twist the wire",
+      "s": "你多半会翻成「扭曲这根铁丝」。念一遍，好像要把铁丝弄坏。Twist 开头没有主语，是祈使句，就是在叫你动手做。这里 twist 是「拧、扭」的动作。\n→ 拧这根铁丝"
+     },
+     {
+      "t": "to form a circle",
+      "s": "to form 是 to do 短语，这里说的是目的：做这个动作是为了什么？为了 form a circle。你多半会翻成「去形成一个圆圈」，不顺，换成「……成一个圈」就通了。\n→ 使它成为一个圈"
+     }
+    ],
+    "order": "英文先说动作、再说目的；中文用「把……拧成……」，把两块并成一句。",
+    "sum": "把铁丝拧成一个圈。",
+    "cmp": "意思一样。书上说「弯成一个环」，我保留了 twist 的「拧」，「圈」和「环」都行。"
+   }
+  },
+  "If you mix blue and yellow, you get green.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "If you mix blue and yellow",
+      "s": "这块照字面翻就行：If 带的是条件状语从句，就是「如果……」。mix A and B 是「把 A 和 B 混在一起」。\n→ 如果把蓝色和黄色混在一起"
+     },
+     {
+      "t": "you get green",
+      "s": "你多半会翻成「你得到绿色」。前面刚有个「你」，这里又一个，念一遍很啰嗦。这种句子说的是普遍规律，you 泛指任何人，中文可以省掉。get 在这里是「得到」。\n→ 就会得到绿色"
+     }
+    ],
+    "sum": "把蓝色和黄色混在一起，就会得到绿色。",
+    "cmp": "意思一样。书上保留了两个「你」，更字面；我省掉了，更像平常说话。"
+   }
+  },
+  "It's a book that really stirs the imagination.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It's a book",
+      "s": "这块照字面翻就行：It's 是 It is 的缩写，a book 是「一本书」。\n→ 这是一本书"
+     },
+     {
+      "t": "that really stirs the imagination",
+      "s": "你多半会翻成「那真的搅动想象力」。that 不是「那个」：它后面直接跟着动词 stirs，说明 that 在从句里当主语，这是定语从句，就是给前面的名词补一段说明。that 指谁？放回去试：这本书激发想象力，说得通。stir 本义是「搅拌」，stir the imagination 就是「激发想象力」。\n→ 能真正激发想象力的"
+     }
+    ],
+    "order": "英文把说明放在 book 后面，中文要放到「书」前面。",
+    "sum": "这是一本真正能激发想象力的书。",
+    "cmp": "几乎一样，只是「真正」和「能」的先后不同，意思没变。"
+   }
   },
   "To enjoy the magnificence of a mountain, you have to look upwards in most cases.": {
    "ph": [
@@ -314,7 +460,38 @@
      "b": "the fountain of youth",
      "m": "青春之泉"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The new cream is marketed as",
+      "s": "你多半会翻成「这种新面霜被市场为」。market 你只认识名词「市场」，所以卡住了。is marketed 是被动，就是「面霜被别人怎么样了」，market 在这里是动词「推销、营销」，marketed as 就是「被宣传成……」。\n→ 这种新面霜被宣传成"
+     },
+     {
+      "t": "the fountain of youth",
+      "s": "这块照字面翻就行：fountain 本义是「喷泉」，这里是「源泉」，the fountain of youth 就是「青春之泉」，让人保持年轻的东西。\n→ 青春之泉"
+     }
+    ],
+    "sum": "这种新面霜被宣传成「青春之泉」。",
+    "cmp": "意思一样。书上用「营销」，我用「宣传」，更口语。"
+   }
+  },
+  "Many people believe that passion and commitment are the foundations of strong romantic relationships.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Many people believe that",
+      "s": "你多半会翻成「许多人相信那」。念一遍，「那」放在这里不通。believe 后面的 that 引出的是宾语从句，就是「他们相信的内容」，that 本身不用翻。\n→ 许多人认为"
+     },
+     {
+      "t": "passion and commitment are the foundations of strong romantic relationships",
+      "s": "你可能把 romantic 翻成「浪漫的」、strong 翻成「强壮的」，变成「强壮浪漫的关系」，不通。romantic relationships 是「恋爱关系」，strong 在这里是「牢固的」。foundation 本义是「地基」，foundations of 就是「……的基础」。\n→ 激情和承诺是牢固的恋爱关系的基础"
+     }
+    ],
+    "sum": "许多人认为，激情与承诺是牢固恋爱关系的基础。",
+    "cmp": "几乎一样，我把「和」换成「与」，少了一个「的」。"
+   }
   },
   "Then students select an adviser, based on shared academic interests.": {
    "ph": [
@@ -323,7 +500,22 @@
      "b": "be based on",
      "m": "根据、基于"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Then students select an adviser",
+      "s": "这块照字面翻就行：Then 是「然后」，select 是「选择」，adviser 是「导师」。\n→ 然后学生选择导师"
+     },
+     {
+      "t": "based on shared academic interests",
+      "s": "你多半会翻成「被基于共同的学术兴趣」。念一遍，别扭。based on 是 -ed 短语（过去分词短语），原来是 be based on「被建立在……之上」，中文直接说「根据」。shared 是形容词「共同的」，不是「被分享的」，academic 是「学术的」。\n→ 根据共同的学术兴趣"
+     }
+    ],
+    "order": "英文把 based on 放在句尾，中文习惯把「根据……」放在动词前面。",
+    "sum": "然后，学生会根据共同的学术兴趣来选导师。",
+    "cmp": "意思一样，我加了「会」「来」，更口语。"
+   }
   },
   "The diving suit and a set of basic tools needed for skin-diving can be bought for 20 dollars.": {
    "ph": [
@@ -332,7 +524,26 @@
      "b": "a set of",
      "m": "一套"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The diving suit and a set of basic tools",
+      "s": "这块照字面翻就行：diving suit 是「潜水衣」，a set of 是「一套」，basic 是「基本的」。主语是两样东西：潜水衣和一套工具。\n→ 潜水衣和一套基本工具"
+     },
+     {
+      "t": "needed for skin-diving",
+      "s": "你多半会翻成「被需要的为了自由潜水」。念一遍，不通。needed 是 -ed 短语（过去分词短语），放在名词后面补充说明，相当于 that are needed，就是「被需要的」，中文说「……所需的」。skin-diving 就是「自由潜水」。\n→ 自由潜水所需的"
+     },
+     {
+      "t": "can be bought for 20 dollars",
+      "s": "你多半会翻成「可以被买为20美元」。can be bought 是被动加情态：be bought 是「被买」，加上 can 就是「可以被买到」，中文少用「被」，说「能买到」。for 20 dollars 这里是「花20美元」。\n→ 花20美元就能买到"
+     }
+    ],
+    "order": "英文主语很长、动作在最后；中文先说「花20美元就能买到」，再说买到什么。",
+    "sum": "花20美元就能买到自由潜水所需的潜水衣和一套基本工具。",
+    "cmp": "意思一样。书上把价钱放在句尾（「只需20美元」），我把它提前，更像平时说话。"
+   }
   },
   "All members of the committee work on a voluntary basis.": {
    "ph": [
@@ -383,7 +594,21 @@
      "b": "a large amount of",
      "m": "大量的"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "During the course of trying various things",
+      "s": "你多半会翻成「在尝试各种事情的课程期间」。course 你只认识「课程」，这里 the course of 是「过程」，during the course of 合起来是「在……的过程中」。of 后面的 trying various things 是 -ing 短语，就是「尝试各种事情」这件事。\n→ 在尝试各种事情的过程中"
+     },
+     {
+      "t": "you will gain a large amount of social experience",
+      "s": "这块照字面翻就行：you 泛指，gain 是「获得」，a large amount of 是「大量的」，后面接 experience 这种不可数名词，social experience 是「社会经验」。\n→ 你会获得大量的社会经验"
+     }
+    ],
+    "sum": "在尝试各种事情的过程中，你会积累大量的社会经验。",
+    "cmp": "几乎一样，我用「积累」，书上用「获得」。"
+   }
   },
   "The children cheered up when they saw the balloons ascending slowly into the sky.": {
    "ph": [
@@ -402,7 +627,22 @@
      "b": "see … doing",
      "m": "看到……正在做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The children cheered up",
+      "s": "你多半会翻成「孩子们欢呼了上去」。cheer 你认识「欢呼」，后面又跟着 up，不知道往哪放。cheer up 是一个整体，意思是「高兴起来、振作起来」，up 表示状态变好，不是往上。\n→ 孩子们高兴起来"
+     },
+     {
+      "t": "when they saw the balloons ascending slowly into the sky",
+      "s": "你多半会翻成「当他们看见气球、上升、缓缓进入天空」，断成了几截。其实 ascending slowly into the sky 是 -ing 短语，紧跟在 the balloons 后面，说的是气球正在怎么样：see sth. doing 就是「看到某物正在做某事」。when 带的是时间状语从句，就是「……的时候」。\n→ 他们看到气球慢慢升上天空的时候"
+     }
+    ],
+    "order": "英文先说「孩子们高兴起来」，再说「什么时候」；中文把时间提前。",
+    "sum": "孩子们看到气球慢慢升上天空时，都高兴起来。",
+    "cmp": "书上译成「欢呼起来」，把动作说得更具体；我写「高兴起来」，更接近 cheer up 常见的意思，两个都说得通。"
+   }
   },
   "We managed to reach the top of the mountain, and half an hour later we began to descend.": {
    "ph": [
@@ -416,7 +656,21 @@
      "b": "the top of",
      "m": "……的顶部"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "We managed to reach the top of the mountain",
+      "s": "你多半会翻成「我们管理到达山顶」。managed 你只认识「管理」，念一遍不通。manage to do 是固定搭配，就是「设法做成某事」，to reach 是 to do 短语，说的是做成了什么：到达 the top of the mountain，山顶。\n→ 我们设法登上了山顶"
+     },
+     {
+      "t": "and half an hour later we began to descend",
+      "s": "你多半会翻成「我们开始下降」。念一遍，人又不是飞机。前半句说的是到了山顶，所以这里的 descend 就是「下山」。began to descend 是 begin to do，就是「开始做某事」，half an hour later 是「半小时后」。\n→ 半小时后我们开始下山"
+     }
+    ],
+    "sum": "我们设法登上了山顶，半小时后就开始下山了。",
+    "cmp": "几乎一样，书上说「成功到达」，我说「设法登上」，意思都对。"
+   }
   },
   "Research has revealed an enormous decline in reading.": {
    "ph": [
@@ -444,7 +698,26 @@
      "b": "at this stage",
      "m": "在这个阶段"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "I incline to the view",
+      "s": "你多半会翻成「我倾斜到这个观点」。incline 本义是「倾斜」，想法往一边靠，就是「倾向于」。这里的 to 后面接的是名词 the view，所以 to 是介词，不是 to do。\n→ 我倾向于这样一个观点"
+     },
+     {
+      "t": "that we should",
+      "s": "你多半会翻成「我倾向于那个我们应该的观点」，读不通。view 后面的 that 带的是同位语从句，就是说明「这个观点到底是什么」。放回去试：we should take no action 是完整的一句话，不缺主语也不缺宾语，所以不是给 view 补说明的定语从句，that 本身不用翻。\n→ 即我们应该"
+     },
+     {
+      "t": "take no action at this stage",
+      "s": "这块照字面翻就行：take action 是「采取行动」，加上 no 就是「不采取任何行动」。at this stage 是「在这个阶段」。\n→ 在现阶段不采取任何行动"
+     }
+    ],
+    "order": "at this stage 放到前面更顺：现阶段我们不应采取任何行动。",
+    "sum": "我倾向于认为，现阶段我们不应采取任何行动。",
+    "cmp": "几乎一样，我把「在这个阶段」说成「现阶段」，并补上「任何」来对应 no。"
+   }
   }
  }
 }

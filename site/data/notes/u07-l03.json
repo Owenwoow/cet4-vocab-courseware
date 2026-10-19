@@ -8,7 +8,73 @@
      "b": "allow for",
      "m": "允许"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The survey allowed for reading materials",
+      "s": "你多半会翻成「调查允许了阅读材料」。念一遍，是不是有点怪？allow for 是一个搭配，书上这里译成「允许」。for 后面的 reading 是 -ing 形式，就是「阅读」这件事，所以要读成「允许阅读材料」，而不是「允许一种材料」。\n→ 调查允许阅读材料"
+     },
+     {
+      "t": "on a digital device",
+      "s": "on 在这里是「在……上」，digital device 就是「数字设备」，比如电脑、平板。它说明阅读是在什么东西上进行的。\n→ 在数字设备上"
+     }
+    ],
+    "sum": "这项调查允许人们在数字设备上阅读材料。",
+    "cmp": "和书上意思一样，我多补了「人们」，是为了让「阅读」有个做动作的人，读起来更完整。"
+   }
+  },
+  "This requires purchasing desks, chairs and office equipment.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "This requires purchasing",
+      "s": "你多半会翻成「这需要购买」，这没错，但要知道 purchasing 是怎么来的：它是 -ing 形式，跟在 requires 后面当宾语，就是「买东西这件事」。require 后面接 -ing，意思是「这件事需要做某事」。\n→ 这需要购买"
+     },
+     {
+      "t": "desks, chairs and office equipment",
+      "s": "三样东西并列：desks、chairs、office equipment。desks and chairs 中文常合成「桌椅」，office equipment 是「办公设备」，不是「办公室设备」。\n→ 桌椅和办公设备"
+     }
+    ],
+    "sum": "这需要买桌椅和办公设备。",
+    "cmp": "和书上基本一样，我把「购买」换成了更口语的「买」。"
+   }
+  },
+  "Firefighters needed breathing apparatus to enter the burning house.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Firefighters needed breathing apparatus",
+      "s": "你多半会翻成「消防员需要呼吸装置」，大意没错。apparatus 是「器械、装置」，breathing 在这里说明它是干什么用的，所以 breathing apparatus 就是「呼吸器械」。\n→ 消防队员需要呼吸器械"
+     },
+     {
+      "t": "to enter the burning house",
+      "s": "to enter 是 to do 短语，在这里说明目的，就是「为了做某事」。你可能会翻成「需要呼吸器械去进入」，不顺，换成「以便进入」。burning house 是「正在燃烧的房子」，也就是「着火的房子」。\n→ 以便进入着火的房子"
+     }
+    ],
+    "sum": "消防员需要呼吸器械，才能进入着火的房子。",
+    "cmp": "意思一样。书上译作「燃烧的大楼」，原文 house 是房子，不一定是大楼；「着火的房子」更接近原文。"
+   }
+  },
+  "They lack talent to fix their deepening problems.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "They lack talent",
+      "s": "这里 lack 是动词，意思是「缺乏」。别把它当成名词。They lack talent 就是「他们缺乏才能」。\n→ 他们缺乏才能"
+     },
+     {
+      "t": "to fix their deepening problems",
+      "s": "你多半会翻成「缺乏才能去解决……问题」。念一遍，中文不这么说。to fix 是 to do 短语，跟在名词 talent 后面，是给它补一段说明：什么样的才能？「能解决问题的才能」。fix 在这里是「解决」，deepening 是「越来越深的」，就是「日益严重的」。\n→ 去解决他们日益严重的问题"
+     }
+    ],
+    "order": "英文是「才能」在前、to fix 在后，中文习惯把说明放在前面：「解决……问题的才能」，所以把 to fix 那一块提到 talent 前面。",
+    "sum": "他们缺乏能解决越来越严重的问题的才能。",
+    "cmp": "意思一样，书上把 to do 短语提到前面，我也是这样做的。"
+   }
   },
   "The room was furnished with antiques.": {
    "ph": [
@@ -17,7 +83,21 @@
      "b": "be furnished with",
      "m": "配有，摆放着"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The room was furnished",
+      "s": "你多半会翻成「房间被布置」。was furnished 是被动，就是「房间被别人怎么样了」。furnish 是「给房间配上家具、摆设」。中文不用「被」，换成「房间里摆着什么」就自然了。\n→ 房间里摆着"
+     },
+     {
+      "t": "with antiques",
+      "s": "be furnished with 是一个搭配，with 后面接的就是配上的东西。antiques 是「古董」，不要看成 ancient。\n→ 古董"
+     }
+    ],
+    "sum": "房间里摆着古董。",
+    "cmp": "和书上基本一样，书上用「摆放了」，我用「摆着」，说的是状态，更顺口一点。"
+   }
   },
   "It has walls decorated with jewels.": {
    "ph": [
@@ -26,7 +106,21 @@
      "b": "be decorated with",
      "m": "用……装饰"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It has walls",
+      "s": "这块照字面翻就行：has 是「有」，walls 是「墙」。中文常说「它的墙壁」。\n→ 它的墙壁"
+     },
+     {
+      "t": "decorated with jewels",
+      "s": "你多半会翻成「它有被珠宝装饰的墙」。念一遍，太绕了。decorated with jewels 是过去分词短语（-ed 短语），跟在 walls 后面，补一句「这些墙怎么样」，就是「被珠宝装饰着的」。中文把它改成动词放在后面：墙上装饰着珠宝。\n→ 装饰着珠宝"
+     }
+    ],
+    "sum": "它的墙壁上装饰着珠宝。",
+    "cmp": "和书上基本一样，书上写的是「它的墙上装饰着珠宝」，我多了「壁」字，意思相同。"
+   }
   },
   "Most animals conclude that a situation is hopeless and beyond their control.": {
    "ph": [
@@ -49,6 +143,23 @@
     ],
     "sum": "大多数动物会认定，眼前的局面没有希望，也不是自己能控制的。",
     "cmp": "意思一样。书上是「得出结论，情况是无望的，无法控制的」，断成了几小段，还连用两个「的」，读起来有点碎；合成一句更顺。"
+   }
+  },
+  "Buses run every hour, Sundays excluded.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Buses run every hour",
+      "s": "这是完整的一句话：run 在这里是「（车）运行」，every hour 是「每小时」，别翻成「每小时跑一次」。\n→ 公共汽车每小时一班"
+     },
+     {
+      "t": "Sundays excluded",
+      "s": "逗号后面没有动词，只有 Sundays excluded。你多半会翻成「星期天被排除」。放回去试：前面已经有完整一句，后面补一小段说明，意思是「星期天被排除在外」，也就是「星期天除外」。excluded 是过去分词，表示被动的意思。\n→ 星期天除外"
+     }
+    ],
+    "sum": "公共汽车每小时一班，星期天除外。",
+    "cmp": "和书上完全一样。"
    }
   },
   "We were assured that, except for low grades or a raise in family income, no money would be taken away.": {
@@ -87,7 +198,21 @@
      "b": "be no exception",
      "m": "也不例外"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Universities today are in the business of education",
+      "s": "你多半会翻成「大学现在在教育的生意里」。念一遍，怪。in the business of 是一个搭配，意思是「以……为业」，这里的 business 不是「生意」，而是「行当」。today 放在 universities 后面，意思是「现在的大学」。\n→ 现在的大学都以教育为业"
+     },
+     {
+      "t": "and mine is no exception",
+      "s": "and 后面是另一整句。mine 指谁？放回去试试：my university 是我的大学，说得通；my education 是我的教育，说不通。所以 mine 是「我的大学」。no exception 是「不是例外」，加上「也」就顺了。\n→ 我的大学也不例外"
+     }
+    ],
+    "sum": "现在的大学都以教育为业，我的大学也不例外。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "They want to get back to their herds.": {
    "ph": [
@@ -96,7 +221,21 @@
      "b": "get back to",
      "m": "回到"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They want to get back to",
+      "s": "get back to 你多半会拆开翻成「得到、回去、到」，念一遍，根本不成话。它是一个搭配，整个就是「回到」。前面的 want to 是 want to do，也就是「想要做某事」。\n→ 他们想回到"
+     },
+     {
+      "t": "their herds",
+      "s": "这块照字面翻就行：herd 是一群牲畜，所以是「牧群」，用复数是因为每个人各有各的。\n→ 自己的牧群"
+     }
+    ],
+    "sum": "他们想回到自己的牧群那里。",
+    "cmp": "意思一样，我多加了「那里」，是为了让「回到」读起来更自然。"
+   }
   },
   "Pigeons are often seen as a symbol of peace.": {
    "ph": [
@@ -110,7 +249,21 @@
      "b": "a symbol of",
      "m": "……的象征"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Pigeons are often seen as",
+      "s": "你多半会翻成「鸽子经常被看见」。放回去试：后面还有 as，意思就不对了。are seen 是被动，就是「鸽子被别人怎么样了」。see A as B 是「把 A 看作 B」，所以是「鸽子被看作……」。中文少用「被」，可以说「常被看作」。\n→ 鸽子常被看作"
+     },
+     {
+      "t": "a symbol of peace",
+      "s": "symbol of 是「……的象征」，peace 是「和平」，连起来就是「和平的象征」。\n→ 和平的象征"
+     }
+    ],
+    "sum": "鸽子常被看作和平的象征。",
+    "cmp": "意思一样，书上用「被认为是」，我用「被看作」，都可以。"
+   }
   },
   "A vivid example of such replay can be seen in a video.": {
    "ph": [],
@@ -149,6 +302,24 @@
     ],
     "sum": "记住，失败是难免的，你熬过的每一次失败，都是一次学习的经历。",
     "cmp": "和书上基本一样。书上用「艰难度过」，我用「熬过」，意思相同，书上更书面一点。"
+   }
+  },
+  "Don't spoil your appetite by eating between meals.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Don't spoil your appetite",
+      "s": "没写主语的句子是祈使句，就是在对「你」下命令。spoil 你可能只认识「宠坏」，放回去：宠坏你的胃口？说不通。这里是「破坏」。appetite 是「胃口」。\n→ 不要破坏你的胃口"
+     },
+     {
+      "t": "by eating between meals",
+      "s": "by eating 是 by + -ing，就是「靠做某事」。你多半会翻成「通过在两餐之间吃东西」。念一遍，太硬了。这里说的是做法和后果：靠吃东西把胃口弄坏。between meals 是「两餐之间」。\n→ 靠在两餐之间吃东西"
+     }
+    ],
+    "order": "英文先说「别破坏胃口」，再说「靠什么」；中文习惯先说该做什么，再说后果：先说「别在两餐之间吃东西」，再接「会影响胃口」。",
+    "sum": "两餐之间不要吃东西，不然会影响胃口。",
+    "cmp": "意思和书上一样。书上用「以免影响胃口」，也是先说做法，再说后果，顺序和我是一样的。"
    }
   },
   "To find out, we introduced bacteria to squares of tile, carpet or wood.": {
@@ -223,7 +394,21 @@
      "b": "have … do",
      "m": "使……做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It had one of its cargo planes land",
+      "s": "你多半会翻成「它有一架货机降落」。放回去试：had 后面是一架飞机，再跟一个动词原形 land（不是 landed，也不是 to land），这是 have sth do 的搭配，就是「让某物做某事」。所以是「让一架货机降落」，不是「有」。one of its cargo planes 是「它的货机中的一架」。\n→ 它让它的一架货机降落"
+     },
+     {
+      "t": "at a wrong airport",
+      "s": "at 在这里是「在（某个地点）」，wrong airport 是「错误的机场」。\n→ 在一个错误的机场"
+     }
+    ],
+    "sum": "它让自己的一架货机降落在了错误的机场。",
+    "cmp": "和书上意思一样，书上把 had 译成「使」，我译成「让」，意思相同。"
+   }
   },
   "Chop the carrots up into small pieces.": {
    "ph": [
@@ -326,7 +511,21 @@
      "b": "baby carriage",
      "m": "婴儿车"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "There are mothers pushing baby carriages",
+      "s": "There are 就是「有」。pushing baby carriages 是 -ing 短语，跟在 mothers 后面补充「这些母亲在干什么」，就是「正在推着婴儿车的」。眼睛盯住 mothers，把 -ing 短语放到它前面，翻成「推着婴儿车的母亲」。这里 carriage 不是「马车、车厢」，baby carriage 就是「婴儿车」。\n→ 有推着婴儿车的母亲"
+     },
+     {
+      "t": "and old women with walkers",
+      "s": "你多半会翻成「和有步行者的老妇人」。放回去试，walkers 不是人。walker 在这里是「助行器」，with walkers 是「带着助行器」。\n→ 还有带着助行器的老妇人"
+     }
+    ],
+    "sum": "有推着婴儿车的母亲，也有拄着助行器的老妇人。",
+    "cmp": "书上译成「推着助行器」，原文是 with walkers，并没有 push 这个动词，书上是借了前半句的「推着」；「拄着」或「扶着」更贴近老人使用助行器的样子。"
+   }
   },
   "People are cheering and holding their carts in the air.": {
    "ph": [
@@ -336,6 +535,41 @@
      "m": "在空中"
     }
    ]
+  },
+  "Most drivers have test driven cars with automatic braking features.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Most drivers have test driven cars",
+      "s": "你多半会把 test driven 看成「被试驾的」，翻成「大多数驾驶员有被试驾的车」。放回去试，不对。have + 过去分词是现在完成时，have test driven 是「已经试驾过」，test drive 是动词，driven 是它的过去分词。\n→ 大多数驾驶员试驾过汽车"
+     },
+     {
+      "t": "with automatic braking features",
+      "s": "with 在这里是「带有」，说明前面那些车是什么样的。braking features 是「制动功能」，automatic 是「自动的」。中文把这一段放到「汽车」前面当修饰。\n→ 带有自动制动功能的"
+     }
+    ],
+    "order": "英文是「车」在前、with 短语在后，中文要把修饰成分放在名词前面：带有自动制动功能的汽车。",
+    "sum": "大多数驾驶员都试驾过带有自动制动功能的汽车。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "It's clear that petrol-driven engines have no future.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It's clear that",
+      "s": "你多半会翻成「它是清楚的」。念一遍，别扭。这里 It 是形式主语，真正说的内容在 that 后面。看到 It's clear that，脑子里直接换成「很明显」，后面跟的就是明显的事。\n→ 很明显"
+     },
+     {
+      "t": "petrol-driven engines have no future",
+      "s": "petrol-driven 的 driven 是过去分词，petrol-driven engines 是「由汽油驱动的发动机」，petrol 是英式说法的「汽油」。have no future 是「没有未来」。\n→ 汽油发动机没有未来"
+     }
+    ],
+    "sum": "很明显，汽油发动机没有未来。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "There's no question that self-driving vehicles could be an enormous benefit.": {
    "ph": [
@@ -385,7 +619,17 @@
      "b": "be prohibited",
      "m": "被禁止"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Horn is prohibited in the park",
+      "s": "你多半会翻成「喇叭在公园里被禁止」。is prohibited 是被动，就是「喇叭被别人怎么样了」。中文少用「被」，把动作提出来说：「禁止鸣喇叭」。这里 horn 指的是汽车喇叭，而不是乐器号角。in the park 是「在公园里」。\n→ 公园内禁止鸣喇叭"
+     }
+    ],
+    "sum": "公园内禁止鸣喇叭。",
+    "cmp": "意思一样，书上说「禁止使用喇叭」，我说「禁止鸣喇叭」，更像平时的说法。"
+   }
   },
   "He owns a fleet of aircraft.": {
    "ph": [
@@ -408,7 +652,22 @@
      "b": "try to do",
      "m": "试图"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He was caught",
+      "s": "was caught 是被动，就是「他被别人怎么样了」。你多半会翻成「他被抓住」，没问题。后面跟着动作，是说他被抓住的那一刻正在做什么。\n→ 他被抓住"
+     },
+     {
+      "t": "trying to flee the country",
+      "s": "trying 是 -ing 短语，说明「被抓到时正在做的事」，be caught doing 就是「做某事时被抓住」。try to flee 里的 to flee 是 to do，try to do 是「试图做某事」。flee 是「逃离」，后面直接跟 the country，不需要再加 from。\n→ 试图逃离该国"
+     }
+    ],
+    "order": "英文先说被抓，再说在干什么；中文习惯先说在干什么：「试图逃离时被抓住」，所以把 trying 那一块提到前面。",
+    "sum": "他在试图逃离这个国家时被抓住了。",
+    "cmp": "和书上基本一样，我用「这个国家」，书上用「该国」，更书面一点。"
+   }
   },
   "It may shed light on people's desire to crack a secret.": {
    "ph": [
@@ -417,7 +676,38 @@
      "b": "shed light on",
      "m": "揭示，阐明"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It may shed light on",
+      "s": "shed light on 你多半会翻成「把光洒在……上」。念一遍，奇怪。它是一个搭配，意思是「使……变得清楚」，也就是「揭示、阐明」。may 在这里是「可能」，表示推测，没有虚拟的意思。\n→ 这或许能揭示"
+     },
+     {
+      "t": "people's desire to crack a secret",
+      "s": "to crack 是 to do 短语，跟在名词 desire 后面，补充说明是什么愿望：「想破解秘密的愿望」。crack 的本义是「裂开」，这里引申为「破解」。中文把 to do 短语提到名词前面。\n→ 人们想要破解秘密的欲望"
+     }
+    ],
+    "sum": "这或许能揭示人们想要破解秘密的欲望。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "The channel needs to interview the boy.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The channel needs",
+      "s": "channel 你多半会翻成「频道」。放回去试：频道需要采访？频道不会采访人。后面的动作是采访，做这件事的是「电视台」，所以 channel 在这里是「电视台」。\n→ 电视台需要"
+     },
+     {
+      "t": "to interview the boy",
+      "s": "needs to interview 是 need to do，就是「需要做某事」，to interview 是 to do，这里不是表目的。interview 是「采访」，the boy 是「那个男孩」。\n→ 采访那个男孩"
+     }
+    ],
+    "sum": "电视台需要采访那个男孩。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Steering through change and facing obstacles brings us face to face with our fears.": {
    "ph": [

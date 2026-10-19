@@ -76,7 +76,22 @@
      "b": "make a decision",
      "m": "做决定"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They make sensible decisions",
+      "s": "sensible 你多半会翻成「敏感的」，放回去试试：做敏感的决定？说不通。它和 sense（理智）有关，意思是「明智的、合情理的」，别和 sensitive（敏感的）搞混。\n→ 他们会做出明智的决定"
+     },
+     {
+      "t": "when facing moral dilemmas",
+      "s": "when 后面直接跟 facing，没有主语，这是省略写法：把 they are 省掉了，facing 是 -ing 短语，就是「在面对……的时候」，做的人还是 they。moral 是「道德的」，dilemma 是「两难的处境」，两头都不好选的那种。\n→ 面对道德困境时"
+     }
+    ],
+    "order": "英文把「什么时候」放在后面，中文习惯先说时间，所以把「面对……时」提到前面。",
+    "sum": "遇到道德上的两难处境时，他们能做出明智的决定。",
+    "cmp": "意思和书上一样。书上说「困境」，我说「两难处境」，更贴近 dilemma 原来的意思。"
+   }
   },
   "Particular emphasis will be placed on oral language training.": {
    "ph": [
@@ -138,7 +153,22 @@
      "b": "have the potential to do",
      "m": "有可能做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "A new technology has the potential to change modern society",
+      "s": "你多半会翻成「一项新技术有潜力去改变现代社会」，能懂，但有点硬。has the potential to do 是一个整体，眼睛往后找 to：to change 是 to do 短语，说明这是「什么方面的潜力」，合起来就是「有可能做某事」。\n→ 一项新技术有可能改变现代社会"
+     },
+     {
+      "t": "in radical ways",
+      "s": "你可能想翻成「以激进的方式」，念一遍，像在说政治立场。这里 radical 是「根本的、彻底的」，in radical ways 就是「从根本上」。这块在英文里放最后，中文习惯放到动词前面。\n→ 从根本上"
+     }
+    ],
+    "order": "中文把「从根本上」放到「改变」前面：有可能从根本上改变现代社会。",
+    "sum": "一项新技术有可能从根本上改变现代社会。",
+    "cmp": "意思和书上一样。书上把 in radical ways 译成「彻底」，放在「改变」前面，更短更顺；我写的「从根本上」是同一个意思。"
+   }
   },
   "Do violent video games lead to violence?": {
    "ph": [
@@ -161,7 +191,21 @@
      "b": "accuse sb. of",
      "m": "指责某人做了……"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She accused the press photographers",
+      "s": "你多半会翻成「她指控了新闻摄影师」，然后卡住：指控什么？别急，看到 accuse 眼睛往后找 of：accuse A of B，指责 A 做了 B。A 是 the press photographers，press 在这里是「新闻界」。\n→ 她指责新闻摄影记者"
+     },
+     {
+      "t": "of violating her privacy",
+      "s": "of 后面的 violating 是 -ing 短语，就是「做了某事」，这里是「做了侵犯隐私这件事」。violate 你可能只认识「违反」，对隐私就是「侵犯」。her 指的就是 she，主语自己的隐私。\n→ 侵犯了她的隐私"
+     }
+    ],
+    "sum": "她指责新闻摄影师侵犯了自己的隐私。",
+    "cmp": "意思一样。书上用「侵犯了」把 accuse of 后面「做了某事」的意思带出来，很准。"
+   }
   },
   "I wouldn't have dared to defy my teachers.": {
    "ph": [
@@ -170,7 +214,21 @@
      "b": "dare to do",
      "m": "敢于做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "I wouldn't have dared",
+      "s": "你多半会翻成「我没有敢过」，把它当成普通的过去时。注意 wouldn't have dared 是 would have + 过去分词，说的是对过去的假设。句中没有 if，但意思是「要是换了我，那时候也不会敢」，隐含了一个条件。所以语气是「我可不敢」，不是单纯说「当时没敢」。\n→ 我可不敢"
+     },
+     {
+      "t": "to defy my teachers",
+      "s": "dare to do 是「敢做某事」，to defy 就是 dare 后面跟的那个 to do。defy 你可能不认识，它是「公然违抗、不服从」。\n→ 违抗老师"
+     }
+    ],
+    "sum": "换了我，是绝不敢违抗老师的。",
+    "cmp": "意思一样。书上的「可不敢」把 wouldn't 的语气译出来了；「违背老师的话」比我的「违抗老师」更口语。"
+   }
   },
   "Dogs can be trained to obey orders.": {
    "ph": [
@@ -179,7 +237,38 @@
      "b": "be trained to do",
      "m": "被训练去做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Dogs can be trained",
+      "s": "can be trained 是被动，就是「狗被别人怎么样了」。你多半会翻成「狗可以被训练」，能懂，但中文少用「被」，换成「狗是可以训练的」就自然了。\n→ 狗可以训练"
+     },
+     {
+      "t": "to obey orders",
+      "s": "后面的 to obey 是 to do 短语，说明训练的结果：训练到能做什么。obey 是「服从、听从」，orders 在这里是「命令」，不是「订单」，放回去试试：服从订单？不通。\n→ 听从命令"
+     }
+    ],
+    "sum": "狗是可以训练得服从命令的。",
+    "cmp": "书上保留了「被训练」，也通顺；我写的「训练得……」更像日常说法。"
+   }
+  },
+  "Patients with the disease should be isolated.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Patients with the disease",
+      "s": "你多半会翻成「有这个病的病人们」，太啰嗦。with 在这里是「患有」，Patients with the disease 就是「患这种病的人」。\n→ 患这种病的人"
+     },
+     {
+      "t": "should be isolated",
+      "s": "should be isolated 是被动，就是「他们被别人怎么样了」。isolate 你可能只认识「孤立」，用在病人身上是「隔离」。中文少用「被」，直接说「应当隔离」就顺了。\n→ 应当隔离"
+     }
+    ],
+    "sum": "患这种病的人应当隔离。",
+    "cmp": "意思一样。书上的「患者」和「应予以隔离」更书面，我的说法更口语。"
+   }
   },
   "Emergency workers have made contact with the miners via a radio.": {
    "ph": [
@@ -199,6 +288,23 @@
     }
    ]
   },
+  "The term \"mental illness\" is difficult to define.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The term \"mental illness\"",
+      "s": "term 你多半会想到「学期」，放回去试试：「精神疾病」这个学期？不通。这里 term 是「术语、说法」，后面引号里的就是被讲的那个词。\n→ 「精神疾病」这个词"
+     },
+     {
+      "t": "is difficult to define",
+      "s": "你多半会翻成「很难去定义」，再一想：词怎么去定义别人？其实 to define 是 to do 短语，补充说明 difficult 难在哪；而「被定义」的是 term 自己，所以中文说「很难下定义」，不用管谁做谁。\n→ 很难下定义"
+     }
+    ],
+    "sum": "「精神疾病」这个说法很难界定。",
+    "cmp": "意思和书上一样。书上说「下定义」，我说「界定」，两个都行。"
+   }
+  },
   "No definite conclusions can be drawn from this study.": {
    "ph": [
     {
@@ -206,7 +312,22 @@
      "b": "draw a conclusion",
      "m": "得出结论"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "No definite conclusions can be drawn",
+      "s": "你多半会翻成「没有明确的结论可以被画出来」。draw 不是「画」，draw a conclusion 是固定搭配，「得出结论」。can be drawn 是被动，就是「结论被得出」，中文改成「得不出」就顺了。definite 是「明确的、确定的」。\n→ 得不出任何明确的结论"
+     },
+     {
+      "t": "from this study",
+      "s": "这块照字面翻就行：from 是「从……中」，指结论是从哪里得出的。\n→ 从这项研究中"
+     }
+    ],
+    "order": "英文把「从哪里」放在最后，中文可以把「这项研究」提前当话题：这项研究得不出……",
+    "sum": "这项研究得不出任何明确的结论。",
+    "cmp": "意思一样。书上保留了「从这项研究中」的位置，我把它改成主语，更像中文。"
+   }
   },
   "The dominance of television was not confined to our living rooms.": {
    "ph": [
@@ -215,7 +336,21 @@
      "b": "be confined to",
      "m": "局限于"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The dominance of television",
+      "s": "dominance 来自 dominate（支配、占主导），所以是「主导地位」。你多半会翻成「电视的支配」，能懂，但「主导地位」更自然。\n→ 电视的主导地位"
+     },
+     {
+      "t": "was not confined to our living rooms",
+      "s": "was confined 是被动，就是「被限制」。confine 你可能只认识「监禁」，眼睛往后找 to：be confined to 是「局限于」。放回去：主导地位被限制在客厅？加上 not，就是「不只在客厅里」。\n→ 并不局限于我们的客厅"
+     }
+    ],
+    "sum": "电视的主导地位不止体现在我们的客厅里。",
+    "cmp": "书上「并不局限于」直接对应 not confined to，很准确；我换了说法，意思一样。"
+   }
   },
   "Groups like these will help you refine your analytical skills and enable you to express yourself better.": {
    "ph": [
@@ -234,7 +369,25 @@
      "b": "express oneself",
      "m": "表达自己"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Groups like these",
+      "s": "你可能把 like 当成「喜欢」，翻成「喜欢这些的小组」，不通。这里 like 是介词，「像……这样的」。\n→ 像这样的小组"
+     },
+     {
+      "t": "will help you refine your analytical skills",
+      "s": "help you refine 是 help sb. do，就是「帮某人做某事」，refine 前面省略了 to。refine 本义是「提炼」，对能力来说就是「改进、提升」；analytical 是「分析的」。\n→ 将帮你提升分析能力"
+     },
+     {
+      "t": "and enable you to express yourself better",
+      "s": "and 后面又是一个谓语，主语还是 Groups，和 help 并列。enable you to do 是「使你能够做某事」，眼睛往后找 to。express yourself 是「表达自己」，better 放在最后，是「更好地」。\n→ 并让你更好地表达自己"
+     }
+    ],
+    "sum": "这类小组能帮你提升分析能力，还能让你更好地表达自己。",
+    "cmp": "几乎一样。书上说「改善」，我说「提升」，意思差不多。"
+   }
   },
   "If you do not, you could be fined up to £50.": {
    "ph": [
@@ -264,6 +417,27 @@
     "cmp": "和书上一样。"
    }
   },
+  "The author emphasises being anumeric does not affect one's cognitive ability.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The author emphasises",
+      "s": "你多半想在 emphasises 后面找宾语，结果撞上 being anumeric ...，觉得句子乱了。其实这里省略了 that：emphasises (that) ...，后面一整句是「强调的内容」，就是宾语从句。\n→ 作者强调"
+     },
+     {
+      "t": "being anumeric",
+      "s": "-ing 开头当从句的主语，就是「做某事 / 处于某种状态」这件事。anumeric 前面的 an- 是否定，numeric 是「数字的」，合起来是「不识数、没有数字概念」。\n→ 不识数"
+     },
+     {
+      "t": "does not affect one's cognitive ability",
+      "s": "does not affect 是「不影响」。one's 泛指「一个人的」，不是某个具体的人。cognitive 是「认知的」。\n→ 并不影响一个人的认知能力"
+     }
+    ],
+    "sum": "作者强调，不识数不会影响一个人的认知能力。",
+    "cmp": "意思和书上一样，我在「强调」后加了逗号，让从句从哪里开始更清楚。"
+   }
+  },
   "The researcher studied the videotapes to analyse the matches in detail.": {
    "ph": [
     {
@@ -271,7 +445,21 @@
      "b": "in detail",
      "m": "详细地"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The researcher studied the videotapes",
+      "s": "这块照字面翻就行：videotapes 是「录像带」，studied 是「研究、仔细看」。\n→ 研究人员仔细研究了录像"
+     },
+     {
+      "t": "to analyse the matches in detail",
+      "s": "你多半会翻成「去分析比赛」，放回去试试，意思差不多，但漏了「为了」。to analyse 是 to do 短语，放在动作后面，表目的：为了分析。matches 在这里是「比赛」，不是「火柴」；in detail 是「详细地」。\n→ 以便详细分析比赛"
+     }
+    ],
+    "sum": "研究人员仔细研究了这些录像，以便详细分析比赛。",
+    "cmp": "几乎一样，书上的「以便」把 to 表示的目的意思译出来了。"
+   }
   },
   "With this comprehensive knowledge of the history of art, he has since become a professional painter.": {
    "ph": [
@@ -303,7 +491,43 @@
      "b": "other than",
      "m": "除……以外"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It is necessary to use terms",
+      "s": "你多半会翻成「它是必要的」，然后后面接不上。句首 It 在这里是形式主语，真正的主语是后面的 to use terms，所以是「使用术语是必要的」，中文换成「有必要使用术语」。\n→ 有必要使用术语"
+     },
+     {
+      "t": "other than gamification",
+      "s": "other than 你可能拆开翻成「其他比」，不通。它是一个整体，「除……以外」。terms other than gamification 就是「游戏化以外的术语」，other than gamification 是修饰 terms 的。\n→ 游戏化以外的"
+     },
+     {
+      "t": "for some professions",
+      "s": "for 在这里是「对于」。profession 是「职业」，some professions 就是「某些职业」。\n→ 对于某些职业"
+     }
+    ],
+    "order": "英文最后才说「对于某些职业」，中文把它提到句首当话题。「游戏化以外的」放在「术语」前面。",
+    "sum": "对一些职业来说，有必要用「游戏化」以外的术语。",
+    "cmp": "和书上基本一样，我给 gamification 加了「」，表示这是一个专门的词。"
+   }
+  },
+  "I confessed that I was wrong.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "I confessed",
+      "s": "confess 你多半只认识「坦白罪行」，翻成「我坦白」。这里是「承认」，承认自己的错误。后面的 that 就是承认的内容。\n→ 我承认"
+     },
+     {
+      "t": "that I was wrong",
+      "s": "that 带的是宾语从句，就是「承认了什么」。was 用过去时，是因为前面 confessed 是过去时，跟着一起用过去，不是说「我曾经错」。\n→ 我错了"
+     }
+    ],
+    "sum": "我承认自己错了。",
+    "cmp": "意思和书上一样。"
+   }
   },
   "It's commonly known that certain diseases are linked with occupations.": {
    "ph": [
@@ -312,7 +536,21 @@
      "b": "be linked with",
      "m": "与……有关"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It's commonly known that",
+      "s": "你多半会翻成「它被普遍知道」，念一遍就不对。It 是形式主语，真正的主语是后面 that 带的整个从句。commonly known 是被动，「被大家知道」，中文固定说「众所周知」。\n→ 众所周知"
+     },
+     {
+      "t": "certain diseases are linked with occupations",
+      "s": "certain 你可能翻成「确定的」，放回去：确定的疾病？不通。这里是「某些」。are linked with 是被动，「被联系在一起」，be linked with 是「与……有关」。occupations 是「职业」。\n→ 某些疾病与职业有关"
+     }
+    ],
+    "sum": "大家都知道，有些疾病和职业有关。",
+    "cmp": "意思一样。书上的「众所周知」是这类句式的固定译法，更书面。"
+   }
   },
   "It's creating some tension between newcomers and veterans.": {
    "ph": [
@@ -335,7 +573,21 @@
      "b": "an attempt to do",
      "m": "试图做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It is an attempt to clarify",
+      "s": "an attempt 后面跟 to clarify，眼睛往后找 to：an attempt to do 是「试图做某事」，to clarify 是 to do 短语，说明尝试的是什么。clarify 是「澄清」。\n→ 这是想要澄清"
+     },
+     {
+      "t": "misunderstanding about the origin of language",
+      "s": "你多半会翻成「关于语言的起源的误解」，念一遍，「的」太多。把 about 译成「对」，misunderstanding 是「误解」，origin 是「起源」：「对语言起源的误解」就顺了。\n→ 对语言起源的误解"
+     }
+    ],
+    "sum": "这是一次尝试，想要澄清对语言起源的误解。",
+    "cmp": "书上把 an attempt to 压缩成「试图」，更紧凑；我拆开说，更贴近英文。"
+   }
   },
   "The authorities refused to confirm any details.": {
    "ph": [
@@ -344,7 +596,21 @@
      "b": "refuse to do",
      "m": "拒绝做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The authorities",
+      "s": "你多半会翻成「权威」。注意 authority 单数是「权威、权力」，加 the 和 s 变成 the authorities，指「当局、官方部门」。\n→ 当局"
+     },
+     {
+      "t": "refused to confirm any details",
+      "s": "refuse to do 是「拒绝做某事」，眼睛往后找 to：to confirm 是 to do 短语。confirm 是「证实」，any details 是「任何细节」。\n→ 拒绝证实任何细节"
+     }
+    ],
+    "sum": "官方拒绝证实任何细节。",
+    "cmp": "和书上一样，只有「当局」和「官方」一个词的差别。"
+   }
   },
   "He doesn't feel at ease in the firm.": {
    "ph": [
@@ -371,7 +637,17 @@
      "b": "claim to do",
      "m": "声称做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She claimed to hate all art",
+      "s": "claim 你可能想到「要求」，翻成「她要求去讨厌」，不通。claim to do 是「声称自己做某事」，to hate 是 to do 短语，说的是她自己的态度。声称的意思是「她这么说，但未必是真的」。art 这里是不可数名词，泛指「艺术」。\n→ 她声称讨厌所有艺术"
+     }
+    ],
+    "sum": "她说自己讨厌一切艺术。",
+    "cmp": "书上的「声称」带着「她这么说，未必是真的」的意味，比我的「说」更准。"
+   }
   },
   "The president proclaimed a state of emergency.": {
    "ph": [
@@ -398,7 +674,21 @@
      "b": "proceed to do",
      "m": "接着做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The player proceeded to rub his gloves",
+      "s": "proceed 你多半只想到「进行」，翻成「进行去揉搓」，不通。proceed to do 是「接着做某事」，眼睛往后找 to：to rub 是 to do 短语。rub 是「揉搓」。\n→ 这名球员接着揉搓手套"
+     },
+     {
+      "t": "and then exclaimed",
+      "s": "and then exclaimed 是并列谓语，主语还是 The player，和 proceeded 并列，不是新的一个人。exclaim 是「呼喊、惊叫」。\n→ 然后叫喊起来"
+     }
+    ],
+    "sum": "这名球员接着揉搓手套，然后大叫起来。",
+    "cmp": "书上把 proceeded to 译成「继续」，也能接受；「接着」更强调往下做下一件事。"
+   }
   },
   "Pay attention to the whispers so you won't have to hear the screams.": {
    "ph": [
@@ -435,7 +725,60 @@
      "b": "keep doing",
      "m": "不停地做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He kept shouting",
+      "s": "kept shouting 是 keep doing，「不停地做某事」。你多半会翻成「他保持喊」，不通，换成「不停地喊」。\n→ 他不停地喊"
+     },
+     {
+      "t": "blowing his whistle",
+      "s": "逗号后面又来一个 blowing，你可能以为是新的一句。其实它是 -ing 短语，说明他一边喊一边还在做的另一件事，做的人还是 He。whistle 是「哨子」，别和 whisper（低语）搞混。\n→ 吹着哨子"
+     },
+     {
+      "t": "to stop the excited players",
+      "s": "to stop 是 to do 短语，放在动作后面表目的，「为了让……停下来」。excited 是「兴奋的」，描述球员自己的状态，不是「令人兴奋的」。\n→ 想让兴奋的球员们停下来"
+     }
+    ],
+    "sum": "他一边不停地喊，一边吹着哨子，想让兴奋的球员们停下来。",
+    "cmp": "书上的「不停地喊着，吹着哨子」把两个动作排开，也通顺；我用「一边……一边」更能看出是同时做的。"
+   }
+  },
+  "\"Play is not silly behaviour,\" the academy's report declares.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Play is not silly behaviour",
+      "s": "Play 放在句首，你多半把它当动词，翻成「玩不是愚蠢的行为」，念起来很怪。这里它是名词，「玩耍」。silly 是「愚蠢的」，behaviour 是「行为」。\n→ 「玩耍不是愚蠢的行为」"
+     },
+     {
+      "t": "the academy's report declares",
+      "s": "引语放前面，说话的人放后面，是英文常见的写法。declare 是「宣称」，the academy's report 是「该学院的报告」，report 是说话人，报告在「宣称」。中文习惯先说谁说的。\n→ 该学院的报告宣称"
+     }
+    ],
+    "order": "中文先说「谁宣称」，再引出引语：该学院的报告宣称：「……」。",
+    "sum": "学院的报告宣称：「玩耍不是愚蠢的行为。」",
+    "cmp": "和书上一样，都把说话人提到了前面。"
+   }
+  },
+  "All the children adored the girl as their elder sister.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "All the children adored the girl",
+      "s": "adore 你多半会翻成「崇拜」，翻成「孩子们崇拜这个女孩」，意思偏了。这里是比 like 更强的喜欢，「非常喜爱」。\n→ 所有孩子都非常喜欢这个女孩"
+     },
+     {
+      "t": "as their elder sister",
+      "s": "as 你可能翻成「因为」或「像」，放回去：因为他们的大姐姐？不通。这里 as 是介词，「作为、当作」，把 the girl 当成 their elder sister。\n→ 把她当作他们的大姐姐"
+     }
+    ],
+    "sum": "孩子们都特别喜欢这个女孩，把她当成自己的大姐姐。",
+    "cmp": "几乎一样，书上用「当作」，我用「当成」，意思相同。"
+   }
   },
   "In ancient times, many nations worshipped different gods.": {
    "ph": [

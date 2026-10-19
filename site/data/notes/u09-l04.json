@@ -1,6 +1,23 @@
 {
  "_note": "例句词组与语法解析（书外补充，AI 生成）",
  "sents": {
+  "I asked him his name, but he didn't respond.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "I asked him his name",
+      "s": "你多半会翻成「我问他他的名字」。念一遍，两个「他」挤在一起，怪。ask 后面可以跟两样东西：ask sb. sth.，问某人某事。名字是被问的内容，中文说「叫什么名字」就顺了。\n→ 我问他叫什么名字"
+     },
+     {
+      "t": "but he didn't respond",
+      "s": "这块照字面翻就行。but 表转折，respond 在这里是「回应、回答」。\n→ 可他没回答"
+     }
+    ],
+    "sum": "我问他叫什么名字，可他没有回答。",
+    "cmp": "和书上几乎一样，只差一个「有」字。"
+   }
+  },
   "Sixty percent of the respondents agreed with the suggestion.": {
    "ph": [
     {
@@ -9,6 +26,24 @@
      "m": "同意"
     }
    ]
+  },
+  "There is a huge value in learning with instant feedback.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "There is a huge value",
+      "s": "你多半会翻成「那里有一个巨大的价值」。念一遍，哪里的「那里」？There is 开头是「存在」的句型，there 不用翻，整体就是「有」。\n→ 有很大的价值"
+     },
+     {
+      "t": "in learning with instant feedback",
+      "s": "in 后面的 learning 是 -ing，就是「学习这件事」，in 在这里是「在……方面」。with instant feedback 你可能翻成「用即时反馈」，其实 with 是「伴随着」，意思是「边学边能马上得到反馈」。\n→ 在学习时能得到即时反馈"
+     }
+    ],
+    "order": "英文先说「有价值」、后说「什么事有价值」，中文习惯先交代是哪件事，再说它有价值，所以把后半块提到前面。",
+    "sum": "学习时能马上得到反馈，这很有价值。",
+    "cmp": "意思一样。书上把 with 译成「通过」，把 learning 放前面当主语，也顺；我这里说得更口语。"
+   }
   },
   "One of the most well-worn phrases of parents is that breakfast is the most important meal of the day.": {
    "ph": [
@@ -50,7 +85,21 @@
      "b": "suffer from",
      "m": "患（病）、受……之苦"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "No wonder",
+      "s": "你多半会拆开翻成「没有奇迹」。wonder 单独是「奇怪的事」，No wonder 合在一起就是固定说法「难怪、不足为奇」，后面直接跟一整句话，说的是让人不奇怪的那件事。\n→ 难怪"
+     },
+     {
+      "t": "so many of us suffer from emotional fatigue",
+      "s": "so many of us 是「我们中这么多人」。suffer from 是一个整体，「患上、受……之苦」，别把 from 当成「从」。emotional fatigue 是「情绪疲劳」。\n→ 我们中有这么多人会患情绪疲劳"
+     }
+    ],
+    "sum": "难怪我们这么多人都深受情绪疲劳之苦。",
+    "cmp": "意思一样。书上「患情绪疲劳」贴着原文，我的说法更口语一点。"
+   }
   },
   "It now turns out that exercise can exhaust not only your muscles, but also your eyes.": {
    "ph": [
@@ -69,7 +118,51 @@
      "b": "not only … but also",
      "m": "不仅……而且"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It now turns out that",
+      "s": "你多半会翻成「它现在转出来」。turn out 是一个整体，「结果是、原来」。It 在这里没有具体所指，不用翻。that 带的是从句，就是一整句话，说的是「发现的内容」。\n→ 现在发现"
+     },
+     {
+      "t": "exercise can exhaust not only your muscles, but also your eyes",
+      "s": "exhaust 你可能只认识「耗尽」，对象是肌肉和眼睛，就得换成「使疲劳」。not only A but also B 是「不仅 A，而且 B」，A 是 your muscles，B 是 your eyes，眼睛往后找 but also 就能对上。\n→ 运动不仅会使你的肌肉疲劳，还会使你的眼睛疲劳"
+     }
+    ],
+    "sum": "现在发现，运动不仅会让肌肉疲劳，眼睛也会跟着疲劳。",
+    "cmp": "和书上意思一样，书上两处都用「使……疲劳」，更整齐。"
+   }
+  },
+  "Learning can expand your company and your career.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Learning can expand your company and your career",
+      "s": "Learning 开头是 -ing 当主语，就是「学习这件事」。你多半会翻成「学习可以扩大你的公司和你的职业」。念一遍，公司能扩大，「扩大职业」就怪了。expand 碰到公司是「扩大」，碰到 career 是「向前拓展」，同一个词换个说法。\n→ 学习可以拓展你的公司和职业生涯"
+     }
+    ],
+    "sum": "学习可以拓展你的公司，也能拓展你的职业生涯。",
+    "cmp": "书上两处都用「发展」，也通顺；「拓展」更能看出是在往外扩。"
+   }
+  },
+  "I would argue that this is a perfectly feasible solution.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "I would argue that",
+      "s": "你多半会翻成「我将会争论」。有两处不对：argue 这里不是「吵架」，是「主张、认为」；would 前后没有 if 条件，也不是和事实相反，所以不是虚拟，而是委婉语气，把话说得客气、不那么绝对，相当于「我倒觉得」。that 带的是从句，就是「认为的内容」。\n→ 我认为"
+     },
+     {
+      "t": "this is a perfectly feasible solution",
+      "s": "这块照字面翻就行。perfectly 这里是「完全」，feasible 是「可行的」，solution 是「解决办法」。\n→ 这是一个完全可行的解决方案"
+     }
+    ],
+    "sum": "我认为，这是一个完全可行的解决办法。",
+    "cmp": "和书上一样，只是书上没有把 would 的委婉语气单独译出来，中文里「我认为」本身就有这个味道。"
+   }
   },
   "The most common materials used for nests are grasses, branches and feathers.": {
    "ph": [
@@ -78,7 +171,22 @@
      "b": "be used for",
      "m": "用于"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The most common materials used for nests",
+      "s": "你多半会翻成「最常见的材料被用于巢」。used for nests 是 -ed 短语（过去分词短语），放在名词后面，给它补一段说明，就是「被用来……的」。材料被用来干什么？筑巢。所以整块是「用来筑巢的最常见材料」。\n→ 筑巢最常用的材料"
+     },
+     {
+      "t": "are grasses, branches and feathers",
+      "s": "这块照字面翻就行。\n→ 是草、树枝和羽毛"
+     }
+    ],
+    "order": "英文把说明 used for nests 放在名词 materials 后面，中文习惯把这类说明放到名词前面，所以挪到前面去。",
+    "sum": "筑巢最常用的材料是草、树枝和羽毛。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "So far, participants have ranged in age from 2 to 85.": {
    "ph": [
@@ -102,7 +210,38 @@
      "b": "range from … to …",
      "m": "（范围）从……到……不等"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "So far, participants have ranged",
+      "s": "你多半会翻成「到目前为止，参与者已经范围了」。念一遍，不成话。range 在这里是动词，意思是「（在某个范围内）变动」。So far 是「到目前为止」，have ranged 是现在完成时，说的是从过去到现在这一路的情况。\n→ 到目前为止，参与者"
+     },
+     {
+      "t": "in age from 2 to 85",
+      "s": "in age 你可能翻成「在年龄上」，太硬，直接说「年龄」。看到 range，眼睛往后找 from 和 to：range from A to B，「从 A 到 B 不等」。\n→ 年龄从2岁到85岁不等"
+     }
+    ],
+    "sum": "到目前为止，参与者的年龄从2岁到85岁不等。",
+    "cmp": "和书上一样。"
+   }
+  },
+  "Doris helped him arrange the furniture.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Doris helped him",
+      "s": "你多半会翻成「多丽丝帮助了他」，然后后面就接不上了。help 后面有个常见结构：help sb. do sth.，「帮某人做某事」，do 前面本来有个 to，常被省掉。所以 him 后面的 arrange 才是他要做的事。\n→ 多丽丝帮他"
+     },
+     {
+      "t": "arrange the furniture",
+      "s": "arrange 你可能只认识「安排」，说「安排家具」怪。家具是摆在屋里的，这里要说成「布置、摆放」。\n→ 布置家具"
+     }
+    ],
+    "sum": "多丽丝帮他布置家具。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "She is never sure what the final design will look like until the end.": {
    "ph": [
@@ -130,6 +269,23 @@
     "order": "中文习惯把时间「直到最后」放前面，再说「才确定」，所以把 until the end 提到句首。",
     "sum": "直到最后，她才能确定最终的设计是什么样子。",
     "cmp": "和书上基本一样，书上的「直到最后，她才确定……」和我的顺序完全相同。"
+   }
+  },
+  "Focusing on output alone can have unintended consequences.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Focusing on output alone",
+      "s": "Focusing 开头是 -ing 当主语，就是「专注于……这件事」。focus on 是「关注」，output 是「产出」。alone 你可能翻成「单独的」，它放在名词后面，是「仅仅、只」。\n→ 只关注产出"
+     },
+     {
+      "t": "can have unintended consequences",
+      "s": "你多半会翻成「能有没打算的后果」。念一遍，生硬。unintended 是「没打算到的」，说白了就是「意想不到的」。can 在这里是「可能」。have 在这里是「产生、带来」。\n→ 可能会产生意想不到的后果"
+     }
+    ],
+    "sum": "只关注产出，可能会带来意想不到的后果。",
+    "cmp": "和书上基本一样，只是书上用「产生」，我用「带来」，都行。"
    }
   },
   "He described the sequence of events leading up to the robbery.": {
@@ -190,7 +346,22 @@
      "b": "deal with",
      "m": "应对、处理"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "An increasingly important skill",
+      "s": "你多半会翻成「一个增加地重要的技能」。念一遍，别扭。increasingly 是修饰 important 的，「越来越」，所以整块是「越来越重要的一项技能」。\n→ 一项越来越重要的技能"
+     },
+     {
+      "t": "will be your ability to deal with change",
+      "s": "will be 把前后两块连起来：技能就是「你的能力」。ability 后面的 to deal with change 是 to do 短语，放在名词后面，说明是「什么方面的能力」，就是「……的能力」。deal with 是一个整体，「应对、处理」。\n→ 将是你应对变化的能力"
+     }
+    ],
+    "order": "把 to deal with change 挪到 ability 前面，变成「应对变化的能力」。再把这部分提到句首当主语，读起来更顺。",
+    "sum": "你应对变化的能力，将是一项越来越重要的技能。",
+    "cmp": "和书上一样，书上也是先说「你应对变化的能力」，比照着英文顺序译更顺。"
+   }
   },
   "Exposure to blue light is the chief cause of obesity.": {
    "ph": [
@@ -205,6 +376,23 @@
      "m": "……的原因"
     }
    ]
+  },
+  "Their primary requirement for their children is to study hard.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Their primary requirement for their children",
+      "s": "你多半会翻成「他们的首要要求为了他们的孩子」。for 在这里不是「为了」，requirement for 是「对……的要求」。primary 是「首要的」。\n→ 他们对孩子的首要要求"
+     },
+     {
+      "t": "is to study hard",
+      "s": "is 后面的 to study hard 是 to do 短语，放在 is 后面当表语，作用是说明这个要求具体是什么，相当于「就是做某事」。study hard 是「努力学习」。\n→ 就是努力学习"
+     }
+    ],
+    "sum": "他们对孩子的首要要求就是努力学习。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Research will be needed as a preliminary to taking a decision.": {
    "ph": [
@@ -235,6 +423,24 @@
     "cmp": "和书上一样，书上直接把 as a preliminary to 译成「……之前」，很简洁。"
    }
   },
+  "Primitive forms of life have been seen there.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Primitive forms of life",
+      "s": "primitive 你可能想到「原始人」，这里是形容词「原始的」。forms of life 是「生命的形式」，中文说「生命形式」。\n→ 原始的生命形式"
+     },
+     {
+      "t": "have been seen there",
+      "s": "你多半会翻成「已经被看到」。have been seen 是被动，就是「它们被别人怎么样了」。中文少用「被」，把看到的人隐去，说成「有人发现了」就顺。there 是「在那里」，放到动词前。\n→ 在那里已经发现过"
+     }
+    ],
+    "order": "英文 there 在句末，中文习惯把地点放在动作前面，所以「在那里」提到前面。",
+    "sum": "在那里已经发现了原始形态的生命。",
+    "cmp": "意思一样。书上「已观测到……的存在」更书面，我的说法更口语。"
+   }
+  },
   "Her coarse hands are the result of years of hard work.": {
    "ph": [
     {
@@ -243,6 +449,41 @@
      "m": "……的结果"
     }
    ]
+  },
+  "Don't you know it's rude to whisper?": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Don't you know",
+      "s": "你多半会翻成「你不知道吗」。这是否定疑问句，说话人带着惊讶或责备的语气，翻成「难道你不知道……吗」就有味道了。know 后面省略了 that，后面一整句是从句，就是「知道的内容」。\n→ 难道你不知道"
+     },
+     {
+      "t": "it's rude to whisper",
+      "s": "你可能把 it 翻成「它」。其实 it 是形式主语，真正的主语是后面的 to whisper，眼睛往后找 to。把 to whisper 放回去：窃窃私语是 rude。rude 是「不礼貌的」，whisper 是「小声说话」。\n→ 窃窃私语是不礼貌的"
+     }
+    ],
+    "sum": "难道你不知道窃窃私语是不礼貌的吗？",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "It is bad manners to talk with your mouth full.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It is bad manners",
+      "s": "你多半会翻成「它是坏的举止」。两处要改：It 是形式主语，真正的主语是后面的 to talk……，眼睛往后找 to；manners 用复数，是「礼貌、规矩」，bad manners 就是「不礼貌」。\n→ 是不礼貌的"
+     },
+     {
+      "t": "to talk with your mouth full",
+      "s": "to talk 是 to do 短语，当真正的主语，就是「做某事这件事」。with your mouth full 你可能翻成「和你的满嘴」，其实 with + 名词 + 形容词，说的是「在……的状态下」：嘴是满的，就是「嘴里塞满东西」。\n→ 嘴里塞满东西说话"
+     }
+    ],
+    "order": "把真正的主语 to talk……提到句首，「是不礼貌的」放最后。",
+    "sum": "嘴里塞满东西说话是不礼貌的。",
+    "cmp": "意思一样。书上多了「跟人」，更具体一点。"
+   }
   },
   "It may sound safe to avoid all physical contact so as not to offend anyone.": {
    "ph": [
@@ -272,6 +513,23 @@
     "cmp": "书上是「避免所有的身体接触以不冒犯任何人听起来可能是安全的」，字都对，但「以不冒犯」读起来绕；把「为了不冒犯任何人」提前，就顺了。"
    }
   },
+  "A tiger usually fights another tiger to defend its own territory.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "A tiger usually fights another tiger",
+      "s": "你多半会翻成「一只老虎通常打另一只老虎」。意思没错，但这里是泛指，不是只说某一只。another tiger 就是「别的老虎、同类」，中文说「和同类搏斗」更自然。\n→ 老虎通常会和同类搏斗"
+     },
+     {
+      "t": "to defend its own territory",
+      "s": "句末的 to defend 是 to do 短语，表目的，就是「为了做某事」。its 指谁？放回去试：保卫另一只老虎的领地？不通；保卫打架的这只老虎自己的领地，对，own 也在强调「自己的」。defend 是「保卫」。\n→ 来保卫自己的领地"
+     }
+    ],
+    "sum": "老虎通常会和同类搏斗，以保卫自己的领地。",
+    "cmp": "和书上基本一样，书上用「来」，更口语。"
+   }
+  },
   "Officers use soccer goals to fence the animal in.": {
    "ph": [
     {
@@ -284,7 +542,21 @@
      "b": "fence … in",
      "m": "把……围起来"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Officers use soccer goals",
+      "s": "你多半会翻成「警官使用足球目标」。goal 你熟悉的是「目标」，放在足球里是「球门」。\n→ 警官们用足球球门"
+     },
+     {
+      "t": "to fence the animal in",
+      "s": "to fence 是 to do 短语，表目的，就是「为了……」。fence 你可能只认识名词「栅栏」，这里是动词，「用栏杆围」。它被拆开了：fence … in，眼睛往后找 in，中间夹着 the animal，合起来就是「把这只动物围起来」。\n→ 把这只动物围起来"
+     }
+    ],
+    "sum": "警官们用足球球门把这只动物围住。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "It was thought appropriate to award her the prize.": {
    "ph": [
@@ -317,7 +589,22 @@
      "b": "be valued at",
      "m": "估价为、价值"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He left estate",
+      "s": "你多半会翻成「他离开了地产」。念一遍，说不通。left 是 leave 的过去式，这里 leave 是「留下」，estate 是「遗产、财产」。人留下财产，就是去世后留下的遗产。\n→ 他留下了遗产"
+     },
+     {
+      "t": "valued at a million dollars",
+      "s": "valued 是过去分词，valued at a million dollars 是 -ed 短语，放在名词 estate 后面，给它补一段说明，就是「被估价为……的」。别翻成「被价值」，直接说「价值……的」。\n→ 价值100万美元"
+     }
+    ],
+    "order": "英文把说明放在 estate 后面，中文把它挪到「遗产」前面，当修饰语。",
+    "sum": "他留下了价值100万美元的遗产。",
+    "cmp": "和书上一样。"
+   }
   },
   "It can bring wealth and honour to them.": {
    "ph": [
@@ -340,7 +627,21 @@
      "b": "care about",
      "m": "最在乎"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They believe",
+      "s": "你多半会翻成「他们相信别人」，然后后面就接不上了。believe 后面其实省略了 that：They believe (that) others care ……。那后面一整句是从句，就是「相信的内容」。\n→ 他们认为"
+     },
+     {
+      "t": "others care most about fame and fortune",
+      "s": "others 是「别人」。care about 是一个整体，「在乎」，most 是「最」。fortune 你可能想到「运气」，和 fame（名声）并列，这里是「财富」。\n→ 别人最在乎名声和财富"
+     }
+    ],
+    "sum": "他们认为别人最在乎的是名声和财富。",
+    "cmp": "和书上一样。"
+   }
   },
   "It's worth asking if things are necessary.": {
    "ph": [
@@ -349,7 +650,22 @@
      "b": "be worth doing",
      "m": "值得做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It's worth asking",
+      "s": "你多半会翻成「它值得问」。it 不用翻，真正的意思在 worth asking：be worth doing 是「值得做」，注意 worth 后面接 -ing，不接 to do。\n→ 问一问是值得的"
+     },
+     {
+      "t": "if things are necessary",
+      "s": "if 你可能一看就是「如果」。放回去试试：问一问「如果事情必要」？问什么没说。ask 后面的 if 通常是「是否」，带的是从句，就是「被问的内容」。\n→ 事情是否有必要"
+     }
+    ],
+    "order": "英文先说「值得问」，后说问什么；中文先说问什么更顺，再回到「值得」。",
+    "sum": "问一问事情是否有必要，是值得的。",
+    "cmp": "书上把 if 译成「如果有必要的话」，是按「如果」理解的；ask if 里的 if 一般是「是否」，所以我这样译。两种读法意思差得不大。"
+   }
   },
   "Her assets include shares in the company and a house in France.": {
    "ph": [
@@ -359,6 +675,24 @@
      "m": "……的股份"
     }
    ]
+  },
+  "I understand how upset you must be feeling.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "I understand how upset",
+      "s": "你多半会翻成「我明白怎样沮丧」，不成话。how 在这里带的是从句，也就是「明白的内容」，how upset 是「多么沮丧」。\n→ 我明白你多么沮丧"
+     },
+     {
+      "t": "you must be feeling",
+      "s": "把 how upset 放回 feeling 后面：you must be feeling upset，「你一定感到沮丧」。must 在这里不是「必须」，是推测，「想必、一定」；be feeling 是进行时，说的是「此刻正感到」。\n→ 你想必正感到"
+     }
+    ],
+    "order": "how upset 在英文里被提到了前面，中文要放回动词 feel 后面，说成「你现在一定感到多么沮丧」。",
+    "sum": "我明白，你现在一定感到非常沮丧。",
+    "cmp": "书上「你有多沮丧」没有译出 must 的推测语气，我补上了「一定」，其余意思一样。"
+   }
   },
   "She settled in Vienna after her father's death.": {
    "ph": [
@@ -376,7 +710,21 @@
      "b": "it's time to do",
      "m": "是时候做某事了"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It's time to re-evaluate",
+      "s": "It's time to do 是固定说法，「是时候做某事了」，It 不用翻。re-evaluate 是 evaluate（评价）前面加了 re-（再），「重新评估、重新考虑」。\n→ 是时候重新考虑"
+     },
+     {
+      "t": "how women handle conflict at work",
+      "s": "how 带的是从句，就是「重新考虑的内容」：how women handle conflict，「女性如何处理冲突」。at work 你可能放到句末翻成「在工作」，其实它在说是什么冲突，中文放前面当修饰：「工作中的冲突」。\n→ 女性如何处理工作中的冲突"
+     }
+    ],
+    "sum": "是时候重新考虑女性如何处理工作中的冲突了。",
+    "cmp": "几乎和书上一样，书上是「工作冲突」，我多了个「中的」。"
+   }
   },
   "Unless we accept that obesity is a disease, we are not going to be able to tackle it.": {
    "ph": [
@@ -414,7 +762,22 @@
      "b": "cope with",
      "m": "应对"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Some students cope with this shock",
+      "s": "你可能把 with 翻成「和」，翻成「学生和冲击相处」。cope with 是一个整体，「应对、应付」，with 跟着 cope 走。shock 在这里是「冲击、打击」。\n→ 一些学生应对这种冲击"
+     },
+     {
+      "t": "by avoiding challenges",
+      "s": "by 后面接 -ing，就是「通过做某事」，说的是用什么办法。avoid 是「回避」，challenges 是「挑战」。\n→ 通过回避挑战"
+     }
+    ],
+    "order": "英文把方法放在后面，中文可以保持顺序，加个「来」字连接：「通过回避挑战来应对……」。",
+    "sum": "一些学生通过回避挑战来应对这种冲击。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Environmental problems must be solved to ease the current global food shortage.": {
    "ph": [],
@@ -441,7 +804,21 @@
      "b": "in order to do",
      "m": "为了"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Both sides met",
+      "s": "你多半会翻成「两边遇见了」。both sides 指争议的「双方」，met 在这里是正式的「会面、会晤」。\n→ 双方会晤"
+     },
+     {
+      "t": "in order to try to resolve their differences",
+      "s": "看到 in order to，脑子里换成「为了」，后面是 to do，表目的。try to resolve 是「努力解决」。resolve 你可能只认识「决心」，这里是「解决」。differences 你可能翻成「不同」，这里指双方的「分歧」。\n→ 为了努力解决分歧"
+     }
+    ],
+    "sum": "双方会面，是为了努力解决彼此的分歧。",
+    "cmp": "意思一样。书上「会晤以努力解决分歧」更书面，我加了「是为了」，更口语。"
+   }
   },
   "I made a New Year resolution to give up smoking.": {
    "ph": [
@@ -450,7 +827,38 @@
      "b": "give up",
      "m": "放弃、戒掉"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "I made a New Year resolution",
+      "s": "你多半会翻成「我做了一个新年决议」。make a resolution 是固定说法，「下决心」，resolution 这里是「决心」，不是「决议」。\n→ 我在新年下了决心"
+     },
+     {
+      "t": "to give up smoking",
+      "s": "to give up smoking 是 to do 短语，放在名词 resolution 后面，说明决心的内容，「……的决心」。give up 是「放弃、戒掉」，后面接 -ing，所以是「戒烟」。\n→ 要戒烟"
+     }
+    ],
+    "sum": "新年里我下定决心，要把烟戒掉。",
+    "cmp": "书上「我决心在新的一年把烟戒掉」把 resolution 译成动词「决心」，更顺，意思一样。"
+   }
+  },
+  "The rubbish takes long to dissolve.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The rubbish takes long",
+      "s": "你多半会翻成「垃圾拿很长」。take 在这里是「需要（时间）」，takes long 就是「需要很长时间」。rubbish 是「垃圾」。\n→ 这些垃圾需要很长时间"
+     },
+     {
+      "t": "to dissolve",
+      "s": "to dissolve 是 to do 短语，说的是花这么长时间要「做的事」，中文加个「才能」。dissolve 是「溶解、分解」。\n→ 才能溶解"
+     }
+    ],
+    "sum": "这些垃圾要很长时间才能溶解。",
+    "cmp": "和书上基本一样。"
+   }
   }
  }
 }

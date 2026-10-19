@@ -78,7 +78,21 @@
      "b": "be bound to do",
      "m": "必定会"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It is bound to help us",
+      "s": "你多半会翻成「它被绑定去帮助我们」。念一遍，不对吧？be bound to do 是一个整体，意思是「一定会、必然会」，后面跟动词。help us achieve 里 help 后面直接跟动词也行，就是「帮我们做到」。\n→ 它一定会帮助我们"
+     },
+     {
+      "t": "achieve greater success",
+      "s": "这块照字面翻就行：achieve 是「取得」，greater 是比较级「更大的」。\n→ 取得更大的成功"
+     }
+    ],
+    "sum": "它一定能帮我们取得更大的成功。",
+    "cmp": "意思一样。书上的「必将」比「一定能」更书面。"
+   }
   },
   "They think it more urgent to fulfil their social obligations.": {
    "ph": [
@@ -87,7 +101,22 @@
      "b": "fulfil one's obligations",
      "m": "履行社会责任"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They think it more urgent",
+      "s": "你多半会翻成「他们认为它更紧急」。放回去问一句：什么东西更紧急？这个 it 指不出具体的东西，它是形式宾语，只是先占个位子，真正要说的事在后面。think it more urgent to do，就是「认为做某事更紧急」。\n→ 他们认为……更加紧迫"
+     },
+     {
+      "t": "to fulfil their social obligations",
+      "s": "to fulfil 是 to do 短语，就是「去做某事」，它才是真正的宾语，说的就是「到底什么事紧急」。fulfil obligations 是「履行责任」。\n→ 履行他们的社会责任"
+     }
+    ],
+    "order": "英文先放个 it 占位、to do 放最后；中文不要这个 it，直接把「履行社会责任」提到「更加紧迫」前面当主语。",
+    "sum": "他们认为履行自己的社会责任更为紧迫。",
+    "cmp": "和书上几乎一样。书上没有「他们的」，因为主语已经是「他们」，省掉更顺。"
+   }
   },
   "My suitcase was full of books.": {
    "ph": [
@@ -132,7 +161,22 @@
      "b": "fall into a trap",
      "m": "陷入陷阱"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Leah easily could have fallen",
+      "s": "你多半会翻成「利亚容易地能够已经掉进」。念一遍，乱了。could have fallen 是 could have + 过去分词，说的是过去「有可能就……了」；easily 把这个可能性加强，就是「很容易就会」。\n→ 利亚很容易就会陷入"
+     },
+     {
+      "t": "into a trap of feeling content",
+      "s": "of feeling 是 of 加 -ing，-ing 当名词用，就是「感到某种状态」这件事。content 你可能认成「内容」，这里是形容词，读作 /kənˈtent/，意思是「满足的」。feel content 就是「觉得满足」，于是 a trap of feeling content 就是「觉得满足」这个陷阱。\n→ 满足于现状的陷阱"
+     }
+    ],
+    "order": "英文用 of 把「陷阱」和「感到满足」连起来；中文把 of 后面的内容提到「陷阱」前面当定语。",
+    "sum": "利亚很容易就会陷入安于现状的陷阱。",
+    "cmp": "书上的「满足感的陷阱」意思对，但「满足感」读起来像个名词堆在一起；改成「满足于现状的陷阱」更顺。"
+   }
   },
   "The office maintained a well-stocked kitchen that would satisfy my every snack desire.": {
    "ph": [],
@@ -167,7 +211,39 @@
      "b": "make promises",
      "m": "许下承诺"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It gets one into the habit",
+      "s": "你多半会翻成「它让一个人进入习惯」。念一遍，中文不这么说。get sb into the habit of doing 是固定搭配，就是「使某人养成……的习惯」。这里的 one 不是数字「一」，是泛指的「人」。\n→ 它让人养成……的习惯"
+     },
+     {
+      "t": "of making empty promises",
+      "s": "making 前面是 of，of 后面的 -ing 当名词用，就是「做某事」这件事，说的是哪种习惯。empty promises 字面是「空的承诺」，中文说「空头承诺」更地道。\n→ 许下空头承诺"
+     }
+    ],
+    "order": "英文 habit 在前、of making 在后；中文把「许下空头承诺」提到「习惯」前面当定语。",
+    "sum": "这会让人养成许下空头承诺的习惯。",
+    "cmp": "和书上一样。"
+   }
+  },
+  "You should try to restrain your ambition and be more realistic.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "You should try to restrain your ambition",
+      "s": "你多半会翻成「你应该试一试去限制你的野心」。try to do 是「努力做某事」，不是「试一试」；「试着做」是 try doing。restrain 是「抑制、克制」。\n→ 你应该努力抑制你的野心"
+     },
+     {
+      "t": "and be more realistic",
+      "s": "这块照字面翻就行：and 连的是 try to restrain 和 be more realistic 两个动作，都归在 should 后面。\n→ 而且要更现实一些"
+     }
+    ],
+    "sum": "你应该努力克制自己的野心，也要现实一点。",
+    "cmp": "意思和书上一样，只是把「抑制」换成了「克制」。"
+   }
   },
   "I came to realise online classes were merely a means to fulfil course requirements.": {
    "ph": [
@@ -181,7 +257,26 @@
      "b": "a means to do",
      "m": "……的手段"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "I came to realise",
+      "s": "你多半会翻成「我来到去意识」。念一遍，不对吧？come to do 是「开始（逐渐）做」，说的是一个慢慢发生的变化。\n→ 我开始意识到"
+     },
+     {
+      "t": "online classes were merely a means",
+      "s": "realise 后面省略了 that，补回去是 realise (that) online classes were……，这是宾语从句，就是把「意识到的内容」整句放进来。were 用过去时，是跟着前面的 came 走。merely 是「仅仅」，a means 是「一种手段」。\n→ 网络课程仅仅是一种手段"
+     },
+     {
+      "t": "to fulfil course requirements",
+      "s": "to fulfil 是 to do 短语，补充说明这个手段是「用来干什么的」。fulfil requirements 是「满足要求」。\n→ 用来满足课程要求"
+     }
+    ],
+    "order": "英文把 to do 放在 a means 后面；中文要把「用来满足课程要求」提到「手段」前面当定语。",
+    "sum": "我渐渐意识到，网络课程不过是用来满足课程要求的一种手段。",
+    "cmp": "和书上几乎一样，书上说「开始」，我说「渐渐」，都是 come to 的意思。"
+   }
   },
   "The precise function of sleep remains largely in the realm of assumption.": {
    "ph": [
@@ -210,6 +305,45 @@
     }
    ]
   },
+  "His goal was to accumulate wealth.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "His goal was to accumulate wealth",
+      "s": "你多半会翻成「他的目标是要去积累财富」。念一遍，「要去」多余。to accumulate 是 to do 短语，放在 was 后面，说明「目标到底是什么」，中文直接说动作就行。accumulate 是「积累」。\n→ 他的目标是积累财富"
+     }
+    ],
+    "sum": "他的目标就是积累财富。",
+    "cmp": "和书上一样。"
+   }
+  },
+  "They deem these exercises counter-productive.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "They deem these exercises counter-productive",
+      "s": "你多半会翻成「他们认为这些练习，反生产的」。念一遍，断了。deem A B 是「认为 A 是 B」，deem 后面跟两样东西：A 是 these exercises，B 是 counter-productive。counter-productive 拆开看：counter 是「反」，productive 是「有成效的」，合起来就是「适得其反」。\n→ 他们认为这些练习适得其反"
+     }
+    ],
+    "sum": "他们觉得这些练习起了反作用。",
+    "cmp": "意思和书上一样。书上的「适得其反」更像成语，我换成了更口语的说法。"
+   }
+  },
+  "Sleep may be more important than people assumed.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Sleep may be more important than people assumed",
+      "s": "你多半会翻成「睡眠可能比人们假设更重要」。念一遍，assumed 后面像缺了东西。than 后面是一个完整的从句 people assumed，补全是 than people assumed (it was important)，这个从句是比较的对象。assume 在这里是「以为、认为」，中文说「比人们以为的」。may 是「可能」，不是「允许」。\n→ 睡眠可能比人们以为的更重要"
+     }
+    ],
+    "sum": "睡眠可能比人们以为的还要重要。",
+    "cmp": "意思和书上一样，书上说「想象的」，我说「以为的」，更贴近 assumed 那种没有证实的看法。"
+   }
+  },
   "She resumed her career after an interval of six years.": {
    "ph": [
     {
@@ -226,7 +360,21 @@
      "b": "tend to do",
      "m": "倾向于"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "More affluent and educated people",
+      "s": "你多半会翻成「更富裕和受教育的人」。affluent 是「富裕的」，educated 是「受过教育的」，两个形容词并列，一起修饰 people；More 管着两个，所以是「更富裕、受教育程度更高」。\n→ 更富裕、受教育程度更高的人"
+     },
+     {
+      "t": "tend to consume higher quality diets",
+      "s": "tend to do 是「倾向于做」，说白了就是「往往会」。consume 这里不是「消费」，说的是吃东西，是「食用、摄入」。higher quality diets 是「质量更高的饮食」。\n→ 往往会吃质量更高的饮食"
+     }
+    ],
+    "sum": "更富裕、受教育程度更高的人，饮食质量往往也更高。",
+    "cmp": "意思和书上一样。书上说「食用……饮食」，搭配有点生硬，我改成「饮食质量更高」。"
+   }
   },
   "That was great for the consumer, not so much for the manufacturer.": {
    "ph": [
@@ -235,7 +383,21 @@
      "b": "not so much",
      "m": "没那么（好）"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "That was great for the consumer",
+      "s": "这块照字面翻就行：great for sb 是「对某人来说很好」。\n→ 那对消费者来说很好"
+     },
+     {
+      "t": "not so much for the manufacturer",
+      "s": "你多半会翻成「不那么多对制造商」。念一遍，不通。这是省略了：补回去是 (it was) not so much (great) for the manufacturer。not so much 是「没那么……」，就是「对制造商就没那么好了」。\n→ 对制造商来说则不然"
+     }
+    ],
+    "sum": "这对消费者是好事，对制造商就不一定了。",
+    "cmp": "和书上意思一样，书上的「则不然」更书面。"
+   }
   },
   "She grew up with Chinese customs and traditions.": {
    "ph": [
@@ -253,7 +415,21 @@
      "b": "more than",
      "m": "不仅仅是"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Moreover, schools should be more than",
+      "s": "你多半会翻成「学校应该比……更多」。念一遍，不知所云。be more than 后面跟名词，是「不仅仅是、远不止是」。Moreover 是「此外」。\n→ 此外，学校不应该只是"
+     },
+     {
+      "t": "simple institutions of traditional learning",
+      "s": "这里的 simple 不是「简单」，是「单纯的」。institutions 是「机构」，of traditional learning 是「进行传统学习的」。\n→ 单纯的传统学习机构"
+     }
+    ],
+    "sum": "此外，学校不该只是单纯进行传统学习的机构。",
+    "cmp": "书上把 more than 转成了「不应该是」，意思相近；我保留了「只是」，能看出它是「不仅仅」的意思。"
+   }
   },
   "It is important to distinguish between the rules of grammar and the conventions of written language.": {
    "ph": [
@@ -284,6 +460,23 @@
     "cmp": "和书上基本一样，书上译成「书面语言的惯例」，我说「书面语」，更短。"
    }
   },
+  "Some hired flag wavers to direct customers to empty parking spaces.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Some hired flag wavers",
+      "s": "你多半会翻成「一些被雇用的旗子挥舞者」。其实 Some 是主语，hired 是动词，「雇用了」。flag wavers 是 wave（挥）加 -er，就是「挥旗的人」。\n→ 一些（公司）雇用了挥旗的人"
+     },
+     {
+      "t": "to direct customers to empty parking spaces",
+      "s": "to direct 是 to do 短语，说明雇人是「为了干什么」。direct sb to somewhere 是「引导某人去某处」，注意第二个 to 是介词「到」，和前面的 to direct 不是一回事。empty 这里是「空着的」。\n→ 来引导顾客去空着的停车位"
+     }
+    ],
+    "sum": "有些公司雇人挥旗，把顾客引到空着的停车位去。",
+    "cmp": "和书上意思一样，Some 后面没写名词，书上用括号补了「公司」，我也补上了。"
+   }
+  },
   "He inquired about his client's family background.": {
    "ph": [
     {
@@ -300,7 +493,17 @@
      "b": "be able to do",
      "m": "能够"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The agents were able to utilise their full potential and experience",
+      "s": "你多半会翻成「代理人们是能够利用他们的全部潜力和经验」。念一遍，「全部」放那里有点怪。be able to do 是「能够做」；utilise 是「利用」；potential 和 experience 用 and 并列，都属于 their。full 说的是「充分」，放到动词前面当「充分利用」更顺。\n→ 代理人能够充分利用他们的潜力和经验"
+     }
+    ],
+    "sum": "代理人能够充分发挥自己的潜力，运用自己的经验。",
+    "cmp": "和书上意思一样，书上把 full 译成「充分」放在动词前，很顺。"
+   }
   },
   "Within 10 minutes, I had impressed the interviewer enough to be offered a job with the agency.": {
    "ph": [
@@ -337,7 +540,21 @@
      "b": "be willing to do",
      "m": "更愿意"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Deputy chiefs may be more willing to",
+      "s": "你多半会翻成「副局长们可能是更愿意去」。be willing to do 是「愿意做」，more willing 是「更愿意」，may 是「可能」。\n→ 副局长们可能更愿意"
+     },
+     {
+      "t": "make the jump without a net",
+      "s": "你多半会翻成「做出没有网的跳跃」。字面是「不带安全网就纵身一跳」，像杂技演员在高空不拴保护网。这是比喻，书上把它译成「裸辞」，就是没有退路就辞职。\n→ 在没有保障的情况下纵身一跳（裸辞）"
+     }
+    ],
+    "sum": "副局长们可能更愿意冒险裸辞。",
+    "cmp": "和书上一样，我多了「冒险」，把 without a net 的意思留住。"
+   }
   },
   "Blocks of flats built in the past there were mostly inhabited by people who did not earn much.": {
    "ph": [
@@ -378,7 +595,21 @@
      "b": "reside in",
      "m": "存在于，居住在"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They reside in our minds",
+      "s": "你多半会翻成「它们居住在我们的头脑里」。念一遍，头脑里不能「居住」。reside in 是「居住在、存在于」，用在头脑里，中文说「存在于」。\n→ 它们存在于我们的头脑中"
+     },
+     {
+      "t": "shaping our thoughts",
+      "s": "逗号后面的 shaping 是 -ing 短语，就是「同时在做什么」，主语还是前面的 They。你可能把它当成另一句话，找不到主语。shape 是「塑造」。\n→ 同时塑造着我们的想法"
+     }
+    ],
+    "sum": "它们存在于我们的头脑中，同时塑造着我们的想法。",
+    "cmp": "和书上意思一样。我加了「同时」，点明 -ing 短语是和前一件事同时发生。"
+   }
   },
   "Numerous professional drivers would have to find new ways of earning a living.": {
    "ph": [
@@ -427,6 +658,23 @@
     "cmp": "意思一样，书上是「谁都不认真对待这个问题，我非常不安」。书上把 alarm 译成「非常不安」，比我的程度更重。"
    }
   },
+  "The daughter feared her mother would be ignored there.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The daughter feared her mother",
+      "s": "你多半会翻成「女儿害怕她的母亲」。放回去试试：害怕母亲？后面还有一大截 would be ignored，说明 her mother 不是 feared 的宾语。feared 后面省略了 that，补回去是 feared (that) her mother would……，这是宾语从句，整句话才是「害怕的内容」。\n→ 女儿害怕"
+     },
+     {
+      "t": "would be ignored there",
+      "s": "would 在这里不是虚拟，因为没有 if，也不是和事实相反；前面的 feared 是过去时，所以把 will 变成 would，这是时态呼应。be ignored 是被动，就是「母亲被别人怎么样了」，也就是「被忽视」。there 是「在那里」。\n→ 她的母亲在那里会被忽视"
+     }
+    ],
+    "sum": "女儿担心母亲在那里会被忽视。",
+    "cmp": "和书上一样，我把「害怕」换成了「担心」，语气稍软一点。"
+   }
+  },
   "It launched a fierce attack against that state.": {
    "ph": [
     {
@@ -448,7 +696,21 @@
      "b": "become a threat",
      "m": "成为威胁"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "There are growing concerns",
+      "s": "你多半会翻成「有增长的担忧」。念一遍，不顺。There are 是「有」；growing 是 -ing 形容词，「越来越多的」。\n→ 有越来越多的担忧"
+     },
+     {
+      "t": "that robots could become a threat",
+      "s": "that 后面是一个完整的句子，有主语 robots，有谓语 could become，不缺任何成分，所以它不是定语从句，而是同位语从句，就是用一整句话来说明 concerns 的具体内容。could 在这里是「有可能」，没有 if，前面的 are 也不是过去时，所以不是虚拟，也不是时态呼应，只是语气比 can 更含蓄。\n→ 机器人可能成为威胁"
+     }
+    ],
+    "sum": "人们越来越担心机器人可能会成为一种威胁。",
+    "cmp": "和书上意思一样。"
+   }
   },
   "The editor is frightened by this news.": {
    "ph": [
@@ -457,7 +719,17 @@
      "b": "be frightened by",
      "m": "被……吓坏"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The editor is frightened by this news",
+      "s": "你多半会翻成「编辑被这个消息吓坏了」。这个翻法没错，中文也顺。is frightened 是被动，就是「编辑被别人怎么样了」，by 后面写的是让他害怕的东西。中文里被动不是都要换，这句保留「被」就很自然；想更口语，也可以让消息当主语：「这个消息把编辑吓坏了」。\n→ 编辑被这个消息吓坏了"
+     }
+    ],
+    "sum": "这个消息把编辑吓坏了。",
+    "cmp": "书上保留了被动，我改成了主动，意思一样，都对。"
+   }
   },
   "But across society, the abstraction of the idea of cash makes me uneasy.": {
    "ph": [
@@ -466,7 +738,21 @@
      "b": "make sb. uneasy",
      "m": "让人感到不安"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "But across society,",
+      "s": "这块照字面翻就行：across society 是「在整个社会范围内」。\n→ 但在整个社会中"
+     },
+     {
+      "t": "the abstraction of the idea of cash makes me uneasy",
+      "s": "你多半会翻成「现金的想法的抽象让我不安」。念一遍，三个「的」绕在一起。拆开：the idea of cash 是「现金这个概念」，abstraction 是 abstract（抽象）的名词，换成动词说就是「变得抽象」。makes me uneasy 是 make sb + 形容词，「让我觉得不安」。\n→ 现金概念的抽象化让我感到不安"
+     }
+    ],
+    "sum": "但放眼整个社会，现金这个概念变得抽象，让我感到不安。",
+    "cmp": "和书上意思一样，我把一个长主语拆成两个短句。"
+   }
   },
   "He doesn't feel at ease in the firm.": {
    "ph": [
@@ -484,7 +770,25 @@
      "b": "lose weight",
      "m": "体重减轻"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The girl appeared anxious",
+      "s": "你多半会翻成「那个女孩出现焦虑」。appeared 在这里不是「出现」，appear 后面跟形容词，就是「看起来、显得」。\n→ 那个女孩显得很焦虑"
+     },
+     {
+      "t": "had lost weight",
+      "s": "had lost 是过去完成时，就是「在那个时候之前就已经发生了」。lose weight 是「体重下降」。\n→ 体重已经下降"
+     },
+     {
+      "t": "and was not sleeping well",
+      "s": "你可能想翻成「没有睡得好」。was not sleeping 是过去进行时，说的是「那阵子一直」睡不好。三个动作的主语都是 The girl，只写了一次。\n→ 觉也睡不好"
+     }
+    ],
+    "sum": "那个女孩看起来很焦虑，体重已经下降，觉也睡不好。",
+    "cmp": "和书上意思一样。"
+   }
   }
  }
 }

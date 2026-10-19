@@ -73,6 +73,37 @@
     }
    ]
   },
+  "They are cherished by the rich.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "They are cherished by the rich",
+      "s": "你多半会翻成「它们被富人珍爱」。能懂，但有点硬。are cherished 是被动，就是「它们被别人怎么样了」，by 后面才是做动作的人。the rich 是「the + 形容词」，指一类人，就是「富人」。中文少用「被」，把富人请出来当主语。\n→ 富人珍爱它们"
+     }
+    ],
+    "order": "被动句里做动作的人在最后，中文把他提到前面当主语，原来的主语变成宾语。",
+    "sum": "它们深受富人喜爱。",
+    "cmp": "书上译成「它们受到富人的钟爱」，保留了「受到」的被动味道，也通顺，两种都行。"
+   }
+  },
+  "Let them know how much you appreciate their contribution.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Let them know",
+      "s": "这是祈使句，一开头就是动词 Let。let sb. do 是固定结构，「让某人做某事」，所以 Let them know 就是「让他们知道」。\n→ 让他们知道"
+     },
+     {
+      "t": "how much you appreciate their contribution",
+      "s": "know 后面又跟了一整句话，这是宾语从句，就是「知道的内容」。how much 你可能翻成「多少」。放回去试试：你感激他们的付出「多少」？不通。这里 how much 修饰 appreciate，是「多么、多深」。contribution 是「贡献、付出」。\n→ 你多么感激他们的付出"
+     }
+    ],
+    "sum": "让他们知道你有多感激他们的付出。",
+    "cmp": "和书上基本一样，「有多感激」比「多么感激」更口语一点。"
+   }
+  },
   "They gave me many valuable comments as to how to improve my writing.": {
    "ph": [
     {
@@ -80,7 +111,56 @@
      "b": "as to",
      "m": "关于，对于"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They gave me many valuable comments",
+      "s": "这块照字面翻就行：give sb. sth. 就是「给某人某物」。valuable 在这里是「有价值的」，也就是「有用的」。\n→ 他们给了我很多有用的意见"
+     },
+     {
+      "t": "as to how to improve my writing",
+      "s": "as to 你可能想翻成「作为……到」。其实 as to 是一个整体，就是「关于、对于」。后面的 how to improve 是「如何提高」，how to do 把「怎么做」打包成一个名词性的块。\n→ 关于如何提高我的写作"
+     }
+    ],
+    "order": "英文先说「给了意见」再说「关于什么」，中文习惯先把话题「对于如何提高写作」放前面，再说「给了意见」。",
+    "sum": "对于怎样提高写作，他们给了我很多有用的意见。",
+    "cmp": "和书上基本一样，只是「怎样」比「如何」口语一点。"
+   }
+  },
+  "Buying new furniture may prove too costly.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Buying new furniture",
+      "s": "一开头是 Buying，别慌。-ing 开头当主语，就是「做某事」这件事。\n→ 购买新家具"
+     },
+     {
+      "t": "may prove too costly",
+      "s": "你多半会翻成「可能证明太昂贵」。念一遍，别扭吧？prove 后面直接跟形容词时，是「结果是、最后发现是」。may 是「可能」，costly 是「花钱多的」，too costly 就是「花得太多」。\n→ 可能会花钱太多"
+     }
+    ],
+    "sum": "买新家具可能会花太多钱。",
+    "cmp": "和书上一样。"
+   }
+  },
+  "They asked unbiased scholars to evaluate them.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "They asked unbiased scholars",
+      "s": "ask sb. to do sth. 是固定结构，「请某人做某事」，所以眼睛先往后找 to——后面有 to evaluate。unbiased 你可能不认识，bias 是「偏见」，前面加 un- 就是「没有偏见的」，也就是「公正的」。\n→ 他们请公正的学者"
+     },
+     {
+      "t": "to evaluate them",
+      "s": "to evaluate 是 to do 短语，补充说明请他们去做什么。evaluate 是「评价、评估」。\n→ 对它们进行评估"
+     }
+    ],
+    "sum": "他们请了公正的学者来评估它们。",
+    "cmp": "和书上一样。"
+   }
   },
   "Surveys estimate that 85% of women and 73% of men report feeling better after shedding tears.": {
    "ph": [
@@ -103,6 +183,23 @@
     ],
     "sum": "调查估计，85% 的女性和 73% 的男性表示，哭过之后会感觉好一些。",
     "cmp": "和书上基本一样，书上用「称」，我用「表示」，意思没变。"
+   }
+  },
+  "I reckon I'm going to pass the examination smoothly.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "I reckon",
+      "s": "reckon 你可能不认识，口语里它就是「认为、觉得」。后面直接跟了 I'm going to……，中间藏了个 that，补回去是 I reckon (that) I'm going to……，这是宾语从句，就是「认为的内容」。\n→ 我认为"
+     },
+     {
+      "t": "I'm going to pass the examination smoothly",
+      "s": "这块照字面翻就行：be going to do 是「打算、将要」，pass the examination 是「通过考试」，smoothly 是「顺利地」。\n→ 我会顺利通过这次考试"
+     }
+    ],
+    "sum": "我觉得这次考试我能顺利通过。",
+    "cmp": "意思和书上一样，书上更直接。"
    }
   },
   "They are the ultimate solution to droughts.": {
@@ -161,6 +258,28 @@
     }
    ]
   },
+  "They find consulting caloric-expenditure charts troublesome.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "They find",
+      "s": "find 你多半当成「找到」，那就找不出后面的句子了。这里 find 是「发现、觉得」，find + 宾语 + 形容词，意思是「觉得……怎么样」，所以眼睛往后找形容词——后面有 troublesome。\n→ 他们觉得"
+     },
+     {
+      "t": "consulting caloric-expenditure charts",
+      "s": "consulting 是 -ing 短语，在这里是「做某事」这件事，当 find 的宾语。consult 在这里是「查阅」，caloric-expenditure 是「卡路里消耗」，chart 是「表」。\n→ 查阅卡路里消耗表"
+     },
+     {
+      "t": "troublesome",
+      "s": "trouble 是「麻烦」，troublesome 就是「麻烦的」，补充说明前面查表这件事怎么样。\n→ 很麻烦"
+     }
+    ],
+    "order": "英文是「觉得 + 查表 + 麻烦」，中文可以说成「查……表很麻烦」，先把「查表」放到前面，再说「他们觉得很麻烦」。",
+    "sum": "他们觉得查卡路里消耗表很麻烦。",
+    "cmp": "书上说「他们发现查询卡路里消耗表很麻烦」，和这里几乎一样，「发现」和「觉得」都行。"
+   }
+  },
   "It didn't need much capital to start with.": {
    "ph": [
     {
@@ -177,7 +296,21 @@
      "b": "be capable of",
      "m": "能够，有能力"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They have proved capable",
+      "s": "你多半会翻成「它们已经证明了有能力」。念一遍，prove 后面直接跟形容词，是「证明是、结果是」。have proved 是现在完成时，说明到现在已经被证明了。capable 是「有能力的」。\n→ 事实证明它们有能力"
+     },
+     {
+      "t": "of doing almost anything",
+      "s": "capable 后面一定要有 of，be capable of 是固定搭配，of 后面跟名词或 -ing。of doing 就是「做……」。almost anything 是「几乎任何事」。\n→ 做几乎任何事"
+     }
+    ],
+    "sum": "事实证明，它们几乎什么都能做。",
+    "cmp": "书上译成「几乎无所不能」，更简洁，也顺。"
+   }
   },
   "She has the capacity to take account of all the important factors.": {
    "ph": [
@@ -191,7 +324,39 @@
      "b": "take account of",
      "m": "考虑到"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She has the capacity",
+      "s": "你多半会翻成「她有这个容量」。capacity 是「容量」，但这里后面接 to do，是「能力」。\n→ 她有能力"
+     },
+     {
+      "t": "to take account of all the important factors",
+      "s": "这个 to take 是 to do 短语，放在名词 capacity 后面，补充说明是什么能力，就是「做某事的能力」。take account of 是固定搭配，「考虑到」。all the important factors 是「所有重要因素」。\n→ 考虑到所有重要因素"
+     }
+    ],
+    "sum": "她有能力把所有重要因素都考虑进去。",
+    "cmp": "和书上一样，意思相同。"
+   }
+  },
+  "A wandering cow was captured by the police.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "A wandering cow",
+      "s": "wandering 看起来像 -ing 动词，在这里是当形容词用，修饰 cow，就是「游荡的」。\n→ 一头游荡的牛"
+     },
+     {
+      "t": "was captured by the police",
+      "s": "你多半会翻成「被警察抓住」。was captured 是被动，就是「牛被别人怎么样了」。中文少用「被」，把 by 后面的人请出来当主语：谁抓？警察。\n→ 警察抓住了"
+     }
+    ],
+    "order": "被动句里做动作的人在最后，中文把警察提前当主语，牛变成宾语。",
+    "sum": "警察抓住了一头四处游荡的牛。",
+    "cmp": "书上保留了「被」，译成「被警察抓住了」，也通顺。"
+   }
   },
   "They are fond of sleeping in cabinets.": {
    "ph": [
@@ -200,7 +365,21 @@
      "b": "be fond of",
      "m": "喜欢"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They are fond of",
+      "s": "be fond of 是固定搭配，「喜欢」。后面的 of 后面不能跟动词原形，要跟名词或 -ing。\n→ 它们喜欢"
+     },
+     {
+      "t": "sleeping in cabinets",
+      "s": "sleeping 是 -ing，在 of 后面，就是「做某事」这件事。cabinet 你可能只认识「内阁」，这里是「柜子」。\n→ 睡在柜子里"
+     }
+    ],
+    "sum": "它们喜欢睡在柜子里。",
+    "cmp": "书上译成「储藏柜」，是对 cabinets 更具体的说法，意思一样。"
+   }
   },
   "Raising cattle, pigs, and other land-based animals requires vast sums of grain and water.": {
    "ph": [
@@ -209,7 +388,21 @@
      "b": "vast sums of",
      "m": "大量的"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Raising cattle, pigs, and other land-based animals",
+      "s": "一开头是 Raising，别慌。-ing 开头当主语，就是「做某事」这件事。raise 在这里是「饲养」，后面三种动物并列，都是饲养的对象，所以整件事当一个整体看。land-based 是「陆地上的」。\n→ 饲养牛、猪和其他陆生动物"
+     },
+     {
+      "t": "requires vast sums of grain and water",
+      "s": "你可能想翻成「需要巨大的数额的粮食」。vast sums of 是固定搭配，就是「大量的」。主语是 -ing 这件事，所以用单数的 requires。\n→ 需要大量的粮食和水"
+     }
+    ],
+    "sum": "饲养牛、猪和其他陆生动物，需要消耗大量的粮食和水。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "There are lots of different dishes to try and every region has its own special food.": {
    "ph": [
@@ -218,7 +411,21 @@
      "b": "lots of",
      "m": "许多"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "There are lots of different dishes to try",
+      "s": "There are 是「有」，lots of 是「许多」。to try 你可能翻成「有很多菜要尝试」。放回去试试：是菜在尝试，还是人在尝？是人。to try 是 to do 短语，放在名词 dishes 后面，补充说明是什么菜，就是「可以尝试的」。\n→ 有很多不同的菜肴可以尝试"
+     },
+     {
+      "t": "and every region has its own special food",
+      "s": "这里 and 连接的是两句完整的话，前后各有主谓。every region 是「每个地区」，its own 是「自己的」。\n→ 并且每个地区都有自己的特色食物"
+     }
+    ],
+    "sum": "有很多不同的菜可以尝，而且每个地区都有自己的特色美食。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "There are a number of different versions about the origin of the lion dance.": {
    "ph": [
@@ -229,6 +436,23 @@
     }
    ]
   },
+  "She doesn't really know where they originated.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "She doesn't really know",
+      "s": "这块照字面翻就行：doesn't really know 是「并不真正知道」。后面跟的是宾语从句，就是「知道的内容」。\n→ 她真不知道"
+     },
+     {
+      "t": "where they originated",
+      "s": "where 你多半翻成「在哪里」。originate 是「起源」，所以 where they originated 就是「它们起源于哪里」，注意 where 在从句里是语序的一部分，这里是主语 they 在前、动词 originated 在后，不是疑问句的倒装。\n→ 它们起源于哪里"
+     }
+    ],
+    "sum": "她并不真正清楚它们起源于哪里。",
+    "cmp": "书上译成「她真不知道它们的起源」，把从句换成名词，意思相近。"
+   }
+  },
   "Kids and adults alike find in dogs a source of attachment.": {
    "ph": [
     {
@@ -236,7 +460,22 @@
      "b": "a source of",
      "m": "……的来源"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Kids and adults alike find",
+      "s": "alike 放在 Kids and adults 后面，是「同样地、都」，就是「儿童和成人都」。find 在这里是「发现」。\n→ 儿童和成人都发现"
+     },
+     {
+      "t": "in dogs a source of attachment",
+      "s": "你多半翻成「在狗里一个依恋的来源」，读不通。这里宾语 a source of attachment 被挪到了后面，in dogs 提前了。把顺序调回来：find a source of attachment in dogs，「在狗身上找到依恋的来源」。a source of 是「……的来源」，attachment 是「依恋」。\n→ 在狗身上找到依恋的来源"
+     }
+    ],
+    "order": "原句把 in dogs 提前了，所以要把顺序调回 find ... in dogs。",
+    "sum": "儿童和成人一样，都能从狗身上找到依恋的寄托。",
+    "cmp": "和书上基本一样，书上说「依恋的来源」，这里换成了「寄托」，更像中文。"
+   }
   },
   "Half of the world's water resources have been seriously polluted.": {
    "ph": [
@@ -245,7 +484,21 @@
      "b": "half of",
      "m": "……的一半"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Half of the world's water resources",
+      "s": "half of 是「……的一半」。the world's water resources 是「世界上的水资源」。\n→ 世界上一半的水资源"
+     },
+     {
+      "t": "have been seriously polluted",
+      "s": "你多半会翻成「已经被严重污染了」。have been polluted 是被动，就是「水资源被别人怎么样了」。这里是现在完成时，说明到现在为止已经是这样了。seriously 是「严重地」。\n→ 已经被严重污染"
+     }
+    ],
+    "sum": "世界上有一半的水资源已经受到严重污染。",
+    "cmp": "和书上一样。"
+   }
   },
   "She always derives great pleasure from designing something new.": {
    "ph": [
@@ -259,7 +512,22 @@
      "b": "derive … from",
      "m": "从……获得"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She always derives great pleasure",
+      "s": "derive 你可能不认识。derive A from B 是固定搭配，「从 B 中得到 A」，所以眼睛往后找 from——后面有 from designing。A 是 great pleasure。\n→ 她总是获得极大的乐趣"
+     },
+     {
+      "t": "from designing something new",
+      "s": "from 后面跟的 designing 是 -ing，就是「做某事」这件事。something new 是「新东西」。\n→ 从设计新东西中"
+     }
+    ],
+    "order": "英文先说「得到乐趣」再说「从哪里」，中文习惯先说「从……中」，再说「获得乐趣」。",
+    "sum": "她总是能从设计新东西中获得极大的乐趣。",
+    "cmp": "和书上一样。"
+   }
   },
   "Online systems may deprive teachers of opportunities to make the best use of their expertise for their students.": {
    "ph": [
@@ -295,6 +563,58 @@
     "cmp": "意思一样。书上用「剥夺」，我换成「让……失去」，口气软一点，两个都行。"
    }
   },
+  "The men were seized as they left the building.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The men were seized",
+      "s": "你多半会翻成「这些人被抓住」。were seized 是被动，就是「他们被别人怎么样了」。seize 是「抓住、逮捕」。\n→ 这些人被抓获"
+     },
+     {
+      "t": "as they left the building",
+      "s": "as 你可能只认识「因为」。放回去试试：因为他们离开房子，所以被抓？意思歪了。这里 as 带的是时间状语从句，就是「在……的时候」。left 是 leave 的过去式，不是「左边」。\n→ 他们离开大楼的时候"
+     }
+    ],
+    "order": "英文把「什么时候」放在后面，中文习惯先说时间，把「离开大楼时」提到前面。",
+    "sum": "这些人在离开大楼的时候被抓获了。",
+    "cmp": "书上把 building 译成「房子」，我这里译成「大楼」，其余一样。"
+   }
+  },
+  "Her father was shot by someone trying to rob his small retail shop.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Her father was shot by someone",
+      "s": "你多半会翻成「她的父亲被某个人射击」。was shot 是被动，就是「她父亲被别人怎么样了」。这里 shot 是「开枪打中」。\n→ 她父亲被某个人开枪打中"
+     },
+     {
+      "t": "trying to rob his small retail shop",
+      "s": "trying 是 -ing 短语，放在 someone 后面，补充说明这个人，就是「正在……的人」。trying to rob 就是「试图抢劫」。retail shop 是「零售商店」。\n→ 这个人试图抢劫他的小零售店"
+     }
+    ],
+    "sum": "她的父亲被一个想抢劫他小零售店的人开枪打中了。",
+    "cmp": "和书上基本一样，都是把「试图抢劫……」这一长段放在「人」前面，当前面的修饰语。"
+   }
+  },
+  "When the rats detect the smell, they stop and rub their legs.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "When the rats detect the smell",
+      "s": "When 带的是时间状语从句，就是「在……的时候」。detect 你可能不认识，它是「察觉、闻到」。\n→ 当老鼠闻到这种气味时"
+     },
+     {
+      "t": "they stop and rub their legs",
+      "s": "你多半会翻成「它们停下来并且摩擦它们的腿」。意思对，但中文里 and 连接的两个动作可以直接连着说。stop 后面是 and rub，两个动作都是 they 做的。\n→ 它们会停下来，摩擦自己的腿"
+     }
+    ],
+    "sum": "老鼠闻到这种气味时，会停下来摩擦自己的腿。",
+    "cmp": "和书上一样。"
+   }
+  },
   "We must continue to strive for greater efficiency.": {
    "ph": [
     {
@@ -302,7 +622,21 @@
      "b": "strive for",
      "m": "为……而努力"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "We must continue to strive",
+      "s": "你多半会翻成「我们必须继续去努力」，那个「去」多余。continue to do 是「继续做某事」，to strive 是 to do 短语，所以 continue to strive 就是「继续努力」。strive 是「努力」，后面一般要跟 for。\n→ 我们必须继续努力"
+     },
+     {
+      "t": "for greater efficiency",
+      "s": "strive for 是固定搭配，「为……而努力」。greater efficiency 是「更高的效率」。\n→ 争取更高的效率"
+     }
+    ],
+    "sum": "我们必须继续努力，争取更高的效率。",
+    "cmp": "书上译成「为提高效率而努力」，意思一样。"
+   }
   },
   "The local clubs are making every effort to interest more young people.": {
    "ph": [
@@ -311,7 +645,21 @@
      "b": "make every effort to do",
      "m": "尽一切努力做某事"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The local clubs are making every effort",
+      "s": "are making 是进行时，没什么难的。make every effort 是固定搭配，「尽一切努力」，不是「做每一个努力」。local 是「当地的」。\n→ 地方俱乐部正在尽一切努力"
+     },
+     {
+      "t": "to interest more young people",
+      "s": "你多半会想：interest 是「兴趣」，名词。这里 interest 是动词，意思是「使……感兴趣」，to interest 是 to do 短语，说明努力做什么。\n→ 来吸引更多的年轻人"
+     }
+    ],
+    "sum": "地方俱乐部正在想尽办法吸引更多的年轻人。",
+    "cmp": "书上说「尽一切努力来吸引」，和这里意思一样。"
+   }
   },
   "This action would not be in accord with our policy.": {
    "ph": [
@@ -334,7 +682,21 @@
      "b": "so that",
      "m": "这样，以便"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Make sure to bring the audience into the conversation",
+      "s": "你可能想翻成「做确定去把听众带进对话」，读不通。这是祈使句，一开头就是动词，make sure to do 是固定搭配，「确保做某事」。bring A into B 是「把 A 带进 B」，audience 是「听众」。\n→ 确保让听众参与到对话中来"
+     },
+     {
+      "t": "so that it is not one-sided",
+      "s": "so that 带的是从句，就是「这样……」。it 指谁？放回去试：听众不一边倒？不通。对话不一边倒？通。所以 it 是 the conversation。one-sided 是「一边倒的」。\n→ 这样对话就不会一边倒"
+     }
+    ],
+    "sum": "要确保让听众参与进对话，这样对话才不会变成一边倒。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "Some people regard professional change as an unpleasant experience that disturbs their stable careers.": {
    "ph": [
@@ -357,7 +719,22 @@
      "b": "regardless of",
      "m": "不管，无论"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Skills are highly valued",
+      "s": "你多半会翻成「技能被高度重视」。are valued 是被动，就是「技能被别人怎么样了」。highly 是「高度地」，所以就是「很受重视」。\n→ 技能很受重视"
+     },
+     {
+      "t": "regardless of age",
+      "s": "regardless of 是固定搭配，「不管、无论」。你可能想翻成「没有关于年龄」，不对。看到 regardless of，脑子里换成「无论」。\n→ 无论年龄大小"
+     }
+    ],
+    "order": "英文把「无论……」放在后面，中文习惯先说「无论……」，再说结果。",
+    "sum": "无论年龄大小，技能都很受重视。",
+    "cmp": "和书上一样。"
+   }
   },
   "What distinguishes children from adults is their strong ability to derive joy from what they are doing.": {
    "ph": [
@@ -407,6 +784,19 @@
     }
    ]
   },
+  "Firefighters tried to extinguish the flames.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Firefighters tried to extinguish the flames",
+      "s": "你多半会翻成「消防员尝试熄灭火焰」。意思对，但 try to do 是「努力去做」，不是「试一试」。to extinguish 是 to do 短语，说明努力做什么。extinguish 是「扑灭」。\n→ 消防员努力扑灭火焰"
+     }
+    ],
+    "sum": "消防员奋力扑灭火焰。",
+    "cmp": "书上译成「消防队员奋力灭火」，更简洁，意思一样。"
+   }
+  },
   "Compared with other mammals, our numerical instincts are not as remarkable as many assume.": {
    "ph": [
     {
@@ -414,7 +804,25 @@
      "b": "compared with",
      "m": "与……相比"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Compared with other mammals",
+      "s": "Compared 是过去分词，Compared with 是 -ed 短语，放在句首，就是「和……相比」。mammals 是「哺乳动物」。\n→ 与其他哺乳动物相比"
+     },
+     {
+      "t": "our numerical instincts are not as remarkable",
+      "s": "numerical instincts 你可能翻成「数字的本能」，也行，更通顺是「对数字的直觉」。not as remarkable as 是「不像……那样出色」，眼睛往后找第二个 as。\n→ 我们对数字的直觉并不像……那样出色"
+     },
+     {
+      "t": "as many assume",
+      "s": "as 带的是从句，就是「像……那样」。many 在这里省略了 people，就是「许多人」。assume 是「以为」，后面省略了 it，就是「许多人以为的那样」。\n→ 许多人以为的那样"
+     }
+    ],
+    "sum": "和其他哺乳动物比起来，我们对数字的直觉并没有许多人以为的那么出色。",
+    "cmp": "书上说「并不像许多人认为的那样卓越」，意思一样，「出色」比「卓越」更口语。"
+   }
   },
   "She still remembers the sting of her first experience skipping an assignment due to the high prices.": {
    "ph": [
@@ -438,6 +846,19 @@
     "order": "「痛苦」是中心词，前面一长串都是在说是哪一次的痛苦，所以先说「第一次因为价格太高而没交作业」，最后落到「那种痛苦」。",
     "sum": "她仍然记得第一次因为价格太高而没交作业的那种痛苦。",
     "cmp": "和书上基本一样，书上译成「所经历的那种痛苦」，把 experience 也译出来了。"
+   }
+  },
+  "She was pierced by a chicken bone.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "She was pierced by a chicken bone",
+      "s": "你多半会翻成「她被一块鸡骨头刺穿」。was pierced 是被动，就是「她被别人怎么样了」。pierce 是「刺穿、刺破」。by 后面的东西是造成刺伤的东西，中文可以说成「被……刺到了」。\n→ 她被一块鸡骨头刺到了"
+     }
+    ],
+    "sum": "她被一根鸡骨头刺伤了。",
+    "cmp": "书上译成「刺到了」，我这里是「刺伤了」，意思差不多。"
    }
   },
   "She thrust her way into the crowd.": {
