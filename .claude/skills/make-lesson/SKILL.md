@@ -70,7 +70,8 @@ id: u08-l01；unit: 8；lesson: 1；part: 1；书页范围：215 到 222；词�
 
 释义通过后，过额度闸门，后台启动一个 `note-writer`（Sonnet，不占 N 个名额；不要用 worktree，它只写自己那课的文件），提示词给课号 id 并写明「新课」。它先写词组、再把讲解写进 `work/notes-an/<id>.json`，用 `python pipeline/notes_an.py <id> --merge` 合并。完成时自己跑
 `python pipeline/validate.py <id>`（看「词组解析」开头的 ERROR）和 `python pipeline/note_sents.py <id> --check`，
-不 OK 就 SendMessage 回同一个子代理；再抽两三句带「析」的讲解看一眼（先行词、would 是不是虚拟、有没有「猜你会怎么翻 → 发现问题 → 动手的办法 → 中文」的套路）。
+不 OK 就 SendMessage 回同一个子代理；再抽两三句带「析」的讲解看一眼（先行词、would 是不是虚拟、有没有「猜你会怎么翻 → 发现问题 → 动手的办法 → 中文」的套路、被动 / 从句 / 非谓语有没有点名字并跟白话）。
+选句标准（2026-10-19 起）：除最简单的简单句都写讲解（规则在 `pipeline/prompts/notes.md` 第二节），一课通常 15～25 句。已有讲解的课要按新标准补写时，提示词写明「只补讲解」，子代理写 `work/notes-an/<id>.add.json`、跑 `--add`，旧讲解一句不动。
 
 **本地不生成音频**（本地网络跑 edge-tts 会卡死），音频统一交给云端 `audio` 工作流，见第 3 节。
 
