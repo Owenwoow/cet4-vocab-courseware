@@ -9,7 +9,7 @@
      log:<日期> = {g, m, f 当天评分次数, dv 当天复习的到期词数}
      drill:<范围> = 巩固做到一半的进度（同一天有效，做完记 0），字段见 progSave
      （学习新词页的词群速览 = 本群书上导图 + 词表，见 lpBuild；速览本身不存学习数据）
-     learnPeek = 学习新词页词群速览是否展开（true / false，没存过时宽屏展开、窄屏收起）
+     learnPeek = 学习新词页词群速览是否展开，宽屏、窄屏各记各的 {w, n}（true / false，没存过时宽屏展开、窄屏收起）
      vocab:<原形> = 生词本：{w 原形, x 点到的写法, m 释义, p 音标, k 出处课id, e 出处词条（空 = 没有例句，如扩展词）,
                 at 加入日期, o 加入时刻, bk 书中位置 [课id, 词条序号, 是否扩展词], ph 1 = 例句里标出的词组（w 是词组原形，x 是句中写法、拆开的用「 … 」连）} + 复习卡字段 a s d l r n t（移出记 0）。
                 加入当天算学习日，复习规则和书上的词一样（原形含空格的按词组卡出题，见 srs.js isPhrase）；这个词所在的词群记为学过时，它从生词本「毕业」（记 0），以书上的卡为准 */
@@ -678,7 +678,8 @@ const Study = (() => {
      宽屏（≥1180px）左栏速览、右栏词卡；窄屏速览在词卡上方，默认收起成一行。展开 / 收起记在 learnPeek（走 Sync）。
      题目没答完（看词选义、听音选义没作答，翻卡没翻开）时释义全遮住，点了只读音，免得泄露答案 */
   const lpWide = matchMedia("(min-width:1180px)");
-  const lpExpanded = () => { const v = store.get("learnPeek", null); return v === null ? lpWide.matches : !!v; };
+  const lpSide = () => (lpWide.matches ? "w" : "n");   // 宽屏、窄屏各记各的：电脑上展开不该把手机也撑开
+  const lpExpanded = () => { const v = store.get("learnPeek", null), o = v && typeof v === "object" ? v[lpSide()] : undefined; return o === undefined ? lpWide.matches : !!o; };
   const lpMasked = q => !D.back && q.kind !== "study" && (q.kind === "flip" ? !q.flipped : q.state === "ask");
   function lpBuild(x) {
     const g = x.grp, rows = g.entries.map(e => peekRow(e, "", `<span class="lpm"></span>`, false)).join("");
@@ -720,7 +721,10 @@ const Study = (() => {
     sp.querySelector(".lmain").innerHTML = html;
     lpPaint(q, fresh);
   }
-  function lpFold() { store.set("learnPeek", !lpExpanded()); lpPaint(curQ(), true); }
+  function lpFold() {
+    const v = store.get("learnPeek", null), o = v && typeof v === "object" ? {...v} : {};
+    o[lpSide()] = !lpExpanded(); store.set("learnPeek", o); lpPaint(curQ(), true);
+  }
   function lpClick(t) {
     if (t.closest("[data-lpfold]")) { lpFold(); return; }
     const q = curQ(), x = q.x, el = $("#lpeek"), masked = lpMasked(q);
