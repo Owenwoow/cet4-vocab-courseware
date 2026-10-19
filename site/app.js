@@ -15,7 +15,12 @@ loadKnown();
 const VOICE_NAMES = {ava: "Ava", andrew: "Andrew", sonia: "Sonia", ryan: "Ryan"};
 const VOICE_DESC = {ava: "美式 · 女声", andrew: "美式 · 男声", sonia: "英式 · 女声", ryan: "英式 · 男声"};
 const DEFAULTS = {voice: "ava", rate: 1, mask: false, hideKnown: false, scope: "group", withZh: true, loop: false, theme: "auto",
-  examDate: "2026-12-12", dailyCap: 120, autoSay: true, drillOrder: "course", drillMode: "quiz", phLine: true, videoPrefer: "精讲带背"};
+  examDate: "2026-12-12", dailyCap: 120, autoSay: true, drillOrder: "course", drillMode: "quiz", phLine: true, videoPrefer: "精讲带背",
+  /* 学习新词、复习（study.js 用，默认值 = 加设置之前的行为）：learnStages 每个新词过几关（1 看词选义 / 2 + 听音选义 / 3 + 拼写）；
+     learnSize 一次学多少（1 / 2 群，15 = 至少 15 词）；autoEx 学新词词卡读完单词接着读例句；autoNext 答对（记得）后 1.5 秒自动下一题；
+     slowMode 想得久算模糊（loose ×1.5 / std / strict ×0.75 / off 不按时间）；quizListen、quizSpell 出不出听音、拼写题；roundSize 今天到期每轮最多几个（0 = 不限） */
+  learnStages: 2, learnSize: 1, autoEx: false, autoNext: false, slowMode: "std", quizListen: true, quizSpell: true, roundSize: 25};
+const NUM_SETS = ["rate", "dailyCap", "learnStages", "learnSize", "roundSize"];   // 设置页按钮上的值是字符串，这几个存成数字
 const S = {...DEFAULTS};
 const loadSettings = () => Object.assign(S, DEFAULTS, Object.fromEntries(Sync.entries("set:")));
 function setS(k, v) { S[k] = v; Sync.set("set:" + k, v); applySettings(); if (k === "videoPrefer" && L) renderLesson(); }   // 视频按钮按偏好重画（复习页每次进入都会重画）
@@ -745,14 +750,32 @@ function renderSettings() {
       ${sw("mask", "背诵模式", "遮住释义、记忆法和译文；点单词意思一次全开，例句译文单独点开。课文页右下角「遮」也能随手切换")}
       ${sw("hideKnown", "隐藏已会", "标为「已会」的词卡不显示，磨耳朵也跳过它们")}
       ${sw("phLine", "例句词组下划线", "例句里标出的词组（书外补充）画虚线；关掉只是不画线，点词组照样显示词组释义")}
+      <div class="row"><span><b>讲解视频优先用</b><small>词卡上 ▶ 先播哪一种：精讲带背每课一段（约 1 小时，到 U8）；全程班每单元一段（约 4 小时，U1–U10 都有）。选的这种没有这个词就用另一种，播放窗里也随时能换</small></span>
+        ${seg("videoPrefer", [["精讲带背", "精讲带背"], ["全程班", "全程班"]])}</div>
     </section>
-    <section class="panel"><h2>背词</h2>
+    <section class="panel"><h2>学习新词</h2>
+      <div class="row"><span><b>每个新词过几关</b><small>先看一遍词卡，再按顺序考：看词选义 → 听音选义 → 拼写（关掉听音题时第 2 关换成看义选词；词组第 3 关用看义选词代替拼写）；错满 3 次后再答对一次也算过关</small></span>
+        ${seg("learnStages", [[1, "1 关"], [2, "2 关"], [3, "3 关"]])}</div>
+      <div class="row"><span><b>一次学多少</b><small>按书顺序取词群；「至少 15 词」不够 15 个就接下一群，最后一群整群带上不拆。每一群的词全部过关就记为今天学的，中途退出已过关的群照样算。下一次进学习新词起生效</small></span>
+        ${seg("learnSize", [[1, "1 群"], [2, "2 群"], [15, "至少 15 词"]])}</div>
+      ${sw("autoEx", "词卡自动读例句", "「先看一遍」的词卡读完单词接着读例句")}
+    </section>
+    <section class="panel"><h2>复习</h2>
       <div class="row"><span><b>考试日期</b><small>首页倒计时用</small></span><input type="date" data-set="examDate" value="${esc(S.examDate)}"></div>
       <div class="row"><span><b>每天复习上限</b><small>到期的词超过这个数，多出来的按拖得久、火苗多优先，自动排到后面几天</small></span>
         ${seg("dailyCap", [[80, "80"], [120, "120"], [200, "200"]])}</div>
-      ${sw("autoSay", "巩固时自动读单词", "每翻到一个新词先读一遍；按 R 再读")}
-      <div class="row"><span><b>讲解视频优先用</b><small>词卡上 ▶ 先播哪一种：精讲带背每课一段（约 1 小时，到 U8）；全程班每单元一段（约 4 小时，U1–U10 都有）。选的这种没有这个词就用另一种，播放窗里也随时能换</small></span>
-        ${seg("videoPrefer", [["精讲带背", "精讲带背"], ["全程班", "全程班"]])}</div>
+      <div class="row"><span><b>「今天到期」每轮最多</b><small>一轮做完可以再来一轮；仍受每天复习上限约束</small></span>
+        ${seg("roundSize", [[15, "15"], [25, "25"], [40, "40"], [0, "不限"]])}</div>
+      <div class="row"><span><b>出题方式</b><small>智能出题按熟练度出选择题、例句、拼写；翻卡自评是看英文想意思，翻开后自己打分。巩固页上的同一个开关</small></span>
+        ${seg("drillMode", [["quiz", "智能出题"], ["flip", "翻卡自评"]])}</div>
+      <div class="row"><span><b>抽查顺序</b><small>自由抽查用（「今天到期」固定按熟练度排，「学习新词」按书顺序）。巩固页上的同一个开关</small></span>
+        ${seg("drillOrder", [["course", "课件顺序"], ["alpha", "字母顺序"], ["freq", "重要性"], ["random", "随机"]])}</div>
+      ${sw("autoSay", "自动读单词", "学习新词的词卡、巩固时每翻到一个新词先读一遍；按 R 再读（听音、拼写题总会读）")}
+      ${sw("autoNext", "答对后自动下一题", "选择题、拼写题判「记得」时停 1.5 秒自动进下一题，期间按任意键或点页面就停在这张卡；模糊、答错仍等你按「继续」")}
+      <div class="row"><span><b>想得久算模糊</b><small>选择题答对但超过时限记为模糊（标准：看词选义、听音 8 秒，看义选词 10 秒，例句 15 秒）；关掉就只看对错。翻卡自评不受影响</small></span>
+        ${seg("slowMode", [["loose", "宽松"], ["std", "标准"], ["strict", "严格"], ["off", "关掉"]])}</div>
+      ${sw("quizListen", "出听音题", "关掉后复习不出听音选义（换成更难一级的题），学习新词第 2 关换成看义选词")}
+      ${sw("quizSpell", "出拼写题", "关掉后最高出到例句题 / 看义选词，熟练度不再要求拼对过")}
     </section>
     <section class="panel"><h2>磨耳朵</h2>
       <div class="row"><span><b>播放范围</b><small>从右下角 🎧 开始</small></span>${seg("scope", [["group", "当前词群"], ["lesson", "整课"]])}</div>
@@ -816,7 +839,7 @@ $("#settingsView").addEventListener("click", e => {
     return;
   }
   const b = t.closest("button[data-set]");
-  if (b) { const k = b.dataset.set, v = b.dataset.val; setS(k, k === "rate" || k === "dailyCap" ? +v : v); renderSettings(); if (k === "voice") speak(allEntries()[0].word); return; }
+  if (b) { const k = b.dataset.set, v = b.dataset.val; setS(k, NUM_SETS.includes(k) ? +v : v); renderSettings(); if (k === "voice") speak(allEntries()[0].word); return; }
   if (t.id === "clearKnown" && confirm(`清空 ${known.size} 个「已会」记录？`)) { [...known].forEach(w => setKnown(w, false)); renderSettings(); }
   if (t.id === "syncNow") Sync.syncNow();
   if (t.id === "syncOff" && confirm("断开后这台设备不再同步，确定？")) { Sync.disconnect(); renderSettings(); }

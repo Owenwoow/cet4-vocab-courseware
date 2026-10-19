@@ -107,6 +107,9 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .seg button{border:none;border-radius:0;padding:6px 12px;background:var(--card)}
 .seg button+button{border-left:1px solid var(--line)}
 .seg button.on{background:var(--accent);color:#fff}
+/* 设置页：说明长、按钮多的行放不下时，按钮换到下一行（手机上） */
+.settings .row:has(>.seg){flex-wrap:wrap}.settings .row:has(>.seg)>span{flex:1 1 240px}
+.autonext{display:block;margin-top:4px;font-size:12px;font-weight:400;color:var(--sub)}
 .voices{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;padding:6px 0 12px}
 .voice{position:relative;display:flex;flex-direction:column;align-items:flex-start;text-align:left;padding:10px 12px;border-radius:12px;font-size:15px}
 .voice small{color:var(--sub);font-size:12px}

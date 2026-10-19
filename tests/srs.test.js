@@ -380,3 +380,55 @@ test("词组卡一路看词组选义记得，也能走到牢记", () => {
   assert.equal(SRS.level(c), 5);
   assert.equal(SRS.pickType(c), T.QUICK);
 });
+
+/* ---------- 设置：想得久算模糊的时限倍数、关掉的题型 ---------- */
+test("判分时限倍数：宽松 ×1.5、严格 ×0.75，0 = 不按时间判模糊；不传和 1 一样", () => {
+  assert.equal(SRS.gradeChoice(true, 12000, "mean", {slow: 1.5}), "g");
+  assert.equal(SRS.gradeChoice(true, 12001, "mean", {slow: 1.5}), "m");
+  assert.equal(SRS.gradeChoice(true, 6000, "mean", {slow: 0.75}), "g");
+  assert.equal(SRS.gradeChoice(true, 6001, "mean", {slow: 0.75}), "m");
+  assert.equal(SRS.gradeChoice(true, 22500, "cloze", {slow: 1.5}), "g");
+  assert.equal(SRS.gradeChoice(true, 600000, "cloze", {slow: 0}), "g");
+  assert.equal(SRS.gradeChoice(false, 1000, "mean", {slow: 0}), "f");
+  for (const ms of [7000, 8000, 8001, 20000]) assert.equal(SRS.gradeChoice(true, ms, "mean", {}), SRS.gradeChoice(true, ms, "mean", {slow: 1}));
+});
+
+test("关掉听音：本该出听音的换成例句题（看词选义答对过就直接升），其余不变", () => {
+  const off = {off: [T.LISTEN]};
+  assert.equal(SRS.pickType(card({}), off), T.MEAN);
+  assert.equal(SRS.pickType(card({n: 1, h: "g", s: 1}), off), T.CONTEXT);           // 2 级轮到听音
+  assert.equal(SRS.pickType(card({n: 2, h: "gg", s: 2, q: 1}), off), T.MEAN);       // 2 级轮到看词选义
+  assert.equal(SRS.pickType(card({n: 3, h: "gg", s: 3, q: 0}), off), T.CONTEXT);    // 本来被 q+1 限在听音
+  assert.equal(SRS.pickType(card({n: 4, h: "ggg", s: 4, q: 2}), off), T.SPELL);
+  assert.equal(SRS.pickType(card({n: 5, h: "gggg", s: 4, q: 3}), off), T.QUICK);
+  assert.equal(SRS.level(card({n: 4, h: "ggg", s: 4, q: 2}), off), 4);              // 4 级照旧看例句题
+});
+
+test("关掉拼写：最高出到例句题，熟练度不要求拼对过、能到 5 级", () => {
+  const off = {off: [T.SPELL]};
+  assert.equal(SRS.pickType(card({n: 4, h: "ggg", s: 4, q: 2}), off), T.CONTEXT);
+  assert.equal(SRS.pickType(card({n: 3, h: "gg", s: 3, q: 1}), off), T.CONTEXT);
+  assert.equal(SRS.level(card({n: 5, h: "gggg", s: 4, q: 2}), off), 5);
+  assert.equal(SRS.level(card({n: 5, h: "gggg", s: 4, q: 0}), off), 5);             // 同词组卡：只看站数和连对
+  assert.equal(SRS.level(card({n: 5, h: "gggg", s: 3, q: 2}), off), 3);
+  assert.equal(SRS.level(card({n: 5, h: "gggm", s: 4, q: 2}), off), 2);
+  assert.equal(SRS.pickType(card({n: 5, h: "gggg", s: 4, q: 2}), off), T.QUICK);
+  const both = {off: [T.LISTEN, T.SPELL]};
+  for (let s = 0; s <= 5; s++) for (const h of ["", "g", "gg", "ggg", "gggg", "gf"]) for (const q of [0, 1, 2])
+    assert.ok([T.MEAN, T.CONTEXT, T.QUICK].includes(SRS.pickType(card({s, h, n: h.length, q}), both)), `s=${s} h=${h} q=${q}`);
+});
+
+test("关掉拼写：一路记得能走到牢记，间隔按放宽的熟练度拉开", () => {
+  const off = [T.SPELL];
+  let c = SRS.newCard("2026-10-12");
+  for (let i = 0; i < 12 && SRS.level(c, {off}) < 5; i++) {
+    const ty = SRS.pickType(c, {off});
+    assert.notEqual(ty, T.SPELL);
+    c = SRS.rate(c, "g", c.d, {type: ty, key: "abandon", off, exam: "2027-06-12"});
+  }
+  assert.equal(SRS.level(c, {off}), 5);
+  assert.equal(SRS.level(c), 4);                                                      // 不放宽时还差拼写
+  const t = "2026-10-20", base = {a: "2026-09-01", s: 3, d: t, n: 4, l: 0, h: "ggg", q: 2};
+  assert.equal(SRS.rate(base, "g", t, {off}).d, "2026-11-19");                        // 5 级 30 天
+  assert.equal(SRS.rate(base, "g", t).d, "2026-11-10");                               // 默认 4 级 21 天
+});
