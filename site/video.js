@@ -3,6 +3,7 @@
    数据 data/video/<课id>.json（pipeline/video_align.py 生成，一课一份）：
      sources：这一课覆盖到的视频 [{id, bv, label, alive}]，数组顺序就是优先级
      entries：词条号 no（字符串）→ {视频 id: [分P号, 秒] 或 [分P号, 秒, 1]}，第三位 1 = 推算出来的（approx，页面标「约」）
+   电脑端另有「B 站分屏标签」：▶ 可让固定名字的 B 站标签跳到 url（不是 embed），见 app.js 与 docs/plans/2026-10-19-video-split.md
    同一套讲课被多个 UP 主上传，视频可能下架（alive: false），所以每个词有多个备选，按优先级挑还在的 */
 "use strict";
 const Video = (() => {

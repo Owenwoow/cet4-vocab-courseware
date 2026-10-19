@@ -68,6 +68,9 @@ function videoHTML(data, no, sm, word = "") {
 /* ---------- 讲解视频页内播放：B 站嵌入播放器，电脑上是画中画式浮窗，手机贴在底部；不离开页面，看完 ✕ 掉接着背 ----------
    没登录 B 站时嵌入播放器只有 360p，窗口里留一个「B 站 ↗」去 B 站看高清 */
 let vp = null;   // 播放窗，没开时是 null
+/* 电脑端浮窗的 iframe 加 sandbox 且不给 allow-popups：B 站外链播放器点画面默认「开 B 站 + 暂停」，拦掉 window.open 后只剩暂停。
+   手机端不加（手机上贴底播放器行为不同，且视频只改电脑端）。副作用：播放器里的「进入哔哩哔哩」、推荐视频等链接点不动 */
+const SANDBOX = ' sandbox="allow-scripts allow-same-origin allow-presentation"';
 function openVideo(vs, i, word) {
   const v = vs[i];
   if (!v) return;
@@ -76,9 +79,9 @@ function openVideo(vs, i, word) {
   if (fresh) { vp = document.createElement("div"); vp.id = "vplayer"; document.body.append(vp); }
   vp.innerHTML = `<div class="vphead" title="拖动移动，双击恢复默认大小和位置"><b>${esc(word)}</b>
       <select class="vpsel" title="换个视频看">${vs.map((o, j) => `<option value="${j}"${j === i ? " selected" : ""}>${esc(o.label)}${o.approx ? "（约）" : ""}</option>`).join("")}</select>
-      <a class="vpout" href="${esc(v.url)}" target="_blank" rel="noopener" title="去 B 站看（登录后能看高清）">B 站 ↗</a>
+      <a class="vpout" href="${esc(v.url)}" target="_blank" rel="noopener" title="${vpNarrow() ? "去 B 站看（登录后能看高清）" : "在 B 站分屏标签里看（登录后能看高清），同时关掉这个浮窗"}">B 站 ↗</a>
       <button class="vpx" title="关闭（Esc）">✕</button></div>
-    <div class="vpbox"><iframe src="${esc(Video.embed(v))}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen scrolling="no"></iframe></div>
+    <div class="vpbox"><iframe src="${esc(Video.embed(v))}"${vpNarrow() ? "" : SANDBOX} allow="autoplay; fullscreen; picture-in-picture" allowfullscreen scrolling="no"></iframe></div>
     ${["nw", "ne", "sw", "se"].map(c => `<i class="vpr" data-c="${c}" title="拖动缩放"></i>`).join("")}`;
   vp._vs = vs; vp._w = word;
   if (fresh) vpPlace(store.get("vpGeo", null));
@@ -135,6 +138,33 @@ document.addEventListener("dblclick", e => {
   vpPlace(VP_DEF); store.set("vpGeo", vp._g, true);
 });
 function closeVideo() { if (vp) { vp.remove(); vp = null; } document.body.classList.remove("vp-open"); }
+
+/* ---------- B 站分屏标签（只电脑端，说明见 docs/plans/2026-10-19-video-split.md）----------
+   用固定窗口名 cet4-bili 在普通新标签里开 B 站视频页（不加 noopener，才拿得到引用），用户自己把标签拖成左右分屏。
+   分屏状态下所有 ▶ 都 window.open(url, 同一个名字)，让那个标签重新加载跳过去；标签被关掉就自动退出，这一下照旧开浮窗。
+   状态只在当前页面内存里，刷新后再点一次「B站」按钮，同名窗口会被接管，不会多开 */
+const SPLIT_NAME = "cet4-bili";
+let splitWin = null;   // 分屏状态：分屏标签的引用，没在分屏是 null
+function splitSet(w) { splitWin = w; $("#splitFab").classList.toggle("on", !!w); }
+/* 分屏状态是否有效（只电脑端）；标签已被关掉就退出分屏 */
+function splitCheck() {
+  if (!splitWin) return false;
+  if (vpNarrow() || splitWin.closed) { splitSet(null); return false; }
+  return true;
+}
+function splitGo(v) {
+  if (!v) return false;
+  const w = window.open(v.url, SPLIT_NAME);
+  if (!w) return false;   // 被浏览器拦了
+  splitSet(w); closeVideo();
+  return true;
+}
+$("#splitFab").onclick = () => {
+  if (splitCheck()) { splitSet(null); return; }   // 再点一次退出分屏状态，B 站标签不关
+  const sec = L && currentGroup(), card = sec && readingCard(sec), a = card && card.querySelector("a[data-vi]");
+  if (!a) { toast("这个词没有可用的讲解视频"); return; }
+  if (!splitGo(JSON.parse(a.dataset.vs)[0])) toast("浏览器拦住了新标签页，请允许本站弹出窗口");
+};
 document.addEventListener("click", e => {
   const t = e.target; if (!t.closest) return;
   const a = t.closest("a[data-vi]");
@@ -142,10 +172,17 @@ document.addEventListener("click", e => {
     if (e.button || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;   // 想在新标签页开的照旧
     const host = a.closest("[data-vs]");
     e.preventDefault(); e.stopPropagation();   // 也不让复习卡、列表行的点击处理收到
+    if (splitCheck()) { splitGo(JSON.parse(host.dataset.vs)[+a.dataset.vi]); return; }   // 分屏状态：让右边的标签跳过去，不开浮窗
     openVideo(JSON.parse(host.dataset.vs), +a.dataset.vi, host.dataset.vw);
     return;
   }
   if (vp && t.closest(".vpx")) closeVideo();
+  /* 电脑端浮窗标题栏的「B 站 ↗」：改在分屏标签里开同一个视频和秒数，并关掉浮窗 */
+  if (vp && !vpNarrow() && t.closest(".vpout") && !(e.button || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey)) {
+    e.preventDefault();
+    const v = vp._vs[+vp.querySelector(".vpsel").value];
+    if (!splitGo(v)) window.open(v.url, "_blank");   // 分屏标签被拦就退回普通新标签
+  }
 }, true);
 document.addEventListener("change", e => { if (vp && e.target.classList.contains("vpsel")) openVideo(vp._vs, +e.target.value, vp._w); });
 /* Esc 先关播放窗（在捕获阶段截住，复习页的 Esc 不会同时触发） */
