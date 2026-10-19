@@ -49,7 +49,39 @@
      "b": "take … action",
      "m": "采取行动"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The city officials then decided",
+      "s": "这块照字面翻就行：officials 是官员，then 是「随后」。\n→ 市政府官员随后决定"
+     },
+     {
+      "t": "to take drastic action",
+      "s": "decided 后面的 to take 是 to do 短语，就是「决定去做某事」，to 后面跟的就是决定要做的事。take action 是固定搭配，「采取行动」。drastic 你多半会翻成「剧烈的」，说「剧烈的行动」念一遍有点怪；它指办法力度大、不拖泥带水，说成「果断的」就顺了。\n→ 采取果断行动"
+     }
+    ],
+    "sum": "市政府官员随后决定采取果断措施。",
+    "cmp": "意思一样，书上用「行动」，我换成「措施」，两个都行。"
+   }
+  },
+  "His childhood was one part tragedy, equal part mystery.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "His childhood was one part tragedy",
+      "s": "你多半会翻成「他的童年是一部分悲剧」。念一遍，不知道在说什么。one part 像做菜配方里的「一份」，是在说比例：一份是悲剧。\n→ 他的童年一份是悲剧"
+     },
+     {
+      "t": "equal part mystery",
+      "s": "逗号后面没有动词，是因为省略了前面已经出现过的 was，补回来是 (was) equal part mystery。equal 你可能翻成「平等的」，这里是「同等的」：同样的一份是悬疑。两份一样多，合起来就是「一半一半」。\n→ 另一半是悬疑"
+     }
+    ],
+    "order": "把两份拼起来，用「一半……一半……」最自然。",
+    "sum": "他的童年，一半是悲剧，一半是谜团。",
+    "cmp": "和书上的「一半是悲剧，一半是悬疑」思路一样，我把 mystery 说成「谜团」，更像在说童年。"
+   }
   },
   "It's a charity comedy night with lots of different acts.": {
    "ph": [
@@ -175,6 +207,71 @@
     }
    ]
   },
+  "Few people are successful when they try to build their first brand.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Few people are successful",
+      "s": "你多半会翻成「很少的人是成功的」。念一遍，有点绕。Few 不带 a，是「几乎没有」，带否定的意思（a few 才是「几个」）。「很少有人成功」就顺了。\n→ 很少有人成功"
+     },
+     {
+      "t": "when they try to build their first brand",
+      "s": "when 带的是时间状语从句，就是「在……的时候」。try to build 是 try to do，「尝试做某事」，to 后面是动词 build，「建立」。brand 你可能想到「烙印」，这里是「品牌」。\n→ 在他们尝试建立自己的第一个品牌时"
+     }
+    ],
+    "order": "英文先说结论、后说时间，中文习惯先说「什么时候」，所以可以把「第一次建品牌时」提到前面。",
+    "sum": "第一次尝试创立品牌的时候，很少有人能成功。",
+    "cmp": "意思和书上一样。书上保持了英文的语序，「在尝试建立自己的第一个品牌时取得成功」；我把时间提前，读起来更顺口。"
+   }
+  },
+  "The bottle is sealed, and the label says \"pure water\".": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The bottle is sealed",
+      "s": "你多半会翻成「瓶子被密封」。is sealed 是被动，就是「瓶子被别人封上了」。这里是在描述瓶子现在的状态，说成「是密封的」就够了。\n→ 瓶子是密封的"
+     },
+     {
+      "t": "the label says \"pure water\"",
+      "s": "label says 你可能翻成「标签说」。念一遍，标签又不会开口。英文爱让东西「说话」，中文换成「写着」。\n→ 标签上写着「纯净水」"
+     }
+    ],
+    "sum": "瓶子是密封的，标签上写着「纯净水」。",
+    "cmp": "和书上完全一样（只是引号写法不同）。"
+   }
+  },
+  "The man was tagged a \"loser\".": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The man was tagged a \"loser\"",
+      "s": "你多半会翻成「这个男人被标签了一个失败者」。念一遍，不通。tag 你认识的是名词「标签」，这里是动词，「给……贴标签」。was tagged 是被动，就是「他被别人怎么样了」：被贴上了标签。后面直接跟 a \"loser\"，说明贴的是什么标签，也就是被人说成是「失败者」。\n→ 这个男人被人贴上了「失败者」的标签"
+     }
+    ],
+    "sum": "这个男人被人贴上了「失败者」的标签。",
+    "cmp": "书上译成「被称为“失败者”」，意思相同，更简洁；我保留了「标签」这个字面意思。"
+   }
+  },
+  "Ten minutes later, some runners in the race began to lag.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Ten minutes later",
+      "s": "这块照字面翻就行：later 放在一段时间后面，是「……之后」。\n→ 十分钟后"
+     },
+     {
+      "t": "some runners in the race began to lag",
+      "s": "began to lag 是 begin to do，「开始做某事」。lag 你多半没见过，它是「落后、掉队」。runners in the race 别翻成「比赛里的跑者」那么硬，in the race 是在说这些人是哪里的，「比赛中的选手」。\n→ 比赛中的一些选手开始落后了"
+     }
+    ],
+    "sum": "十分钟后，比赛中有些选手开始掉队了。",
+    "cmp": "意思一样。书上用「赛跑者」，我用「选手」，更常见。"
+   }
+  },
   "Readers proceed at their own pace.": {
    "ph": [
     {
@@ -243,6 +340,24 @@
     "cmp": "书上是「一套制服增加了人们对汽车修理厂机械师技能的信心」，思路一样，我把「增加信心」换成「更有信心」，口语一点。"
    }
   },
+  "She raged when her jewels were stolen.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "She raged",
+      "s": "rage 你多半只见过名词「愤怒」，所以会卡住。这里 raged 有 -ed，前面是 She，说明它是动词，「大发脾气、发怒」。\n→ 她发怒了"
+     },
+     {
+      "t": "when her jewels were stolen",
+      "s": "when 带的是时间状语从句，就是「在……的时候」。were stolen 是被动，就是「珠宝被别人偷了」。这里谁偷的不重要，强调的是她遭了损失，所以中文保留「被偷」很自然。\n→ 当她的珠宝被偷时"
+     }
+    ],
+    "order": "英文先说结果（发怒）、后说原因（珠宝被偷），中文可以按事情发生的先后，把「珠宝被偷」放前面。",
+    "sum": "她的珠宝被偷了，她勃然大怒。",
+    "cmp": "意思一样，书上的「当……时」保留了 when 的语序，我按事情发生的顺序拆成两个短句。"
+   }
+  },
   "All at once she lost her temper.": {
    "ph": [
     {
@@ -257,6 +372,24 @@
     }
    ]
   },
+  "They abandoned the attempt to roast coffee beans in space.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "They abandoned the attempt",
+      "s": "abandon 你可能只记得「抛弃」，对人这么说，对事情就是「放弃」。attempt 在 the 后面，是名词，「尝试」。\n→ 他们放弃了这个尝试"
+     },
+     {
+      "t": "to roast coffee beans in space",
+      "s": "你多半会接着翻成「他们放弃了尝试，去烤咖啡豆」。放回去试试：to roast 紧跟在名词 attempt 后面，是 to do 短语，作用是说明「是什么样的尝试」，也就是「烤咖啡豆的尝试」。roast 是「烘烤」，in space 是「在太空中」。\n→ 在太空中烘烤咖啡豆"
+     }
+    ],
+    "order": "to do 短语在英文里跟在名词后面，中文要挪到名词前面，加个「的」：「在太空烘烤咖啡豆的尝试」。",
+    "sum": "他们放弃了在太空烘焙咖啡豆的尝试。",
+    "cmp": "和书上基本一样，只是「烤」和「烘焙」的区别。"
+   }
+  },
   "She looked at him with contempt.": {
    "ph": [
     {
@@ -266,6 +399,24 @@
     }
    ]
   },
+  "It tried to arouse hostile feelings among consumers.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It tried to arouse",
+      "s": "tried to arouse 是 try to do，「试图做某事」，to 后面是动词 arouse。arouse 你可能想翻成「唤醒」，那是叫人起床；后面跟感情的时候，它是「引起、激起」。\n→ 它试图引起"
+     },
+     {
+      "t": "hostile feelings among consumers",
+      "s": "hostile 你多半会翻成「敌对的感情」。念一遍，别扭。hostile feelings 合起来就是「敌意」。among 是「在……之中」。\n→ 消费者中的敌意"
+     }
+    ],
+    "order": "中文里「在消费者中引起敌意」比「引起消费者中的敌意」更顺，所以把 among consumers 提到动词前面。",
+    "sum": "它试图在消费者中激起敌意。",
+    "cmp": "意思一样，书上是「引起消费者的敌意」，更紧凑；我保留了 among 的「在……中」。"
+   }
+  },
   "He must have been wearing gloves.": {
    "ph": [
     {
@@ -274,6 +425,24 @@
      "m": "一定做过（对过去的推测）"
     }
    ]
+  },
+  "Each doll is crafted individually by specialists.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Each doll is crafted",
+      "s": "你多半会翻成「每个玩偶被手艺」。craft 你认识的是名词「手工艺」，这里 is crafted 是被动，craft 是动词，「手工制作」。is crafted 就是「被别人手工做出来」。\n→ 每个玩偶都是手工制作的"
+     },
+     {
+      "t": "individually by specialists",
+      "s": "individually 是「一个一个地」。by specialists 是被动里的 by，引出做事的人：由专业人员做。中文少用「被」，把人请出来当主语更顺。\n→ 由专业人员逐个"
+     }
+    ],
+    "order": "中文可以把「专业人员」提到前面当主语：专业人员逐个手工制作每个玩偶。",
+    "sum": "每个玩偶都由专业人员逐个手工制作。",
+    "cmp": "和书上的「每个玩偶都由专业人员手工制作」几乎一样，我多译出了 individually 的「逐个」。"
+   }
   },
   "The plane is going to land at another airport.": {
    "ph": [
@@ -291,7 +460,39 @@
      "b": "be forced to do",
      "m": "被迫做某事"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The giant jet",
+      "s": "这块照字面翻就行：jet 在这里是名词，喷气式飞机；giant 是「巨型的」。\n→ 巨型喷气式飞机"
+     },
+     {
+      "t": "will be forced to land",
+      "s": "你多半会翻成「将被强迫降落」。be forced to do 是被动，就是「被迫做某事」，眼睛往后找 to——找到了：to land，「降落」。will 只是表示将来。中文可以把「被迫」说得更自然。\n→ 将被迫降落"
+     }
+    ],
+    "sum": "这架巨型喷气式飞机将被迫降落。",
+    "cmp": "和书上基本一样，书上说「将被迫降落」时顺带把 jet 说成了「巨型喷气式飞机」，我只加了「这架」。"
+   }
+  },
+  "Our job as designers is to reinforce the airline's brand.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Our job as designers",
+      "s": "你多半会翻成「我们作为设计师的工作」，这样翻不算错，但挂在句子前面太长。as designers 是「作为设计师」，拎出来放前面说更顺。\n→ 作为设计师，我们的工作"
+     },
+     {
+      "t": "is to reinforce the airline's brand",
+      "s": "is 后面跟 to reinforce，是 to do 短语作表语，就是「……就是去做某事」。reinforce 是「加强、强化」。airline's 的 's 是「……的」：航空公司的品牌。\n→ 就是强化航空公司的品牌"
+     }
+    ],
+    "order": "把 as designers 提到最前面，当成「作为设计师」的开场，后面接「我们的工作……」。",
+    "sum": "作为设计师，我们的工作就是强化航空公司的品牌。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Long queues and delayed flights at airports have become a topic for conversation in Britain.": {
    "ph": [
@@ -328,7 +529,21 @@
      "b": "be rushed to",
      "m": "被火速送往"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He was rushed to the hospital",
+      "s": "你多半会翻成「他被匆忙到医院」，不通。rush 这里是动词，「火速送」，was rushed 是被动，就是「他被别人火速送去」。这里「被」很自然，强调他是被送去的。\n→ 他被火速送往医院"
+     },
+     {
+      "t": "by helicopter",
+      "s": "by 后面跟交通工具，不加 the，意思是「乘、用」。by helicopter 是被动里的方式，不是做事的人。\n→ 用直升机"
+     }
+    ],
+    "sum": "他被直升机火速送往医院。",
+    "cmp": "意思一样，书上说「他由直升机火速送到医院」，用「由」；我用「被」更直接。"
+   }
   },
   "There are a few pilot schools already making the transition to digital books.": {
    "ph": [
@@ -337,7 +552,21 @@
      "b": "make the transition to",
      "m": "向……过渡"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "There are a few pilot schools",
+      "s": "There are 是「有」。a few 带 a，是「有几个」。pilot 你多半会翻成「飞行员」，那就成了「飞行员学校」。这里 pilot 是形容词，「试点的」，pilot schools 就是「试点学校」。\n→ 有几所试点学校"
+     },
+     {
+      "t": "already making the transition to digital books",
+      "s": "making 是 -ing 短语（现在分词），跟在 schools 后面，补充说明这些学校「正在做什么」，中文就是「正在……的」。make the transition to 是固定搭配，「向……过渡」，to 是介词，后面是名词 digital books。\n→ 已经在向数字图书过渡"
+     }
+    ],
+    "sum": "已经有几所试点学校在向数字图书过渡了。",
+    "cmp": "意思和书上一样。书上译成「已经开始向数字图书过渡」，多了个「开始」，我用「在……过渡」，更贴近 making 这个进行的状态。"
+   }
   },
   "Some of the people who work in Songdo complain about boredom in the workplace.": {
    "ph": [
@@ -346,7 +575,21 @@
      "b": "complain about",
      "m": "抱怨"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Some of the people who work in Songdo",
+      "s": "Some of the people 是「这些人当中的一些」。who work in Songdo 是定语从句，就是给前面的名词补一段说明。who 指谁？放回去试：people work in Songdo，人们在松岛工作，对。中文把这段放到「人」的前面，加「的」。\n→ 一些在松岛工作的人"
+     },
+     {
+      "t": "complain about boredom in the workplace",
+      "s": "complain 是整句真正的谓语，后面要找 about：complain about，「抱怨」。boredom 你可能翻成「无聊的」，它是名词，「无聊、厌倦」；in the workplace 是「在工作场所的」。\n→ 抱怨工作场所无聊"
+     }
+    ],
+    "sum": "一些在松岛工作的人抱怨工作场所很无聊。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "People the world over are afraid of a further plunge in oil prices.": {
    "ph": [
@@ -385,6 +628,23 @@
     }
    ]
   },
+  "We sat by the fireplace, eating beef and onions.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "We sat by the fireplace",
+      "s": "这块照字面翻就行：by 是「在……旁边」，fireplace 是壁炉。\n→ 我们坐在壁炉旁"
+     },
+     {
+      "t": "eating beef and onions",
+      "s": "逗号后面是 eating，-ing 短语（现在分词），表示和前面的动作同时发生：边坐边吃。你多半会翻成「我们吃牛肉和洋葱」，变成两个分开的动作，味道就变了。中文用「……着」把两件事连起来。\n→ 吃着牛肉和洋葱"
+     }
+    ],
+    "sum": "我们坐在壁炉旁，吃着牛肉和洋葱。",
+    "cmp": "和书上完全一样。"
+   }
+  },
   "She asked the waiter to cut the cheese into slices.": {
    "ph": [
     {
@@ -397,7 +657,21 @@
      "b": "cut … into",
      "m": "把……切成"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She asked the waiter to cut",
+      "s": "你多半会翻成「她问服务员去切」。这里 asked 不是「问」。ask sb. to do 是「请某人做某事」，to cut 是 to do 短语，说的就是请他做什么，做的人是 the waiter。\n→ 她请服务员切"
+     },
+     {
+      "t": "the cheese into slices",
+      "s": "cut … into 是被拆开的搭配，眼睛往后找 into——找到了：cut the cheese into slices，「把奶酪切成薄片」。slices 是名词，「薄片」。\n→ 把奶酪切成薄片"
+     }
+    ],
+    "sum": "她请服务员把奶酪切成薄片。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Performance is your best bargaining chip when you are seeking a raise.": {
    "ph": [],
@@ -428,7 +702,25 @@
      "b": "something like",
      "m": "有点像"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Experts observe that",
+      "s": "你多半会翻成「专家观察到」。observe 在这里是「说、指出」。that 带出宾语从句，就是「说的内容是……」，后面整个引号里的话就是专家说的。\n→ 专家说"
+     },
+     {
+      "t": "textbooks come in layers",
+      "s": "come in layers 你可能翻成「在层里来」，不通。come in 在这里是「有……的形式」，come in layers 就是「是一层一层的」。\n→ 教科书是分层的"
+     },
+     {
+      "t": "something like an onion",
+      "s": "这块照字面翻就行：something like 是「有点像」，用来打个比方。\n→ 有点像洋葱"
+     }
+    ],
+    "sum": "专家说，教科书是一层一层的，有点像洋葱。",
+    "cmp": "和书上一样。"
+   }
   },
   "This can help improve the quality of the restaurants they dine in.": {
    "ph": [
@@ -437,7 +729,21 @@
      "b": "dine in",
      "m": "在……就餐"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "This can help improve",
+      "s": "你多半会翻成「这能帮助提高」，这样没错。help improve 其实是 help (to) improve，省略了 to，help 后面直接跟动词，就是「有助于做某事」。\n→ 这有助于提高"
+     },
+     {
+      "t": "the quality of the restaurants they dine in",
+      "s": "句尾孤零零一个 in，别慌。restaurants 和 they 之间省略了 that，补回去：the restaurants (that) they dine in，这是定语从句，给 restaurants 补一段说明。把 in 放回去：they dine in the restaurants，他们在这些餐馆就餐，对。中文把这段放到「餐馆」前面，加「的」。\n→ 他们就餐的餐馆的质量"
+     }
+    ],
+    "sum": "这有助于提高他们就餐的那些餐馆的质量。",
+    "cmp": "和书上基本一样，书上是「这能帮助提高他们就餐的餐馆的质量」。"
+   }
   },
   "It turns parks into picnic sites.": {
    "ph": [
@@ -485,6 +791,23 @@
     }
    ]
   },
+  "He likes to lick the covering of the yogurt.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "He likes to lick",
+      "s": "likes to lick 是 like to do，「喜欢做某事」。lick 你多半没见过，它是「舔」。\n→ 他喜欢舔"
+     },
+     {
+      "t": "the covering of the yogurt",
+      "s": "covering 带 -ing，你多半会翻成「覆盖」。这里前面有 the，它是名词，指盖在上面的那层东西，也就是酸奶的「盖子」。\n→ 酸奶的盖子"
+     }
+    ],
+    "sum": "他喜欢舔酸奶的盖子。",
+    "cmp": "和书上完全一样。"
+   }
+  },
   "Taking a nap after learning can help you find the way through the maze.": {
    "ph": [
     {
@@ -492,7 +815,21 @@
      "b": "take a nap",
      "m": "小睡一会儿"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Taking a nap after learning",
+      "s": "一开头就是 Taking，别慌。-ing 开头当主语，就是「做某事」这件事。take a nap 是固定搭配，「小睡一会儿」。after learning 里 after 是介词，后面跟 -ing，「学习之后」。\n→ 学习后小睡一会儿"
+     },
+     {
+      "t": "can help you find the way through the maze",
+      "s": "help you find 是 help sb. (to) do，「帮助某人做某事」，to 省略了。find the way through the maze 你可能翻成「找到通过迷宫的路」，中文说「走出迷宫」更顺。\n→ 可以帮助你找到走出迷宫的路"
+     }
+    ],
+    "sum": "学习之后小睡一会儿，能帮你找到走出迷宫的路。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "Tea is poured into a cup from a teapot.": {
    "ph": [
@@ -501,7 +838,40 @@
      "b": "pour into",
      "m": "倒入"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Tea is poured",
+      "s": "你多半会翻成「茶被倒」。is poured 是被动，就是「茶被别人怎么样了」。谁倒的不重要，中文不用硬说「被」，说「倒」就行。\n→ 茶是倒"
+     },
+     {
+      "t": "into a cup from a teapot",
+      "s": "pour into 是「倒入」，into a cup 是倒到哪里；from a teapot 是从哪里倒。英文先说终点、后说起点，中文习惯从起点说到终点。\n→ 从茶壶倒进杯子里"
+     }
+    ],
+    "order": "中文先说「从茶壶」，再说「倒进杯子里」，和英文的顺序反过来。",
+    "sum": "茶是从茶壶倒进杯子里的。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "Their functioning is still a puzzle to be solved.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Their functioning is still a puzzle",
+      "s": "看到 functioning 带 -ing，别以为是动作进行。前面是 Their，说明它在这里当名词用，「运作、功能」。puzzle 是「难题、谜」。\n→ 它们的运作仍然是个谜"
+     },
+     {
+      "t": "to be solved",
+      "s": "你多半会翻成「要被解决的」。to be solved 是 to do 的被动形式，跟在名词 puzzle 后面，说明是「怎样的难题」：等着被解决的。中文不用「被」，说「有待解决」。\n→ 有待解决的"
+     }
+    ],
+    "order": "to be solved 在英文里放在 puzzle 后面，中文要挪到前面，加「的」：「有待解决的难题」。",
+    "sum": "它们如何运作，仍是一个有待解决的难题。",
+    "cmp": "书上译成「它们的功能仍然是一个有待解决的难题」，把 functioning 译成「功能」；我译成「如何运作」，更像在说一个过程。"
+   }
   },
   "They're asked to guess that person's name.": {
    "ph": [
@@ -510,7 +880,17 @@
      "b": "be asked to do",
      "m": "被要求做某事"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They're asked to guess that person's name",
+      "s": "They're 是 They are。你多半会翻成「他们被问去猜」。asked 在这里不是「问」，are asked to do 是被动，就是「他们被要求做某事」，这里「被要求」可以保留。to guess 是 to do 短语，说的是要求做的事：猜。that person's 的 's 是「……的」，「那个人的名字」。\n→ 他们被要求猜出那个人的名字"
+     }
+    ],
+    "sum": "他们被要求猜出那个人的名字。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "He attempts to rebel against the existing social order.": {
    "ph": [
@@ -524,7 +904,21 @@
      "b": "rebel against",
      "m": "反抗"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He attempts to rebel against",
+      "s": "attempts to rebel 是 attempt to do，「企图做某事」。rebel 你可能想到名词「叛逆者」，但前面有 to，它是动词，「反抗」。眼睛往后找 against——找到了：rebel against，「反抗……」。\n→ 他企图反抗"
+     },
+     {
+      "t": "the existing social order",
+      "s": "这块照字面翻就行：existing 是「现有的」，social order 是「社会秩序」。\n→ 现有的社会秩序"
+     }
+    ],
+    "sum": "他企图反抗现有的社会秩序。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "The police were able to take preventive action and avoid a possible riot.": {
    "ph": [
@@ -543,7 +937,21 @@
      "b": "take … action",
      "m": "采取措施"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The police were able to take preventive action",
+      "s": "police 带 the 做主语，是「警方」，这个词当复数用，所以是 were。were able to take 是 be able to do，「能够做某事」，书上译成「得以」。preventive action 你可能翻成「预防的行动」，take action 是「采取措施」，合起来「采取预防措施」。\n→ 警方得以采取预防措施"
+     },
+     {
+      "t": "and avoid a possible riot",
+      "s": "and 前面是 take，后面是 avoid，它们都接在 were able to 后面，是并列的。avoid 前面省略了 to，所以「得以」同时管着两个动作。possible 修饰 riot，「可能发生的暴乱」，不是「可能的暴乱」。\n→ 并避免了可能发生的暴乱"
+     }
+    ],
+    "sum": "警方得以采取预防措施，避免了一场可能发生的暴乱。",
+    "cmp": "和书上基本一样，书上用「防范措施」，我用「预防措施」。"
+   }
   },
   "Her eyes were filled with terror.": {
    "ph": [
@@ -552,7 +960,35 @@
      "b": "be filled with",
      "m": "充满"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Her eyes were filled with terror",
+      "s": "你多半会翻成「她的眼睛被恐惧填满」。念一遍，是不是有点怪？were filled with 是被动形式，但它是个固定搭配，就是「充满了……」，中文不用说「被」。terror 是「恐惧」。\n→ 她的眼睛里充满了恐惧"
+     }
+    ],
+    "sum": "她的眼睛里充满了恐惧。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "These are machines that shock and awe you.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "These are machines",
+      "s": "这块照字面翻就行：These are 是「这些是」，machines 是机器。\n→ 这些是机器"
+     },
+     {
+      "t": "that shock and awe you",
+      "s": "that 带的是定语从句，就是给前面的名词补一段说明。that 指谁？放回去试：machines shock and awe you，机器让你震惊，对；换成 you：你让你震惊，不通。所以 that 指 machines。shock and awe 是两个动词并列，awe 你多半当名词「敬畏」，这里是动词「使敬畏」。\n→ 让你震惊又敬畏"
+     }
+    ],
+    "order": "中文把定语放到名词前面，说成「会让你感到震惊和敬畏的机器」。",
+    "sum": "这些机器会让你既震惊又敬畏。",
+    "cmp": "意思一样。书上是「这些是机器，会让你感到震惊和敬畏」，我把「这些是机器」和后面合并，说成「这些机器会……」。"
+   }
   },
   "He fell from a tall palm tree by accident.": {
    "ph": [
@@ -562,6 +998,19 @@
      "m": "意外地；不小心"
     }
    ]
+  },
+  "It has got one of its limbs injured.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It has got one of its limbs injured",
+      "s": "你多半会翻成「它得到了它的一条受伤的腿」。念一遍，哪有人「得到」伤腿？这里 has got 后面跟了「宾语 + 过去分词」：one of its limbs 是宾语，injured 是 -ed 短语（过去分词），说明宾语遭遇了什么。这种 get / have + 东西 + 过去分词，常用来说不好的遭遇，意思就是「它的一个肢体受伤了」。limb 是四肢中的一肢，如腿或翅膀。\n→ 它的一条肢体受伤了"
+     }
+    ],
+    "sum": "它的一个肢体受伤了。",
+    "cmp": "书上把 limbs 译成「腿」，具体指哪一肢要看是什么动物，从这句话本身看不出来；我保留了「肢体」这个更宽泛的说法。"
+   }
   }
  }
 }

@@ -78,7 +78,21 @@
      "b": "past one's prime",
      "m": "过了黄金时期"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He was largely regarded as",
+      "s": "你多半会翻成「他很大程度上被看作」。was regarded 是被动，就是「他被别人怎么样了」，中文里「被」字太生硬，把人请出来当主语：谁在看？人们。largely 在这里是「普遍地」，regard A as B 是「把 A 看成 B」。\n→ 人们普遍认为他"
+     },
+     {
+      "t": "past his prime",
+      "s": "past 你可能只认识「过去」，翻成「过去他的全盛」就不通了。这里它是介词，意思是「过了、超过」。prime 是「最盛的时期」。\n→ 已经过了黄金时期"
+     }
+    ],
+    "sum": "大家普遍觉得他的黄金时期已经过去了。",
+    "cmp": "意思一样。书上的「已经过了黄金时期」更贴着原文的 past。"
+   }
   },
   "Thus, they had to keep working just as much in order to maintain their standard of living.": {
    "ph": [
@@ -125,7 +139,21 @@
      "b": "consider sb. to be",
      "m": "认为某人是"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She considered people to be products",
+      "s": "你多半会翻成「她考虑人是产品」。念一遍，不通。consider sb. to be 是「认为某人是……」，people 是被认为的对象，to be 是 to do 短语，把后面的内容接上来。products 在这里不是「产品」，是被造就出来的「产物」。\n→ 她认为人是……的产物"
+     },
+     {
+      "t": "of the values and norms of the society",
+      "s": "两个 of 连着别晕：of the values and norms 是「价值观和规范」，of the society 是「社会的」，它们都是在回答「是什么的产物」。norms 是「规范、准则」。中文把「社会的」放前面更顺。\n→ 社会的价值观和规范"
+     }
+    ],
+    "sum": "她认为，人是由社会的价值观和规范造就的产物。",
+    "cmp": "意思一样。书上的「社会价值观和规范的产物」更简洁。"
+   }
   },
   "Such tasks can get our brains thinking flexibly, beyond our normal comfort zone.": {
    "ph": [
@@ -139,7 +167,21 @@
      "b": "comfort zone",
      "m": "舒适区"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Such tasks can get our brains thinking flexibly",
+      "s": "你多半会翻成「这样的任务能得到我们的大脑思考灵活地」。念一遍，不通。get 在这里不是「得到」，get sth. doing 是「让……开始做某事」。thinking 是 -ing 短语，说的是大脑处在「思考」的状态。flexibly 是「灵活地」。\n→ 这样的任务可以让我们的大脑灵活思考"
+     },
+     {
+      "t": "beyond our normal comfort zone",
+      "s": "逗号后面是补充说明。你可能翻成「超过我们正常的舒适区」。beyond 是「超出」，comfort zone 是待着舒服、不想动的范围，也就是「舒适区」，中文说「跳出」比「超出」顺。normal 是「平常的」。\n→ 跳出我们平常的舒适区"
+     }
+    ],
+    "sum": "这样的任务能让我们的大脑灵活地思考，跳出平常的舒适区。",
+    "cmp": "和书上基本一样，书上用「常规」，我用「平常的」。"
+   }
   },
   "Some traditions are simple, like the red eggs that get baked into breads.": {
    "ph": [
@@ -235,6 +277,23 @@
     "cmp": "书上是「墨守成规会让人变得无聊透顶」。书上把名词 bore 转成了形容词式的「无聊透顶」，utter 也浓缩成「透顶」，比我的写法简洁。"
    }
   },
+  "The study did not examine the possibility of deep significance.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The study did not examine",
+      "s": "这块照字面翻就行。examine 是「检查、研究」，主语是「这项研究」。\n→ 这项研究并没有考察"
+     },
+     {
+      "t": "the possibility of deep significance",
+      "s": "你多半会翻成「深层意义的可能性」。念一遍，别扭吧？possibility of 后面说的是「有可能出现什么」，significance 在这里是「重要性、影响」。把名词 possibility 换成动词「可能」，就顺了。\n→ 可能存在的深层意义"
+     }
+    ],
+    "sum": "这项研究并没有考察可能存在的深层意义。",
+    "cmp": "差别在 examine：书上译成「考虑」，偏弱，我译成「考察」更贴近它「研究、检查」的意思。其余一样。"
+   }
+  },
   "Without effort, getting any kind of decent job is impossible.": {
    "ph": [
     {
@@ -242,7 +301,21 @@
      "b": "any kind of",
      "m": "任何种类的"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Without effort",
+      "s": "逗号前面是个介词短语。看到 without，脑子里换成「如果没有」，后面整句都是在这个条件下说的。\n→ 如果没有努力"
+     },
+     {
+      "t": "getting any kind of decent job is impossible",
+      "s": "getting 开头当主语，是 -ing 短语，就是「找到工作」这件事。你多半会翻成「得到任何种类的体面工作是不可能的」，any kind of 不用把「种类」翻出来，就是「任何」。decent 是「像样的、体面的」。\n→ 找到任何像样的工作都是不可能的"
+     }
+    ],
+    "sum": "不努力的话，想找到任何一份像样的工作都不可能。",
+    "cmp": "意思一样。书上用「体面的」，我用「像样的」，都行。"
+   }
   },
   "The most probable reason for the popularity is that they are less expensive.": {
    "ph": [
@@ -251,7 +324,38 @@
      "b": "reason for",
      "m": "……的原因"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The most probable reason for the popularity",
+      "s": "你多半会翻成「对于流行的最可能的原因」。reason for 是一个整体，「……的原因」，for 不翻成「对于」。probable 是「很可能的」，popularity 是「受欢迎、流行」。\n→ 受欢迎的最可能的原因"
+     },
+     {
+      "t": "is that they are less expensive",
+      "s": "is 后面的 that they are less expensive 是表语从句，就是回答「原因是什么」的一整句话，that 只是把它引出来，不用翻。less expensive 是「没那么贵」，说成「更便宜」就行。\n→ 是它们更便宜"
+     }
+    ],
+    "sum": "它们受欢迎的最可能的原因是价格更便宜。",
+    "cmp": "意思一样，书上用「流行」，我用「受欢迎」。"
+   }
+  },
+  "We may talk of beautiful things but beauty itself is abstract.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "We may talk of beautiful things",
+      "s": "你可能把 may 翻成「可能」：我们可能谈论。这里更像「可以」，意思是允许这样做。talk of 就是「谈论」。\n→ 我们可以谈论美的事物"
+     },
+     {
+      "t": "but beauty itself is abstract",
+      "s": "but 是转折，前后各是一句完整的话。itself 是在强调 beauty，「美本身」。abstract 是「抽象的」，看不见摸不着。\n→ 但美本身却是抽象的"
+     }
+    ],
+    "sum": "我们可以谈论美的事物，可美本身是抽象的。",
+    "cmp": "和书上几乎一样，书上多了个「却」，转折更明显。"
+   }
   },
   "We had to use a tractor to pull the car out of the mud.": {
    "ph": [
@@ -260,7 +364,21 @@
      "b": "pull … out of",
      "m": "把……拉出"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "We had to use a tractor",
+      "s": "你多半会翻成「我们必须使用拖拉机」，也不算错。不过 had to 是过去的 have to，带着「没办法、只能这样」的意思，「不得不」更贴。tractor 是拖拉机。\n→ 我们不得不用拖拉机"
+     },
+     {
+      "t": "to pull the car out of the mud",
+      "s": "to pull 是 to do 短语，在说用拖拉机是「为了干什么」。pull … out of 是「把……从……里拉出来」，眼睛往后找 out of。mud 是泥地。\n→ 把车从泥地里拖出来"
+     }
+    ],
+    "sum": "我们不得不用拖拉机，把车从泥里拖出来。",
+    "cmp": "和书上几乎一样，书上说「泥地」，我说「泥里」。"
+   }
   },
   "The number of employees was reduced from 40 to 25.": {
    "ph": [
@@ -274,7 +392,21 @@
      "b": "reduce from … to",
      "m": "从……减少到"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The number of employees was reduced",
+      "s": "你多半会翻成「雇员的数量被减少了」。was reduced 是被动，就是「数量被别人减了」，但没必要说是谁减的，中文直接说「减少了」。The number of 是「……的数量」，主语是 number，所以用单数 was。\n→ 雇员人数减少了"
+     },
+     {
+      "t": "from 40 to 25",
+      "s": "reduce from A to B，眼睛从 from 找到 to：从 40 降到 25。注意 to 后面的数字是「减到的结果」，所以说「减少到 25 人」，不是「减少了 25 人」。\n→ 从 40 人减少到 25 人"
+     }
+    ],
+    "sum": "雇员人数从 40 人减到了 25 人。",
+    "cmp": "和书上一样，我把「减少到了」说成「减到了」。"
+   }
   },
   "What first attracted me to her was her sense of humour.": {
    "ph": [
@@ -288,7 +420,21 @@
      "b": "sense of humour",
      "m": "幽默感"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "What first attracted me to her",
+      "s": "你多半会翻成「什么首先吸引我到她」。念一遍，不通。What 开头的这一整块是主语从句，What 就是「……的那个东西」，整块是「最先吸引我的东西」。attract sb. to sb. 是「把某人吸引向某人」，所以是「在她身上最先吸引我的」。\n→ 在她身上，最先吸引我的"
+     },
+     {
+      "t": "was her sense of humour",
+      "s": "was 后面是答案，说的就是「是什么」。sense of humour 是一个整体，「幽默感」。\n→ 是她的幽默感"
+     }
+    ],
+    "sum": "在她身上，最先吸引我的是她的幽默感。",
+    "cmp": "意思一样。书上的「她首先吸引我的」把 to her 的「她」放到了句首，我写成「在她身上」，更清楚是她身上的东西。"
+   }
   },
   "Some producers may induce customers to make more unplanned purchases.": {
    "ph": [
@@ -297,7 +443,21 @@
      "b": "induce sb. to do",
      "m": "诱导某人做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Some producers may induce customers",
+      "s": "induce 你多半没见过。看到它，眼睛往后找 to：induce sb. to do 是「诱使某人做某事」，customers 就是后面那个动作的执行者。may 是「可能会」。\n→ 一些生产商可能会诱使顾客"
+     },
+     {
+      "t": "to make more unplanned purchases",
+      "s": "to make 是 to do 短语，就是「去做什么」。你可能翻成「做更多没计划的购买」，太硬了。purchases 是名词「购买」，换成动词说「多买」。unplanned 是 un- 加 planned，「没计划过的」。\n→ 多买一些计划外的东西"
+     }
+    ],
+    "sum": "一些生产商可能会诱使顾客多买一些计划之外的东西。",
+    "cmp": "意思一样。书上的「进行更多计划外的购买」有翻译腔，我把名词 purchases 换成动词「多买」。"
+   }
   },
   "Members of poorly managed teams are easily distracted from their work.": {
    "ph": [
@@ -306,7 +466,21 @@
      "b": "be distracted from",
      "m": "从……分心"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Members of poorly managed teams",
+      "s": "managed 是「被管理的」，前面加 poorly 变成「被管理得很差的」，当形容词放在 teams 前面。中文把它放在「团队」前面：管理不善的团队。\n→ 管理不善的团队的成员"
+     },
+     {
+      "t": "are easily distracted from their work",
+      "s": "你多半会翻成「容易被从工作中分散」。are distracted 是被动，就是「他们被别的事分了心」。distract sb. from sth. 是「让某人从某事上分心」，中文说「在工作中分心」就顺了。easily 是「容易」。\n→ 很容易在工作中分心"
+     }
+    ],
+    "sum": "管理不善的团队里，成员很容易在工作时分心。",
+    "cmp": "几乎一样，书上说「在工作中」，我说「在工作时」。"
+   }
   },
   "It was a question that had fascinated him since he was a boy.": {
    "ph": [],
@@ -333,7 +507,55 @@
      "b": "speak of",
      "m": "谈到"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He spoke of his childhood fantasies",
+      "s": "你多半会翻成「他说了他的童年幻想」。spoke of 是「谈到、提起」。childhood 是「童年时期的」，中文说「儿时」更顺。\n→ 他谈起儿时的幻想"
+     },
+     {
+      "t": "about becoming a football player",
+      "s": "about 后面跟 becoming，是 -ing 短语，就是「成为足球运动员」这件事。about 在这里说的是「关于什么的幻想」，译成「关于成为……的幻想」太长，换成「想成为……的」，把它放在「幻想」前面。\n→ 想成为足球运动员的"
+     }
+    ],
+    "sum": "他谈起小时候想成为足球运动员的幻想。",
+    "cmp": "和书上一样，我把「儿时」换成了「小时候」。"
+   }
+  },
+  "She enjoys buying a lot of fancy things.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "She enjoys buying",
+      "s": "你多半会翻成「她享受买」。enjoy 后面只能跟 -ing，buying 是 -ing 短语，就是「买东西」这件事。enjoy doing 说成「喜欢做某事」就顺了。\n→ 她喜欢买"
+     },
+     {
+      "t": "a lot of fancy things",
+      "s": "a lot of 是「很多」。fancy 你可能只认识「想象」，这里是形容词，「精致的、花哨的」，修饰 things。\n→ 很多精致的东西"
+     }
+    ],
+    "sum": "她喜欢买很多精美的东西。",
+    "cmp": "和书上一样，只是我把「精致」换成了「精美」。"
+   }
+  },
+  "Google can give us the powerful illusion that all questions have definite answers.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Google can give us the powerful illusion",
+      "s": "你多半会翻成「谷歌能给我们强大的幻觉」。give sb. sth. 是「给某人某物」，给我们的是 illusion。illusion 是「错觉」，powerful 在这里是「很强烈的」。\n→ 谷歌能给我们一种很强烈的错觉"
+     },
+     {
+      "t": "that all questions have definite answers",
+      "s": "that 后面是一句完整的话（all questions 是主语，have 是谓语），所以它不是「那个」。它带的是同位语从句，就是给前面的名词 illusion 补充「具体是什么错觉」，可以把 that 当成冒号。definite 是「明确的」。\n→ 以为所有问题都有明确的答案"
+     }
+    ],
+    "sum": "谷歌会给我们造成一种很强烈的错觉，仿佛所有问题都有明确的答案。",
+    "cmp": "意思一样。书上用「即」引出错觉的内容，我用「仿佛」，更口语。"
+   }
   },
   "Do you buy water in plastic bottles or take your chances with tap water?": {
    "ph": [
@@ -431,7 +653,39 @@
      "b": "in bare feet",
      "m": "光着脚"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She likes to walk around",
+      "s": "likes to walk 是 to do 形式，like to do 就是「喜欢做某事」。walk around 你可能翻成「在周围走」，其实是「走来走去、四处走」。\n→ 她喜欢走来走去"
+     },
+     {
+      "t": "in bare feet",
+      "s": "in 在这里不是「在……里面」，是「处在……状态」。bare 是「光的、赤裸的」，in bare feet 就是「光着脚」。中文习惯先说状态再说动作。\n→ 光着脚"
+     }
+    ],
+    "order": "英文先说动作、后说状态，中文习惯先说状态：把「光着脚」提到「走」前面。",
+    "sum": "她喜欢光着脚四处走动。",
+    "cmp": "和书上基本一样，书上是「光着脚走来走去」。"
+   }
+  },
+  "Social robots will be much more like companions than mere tools.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Social robots will be much more like companions",
+      "s": "你多半会翻成「社交机器人将会多得多像伙伴」。念一遍，不通。much more like 是「更像」，much 只是加强语气。看到 more 就眼睛往后找 than：more like A than B 是「更像 A 而不是 B」。\n→ 社交机器人会更像是伙伴"
+     },
+     {
+      "t": "than mere tools",
+      "s": "mere 放在名词前，是「仅仅、不过是」，带点看轻的意思。than mere tools 就是「而不只是工具」。\n→ 而不仅仅是工具"
+     }
+    ],
+    "sum": "社交机器人更像是伙伴，而不只是工具。",
+    "cmp": "和书上基本一样，书上的「将会更像是伙伴，而不仅仅是工具」多了「将会」。"
+   }
   },
   "GDP is no longer regarded as the sole measure of a country's success.": {
    "ph": [
@@ -445,7 +699,21 @@
      "b": "regard … as",
      "m": "被视为"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "GDP is no longer regarded as",
+      "s": "你多半会翻成「GDP 不再被看作」。is regarded 是被动，就是「GDP 被别人怎么样了」，中文里把人请出来：人们不再把 GDP 看作……。no longer 是「不再」，regard A as B 是「把 A 看成 B」。\n→ 人们不再把 GDP 看作"
+     },
+     {
+      "t": "the sole measure of a country's success",
+      "s": "sole 别和 solo 搞混，它是「唯一的」。measure 这里是名词，「衡量的标准」，不是「措施」。measure of 后面跟的是衡量什么：a country's success，一个国家的成功。\n→ 衡量一个国家成功与否的唯一标准"
+     }
+    ],
+    "sum": "人们不再把 GDP 当作衡量国家成功的唯一标准。",
+    "cmp": "意思一样。书上用「被视为」保留了被动，我把人请出来当主语，更口语。"
+   }
   },
   "He was involved in a terrible car accident last April.": {
    "ph": [
@@ -459,7 +727,22 @@
      "b": "car accident",
      "m": "车祸"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He was involved in",
+      "s": "你多半会翻成「他被牵涉在」。was involved in 形式上是被动，但它是一个整体，be involved in 就是「卷入、陷入」。放到事故里，说「他卷入了」就顺了。\n→ 他卷入了"
+     },
+     {
+      "t": "a terrible car accident last April",
+      "s": "terrible 你可能翻成「可怕的」，说车祸，说「严重的」更自然。car accident 是「车祸」。last April 是时间，中文习惯放在句首。\n→ 去年四月一场严重的车祸"
+     }
+    ],
+    "order": "英文把 last April 放在句尾，中文习惯先说时间，把「去年四月」提到句首。",
+    "sum": "去年四月，他卷入了一场严重的车祸。",
+    "cmp": "意思一样。书上的「遭遇」更口语，我的「卷入」更贴着 involved in。"
+   }
   },
   "Not eating breakfast is related to the incidence of certain diseases.": {
    "ph": [
@@ -468,7 +751,21 @@
      "b": "be related to",
      "m": "与……有关"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Not eating breakfast",
+      "s": "你多半会翻成「没有吃早餐」。念一遍，意思偏了。Not eating 开头当主语，是 -ing 短语，就是「不吃早餐」这件事，not 否定的是 eating。\n→ 不吃早餐"
+     },
+     {
+      "t": "is related to the incidence of certain diseases",
+      "s": "is related to 形式上是被动，但它是固定搭配，「与……有关」。incidence 别看成 incident（事件），它是「发生率、发病率」。certain 在这里不是「确定的」，是「某些」。\n→ 与某些疾病的发病率有关"
+     }
+    ],
+    "sum": "不吃早餐和某些疾病的发病率有关。",
+    "cmp": "和书上一样，书上用「与」，书面一点。"
+   }
   },
   "Siri has often been praised for its ability to interpret our casual language.": {
    "ph": [
@@ -496,6 +793,23 @@
     ],
     "sum": "Siri 常因为能听懂我们日常随意的说法而受到称赞。",
     "cmp": "书上是「Siri 经常受到称赞，因为它能够解释我们非正式的语言」，把 for 拆成后面的「，因为」，和上面思路一致；我把「解释」换成了更口语的「听懂」。"
+   }
+  },
+  "This is an opportunity that must not be wasted.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "This is an opportunity",
+      "s": "你多半会翻成「这是一个机会」。没问题，这块照字面翻就行。\n→ 这是一个机会"
+     },
+     {
+      "t": "that must not be wasted",
+      "s": "that 带的是定语从句，就是给前面的名词补一段说明。that 指谁？放回去试：This must not be wasted 和 an opportunity must not be wasted，that 紧挨着 opportunity，机会不能被浪费，通。must not be wasted 是被动，「机会被别人浪费」，中文直接说「不能浪费」。must not 比 cannot 语气重，是「绝对不能」。\n→ 绝不能浪费的"
+     }
+    ],
+    "sum": "这个机会绝对不能浪费。",
+    "cmp": "意思一样。书上是「这是一个绝不能浪费的机会」，我把定语从句拆成了一个短句。"
    }
   },
   "Some people view socialising at the workplace as a chance to develop personal relationships.": {
@@ -531,6 +845,55 @@
     "cmp": "和书上一样，只是书上用了更书面的「将……视为」，我用的是口语的「把……看作」。"
    }
   },
+  "It occurs when people are doing a repetitive activity.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It occurs",
+      "s": "occurs 你可能不熟，它就是 happen，「发生、出现」。It 指什么这里看不出来，翻成「它」就行。\n→ 它会发生"
+     },
+     {
+      "t": "when people are doing a repetitive activity",
+      "s": "when 带的是时间状语从句，就是「在……的时候」。are doing 是进行时，「正在做」。repetitive 是 repeat 变来的，「重复性的」。\n→ 当人们在做重复性的活动时"
+     }
+    ],
+    "order": "英文先说结果、后说时间，中文习惯先说时间：把「当人们在做重复性的活动时」提到前面。",
+    "sum": "当人们在做重复性的事情时，它就会出现。",
+    "cmp": "意思一样。书上的「它就会发生」，我把「发生」换成了「出现」。"
+   }
+  },
+  "He needs to learn to curb his temper.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "He needs to learn",
+      "s": "两个 to do 连着。needs to learn 你可能翻成「他需要去学习」，再接「去控制」就啰嗦了。learn to do 是「学着做」，needs to 是「得、需要」。\n→ 他得学着"
+     },
+     {
+      "t": "to curb his temper",
+      "s": "curb 在这里是动词，「控制、抑制」。temper 你可能想到「温度」，这里是「脾气」。\n→ 控制自己的脾气"
+     }
+    ],
+    "sum": "他得学会控制自己的脾气。",
+    "cmp": "和书上基本一样，书上说「学着」，我说「学会」。"
+   }
+  },
+  "A deadly fish has been spotted in the ocean.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "A deadly fish has been spotted in the ocean",
+      "s": "你多半会翻成「一条致命的鱼已经被发现在海洋里」。has been spotted 是被动（现在完成时），就是「被人发现了」，中文不爱用「被」，也不必说是谁发现的，直接说「发现了」。spot 做动词是「发现、看到」。deadly 是「致命的」，修饰 fish。\n→ 在海洋中发现了一种致命的鱼"
+     }
+    ],
+    "order": "英文把 in the ocean 放在句尾，中文习惯先说地点，所以放在前面。",
+    "sum": "海洋里发现了一种致命的鱼。",
+    "cmp": "几乎一样，书上说「鱼类」，我说「鱼」。"
+   }
+  },
   "These educational experiences have enormous potential to brighten my future.": {
    "ph": [
     {
@@ -538,7 +901,21 @@
      "b": "potential to do",
      "m": "做……的潜力"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "These educational experiences have enormous potential",
+      "s": "你可能翻成「这些教育的经历」。educational 是形容词，「教育方面的」，说「教育经历」就够了。potential 在这里是名词，「潜力」，enormous 是「巨大的」。\n→ 这些教育经历有巨大的潜力"
+     },
+     {
+      "t": "to brighten my future",
+      "s": "to brighten 是 to do 短语，用来补充 potential：做什么的潜力。眼睛往前找 potential to do，「做……的潜力」。brighten 是 bright 加 -en，「使变亮」，未来变亮，就是「前途更光明」。\n→ 使我的前途更光明"
+     }
+    ],
+    "sum": "这些教育经历很有潜力，能让我的前途更光明。",
+    "cmp": "意思一样。书上的「有巨大的潜力来照亮我的未来」中，「来」是 to 的直译，有翻译腔，我拆成了两个短句。"
+   }
   }
  }
 }

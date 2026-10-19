@@ -8,7 +8,22 @@
      "b": "treat sth. with caution",
      "m": "谨慎对待"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Statistics should be treated",
+      "s": "你多半会翻成「统计数字应该被对待」。念一遍，中文不这么说。should be treated 是被动，就是「统计数字被别人怎么样了」。中文少用「被」，把动作的人请出来，也就是读数字的人，直接说「对待统计数字」。treat 在这里是「对待」，不是「治疗」。\n→ 对待统计数字应该"
+     },
+     {
+      "t": "with caution",
+      "s": "你可能想翻成「带着谨慎」。放回去念，有点硬。treat sth. with caution 是一个整体，with 加抽象名词，常常相当于「……地」，就是「谨慎地、小心地」。\n→ 小心谨慎"
+     }
+    ],
+    "order": "英文是「怎么对待」在前、「小心」在后，中文把「对待统计数字」放前面，「要小心」放后面，顺序其实不用挪。",
+    "sum": "对待统计数字要谨慎。",
+    "cmp": "和书上几乎一样，书上用「小心」，我用「谨慎」，稍微书面一点。"
+   }
   },
   "I hope all the precautions against air pollution will be seriously considered here.": {
    "ph": [
@@ -123,6 +138,23 @@
     "cmp": "意思和书上一样，书上直接说「骗他交出了所有的积蓄」，更简洁；我用了「把」字句，口气更自然一点。"
    }
   },
+  "If he thinks he can cheat me, just let him try!": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "If he thinks he can cheat me",
+      "s": "你多半会翻成「如果他认为他能欺骗我」。意思没错，但注意 thinks 后面藏了个 that，补回去是 he thinks (that) he can cheat me。这是宾语从句，就是「他想的内容」。cheat 在这里是「骗过、糊弄」。\n→ 要是他以为能骗过我"
+     },
+     {
+      "t": "just let him try",
+      "s": "你可能想翻成「只是让他试」。念一遍，是不是语气不对？just 放在这种命令句里不是「只是」，是加强语气，有点挑衅的味道。let him try 就是「让他试试」。\n→ 就让他试试看吧"
+     }
+    ],
+    "sum": "他要是以为能骗过我，那就让他试试看！",
+    "cmp": "意思和书上一样，书上多了「来」「一下」，更口语一点。"
+   }
+  },
   "Farmers ring up to receive the information.": {
    "ph": [
     {
@@ -130,7 +162,21 @@
      "b": "ring up",
      "m": "打电话"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Farmers ring up",
+      "s": "看到 ring 你可能先想到「铃响」，翻成「农民们按铃」。放回去念，对不上。ring up 是一个整体，就是「打电话」。\n→ 农民们打电话来"
+     },
+     {
+      "t": "to receive the information",
+      "s": "你多半会翻成「去接收信息」。to receive 是 to do 短语，这里说的是目的，就是「为了做什么」。往前找动作：打电话是为了接收信息，对了。receive 在这里偏向「获取」。\n→ 来获取信息"
+     }
+    ],
+    "sum": "农民们打电话来获取信息。",
+    "cmp": "和书上基本一样，只有「接收」和「获取」的区别：「接收」偏向收到别人发来的东西，「获取」更像主动去拿，两个都能懂。"
+   }
   },
   "The hotel receptionist must make sure that guests are registered correctly.": {
    "ph": [
@@ -139,7 +185,21 @@
      "b": "make sure",
      "m": "确保"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The hotel receptionist must make sure that",
+      "s": "你多半会翻成「酒店接待员必须使确定」。念一遍，不成话。make sure 是固定搭配，就是「确保、务必」。后面的 that 带的是宾语从句，就是「确保的内容」，眼睛往后看内容。\n→ 酒店接待员必须确保"
+     },
+     {
+      "t": "guests are registered correctly",
+      "s": "你多半会翻成「客人被正确地登记」。are registered 是被动，就是「客人被别人怎么样了」。中文少用「被」，直接说「客人登记无误」就顺了。register 在这里是「登记」。\n→ 客人登记无误"
+     }
+    ],
+    "sum": "酒店接待员必须确保客人都正确登记。",
+    "cmp": "和书上几乎一样，我多了个「都」，表示每位客人。"
+   }
   },
   "Our heartfelt sympathy goes out to the victims of the war.": {
    "ph": [
@@ -165,6 +225,23 @@
     ],
     "sum": "庆幸的是，她伤得不重。",
     "cmp": "几乎一样，书上的「伤势不重」是把 hurt 变成了名词「伤势」，我说成「伤得不重」，都顺。"
+   }
+  },
+  "Many women say their physicians sometimes don't even recognize the symptoms.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Many women say",
+      "s": "你多半会翻成「许多女性说」，然后发现后面接不上。say 后面藏了个 that，补回去是 Many women say (that) their physicians……。这是宾语从句，就是「说的内容」，that 被省掉了。\n→ 许多女性表示"
+     },
+     {
+      "t": "their physicians sometimes don't even recognize the symptoms",
+      "s": "你可能把 don't even recognize 翻成「甚至不认识」。recognize 在这里不是认人，是「识别、认出」。even 放在否定里，是「连……都不」。their 指谁？放回去试试：women 的医生，对。\n→ 她们的医生有时甚至认不出这些症状"
+     }
+    ],
+    "sum": "许多女性说，她们的医生有时连这些症状都认不出来。",
+    "cmp": "意思和书上一样，书上的「无法识别」更书面，我的「认不出来」更口语。"
    }
   },
   "The new school stands as a symbol of hope for a better future.": {
@@ -193,7 +270,21 @@
      "b": "a badge of honor",
      "m": "荣誉的象征"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Today, consulting for five businesses at the same time",
+      "s": "一开头 Today 后面就是 consulting，别慌。-ing 开头当主语，就是「做某事」这件事。你多半会翻成「咨询五家企业」，但 consult for 是「为……当顾问」。at the same time 是「同时」。\n→ 如今，同时为五家企业当顾问"
+     },
+     {
+      "t": "is a badge of honor",
+      "s": "你多半会翻成「是荣誉的徽章」。badge 本义是徽章，这里是比喻：a badge of honor 就是「荣誉的象征」，说明这是件拿得出手的事。\n→ 是一种荣誉的象征"
+     }
+    ],
+    "sum": "如今，同时为五家企业当顾问，是一种荣誉的象征。",
+    "cmp": "和书上基本一样，只是「提供咨询」我换成了「当顾问」，更口语。"
+   }
   },
   "The method works for English, and likewise for French.": {
    "ph": [
@@ -282,6 +373,23 @@
     }
    ]
   },
+  "Some employees found the board motivating.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Some employees found the board",
+      "s": "你多半会翻成「一些员工发现了董事会」，然后发现 motivating 没地方放。found 后面不是只跟一个宾语，found + 宾语 + 形容词，意思是「觉得它怎么样」。这里 board 是「董事会」，不是「木板」。\n→ 一些员工发现董事会"
+     },
+     {
+      "t": "motivating",
+      "s": "你可能把 motivating 当成动词，翻成「在激励董事会」。放回去试试：董事会被激励？不对，是董事会让别人受到激励。-ing 结尾的形容词是「令人……的」，所以是「有激励作用」。\n→ 具有激励作用"
+     }
+    ],
+    "sum": "一些员工觉得董事会很有激励作用。",
+    "cmp": "意思和书上一样，书上是「发现」，我用「觉得」，更符合 found 后面接感受的用法。"
+   }
+  },
   "They agreed to cover the entire building in solar panels.": {
    "ph": [
     {
@@ -289,7 +397,21 @@
      "b": "agree to do",
      "m": "同意做某事"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They agreed to cover",
+      "s": "你多半会翻成「他们同意去覆盖」。agree to do 是「同意做某事」，to cover 是 to do 短语，说的是同意的内容。中文里这个「去」不用翻出来，直接说「同意覆盖」。\n→ 他们同意"
+     },
+     {
+      "t": "the entire building in solar panels",
+      "s": "你多半会翻成「覆盖整座建筑在太阳能电池板里」。念一遍，不通。cover A in B 里的 in 是「用……材料」，要倒过来：用 B 盖住 A。B 是 solar panels，A 是 the entire building。\n→ 用太阳能电池板覆盖整座建筑"
+     }
+    ],
+    "sum": "他们同意用太阳能电池板覆盖整座建筑。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Choosing what to eat and drink is key to weight control.": {
    "ph": [
@@ -298,7 +420,21 @@
      "b": "be key to",
      "m": "是……的关键"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Choosing what to eat and drink",
+      "s": "-ing 开头当主语，就是「做某事」这件事。what to eat and drink 你多半会翻成「什么去吃和喝」，不顺。what + to do 就是「做什么」，也就是「吃什么、喝什么」。\n→ 选择吃什么和喝什么"
+     },
+     {
+      "t": "is key to weight control",
+      "s": "你可能想翻成「是体重控制的钥匙」。be key to 当成一个整体，就是「是……的关键」，不用想钥匙。weight control 把名词倒过来说，就是「控制体重」。\n→ 是控制体重的关键"
+     }
+    ],
+    "sum": "选择吃什么、喝什么，是控制体重的关键。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "The carpet is available in different widths.": {
    "ph": [
@@ -334,7 +470,21 @@
      "b": "ask for",
      "m": "请求"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The office asked for the public's help",
+      "s": "你多半会翻成「办公室要求公众的帮助」。ask for 是「请求」，不是命令式的「要求」，语气客气得多。the public's help 是「公众的帮助」，说白了就是「公众帮忙」。\n→ 办公室请求公众帮助"
+     },
+     {
+      "t": "to measure their speed results",
+      "s": "你可能想翻成「去测量他们的速度结果」。to measure 是 to do 短语，这里说的是帮忙帮什么，就是「帮助做什么」。their 指谁？放回去试试：office 是单数，their 是复数，指 the public 更说得通。\n→ 来测量他们的速度结果"
+     }
+    ],
+    "sum": "办公室请公众帮忙测量自己的速度结果。",
+    "cmp": "意思和书上一样，只是书上用「请求……帮助」，我用「请……帮忙」，更口语。"
+   }
   },
   "The shrimps grow from their original 1 millimetre to a length of about 1.5 centimetres.": {
    "ph": [
@@ -350,6 +500,24 @@
     }
    ]
   },
+  "Textbooks represent an 11 billion dollar industry.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Textbooks represent",
+      "s": "你多半会翻成「教科书代表」。念一遍，教科书怎么会「代表」一个行业？represent 在这里是「相当于、构成」，就是说整体的规模。\n→ 教科书构成"
+     },
+     {
+      "t": "an 11 billion dollar industry",
+      "s": "你多半会翻成「一个110亿美元的行业」，意思是对的。要留意三个词连在一起当形容词修饰 industry，所以 dollar 后面不加 s。11 billion 是「110亿」，别按三位一数硬算。\n→ 一个价值110亿美元的行业"
+     }
+    ],
+    "order": "英文用名词短语「一个110亿美元的行业」，中文更爱把它拆成谓语：「教科书这个行业价值110亿美元」。",
+    "sum": "教科书是一个价值110亿美元的行业。",
+    "cmp": "书上直接说「教科书行业价值110亿美元」，把名词短语改成了「价值」做谓语，更像中文，比我的更紧凑。"
+   }
+  },
   "This might present problems for young people later on.": {
    "ph": [
     {
@@ -359,6 +527,23 @@
     }
    ]
   },
+  "My first novel was rejected. In the meantime I had written a play.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "My first novel was rejected.",
+      "s": "你多半会翻成「我的第一部小说被拒绝了」。was rejected 是被动，就是「小说被别人怎么样了」。中文可以说，但句中没有说谁拒绝，所以不用硬补，说成「遭到拒绝」更顺。\n→ 我的第一部小说遭到拒绝"
+     },
+     {
+      "t": "In the meantime I had written a play.",
+      "s": "你可能把 in the meantime 拆开翻成「在这个中间的时间里」。它是固定搭配，就是「与此同时、在此期间」。had written 是过去完成，说的是在那段时间里已经写好了。\n→ 与此同时，我已经写好了一部戏剧"
+     }
+    ],
+    "sum": "我的第一部小说遭到拒绝。在此期间，我已经写好了一部剧本。",
+    "cmp": "和书上基本一样。书上说「又完成了」，我说「已经写好了」，更贴近 had written 的「已完成」。"
+   }
+  },
   "We thought she was arrogant, whereas in fact she was just very shy.": {
    "ph": [
     {
@@ -366,7 +551,21 @@
      "b": "in fact",
      "m": "事实上"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "We thought she was arrogant",
+      "s": "你多半会翻成「我们想她是傲慢的」。thought 后面省略了 that，补回去是 We thought (that) she was arrogant，这是宾语从句，就是「我们认为的内容」。think 这里是「认为」，arrogant 是「傲慢」。\n→ 我们认为她很傲慢"
+     },
+     {
+      "t": "whereas in fact she was just very shy",
+      "s": "whereas 你可能只会翻成「然而」。放回去试试：它连接的是两件对着说的事：我们以为的和事实。in fact 是「事实上」，just 是「只是」，very shy 就是「非常害羞」。\n→ 然而事实上她只是非常害羞"
+     }
+    ],
+    "sum": "我们以为她很傲慢，其实她只是非常害羞。",
+    "cmp": "和书上意思一样。书上把 whereas 译成「然而」，我用「以为……其实……」把对比带出来了，更顺。"
+   }
   },
   "They can't function unless exposed to sunlight.": {
    "ph": [
@@ -375,7 +574,39 @@
      "b": "be exposed to",
      "m": "暴露于"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They can't function",
+      "s": "你多半会翻成「它们不能功能」，不成话。function 在这里是动词，就是「运转、正常工作」。\n→ 它们无法正常工作"
+     },
+     {
+      "t": "unless exposed to sunlight",
+      "s": "unless 就是「除非」，相当于 if not。后面 exposed 前面省略了 they are，补回去是 unless (they are) exposed to sunlight，这里的 exposed 是被动，就是「它们被怎么样了」。be exposed to 整体记成「暴露在……下」。\n→ 除非暴露在阳光下"
+     }
+    ],
+    "order": "中文习惯先说条件，再说结果，所以把「除非……」提到前面，后面接「否则」。",
+    "sum": "除非暴露在阳光下，否则它们无法正常工作。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "What you said was true. It was, nevertheless, a little unkind.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "What you said was true.",
+      "s": "你多半会翻成「什么你说是真的」。念一遍，不成话。这里的 what 不是疑问词，What you said 整体是主语，就是「你说的话」。\n→ 你说的都是实话"
+     },
+     {
+      "t": "It was, nevertheless, a little unkind.",
+      "s": "nevertheless 前后用逗号隔开，是插入语，就是插进来的一小段。先把它拿掉读：It was a little unkind，再把它放回去，是「不过」。unkind 你可能翻成「不友善」，说话的时候更接近「刻薄」。\n→ 不过有点刻薄"
+     }
+    ],
+    "sum": "你说的是实话，不过有点刻薄。",
+    "cmp": "意思和书上一样，书上的「只不过」语气更轻一点，我的「不过」更中性。"
+   }
   },
   "How can you quantify a person's boredom level and compare it with someone else's?": {
    "ph": [
@@ -389,7 +620,21 @@
      "b": "compare … with",
      "m": "把……与……比较"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "How can you quantify a person's boredom level",
+      "s": "你多半会翻成「你怎么可以量化一个人的无聊水平」，像在责怪人。how can 这里问的是「用什么办法能」，不是不让做。quantify 是「量化」，boredom level 把名词倒过来说，就是「无聊程度」。\n→ 你要如何量化一个人的无聊程度"
+     },
+     {
+      "t": "and compare it with someone else's",
+      "s": "眼睛往后找 with：compare A with B 是「把 A 和 B 比较」。it 指谁？放回去试：a person 的 boredom level？把「一个人」和「别人的」比，不通；boredom level 和别人的比，对。someone else's 后面省略了 boredom level，补回去就是「别人的无聊程度」。\n→ 并与别人的作比较"
+     }
+    ],
+    "sum": "你要如何量化一个人的无聊程度，并与别人的作比较？",
+    "cmp": "意思和书上一样。书上补出了「其他人的无聊程度」，我保留英文的省略，用「别人的」，中文也能听懂。"
+   }
   },
   "If the destruction is extreme, mail addressed to the area will get sent elsewhere.": {
    "ph": [
@@ -439,7 +684,21 @@
      "b": "be eligible to do",
      "m": "有资格做某事"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He's only 17",
+      "s": "这块照字面翻就行：He's 是 He is，only 17 是「才17岁」。\n→ 他才17岁"
+     },
+     {
+      "t": "and therefore not eligible to vote",
+      "s": "你多半会翻成「因此不合格去投票」。念一遍，别扭。be eligible to do 是整体，就是「有资格做某事」，to vote 是 to do 短语，补充说明什么资格。not 前面省略了 is，补回去是 therefore (he is) not eligible。\n→ 因此没有投票的资格"
+     }
+    ],
+    "sum": "他才17岁，所以没有投票资格。",
+    "cmp": "和书上基本一样，书上多了「选举」二字，说得更完整。"
+   }
   },
   "Regular exercise strengthens the heart, thereby reducing the risk of heart attack.": {
    "ph": [
@@ -448,7 +707,21 @@
      "b": "reduce the risk of",
      "m": "降低……的风险"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Regular exercise strengthens the heart",
+      "s": "你多半会翻成「规则的运动强化心脏」。regular 这里不是「规则」，是「经常的、有规律的」。strengthens 是「增强」。\n→ 经常锻炼能增强心脏机能"
+     },
+     {
+      "t": "thereby reducing the risk of heart attack",
+      "s": "逗号后面接 reducing，是 -ing 短语，就是「由前面的事带来的结果」。你可能把它当成另一个独立的动作，翻成「并且减少」。放回去试：不是锻炼之外另外做了一件事，而是增强心脏的结果，所以 thereby 译成「从而」。\n→ 从而降低心脏病发作的风险"
+     }
+    ],
+    "sum": "经常锻炼能增强心脏机能，从而降低心脏病发作的风险。",
+    "cmp": "和书上几乎一样，书上说「减少……的危险」，我说「降低……的风险」，意思相同。"
+   }
   },
   "She rarely gave interviews and thus avoided being asked questions she would rather not answer.": {
    "ph": [
@@ -485,7 +758,21 @@
      "b": "more than",
      "m": "不仅仅是"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Moreover, schools should be more than",
+      "s": "Moreover 是「此外」，起连接作用。你多半会把 more than 翻成「比……多」。放回去试：学校比机构多？不通。be more than 后面跟名词，是「不只是、不仅仅是」。\n→ 此外，学校不应该仅仅是"
+     },
+     {
+      "t": "simple institutions of traditional learning",
+      "s": "你可能翻成「简单的传统学习的机构」，太绕。simple 在这里是「单纯的」，of traditional learning 是说机构是干什么的，倒过来放前面，中文直接说「传统学习机构」。\n→ 单纯的传统学习机构"
+     }
+    ],
+    "sum": "此外，学校不应该只是单纯的传统学习机构。",
+    "cmp": "和书上几乎一样，书上用「简单的」，我换成「单纯的」，更贴近 simple 在这里的意思。"
+   }
   }
  }
 }
