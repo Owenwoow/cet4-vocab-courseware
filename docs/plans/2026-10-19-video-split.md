@@ -76,3 +76,10 @@
 - 已验证（8775，window.open 打桩）：iframe 带 sandbox；「B 站 ↗」和 ▶ 都用同名窗口打开、不开浮窗；标签关掉后 ▶ 回到浮窗、按钮熄灭；再按按钮重新进入；375 宽不显示按钮
 - 没验证（要真实 B 站）：点画面只暂停、不开新标签；浮窗全屏在 sandbox 下能否用；同名 window.open 能否真让 B 站标签跳转；点 ▶ 后焦点会不会切到 B 站窗口——已写进 docs/待人工验收.md
 - 副作用：播放器里「进入哔哩哔哩」、推荐视频等链接点不动
+
+## 追加调研：暂停时的推荐视频和「进入哔哩哔哩，观看更高清」能不能去掉（2026-10-19）
+
+- 结论：去不掉。这些是 B 站播放器在 iframe 里自己画的，跨域页面改不了它的样式，也没有接口能控制它
+- player.html 只认这几个网址参数：aid、cid、bvid、seasonId、episodeId、poster、autoplay、muted、t、p、page、danmaku、kind、refer（我们传的 high_quality=1 其实不生效）；播放器核心里有 noEndingPanel、noControlLayer 等开关，但 player.html 把 featureList 写死了，外面传不进去
+- 手机版播放器 www.bilibili.com/blackboard/webplayer/mbplayer.html 和白名单播放器一样按来源网址核对白名单，在我们的网站里嵌进去是空白；绕过白名单在【不做】里
+- 想要干净的画面：用「B站」分屏标签，在 B 站自己的视频页看
