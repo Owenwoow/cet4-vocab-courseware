@@ -50,18 +50,18 @@ const Backup = (() => {
     for (const [k, p] of Object.entries(fileDoc)) {
       if (!on.has(catOf(k))) continue;
       const l = localDoc[k];
-      if (mode === "merge") { if (!l || newer(p, l)) out.push([k, [p[0], p[1]]]); }
-      else if (!l || !same(l[0], p[0])) out.push([k, [p[0], now]]);
+      if (mode === "merge") { const q = [p[0], Math.min(p[1], now)]; if (!l || newer(q, l)) out.push([k, q]); }   // 将来的时间夹到 now，免得这个键在所有设备上永远赢
+      else out.push([k, [p[0], now]]);   // 覆盖：值相同也写 now，不然云端更新的另一个值同步回来会把它盖掉
     }
     if (mode !== "overwrite") return out;
     for (const [k, l] of Object.entries(localDoc)) {
       if (k in fileDoc) continue;
       const c = catOf(k);
       if (!on.has(c)) continue;
-      if (BY_ID[c].tomb) { if (l[0] !== 0) out.push([k, [0, now]]); }
+      if (BY_ID[c].tomb) out.push([k, [0, now]]);   // 已经是 0 也写 now，理由同上
       else if (c === "set") {
         const name = k.slice(4);
-        if (name in defaults && !same(l[0], defaults[name])) out.push([k, [defaults[name], now]]);
+        if (name in defaults) out.push([k, [defaults[name], now]]);
       }
     }
     return out;
@@ -77,6 +77,7 @@ const Backup = (() => {
     if (!o || typeof o !== "object" || o.app !== APP || o.v !== V) return null;
     const d = o.d;
     if (!d || typeof d !== "object" || Array.isArray(d)) return null;
+    if (Object.keys(d).some(k => k === "__proto__" || k === "constructor" || k === "prototype")) return null;
     for (const p of Object.values(d)) if (!Array.isArray(p) || p.length !== 2 || typeof p[1] !== "number" || !isFinite(p[1])) return null;
     return {at: typeof o.at === "number" ? o.at : 0, origin: typeof o.origin === "string" ? o.origin : "", d};
   }

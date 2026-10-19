@@ -51,15 +51,16 @@ test("覆盖：文件有的写文件的值、时间记 now；没有的已会 / �
   assert.deepEqual(out, {
     "known:a": [0, 999], "srs:new": [{d: 1}, 999],
     "known:old": [0, 999], "srs:old": [0, 999], "learn:x:g9": [0, 999], "log:2026-10-02": [0, 999], "vocab:old": [0, 999],
-  });   // known:gone 已经是墓碑，不再写
+    "known:gone": [0, 999],
+  });   // 已经是墓碑也写 now：云端若有更新的 1，同步回来不会把覆盖改回去
 });
 
 test("覆盖：设置缺项恢复默认值（不记 0），0 是合法值不当墓碑", () => {
   const local = {"set:voice": ["ryan", 5], "set:roundSize": [0, 5], "set:rate": [1, 5], "set:removed": ["x", 5]};
   const file = {"set:autoSay": [false, 1]};
   const out = toObj(Backup.plan(local, file, ALL, "overwrite", 999, DEF));
-  assert.deepEqual(out, {"set:autoSay": [false, 999], "set:voice": ["ava", 999], "set:roundSize": [25, 999]});
-  // rate 已经是默认值不写；removed 不在默认值里不动
+  assert.deepEqual(out, {"set:autoSay": [false, 999], "set:voice": ["ava", 999], "set:roundSize": [25, 999], "set:rate": [1, 999]});
+  // 已经是默认值也写 now（理由同墓碑）；removed 不在默认值里不动
   const out2 = toObj(Backup.plan({"set:roundSize": [25, 5]}, {"set:roundSize": [0, 1]}, ALL, "overwrite", 999, DEF));
   assert.deepEqual(out2, {"set:roundSize": [0, 999]});
 });
@@ -131,4 +132,14 @@ test("sync.load：保留给定时间、存本地、通知值变了的键、排�
   assert.equal(store["lx:sync:cfg"], cfg);
   assert.equal(Sync.load([["known:a", [1, 9]]]), 0);   // 完全一样的不写、不通知、不再排推送
   assert.equal(seen.length, 1); assert.equal(timers.length, 1);
+});
+
+test("合并：文件里将来的时间夹到 now", () => {
+  assert.deepEqual(Backup.plan({}, {"known:a": [1, 5000]}, ["known"], "merge", 999, DEF), [["known:a", [1, 999]]]);
+  assert.deepEqual(Backup.plan({"known:a": [1, 999]}, {"known:a": [1, 1e15]}, ["known"], "merge", 999, DEF), []);   // 夹完和本机一样，不写
+});
+
+test("解析：__proto__ / constructor 这类键整份拒绝", () => {
+  for (const k of ["__proto__", "constructor", "prototype"])
+    assert.equal(Backup.parse(`{"app":"cet4-vocab","v":1,"at":1,"d":{"known:a":[1,5],"${k}":[1,5]}}`), null);
 });

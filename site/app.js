@@ -830,13 +830,15 @@ function bkRead(file) {
     const el = $(".bkprev"); if (el) el.scrollIntoView({block: "nearest"});
   }, () => toast("读不了这个文件"));
 }
-function bkGo() {
+async function bkGo() {
   const p = bkPending; if (!p || !p.cats.length) return;
+  /* 开着云同步时先拉一次：按最新的数据算计划，覆盖才不会被云端更新的值或只在云端的键改回去 */
+  if (Sync.connected) { toast("先和云端同步一次…"); try { await Sync.syncNow(); } catch {} }
   if (p.mode === "overwrite") bkDownload("-导入前");
   const n = Sync.load(Backup.plan(Sync.dump(), p.d, p.cats, p.mode, Date.now(), DEFAULTS));
   bkPending = null;
   alert(n ? `已导入 ${n} 条` : "没有需要导入的内容（这台设备上已经一样或更新）");
-  location.reload();
+  setTimeout(() => location.reload(), 800);   // 稍等再刷新，让「导入前」那份下载先开始
 }
 
 /* ---------- 设置页：云同步 ---------- */
