@@ -1,6 +1,8 @@
 /* 云同步：进度存在自己 GitHub 账号的一个 Secret Gist 里，不需要服务器。
    本地优先：先写本机，再在后台推送；打开页面、切回页面时拉取合并。
-   每个键存 [值, 修改时间]，合并时按键取较新的一份，两台设备各改各的也不会互相覆盖 */
+   每个键存 [值, 修改时间]，合并时按键取较新的一份，两台设备各改各的也不会互相覆盖。
+   dump() / load(pairs) 给导出 / 导入备份用（规则在 backup.js）：dump 返回全部进度的拷贝，load 按给定的时间一次写入一批；
+   云同步 token（cfg）不经过这两个函数 */
 "use strict";
 const Sync = (() => {
   const P = "lx:sync:", FILE = "cet4-progress.json", API = "https://api.github.com";
@@ -42,6 +44,23 @@ const Sync = (() => {
     const t = Date.now(); let n = 0;
     for (const [k, v] of pairs) { if (k in doc && same(doc[k][0], v)) continue; doc[k] = [v, t]; n++; }
     if (n) { save(); schedule(DELAY); }
+  }
+  /* 导出：全部进度的深拷贝（不含 token） */
+  const dump = () => JSON.parse(JSON.stringify(doc));
+  /* 导入：一次写入 [键, [值, 时间]]，保留给定的时间；值变了的键通知 on(changed)，只存一次本地、只排一次推送；返回写入条数 */
+  function load(pairs) {
+    const changed = []; let n = 0;
+    for (const [k, p] of pairs) {
+      const l = doc[k];
+      if (l && same(l, p)) continue;
+      if (!l || !same(l[0], p[0])) changed.push(k);
+      doc[k] = [p[0], p[1]]; n++;
+    }
+    if (!n) return 0;
+    save();
+    if (changed.length) changeFns.forEach(f => f(changed));
+    schedule(DELAY);
+    return n;
   }
   const entries = prefix => Object.keys(doc).filter(k => k.startsWith(prefix)).map(k => [k.slice(prefix.length), doc[k][0]]);
 
@@ -154,7 +173,7 @@ const Sync = (() => {
   function disconnect() { cfg = null; clearTimeout(timer); timer = null; ls.del(P + "cfg"); setStatus("off"); }
 
   return {
-    get, set, setMany, entries, start, connect, disconnect, syncNow: now,
+    get, set, setMany, entries, dump, load, start, connect, disconnect, syncNow: now,
     on: f => changeFns.push(f), onStatus: f => statusFns.push(f),
     get status() { return status; }, get connected() { return !!cfg; },
   };
