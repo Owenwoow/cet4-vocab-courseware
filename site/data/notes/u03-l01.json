@@ -74,6 +74,58 @@
     "cmp": "书上让「折扣和促销活动」当主语，写成「折扣和促销活动增加了客流量」，更简洁；意思和我的一样。"
    }
   },
+  "We generally recommend other forms of payment, like credit card.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "We generally recommend other forms of payment",
+      "s": "你多半会翻成「我们一般推荐其他的付款的形式」。念一遍，是不是两个「的」绕在一起？forms of payment 是一个整体，说白了就是「付款方式」。generally 放在动词前，是「一般、通常」。\n→ 我们一般建议使用其他付款方式"
+     },
+     {
+      "t": "like credit card",
+      "s": "看到 like 你可能脱口而出「喜欢」，翻成「喜欢信用卡」。放回去试试：前面刚说「其他付款方式」，后面突然「喜欢」？不通。这里 like 是「像、比如」，逗号后面跟它，就是举个例子。\n→ 比如信用卡"
+     }
+    ],
+    "sum": "我们一般建议用别的付款方式，比如信用卡。",
+    "cmp": "和书上基本一样，书上用「使用」把 recommend 的内容说得更完整。"
+   }
+  },
+  "I'll repay the money I owe them next week.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "I'll repay the money I owe them",
+      "s": "你多半会翻成「我会偿还那钱我欠他们」。念一遍，是不是断成两截了？the money I owe them 中间省掉了 that，补回去是 the money (that) I owe them，这是定语从句，就是给 money 补一段说明：哪笔钱？我欠他们的那笔。\n→ 我会偿还我欠他们的钱"
+     },
+     {
+      "t": "next week",
+      "s": "这块照字面翻就行：next week 就是「下个星期」。英文把时间放在句尾，中文习惯放前面。\n→ 下个星期"
+     }
+    ],
+    "order": "英文把时间放在最后，中文习惯先说什么时候，所以把「下个星期」提到前面。",
+    "sum": "我下个星期就把欠他们的钱还上。",
+    "cmp": "意思一样。书上「偿还欠他们的钱」直接保留了原文顺序，我加了「就」，口气更口语。"
+   }
+  },
+  "If a home generates more power than it uses, the bill is zero.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "If a home generates more power than it uses",
+      "s": "If 带的是条件状语从句，就是「如果……」。你多半会翻成「更多的电比它使用」，念一遍就卡住了。more … than 是比较，than 后面的 it uses 省掉了 power：than it uses (power)。it 指谁？放回去试：a home 用电，对；power 使用它？不通。所以 it 是 a home。\n→ 如果一个家庭发的电比用的多"
+     },
+     {
+      "t": "the bill is zero",
+      "s": "bill 你可能想到「钞票、法案」，这里是「账单」。主句很短，翻出来就行。\n→ 账单就是零"
+     }
+    ],
+    "sum": "如果一个家庭发的电比用的还多，账单就是零。",
+    "cmp": "和书上意思一样。书上写「产生的电比它使用的多」，保留了「它」，我省掉了，因为中文不需要。"
+   }
+  },
   "They are finally clear of debt.": {
    "ph": [
     {
@@ -113,7 +165,17 @@
      "b": "be splashed with",
      "m": "溅满"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "My clothes were splashed with mud",
+      "s": "你多半会翻成「我的衣服被泥溅了」。念一遍，中文不这么说。were splashed 是被动，就是「衣服被怎么样了」；with mud 说的是溅上去的东西。中文少用「被」，直接说衣服上怎么样了就行：be splashed with 是「溅满了……」。\n→ 我的衣服上溅满了泥"
+     }
+    ],
+    "sum": "我的衣服溅得到处是泥。",
+    "cmp": "意思和书上一样，书上「溅满了泥」更简洁。"
+   }
   },
   "The elephant was able to return to the jungle.": {
    "ph": [
@@ -122,7 +184,17 @@
      "b": "be able to",
      "m": "能够，得以"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The elephant was able to return to the jungle",
+      "s": "你多半会翻成「大象曾经能够回到丛林」。能力没错，但过去时的 was able to 通常说的是「这一次成功做到了」，所以书上翻「得以」更准。看到 be able to，眼睛往后找动词原形：return，这是 to do，就是「做某事」。后面 to the jungle 的 to 是介词，「到丛林」，别和前面那个 to 搞混。\n→ 大象得以回到丛林"
+     }
+    ],
+    "sum": "那头大象能够回到丛林里了。",
+    "cmp": "意思一样。书上的「得以」更强调做成了，我的「能够……了」也带这个意思。"
+   }
   },
   "The yard was overgrown with weeds.": {
    "ph": [
@@ -131,7 +203,17 @@
      "b": "be overgrown with",
      "m": "长满"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The yard was overgrown with weeds",
+      "s": "你多半会翻成「院子被杂草长过」。念一遍，不通。overgrown 是过去分词（-ed 形式），在这里当形容词用，be overgrown with 整体就是「长满了……」，说的是一种状态，不是「被谁怎么样」。weeds 是杂草，复数，表示长了很多。\n→ 院子里长满了杂草"
+     }
+    ],
+    "sum": "院子里杂草长得到处都是。",
+    "cmp": "意思和书上一样，书上「杂草丛生」是四字词，更书面。"
+   }
   },
   "He drove by with a big load of hay.": {
    "ph": [
@@ -154,7 +236,22 @@
      "b": "be good at",
      "m": "擅长"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Great innovators are good at connecting concepts",
+      "s": "你可能想翻成「伟大的创新者擅长连接概念」。意思差不多，但注意 at 是介词，后面只能接名词或 -ing，所以是 connecting，不是 connect。-ing 在这里就是「做某事这件事」：be good at doing，擅长做某事。connect 放在这里，说白了就是「联系起来」。\n→ 伟大的创新者善于把概念联系起来"
+     },
+     {
+      "t": "from various academic fields",
+      "s": "你多半会翻成「来自各种学术的领域」。念一遍，别扭。various 是「各种不同的」，academic fields 合起来是「学术领域」。from 说明这些概念从哪里来，它是在补充 concepts 的。\n→ 来自不同学术领域的"
+     }
+    ],
+    "order": "英文把 from 短语放在 concepts 后面，中文要把它提到「概念」前面当修饰语：「来自不同学术领域的概念」。",
+    "sum": "伟大的创新者善于把来自不同学术领域的概念联系在一起。",
+    "cmp": "意思一样。书上译成「将不同学术领域的概念联系起来」，把 from 的「来自」省掉了，也通顺。"
+   }
   },
   "It takes great efforts for children to grasp the concept of number words.": {
    "ph": [
@@ -196,7 +293,35 @@
      "b": "get up",
      "m": "起身"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She grabbed his arm",
+      "s": "grab 是「一把抓住」，比 take 用力、动作快。主句不难，先翻出来。\n→ 她抓住了他的胳膊"
+     },
+     {
+      "t": "as he got up to leave",
+      "s": "as 你可能只认识「因为」，翻成「因为他起身去离开」。放回去试试：因为他起身，所以她抓胳膊？意思歪了。这里 as 带的是时间状语从句，就是「在……的时候」，两件事同时发生。got up 是「起身」，to leave 是 to do，说明起身是为了做什么，就是「准备离开」。\n→ 他起身要离开的时候"
+     }
+    ],
+    "order": "英文把「什么时候」放在后面，中文习惯先说时间，所以把「他起身要走时」提到前面。",
+    "sum": "他起身要走的时候，她一把抓住了他的胳膊。",
+    "cmp": "和书上一样，只是我多用了「一把」来体现 grab 的力度。"
+   }
+  },
+  "It was built above the sea-water.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It was built above the sea-water",
+      "s": "你多半会翻成「它被建造在海水上面」。was built 是被动，就是「它被别人怎么样了」；中文少用「被」，直接说「建在……」就顺了。above 是「在……的上方」，不贴着，所以是建在海面上方，不是泡在水里。\n→ 它建在海水之上"
+     }
+    ],
+    "sum": "它是建在海面上方的。",
+    "cmp": "意思和书上一样。"
+   }
   },
   "The idea that those at the bottom can rise to the top is central to America's ideas about itself.": {
    "ph": [
@@ -252,7 +377,34 @@
      "b": "in all one's glory",
      "m": "以其全部的辉煌"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The city was spread out beneath us",
+      "s": "你多半会翻成「城市被铺开在我们下面」。was spread out 是被动形式，说的是城市「被摊开」的状态，翻成中文就是「铺展着」，不用「被」。beneath 是「在……下方」，我们站得高，往下看。\n→ 这座城市在我们脚下铺展开来"
+     },
+     {
+      "t": "in all its glory",
+      "s": "你可能翻成「在它所有的荣耀里」。念一遍，城市哪来的荣耀？in all its glory 是一个整体，glory 这里是「壮丽、辉煌」，就是「以最壮丽的样子」。its 指谁？放回去试：us 不对，its 是 it 的所有格，指 the city。\n→ 极其壮丽地"
+     }
+    ],
+    "sum": "这座城市壮丽地展现在我们脚下。",
+    "cmp": "意思一样。书上译「绚丽多彩地展现在我们下方」，「绚丽多彩」偏重颜色，原文 glory 讲的是整体的壮丽，我用「壮丽」。"
+   }
+  },
+  "They had to undergo 2-3 physical checkups.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "They had to undergo 2-3 physical checkups",
+      "s": "你多半会翻成「他们不得不经历 2-3 次身体检查」。意思没错，但 undergo 经历的往往是检查、手术这类要「承受」的事，中文更习惯说「接受」。had to 是「必须」，to 后面接动词原形 undergo。physical checkup 合起来是「体检」。\n→ 他们必须接受 2~3 次体检"
+     }
+    ],
+    "sum": "他们必须做两三次体检。",
+    "cmp": "意思和书上一样，书上说「身体检查」，我说「体检」，更短。"
+   }
   },
   "Desiring new experiences can help to renovate the brain.": {
    "ph": [
@@ -261,7 +413,21 @@
      "b": "help (to) do",
      "m": "有助于做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Desiring new experiences",
+      "s": "一开头就是 Desiring，别慌。-ing 开头当主语，就是「渴望……这件事」。你多半会翻成「渴望新的经验」，experience 作可数名词，是一件件亲身经历的事，翻「体验」更准。\n→ 渴望新的体验"
+     },
+     {
+      "t": "can help to renovate the brain",
+      "s": "help to renovate 是 help to do，就是「有助于做某事」。renovate 你可能只认识「翻修房子」，用在大脑上就是「更新」。can 是「能、可以」。\n→ 可以帮助大脑更新"
+     }
+    ],
+    "sum": "渴望新鲜的体验，能让大脑不断更新。",
+    "cmp": "意思和书上一样，书上的「可以帮助大脑更新」更贴近 help to 的字面。"
+   }
   },
   "These people are usually unable or unprepared to endure the long haul.": {
    "ph": [
@@ -270,7 +436,21 @@
      "b": "the long haul",
      "m": "长途跋涉，漫长过程"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "These people are usually unable or unprepared",
+      "s": "unable 和 unprepared 用 or 并列，都是 un- 开头的否定词。你可能把 unprepared 翻成「不准备」，其实是「没有准备好」。两个并列，翻成「无法或没有准备好」。\n→ 这些人通常无法或没有准备好"
+     },
+     {
+      "t": "to endure the long haul",
+      "s": "to endure 是 to do，补充说明「无法做什么」。endure 是「忍受、熬过」。the long haul 你多半会翻成「长途运输」，放回去试：这里说的是人能不能熬，不是运货，所以它是比喻，指「要熬很久的过程」。\n→ 熬过漫长的过程"
+     }
+    ],
+    "sum": "这些人通常无法或没有准备好熬过漫长的过程。",
+    "cmp": "书上译「忍受长途跋涉」，偏字面；我取它的比喻义「漫长的过程」，两种都能读通。"
+   }
   },
   "These containers were really durable, lasting years on end.": {
    "ph": [
@@ -279,7 +459,21 @@
      "b": "years on end",
      "m": "连续数年"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "These containers were really durable",
+      "s": "你多半会翻成「这些容器真的很持久」。念一遍，容器不说「持久」。durable 说的是东西「经久耐用」。\n→ 这些容器真的很耐用"
+     },
+     {
+      "t": "lasting years on end",
+      "s": "逗号后面突然冒出 lasting，别慌，它是 -ing 短语，在补充说明前面：容器怎么个耐用法？lasting 是「持续」，谁持续？容器。years on end 是一个整体，就是「一连好几年」。\n→ 可以连续使用好几年"
+     }
+    ],
+    "sum": "这些容器真的很耐用，一用就是好几年。",
+    "cmp": "意思和书上一样，书上说「可以连续使用数年」，我说得更口语。"
+   }
   },
   "Participants will have the opportunity to attend sessions on a wide variety of topics.": {
    "ph": [
@@ -293,7 +487,39 @@
      "b": "a wide variety of",
      "m": "各种各样的"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Participants will have the opportunity to attend sessions",
+      "s": "你多半会翻成「参与者将拥有参加会议的机会」，念着像翻译腔。看到 have the opportunity，眼睛往后找 to：to attend，这是 to do，整个就是「有机会做某事」。sessions 是一场场的会议、活动。\n→ 参与者将有机会参加会议"
+     },
+     {
+      "t": "on a wide variety of topics",
+      "s": "on 你可能翻成「在……上面」，放回去试：在各种主题上面的会议？怪。这里 on 是「关于」。a wide variety of 是一个整体，就是「各种各样的」。\n→ 关于各种主题的"
+     }
+    ],
+    "order": "英文把 on 短语放在 sessions 后面，中文把它提到「会议」前面：「关于各种主题的会议」。",
+    "sum": "参与者将有机会参加涉及各种主题的会议。",
+    "cmp": "和书上基本一样，只是我把「关于」换成了「涉及」。"
+   }
+  },
+  "Their attention span cannot be expanded.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Their attention span",
+      "s": "你多半会翻成「他们的注意力跨度」。念一遍，生硬。attention span 是一个整体，span 是「持续的时间长度」，说白了就是「能集中注意力的时间」。\n→ 他们的注意力持续时间"
+     },
+     {
+      "t": "cannot be expanded",
+      "s": "cannot be expanded 是被动，就是「它不能被怎么样」。你可能翻成「不能被扩大」，时间用「扩大」不顺，中文说「延长」。\n→ 无法延长"
+     }
+    ],
+    "sum": "他们能集中注意力的时间是没法延长的。",
+    "cmp": "和书上一样，只是我多说了「能集中注意力的时间」，把意思拆开讲明白。"
+   }
   },
   "But while catchings at sea have suffered, fish-farming has been growing at a fast rate.": {
    "ph": [
@@ -322,6 +548,23 @@
     "cmp": "书上把 fish-farming 译成「渔业」，范围比原文大，「养鱼业」更准确；其余一样。"
    }
   },
+  "I didn't recognize him—he's grown a beard.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "I didn't recognize him",
+      "s": "你多半会翻成「我没有认识他」。放回去试：他们本来就认识，只是没认出来。recognize 是「认出来」，见到人能对上号。\n→ 我没认出他来"
+     },
+     {
+      "t": "he's grown a beard",
+      "s": "这个 he's 是 he has，不是 he is：has 后面是 grown，has + 过去分词是现在完成时，强调到现在的结果，就是「已经……了」。grow a beard 你可能翻成「长了一把胡子」，其实是「留胡子」。破折号后面是补充原因。\n→ 他留胡子了"
+     }
+    ],
+    "sum": "我没认出他来，他现在留着胡子呢。",
+    "cmp": "意思和书上一样，书上保留了破折号。"
+   }
+  },
   "What can we infer from the passage about the author?": {
    "ph": [
     {
@@ -334,7 +577,21 @@
      "b": "infer … from",
      "m": "从……推断出"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "What can we infer",
+      "s": "疑问句里 can 被提到 we 前面，还原成陈述语序是 we can infer what。你多半会翻成「什么能我们推断」，念一遍不通。按中文顺序摆好：我们可以推断出什么。infer 是「推断」。\n→ 我们可以推断出什么"
+     },
+     {
+      "t": "from the passage about the author",
+      "s": "眼睛回头找 infer：infer A from B，从 B 推断出 A。B 是 the passage。你可能把 about the author 也连到 passage 上，翻成「文章里关于作者的」，放回去试：问的是推断出的内容，about the author 说明的是 What，也就是「关于作者的什么」。\n→ 从文章中，关于作者的什么"
+     }
+    ],
+    "sum": "根据这篇文章，我们能推断出作者的哪些情况？",
+    "cmp": "意思和书上一样。书上顺序贴着英文，我把「根据文章」提到前面，读起来更顺。"
+   }
   },
   "The report refers to this as the coming of the \"18-hour city\".": {
    "ph": [
@@ -348,7 +605,21 @@
      "b": "refer to … as",
      "m": "把……称为"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The report refers to this",
+      "s": "看到 refers to，先别急着翻「提到」，眼睛往后找 as：refer to A as B，把 A 称为 B。A 是 this。\n→ 报告把这"
+     },
+     {
+      "t": "as the coming of the \"18-hour city\"",
+      "s": "as 你多半会翻成「作为」，翻成「作为……的到来」，念一遍，句子断了。这里 as 是 refer to … as 里的一半，合起来是「称为」。the coming of 是「……的到来」。\n→ 称为「18 小时城市」的到来"
+     }
+    ],
+    "sum": "报告把这称为「18 小时城市」的到来。",
+    "cmp": "意思一样。书上用「称这是」，我用「称为」，更贴 refer to … as 的搭配。"
+   }
   },
   "Their top concern is not that they work too much but that they work too little.": {
    "ph": [
@@ -378,6 +649,23 @@
     "cmp": "和书上基本一样，书上说「最关心的」，我换成「最在意的」，两个都行。"
    }
   },
+  "Debating scientific issues at a conference is now old-fashioned.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Debating scientific issues at a conference",
+      "s": "你可能把 Debating 当成修饰 issues 的形容词，翻成「辩论的科学问题」。放回去试：后面谓语是 is，主语是整件事，不是 issues。-ing 开头当主语，就是「做某事这件事」。at a conference 补充在哪里辩。\n→ 在会议上辩论科学问题"
+     },
+     {
+      "t": "is now old-fashioned",
+      "s": "这块照字面翻就行：old-fashioned 是「过时的」。\n→ 现在已经过时了"
+     }
+    ],
+    "sum": "在会议上辩论科学问题，如今已经过时了。",
+    "cmp": "和书上基本一样。"
+   }
+  },
   "Forests are eating away the fertile farmland worldwide.": {
    "ph": [
     {
@@ -394,7 +682,21 @@
      "b": "hundreds of",
      "m": "数以百计的"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Hundreds of studies show that",
+      "s": "Hundreds of 你可能翻成「一百个」，其实是「数以百计」。that 带的是宾语从句，就是 show 说明的内容，后面整个是一个意思。\n→ 数百项研究表明"
+     },
+     {
+      "t": "infants prefer novelty",
+      "s": "你可能把 novelty 当成形容词「新奇的」。它是名词，「新奇的事物」。prefer 是「更喜欢」，带一点比较的味道。\n→ 婴儿更喜欢新奇的东西"
+     }
+    ],
+    "sum": "数百项研究都表明，婴儿更喜欢新奇的东西。",
+    "cmp": "意思和书上一样，书上「喜欢新奇事物」，我把 prefer 的比较意味译成了「更喜欢」。"
+   }
   },
   "Man appears indifferent to what happens in nature.": {
    "ph": [
@@ -403,7 +705,22 @@
      "b": "be indifferent to",
      "m": "对……漠不关心"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Man appears indifferent",
+      "s": "你多半会翻成「男人出现冷漠」。放回去试：Man 没有冠词，是「人类」；appears 在这里是系动词，意思是「似乎」，不是「出现」。\n→ 人类似乎漠不关心"
+     },
+     {
+      "t": "to what happens in nature",
+      "s": "看到 indifferent，眼睛往后找 to：indifferent to，对……漠不关心。what happens in nature 是 what 引导的从句，当作 to 的宾语，就是「自然界里发生的事」。\n→ 对自然界发生的事"
+     }
+    ],
+    "order": "英文把 to … 放在 indifferent 后面，中文要把「对自然界发生的事」提到「漠不关心」前面。",
+    "sum": "人类似乎对自然界中发生的一切漠不关心。",
+    "cmp": "和书上一样。"
+   }
   },
   "We are attracted by the skyline of the distant mountains.": {
    "ph": [
@@ -412,7 +729,21 @@
      "b": "be attracted by",
      "m": "被……吸引"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "We are attracted by",
+      "s": "你多半会翻成「我们被吸引由」。are attracted 是被动，就是「我们被什么吸引了」，by 引出吸引我们的东西。这里中文保留「被……吸引」也通顺。\n→ 我们被……所吸引"
+     },
+     {
+      "t": "the skyline of the distant mountains",
+      "s": "skyline 你可能想到「城市的天际线」，这里后面是 mountains，指远山与天空相接的那条线，说成「轮廓线」。of 把 skyline 和 mountains 连起来，就是「远山的轮廓线」。\n→ 远山的轮廓线"
+     }
+    ],
+    "sum": "远山的轮廓线吸引了我们。",
+    "cmp": "意思和书上一样。书上保留了被动「被……所吸引」，我改成主动，更短。"
+   }
   },
   "She drew the figures in outline.": {
    "ph": [
@@ -422,6 +753,24 @@
      "m": "概括地，简略地"
     }
    ]
+  },
+  "Online classes began to be popularized just a few decades ago.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Online classes began to be popularized",
+      "s": "你多半会翻成「在线课程开始被普及」。念一遍，有点怪。began to 是 to do，就是「开始做某事」，后面接的 be popularized 是被动，就是「被普及」。中文把两个合起来，说「开始普及」就行。Online 是形容词，「在线的」。\n→ 在线课程开始普及"
+     },
+     {
+      "t": "just a few decades ago",
+      "s": "a few 是「几个」，just 强调时间不长。ago 放在句尾，中文放前面。\n→ 就在几十年前"
+     }
+    ],
+    "order": "英文把「什么时候」放在最后，中文习惯先说时间，所以把「几十年前」提到前面。",
+    "sum": "在线课程也不过是几十年前才开始普及的。",
+    "cmp": "和书上基本一样，我多用了「也不过」，把 just 的语气说出来。"
+   }
   },
   "Some of the world's most significant problems never hit headlines.": {
    "ph": [
@@ -448,7 +797,39 @@
      "b": "a good fit for",
      "m": "适合……的"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "There are a few things you can do",
+      "s": "There are 是「有」。you can do 前面省掉了 that，补回去是 things (that) you can do，这是定语从句，就是给 things 补一段说明：什么事？你能做的事。\n→ 有一些你能做的事"
+     },
+     {
+      "t": "to determine whether or not a company is a good fit for you",
+      "s": "to determine 是 to do，说明目的，就是「为了确定」。whether or not 是「是否」，它带的是宾语从句，就是 determine 的内容。a good fit for you 你多半会翻成「对你来说一个好的合身」，其实 fit 在这里是名词，a good fit for 是「适合……的人或物」。\n→ 来确定一家公司是否适合你"
+     }
+    ],
+    "sum": "你可以做一些事来判断一家公司适不适合你。",
+    "cmp": "意思和书上一样。"
+   }
+  },
+  "Our camping trip was spoiled by bad weather.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Our camping trip was spoiled",
+      "s": "你多半会翻成「我们的露营旅行被破坏了」。was spoiled 是被动，就是「它被别人怎么样了」。spoil 在这里是「搞砸、毁了」，说的是旅行、计划这类事。\n→ 我们的露营旅行被毁了"
+     },
+     {
+      "t": "by bad weather",
+      "s": "你可能翻成「被坏天气」。念一遍，中文不这么说。by 引出做这件事的是谁，中文把它请到前面当主语：谁搞砸了？天气。\n→ 糟糕的天气"
+     }
+    ],
+    "order": "把 by 引出的「糟糕的天气」提到最前面当主语，被动就变成主动：糟糕的天气毁了露营旅行。",
+    "sum": "糟糕的天气把我们的露营旅行搞砸了。",
+    "cmp": "书上译成「天气不好，破坏了我们的露营计划」，把 bad weather 拆成一个短句，也通顺；我把它直接当主语，更紧凑。"
+   }
   },
   "Watch paint dry or water boil, and you might unlock your next big idea.": {
    "ph": [
@@ -474,6 +855,41 @@
     "cmp": "书上保留了「解锁」，是直译，能看懂，但「想出」更像日常中文。"
    }
   },
+  "I don't want to ruin the story for you.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "I don't want to ruin",
+      "s": "want to ruin 是 to do，就是「想做某事」，前面加了 don't，就是「不想……」。ruin 是「毁掉、破坏」。\n→ 我不想破坏"
+     },
+     {
+      "t": "the story for you",
+      "s": "你多半会翻成「破坏给你的故事」。念一遍，不通。for you 是「对你来说」。ruin A for B 是把 A 对 B 毁掉，就是「不想让你好好听这个故事」。\n→ 你听的这个故事"
+     }
+    ],
+    "sum": "我不想把这个故事给你毁了。",
+    "cmp": "意思一样。书上译「破坏你要听的这个故事」，多补了「你要听的」，帮助读者理解 for you。"
+   }
+  },
+  "Many facilities were destroyed by a wandering cow.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Many facilities were destroyed",
+      "s": "你多半会翻成「许多设施被毁灭了」。were destroyed 是被动，就是「设施被别人怎么样了」。facilities 是复数，「设施」。destroy 是「破坏」，不一定到「毁灭」那么严重。\n→ 许多设施被破坏了"
+     },
+     {
+      "t": "by a wandering cow",
+      "s": "wandering 是 -ing 形式，当形容词用，就是「游荡的」。by 引出做这件事的是谁，中文可以把它请到前面当主语：谁破坏了设施？一头牛。\n→ 一头游荡的奶牛"
+     }
+    ],
+    "order": "把 by 引出的「一头游荡的奶牛」提到前面当主语，被动变主动，更像中文。",
+    "sum": "一头四处游荡的奶牛把许多设施破坏了。",
+    "cmp": "意思和书上一样。书上保留了「被」，我改成主动。"
+   }
+  },
   "The landlord had let the building fall into decay.": {
    "ph": [
     {
@@ -481,7 +897,21 @@
      "b": "fall into decay",
      "m": "衰败，破败"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The landlord had let the building",
+      "s": "had let 是 had + 过去分词，过去完成时，说的是在更早以前就已经这样了。let 后面接「人或物 + 动词原形」，也就是 let the building fall，fall 前面没有 to，别漏掉。let 在这里是「任由、听任」，不是「出租」。\n→ 房东已经任由房子"
+     },
+     {
+      "t": "fall into decay",
+      "s": "你多半会翻成「落入腐烂」。念一遍，房子不会腐烂。fall into decay 是一个整体，就是「衰败、变破旧」。\n→ 变得破败"
+     }
+    ],
+    "sum": "房东已经任由这栋房子破败下去了。",
+    "cmp": "意思和书上一样。书上「变得破烂不堪」更重，我这里加了「已经」，把 had 的意思体现出来。"
+   }
   },
   "The reading culture was seriously affected by cable television some four decades ago.": {
    "ph": [

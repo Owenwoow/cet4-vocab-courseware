@@ -1,6 +1,24 @@
 {
  "_note": "例句词组与语法解析（书外补充，AI 生成）",
  "sents": {
+  "It was a hard task to remove the spilled substance.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It was a hard task",
+      "s": "你多半会翻成「它是一项艰巨的任务」。念一遍，「它」是谁？这里的 It 只是先占个位置，真正的内容在后面。眼睛往后找 to，找到的就是这项任务到底是什么。\n→ 这是一项艰巨的任务"
+     },
+     {
+      "t": "to remove the spilled substance",
+      "s": "to remove 是 to do 短语，用来说明「是什么任务」：清除。你可能想翻成「清除那个被洒出的物质」。spilled 是 -ed 形式，放在 substance 前面当形容词，就是「被洒出来的」，中文直接说「溢出的」就行。\n→ 清除溢出的物质"
+     }
+    ],
+    "order": "英文先说「这是项艰巨的任务」，再说「什么任务」；中文把任务的内容提前当主语，更顺。",
+    "sum": "清除溢出的物质是一项艰巨的任务。",
+    "cmp": "意思一样，书上把「溢出物质」直接连着说，更紧凑。"
+   }
+  },
   "In most instances, there will be no need for further treatment.": {
    "ph": [
     {
@@ -27,6 +45,23 @@
      "m": "在……的后部"
     }
    ]
+  },
+  "Ask a clerk to fetch items from behind a counter.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Ask a clerk to fetch items",
+      "s": "你多半会翻成「问一个店员去拿东西」。放回去试：问店员？问什么？这里 Ask 开头是祈使句（省略了 you），ask sb. to do sth. 是「请某人做某事」。to fetch 是 to do 短语，就是要店员做的事：fetch 是「去把东西拿来」。\n→ 让店员去拿东西"
+     },
+     {
+      "t": "from behind a counter",
+      "s": "from behind 你可能觉得别扭，两个介词连着用。其实就是「从……后面」，from 管起点，behind 管位置。a 不用翻成「一个」。\n→ 从柜台后面"
+     }
+    ],
+    "sum": "让店员从柜台后面把东西拿过来。",
+    "cmp": "和书上一样，我多了「拿过来」，强调 fetch 是去拿来。"
+   }
   },
   "They see a day in the not-too-distant future when all autos will be abandoned and allowed to rust.": {
    "ph": [
@@ -68,7 +103,39 @@
      "b": "be consistent in",
      "m": "在……方面保持一致"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "We must be consistent",
+      "s": "你多半会翻成「我们必须是一致的」。念一遍，话没说完：一致什么？consistent 是「前后一致、始终如一」，具体在哪方面，要看后面的 in。\n→ 我们必须保持一致"
+     },
+     {
+      "t": "in applying the rules",
+      "s": "applying 是 -ing 形式。in 是介词，后面不能直接跟动词，所以动词变成 -ing，就是「做某事这件事」。in applying the rules 就是「在实施这些规则这件事上」，简单说「实施规则时」。\n→ 在实施这些规则时"
+     }
+    ],
+    "order": "英文把「在哪方面」放后面，中文先说「实施规则时」，再说「必须前后一致」更自然。",
+    "sum": "我们实施这些规则时必须前后一致。",
+    "cmp": "意思一样。书上的「保持一贯性」书面一点，「前后一致」更口语。"
+   }
+  },
+  "Only a few months later Leah opened her first yoga studio, but success was not instant.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Only a few months later Leah opened her first yoga studio",
+      "s": "这块照字面翻就行：Only a few months later 是「仅仅几个月后」，时间放在最前；opened 是 open 的过去式，这里是「开设」。\n→ 仅仅几个月后，利亚开了她的第一家瑜伽馆"
+     },
+     {
+      "t": "but success was not instant",
+      "s": "instant 你多半只认识「速溶的」或「瞬间」，翻成「成功不是瞬间的」。念一遍，有点怪。这里是说成功不是「一下子就来」的。but 说明和前面形成转折：开了馆，但成功没有马上到。\n→ 但成功并不是一下子就来的"
+     }
+    ],
+    "sum": "仅仅几个月后，利亚就开了她的第一家瑜伽馆，但成功并不是马上就有的。",
+    "cmp": "书上的「一蹴而就」是成语，比我的说法更地道、更精练。"
+   }
   },
   "The Internet is remarkable for the almost instantaneous speed at which it transmits information.": {
    "ph": [
@@ -174,7 +241,22 @@
      "b": "it is not likely that",
      "m": "不太可能"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It's not likely",
+      "s": "你多半会翻成「它不是可能的」。念一遍，不通顺。It 在这里只是先占个位置，真正的内容在后面。not likely 整个看成「不太可能」，likely 是「有可能的」，前面加 not 就反过来。\n→ 不太可能"
+     },
+     {
+      "t": "they will replace traditional textbooks",
+      "s": "这里 likely 后面省略了 that，补回去是 It's not likely (that) they will replace……。that 后面是一整句话，是一个从句，说的就是「不太可能」的具体内容。will 只是「将会」，replace 是「取代」。\n→ 它们会取代传统教科书"
+     }
+    ],
+    "order": "英文先说「不太可能」，再说内容；中文把「不太可能」挪到「取代」前面，当成一个整体说。",
+    "sum": "它们不太可能取代传统教科书。",
+    "cmp": "和书上一样。"
+   }
   },
   "He has worked as a visiting lecturer for various educational institutions.": {
    "ph": [
@@ -222,6 +304,24 @@
     "order": "英文是 It 打头、真主语殿后，中文先说真主语：「把……留在社会边缘，不符合任何人的利益」。",
     "sum": "让相当一部分人口处在社会边缘，对谁都没有好处。",
     "cmp": "书上译成「将一大部分人口留在社会边缘不符合任何人的利益」，同样是把 to 后面的内容提到前面做主语，意思一样。"
+   }
+  },
+  "You took an optional course this semester, didn't you?": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "You took an optional course this semester",
+      "s": "这块照字面翻就行：took 是 take 的过去式，take a course 是「修一门课」；optional 是「可选择的」，也就是「选修的」。\n→ 你这学期修了一门选修课"
+     },
+     {
+      "t": "didn't you",
+      "s": "你多半会翻成「你没有吗」。念一遍，不对：前面明明说「修了」，哪来的「没有吗」？这是附加疑问句，就是句尾加一个小问句，向对方求确认。规矩是：前面是肯定（took），后面用否定（didn't you），意思是「对吧、不是吗」。\n→ 不是吗"
+     }
+    ],
+    "order": "英文把「这学期」放在后面，中文习惯先说时间，所以放到「修了」前面。",
+    "sum": "你这学期修了一门选修课，对吧？",
+    "cmp": "和书上基本一样，书上用「不是吗」，我用「对吧」，更口语一点。"
    }
   },
   "The thing that sets children apart from adults is not their ignorance, nor their lack of skills.": {
@@ -274,7 +374,22 @@
      "b": "not a particle of",
      "m": "丝毫"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "There was not a particle of evidence",
+      "s": "你多半会翻成「没有一个微粒的证据」。念一遍，别扭吧？not a particle of 是一个整体，说白了就是「一点儿也没有」。There was 是「有」，不翻成「那里」。\n→ 没有丝毫证据"
+     },
+     {
+      "t": "to support the case",
+      "s": "to support 是 to do 短语，紧跟在 evidence 后面，说明是什么证据。放回去试：能支持这个论点的证据。case 在这里是「论点、主张」，不是「箱子」。\n→ 能支持这个论点的"
+     }
+    ],
+    "order": "英文把 to support 放在 evidence 后面，中文要把「支持……的」提前，放在「证据」前面。",
+    "sum": "没有丝毫证据能支持这个论点。",
+    "cmp": "几乎一样，书上少了「能」，更简洁。"
+   }
   },
   "Were they to arrive before we depart the day after tomorrow, we should have a wonderful dinner party.": {
    "ph": [
@@ -316,7 +431,21 @@
      "b": "be partial to/towards",
      "m": "偏爱"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It is said that",
+      "s": "你多半会翻成「它被说」。is said 是被动，就是「被别人说」。It is said that 是一个固定开头，整个翻成「据说」，that 后面跟的就是人们说的内容。\n→ 据说"
+     },
+     {
+      "t": "the math teacher seems partial towards bright students",
+      "s": "partial 你可能只认识「部分的」，翻成「对聪明学生是部分的」。放回去试，完全不通。partial towards 是「偏爱、偏向」。seems 是「似乎」，bright 这里是「聪明的」。\n→ 那位数学老师似乎偏爱聪明的学生"
+     }
+    ],
+    "sum": "据说那位数学老师似乎偏爱聪明的学生。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Students of different races are prejudiced against each other.": {
    "ph": [
@@ -330,7 +459,21 @@
      "b": "each other",
      "m": "彼此"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Students of different races",
+      "s": "这块照字面翻就行：of different races 跟在 students 后面，说明是哪些学生，先翻它，再翻学生。\n→ 不同种族的学生"
+     },
+     {
+      "t": "are prejudiced against each other",
+      "s": "你多半会翻成「被偏见反对彼此」。念一遍，完全不通。are prejudiced 看起来像被动，其实 prejudiced 在这里当「抱有偏见的」用，be prejudiced against 要整体记：对……有偏见，against 后面是偏见针对的对象。each other 是「彼此」。\n→ 彼此有偏见"
+     }
+    ],
+    "sum": "不同种族的学生彼此怀有偏见。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "If everyone around you has similar views, your work will suffer from confirmation bias.": {
    "ph": [
@@ -339,7 +482,56 @@
      "b": "suffer from",
      "m": "受……影响；遭受"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "If everyone around you has similar views",
+      "s": "If 带的是条件状语从句，就是「如果」。你可能想翻成「如果每个人在你周围」。around you 跟在 everyone 后面，说明是哪些人：你周围的每个人。similar 是「相似的」。\n→ 如果你周围的每个人观点都相似"
+     },
+     {
+      "t": "your work will suffer from confirmation bias",
+      "s": "suffer 你多半只认识「受苦」，翻成「从确认偏见中受苦」，不通。suffer from 是一个搭配，「受……影响、受……之害」。confirmation bias 是个术语，「确认偏见」，大意是只愿意看到支持自己想法的东西。\n→ 你的工作就会受到确认偏见的影响"
+     }
+    ],
+    "sum": "如果你周围的每个人观点都差不多，你的工作就会受到确认偏见的影响。",
+    "cmp": "和书上基本一样，书上说「类似的观点」，我换成了更口语的「差不多」。"
+   }
+  },
+  "Technology is neutral, but people aren't.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Technology is neutral",
+      "s": "这块照字面翻就行：neutral 是「中立的」，技术本身没有好坏倾向。\n→ 技术是中立的"
+     },
+     {
+      "t": "but people aren't",
+      "s": "你多半会翻成「但人们不是」。念一遍，话没说完：不是什么？aren't 后面省略了 neutral，不想重复上一句，补回去就是 people aren't neutral。\n→ 但人不是中立的"
+     }
+    ],
+    "sum": "技术是中立的，但人不是。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "It requires consistent education to be financially independent.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It requires consistent education",
+      "s": "你多半会翻成「它要求一致的教育」。念一遍，不通。consistent 在这里不是「一致」，是「持续不断的、始终如一的」。requires 是「需要」。\n→ 需要持续的教育"
+     },
+     {
+      "t": "to be financially independent",
+      "s": "to be 是 to do 短语。句首的 It 只是个占位的形式主语，真正的主语是后面这个 to do：「要经济独立」这件事需要持续的教育。financially 是副词，「经济上」，修饰 independent「独立的」。你可能想翻成「经济上地独立」，直接说「经济独立」就行。\n→ 要实现经济独立"
+     }
+    ],
+    "order": "英文用 It 先占住主语的位置，把真正的主语 to be… 放到最后；中文直接把它放回句首：要实现经济独立，需要持续的教育。",
+    "sum": "要实现经济独立，需要持续的教育。",
+    "cmp": "和书上一样。"
+   }
   },
   "This can result in severe penalties that continue long after punishment is completed.": {
    "ph": [
@@ -353,7 +545,26 @@
      "b": "long after",
      "m": "在……很久之后"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "This can result in severe penalties",
+      "s": "你多半会翻成「这可以在严重的惩罚中结果」。念一遍，不通。result in 是一个搭配，「导致」，in 后面跟的是导致的结果。severe 这里是「严重的、严厉的」。\n→ 这可能导致严重的惩罚"
+     },
+     {
+      "t": "that continue",
+      "s": "that 带的是定语从句，就是给前面的名词补一段说明。that 指谁？放回去试：This continue？不通，而且 continue 没有 s，不是单数的 This。penalties continue：惩罚持续——对了。\n→ 这些惩罚持续"
+     },
+     {
+      "t": "long after punishment is completed",
+      "s": "long after 是「在……之后很久」。is completed 是被动，就是「被完成」，刑罚被完成，说白了就是「刑罚结束了」。\n→ 在刑罚结束很久之后"
+     }
+    ],
+    "order": "英文用 that 从句挂在后面，中文把「惩罚」当成话题，后面连着说：这些惩罚在刑罚结束很久之后仍在持续。",
+    "sum": "这可能导致严厉的惩罚，而且在刑罚结束很久之后，这些惩罚仍然持续存在。",
+    "cmp": "意思一样，书上用「并」把两部分连起来，更紧凑。"
+   }
   },
   "I don't think you realise the gravity of the situation.": {
    "ph": [
@@ -362,7 +573,21 @@
      "b": "the gravity of",
      "m": "……的严重性"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "I don't think you realise",
+      "s": "你多半会翻成「我不认为你意识到」。这样翻不算错，但有点拗口。you realise 前面省略了 that，是宾语从句，就是 think 的内容。英文习惯把否定放在 think 上，中文更自然是把否定挪到后面：我认为你没有意识到。\n→ 我认为你没有意识到"
+     },
+     {
+      "t": "the gravity of the situation",
+      "s": "gravity 你可能只认识「重力」，翻成「形势的重力」。放回去试，不通。这里是「严重性」，of the situation 是「形势的」。\n→ 形势的严重性"
+     }
+    ],
+    "sum": "我觉得你没有意识到形势有多严重。",
+    "cmp": "和书上意思一样，书上说「形势的严重性」，我改成「有多严重」，更口语。"
+   }
   },
   "The little girl was grieved by the death of her dog.": {
    "ph": [
@@ -371,7 +596,22 @@
      "b": "be grieved by",
      "m": "因……而伤心"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The little girl was grieved",
+      "s": "你多半会翻成「小女孩被悲伤了」。念一遍，中文不这么说。was grieved 是被动，就是「她被什么事弄得怎么样」。grieve 的意思是「使伤心」，被动之后就是「感到伤心」，不用翻出「被」。\n→ 小女孩很伤心"
+     },
+     {
+      "t": "by the death of her dog",
+      "s": "by 后面引出的是原因，也就是让她伤心的那件事。the death of her dog 你可能翻成「她的狗的死亡」，名词太硬，换成动词说：狗死了。\n→ 因为她的狗死了"
+     }
+    ],
+    "order": "英文先说结果「很伤心」，再说原因；中文习惯先说原因，再说结果。",
+    "sum": "小女孩因为自己的狗死了而很伤心。",
+    "cmp": "意思一样。书上把原因单独拆成一句，更口语。"
+   }
   },
   "Survey findings show that knitting can help people relieve stress.": {
    "ph": [
@@ -380,7 +620,21 @@
      "b": "help sb. do sth.",
      "m": "帮助某人做某事"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Survey findings show that",
+      "s": "你多半会翻成「调查发现显示」。念一遍，有点啰嗦。findings 是「发现到的结果」，Survey findings 就是「调查结果」。that 后面是一个宾语从句，就是把一整句话放进来，当作 show 的内容。\n→ 调查结果显示"
+     },
+     {
+      "t": "knitting can help people relieve stress",
+      "s": "knitting 是 -ing 开头当主语，就是「编织这件事」。help sb. do sth. 是「帮助某人做某事」，relieve stress 是「缓解压力」。\n→ 编织可以帮助人们缓解压力"
+     }
+    ],
+    "sum": "调查结果显示，编织能帮人缓解压力。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "We hold the belief that hard work leads to success.": {
    "ph": [
@@ -394,7 +648,55 @@
      "b": "lead to",
      "m": "导致；带来"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "We hold the belief",
+      "s": "hold 你多半只认识「握住」，翻成「我们握着信念」。念一遍，怪。hold a belief 是「怀有信念」，说白了就是「坚信」。\n→ 我们坚信"
+     },
+     {
+      "t": "that hard work leads to success",
+      "s": "这个 that 带的是同位语从句，就是用一整句话把前面名词 belief 的具体内容说出来。怎么分辨？看 that 后面：hard work leads to success 已经是完整的一句话，that 不在里面当成分，所以它是在解释「信念是什么」，不是在修饰它。lead to 是「导致、带来」。\n→ 努力工作会带来成功"
+     }
+    ],
+    "sum": "我们坚信努力工作会带来成功。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "We believe that tomorrow will be different.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "We believe that",
+      "s": "你多半会翻成「我们相信那个」。放回去试：that 后面是一整句话，所以 that 不是「那个」，它是一个引导词，引出 believe 的内容，这样的从句叫宾语从句。翻译时 that 不用翻。\n→ 我们相信"
+     },
+     {
+      "t": "tomorrow will be different",
+      "s": "这块照字面翻就行：will be 是「将会」，different 是「不同的」，说的是明天会有所变化。\n→ 明天会有所不同"
+     }
+    ],
+    "sum": "我们相信明天会有所不同。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "People can be educated to be grateful.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "People can be educated",
+      "s": "你多半会翻成「人们可以被教育」。意思不错，但 can be educated 是被动，就是「人们可以被别人教」。中文少用「被」，常换成「通过教育」来说。\n→ 人们可以通过教育"
+     },
+     {
+      "t": "to be grateful",
+      "s": "to be 是 to do 短语，说明教育的结果：变成什么样。你可能想翻成「去成为感恩的」，太硬了。grateful 是「感激的」，变成感激的人，说白了就是「学会感恩」。\n→ 学会感恩"
+     }
+    ],
+    "sum": "人们可以通过教育学会感恩。",
+    "cmp": "意思一样。书上的「被教育去感恩」保留了被动，我换成「通过教育学会」，读起来更顺。"
+   }
   },
   "There was a much higher rate of attrition among scientists who didn't get grants.": {
    "ph": [
@@ -408,7 +710,22 @@
      "b": "get a grant",
      "m": "获得资助"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "There was a much higher rate of attrition",
+      "s": "你多半会翻成「那里有一个更高得多的流失率」。There was 是「有」，不是「那里」。much higher 是「高得多」，much 放在比较级前面加强语气。attrition 是「人员流失、减员」。\n→ 有高得多的人员流失率"
+     },
+     {
+      "t": "among scientists who didn't get grants",
+      "s": "who 带的是定语从句，给前面的名词补一段说明。who 指谁？放回去试：attrition didn't get grants？流失率拿不到资助，不通。scientists didn't get grants，对了。grants 在这里是「资助、经费」。\n→ 在没有获得资助的科学家中"
+     }
+    ],
+    "order": "英文先说「流失率高」，再说「哪些科学家」；中文先把「没有获得资助的科学家」摆出来，再说「流失率高得多」。",
+    "sum": "没有拿到资助的科学家，人员流失率要高得多。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "You'll need to give your shoes a good polish.": {
    "ph": [
@@ -422,7 +739,21 @@
      "b": "give … a polish",
      "m": "擦亮"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "You'll need to give",
+      "s": "You'll 是 You will 缩写。need to do 是「需要做某事」，to give 就是 to do 短语，说明你需要做什么。\n→ 你需要给"
+     },
+     {
+      "t": "your shoes a good polish",
+      "s": "你多半会翻成「给你的鞋一个好的擦亮」。念一遍，怪。这里 polish 是名词「擦亮、上光」，give sth. a polish 就是「把某物擦一擦」，a good 是「好好地」。\n→ 把鞋好好擦一擦"
+     }
+    ],
+    "sum": "你得把鞋好好擦一擦。",
+    "cmp": "意思一样，书上的「有必要」比较书面，「得」更口语。"
+   }
   },
   "There are ways we could soften the coming blow to the global food supply.": {
    "ph": [
@@ -431,7 +762,21 @@
      "b": "a blow to",
      "m": "对……的打击"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "There are ways we could soften",
+      "s": "你多半会翻成「有办法，我们可以减轻」，两半各说各的。其实 ways 后面省略了 that / in which，we could soften…… 是定语从句，就是给 ways 补一段说明：「我们可以用来减轻……的办法」。could 在这里不是过去时（前面 There are 是现在时），是「可以、能够」的语气。soften 是「使变轻」。\n→ 有一些我们可以用来减轻……的办法"
+     },
+     {
+      "t": "the coming blow to the global food supply",
+      "s": "coming 是 -ing 形式放在 blow 前面当形容词，「即将到来的」。blow 你可能只认识「吹」，这里是名词「打击」。blow to 是「对……的打击」，to 后面是被打击的对象。\n→ 即将到来的对全球粮食供应的打击"
+     }
+    ],
+    "sum": "我们有办法减轻全球粮食供应即将面临的打击。",
+    "cmp": "意思一样。书上连着两个「的」，有点绕，我换了说法。"
+   }
   },
   "Most were sold in Europe and China, where the bikes already have exploded in popularity.": {
    "ph": [
@@ -440,7 +785,38 @@
      "b": "explode in popularity",
      "m": "受欢迎度激增"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Most were sold in Europe and China",
+      "s": "你多半会翻成「大部分被卖在欧洲和中国」。were sold 是被动，就是「被别人卖」。中文少用「被」，说「在……销售」或「销往……」就顺了。Most 是「大部分」。\n→ 其中大部分在欧洲和中国销售"
+     },
+     {
+      "t": "where the bikes already have exploded in popularity",
+      "s": "where 带的是非限制性定语从句，就是给前面的地点（Europe and China）补一句说明：在那些地方。explode 你可能想到「爆炸」，翻成「受欢迎程度爆炸了」，不通。这里是比喻「猛增」。in popularity 是「在受欢迎程度上」。\n→ 这种自行车在这两地的受欢迎度已经激增"
+     }
+    ],
+    "sum": "其中大部分销往欧洲和中国，这种自行车在这两个地方已经大受欢迎。",
+    "cmp": "意思一样，书上把 where 从句拆成单独一句，我也是这样处理的。"
+   }
+  },
+  "Suppose we built a robot to explore the planet Mars.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Suppose we built a robot",
+      "s": "你多半会翻成「假设」后面跟一句话。没错：Suppose 后面省略了 that，we built a robot 是一整句话，是 Suppose 的内容（宾语从句）。built 是过去式，但这里用过去时是「假设」的口气，不是真的已经造过。\n→ 假设我们制造了一个机器人"
+     },
+     {
+      "t": "to explore the planet Mars",
+      "s": "to explore 是 to do 短语，说明机器人是干什么用的：探索。你可能想翻成「这个叫火星的星球」，太啰嗦，直接说火星。\n→ 去探索火星"
+     }
+    ],
+    "sum": "假设我们造一个机器人去探索火星。",
+    "cmp": "意思一样，书上多了「这个星球」，我省略了。"
+   }
   },
   "Creating the future you want is a lot easier if you are ready to exploit the opportunities that come your way.": {
    "ph": [
@@ -459,7 +835,26 @@
      "b": "come one's way",
      "m": "降临到某人身上；遇到"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Creating the future you want",
+      "s": "你多半会翻成「创造未来你想要」，念一遍，不通。Creating 是 -ing 开头当主语，就是「创造……这件事」。the future you want 中间省略了 that，补回去是 the future (that) you want，是定语从句，就是给 future 补一段说明：你想要的未来。\n→ 创造你想要的未来"
+     },
+     {
+      "t": "is a lot easier",
+      "s": "你可能想翻成「是很多更容易」。念一遍，不对。a lot 放在比较级前面，是「……得多」。\n→ 会容易得多"
+     },
+     {
+      "t": "if you are ready to exploit the opportunities that come your way",
+      "s": "exploit 你可能只认识「剥削」，这里是「利用、抓住」。be ready to do 是「准备好做某事」。that 指谁？放回去试：you come your way？不通。opportunities come your way，机会来到你面前，对了。\n→ 如果你准备好利用你遇到的机会"
+     }
+    ],
+    "order": "英文把 if 条件放在后面，中文习惯先说「如果」，把它提到前面。",
+    "sum": "如果你准备好抓住遇到的机会，创造你想要的未来就会容易得多。",
+    "cmp": "意思一样，「抓住」比书上的「利用」更口语一点，两个都对。"
+   }
   },
   "He fell to the ground with a bump.": {
    "ph": [
@@ -469,6 +864,23 @@
      "m": "砰的一声"
     }
    ]
+  },
+  "The bumper of the car needs to be crash-tested.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The bumper of the car",
+      "s": "bumper 你可能不认识，它是汽车前后的「保险杠」。of the car 是「汽车的」。\n→ 汽车的保险杠"
+     },
+     {
+      "t": "needs to be crash-tested",
+      "s": "你多半会翻成「需要被碰撞测试」。needs to be + 过去分词，是 need to do 的被动，就是「需要被别人做某事」。中文少用「被」，换成「要进行……」就顺了。crash-tested 是「做碰撞测试」，crash 是「碰撞」。\n→ 需要进行碰撞测试"
+     }
+    ],
+    "sum": "汽车的保险杠需要做碰撞测试。",
+    "cmp": "和书上基本一样，书上用「进行」，我用「做」，更口语。"
+   }
   },
   "Only recently in California has it become profitable to pump water from this depth.": {
    "ph": [
@@ -562,7 +974,22 @@
      "b": "tendency to do",
      "m": "……的倾向"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "There is a growing tendency",
+      "s": "There is 是「有」。growing 是 -ing 形式放在名词前面当形容词，「越来越多的」。tendency 是「趋势、倾向」。\n→ 有一种越来越明显的趋势"
+     },
+     {
+      "t": "among employers to hire casual staff",
+      "s": "你多半会翻成「在雇主当中去雇用临时职员」，念一遍，to hire 悬在半空。眼睛往前找 tendency：to hire 是 to do 短语，说明是什么趋势，tendency to do 就是「做某事的趋势」。casual 你可能只认识「随便的」，这里是「临时的」。\n→ 雇主们雇用临时职员的"
+     }
+    ],
+    "order": "英文把内容放在 tendency 后面，中文可以换成动词来说：雇主越来越倾向于雇用临时职员。",
+    "sum": "雇主们越来越倾向于雇用临时职员。",
+    "cmp": "意思一样，书上保持名词「趋势」，我换成动词「倾向于」，读起来更顺。"
+   }
   },
   "The goal was to reach the top, accumulate wealth and retire to a life of ease.": {
    "ph": [
@@ -576,7 +1003,21 @@
      "b": "a life of ease",
      "m": "安逸的生活"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The goal was to reach the top, accumulate wealth",
+      "s": "你多半会翻成「目标是达到顶部，积累财富」。was to reach 里的 to reach 是 to do 短语，说明目标是什么。后面几个动作用逗号和 and 并列，省略了重复的 to：to reach、(to) accumulate、(to) retire。这里的 top 是「顶峰」。\n→ 目标是登上顶峰、积累财富"
+     },
+     {
+      "t": "and retire to a life of ease",
+      "s": "retire 你可能只认识「退休」，翻成「退休到一种安逸的生活」，to 的味道没出来。retire to 是「退休后过上……」，a life of ease 是「安逸的生活」，ease 是「安逸」。\n→ 然后退休，过上安逸的生活"
+     }
+    ],
+    "sum": "目标是登上顶峰、积累财富，然后退休过上安逸的生活。",
+    "cmp": "意思一样。书上多了「他的」，我保持了英文本来的 The goal。"
+   }
   },
   "It is said that all of us employ a mix of both these types of planning.": {
    "ph": [
@@ -590,7 +1031,38 @@
      "b": "a mix of",
      "m": "……的混合"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It is said that",
+      "s": "你多半会翻成「它被说」。is said 是被动，就是「被别人说」，It is said that 是个固定开头，整个翻成「据说」，that 后面跟的就是人们说的内容。\n→ 据说"
+     },
+     {
+      "t": "all of us employ a mix of both these types of planning",
+      "s": "employ 你多半只认识「雇用」，翻成「我们都雇用……」，不通。这里是「使用」。a mix of 是「……的混合」，both these types of planning 是「这两种规划方式」。\n→ 我们所有人都混合使用这两种规划方式"
+     }
+    ],
+    "sum": "据说我们每个人都会把这两种规划方式混合起来用。",
+    "cmp": "意思一样，和书上基本相同。"
+   }
+  },
+  "As the world migrant crisis intensifies, employment is becoming a global concern.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "As the world migrant crisis intensifies",
+      "s": "as 你多半只认识「因为」，翻成「因为危机加剧」。放回去试：这里两件事（危机加剧、就业成为问题）都在慢慢变化，as 带的是状语从句，这里是「随着」。intensifies 是「加剧」，migrant 是「移民的」。\n→ 随着世界移民危机的加剧"
+     },
+     {
+      "t": "employment is becoming a global concern",
+      "s": "employment 这里是名词「就业」，不是「雇用」。is becoming 是进行时，「正在变成」。concern 是「令人关注、担忧的问题」。\n→ 就业正成为一个全球性问题"
+     }
+    ],
+    "sum": "随着世界移民危机加剧，就业正在成为一个全球性问题。",
+    "cmp": "和书上完全一样。"
+   }
   }
  }
 }
