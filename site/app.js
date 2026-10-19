@@ -788,9 +788,55 @@ function renderSettings() {
     <section class="panel"><h2>数据</h2>
       <div class="row"><span><b>「已会」记录</b><small>共 ${known.size} 个词${Sync.connected ? "，已开启云同步，清空会同步到所有设备" : "，只存在这台设备的浏览器里"}</small></span>
         <button class="danger" id="clearKnown"${known.size ? "" : " disabled"}>清空</button></div>
+      <div class="row"><span><b>导出备份</b><small>把这台设备上的设置和学习记录存成一个文件（不含云同步 token）</small></span>
+        <button id="bkExport">导出</button></div>
+      <div class="row"><span><b>导入备份</b><small>选之前导出的文件，先看内容再确认，可以只导其中几类</small></span>
+        <button id="bkImport">导入…</button><input type="file" id="bkFile" accept=".json,application/json" hidden></div>
+      ${bkPreview()}
+      <p class="hint">数据存在这个浏览器里，每个网址各存一份（本地版和线上版分开）；网页打不开那个位置。导出的文件在浏览器的下载文件夹，下载栏里点「在文件夹中显示」能找到。</p>
     </section>
     <section class="panel" id="syncPanel"></section>`;
   renderSyncPanel();
+}
+
+/* ---------- 设置页：导出 / 导入备份（分类和合并 / 覆盖规则在 backup.js） ---------- */
+let bkPending = null;   // 选好文件、等确认的导入：{name, at, origin, d, n 每类条数, cats 勾选的类别, mode}
+function bkDownload(suffix) {
+  const now = Date.now(), body = JSON.stringify(Backup.make(Sync.dump(), now, location.origin));
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([body], {type: "application/json"}));
+  a.download = `cet4-backup-${Backup.day(now)}${suffix}.json`;
+  document.body.append(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 10000);
+}
+function bkPreview() {
+  const p = bkPending; if (!p) return "";
+  const cats = Backup.CATS.filter(c => c.id !== "other" || p.n.other);
+  return `<div class="bkprev">
+    <p class="bkmeta"><b>${esc(p.name)}</b><br>导出于 ${p.at ? esc(new Date(p.at).toLocaleString()) : "未知时间"} · 来自 ${p.origin ? esc(p.origin) + (p.origin === location.origin ? "（就是这个网址）" : "") : "未知网址"}</p>
+    <div class="bkcats">${cats.map(c => `<label><input type="checkbox" data-bk-cat="${c.id}"${p.cats.includes(c.id) ? " checked" : ""}>${c.name}<small>${p.n[c.id]} 条</small></label>`).join("")}</div>
+    <div class="bkmode">${[["merge", "合并", "每条取较新的一份，不会把这台设备更新的记录改回去"],
+      ["overwrite", "覆盖", "勾选的几类改成和文件一样：文件里没有的清掉，设置恢复默认；写入前先自动导出一份当前数据"]].map(([v, t, d]) =>
+      `<label><input type="radio" name="bkMode" value="${v}"${p.mode === v ? " checked" : ""}><span><b>${t}</b><small>${d}</small></span></label>`).join("")}</div>
+    <div class="bkacts"><button id="bkCancel">取消</button><button class="on" id="bkGo"${p.cats.length ? "" : " disabled"}>确认导入</button></div>
+  </div>`;
+}
+function bkRead(file) {
+  file.text().then(text => {
+    const f = Backup.parse(text);
+    if (!f) { bkPending = null; renderSettings(); toast("不是本站导出的备份文件，没有改动任何数据"); return; }
+    bkPending = {name: file.name, ...f, n: Backup.summary(f.d), cats: Backup.CATS.map(c => c.id), mode: "merge"};
+    renderSettings();
+    const el = $(".bkprev"); if (el) el.scrollIntoView({block: "nearest"});
+  }, () => toast("读不了这个文件"));
+}
+function bkGo() {
+  const p = bkPending; if (!p || !p.cats.length) return;
+  if (p.mode === "overwrite") bkDownload("-导入前");
+  const n = Sync.load(Backup.plan(Sync.dump(), p.d, p.cats, p.mode, Date.now(), DEFAULTS));
+  bkPending = null;
+  alert(n ? `已导入 ${n} 条` : "没有需要导入的内容（这台设备上已经一样或更新）");
+  location.reload();
 }
 
 /* ---------- 设置页：云同步 ---------- */
@@ -841,6 +887,10 @@ $("#settingsView").addEventListener("click", e => {
   const b = t.closest("button[data-set]");
   if (b) { const k = b.dataset.set, v = b.dataset.val; setS(k, NUM_SETS.includes(k) ? +v : v); renderSettings(); if (k === "voice") speak(allEntries()[0].word); return; }
   if (t.id === "clearKnown" && confirm(`清空 ${known.size} 个「已会」记录？`)) { [...known].forEach(w => setKnown(w, false)); renderSettings(); }
+  if (t.id === "bkExport") bkDownload("");
+  if (t.id === "bkImport") $("#bkFile").click();
+  if (t.id === "bkCancel") { bkPending = null; renderSettings(); }
+  if (t.id === "bkGo") bkGo();
   if (t.id === "syncNow") Sync.syncNow();
   if (t.id === "syncOff" && confirm("断开后这台设备不再同步，确定？")) { Sync.disconnect(); renderSettings(); }
   if (t.id === "syncConnect") {
@@ -853,6 +903,12 @@ $("#settingsView").addEventListener("click", e => {
 });
 $("#settingsView").addEventListener("change", e => {
   const t = e.target;
+  if (t.id === "bkFile") { if (t.files[0]) bkRead(t.files[0]); t.value = ""; return; }
+  if (t.dataset.bkCat && bkPending) {
+    bkPending.cats = Backup.CATS.map(c => c.id).filter(c => c === t.dataset.bkCat ? t.checked : bkPending.cats.includes(c));
+    $("#bkGo").disabled = !bkPending.cats.length; return;
+  }
+  if (t.name === "bkMode" && bkPending) { bkPending.mode = t.value; return; }
   if (t.type === "checkbox" && t.dataset.set) setS(t.dataset.set, t.checked);
   else if (t.dataset.set && t.value) setS(t.dataset.set, t.value);
 });

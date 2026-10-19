@@ -321,6 +321,16 @@ body.vp-open{padding-bottom:calc(min(460px,100vw - 32px) * 9 / 16 + 64px)}
 .steps b{color:var(--ink);font-weight:600}
 .tokenrow{display:flex;gap:8px;padding:4px 0 10px}
 .tokenrow input{flex:1;min-width:0;padding:8px 10px;border:1px solid var(--line2);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit;font-size:14px}
+/* 设置页：导入备份预览 */
+.bkprev{border-top:1px solid var(--line);padding:12px 0 6px;font-size:14px}
+.bkmeta{margin:0 0 8px;color:var(--sub);font-size:13px;overflow-wrap:anywhere}.bkmeta b{color:var(--ink)}
+.bkcats{display:flex;flex-wrap:wrap;gap:6px 16px;margin-bottom:10px}
+.bkcats label{display:flex;align-items:center;gap:6px;cursor:pointer}.bkcats small{color:var(--sub);font-size:12px}
+.bkmode{display:flex;flex-direction:column;gap:6px;margin-bottom:10px}
+.bkmode label{display:flex;align-items:flex-start;gap:8px;cursor:pointer}.bkmode label>span{display:flex;flex-direction:column;min-width:0}
+.bkmode small{color:var(--sub);font-size:13px}
+.bkprev input{accent-color:var(--accent);margin:0;flex:none}.bkmode input{margin-top:5px}
+.bkacts{display:flex;justify-content:flex-end;gap:8px}
 .syncmsg{font-size:13px;margin:0 0 10px}
 .syncmsg.err,.syncstate.error{color:var(--pink)}
 .syncstate.ok{color:var(--ok)}
