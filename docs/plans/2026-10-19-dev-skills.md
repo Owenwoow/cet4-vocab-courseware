@@ -63,3 +63,4 @@
 - claude-config（`~/.claude`）：9d0055b 改名 → 7f477ff 新建 dev-clarify、dev-handoff → d5547c6 协作规范补规则、技能索引
 - 本项目：分支 `docs/collab-tidy`（核心模块、两份文档挪进 plans、本计划状态），合回 main
 - 验证：可用技能列表里出现了 dev-task、dev-clarify、dev-handoff（dev-init 是纯手动，按设计不出现）；在 `~/.claude` 的 CLAUDE.md、workflows、skills 里搜旧名，只剩 dev-init 里兼容旧标记的那句说明
+- 后续改名（同日）：用户看不懂 clarify，改成简单词 `dev-ask`（ask = 问）；handoff 保留。claude-config 572f8de。本文件上面写的 dev-clarify 就是现在的 dev-ask；技能索引的命名规则补了一条"用简单常见的英文词"
