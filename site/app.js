@@ -988,20 +988,30 @@ const peekRow = (e, cls = "", mark = "", go = true) => `<li class="pk${cls}${kno
     <div class="pkx">${e.tip ? `<div class="tip"><span class="tag ${esc(e.tip.type)}">${esc(e.tip.type)}</span>${esc(e.tip.text)}</div>` : ""}
       ${e.ext && e.ext.length ? `<div class="pkext">${e.ext.map(x => `<span data-pkext="${esc(x.word)}"><span class="tag">扩</span><b>${esc(x.word)}</b> ${x.senses.map(s => `${esc(s.pos)} ${meanHTML(s.mean)}`).join("；")}</span>`).join("")}</div>` : ""}
       ${go ? `<button class="pkgo" data-pkgo="${esc(e.word)}">跳到这张卡 ↓</button>` : ""}</div></li>`;
-function openPeek() {
-  const sec = L && currentGroup(); if (!sec) return;
-  const g = L.groups.find(x => x.no === +sec.dataset.g), here = readingCard(sec);
-  const hi = here ? g.entries.findIndex(e => e.word === here.dataset.word) : -1;
-  const rows = g.entries.map((e, i) => peekRow(e, i < hi ? " read" : i === hi ? " here" : "", i === hi ? `<span class="pkhere">▸ 读到这</span>` : "")).join("");
+/* src：别的页面借这个浮层用（学习新词）：{g 词群, map 词条查表, rows 词表各行 HTML, tab 词表标签后缀, masked 遮住释义（点了只读音）, say(w) 读音}；课文页不传 */
+let peekSrc = null;
+function openPeek(src = null) {
+  let g, map, rows, tab, note;
+  if (src) ({g, map, rows, tab} = src), note = src.masked ? "这题答完再看释义；现在点词只读音" : "点一行展开记忆法、读一遍";
+  else {
+    const sec = L && currentGroup(); if (!sec) return;
+    g = L.groups.find(x => x.no === +sec.dataset.g); map = WORDMAP;
+    const here = readingCard(sec), hi = here ? g.entries.findIndex(e => e.word === here.dataset.word) : -1;
+    rows = g.entries.map((e, i) => peekRow(e, i < hi ? " read" : i === hi ? " here" : "", i === hi ? `<span class="pkhere">▸ 读到这</span>` : "")).join("");
+    tab = hi >= 0 ? ` · 读到 ${hi + 1}/${g.entries.length}` : "";
+    note = `${S.mask ? "背诵模式：点一行看释义" : "点一行展开记忆法、读一遍"}；课文不会动，「跳到这张卡」才过去`;
+  }
+  peekSrc = src;
+  peek.classList.toggle("lmask", !!(src && src.masked));
   peek.innerHTML = `<div class="pkbar"><b>词以群记 ${g.no}</b><span>${esc(g.title)}</span><button class="icon" id="peekClose" aria-label="关闭" title="关闭（Esc）">✕</button></div>
-    <div class="pktabs seg"><button data-pktab="map">导图</button><button data-pktab="list">词表${hi >= 0 ? ` · 读到 ${hi + 1}/${g.entries.length}` : ""}</button></div>
+    <div class="pktabs seg"><button data-pktab="map">导图</button><button data-pktab="list">词表${tab}</button></div>
     <div class="pkbody">
-      <div class="pkpane" data-pane="map"><div class="mapbox pkmap">${mapHTML(g.map, true)}${mapCompact(g.map)}</div>
-        <p class="pknote">点导图里的词，下面显示它的释义；课文不会动</p></div>
-      <div class="pkpane" data-pane="list"><p class="pknote">${S.mask ? "背诵模式：点一行看释义" : "点一行展开记忆法、读一遍"}；课文不会动，「跳到这张卡」才过去</p>
+      <div class="pkpane" data-pane="map"><div class="mapbox pkmap">${mapHTML(g.map, true, map)}${mapCompact(g.map, map)}</div>
+        <p class="pknote">${src && src.masked ? "这题答完再看释义；现在点词只读音" : `点导图里的词，下面显示它的释义${src ? "" : "；课文不会动"}`}</p></div>
+      <div class="pkpane" data-pane="list"><p class="pknote">${note}</p>
         <ol class="pklist">${rows}</ol></div></div>
     <ol class="pkfoot" hidden></ol>`;
-  peek.classList.add("open"); $("#peekScrim").classList.add("open"); $("#peekFab").classList.add("on");
+  peek.classList.add("open"); $("#peekScrim").classList.add("open"); (src ? $("#lpFab") : $("#peekFab"))?.classList.add("on");
   setPeekTab(store.get("peekTab", "list"));
   /* 词表长、读到的那行在下面看不见时，滚到它，让前面读过的几行露出来 */
   const h = peek.querySelector(".pk.here"), body = peek.querySelector(".pkbody");
@@ -1017,16 +1027,18 @@ function setPeekTab(v) {
   if (mm && mm.offsetParent !== null && mm.offsetWidth > box.clientWidth - 20) box.classList.add("compact");
 }
 /* 导图里点的词：底部显示它所在词条的释义（扩展词就标出那一行），读一遍 */
+const peekSay = w => { if (peekSrc) peekSrc.say(w); else { stopMarathon(); speak(w); } };
 function peekFoot(w) {
-  const hit = WORDMAP.get(w); if (!hit) return;
+  const hit = (peekSrc ? peekSrc.map : WORDMAP).get(w); if (!hit) return;
+  if (peekSrc && peekSrc.masked) { peekSay(w); return; }
   const foot = peek.querySelector(".pkfoot");
-  foot.innerHTML = peekRow(hit.entry, " open"); foot.hidden = false;
+  foot.innerHTML = peekRow(hit.entry, " open", "", !peekSrc); foot.hidden = false;
   if (hit.ext) foot.querySelector(`[data-pkext="${CSS.escape(w)}"]`)?.classList.add("hit");
-  stopMarathon(); speak(w);
+  peekSay(w);
 }
 function closePeek() {
   if (!peekOpen()) return;
-  peek.classList.remove("open"); $("#peekScrim").classList.remove("open"); $("#peekFab").classList.remove("on");
+  peek.classList.remove("open"); $("#peekScrim").classList.remove("open"); $("#peekFab").classList.remove("on"); $("#lpFab")?.classList.remove("on");
 }
 const togglePeek = () => (peekOpen() ? closePeek() : openPeek());
 $("#peekFab").onclick = togglePeek;
@@ -1039,10 +1051,12 @@ peek.addEventListener("click", e => {
   const node = t.closest("[data-goto]"); if (node) { peekFoot(node.dataset.goto); return; }
   if (t.closest(".pkfoot")) return;
   const row = t.closest(".pk");
-  if (row) { const open = !row.classList.contains("open"); row.classList.toggle("open", open); if (open) { stopMarathon(); speak(row.dataset.pk); } }
+  if (!row) return;
+  if (peekSrc && peekSrc.masked) { peekSay(row.dataset.pk); return; }
+  const open = !row.classList.contains("open"); row.classList.toggle("open", open); if (open) peekSay(row.dataset.pk);
 });
 document.addEventListener("keydown", e => {
-  if (e.key === "Escape" && peekOpen()) { closePeek(); return; }
+  if (e.key === "Escape" && peekOpen()) { closePeek(); e.stopImmediatePropagation(); return; }   // 不让巩固页的 Esc 同时生效
   if ((e.key === "m" || e.key === "M") && !e.ctrlKey && !e.metaKey && !e.altKey && !$("#lessonView").hidden &&
       !(e.target.closest && e.target.closest("input,select,textarea"))) togglePeek();
 });

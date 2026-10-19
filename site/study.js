@@ -9,8 +9,7 @@
      log:<日期> = {g, m, f 当天评分次数, dv 当天复习的到期词数}
      drill:<范围> = 巩固做到一半的进度（同一天有效，做完记 0），字段见 progSave
      set:<名字> = 设置（app.js 的 DEFAULTS）；这里用到学习新词、复习的几项：learnStages learnSize autoSay autoEx autoNext slowMode quizListen quizSpell roundSize drillMode drillOrder
-     （学习新词页的词群速览 = 本群书上导图 + 词表，见 lpBuild；速览本身不存学习数据）
-     learnPeek = 学习新词页词群速览是否展开，宽屏、窄屏各记各的 {w, n}（true / false，没存过时宽屏展开、窄屏收起）
+     （学习新词页的词群速览 = 右下角「群」打开课文页同款浮层，见 lpSrc；速览本身不存学习数据）
      vocab:<原形> = 生词本：{w 原形, x 点到的写法, m 释义, p 音标, k 出处课id, e 出处词条（空 = 没有例句，如扩展词）,
                 at 加入日期, o 加入时刻, bk 书中位置 [课id, 词条序号, 是否扩展词], ph 1 = 例句里标出的词组（w 是词组原形，x 是句中写法、拆开的用「 … 」连）} + 复习卡字段 a s d l r n t（移出记 0）。
                 加入当天算学习日，复习规则和书上的词一样（原形含空格的按词组卡出题，见 srs.js isPhrase）；这个词所在的词群记为学过时，它从生词本「毕业」（记 0），以书上的卡为准 */
@@ -305,7 +304,7 @@ const Study = (() => {
   const lvDot = n => `<span class="lvdot${n ? "" : " hollow"}" style="--c:var(--lv${n})" title="熟练度：${LV_NAME[n]}"></span>`;
   const btn = (href, text, attrs = 'appearance="filled"') => `<wa-button size="small" href="${href}" ${attrs}>${text}</wa-button>`;   // 默认浅底，主按钮传 variant="brand"
   const loadFail = err => { view().innerHTML = `<p class="empty">加载失败：${esc(err.message)}<br>检查网络后 <a href="javascript:location.reload()">重新加载</a></p>`; };
-  function setHead(title) { view().classList.remove("learnmode"); $("#crumb").textContent = title; document.title = title + " · 四级词汇"; }
+  function setHead(title) { $("#crumb").textContent = title; document.title = title + " · 四级词汇"; }
 
   /* ---------- 首页：一个个板块，按顺序画；以后加功能就往 MODULES 里加一项 ---------- */
   function streak() {
@@ -716,76 +715,23 @@ const Study = (() => {
   const curQ = () => (D.back ? D.hist[D.hist.length - D.back] : D.q);
   const RESULT = {g: "✓ 记得", m: "≈ 模糊", f: "✗ 忘了"};
   const RUBRIC = `<p class="rubric">忘了 = 主要意思想不起来或想错｜模糊 = 想了一会儿才想起，或只记得主要意思｜记得 = 很快想起主要意思（次要意思不要求）</p>`;
-  /* ---------- 学习新词的词群速览：本群书上导图 + 词表（照搬课文页「词群速览」），随时前后看；给定词所在的词群就能画，换群只重画速览 ----------
-     宽屏（≥1180px）左栏速览、右栏词卡；窄屏速览在词卡上方，默认收起成一行。展开 / 收起记在 learnPeek（走 Sync）。
-     题目没答完（看词选义、听音选义没作答，翻卡没翻开）时释义全遮住，点了只读音，免得泄露答案 */
-  const lpWide = matchMedia("(min-width:1180px)");
-  const lpSide = () => (lpWide.matches ? "w" : "n");   // 宽屏、窄屏各记各的：电脑上展开不该把手机也撑开
-  const lpExpanded = () => { const v = store.get("learnPeek", null), o = v && typeof v === "object" ? v[lpSide()] : undefined; return o === undefined ? lpWide.matches : !!o; };
+  /* ---------- 学习新词的词群速览：右下角「群」或按 M，打开和课文页一样的浮层（本群书上导图 + 词表），默认收起 ----------
+     显示当前这个词所在的那一群；当前词高亮，已过关打 ✓。题目没答完（选择题没作答、翻卡没翻开）时释义全遮住，点了只读音，免得泄露答案 */
   const lpMasked = q => !D.back && q.kind !== "study" && (q.kind === "flip" ? !q.flipped : q.state === "ask");
-  function lpBuild(x) {
-    const g = x.grp, rows = g.entries.map(e => peekRow(e, "", `<span class="lpm"></span>`, false)).join("");
-    return `<button class="lpbar" data-lpfold="1" type="button" title="收起 / 展开（M）"><b>词群 ${g.no}</b><span class="t"></span><i>▾</i></button>
-      <div class="lpbody"><div class="mapbox pkmap">${mapHTML(g.map, true, x.map)}${mapCompact(g.map, x.map)}</div>
-        <p class="pknote">点导图里的词，下面显示释义；点词表一行展开记忆法、读一遍</p>
-        <ol class="pklist">${rows}</ol><ol class="pkfoot lpfoot" hidden></ol></div>`;
+  function lpSrc() {
+    const q = curQ(), x = q.x, g = x.grp, k = g.entries.findIndex(e => e.word === x.word);
+    const rows = g.entries.map(e => {
+      const here = e.word === x.word, ok = !here && D.done.has(e.word);
+      const mark = here ? `<span class="pkhere">▸ ${q.kind === "study" ? "正在学" : "正在考"}</span>` : ok ? `<span class="pkok">✓</span>` : "";
+      return peekRow(e, here ? " here" : "", mark, false);
+    }).join("");
+    return {g, map: x.map, rows, tab: ` · 第 ${k + 1}/${g.entries.length} 个`, masked: lpMasked(q), say: w => sayWord(x, w)};
   }
-  /* 当前词 / 过关 / 已会 / 遮挡 / 标题行 */
-  function lpPaint(q, fresh) {  // fresh：刚画出这一群，左栏留在顶部（导图在上），不自动滚
-    const el = $("#lpeek"), x = q.x, g = x.grp, sp = el.parentNode, open = lpExpanded(), masked = lpMasked(q);
-    sp.classList.toggle("fold", !open); el.classList.toggle("fold", !open); el.classList.toggle("lmask", masked);
-    if (masked) { $$(".pk.open", el).forEach(r => r.classList.remove("open")); el.querySelector(".pkfoot").hidden = true; }
-    $$(".pk", el).forEach(r => {
-      const w = r.dataset.pk, here = w === x.word, m = r.querySelector(".lpm");
-      r.classList.toggle("here", here);
-      m.className = "lpm" + (here ? " pkhere" : D.done.has(w) ? " lpok" : "");
-      m.textContent = here ? (q.kind === "study" ? "▸ 正在学" : "▸ 正在考") : D.done.has(w) ? "✓" : known.has(w) ? "已会" : "";
-    });
-    const k = g.entries.findIndex(e => e.word === x.word) + 1;
-    el.querySelector(".lpbar .t").textContent = `${g.title} · 共 ${g.entries.length} 词 · ${q.kind === "study" ? "正在学" : "正在考"} 第 ${k} 个`;
-    if (!open) return;
-    const box = el.querySelector(".pkmap"), mm = box.querySelector(".mm");   // 树形导图放不下就换紧凑版（显示出来才量得到宽度）
-    if (mm && mm.offsetParent !== null && mm.offsetWidth > box.clientWidth - 20) box.classList.add("compact");
-    const body = el.querySelector(".lpbody"), h = el.querySelector(".pk.here");   // 当前词不在左栏视野里就滚过去（只滚左栏，不动页面）
-    if (!fresh && h && body.scrollHeight > body.clientHeight && (h.offsetTop < body.scrollTop || h.offsetTop + h.offsetHeight > body.scrollTop + body.clientHeight))
-      body.scrollTop = h.offsetTop - body.clientHeight * 0.3;
-  }
-  /* 写进页面：学习新词外面套上速览，其余范围原样 */
+  const lpToggle = () => (peekOpen() ? closePeek() : openPeek(lpSrc()));
+  /* 写进页面：学习新词加一个「群」按钮；速览开着时（如答对自动下一题）跟着换到新的这一题 */
   function put(html) {
-    if (!D.learn) { view().innerHTML = html; return; }
-    const q = curQ(), v = view();
-    let sp = v.querySelector(".lsplit");
-    if (!sp) { v.innerHTML = `<div class="lsplit"><aside class="lpeek" id="lpeek"></aside><div class="lmain"></div></div>`; sp = v.firstChild; }
-    v.classList.add("learnmode");
-    const key = q.x.lid + ":" + q.x.grp.no;
-    const fresh = sp.dataset.g !== key;
-    if (fresh) { sp.dataset.g = key; $("#lpeek").innerHTML = lpBuild(q.x); }
-    sp.querySelector(".lmain").innerHTML = html;
-    lpPaint(q, fresh);
-  }
-  function lpFold() {
-    const v = store.get("learnPeek", null), o = v && typeof v === "object" ? {...v} : {};
-    o[lpSide()] = !lpExpanded(); store.set("learnPeek", o); lpPaint(curQ(), true);
-  }
-  function lpClick(t) {
-    if (t.closest("[data-lpfold]")) { lpFold(); return; }
-    const q = curQ(), x = q.x, el = $("#lpeek"), masked = lpMasked(q);
-    const say = w => sayWord(x, w);
-    const node = t.closest("[data-goto]");
-    if (node) {
-      const w = node.dataset.goto, hit = x.map.get(w); if (!hit) return;
-      if (masked) { say(w); return; }
-      const foot = el.querySelector(".pkfoot");
-      foot.innerHTML = peekRow(hit.entry, " open", "", false); foot.hidden = false;
-      if (hit.ext) foot.querySelector(`[data-pkext="${CSS.escape(w)}"]`)?.classList.add("hit");
-      say(w); return;
-    }
-    if (t.closest(".pkfoot")) return;
-    const row = t.closest(".pk");
-    if (!row) return;
-    if (masked) { say(row.dataset.pk); return; }
-    const open = !row.classList.contains("open"); row.classList.toggle("open", open);
-    if (open) say(row.dataset.pk);
+    view().innerHTML = html + (D.learn ? `<div class="fabs"><button class="fab" id="lpFab" title="词群速览：本群导图和词表（M）">群</button></div>` : "");
+    if (D.learn && peekOpen()) openPeek(lpSrc());
   }
 
   function showCard() {
@@ -984,7 +930,6 @@ const Study = (() => {
     Sync.set("log:" + d, lg);
   }
   function endDrill() {
-    view().classList.remove("learnmode");
     const {g, m, f} = D.res;
     if (D.save) progClear(D.sc);
     if (D.learn) {
@@ -1079,7 +1024,8 @@ const Study = (() => {
       return;
     }
     if (e.target.closest && e.target.closest("input,select,textarea")) return;
-    if (D.learn && (e.key === "m" || e.key === "M")) { lpFold(); return; }
+    if (D.learn && (e.key === "m" || e.key === "M")) { lpToggle(); return; }
+    if (peekOpen()) return;                          // 速览开着时不答题
     if (e.key === "ArrowLeft") { goBack(); return; }
     if (D.back) {                                    // 回看中：只能翻页、听读音
       if (e.key === "ArrowRight" || e.key === " " || e.key === "Enter") { e.preventDefault(); goFwd(); }
@@ -1106,7 +1052,7 @@ const Study = (() => {
       if (t.closest("#redo")) { startDrill(D.sc, {title: "再过一遍", items: D.again}); return; }
       if (t.closest("#nextRound")) { startDrill("due"); return; }
       if (t.closest("#nextGroup")) { scrollTo(0, 0); startDrill("learn"); return; }
-      if (D.learn && q && t.closest("#lpeek")) { lpClick(t); return; }
+      if (D.learn && q && t.closest("#lpFab")) { lpToggle(); return; }
       if (!q) return;
       if (t.closest("[data-restart]")) {
         if (!confirm("从头再来？这一轮的进度清掉，所有词重新出（已经记下的复习成绩不撤销）。")) return;

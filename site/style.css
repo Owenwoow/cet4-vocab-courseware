@@ -591,27 +591,9 @@ body.vp-open{padding-bottom:calc(min(460px,100vw - 32px) * 9 / 16 + 64px)}
   .pkfoot{padding-bottom:calc(6px + env(safe-area-inset-bottom))}
 }
 
-/* 学习新词的词群速览（study.js lpBuild）：窄屏词卡上方可收起的一栏，宽屏左栏速览 + 右栏词卡 */
-.lpeek{margin-bottom:12px}
-.lpbar{width:100%;display:flex;align-items:center;gap:8px;text-align:left;font:inherit;font-size:14px;color:var(--ink);padding:9px 14px;background:var(--card);border:1px solid var(--line);border-radius:12px;cursor:pointer}
-.lpbar b{color:var(--accent);white-space:nowrap}
-.lpbar .t{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--sub)}
-.lpbar i{font-style:normal;color:var(--sub);transition:transform .2s}
-.lpeek:not(.fold) .lpbar i{transform:rotate(180deg)}
-.lpbody{position:relative;margin-top:8px;max-height:62vh;overflow:auto;overscroll-behavior:contain;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px 14px}
-.lpeek.fold .lpbody{display:none}
-.lpfoot{position:sticky;bottom:-14px;max-height:55%;margin:8px -12px -14px;border-radius:0 0 12px 12px}
-.lpm:empty{display:none}
-.lpm.lpok{margin-left:auto;font-size:13px;font-weight:700;color:var(--ok)}
-.lpeek .pk.known .lpm:not(:empty){margin-left:auto;font-size:12px;color:var(--ok)}
-.lpeek.lmask .pkm,.lpeek.lmask .pkx{filter:blur(6px);user-select:none;pointer-events:none}
-@media (min-width:1180px){
-  #studyView.learnmode{max-width:1100px;margin-left:max(290px,calc(50% - 550px))!important}
-  body.sideOff #studyView.learnmode{margin-left:auto!important}
-  .lsplit:not(.fold){display:grid;grid-template-columns:400px minmax(0,1fr);gap:20px;align-items:start}
-  .lsplit:not(.fold) .lpeek{position:sticky;top:64px;margin-bottom:0}
-  .lsplit:not(.fold) .lpbody{max-height:calc(100vh - 140px)}
-}
+/* 学习新词借用课文页的速览浮层（study.js lpSrc）：答题时遮住释义；过关的词打 ✓ */
+.peek.lmask .pkm,.peek.lmask .pkx{filter:blur(6px);user-select:none;pointer-events:none}
+.pkok{margin-left:auto;font-size:13px;font-weight:700;color:var(--ok)}
 
 /* ---------- 智能出题：四选一、听音、例句填空、拼写 ---------- */
 .quiz .dcard{cursor:default}
