@@ -25,6 +25,24 @@
     "cmp": "意思一样。书上用「让学生们更难选择退出」，把 for students 译成「让……」，也通顺。"
    }
   },
+  "What should be done in such cases?": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "What should be done",
+      "s": "你多半会翻成「什么应该被做」。念一遍，是不是有点怪？should be done 是被动，就是「事情被别人怎么样了」。What 在这里是疑问词，问的是「做什么」。中文不爱说「被做」，直接说「怎么办」就顺了。\n→ 应该怎么办"
+     },
+     {
+      "t": "in such cases",
+      "s": "这块照字面翻就行：such cases 是「这类情况」，in 表示「在……情况下」。\n→ 在这种情况下"
+     }
+    ],
+    "order": "英文把「在什么情况下」放在最后，中文习惯先交代情况，再问怎么办，所以把它提到前面。",
+    "sum": "在这种情况下应该怎么办？",
+    "cmp": "意思一样，书上省掉了「在」，更口语。"
+   }
+  },
   "People's choice of food depends on their individual taste.": {
    "ph": [
     {
@@ -41,7 +59,21 @@
      "b": "help sb. to do",
      "m": "帮助人们选择"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It helps people to select",
+      "s": "你多半会翻成「它帮助人们去选择」。多出来的「去」没必要。help sb. to do 是固定搭配，to select 是 to do 短语，就是「帮人做某事」，中文直接说「帮助人们选择」。\n→ 它帮助人们选择"
+     },
+     {
+      "t": "the most effective sunscreen",
+      "s": "the most + 形容词是「最……的」，most effective 就是「最有效的」。sunscreen 是「防晒霜」。\n→ 最有效的防晒霜"
+     }
+    ],
+    "sum": "它帮助人们选出最有效的防晒霜。",
+    "cmp": "和书上一样。"
+   }
   },
   "The content of the lecture is a much more effective method for students to learn.": {
    "ph": [],
@@ -88,6 +120,23 @@
     "cmp": "意思一样。书上译成「睡得更多」，我说成「多睡一些」，两个都对。"
    }
   },
+  "The final result of the poll will be known tomorrow.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The final result of the poll",
+      "s": "这块照字面翻就行：poll 在这里是「投票」，of 连接「结果」和「投票」，中文是「投票的最终结果」。\n→ 投票的最终结果"
+     },
+     {
+      "t": "will be known tomorrow",
+      "s": "你多半会翻成「将被知道」。念一遍，中文不这么说。will be known 是被动，就是「结果被大家知道了」，说白了就是结果「公布、揭晓」。tomorrow 是「明天」。\n→ 将于明天公布"
+     }
+    ],
+    "sum": "投票的最终结果明天公布。",
+    "cmp": "和书上完全一样。"
+   }
+  },
   "Its conclusions are based on carefully collected data.": {
    "ph": [
     {
@@ -95,7 +144,21 @@
      "b": "be based on",
      "m": "基于"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Its conclusions are based on",
+      "s": "你多半会翻成「它的结论被基于」。念一遍，是不是很别扭？are based on 形式上是被动，但 be based on 是固定搭配，整个当成「基于、建立在……之上」就行。\n→ 它的结论建立在……之上"
+     },
+     {
+      "t": "carefully collected data",
+      "s": "collected 是过去分词（-ed 形式），放在 data 前面当形容词，说明是什么样的数据：被收集来的数据。你可能想翻成「被仔细收集的数据」，中文不用「被」，说「收集来的」就行。\n→ 仔细收集来的数据"
+     }
+    ],
+    "sum": "它的结论建立在仔细收集来的数据之上。",
+    "cmp": "意思一样。书上句尾多了一个「的」，读起来有点绕，「建立在……之上」更顺。"
+   }
   },
   "They must be used in combination for an entire collective.": {
    "ph": [
@@ -104,7 +167,38 @@
      "b": "in combination with",
      "m": "结合起来"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They must be used in combination",
+      "s": "你多半会翻成「它们必须被使用在结合里」。念一遍，肯定别扭。must be used 是被动，就是「它们被别人拿来用」，中文去掉「被」，说「必须使用」。in combination 是一个整体，就是「结合起来、搭配起来」。\n→ 它们必须结合起来使用"
+     },
+     {
+      "t": "for an entire collective",
+      "s": "collective 你可能当成形容词「集体的」。往后找：后面没有名词了，说明它自己就是名词，「集体」。for 是「为了、用于」，entire 是「整个的」。\n→ 用于整个集体"
+     }
+    ],
+    "sum": "它们必须结合起来，用于整个集体。",
+    "cmp": "和书上一样。书上说「结合起来用于整个集体」，「用于」已经把 used 翻出来了，不用再加「使用」。"
+   }
+  },
+  "Dialects should be preserved to retain a culture.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Dialects should be preserved",
+      "s": "你多半会翻成「方言应该被保存」。念一遍，中文不爱说「被」。should be preserved 是被动，就是「方言被别人怎么样」，中文把动作的人藏起来，直接说「应该保留方言」。\n→ 应该保留方言"
+     },
+     {
+      "t": "to retain a culture",
+      "s": "to retain 是 to do 短语，放在句末，这里表目的，就是「为了……」，别翻成「去保留」。retain 和上一块的 preserve 意思相近，中文再说一次「保留」就重复了，换成「留住」。\n→ 为了留住一种文化"
+     }
+    ],
+    "sum": "应该保留方言，以便留住一种文化。",
+    "cmp": "意思一样。书上前后都用「保留」，有点重复，「留住」更顺。"
+   }
   },
   "She spoke English with an accent.": {
    "ph": [
@@ -149,7 +243,25 @@
      "b": "take a walk",
      "m": "散步"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Taking a walk",
+      "s": "一开头就是 Taking，别慌。-ing 开头当主语，就是「做某事」这件事。take a walk 是「散步」。\n→ 散步"
+     },
+     {
+      "t": "can instantly lift your mood",
+      "s": "你多半会翻成「能立刻举起你的心情」。念一遍，心情又不是东西，怎么举？lift 本义是「举起」，心情被抬起来，就是「提升」。instantly 是「立刻」。\n→ 能立刻提升你的心情"
+     },
+     {
+      "t": "especially when you go outdoors",
+      "s": "when 带的是时间状语从句，就是「在……的时候」。go outdoors 是「到户外去」。especially 是「尤其」。\n→ 尤其是你到户外去的时候"
+     }
+    ],
+    "sum": "散步能立刻让你的心情好起来，尤其是走到户外的时候。",
+    "cmp": "意思一样。书上把 go outdoors 译成「在户外」，我保留了「去」这个动作。"
+   }
   },
   "They may adopt strategies that are bound to ruin their venture.": {
    "ph": [
@@ -175,6 +287,23 @@
     "cmp": "意思一样。书上把「注定会毁掉企业」放在「策略」前，一口气说完；拆开说也可以，看哪个顺。"
    }
   },
+  "She believes that she has found her true vocation.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "She believes that",
+      "s": "这块照字面翻就行：that 带的是宾语从句，就是「相信」的内容，后面整句话都是她相信的事。\n→ 她相信"
+     },
+     {
+      "t": "she has found her true vocation",
+      "s": "vocation 长得像 vacation，你可能想翻成「假期」。放回去试试：她找到了真正的假期？说不通。vocation 是「职业、天职」，指真正适合自己的事业。has found 是现在完成时，「已经找到了」。\n→ 自己已经找到了真正适合自己的职业"
+     }
+    ],
+    "sum": "她相信自己已经找到了真正适合自己的职业。",
+    "cmp": "和书上一样。"
+   }
+  },
   "We took an excursion around the island yesterday.": {
    "ph": [
     {
@@ -191,7 +320,21 @@
      "b": "keep sb. company",
      "m": "陪伴，作伴"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She took her sister with her",
+      "s": "你多半会翻成「她把妹妹和她一起带」，读起来乱。take sb. with sb. 是「带着某人一起去」。\n→ 她带着妹妹一起去"
+     },
+     {
+      "t": "to keep her company on the journey",
+      "s": "to keep 是 to do 短语，放在后面说明目的，就是「为了……」。keep sb. company 是固定搭配，「陪伴、作伴」，别翻成「保持她的公司」。on the journey 是「在旅途中」。\n→ 为了在旅途中作伴"
+     }
+    ],
+    "sum": "她带着妹妹一起去，为了在旅途中有个伴。",
+    "cmp": "意思一样，书上把目的压缩成「带着妹妹在旅途中作伴」，更短，我把「一起去」和「为了」拆开说清楚。"
+   }
   },
   "Every time I see a cruise ship, I feel sad.": {
    "ph": [
@@ -200,7 +343,21 @@
      "b": "every time",
      "m": "每次"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Every time I see a cruise ship",
+      "s": "你可能想翻成「每一次时间我看见一艘游轮」。every time 后面接了一个完整的句子，整块就是时间状语从句，意思是「每当……的时候」。cruise ship 是「游轮」。\n→ 每次我看见游轮"
+     },
+     {
+      "t": "I feel sad",
+      "s": "这块照字面翻就行：feel sad 是「觉得难过」。\n→ 我就觉得很难过"
+     }
+    ],
+    "sum": "每次看到游轮，我都会觉得难过。",
+    "cmp": "意思一样。书上用了「一……就」，更口语一点。"
+   }
   },
   "She wasn't so much interested in hot yoga.": {
    "ph": [
@@ -211,6 +368,40 @@
     }
    ]
   },
+  "Training a patient to prepare healthy food can change their life.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Training a patient to prepare healthy food",
+      "s": "又是 -ing 开头当主语，就是「训练这件事」。你多半会翻成「训练一个病人去准备健康食物」，多了个「去」。train sb. to do 是「训练某人做某事」，to prepare 是 to do 短语，说训练的内容。\n→ 训练患者准备健康的食物"
+     },
+     {
+      "t": "can change their life",
+      "s": "这块照字面翻就行：can 是「能够」，change 是「改变」。\n→ 能改变他们的生活"
+     }
+    ],
+    "sum": "训练患者准备健康的食物，能够改变他们的生活。",
+    "cmp": "和书上一样。"
+   }
+  },
+  "Learning by doing doesn't really fit that mold anymore.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Learning by doing",
+      "s": "-ing 开头当主语，就是「学习」这件事。你多半会翻成「通过做来学习」，不算错，但 learning by doing 是个常见说法，中文说「在实践中学习」更顺。\n→ 在实践中学习"
+     },
+     {
+      "t": "doesn't really fit that mold anymore",
+      "s": "fit 你可能只认识「合适」，这里是「符合」。mold 本义是「模具」，那种模具做出来的东西都一个样，所以引申为「模式」。anymore 放句末，doesn't …… anymore 就是「已经不……了、不再」。\n→ 已经不符合那种模式了"
+     }
+    ],
+    "sum": "在实践中学习已经不符合那种模式了。",
+    "cmp": "和书上完全一样。"
+   }
+  },
   "They're concerned about their health and the well-being of the planet.": {
    "ph": [
     {
@@ -219,6 +410,28 @@
      "m": "关心"
     }
    ]
+  },
+  "Willpower is just like a muscle; to keep it strong you need to constantly exercise it.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Willpower is just like a muscle",
+      "s": "这块照字面翻就行：just like 是「就像」，打比方的句子。\n→ 意志力就像一块肌肉"
+     },
+     {
+      "t": "to keep it strong",
+      "s": "分号后面一开头就是 to keep，这是 to do 短语，放在句首表目的，就是「为了……」。你多半会翻成「去保持它强壮」，念一遍有点怪。keep it strong 是「让它保持强壮」。\n→ 为了让它保持强壮"
+     },
+     {
+      "t": "you need to constantly exercise it",
+      "s": "need to do 是「需要做」，constantly 是「不断地」。exercise 这里是动词「锻炼」，不是名词「练习」。you 在这里泛指任何人，中文可以不翻出来。\n→ 需要不断地锻炼它"
+     }
+    ],
+    "order": "英文先说目的、再说该怎么做，中文常说成「要……就需要……」，顺序可以不变，但把「为了」换成「要」会更顺。",
+    "sum": "意志力就像肌肉，要让它保持强壮，就需要不断地锻炼。",
+    "cmp": "意思一样，书上省掉「为了」，说成「需要不断锻炼才能保持强壮」，更紧凑。"
+   }
   },
   "We get a fairly large portion of calories from fast food and snacks.": {
    "ph": [
@@ -265,7 +478,21 @@
      "b": "invest in",
      "m": "投入到"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "More funding will be invested in",
+      "s": "你多半会翻成「更多资金将被投资在」。念一遍，中文不说「被投资」。will be invested 是被动，就是「资金被别人拿去投入」，把「被」去掉，说「资金将投入到……」。invest in 是「投入到……上」。\n→ 更多的资金将投入到"
+     },
+     {
+      "t": "bike battery research",
+      "s": "三个名词挤在一起，你可能一个个翻成「自行车、电池、研究」。办法：从最后一个往前翻，research 是中心词「研究」，前面两个都是在说研究什么：电池的研究，是自行车用的电池。\n→ 自行车电池的研究中"
+     }
+    ],
+    "sum": "更多的资金将投入到自行车电池的研究中。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "Let the debates be transparent and vigorous, wherever they are held.": {
    "ph": [],
@@ -292,7 +519,21 @@
      "b": "feel reluctant to do",
      "m": "不愿做某事"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "His friends feel reluctant",
+      "s": "你多半会翻成「他的朋友觉得勉强」，话没说完。feel reluctant to do 是固定搭配，眼睛往后找 to——找到了，reluctant 是「不情愿」，不情愿做什么，要看 to 后面。\n→ 他的朋友不愿意"
+     },
+     {
+      "t": "to visit his home",
+      "s": "to visit 是 to do 短语，补上「不愿意做什么」：拜访。别翻成「去拜访」，直接说「去他家」更自然。\n→ 去他家"
+     }
+    ],
+    "sum": "他的朋友不愿意去他家。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "They can lead to the creation of new clouds easily visible from space.": {
    "ph": [
@@ -301,7 +542,22 @@
      "b": "lead to",
      "m": "导致，形成"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They can lead to the creation of new clouds",
+      "s": "你多半会翻成「它们可以导致新云的创造」。念一遍，creation 太硬。英文爱用名词，中文爱用动词，把 creation 换成「形成」。lead to 里的 to 是介词，lead to sth. 就是「导致某事」。\n→ 它们可能导致新云的形成"
+     },
+     {
+      "t": "easily visible from space",
+      "s": "你可能想把 visible 当成谓语。其实 easily visible from space 是形容词短语，紧跟在 clouds 后面，给 clouds 补一段说明，像省略了 that are。visible 是「看得见的」，from space 是「从太空」。\n→ 从太空很容易就能看见的"
+     }
+    ],
+    "order": "这块说明是补充 clouds 的，中文要放到「新云」前面当修饰语。",
+    "sum": "它们可能导致形成从太空中很容易看见的新云。",
+    "cmp": "书上把后半部分另起一句：「这从太空中很容易看到」，意思没错。我把它放进「云」前面，一句话说完。"
+   }
   },
   "These invisible duties become apparent only when you don't do them.": {
    "ph": [
@@ -334,7 +590,22 @@
      "b": "from time to time",
      "m": "不时，有时"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Patients' data has to be revised",
+      "s": "你多半会翻成「患者的数据必须被修改」。念一遍，「被」可以去掉。has to 是「必须」，be revised 是被动，就是「数据被别人修改」，中文直接说「数据必须修改」。\n→ 患者的数据必须修改"
+     },
+     {
+      "t": "from time to time",
+      "s": "这是个固定短语，整体翻成「不时、时常」，别拆成「从时间到时间」。\n→ 不时地"
+     }
+    ],
+    "order": "中文习惯把「不时地」放在动作前面。",
+    "sum": "患者的数据必须不时地修改。",
+    "cmp": "和书上一样。"
+   }
   },
   "They help an organization to broaden its vision effectively.": {
    "ph": [
@@ -343,7 +614,22 @@
      "b": "help sb. to do",
      "m": "帮助……拓宽"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They help an organization to broaden",
+      "s": "你多半会翻成「它们帮助一个组织去拓宽」。help sb. to do 是「帮助某人做某事」，to broaden 是 to do 短语，中文不用「去」，说「帮助组织拓宽」。\n→ 它们帮助组织拓宽"
+     },
+     {
+      "t": "its vision effectively",
+      "s": "vision 你可能想到「视力」，这里是比喻义，「眼界、视野」。broaden 的字面意思是「变宽」，拓宽视野正好搭配。effectively 是「有效地」。\n→ 视野，而且很有效"
+     }
+    ],
+    "order": "effectively 放在句末，中文要放到动作前面，说成「有效地拓宽视野」。",
+    "sum": "它们帮助组织有效地拓宽视野。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Employees with a growth mindset may be more likely to devise innovative ideas.": {
    "ph": [
@@ -352,7 +638,21 @@
      "b": "be likely to",
      "m": "更有可能"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Employees with a growth mindset",
+      "s": "你多半会翻成「有一种成长心态的员工」。with 这里是「具有」，with a growth mindset 紧跟在 Employees 后面，给它补说明。中文把说明放前面当修饰语。\n→ 具有成长心态的员工"
+     },
+     {
+      "t": "may be more likely to devise innovative ideas",
+      "s": "be likely to do 是「有可能做」，more likely 是「更有可能」，to devise 是 to do 短语，devise 是「想出、设计出」。may 也表可能，和 likely 有点重复，翻成「也许」就够了。innovative 是「创新的」。\n→ 也许更有可能想出创新的想法"
+     }
+    ],
+    "sum": "具有成长心态的员工也许更有可能想出创新的点子。",
+    "cmp": "意思一样，我把「想法」换成「点子」，更口语。"
+   }
   },
   "When looking at angry humans, they tended to turn away their gaze.": {
    "ph": [
@@ -399,7 +699,21 @@
      "b": "glance at",
      "m": "瞥一眼"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "I only had time",
+      "s": "你多半会翻成「我只有时间」，念一遍，话没说完。have time to do 是「有时间做某事」，眼睛往后找 to。only 的味道是「只够、只来得及」。\n→ 我只来得及"
+     },
+     {
+      "t": "to glance at my emails",
+      "s": "to glance 是 to do 短语，说明时间用来做什么。glance at 是「瞥一眼」，别翻成「看」，那样就丢了「只匆匆看一下」的意思。\n→ 瞥一眼我的电子邮件"
+     }
+    ],
+    "sum": "我只来得及匆匆看一眼我的电子邮件。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "He caught a glimpse of her in the crowd.": {
    "ph": [
@@ -409,6 +723,24 @@
      "m": "瞥见"
     }
    ]
+  },
+  "You just stare across the table blankly with your mouth hanging open.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "You just stare across the table blankly",
+      "s": "这里的 You 泛指任何人，不是真的在说你。stare 是「盯着」，across the table 是「隔着桌子」，blankly 是「茫然地」。just 是「只是」。\n→ 你只是茫然地盯着桌子对面"
+     },
+     {
+      "t": "with your mouth hanging open",
+      "s": "你多半会翻成「和你的嘴挂着打开」。念一遍，肯定怪。with + 名词 + -ing 是一个套路，表示同时的状态，就是「嘴巴怎么样着」。hanging open 是 -ing 短语，说明嘴处在什么状态：张开着。\n→ 张着嘴"
+     }
+    ],
+    "order": "中文习惯先说伴随的状态，再说主要动作：「张着嘴，茫然地盯着……」。",
+    "sum": "你只是张着嘴，茫然地盯着桌子对面。",
+    "cmp": "和书上一样。"
+   }
   },
   "She scanned through the newspaper over breakfast.": {
    "ph": [
@@ -436,7 +768,21 @@
      "b": "do sightseeing",
      "m": "游览"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Did you have a chance",
+      "s": "Did 开头是一般疑问句，在问「有没有」。have a chance to do 是固定搭配，「有机会做某事」，眼睛往后找 to。\n→ 你有没有机会"
+     },
+     {
+      "t": "to do any sightseeing",
+      "s": "to do 短语，说是什么机会。你多半会翻成「做任何观光」，念一遍，怪。do sightseeing 整体就是「游览、观光」，any 在疑问句里是「一些」的意思，中文不用翻出来。\n→ 去游览一下"
+     }
+    ],
+    "sum": "你有没有机会去游览一下？",
+    "cmp": "书上把 to do 短语放到前面，说成「出去游览的机会」，意思一样。我的更口语。"
+   }
   }
  }
 }
