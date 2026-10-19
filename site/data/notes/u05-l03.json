@@ -8,7 +8,21 @@
      "b": "concentrate on",
      "m": "集中精力于"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She tried to concentrate on reading her book",
+      "s": "你多半会翻成「她试着去集中在读她的书上」，念一遍，拗口。tried to concentrate 里的 to concentrate 是 to do 短语，就是「试着做某事」。concentrate on 是一个整体，on 后面的 reading her book 是 -ing 短语，就是「看书」这件事。\n→ 她试着集中精力看书"
+     },
+     {
+      "t": "but couldn't",
+      "s": "你可能想翻成「但是不能」，不能什么？couldn't 后面藏了一大截，把前面的 concentrate on reading her book 放回去就通了：没能集中精力看书。办法：看到句尾突然停在 couldn't，就回头找前面的动作。\n→ 但没能做到"
+     }
+    ],
+    "sum": "她想集中精力看书，却怎么也做不到。",
+    "cmp": "意思一样。书上「试图」比「想」书面一点，两个都行。"
+   }
   },
   "Fresno, in the central valley, comes top of the list in America for year-round pollution.": {
    "ph": [
@@ -17,7 +31,21 @@
      "b": "come top of the list",
      "m": "名列榜首"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Fresno, in the central valley,",
+      "s": "两个逗号中间夹了 in the central valley，这是插入语，就是临时补一句「它在哪」。你多半会翻成「弗雷斯诺，在中央谷地里，」，念着会断气。办法：先把它拿掉，主干是 Fresno comes top，补充的话改成前面的修饰：「位于中央谷地的弗雷斯诺」。\n→ 位于中央谷地的弗雷斯诺"
+     },
+     {
+      "t": "comes top of the list in America for year-round pollution",
+      "s": "你多半会翻成「来到美国榜单的顶部」。念一遍，榜单上排第一是好事吗？看后面的 for year-round pollution：排第一的是污染。come top of the list 就是「名列榜首」，year-round 是「全年的」，所以是「全年污染最严重」。\n→ 是美国全年污染最严重的地区"
+     }
+    ],
+    "sum": "位于中央谷地的弗雷斯诺，是全美全年污染最严重的地方。",
+    "cmp": "意思一样。书上译成「地区」，我说「地方」，都可以。"
+   }
   },
   "When most of us set goals, we focus on long-term results we want to see.": {
    "ph": [
@@ -56,6 +84,23 @@
      "m": "过去是……"
     }
    ]
+  },
+  "Its dictionary definition should be updated.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Its dictionary definition",
+      "s": "你多半会翻成「它的字典定义」，这样直接叠起来能懂，但有点硬。dictionary 在这里是前面的名词当修饰，说的是「字典里的」，补回来就顺了。\n→ 它在字典里的定义"
+     },
+     {
+      "t": "should be updated",
+      "s": "你多半会翻成「应该被更新」。should be updated 是被动，就是「定义被别人怎么样了」。中文少用「被」，直接说「应该更新」，不用说谁来更新。\n→ 应该更新"
+     }
+    ],
+    "sum": "它在字典里的定义应该更新了。",
+    "cmp": "和书上基本一样，书上把 dictionary definition 直接叠成「字典定义」，我补了「在……里」，读起来顺一点。"
+   }
   },
   "There is no denying that mobile phones have brought much convenience.": {
    "ph": [
@@ -185,7 +230,35 @@
      "b": "be infected with",
      "m": "感染上"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Two million bees were infected with disease",
+      "s": "你多半会翻成「200万只蜜蜂被疾病感染了」。were infected with 是被动，就是「蜜蜂被别的东西怎么样了」，be infected with 是固定搭配，「感染上……」。中文不爱用「被」，把蜜蜂放前面，直接说「染上了疾病」就行。\n→ 200万只蜜蜂染上了疾病"
+     }
+    ],
+    "sum": "有200万只蜜蜂染上了疾病。",
+    "cmp": "意思一样，书上用「感染了疾病」，我用「染上了」，更口语。"
+   }
+  },
+  "They were profitable to manufacture.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "They were profitable",
+      "s": "这块照字面翻就行：profitable 是「有利可图的」。\n→ 它们是有利可图的"
+     },
+     {
+      "t": "to manufacture",
+      "s": "你多半会翻成「它们去制造是有利可图的」，念一遍，是不是像「它们自己去制造」？不是，它们是被制造的东西。to manufacture 是 to do 短语，补充说明 profitable 是「在哪方面有利」：制造这件事。办法：把 They 放到 manufacture 后面当宾语试试——制造它们，对。\n→ 制造起来"
+     }
+    ],
+    "order": "英文是「它们……有利可图，制造起来」，中文把「制造它们」提到前面当主语更顺。",
+    "sum": "制造它们是有利可图的。",
+    "cmp": "书上多了个「大量」，原句里没有这个词，是书上自己加的。"
+   }
   },
   "Why don't you read the manual?": {
    "ph": [
@@ -195,6 +268,23 @@
      "m": "你为什么不……（提建议）"
     }
    ]
+  },
+  "The new restaurant is a perfect place for dating.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The new restaurant is a perfect place",
+      "s": "这块照字面翻就行：perfect 是「完美的」，a perfect place 就是「一个绝佳的地方」。\n→ 这家新餐厅是个绝佳的地方"
+     },
+     {
+      "t": "for dating",
+      "s": "你多半会翻成「为了约会」。for 后面跟 -ing，这里的 dating 当名词用，就是「约会」这件事。for dating 说的是用途：这个地方是用来干什么的。办法：看到 place for doing，就想「适合……的地方」。\n→ 适合约会"
+     }
+    ],
+    "sum": "这家新餐厅是个适合约会的绝佳地点。",
+    "cmp": "书上说「约会的完美场所」，意思一样，我把 for 译成「适合」，更清楚。"
+   }
   },
   "The doctor gave him a thorough check-up.": {
    "ph": [
@@ -222,7 +312,21 @@
      "b": "be used for",
      "m": "用于"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They must be used in combination",
+      "s": "你多半会翻成「它们必须被使用在结合里」。念一遍，别扭。must be used 是被动，就是「它们被别人怎么样了」，中文直接说「必须使用」。in combination 是一个整体，「结合起来、配合起来」。\n→ 它们必须结合起来使用"
+     },
+     {
+      "t": "for an entire collective",
+      "s": "你可能想翻成「为了整个集体」。放回去试试，for 在这里说的是用在谁身上：用于整个集体。entire 就是「整个的」。\n→ 用于整个集体"
+     }
+    ],
+    "sum": "它们必须结合起来，用在整个集体上。",
+    "cmp": "和书上基本一样，我把一句拆成两小段，读起来更顺。"
+   }
   },
   "It contributes greatly to the advance of society as a whole.": {
    "ph": [
@@ -237,6 +341,24 @@
      "m": "整体上"
     }
    ]
+  },
+  "A deadly fish has been spotted in the Mediterranean waters.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "A deadly fish has been spotted",
+      "s": "你多半会翻成「一条致命的鱼已经被发现了」。has been spotted 是被动，就是「鱼被别人怎么样了」，中文少用「被」，直接说「发现了一种致命的鱼」。deadly 是「致命的」，不要看成 dead（死的）。\n→ 发现了一种致命的鱼"
+     },
+     {
+      "t": "in the Mediterranean waters",
+      "s": "这块照字面翻就行：Mediterranean 是「地中海的」，waters 是「水域」。\n→ 在地中海水域"
+     }
+    ],
+    "order": "英文把地点放后面，中文习惯先说地点，所以把「在地中海水域」提到前面。",
+    "sum": "在地中海水域发现了一种致命的鱼。",
+    "cmp": "和书上一样。"
+   }
   },
   "They work in shifts in a factory.": {
    "ph": [
@@ -254,7 +376,21 @@
      "b": "little more than",
      "m": "只不过是"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The old mill is now",
+      "s": "这块照字面翻就行：mill 是「磨坊」，old mill 是「老磨坊」。\n→ 这座老磨坊现在"
+     },
+     {
+      "t": "little more than a ruin",
+      "s": "你多半会翻成「几乎没有比废墟更多的东西」，念着绕。little more than 是一个整体，意思是「不过是、几乎就是」。办法：看到 little more than，脑子里换成「不过是」，后面是什么就等于什么。\n→ 不过是一片废墟"
+     }
+    ],
+    "sum": "这座老磨坊如今不过是一片废墟。",
+    "cmp": "书上说「只剩下一点残垣断壁」，画面感更强，但句式换了；我的更贴近原句 little more than 的意思。"
+   }
   },
   "It's certainly new territory, especially as home security cameras become easier to install.": {
    "ph": [
@@ -263,7 +399,21 @@
      "b": "especially as",
      "m": "尤其是在……的情况下"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It's certainly new territory",
+      "s": "你多半会翻成「这当然是新的领土」。territory 的确是「领土」，但说一个新的「领土」？别扭。这里是比喻，就是「新的领域」，以前没人走过的地方。\n→ 这当然是个新领域"
+     },
+     {
+      "t": "especially as home security cameras become easier to install",
+      "s": "as 你可能只认识「像……一样」。这里 as 后面跟了一整句 home security cameras become…，它带的是状语从句，说的是「随着……」，especially as 就是「尤其是随着」。become easier 是「变得更容易」，to install 是 to do 短语，补充说明「哪方面更容易」：安装起来。\n→ 尤其是随着家用安防摄像头变得更容易安装"
+     }
+    ],
+    "sum": "这当然是个新领域，尤其是随着家用安防摄像头越来越容易安装。",
+    "cmp": "意思一样。书上用「在……的情况下」，我用「随着」，更突出变化。"
+   }
   },
   "In this study, students came into the laboratory and were asked to give a public speech.": {
    "ph": [
@@ -277,7 +427,21 @@
      "b": "give a speech",
      "m": "发表演讲"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "In this study, students came into the laboratory",
+      "s": "这块照字面翻就行：In this study 是「在这项研究中」，came into the laboratory 是「走进实验室」。\n→ 在这项研究中，学生们走进实验室"
+     },
+     {
+      "t": "and were asked to give a public speech",
+      "s": "你多半会翻成「被要求去给一个公共的演讲」。and 连着两个动作，主语都是 students。were asked to 是被动，就是「学生被别人要求怎么样」，to give 是 to do 短语，说明要求的内容。give a speech 是固定说法，「发表演讲」，public 说的是当着很多人的面。\n→ 并被要求当众发表演讲"
+     }
+    ],
+    "sum": "在这项研究中，学生们走进实验室，被要求当众发表演讲。",
+    "cmp": "意思一样，「当众」比书上的「公开的演讲」更口语。"
+   }
   },
   "In his spare time, he visited the local art galleries.": {
    "ph": [
@@ -304,7 +468,21 @@
      "b": "see sb. do sth.",
      "m": "看见某人做某事"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "When he saw the police arrive",
+      "s": "When 带的是时间状语从句，就是「当……的时候」。你多半会翻成「他看见警察到达的时候」，没毛病，但注意 arrive 前面没有 to：see sb. do sth. 是「看见某人做了某事」，看到的是整个动作。\n→ 他看见警察来了的时候"
+     },
+     {
+      "t": "he ran down an alley",
+      "s": "你可能想翻成「他跑下一条小巷」。放回去试试：小巷又不是楼梯，怎么「跑下」？这里 down 是「沿着」，ran down an alley 是「沿着小巷跑」，中文更习惯说「跑进一条小巷」。\n→ 他就跑进了一条小巷"
+     }
+    ],
+    "sum": "他一看见警察过来，就跑进了一条小巷。",
+    "cmp": "和书上一样，我把「……的时候」缩成「一……就……」，更连贯。"
+   }
   },
   "The city centre streets are paved with dark local stone.": {
    "ph": [
@@ -313,7 +491,17 @@
      "b": "be paved with",
      "m": "用……铺砌"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The city centre streets are paved with dark local stone",
+      "s": "你多半会翻成「市中心的街道被深色的当地石头铺」。念一遍，是不是缺了点什么？are paved with 是被动，就是「街道被别人怎么样了」。pave A with B 是「用 B 铺 A」，中文直接说「是用……铺成的」。local stone 是「当地的石头」，dark 是「深色的」。\n→ 市中心的街道是用当地的深色石头铺成的"
+     }
+    ],
+    "sum": "市中心的街道是用当地的深色石头铺成的。",
+    "cmp": "和书上基本一样，意思相同。"
+   }
   },
   "There is plenty of decent food in the grocery stores.": {
    "ph": [
@@ -323,6 +511,23 @@
      "m": "大量的"
     }
    ]
+  },
+  "He doesn't know how to describe the beautiful country scenery.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "He doesn't know how to describe",
+      "s": "你多半会翻成「他不知道如何去描述」，这样翻没错。how to describe 是「疑问词 + to do」短语，就是「该怎么做某事」，整个短语当 know 的宾语，知道什么？知道该怎么形容。\n→ 他不知道该怎么形容"
+     },
+     {
+      "t": "the beautiful country scenery",
+      "s": "country 你可能只认识「国家」，翻成「美丽的国家风景」。放回去试试：国家风景？说不太通。这里 country 是「乡村」，country scenery 是「乡村风光」。\n→ 那美丽的乡村风光"
+     }
+    ],
+    "sum": "他不知道该怎么形容那美丽的乡村风光。",
+    "cmp": "和书上一样，意思相同。"
+   }
   },
   "It has been the scene of several fatal accidents recently.": {
    "ph": [
@@ -349,7 +554,21 @@
      "b": "get rid of",
      "m": "清除，摆脱"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Landlords had to wait 60 days",
+      "s": "这块照字面翻就行：had to 是「不得不、必须」，wait 60 days 是「等60天」。\n→ 房东必须等60天"
+     },
+     {
+      "t": "to get rid of problem tenants",
+      "s": "你多半会翻成「去摆脱有问题的租户」，念一遍，和前面接不上。to get rid of 是 to do 短语，说明等的目的，中文常加「才能」。get rid of 是固定搭配，「摆脱、除掉」，这里对象是人，说「赶走」更自然。problem tenants 是「有问题的租户」。\n→ 才能赶走有问题的租户"
+     }
+    ],
+    "sum": "房东要等60天，才能赶走有问题的租户。",
+    "cmp": "意思一样，书上用「清除」，对人来说有点硬，「赶走」更自然。"
+   }
   },
   "The security camera installed may intrude into their privacy.": {
    "ph": [
@@ -358,7 +577,21 @@
      "b": "intrude into",
      "m": "侵犯，闯入"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The security camera installed",
+      "s": "你多半会把 installed 当成谓语，翻成「安全摄像头安装了」。别急，后面还有 may intrude，那才是谓语。installed 是 -ed 短语（过去分词），放在名词后面补一段说明，就是「被安装的」。办法：看到名词后面跟 -ed，就翻成「被……的」。\n→ 所安装的安全摄像头"
+     },
+     {
+      "t": "may intrude into their privacy",
+      "s": "may 在这里是「可能」。intrude into 是固定搭配，「闯入、侵犯」，后面的 their privacy 是「他们的隐私」。\n→ 可能会侵犯他们的隐私"
+     }
+    ],
+    "sum": "所安装的安全摄像头可能会侵犯他们的隐私。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "It is possible for burglars to make jamming attacks with the necessary equipment and skill.": {
    "ph": [
@@ -396,7 +629,55 @@
      "b": "the only way to do",
      "m": "做……的唯一方法"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The only way to conquer a fear",
+      "s": "你多半会翻成「去克服恐惧的唯一方法」。to conquer 是 to do 短语，放在 way 后面补充说明是什么方法，就是「……的方法」，所以是「克服恐惧的唯一方法」。conquer 本来是「征服」，对着恐惧，说「克服」。\n→ 克服恐惧的唯一方法"
+     },
+     {
+      "t": "is to face it",
+      "s": "is 后面的 to face it 说的是这个方法具体是什么。it 指谁？放回去试：候选有 way 和 fear。面对「方法」？说不通；面对「恐惧」，对。\n→ 就是正视恐惧"
+     }
+    ],
+    "sum": "克服恐惧的唯一办法，就是直面恐惧。",
+    "cmp": "和书上一样，意思相同。"
+   }
+  },
+  "The colony of ants are busy moving upward because it will rain heavily.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The colony of ants are busy moving upward",
+      "s": "colony 你多半只认识「殖民地」，翻成「蚂蚁的殖民地」。放回去试试，蚂蚁哪来殖民地？这里 colony 是「一群、一个群体」，colony of ants 就是「蚁群」。are busy moving 是 be busy doing，就是「忙着做某事」。upward 是「向上」。\n→ 蚁群正忙着向上迁移"
+     },
+     {
+      "t": "because it will rain heavily",
+      "s": "because 带的是原因状语从句，说明为什么要搬。it will rain 里的 it 不指任何东西，天气句子里就是这么说，「要下雨了」。heavily 是「下得很大」。\n→ 因为就要下大雨了"
+     }
+    ],
+    "sum": "蚁群正忙着往高处搬，因为就要下大雨了。",
+    "cmp": "和书上基本一样，意思相同。"
+   }
+  },
+  "Is watching television a retreat from reality?": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Is watching television",
+      "s": "你多半会翻成「是看电视」，好像少了点什么。Is 放在最前面，是因为这是个问句。watching television 是 -ing 开头当主语，就是「看电视」这件事。\n→ 看电视是"
+     },
+     {
+      "t": "a retreat from reality",
+      "s": "retreat 你可能只认识「撤退」，翻成「从现实撤退」。放回去试试：看电视是撤退？说不通。这里 retreat from 是「从……里躲开」，就是「逃避」。\n→ 对现实的一种逃避吗"
+     }
+    ],
+    "sum": "看电视是在逃避现实吗？",
+    "cmp": "意思一样，书上把 retreat 说成名词「一种逃避」，我换成动词「逃避」，更口语。"
+   }
   },
   "The treaty banning mining here comes up for review.": {
    "ph": [
@@ -405,7 +686,21 @@
      "b": "come up for",
      "m": "被提交……（审议）"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The treaty banning mining here",
+      "s": "一开头一串词，别慌。你多半会把 banning 当谓语，翻成「条约禁止这里采矿」。注意后面还有 comes up，那才是谓语。banning mining here 是 -ing 短语，跟在 treaty 后面补一段说明，就是「禁止……的」。mining 是「采矿」。\n→ 禁止在这里采矿的条约"
+     },
+     {
+      "t": "comes up for review",
+      "s": "你多半会翻成「上来供审查」。comes up for 是固定搭配，「被提出来供……」，review 是「审查」。中文直接说「要接受审查」。\n→ 将要接受审查"
+     }
+    ],
+    "sum": "禁止在这里采矿的条约即将接受审查。",
+    "cmp": "意思一样，书上说「将进行审查」，我说「将接受审查」，更贴合条约是被审的对象。"
+   }
   },
   "AlphaGo's victory and Taylor's defeat happened at about the same time.": {
    "ph": [
@@ -491,6 +786,24 @@
     "cmp": "和书上几乎一样。书上把原因提到「感到沮丧」之前，也是这个思路。"
    }
   },
+  "It is interpreted differently in different times.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It is interpreted differently",
+      "s": "你多半会翻成「它被不同地解释」。念一遍，别扭吧？is interpreted 是被动，就是「它被别人怎么样了」。interpret 这里是「解释、诠释」，differently 是「不同地」，合起来说成「有不同的解释」，顺很多。\n→ 对它有不同的解释"
+     },
+     {
+      "t": "in different times",
+      "s": "这块照字面翻就行：different times 是「不同的时代」。\n→ 在不同的时代"
+     }
+    ],
+    "order": "英文把「不同的时代」放最后，中文习惯先交代时间，所以挪到最前面。",
+    "sum": "在不同的时代，人们对它有不同的解释。",
+    "cmp": "和书上基本一样，我把被动换成了主动，补出了「人们」。"
+   }
+  },
   "The interview didn't go as well as he expected.": {
    "ph": [
     {
@@ -503,7 +816,21 @@
      "b": "not as … as",
      "m": "不如……那样"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The interview didn't go",
+      "s": "你多半会翻成「面试没有去」。念一遍，不对。go 在这里不是「去」，而是「进展」，go well 是「进行得顺利」。\n→ 面试进行得不"
+     },
+     {
+      "t": "as well as he expected",
+      "s": "as well as 你可能只认识「以及」。这里不是。not as … as 是「没有……那么……」，as well as he expected 里，后一个 as 带出 he expected，说的是「他预想的那样好」。办法：看到 not as … as，就想「没有……那么」。\n→ 像他预想的那么顺利"
+     }
+    ],
+    "sum": "面试进行得没有他预想的那么顺利。",
+    "cmp": "意思一样。"
+   }
   },
   "More readers choose the digital over the print edition.": {
    "ph": [
@@ -519,6 +846,53 @@
     }
    ]
   },
+  "Faces, like fingerprints, are unique.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Faces, like fingerprints,",
+      "s": "两个逗号中间夹了 like fingerprints，这是插入语，就是临时补一句比较。你多半会翻成「脸，像指纹，」，念着会断。办法：先拿掉，主干是 Faces are unique，补充的话放到后面：和指纹一样。\n→ 人脸和指纹一样"
+     },
+     {
+      "t": "are unique",
+      "s": "这块照字面翻就行：unique 是「独一无二的」。\n→ 都是独一无二的"
+     }
+    ],
+    "sum": "人脸跟指纹一样，也是独一无二的。",
+    "cmp": "意思一样，书上用「都是」，我用「也是」，两个都行。"
+   }
+  },
+  "The area is frequented by pirates.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The area is frequented by pirates",
+      "s": "frequent 你可能只认识形容词「频繁的」，翻成「这个地区被海盗频繁」，念一遍，不通。这里 frequent 是动词，意思是「常去」。is frequented by 是被动，就是「地区被别人怎么样了」，中文少用「被」，把海盗请出来当主语：海盗经常到这里来。\n→ 海盗经常在这个地区出没"
+     }
+    ],
+    "sum": "这一带经常有海盗出没。",
+    "cmp": "和书上基本一样，书上说「这个地区」，我说「这一带」，更口语。"
+   }
+  },
+  "It is first published in Washington and then in Paris.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It is first published in Washington",
+      "s": "你多半会翻成「它首先被出版在华盛顿」。is published 是被动，就是「它被别人怎么样了」，中文直接说「出版」就好。first 说的是顺序，「先」。\n→ 它先在华盛顿出版"
+     },
+     {
+      "t": "and then in Paris",
+      "s": "你可能想翻成「然后在巴黎」，缺了动词。这里省略了 is published，因为前面已经说过，补回来：然后在巴黎出版。办法：看到句子突然只剩地点，就回头找前面的动词补上。\n→ 然后在巴黎出版"
+     }
+    ],
+    "sum": "它最早在华盛顿出版，之后又在巴黎出版。",
+    "cmp": "意思一样。"
+   }
+  },
   "It doesn't run counter to the goals of public education.": {
    "ph": [
     {
@@ -527,6 +901,19 @@
      "m": "违背，与……相反"
     }
    ]
+  },
+  "You have time to edit and do more research.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "You have time to edit and do more research",
+      "s": "你多半会翻成「你有时间去编辑和做更多研究」。to edit and do 里的 to 管着两个动作，是 to do 短语，放在 time 后面，说明这是「用来干什么的时间」。办法：看到 time to do，就想「有时间做……」。edit and do more research 是并列的两件事：编辑、再多做研究。\n→ 你有时间去编辑，再多做一些研究"
+     }
+    ],
+    "sum": "你有时间去编辑，再多做一些研究。",
+    "cmp": "意思一样，书上「和」把两个动作连得更紧，我分成两小段，读起来更顺。"
+   }
   },
   "He submitted the unedited version to a more respected journal and got accepted.": {
    "ph": [
@@ -545,7 +932,25 @@
      "b": "get accepted",
      "m": "被接受"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He submitted the unedited version",
+      "s": "unedited 你可能不认识。拆开看：un- 是「没有」，edited 是「被编辑过的」，合起来就是「没编辑过的」，version 是「版本」。注意 submit A to B：眼睛往后找 to——在下一块。\n→ 他提交了没编辑过的版本"
+     },
+     {
+      "t": "to a more respected journal",
+      "s": "找到了：submit A to B，把 A 交给 B，B 是 a more respected journal。respected 是「受尊敬的」，more respected 是「更受尊敬的」，说一家期刊，中文说「声望更高的」。\n→ 给一家声望更高的期刊"
+     },
+     {
+      "t": "and got accepted",
+      "s": "你多半会翻成「并且得到被接受」。got accepted 是被动，get 加过去分词，意思和 was accepted 差不多，只是更强调结果发生了。就是「被接受了」。\n→ 并且被接受了"
+     }
+    ],
+    "sum": "他把没编辑过的版本投给了一家声望更高的期刊，结果被接受了。",
+    "cmp": "意思一样。书上「更受尊敬的杂志」，我说「声望更高的期刊」，更贴近中文说法。"
+   }
   }
  }
 }
