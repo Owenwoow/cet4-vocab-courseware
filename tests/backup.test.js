@@ -90,3 +90,45 @@ test("解析：本站格式才认，格式不对返回 null", () => {
 test("文件名日期：本地时间补零", () => {
   assert.equal(Backup.day(new Date(2026, 0, 5, 23, 59).getTime()), "2026-01-05");
 });
+
+/* sync.js 的 dump / load：用假的 localStorage、定时器跑在 vm 里（不发网络请求） */
+const fs = require("node:fs"), path = require("node:path"), vm = require("node:vm");
+function loadSync(store) {
+  const timers = [];
+  const localStorage = {
+    getItem: k => (k in store ? store[k] : null), setItem: (k, v) => { store[k] = String(v); }, removeItem: k => { delete store[k]; },
+    key: i => Object.keys(store)[i], get length() { return Object.keys(store).length; },
+  };
+  const ctx = vm.createContext({localStorage, setTimeout: (f, ms) => (timers.push(ms), timers.length), clearTimeout() {}, Date, JSON});
+  vm.runInContext(fs.readFileSync(path.join(__dirname, "../site/sync.js"), "utf8") + "\nthis.Sync = Sync;", ctx);
+  return {Sync: ctx.Sync, timers};
+}
+const TOKEN = "github_pat_SECRET123";
+
+test("sync.dump：返回深拷贝，不含 token；导出文件里也没有 token", () => {
+  const store = {"lx:sync:doc": JSON.stringify({"known:a": [1, 5], "set:roundSize": [0, 6]}),
+    "lx:sync:cfg": JSON.stringify({token: TOKEN, gist: "g1"})};
+  const {Sync} = loadSync(store);
+  const d = Sync.dump();
+  assert.deepEqual(JSON.parse(JSON.stringify(d)), {"known:a": [1, 5], "set:roundSize": [0, 6]});
+  d["known:a"][0] = 0;
+  assert.equal(Sync.get("known:a"), 1);   // 改拷贝不影响本机
+  const file = JSON.stringify(Backup.make(Sync.dump(), 1, "http://localhost:8765"));
+  assert.ok(!file.includes(TOKEN) && !file.includes("gist"));
+});
+
+test("sync.load：保留给定时间、存本地、通知值变了的键、排一次推送；不碰 token", () => {
+  const cfg = JSON.stringify({token: TOKEN, gist: "g1"});
+  const store = {"lx:sync:doc": JSON.stringify({"known:a": [1, 5], "set:voice": ["ava", 5]}), "lx:sync:cfg": cfg};
+  const {Sync, timers} = loadSync(store);
+  const seen = [];
+  Sync.on(ch => seen.push(ch));
+  const n = Sync.load([["known:a", [1, 9]], ["set:voice", ["ryan", 7]], ["srs:b", [{d: 1}, 3]], ["set:voice", ["ryan", 7]]]);
+  assert.equal(n, 3);
+  assert.deepEqual(JSON.parse(JSON.stringify(seen)), [["set:voice", "srs:b"]]);   // known:a 只改了时间，值没变不通知
+  assert.deepEqual(JSON.parse(store["lx:sync:doc"]), {"known:a": [1, 9], "set:voice": ["ryan", 7], "srs:b": [{d: 1}, 3]});
+  assert.equal(timers.length, 1);
+  assert.equal(store["lx:sync:cfg"], cfg);
+  assert.equal(Sync.load([["known:a", [1, 9]]]), 0);   // 完全一样的不写、不通知、不再排推送
+  assert.equal(seen.length, 1); assert.equal(timers.length, 1);
+});
