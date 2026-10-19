@@ -297,28 +297,29 @@ $("#scrim").onclick = () => openDrawer(false);
 $("#drawer").addEventListener("click", e => { if (e.target.closest("a")) openDrawer(false); });
 
 /* ---------- 思维导图 ---------- */
-function mapHTML(node, root) {
-  if (root) return `<div class="mm"><span class="node root">${esc(node.w)}</span>${node.children ? `<ul>${node.children.map(c => mapHTML(c)).join("")}</ul>` : ""}</div>`;
-  const hit = WORDMAP.get(node.w);
+/* map：这一群所在那课的词条查表（词 → {ext, entry…}），课文页传 WORDMAP，学习新词页传那课缓存里的 map */
+function mapHTML(node, root, map = WORDMAP) {
+  if (root) return `<div class="mm"><span class="node root">${esc(node.w)}</span>${node.children ? `<ul>${node.children.map(c => mapHTML(c, false, map)).join("")}</ul>` : ""}</div>`;
+  const hit = map.get(node.w);
   const cls = hit ? (hit.ext ? "ext" : "entry") + (!hit.ext && known.has(node.w) ? " known" : "") : "ext";
   return `<li${node.rel ? ` class="has-rel"` : ""}>${node.rel ? `<span class="rel r-${node.rel}">${esc(node.rel)}</span>` : ""}` +
          `<button class="node ${cls}" data-goto="${esc(node.w)}">${esc(node.w)}</button>` +
-         `${node.children ? `<ul>${node.children.map(c => mapHTML(c)).join("")}</ul>` : ""}</li>`;
+         `${node.children ? `<ul>${node.children.map(c => mapHTML(c, false, map)).join("")}</ul>` : ""}</li>`;
 }
 
 /* 手机版导图：单线串联的关系写在同一行（A → 相关 B → 形近 C），只在分叉处换行缩进 */
-function nodeChip(node) {
-  const hit = WORDMAP.get(node.w);
+function nodeChip(node, map = WORDMAP) {
+  const hit = map.get(node.w);
   const cls = hit ? (hit.ext ? "ext" : "entry") + (!hit.ext && known.has(node.w) ? " known" : "") : "ext";
   return `${node.rel ? `<span class="rel r-${esc(node.rel)}">${esc(node.rel)}</span>` : ""}<button class="node ${cls}" data-goto="${esc(node.w)}">${esc(node.w)}</button>`;
 }
-function mapCompactLine(node) {
-  let h = nodeChip(node), cur = node;
-  while (cur.children && cur.children.length === 1) { cur = cur.children[0]; h += `<span class="mseg"><span class="arr">→</span>${nodeChip(cur)}</span>`; }
-  const kids = cur.children && cur.children.length > 1 ? `<ul>${cur.children.map(c => `<li>${mapCompactLine(c)}</li>`).join("")}</ul>` : "";
+function mapCompactLine(node, map = WORDMAP) {
+  let h = nodeChip(node, map), cur = node;
+  while (cur.children && cur.children.length === 1) { cur = cur.children[0]; h += `<span class="mseg"><span class="arr">→</span>${nodeChip(cur, map)}</span>`; }
+  const kids = cur.children && cur.children.length > 1 ? `<ul>${cur.children.map(c => `<li>${mapCompactLine(c, map)}</li>`).join("")}</ul>` : "";
   return `<span class="line">${h}</span>${kids}`;
 }
-const mapCompact = root => `<ul class="mmc">${(root.children || []).map(c => `<li>${mapCompactLine(c)}</li>`).join("")}</ul>`;
+const mapCompact = (root, map = WORDMAP) => `<ul class="mmc">${(root.children || []).map(c => `<li>${mapCompactLine(c, map)}</li>`).join("")}</ul>`;
 
 /* ---------- 词卡 ---------- */
 const allEntries = () => L.groups.flatMap(g => g.entries);
@@ -900,12 +901,12 @@ function readingCard(sec) {
   return cur;
 }
 /* 词表里的一行：序号 · 单词 · 音标 · 释义；展开后是记忆法、扩展词和「跳到」 */
-const peekRow = (e, cls = "", mark = "") => `<li class="pk${cls}${known.has(e.word) ? " known" : ""}" data-pk="${esc(e.word)}">
+const peekRow = (e, cls = "", mark = "", go = true) => `<li class="pk${cls}${known.has(e.word) ? " known" : ""}" data-pk="${esc(e.word)}">
     <div class="pkh"><span class="no">${String(e.no).padStart(2, "0")}</span><b>${esc(e.word)}</b><span class="ipa">${esc(e.prons.map(p => p.ipa).join(" "))}</span>${mark}</div>
     <div class="pkm">${e.prons.flatMap(p => p.senses).map(s => `<span class="pos">${esc(s.pos)}</span>${meanHTML(s.mean)}`).join("　")}</div>
     <div class="pkx">${e.tip ? `<div class="tip"><span class="tag ${esc(e.tip.type)}">${esc(e.tip.type)}</span>${esc(e.tip.text)}</div>` : ""}
       ${e.ext && e.ext.length ? `<div class="pkext">${e.ext.map(x => `<span data-pkext="${esc(x.word)}"><span class="tag">扩</span><b>${esc(x.word)}</b> ${x.senses.map(s => `${esc(s.pos)} ${meanHTML(s.mean)}`).join("；")}</span>`).join("")}</div>` : ""}
-      <button class="pkgo" data-pkgo="${esc(e.word)}">跳到这张卡 ↓</button></div></li>`;
+      ${go ? `<button class="pkgo" data-pkgo="${esc(e.word)}">跳到这张卡 ↓</button>` : ""}</div></li>`;
 function openPeek() {
   const sec = L && currentGroup(); if (!sec) return;
   const g = L.groups.find(x => x.no === +sec.dataset.g), here = readingCard(sec);

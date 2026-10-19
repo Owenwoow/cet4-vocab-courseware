@@ -8,6 +8,8 @@
                 k 课id, g 词群号, f 火苗, o 词条序号}（取消记 0）
      log:<日期> = {g, m, f 当天评分次数, dv 当天复习的到期词数}
      drill:<范围> = 巩固做到一半的进度（同一天有效，做完记 0），字段见 progSave
+     （学习新词页的词群速览 = 本群书上导图 + 词表，见 lpBuild；速览本身不存学习数据）
+     learnPeek = 学习新词页词群速览是否展开（true / false，没存过时宽屏展开、窄屏收起）
      vocab:<原形> = 生词本：{w 原形, x 点到的写法, m 释义, p 音标, k 出处课id, e 出处词条（空 = 没有例句，如扩展词）,
                 at 加入日期, o 加入时刻, bk 书中位置 [课id, 词条序号, 是否扩展词], ph 1 = 例句里标出的词组（w 是词组原形，x 是句中写法、拆开的用「 … 」连）} + 复习卡字段 a s d l r n t（移出记 0）。
                 加入当天算学习日，复习规则和书上的词一样（原形含空格的按词组卡出题，见 srs.js isPhrase）；这个词所在的词群记为学过时，它从生词本「毕业」（记 0），以书上的卡为准 */
@@ -220,7 +222,7 @@ const Study = (() => {
     if (!g) return {g: null, items: []};
     const L2 = await getLesson(g.lid), grp = L2.les.groups.find(x => x.no === g.no);
     const items = grp.entries.filter(e => !known.has(e.word) && !Sync.get("srs:" + e.word, 0))
-      .map(e => ({word: e.word, card: null, freq: e.freq, order: e.no, lid: g.lid, e, grp, aud: L2.aud, notes: L2.notes, video: L2.video}));
+      .map(e => ({word: e.word, card: null, freq: e.freq, order: e.no, lid: g.lid, e, grp, aud: L2.aud, notes: L2.notes, video: L2.video, map: L2.map}));   // map：词群速览的导图查表
     return {g, les: L2.les, items};
   }
 
@@ -273,7 +275,7 @@ const Study = (() => {
   const lvDot = n => `<span class="lvdot${n ? "" : " hollow"}" style="--c:var(--lv${n})" title="熟练度：${LV_NAME[n]}"></span>`;
   const btn = (href, text, attrs = 'appearance="filled"') => `<wa-button size="small" href="${href}" ${attrs}>${text}</wa-button>`;   // 默认浅底，主按钮传 variant="brand"
   const loadFail = err => { view().innerHTML = `<p class="empty">加载失败：${esc(err.message)}<br>检查网络后 <a href="javascript:location.reload()">重新加载</a></p>`; };
-  function setHead(title) { $("#crumb").textContent = title; document.title = title + " · 四级词汇"; }
+  function setHead(title) { view().classList.remove("learnmode"); $("#crumb").textContent = title; document.title = title + " · 四级词汇"; }
 
   /* ---------- 首页：一个个板块，按顺序画；以后加功能就往 MODULES 里加一项 ---------- */
   function streak() {
@@ -672,6 +674,74 @@ const Study = (() => {
   const curQ = () => (D.back ? D.hist[D.hist.length - D.back] : D.q);
   const RESULT = {g: "✓ 记得", m: "≈ 模糊", f: "✗ 忘了"};
   const RUBRIC = `<p class="rubric">忘了 = 主要意思想不起来或想错｜模糊 = 想了一会儿才想起，或只记得主要意思｜记得 = 很快想起主要意思（次要意思不要求）</p>`;
+  /* ---------- 学习新词的词群速览：本群书上导图 + 词表（照搬课文页「词群速览」），随时前后看；给定词所在的词群就能画，换群只重画速览 ----------
+     宽屏（≥1180px）左栏速览、右栏词卡；窄屏速览在词卡上方，默认收起成一行。展开 / 收起记在 learnPeek（走 Sync）。
+     题目没答完（看词选义、听音选义没作答，翻卡没翻开）时释义全遮住，点了只读音，免得泄露答案 */
+  const lpWide = matchMedia("(min-width:1180px)");
+  const lpExpanded = () => { const v = store.get("learnPeek", null); return v === null ? lpWide.matches : !!v; };
+  const lpMasked = q => !D.back && q.kind !== "study" && (q.kind === "flip" ? !q.flipped : q.state === "ask");
+  function lpBuild(x) {
+    const g = x.grp, rows = g.entries.map(e => peekRow(e, "", `<span class="lpm"></span>`, false)).join("");
+    return `<button class="lpbar" data-lpfold="1" type="button" title="收起 / 展开（M）"><b>词群 ${g.no}</b><span class="t"></span><i>▾</i></button>
+      <div class="lpbody"><div class="mapbox pkmap">${mapHTML(g.map, true, x.map)}${mapCompact(g.map, x.map)}</div>
+        <p class="pknote">点导图里的词，下面显示释义；点词表一行展开记忆法、读一遍</p>
+        <ol class="pklist">${rows}</ol><ol class="pkfoot lpfoot" hidden></ol></div>`;
+  }
+  /* 当前词 / 过关 / 已会 / 遮挡 / 标题行 */
+  function lpPaint(q, fresh) {  // fresh：刚画出这一群，左栏留在顶部（导图在上），不自动滚
+    const el = $("#lpeek"), x = q.x, g = x.grp, sp = el.parentNode, open = lpExpanded(), masked = lpMasked(q);
+    sp.classList.toggle("fold", !open); el.classList.toggle("fold", !open); el.classList.toggle("lmask", masked);
+    if (masked) { $$(".pk.open", el).forEach(r => r.classList.remove("open")); el.querySelector(".pkfoot").hidden = true; }
+    $$(".pk", el).forEach(r => {
+      const w = r.dataset.pk, here = w === x.word, m = r.querySelector(".lpm");
+      r.classList.toggle("here", here);
+      m.className = "lpm" + (here ? " pkhere" : D.done.has(w) ? " lpok" : "");
+      m.textContent = here ? (q.kind === "study" ? "▸ 正在学" : "▸ 正在考") : D.done.has(w) ? "✓" : known.has(w) ? "已会" : "";
+    });
+    const k = g.entries.findIndex(e => e.word === x.word) + 1;
+    el.querySelector(".lpbar .t").textContent = `${g.title} · 共 ${g.entries.length} 词 · ${q.kind === "study" ? "正在学" : "正在考"} 第 ${k} 个`;
+    if (!open) return;
+    const box = el.querySelector(".pkmap"), mm = box.querySelector(".mm");   // 树形导图放不下就换紧凑版（显示出来才量得到宽度）
+    if (mm && mm.offsetParent !== null && mm.offsetWidth > box.clientWidth - 20) box.classList.add("compact");
+    const body = el.querySelector(".lpbody"), h = el.querySelector(".pk.here");   // 当前词不在左栏视野里就滚过去（只滚左栏，不动页面）
+    if (!fresh && h && body.scrollHeight > body.clientHeight && (h.offsetTop < body.scrollTop || h.offsetTop + h.offsetHeight > body.scrollTop + body.clientHeight))
+      body.scrollTop = h.offsetTop - body.clientHeight * 0.3;
+  }
+  /* 写进页面：学习新词外面套上速览，其余范围原样 */
+  function put(html) {
+    if (!D.learn) { view().innerHTML = html; return; }
+    const q = curQ(), v = view();
+    let sp = v.querySelector(".lsplit");
+    if (!sp) { v.innerHTML = `<div class="lsplit"><aside class="lpeek" id="lpeek"></aside><div class="lmain"></div></div>`; sp = v.firstChild; }
+    v.classList.add("learnmode");
+    const key = q.x.lid + ":" + q.x.grp.no;
+    const fresh = sp.dataset.g !== key;
+    if (fresh) { sp.dataset.g = key; $("#lpeek").innerHTML = lpBuild(q.x); }
+    sp.querySelector(".lmain").innerHTML = html;
+    lpPaint(q, fresh);
+  }
+  function lpFold() { store.set("learnPeek", !lpExpanded()); lpPaint(curQ(), true); }
+  function lpClick(t) {
+    if (t.closest("[data-lpfold]")) { lpFold(); return; }
+    const q = curQ(), x = q.x, el = $("#lpeek"), masked = lpMasked(q);
+    const say = w => sayWord(x, w);
+    const node = t.closest("[data-goto]");
+    if (node) {
+      const w = node.dataset.goto, hit = x.map.get(w); if (!hit) return;
+      if (masked) { say(w); return; }
+      const foot = el.querySelector(".pkfoot");
+      foot.innerHTML = peekRow(hit.entry, " open", "", false); foot.hidden = false;
+      if (hit.ext) foot.querySelector(`[data-pkext="${CSS.escape(w)}"]`)?.classList.add("hit");
+      say(w); return;
+    }
+    if (t.closest(".pkfoot")) return;
+    const row = t.closest(".pk");
+    if (!row) return;
+    if (masked) { say(row.dataset.pk); return; }
+    const open = !row.classList.contains("open"); row.classList.toggle("open", open);
+    if (open) say(row.dataset.pk);
+  }
+
   function showCard() {
     const past = D.back > 0, q = curQ(), x = q.x, c = x.card, total = D.items.length;
     const retry = !past && q.state === "ask" && (D.learn ? (D.st.get(x.word) || {}).err : D.rated.has(x.word));
@@ -684,18 +754,18 @@ const Study = (() => {
     const prevBtn = D.back < D.hist.length ? `<wa-button appearance="outlined" data-prev="1" title="回看上一个词">← 上一个</wa-button>` : "";
     const pastOps = `${prevBtn}<wa-button variant="brand" data-fwd="1">${D.back > 1 ? "下一个 →" : "回到当前 →"} <kbd>空格</kbd></wa-button>`;
     if (q.kind === "study") {                        // 学习新词的词卡：全部摊开，看完再考
-      view().innerHTML = `<div class="drill flipped${past ? " past" : ""}">${bar}<div class="dcard">${meta}${wordHead(x, true)}${backHTML(x)}</div>
-        <div class="dops">${past ? pastOps : `${prevBtn}<wa-button variant="brand" data-studied="1">看完了，待会考我 <kbd>空格</kbd></wa-button>`}</div></div>`;
+      put(`<div class="drill flipped${past ? " past" : ""}">${bar}<div class="dcard">${meta}${wordHead(x, true)}${backHTML(x)}</div>
+        <div class="dops">${past ? pastOps : `${prevBtn}<wa-button variant="brand" data-studied="1">看完了，待会考我 <kbd>空格</kbd></wa-button>`}</div></div>`);
       if (!past && !q.said) { q.said = true; sayWord(x); }
       return;
     }
     if (q.kind === "flip" || (past && q.state !== "done")) {   // 翻卡；回看时没作答就斩掉的题也按翻卡样子展示
       const open = q.flipped || past;
-      view().innerHTML = `<div class="drill${open ? " flipped" : ""}${past ? " past" : ""}">${bar}<div class="dcard${open ? "" : " locked"}">${meta}${wordHead(x, open)}${open ? backHTML(x) : ""}</div>
+      put(`<div class="drill${open ? " flipped" : ""}${past ? " past" : ""}">${bar}<div class="dcard${open ? "" : " locked"}">${meta}${wordHead(x, open)}${open ? backHTML(x) : ""}</div>
         <div class="dops">${past ? pastOps : q.flipped
           ? `${prevBtn}<wa-button variant="danger" data-rate="f">忘了 <kbd>1</kbd></wa-button><wa-button variant="warning" data-rate="m">模糊 <kbd>2</kbd></wa-button>
              <wa-button variant="success" data-rate="g">记得 <kbd>3</kbd></wa-button>${chopBtn(x)}${RUBRIC}`
-          : `${prevBtn}<wa-button variant="brand" class="flip" data-flip="1">想好了，翻开看 <kbd>空格</kbd></wa-button>${chopBtn(x)}`}</div></div>`;
+          : `${prevBtn}<wa-button variant="brand" class="flip" data-flip="1">想好了，翻开看 <kbd>空格</kbd></wa-button>${chopBtn(x)}`}</div></div>`);
       if (!past && !q.flipped && !q.said) { q.said = true; if (S.autoSay) sayWord(x); }
       return;
     }
@@ -714,7 +784,7 @@ const Study = (() => {
       ? `${prevBtn}<wa-button variant="brand" data-next="1">继续 <kbd>空格</kbd></wa-button>`
       : q.kind === "spell" ? `${prevBtn}<wa-button appearance="outlined" data-opt="-1">不会 <kbd>Esc</kbd></wa-button><wa-button variant="brand" data-spell="1">提交 <kbd>Enter</kbd></wa-button>${chopBtn(x)}`
       : `${prevBtn}<wa-button appearance="outlined" data-opt="-1">不认识 <kbd>0</kbd></wa-button>${chopBtn(x)}`;
-    view().innerHTML = `<div class="drill quiz${done ? (ok ? " right" : " wrong") : ""}${past ? " past" : ""}">${bar}<div class="dcard${done || past ? "" : " locked"}">${meta}${body}${opts}${verdict}${done && q.conf ? cmpHTML(q.conf.e) : ""}${done ? backHTML(x) : ""}</div><div class="dops">${ops}</div></div>`;
+    put(`<div class="drill quiz${done ? (ok ? " right" : " wrong") : ""}${past ? " past" : ""}">${bar}<div class="dcard${done || past ? "" : " locked"}">${meta}${body}${opts}${verdict}${done && q.conf ? cmpHTML(q.conf.e) : ""}${done ? backHTML(x) : ""}</div><div class="dops">${ops}</div></div>`);
     if (!done) {
       q.t0 = Date.now();                               // 从回看回来重新计时
       if (!q.said) { q.said = true; if (q.kind === "listen" || q.kind === "spell" || (q.kind === "mean" && S.autoSay)) sayQ(q); }
@@ -842,6 +912,7 @@ const Study = (() => {
     Sync.set("log:" + d, lg);
   }
   function endDrill() {
+    view().classList.remove("learnmode");
     const {g, m, f} = D.res;
     if (D.save) progClear(D.sc);
     if (D.learn) {
@@ -935,6 +1006,7 @@ const Study = (() => {
       return;
     }
     if (e.target.closest && e.target.closest("input,select,textarea")) return;
+    if (D.learn && (e.key === "m" || e.key === "M")) { lpFold(); return; }
     if (e.key === "ArrowLeft") { goBack(); return; }
     if (D.back) {                                    // 回看中：只能翻页、听读音
       if (e.key === "ArrowRight" || e.key === " " || e.key === "Enter") { e.preventDefault(); goFwd(); }
@@ -960,6 +1032,7 @@ const Study = (() => {
       if (t.closest("#redo")) { startDrill(D.sc, {title: "再过一遍", items: D.again}); return; }
       if (t.closest("#nextRound")) { startDrill("due"); return; }
       if (t.closest("#nextGroup")) { scrollTo(0, 0); startDrill("learn"); return; }
+      if (D.learn && q && t.closest("#lpeek")) { lpClick(t); return; }
       if (!q) return;
       if (t.closest("[data-restart]")) {
         if (!confirm("从头再来？这一轮的进度清掉，所有词重新出（已经记下的复习成绩不撤销）。")) return;
