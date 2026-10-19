@@ -290,12 +290,16 @@ function renderDrawer() {
   $("#drawer").innerHTML = h;
 }
 const openDrawer = v => { $("#drawer").classList.toggle("open", v); $("#scrim").classList.toggle("open", v); };
-/* 宽屏时侧边栏常驻，☰ 改为收起 / 展开，状态记住；窄屏仍是抽屉 */
+/* 宽屏时侧边栏常驻，☰ 改为收起 / 展开，状态记住；窄屏仍是抽屉。
+   巩固页（#/drill…）里默认收起，☰ 只临时展开、不改记住的状态，离开巩固页恢复 */
 const wide = matchMedia("(min-width:1180px)");
-const applySide = () => document.body.classList.toggle("sideOff", !!store.get("sideOff", false));
+let drillSide = false;   // 巩固页里临时展开了侧边栏
+const inDrill = () => /^#\/drill/.test(location.hash);
+const applySide = () => document.body.classList.toggle("sideOff", inDrill() ? !drillSide : !!store.get("sideOff", false));
 $("#menuBtn").onclick = () => {
   if (!wide.matches) { openDrawer(true); return; }
-  store.set("sideOff", !store.get("sideOff", false)); applySide();
+  if (inDrill()) drillSide = !drillSide; else store.set("sideOff", !store.get("sideOff", false));
+  applySide();
 };
 applySide();
 $("#scrim").onclick = () => openDrawer(false);
@@ -436,7 +440,7 @@ async function route() {
   const h = location.hash, isSettings = h === "#/settings", isStudy = !isSettings && Study.isStudy(h);
   if (h !== curHash) viewY.set(curHash, scrollY);
   curHash = h;
-  closePeek();
+  closePeek(); drillSide = false; applySide();
   if ((isSettings || isStudy) && !$("#lessonView").hidden && L) lessonScroll = {id: L.id, h: prevHash, y: scrollY};   // 离开课文前记住读到哪
   if (!isSettings) prevHash = h || "#/";
   $("#lessonView").hidden = isSettings || isStudy; $("#fabs").hidden = isSettings || isStudy;
