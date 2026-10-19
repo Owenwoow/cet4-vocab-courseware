@@ -7,6 +7,7 @@
   - A：悬浮窗中的视频，点击视频画面没法暂停反而会跳转到 B 站原视频，这有点不符合直觉，有方法解决吗
   - B：打开这个章节对应的视频，book 和 b 站视频页面左右分屏观看；我不是每个单词都要看视频，怎么给 b 站的视频打上关键帧，我不用频繁点击播放视频
   - 手机的设计没什么问题，不需要做很大的改动
+  - 补充：视频是只对电脑端更新，剩下的内容所有端都要更新
 
 ## 调研结论（2026-10-19 实测）
 
@@ -30,7 +31,7 @@
 /dev-task
 【目标】浮窗里点视频画面不再跳 B 站；电脑上把 B 站视频标签分屏放在右边时，词卡上的 ▶ 让那个标签跳到对应秒数，不开浮窗
 【要做】
-1. 浮窗 iframe（site/app.js openVideo）加 sandbox="allow-scripts allow-same-origin allow-presentation"，不给 allow-popups；保留 allow="autoplay; fullscreen; picture-in-picture" 和 allowfullscreen。确认全屏按钮还能用，不能用就补上需要的 sandbox 标记
+1. 只在电脑端（和浮窗布局同一个判断：vpNarrow() 为假）给浮窗 iframe（site/app.js openVideo）加 sandbox="allow-scripts allow-same-origin allow-presentation"，不给 allow-popups；保留 allow="autoplay; fullscreen; picture-in-picture" 和 allowfullscreen。确认全屏按钮还能用，不能用就补上需要的 sandbox 标记。手机上贴底部的播放器照旧不加（手机上 player.html 会自己转到简化版播放器，行为不同，这次不碰）
 2. 「分屏标签」：课件用固定的窗口名（如 cet4-bili）在普通新标签里打开 B 站视频页（window.open(url, 名字)，不加 noopener，不加 popup 特性），用户自己把标签拖出来摆成左右分屏
    - 入口 ①：课文页右下角快捷按钮里加一个「B 站分屏」（窄屏 ≤600px 不显示），点了打开当前读到的那张卡（readingCard）的第一个可用视频和秒数，进入分屏状态，按钮亮起；再点一次退出分屏状态（B 站标签不关）
    - 入口 ②：浮窗标题栏的「B 站 ↗」改成在分屏标签打开同一个视频和秒数，同时关掉浮窗、进入分屏状态
@@ -43,7 +44,7 @@
 - 用用户账号批量写 B 站笔记（接口不公开、有风控风险）
 - 双向联动：B 站播到哪个词不影响课件
 - 用 newplayer.html 或伪造来源绕过白名单
-- 手机端改动
+- 手机端改动（包括 sandbox：用户明确说视频只改电脑端）
 【已定的取舍】
 - 点画面只能暂停、不能继续：B 站外链播放器只给第三方网站「跳转 + 暂停」，sandbox 拦掉跳转后只剩暂停，这是能做到的最好结果；继续播放用 ▶ 或空格
 - 分屏用普通新标签、不用弹出窗口：用户选的，自己拖成分屏
