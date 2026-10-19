@@ -18,7 +18,43 @@
      "b": "cure sb. of sth.",
      "m": "治好某人的病"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The doctor managed to cure",
+      "s": "你多半会翻成「医生管理去治愈」。念一遍，不通吧？manage to do 是固定搭配，to cure 是 to do 短语（动词不定式，就是「去做某事」），整个是「设法做成某事」。\n→ 医生设法治好"
+     },
+     {
+      "t": "her of her illness",
+      "s": "cure 后面跟着 her of her illness，你可能翻成「治愈她的她的病」，绕晕了。眼睛盯住 of：cure sb. of sth. 是「治好某人的某种病」，of 后面就是病。\n→ 她的病"
+     }
+    ],
+    "sum": "医生想办法把她的病治好了。",
+    "cmp": "意思一样，书上的「设法」比「想办法」书面一点。"
+   }
+  },
+  "Reading literary fiction, he says, makes us more curious.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Reading literary fiction",
+      "s": "一开头是 Reading，你多半会翻成「正在阅读文学小说」。放进整句念：「正在阅读文学小说，使我们……」，对不上。-ing 开头当主语，就是「做某事」这件事。literary fiction 是「文学小说」。\n→ 阅读文学小说"
+     },
+     {
+      "t": "he says",
+      "s": "he says 夹在两个逗号中间，是插入语，就是顺口补一句「他说」，交代这话是谁讲的。你要是硬塞在句子中间翻，句子就断了。办法：把它拎出来，放到整句最前面。\n→ 他说"
+     },
+     {
+      "t": "makes us more curious",
+      "s": "make 你多半会翻成「制造」：「制造我们更好奇」？不通。make sb. + 形容词 是「让某人变得怎么样」，curious 是「好奇的」，more curious 就是「更好奇」。\n→ 会让我们更加好奇"
+     }
+    ],
+    "order": "英文把「他说」夹在中间，中文习惯先交代是谁说的，所以把「他说」提到最前面。",
+    "sum": "他说，阅读文学小说会让我们更加好奇。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "She found it difficult to secure a job in that country.": {
    "ph": [
@@ -27,7 +63,21 @@
      "b": "find it difficult to do",
      "m": "发现做某事很难"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She found it difficult",
+      "s": "你多半会翻成「她发现它很困难」。it 指谁？前面没有名词可放，放不回去。这里的 it 是形式宾语，只是先占个位置，真正的内容在后面。办法：看到 find it + 形容词，眼睛往后找 to do。\n→ 她发现……很难"
+     },
+     {
+      "t": "to secure a job in that country",
+      "s": "找到了，to secure 是 to do 短语（动词不定式），说的就是「难」的是哪件事。secure 你可能只认识形容词「安全的」，这里是动词，「获得、弄到手」。\n→ 在那个国家找到一份工作"
+     }
+    ],
+    "sum": "她发现，在那个国家很难找到工作。",
+    "cmp": "和书上意思一样，说法顺序也一样。"
+   }
   },
   "After being rescued from the air crash, the people agreed that they had much to be thankful for.": {
    "ph": [
@@ -94,7 +144,21 @@
      "b": "mean no harm",
      "m": "并无恶意"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He may look fierce",
+      "s": "look 你多半会翻成「看」：「他可能看凶猛」？念一遍就不对。look 后面直接跟形容词，是「看上去怎么样」。may 是「可能」，fierce 是「凶猛的、凶的」。\n→ 他可能看上去很凶"
+     },
+     {
+      "t": "but he means no harm",
+      "s": "mean 你多半会翻成「意味着」：「他意味着没有伤害」？不对。mean 在这里是「打算、存心」，mean no harm 就是「没有存心伤害」，说白了是「并无恶意」。but 是转折，前面凶，后面却没恶意。\n→ 但他并无恶意"
+     }
+    ],
+    "sum": "他看上去可能很凶，但并无恶意。",
+    "cmp": "和书上一样。"
+   }
   },
   "You may expose yourself to unexpected dangers.": {
    "ph": [
@@ -104,6 +168,23 @@
      "m": "使自己面临"
     }
    ]
+  },
+  "In some situations, the stakes are low and failure is a healthy part of growth.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "In some situations, the stakes are low",
+      "s": "stake 你多半会翻成「木桩」或「赌注」，翻成「赌注很低」就怪了。赌注小，说白了就是输了也没多大损失，也就是「风险小」。\n→ 在某些情况下，风险很低"
+     },
+     {
+      "t": "and failure is a healthy part of growth",
+      "s": "healthy part 你可能翻成「健康的部分」，念一遍有点怪：失败怎么会健康？这里的 healthy 是「有益的、正常的」。of growth 是「成长中的」。\n→ 失败是成长中很正常的一部分"
+     }
+    ],
+    "sum": "在某些情况下，风险很低，失败是成长过程中很正常的一部分。",
+    "cmp": "意思一样，书上的「健康的一部分」比较字面，「正常的」更自然。"
+   }
   },
   "Dare she risk staying where she was?": {
    "ph": [
@@ -164,7 +245,21 @@
      "b": "request for",
      "m": "对……的请求"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "I bet",
+      "s": "你多半会翻成「我打赌」，翻译没错，口语里说「我敢说、我猜」更顺。注意后面直接跟 you get，中间省略了 that：I bet (that) you get…，这是宾语从句，就是「打赌的内容」。\n→ 我敢说"
+     },
+     {
+      "t": "you get a lot of requests for it",
+      "s": "get 你可能翻成「得到」，这里是「收到」。a lot of 是「许多」。requests for it 你可能翻成「对它的请求」，这没错，换成动词说更顺：「有人向你要它」。\n→ 你会收到很多人对它的请求"
+     }
+    ],
+    "sum": "我敢说，你会收到很多人对它的请求。",
+    "cmp": "和书上意思一样，只是「我敢说」比「我打赌」更口语。"
+   }
   },
   "Environmental problems must be solved to ease the current global food shortage.": {
    "ph": [],
@@ -262,6 +357,27 @@
     }
    ]
   },
+  "You need to do some self-assessment to determine where you have become stale in your thinking.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "You need to do some self-assessment",
+      "s": "这块照字面翻就行：need to do 是「需要做」，self-assessment 是「自我评估」。\n→ 你需要做一些自我评估"
+     },
+     {
+      "t": "to determine",
+      "s": "你多半会接着上一块翻成「需要去确定」。其实这个 to determine 是 to do 短语（动词不定式），说明做评估是为了什么，就是「为了确定」。\n→ 以便确定"
+     },
+     {
+      "t": "where you have become stale in your thinking",
+      "s": "where 你多半会翻成「在哪里」：「你在哪里变陈旧」？地点对不上。这里 where 带的是宾语从句，就是 determine 要确定的内容，「在哪些方面」。stale 本义是食物「不新鲜」，说思维就是「陈旧、僵化」。have become 是「已经变得」。\n→ 你的思维在哪些方面已经变得陈旧"
+     }
+    ],
+    "sum": "你需要做一些自我评估，以便弄清自己的思维在哪些方面已经变得陈旧。",
+    "cmp": "和书上基本一样，书上说「在哪里变得陈旧」，我把 where 说成「在哪些方面」，更像中文。"
+   }
+  },
   "Since being laid off, he has worked a series of temporary positions.": {
    "ph": [
     {
@@ -330,7 +446,56 @@
      "b": "a mass of",
      "m": "大量的"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "I began sifting through",
+      "s": "你多半会翻成「我开始筛通过」，不通。began sifting 是 begin + -ing，-ing 跟在 begin 后面，就是「开始做某事」。sift 本义是「筛」，sift through 是把一大堆东西一点点筛着看，说白了就是「仔细翻查」。\n→ 我开始仔细筛查"
+     },
+     {
+      "t": "the mass of evidence",
+      "s": "mass 你可能想到「质量」。放回去试试：证据的质量？下面一大堆东西，却用 the，说得通的是 mass 的另一个意思「大量、一大堆」。\n→ 大量的证据"
+     }
+    ],
+    "sum": "我开始仔细筛查大量的证据。",
+    "cmp": "和书上意思一样，书上说「筛选」，我用「筛查」，更强调把每一份都看一遍。"
+   }
+  },
+  "We derive massive economic benefits when we buy the most affordable energy on the world market.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "We derive massive economic benefits",
+      "s": "derive 你多半只见过 derive from，这里后面直接跟宾语，是「获得、得到」。你可能把 massive 翻成「大规模的」，修饰「利益」不顺，换成「巨大的」。\n→ 我们获得巨大的经济利益"
+     },
+     {
+      "t": "when we buy the most affordable energy on the world market",
+      "s": "when 带的是时间状语从句，就是「当……的时候」。the most affordable 你可能翻成「最负担得起的」，太拗口，说白了就是「最便宜的」。\n→ 当我们在世界市场上购买最便宜的能源时"
+     }
+    ],
+    "order": "英文把 when 放在后面，中文习惯先说「当……时」，再说结果，所以把后半句提到前面。",
+    "sum": "当我们在世界市场上购买最便宜的能源时，就能获得巨大的经济利益。",
+    "cmp": "意思一样，书上多出「也」，英文里没有对应的词，去掉也不影响。"
+   }
+  },
+  "Massage helps to improve physical function and reduce stress.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Massage helps to improve physical function",
+      "s": "Massage 别和 mass 弄混，它是名词「按摩」。你多半会翻成「按摩帮助去改善」。help to do 是「有助于做某事」，to improve 是 to do 短语（动词不定式），直接翻成「有助于改善」就顺了。physical function 是「身体机能」。\n→ 按摩有助于改善身体机能"
+     },
+     {
+      "t": "and reduce stress",
+      "s": "and 连起来的是 improve 和 reduce，两个动词共用前面那个 to。stress 你可能翻成「紧张」，这里是名词「压力」。\n→ 并减轻压力"
+     }
+    ],
+    "sum": "按摩有助于改善身体机能，减轻压力。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "It has great influence on numerous girls and women.": {
    "ph": [
@@ -341,6 +506,24 @@
     }
    ]
   },
+  "It revealed the secret of how bacteria multiply in cream and butter.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It revealed the secret of",
+      "s": "这块照字面翻就行：reveal 是「揭示」，the secret of 先放着，后面还有东西等着补。\n→ 它揭示了……的秘密"
+     },
+     {
+      "t": "how bacteria multiply in cream and butter",
+      "s": "of 后面是 how 带的从句，就是在说这个秘密的具体内容。multiply 你多半会翻成「乘」或「增加」，放进去试试：细菌在奶油里相乘？不通。这里 multiply 是「繁殖」，how 就是「怎么样」。\n→ 细菌是如何在奶油和黄油中繁殖的"
+     }
+    ],
+    "order": "英文是「秘密」在前，具体内容在后；中文把长长的内容放在「的秘密」前面，所以先说「细菌如何繁殖」，最后收在「秘密」上。",
+    "sum": "它揭示了细菌是如何在奶油和黄油中繁殖的这一秘密。",
+    "cmp": "和书上意思一样，书上把「秘密」放在前面，我把它放在最后，更像中文。"
+   }
+  },
   "I went out with the usual gang from college on Friday night.": {
    "ph": [
     {
@@ -349,6 +532,23 @@
      "m": "和……一起出去"
     }
    ]
+  },
+  "The watch comes equipped with a standard battery and a nylon band.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The watch comes equipped with",
+      "s": "你多半会翻成「手表来装备着」，念不下去。equipped 是 -ed 形式（过去分词）当形容词，说明手表的状态：come equipped with 就是「出厂时就配有」，翻成「配有」。\n→ 这款手表配有"
+     },
+     {
+      "t": "a standard battery and a nylon band",
+      "s": "band 你多半想到「乐队」，放回去试试：手表配乐队？不通。手表上的 band 是「表带」。standard 是「标准的」，nylon 是「尼龙」。\n→ 标准电池和尼龙表带"
+     }
+    ],
+    "sum": "这款手表配有标准电池和尼龙表带。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "This sort of problem is quite common.": {
    "ph": [
@@ -366,7 +566,21 @@
      "b": "resort to",
      "m": "诉诸，采取"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They resort to different means",
+      "s": "你多半会翻成「他们求助于不同的意思」。means 在这里不是「意思」，是名词「手段、办法」，单复数同形。resort to 是固定搭配，「诉诸、采取」，to 是介词，后面接名词。\n→ 他们采取不同的办法"
+     },
+     {
+      "t": "to survive the bitter cold",
+      "s": "to survive 是 to do 短语（动词不定式），表示目的，就是「为了……」。survive 你可能翻成「生存」，对付严寒用「熬过、度过」更自然。bitter cold 是「严寒」。\n→ 来熬过严寒"
+     }
+    ],
+    "sum": "他们采取各种办法来熬过严寒。",
+    "cmp": "意思一样，书上说「手段」「度过」，我换成了「办法」「熬过」，更口语。"
+   }
   },
   "There will be crowds of people waiting for her.": {
    "ph": [
@@ -375,7 +589,21 @@
      "b": "crowds of",
      "m": "大批的"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "There will be crowds of people",
+      "s": "你多半会翻成「那里将是人群们」。there will be 是「将会有」，不是「那里」；crowds of 是「大批的、很多」。\n→ 会有很多人"
+     },
+     {
+      "t": "waiting for her",
+      "s": "waiting for her 是 -ing 短语（现在分词），跟在 people 后面，给「人」补一句说明：这些人在干什么，就是「正在等她的」。wait for 是「等」。\n→ 在等她"
+     }
+    ],
+    "sum": "会有很多人在等她。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "A freshman textbook will have dozens of contributors.": {
    "ph": [
@@ -411,7 +639,26 @@
      "b": "as long as",
      "m": "只要"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "There's an ancient legend that",
+      "s": "你多半会把 that 翻成「那个」。放回去试试：古老的传说，那个……？不通。这里 that 引出一个从句，是 legend 的具体内容，就是同位语从句，用来说明传说讲的是什么。\n→ 有一个古老的传说"
+     },
+     {
+      "t": "as long as these eggs are made",
+      "s": "as long as 是「只要」。are made 是被动，就是「这些蛋被人做出来」。中文少用「被」，说成「有人做这些蛋」更顺。\n→ 只要还有人做这些蛋"
+     },
+     {
+      "t": "evil will not prevail in the world",
+      "s": "prevail 你可能只认识「盛行」，邪恶盛行勉强能懂，其实它是「占上风、得势」，这里翻成「横行」也可以。will not 是单纯说将来不会。\n→ 邪恶就不会在世上横行"
+     }
+    ],
+    "order": "英文是 that 带出整个内容，中文可以用冒号隔开，先说有传说，再说传说是什么；「只要」一般放在「就」前面，顺序已经对了，不用挪。",
+    "sum": "有一个古老的传说：只要还有人做这些蛋，邪恶就不会在世上横行。",
+    "cmp": "意思一样，书上保留了被动「被制作出来」，我改成「有人做」，更像中文。"
+   }
   },
   "I want my students to search out the answers to questions by using all the resources available to them.": {
    "ph": [
@@ -430,7 +677,21 @@
      "b": "be available to",
      "m": "可供……使用的"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "I want my students to search out the answers to questions",
+      "s": "你多半会翻成「我想要我的学生去找出……」。want sb. to do 是固定结构，「想让某人做某事」，眼睛往后找 to：to search out。search out 是「找出」，answers to questions 是「问题的答案」。\n→ 我希望我的学生找出问题的答案"
+     },
+     {
+      "t": "by using all the resources available to them",
+      "s": "by using 是 by + -ing，就是「通过做某事」。available 你可能翻成「可用的」，放在 resources 后面，是在补充说明这些资源，就是「他们能用到的」。\n→ 利用他们所能用到的所有资源"
+     }
+    ],
+    "sum": "我希望我的学生利用他们能用到的所有资源，找出问题的答案。",
+    "cmp": "和书上基本一样，我把「所有可用的资源」换成「他们能用到的所有资源」，意思更清楚一点。"
+   }
   },
   "They feel pressured to keep up with female colleagues.": {
    "ph": [
@@ -444,7 +705,21 @@
      "b": "keep up with",
      "m": "跟上"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They feel pressured",
+      "s": "你多半会翻成「他们感觉被压力」，念一遍不通。pressured 是 -ed 形式（过去分词）当形容词，就是「感到有压力的」，feel pressured 是「感到有压力」。\n→ 他们感到有压力"
+     },
+     {
+      "t": "to keep up with female colleagues",
+      "s": "to keep up with 是 to do 短语（动词不定式），说明压力来自哪件事。keep up with 你可能拆开翻成「保持向上和」，不对，它是固定搭配，「跟上」。female colleagues 是「女同事」。\n→ 要跟上女同事"
+     }
+    ],
+    "sum": "他们感到有压力，得跟上女同事的步伐。",
+    "cmp": "意思一样，书上把「要跟上女同事的步伐」放在前面、「感到有压力」放在后面，我按英文顺序，先说压力再说内容。"
+   }
   },
   "The letter is in fairly good condition, in spite of being out of the care of trained museum staff for so long.": {
    "ph": [
@@ -463,7 +738,22 @@
      "b": "out of the care of",
      "m": "不在……的照管下"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The letter is in fairly good condition",
+      "s": "你多半会翻成「这封信在相当好的状况里」，不像中文。in good condition 整体是「状况良好」，fairly 是「相当」。\n→ 这封信状况相当好"
+     },
+     {
+      "t": "in spite of being out of the care of trained museum staff for so long",
+      "s": "看到 in spite of，脑子里马上换成「虽然」。后面的 being 是 -ing 短语，就是「处在……状态」，out of the care of 是「不在……照管之下」，说白了就是「没人管」。trained 是 -ed 形式，修饰 museum staff，「训练有素的博物馆员工」。for so long 是「这么长时间」。\n→ 虽然这么长时间没有受到训练有素的博物馆员工的照管"
+     }
+    ],
+    "order": "英文是「结果在前、虽然在后」，中文习惯先说「虽然」，再说「但」，所以把后半句提到前面。",
+    "sum": "这封信虽然这么长时间没有专业的博物馆员工照管，但状况相当好。",
+    "cmp": "和书上意思一样，书上用「长期」「维护」，我用「这么长时间」「照管」，更贴近原文的 so long 和 care。"
+   }
   },
   "If you want the good stuff, the quality, you have to see it for yourself.": {
    "ph": [
@@ -477,7 +767,21 @@
      "b": "for oneself",
      "m": "亲自"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "If you want the good stuff, the quality",
+      "s": "stuff 你多半翻成「东西」，没错，the good stuff 就是「好东西」。后面逗号隔开的 the quality 是在换个说法解释前面：好东西到底指什么？指「品质」。别把它当成另一样东西。\n→ 如果你想要好东西，也就是品质"
+     },
+     {
+      "t": "you have to see it for yourself",
+      "s": "for yourself 你多半会翻成「为你自己」，放回去试试：为你自己看它？不对。for oneself 是固定搭配，「亲自」。have to 是「必须」。\n→ 你必须亲自去看"
+     }
+    ],
+    "sum": "如果你想要好东西，也就是高品质的东西，你必须亲自去看。",
+    "cmp": "和书上意思一样，书上把 the quality 译成「高品质的东西」，补了「的东西」，我保留「也就是」，更能看出是换个说法解释前面。"
+   }
   },
   "Hundreds of studies show that infants prefer novelty.": {
    "ph": [
@@ -486,7 +790,21 @@
      "b": "hundreds of",
      "m": "数百的"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Hundreds of studies",
+      "s": "你多半会翻成「几百的研究」。hundreds of 是固定搭配，「数百个」，用来修饰后面的名词。\n→ 数百项研究"
+     },
+     {
+      "t": "show that infants prefer novelty",
+      "s": "show 你多半会翻成「展示」，研究展示婴儿？不对。这里 show 是「表明」，that 带的是宾语从句，就是表明的内容。prefer 是「更喜欢」，novelty 是「新奇的事物」。\n→ 表明婴儿更喜欢新鲜事物"
+     }
+    ],
+    "sum": "数百项研究表明，婴儿更喜欢新鲜事物。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "In one recent study, we examined 360 adolescents' beliefs about the nature of \"smartness\".": {
    "ph": [
@@ -496,6 +814,24 @@
      "m": "对……的看法"
     }
    ]
+  },
+  "The camp is for youngsters aged 8 to 14.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The camp is for youngsters",
+      "s": "这块照字面翻就行：camp 是「营地、夏令营」，be for 是「适合、面向……的」。\n→ 这个营地是面向少年儿童的"
+     },
+     {
+      "t": "aged 8 to 14",
+      "s": "aged 你多半会读成「年老的」。念一遍：年老的 8 到 14？不通。这里 aged 是 -ed 形式（过去分词），跟在 youngsters 后面，补一句说明，「年龄为……的」。\n→ 年龄在 8 到 14 岁"
+     }
+    ],
+    "order": "英文把「年龄」放在名词后面，中文习惯把修饰的话放在名词前面，所以说成「8 到 14 岁的少年儿童」。",
+    "sum": "这个营地面向 8 到 14 岁的少年儿童。",
+    "cmp": "和书上意思一样。"
+   }
   },
   "Lawyers can specialise in \"elder law\".": {
    "ph": [
@@ -523,7 +859,21 @@
      "b": "emigrate to",
      "m": "移民到"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Immigrant parents could talk about their country of origin",
+      "s": "你可能想把 could 翻成「曾经能」。句子里没有 if 条件，也不是在讲过去的事，不是虚拟，这里就是情态动词「可以」，表示这样做是行得通的。Immigrant 是「移民的」，country of origin 是「原籍国」，翻成「原来的国家」也行。\n→ 移民父母可以谈谈他们的原籍国"
+     },
+     {
+      "t": "and why they emigrated to the United States",
+      "s": "and 后面接的不是名词，而是 why 带的从句，也是 talk about 的内容，就是「他们为什么……」。emigrate to 是「移民到」。\n→ 以及他们为什么移民到美国"
+     }
+    ],
+    "sum": "移民父母可以谈谈他们的原籍国，以及他们为什么移民到美国。",
+    "cmp": "和书上基本一样。"
+   }
   },
   "Most of the colored people migrated there at the turn of the 20th century.": {
    "ph": [
@@ -533,6 +883,40 @@
      "m": "在……之交"
     }
    ]
+  },
+  "The full name of China's Han ethnic group is composed of surname and given name.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The full name of China's Han ethnic group",
+      "s": "你多半会翻成「中国的汉族民族群体的全名」，太重了。ethnic group 是「民族」，Han ethnic group 说白了就是「汉族」。\n→ 中国汉族人的全名"
+     },
+     {
+      "t": "is composed of surname and given name",
+      "s": "is composed of 是被动，字面是「被组成」，但它已经是固定搭配，直接翻成「由……组成」。surname 是「姓」，given name 是「名」，不是「给定的名字」。\n→ 由姓和名组成"
+     }
+    ],
+    "sum": "中国汉族人的全名由姓和名组成。",
+    "cmp": "和书上完全一样。"
+   }
+  },
+  "In the past, electric vehicles had their problems, namely, a limited driving range.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "In the past, electric vehicles had their problems",
+      "s": "你多半会翻成「在过去，电动汽车有它们的问题」。their 不用翻出来，中文说「也有毛病」就顺了。In the past 是「过去」。\n→ 过去，电动汽车也有毛病"
+     },
+     {
+      "t": "namely, a limited driving range",
+      "s": "namely 就是「即、也就是」，后面这段补充说明到底是什么问题，语法上叫同位语，就是换个说法把前面的 problems 再说具体一点。limited 你可能翻成「受限制的」，说成「有限」更顺。driving range 是一辆车一次充电能开多远，也就是「续航里程」。\n→ 即续航里程有限"
+     }
+    ],
+    "sum": "过去，电动汽车也有毛病，也就是续航里程有限。",
+    "cmp": "意思一样，书上说「驾驶范围有限」，是按字面翻的，「续航里程有限」才是中文里的常见说法。"
+   }
   }
  }
 }

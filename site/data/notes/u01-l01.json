@@ -37,7 +37,22 @@
      "b": "be hard to do",
      "m": "很难做到"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The idea of a parallel universe",
+      "s": "你多半会翻成「一个平行宇宙的想法」。念一遍，勉强能懂，但 idea of 这里更像「……这个概念」。parallel 是「平行的」。\n→ 平行宇宙这个概念"
+     },
+     {
+      "t": "is hard to grasp",
+      "s": "你多半会翻成「很难去抓住」。grasp 本义是「抓」，可概念又不是东西，怎么抓？这里是「抓住意思」，也就是「理解」。to grasp 是 to do 短语，hard to do 就是「做起来很难」，to 不用翻成「去」。\n→ 很难理解"
+     }
+    ],
+    "order": "不用挪，顺着翻就行。",
+    "sum": "平行宇宙这个概念很难理解。",
+    "cmp": "意思一样。书上多了「是……的」，读起来更像在下判断，去掉也完全通顺。"
+   }
   },
   "We will unite in fighting crime.": {
    "ph": [
@@ -46,7 +61,39 @@
      "b": "unite in doing",
      "m": "联合起来做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "We will unite",
+      "s": "你多半会翻成「我们将联合」。方向是对的，不过 unite 是「团结、联合起来」，说的是大家拧成一股绳。\n→ 我们将联合起来"
+     },
+     {
+      "t": "in fighting crime",
+      "s": "你可能想翻成「在打击犯罪中」，念一遍，是不是有点怪？in 后面跟的 fighting crime 是 -ing 短语，就是「做某事」这件事。unite in doing 是个搭配，意思是「联合起来做某事」，in 别单独翻。fight 在这里是「打击」，不是「打架」。\n→ 打击犯罪"
+     }
+    ],
+    "sum": "我们将联合起来打击犯罪。",
+    "cmp": "和书上基本一样，书上少了「起来」，我加上更完整，两种都对。"
+   }
+  },
+  "The family was reunited after the war.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The family was reunited",
+      "s": "你多半会翻成「这家人被重新联合」。念一遍，中文不这么说。was reunited 是被动，就是「这家人被怎么样了」。re- 是「再」，unite 是「合」，合起来是「团聚」。中文直接说「又团聚了」就行。\n→ 这家人又团聚了"
+     },
+     {
+      "t": "after the war",
+      "s": "这块照字面翻就行：after 是「在……之后」。\n→ 战争结束后"
+     }
+    ],
+    "order": "英文把时间放在后面，中文习惯先说时间，所以把「战争结束后」提到前面。",
+    "sum": "战争结束后，这家人又团聚了。",
+    "cmp": "和书上基本一样，书上的「又相聚了」和我的「又团聚了」意思相同。"
+   }
   },
   "People from diverse backgrounds no longer socialise.": {
    "ph": [
@@ -69,7 +116,21 @@
      "b": "ensure that",
      "m": "确保"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "You need to ensure",
+      "s": "你多半会翻成「你需要去确保」。need to ensure 里的 to ensure 是 to do 短语，就是「需要做某事」，to 不用翻成「去」。ensure 是「确保」。\n→ 你需要确保"
+     },
+     {
+      "t": "that you've converted the data properly",
+      "s": "that 带的是宾语从句，就是 ensure 要确保的那件事。you've 是 you have，you've converted 是现在完成时，说的是「已经转换完了」。你多半会翻成「已经转换了数据适当地」，太硬，properly 要挪到动词前面说：「正确地转换」。\n→ 已经把数据正确转换了"
+     }
+    ],
+    "sum": "你需要确保已经把数据正确转换了。",
+    "cmp": "和书上基本一样，书上用「您」，更客气，其他意思相同。"
+   }
   },
   "They are trying to prevent, limit or even reverse disease by changing what patients eat.": {
    "ph": [
@@ -102,7 +163,40 @@
      "b": "on a … basis",
      "m": "按年度"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Funding will be awarded",
+      "s": "你多半会翻成「资金将被授予」。will be awarded 是被动，就是「资金会被别人怎么样」。award 本义是「授予」，对象是资金时，中文常说「发放」。中文不爱用「被」，直接说「资金将发放」。\n→ 资金将发放"
+     },
+     {
+      "t": "on an annual basis",
+      "s": "你可能想翻成「在一个年度的基础上」，念一遍，太绕了。on a … basis 是个搭配，意思是「按……的方式」，annual 是「每年的」。\n→ 按年度进行"
+     }
+    ],
+    "order": "不用挪，但可以把「按年度」放到「发放」前面，读起来更顺。",
+    "sum": "资金将按年度发放。",
+    "cmp": "和书上一样。"
+   }
+  },
+  "The controversy surrounding his latest movie continues.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The controversy surrounding his latest movie",
+      "s": "surrounding 放在名词后面，是 -ing 短语，给前面的名词补一段说明，就是「围绕……的」。你多半会翻成「包围他最新电影的争议」，念一遍，是不是有点怪？surround 本义是「包围」，说到争议，要换成「围绕」。\n→ 围绕他最新电影的争议"
+     },
+     {
+      "t": "continues",
+      "s": "这块照字面翻就行：continue 是「继续」。\n→ 仍在继续"
+     }
+    ],
+    "order": "不用挪，顺着翻。",
+    "sum": "围绕他最新电影的争议仍在继续。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Contrary to popular belief, many cats dislike milk.": {
    "ph": [
@@ -158,7 +252,21 @@
      "b": "meet … requirements",
      "m": "满足……的要求"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They tried to meet",
+      "s": "tried to meet 里的 to meet 是 to do 短语，try to do 就是「试图做某事」。meet 你多半会翻成「遇见」，放回去试试：遇见宇航员的要求？不通。meet requirements 是搭配，meet 在这里是「满足」。\n→ 他们试图满足"
+     },
+     {
+      "t": "astronauts' specific requirements",
+      "s": "你可能想翻成「宇航员的具体要求」，也不算错。specific 在这里是「特定的」，说的是宇航员这个群体才有的要求。\n→ 宇航员的特定要求"
+     }
+    ],
+    "sum": "他们试图满足宇航员的特定要求。",
+    "cmp": "和书上基本一样，书上译成「特殊要求」，specific 更准确的意思是「特定的」，不过这里两个说法都说得通。"
+   }
   },
   "The island is truly a heaven on earth.": {
    "ph": [
@@ -218,7 +326,22 @@
      "b": "it takes time to do",
      "m": "做某事需要时间"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It takes time",
+      "s": "你多半会翻成「它需要时间」。别急，这里的 It 不是「它」，只是先占个位置，真正要说的事在后面的 to develop。It takes time to do 的意思是「做某事需要时间」。\n→ 需要时间"
+     },
+     {
+      "t": "to develop new technology",
+      "s": "to develop 是 to do 短语，说的就是「需要时间」的那件事。develop 在这里是「开发」，不是「发展」。\n→ 开发新技术"
+     }
+    ],
+    "order": "英文先说「需要时间」，再说是什么事；中文习惯把事情放前面当主语，所以先说「开发新技术」。",
+    "sum": "开发新技术需要时间。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Lunch boxes have evolved along with the transformation of schools.": {
    "ph": [
@@ -298,7 +421,21 @@
      "b": "roadblock to",
      "m": "……的障碍"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "When they look ahead",
+      "s": "When 带的是时间状语从句，就是「当……的时候」。look ahead 你多半会翻成「向前看」，放在这里字面也能通，不过说的是「展望未来」。\n→ 当他们展望未来的时候"
+     },
+     {
+      "t": "they see roadblocks to their success",
+      "s": "你多半会翻成「他们看到对他们成功的路障」。念一遍，别扭吧？roadblock 本义是「路障」，这里是打比方，说成功路上有「障碍」。roadblocks to their success 是「他们成功路上的障碍」，to 不要单独翻成「对」。\n→ 他们看到成功路上的重重障碍"
+     }
+    ],
+    "sum": "他们展望未来时，看到的是成功路上的重重障碍。",
+    "cmp": "和书上基本一样。书上把 roadblocks to their success 译成「阻碍成功的重重障碍」，「重重」把复数的意思带出来了，也很好。"
+   }
   },
   "Do you approve of my idea?": {
    "ph": [
@@ -344,7 +481,22 @@
      "b": "an opportunity to do",
      "m": "做某事的机会"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "This is an opportunity",
+      "s": "这块照字面翻就行：这是一个机会。\n→ 这是一个机会"
+     },
+     {
+      "t": "to enhance the reputation of the company",
+      "s": "你多半会翻成「一个去提高公司声誉的机会」。to enhance 是 to do 短语，放在名词 opportunity 后面，是给这个名词补一段说明：什么样的机会。中文把说明放在名词前面，「提高公司声誉的机会」。enhance 是「提高、增强」，reputation 是「声誉」。\n→ 提高公司声誉的"
+     }
+    ],
+    "order": "英文把说明放在 opportunity 后面，中文要把它挪到「机会」前面。",
+    "sum": "这是个提高公司声誉的机会。",
+    "cmp": "和书上基本一样，只是我少了「一个」，更口语一点。"
+   }
   },
   "Self-control enables you to avoid behaviours that don't contribute to your success.": {
    "ph": [
@@ -375,6 +527,23 @@
     "cmp": "意思和书上一样。书上的「无益于」更书面，我写的「没有帮助」更口语。"
    }
   },
+  "Reading will enlarge your vocabulary.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Reading",
+      "s": "你多半会翻成「读」，一开头就是 Reading，别慌。-ing 开头当主语，就是「做某事」这件事。所以这里是「阅读这件事」。\n→ 阅读"
+     },
+     {
+      "t": "will enlarge your vocabulary",
+      "s": "你可能想翻成「会放大你的词汇」。念一遍，词汇又不是图片，怎么放大？enlarge 是「扩大」，vocabulary 是「词汇量」。中文说「扩大词汇量」才顺。\n→ 能扩大你的词汇量"
+     }
+    ],
+    "sum": "阅读能扩大你的词汇量。",
+    "cmp": "和书上完全一样。"
+   }
+  },
   "The liberal arts in higher education help enrich students' spiritual life.": {
    "ph": [
     {
@@ -382,7 +551,21 @@
      "b": "help (to) do",
      "m": "有助于做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The liberal arts in higher education",
+      "s": "你多半会翻成「自由的艺术」。放回去试试：高等教育里的自由的艺术？不通。liberal arts 是一个固定说法，指的是「文科」（人文类学科）。in higher education 补充说明范围：高等教育里的。\n→ 高等教育中的文科"
+     },
+     {
+      "t": "help enrich students' spiritual life",
+      "s": "你可能想翻成「帮助丰富」。help 后面可以直接跟动词原形，省略了 to，help (to) do 就是「有助于做某事」。enrich 是 en-（使）加 rich（丰富），就是「使丰富」。\n→ 有助于丰富学生的精神生活"
+     }
+    ],
+    "sum": "高等教育中的文科有助于丰富学生的精神生活。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "If you do not fasten your safety belt, your chances of being hurt will be greater.": {
    "ph": [
@@ -391,7 +574,26 @@
      "b": "chance of doing",
      "m": "……的可能性"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "If you do not fasten your safety belt",
+      "s": "If 带的是条件从句，就是「如果……」。fasten 你多半会翻成「固定」，用在安全带上，中文说「系好」或「系牢」更自然。\n→ 如果你不系牢安全带"
+     },
+     {
+      "t": "your chances of being hurt",
+      "s": "你多半会翻成「你的被伤害的机会」。念一遍，是不是有点怪？chance of doing 是「……的可能性」，of 后面的 being hurt 是被动的 -ing 短语，就是「被弄伤」，中文直接说「受伤」。\n→ 你受伤的可能性"
+     },
+     {
+      "t": "will be greater",
+      "s": "这块照字面翻就行：greater 是 great 的比较级，「更大」。\n→ 就会更大"
+     }
+    ],
+    "order": "英文把 if 放在前面，这里正好和中文一致，不用挪。",
+    "sum": "如果你不系牢安全带，受伤的可能性就会更大。",
+    "cmp": "和书上基本一样。书上用「概率」，我用「可能性」，两个都对。"
+   }
   },
   "These shoes are much too tight.": {
    "ph": [
@@ -410,6 +612,24 @@
      "m": "扣上，系上"
     }
    ]
+  },
+  "The roof has been made watertight.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The roof has been made",
+      "s": "你多半会翻成「屋顶已经被制造」。放回去试试：屋顶被制造了？意思歪了。has been made 是被动，就是「屋顶被别人怎么样了」。make 在这里的结构是 make sth. + 形容词，意思是「把某物弄成……的样子」，所以是「屋顶被弄成了……」。\n→ 屋顶已经被弄成了"
+     },
+     {
+      "t": "watertight",
+      "s": "watertight 由 water（水）和 tight（紧密）拼成，就是「水进不去」，也就是「防水的」。中文少用「被」，直接说「屋顶做了防水」。\n→ 防水的"
+     }
+    ],
+    "order": "把两块合起来，中文不用「被」，说成「屋顶已经做了防水处理」更顺。",
+    "sum": "屋顶已经做好防水了。",
+    "cmp": "意思一样。书上的「做了防水处理」更完整，我这句更口语。"
+   }
   },
   "I undid the package and took out the books.": {
    "ph": [
@@ -432,7 +652,21 @@
      "b": "one … the other",
      "m": "一个……另一个"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "One form of socialising",
+      "s": "你多半会翻成「社交的一个形式」，也能懂。form 在这里是名词「形式」，不是动词「形成」。of 后面的 socialising 是 -ing 形式，当「社交」这件事用。\n→ 一种社交形式"
+     },
+     {
+      "t": "doesn't replace the other",
+      "s": "你可能想翻成「不替换另一个」。replace 在这里是「取代」。the other 是 one 的对应：一种社交形式是 One，剩下的那一种就是 the other，也就是「另一种」。one … the other 是个搭配，眼睛看到 One 就往后找 the other。\n→ 并不能取代另一种"
+     }
+    ],
+    "sum": "一种社交形式并不能取代另一种。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "Students' ability to learn formal writing is unlikely to be affected by texting.": {
    "ph": [
@@ -446,7 +680,26 @@
      "b": "be unlikely to do",
      "m": "不太可能做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Students' ability to learn formal writing",
+      "s": "你多半会翻成「学生的能力去学习正式写作」。念一遍，是不是有点怪？ability to do 是「做某事的能力」，to learn 是 to do 短语，给 ability 补充说明。中文把说明放前面：「学习正式写作的能力」。\n→ 学生学习正式写作的能力"
+     },
+     {
+      "t": "is unlikely to be affected",
+      "s": "你可能想翻成「不可能被影响」。注意 unlikely 是「不太可能」，不是「绝对不可能」。be unlikely to do 是个搭配，to be affected 是被动，就是「被影响」。\n→ 不太可能受到影响"
+     },
+     {
+      "t": "by texting",
+      "s": "被动句里 by 后面跟的是「谁在影响」。texting 是 -ing 形式，就是「发短信」这件事。中文说「受到发短信的影响」。\n→ 发短信的"
+     }
+    ],
+    "order": "三块合在一起时，把 by texting 并进「受到……的影响」里，说成「受到发短信的影响」。",
+    "sum": "学生学习正式写作的能力不太可能受到发短信的影响。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "The hat is part of the school uniform.": {
    "ph": [
@@ -473,7 +726,21 @@
      "b": "force sb. to do",
      "m": "迫使某人做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "It may force companies",
+      "s": "你多半会翻成「它可能强迫公司」，到这里先别停，force sb. to do 是一个搭配，眼睛往后找 to——找到了。may 这里是「可能」。\n→ 它可能会迫使公司"
+     },
+     {
+      "t": "to reform their business practice",
+      "s": "to reform 是 to do 短语，说的是「公司被迫做的那件事」。你可能想翻成「去改革」，to 不用翻。reform 在这里是动词「改革」，their 指的是 companies。\n→ 改革其商业惯例"
+     }
+    ],
+    "sum": "它可能会迫使公司改革自己的商业惯例。",
+    "cmp": "和书上基本一样，书上用「其」，我用「自己的」，意思相同。"
+   }
   },
   "A behaviour that does not conform to social norms may be described as being deviant.": {
    "ph": [
@@ -510,7 +777,21 @@
      "b": "refuse to do",
      "m": "拒绝做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They refused to comply",
+      "s": "你多半会翻成「他们拒绝去遵从」。refuse to do 就是「拒绝做某事」，to comply 是 to do 短语，to 不用翻成「去」。\n→ 他们拒绝遵守"
+     },
+     {
+      "t": "with the UN resolution",
+      "s": "你可能想翻成「和联合国决议」。comply with 是一个整体，意思是「遵守」，with 别单独翻。resolution 在这里是「决议」，UN 就是联合国。\n→ 联合国的决议"
+     }
+    ],
+    "sum": "他们拒绝遵守联合国的决议。",
+    "cmp": "和书上完全一样。"
+   }
   },
   "He struggled to formulate an answer.": {
    "ph": [
@@ -519,7 +800,21 @@
      "b": "struggle to do",
      "m": "努力做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He struggled to formulate",
+      "s": "你多半会翻成「他挣扎着去制定」。struggle 本义是「挣扎」，太重了。struggle to do 是「费很大劲去做某事」，to formulate 是 to do 短语。formulate 是「想出、系统地表达出来」。\n→ 他费了很大劲想出"
+     },
+     {
+      "t": "an answer",
+      "s": "这块照字面翻就行：一个答案。\n→ 一个答案"
+     }
+    ],
+    "sum": "他费了很大劲才想出一个答案。",
+    "cmp": "和书上基本一样。书上说「努力想出」，struggle 里带着吃力的意思，我写成「费了很大劲」，更贴近。"
+   }
   },
   "In a pilot programme, students are given electronic devices to do assignments when schools are closed.": {
    "ph": [
@@ -528,7 +823,30 @@
      "b": "do assignments",
      "m": "做作业"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "In a pilot programme",
+      "s": "你多半会翻成「在一个飞行员项目中」。放回去试试：飞行员项目？不通。pilot 放在名词前面当形容词，意思是「试点的」。\n→ 在一个试点项目中"
+     },
+     {
+      "t": "students are given electronic devices",
+      "s": "are given 是被动，就是「学生被给了」。中文少用「被」，换成「学生会拿到」「学校给学生配」。electronic devices 是「电子设备」。\n→ 学生会拿到电子设备"
+     },
+     {
+      "t": "to do assignments",
+      "s": "你可能想翻成「去做作业」。这里 to do assignments 是 to do 短语，说明给设备是为了什么：「用来做作业」。assignment 是「作业」。\n→ 用来做作业"
+     },
+     {
+      "t": "when schools are closed",
+      "s": "你多半会翻成「当学校被关闭时」。when 带的是时间状语从句，are closed 是被动，但学校停课，中文说「学校停课时」就够了。\n→ 学校停课的时候"
+     }
+    ],
+    "order": "英文把时间放在最后，中文先说「学校停课时」，再说学生拿到设备。",
+    "sum": "在一个试点项目中，学校停课期间，学生会拿到电子设备用来做作业。",
+    "cmp": "书上把被动 are given 译成「可以使用」，换了个角度说，读起来很顺。我保留了「拿到」，更贴近原文的「被给予」，两种都对。"
+   }
   },
   "Lion dancers need to have a little imagination to perform well.": {
    "ph": [
@@ -537,7 +855,34 @@
      "b": "need to do",
      "m": "需要做"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Lion dancers need to have a little imagination",
+      "s": "你多半会翻成「狮子舞者」。中文说「舞狮者」就是了。need to have 里的 to have 是 to do 短语，就是「需要有」。a little 带着 a，是「有一点」，不是「几乎没有」，少了 a 的 little 才是否定。\n→ 舞狮者需要有一点想象力"
+     },
+     {
+      "t": "to perform well",
+      "s": "这里还有一个 to，要和前面的 need to 区分开：前面那个是 need 要做的事，这个 to perform 是 to do 短语，表示目的，「为了……」。perform 在这里是「表演」。\n→ 才能表演好"
+     }
+    ],
+    "sum": "舞狮者需要有一点想象力，才能表演得好。",
+    "cmp": "和书上基本一样，书上说「才能表演好」，我多了个「得」，意思相同。"
+   }
+  },
+  "The dentist started drilling my tooth.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The dentist started drilling my tooth",
+      "s": "你多半会翻成「牙医开始训练我的牙」。放回去试试：训练牙齿？不通。drill 常见意思是「训练」，但它还有一个意思是「钻孔」，牙医手里拿的就是钻头。started drilling 里 drilling 是 -ing 形式，start doing 就是「开始做某事」。\n→ 牙医开始给我钻牙"
+     }
+    ],
+    "sum": "牙医开始给我钻牙。",
+    "cmp": "意思一样，书上的「钻我的牙」更接近英文字面，我的说法更口语。"
+   }
   },
   "She is well informed about the design business.": {
    "ph": [
@@ -546,7 +891,38 @@
      "b": "be informed about",
      "m": "了解"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She is well informed about",
+      "s": "你多半会翻成「她被很好地通知关于」。念一遍，是不是有点怪？informed 是 inform 的 -ed 形式，be informed about 是个搭配，意思是「了解」，well 是「很」。中文别带「被」，直接说「她很了解」。\n→ 她很了解"
+     },
+     {
+      "t": "the design business",
+      "s": "这块照字面翻就行：design 是「设计」，business 在这里是「行业、业务」。\n→ 设计行业"
+     }
+    ],
+    "sum": "她对设计行业很了解。",
+    "cmp": "和书上基本一样，书上说「设计业务」，我用「设计行业」，意思差不多。"
+   }
+  },
+  "When the system thinks it's being jammed, it'll notify you via push alert.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "When the system thinks it's being jammed",
+      "s": "When 带的是时间状语从句，就是「当……时」。thinks 后面省略了 that，it's being jammed 就是系统认为的内容。it 指谁？放回去试：the system 认为 the system 被干扰，说得通。being jammed 是被动进行，就是「正在被干扰」。\n→ 当系统认为自己被干扰时"
+     },
+     {
+      "t": "it'll notify you via push alert",
+      "s": "你多半会翻成「它会通知你经由推送警报」。念一遍，太硬了。via 是「通过」，push alert 是「推送提醒」，中文把方式放前面：「通过推送提醒来通知你」。it'll 是 it will，这里的 it 还是 the system。\n→ 它会通过推送提醒通知你"
+     }
+    ],
+    "sum": "当系统认为自己被干扰时，它会通过推送提醒通知你。",
+    "cmp": "和书上基本一样，书上把 alert 译成「警报」，我译成「提醒」，更像手机推送的说法。"
+   }
   },
   "There is a noticeable difference between the two brands.": {
    "ph": [
