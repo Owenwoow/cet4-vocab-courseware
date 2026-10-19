@@ -970,10 +970,12 @@ const Study = (() => {
     }
     Sync.setMany(pairs);
   }
-  /* 这一批里词全部过关的群马上记为学过（不等整轮；中途退出已完成的群照样算） */
+  /* 这一批里词全部过关的群马上记为学过（不等整轮；中途退出已完成的群照样算）。
+     只按书上顺序记前缀：前面的群没过完，后面的群过完了也先不记。否则隔天进度作废后，nextGroups 从最后一个记过的群往后取，前面那群就被跳过；
+     两群共有的词只算在前一群，后一群先记还会提前给它建卡 */
   function learnGroupsDone() {
     if (!D || !D.learn || !D.lg) return;
-    for (const p of D.lg.gs) if (p.words.every(w => D.done.has(w))) finishGroup(p);
+    for (const p of D.lg.gs) { if (!p.words.every(w => D.done.has(w))) break; finishGroup(p); }
   }
   const finishLearn = () => D.lg.gs.forEach(finishGroup);
   function bump(r, wasDue) {
