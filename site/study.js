@@ -340,21 +340,18 @@ const Study = (() => {
         <small>${esc(S.examDate)} · 今天 ${md(t)} 周${WEEK[SRS.dow(t)]}</small></div>
       ${n ? `<div class="streak" title="连续学习天数">🔥 连续 ${n} 天</div>` : ""}</div>`;
   }
-  /* 首页「今天」卡片：顶上一行按今天的复习量分三档（SRS.loadTier），告诉你今天怎么做；四步：早上复习（必做 / 到期积压两行）、学新（档位高时少学）、途中看、睡前巩固 */
-  const TIER = {easy: ["🟢", "今天轻松"], busy: ["🟡", "复习偏多"], heavy: ["🔴", "积压太多"]};
+  /* 今天的复习安排（首页「今天」卡片和下面的积压提示框共用）：dueStat 的必做 / 其余、总量 L、档位（SRS.loadTier），
+     mT / rT 今天的必做 / 其余总数（已做的 + 还剩的，加起来是 L），over 拖过期的、oldest 最早拖了几天 */
+  function todayPlan() {
+    const t = T(), ds = dueStat(), {must, rest, lg} = ds;
+    const mT = must.length + (lg.mv || 0), rT = rest.length + Math.max(0, (lg.dv || 0) - (lg.mv || 0));
+    const over = rest.filter(x => x.card.d < t), oldest = over.length ? SRS.diff(t, over[0].card.d) : 0;
+    return {...ds, t, left: capLeft(), mT, rT, over, oldest};
+  }
+  /* 首页「今天」卡片四步：早上复习（必做 / 到期积压两行）、学新（档位高时少学）、途中看、睡前巩固；今天怎么安排写在下面的积压提示框 */
   function modToday() {
     const t = T(), weekend = SRS.dow(t) === 0;   // 周日是复习日
-    const ds = dueStat(), {must, rest, lg, L, tier} = ds, left = capLeft();
-    const mT = must.length + (lg.mv || 0), rT = rest.length + Math.max(0, (lg.dv || 0) - (lg.mv || 0));   // 今天的必做 / 其余总数（已做的 + 还剩的），加起来是 L
-    const over = rest.filter(x => x.card.d < t), oldest = over.length ? SRS.diff(t, over[0].card.d) : 0;
-    const la = lastActive(), gap = la ? SRS.diff(t, la) : 0;
-    const leave = tier === "heavy" || (gap >= 3 && (over.length || must.some(x => x.card.d < t)));   // 积压太多或连续 3 天没学：可以整体顺延（请假）
-    const fc = tier === "heavy" ? SRS.forecast(liveCards().map(x => x.card), t, cap(), left) : 0;
-    const how = tier === "easy" ? (L ? "复习做完照常学新" : "今天没有要复习的词，照常学新")
-      : tier === "busy" ? "先把复习做完，学新今天最多 1 群"
-      : `今天不学新词，按每天 ${cap()} 个，${!fc ? "今天该做的已经做完" : fc === 1 ? "预计今天清完" : isFinite(fc) ? `预计 ${fc} 天清完` : "短期内清不完，考虑请假顺延"}`;
-    const stat = `<div class="tstat ${tier}"><span class="tl">${TIER[tier][0]} <b>${TIER[tier][1]}</b>${L ? `（必做 ${mT} + 到期 / 积压 ${rT} = ${L} 个）` : ""}：${how}</span>
-      ${leave ? `<wa-button size="small" appearance="outlined" id="leaveBtn" data-gap="${Math.max(1, gap - 1)}">我请假了，整体往后顺延…</wa-button>` : ""}</div>`;
+    const {must, rest, L, tier, left, mT, rT, oldest} = todayPlan();
     const todays = inLearnRange(t, t), groups = learnMarks().filter(([, d]) => d === t).length;
     const nv = todays.filter(x => x.vocab).length, nb = todays.length - nv, plusV = nv ? ` + 生词 ${nv} 个` : "";
     const ready = BOOK.parts.flatMap(p => p.units.flatMap(u => u.lessons)).filter(l => l.ready);
@@ -392,7 +389,23 @@ const Study = (() => {
     const s4 = step(nightDone, 4, "睡前巩固", todays.length ? (nightDone ? "今天学的都测过一遍了" : `今天学的 ${todays.length} 个词测一遍（学习记录里勾的、生词也在内）`) : "今天还没有新学的词",
       todays.length ? btn("#/drill/today", go("today", nightDone ? "再来" : "开始"), nightDone && !progGet("today") ? undefined : 'variant="brand"') : "");
     return `<wa-card class="mod today"><div slot="header" class="mh"><b>今天</b><a href="#/drill">自由抽查 →</a></div>
-      ${stat}<ol class="steps4">${s1}${s2}${s3}${s4}</ol></wa-card>`;
+      <ol class="steps4">${s1}${s2}${s3}${s4}</ol></wa-card>`;
+  }
+  /* 积压提示框：复习偏多 / 积压太多（档位不是 easy），或连续 3 天没学、还有拖过期的才出现，说清今天怎么安排；
+     积压太多或连续 3 天没学时带「请假顺延」按钮 */
+  function modBacklog() {
+    const {t, must, over, oldest, L, tier, left, mT, rT} = todayPlan();
+    const la = lastActive(), gap = la ? SRS.diff(t, la) : 0;
+    const leave = tier === "heavy" || (gap >= 3 && (over.length || must.some(x => x.card.d < t)));
+    if (tier === "easy" && !leave) return "";
+    const fc = tier === "heavy" ? SRS.forecast(liveCards().map(x => x.card), t, cap(), left) : 0;
+    const when = !fc ? "，今天该做的已经做完" : fc === 1 ? "，预计今天清完" : isFinite(fc) ? `，预计 ${fc} 天清完` : "，短期内清不完，可以考虑请假顺延";
+    const head = tier === "easy" ? `<b>积压了 ${over.length} 个词</b>` : `<b>${tier === "heavy" ? "积压太多" : "复习偏多"}：今天要复习 ${L} 个词</b>（必做 ${mT} + 到期 / 积压 ${rT}）`;
+    const how = tier === "heavy" ? `今天先不学新词，把旧词清一清；必做的全部做完，其余每天最多 ${cap()} 个${when}。`
+      : tier === "busy" ? `先把复习做完，学新今天最多 1 群；必做的全部做完，其余每天最多 ${cap()} 个，剩下的会自动排到后面几天。`
+      : `你有 ${gap} 天没学了；必做的全部做完，其余每天最多 ${cap()} 个，剩下的会自动排到后面几天。`;
+    return `<wa-callout variant="warning" class="mod">${head}${oldest ? `，最早的拖了 ${oldest} 天` : ""}。
+      ${how}${leave ? `<div class="ops"><wa-button size="small" id="leaveBtn" data-gap="${Math.max(1, gap - 1)}">我请假了，整体往后顺延…</wa-button></div>` : ""}</wa-callout>`;
   }
   /* 最近一次有学习动作的日期（评过分、记过词群、加过生词）：首页判断连续几天没学 */
   function lastActive() {
@@ -449,7 +462,7 @@ const Study = (() => {
       <div class="lvlegend">${order.map(i => `<a href="#/list/lv:${i}">${lvDot(i)}${LV_NAME[i]} <b>${n[i]}</b></a>`).join("")}</div>
       <p class="note">按每个词第一遍作答算：生疏 = 最近答错；掌握要能看中文想出英文；牢记要拼得出或手动「斩」过。点一档看具体的词</p></wa-card>`;
   }
-  const MODULES = [modHero, modToday, modMastery, modWeek, modLinks, modUnits];   // 原来的橙色积压框（modBacklog）2026-10-20 并进了「今天」卡片
+  const MODULES = [modHero, modToday, modBacklog, modMastery, modWeek, modLinks, modUnits];
 
   function renderHome() {
     setHead("首页");
