@@ -326,7 +326,8 @@ const Study = (() => {
   const lvDot = n => `<span class="lvdot${n ? "" : " hollow"}" style="--c:var(--lv${n})" title="熟练度：${LV_NAME[n]}"></span>`;
   const btn = (href, text, attrs = 'appearance="filled"') => `<wa-button size="small" href="${href}" ${attrs}>${text}</wa-button>`;   // 默认浅底，主按钮传 variant="brand"
   const loadFail = err => { view().innerHTML = `<p class="empty">加载失败：${esc(err.message)}<br>检查网络后 <a href="javascript:location.reload()">重新加载</a></p>`; };
-  function setHead(title) { $("#crumb").textContent = title; document.title = title + " · 四级词汇"; }
+  const HOME_TITLE = document.title;   // 首页用 index.html 里写给搜索引擎的完整标题
+  function setHead(title) { $("#crumb").textContent = title; document.title = title === "首页" ? HOME_TITLE : title + " · 四级词汇"; }
 
   /* ---------- 首页：一个个板块，按顺序画；以后加功能就往 MODULES 里加一项 ---------- */
   function streak() {
@@ -480,10 +481,11 @@ const Study = (() => {
       <p class="note">按每个词第一遍作答算：生疏 = 最近答错；掌握要能看中文想出英文；牢记要拼得出或手动「斩」过。点一档看具体的词</p></wa-card>`;
   }
   const MODULES = [modHero, modToday, modBacklog, modMastery, modWeek, modLinks, modUnits];
+  const FOOT = `<p class="foot">内容取自《英语四级 · 你还在背单词吗》，仅供个人学习，非官方。· <a href="https://github.com/Owenwoow/cet4-vocab-courseware" target="_blank" rel="noopener">GitHub 项目</a></p>`;
 
   function renderHome() {
     setHead("首页");
-    view().innerHTML = `<div class="home">${MODULES.map(f => f()).join("")}</div>`;
+    view().innerHTML = `<div class="home">${MODULES.map(f => f()).join("")}</div>` + FOOT;
     const nx = nextGroups(1)[0];
     if (nx && !counts.has(nx.key)) fillCounts([nx.lid]);   // 「下一群」的词数
   }
