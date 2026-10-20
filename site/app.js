@@ -768,7 +768,7 @@ function renderSettings() {
       <div class="row"><span><b>考试日期</b><small>首页倒计时用</small></span><input type="date" data-set="examDate" value="${esc(S.examDate)}"></div>
       <div class="row"><span><b>每天复习上限</b><small>昨天学的等必做的词不算在内；其余到期的超过这个数，间隔短的先做，多出来的排到后面几天</small></span>
         ${seg("dailyCap", [[80, "80"], [120, "120"], [200, "200"]])}</div>
-      <div class="row"><span><b>「今天到期」每轮最多</b><small>一轮做完可以再来一轮；仍受每天复习上限约束</small></span>
+      <div class="row"><span><b>「今天到期」每轮最多</b><small>一轮做完可以再来一轮；必做的词先出、不受每天复习上限，其余仍受上限约束</small></span>
         ${seg("roundSize", [[15, "15"], [25, "25"], [40, "40"], [0, "不限"]])}</div>
       <div class="row"><span><b>出题方式</b><small>智能出题按熟练度出选择题、例句、拼写；翻卡自评是看英文想意思，翻开后自己打分。巩固页上的同一个开关</small></span>
         ${seg("drillMode", [["quiz", "智能出题"], ["flip", "翻卡自评"]])}</div>
