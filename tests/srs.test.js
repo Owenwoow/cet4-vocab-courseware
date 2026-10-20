@@ -262,7 +262,10 @@ test("乱序：是原列表的重排，同组尽量不相邻，同一个 seed �
   assert.equal(SRS.shuffleSpread([{g: "A"}, {g: "A"}, {g: "A"}], x => x.g).length, 3);
 });
 
-test("本轮顺序：拖过的先，熟练度低的先，复习不到 3 次按课本顺序，3 次以上乱序", () => {
+/* 2026-10-20 规则改了（见 docs/plans/2026-10-20-morning-review.md）：原来是「拖过的先」，所有拖过的排在今天到期的前面；
+   现在还没做过第一次复习的（s=0）必做、排最前，其余按计划间隔分段、段内才是拖过的先。
+   red 是 s=0 的卡（昨天忘了重来），原来排在拖过的 late 后面，现在是必做、排第一 */
+test("本轮顺序：必做在前；同一段里拖过的先、熟练度低的先，复习不到 3 次按课本顺序，3 次以上乱序", () => {
   const it = (word, order, c) => ({word, order, card: card({k: "u01-l01", d: WED, ...c})});
   const items = [
     it("late", 9, {d: MON, n: 1, h: "g", s: 1}),
@@ -276,9 +279,98 @@ test("本轮顺序：拖过的先，熟练度低的先，复习不到 3 次按�
   ];
   const q = SRS.queue(items, WED).map(x => x.word);
   assert.equal(q.length, 7);
-  assert.deepEqual(q.slice(0, 4), ["late", "red", "b1", "b2"]);
+  assert.deepEqual(q.slice(0, 4), ["red", "late", "b1", "b2"]);
   assert.deepEqual(q.slice(4).sort(), ["x1", "x2", "x3"]);
   assert.equal(q[5], "x3");                                                   // 同词群的 x1、x2 被隔开
+});
+
+/* ---------- 早上复习：必做、按计划间隔分段、三档、预计几天清完（2026-10-20） ---------- */
+test("必做：到期且还没做过第一次复习（s=0）", () => {
+  assert.ok(SRS.isMust(card({}), TUE));                                     // 昨天学的
+  assert.ok(SRS.isMust(card({d: MON, a: "2026-10-04"}), WED));               // 之前拖下没做第一次的
+  assert.ok(SRS.isMust(card({a: MON, l: 1, h: "gf", n: 2}), TUE));          // 昨天忘了重来的
+  assert.ok(SRS.isMust({...SRS.newCard(MON), w: "take away", at: MON}, TUE)); // 生词本昨天加的
+  assert.ok(SRS.isMust({a: MON, d: TUE}, TUE));                              // 没有 s 的旧卡按 0
+  assert.ok(!SRS.isMust(card({}), MON));                                    // 没到期
+  assert.ok(!SRS.isMust(card({s: 1, d: TUE}), TUE));
+  assert.ok(!SRS.isMust(card({s: 4, d: MON}), WED));
+});
+
+test("必做的类型：昨天学的 / 昨天忘的 / 补第一次复习；其余拖过期 / 今天到期；没到期的 null", () => {
+  assert.equal(SRS.mustKind(card({a: MON, d: TUE}), TUE), "new");
+  assert.equal(SRS.mustKind({...SRS.newCard(MON), w: "abandon"}, TUE), "new");            // 生词本昨天加的
+  assert.equal(SRS.mustKind(card({a: MON, d: TUE, l: 1, h: "gf"}), TUE), "lapse");
+  assert.equal(SRS.mustKind(card({a: MON, d: TUE, l: 3}), TUE), "lapse");
+  assert.equal(SRS.mustKind(card({a: MON, d: TUE}), WED), "late");                         // 周一学的拖到周三才做第一次
+  assert.equal(SRS.mustKind(card({a: MON, d: THU, h: "m", v: 1}), THU), "late");            // 混淆后两天再来，站数还是 0
+  assert.equal(SRS.mustKind(card({a: MON, s: 2, d: TUE}), WED), "over");
+  assert.equal(SRS.mustKind(card({a: MON, s: 2, d: WED}), WED), "due");
+  assert.equal(SRS.mustKind(card({a: MON, s: 0, d: THU}), WED), null);
+  assert.equal(SRS.mustKind(card({a: MON, s: 2, d: THU}), WED), null);
+});
+
+test("计划间隔分段：s=1～2 → 1；s=3 或熟练度≤2 → 2；s≥4 按熟练度 3 / 4 / 5", () => {
+  assert.equal(SRS.band(card({s: 1, n: 1, h: "g"})), 1);
+  assert.equal(SRS.band(card({s: 2, n: 2, h: "gg"})), 1);
+  assert.equal(SRS.band(card({s: 3, n: 3, h: "ggg", q: 3})), 2);
+  assert.equal(SRS.band(card({s: 4, n: 4, h: "gm", q: 2})), 2);              // 熟练度 2
+  assert.equal(SRS.band(card({s: 4, n: 4, h: "ggf", l: 1})), 2);            // 熟练度 1
+  assert.equal(SRS.band(card({s: 4, n: 4, h: "ggg", q: 1})), 3);
+  assert.equal(SRS.band(card({s: 5, n: 5, h: "ggg", q: 2})), 4);
+  assert.equal(SRS.band(card({s: 5, n: 6, h: "gggg", q: 3})), 5);
+  assert.equal(SRS.band(card({s: 4, z: 1})), 5);                              // 斩过的
+  assert.equal(SRS.band(card({s: 4, n: 5, h: "gggg", q: 2}), {off: [T.SPELL]}), 5);   // 关掉拼写：熟练度按放宽的算
+});
+
+test("本轮顺序：必做全部在前，其余间隔短的段在前，同一段里拖过的先", () => {
+  const t = "2026-10-20", it = (word, order, c) => ({word, order, card: card({k: "u01-l01", a: "2026-09-01", d: t, ...c})});
+  const old4 = {s: 5, n: 5, h: "ggg", q: 2};                                 // 熟练度 4，21 天
+  const items = [
+    it("old4late", 1, {...old4, d: "2026-10-17"}),                          // 拖了 3 天的老词
+    it("old4", 2, old4),
+    it("s1", 9, {s: 1, n: 1, h: "g"}),                                      // 今天到期的 s=1
+    it("s2late", 8, {s: 2, n: 2, h: "gg", d: "2026-10-18"}),
+    it("s3", 7, {s: 3, n: 3, h: "ggg"}),                                   // 熟练度 3，但 s=3 算第 2 段
+    it("old5", 3, {s: 6, n: 6, h: "gggg", q: 3}),
+    it("old3late", 4, {s: 4, n: 4, h: "ggg", q: 1, d: "2026-10-15"}),
+    it("mustLate", 20, {a: "2026-10-16", d: "2026-10-17"}),                 // 拖下没做第一次的
+    it("mustNew", 10, {a: "2026-10-19"}),                                   // 昨天学的
+    it("mustLapse", 5, {a: "2026-10-19", l: 1, h: "gf", n: 2}),             // 昨天忘的（熟练度 1）
+    it("later", 0, {s: 1, n: 1, h: "g", d: "2026-10-21"}),
+  ];
+  const q = SRS.queue(items, t).map(x => x.word);
+  assert.deepEqual(q, ["mustNew", "mustLate", "mustLapse", "s2late", "s1", "s3", "old3late", "old4late", "old4", "old5"]);
+  assert.ok(q.indexOf("s1") < q.indexOf("old4late"));                      // 今天到期的 s=1 排在拖了 3 天的 4 级老词前面
+});
+
+test("本轮顺序：必做内部不分昨天的和更早拖下的，熟练度低的先、课本顺序", () => {
+  const t = "2026-10-20", it = (word, order, c) => ({word, order, card: card({k: "u01-l01", d: t, ...c})});
+  const q = SRS.queue([it("b", 2, {a: "2026-10-19"}), it("a", 1, {a: "2026-10-12", d: "2026-10-13"}), it("f", 3, {a: "2026-10-19", h: "f"})], t);
+  assert.deepEqual(q.map(x => x.word), ["a", "b", "f"]);                     // 0 级的按课本顺序，忘过（1 级）的在后
+});
+
+test("复习量三档：≤ 上限一半照常、≤ 上限最多 1 群、超过上限不学新词", () => {
+  assert.equal(SRS.loadTier(0, 120), "easy");
+  assert.equal(SRS.loadTier(60, 120), "easy");
+  assert.equal(SRS.loadTier(61, 120), "busy");
+  assert.equal(SRS.loadTier(120, 120), "busy");
+  assert.equal(SRS.loadTier(121, 120), "heavy");
+  assert.equal(SRS.loadTier(40, 80), "easy");
+  assert.equal(SRS.loadTier(41, 80), "busy");
+  assert.equal(SRS.loadTier(81, 80), "heavy");
+});
+
+test("预计几天清完：必做全做，其余每天最多上限个；不算以后新学的", () => {
+  const t = "2026-10-20", mk = (n, d, s = 2) => Array.from({length: n}, () => ({a: "2026-10-01", s, d}));
+  const daily = Array.from({length: 10}, (_, i) => mk(30, SRS.add(t, i + 1), 1)).flat();   // 之后每天到期 30 个
+  assert.equal(SRS.forecast([...mk(150, "2026-10-17"), ...daily], t, 120), 2);   // 150-120=30；明天 30+30=60 → 清完
+  assert.equal(SRS.forecast([...mk(150, "2026-10-17"), ...daily], t, 80), 3);    // 70 → 100-80=20 → 50 清完
+  assert.equal(SRS.forecast([...mk(150, "2026-10-17"), ...daily], t, 120, 20), 3);   // 今天只剩 20 个上限：130 → 40 → 70 清完
+  assert.equal(SRS.forecast([...mk(200, t, 0), ...mk(50, t)], t, 120), 1);       // 必做不占上限
+  assert.equal(SRS.forecast(mk(30, "2026-10-19", 0), t, 120), 1);
+  assert.equal(SRS.forecast([...mk(240, "2026-10-17"), ...mk(100, SRS.add(t, 1), 0)], t, 120), 2);   // 明天到期的必做也当天全做
+  assert.equal(SRS.forecast(mk(30, SRS.add(t, 1)), t, 120), 0);                  // 今天没有到期的
+  assert.equal(SRS.forecast([], t, 120), 0);
 });
 
 test("形近：编辑距离小或前 4 个字母相同", () => {
