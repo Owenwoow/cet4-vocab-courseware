@@ -1,7 +1,11 @@
 /* 导出 / 导入备份（纯函数，不碰页面和存储；浏览器里是全局 Backup，Node 里 require 进来跑单元测试）
 
-   备份文件 = {app: "cet4-vocab", v: 1, at 导出时刻, origin 网址, d: Sync.dump()}，d 的格式同 sync.js：{键: [值, 修改时间]}。
+   备份文件 = {app: "cet4-vocab", v: 1, at 导出时刻, origin 网址, 说明, d: Sync.dump()}，d 的格式同 sync.js：{键: [值, 修改时间]}。
    云同步 token 不在 d 里（sync.js 单独存），所以文件里也没有。
+   文件长相（Backup.text 生成，「导出」和覆盖导入前自动下载的「导入前」备份都走它）：还是一份 JSON，只是排得方便人直接打开看——
+     外层 app、v、at、origin、说明、d 每个字段一行；「说明」是中文的（导出时间、来自、每类条数、怎么导入、字段含义），每项一行，导入时忽略；
+     d 每条记录一行（键和值同一行），按下面的类别顺序排，每类里没删的在前、已删除（值为 0，只有已会 / 学习记录和复习卡 / 生词本这三类算）的在后，各自按键名排。
+   格式没变，所以新旧备份（旧的是一整行、没有说明）parse 都认，导入代码不用区分。
 
    导入按键前缀分类，可勾选类别：
      已会 known: / 设置 set: / 学习记录和复习卡 learn: srs: log:（三者绑在一起，拆开会对不上）/ 生词本 vocab: /
@@ -67,8 +71,70 @@ const Backup = (() => {
     return out;
   }
 
-  /* 生成备份文件内容 */
+  /* 生成备份文件内容（对象；真正写进文件的文字用 text） */
   const make = (d, at, origin) => ({app: APP, v: V, at, origin, d});
+
+  /* 备份文件里「说明 → 字段含义」：d 里各种键的意思。和 study.js 文件头的说明保持一致，改字段时两处一起改 */
+  const FIELDS = {
+    "learn:<课id>:g<词群号>": "学的日期",
+    "srs:<词>": "复习卡：a 学习日、s 已过几站、d 下次复习日、l 忘过几次、r 最近一次结果（g 记得 / m 模糊 / f 忘了）、n 复习次数、"
+      + "v 记进熟练度的次数、t 最近复习日、h 最近 6 次第一遍结果、q 答对过的最难题型（0 看词选义 / 1 听音 / 2 例句或看义选词 / 3 拼写）、"
+      + "z 斩、p 学新整群过关的日期、cf 易混词、k 课id、g 词群号、f 火苗、o 词条序号",
+    "log:<日期>": "当天评分次数 g / m / f、dv 当天复习的到期词数、mv 当天做的必做数（昨天学的等还没做第一次复习的词）",
+    "vocab:<原形>": "生词本：w 原形、x 点到的写法、m 释义、p 音标、k 出处课、e 出处词条、at 加入日期、o 加入时刻、bk 书中位置、ph 例句词组，另带复习卡字段",
+    "known:<词>": "1 已会",
+    "set:<名字>": "设置",
+    "last": "上次读的课",
+    "lw:<课id>、pos:<课id>": "阅读位置",
+    [BY_ID.ui.keys.join("、")]: "界面状态",
+    "drill:<范围>": "巩固做到一半的进度（不导入）",
+  };
+  const HOWTO = "设置页 → 数据 → 导入…，选这个文件；导入时只读 app、v、d，这段说明会被忽略。"
+    + "d 里每条是 [值, 修改时间（毫秒）]；已会、学习记录和复习卡、生词本里值为 0 表示已删除（合并时靠它把删除同步过去），设置里的 0 就是 0。";
+
+  /* 键名比较：数字按大小比（g2 排在 g10 前），其余按字符，不看系统语言 */
+  const cmp = (a, b) => (a < b ? -1 : a > b ? 1 : 0);
+  function byName(a, b) {
+    const x = a.split(/(\d+)/), y = b.split(/(\d+)/);   // 奇数位是数字段
+    for (let i = 0; i < x.length && i < y.length; i++) {
+      const c = i % 2 ? cmp(+x[i], +y[i]) || cmp(x[i], y[i]) : cmp(x[i], y[i]);
+      if (c) return c;
+    }
+    return x.length - y.length;
+  }
+  /* 在文件里排哪一类（drill: 不导入但照样导出，排在其他里）和类里的先后（先精确键，再按 prefixes 的顺序：learn → srs → log） */
+  const slot = k => CATS.findIndex(c => c.id === (catOf(k) || "other"));
+  function sub(k) {
+    const c = CATS[slot(k)];
+    if ((c.keys || []).includes(k)) return 0;
+    return (c.prefixes || []).findIndex(p => k.startsWith(p)) + 1;
+  }
+
+  /* 本地时间 YYYY-MM-DD HH:MM（备份文件「说明」里的导出时间） */
+  const stamp = t => { const x = new Date(t), p = n => String(n).padStart(2, "0"); return `${day(t)} ${p(x.getHours())}:${p(x.getMinutes())}`; };
+
+  /* 生成备份文件的文字：合法 JSON，但排成人看得懂的样子（排版规则见文件开头）。值一律 JSON.stringify，不手拼转义 */
+  function text(d, at, origin = "") {
+    const q = JSON.stringify, n = summary(d);
+    const rows = Object.keys(d)
+      .map(k => ({k, c: slot(k), dead: isTomb(k, d[k][0]) ? 1 : 0, s: sub(k)}))
+      .sort((a, b) => a.c - b.c || a.dead - b.dead || a.s - b.s || byName(a.k, b.k))
+      .map(({k}) => `${q(k)}: [${q(d[k][0]) ?? "null"}, ${q(d[k][1])}]`);
+    const join = (lines, indent) => lines.map((l, i) => indent + l + (i < lines.length - 1 ? "," : "")).join("\n");
+    const meta = [
+      `"导出时间": ${q(stamp(at))}`,
+      `"来自": ${q(origin)}`,
+      `"每类条数": {${CATS.map(c => `${q(c.name)}: ${n[c.id]}`).join(", ")}}`,
+      `"怎么导入": ${q(HOWTO)}`,
+      `"字段含义": {\n${join(Object.entries(FIELDS).map(([k, v]) => `${q(k)}: ${q(v)}`), "    ")}\n  }`,
+    ];
+    const outer = [
+      `"app": ${q(APP)}`, `"v": ${V}`, `"at": ${q(at)}`, `"origin": ${q(origin)}`,
+      `"说明": {\n${join(meta, "  ")}\n}`,
+      `"d": ${rows.length ? `{\n${join(rows, "  ")}\n}` : "{}"}`,
+    ];
+    return `{\n${outer.join(",\n")}\n}\n`;
+  }
 
   /* 解析备份文件文字：格式不对返回 null */
   function parse(text) {
@@ -85,6 +151,6 @@ const Backup = (() => {
   /* 文件名里的日期：本地时间 YYYY-MM-DD */
   const day = t => { const x = new Date(t); return `${x.getFullYear()}-${String(x.getMonth() + 1).padStart(2, "0")}-${String(x.getDate()).padStart(2, "0")}`; };
 
-  return {CATS, catOf, summary, plan, make, parse, day};
+  return {CATS, catOf, summary, plan, make, text, parse, day, stamp};
 })();
 if (typeof module === "object" && module.exports) module.exports = Backup;
