@@ -39,7 +39,7 @@
 ## 项目约束
 
 - 内容与书上逐字一致；书外补充（`site/data/gloss/`）在页面上标「补充」
-- 仓库和网站是公开的（公开仓库才有免费 Actions 额度），但只给自己用：页面带 `noindex`，`site/robots.txt` 禁止所有爬虫，不在任何地方放链接
+- 仓库和网站是公开的，允许搜索引擎收录（2026-10-20 起，见 `docs/plans/2026-10-20-seo.md`）：SEO 只做首页级（`index.html` 头部的 description / OG / 结构化数据 / `<noscript>` 简介，`site/robots.txt` 放开并指向 `site/sitemap.xml`），**不为每课生成静态页**，免得原书内容被成段收录；网页顶栏和页脚有回 GitHub 项目的链接，README 截图在 `docs/images/`
 - 原书扫描页（`site/data/pages/`）不进仓库、不部署，「看原书」只在本地版出现（`book.json` 的 `hasPages`）
 - 书页码 = PDF 页序号(0 起) − 9（`pipeline/config.py`）
 - 每个 Lesson 的词条序号从 01 重新开始；词群编号在整个 Unit 内连续
