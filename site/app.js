@@ -766,7 +766,7 @@ function renderSettings() {
     </section>
     <section class="panel"><h2>复习</h2>
       <div class="row"><span><b>考试日期</b><small>首页倒计时用</small></span><input type="date" data-set="examDate" value="${esc(S.examDate)}"></div>
-      <div class="row"><span><b>每天复习上限</b><small>到期的词超过这个数，多出来的按拖得久、火苗多优先，自动排到后面几天</small></span>
+      <div class="row"><span><b>每天复习上限</b><small>昨天学的等必做的词不算在内；其余到期的超过这个数，间隔短的先做，多出来的排到后面几天</small></span>
         ${seg("dailyCap", [[80, "80"], [120, "120"], [200, "200"]])}</div>
       <div class="row"><span><b>「今天到期」每轮最多</b><small>一轮做完可以再来一轮；仍受每天复习上限约束</small></span>
         ${seg("roundSize", [[15, "15"], [25, "25"], [40, "40"], [0, "不限"]])}</div>

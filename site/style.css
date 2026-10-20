@@ -411,6 +411,16 @@ body.vp-open{padding-bottom:calc(min(460px,100vw - 32px) * 9 / 16 + 64px)}
 .steps4 .sd small{color:var(--sub);font-size:13px}
 .steps4 li.done b{color:var(--sub)}
 .steps4 wa-button{flex:none}
+/* 「今天」卡片顶上的状态行：按今天的复习量分三档（🟢 / 🟡 / 🔴），请假顺延按钮也放这里 */
+.tstat{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin:0 0 8px;padding:8px 12px;border-radius:10px;font-size:14px;line-height:1.5;background:var(--ok-soft)}
+.tstat.busy{background:color-mix(in srgb,#eab308 20%,var(--card))}
+.tstat.heavy{background:var(--pink-soft)}
+.tstat .tl{flex:1 1 220px;min-width:0}
+.tstat wa-button{flex:none}
+/* 早上复习的两行：必做 / 到期积压，做完的打勾变绿 */
+.steps4 .sd .rk{font-weight:600}
+.steps4 li:not(.done) .sd .rk{color:var(--ink)}
+.steps4 .sd .ck{color:var(--ok)}
 .weekstrip{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
 .weekstrip .day{display:flex;flex-direction:column;align-items:center;padding:6px 0;border-radius:10px;background:var(--bg);color:var(--ink);text-decoration:none;min-width:0}
 .weekstrip .day.we{background:var(--blue-soft)}
@@ -502,6 +512,10 @@ body.vp-open{padding-bottom:calc(min(460px,100vw - 32px) * 9 / 16 + 64px)}
 .tally{display:flex;justify-content:center;gap:18px;font-size:15px;margin:18px 0}
 .tally b{font-size:26px;display:block}
 .tally .g b{color:var(--ok)}.tally .m b{color:#ca8a04}.tally .f b{color:var(--pink)}
+/* 早上复习结束页：按类型分行统计 */
+.ktally{display:inline-flex;flex-direction:column;gap:2px;list-style:none;margin:-6px auto 12px;padding:8px 14px;border-radius:10px;background:var(--bg);font-size:14px;text-align:left}
+.ktally b{font-weight:600}
+.ktally .g{color:var(--ok)}.ktally .m{color:#ca8a04}.ktally .f{color:var(--pink)}
 .drill.end .ops{justify-content:center}
 
 /* 周总结 */
