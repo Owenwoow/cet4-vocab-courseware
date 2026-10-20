@@ -806,7 +806,7 @@ function renderSettings() {
 /* ---------- 设置页：导出 / 导入备份（分类和合并 / 覆盖规则在 backup.js） ---------- */
 let bkPending = null;   // 选好文件、等确认的导入：{name, at, origin, d, n 每类条数, cats 勾选的类别, mode}
 function bkDownload(suffix) {
-  const now = Date.now(), body = JSON.stringify(Backup.make(Sync.dump(), now, location.origin));
+  const now = Date.now(), body = Backup.text(Sync.dump(), now, location.origin);
   const a = document.createElement("a");
   a.href = URL.createObjectURL(new Blob([body], {type: "application/json"}));
   a.download = `cet4-backup-${Backup.day(now)}${suffix}.json`;
