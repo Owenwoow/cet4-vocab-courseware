@@ -12,6 +12,13 @@
    还没到期就复习（途中看、睡前、周总结多刷）：记得 / 模糊不改计划也不记进熟练度，忘了照样重来。
    考前封顶：12-05 前复习、到期日又晚于 12-09 的，改到 12-05～12-09 之间，按词分散到各天；窗口里及之后复习的不封顶。
 
+   早上复习的顺序和每天上限（2026-10-20 改，见 docs/plans/2026-10-20-morning-review.md；站点和间隔不变）：
+     必做（isMust）= 到期且还没做过第一次复习（s=0：昨天学的、昨天忘的、之前拖下没做第一次的）：全部排最前，不占每天上限；
+     其余按计划间隔从短到长分 5 段（band：s=1～2 / s=3 或 s≥4 且熟练度≤2 / s≥4 且 3 级 / 4 级 / 5 级），
+       段内拖过的先、熟练度低的先；每天上限只管这部分，做不完的老词往后排（同样拖一天，新的掉得多、老的几乎不掉）。
+     今天的总复习量 L（还到期的 + 今天已做的到期复习）分三档（loadTier）：≤ 上限一半 照常学新 / ≤ 上限 学新最多 1 群 / > 上限 不学新词；
+     forecast 估积压第几天清完（必做全做、其余每天最多上限个，不算以后新学的）。
+
    熟练度（level，0～5）：每轮只记第一遍作答，h 存最近 6 次（g 记得 / m 模糊 / f 忘了），
    q 是第一遍答对过的最难题型（0 看词选义 / 1 听音选义 / 2 例句挖空、看中文选英文 / 3 拼写），z=1 是手动「斩」。
    n 是总作答轮数（含提前复习），v 是记进熟练度的轮数（到期复习 + 忘了）；熟练度和出题只看 v，提前复习不会让题型跳级。
@@ -145,7 +152,7 @@ const SRS = (() => {
   /* 难词本：最近一次是忘了，或忘过不止一次，或还有没分清的易混词（cf） */
   const isHard = c => c.r === "f" || (c.l || 0) >= 2 || !!(c.cf && c.cf.length);
 
-  /* 今天要复习的：拖得最久的先来，同一天到期的火苗多的先来，再按课本顺序 */
+  /* 今天到期的：拖得最久的先来，同一天到期的火苗多的先来，再按课本顺序（首页数数、找拖得最久的用；出题顺序见 queue） */
   function dueList(items, t) {
     return items.filter(x => isDue(x.card, t))
       .sort((x, y) => (x.card.d < y.card.d ? -1 : x.card.d > y.card.d ? 1 : 0) || (y.freq || 0) - (x.freq || 0) || (x.order || 0) - (y.order || 0));
@@ -213,24 +220,70 @@ const SRS = (() => {
     return out;
   }
 
-  /* 本轮出题顺序：拖过的先、今天到期的后；同一段里熟练度低的先；
-     同一熟练度里，正式复习不到 3 次的按课本顺序（保留词群联想），3 次及以上的乱序、同词群不相邻、不同词群的形近词相邻 */
+  /* 必做：到期、还没做过第一次复习（s=0）——新学的、生词本新加的、忘了从头再来的、之前拖下没做第一次复习的。
+     这几种都只记了 1 天左右，拖一天损失最大：排最前、不占每天上限 */
+  const isMust = (c, t) => isDue(c, t) && !(c.s > 0);
+  /* 到期的词算哪一类（早上复习结束页按类型统计用，要在评分前定）：
+     必做 → new 昨天学的（学习日 ≥ 昨天、没忘过）/ lapse 昨天忘的（学习日 ≥ 昨天、忘过）/ late 补第一次复习（学习日早于昨天）；
+     其余 → over 拖过期 / due 今天到期；没到期的返回 null */
+  function mustKind(c, t) {
+    if (!isDue(c, t)) return null;
+    if (!isMust(c, t)) return c.d < t ? "over" : "due";
+    return c.a < add(t, -1) ? "late" : (c.l || 0) >= 1 ? "lapse" : "new";
+  }
+  /* 非必做的按计划间隔分段，间隔短的段在前（同样拖一天，间隔短的忘得多）：
+     1 段 s=1～2（约 1～5 天）；2 段 s=3，或 s≥4 且熟练度≤2（约 7～13 天）；3 / 4 / 5 段 s≥4 且熟练度 3 / 4 / 5（14 / 21 / 30 天） */
+  function band(c, opt = {}) {
+    if (!(c.s > 2)) return 1;
+    if (c.s === 3) return 2;
+    const lv = level(c, opt);
+    return lv <= 2 ? 2 : lv;
+  }
+
+  /* 本轮出题顺序：必做全部在前（熟练度低的先）；其余按 band 分段、间隔短的段在前，段内拖过的先、熟练度低的先；
+     同一小段里，正式复习不到 3 次的按课本顺序（保留词群联想），3 次及以上的乱序、同词群不相邻、不同词群的形近词相邻 */
   function queue(items, t, seed = t, opt = {}) {   // opt.off：关掉的题型（熟练度按它算）
-    const grp = x => `${x.card.k}|${x.card.g}`;
-    const due = items.filter(x => isDue(x.card, t)), out = [];
-    for (const late of [true, false])
-      for (let lv = 0; lv <= 5; lv++) {
-        const seg = due.filter(x => (x.card.d < t) === late && level(x.card, {off: opt.off}) === lv);
-        out.push(...seg.filter(x => reviews(x.card) < 3).sort((x, y) => (x.order || 0) - (y.order || 0)));
-        out.push(...pairSimilar(shuffleSpread(seg.filter(x => reviews(x.card) >= 3), grp, `${seed}|${late}|${lv}`), grp));
-      }
+    const grp = x => `${x.card.k}|${x.card.g}`, off = {off: opt.off}, segs = new Map();
+    for (const x of items) {
+      const c = x.card;
+      if (!isDue(c, t)) continue;
+      const k = isMust(c, t) ? [0, 0, level(c, off)] : [band(c, off), c.d < t ? 0 : 1, level(c, off)];   // [段（0 = 必做）, 今天到期, 熟练度]
+      const id = k.join("|");
+      if (!segs.has(id)) segs.set(id, {k, list: []});
+      segs.get(id).list.push(x);
+    }
+    const out = [];
+    for (const {k, list} of [...segs.values()].sort((a, b) => a.k[0] - b.k[0] || a.k[1] - b.k[1] || a.k[2] - b.k[2])) {
+      out.push(...list.filter(x => reviews(x.card) < 3).sort((x, y) => (x.order || 0) - (y.order || 0)));
+      out.push(...pairSimilar(shuffleSpread(list.filter(x => reviews(x.card) >= 3), grp, `${seed}|${k.join("|")}`), grp));
+    }
     return out;
+  }
+
+  /* 今天的复习量分三档，线跟着每天上限走：easy ≤ 上限一半 照常学新 / busy ≤ 上限 学新最多 1 群 / heavy > 上限 不学新词。
+     L = 今天的总复习量 = 现在还到期的（含必做）+ 今天已做的到期复习数，一天里基本不变 */
+  const loadTier = (L, cap) => (L <= cap / 2 ? "easy" : L <= cap ? "busy" : "heavy");
+
+  /* 积压预计第几天清完（今天 = 第 1 天）：从今天起逐天把当天到期的放进池子，必做当天全做，其余每天最多做 cap 个（今天只剩 left 个），
+     池子清空那天是第几天；今天没有到期的返回 0。不算以后新学的词，也不算复习后重新排进来的 */
+  function forecast(cards, t, cap, left = cap) {
+    const list = cards.filter(c => c && c.d).sort((a, b) => (a.d < b.d ? -1 : a.d > b.d ? 1 : 0));
+    if (!list.length || list[0].d > t) return 0;
+    cap = Math.max(1, cap);
+    let i = 0, rest = 0, d = t;
+    for (let day = 1; day <= 3650; day++, d = add(d, 1)) {
+      for (; i < list.length && list[i].d <= d; i++) if (!isMust(list[i], d)) rest++;
+      rest -= Math.min(rest, day === 1 ? Math.max(0, left) : cap);
+      if (!rest) return day;
+    }
+    return Infinity;
   }
 
   /* 请假顺延：学习日和到期日一起后移，整条路线不变 */
   const shift = (c, n) => ({...c, a: add(c.a, n), d: add(c.d, n)});
 
   return {EXAM, TYPE, today, reviews, add, diff, dow, monday, firstSunday, secondDue, stationDue, examCap, newCard, isDue,
-    rate, chop, isHard, dueList, isPhrase, level, streak, pickType, gradeChoice, gradeSpell, editDist, similar, senseKeys, posSet, distractorTag, confAdd, confDrop, shuffleSpread, pairSimilar, queue, shift};
+    rate, chop, isHard, dueList, isPhrase, level, streak, pickType, gradeChoice, gradeSpell, editDist, similar, senseKeys, posSet, distractorTag, confAdd, confDrop, shuffleSpread, pairSimilar,
+    isMust, mustKind, band, queue, loadTier, forecast, shift};
 })();
 if (typeof module === "object" && module.exports) module.exports = SRS;
