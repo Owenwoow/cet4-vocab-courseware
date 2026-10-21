@@ -420,7 +420,6 @@ body.vp-open{padding-bottom:calc(min(460px,100vw - 32px) * 9 / 16 + 64px)}
 .steps4 .sd .ck{color:var(--ok)}
 .weekstrip{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
 .weekstrip .day{display:flex;flex-direction:column;align-items:center;padding:6px 0;border-radius:10px;background:var(--bg);color:var(--ink);text-decoration:none;min-width:0}
-.weekstrip .day.we{background:var(--blue-soft)}
 .weekstrip .day.now{outline:2px solid var(--accent)}
 .weekstrip .wd{font-size:12px;color:var(--sub)}
 .weekstrip b{font-size:17px;min-height:1.4em}

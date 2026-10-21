@@ -444,7 +444,7 @@ const Study = (() => {
   }
   function modWeek() {
     const t = T(), days = weekCounts(SRS.monday(t));
-    const cell = (x, i) => `<a class="day${x.d === t ? " now" : ""}${i === 6 ? " we" : ""}" href="#/week">
+    const cell = (x, i) => `<a class="day${x.d === t ? " now" : ""}" href="#/week">
       <span class="wd">${WEEK[(i + 1) % 7]}</span><b>${x.learned + x.vocab.length || (x.d > t ? "" : "·")}</b><small>${x.reviewed ? "复 " + x.reviewed : ""}</small></a>`;
     const sum = days.reduce((a, x) => a + x.learned + x.vocab.length, 0);
     return `<wa-card class="mod"><div slot="header" class="mh"><b>本周</b><span class="sub">新学 ${sum} 词</span><a href="#/week">周总结 →</a></div>
