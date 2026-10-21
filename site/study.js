@@ -119,7 +119,7 @@ const Study = (() => {
     const ok = new Set(learnMarks().filter(([, d]) => d >= from && d <= to).map(([k]) => k));
     return liveCards().filter(x => (x.vocab ? x.card.at >= from && x.card.at <= to : ok.has(`${x.card.k}:g${x.card.g}`)));
   }
-  const cap = () => +S.dailyCap || 120;
+  const cap = () => +S.dailyCap || 80;
   /* 设置：今天到期每轮最多几个（0 = 不限）；关掉的题型（出题、算熟练度都按它，见 srs.js）；想得久算模糊的时限倍数 */
   const roundN = () => +S.roundSize || Infinity;
   const offTypes = () => [...(S.quizListen ? [] : [SRS.TYPE.LISTEN]), ...(S.quizSpell ? [] : [SRS.TYPE.SPELL])];
@@ -358,7 +358,7 @@ const Study = (() => {
   }
   /* 首页「今天」卡片四步：早上复习（必做 / 到期积压两行）、学新（档位高时少学）、途中看、睡前巩固；今天怎么安排写在下面的积压提示框 */
   function modToday() {
-    const t = T(), weekend = SRS.dow(t) === 0;   // 周日是复习日
+    const t = T(), weekend = SRS.dow(t) === 0;   // 周日：途中看换成看本周学的词
     const {must, rest, L, tier, left, mT, rT, oDone, oldest, finished} = todayPlan();
     const todays = inLearnRange(t, t), groups = learnMarks().filter(([, d]) => d === t).length;
     const nv = todays.filter(x => x.vocab).length, nb = todays.length - nv, plusV = nv ? ` + 生词 ${nv} 个` : "";
@@ -379,7 +379,7 @@ const Study = (() => {
       : `<b class="rk">到期 / 积压 · ${rest.length} 个</b>${oldest ? `（最早拖了 ${oldest} 天）` : ""}${!left ? ` · 今天已做满 ${cap()} 个，剩下的排到后面几天`
         : `${rest.length > left ? ` · 今天先做 ${left} 个（上限 ${cap()}）` : ""}${must.length ? "" : perRound(Math.min(rest.length, left))}`}`;
     const doneLines = [ok(`今天的任务做完了：必做 ${mT} + 其余 ${oDone}`), ...(rest.length ? [`剩下 ${rest.length} 个已排到明天以后`] : [])];
-    const s1 = step(finished, 1, weekend ? "周日复习" : "早上复习",
+    const s1 = step(finished, 1, "早上复习",
       !L ? "今天没有到期的词" : finished ? doneLines : [mustLine, restLine],
       must.length || (rest.length && left) || dueHalf ? btn("#/drill/due", go("due", "开始"), 'variant="brand"') : "");
     // 学新：「学习新词」按书顺序一群一群学，学完自动记为今天学的；在电子书、视频里学完的在「学习记录」里勾上，学习新词就跳过它。
@@ -391,7 +391,7 @@ const Study = (() => {
       : tier === "busy" ? (groups ? `${learnedTxt}；复习偏多，今天学 1 群就够了` : `${learnedTxt ? learnedTxt + "；" : ""}复习偏多，今天最多 1 群 · ${nextTxt}`)
       : `${learnedTxt ? learnedTxt + "；" : ""}${nextTxt}`;
     const learnBtn = !nx ? "" : stop ? btn("#/drill/learn", groups ? "仍要再学 1 群" : "仍要学 1 群", 'appearance="outlined"') : btn("#/drill/learn", go("learn", "学习新词"), 'variant="brand"');
-    const s2 = step(groups > 0, 2, weekend ? "学新（周日可选）" : "学新", s2desc,
+    const s2 = step(groups > 0, 2, "学新", s2desc,
       `<span class="acts">${lastL ? btn(`#/${last}/cont`, `继续 U${+lastL[1]} L${+lastL[2]}`) : ""}${btn("#/log", "📝 学习记录")}${learnBtn}</span>`);
     const s3 = step(false, 3, "途中看", todays.length ? `今天的 ${todays.length} 个词，掏出手机随时过一眼` : weekend ? "看看本周学的词" : "记录今天学的之后，这里能快速浏览",
       todays.length ? btn("#/list/today", "浏览") : weekend ? btn("#/list/week", "浏览") : "");
@@ -445,10 +445,10 @@ const Study = (() => {
   function modWeek() {
     const t = T(), days = weekCounts(SRS.monday(t));
     const cell = (x, i) => `<a class="day${x.d === t ? " now" : ""}${i === 6 ? " we" : ""}" href="#/week">
-      <span class="wd">${WEEK[(i + 1) % 7]}</span><b>${x.learned + x.vocab.length || (x.d > t ? "" : "·")}</b><small>${x.reviewed ? "复 " + x.reviewed : i === 6 ? "复习" : ""}</small></a>`;
+      <span class="wd">${WEEK[(i + 1) % 7]}</span><b>${x.learned + x.vocab.length || (x.d > t ? "" : "·")}</b><small>${x.reviewed ? "复 " + x.reviewed : ""}</small></a>`;
     const sum = days.reduce((a, x) => a + x.learned + x.vocab.length, 0);
     return `<wa-card class="mod"><div slot="header" class="mh"><b>本周</b><span class="sub">新学 ${sum} 词</span><a href="#/week">周总结 →</a></div>
-      <div class="weekstrip">${days.map(cell).join("")}</div><p class="note">格子里的数字是那天新学的词数（含生词），下面是复习次数；周日是复习日</p></wa-card>`;
+      <div class="weekstrip">${days.map(cell).join("")}</div><p class="note">格子里的数字是那天新学的词数（含生词），下面是复习次数</p></wa-card>`;
   }
   function modLinks() {
     const hard = liveCards().filter(x => SRS.isHard(x.card)).length, nv = vocabCards().length;

@@ -1,20 +1,20 @@
 /* 滚动复习规则（纯函数，不碰页面和存储；浏览器里是全局 SRS，Node 里 require 进来跑单元测试）
 
-   一句话：每天早上复习「昨天的 + 上周今天的」，周日复习「本周的 + 上上周的」；之后按熟练度拉开间隔。
-   实现按词算：每张卡记 学习日 a、已过站数 s、到期日 d，所以每天学多少、哪天没学都不影响。
-     s=0 → 次日（a+1）
-     s=1 → 本周日：a+2 起第一个周日；离学习日超过 5 天的（周一、周六、周日学的）改成 a+2
-     s=2 → 上周今天：a+7
-     s=3 → 上上周：a+14 起第一个周日
-     s≥4 → 按熟练度：1～2 级 7 天、3 级 14 天、4 级 21 天、5 级 30 天
-   记得 → 进下一站；模糊 → 也进下一站（算过关但费劲：打断连对、不升题型，s≥4 时熟练度落到 2 级即 7 天）；忘了 → 从今天重新开始。
+   一句话：学完次日复习，之后每次从「这次复习的日子」往后数：隔 3 天 → 隔 7 天 → 按熟练度拉开（2026-10-21 改，见 docs/plans/2026-10-21-lighter-review.md）。
+   每张卡记 学习日 a、已过站数 s、到期日 d；间隔从复习那天算，所以哪天没做、晚做几天，后面的站整体往后顺，不会第二天又到期。
+     学完 → 次日（newCard，s=0）
+     第 1 次复习后（s=1）→ 隔 3 天；第 2 次后（s=2）→ 隔 7 天
+     第 3 次起（s≥3）→ 按熟练度：0～1 级 7 天、2 级 10 天、3 级 14 天、4 级 21 天、5 级 30 天
+     隔 7 天及以上的按词错开 −1 / 0 / +1 天（spread），同一天学的一批词不会总挤在同一天到期
+   以前是「次日 → 本周日 → 上周今天 → 上上周的周日」，按学习日和周日排：周日一跳过就压到周一，补做后下一站又常常是第二天。
+   记得 → 进下一站；模糊 → 也进下一站（算过关但费劲：打断连对、不升题型，s≥3 时熟练度落到 2 级即 10 天）；忘了 → 从今天重新开始。
    选中易混干扰项（混淆，opt.hold）其实是答错：记 m，站数不变，2 天后再来。2026-10-15 前模糊也是这样，见 docs/plans/2026-10-15-fuzzy-pass.md。
    还没到期就复习（途中看、睡前、周总结多刷）：记得 / 模糊不改计划也不记进熟练度，忘了照样重来。
    考前封顶：12-05 前复习、到期日又晚于 12-09 的，改到 12-05～12-09 之间，按词分散到各天；窗口里及之后复习的不封顶。
 
    早上复习的顺序和每天上限（2026-10-20 改，见 docs/plans/2026-10-20-morning-review.md；站点和间隔不变）：
      必做（isMust）= 到期且还没做过第一次复习（s=0：昨天学的、昨天忘的、之前拖下没做第一次的）：全部排最前，不占每天上限；
-     其余按计划间隔从短到长分 5 段（band：s=1～2 / s=3 或 s≥4 且熟练度≤2 / s≥4 且 3 级 / 4 级 / 5 级），
+     其余按计划间隔从短到长分 5 段（band：s=1 / s=2 或 s≥3 且熟练度≤2 / s≥3 且 3 级 / 4 级 / 5 级），
        段内拖过的先、熟练度低的先；每天上限只管这部分，做不完的老词往后排（同样拖一天，新的掉得多、老的几乎不掉）。
      今天的总复习量 L（还到期的 + 今天已做的到期复习）分三档（loadTier）：≤ 上限一半 照常学新 / ≤ 上限 学新最多 1 群 / > 上限 不学新词；
      forecast 估积压第几天清完（必做全做、其余每天最多上限个，不算以后新学的）。
@@ -40,7 +40,8 @@ const SRS = (() => {
   const H_LEN = 6;
   /* 选择题答对但超过这个时限算模糊（毫秒），按题型：听音从读音第一次播完算起，其余从出题算起；词组卡按看词选义 */
   const SLOW_MS = {mean: 8000, listen: 8000, reverse: 10000, cloze: 15000};
-  const LV_DAYS = [7, 7, 7, 14, 21, 30];              // s≥4 时各熟练度的间隔
+  const STEP_DAYS = [3, 7];                           // 第 1、2 次复习后隔几天（学完到第 1 次复习是次日，见 newCard）
+  const LV_DAYS = [7, 7, 10, 14, 21, 30];             // 第 3 次复习起（s≥3）各熟练度的间隔
   const TYPE = {MEAN: 0, LISTEN: 1, CONTEXT: 2, SPELL: 3, QUICK: 4};
   const pad = n => String(n).padStart(2, "0");
   const toNum = s => { const [y, m, d] = s.split("-").map(Number); return Date.UTC(y, m - 1, d) / DAY; };
@@ -48,7 +49,6 @@ const SRS = (() => {
   const add = (s, n) => toStr(toNum(s) + n);
   const diff = (a, b) => toNum(a) - toNum(b);        // a - b，天数
   const dow = s => new Date(toNum(s) * DAY).getUTCDay();   // 0=周日 … 6=周六
-  const max = (a, b) => (a > b ? a : b);
   const hash = s => { let h = 5381; for (const ch of String(s)) h = (h * 33 + ch.charCodeAt(0)) >>> 0; return h; };
 
   /* 今天：凌晨 4 点前还算前一天 */
@@ -57,14 +57,13 @@ const SRS = (() => {
     return `${t.getFullYear()}-${pad(t.getMonth() + 1)}-${pad(t.getDate())}`;
   }
   const monday = s => add(s, -((dow(s) + 6) % 7));   // 所在周的周一（周一到周日算一周）
-  const firstSunday = s => add(s, (7 - dow(s)) % 7);
-  function secondDue(a) { const d = firstSunday(add(a, 2)); return diff(d, a) > 5 ? add(a, 2) : d; }   // s=1 那一站
 
-  /* 第 s 站的到期日；s≥4 按熟练度 lv（不传按 4 级，即 21 天） */
-  function stationDue(a, s, t, lv = 4) {
-    const d = s === 1 ? secondDue(a) : s === 2 ? add(a, 7) : s === 3 ? firstSunday(add(a, 14)) : add(t, LV_DAYS[lv]);
-    return max(d, add(t, 1));
-  }
+  /* 进到第 s 站（s≥1）后隔几天；s≥3 按熟练度 lv（不传按 4 级，即 21 天） */
+  const stationGap = (s, lv = 4) => (s <= STEP_DAYS.length ? STEP_DAYS[s - 1] : LV_DAYS[lv]);
+  /* 错开：隔 7 天及以上的，按词和复习日在 −1 / 0 / +1 天里取一个（同一个词同一天复习结果一样） */
+  const spread = (gap, key, t) => (gap >= 7 ? gap + (hash(`${key}|${t}`) % 3) - 1 : gap);
+  /* 从复习日 t 进到第 s 站后的到期日 */
+  const stationDue = (s, t, lv = 4, key = "") => add(t, spread(stationGap(s, lv), key, t));
 
   /* 考前封顶：窗口（考前 7 天～考前 3 天）开始前复习、算出的到期日又晚于窗口的，按 key 分散到窗口各天；
      在窗口里或之后复习的不管（刚见过） */
@@ -133,7 +132,7 @@ const SRS = (() => {
 
   /* 打分：g 记得 / m 模糊 / f 忘了。返回新卡，不改原卡；t 记下最近一次复习的日期。
      opt.type：这次的题型（第一遍答对时更新 q）；opt.key：考前封顶时用来分散日期，一般传单词；opt.exam：考试日（默认 EXAM）；
-     opt.hold：选中易混干扰项（混淆），r 传 m，站数不变、2 天后再来；opt.off：关掉的题型（算 s≥4 的间隔时熟练度按它放宽） */
+     opt.hold：选中易混干扰项（混淆），r 传 m，站数不变、2 天后再来；opt.off：关掉的题型（算 s≥3 的间隔时熟练度按它放宽） */
   function rate(c, r, t, opt = {}) {
     const key = opt.key ?? `${c.k}|${c.g}|${c.o}|${c.w}`;
     const n = {...c, r, n: (c.n || 0) + 1, t};
@@ -143,7 +142,7 @@ const SRS = (() => {
     const q = r === "g" && opt.type >= 0 && opt.type <= TYPE.SPELL ? Math.max(c.q || 0, opt.type) : c.q || 0;
     if (opt.hold) return {...n, h, v, q, d: examCap(add(t, 2), t, key, opt.exam || EXAM)};
     const s = c.s + 1, nc = {...n, h, v, q, s};       // 记得、模糊都进下一站；模糊靠 h 打断连对来降熟练度
-    return {...nc, d: examCap(stationDue(c.a, s, t, level(nc, {off: opt.off})), t, key, opt.exam || EXAM)};
+    return {...nc, d: examCap(stationDue(s, t, level(nc, {off: opt.off}), key), t, key, opt.exam || EXAM)};
   }
 
   /* 斩：直接 5 级，30 天后（或考前窗口）抽查；抽查答错照常重来并清掉 z */
@@ -232,10 +231,11 @@ const SRS = (() => {
     return c.a < add(t, -1) ? "late" : (c.l || 0) >= 1 ? "lapse" : "new";
   }
   /* 非必做的按计划间隔分段，间隔短的段在前（同样拖一天，间隔短的忘得多）：
-     1 段 s=1～2（约 1～5 天）；2 段 s=3，或 s≥4 且熟练度≤2（约 7～13 天）；3 / 4 / 5 段 s≥4 且熟练度 3 / 4 / 5（14 / 21 / 30 天） */
+     1 段 s=1（隔 3 天）；2 段 s=2，或 s≥3 且熟练度≤2（7～10 天）；3 / 4 / 5 段 s≥3 且熟练度 3 / 4 / 5（14 / 21 / 30 天）
+     （2026-10-21 前的老卡 s=3 是「上上周的周日」那站，到期后照样按这里分段） */
   function band(c, opt = {}) {
-    if (!(c.s > 2)) return 1;
-    if (c.s === 3) return 2;
+    if (!(c.s > 1)) return 1;
+    if (c.s === 2) return 2;
     const lv = level(c, opt);
     return lv <= 2 ? 2 : lv;
   }
@@ -282,7 +282,7 @@ const SRS = (() => {
   /* 请假顺延：学习日和到期日一起后移，整条路线不变 */
   const shift = (c, n) => ({...c, a: add(c.a, n), d: add(c.d, n)});
 
-  return {EXAM, TYPE, today, reviews, add, diff, dow, monday, firstSunday, secondDue, stationDue, examCap, newCard, isDue,
+  return {EXAM, TYPE, today, reviews, add, diff, dow, monday, stationGap, spread, stationDue, examCap, newCard, isDue,
     rate, chop, isHard, dueList, isPhrase, level, streak, pickType, gradeChoice, gradeSpell, editDist, similar, senseKeys, posSet, distractorTag, confAdd, confDrop, shuffleSpread, pairSimilar,
     isMust, mustKind, band, queue, loadTier, forecast, shift};
 })();

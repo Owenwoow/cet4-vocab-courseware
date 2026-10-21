@@ -15,7 +15,7 @@ loadKnown();
 const VOICE_NAMES = {ava: "Ava", andrew: "Andrew", sonia: "Sonia", ryan: "Ryan"};
 const VOICE_DESC = {ava: "美式 · 女声", andrew: "美式 · 男声", sonia: "英式 · 女声", ryan: "英式 · 男声"};
 const DEFAULTS = {voice: "ava", rate: 1, mask: false, hideKnown: false, scope: "group", withZh: true, loop: false, theme: "auto",
-  examDate: "2026-12-12", dailyCap: 120, autoSay: true, drillOrder: "course", drillMode: "quiz", phLine: true, videoPrefer: "精讲带背",
+  examDate: "2026-12-12", dailyCap: 80, autoSay: true, drillOrder: "course", drillMode: "quiz", phLine: true, videoPrefer: "精讲带背",
   /* 学习新词、复习（study.js 用，默认值 = 加设置之前的行为）：learnStages 每个新词过几关（1 看词选义 / 2 + 听音选义 / 3 + 拼写）；
      learnSize 一次学多少（1 / 2 群，15 = 至少 15 词）；autoEx 学新词词卡读完单词接着读例句；autoNext 答对（记得）后 1.5 秒自动下一题；
      slowMode 想得久算模糊（loose ×1.5 / std / strict ×0.75 / off 不按时间）；quizListen、quizSpell 出不出听音、拼写题；roundSize 今天到期每轮最多几个（0 = 不限） */
@@ -767,7 +767,7 @@ function renderSettings() {
     <section class="panel"><h2>复习</h2>
       <div class="row"><span><b>考试日期</b><small>首页倒计时用</small></span><input type="date" data-set="examDate" value="${esc(S.examDate)}"></div>
       <div class="row"><span><b>每天复习上限</b><small>昨天学的等必做的词不算在内；其余到期的超过这个数，间隔短的先做，多出来的排到后面几天</small></span>
-        ${seg("dailyCap", [[80, "80"], [120, "120"], [200, "200"]])}</div>
+        ${seg("dailyCap", [[60, "60"], [80, "80"], [120, "120"], [200, "200"]])}</div>
       <div class="row"><span><b>「今天到期」每轮最多</b><small>一轮做完可以再来一轮；必做的词先出、不受每天复习上限，其余仍受上限约束</small></span>
         ${seg("roundSize", [[15, "15"], [25, "25"], [40, "40"], [0, "不限"]])}</div>
       <div class="row"><span><b>出题方式</b><small>智能出题按熟练度出选择题、例句、拼写；翻卡自评是看英文想意思，翻开后自己打分。巩固页上的同一个开关</small></span>
