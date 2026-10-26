@@ -499,8 +499,11 @@ body.vp-open{padding-bottom:calc(min(460px,100vw - 32px) * 9 / 16 + 64px)}
 .ex.meet{border-left-color:var(--ok)}
 .ex.meet .exlab{color:var(--ok)}
 .ex.meet .sent .key,.ex.meet .snip .key{color:var(--ok)}
-.dops{display:flex;gap:8px;justify-content:center;margin-top:14px;flex-wrap:wrap;position:sticky;bottom:calc(10px + env(safe-area-inset-bottom))}
+.drill{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
+/* 操作栏保留在文档流中，末尾内容可完整滚到按钮上方；只悬浮按钮，周围保持透明。 */
+.dops{display:flex;gap:8px;justify-content:center;margin-top:14px;flex-wrap:wrap;position:sticky;bottom:calc(10px + env(safe-area-inset-bottom));z-index:5}
 .dops wa-button{flex:1;max-width:180px}
+.dops wa-button::part(base){box-shadow:none}
 .dops .flip{max-width:none}
 .dops kbd{font:inherit;font-size:11px;opacity:.65;margin-left:2px}
 .dops .rubric{flex-basis:100%;margin:0 auto;max-width:max-content;padding:2px 8px;border-radius:6px;background:var(--bg);color:var(--sub);font-size:12px;text-align:center}   /* 翻卡评分按钮下的判分标准 */
@@ -653,8 +656,7 @@ body.vp-open{padding-bottom:calc(min(460px,100vw - 32px) * 9 / 16 + 64px)}
 /* 「上一个」「斩」是次要操作：按内容宽度，主按钮占满剩下的位置，手机上不容易误按「斩」 */
 .dops wa-button[data-prev],.dops wa-button[data-chop]{flex:0 0 auto}
 .dops wa-button[data-chop]{margin-left:8px}
-/* 底部按钮行固定在下面，长卡片会滚到它下面：垫一层渐变底，描边按钮用实心底，免得后面的字透出来 */
-.dops{padding-top:14px;background:linear-gradient(to bottom,transparent,var(--bg) 45%)}
+/* 描边按钮使用实心底，滚动时保持清晰。 */
 .dops wa-button[appearance~="outlined"]::part(base){background:var(--card)}
 /* 混淆反馈：说明小字 + 背面对比行 */
 .qverdict small{display:block;margin-top:4px;font-size:12px;font-weight:400;color:var(--sub)}
