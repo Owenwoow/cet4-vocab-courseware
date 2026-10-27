@@ -324,7 +324,7 @@ const Study = (() => {
   const fl = n => `<span class="fl" title="考频 ${n}/3">${"🔥".repeat(n)}</span>`;
   const LV_NAME = ["新学", "生疏", "认识", "熟悉", "掌握", "牢记"];
   const lvDot = n => `<span class="lvdot${n ? "" : " hollow"}" style="--c:var(--lv${n})" title="熟练度：${LV_NAME[n]}"></span>`;
-  const btn = (href, text, attrs = 'appearance="filled"') => `<wa-button size="small" href="${href}" ${attrs}>${text}</wa-button>`;   // 默认浅底，主按钮传 variant="brand"
+  const btn = (href, text, attrs = 'appearance="filled"', size = "small") => `<wa-button size="${size}" href="${href}" ${attrs}>${text}</wa-button>`;   // 工具栏默认小号；结束页整组用中号，链接与操作按钮保持同尺寸
   const loadFail = err => { view().innerHTML = `<p class="empty">加载失败：${esc(err.message)}<br>检查网络后 <a href="javascript:location.reload()">重新加载</a></p>`; };
   const HOME_TITLE = document.title;   // 首页用 index.html 里写给搜索引擎的完整标题
   function setHead(title) { $("#crumb").textContent = title; document.title = title === "首页" ? HOME_TITLE : title + " · 四级词汇"; }
@@ -1016,15 +1016,15 @@ const Study = (() => {
       const missed = D.items.filter(x => (D.st.get(x.word) || {}).err), gs = D.lg.gs.map(p => p.g), G = gs[0], nx = nextGroups(1)[0], batch = nx && nextBatch();
       const tier = dueStat().tier, few = tier !== "easy";   // 复习偏多 / 积压太多：「接着学」换成不显眼的「仍要再学 1 群」
       const nextBtn = !nx ? `<p class="note">Part 01 的词群全部学完了 🎉</p>`
-        : few ? `<wa-button appearance="outlined" id="nextGroup">仍要再学 1 群（${lesTitle(nx.lid)} 第 ${nx.no} 群）</wa-button>`
-        : `<wa-button variant="brand" id="nextGroup">${batch ? `接着学下一批（${batch}）` : `接着学下一群（${lesTitle(nx.lid)} 第 ${nx.no} 群）`}</wa-button>`;
+        : few ? `<wa-button size="medium" appearance="outlined" id="nextGroup">仍要再学 1 群（${lesTitle(nx.lid)} 第 ${nx.no} 群）</wa-button>`
+        : `<wa-button size="medium" variant="brand" id="nextGroup">${batch ? `接着学下一批（${batch}）` : `接着学下一群（${lesTitle(nx.lid)} 第 ${nx.no} 群）`}</wa-button>`;
       view().innerHTML = `<div class="drill end"><h1>${gs.length > 1 ? `${gs.length} 个词群` : `第 ${G.no} 群`}过关 🎉</h1>
         <p class="note">${gs.length > 1 ? esc(grpLabel(gs)) : `${lesTitle(G.lid)} · 第 ${G.no} 群「${esc(G.title)}」`}已记为今天学的，明天早上开始复习；今晚睡前巩固还会再测一遍。</p>
         <div class="tally"><span>过关 <b>${D.passed}</b></span><span class="g">一次就过 <b>${D.items.filter(x => !(D.st.get(x.word) || {}).err && !(D.chopped && D.chopped.has(x.word))).length}</b></span><span class="f">错过才过 <b>${missed.length}</b></span>${D.res.z ? `<span>斩 <b>${D.res.z}</b></span>` : ""}</div>
         ${missed.length ? `<p class="note">错过的：${missed.map(x => esc(x.word)).join("、")}${missed.some(x => D.st.get(x.word).err >= 2) ? "（错 2 次以上的明天早上标红、优先出）" : ""}</p>` : ""}
         ${few && nx ? `<p class="note">${tier === "busy" ? "今天复习偏多，学新 1 群就够了" : "今天积压太多，本来先不学新词"}；想多学也可以再学 1 群。</p>` : ""}
         <div class="ops">${few ? "" : nextBtn}
-          ${btn("#/", "回首页", nx && !few ? undefined : 'variant="brand"')} ${btn("#/list/today", "浏览今天的词")}${few ? nextBtn : ""}</div></div>`;
+          ${btn("#/", "回首页", nx && !few ? undefined : 'variant="brand"', "medium")} ${btn("#/list/today", "浏览今天的词", undefined, "medium")}${few ? nextBtn : ""}</div></div>`;
       return;
     }
     const again = D.items.filter(x => ["f", "m"].includes(D.rated.get(x.word)));
@@ -1036,9 +1036,9 @@ const Study = (() => {
       ${isRound(D.sc) ? kindTally() : ""}
       ${ds && !more ? `<p class="note"><b>✅ 今天的复习任务完成了</b>${ds.rest.length ? `；剩下 ${ds.rest.length} 个已排到明天以后，想多做可以再来 ${extra} 个` : ""}。</p>` : ""}
       <p class="note">${D.items.some(x => x.card) ? "成绩按每个词第一遍算：忘了的已经当场滚到答对，明天早上还会再出现；模糊的照常往后排，只是题型先不升级；选了易混词的过两天再来。" : ""}${D.items.some(x => !x.card) ? "这一轮有还没记为学过的词，它们的评分不排复习；学了以后在「学习记录」里勾上。" : ""}</p>
-      <div class="ops">${more ? `<wa-button variant="brand" id="nextRound">再来一轮（还有 ${more} 个到期）</wa-button>` : extra ? `<wa-button appearance="outlined" id="moreRound">还想多做 ${extra} 个</wa-button>` : ""}
-        ${again.length ? `<wa-button ${more ? 'appearance="filled"' : 'variant="brand"'} id="redo">再过一遍忘了 / 模糊的（${again.length}）</wa-button>` : ""}
-        ${btn("#/", "回首页")} ${btn("#/drill", "换个范围")}</div></div>`;
+      <div class="ops">${more ? `<wa-button size="medium" variant="brand" id="nextRound">再来一轮（还有 ${more} 个到期）</wa-button>` : extra ? `<wa-button size="medium" appearance="outlined" id="moreRound">还想多做 ${extra} 个</wa-button>` : ""}
+        ${again.length ? `<wa-button size="medium" ${more ? 'appearance="filled"' : 'variant="brand"'} id="redo">再过一遍忘了 / 模糊的（${again.length}）</wa-button>` : ""}
+        ${btn("#/", "回首页", undefined, "medium")} ${btn("#/drill", "换个范围", undefined, "medium")}</div></div>`;
     D.again = again;
   }
 
