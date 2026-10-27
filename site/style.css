@@ -517,6 +517,9 @@ body.vp-open{padding-bottom:calc(min(460px,100vw - 32px) * 9 / 16 + 64px)}
 .ktally b{font-weight:600}
 .ktally .g{color:var(--ok)}.ktally .m{color:#ca8a04}.ktally .f{color:var(--pink)}
 .drill.end .ops{justify-content:center}
+/* 链接按钮和原生操作按钮共用可见边框尺寸，避免组件内部 em 高度随浏览器表单字体变化。 */
+.drill.end .ops wa-button{display:inline-flex;min-width:0;max-width:100%;line-height:1.2}
+.drill.end .ops wa-button::part(base){height:44px;font-family:inherit;font-size:16px;line-height:1.2;white-space:normal}
 
 /* 周总结 */
 .weekv .nav{font-size:14px;color:var(--accent);text-decoration:none;min-width:70px}
