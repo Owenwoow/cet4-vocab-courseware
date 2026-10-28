@@ -499,18 +499,17 @@ body.vp-open{padding-bottom:calc(min(460px,100vw - 32px) * 9 / 16 + 64px)}
 .ex.meet{border-left-color:var(--ok)}
 .ex.meet .exlab{color:var(--ok)}
 .ex.meet .sent .key,.ex.meet .snip .key{color:var(--ok)}
-.drill{--drill-button-height:44px;padding-bottom:calc(24px + env(safe-area-inset-bottom))}
+.drill{--drill-button-width:180px;--drill-button-height:44px;padding-bottom:calc(24px + env(safe-area-inset-bottom))}
 /* 操作栏保留在文档流中，末尾内容可完整滚到按钮上方；只悬浮按钮，周围保持透明。 */
 .dops{display:flex;gap:8px;justify-content:center;margin-top:14px;flex-wrap:wrap;position:sticky;bottom:calc(10px + env(safe-area-inset-bottom));z-index:5}
-.dops wa-button,.dops>button{flex:1 1 160px;min-width:0;max-width:none;height:var(--drill-button-height);margin:0}
+.dops wa-button,.dops>button{flex:0 1 var(--drill-button-width);width:var(--drill-button-width);min-width:0;max-width:100%;height:var(--drill-button-height);margin:0}
 /* 同组同排按钮共用尺寸，覆盖组件内部可见边框与原生按钮，不能依赖组件默认字号或浏览器表单字体。 */
 .dops wa-button::part(base),.drill.end .ops wa-button::part(base),.dops>button{box-sizing:border-box;width:100%;height:var(--drill-button-height);min-height:var(--drill-button-height);padding:0 12px;font-family:inherit;font-size:16px;line-height:1.2;white-space:normal;box-shadow:none}
 .dops wa-button::part(label),.drill.end .ops wa-button::part(label){min-width:0;white-space:normal}
 .dops>button{display:inline-flex;align-items:center;justify-content:center;text-align:center}
-.dops .flip{max-width:none}
 .dops kbd{font:inherit;font-size:11px;opacity:.65;margin-left:2px}
 .dops .rubric{flex-basis:100%;margin:0 auto;max-width:max-content;padding:2px 8px;border-radius:6px;background:var(--bg);color:var(--sub);font-size:12px;text-align:center}   /* 翻卡评分按钮下的判分标准 */
-@media (max-width:600px){.dops kbd{display:none}.dword{font-size:34px}.drill.end .ops{flex-direction:column;align-items:center}.drill.end .ops wa-button{width:min(280px,100%)}}
+@media (max-width:600px){.dops kbd{display:none}.dword{font-size:34px}.drill.end .ops{flex-direction:column;align-items:center}}
 .drill.end{text-align:center;padding-top:30px}
 .tally{display:flex;justify-content:center;gap:18px;font-size:15px;margin:18px 0}
 .tally b{font-size:26px;display:block}
@@ -521,8 +520,7 @@ body.vp-open{padding-bottom:calc(min(460px,100vw - 32px) * 9 / 16 + 64px)}
 .ktally .g{color:var(--ok)}.ktally .m{color:#ca8a04}.ktally .f{color:var(--pink)}
 .drill.end .ops{justify-content:center}
 /* 链接按钮和原生操作按钮共用可见边框尺寸，避免组件内部 em 高度随浏览器表单字体变化。 */
-.drill.end .ops wa-button{display:inline-flex;min-width:0;max-width:100%;line-height:1.2}
-@media(min-width:601px){.drill.end .ops wa-button{flex:1 1 160px}}
+.drill.end .ops wa-button{display:inline-flex;flex:none;width:240px;min-width:0;max-width:100%;line-height:1.2}
 
 /* 周总结 */
 .weekv .nav{font-size:14px;color:var(--accent);text-decoration:none;min-width:70px}
@@ -650,10 +648,9 @@ body.vp-open{padding-bottom:calc(min(460px,100vw - 32px) * 9 / 16 + 64px)}
 .recall .dops{flex-wrap:wrap;gap:10px}
 .recall .dops>.recall-rubric,.recall .dops>.recall-verdict{flex-basis:100%;margin:0;text-align:center}
 .recall-ratings{display:flex;flex:1 0 100%;gap:10px;flex-wrap:wrap;justify-content:center;align-items:center}
-.recall-ratings wa-button{flex:1 1 170px}
 .hint-used{font-size:13px;color:var(--accent);margin:18px 0 0;text-align:center}
 .recall-verdict{font-weight:700}
-@media(max-width:600px){.recall .dbar{flex-wrap:wrap}.recall .dops{position:static}.recall-ratings wa-button{flex-basis:100%}.recall .dword{overflow-wrap:anywhere}}
+@media(max-width:600px){.recall .dbar{flex-wrap:wrap}.recall .dops{position:static}.recall .dword{overflow-wrap:anywhere}}
 
 /* ---------- 熟练度：首页分布条、词表颜色点、斩 ---------- */
 .lvbar{display:flex;gap:2px;height:14px;margin:4px 0 10px}
