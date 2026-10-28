@@ -649,7 +649,7 @@ body.vp-open{padding-bottom:calc(min(460px,100vw - 32px) * 9 / 16 + 64px)}
 .study .recall .recall-cover:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .recall .dops{flex-wrap:wrap;gap:10px}
 .recall .dops>.recall-rubric,.recall .dops>.recall-verdict{flex-basis:100%;margin:0;text-align:center}
-.recall-ratings{display:flex;flex:1 0 100%;gap:10px;flex-wrap:wrap}
+.recall-ratings{display:flex;flex:1 0 100%;gap:10px;flex-wrap:wrap;justify-content:center;align-items:center}
 .recall-ratings wa-button{flex:1 1 170px}
 .hint-used{font-size:13px;color:var(--accent);margin:18px 0 0;text-align:center}
 .recall-verdict{font-weight:700}
