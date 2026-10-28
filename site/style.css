@@ -505,9 +505,9 @@ body.vp-open{padding-bottom:calc(min(460px,100vw - 32px) * 9 / 16 + 64px)}
 .dops wa-button,.dops>button{flex:0 1 var(--drill-button-width);width:var(--drill-button-width);min-width:0;max-width:100%;height:var(--drill-button-height);margin:0}
 /* 同组同排按钮共用尺寸，覆盖组件内部可见边框与原生按钮，不能依赖组件默认字号或浏览器表单字体。 */
 .dops wa-button::part(base),.drill.end .ops wa-button::part(base),.dops>button{box-sizing:border-box;width:100%;height:var(--drill-button-height);min-height:var(--drill-button-height);padding:0 12px;font-family:inherit;font-size:16px;line-height:1.2;white-space:normal;box-shadow:none}
-.dops wa-button::part(label),.drill.end .ops wa-button::part(label){min-width:0;white-space:normal}
+.dops wa-button::part(label),.drill.end .ops wa-button::part(label){min-width:0;white-space:nowrap}
 .dops>button{display:inline-flex;align-items:center;justify-content:center;text-align:center}
-.dops kbd{font:inherit;font-size:11px;opacity:.65;margin-left:2px}
+.dops kbd{font:inherit;font-size:11px;opacity:.65;margin-left:2px;white-space:nowrap}
 .dops .rubric{flex-basis:100%;margin:0 auto;max-width:max-content;padding:2px 8px;border-radius:6px;background:var(--bg);color:var(--sub);font-size:12px;text-align:center}   /* 翻卡评分按钮下的判分标准 */
 @media (max-width:600px){.dops kbd{display:none}.dword{font-size:34px}.drill.end .ops{flex-direction:column;align-items:center}}
 .drill.end{text-align:center;padding-top:30px}

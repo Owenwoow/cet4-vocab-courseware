@@ -841,8 +841,8 @@ const Study = (() => {
     const aux = q.aux && !q.revealed ? `<div class="qopts">${q.aux.opts.map((o, i) => `<button class="qopt" data-recall-choice="${i}"><kbd>${i + 1}</kbd><span>${esc(o)}</span></button>`).join("")}</div>` : "";
     const rate = (r, label, variant) => `<wa-button variant="${variant}" data-recall-rate="${r}">${label}</wa-button>`;
     const controls = q.answered ? `<p class="recall-verdict">${RECALL_LABEL[q.answered]}</p><wa-button variant="brand" data-next="1">继续 <kbd>空格</kbd></wa-button>` : q.revealed
-      ? `<p class="note recall-rubric">核对揭晓前是否想对主要意思；只觉得眼熟、选错或没想起，请选“未想起或想错”。</p><div class="recall-ratings">${q.choiceWrong ? "" : q.hints.length ? rate("hinted", "提示后想起", "warning") : rate("independent", "独立想起", "success") + rate("effort", "独立想起但费劲", "brand")}${rate("failed", "未想起或想错", "danger")}</div>`
-      : `${q.layer < layers.length ? `<wa-button appearance="outlined" data-recall-hint="1">提示：${layers[q.layer].label}</wa-button>` : ""}<wa-button variant="brand" data-recall-reveal="1">揭晓核对 <kbd>空格</kbd></wa-button>${!q.aux && meanText(x.e) ? '<button data-recall-aux="1">需要四选一辅助</button>' : ""}${chopBtn(x)}`;
+      ? `<p class="note recall-rubric">核对揭晓前是否想对主要意思；只觉得眼熟、选错或没想起，请选“没想起”。</p><div class="recall-ratings">${q.choiceWrong ? "" : q.hints.length ? rate("hinted", "提示后想起", "warning") : rate("independent", "想起了", "success") + rate("effort", "想得费劲", "brand")}${rate("failed", "没想起", "danger")}</div>`
+      : `${q.layer < layers.length ? `<wa-button appearance="outlined" data-recall-hint="1">提示：${layers[q.layer].label}</wa-button>` : ""}<wa-button variant="brand" data-recall-reveal="1">揭晓 <kbd>空格</kbd></wa-button>${!q.aux && meanText(x.e) ? '<button data-recall-aux="1">四选一</button>' : ""}${chopBtn(x)}`;
     put(`<div class="drill recall${q.revealed ? " flipped" : ""}"><div class="dbar"><span>${esc(D.title)}${q.retry ? " · 补测" : ""}</span><wa-progress-bar value="${s.total ? Math.round(s.completed / s.total * 100) : 0}"></wa-progress-bar><span>已做 ${s.completed}/${s.total} · 补测 ${s.retries}/${D.rc.added}</span><a href="#/" class="dx" title="退出并保存">✕</a></div><div class="dcard${q.revealed ? "" : " locked"}">${head}${hints}${aux}</div><div class="dops">${controls}</div></div>`);
     if (!q.revealed) {
       const cover = (selector, kind, label) => {
@@ -950,7 +950,7 @@ const Study = (() => {
       const records = words.map(w => D.rc.first[w]);
       return `<li><b>${label} ${words.length}</b>：独立 ${records.filter(r => Recall.independent(r?.result)).length} · 提示 ${records.filter(r => r?.result === "hinted").length} · 未想起 ${records.filter(r => r?.result === "failed").length}${records.some(r => r?.result === "legacy") ? "（含旧版成绩）" : ""}</li>`;
     }).join("") : "";
-    view().innerHTML = `<div class="drill end"><h1>${s.total ? "这一轮任务完成" : "暂无待做词"}</h1><div class="tally"><span>完成 <b>${s.completed}/${s.total}</b></span><span class="g">独立想起 <b>${s.independent + s.effort}</b></span><span>其中费劲 <b>${s.effort}</b></span><span class="m">提示后 <b>${s.hinted}</b></span><span class="f">未想起/想错 <b>${s.failed}</b></span>${s.legacy ? `<span>旧版成绩 <b>${s.legacy}</b></span>` : ""}${s.chopped ? `<span>斩 <b>${s.chopped}</b></span>` : ""}</div>${types ? `<ul class="ktally">${types}</ul>` : ""}<p>补测 ${s.retries}/${D.rc.added} · 独立想起 ${s.retrySuccess} · 提示后 ${s.retryHinted} · 未想起 ${s.retryFailed} · 待加强 ${s.strengthen.length}</p>${s.strengthen.length ? `<p class="note">待加强：${s.strengthen.map(esc).join("、")}</p>` : ""}<p class="note">首次表现已保留。补测不覆盖首次成绩、不推进站点；提示后两天检查，未想起次日检查。未学词只练习，不创建复习卡。</p><div class="ops">${more ? `<wa-button variant="brand" id="nextRound">再来一轮（还有 ${more} 个）</wa-button>` : ""}${btn("#/", "回首页", 'variant="brand"', "medium")}${btn("#/drill", "自由抽查", undefined, "medium")}</div></div>`;
+    view().innerHTML = `<div class="drill end"><h1>${s.total ? "这一轮任务完成" : "暂无待做词"}</h1><div class="tally"><span>完成 <b>${s.completed}/${s.total}</b></span><span class="g">独立想起 <b>${s.independent + s.effort}</b></span><span>其中费劲 <b>${s.effort}</b></span><span class="m">提示后 <b>${s.hinted}</b></span><span class="f">未想起/想错 <b>${s.failed}</b></span>${s.legacy ? `<span>旧版成绩 <b>${s.legacy}</b></span>` : ""}${s.chopped ? `<span>斩 <b>${s.chopped}</b></span>` : ""}</div>${types ? `<ul class="ktally">${types}</ul>` : ""}<p>补测 ${s.retries}/${D.rc.added} · 独立想起 ${s.retrySuccess} · 提示后 ${s.retryHinted} · 未想起 ${s.retryFailed} · 待加强 ${s.strengthen.length}</p>${s.strengthen.length ? `<p class="note">待加强：${s.strengthen.map(esc).join("、")}</p>` : ""}<p class="note">首次表现已保留。补测不覆盖首次成绩、不推进站点；提示后两天检查，未想起次日检查。未学词只练习，不创建复习卡。</p>${more ? `<p class="note">还有 ${more} 个待做</p>` : ""}<div class="ops">${more ? `<wa-button variant="brand" id="nextRound">再来一轮</wa-button>` : ""}${btn("#/", "回首页", 'variant="brand"', "medium")}${btn("#/drill", "自由抽查", undefined, "medium")}</div></div>`;
   }
 
   /* 正在看的那一题：回看时是历史里的，否则是当前题 */
@@ -990,7 +990,7 @@ const Study = (() => {
     const pastOps = `${prevBtn}<wa-button variant="brand" data-fwd="1">${D.back > 1 ? "下一个 →" : "回到当前 →"} <kbd>空格</kbd></wa-button>`;
     if (q.kind === "study") {                        // 学习新词的词卡：全部摊开，看完再考
       put(`<div class="drill flipped${past ? " past" : ""}">${bar}<div class="dcard">${meta}${wordHead(x, true)}${backHTML(x)}</div>
-        <div class="dops">${past ? pastOps : `${prevBtn}<wa-button variant="brand" data-studied="1">看完了，待会考我 <kbd>空格</kbd></wa-button>`}</div></div>`);
+        <div class="dops">${past ? pastOps : `${prevBtn}<wa-button variant="brand" data-studied="1">继续 <kbd>空格</kbd></wa-button>`}</div></div>`);
       if (!past && !q.said) { q.said = true; studySay(q); }
       return;
     }
@@ -1000,7 +1000,7 @@ const Study = (() => {
         <div class="dops">${past ? pastOps : q.flipped
           ? `${prevBtn}<wa-button variant="danger" data-rate="f">忘了 <kbd>1</kbd></wa-button><wa-button variant="warning" data-rate="m">模糊 <kbd>2</kbd></wa-button>
              <wa-button variant="success" data-rate="g">记得 <kbd>3</kbd></wa-button>${chopBtn(x)}${RUBRIC}`
-          : `${prevBtn}<wa-button variant="brand" class="flip" data-flip="1">想好了，翻开看 <kbd>空格</kbd></wa-button>${chopBtn(x)}`}</div></div>`);
+          : `${prevBtn}<wa-button variant="brand" class="flip" data-flip="1">翻开 <kbd>空格</kbd></wa-button>${chopBtn(x)}`}</div></div>`);
       if (!past && !q.flipped && !q.said) { q.said = true; if (S.autoSay) sayWord(x); }
       return;
     }
@@ -1009,7 +1009,7 @@ const Study = (() => {
     if (q.kind === "mean") body = wordHead(x, done);
     else if (q.kind === "listen") body = done ? wordHead(x, true) : `<button class="bigspk" data-say="1" title="再听一遍（R）">🔊</button><p class="note qhint">听发音，选意思 · R 再听</p>`;
     else if (q.kind === "reverse") body = `<div class="qmean">${esc(meanText(x.e))}</div>${done ? wordHead(x, true) : `<p class="note qhint">选出对应的英文</p>`}`;
-    else if (q.kind === "cloze") body = `<div class="qsent">${done || q.contextStudy ? q.cloze.filled : q.cloze.html}</div>${done || q.contextStudy ? `<div class="dzh">${esc(q.cloze.zh)}</div><p class="note">本句词形：${q.cloze.forms.map(esc).join("、")} · 原形：${esc(x.word)}</p>${wordHead(x, true)}` : `<p class="note qhint">选出填进空里的词（可能是变形）</p>${D.practice === "context" ? '<button data-context-study="1">先学完整例句（计为使用帮助）</button>' : ""}`}`;
+    else if (q.kind === "cloze") body = `<div class="qsent">${done || q.contextStudy ? q.cloze.filled : q.cloze.html}</div>${done || q.contextStudy ? `<div class="dzh">${esc(q.cloze.zh)}</div><p class="note">本句词形：${q.cloze.forms.map(esc).join("、")} · 原形：${esc(x.word)}</p>${wordHead(x, true)}` : `<p class="note qhint">选出填进空里的词（可能是变形）</p>${D.practice === "context" ? '<button data-context-study="1">学习例句</button><p class="note">学习例句计为使用帮助</p>' : ""}`}`;
     else if (q.kind === "spell") body = `<div class="qmean">${esc(meanText(x.e))}</div>
       ${done ? `<div class="spres ${q.r === "g" ? "ok" : "bad"}">${q.r === "g" ? "✓ 拼对了" : `${q.input ? `你写的：<s>${esc(q.input)}</s>` : "没写"}${q.r === "m" ? " · 差一个字母，算模糊" : ""}`}</div>${wordHead(x, true)}`
         : `<button class="spk" data-say="1" title="再听（R）">🔊</button><div class="spellbox"><input id="spell" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="${esc(x.word[0] + " _".repeat(Math.max(0, x.word.length - 1)))}"></div>`}`;
@@ -1204,13 +1204,14 @@ const Study = (() => {
       const missed = D.items.filter(x => (D.st.get(x.word) || {}).err), gs = D.lg.gs.map(p => p.g), G = gs[0], nx = nextGroups(1)[0], batch = nx && nextBatch();
       const tier = dueStat().tier, few = tier !== "easy";   // 复习偏多 / 积压太多：「接着学」换成不显眼的「仍要再学 1 群」
       const nextBtn = !nx ? `<p class="note">Part 01 的词群全部学完了 🎉</p>`
-        : few ? `<wa-button size="medium" appearance="outlined" id="nextGroup">仍要再学 1 群（${lesTitle(nx.lid)} 第 ${nx.no} 群）</wa-button>`
-        : `<wa-button size="medium" variant="brand" id="nextGroup">${batch ? `接着学下一批（${batch}）` : `接着学下一群（${lesTitle(nx.lid)} 第 ${nx.no} 群）`}</wa-button>`;
+        : few ? `<wa-button size="medium" appearance="outlined" id="nextGroup">再学一群</wa-button>`
+        : `<wa-button size="medium" variant="brand" id="nextGroup">${batch ? "学习下一批" : "学习下一群"}</wa-button>`;
       view().innerHTML = `<div class="drill end"><h1>${gs.length > 1 ? `${gs.length} 个词群` : `第 ${G.no} 群`}过关 🎉</h1>
         <p class="note">${gs.length > 1 ? esc(grpLabel(gs)) : `${lesTitle(G.lid)} · 第 ${G.no} 群「${esc(G.title)}」`}已记为今天学的，明天早上开始复习；今晚睡前巩固还会再测一遍。</p>
         <div class="tally"><span>过关 <b>${D.passed}</b></span><span class="g">一次就过 <b>${D.items.filter(x => !(D.st.get(x.word) || {}).err && !(D.chopped && D.chopped.has(x.word))).length}</b></span><span class="f">错过才过 <b>${missed.length}</b></span>${D.res.z ? `<span>斩 <b>${D.res.z}</b></span>` : ""}</div>
         ${missed.length ? `<p class="note">本轮需要多练的：${missed.map(x => esc(x.word)).join("、")}。成绩分专项保留，不把听音或拼写错误当成词义遗忘。</p>` : ""}
         ${few && nx ? `<p class="note">${tier === "busy" ? "今天复习偏多，学新 1 群就够了" : "今天积压太多，本来先不学新词"}；想多学也可以再学 1 群。</p>` : ""}
+        ${nx ? `<p class="note">${!few && batch ? `下一批：${batch}` : `下一群：${lesTitle(nx.lid)} 第 ${nx.no} 群`}</p>` : ""}
         <div class="ops">${few ? "" : nextBtn}
           ${btn("#/", "回首页", nx && !few ? undefined : 'variant="brand"', "medium")} ${btn("#/list/today", "浏览今天的词", undefined, "medium")}${few ? nextBtn : ""}</div></div>`;
       return;
@@ -1224,8 +1225,9 @@ const Study = (() => {
       ${isRound(D.sc) ? kindTally() : ""}
       ${ds && !more ? `<p class="note"><b>✅ 今天的复习任务完成了</b>${ds.rest.length ? `；剩下 ${ds.rest.length} 个已排到明天以后，想多做可以再来 ${extra} 个` : ""}。</p>` : ""}
       <p class="note">本轮为专项练习，成绩只计入对应能力，不改变词义等级、到期日期或早晚任务完成状态。未学词不创建复习卡。</p>
-      <div class="ops">${more ? `<wa-button size="medium" variant="brand" id="nextRound">再来一轮（还有 ${more} 个到期）</wa-button>` : extra ? `<wa-button size="medium" appearance="outlined" id="moreRound">还想多做 ${extra} 个</wa-button>` : ""}
-        ${again.length ? `<wa-button size="medium" ${more ? 'appearance="filled"' : 'variant="brand"'} id="redo">再练未通过或需帮助的（${again.length}）</wa-button>` : ""}
+      ${more ? `<p class="note">还有 ${more} 个到期</p>` : ""}${again.length ? `<p class="note">未通过或需帮助：${again.length} 个</p>` : ""}
+      <div class="ops">${more ? `<wa-button size="medium" variant="brand" id="nextRound">再来一轮</wa-button>` : extra ? `<wa-button size="medium" appearance="outlined" id="moreRound">多做几个</wa-button>` : ""}
+        ${again.length ? `<wa-button size="medium" ${more ? 'appearance="filled"' : 'variant="brand"'} id="redo">再练一遍</wa-button>` : ""}
         ${btn("#/", "回首页", undefined, "medium")} ${btn("#/drill", "换个范围", undefined, "medium")}</div></div>`;
     D.again = again;
   }
