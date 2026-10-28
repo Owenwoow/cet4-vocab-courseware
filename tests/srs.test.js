@@ -1,4 +1,5 @@
 /* 滚动复习规则的单元测试：node --test tests/
+   rate/pickType 用例保留旧成绩与新学题型兼容；日常复习新增 rateRecall 用例，更多状态用例在 recall.test.js。
    日期参照：2026-10-05 是周一 */
 "use strict";
 const test = require("node:test");
@@ -7,6 +8,17 @@ const SRS = require("../site/srs.js");
 
 const MON = "2026-10-05", TUE = "2026-10-06", WED = "2026-10-07", THU = "2026-10-08", FRI = "2026-10-09";
 const SAT = "2026-10-10", SUN = "2026-10-11";
+
+test("主动回忆沿用必做、分段和考前封顶；专项开关不影响词义等级", () => {
+  const c = SRS.freshCard(MON, "modern");
+  const hinted = SRS.rateRecall(c, "hinted", TUE, {id: "hint"});
+  assert.equal(hinted.s, 0); assert.equal(hinted.d, THU); assert.ok(SRS.isMust(hinted, THU));
+  const old = SRS.upgradeCard({...SRS.newCard(MON), s: 4, h: "ggg", v: 3, q: 2}, "srs:old", 1);
+  assert.equal(SRS.level(old, {off: [SRS.TYPE.SPELL]}), SRS.level(old));
+  const examCard = {...c, s: 5, d: "2026-12-01", recall: {...c.recall, level: 5, days: 4}};
+  const next = SRS.rateRecall(examCard, "independent", "2026-12-01", {id: "exam", key: "word", exam: "2026-12-12"});
+  assert.ok(next.d >= "2026-12-05" && next.d <= "2026-12-09");
+});
 
 /* d 是不是 t 之后隔 gap 天；隔 7 天及以上的允许按词错开 ±1 天（spread） */
 const near = (d, t, gap) => { const k = SRS.diff(d, t); return gap >= 7 ? Math.abs(k - gap) <= 1 : k === gap; };

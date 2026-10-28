@@ -8,25 +8,25 @@ const ALL = Backup.CATS.map(c => c.id);
 const DEF = {voice: "ava", rate: 1, roundSize: 25, autoSay: true};
 const toObj = pairs => Object.fromEntries(pairs);
 
-test("分类：按键前缀，drill: 不导入，认不出的归其他", () => {
+test("分类：练习断点归学习记录，认不出的归其他", () => {
   assert.equal(Backup.catOf("known:apple"), "known");
   assert.equal(Backup.catOf("set:roundSize"), "set");
   for (const k of ["learn:u01-l01:g1", "srs:apple", "log:2026-10-19"]) assert.equal(Backup.catOf(k), "study");
   assert.equal(Backup.catOf("vocab:find"), "vocab");
   for (const k of ["last", "lw:u01-l01", "pos:u01-l01"]) assert.equal(Backup.catOf(k), "pos");
   for (const k of ["vpGeo", "peekTab", "listFold", "listHide", "sideOff", "learnPeek"]) assert.equal(Backup.catOf(k), "ui");
-  assert.equal(Backup.catOf("drill:u01"), null);
+  assert.equal(Backup.catOf("drill:u01"), "study");
   assert.equal(Backup.catOf("newThing"), "other");
   assert.equal(Backup.catOf("lastX"), "other");
 });
 
-test("summary：每类条数，不算墓碑和 drill:，设置的 0 照样算", () => {
+test("summary：每类条数包含断点，不算墓碑，设置的 0 照样算", () => {
   const n = Backup.summary({
     "known:a": [1, 5], "known:b": [0, 6], "set:roundSize": [0, 1], "set:voice": ["ryan", 1],
     "srs:a": [{d: 1}, 2], "learn:x:g1": [0, 3], "vocab:find": [{z: "发现"}, 2], "drill:u01": [{i: 3}, 9],
     "last": ["u01-l01", 1], "learnPeek": [{w: true, n: false}, 1], "zzz": [1, 1],
   });
-  assert.deepEqual(n, {known: 1, set: 2, study: 1, vocab: 1, pos: 1, ui: 1, other: 1});
+  assert.deepEqual(n, {known: 1, set: 2, study: 2, vocab: 1, pos: 1, ui: 1, other: 1});
 });
 
 test("合并：每个键取时间较新的，本机更新的不被改回", () => {
@@ -70,7 +70,7 @@ test("覆盖：阅读位置、界面状态、其他文件里没有的不动", ()
   assert.deepEqual(Backup.plan(local, {}, ALL, "overwrite", 999, DEF), []);
 });
 
-test("只导勾选的类别；drill: 任何方式都不导入", () => {
+test("只导勾选的类别；无有效学习日的断点不导入", () => {
   const local = {"vocab:old": [{z: "旧"}, 5], "known:x": [1, 5]};
   const file = {"vocab:new": [{z: "新"}, 1], "known:y": [1, 1], "drill:u01": [{i: 2}, 9]};
   const cats = ALL.filter(c => c !== "vocab");
@@ -155,7 +155,7 @@ test("文字：说明里有导出时间、来自、怎么导入和字段含义�
   assert.match(f["srs:<词>"], /q 答对过的最难题型（0 看词选义 \/ 1 听音 \/ 2 例句或看义选词 \/ 3 拼写）/);
   assert.match(f["srs:<词>"], /cf 易混词/);
   assert.match(f["vocab:<原形>"], /bk 书中位置/);
-  assert.match(f["drill:<范围>"], /不导入/);
+  assert.match(f["drill:<范围>"], /同一学习日/);
   // 每类的键前缀、drill: 都有解释，以后新增类别忘了写会在这里提醒
   const names = Object.keys(f);
   for (const p of ["learn:", "srs:", "log:", "vocab:", "known:", "set:", "lw:", "pos:", "drill:", "last", "vpGeo"])
@@ -165,12 +165,12 @@ test("文字：说明里有导出时间、来自、怎么导入和字段含义�
   for (const [k, v] of Object.entries(f)) assert.equal(ls.filter(l => l.startsWith(`    ${JSON.stringify(k)}: ${JSON.stringify(v)}`)).length, 1, k);
 });
 
-test("文字：说明里的每类条数等于 summary（按中文名、不算墓碑和 drill:）", () => {
+test("文字：说明里的每类条数等于 summary（按中文名、不算墓碑，包含有效断点）", () => {
   const txt = Backup.text(SAMPLE, AT, "o");
   const n = Backup.summary(SAMPLE), shown = JSON.parse(txt)["说明"]["每类条数"];
   assert.deepEqual(shown, Object.fromEntries(Backup.CATS.map(c => [c.name, n[c.id]])));
   assert.deepEqual(Object.keys(shown), Backup.CATS.map(c => c.name));
-  assert.deepEqual(shown, {"已会": 2, "设置": 3, "学习记录和复习卡": 7, "生词本": 2, "阅读位置": 3, "界面状态": 2, "其他": 1});
+  assert.deepEqual(shown, {"已会": 2, "设置": 3, "学习记录和复习卡": 8, "生词本": 2, "阅读位置": 3, "界面状态": 2, "其他": 1});
 });
 
 test("文字：d 每条记录一行，条数不丢", () => {
@@ -189,12 +189,12 @@ test("文字：d 按类别排，每类里没删的在前、已删除（0）的�
   assert.deepEqual(keys, [
     "known:a", "known:b", "known:dead",
     "set:autoSay", "set:roundSize", "set:voice",   // roundSize 是 0 但属于设置，不排最后
-    "learn:u01-l01:g2", "learn:u01-l01:g10", "learn:u01-l02:g1", "srs:a", "srs:b", "log:2026-10-01", "log:2026-10-02",
-    "learn:u01-l01:g1", "srs:dead", "log:2026-09-30",
+    "learn:u01-l01:g2", "learn:u01-l01:g10", "learn:u01-l02:g1", "srs:a", "srs:b", "log:2026-10-01", "log:2026-10-02", "drill:u01",
+    "learn:u01-l01:g1", "srs:dead", "log:2026-09-30", "drill:u02",
     "vocab:abandon", "vocab:find", "vocab:gone",
     "last", "lw:u01-l01", "pos:u02-l01",
     "learnPeek", "vpGeo",
-    "drill:u01", "drill:u02", "zzz",
+    "zzz",
   ]);
 });
 

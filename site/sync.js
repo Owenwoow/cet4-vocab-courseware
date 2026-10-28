@@ -25,6 +25,9 @@ const Sync = (() => {
   }
   let doc = ls.get(P + "doc", null);
   if (!doc) { doc = migrate(); ls.set(P + "doc", doc); }
+  const upgrade = d => typeof SRS !== "undefined" ? SRS.upgradeDoc(d) : d;
+  doc = upgrade(doc);                              // 兼容升级不改变原修改时间，不能用本机迁移时间压过云端成果
+  ls.set(P + "doc", doc);
   const save = () => ls.set(P + "doc", doc);
 
   let cfg = ls.get(P + "cfg", null);   // {token, gist}，只存本机，不同步
@@ -36,14 +39,14 @@ const Sync = (() => {
   function get(k, d) { return k in doc ? doc[k][0] : d; }
   function set(k, v, lazy) {
     if (k in doc && same(doc[k][0], v)) return;
-    doc[k] = [v, Date.now()]; save();
+    doc[k] = [v, Date.now()]; doc = upgrade(doc); save();
     schedule(lazy ? LAZY_DELAY : DELAY);
   }
   /* 一次写一批（比如记录一个词群的几十个词），只存一次本地、只排一次推送 */
   function setMany(pairs) {
     const t = Date.now(); let n = 0;
     for (const [k, v] of pairs) { if (k in doc && same(doc[k][0], v)) continue; doc[k] = [v, t]; n++; }
-    if (n) { save(); schedule(DELAY); }
+    if (n) { doc = upgrade(doc); save(); schedule(DELAY); }
   }
   /* 导出：全部进度的深拷贝（不含 token） */
   const dump = () => JSON.parse(JSON.stringify(doc));
@@ -57,7 +60,7 @@ const Sync = (() => {
       doc[k] = [p[0], p[1]]; n++;
     }
     if (!n) return 0;
-    save();
+    doc = upgrade(doc); save();
     if (changed.length) changeFns.forEach(f => f(changed));
     schedule(DELAY);
     return n;
@@ -67,6 +70,7 @@ const Sync = (() => {
   /* ---------- 合并：按键取较新的；时间相同按值排序，保证各端结果一致 ---------- */
   const newer = (a, b) => a[1] > b[1] || (a[1] === b[1] && JSON.stringify(a[0]) > JSON.stringify(b[0]));
   function merge(remote) {
+    remote = upgrade(remote);
     const changed = [];
     for (const [k, r] of Object.entries(remote)) {
       const l = doc[k];
@@ -74,6 +78,7 @@ const Sync = (() => {
       if (!l || !same(l[0], r[0])) changed.push(k);
       doc[k] = r;
     }
+    doc = upgrade(doc);
     return changed;
   }
   const differs = remote => Object.keys(doc).some(k => !remote[k] || !same(remote[k], doc[k]));

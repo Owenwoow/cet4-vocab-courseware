@@ -22,6 +22,7 @@
 <!-- /dev-task 据此给分组定难度：碰到这些路径的组用更强的模型，合并后做代码审查；小改动碰到这里也按大改动走 -->
 
 - `site/srs.js`：复习规则，改错了复习安排会悄悄乱掉；改了要同步 `tests/srs.test.js`
+- `site/recall.js`：回忆提示、首次表现、有限补测和断点快照；改了同步 `tests/recall.test.js`。词卡沿用原布局，以模糊遮挡展开；日常新规则先读 `docs/plans/2026-10-28-active-recall.md`
 - `site/sync.js`：存储与云同步，所有进度都经过它，改错可能丢学习记录，或者两台设备互相覆盖
 - `site/sent.js` 开头的词组定位规则 + `pipeline/validate.py` 的 `check_notes`：两边必须一致，只改一边时页面上词组会错位，校验却照样通过
 - `pipeline/validate.py`：所有课数据的把关，部署工作流第一步就跑它；校验放松了，坏数据会直接上线
@@ -46,6 +47,7 @@
 - B 站 cookie 只在本机读，不打印、不进仓库、不进 Actions；字幕原文只缓存在 `work/bili/`，仓库里只放时间点
 - 学习进度（已会、设置、上次的课、每课阅读位置）统一走 `site/sync.js` 存取，不要直接写 localStorage；新增要跨设备同步的状态也走它。云端是用户自己的私密 Gist（`cet4-progress.json`），token 只存本机，绝不写进仓库
 - 背词数据也走 `sync.js`：`learn:<课id>:g<词群号>` = 学的日期，`srs:<词>` = 复习卡，`log:<日期>` = 当天评分计数，`drill:<范围>` = 巩固做到一半的进度（当天有效、做完记 0），`vocab:<原形>` = 生词本（释义快照 + 复习卡，和 `srs:` 分开存，所在词群记为学过时记 0「毕业」）；取消记 0（墓碑），不要删键
+- 回忆升级保留旧卡等级和到期日期，旧选择成绩不追认为独立回忆；`recall`、`skills`、`life`、`attempts` 嵌入原卡，毕业转卡时保留。`evening:<日期>` 独立记录晚间任务，`browse:<日期>` 只记浏览；专项不推进词义排期。备份只恢复同一学习日的有效断点，详见本次计划；不要用迁移时间覆盖旧卡的同步时间。
 - 复习规则只在 `site/srs.js` 改，改了同步改 `tests/srs.test.js`；规则说明写在文件开头和 `docs/plans/2026-10-01-vocab-portal.md`
 - 组件库 Web Awesome 只引主题变量 `themes/default.css` 和组件加载器，不引 `native.css`、不用 `wa-page`（会改动课文页）；版本号写死在 `index.html`。新增脚本要加进部署工作流的版本号 sed
 

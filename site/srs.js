@@ -1,5 +1,8 @@
 /* 滚动复习规则（纯函数，不碰页面和存储；浏览器里是全局 SRS，Node 里 require 进来跑单元测试）
 
+   2026-10-28 日常复习已改主动回忆，当前规则见 rateRecall 上方及 docs/plans/2026-10-28-active-recall.md。
+   旧卡等级先快照保留；下面 g/m/f、q 与自动题型的说明用于旧成绩兼容及原有新学流程，不再用于日常回忆评分。
+
    一句话：学完次日复习，之后每次从「这次复习的日子」往后数：隔 3 天 → 隔 7 天 → 按熟练度拉开（2026-10-21 改，见 docs/plans/2026-10-21-lighter-review.md）。
    每张卡记 学习日 a、已过站数 s、到期日 d；间隔从复习那天算，所以哪天没做、晚做几天，后面的站整体往后顺，不会第二天又到期。
      学完 → 次日（newCard，s=0）
@@ -82,7 +85,7 @@ const SRS = (() => {
   /* 关掉的题型：opt.off 是题型编号的数组（如 [TYPE.LISTEN, TYPE.SPELL]），不传就是都开着 */
   const offOf = opt => new Set(opt.off || []);
   /* opt.phrase：按词组卡算（不传就看卡片自己）；opt.off：关掉的题型 */
-  function level(c, opt = {}) {
+  function legacyLevel(c, opt = {}) {
     if (c.z) return 5;
     const h = hist(c), k = streak(c), ph = opt.phrase ?? isPhrase(c), q = ph ? 3 : c.q || 0;   // 词组卡不看 q
     if (h.endsWith("f") || ((c.l || 0) >= 2 && k < 2)) return 1;
@@ -91,6 +94,60 @@ const SRS = (() => {
     if (c.s >= 4 && k >= 3 && q >= 2) return 4;
     if (c.s >= 3 && k >= 2) return 3;
     return 2;
+  }
+
+  /* 2026-10-28：词义等级与专项能力分开。旧卡只追加等级快照，不回算旧成绩为主动回忆。
+     独立到期成功进站；费劲用标准间隔的 70%；提示保持站数、两天后；失败次日重来。
+     跨天独立证据：熟悉 s≥3/2 天，掌握 s≥4/3 天，牢记 s≥5/4 天。
+     提前成功、同日再答和补测不增加稳定证据。完整方案见 2026-10-28-active-recall.md。 */
+  function level(c, opt = {}) { return c.z ? 5 : c.recall?.v === 1 && Number.isInteger(c.recall.level) ? c.recall.level : legacyLevel(c, opt); }
+  function upgradeCard(c, key = "", stamp = 0, opt = {}) {
+    if (!c || typeof c !== "object" || typeof c.d !== "string" || c.recall?.v === 1) return c;
+    return {...c, life: c.life || `${key}|${stamp}`, recall: {v: 1, level: legacyLevel(c, opt), days: 0, day: "", result: "", history: []}, skills: c.skills || {}, attempts: c.attempts || []};
+  }
+  /* 同步时间保持原样；只对有效卡升级。可在载入、导入和合并后重复调用。 */
+  function upgradeDoc(doc) {
+    const off = [...(doc["set:quizListen"]?.[0] === false ? [TYPE.LISTEN] : []), ...(doc["set:quizSpell"]?.[0] === false ? [TYPE.SPELL] : [])];
+    return Object.fromEntries(Object.entries(doc).map(([k, p]) => [k, /^(srs|vocab):/.test(k) ? [upgradeCard(p[0], k, p[1], {off}), p[1]] : p]));
+  }
+  const freshCard = (date, life) => upgradeCard(newCard(date), life, 0);
+  const recallResult = (correct, hinted = false, effort = false) => !correct ? "failed" : hinted ? "hinted" : effort ? "effort" : "independent";
+  const recallGrade = result => result === "failed" ? "f" : result === "hinted" ? "m" : "g";
+  function rateRecall(card, result, t, opt = {}) {
+    if (!["independent", "effort", "hinted", "failed"].includes(result)) throw new Error("无效的回忆结果");
+    const c = upgradeCard(card, opt.key), id = opt.id;
+    if (id && (c.attempts || []).includes(id)) return card;
+    const due = isDue(c, t), r = recallGrade(result), old = c.recall;
+    const evidence = due && old.day !== t && (result === "independent" || result === "effort");
+    const days = r === "g" ? (old.days || 0) + (evidence ? 1 : 0) : 0;
+    const rec = {...old, days, day: due ? t : old.day, result,
+      results: id ? {...old.results, [id]: {result, hints: opt.hints || []}} : old.results || {},
+      history: [...(old.history || []), {id, day: t, result, hints: opt.hints || [], due}].slice(-H_LEN)};
+    let n = {...c, recall: rec, attempts: id ? [...(c.attempts || []), id] : c.attempts || [], r, n: (c.n || 0) + 1, t};
+    if (r !== "g") {
+      rec.level = r === "f" ? 1 : 2;
+      const formal = due || r === "f";
+      n = {...n, z: 0, h: formal ? (hist(c) + r).slice(-H_LEN) : hist(c), v: reviews(c) + (formal ? 1 : 0)};
+      if (r === "f") return {...n, a: t, s: 0, d: add(t, 1), l: (c.l || 0) + 1};
+      const check = add(t, 2);
+      return {...n, d: due ? examCap(check, t, opt.key || "", opt.exam) : c.d < check ? c.d : check};
+    }
+    if (!evidence) return n;                         // 提前或同日再答：不推进，也不覆盖首次失败的等级
+    const s = (c.s || 0) + 1;
+    const earned = s >= 5 && days >= 4 ? 5 : s >= 4 && days >= 3 ? 4 : s >= 3 && days >= 2 ? 3 : 2;
+    rec.level = Math.max(level(c), earned);
+    n = {...n, s, h: (hist(c) + r).slice(-H_LEN), v: reviews(c) + 1};
+    let gap = stationGap(s, level(n));
+    if (result === "effort") gap = Math.max(1, Math.floor(gap * 0.7));
+    return {...n, d: examCap(add(t, spread(gap, opt.key || "", t)), t, opt.key || "", opt.exam)};
+  }
+  function rateSkill(card, ability, r, t, opt = {}) {
+    if (!["recognition", "listen", "spell", "context"].includes(ability)) throw new Error("无效的专项类型");
+    const c = upgradeCard(card, opt.key), id = opt.id;
+    if (id && (c.attempts || []).includes(id)) return card;
+    const old = c.skills?.[ability] || {n: 0, g: 0, m: 0, f: 0};
+    return {...c, attempts: id ? [...(c.attempts || []), id] : c.attempts || [],
+      skills: {...c.skills, [ability]: {...old, n: (old.n || 0) + 1, [r]: (old[r] || 0) + 1, t, r}}};
   }
 
   /* 出什么题：2 级在看词选义 / 听音选义间按正式复习次数轮换；词组卡只有看词组选义和 5 级的快速抽查（翻卡）。
@@ -149,7 +206,7 @@ const SRS = (() => {
   const chop = (c, t, key = c.w || "", exam = EXAM) => ({...c, z: 1, s: Math.max(c.s, 4), d: examCap(add(t, LV_DAYS[5]), t, key, exam)});
 
   /* 难词本：最近一次是忘了，或忘过不止一次，或还有没分清的易混词（cf） */
-  const isHard = c => c.r === "f" || (c.l || 0) >= 2 || !!(c.cf && c.cf.length);
+  const isHard = c => c.r === "f" || c.recall?.level === 1 || c.recall?.result === "hinted" || (c.l || 0) >= 2 || !!(c.cf && c.cf.length);
 
   /* 今天到期的：拖得最久的先来，同一天到期的火苗多的先来，再按课本顺序（首页数数、找拖得最久的用；出题顺序见 queue） */
   function dueList(items, t) {
@@ -283,7 +340,7 @@ const SRS = (() => {
   const shift = (c, n) => ({...c, a: add(c.a, n), d: add(c.d, n)});
 
   return {EXAM, TYPE, today, reviews, add, diff, dow, monday, stationGap, spread, stationDue, examCap, newCard, isDue,
-    rate, chop, isHard, dueList, isPhrase, level, streak, pickType, gradeChoice, gradeSpell, editDist, similar, senseKeys, posSet, distractorTag, confAdd, confDrop, shuffleSpread, pairSimilar,
+    rate, rateRecall, rateSkill, recallResult, recallGrade, legacyLevel, upgradeCard, upgradeDoc, freshCard, chop, isHard, dueList, isPhrase, level, streak, pickType, gradeChoice, gradeSpell, editDist, similar, senseKeys, posSet, distractorTag, confAdd, confDrop, shuffleSpread, pairSimilar,
     isMust, mustKind, band, queue, loadTier, forecast, shift};
 })();
 if (typeof module === "object" && module.exports) module.exports = SRS;

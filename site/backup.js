@@ -10,7 +10,7 @@
    导入按键前缀分类，可勾选类别：
      已会 known: / 设置 set: / 学习记录和复习卡 learn: srs: log:（三者绑在一起，拆开会对不上）/ 生词本 vocab: /
      阅读位置 last、lw:、pos: / 界面状态 vpGeo、peekTab、listFold、listHide、sideOff、learnPeek / 其他（认不出的键，以后新增的）
-     drill:（巩固做到一半，当天有效）不导入。
+     drill:（练习断点）并入学习记录，只恢复同一学习日的有效断点；晚间任务 evening: 也在学习记录中。
    两种方式：
      merge 合并 = 每个键取时间较新的（规则同 sync.js 的 merge），永远不会把本机更新的记录改回去
      overwrite 覆盖 = 勾选类别里文件有的键写入文件的值、时间记 now；文件里没有、本机有的：
@@ -22,26 +22,24 @@ const Backup = (() => {
   const CATS = [
     {id: "known", name: "已会", prefixes: ["known:"], tomb: true},
     {id: "set", name: "设置", prefixes: ["set:"]},
-    {id: "study", name: "学习记录和复习卡", prefixes: ["learn:", "srs:", "log:"], tomb: true},
+    {id: "study", name: "学习记录和复习卡", prefixes: ["learn:", "srs:", "log:", "evening:", "browse:", "drill:"], tomb: true},
     {id: "vocab", name: "生词本", prefixes: ["vocab:"], tomb: true},
     {id: "pos", name: "阅读位置", keys: ["last"], prefixes: ["lw:", "pos:"]},
     {id: "ui", name: "界面状态", keys: ["vpGeo", "peekTab", "listFold", "listHide", "sideOff", "learnPeek"]},
     {id: "other", name: "其他"},
   ];
-  const SKIP = ["drill:"];
   const BY_ID = Object.fromEntries(CATS.map(c => [c.id, c]));
   const same = (a, b) => JSON.stringify(a) === JSON.stringify(b);
   const newer = (a, b) => a[1] > b[1] || (a[1] === b[1] && JSON.stringify(a[0]) > JSON.stringify(b[0]));
 
-  /* 键属于哪一类；不导入的返回 null */
+  /* 键属于哪一类；练习断点与卡片一起归学习记录 */
   function catOf(k) {
-    if (SKIP.some(p => k.startsWith(p))) return null;
     for (const c of CATS) if ((c.keys || []).includes(k) || (c.prefixes || []).some(p => k.startsWith(p))) return c.id;
     return "other";
   }
   const isTomb = (k, v) => v === 0 && !!(BY_ID[catOf(k)] || {}).tomb;   // 只有这几类的 0 是墓碑，设置的 0 是正常值
 
-  /* 每类有几条（不算墓碑、不算不导入的） */
+  /* 每类有几条（不算墓碑，含练习断点） */
   function summary(fileDoc) {
     const n = Object.fromEntries(CATS.map(c => [c.id, 0]));
     for (const [k, [v]] of Object.entries(fileDoc)) { const c = catOf(k); if (c && !isTomb(k, v)) n[c]++; }
@@ -50,15 +48,18 @@ const Backup = (() => {
 
   /* 要写入的 [键, [值, 时间]] 列表。cats = 勾选的类别 id，defaults = 设置的默认值 {名字: 值}（不带 set: 前缀） */
   function plan(localDoc, fileDoc, cats, mode, now, defaults = {}) {
+    const rules = typeof SRS !== "undefined" ? SRS : typeof require === "function" ? require("./srs.js") : null;
+    const task = typeof Recall !== "undefined" ? Recall : typeof require === "function" ? require("./recall.js") : null;
+    if (rules) { localDoc = rules.upgradeDoc(localDoc); fileDoc = rules.upgradeDoc(fileDoc); }
     const on = new Set(cats), out = [];
     for (const [k, p] of Object.entries(fileDoc)) {
       if (!on.has(catOf(k))) continue;
+      if (k.startsWith("drill:") && p[0] && p[0].d !== (rules ? rules.today(now) : day(now))) continue;
       const l = localDoc[k];
       if (mode === "merge") { const q = [p[0], Math.min(p[1], now)]; if (!l || newer(q, l)) out.push([k, q]); }   // 将来的时间夹到 now，免得这个键在所有设备上永远赢
       else out.push([k, [p[0], now]]);   // 覆盖：值相同也写 now，不然云端更新的另一个值同步回来会把它盖掉
     }
-    if (mode !== "overwrite") return out;
-    for (const [k, l] of Object.entries(localDoc)) {
+    if (mode === "overwrite") for (const [k, l] of Object.entries(localDoc)) {
       if (k in fileDoc) continue;
       const c = catOf(k);
       if (!on.has(c)) continue;
@@ -67,6 +68,10 @@ const Backup = (() => {
         const name = k.slice(4);
         if (name in defaults) out.push([k, [defaults[name], now]]);
       }
+    }
+    if (task && rules) {
+      const doc = rules.upgradeDoc({...localDoc, ...Object.fromEntries(out)});
+      for (const p of out) if (p[0].startsWith("drill:") && p[1][0]) p[1] = [task.validProgress(p[1][0], doc, rules.today(now)), p[1][1]];
     }
     return out;
   }
@@ -79,15 +84,17 @@ const Backup = (() => {
     "learn:<课id>:g<词群号>": "学的日期",
     "srs:<词>": "复习卡：a 学习日、s 已过几站、d 下次复习日、l 忘过几次、r 最近一次结果（g 记得 / m 模糊 / f 忘了）、n 复习次数、"
       + "v 记进熟练度的次数、t 最近复习日、h 最近 6 次第一遍结果、q 答对过的最难题型（0 看词选义 / 1 听音 / 2 例句或看义选词 / 3 拼写）、"
-      + "z 斩、p 学新整群过关的日期、cf 易混词、k 课id、g 词群号、f 火苗、o 词条序号",
-    "log:<日期>": "当天评分次数 g / m / f、dv 当天复习的到期词数、mv 当天做的必做数（昨天学的等还没做第一次复习的词）",
+      + "z 斩、p 学新整群过关的日期、cf 易混词、k 课id、g 词群号、f 火苗、o 词条序号；life 卡片生命周期；recall 新回忆等级与跨天证据（不追认旧选择成绩）；skills 分专项成绩；attempts 已计分标识",
+    "log:<日期>": "当天评分次数 g / m / f（含旧版评分）、dv 当天复习的到期词数、mv 当天做的必做数；recall 独立/费劲/提示/失败的新回忆计数；tasks 按早上/晚间/自由回忆分记；skills 专项计数",
     "vocab:<原形>": "生词本：w 原形、x 点到的写法、m 释义、p 音标、k 出处课、e 出处词条、at 加入日期、o 加入时刻、bk 书中位置、ph 例句词组，另带复习卡字段",
     "known:<词>": "1 已会",
     "set:<名字>": "设置",
     "last": "上次读的课",
     "lw:<课id>、pos:<课id>": "阅读位置",
     [BY_ID.ui.keys.join("、")]: "界面状态",
-    "drill:<范围>": "巩固做到一半的进度（不导入）",
+    "drill:<范围>": "练习断点，只恢复同一学习日且对应卡片/词群仍有效的进度；rc 含提示、首次表现、有限补测及任务标识",
+    "evening:<日期>": "晚间独立任务：items 按卡片生命周期保存结果，finished 完成，skipped 跳过；不以白天答题日判断完成",
+    "browse:<日期>": "途中浏览记录，不计回忆成功",
   };
   const HOWTO = "设置页 → 数据 → 导入…，选这个文件；导入时只读 app、v、d，这段说明会被忽略。"
     + "d 里每条是 [值, 修改时间（毫秒）]；已会、学习记录和复习卡、生词本里值为 0 表示已删除（合并时靠它把删除同步过去），设置里的 0 就是 0。";
@@ -102,7 +109,7 @@ const Backup = (() => {
     }
     return x.length - y.length;
   }
-  /* 在文件里排哪一类（drill: 不导入但照样导出，排在其他里）和类里的先后（先精确键，再按 prefixes 的顺序：learn → srs → log） */
+  /* 在文件里排哪一类，类内先精确键，再按 prefixes 的顺序（learn → srs → log → 晚间/浏览/断点） */
   const slot = k => CATS.findIndex(c => c.id === (catOf(k) || "other"));
   function sub(k) {
     const c = CATS[slot(k)];

@@ -5,10 +5,11 @@
      learn:<课id>:g<词群号> = 学的日期 YYYY-MM-DD（取消记 0）
      srs:<词> = {a 学习日, s 已过站数, d 到期日, l 忘记次数, r 最近评分, n 复习次数, v 记进熟练度的次数, t 最近复习日,
                 h 最近 6 次第一遍结果, q 答对过的最难题型, z 斩, p 学习新词整群过关的日期（手动勾的词群没有）, cf 易混词,
-                k 课id, g 词群号, f 火苗, o 词条序号}（取消记 0）
-     log:<日期> = {g, m, f 当天评分次数, dv 当天复习的到期词数, mv 其中必做的词数（还没做过第一次复习的，见 SRS.isMust；每天上限只扣 dv − mv）}
+                k 课id, g 词群号, f 火苗, o 词条序号, life 生命周期, recall 新回忆等级/跨天证据/首次结果, skills 各专项成绩, attempts 已计分标识}（取消记 0）
+     log:<日期> = {g, m, f 当天评分次数, dv 当天复习的到期词数, mv 其中必做的词数（还没做过第一次复习的，见 SRS.isMust；每天上限只扣 dv − mv）, recall 新回忆计数, tasks 分早上/晚间/自由回忆, skills 专项计数}
+     evening:<日期> = 晚间独立任务（items 按卡片 life 保存首次及补测，finished 完成，skipped 跳过）；browse:<日期> = 被动浏览
      drill:<范围> = 巩固做到一半的进度（同一天有效，做完记 0），字段见 progSave
-     set:<名字> = 设置（app.js 的 DEFAULTS）；这里用到学习新词、复习的几项：learnStages learnSize autoSay autoEx autoNext slowMode quizListen quizSpell roundSize drillMode drillOrder
+     set:<名字> = 设置（app.js 的 DEFAULTS）；这里用到学习新词、复习的几项：learnStages learnSize autoSay autoEx autoNext slowMode quizListen quizSpell roundSize drillMode drillOrder practiceType
      （学习新词页的词群速览 = 右下角「群」打开课文页同款浮层，见 lpSrc；速览本身不存学习数据）
      vocab:<原形> = 生词本：{w 原形, x 点到的写法, m 释义, p 音标, k 出处课id, e 出处词条（空 = 没有例句，如扩展词）,
                 at 加入日期, o 加入时刻, bk 书中位置 [课id, 词条序号, 是否扩展词], ph 1 = 例句里标出的词组（w 是词组原形，x 是句中写法、拆开的用「 … 」连）} + 复习卡字段 a s d l r n t（移出记 0）。
@@ -16,6 +17,10 @@
 "use strict";
 const Study = (() => {
   const T = () => SRS.today();
+  const newId = () => globalThis.crypto?.randomUUID?.() || `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+  const practiceOf = () => { const p = new URLSearchParams(location.hash.split("?")[1] || "").get("practice"); return ["meaning", "recognition", "reverse", "listen", "spell", "context"].includes(p) ? p : ""; };
+  const nightKey = () => "evening:" + T();
+  const nightRecord = () => { const r = Sync.get(nightKey(), 0); return {d: T(), finished: false, skipped: false, ...r, items: r?.items || {}}; };
   const pad2 = n => String(n).padStart(2, "0");
   const WEEK = ["日", "一", "二", "三", "四", "五", "六"];
   const md = d => `${+d.slice(5, 7)}/${+d.slice(8)}`;
@@ -37,14 +42,14 @@ const Study = (() => {
   function addVocab(r) {
     const t = T();
     if (known.has(r.w)) setKnown(r.w, false);       // 标过已会又遇到不认识，说明没会
-    Sync.set("vocab:" + r.w, {...SRS.newCard(t), ...r, at: t, o: Date.now()});
+    Sync.set("vocab:" + r.w, {...SRS.freshCard(t, newId()), ...r, at: t, o: Date.now()});
   }
   const removeVocab = w => Sync.set("vocab:" + w, 0);
   /* 书上已在复习的词又不认识了：记一次忘了，明天再来、进难词本 */
   function forgetBook(w) {
     const c = Sync.get("srs:" + w, 0); if (!c) return;
     if (known.has(w)) setKnown(w, false);
-    Sync.set("srs:" + w, SRS.rate(c, "f", T()));
+    Sync.set("srs:" + w, SRS.rateRecall(c, "failed", T(), {id: newId(), key: w, exam: S.examDate}));
   }
   const logOf = d => Sync.get("log:" + d, null) || {g: 0, m: 0, f: 0, dv: 0};
   const groupInfo = (k, g) => {
@@ -62,7 +67,9 @@ const Study = (() => {
         const v = vocabGet(e.word);
         if (v && !(v.bk && v.bk[2])) pairs.push(["vocab:" + e.word, 0]);
         if (Sync.get("srs:" + e.word, 0)) continue;
-        pairs.push(["srs:" + e.word, {...SRS.newCard(date), k: les.id, g: g.no, f: e.freq, o: e.no}]);
+        // 生词毕业只换书中元数据，保留其排期、历史和能力；vocab.p 是音标，不能复制成新学日期。
+        const base = v && !(v.bk && v.bk[2]) ? Object.fromEntries(Object.entries(v).filter(([key]) => ["a", "s", "d", "l", "r", "n", "v", "h", "q", "t", "z", "cf", "life", "recall", "skills", "attempts"].includes(key))) : SRS.freshCard(date, newId());
+        pairs.push(["srs:" + e.word, {...base, k: les.id, g: g.no, f: e.freq, o: e.no}]);
       }
     }
     Sync.setMany(pairs);
@@ -281,10 +288,16 @@ const Study = (() => {
      答一个存一个，同一天再进同一范围接着做，日期不是今天就作废；一轮做完记 0 ---------- */
   const progKey = sc => "drill:" + sc;
   const progGet = sc => { const v = Sync.get(progKey(sc), 0); return v && v.d === T() ? v : null; };
-  function progSave() {
+  function progSave(extra = []) {
     if (!D || !D.save) return;
+    if (D.rc && D.rc.d !== T()) return;
+    if (D.rc) {
+      // 当前卡随后还会展开提示/揭晓，保存快照，不能和 Sync 文档共用对象导致“值相同”而漏写。
+      Sync.setMany([...extra, [progKey(D.progressScope), Recall.snapshot(D.rc, D.mk)]]);
+      return;
+    }
     const st = {}; for (const [w, s] of D.st) st[w] = {...s};   // 拷一份：D.st 里的对象之后还会改
-    Sync.set(progKey(D.sc), {d: T(), ...(D.learn ? {} : {w: D.items.map(x => x.word)}), done: [...D.done], st, rated: Object.fromEntries(D.rated), ...(D.lg && D.lg.gs.length ? {g: D.lg.gs.length === 1 ? D.lg.gs[0].g.key : D.lg.gs.map(p => p.g.key)} : {}), ...(D.mk ? {mk: D.mk} : {})}, true);
+    Sync.setMany([...extra, [progKey(D.progressScope || D.sc), {d: T(), id: D.attemptId, ...(D.learn ? {} : {w: D.items.map(x => x.word)}), done: [...D.done], st, rated: Object.fromEntries(D.rated), ...(D.lg && D.lg.gs.length ? {g: D.lg.gs.length === 1 ? D.lg.gs[0].g.key : D.lg.gs.map(p => p.g.key)} : {}), ...(D.mk ? {mk: D.mk} : {})}]]);
   }
   const progClear = sc => Sync.set(progKey(sc), 0, true);
 
@@ -366,7 +379,7 @@ const Study = (() => {
     // 「继续」去上次读的课；在别处学完勾掉的词群已经排到后面一课时，去下一个没勾的词群那课（进去后的定位见 app.js 的 cont）
     const rd = ready.some(l => l.id === store.get("last")) ? store.get("last") : ready[0] && ready[0].id, nx = nextGroups(1)[0];
     const last = nx && learnMarks().length && ready.findIndex(l => l.id === nx.lid) > ready.findIndex(l => l.id === rd) ? nx.lid : rd, lastL = last && last.match(/u(\d+)-l(\d+)/);
-    const nightDone = todays.length && todays.every(x => x.card.t === t);
+    const night = Recall.nightStats(todays, nightRecord()), nightDone = night.finished;
     const go = (sc, label) => (progGet(sc) ? "接着做" : label);   // 今天做到一半的范围
     const dueHalf = !!progGet("due");                // 这一轮做到一半：答错的已排到明天、到期数可能清零了，还要能接着做
     const nxn = nx && counts.get(nx.key), batch = nx && nextBatch();   // batch：一次学多群时的「下一批」
@@ -378,9 +391,10 @@ const Study = (() => {
     const restLine = !rest.length ? ok(`到期 / 积压 · ${rT ? `${rT} 个做完了` : "今天没有"}`)
       : `<b class="rk">到期 / 积压 · ${rest.length} 个</b>${oldest ? `（最早拖了 ${oldest} 天）` : ""}${!left ? ` · 今天已做满 ${cap()} 个，剩下的排到后面几天`
         : `${rest.length > left ? ` · 今天先做 ${left} 个（上限 ${cap()}）` : ""}${must.length ? "" : perRound(Math.min(rest.length, left))}`}`;
-    const doneLines = [ok(`今天的任务做完了：必做 ${mT} + 其余 ${oDone}`), ...(rest.length ? [`剩下 ${rest.length} 个已排到明天以后`] : [])];
+    const morning = logOf(t).tasks?.due, morningResult = morning ? `首次回忆：独立 ${(morning.independent || 0) + (morning.effort || 0)} · 提示 ${morning.hinted || 0} · 未想起 ${morning.failed || 0}` : "";
+    const doneLines = [ok(`今天的任务做完了：必做 ${mT} + 其余 ${oDone}`), ...(rest.length ? [`剩下 ${rest.length} 个已排到明天以后`] : []), ...(morningResult ? [morningResult] : [])];
     const s1 = step(finished, 1, "早上复习",
-      !L ? "今天没有到期的词" : finished ? doneLines : [mustLine, restLine],
+      !L ? "今天没有到期的词" : finished ? doneLines : [mustLine, restLine, ...(morningResult ? [morningResult] : [])],
       must.length || (rest.length && left) || dueHalf ? btn("#/drill/due", go("due", "开始"), 'variant="brand"') : "");
     // 学新：「学习新词」按书顺序一群一群学，学完自动记为今天学的；在电子书、视频里学完的在「学习记录」里勾上，学习新词就跳过它。
     // 复习偏多：今天最多 1 群，学够了按钮换成不显眼的「仍要再学 1 群」；积压太多：今天先不学新词，「仍要学 1 群」点了照样能学（都按 1 群取词，见 learnN）
@@ -391,12 +405,17 @@ const Study = (() => {
       : tier === "busy" ? (groups ? `${learnedTxt}；复习偏多，今天学 1 群就够了` : `${learnedTxt ? learnedTxt + "；" : ""}复习偏多，今天最多 1 群 · ${nextTxt}`)
       : `${learnedTxt ? learnedTxt + "；" : ""}${nextTxt}`;
     const learnBtn = !nx ? "" : stop ? btn("#/drill/learn", groups ? "仍要再学 1 群" : "仍要学 1 群", 'appearance="outlined"') : btn("#/drill/learn", go("learn", "学习新词"), 'variant="brand"');
-    const s2 = step(groups > 0, 2, "学新", s2desc,
+    const learning = progGet("learn"), learnedProgress = learning ? ` · 本轮已过 ${learning.done?.length || 0} 个词，未完成词群将继续` : "";
+    const s2 = step(groups > 0 && !learnHalf, 2, "学新", s2desc + learnedProgress,
       `<span class="acts">${lastL ? btn(`#/${last}/cont`, `继续 U${+lastL[1]} L${+lastL[2]}`) : ""}${btn("#/log", "📝 学习记录")}${learnBtn}</span>`);
-    const s3 = step(false, 3, "途中看", todays.length ? `今天的 ${todays.length} 个词，掏出手机随时过一眼` : weekend ? "看看本周学的词" : "记录今天学的之后，这里能快速浏览",
+    const viewed = !!Sync.get("browse:" + t, 0);
+    const s3 = step(viewed, 3, "途中看", todays.length ? `今天 ${todays.length} 个词${viewed ? " · 已浏览（不计回忆成绩）" : " · 随时浏览，不计回忆成绩"}` : weekend ? "看看本周学的词" : "记录今天学的之后，这里能快速浏览",
       todays.length ? btn("#/list/today", "浏览") : weekend ? btn("#/list/week", "浏览") : "");
-    const s4 = step(nightDone, 4, "睡前巩固", todays.length ? (nightDone ? "今天学的都测过一遍了" : `今天学的 ${todays.length} 个词测一遍（学习记录里勾的、生词也在内）`) : "今天还没有新学的词",
-      todays.length ? btn("#/drill/today", go("today", nightDone ? "再来" : "开始"), nightDone && !progGet("today") ? undefined : 'variant="brand"') : "");
+    const nrec = nightRecord(), activeNight = todays.map(x => nrec.items[x.card.life]).filter(Boolean);
+    const weak = activeNight.filter(r => ["hinted", "failed"].includes(r.first) && !Recall.independent(r.retry)).length;
+    const nightResult = activeNight.length ? ` · 独立 ${activeNight.filter(r => Recall.independent(r.first)).length} / 提示 ${activeNight.filter(r => r.first === "hinted").length} / 未想起 ${activeNight.filter(r => r.first === "failed").length}` : "";
+    const s4 = step(nightDone, 4, "晚间巩固", todays.length ? `${night.skipped ? "已跳过，可继续" : nightDone ? `任务完成${weak ? ` · 待加强 ${weak}` : ""}` : "主动回忆"} · 已做 ${night.done}/${night.total}${night.pending ? ` · 待做 ${night.pending}` : progGet("today") ? " · 待完成补测" : ""}${nightResult}` : "今天还没有新学的词",
+      todays.length ? `<span class="acts">${btn("#/drill/today", go("today", nightDone ? "查看结果" : "开始"), nightDone ? undefined : 'variant="brand"')}${!nightDone && !night.skipped ? '<button id="nightSkip">今天跳过</button>' : ""}</span>` : "");
     return `<wa-card class="mod today"><div slot="header" class="mh"><b>今天</b><a href="#/drill">自由抽查 →</a></div>
       <ol class="steps4">${s1}${s2}${s3}${s4}</ol></wa-card>`;
   }
@@ -478,7 +497,7 @@ const Study = (() => {
     return `<wa-card class="mod"><div slot="header" class="mh"><b>熟练度</b><span class="sub">共 ${cards.length} 词 · 掌握以上 ${n[4] + n[5]} 个</span></div>
       <div class="lvbar">${order.map(seg).join("")}</div>
       <div class="lvlegend">${order.map(i => `<a href="#/list/lv:${i}">${lvDot(i)}${LV_NAME[i]} <b>${n[i]}</b></a>`).join("")}</div>
-      <p class="note">按每个词第一遍作答算：生疏 = 最近答错；掌握要能看中文想出英文；牢记要拼得出或手动「斩」过。点一档看具体的词</p></wa-card>`;
+      <p class="note">词义按首次主动回忆与跨天独立证据评估；提示后为认识，未想起为生疏。旧等级继承，听音、拼写、语境另记；「斩」是人工标记。点一档看具体的词。</p></wa-card>`;
   }
   const MODULES = [modHero, modToday, modBacklog, modMastery, modWeek, modLinks, modUnits];
   const FOOT = `<p class="foot">内容取自《英语四级 · 你还在背单词吗》，仅供个人学习，非官方。· <a href="https://github.com/Owenwoow/cet4-vocab-courseware" target="_blank" rel="noopener">GitHub 项目</a></p>`;
@@ -534,6 +553,7 @@ const Study = (() => {
 
   /* ---------- 浏览（途中看）：紧凑列表，可遮住释义 ---------- */
   async function renderList(sc) {
+    if (sc === "today") Sync.set("browse:" + T(), {at: Date.now()});
     const info = scopeInfo(sc);
     if (!info) { location.hash = "#/"; return; }
     setHead(info.title);
@@ -580,6 +600,7 @@ const Study = (() => {
   const KIND_NAME = {study: "新词", mean: "看词选义", listen: "听音选义", cloze: "例句填空", reverse: "看义选词", spell: "拼写", flip: "翻卡自评"};
   const ORDERS = [["course", "课件顺序"], ["alpha", "字母顺序"], ["freq", "重要性"], ["random", "随机"]];
   const MODES = [["quiz", "智能出题"], ["flip", "翻卡自评"]];
+  const PRACTICES = [["meaning", "词义回忆"], ["recognition", "看词选义"], ["reverse", "看义选词"], ["listen", "听音"], ["spell", "拼写"], ["context", "语境"]];
   function renderPicker() {
     setHead("巩固模式");
     const n = sc => scopeInfo(sc).items().length;
@@ -588,15 +609,15 @@ const Study = (() => {
       ["lastweek", "上周学的"], ["weeks", "本周 + 上周"], ["hard", "难词本"], ["vocab", "生词本"], ["all", "全部已学"]];
     const units = BOOK.parts.flatMap(p => p.units);
     view().innerHTML = `<div class="picker">
-      <h1>巩固模式</h1><p class="note">智能出题：按每个词的熟练度出四选一、听音、例句填空、拼写，答错的这一轮里会再出，直到答对。翻卡自评：看英文想意思，翻开后自己打分。</p>
-      <section class="panel"><h2>出题方式</h2>
-        <div class="seg">${MODES.map(([v, l]) => `<button data-dmode="${v}" class="${S.drillMode === v ? "on" : ""}">${l}</button>`).join("")}</div>
+      <h1>自由抽查</h1><p class="note">词义回忆会按首次回忆调整已学词的排期；选择识别、听音、拼写、语境只记各自成绩，不改变词义熟练度，也不代替早晚任务。</p>
+      <section class="panel"><h2>练什么</h2>
+        <div class="seg">${PRACTICES.map(([v, l]) => `<button data-practice="${v}" class="${(S.practiceType || "meaning") === v ? "on" : ""}">${l}</button>`).join("")}</div>
         <p class="note">「今天到期」顺序固定：还没做过第一次复习的（昨天学的、昨天忘的）是必做，先出完、不占每天上限；其余复习间隔短的先、拖过的先、生疏的先，复习满 3 次的打乱；「学习新词」按书顺序一群一群学，总是先看词卡再出题；每个新词过几关、一次学多少在设置里改</p></section>
       <section class="panel"><h2>抽查顺序</h2>
         <div class="seg">${ORDERS.map(([v, l]) => `<button data-order="${v}" class="${S.drillOrder === v ? "on" : ""}">${l}</button>`).join("")}</div>
         <p class="note">建议：当天、次日用课件顺序（借词群联系）；周末、二刷用字母或随机（去掉提示，检验真记住）；冲刺用重要性（🔥🔥🔥 → 🔥）</p></section>
       <section class="panel"><h2>抽哪些词</h2><div class="scopes">
-        ${scopes.map(([v, l, c, sub]) => { const k = c ?? n(v); return `<a class="sc${k ? "" : " off"}" href="#/drill/${v}"><b>${l}</b><small>${sub || k + " 词"}</small></a>`; }).join("")}</div>
+        ${scopes.map(([v, l, c, sub]) => { const k = c ?? n(v); return `<a class="sc${k ? "" : " off"}" href="#/drill/${v}${v === "learn" ? "" : `?practice=${S.practiceType || "meaning"}`}"><b>${l}</b><small>${sub || k + " 词"}</small></a>`; }).join("")}</div>
         <div class="row"><span><b>按书上的范围</b><small>还没记为学过的词也能抽，但不排复习</small></span>
           <select id="bookScope"><option value="">选单元或课…</option>${units.map(u => `<option value="u${pad2(u.no)}">Unit ${u.no}</option>` +
             u.lessons.filter(l => l.ready).map(l => `<option value="${l.id}">　Unit ${u.no} · Lesson ${l.no}</option>`).join("")).join("")}</select></div></section></div>`;
@@ -666,15 +687,17 @@ const Study = (() => {
     const ex = x.nb && x.src ? x.src.ex : x.e.ex;
     if (!ex) return null;
     const keys = (x.nb && x.src ? [x.src.x] : ex.key && ex.key.length ? ex.key : [x.word]).slice().sort((a, b) => b.length - a.length);
-    let en = ex.en, hit = false;
-    for (const k of keys) en = en.replace(new RegExp("(?<![A-Za-z])" + k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "(?![A-Za-z])", "gi"), () => { hit = true; return "\u0000"; });
-    return hit ? {html: esc(en).replace(/\u0000/g, `<span class="blank">　?　</span>`), zh: ex.zh} : null;
+    let en = ex.en; const forms = [];
+    for (const k of keys) en = en.replace(new RegExp("(?<![A-Za-z])" + k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "(?![A-Za-z])", "gi"), hit => { forms.push(hit); return "\u0000"; });
+    let i = 0;
+    return forms.length ? {html: esc(en).replace(/\u0000/g, '<span class="blank"><span>?</span></span>'), filled: esc(en).replace(/\u0000/g, () => `<mark>${esc(forms[i++])}</mark>`), forms: [...new Set(forms)], full: ex.en, zh: ex.zh} : null;
   }
   /* 这个词这次出什么题 */
   function kindFor(x) {
     if (D.learn && !(D.st.get(x.word) || {}).seen) return "study";   // 学习新词：先看一遍词卡
     if (!meanText(x.e)) return "flip";               // 没有现成释义的生词出不了选择题
     if (D.learn) return learnKind(x, (D.st.get(x.word) || {}).stage || 0);
+    if (D.practice) return {recognition: "mean", reverse: "reverse", listen: "listen", spell: "spell", context: "cloze"}[D.practice] || "mean";
     if (D.flip) return "flip";
     if (D.kind.has(x.word)) return D.kind.get(x.word);   // 答错再来：同一种题
     const ty = x.card ? SRS.pickType(x.card, {phrase: isPh(x), off: offTypes()}) : SRS.TYPE.MEAN;   // 词组卡只会是看词组选义或翻卡；关掉的题型 pickType 会换掉
@@ -706,7 +729,8 @@ const Study = (() => {
     if (!info) { location.hash = "#/drill"; return; }
     setHead("巩固 · " + info.title);
     view().innerHTML = `<p class="empty">加载中…</p>`;
-    const learn = !preset && sc === "learn", hash = location.hash, sv = preset ? null : progGet(sc);
+    const learn = !preset && sc === "learn", hash = location.hash, practice = learn ? "" : practiceOf();
+    const progressScope = practice ? `practice:${practice}:${sc}` : sc, sv = preset ? null : progGet(progressScope);
     let items, pool = [], pp = {phs: [], vbs: []}, lg = null;
     try {
       if (learn) { lg = await learnItems(); items = lg.items; }
@@ -718,13 +742,14 @@ const Study = (() => {
           items = [...old.sort((a, b) => pos.get(a.word) - pos.get(b.word)), ...sortBy(cur.filter(x => !pos.has(x.word)), S.drillOrder)];
         } else if (sv) {   // 旧版进度没存词单   // 上次答错、还没答对的（比如到期的词答错已排到明天，范围里就没有了）接着出
           const have = new Set(items.map(x => x.word));
-          const back = liveCards().filter(x => sv.rated[x.word] && !sv.done.includes(x.word) && !have.has(x.word));
+          const back = liveCards().filter(x => sv.rated?.[x.word] && !(sv.done || []).includes(x.word) && !have.has(x.word));
           if (back.length) items = [...await resolve(back), ...items];
         }
       }
       if (!preset && !isRound(sc) && !(sv && sv.w)) items = sortBy(items, learn ? "course" : S.drillOrder);   // 到期的已按熟练度排好
-      if (learn || S.drillMode !== "flip") pool = await buildPool(items);
-      if ((learn || S.drillMode !== "flip") && items.some(isPh)) pp = await buildPhrasePool(items);
+      if (practice === "context") items = items.filter(x => clozeOf(x));
+      pool = await buildPool(items);
+      if (items.some(isPh)) pp = await buildPhrasePool(items);
     } catch (err) { loadFail(err); return; }
     if (location.hash !== hash) return;              // 加载期间去了别的页
     const keep = sv && (!learn || (lg.g && lg.gs.every(p => svKeys(sv).includes(p.g.key)))) ? sv : null;   // 学习新词换了一批，旧进度不用
@@ -732,13 +757,27 @@ const Study = (() => {
     const res = {g: 0, m: 0, f: 0}; for (const r of rated.values()) res[r]++;
     // 今天到期：这一轮开始时给每个词定类型（评分后 s、d 就变了），接着做沿用进度里的；旧进度没有就不按类型统计
     const mk = !isRound(sc) || preset ? null : keep ? keep.mk || null : Object.fromEntries(items.filter(x => x.card).map(x => [x.word, SRS.mustKind(x.card, T())]));
-    D = {sc, mk, title:learn && lg.g ? `学习新词 · ${grpLabel(lg.gs.map(p => p.g))}` : info.title, items, learn, lg, save: !preset, flip: !learn && S.drillMode === "flip", pool, ...pp, hash,
+    D = {sc, progressScope, practice, attemptId: keep?.id || newId(), mk, title:learn && lg.g ? `学习新词 · ${grpLabel(lg.gs.map(p => p.g))}` : `${info.title}${practice ? " · " + PRACTICES.find(([p]) => p === practice)[1] : ""}`, items, learn, lg, save: !preset, flip: false, pool, ...pp, hash,
       stages: learn ? Math.min(3, Math.max(1, +S.learnStages || 2)) : 0,   // 学习新词每个词过几关（这一轮开始时定下）
       queue: learn ? rest.slice(0, WINDOW) : rest, pending: learn ? rest.slice(WINDOW) : [],
       st: new Map(keep ? Object.entries(keep.st || {}) : []), kind: new Map(), cf: new Map(), rated, done, passed: items.length - rest.length, res, q: null, hist: [], back: 0};
     if (learn && !lg.g) {
       view().innerHTML = `<div class="drill"><p class="empty">Part 01 的词群都记为学过了 🎉</p><p class="empty">${btn("#/", "回首页")} ${btn("#/log", "学习记录")}</p></div>`;
       return;
+    }
+    if (!learn && (!practice || practice === "meaning")) {
+      D.rc = Recall.create(items, T(), newId(), keep?.rc || keep);
+      if (sc === "today" && !practice && !keep?.rc) {
+        const nr = nightRecord(), restored = new Set(), records = {...nr.items};
+        for (const x of items) {
+          const prev = nr.items[x.card.life];
+          if (prev) { restored.add(x.word); D.rc.first[x.word] = {result: prev.first, hints: prev.hints || []}; if (prev.retry) D.rc.retry[x.word] = {result: prev.retry}; }
+          else if (D.rc.first[x.word]?.result === "legacy") records[x.card.life] = {word: x.word, first: "legacy", grade: D.rc.first[x.word].grade};
+        }
+        D.rc.queue = D.rc.queue.filter(q => !restored.has(q.w)); D.rc.current = null; Recall.begin(D.rc);
+        progSave([[nightKey(), {...nr, items: records}]]);
+      }
+      progSave(); nextRecall(); return;
     }
     if (!items.length && !learn) {
       view().innerHTML = `<div class="drill"><p class="empty">「${esc(info.title)}」里没有要抽的词。</p><p class="empty">${btn("#/", "回首页")} ${btn("#/drill", "换个范围")}</p></div>`;
@@ -748,6 +787,7 @@ const Study = (() => {
     next();                                          // 学习新词这一批的词都已会：直接结束、记为学过
   }
   function next() {
+    if (D.rc) { D.rc = Recall.next(D.rc); progSave(); nextRecall(); return; }
     stopAll();                                       // 上一题没读完的词、例句（连同高亮）停掉
     const pq = D.q;
     if (pq && pq.auto) { clearTimeout(pq.auto); pq.auto = null; }
@@ -777,6 +817,142 @@ const Study = (() => {
   const wordHead = (x, vid) => `<div class="dword" data-say="1">${esc(x.word)}</div>
     <div class="dipa"><span class="ipa">${esc(ipaOf(x.e))}</span> <button class="spk" data-say="1" title="读（R）">🔊</button>${vid ? videoOf(x) : ""} ${fl(x.nb ? x.e.freq || 0 : x.freq)}</div>`;
 
+  const RECALL_LABEL = {independent: "独立想起", effort: "独立想起但费劲", hinted: "提示后想起", failed: "未想起或想错", legacy: "旧版选择成绩", chopped: "人工斩词"};
+  function nextRecall() {
+    stopAll();
+    if (D.rc.d !== T()) { D.q = null; view().innerHTML = `<p class="empty">已进入新的学习日，请${btn("#/", "回首页")}重新开始；已记成绩保留。</p>`; return; }
+    const c = D.rc.current;
+    if (!c) { D.q = null; endRecall(); return; }
+    const x = D.items.find(x => x.word === c.w);
+    D.q = {x, kind: "recall", state: c.answered ? "done" : "ask"}; showRecall();
+  }
+  function recallLayers(x) {
+    const out = [];
+    if (x.e.tip || x.e.root) out.push({kind: "memory", label: "记忆法"});
+    const ex = x.nb && x.src ? x.src.ex : x.e.ex;
+    if (ex?.en) out.push({kind: "example", label: "英文例句"});
+    return out;
+  }
+  function showRecall() {
+    const q = D.rc.current, x = D.q.x, s = Recall.summary(D.rc), layers = recallLayers(x);
+    // 沿用原词卡，不重排或删掉卡片内容；用原背诵模式的模糊方式遮住答案，点击遮挡处展开。
+    const head = `${wordHead(x, q.revealed)}${backHTML(x)}`;
+    const hints = q.hints.length ? `<p class="hint-used">已使用提示${q.hints.includes("audio") ? " · 读音" : ""}${q.hints.includes("choice") ? " · 四选一" : ""}，本次不能计为独立想起</p>` : '<p class="note">先想主要意思，点击模糊的释义核对；中文近义表达也算。</p>';
+    const aux = q.aux && !q.revealed ? `<div class="qopts">${q.aux.opts.map((o, i) => `<button class="qopt" data-recall-choice="${i}"><kbd>${i + 1}</kbd><span>${esc(o)}</span></button>`).join("")}</div>` : "";
+    const rate = (r, label, variant) => `<wa-button variant="${variant}" data-recall-rate="${r}">${label}</wa-button>`;
+    const controls = q.answered ? `<p class="recall-verdict">${RECALL_LABEL[q.answered]}</p><wa-button variant="brand" data-next="1">继续 <kbd>空格</kbd></wa-button>` : q.revealed
+      ? `<p class="note recall-rubric">核对揭晓前是否想对主要意思；只觉得眼熟、选错或没想起，请选“未想起或想错”。</p><div class="recall-ratings">${q.choiceWrong ? "" : q.hints.length ? rate("hinted", "提示后想起", "warning") : rate("independent", "独立想起", "success") + rate("effort", "独立想起但费劲", "brand")}${rate("failed", "未想起或想错", "danger")}</div>`
+      : `${q.layer < layers.length ? `<wa-button appearance="outlined" data-recall-hint="1">提示：${layers[q.layer].label}</wa-button>` : ""}<wa-button variant="brand" data-recall-reveal="1">揭晓核对 <kbd>空格</kbd></wa-button>${!q.aux && meanText(x.e) ? '<button data-recall-aux="1">需要四选一辅助</button>' : ""}${chopBtn(x)}`;
+    put(`<div class="drill recall${q.revealed ? " flipped" : ""}"><div class="dbar"><span>${esc(D.title)}${q.retry ? " · 补测" : ""}</span><wa-progress-bar value="${s.total ? Math.round(s.completed / s.total * 100) : 0}"></wa-progress-bar><span>已做 ${s.completed}/${s.total} · 补测 ${s.retries}/${D.rc.added}</span><a href="#/" class="dx" title="退出并保存">✕</a></div><div class="dcard${q.revealed ? "" : " locked"}">${head}${hints}${aux}</div><div class="dops">${controls}</div></div>`);
+    if (!q.revealed) {
+      const cover = (selector, kind, label) => {
+        if (q.hints.includes(kind)) return;
+        for (const el of view().querySelectorAll(selector)) {
+          el.classList.add("recall-cover"); el.dataset.recallCover = kind;
+          el.setAttribute("role", "button"); el.setAttribute("tabindex", "0"); el.setAttribute("aria-label", label);
+        }
+      };
+      cover(".recall .dsense,.recall .dzh,.recall .dext,.recall .dnote", "reveal", "点击揭晓释义和译文");
+      cover(".recall .tip", "memory", "展开记忆法（计为提示）");
+      cover(".recall .sent", "example", "展开英文例句（计为提示）");
+    }
+  }
+  function revealRecall() {
+    if (!D.rc.current || D.rc.current.answered) return;
+    D.rc.current.revealed = true; stopAll(); progSave(); showRecall();
+  }
+  function hintRecall(kind) {
+    D.rc = Recall.hint(D.rc, kind); progSave();
+  }
+  function expandRecall(kind) {
+    const layers = recallLayers(D.q.x), index = layers.findIndex(l => l.kind === kind);
+    if (index < 0) return;
+    for (const layer of layers.slice(0, index + 1)) hintRecall(layer.kind);
+    D.rc.current.layer = Math.max(D.rc.current.layer, index + 1); progSave(); showRecall();
+  }
+  function chopRecall() {
+    const q = D.rc.current, x = D.q.x, c = Sync.get(cardKey(x), 0);
+    if (!q || q.answered || !c || c.life !== D.rc.refs[x.word] || known.has(x.word)) return;
+    const u = SRS.chop(c, T(), x.word, S.examDate), pairs = [[cardKey(x), u]];
+    D.rc.first[x.word] ||= {result: "chopped", hints: q.hints}; q.answered = "chopped";
+    if (D.sc === "today" && !D.practice) {
+      const nr = nightRecord(); pairs.push([nightKey(), {...nr, finished: false, skipped: false, items: {...nr.items, [c.life]: {word: x.word, first: "chopped"}}}]);
+    }
+    progSave(pairs); next();
+  }
+  function recallClick(t) {
+    const q = D.rc.current;
+    if (t.closest("[data-next]")) { if (q.answered) next(); return; }
+    if (q.answered) {
+      const sent = t.closest("[data-sent]");
+      if (sent) saySent(D.q.x, /slow/.test(sent.dataset.sent), sent.dataset.sent.startsWith("src"));
+      else if (t.closest("[data-say],[data-recall-audio]")) sayWord(D.q.x);
+      return;
+    }
+    if (t.closest("[data-recall-reveal]")) { revealRecall(); return; }
+    const covered = t.closest("[data-recall-cover]");
+    if (covered) { covered.dataset.recallCover === "reveal" ? revealRecall() : expandRecall(covered.dataset.recallCover); return; }
+    if (t.closest("[data-recall-hint]")) {
+      const layers = recallLayers(D.q.x), layer = layers[q.layer];
+      if (layer) expandRecall(layer.kind); return;
+    }
+    if (t.closest("[data-recall-audio],[data-say]")) { if (!q.revealed) hintRecall("audio"); sayWord(D.q.x); showRecall(); return; }
+    if (t.closest("[data-recall-aux]")) {
+      hintRecall("choice"); const aux = makeQ(D.q.x, "mean");
+      D.rc.current.aux = {opts: aux.opts, ans: aux.ans}; progSave(); showRecall(); return;
+    }
+    const option = t.closest("[data-recall-choice]");
+    if (option && !q.revealed && q.aux) { q.choiceWrong = +option.dataset.recallChoice !== q.aux.ans; revealRecall(); return; }
+    const rating = t.closest("[data-recall-rate]"); if (rating) { answerRecall(rating.dataset.recallRate); return; }
+    if (t.closest("[data-chop]")) { chopRecall(); return; }
+    const sentence = t.closest("[data-sent]");
+    if (sentence) { if (!q.revealed) expandRecall("example"); saySent(D.q.x, /slow/.test(sentence.dataset.sent), sentence.dataset.sent.startsWith("src")); return; }
+    if (q.revealed) {
+      const sent = t.closest("[data-sent]"), sx = t.closest("[data-sayx]");
+      if (sent) saySent(D.q.x, /slow/.test(sent.dataset.sent), sent.dataset.sent.startsWith("src"));
+      else if (sx) sayWord(D.q.x, sx.dataset.sayx);
+    }
+  }
+  function answerRecall(result) {
+    if (D.rc.d !== T() || D.rc.current?.answered || !D.rc.current?.revealed) return;
+    const q = D.rc.current, x = D.q.x, id = `${D.rc.id}:${x.word}:first`, key = cardKey(x), c = Sync.get(key, 0), pairs = [];
+    // 断点比卡片旧（例如另一端已完成同一题）时，以已落盘的首次结果为准，不能只跳过计数却显示新成绩。
+    const recorded = !q.retry && (c?.recall?.results?.[id] || c?.recall?.history?.find(h => h.id === id));
+    if (recorded) { q.hints = recorded.hints || []; q.choiceWrong = recorded.result === "failed"; result = recorded.result; }
+    D.rc = Recall.answer(D.rc, result); result = D.rc.current.answered;
+    if (!q.retry && c && c.life === D.rc.refs[x.word] && !known.has(x.word)) {
+      const next = SRS.rateRecall(c, result, T(), {id, hints: q.hints, key: x.word, exam: S.examDate});
+      if (next !== c) {
+        const lg = {...logOf(T())}, r = SRS.recallGrade(result);
+        lg[r] = (lg[r] || 0) + 1;
+        if (SRS.isDue(c, T())) lg.dv = (lg.dv || 0) + 1;
+        if (SRS.isMust(c, T())) lg.mv = (lg.mv || 0) + 1;
+        lg.recall = {...lg.recall, [result]: (lg.recall?.[result] || 0) + 1};
+        const task = !D.practice && isRound(D.sc) ? "due" : D.sc === "today" && !D.practice ? "evening" : "free";
+        const oldTask = lg.tasks?.[task] || {};
+        lg.tasks = {...lg.tasks, [task]: {...oldTask, [result]: (oldTask[result] || 0) + 1}};
+        pairs.push([key, next], ["log:" + T(), lg]); x.card = next;
+      }
+    }
+    if (D.sc === "today" && !D.practice && c && c.life === D.rc.refs[x.word] && !known.has(x.word)) {
+      const nr = nightRecord(), old = nr.items[c.life] || {};
+      pairs.push([nightKey(), {...nr, skipped: false, finished: false, items: {...nr.items, [c.life]: {...old, word: x.word, ...(q.retry ? {retry: result} : {first: result, hints: q.hints})}}}]);
+    }
+    D.q.state = "done"; progSave(pairs); showRecall();
+  }
+  function endRecall() {
+    const s = Recall.summary(D.rc), pairs = [];
+    if (D.sc === "today" && !D.practice) pairs.push([nightKey(), {...nightRecord(), finished: true, skipped: false}]);
+    if (D.save) Sync.setMany([...pairs, [progKey(D.progressScope), 0]]);
+    const more = D.sc === "due" && !D.practice ? dueTodo(dueStat()) : 0;
+    const types = D.mk ? MK.map(([kind, label]) => {
+      const words = D.rc.w.filter(w => D.mk[w] === kind); if (!words.length) return "";
+      const records = words.map(w => D.rc.first[w]);
+      return `<li><b>${label} ${words.length}</b>：独立 ${records.filter(r => Recall.independent(r?.result)).length} · 提示 ${records.filter(r => r?.result === "hinted").length} · 未想起 ${records.filter(r => r?.result === "failed").length}${records.some(r => r?.result === "legacy") ? "（含旧版成绩）" : ""}</li>`;
+    }).join("") : "";
+    view().innerHTML = `<div class="drill end"><h1>${s.total ? "这一轮任务完成" : "暂无待做词"}</h1><div class="tally"><span>完成 <b>${s.completed}/${s.total}</b></span><span class="g">独立想起 <b>${s.independent + s.effort}</b></span><span>其中费劲 <b>${s.effort}</b></span><span class="m">提示后 <b>${s.hinted}</b></span><span class="f">未想起/想错 <b>${s.failed}</b></span>${s.legacy ? `<span>旧版成绩 <b>${s.legacy}</b></span>` : ""}${s.chopped ? `<span>斩 <b>${s.chopped}</b></span>` : ""}</div>${types ? `<ul class="ktally">${types}</ul>` : ""}<p>补测 ${s.retries}/${D.rc.added} · 独立想起 ${s.retrySuccess} · 提示后 ${s.retryHinted} · 未想起 ${s.retryFailed} · 待加强 ${s.strengthen.length}</p>${s.strengthen.length ? `<p class="note">待加强：${s.strengthen.map(esc).join("、")}</p>` : ""}<p class="note">首次表现已保留。补测不覆盖首次成绩、不推进站点；提示后两天检查，未想起次日检查。未学词只练习，不创建复习卡。</p><div class="ops">${more ? `<wa-button variant="brand" id="nextRound">再来一轮（还有 ${more} 个）</wa-button>` : ""}${btn("#/", "回首页", 'variant="brand"', "medium")}${btn("#/drill", "自由抽查", undefined, "medium")}</div></div>`;
+  }
+
   /* 正在看的那一题：回看时是历史里的，否则是当前题 */
   const curQ = () => (D.back ? D.hist[D.hist.length - D.back] : D.q);
   const RESULT = {g: "✓ 记得", m: "≈ 模糊", f: "✗ 忘了"};
@@ -801,6 +977,7 @@ const Study = (() => {
   }
 
   function showCard() {
+    if (D.rc) { showRecall(); return; }
     const past = D.back > 0, q = curQ(), x = q.x, c = x.card, total = D.items.length;
     const retry = !past && q.state === "ask" && (D.learn ? (D.st.get(x.word) || {}).err : D.rated.has(x.word));
     const stage = D.learn && !past ? (q.kind === "study" ? "先看一遍" : `第 ${(q.lst || 0) + 1}/${D.stages} 关`) : "";
@@ -832,17 +1009,17 @@ const Study = (() => {
     if (q.kind === "mean") body = wordHead(x, done);
     else if (q.kind === "listen") body = done ? wordHead(x, true) : `<button class="bigspk" data-say="1" title="再听一遍（R）">🔊</button><p class="note qhint">听发音，选意思 · R 再听</p>`;
     else if (q.kind === "reverse") body = `<div class="qmean">${esc(meanText(x.e))}</div>${done ? wordHead(x, true) : `<p class="note qhint">选出对应的英文</p>`}`;
-    else if (q.kind === "cloze") body = `<div class="qsent">${q.cloze.html}</div>${done ? `<div class="dzh">${esc(q.cloze.zh)}</div>${wordHead(x, true)}` : `<p class="note qhint">选出填进空里的词（可能是变形）</p>`}`;
+    else if (q.kind === "cloze") body = `<div class="qsent">${done || q.contextStudy ? q.cloze.filled : q.cloze.html}</div>${done || q.contextStudy ? `<div class="dzh">${esc(q.cloze.zh)}</div><p class="note">本句词形：${q.cloze.forms.map(esc).join("、")} · 原形：${esc(x.word)}</p>${wordHead(x, true)}` : `<p class="note qhint">选出填进空里的词（可能是变形）</p>${D.practice === "context" ? '<button data-context-study="1">先学完整例句（计为使用帮助）</button>' : ""}`}`;
     else if (q.kind === "spell") body = `<div class="qmean">${esc(meanText(x.e))}</div>
       ${done ? `<div class="spres ${q.r === "g" ? "ok" : "bad"}">${q.r === "g" ? "✓ 拼对了" : `${q.input ? `你写的：<s>${esc(q.input)}</s>` : "没写"}${q.r === "m" ? " · 差一个字母，算模糊" : ""}`}</div>${wordHead(x, true)}`
         : `<button class="spk" data-say="1" title="再听（R）">🔊</button><div class="spellbox"><input id="spell" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="${esc(x.word[0] + " _".repeat(Math.max(0, x.word.length - 1)))}"></div>`}`;
-    const verdict = done && q.kind !== "spell" ? `<div class="qverdict ${ok ? "ok" : "bad"}">${q.conf ? confHTML(x, q.conf) : q.r === "g" ? "✓ 答对了" : q.r === "m" ? "✓ 答对了，但想得有点久（记为模糊）" : q.pick === -1 ? "✗ 不认识" : "✗ 答错了"}</div>` : "";
+    const verdict = done && q.kind !== "spell" ? `<div class="qverdict ${ok ? "ok" : "bad"}">${q.conf ? confHTML(x, q.conf) : q.r === "g" ? "✓ 答对了" : q.r === "m" ? q.contextStudy ? "✓ 使用完整例句帮助后完成" : "✓ 答对了，但想得有点久（记为模糊）" : q.pick === -1 ? "✗ 不认识" : "✗ 答错了"}</div>` : "";
     const opts = q.opts ? `<div class="qopts">${q.opts.map((o, i) => `<button class="qopt${done && i === q.ans ? " ok" : ""}${done && i === q.pick && i !== q.ans ? " bad" : ""}" data-opt="${i}"${done ? " disabled" : ""}><kbd>${i + 1}</kbd><span>${esc(o)}</span></button>`).join("")}</div>` : "";
     const ops = past ? pastOps : done
       ? `${prevBtn}<wa-button variant="brand" data-next="1">继续 <kbd>空格</kbd></wa-button>`
       : q.kind === "spell" ? `${prevBtn}<wa-button appearance="outlined" data-opt="-1">不会 <kbd>Esc</kbd></wa-button><wa-button variant="brand" data-spell="1">提交 <kbd>Enter</kbd></wa-button>${chopBtn(x)}`
       : `${prevBtn}<wa-button appearance="outlined" data-opt="-1">不认识 <kbd>0</kbd></wa-button>${chopBtn(x)}`;
-    put(`<div class="drill quiz${done ? (ok ? " right" : " wrong") : ""}${past ? " past" : ""}">${bar}<div class="dcard${done || past ? "" : " locked"}">${meta}${body}${opts}${verdict}${done && q.conf ? cmpHTML(q.conf.e) : ""}${done ? backHTML(x) : ""}</div><div class="dops">${ops}</div></div>`);
+    put(`<div class="drill quiz${done ? (ok ? " right" : " wrong") : ""}${past ? " past" : ""}">${bar}<div class="dcard${done || past || q.contextStudy ? "" : " locked"}">${meta}${body}${opts}${verdict}${done && q.conf ? cmpHTML(q.conf.e) : ""}${done || q.contextStudy ? backHTML(x) : ""}</div><div class="dops">${ops}</div></div>`);
     if (!done) {
       q.t0 = Date.now();                               // 从回看回来重新计时
       if (!q.said) { q.said = true; if (q.kind === "listen" || q.kind === "spell" || (q.kind === "mean" && S.autoSay)) sayQ(q); }
@@ -871,7 +1048,8 @@ const Study = (() => {
     else {
       q.pick = i;
       const tag = i >= 0 && i !== q.ans ? q.tags[i] : null;   // 选中易混的干扰项：算混淆，记模糊，不按忘了重来
-      if (tag) { q.conf = {tag, e: q.es[i]}; q.r = "m"; } else q.r = SRS.gradeChoice(i === q.ans, ms, q.kind, {slow: SLOW_K[S.slowMode] ?? 1});
+      if (tag) { q.conf = {tag, e: q.es[i]}; q.r = D.practice ? "f" : "m"; } else q.r = SRS.gradeChoice(i === q.ans, ms, q.kind, {slow: SLOW_K[S.slowMode] ?? 1});
+      if (q.contextStudy && q.r === "g") q.r = "m";
     }
     q.state = "done";                                // 答对答错都展开完整卡片，按「继续」再走
     settle(x, q.r, q.kind, !!q.conf);
@@ -925,19 +1103,23 @@ const Study = (() => {
   function settle(x, r, kind, conf = false) {
     const ok = r !== "f" && !conf;                   // 混淆：成绩记模糊，但这一轮还要再答对一次
     D.queue.shift();
-    if (!D.rated.has(x.word)) { D.rated.set(x.word, r); D.res[r]++; if (!D.learn) record(x, r, kind, conf); }
+    let pairs = [];
+    if (!D.rated.has(x.word)) { D.rated.set(x.word, r); D.res[r]++; if (!D.learn) pairs = record(x, r, kind, conf); }
     if (D.learn) {
       const s = D.st.get(x.word) || {stage: 0, err: 0};
+      s.skills = {...s.skills};
+      if (!s.skills[kind] && KIND_NO[kind] !== undefined && kind !== "flip") s.skills[kind] = r;
       if (ok) s.stage++; else { s.stage = 0; if (!conf) s.err++; }   // 混淆不算错次数
       D.st.set(x.word, s);
       if (ok && (s.stage >= D.stages || s.err >= 3 || kind === "flip")) { D.passed++; D.done.add(x.word); if (D.pending.length) D.queue.push(D.pending.shift()); learnGroupsDone(); }
       else reinsert(x);
     } else if (ok) { D.passed++; D.done.add(x.word); }
     else reinsert(x);
-    progSave();
+    progSave(pairs);
   }
   /* 对比复习：混淆的词记进卡片 cf，下次出这个词的选择题固定放进干扰项；带着它答对就删掉 */
   function noteConf(x, q) {
+    if (D.practice) return;                         // 专项错误不写词义混淆状态
     if (q.conf) D.cf.set(x.word, SRS.confAdd(D.cf.get(x.word), q.conf.e.word));
     const key = cardKey(x), c = Sync.get(key, 0);
     if (!c) return;
@@ -950,23 +1132,26 @@ const Study = (() => {
     Sync.set(key, u); x.card = u;
   }
   const posText = e => [...SRS.posSet(meanText(e))].join("、") || "?";
-  const confHTML = (x, {tag, e}) => tag === "pos"
-    ? `✗ 词性混淆：${esc(x.word)} 是 ${esc(posText(x.e))}，${esc(e.word)} 是 ${esc(posText(e))}<small>记为模糊，下次会把两个词放在一起考</small>`
-    : `✗ 近义混淆：你选的 ${esc(e.word)} 是「${esc(meanText(e))}」<small>记为模糊，下次会把两个词放在一起考</small>`;
+  const confHTML = (x, {tag, e}) => (tag === "pos"
+    ? `✗ 词性混淆：${esc(x.word)} 是 ${esc(posText(x.e))}，${esc(e.word)} 是 ${esc(posText(e))}`
+    : `✗ 近义混淆：你选的 ${esc(e.word)} 是「${esc(meanText(e))}」`) + `<small>${D.practice ? "只记本专项未通过，不改变词义熟练度和排期" : "记为模糊，下次会把两个词放在一起考"}</small>`;
   const cmpHTML = e => `<div class="dcmp"><span class="tag">对比</span><b data-sayx="${esc(e.word)}">${esc(e.word)}</b>
     <span class="ipa">${esc(ipaOf(e))}</span><button class="spk sm" data-sayx="${esc(e.word)}" title="读">🔊</button>
     <span>${sensesOf(e).map(s => `<span class="pos">${esc(s.pos)}</span>${meanHTML(s.mean)}`).join("　")}</span></div>`;
   const reinsert = x => D.queue.splice(Math.min(D.queue.length, 3 + Math.floor(Math.random() * 3)), 0, x);
   function record(x, r, kind, hold = false) {        // hold：混淆，站数不变、2 天后再来
     const key = cardKey(x), c = Sync.get(key, 0);
-    if (!c) return;                                  // 没记为学过的词：评分不排复习
+    if (!c || c.life !== x.card?.life || known.has(x.word)) return [];  // 已删除/重建的卡不能被旧练习写回
     const t = T();
-    bump(r, SRS.isDue(c, t), SRS.isMust(c, t));
-    Sync.set(key, SRS.rate(c, r, t, {type: KIND_NO[kind], key: x.word, exam: S.examDate, hold, off: offTypes()}));
-    x.card = Sync.get(key);
+    const ability = ["recognition", "reverse"].includes(D.practice) ? "recognition" : D.practice;
+    const id = `${D.attemptId}:${x.word}:skill`, next = SRS.rateSkill(c, ability, r, t, {id, key: x.word});
+    if (next === c) return [];
+    const lg = {...logOf(t)}; lg.skills = {...lg.skills, [ability]: (lg.skills?.[ability] || 0) + 1};
+    x.card = next;
+    return [[key, next], ["log:" + t, lg]];
   }
-  /* 学习新词一群过关：记为今天学的（markGroups 建复习卡），每张卡记 p = 今天；
-     错过 2 次的先在 h 记一个 f（明天显示生疏、优先出），错满 3 次进难词本 */
+  /* 学习新词一群过关：记为今天学的，每张卡记 p；各关首次成绩归相应专项。
+     同轮错误次数只控制原有学习循环，不把听音/拼写/选择识别错误写成词义遗忘。 */
   function finishGroup(part) {
     const {g, les, words} = part, t = T();
     if (Sync.get("learn:" + g.key, 0)) return;       // 已经记过（回到结束页会再调一次）
@@ -975,9 +1160,11 @@ const Study = (() => {
     for (const w of words) {
       const key = "srs:" + w, c = Sync.get(key, 0), s = D.st.get(w) || {err: 0};
       if (!c) continue;
-      const u = {...c, p: t};
-      if (s.err >= 2 && !c.n) { u.h = ((c.h || "") + "f").slice(-6); u.v = 0; }   // 这个 f 不算复习过
-      if (s.err >= 3) u.r = "f";
+      let u = {...c, p: t};
+      for (const [kind, r] of Object.entries(s.skills || {})) {
+        const ability = kind === "mean" || kind === "reverse" ? "recognition" : kind === "cloze" ? "context" : kind;
+        u = SRS.rateSkill(u, ability, r, t, {id: `${D.attemptId}:${w}:learn:${kind}`, key: w});
+      }
       pairs.push([key, u]);
     }
     Sync.setMany(pairs);
@@ -1009,8 +1196,9 @@ const Study = (() => {
     return rows ? `<ul class="ktally">${rows}</ul>` : "";
   }
   function endDrill() {
+    if (D.rc) { endRecall(); return; }
     const {g, m, f} = D.res;
-    if (D.save) progClear(D.sc);
+    if (D.save) progClear(D.progressScope || D.sc);
     if (D.learn) {
       finishLearn();
       const missed = D.items.filter(x => (D.st.get(x.word) || {}).err), gs = D.lg.gs.map(p => p.g), G = gs[0], nx = nextGroups(1)[0], batch = nx && nextBatch();
@@ -1021,23 +1209,23 @@ const Study = (() => {
       view().innerHTML = `<div class="drill end"><h1>${gs.length > 1 ? `${gs.length} 个词群` : `第 ${G.no} 群`}过关 🎉</h1>
         <p class="note">${gs.length > 1 ? esc(grpLabel(gs)) : `${lesTitle(G.lid)} · 第 ${G.no} 群「${esc(G.title)}」`}已记为今天学的，明天早上开始复习；今晚睡前巩固还会再测一遍。</p>
         <div class="tally"><span>过关 <b>${D.passed}</b></span><span class="g">一次就过 <b>${D.items.filter(x => !(D.st.get(x.word) || {}).err && !(D.chopped && D.chopped.has(x.word))).length}</b></span><span class="f">错过才过 <b>${missed.length}</b></span>${D.res.z ? `<span>斩 <b>${D.res.z}</b></span>` : ""}</div>
-        ${missed.length ? `<p class="note">错过的：${missed.map(x => esc(x.word)).join("、")}${missed.some(x => D.st.get(x.word).err >= 2) ? "（错 2 次以上的明天早上标红、优先出）" : ""}</p>` : ""}
+        ${missed.length ? `<p class="note">本轮需要多练的：${missed.map(x => esc(x.word)).join("、")}。成绩分专项保留，不把听音或拼写错误当成词义遗忘。</p>` : ""}
         ${few && nx ? `<p class="note">${tier === "busy" ? "今天复习偏多，学新 1 群就够了" : "今天积压太多，本来先不学新词"}；想多学也可以再学 1 群。</p>` : ""}
         <div class="ops">${few ? "" : nextBtn}
           ${btn("#/", "回首页", nx && !few ? undefined : 'variant="brand"', "medium")} ${btn("#/list/today", "浏览今天的词", undefined, "medium")}${few ? nextBtn : ""}</div></div>`;
       return;
     }
     const again = D.items.filter(x => ["f", "m"].includes(D.rated.get(x.word)));
-    const ds = isRound(D.sc) ? dueStat() : null;
-    const more = D.sc === "due" ? dueTodo(ds) : 0;   // 今天还能做的：必做全部 + 其余到上限为止
+    const ds = !D.practice && isRound(D.sc) ? dueStat() : null;
+    const more = ds && D.sc === "due" ? dueTodo(ds) : 0;
     const extra = ds && !more ? Math.min(MORE_N, ds.rest.length) : 0;   // 今天的任务做完了，还剩积压：可以多做
     view().innerHTML = `<div class="drill end"><h1>这一轮结束 🎉</h1>
-      <div class="tally"><span class="g">记得 <b>${g}</b></span><span class="m">模糊 <b>${m}</b></span><span class="f">忘了 <b>${f}</b></span>${D.res.z ? `<span>斩 <b>${D.res.z}</b></span>` : ""}</div>
+      <div class="tally"><span class="g">答对 <b>${g}</b></span><span class="m">需帮助或较慢 <b>${m}</b></span><span class="f">未通过 <b>${f}</b></span>${D.res.z ? `<span>斩 <b>${D.res.z}</b></span>` : ""}</div>
       ${isRound(D.sc) ? kindTally() : ""}
       ${ds && !more ? `<p class="note"><b>✅ 今天的复习任务完成了</b>${ds.rest.length ? `；剩下 ${ds.rest.length} 个已排到明天以后，想多做可以再来 ${extra} 个` : ""}。</p>` : ""}
-      <p class="note">${D.items.some(x => x.card) ? "成绩按每个词第一遍算：忘了的已经当场滚到答对，明天早上还会再出现；模糊的照常往后排，只是题型先不升级；选了易混词的过两天再来。" : ""}${D.items.some(x => !x.card) ? "这一轮有还没记为学过的词，它们的评分不排复习；学了以后在「学习记录」里勾上。" : ""}</p>
+      <p class="note">本轮为专项练习，成绩只计入对应能力，不改变词义等级、到期日期或早晚任务完成状态。未学词不创建复习卡。</p>
       <div class="ops">${more ? `<wa-button size="medium" variant="brand" id="nextRound">再来一轮（还有 ${more} 个到期）</wa-button>` : extra ? `<wa-button size="medium" appearance="outlined" id="moreRound">还想多做 ${extra} 个</wa-button>` : ""}
-        ${again.length ? `<wa-button size="medium" ${more ? 'appearance="filled"' : 'variant="brand"'} id="redo">再过一遍忘了 / 模糊的（${again.length}）</wa-button>` : ""}
+        ${again.length ? `<wa-button size="medium" ${more ? 'appearance="filled"' : 'variant="brand"'} id="redo">再练未通过或需帮助的（${again.length}）</wa-button>` : ""}
         ${btn("#/", "回首页", undefined, "medium")} ${btn("#/drill", "换个范围", undefined, "medium")}</div></div>`;
     D.again = again;
   }
@@ -1053,6 +1241,9 @@ const Study = (() => {
     for (const [k, d] of marks) { const [lid, g] = k.split(":g"); (byDay[d] = byDay[d] || []).push({lid, g: +g, info: groupInfo(lid, +g)}); }
     const tot = days.reduce((a, x) => ({learned: a.learned + x.learned, vocab: a.vocab + x.vocab.length, g: a.g + logOf(x.d).g, m: a.m + logOf(x.d).m, f: a.f + logOf(x.d).f}), {learned: 0, vocab: 0, g: 0, m: 0, f: 0});
     const rv = tot.g + tot.m + tot.f, pct = n => rv ? Math.round(n / rv * 100) : 0;
+    const recalls = {independent: 0, effort: 0, hinted: 0, failed: 0};
+    for (const x of days) for (const k of Object.keys(recalls)) recalls[k] += logOf(x.d).recall?.[k] || 0;
+    const recallN = Object.values(recalls).reduce((a, b) => a + b, 0);
     const weekCards = inLearnRange(mon, end);
     const worst = weekCards.filter(x => x.card.l || x.card.r === "f" || x.card.r === "m")
       .sort((a, b) => (b.card.l || 0) - (a.card.l || 0) || (a.card.r === "f" ? -1 : 1)).slice(0, 20);
@@ -1068,7 +1259,8 @@ const Study = (() => {
       <div class="kpis"><div><b>${tot.learned + tot.vocab}</b><small>新学词${tot.vocab ? `（含生词 ${tot.vocab}）` : ""}</small></div><div><b>${marks.length}</b><small>词群</small></div><div><b>${rv}</b><small>复习次数</small></div>
         <div><b>${pct(tot.g)}%</b><small>记得</small></div></div>
       ${rv ? `<div class="ratebar"><span class="g" style="width:${pct(tot.g)}%"></span><span class="m" style="width:${pct(tot.m)}%"></span><span class="f" style="width:${pct(tot.f)}%"></span></div>
-        <p class="note">记得 ${tot.g} · 模糊 ${tot.m} · 忘了 ${tot.f}</p>` : ""}
+        <p class="note">总评分：记得 ${tot.g} · 模糊/提示 ${tot.m} · 忘了 ${tot.f}（含旧版选择成绩，不等同独立回忆）</p>` : ""}
+      <p class="note">新回忆：独立 ${recalls.independent + recalls.effort}（其中费劲 ${recalls.effort}）· 提示后 ${recalls.hinted} · 未想起 ${recalls.failed}；旧版评分 ${rv - recallN} 次保留原义。</p>
       <div class="ops">${btn(`#/drill/${encodeURIComponent("w2:" + mon)}`, "开始周复习（本周 + 上周）", 'variant="brand"')} ${btn(`#/list/${encodeURIComponent("w:" + mon)}`, "浏览本周的词")}</div>
       <section class="panel"><h2>每天学了什么</h2>${days.map((x, i) => `<div class="drow${x.d === t ? " now" : ""}"><span class="dd">周${WEEK[(i + 1) % 7]} ${md(x.d)}</span>
         <span class="dg">${(byDay[x.d] || []).map(g => `<a href="#/${g.lid}/g${g.g}">${lesTitle(g.lid)} · ${g.g} ${esc(g.info ? g.info.title : "")}</a>`).join("")}${x.vocab.length ? `<span class="dv">生词：${x.vocab.map(esc).join("、")}</span>` : ""}${(byDay[x.d] || x.vocab.length) ? "" : `<small>${x.d > t ? "" : i === 6 ? "复习日" : "没记录"}</small>`}</span>
@@ -1086,7 +1278,7 @@ const Study = (() => {
     const m = h.match(/^#\/(drill|list|week|log)(?:\/(.+))?$/);
     if (!m || m[1] !== "log") W = null;   // 离开记录页，没保存的勾选作废
     if (!m) { D = null; renderHome(); scrollBack(y, h); return; }
-    const arg = m[2] && decodeURIComponent(m[2]);
+    const arg = m[2] && decodeURIComponent(m[2].split("?")[0]);
     if (m[1] === "log") { D = null; renderLog(arg); if (!arg || y) scrollBack(y, h); return; }
     if (m[1] === "drill") { if (!arg) { D = null; renderPicker(); } else { y = 0; if (!D || D.hash !== h) startDrill(arg); else if (D.q) showCard(); else endDrill(); } }
     else if (m[1] === "list") { D = null; await renderList(arg); }
@@ -1106,6 +1298,17 @@ const Study = (() => {
     if (!D || !D.q || !/^#\/drill\/./.test(location.hash) || e.ctrlKey || e.metaKey || e.altKey) return;
     if (stopAuto()) { e.preventDefault(); return; }  // 答对后正等着自动下一题：按任意键只是停在这张卡
     const q = D.q;
+    if (D.rc) {
+      const c = D.rc.current;
+      if (e.target.closest?.("input,select,textarea")) return;
+      const covered = e.target.closest?.("[data-recall-cover]");
+      if (covered && (e.key === " " || e.key === "Enter")) { e.preventDefault(); covered.dataset.recallCover === "reveal" ? revealRecall() : expandRecall(covered.dataset.recallCover); return; }
+      if (e.key === "r" || e.key === "R") { if (!c.revealed) hintRecall("audio"); sayWord(q.x); showRecall(); }
+      else if (e.key === "s" || e.key === "S") chopRecall();
+      else if (e.key === " " || e.key === "Enter") { e.preventDefault(); if (c.answered) next(); else if (!c.revealed) revealRecall(); }
+      else if (c.aux && !c.revealed && /^[1-4]$/.test(e.key) && +e.key <= c.aux.opts.length) { c.choiceWrong = +e.key - 1 !== c.aux.ans; revealRecall(); }
+      return;
+    }
     if (e.target.id === "spell") {                   // 拼写框：Enter 提交、Esc 不会，其余照常打字
       if (e.key === "Enter") { e.preventDefault(); answer(0, e.target.value); }
       else if (e.key === "Escape") answer(-1, "");
@@ -1134,6 +1337,7 @@ const Study = (() => {
   }
   function onClick(e) {
     const t = e.target, v = view();
+    if (t.closest("#nightSkip")) { Sync.set(nightKey(), {...nightRecord(), skipped: true, finished: false}); renderHome(); return; }
     if (D && /^#\/drill\/./.test(location.hash)) {
       const q = D.q, x = q && q.x;
       stopAuto();                                    // 点页面：不再自动下一题（点的按钮照常生效）
@@ -1143,9 +1347,11 @@ const Study = (() => {
       if (t.closest("#nextGroup")) { scrollTo(0, 0); startDrill("learn"); return; }
       if (D.learn && q && t.closest("#lpFab")) { lpToggle(); return; }
       if (!q) return;
+      if (D.rc) { recallClick(t); return; }
+      if (t.closest("[data-context-study]")) { q.contextStudy = true; showCard(); return; }
       if (t.closest("[data-restart]")) {
         if (!confirm("从头再来？这一轮的进度清掉，所有词重新出（已经记下的复习成绩不撤销）。")) return;
-        progClear(D.sc); startDrill(D.sc); return;
+        progClear(D.progressScope || D.sc); startDrill(D.sc); return;
       }
       if (t.closest("[data-prev]")) { goBack(); return; }
       if (t.closest("[data-fwd]")) { goFwd(); return; }
@@ -1179,6 +1385,7 @@ const Study = (() => {
     }
     const o = t.closest("[data-order]"); if (o) { setS("drillOrder", o.dataset.order); renderPicker(); return; }
     const dm = t.closest("[data-dmode]"); if (dm) { setS("drillMode", dm.dataset.dmode); renderPicker(); return; }
+    const pr = t.closest("[data-practice]"); if (pr) { setS("practiceType", pr.dataset.practice); renderPicker(); return; }
     if (t.closest("#listHide")) { store.set("listHide", !store.get("listHide", false)); renderList(decodeURIComponent(location.hash.split("/")[2])); return; }
     if (t.closest("#listFold")) { store.set("listFold", !store.get("listFold", false)); renderList(decodeURIComponent(location.hash.split("/")[2])); return; }
     const vd = t.closest("[data-vdel]");
@@ -1203,7 +1410,7 @@ const Study = (() => {
   }
   function onChange(e) {
     const t = e.target;
-    if (t.id === "bookScope" && t.value) location.hash = "#/drill/" + t.value;
+    if (t.id === "bookScope" && t.value) location.hash = "#/drill/" + t.value + "?practice=" + (S.practiceType || "meaning");
     if (t.dataset.g && W) {
       const learned = !!Sync.get("learn:" + t.dataset.g, 0);
       t.checked === learned ? W.want.delete(t.dataset.g) : W.want.set(t.dataset.g, t.checked);
