@@ -10,6 +10,15 @@ const Video = (() => {
   const url = (bv, p, t) => `https://www.bilibili.com/video/${encodeURIComponent(bv)}/?p=${p}&t=${t}`;
   /* 页内播放用的 B 站嵌入播放器（o = options 里的一项）：自动播放、关弹幕；没登录时画质 360p */
   const embed = o => `https://player.bilibili.com/player.html?bvid=${encodeURIComponent(o.bv)}&p=${o.p}&t=${o.t}&autoplay=1&danmaku=0&high_quality=1`;
+  /* 配套油猴脚本只自动处理带此标记的课件链接。普通链接和嵌入播放器保持原样。 */
+  function webfull(url, enabled) {
+    const out = new URL(url);
+    if (out.origin === "https://www.bilibili.com" && out.pathname.startsWith("/video/")) {
+      if (enabled) out.searchParams.set("cet4_webfull", "1");
+      else out.searchParams.delete("cet4_webfull");
+    }
+    return out.href;
+  }
 
   /* 这个词条能看的视频，按优先级：[{id, label, url, approx, bv, p, t}]。
      prefer = 设置里「讲解视频优先用」的系列（label 的开头，如「精讲带背」「全程班」）：这个系列的排到前面，其余照原来的顺序；没有这个系列就不变。下架的、这个视频里没有这个词的跳过；没有数据返回 [] */
@@ -38,6 +47,6 @@ const Video = (() => {
     return n == null ? null : n;
   }
 
-  return {url, embed, options, noOf};
+  return {url, embed, webfull, options, noOf};
 })();
 if (typeof module === "object" && module.exports) module.exports = Video;

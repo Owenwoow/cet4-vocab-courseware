@@ -15,7 +15,7 @@ loadKnown();
 const VOICE_NAMES = {ava: "Ava", andrew: "Andrew", sonia: "Sonia", ryan: "Ryan"};
 const VOICE_DESC = {ava: "美式 · 女声", andrew: "美式 · 男声", sonia: "英式 · 女声", ryan: "英式 · 男声"};
 const DEFAULTS = {voice: "ava", rate: 1, mask: false, hideKnown: false, scope: "group", withZh: true, loop: false, theme: "auto",
-  examDate: "2026-12-12", dailyCap: 80, autoSay: true, drillOrder: "course", drillMode: "quiz", phLine: true, videoPrefer: "精讲带背",
+  examDate: "2026-12-12", dailyCap: 80, autoSay: true, drillOrder: "course", drillMode: "quiz", phLine: true, videoPrefer: "精讲带背", videoWebfull: true,
   /* 学习新词、复习（study.js 用，默认值 = 加设置之前的行为）：learnStages 每个新词过几关（1 看词选义 / 2 + 听音选义 / 3 + 拼写）；
      learnSize 一次学多少（1 / 2 群，15 = 至少 15 词）；autoEx 学新词词卡读完单词接着读例句；autoNext 答对（记得）后 1.5 秒自动下一题；
      slowMode 想得久算模糊（loose ×1.5 / std / strict ×0.75 / off 不按时间）；quizListen、quizSpell 出不出听音、拼写题；roundSize 今天到期每轮最多几个（0 = 不限） */
@@ -23,7 +23,11 @@ const DEFAULTS = {voice: "ava", rate: 1, mask: false, hideKnown: false, scope: "
 const NUM_SETS = ["rate", "dailyCap", "learnStages", "learnSize", "roundSize"];   // 设置页按钮上的值是字符串，这几个存成数字
 const S = {...DEFAULTS};
 const loadSettings = () => Object.assign(S, DEFAULTS, Object.fromEntries(Sync.entries("set:")));
-function setS(k, v) { S[k] = v; Sync.set("set:" + k, v); applySettings(); if (k === "videoPrefer" && L) renderLesson(); }   // 视频按钮按偏好重画（复习页每次进入都会重画）
+function setS(k, v) {
+  S[k] = v; Sync.set("set:" + k, v); applySettings();
+  if (k === "videoPrefer" && L) renderLesson();   // 视频按钮按偏好重画（复习页每次进入都会重画）
+  if (k === "videoWebfull") $$("a[data-vi], a.vpout").forEach(a => { a.href = Video.webfull(a.href, v); });
+}
 loadSettings();
 const darkMQ = matchMedia("(prefers-color-scheme: dark)");
 function applySettings() {
@@ -67,7 +71,7 @@ function videoHTML(data, no, sm, word = "") {
   const vs = Video.options(data, no, S.videoPrefer);
   if (!vs.length) return "";
   const v = vs[0], tip = `看老师讲解${v.approx ? "（时间点是推算的，可能差几秒）" : ""} · ${v.label}${vs.length > 1 ? `，播放窗里可换另外 ${vs.length - 1} 个视频` : ""}`;
-  return `<a class="vbtn${sm ? " sm" : ""}" href="${esc(v.url)}" target="_blank" rel="noopener" data-vi="0" data-vs="${esc(JSON.stringify(vs))}" data-vw="${esc(word)}" title="${esc(tip)}" aria-label="讲解视频">${PLAY_ICON}</a>`;
+  return `<a class="vbtn${sm ? " sm" : ""}" href="${esc(Video.webfull(v.url, S.videoWebfull))}" target="_blank" rel="noopener" data-vi="0" data-vs="${esc(JSON.stringify(vs))}" data-vw="${esc(word)}" title="${esc(tip)}" aria-label="讲解视频">${PLAY_ICON}</a>`;
 }
 
 /* ---------- 讲解视频页内播放：B 站嵌入播放器，电脑上是画中画式浮窗，手机贴在底部；不离开页面，看完 ✕ 掉接着背 ----------
@@ -84,7 +88,7 @@ function openVideo(vs, i, word) {
   if (fresh) { vp = document.createElement("div"); vp.id = "vplayer"; document.body.append(vp); }
   vp.innerHTML = `<div class="vphead" title="拖动移动，双击恢复默认大小和位置"><b>${esc(word)}</b>
       <select class="vpsel" title="换个视频看">${vs.map((o, j) => `<option value="${j}"${j === i ? " selected" : ""}>${esc(o.label)}${o.approx ? "（约）" : ""}</option>`).join("")}</select>
-      <a class="vpout" href="${esc(v.url)}" target="_blank" rel="noopener" title="${vpNarrow() ? "去 B 站看（登录后能看高清）" : "在 B 站分屏标签里看（登录后能看高清），同时关掉这个浮窗"}">B 站 ↗</a>
+      <a class="vpout" href="${esc(Video.webfull(v.url, S.videoWebfull))}" target="_blank" rel="noopener" title="${vpNarrow() ? "去 B 站看（登录后能看高清）" : "在 B 站分屏标签里看（登录后能看高清），同时关掉这个浮窗"}">B 站 ↗</a>
       <button class="vpx" title="关闭（Esc）">✕</button></div>
     <div class="vpbox"><iframe src="${esc(Video.embed(v))}"${vpNarrow() ? "" : SANDBOX} allow="autoplay; fullscreen; picture-in-picture" allowfullscreen scrolling="no"></iframe></div>
     ${["nw", "ne", "sw", "se"].map(c => `<i class="vpr" data-c="${c}" title="拖动缩放"></i>`).join("")}`;
@@ -159,7 +163,7 @@ function splitCheck() {
 }
 function splitGo(v) {
   if (!v) return false;
-  const w = window.open(v.url, SPLIT_NAME);
+  const w = window.open(Video.webfull(v.url, S.videoWebfull), SPLIT_NAME);
   if (!w) return false;   // 被浏览器拦了
   splitSet(w); closeVideo();
   return true;
@@ -186,7 +190,7 @@ document.addEventListener("click", e => {
   if (vp && !vpNarrow() && t.closest(".vpout") && !(e.button || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey)) {
     e.preventDefault();
     const v = vp._vs[+vp.querySelector(".vpsel").value];
-    if (!splitGo(v)) window.open(v.url, "_blank");   // 分屏标签被拦就退回普通新标签
+    if (!splitGo(v)) window.open(Video.webfull(v.url, S.videoWebfull), "_blank");   // 分屏标签被拦就退回普通新标签
   }
 }, true);
 document.addEventListener("change", e => { if (vp && e.target.classList.contains("vpsel")) openVideo(vp._vs, +e.target.value, vp._w); });
@@ -756,6 +760,14 @@ function renderSettings() {
       ${sw("phLine", "例句词组下划线", "例句里标出的词组（书外补充）画虚线；关掉只是不画线，点词组照样显示词组释义")}
       <div class="row"><span><b>讲解视频优先用</b><small>词卡上 ▶ 先播哪一种：精讲带背每课一段（约 1 小时，到 U8）；全程班每单元一段（约 4 小时，U1–U10 都有）。选的这种没有这个词就用另一种，播放窗里也随时能换</small></span>
         ${seg("videoPrefer", [["精讲带背", "精讲带背"], ["全程班", "全程班"]])}</div>
+    </section>
+    <section class="panel"><h2>课件配套脚本</h2>
+      ${sw("videoWebfull", "B 站网页全屏", "安装下方脚本后，从课件打开的 B 站讲解直接铺满网页，保留地址栏和标签栏。按 Esc 或在油猴菜单中退出；普通 B 站视频不自动启用")}
+      <div class="row"><span><b>B 站网页全屏脚本</b><small>安装一次即可自动生效。支持右下角「B站」分屏、播放窗「B 站 ↗」和另开标签看讲解；关闭上方开关后，新打开的视频使用普通布局</small>
+        <a href="tools/bilibili-webfull.user.js" target="_blank" rel="noopener">安装网页全屏脚本 ↗</a></span></div>
+      <div class="row"><span><b>B 站小窗净化脚本</b><small>课件里的视频小窗隐藏暂停推荐、标题作者和高清引流提示，保留播放控件</small>
+        <a href="tools/bilibili-clean-player.user.js" target="_blank" rel="noopener">安装小窗净化脚本 ↗</a></span></div>
+      <p class="hint">需先安装并启用 <a href="https://www.tampermonkey.net/" target="_blank" rel="noopener">篡改猴扩展 ↗</a>。若安装链接只显示源码，可在油猴中添加新脚本，粘贴全部源码并保存。安装后重新打开 B 站视频。</p>
     </section>
     <section class="panel"><h2>学习新词</h2>
       <div class="row"><span><b>每个新词过几关</b><small>先看一遍词卡，再按顺序考：看词选义 → 听音选义 → 拼写（关掉听音题时第 2 关换成看义选词；词组第 3 关用看义选词代替拼写）；错满 3 次后再答对一次也算过关</small></span>

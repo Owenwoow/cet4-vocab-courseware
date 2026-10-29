@@ -24,6 +24,21 @@ test("链接：BV、分 P、秒拼成 B 站地址", () => {
   assert.equal(Video.url("BV1Vkah6oEVo", 10, 0), "https://www.bilibili.com/video/BV1Vkah6oEVo/?p=10&t=0");
 });
 
+test("网页全屏：只标记普通 B 站讲解链接，保留分 P、秒数和锚点", () => {
+  const src = Video.url("BV1FTPLzBEnj", 2, 23) + "#片段";
+  const marked = new URL(Video.webfull(src, true));
+  assert.equal(marked.searchParams.get("p"), "2");
+  assert.equal(marked.searchParams.get("t"), "23");
+  assert.equal(marked.searchParams.get("cet4_webfull"), "1");
+  assert.equal(marked.hash, new URL(src).hash);
+  assert.equal(Video.webfull(src, false), new URL(src).href);
+  assert.equal(Video.webfull(Video.webfull(src, true), true), marked.href);
+  assert.equal(Video.webfull(marked.href, false), new URL(src).href);
+  const embed = Video.embed({bv: "BV1FTPLzBEnj", p: 2, t: 23});
+  assert.equal(Video.webfull(embed, true), embed);
+  assert.equal(Video.webfull("https://www.bilibili.com/", true), "https://www.bilibili.com/");
+});
+
 test("按 sources 的顺序给出，第一个就是优先级最高的", () => {
   const o = Video.options(data(), 1);
   assert.deepEqual(o.map(x => x.id), ["jj1", "qc1", "qc3"]);
