@@ -105,6 +105,22 @@ button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .row small{color:var(--sub);font-size:13px}
 .row>button{flex-shrink:0;white-space:nowrap}
 .hint{font-size:12px;color:var(--sub);margin:0 0 6px}
+.script-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:4px 0 14px}
+.script-card{display:flex;flex-direction:column;gap:12px;padding:18px 16px;background:var(--bg);border:1px solid var(--line);border-radius:12px}
+.script-card h3{font-size:15px;font-weight:650;margin:0}
+.script-card p{font-size:13px;color:var(--sub);margin:0 0 4px;line-height:1.7}
+.script-install{display:inline-flex;align-self:center;align-items:center;justify-content:center;gap:8px;flex-shrink:0;width:180px;max-width:100%;min-height:44px;padding:8px 12px;margin-top:auto;border:1px solid var(--line2);border-radius:10px;background:var(--card);color:var(--ink);font-size:16px;font-weight:600;line-height:1.4;text-decoration:none;transition:background .15s,border-color .15s,color .15s}
+.script-install span{min-width:0}
+.script-install svg,.script-help svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.script-install:focus-visible,.script-help a:focus-visible,.script-help summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media (hover:hover){.script-install:hover{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}.script-help a:hover{text-decoration:underline;text-underline-offset:3px}}
+.script-help{border-top:1px solid var(--line);padding-top:12px;margin-bottom:4px;color:var(--sub);font-size:12px;line-height:1.8}
+.script-help p{margin:0 0 6px}
+.script-help a{display:inline-flex;align-items:center;gap:3px;color:var(--accent);font-weight:600;text-decoration:none}
+.script-help svg{width:13px;height:13px}
+.script-help summary{width:fit-content;cursor:pointer}
+.script-help details p{margin:6px 0 0}
+@media(max-width:600px){.script-grid{grid-template-columns:minmax(0,1fr)}.script-card{padding:16px}}
 .seg{display:inline-flex;flex:none;border:1px solid var(--line);border-radius:10px;overflow:hidden}
 .seg button{border:none;border-radius:0;padding:6px 12px;background:var(--card)}
 .seg button+button{border-left:1px solid var(--line)}

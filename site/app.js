@@ -739,6 +739,7 @@ const seg = (key, opts) => `<div class="seg">${opts.map(([v, label]) =>
 const sw = (key, title, desc) => `<label class="row sw"><span><b>${title}</b><small>${desc}</small></span>
   <input type="checkbox" data-set="${key}"${S[key] ? " checked" : ""}><i></i></label>`;
 function renderSettings() {
+  const outIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"/></svg>';
   const have = AUD.voices || [];
   const sample = L ? allEntries()[0].word : "hello";
   const back = prevHash, bm = back.match(/^#\/u(\d\d)-l(\d\d)/);
@@ -763,11 +764,22 @@ function renderSettings() {
     </section>
     <section class="panel"><h2>课件配套脚本</h2>
       ${sw("videoWebfull", "B 站网页全屏", "安装下方脚本后，从课件打开的 B 站讲解直接铺满网页，保留地址栏和标签栏。按 Esc 或在油猴菜单中退出；普通 B 站视频不自动启用")}
-      <div class="row"><span><b>B 站网页全屏脚本</b><small>安装一次即可自动生效。支持右下角「B站」分屏、播放窗「B 站 ↗」和另开标签看讲解；关闭上方开关后，新打开的视频使用普通布局</small>
-        <a href="tools/bilibili-webfull.user.js" target="_blank" rel="noopener">安装网页全屏脚本 ↗</a></span></div>
-      <div class="row"><span><b>B 站小窗净化脚本</b><small>课件里的视频小窗隐藏暂停推荐、标题作者和高清引流提示，保留播放控件</small>
-        <a href="tools/bilibili-clean-player.user.js" target="_blank" rel="noopener">安装小窗净化脚本 ↗</a></span></div>
-      <p class="hint">需先安装并启用 <a href="https://www.tampermonkey.net/" target="_blank" rel="noopener">篡改猴扩展 ↗</a>。若安装链接只显示源码，可在油猴中添加新脚本，粘贴全部源码并保存。安装后重新打开 B 站视频。</p>
+      <div class="script-grid">
+        <article class="script-card">
+          <h3>B 站网页全屏</h3>
+          <p>安装一次，从课件打开讲解就铺满网页。支持分屏、浮窗外链和新标签页。</p>
+          <a class="script-install" href="tools/bilibili-webfull.user.js" target="_blank" rel="noopener" aria-label="安装网页全屏脚本"><span>安装脚本</span>${outIcon}</a>
+        </article>
+        <article class="script-card">
+          <h3>B 站小窗净化</h3>
+          <p>隐藏课件视频小窗里的暂停推荐、标题作者和高清引流，保留播放控件。</p>
+          <a class="script-install" href="tools/bilibili-clean-player.user.js" target="_blank" rel="noopener" aria-label="安装小窗净化脚本"><span>安装脚本</span>${outIcon}</a>
+        </article>
+      </div>
+      <div class="script-help">
+        <p>使用前需先安装并启用 <a href="https://www.tampermonkey.net/" target="_blank" rel="noopener">篡改猴扩展 ${outIcon}</a>，安装脚本后重新打开 B 站视频。</p>
+        <details><summary>安装链接只显示源码？</summary><p>在油猴中添加新脚本，粘贴全部源码并保存。</p></details>
+      </div>
     </section>
     <section class="panel"><h2>学习新词</h2>
       <div class="row"><span><b>每个新词过几关</b><small>先看一遍词卡，再按顺序考：看词选义 → 听音选义 → 拼写（关掉听音题时第 2 关换成看义选词；词组第 3 关用看义选词代替拼写）；错满 3 次后再答对一次也算过关</small></span>
