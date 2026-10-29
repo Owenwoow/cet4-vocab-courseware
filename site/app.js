@@ -740,6 +740,11 @@ const sw = (key, title, desc) => `<label class="row sw"><span><b>${title}</b><sm
   <input type="checkbox" data-set="${key}"${S[key] ? " checked" : ""}><i></i></label>`;
 function renderSettings() {
   const outIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"/></svg>';
+  // 新增配套脚本只需追加一项，统一沿用设置页的紧凑行布局。
+  const scripts = [
+    {name: "网页全屏脚本", desc: "课件讲解自动铺满网页，普通 B 站视频保持原布局", file: "bilibili-webfull.user.js"},
+    {name: "小窗净化脚本", desc: "隐藏视频小窗里的推荐和引流，保留播放控件", file: "bilibili-clean-player.user.js"},
+  ];
   const have = AUD.voices || [];
   const sample = L ? allEntries()[0].word : "hello";
   const back = prevHash, bm = back.match(/^#\/u(\d\d)-l(\d\d)/);
@@ -763,19 +768,9 @@ function renderSettings() {
         ${seg("videoPrefer", [["精讲带背", "精讲带背"], ["全程班", "全程班"]])}</div>
     </section>
     <section class="panel"><h2>课件配套脚本</h2>
-      ${sw("videoWebfull", "B 站网页全屏", "安装下方脚本后，从课件打开的 B 站讲解直接铺满网页，保留地址栏和标签栏。按 Esc 或在油猴菜单中退出；普通 B 站视频不自动启用")}
-      <div class="script-grid">
-        <article class="script-card">
-          <h3>B 站网页全屏</h3>
-          <p>安装一次，从课件打开讲解就铺满网页。支持分屏、浮窗外链和新标签页。</p>
-          <a class="script-install" href="tools/bilibili-webfull.user.js" target="_blank" rel="noopener" aria-label="安装网页全屏脚本"><span>安装脚本</span>${outIcon}</a>
-        </article>
-        <article class="script-card">
-          <h3>B 站小窗净化</h3>
-          <p>隐藏课件视频小窗里的暂停推荐、标题作者和高清引流，保留播放控件。</p>
-          <a class="script-install" href="tools/bilibili-clean-player.user.js" target="_blank" rel="noopener" aria-label="安装小窗净化脚本"><span>安装脚本</span>${outIcon}</a>
-        </article>
-      </div>
+      ${sw("videoWebfull", "B 站网页全屏", "从课件跳转时自动铺满网页，按 Esc 退出；需先安装下方脚本")}
+      ${scripts.map(s => `<div class="row script-row"><span><b>${s.name}</b><small>${s.desc}</small></span>
+        <a class="script-install" href="tools/${s.file}" target="_blank" rel="noopener" aria-label="安装${s.name}">安装 ${outIcon}</a></div>`).join("")}
       <div class="script-help">
         <p>使用前需先安装并启用 <a href="https://www.tampermonkey.net/" target="_blank" rel="noopener">篡改猴扩展 ${outIcon}</a>，安装脚本后重新打开 B 站视频。</p>
         <details><summary>安装链接只显示源码？</summary><p>在油猴中添加新脚本，粘贴全部源码并保存。</p></details>
