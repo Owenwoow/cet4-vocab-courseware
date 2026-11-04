@@ -268,6 +268,74 @@ test('今日首答与待巩固保留，额外巩固不重计成绩或改排期',
   assert.deepEqual(h.data.get('srs:'+first),card); assert.deepEqual(h.data.get('log:'+day),log);
   assert.match(h.html,/自愿巩固只供练习/);
   await h.navigate('#/');assert.match(h.html,/待巩固 1/);
+  assert.match(h.html,/本次巩固已完成/); assert.match(h.html,/再练全部/); assert.doesNotMatch(h.html,/继续巩固/);
+});
+
+async function readyStrengthen() {
+  const h = await harness('#/drill/due', {'set:dailyCap':2}).render();
+  let count = 0;
+  while (h.word() && count++ < 10) {
+    const retry = h.progress().current.retry;
+    h.click({recallReveal:'1'}); h.click({recallRate: retry ? 'independent' : 'failed'});
+  }
+  assert.ok(count < 10); assert.match(h.html,/今日计划已完成/);
+  return h;
+}
+
+test('巩固每轮各练一次，下一轮只出未独立想起的词，首页保留首答并更新剩余量', async () => {
+  const h = await readyStrengthen();
+  const formal = copy([...h.data].filter(([k]) => /^(srs:|task:|log:|plan:)/.test(k)));
+  await h.navigate('#/drill/strengthen');
+  const first = h.word(); h.click({recallReveal:'1'}); h.click({recallRate:'effort'});
+  const second = h.word(); assert.notEqual(second,first);
+  h.click({},true); h.click({recallReveal:'1'}); h.click({recallRate:'independent'});
+  assert.equal(h.word(),undefined); assert.match(h.html,/还有 <b>1<\/b> 个词待巩固/);
+  assert.match(h.html,/查看剩余词/); assert.doesNotMatch(h.html,/补测|自由抽查/);
+  await h.navigate('#/');
+  assert.match(h.html,/还有 1 个词待巩固/); assert.match(h.html,/已独立想起 1 \/ 2 词/);
+  assert.match(h.html,/待巩固 2/);
+  await h.navigate('#/drill/strengthen'); assert.equal(h.word(),second);
+  h.click({recallReveal:'1'}); h.click({recallRate:'failed'});
+  assert.equal(h.word(),undefined); // 不再自动插入同日补测，避免一轮内反复出现。
+  h.click({strengthenContinue:'1'}); await new Promise(setImmediate);
+  assert.equal(h.word(),second);
+  h.click({recallReveal:'1'}); h.click({recallRate:'independent'});
+  assert.match(h.html,/本次巩固已完成/); assert.doesNotMatch(h.html,/继续巩固|查看剩余词/);
+  await h.navigate('#/'); assert.match(h.html,/本次巩固已完成/); assert.match(h.html,/待巩固 2/);
+  assert.deepEqual([...h.data].filter(([k]) => /^(srs:|task:|log:|plan:)/.test(k)),formal);
+  h.click({strengthenRestart:'1'}); await h.navigate(h.context.location.hash);
+  assert.equal(h.data.get('drill:strengthen').rc.w.length,2); // 再练全部确实恢复完整名单。
+  assert.deepEqual([...h.data].filter(([k]) => /^(srs:|task:|log:|plan:)/.test(k)),formal);
+});
+
+test('巩固可退出续练，刷新和旧断点不会复活已独立想起的词，结果仅当日有效', async () => {
+  const h = await readyStrengthen(); await h.navigate('#/drill/strengthen');
+  const stale = copy(h.data.get('drill:strengthen')), first = h.word();
+  h.click({recallReveal:'1'}); h.click({recallRate:'independent'});
+  const second = h.word(); h.click({recallReveal:'1'});
+  const restored = await harness('#/drill/strengthen',Object.fromEntries(h.data)).render();
+  assert.equal(restored.word(),second); assert.doesNotMatch(restored.html,/data-recall-reveal/);
+  h.data.set('drill:strengthen',stale);
+  await h.navigate('#/drill/strengthen'); assert.equal(h.word(),second);
+  h.setDay(SRS.add(day,1)); await h.navigate('#/drill/due');
+  let count = 0;
+  while (h.word() && count++ < 10) { const retry = h.progress().current.retry; h.click({recallReveal:'1'}); h.click({recallRate:retry ? 'independent':'failed'}); }
+  await h.navigate('#/drill/strengthen');
+  assert.ok(h.data.get('drill:strengthen').rc.w.includes(first));
+});
+
+test('备份保留当日逐词巩固结果，跨日导入不会误判为巩固完成', async () => {
+  const Backup = require('../site/backup.js');
+  const h = await readyStrengthen(); await h.navigate('#/drill/strengthen');
+  h.click({recallReveal:'1'}); h.click({recallRate:'independent'});
+  const entries = [...h.data].filter(([k]) => k.startsWith('drill:strengthen-result:'));
+  assert.equal(entries.length,1);
+  const [key,value] = entries[0], stamp = Date.parse(day+'T12:00:00Z');
+  const doc = Object.fromEntries([...h.data].map(([k,v]) => [k,[v,stamp]]));
+  const imported = Backup.plan({},doc,['study'],'merge',stamp);
+  assert.deepEqual(imported.find(([k]) => k===key)[1][0],value);
+  const tomorrow = Backup.plan({},doc,['study'],'merge',stamp+86400000);
+  assert.equal(tomorrow.find(([k]) => k===key),undefined);
 });
 
 test('当日计划固定每轮数量，设置变化次日才影响新计划', async () => {
