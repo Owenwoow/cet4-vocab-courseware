@@ -22,6 +22,7 @@ MODES = {
     'migration': ('首次旧词校准', '#/'),
     'backlog': ('大量积压（分批推荐）', '#/'),
     'complete': ('今日已完成（仍有积压）', '#/'),
+    'strengthen': ('首答已完成（待巩固）', '#/'),
     'relearn': ('遗忘词重新学习', '#/'),
     'normal': ('日常学习（新词自选）', '#/'),
     'empty': ('没有到期词', '#/'),
@@ -100,13 +101,14 @@ class Handler(SimpleHTTPRequestHandler):
               for(const x of active()) doc['srs:'+x.word]=[SRS.rateRecall(x.card,'independent',day,{id:'exit-'+x.word}),now];
               doc['evening:'+previous]=[{finished:true,skipped:false,items:{historical:{word:'old',first:'independent'}}},now-1];
             }
-            if (mode === 'complete') {
-              const plan=SRS.makeDailyPlan(active(),day,{cap:50,id:'demo-complete',created:now});
+            if (['complete','strengthen'].includes(mode)) {
+              const plan=SRS.makeDailyPlan(active(),day,{cap:mode==='strengthen'?4:50,id:'demo-'+mode,created:now});
               doc['plan:'+day]=[plan,now];
-              for(const ref of plan.items) {
+              for(const [i,ref] of plan.items.entries()) {
                 const c=doc['srs:'+ref.word][0], id=SRS.dailyAttempt(day,c.life);
-                doc['srs:'+ref.word]=[SRS.rateRecall(c,'independent',day,{id}),now];
-                doc[SRS.taskKey(day,c.life)]=[{d:day,word:ref.word,life:c.life,first:{result:'independent',at:now}},now];
+                const result=mode==='strengthen'&&i>0?'failed':'independent';
+                doc['srs:'+ref.word]=[SRS.rateRecall(c,result,day,{id}),now];
+                doc[SRS.taskKey(day,c.life)]=[{d:day,word:ref.word,life:c.life,first:{result,at:now}},now];
               }
             }
             for (const [k,v] of Object.entries({autoSay:false,autoEx:false,voice:'ava'})) doc['set:'+k]=[v,now];

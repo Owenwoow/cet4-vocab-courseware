@@ -97,6 +97,7 @@ const Backup = (() => {
     "lw:<课id>、pos:<课id>": "阅读位置",
     [BY_ID.ui.keys.join("、")]: "界面状态",
     "drill:<范围>": "练习断点，只恢复同一学习日且对应卡片/词群仍有效的进度；rc 含提示、首次表现、有限补测及任务标识",
+    "drill:strengthen-result:<生命周期>": "当日自愿巩固的逐词结果 d、life、word、result；独立想起后移出练习名单，重练记 0，不改变首答成绩和正式排期",
     "evening:<日期>": "晚间独立任务：items 按卡片生命周期保存结果，finished 完成，skipped 跳过；不以白天答题日判断完成",
     "browse:<日期>": "途中浏览记录，不计回忆成功",
     "plan:<日期>": "当日固定推荐词单：items 含单词、生命周期和任务类别；budget 含张数、预计用时及补测预留，credited 为升级前当日已做量；reset 为显式覆盖恢复批次",
