@@ -394,7 +394,7 @@ const Study = (() => {
     const rows = status.rows.filter(row => !row.waived && row.record.first);
     const count = result => rows.filter(row => row.record.first.result === result).length;
     const mastered = rows.filter(row => row.x && SRS.level(row.x.card, lvOpt()) >= 4).length;
-    return {completed: rows.filter(row => !row.external).length, external: rows.filter(row => row.external).length, independent: count("independent") + count("effort"), hinted: count("hinted"), failed: count("failed"),
+    return {rows, completed: rows.filter(row => !row.external).length, external: rows.filter(row => row.external).length, independent: count("independent") + count("effort"), hinted: count("hinted"), failed: count("failed"),
       strengthen: strengthenRows(status), mastered, accumulating: rows.filter(row => row.x && SRS.level(row.x.card, lvOpt()) < 4).length};
   }
   function modToday() {
@@ -415,7 +415,7 @@ const Study = (() => {
     const adjustment = plan.credited || status.rows.some(row => row.waived || !row.x && !row.record.first);
     return `<wa-card class="mod today"><div slot="header" class="mh"><b>今日学习</b><span class="sub">${migration.active ? "旧词记忆校准" : "日常复习"}</span></div>
       <div class="today-status"><span class="today-dot${finished ? " done" : ""}" aria-hidden="true">${finished ? "✓" : `<svg viewBox="0 0 40 40"><circle class="today-ring-track" cx="20" cy="20" r="16"/><circle class="today-ring-value" cx="20" cy="20" r="16" pathLength="100" stroke-dasharray="${total ? completed / total * 100 : 0} 100"/></svg>`}</span><div><b>${finished ? "今日计划已完成" : completed ? "今日计划进行中" : `今天推荐 ${total} 词`}</b><small>${completed} / ${total} 个计划词已完成${pendingRetries ? ` · 待补测 ${pendingRetries} 次` : ""}</small></div>${finished ? `<span class="today-badge">计划完成</span>` : ""}</div>
-      <div class="today-memory"><div class="today-section-label"><b>今日首答</b><span>仅记录第一次作答</span></div><div class="today-metrics">
+      <div class="today-memory"><div class="today-section-label"><b>今日首答</b><a href="#/list/recap">回顾今日单词 →</a></div><div class="today-metrics">
         <div class="today-independent"><strong>${results.independent}</strong><span>独立想起</span></div><div class="today-strengthen"><strong>${results.strengthen.length}</strong><span>需巩固</span></div></div></div>
       <div class="today-next"><div><b>${nextTitle}</b><p>${nextNote}</p></div>
         <div class="today-action">${!finished ? btn("#/drill/due", progGet("due") || completed ? "继续学习" : "开始学习", 'variant="brand"', "medium") : extraDone ? strengthenRestart() : extra.total ? btn("#/drill/strengthen", "继续巩固", 'variant="brand"', "medium") : ""}</div></div>
@@ -547,8 +547,55 @@ const Study = (() => {
     $("#logSave").disabled = !add.length && !del.length;
   }
 
+  /* 今日首答详情：复用首页统计，补测及自愿巩固只作旁注，不改变首答分类。 */
+  let recapRender = 0;
+  async function renderRecap() {
+    const hash = location.hash, day = T(), turn = ++recapRender;
+    const status = planStatus(), results = planResults(status);
+    const requested = new URLSearchParams(hash.split("?")[1] || "").get("show");
+    const filter = ["strengthen", "independent", "all"].includes(requested) ? requested : "strengthen";
+    const weak = row => ["hinted", "failed"].includes(row.record.first.result);
+    const rows = results.rows.filter(row => filter === "all" || (filter === "strengthen" ? weak(row) : Recall.independent(row.record.first.result)));
+    const labels = {independent: "独立想起", effort: "独立但费劲", hinted: "提示后想起", failed: "未想起/想错", chopped: "已斩"};
+    const label = result => Object.hasOwn(labels, result) ? labels[result] : "未分类";
+    setHead("今日单词回顾");
+    view()._items = [];
+    view().innerHTML = `<p class="empty">加载中…</p>`;
+    // 一课不可用时仍展示词单和首答；已退役的词不借用同名新卡的内容与巩固结果。
+    const details = await Promise.all(rows.map(async row => {
+      if (!row.x) return null;
+      try { return (await resolve([row.x]))[0] || null; } catch { return null; }
+    }));
+    if (location.hash !== hash || turn !== recapRender) return;
+    if (T() !== day) return renderRecap();
+    const tabs = [["strengthen", "首答需巩固", results.strengthen.length], ["independent", "首答独立想起", results.independent], ["all", "全部", results.rows.length]];
+    const extra = strengthenStatus(status);
+    const content = rows.map((row, i) => {
+      const x = details[i], first = row.record.first.result;
+      const practice = row.x && strengthenRecord(row.life), retry = row.record.retry?.result;
+      const target = x?.nb && !x.card.bk ? x.card.e : row.word;
+      const source = x ? (x.nb ? "生词本" : `${lesTitle(x.lid)} · 词群 ${x.grp.no}`) : "";
+      const meaning = x ? x.e.prons.flatMap(p => p.senses).map(s => `<span class="pos">${esc(s.pos)}</span>${meanHTML(s.mean)}`).join("　") : "";
+      return `<article class="lrow recap-row" data-w="${esc(row.word)}">
+        <div class="recap-wordline">${x ? `<button class="recap-word" data-say="1" aria-label="朗读 ${esc(row.word)}">${esc(row.word)}</button><span class="ipa">${esc(ipaOf(x.e))}</span>` : `<b class="recap-word">${esc(row.word)}</b>`}</div>
+        <span class="recap-result${weak(row) ? " needs-work" : Recall.independent(first) ? " recalled" : ""}">首答：${label(first)}</span>
+        <div class="lm">${meaning || `<span class="recap-unavailable">${x ? "暂无现成释义" : row.x ? "释义暂不可用，可稍后重试" : "已不在当前复习词单，仅保留今日首答"}</span>`}${x?.e.gloss ? `<span class="src add">补充</span>` : ""}</div>
+        <div class="recap-followup">${retry ? `<span>同日补测：${label(retry)}</span>` : ""}${practice ? `<span>自愿巩固：${label(practice.result)}</span>` : ""}${weak(row) && row.x && !practice ? `<span>${retry ? "尚未自愿巩固" : "尚未巩固"}</span>` : ""}${row.external ? `<span>计划外首答</span>` : ""}</div>
+        ${source ? `<div class="lsrc">${target ? `<a href="#/${encodeURIComponent(x.lid)}/w/${encodeURIComponent(target)}">${esc(source)} · 查看出处 →</a>` : esc(source)}</div>` : ""}</article>`;
+    }).join("");
+    const empty = !results.rows.length ? "今天还没有首答记录，完成今日学习后可以来这里回顾。" : filter === "strengthen" ? "今天的首答没有需要巩固的词，可以切换查看其他单词。" : "这个分类里还没有单词。";
+    view().innerHTML = `<div class="recap listv"><a class="recap-back" href="#/">← 回首页</a>
+      <div class="vh"><h1>今日单词回顾 <small>${md(day)} · ${results.rows.length} 词</small></h1></div>
+      <p class="note">按今日首次词义作答分类；补测和巩固后想起的词仍保留在原分类中。</p>
+      <nav class="recap-filters" aria-label="今日单词分类">${tabs.map(([key, title, count]) => `<a href="#/list/recap?show=${key}"${key === filter ? ' aria-current="page"' : ""}>${title}<span>${count}</span></a>`).join("")}</nav>
+      ${results.strengthen.length ? `<p class="recap-progress">首答需巩固 ${results.strengthen.length} 词 · 自愿巩固已独立想起 ${extra.done} / ${extra.total} 词</p>` : ""}
+      ${content || `<p class="empty">${empty}</p>`}</div>`;
+    view()._items = details.filter(Boolean);
+  }
+
   /* ---------- 浏览（途中看）：紧凑列表，可遮住释义 ---------- */
   async function renderList(sc) {
+    if (sc === "recap") return renderRecap();
     if (sc === "today") Sync.set("browse:" + T(), {at: Date.now()});
     const info = scopeInfo(sc);
     if (!info) { location.hash = "#/"; return; }

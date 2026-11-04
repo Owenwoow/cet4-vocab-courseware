@@ -1,7 +1,7 @@
 "use strict";
 const test = require("node:test"), assert = require("node:assert/strict");
 const fs = require("node:fs"), path = require("node:path"), vm = require("node:vm");
-const SRS = require("../site/srs.js"), Recall = require("../site/recall.js"), Video = require("../site/video.js");
+const SRS = require("../site/srs.js"), Recall = require("../site/recall.js"), Video = require("../site/video.js"), Vocab = require("../site/vocab.js");
 const day = "2026-10-31", yesterday = SRS.add(day, -1);
 const read = file => fs.readFileSync(path.join(__dirname, "../site", file), "utf8");
 const json = file => JSON.parse(read(file));
@@ -40,7 +40,7 @@ function harness(hash = "#/drill/due", saved = {}) {
     data.set(`learn:${lid}:g${group.no}`, day);
   }
   const context = vm.createContext({
-    SRS: {...SRS, today: () => studyDay}, Recall, Video, Sync, URLSearchParams, setTimeout, clearTimeout,
+    SRS: {...SRS, today: () => studyDay}, Recall, Video, Vocab, Sync, URLSearchParams, setTimeout, clearTimeout,
     location: {hash}, document: {title: "测试", addEventListener(type, fn, capture) {
       if (!listeners.has(type)) listeners.set(type, []);
       listeners.get(type).push({fn, capture: !!capture});
@@ -77,6 +77,7 @@ function harness(hash = "#/drill/due", saved = {}) {
           for (const part of selector.split(",")) {
             if (part.startsWith("#") && dataset.id === part.slice(1)) return target;
             if (part === ".study" && born === generation) return view;
+            if (part === ".lrow" && dataset.w && born === generation) return target;
             const attr = part.match(/^\[data-([\w-]+)\]$/)?.[1]?.replace(/-([a-z])/g, (_, c) => c.toUpperCase());
             if (attr && attr in dataset) return target;
           }
@@ -357,4 +358,164 @@ test('计划外首答单列，历史抵扣和退役词不冒充首答', async ()
   assert.match(h.html,/计划内首答 0\/2 词/); assert.match(h.html,/计划外首答 2 词/);
   assert.match(h.html,/历史抵扣、已退役或抵扣的计划词不计入首答/);
   assert.match(h.html,/待巩固 2/);
+  await h.navigate('#/list/recap?show=all');
+  assert.deepEqual(recapWords(h.html).sort(), ['dose','specific']);
+  assert.equal((h.html.match(/计划外首答<\/span>/g) || []).length, 2);
+});
+
+const recapWords = html => [...html.matchAll(/<article class="lrow recap-row" data-w="([^"]+)"/g)].map(m => m[1]);
+async function recapFixture(first = {specific:'failed', dose:'independent'}) {
+  const h = await harness('#/').render();
+  for (const [word, result] of Object.entries(first)) {
+    const c = h.data.get('srs:'+word);
+    h.data.set('srs:'+word, result === 'chopped' ? SRS.chop(c,day,word,h.context.S.examDate) : SRS.rateRecall(c,result,day,{id:SRS.dailyAttempt(day,c.life),at:100}));
+    h.data.set(SRS.taskKey(day,c.life), {d:day,word,life:c.life,first:{result,at:100}});
+  }
+  return h;
+}
+
+test('今日回顾与首页首答一致，默认只看薄弱词，切换分类和读音不改学习数据', async () => {
+  const h = await recapFixture();
+  await h.navigate('#/');
+  assert.match(h.html, /href="#\/list\/recap">回顾今日单词/);
+  const before = copy([...h.data]);
+  assert.equal(h.context.Study.isStudy('#/list/recap?show=all'), true);
+  await h.navigate('#/list/recap');
+  assert.deepEqual(recapWords(h.html), ['specific']);
+  assert.match(h.html, /首答：未想起\/想错/);
+  assert.match(h.html, /尚未巩固/);
+  assert.match(h.html, /首答需巩固<span>1<\/span>/);
+  assert.match(h.html, /首答独立想起<span>1<\/span>/);
+  assert.match(h.html, /全部<span>2<\/span>/);
+  const lesson = json('data/lessons/u07-l01.json');
+  const entry = lesson.groups.flatMap(g => g.entries).find(e => e.word === 'specific');
+  assert.ok(h.html.includes(entry.prons[0].senses[0].mean));
+  assert.match(h.html, /href="#\/u07-l01\/w\/specific"/);
+  h.click({w:'specific',say:'1'});
+  assert.equal(h.plays.length + h.speech.length, 1);
+  await h.navigate('#/list/recap?show=independent');
+  assert.deepEqual(recapWords(h.html), ['dose']);
+  await h.navigate('#/list/recap?show=all');
+  assert.deepEqual(recapWords(h.html).sort(), ['dose','specific']);
+  await h.navigate('#/list/recap?show=invalid');
+  assert.deepEqual(recapWords(h.html), ['specific']);
+  assert.deepEqual([...h.data], before);
+});
+
+test('回顾保留提示和费劲的首答区别，同日补测成功不改变首答分类', async () => {
+  const h = await recapFixture({specific:'hinted',dose:'effort'});
+  const c = h.data.get('srs:specific'), key = SRS.taskKey(day,c.life);
+  h.data.set(key, {...h.data.get(key),retry:{result:'independent',at:200}});
+  await h.navigate('#/list/recap');
+  assert.deepEqual(recapWords(h.html), ['specific']);
+  assert.match(h.html, /首答：提示后想起/);
+  assert.match(h.html, /同日补测：独立想起/);
+  assert.match(h.html, /尚未自愿巩固/);
+  await h.navigate('#/list/recap?show=independent');
+  assert.deepEqual(recapWords(h.html), ['dose']);
+  assert.match(h.html, /首答：独立但费劲/);
+});
+
+test('自愿巩固后想起的薄弱词仍可回顾，逐词结果刷新保留且不重计首答', async () => {
+  const h = await readyStrengthen();
+  await h.navigate('#/drill/strengthen');
+  const success = h.word();
+  h.click({recallReveal:'1'}); h.click({recallRate:'independent'});
+  const failed = h.word();
+  h.click({recallReveal:'1'}); h.click({recallRate:'failed'});
+  const saved = Object.fromEntries(h.data), restored = await harness('#/list/recap',saved).render();
+  const before = copy([...restored.data]);
+  assert.deepEqual(recapWords(restored.html).sort(), [success,failed].sort());
+  assert.match(restored.html, /自愿巩固：独立想起/);
+  assert.match(restored.html, /自愿巩固：未想起\/想错/);
+  assert.match(restored.html, /自愿巩固已独立想起 1 \/ 2 词/);
+  assert.equal((restored.html.match(/首答：未想起\/想错/g) || []).length, 2);
+  await restored.navigate('#/list/recap?show=independent');
+  assert.deepEqual(recapWords(restored.html), []);
+  assert.deepEqual([...restored.data], before);
+});
+
+test('没有首答和全独立想起时有明确空状态，跨学习日不混入昨天的词', async () => {
+  const h = await harness('#/list/recap').render();
+  assert.deepEqual(recapWords(h.html), []);
+  assert.match(h.html, /今天还没有首答记录/);
+  const done = await recapFixture({specific:'independent',dose:'effort'});
+  await done.navigate('#/list/recap');
+  assert.match(done.html, /今天的首答没有需要巩固的词/);
+  await done.navigate('#/list/recap?show=all');
+  assert.equal(recapWords(done.html).length, 2);
+  done.setDay(SRS.add(day,1));
+  await done.navigate('#/list/recap?show=all');
+  assert.deepEqual(recapWords(done.html), []);
+  assert.match(done.html, /今天还没有首答记录/);
+});
+
+test('只有卡片当日回忆历史时可回顾，已斩词单列而不冒充独立想起', async () => {
+  const h = await recapFixture({specific:'failed',dose:'chopped'});
+  const c = h.data.get('srs:specific');
+  h.data.delete(SRS.taskKey(day,c.life));
+  await h.navigate('#/list/recap');
+  assert.deepEqual(recapWords(h.html), ['specific']);
+  await h.navigate('#/list/recap?show=all');
+  assert.deepEqual(recapWords(h.html).sort(), ['dose','specific']);
+  assert.match(h.html, /首答：已斩/);
+  await h.navigate('#/list/recap?show=independent');
+  assert.deepEqual(recapWords(h.html), []);
+});
+
+test('取消或重建的词保留当日首答，不借用新生命周期的巩固结果', async () => {
+  const h = await recapFixture();
+  const c = h.data.get('srs:specific');
+  h.data.set('srs:specific', {...c,life:'rebuilt'});
+  h.data.set('drill:strengthen-result:'+encodeURIComponent(c.life), {d:day,life:c.life,word:'specific',result:'independent'});
+  const before = copy([...h.data]);
+  await h.navigate('#/list/recap');
+  assert.deepEqual(recapWords(h.html), ['specific']);
+  assert.match(h.html, /已不在当前复习词单，仅保留今日首答/);
+  assert.doesNotMatch(h.html, /自愿巩固：独立想起|data-say=/);
+  assert.deepEqual([...h.data], before);
+});
+
+test('生词本首答同样进入回顾，释义使用现有生词解析', async () => {
+  const h = await recapFixture();
+  const card = {...SRS.freshCard(yesterday,'phrase-life'),w:'a phrase',x:'a phrase',k:'u07-l01',e:'specific',m:'n. 演示词组',at:day,o:1};
+  h.data.set('vocab:a phrase',card);
+  h.data.set(SRS.taskKey(day,card.life), {d:day,word:card.w,life:card.life,first:{result:'failed',at:200,planned:true}});
+  const before = copy([...h.data]);
+  await h.navigate('#/list/recap');
+  assert.ok(recapWords(h.html).includes('a phrase'));
+  assert.match(h.html, /演示词组/);
+  assert.match(h.html, /生词本 · 查看出处/);
+  assert.match(h.html, /计划外首答/);
+  assert.deepEqual([...h.data], before);
+});
+
+test('课文加载失败仍能回顾完整首答词单，其他课的释义继续显示', async () => {
+  const saved = Object.fromEntries((await recapFixture()).data);
+  const h = harness('#/list/recap?show=all', saved);
+  h.context.fetchJSON = async file => {
+    if (file === 'data/lessons/u07-l01.json') throw new Error('offline');
+    return json(file);
+  };
+  const before = copy([...h.data]);
+  await h.render();
+  assert.deepEqual(recapWords(h.html).sort(), ['dose','specific']);
+  assert.match(h.html, /释义暂不可用/);
+  assert.match(h.html, /href="#\/u08-l01\/w\/dose"/);
+  assert.deepEqual([...h.data], before);
+});
+
+test('离开回顾页后，尚未完成的词条加载不会覆盖新页面', async () => {
+  const saved = Object.fromEntries((await recapFixture()).data);
+  const h = harness('#/list/recap?show=all', saved);
+  let release;
+  h.context.fetchJSON = file => file === 'data/lessons/u07-l01.json'
+    ? new Promise(resolve => {release = () => resolve(json(file));}) : Promise.resolve(json(file));
+  const pending = h.render();
+  await new Promise(setImmediate);
+  assert.equal(typeof release,'function');
+  await h.navigate('#/');
+  release(); await pending;
+  assert.match(h.html, /class="home"/);
+  assert.doesNotMatch(h.html, /<h1>今日单词回顾/);
 });

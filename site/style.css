@@ -441,6 +441,8 @@ body.vp-open{padding-bottom:calc(min(460px,100vw - 32px) * 9 / 16 + 64px)}
 .today-section-label{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:9px}
 .today-section-label b{font-size:14px;font-weight:600}
 .today-section-label>span{font-size:12px;color:var(--sub)}
+.today-section-label>a{font-size:12px;color:var(--accent);text-decoration:none;text-align:right}
+.today-section-label>a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
 .today-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 .today-metrics>div{display:flex;align-items:baseline;gap:12px;min-width:0;padding:14px 18px;border-radius:10px;background:color-mix(in srgb,var(--ok-soft) 65%,var(--card));border:1px solid color-mix(in srgb,var(--ok) 12%,var(--card))}
 .today-metrics>.today-strengthen{background:color-mix(in srgb,var(--accent-soft) 65%,var(--card));border-color:color-mix(in srgb,var(--accent) 12%,var(--card))}
@@ -555,6 +557,27 @@ body.vp-open{padding-bottom:calc(min(460px,100vw - 32px) * 9 / 16 + 64px)}
 .lrow .lsrc:empty{display:none}
 .lrow .lsrc a{color:var(--blue);text-decoration:none}
 .lrow .vdel{margin-left:auto;font-size:12px;padding:2px 10px}
+
+/* 今日回顾沿用浏览词表，首答与后续表现分行展示。 */
+.recap-back{display:inline-block;margin:0 0 12px;color:var(--sub);font-size:13px;text-decoration:none}
+.recap-filters{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 12px}
+.recap-filters a{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:8px 14px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--sub);font-size:14px;text-decoration:none}
+.recap-filters a[aria-current="page"]{border-color:var(--accent);background:var(--accent-soft);color:var(--accent)}
+.recap-filters a span{font-size:12px;font-variant-numeric:tabular-nums}
+.recap-progress{font-size:13px;color:var(--sub);margin:0 0 12px;font-variant-numeric:tabular-nums}
+.recap-row{gap:6px 12px;margin-bottom:10px;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+.recap-wordline{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 10px;flex:1;min-width:0}
+.recap-word{max-width:100%;margin:0;padding:0;border:0;border-radius:3px;background:none;color:var(--ink);font-size:19px;font-weight:650;text-align:left;overflow-wrap:anywhere}
+.recap-wordline .ipa{overflow-wrap:anywhere}
+.recap-result{font-size:12px;color:var(--sub);border-radius:6px;padding:2px 8px;background:var(--bg)}
+.recap-result.needs-work{color:var(--accent);background:var(--accent-soft)}
+.recap-result.recalled{color:var(--ok);background:var(--ok-soft)}
+.recap-followup{display:flex;flex-wrap:wrap;gap:4px 14px;flex-basis:100%;color:var(--sub);font-size:12px}
+.recap-followup:empty{display:none}
+.recap-unavailable{color:var(--sub)}
+.recap a:focus-visible,.recap button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media(hover:hover){.today-section-label>a:hover,.recap-back:hover,.recap-word[data-say]:hover{color:var(--accent);text-decoration:underline}.recap-filters a:hover{border-color:var(--accent)}}
+@media(max-width:600px){.recap-filters{gap:6px}.recap-filters a{padding:8px 10px;font-size:13px}.recap-row{padding:12px}.recap-result{max-width:100%}}
 
 /* 巩固模式 */
 .picker .scopes{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:6px 0 12px}
