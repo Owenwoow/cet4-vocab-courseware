@@ -15,12 +15,12 @@ loadKnown();
 const VOICE_NAMES = {ava: "Ava", andrew: "Andrew", sonia: "Sonia", ryan: "Ryan"};
 const VOICE_DESC = {ava: "美式 · 女声", andrew: "美式 · 男声", sonia: "英式 · 女声", ryan: "英式 · 男声"};
 const DEFAULTS = {voice: "ava", rate: 1, mask: false, hideKnown: false, scope: "group", withZh: true, loop: false, theme: "auto",
-  examDate: "2026-12-12", dailyCap: 40, dailyMinutes: 20, autoSay: true, drillOrder: "course", drillMode: "quiz", phLine: true, videoPrefer: "精讲带背", videoWebfull: true,
+  examDate: "2026-12-12", dailyCap: 40, dailyMinutes: 20, learningMode: "precise", quickDays: 45, quickMinutes: 30, autoSay: true, drillOrder: "course", drillMode: "quiz", phLine: true, videoPrefer: "精讲带背", videoWebfull: true,
   /* 学习新词、复习（study.js 用，默认值 = 加设置之前的行为）：learnStages 每个新词过几关（1 看词选义 / 2 + 听音选义 / 3 + 拼写）；
      learnSize 一次学多少（1 / 2 群，15 = 至少 15 词）；autoEx 学新词词卡读完单词接着读例句；autoNext 答对（记得）后 1.5 秒自动下一题；
      slowMode 想得久算模糊（loose ×1.5 / std / strict ×0.75 / off 不按时间）；quizListen、quizSpell 出不出听音、拼写题；roundSize 今天到期每轮最多几个（0 = 不限） */
   learnStages: 2, learnSize: 1, autoEx: false, autoNext: false, slowMode: "std", quizListen: true, quizSpell: true, roundSize: 20, practiceType: "meaning"};
-const NUM_SETS = ["rate", "dailyCap", "dailyMinutes", "learnStages", "learnSize", "roundSize"];   // 设置页按钮上的值是字符串，这几个存成数字
+const NUM_SETS = ["rate", "dailyCap", "dailyMinutes", "quickDays", "quickMinutes", "learnStages", "learnSize", "roundSize"];   // 设置页按钮上的值是字符串，这几个存成数字
 const S = {...DEFAULTS};
 const loadSettings = () => Object.assign(S, DEFAULTS, Object.fromEntries(Sync.entries("set:")));
 function setS(k, v) {
@@ -764,7 +764,13 @@ function renderSettings() {
       ${sw("autoSay", "新词卡与看词题自动读音", "今日回忆、听音和拼写题始终读词；手动读音不计提示") }
       ${L ? `<p class="hint">试听词：${esc(sample)}</p>` : ""}
     </section>
-    <section class="panel"><h2>今日学习</h2>
+    <section class="panel"><h2>学习安排</h2>
+      <div class="row"><span><b>学习模式</b><small>切换后从首页继续，已做任务和旧词校准进度保留，由程序自动衔接</small></span>
+        ${seg("learningMode", [["precise", "精细记忆"], ["quick", "快速过书"]])}</div>
+      ${S.learningMode === "quick" ? `<div class="row"><span><b>过书目标</b><small>默认 45 天；按实际进度自动补排，超出时间预算时顺延预计完成日，次日生效</small></span>${seg("quickDays", [[30, "30 天"], [45, "45 天"]])}</div>
+      <div class="row"><span><b>每日过书时间</b><small>默认 30 分钟，新词约占四分之三，少量复习自动穿插；次日生效</small></span>${seg("quickMinutes", [[20, "20 分钟"], [30, "30 分钟"], [45, "45 分钟"], [60, "60 分钟"]])}</div><p class="note">只需完成首页今日安排。陌生词、漏学补排和全书过完后的轻量维护都由程序处理。</p>` : `<p class="note">按正式回忆安排复习、遗忘重学与旧词校准；学习新词可自由选择。</p>`}
+    </section>
+    <section class="panel"><h2>精细记忆 · 今日学习</h2>
       <div class="row"><span><b>考试日期</b><small>用于首页倒计时和考前复习安排</small></span><input type="date" data-set="examDate" value="${esc(S.examDate)}"></div>
       <div class="row"><span><b>每日推荐词数上限</b><small>到期复习、遗忘重学和旧词校准共用上限；实际推荐量还会受时间预算与近期表现影响，次日生效</small></span>
         ${seg("dailyCap", [[25, "25"], [40, "40"], [50, "50"], [60, "60"], [80, "80"], [120, "120"], [200, "200"]])}</div>
@@ -774,7 +780,7 @@ function renderSettings() {
         ${seg("roundSize", [[15, "15"], [20, "20"], [25, "25"], [40, "40"], [0, "不限"]])}</div>
       <p class="note">主动回忆由你自评，困难词可在预算内有限补测；新词学习不计入每日完成条件。</p>
     </section>
-    <section class="panel"><h2>学习新词</h2>
+    <section class="panel"><h2>自由学习 · 新词闯关</h2>
       <div class="row"><span><b>每个新词过几关</b><small>先看词卡，再依次练词义、听音、拼写；题型按下方开关调整</small></span>
         ${seg("learnStages", [[1, "1 关"], [2, "2 关"], [3, "3 关"]])}</div>
       <div class="row"><span><b>一次学多少</b><small>按完整词群取词，不拆最后一群；过关后自动记为已学，下一次开始学新词时生效</small></span>

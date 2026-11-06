@@ -1,5 +1,8 @@
 /* 滚动复习规则（纯函数，不碰页面和存储；浏览器里是全局 SRS，Node 里 require 进来跑单元测试）
 
+   2026-11-06：设置可切换快速过书。makeQuickPlan 保护新词预算、限量轮换复习、漏学自动补排；
+   覆盖与识别不冒充正式回忆，旧词校准保留。详见 docs/plans/2026-11-06-quick-study.md。
+
    2026-11-02：日常任务统一走 makeDailyPlan / dailyStatus，所有主任务共用张数和时间预算；
    词单当天固定，补测最多五次、不重复评分；晚间不再必做，新词始终自选。
    新规则及数据兼容见 docs/plans/2026-11-02-daily-learning.md。下面旧队列和上限说明仅用于兼容。
@@ -462,7 +465,7 @@ const SRS = (() => {
     }
     return {v: 1, d: day, id: opt.id || day, created: opt.created || 0, budget, credited, available, items: selected};
   }
-  function dailyStatus(plan, items, records = {}) {
+  function dailyStatus(plan, items, records = {}, opt = {}) {
     const live = new Map(items.map(x => [x.word, x])), rows = (plan?.items || []).map(ref => {
       const x = live.get(ref.word), retired = !x || x.card.life !== ref.life;
       const record = records[ref.life]?.first ? records[ref.life] : !retired && firstToday(x.card, plan.d) ? {first: firstToday(x.card, plan.d)} : {};
@@ -484,10 +487,16 @@ const SRS = (() => {
       row.record = {...row.record, retryWanted: reserved.includes(row)};
       row.pendingRetry = !!row.x && row.record.retryWanted && !row.record.retry;
     }
+    // 跨模式已做的识别只抵扣任务量，不伪造正式回忆成绩、补测或掌握证据。
+    const quickWords = new Set(opt.quickWords || []);
+    for (const row of rows) if (quickWords.has(row.word) && row.record.first) quickWords.delete(row.word);
+    let quickCredit = 0;
+    const pending = rows.filter(row => !row.done).sort((a, b) => +quickWords.has(b.word) - +quickWords.has(a.word));
+    for (const row of pending.slice(0, quickWords.size)) { row.done = true; row.waived = true; row.x = null; quickCredit++; }
     const total = (plan?.items.length || 0) + (plan?.credited || 0);
-    const actual = rows.filter(x => x.done && !x.waived).length + (plan?.credited || 0), completed = Math.min(total, actual);
+    const actual = rows.filter(x => x.done && !x.waived).length + (plan?.credited || 0), completed = Math.min(total, actual + quickCredit);
     const retries = rows.filter(x => x.record.retry).length, pendingRetries = rows.filter(x => x.pendingRetry).length;
-    return {rows, completed, total, retries, pendingRetries, todo: rows.filter(x => !x.done || x.pendingRetry).length,
+    return {rows, completed, total, quickCredit, retries, pendingRetries, todo: rows.filter(x => !x.done || x.pendingRetry).length,
       finished: completed === total && !pendingRetries, workload: actual + retries};
   }
   /* 只有新计划键使用不可变首份规则；完成键合并首次和补测，避免旧断点覆盖新完成。
@@ -497,14 +506,21 @@ const SRS = (() => {
     if (!b) return a;
     const newer = a[1] > b[1] || a[1] === b[1] && JSON.stringify(a[0]) > JSON.stringify(b[0]);
     if (!a[0] || !b[0]) return newer ? a : b;
-    if (/^(plan|task):/.test(key) && (a[0].reset || 0) !== (b[0].reset || 0)) return (a[0].reset || 0) > (b[0].reset || 0) ? a : b;
-    if (key.startsWith("plan:") && a[0].v === 1 && b[0].v === 1) {
-      const rank = p => `${String(p.created || 0).padStart(16, "0")}|${p.id}|${JSON.stringify(p)}`;
+    // 两端首次快速学同一词得到同一生命周期；较晚到达的新卡不能覆盖已经完成的正式回忆。
+    if (/^(srs|vocab):/.test(key) && a[0].life === b[0].life && (a[0].quickSource || b[0].quickSource)) {
+      if ((a[0].reset || 0) !== (b[0].reset || 0)) return (a[0].reset || 0) > (b[0].reset || 0) ? a : b;
+      const recalledA = !!a[0].recall?.history?.length, recalledB = !!b[0].recall?.history?.length;
+      if (recalledA !== recalledB) return recalledA ? a : b;
+    }
+    if (/^(plan|task|quick):/.test(key) && (a[0].reset || 0) !== (b[0].reset || 0)) return (a[0].reset || 0) > (b[0].reset || 0) ? a : b;
+    if ((key.startsWith("plan:") || key.startsWith("quick:plan:") || key === "quick:course") && a[0].v === 1 && b[0].v === 1) {
+      const rank = p => `${p.course ? String(p.courseCreated || 0).padStart(16, "0") + "|" + p.course + "|" : ""}${String(p.created || 0).padStart(16, "0")}|${p.id}|${JSON.stringify(p)}`;
       // 同一旧计划升级后固定了分轮大小，旧设备的副本不能抹掉这个字段。
       if (a[0].id === b[0].id && a[0].created === b[0].created && Number.isFinite(a[0].roundSize) !== Number.isFinite(b[0].roundSize))
         return Number.isFinite(a[0].roundSize) ? a : b;
       return rank(a[0]) <= rank(b[0]) ? a : b;
     }
+    if (key.startsWith("quick:check:")) return (a[0].at || 0) < (b[0].at || 0) || a[0].at === b[0].at && JSON.stringify(a[0]) < JSON.stringify(b[0]) ? a : b;
     if (key.startsWith("task:") && a[0].life === b[0].life) {
       const pick = (x, y) => !x ? y : !y ? x : (x.at || 0) < (y.at || 0) || (x.at || 0) === (y.at || 0) && JSON.stringify(x) <= JSON.stringify(y) ? x : y;
       const base = newer ? a[0] : b[0], first = pick(a[0].first, b[0].first), retry = pick(a[0].retry, b[0].retry);
@@ -513,9 +529,82 @@ const SRS = (() => {
     return newer ? a : b;
   }
 
+  /* 快速过书：首轮覆盖与正式回忆分开。checks 是不可变的逐日首次识别事件；
+     正式回忆在本轮开始后也可计入覆盖。旧卡不会仅因存在就被跳过。
+     75% 时间推进，25% 轮换复习；漏学后最多按基础速度 125% 补排，超出预算自动顺延。
+     词单每天固定，不清积压、不无限补测；全书覆盖后自动轻量维护。 */
+  const quickCheckKey = (day, word) => `quick:check:${day}:${encodeURIComponent(word)}`;
+  function quickProgress(book, checks, cards, started, day) {
+    const words = new Set(book.map(x => x.word)), history = new Map();
+    const take = e => {
+      if (!e || !words.has(e.word) || e.d < started || e.d > day || !["g", "f"].includes(e.result)) return;
+      const prev = history.get(e.word);
+      if (!prev || e.d > prev.d || e.d === prev.d && (e.at || 0) < (prev.at || 0)) history.set(e.word, e);
+    };
+    checks.forEach(take);
+    for (const x of cards) for (const h of x.card.recall?.history || []) take({word: x.word, d: h.day,
+      result: ["independent", "effort", "chopped"].includes(h.result) ? "g" : "f", at: h.at || 0, formal: true});
+    return history;
+  }
+  function makeQuickPlan(book, cards, checks, course, day, opt = {}) {
+    const days = +opt.days === 30 ? 30 : 45, minutes = Math.max(10, Math.min(60, +opt.minutes || 30));
+    const history = quickProgress(book, checks, cards, course.started, day), byWord = new Map(cards.map(x => [x.word, x]));
+    const recent = checks.filter(e => e.d >= add(day, -6) && e.d <= day && Number.isFinite(e.seconds));
+    const estimate = (kind, fallback, min, max) => {
+      const list = recent.filter(e => (e.kind === "new") === (kind === "new"));
+      return list.length ? Math.max(min, Math.min(max, list.reduce((n, e) => n + e.seconds, 0) / list.length)) : fallback;
+    };
+    const newSeconds = estimate("new", 22, 12, 60), reviewSeconds = estimate("review", 10, 6, 40);
+    const todayChecks = new Set(checks.filter(e => e.d === day).map(e => e.word));
+    const formalToday = cards.filter(x => firstToday(x.card, day)).map(x => x.word);
+    const doneToday = new Set([...todayChecks, ...formalToday]);
+    const spent = checks.filter(e => e.d === day).reduce((n, e) => n + (e.seconds || reviewSeconds), 0) + formalToday.filter(w => !todayChecks.has(w)).length * 30;
+    const seconds = Math.max(0, minutes * 60 - spent);
+    const pending = book.filter(x => !history.has(x.word)), remaining = pending.length;
+    const target = add(course.started, days - 1), base = Math.max(1, Math.ceil(book.length / days));
+    const capacity = Math.max(1, Math.min(Math.floor(minutes * 60 * .75 / newSeconds), Math.ceil(base * 1.25)));
+    const pace = Math.min(capacity, Math.max(base, Math.ceil(remaining / Math.max(1, diff(target, day) + 1))));
+    const projected = remaining ? add(day, Math.max(0, Math.ceil(remaining / pace) - 1)) : day;
+    const finish = remaining && projected < target ? target : projected;
+    const reviewCap = Math.floor(Math.min(minutes * 60 * .25, seconds) / reviewSeconds);
+    const order = new Map(book.map((x, i) => [x.word, i]));
+    const candidates = [...book.filter(x => byWord.has(x.word) || history.has(x.word)), ...cards.filter(x => !order.has(x.word))];
+    const seen = new Set(), reviews = candidates.filter(x => {
+      if (seen.has(x.word) || doneToday.has(x.word)) return false;
+      seen.add(x.word);
+      const e = history.get(x.word) || checks.filter(c => c.word === x.word && c.d <= day).sort((a, b) => b.d.localeCompare(a.d))[0];
+      return !e || add(e.d, e.result === "f" ? 1 : 3) <= day;
+    }).sort((a, b) => {
+      const rank = x => { const h = history.get(x.word), c = byWord.get(x.word)?.card;
+        return h ? diff(day, h.d) + (h.result === "f" ? 4 : 0) : 10 + Math.min(10, Math.max(0, diff(day, c?.d || day))); };
+      return rank(b) - rank(a) || (order.get(a.word) ?? 1e9) - (order.get(b.word) ?? 1e9) || a.word.localeCompare(b.word);
+    }).slice(0, reviewCap);
+    const reviewWords = new Set(reviews.map(x => x.word));
+    const newCap = Math.max(0, Math.min(pace, Math.floor(Math.max(0, seconds - reviews.length * reviewSeconds) / newSeconds)));
+    const fresh = pending.filter(x => !reviewWords.has(x.word) && !doneToday.has(x.word));
+    // 旧词优先走复习配额；新词走书序，书末再自动补齐尚未覆盖的旧词。
+    const newItems = [...fresh.filter(x => !byWord.has(x.word)), ...fresh.filter(x => byWord.has(x.word))].slice(0, newCap);
+    const ref = (x, kind) => ({word: x.word, kind, ...(byWord.get(x.word)?.card.life ? {life: byWord.get(x.word).card.life} : {})});
+    const warm = reviews.slice(0, Math.min(5, reviews.length));
+    return {v: 1, d: day, id: opt.id || day, created: opt.created || 0, course: course.id, courseCreated: course.created || 0,
+      minutes, days, target, finish, covered: history.size, total: book.length, maintenance: !remaining,
+      newSeconds, reviewSeconds, items: [...warm.map(x => ref(x, order.has(x.word) ? "review" : "vocab")), ...newItems.map(x => ref(x, "new")), ...reviews.slice(warm.length).map(x => ref(x, order.has(x.word) ? "review" : "vocab"))]};
+  }
+  function quickStatus(plan, checks, cards) {
+    const live = new Map(cards.map(x => [x.word, x.card.life]));
+    const formal = new Map(cards.filter(x => firstToday(x.card, plan.d)).map(x => [x.word, firstToday(x.card, plan.d)]));
+    const done = new Map(checks.filter(e => e.d === plan.d).map(e => [e.word, e]));
+    const rows = plan.items.map(ref => {
+      const retired = !!ref.life && live.get(ref.word) !== ref.life;
+      return {...ref, retired, event: done.get(ref.word), done: retired || done.has(ref.word) || formal.has(ref.word)};
+    });
+    return {rows, total: rows.length, completed: rows.filter(x => x.done).length, todo: rows.filter(x => !x.done), finished: rows.every(x => x.done)};
+  }
+
   return {EXAM, TYPE, today, reviews, add, diff, dow, monday, stationGap, spread, stationDue, examCap, newCard, isDue,
     rate, rateRecall, rateSkill, recallResult, recallGrade, legacyLevel, upgradeCard, upgradeDoc, freshCard, chop, isHard, dueList, isPhrase, level, streak, pickType, gradeChoice, gradeSpell, editDist, similar, senseKeys, posSet, distractorTag, confAdd, confDrop, shuffleSpread, pairSimilar,
     isMust, mustKind, band, queue, loadTier, forecast, shift,
-    recalled, needsCalibration, dailyAttempt, taskKey, firstToday, migrationState, migrationStatus, dailyBudget, makeDailyPlan, dailyStatus, mergeStudyRecord};
+    recalled, needsCalibration, dailyAttempt, taskKey, firstToday, migrationState, migrationStatus, dailyBudget, makeDailyPlan, dailyStatus, mergeStudyRecord,
+    quickCheckKey, quickProgress, makeQuickPlan, quickStatus};
 })();
 if (typeof module === "object" && module.exports) module.exports = SRS;

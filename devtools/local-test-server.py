@@ -27,6 +27,10 @@ MODES = {
     'normal': ('日常学习（新词自选）', '#/'),
     'empty': ('没有到期词', '#/'),
     'exit': ('建议退出校准', '#/'),
+    'quick': ('快速过书：首次开始', '#/'),
+    'quick-transition': ('快速过书：旧词过渡与切换', '#/'),
+    'quick-gap': ('快速过书：连续漏学自动补排', '#/'),
+    'quick-finish': ('快速过书：全书过完后维护', '#/'),
 }
 
 def entries(many=False):
@@ -81,12 +85,14 @@ class Handler(SimpleHTTPRequestHandler):
                 self.send_error(404)
                 return
             seed = json.dumps(entries(mode in ('backlog', 'complete')), ensure_ascii=False).replace('<', '\\u003c')
+            if mode == 'quick':
+                seed = '[]'
             destination = json.dumps(MODES[mode][1])
             self.html('''<!doctype html><meta charset="utf-8"><title>准备测试数据</title><p>正在准备演示数据…</p><script src="/srs.js"></script><script>
             const items = ''' + seed + ''', mode = ''' + json.dumps(mode) + ''', day = SRS.today(), previous = SRS.add(day,-1), now = Date.now(), doc = {};
             for (const x of items) {
               const card = {...SRS.freshCard(previous, 'local-test-' + x.word), k:x.lid, g:x.group, o:x.no, f:x.freq};
-              if (['migration','backlog','complete','exit'].includes(mode)) {
+              if (['migration','backlog','complete','exit','quick-transition'].includes(mode)) {
                 Object.assign(card,{a:SRS.add(day,-30),s:3,n:4,v:4,h:'gggg',r:'g',d:SRS.add(day,-10)});
                 Object.assign(card,SRS.upgradeCard({...card,recall:null},'srs:'+x.word,now));
               }
@@ -97,6 +103,19 @@ class Handler(SimpleHTTPRequestHandler):
             }
             const active=()=>Object.entries(doc).filter(([k])=>k.startsWith('srs:')).map(([k,[card]],order)=>({word:k.slice(4),card,order}));
             doc['migration:state']=[SRS.migrationState(active(),day),now];
+            if (mode.startsWith('quick')) {
+              doc['set:learningMode']=['quick',now];
+              doc['set:quickDays']=[45,now]; doc['set:quickMinutes']=[30,now];
+              const started=mode==='quick-gap'?SRS.add(day,-40):mode==='quick-finish'?SRS.add(day,-45):day;
+              doc['quick:course']=[{v:1,id:'demo-quick',started,created:now-1},now];
+              if(mode==='quick-finish') {
+                const book=JSON.parse(''' + json.dumps((SITE / 'data' / 'book.json').read_text(encoding='utf-8')).replace('<', '\u003c') + ''');
+                for(const [word,ref] of Object.entries(book.search)) if(!ref[2]) {
+                  const d=SRS.add(day,-4), event={d,word,result:'g',kind:'new',at:now-1,seconds:22};
+                  doc[SRS.quickCheckKey(d,word)]=[event,now-1];
+                }
+              }
+            }
             if (mode === 'exit') {
               for(const x of active()) doc['srs:'+x.word]=[SRS.rateRecall(x.card,'independent',day,{id:'exit-'+x.word}),now];
               doc['evening:'+previous]=[{finished:true,skipped:false,items:{historical:{word:'old',first:'independent'}}},now-1];

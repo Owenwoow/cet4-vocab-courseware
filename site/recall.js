@@ -96,6 +96,10 @@ const Recall = (() => {
   /* 导入/同步后的断点，只恢复当日且卡片生命周期仍匹配的词。新学按词群检查。 */
   function validProgress(v, doc, day) {
     if (!v || v.d !== day) return 0;
+    if (v.quick) {
+      const plan = doc["quick:plan:" + day]?.[0];
+      return plan?.id === v.quick ? {...v, seen: (v.seen || []).filter(w => plan.items.some(x => x.word === w))} : 0;
+    }
     if (v.g) {
       const gs = [].concat(v.g).filter(g => !doc["learn:" + g]?.[0]);
       return gs.length ? {...v, g: Array.isArray(v.g) ? gs : gs[0]} : 0;

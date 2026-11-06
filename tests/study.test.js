@@ -47,7 +47,7 @@ function harness(hash = "#/drill/due", saved = {}) {
     }},
     $, $$: () => [], known: new Set(), pop: {style: {}, contains: () => false},
     BOOK: json("data/book.json"), store: {get: (key, fallback) => fallback},
-    S: {examDate: "2026-12-12", voice: "ava", rate: 1, roundSize: 25, dailyCap: Sync.get("set:dailyCap",80), dailyMinutes: Sync.get("set:dailyMinutes",20), quizListen: true, quizSpell: true, autoSay: false, autoEx: false},
+    S: {examDate: "2026-12-12", voice: "ava", rate: 1, roundSize: 25, dailyCap: Sync.get("set:dailyCap",80), dailyMinutes: Sync.get("set:dailyMinutes",20), learningMode: Sync.get("set:learningMode", "precise"), quickDays: Sync.get("set:quickDays",45), quickMinutes: Sync.get("set:quickMinutes",30), quizListen: true, quizSpell: true, autoSay: false, autoEx: false},
     fetchJSON: async file => json(file),
     esc: text => String(text ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;"),
     plainMean: text => text.replace(/<[^>]*>/g, ""), meanHTML: text => text,
@@ -93,6 +93,78 @@ function harness(hash = "#/drill/due", saved = {}) {
   };
   return h;
 }
+
+test("快速词卡退出刷新能接续，检查答错也向前走，旧词校准与排期保留", async () => {
+  const h = harness("#/drill/quick", {"set:learningMode": "quick"});
+  h.data.set("srs:specific", SRS.upgradeCard({...h.data.get("srs:specific"), recall: null}, "srs:specific", 1));
+  await h.render();
+  const old = copy(h.data.get("srs:specific"));
+  assert.doesNotMatch(h.html, /undefined|加载失败/);
+  assert.match(h.html, /轻量复习/);
+  h.click({quickOpt: "-1"});
+  const first = [...h.data.values()].find(v => v?.word === "specific" && v?.kind === "review");
+  assert.equal(first.result, "f");
+  const current = h.data.get("srs:specific");
+  assert.deepEqual(current, old);
+  h.click({quickNext: "1"}); h.click({quickOpt: "-1"}); h.click({quickNext: "1"});
+  assert.match(h.html, /先看词卡/);
+  const word = h.word(); h.click({quickNext: "1"});
+  assert.ok(h.data.get("drill:quick").seen.includes(word));
+  const restored = await harness("#/drill/quick", Object.fromEntries(h.data)).render();
+  assert.notEqual(restored.word(), word);
+  const plan = restored.data.get("quick:plan:" + day);
+  assert.equal(plan.id, h.data.get("quick:plan:" + day).id);
+});
+
+test("快速模式跨日旧题禁止计分，回首页自动生成下一日安排", async () => {
+  const h = await harness("#/drill/quick", {"set:learningMode": "quick"}).render();
+  const n = [...h.data.keys()].filter(k => k.startsWith("quick:check:")).length;
+  h.setDay(SRS.add(day, 1)); h.click({quickOpt: "-1"});
+  assert.match(h.html, /学习安排已更新/);
+  assert.equal([...h.data.keys()].filter(k => k.startsWith("quick:check:")).length, n);
+  await h.navigate("#/");
+  assert.ok(h.data.get("quick:plan:" + SRS.add(day, 1)));
+});
+
+test("切回精细时已达标的旧词过渡自动结束，正式证据和卡片保留", async () => {
+  const h = harness("#/", {"quick:course": {v: 1, id: "course", started: yesterday, created: 1}});
+  const items = ["specific", "dose"].map(word => {
+    const c = SRS.upgradeCard({...h.data.get("srs:" + word), recall: null}, "srs:" + word, 1);
+    h.data.set("srs:" + word, c); return {word, card: c};
+  });
+  h.data.set("migration:state", SRS.migrationState(items, day));
+  for (const x of items) h.data.set("srs:" + x.word, SRS.rateRecall(x.card, "independent", day, {id: "calibrate-" + x.word}));
+  await h.render();
+  assert.equal(h.data.get("migration:state").mode, "normal");
+  assert.equal(h.data.get("migration:state").ended, day);
+  assert.equal(h.data.get("srs:specific").recall.result, "independent");
+  assert.doesNotMatch(h.html, /data-migration-exit/);
+});
+
+test("显式取消词群清除相应快速覆盖事件，用墓碑保留删除意图", () => {
+  const lesson = json("data/lessons/u07-l01.json"), group = lesson.groups.find(g => g.entries.some(e => e.word === "specific"));
+  const key = SRS.quickCheckKey(day, "specific"), h = harness("#/", {[key]: {word: "specific", d: day, result: "g"}});
+  h.context.Study.unmarkGroups(lesson, [group.no]);
+  assert.equal(h.data.get(key), 0);
+  assert.equal(h.data.get("srs:specific"), 0);
+});
+
+test("快速每日检查固定且不循环，完成后退出；切回精细只抵扣工作量", async () => {
+  const h = await harness("#/drill/quick", {"set:learningMode": "quick"}).render();
+  const plan = h.data.get("quick:plan:" + day), total = plan.items.length;
+  for (let i = 0; i < total * 3 + 5 && !h.html.includes("<h1>今日计划已完成</h1>"); i++) {
+    if (h.html.includes("先看词卡") || h.html.includes("再看一遍，后面会安排复习")) h.click({quickNext: "1"});
+    else h.click({quickOpt: "-1"});
+  }
+  assert.match(h.html, /<h1>今日计划已完成<\/h1>/);
+  assert.equal([...h.data.keys()].filter(k => k.startsWith("quick:check:")).length, total);
+  assert.equal(h.data.get("drill:quick"), 0);
+  h.context.S.learningMode = "precise";
+  await h.navigate("#/");
+  assert.match(h.html, /快速检查已抵扣/);
+  assert.equal(h.data.get("migration:state").mode, "normal");
+  assert.equal(h.data.get("srs:specific").recall.result, "");
+});
 
 test("回忆自动读词，手动读音不计提示；评分后直接进入下一词", async () => {
   const h = await harness().render(), word = h.word();
