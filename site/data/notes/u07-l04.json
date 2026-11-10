@@ -141,20 +141,20 @@
     "talk": [
      {
       "t": "Some people have said aging is",
-      "s": "这块照字面翻就行：aging 是「衰老」，is 后面等着说它是什么。\n→ 有人说，衰老是"
+      "s": "这句话是在转述一种看法。Some people have said 是「有人说过」，真正要理解的观点从 aging is 开始。aging 在这里作主语，表示「衰老、变老」。\n→ 有人说，衰老是"
      },
      {
       "t": "more a slide into forgetfulness",
-      "s": "你多半会翻成「更多的滑入遗忘」。念一遍，不通吧？more 后面跟的是 a slide，不是名词复数，这里 more 不是「更多」。先别翻它，往后找 than，一看到 more … than，脑子里换成「与其说……不如说……」。a slide into forgetfulness 是名词，中文换成动词说：「滑向遗忘」。\n→ 与其说是滑向遗忘的过程"
+      "s": "这里不要把 more 机械地翻成「更多」。看到后面的 than，就要把 more ... than ... 连起来理解：more A than B，表示「与其说是 B，不如说是 A」。A 是 a slide into forgetfulness。slide 在这里是名词，表示「滑落、下滑的过程」；into forgetfulness 则是逐渐进入遗忘的状态。\n→ 与其说是逐渐滑向遗忘的过程"
      },
      {
-      "t": "than a journey towards wisdom",
-      "s": "more A than B 里，重点在 A，B 是被「比下去」的那一边。这里 B 是 a journey towards wisdom，「通往智慧的旅程」，towards 是「通往」。\n→ 不如说是通往智慧的旅程"
+      "t": "than a journey towards wisdom.",
+      "s": "than 后面给出另一项 B：a journey towards wisdom，字面是「一段通往智慧的旅程」。towards 表示朝着某个方向。作者把衰老比作 slide 和 journey：一个带着下滑、失去的意味，一个带着成长、收获的意味。整句话是在说，衰老与其说让人走向智慧，不如说让人逐渐走向遗忘。\n→ 不如说是通往智慧的旅程。"
      }
     ],
-    "order": "英文是 A（滑向遗忘）在前、B（通往智慧）在后，中文「与其说 B，不如说 A」把 B 提前，所以要把 than 后面的内容挪到前面去。",
-    "sum": "有人说，衰老与其说是一场通往智慧的旅程，不如说是一个滑向遗忘的过程。",
-    "cmp": "和书上基本一致，书上也是先说 B（通往智慧的旅程）、后说 A（滑向遗忘的过程），顺序已经调好了。"
+    "order": "英文先说 A（滑向遗忘），再说 B（通往智慧）；中文的「与其说 B，不如说 A」习惯先说 B，所以要把 than 后面的内容提到前面。",
+    "sum": "有人说，衰老与其说是一段通往智慧的旅程，不如说是一个逐渐滑向遗忘的过程。",
+    "cmp": "书上的译文同样调整了比较结构的顺序。这里保留「与其说……不如说……」，更容易看出 more A than B 的对比关系。"
    }
   },
   "He sat on the stool, swinging his legs.": {
