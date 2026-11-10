@@ -13,16 +13,15 @@
     "talk": [
      {
       "t": "The digital access codes are even harder",
-      "s": "even 放在比较级前面，是「甚至更……」。hard 你可能直接翻成「硬」或「难」就停了，后面还跟着 for students，这是 hard for sb. to do 的框架：对谁来说，做某事很难。先把「甚至更难」记住，等后面补上「做什么」。\n→ 数字访问代码甚至更难"
+      "s": "主干是 access codes are harder：这些数字访问代码更难处理。even 放在比较级前面加强语气，表示「甚至更加」。\n→ 这些数字访问代码甚至更难"
      },
      {
-      "t": "for students to opt out of",
-      "s": "你多半会翻成「对学生来说选择退出的」。念一遍，句子在 of 后面断了，是不是没说完？眼睛盯住句尾这个 of：opt out of 后面本来要跟宾语，这个宾语就是句首的 codes，被挪到前面当主语了。放回去试：学生很难退出这些代码，说得通。for students 是 to opt out of 的动作者。\n→ 让学生退出"
+      "t": "for students to opt out of.",
+      "s": "for students 表示「对学生来说」。opt out of 是「选择退出」，句尾的 of 要和前面的 codes 连起来理解，不能漏掉它的对象。\n→ 让学生选择退出。"
      }
     ],
-    "order": "英文把「退出」放在最后，其实意思是「学生要退出这些代码更难」，所以先说学生，再说退出。",
-    "sum": "数字访问代码更是让学生难以选择退出。",
-    "cmp": "意思一样。书上用「让学生们更难选择退出」，把 for students 译成「让……」，也通顺。"
+    "sum": "这些数字访问代码甚至让学生更难选择退出。",
+    "cmp": "原译准确；重点是 opt out of 这个短语，以及句尾介词 of 回指前面的 codes。"
    }
   },
   "What should be done in such cases?": {
@@ -31,16 +30,15 @@
     "talk": [
      {
       "t": "What should be done",
-      "s": "你多半会翻成「什么应该被做」。念一遍，是不是有点怪？should be done 是被动，就是「事情被别人怎么样了」。What 在这里是疑问词，问的是「做什么」。中文不爱说「被做」，直接说「怎么办」就顺了。\n→ 应该怎么办"
+      "s": "这是一个被动疑问句。should be done 可以理解为「应该做些什么」；真正要问的是遇到这种情况时，应该采取什么措施。被动语态没有说明具体由谁来做。\n→ 应该采取什么措施"
      },
      {
-      "t": "in such cases",
-      "s": "这块照字面翻就行：such cases 是「这类情况」，in 表示「在……情况下」。\n→ 在这种情况下"
+      "t": "in such cases?",
+      "s": "such cases 是「这样的情况、此类情形」。case 在这里不是盒子，而是某种具体情形。\n→ 在这种情况下？"
      }
     ],
-    "order": "英文把「在什么情况下」放在最后，中文习惯先交代情况，再问怎么办，所以把它提到前面。",
-    "sum": "在这种情况下应该怎么办？",
-    "cmp": "意思一样，书上省掉了「在」，更口语。"
+    "sum": "遇到这种情况应该怎么办？",
+    "cmp": "原译很自然；中文直接用「怎么办」就能表达 should be done 的被动含义。"
    }
   },
   "People's choice of food depends on their individual taste.": {
@@ -50,7 +48,21 @@
      "b": "depend on",
      "m": "取决于"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "People's choice of food",
+      "s": "People's 是 people 的所有格，表示「人们的」。choice of food 不是「食物的选择权」，而是「对食物的选择」；of food 说明选择的对象。\n→ 人们对食物的选择"
+     },
+     {
+      "t": "depends on their individual taste.",
+      "s": "depend on 表示「取决于」。individual taste 指个人口味或偏好，说明每个人选择什么食物并不相同。\n→ 取决于各自的口味。"
+     }
+    ],
+    "sum": "人们对食物的选择取决于各自的口味。",
+    "cmp": "原译准确；their individual taste 译成「各自的口味」，避免「他们的个人口味」略显重复。"
+   }
   },
   "It helps people to select the most effective sunscreen.": {
    "ph": [
@@ -64,15 +76,15 @@
     "talk": [
      {
       "t": "It helps people to select",
-      "s": "你多半会翻成「它帮助人们去选择」。多出来的「去」没必要。help sb. to do 是固定搭配，to select 是 to do 短语，就是「帮人做某事」，中文直接说「帮助人们选择」。\n→ 它帮助人们选择"
+      "s": "help sb. (to) do 表示「帮助某人做某事」，to 可以保留，也可以省略。这里的 It 指前文提到的工具、方法或信息。\n→ 它帮助人们选择"
      },
      {
-      "t": "the most effective sunscreen",
-      "s": "the most + 形容词是「最……的」，most effective 就是「最有效的」。sunscreen 是「防晒霜」。\n→ 最有效的防晒霜"
+      "t": "the most effective sunscreen.",
+      "s": "the most effective 是最高级，表示「最有效的」；sunscreen 是「防晒霜、防晒产品」。effective 修饰的是防晒产品的效果。\n→ 最有效的防晒霜。"
      }
     ],
-    "sum": "它帮助人们选出最有效的防晒霜。",
-    "cmp": "和书上一样。"
+    "sum": "它帮助人们选择最有效的防晒霜。",
+    "cmp": "原译准确；重点是 help people to select 的结构，以及 most effective 表示最高程度。"
    }
   },
   "The content of the lecture is a much more effective method for students to learn.": {
@@ -81,20 +93,19 @@
     "talk": [
      {
       "t": "The content of the lecture",
-      "s": "这块照字面翻就行：content 在这里是「内容」，of 表示属于，「讲座的内容」。\n→ 讲座的内容"
+      "s": "content 是中心词，表示「内容」；of the lecture 说明是哪一部分内容，即讲座的内容。不要把 content 误读成形容词「满意的」。\n→ 讲座的内容"
      },
      {
       "t": "is a much more effective method",
-      "s": "你可能把 much 当成「很多」，翻成「很多更有效」。念一遍，是不是不通？much 放在比较级 more effective 前面，是「……得多」。a method 是「一种方法」。\n→ 是一种有效得多的方法"
+      "s": "is 后面是表语：a much more effective method，「一种有效得多的方法」。much 放在比较级 more effective 前面，加强比较程度。\n→ 是一种有效得多的方法"
      },
      {
-      "t": "for students to learn",
-      "s": "你多半会翻成「对学生去学习」，句子接不上。这里 for students to learn 是跟在 method 后面的补充说明：学生用来学习的方法。眼睛往回找，它修饰的是 method，所以中文要把「学生学习」提到「方法」前面去。\n→ 供学生学习的"
+      "t": "for students to learn.",
+      "s": "for students to learn 说明这种方法适用于谁、用来做什么：供学生学习。to learn 和 method 一起表达学习方式。\n→ 供学生学习。"
      }
     ],
-    "order": "英文「方法」在前、「学生学习」在后，中文习惯先说修饰的话：「学生用来学习的、有效得多的方法」。",
-    "sum": "讲座的内容对学生来说是一种有效得多的学习方法。",
-    "cmp": "意思一样。书上把 for students 提到句首说「对于学生来说」，「学习」放到「方法」前面成「学习方法」，处理得很顺；书上还把 the content of the lecture 说成「讲座里讲的内容」，比「讲座的内容」更口语。"
+    "sum": "讲座的内容对学生来说是一种有效得多的学习方式。",
+    "cmp": "原译把 content 说成「讲座里讲的内容」更口语；这里把 much more 的比较强调也体现出来。"
    }
   },
   "People who elect to track their sleep may try to get more sleep.": {
@@ -109,15 +120,15 @@
     "talk": [
      {
       "t": "People who elect to track their sleep",
-      "s": "elect 你多半只认识「选举」，翻成「选举去跟踪」就怪了。看到 elect 后面跟 to track（to + 动词），它在这里是「选择做某事」。who 指谁？放回去试：People elect to track their sleep，人选择记录睡眠，说得通。track 是「追踪记录」。\n→ 选择记录自己睡眠的人"
+      "s": "who 引导定语从句，修饰 people：哪些人？选择追踪自己睡眠情况的人。elect 在这里是「选择」，不是「选举」；track their sleep 指记录、监测睡眠。\n→ 选择记录自己睡眠情况的人"
      },
      {
-      "t": "may try to get more sleep",
-      "s": "may 别翻成「允许」，这里是「可能」。try to 是「努力去做」。more sleep 你可能翻成「更多的睡眠」，不顺，把名词 sleep 换成动词说：「睡得更多」。\n→ 可能会努力睡得更多"
+      "t": "may try to get more sleep.",
+      "s": "may 表示可能性；try to get more sleep 是「努力争取更多睡眠」。这里不是说他们已经睡得更多，而是可能会尝试改善睡眠时长。\n→ 可能会努力让自己多睡一些。"
      }
     ],
-    "sum": "选择记录自己睡眠情况的人，可能会努力多睡一些。",
-    "cmp": "意思一样。书上译成「睡得更多」，我说成「多睡一些」，两个都对。"
+    "sum": "选择记录自己睡眠情况的人，可能会努力让自己多睡一些。",
+    "cmp": "原译意思准确；把 who 从句放在 people 后面理解，再整体译成中文的前置修饰语，会更顺。"
    }
   },
   "The final result of the poll will be known tomorrow.": {
@@ -126,15 +137,15 @@
     "talk": [
      {
       "t": "The final result of the poll",
-      "s": "这块照字面翻就行：poll 在这里是「投票」，of 连接「结果」和「投票」，中文是「投票的最终结果」。\n→ 投票的最终结果"
+      "s": "中心词是 result（结果）；final 表示最终的，of the poll 说明这是哪项活动的结果。poll 在这里是民意调查或投票。\n→ 这次投票的最终结果"
      },
      {
-      "t": "will be known tomorrow",
-      "s": "你多半会翻成「将被知道」。念一遍，中文不这么说。will be known 是被动，就是「结果被大家知道了」，说白了就是结果「公布、揭晓」。tomorrow 是「明天」。\n→ 将于明天公布"
+      "t": "will be known tomorrow.",
+      "s": "will be known 是一般将来时的被动结构，表示「到时会被公布／得知」。tomorrow 是明确的将来时间。\n→ 明天就会揭晓。"
      }
     ],
-    "sum": "投票的最终结果明天公布。",
-    "cmp": "和书上完全一样。"
+    "sum": "这次投票的最终结果将于明天公布。",
+    "cmp": "原译把 will be known 译成「将于明天公布」，结合结果语境很自然。"
    }
   },
   "Its conclusions are based on carefully collected data.": {
@@ -149,15 +160,15 @@
     "talk": [
      {
       "t": "Its conclusions are based on",
-      "s": "你多半会翻成「它的结论被基于」。念一遍，是不是很别扭？are based on 形式上是被动，但 be based on 是固定搭配，整个当成「基于、建立在……之上」就行。\n→ 它的结论建立在……之上"
+      "s": "are based on 是 be based on，表示「以……为依据、基于……」。Its 指前文提到的研究、报告或事物；conclusions 是它得出的结论。\n→ 它的结论是基于"
      },
      {
-      "t": "carefully collected data",
-      "s": "collected 是过去分词（-ed 形式），放在 data 前面当形容词，说明是什么样的数据：被收集来的数据。你可能想翻成「被仔细收集的数据」，中文不用「被」，说「收集来的」就行。\n→ 仔细收集来的数据"
+      "t": "carefully collected data.",
+      "s": "collected 是过去分词，放在 data 前面作修饰，意思是「收集来的数据」；carefully 说明收集时很仔细。真正的谓语是 are based on。\n→ 经过仔细收集的数据。"
      }
     ],
-    "sum": "它的结论建立在仔细收集来的数据之上。",
-    "cmp": "意思一样。书上句尾多了一个「的」，读起来有点绕，「建立在……之上」更顺。"
+    "sum": "它的结论是建立在仔细收集的数据之上的。",
+    "cmp": "原译准确；这里要分清 collected 是修饰 data 的，而不是另一个谓语动词。"
    }
   },
   "They must be used in combination for an entire collective.": {
@@ -172,15 +183,15 @@
     "talk": [
      {
       "t": "They must be used in combination",
-      "s": "你多半会翻成「它们必须被使用在结合里」。念一遍，肯定别扭。must be used 是被动，就是「它们被别人拿来用」，中文去掉「被」，说「必须使用」。in combination 是一个整体，就是「结合起来、搭配起来」。\n→ 它们必须结合起来使用"
+      "s": "must be used 是情态动词加被动语态，表示「必须被使用」。in combination 是「结合起来、配合使用」，强调不是单独使用某一个。\n→ 它们必须结合起来使用"
      },
      {
-      "t": "for an entire collective",
-      "s": "collective 你可能当成形容词「集体的」。往后找：后面没有名词了，说明它自己就是名词，「集体」。for 是「为了、用于」，entire 是「整个的」。\n→ 用于整个集体"
+      "t": "for an entire collective.",
+      "s": "for an entire collective 表示适用或服务的对象是整个集体。collective 在这里作名词，指一个群体或集体。\n→ 才能用于整个群体。"
      }
     ],
-    "sum": "它们必须结合起来，用于整个集体。",
-    "cmp": "和书上一样。书上说「结合起来用于整个集体」，「用于」已经把 used 翻出来了，不用再加「使用」。"
+    "sum": "它们必须结合起来使用，才能适用于整个群体。",
+    "cmp": "原译「用于整个集体」比较贴近字面；这里把 for 理解为用途或适用对象，中文更连贯。"
    }
   },
   "Dialects should be preserved to retain a culture.": {
@@ -189,15 +200,15 @@
     "talk": [
      {
       "t": "Dialects should be preserved",
-      "s": "你多半会翻成「方言应该被保存」。念一遍，中文不爱说「被」。should be preserved 是被动，就是「方言被别人怎么样」，中文把动作的人藏起来，直接说「应该保留方言」。\n→ 应该保留方言"
+      "s": "should be preserved 是情态动词 should 加被动语态，表示「方言应该得到保护、保存」。preserve 强调把某种东西保留下来，不让它消失。\n→ 方言应该得到保留"
      },
      {
-      "t": "to retain a culture",
-      "s": "to retain 是 to do 短语，放在句末，这里表目的，就是「为了……」，别翻成「去保留」。retain 和上一块的 preserve 意思相近，中文再说一次「保留」就重复了，换成「留住」。\n→ 为了留住一种文化"
+      "t": "to retain a culture.",
+      "s": "to retain 表示目的：保留方言是为了 retain a culture。retain 和 preserve 意思接近；culture 指文化传统或文化身份。\n→ 从而延续一种文化。"
      }
     ],
-    "sum": "应该保留方言，以便留住一种文化。",
-    "cmp": "意思一样。书上前后都用「保留」，有点重复，「留住」更顺。"
+    "sum": "应该保留方言，以延续一种文化。",
+    "cmp": "原译「保留方言来保留一种文化」忠实但重复；中文用「延续文化」更自然。"
    }
   },
   "She spoke English with an accent.": {
@@ -207,7 +218,21 @@
      "b": "with an accent",
      "m": "带口音"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She spoke English",
+      "s": "spoke 是 speak 的过去式，表示「说」。English 在这里作语言名称，直接说「说英语」。\n→ 她说英语"
+     },
+     {
+      "t": "with an accent.",
+      "s": "with an accent 表示说话带有口音。accent 是可数名词，所以用 an；它不一定表示发音错误，只是带有某种地域或语言背景特征。\n→ 带着某种口音。"
+     }
+    ],
+    "sum": "她说英语时带有口音。",
+    "cmp": "原译意思明确；加上「时」以后，中文语序更自然。"
+   }
   },
   "A basic sense of rhythm is essential in a music teacher.": {
    "ph": [
@@ -216,7 +241,21 @@
      "b": "a sense of",
      "m": "……感"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "A basic sense of rhythm",
+      "s": "sense of rhythm 是「节奏感」，a basic 表示基本的。这里的 sense 不是五官的「感觉」，而是对某种能力或特征的感知。\n→ 基本的节奏感"
+     },
+     {
+      "t": "is essential in a music teacher.",
+      "s": "essential 是「必不可少的、非常重要的」。in a music teacher 不是地点，而是说这种能力对于音乐教师这个职业或角色很重要。\n→ 是音乐教师必备的素质。"
+     }
+    ],
+    "sum": "基本的节奏感是音乐教师必备的素质。",
+    "cmp": "原译基本准确；这里把 in a music teacher 理解为「作为音乐教师所必需的」，不是空间上的「在教师里面」。"
+   }
   },
   "Don't speak to me in that tone of voice.": {
    "ph": [
@@ -225,7 +264,21 @@
      "b": "tone of voice",
      "m": "语气，口吻"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Don't speak to me",
+      "s": "Don't 加动词原形，是否定祈使句，表示「不要……」。speak to me 是「对我说话」，语气通常带有提醒或制止。\n→ 不要这样对我说话"
+     },
+     {
+      "t": "in that tone of voice.",
+      "s": "in that tone of voice 指「用那种语气、口吻」。tone 不只是声音高低，也可以表示说话时表现出的态度。\n→ 用那种口气。"
+     }
+    ],
+    "sum": "别用那种口气跟我说话。",
+    "cmp": "原译准确；tone of voice 在这里指说话态度，不只是声音的音调。"
+   }
   },
   "The piano is out of tune.": {
    "ph": [
@@ -234,7 +287,17 @@
      "b": "out of tune",
      "m": "走调"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The piano is out of tune.",
+      "s": "out of tune 是固定表达，表示乐器「走调了、音不准」。这里的 tune 不是「曲子」，而是音准；out of 表示偏离正常状态。\n→ 这架钢琴音不准。"
+     }
+    ],
+    "sum": "这架钢琴走调了。",
+    "cmp": "原译「钢琴音走调了」意思正确；中文一般说「钢琴走调了」或「音不准」，不需要再加一个「音」。"
+   }
   },
   "Taking a walk can instantly lift your mood, especially when you go outdoors.": {
    "ph": [
@@ -247,20 +310,16 @@
    "an": {
     "talk": [
      {
-      "t": "Taking a walk",
-      "s": "一开头就是 Taking，别慌。-ing 开头当主语，就是「做某事」这件事。take a walk 是「散步」。\n→ 散步"
+      "t": "Taking a walk can instantly lift your mood,",
+      "s": "Taking a walk 是动名词短语，整体作主语，意思是「散步这件事」。can lift your mood 表示能够改善心情；instantly 强调效果来得很快。\n→ 散步能立刻改善你的心情，"
      },
      {
-      "t": "can instantly lift your mood",
-      "s": "你多半会翻成「能立刻举起你的心情」。念一遍，心情又不是东西，怎么举？lift 本义是「举起」，心情被抬起来，就是「提升」。instantly 是「立刻」。\n→ 能立刻提升你的心情"
-     },
-     {
-      "t": "especially when you go outdoors",
-      "s": "when 带的是时间状语从句，就是「在……的时候」。go outdoors 是「到户外去」。especially 是「尤其」。\n→ 尤其是你到户外去的时候"
+      "t": "especially when you go outdoors.",
+      "s": "especially 后面补充更具体的情形。when 引导时间状语从句，go outdoors 是「到户外去」。这里不是说只有户外散步才有效，而是特别强调户外时的效果。\n→ 尤其是在你到户外走走的时候。"
      }
     ],
-    "sum": "散步能立刻让你的心情好起来，尤其是走到户外的时候。",
-    "cmp": "意思一样。书上把 go outdoors 译成「在户外」，我保留了「去」这个动作。"
+    "sum": "散步能立刻改善心情，尤其是到户外走走的时候。",
+    "cmp": "原译意思准确；句首动名词短语作主语，especially 则补充强调一种情形。"
    }
   },
   "They may adopt strategies that are bound to ruin their venture.": {
@@ -275,16 +334,15 @@
     "talk": [
      {
       "t": "They may adopt strategies",
-      "s": "adopt 你可能翻成「收养」。放到 strategies（策略）前面，它是「采用」。may 是「可能」。\n→ 他们可能会采取一些策略"
+      "s": "may 表示「可能」；adopt strategies 是「采取策略」。adopt 在这里不是领养，而是采用某种办法。\n→ 他们可能会采取一些策略"
      },
      {
-      "t": "that are bound to ruin their venture",
-      "s": "that 指谁？放回去试：strategies are bound to ruin……，策略注定会毁掉……，说得通；venture are……，venture 是单数，配 are 不对，还是 ruin 的宾语，不能当主语。所以 that 指 strategies。be bound to do 是「一定会、注定会」，不是「被绑住」。venture 你可能只认识「冒险」，这里指「企业、事业」。\n→ 这些策略注定会毁掉他们的企业"
+      "t": "that are bound to ruin their venture.",
+      "s": "that 引导定语从句，修饰 strategies，说明这些策略有什么后果。are bound to 表示「注定会」；ruin 是「毁掉」；venture 在这里指事业、商业项目或创业项目。\n→ 而这些策略注定会毁掉他们的事业。"
      }
     ],
-    "order": "英文用 that 把「毁掉企业」挂在策略后面，中文可以拆成两个短句：先说采取策略，再说这些策略注定会毁掉……",
-    "sum": "他们可能会采取一些注定会毁掉自己企业的策略。",
-    "cmp": "意思一样。书上把「注定会毁掉企业」放在「策略」前，一口气说完；拆开说也可以，看哪个顺。"
+    "sum": "他们可能会采取一些注定会毁掉自己事业的策略。",
+    "cmp": "原译准确；that 从句修饰 strategies，venture 在这里是事业或商业项目，不是单纯的冒险动作。"
    }
   },
   "She believes that she has found her true vocation.": {
@@ -293,15 +351,15 @@
     "talk": [
      {
       "t": "She believes that",
-      "s": "这块照字面翻就行：that 带的是宾语从句，就是「相信」的内容，后面整句话都是她相信的事。\n→ 她相信"
+      "s": "believes 后面的 that 引出宾语从句，说明她相信什么。这里 believe 是「相信、认为」，that 后面是一整句，不是一个单独的名词。\n→ 她相信"
      },
      {
-      "t": "she has found her true vocation",
-      "s": "vocation 长得像 vacation，你可能想翻成「假期」。放回去试试：她找到了真正的假期？说不通。vocation 是「职业、天职」，指真正适合自己的事业。has found 是现在完成时，「已经找到了」。\n→ 自己已经找到了真正适合自己的职业"
+      "t": "she has found her true vocation.",
+      "s": "has found 是现在完成时，表示她已经找到了某种东西，并且这个发现与现在有关。vocation 不只是普通的 job，更有「适合自己的职业、使命感」的意味；true 加强这种认同。\n→ 自己真正适合的职业方向。"
      }
     ],
-    "sum": "她相信自己已经找到了真正适合自己的职业。",
-    "cmp": "和书上一样。"
+    "sum": "她相信自己已经找到了真正适合自己的职业方向。",
+    "cmp": "原译「真正适合自己的职业」抓住了 vocation 的意思；「职业方向」稍微强调 vocation 中的个人使命感。"
    }
   },
   "We took an excursion around the island yesterday.": {
@@ -311,7 +369,21 @@
      "b": "take an excursion",
      "m": "进行短途旅行"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "We took an excursion",
+      "s": "take an excursion 是「进行一次短途旅行、游览」。excursion 通常指有明确目的地或安排的短途出行，不一定是长时间旅行。\n→ 我们进行了一次短途游览"
+     },
+     {
+      "t": "around the island yesterday.",
+      "s": "around the island 表示环绕岛屿一带，yesterday 交代时间。这里 around 不是「大约」，而是「围绕、环绕」。\n→ 昨天沿着这座岛游览了一圈。"
+     }
+    ],
+    "sum": "我们昨天环岛游览了一次。",
+    "cmp": "原译意思准确；「环岛游览」比「进行一次环岛短途旅行」更简洁。"
+   }
   },
   "She took her sister with her to keep her company on the journey.": {
    "ph": [
@@ -325,15 +397,15 @@
     "talk": [
      {
       "t": "She took her sister with her",
-      "s": "你多半会翻成「她把妹妹和她一起带」，读起来乱。take sb. with sb. 是「带着某人一起去」。\n→ 她带着妹妹一起去"
+      "s": "take someone with you 是「带某人一起去」。her sister 是被带上的人，with her 表示和她本人同行。两个 her 指的是同一个女性。\n→ 她带着妹妹一起出行"
      },
      {
-      "t": "to keep her company on the journey",
-      "s": "to keep 是 to do 短语，放在后面说明目的，就是「为了……」。keep sb. company 是固定搭配，「陪伴、作伴」，别翻成「保持她的公司」。on the journey 是「在旅途中」。\n→ 为了在旅途中作伴"
+      "t": "to keep her company on the journey.",
+      "s": "to keep her company 表示目的：带妹妹同行，是为了有人陪伴。keep sb. company 是固定搭配「陪伴某人」；on the journey 指在旅途中。\n→ 好在旅途中有个伴。"
      }
     ],
-    "sum": "她带着妹妹一起去，为了在旅途中有个伴。",
-    "cmp": "意思一样，书上把目的压缩成「带着妹妹在旅途中作伴」，更短，我把「一起去」和「为了」拆开说清楚。"
+    "sum": "她带着妹妹一起出行，好在旅途中有个伴。",
+    "cmp": "原译准确；to keep her company 是目的状语，说明她为什么带妹妹同行。"
    }
   },
   "Every time I see a cruise ship, I feel sad.": {
@@ -347,16 +419,16 @@
    "an": {
     "talk": [
      {
-      "t": "Every time I see a cruise ship",
-      "s": "你可能想翻成「每一次时间我看见一艘游轮」。every time 后面接了一个完整的句子，整块就是时间状语从句，意思是「每当……的时候」。cruise ship 是「游轮」。\n→ 每次我看见游轮"
+      "t": "Every time I see a cruise ship,",
+      "s": "Every time 在这里相当于「每当……的时候」，引出一个反复发生的情形。I see a cruise ship 是时间从句：每次我看到一艘游轮。\n→ 每当我看到游轮，"
      },
      {
-      "t": "I feel sad",
-      "s": "这块照字面翻就行：feel sad 是「觉得难过」。\n→ 我就觉得很难过"
+      "t": "I feel sad.",
+      "s": "主句说的是看到游轮后的感受：I feel sad，「我会感到难过」。这里用一般现在时，描述每次都会出现的反应。\n→ 我就会觉得难过。"
      }
     ],
-    "sum": "每次看到游轮，我都会觉得难过。",
-    "cmp": "意思一样。书上用了「一……就」，更口语一点。"
+    "sum": "每当我看到游轮，就会感到难过。",
+    "cmp": "原译准确；Every time 引导反复发生的时间情形，中文用「每当……就……」很合适。"
    }
   },
   "She wasn't so much interested in hot yoga.": {
@@ -366,7 +438,21 @@
      "b": "be interested in",
      "m": "对……感兴趣"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She wasn't so much interested",
+      "s": "wasn't interested in 是「对……不感兴趣」。so much 在这里加强程度，整句语气接近「她其实没那么感兴趣」，不是完全不感兴趣。\n→ 她其实没有那么感兴趣"
+     },
+     {
+      "t": "in hot yoga.",
+      "s": "in 后面接感兴趣的对象：hot yoga，通常指在高温环境中进行的瑜伽，也叫高温瑜伽。be interested in 后面可以接名词或动名词。\n→ 对高温瑜伽。"
+     }
+    ],
+    "sum": "她其实对高温瑜伽不怎么感兴趣。",
+    "cmp": "原译自然；wasn't so much 表示「没那么……」，语气比「完全不感兴趣」弱。"
+   }
   },
   "Training a patient to prepare healthy food can change their life.": {
    "ph": [],
@@ -374,15 +460,15 @@
     "talk": [
      {
       "t": "Training a patient to prepare healthy food",
-      "s": "又是 -ing 开头当主语，就是「训练这件事」。你多半会翻成「训练一个病人去准备健康食物」，多了个「去」。train sb. to do 是「训练某人做某事」，to prepare 是 to do 短语，说训练的内容。\n→ 训练患者准备健康的食物"
+      "s": "Training a patient 是动名词短语，整体作主语：「训练一位患者」这件事。to prepare healthy food 说明训练的具体内容——教患者准备健康食物。\n→ 教会患者准备健康食物"
      },
      {
-      "t": "can change their life",
-      "s": "这块照字面翻就行：can 是「能够」，change 是「改变」。\n→ 能改变他们的生活"
+      "t": "can change their life.",
+      "s": "can change 是「能够改变」。their 指前面的 a patient；英语中单数 a patient 也可以用 their 来避免指定性别。life 在这里是生活状态，不只是寿命。\n→ 可能改变患者的生活。"
      }
     ],
-    "sum": "训练患者准备健康的食物，能够改变他们的生活。",
-    "cmp": "和书上一样。"
+    "sum": "教会患者准备健康食物，可能会改变他们的生活。",
+    "cmp": "原译准确；这里把 Training ... 看作整件事作主语，并解释单数 patient 后面为什么可以接 their。"
    }
   },
   "Learning by doing doesn't really fit that mold anymore.": {
@@ -391,15 +477,15 @@
     "talk": [
      {
       "t": "Learning by doing",
-      "s": "-ing 开头当主语，就是「学习」这件事。你多半会翻成「通过做来学习」，不算错，但 learning by doing 是个常见说法，中文说「在实践中学习」更顺。\n→ 在实践中学习"
+      "s": "Learning by doing 是动名词短语作主语，意思是「在实践中学习、边做边学」。by doing 表示通过某种方式。\n→ 在实践中学习这种方式"
      },
      {
-      "t": "doesn't really fit that mold anymore",
-      "s": "fit 你可能只认识「合适」，这里是「符合」。mold 本义是「模具」，那种模具做出来的东西都一个样，所以引申为「模式」。anymore 放句末，doesn't …… anymore 就是「已经不……了、不再」。\n→ 已经不符合那种模式了"
+      "t": "doesn't really fit that mold anymore.",
+      "s": "fit the mold 是比喻说法，表示「符合某种固定模式」。mold 原意是模具，这里不是实体模具。doesn't ... anymore 表示「不再……」；really 让语气稍微缓和。\n→ 已经不太符合那种固定模式了。"
      }
     ],
-    "sum": "在实践中学习已经不符合那种模式了。",
-    "cmp": "和书上完全一样。"
+    "sum": "边做边学已经不太符合那种固定模式了。",
+    "cmp": "原译准确；mold 在这里是「模式」的比喻义，不是实体模具。"
    }
   },
   "They're concerned about their health and the well-being of the planet.": {
@@ -409,28 +495,37 @@
      "b": "be concerned about",
      "m": "关心"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "They're concerned about their health",
+      "s": "They're 是 they are 的缩写。be concerned about 表示「关心、担忧某事」，这里语气偏积极的关注。their health 是他们自己的健康。\n→ 他们关心自己的健康"
+     },
+     {
+      "t": "and the well-being of the planet.",
+      "s": "and 连接第二个关心的对象。well-being 指「福祉、良好状态」；of the planet 说明对象是地球。这里把个人健康和地球的整体状况并列起来。\n→ 也关心地球的福祉。"
+     }
+    ],
+    "sum": "他们既关心自己的健康，也关心地球的福祉。",
+    "cmp": "原译准确；中文用「既……也……」能更清楚地呈现 and 连接的两个并列对象。"
+   }
   },
   "Willpower is just like a muscle; to keep it strong you need to constantly exercise it.": {
    "ph": [],
    "an": {
     "talk": [
      {
-      "t": "Willpower is just like a muscle",
-      "s": "这块照字面翻就行：just like 是「就像」，打比方的句子。\n→ 意志力就像一块肌肉"
+      "t": "Willpower is just like a muscle;",
+      "s": "分号把两个意思紧密相关的部分连在一起。前半句用 is just like 作比喻：意志力就像肌肉。作者不是说意志力真的是肌肉，而是为后面的「锻炼」做铺垫。\n→ 意志力就像肌肉一样；"
      },
      {
-      "t": "to keep it strong",
-      "s": "分号后面一开头就是 to keep，这是 to do 短语，放在句首表目的，就是「为了……」。你多半会翻成「去保持它强壮」，念一遍有点怪。keep it strong 是「让它保持强壮」。\n→ 为了让它保持强壮"
-     },
-     {
-      "t": "you need to constantly exercise it",
-      "s": "need to do 是「需要做」，constantly 是「不断地」。exercise 这里是动词「锻炼」，不是名词「练习」。you 在这里泛指任何人，中文可以不翻出来。\n→ 需要不断地锻炼它"
+      "t": "to keep it strong you need to constantly exercise it.",
+      "s": "句首 to keep it strong 表示目的：「为了让它保持强壮」。两个 it 都指 willpower。exercise 在这里不只是身体运动，而是比喻持续训练意志力；constantly 表示不断地。\n→ 你需要不断锻炼它，才能让它保持强大。"
      }
     ],
-    "order": "英文先说目的、再说该怎么做，中文常说成「要……就需要……」，顺序可以不变，但把「为了」换成「要」会更顺。",
-    "sum": "意志力就像肌肉，要让它保持强壮，就需要不断地锻炼。",
-    "cmp": "意思一样，书上省掉「为了」，说成「需要不断锻炼才能保持强壮」，更紧凑。"
+    "sum": "意志力就像肌肉；要让它保持强大，就需要不断锻炼它。",
+    "cmp": "原译用「锻炼」把比喻译出来了；这里补充说明两个 it 都指意志力。"
    }
   },
   "We get a fairly large portion of calories from fast food and snacks.": {
@@ -440,7 +535,21 @@
      "b": "a portion of",
      "m": "一部分"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "We get a fairly large portion of calories",
+      "s": "get ... from 表示「从……获得……」。a portion of 是「一部分」，fairly large 表示相当大；calories 是卡路里、热量单位。\n→ 我们摄入的热量中有相当大一部分"
+     },
+     {
+      "t": "from fast food and snacks.",
+      "s": "from 后面列出热量来源：fast food（快餐）和 snacks（零食）。这里说的是热量来自这些食物。\n→ 来自快餐和零食。"
+     }
+    ],
+    "sum": "我们摄入的热量中，有相当大一部分来自快餐和零食。",
+    "cmp": "原译意思准确；把 get calories from 处理成中文常用的「热量来自……」，表达更顺。"
+   }
   },
   "The last important point to consider is that practice focuses your energy on the process.": {
    "ph": [
@@ -459,16 +568,15 @@
     "talk": [
      {
       "t": "The last important point to consider",
-      "s": "你多半会翻成「最后重要的点去考虑」。念一遍，卡住了吧？to consider 是跟在 point 后面的，说明是哪一点：要考虑的那一点。中文要把「要考虑的」提到「点」前面。\n→ 最后要考虑的重要一点"
+      "s": "中心词是 point，前面的 last important 都在修饰它。to consider 是不定式作后置修饰，意思是「需要考虑的最后一个重要观点」，不是另一个独立动作。\n→ 最后一个需要考虑的重要观点"
      },
      {
-      "t": "is that practice focuses your energy on the process",
-      "s": "is that 后面是一整句话，那就是内容，「是……」。再看 practice：后面的 focuses 带 s，是动词，所以 practice 是名词「练习」，当主语。focus A on B 是「把 A 集中在 B 上」：把你的精力集中在这个过程上。\n→ 是练习能让你把精力集中在过程上"
+      "t": "is that practice focuses your energy on the process.",
+      "s": "is 后面接 that 引导的表语从句，说明观点的具体内容。focus A on B 是「把 A 集中在 B 上」；practice 在这里指练习，the process 指过程本身。\n→ 就是练习会让你把精力集中在过程上。"
      }
     ],
-    "order": "英文是「要考虑的点」放在 is 前面，中文也是先说这一点，再说内容，顺序一致，只需要把 to consider 提前。",
-    "sum": "最后一个要考虑的重点是，练习能让你把精力集中在过程上。",
-    "cmp": "书上译成「最后要考虑的一点是，练习将你的精力集中在这个过程上」，基本一样，「将……集中」是书面说法。"
+    "sum": "最后一个需要考虑的重要观点是：练习会让你把精力集中在过程本身。",
+    "cmp": "原译准确；to consider 修饰 point，that 从句则说明这个观点的具体内容。"
    }
   },
   "More funding will be invested in bike battery research.": {
@@ -482,16 +590,16 @@
    "an": {
     "talk": [
      {
-      "t": "More funding will be invested in",
-      "s": "你多半会翻成「更多资金将被投资在」。念一遍，中文不说「被投资」。will be invested 是被动，就是「资金被别人拿去投入」，把「被」去掉，说「资金将投入到……」。invest in 是「投入到……上」。\n→ 更多的资金将投入到"
+      "t": "More funding will be invested",
+      "s": "will be invested 是一般将来时的被动结构：资金将会被投入。funding 是资金、经费，通常作不可数名词；more 表示投入金额会增加。\n→ 更多资金将被投入"
      },
      {
-      "t": "bike battery research",
-      "s": "三个名词挤在一起，你可能一个个翻成「自行车、电池、研究」。办法：从最后一个往前翻，research 是中心词「研究」，前面两个都是在说研究什么：电池的研究，是自行车用的电池。\n→ 自行车电池的研究中"
+      "t": "in bike battery research.",
+      "s": "invest in 是「投资于、投入到」。bike battery research 指自行车电池相关研究；in 后面说明资金的去向。\n→ 自行车电池研究。"
      }
     ],
-    "sum": "更多的资金将投入到自行车电池的研究中。",
-    "cmp": "和书上基本一样。"
+    "sum": "更多资金将投入自行车电池研究。",
+    "cmp": "原译准确；英语用被动语态突出资金，中文直接说「更多资金将投入……」即可。"
    }
   },
   "Let the debates be transparent and vigorous, wherever they are held.": {
@@ -499,17 +607,16 @@
    "an": {
     "talk": [
      {
-      "t": "Let the debates be transparent and vigorous",
-      "s": "你多半会翻成「让辩论是透明的和有力的」。念一遍，be 翻出来很生硬。Let sb. be…… 是「让……保持某种样子」，be 不用翻出来。transparent 本义是「透明的」，说辩论，就是「公开清楚」；vigorous 是「有力、有活力」。\n→ 让辩论公开清晰又有力"
+      "t": "Let the debates be transparent and vigorous,",
+      "s": "Let the debates be ... 是带有倡议或要求意味的表达，可理解为「让辩论保持……」。transparent 是「透明的、公开清楚的」，vigorous 是「有力的、积极激烈的」。\n→ 让辩论保持公开透明、积极有力，"
      },
      {
-      "t": "wherever they are held",
-      "s": "wherever 看成「无论在哪里」，一个词就是 no matter where。they 指谁？放回去试：debates are held，辩论被举行，说得通。「辩论被举行」是被动，中文说「举行辩论」更顺。\n→ 无论在哪里举行辩论"
+      "t": "wherever they are held.",
+      "s": "wherever 引导地点让步状语从句，意思是「无论在哪里」。they 指 debates；are held 是被动语态，表示辩论在哪里举行。\n→ 无论它们在哪里举行。"
      }
     ],
-    "order": "英文把「无论在哪里」放在最后，中文习惯把「无论……」放在前面当条件，再说结论「应使辩论……」。",
-    "sum": "无论在哪里举行辩论，都应让辩论公开、清晰而有力。",
-    "cmp": "书上是「无论在何处举行辩论，都应使辩论清晰而有力」，一样先说条件，也把被动改成了「举行辩论」。"
+    "sum": "无论辩论在哪里举行，都应保持公开透明和有力。",
+    "cmp": "原译准确；中文把 wherever 从句提前，更符合「无论在哪里……都……」的表达习惯。"
    }
   },
   "His friends feel reluctant to visit his home.": {
@@ -524,15 +631,15 @@
     "talk": [
      {
       "t": "His friends feel reluctant",
-      "s": "你多半会翻成「他的朋友觉得勉强」，话没说完。feel reluctant to do 是固定搭配，眼睛往后找 to——找到了，reluctant 是「不情愿」，不情愿做什么，要看 to 后面。\n→ 他的朋友不愿意"
+      "s": "feel reluctant 是「感到不情愿、不太愿意」。reluctant 描述心理上的抗拒，不一定是明确拒绝。\n→ 他的朋友们不太愿意"
      },
      {
-      "t": "to visit his home",
-      "s": "to visit 是 to do 短语，补上「不愿意做什么」：拜访。别翻成「去拜访」，直接说「去他家」更自然。\n→ 去他家"
+      "t": "to visit his home.",
+      "s": "reluctant 后面常接 to do，说明不愿意做什么。visit his home 就是去他家拜访；to visit 是 reluctant 的补充内容。\n→ 去他家拜访。"
      }
     ],
-    "sum": "他的朋友不愿意去他家。",
-    "cmp": "和书上完全一样。"
+    "sum": "他的朋友们不太愿意去他家。",
+    "cmp": "原译准确；「不太愿意」能保留 reluctant 的语气，比直接译成「拒绝」弱一些。"
    }
   },
   "They can lead to the creation of new clouds easily visible from space.": {
@@ -547,16 +654,15 @@
     "talk": [
      {
       "t": "They can lead to the creation of new clouds",
-      "s": "你多半会翻成「它们可以导致新云的创造」。念一遍，creation 太硬。英文爱用名词，中文爱用动词，把 creation 换成「形成」。lead to 里的 to 是介词，lead to sth. 就是「导致某事」。\n→ 它们可能导致新云的形成"
+      "s": "lead to 后面接名词时表示「导致……的产生」。They 指前文提到的某些因素或现象；the creation of new clouds 是「新云层的形成」。\n→ 它们可能导致新的云层形成"
      },
      {
-      "t": "easily visible from space",
-      "s": "你可能想把 visible 当成谓语。其实 easily visible from space 是形容词短语，紧跟在 clouds 后面，给 clouds 补一段说明，像省略了 that are。visible 是「看得见的」，from space 是「从太空」。\n→ 从太空很容易就能看见的"
+      "t": "easily visible from space.",
+      "s": "easily visible from space 是后置修饰语，说明 new clouds 有什么特点：从太空中很容易看到。visible 是形容词，不是句子的谓语；真正的谓语是 can lead to。\n→ 而这些云从太空中很容易被看见。"
      }
     ],
-    "order": "这块说明是补充 clouds 的，中文要放到「新云」前面当修饰语。",
-    "sum": "它们可能导致形成从太空中很容易看见的新云。",
-    "cmp": "书上把后半部分另起一句：「这从太空中很容易看到」，意思没错。我把它放进「云」前面，一句话说完。"
+    "sum": "它们可能导致形成新的云层，而且这些云从太空中很容易被观察到。",
+    "cmp": "原译意思正确；easily visible 修饰的是 new clouds，而不是整个形成过程。"
    }
   },
   "These invisible duties become apparent only when you don't do them.": {
@@ -571,16 +677,15 @@
     "talk": [
      {
       "t": "These invisible duties become apparent",
-      "s": "invisible 拆开看：in 是「不」，visible 是「看得见」，合起来「看不见的」。apparent 你可能想到「表面上的」，但 become apparent 是固定说法，「变得明显」。\n→ 这些看不见的责任变得明显"
+      "s": "invisible duties 是「看不见的职责」，这里的 invisible 是比喻，不是说职责真的没有形状，而是平时不容易被注意到。become apparent 表示「变得明显、显现出来」。\n→ 这些平时不易察觉的责任才会显现出来"
      },
      {
-      "t": "only when you don't do them",
-      "s": "你多半会翻成「只有当你不做它们」，这半句没错，问题是整句中文会没头没尾。中文说「只有……才……」，所以看到 only when，脑子里换成「只有……的时候，才……」，「才」要放到前一半的谓语前。them 指 duties，放回去试：不做这些责任，说得通。\n→ 只有当你不去做的时候"
+      "t": "only when you don't do them.",
+      "s": "only when 引出条件或时间：只有当你不去做这些事时。them 指前面的 duties。作者的意思是，有些责任平时默默完成，所以没人注意；一旦不做，大家才发现它们的重要性。\n→ 只有在你不履行它们的时候。"
      }
     ],
-    "order": "英文把 only when 放在最后，中文要把「只有当你不去做的时候」提到前面，在「变得明显」前加「才」。",
-    "sum": "只有当你不去做的时候，这些看不见的责任才会显现出来。",
-    "cmp": "书上是「才会变得明显」，和我的意思一样，「显现出来」稍微灵活一点。"
+    "sum": "只有当你不去履行这些看不见的责任时，它们才会变得明显。",
+    "cmp": "原译准确；这里解释了 invisible 的比喻义，以及 only when 带来的「只有……才……」关系。"
    }
   },
   "Patients' data has to be revised from time to time.": {
@@ -595,16 +700,15 @@
     "talk": [
      {
       "t": "Patients' data has to be revised",
-      "s": "你多半会翻成「患者的数据必须被修改」。念一遍，「被」可以去掉。has to 是「必须」，be revised 是被动，就是「数据被别人修改」，中文直接说「数据必须修改」。\n→ 患者的数据必须修改"
+      "s": "Patients' 是复数所有格，表示「患者的」。has to be revised 是「必须被修改／更新」；这里用被动结构，重点放在数据需要更新，而不是谁来修改。\n→ 患者的数据必须定期更新"
      },
      {
-      "t": "from time to time",
-      "s": "这是个固定短语，整体翻成「不时、时常」，别拆成「从时间到时间」。\n→ 不时地"
+      "t": "from time to time.",
+      "s": "from time to time 是固定表达，意思是「时不时、隔一段时间」。它强调不是只修改一次，而是需要不定期地重复更新。\n→ 需要隔一段时间就更新一次。"
      }
     ],
-    "order": "中文习惯把「不时地」放在动作前面。",
-    "sum": "患者的数据必须不时地修改。",
-    "cmp": "和书上一样。"
+    "sum": "患者的数据必须不时进行更新。",
+    "cmp": "原译准确；在数据语境里 revised 可以译为「修订」或「更新」，比泛泛的「修改」更贴切。"
    }
   },
   "They help an organization to broaden its vision effectively.": {
@@ -619,16 +723,15 @@
     "talk": [
      {
       "t": "They help an organization to broaden",
-      "s": "你多半会翻成「它们帮助一个组织去拓宽」。help sb. to do 是「帮助某人做某事」，to broaden 是 to do 短语，中文不用「去」，说「帮助组织拓宽」。\n→ 它们帮助组织拓宽"
+      "s": "help an organization to do 表示「帮助一个组织做某事」。to broaden 是不定式，说明帮助组织实现什么；broaden 是「拓宽、扩大」。\n→ 它们帮助一个组织拓宽"
      },
      {
-      "t": "its vision effectively",
-      "s": "vision 你可能想到「视力」，这里是比喻义，「眼界、视野」。broaden 的字面意思是「变宽」，拓宽视野正好搭配。effectively 是「有效地」。\n→ 视野，而且很有效"
+      "t": "its vision effectively.",
+      "s": "its 指 an organization。vision 在这里不是眼睛的视力，而是组织的视野、远见或发展眼光；effectively 表示这种拓宽是有效的。\n→ 自己的视野，而且效果显著。"
      }
     ],
-    "order": "effectively 放在句末，中文要放到动作前面，说成「有效地拓宽视野」。",
-    "sum": "它们帮助组织有效地拓宽视野。",
-    "cmp": "和书上完全一样。"
+    "sum": "它们帮助一个组织有效地拓宽视野。",
+    "cmp": "原译准确；vision 在组织发展语境中常指视野和远见，不是生理上的视力。"
    }
   },
   "Employees with a growth mindset may be more likely to devise innovative ideas.": {
@@ -643,15 +746,15 @@
     "talk": [
      {
       "t": "Employees with a growth mindset",
-      "s": "你多半会翻成「有一种成长心态的员工」。with 这里是「具有」，with a growth mindset 紧跟在 Employees 后面，给它补说明。中文把说明放前面当修饰语。\n→ 具有成长心态的员工"
+      "s": "with a growth mindset 是介词短语，修饰 employees，说明是哪一类员工：具有成长型思维的人。growth mindset 常译为「成长型思维」或「成长型心态」。\n→ 具有成长型思维的员工"
      },
      {
-      "t": "may be more likely to devise innovative ideas",
-      "s": "be likely to do 是「有可能做」，more likely 是「更有可能」，to devise 是 to do 短语，devise 是「想出、设计出」。may 也表可能，和 likely 有点重复，翻成「也许」就够了。innovative 是「创新的」。\n→ 也许更有可能想出创新的想法"
+      "t": "may be more likely to devise innovative ideas.",
+      "s": "may 表示可能；be more likely to do 是「更有可能做某事」。devise 比 think of 更强调经过思考设计出办法；innovative ideas 是创新想法。\n→ 可能更容易想出创新点子。"
      }
     ],
-    "sum": "具有成长心态的员工也许更有可能想出创新的点子。",
-    "cmp": "意思一样，我把「想法」换成「点子」，更口语。"
+    "sum": "具有成长型思维的员工可能更有机会提出创新想法。",
+    "cmp": "原译准确；devise 比普通的 think of 更有「构思、设计出」的意味。"
    }
   },
   "When looking at angry humans, they tended to turn away their gaze.": {
@@ -675,16 +778,16 @@
    "an": {
     "talk": [
      {
-      "t": "When looking at angry humans",
-      "s": "你多半会翻成「当看着愤怒的人类时」。念一遍，是谁在看？When looking 前面没有主语。这种时候，眼睛往后找主句的主语：逗号后面是 they，所以看的人就是 they。look at 是「看」，angry humans 是「愤怒的人类」。\n→ 当它们看到愤怒的人类时"
+      "t": "When looking at angry humans,",
+      "s": "When looking at 是 When they were looking at 的省略形式，主句和从句的主语相同，所以省去了 they were。angry humans 是「生气的人」。\n→ 当它们看着愤怒的人时，"
      },
      {
-      "t": "they tended to turn away their gaze",
-      "s": "tend to 是「往往会、倾向于」，不是「照料」。turn away their gaze 你可能翻成「转走它们的凝视」，太硬了。gaze 是「目光」，turn away 是「移开」，合起来就是「移开目光」。\n→ 往往会移开目光"
+      "t": "they tended to turn away their gaze.",
+      "s": "tended to 表示过去经常有某种倾向；turn away 是「移开、转开」。their gaze 是「它们的目光」，所以整句说的是它们倾向于避开对方的视线。\n→ 它们往往会移开目光。"
      }
     ],
-    "sum": "它们看到愤怒的人类时，往往会把目光移开。",
-    "cmp": "意思一样。书上译成「转移视线」，我说「移开目光」，两个都对。"
+    "sum": "当它们看到愤怒的人时，往往会移开自己的视线。",
+    "cmp": "原译准确；When looking at 省略了主语和 be 动词，可以还原成 When they were looking at。"
    }
   },
   "I only had time to glance at my emails.": {
@@ -704,15 +807,15 @@
     "talk": [
      {
       "t": "I only had time",
-      "s": "你多半会翻成「我只有时间」，念一遍，话没说完。have time to do 是「有时间做某事」，眼睛往后找 to。only 的味道是「只够、只来得及」。\n→ 我只来得及"
+      "s": "had time 表示「有时间」，only 强调时间很有限：我只有一点时间。这里是过去时，说明当时的时间安排。\n→ 我当时只有时间"
      },
      {
-      "t": "to glance at my emails",
-      "s": "to glance 是 to do 短语，说明时间用来做什么。glance at 是「瞥一眼」，别翻成「看」，那样就丢了「只匆匆看一下」的意思。\n→ 瞥一眼我的电子邮件"
+      "t": "to glance at my emails.",
+      "s": "have time to do 是「有时间做某事」。glance at 表示快速瞥一眼，不是认真阅读；emails 是电子邮件。\n→ 快速浏览一下邮件。"
      }
     ],
-    "sum": "我只来得及匆匆看一眼我的电子邮件。",
-    "cmp": "和书上基本一样。"
+    "sum": "我当时只来得及瞥一眼邮件。",
+    "cmp": "原译准确；glance at 强调动作很快，和 read（阅读）不同。"
    }
   },
   "He caught a glimpse of her in the crowd.": {
@@ -722,7 +825,21 @@
      "b": "catch a glimpse of",
      "m": "瞥见"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He caught a glimpse of her",
+      "s": "catch a glimpse of 是固定搭配，表示「瞥见、短暂地看见」。glimpse 强调看到的时间很短或不够清楚，不是长时间注视。\n→ 他在人群中瞥见了她"
+     },
+     {
+      "t": "in the crowd.",
+      "s": "in the crowd 是地点状语，说明他是在拥挤的人群里看到她的。crowd 是人群。\n→ 就在人群里。"
+     }
+    ],
+    "sum": "他在人群中瞥见了她。",
+    "cmp": "原译准确；catch a glimpse of 是整体表达，不能把 catch 单独理解成「抓住」。"
+   }
   },
   "You just stare across the table blankly with your mouth hanging open.": {
    "ph": [],
@@ -730,16 +847,15 @@
     "talk": [
      {
       "t": "You just stare across the table blankly",
-      "s": "这里的 You 泛指任何人，不是真的在说你。stare 是「盯着」，across the table 是「隔着桌子」，blankly 是「茫然地」。just 是「只是」。\n→ 你只是茫然地盯着桌子对面"
+      "s": "stare 表示「盯着看」，比 look 更强调目光持续停留。across the table 是视线越过桌子看向对面；blankly 描述神情，表示茫然、发愣。\n→ 你只是茫然地盯着桌子对面"
      },
      {
-      "t": "with your mouth hanging open",
-      "s": "你多半会翻成「和你的嘴挂着打开」。念一遍，肯定怪。with + 名词 + -ing 是一个套路，表示同时的状态，就是「嘴巴怎么样着」。hanging open 是 -ing 短语，说明嘴处在什么状态：张开着。\n→ 张着嘴"
+      "t": "with your mouth hanging open.",
+      "s": "with + 名词 + doing 是常见的伴随结构：with your mouth hanging open，字面是「嘴巴张着」。它补充说明 stare 时的样子，画面是一个人发愣、张着嘴盯着对面。\n→ 嘴巴还张着。"
      }
     ],
-    "order": "中文习惯先说伴随的状态，再说主要动作：「张着嘴，茫然地盯着……」。",
-    "sum": "你只是张着嘴，茫然地盯着桌子对面。",
-    "cmp": "和书上一样。"
+    "sum": "你只是茫然地盯着桌子对面，嘴巴还张着。",
+    "cmp": "原译准确；with your mouth hanging open 不是另一个独立动作，而是补充说明当时的状态。"
    }
   },
   "She scanned through the newspaper over breakfast.": {
@@ -754,7 +870,21 @@
      "b": "over breakfast",
      "m": "吃早饭时"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "She scanned through the newspaper",
+      "s": "scan through 表示「快速浏览、扫读」，不是逐字细读。newspaper 是报纸；这里描述她浏览报纸的动作。\n→ 她快速浏览着报纸"
+     },
+     {
+      "t": "over breakfast.",
+      "s": "over breakfast 是常见时间表达，意思是「吃早饭的时候」。over 在这里不是「在……上方」，而是表示某件事发生在一段活动期间。\n→ 一边吃早饭一边看。"
+     }
+    ],
+    "sum": "她吃早饭时快速浏览了报纸。",
+    "cmp": "原译准确；over breakfast 表示「早餐期间」，不是空间上的「在早餐上面」。"
+   }
   },
   "Did you have a chance to do any sightseeing?": {
    "ph": [
@@ -773,15 +903,313 @@
     "talk": [
      {
       "t": "Did you have a chance",
-      "s": "Did 开头是一般疑问句，在问「有没有」。have a chance to do 是固定搭配，「有机会做某事」，眼睛往后找 to。\n→ 你有没有机会"
+      "s": "Did 开头构成一般过去时疑问句，后面动词用原形 have。have a chance 表示「有机会」，这里是在问对方有没有获得某种机会。\n→ 你有没有机会"
      },
      {
-      "t": "to do any sightseeing",
-      "s": "to do 短语，说是什么机会。你多半会翻成「做任何观光」，念一遍，怪。do sightseeing 整体就是「游览、观光」，any 在疑问句里是「一些」的意思，中文不用翻出来。\n→ 去游览一下"
+      "t": "to do any sightseeing?",
+      "s": "to do 是不定式，说明是什么机会；do sightseeing 是「观光、游览」。any 放在疑问句里，表示「有没有进行过任何……」。\n→ 出去观光游览？"
      }
     ],
-    "sum": "你有没有机会去游览一下？",
-    "cmp": "书上把 to do 短语放到前面，说成「出去游览的机会」，意思一样。我的更口语。"
+    "sum": "你有没有机会出去观光游览？",
+    "cmp": "原译准确；do sightseeing 是固定说法，不能把 sightseeing 当作普通动词直接使用。"
+   }
+  },
+  "The use of seat belts was compulsory for the population.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The use of seat belts",
+      "s": "句子的中心不是 seat belts 本身，而是 the use of seat belts：「使用安全带」这件事。of 后面的 seat belts 说明 use 的具体内容。\n→ 使用安全带这件事"
+     },
+     {
+      "t": "was compulsory for the population.",
+      "s": "was compulsory 是「是强制性的」；for the population 表示适用对象是全体民众。compulsory 和 optional 相反，强调不是自愿选择。\n→ 对全体民众来说是强制要求。"
+     }
+    ],
+    "sum": "使用安全带对全体民众来说都是强制性的。",
+    "cmp": "原译意思没错；把 use of 作为整体处理，句子主干会更清楚。"
+   }
+  },
+  "Many universities offer courses in business administration.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Many universities offer courses",
+      "s": "offer 在这里是「提供、开设」，courses 是课程。主语 many universities 是复数，所以谓语用 offer。\n→ 许多大学开设课程"
+     },
+     {
+      "t": "in business administration.",
+      "s": "in business administration 说明课程的领域：business administration 是「工商管理」。这里的 in 不是地点，而是表示课程所属的专业方向。\n→ 内容是工商管理。"
+     }
+    ],
+    "sum": "许多大学开设工商管理课程。",
+    "cmp": "原译基本一致；courses in ... 表示「……方面的课程」，不是「课程在某个地方」。"
+   }
+  },
+  "She listened to recordings of many European orchestras.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "She listened to recordings",
+      "s": "listen 后面通常要接 to，表示「听……」。recordings 是录音、录制的作品；这里不是现场听演出，而是听录下来的音乐。\n→ 她听了许多录音"
+     },
+     {
+      "t": "of many European orchestras.",
+      "s": "of many European orchestras 说明这些录音来自哪些乐团。orchestra 是管弦乐队，复数 orchestras；European 修饰乐团。\n→ 这些录音来自许多欧洲管弦乐团。"
+     }
+    ],
+    "sum": "她听了许多欧洲管弦乐团的录音。",
+    "cmp": "原译准确；recordings of ... 中，of 后面说明录音的来源或演奏者。"
+   }
+  },
+  "She might not get enough vacation.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "She might not get",
+      "s": "might not 表示不确定的可能性：「可能没有、可能得不到」。它比 will not 语气弱，不是在断言一定没有。\n→ 她可能得不到"
+     },
+     {
+      "t": "enough vacation.",
+      "s": "enough 表示「足够的」。vacation 在这里指假期或休假时间，作不可数用法，不是某一次具体旅行。\n→ 足够的假期。"
+     }
+    ],
+    "sum": "她可能没有足够的假期。",
+    "cmp": "原译准确；might 表示可能，而不是确定发生。"
+   }
+  },
+  "He toured the Forbidden City.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "He toured the Forbidden City.",
+      "s": "tour 在这里不是名词「旅行团」，而是动词，表示「参观、游览」。the Forbidden City 是专有名称「故宫」。\n→ 他参观了故宫。"
+     }
+    ],
+    "sum": "他游览了故宫。",
+    "cmp": "原译准确；tour 可以直接作动词，后面接参观的地点。"
+   }
+  },
+  "The Titanic sank on its maiden voyage.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The Titanic sank",
+      "s": "sank 是 sink 的过去式，表示「沉没」。The Titanic 是泰坦尼克号，作为专有名称前面通常带 the。\n→ 泰坦尼克号沉没了"
+     },
+     {
+      "t": "on its maiden voyage.",
+      "s": "maiden voyage 是固定说法，指船只或飞机的「首次航行、首航」。on 在这里引出事情发生的场合。\n→ 就在它的首次航行途中。"
+     }
+    ],
+    "sum": "泰坦尼克号在首航途中便沉没了。",
+    "cmp": "原译「首航便沉没」很凝练；这里补出 on 表示事情发生的场合。"
+   }
+  },
+  "She does a 20-minute workout every morning.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "She does a 20-minute workout",
+      "s": "do a workout 是「做一次锻炼」。20-minute 是复合形容词，修饰 workout；minute 用单数，因为它和 20 连在一起组成形容词。\n→ 她做二十分钟的锻炼"
+     },
+     {
+      "t": "every morning.",
+      "s": "every morning 是频率时间状语，表示「每天早晨」。every 后面接单数名词 morning。\n→ 每天早晨。"
+     }
+    ],
+    "sum": "她每天早晨都会锻炼二十分钟。",
+    "cmp": "原译准确；中文可以把 20-minute workout 直接说成「锻炼二十分钟」，不用保留英文名词结构。"
+   }
+  },
+  "The school has recently built a new gym.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The school has recently built",
+      "s": "has built 是现在完成时，表示学校已经完成了建造这件事；recently 表示「最近」。这里强调新体育馆已经建成这一结果。\n→ 学校最近新建了"
+     },
+     {
+      "t": "a new gym.",
+      "s": "gym 是 gymnasium 的常见简称，指体育馆或健身房。结合学校语境，这里更可能指校内体育馆。\n→ 一座新的体育馆。"
+     }
+    ],
+    "sum": "学校最近新建了一座体育馆。",
+    "cmp": "原译准确；这里把 has built 的完成结果和 recently 的时间信息放在一起理解。"
+   }
+  },
+  "The heart responds well to energetic exercise.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The heart responds well",
+      "s": "respond well 表示「反应良好、适应得不错」。这里的 heart 指心脏，主语是器官本身。\n→ 心脏反应良好"
+     },
+     {
+      "t": "to energetic exercise.",
+      "s": "respond to 是「对……作出反应」。energetic 在这里形容 exercise，表示强度较大、比较有活力的运动。\n→ 对较为剧烈的运动。"
+     }
+    ],
+    "sum": "心脏对较为剧烈的运动反应良好。",
+    "cmp": "原译准确；energetic 在这里修饰 exercise，表示运动强度或活力。"
+   }
+  },
+  "It is a dynamic and self-improving process.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It is a dynamic and self-improving process.",
+      "s": "主干是 It is a process。dynamic 和 self-improving 是并列形容词：dynamic 表示「动态的、不断变化的」，self-improving 表示「自我改进的」。连起来强调这个过程会持续调整和完善。\n→ 这是一个动态且不断自我完善的过程。"
+     }
+    ],
+    "sum": "这是一个动态的、自我完善的过程。",
+    "cmp": "原译简洁准确；self-improving 不是「自己在改善别人」，而是过程本身能够不断改进。"
+   }
+  },
+  "It does not supervise its employees.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It does not supervise",
+      "s": "does not 后面接动词原形 supervise。supervise 是「监督、管理、督导」，比 watch 更正式，常用于工作或组织管理场景。\n→ 它并不负责监督"
+     },
+     {
+      "t": "its employees.",
+      "s": "its 指前文提到的组织或机构；employees 是雇员、员工。整句没有说它不关心员工，只是说明它不承担监督员工的职责。\n→ 自己的员工。"
+     }
+    ],
+    "sum": "它并不监督自己的员工。",
+    "cmp": "原译准确；注意 does not 后面要用 supervise 原形，its employees 是它的员工。"
+   }
+  },
+  "A reader creates visual images of the characters in a novel.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "A reader creates visual images",
+      "s": "creates 是 create 的第三人称单数。visual images 指脑海中形成的视觉画面；visual 是「视觉的」，images 是「形象、画面」。\n→ 读者会在脑海中形成画面"
+     },
+     {
+      "t": "of the characters in a novel.",
+      "s": "of the characters 说明画面里是什么：小说中的人物。in a novel 修饰 characters，表示这些人物来自小说。\n→ 这些画面是小说里的人物形象。"
+     }
+    ],
+    "sum": "读者会在脑海中形成小说人物的视觉形象。",
+    "cmp": "原译准确；visual images 可以理解成阅读时在脑海里形成的画面。"
+   }
+  },
+  "There were magnificent views of the surrounding countryside.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "There were magnificent views",
+      "s": "There were 是 there be 句型的过去式，表示「当时有、可以看到」。views 在这里不是「观点」，而是景色、景观；magnificent 是「壮丽的、令人赞叹的」。\n→ 当时可以看到壮丽的景色"
+     },
+     {
+      "t": "of the surrounding countryside.",
+      "s": "of the surrounding countryside 说明景色的内容。surrounding 是「周围的」，countryside 指乡村地区或郊野。\n→ 是四周的乡村风光。"
+     }
+    ],
+    "sum": "四周的乡村景色十分壮丽。",
+    "cmp": "原译准确；view 在这里是「景色」，不是「看法」；surrounding 说明景色来自周围的乡野。"
+   }
+  },
+  "The press could scent a scandal.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The press could scent",
+      "s": "the press 在这里不是「压机」，而是新闻媒体、媒体记者的统称。scent 原本是名词「气味」，作动词时可以比喻为「嗅出、察觉到」。\n→ 媒体似乎已经察觉到"
+     },
+     {
+      "t": "a scandal.",
+      "s": "scandal 是丑闻、丑事。could 表示有能力或可能性；整句用 scent 作比喻，形容记者像嗅到气味一样，察觉到可能有丑闻。\n→ 一桩丑闻。"
+     }
+    ],
+    "sum": "媒体记者似乎已经嗅到了某桩丑闻的气息。",
+    "cmp": "原译「记者觉察出有桩丑闻」准确；scent 在这里是形象化的「察觉」，不是实际闻到气味。"
+   }
+  },
+  "She browsed in an up-market antiques shop.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "She browsed",
+      "s": "browse 作动词可以表示「随意看看、浏览」，在商店语境里通常是没有明确购买目标地逛一逛。\n→ 她随意逛了逛"
+     },
+     {
+      "t": "in an up-market antiques shop.",
+      "s": "up-market 表示档次较高、比较高端；antiques shop 是古董店。antiques 是复数名词作定语，说明店里经营的是古董。\n→ 一家高档古董店。"
+     }
+    ],
+    "sum": "她在一家高档古董店里随意逛了逛。",
+    "cmp": "原译「逛了一家高级古董店」很自然；browse 带有随意浏览、不一定购买的意味。"
+   }
+  },
+  "The disease has affected her sight.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The disease has affected",
+      "s": "has affected 是现在完成时，表示疾病已经产生影响，而且这种影响与现在有关。affect 作动词是「影响」，不要和名词 effect 混淆。\n→ 这种疾病已经影响了"
+     },
+     {
+      "t": "her sight.",
+      "s": "sight 在这里不是「景象」，而是视力、视觉能力。结合 disease 的语境，意思是疾病影响了她看东西的能力。\n→ 她的视力。"
+     }
+    ],
+    "sum": "这种疾病已经影响了她的视力。",
+    "cmp": "原译准确；这里的 sight 指视力，不是「景色」或「视野」。"
+   }
+  },
+  "He has insight, vision and a deep humanity.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "He has insight, vision",
+      "s": "这里连续列出三个名词，insight 是「洞察力」，vision 是「远见、眼光」。两者相关但不完全相同：前者偏看透问题，后者偏看见未来方向。\n→ 他有洞察力和远见"
+     },
+     {
+      "t": "and a deep humanity.",
+      "s": "humanity 在这里不是「人类」，而是人性、人文关怀或对人的深切理解。deep 修饰 humanity，强调这种品质很深厚。\n→ 也有深厚的人文关怀。"
+     }
+    ],
+    "sum": "他有洞察力、远见和深厚的人文关怀。",
+    "cmp": "原译准确；humanity 在这里指人文情怀，而不是把它直译成「人类」。"
+   }
+  },
+  "The cause of the fire was a minor oversight of the staff.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The cause of the fire",
+      "s": "cause 是「原因」，of the fire 说明是哪件事的原因：火灾的原因。这里 the fire 指已经发生的那场火灾。\n→ 这场火灾的原因"
+     },
+     {
+      "t": "was a minor oversight of the staff.",
+      "s": "oversight 是「疏忽、疏漏」，不是「监督」。minor 表示程度较轻；of the staff 指这是工作人员造成或出现的疏忽。\n→ 是工作人员的一次小疏忽。"
+     }
+    ],
+    "sum": "这场火灾是由工作人员的一次小疏忽造成的。",
+    "cmp": "原译准确；oversight 在这里是「疏忽」，不要和动词 oversee（监督）混淆。"
    }
   }
  }
