@@ -12,7 +12,7 @@ const app = read("app.js");
 const courseClicks = app.slice(app.indexOf('document.addEventListener("click", e => {', app.indexOf("/* ---------- 其他点击")), app.indexOf("/* ---------- 设置页"));
 
 function harness(hash = "#/drill/due", saved = {}) {
-  const data = new Map(Object.entries(copy(saved))), plays = [], speech = [], listeners = new Map();
+  const data = new Map(Object.entries(copy(saved))), plays = [], speech = [], copied = [], messages = [], listeners = new Map();
   const ids = new Map(), handlers = {};
   let generation = 0, studyDay = day;
   const view = {
@@ -41,6 +41,7 @@ function harness(hash = "#/drill/due", saved = {}) {
   }
   const context = vm.createContext({
     SRS: {...SRS, today: () => studyDay}, Recall, Video, Vocab, Sync, URLSearchParams, setTimeout, clearTimeout,
+    navigator: {clipboard: {writeText: async text => { copied.push(text); }}},
     location: {hash}, document: {title: "测试", addEventListener(type, fn, capture) {
       if (!listeners.has(type)) listeners.set(type, []);
       listeners.get(type).push({fn, capture: !!capture});
@@ -56,12 +57,12 @@ function harness(hash = "#/drill/due", saved = {}) {
     pickVoice: rec => rec && rec.ava, rate: () => 1,
     playFile: key => plays.push(key), speakTTS: word => speech.push(word), speak: word => speech.push(word),
     readSent: (root, en) => speech.push(en), stopAll: () => {}, stopMarathon: () => {},
-    peekOpen: () => false, closePeek: () => {}, scrollBack: () => {}, toast: () => {},
+    peekOpen: () => false, closePeek: () => {}, scrollBack: () => {}, toast: message => messages.push(message),
   });
   vm.runInContext(studySource + "\nglobalThis.Study = Study;", context);
   vm.runInContext(courseClicks, context);
   const h = {
-    data, plays, speech, context,
+    data, plays, speech, copied, messages, context,
     setDay: d => studyDay = d,
     async navigate(hash) { context.location.hash = hash; await context.Study.render(hash); await new Promise(setImmediate); return h; },
     get html() { return view.innerHTML; },
@@ -446,6 +447,29 @@ async function recapFixture(first = {specific:'failed', dose:'independent'}) {
   return h;
 }
 
+test('按当前分类复制单词，并提示复制失败', async () => {
+  const h = await recapFixture({specific:'hinted', dose:'independent'});
+  await h.navigate('#/list/recap?show=strengthen');
+  assert.match(h.html, /复制需巩固单词/);
+  h.click({recapCopy:'1'}); await new Promise(setImmediate);
+  assert.equal(h.copied.at(-1), 'specific,');
+  assert.equal(h.messages.at(-1), '已复制单词');
+  await h.navigate('#/list/recap?show=independent');
+  assert.match(h.html, /复制独立想起单词/);
+  h.click({recapCopy:'1'}); await new Promise(setImmediate);
+  assert.equal(h.copied.at(-1), 'dose,');
+  await h.navigate('#/list/recap?show=all');
+  assert.match(h.html, /复制全部单词/);
+  h.click({recapCopy:'1'}); await new Promise(setImmediate);
+  assert.equal(h.copied.at(-1), 'specific,dose,');
+  h.context.navigator.clipboard.writeText = async () => { throw new Error('denied'); };
+  h.click({recapCopy:'1'}); await new Promise(setImmediate);
+  assert.equal(h.messages.at(-1), '复制失败，请检查剪贴板权限');
+  const empty = await recapFixture({specific:'independent', dose:'independent'});
+  await empty.navigate('#/list/recap');
+  assert.doesNotMatch(empty.html, /复制需巩固单词/);
+});
+
 test('今日回顾与首页首答一致，默认只看薄弱词，切换分类和读音不改学习数据', async () => {
   const h = await recapFixture();
   await h.navigate('#/');
@@ -502,9 +526,31 @@ test('自愿巩固后想起的薄弱词仍可回顾，逐词结果刷新保留�
   assert.match(restored.html, /自愿巩固：未想起\/想错/);
   assert.match(restored.html, /自愿巩固已独立想起 1 \/ 2 词/);
   assert.equal((restored.html.match(/首答：未想起\/想错/g) || []).length, 2);
+  await restored.navigate('#/list/recap?show=still-weak');
+  assert.deepEqual(recapWords(restored.html), [failed]);
+  assert.match(restored.html, /复制巩固仍未想起单词/);
+  restored.click({recapCopy:'1'}); await new Promise(setImmediate);
+  assert.equal(restored.copied.at(-1), failed + ',');
   await restored.navigate('#/list/recap?show=independent');
   assert.deepEqual(recapWords(restored.html), []);
   assert.deepEqual([...restored.data], before);
+});
+
+test('巩固仍未想起只包含当日已练且最新结果未独立想起的词', async () => {
+  const h = await recapFixture({specific:'failed', dose:'hinted'});
+  const card = h.data.get('srs:specific'), key = 'drill:strengthen-result:' + encodeURIComponent(card.life);
+  await h.navigate('#/list/recap?show=still-weak');
+  assert.deepEqual(recapWords(h.html), []);
+  assert.match(h.html, /尚未巩固的词不计入此处/);
+  h.data.set(key, {d:day, life:card.life, word:'specific', result:'hinted'});
+  await h.navigate('#/list/recap?show=still-weak');
+  assert.deepEqual(recapWords(h.html), ['specific']);
+  h.data.set(key, {d:day, life:card.life, word:'specific', result:'independent'});
+  await h.navigate('#/list/recap?show=still-weak');
+  assert.deepEqual(recapWords(h.html), []);
+  h.data.set(key, {d:yesterday, life:card.life, word:'specific', result:'failed'});
+  await h.navigate('#/list/recap?show=still-weak');
+  assert.deepEqual(recapWords(h.html), []);
 });
 
 test('没有首答和全独立想起时有明确空状态，跨学习日不混入昨天的词', async () => {

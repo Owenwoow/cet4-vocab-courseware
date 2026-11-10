@@ -565,9 +565,10 @@ const Study = (() => {
     const hash = location.hash, day = T(), turn = ++recapRender;
     const status = planStatus(), results = planResults(status);
     const requested = new URLSearchParams(hash.split("?")[1] || "").get("show");
-    const filter = ["strengthen", "independent", "all"].includes(requested) ? requested : "strengthen";
+    const filter = ["strengthen", "still-weak", "independent", "all"].includes(requested) ? requested : "strengthen";
     const weak = row => ["hinted", "failed"].includes(row.record.first.result);
-    const rows = results.rows.filter(row => filter === "all" || (filter === "strengthen" ? weak(row) : Recall.independent(row.record.first.result)));
+    const stillWeak = row => weak(row) && row.x && ["hinted", "failed"].includes(strengthenRecord(row.life)?.result);
+    const rows = results.rows.filter(row => filter === "all" || (filter === "strengthen" ? weak(row) : filter === "still-weak" ? stillWeak(row) : Recall.independent(row.record.first.result)));
     const labels = {independent: "独立想起", effort: "独立但费劲", hinted: "提示后想起", failed: "未想起/想错", chopped: "已斩"};
     const label = result => Object.hasOwn(labels, result) ? labels[result] : "未分类";
     setHead("今日单词回顾");
@@ -580,7 +581,8 @@ const Study = (() => {
     }));
     if (location.hash !== hash || turn !== recapRender) return;
     if (T() !== day) return renderRecap();
-    const tabs = [["strengthen", "首答需巩固", results.strengthen.length], ["independent", "首答独立想起", results.independent], ["all", "全部", results.rows.length]];
+    const tabs = [["strengthen", "首答需巩固", results.strengthen.length], ["still-weak", "巩固仍未想起", results.rows.filter(stillWeak).length], ["independent", "首答独立想起", results.independent], ["all", "全部", results.rows.length]];
+    const copyLabel = {strengthen: "复制需巩固单词", "still-weak": "复制巩固仍未想起单词", independent: "复制独立想起单词", all: "复制全部单词"}[filter];
     const extra = strengthenStatus(status);
     const content = rows.map((row, i) => {
       const x = details[i], first = row.record.first.result;
@@ -595,14 +597,15 @@ const Study = (() => {
         <div class="recap-followup">${retry ? `<span>同日补测：${label(retry)}</span>` : ""}${practice ? `<span>自愿巩固：${label(practice.result)}</span>` : ""}${weak(row) && row.x && !practice ? `<span>${retry ? "尚未自愿巩固" : "尚未巩固"}</span>` : ""}${row.external ? `<span>计划外首答</span>` : ""}</div>
         ${source ? `<div class="lsrc">${target ? `<a href="#/${encodeURIComponent(x.lid)}/w/${encodeURIComponent(target)}">${esc(source)} · 查看出处 →</a>` : esc(source)}</div>` : ""}</article>`;
     }).join("");
-    const empty = !results.rows.length ? "今天还没有首答记录，完成今日学习后可以来这里回顾。" : filter === "strengthen" ? "今天的首答没有需要巩固的词，可以切换查看其他单词。" : "这个分类里还没有单词。";
+    const empty = !results.rows.length ? "今天还没有首答记录，完成今日学习后可以来这里回顾。" : filter === "strengthen" ? "今天的首答没有需要巩固的词，可以切换查看其他单词。" : filter === "still-weak" ? "暂无巩固后仍未独立想起的词；尚未巩固的词不计入此处。" : "这个分类里还没有单词。";
     view().innerHTML = `<div class="recap listv"><a class="recap-back" href="#/">← 回首页</a>
       <div class="vh"><h1>今日单词回顾 <small>${md(day)} · ${results.rows.length} 词</small></h1></div>
       <p class="note">按今日首次词义作答分类；补测和巩固后想起的词仍保留在原分类中。</p>
-      <nav class="recap-filters" aria-label="今日单词分类">${tabs.map(([key, title, count]) => `<a href="#/list/recap?show=${key}"${key === filter ? ' aria-current="page"' : ""}>${title}<span>${count}</span></a>`).join("")}</nav>
+      <div class="recap-toolbar"><nav class="recap-filters" aria-label="今日单词分类">${tabs.map(([key, title, count]) => `<a href="#/list/recap?show=${key}"${key === filter ? ' aria-current="page"' : ""}>${title}<span>${count}</span></a>`).join("")}</nav>${rows.length ? `<button class="recap-copy" data-recap-copy="1"><span aria-hidden="true">⧉</span> ${copyLabel}</button>` : ""}</div>
       ${results.strengthen.length ? `<p class="recap-progress">首答需巩固 ${results.strengthen.length} 词 · 自愿巩固已独立想起 ${extra.done} / ${extra.total} 词</p>` : ""}
       ${content || `<p class="empty">${empty}</p>`}</div>`;
     view()._items = details.filter(Boolean);
+    view()._recapWords = rows.map(row => row.word);
   }
 
   /* ---------- 浏览（途中看）：紧凑列表，可遮住释义 ---------- */
@@ -1570,6 +1573,11 @@ const Study = (() => {
   }
   function onClick(e) {
     const t = e.target, v = view();
+    if (t.closest("[data-recap-copy]")) {
+      const text = (v._recapWords || []).map(word => word + ",").join("");
+      if (text) Promise.resolve().then(() => navigator.clipboard.writeText(text)).then(() => toast("已复制单词"), () => toast("复制失败，请检查剪贴板权限"));
+      return;
+    }
     if (D?.quick && /^#\/drill\/./.test(location.hash)) {
       const q = D.q, x = q?.x;
       if (t.closest("[data-quick-next]")) { quickNext(); return; }
