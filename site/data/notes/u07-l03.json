@@ -16,7 +16,8 @@
       "s": "allow for 在这里表示「允许、容许」，后面接 reading materials，不是让人做某个动作。on a digital device 表示阅读材料呈现在数字设备上。"
      }
     ],
-    "sum": "原译大意准确；这里把 on a digital device 作为阅读材料的呈现方式来理解。"
+    "sum": "调查允许在数字设备上阅读材料。",
+    "cmp": "原译大意准确；这里把 on a digital device 作为阅读材料的呈现方式来理解。"
    }
   },
   "This requires purchasing desks, chairs and office equipment.": {
@@ -28,7 +29,8 @@
       "s": "requires 后面接动名词 purchasing，表示「这需要购买……」。后面 desks、chairs 和 office equipment 是三个并列项目；equipment 是不可数名词，不说 equipments。"
      }
     ],
-    "sum": "原译准确；注意 purchasing 是 require 的宾语，equipment 是不可数名词。"
+    "sum": "这需要购买桌椅和办公设备。",
+    "cmp": "原译准确；注意 purchasing 是 require 的宾语，equipment 是不可数名词。"
    }
   },
   "Firefighters needed breathing apparatus to enter the burning house.": {
@@ -40,7 +42,8 @@
       "s": "breathing apparatus 指呼吸器具或呼吸装置。to enter 表示目的：消防员需要这套装置，是为了进入 burning house；burning 是现在分词作定语，说明房屋当时正在燃烧。"
      }
     ],
-    "sum": "原译把 house 译成「大楼」不一定准确；原句只说 house，译成「房屋」更稳妥。"
+    "sum": "消防队员需要呼吸器械以便进入燃烧的大楼。",
+    "cmp": "原译把 house 译成「大楼」不一定准确；原句只说 house，译成「房屋」更稳妥。"
    }
   },
   "They lack talent to fix their deepening problems.": {
@@ -52,7 +55,8 @@
       "s": "lack 在这里是动词「缺乏」；to fix 说明缺乏的才能要用来做什么。fix 在这里不是「修理机器」，而是「解决问题」；deepening 表示问题正在加深、变得更严重。"
      }
     ],
-    "sum": "原译基本准确；deepening 修饰 problems，强调问题日益严重，而不只是数量增加。"
+    "sum": "他们缺乏解决日益严重的问题的才能。",
+    "cmp": "原译基本准确；deepening 修饰 problems，强调问题日益严重，而不只是数量增加。"
    }
   },
   "The room was furnished with antiques.": {
@@ -70,7 +74,8 @@
       "s": "was furnished with 是被动结构，表示房间「配有、摆放着」某些东西。antiques 是古董、古玩；这里不是说房间被家具填满，而是说明里面陈设了古董。"
      }
     ],
-    "sum": "原译准确；be furnished with 可以译成「配有」或「摆放着」，要结合后面的物品选择。"
+    "sum": "房间里摆放了古董。",
+    "cmp": "原译准确；be furnished with 可以译成「配有」或「摆放着」，要结合后面的物品选择。"
    }
   },
   "It has walls decorated with jewels.": {
@@ -88,7 +93,8 @@
       "s": "主干是 It has walls。decorated with jewels 是过去分词短语，放在 walls 后面作修饰，说明墙壁是用珠宝装饰的；真正的谓语是 has，不是 decorated。"
      }
     ],
-    "sum": "原译准确；decorated with 是后置修饰语，补充说明 walls 的外观。"
+    "sum": "它的墙上装饰着珠宝。",
+    "cmp": "原译准确；decorated with 是后置修饰语，补充说明 walls 的外观。"
    }
   },
   "Most animals conclude that a situation is hopeless and beyond their control.": {
@@ -106,7 +112,8 @@
       "s": "conclude 在这里是「得出结论、认为」。that 后面是宾语从句，说明它们的判断：某种处境已经 hopeless（没有希望），并且 beyond their control（超出它们的控制范围）。两个形容词短语由 and 并列。"
      }
     ],
-    "sum": "原译意思准确；hopeless 和 beyond their control 是两个并列判断。"
+    "sum": "大多数动物得出结论，情况是无望的，无法控制的。",
+    "cmp": "原译意思准确；hopeless 和 beyond their control 是两个并列判断。"
    }
   },
   "Buses run every hour, Sundays excluded.": {
@@ -118,7 +125,8 @@
       "s": "Buses run 在这里表示公交车按班次运行；every hour 是「每小时一班」。句尾 Sundays excluded 是省略表达，可以补成 with Sundays excluded，意思是「星期日除外」。"
      }
     ],
-    "sum": "原译准确；Sundays excluded 是补充说明，表示星期日不包含在班次安排里。"
+    "sum": "公共汽车每小时一班，星期天除外。",
+    "cmp": "原译准确；Sundays excluded 是补充说明，表示星期日不包含在班次安排里。"
    }
   },
   "We were assured that, except for low grades or a raise in family income, no money would be taken away.": {
@@ -206,7 +214,8 @@
       "s": "want to do 表示「想做某事」；get back to 是「回到……」。herd 指一群被放牧或聚集在一起的动物，也可指牧群；their 表示这些牧群属于他们或由他们照看。"
      }
     ],
-    "sum": "原译准确；herd 是成群的牲畜或动物，不是单只动物。"
+    "sum": "他们想回到自己的牧群。",
+    "cmp": "原译准确；herd 是成群的牲畜或动物，不是单只动物。"
    }
   },
   "Pigeons are often seen as a symbol of peace.": {
@@ -229,7 +238,8 @@
       "s": "are seen as 是 be seen as 的被动表达，意思是「被看作、被视为」。a symbol of 是「……的象征」；peace 是和平。这里说的是鸽子在文化中的象征意义。"
      }
     ],
-    "sum": "原译准确；be seen as 是「被看作」，不是字面上的「被看见」。"
+    "sum": "鸽子常被认为是和平的象征。",
+    "cmp": "原译准确；be seen as 是「被看作」，不是字面上的「被看见」。"
    }
   },
   "A vivid example of such replay can be seen in a video.": {
@@ -241,7 +251,8 @@
       "s": "中心词是 example（例子），vivid 表示「生动的、鲜明的」。such replay 指前文提到的那种重现或回放；can be seen 是被动结构，表示可以在视频中看到。"
      }
     ],
-    "sum": "原译基本准确；vivid 修饰 example，can be seen 说明这个例子可以从视频中观察到。"
+    "sum": "这种回放的生动例子可以在一段视频中看到。",
+    "cmp": "原译基本准确；vivid 修饰 example，can be seen 说明这个例子可以从视频中观察到。"
    }
   },
   "Remember, failure is inevitable, and every failure you survive is a learning experience.": {
@@ -270,7 +281,8 @@
       "s": "Don't + 动词原形构成否定祈使句，表示提醒或劝告。spoil 是「破坏、影响」；appetite 是食欲。by eating 表示造成影响的方式；between meals 指两顿正餐之间。"
      }
     ],
-    "sum": "原译准确；by eating 说明造成影响的方式，中文用「以免」表达结果更顺。"
+    "sum": "不要在两餐之间吃东西，以免影响胃口。",
+    "cmp": "原译准确；by eating 说明造成影响的方式，中文用「以免」表达结果更顺。"
    }
   },
   "To find out, we introduced bacteria to squares of tile, carpet or wood.": {
@@ -321,7 +333,8 @@
       "s": "acts as 表示「充当、起到……作用」。protective blanket 是比喻，说大气层像一条保护毯，保护地球；blanket 不是字面上的毯子。"
      }
     ],
-    "sum": "原译保留了「保护毯」的比喻；「保护屏障」更符合中文科普表达，但原比喻也可以保留。"
+    "sum": "大气再次充当着我们在地球上的保护毯。",
+    "cmp": "原译保留了「保护毯」的比喻；「保护屏障」更符合中文科普表达，但原比喻也可以保留。"
    }
   },
   "At that moment his brain went blank.": {
@@ -339,7 +352,8 @@
       "s": "At that moment 是「就在那一刻」。go blank 是固定表达，表示脑子突然一片空白、想不起来东西；went 是 go 的过去式，blank 描述大脑当时的状态。"
      }
     ],
-    "sum": "原译准确；go blank 是状态变化表达，重点是「突然变得空白」。"
+    "sum": "那一刻，他的脑子一片空白。",
+    "cmp": "原译准确；go blank 是状态变化表达，重点是「突然变得空白」。"
    }
   },
   "In the process, she built a radically new life and career.": {
@@ -357,7 +371,8 @@
       "s": "In the process 是「在这个过程中」，回指前文提到的一段经历或变化。built 在这里不是盖房子，而是比喻「建立、开创」；radically new 表示彻底崭新的，life and career 是并列宾语。"
      }
     ],
-    "sum": "原译准确；built 在这里是比喻用法，强调通过努力建立新的生活与职业道路。"
+    "sum": "在这个过程中，她建立了一番全新的生活和事业。",
+    "cmp": "原译准确；built 在这里是比喻用法，强调通过努力建立新的生活与职业道路。"
    }
   },
   "It had one of its cargo planes land at a wrong airport.": {
@@ -408,7 +423,8 @@
       "s": "这是祈使句，省略了主语 you。chop ... up 是「把……切碎、剁成小块」；into 表示变化后的结果，small pieces 说明切完后的形状。"
      }
     ],
-    "sum": "原译准确；chop ... up 强调切碎，into small pieces 则说明切完后的大小。"
+    "sum": "把胡萝卜切成小块。",
+    "cmp": "原译准确；chop ... up 强调切碎，into small pieces 则说明切完后的大小。"
    }
   },
   "Doctors used carrot seeds and roots as medicine.": {
@@ -431,7 +447,8 @@
       "s": "used 是 use 的过去式。carrot seeds and roots 是并列宾语：胡萝卜种子和根。use A as B 表示「把 A 用作 B」；as 后面的 medicine 说明用途。"
      }
     ],
-    "sum": "原译准确；use ... as ... 是「把……用作……」，as 后面是用途。"
+    "sum": "医生用胡萝卜的种子和根作药。",
+    "cmp": "原译准确；use ... as ... 是「把……用作……」，as 后面是用途。"
    }
   },
   "As a child I used to love the Scooby-Doo cartoons.": {
@@ -449,7 +466,8 @@
       "s": "As a child 是「小时候」，交代时间背景。used to do 表示过去经常或曾经保持的习惯、状态，现在不一定如此；the Scooby-Doo cartoons 指《史酷比》动画片。"
      }
     ],
-    "sum": "原译准确；used to love 说的是过去的喜好，不一定代表现在仍然如此。"
+    "sum": "当我还是个孩子的时候，我很喜欢《史酷比》动画片。",
+    "cmp": "原译准确；used to love 说的是过去的喜好，不一定代表现在仍然如此。"
    }
   },
   "Life Reimagined paints a picture of middle age that is far from gloomy.": {
@@ -500,7 +518,8 @@
       "s": "can be seen 是情态动词加被动语态，表示「可以观察到」。from ... to ... 在这里表示范围从一端延伸到另一端；budget airlines 是廉价航空公司，carriers 在航空语境中指航空公司或承运人。"
      }
     ],
-    "sum": "原译准确；from ... to ... 在这里表示覆盖范围，不是实际移动路线。"
+    "sum": "从最便宜的廉价航空公司到世界上最大的航空公司，都可以看到这一点。",
+    "cmp": "原译准确；from ... to ... 在这里表示覆盖范围，不是实际移动路线。"
    }
   },
   "There are mothers pushing baby carriages, and old women with walkers.": {
@@ -541,7 +560,8 @@
       "s": "are cheering 和 holding 是并列的现在分词结构，共用 are，描述人们当时正在做的两件事：欢呼、举起手推车。in the air 说明手推车被举到空中。"
      }
     ],
-    "sum": "原译准确；两个动作由 and 连接，in the air 修饰 holding their carts。"
+    "sum": "人们欢呼着，把手推车举到空中。",
+    "cmp": "原译准确；两个动作由 and 连接，in the air 修饰 holding their carts。"
    }
   },
   "Most drivers have test driven cars with automatic braking features.": {
@@ -553,7 +573,8 @@
       "s": "have test driven 是现在完成时，表示大多数司机有过试驾经历。test drive 作动词时是「试驾」；with automatic braking features 修饰 cars，说明这些车配有自动制动功能。"
      }
     ],
-    "sum": "原译准确；with 短语修饰 cars，说明试驾的是哪一类汽车。"
+    "sum": "大多数驾驶员都试驾过带有自动制动功能的汽车。",
+    "cmp": "原译准确；with 短语修饰 cars，说明试驾的是哪一类汽车。"
    }
   },
   "It's clear that petrol-driven engines have no future.": {
@@ -611,7 +632,8 @@
       "s": "petrol 是英式英语，意思是汽油；美式英语更常用 gasoline 或 gas。run out 表示「用完、耗尽」，这里用现在进行时，强调汽油正在逐渐耗尽。run out 不直接接宾语，run out of sth. 才是「用完某物」。"
      }
     ],
-    "sum": "原译准确；run out 和 run out of 的用法不同，前者不直接带宾语。"
+    "sum": "汽油快要耗尽了。",
+    "cmp": "原译准确；run out 和 run out of 的用法不同，前者不直接带宾语。"
    }
   },
   "The teacher's role is more of a coach or observer.": {
@@ -629,7 +651,8 @@
       "s": "teacher's 是所有格，role 是角色、职责。more of a ... 表示「更像是一个……、更多地扮演……」；coach 是教练或指导者，observer 是观察者。"
      }
     ],
-    "sum": "原译准确；more of a 表示角色倾向，不是「更多数量的一个」。"
+    "sum": "教师的角色更多的是一个教练或观察者。",
+    "cmp": "原译准确；more of a 表示角色倾向，不是「更多数量的一个」。"
    }
   },
   "Horn is prohibited in the park.": {
@@ -647,7 +670,8 @@
       "s": "is prohibited 是被动结构，表示「被禁止」。Horn 在这里指车辆喇叭或鸣笛行为；结合公园标识语境，通常理解为公园内禁止鸣笛。"
      }
     ],
-    "sum": "原译把 Horn 译成「喇叭」；结合 prohibited 的语境，中文标识通常说「禁止鸣笛」更自然。"
+    "sum": "公园内禁止使用喇叭。",
+    "cmp": "原译把 Horn 译成「喇叭」；结合 prohibited 的语境，中文标识通常说「禁止鸣笛」更自然。"
    }
   },
   "He owns a fleet of aircraft.": {
@@ -665,7 +689,8 @@
       "s": "owns 是 own 的第三人称单数，表示「拥有」，强调所有权。a fleet of 是「一支……队、一批……」；fleet 常用于船队、机队或车辆队伍。aircraft 的单复数形式相同。"
      }
     ],
-    "sum": "原译准确；a fleet of aircraft 表示一整支飞机队伍，aircraft 单复数同形。"
+    "sum": "他拥有一支机队。",
+    "cmp": "原译准确；a fleet of aircraft 表示一整支飞机队伍，aircraft 单复数同形。"
    }
   },
   "He was caught trying to flee the country.": {
@@ -688,7 +713,8 @@
       "s": "was caught 是被动结构，表示「被抓住」。catch sb. doing 是「抓到某人正在做某事」；trying to flee 补充说明被抓住时的动作。flee 表示「逃离」，比 leave 更强调逃避危险或追捕。"
      }
     ],
-    "sum": "原译准确；trying to flee 说明被抓住时正在进行的动作。"
+    "sum": "他试图逃离该国时被抓住了。",
+    "cmp": "原译准确；trying to flee 说明被抓住时正在进行的动作。"
    }
   },
   "It may shed light on people's desire to crack a secret.": {
@@ -723,7 +749,8 @@
       "s": "channel 在这里不是水道，而是电视台或媒体频道。needs to interview 表示「需要采访」，to interview 是 need 后面的不定式；the boy 指前文提到的那个男孩。"
      }
     ],
-    "sum": "原译准确；channel 要根据 interview 的媒体语境理解为电视台或媒体频道。"
+    "sum": "电视台需要采访那个男孩。",
+    "cmp": "原译准确；channel 要根据 interview 的媒体语境理解为电视台或媒体频道。"
    }
   },
   "Steering through change and facing obstacles brings us face to face with our fears.": {
@@ -763,7 +790,8 @@
       "s": "air conditioning 是「空调、空气调节系统」，通常作不可数名词。can adjust automatically 表示它具备自动调节的能力；句子没有说具体调节温度还是风量，不必擅自补充。"
      }
     ],
-    "sum": "原译准确；automatically 修饰 adjust，说明调节过程不需要人工操作。"
+    "sum": "空调可以自动调节。",
+    "cmp": "原译准确；automatically 修饰 adjust，说明调节过程不需要人工操作。"
    }
   },
   "The British public loved his cheap gold earrings and his tasteless silver ornaments.": {
@@ -775,7 +803,8 @@
       "s": "the British public 指英国公众。后面并列了两类饰品：cheap gold earrings（廉价的金耳环）和 tasteless silver ornaments（俗气、没品位的银饰）。tasteless 在这里是审美评价，不是味觉上的「没有味道」。"
      }
     ],
-    "sum": "原译准确；tasteless 在这里是「没品位」，不是「没有味道」。"
+    "sum": "英国公众喜欢他廉价的金耳环和毫无品位的银饰。",
+    "cmp": "原译准确；tasteless 在这里是「没品位」，不是「没有味道」。"
    }
   },
   "I made a summary report for the records.": {
@@ -787,7 +816,8 @@
       "s": "summary 作定语，表示「总结性的、摘要式的」；summary report 就是总结报告。for the records 表示用途是留档、供记录使用；record 在这里不是唱片，而是记录或档案。"
      }
     ],
-    "sum": "原译准确；for the records 交代报告的用途，是为了存档。"
+    "sum": "我对记录的内容做了总结报告。",
+    "cmp": "原译准确；for the records 交代报告的用途，是为了存档。"
    }
   },
   "He gives his staff a considerable sum for tips.": {
@@ -799,7 +829,8 @@
       "s": "give sb. sth. 是双宾语结构：先说给谁（his staff），再说给什么（a considerable sum）。considerable sum 是一笔相当可观的钱；for tips 表示这笔钱用于小费，tip 在这里不是「提示」。"
      }
     ],
-    "sum": "原译「丰厚的小费」比较简洁；considerable 强调金额可观。"
+    "sum": "他给他的员工一笔丰厚的小费。",
+    "cmp": "原译「丰厚的小费」比较简洁；considerable 强调金额可观。"
    }
   },
   "GNP includes loss in value of factories and equipment.": {
@@ -811,7 +842,8 @@
       "s": "GNP 是 Gross National Product 的缩写，即国民生产总值。loss in value 指价值损失或价值减少；of factories and equipment 说明哪些资产发生了价值损失。不是把工厂和设备的全部价值都算进去。"
      }
     ],
-    "sum": "原译准确；loss in value 是一个整体，指资产价值的减少。"
+    "sum": "国民生产总值包括工厂和设备的价值损失。",
+    "cmp": "原译准确；loss in value 是一个整体，指资产价值的减少。"
    }
   },
   "At first, you just eliminate the obvious distractions and explore the rest.": {
@@ -823,7 +855,8 @@
       "s": "At first 是「起初、第一步」。eliminate 是「排除、消除」；obvious distractions 指明显会分散注意力的事物。and 连接第二个动作 explore the rest，即继续探索剩下的部分。"
      }
     ],
-    "sum": "原译准确；两个并列动作可以按先后顺序译成「先排除……再探索……」。"
+    "sum": "一开始，你只需要排除那些明显的干扰，然后探索剩下的内容。",
+    "cmp": "原译准确；两个并列动作可以按先后顺序译成「先排除……再探索……」。"
    }
   },
   "She always kept a pad by the phone.": {
@@ -835,7 +868,8 @@
       "s": "kept 是 keep 的过去式。keep a pad by ... 表示把便笺本放在某处，方便随时使用。pad 在这里不是垫子，而是便笺本或记事本；by 表示「在……旁边」。"
      }
     ],
-    "sum": "原译准确；结合电话旁的使用场景，pad 应理解为便笺本，而不是坐垫。"
+    "sum": "她总是在电话旁放一个便笺本。",
+    "cmp": "原译准确；结合电话旁的使用场景，pad 应理解为便笺本，而不是坐垫。"
    }
   },
   "The seat next to him was vacant.": {
@@ -847,7 +881,8 @@
       "s": "next to him 是介词短语，修饰 seat，表示「他旁边的座位」。vacant 表示「空着的、无人使用的」，常用于座位、房间或职位。"
      }
     ],
-    "sum": "原译准确；vacant 描述座位没有人占用，不只是「空白」。"
+    "sum": "他旁边的座位空着。",
+    "cmp": "原译准确；vacant 描述座位没有人占用，不只是「空白」。"
    }
   },
   "Exclusion of air creates a vacuum in the bottle.": {
@@ -859,7 +894,8 @@
       "s": "exclusion 是 exclude 的名词形式，表示「排除、去除」；of air 说明被排除的是空气。整个名词短语作主语。vacuum 是「真空」，in the bottle 说明真空形成的位置。"
      }
     ],
-    "sum": "原译准确；Exclusion of air 是名词短语作主语，可以顺译为「排除空气这一过程」。"
+    "sum": "瓶子里的空气排除后就产生真空。",
+    "cmp": "原译准确；Exclusion of air 是名词短语作主语，可以顺译为「排除空气这一过程」。"
    }
   },
   "So many of our own past scars and dashed hopes can surface.": {
@@ -871,7 +907,8 @@
       "s": "主语中心是 scars and hopes 两个并列名词。scars 是伤疤，dashed hopes 是破灭的希望；surface 作动词表示「浮现、显露出来」，这里是比喻过去的伤痛和失望重新出现。"
      }
     ],
-    "sum": "原译准确；surface 在这里是比喻用法，不是物体真的浮出水面。"
+    "sum": "我们自己过去的许多伤疤和破灭的希望都会浮现出来。",
+    "cmp": "原译准确；surface 在这里是比喻用法，不是物体真的浮出水面。"
    }
   },
   "They were skilled carpenters themselves.": {
@@ -883,7 +920,8 @@
       "s": "skilled 修饰 carpenters，表示技术熟练的木匠。themselves 放在句尾起强调作用，表示「他们自己本身就是」，突出他们不只是雇佣木匠，也具备木工技能。"
      }
     ],
-    "sum": "原译准确；themselves 是强调代词，突出「他们自己」这一点。"
+    "sum": "他们自己就是技术熟练的木匠。",
+    "cmp": "原译准确；themselves 是强调代词，突出「他们自己」这一点。"
    }
   },
   "Its picture won a photography prize.": {
@@ -895,7 +933,8 @@
       "s": "Its 指前文提到的某个人、机构或作品。picture 在这里是照片；won 是 win 的过去式，表示赢得、获得奖项。photography prize 就是摄影奖。"
      }
     ],
-    "sum": "原译准确；picture 在这里指照片，photography 修饰 prize，说明奖项类别。"
+    "sum": "它的照片获得了摄影奖。",
+    "cmp": "原译准确；picture 在这里指照片，photography 修饰 prize，说明奖项类别。"
    }
   },
   "The accompanying chart shows data for eight countries.": {
@@ -907,7 +946,8 @@
       "s": "accompanying 是现在分词作定语，表示「随附的、配套的」。chart 是图表；data for eight countries 表示这些数据对应八个国家，for 说明数据覆盖的对象。"
      }
     ],
-    "sum": "原译准确；accompanying 修饰 chart，说明图表是随正文一同提供的。"
+    "sum": "附图显示了八个国家的数据。",
+    "cmp": "原译准确；accompanying 修饰 chart，说明图表是随正文一同提供的。"
    }
   },
   "Automated grading systems are now widespread.": {
@@ -919,7 +959,8 @@
       "s": "automated 是 automate 的过去分词形容词，表示「自动化的」。grading systems 是评分系统；are widespread 表示「十分普遍、广泛使用」，now 强调当前状态。"
      }
     ],
-    "sum": "原译准确；automated 是「自动化的」，不要误解为「被自动评分的系统」。"
+    "sum": "自动评分系统现在很普遍。",
+    "cmp": "原译准确；automated 是「自动化的」，不要误解为「被自动评分的系统」。"
    }
   },
   "It marked a new era in motor travel.": {
@@ -931,7 +972,8 @@
       "s": "marked 是 mark 的过去式，这里不是「做标记」，而是「标志着」。a new era 是「一个新时代」；motor travel 指机动车出行或汽车旅行，in 限定这个新时代所属的领域。"
      }
     ],
-    "sum": "原译准确；motor travel 指机动车出行，不一定只限于旅游。"
+    "sum": "它标志着汽车旅行的新时代。",
+    "cmp": "原译准确；motor travel 指机动车出行，不一定只限于旅游。"
    }
   },
   "Just search the name of the motel.": {
@@ -943,7 +985,8 @@
       "s": "Just 放在祈使句里有「只要、直接」的意思。search 在这里作动词，表示搜索、查找；motel 是汽车旅馆，通常方便驾车旅客住宿。"
      }
     ],
-    "sum": "原译准确；motel 通常指汽车旅馆，和一般 hotel 的概念略有区别。"
+    "sum": "只需搜索这家汽车旅店的名字即可。",
+    "cmp": "原译准确；motel 通常指汽车旅馆，和一般 hotel 的概念略有区别。"
    }
   },
   "There has obviously been a breakdown in communications between the two sides.": {
@@ -972,7 +1015,8 @@
       "s": "They've 是 They have 的缩写，have built 是现在完成时，表示隧道已经建成。tunnel 是隧道；through 表示「穿过、贯穿」，说明隧道穿过山体，而不是沿着山脚修建。"
      }
     ],
-    "sum": "原译准确；through the mountain 强调隧道贯穿山体。"
+    "sum": "他们修建了一条新的穿山隧道。",
+    "cmp": "原译准确；through the mountain 强调隧道贯穿山体。"
    }
   }
  }
