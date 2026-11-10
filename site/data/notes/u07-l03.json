@@ -12,16 +12,11 @@
    "an": {
     "talk": [
      {
-      "t": "The survey allowed for reading materials",
-      "s": "你多半会翻成「调查允许了阅读材料」。念一遍，是不是有点怪？allow for 是一个搭配，书上这里译成「允许」。for 后面的 reading 是 -ing 形式，就是「阅读」这件事，所以要读成「允许阅读材料」，而不是「允许一种材料」。\n→ 调查允许阅读材料"
-     },
-     {
-      "t": "on a digital device",
-      "s": "on 在这里是「在……上」，digital device 就是「数字设备」，比如电脑、平板。它说明阅读是在什么东西上进行的。\n→ 在数字设备上"
+      "t": "The survey allowed for reading materials on a digital device.",
+      "s": "allow for 在这里表示「允许、容许」，后面接 reading materials，不是让人做某个动作。on a digital device 表示阅读材料呈现在数字设备上。"
      }
     ],
-    "sum": "这项调查允许人们在数字设备上阅读材料。",
-    "cmp": "和书上意思一样，我多补了「人们」，是为了让「阅读」有个做动作的人，读起来更完整。"
+    "sum": "原译大意准确；这里把 on a digital device 作为阅读材料的呈现方式来理解。"
    }
   },
   "This requires purchasing desks, chairs and office equipment.": {
@@ -29,16 +24,11 @@
    "an": {
     "talk": [
      {
-      "t": "This requires purchasing",
-      "s": "你多半会翻成「这需要购买」，这没错，但要知道 purchasing 是怎么来的：它是 -ing 形式，跟在 requires 后面当宾语，就是「买东西这件事」。require 后面接 -ing，意思是「这件事需要做某事」。\n→ 这需要购买"
-     },
-     {
-      "t": "desks, chairs and office equipment",
-      "s": "三样东西并列：desks、chairs、office equipment。desks and chairs 中文常合成「桌椅」，office equipment 是「办公设备」，不是「办公室设备」。\n→ 桌椅和办公设备"
+      "t": "This requires purchasing desks, chairs and office equipment.",
+      "s": "requires 后面接动名词 purchasing，表示「这需要购买……」。后面 desks、chairs 和 office equipment 是三个并列项目；equipment 是不可数名词，不说 equipments。"
      }
     ],
-    "sum": "这需要买桌椅和办公设备。",
-    "cmp": "和书上基本一样，我把「购买」换成了更口语的「买」。"
+    "sum": "原译准确；注意 purchasing 是 require 的宾语，equipment 是不可数名词。"
    }
   },
   "Firefighters needed breathing apparatus to enter the burning house.": {
@@ -46,16 +36,11 @@
    "an": {
     "talk": [
      {
-      "t": "Firefighters needed breathing apparatus",
-      "s": "你多半会翻成「消防员需要呼吸装置」，大意没错。apparatus 是「器械、装置」，breathing 在这里说明它是干什么用的，所以 breathing apparatus 就是「呼吸器械」。\n→ 消防队员需要呼吸器械"
-     },
-     {
-      "t": "to enter the burning house",
-      "s": "to enter 是 to do 短语，在这里说明目的，就是「为了做某事」。你可能会翻成「需要呼吸器械去进入」，不顺，换成「以便进入」。burning house 是「正在燃烧的房子」，也就是「着火的房子」。\n→ 以便进入着火的房子"
+      "t": "Firefighters needed breathing apparatus to enter the burning house.",
+      "s": "breathing apparatus 指呼吸器具或呼吸装置。to enter 表示目的：消防员需要这套装置，是为了进入 burning house；burning 是现在分词作定语，说明房屋当时正在燃烧。"
      }
     ],
-    "sum": "消防员需要呼吸器械，才能进入着火的房子。",
-    "cmp": "意思一样。书上译作「燃烧的大楼」，原文 house 是房子，不一定是大楼；「着火的房子」更接近原文。"
+    "sum": "原译把 house 译成「大楼」不一定准确；原句只说 house，译成「房屋」更稳妥。"
    }
   },
   "They lack talent to fix their deepening problems.": {
@@ -63,17 +48,11 @@
    "an": {
     "talk": [
      {
-      "t": "They lack talent",
-      "s": "这里 lack 是动词，意思是「缺乏」。别把它当成名词。They lack talent 就是「他们缺乏才能」。\n→ 他们缺乏才能"
-     },
-     {
-      "t": "to fix their deepening problems",
-      "s": "你多半会翻成「缺乏才能去解决……问题」。念一遍，中文不这么说。to fix 是 to do 短语，跟在名词 talent 后面，是给它补一段说明：什么样的才能？「能解决问题的才能」。fix 在这里是「解决」，deepening 是「越来越深的」，就是「日益严重的」。\n→ 去解决他们日益严重的问题"
+      "t": "They lack talent to fix their deepening problems.",
+      "s": "lack 在这里是动词「缺乏」；to fix 说明缺乏的才能要用来做什么。fix 在这里不是「修理机器」，而是「解决问题」；deepening 表示问题正在加深、变得更严重。"
      }
     ],
-    "order": "英文是「才能」在前、to fix 在后，中文习惯把说明放在前面：「解决……问题的才能」，所以把 to fix 那一块提到 talent 前面。",
-    "sum": "他们缺乏能解决越来越严重的问题的才能。",
-    "cmp": "意思一样，书上把 to do 短语提到前面，我也是这样做的。"
+    "sum": "原译基本准确；deepening 修饰 problems，强调问题日益严重，而不只是数量增加。"
    }
   },
   "The room was furnished with antiques.": {
@@ -87,16 +66,11 @@
    "an": {
     "talk": [
      {
-      "t": "The room was furnished",
-      "s": "你多半会翻成「房间被布置」。was furnished 是被动，就是「房间被别人怎么样了」。furnish 是「给房间配上家具、摆设」。中文不用「被」，换成「房间里摆着什么」就自然了。\n→ 房间里摆着"
-     },
-     {
-      "t": "with antiques",
-      "s": "be furnished with 是一个搭配，with 后面接的就是配上的东西。antiques 是「古董」，不要看成 ancient。\n→ 古董"
+      "t": "The room was furnished with antiques.",
+      "s": "was furnished with 是被动结构，表示房间「配有、摆放着」某些东西。antiques 是古董、古玩；这里不是说房间被家具填满，而是说明里面陈设了古董。"
      }
     ],
-    "sum": "房间里摆着古董。",
-    "cmp": "和书上基本一样，书上用「摆放了」，我用「摆着」，说的是状态，更顺口一点。"
+    "sum": "原译准确；be furnished with 可以译成「配有」或「摆放着」，要结合后面的物品选择。"
    }
   },
   "It has walls decorated with jewels.": {
@@ -110,16 +84,11 @@
    "an": {
     "talk": [
      {
-      "t": "It has walls",
-      "s": "这块照字面翻就行：has 是「有」，walls 是「墙」。中文常说「它的墙壁」。\n→ 它的墙壁"
-     },
-     {
-      "t": "decorated with jewels",
-      "s": "你多半会翻成「它有被珠宝装饰的墙」。念一遍，太绕了。decorated with jewels 是过去分词短语（-ed 短语），跟在 walls 后面，补一句「这些墙怎么样」，就是「被珠宝装饰着的」。中文把它改成动词放在后面：墙上装饰着珠宝。\n→ 装饰着珠宝"
+      "t": "It has walls decorated with jewels.",
+      "s": "主干是 It has walls。decorated with jewels 是过去分词短语，放在 walls 后面作修饰，说明墙壁是用珠宝装饰的；真正的谓语是 has，不是 decorated。"
      }
     ],
-    "sum": "它的墙壁上装饰着珠宝。",
-    "cmp": "和书上基本一样，书上写的是「它的墙上装饰着珠宝」，我多了「壁」字，意思相同。"
+    "sum": "原译准确；decorated with 是后置修饰语，补充说明 walls 的外观。"
    }
   },
   "Most animals conclude that a situation is hopeless and beyond their control.": {
@@ -133,16 +102,11 @@
    "an": {
     "talk": [
      {
-      "t": "Most animals conclude that",
-      "s": "你多半会翻成「大多数动物得出结论说」。念一遍，动物还要「得出结论」，有点像写论文。conclude that 后面跟一个完整的句子，意思是「断定、认定」。\n→ 大多数动物会认定"
-     },
-     {
-      "t": "a situation is hopeless and beyond their control",
-      "s": "你可能想翻成「情况是无望的，是在它们控制之外的」。两个「的」叠在一起，太硬。hopeless 和 beyond their control 是并列的两个说法，都在说 situation。beyond 是「超出」，beyond their control 就是「它们控制不了」。把两块合成一口气：\n→ 局面没有希望，也不是它们能控制的"
+      "t": "Most animals conclude that a situation is hopeless and beyond their control.",
+      "s": "conclude 在这里是「得出结论、认为」。that 后面是宾语从句，说明它们的判断：某种处境已经 hopeless（没有希望），并且 beyond their control（超出它们的控制范围）。两个形容词短语由 and 并列。"
      }
     ],
-    "sum": "大多数动物会认定，眼前的局面没有希望，也不是自己能控制的。",
-    "cmp": "意思一样。书上是「得出结论，情况是无望的，无法控制的」，断成了几小段，还连用两个「的」，读起来有点碎；合成一句更顺。"
+    "sum": "原译意思准确；hopeless 和 beyond their control 是两个并列判断。"
    }
   },
   "Buses run every hour, Sundays excluded.": {
@@ -150,16 +114,11 @@
    "an": {
     "talk": [
      {
-      "t": "Buses run every hour",
-      "s": "这是完整的一句话：run 在这里是「（车）运行」，every hour 是「每小时」，别翻成「每小时跑一次」。\n→ 公共汽车每小时一班"
-     },
-     {
-      "t": "Sundays excluded",
-      "s": "逗号后面没有动词，只有 Sundays excluded。你多半会翻成「星期天被排除」。放回去试：前面已经有完整一句，后面补一小段说明，意思是「星期天被排除在外」，也就是「星期天除外」。excluded 是过去分词，表示被动的意思。\n→ 星期天除外"
+      "t": "Buses run every hour, Sundays excluded.",
+      "s": "Buses run 在这里表示公交车按班次运行；every hour 是「每小时一班」。句尾 Sundays excluded 是省略表达，可以补成 with Sundays excluded，意思是「星期日除外」。"
      }
     ],
-    "sum": "公共汽车每小时一班，星期天除外。",
-    "cmp": "和书上完全一样。"
+    "sum": "原译准确；Sundays excluded 是补充说明，表示星期日不包含在班次安排里。"
    }
   },
   "We were assured that, except for low grades or a raise in family income, no money would be taken away.": {
@@ -189,19 +148,19 @@
     "talk": [
      {
       "t": "We were assured that,",
-      "s": "先抓句子主干：We were assured that ...。assure 是「向某人保证」，were assured 是被动形式，意思是「我们得到了保证」。that 后面接的就是保证的具体内容。\n→ 我们得到保证："
+      "s": "were assured 是被动结构，assure sb. that ... 表示「向某人保证……」。这里是 we 得到了保证；that 后面接保证的具体内容。\n→ 我们得到保证："
      },
      {
       "t": "except for low grades or a raise in family income,",
-      "s": "逗号中间这段是补充的例外条件，先把它拿开，主句就清楚多了。except for 表示「除……之外」，这里列出两种例外：low grades（成绩不理想）和 a raise in family income（家庭收入增加）。注意 raise 在这里是名词，表示「增加、增长」，不一定是职场里的「加薪」。\n→ 除成绩不理想或家庭收入增加这两种情况外，"
+      "s": "逗号中间这一段是例外条件。except for 表示「除……之外」；low grades 是成绩不理想，a raise in family income 是家庭收入增加。raise 在这里是名词「增加」，不是动词「举起」。\n→ 除了成绩不理想或家庭收入增加这两种情况外，"
      },
      {
       "t": "no money would be taken away.",
-      "s": "再看主句后半段：no money would be taken away。would be taken away 是被动结构，强调「钱不会被拿走」。结合 money 的语境，可以译成「不会被扣掉」或「不会被收回」，比直译成「没有钱会被拿走」自然。\n→ 不会扣掉任何钱。"
+      "s": "would be taken away 是过去视角下的将来被动结构，意思是「钱不会被拿走」。结合钱款语境，中文说「不会扣掉或收回任何钱」更自然。\n→ 不会扣掉任何钱。"
      }
     ],
     "sum": "我们得到保证：除成绩不理想或家庭收入增加这两种情况外，不会扣掉任何钱。",
-    "cmp": "和书上译文意思一致。我把逗号中间的例外条件单独拎出来，并把 would be taken away 译成「扣掉」，更贴近中文里的钱款语境。"
+    "cmp": "原译意思准确；except for 引出例外条件，taken away 按钱款语境译为「扣掉」。"
    }
   },
   "Universities today are in the business of education, and mine is no exception.": {
@@ -220,16 +179,16 @@
    "an": {
     "talk": [
      {
-      "t": "Universities today are in the business of education",
-      "s": "你多半会翻成「大学现在在教育的生意里」。念一遍，怪。in the business of 是一个搭配，意思是「以……为业」，这里的 business 不是「生意」，而是「行当」。today 放在 universities 后面，意思是「现在的大学」。\n→ 现在的大学都以教育为业"
+      "t": "Universities today are in the business of education,",
+      "s": "in the business of 是「以……为业、从事……」。这里 business 不是狭义的商业买卖，而是说大学的主要职责或工作领域就是教育。\n→ 如今的大学都是从事教育事业的，"
      },
      {
-      "t": "and mine is no exception",
-      "s": "and 后面是另一整句。mine 指谁？放回去试试：my university 是我的大学，说得通；my education 是我的教育，说不通。所以 mine 是「我的大学」。no exception 是「不是例外」，加上「也」就顺了。\n→ 我的大学也不例外"
+      "t": "and mine is no exception.",
+      "s": "mine 是名词性物主代词，代替 my university（我的大学）。is no exception 表示「也不例外」，意思是我的大学同样如此。\n→ 而我的大学也不例外。"
      }
     ],
-    "sum": "现在的大学都以教育为业，我的大学也不例外。",
-    "cmp": "和书上完全一样。"
+    "sum": "如今的大学都是从事教育事业的，而我的大学也不例外。",
+    "cmp": "原译准确；mine 代替 my university，不要误读成「我的东西」。"
    }
   },
   "They want to get back to their herds.": {
@@ -243,16 +202,11 @@
    "an": {
     "talk": [
      {
-      "t": "They want to get back to",
-      "s": "get back to 你多半会拆开翻成「得到、回去、到」，念一遍，根本不成话。它是一个搭配，整个就是「回到」。前面的 want to 是 want to do，也就是「想要做某事」。\n→ 他们想回到"
-     },
-     {
-      "t": "their herds",
-      "s": "这块照字面翻就行：herd 是一群牲畜，所以是「牧群」，用复数是因为每个人各有各的。\n→ 自己的牧群"
+      "t": "They want to get back to their herds.",
+      "s": "want to do 表示「想做某事」；get back to 是「回到……」。herd 指一群被放牧或聚集在一起的动物，也可指牧群；their 表示这些牧群属于他们或由他们照看。"
      }
     ],
-    "sum": "他们想回到自己的牧群那里。",
-    "cmp": "意思一样，我多加了「那里」，是为了让「回到」读起来更自然。"
+    "sum": "原译准确；herd 是成群的牲畜或动物，不是单只动物。"
    }
   },
   "Pigeons are often seen as a symbol of peace.": {
@@ -271,16 +225,11 @@
    "an": {
     "talk": [
      {
-      "t": "Pigeons are often seen as",
-      "s": "你多半会翻成「鸽子经常被看见」。放回去试：后面还有 as，意思就不对了。are seen 是被动，就是「鸽子被别人怎么样了」。see A as B 是「把 A 看作 B」，所以是「鸽子被看作……」。中文少用「被」，可以说「常被看作」。\n→ 鸽子常被看作"
-     },
-     {
-      "t": "a symbol of peace",
-      "s": "symbol of 是「……的象征」，peace 是「和平」，连起来就是「和平的象征」。\n→ 和平的象征"
+      "t": "Pigeons are often seen as a symbol of peace.",
+      "s": "are seen as 是 be seen as 的被动表达，意思是「被看作、被视为」。a symbol of 是「……的象征」；peace 是和平。这里说的是鸽子在文化中的象征意义。"
      }
     ],
-    "sum": "鸽子常被看作和平的象征。",
-    "cmp": "意思一样，书上用「被认为是」，我用「被看作」，都可以。"
+    "sum": "原译准确；be seen as 是「被看作」，不是字面上的「被看见」。"
    }
   },
   "A vivid example of such replay can be seen in a video.": {
@@ -288,17 +237,11 @@
    "an": {
     "talk": [
      {
-      "t": "A vivid example of such replay",
-      "s": "你多半会翻成「这种回放的一个生动的例子」。字面没错，但「的」太多。of 后面是 such replay，也就是「这种回放」；vivid 这里是「生动形象」。可以先压成「生动的例子」，把「这种回放」放在前面当范围。\n→ 这种回放的一个生动例子"
-     },
-     {
-      "t": "can be seen in a video",
-      "s": "你可能想翻成「可以被看见在一段视频里」。念一遍，是不是很别扭？can be seen 是被动，但中文说「能看到」就够了，不用「被」。in a video 是「在一段视频里」。\n→ 在一段视频里就能看到"
+      "t": "A vivid example of such replay can be seen in a video.",
+      "s": "中心词是 example（例子），vivid 表示「生动的、鲜明的」。such replay 指前文提到的那种重现或回放；can be seen 是被动结构，表示可以在视频中看到。"
      }
     ],
-    "order": "英文把例子放前面、地点放后面。中文可以先说地点「在一段视频里」，再说「能看到什么」，比硬跟着英文顺序更自然。",
-    "sum": "在一段视频里，就能看到这种回放的一个生动例子。",
-    "cmp": "意思一样。书上保持了英文语序，「这种回放的生动例子可以在一段视频中看到」，没有错，只是把地点放最后，稍微长一点。"
+    "sum": "原译基本准确；vivid 修饰 example，can be seen 说明这个例子可以从视频中观察到。"
    }
   },
   "Remember, failure is inevitable, and every failure you survive is a learning experience.": {
@@ -306,20 +249,16 @@
    "an": {
     "talk": [
      {
-      "t": "Remember, failure is inevitable",
-      "s": "这块照字面翻就行。inevitable 是「不可避免」，Remember 是提醒对方记住。\n→ 记住，失败是不可避免的"
+      "t": "Remember, failure is inevitable,",
+      "s": "Remember 是提醒对方记住某件事。failure 是失败，inevitable 表示「不可避免的」。作者先提出一个现实：失败并不是完全可以躲开的。\n→ 记住，失败是不可避免的，"
      },
      {
-      "t": "every failure you survive",
-      "s": "你多半会翻成「你生存的每一次失败」。念一遍，失败怎么能「生存」？survive 平时是「幸存」，这里后面直接跟了 failure，是「熬过、挺过」某件事。再看 failure 和 you 之间，藏着一个 that，补回去是 every failure (that) you survive，「你熬过的每一次失败」。\n→ 你熬过的每一次失败"
-     },
-     {
-      "t": "is a learning experience",
-      "s": "learning 在这里是名词，learning experience 就是「学习的经历」，别翻成「正在学习的经历」。\n→ 都是一次学习的经历"
+      "t": "and every failure you survive is a learning experience.",
+      "s": "every failure you survive 中，you survive 是省略关系词的定语从句，修饰 failure：每一次你挺过来的失败。survive 在这里不是单纯「活下来」，而是「熬过、挺过」。\n→ 而每一次你挺过的失败，都会成为一次学习经历。"
      }
     ],
-    "sum": "记住，失败是难免的，你熬过的每一次失败，都是一次学习的经历。",
-    "cmp": "和书上基本一样。书上用「艰难度过」，我用「熬过」，意思相同，书上更书面一点。"
+    "sum": "记住，失败不可避免，而每一次你挺过的失败，都会成为一次学习经历。",
+    "cmp": "原译准确；you survive 是修饰 failure 的定语从句，survive 带有「挺过难关」的意思。"
    }
   },
   "Don't spoil your appetite by eating between meals.": {
@@ -327,17 +266,11 @@
    "an": {
     "talk": [
      {
-      "t": "Don't spoil your appetite",
-      "s": "没写主语的句子是祈使句，就是在对「你」下命令。spoil 你可能只认识「宠坏」，放回去：宠坏你的胃口？说不通。这里是「破坏」。appetite 是「胃口」。\n→ 不要破坏你的胃口"
-     },
-     {
-      "t": "by eating between meals",
-      "s": "by eating 是 by + -ing，就是「靠做某事」。你多半会翻成「通过在两餐之间吃东西」。念一遍，太硬了。这里说的是做法和后果：靠吃东西把胃口弄坏。between meals 是「两餐之间」。\n→ 靠在两餐之间吃东西"
+      "t": "Don't spoil your appetite by eating between meals.",
+      "s": "Don't + 动词原形构成否定祈使句，表示提醒或劝告。spoil 是「破坏、影响」；appetite 是食欲。by eating 表示造成影响的方式；between meals 指两顿正餐之间。"
      }
     ],
-    "order": "英文先说「别破坏胃口」，再说「靠什么」；中文习惯先说该做什么，再说后果：先说「别在两餐之间吃东西」，再接「会影响胃口」。",
-    "sum": "两餐之间不要吃东西，不然会影响胃口。",
-    "cmp": "意思和书上一样。书上用「以免影响胃口」，也是先说做法，再说后果，顺序和我是一样的。"
+    "sum": "原译准确；by eating 说明造成影响的方式，中文用「以免」表达结果更顺。"
    }
   },
   "To find out, we introduced bacteria to squares of tile, carpet or wood.": {
@@ -361,16 +294,16 @@
    "an": {
     "talk": [
      {
-      "t": "To find out",
-      "s": "一开头是 To find out，后面又有逗号，别当成「去找出」。to do 放在句首，是说目的：「为了……」。find out 是「查明、弄清楚」。\n→ 为了弄清楚"
+      "t": "To find out,",
+      "s": "句首 To find out 是目的状语，表示「为了查明、弄清楚」。它和后面的主句相连，说明接下来做实验或操作的目的。\n→ 为了弄清楚这一点，"
      },
      {
-      "t": "we introduced bacteria to squares of tile, carpet or wood",
-      "s": "introduce 你可能只认识「介绍」，翻成「我们把细菌介绍给……」就闹笑话了。眼睛往后找 to，introduce A to B 这里是把 A「放进、引入」B 上。squares of tile 你可能翻成「瓷砖的方块」，其实就是「一小块一小块的瓷砖」。tile、carpet、wood 三个并列。\n→ 我们把细菌放到小块的瓷砖、地毯或木头上"
+      "t": "we introduced bacteria to squares of tile, carpet or wood.",
+      "s": "introduced ... to ... 在这里表示「把……引入……」。bacteria 是细菌；后面列出三种材料的小块：tile（瓷砖）、carpet（地毯）或 wood（木材）。\n→ 我们把细菌引入瓷砖、地毯或木材的小块中。"
      }
     ],
-    "sum": "为了弄清楚这一点，我们把细菌放到了小块的瓷砖、地毯或木头上。",
-    "cmp": "书上是「引入了瓷砖、地毯或木材中」，前半句「找到答案」也行。差别在最后：to 是「到……上」，放在小块材料表面，书上的「中」像是放进材料里面，没有「小块」的意思，我的更贴近原文。"
+    "sum": "为了查明情况，我们把细菌引入瓷砖、地毯或木材的小块中。",
+    "cmp": "原译准确；squares 指切成方块的小块材料，不是数学上的正方形概念。"
    }
   },
   "The atmosphere again acts as our protective blanket on earth.": {
@@ -380,7 +313,16 @@
      "b": "act as",
      "m": "充当"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The atmosphere again acts as our protective blanket on earth.",
+      "s": "acts as 表示「充当、起到……作用」。protective blanket 是比喻，说大气层像一条保护毯，保护地球；blanket 不是字面上的毯子。"
+     }
+    ],
+    "sum": "原译保留了「保护毯」的比喻；「保护屏障」更符合中文科普表达，但原比喻也可以保留。"
+   }
   },
   "At that moment his brain went blank.": {
    "ph": [
@@ -389,7 +331,16 @@
      "b": "go blank",
      "m": "变得一片空白"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "At that moment his brain went blank.",
+      "s": "At that moment 是「就在那一刻」。go blank 是固定表达，表示脑子突然一片空白、想不起来东西；went 是 go 的过去式，blank 描述大脑当时的状态。"
+     }
+    ],
+    "sum": "原译准确；go blank 是状态变化表达，重点是「突然变得空白」。"
+   }
   },
   "In the process, she built a radically new life and career.": {
    "ph": [
@@ -398,7 +349,16 @@
      "b": "in the process",
      "m": "在这个过程中"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "In the process, she built a radically new life and career.",
+      "s": "In the process 是「在这个过程中」，回指前文提到的一段经历或变化。built 在这里不是盖房子，而是比喻「建立、开创」；radically new 表示彻底崭新的，life and career 是并列宾语。"
+     }
+    ],
+    "sum": "原译准确；built 在这里是比喻用法，强调通过努力建立新的生活与职业道路。"
+   }
   },
   "It had one of its cargo planes land at a wrong airport.": {
    "ph": [
@@ -417,15 +377,15 @@
     "talk": [
      {
       "t": "It had one of its cargo planes land",
-      "s": "你多半会翻成「它有一架货机降落」。放回去试：had 后面是一架飞机，再跟一个动词原形 land（不是 landed，也不是 to land），这是 have sth do 的搭配，就是「让某物做某事」。所以是「让一架货机降落」，不是「有」。one of its cargo planes 是「它的货机中的一架」。\n→ 它让它的一架货机降落"
+      "s": "这里是 have + 宾语 + 动词原形的使役结构：had one of its cargo planes land，表示「让／使其中一架货机降落」。land 前面没有 to，因为 have 后接宾语再接动词原形。\n→ 它让自己的一架货机降落"
      },
      {
-      "t": "at a wrong airport",
-      "s": "at 在这里是「在（某个地点）」，wrong airport 是「错误的机场」。\n→ 在一个错误的机场"
+      "t": "at a wrong airport.",
+      "s": "at a wrong airport 是地点信息，说明降落在哪里。wrong airport 是「错误的机场」，更自然的中文是「不该降落的机场」或「错误机场」。\n→ 在了错误的机场。"
      }
     ],
     "sum": "它让自己的一架货机降落在了错误的机场。",
-    "cmp": "和书上意思一样，书上把 had 译成「使」，我译成「让」，意思相同。"
+    "cmp": "原译准确；关键是 have + 宾语 + 动词原形的使役结构，不能把 land 看成 had 的并列谓语。"
    }
   },
   "Chop the carrots up into small pieces.": {
@@ -440,7 +400,16 @@
      "b": "chop … up",
      "m": "切碎"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Chop the carrots up into small pieces.",
+      "s": "这是祈使句，省略了主语 you。chop ... up 是「把……切碎、剁成小块」；into 表示变化后的结果，small pieces 说明切完后的形状。"
+     }
+    ],
+    "sum": "原译准确；chop ... up 强调切碎，into small pieces 则说明切完后的大小。"
+   }
   },
   "Doctors used carrot seeds and roots as medicine.": {
    "ph": [
@@ -454,7 +423,16 @@
      "b": "use … as",
      "m": "把……用作"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "Doctors used carrot seeds and roots as medicine.",
+      "s": "used 是 use 的过去式。carrot seeds and roots 是并列宾语：胡萝卜种子和根。use A as B 表示「把 A 用作 B」；as 后面的 medicine 说明用途。"
+     }
+    ],
+    "sum": "原译准确；use ... as ... 是「把……用作……」，as 后面是用途。"
+   }
   },
   "As a child I used to love the Scooby-Doo cartoons.": {
    "ph": [
@@ -463,7 +441,16 @@
      "b": "used to do",
      "m": "过去常常"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "As a child I used to love the Scooby-Doo cartoons.",
+      "s": "As a child 是「小时候」，交代时间背景。used to do 表示过去经常或曾经保持的习惯、状态，现在不一定如此；the Scooby-Doo cartoons 指《史酷比》动画片。"
+     }
+    ],
+    "sum": "原译准确；used to love 说的是过去的喜好，不一定代表现在仍然如此。"
+   }
   },
   "Life Reimagined paints a picture of middle age that is far from gloomy.": {
    "ph": [
@@ -482,15 +469,15 @@
     "talk": [
      {
       "t": "Life Reimagined paints a picture of middle age",
-      "s": "你多半会翻成「《重新想象的生活》画了一幅中年的画」。念一遍，是不是像在画画？这里 Life Reimagined 首字母大写，是个名字，当主语，paint a picture of 是比喻，意思是「描绘出……的样子」。\n→ 《重新想象的生活》描绘了中年的样子"
+      "s": "paint a picture of 是比喻表达，意思是「描绘……的图景」，不是拿颜料画画。middle age 指中年阶段；Life Reimagined 是作品或项目名称，作为专名保留。\n→ 《Life Reimagined》描绘了一幅中年生活的图景"
      },
      {
-      "t": "that is far from gloomy",
-      "s": "你可能想翻成「那是远从悲观的」。far from 不是「离……很远」，而是「一点也不、远非」。看到 far from，脑子里换成「一点也不」。gloomy 是「阴郁、悲观」。这一块是补充说明中年是什么样。\n→ 一点也不悲观"
+      "t": "that is far from gloomy.",
+      "s": "that 引导定语从句，修饰前面的 picture。far from 表示「远非、一点也不」；gloomy 是「阴郁、悲观的」。所以这幅图景并不灰暗，反而比较积极。\n→ 而这幅图景一点也不阴郁。"
      }
     ],
-    "sum": "《重新想象的生活》描绘的中年，一点也不悲观。",
-    "cmp": "书上是「描绘了一幅远非悲观的中年图景」，保留了「一幅图景」，更贴英文；我的说法把「图景」省掉了，更口语，两种都对。"
+    "sum": "《Life Reimagined》描绘的中年图景远非阴郁悲观。",
+    "cmp": "原译准确；that 从句修饰 picture，far from gloomy 是「远非悲观」，不是空间上的「离阴郁很远」。"
    }
   },
   "It can be seen from the cheapest budget airlines to the world's largest carriers.": {
@@ -509,17 +496,11 @@
    "an": {
     "talk": [
      {
-      "t": "It can be seen",
-      "s": "你多半会翻成「它可以被看到」。句首的 It 在这里没法回头去找，别硬追它指什么。can be seen 是被动，中文说「都能看到」就够了。\n→ 都能看到这一点"
-     },
-     {
-      "t": "from the cheapest budget airlines to the world's largest carriers",
-      "s": "眼睛往后找 to——from … to 一对，是「从……到……」，说的是一个范围。从最便宜的到最大的，意思是不管哪一种都有。budget airlines 是「廉价航空公司」。carrier 平时是「携带者」，这里是「航空公司」。\n→ 从最便宜的廉价航空公司到世界上最大的航空公司"
+      "t": "It can be seen from the cheapest budget airlines to the world's largest carriers.",
+      "s": "can be seen 是情态动词加被动语态，表示「可以观察到」。from ... to ... 在这里表示范围从一端延伸到另一端；budget airlines 是廉价航空公司，carriers 在航空语境中指航空公司或承运人。"
      }
     ],
-    "order": "英文先说「能看到」，再说范围。中文习惯先交代范围，再说结论，所以把 from…to 提前。",
-    "sum": "从最便宜的廉价航空公司到全球最大的航空公司，都能看到这一点。",
-    "cmp": "和书上基本一样，只是书上用「世界上最大的」，我用「全球最大的」，意思相同。"
+    "sum": "原译准确；from ... to ... 在这里表示覆盖范围，不是实际移动路线。"
    }
   },
   "There are mothers pushing baby carriages, and old women with walkers.": {
@@ -533,16 +514,16 @@
    "an": {
     "talk": [
      {
-      "t": "There are mothers pushing baby carriages",
-      "s": "There are 就是「有」。pushing baby carriages 是 -ing 短语，跟在 mothers 后面补充「这些母亲在干什么」，就是「正在推着婴儿车的」。眼睛盯住 mothers，把 -ing 短语放到它前面，翻成「推着婴儿车的母亲」。这里 carriage 不是「马车、车厢」，baby carriage 就是「婴儿车」。\n→ 有推着婴儿车的母亲"
+      "t": "There are mothers pushing baby carriages,",
+      "s": "There are 表示「有」。pushing baby carriages 是现在分词短语，放在 mothers 后面说明这些母亲正在做什么：推着婴儿车。\n→ 有推着婴儿车的母亲，"
      },
      {
-      "t": "and old women with walkers",
-      "s": "你多半会翻成「和有步行者的老妇人」。放回去试，walkers 不是人。walker 在这里是「助行器」，with walkers 是「带着助行器」。\n→ 还有带着助行器的老妇人"
+      "t": "and old women with walkers.",
+      "s": "and 连接另一类人：old women。with walkers 说明她们带着助行器；walker 在这里不是「步行者」，而是帮助行动的辅助器具。\n→ 还有带着助行器的老妇人。"
      }
     ],
-    "sum": "有推着婴儿车的母亲，也有拄着助行器的老妇人。",
-    "cmp": "书上译成「推着助行器」，原文是 with walkers，并没有 push 这个动词，书上是借了前半句的「推着」；「拄着」或「扶着」更贴近老人使用助行器的样子。"
+    "sum": "有推着婴儿车的母亲，也有带着助行器的老妇人。",
+    "cmp": "原译准确；pushing 和 with 都是在补充说明人物的状态，walker 要按辅助器具理解。"
    }
   },
   "People are cheering and holding their carts in the air.": {
@@ -552,24 +533,27 @@
      "b": "in the air",
      "m": "在空中"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "People are cheering and holding their carts in the air.",
+      "s": "are cheering 和 holding 是并列的现在分词结构，共用 are，描述人们当时正在做的两件事：欢呼、举起手推车。in the air 说明手推车被举到空中。"
+     }
+    ],
+    "sum": "原译准确；两个动作由 and 连接，in the air 修饰 holding their carts。"
+   }
   },
   "Most drivers have test driven cars with automatic braking features.": {
    "ph": [],
    "an": {
     "talk": [
      {
-      "t": "Most drivers have test driven cars",
-      "s": "你多半会把 test driven 看成「被试驾的」，翻成「大多数驾驶员有被试驾的车」。放回去试，不对。have + 过去分词是现在完成时，have test driven 是「已经试驾过」，test drive 是动词，driven 是它的过去分词。\n→ 大多数驾驶员试驾过汽车"
-     },
-     {
-      "t": "with automatic braking features",
-      "s": "with 在这里是「带有」，说明前面那些车是什么样的。braking features 是「制动功能」，automatic 是「自动的」。中文把这一段放到「汽车」前面当修饰。\n→ 带有自动制动功能的"
+      "t": "Most drivers have test driven cars with automatic braking features.",
+      "s": "have test driven 是现在完成时，表示大多数司机有过试驾经历。test drive 作动词时是「试驾」；with automatic braking features 修饰 cars，说明这些车配有自动制动功能。"
      }
     ],
-    "order": "英文是「车」在前、with 短语在后，中文要把修饰成分放在名词前面：带有自动制动功能的汽车。",
-    "sum": "大多数驾驶员都试驾过带有自动制动功能的汽车。",
-    "cmp": "和书上完全一样。"
+    "sum": "原译准确；with 短语修饰 cars，说明试驾的是哪一类汽车。"
    }
   },
   "It's clear that petrol-driven engines have no future.": {
@@ -578,15 +562,15 @@
     "talk": [
      {
       "t": "It's clear that",
-      "s": "你多半会翻成「它是清楚的」。念一遍，别扭。这里 It 是形式主语，真正说的内容在 that 后面。看到 It's clear that，脑子里直接换成「很明显」，后面跟的就是明显的事。\n→ 很明显"
+      "s": "It's clear that ... 是常见句型，表示「很明显……」。that 后面接完整的内容，说明什么事情很明显。\n→ 很明显，"
      },
      {
-      "t": "petrol-driven engines have no future",
-      "s": "petrol-driven 的 driven 是过去分词，petrol-driven engines 是「由汽油驱动的发动机」，petrol 是英式说法的「汽油」。have no future 是「没有未来」。\n→ 汽油发动机没有未来"
+      "t": "petrol-driven engines have no future.",
+      "s": "petrol-driven 是复合形容词，表示「由汽油驱动的」；engines 是发动机。have no future 是比喻说法，表示「没有发展前景、终将被淘汰」，不是字面上没有未来时间。\n→ 汽油发动机已经没有发展前景。"
      }
     ],
-    "sum": "很明显，汽油发动机没有未来。",
-    "cmp": "和书上完全一样。"
+    "sum": "很明显，汽油发动机已经没有发展前景。",
+    "cmp": "原译「没有未来」保留了英文说法；中文说「没有发展前景」更清楚地表达其比喻含义。"
    }
   },
   "There's no question that self-driving vehicles could be an enormous benefit.": {
@@ -601,15 +585,15 @@
     "talk": [
      {
       "t": "There's no question that",
-      "s": "你多半会翻成「没有问题」。念一遍，问题没有？不对，question 在这里是「疑问」，no question 是「没有疑问」，后面 that 引出的内容才是不用怀疑的事。\n→ 毫无疑问"
+      "s": "There's no question that 是固定句型，表示「毫无疑问……」。that 后面接的是需要表达的事实或判断。\n→ 毫无疑问，"
      },
      {
-      "t": "self-driving vehicles could be an enormous benefit",
-      "s": "could 你可能以为是过去时。这里没有 if 条件，句子也不是在讲过去，could 是「可能会」，语气比 can 稍微客气一点，表示可能性。benefit 在这里是名词，「好处」，enormous 是「巨大」。self-driving 就是「自动驾驶」。\n→ 自动驾驶汽车可能会带来巨大的好处"
+      "t": "self-driving vehicles could be an enormous benefit.",
+      "s": "self-driving vehicles 是自动驾驶汽车；could 表示可能性或潜在能力。an enormous benefit 是「巨大的好处」，这里 benefit 作名词，强调它可能带来的积极作用。\n→ 自动驾驶汽车可能会带来巨大的好处。"
      }
     ],
-    "sum": "毫无疑问，自动驾驶汽车可能带来巨大的好处。",
-    "cmp": "书上是「会带来巨大的好处」，把 could 翻成「会」，语气比原文肯定；我保留了「可能」，更贴 could。另外书上把名词 benefit 换成动词「带来」，这个转换是对的。"
+    "sum": "毫无疑问，自动驾驶汽车可能会带来巨大的好处。",
+    "cmp": "原译准确；could 保留了「可能带来」的语气，不应改成必然会带来。"
    }
   },
   "The petrol is running out.": {
@@ -619,7 +603,16 @@
      "b": "run out",
      "m": "耗尽"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The petrol is running out.",
+      "s": "petrol 是英式英语，意思是汽油；美式英语更常用 gasoline 或 gas。run out 表示「用完、耗尽」，这里用现在进行时，强调汽油正在逐渐耗尽。run out 不直接接宾语，run out of sth. 才是「用完某物」。"
+     }
+    ],
+    "sum": "原译准确；run out 和 run out of 的用法不同，前者不直接带宾语。"
+   }
   },
   "The teacher's role is more of a coach or observer.": {
    "ph": [
@@ -628,7 +621,16 @@
      "b": "more of a",
      "m": "更多的是"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "The teacher's role is more of a coach or observer.",
+      "s": "teacher's 是所有格，role 是角色、职责。more of a ... 表示「更像是一个……、更多地扮演……」；coach 是教练或指导者，observer 是观察者。"
+     }
+    ],
+    "sum": "原译准确；more of a 表示角色倾向，不是「更多数量的一个」。"
+   }
   },
   "Horn is prohibited in the park.": {
    "ph": [
@@ -641,12 +643,11 @@
    "an": {
     "talk": [
      {
-      "t": "Horn is prohibited in the park",
-      "s": "你多半会翻成「喇叭在公园里被禁止」。is prohibited 是被动，就是「喇叭被别人怎么样了」。中文少用「被」，把动作提出来说：「禁止鸣喇叭」。这里 horn 指的是汽车喇叭，而不是乐器号角。in the park 是「在公园里」。\n→ 公园内禁止鸣喇叭"
+      "t": "Horn is prohibited in the park.",
+      "s": "is prohibited 是被动结构，表示「被禁止」。Horn 在这里指车辆喇叭或鸣笛行为；结合公园标识语境，通常理解为公园内禁止鸣笛。"
      }
     ],
-    "sum": "公园内禁止鸣喇叭。",
-    "cmp": "意思一样，书上说「禁止使用喇叭」，我说「禁止鸣喇叭」，更像平时的说法。"
+    "sum": "原译把 Horn 译成「喇叭」；结合 prohibited 的语境，中文标识通常说「禁止鸣笛」更自然。"
    }
   },
   "He owns a fleet of aircraft.": {
@@ -656,7 +657,16 @@
      "b": "a fleet of",
      "m": "一支……队"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "He owns a fleet of aircraft.",
+      "s": "owns 是 own 的第三人称单数，表示「拥有」，强调所有权。a fleet of 是「一支……队、一批……」；fleet 常用于船队、机队或车辆队伍。aircraft 的单复数形式相同。"
+     }
+    ],
+    "sum": "原译准确；a fleet of aircraft 表示一整支飞机队伍，aircraft 单复数同形。"
+   }
   },
   "He was caught trying to flee the country.": {
    "ph": [
@@ -674,17 +684,11 @@
    "an": {
     "talk": [
      {
-      "t": "He was caught",
-      "s": "was caught 是被动，就是「他被别人怎么样了」。你多半会翻成「他被抓住」，没问题。后面跟着动作，是说他被抓住的那一刻正在做什么。\n→ 他被抓住"
-     },
-     {
-      "t": "trying to flee the country",
-      "s": "trying 是 -ing 短语，说明「被抓到时正在做的事」，be caught doing 就是「做某事时被抓住」。try to flee 里的 to flee 是 to do，try to do 是「试图做某事」。flee 是「逃离」，后面直接跟 the country，不需要再加 from。\n→ 试图逃离该国"
+      "t": "He was caught trying to flee the country.",
+      "s": "was caught 是被动结构，表示「被抓住」。catch sb. doing 是「抓到某人正在做某事」；trying to flee 补充说明被抓住时的动作。flee 表示「逃离」，比 leave 更强调逃避危险或追捕。"
      }
     ],
-    "order": "英文先说被抓，再说在干什么；中文习惯先说在干什么：「试图逃离时被抓住」，所以把 trying 那一块提到前面。",
-    "sum": "他在试图逃离这个国家时被抓住了。",
-    "cmp": "和书上基本一样，我用「这个国家」，书上用「该国」，更书面一点。"
+    "sum": "原译准确；trying to flee 说明被抓住时正在进行的动作。"
    }
   },
   "It may shed light on people's desire to crack a secret.": {
@@ -699,15 +703,15 @@
     "talk": [
      {
       "t": "It may shed light on",
-      "s": "shed light on 你多半会翻成「把光洒在……上」。念一遍，奇怪。它是一个搭配，意思是「使……变得清楚」，也就是「揭示、阐明」。may 在这里是「可能」，表示推测，没有虚拟的意思。\n→ 这或许能揭示"
+      "s": "shed light on 是比喻表达，意思是「阐明、揭示、帮助理解」。may 表示可能性；这里不是字面上把灯光洒到某物上。\n→ 这或许能揭示"
      },
      {
-      "t": "people's desire to crack a secret",
-      "s": "to crack 是 to do 短语，跟在名词 desire 后面，补充说明是什么愿望：「想破解秘密的愿望」。crack 的本义是「裂开」，这里引申为「破解」。中文把 to do 短语提到名词前面。\n→ 人们想要破解秘密的欲望"
+      "t": "people's desire to crack a secret.",
+      "s": "people's desire 是「人们的渴望」；to crack a secret 说明他们渴望做什么。crack 在这里是「破解」，secret 是秘密或谜团。\n→ 人们想要破解秘密的欲望。"
      }
     ],
     "sum": "这或许能揭示人们想要破解秘密的欲望。",
-    "cmp": "和书上完全一样。"
+    "cmp": "原译准确；shed light on 是「揭示、阐明」，crack a secret 则是「破解秘密」。"
    }
   },
   "The channel needs to interview the boy.": {
@@ -715,16 +719,11 @@
    "an": {
     "talk": [
      {
-      "t": "The channel needs",
-      "s": "channel 你多半会翻成「频道」。放回去试：频道需要采访？频道不会采访人。后面的动作是采访，做这件事的是「电视台」，所以 channel 在这里是「电视台」。\n→ 电视台需要"
-     },
-     {
-      "t": "to interview the boy",
-      "s": "needs to interview 是 need to do，就是「需要做某事」，to interview 是 to do，这里不是表目的。interview 是「采访」，the boy 是「那个男孩」。\n→ 采访那个男孩"
+      "t": "The channel needs to interview the boy.",
+      "s": "channel 在这里不是水道，而是电视台或媒体频道。needs to interview 表示「需要采访」，to interview 是 need 后面的不定式；the boy 指前文提到的那个男孩。"
      }
     ],
-    "sum": "电视台需要采访那个男孩。",
-    "cmp": "和书上完全一样。"
+    "sum": "原译准确；channel 要根据 interview 的媒体语境理解为电视台或媒体频道。"
    }
   },
   "Steering through change and facing obstacles brings us face to face with our fears.": {
@@ -744,15 +743,236 @@
     "talk": [
      {
       "t": "Steering through change and facing obstacles",
-      "s": "一开头就是两个 -ing，别慌。-ing 开头当主语，就是「做某事」这件事。steer 本义是「驾驶（船、车）」，steer through change 就是「驾着自己穿过变化」，说白了是「应对变化」，书上用了「驾驭」。facing obstacles 是「面对障碍」。\n→ 驾驭变化和面对障碍"
+      "s": "句首是两个并列的动名词短语：steering through change（驾驭变化）和 facing obstacles（面对障碍）。它们共同作主语，描述人在变化和困难中的行动。\n→ 驾驭变化、面对障碍"
      },
      {
-      "t": "brings us face to face with our fears",
-      "s": "你多半会翻成「带来我们面对面和我们的恐惧」。念一遍，不通。face to face with 是一个整体，「面对面地碰上……」。动词是 brings：bring sb. face to face with sth.，让某人直面某事。注意 brings 用单数，是因为前面两件事被当成一整件事。\n→ 会让我们直面自己的恐惧"
+      "t": "brings us face to face with our fears.",
+      "s": "brings 是谓语，bring sb. face to face with sth. 表示「使某人直面某事」。face to face with our fears 不是两张脸面对面，而是直面内心的恐惧。\n→ 会让我们直面自己的恐惧。"
      }
     ],
     "sum": "驾驭变化、面对障碍，会让我们直面自己的恐惧。",
-    "cmp": "和书上基本一样，书上多了个「和」，我换成顿号，更口语。"
+    "cmp": "原译准确；句首两个 -ing 短语并列作主语，谓语 brings 用单数；face to face with 是比喻表达。"
+   }
+  },
+  "The air conditioning can adjust automatically.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The air conditioning can adjust automatically.",
+      "s": "air conditioning 是「空调、空气调节系统」，通常作不可数名词。can adjust automatically 表示它具备自动调节的能力；句子没有说具体调节温度还是风量，不必擅自补充。"
+     }
+    ],
+    "sum": "原译准确；automatically 修饰 adjust，说明调节过程不需要人工操作。"
+   }
+  },
+  "The British public loved his cheap gold earrings and his tasteless silver ornaments.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The British public loved his cheap gold earrings and his tasteless silver ornaments.",
+      "s": "the British public 指英国公众。后面并列了两类饰品：cheap gold earrings（廉价的金耳环）和 tasteless silver ornaments（俗气、没品位的银饰）。tasteless 在这里是审美评价，不是味觉上的「没有味道」。"
+     }
+    ],
+    "sum": "原译准确；tasteless 在这里是「没品位」，不是「没有味道」。"
+   }
+  },
+  "I made a summary report for the records.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "I made a summary report for the records.",
+      "s": "summary 作定语，表示「总结性的、摘要式的」；summary report 就是总结报告。for the records 表示用途是留档、供记录使用；record 在这里不是唱片，而是记录或档案。"
+     }
+    ],
+    "sum": "原译准确；for the records 交代报告的用途，是为了存档。"
+   }
+  },
+  "He gives his staff a considerable sum for tips.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "He gives his staff a considerable sum for tips.",
+      "s": "give sb. sth. 是双宾语结构：先说给谁（his staff），再说给什么（a considerable sum）。considerable sum 是一笔相当可观的钱；for tips 表示这笔钱用于小费，tip 在这里不是「提示」。"
+     }
+    ],
+    "sum": "原译「丰厚的小费」比较简洁；considerable 强调金额可观。"
+   }
+  },
+  "GNP includes loss in value of factories and equipment.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "GNP includes loss in value of factories and equipment.",
+      "s": "GNP 是 Gross National Product 的缩写，即国民生产总值。loss in value 指价值损失或价值减少；of factories and equipment 说明哪些资产发生了价值损失。不是把工厂和设备的全部价值都算进去。"
+     }
+    ],
+    "sum": "原译准确；loss in value 是一个整体，指资产价值的减少。"
+   }
+  },
+  "At first, you just eliminate the obvious distractions and explore the rest.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "At first, you just eliminate the obvious distractions and explore the rest.",
+      "s": "At first 是「起初、第一步」。eliminate 是「排除、消除」；obvious distractions 指明显会分散注意力的事物。and 连接第二个动作 explore the rest，即继续探索剩下的部分。"
+     }
+    ],
+    "sum": "原译准确；两个并列动作可以按先后顺序译成「先排除……再探索……」。"
+   }
+  },
+  "She always kept a pad by the phone.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "She always kept a pad by the phone.",
+      "s": "kept 是 keep 的过去式。keep a pad by ... 表示把便笺本放在某处，方便随时使用。pad 在这里不是垫子，而是便笺本或记事本；by 表示「在……旁边」。"
+     }
+    ],
+    "sum": "原译准确；结合电话旁的使用场景，pad 应理解为便笺本，而不是坐垫。"
+   }
+  },
+  "The seat next to him was vacant.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The seat next to him was vacant.",
+      "s": "next to him 是介词短语，修饰 seat，表示「他旁边的座位」。vacant 表示「空着的、无人使用的」，常用于座位、房间或职位。"
+     }
+    ],
+    "sum": "原译准确；vacant 描述座位没有人占用，不只是「空白」。"
+   }
+  },
+  "Exclusion of air creates a vacuum in the bottle.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Exclusion of air creates a vacuum in the bottle.",
+      "s": "exclusion 是 exclude 的名词形式，表示「排除、去除」；of air 说明被排除的是空气。整个名词短语作主语。vacuum 是「真空」，in the bottle 说明真空形成的位置。"
+     }
+    ],
+    "sum": "原译准确；Exclusion of air 是名词短语作主语，可以顺译为「排除空气这一过程」。"
+   }
+  },
+  "So many of our own past scars and dashed hopes can surface.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "So many of our own past scars and dashed hopes can surface.",
+      "s": "主语中心是 scars and hopes 两个并列名词。scars 是伤疤，dashed hopes 是破灭的希望；surface 作动词表示「浮现、显露出来」，这里是比喻过去的伤痛和失望重新出现。"
+     }
+    ],
+    "sum": "原译准确；surface 在这里是比喻用法，不是物体真的浮出水面。"
+   }
+  },
+  "They were skilled carpenters themselves.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "They were skilled carpenters themselves.",
+      "s": "skilled 修饰 carpenters，表示技术熟练的木匠。themselves 放在句尾起强调作用，表示「他们自己本身就是」，突出他们不只是雇佣木匠，也具备木工技能。"
+     }
+    ],
+    "sum": "原译准确；themselves 是强调代词，突出「他们自己」这一点。"
+   }
+  },
+  "Its picture won a photography prize.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Its picture won a photography prize.",
+      "s": "Its 指前文提到的某个人、机构或作品。picture 在这里是照片；won 是 win 的过去式，表示赢得、获得奖项。photography prize 就是摄影奖。"
+     }
+    ],
+    "sum": "原译准确；picture 在这里指照片，photography 修饰 prize，说明奖项类别。"
+   }
+  },
+  "The accompanying chart shows data for eight countries.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "The accompanying chart shows data for eight countries.",
+      "s": "accompanying 是现在分词作定语，表示「随附的、配套的」。chart 是图表；data for eight countries 表示这些数据对应八个国家，for 说明数据覆盖的对象。"
+     }
+    ],
+    "sum": "原译准确；accompanying 修饰 chart，说明图表是随正文一同提供的。"
+   }
+  },
+  "Automated grading systems are now widespread.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Automated grading systems are now widespread.",
+      "s": "automated 是 automate 的过去分词形容词，表示「自动化的」。grading systems 是评分系统；are widespread 表示「十分普遍、广泛使用」，now 强调当前状态。"
+     }
+    ],
+    "sum": "原译准确；automated 是「自动化的」，不要误解为「被自动评分的系统」。"
+   }
+  },
+  "It marked a new era in motor travel.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "It marked a new era in motor travel.",
+      "s": "marked 是 mark 的过去式，这里不是「做标记」，而是「标志着」。a new era 是「一个新时代」；motor travel 指机动车出行或汽车旅行，in 限定这个新时代所属的领域。"
+     }
+    ],
+    "sum": "原译准确；motor travel 指机动车出行，不一定只限于旅游。"
+   }
+  },
+  "Just search the name of the motel.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "Just search the name of the motel.",
+      "s": "Just 放在祈使句里有「只要、直接」的意思。search 在这里作动词，表示搜索、查找；motel 是汽车旅馆，通常方便驾车旅客住宿。"
+     }
+    ],
+    "sum": "原译准确；motel 通常指汽车旅馆，和一般 hotel 的概念略有区别。"
+   }
+  },
+  "There has obviously been a breakdown in communications between the two sides.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "There has obviously been a breakdown",
+      "s": "There has been 是 there be 句型的现在完成时，表示「已经出现了」。breakdown 在这里是「中断、失灵」，不是单纯的身体或机器故障。\n→ 显然，已经出现了中断"
+     },
+     {
+      "t": "in communications between the two sides.",
+      "s": "in communications 说明中断发生在哪方面：沟通、交流。between the two sides 指双方之间，通常是两个组织、群体或谈判方。\n→ 这种中断发生在双方沟通之中。"
+     }
+    ],
+    "sum": "显然，双方之间的沟通已经出现了中断。",
+    "cmp": "原译准确；breakdown in ... 表示某个系统或关系在某方面发生失灵、中断。"
+   }
+  },
+  "They've built a new tunnel through the mountain.": {
+   "ph": [],
+   "an": {
+    "talk": [
+     {
+      "t": "They've built a new tunnel through the mountain.",
+      "s": "They've 是 They have 的缩写，have built 是现在完成时，表示隧道已经建成。tunnel 是隧道；through 表示「穿过、贯穿」，说明隧道穿过山体，而不是沿着山脚修建。"
+     }
+    ],
+    "sum": "原译准确；through the mountain 强调隧道贯穿山体。"
    }
   }
  }
