@@ -1057,20 +1057,20 @@
     "talk": [
      {
       "t": "A variety of factors contribute to",
-      "s": "开头 A variety of 你别当成单数的「一种」，它是「各种各样的」，后面跟 factors。看 contribute 没有加 s，也印证主语是复数的 factors。contribute to 你可能翻成「对……做贡献」，但后面接的是 increase（增长），贡献出来的是增长？不通，这里是「导致、促成」。\n→ 多种因素导致了"
+      "s": "先看主干：A variety of factors 是主语，意思是「多种因素」；contribute to 是谓语。这个词组不总是「为……作贡献」——后面接 increase（增长）这样的结果时，更适合解释为「促成、导致」。\n→ 多种因素共同促成了"
      },
      {
       "t": "the long-run increase in the share of young adults",
-      "s": "这一串名词叠在一起，从 increase 抓起：increase in 是「……的增加」，增加的是什么？the share of young adults。share 你可能翻成「份额」，这里是「所占的比例」。long-run 是「长期的」。\n→ 年轻人所占比例的长期增长"
+      "s": "后面是一串名词短语，先抓中心词 increase（增长）。increase in 表示「……方面的增长」；the share 是「所占比例」，long-run 是「长期的」。所以这里说的是某个比例在长期内不断上升。\n→ 年轻人所占比例的长期增长"
      },
      {
-      "t": "living with their parents",
-      "s": "你可能把 living 当成谓语。但整句的谓语已经是 contribute 了，这里的 -ing 是在修饰前面的 young adults：什么样的年轻人？「和父母住在一起的」。live with 就是「与……同住」。\n→ 与父母同住的"
+      "t": "living with their parents.",
+      "s": "living with their parents 紧跟在 young adults 后面，补充说明是哪一类年轻人：与父母同住的年轻人。注意，整句的谓语已经是 contribute to，所以 living 不是新的谓语，而是修饰 young adults 的 -ing 短语。\n→ 与父母同住的年轻人"
      }
     ],
-    "order": "living with their parents 在英文里放在 young adults 后面，中文要把它提到「年轻人」前面当修饰语：「与父母同住的年轻人」。",
-    "sum": "多种因素共同导致了与父母同住的年轻人所占比例的长期上升。",
-    "cmp": "和书上基本一样，书上说「导致了……的长期增长」。我把 share 译成「所占比例」，书上是「比例」，意思相同。"
+    "order": "英文把 living with their parents 放在 young adults 后面补充说明；中文习惯把修饰语放到中心词前面，所以要先说「与父母同住的年轻人」，再说他们所占的比例。",
+    "sum": "多种因素共同促成了与父母同住的年轻人所占比例的长期上升。",
+    "cmp": "书上译文用「导致」，这里用「促成」，两者都能表达 contribute to；「促成」语气稍微温和一些。把 living with their parents 提前，是为了符合中文的修饰顺序。"
    }
   },
   "The scientific establishment is not very good at distributing money.": {
@@ -1123,19 +1123,19 @@
     "talk": [
      {
       "t": "Mistakes crack their self-confidence",
-      "s": "你多半会翻成「错误破坏他们的自信」。念一遍，是不是有点怪？「错误」又不是人，怎么去破坏？英文爱让东西当主语，中文更习惯说「东西让人怎么样」。crack 本义是「裂开」，自信心裂开了，就是「崩溃」。\n→ 错误会让他们的自信心崩溃"
+      "s": "先看作者怎么描述错误的影响。crack 本义是「使……裂开」，这里不是字面上的裂开，而是形容错误会损伤一个人的自信心。英文常让事物直接作主语，中文可以顺着意思说「错误会打击他们的自信心」。\n→ 错误会打击他们的自信心，"
      },
      {
-      "t": "because they attribute errors to a lack of ability",
-      "s": "看到 attribute 先别急，眼睛往后找 to——找到了：attribute A to B，把 A 归到 B 上。A 是 errors，B 是 a lack of ability。「能力的缺乏」太翻译腔，中文直接说「能力不足」。\n→ 因为他们把错误归咎于能力不足"
+      "t": "because they attribute errors to a lack of ability,",
+      "s": "because 引出原因。重点是 attribute A to B：把 A 归因于 B。A 是 errors（错误），B 是 a lack of ability（能力不足）。这里 attribute 是动词，不是名词「属性」；他们认为自己犯错，是因为能力不够。\n→ 因为他们把错误归因于能力不足，"
      },
      {
-      "t": "which they feel powerless to change",
-      "s": "which 是谁？你可能以为是 errors。放回去试试：无力改变错误？错误都犯了，改什么？换 a lack of ability：无力改变能力不足——对了。which 带的是定语从句，就是给前面的名词补一段说明。中文不用再说一遍，直接接一个短句。\n→ 觉得无力改变"
+      "t": "which they feel powerless to change.",
+      "s": "最后的 which 指向前面的 a lack of ability，而不是 errors。可以把意思补完整：他们觉得自己无力改变的，是「能力不足」这件事。feel powerless to do 表示「感到无力做某事」，to change 的对象要从前文找。\n→ 而他们又觉得这种不足是自己无力改变的。"
      }
     ],
-    "sum": "错误会让他们的自信心崩溃，因为他们把错误归咎于能力不足，觉得无力改变。",
-    "cmp": "和书上完全一样，说明这几步就是书上的思路。"
+    "sum": "错误会打击他们的自信心，因为他们把错误归因于能力不足，而他们又觉得这种不足是自己无力改变的。",
+    "cmp": "书上译文把 which 后面的对象省略了；这里补出「这种不足」，能让中文读者清楚知道他们无力改变的是什么。"
    }
   },
   "The child may feel that he owes her an apology.": {
