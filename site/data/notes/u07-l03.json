@@ -184,7 +184,25 @@
      "b": "take away",
      "m": "拿走"
     }
-   ]
+   ],
+   "an": {
+    "talk": [
+     {
+      "t": "We were assured that,",
+      "s": "先抓句子主干：We were assured that ...。assure 是「向某人保证」，were assured 是被动形式，意思是「我们得到了保证」。that 后面接的就是保证的具体内容。\n→ 我们得到保证："
+     },
+     {
+      "t": "except for low grades or a raise in family income,",
+      "s": "逗号中间这段是补充的例外条件，先把它拿开，主句就清楚多了。except for 表示「除……之外」，这里列出两种例外：low grades（成绩不理想）和 a raise in family income（家庭收入增加）。注意 raise 在这里是名词，表示「增加、增长」，不一定是职场里的「加薪」。\n→ 除成绩不理想或家庭收入增加这两种情况外，"
+     },
+     {
+      "t": "no money would be taken away.",
+      "s": "再看主句后半段：no money would be taken away。would be taken away 是被动结构，强调「钱不会被拿走」。结合 money 的语境，可以译成「不会被扣掉」或「不会被收回」，比直译成「没有钱会被拿走」自然。\n→ 不会扣掉任何钱。"
+     }
+    ],
+    "sum": "我们得到保证：除成绩不理想或家庭收入增加这两种情况外，不会扣掉任何钱。",
+    "cmp": "和书上译文意思一致。我把逗号中间的例外条件单独拎出来，并把 would be taken away 译成「扣掉」，更贴近中文里的钱款语境。"
+   }
   },
   "Universities today are in the business of education, and mine is no exception.": {
    "ph": [
