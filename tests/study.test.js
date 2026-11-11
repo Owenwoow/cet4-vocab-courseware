@@ -11,7 +11,7 @@ const studySource = read("study.js");
 const app = read("app.js");
 const courseClicks = app.slice(app.indexOf('document.addEventListener("click", e => {', app.indexOf("/* ---------- 其他点击")), app.indexOf("/* ---------- 设置页"));
 
-function harness(hash = "#/drill/due", saved = {}) {
+function harness(hash = "#/drill/due", saved = {}, options = {}) {
   const data = new Map(Object.entries(copy(saved))), plays = [], speech = [], copied = [], messages = [], listeners = new Map();
   const ids = new Map(), handlers = {};
   let generation = 0, studyDay = day;
@@ -32,6 +32,7 @@ function harness(hash = "#/drill/due", saved = {}) {
     entries: prefix => [...data].filter(([key]) => key.startsWith(prefix)).map(([key, value]) => [key.slice(prefix.length), value]),
   };
   for (const [lid, word] of [["u07-l01", "specific"], ["u08-l01", "dose"]]) {
+    if (options.seedSamples === false) break;
     const lesson = json(`data/lessons/${lid}.json`), group = lesson.groups.find(g => g.entries.some(e => e.word === word));
     const entry = group.entries.find(e => e.word === word);
     if (!data.has("srs:" + word)) data.set("srs:" + word, {...SRS.freshCard(yesterday, word),
@@ -127,6 +128,75 @@ test("快速模式跨日旧题禁止计分，回首页自动生成下一日安�
   assert.ok(h.data.get("quick:plan:" + SRS.add(day, 1)));
 });
 
+const sharedSample = process.env.CET4_BACKUP_SAMPLE || path.join(require("node:os").homedir(), "Downloads/cet4-backup-2026-11-06.json");
+test("真实备份页面调度：快背从历史基线起步，旧词单升级后只分配共享剩余时间", {skip: !fs.existsSync(sharedSample)}, async () => {
+  const raw = JSON.parse(fs.readFileSync(sharedSample, "utf8")).d, saved = Object.fromEntries(Object.entries(raw).map(([k,[v]])=>[k,v]));
+  saved["set:learningMode"] = "quick";
+  const h = harness("#/", saved, {seedSamples:false}); h.setDay("2026-11-06");
+  for (const [k,v] of h.data) if (k.startsWith("known:") && v) h.context.known.add(k.slice(6));
+  const originalCards = [...h.data].filter(([k])=>/^(srs|vocab):/.test(k));
+  await h.render();
+  assert.match(h.html, /全书已接触 282 \/ 2327/);
+  const p = h.data.get("quick:plan:2026-11-06");
+  assert.equal(p.v, 2); assert.equal(p.covered, 282); assert.equal(p.minutes, 20);
+  assert.equal(h.data.get("studyday:2026-11-06").minutes, 20);
+  assert.ok(p.items.filter(x=>x.kind==="new").length <= 6);
+  assert.ok(p.items.filter(x=>x.kind!=="new").length <= 4);
+  for (const [k,v] of originalCards) assert.deepEqual(h.data.get(k),v);
+  assert.deepEqual(h.data.get("migration:state"), saved["migration:state"]);
+});
+
+test("看过词卡未检查就切模式，预计时间保留，历史覆盖不被虚构", async () => {
+  const h = await harness("#/drill/quick", {"set:learningMode": "quick"}).render();
+  h.click({quickOpt: "-1"}); h.click({quickNext: "1"}); h.click({quickOpt: "-1"}); h.click({quickNext: "1"});
+  const word = h.word(); assert.match(h.html, /先看词卡/); h.click({quickNext: "1"});
+  const seen = h.data.get(SRS.quickCheckKey(day, word).replace("quick:check:", "quick:seen:"));
+  assert.ok(seen.cost > 0);
+  assert.equal(h.data.get(SRS.quickCheckKey(day, word)), undefined);
+  h.context.S.learningMode = "precise"; await h.navigate("#/");
+  assert.match(h.html, /只占用时间，不计精背首答/);
+  assert.match(h.html, /快背已用约 34 秒/);
+  assert.equal(h.data.get(SRS.quickCheckKey(day, word).replace("quick:check:", "quick:seen:")).cost, seen.cost);
+});
+
+test("同一今日学习路由切换模式会接续正确流程，已评分不重放", async () => {
+  const h = await harness("#/drill/due").render();
+  h.click({recallReveal: "1"}); h.click({recallRate: "independent"});
+  const before = copy(h.data.get("srs:specific"));
+  h.context.S.learningMode = "quick"; await h.navigate("#/drill/due");
+  assert.match(h.html, /quick-drill/);
+  h.context.S.learningMode = "precise"; await h.navigate("#/drill/due");
+  assert.doesNotMatch(h.html, /quick-drill/);
+  assert.deepEqual(h.data.get("srs:specific"), before);
+});
+
+test("快速来源卡即使所在群已有学习标记，也不会跳过精背词卡", async () => {
+  const lesson = json("data/lessons/u01-l01.json"), group = lesson.groups[0], saved = {};
+  for (const e of group.entries) saved["srs:" + e.word] = {...SRS.freshCard(yesterday, e.word), quickSource: "course", k: lesson.id, g: group.no, o: e.no, f: e.freq};
+  saved[`learn:${lesson.id}:g${group.no}`] = yesterday;
+  const h = harness("#/drill/learn", saved); h.context.S.learnStages = 1;
+  await h.render();
+  assert.match(h.html, /data-studied/);
+  assert.equal(h.word(), group.entries[0].word);
+  assert.equal(h.data.get("srs:" + h.word()).p, undefined);
+  for (let i = 0; i < group.entries.length * 4 && !h.html.includes('class="drill end"'); i++) {
+    if (h.html.includes('data-studied=')) h.click({studied: "1"});
+    else if (h.html.includes('data-next=')) h.click({next: "1"});
+    else {
+      const e = group.entries.find(e => e.word === h.word()); assert.ok(e);
+      const mean = h.context.esc(e.prons.flatMap(p=>p.senses).slice(0,3).map(s=>`${s.pos} ${h.context.plainMean(s.mean)}`.trim()).join("；"));
+      const opts = [...h.html.matchAll(/data-opt="(\d+)"[^>]*><kbd>\d+<\/kbd><span>(.*?)<\/span>/g)];
+      const correct = opts.find(m=>m[2]===mean); assert.ok(correct); h.click({opt:correct[1]});
+    }
+  }
+  assert.match(h.html, /class="drill end"/);
+  for (const e of group.entries) {
+    assert.equal(h.data.get("srs:"+e.word).p, day);
+    assert.equal(h.data.get("srs:"+e.word).recall.result, "");
+  }
+  assert.equal(h.data.get(`learn:${lesson.id}:g${group.no}`), yesterday);
+});
+
 test("切回精细时已达标的旧词过渡自动结束，正式证据和卡片保留", async () => {
   const h = harness("#/", {"quick:course": {v: 1, id: "course", started: yesterday, created: 1}});
   const items = ["specific", "dose"].map(word => {
@@ -150,7 +220,7 @@ test("显式取消词群清除相应快速覆盖事件，用墓碑保留删除�
   assert.equal(h.data.get("srs:specific"), 0);
 });
 
-test("快速每日检查固定且不循环，完成后退出；切回精细只抵扣工作量", async () => {
+test("快速每日检查固定且不循环；切回精细共用时间但不冒充精背完成", async () => {
   const h = await harness("#/drill/quick", {"set:learningMode": "quick"}).render();
   const plan = h.data.get("quick:plan:" + day), total = plan.items.length;
   for (let i = 0; i < total * 3 + 5 && !h.html.includes("<h1>今日计划已完成</h1>"); i++) {
@@ -162,7 +232,8 @@ test("快速每日检查固定且不循环，完成后退出；切回精细只�
   assert.equal(h.data.get("drill:quick"), 0);
   h.context.S.learningMode = "precise";
   await h.navigate("#/");
-  assert.match(h.html, /快速检查已抵扣/);
+  assert.match(h.html, /只占用时间，不计精背首答/);
+  assert.doesNotMatch(h.html, /快速检查已抵扣/);
   assert.equal(h.data.get("migration:state").mode, "normal");
   assert.equal(h.data.get("srs:specific").recall.result, "");
 });

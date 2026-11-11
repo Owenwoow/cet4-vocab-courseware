@@ -29,25 +29,24 @@ test("漏学自动补排、限量、延期；弱词优先但每天只检查一�
   assert.equal(tomorrow.items.filter(x => x.word === "word0").length, 1);
   assert.ok(!tomorrow.items.some(x => x.word === "word1"));
 });
-test("本轮正式回忆计覆盖且同日不重复；识别不改变旧词校准、等级和排期", () => {
+test("历史正式回忆计入共享覆盖且同日不重复；识别不改变旧词校准、等级和排期", () => {
   const x = card("word0"), y = card("word1");
   x.card = SRS.rateRecall(x.card, "independent", day, {id: "today"});
   y.card = SRS.rateRecall(y.card, "independent", SRS.add(day, -1), {id: "old"});
   const p = SRS.makeQuickPlan(book, [x, y], [], course, day);
-  assert.equal(p.covered, 1);
+  assert.equal(p.covered, 2);
   assert.ok(!p.items.some(x => x.word === "word0"));
   const old = SRS.upgradeCard({...SRS.newCard(day), s: 3, n: 4, v: 4, h: "gggg", r: "g"}, "srs:old", 1);
   const c = SRS.rateSkill(old, "recognition", "f", day, {id: "quick:check"});
   for (const key of ["a", "d", "s", "r", "n", "v", "h", "recall", "life"]) assert.deepEqual(c[key], old[key]);
   assert.equal(SRS.needsCalibration(c), true);
 });
-test("切回精细时快速检查只抵扣任务量，不能冒充正式首答", () => {
+test("快速检查不按张数抵扣精背任务，正式首答必须真实存在", () => {
   const cards = book.slice(0, 10).map(x => card(x.word)), p = SRS.makeDailyPlan(cards, day, {cap: 10, minutes: 20});
   const s = SRS.dailyStatus(p, cards, {}, {quickWords: ["word0", "word1", "other"]});
-  assert.equal(s.completed, 3);
-  assert.equal(s.quickCredit, 3);
+  assert.equal(s.completed, 0);
   assert.equal(s.rows.filter(x => x.record.first).length, 0);
-  assert.equal(s.rows.find(x => x.word === "word0").waived, true);
+  assert.equal(s.rows.find(x => x.word === "word0").done, false);
 });
 test("真实全书模拟：45 天与 30 天足够预算时覆盖全部，结束自动维护", () => {
   const source = JSON.parse(fs.readFileSync(path.join(__dirname, "../site/data/book.json"), "utf8"));

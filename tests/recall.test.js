@@ -2,6 +2,15 @@
 const test = require("node:test"), assert = require("node:assert/strict");
 const S = require("../site/srs.js"), R = require("../site/recall.js"), B = require("../site/backup.js");
 const day = "2026-10-28", fresh = () => S.freshCard("2026-10-27", "test");
+
+test("快背已覆盖词群的精背断点可以恢复，完成精背后不复活断点", () => {
+  const c = {...fresh(), quickSource: "course", k: "u01-l01", g: 1};
+  const progress = {d: day, g: "u01-l01:g1", st: {word: {seen: 1}}};
+  const doc = {"learn:u01-l01:g1": [day, 1], "srs:word": [c, 1]};
+  assert.deepEqual(R.validProgress(progress, doc, day), progress);
+  doc["srs:word"][0] = {...c, p: day};
+  assert.equal(R.validProgress(progress, doc, day), 0);
+});
 const items = n => Array.from({length: n}, (_, i) => ({word: "word" + i, card: {...fresh(), life: "life" + i}}));
 function answer(s, result) { s.current.revealed = true; return R.next(R.answer(s, result)); }
 

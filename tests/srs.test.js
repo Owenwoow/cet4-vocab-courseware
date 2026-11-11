@@ -6,6 +6,15 @@ const test = require("node:test");
 const assert = require("node:assert/strict");
 const SRS = require("../site/srs.js");
 
+test("快背新卡自动进入首次精学队列，选择识别没有改变正式间隔", () => {
+  const c = {...SRS.freshCard("2026-11-06", "quick-source"), quickSource: "course"};
+  const p = SRS.makeDailyPlan([{word: "sample", card: c}], "2026-11-06");
+  assert.equal(p.items[0].kind, "deepen");
+  assert.equal(c.d, "2026-11-07");
+  assert.equal(SRS.level(c), 0);
+  assert.equal(SRS.recalled(c), false);
+});
+
 const MON = "2026-10-05", TUE = "2026-10-06", WED = "2026-10-07", THU = "2026-10-08", FRI = "2026-10-09";
 const SAT = "2026-10-10", SUN = "2026-10-11";
 

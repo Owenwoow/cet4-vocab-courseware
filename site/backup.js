@@ -22,7 +22,7 @@ const Backup = (() => {
   const CATS = [
     {id: "known", name: "已会", prefixes: ["known:"], tomb: true},
     {id: "set", name: "设置", prefixes: ["set:"]},
-    {id: "study", name: "学习记录和复习卡", prefixes: ["learn:", "srs:", "log:", "evening:", "browse:", "drill:", "plan:", "task:", "migration:", "quick:"], tomb: true},
+    {id: "study", name: "学习记录和复习卡", prefixes: ["learn:", "srs:", "log:", "evening:", "browse:", "drill:", "plan:", "task:", "migration:", "quick:", "studyday:"], tomb: true},
     {id: "vocab", name: "生词本", prefixes: ["vocab:"], tomb: true},
     {id: "pos", name: "阅读位置", keys: ["last"], prefixes: ["lw:", "pos:"]},
     {id: "ui", name: "界面状态", keys: ["vpGeo", "peekTab", "listFold", "listHide", "sideOff", "learnPeek"]},
@@ -61,7 +61,7 @@ const Backup = (() => {
         const merged = rules ? rules.mergeStudyRecord(k, l, q) : !l || newer(q, l) ? q : l;
         if (!l || !same(l, merged)) out.push([k, merged]);
       }
-      else out.push([k, [p[0] && (/^(plan|task|quick):/.test(k) || p[0].quickSource) ? {...p[0], reset: now} : p[0], now]]); // 显式覆盖新任务记录时开启新恢复批次，旧云端词单不能反盖
+      else out.push([k, [p[0] && (/^(plan|task|quick|studyday):/.test(k) || p[0].quickSource) ? {...p[0], reset: now} : p[0], now]]); // 显式覆盖新任务记录时开启新恢复批次，旧云端词单不能反盖
     }
     if (mode === "overwrite") for (const [k, l] of Object.entries(localDoc)) {
       if (k in fileDoc) continue;
@@ -103,7 +103,8 @@ const Backup = (() => {
     "plan:<日期>": "当日固定推荐词单：items 含单词、生命周期和任务类别；budget 含张数、预计用时及补测预留，credited 为升级前当日已做量；reset 为显式覆盖恢复批次",
     "task:<日期>:<生命周期>": "同一词当天的首次回忆与补测，按生命周期去重；不覆盖首次评分，不重新推进 SRS",
     "migration:state": "记忆校准阶段与旧词生命周期清单，退出只改变模式，不重置卡片",
-    "quick:": "快速过书：course 首轮起点；plan:<日> 固定安排；check:<日>:<词> 首次识别结果与用时。覆盖不等于正式回忆掌握，切换保留旧词校准",
+    "quick:": "快速过书：course 起点与历史基线；plan:<日> 固定安排；check:<日>:<词> 首次识别；seen:<日>:<词> 已看卡成本。覆盖读取共享历史，不能当成精背完成",
+    "studyday:<日期>": "两种模式共用的当日预计时间预算，冻结 minutes；任务事件 cost 扣除时间，不能用快背题张数冒充精背完成",
   };
   const HOWTO = "设置页 → 数据 → 导入…，选这个文件；导入时只读 app、v、d，这段说明会被忽略。"
     + "d 里每条是 [值, 修改时间（毫秒）]；已会、学习记录和复习卡、生词本里值为 0 表示已删除（合并时靠它把删除同步过去），设置里的 0 就是 0。";

@@ -27,6 +27,7 @@ Thumbs.db
 desktop.ini
 .idea/
 .vscode/
+.playwright-cli/
 
 # ===== 原书与素材：体积大、有版权，不提交 =====
 *.pdf

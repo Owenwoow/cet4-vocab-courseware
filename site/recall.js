@@ -101,7 +101,7 @@ const Recall = (() => {
       return plan?.id === v.quick ? {...v, seen: (v.seen || []).filter(w => plan.items.some(x => x.word === w))} : 0;
     }
     if (v.g) {
-      const gs = [].concat(v.g).filter(g => !doc["learn:" + g]?.[0]);
+      const gs = [].concat(v.g).filter(g => !doc["learn:" + g]?.[0] || Object.entries(doc).some(([k, [c]]) => k.startsWith("srs:") && !doc["known:" + k.slice(4)]?.[0] && c?.quickSource && !c.p && `${c.k}:g${c.g}` === g));
       return gs.length ? {...v, g: Array.isArray(v.g) ? gs : gs[0]} : 0;
     }
     const valid = w => {
