@@ -1,8 +1,9 @@
 # 四级词汇网页课件 · 词以群记在线背单词（CET-4）
 
 [![在线使用](https://img.shields.io/badge/在线使用-cet4.owenwoow.com-c2410c)](https://cet4.owenwoow.com/)
-![词汇量](https://img.shields.io/badge/词汇-Unit%201–10%20·%2040%20课%20·%20约%202300%20词-2563eb)
-![纯静态](https://img.shields.io/badge/纯静态-无需后端-16a34a)
+[![开源协议](https://img.shields.io/badge/开源协议-MIT-blue)](LICENSE)
+[![GitHub 仓库](https://img.shields.io/badge/GitHub-项目仓库-24292f?logo=github)](https://github.com/Owenwoow/cet4-vocab-courseware)
+[![问题反馈](https://img.shields.io/badge/问题反馈-Issues-orange)](https://github.com/Owenwoow/cet4-vocab-courseware/issues)
 
 将刘晓艳《英语四级 · 你还在背单词吗》做成了**可交互的英语四级单词网页课件**，并用 AI 补上纸质书没有的东西：思维导图、单词和例句发音、例句朗读高亮、点词查义、背诵遮挡、磨耳朵。首页是一个背词门户，按**滚动复习**排好每天要复习多少、要学哪几个词群，带巩固练习、难词本、生词本和周总结。
 
@@ -95,7 +96,11 @@ node --test "tests/*.test.js"
 
 课程数据是用 Claude Code 的子代理从书页扫描图抽取的，每课都经过 `pipeline/validate.py` 校验（词条序号、词群编号、例句词组位置等）才会上线。
 
-## 声明
+## 开源协议与免责声明
 
-- 课文内容基于刘晓艳《英语四级 · 你还在背单词吗》构建改造；本项目是个人学习用的非官方课件，不得商用。如有侵权请提 Issue，会及时处理
-- 例句逐词释义、词组讲解、词根记忆法、发音均为 AI 生成，可能有错，页面上都标了「补充」
+本项目的原创代码采用 [MIT 协议](LICENSE)，允许依照协议使用、修改和分发，包括商业用途。该协议仅适用于项目贡献者有权许可的原创代码，不授予第三方教材、例句或其他第三方内容的使用权；使用这些内容须自行取得相应权利人的许可。
+
+- 课程内容基于刘晓艳《英语四级 · 你还在背单词吗》整理。本项目是个人学习用的非官方课件，教材内容的权利归相关权利人所有。请勿未经授权复制、传播或用于商业用途。
+- 例句逐词释义、词组与语法讲解、词根记忆法等书外内容由 AI 生成，页面标有「补充」；发音也由 AI 生成。内容可能存在错误或遗漏，请结合原书及可靠资料核对。
+- 项目按现状提供，不保证内容、发音或功能的准确性、完整性和持续可用性；学习与使用过程中请自行判断，并妥善备份学习记录。
+- 如果你是相关权利人，认为项目内容侵犯了你的权益，请通过 [Issue](https://github.com/Owenwoow/cet4-vocab-courseware/issues) 联系并提供相关信息；我们会核实并及时处理，包括必要时删除相关内容。
