@@ -1,0 +1,130 @@
+{
+  "entries": {
+    "3": [
+      {
+        "en": "The firefighters used breathing apparatus in the smoke.",
+        "zh": "消防员在烟雾中使用了呼吸器。",
+        "key": [
+          "apparatus"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "en": "I fixed the date for our next meeting.",
+        "zh": "我确定了下次会议的日期。",
+        "key": [
+          "fixed"
+        ]
+      }
+    ],
+    "6": [
+      {
+        "en": "We furnished the room with a desk and two chairs.",
+        "zh": "我们给房间配了一张桌子和两把椅子。",
+        "key": [
+          "furnished"
+        ]
+      }
+    ],
+    "9": [
+      {
+        "en": "We concluded that the file was missing.",
+        "zh": "我们得出结论，文件不见了。",
+        "key": [
+          "concluded"
+        ]
+      }
+    ],
+    "14": [
+      {
+        "en": "The app removes duplicate photos to eliminate clutter.",
+        "zh": "这个应用会删除重复照片，清理杂乱文件。",
+        "key": [
+          "eliminate"
+        ]
+      }
+    ],
+    "16": [
+      {
+        "en": "This rule is no exception.",
+        "zh": "这条规则也不例外。",
+        "key": [
+          "exception"
+        ]
+      }
+    ],
+    "19": [
+      {
+        "en": "The photo gives a vivid picture of the storm.",
+        "zh": "这张照片生动地展现了这场风暴。",
+        "key": [
+          "vivid"
+        ]
+      }
+    ],
+    "25": [
+      {
+        "en": "My mind went blank when I forgot the password.",
+        "zh": "我忘记密码时，脑子一下子空白了。",
+        "key": [
+          "blank"
+        ]
+      }
+    ],
+    "26": [
+      {
+        "en": "Is the meeting room vacant at two?",
+        "zh": "会议室两点钟空着吗？",
+        "key": [
+          "vacant"
+        ]
+      }
+    ],
+    "27": [
+      {
+        "en": "Use a vacuum to clean the carpet.",
+        "zh": "用吸尘器清洁地毯。",
+        "key": [
+          "vacuum"
+        ]
+      }
+    ],
+    "34": [
+      {
+        "en": "The children watched a cartoon after school.",
+        "zh": "孩子们放学后看了一部动画片。",
+        "key": [
+          "cartoon"
+        ]
+      }
+    ],
+    "41": [
+      {
+        "en": "The factory plans to automate the packing process.",
+        "zh": "工厂计划让包装流程自动化。",
+        "key": [
+          "automate"
+        ]
+      }
+    ],
+    "52": [
+      {
+        "en": "There was a breakdown in communication between the teams.",
+        "zh": "两个团队之间的沟通中断了。",
+        "key": [
+          "breakdown"
+        ]
+      }
+    ],
+    "56": [
+      {
+        "en": "She steered the project back on schedule.",
+        "zh": "她把项目重新引回正轨，确保按时进行。",
+        "key": [
+          "steered"
+        ]
+      }
+    ]
+  }
+}

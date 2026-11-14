@@ -2,10 +2,10 @@
   "entries": {
     "2": [
       {
-        "en": "A phone has millions of tiny cells.",
-        "zh": "手机里有数百万个微小的电池单元。",
+        "en": "A plant cell has a wall that helps it keep its shape.",
+        "zh": "植物细胞有细胞壁，帮助它保持形状。",
         "key": [
-          "cells"
+          "cell"
         ]
       }
     ],
@@ -20,8 +20,8 @@
     ],
     "6": [
       {
-        "en": "This button doesn't function.",
-        "zh": "这个按钮不起作用。",
+        "en": "This function adds two numbers.",
+        "zh": "这个函数把两个数字相加。",
         "key": [
           "function"
         ]
@@ -83,8 +83,8 @@
     ],
     "24": [
       {
-        "en": "She reads on her tablet before bed.",
-        "zh": "她睡前用平板电脑看书。",
+        "en": "She took a tablet with a glass of water.",
+        "zh": "她喝了一杯水，服下了一片药。",
         "key": [
           "tablet"
         ]
@@ -113,19 +113,19 @@
         "en": "The city needs a remedy for traffic jams.",
         "zh": "这座城市需要解决交通拥堵的办法。",
         "key": [
-          "a remedy"
+          "remedy for"
         ]
       },
       {
-        "en": "A home remedy may ease a cough.",
-        "zh": "家庭疗法或许能缓解咳嗽。",
+        "en": "a home remedy for a cough",
+        "zh": "治咳嗽的家庭疗法",
         "key": [
-          "A home remedy"
+          "home remedy"
         ]
       },
       {
         "en": "The update remedies the problem.",
-        "zh": "这次更新解决了这个问题。",
+        "zh": "这次软件更新解决了问题。",
         "key": [
           "remedies"
         ]
@@ -151,10 +151,10 @@
     ],
     "46": [
       {
-        "en": "I object to sharing my location with that app.",
-        "zh": "我反对把自己的位置分享给那个应用。",
+        "en": "She picked up a small object.",
+        "zh": "她捡起一个小物件。",
         "key": [
-          "object to"
+          "object"
         ]
       }
     ],
@@ -178,11 +178,36 @@
     ],
     "55": [
       {
+        "en": "The alt attribute describes an image on a web page.",
+        "zh": "alt 属性会描述网页上的图像。",
+        "key": [
+          "attribute"
+        ]
+      },
+      {
         "en": "She attributes her progress to daily practice.",
         "zh": "她把自己的进步归功于每天练习。",
         "key": [
           "attributes",
           "to"
+        ]
+      }
+    ],
+    "35": [
+      {
+        "en": "I restored the files from a backup.",
+        "zh": "我从备份中恢复了文件。",
+        "key": [
+          "restored"
+        ]
+      }
+    ],
+    "36": [
+      {
+        "en": "We recovered the deleted files.",
+        "zh": "我们找回了被删除的文件。",
+        "key": [
+          "recovered"
         ]
       }
     ]

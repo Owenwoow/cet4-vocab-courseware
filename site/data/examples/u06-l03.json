@@ -1,0 +1,139 @@
+{
+  "entries": {
+    "2": [
+      {
+        "en": "The delay was due to heavy rain.",
+        "zh": "延误是大雨造成的。",
+        "key": [
+          "due to"
+        ]
+      }
+    ],
+    "8": [
+      {
+        "en": "I forgive you for forgetting my birthday.",
+        "zh": "我原谅你忘了我的生日。",
+        "key": [
+          "forgive"
+        ]
+      }
+    ],
+    "11": [
+      {
+        "en": "They accused the seller of hiding the damage.",
+        "zh": "他们指责卖家隐瞒了损坏情况。",
+        "key": [
+          "accused"
+        ]
+      }
+    ],
+    "15": [
+      {
+        "en": "I consulted the help page before changing the settings.",
+        "zh": "更改设置前，我查阅了帮助页面。",
+        "key": [
+          "consulted"
+        ]
+      }
+    ],
+    "16": [
+      {
+        "en": "Do not blame yourself for a computer error.",
+        "zh": "电脑出错了，不要责怪自己。",
+        "key": [
+          "blame"
+        ]
+      }
+    ],
+    "22": [
+      {
+        "en": "A cracked screen is a critical problem for this device.",
+        "zh": "屏幕破裂对这台设备来说是个严重问题。",
+        "key": [
+          "critical"
+        ]
+      }
+    ],
+    "23": [
+      {
+        "en": "Price is one criterion for choosing a laptop.",
+        "zh": "价格是挑选笔记本电脑的一项标准。",
+        "key": [
+          "criterion"
+        ]
+      }
+    ],
+    "27": [
+      {
+        "en": "The problem may persist until we update the software.",
+        "zh": "这个问题可能会一直存在，直到我们更新软件。",
+        "key": [
+          "persist"
+        ]
+      }
+    ],
+    "29": [
+      {
+        "en": "The price comprises the phone and its charger.",
+        "zh": "价格包括手机和充电器。",
+        "key": [
+          "comprises"
+        ]
+      }
+    ],
+    "31": [
+      {
+        "en": "The small enterprise sells handmade bags online.",
+        "zh": "这家小企业在网上销售手工包。",
+        "key": [
+          "enterprise"
+        ]
+      }
+    ],
+    "39": [
+      {
+        "en": "The app helps you harness the power of your phone camera.",
+        "zh": "这个应用能帮你充分利用手机相机的功能。",
+        "key": [
+          "harness"
+        ]
+      }
+    ],
+    "46": [
+      {
+        "en": "A power cut caused a crisis at the hospital.",
+        "zh": "停电让医院陷入危机。",
+        "key": [
+          "crisis"
+        ]
+      }
+    ],
+    "50": [
+      {
+        "en": "Rice is an important commodity in many countries.",
+        "zh": "大米是许多国家的重要商品。",
+        "key": [
+          "commodity"
+        ]
+      }
+    ],
+    "61": [
+      {
+        "en": "Ticket sales are the museum's main source of revenue.",
+        "zh": "门票收入是这家博物馆的主要收入来源。",
+        "key": [
+          "revenue"
+        ]
+      }
+    ],
+    "74": [
+      {
+        "en": "Do not let an app manipulate you into buying things.",
+        "zh": "不要让应用操纵你去买东西。",
+        "key": [
+          "manipulate"
+        ]
+      }
+    ]
+  }
+}

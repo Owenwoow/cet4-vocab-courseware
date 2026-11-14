@@ -1,0 +1,130 @@
+{
+  "entries": {
+    "3": [
+      {
+        "en": "Rainy days sometimes depress me.",
+        "zh": "下雨天有时会让我心情低落。",
+        "key": [
+          "depress"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "en": "Do not repress your feelings; talk to someone you trust.",
+        "zh": "别压抑自己的感受，和信任的人聊聊。",
+        "key": [
+          "repress"
+        ]
+      }
+    ],
+    "12": [
+      {
+        "en": "Please express your needs clearly.",
+        "zh": "请清楚地表达你的需求。",
+        "key": [
+          "express"
+        ]
+      }
+    ],
+    "20": [
+      {
+        "en": "Everyone deserves justice, no matter who they are.",
+        "zh": "无论是谁，每个人都应得到公正对待。",
+        "key": [
+          "justice"
+        ]
+      }
+    ],
+    "27": [
+      {
+        "en": "The law protects workers from discrimination.",
+        "zh": "法律保护劳动者免受歧视。",
+        "key": [
+          "discrimination"
+        ]
+      }
+    ],
+    "28": [
+      {
+        "en": "The contract obliges the company to repair the device.",
+        "zh": "合同要求公司维修这台设备。",
+        "key": [
+          "obliges"
+        ]
+      }
+    ],
+    "31": [
+      {
+        "en": "The shop does not charge for delivery.",
+        "zh": "这家店不收配送费。",
+        "key": [
+          "charge"
+        ]
+      }
+    ],
+    "34": [
+      {
+        "en": "New legislation protects your personal data.",
+        "zh": "新法规保护你的个人数据。",
+        "key": [
+          "legislation"
+        ]
+      }
+    ],
+    "41": [
+      {
+        "en": "Your ticket is valid until the end of the month.",
+        "zh": "你的车票在本月底前有效。",
+        "key": [
+          "valid"
+        ]
+      }
+    ],
+    "47": [
+      {
+        "en": "Check the sender before you verify the payment request.",
+        "zh": "验证付款请求前先检查发件人。",
+        "key": [
+          "verify"
+        ]
+      }
+    ],
+    "49": [
+      {
+        "en": "A bystander called for help after the accident.",
+        "zh": "事故发生后，一位旁观者呼救。",
+        "key": [
+          "bystander"
+        ]
+      }
+    ],
+    "51": [
+      {
+        "en": "The scam victim reported the message to the bank.",
+        "zh": "这位诈骗受害者把消息报告给了银行。",
+        "key": [
+          "victim"
+        ]
+      }
+    ],
+    "65": [
+      {
+        "en": "A small discount is an incentive to shop today.",
+        "zh": "小折扣会促使顾客今天购物。",
+        "key": [
+          "incentive"
+        ]
+      }
+    ],
+    "67": [
+      {
+        "en": "The rule has a loophole that lets people avoid the fee.",
+        "zh": "这条规定有个漏洞，让人能避开这笔费用。",
+        "key": [
+          "loophole"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "entries": {
+    "2": [
+      {
+        "en": "The new bus route benefits people in this area.",
+        "zh": "新公交线路让这一带的居民受益。",
+        "key": [
+          "benefits"
+        ]
+      }
+    ],
+    "6": [
+      {
+        "en": "There is no extra fee for online payments.",
+        "zh": "网上付款不收额外费用。",
+        "key": [
+          "fee"
+        ]
+      }
+    ],
+    "15": [
+      {
+        "en": "It was awkward to ask for my money back.",
+        "zh": "开口要回我的钱有些尴尬。",
+        "key": [
+          "awkward"
+        ]
+      }
+    ],
+    "16": [
+      {
+        "en": "The view from the top of the tower filled us with awe.",
+        "zh": "塔顶的景色让我们心生敬畏。",
+        "key": [
+          "awe"
+        ]
+      }
+    ],
+    "18": [
+      {
+        "en": "The shop sells computers at retail prices.",
+        "zh": "这家商店按零售价出售电脑。",
+        "key": [
+          "retail"
+        ]
+      }
+    ],
+    "19": [
+      {
+        "en": "The app tailors the lessons to your level.",
+        "zh": "这个应用会根据你的水平定制课程。",
+        "key": [
+          "tailors"
+        ]
+      }
+    ],
+    "23": [
+      {
+        "en": "A language barrier can make travel difficult.",
+        "zh": "语言障碍会让旅行变得困难。",
+        "key": [
+          "barrier"
+        ]
+      }
+    ],
+    "26": [
+      {
+        "en": "I found a bargain on a used laptop.",
+        "zh": "我淘到了一台便宜的二手笔记本电脑。",
+        "key": [
+          "bargain"
+        ]
+      }
+    ],
+    "29": [
+      {
+        "en": "This free plan is deficient in storage space.",
+        "zh": "这个免费套餐的存储空间不足。",
+        "key": [
+          "deficient"
+        ]
+      }
+    ],
+    "31": [
+      {
+        "en": "She is proficient in three programming languages.",
+        "zh": "她精通三种编程语言。",
+        "key": [
+          "proficient"
+        ]
+      }
+    ],
+    "34": [
+      {
+        "en": "The guide gives only a superficial overview of the topic.",
+        "zh": "这份指南只对主题作了表面的概述。",
+        "key": [
+          "superficial"
+        ]
+      }
+    ],
+    "58": [
+      {
+        "en": "From my perspective, the update is easy to use.",
+        "zh": "在我看来，这次更新很容易使用。",
+        "key": [
+          "perspective"
+        ]
+      }
+    ],
+    "60": [
+      {
+        "en": "The statement gives the meeting time as three o'clock.",
+        "zh": "声明中说会议时间是三点。",
+        "key": [
+          "statement"
+        ]
+      }
+    ],
+    "62": [
+      {
+        "en": "I had only a vague notion of how the device worked.",
+        "zh": "我对这台设备的工作原理只有模糊的概念。",
+        "key": [
+          "notion"
+        ]
+      }
+    ],
+    "68": [
+      {
+        "en": "She bought an antique radio at the market.",
+        "zh": "她在集市上买了一台古董收音机。",
+        "key": [
+          "antique"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "entries": {
+    "4": [
+      {
+        "en": "The teacher gave us quick feedback on our essays.",
+        "zh": "老师很快就给了我们作文反馈。",
+        "key": [
+          "feedback"
+        ]
+      }
+    ],
+    "5": [
+      {
+        "en": "The app is still in an early phase of testing.",
+        "zh": "这个应用仍处于早期测试阶段。",
+        "key": [
+          "phase"
+        ]
+      }
+    ],
+    "8": [
+      {
+        "en": "Running in the heat can exhaust you quickly.",
+        "zh": "在高温下跑步会让你很快筋疲力尽。",
+        "key": [
+          "exhaust"
+        ]
+      }
+    ],
+    "10": [
+      {
+        "en": "Is it feasible to finish the work by Friday?",
+        "zh": "星期五前完成这项工作可行吗？",
+        "key": [
+          "feasible"
+        ]
+      }
+    ],
+    "11": [
+      {
+        "en": "This phone has a useful feature: it can scan documents.",
+        "zh": "这款手机有个实用功能：可以扫描文件。",
+        "key": [
+          "feature"
+        ]
+      }
+    ],
+    "15": [
+      {
+        "en": "Save the file before you close the program.",
+        "zh": "关闭程序前先保存文件。",
+        "key": [
+          "file"
+        ]
+      }
+    ],
+    "16": [
+      {
+        "en": "Please attach the document to your reply.",
+        "zh": "请在回复中附上这份文件。",
+        "key": [
+          "document"
+        ]
+      }
+    ],
+    "18": [
+      {
+        "en": "This shop has a wide range of phone cases.",
+        "zh": "这家店有各种各样的手机壳。",
+        "key": [
+          "range"
+        ]
+      }
+    ],
+    "23": [
+      {
+        "en": "A missed payment can have serious consequences.",
+        "zh": "漏缴一次款可能会造成严重后果。",
+        "key": [
+          "consequences"
+        ]
+      }
+    ],
+    "31": [
+      {
+        "en": "The sky gradually turned dark.",
+        "zh": "天空渐渐暗了下来。",
+        "key": [
+          "gradually"
+        ]
+      }
+    ],
+    "33": [
+      {
+        "en": "I am a frequent visitor to this website.",
+        "zh": "我经常访问这个网站。",
+        "key": [
+          "frequent"
+        ]
+      }
+    ],
+    "42": [
+      {
+        "en": "She spoke in a calm and friendly manner.",
+        "zh": "她说话的态度平静而友好。",
+        "key": [
+          "manner"
+        ]
+      }
+    ],
+    "47": [
+      {
+        "en": "Jeans are not appropriate for this formal event.",
+        "zh": "牛仔裤不适合出席这场正式活动。",
+        "key": [
+          "appropriate"
+        ]
+      }
+    ],
+    "52": [
+      {
+        "en": "This old camera is worth repairing.",
+        "zh": "这台旧相机值得修理。",
+        "key": [
+          "worth repairing"
+        ]
+      }
+    ],
+    "57": [
+      {
+        "en": "I can handle the setup if you bring the cables.",
+        "zh": "如果你带线缆来，我可以负责安装。",
+        "key": [
+          "handle"
+        ]
+      }
+    ],
+    "64": [
+      {
+        "en": "The update addresses a security problem.",
+        "zh": "这次更新解决了一个安全问题。",
+        "key": [
+          "addresses"
+        ]
+      }
+    ]
+  }
+}

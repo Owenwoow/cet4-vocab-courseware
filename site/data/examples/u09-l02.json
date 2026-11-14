@@ -1,0 +1,139 @@
+{
+  "entries": {
+    "1": [
+      {
+        "en": "It was considerate of you to check before calling.",
+        "zh": "你打电话前先确认一下，真是考虑周到。",
+        "key": [
+          "considerate"
+        ]
+      }
+    ],
+    "6": [
+      {
+        "en": "To be frank, I do not like the new layout.",
+        "zh": "坦白说，我不喜欢新的版面。",
+        "key": [
+          "frank"
+        ]
+      }
+    ],
+    "8": [
+      {
+        "en": "The game raises a moral question about fairness.",
+        "zh": "这个游戏提出了一个关于公平的道德问题。",
+        "key": [
+          "moral"
+        ]
+      }
+    ],
+    "13": [
+      {
+        "en": "The company made a radical change to its privacy policy.",
+        "zh": "公司对隐私政策作了彻底的改变。",
+        "key": [
+          "radical"
+        ]
+      }
+    ],
+    "17": [
+      {
+        "en": "Sharing the photo without permission would violate her privacy.",
+        "zh": "未经允许分享照片会侵犯她的隐私。",
+        "key": [
+          "violate"
+        ]
+      }
+    ],
+    "21": [
+      {
+        "en": "Send the files via email.",
+        "zh": "通过电子邮件发送这些文件。",
+        "key": [
+          "via"
+        ]
+      }
+    ],
+    "22": [
+      {
+        "en": "The app lets you set a limit on screen time.",
+        "zh": "这个应用可以让你设定屏幕使用时间的上限。",
+        "key": [
+          "limit"
+        ]
+      }
+    ],
+    "24": [
+      {
+        "en": "Can you define this word in simple English?",
+        "zh": "你能用简单的英语解释这个词吗？",
+        "key": [
+          "define"
+        ]
+      }
+    ],
+    "27": [
+      {
+        "en": "We refined the search to show results from this year.",
+        "zh": "我们优化了搜索条件，只显示今年的结果。",
+        "key": [
+          "refined"
+        ]
+      }
+    ],
+    "28": [
+      {
+        "en": "The library fined me for returning the book late.",
+        "zh": "我还书晚了，图书馆罚了我款。",
+        "key": [
+          "fined"
+        ]
+      }
+    ],
+    "33": [
+      {
+        "en": "I confess that I forgot to save the file.",
+        "zh": "我承认我忘记保存文件了。",
+        "key": [
+          "confess"
+        ]
+      }
+    ],
+    "41": [
+      {
+        "en": "Could you clarify which version I should install?",
+        "zh": "你能说明一下我应该安装哪个版本吗？",
+        "key": [
+          "clarify"
+        ]
+      }
+    ],
+    "42": [
+      {
+        "en": "The email confirmed that my booking was complete.",
+        "zh": "邮件确认了我的预订已经完成。",
+        "key": [
+          "confirmed"
+        ]
+      }
+    ],
+    "49": [
+      {
+        "en": "Please do not whisper during the film.",
+        "zh": "看电影时请不要低声说话。",
+        "key": [
+          "whisper"
+        ]
+      }
+    ],
+    "57": [
+      {
+        "en": "I am jealous of your free time.",
+        "zh": "我真羡慕你有这么多空闲时间。",
+        "key": [
+          "jealous"
+        ]
+      }
+    ]
+  }
+}

@@ -8,6 +8,7 @@ import re
 import sys
 
 from config import DATA, LESSONS, ROOT
+from gloss_words import lemma_candidates
 
 VIDEO_SOURCES = ROOT / "pipeline" / "video_sources.json"
 
@@ -151,6 +152,18 @@ def validate(path):
 
 
 WORD_CH = re.compile(r"[A-Za-z']")
+EXAMPLE_IRREGULAR = {"overcame": "overcome", "undertook": "undertake"}
+
+
+def example_target_in(word, key):
+    if phrase_in(key, word):
+        return True
+    for token in re.findall(r"[a-z']+", key.lower()):
+        if word in lemma_candidates(token) or EXAMPLE_IRREGULAR.get(token) == word:
+            return True
+        if re.search(r"([b-df-hj-np-tv-z])\1(?:ed|ing)$", token) and re.sub(r"([b-df-hj-np-tv-z])\1(?:ed|ing)$", r"\1", token) == word:
+            return True
+    return False
 
 
 def check_examples(r, data):
@@ -175,7 +188,7 @@ def check_examples(r, data):
         if not isinstance(examples, list) or not 1 <= len(examples) <= 3:
             r.err(where, "每个词条应有 1–3 条补充用法")
             continue
-        seen = {entry.get("ex", {}).get("en", "").strip().casefold()}
+        seen = {(entry.get("ex") or {}).get("en", "").strip().casefold()}
         for item in examples:
             if not isinstance(item, dict):
                 r.err(where, "用法应为对象")
@@ -193,6 +206,8 @@ def check_examples(r, data):
                 not isinstance(k, str) or not k.strip() or not phrase_in(en, k) for k in keys
             ):
                 r.err(where, f"重点词空缺或不在例句里：{en}")
+            elif not any(example_target_in(entry["word"].lower(), k) for k in keys):
+                r.err(where, f"未高亮目标词或其词形：{en}")
 
 
 def find_at_boundary(s, t, start=0):

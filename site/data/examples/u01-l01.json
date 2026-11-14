@@ -1,0 +1,52 @@
+{
+  "entries": {
+    "2": [
+      {"en": "The novel introduces readers to a universe of strange creatures.", "zh": "这部小说把读者带入一个充满奇异生物的宇宙。", "key": ["universe"]}
+    ],
+    "5": [
+      {"en": "The nurses formed a union to ask for safer working conditions.", "zh": "护士们组成了工会，要求改善工作安全条件。", "key": ["formed a union"]}
+    ],
+    "6": [
+      {"en": "The city is home to a diverse mix of people and languages.", "zh": "这座城市汇聚了来自不同背景的人，也有多种语言。", "key": ["diverse mix"]}
+    ],
+    "7": [
+      {"en": "Please convert the photo to a smaller file before you send it.", "zh": "请先把照片转换成较小的文件再发送。", "key": ["convert the photo"]}
+    ],
+    "8": [
+      {"en": "Turn the key in reverse to open the lock.", "zh": "把钥匙反方向转动来开锁。", "key": ["in reverse"]}
+    ],
+    "11": [
+      {"en": "The new rule caused controversy among parents and teachers.", "zh": "这项新规定在家长和老师中引起了争议。", "key": ["caused controversy"]}
+    ],
+    "13": [
+      {"en": "In contrast to the old phone, this one has a much brighter screen.", "zh": "与旧手机相比，这款手机的屏幕亮得多。", "key": ["In contrast to"]}
+    ],
+    "22": [
+      {"en": "The job involves answering customer emails.", "zh": "这份工作包括回复客户邮件。", "key": ["involves"]}
+    ],
+    "25": [
+      {"en": "The road is closed because of ongoing repairs.", "zh": "道路因维修仍在进行而封闭。", "key": ["ongoing repairs"]}
+    ],
+    "29": [
+      {"en": "A little sunlight can enhance the color of this room.", "zh": "一点阳光就能让这个房间的颜色更加鲜明。", "key": ["enhance"]}
+    ],
+    "36": [
+      {"en": "We checked the roof after the storm to make sure it was watertight.", "zh": "暴风雨过后，我们检查屋顶，确保它不漏水。", "key": ["watertight"]}
+    ],
+    "42": [
+      {"en": "The formation of ice made the path too slippery to use.", "zh": "结冰使这条小路变得太滑，无法通行。", "key": ["formation of ice"]}
+    ],
+    "45": [
+      {"en": "All visitors must conform to the safety rules in the lab.", "zh": "所有访客都必须遵守实验室的安全规定。", "key": ["conform to"]}
+    ],
+    "46": [
+      {"en": "Drivers must comply with the speed limit on this road.", "zh": "司机必须遵守这条路的限速规定。", "key": ["comply with"]}
+    ],
+    "47": [
+      {"en": "The team met to formulate a plan for the school trip.", "zh": "小组开会制定学校出游计划。", "key": ["formulate a plan"]}
+    ],
+    "53": [
+      {"en": "The bank will notify you by text when your card is ready.", "zh": "银行卡办好后，银行会发短信通知你。", "key": ["notify you"]}
+    ]
+  }
+}

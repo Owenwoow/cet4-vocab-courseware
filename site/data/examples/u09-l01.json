@@ -1,0 +1,139 @@
+{
+  "entries": {
+    "1": [
+      {
+        "en": "I packed my laptop and charger for the trip.",
+        "zh": "我把笔记本电脑和充电器装进行李，准备出行。",
+        "key": [
+          "packed"
+        ]
+      }
+    ],
+    "3": [
+      {
+        "en": "Your parcel will arrive by Friday.",
+        "zh": "你的包裹会在星期五前送到。",
+        "key": [
+          "parcel"
+        ]
+      }
+    ],
+    "8": [
+      {
+        "en": "A screen lock can mask your messages from other people.",
+        "zh": "屏幕锁可以防止别人看到你的消息。",
+        "key": [
+          "mask"
+        ]
+      }
+    ],
+    "11": [
+      {
+        "en": "The app will issue a warning if your password is weak.",
+        "zh": "如果密码太弱，这个应用会发出警告。",
+        "key": [
+          "issue"
+        ]
+      }
+    ],
+    "14": [
+      {
+        "en": "I cannot afford a new phone this month.",
+        "zh": "我这个月买不起新手机。",
+        "key": [
+          "afford"
+        ]
+      }
+    ],
+    "18": [
+      {
+        "en": "The cut should knit together in a few days.",
+        "zh": "伤口几天后应该就会愈合。",
+        "key": [
+          "knit"
+        ]
+      }
+    ],
+    "23": [
+      {
+        "en": "Please tidy your desk before you leave.",
+        "zh": "离开前请整理好桌面。",
+        "key": [
+          "tidy"
+        ]
+      }
+    ],
+    "24": [
+      {
+        "en": "Beans are a good source of fibre.",
+        "zh": "豆类是很好的膳食纤维来源。",
+        "key": [
+          "fibre"
+        ]
+      }
+    ],
+    "28": [
+      {
+        "en": "Sorry to be a nuisance, but could you lower the music?",
+        "zh": "抱歉打扰一下，你能把音乐声调低些吗？",
+        "key": [
+          "a nuisance"
+        ]
+      }
+    ],
+    "31": [
+      {
+        "en": "The company wants to improve its image online.",
+        "zh": "这家公司想改善自己在网上的形象。",
+        "key": [
+          "image"
+        ]
+      }
+    ],
+    "33": [
+      {
+        "en": "Please reply to this message by noon.",
+        "zh": "请在中午前回复这条消息。",
+        "key": [
+          "reply"
+        ]
+      }
+    ],
+    "34": [
+      {
+        "en": "The sensor relays your heart rate to the phone.",
+        "zh": "传感器会把你的心率传送到手机上。",
+        "key": [
+          "relays"
+        ]
+      }
+    ],
+    "37": [
+      {
+        "en": "You may be liable for the repair costs.",
+        "zh": "你可能需要承担维修费用。",
+        "key": [
+          "liable for"
+        ]
+      }
+    ],
+    "38": [
+      {
+        "en": "You can pay by credit card or phone.",
+        "zh": "你可以用信用卡或手机付款。",
+        "key": [
+          "credit card"
+        ]
+      }
+    ],
+    "46": [
+      {
+        "en": "There was a long queue at the coffee shop.",
+        "zh": "咖啡店排起了长队。",
+        "key": [
+          "queue"
+        ]
+      }
+    ]
+  }
+}

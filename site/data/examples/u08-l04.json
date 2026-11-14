@@ -1,0 +1,139 @@
+{
+  "entries": {
+    "1": [
+      {
+        "en": "The town plans to tap solar energy for local homes.",
+        "zh": "这个镇计划利用太阳能为当地家庭供电。",
+        "key": [
+          "tap"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "en": "Her enthusiasm made the whole team want to join.",
+        "zh": "她的热情让整个团队都想加入。",
+        "key": [
+          "enthusiasm"
+        ]
+      }
+    ],
+    "5": [
+      {
+        "en": "He is keen to learn how to edit videos.",
+        "zh": "他很想学习如何剪辑视频。",
+        "key": [
+          "keen to"
+        ]
+      }
+    ],
+    "8": [
+      {
+        "en": "Neighbors joined the battle against food waste.",
+        "zh": "邻居们加入了减少食物浪费的行动。",
+        "key": [
+          "battle against"
+        ]
+      }
+    ],
+    "13": [
+      {
+        "en": "The new app conflicts with an older audio driver.",
+        "zh": "新应用和较旧的音频驱动程序不兼容。",
+        "key": [
+          "conflicts"
+        ]
+      }
+    ],
+    "22": [
+      {
+        "en": "The two candidates had a public debate online.",
+        "zh": "两位候选人在网上进行了公开辩论。",
+        "key": [
+          "debate"
+        ]
+      }
+    ],
+    "25": [
+      {
+        "en": "Her message gave me a hint about the surprise.",
+        "zh": "她的消息让我对这个惊喜有了一点提示。",
+        "key": [
+          "hint"
+        ]
+      }
+    ],
+    "33": [
+      {
+        "en": "A clear chart can convey the main idea quickly.",
+        "zh": "清晰的图表能快速传达核心意思。",
+        "key": [
+          "convey"
+        ]
+      }
+    ],
+    "34": [
+      {
+        "en": "Please complete this short survey about the new website.",
+        "zh": "请填写这份关于新网站的简短调查问卷。",
+        "key": [
+          "survey"
+        ]
+      }
+    ],
+    "36": [
+      {
+        "en": "The team is investigating why the server stopped.",
+        "zh": "团队正在调查服务器停止运行的原因。",
+        "key": [
+          "investigating"
+        ]
+      }
+    ],
+    "38": [
+      {
+        "en": "The app stores your data on your own device.",
+        "zh": "这个应用把你的数据保存在自己的设备上。",
+        "key": [
+          "data"
+        ]
+      }
+    ],
+    "40": [
+      {
+        "en": "The site asks for your consent before using your camera.",
+        "zh": "这个网站在使用摄像头前会征求你的同意。",
+        "key": [
+          "consent"
+        ]
+      }
+    ],
+    "45": [
+      {
+        "en": "I was absent from class because my train was cancelled.",
+        "zh": "火车停运了，所以我没去上课。",
+        "key": [
+          "absent from"
+        ]
+      }
+    ],
+    "49": [
+      {
+        "en": "We postponed the meeting until Friday.",
+        "zh": "我们把会议推迟到了星期五。",
+        "key": [
+          "postponed"
+        ]
+      }
+    ],
+    "55": [
+      {
+        "en": "You need a licence to drive a car.",
+        "zh": "开车需要驾照。",
+        "key": [
+          "licence"
+        ]
+      }
+    ]
+  }
+}

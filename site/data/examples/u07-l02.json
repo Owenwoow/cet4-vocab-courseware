@@ -1,0 +1,130 @@
+{
+  "entries": {
+    "2": [
+      {
+        "en": "Seat belts are compulsory in this car.",
+        "zh": "这辆车要求系安全带。",
+        "key": [
+          "compulsory"
+        ]
+      }
+    ],
+    "9": [
+      {
+        "en": "The poll asked people which app they use most.",
+        "zh": "这项民意调查询问人们最常用哪个应用。",
+        "key": [
+          "poll"
+        ]
+      }
+    ],
+    "11": [
+      {
+        "en": "The team made a collective decision to update the software.",
+        "zh": "团队共同决定更新软件。",
+        "key": [
+          "collective"
+        ]
+      }
+    ],
+    "12": [
+      {
+        "en": "She speaks a local dialect at home.",
+        "zh": "她在家里说一种地方方言。",
+        "key": [
+          "dialect"
+        ]
+      }
+    ],
+    "15": [
+      {
+        "en": "Please use a friendly tone in your reply.",
+        "zh": "请用友好的语气回复。",
+        "key": [
+          "tone"
+        ]
+      }
+    ],
+    "21": [
+      {
+        "en": "He found his vocation in teaching music.",
+        "zh": "他在音乐教学中找到了自己的职业方向。",
+        "key": [
+          "vocation"
+        ]
+      }
+    ],
+    "28": [
+      {
+        "en": "The course includes training in first aid.",
+        "zh": "课程包括急救培训。",
+        "key": [
+          "training"
+        ]
+      }
+    ],
+    "31": [
+      {
+        "en": "Regular exercise improves your well-being.",
+        "zh": "规律锻炼有益于身心健康。",
+        "key": [
+          "well-being"
+        ]
+      }
+    ],
+    "38": [
+      {
+        "en": "A vigorous walk can boost your energy.",
+        "zh": "快步走能让你精力更充沛。",
+        "key": [
+          "vigorous"
+        ]
+      }
+    ],
+    "43": [
+      {
+        "en": "I need to revise my notes before the exam.",
+        "zh": "考试前我需要复习笔记。",
+        "key": [
+          "revise"
+        ]
+      }
+    ],
+    "48": [
+      {
+        "en": "We devised a simple way to share the files.",
+        "zh": "我们想出了一个简单的文件分享办法。",
+        "key": [
+          "devised"
+        ]
+      }
+    ],
+    "50": [
+      {
+        "en": "I glanced at the map before we left.",
+        "zh": "出发前我瞥了一眼地图。",
+        "key": [
+          "glanced"
+        ]
+      }
+    ],
+    "55": [
+      {
+        "en": "I browsed the website for a few minutes.",
+        "zh": "我在网站上浏览了几分钟。",
+        "key": [
+          "browsed"
+        ]
+      }
+    ],
+    "59": [
+      {
+        "en": "A small oversight left the door unlocked.",
+        "zh": "一个小疏忽导致门没有锁。",
+        "key": [
+          "oversight"
+        ]
+      }
+    ]
+  }
+}

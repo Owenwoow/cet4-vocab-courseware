@@ -1,0 +1,148 @@
+{
+  "entries": {
+    "1": [
+      {
+        "en": "Use caution when opening links from strangers.",
+        "zh": "打开陌生人发来的链接时要小心。",
+        "key": [
+          "caution"
+        ]
+      }
+    ],
+    "2": [
+      {
+        "en": "Back up your files as a precaution.",
+        "zh": "把文件备份一下，以防万一。",
+        "key": [
+          "precaution"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "en": "Are you aware that the meeting starts at nine?",
+        "zh": "你知道会议九点开始吗？",
+        "key": [
+          "aware"
+        ]
+      }
+    ],
+    "5": [
+      {
+        "en": "The app sends an alert when your account is used on a new device.",
+        "zh": "有人在新设备上使用你的账户时，应用会发出提醒。",
+        "key": [
+          "alert"
+        ]
+      }
+    ],
+    "8": [
+      {
+        "en": "I did not perceive any difference in sound quality.",
+        "zh": "我没听出音质有什么差别。",
+        "key": [
+          "perceive"
+        ]
+      }
+    ],
+    "12": [
+      {
+        "en": "Keep the receipt in case you need to return the item.",
+        "zh": "把收据留好，以备退货时使用。",
+        "key": [
+          "receipt"
+        ]
+      }
+    ],
+    "18": [
+      {
+        "en": "A fever can be a symptom of the flu.",
+        "zh": "发烧可能是流感的症状。",
+        "key": [
+          "symptom"
+        ]
+      }
+    ],
+    "20": [
+      {
+        "en": "The blue check mark is a badge of verification.",
+        "zh": "蓝色勾号是通过验证的标记。",
+        "key": [
+          "badge"
+        ]
+      }
+    ],
+    "27": [
+      {
+        "en": "The store has a broad selection of cables.",
+        "zh": "这家店有很多种线缆可选。",
+        "key": [
+          "broad"
+        ]
+      }
+    ],
+    "32": [
+      {
+        "en": "The control panel shows the battery level.",
+        "zh": "控制面板会显示电量。",
+        "key": [
+          "panel"
+        ]
+      }
+    ],
+    "40": [
+      {
+        "en": "Measure the desk before you order a new one.",
+        "zh": "订购新桌子前先量一下尺寸。",
+        "key": [
+          "Measure"
+        ]
+      }
+    ],
+    "48": [
+      {
+        "en": "This model is lighter, whereas the older one has a bigger screen.",
+        "zh": "这款更轻，而旧款的屏幕更大。",
+        "key": [
+          "whereas"
+        ]
+      }
+    ],
+    "49": [
+      {
+        "en": "You cannot use the app unless you create an account.",
+        "zh": "除非创建账户，否则你无法使用这个应用。",
+        "key": [
+          "unless"
+        ]
+      }
+    ],
+    "54": [
+      {
+        "en": "The file was too large; therefore, I sent a link instead.",
+        "zh": "文件太大了，所以我改为发送链接。",
+        "key": [
+          "therefore"
+        ]
+      }
+    ],
+    "55": [
+      {
+        "en": "Turn on two-step verification, thereby making your account safer.",
+        "zh": "开启两步验证，从而提高账户安全性。",
+        "key": [
+          "thereby"
+        ]
+      }
+    ],
+    "57": [
+      {
+        "en": "Moreover, the update fixes several security problems.",
+        "zh": "此外，这次更新还修复了几个安全问题。",
+        "key": [
+          "Moreover"
+        ]
+      }
+    ]
+  }
+}

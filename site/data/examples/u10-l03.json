@@ -1,0 +1,139 @@
+{
+  "entries": {
+    "6": [
+      {
+        "en": "That is a ridiculous price for a used phone.",
+        "zh": "二手手机卖这个价也太离谱了。",
+        "key": [
+          "ridiculous"
+        ]
+      }
+    ],
+    "9": [
+      {
+        "en": "Reading every day can improve the literacy of children.",
+        "zh": "每天阅读能提高孩子的读写能力。",
+        "key": [
+          "literacy"
+        ]
+      }
+    ],
+    "12": [
+      {
+        "en": "I bought a second-hand bike online.",
+        "zh": "我在网上买了一辆二手自行车。",
+        "key": [
+          "second-hand"
+        ]
+      }
+    ],
+    "13": [
+      {
+        "en": "Learning a new skill takes time and patience.",
+        "zh": "学习新技能需要时间和耐心。",
+        "key": [
+          "patience"
+        ]
+      }
+    ],
+    "16": [
+      {
+        "en": "Which brand of headphones do you use?",
+        "zh": "你用哪个牌子的耳机？",
+        "key": [
+          "brand"
+        ]
+      }
+    ],
+    "19": [
+      {
+        "en": "The old computer began to lag when I opened many tabs.",
+        "zh": "打开很多标签页时，旧电脑开始变慢。",
+        "key": [
+          "lag"
+        ]
+      }
+    ],
+    "21": [
+      {
+        "en": "Most households have more than one internet-connected device.",
+        "zh": "大多数家庭拥有不止一台联网设备。",
+        "key": [
+          "households"
+        ]
+      }
+    ],
+    "23": [
+      {
+        "en": "The new road reduced the gap between the two towns.",
+        "zh": "新修的道路缩短了两个镇之间的距离。",
+        "key": [
+          "gap"
+        ]
+      }
+    ],
+    "27": [
+      {
+        "en": "I made one final attempt to recover the file.",
+        "zh": "我做了最后一次尝试，想找回这个文件。",
+        "key": [
+          "attempt"
+        ]
+      }
+    ],
+    "32": [
+      {
+        "en": "She crafted a clear reply to the customer.",
+        "zh": "她精心写了一封清楚的回复给客户。",
+        "key": [
+          "crafted"
+        ]
+      }
+    ],
+    "37": [
+      {
+        "en": "The train stops at the airport terminal.",
+        "zh": "火车在机场航站楼停靠。",
+        "key": [
+          "terminal"
+        ]
+      }
+    ],
+    "49": [
+      {
+        "en": "Cut the apple into thin slices.",
+        "zh": "把苹果切成薄片。",
+        "key": [
+          "slices"
+        ]
+      }
+    ],
+    "52": [
+      {
+        "en": "I packed a snack for the train ride.",
+        "zh": "我带了点零食在火车上吃。",
+        "key": [
+          "snack"
+        ]
+      }
+    ],
+    "57": [
+      {
+        "en": "Chew your food well before you swallow.",
+        "zh": "吞咽前把食物充分嚼碎。",
+        "key": [
+          "Chew"
+        ]
+      }
+    ],
+    "63": [
+      {
+        "en": "I still have one puzzle to solve in this game.",
+        "zh": "这个游戏里我还有一道谜题要解。",
+        "key": [
+          "puzzle"
+        ]
+      }
+    ]
+  }
+}

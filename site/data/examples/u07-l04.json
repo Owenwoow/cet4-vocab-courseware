@@ -1,0 +1,139 @@
+{
+  "entries": {
+    "7": [
+      {
+        "en": "The trail is steep, so take your time.",
+        "zh": "这条小路很陡，慢慢走。",
+        "key": [
+          "steep"
+        ]
+      }
+    ],
+    "9": [
+      {
+        "en": "Keep a steady hand when you take the photo.",
+        "zh": "拍照时手要稳。",
+        "key": [
+          "steady"
+        ]
+      }
+    ],
+    "11": [
+      {
+        "en": "Let us establish a time for the next call.",
+        "zh": "我们定个时间安排下次通话吧。",
+        "key": [
+          "establish"
+        ]
+      }
+    ],
+    "17": [
+      {
+        "en": "You cannot erase a message after it has been sent.",
+        "zh": "消息发出后就无法删除。",
+        "key": [
+          "erase"
+        ]
+      }
+    ],
+    "19": [
+      {
+        "en": "Do not spill coffee on the keyboard.",
+        "zh": "别把咖啡洒在键盘上。",
+        "key": [
+          "spill"
+        ]
+      }
+    ],
+    "22": [
+      {
+        "en": "He acted out of spite after losing the game.",
+        "zh": "输掉比赛后，他出于怨恨故意捣乱。",
+        "key": [
+          "spite"
+        ]
+      }
+    ],
+    "23": [
+      {
+        "en": "Despite the rain, the event went ahead.",
+        "zh": "尽管下雨，活动还是照常举行。",
+        "key": [
+          "Despite"
+        ]
+      }
+    ],
+    "25": [
+      {
+        "en": "Spray the plant with water every morning.",
+        "zh": "每天早上给植物喷水。",
+        "key": [
+          "Spray"
+        ]
+      }
+    ],
+    "28": [
+      {
+        "en": "The balloon swelled in the heat.",
+        "zh": "气球在热气中膨胀了。",
+        "key": [
+          "swelled"
+        ]
+      }
+    ],
+    "31": [
+      {
+        "en": "I tested a sample of the new tea.",
+        "zh": "我尝了新茶的一个样品。",
+        "key": [
+          "sample"
+        ]
+      }
+    ],
+    "33": [
+      {
+        "en": "We insure our phones against accidental damage.",
+        "zh": "我们为手机投保，以防意外损坏。",
+        "key": [
+          "insure"
+        ]
+      }
+    ],
+    "34": [
+      {
+        "en": "I assure you that the files are safe.",
+        "zh": "我向你保证，文件是安全的。",
+        "key": [
+          "assure"
+        ]
+      }
+    ],
+    "38": [
+      {
+        "en": "We reached a compromise on the meeting time.",
+        "zh": "我们就开会时间达成了妥协。",
+        "key": [
+          "compromise"
+        ]
+      }
+    ],
+    "39": [
+      {
+        "en": "The company pledged to reduce plastic waste.",
+        "zh": "公司承诺减少塑料垃圾。",
+        "key": [
+          "pledged"
+        ]
+      }
+    ],
+    "40": [
+      {
+        "en": "She alleges that the account was hacked.",
+        "zh": "她声称账户遭到了黑客入侵。",
+        "key": [
+          "alleges"
+        ]
+      }
+    ]
+  }
+}

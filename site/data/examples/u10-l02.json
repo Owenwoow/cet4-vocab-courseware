@@ -1,0 +1,139 @@
+{
+  "entries": {
+    "3": [
+      {
+        "en": "The phone can transmit photos to your computer.",
+        "zh": "这部手机可以把照片传到电脑上。",
+        "key": [
+          "transmit"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "en": "Do not omit your phone number from the form.",
+        "zh": "表格里不要漏填电话号码。",
+        "key": [
+          "omit"
+        ]
+      }
+    ],
+    "8": [
+      {
+        "en": "The sensor emits a soft blue light.",
+        "zh": "传感器发出柔和的蓝光。",
+        "key": [
+          "emits"
+        ]
+      }
+    ],
+    "9": [
+      {
+        "en": "Submit your application online by Friday.",
+        "zh": "请在星期五前在线提交申请。",
+        "key": [
+          "Submit"
+        ]
+      }
+    ],
+    "10": [
+      {
+        "en": "I admit that I forgot to charge my phone.",
+        "zh": "我承认我忘了给手机充电。",
+        "key": [
+          "admit"
+        ]
+      }
+    ],
+    "16": [
+      {
+        "en": "There is a strict ceiling on how much you can spend.",
+        "zh": "你的消费金额有严格上限。",
+        "key": [
+          "ceiling"
+        ]
+      }
+    ],
+    "20": [
+      {
+        "en": "Use a different password for each account.",
+        "zh": "每个账户都使用不同的密码。",
+        "key": [
+          "password"
+        ]
+      }
+    ],
+    "22": [
+      {
+        "en": "The app uses a short code to verify your account.",
+        "zh": "这个应用用一组短代码验证你的账户。",
+        "key": [
+          "code"
+        ]
+      }
+    ],
+    "23": [
+      {
+        "en": "The thermostat regulates the room temperature.",
+        "zh": "恒温器会调节室温。",
+        "key": [
+          "regulates"
+        ]
+      }
+    ],
+    "27": [
+      {
+        "en": "Please include only relevant details in your report.",
+        "zh": "请在报告中只写相关细节。",
+        "key": [
+          "relevant"
+        ]
+      }
+    ],
+    "29": [
+      {
+        "en": "Do not hesitate to ask for help.",
+        "zh": "尽管开口求助。",
+        "key": [
+          "hesitate"
+        ]
+      }
+    ],
+    "32": [
+      {
+        "en": "We negotiated a lower price for the repair.",
+        "zh": "我们协商到了更低的维修价格。",
+        "key": [
+          "negotiated"
+        ]
+      }
+    ],
+    "34": [
+      {
+        "en": "The game launched worldwide last week.",
+        "zh": "这款游戏上周在全球发行。",
+        "key": [
+          "launched"
+        ]
+      }
+    ],
+    "41": [
+      {
+        "en": "Write a short essay about your favourite app.",
+        "zh": "写一篇关于你最喜欢的应用的短文。",
+        "key": [
+          "essay"
+        ]
+      }
+    ],
+    "47": [
+      {
+        "en": "I could not comprehend the instructions at first.",
+        "zh": "一开始我看不懂这些说明。",
+        "key": [
+          "comprehend"
+        ]
+      }
+    ]
+  }
+}

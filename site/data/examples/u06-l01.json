@@ -1,0 +1,121 @@
+{
+  "entries": {
+    "1": [
+      {
+        "en": "I used tomato paste to make the sauce.",
+        "zh": "我用番茄酱做了这道酱汁。",
+        "key": [
+          "paste"
+        ]
+      }
+    ],
+    "2": [
+      {
+        "en": "This portable charger fits in my pocket.",
+        "zh": "这个便携式充电器能放进口袋里。",
+        "key": [
+          "portable"
+        ]
+      }
+    ],
+    "13": [
+      {
+        "en": "You can acquire new skills by practising every day.",
+        "zh": "每天练习就能学会新技能。",
+        "key": [
+          "acquire"
+        ]
+      }
+    ],
+    "19": [
+      {
+        "en": "The question may provoke a useful discussion.",
+        "zh": "这个问题可能会引发有益的讨论。",
+        "key": [
+          "provoke"
+        ]
+      }
+    ],
+    "23": [
+      {
+        "en": "Her spontaneous smile made everyone feel welcome.",
+        "zh": "她自然流露的微笑让每个人都感到受欢迎。",
+        "key": [
+          "spontaneous"
+        ]
+      }
+    ],
+    "25": [
+      {
+        "en": "Her story inspired me to learn to code.",
+        "zh": "她的故事激励我去学习编程。",
+        "key": [
+          "inspired"
+        ]
+      }
+    ],
+    "30": [
+      {
+        "en": "Thirst made us stop for water.",
+        "zh": "我们渴得停下来找水喝。",
+        "key": [
+          "Thirst"
+        ]
+      }
+    ],
+    "33": [
+      {
+        "en": "The website will suspend your account after too many failed logins.",
+        "zh": "登录失败次数过多后，网站会暂停你的账户。",
+        "key": [
+          "suspend"
+        ]
+      }
+    ],
+    "37": [
+      {
+        "en": "The doctor prescribed a cream for the rash.",
+        "zh": "医生为皮疹开了一种药膏。",
+        "key": [
+          "prescribed"
+        ]
+      }
+    ],
+    "42": [
+      {
+        "en": "Biotechnology can help farmers grow crops that resist disease.",
+        "zh": "生物技术能帮助农民种植抗病作物。",
+        "key": [
+          "Biotechnology"
+        ]
+      }
+    ],
+    "47": [
+      {
+        "en": "A simple mechanism locks the door when you leave.",
+        "zh": "你离开时，一个简单的机械装置会把门锁上。",
+        "key": [
+          "mechanism"
+        ]
+      }
+    ],
+    "50": [
+      {
+        "en": "Wear sunscreen to protect your skin from the sun's radiation.",
+        "zh": "涂防晒霜，保护皮肤免受太阳辐射。",
+        "key": [
+          "radiation"
+        ]
+      }
+    ],
+    "51": [
+      {
+        "en": "The new computer has better hardware.",
+        "zh": "这台新电脑的硬件更好。",
+        "key": [
+          "hardware"
+        ]
+      }
+    ]
+  }
+}

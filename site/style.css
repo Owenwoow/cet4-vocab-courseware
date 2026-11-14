@@ -279,6 +279,7 @@ body.vp-open{padding-bottom:calc(min(460px,100vw - 32px) * 9 / 16 + 64px)}
 .example-details summary{cursor:pointer;min-height:44px;padding:9px 4px;font-weight:600}
 .example-details summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
 .example-details .ex{margin:0 0 10px 4px}
+.example-details .book-ex:has(>.anBtn)>.sent{padding-right:34px}
 .card .ex .play{width:132px;height:44px;font-size:16px}
 .exts{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:14px}
 .extrow{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:3px 0}

@@ -1,0 +1,121 @@
+{
+  "entries": {
+    "3": [
+      {
+        "en": "The new phone has immense storage space.",
+        "zh": "这款新手机有极大的存储空间。",
+        "key": [
+          "immense"
+        ]
+      }
+    ],
+    "8": [
+      {
+        "en": "The camera is highly sensitive to light.",
+        "zh": "这台相机对光线非常敏感。",
+        "key": [
+          "highly"
+        ]
+      }
+    ],
+    "12": [
+      {
+        "en": "Please give me a precise time, not an approximate one.",
+        "zh": "请给我一个确切时间，不要用大概的时间。",
+        "key": [
+          "precise"
+        ]
+      }
+    ],
+    "15": [
+      {
+        "en": "Avoid using your phone in extreme heat.",
+        "zh": "避免在极热的环境下使用手机。",
+        "key": [
+          "extreme"
+        ]
+      }
+    ],
+    "20": [
+      {
+        "en": "There is a possibility of rain this afternoon.",
+        "zh": "今天下午有可能下雨。",
+        "key": [
+          "possibility"
+        ]
+      }
+    ],
+    "23": [
+      {
+        "en": "The idea sounds abstract until you see an example.",
+        "zh": "在看到例子之前，这个想法听起来很抽象。",
+        "key": [
+          "abstract"
+        ]
+      }
+    ],
+    "26": [
+      {
+        "en": "We reduced the file size before sending it.",
+        "zh": "发送前我们缩小了文件大小。",
+        "key": [
+          "reduced"
+        ]
+      }
+    ],
+    "31": [
+      {
+        "en": "Turn off notifications so they do not distract you.",
+        "zh": "关掉通知，免得它们让你分心。",
+        "key": [
+          "distract"
+        ]
+      }
+    ],
+    "36": [
+      {
+        "en": "The bright screen created an illusion of daylight.",
+        "zh": "明亮的屏幕营造出白昼的错觉。",
+        "key": [
+          "illusion"
+        ]
+      }
+    ],
+    "40": [
+      {
+        "en": "I barely slept last night because of the noise.",
+        "zh": "昨晚噪声太大，我几乎没睡。",
+        "key": [
+          "barely"
+        ]
+      }
+    ],
+    "47": [
+      {
+        "en": "We use this app on special occasions.",
+        "zh": "我们只在特别场合使用这个应用。",
+        "key": [
+          "occasions"
+        ]
+      }
+    ],
+    "52": [
+      {
+        "en": "A password manager can help curb unsafe habits.",
+        "zh": "密码管理器有助于改掉不安全的习惯。",
+        "key": [
+          "curb"
+        ]
+      }
+    ],
+    "54": [
+      {
+        "en": "The phone has the potential to replace my laptop for simple tasks.",
+        "zh": "这部手机有潜力在简单任务上取代我的笔记本电脑。",
+        "key": [
+          "potential"
+        ]
+      }
+    ]
+  }
+}

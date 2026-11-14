@@ -1,0 +1,139 @@
+{
+  "entries": {
+    "2": [
+      {
+        "en": "You can link your bank account to the app.",
+        "zh": "你可以把银行账户关联到这个应用。",
+        "key": [
+          "link your bank account to"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "en": "Please give me a coherent plan, step by step.",
+        "zh": "请给我一个有条理的计划，一步一步说明。",
+        "key": [
+          "coherent"
+        ]
+      }
+    ],
+    "9": [
+      {
+        "en": "The new library integrates books, music, and video in one app.",
+        "zh": "这个新图书馆应用把书籍、音乐和视频整合在一起。",
+        "key": [
+          "integrates"
+        ]
+      }
+    ],
+    "11": [
+      {
+        "en": "The app gives you tangible proof of your progress.",
+        "zh": "这个应用会给你进步的切实证明。",
+        "key": [
+          "tangible"
+        ]
+      }
+    ],
+    "13": [
+      {
+        "en": "Keep the receipt intact in case you need to return the item.",
+        "zh": "把收据保持完好，以备退货时使用。",
+        "key": [
+          "intact"
+        ]
+      }
+    ],
+    "14": [
+      {
+        "en": "Attach the photo to your message before you send it.",
+        "zh": "发送前把照片附在消息里。",
+        "key": [
+          "Attach"
+        ]
+      }
+    ],
+    "17": [
+      {
+        "en": "Stick with the plan for one more week.",
+        "zh": "再坚持这个计划一周。",
+        "key": [
+          "Stick with"
+        ]
+      }
+    ],
+    "23": [
+      {
+        "en": "The clue was hidden in the last line of the email.",
+        "zh": "线索藏在邮件的最后一行。",
+        "key": [
+          "clue"
+        ]
+      }
+    ],
+    "25": [
+      {
+        "en": "Can you recommend a good password manager?",
+        "zh": "你能推荐一款好用的密码管理器吗？",
+        "key": [
+          "recommend"
+        ]
+      }
+    ],
+    "26": [
+      {
+        "en": "The red warning light suggests that the battery is low.",
+        "zh": "红色警示灯表明电量不足。",
+        "key": [
+          "suggests"
+        ]
+      }
+    ],
+    "40": [
+      {
+        "en": "This car runs on less fuel than our old one.",
+        "zh": "这辆车比我们的旧车更省油。",
+        "key": [
+          "fuel"
+        ]
+      }
+    ],
+    "47": [
+      {
+        "en": "Turn off the lights to save electricity.",
+        "zh": "关灯省电。",
+        "key": [
+          "electricity"
+        ]
+      }
+    ],
+    "57": [
+      {
+        "en": "A small error can arise when the app is offline.",
+        "zh": "应用离线时可能会出现一个小错误。",
+        "key": [
+          "arise"
+        ]
+      }
+    ],
+    "60": [
+      {
+        "en": "You can raise the daily limit in the settings.",
+        "zh": "你可以在设置里调高每日限额。",
+        "key": [
+          "raise"
+        ]
+      }
+    ],
+    "65": [
+      {
+        "en": "We hauled the boxes up to the third floor.",
+        "zh": "我们把箱子费力地搬到了三楼。",
+        "key": [
+          "hauled"
+        ]
+      }
+    ]
+  }
+}

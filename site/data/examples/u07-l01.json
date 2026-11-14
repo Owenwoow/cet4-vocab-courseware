@@ -1,0 +1,103 @@
+{
+  "entries": {
+    "1": [
+      {
+        "en": "Leave a small margin on the page for notes.",
+        "zh": "在页边留出一点空白做笔记。",
+        "key": [
+          "margin"
+        ]
+      }
+    ],
+    "5": [
+      {
+        "en": "The trip broadened my horizons.",
+        "zh": "这次旅行开阔了我的眼界。",
+        "key": [
+          "horizons"
+        ]
+      }
+    ],
+    "8": [
+      {
+        "en": "The new battery is at the frontier of phone technology.",
+        "zh": "这款新电池处于手机技术的前沿。",
+        "key": [
+          "frontier"
+        ]
+      }
+    ],
+    "14": [
+      {
+        "en": "Please give specific examples from your daily life.",
+        "zh": "请举出生活中的具体例子。",
+        "key": [
+          "specific"
+        ]
+      }
+    ],
+    "17": [
+      {
+        "en": "I am particular about the sound quality of my headphones.",
+        "zh": "我对耳机的音质很挑剔。",
+        "key": [
+          "particular"
+        ]
+      }
+    ],
+    "20": [
+      {
+        "en": "The doctor prescribed a cream for my rash.",
+        "zh": "医生为我的皮疹开了一种药膏。",
+        "key": [
+          "doctor"
+        ]
+      }
+    ],
+    "24": [
+      {
+        "en": "The odds of rain are low today.",
+        "zh": "今天下雨的可能性很低。",
+        "key": [
+          "odds"
+        ]
+      }
+    ],
+    "26": [
+      {
+        "en": "Please acquaint yourself with the safety rules.",
+        "zh": "请熟悉一下安全规则。",
+        "key": [
+          "acquaint"
+        ]
+      }
+    ],
+    "30": [
+      {
+        "en": "A cold has plagued me all week.",
+        "zh": "我整个星期都被感冒困扰。",
+        "key": [
+          "plagued"
+        ]
+      }
+    ],
+    "34": [
+      {
+        "en": "The review contains negative comments about the new design.",
+        "zh": "这篇评论里有对新设计的负面评价。",
+        "key": [
+          "negative"
+        ]
+      }
+    ],
+    "36": [
+      {
+        "en": "I am optimistic that we can fix the problem.",
+        "zh": "我乐观地认为我们能解决这个问题。",
+        "key": [
+          "optimistic"
+        ]
+      }
+    ]
+  }
+}

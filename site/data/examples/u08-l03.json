@@ -1,0 +1,139 @@
+{
+  "entries": {
+    "6": [
+      {
+        "en": "Take a short walk to reduce stress.",
+        "zh": "散一会儿步来减轻压力。",
+        "key": [
+          "stress"
+        ]
+      }
+    ],
+    "8": [
+      {
+        "en": "The program helps families move out of poverty.",
+        "zh": "这个项目帮助家庭摆脱贫困。",
+        "key": [
+          "poverty"
+        ]
+      }
+    ],
+    "12": [
+      {
+        "en": "I only need a rough estimate of the cost.",
+        "zh": "我只需要一个大致的费用估算。",
+        "key": [
+          "rough"
+        ]
+      }
+    ],
+    "18": [
+      {
+        "en": "The flexible strap fits different wrist sizes.",
+        "zh": "这条有弹性的表带适合不同粗细的手腕。",
+        "key": [
+          "flexible"
+        ]
+      }
+    ],
+    "19": [
+      {
+        "en": "The chart reflects this month's sales.",
+        "zh": "这张图表反映了本月的销售情况。",
+        "key": [
+          "reflects"
+        ]
+      }
+    ],
+    "20": [
+      {
+        "en": "Never share your password; your account is vulnerable to attack.",
+        "zh": "不要分享密码，你的账户容易受到攻击。",
+        "key": [
+          "vulnerable to"
+        ]
+      }
+    ],
+    "26": [
+      {
+        "en": "If the first solution fails, do not despair.",
+        "zh": "如果第一个办法不奏效，也别绝望。",
+        "key": [
+          "despair"
+        ]
+      }
+    ],
+    "30": [
+      {
+        "en": "I faced a dilemma: buy the cheaper phone or wait for a sale.",
+        "zh": "我进退两难：是买便宜些的手机，还是等打折。",
+        "key": [
+          "dilemma"
+        ]
+      }
+    ],
+    "31": [
+      {
+        "en": "The website was down, and the office was in chaos.",
+        "zh": "网站瘫痪了，办公室里一片混乱。",
+        "key": [
+          "chaos"
+        ]
+      }
+    ],
+    "39": [
+      {
+        "en": "One shortcoming of the plan is its high cost.",
+        "zh": "这个计划的一个缺点是成本太高。",
+        "key": [
+          "shortcoming"
+        ]
+      }
+    ],
+    "43": [
+      {
+        "en": "A delayed train was a small setback, but we still arrived on time.",
+        "zh": "火车晚点算是个小挫折，但我们还是准时到了。",
+        "key": [
+          "setback"
+        ]
+      }
+    ],
+    "44": [
+      {
+        "en": "A slow internet connection is an obstacle to online learning.",
+        "zh": "网速慢是在线学习的一大障碍。",
+        "key": [
+          "obstacle"
+        ]
+      }
+    ],
+    "47": [
+      {
+        "en": "The free version restricts how many files you can save.",
+        "zh": "免费版限制了你能保存的文件数量。",
+        "key": [
+          "restricts"
+        ]
+      }
+    ],
+    "57": [
+      {
+        "en": "I upgraded my phone because the old one was too slow.",
+        "zh": "旧手机太慢了，所以我换了新款。",
+        "key": [
+          "upgraded"
+        ]
+      }
+    ],
+    "59": [
+      {
+        "en": "The noise dropped to a comfortable degree.",
+        "zh": "噪声降到了让人舒服的程度。",
+        "key": [
+          "degree"
+        ]
+      }
+    ]
+  }
+}

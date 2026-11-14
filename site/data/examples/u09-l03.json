@@ -1,0 +1,139 @@
+{
+  "entries": {
+    "1": [
+      {
+        "en": "You can apply this trick to other problems too.",
+        "zh": "这个技巧也可以用来解决其他问题。",
+        "key": [
+          "apply"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "en": "This appliance uses less power than the old one.",
+        "zh": "这台家电比旧的那台更省电。",
+        "key": [
+          "appliance"
+        ]
+      }
+    ],
+    "5": [
+      {
+        "en": "The school will implement the new rule next month.",
+        "zh": "学校将在下个月实施这项新规定。",
+        "key": [
+          "implement"
+        ]
+      }
+    ],
+    "9": [
+      {
+        "en": "You can borrow my bike, provided you bring it back tonight.",
+        "zh": "只要你今晚还回来，就可以借我的自行车。",
+        "key": [
+          "provided"
+        ]
+      }
+    ],
+    "10": [
+      {
+        "en": "Small screens tend to make my eyes tired.",
+        "zh": "小屏幕往往会让我的眼睛疲劳。",
+        "key": [
+          "tend to"
+        ]
+      }
+    ],
+    "14": [
+      {
+        "en": "Stretch your legs after sitting for a long time.",
+        "zh": "久坐后伸展一下双腿。",
+        "key": [
+          "Stretch"
+        ]
+      }
+    ],
+    "15": [
+      {
+        "en": "We still don't know the full extent of the damage.",
+        "zh": "我们仍不知道损坏到底有多严重。",
+        "key": [
+          "extent"
+        ]
+      }
+    ],
+    "16": [
+      {
+        "en": "I cannot attend the meeting, but I will watch the recording.",
+        "zh": "我不能参加会议，但会看录像。",
+        "key": [
+          "attend"
+        ]
+      }
+    ],
+    "20": [
+      {
+        "en": "The child pretended to be asleep.",
+        "zh": "孩子假装睡着了。",
+        "key": [
+          "pretended"
+        ]
+      }
+    ],
+    "22": [
+      {
+        "en": "That message looks fake; do not click the link.",
+        "zh": "那条消息看起来是假的，别点链接。",
+        "key": [
+          "fake"
+        ]
+      }
+    ],
+    "24": [
+      {
+        "en": "A short break can stimulate new ideas.",
+        "zh": "短暂休息能激发新的想法。",
+        "key": [
+          "stimulate"
+        ]
+      }
+    ],
+    "27": [
+      {
+        "en": "Online banking offers convenience when you travel.",
+        "zh": "旅行时，网上银行服务很方便。",
+        "key": [
+          "convenience"
+        ]
+      }
+    ],
+    "28": [
+      {
+        "en": "Keep your ticket handy in case someone asks to see it.",
+        "zh": "把票放在手边，以备有人查验。",
+        "key": [
+          "handy"
+        ]
+      }
+    ],
+    "33": [
+      {
+        "en": "The storm caused a disaster for the small island.",
+        "zh": "这场风暴给这个小岛带来了灾难。",
+        "key": [
+          "disaster"
+        ]
+      }
+    ],
+    "42": [
+      {
+        "en": "The screen size is one important dimension of the design.",
+        "zh": "屏幕尺寸是设计中的一个重要方面。",
+        "key": [
+          "dimension"
+        ]
+      }
+    ]
+  }
+}

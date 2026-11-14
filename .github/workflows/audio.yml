@@ -5,7 +5,7 @@
 # 选 main 会发布到音频仓库，并提交清单。选其他分支会生成可下载的 audio-preview 产物。
 #
 # 需要一个 Secret：AUDIO_REPO_TOKEN（fine-grained PAT），仅授权本账号的这两个仓库：
-#   cet4-vocab-audio      Contents: 读写、Pages: 只读
+#   cet4-vocab-audio      Contents: 读写、Actions: 只读（查询 Pages 工作流结果）
 #   cet4-vocab-courseware Contents: 读写
 # 用 PAT 而不是默认的 GITHUB_TOKEN：默认令牌不能推别的仓库，
 # 而且用它提交的内容不会触发 deploy。
