@@ -341,7 +341,7 @@ const flames = n => "🔥".repeat(n) + `<i>${"🔥".repeat(3 - n)}</i>`;
 
 function lessonExampleHTML(ex, label, added = false) {
   const note = added ? null : noteOf(NOTES, ex.en);
-  return `<div class="ex ${added ? "added-ex" : "book-ex"}${added && label ? " featured-ex" : ""}${ex.type === "真" ? " zt" : ""}">
+  return `<div class="ex${added ? "" : " book-ex"}${ex.type === "真" ? " zt" : ""}">
       ${label ? `<div class="exlab">${label}</div>` : ""}
       <div class="sent" lang="en">${sentenceHTML(ex.en, ex.key, note)}</div>
       <div class="zh">${esc(ex.zh)}</div>${Sent.anBlock(note, ex.zh, ex.en, ex.key)}
@@ -356,7 +356,7 @@ function cardHTML(e) {
   const [featured, ...more] = EXAMPLES[e.no] || [];
   const bookLabel = e.ex?.type === "真" ? `${e.ex.year} 年真题` : "原书例句";
   const bookEx = e.ex ? lessonExampleHTML(e.ex, featured ? "" : (e.ex.type === "真" ? `真题 ${e.ex.year}` : "例句")) : "";
-  const ex = featured ? `${lessonExampleHTML(featured, "补充", true)}
+  const ex = featured ? `${lessonExampleHTML(featured, "例句", true)}
     ${more.length ? `<details class="example-details"><summary>更多用法（${more.length}）</summary>${more.map(x => lessonExampleHTML(x, "", true)).join("")}</details>` : ""}
     ${bookEx ? `<details class="example-details"><summary>${bookLabel}</summary>${bookEx}</details>` : ""}` : bookEx;
   const exts = e.ext && e.ext.length ? `<div class="exts">${e.ext.map(x => `<div class="extrow" data-ext="${esc(x.word)}">
