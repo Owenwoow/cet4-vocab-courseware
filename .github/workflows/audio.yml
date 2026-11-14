@@ -12,7 +12,7 @@
 # 而且用它提交的内容不会触发 deploy。
 #
 # 限流：GitHub 服务器 IP 容易被微软语音服务限流，所以并发固定为 3，且所有课在同一个任务里顺序做。
-# 每课做完立刻推送，中途超时或失败也不丢已完成的课；重跑同一批课会跳过已有音频。
+# 发布模式分批推送，中途失败可复用已保存的音频，最后一次推送才等待 Pages。
 name: audio
 
 on:
@@ -72,13 +72,20 @@ jobs:
 
       - name: 逐课生成音频
         run: |
-          # 音频站每次有新推送，Pages 就把进行中的构建作废重来，所以中间的课只推送不等，最后一课才等一次构建完成
+          # 同一次重试直接复用已生成的文件，避免单个音色临时失败丢掉整课。
+          count=0
           set -- $LESSONS
           for id in $LESSONS; do
             echo "::group::$id"
-            python pipeline/build_audio.py "$id"
+            if ! python pipeline/build_audio.py "$id"; then
+              sleep 15
+              python pipeline/build_audio.py "$id"
+            fi
+            count=$((count + 1))
             if [ "$GITHUB_REF" = "refs/heads/main" ]; then
               if [ "$#" -gt 1 ]; then AUDIO_SKIP_WAIT=1 python pipeline/publish_audio.py; else python pipeline/publish_audio.py; fi
+            elif [ "${{ inputs.publish_audio }}" = "true" ] && [ "$#" -gt 1 ] && [ "$((count % 4))" -eq 0 ]; then
+              AUDIO_SKIP_WAIT=1 python pipeline/publish_audio.py
             fi
             shift
             echo "::endgroup::"
