@@ -1,5 +1,5 @@
 # 推送到 main 后：校验数据 → 检查音频已上线 → 目录索引 → 部署到 GitHub Pages
-# 音频在本地生成、推到单独的仓库 cet4-vocab-audio（见 pipeline/publish_audio.py），这里不生成。
+# 音频由 audio 工作流生成并发布到 cet4-vocab-audio，这里仅校验。
 # 原书扫描页（site/data/pages/）不进仓库，也不部署。
 name: deploy
 
@@ -34,7 +34,16 @@ jobs:
         run: node --test "tests/*.test.js"
 
       - name: 检查音频已推送到音频站
-        run: python pipeline/check_audio.py
+        env:
+          GH_TOKEN: ${{ secrets.AUDIO_REPO_TOKEN }}
+          AUDIO_REPO: Owenwoow/cet4-vocab-audio
+        run: |
+          published=$(gh run list -R "$AUDIO_REPO" -w pages-build-deployment --branch main --status success -L 1 --json headSha --jq '.[0].headSha')
+          test -n "$published"
+          files=$(gh api "repos/$AUDIO_REPO/git/trees/$published" --jq '.tree[] | select(.path == "files" and .type == "tree") | .sha')
+          test -n "$files"
+          gh api "repos/$AUDIO_REPO/git/trees/$files" > "$RUNNER_TEMP/audio-tree.json"
+          python pipeline/check_audio.py --published-tree "$RUNNER_TEMP/audio-tree.json"
 
       - name: 生成目录索引
         run: python pipeline/build_index.py

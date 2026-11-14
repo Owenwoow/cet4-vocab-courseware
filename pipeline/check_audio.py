@@ -1,9 +1,10 @@
 """部署前检查：每课都有音频清单，且清单里的音频已经在音频站上线。
 
-用法：python pipeline/check_audio.py [--all]
-默认每课抽查 5 个文件（单词、例句、中文各有），并逐一检查补充例句所需音频；--all 逐个检查（慢）。
+用法：python pipeline/check_audio.py [--all] [--published-tree 文件]
+补充例句所需文件逐一核对；提供已部署的 Git 文件树时，用文件树核对并逐课抽查线上地址。
 缺清单或文件 404 → 退出码 1，阻止部署（多半是忘了跑 publish_audio.py）。
 """
+import argparse
 import json
 import random
 import re
@@ -12,8 +13,9 @@ import time
 import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
 
-from config import AUDIO, DATA, LESSONS
+from config import AUDIO, AUDIO_BASE, DATA, LESSONS
 
 VOICE_KEYS = ("ava", "andrew", "sonia", "ryan")
 
@@ -74,7 +76,13 @@ def online(url):
         return False
 
 
-def main(check_all):
+def main(check_all, published_tree=None):
+    published = None
+    if published_tree is not None:
+        tree = json.loads(published_tree.read_text(encoding="utf-8"))
+        if tree["truncated"]:
+            raise SystemExit("已发布音频文件树不完整")
+        published = {item["path"] for item in tree["tree"] if item["type"] == "blob" and item.get("size", 0) > 0}
     bad = 0
     checked = {}
     for f in sorted(LESSONS.glob("*.json")):
@@ -90,13 +98,21 @@ def main(check_all):
             bad += 1
             continue
         w, s, z = keys_of(m)
-        required, gaps = supplemental_audio(m, supplemental_examples(lid))
+        examples = list(supplemental_examples(lid))
+        required, gaps = supplemental_audio(m, examples)
         for gap in gaps:
             print(f"[FAIL] {lid}：音频清单缺少{gap}")
         bad += bool(gaps)
         rnd = random.Random(lid)
         sample = w + s + z if check_all else rnd.sample(w, min(2, len(w))) + rnd.sample(s, min(2, len(s))) + rnd.sample(z, min(1, len(z)))
-        sample = list(dict.fromkeys(sample + sorted(required)))
+        offline_missing = []
+        if published is not None and m["base"] == AUDIO_BASE:
+            offline_missing = [key for key in required if f"{key}.mp3" not in published]
+            if examples and not gaps:
+                sample.append(m["s"][examples[0]["en"]][VOICE_KEYS[0]]["f"])
+        else:
+            sample.extend(sorted(required))
+        sample = list(dict.fromkeys(sample))
         urls = {key: f"{m['base']}files/{key}.mp3" for key in sample}
         pending = [url for url in urls.values() if url not in checked]
         if pending:
@@ -109,7 +125,7 @@ def main(check_all):
                     time.sleep(delay)
                     checked.update(zip(retry, pool.map(online, retry)))
                     retry = [url for url in retry if not checked[url]]
-        missing = [key for key, url in urls.items() if not checked[url]]
+        missing = sorted(set(offline_missing + [key for key, url in urls.items() if not checked[url]]))
         status = "FAIL" if missing else "OK"
         print(f"[{status}] {lid}：查了 {len(sample)} 个，缺 {len(missing)} 个（{m['base']}）", flush=True)
         for k in missing[:5]:
@@ -119,4 +135,8 @@ def main(check_all):
 
 
 if __name__ == "__main__":
-    main("--all" in sys.argv)
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--all", action="store_true")
+    parser.add_argument("--published-tree", type=Path)
+    args = parser.parse_args()
+    main(args.all, args.published_tree)
