@@ -56,8 +56,8 @@
     ],
     "15": [
       {
-        "en": "The app lets you take notes in a physical notebook.",
-        "zh": "这个应用让你可以在实体笔记本上做笔记。",
+        "en": "I keep a physical copy of the ticket in my bag.",
+        "zh": "我把一张纸质车票放在包里。",
         "key": [
           "physical"
         ]
@@ -133,10 +133,10 @@
     ],
     "43": [
       {
-        "en": "Add a little humour to your presentation.",
-        "zh": "给你的演讲加一点幽默。",
+        "en": "The nurse injected the medicine into his arm.",
+        "zh": "护士把药物注射进他的手臂。",
         "key": [
-          "humour"
+          "injected"
         ]
       }
     ],

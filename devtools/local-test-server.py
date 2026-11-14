@@ -77,6 +77,7 @@ class Handler(SimpleHTTPRequestHandler):
             return
         if url.path == '/test':
             links = ''.join(f'<a href="/start?mode={k}">{v[0]}</a>' for k, v in MODES.items())
+            links += '<a href="/#/u08-l01/w/remedy">补充例句与真题</a>'
             self.html('''<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>本地验收入口</title><style>body{font:16px system-ui;background:#15171b;color:#eee;margin:0;padding:24px}main{max-width:760px;margin:auto}p{color:#b9c0cc;line-height:1.7}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}a{display:block;padding:16px;background:#282b32;border:1px solid #474d5b;border-radius:9px;color:#fff;text-decoration:none;text-align:center}a:hover{border-color:#f0a044}</style><main><h1>本地验收入口</h1><p>选择模式后进入演示课件。每次选择都会重新准备所选情景的演示词，方便反复检查。测试成绩只存当前浏览器的独立本地地址，不能连接云同步。返回此页可切换模式。</p><div class="grid">''' + links + '''</div></main></html>''')
             return
         if url.path == '/start':

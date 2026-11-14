@@ -32,18 +32,19 @@ jobs:
     timeout-minutes: 350
     env:
       AUDIO_CONCURRENCY: "3"
-      GH_TOKEN: ${{ secrets.AUDIO_REPO_TOKEN }}
+      GH_TOKEN: ${{ github.ref == 'refs/heads/main' && secrets.AUDIO_REPO_TOKEN || github.token }}
       LESSONS: ${{ inputs.lessons }}
     steps:
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.AUDIO_REPO_TOKEN }}
+          token: ${{ github.ref == 'refs/heads/main' && secrets.AUDIO_REPO_TOKEN || github.token }}
 
       - uses: actions/checkout@v4
         with:
           repository: Owenwoow/cet4-vocab-audio
           path: audio-store
-          token: ${{ secrets.AUDIO_REPO_TOKEN }}
+          token: ${{ github.ref == 'refs/heads/main' && secrets.AUDIO_REPO_TOKEN || github.token }}
+          persist-credentials: ${{ github.ref == 'refs/heads/main' }}
 
       - uses: actions/setup-python@v5
         with:
