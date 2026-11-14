@@ -15,7 +15,7 @@ jobs:
       - name: 核对令牌身份与音频站工作流访问
         run: |
           test "$(gh api user --jq .login)" = "Owenwoow"
-          gh api 'repos/Owenwoow/cet4-vocab-audio/actions/workflows/pages-build-deployment/runs?per_page=1' --jq '.workflow_runs[0].conclusion'
+          gh api 'repos/Owenwoow/cet4-vocab-audio/actions/workflows/370915928/runs?per_page=1' --jq '.workflow_runs[0].conclusion'
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.AUDIO_REPO_TOKEN }}
