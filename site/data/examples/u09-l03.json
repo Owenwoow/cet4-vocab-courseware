@@ -27,6 +27,15 @@
         ]
       }
     ],
+    "8": [
+      {
+        "en": "The clinic provides free checkups for local residents.",
+        "zh": "这家诊所为当地居民提供免费体检。",
+        "key": [
+          "provides"
+        ]
+      }
+    ],
     "9": [
       {
         "en": "You can borrow my bike, provided you bring it back tonight.",
@@ -123,6 +132,15 @@
         "zh": "这场风暴给这个小岛带来了灾难。",
         "key": [
           "disaster"
+        ]
+      }
+    ],
+    "34": [
+      {
+        "en": "A prolonged drought led to famine in the region.",
+        "zh": "长期干旱导致该地区发生饥荒。",
+        "key": [
+          "famine"
         ]
       }
     ],

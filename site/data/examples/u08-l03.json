@@ -1,5 +1,14 @@
 {
   "entries": {
+    "5": [
+      {
+        "en": "The family sought help after the flood caused severe distress.",
+        "zh": "洪水造成严重困扰后，这家人寻求了帮助。",
+        "key": [
+          "distress"
+        ]
+      }
+    ],
     "6": [
       {
         "en": "Take a short walk to reduce stress.",
@@ -78,6 +87,15 @@
         "zh": "网站瘫痪了，办公室里一片混乱。",
         "key": [
           "chaos"
+        ]
+      }
+    ],
+    "38": [
+      {
+        "en": "Regular exercise can weaken the effects of stress.",
+        "zh": "规律运动能减轻压力带来的影响。",
+        "key": [
+          "weaken"
         ]
       }
     ],

@@ -27,6 +27,15 @@
         ]
       }
     ],
+    "11": [
+      {
+        "en": "The shop exports handmade furniture to Japan.",
+        "zh": "这家商店向日本出口手工家具。",
+        "key": [
+          "exports"
+        ]
+      }
+    ],
     "14": [
       {
         "en": "Please give specific examples from your daily life.",
@@ -78,6 +87,15 @@
         "zh": "我整个星期都被感冒困扰。",
         "key": [
           "plagued"
+        ]
+      }
+    ],
+    "33": [
+      {
+        "en": "The team neglected to update the shared schedule.",
+        "zh": "团队疏忽了，没有更新共享日程。",
+        "key": [
+          "neglected"
         ]
       }
     ],

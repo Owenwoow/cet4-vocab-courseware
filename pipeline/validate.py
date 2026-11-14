@@ -152,7 +152,7 @@ def validate(path):
 
 
 WORD_CH = re.compile(r"[A-Za-z']")
-EXAMPLE_IRREGULAR = {"overcame": "overcome", "undertook": "undertake"}
+EXAMPLE_IRREGULAR = {"overcame": "overcome", "undertook": "undertake", "overheard": "overhear"}
 
 
 def example_target_in(word, key):

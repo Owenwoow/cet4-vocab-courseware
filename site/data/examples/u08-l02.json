@@ -36,6 +36,15 @@
         ]
       }
     ],
+    "12": [
+      {
+        "en": "Please contact me if the app stops working.",
+        "zh": "如果应用停止运行，请联系我。",
+        "key": [
+          "contact"
+        ]
+      }
+    ],
     "13": [
       {
         "en": "Keep the receipt intact in case you need to return the item.",
@@ -87,6 +96,15 @@
         "zh": "红色警示灯表明电量不足。",
         "key": [
           "suggests"
+        ]
+      }
+    ],
+    "36": [
+      {
+        "en": "The town celebrates the harvest with a street festival.",
+        "zh": "小镇通过街头节庆庆祝丰收。",
+        "key": [
+          "celebrates"
         ]
       }
     ],

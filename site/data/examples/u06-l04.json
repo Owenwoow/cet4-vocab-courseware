@@ -9,12 +9,30 @@
         ]
       }
     ],
+    "5": [
+      {
+        "en": "The workers are paid a weekly wage.",
+        "zh": "这些工人按周领取工资。",
+        "key": [
+          "wage"
+        ]
+      }
+    ],
     "6": [
       {
         "en": "There is no extra fee for online payments.",
         "zh": "网上付款不收额外费用。",
         "key": [
           "fee"
+        ]
+      }
+    ],
+    "14": [
+      {
+        "en": "The airline rewarded passengers for reporting the lost bag.",
+        "zh": "航空公司奖励了报告行李遗失情况的乘客。",
+        "key": [
+          "rewarded"
         ]
       }
     ],

@@ -18,12 +18,30 @@
         ]
       }
     ],
+    "10": [
+      {
+        "en": "The app requires a six-digit code to unlock your account.",
+        "zh": "这个应用要求输入六位数验证码才能解锁账户。",
+        "key": [
+          "requires"
+        ]
+      }
+    ],
     "13": [
       {
         "en": "You can acquire new skills by practising every day.",
         "zh": "每天练习就能学会新技能。",
         "key": [
           "acquire"
+        ]
+      }
+    ],
+    "18": [
+      {
+        "en": "A delayed refund frustrated several customers.",
+        "zh": "退款延迟让几位顾客很恼火。",
+        "key": [
+          "frustrated"
         ]
       }
     ],

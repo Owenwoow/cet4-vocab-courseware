@@ -1,1 +1,148 @@
-{"entries":{"3":[{"en":"The two sides reached a consensus after a long meeting.","zh":"双方经过长时间会议后达成了共识。","key":["reached a consensus"]}],"8":[{"en":"Follow the steps in the procedure to reset your password.","zh":"按照操作步骤重置密码。","key":["procedure"]}],"9":[{"en":"You need a password to access your account.","zh":"你需要密码才能访问自己的账户。","key":["access your account"]}],"10":[{"en":"The teacher assessed each student's reading skills.","zh":"老师评估了每位学生的阅读能力。","key":["assessed"]}],"13":[{"en":"The store donated its surplus food to a local shelter.","zh":"商店把多余的食物捐给了当地收容所。","key":["surplus food"]}],"15":[{"en":"Pour off the excess water before serving.","zh":"上菜前倒掉多余的水。","key":["excess water"]}],"18":[{"en":"The new manager is the successor to Ms. Lee.","zh":"新经理是李女士的接任者。","key":["successor"]}],"21":[{"en":"We wandered through the market and tried some snacks.","zh":"我们在市场里闲逛，还尝了些小吃。","key":["wandered"]}],"31":[{"en":"Her motive for joining the club was to meet new people.","zh":"她加入俱乐部的目的是结识新朋友。","key":["motive"]}],"35":[{"en":"Try to stay rational when you compare phone plans.","zh":"比较手机套餐时尽量保持理性。","key":["stay rational"]}],"38":[{"en":"Only a small percentage of the class chose the early bus.","zh":"班上只有一小部分人选择了早班公交。","key":["percentage"]}],"49":[{"en":"We held a virtual meeting because the roads were closed.","zh":"由于道路封闭，我们举行了线上会议。","key":["virtual meeting"]}],"54":[{"en":"A large proportion of the budget goes to rent.","zh":"预算中很大一部分用于支付租金。","key":["proportion"]}],"57":[{"en":"The app gives new users a simple framework for planning a budget.","zh":"这款应用为新用户提供了简单的预算规划框架。","key":["framework"]}],"64":[{"en":"These plants flourish in warm, sunny places.","zh":"这些植物在温暖、阳光充足的地方长得茂盛。","key":["flourish"]}]}}
+{
+  "entries": {
+    "3": [
+      {
+        "en": "The two sides reached a consensus after a long meeting.",
+        "zh": "双方经过长时间会议后达成了共识。",
+        "key": [
+          "reached a consensus"
+        ]
+      }
+    ],
+    "8": [
+      {
+        "en": "Follow the steps in the procedure to reset your password.",
+        "zh": "按照操作步骤重置密码。",
+        "key": [
+          "procedure"
+        ]
+      }
+    ],
+    "9": [
+      {
+        "en": "You need a password to access your account.",
+        "zh": "你需要密码才能访问自己的账户。",
+        "key": [
+          "access your account"
+        ]
+      }
+    ],
+    "10": [
+      {
+        "en": "The teacher assessed each student's reading skills.",
+        "zh": "老师评估了每位学生的阅读能力。",
+        "key": [
+          "assessed"
+        ]
+      }
+    ],
+    "13": [
+      {
+        "en": "The store donated its surplus food to a local shelter.",
+        "zh": "商店把多余的食物捐给了当地收容所。",
+        "key": [
+          "surplus food"
+        ]
+      }
+    ],
+    "15": [
+      {
+        "en": "Pour off the excess water before serving.",
+        "zh": "上菜前倒掉多余的水。",
+        "key": [
+          "excess water"
+        ]
+      }
+    ],
+    "17": [
+      {
+        "en": "She succeeded in finding a cheaper flight after checking several sites.",
+        "zh": "她查了几个网站后，成功找到了一趟更便宜的航班。",
+        "key": [
+          "succeeded in finding"
+        ]
+      }
+    ],
+    "18": [
+      {
+        "en": "The new manager is the successor to Ms. Lee.",
+        "zh": "新经理是李女士的接任者。",
+        "key": [
+          "successor"
+        ]
+      }
+    ],
+    "21": [
+      {
+        "en": "We wandered through the market and tried some snacks.",
+        "zh": "我们在市场里闲逛，还尝了些小吃。",
+        "key": [
+          "wandered"
+        ]
+      }
+    ],
+    "31": [
+      {
+        "en": "Her motive for joining the club was to meet new people.",
+        "zh": "她加入俱乐部的目的是结识新朋友。",
+        "key": [
+          "motive"
+        ]
+      }
+    ],
+    "35": [
+      {
+        "en": "Try to stay rational when you compare phone plans.",
+        "zh": "比较手机套餐时尽量保持理性。",
+        "key": [
+          "stay rational"
+        ]
+      }
+    ],
+    "38": [
+      {
+        "en": "Only a small percentage of the class chose the early bus.",
+        "zh": "班上只有一小部分人选择了早班公交。",
+        "key": [
+          "percentage"
+        ]
+      }
+    ],
+    "49": [
+      {
+        "en": "We held a virtual meeting because the roads were closed.",
+        "zh": "由于道路封闭，我们举行了线上会议。",
+        "key": [
+          "virtual meeting"
+        ]
+      }
+    ],
+    "54": [
+      {
+        "en": "A large proportion of the budget goes to rent.",
+        "zh": "预算中很大一部分用于支付租金。",
+        "key": [
+          "proportion"
+        ]
+      }
+    ],
+    "57": [
+      {
+        "en": "The app gives new users a simple framework for planning a budget.",
+        "zh": "这款应用为新用户提供了简单的预算规划框架。",
+        "key": [
+          "framework"
+        ]
+      }
+    ],
+    "64": [
+      {
+        "en": "These plants flourish in warm, sunny places.",
+        "zh": "这些植物在温暖、阳光充足的地方长得茂盛。",
+        "key": [
+          "flourish"
+        ]
+      }
+    ]
+  }
+}

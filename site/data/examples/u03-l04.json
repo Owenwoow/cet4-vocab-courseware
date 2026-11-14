@@ -1,1 +1,112 @@
-{"entries":{"9":[{"en":"The school will evaluate the new lunch menu at the end of the month.","zh":"学校将在月底评估新的午餐菜单。","key":["evaluate"]}],"11":[{"en":"I reckon the walk will take about twenty minutes.","zh":"我估计步行大约需要二十分钟。","key":["reckon"]}],"14":[{"en":"The price is approximate because delivery costs may change.","zh":"这个价格只是大约数，因为配送费可能变化。","key":["approximate"]}],"16":[{"en":"The team expended a great deal of effort on the design.","zh":"团队在这项设计上投入了大量精力。","key":["expended"]}],"21":[{"en":"The hall has a capacity of 300 people.","zh":"这个大厅可容纳300人。","key":["capacity"]}],"29":[{"en":"The exact origin of this recipe is unknown.","zh":"这道菜的确切起源尚不清楚。","key":["origin"]}],"33":[{"en":"The word 'robot' derives from a Czech word for forced labor.","zh":"robot一词源自一个表示强制劳动的捷克语词。","key":["derives from"]}],"34":[{"en":"Lack of sleep can deprive you of energy the next day.","zh":"睡眠不足会让你第二天精力不济。","key":["deprive you of"]}],"38":[{"en":"Small shops thrive when local people support them.","zh":"当地居民支持小店时，小店就能兴旺发展。","key":["thrive"]}],"48":[{"en":"Can you distinguish between these two sounds?","zh":"你能分辨这两种声音吗？","key":["distinguish between"]}],"51":[{"en":"Firefighters quickly extinguished the flames.","zh":"消防员迅速扑灭了火焰。","key":["extinguished"]}]}}
+{
+  "entries": {
+    "6": [
+      {
+        "en": "We should appreciate the volunteers who give their time every weekend.",
+        "zh": "我们应该感谢每个周末抽出时间做志愿服务的人。",
+        "key": [
+          "appreciate the volunteers"
+        ]
+      }
+    ],
+    "9": [
+      {
+        "en": "The school will evaluate the new lunch menu at the end of the month.",
+        "zh": "学校将在月底评估新的午餐菜单。",
+        "key": [
+          "evaluate"
+        ]
+      }
+    ],
+    "11": [
+      {
+        "en": "I reckon the walk will take about twenty minutes.",
+        "zh": "我估计步行大约需要二十分钟。",
+        "key": [
+          "reckon"
+        ]
+      }
+    ],
+    "14": [
+      {
+        "en": "The price is approximate because delivery costs may change.",
+        "zh": "这个价格只是大约数，因为配送费可能变化。",
+        "key": [
+          "approximate"
+        ]
+      }
+    ],
+    "16": [
+      {
+        "en": "The team expended a great deal of effort on the design.",
+        "zh": "团队在这项设计上投入了大量精力。",
+        "key": [
+          "expended"
+        ]
+      }
+    ],
+    "21": [
+      {
+        "en": "The hall has a capacity of 300 people.",
+        "zh": "这个大厅可容纳300人。",
+        "key": [
+          "capacity"
+        ]
+      }
+    ],
+    "29": [
+      {
+        "en": "The exact origin of this recipe is unknown.",
+        "zh": "这道菜的确切起源尚不清楚。",
+        "key": [
+          "origin"
+        ]
+      }
+    ],
+    "33": [
+      {
+        "en": "The word 'robot' derives from a Czech word for forced labor.",
+        "zh": "robot一词源自一个表示强制劳动的捷克语词。",
+        "key": [
+          "derives from"
+        ]
+      }
+    ],
+    "34": [
+      {
+        "en": "Lack of sleep can deprive you of energy the next day.",
+        "zh": "睡眠不足会让你第二天精力不济。",
+        "key": [
+          "deprive you of"
+        ]
+      }
+    ],
+    "38": [
+      {
+        "en": "Small shops thrive when local people support them.",
+        "zh": "当地居民支持小店时，小店就能兴旺发展。",
+        "key": [
+          "thrive"
+        ]
+      }
+    ],
+    "48": [
+      {
+        "en": "Can you distinguish between these two sounds?",
+        "zh": "你能分辨这两种声音吗？",
+        "key": [
+          "distinguish between"
+        ]
+      }
+    ],
+    "51": [
+      {
+        "en": "Firefighters quickly extinguished the flames.",
+        "zh": "消防员迅速扑灭了火焰。",
+        "key": [
+          "extinguished"
+        ]
+      }
+    ]
+  }
+}

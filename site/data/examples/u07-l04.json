@@ -108,6 +108,15 @@
         ]
       }
     ],
+    "35": [
+      {
+        "en": "Please ensure that every window is closed before you leave.",
+        "zh": "离开前请确保每扇窗户都关好了。",
+        "key": [
+          "ensure"
+        ]
+      }
+    ],
     "38": [
       {
         "en": "We reached a compromise on the meeting time.",

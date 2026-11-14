@@ -36,6 +36,15 @@
         ]
       }
     ],
+    "6": [
+      {
+        "en": "She remained conscious throughout the short operation.",
+        "zh": "她在整个短暂的手术过程中都保持清醒。",
+        "key": [
+          "conscious"
+        ]
+      }
+    ],
     "8": [
       {
         "en": "I did not perceive any difference in sound quality.",
@@ -78,6 +87,15 @@
         "zh": "这家店有很多种线缆可选。",
         "key": [
           "broad"
+        ]
+      }
+    ],
+    "30": [
+      {
+        "en": "Passengers may board the train after the announcement.",
+        "zh": "广播通知后，乘客可以上火车。",
+        "key": [
+          "board"
         ]
       }
     ],

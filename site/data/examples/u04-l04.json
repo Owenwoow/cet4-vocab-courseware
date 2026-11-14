@@ -1,1 +1,121 @@
-{"entries":{"4":[{"en":"Please dispose of batteries at a recycling center.","zh":"请把电池送到回收中心处理。","key":["dispose of"]}],"11":[{"en":"The battery is a key component of an electric car.","zh":"电池是电动汽车的关键组成部分。","key":["component"]}],"12":[{"en":"The new rules impose limits on water use.","zh":"新规定对用水量设定了限制。","key":["impose limits"]}],"19":[{"en":"The purpose of this survey is to improve bus service.","zh":"这项调查的目的是改善公交服务。","key":["purpose"]}],"21":[{"en":"Agriculture provides work for many people in the region.","zh":"农业为这个地区的许多人提供了工作。","key":["Agriculture"]}],"33":[{"en":"The new policy received widespread support.","zh":"这项新政策得到了广泛支持。","key":["widespread support"]}],"36":[{"en":"The village was under siege for several weeks.","zh":"这个村庄被围困了好几个星期。","key":["under siege"]}],"43":[{"en":"Schools can influence children outside the sphere of family life.","zh":"学校可以在家庭生活之外的领域影响孩子。","key":["sphere of family life"]}],"49":[{"en":"Please recycle glass bottles instead of throwing them away.","zh":"请回收玻璃瓶，不要把它们扔掉。","key":["recycle"]}],"54":[{"en":"Good exercise helps blood circulate around the body.","zh":"适当运动有助于血液在全身循环。","key":["circulate"]}],"57":[{"en":"The meaning of the word is clear from its context.","zh":"从上下文可以看出这个词的意思。","key":["context"]}],"59":[{"en":"Residents held a protest against the plan to cut the trees.","zh":"居民举行抗议，反对砍伐树木的计划。","key":["protest"]}]}}
+{
+  "entries": {
+    "4": [
+      {
+        "en": "Please dispose of batteries at a recycling center.",
+        "zh": "请把电池送到回收中心处理。",
+        "key": [
+          "dispose of"
+        ]
+      }
+    ],
+    "8": [
+      {
+        "en": "She deposited the cheque at the bank before work.",
+        "zh": "上班前，她把支票存进了银行。",
+        "key": [
+          "deposited the cheque"
+        ]
+      }
+    ],
+    "11": [
+      {
+        "en": "The battery is a key component of an electric car.",
+        "zh": "电池是电动汽车的关键组成部分。",
+        "key": [
+          "component"
+        ]
+      }
+    ],
+    "12": [
+      {
+        "en": "The new rules impose limits on water use.",
+        "zh": "新规定对用水量设定了限制。",
+        "key": [
+          "impose limits"
+        ]
+      }
+    ],
+    "19": [
+      {
+        "en": "The purpose of this survey is to improve bus service.",
+        "zh": "这项调查的目的是改善公交服务。",
+        "key": [
+          "purpose"
+        ]
+      }
+    ],
+    "21": [
+      {
+        "en": "Agriculture provides work for many people in the region.",
+        "zh": "农业为这个地区的许多人提供了工作。",
+        "key": [
+          "Agriculture"
+        ]
+      }
+    ],
+    "33": [
+      {
+        "en": "The new policy received widespread support.",
+        "zh": "这项新政策得到了广泛支持。",
+        "key": [
+          "widespread support"
+        ]
+      }
+    ],
+    "36": [
+      {
+        "en": "The village was under siege for several weeks.",
+        "zh": "这个村庄被围困了好几个星期。",
+        "key": [
+          "under siege"
+        ]
+      }
+    ],
+    "43": [
+      {
+        "en": "Schools can influence children outside the sphere of family life.",
+        "zh": "学校可以在家庭生活之外的领域影响孩子。",
+        "key": [
+          "sphere of family life"
+        ]
+      }
+    ],
+    "49": [
+      {
+        "en": "Please recycle glass bottles instead of throwing them away.",
+        "zh": "请回收玻璃瓶，不要把它们扔掉。",
+        "key": [
+          "recycle"
+        ]
+      }
+    ],
+    "54": [
+      {
+        "en": "Good exercise helps blood circulate around the body.",
+        "zh": "适当运动有助于血液在全身循环。",
+        "key": [
+          "circulate"
+        ]
+      }
+    ],
+    "57": [
+      {
+        "en": "The meaning of the word is clear from its context.",
+        "zh": "从上下文可以看出这个词的意思。",
+        "key": [
+          "context"
+        ]
+      }
+    ],
+    "59": [
+      {
+        "en": "Residents held a protest against the plan to cut the trees.",
+        "zh": "居民举行抗议，反对砍伐树木的计划。",
+        "key": [
+          "protest"
+        ]
+      }
+    ]
+  }
+}

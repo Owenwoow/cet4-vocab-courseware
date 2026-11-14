@@ -63,6 +63,15 @@
         ]
       }
     ],
+    "27": [
+      {
+        "en": "The company signed a three-year contract with the supplier.",
+        "zh": "公司与供应商签订了一份为期三年的合同。",
+        "key": [
+          "contract"
+        ]
+      }
+    ],
     "31": [
       {
         "en": "Turn off notifications so they do not distract you.",
@@ -87,6 +96,15 @@
         "zh": "昨晚噪声太大，我几乎没睡。",
         "key": [
           "barely"
+        ]
+      }
+    ],
+    "42": [
+      {
+        "en": "A mere five minutes of rain flooded the underpass.",
+        "zh": "仅仅五分钟的降雨就淹了地下通道。",
+        "key": [
+          "mere"
         ]
       }
     ],

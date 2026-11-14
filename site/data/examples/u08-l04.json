@@ -45,6 +45,15 @@
         ]
       }
     ],
+    "14": [
+      {
+        "en": "The manager confronted the supplier about the late delivery.",
+        "zh": "经理就交货延误一事质问了供应商。",
+        "key": [
+          "confronted"
+        ]
+      }
+    ],
     "22": [
       {
         "en": "The two candidates had a public debate online.",
@@ -87,6 +96,15 @@
         "zh": "团队正在调查服务器停止运行的原因。",
         "key": [
           "investigating"
+        ]
+      }
+    ],
+    "37": [
+      {
+        "en": "The report includes statistics on household energy use.",
+        "zh": "这份报告包含家庭能源使用方面的统计数据。",
+        "key": [
+          "statistics"
         ]
       }
     ],

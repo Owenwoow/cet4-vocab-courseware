@@ -63,12 +63,30 @@
         ]
       }
     ],
+    "32": [
+      {
+        "en": "The patient was discharged from hospital the next morning.",
+        "zh": "病人第二天早上出院了。",
+        "key": [
+          "discharged"
+        ]
+      }
+    ],
     "34": [
       {
         "en": "New legislation protects your personal data.",
         "zh": "新法规保护你的个人数据。",
         "key": [
           "legislation"
+        ]
+      }
+    ],
+    "37": [
+      {
+        "en": "We sent the first draft to the editor for comments.",
+        "zh": "我们把初稿发给编辑征求意见。",
+        "key": [
+          "draft"
         ]
       }
     ],

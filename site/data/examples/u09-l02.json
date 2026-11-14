@@ -99,6 +99,15 @@
         ]
       }
     ],
+    "40": [
+      {
+        "en": "The software has a sophisticated search function.",
+        "zh": "这款软件有一个先进的搜索功能。",
+        "key": [
+          "sophisticated"
+        ]
+      }
+    ],
     "41": [
       {
         "en": "Could you clarify which version I should install?",

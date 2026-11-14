@@ -54,6 +54,15 @@
         ]
       }
     ],
+    "19": [
+      {
+        "en": "The designer is weaving copper wire into the sculpture.",
+        "zh": "设计师正在把铜丝编织进这件雕塑中。",
+        "key": [
+          "weaving"
+        ]
+      }
+    ],
     "23": [
       {
         "en": "Please tidy your desk before you leave.",
@@ -69,6 +78,15 @@
         "zh": "豆类是很好的膳食纤维来源。",
         "key": [
           "fibre"
+        ]
+      }
+    ],
+    "26": [
+      {
+        "en": "Beans and eggs are inexpensive sources of protein.",
+        "zh": "豆类和鸡蛋是价格低廉的蛋白质来源。",
+        "key": [
+          "protein"
         ]
       }
     ],

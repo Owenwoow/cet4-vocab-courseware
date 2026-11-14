@@ -1,1 +1,121 @@
-{"entries":{"5":[{"en":"The coach assigned each player a practice partner.","zh":"教练给每位队员安排了一名练习搭档。","key":["assigned"]}],"10":[{"en":"There was a significant drop in bus delays after the repair.","zh":"维修后，公交晚点的情况明显减少。","key":["significant drop"]}],"12":[{"en":"A phone is indispensable when you travel alone.","zh":"独自旅行时，手机必不可少。","key":["indispensable"]}],"17":[{"en":"The school appointed Maya to lead the science club.","zh":"学校任命玛雅负责科学俱乐部。","key":["appointed"]}],"19":[{"en":"The hotel can accommodate up to fifty guests.","zh":"这家酒店最多能容纳五十位客人。","key":["accommodate"]}],"21":[{"en":"The city adopted a new plan to make buses safer.","zh":"市政府采纳了一项让公交更安全的新计划。","key":["adopted"]}],"28":[{"en":"The rule seemed arbitrary because nobody explained it.","zh":"这条规定显得很武断，因为没人解释原因。","key":["arbitrary"]}],"30":[{"en":"We need an alternative route because the bridge is closed.","zh":"桥封闭了，我们需要换一条路线。","key":["alternative route"]}],"35":[{"en":"Prices vary from store to store, so compare before you buy.","zh":"各家商店的价格不同，购买前可以比较一下。","key":["vary"]}],"37":[{"en":"The bus invariably arrives a few minutes early.","zh":"这班公交总是早到几分钟。","key":["invariably"]}],"41":[{"en":"You can modify the text before you print the form.","zh":"打印表格前，你可以修改文字。","key":["modify"]}],"45":[{"en":"This material can tolerate high heat.","zh":"这种材料可以耐高温。","key":["tolerate"]}]}}
+{
+  "entries": {
+    "5": [
+      {
+        "en": "The coach assigned each player a practice partner.",
+        "zh": "教练给每位队员安排了一名练习搭档。",
+        "key": [
+          "assigned"
+        ]
+      }
+    ],
+    "10": [
+      {
+        "en": "There was a significant drop in bus delays after the repair.",
+        "zh": "维修后，公交晚点的情况明显减少。",
+        "key": [
+          "significant drop"
+        ]
+      }
+    ],
+    "11": [
+      {
+        "en": "A valid passport is essential for international travel.",
+        "zh": "持有效护照是国际旅行的必备条件。",
+        "key": [
+          "is essential"
+        ]
+      }
+    ],
+    "12": [
+      {
+        "en": "A phone is indispensable when you travel alone.",
+        "zh": "独自旅行时，手机必不可少。",
+        "key": [
+          "indispensable"
+        ]
+      }
+    ],
+    "17": [
+      {
+        "en": "The school appointed Maya to lead the science club.",
+        "zh": "学校任命玛雅负责科学俱乐部。",
+        "key": [
+          "appointed"
+        ]
+      }
+    ],
+    "19": [
+      {
+        "en": "The hotel can accommodate up to fifty guests.",
+        "zh": "这家酒店最多能容纳五十位客人。",
+        "key": [
+          "accommodate"
+        ]
+      }
+    ],
+    "21": [
+      {
+        "en": "The city adopted a new plan to make buses safer.",
+        "zh": "市政府采纳了一项让公交更安全的新计划。",
+        "key": [
+          "adopted"
+        ]
+      }
+    ],
+    "28": [
+      {
+        "en": "The rule seemed arbitrary because nobody explained it.",
+        "zh": "这条规定显得很武断，因为没人解释原因。",
+        "key": [
+          "arbitrary"
+        ]
+      }
+    ],
+    "30": [
+      {
+        "en": "We need an alternative route because the bridge is closed.",
+        "zh": "桥封闭了，我们需要换一条路线。",
+        "key": [
+          "alternative route"
+        ]
+      }
+    ],
+    "35": [
+      {
+        "en": "Prices vary from store to store, so compare before you buy.",
+        "zh": "各家商店的价格不同，购买前可以比较一下。",
+        "key": [
+          "vary"
+        ]
+      }
+    ],
+    "37": [
+      {
+        "en": "The bus invariably arrives a few minutes early.",
+        "zh": "这班公交总是早到几分钟。",
+        "key": [
+          "invariably"
+        ]
+      }
+    ],
+    "41": [
+      {
+        "en": "You can modify the text before you print the form.",
+        "zh": "打印表格前，你可以修改文字。",
+        "key": [
+          "modify"
+        ]
+      }
+    ],
+    "45": [
+      {
+        "en": "This material can tolerate high heat.",
+        "zh": "这种材料可以耐高温。",
+        "key": [
+          "tolerate"
+        ]
+      }
+    ]
+  }
+}
