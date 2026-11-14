@@ -23,7 +23,7 @@
         "en": "The café caters to people who need a quiet place to work.",
         "zh": "这家咖啡馆为需要安静工作场所的人提供服务。",
         "key": [
-          "caters to"
+          "caters"
         ]
       }
     ],
@@ -32,7 +32,7 @@
         "en": "The doctor recommended a low-salt diet for his blood pressure.",
         "zh": "医生建议他为控制血压采用低盐饮食。",
         "key": [
-          "low-salt diet"
+          "diet"
         ]
       }
     ],
@@ -95,7 +95,7 @@
         "en": "The rope is under strain, so do not pull it harder.",
         "zh": "绳子正承受着拉力，不要再用力拉。",
         "key": [
-          "under strain"
+          "strain"
         ]
       }
     ],
@@ -113,7 +113,7 @@
         "en": "This ticket entitles you to one free drink.",
         "zh": "这张票可以让你免费领取一杯饮料。",
         "key": [
-          "entitles you to"
+          "entitles"
         ]
       }
     ]

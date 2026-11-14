@@ -8,7 +8,7 @@ import re
 import sys
 
 from config import DATA, LESSONS, ROOT
-from gloss_words import lemma_candidates
+from gloss_words import example_gloss_errors, lemma_candidates
 
 VIDEO_SOURCES = ROOT / "pipeline" / "video_sources.json"
 
@@ -155,15 +155,14 @@ WORD_CH = re.compile(r"[A-Za-z']")
 EXAMPLE_IRREGULAR = {"overcame": "overcome", "undertook": "undertake", "overheard": "overhear"}
 
 
-def example_target_in(word, key):
-    if phrase_in(key, word):
+def is_example_target(word, key):
+    if key == word:
         return True
-    for token in re.findall(r"[a-z']+", key.lower()):
-        if word in lemma_candidates(token) or EXAMPLE_IRREGULAR.get(token) == word:
-            return True
-        if re.search(r"([b-df-hj-np-tv-z])\1(?:ed|ing)$", token) and re.sub(r"([b-df-hj-np-tv-z])\1(?:ed|ing)$", r"\1", token) == word:
-            return True
-    return False
+    if not re.fullmatch(r"[a-z']+", key):
+        return False
+    if word in lemma_candidates(key) or EXAMPLE_IRREGULAR.get(key) == word:
+        return True
+    return re.sub(r"([b-df-hj-np-tv-z])\1(?:ed|ing)$", r"\1", key) == word
 
 
 def check_examples(r, data):
@@ -178,6 +177,7 @@ def check_examples(r, data):
     except (ValueError, KeyError, TypeError) as exc:
         r.err("补充例句", f"读取失败：{exc}")
         return
+    errors_before = len(r.errors)
     by_no = {str(e["no"]): e for g in data["groups"] for e in g["entries"]}
     for no, examples in entries.items():
         entry = by_no.get(no)
@@ -206,8 +206,13 @@ def check_examples(r, data):
                 not isinstance(k, str) or not k.strip() or not phrase_in(en, k) for k in keys
             ):
                 r.err(where, f"重点词空缺或不在例句里：{en}")
-            elif not any(example_target_in(entry["word"].lower(), k) for k in keys):
-                r.err(where, f"未高亮目标词或其词形：{en}")
+            elif any(not is_example_target(entry["word"].lower(), k.lower()) for k in keys):
+                r.err(where, f"只能高亮目标词或其词形：{en}")
+    if len(r.errors) == errors_before:
+        gloss = DATA / "gloss" / path.name
+        definitions = json.loads(gloss.read_text(encoding="utf-8")) if gloss.exists() else {}
+        for error in example_gloss_errors(data, entries, definitions):
+            r.err("补充例句", error)
 
 
 def find_at_boundary(s, t, start=0):

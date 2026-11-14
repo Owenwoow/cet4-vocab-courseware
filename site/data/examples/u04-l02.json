@@ -14,7 +14,7 @@
         "en": "Keep the soil moist while the seedlings are growing.",
         "zh": "幼苗生长期间要保持土壤湿润。",
         "key": [
-          "Keep the soil moist"
+          "moist"
         ]
       }
     ],
@@ -77,7 +77,7 @@
         "en": "Most people are not immune to the flu.",
         "zh": "大多数人都无法对流感免疫。",
         "key": [
-          "immune to"
+          "immune"
         ]
       }
     ],

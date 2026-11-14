@@ -14,7 +14,7 @@
         "en": "You can withdraw cash from the machine outside the bank.",
         "zh": "你可以在银行外的机器上取现金。",
         "key": [
-          "withdraw cash"
+          "withdraw"
         ]
       }
     ],
@@ -23,7 +23,7 @@
         "en": "Her actions are consistent with what she says.",
         "zh": "她的行为和她说的话一致。",
         "key": [
-          "consistent with"
+          "consistent"
         ]
       }
     ],
@@ -50,7 +50,7 @@
         "en": "You can substitute oat milk for dairy milk in this recipe.",
         "zh": "这个食谱里可以用燕麦奶代替牛奶。",
         "key": [
-          "substitute oat milk for"
+          "substitute"
         ]
       }
     ],
@@ -86,7 +86,7 @@
         "en": "The news site is independent of the government.",
         "zh": "这个新闻网站独立于政府。",
         "key": [
-          "independent of"
+          "independent"
         ]
       }
     ],
@@ -104,7 +104,7 @@
         "en": "A short walk can relieve stress after a long day.",
         "zh": "忙碌一天后，短暂散步可以缓解压力。",
         "key": [
-          "relieve stress"
+          "relieve"
         ]
       }
     ],
@@ -113,7 +113,7 @@
         "en": "The city plans to exploit wind power to produce clean energy.",
         "zh": "这座城市计划利用风能生产清洁能源。",
         "key": [
-          "exploit wind power"
+          "exploit"
         ]
       }
     ]

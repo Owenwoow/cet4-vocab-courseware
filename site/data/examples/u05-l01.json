@@ -5,7 +5,7 @@
         "en": "The school will conduct a survey about lunch options.",
         "zh": "学校将开展一项关于午餐选择的调查。",
         "key": [
-          "conduct a survey"
+          "conduct"
         ]
       }
     ],
@@ -41,7 +41,7 @@
         "en": "The weather service issued a storm forecast for the coast.",
         "zh": "气象部门发布了沿海地区的风暴预报。",
         "key": [
-          "storm forecast"
+          "forecast"
         ]
       }
     ],
@@ -59,7 +59,7 @@
         "en": "They made a deliberate choice to walk instead of drive.",
         "zh": "他们经过慎重考虑，决定步行而不开车。",
         "key": [
-          "deliberate choice"
+          "deliberate"
         ]
       }
     ],
@@ -104,7 +104,7 @@
         "en": "The two teams reached a mutual agreement.",
         "zh": "两个团队达成了共同协议。",
         "key": [
-          "mutual agreement"
+          "mutual"
         ]
       }
     ],
@@ -113,7 +113,7 @@
         "en": "Someone hacked into my email account.",
         "zh": "有人侵入了我的电子邮箱账户。",
         "key": [
-          "hacked into"
+          "hacked"
         ]
       }
     ]

@@ -277,6 +277,56 @@
     "cause": "/kɔːz/ v. 引起；导致；n. 原因；事业",
     "fire": "/ˈfaɪə(r)/ n. 火；火灾；v. 开枪",
     "minor": "/ˈmaɪnə(r)/ adj. 较小的；次要的",
-    "staff": "/stɑːf/ n. 职员；工作人员；参谋部"
+    "staff": "/stɑːf/ n. 职员；工作人员；参谋部",
+    "aid": "/eɪd/ n. 援助；帮助",
+    "app": "n. 应用程序",
+    "asked": "v. 问；要求（ask 的过去式）",
+    "before": "prep. 在……之前；conj. 在……之前",
+    "boost": "/buːst/ v. 促进；增强；提升",
+    "car": "n. 汽车；车",
+    "decision": "n. 决定；决议",
+    "door": "n. 门",
+    "exam": "/ɪɡˈzæm/ n. 考试；测验",
+    "few": "det. 少数的；几个",
+    "files": "/faɪlz/ n. 文件；档案；锉刀（file 的复数）",
+    "first": "adj. 第一的",
+    "friendly": "/ˈfrendli/ adj. 友好的；亲切的；温好的",
+    "improve": "/ɪmˈpruːv/ v. 改进；改善；改良",
+    "includes": "v. 包括；包含（include 的第三人称单数）",
+    "left": "adj. 左边的；v. 离开（leave 的过去式）",
+    "local": "/ˈləʊkl/ adj. 本地的；当地的",
+    "made": "v. 制作；制造（make 的过去式）",
+    "map": "n. 地图",
+    "please": "v. 请；使高兴",
+    "regular": "adj. 普通的；常规的",
+    "reply": "/rɪˈplaɪ/ n. 回复；答复",
+    "share": "v. 分享；共享",
+    "simple": "adj. 简单的；朴素的；单纯的",
+    "small": "adj. 小的；少的",
+    "software": "/ˈsɒftweə(r)/ n. 软件；程序",
+    "teaching": "n. 教学；教法；v. 教导（teach 的进行式）",
+    "team": "n. 队伍；团队",
+    "this": "det. 这个",
+    "unlock": "v. 打开；解锁",
+    "update": "n. 更新；软件更新；v. 更新",
+    "way": "n. 方式；道路",
+    "website": "n. 网站；网页",
+    "which": "pron. 哪一个；那些",
+    "notes": "n. 笔记（note 的复数）",
+    "speaks": "v. 说；讲话",
+    "improves": "/ɪmˈpruːv/ v. 改进；改善；改良",
+    "devised": "v. 设计，发明；想出",
+    "glanced": "n. 匆匆一看，一瞥，扫视；v. 瞥一眼，扫视",
+    "browsed": "v. 浏览，上网浏览信息；（在商店里）随便看看",
+    "minutes": "/ˈmɪnɪt/ n. 分钟",
+    "unlocked": "v. 打开；解锁"
+  },
+  "examples": {
+    "I glanced at the map before we left.": {
+      "left": "v. 离开；出发（leave 的过去式）"
+    },
+    "A small oversight left the door unlocked.": {
+      "left": "v. 使……处于某种状态（leave 的过去式）；这里指门一直没锁"
+    }
   }
 }

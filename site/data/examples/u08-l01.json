@@ -95,7 +95,7 @@
         "en": "Resetting the router is a headache every time.",
         "zh": "每次重置路由器都很让人头疼。",
         "key": [
-          "a headache"
+          "headache"
         ]
       }
     ],
@@ -113,14 +113,14 @@
         "en": "The city needs a remedy for traffic jams.",
         "zh": "这座城市需要解决交通拥堵的办法。",
         "key": [
-          "remedy for"
+          "remedy"
         ]
       },
       {
         "en": "a home remedy for a cough",
         "zh": "治咳嗽的家庭疗法",
         "key": [
-          "home remedy"
+          "remedy"
         ]
       },
       {
@@ -172,7 +172,7 @@
         "en": "Good sleep contributes to better health.",
         "zh": "良好的睡眠有助于健康。",
         "key": [
-          "contributes to"
+          "contributes"
         ]
       }
     ],
@@ -188,8 +188,7 @@
         "en": "She attributes her progress to daily practice.",
         "zh": "她把自己的进步归功于每天练习。",
         "key": [
-          "attributes",
-          "to"
+          "attributes"
         ]
       }
     ],

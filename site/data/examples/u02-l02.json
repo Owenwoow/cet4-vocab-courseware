@@ -14,7 +14,7 @@
         "en": "There was a significant drop in bus delays after the repair.",
         "zh": "维修后，公交晚点的情况明显减少。",
         "key": [
-          "significant drop"
+          "significant"
         ]
       }
     ],
@@ -23,7 +23,7 @@
         "en": "A valid passport is essential for international travel.",
         "zh": "持有效护照是国际旅行的必备条件。",
         "key": [
-          "is essential"
+          "essential"
         ]
       }
     ],
@@ -77,7 +77,7 @@
         "en": "We need an alternative route because the bridge is closed.",
         "zh": "桥封闭了，我们需要换一条路线。",
         "key": [
-          "alternative route"
+          "alternative"
         ]
       }
     ],

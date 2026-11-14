@@ -23,7 +23,7 @@
         "en": "Please keep the receipt in case you need to dispute the bill.",
         "zh": "请保留收据，以备你需要对账单提出异议。",
         "key": [
-          "dispute the bill"
+          "bill"
         ]
       }
     ],
@@ -50,7 +50,7 @@
         "en": "The building will undergo repairs next month.",
         "zh": "这栋楼下个月将进行维修。",
         "key": [
-          "undergo repairs"
+          "undergo"
         ]
       }
     ],

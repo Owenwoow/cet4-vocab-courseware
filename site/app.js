@@ -343,7 +343,7 @@ function lessonExampleHTML(ex, label, added = false) {
   const note = added ? null : noteOf(NOTES, ex.en);
   return `<div class="ex${added ? "" : " book-ex"}${ex.type === "真" ? " zt" : ""}">
       ${label ? `<div class="exlab">${label}</div>` : ""}
-      <div class="sent" lang="en">${sentenceHTML(ex.en, ex.key, note)}</div>
+      <div class="sent" lang="en"${added ? " data-example" : ""}>${sentenceHTML(ex.en, ex.key, note)}</div>
       <div class="zh">${esc(ex.zh)}</div>${Sent.anBlock(note, ex.zh, ex.en, ex.key)}
       <div class="ops"><button class="play">▶ 播放例句</button><button class="play" data-slow="1">🐢 慢速</button></div>
     </div>`;
@@ -353,12 +353,9 @@ function cardHTML(e) {
   const multi = e.prons.length > 1;
   const senses = e.prons.map(p => p.senses.map((s, i) =>
     `<div class="sense">${multi && i === 0 ? `<span class="ipa">${esc(p.ipa)}</span>` : ""}<span class="pos">${esc(s.pos)}</span>${meanHTML(s.mean)}</div>`).join("")).join("");
-  const [featured, ...more] = EXAMPLES[e.no] || [];
-  const bookLabel = e.ex?.type === "真" ? `${e.ex.year} 年真题` : "原书例句";
-  const bookEx = e.ex ? lessonExampleHTML(e.ex, featured ? "" : (e.ex.type === "真" ? `真题 ${e.ex.year}` : "例句")) : "";
-  const ex = featured ? `${lessonExampleHTML(featured, "例句", true)}
-    ${more.length ? `<details class="example-details"><summary>更多用法（${more.length}）</summary>${more.map(x => lessonExampleHTML(x, "", true)).join("")}</details>` : ""}
-    ${bookEx ? `<details class="example-details"><summary>${bookLabel}</summary>${bookEx}</details>` : ""}` : bookEx;
+  const added = EXAMPLES[e.no] || [];
+  const bookEx = e.ex ? lessonExampleHTML(e.ex, e.ex.type === "真" ? `真题 ${e.ex.year}` : "例句") : "";
+  const supplementalEx = added.length ? `<details class="example-details"><summary>补充例句</summary>${added.map(x => lessonExampleHTML(x, "", true)).join("")}</details>` : "";
   const exts = e.ext && e.ext.length ? `<div class="exts">${e.ext.map(x => `<div class="extrow" data-ext="${esc(x.word)}">
       <span class="tag">扩</span><b>${esc(x.word)}</b>${x.alt ? `<span class="ipa">/${esc(x.alt)}</span>` : ""}
       <span class="ipa">${esc(x.ipa)}</span><button class="spk sm" data-say="${esc(x.word)}" title="读">🔊</button>
@@ -374,7 +371,7 @@ function cardHTML(e) {
     <div class="senses">${senses}</div>
     ${e.tip ? `<div class="tip"><span class="tag ${esc(e.tip.type)}">${esc(e.tip.type)}</span>${esc(e.tip.text)}</div>` : ""}
     ${e.root ? `<div class="tip root"><span class="tag 构词">词根</span>${esc(e.root)}<span class="src add">补充</span></div>` : ""}
-    ${ex}${exts}
+    ${bookEx}${supplementalEx}${exts}
   </article>`;
 }
 
@@ -424,7 +421,7 @@ async function loadLesson(id) {
     fetchJSON(`data/video/${id}.json`).catch(() => null),   // 讲解视频跳转：没有这一课的数据就不显示按钮
     fetchJSON(`data/examples/${id}.json`).catch(() => null),
   ]);
-  L = les; GLOSS = gl.words || {}; AUD = au; NOTES = {sents: nt.sents || {}}; VIDEO = vd; EXAMPLES = examples?.entries || {};
+  L = les; GLOSS = gl; AUD = au; NOTES = {sents: nt.sents || {}}; VIDEO = vd; EXAMPLES = examples?.entries || {};
   for (const g of L.groups) for (const e of g.entries) e.root = rt.words?.[e.word];   // 词根法（书外补充）
   WORDMAP.clear();
   for (const g of L.groups) for (const e of g.entries) {
@@ -541,10 +538,10 @@ function placePop() {
 const lesShort = lid => `U${+lid.slice(1, 3)} L${+lid.slice(5, 7)}`;
 const bookAt = w => (Object.hasOwn(BOOK.search, w) ? BOOK.search[w] : null);   // 书中位置 [课id, 词条序号, 是否扩展词]
 function vocabTarget(q, src, c) {
-  const b = !q.includes(" ") && findWord(q, c.map);     // 本课词条 / 扩展词
-  const g = c.gloss[q] || "";
+  const g = directGloss(q, c);
+  const b = !q.includes(" ") && (!c.example || !g) && bookWordFor(q, c);
   const w = b ? b.word : Vocab.lemma(q, g, bookAt);
-  const {p, m} = Vocab.parse(g, w !== q);
+  const {p, m} = Vocab.parse(g || glossFor(q, c), w !== q);
   return {w, x: q, m: b ? sensesText(b.senses) : m, p: b ? b.ipa : w === q ? p : "", k: c.lid, e: src || "", bk: bookAt(w)};
 }
 /* 浮层底部的按钮：加入 / 移出；书上已在复习的词改为「记一次忘了」 */
@@ -565,7 +562,7 @@ function vocabButton(v) {
 }
 
 /* 查词用哪课的数据：课文页是本课；首页巩固里的例句带 data-lid，用那课的（study.js 读来缓存） */
-const curCtx = () => ({lid: L.id, gloss: GLOSS, map: WORDMAP, aud: AUD, notes: NOTES});
+const curCtx = () => ({lid: L.id, gloss: GLOSS.words || {}, exampleGloss: GLOSS.examples || {}, map: WORDMAP, aud: AUD, notes: NOTES});
 /* 「析」里的英文块（.snip）属于它所在例句块里的那句 .sent：查词上下文、出处、整句原文都按那句算 */
 const SENT = ".sent,.snip";
 const hostOf = el => { const sn = el.closest && el.closest(".snip"); return (sn && sn.closest(".ex") && sn.closest(".ex").querySelector(".sent")) || el; };
@@ -578,39 +575,37 @@ function speakIn(text, c) {
 /* 点到例句里的词（el）或选中一段：查词 + 读出来 */
 async function lookupAt(el, text, rect) {
   const c = await ctxOf(el);
-  lookup(text, rect, srcOf(el), c); speakIn(text, c);
+  const example = el.closest(".sent[data-example]");
+  const context = example ? {...c, example: true, sentenceGloss: c.exampleGloss?.[example.textContent]} : c;
+  lookup(text, rect, srcOf(el), context); speakIn(text, c);
 }
 
 const BOOKTAG = n => `<span class="src">书中 #${n}</span>`, ADD = `<span class="src add">补充</span>`;
+const directGloss = (w, c) => c.sentenceGloss?.[w] || c.gloss[w] || "";
+const bookWordFor = (w, c) => c.example ? c.map.get(w) : findWord(w, c.map);
+const glossFor = (w, c) => c.example ? directGloss(w, c) : lemmaCandidates(w).map(k => c.gloss[k]).find(Boolean) || "";
 /* 一个词的释义（浮层里的一行）：本课词条 / 扩展词用书上的，其他用逐词释义；都没有返回 null */
 function wordInfo(w, c) {
-  const b = findWord(w, c.map);
+  const gloss = glossFor(w, c);
+  if (c.example && gloss) return `<b>${esc(w)}</b> ${esc(gloss)}${ADD}`;
+  const b = bookWordFor(w, c);
   if (b) return `<b>${esc(b.word)}</b> <span class="ipa">${esc(b.ipa)}</span> ${esc(sensesText(b.senses))}${BOOKTAG(b.no)}`;
-  for (const k of lemmaCandidates(w)) if (c.gloss[k]) return `<b>${esc(w)}</b> ${esc(c.gloss[k])}${ADD}`;
-  return null;
+  return gloss ? `<b>${esc(w)}</b> ${esc(gloss)}${ADD}` : null;
 }
-async function lookup(text, rect, src, c = curCtx()) {
-  const GLOSS = c.gloss;
+function lookup(text, rect, src, c = curCtx()) {
   const q = text.toLowerCase().replace(/[^a-z' ]/g, " ").replace(/\s+/g, " ").trim();
   if (!q) return;
   const line = (w, body, src) => `<div class="pm"><b>${esc(w)}</b> ${body}${src}</div>`;
-  let html, needOnline = false;
+  let html;
   const one = w => { const h = wordInfo(w, c); return h && `<div class="pm">${h}</div>`; };
-  if (GLOSS[q]) html = `<div><span class="pw">${esc(text)}</span>${ADD}</div><div class="pm">${esc(GLOSS[q])}</div>`;
+  const gloss = directGloss(q, c) || (!q.includes(" ") && !bookWordFor(q, c) && glossFor(q, c));
+  if (gloss) html = `<div><span class="pw">${esc(text)}</span>${ADD}</div><div class="pm">${esc(gloss)}</div>`;
   else if (!q.includes(" ")) {
-    html = one(q) || line(q, "查询中…", ""); needOnline = !one(q);
+    html = one(q) || line(q, "暂无中文释义", "");
   } else html = `<div><span class="pw">${esc(text)}</span></div>` + q.split(" ").map(w => one(w) || line(w, "—", "")).join("");
   showPop(html + `<div class="ops"><button id="popSay">🔊 再读一遍</button><button id="popVocab" class="pvb"></button></div><div class="pn" id="popVn"></div>`, rect);
   $("#popSay").onclick = () => speakIn(q, c);
   vocabButton(vocabTarget(q, src, c));
-  if (needOnline) {
-    try {
-      const j = await fetchJSON("https://api.dictionaryapi.dev/api/v2/entries/en/" + encodeURIComponent(q));
-      const m = j[0].meanings.slice(0, 2).map(x => `<i>${x.partOfSpeech}</i> ${esc(x.definitions[0].definition)}`).join("<br>");
-      pop.querySelector(".pm").innerHTML = `<b>${esc(q)}</b> ${m}<div class="pn">英文词典在线释义（本地未收录）</div>`;
-    } catch { pop.querySelector(".pm").innerHTML = `<b>${esc(q)}</b> 本地未收录，在线查询失败`; }
-    placePop();
-  }
 }
 
 /* ---------- 原书查看 ---------- */
@@ -993,10 +988,7 @@ function buildSteps() {
     if (zh) steps.push({card, el: q(".senses"), run: f => speakZh(meaning(e.word), f)});
     const ex = q(".book-ex");
     if (e.ex && ex) {
-      steps.push({card, el: ex.querySelector(".sent"), run: f => {
-        const details = ex.closest("details"); if (details) details.open = true;
-        readSent(ex, e.ex.en, f);
-      }, gap: 800});
+      steps.push({card, el: ex.querySelector(".sent"), run: f => readSent(ex, e.ex.en, f), gap: 800});
       if (zh) steps.push({card, el: ex.querySelector(".zh"), run: f => speakZh(e.ex.zh, f)});
     }
     $$(".extrow", card).forEach(row => {
