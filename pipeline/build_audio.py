@@ -17,6 +17,7 @@ import re
 
 import edge_tts
 
+from check_audio import sentence_words, supplemental_audio, supplemental_examples
 from config import AUDIO, AUDIO_BASE, AUDIO_STORE, DATA, LESSONS
 
 VOICES = {"ava": "en-US-AvaNeural", "andrew": "en-US-AndrewNeural",
@@ -100,17 +101,24 @@ async def main(lid, voice_keys):
     FILES.mkdir(parents=True, exist_ok=True)
     AUDIO.mkdir(parents=True, exist_ok=True)
     words, sentences, zh, meaning = [], [], [], {}
+
+    def add_example(example):
+        sentences.append(example["en"])
+        zh.append(example["zh"])
+        words.extend(sentence_words(example["en"]))
+
     for g in d["groups"]:
         for e in g["entries"]:
             words.append(e["word"])
             meaning[e["word"]] = senses_zh([s for p in e["prons"] for s in p["senses"]])
             if e.get("ex"):
-                sentences.append(e["ex"]["en"])
-                zh.append(e["ex"]["zh"])
-                words += [t.lower() for t in re.findall(r"[A-Za-z']+", e["ex"]["en"])]
+                add_example(e["ex"])
             for x in e.get("ext", []):
                 words.append(x["word"])
                 meaning.setdefault(x["word"], senses_zh(x["senses"]))
+    examples = list(supplemental_examples(lid))
+    for example in examples:
+        add_example(example)
     zh += meaning.values()
     words, sentences, zh = (list(dict.fromkeys(v)) for v in (words, sentences, zh))
     # 例句里标出的词组（data/notes，书外补充）：按原形读，点词组时播放
@@ -156,8 +164,17 @@ async def main(lid, voice_keys):
 
     jobs = [do_zh(t) for t in zh]
     for vk in voice_keys:
-        jobs += [do_word(w, vk) for w in words] + [do_sent(s, vk) for s in sentences] + [do_phrase(b, vk) for b in phrases]
+        # 同一音色下如果词和短句文本相同，先生成带时间点的音频，词条随后复用。
+        jobs += [do_sent(s, vk) for s in sentences]
     await asyncio.gather(*jobs)
+    jobs = []
+    for vk in voice_keys:
+        jobs += [do_word(w, vk) for w in words] + [do_phrase(b, vk) for b in phrases]
+    await asyncio.gather(*jobs)
+
+    _, missing = supplemental_audio(manifest, examples, voice_keys)
+    if missing:
+        raise SystemExit(f"{lid}：补充例句音频生成不完整\n" + "\n".join(missing))
 
     out = AUDIO / f"{lid}.json"
     out.write_text(json.dumps(manifest, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")

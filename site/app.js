@@ -45,6 +45,7 @@ darkMQ.addEventListener("change", applySettings);
 /* ---------- 状态 ---------- */
 let BOOK = null, L = null, GLOSS = {}, NOTES = {sents: {}}, AUD = {w: {}, s: {}, z: {}, voices: []};   // NOTES：例句词组与语法解析（书外补充）
 let VIDEO = null;   // 本课的讲解视频跳转数据（data/video，规则见 video.js），没有这一课的数据就是 null
+let EXAMPLES = {};  // 本课按词条序号索引的补充例句
 const WORDMAP = new Map();   // 本课词条/扩展词 → {word, senses, no, ext}
 /* no-cache：每次向服务器确认，重新生成数据后不会读到旧缓存 */
 const fetchJSON = url => fetch(url, {cache: "no-cache"}).then(r => { if (!r.ok) throw new Error(url + " " + r.status); return r.json(); });
@@ -243,7 +244,6 @@ function speakZh(text, onEnd) {
   const key = AUD.z[text];
   key ? playFile(key, onEnd, 1) : speakTTS(plainMean(text), "zh", onEnd);
 }
-function playSentence(card, onEnd, r = rate()) { readSent(card, entryOf(card).ex.en, onEnd, r); }
 /* 读 root 里 .sent 的那句例句（原文 en）并逐词高亮；aud：句子所在那课的音频清单（复习、巩固会读别的课的句子） */
 function readSent(root, en, onEnd, r = rate(), aud = AUD) {
   const spans = $$(".sent .w", root);
@@ -339,16 +339,26 @@ const allEntries = () => L.groups.flatMap(g => g.entries);
 const entryOf = card => WORDMAP.get(card.dataset.word).entry;
 const flames = n => "🔥".repeat(n) + `<i>${"🔥".repeat(3 - n)}</i>`;
 
+function lessonExampleHTML(ex, label, added = false) {
+  const note = added ? null : noteOf(NOTES, ex.en);
+  return `<div class="ex ${added ? "added-ex" : "book-ex"}${added && label ? " featured-ex" : ""}${ex.type === "真" ? " zt" : ""}">
+      ${label ? `<div class="exlab">${label}</div>` : ""}
+      <div class="sent" lang="en">${sentenceHTML(ex.en, ex.key, note)}</div>
+      <div class="zh">${esc(ex.zh)}</div>${Sent.anBlock(note, ex.zh, ex.en, ex.key)}
+      <div class="ops"><button class="play">▶ 播放例句</button><button class="play" data-slow="1">🐢 慢速</button></div>
+    </div>`;
+}
+
 function cardHTML(e) {
   const multi = e.prons.length > 1;
   const senses = e.prons.map(p => p.senses.map((s, i) =>
     `<div class="sense">${multi && i === 0 ? `<span class="ipa">${esc(p.ipa)}</span>` : ""}<span class="pos">${esc(s.pos)}</span>${meanHTML(s.mean)}</div>`).join("")).join("");
-  const ex = e.ex ? `<div class="ex${e.ex.type === "真" ? " zt" : ""}">
-      <div class="exlab">${e.ex.type === "真" ? `真题 ${e.ex.year}` : "例句"}</div>
-      <div class="sent">${sentenceHTML(e.ex.en, e.ex.key, noteOf(NOTES, e.ex.en))}</div>
-      <div class="zh">${esc(e.ex.zh)}</div>${Sent.anBlock(noteOf(NOTES, e.ex.en), e.ex.zh, e.ex.en, e.ex.key)}
-      <div class="ops"><button class="play">▶ 播放例句</button><button class="play" data-slow="1">🐢 慢速</button></div>
-    </div>` : "";
+  const [featured, ...more] = EXAMPLES[e.no] || [];
+  const bookLabel = e.ex?.type === "真" ? `${e.ex.year} 年真题` : "原书例句";
+  const bookEx = e.ex ? lessonExampleHTML(e.ex, featured ? "" : (e.ex.type === "真" ? `真题 ${e.ex.year}` : "例句")) : "";
+  const ex = featured ? `${lessonExampleHTML(featured, "补充", true)}
+    ${more.length ? `<details class="example-details"><summary>更多用法（${more.length}）</summary>${more.map(x => lessonExampleHTML(x, "", true)).join("")}</details>` : ""}
+    ${bookEx ? `<details class="example-details"><summary>${bookLabel}</summary>${bookEx}</details>` : ""}` : bookEx;
   const exts = e.ext && e.ext.length ? `<div class="exts">${e.ext.map(x => `<div class="extrow" data-ext="${esc(x.word)}">
       <span class="tag">扩</span><b>${esc(x.word)}</b>${x.alt ? `<span class="ipa">/${esc(x.alt)}</span>` : ""}
       <span class="ipa">${esc(x.ipa)}</span><button class="spk sm" data-say="${esc(x.word)}" title="读">🔊</button>
@@ -405,15 +415,16 @@ function updateProgress() {
 async function loadLesson(id) {
   if (L && L.id === id) return;
   stopMarathon();
-  const [les, gl, au, rt, nt, vd] = await Promise.all([
+  const [les, gl, au, rt, nt, vd, examples] = await Promise.all([
     fetchJSON(`data/lessons/${id}.json`),
     fetchJSON(`data/gloss/${id}.json`).catch(() => ({words: {}})),
     fetchJSON(`data/audio/${id}.json`).catch(() => ({w: {}, s: {}, z: {}, m: {}, voices: []})),
     fetchJSON(`data/roots/${id}.json`).catch(() => ({words: {}})),
     fetchJSON(`data/notes/${id}.json`).catch(() => ({sents: {}})),
     fetchJSON(`data/video/${id}.json`).catch(() => null),   // 讲解视频跳转：没有这一课的数据就不显示按钮
+    fetchJSON(`data/examples/${id}.json`).catch(() => null),
   ]);
-  L = les; GLOSS = gl.words || {}; AUD = au; NOTES = {sents: nt.sents || {}}; VIDEO = vd;
+  L = les; GLOSS = gl.words || {}; AUD = au; NOTES = {sents: nt.sents || {}}; VIDEO = vd; EXAMPLES = examples?.entries || {};
   for (const g of L.groups) for (const e of g.entries) e.root = rt.words?.[e.word];   // 词根法（书外补充）
   WORDMAP.clear();
   for (const g of L.groups) for (const e of g.entries) {
@@ -715,7 +726,10 @@ document.addEventListener("click", e => {
   if (inStudy || t.closest(".top,.drawer,.fabs,.settings,.viewer,.study,.peek")) { if (!t.closest(".search")) $("#qres").style.display = "none"; return; }
   if (t.dataset.say || t.classList.contains("play")) stopMarathon();
   if (t.dataset.say) { speak(t.dataset.say); return; }
-  if (t.classList.contains("play")) { playSentence(t.closest(".card"), null, t.dataset.slow ? 0.75 : rate()); return; }
+  if (t.classList.contains("play")) {
+    const ex = t.closest(".ex"), en = ex.querySelector(".sent").textContent;
+    readSent(ex, en, null, t.dataset.slow ? 0.75 : rate()); return;
+  }
   if (t.dataset.goto) { gotoWord(t.dataset.goto); return; }
   if (t.dataset.pages) { const [a, b] = t.dataset.pages.split("-").map(Number); openPages(a, b); return; }
   if (t.classList.contains("knowBtn")) {
@@ -977,9 +991,13 @@ function buildSteps() {
     steps.push({card, el: q(".word"), run: f => speak(e.word, f)});
     const meaning = w => (AUD.m && AUD.m[w]) || sensesText(WORDMAP.get(w).senses);
     if (zh) steps.push({card, el: q(".senses"), run: f => speakZh(meaning(e.word), f)});
-    if (e.ex) {
-      steps.push({card, el: q(".sent"), run: f => playSentence(card, f), gap: 800});
-      if (zh) steps.push({card, el: q(".zh"), run: f => speakZh(e.ex.zh, f)});
+    const ex = q(".book-ex");
+    if (e.ex && ex) {
+      steps.push({card, el: ex.querySelector(".sent"), run: f => {
+        const details = ex.closest("details"); if (details) details.open = true;
+        readSent(ex, e.ex.en, f);
+      }, gap: 800});
+      if (zh) steps.push({card, el: ex.querySelector(".zh"), run: f => speakZh(e.ex.zh, f)});
     }
     $$(".extrow", card).forEach(row => {
       const x = WORDMAP.get(row.dataset.ext);

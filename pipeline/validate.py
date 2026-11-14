@@ -145,11 +145,54 @@ def validate(path):
             r.warn(gw, f"导图词 {n} 在本词群找不到词条/扩展词")
     check_roots(r, d)
     check_notes(r, d)
+    check_examples(r, d)
     check_video(r, d)
     return r, len(seen)
 
 
 WORD_CH = re.compile(r"[A-Za-z']")
+
+
+def check_examples(r, data):
+    path = DATA / "examples" / f"{data['id']}.json"
+    if not path.exists():
+        return
+    try:
+        supplemental = json.loads(path.read_text(encoding="utf-8"))
+        entries = supplemental["entries"]
+        if not isinstance(entries, dict):
+            raise ValueError("entries 应为对象")
+    except (ValueError, KeyError, TypeError) as exc:
+        r.err("补充例句", f"读取失败：{exc}")
+        return
+    by_no = {str(e["no"]): e for g in data["groups"] for e in g["entries"]}
+    for no, examples in entries.items():
+        entry = by_no.get(no)
+        if entry is None:
+            r.err("补充例句", f"没有词条 #{no}")
+            continue
+        where = f"补充例句 #{no} {entry['word']}"
+        if not isinstance(examples, list) or not 1 <= len(examples) <= 3:
+            r.err(where, "每个词条应有 1–3 条补充用法")
+            continue
+        seen = {entry.get("ex", {}).get("en", "").strip().casefold()}
+        for item in examples:
+            if not isinstance(item, dict):
+                r.err(where, "用法应为对象")
+                continue
+            en, zh, keys = item.get("en"), item.get("zh"), item.get("key")
+            if not isinstance(en, str) or en != en.strip() or not re.search(r"[A-Za-z]", en) or re.search(r"[‘’“”\r\n]", en):
+                r.err(where, f"英文缺失或格式错误：{en!r}")
+                continue
+            if en.casefold() in seen:
+                r.err(where, f"例句重复：{en}")
+            seen.add(en.casefold())
+            if not isinstance(zh, str) or not zh.strip():
+                r.err(where, f"缺译文：{en}")
+            if not isinstance(keys, list) or not keys or any(
+                not isinstance(k, str) or not k.strip() or not phrase_in(en, k) for k in keys
+            ):
+                r.err(where, f"重点词空缺或不在例句里：{en}")
 
 
 def find_at_boundary(s, t, start=0):

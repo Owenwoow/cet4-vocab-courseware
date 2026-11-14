@@ -1,0 +1,190 @@
+{
+  "entries": {
+    "2": [
+      {
+        "en": "A phone has millions of tiny cells.",
+        "zh": "手机里有数百万个微小的电池单元。",
+        "key": [
+          "cells"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "en": "A mushroom is a living organism.",
+        "zh": "蘑菇是一种生物。",
+        "key": [
+          "organism"
+        ]
+      }
+    ],
+    "6": [
+      {
+        "en": "This button doesn't function.",
+        "zh": "这个按钮不起作用。",
+        "key": [
+          "function"
+        ]
+      }
+    ],
+    "7": [
+      {
+        "en": "Plants absorb water through their roots.",
+        "zh": "植物通过根部吸收水分。",
+        "key": [
+          "absorb"
+        ]
+      }
+    ],
+    "11": [
+      {
+        "en": "I need time to digest all this information.",
+        "zh": "我需要时间来消化这些信息。",
+        "key": [
+          "digest"
+        ]
+      }
+    ],
+    "13": [
+      {
+        "en": "The doctor diagnosed the infection early.",
+        "zh": "医生及早诊断出了感染。",
+        "key": [
+          "diagnosed"
+        ]
+      }
+    ],
+    "15": [
+      {
+        "en": "The app lets you take notes in a physical notebook.",
+        "zh": "这个应用让你可以在实体笔记本上做笔记。",
+        "key": [
+          "physical"
+        ]
+      }
+    ],
+    "19": [
+      {
+        "en": "We bought identical blue mugs.",
+        "zh": "我们买了完全相同的蓝色马克杯。",
+        "key": [
+          "identical"
+        ]
+      }
+    ],
+    "21": [
+      {
+        "en": "Can you identify the song from its first few notes?",
+        "zh": "你能从开头几个音符认出这首歌吗？",
+        "key": [
+          "identify"
+        ]
+      }
+    ],
+    "24": [
+      {
+        "en": "She reads on her tablet before bed.",
+        "zh": "她睡前用平板电脑看书。",
+        "key": [
+          "tablet"
+        ]
+      }
+    ],
+    "27": [
+      {
+        "en": "Resetting the router is a headache every time.",
+        "zh": "每次重置路由器都很让人头疼。",
+        "key": [
+          "a headache"
+        ]
+      }
+    ],
+    "37": [
+      {
+        "en": "The storm knocked out phone coverage in our area.",
+        "zh": "暴风雨导致我们这一带没有手机信号覆盖。",
+        "key": [
+          "coverage"
+        ]
+      }
+    ],
+    "40": [
+      {
+        "en": "The city needs a remedy for traffic jams.",
+        "zh": "这座城市需要解决交通拥堵的办法。",
+        "key": [
+          "a remedy"
+        ]
+      },
+      {
+        "en": "A home remedy may ease a cough.",
+        "zh": "家庭疗法或许能缓解咳嗽。",
+        "key": [
+          "A home remedy"
+        ]
+      },
+      {
+        "en": "The update remedies the problem.",
+        "zh": "这次更新解决了这个问题。",
+        "key": [
+          "remedies"
+        ]
+      }
+    ],
+    "43": [
+      {
+        "en": "Add a little humour to your presentation.",
+        "zh": "给你的演讲加一点幽默。",
+        "key": [
+          "humour"
+        ]
+      }
+    ],
+    "45": [
+      {
+        "en": "It's a common phenomenon in cold weather: your phone battery drains faster.",
+        "zh": "寒冷天气里常见这种现象：手机电池耗电更快。",
+        "key": [
+          "phenomenon"
+        ]
+      }
+    ],
+    "46": [
+      {
+        "en": "I object to sharing my location with that app.",
+        "zh": "我反对把自己的位置分享给那个应用。",
+        "key": [
+          "object to"
+        ]
+      }
+    ],
+    "47": [
+      {
+        "en": "The website rejected my password because it was too short.",
+        "zh": "网站因为密码太短而拒绝了它。",
+        "key": [
+          "rejected"
+        ]
+      }
+    ],
+    "53": [
+      {
+        "en": "Good sleep contributes to better health.",
+        "zh": "良好的睡眠有助于健康。",
+        "key": [
+          "contributes to"
+        ]
+      }
+    ],
+    "55": [
+      {
+        "en": "She attributes her progress to daily practice.",
+        "zh": "她把自己的进步归功于每天练习。",
+        "key": [
+          "attributes",
+          "to"
+        ]
+      }
+    ]
+  }
+}
