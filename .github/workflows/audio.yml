@@ -12,7 +12,7 @@
 # 而且用它提交的内容不会触发 deploy。
 #
 # 限流：GitHub 服务器 IP 容易被微软语音服务限流，所以并发固定为 3，且所有课在同一个任务里顺序做。
-# 发布模式分批推送，中途失败可复用已保存的音频，最后一次推送才等待 Pages。
+# 发布模式分批保存音频，失败课记入汇总，其余课继续。最后统一等待 Pages。
 name: audio
 
 on:
@@ -37,6 +37,7 @@ jobs:
     timeout-minutes: 350
     env:
       AUDIO_CONCURRENCY: "3"
+      PYTHONUNBUFFERED: "1"
       GH_TOKEN: ${{ (github.ref == 'refs/heads/main' || inputs.publish_audio) && secrets.AUDIO_REPO_TOKEN || github.token }}
       LESSONS: ${{ inputs.lessons }}
     steps:
@@ -74,32 +75,44 @@ jobs:
         run: |
           # 同一次重试直接复用已生成的文件，避免单个音色临时失败丢掉整课。
           count=0
+          failed=()
           set -- $LESSONS
+          if [ "$#" -eq 0 ]; then echo "请指定至少一课"; exit 1; fi
           for id in $LESSONS; do
             echo "::group::$id"
             if ! python pipeline/build_audio.py "$id"; then
               sleep 15
-              python pipeline/build_audio.py "$id"
+              if ! python pipeline/build_audio.py "$id"; then
+                failed+=("$id")
+                echo "::warning::音频生成未完成：$id"
+              fi
             fi
             count=$((count + 1))
-            if [ "$GITHUB_REF" = "refs/heads/main" ]; then
-              if [ "$#" -gt 1 ]; then AUDIO_SKIP_WAIT=1 python pipeline/publish_audio.py; else python pipeline/publish_audio.py; fi
-            elif [ "${{ inputs.publish_audio }}" = "true" ] && [ "$#" -gt 1 ] && [ "$((count % 4))" -eq 0 ]; then
+            if { [ "$GITHUB_REF" = "refs/heads/main" ] || [ "${{ inputs.publish_audio }}" = "true" ]; } && [ "$#" -gt 1 ] && [ "$((count % 4))" -eq 0 ]; then
               AUDIO_SKIP_WAIT=1 python pipeline/publish_audio.py
             fi
             shift
             echo "::endgroup::"
           done
+          if [ "$GITHUB_REF" = "refs/heads/main" ] || [ "${{ inputs.publish_audio }}" = "true" ]; then
+            python pipeline/publish_audio.py
+          fi
+          if [ "${#failed[@]}" -gt 0 ]; then
+            echo "::error::待补跑课程：${failed[*]}"
+            exit 1
+          fi
 
-      - name: 发布试点分支生成的音频
+      - name: 收集本次生成的清单
         if: github.ref != 'refs/heads/main' && inputs.publish_audio
-        run: python pipeline/publish_audio.py
+        run: |
+          mkdir -p audio-manifests
+          for id in $LESSONS; do cp "site/data/audio/$id.json" audio-manifests/; done
 
       - uses: actions/upload-artifact@v4
         if: github.ref != 'refs/heads/main' && inputs.publish_audio
         with:
           name: audio-manifests
-          path: site/data/audio/*.json
+          path: audio-manifests/
           if-no-files-found: error
 
       - name: 把音频清单提交回主仓库（触发 deploy）

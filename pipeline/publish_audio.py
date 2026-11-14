@@ -22,6 +22,8 @@ def main():
     new = [l for l in git("status", "--porcelain").splitlines() if l.strip()]
     if not new:
         print("音频仓库没有新文件，不用推送")
+        if not os.environ.get("AUDIO_SKIP_WAIT"):
+            wait_pages(git("rev-parse", "HEAD").strip())
         return
     mp3 = sum(l.endswith(".mp3") for l in new)
     git("commit", "-q", "-m", f"chore: 新增 {mp3} 个音频")
@@ -52,8 +54,7 @@ def wait_pages(commit, timeout=1800):
             print(f"音频站已上线（{int(time.time() - start)} 秒）")
             return
         time.sleep(15)
-    # 等不到不当作失败，上线与否由部署前的 check_audio.py 兜底
-    print(f"等了 {timeout} 秒音频站还没构建完，稍后用 python pipeline/check_audio.py 确认再推主仓库")
+    raise SystemExit(f"等了 {timeout} 秒，音频提交 {commit} 仍未确认上线")
 
 
 if __name__ == "__main__":

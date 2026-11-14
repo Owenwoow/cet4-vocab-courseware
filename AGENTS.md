@@ -17,9 +17,9 @@
 - 全量测试：`python pipeline/validate.py`（校验所有课的数据）+ `node --test "tests/*.test.js"`（复习规则单元测试）
 - 批量生成课程：用项目技能 `make-lesson`（`.Codex/skills/make-lesson/SKILL.md`），子代理在 `.Codex/agents/`（抽取 Sonnet、释义 Haiku）；音频走云端 `audio` 工作流，启动子代理前按技能第 4 节查额度（至少留 5%）
 - 查进度：`python pipeline/lessons.py --todo 1 10`（Part 02 即 Unit 11–12 不做，已从 `toc.json` 删除）
-- 部署：先 `python pipeline/publish_audio.py` 推音频，再推主仓库 `main`，自动部署（`.github/workflows/deploy.yml`：校验 → 检查音频已上线 → 目录索引 → GitHub Pages）。线上地址 https://cet4.owenwoow.com/（自定义域名，旧的 github.io 地址会自动跳转过来；云同步 token 按网址存，要在这个地址下粘贴）
+- 部署：先通过 GitHub Actions 发布音频，确认清单齐全后与课件一起推 `main`。部署时核对已上线的音频文件树和实际播放地址，再生成目录索引和发布 GitHub Pages。线上地址 https://cet4.owenwoow.com/（自定义域名，旧的 github.io 地址会自动跳转过来；云同步 token 按网址存，要在这个地址下粘贴）
 - 每次站点更新上线时，在 GitHub Releases 发布一个版本：标题统一为 `YYYY 年 M 月 D 日更新`（例如 `2026 年 10 月 28 日更新`），标题末尾不得追加副标题或其他说明；具体更新内容用简体中文写在 Release 正文中。
-- 云端生成音频（默认，本地网络跑 edge-tts 会卡死）：Actions → `audio` 工作流（`.github/workflows/audio.yml`），手动触发，填课程 id；并发固定 3（服务器 IP 易被限流），生成后自动推音频仓库并把清单提交回 `main`。需要 Secret `AUDIO_REPO_TOKEN`（PAT，详见工作流文件头部）
+- 音频只在 GitHub Actions 的 `audio` 工作流生成。补充例句先按课分工审核、写作和校验，用一课试播；全批内容定稿后再传课程 id 启动增量生成。试点分支默认上传可下载的预览；勾选 `publish_audio` 时分批推送音频，确认上线后只上传本次课程清单。单课重试仍失败时继续其他课程，按日志里的「待补跑课程」补齐，并汇总各次清单。直接在 `main` 运行时成功后自动回写清单。需要 Secret `AUDIO_REPO_TOKEN`。
 - 本地预览要起两个服务：课件 8765（`site/`）、音频 8766（`audio-store/`），见 `.Codex/launch.json`；8765 被占用时用备用的 `site-alt`（8775，localStorage 按端口隔离，测试数据不串）
 - 本地快速验收：运行 `python devtools/local-test-server.py`，打开 http://127.0.0.1:18775/test；音频另起 8766。按入口进入各模式，每次重置演示进度。工具只监听本机，使用测试专用存储键并阻断云同步，保留旧存储数据；不得连接真实 Gist 或导入真实学习数据。两台开发机通过 Git 同步 `devtools/` 代码，测试记录各自留在本机；该目录不部署到网站。每次需要用户验收时优先启动此入口并告知测试范围。
 - 新电脑上恢复音频目录：`git clone https://github.com/Owenwoow/cet4-vocab-audio.git audio-store`
