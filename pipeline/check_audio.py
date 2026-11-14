@@ -8,6 +8,7 @@ import json
 import random
 import re
 import sys
+import time
 import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
@@ -101,9 +102,16 @@ def main(check_all):
         if pending:
             with ThreadPoolExecutor(16) as pool:
                 checked.update(zip(pending, pool.map(online, pending)))
+                retry = [url for url in pending if not checked[url]]
+                for delay in (1, 3):
+                    if not retry:
+                        break
+                    time.sleep(delay)
+                    checked.update(zip(retry, pool.map(online, retry)))
+                    retry = [url for url in retry if not checked[url]]
         missing = [key for key, url in urls.items() if not checked[url]]
         status = "FAIL" if missing else "OK"
-        print(f"[{status}] {lid}：查了 {len(sample)} 个，缺 {len(missing)} 个（{m['base']}）")
+        print(f"[{status}] {lid}：查了 {len(sample)} 个，缺 {len(missing)} 个（{m['base']}）", flush=True)
         for k in missing[:5]:
             print(f"   缺 {k}.mp3")
         bad += bool(missing)
