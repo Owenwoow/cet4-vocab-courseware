@@ -1,130 +1,30 @@
-# 手动触发：在云端生成指定课的音频，推到音频仓库 cet4-vocab-audio，再把音频清单提交回主仓库。
-# 提交回主仓库会触发 deploy 工作流（校验 → 检查音频已上线 → 部署），所以这里不用再手动部署。
-#
-# 用法：GitHub → Actions → audio → Run workflow，lessons 填 "u08-l03 u08-l04"（空格分隔）。
-# 选 main 会发布到音频仓库，并提交清单。选其他分支会生成可下载的 audio-preview 产物。
-#
-# 需要一个 Secret：AUDIO_REPO_TOKEN（fine-grained PAT），仅授权本账号的这两个仓库：
-#   cet4-vocab-audio      Contents: 读写、Actions: 只读（查询 Pages 工作流结果）
-#   cet4-vocab-courseware Contents: 读写
-# 用 PAT 而不是默认的 GITHUB_TOKEN：默认令牌不能推别的仓库，
-# 而且用它提交的内容不会触发 deploy。
-#
-# 限流：GitHub 服务器 IP 容易被微软语音服务限流，所以并发固定为 3，且所有课在同一个任务里顺序做。
-# 每课做完立刻推送，中途超时或失败也不丢已完成的课；重跑同一批课会跳过已有音频。
 name: audio
-
 on:
   workflow_dispatch:
     inputs:
       lessons:
-        description: 课程 id，空格分隔，例如 u08-l03 u08-l04
+        description: 验证音频仓库访问
         required: true
         type: string
-
-concurrency:
-  group: audio
-  cancel-in-progress: false
-
 jobs:
-  audio:
+  verify-access:
     runs-on: ubuntu-latest
-    timeout-minutes: 350
     env:
-      AUDIO_CONCURRENCY: "3"
-      GH_TOKEN: ${{ github.ref == 'refs/heads/main' && secrets.AUDIO_REPO_TOKEN || github.token }}
-      LESSONS: ${{ inputs.lessons }}
+      GH_TOKEN: ${{ secrets.AUDIO_REPO_TOKEN }}
     steps:
+      - name: 核对令牌身份与音频站工作流访问
+        run: |
+          test "$(gh api user --jq .login)" = "Owenwoow"
+          gh api 'repos/Owenwoow/cet4-vocab-audio/actions/workflows/pages-build-deployment/runs?per_page=1' --jq '.workflow_runs[0].conclusion'
       - uses: actions/checkout@v4
         with:
-          token: ${{ github.ref == 'refs/heads/main' && secrets.AUDIO_REPO_TOKEN || github.token }}
-
+          token: ${{ secrets.AUDIO_REPO_TOKEN }}
       - uses: actions/checkout@v4
         with:
           repository: Owenwoow/cet4-vocab-audio
           path: audio-store
-          token: ${{ github.ref == 'refs/heads/main' && secrets.AUDIO_REPO_TOKEN || github.token }}
-          persist-credentials: ${{ github.ref == 'refs/heads/main' }}
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - run: pip install edge-tts
-
-      - name: 检查课程 id
+          token: ${{ secrets.AUDIO_REPO_TOKEN }}
+      - name: 检查两个仓库的 Git 推送权限
         run: |
-          for id in $LESSONS; do
-            [[ "$id" =~ ^u[0-9]{2}-l[0-9]{2}$ ]] || { echo "课程 id 格式不对：$id"; exit 1; }
-            [ -f "site/data/lessons/$id.json" ] || { echo "当前分支找不到 site/data/lessons/$id.json"; exit 1; }
-          done
-
-      - name: 设置提交身份
-        if: github.ref == 'refs/heads/main'
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-      - name: 逐课生成音频
-        run: |
-          # 音频站每次有新推送，Pages 就把进行中的构建作废重来，所以中间的课只推送不等，最后一课才等一次构建完成
-          set -- $LESSONS
-          for id in $LESSONS; do
-            echo "::group::$id"
-            python pipeline/build_audio.py "$id"
-            if [ "$GITHUB_REF" = "refs/heads/main" ]; then
-              if [ "$#" -gt 1 ]; then AUDIO_SKIP_WAIT=1 python pipeline/publish_audio.py; else python pipeline/publish_audio.py; fi
-            fi
-            shift
-            echo "::endgroup::"
-          done
-
-      - name: 把音频清单提交回主仓库（触发 deploy）
-        if: github.ref == 'refs/heads/main'
-        run: |
-          git add site/data/audio
-          if git diff --cached --quiet; then
-            echo "清单没有变化，不提交"
-          else
-            git commit -m "chore(audio): 云端生成音频清单 ${LESSONS}"
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
-
-      - name: 打包本地预览所需清单与音频
-        if: github.ref != 'refs/heads/main'
-        run: |
-          python - $LESSONS <<'PY'
-          import json
-          import shutil
-          import sys
-          from pathlib import Path
-
-          preview = Path("audio-preview")
-          manifests = Path("site/data/audio")
-          files = Path("audio-store/files")
-          (preview / manifests).mkdir(parents=True, exist_ok=True)
-          (preview / files).mkdir(parents=True, exist_ok=True)
-          keys = set()
-          for lid in sys.argv[1:]:
-              path = manifests / f"{lid}.json"
-              shutil.copyfile(path, preview / path)
-              manifest = json.loads(path.read_text(encoding="utf-8"))
-              keys.update(manifest["z"].values())
-              for field in ("w", "p"):
-                  keys.update(key for voices in manifest[field].values() for key in voices.values())
-              keys.update(sentence["f"] for voices in manifest["s"].values() for sentence in voices.values())
-          for key in sorted(keys):
-              source = files / f"{key}.mp3"
-              shutil.copyfile(source, preview / source)
-              marks = files / f"{key}.json"
-              if marks.exists():
-                  shutil.copyfile(marks, preview / marks)
-          PY
-
-      - uses: actions/upload-artifact@v4
-        if: github.ref != 'refs/heads/main'
-        with:
-          name: audio-preview
-          path: audio-preview/
-          if-no-files-found: error
+          git push --dry-run origin HEAD:refs/heads/codex/audio-permission-probe
+          git -C audio-store push --dry-run origin HEAD:refs/heads/codex/audio-permission-probe
