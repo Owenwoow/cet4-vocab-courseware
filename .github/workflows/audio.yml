@@ -2,7 +2,8 @@
 # 提交回主仓库会触发 deploy 工作流（校验 → 检查音频已上线 → 部署），所以这里不用再手动部署。
 #
 # 用法：GitHub → Actions → audio → Run workflow，lessons 填 "u08-l03 u08-l04"（空格分隔）。
-# 选 main 会发布到音频仓库，并提交清单。选其他分支会生成可下载的 audio-preview 产物。
+# 选 main 会发布到音频仓库，并提交清单。选其他分支默认打包预览音频，
+# 勾选 publish_audio 则先发布到音频仓库，只打包清单，供课件之后一起上线。
 #
 # 需要一个 Secret：AUDIO_REPO_TOKEN（fine-grained PAT），仅授权本账号的这两个仓库：
 #   cet4-vocab-audio      Contents: 读写、Actions: 只读（查询 Pages 工作流结果）
@@ -21,6 +22,10 @@ on:
         description: 课程 id，空格分隔，例如 u08-l03 u08-l04
         required: true
         type: string
+      publish_audio:
+        description: 在试点分支发布音频到音频仓库，只下载清单
+        type: boolean
+        default: false
 
 concurrency:
   group: audio
@@ -32,7 +37,7 @@ jobs:
     timeout-minutes: 350
     env:
       AUDIO_CONCURRENCY: "3"
-      GH_TOKEN: ${{ github.ref == 'refs/heads/main' && secrets.AUDIO_REPO_TOKEN || github.token }}
+      GH_TOKEN: ${{ (github.ref == 'refs/heads/main' || inputs.publish_audio) && secrets.AUDIO_REPO_TOKEN || github.token }}
       LESSONS: ${{ inputs.lessons }}
     steps:
       - uses: actions/checkout@v4
@@ -43,8 +48,8 @@ jobs:
         with:
           repository: Owenwoow/cet4-vocab-audio
           path: audio-store
-          token: ${{ github.ref == 'refs/heads/main' && secrets.AUDIO_REPO_TOKEN || github.token }}
-          persist-credentials: ${{ github.ref == 'refs/heads/main' }}
+          token: ${{ (github.ref == 'refs/heads/main' || inputs.publish_audio) && secrets.AUDIO_REPO_TOKEN || github.token }}
+          persist-credentials: ${{ github.ref == 'refs/heads/main' || inputs.publish_audio }}
 
       - uses: actions/setup-python@v5
         with:
@@ -60,7 +65,7 @@ jobs:
           done
 
       - name: 设置提交身份
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main' || inputs.publish_audio
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -79,6 +84,17 @@ jobs:
             echo "::endgroup::"
           done
 
+      - name: 发布试点分支生成的音频
+        if: github.ref != 'refs/heads/main' && inputs.publish_audio
+        run: python pipeline/publish_audio.py
+
+      - uses: actions/upload-artifact@v4
+        if: github.ref != 'refs/heads/main' && inputs.publish_audio
+        with:
+          name: audio-manifests
+          path: site/data/audio/*.json
+          if-no-files-found: error
+
       - name: 把音频清单提交回主仓库（触发 deploy）
         if: github.ref == 'refs/heads/main'
         run: |
@@ -92,7 +108,7 @@ jobs:
           fi
 
       - name: 打包本地预览所需清单与音频
-        if: github.ref != 'refs/heads/main'
+        if: github.ref != 'refs/heads/main' && !inputs.publish_audio
         run: |
           python - $LESSONS <<'PY'
           import json
@@ -123,7 +139,7 @@ jobs:
           PY
 
       - uses: actions/upload-artifact@v4
-        if: github.ref != 'refs/heads/main'
+        if: github.ref != 'refs/heads/main' && !inputs.publish_audio
         with:
           name: audio-preview
           path: audio-preview/
