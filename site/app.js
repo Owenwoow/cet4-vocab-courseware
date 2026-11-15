@@ -748,7 +748,7 @@ document.addEventListener("click", e => {
 /* ---------- 设置页 ---------- */
 const seg = (key, opts) => `<div class="seg">${opts.map(([v, label]) =>
   `<button data-set="${key}" data-val="${v}" class="${String(S[key]) === String(v) ? "on" : ""}">${label}</button>`).join("")}</div>`;
-const sw = (key, title, desc) => `<label class="row sw"><span><b>${title}</b><small>${desc}</small></span>
+const sw = (key, title, desc) => `<label class="row sw"><span><b>${title}</b>${desc ? `<small>${desc}</small>` : ""}</span>
   <input type="checkbox" data-set="${key}"${S[key] ? " checked" : ""}><i></i></label>`;
 function renderSettings() {
   const outIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"/></svg>';
@@ -826,7 +826,7 @@ function renderSettings() {
     <section class="panel"><h2>磨耳朵</h2>
       <div class="row"><span><b>播放范围</b><small>从右下角 🎧 开始</small></span>${seg("scope", [["group", "当前词群"], ["lesson", "整课"]])}</div>
       ${sw("withZh", "读中文", "单词后读释义，例句后读译文")}
-      ${sw("loop", "循环播放", "播完从头再来")}
+      ${sw("loop", "循环播放")}
     </section>
     <section class="panel"><h2>外观</h2>
       <div class="row"><span><b>主题</b><small>自动跟随系统深浅色</small></span>${seg("theme", [["auto", "自动"], ["light", "浅色"], ["dark", "深色"]])}</div>

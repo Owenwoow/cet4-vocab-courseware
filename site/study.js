@@ -417,19 +417,19 @@ const Study = (() => {
     const results = planResults(status);
     const extra = strengthenStatus(status), extraDone = extra.total > 0 && !extra.pending.length;
     const nextTitle = !finished ? "按自己的节奏，分次完成" : extraDone ? "本次巩固已完成" : extra.total ? `还有 ${extra.pending.length} 个词待巩固` : "今日首答已完成";
-    const nextNote = !finished ? "剩余计划可分次完成。" : extraDone || !extra.total ? "今天可以安心结束。" : extra.done ? `已独立想起 ${extra.done} / ${extra.total} 词` : "可选练习，随时可以结束。";
+    const nextNote = !finished ? "剩余计划可分次完成。" : extraDone || !extra.total ? "" : extra.done ? `已独立想起 ${extra.done} / ${extra.total} 词` : "可选练习，随时可以结束。";
     const progress = `计划内首答 ${results.completed}/${total} 词${retryText}${results.external ? ` · 计划外首答 ${results.external} 词` : ""}`;
     const adjustment = plan.credited || status.rows.some(row => row.waived || !row.x && !row.record.first);
     return `<wa-card class="mod today"><div slot="header" class="mh"><b>今日学习</b><span class="sub">${migration.active ? "旧词记忆校准" : "日常复习"}</span></div>
       <div class="today-status"><span class="today-dot${finished ? " done" : ""}" aria-hidden="true">${finished ? "✓" : `<svg viewBox="0 0 40 40"><circle class="today-ring-track" cx="20" cy="20" r="16"/><circle class="today-ring-value" cx="20" cy="20" r="16" pathLength="100" stroke-dasharray="${total ? completed / total * 100 : 0} 100"/></svg>`}</span><div><b>${finished ? "今日计划已完成" : completed ? "今日计划进行中" : `今天推荐 ${total} 词`}</b><small>${completed} / ${total} 个计划词已完成${pendingRetries ? ` · 待补测 ${pendingRetries} 次` : ""}</small></div>${finished ? `<span class="today-badge">计划完成</span>` : ""}</div>
       <div class="today-memory"><div class="today-section-label"><b>今日首答</b><a href="#/list/recap">回顾今日单词 →</a></div><div class="today-metrics">
         <div class="today-independent"><strong>${results.independent}</strong><span>独立想起</span></div><div class="today-strengthen"><strong>${results.strengthen.length}</strong><span>需巩固</span></div></div></div>
-      <div class="today-next"><div><b>${nextTitle}</b><p>${nextNote}</p></div>
+      <div class="today-next"><div><b>${nextTitle}</b>${nextNote ? `<p>${nextNote}</p>` : ""}</div>
         <div class="today-action">${!finished ? btn("#/drill/due", progGet("due") || completed ? "继续学习" : "开始学习", 'variant="brand"', "medium") : extraDone ? strengthenRestart() : extra.total ? btn("#/drill/strengthen", "继续巩固", 'variant="brand"', "medium") : ""}</div></div>
       <details class="today-details"><summary><span>查看详细数据</span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg></summary><div class="today-detail-content">
         <p>${progress}</p><div class="today-stats"><span>独立想起 ${results.independent}</span><span>提示后想起 ${results.hinted}</span><span>未想起/想错 ${results.failed}</span><span>待巩固 ${results.strengthen.length}</span><span>已达到掌握标准 ${results.mastered}</span><span>尚在积累证据 ${results.accumulating}</span></div>
         ${breakdown ? `<p class="today-breakdown">${breakdown}</p>` : ""}<p>待巩固指首答提示后想起或未想起/想错；首答统计保留，巩固进度另记，不改变正式复习排期。</p>
-        ${status.quickCredit ? `<p>今日快速检查已抵扣 ${status.quickCredit} 个任务，只计工作量，不计正式回忆成绩。</p>` : ""}${adjustment ? `<p>历史抵扣、已退役或抵扣的计划词不计入首答。</p>` : ""}<p>${finished ? "今天可以安心结束，剩余词会自动安排。" : `预算 ${plan.budget.minutes} 分钟 · 可分次完成`}</p></div></details>
+        ${status.quickCredit ? `<p>今日快速检查已抵扣 ${status.quickCredit} 个任务，只计工作量，不计正式回忆成绩。</p>` : ""}${adjustment ? `<p>历史抵扣、已退役或抵扣的计划词不计入首答。</p>` : ""}<p>${finished ? "剩余词会自动安排。" : `预算 ${plan.budget.minutes} 分钟 · 可分次完成`}</p></div></details>
       ${reason ? `<p class="note">${reason}</p>` : ""}
       ${migration.active ? `<div class="today-migration"><div><b>旧词记忆校准</b><span>${migration.calibrated} / ${migration.total}</span></div><p class="note">${migration.ready ? "可以恢复日常学习了。" : "先巩固旧词，新词自选。"}</p>${migration.ready ? `<div class="ops plan-actions"><wa-button size="small" data-migration-exit="1">恢复日常学习</wa-button></div>` : ""}</div>` : ""}</wa-card>`;
   }
@@ -472,7 +472,7 @@ const Study = (() => {
       <span class="wd">${WEEK[(i + 1) % 7]}</span><b>${x.learned + x.vocab.length || (x.d > t ? "" : "·")}</b><small>${x.reviewed ? "复 " + x.reviewed : ""}${x.quick ? ` 速 ${x.quick}` : ""}</small></a>`;
     const sum = days.reduce((a, x) => a + x.learned + x.vocab.length, 0);
     return `<wa-card class="mod"><div slot="header" class="mh"><b>本周</b><span class="sub">新学 ${sum} 词</span><a href="#/week">周总结 →</a></div>
-      <div class="weekstrip">${days.map(cell).join("")}</div><p class="note">格子里的数字是那天新学的词数（含生词），下面是复习次数；“速”是快速检查次数。</p></wa-card>`;
+      <div class="weekstrip">${days.map(cell).join("")}</div><p class="note">新学词数含生词 · 复＝复习次数 · 速＝快速检查次数</p></wa-card>`;
   }
   function modLinks() {
     const hard = liveCards().filter(x => SRS.isHard(x.card)).length, nv = vocabCards().length;
@@ -530,7 +530,7 @@ const Study = (() => {
     view().innerHTML = `<div class="logv">
       <div class="vh"><h1>学习记录</h1><span class="seg">${[["today", "今天"], ["yesterday", "昨天"]].map(([v, l]) =>
         `<button data-lday="${v}" class="${W.day === v ? "on" : ""}">记为${l}学的</button>`).join("")}</span></div>
-      <p class="note">像翻书的目录一样，勾上学过的词群再保存；取消勾选会删掉那个词群的学习记录和复习进度。</p>
+      <p class="note">取消勾选并保存会删除该词群的学习记录和复习进度。</p>
       ${units.map(u => {
         const ls = u.lessons.filter(l => l.ready), keys = ls.flatMap(l => l.groups.map(g => `${l.id}:g${g.no}`)), n = keys.filter(k => learned.has(k)).length;
         return `<details class="lunit" data-u="${u.no}"${u.no === fU ? " open" : ""}><summary>Unit ${u.no}<small>已记 ${n}/${keys.length} 个词群</small></summary>
@@ -682,7 +682,7 @@ const Study = (() => {
     return `<wa-card class="mod today-plan quick-plan"><div slot="header" class="mh"><b>今日学习</b><span class="sub">快速过书 · ${finish}</span></div>
       <div class="today-next"><div><b>全书已过 ${covered} / ${plan.total}</b><p>${covered === plan.total ? "首轮覆盖已完成，接下来自动安排少量复习。" : `按词群向前推进 · ${plan.days} 天目标`}</p></div></div>
       <wa-progress-bar value="${plan.total ? Math.round(covered / plan.total * 100) : 0}"></wa-progress-bar>
-      <div class="today-next"><div><b>${status.finished ? "今日计划已完成" : status.completed ? "今日计划进行中" : "今天的安排"}</b><p>新词 ${fresh} 个 · 复习 ${review} 个 · 已完成 ${status.completed} / ${status.total}</p><p>${status.finished ? "今天可以安心结束，后续任务会自动安排。" : `预算 ${plan.minutes} 分钟，可分次完成。`}</p></div><div class="today-action">${status.finished ? "" : btn("#/drill/quick", status.completed ? "继续今日学习" : "开始今日学习", 'variant="brand"', "medium")}</div></div>
+      <div class="today-next"><div><b>${status.finished ? "今日计划已完成" : status.completed ? "今日计划进行中" : "今天的安排"}</b><p>新词 ${fresh} 个 · 复习 ${review} 个 · 已完成 ${status.completed} / ${status.total}</p><p>${status.finished ? "后续任务会自动安排。" : `预算 ${plan.minutes} 分钟，可分次完成。`}</p></div><div class="today-action">${status.finished ? "" : btn("#/drill/quick", status.completed ? "继续今日学习" : "开始今日学习", 'variant="brand"', "medium")}</div></div>
       <details class="today-details"><summary>查看安排说明</summary><div class="today-detail-content"><p>新词为主，穿插少量旧词；识别结果用于后续轮换，过书进度与掌握程度分别记录。</p>
       ${plan.finish > plan.target ? `<p>已按当前进度和每日预算自动补排，预计完成日调整为 ${md(plan.finish)}。</p>` : ""}
       ${migration.total ? `<p>旧词校准进度保留：${migration.calibrated} / ${migration.total}。旧词已纳入少量复习，切回精细模式后自动接续。</p>` : ""}<p>学习目标和时间可在设置里调整，下一学习日生效。</p></div></details></wa-card>`;
@@ -727,7 +727,7 @@ const Study = (() => {
     const entry = D.queue.shift();
     if (!entry) {
       D.q = null; Sync.set("drill:quick", 0);
-      view().innerHTML = `<div class="drill end"><h1>今日计划已完成</h1><p>全书已过 ${quickCoverage().size} / ${D.plan.total} 个词条</p><p class="note">今天可以安心结束。陌生词和剩余内容会自动安排。</p><div class="ops">${btn("#/", "回首页", 'variant="brand"', "medium")}</div></div>`; return;
+      view().innerHTML = `<div class="drill end"><h1>今日计划已完成</h1><p>全书已过 ${quickCoverage().size} / ${D.plan.total} 个词条</p><p class="note">陌生词和剩余内容会自动安排。</p><div class="ops">${btn("#/", "回首页", 'variant="brand"', "medium")}</div></div>`; return;
     }
     D.q = makeQ(entry.x, entry.kind); D.clock = Date.now(); showQuick();
   }
@@ -789,8 +789,7 @@ const Study = (() => {
         <div class="seg">${PRACTICES.map(([v, l]) => `<button data-practice="${v}" class="${(S.practiceType || "meaning") === v ? "on" : ""}">${l}</button>`).join("")}</div>
         <p class="note">「今日学习」使用固定推荐计划，到期、遗忘重学和旧词校准共用每日预算；不随抽查类型改变。「学习新词」按书顺序先看词卡再闯关，可以自由选择，不是每日完成条件。新词关数和一次学习量在设置里调整</p></section>
       <section class="panel"><h2>抽查顺序</h2>
-        <div class="seg">${ORDERS.map(([v, l]) => `<button data-order="${v}" class="${S.drillOrder === v ? "on" : ""}">${l}</button>`).join("")}</div>
-        <p class="note">建议：当天、次日用课件顺序（借词群联系）；周末、二刷用字母或随机（去掉提示，检验真记住）；冲刺用重要性（🔥🔥🔥 → 🔥）</p></section>
+        <div class="seg">${ORDERS.map(([v, l]) => `<button data-order="${v}" class="${S.drillOrder === v ? "on" : ""}">${l}</button>`).join("")}</div></section>
       <section class="panel"><h2>抽哪些词</h2><div class="scopes">
         ${scopes.map(([v, l, c, sub]) => { const k = c ?? n(v); return `<a class="sc${k ? "" : " off"}" href="#/drill/${v}${v === "learn" || v === "due" ? "" : `?practice=${S.practiceType || "meaning"}`}"><b>${l}</b><small>${sub || k + " 词"}</small></a>`; }).join("")}</div>
         <div class="row"><span><b>按书上的范围</b><small>还没记为学过的词也能抽，但不排复习</small></span>
@@ -1043,12 +1042,11 @@ const Study = (() => {
     const head = `${wordHead(x, true)}${backHTML(x)}`;
     const hints = q.hints.length ? `<p class="hint-used">已使用提示${q.hints.includes("video") ? " · 视频" : ""}，本次不能计为独立想起</p>` : "";
     const kind = D.daily ? D.plan.items.find(ref => ref.word === x.word)?.kind : "";
-    const relearn = kind === "relearn" && q.revealed ? `<p class="note">这个词正在重学。可以先看释义、例句和记忆法，重新熟悉后再确认本次表现；困难词会在本轮有限补测。</p>` : "";
     const rate = (r, label, variant) => `<wa-button variant="${variant}" data-recall-rate="${r}">${label}</wa-button>`;
     const controls = q.answered ? `<p class="recall-verdict">${RECALL_LABEL[q.answered]}</p><wa-button variant="brand" data-next="1">继续 <kbd>空格</kbd></wa-button>` : q.revealed
       ? `<div class="recall-ratings">${q.choiceWrong ? "" : q.hints.length ? rate("hinted", "提示后想起", "warning") : rate("independent", "想起了", "success") + rate("effort", "想得费劲", "brand")}${rate("failed", "没想起", "danger")}</div>`
       : `<wa-button variant="brand" data-recall-reveal="1">揭晓 <kbd>空格</kbd></wa-button>${D.extra ? "" : chopBtn(x)}`;
-    put(`<div class="drill recall flipped"><div class="dbar"><span>${esc(D.title)}${kind ? " · " + ({review: "到期复习", relearn: "遗忘重学", calibrate: "旧词校准"})[kind] : ""}${q.retry ? " · 补测" : ""}</span><wa-progress-bar value="${s.total ? Math.round(s.completed / s.total * 100) : 0}"></wa-progress-bar><span>已做 ${s.completed}/${s.total}${D.extra ? "" : ` · 补测 ${s.retries}/${D.rc.added}`}</span><a href="#/" class="dx" title="退出并保存">${D.daily ? "今天到这里" : "✕"}</a></div><div class="dcard${q.revealed ? "" : " locked"}">${head}${hints}${relearn}</div><div class="dops">${controls}</div></div>`);
+    put(`<div class="drill recall flipped"><div class="dbar"><span>${esc(D.title)}${kind ? " · " + ({review: "到期复习", relearn: "遗忘重学", calibrate: "旧词校准"})[kind] : ""}${q.retry ? " · 补测" : ""}</span><wa-progress-bar value="${s.total ? Math.round(s.completed / s.total * 100) : 0}"></wa-progress-bar><span>已做 ${s.completed}/${s.total}${D.extra ? "" : ` · 补测 ${s.retries}/${D.rc.added}`}</span><a href="#/" class="dx" title="退出并保存">${D.daily ? "今天到这里" : "✕"}</a></div><div class="dcard${q.revealed ? "" : " locked"}">${head}${hints}</div><div class="dops">${controls}</div></div>`);
     {
       const cover = (selector, kind, label) => {
         for (const el of view().querySelectorAll(selector)) {
@@ -1157,7 +1155,7 @@ const Study = (() => {
       const extra = strengthenStatus(), remaining = extra.pending.length;
       view().innerHTML = `<div class="drill end"><h1>${remaining ? "这一轮巩固完成" : extra.total ? "本次巩固已完成" : "暂无待巩固词"}</h1>
         <div class="tally"><span>本轮完成 <b>${s.completed}/${s.total}</b></span><span class="g">独立想起 <b>${s.independent + s.effort}</b></span><span class="m">提示后 <b>${s.hinted}</b></span><span class="f">未想起 <b>${s.failed}</b></span></div>
-        <p>${remaining ? `还有 <b>${remaining}</b> 个词待巩固 · 已独立想起 ${extra.done} / ${extra.total} 词` : "今天可以安心结束。"}</p>
+        ${remaining ? `<p>还有 <b>${remaining}</b> 个词待巩固 · 已独立想起 ${extra.done} / ${extra.total} 词</p>` : ""}
         <p class="note">自愿巩固只供练习，不改变首次成绩、熟练度或复习排期。</p>
         ${remaining ? `<details><summary>查看剩余词</summary><p class="note">${extra.pending.map(row => esc(row.word)).join("、")}</p></details>` : ""}
         <div class="ops">${remaining ? `<wa-button size="medium" variant="brand" data-strengthen-continue="1">继续巩固</wa-button>` : ""}${btn("#/", "回首页", remaining ? undefined : 'variant="brand"', "medium")}${!remaining && extra.total ? strengthenRestart() : ""}</div></div>`;
@@ -1175,8 +1173,8 @@ const Study = (() => {
       ${dailyResults ? `<p>今日首答：独立想起 ${dailyResults.independent} · 提示后想起 ${dailyResults.hinted} · 未想起/想错 ${dailyResults.failed} · <b>首答待巩固 ${dailyResults.strengthen.length}</b> · 已达到掌握标准 ${dailyResults.mastered} · 尚在积累证据 ${dailyResults.accumulating}</p>` : ""}
       <p>补测 ${s.retries}/${D.rc.added} · 独立想起 ${s.retrySuccess} · 提示后 ${s.retryHinted} · 未想起 ${s.retryFailed}</p>
       ${s.strengthen.length ? `<details><summary>查看本轮首答需巩固的词（${s.strengthen.length}）</summary><p class="note">${s.strengthen.map(esc).join("、")}</p></details>` : ""}
-      <p class="note">首次表现已保留。补测不覆盖首次成绩、不推进站点；提示后两天检查，未想起次日检查。未学词只练习，不创建复习卡。</p>
-      ${D.daily && !more ? `<p class="note">今天可以安心结束。${extra.total && !extra.pending.length ? "本次巩固已完成。" : "剩余积压会分批安排，新词由你自行选择。"}</p>` : ""}${more ? `<p class="note">今日计划还剩 ${more} 词</p>` : ""}
+      <p class="note">首答决定排期，补测单独记录。未学词仅供练习。</p>
+      ${D.daily && !more ? `<p class="note">${extra.total && !extra.pending.length ? "本次巩固已完成。" : "剩余积压会分批安排，新词由你自行选择。"}</p>` : ""}${more ? `<p class="note">今日计划还剩 ${more} 词</p>` : ""}
       <div class="ops">${more ? `<wa-button variant="brand" id="nextRound">继续今日计划</wa-button>` : extra?.pending.length ? btn("#/drill/strengthen", "继续巩固", undefined, "medium") : extra?.total ? strengthenRestart() : ""}${btn("#/", "回首页", 'variant="brand"', "medium")}${btn("#/drill", "自由抽查", undefined, "medium")}</div></div>`;
   }
 
@@ -1235,7 +1233,7 @@ const Study = (() => {
     let body = "";
     if (q.kind === "mean") body = wordHead(x, done);
     else if (q.kind === "listen") body = done ? wordHead(x, true) : `<button class="bigspk" data-say="1" title="再听一遍（R）">🔊</button><p class="note qhint">听发音，选意思 · R 再听</p>`;
-    else if (q.kind === "reverse") body = `<div class="qmean">${esc(meanText(x.e))}</div>${done ? wordHead(x, true) : `<p class="note qhint">选出对应的英文</p>`}`;
+    else if (q.kind === "reverse") body = `<div class="qmean">${esc(meanText(x.e))}</div>${done ? wordHead(x, true) : ""}`;
     else if (q.kind === "cloze") body = `<div class="qsent">${done || q.contextStudy ? q.cloze.filled : q.cloze.html}</div>${done || q.contextStudy ? `<div class="dzh">${esc(q.cloze.zh)}</div><p class="note">本句词形：${q.cloze.forms.map(esc).join("、")} · 原形：${esc(x.word)}</p>${wordHead(x, true)}` : `<p class="note qhint">选出填进空里的词（可能是变形）</p>${D.practice === "context" ? '<button data-context-study="1">学习例句</button><p class="note">学习例句计为使用帮助</p>' : ""}`}`;
     else if (q.kind === "spell") body = `<div class="qmean">${esc(meanText(x.e))}</div>
       ${done ? `<div class="spres ${q.r === "g" ? "ok" : "bad"}">${q.r === "g" ? "✓ 拼对了" : `${q.input ? `你写的：<s>${esc(q.input)}</s>` : "没写"}${q.r === "m" ? " · 差一个字母，算模糊" : ""}`}</div>${wordHead(x, true)}`
@@ -1434,7 +1432,7 @@ const Study = (() => {
         : few ? `<wa-button size="medium" appearance="outlined" id="nextGroup">再学一群</wa-button>`
         : `<wa-button size="medium" variant="brand" id="nextGroup">${batch ? "学习下一批" : "学习下一群"}</wa-button>`;
       view().innerHTML = `<div class="drill end"><h1>${gs.length > 1 ? `${gs.length} 个词群` : `第 ${G.no} 群`}过关 🎉</h1>
-        <p class="note">${gs.length > 1 ? esc(grpLabel(gs)) : `${lesTitle(G.lid)} · 第 ${G.no} 群「${esc(G.title)}」`}已记为今天学的，明天早上开始复习；今晚睡前巩固还会再测一遍。</p>
+        <p class="note">${gs.length > 1 ? esc(grpLabel(gs)) : `${lesTitle(G.lid)} · 第 ${G.no} 群「${esc(G.title)}」`}已记为今天学的，次日开始复习。</p>
         <div class="tally"><span>过关 <b>${D.passed}</b></span><span class="g">一次就过 <b>${D.items.filter(x => !(D.st.get(x.word) || {}).err && !(D.chopped && D.chopped.has(x.word))).length}</b></span><span class="f">错过才过 <b>${missed.length}</b></span>${D.res.z ? `<span>斩 <b>${D.res.z}</b></span>` : ""}</div>
         ${missed.length ? `<p class="note">本轮需要多练的：${missed.map(x => esc(x.word)).join("、")}。成绩分专项保留，不把听音或拼写错误当成词义遗忘。</p>` : ""}
         ${few && nx ? `<p class="note">${tier === "busy" ? "今天复习偏多，学新 1 群就够了" : "今天积压太多，本来先不学新词"}；想多学也可以再学 1 群。</p>` : ""}

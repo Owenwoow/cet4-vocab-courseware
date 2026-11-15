@@ -283,7 +283,8 @@ test("日限额包含未做首次复习的词，完成不会被剩余积压或�
     else if(h.html.includes('id="nextRound"')){h.click({id:'nextRound'});await new Promise(setImmediate);}
     else break;
   }
-  assert.ok(count<80);await h.navigate('#/');assert.match(h.html,/今日计划已完成/);assert.match(h.html,/今天可以安心结束/);
+  assert.ok(count<80);await h.navigate('#/');assert.match(h.html,/今日计划已完成/);assert.match(h.html,/剩余词会自动安排/);
+  assert.doesNotMatch(h.html,/今天可以安心结束/);
   assert.ok([...h.data].filter(([k,c])=>k.startsWith('srs:')&&c.d<=day).length>0);
 });
 test("跨凌晨四点评分不会写入错误学习日，显示返回首页提示", async () => {
