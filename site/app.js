@@ -294,15 +294,19 @@ function renderDrawer() {
   $("#drawer").innerHTML = h;
 }
 const openDrawer = v => { $("#drawer").classList.toggle("open", v); $("#scrim").classList.toggle("open", v); };
-/* 宽屏时侧边栏常驻，☰ 改为收起 / 展开，状态记住；窄屏仍是抽屉。
-   巩固页（#/drill…）里默认收起，☰ 只临时展开、不改记住的状态，离开巩固页恢复 */
+/* 首页和巩固页进入时收起，☰ 只在当前页临时展开。其他页面仍记住宽屏偏好。 */
 const wide = matchMedia("(min-width:1180px)");
-let drillSide = false;   // 巩固页里临时展开了侧边栏
+let pageSide = false;
+const inHome = () => ["", "#", "#/"].includes(location.hash);
 const inDrill = () => /^#\/drill/.test(location.hash);
-const applySide = () => document.body.classList.toggle("sideOff", inDrill() ? !drillSide : !!store.get("sideOff", false));
+const applySide = () => {
+  const home = inHome();
+  document.body.classList.toggle("homePage", home);
+  document.body.classList.toggle("sideOff", home || inDrill() ? !pageSide : !!store.get("sideOff", false));
+};
 $("#menuBtn").onclick = () => {
   if (!wide.matches) { openDrawer(true); return; }
-  if (inDrill()) drillSide = !drillSide; else store.set("sideOff", !store.get("sideOff", false));
+  if (inHome() || inDrill()) pageSide = !pageSide; else store.set("sideOff", !store.get("sideOff", false));
   applySide();
 };
 applySide();
@@ -452,7 +456,8 @@ async function route() {
   const h = location.hash, isSettings = h === "#/settings", isStudy = !isSettings && Study.isStudy(h);
   if (h !== curHash) viewY.set(curHash, scrollY);
   curHash = h;
-  closePeek(); drillSide = false; applySide();
+  closePeek(); pageSide = false; applySide();
+  if (inHome()) openDrawer(false);
   if ((isSettings || isStudy) && !$("#lessonView").hidden && L) lessonScroll = {id: L.id, h: prevHash, y: scrollY};   // 离开课文前记住读到哪
   if (!isSettings) prevHash = h || "#/";
   $("#lessonView").hidden = isSettings || isStudy; $("#fabs").hidden = isSettings || isStudy;
@@ -760,6 +765,10 @@ function renderSettings() {
   const have = L ? AUD.voices || [] : Object.keys(VOICE_NAMES);
   const sample = L ? allEntries()[0].word : "hello";
   const back = prevHash, bm = back.match(/^#\/u(\d\d)-l(\d\d)/);
+  const time = Study.timeSummary();
+  const timeSummary = time.started
+    ? `今日词单已锁定（${time.minutes} 分钟、${time.words} 词），修改时长次日生效。`
+    : `今日预计 ${time.words} 词（${time.minutes} 分钟）${time.allAvailable ? "，已包含所有可推荐词" : ""}。`;
   $("#settingsView").innerHTML = `
     <a class="back" href="${back}">← 返回${bm ? ` Unit ${+bm[1]} · Lesson ${+bm[2]}` : Study.isStudy(back) && !/^#\/(drill|list|week|log)/.test(back) ? "首页" : ""}</a>
     <h1>设置</h1>
@@ -777,13 +786,13 @@ function renderSettings() {
       <div class="row"><span><b>学习模式</b><small>切换后从首页继续，已做任务和旧词校准进度保留，由程序自动衔接</small></span>
         ${seg("learningMode", [["precise", "精细记忆"], ["quick", "快速过书"]])}</div>
       ${S.learningMode === "quick" ? `<div class="row"><span><b>过书目标</b><small>默认 45 天；按实际进度自动补排，超出时间预算时顺延预计完成日，次日生效</small></span>${seg("quickDays", [[30, "30 天"], [45, "45 天"]])}</div>
-      <div class="row"><span><b>每日过书时间</b><small>默认 30 分钟，新词约占四分之三，少量复习自动穿插；次日生效</small></span>${seg("quickMinutes", [[20, "20 分钟"], [30, "30 分钟"], [45, "45 分钟"], [60, "60 分钟"]])}</div><p class="note">只需完成首页今日安排。陌生词、漏学补排和全书过完后的轻量维护都由程序处理。</p>` : `<p class="note">按正式回忆安排复习、遗忘重学与旧词校准；学习新词可自由选择。</p>`}
+       <div class="row"><span><b>每日过书时间</b><small>新词约占四分之三，少量复习自动穿插。</small><small>${timeSummary}</small></span>${seg("quickMinutes", [[20, "20 分钟"], [30, "30 分钟"], [45, "45 分钟"], [60, "60 分钟"]])}</div><p class="note">只需完成首页今日安排。陌生词、漏学补排和全书过完后的轻量维护都由程序处理。</p>` : `<p class="note">按正式回忆安排复习、遗忘重学与旧词校准；学习新词可自由选择。</p>`}
     </section>
     <section class="panel"><h2>精细记忆 · 今日学习</h2>
       <div class="row"><span><b>考试日期</b><small>用于首页倒计时和考前复习安排</small></span><input type="date" data-set="examDate" value="${esc(S.examDate)}"></div>
       <div class="row"><span><b>每日推荐词数上限</b><small>到期复习、遗忘重学和旧词校准共用上限；实际推荐量还会受时间预算与近期表现影响，次日生效</small></span>
         ${seg("dailyCap", [[25, "25"], [40, "40"], [50, "50"], [60, "60"], [80, "80"], [120, "120"], [200, "200"]])}</div>
-      <div class="row"><span><b>每日时间预算</b><small>含主任务和最多 5 次同日补测；按预计用时推荐词数，不会计时催促。下一学习日生效</small></span>
+      <div class="row"><span><b>每日时间预算</b><small>含主任务和最多 5 次同日补测；按预计用时推荐词数，不会计时催促。</small><small>${S.learningMode === "quick" ? "当前快速过书的安排由「每日过书时间」决定。" : timeSummary}</small></span>
         ${seg("dailyMinutes", [[10, "10 分钟"], [20, "20 分钟"], [30, "30 分钟"]])}</div>
       <div class="row"><span><b>每轮学习词数</b><small>只拆分今日计划，不增加总量；“不限”表示整份计划一轮做完，下一学习日生效</small></span>
         ${seg("roundSize", [[15, "15"], [20, "20"], [25, "25"], [40, "40"], [0, "不限"]])}</div>

@@ -9,6 +9,22 @@ const SRS = require("../site/srs.js");
 const MON = "2026-10-05", TUE = "2026-10-06", WED = "2026-10-07", THU = "2026-10-08", FRI = "2026-10-09";
 const SAT = "2026-10-10", SUN = "2026-10-11";
 
+test("同步优先保留已开始的词单，两端均开始时取较早的一份", () => {
+  for (const [key, course] of [["plan:" + MON, {}], ["quick:plan:" + MON, {course: "first", courseCreated: 1}]]) {
+    const preview = [{v: 1, id: "preview", created: 1, ...course}, 1];
+    const late = [{v: 1, id: "late", created: 2, startedAt: 30, ...course}, 30];
+    const early = [{v: 1, id: "early", created: 3, startedAt: 20, ...course}, 20];
+    assert.equal(SRS.mergeStudyRecord(key, preview, early), early);
+    assert.equal(SRS.mergeStudyRecord(key, early, preview), early);
+    assert.equal(SRS.mergeStudyRecord(key, late, early), early);
+    assert.equal(SRS.mergeStudyRecord(key, early, late), early);
+  }
+  const key = "quick:plan:" + MON;
+  const preview = [{v: 1, id: "preview", created: 3, course: "first", courseCreated: 1}, 3];
+  const otherCourse = [{v: 1, id: "other", created: 4, course: "second", courseCreated: 2, startedAt: 10}, 10];
+  assert.equal(SRS.mergeStudyRecord(key, preview, otherCourse), preview);
+});
+
 test("主动回忆沿用必做、分段和考前封顶；专项开关不影响词义等级", () => {
   const c = SRS.freshCard(MON, "modern");
   const hinted = SRS.rateRecall(c, "hinted", TUE, {id: "hint"});

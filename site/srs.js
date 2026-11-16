@@ -4,7 +4,7 @@
    覆盖与识别不冒充正式回忆，旧词校准保留。详见 docs/plans/2026-11-06-quick-study.md。
 
    2026-11-02：日常任务统一走 makeDailyPlan / dailyStatus，所有主任务共用张数和时间预算；
-   词单当天固定，补测最多五次、不重复评分；晚间不再必做，新词始终自选。
+   今日学习开始后词单固定，补测最多五次、不重复评分；晚间不再必做，新词始终自选。
    新规则及数据兼容见 docs/plans/2026-11-02-daily-learning.md。下面旧队列和上限说明仅用于兼容。
 
    2026-10-28 日常复习已改主动回忆，当前规则见 rateRecall 上方及 docs/plans/2026-10-28-active-recall.md。
@@ -398,7 +398,7 @@ const SRS = (() => {
   const shift = (c, n) => ({...c, a: add(c.a, n), d: add(c.d, n)});
 
   /* 2026-11-02：统一每日计划。以下只选择任务，评分仍唯一走 rateRecall。
-     所有队列共用张数和预计用时预算（补测预留最多五次）；计划当天固定，4 点换日。
+     所有队列共用张数和预计用时预算（补测预留最多五次）；计划开始后固定，4 点换日。
      plan 是不可变词单；task 按学习日及 life 分键，保存首次与补测，不能靠日志总数重算完成。
      旧四选一不作校准证据；结构升级不改卡片、排期或业务时间。 */
   const recalled = c => !!c.z || !!c.recall?.result || !!c.recall?.history?.length;
@@ -514,6 +514,10 @@ const SRS = (() => {
     }
     if (/^(plan|task|quick):/.test(key) && (a[0].reset || 0) !== (b[0].reset || 0)) return (a[0].reset || 0) > (b[0].reset || 0) ? a : b;
     if ((key.startsWith("plan:") || key.startsWith("quick:plan:") || key === "quick:course") && a[0].v === 1 && b[0].v === 1) {
+      // 同一安排中，已开始的词单优先于首页预览；两端都已开始则取较早的一份。
+      const startedA = a[0].startedAt || Infinity, startedB = b[0].startedAt || Infinity;
+      if (key !== "quick:course" && a[0].course === b[0].course && startedA !== startedB)
+        return startedA < startedB ? a : b;
       const rank = p => `${p.course ? String(p.courseCreated || 0).padStart(16, "0") + "|" + p.course + "|" : ""}${String(p.created || 0).padStart(16, "0")}|${p.id}|${JSON.stringify(p)}`;
       // 同一旧计划升级后固定了分轮大小，旧设备的副本不能抹掉这个字段。
       if (a[0].id === b[0].id && a[0].created === b[0].created && Number.isFinite(a[0].roundSize) !== Number.isFinite(b[0].roundSize))
@@ -532,7 +536,7 @@ const SRS = (() => {
   /* 快速过书：首轮覆盖与正式回忆分开。checks 是不可变的逐日首次识别事件；
      正式回忆在本轮开始后也可计入覆盖。旧卡不会仅因存在就被跳过。
      75% 时间推进，25% 轮换复习；漏学后最多按基础速度 125% 补排，超出预算自动顺延。
-     词单每天固定，不清积压、不无限补测；全书覆盖后自动轻量维护。 */
+     词单开始后固定，不清积压、不无限补测；全书覆盖后自动轻量维护。 */
   const quickCheckKey = (day, word) => `quick:check:${day}:${encodeURIComponent(word)}`;
   function quickProgress(book, checks, cards, started, day) {
     const words = new Set(book.map(x => x.word)), history = new Map();

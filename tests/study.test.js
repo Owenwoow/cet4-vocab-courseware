@@ -127,6 +127,49 @@ test("快速模式跨日旧题禁止计分，回首页自动生成下一日安�
   assert.ok(h.data.get("quick:plan:" + SRS.add(day, 1)));
 });
 
+test("每日过书时间在开始前重算新词，开始后保留词单和旧版断点", async () => {
+  const key = "quick:plan:" + day;
+  const h = await harness("#/", {"set:learningMode": "quick", "set:quickMinutes": 20}).render();
+  const before = +h.html.match(/新词 (\d+) 个/)[1];
+  const beforeSummary = copy(h.context.Study.timeSummary());
+  assert.equal(beforeSummary.minutes, 20);
+  assert.equal(beforeSummary.started, false);
+  h.context.S.quickMinutes = 45;
+  h.context.S.quickDays = 30;
+  await h.navigate("#/");
+  const after = +h.html.match(/新词 (\d+) 个/)[1];
+  assert.ok(after > before);
+  assert.deepEqual(copy(h.context.Study.timeSummary()), {started: false, minutes: 45, words: after + +h.html.match(/复习 (\d+) 个/)[1]});
+  assert.match(h.html, /预算 45 分钟/);
+  assert.match(h.html, /45 天目标/);
+  await h.navigate("#/drill/quick");
+  const plan = h.data.get(key);
+  assert.equal(plan.minutes, 45);
+  assert.equal(plan.items.filter(x => x.kind === "new").length, after);
+  assert.ok(plan.startedAt);
+  const first = h.word();
+  h.context.S.quickMinutes = 20;
+  assert.equal(h.context.Study.timeSummary().started, true);
+  assert.equal(h.context.Study.timeSummary().minutes, 45);
+  await h.navigate("#/");
+  assert.match(h.html, /预算 45 分钟/);
+  assert.deepEqual(h.data.get(key), plan);
+  await h.navigate("#/drill/quick");
+  assert.equal(h.word(), first);
+  for (let i = 0; i < plan.items.length && !h.html.includes("先看词卡"); i++) {
+    h.click({quickOpt: "-1"}); h.click({quickNext: "1"});
+  }
+  assert.match(h.html, /先看词卡/);
+  h.click({quickNext: "1"});
+  const checkpoint = h.data.get("drill:quick");
+  assert.ok(checkpoint?.seen.length);
+  const {startedAt, ...legacyPlan} = plan;
+  const legacy = await harness("#/", {...Object.fromEntries(h.data), [key]: legacyPlan}).render();
+  assert.match(legacy.html, /预算 45 分钟/);
+  assert.equal(legacy.data.get(key).id, plan.id);
+  assert.deepEqual(legacy.data.get("drill:quick"), checkpoint);
+});
+
 test("切回精细时已达标的旧词过渡自动结束，正式证据和卡片保留", async () => {
   const h = harness("#/", {"quick:course": {v: 1, id: "course", started: yesterday, created: 1}});
   const items = ["specific", "dose"].map(word => {
@@ -418,9 +461,61 @@ test('当日计划固定每轮数量，设置变化次日才影响新计划', as
   const p=copy(h.data.get('plan:'+day)); assert.equal(p.roundSize,25);
   h.context.S.roundSize=1; await h.navigate('#/drill/due');
   assert.equal(h.data.get("drill:due").rc.w.length,2);
-  assert.deepEqual(h.data.get('plan:'+day),p);
+  const {startedAt, ...plan} = h.data.get('plan:'+day);
+  assert.ok(startedAt);
+  assert.deepEqual(plan,p);
   h.setDay(SRS.add(day,1));await h.navigate('#/');
   assert.equal(h.data.get('plan:'+SRS.add(day,1)).roundSize,1);
+});
+
+test("精细记忆未开始时按新时间预算重算推荐量，进入首题之后锁定", async () => {
+  const saved = {"set:dailyMinutes": 10, "set:dailyCap": 50};
+  for (const lid of ["u07-l01", "u08-l01"]) {
+    const lesson = json(`data/lessons/${lid}.json`);
+    for (const g of lesson.groups) for (const e of g.entries)
+      saved["srs:" + e.word] = {...SRS.freshCard(yesterday, e.word), k: lesson.id, g: g.no, o: e.no, f: e.freq};
+  }
+  const h = await harness("#/", saved).render(), key = "plan:" + day;
+  assert.match(h.html, /今天推荐 25 词/);
+  h.context.S.dailyMinutes = 30;
+  h.context.S.dailyCap = 40;
+  assert.deepEqual(copy(h.context.Study.timeSummary()), {started: false, minutes: 30, words: 50, allAvailable: false});
+  assert.equal(h.data.get(key).budget.minutes, 10);
+  await h.navigate("#/");
+  assert.match(h.html, /今天推荐 50 词/);
+  assert.match(h.html, /预算 30 分钟/);
+  await h.navigate("#/drill/due");
+  const plan = h.data.get(key), checkpoint = h.data.get("drill:due");
+  assert.equal(plan.items.length, 50);
+  assert.equal(plan.budget.minutes, 30);
+  assert.ok(plan.startedAt);
+  h.context.S.dailyMinutes = 10;
+  assert.equal(h.context.Study.timeSummary().started, true);
+  assert.equal(h.context.Study.timeSummary().minutes, 30);
+  await h.navigate("#/");
+  assert.match(h.html, /预算 30 分钟/);
+  assert.deepEqual(h.data.get(key), plan);
+  const {startedAt, ...legacyPlan} = plan;
+  const legacy = await harness("#/", {...Object.fromEntries(h.data), [key]: legacyPlan}).render();
+  assert.equal(legacy.data.get(key).id, plan.id);
+  assert.match(legacy.html, /预算 30 分钟/);
+  assert.deepEqual(legacy.data.get("drill:due"), checkpoint);
+  h.setDay(SRS.add(day, 1));
+  await h.navigate("#/");
+  assert.match(h.html, /预算 10 分钟/);
+  assert.match(h.html, /今天推荐 25 词/);
+});
+
+test("设置预览所有可推荐词已纳入，时长变化时词数可以相同且不提前保存计划", () => {
+  const h = harness("#/settings");
+  assert.deepEqual(copy(h.context.Study.timeSummary()), {started: false, minutes: 20, words: 2, allAvailable: true});
+  h.context.S.dailyMinutes = 10;
+  assert.deepEqual(copy(h.context.Study.timeSummary()), {started: false, minutes: 10, words: 2, allAvailable: true});
+  assert.equal(h.data.has("plan:" + day), false);
+  h.context.S.learningMode = "quick";
+  assert.equal(h.context.Study.timeSummary().minutes, 30);
+  assert.equal(h.data.has("quick:course"), false);
+  assert.equal(h.data.has("quick:plan:" + day), false);
 });
 
 test('计划外首答单列，历史抵扣和退役词不冒充首答', async () => {

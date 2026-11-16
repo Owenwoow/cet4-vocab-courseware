@@ -7,8 +7,8 @@
                 h 最近 6 次第一遍结果, q 答对过的最难题型, z 斩, p 学习新词整群过关的日期（手动勾的词群没有）, cf 易混词,
                 k 课id, g 词群号, f 火苗, o 词条序号, life 生命周期, recall 新回忆等级/跨天证据/首次结果, skills 各专项成绩, attempts 已计分标识}（取消记 0）
      log:<日期> = {g, m, f 当天评分次数, dv 当天复习的到期词数, mv 其中首次复习的词数（保留历史统计，不再豁免每日预算）, recall 新回忆计数, tasks 分今日复习/旧晚间/自由回忆, skills 专项计数, dailyBase 新调度前当日计数基线}
-     plan:<日期> = 当日固定词单与预算；task:<日期>:<life> = 首次及补测；migration:state = 校准阶段与旧卡清单
-     quick:course / quick:plan:<日期> / quick:check:<日期>:<编码词> = 首轮起点 / 固定过书安排 / 首次识别；不改变正式回忆证据
+     plan:<日期> = 当日词单与预算，startedAt 标记已开始；task:<日期>:<life> = 首次及补测；migration:state = 校准阶段与旧卡清单
+     quick:course / quick:plan:<日期> / quick:check:<日期>:<编码词> = 首轮起点 / 过书安排（同样在开始时锁定） / 首次识别；不改变正式回忆证据
      evening:<日期> = 晚间独立任务（items 按卡片 life 保存首次及补测，finished 完成，skipped 跳过）；browse:<日期> = 被动浏览
      drill:<范围> = 巩固做到一半的进度（同一天有效，做完记 0），字段见 progSave
      drill:strengthen-result:<life> = 当日自愿巩固的逐词结果 {d, life, word, result}；只影响练习名单，不计正式成绩，重练记 0
@@ -136,7 +136,6 @@ const Study = (() => {
   const offTypes = () => [...(S.quizListen ? [] : [SRS.TYPE.LISTEN]), ...(S.quizSpell ? [] : [SRS.TYPE.SPELL])];
   const lvOpt = () => ({off: offTypes()});
   const SLOW_K = {loose: 1.5, std: 1, strict: 0.75, off: 0};
-  const planKey = () => "plan:" + T();
   const taskRecord = (life, day = T()) => Sync.get(SRS.taskKey(day, life), 0) || {};
   const recallSchedule = c => ({...Object.fromEntries(Object.entries(c).filter(([k]) => ["a", "s", "d", "l", "r", "n", "t", "h", "v", "z"].includes(k))),
     recall: Object.fromEntries(Object.entries(c.recall).filter(([k]) => ["level", "days", "day", "result"].includes(k)))});
@@ -147,15 +146,28 @@ const Study = (() => {
     if (resumed !== old) Sync.set("migration:state", resumed);
     return resumed;
   }
-  function dailyPlan() {
-    let p = Sync.get(planKey(), 0);
-    if (!p || p.v !== 1 || p.d !== T() || !Array.isArray(p.items) || !Number.isFinite(p.budget?.limit)) {
-      memoryState();
-      p = {...SRS.makeDailyPlan(liveCards(), T(), {cap: cap(), minutes: S.dailyMinutes, id: newId(), created: Date.now(), credited: logOf(T()).dv || 0}), roundSize: +S.roundSize || 0};
-      Sync.set(planKey(), p);
+  // 旧版预览和已开始的词单格式相同，用已有正式进度识别是否开始。
+  const dailyStarted = p => !!(p.startedAt || progGet("due") || p.credited || Sync.entries("task:" + p.d + ":").some(([, r]) => r?.first?.planned));
+  function dailyPlan({start = false, preview = false} = {}) {
+    const day = T(), key = "plan:" + day, minutes = Math.max(5, Math.min(60, +S.dailyMinutes || 20));
+    let p = Sync.get(key, 0);
+    if (!p || p.v !== 1 || p.d !== day || !Array.isArray(p.items) || !Number.isFinite(p.budget?.limit)) {
+      if (!preview) memoryState();
+      p = {...SRS.makeDailyPlan(liveCards(), day, {cap: cap(), minutes, id: newId(), created: Date.now(), credited: logOf(day).dv || 0}), roundSize: +S.roundSize || 0};
+      if (!preview) Sync.set(key, p);
     }
     // 旧计划没有分轮设置，首次读取时固定当前值，保留已有词单及断点。
-    if (!Number.isFinite(p.roundSize)) { p = {...p, roundSize: +S.roundSize || 0}; Sync.set(planKey(), p); }
+    if (!Number.isFinite(p.roundSize)) {
+      p = {...p, roundSize: +S.roundSize || 0};
+      if (!preview) Sync.set(key, p);
+    }
+    if (p.startedAt) return p;
+    if (p.budget.minutes !== minutes) {
+      if (dailyStarted(p)) start = true;
+      else p = {...p, ...SRS.makeDailyPlan(liveCards(), day, {cap: p.budget.cap, minutes, credited: p.credited, id: start ? newId() : p.id, created: p.created})};
+    }
+    // 重算的词单在开始时才写回，沿用当天的词数上限和分轮大小。
+    if (start && !preview) { p = {...p, startedAt: Date.now()}; Sync.set(key, p); }
     return p;
   }
   function planStatus() {
@@ -658,19 +670,39 @@ const Study = (() => {
     .map(([word, ref]) => ({word, lid: ref[0], no: ref[1], order: +ref[0].slice(1, 3) * 1e6 + +ref[0].slice(5) * 1e4 + ref[1]})).sort((a, b) => a.order - b.order);
   // 已会也要在本轮见一次；旧词集中校准阶段保留，不因切换退出或重建。
   const quickCards = () => [...allCards(), ...vocabCards()];
-  function quickCourse() {
+  function quickCourse(preview = false) {
     let c = Sync.get("quick:course", 0);
-    if (!c?.started) { c = {v: 1, id: newId(), started: T(), created: Date.now()}; Sync.set("quick:course", c); }
+    if (!c?.started) {
+      c = {v: 1, id: newId(), started: T(), created: Date.now()};
+      if (!preview) Sync.set("quick:course", c);
+    }
     return c;
   }
-  function quickPlan() {
-    const c = quickCourse(), key = "quick:plan:" + T();
+  const quickStarted = (p, checks) => !!(p.startedAt || progGet("quick")?.quick === p.id || (checks ?? quickChecks()).some(e => e.d === p.d));
+  function quickPlan({start = false, preview = false} = {}) {
+    const c = quickCourse(preview), day = T(), key = "quick:plan:" + day, minutes = Math.max(10, Math.min(60, +S.quickMinutes || 30));
     let p = Sync.get(key, 0);
     if (!p || p.course !== c.id) {
-      p = SRS.makeQuickPlan(quickBook(), quickCards(), quickChecks(), c, T(), {days: S.quickDays, minutes: S.quickMinutes, id: newId(), created: Date.now()});
-      Sync.set(key, p);
+      p = SRS.makeQuickPlan(quickBook(), quickCards(), quickChecks(), c, day, {days: S.quickDays, minutes, id: newId(), created: Date.now()});
+      if (!preview) Sync.set(key, p);
     }
+    if (p.startedAt) return p;
+    if (p.minutes !== minutes) {
+      const checks = quickChecks();
+      if (quickStarted(p, checks)) start = true;
+      else p = {...p, ...SRS.makeQuickPlan(quickBook(), quickCards(), checks, c, day, {days: p.days, minutes, id: start ? newId() : p.id, created: p.created})};
+    }
+    if (start && !preview) { p = {...p, startedAt: Date.now()}; Sync.set(key, p); }
     return p;
+  }
+  function timeSummary() {
+    if (S.learningMode === "quick") {
+      const plan = quickPlan({preview: true});
+      return {started: quickStarted(plan), minutes: plan.minutes, words: plan.items.length};
+    }
+    const plan = dailyPlan({preview: true});
+    return {started: dailyStarted(plan), minutes: plan.budget.minutes, words: plan.items.length + (plan.credited || 0),
+      allAvailable: plan.items.length > 0 && plan.items.length === plan.available};
   }
   function quickCoverage() { return SRS.quickProgress(quickBook(), quickChecks(), quickCards(), quickCourse().started, T()); }
   function modQuickToday() {
@@ -685,11 +717,11 @@ const Study = (() => {
       <div class="today-next"><div><b>${status.finished ? "今日计划已完成" : status.completed ? "今日计划进行中" : "今天的安排"}</b><p>新词 ${fresh} 个 · 复习 ${review} 个 · 已完成 ${status.completed} / ${status.total}</p><p>${status.finished ? "后续任务会自动安排。" : `预算 ${plan.minutes} 分钟，可分次完成。`}</p></div><div class="today-action">${status.finished ? "" : btn("#/drill/quick", status.completed ? "继续今日学习" : "开始今日学习", 'variant="brand"', "medium")}</div></div>
       <details class="today-details"><summary>查看安排说明</summary><div class="today-detail-content"><p>新词为主，穿插少量旧词；识别结果用于后续轮换，过书进度与掌握程度分别记录。</p>
       ${plan.finish > plan.target ? `<p>已按当前进度和每日预算自动补排，预计完成日调整为 ${md(plan.finish)}。</p>` : ""}
-      ${migration.total ? `<p>旧词校准进度保留：${migration.calibrated} / ${migration.total}。旧词已纳入少量复习，切回精细模式后自动接续。</p>` : ""}<p>学习目标和时间可在设置里调整，下一学习日生效。</p></div></details></wa-card>`;
+      ${migration.total ? `<p>旧词校准进度保留：${migration.calibrated} / ${migration.total}。旧词已纳入少量复习，切回精细模式后自动接续。</p>` : ""}<p>今日学习开始前可调整过书时间。过书目标和开始后调整的时间次日生效。</p></div></details></wa-card>`;
   }
   function saveQuickSeen() { Sync.set("drill:quick", {d: D.plan.d, quick: D.plan.id, seen: [...D.seen], times: {...D.times}}); }
   async function startQuick() {
-    const hash = location.hash, plan = quickPlan(), status = SRS.quickStatus(plan, quickChecks(), quickCards());
+    const hash = location.hash, plan = quickPlan({start: true}), status = SRS.quickStatus(plan, quickChecks(), quickCards());
     setHead("快速过书"); view().innerHTML = `<p class="empty">加载中…</p>`;
     const old = Sync.get("drill:quick", 0), seen = new Set(old?.d === T() && old.quick === plan.id ? old.seen : []);
     try {
@@ -909,7 +941,7 @@ const Study = (() => {
     view().innerHTML = `<p class="empty">加载中…</p>`;
     const learn = !preset && sc === "learn", hash = location.hash, practice = learn ? "" : practiceOf();
     const daily = sc === "due" && !practice && !preset;
-    const plan = daily ? dailyPlan() : null;
+    const plan = daily ? dailyPlan({start: true}) : null;
     const progressScope = practice ? `practice:${practice}:${sc}` : sc, sv = preset ? null : progGet(progressScope);
     let items, pool = [], pp = {phs: [], vbs: []}, lg = null;
     try {
@@ -934,6 +966,7 @@ const Study = (() => {
       if (items.some(isPh)) pp = await buildPhrasePool(items);
     } catch (err) { loadFail(err); return; }
     if (location.hash !== hash) return;              // 加载期间去了别的页
+    if (daily && dailyPlan().id !== plan.id) return startDrill(sc);   // 加载期间同步到了另一份已开始的词单
     const keep = sv && (!learn || (lg.g && lg.gs.every(p => svKeys(sv).includes(p.g.key)))) ? sv : null;   // 学习新词换了一批，旧进度不用
     const done = new Set(keep ? keep.done : []), rest = items.filter(x => !done.has(x.word)), rated = new Map(keep ? Object.entries(keep.rated || {}) : []);
     const res = {g: 0, m: 0, f: 0}; for (const r of rated.values()) res[r]++;
@@ -1698,5 +1731,5 @@ const Study = (() => {
   const bind = () => { view().addEventListener("click", onClick); view().addEventListener("change", onChange); view().addEventListener("toggle", onToggle, true); };
   bind();
 
-  return {isStudy, render, refresh, lookupCtx, markGroups, unmarkGroups, learnDate, nextGroups, vocabGet, addVocab, removeVocab, forgetBook};
+  return {isStudy, render, refresh, timeSummary, lookupCtx, markGroups, unmarkGroups, learnDate, nextGroups, vocabGet, addVocab, removeVocab, forgetBook};
 })();

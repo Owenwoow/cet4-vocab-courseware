@@ -19,6 +19,7 @@ MODES = {
     'context': ('语境填空', '#/drill/all?practice=context'),
     'browse': ('浏览词卡', '#/list/all'),
     'home': ('测试首页', '#/'),
+    'budget': ('学习时长与推荐量', '#/'),
     'migration': ('首次旧词校准', '#/'),
     'backlog': ('大量积压（分批推荐）', '#/'),
     'complete': ('今日已完成（仍有积压）', '#/'),
@@ -85,7 +86,7 @@ class Handler(SimpleHTTPRequestHandler):
             if mode not in MODES:
                 self.send_error(404)
                 return
-            seed = json.dumps(entries(mode in ('backlog', 'complete')), ensure_ascii=False).replace('<', '\\u003c')
+            seed = json.dumps(entries(mode in ('budget', 'backlog', 'complete')), ensure_ascii=False).replace('<', '\\u003c')
             if mode == 'quick':
                 seed = '[]'
             destination = json.dumps(MODES[mode][1])
