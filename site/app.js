@@ -294,22 +294,24 @@ function renderDrawer() {
   $("#drawer").innerHTML = h;
 }
 const openDrawer = v => { $("#drawer").classList.toggle("open", v); $("#scrim").classList.toggle("open", v); };
-/* 首页和巩固页进入时收起，☰ 只在当前页临时展开。其他页面仍记住宽屏偏好。 */
+/* 首页和巩固页默认收起。设置页有独立的临时状态，返回时恢复来源页的目录。 */
 const wide = matchMedia("(min-width:1180px)");
-let pageSide = false;
+let pageSide = false, settingsSide = false;
 const inHome = () => ["", "#", "#/"].includes(location.hash);
-const inDrill = () => /^#\/drill/.test(location.hash);
+const inSettings = () => location.hash === "#/settings";
+const usesPageSide = () => inHome() || /^#\/drill/.test(location.hash);
 const applySide = () => {
-  const home = inHome();
-  document.body.classList.toggle("homePage", home);
-  document.body.classList.toggle("sideOff", home || inDrill() ? !pageSide : !!store.get("sideOff", false));
+  document.body.classList.toggle("homePage", inHome());
+  const sideOpen = inSettings() ? settingsSide : (usesPageSide() ? pageSide : !store.get("sideOff", false));
+  document.body.classList.toggle("sideOff", !sideOpen);
 };
 $("#menuBtn").onclick = () => {
   if (!wide.matches) { openDrawer(true); return; }
-  if (inHome() || inDrill()) pageSide = !pageSide; else store.set("sideOff", !store.get("sideOff", false));
+  if (inSettings()) settingsSide = !settingsSide;
+  else if (usesPageSide()) pageSide = !pageSide;
+  else store.set("sideOff", !store.get("sideOff", false));
   applySide();
 };
-applySide();
 $("#scrim").onclick = () => openDrawer(false);
 $("#drawer").addEventListener("click", e => { if (e.target.closest("a")) openDrawer(false); });
 
@@ -454,12 +456,17 @@ async function route() {
   if (!ready.length) { $("#groups").innerHTML = `<p class="empty">还没有生成任何课。</p>`; return; }
   const last = ready.some(l => l.id === store.get("last")) ? store.get("last") : ready[0].id;
   const h = location.hash, isSettings = h === "#/settings", isStudy = !isSettings && Study.isStudy(h);
+  const pageHash = inHome() ? "#/" : h;
+  const returningFromSettings = curHash === "#/settings" && pageHash === prevHash;
   if (h !== curHash) viewY.set(curHash, scrollY);
   curHash = h;
-  closePeek(); pageSide = false; applySide();
-  if (inHome()) openDrawer(false);
+  closePeek();
+  if (isSettings) settingsSide = false;
+  else if (!returningFromSettings) pageSide = false;
+  applySide();
+  if (inHome() || isSettings) openDrawer(false);
   if ((isSettings || isStudy) && !$("#lessonView").hidden && L) lessonScroll = {id: L.id, h: prevHash, y: scrollY};   // 离开课文前记住读到哪
-  if (!isSettings) prevHash = h || "#/";
+  if (!isSettings) prevHash = pageHash;
   $("#lessonView").hidden = isSettings || isStudy; $("#fabs").hidden = isSettings || isStudy;
   $("#settingsView").hidden = !isSettings; $("#studyView").hidden = !isStudy;
   $("#homeBtn").classList.toggle("on", isStudy && !/^#\/(drill|list|week|log)/.test(h));
@@ -1155,6 +1162,7 @@ Sync.on(changed => {
 
 /* ---------- 启动 ---------- */
 applySettings();
+applySide();
 window.addEventListener("hashchange", route);
 fetchJSON("data/book.json").then(b => { BOOK = b; renderDrawer(); return route(); })
   .then(() => Sync.start()).then(() => { posReady = true; })
