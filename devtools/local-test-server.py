@@ -7,6 +7,7 @@ from urllib.parse import urlparse, parse_qs
 ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / 'site'
 MODES = {
+    'onboarding': ('新用户首次引导', '#/'),
     'due': ('今日学习', '#/drill/due'),
     'today': ('旧晚间路由（兼容）', '#/drill/today'),
     'more': ('额外到期复习', '#/drill/more'),
@@ -87,7 +88,7 @@ class Handler(SimpleHTTPRequestHandler):
                 self.send_error(404)
                 return
             seed = json.dumps(entries(mode in ('budget', 'backlog', 'complete')), ensure_ascii=False).replace('<', '\\u003c')
-            if mode == 'quick':
+            if mode in ('quick', 'onboarding'):
                 seed = '[]'
             destination = json.dumps(MODES[mode][1])
             self.html('''<!doctype html><meta charset="utf-8"><title>准备测试数据</title><p>正在准备演示数据…</p><script src="/srs.js"></script><script>
@@ -132,7 +133,9 @@ class Handler(SimpleHTTPRequestHandler):
                 doc[SRS.taskKey(day,c.life)]=[{d:day,word:ref.word,life:c.life,first:{result,at:now}},now];
               }
             }
-            for (const [k,v] of Object.entries({autoSay:false,autoEx:false,voice:'ava'})) doc['set:'+k]=[v,now];
+            if (mode !== 'onboarding') {
+              for (const [k,v] of Object.entries({autoSay:false,autoEx:false,voice:'ava'})) doc['set:'+k]=[v,now];
+            }
             if (localStorage.getItem('lx:local-test:sync:cfg')) {
               document.body.textContent = '测试专用存储中存在云同步配置，已停止初始化。';
               throw new Error('测试地址存在已有数据');

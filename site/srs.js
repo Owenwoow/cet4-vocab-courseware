@@ -75,9 +75,10 @@ const SRS = (() => {
   /* 从复习日 t 进到第 s 站后的到期日 */
   const stationDue = (s, t, lv = 4, key = "") => add(t, spread(stationGap(s, lv), key, t));
 
-  /* 考前封顶：窗口（考前 7 天～考前 3 天）开始前复习、算出的到期日又晚于窗口的，按 key 分散到窗口各天；
-     在窗口里或之后复习的不管（刚见过） */
+  /* 已设考试日期时，窗口（考前 7 天～考前 3 天）开始前复习、算出的到期日又晚于窗口的，按 key 分散到窗口各天；
+     在窗口里或之后复习的不管（刚见过）。空字符串表示未设置。 */
   function examCap(d, t, key, exam = EXAM) {
+    if (!exam) return d;
     const lo = add(exam, -7), end = add(exam, -3);
     if (d <= end || t >= lo) return d;
     return add(lo, hash(key) % (diff(end, lo) + 1));
@@ -255,9 +256,9 @@ const SRS = (() => {
     if (r === "f") return {...n, a: t, s: 0, d: add(t, 1), l: (c.l || 0) + 1, h, v, z: 0};
     if (!isDue(c, t)) return n;                     // 提前复习：不改计划，也不记进熟练度（v 不加）
     const q = r === "g" && opt.type >= 0 && opt.type <= TYPE.SPELL ? Math.max(c.q || 0, opt.type) : c.q || 0;
-    if (opt.hold) return {...n, h, v, q, d: examCap(add(t, 2), t, key, opt.exam || EXAM)};
+    if (opt.hold) return {...n, h, v, q, d: examCap(add(t, 2), t, key, opt.exam)};
     const s = c.s + 1, nc = {...n, h, v, q, s};       // 记得、模糊都进下一站；模糊靠 h 打断连对来降熟练度
-    return {...nc, d: examCap(stationDue(s, t, level(nc, {off: opt.off}), key), t, key, opt.exam || EXAM)};
+    return {...nc, d: examCap(stationDue(s, t, level(nc, {off: opt.off}), key), t, key, opt.exam)};
   }
 
   /* 斩：直接 5 级，30 天后（或考前窗口）抽查；抽查答错照常重来并清掉 z */

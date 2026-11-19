@@ -33,7 +33,7 @@
 <!-- 组件库 Web Awesome：只引主题变量和组件加载器（用到哪个组件自动加载哪个），不引 native.css，免得改动课文页 -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@awesome.me/webawesome@3.14.0/dist-cdn/styles/themes/default.css">
 <script type="module" src="https://cdn.jsdelivr.net/npm/@awesome.me/webawesome@3.14.0/dist-cdn/webawesome.loader.js"></script>
-<link rel="stylesheet" href="style.css?v=20261117-settings-directory">
+<link rel="stylesheet" href="style.css?v=20261119-study-guide">
 </head>
 <body class="homePage sideOff">
 <noscript>
@@ -73,6 +73,35 @@
 <main class="wrap settings" id="settingsView" hidden></main>
 
 <main class="wrap study" id="studyView" hidden></main>
+
+<dialog class="onboarding" id="onboarding" aria-labelledby="onboardingTitle">
+  <form>
+    <header class="onboarding-head">
+      <div class="onboarding-progress" role="progressbar" aria-label="学习设置" aria-valuemin="0" aria-valuemax="2" aria-valuenow="1"></div>
+      <button type="button" id="onboardingSkip" aria-label="稍后设置" title="稍后设置">×</button>
+      <h2 id="onboardingTitle" tabindex="-1" autofocus>你想怎么学？</h2>
+    </header>
+    <div class="onboarding-body">
+      <div class="onboarding-modes" role="radiogroup" aria-labelledby="onboardingTitle">
+        <label><input type="radio" name="learningMode" value="precise" checked>
+          <span class="mode-card"><i class="mode-art flashcards" aria-hidden="true"></i>
+            <span><strong>边学边复习</strong><small>一次学一组新词，按记忆情况安排复习。</small></span></span></label>
+        <label><input type="radio" name="learningMode" value="quick">
+          <span class="mode-card"><i class="mode-art open-book" aria-hidden="true"></i>
+            <span><strong>先过一遍全书</strong><small>按课本顺序学新词，每天穿插少量复习。</small></span></span></label>
+      </div>
+      <div class="onboarding-schedule" hidden>
+        <fieldset><legend>每日学习时间</legend><div class="onboarding-times"></div></fieldset>
+        <label class="onboarding-date"><span>考试日期 <small>选填</small></span><input type="date" name="examDate"></label>
+      </div>
+    </div>
+    <footer class="onboarding-actions">
+      <button type="button" id="onboardingRestore">恢复已有进度</button>
+      <button type="button" id="onboardingBack" hidden>上一步</button>
+      <button class="onboarding-start" type="submit"><span>下一步</span><i aria-hidden="true"></i></button>
+    </footer>
+  </form>
+</dialog>
 
 <div class="fabs" id="fabs">
   <button class="fab" id="peekFab" title="词群速览：本群导图和词表（M）">群</button>

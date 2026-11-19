@@ -291,6 +291,16 @@ test("新学和独立听音、拼写、看义选词不受回忆卡修复影响�
 });
 
 
+test("暂无到期词时首页直接提供新词入口，未设日期时不显示倒计时", async () => {
+  const h = harness("#/");
+  for (const word of ["specific", "dose"]) h.data.get("srs:" + word).d = SRS.add(day, 7);
+  h.context.S.examDate = "";
+  await h.render();
+  assert.match(h.html, /今天暂无到期词/);
+  assert.match(h.html, /href="#\/drill\/learn"[^>]*>学一组新词/);
+  assert.doesNotMatch(h.html, /今日计划已完成|0 \/ 0|距四级/);
+});
+
 test("今日计划跨轮固定，补测只计实际负担，刷新与自由练习不重复正式评分", async () => {
   let h = await harness("#/drill/due", {"set:dailyCap":2}).render();
   const plan=h.data.get("plan:"+day), first=h.word();

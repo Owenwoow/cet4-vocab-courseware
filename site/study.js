@@ -401,10 +401,10 @@ const Study = (() => {
     return n;
   }
   function modHero() {
-    const t = T(), left = SRS.diff(S.examDate || "2026-12-12", t), n = streak();
+    const t = T(), left = S.examDate ? SRS.diff(S.examDate, t) : null, n = streak();
     return `<div class="hero">
-      <div><div class="cd">${left > 0 ? `距四级 <b>${left}</b> 天` : left === 0 ? "今天考试，加油！" : "考试已结束"}</div>
-        <small>${esc(S.examDate)} · 今天 ${md(t)} 周${WEEK[SRS.dow(t)]}</small></div>
+      <div>${left === null ? "" : `<div class="cd">${left > 0 ? `距四级 <b>${left}</b> 天` : left === 0 ? "今天考试，加油！" : "考试已结束"}</div>`}
+        <small>${S.examDate ? esc(S.examDate) + " · " : ""}今天 ${md(t)} 周${WEEK[SRS.dow(t)]}</small></div>
       ${n ? `<div class="streak" title="连续学习天数">🔥 连续 ${n} 天</div>` : ""}</div>`;
   }
   // 首答来自分词记录；已退役或抵扣的词不凭计划进度推算回忆表现。
@@ -418,6 +418,13 @@ const Study = (() => {
   function modToday() {
     if (S.learningMode === "quick") return modQuickToday();
     const status = planStatus(), {plan, total, completed, finished, pendingRetries, retries} = status;
+    const results = planResults(status);
+    if (!total && !results.external) {
+      const next = progGet("learn") ? "继续学新词" : nextGroups(1).length ? "学一组新词" : "";
+      return `<wa-card class="mod today"><div slot="header" class="mh"><b>今日学习</b></div>
+        <div class="today-next"><div><b>今天暂无到期词</b></div>
+        ${next ? `<div class="today-action">${btn("#/drill/learn", next, 'variant="brand"', "medium")}</div>` : ""}</div></wa-card>`;
+    }
     const state = memoryState(), migration = SRS.migrationStatus(liveCards(), T(), state, plan.budget.limit);
     const kinds = {review: "到期复习", relearn: "遗忘重学", calibrate: "旧词校准"};
     const breakdown = Object.entries(kinds).map(([kind, label]) => {
@@ -426,7 +433,6 @@ const Study = (() => {
     }).filter(Boolean).join(" · ");
     const reason = !finished && !migration.active && dueStat().tier === "heavy" ? "今天先巩固旧词，新词不着急。" : "";
     const retryText = pendingRetries ? ` · 还有 ${pendingRetries} 次同日补测` : retries ? ` · 已补测 ${retries} 次` : "";
-    const results = planResults(status);
     const extra = strengthenStatus(status), extraDone = extra.total > 0 && !extra.pending.length;
     const nextTitle = !finished ? "按自己的节奏，分次完成" : extraDone ? "本次巩固已完成" : extra.total ? `还有 ${extra.pending.length} 个词待巩固` : "今日首答已完成";
     const nextNote = !finished ? "剩余计划可分次完成。" : extraDone || !extra.total ? "" : extra.done ? `已独立想起 ${extra.done} / ${extra.total} 词` : "可选练习，随时可以结束。";

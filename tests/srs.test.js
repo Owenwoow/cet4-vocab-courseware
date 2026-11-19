@@ -34,6 +34,8 @@ test("主动回忆沿用必做、分段和考前封顶；专项开关不影响�
   const examCard = {...c, s: 5, d: "2026-12-01", recall: {...c.recall, level: 5, days: 4}};
   const next = SRS.rateRecall(examCard, "independent", "2026-12-01", {id: "exam", key: "word", exam: "2026-12-12"});
   assert.ok(next.d >= "2026-12-05" && next.d <= "2026-12-09");
+  const noExam = SRS.rateRecall(examCard, "independent", "2026-12-01", {id: "exam", key: "word", exam: ""});
+  assert.ok(noExam.d > "2026-12-09");
 });
 
 /* d 是不是 t 之后隔 gap 天；隔 7 天及以上的允许按词错开 ±1 天（spread） */
@@ -278,6 +280,8 @@ test("考前封顶：窗口前复习、到期又晚于 12-09 的，分散到 12-
   assert.equal(SRS.examCap("2027-01-05", "2026-12-06", "x"), "2027-01-05");   // 窗口里刚复习过
   const c = SRS.rate({a: "2026-09-01", s: 4, d: "2026-11-25", n: 5, l: 0, h: "ggg", q: 2}, "g", "2026-11-25", {key: "abandon"});
   assert.ok(c.d >= "2026-12-05" && c.d <= "2026-12-09", c.d);
+  assert.equal(SRS.examCap("2026-12-20", "2026-11-20", "x", ""), "2026-12-20");
+  assert.ok(SRS.chop(c, "2026-11-25", "abandon", "").d > "2026-12-09");
 });
 
 test("斩：直接 5 级，30 天后（或考前窗口）抽查", () => {
